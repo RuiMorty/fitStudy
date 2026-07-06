@@ -15,7 +15,7 @@
     .chip{font-size:.78rem;border:1px solid #d4ebe0;border-radius:999px;padding:3px 10px;background:#fff;color:#0c6da3}
     .panel,.figure,.warn{background:#fff;border:1px solid #e2e8e4;border-radius:14px;padding:18px;margin:14px 0;box-shadow:0 2px 12px rgba(20,40,30,.06)}
     .lead{border-left:4px solid #0ea66b}.orange{border-left:4px solid #ea7a17}
-    .figure .placeholder{min-height:280px;border:1px dashed #b8c8be;border-radius:12px;background:#fbfdfc;display:grid;place-items:center;text-align:center;color:#5a6b62;font-weight:800;padding:24px}
+    .figure img{width:100%;display:block;border-radius:12px;border:1px solid #e2e8e4;background:#fbfdfc;cursor:zoom-in}
     .caption{font-size:.85rem;color:#5a6b62;margin-top:8px;text-align:center}
     .panel h2,.warn h2{font-size:1.18rem;margin:0 0 10px;color:#0a7d52}
     .term{font-weight:700;color:#0a7d52;background:#e8f5ee;border-radius:5px;padding:1px 5px}
@@ -54,6 +54,8 @@
     .reveal{display:none;border-left:4px solid #0ea5e9;background:#f0f8fc;border-radius:10px;padding:10px;margin-top:8px}.reveal.show{display:block}
     .list{padding-left:20px;margin:8px 0}.list li{margin:7px 0}
     footer{text-align:center;color:#5a6b62;font-size:.85rem;margin:22px 0}
+    .lightbox{position:fixed;inset:0;background:rgba(0,0,0,.82);display:none;align-items:center;justify-content:center;z-index:9;padding:18px}
+    .lightbox.show{display:flex}.lightbox img{max-width:96vw;max-height:92vh;border-radius:10px;background:#fff}
     @media(max-width:640px){body{padding:10px}.header h1{font-size:1.5rem}.panel,.figure,.warn{padding:14px}.kp-body{padding-left:14px}.card-grid{grid-template-columns:1fr}}
   </style>
 </head>
@@ -75,8 +77,8 @@
     </section>
 
     <figure class="figure">
-      <div class="placeholder">图片生成失败，待补图</div>
-      <div class="caption">原计划放置上肢主要肌群中文标注图: 胸大肌、背阔肌、三角肌三束、肱二头肌、肱三头肌、前臂屈伸肌群。</div>
+      <img src="assets/阶段1基础科学/day11-主要肌群-上肢肌功能分群.png" alt="上肢主要肌群功能分群中文标注学习图">
+      <div class="caption">上肢主要肌群中文标注图: 胸大肌、背阔肌、三角肌三束、肱二头肌、肱三头肌、前臂屈伸肌群。</div>
     </figure>
 
     <section class="panel">
@@ -251,6 +253,7 @@
 
     <footer>阶段1 · Day 11/112 · 今日早间新知识(工作日6:00) · 中午12:00复习巩固</footer>
   </main>
+  <div class="lightbox" id="lightbox"><img alt="放大图"></div>
   <script>
     document.querySelectorAll('ul.kp>li>.kp-head').forEach(function(h){
       h.addEventListener('click',function(){h.parentElement.classList.toggle('open')});
@@ -265,6 +268,9 @@
       el.classList.toggle(isRight?'correct':'wrong-show');
     }
     function toggleReveal(id){document.getElementById(id).classList.toggle('show')}
+    document.querySelectorAll('.figure img').forEach(function(img){img.addEventListener('click',function(){var box=document.getElementById('lightbox');box.querySelector('img').src=img.src;box.classList.add('show');});});
+    document.getElementById('lightbox').addEventListener('click',function(e){if(e.target.id==='lightbox')e.currentTarget.classList.remove('show');});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape')document.getElementById('lightbox').classList.remove('show');});
   </script>
 </body>
 </html>
