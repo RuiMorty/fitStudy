@@ -24,6 +24,7 @@ const publishedPages = new Map([
   [9, "html/day09-肌纤维类型与特性.html"],
   [10, "html/day10-骨骼肌起止点与命名规则.html"],
   [11, "html/day11-主要肌群-上肢肌功能分群.html"],
+  [12, "html/day12-主要肌群-核心肌群与McGill核心功能分类.html"],
 ]);
 
 const generatedThumbs = new Map([
@@ -38,6 +39,7 @@ const generatedThumbs = new Map([
   [9, "html/thumbs/day09-muscle-fiber-types-thumbnail.png"],
   [10, "html/thumbs/day10-muscle-origin-insertion-thumbnail.png"],
   [11, "html/thumbs/day11-upper-limb-muscle-groups-thumbnail.png"],
+  [12, "html/thumbs/day12-core-mcgill-functions-thumbnail.png"],
 ]);
 
 const categories = ["全部", "骨关节", "肌肉", "生物力学", "能量系统", "训练技术", "评估纠正", "营养", "模考"];

@@ -164,6 +164,13 @@ function extractHtmlKnowledge(day) {
       const [name, plain, example] = rowMatch.slice(1).map(stripHtml);
       if (name && plain && example) details.push(`${name}：${plain}。${example}`);
     }
+    const stepPattern = /<li>\s*<span class="tag">([\s\S]*?)<\/span>\s*([\s\S]*?)<\/li>/g;
+    let stepMatch;
+    while ((stepMatch = stepPattern.exec(body))) {
+      const label = stripHtml(stepMatch[1]);
+      const text = stripHtml(stepMatch[2]);
+      if (label && text) details.push(`${label}：${text}`);
+    }
     items.push({
       title: titlePart || headText,
       summary: summaryParts.join("："),
@@ -234,6 +241,14 @@ function itemSlide(item, fallbackPoint, index) {
   details.slice(0, 3).forEach((detail) => pushUnique(points, detailToPoint(detail)));
   if (!item?.details?.length) splitSentences(fallback.body).forEach((sentence) => pushUnique(points, sentence));
   if (points.length < 3 && fallback.body) pushUnique(points, fallback.body);
+  if (/动作分析顺序/.test(title) && points.length === 0) {
+    [
+      "第一步：识别动作：卧推看肩水平内收 + 肘伸；划船看肩伸 + 肘屈；侧平举看肩外展。",
+      "第二步：找主动肌：谁跨过目标关节，谁能制造同方向力矩，谁就是主要输出。",
+      "第三步：找协同肌：推类常有三角肌前束、肱三头肌；拉类常有肱二头肌和肩胛肌群。",
+      "第四步：找稳定肌：肩袖、肩胛稳定肌、核心让关节保持可发力位置。",
+    ].forEach((point) => pushUnique(points, point));
+  }
   return {
     type: "dense",
     eyebrow: String(index).padStart(2, "0"),
@@ -362,7 +377,18 @@ function slideHtml(slide, lesson) {
 }
 
 function titleText(lesson) {
-  return `Day ${lesson.day}｜${lesson.title}一图看懂`;
+  const maxLength = 20;
+  const dayPrefix = `Day${lesson.day}｜`;
+  const aliases = new Map([
+    ["主要肌群-核心肌群与McGill核心功能分类(完整4项首讲)", "核心肌群四抗"],
+  ]);
+  const normalizedTitle = lesson.title
+    .replace(/[（(].*?[）)]/g, "")
+    .replace(/NSCA高频/g, "")
+    .trim();
+  const shortTitle = aliases.get(lesson.title) || aliases.get(normalizedTitle) || normalizedTitle;
+  const room = Math.max(1, maxLength - Array.from(dayPrefix).length);
+  return `${dayPrefix}${Array.from(shortTitle).slice(0, room).join("")}`;
 }
 
 function captionText(lesson) {

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 12 · 主要肌群-核心肌群与McGill核心功能分类</title>
+  <style>
+    *{box-sizing:border-box}
+    body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.75;background:#f6f8f7;color:#1a2b22;padding:18px}
+    .wrap{max-width:980px;margin:auto}
+    .header{text-align:center;padding:24px 10px}
+    .header h1{margin:0 0 10px;font-size:2rem;background:linear-gradient(90deg,#0ea66b,#0ea5e9);-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:0}
+    .sub{color:#5a6b62}
+    .chips{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:10px}
+    .chip{font-size:.78rem;border:1px solid #d4ebe0;border-radius:999px;padding:3px 10px;background:#fff;color:#0c6da3}
+    .panel,.figure,.warn{background:#fff;border:1px solid #e2e8e4;border-radius:14px;padding:18px;margin:14px 0;box-shadow:0 2px 12px rgba(20,40,30,.06)}
+    .lead{border-left:4px solid #0ea66b}.orange{border-left:4px solid #ea7a17}
+    .figure img{width:100%;display:block;border-radius:12px;border:1px solid #e2e8e4;background:#fbfdfc;cursor:zoom-in}
+    .caption{font-size:.85rem;color:#5a6b62;margin-top:8px;text-align:center}
+    .panel h2,.warn h2{font-size:1.18rem;margin:0 0 10px;color:#0a7d52}
+    .term{font-weight:700;color:#0a7d52;background:#e8f5ee;border-radius:5px;padding:1px 5px}
+    ul.kp{list-style:none;padding:0;margin:0}
+    ul.kp>li{border-bottom:1px dashed #e2e8e4}
+    .kp-head{display:block;cursor:pointer;position:relative;padding:13px 8px 13px 30px}
+    .kp-head:before{content:"▸";position:absolute;left:8px;color:#0ea66b;font-weight:800;transition:.2s}
+    .open>.kp-head:before{transform:rotate(90deg)}
+    .kp-head:hover{background:#f0f4f2}
+    .kp-body{display:none;padding:0 14px 16px 30px}
+    .open>.kp-body{display:block}
+    .dim{display:block;margin-top:10px;font-size:.78rem;font-weight:800;color:#0c6da3}
+    .take{border-left:4px solid #0ea66b;background:#f0fbf5;border-radius:10px;padding:10px 12px;margin:10px 0}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin:12px 0}
+    .mini{border:1px solid #dbe8e1;border-radius:12px;background:#fbfdfc;padding:12px}
+    .mini h4{margin:0 0 7px;font-size:.98rem;color:#0a7d52}
+    .tag{display:inline-block;font-size:.74rem;font-weight:800;color:#0c6da3;background:#e8f4fb;border-radius:999px;padding:2px 8px;margin-right:5px}
+    .tbl{width:100%;border-collapse:collapse;font-size:.9rem;margin:10px 0}
+    .tbl th{background:#0ea66b;color:#fff;text-align:left}
+    .tbl th,.tbl td{padding:8px;border-bottom:1px solid #e2e8e4;vertical-align:top}
+    .warn{border-left:4px solid #e23b3b}.warn p{margin:8px 0}
+    .mnemonic{background:linear-gradient(135deg,#0ea66b,#0ea5e9);color:#fff;border-radius:14px;padding:20px;margin:14px 0;box-shadow:0 2px 12px rgba(20,40,30,.08)}
+    .mnemonic h2{margin:0 0 8px;font-size:1.15rem}.mnemonic strong{color:#fff7d6}
+    .card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+    .flip{min-height:145px;perspective:800px;cursor:pointer}
+    .flip-inner{position:relative;width:100%;height:100%;min-height:145px;transition:transform .5s;transform-style:preserve-3d}
+    .flip.flipped .flip-inner{transform:rotateY(180deg)}
+    .face{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:15px;border-radius:13px;border:1px solid #e2e8e4;backface-visibility:hidden;background:#fff;font-weight:700}
+    .front{color:#0a7d52;background:#f8fffb}.back{transform:rotateY(180deg);background:#eef7ff;color:#0c6da3;font-weight:600}
+    .quiz{border-top:1px dashed #e2e8e4;padding-top:12px;margin-top:12px}
+    .quiz h3{margin:0 0 8px;font-size:1rem;color:#1a2b22}
+    .opt{border:1px solid #e2e8e4;border-radius:10px;padding:9px 10px;margin:7px 0;background:#fff;cursor:pointer}
+    .opt:hover{background:#f0f4f2}.lbl{font-weight:800;color:#0c6da3;margin-right:4px}
+    .correct{border-color:#0ea66b!important;background:#e9f8f0!important}.wrong-show{border-color:#e23b3b!important;background:#fff0f0!important}.selected{border-color:#0ea5e9;background:#eef7ff}
+    button{border:0;border-radius:999px;background:#0ea66b;color:#fff;font-weight:800;padding:8px 14px;cursor:pointer;margin-top:6px}
+    .reveal{display:none;border-left:4px solid #0ea5e9;background:#f0f8fc;border-radius:10px;padding:10px;margin-top:8px}.reveal.show{display:block}
+    .list{padding-left:20px;margin:8px 0}.list li{margin:7px 0}
+    footer{text-align:center;color:#5a6b62;font-size:.85rem;margin:22px 0}
+    .lightbox{position:fixed;inset:0;background:rgba(0,0,0,.82);display:none;align-items:center;justify-content:center;z-index:9;padding:18px}
+    .lightbox.show{display:flex}.lightbox img{max-width:96vw;max-height:92vh;border-radius:10px;background:#fff}
+    @media(max-width:640px){body{padding:10px}.header h1{font-size:1.5rem}.panel,.figure,.warn{padding:14px}.kp-body{padding-left:14px}.card-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="header">
+      <h1>Day 12 · 主要肌群-核心肌群与McGill核心功能分类</h1>
+      <div class="sub">今天主题: 核心不是只练腹肌，而是让脊柱和骨盆在外力下保持稳定。</div>
+      <div class="chips">
+        <span class="chip">第2周 · 阶段1基础科学</span>
+        <span class="chip">NSCA + NASM 双证</span>
+        <span class="chip">早间新知识</span>
+      </div>
+    </header>
+
+    <section class="panel lead">
+      <h2>一句话总结</h2>
+      <p>核心像身体中段的“支撑筒”: 腹直肌、腹斜肌、腹横肌、竖脊肌、多裂肌、膈肌和盆底肌共同维持腹内压与脊柱位置。<strong>McGill 核心训练的重点不是反复把腰弯来弯去，而是抗伸展、抗旋转、抗侧屈、抗屈曲。</strong></p>
+    </section>
+
+    <figure class="figure">
+      <img src="assets/阶段1基础科学/day12-主要肌群-核心肌群与McGill核心功能分类.png" alt="核心肌群与McGill核心功能分类中文标注图">
+      <div class="caption">看图重点: 中央支撑筒代表腹内压和深层稳定，四周箭头代表核心抵抗外力造成的伸展、旋转、侧屈和屈曲。</div>
+    </figure>
+
+    <section class="panel">
+      <h2>核心要点</h2>
+      <ul class="kp">
+        <li>
+          <span class="kp-head"><span class="term">核心肌群</span>: 不等于六块腹肌，而是躯干、骨盆和呼吸压力系统。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 核心负责把胸廓、腰椎、骨盆连接成可控整体，让四肢发力时身体中段不漏力。</div>
+            <div class="grid">
+              <div class="mini"><h4>表层动力肌</h4><p>腹直肌、腹外斜肌、腹内斜肌和竖脊肌能制造明显躯干动作，如屈曲、旋转、侧屈和伸展。</p></div>
+              <div class="mini"><h4>深层稳定肌</h4><p>腹横肌、多裂肌、膈肌和盆底肌更像内部束带，负责细微控制、腹压和椎间稳定。</p></div>
+              <div class="mini"><h4>训练判断</h4><p>核心强不只是卷腹次数多，而是深蹲、硬拉、推拉和跑跳时肋骨、骨盆、腰椎能否保持稳定。</p></div>
+            </div>
+            <span class="dim">常见误解</span>
+            <p>❌以为腹肌明显就核心强。✅其实可见腹肌主要反映体脂和腹直肌厚度；核心能力还包括抗外力、呼吸和骨盆控制。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">腹直肌</span>: 主要做脊柱屈曲，也参与抗伸展。</span>
+          <div class="kp-body">
+            <span class="dim">起止点定位</span>
+            <p>腹直肌从耻骨联合和耻骨嵴向上止于胸骨剑突与第5-7肋软骨。它像腹部正中两条纵向安全带，能把胸廓和骨盆拉近。</p>
+            <span class="dim">功能</span>
+            <p>主动收缩时做脊柱屈曲，比如卷腹上半段；等长收缩时抵抗腰椎过度伸展，比如平板支撑、防止俯卧撑塌腰。</p>
+            <span class="dim">训练体会</span>
+            <p>平板支撑时轻轻“肋骨向骨盆收”，腰不塌、臀不过度撅起，腹直肌会像前侧刹车一样限制腰椎后弯。</p>
+            <span class="dim">搭档与拮抗</span>
+            <p>它常和腹斜肌、腹横肌一起维持腹压；与竖脊肌在屈伸方向上互相制衡，二者都需要但不能互相抢控制。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">腹斜肌</span>: 控制旋转与侧屈，是抗旋转训练主角之一。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 腹斜肌像身体两侧的交叉斜拉索，能让躯干转，也能让躯干“不被转走”。</div>
+            <table class="tbl">
+              <tr><th>结构</th><th>位置与纤维方向</th><th>训练意义</th></tr>
+              <tr><td>腹外斜肌</td><td>肋骨外侧向对侧骨盆斜行</td><td>帮助躯干旋转、侧屈，常参与转体和抗旋转。</td></tr>
+              <tr><td>腹内斜肌</td><td>骨盆向同侧肋骨斜行</td><td>与外斜肌交叉配合，控制骨盆和胸廓相对位置。</td></tr>
+            </table>
+            <span class="dim">真实例子</span>
+            <p>Pallof press 中，弹力带把身体拉向一侧，腹斜肌不让躯干跟着旋转。这就是抗旋转，不是主动扭腰。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为练腹斜肌必须疯狂转体。✅其实很多核心训练更看重“不转”，尤其对需要传力和保护腰椎的训练者。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">腹横肌</span>: 深层环形束带，帮助维持腹内压。</span>
+          <div class="kp-body">
+            <span class="dim">字面意思</span>
+            <p>腹横肌的纤维大多横向环绕腹部，像一圈宽腰带。它不是负责做大幅度卷腹，而是收紧腹壁、配合呼吸和腹压。</p>
+            <span class="dim">大白话类比</span>
+            <p>腹腔像充气罐，腹横肌像罐壁束带。束带太松，罐子受力会变形；束带合适，压力能把脊柱和骨盆撑稳。</p>
+            <span class="dim">为什么影响训练/考试</span>
+            <p>NASM 常把腹横肌放进局部稳定系统。深蹲和硬拉时会先“撑开腰腹”，不是把肚子吸瘪；目标是让腹壁向四周产生可控张力。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">竖脊肌与多裂肌</span>: 一个负责脊柱伸展大方向，一个负责椎间微稳定。</span>
+          <div class="kp-body">
+            <div class="grid">
+              <div class="mini"><h4>竖脊肌</h4><p>沿脊柱两侧纵向分布，负责脊柱伸展和抗屈曲。硬拉中它常等长工作，让背部不被重量拉圆。</p></div>
+              <div class="mini"><h4>多裂肌</h4><p>位于更深层，跨越相邻椎节，负责细小椎间控制。它像每一节椎骨之间的小稳定绳。</p></div>
+            </div>
+            <span class="dim">训练含义</span>
+            <p>硬拉不是靠竖脊肌把腰“拉弯再拉直”，而是让它抗屈曲、保持中立。鸟狗动作能训练多裂肌和臀肌协同，重点是骨盆不晃。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为核心只有腹部前侧。✅其实后侧竖脊肌、多裂肌同样属于核心稳定系统；前后都要能控制。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">膈肌与盆底肌</span>: 核心腔体顶部和底部，决定腹压能不能闭合。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 核心不是一张平面腹肌，而是一个立体罐。膈肌是顶，盆底肌是底，腹壁是侧壁，腰背肌是后壁。</div>
+            <span class="dim">底层机制</span>
+            <p>吸气时膈肌下降，腹腔压力改变；发力前适度吸气并撑腹，可以提高腹内压。盆底肌提供底部承托，让压力不只向下泄掉。</p>
+            <span class="dim">真实例子</span>
+            <p>大重量深蹲前吸气、屏息、撑腹，是为了制造稳定压力筒。产后或盆底功能差的人，要更谨慎处理高腹压训练。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为核心收紧就是一直憋气。✅其实大重量短时间可用屏息策略；普通训练要学会在呼吸中维持躯干稳定。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">McGill四项功能</span>: 抗伸展、抗旋转、抗侧屈、抗屈曲。</span>
+          <div class="kp-body">
+            <table class="tbl">
+              <tr><th>功能</th><th>外力想让身体怎样</th><th>代表训练</th></tr>
+              <tr><td>抗伸展</td><td>腰被拉成过度后弯</td><td>平板支撑、死虫、腹轮回程控制</td></tr>
+              <tr><td>抗旋转</td><td>躯干被扭向一侧</td><td>Pallof press、单臂划船保持骨盆不转</td></tr>
+              <tr><td>抗侧屈</td><td>身体被压向一边</td><td>侧桥、单侧农夫走</td></tr>
+              <tr><td>抗屈曲</td><td>脊柱被重量拉圆</td><td>硬拉中立背、前抱壶铃行走</td></tr>
+            </table>
+            <span class="dim">训练含义</span>
+            <p>McGill 思路强调脊柱耐受和稳定。反复负重屈伸腰椎可能增加椎间盘压力；更常用的核心训练目标，是让腰椎在外力下保持可控中立。</p>
+            <span class="dim">考试提醒</span>
+            <p>看到平板支撑先想到抗伸展，看到 Pallof press 先想到抗旋转，看到侧桥先想到抗侧屈，看到硬拉中立背先想到抗屈曲。</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="warn">
+      <h2>常见误区</h2>
+      <p>❌很多人以为核心训练就是卷腹。✅其实卷腹只覆盖脊柱屈曲，考试和训练更重视抗伸展、抗旋转、抗侧屈、抗屈曲。</p>
+      <p>❌很多人以为腰带能替代核心。✅其实腰带只是提供可撑开的外壁，仍需要膈肌、腹壁、盆底和背肌主动制造压力。</p>
+      <p>❌很多人以为核心越紧越好。✅其实核心要会按任务调节张力：大重量需要高张力，跑步和呼吸需要节律性稳定。</p>
+    </section>
+
+    <section class="mnemonic">
+      <h2>记忆口诀</h2>
+      <p><strong>前腹后背围成筒，膈在上、盆在下；McGill 四抗记清楚，抗伸抗旋抗侧屈，硬拉还要抗屈曲。</strong></p>
+    </section>
+
+    <section class="panel">
+      <h2>翻转卡复习</h2>
+      <div class="card-grid">
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">核心是否等于腹直肌?</div><div class="face back">不是。核心包括腹壁、腰背、膈肌、盆底和深层稳定肌。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">腹直肌主要功能?</div><div class="face back">脊柱屈曲，也能在平板支撑中抗伸展。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">Pallof press 练哪项?</div><div class="face back">抗旋转，抵抗弹力带把躯干扭走。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">侧桥对应 McGill 哪类?</div><div class="face back">抗侧屈，抵抗身体向地面侧弯。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">腹横肌像什么?</div><div class="face back">像环绕腹部的宽腰带，帮助维持腹内压。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">多裂肌主要价值?</div><div class="face back">深层椎间稳定，控制相邻椎节细小运动。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">硬拉中立背属于哪项?</div><div class="face back">抗屈曲，抵抗重量把脊柱拉圆。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">膈肌和盆底肌位置?</div><div class="face back">膈肌是核心腔体顶部，盆底肌是底部。</div></div></div>
+      </div>
+    </section>
+
+    <section class="panel orange">
+      <h2>实操关联</h2>
+      <ul class="list">
+        <li><strong>增肌:</strong> 深蹲、硬拉、推举需要核心稳定让目标肌发力更干净，避免躯干晃动偷力。</li>
+        <li><strong>减脂:</strong> 循环训练里核心疲劳会让动作变形，优先选能维持姿势的负荷和速度。</li>
+        <li><strong>爆发:</strong> 投掷、冲刺和跳跃需要核心传力，抗旋转与抗侧屈能力会影响力量从下肢传到上肢。</li>
+        <li><strong>耐力:</strong> 长跑后段骨盆晃、腰酸，常和核心耐力下降有关，可用侧桥、鸟狗、死虫补基础。</li>
+        <li><strong>康复:</strong> 腰痛人群常先练低负荷抗动作和呼吸控制，而不是上来做大量仰卧起坐。</li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2>练习题</h2>
+      <div class="quiz">
+        <h3>1. 平板支撑最典型训练哪项 McGill 核心功能?</h3>
+        <div class="opt" onclick="pick(this,'correct')"><span class="lbl">A.</span>抗伸展</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">B.</span>抗旋转</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">C.</span>主动侧屈</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">D.</span>主动旋转</div>
+        <button onclick="showAns('ans1')">查看解析</button>
+        <div class="reveal" id="ans1">答案 A。平板支撑中，重力会让腰椎塌陷成伸展位，核心目标是抵抗这种伸展。B 更像 Pallof press；C、D 是主动制造动作，不是平板支撑重点。</div>
+      </div>
+      <div class="quiz">
+        <h3>2. 下列哪块肌肉最像腹部“环形腰带”，帮助维持腹内压?</h3>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">A.</span>腹直肌</div>
+        <div class="opt" onclick="pick(this,'correct')"><span class="lbl">B.</span>腹横肌</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">C.</span>肱二头肌</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">D.</span>胸大肌</div>
+        <button onclick="showAns('ans2')">查看解析</button>
+        <div class="reveal" id="ans2">答案 B。腹横肌横向环绕腹部，像束带。腹直肌更偏屈曲和抗伸展；肱二头肌、胸大肌不属于核心稳定系统。</div>
+      </div>
+      <div class="quiz">
+        <h3>3. 多选: 哪些说法符合核心稳定训练?</h3>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">A.</span>Pallof press 训练抗旋转</div>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">B.</span>侧桥训练抗侧屈</div>
+        <div class="opt" onclick="pickMulti(this)"><span class="lbl">C.</span>核心训练只能做卷腹</div>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">D.</span>硬拉中立背需要抗屈曲能力</div>
+        <button onclick="showAns('ans3')">查看解析</button>
+        <div class="reveal" id="ans3">正确 A、B、D。Pallof press 抵抗旋转，侧桥抵抗身体向侧方塌陷，硬拉抗屈曲。C 错，卷腹只是屈曲训练，不能代表全部核心功能。</div>
+      </div>
+      <div class="quiz">
+        <h3>4. 案例题: 学员硬拉时背部变圆，但卷腹能做很多。该怎样分析?</h3>
+        <button onclick="showAns('ans4')">查看解析</button>
+        <div class="reveal" id="ans4">卷腹多说明腹直肌屈曲耐力不错，不等于硬拉抗屈曲能力足。硬拉时外力把脊柱拉向屈曲，需要竖脊肌、多裂肌、腹横肌、腹斜肌和腹压共同维持中立。训练可先降重量，练髋铰链、鸟狗、死虫、前抱壶铃行走和中立位呼吸撑腹。</div>
+      </div>
+    </section>
+
+    <footer>阶段1基础科学 · Day 12/112 · 今日早间新知识(工作日6:00) · 中午12:00复习巩固</footer>
+  </main>
+  <div class="lightbox" id="lightbox"><img alt="放大学习图"></div>
+  <script>
+    document.querySelectorAll('ul.kp>li>.kp-head').forEach(function(h){h.addEventListener('click',function(){h.parentElement.classList.toggle('open')})});
+    function pick(el,type){el.closest('.quiz').querySelectorAll('.opt').forEach(function(o){o.classList.remove('correct','wrong-show')});el.classList.add(type==='correct'?'correct':'wrong-show')}
+    function pickMulti(el){if(el.classList.contains('correct')||el.classList.contains('wrong-show')){el.classList.remove('correct');el.classList.remove('wrong-show')}else{el.classList.add(el.dataset.c==='1'?'correct':'wrong-show')}}
+    function showAns(id){document.getElementById(id).classList.add('show')}
+    var lb=document.getElementById('lightbox');var lbImg=lb.querySelector('img');
+    document.querySelectorAll('.figure img').forEach(function(img){img.addEventListener('click',function(){lbImg.src=img.src;lb.classList.add('show')})});
+    lb.addEventListener('click',function(e){if(e.target===lb){lb.classList.remove('show')}});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape'){lb.classList.remove('show')}});
+  </script>
+</body>
+</html>

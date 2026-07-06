@@ -11,3 +11,7 @@ No application knows how to open URL file:///Users/zhaoqr/Documents/fitness_stud
 2026-07-05 08:35:45 CST recoverable: initial node scripts/generate-xhs-package.js --day=10 failed in sandbox: Chromium MachPort permission denied. Reran with approved escalation and generated xhs/day10 successfully.
 2026-07-06T09:17:11+0800 imagegen 工具未暴露，早间任务跳过
 2026-07-06 09:41:03 CST Day 11 imagegen CLI fallback failed: OpenAI Image API returned 401 invalid_api_key for configured OPENAI_API_KEY. Generated HTML with "图片生成失败，待补图" placeholder. Body image and thumbnail not created; generatedThumbs not updated; .progress.json not advanced. Initial XHS package render failed in sandbox due Chromium MachPort permission, escalated rerun succeeded but package lacks AI-generated visuals.
+2026-07-06 17:29:53 CST Day 12 note: node scripts/generate-xhs-package.js --day=12 failed in sandbox: Chromium MachPortRendezvousServer Permission denied; generated xhs/day12 package with Pillow fallback instead.
+2026-07-06 17:30:10 CST Day 12 open failed: kLSExecutableIncorrectFormat no compatible executable/default browser. Initial Chinese osascript notification failed syntax -2740; retrying ASCII.
+2026-07-06 17:31:05 CST Day 12 osascript notification failed after retries: syntax -2740. XHS package path: xhs/day12/.
+2026-07-06 17:37:38 CST Day 12 xhs package quality issue confirmed: Pillow fallback differs from official Playwright template; do not publish current xhs/day12 images until regenerated.

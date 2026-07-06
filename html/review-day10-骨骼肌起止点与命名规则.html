@@ -5,36 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Day 10 中午复习 · 骨骼肌起止点与命名规则</title>
   <style>
+    :root{--paper:#ffffff;--ink:#1a2b22;--muted:#5a6b62;--line:#e2e8e4;--green:#0ea66b;--blue:#0ea5e9;--orange:#ea7a17;--rose:#e23b3b}
     *{box-sizing:border-box}
-    body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;background:#f6f8f7;color:#1a2b22;padding:18px}
-    .wrap{max-width:1040px;margin:auto}
-    .hero{text-align:center;padding:26px 10px 18px}
-    .hero h1{margin:0 0 10px;font-size:2.05rem;background:linear-gradient(90deg,#0ea66b,#0ea5e9);-webkit-background-clip:text;background-clip:text;color:transparent}
-    .sub{color:#5a6b62;margin:0 auto;max-width:760px}
+    body{margin:0;background:#f6f8f7;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.75;padding:18px}
+    a{color:inherit}
+    .wrap{max-width:980px;margin:auto;padding:0}
+    .hero{text-align:center;padding:26px 10px}
+    .hero:before{content:"中午复习 · Day 10";display:inline-block;font-size:.78rem;font-weight:800;color:#0c6da3;background:#e8f4fb;border:1px solid #cfe8f8;border-radius:999px;padding:4px 12px;margin-bottom:10px}
+    .hero h1{margin:0 0 10px;font-size:2rem;background:linear-gradient(90deg,var(--green),var(--blue));-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:0}
+    .sub{color:var(--muted);margin:0 auto;max-width:760px}
     .chips{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:12px}
-    .chip{font-size:.78rem;border:1px solid #d4ebe0;border-radius:999px;padding:4px 10px;background:#fff;color:#0c6da3;font-weight:800}
-    .section{background:#fff;border:1px solid #e2e8e4;border-radius:14px;padding:18px;margin:14px 0;box-shadow:0 2px 12px rgba(20,40,30,.06)}
+    .chip{font-size:.78rem;border:1px solid #d4ebe0;border-radius:999px;padding:3px 10px;background:#fff;color:#0c6da3;font-weight:700}
+    .section,.card,footer{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px;margin:14px 0;box-shadow:0 2px 12px rgba(20,40,30,.06)}
     .section h2{font-size:1.18rem;margin:0 0 12px;color:#0a7d52}
     .fresh{border-left:4px solid #0ea66b}
     .ebbinghaus{border-left:4px solid #0ea5e9}
     .mistakes{border-left:4px solid #e23b3b}
-    .today{display:grid;grid-template-columns:150px 1fr;gap:14px;align-items:center}
-    .thumb{width:150px;aspect-ratio:1.25;border-radius:12px;border:1px solid #e2e8e4;object-fit:cover;background:#fbfdfc}
+    .today{display:block}
+    .thumb{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:10px;border:1px solid var(--line);background:#f0f4f2;display:block;margin:8px 0}
     .source{display:inline-block;margin-top:8px;color:#0c6da3;text-decoration:none;font-weight:800}
     .source:hover{text-decoration:underline}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
-    .card{border:1px solid #dbe8e1;border-radius:13px;background:#fbfdfc;padding:14px}
-    .card h3{margin:5px 0 8px;color:#0a7d52;font-size:1.02rem}
-    .meta{font-size:.78rem;font-weight:800;color:#0c6da3}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:12px}
+    .card{margin:0;display:block}
+    .card h3{margin:0 0 8px;color:#0a7d52;font-size:1rem}
+    .meta{font-size:.8rem;color:var(--muted);margin-bottom:8px;font-weight:500}
     .card ul{margin:8px 0 0;padding-left:18px}
     .card li{margin:5px 0}
-    .mini-img{width:100%;height:105px;object-fit:cover;border-radius:10px;border:1px solid #e2e8e4;background:#fff;margin:8px 0}
+    .mini-img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:10px;border:1px solid var(--line);background:#f0f4f2;margin:8px 0;display:block}
     .pill{display:inline-block;font-size:.72rem;font-weight:900;border-radius:999px;padding:2px 8px;background:#e8f5ee;color:#0a7d52;margin-right:6px}
-    .mnemonic{background:linear-gradient(135deg,#0ea66b,#0ea5e9);color:#fff;border-radius:14px;padding:16px;margin-top:12px}
-    .mnemonic strong{color:#fff7d6}
+    .mnemonic{border-radius:12px;padding:12px;background:#e8f5ee;color:#0a7d52;font-weight:800;margin:10px 0}
+    .mnemonic strong{color:#0a7d52}
     .q{background:#f8fffb;border:1px solid #dbe8e1;border-radius:12px;padding:13px;margin:10px 0}
     .q p{margin:0 0 8px}
-    button{border:0;border-radius:999px;background:#0ea66b;color:#fff;font-weight:900;padding:8px 13px;cursor:pointer}
+    button{border:0;border-radius:8px;background:var(--green);color:#fff;font-weight:700;padding:7px 12px;cursor:pointer}
     .answer{display:none;border-left:4px solid #0ea5e9;background:#f0f8fc;border-radius:10px;padding:10px;margin-top:9px}
     .answer.show{display:block}
     .compare{width:100%;border-collapse:collapse;font-size:.92rem}
@@ -43,7 +46,7 @@
     .review-box{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px}
     .note{border-left:4px solid #ea7a17;background:#fffaf3;border-radius:10px;padding:10px}
     footer{text-align:center;color:#5a6b62;font-size:.84rem;margin:22px 0}
-    @media(max-width:640px){body{padding:10px}.hero h1{font-size:1.5rem}.section{padding:14px}.today{grid-template-columns:1fr}.thumb{width:100%;height:auto}.mini-img{height:auto;aspect-ratio:1.8}}
+    @media(max-width:640px){body{padding:12px}.hero h1{font-size:1.55rem}.section,.card{padding:14px}.thumb,.mini-img{height:auto}}
   </style>
 </head>
 <body>
@@ -63,15 +66,11 @@
       <h2>今日新知识速复盘</h2>
       <article class="card">
         <div class="meta">今天早上 · Day 10 · 今日新知识</div>
-        <div class="today">
-          <img class="thumb" src="thumbs/day10-muscle-origin-insertion-thumbnail.png" alt="Day10 骨骼肌起止点与命名规则缩略图">
-          <div>
           <h3>Day 10 · 骨骼肌起止点与命名规则</h3>
+          <img class="thumb" src="thumbs/day10-muscle-origin-insertion-thumbnail.png" alt="Day10 骨骼肌起止点与命名规则缩略图">
           <p>起点通常近端且较固定，止点通常远端且较移动。肌肉收缩时，止点向起点靠近，形成最容易发生的动作方向；闭链动作远端固定时，要反向分析身体怎么向固定端移动。</p>
           <p>肌名常藏线索：位置、形状、大小、纤维方向、起止点、动作。胸大肌提示位置+大小，三角肌提示形状，肱桡肌提示连接肱骨与桡骨。</p>
           <a class="source" href="day10-骨骼肌起止点与命名规则.html">打开 Day10 原学习页 →</a>
-          </div>
-        </div>
       </article>
       <div class="mnemonic"><strong>口诀：</strong>近端多起点，远端多止点；止向起靠近，动作就出现；手脚若固定，身体反着迁；名字藏线索，位置形大线，起止动作全。</div>
     </section>
