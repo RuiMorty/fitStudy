@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 2 · 主要骨性标志与骨骼辨识</title>
+  <style>
+    * {
+      box-sizing: border-box
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, "PingFang SC", sans-serif;
+      line-height: 1.75;
+      background: #f6f8f7;
+      color: #1a2b22;
+      padding: 18px
+    }
+
+    .wrap {
+      max-width: 900px;
+      margin: auto
+    }
+
+    .header {
+      text-align: center;
+      padding: 24px 10px
+    }
+
+    .header h1 {
+      margin: 0 0 10px;
+      font-size: 2rem;
+      background: linear-gradient(90deg, #0ea66b, #0ea5e9);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent
+    }
+
+    .sub {
+      color: #5a6b62
+    }
+
+    .chips {
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 10px
+    }
+
+    .chip {
+      font-size: .78rem;
+      border: 1px solid #d4ebe0;
+      border-radius: 999px;
+      padding: 3px 10px;
+      background: #fff;
+      color: #0c6da3
+    }
+
+    .panel,
+    .figure,
+    .warn {
+      background: #fff;
+      border: 1px solid #e2e8e4;
+      border-radius: 14px;
+      padding: 18px;
+      margin: 14px 0;
+      box-shadow: 0 2px 12px rgba(20, 40, 30, .06)
+    }
+
+    .lead {
+      border-left: 4px solid #0ea66b
+    }
+
+    .orange {
+      border-left: 4px solid #ea7a17
+    }
+
+    .figure img {
+      width: 100%;
+      display: block;
+      border-radius: 10px;
+      border: 1px solid #e2e8e4
+    }
+
+    .caption {
+      font-size: .85rem;
+      color: #5a6b62;
+      margin-top: 8px;
+      text-align: center
+    }
+
+    .panel h2,
+    .warn h2 {
+      font-size: 1.18rem;
+      margin: 0 0 10px;
+      color: #0a7d52
+    }
+
+    .term {
+      font-weight: 700;
+      color: #0a7d52;
+      background: #e8f5ee;
+      border-radius: 5px;
+      padding: 1px 5px
+    }
+
+    ul.kp {
+      list-style: none;
+      padding: 0;
+      margin: 0
+    }
+
+    ul.kp>li {
+      border-bottom: 1px dashed #e2e8e4
+    }
+
+    .kp-head {
+      display: block;
+      cursor: pointer;
+      position: relative;
+      padding: 13px 8px 13px 30px
+    }
+
+    .kp-head:before {
+      content: "▸";
+      position: absolute;
+      left: 8px;
+      color: #0ea66b;
+      font-weight: 800;
+      transition: .2s
+    }
+
+    .open>.kp-head:before {
+      transform: rotate(90deg)
+    }
+
+    .kp-body {
+      display: none;
+      padding: 0 14px 16px 30px
+    }
+
+    .open>.kp-body {
+      display: block
+    }
+
+    .dim {
+      display: block;
+      margin-top: 10px;
+      font-size: .78rem;
+      font-weight: 800;
+      color: #0c6da3
+    }
+
+    .tbl {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .9rem;
+      margin: 10px 0
+    }
+
+    .tbl th {
+      background: #0ea66b;
+      color: #fff;
+      text-align: left
+    }
+
+    .tbl th,
+    .tbl td {
+      padding: 8px;
+      border-bottom: 1px solid #e2e8e4;
+      vertical-align: top
+    }
+
+    .mnemonic {
+      background: linear-gradient(135deg, #0a7d52, #0ea66b);
+      color: #fff;
+      border-radius: 14px;
+      padding: 18px;
+      margin: 14px 0
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 10px
+    }
+
+    .flip {
+      height: 126px;
+      perspective: 800px;
+      cursor: pointer
+    }
+
+    .flip-inner {
+      position: relative;
+      height: 100%;
+      transition: .5s;
+      transform-style: preserve-3d
+    }
+
+    .flip.flipped .flip-inner {
+      transform: rotateY(180deg)
+    }
+
+    .face {
+      position: absolute;
+      width: 100%;
+      height: 126px;
+      backface-visibility: hidden;
+      border-radius: 12px;
+      border: 1px solid #e2e8e4;
+      padding: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: .9rem
+    }
+
+    .front {
+      background: #f0f4f2
+    }
+
+    .back {
+      background: #0ea66b;
+      color: #fff;
+      transform: rotateY(180deg)
+    }
+
+    .warn {
+      border-left: 4px solid #e23b3b
+    }
+
+    .warn h2 {
+      color: #c42b2b
+    }
+
+    .practice {
+      list-style: none;
+      padding: 0
+    }
+
+    .practice li {
+      padding: 9px 8px 9px 28px;
+      border-bottom: 1px dashed #e2e8e4;
+      position: relative
+    }
+
+    .practice li:before {
+      content: "▸";
+      position: absolute;
+      left: 8px;
+      color: #ea7a17
+    }
+
+    .quiz .q {
+      background: #f0f4f2;
+      border-radius: 10px;
+      padding: 14px;
+      margin: 12px 0
+    }
+
+    .opt {
+      padding: 9px 11px;
+      margin: 6px 0;
+      border: 1px solid #d4ebe0;
+      border-radius: 8px;
+      background: #fff;
+      cursor: pointer
+    }
+
+    .correct {
+      background: #d4f5e0 !important;
+      border-color: #0ea66b !important
+    }
+
+    .wrong-show {
+      background: #fde0e0 !important;
+      border-color: #e23b3b !important
+    }
+
+    .reveal {
+      display: none;
+      background: #fff;
+      border-left: 3px solid #0ea5e9;
+      padding: 10px;
+      border-radius: 8px;
+      margin-top: 8px
+    }
+
+    .show {
+      display: block
+    }
+
+    .btn {
+      border: 0;
+      background: #0ea66b;
+      color: #fff;
+      border-radius: 8px;
+      padding: 7px 12px;
+      cursor: pointer
+    }
+
+    .footer {
+      text-align: center;
+      color: #7a8b82;
+      font-size: .82rem;
+      margin: 22px 0
+    }
+
+    @media(max-width:560px) {
+      body {
+        padding: 12px
+      }
+
+      .header h1 {
+        font-size: 1.55rem
+      }
+    }
+
+    .figure img {
+      cursor: zoom-in
+    }
+
+    .img-modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(10, 20, 15, .86);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 22px;
+      z-index: 9999
+    }
+
+    .img-modal.open {
+      display: flex
+    }
+
+    .img-modal img {
+      max-width: 96vw;
+      max-height: 92vh;
+      border-radius: 12px;
+      background: #fff;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, .35)
+    }
+
+    .img-modal .hint {
+      position: fixed;
+      left: 50%;
+      bottom: 18px;
+      transform: translateX(-50%);
+      color: #fff;
+      background: rgba(0, 0, 0, .35);
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: .82rem
+    }
+  </style>
+<link rel="stylesheet" href="theme.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <section class="header">
+      <h1>Day 2 · 主要骨性标志与骨骼辨识</h1>
+      <div class="sub">骨性标志是身体地图的“地名”。摸准点，后面起止点、评估、训练 cue 才能落地。</div>
+      <div class="chips"><span class="chip">阶段1基础科学</span><span class="chip">体表定位</span><span class="chip">起止点前置</span>
+      </div>
+    </section>
+    <section class="figure"><img src="assets/阶段1基础科学/day02-主要骨性标志与骨骼辨识.png" alt="主要骨性标志中文标注图">
+      <div class="caption">用这张图先建立触摸顺序：上肢、下肢、中轴骨，各挑最常用骨点。</div>
+    </section>
+    <section class="panel lead">
+      <h2>一句话总结</h2>
+      <p>骨性标志是教练的“定位系统”。你不是在背冷门名词，而是在学怎么把手放到客户身上，准确找到肩、髋、膝、脊柱这些训练问题发生的位置。</p>
+    </section>
+    <section class="panel">
+      <h2>核心要点(点击展开)</h2>
+      <ul class="kp">
+        <li><span class="kp-head"><span class="term">肩峰</span>: 肩外侧最高点，是三角肌和肩宽定位核心点。</span>
+          <div class="kp-body"><span class="dim">怎么摸</span>
+            <p>沿锁骨向外摸到肩最外侧的硬突起，就是肩峰。它不是肱骨头，也不是三角肌肉块。</p><span class="dim">训练含义</span>
+            <p>侧平举、推举、卧推评估都绕不开肩峰。肩峰下方空间过窄，可能出现夹挤感；这时不能只说“肩不舒服”，要知道疼点和结构在哪里。</p><span class="dim">常见误解</span>
+            <p>❌把肩峰当成肩关节本身。✅肩峰属于肩胛骨，是肩关节上方的骨性屋檐。</p>
+          </div>
+        </li>
+        <li><span class="kp-head"><span class="term">喙突</span>: 肩前方小钩子，是胸小肌、肱二头肌短头、喙肱肌附着相关点。</span>
+          <div class="kp-body">
+            <p>喙突在锁骨外侧下方、肩前方深处，触摸时常有压痛。它像肩胛骨伸出来的“小钩”。</p><span class="dim">训练含义</span>
+            <p>圆肩、胸小肌紧张、肩前侧不适时，喙突附近常是评估线索。学到胸小肌和喙肱肌时，这个点会反复出现。</p>
+          </div>
+        </li>
+        <li><span class="kp-head"><span class="term">鹰嘴</span>: 肘后尖，是肱三头肌止点和肘撑动作参考点。</span>
+          <div class="kp-body">
+            <p>手肘弯曲时后方突出的硬尖就是鹰嘴，属于尺骨近端。平板支撑肘撑、窄距俯卧撑、臂屈伸都能用它判断肘的位置。</p><span class="dim">训练含义</span>
+            <p>肱三头肌发力最终通过鹰嘴附近作用到尺骨，让肘伸直。做臂屈伸时肘后疼，要分清是肌腱、滑囊还是关节压力。</p>
+          </div>
+        </li>
+        <li><span class="kp-head"><span class="term">桡骨茎突</span>: 手腕拇指侧硬点，常用于腕部和前臂定位。</span>
+          <div class="kp-body">
+            <p>手腕外侧、拇指同侧的突出点是桡骨茎突。它帮你判断前臂旋前旋后、手腕中立位和握姿。</p><span class="dim">训练含义</span>
+            <p>卧推、俯卧撑、壶铃前架位都需要腕部中立。桡骨茎突位置能帮助判断手腕是不是过度后伸或偏斜。</p>
+          </div>
+        </li>
+        <li><span class="kp-head"><span class="term">髂前上棘</span>: 骨盆前上方尖点，是骨盆评估第一坐标。</span>
+          <div class="kp-body">
+            <p>把手放在腰两侧髂嵴，沿着骨边往前下方摸，会摸到一个明显前突点，就是髂前上棘。它常和髂后上棘配对，用来判断骨盆前倾/后倾。</p><span class="dim">训练含义</span>
+            <p>深蹲、硬拉、弓步里，骨盆位置影响腰椎受力和髋发力。找不到髂前上棘，就很难客观判断骨盆位置。</p><span class="dim">常见误解</span>
+            <p>❌把整条髂嵴当髂前上棘。✅髂嵴是边，髂前上棘是前方的点。</p>
+          </div>
+        </li>
+        <li><span class="kp-head"><span class="term">坐骨结节</span>: “坐着压到的骨头”，是腘绳肌近端起点。</span>
+          <div class="kp-body">
+            <p>坐硬凳时臀部下方压到的骨点，就是坐骨结节区域。腘绳肌从这里起，向下跨过膝关节。</p><span class="dim">训练含义</span>
+            <p>罗马尼亚硬拉、腿弯举、腘绳肌拉伸都要理解“坐骨结节到小腿”的拉索方向。坐骨结节附近疼痛不一定是“臀疼”，可能与腘绳肌近端肌腱有关。</p>
+          </div>
+        </li>
+        <li><span class="kp-head"><span class="term">大转子</span>: 股骨外侧大突起，是髋关节定位和臀肌附着线索。</span>
+          <div class="kp-body">
+            <p>站立时摸髋外侧最突出的硬点，多数就是大转子。它不是髂嵴，也不是骨盆的一部分，而是股骨近端。</p><span class="dim">训练含义</span>
+            <p>臀中肌、臀小肌、梨状肌等都和大转子区域关系密切。侧卧外展、蚌式、单腿稳定训练中，髋外侧感觉常在这里附近。</p>
+          </div>
+        </li>
+        <li><span class="kp-head"><span class="term">棘突、横突、胸骨剑突、肋弓</span>: 中轴骨定位决定脊柱和呼吸评估。</span>
+          <div class="kp-body">
+            <p>棘突是背后一排能摸到的点；横突在更深更侧方，通常不容易直接摸清。胸骨剑突在胸骨下端，肋弓是下肋缘。</p><span class="dim">训练含义</span>
+            <p>做呼吸训练、胸椎活动度、核心稳定评估时，要知道胸廓和脊柱边界。比如“肋骨外翻”不是腹肌弱一个原因，它还和呼吸、胸廓位置、骨盆位置配合有关。</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="panel">
+      <h2>快速对照表</h2>
+      <table class="tbl">
+        <tr>
+          <th>区域</th>
+          <th>骨性标志</th>
+          <th>最常用场景</th>
+        </tr>
+        <tr>
+          <td>肩</td>
+          <td>肩峰、喙突</td>
+          <td>肩袖、圆肩、推举卧推评估</td>
+        </tr>
+        <tr>
+          <td>肘腕</td>
+          <td>鹰嘴、桡骨茎突</td>
+          <td>肱三头肌、握姿、腕中立</td>
+        </tr>
+        <tr>
+          <td>骨盆</td>
+          <td>髂前上棘、髂嵴、坐骨结节</td>
+          <td>骨盆倾斜、腘绳肌起点</td>
+        </tr>
+        <tr>
+          <td>髋膝</td>
+          <td>大转子、胫骨粗隆</td>
+          <td>髋定位、膝伸肌链</td>
+        </tr>
+        <tr>
+          <td>中轴</td>
+          <td>棘突、剑突、肋弓</td>
+          <td>脊柱、呼吸、核心评估</td>
+        </tr>
+      </table>
+    </section>
+    <section class="warn">
+      <h2>常见误区</h2>
+      <p>❌ 看肌肉鼓起来的位置就等于找到骨点。✅ 肌肉会变厚，骨点更稳定。</p>
+      <p>❌ 摸到痛点就直接判断损伤。✅ 触诊只能提供线索，还要结合动作、疼痛史和功能测试。</p>
+      <p>❌ 只会在解剖图上认。✅ 教练真正需要的是在自己和客户身上快速定位。</p>
+    </section>
+    <section class="mnemonic"><strong>记忆口诀:</strong> 肩峰喙突定肩前，鹰嘴桡突看肘腕；髂前坐骨大转子，骨盆髋腿先摸准；棘突剑突加肋弓，中轴评估不跑偏。</section>
+    <section class="panel">
+      <h2>翻转卡复习</h2>
+      <div class="grid">
+        <div class="flip" onclick="this.classList.toggle('flipped')">
+          <div class="flip-inner">
+            <div class="face front">肩外侧最高点?</div>
+            <div class="face back">肩峰</div>
+          </div>
+        </div>
+        <div class="flip" onclick="this.classList.toggle('flipped')">
+          <div class="flip-inner">
+            <div class="face front">肩前方小钩?</div>
+            <div class="face back">喙突</div>
+          </div>
+        </div>
+        <div class="flip" onclick="this.classList.toggle('flipped')">
+          <div class="flip-inner">
+            <div class="face front">肘后尖?</div>
+            <div class="face back">鹰嘴</div>
+          </div>
+        </div>
+        <div class="flip" onclick="this.classList.toggle('flipped')">
+          <div class="flip-inner">
+            <div class="face front">骨盆前上方点?</div>
+            <div class="face back">髂前上棘</div>
+          </div>
+        </div>
+        <div class="flip" onclick="this.classList.toggle('flipped')">
+          <div class="flip-inner">
+            <div class="face front">腘绳肌近端起点?</div>
+            <div class="face back">坐骨结节</div>
+          </div>
+        </div>
+        <div class="flip" onclick="this.classList.toggle('flipped')">
+          <div class="flip-inner">
+            <div class="face front">髋外侧股骨突起?</div>
+            <div class="face back">大转子</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="panel orange">
+      <h2>实操关联</h2>
+      <ul class="practice">
+        <li><b>卧推:</b> 找肩峰和胸骨位置，判断肩胛是否稳定。</li>
+        <li><b>硬拉:</b> 用髂前上棘和肋弓判断骨盆-胸廓是否堆叠。</li>
+        <li><b>RDL拉伸感:</b> 坐骨结节到小腿后侧的张力，才是腘绳肌线索。</li>
+        <li><b>单腿动作:</b> 大转子和髂嵴能帮助观察骨盆侧倾。</li>
+        <li><b>俯卧撑:</b> 桡骨茎突和手腕角度能提示腕部是否过度后伸。</li>
+      </ul>
+    </section>
+    <section class="panel quiz">
+      <h2>练习题</h2>
+      <div class="q">
+        <p><b>1. 腘绳肌近端起点常定位在哪?</b></p>
+        <div class="opt" onclick="pick(this,'correct')">A. 坐骨结节</div>
+        <div class="opt" onclick="pick(this,'wrong')">B. 胫骨粗隆</div>
+        <div class="opt" onclick="pick(this,'wrong')">C. 肩峰</div><button class="btn" onclick="show('b1')">查看解析</button>
+        <div id="b1" class="reveal">答案 A。腘绳肌主要起于坐骨结节。胫骨粗隆是髌韧带止点附近，肩峰是肩胛骨标志。</div>
+      </div>
+      <div class="q">
+        <p><b>2. 判断骨盆前倾最常用哪类标志?</b></p>
+        <div class="opt" onclick="pick(this,'correct')">A. 髂前上棘与髂后上棘</div>
+        <div class="opt" onclick="pick(this,'wrong')">B. 肩峰与鹰嘴</div>
+        <div class="opt" onclick="pick(this,'wrong')">C. 桡骨茎突与尺骨茎突</div><button class="btn"
+          onclick="show('b2')">查看解析</button>
+        <div id="b2" class="reveal">答案 A。骨盆前后倾要看骨盆本身前后参考点。上肢骨点不能判断骨盆。</div>
+      </div>
+      <div class="q">
+        <p><b>3. 多选: 哪些与肩部评估直接相关?</b></p>
+        <div class="opt" onclick="pickMulti(this)" data-c="1">A. 肩峰</div>
+        <div class="opt" onclick="pickMulti(this)" data-c="1">B. 喙突</div>
+        <div class="opt" onclick="pickMulti(this)">C. 坐骨结节</div>
+        <div class="opt" onclick="pickMulti(this)">D. 胫骨粗隆</div><button class="btn" onclick="show('b3')">查看解析</button>
+        <div id="b3" class="reveal">答案 A/B。肩峰用于肩外侧和肩峰下空间定位，喙突和胸小肌、喙肱肌等有关。坐骨结节、胫骨粗隆是下肢相关。</div>
+      </div>
+      <div class="q">
+        <p><b>4. 案例: 客户说“髋外侧酸”，你先摸哪个骨点帮助定位?</b></p><button class="btn" onclick="show('b4')">查看解析</button>
+        <div id="b4" class="reveal">先找大转子。它能帮助区分髋外侧结构、臀中肌区域、股骨位置。之后再结合单腿站、侧卧外展、深蹲观察判断。</div>
+      </div>
+    </section>
+    <div class="footer">阶段1基础科学 · Day 2/112 · 今日早间新知识(工作日6:00) · 中午12:00复习巩固</div>
+  </div>
+  <script>document.querySelectorAll('.kp-head').forEach(h => h.onclick = () => h.parentElement.classList.toggle('open')); function pick(el, t) { el.parentElement.querySelectorAll('.opt').forEach(o => o.classList.remove('correct', 'wrong-show')); el.classList.add(t === 'correct' ? 'correct' : 'wrong-show') } function pickMulti(el) { el.classList.toggle(el.dataset.c === '1' ? 'correct' : 'wrong-show') } function show(id) { document.getElementById(id).classList.add('show') } document.querySelectorAll(".figure img").forEach(function (img) { img.addEventListener("click", function () { var m = document.querySelector(".img-modal"); if (!m) { m = document.createElement("div"); m.className = "img-modal"; m.innerHTML = "<img alt=\"\"><div class=\"hint\">点击空白处或按 Esc 关闭</div>"; m.addEventListener("click", function (e) { if (e.target === m) m.classList.remove("open") }); document.body.appendChild(m); document.addEventListener("keydown", function (e) { if (e.key === "Escape") m.classList.remove("open") }) } m.querySelector("img").src = img.src; m.querySelector("img").alt = img.alt || "放大图片"; m.classList.add("open") }) });</script>
+</body>
+
+</html>

@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 6 · 肌肉微观结构-肌丝滑行理论</title>
+  <style>
+    * {
+      box-sizing: border-box
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, "PingFang SC", sans-serif;
+      line-height: 1.75;
+      background: #f6f8f7;
+      color: #1a2b22;
+      padding: 18px
+    }
+
+    .wrap {
+      max-width: 940px;
+      margin: auto
+    }
+
+    .header {
+      text-align: center;
+      padding: 24px 10px
+    }
+
+    .header h1 {
+      margin: 0 0 10px;
+      font-size: 2rem;
+      background: linear-gradient(90deg, #0ea66b, #0ea5e9);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent
+    }
+
+    .sub {
+      color: #5a6b62
+    }
+
+    .chips {
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 10px
+    }
+
+    .chip {
+      font-size: .78rem;
+      border: 1px solid #d4ebe0;
+      border-radius: 999px;
+      padding: 3px 10px;
+      background: #fff;
+      color: #0c6da3
+    }
+
+    .panel,
+    .figure,
+    .warn {
+      background: #fff;
+      border: 1px solid #e2e8e4;
+      border-radius: 14px;
+      padding: 18px;
+      margin: 14px 0;
+      box-shadow: 0 2px 12px rgba(20, 40, 30, .06)
+    }
+
+    .lead {
+      border-left: 4px solid #0ea66b
+    }
+
+    .orange {
+      border-left: 4px solid #ea7a17
+    }
+
+    .figure img {
+      width: 100%;
+      display: block;
+      border-radius: 10px;
+      border: 1px solid #e2e8e4;
+      background: #fff;
+      cursor: zoom-in
+    }
+
+    .caption {
+      font-size: .85rem;
+      color: #5a6b62;
+      margin-top: 8px;
+      text-align: center
+    }
+
+    .panel h2,
+    .warn h2 {
+      font-size: 1.18rem;
+      margin: 0 0 10px;
+      color: #0a7d52
+    }
+
+    .term {
+      font-weight: 700;
+      color: #0a7d52;
+      background: #e8f5ee;
+      border-radius: 5px;
+      padding: 1px 5px
+    }
+
+    ul.kp {
+      list-style: none;
+      padding: 0;
+      margin: 0
+    }
+
+    ul.kp>li {
+      border-bottom: 1px dashed #e2e8e4
+    }
+
+    .kp-head {
+      display: block;
+      cursor: pointer;
+      position: relative;
+      padding: 13px 8px 13px 30px
+    }
+
+    .kp-head:before {
+      content: "▸";
+      position: absolute;
+      left: 8px;
+      color: #0ea66b;
+      font-weight: 800;
+      transition: .2s
+    }
+
+    .open>.kp-head:before {
+      transform: rotate(90deg)
+    }
+
+    .kp-head:hover {
+      background: #f0f4f2
+    }
+
+    .kp-body {
+      display: none;
+      padding: 0 14px 16px 30px
+    }
+
+    .open>.kp-body {
+      display: block
+    }
+
+    .dim {
+      display: block;
+      margin-top: 10px;
+      font-size: .78rem;
+      font-weight: 800;
+      color: #0c6da3
+    }
+
+    .tbl {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .9rem;
+      margin: 10px 0
+    }
+
+    .tbl th {
+      background: #0ea66b;
+      color: #fff;
+      text-align: left
+    }
+
+    .tbl th,
+    .tbl td {
+      padding: 8px;
+      border-bottom: 1px solid #e2e8e4;
+      vertical-align: top
+    }
+
+    .explain-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 10px;
+      margin: 12px 0
+    }
+
+    .explain-card {
+      border: 1px solid #dbe8e1;
+      border-radius: 12px;
+      background: #fbfdfc;
+      padding: 12px
+    }
+
+    .explain-card h4 {
+      margin: 0 0 7px;
+      font-size: .98rem;
+      color: #0a7d52
+    }
+
+    .explain-card p {
+      margin: 7px 0
+    }
+
+    .mini-tag {
+      display: inline-block;
+      font-size: .74rem;
+      font-weight: 800;
+      color: #0c6da3;
+      background: #e8f4fb;
+      border-radius: 999px;
+      padding: 2px 8px;
+      margin-right: 5px
+    }
+
+    .key-num {
+      font-weight: 800;
+      color: #ea7a17
+    }
+
+    .takeaway {
+      border-left: 4px solid #0ea66b;
+      background: #f0f8f4;
+      border-radius: 10px;
+      padding: 10px 12px;
+      margin: 10px 0
+    }
+
+    .mnemonic {
+      background: linear-gradient(135deg, #0a7d52, #0ea66b);
+      color: #fff;
+      border-radius: 14px;
+      padding: 18px;
+      margin: 14px 0
+    }
+
+    .mnemonic strong {
+      color: #fff7d6
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+      gap: 10px
+    }
+
+    .flip {
+      height: 132px;
+      perspective: 800px;
+      cursor: pointer
+    }
+
+    .flip-inner {
+      position: relative;
+      height: 100%;
+      transition: .5s;
+      transform-style: preserve-3d
+    }
+
+    .flip.flipped .flip-inner {
+      transform: rotateY(180deg)
+    }
+
+    .face {
+      position: absolute;
+      width: 100%;
+      height: 132px;
+      backface-visibility: hidden;
+      border-radius: 12px;
+      border: 1px solid #e2e8e4;
+      padding: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: .9rem
+    }
+
+    .front {
+      background: #f0f4f2
+    }
+
+    .back {
+      background: #0ea66b;
+      color: #fff;
+      transform: rotateY(180deg)
+    }
+
+    .warn {
+      border-left: 4px solid #e23b3b
+    }
+
+    .warn h2 {
+      color: #c42b2b
+    }
+
+    .practice {
+      list-style: none;
+      padding: 0
+    }
+
+    .practice li {
+      padding: 9px 8px 9px 28px;
+      border-bottom: 1px dashed #e2e8e4;
+      position: relative
+    }
+
+    .practice li:before {
+      content: "▸";
+      position: absolute;
+      left: 8px;
+      color: #ea7a17
+    }
+
+    .quiz .q {
+      background: #f0f4f2;
+      border-radius: 10px;
+      padding: 14px;
+      margin: 12px 0
+    }
+
+    .opt {
+      padding: 9px 11px;
+      margin: 6px 0;
+      border: 1px solid #d4ebe0;
+      border-radius: 8px;
+      background: #fff;
+      cursor: pointer
+    }
+
+    .correct {
+      background: #d4f5e0 !important;
+      border-color: #0ea66b !important
+    }
+
+    .wrong-show {
+      background: #fde0e0 !important;
+      border-color: #e23b3b !important
+    }
+
+    .reveal {
+      display: none;
+      background: #fff;
+      border-left: 3px solid #0ea5e9;
+      padding: 10px;
+      border-radius: 8px;
+      margin-top: 8px
+    }
+
+    .show {
+      display: block
+    }
+
+    .btn {
+      border: 0;
+      background: #0ea66b;
+      color: #fff;
+      border-radius: 8px;
+      padding: 7px 12px;
+      cursor: pointer
+    }
+
+    .footer {
+      text-align: center;
+      color: #7a8b82;
+      font-size: .82rem;
+      margin: 22px 0
+    }
+
+    .img-modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(10, 20, 15, .86);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 22px;
+      z-index: 9999
+    }
+
+    .img-modal.open {
+      display: flex
+    }
+
+    .img-modal img {
+      max-width: 96vw;
+      max-height: 92vh;
+      border-radius: 12px;
+      background: #fff;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, .35)
+    }
+
+    .img-modal .hint {
+      position: fixed;
+      left: 50%;
+      bottom: 18px;
+      transform: translateX(-50%);
+      color: #fff;
+      background: rgba(0, 0, 0, .35);
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: .82rem
+    }
+
+    @media(max-width:560px) {
+      body {
+        padding: 12px
+      }
+
+      .header h1 {
+        font-size: 1.55rem
+      }
+
+      .kp-body {
+        padding-left: 22px
+      }
+
+      .tbl {
+        font-size: .82rem
+      }
+
+      .face {
+        font-size: .84rem
+      }
+    }
+  </style>
+<link rel="stylesheet" href="theme.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <section class="header">
+      <h1>Day 6 · 肌肉微观结构-肌丝滑行理论</h1>
+      <div class="sub">今日主题：从整块肌肉一路缩小到肌小节，看清“肌肉为什么会收缩”。</div>
+      <div class="chips"><span class="chip">阶段1基础科学</span><span class="chip">肌肉生理</span><span class="chip">NSCA +
+          NASM</span></div>
+    </section>
+    <section class="panel lead">
+      <h2>一句话总结</h2>
+      <p>肌肉收缩像许多小划手一起拉绳：<b>肌球蛋白头部反复抓住肌动蛋白、用 ATP 做动力冲程，把细丝往肌小节中心拉</b>；结果是肌小节变短，但肌丝本身没有缩水。</p>
+    </section>
+    <section class="figure"><img src="assets/阶段1基础科学/day06-肌肉微观结构-肌丝滑行理论.png" alt="肌肉微观结构与肌丝滑行理论中文标注图">
+      <div class="caption">从左到右看：肌肉层级、肌小节结构、横桥循环四步。重点记住“滑动变短，不是肌丝变短”。</div>
+    </section>
+    <section class="panel">
+      <h2>核心要点(点击展开)</h2>
+      <ul class="kp">
+        <li><span class="kp-head"><span class="term">肌肉层次</span>: 肌肉不是一整块肉，而是肌外膜包肌束、肌束包肌纤维、肌纤维里装肌原纤维。</span>
+          <div class="kp-body"><span class="dim">底层机制</span>
+            <p>骨骼肌像一捆层层打包的电缆。最外面是肌外膜，里面分成一束束肌束；每个肌束由很多肌纤维组成，肌纤维本质上就是很长的肌细胞；肌纤维里面排满肌原纤维，肌原纤维再由一个个肌小节串联。</p>
+            <p>这套层级很重要，因为“动作表现”与“微观适应”不在同一尺度。你在训练里看到的是杠铃移动、关节角度变化、肌肉变硬；身体真正执行的是运动神经让一批肌纤维兴奋，肌纤维内部无数肌小节一起产生张力。</p>
+            <table class="tbl">
+              <tr>
+                <th>层级</th>
+                <th>像什么</th>
+                <th>学习重点</th>
+              </tr>
+              <tr>
+                <td>整块肌肉</td>
+                <td>一整根电缆</td>
+                <td>看得到、摸得到，连接骨骼产生关节运动</td>
+              </tr>
+              <tr>
+                <td>肌束</td>
+                <td>电缆里的一束线</td>
+                <td>由结缔组织包裹，帮助传力和分隔结构</td>
+              </tr>
+              <tr>
+                <td>肌纤维</td>
+                <td>一根很长的肌细胞</td>
+                <td>接受神经信号，内部有许多肌原纤维</td>
+              </tr>
+              <tr>
+                <td>肌原纤维</td>
+                <td>一串重复机器</td>
+                <td>由肌小节首尾相连，真正承担收缩结构</td>
+              </tr>
+              <tr>
+                <td>肌小节</td>
+                <td>一个微型拉力单元</td>
+                <td>Z 线到 Z 线，粗细肌丝滑动导致缩短</td>
+              </tr>
+            </table><span class="dim">真实例子</span>
+            <p>你摸到肱二头肌鼓起来，是整块肌肉形状变化；显微镜下真正反复缩短的是无数肌小节。粗看像一块，细看是成千上万小单位同时工作。</p>
+            <p>如果把一次二头弯举放慢看：大脑先决定发力，运动神经把信号送到肱二头肌，肌纤维兴奋，钙离子释放，横桥循环开始。最后你看到的“手臂弯起来”，只是这条链条的最后画面。</p><span
+              class="dim">训练含义</span>
+            <p>力量训练造成机械张力和微损伤时，影响从蛋白质层面传到肌纤维，再通过恢复和合成表现为肌肉增大。训练日志里的重量和次数，最终都落到这些微观结构上。</p>
+            <p>所以增肌不是“泵感越强越好”这么简单。泵感是局部充血和代谢压力的一部分，机械张力、动作幅度、重复质量、恢复营养也会决定肌纤维是否得到足够适应信号。</p><span
+              class="dim">常见误解</span>
+            <p>❌以为肌肉收缩就是整块肌肉自己“鼓起来”。✅其实先有肌小节缩短，很多小单位同步变化，外面才看到肌肉变硬变粗。</p>
+          </div>
+        </li>
+        <li><span class="kp-head"><span class="term">肌小节</span>: 肌小节是收缩基本单位，边界是两条 Z 线。</span>
+          <div class="kp-body"><span class="dim">底层机制</span>
+            <p>肌小节可以理解为一段可缩短的“微型拉链”。两端 Z 线往中间靠近，整段就变短。肌动蛋白是细丝，接在 Z 线附近；肌球蛋白是粗丝，位在中间，带着能抓住细丝的头部。</p>
+            <p>肌小节里常见几个带区：A 带对应粗丝长度，收缩时大体不变；I 带主要是只有细丝的区域，收缩时会变窄；H
+              区主要是只有粗丝的中间区域，在这个区域内，粗肌丝和细肌丝没有重叠，只有粗肌丝，当肌肉收缩，细肌丝（肌动蛋白丝）向M线（肌小节中央）滑行时，细肌丝会更深地插入到A带内部，如果收缩到极致，H区甚至可能消失。这个变化是考试常考点，也是判断你是否真的理解“滑行”的关键。
+            </p>
+            <span class="dim">真实例子</span>
+            <p>做腿屈伸时，股四头肌里无数肌小节同时缩短，让膝关节伸直。动作越需要力量，神经系统会募集更多运动单位，让更多肌纤维里的肌小节参与。</p>
+            <p>同样是腿屈伸，底部刚启动、接近伸直、顶峰停顿时，股四头肌长度和关节力矩都不同。你主观感觉某一段更难，不只来自意志力，也来自肌小节重叠、力臂、器械阻力曲线共同作用。</p><span
+              class="dim">训练含义</span>
+            <p>理解肌小节能帮助你理解长度-张力关系：肌肉太短或太长时，粗细肌丝重叠不理想，横桥数量少，力量会下降。动作半程很强、底部很弱，常和这个有关。</p>
+            <p>编动作时不要只问“这个动作练不练到某块肌肉”，还要问“在哪个长度练到”。比如腿弯举能让腘绳肌在膝屈曲中发力，罗马尼亚硬拉让腘绳肌在髋屈曲、被拉长状态下承受张力，两者刺激感不同。</p><span
+              class="dim">常见误解</span>
+            <p>❌以为肌肉越拉长越有力。✅肌肉存在最佳长度，太短挤在一起、太长够不着，都不利于横桥产生力量。</p>
+          </div>
+        </li>
+        <li><span class="kp-head"><span class="term">肌动蛋白与肌球蛋白</span>: 细丝负责被拉，粗丝头部负责抓住细丝并产生拉力。</span>
+          <div class="kp-body"><span class="dim">底层机制</span>
+            <p>肌动蛋白像两条带小珠子的绳，肌球蛋白像中间伸出许多小手的粗绳。真正产生力量的是肌球蛋白头部：它抓住肌动蛋白，弯一下，拉一下，再松开复位。</p>
+            <p>不要把“粗丝更粗”理解成粗丝单独变短。粗丝承担发动机角色，细丝承担被拉动的轨道角色；力量来自两者之间的连接和相对滑动，不来自某一根丝自己缩进去。</p><span class="dim">真实例子</span>
+            <p>卧推推起杠铃时，胸大肌、三角肌前束、肱三头肌里的肌球蛋白头部都在大量循环。宏观看是杠铃上升，微观看是横桥一轮轮拉动细丝。</p>
+            <p>卧推卡在胸口附近时，可能不是胸大肌“没有参与”，而是该角度下肌肉长度、肩肘力臂、稳定能力共同让横桥输出难以转化成足够杠铃速度。微观有力，不等于宏观一定能过粘滞点。</p><span
+              class="dim">训练含义</span>
+            <p>ATP 不是只给跑步供能，力量训练每一次肌肉收缩也要 ATP。大重量组间休息不足时，你感觉“没电”，本质上和能量再合成跟不上有关。</p>
+            <p>这也解释了为什么同样 10 次，前几次顺、后几次慢。不是后几次突然“不会发力”，而是可用能量、神经驱动、代谢环境和横桥循环效率都在下降，身体只能用更慢速度完成同样动作。</p><span
+              class="dim">常见误解</span>
+            <p>❌以为乳酸才是所有疲劳原因。✅短时大重量更常受 ATP-PCr、神经输出、局部离子环境等多因素限制，乳酸不是唯一解释。</p>
+            <div class="takeaway"><b>先抓结论：</b>短时大重量举不起来，常是“燃料不够 + 油门踩不下去 + 肌肉细胞电解质环境变乱”，不是单纯乳酸问题。</div>
+            <div class="explain-grid">
+              <div class="explain-card">
+                <h4>1. ATP-PCr：火箭点火燃料</h4>
+                <p><span class="mini-tag">字面意思</span>ATP = 三磷酸腺苷，肌肉收缩直接能源；PCr = 磷酸肌酸，ATP 的备用仓库。</p>
+                <p><span class="mini-tag">大白话</span>肌肉现成 ATP 只够全力输出 <span class="key-num">1-2 秒</span>。PCr 像充电宝，把 ADP 快速“充回”ATP。</p>
+                <p><span class="mini-tag">卡在哪里</span>PCr 储量很少，全力输出约 <span class="key-num">6-8 秒</span>，大概 <span class="key-num">3-5 次</span>很重重复。PCr 快耗尽后，ATP 再生速度掉下去，横桥循环缺燃料，动作速度就掉。</p>
+              </div>
+              <div class="explain-card">
+                <h4>2. 神经输出：身体油门踏板</h4>
+                <p><span class="mini-tag">字面意思</span>大脑和脊髓向肌肉发出“收缩”指令的强度和频率，也叫神经驱动。</p>
+                <p><span class="mini-tag">大白话</span>大重量需要高频电信号，才能募集更多、更大的运动单位，尤其是力量强但容易疲劳的快肌纤维。</p>
+                <p><span class="mini-tag">卡在哪里</span>连续高强度发力时，中枢神经系统会疲劳，兴奋性和保护性抑制会改变。感觉就是“想发力，但身体不听使唤”。</p>
+              </div>
+              <div class="explain-card">
+                <h4>3. 局部离子环境：细胞电解质平衡</h4>
+                <p><span class="mini-tag">字面意思</span>肌肉细胞内外 K⁺、Ca²⁺、H⁺ 等离子浓度变化。</p>
+                <p><span class="mini-tag">大白话</span>肌肉每兴奋一次，离子都会跨膜移动。重复高强度收缩后，电解质平衡会乱。</p>
+                <p><span class="mini-tag">卡在哪里</span>K⁺ 堆积会影响膜电位，让兴奋信号更难传进去；Ca²⁺ 释放或回收不顺，会让结合位点打开变慢，横桥结合效率下降。</p>
+              </div>
+            </div>
+            <div class="takeaway"><b>训练判断：</b>如果 3-5 次大重量后突然掉速，多半先看 ATP-PCr 恢复、神经疲劳和离子环境，不要立刻归因成“乳酸太多”。</div>
+          </div>
+        </li>
+        <li><span class="kp-head"><span class="term">横桥循环</span>: 肌球蛋白头部反复结合、拉动、解离、复位，像划船桨一样把细丝拉向中心。</span>
+          <div class="kp-body"><span class="dim">底层机制</span>
+            <p>横桥循环可以拆成四步：ATP 结合让肌球蛋白和肌动蛋白解离；ATP 水解让肌球蛋白头部“上弦”；头部结合肌动蛋白；释放磷酸和 ADP 后发生动力冲程，把细丝往肌小节中心拉。新 ATP 再结合，循环继续。</p>
+            <p>这个循环不是一次性动作，而是只要钙离子还在、ATP 还够、神经信号还在，许多肌球蛋白头部就会错峰工作。部分头部在抓，部分头部在拉，部分头部在复位。这样肌肉才能保持连续张力，而不是一抽一抽完全断开。</p>
+            <table class="tbl">
+              <tr>
+                <th>步骤</th>
+                <th>发生了什么</th>
+                <th>好记法</th>
+              </tr>
+              <tr>
+                <td>ATP 结合</td>
+                <td>横桥松开肌动蛋白</td>
+                <td>给钱松手</td>
+              </tr>
+              <tr>
+                <td>ATP 水解</td>
+                <td>肌球蛋白头部复位蓄力</td>
+                <td>拉弓上弦</td>
+              </tr>
+              <tr>
+                <td>横桥结合</td>
+                <td>头部抓住肌动蛋白</td>
+                <td>抓住绳子</td>
+              </tr>
+              <tr>
+                <td>动力冲程</td>
+                <td>头部弯曲拉动细丝</td>
+                <td>划桨拉水</td>
+              </tr>
+            </table><span class="dim">真实例子</span>
+            <p>做引体向上时，背阔肌和肱二头肌在向心阶段把身体拉上去，横桥循环负责产生拉力；下降阶段是离心控制，肌肉被拉长但仍在产生张力，横桥仍在工作，只是外界阻力让肌肉长度增加。</p>
+            <p>这也是离心训练容易带来强烈酸痛的原因之一：不是离心阶段“肌肉没用力”，而是肌肉在高张力下被拉长，微观结构承受更大机械挑战。Day 19 会用力-速度曲线进一步解释离心为什么能产更大力。</p><span
+              class="dim">训练含义</span>
+            <p>只要肌肉持续产生张力，横桥就持续循环。等长收缩时关节不动，但微观层面仍有横桥工作，只是产生的力和外界阻力平衡。</p>
+            <p>控制节奏能改变横桥工作时间。比如卧推下放 3 秒，比自由落下更能让胸大肌和肱三头肌在离心阶段维持张力；但节奏太慢也会限制使用重量，所以训练目标不同，节奏安排不同。</p><span
+              class="dim">常见误解</span>
+            <p>❌以为 ATP 是让肌肉“收缩”的开关。✅ATP 同时负责供能和让横桥解离，没有 ATP 横桥反而松不开。</p>
+          </div>
+        </li>
+        <li><span class="kp-head"><span class="term">肌丝滑行理论</span>: 收缩时细丝滑入粗丝之间，肌小节变短，但粗丝和细丝长度不变。</span>
+          <div class="kp-body"><span class="dim">底层机制</span>
+            <p>滑行理论的核心不是“肌丝被压短”，而是“相互重叠增加”。Z 线彼此靠近，I 带和 H 区变窄，A 带大体不变，因为 A 带对应粗丝长度。</p>
+            <p>可以把粗丝和细丝想成两把相对插入的梳子。梳齿越互相插入，两个梳背距离越近；梳齿本身没有缩短。肌小节缩短也是这个逻辑：Z 线距离变近，但肌动蛋白和肌球蛋白仍保持自身长度。</p>
+            <table class="tbl">
+              <tr>
+                <th>结构</th>
+                <th>收缩时变化</th>
+                <th>为什么</th>
+              </tr>
+              <tr>
+                <td>Z 线间距</td>
+                <td>变短</td>
+                <td>细丝被拉向肌小节中心</td>
+              </tr>
+              <tr>
+                <td>I 带</td>
+                <td>变窄</td>
+                <td>只有细丝的区域减少</td>
+              </tr>
+              <tr>
+                <td>H 区</td>
+                <td>变窄甚至消失</td>
+                <td>只有粗丝的中间区域减少</td>
+              </tr>
+              <tr>
+                <td>A 带</td>
+                <td>大体不变</td>
+                <td>对应粗丝长度，粗丝本身不缩短</td>
+              </tr>
+            </table><span class="dim">真实例子</span>
+            <p>弯举上举时，肱二头肌缩短，手臂弯起来。微观上不是肌动蛋白和肌球蛋白变短，而是它们滑得更重叠，像两个梳子齿互相插得更深。</p>
+            <p>做坐姿划船时，背阔肌、菱形肌、斜方肌中下束等一起产生张力。你看到肩胛后缩、肘向后走，里面仍是同一套滑行机制，只是不同肌肉、不同角度、不同纤维方向共同完成动作。</p><span
+              class="dim">训练含义</span>
+            <p>这解释了为什么动作幅度会影响刺激。全程动作让肌肉在不同长度下承受张力，横桥重叠范围也不同；但幅度必须在可控、无痛、姿势稳定前提下扩大。</p>
+            <p>比如哑铃飞鸟底部胸大肌被拉长，顶峰水平内收更明显；夹胸器在不同器械设计下阻力曲线不同。理解滑行理论后，你会知道“拉伸感”和“收缩感”都只是肌小节在不同长度下工作的主观表现，不能单独代表训练有效性。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为肌肉“收缩”就是每根肌丝缩短。✅真正缩短的是肌小节距离，肌丝本身不变短。</p>
+          </div>
+        </li>
+        <li><span class="kp-head"><span class="term">钙离子调节</span>: 钙离子像开门钥匙，打开肌动蛋白上的结合位点，让横桥有地方抓。</span>
+          <div class="kp-body"><span class="dim">底层机制</span>
+            <p>放松时，原肌球蛋白挡住肌动蛋白结合位点，肌球蛋白头部抓不上去。神经信号到来后，肌浆网释放钙离子，钙结合肌钙蛋白，原肌球蛋白移位，结合位点暴露，横桥循环才真正开始。</p>
+            <p>这套“开门”机制能防止肌肉无缘无故乱收缩。没有神经信号时，结合位点被挡住；有信号时，钙离子升高，门打开；信号结束后，钙离子被回收到肌浆网，门关上，肌肉放松。</p><span
+              class="dim">真实例子</span>
+            <p>你想做一次弯举，大脑发出信号，运动神经让肌纤维兴奋，钙离子释放，横桥能结合，肱二头肌才产生张力。Day 26 会完整讲“神经信号到钙释放”的链条。</p>
+            <p>抽筋常被简单说成“缺钙”，但训练中的抽筋更复杂，可能和疲劳、神经兴奋性、水电解质、局部代谢环境有关。今天重点只记住：正常收缩必须依赖钙离子调节结合位点。</p><span
+              class="dim">训练含义</span>
+            <p>热身能改善神经肌肉兴奋、温度和组织状态，让收缩更顺畅。不是“玄学激活”，而是让信号、能量和组织弹性更适合发力。</p>
+            <p>动作前的轻重量热身组有实际价值：它让神经系统熟悉动作路径，让目标肌肉逐步进入工作状态，也让关节和结缔组织准备承受更高张力。热身不是把人练累，而是把收缩链条调到可用状态。</p><span
+              class="dim">常见误解</span>
+            <p>❌以为有 ATP 就一定能收缩。✅还需要钙离子暴露结合位点，否则横桥没地方抓。</p>
+          </div>
+        </li>
+        <li><span class="kp-head"><span class="term">ATP 双重角色</span>: ATP 既提供动力，也帮助横桥松开，缺它收缩和放松都会出问题。</span>
+          <div class="kp-body"><span class="dim">底层机制</span>
+            <p>ATP 水解释放能量，让肌球蛋白头部复位准备拉动；新的 ATP 结合又让头部从肌动蛋白上解离。也就是说，ATP 不是只负责“用力”，还负责“松手”。</p>
+            <p>如果用生活类比：ATP 像一次划桨的燃料券。先让桨手松开旧位置，再把桨手重新摆到能发力的位置，然后桨手抓住水往后划。没有燃料券，桨手没法顺利进入下一轮。</p><span
+              class="dim">真实例子</span>
+            <p>死亡后尸僵就是经典反例：没有 ATP，肌球蛋白头部无法从肌动蛋白上解离，肌肉变僵硬。训练中不会这么极端，但能量不足会让输出下降、动作变慢。</p>
+            <p>大重量深蹲第一组 5 次很快，第三组同重量突然很慢，通常不是肌肉结构在几分钟内变差，而是可用能量、神经兴奋、心理准备和局部疲劳共同改变了横桥循环与动作输出。</p><span
+              class="dim">训练含义</span>
+            <p>高强度力量和爆发训练依赖快速 ATP 再合成。组间休息太短，下一组可用能量不足，横桥循环速度和神经输出都受影响。</p>
+            <p>NSCA 与 NASM 都会强调训练目标匹配休息：最大力量和爆发训练休息更长，肌肥大训练中等休息，耐力或代谢压力训练休息更短。背后逻辑之一就是不同目标对 ATP 再合成和疲劳管理要求不同。</p><span
+              class="dim">常见误解</span>
+            <p>❌以为休息只是让“喘气恢复”。✅力量训练组间休息也在恢复 ATP-PCr 和神经输出：PCr 重新补库存，神经系统重新找回油门，局部离子环境也逐步回到更适合兴奋和收缩的状态。</p>
+          </div>
+        </li>
+        <li><span class="kp-head"><span class="term">宏观动作来自微观同步</span>: 关节运动是大量肌小节、肌纤维和运动单位协同后的外在结果。</span>
+          <div class="kp-body"><span class="dim">底层机制</span>
+            <p>单个横桥力量很小，单个肌小节也很小。真正能举起杠铃，是许多横桥、许多肌小节、许多肌纤维、许多运动单位在时间上同步发力。</p><span class="dim">真实例子</span>
+            <p>新手训练早期力量增长很快，肌肉还没明显变大，常因为神经系统更会募集和协调这些单位。微观结构没换，但调用效率提升。</p><span class="dim">训练含义</span>
+            <p>技术练习、渐进超负荷、足够恢复都重要。技术让力量方向更有效，超负荷给组织适应信号，恢复让蛋白质合成和能量系统补回来。</p><span class="dim">常见误解</span>
+            <p>❌以为练得酸才代表肌丝滑行有效。✅酸痛不是收缩质量指标，稳定张力、动作控制、渐进负荷更重要。</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="warn">
+      <h2>常见误区</h2>
+      <p>❌很多人以为肌肉收缩时肌丝自己变短。✅其实是肌动蛋白和肌球蛋白相互滑动，肌小节变短。</p>
+      <p>❌很多人以为 ATP 只负责让肌肉用力。✅ATP 也负责让横桥解离，没有 ATP 会松不开。</p>
+      <p>❌很多人以为等长收缩时肌肉内部没变化。✅关节不动不等于横桥不工作，内部仍在产生张力。</p>
+    </section>
+    <section class="mnemonic"><strong>记忆口诀:</strong> 肌肉套肌束，肌束装肌纤；肌纤藏原纤，原纤串小节；钙来开门，ATP 上弦；横桥抓拉松复位，细丝滑进小节短。</section>
+    <section class="panel">
+      <h2>翻转卡复习</h2>
+      <div class="grid">
+        <div class="flip" onclick="this.classList.toggle('flipped')">
+          <div class="flip-inner">
+            <div class="face front">肌肉层级从大到小?</div>
+            <div class="face back">肌肉 → 肌束 → 肌纤维 → 肌原纤维 → 肌小节</div>
+          </div>
+        </div>
+        <div class="flip" onclick="this.classList.toggle('flipped')">
+          <div class="flip-inner">
+            <div class="face front">肌小节边界是什么?</div>
+            <div class="face back">两条 Z 线</div>
+          </div>
+        </div>
+        <div class="flip" onclick="this.classList.toggle('flipped')">
+          <div class="flip-inner">
+            <div class="face front">细丝叫什么?</div>
+            <div class="face back">肌动蛋白</div>
+          </div>
+        </div>
+        <div class="flip" onclick="this.classList.toggle('flipped')">
+          <div class="flip-inner">
+            <div class="face front">粗丝叫什么?</div>
+            <div class="face back">肌球蛋白</div>
+          </div>
+        </div>
+        <div class="flip" onclick="this.classList.toggle('flipped')">
+          <div class="flip-inner">
+            <div class="face front">横桥循环像什么?</div>
+            <div class="face back">划船桨反复抓、拉、松、复位</div>
+          </div>
+        </div>
+        <div class="flip" onclick="this.classList.toggle('flipped')">
+          <div class="flip-inner">
+            <div class="face front">钙离子作用?</div>
+            <div class="face back">打开肌动蛋白结合位点</div>
+          </div>
+        </div>
+        <div class="flip" onclick="this.classList.toggle('flipped')">
+          <div class="flip-inner">
+            <div class="face front">收缩时肌丝变短吗?</div>
+            <div class="face back">不变短，是滑动重叠增加</div>
+          </div>
+        </div>
+        <div class="flip" onclick="this.classList.toggle('flipped')">
+          <div class="flip-inner">
+            <div class="face front">ATP 两个作用?</div>
+            <div class="face back">供能复位，也让横桥解离</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="panel orange">
+      <h2>实操关联</h2>
+      <ul class="practice">
+        <li><b>增肌:</b> 肌肉增长需要微观结构反复承受足够机械张力，所以重量、次数、动作幅度和接近力竭程度都要记录。</li>
+        <li><b>减脂:</b> 减脂期力量训练不是只为耗热量，更是保住肌纤维和力量输出，提醒身体“这些收缩机器还要用”。</li>
+        <li><b>爆发:</b> 爆发力依赖更快的神经募集和 ATP 快速供能，横桥循环速度、运动单位同步、技术发力方向都重要。</li>
+        <li><b>耐力:</b> 耐力训练提高有氧供能和疲劳抵抗，让长时间横桥循环能更稳定持续，不是只练心肺。</li>
+        <li><b>康复:</b> 等长训练可在关节活动少的情况下让横桥产生张力，常用于疼痛期维持肌肉输出和控制感。</li>
+        <li><b>动作教学:</b> 学员不理解“控制离心”时，可解释为下放阶段肌肉仍在用横桥产生张力，不是被重量随便拉下去。</li>
+      </ul>
+    </section>
+    <section class="panel quiz">
+      <h2>练习题</h2>
+      <div class="q">
+        <p><b>1. 肌肉收缩的最基本功能单位是?</b></p>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">A.</span> 肌束</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">B.</span> 肌纤维</div>
+        <div class="opt" onclick="pick(this,'correct')"><span class="lbl">C.</span> 肌小节</div><button class="btn"
+          onclick="show('d1')">查看解析</button>
+        <div id="d1" class="reveal">答案 C。肌束和肌纤维是更大的层级，真正按 Z 线到 Z 线重复排列、负责缩短的是肌小节。肌纤维里有许多肌原纤维，肌原纤维由许多肌小节串联。</div>
+      </div>
+      <div class="q">
+        <p><b>2. 肌丝滑行理论最准确的说法是?</b></p>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">A.</span> 肌动蛋白和肌球蛋白都被压短</div>
+        <div class="opt" onclick="pick(this,'correct')"><span class="lbl">B.</span> 细丝滑入粗丝之间，肌小节变短</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">C.</span> 只有肌肉外膜缩短，内部不变</div><button class="btn"
+          onclick="show('d2')">查看解析</button>
+        <div id="d2" class="reveal">答案 B。A 错在肌丝本身不变短；C 错在内部肌小节才是关键。收缩时 Z 线靠近，I 带和 H 区变窄，A 带大体不变。</div>
+      </div>
+      <div class="q">
+        <p><b>3. 多选: 横桥循环需要哪些条件或步骤?</b></p>
+        <div class="opt" onclick="pickMulti(this)" data-c="1"><span class="lbl">A.</span> 钙离子暴露肌动蛋白结合位点</div>
+        <div class="opt" onclick="pickMulti(this)" data-c="1"><span class="lbl">B.</span> ATP 参与供能和解离</div>
+        <div class="opt" onclick="pickMulti(this)" data-c="1"><span class="lbl">C.</span> 肌球蛋白头部结合并拉动肌动蛋白</div>
+        <div class="opt" onclick="pickMulti(this)"><span class="lbl">D.</span> 肌丝必须自己变短</div><button class="btn"
+          onclick="show('d3')">查看解析</button>
+        <div id="d3" class="reveal">答案 A/B/C。钙离子打开结合位点，ATP 让横桥复位并解离，肌球蛋白头部负责抓拉。D 错，肌丝不变短，是相互滑动。</div>
+      </div>
+      <div class="q">
+        <p><b>4. 案例: 学员问“我做平板支撑身体没动，肌肉是不是没有收缩?” 你怎么回答?</b></p><button class="btn" onclick="show('d4')">查看解析</button>
+        <div id="d4" class="reveal">
+          平板支撑是等长收缩：关节角度基本不变，但腹横肌、腹直肌、腹斜肌、臀肌等仍在产生张力。微观层面横桥仍在循环，肌肉用力抵抗重力和身体下塌趋势，只是肌肉产生的力和外界阻力平衡，所以看起来不动。</div>
+      </div>
+      <div class="q">
+        <p><b>5. 应用题: 学员做哑铃弯举时说“顶峰夹紧才是真的收缩，底部拉长阶段肌肉没怎么工作”。你如何纠正?</b></p><button class="btn"
+          onclick="show('d5')">查看解析</button>
+        <div id="d5" class="reveal">
+          先肯定顶峰确实有明显主观收缩感，但要纠正“底部没工作”。弯举下放时肱二头肌在离心收缩，肌肉被拉长但仍在产生张力，横桥循环仍参与控制下放速度。底部接近伸肘时，肌肉长度、肘关节力矩、哑铃重力方向都会改变刺激感。训练上应避免哑铃自由落下，因为那会把本该由肌肉承担的离心控制交给惯性和被动组织；更好的做法是上举稳定、下放可控，在无痛范围内让肌肉经历较完整长度变化。这个题的核心不是“顶峰无用”或“底部最好”，而是理解不同长度下都可能有张力，肌丝滑行机制贯穿向心、离心和等长。
+        </div>
+      </div>
+    </section>
+    <div class="footer">阶段1基础科学 · Day 6/112 · 今日早间新知识(工作日6:00) · 中午12:00复习巩固</div>
+  </div>
+  <script>
+    document.querySelectorAll('.kp-head').forEach(h => h.onclick = () => h.parentElement.classList.toggle('open'));
+    function pick(el, t) { el.parentElement.querySelectorAll('.opt').forEach(o => o.classList.remove('correct', 'wrong-show')); el.classList.add(t === 'correct' ? 'correct' : 'wrong-show') }
+    function pickMulti(el) { if (el.classList.contains('correct') || el.classList.contains('wrong-show')) { el.classList.remove('correct'); el.classList.remove('wrong-show') } else { el.classList.add(el.dataset.c === '1' ? 'correct' : 'wrong-show') } }
+    function show(id) { document.getElementById(id).classList.add('show') }
+    document.querySelectorAll(".figure img").forEach(function (img) { img.addEventListener("click", function () { var m = document.querySelector(".img-modal"); if (!m) { m = document.createElement("div"); m.className = "img-modal"; m.innerHTML = "<img alt=\"\"><div class=\"hint\">点击空白处或按 Esc 关闭</div>"; m.addEventListener("click", function (e) { if (e.target === m) m.classList.remove("open") }); document.body.appendChild(m); document.addEventListener("keydown", function (e) { if (e.key === "Escape") m.classList.remove("open") }) } m.querySelector("img").src = img.src; m.querySelector("img").alt = img.alt || "放大图片"; m.classList.add("open") }) });
+  </script>
+</body>
+
+</html>

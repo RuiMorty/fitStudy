@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 9 · 肌纤维类型与特性</title>
+  <style>
+    *{box-sizing:border-box}
+    body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.75;background:#f6f8f7;color:#1a2b22;padding:18px}
+    .wrap{max-width:980px;margin:auto}
+    .header{text-align:center;padding:24px 10px}
+    .header h1{margin:0 0 10px;font-size:2rem;background:linear-gradient(90deg,#0ea66b,#0ea5e9);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .sub{color:#5a6b62}
+    .chips{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:10px}
+    .chip{font-size:.78rem;border:1px solid #d4ebe0;border-radius:999px;padding:3px 10px;background:#fff;color:#0c6da3}
+    .panel,.figure,.warn{background:#fff;border:1px solid #e2e8e4;border-radius:14px;padding:18px;margin:14px 0;box-shadow:0 2px 12px rgba(20,40,30,.06)}
+    .lead{border-left:4px solid #0ea66b}
+    .orange{border-left:4px solid #ea7a17}
+    .figure img{width:100%;display:block;border-radius:12px;border:1px solid #e2e8e4;background:#fbfdfc;cursor:zoom-in}
+    .caption{font-size:.85rem;color:#5a6b62;margin-top:8px;text-align:center}
+    .panel h2,.warn h2{font-size:1.18rem;margin:0 0 10px;color:#0a7d52}
+    .term{font-weight:700;color:#0a7d52;background:#e8f5ee;border-radius:5px;padding:1px 5px}
+    ul.kp{list-style:none;padding:0;margin:0}
+    ul.kp>li{border-bottom:1px dashed #e2e8e4}
+    .kp-head{display:block;cursor:pointer;position:relative;padding:13px 8px 13px 30px}
+    .kp-head:before{content:"▸";position:absolute;left:8px;color:#0ea66b;font-weight:800;transition:.2s}
+    .open>.kp-head:before{transform:rotate(90deg)}
+    .kp-head:hover{background:#f0f4f2}
+    .kp-body{display:none;padding:0 14px 16px 30px}
+    .open>.kp-body{display:block}
+    .dim{display:block;margin-top:10px;font-size:.78rem;font-weight:800;color:#0c6da3}
+    .take{border-left:4px solid #0ea66b;background:#f0fbf5;border-radius:10px;padding:10px 12px;margin:10px 0}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin:12px 0}
+    .mini{border:1px solid #dbe8e1;border-radius:12px;background:#fbfdfc;padding:12px}
+    .mini h4{margin:0 0 7px;font-size:.98rem;color:#0a7d52}
+    .tag{display:inline-block;font-size:.74rem;font-weight:800;color:#0c6da3;background:#e8f4fb;border-radius:999px;padding:2px 8px;margin-right:5px}
+    .tbl{width:100%;border-collapse:collapse;font-size:.9rem;margin:10px 0}
+    .tbl th{background:#0ea66b;color:#fff;text-align:left}
+    .tbl th,.tbl td{padding:8px;border-bottom:1px solid #e2e8e4;vertical-align:top}
+    .warn{border-left:4px solid #e23b3b}
+    .warn p{margin:8px 0}
+    .mnemonic{background:linear-gradient(135deg,#0ea66b,#0ea5e9);color:#fff;border-radius:14px;padding:20px;margin:14px 0;box-shadow:0 2px 12px rgba(20,40,30,.08)}
+    .mnemonic h2{margin:0 0 8px;font-size:1.15rem}
+    .mnemonic strong{color:#fff7d6}
+    .card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+    .flip{min-height:145px;perspective:800px;cursor:pointer}
+    .flip-inner{position:relative;width:100%;height:100%;min-height:145px;transition:transform .5s;transform-style:preserve-3d}
+    .flip.flipped .flip-inner{transform:rotateY(180deg)}
+    .face{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:15px;border-radius:13px;border:1px solid #e2e8e4;backface-visibility:hidden;background:#fff;font-weight:700}
+    .front{color:#0a7d52;background:#f8fffb}
+    .back{transform:rotateY(180deg);background:#eef7ff;color:#0c6da3;font-weight:600}
+    .quiz{border-top:1px dashed #e2e8e4;padding-top:12px;margin-top:12px}
+    .quiz h3{margin:0 0 8px;font-size:1rem;color:#1a2b22}
+    .opt{border:1px solid #e2e8e4;border-radius:10px;padding:9px 10px;margin:7px 0;background:#fff;cursor:pointer}
+    .opt:hover{background:#f0f4f2}.lbl{font-weight:800;color:#0c6da3;margin-right:4px}
+    .correct{border-color:#0ea66b!important;background:#e9f8f0!important}
+    .wrong-show{border-color:#e23b3b!important;background:#fff0f0!important}
+    button{border:0;border-radius:999px;background:#0ea66b;color:#fff;font-weight:800;padding:8px 14px;cursor:pointer;margin-top:6px}
+    .reveal{display:none;border-left:4px solid #0ea5e9;background:#f0f8fc;border-radius:10px;padding:10px;margin-top:8px}
+    .reveal.show{display:block}
+    .list{padding-left:20px;margin:8px 0}
+    .list li{margin:7px 0}
+    footer{text-align:center;color:#5a6b62;font-size:.85rem;margin:22px 0}
+    .lightbox{position:fixed;inset:0;background:rgba(0,0,0,.82);display:none;align-items:center;justify-content:center;z-index:9;padding:18px}
+    .lightbox.show{display:flex}.lightbox img{max-width:96vw;max-height:92vh;border-radius:10px;background:#fff}
+    @media(max-width:640px){body{padding:10px}.header h1{font-size:1.5rem}.panel,.figure,.warn{padding:14px}.kp-body{padding-left:14px}.card-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="header">
+      <h1>Day 9 · 肌纤维类型与特性</h1>
+      <div class="sub">今天主题: 为什么有人更像耐力发动机，有人更像爆发火箭。</div>
+      <div class="chips">
+        <span class="chip">第2周 · 阶段1基础科学</span>
+        <span class="chip">NSCA + NASM 双证</span>
+        <span class="chip">早间新知识</span>
+      </div>
+    </header>
+
+    <section class="panel lead">
+      <h2>一句话总结</h2>
+      <p>肌纤维像不同型号发动机: <strong>I 型慢但省油，IIx 型快但耗油，IIa 型站中间</strong>。训练能改变它们的表现和部分 II 型亚型比例，但不要把 IIa 直接说成训练成 I 型。</p>
+    </section>
+
+    <figure class="figure">
+      <img src="assets/阶段1基础科学/day09-肌纤维类型与特性.png" alt="肌纤维类型与特性中文标注学习图">
+      <figcaption class="caption">对比 I 型、IIa 型、IIx 型肌纤维: 收缩速度、力量、抗疲劳、线粒体和毛细血管。</figcaption>
+    </figure>
+
+    <section class="panel">
+      <h2>核心要点</h2>
+      <ul class="kp">
+        <li>
+          <span class="kp-head"><span class="term">肌纤维类型</span>: 主要看收缩速度、产力能力、疲劳速度和供能偏好。</span>
+          <div class="kp-body">
+            <span class="dim">底层机制</span>
+            <p>骨骼肌不是一整块同质材料，而是许多肌纤维混合组成。考试常按 I 型、IIa 型、IIx/IIb 型比较。人类常用 IIx 表述，IIb 多见于动物或教材旧表述。</p>
+            <span class="dim">大白话</span>
+            <p>I 型像长跑车经济模式，速度不炸但能跑很久；IIx 像冲刺模式，瞬间推背感强但掉速快；IIa 像运动模式，能冲也能撑一阵。</p>
+            <span class="dim">训练含义</span>
+            <p>轻重量多次数更依赖抗疲劳能力；大重量单次更依赖快速高力输出。肌纤维类型解释为什么训练目标不同，强度、次数和休息也不同。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">I 型慢氧化纤维</span>: 慢收缩、低力量、抗疲劳，适合长时间稳定输出。</span>
+          <div class="kp-body">
+            <span class="dim">字面意思</span>
+            <p>I 型慢氧化纤维 = slow oxidative fiber。慢，是收缩速度慢；氧化，是主要靠有氧代谢产 ATP。ATP 是三磷酸腺苷，肌肉直接使用的能量货币。</p>
+            <span class="dim">结构特点</span>
+            <p>线粒体多、毛细血管多、肌红蛋白多，所以更适合用氧气长期供能。姿势肌和小腿比目鱼肌通常 I 型比例较高，因为它们常年负责站立抗重力。</p>
+            <span class="dim">真实例子</span>
+            <p>马拉松、长时间骑行、低强度稳定有氧更依赖 I 型纤维。I 型也能产生张力，只是最大力量和爆发速度不如 II 型。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">IIa 型快氧化糖酵解纤维</span>: 速度和力量中等偏高，抗疲劳能力也比 IIx 好。</span>
+          <div class="kp-body">
+            <span class="dim">字面意思</span>
+            <p>IIa 型 = fast oxidative glycolytic fiber。fast 表示收缩更快；oxidative 表示能用氧化供能；glycolytic 表示也能靠糖酵解快速供能。</p>
+            <span class="dim">大白话</span>
+            <p>IIa 像混合动力发动机: 既能短时间加速，也能比纯爆发纤维撑得更久。它是力量耐力、间歇训练和中高次数抗阻训练的重要纤维。</p>
+            <span class="dim">训练例子</span>
+            <p>8-12 次较重训练、400 米跑、反复冲刺、HIIT 都会大量用到 IIa。它不是最慢，也不是最爆，但在又要快又要撑时很关键。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">IIx/IIb 型快糖酵解纤维</span>: 收缩最快、力量最高、最容易疲劳，适合极短爆发。</span>
+          <div class="kp-body">
+            <span class="dim">底层机制</span>
+            <p>IIx/IIb 型 = fast glycolytic fiber。快，是肌球蛋白 ATPase 活性高，横桥循环速度快；糖酵解，是不依赖氧气也能快速再合成 ATP。</p>
+            <span class="dim">大白话</span>
+            <p>它像火箭助推器: 点火很猛，但燃料烧得快。最大力量单次、起跑、跳跃、奥举拉起瞬间，都更需要这类快速高力纤维。</p>
+            <span class="dim">常见误解</span>
+            <p>IIx 多不一定更好。耐力项目过多依赖 IIx 会更快疲劳，技术训练也可能因为过早疲劳变形。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">结构差异</span>: 线粒体、毛细血管和肌红蛋白越多，越适合耐力。</span>
+          <div class="kp-body">
+            <span class="dim">对比表</span>
+            <table class="tbl">
+              <tr><th>类型</th><th>像什么</th><th>速度/力量</th><th>疲劳</th><th>典型能力</th></tr>
+              <tr><td>I 型</td><td>省油发动机</td><td>慢、力量较低</td><td>最抗疲劳</td><td>长跑、姿势维持</td></tr>
+              <tr><td>IIa 型</td><td>混合动力</td><td>快、中高力量</td><td>中等抗疲劳</td><td>中高强度间歇、增肌训练</td></tr>
+              <tr><td>IIx 型</td><td>火箭助推器</td><td>最快、高力量</td><td>最易疲劳</td><td>冲刺、跳跃、最大力量</td></tr>
+            </table>
+            <span class="dim">考试抓法</span>
+            <p>看到慢、低力量、抗疲劳、线粒体多、毛细血管多，选 I 型；看到快、高力量、易疲劳、糖酵解强，选 IIx/IIb；看到中间型、兼顾速度和耐力，选 IIa。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">募集顺序</span>: 小单位先上，大单位后上；不是一开始就全员爆发。</span>
+          <div class="kp-body">
+            <span class="dim">底层机制</span>
+            <p>大小原则 = Size Principle。低力量需求时先募集小运动单位，通常偏 I 型；力量需求增加时，再募集更大的 II 型运动单位。</p>
+            <span class="dim">训练例子</span>
+            <p>热身空杆深蹲时不用大量 IIx；接近 1RM 或冲刺起跑时，身体才需要高阈值运动单位。疲劳累积时，即使重量不大，也可能为了维持输出募集更多 II 型纤维。</p>
+            <span class="dim">常见误解</span>
+            <p>轻重量不是永远练不到 II 型。轻重量做到接近力竭时，前面纤维疲劳，为维持力量输出也会逐步募集高阈值单位。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">训练适应</span>: 训练能改变纤维表现和 II 型亚型比例，但 IIa 不会直接变成 I 型。</span>
+          <div class="kp-body">
+            <span class="dim">关键澄清</span>
+            <div class="take">双证考试常考训练转换。严谨说法是 IIx 与 IIa 之间更容易互相转变；耐力训练会让 II 型更有氧化能力，但不要说 IIa 直接变成 I 型。</div>
+            <div class="grid">
+              <div class="mini"><h4>耐力训练</h4><p><span class="tag">变化</span>线粒体、毛细血管、氧化酶活性增加，肌肉更会用氧。</p></div>
+              <div class="mini"><h4>力量训练</h4><p><span class="tag">变化</span>II 型纤维横截面积增大，神经募集更有效，最大力量上升。</p></div>
+              <div class="mini"><h4>长期停训</h4><p><span class="tag">变化</span>快速纤维能力下降，IIa/IIx 表现可能向更低训练状态回退。</p></div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">项目倾向</span>: 马拉松偏 I 型，举重和短跑偏 II 型，但每个人都是混合体。</span>
+          <div class="kp-body">
+            <span class="dim">真实例子</span>
+            <p>马拉松运动员通常 I 型比例和有氧能力更突出；举重运动员、短跑运动员通常 II 型比例、神经驱动和快速发力能力更突出。</p>
+            <span class="dim">训练判断</span>
+            <p>想提升耐力，要堆有氧容量、乳酸阈和动作经济性；想提升爆发，要练高速度、高力量、充分休息和技术质量。肌纤维只是解释之一，不是唯一答案。</p>
+            <span class="dim">常见误解</span>
+            <p>遗传有影响，但训练年限、技术、神经适应、心肺能力、体型和恢复也一起决定表现。</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="warn">
+      <h2>常见误区</h2>
+      <p>❌很多人以为 I 型只负责有氧、II 型只负责力量。✅其实所有纤维都能产生张力，只是速度、疲劳和供能偏好不同。</p>
+      <p>❌很多人以为 IIa 训练久了会变成 I 型。✅更准确是 II 型亚型和代谢特性会改变，IIa 直接变 I 型不是考试应答。</p>
+      <p>❌很多人以为轻重量一定练不到快肌纤维。✅接近力竭时，小单位疲劳，身体会逐步募集更高阈值运动单位。</p>
+    </section>
+
+    <section class="mnemonic">
+      <h2>记忆口诀</h2>
+      <p><strong>一慢二快，二 a 居中，二 x 最冲；线毛肌红多，耐力撑得久；快糖火力猛，爆发掉得快。</strong></p>
+    </section>
+
+    <section class="panel">
+      <h2>翻转卡复习</h2>
+      <div class="card-grid">
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">I 型纤维最大特点?</div><div class="face back">慢收缩、低力量、抗疲劳、线粒体和毛细血管丰富。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">IIa 型为什么叫中间型?</div><div class="face back">速度和力量较高，同时比 IIx 更抗疲劳，兼具氧化和糖酵解能力。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">IIx 型适合什么?</div><div class="face back">极短时间高力量、高速度输出，如冲刺、跳跃、最大力量。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">IIa 会变成 I 型吗?</div><div class="face back">考试答法: 不会直接变成 I 型；训练主要改变 II 型亚型和代谢特性。</div></div></div>
+      </div>
+    </section>
+
+    <section class="panel orange">
+      <h2>实操关联</h2>
+      <ul class="list">
+        <li><strong>增肌:</strong> 用中高张力和接近力竭招募更多纤维，不必迷信某个只练快肌的动作。</li>
+        <li><strong>减脂:</strong> I 型纤维参与长时间有氧，但减脂核心仍是能量平衡；训练选择服务于消耗、保肌和可坚持。</li>
+        <li><strong>爆发:</strong> 高速度、高意图发力、充分休息，减少疲劳干扰，才能让 II 型纤维输出质量更高。</li>
+        <li><strong>耐力:</strong> 稳定有氧、阈值训练和长时间专项练习，提高线粒体、毛细血管和动作经济性。</li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2>练习题</h2>
+      <div class="quiz">
+        <h3>1. 单选: 哪项最符合 I 型慢氧化纤维?</h3>
+        <div class="opt" onclick="pick(this,'correct')"><span class="lbl">A.</span>慢收缩、抗疲劳、线粒体多</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">B.</span>最快收缩、最大爆发、最易疲劳</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">C.</span>只靠糖酵解，不需要氧气</div>
+        <button onclick="document.getElementById('ans1').classList.add('show')">查看解析</button>
+        <div class="reveal" id="ans1">答案 A。B 是 IIx 的典型描述；C 把 I 型说成快糖酵解纤维。</div>
+      </div>
+      <div class="quiz">
+        <h3>2. 单选: IIa 型最准确的描述是?</h3>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">A.</span>完全等同 I 型，主要负责低强度站立</div>
+        <div class="opt" onclick="pick(this,'correct')"><span class="lbl">B.</span>兼具较快收缩和一定抗疲劳能力</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">C.</span>训练后一定变成 I 型</div>
+        <button onclick="document.getElementById('ans2').classList.add('show')">查看解析</button>
+        <div class="reveal" id="ans2">答案 B。IIa 是中间型，既有速度力量，也比 IIx 更抗疲劳。</div>
+      </div>
+    </section>
+
+    <footer>阶段1基础科学 · Day 9/112 · 今日早间新知识(工作日6:00) · 中午12:00复习巩固</footer>
+  </main>
+  <div class="lightbox" id="lightbox"><img src="" alt="放大肌纤维类型学习图"></div>
+  <script>
+    document.querySelectorAll(".kp>li").forEach((item)=>item.querySelector(".kp-head").addEventListener("click",()=>item.classList.toggle("open")));
+    function pick(el,type){const box=el.parentElement;box.querySelectorAll(".opt").forEach((item)=>item.classList.remove("correct","wrong-show"));el.classList.add(type==="correct"?"correct":"wrong-show");}
+    var box=document.getElementById("lightbox");document.querySelectorAll(".figure img").forEach(function(img){img.addEventListener("click",function(){box.querySelector("img").src=img.src;box.classList.add("show")})});box.addEventListener("click",function(e){if(e.target===box){box.classList.remove("show")}});document.addEventListener("keydown",function(e){if(e.key==="Escape"){box.classList.remove("show")}})
+  </script>
+</body>
+</html>

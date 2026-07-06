@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 11 · 主要肌群-上肢肌功能分群</title>
+  <style>
+    *{box-sizing:border-box}
+    body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.75;background:#f6f8f7;color:#1a2b22;padding:18px}
+    .wrap{max-width:980px;margin:auto}
+    .header{text-align:center;padding:24px 10px}
+    .header h1{margin:0 0 10px;font-size:2rem;background:linear-gradient(90deg,#0ea66b,#0ea5e9);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .sub{color:#5a6b62}
+    .chips{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:10px}
+    .chip{font-size:.78rem;border:1px solid #d4ebe0;border-radius:999px;padding:3px 10px;background:#fff;color:#0c6da3}
+    .panel,.figure,.warn{background:#fff;border:1px solid #e2e8e4;border-radius:14px;padding:18px;margin:14px 0;box-shadow:0 2px 12px rgba(20,40,30,.06)}
+    .lead{border-left:4px solid #0ea66b}.orange{border-left:4px solid #ea7a17}
+    .figure .placeholder{min-height:280px;border:1px dashed #b8c8be;border-radius:12px;background:#fbfdfc;display:grid;place-items:center;text-align:center;color:#5a6b62;font-weight:800;padding:24px}
+    .caption{font-size:.85rem;color:#5a6b62;margin-top:8px;text-align:center}
+    .panel h2,.warn h2{font-size:1.18rem;margin:0 0 10px;color:#0a7d52}
+    .term{font-weight:700;color:#0a7d52;background:#e8f5ee;border-radius:5px;padding:1px 5px}
+    ul.kp{list-style:none;padding:0;margin:0}
+    ul.kp>li{border-bottom:1px dashed #e2e8e4}
+    .kp-head{display:block;cursor:pointer;position:relative;padding:13px 8px 13px 30px}
+    .kp-head:before{content:"▸";position:absolute;left:8px;color:#0ea66b;font-weight:800;transition:.2s}
+    .open>.kp-head:before{transform:rotate(90deg)}
+    .kp-head:hover{background:#f0f4f2}
+    .kp-body{display:none;padding:0 14px 16px 30px}
+    .open>.kp-body{display:block}
+    .dim{display:block;margin-top:10px;font-size:.78rem;font-weight:800;color:#0c6da3}
+    .take{border-left:4px solid #0ea66b;background:#f0fbf5;border-radius:10px;padding:10px 12px;margin:10px 0}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin:12px 0}
+    .mini{border:1px solid #dbe8e1;border-radius:12px;background:#fbfdfc;padding:12px}
+    .mini h4{margin:0 0 7px;font-size:.98rem;color:#0a7d52}
+    .tag{display:inline-block;font-size:.74rem;font-weight:800;color:#0c6da3;background:#e8f4fb;border-radius:999px;padding:2px 8px;margin-right:5px}
+    .tbl{width:100%;border-collapse:collapse;font-size:.9rem;margin:10px 0}
+    .tbl th{background:#0ea66b;color:#fff;text-align:left}
+    .tbl th,.tbl td{padding:8px;border-bottom:1px solid #e2e8e4;vertical-align:top}
+    .warn{border-left:4px solid #e23b3b}.warn p{margin:8px 0}
+    .mnemonic{background:linear-gradient(135deg,#0ea66b,#0ea5e9);color:#fff;border-radius:14px;padding:20px;margin:14px 0;box-shadow:0 2px 12px rgba(20,40,30,.08)}
+    .mnemonic h2{margin:0 0 8px;font-size:1.15rem}.mnemonic strong{color:#fff7d6}
+    .card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+    .flip{min-height:145px;perspective:800px;cursor:pointer}
+    .flip-inner{position:relative;width:100%;height:100%;min-height:145px;transition:transform .5s;transform-style:preserve-3d}
+    .flip.flipped .flip-inner{transform:rotateY(180deg)}
+    .face{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:15px;border-radius:13px;border:1px solid #e2e8e4;backface-visibility:hidden;background:#fff;font-weight:700}
+    .front{color:#0a7d52;background:#f8fffb}.back{transform:rotateY(180deg);background:#eef7ff;color:#0c6da3;font-weight:600}
+    .quiz{border-top:1px dashed #e2e8e4;padding-top:12px;margin-top:12px}
+    .quiz h3{margin:0 0 8px;font-size:1rem;color:#1a2b22}
+    .opt{border:1px solid #e2e8e4;border-radius:10px;padding:9px 10px;margin:7px 0;background:#fff;cursor:pointer}
+    .opt:hover{background:#f0f4f2}.lbl{font-weight:800;color:#0c6da3;margin-right:4px}
+    .correct{border-color:#0ea66b!important;background:#e9f8f0!important}.wrong-show{border-color:#e23b3b!important;background:#fff0f0!important}.selected{border-color:#0ea5e9;background:#eef7ff}
+    button{border:0;border-radius:999px;background:#0ea66b;color:#fff;font-weight:800;padding:8px 14px;cursor:pointer;margin-top:6px}
+    .reveal{display:none;border-left:4px solid #0ea5e9;background:#f0f8fc;border-radius:10px;padding:10px;margin-top:8px}.reveal.show{display:block}
+    .list{padding-left:20px;margin:8px 0}.list li{margin:7px 0}
+    footer{text-align:center;color:#5a6b62;font-size:.85rem;margin:22px 0}
+    @media(max-width:640px){body{padding:10px}.header h1{font-size:1.5rem}.panel,.figure,.warn{padding:14px}.kp-body{padding-left:14px}.card-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="header">
+      <h1>Day 11 · 主要肌群-上肢肌功能分群</h1>
+      <div class="sub">今天主题: 把上肢肌肉按“推、拉、抬、弯、伸、握”分组。</div>
+      <div class="chips">
+        <span class="chip">第2周 · 阶段1基础科学</span>
+        <span class="chip">NSCA + NASM 双证</span>
+        <span class="chip">早间新知识</span>
+      </div>
+    </header>
+
+    <section class="panel lead">
+      <h2>一句话总结</h2>
+      <p>上肢肌群像一支分工明确的工具队: 胸大肌负责把手臂往身体前内侧“合上”，背阔肌负责把手臂往后下方“拉回”，三角肌负责不同方向抬臂，肱二头肌和肱三头肌控制肘，前臂肌群负责握与腕。<strong>考试和训练分析时，先问关节在动什么，再找跨过这个关节、能制造相同方向力矩的肌肉。</strong></p>
+    </section>
+
+    <figure class="figure">
+      <div class="placeholder">图片生成失败，待补图</div>
+      <div class="caption">原计划放置上肢主要肌群中文标注图: 胸大肌、背阔肌、三角肌三束、肱二头肌、肱三头肌、前臂屈伸肌群。</div>
+    </figure>
+
+    <section class="panel">
+      <h2>核心要点</h2>
+      <ul class="kp">
+        <li>
+          <span class="kp-head"><span class="term">胸大肌</span>: 推类主肌，主要做肩水平内收、肩内旋和肩屈曲。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 卧推、俯卧撑、飞鸟都不是“手在推”，而是肱骨在肩关节做水平内收，胸大肌让上臂从外侧回到身体前方。</div>
+            <div class="grid">
+              <div class="mini"><h4>起止点定位</h4><p>胸大肌起于锁骨内侧、胸骨和肋软骨，止于肱骨大结节嵴。它像胸前一把扇子，扇柄插到上臂骨前外侧。</p></div>
+              <div class="mini"><h4>训练体会</h4><p>做俯卧撑时，不要只想伸肘；想象把两只上臂向胸前夹近。手掌固定时，胸大肌仍在把肱骨往身体中线拉。</p></div>
+              <div class="mini"><h4>常见搭档</h4><p>推类动作中，三角肌前束协助肩屈，肱三头肌伸肘，前锯肌帮助肩胛贴胸廓并向前送。</p></div>
+            </div>
+            <span class="dim">常见误解</span>
+            <p>❌以为卧推只练胸。✅其实卧推是胸大肌、三角肌前束、肱三头肌和肩胛稳定肌共同完成；肩前侧疼时不能只盯胸。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">背阔肌</span>: 拉类主肌，做肩伸、肩内收和肩内旋。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 背阔肌不是只让“背变宽”，它把上臂从前上方拉向后下方，是引体、划船、下拉的核心发力线。</div>
+            <table class="tbl">
+              <tr><th>动作</th><th>肩关节运动</th><th>背阔肌角色</th></tr>
+              <tr><td>高位下拉</td><td>肩内收 + 肩伸</td><td>把上臂从头顶拉回躯干两侧。</td></tr>
+              <tr><td>坐姿划船</td><td>肩伸</td><td>把上臂从身体前方拉到身体后方。</td></tr>
+              <tr><td>直臂下压</td><td>肩伸</td><td>肘几乎不动，更容易体会肩伸。</td></tr>
+            </table>
+            <span class="dim">真实例子</span>
+            <p>做下拉时把注意力放在“肘向裤兜走”，比想“手把杆拉下来”更接近背阔肌功能。若肩胛一直耸起，斜方肌上束可能抢走动作。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为宽握一定更练背阔。✅其实握距改变力线和活动范围；能否让肱骨完成稳定的肩伸/内收更关键。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">三角肌三束</span>: 前束屈肩，中束外展，后束伸肩和水平外展。</span>
+          <div class="kp-body">
+            <div class="grid">
+              <div class="mini"><h4>前束</h4><p>位于肩前侧，肩屈和水平内收强。前平举、推举、上斜卧推都会大量用到它。</p></div>
+              <div class="mini"><h4>中束</h4><p>位于肩外侧，最典型功能是肩外展。侧平举想练肩宽，核心是让上臂向外侧抬起，不是耸肩。</p></div>
+              <div class="mini"><h4>后束</h4><p>位于肩后侧，做肩伸和水平外展。反向飞鸟、面拉能训练它，也帮助平衡过多推类训练。</p></div>
+            </div>
+            <span class="dim">底层机制</span>
+            <p>三角肌包住肱骨头，纤维方向不同，所以同一块肌肉不同束能制造不同力矩。前束力线在肩前，中束在肩外，后束在肩后。</p>
+            <span class="dim">训练含义</span>
+            <p>肩训练不能只做推举。推举偏前束和三头，侧平举补中束，反向飞鸟或面拉补后束，组合才完整。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">肱二头肌</span>: 不只屈肘，还强力前臂旋后。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 肱二头肌跨过肩和肘，是双关节肌。它让肘弯曲，也让掌心从朝下转到朝上。</div>
+            <span class="dim">起止点定位</span>
+            <p>长头起于肩胛骨盂上结节，短头起于喙突，止于桡骨粗隆。因为止点在桡骨，所以它能带动前臂旋后。</p>
+            <span class="dim">真实例子</span>
+            <p>做哑铃弯举时，如果从锤式握法转成掌心向上，最后那一下旋后会明显让肱二头肌更紧。引体向上反握也更容易让肱二头肌参与。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为所有弯举都一样。✅其实掌心向上更偏肱二头肌，锤式更偏肱桡肌，反手弯举更偏前臂伸肌群稳定。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">肱三头肌</span>: 伸肘主肌，长头还参与肩伸。</span>
+          <div class="kp-body">
+            <span class="dim">底层机制</span>
+            <p>肱三头肌外侧头、内侧头起于肱骨，长头起于肩胛骨盂下结节，三头共同止于尺骨鹰嘴。肘伸时，尺骨鹰嘴被向后拉，前臂打开。</p>
+            <span class="dim">真实例子</span>
+            <p>下压、窄距卧推、臂屈伸都训练伸肘。过顶臂屈伸让长头被拉长，因为肩处在屈曲位，长头跨过肩关节会受到更大伸展。</p>
+            <span class="dim">训练含义</span>
+            <p>卧推动作锁定阶段常由肱三头肌限制。若胸离杠顺但顶端卡住，可能不是胸弱，而是伸肘能力或肩胛稳定不足。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">前臂屈肌群与伸肌群</span>: 控制握力、腕屈伸和训练中的力传递。</span>
+          <div class="kp-body">
+            <div class="grid">
+              <div class="mini"><h4>屈肌群</h4><p>多在前臂掌侧，负责腕屈、手指屈曲和抓握。硬拉握不住、引体挂不住，常与这组有关。</p></div>
+              <div class="mini"><h4>伸肌群</h4><p>多在前臂背侧，负责腕伸和手指伸展。反手弯举、网球肘相关区域常会用到或受刺激。</p></div>
+            </div>
+            <span class="dim">训练含义</span>
+            <p>握力不是小事。它会限制拉类动作总量，也会影响手腕中立。腕过度屈曲或伸展时，力量传递变差，肘腕压力上升。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为前臂只靠腕弯举练。✅其实农夫行走、悬垂、硬拉、划船都在训练握力和等长稳定。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">动作分析顺序</span>: 先看关节运动，再判断主动肌、协同肌、稳定肌。</span>
+          <div class="kp-body">
+            <div class="take">考试解题口诀: 关节先行，肌肉随后。不要看到器械名就背答案，要先说出肩、肘、腕分别发生什么运动。</div>
+            <ol class="list">
+              <li><span class="tag">第一步</span>识别动作: 卧推是肩水平内收 + 肘伸；划船是肩伸 + 肘屈；侧平举是肩外展。</li>
+              <li><span class="tag">第二步</span>找主动肌: 与动作方向一致且跨过关节的肌肉优先。</li>
+              <li><span class="tag">第三步</span>找协同肌: 辅助同方向动作，如卧推中三角肌前束协助胸大肌。</li>
+              <li><span class="tag">第四步</span>找稳定肌: 肩袖、肩胛稳定肌、核心让关节和躯干保持可发力位置。</li>
+            </ol>
+            <span class="dim">常见误解</span>
+            <p>❌以为一个动作只有一个目标肌。✅其实训练动作是关节链，主肌负责大方向，协同肌补力量，稳定肌控制路径。</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="warn">
+      <h2>常见误区</h2>
+      <p>❌很多人以为“推就是胸，拉就是背”。✅其实推拉还要看肩、肘、肩胛共同运动，三角肌、肱三头肌、肱二头肌和肩胛稳定肌都会参与。</p>
+      <p>❌很多人以为三角肌是一块功能相同的肌肉。✅其实三束纤维方向不同，前束、中束、后束分别偏肩屈、外展、伸/水平外展。</p>
+      <p>❌很多人以为握力只是手小肌肉问题。✅其实前臂屈伸肌群会限制拉类动作负荷，也会决定腕关节能否保持中立。</p>
+    </section>
+
+    <section class="mnemonic">
+      <h2>记忆口诀</h2>
+      <p><strong>胸推背拉，前三中外后往后；二头弯肘还旋后，三头伸肘顶锁扣；前臂管握腕，先看关节再找肉。</strong></p>
+    </section>
+
+    <section class="panel">
+      <h2>翻转卡复习</h2>
+      <div class="card-grid">
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">卧推主要肩关节动作?</div><div class="face back">肩水平内收，胸大肌主导，三角肌前束协助。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">背阔肌三个主要动作?</div><div class="face back">肩伸、肩内收、肩内旋。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">侧平举主要练哪束?</div><div class="face back">三角肌中束，动作是肩外展。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">肱二头肌除屈肘外还做什么?</div><div class="face back">前臂旋后，因为止点在桡骨粗隆。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">肱三头肌长头为什么特殊?</div><div class="face back">跨过肩关节，除伸肘外还参与肩伸。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">握力主要看哪组?</div><div class="face back">前臂屈肌群负责抓握，伸肌群负责腕伸稳定。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">反向飞鸟偏哪块?</div><div class="face back">三角肌后束，动作是肩水平外展。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">动作分析第一步?</div><div class="face back">先说关节运动，再找主肌、协同肌、稳定肌。</div></div></div>
+      </div>
+    </section>
+
+    <section class="panel orange">
+      <h2>实操关联</h2>
+      <ul class="list">
+        <li><strong>增肌:</strong> 胸、背、肩、肘屈伸、前臂握力要分组安排，避免推类过多导致前束和肱三头肌长期疲劳。</li>
+        <li><strong>减脂:</strong> 复合推拉动作能调动更多肌群，但技术判断仍要回到肩、肘、腕是否在正确轨迹。</li>
+        <li><strong>爆发:</strong> 上肢爆发推拉需要胸背输出，也需要肩胛稳定和肘腕快速传力。</li>
+        <li><strong>耐力:</strong> 攀爬、划船机、战绳会大量考验背阔肌、肱二头肌和前臂等长耐力。</li>
+        <li><strong>康复:</strong> 肩前侧不适时，常要减少过量推类，补三角肌后束、肩袖和肩胛控制。</li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2>练习题</h2>
+      <div class="quiz">
+        <h3>1. 单选: 卧推中胸大肌最核心的肩关节功能是?</h3>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">A.</span>肩外展</div>
+        <div class="opt" onclick="pick(this,'correct')"><span class="lbl">B.</span>肩水平内收</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">C.</span>肩外旋</div>
+        <button onclick="toggleReveal('q1')">查看解析</button>
+        <div class="reveal" id="q1">B 正确。卧推时上臂从身体两侧向胸前靠近，这是肩水平内收。A 更像侧平举，C 更像肩袖外旋训练。</div>
+      </div>
+      <div class="quiz">
+        <h3>2. 单选: 肱二头肌能强力旋后的关键原因是?</h3>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">A.</span>止于尺骨鹰嘴</div>
+        <div class="opt" onclick="pick(this,'correct')"><span class="lbl">B.</span>止于桡骨粗隆</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">C.</span>起于胸骨</div>
+        <button onclick="toggleReveal('q2')">查看解析</button>
+        <div class="reveal" id="q2">B 正确。肱二头肌止于桡骨粗隆，拉动桡骨旋转时可让掌心转向上。尺骨鹰嘴是肱三头肌止点。</div>
+      </div>
+      <div class="quiz">
+        <h3>3. 多选: 哪些肌肉/肌群常参与拉类动作?</h3>
+        <div class="opt multi" onclick="toggleMulti(this,true)"><span class="lbl">A.</span>背阔肌</div>
+        <div class="opt multi" onclick="toggleMulti(this,true)"><span class="lbl">B.</span>肱二头肌</div>
+        <div class="opt multi" onclick="toggleMulti(this,false)"><span class="lbl">C.</span>肱三头肌作为主要伸肘输出</div>
+        <div class="opt multi" onclick="toggleMulti(this,true)"><span class="lbl">D.</span>前臂屈肌群维持握力</div>
+        <button onclick="toggleReveal('q3')">查看解析</button>
+        <div class="reveal" id="q3">A、B、D 正确。背阔肌做肩伸/内收，肱二头肌屈肘协助，前臂屈肌群保证握力。C 在拉类动作中通常不是主要输出。</div>
+      </div>
+      <div class="quiz">
+        <h3>4. 案例题: 会员做坐姿划船时一直耸肩、手腕弯曲、说“背没感觉，手先酸”。你怎么分析?</h3>
+        <button onclick="toggleReveal('q4')">查看解析</button>
+        <div class="reveal" id="q4">先看关节: 划船目标是肩伸加肘屈，不是手腕拉绳。耸肩说明肩胛控制差，斜方肌上束可能抢动作；手腕弯曲说明前臂和握把传力差。纠正可用胸托划船或轻重量，提示“肘向后走、肩下沉、腕保持中立”，让背阔肌和菱形肌更容易参与。</div>
+      </div>
+    </section>
+
+    <footer>阶段1 · Day 11/112 · 今日早间新知识(工作日6:00) · 中午12:00复习巩固</footer>
+  </main>
+  <script>
+    document.querySelectorAll('ul.kp>li>.kp-head').forEach(function(h){
+      h.addEventListener('click',function(){h.parentElement.classList.toggle('open')});
+    });
+    function pick(el,state){
+      var box=el.parentElement;
+      box.querySelectorAll('.opt').forEach(function(o){o.classList.remove('correct','wrong-show')});
+      el.classList.add(state==='correct'?'correct':'wrong-show');
+    }
+    function toggleMulti(el,isRight){
+      el.classList.toggle('selected');
+      el.classList.toggle(isRight?'correct':'wrong-show');
+    }
+    function toggleReveal(id){document.getElementById(id).classList.toggle('show')}
+  </script>
+</body>
+</html>

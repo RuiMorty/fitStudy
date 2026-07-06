@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 8 · 本体感觉与前庭系统</title>
+  <style>
+    *{box-sizing:border-box}
+    body{margin:0;font-family:-apple-system,"PingFang SC",sans-serif;line-height:1.75;background:#f6f8f7;color:#1a2b22;padding:18px}
+    .wrap{max-width:960px;margin:auto}
+    .header{text-align:center;padding:24px 10px}
+    .header h1{margin:0 0 10px;font-size:2rem;background:linear-gradient(90deg,#0ea66b,#0ea5e9);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .sub{color:#5a6b62}
+    .chips{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:10px}
+    .chip{font-size:.78rem;border:1px solid #d4ebe0;border-radius:999px;padding:3px 10px;background:#fff;color:#0c6da3}
+    .panel,.figure,.warn{background:#fff;border:1px solid #e2e8e4;border-radius:14px;padding:18px;margin:14px 0;box-shadow:0 2px 12px rgba(20,40,30,.06)}
+    .lead{border-left:4px solid #0ea66b}
+    .orange{border-left:4px solid #ea7a17}
+    .figure img{width:100%;display:block;border-radius:10px;border:1px solid #e2e8e4;background:#fff;cursor:zoom-in}
+    .caption{font-size:.85rem;color:#5a6b62;margin-top:8px;text-align:center}
+    .panel h2,.warn h2{font-size:1.18rem;margin:0 0 10px;color:#0a7d52}
+    .term{font-weight:700;color:#0a7d52;background:#e8f5ee;border-radius:5px;padding:1px 5px}
+    ul.kp{list-style:none;padding:0;margin:0}
+    ul.kp>li{border-bottom:1px dashed #e2e8e4}
+    .kp-head{display:block;cursor:pointer;position:relative;padding:13px 8px 13px 30px}
+    .kp-head:before{content:"▸";position:absolute;left:8px;color:#0ea66b;font-weight:800;transition:.2s}
+    .open>.kp-head:before{transform:rotate(90deg)}
+    .kp-head:hover{background:#f0f4f2}
+    .kp-body{display:none;padding:0 14px 16px 30px}
+    .open>.kp-body{display:block}
+    .dim{display:block;margin-top:10px;font-size:.78rem;font-weight:800;color:#0c6da3}
+    .tbl{width:100%;border-collapse:collapse;font-size:.9rem;margin:10px 0}
+    .tbl th{background:#0ea66b;color:#fff;text-align:left}
+    .tbl th,.tbl td{padding:8px;border-bottom:1px solid #e2e8e4;vertical-align:top}
+    .explain-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin:12px 0}
+    .explain-card{border:1px solid #dbe8e1;border-radius:12px;background:#fbfdfc;padding:12px}
+    .explain-card h4{margin:0 0 7px;font-size:.98rem;color:#0a7d52}
+    .mini-tag{display:inline-block;font-size:.74rem;font-weight:800;color:#0c6da3;background:#e8f4fb;border-radius:999px;padding:2px 8px;margin-right:5px}
+    .warn{border-left:4px solid #e23b3b}
+    .warn p{margin:8px 0}
+    .mnemonic{background:linear-gradient(135deg,#0ea66b,#0ea5e9);color:#fff;border-radius:14px;padding:20px;margin:14px 0;box-shadow:0 2px 12px rgba(20,40,30,.08)}
+    .mnemonic h2{margin:0 0 8px;font-size:1.15rem}
+    .mnemonic strong{color:#fff7d6}
+    .card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+    .flip{min-height:145px;perspective:800px;cursor:pointer}
+    .flip-inner{position:relative;width:100%;height:100%;min-height:145px;transition:transform .5s;transform-style:preserve-3d}
+    .flip.flipped .flip-inner{transform:rotateY(180deg)}
+    .face{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:15px;border-radius:13px;border:1px solid #e2e8e4;backface-visibility:hidden;background:#fff;font-weight:700}
+    .front{color:#0a7d52;background:#f8fffb}
+    .back{transform:rotateY(180deg);background:#eef7ff;color:#0c6da3;font-weight:600}
+    .quiz{border-top:1px dashed #e2e8e4;padding-top:12px;margin-top:12px}
+    .quiz h3{margin:0 0 8px;font-size:1rem;color:#1a2b22}
+    .opt{border:1px solid #e2e8e4;border-radius:10px;padding:9px 10px;margin:7px 0;background:#fff;cursor:pointer}
+    .opt:hover{background:#f0f4f2}.lbl{font-weight:800;color:#0c6da3;margin-right:4px}
+    .correct{border-color:#0ea66b!important;background:#e9f8f0!important}
+    .wrong-show{border-color:#e23b3b!important;background:#fff0f0!important}
+    button{border:0;border-radius:999px;background:#0ea66b;color:#fff;font-weight:800;padding:8px 14px;cursor:pointer;margin-top:6px}
+    .reveal{display:none;border-left:4px solid #0ea5e9;background:#f0f8fc;border-radius:10px;padding:10px;margin-top:8px}
+    .reveal.show{display:block}
+    .list{padding-left:20px;margin:8px 0}
+    .list li{margin:7px 0}
+    footer{text-align:center;color:#5a6b62;font-size:.85rem;margin:22px 0}
+    .lightbox{position:fixed;inset:0;background:rgba(0,0,0,.82);display:none;align-items:center;justify-content:center;z-index:9;padding:18px}
+    .lightbox.show{display:flex}.lightbox img{max-width:96vw;max-height:92vh;border-radius:10px;background:#fff}
+    @media(max-width:640px){body{padding:10px}.header h1{font-size:1.5rem}.panel,.figure,.warn{padding:14px}.kp-body{padding-left:14px}.card-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="header">
+      <h1>Day 8 · 本体感觉与前庭系统</h1>
+      <div class="sub">今天主题: 身体不用看镜子，也能知道关节在哪、肌肉被拉多快、头有没有转。</div>
+      <div class="chips">
+        <span class="chip">第2周 · 阶段1基础科学</span>
+        <span class="chip">NSCA + NASM 双证</span>
+        <span class="chip">早间新知识</span>
+      </div>
+    </header>
+
+    <section class="panel lead">
+      <h2>一句话总结</h2>
+      <p>本体感觉像身体内置导航: <strong>肌梭盯长度和拉伸速度，GTO 盯张力，关节感受器盯关节位置，前庭系统盯头部和平衡</strong>。跳得更高、站得更稳、拉伸后更放松，都离不开这套传感器。</p>
+    </section>
+
+    <figure class="figure">
+      <img src="assets/阶段1基础科学/day08-本体感觉与前庭系统.png" alt="本体感觉与前庭系统中文标注学习图">
+      <figcaption class="caption">抓四个位置: 肌腹、肌腱、关节、内耳；再对应长度、张力、关节位置、平衡。</figcaption>
+    </figure>
+
+    <section class="panel">
+      <h2>核心要点</h2>
+      <ul class="kp">
+        <li>
+          <span class="kp-head"><span class="term">本体感觉</span>: 不看眼睛也知道身体位置，是动作控制底层反馈。</span>
+          <div class="kp-body">
+            <span class="dim">字面意思</span>
+            <p>本体感觉 = proprioception，意思是身体对自己位置、运动和受力的感觉。它来自肌肉、肌腱、关节和前庭的神经信号。</p>
+            <span class="dim">大白话类比</span>
+            <p>它像汽车的倒车雷达和陀螺仪: 你不一定看见轮胎角度，但系统一直知道车身怎么动。</p>
+            <span class="dim">训练含义</span>
+            <p>深蹲时膝盖能不能对齐脚尖、单腿站时骨盆能不能稳住，靠的不只是力量，也靠本体感觉反馈。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">肌梭</span>: 位于肌腹内，感受肌肉长度变化与拉伸速度，触发牵张反射。</span>
+          <div class="kp-body">
+            <span class="dim">字面意思</span>
+            <p>肌梭 = muscle spindle，spindle 是纺锤。它藏在肌肉里面，和普通肌纤维平行，专门侦测肌肉被拉长多少、拉得多快。</p>
+            <span class="dim">大白话类比</span>
+            <p>肌梭像肌肉里的弹簧报警器。弹簧突然被拉长，它立刻报警，让肌肉反射性收缩。</p>
+            <span class="dim">真实例子</span>
+            <p>膝跳反射就是经典例子: 敲髌腱让股四头肌被快速拉长，肌梭报警，股四头肌反射性收缩，小腿弹起。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">牵张反射</span>: 肌肉被快速拉长后自动收缩，是 SSC 的前置机制之一。</span>
+          <div class="kp-body">
+            <span class="dim">机制拆开</span>
+            <div class="explain-grid">
+              <div class="explain-card"><h4>1. 快速拉长</h4><p><span class="mini-tag">输入</span>肌梭感到长度和速度突然增加。</p></div>
+              <div class="explain-card"><h4>2. 脊髓反射</h4><p><span class="mini-tag">处理</span>信号可在脊髓层面快速处理。</p></div>
+              <div class="explain-card"><h4>3. 肌肉收缩</h4><p><span class="mini-tag">输出</span>同一块肌肉更快收缩，保护组织并增强短时间爆发。</p></div>
+            </div>
+            <span class="dim">训练例子</span>
+            <p>篮球起跳前快速下沉再弹起，会用到牵张反射和弹性储能；但控制差时，反射优势会变成损伤风险。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">高尔基腱器 GTO</span>: 位于肌腱处，感受张力，过高时触发自生抑制。</span>
+          <div class="kp-body">
+            <span class="dim">字面意思</span>
+            <p>GTO = Golgi Tendon Organ，中文是高尔基腱器。它在肌肉和肌腱连接附近，盯的是拉力/张力有多大。</p>
+            <span class="dim">大白话类比</span>
+            <p>GTO 像肌腱上的保险丝。张力太大时，它会让同一块肌肉降低兴奋，避免肌腱或肌肉被硬拉坏。</p>
+            <span class="dim">训练含义</span>
+            <p>SMR 泡沫轴、PNF 拉伸常借自生抑制降低紧张感。肌梭偏向“快拉要收缩”，GTO 偏向“张力太大要刹车”。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">关节感受器</span>: 关节囊和韧带里的传感器，告诉大脑关节角度、压力和运动。</span>
+          <div class="kp-body">
+            <span class="dim">主要类型</span>
+            <table class="tbl">
+              <tr><th>感受器</th><th>主要感受</th><th>训练理解</th></tr>
+              <tr><td>鲁菲尼小体</td><td>持续压力、关节位置</td><td>像慢速位置传感器，帮助姿势控制。</td></tr>
+              <tr><td>帕西尼小体</td><td>快速变化、震动、加速度</td><td>像动作变化报警器，帮助快速反应。</td></tr>
+              <tr><td>高尔基样感受器</td><td>韧带张力和终末角度</td><td>像关节极限提示器，提醒别顶到危险范围。</td></tr>
+            </table>
+            <span class="dim">真实例子</span>
+            <p>踝关节扭伤后，力量恢复但仍反复崴脚，可能是韧带和关节感受器反馈变差。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">前庭系统</span>: 内耳里的平衡系统，感受头部旋转、加速度和相对重力方向。</span>
+          <div class="kp-body">
+            <span class="dim">两个核心部件</span>
+            <p>半规管主要感受头部旋转，像三维转向仪；耳石器官主要感受线性加速度和头部倾斜，像水平仪。</p>
+            <span class="dim">训练例子</span>
+            <p>转体跳、快速变向、倒立、波比跳后站不稳，往往不是腿完全没力，而是前庭、视觉和本体感觉整合还没稳定。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">SSC</span>: 牵张-缩短循环借助快速预拉伸，把反射和弹性势能接到爆发动作里。</span>
+          <div class="kp-body">
+            <span class="dim">第一次讲清缩写</span>
+            <p>SSC = Stretch-Shortening Cycle，中文是牵张-缩短循环。意思是肌肉先被快速拉长，再立刻缩短发力。</p>
+            <span class="dim">大白话类比</span>
+            <p>像把橡皮筋先拉开再松手。拉开的过程存一点弹性势能，肌梭还会帮忙提高收缩反应。</p>
+            <span class="dim">训练判断</span>
+            <p>箱跳、纵跳、短冲刺起步都用到 SSC；新手先学会落地控制和膝髋对齐，再追求更快反弹。</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="warn">
+      <h2>常见误区</h2>
+      <p>❌很多人以为肌梭和 GTO 都是“拉伸感受器”。✅其实肌梭看长度和速度，GTO 看张力，反射方向也常相反。</p>
+      <p>❌很多人以为泡沫轴是“压碎结节”。✅更靠谱解释是改变神经系统对张力和疼痛的调节。</p>
+      <p>❌很多人以为平衡训练越不稳定越高级。✅不稳定太强会牺牲动作质量和力量输出。</p>
+    </section>
+
+    <section class="mnemonic">
+      <h2>记忆口诀</h2>
+      <p><strong>肌梭看长短，快拉就反弹；GTO 看张力，太紧先刹车；关节报位置，前庭管平衡。</strong></p>
+    </section>
+
+    <section class="panel">
+      <h2>翻转卡复习</h2>
+      <div class="card-grid">
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">本体感觉是什么？</div><div class="face back">身体对位置、运动、受力的内部感觉。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">肌梭感受什么？</div><div class="face back">肌肉长度变化和拉伸速度。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">GTO 感受什么？</div><div class="face back">肌腱张力，过高时促发抑制。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">牵张反射经典例子？</div><div class="face back">膝跳反射。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">半规管主要感受？</div><div class="face back">头部旋转。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">耳石器官主要感受？</div><div class="face back">线性加速度和头部倾斜。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">SSC 全称？</div><div class="face back">Stretch-Shortening Cycle，牵张-缩短循环。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">崴脚后反复不稳常见原因？</div><div class="face back">关节本体感觉反馈变差。</div></div></div>
+      </div>
+    </section>
+
+    <section class="panel orange">
+      <h2>实操关联</h2>
+      <ul class="list">
+        <li><strong>增肌:</strong> 主项训练仍以稳定发力为主，不要把大重量卧推、深蹲放在过度不稳定表面上。</li>
+        <li><strong>爆发:</strong> 跳跃和冲刺前的快速预拉伸能用到肌梭和 SSC，但前提是落地位置可控。</li>
+        <li><strong>康复:</strong> 踝扭伤后除了力量，还要做单腿站、闭眼平衡、方向触地等本体感觉重建。</li>
+        <li><strong>柔韧:</strong> PNF 或长时间拉伸可能借 GTO 和神经抑制降低紧张感。</li>
+        <li><strong>平衡:</strong> 初学者先从稳定地面、慢速动作开始，再逐步减少视觉、增加方向变化。</li>
+        <li><strong>考试:</strong> 看到“长度/速度”选肌梭；看到“张力/自生抑制”选 GTO；看到“头部旋转/耳石”选前庭。</li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2>练习题</h2>
+      <div class="quiz">
+        <h3>1. 单选: 肌梭主要感受什么？</h3>
+        <div class="opt" onclick="pick(this,'correct')"><span class="lbl">A.</span>肌肉长度变化和拉伸速度</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">B.</span>血乳酸浓度</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">C.</span>肌腱张力</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">D.</span>血氧饱和度</div>
+        <button onclick="showAns('ans1')">查看解析</button>
+        <div class="reveal" id="ans1">答案 A。长度和拉伸速度是肌梭核心功能。C 是 GTO 更相关。</div>
+      </div>
+      <div class="quiz">
+        <h3>2. 单选: 高尔基腱器 GTO 最符合哪项描述？</h3>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">A.</span>位于内耳，感受头部旋转</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">B.</span>位于肌腹，感受肌肉长度</div>
+        <div class="opt" onclick="pick(this,'correct')"><span class="lbl">C.</span>位于肌腱，感受张力并参与自生抑制</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">D.</span>位于肺部，感受通气量</div>
+        <button onclick="showAns('ans2')">查看解析</button>
+        <div class="reveal" id="ans2">答案 C。GTO 的关键词是肌腱、张力、自生抑制。A 是前庭半规管相关，B 是肌梭。</div>
+      </div>
+      <div class="quiz">
+        <h3>3. 多选: 哪些说法正确？</h3>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">A.</span>半规管主要感受头部旋转</div>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">B.</span>耳石器官参与感受头部倾斜和线性加速度</div>
+        <div class="opt" onclick="pickMulti(this)"><span class="lbl">C.</span>GTO 主要感受肌肉长度变化</div>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">D.</span>牵张反射可参与快速跳跃前的预拉伸反应</div>
+        <button onclick="showAns('ans3')">查看解析</button>
+        <div class="reveal" id="ans3">答案 A、B、D。C 错，长度变化是肌梭重点，GTO 重点是张力。</div>
+      </div>
+      <div class="quiz">
+        <h3>4. 案例题: 客户踝扭伤 6 周后力量恢复，但单腿落地仍常内翻，你优先考虑什么？</h3>
+        <button onclick="showAns('ans4')">查看分析</button>
+        <div class="reveal" id="ans4">优先考虑踝关节本体感觉和落地控制仍不足。力量恢复不代表关节感受器反馈完全恢复。训练可从单腿站、三方向触地、低高度落地定格开始，要求膝盖对脚尖、足弓不塌、骨盆不晃；再逐步加入反应和变向。</div>
+      </div>
+    </section>
+
+    <footer>阶段1 · Day 8/112 · 今日早间新知识(工作日6:00) · 中午12:00复习巩固</footer>
+  </main>
+  <div class="lightbox" id="lightbox"><img src="" alt="放大学习图"></div>
+  <script>
+    document.querySelectorAll('ul.kp>li>.kp-head').forEach(function(h){h.addEventListener('click',function(){h.parentElement.classList.toggle('open')})});
+    function pick(el,type){var q=el.closest('.quiz');q.querySelectorAll('.opt').forEach(function(o){o.classList.remove('correct','wrong-show')});el.classList.add(type==='correct'?'correct':'wrong-show')}
+    function pickMulti(el){if(el.classList.contains('correct')||el.classList.contains('wrong-show')){el.classList.remove('correct');el.classList.remove('wrong-show')}else{el.classList.add(el.dataset.c==='1'?'correct':'wrong-show')}}
+    function showAns(id){document.getElementById(id).classList.add('show')}
+    var box=document.getElementById('lightbox');document.querySelectorAll('.figure img').forEach(function(img){img.addEventListener('click',function(){box.querySelector('img').src=img.src;box.classList.add('show')})});box.addEventListener('click',function(e){if(e.target===box){box.classList.remove('show')}});document.addEventListener('keydown',function(e){if(e.key==='Escape'){box.classList.remove('show')}})
+  </script>
+</body>
+</html>

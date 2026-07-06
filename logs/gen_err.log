@@ -1,0 +1,13 @@
+2026-06-30 14:05:27 CST open default failed for html/day05-动作平面与运动轴.html: kLSExecutableIncorrectFormat; retrying with browser app
+2026-06-30 14:05:35 CST open Google Chrome failed: application not found; retrying with Safari
+2026-06-30 14:06:07 CST osascript Chinese notification failed: syntax error -2740; retrying ASCII
+2026-06-30 14:08:50 CST osascript ASCII notification failed: syntax error -2740
+No application knows how to open URL file:///Users/zhaoqr/Documents/fitness_study/html/day06-%E8%82%8C%E8%82%89%E5%BE%AE%E8%A7%82%E7%BB%93%E6%9E%84-%E8%82%8C%E4%B8%9D%E6%BB%91%E8%A1%8C%E7%90%86%E8%AE%BA.html (Error Domain=NSOSStatusErrorDomain Code=-10661 "kLSExecutableIncorrectFormat: No compatible executable was found" UserInfo={_LSLine=1731, _LSFunction=runEvaluator}).
+2026-07-01 09:01:54 CST open failed for /Users/zhaoqr/Documents/fitness_study/html/day06-肌肉微观结构-肌丝滑行理论.html
+0:20: syntax error: “标识符”不能跟在“标识符”之后。 (-2740)
+2026-07-01 09:01:54 CST osascript notification failed
+2026-07-02 08:51:46 CST Day 7 generated successfully, but open failed: kLSExecutableIncorrectFormat - No compatible executable was found. osascript notification failed: syntax error -2740. XHS package remains ready at xhs/day07/.
+2026/7/4 06:35:12 CST Day 9 image generation degraded: built-in image_gen tool unavailable; body image placeholder kept; thumbnail not generated; generatedThumbs mapping not updated.
+2026-07-05 08:35:45 CST recoverable: initial node scripts/generate-xhs-package.js --day=10 failed in sandbox: Chromium MachPort permission denied. Reran with approved escalation and generated xhs/day10 successfully.
+2026-07-06T09:17:11+0800 imagegen 工具未暴露，早间任务跳过
+2026-07-06 09:41:03 CST Day 11 imagegen CLI fallback failed: OpenAI Image API returned 401 invalid_api_key for configured OPENAI_API_KEY. Generated HTML with "图片生成失败，待补图" placeholder. Body image and thumbnail not created; generatedThumbs not updated; .progress.json not advanced. Initial XHS package render failed in sandbox due Chromium MachPort permission, escalated rerun succeeded but package lacks AI-generated visuals.

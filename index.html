@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness Study · 健身知识库</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <header class="sidebar-header">
+          <div class="logo">Fitness<span>Study</span></div>
+          <div class="subline">NSCA / NASM 双证知识库</div>
+        </header>
+
+        <div class="sidebar-body">
+          <div class="tabs" role="tablist" aria-label="内容类型">
+            <button class="tab active" id="theoryTab" type="button">理论</button>
+            <button class="tab" id="reviewTab" type="button">复习</button>
+            <button class="tab" id="exerciseTab" type="button">健身动作</button>
+          </div>
+
+          <label class="search-box">
+            <span class="search-icon">⌕</span>
+            <input id="searchInput" type="search" placeholder="搜索课程、要点、证书..." autocomplete="off" />
+            <button id="clearSearch" class="clear-search" type="button" aria-label="清空搜索">×</button>
+          </label>
+
+          <section class="filter-section">
+            <h2>证书</h2>
+            <div class="chip-group" id="certFilters"></div>
+          </section>
+
+          <section class="filter-section">
+            <h2>阶段</h2>
+            <div class="select-wrap">
+              <select id="phaseFilter" aria-label="选择阶段"></select>
+            </div>
+          </section>
+
+          <section class="filter-section">
+            <h2>分类</h2>
+            <div class="chip-group" id="categoryFilters"></div>
+          </section>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="main-header">
+          <div>
+            <div class="kicker">112 Day Library</div>
+            <h1>健身知识库</h1>
+            <p>按理论、证书、阶段和主题检索；已有详情页可直接弹窗阅读。</p>
+          </div>
+          <div class="quick-links">
+            <a href="html/review-day10-骨骼肌起止点与命名规则.html">最新复习</a>
+          </div>
+        </header>
+
+        <section class="result-bar">
+          <div id="resultText">载入中...</div>
+          <button id="resetFilters" type="button">重置筛选</button>
+        </section>
+
+        <section class="card-grid" id="cardGrid" aria-label="课程卡片"></section>
+
+        <section class="review-grid" id="reviewGrid" aria-label="复习卡片" hidden></section>
+
+        <section class="exercise-panel" id="exercisePanel" hidden>
+          <div class="exercise-tabs" role="tablist" aria-label="健身动作子模块">
+            <button class="exercise-tab active" type="button" data-exercise-view="atlas">肌肉图谱</button>
+            <button class="exercise-tab" type="button" data-exercise-view="library">动作库</button>
+          </div>
+
+          <section class="muscle-atlas" id="muscleAtlas">
+            <div class="atlas-toolbar">
+              <div>
+                <div class="kicker">Muscle Atlas</div>
+                <h2>全身肌肉图谱</h2>
+              </div>
+              <div class="view-switch" role="group" aria-label="肌肉视图">
+                <button class="active" type="button" data-atlas-view="front">正面</button>
+                <button type="button" data-atlas-view="back">背面</button>
+              </div>
+            </div>
+
+            <div class="atlas-layout">
+              <div class="atlas-figure" id="atlasFigure">
+                <img id="atlasImage" src="html/assets/muscle-atlas-front.png" alt="全身肌肉图谱" />
+                <div class="hotspot-layer" id="hotspotLayer"></div>
+              </div>
+
+              <aside class="muscle-detail" id="muscleDetail" aria-live="polite"></aside>
+            </div>
+          </section>
+
+          <section class="exercise-library-placeholder" id="exerciseLibrary" hidden>
+            <h2>动作库待接入</h2>
+            <p>下一步可按肌群、器械、动作模式、难度和训练目标接入动作数据。</p>
+            <div class="mock-actions">
+              <span>深蹲 · 下肢 · 闭链</span>
+              <span>俯卧撑 · 上肢 · 推</span>
+              <span>Pallof Press · 核心 · 抗旋转</span>
+            </div>
+          </section>
+        </section>
+      </main>
+    </div>
+
+    <div class="modal" id="lessonModal" aria-hidden="true">
+      <div class="modal-backdrop" data-close-modal></div>
+      <article class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <header class="modal-header">
+          <div>
+            <div class="modal-meta" id="modalMeta"></div>
+            <h2 id="modalTitle"></h2>
+          </div>
+          <div class="modal-actions">
+            <a id="openPage" href="#" target="_blank" rel="noreferrer">新窗口</a>
+            <button type="button" data-close-modal>关闭</button>
+          </div>
+        </header>
+        <div class="modal-body" id="modalBody"></div>
+      </article>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

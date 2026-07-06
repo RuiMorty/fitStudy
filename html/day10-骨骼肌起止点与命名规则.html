@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 10 · 骨骼肌起止点与命名规则</title>
+  <style>
+    *{box-sizing:border-box}
+    body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.75;background:#f6f8f7;color:#1a2b22;padding:18px}
+    .wrap{max-width:980px;margin:auto}
+    .header{text-align:center;padding:24px 10px}
+    .header h1{margin:0 0 10px;font-size:2rem;background:linear-gradient(90deg,#0ea66b,#0ea5e9);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .sub{color:#5a6b62}
+    .chips{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:10px}
+    .chip{font-size:.78rem;border:1px solid #d4ebe0;border-radius:999px;padding:3px 10px;background:#fff;color:#0c6da3}
+    .panel,.figure,.warn{background:#fff;border:1px solid #e2e8e4;border-radius:14px;padding:18px;margin:14px 0;box-shadow:0 2px 12px rgba(20,40,30,.06)}
+    .lead{border-left:4px solid #0ea66b}.orange{border-left:4px solid #ea7a17}
+    .figure img{width:100%;display:block;border-radius:12px;border:1px solid #e2e8e4;background:#fbfdfc;cursor:zoom-in}
+    .caption{font-size:.85rem;color:#5a6b62;margin-top:8px;text-align:center}
+    .panel h2,.warn h2{font-size:1.18rem;margin:0 0 10px;color:#0a7d52}
+    .term{font-weight:700;color:#0a7d52;background:#e8f5ee;border-radius:5px;padding:1px 5px}
+    ul.kp{list-style:none;padding:0;margin:0}
+    ul.kp>li{border-bottom:1px dashed #e2e8e4}
+    .kp-head{display:block;cursor:pointer;position:relative;padding:13px 8px 13px 30px}
+    .kp-head:before{content:"▸";position:absolute;left:8px;color:#0ea66b;font-weight:800;transition:.2s}
+    .open>.kp-head:before{transform:rotate(90deg)}
+    .kp-head:hover{background:#f0f4f2}
+    .kp-body{display:none;padding:0 14px 16px 30px}
+    .open>.kp-body{display:block}
+    .dim{display:block;margin-top:10px;font-size:.78rem;font-weight:800;color:#0c6da3}
+    .take{border-left:4px solid #0ea66b;background:#f0fbf5;border-radius:10px;padding:10px 12px;margin:10px 0}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin:12px 0}
+    .mini{border:1px solid #dbe8e1;border-radius:12px;background:#fbfdfc;padding:12px}
+    .mini h4{margin:0 0 7px;font-size:.98rem;color:#0a7d52}
+    .tag{display:inline-block;font-size:.74rem;font-weight:800;color:#0c6da3;background:#e8f4fb;border-radius:999px;padding:2px 8px;margin-right:5px}
+    .tbl{width:100%;border-collapse:collapse;font-size:.9rem;margin:10px 0}
+    .tbl th{background:#0ea66b;color:#fff;text-align:left}
+    .tbl th,.tbl td{padding:8px;border-bottom:1px solid #e2e8e4;vertical-align:top}
+    .warn{border-left:4px solid #e23b3b}.warn p{margin:8px 0}
+    .mnemonic{background:linear-gradient(135deg,#0ea66b,#0ea5e9);color:#fff;border-radius:14px;padding:20px;margin:14px 0;box-shadow:0 2px 12px rgba(20,40,30,.08)}
+    .mnemonic h2{margin:0 0 8px;font-size:1.15rem}.mnemonic strong{color:#fff7d6}
+    .card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+    .flip{min-height:145px;perspective:800px;cursor:pointer}
+    .flip-inner{position:relative;width:100%;height:100%;min-height:145px;transition:transform .5s;transform-style:preserve-3d}
+    .flip.flipped .flip-inner{transform:rotateY(180deg)}
+    .face{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:15px;border-radius:13px;border:1px solid #e2e8e4;backface-visibility:hidden;background:#fff;font-weight:700}
+    .front{color:#0a7d52;background:#f8fffb}.back{transform:rotateY(180deg);background:#eef7ff;color:#0c6da3;font-weight:600}
+    .quiz{border-top:1px dashed #e2e8e4;padding-top:12px;margin-top:12px}
+    .quiz h3{margin:0 0 8px;font-size:1rem;color:#1a2b22}
+    .opt{border:1px solid #e2e8e4;border-radius:10px;padding:9px 10px;margin:7px 0;background:#fff;cursor:pointer}
+    .opt:hover{background:#f0f4f2}.lbl{font-weight:800;color:#0c6da3;margin-right:4px}
+    .correct{border-color:#0ea66b!important;background:#e9f8f0!important}.wrong-show{border-color:#e23b3b!important;background:#fff0f0!important}
+    button{border:0;border-radius:999px;background:#0ea66b;color:#fff;font-weight:800;padding:8px 14px;cursor:pointer;margin-top:6px}
+    .reveal{display:none;border-left:4px solid #0ea5e9;background:#f0f8fc;border-radius:10px;padding:10px;margin-top:8px}.reveal.show{display:block}
+    .list{padding-left:20px;margin:8px 0}.list li{margin:7px 0}
+    footer{text-align:center;color:#5a6b62;font-size:.85rem;margin:22px 0}
+    .lightbox{position:fixed;inset:0;background:rgba(0,0,0,.82);display:none;align-items:center;justify-content:center;z-index:9;padding:18px}
+    .lightbox.show{display:flex}.lightbox img{max-width:96vw;max-height:92vh;border-radius:10px;background:#fff}
+    @media(max-width:640px){body{padding:10px}.header h1{font-size:1.5rem}.panel,.figure,.warn{padding:14px}.kp-body{padding-left:14px}.card-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="header">
+      <h1>Day 10 · 骨骼肌起止点与命名规则</h1>
+      <div class="sub">今天主题: 看到一块肌肉，能从名字和附着点反推动作。</div>
+      <div class="chips">
+        <span class="chip">第2周 · 阶段1基础科学</span>
+        <span class="chip">NSCA + NASM 双证</span>
+        <span class="chip">早间新知识</span>
+      </div>
+    </header>
+
+    <section class="panel lead">
+      <h2>一句话总结</h2>
+      <p>骨骼肌像一根跨过关节的可收缩绳索: <strong>止点向起点靠近，就是它最容易造成的动作方向</strong>。名字则像线索卡，常把位置、形状、大小、方向、起止点或动作直接写进肌肉名称。</p>
+    </section>
+
+    <figure class="figure">
+      <img src="assets/阶段1基础科学/day10-骨骼肌起止点与命名规则.png" alt="骨骼肌起止点与命名规则中文标注学习图">
+      <figcaption class="caption">重点看三件事: 起点常较固定，止点常较移动；止点向起点靠近形成动作；闭链动作要反向分析。</figcaption>
+    </figure>
+
+    <section class="panel">
+      <h2>核心要点</h2>
+      <ul class="kp">
+        <li>
+          <span class="kp-head"><span class="term">起点 origin</span>: 通常是近端、较固定的附着点，像绳子较稳的一端。</span>
+          <div class="kp-body">
+            <span class="dim">字面意思</span>
+            <p>origin = 起点，指肌肉收缩时相对更固定、较少移动的骨骼附着端。多数教材把近身体中线或近躯干的一端当起点，例如许多上肢肌肉起点在肩胛骨、锁骨或肱骨近端。</p>
+            <span class="dim">大白话</span>
+            <p>把肌肉想成一根会缩短的弹力绳。起点像门框上的固定挂钩，绳子收缩时，另一端更容易被拉过来。</p>
+            <span class="dim">考试抓法</span>
+            <p>题目问“某肌起点在哪里”时，不要先猜动作，先找近端骨和骨性标志。Day 2 学过骨性标志，就是为了今天能读懂起止点。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">止点 insertion</span>: 通常是远端、较移动的附着点，靠近起点时产生动作。</span>
+          <div class="kp-body">
+            <span class="dim">字面意思</span>
+            <p>insertion = 止点，指肌肉收缩时相对更容易移动的骨骼附着端。多数情况下止点在远端骨上，例如肱二头肌止点在桡骨粗隆附近。</p>
+            <span class="dim">大白话</span>
+            <p>止点像绳子另一端挂着的物体。绳子一缩短，物体被拉向固定挂钩，所以“止点向起点靠近”是最直接的动作判断。</p>
+            <span class="dim">真实例子</span>
+            <p>肱二头肌收缩时，前臂上的止点靠近肩部起点，肘关节就屈曲。你做弯举时，上臂前侧变硬，就是肱二头肌在把前臂拉上来。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">动作反推</span>: 先画起点和止点，再问哪块骨会被拉向哪块骨。</span>
+          <div class="kp-body">
+            <span class="dim">步骤</span>
+            <div class="grid">
+              <div class="mini"><h4>1. 找跨过哪个关节</h4><p><span class="tag">关节</span>肌肉跨过肘，就可能影响肘；跨过肩，就可能影响肩。</p></div>
+              <div class="mini"><h4>2. 找止点移动方向</h4><p><span class="tag">方向</span>止点向起点靠近，骨头会沿这个方向运动。</p></div>
+              <div class="mini"><h4>3. 对照动作面</h4><p><span class="tag">分类</span>结合 Day 5，判断是屈伸、外展内收、旋转还是水平动作。</p></div>
+            </div>
+            <span class="dim">真实例子</span>
+            <p>胸大肌从胸骨、锁骨附近到肱骨近端。肱骨被拉向胸前，所以它常参与肩水平内收、肩内旋和肩屈曲。</p>
+            <span class="dim">常见误解</span>
+            <p>❌只背“某肌做某动作”。✅更稳做法是看它跨哪关节、附着在哪、拉线朝哪走。这样遇到陌生肌肉也能推。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">开链动作</span>: 远端自由移动，常按“止点向起点靠近”正常分析。</span>
+          <div class="kp-body">
+            <span class="dim">字面意思</span>
+            <p>开链 = distal segment free，远端肢体没有固定在地面或器械上。手脚能自由移动，所以远端止点通常更明显移动。</p>
+            <span class="dim">大白话</span>
+            <p>弯举时手拿哑铃但前臂能动，身体没有被前臂拉过去。此时肱二头肌把前臂拉向肩部，很符合止点移动规则。</p>
+            <span class="dim">训练含义</span>
+            <p>腿屈伸、腿弯举、弯举、侧平举多是开链。开链更容易孤立目标肌，也更容易观察单个关节动作。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">闭链动作</span>: 远端固定时，起点和身体可能向止点移动，需要反向分析。</span>
+          <div class="kp-body">
+            <span class="dim">字面意思</span>
+            <p>闭链 = distal segment fixed，远端肢体固定在地面、单杠或稳定器械上。此时远端不动，近端身体反而移动。</p>
+            <span class="dim">大白话</span>
+            <p>引体向上时手固定在单杠，背阔肌不是把手拉向身体，而是把身体拉向手。俯卧撑时手固定，肘伸肌让身体远离地面。</p>
+            <span class="dim">考试与训练</span>
+            <p>同一块肌肉在开链和闭链里动作描述会变，但肌肉拉力方向没变。变化的是哪一端被固定、哪一端被允许移动。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">肌肉命名规则</span>: 名字常透露位置、形状、大小、纤维方向、起止点或动作。</span>
+          <div class="kp-body">
+            <span class="dim">对照表</span>
+            <table class="tbl">
+              <tr><th>命名线索</th><th>意思</th><th>例子</th></tr>
+              <tr><td>位置</td><td>肌肉所在区域或邻近结构</td><td>胸大肌、胫骨前肌</td></tr>
+              <tr><td>形状</td><td>外形像什么</td><td>三角肌、菱形肌</td></tr>
+              <tr><td>大小</td><td>相对大、小、长、短</td><td>臀大肌、胸小肌</td></tr>
+              <tr><td>纤维方向</td><td>纤维走向</td><td>腹直肌、腹外斜肌</td></tr>
+              <tr><td>起止点</td><td>连接哪两块骨或骨性标志</td><td>肱桡肌、胸锁乳突肌</td></tr>
+              <tr><td>动作</td><td>主要功能动作</td><td>旋前圆肌、拇长伸肌</td></tr>
+            </table>
+            <span class="dim">训练含义</span>
+            <p>名字不是死背负担，而是快速定位工具。看到“肱桡肌”，就知道它连接肱骨与桡骨；看到“伸肌”，就先想到伸展动作。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">具体肌肉例子</span>: 肱二头肌、胸大肌、三角肌、肱桡肌各自展示不同命名逻辑。</span>
+          <div class="kp-body">
+            <span class="dim">肱二头肌</span>
+            <p>“二头”提示它有两个头。它起于肩胛骨相关结构，止于桡骨粗隆和前臂筋膜，主要做屈肘、前臂旋后，也辅助肩屈。弯举时摸上臂前侧，像一条隆起的绳索。</p>
+            <span class="dim">胸大肌</span>
+            <p>“胸”是位置，“大”是大小。它从锁骨、胸骨、肋软骨区域到肱骨，主要做肩水平内收、内旋和屈曲。卧推、俯卧撑时胸前发硬，就是它在参与推。</p>
+            <span class="dim">三角肌与肱桡肌</span>
+            <p>三角肌按形状命名，像肩外侧三角形肩帽，前中后束分别偏肩屈、外展、肩伸。肱桡肌按起止点命名，连接肱骨和桡骨，常在中立握弯举时更容易感到前臂外侧发力。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">闭链反推案例</span>: 引体向上和俯卧撑证明“固定端改变，分析顺序也要变”。</span>
+          <div class="kp-body">
+            <span class="dim">引体向上</span>
+            <p>背阔肌从躯干和骨盆相关区域连到肱骨。开链下它让手臂向身体后下方走；闭链下手固定在单杠，身体被拉向上方，表现为肩伸、肩内收和肩胛控制协同。</p>
+            <span class="dim">俯卧撑</span>
+            <p>手固定在地面，肱三头肌让肘伸，胸大肌和三角肌前束帮助身体远离地面。看似地面不动，其实是身体相对手的位置改变。</p>
+            <span class="dim">常见误解</span>
+            <div class="take">别把“起点永远不动”当铁律。起点/止点是教学约定，训练分析要看哪一端被外界固定。</div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="warn">
+      <h2>常见误区</h2>
+      <p>❌很多人以为起点一定永远不动。✅其实起点只是通常较固定；闭链动作里近端身体也可能向远端移动。</p>
+      <p>❌很多人看到肌肉名字只背中文。✅名字常带定位线索，例如“肱桡肌”直接告诉你它连接肱骨与桡骨。</p>
+      <p>❌很多人只背主动肌，不看关节和附着点。✅考试和动作分析更看你能否从结构反推动作。</p>
+    </section>
+
+    <section class="mnemonic">
+      <h2>记忆口诀</h2>
+      <p><strong>近端多起点，远端多止点；止向起靠近，动作就出现；手脚若固定，身体反着迁；名字藏线索，位置形大线，起止动作全。</strong></p>
+    </section>
+
+    <section class="panel">
+      <h2>翻转卡复习</h2>
+      <div class="card-grid">
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">origin 是什么?</div><div class="face back">起点，通常是近端、较固定的肌肉附着点。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">insertion 是什么?</div><div class="face back">止点，通常是远端、较移动的肌肉附着点。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">动作怎么反推?</div><div class="face back">看肌肉跨哪个关节，止点向起点靠近，形成对应关节运动。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">闭链动作最关键变化?</div><div class="face back">远端固定，身体或近端可能向固定端移动。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">三角肌按什么命名?</div><div class="face back">形状命名，像肩外侧三角形肩帽。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">肱桡肌按什么命名?</div><div class="face back">起止点命名，提示连接肱骨与桡骨。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">胸大肌名字给哪些线索?</div><div class="face back">胸=位置，大=大小；它常参与肩水平内收、内旋、屈曲。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">为什么要学骨性标志?</div><div class="face back">起止点常落在骨性标志上，能帮你定位肌肉和分析动作。</div></div></div>
+      </div>
+    </section>
+
+    <section class="panel orange">
+      <h2>实操关联</h2>
+      <ul class="list">
+        <li><strong>增肌:</strong> 根据起止点判断目标肌拉线，让动作轨迹更贴近目标肌功能，例如飞鸟强调胸大肌让肱骨向胸前靠近。</li>
+        <li><strong>力量:</strong> 闭链动作要反向分析。深蹲、俯卧撑、引体向上里，身体移动方向常比远端肢体更关键。</li>
+        <li><strong>康复:</strong> 疼痛点不等于问题肌。先看疼痛关节附近哪些肌肉跨过它，再看起止点和动作是否可能造成压力。</li>
+        <li><strong>教学:</strong> 给客户讲动作时，用“这块肌肉把这块骨头拉向那块骨头”比单说术语更好懂。</li>
+        <li><strong>考试:</strong> 遇到陌生肌肉名，先拆命名线索，再结合起止点和关节动作推答案。</li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2>练习题</h2>
+      <div class="quiz">
+        <h3>1. 单选: 最符合“止点 insertion”的描述是?</h3>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">A.</span>永远固定不动的附着点</div>
+        <div class="opt" onclick="pick(this,'correct')"><span class="lbl">B.</span>通常较远端、较容易移动的附着点</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">C.</span>只存在于下肢肌肉的附着点</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">D.</span>所有肌肉最粗的位置</div>
+        <button onclick="document.getElementById('ans1').classList.add('show')">查看解析</button>
+        <div class="reveal" id="ans1">答案 B。A 错在“永远”，闭链动作中近端也会移动；C 错，所有骨骼肌都可描述起止点；D 说的是肌腹，不是止点。</div>
+      </div>
+      <div class="quiz">
+        <h3>2. 单选: “肱桡肌”这个名称主要体现哪类命名规则?</h3>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">A.</span>形状</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">B.</span>大小</div>
+        <div class="opt" onclick="pick(this,'correct')"><span class="lbl">C.</span>起止点或连接骨骼</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">D.</span>收缩速度</div>
+        <button onclick="document.getElementById('ans2').classList.add('show')">查看解析</button>
+        <div class="reveal" id="ans2">答案 C。肱=肱骨，桡=桡骨，名字提示连接区域。三角肌才更偏形状命名；臀大肌、胸小肌偏大小命名；收缩速度不是常见肌名规则。</div>
+      </div>
+      <div class="quiz">
+        <h3>3. 多选: 哪些说法正确?</h3>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">A.</span>开链动作中远端通常可以自由移动</div>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">B.</span>闭链动作中身体可能向固定端移动</div>
+        <div class="opt" onclick="pickMulti(this)"><span class="lbl">C.</span>起点一定永远不动，止点一定永远移动</div>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">D.</span>肌肉名可能包含位置、形状、大小或动作线索</div>
+        <button onclick="document.getElementById('ans3').classList.add('show')">查看解析</button>
+        <div class="reveal" id="ans3">答案 A、B、D。C 错在绝对化。起点/止点是常规教学约定，真实动作要看外界固定哪一端。</div>
+      </div>
+      <div class="quiz">
+        <h3>4. 案例题: 客户做引体向上。手固定在单杠，身体向上。你怎么用起止点解释?</h3>
+        <button onclick="document.getElementById('ans4').classList.add('show')">查看解析</button>
+        <div class="reveal" id="ans4">引体向上是闭链拉类动作。手是远端固定端，身体作为近端向固定端移动。背阔肌、大圆肌、肱二头肌等仍按自己的拉力方向收缩，但表现不是“手臂单独向身体移动”，而是身体被拉向单杠。分析顺序: 先确认远端固定，再看肩关节伸展/内收、肘屈曲和肩胛下压后缩等协同。</div>
+      </div>
+    </section>
+
+    <footer>阶段1 · Day 10/112 · 今日早间新知识(工作日6:00) · 中午12:00复习巩固</footer>
+  </main>
+  <div class="lightbox" id="lightbox"><img alt="放大图"></div>
+  <script>
+    document.querySelectorAll('ul.kp>li>.kp-head').forEach(function(h){h.addEventListener('click',function(){h.parentElement.classList.toggle('open')});});
+    function pick(el,type){el.closest('.quiz').querySelectorAll('.opt').forEach(function(o){o.classList.remove('correct','wrong-show')});el.classList.add(type==='correct'?'correct':'wrong-show');}
+    function pickMulti(el){if(el.classList.contains('correct')||el.classList.contains('wrong-show')){el.classList.remove('correct');el.classList.remove('wrong-show');}else{el.classList.add(el.dataset.c==='1'?'correct':'wrong-show');}}
+    document.querySelectorAll('.figure img').forEach(function(img){img.addEventListener('click',function(){var box=document.getElementById('lightbox');box.querySelector('img').src=img.src;box.classList.add('show');});});
+    document.getElementById('lightbox').addEventListener('click',function(e){if(e.target.id==='lightbox')e.currentTarget.classList.remove('show');});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape')document.getElementById('lightbox').classList.remove('show');});
+  </script>
+</body>
+</html>

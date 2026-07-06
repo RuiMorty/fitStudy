@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 4 · 关节面形状与运动学</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+    }
+
+    body {
+      font-family: -apple-system, "PingFang SC", "Helvetica Neue", sans-serif;
+      line-height: 1.7;
+      background: #f6f8f7;
+      color: #1a2b22;
+      padding: 16px 12px 40px
+    }
+
+    .wrap {
+      max-width: 760px;
+      margin: 0 auto
+    }
+
+    /* 标题区 */
+    .header {
+      text-align: center;
+      padding: 28px 16px 20px
+    }
+
+    .header h1 {
+      font-size: 1.75rem;
+      font-weight: 800;
+      background: linear-gradient(90deg, #0ea66b, #0ea5e9);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 10px
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      justify-content: center;
+      margin-bottom: 10px
+    }
+
+    .chip {
+      font-size: .72rem;
+      padding: 3px 10px;
+      border-radius: 20px;
+      background: #e8f5ee;
+      color: #0c6da3;
+      border: 1px solid #d4ebe0
+    }
+
+    .chip.green {
+      background: #e8f5ee;
+      color: #0c7a4d;
+      border-color: #c8e6d2
+    }
+
+    .chip.blue {
+      background: #e3f2fd;
+      color: #0c6da3;
+      border-color: #c5e3f6
+    }
+
+    .chip.orange {
+      background: #fff3e0;
+      color: #c85d10;
+      border-color: #ffdcb5
+    }
+
+    .sub {
+      color: #5a6b62;
+      font-size: .92rem
+    }
+
+    /* panel */
+    .panel {
+      background: #fff;
+      border: 1px solid #e2e8e4;
+      border-radius: 14px;
+      padding: 18px 18px;
+      margin: 14px 0;
+      box-shadow: 0 2px 12px rgba(20, 40, 30, .06)
+    }
+
+    .panel.green {
+      border-left: 4px solid #0ea66b
+    }
+
+    .panel.orange {
+      border-left: 4px solid #ea7a17
+    }
+
+    .panel.blue {
+      border-left: 4px solid #0ea5e9
+    }
+
+    .panel h2 {
+      font-size: 1.15rem;
+      margin-bottom: 10px;
+      color: #0a7d52;
+      display: flex;
+      align-items: center;
+      gap: 6px
+    }
+
+    .panel h2 .ic {
+      font-size: 1.2rem
+    }
+
+    .panel h3 {
+      font-size: 1rem;
+      margin: 14px 0 6px;
+      color: #0a7d52
+    }
+
+    .panel p {
+      margin: 6px 0;
+      color: #2c3e36
+    }
+
+    .panel strong {
+      color: #0a7d52
+    }
+
+    .panel .term {
+      color: #0ea66b;
+      font-weight: 700;
+      background: #e8f5ee;
+      padding: 1px 5px;
+      border-radius: 4px;
+      font-size: .92em
+    }
+
+    /* 核心要点折叠 */
+    ul.kp {
+      padding-left: 0;
+      list-style: none
+    }
+
+    ul.kp>li {
+      border-bottom: 1px dashed #e2e8e4
+    }
+
+    ul.kp>li:last-child {
+      border-bottom: none
+    }
+
+    ul.kp>li>.kp-head {
+      padding: 12px 8px 12px 32px;
+      cursor: pointer;
+      position: relative;
+      display: block;
+      font-size: .95rem
+    }
+
+    ul.kp>li>.kp-head::before {
+      content: "▸";
+      color: #0ea66b;
+      position: absolute;
+      left: 8px;
+      transition: transform .2s;
+      font-weight: bold
+    }
+
+    ul.kp>li.open>.kp-head::before {
+      transform: rotate(90deg)
+    }
+
+    ul.kp>li>.kp-head:hover {
+      background: #f0f4f2;
+      border-radius: 8px
+    }
+
+    .kp-body {
+      display: none;
+      padding: 6px 16px 14px 32px
+    }
+
+    ul.kp>li.open>.kp-body {
+      display: block
+    }
+
+    .dim {
+      font-size: .74rem;
+      font-weight: 700;
+      color: #0c6da3;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+      display: block;
+      margin: 12px 0 4px
+    }
+
+    /* 误区 */
+    .warn {
+      background: #fff;
+      border: 1px solid #e2e8e4;
+      border-left: 4px solid #e23b3b;
+      border-radius: 14px;
+      padding: 16px 18px;
+      margin: 14px 0;
+      box-shadow: 0 2px 12px rgba(20, 40, 30, .06)
+    }
+
+    .warn h2 {
+      color: #c42b2b;
+      font-size: 1.1rem;
+      margin-bottom: 8px
+    }
+
+    .warn-item {
+      margin: 8px 0;
+      padding: 8px 10px;
+      background: #fef5f5;
+      border-radius: 8px;
+      font-size: .9rem
+    }
+
+    .warn-item .x {
+      color: #e23b3b;
+      font-weight: 700
+    }
+
+    .warn-item .v {
+      color: #0ea66b;
+      font-weight: 700
+    }
+
+    /* 口诀 */
+    .mnemonic {
+      background: linear-gradient(135deg, #0a7d52, #0ea66b);
+      color: #fff;
+      border-radius: 14px;
+      padding: 20px 18px;
+      margin: 14px 0;
+      box-shadow: 0 2px 12px rgba(20, 40, 30, .1)
+    }
+
+    .mnemonic h2 {
+      color: #fff7d6;
+      font-size: 1.1rem;
+      margin-bottom: 10px
+    }
+
+    .mnemonic p {
+      color: #eafff5;
+      line-height: 2;
+      font-size: 1.02rem
+    }
+
+    .mnemonic strong {
+      color: #fff7d6
+    }
+
+    .mnemonic .verse {
+      font-size: 1.05rem;
+      letter-spacing: 2px;
+      margin: 6px 0;
+      font-weight: 600
+    }
+
+    /* 翻转卡 */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 10px;
+      margin-top: 10px
+    }
+
+    .flip {
+      perspective: 800px;
+      height: 120px;
+      cursor: pointer
+    }
+
+    .flip-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform .5s;
+      transform-style: preserve-3d
+    }
+
+    .flip.flipped .flip-inner {
+      transform: rotateY(180deg)
+    }
+
+    .face {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 12px;
+      padding: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: .85rem;
+      border: 1px solid #e2e8e4
+    }
+
+    .face.front {
+      background: #f0f4f2;
+      color: #1a2b22
+    }
+
+    .face.back {
+      background: #0ea66b;
+      color: #fff;
+      transform: rotateY(180deg);
+      font-size: .82rem
+    }
+
+    .face.front .tag {
+      font-size: .7rem;
+      color: #0c6da3;
+      margin-bottom: 4px;
+      font-weight: 700
+    }
+
+    /* 实操 */
+    .practice-list {
+      list-style: none;
+      padding-left: 0
+    }
+
+    .practice-list>li {
+      padding: 8px 8px 8px 28px;
+      position: relative;
+      border-bottom: 1px dashed #e2e8e4;
+      font-size: .92rem
+    }
+
+    .practice-list>li:last-child {
+      border-bottom: none
+    }
+
+    .practice-list>li::before {
+      content: "▸";
+      color: #ea7a17;
+      position: absolute;
+      left: 8px;
+      font-weight: bold
+    }
+
+    /* 练习题 */
+    .quiz .q-item {
+      background: #f0f4f2;
+      border-radius: 10px;
+      padding: 14px;
+      margin: 10px 0
+    }
+
+    .quiz .q-stem {
+      font-weight: 600;
+      color: #1a2b22;
+      margin-bottom: 8px;
+      font-size: .95rem
+    }
+
+    .quiz .q-stem .tag {
+      font-size: .72rem;
+      background: #0ea5e9;
+      color: #fff;
+      padding: 2px 8px;
+      border-radius: 10px;
+      margin-right: 6px;
+      font-weight: 500
+    }
+
+    .opt {
+      padding: 9px 12px;
+      margin: 6px 0;
+      border: 1px solid #d4ebe0;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: .9rem;
+      transition: all .15s;
+      background: #fff
+    }
+
+    .opt:hover {
+      background: #e8f5ee
+    }
+
+    .opt .lbl {
+      font-weight: 700;
+      color: #0c6da3;
+      margin-right: 4px
+    }
+
+    .opt.correct {
+      background: #d4f5e0;
+      border-color: #0ea66b;
+      color: #0a7d52;
+      font-weight: 600
+    }
+
+    .opt.correct .lbl {
+      color: #0a7d52
+    }
+
+    .opt.wrong-show {
+      background: #fde0e0;
+      border-color: #e23b3b;
+      color: #a52020
+    }
+
+    .btn-reveal {
+      margin-top: 8px;
+      padding: 6px 14px;
+      background: #0ea66b;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: .85rem;
+      font-weight: 600
+    }
+
+    .btn-reveal:hover {
+      background: #0c8a57
+    }
+
+    .reveal {
+      display: none;
+      margin-top: 10px;
+      padding: 12px;
+      background: #fff;
+      border-left: 3px solid #0ea5e9;
+      border-radius: 8px;
+      font-size: .88rem;
+      color: #2c3e36
+    }
+
+    .reveal.show {
+      display: block
+    }
+
+    .reveal .ans {
+      color: #0a7d52;
+      font-weight: 700;
+      margin-bottom: 4px
+    }
+
+    .reveal .why {
+      margin-top: 6px;
+      color: #5a6b62
+    }
+
+    .reveal .why b {
+      color: #1a2b22
+    }
+
+    /* table */
+    .tbl {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0;
+      font-size: .86rem;
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden
+    }
+
+    .tbl th {
+      background: #0ea66b;
+      color: #fff;
+      padding: 8px 6px;
+      text-align: left;
+      font-size: .82rem
+    }
+
+    .tbl td {
+      padding: 8px 6px;
+      border-bottom: 1px solid #e2e8e4;
+      vertical-align: top
+    }
+
+    .tbl tr:last-child td {
+      border-bottom: none
+    }
+
+    .tbl tr:nth-child(even) td {
+      background: #f6faf8
+    }
+
+    /* footer */
+    .footer {
+      text-align: center;
+      color: #7a8b82;
+      font-size: .8rem;
+      padding: 20px 10px;
+      border-top: 1px dashed #d4ebe0;
+      margin-top: 20px
+    }
+
+    .footer b {
+      color: #0a7d52
+    }
+
+    @media(max-width:520px) {
+      .header h1 {
+        font-size: 1.4rem
+      }
+
+      .card-grid {
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr))
+      }
+    }
+  </style>
+<link rel="stylesheet" href="theme.css">
+</head>
+
+<body>
+  <div class="wrap">
+
+    <!-- 1. 标题区 -->
+    <div class="header">
+      <h1>Day 4 · 关节面形状与运动学</h1>
+      <div class="meta">
+        <span class="chip green">阶段一 · 解剖基础</span>
+        <span class="chip blue">学科: 功能解剖</span>
+        <span class="chip orange">双证: NASM / ACE</span>
+        <span class="chip">2026-06-30</span>
+      </div>
+      <div class="sub">六种关节面、运动学三要素、凹凸法则——理解受限的"骨性根源"</div>
+    </div>
+
+    <!-- 2. 一句话总结 -->
+    <div class="panel green">
+      <h2><span class="ic">🎯</span>一句话总结</h2>
+      <p>关节就像零件厂里的<strong>不同接口</strong>:球窝接口能万向转,铰链接口只能一开一合。<span
+          class="term">关节面形状</span>(两块骨头接触面的几何形态)直接决定了这个关节<strong>能做什么运动、能走多大范围</strong>。</p>
+      <p>所以一个学员深蹲蹲不下去,可能不是腘绳肌"紧",而是他<strong>髋关节的球窝本来就偏深</strong>——这是骨头形状决定的,拉伸肌肉也救不了。记住这条推论,后面所有的训练判断都会清晰很多。</p>
+    </div>
+
+    <!-- 3. 核心要点 -->
+    <div class="panel">
+      <h2><span class="ic">📚</span>核心要点(点击展开)</h2>
+      <ul class="kp">
+
+        <li>
+          <span class="kp-head"><span class="term">关节面形状</span>:两骨接触面的几何形态,是关节运动能力的"硬件设定"。共六种:球窝、铰链、鞍状、车轴、椭圆、平面。</span>
+          <div class="kp-body">
+            <span class="dim">底层机制</span>
+            <p>
+              关节能不能做某个方向的运动,不是肌肉说了算,是<strong>骨头接触面的形状</strong>说了算。想象两块积木的咬合面:如果是圆球放进碗,可以朝任何方向滚;如果是榫卯互锁,只能沿一道槽滑动。骨头的几何约束在肌肉发力之前就限定了"哪些动作物理上可行"。
+            </p>
+            <span class="dim">六种形状速记</span>
+            <table class="tbl">
+              <tr>
+                <th>形状</th>
+                <th>代表关节</th>
+                <th>运动能力</th>
+                <th>类比</th>
+              </tr>
+              <tr>
+                <td><b>球窝</b> Ball & Socket</td>
+                <td>髋、肩</td>
+                <td>三轴全方位(屈伸/外展内收/旋转)</td>
+                <td>高尔夫球放碗里</td>
+              </tr>
+              <tr>
+                <td><b>铰链</b> Hinge</td>
+                <td>肘、指间、膝(主要)</td>
+                <td>单轴(屈伸)</td>
+                <td>门合页</td>
+              </tr>
+              <tr>
+                <td><b>鞍状</b> Saddle</td>
+                <td>拇指腕掌关节</td>
+                <td>双轴(屈伸/外展内收),可对掌</td>
+                <td>两块马鞍互扣</td>
+              </tr>
+              <tr>
+                <td><b>车轴/枢轴</b> Pivot</td>
+                <td>寰枢(颈椎)、桡尺近端</td>
+                <td>单轴(旋转)</td>
+                <td>门把手转轴</td>
+              </tr>
+              <tr>
+                <td><b>椭圆/髁状</b> Ellipsoid/Condyloid</td>
+                <td>桡腕(腕)、掌指(MCP)</td>
+                <td>双轴(屈伸/外展内收),无旋转</td>
+                <td>鸡蛋放椭圆碗</td>
+              </tr>
+              <tr>
+                <td><b>平面</b> Plane/Gliding</td>
+                <td>腕骨间、椎间关节突、肩锁</td>
+                <td>多向微动(滑动为主)</td>
+                <td>两块砖平贴摩擦</td>
+              </tr>
+            </table>
+            <span class="dim">训练含义</span>
+            <p>判断一个关节"应该"能做什么动作,先看它属于哪种形状。比如肩(球窝)可以做完整绕环,但肘(铰链)做绕环就是错的——肘只能屈伸,你看到的"肘部绕环"其实是肩在转。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为所有关节都能全方位运动,只要练得够多就能解锁。✅其实关节面形状是<strong>天生的硬件限制</strong>,训练只能把"允许范围内"的动作发挥到极致,改变不了形状本身。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">球窝关节</span> Ball & Socket:球头嵌入碗窝,三轴自由。代表=髋、肩。运动范围最大。</span>
+          <div class="kp-body">
+            <span class="dim">结构细节</span>
+            <p><strong>髋关节</strong>:股骨头(球)嵌进髋臼(碗)。髋臼比较深,包裹住股骨头大约 170°,所以稳定性高、活动度相对受限——这就是为什么大多数人髋屈能到 120° 但很难到
+              180°。<strong>肩关节</strong>:肱骨头嵌进肩胛骨的关节盂。但关节盂很浅(像个浅碟子),只包住肱骨头约 1/3,所以肩的活动度比髋大得多,代价是稳定性差,容易脱位。</p>
+            <span class="dim">真实例子</span>
+            <p>举重运动员抓举时肩能做大幅度的过头外旋+外展,这是球窝的功劳;而体操的十字支撑需要肩在极端位置保持稳定,反而是球窝的"不稳定"在挑战他。髋因为窝深,适合深蹲、硬拉这种"承重型"动作。</p>
+            <span class="dim">训练含义</span>
+            <p>
+              训练肩要<strong>先稳定后灵活</strong>(因为它天生灵活但易脱位),多做肩袖肌群(冈上肌/冈下肌/小圆肌/肩胛下肌)的等长和弹力带外旋。训练髋要<strong>先解锁活动度再上重量</strong>,因为它稳定但有"窝深天花板"。
+            </p>
+            <span class="dim">常见误解</span>
+            <p>❌以为肩和髋的活动度可以无上限拉伸。✅肩能拉到位但有脱位风险,髋有窝深硬限制——超过骨头形状允许的范围,拉的不是肌肉,是关节囊和韧带,会松、会伤。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">铰链关节</span> Hinge:像门合页,只能屈伸一个轴。代表=肘、指间、膝(近似)。</span>
+          <div class="kp-body">
+            <span class="dim">结构细节</span>
+            <p>铰链关节一面是滑车状的凸起(像线轴),另一面是与之匹配的凹槽。骨头之间有强大的侧副韧带(medial/lateral collateral
+              ligament)把两侧锁死,所以左右方向几乎不动。<strong>肘关节</strong>:肱骨滑车和尺骨的滑车切迹组成,主要做屈伸,屈肘能到 ~150°,伸到
+              0°。<strong>膝关节</strong>:严格说是"改良铰链"(modified hinge),因为它屈膝时还能小幅内旋(锁扣机制 screw-home),但主要运动还是屈伸。</p>
+            <span class="dim">真实例子</span>
+            <p>二头弯举时肘做的是标准铰链屈;腿弯举( hamstring curl)膝做的是铰链屈。如果你让学员"肘部绕环",他做的其实是肱骨在肩处的旋转+轻微的肘屈伸,不是真绕环——铰链结构上做不到。</p>
+            <span class="dim">训练含义</span>
+            <p>
+              铰链关节的训练重点是<strong>在单一矢状面内做干净的屈伸</strong>,避免扭转。比如二头弯举时手腕要正,不要外翻带扭转;腿弯举时膝盖对齐器械轴心,不要让胫骨外八字扭转膝关节。膝盖最怕负重下的扭转(滑雪伤、足球铲球伤就是这么来的)。
+            </p>
+            <span class="dim">常见误解</span>
+            <p>❌以为膝盖和肘一样纯粹只屈伸,所以深蹲到底可以"坐在脚跟上"。✅膝是改良铰链,屈膝到极限时胫骨会自动内旋(screw-home 解锁),深蹲到底膝盖会有自然的微小旋转,强行让膝盖"对齐"反而伤半月板。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">鞍状关节</span> Saddle:两块骨都像马鞍,凹凸互扣。代表=拇指腕掌关节(CMC)。让人能"对掌"。</span>
+          <div class="kp-body">
+            <span class="dim">结构细节</span>
+            <p>
+              大多角骨(腕骨)和第一掌骨底,两者接触面都呈"马鞍形"——一个方向凸、垂直方向凹。这种双向曲率让它能做屈伸+外展内收两个轴的运动,而且活动度比椭圆关节大。<strong>对掌(opposition)</strong>:拇指尖能碰到其他指尖,这是人类抓握工具的关键,猿类做不到这么精细。
+            </p>
+            <span class="dim">训练含义</span>
+            <p>虽然健身直接练拇指的不多,但所有<strong>握力训练</strong>(农夫行走、引体、硬拉)都依赖拇指腕掌关节的稳定对掌。如果这块关节退化(骨关节炎,常见于中年女性),握力会断崖式下降。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为拇指和手指一样是铰链。✅拇指根部的关节是鞍状,能多方向动,这就是为什么大拇指能"岔开"做捏的动作,而其他手指只能弯曲。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">车轴/枢轴关节</span> Pivot:一根骨轴在另一骨的环里转。代表=寰枢关节(颈椎)、桡尺近端关节。专做旋转。</span>
+          <div class="kp-body">
+            <span class="dim">结构细节</span>
+            <p><strong>寰枢关节(atlantoaxial)</strong>:第一颈椎(寰椎)像一个环,第二颈椎(枢椎)的齿突像一根钉子插在环里——摇头"NO"的动作就是齿突在环里转,大约能左右各转
+              40°。<strong>桡尺近端关节</strong>:桡骨头在尺骨的环状韧带里转,负责前臂旋前/旋后(手掌翻上翻下)。</p>
+            <span class="dim">训练含义</span>
+            <p>做肩上推举时,如果前臂旋前不到位(桡尺关节卡),会强迫肩做代偿外展,伤肩袖。所以推举前可以做个"旋前测试":手掌能不能完全朝下贴墙?不能的话先松前臂。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为摇头是整条颈椎一起转。✅大部分左右转头(约 50%)发生在寰枢关节这一处,下面几节颈椎贡献很小。所以"转脖子响"通常就是这一节在响。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">椭圆/髁状关节</span>
+            Ellipsoid:椭圆头嵌进椭圆窝,双轴运动但无旋转。代表=桡腕(腕关节)、掌指关节(MCP)。</span>
+          <div class="kp-body">
+            <span class="dim">结构细节</span>
+            <p>
+              <strong>桡腕关节</strong>:桡骨远端(椭圆凹)和舟骨/月骨/三角骨(椭圆凸)组成。能做屈伸(掌心向前/向后)和外展内收(左右偏),但不能旋转——你感觉到的"腕旋转"其实是来自桡尺关节,不是腕本身。<strong>掌指关节(MCP)</strong>:握拳时指根那个鼓起的关节,能屈伸+分并手指,但不能单指自转。
+            </p>
+            <span class="dim">训练含义</span>
+            <p>卧推时手腕要保持<strong>中立位(直腕)</strong>,不要过度后伸——桡腕关节的后伸范围只有
+              ~70°,负重下后伸到极限会压伤月骨和三角纤维软骨复合体(TFCC)。这就是为什么腕力球、俯卧撑要用拳头着地或保持直腕。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为手腕可以绕环所以是球窝。✅腕是椭圆关节,你看到的"绕环"是屈伸+外展内收拼接出来的,不是真旋转,真正的旋转在前臂的桡尺关节。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">平面关节</span> Plane/Gliding:两块扁平骨面平贴,只能小幅滑动。代表=腕骨间、椎间关节突、肩锁关节。</span>
+          <div class="kp-body">
+            <span class="dim">结构细节</span>
+            <p>两个面基本平,活动度极小(几度到十几度),靠韧带和骨面摩擦约束。单独看动得很少,但<strong>多个平面关节串起来</strong>就能累积出大范围——比如 8
+              块腕骨之间都是平面关节,叠加起来才让腕能做大幅屈伸。</p>
+            <span class="dim">训练含义</span>
+            <p>
+              椎间的小关节突(zygapophyseal)是平面关节,腰椎的小关节面方向决定了腰椎能后伸但不能太多旋转——这就是为什么"俄罗斯转"如果负重过大、转得太猛,容易伤腰椎小关节。颈椎的小关节面更斜,所以颈能转,腰不太能转。
+            </p>
+            <span class="dim">常见误解</span>
+            <p>❌以为平面关节没用,反正动得少。✅平面关节是"分布式灵活"的关键,一个不动看不出,几个一起僵(比如腕骨粘连)整个腕就废了。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span
+              class="term">关节运动学三要素</span>:滚动(Roll)、滑动(Glide/Slide)、旋转(Spin)——关节面之间的三种相对运动方式。</span>
+          <div class="kp-body">
+            <span class="dim">底层机制(关键!)</span>
+            <p>
+              我们平时说的"屈膝""外展"是<strong>骨运动(osteokinematics)</strong>——整根骨头在动。但骨头动的时候,关节内部两个接触面之间也在发生<strong>关节面运动(arthrokinesiology)</strong>,有三种模式:
+            </p>
+            <table class="tbl">
+              <tr>
+                <th>类型</th>
+                <th>定义</th>
+                <th>类比</th>
+                <th>发生场景</th>
+              </tr>
+              <tr>
+                <td><b>滚动 Roll</b></td>
+                <td>一个面上的多点接触另一个面的多点(像车轮贴地滚)</td>
+                <td>轮胎在地面滚</td>
+                <td>膝关节屈伸时股骨髁在胫骨平台上滚</td>
+              </tr>
+              <tr>
+                <td><b>滑动 Slide/Glide</b></td>
+                <td>一个面上的一个点滑过另一个面的多个点(像轮胎打滑不滚)</td>
+                <td>刹车时轮胎抱死滑行</td>
+                <td>肩外展时肱骨头在关节盂里向下滑</td>
+              </tr>
+              <tr>
+                <td><b>旋转 Spin</b></td>
+                <td>一个面绕自己的长轴转,接触点不变(像陀螺原地震)</td>
+                <td>陀螺原地转</td>
+                <td>肩外展 90°后内外旋、髋内外旋</td>
+              </tr>
+            </table>
+            <p>
+              <strong>关键点</strong>:绝大多数真实关节运动是<strong>滚动+滑动的组合</strong>。如果只有滚动,骨头会"滚出去"脱位;滑动把它"拉回来"保持在关节窝里。这就是凹凸法则要解决的问题。
+            </p>
+            <span class="dim">训练含义</span>
+            <p>理解了三要素,你就明白为什么关节松动术(关节囊松解)做的都是<strong>滑动</strong>而非滚动——治疗师用手指把骨头平行推开,恢复关节面的滑动能力,活动度就回来了。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为骨头一动整个关节面都在均匀地动。✅凹面骨和凸面骨的运动方向其实不同,这正是凹凸法则的内容(见下一条)。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">凹凸法则</span> Convex-Concave Rule:凹面骨的运动方向 = 骨运动方向;凸面骨的运动方向 =
+            骨运动方向的反方向。</span>
+          <div class="kp-body">
+            <span class="dim">底层机制(必背!)</span>
+            <p>这是整章最反直觉、最重要的法则。先搞清楚谁是凸、谁是凹:</p>
+            <ul style="padding-left:18px;margin:6px 0">
+              <li><strong>凸面在动</strong>(移动骨的关节面是凸的,静止面是凹的):关节面滑动方向 <strong>相反</strong>
+                于骨运动方向。例:肩外展,肱骨头(凸)向上运动,但肱骨头在关节盂里的<strong>滑动是向下的</strong>。</li>
+              <li><strong>凹面在动</strong>(移动骨的关节面是凹的,静止面是凸的):关节面滑动方向 <strong>相同</strong> 于骨运动方向。例:深蹲下蹲,胫骨(凹的胫骨平台)相对股骨向前的滑动
+                = 胫骨向前运动的方向一致。</li>
+            </ul>
+            <p>
+              <strong>为什么是这样?</strong>想象一个球在碗里转:球(凸)向左滚,接触点会沿着球面向右滑(否则球会滚出碗)。所以凸面的滑动方向和骨运动相反。反过来,碗(凹)在球上转,碗的运动方向和接触点滑动方向一致。
+            </p>
+            <span class="dim">真实例子</span>
+            <p>①
+              <strong>肩外展受限</strong>:肱骨头(凸)外展时需要向下滑动,如果下方关节囊紧,滑动不了,肱骨头就会向上顶(撞击肩峰)——这就是肩峰下撞击综合征的力学根源。治疗师会做<strong>向下滑动松动</strong>来恢复。②
+              <strong>深蹲膝盖痛</strong>:股骨髁(凸)在胫骨平台(凹)上,屈膝时股骨向后滚+向前滑,如果胫骨平台后倾不够或半月板问题,滑动受限会产生疼痛。</p>
+            <span class="dim">训练含义</span>
+            <p>
+              当一个动作受限,可以问自己:是肌肉限制还是关节面滑动限制?如果是后者,拉伸肌肉没用,需要<strong>关节松动术</strong>或<strong>动态关节松动</strong>(用弹力带把骨头往受限方向拉,同时做动作)。
+            </p>
+            <span class="dim">常见误解</span>
+            <p>❌以为凹凸法则只是考试题。✅它是所有徒手治疗、动态关节松动(Mulligan 法)、自我关节松动(用弹力带辅助肩外展)的力学基础,实操价值极高。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">运动范围:球窝 &gt; 椭圆 &gt; 铰链</span>——关节面形状从"球面"到"滑车面",活动度递减、稳定性递增。</span>
+          <div class="kp-body">
+            <span class="dim">底层规律</span>
+            <p>关节面越接近完整球面,活动度越大但稳定性越差;越接近单向滑车,稳定性越好但活动度越小。这是一条<strong>稳定-灵活权衡轴</strong>:</p>
+            <table class="tbl">
+              <tr>
+                <th>形状</th>
+                <th>活动轴数</th>
+                <th>活动范围</th>
+                <th>稳定性</th>
+                <th>典型伤</th>
+              </tr>
+              <tr>
+                <td>球窝(肩)</td>
+                <td>3 轴</td>
+                <td>★★★★★</td>
+                <td>★</td>
+                <td>脱位、肩袖撕裂</td>
+              </tr>
+              <tr>
+                <td>球窝(髋)</td>
+                <td>3 轴</td>
+                <td>★★★★</td>
+                <td>★★★</td>
+                <td>唇盂撕裂、撞击</td>
+              </tr>
+              <tr>
+                <td>鞍状</td>
+                <td>2 轴</td>
+                <td>★★★</td>
+                <td>★★</td>
+                <td>CMC 骨关节炎</td>
+              </tr>
+              <tr>
+                <td>椭圆</td>
+                <td>2 轴</td>
+                <td>★★★</td>
+                <td>★★</td>
+                <td>TFCC、腕扭伤</td>
+              </tr>
+              <tr>
+                <td>车轴</td>
+                <td>1 轴</td>
+                <td>★★</td>
+                <td>★★★</td>
+                <td>环枢半脱位</td>
+              </tr>
+              <tr>
+                <td>铰链</td>
+                <td>1 轴</td>
+                <td>★★</td>
+                <td>★★★★</td>
+                <td>侧副韧带、半月板</td>
+              </tr>
+              <tr>
+                <td>平面</td>
+                <td>微动</td>
+                <td>★</td>
+                <td>★★★★</td>
+                <td>关节突综合征</td>
+              </tr>
+            </table>
+            <span class="dim">训练含义</span>
+            <p>
+              训练时要<strong>反向匹配</strong>:灵活的关节(肩、髋、胸椎)重点做灵活性和稳定肌训练;稳定的关节(膝、肘、腰)重点做力量和动作模式训练。比如肩不能光练大重量推举(它已经够灵活了,再压会脱位),要练肩袖的稳定力;膝不能光拉伸(它已经够稳定了,拉松了反而松垮),要练股四头肌和腘绳肌的协同。
+            </p>
+            <span class="dim">常见误解</span>
+            <p>❌以为所有关节都应该越灵活越好。✅关节的"本职工作"不同,膝和腰的本职是稳定,把它们练得像肩一样灵活反而是受伤的开始。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">训练应用:动作受限先排查关节面形状,再查肌肉</span>。</span>
+          <div class="kp-body">
+            <span class="dim">诊断流程</span>
+            <p>遇到学员"蹲不下去""举不上去""转不过来",按这个顺序排查:</p>
+            <ol style="padding-left:18px;margin:6px 0">
+              <li><strong>骨性结构限制</strong>(最高优先级):X 光/体检确认关节形状。例如髋臼深(deep acetabulum)、股骨前倾角异常、肩峰形状(type III
+                弯钩肩峰)——这些是天生的,拉伸无效。</li>
+              <li><strong>关节囊/韧带限制</strong>:关节囊紧或增厚,需要关节松动术而非肌肉拉伸。常见于 frozen shoulder(冻结肩)。</li>
+              <li><strong>肌肉/筋膜限制</strong>:最后才是肌肉。比如腘绳肌紧限制直腿抬高——这才轮到拉伸。</li>
+              <li><strong>神经控制/疼痛抑制</strong>:疼痛会让肌肉反射性紧张,产生"假性紧"。</li>
+            </ol>
+            <span class="dim">真实例子</span>
+            <p>学员 A 深蹲蹲不到平行,他以为是腘绳肌紧,拉伸了 3 个月没改善。检查后发现是<strong>股骨髋臼撞击(FAI)</strong>——股骨颈和髋臼边缘形状不匹配,深蹲到一定角度物理上就卡住。这种情况下:①
+              不要硬蹲,会撕裂唇盂;② 改用箱蹲或加仑特式深蹲(stance 调整);③ 真的需要的话手术纠正骨形状。</p>
+            <span class="dim">训练含义</span>
+            <p>作为教练,遇到"卡点"先<strong>被动测试</strong>:让学员放松,你帮他被动做到底——如果被动也卡在同样角度,大概率是结构/关节问题,不是肌肉;如果被动能进一步,才是肌肉紧张。这叫<strong>主动不足
+                vs 被动不足</strong>的鉴别。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为"蹲不深就是软",拉伸+泡沫轴就够了。✅关节面形状的限制拉伸不了,硬拉只会撕组织。先识别结构性限制,再决定训练策略。</p>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+
+    <!-- 4. 常见误区 -->
+    <div class="warn">
+      <h2>⚠️ 常见误区</h2>
+      <div class="warn-item">
+        <span class="x">❌ 很多人以为:</span>所有关节都可以通过拉伸获得更大活动范围,蹲不下去就是肌肉紧。<br>
+        <span class="v">✅
+          其实:</span>关节面形状是<strong>硬限制</strong>。髋臼深的人天生蹲不到底,股骨颈长+前倾角大的人深蹲必须宽站距。拉伸只能解决肌肉层面的限制,改变不了骨头形状,硬拉会撕裂唇盂或关节囊。
+      </div>
+      <div class="warn-item">
+        <span class="x">❌ 很多人以为:</span>手腕可以做完整绕环,所以腕是球窝关节。<br>
+        <span class="v">✅
+          其实:</span>腕是<strong>椭圆关节</strong>,只能屈伸+外展内收。你看到的"绕环"是这两个动作拼接出来的椭圆轨迹,不是真旋转。真正的旋转来自桡尺关节(前臂),所以直臂绕环其实是前臂在转。
+      </div>
+      <div class="warn-item">
+        <span class="x">❌ 很多人以为:</span>凹凸法则只是教科书理论,跟训练没关系。<br>
+        <span class="v">✅
+          其实:</span>它是<strong>所有动态关节松动(Mulligan)</strong>的力学基础。用弹力带把肱骨头往下拉同时做肩外展,就是因为凸面滑动方向和外展方向相反——这种自助松动对肩峰下撞击非常有效。
+      </div>
+    </div>
+
+    <!-- 5. 记忆口诀 -->
+    <div class="mnemonic">
+      <h2>🎵 记忆口诀</h2>
+      <p class="verse">球窝髋肩最自由,铰链肘膝只屈收;</p>
+      <p class="verse">鞍状拇指能对掌,车轴摇头桡转手;</p>
+      <p class="verse">椭圆腕掌双轴走,平面微动串成柔;</p>
+      <p class="verse">凸动反滑凹同向,受限先查骨头头。</p>
+      <p style="margin-top:10px;font-size:.9rem">
+        <strong>翻译</strong>:球窝最灵活(髋肩),铰链只能屈伸(肘膝);鞍状让拇指对掌,车轴负责摇头和前臂旋转;椭圆双轴(腕),平面串联出灵活。凹凸法则——<strong>凸面的关节面滑动方向和骨运动相反,凹面相同</strong>。动作受限先查骨头形状,再查肌肉。
+      </p>
+    </div>
+
+    <!-- 6. 翻转卡复习 -->
+    <div class="panel">
+      <h2><span class="ic">🔄</span>翻转卡复习(点击翻面)</h2>
+      <div class="card-grid">
+        <div class="flip" onclick="this.classList.toggle('flipped')">
+          <div class="flip-inner">
+            <div class="face front">
+              <div>
+                <div class="tag">关节形状</div>髋关节属于?
+              </div>
+            </div>
+            <div class="face back">球窝关节(Ball & Socket)<br>三轴自由运动</div>
+          </div>
+        </div>
+        <div class="flip" onclick="this.classList.toggle('flipped')">
+          <div class="flip-inner">
+            <div class="face front">
+              <div>
+                <div class="tag">关节形状</div>肘关节属于?
+              </div>
+            </div>
+            <div class="face back">铰链关节(Hinge)<br>单轴屈伸</div>
+          </div>
+        </div>
+        <div class="flip" onclick="this.classList.toggle('flipped')">
+          <div class="flip-inner">
+            <div class="face front">
+              <div>
+                <div class="tag">关节形状</div>拇指腕掌属于?
+              </div>
+            </div>
+            <div class="face back">鞍状关节(Saddle)<br>可对掌</div>
+          </div>
+        </div>
+        <div class="flip" onclick="this.classList.toggle('flipped')">
+          <div class="flip-inner">
+            <div class="face front">
+              <div>
+                <div class="tag">关节形状</div>摇头"NO"用哪个关节?
+              </div>
+            </div>
+            <div class="face back">寰枢关节(车轴)<br>齿突在寰椎环里转</div>
+          </div>
+        </div>
+        <div class="flip" onclick="this.classList.toggle('flipped')">
+          <div class="flip-inner">
+            <div class="face front">
+              <div>
+                <div class="tag">运动学</div>肱骨头(凸)外展时滑动方向?
+              </div>
+            </div>
+            <div class="face back"><b>向下滑动</b><br>凸面滑动=骨运动反方向</div>
+          </div>
+        </div>
+        <div class="flip" onclick="this.classList.toggle('flipped')">
+          <div class="flip-inner">
+            <div class="face front">
+              <div>
+                <div class="tag">运动学</div>关节运动学三要素?
+              </div>
+            </div>
+            <div class="face back">滚动 Roll<br>滑动 Slide<br>旋转 Spin</div>
+          </div>
+        </div>
+        <div class="flip" onclick="this.classList.toggle('flipped')">
+          <div class="flip-inner">
+            <div class="face front">
+              <div>
+                <div class="tag">范围对比</div>球窝 / 椭圆 / 铰链 活动度排序?
+              </div>
+            </div>
+            <div class="face back">球窝 &gt; 椭圆 &gt; 铰链<br>灵活度递减,稳定性递增</div>
+          </div>
+        </div>
+        <div class="flip" onclick="this.classList.toggle('flipped')">
+          <div class="flip-inner">
+            <div class="face front">
+              <div>
+                <div class="tag">凹凸法则</div>凹面骨运动时,关节面滑动方向?
+              </div>
+            </div>
+            <div class="face back"><b>相同方向</b><br>凹面滑动=骨运动方向</div>
+          </div>
+        </div>
+        <div class="flip" onclick="this.classList.toggle('flipped')">
+          <div class="flip-inner">
+            <div class="face front">
+              <div>
+                <div class="tag">训练应用</div>深蹲蹲不下去,先排查?
+              </div>
+            </div>
+            <div class="face back">先查骨性结构<br>(髋臼深度/股骨前倾角)<br>再查肌肉</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7. 实操关联 -->
+    <div class="panel orange">
+      <h2><span class="ic">🛠</span>实操:不同训练目标怎么用</h2>
+      <ul class="practice-list">
+        <li><strong>增肌(力量举)</strong>:深蹲站距要匹配你的髋关节形状——股骨颈长或前倾角大,用宽站距(肩宽 1.5 倍)+脚尖外八 30°,给球窝"让出空间"再蹲。强行窄蹲会撞击髋臼前缘,越蹲越卡。
+        </li>
+        <li><strong>肩部训练</strong>:肩(球窝)灵活但易脱位,推举前先做肩袖外旋激活(弹力带外旋 3×15),让肱骨头在关节盂里居中,再做推举——否则肱骨头向上顶肩峰,会发展成肩峰下撞击。</li>
+        <li><strong>胸椎灵活</strong>:胸椎的关节突是平面关节,多个串联起来能旋转+伸展。每天做胸椎旋转(跪姿胸椎旋转
+          2×10/侧)和胸椎伸展(泡沫轴胸椎伸展),可以代偿腰椎不能转的限制,让深蹲和推举的姿势更干净。</li>
+        <li><strong>腕部稳定</strong>:卧推、俯卧撑保持<strong>直腕</strong>(桡骨和手背成直线),不要后伸——桡腕是椭圆关节,后伸到极限压月骨和 TFCC,长期会发展成腕管综合征或 TFCC
+          撕裂。前臂酸了可以用拳头着地做俯卧撑。</li>
+        <li><strong>爆发训练</strong>:药球转体抛掷主要发力在髋(球窝)和胸椎(平面串联),不在腰——腰椎的小关节面方向决定了它不适合大范围旋转。如果学员说转体腰疼,先检查是不是在用腰代偿胸椎。</li>
+        <li><strong>康复/受限人群</strong>:肩外展卡在 120° 的人,先做被动评估——被动到 180°没问题=肌肉限制,可以拉伸;被动也卡在
+          120°=关节囊或骨性限制,需要徒手关节松动(向下滑动),拉伸无效。</li>
+      </ul>
+    </div>
+
+    <!-- 8. 练习题 -->
+    <div class="panel quiz">
+      <h2><span class="ic">📝</span>练习题</h2>
+
+      <!-- 单选 1 -->
+      <div class="q-item">
+        <div class="q-stem"><span class="tag">单选</span>关于肩关节和髋关节都是球窝关节,以下说法正确的是?</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">A.</span>两者活动度相同,都可以做三轴全方位运动</div>
+        <div class="opt" onclick="pick(this,'correct')"><span
+            class="lbl">B.</span>肩的关节盂更浅所以活动度更大,但稳定性更差;髋的髋臼更深,稳定性更好但活动度受限</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">C.</span>髋关节比肩关节灵活,因为下肢肌肉更强大</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">D.</span>两者结构完全相同,只是位置不同</div>
+        <button class="btn-reveal" onclick="document.getElementById('ans1').classList.add('show')">查看解析</button>
+        <div class="reveal" id="ans1">
+          <div class="ans">答案:B</div>
+          <div class="why">
+            <p><b>A 错</b>:虽然都是球窝关节,但肩的关节盂只覆盖肱骨头约 1/3(浅碟子),髋的髋臼覆盖股骨头约 170°(深碗)。覆盖越深越稳定但越不灵活,所以肩活动度 &gt; 髋,稳定性 &lt; 髋。</p>
+            <p><b>C 错</b>:肌肉力量和活动度没有直接关系。髋不灵活是因为<strong>髋臼深</strong>这种结构限制,不是因为肌肉弱。一个力量很大的人髋活动度可能还不如一个柔韧性好的人。</p>
+            <p><b>D 错</b>:两者结构差异巨大,关节盂的深度、骨头的覆盖角度、周围韧带的强度都不同,这是为什么肩容易脱位而髋很少脱位。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 单选 2 -->
+      <div class="q-item">
+        <div class="q-stem"><span class="tag">单选</span>学员做肩外展,肱骨头(凸面)向上运动时,关节盂内的关节面滑动方向是?</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">A.</span>向上滑动(和骨运动方向相同)</div>
+        <div class="opt" onclick="pick(this,'correct')"><span class="lbl">B.</span>向下滑动(和骨运动方向相反)</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">C.</span>向前滑动</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">D.</span>不滑动,只有滚动</div>
+        <button class="btn-reveal" onclick="document.getElementById('ans2').classList.add('show')">查看解析</button>
+        <div class="reveal" id="ans2">
+          <div class="ans">答案:B</div>
+          <div class="why">
+            <p><b>这是凹凸法则的核心应用</b>:凸面在动时,关节面滑动方向<strong>相反于</strong>骨运动方向。肱骨头是凸面,它整体向上运动时,在关节盂内的接触点会向下滑——否则肱骨头会"滚出"关节盂顶部。
+            </p>
+            <p><b>A 错</b>:这是凹面运动的规则,不是凸面。肱骨头是凸面,要反向。</p>
+            <p><b>C 错</b>:外展在冠状面,滑动也在冠状面上下方向,不是前后。</p>
+            <p><b>D 错</b>:真实关节运动是滚动+滑动的组合。如果只有滚动,肱骨头会向上顶肩峰(撞击)——这正是肩峰下撞击的力学机制:向下滑动不足,只剩向上滚动。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 多选 -->
+      <div class="q-item">
+        <div class="q-stem"><span class="tag">多选</span>以下哪些关节属于铰链关节(或改良铰链)?【逐项点击切换】</div>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">A.</span>肘关节</div>
+        <div class="opt" onclick="pickMulti(this)"><span class="lbl">B.</span>桡腕关节(腕)</div>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">C.</span>膝关节</div>
+        <div class="opt" onclick="pickMulti(this)"><span class="lbl">D.</span>寰枢关节</div>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">E.</span>指间关节</div>
+        <div class="opt" onclick="pickMulti(this)"><span class="lbl">F.</span>拇指腕掌关节</div>
+        <button class="btn-reveal" onclick="document.getElementById('ans3').classList.add('show')">查看解析</button>
+        <div class="reveal" id="ans3">
+          <div class="ans">答案:A、C、E</div>
+          <div class="why">
+            <p><b>A 对</b>:肘是典型铰链关节,由肱骨滑车和尺骨滑车切迹组成,只做屈伸。</p>
+            <p><b>C 对</b>:膝是"改良铰链"(modified hinge),主要做屈伸,但屈膝时有小幅内旋(screw-home 机制解锁),所以不是纯铰链。</p>
+            <p><b>E 对</b>:指间关节(IP, proximal/distal)是标准铰链,只做屈伸。</p>
+            <p><b>B 错</b>:桡腕是<strong>椭圆关节</strong>(ellipsoid),双轴(屈伸+外展内收),不是铰链。</p>
+            <p><b>D 错</b>:寰枢是<strong>车轴关节</strong>(pivot),专做旋转,不是铰链。</p>
+            <p><b>F 错</b>:拇指腕掌是<strong>鞍状关节</strong>(saddle),双向曲率,可以做对掌。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 案例题 -->
+      <div class="q-item">
+        <div class="q-stem"><span class="tag">案例</span>28 岁男性学员,力量训练 4 年。深蹲蹲到大约大腿与地面成
+          30°(远未到平行)就感觉髋前侧"卡住",有钝痛。他自述已经拉伸髂腰肌和腘绳肌 3 个月,泡沫轴滚了无数次,没有任何改善。被动深蹲(你帮他推下去)同样卡在同样角度,X
+          光显示髋臼较深,股骨颈前倾角偏大。以下分析最合理的是?</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">A.</span>拉伸力度不够,应该加大拉伸强度和频率,重点拉伸髂腰肌</div>
+        <div class="opt" onclick="pick(this,'correct')"><span
+            class="lbl">B.</span>这是骨性结构限制(深髋臼+大前倾角),拉伸无效;应调整站距(加宽+脚尖外八)给髋臼让空间,或改用箱蹲</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">C.</span>说明髋关节囊过紧,需要做关节松动术向各个方向滑动</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">D.</span>可能是股骨骨折或肿瘤,需要 MRI 进一步排查</div>
+        <button class="btn-reveal" onclick="document.getElementById('ans4').classList.add('show')">查看解析</button>
+        <div class="reveal" id="ans4">
+          <div class="ans">答案:B</div>
+          <div class="why">
+            <p><b>关键诊断线索</b>:① 被动和主动卡在同一角度 → 说明不是肌肉限制(否则被动能进一步);② X 光显示髋臼深+股骨颈前倾角大 →
+              这是经典的<strong>股骨髋臼撞击(FAI)</strong>形态;③ 拉伸 3 个月无改善 → 印证非肌肉问题。</p>
+            <p><b>A 错</b>:已经拉伸 3 个月无改善,且被动也卡,说明根本不是肌肉问题。继续拉伸只会浪费时间,甚至可能撕裂唇盂。</p>
+            <p><b>C
+                不完全对</b>:虽然关节松动对关节囊限制有效,但本例的根因是<strong>骨形状</strong>(髋臼深、前倾角大),不是关节囊。盲目做各方向松动没用,甚至可能松掉本就需要的稳定性。可以做特定方向的松动,但前提是先识别骨性限制。
+            </p>
+            <p><b>D 错</b>:骨折和肿瘤会有剧烈疼痛、夜间痛、负重痛等红旗症状,本例是<strong>特定角度卡住+钝痛</strong>,典型的力学撞击,不是病理性的。但 FAI
+              长期不管可能发展为唇盂撕裂,建议运动医学随访。</p>
+            <p><b>正确处理</b>:① 站距加宽到肩宽 1.5 倍,脚尖外八 25-35°,让股骨颈"避开"髋臼前缘;② 用箱蹲控制深度,只蹲到不卡的位置;③ 加强臀中肌/臀大肌,提供动态稳定;④
+              如果疼痛持续或加重,转诊运动医学医生评估是否需要手术纠正骨形状。</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 9. footer -->
+    <div class="footer">
+      <b>阶段一 · 第 1/8 周 · 今日早间理论(工作日 6:00)</b><br>
+      Day 4 · 关节面形状与运动学 · 中午 12:00 推配套<strong>应用题</strong>(深蹲时髋与膝的运动学差异)<br>
+      健身学习计划 · 双证备考(NASM / ACE)
+    </div>
+
+  </div>
+
+  <script>
+    // 核心要点折叠
+    document.querySelectorAll('ul.kp>li>.kp-head').forEach(function (h) {
+      h.addEventListener('click', function () { h.parentElement.classList.toggle('open') });
+    });
+
+    // 单选
+    function pick(el, type) {
+      var item = el.parentElement;
+      item.querySelectorAll('.opt').forEach(function (o) { o.classList.remove('correct', 'wrong-show') });
+      el.classList.add(type === 'correct' ? 'correct' : 'wrong-show');
+    }
+    // 多选
+    function pickMulti(el) {
+      if (el.classList.contains('correct') || el.classList.contains('wrong-show')) {
+        el.classList.remove('correct'); el.classList.remove('wrong-show');
+      } else {
+        el.classList.add(el.dataset.c === '1' ? 'correct' : 'wrong-show');
+      }
+    }
+  </script>
+</body>
+
+</html>
