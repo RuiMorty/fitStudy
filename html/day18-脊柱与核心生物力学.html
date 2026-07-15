@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 18 · 脊柱与核心生物力学</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.75;background:#f6f8f7;color:#1a2b22;padding:18px}.wrap{max-width:980px;margin:auto}.header{text-align:center;padding:24px 10px}.header h1{margin:0 0 10px;font-size:2rem;background:linear-gradient(90deg,#0ea66b,#0ea5e9);-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:0}.sub{color:#5a6b62}.chips{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:10px}.chip{font-size:.78rem;border:1px solid #d4ebe0;border-radius:999px;padding:3px 10px;background:#fff;color:#0c6da3}.panel,.figure,.warn{background:#fff;border:1px solid #e2e8e4;border-radius:14px;padding:18px;margin:14px 0;box-shadow:0 2px 12px rgba(20,40,30,.06)}.lead{border-left:4px solid #0ea66b}.orange{border-left:4px solid #ea7a17}.figure img{width:100%;display:block;border-radius:12px;border:1px solid #e2e8e4;background:#fbfdfc;cursor:zoom-in}.caption{font-size:.85rem;color:#5a6b62;margin-top:8px;text-align:center}.panel h2,.warn h2{font-size:1.18rem;margin:0 0 10px;color:#0a7d52}.term{font-weight:700;color:#0a7d52;background:#e8f5ee;border-radius:5px;padding:1px 5px}ul.kp{list-style:none;padding:0;margin:0}ul.kp>li{border-bottom:1px dashed #e2e8e4}.kp-head{display:block;cursor:pointer;position:relative;padding:13px 8px 13px 30px}.kp-head:before{content:"▸";position:absolute;left:8px;color:#0ea66b;font-weight:800;transition:.2s}.open>.kp-head:before{transform:rotate(90deg)}.kp-head:hover{background:#f0f4f2}.kp-body{display:none;padding:0 14px 16px 30px}.open>.kp-body{display:block}.dim{display:block;margin-top:10px;font-size:.78rem;font-weight:800;color:#0c6da3}.take{border-left:4px solid #0ea66b;background:#f0fbf5;border-radius:10px;padding:10px 12px;margin:10px 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin:12px 0}.mini{border:1px solid #dbe8e1;border-radius:12px;background:#fbfdfc;padding:12px}.mini h4{margin:0 0 7px;font-size:.98rem;color:#0a7d52}.tbl{width:100%;border-collapse:collapse;font-size:.9rem;margin:10px 0}.tbl th{background:#0ea66b;color:#fff;text-align:left}.tbl th,.tbl td{padding:8px;border-bottom:1px solid #e2e8e4;vertical-align:top}.warn{border-left:4px solid #e23b3b}.warn p{margin:8px 0}.mnemonic{background:linear-gradient(135deg,#0ea66b,#0ea5e9);color:#fff;border-radius:14px;padding:20px;margin:14px 0;box-shadow:0 2px 12px rgba(20,40,30,.08)}.mnemonic h2{margin:0 0 8px;font-size:1.15rem}.mnemonic strong{color:#fff7d6}.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}.flip{min-height:145px;perspective:800px;cursor:pointer}.flip-inner{position:relative;width:100%;height:100%;min-height:145px;transition:transform .5s;transform-style:preserve-3d}.flip.flipped .flip-inner{transform:rotateY(180deg)}.face{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:15px;border-radius:13px;border:1px solid #e2e8e4;backface-visibility:hidden;background:#fff;font-weight:700}.front{color:#0a7d52;background:#f8fffb}.back{transform:rotateY(180deg);background:#eef7ff;color:#0c6da3;font-weight:600}.quiz{border-top:1px dashed #e2e8e4;padding-top:12px;margin-top:12px}.quiz h3{margin:0 0 8px;font-size:1rem;color:#1a2b22}.opt{border:1px solid #e2e8e4;border-radius:10px;padding:9px 10px;margin:7px 0;background:#fff;cursor:pointer}.opt:hover{background:#f0f4f2}.lbl{font-weight:800;color:#0c6da3;margin-right:4px}.correct{border-color:#0ea66b!important;background:#e9f8f0!important}.wrong-show{border-color:#e23b3b!important;background:#fff0f0!important}button{border:0;border-radius:999px;background:#0ea66b;color:#fff;font-weight:800;padding:8px 14px;cursor:pointer;margin-top:6px}.reveal{display:none;border-left:4px solid #0ea5e9;background:#f0f8fc;border-radius:10px;padding:10px;margin-top:8px}.reveal.show{display:block}.list{padding-left:20px;margin:8px 0}.list li{margin:7px 0}footer{text-align:center;color:#5a6b62;font-size:.85rem;margin:22px 0}.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.82);display:none;align-items:center;justify-content:center;z-index:9;padding:18px}.lightbox.show{display:flex}.lightbox img{max-width:96vw;max-height:92vh;border-radius:10px;background:#fff}@media(max-width:640px){body{padding:10px}.header h1{font-size:1.5rem}.panel,.figure,.warn{padding:14px}.kp-body{padding-left:14px}.card-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="header">
+      <h1>Day 18 · 脊柱与核心生物力学</h1>
+      <div class="sub">今天主题: 用中立脊柱、腹内压和腰椎骨盆节律解释为什么硬拉要稳、不要圆背硬扛。</div>
+      <div class="chips"><span class="chip">第3周 · 阶段1基础科学</span><span class="chip">NSCA + NASM 双证</span><span class="chip">早间新知识</span></div>
+    </header>
+
+    <section class="panel lead">
+      <h2>一句话总结</h2>
+      <p>脊柱像一根有天然弯曲的承重塔，核心像包在塔外的可调压力罐: <strong>训练时不是把腰“锁死”，而是用腹内压、骨盆控制和中立脊柱把外力分散掉</strong>。负重屈曲会把压力集中到椎间盘和韧带，硬拉、深蹲、划船都要先会这个逻辑。</p>
+    </section>
+
+    <figure class="figure">
+      <img src="assets/阶段1基础科学/day18-脊柱与核心生物力学.png" alt="脊柱与核心生物力学中文标注学习图">
+      <div class="caption">看图重点: 中立脊柱不是完全笔直，而是保留自然生理曲度；腹内压和腰带帮助稳定，负重屈曲会增加椎间盘压力。</div>
+    </figure>
+
+    <section class="panel">
+      <h2>核心要点</h2>
+      <ul class="kp">
+        <li>
+          <span class="kp-head"><span class="term">中立脊柱</span>: 不是把背挺成直线，而是保留颈胸腰的自然曲度，让椎间盘和小关节受力更均匀。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 中立位是一个安全区间，不是一条毫米级标准线。</div>
+            <div class="grid">
+              <div class="mini"><h4>字面意思</h4><p>脊柱保持接近自然生理曲度，既不过度弓腰，也不过度圆背。</p></div>
+              <div class="mini"><h4>大白话</h4><p>像把弓形桥放回设计角度，桥拱能分散压力，不让某一块砖硬吃全部重量。</p></div>
+              <div class="mini"><h4>为什么影响训练</h4><p>大重量时，椎间盘、韧带、竖脊肌和深层核心一起承压，中立位能减少局部压力尖峰。</p></div>
+            </div>
+            <span class="dim">真实例子</span>
+            <p>硬拉准备位如果腰椎已经明显屈曲，拉起瞬间外力会把屈曲趋势继续放大；如果过度反弓，腰椎小关节压力也会升高。目标是肋骨、骨盆和腰椎在可控区间内一起移动。</p>
+            <span class="dim">训练含义</span>
+            <p>做深蹲、硬拉、划船、农夫走时，先问自己“肋骨有没有外翻、骨盆有没有乱跑、腰椎有没有被重量拉弯”。这比只喊“挺胸抬头”更准确。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为中立脊柱等于腰背完全笔直。✅其实人体脊柱本来有曲度，完全抹平曲度也不是更安全。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">腰椎骨盆节律</span>: 躯干前屈、后伸时，腰椎和骨盆要协调配合，不能让腰椎单独替髋关节干活。</span>
+          <div class="kp-body">
+            <div class="take">腰椎骨盆节律 = 腰椎弯曲和骨盆旋转的分工节奏。髋动不了，腰就容易被迫多动。</div>
+            <table class="tbl">
+              <tr><th>动作状态</th><th>正常分工</th><th>失控表现</th></tr>
+              <tr><td>髋铰链</td><td>骨盆向前倾，髋关节折叠，腰椎保持接近中立。</td><td>骨盆不动，腰椎圆背代偿。</td></tr>
+              <tr><td>深蹲下蹲</td><td>髋、膝、踝一起屈曲，骨盆随深度调整。</td><td>到底部骨盆突然后卷，出现 butt wink。</td></tr>
+              <tr><td>起身伸展</td><td>髋伸和躯干伸展同步完成。</td><td>先抬胸再挺腰，或腰先伸髋不动。</td></tr>
+            </table>
+            <span class="dim">真实例子</span>
+            <p>罗马尼亚硬拉不是“弯腰摸杠铃”，而是髋向后坐、骨盆随髋折叠，脊柱像一根稳定梁。动作深度应由腘绳肌张力、髋活动度和中立位控制共同决定。</p>
+            <span class="dim">训练含义</span>
+            <p>如果客户硬拉总圆背，先不要直接加竖脊肌训练。先检查髋铰链会不会做、腘绳肌是否限制、杠铃是否离身体太远。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为腰椎越灵活越好。✅腰椎需要一定活动度，但在负重训练中更重要的是可控和稳定，髋关节该承担大部分折叠任务。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">椎间盘受压</span>: 负重屈曲比中立负重更容易把压力集中到椎间盘前后结构，风险随重量和疲劳升高。</span>
+          <div class="kp-body">
+            <div class="take">椎间盘像夹在椎体之间的软垫。它能承压，但怕在大重量下被反复压偏、剪切和扭转。</div>
+            <div class="grid">
+              <div class="mini"><h4>字面意思</h4><p>椎体上下压向椎间盘，椎间盘内部压力上升。</p></div>
+              <div class="mini"><h4>大白话</h4><p>像按一块果冻垫，正中压较均匀，弯着压更容易把压力挤向一侧。</p></div>
+              <div class="mini"><h4>考试重点</h4><p>NSCA/NASM 常把负重屈曲、旋转和疲劳放在损伤风险情境中考。</p></div>
+            </div>
+            <span class="dim">真实例子</span>
+            <p>硬拉最后几次如果髋伸不动、背开始圆，重量仍然往下拉，腰椎屈曲力矩变大。此时不是“意志力问题”，而是组织承压和控制能力已经接近上限。</p>
+            <span class="dim">训练含义</span>
+            <p>训练中允许轻微姿势波动，但不应把明显圆背当成常规技术。尤其是新手、疲劳组、速度下降明显时，应降重或停止。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为所有脊柱屈曲都危险。✅日常屈曲不是问题，问题是高负荷、高疲劳、反复屈曲或屈曲加旋转叠加。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">腹内压</span>: 腹腔内压力像躯干内部气柱，能和核心肌群一起抵抗脊柱被压弯或扭转。</span>
+          <div class="kp-body">
+            <div class="take">腹内压不是“憋到脸红”，而是呼吸、膈肌、腹横肌、骨盆底和腹斜肌共同制造的稳定压力。</div>
+            <table class="tbl">
+              <tr><th>结构</th><th>像什么</th><th>训练作用</th></tr>
+              <tr><td>膈肌</td><td>压力罐上盖。</td><td>吸气下降，帮助腹腔建立压力。</td></tr>
+              <tr><td>骨盆底</td><td>压力罐底部。</td><td>承托压力，避免只向下顶。</td></tr>
+              <tr><td>腹横肌/腹斜肌</td><td>罐壁。</td><td>围住腹腔，抵抗伸展和旋转。</td></tr>
+              <tr><td>竖脊肌/多裂肌</td><td>后侧支架。</td><td>维持椎间稳定和抗屈曲。</td></tr>
+            </table>
+            <span class="dim">真实例子</span>
+            <p>深蹲前吸气到腹部和侧腰，再像准备被人轻推肚子一样撑住。你会感觉躯干变成一个整体，而不是只靠下背硬顶。</p>
+            <span class="dim">训练含义</span>
+            <p>大重量用短暂屏气和支撑能提高稳定性；轻中等训练可以练习吸气、撑腹、维持肋骨不过度外翻。核心训练目标是把压力用在稳定上，而不是只做卷腹次数。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为收腹越用力越稳定。✅很多时候要“向四周撑开”，不是把肚子吸瘪。吸瘪会减少可用压力罐空间。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">举重腰带</span>: 腰带不是替你发力，而是给腹部一个可撑的外壁，帮助腹内压更稳定。</span>
+          <div class="kp-body">
+            <div class="take">腰带像给压力罐外面加一圈硬边。你仍然要主动撑腹，否则腰带只是装饰。</div>
+            <div class="grid">
+              <div class="mini"><h4>什么时候有用</h4><p>接近大重量、低次数、深蹲硬拉等轴向或髋铰链负荷高的动作。</p></div>
+              <div class="mini"><h4>什么时候不必依赖</h4><p>技术学习、轻重量、核心控制训练、需要自然呼吸节奏的耐力训练。</p></div>
+              <div class="mini"><h4>怎么用</h4><p>腰带紧到能撑住但还能吸气，把腹部和侧腰向腰带四周撑开。</p></div>
+            </div>
+            <span class="dim">真实例子</span>
+            <p>硬拉 5RM 时腰带可以提供触觉反馈，让你更容易维持腹压和中立位。空杆学髋铰链时过早戴腰带，可能掩盖动作控制问题。</p>
+            <span class="dim">训练含义</span>
+            <p>腰带是增强稳定的工具，不是修复动作错误的工具。圆背、杠铃离身体远、髋膝节奏乱，戴腰带也不能自动解决。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为腰带会让核心变弱。✅合理使用不会让核心偷懒，因为你必须主动撑腹才能让腰带工作；滥用才会让技术学习变差。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">抗伸展/抗屈曲/抗旋转</span>: 核心真正常见任务是抵抗外力改变脊柱位置，而不是反复把脊柱卷来卷去。</span>
+          <div class="kp-body">
+            <div class="take">核心像车身稳定系统，任务不是一直制造动作，而是在外力来时保持车身不乱摆。</div>
+            <table class="tbl">
+              <tr><th>核心任务</th><th>外力想让你怎样</th><th>训练例子</th></tr>
+              <tr><td>抗伸展</td><td>腰被拉成反弓。</td><td>平板支撑、死虫、健腹轮退阶。</td></tr>
+              <tr><td>抗屈曲</td><td>背被重量压圆。</td><td>硬拉、农夫走、前蹲。</td></tr>
+              <tr><td>抗旋转</td><td>躯干被拉着转。</td><td>Pallof press、单侧农夫走。</td></tr>
+              <tr><td>抗侧屈</td><td>身体被单侧重量拉歪。</td><td>单手提壶铃走、侧桥。</td></tr>
+            </table>
+            <span class="dim">真实例子</span>
+            <p>Pallof press 中，绳索从侧面拉你旋转。动作价值不在于手推出多远，而在于肋骨、骨盆和脊柱能不能保持正对前方。</p>
+            <span class="dim">训练含义</span>
+            <p>核心训练应覆盖“抗”的方向。只做卷腹容易忽略抗旋转、抗侧屈和抗屈曲能力，而这些能力更贴近负重训练和运动场景。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为核心训练等于腹肌燃烧感。✅核心能力更像稳定输出质量，感觉酸不等于脊柱控制好。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">动作策略</span>: 保护脊柱不是怕负重，而是让负重路径、髋关节、腹压和中立位配合起来。</span>
+          <div class="kp-body">
+            <div class="take">技术判断顺序: 负重是否贴近身体 → 髋是否主导折叠 → 腹压是否建立 → 脊柱是否保持可控区间。</div>
+            <table class="tbl">
+              <tr><th>场景</th><th>重点提示</th><th>为什么</th></tr>
+              <tr><td>硬拉</td><td>杠铃贴近小腿，髋向后，背保持长。</td><td>缩短外力线到腰椎的力臂，减少腰椎屈曲力矩。</td></tr>
+              <tr><td>深蹲</td><td>肋骨压住，骨盆别突然后卷。</td><td>避免底部腰椎从中立区间突然进入屈曲。</td></tr>
+              <tr><td>俯身划船</td><td>先建立髋铰链和躯干角度，再拉。</td><td>否则背部主项会变成腰椎耐力测试。</td></tr>
+              <tr><td>农夫走</td><td>像把头顶往上拉，肋骨骨盆叠住。</td><td>训练抗屈曲、抗侧屈和腹压维持。</td></tr>
+            </table>
+            <span class="dim">训练含义</span>
+            <p>新手先学无负重髋铰链和呼吸支撑，再上杠铃。进阶者也要用速度下降、姿势明显变形、腹压掉掉这些信号判断是否该停止本组。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为“腰不能动”才安全。✅脊柱可以动，但在高负重训练中，腰椎不应成为主要发力和代偿来源。</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="warn">
+      <h2>常见误区</h2>
+      <p>❌很多人以为中立脊柱就是背完全打直。✅其实中立是保留自然曲度的安全区间，不是把腰椎曲度抹掉。</p>
+      <p>❌很多人以为腰带能保护所有腰。✅其实腰带只能帮助建立腹压，不能修复圆背、杠铃离身太远和髋铰链不会做。</p>
+      <p>❌很多人以为核心越酸越强。✅核心在大多数训练里更重要的是抗伸展、抗屈曲、抗旋转和抗侧屈的稳定能力。</p>
+    </section>
+
+    <section class="mnemonic">
+      <h2>记忆口诀</h2>
+      <p><strong>脊柱保自然，骨盆配腰弯；腹压像气罐，腰带只是墙；负重要贴身，圆背别硬扛。</strong></p>
+    </section>
+
+    <section class="panel">
+      <h2>翻转卡复习</h2>
+      <div class="card-grid">
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">中立脊柱是完全笔直吗?</div><div class="face back">不是。是保留自然生理曲度的可控区间。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">腰椎骨盆节律看什么?</div><div class="face back">看腰椎屈伸和骨盆旋转是否协调。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">负重屈曲风险来自哪里?</div><div class="face back">椎间盘压力、剪切力和控制失效叠加。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">腹内压像什么?</div><div class="face back">像躯干内部压力罐，帮助稳定脊柱。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">腰带真正作用?</div><div class="face back">提供外壁和反馈，帮助腹部向外撑压。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">Pallof press 练什么核心能力?</div><div class="face back">抗旋转，抵抗绳索把躯干拉转。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">硬拉保护腰第一步?</div><div class="face back">杠铃贴近身体，缩短到腰椎的力臂。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">核心训练只做卷腹够吗?</div><div class="face back">不够。还要练抗伸展、抗屈曲、抗旋转、抗侧屈。</div></div></div>
+      </div>
+    </section>
+
+    <section class="panel orange">
+      <h2>实操关联</h2>
+      <ul class="list">
+        <li><strong>增肌:</strong> 俯身划船、罗马尼亚硬拉要先稳定脊柱，否则目标肌还没练够，腰椎先疲劳。</li>
+        <li><strong>减脂:</strong> 循环训练疲劳时最容易腹压掉、圆背和耸肩，动作质量比堆动作数量更重要。</li>
+        <li><strong>爆发:</strong> 跳跃、抓举、高翻等动作需要躯干刚性传力，核心软掉会让力量漏在腰椎和骨盆控制上。</li>
+        <li><strong>耐力:</strong> 长跑或骑行中的骨盆位置和躯干控制会影响腰背疲劳，核心不是只为大重量服务。</li>
+        <li><strong>康复:</strong> 腰背不适人群先练呼吸支撑、死虫、鸟狗、髋铰链，再逐步回到负重动作。</li>
+        <li><strong>考试:</strong> 看到“负重屈曲、腰带、腹内压、中立脊柱、Pallof press”，优先联想到脊柱稳定和核心抗外力。</li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2>练习题</h2>
+      <div class="quiz">
+        <h3>1. 单选: 中立脊柱最准确的理解是?</h3>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">A.</span>脊柱完全拉直，没有任何曲度</div>
+        <div class="opt" onclick="pick(this,'correct')"><span class="lbl">B.</span>保留自然曲度，并处在可控受力区间</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">C.</span>腰越反弓越安全</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">D.</span>只要不疼就一定是中立位</div>
+        <button onclick="showAns('ans1')">查看解析</button>
+        <div class="reveal" id="ans1">答案 B。中立脊柱不是完全笔直，而是保留自然生理曲度并能承受当前负荷。A 抹掉曲度，C 过度反弓会增加小关节压力，D 把疼痛当唯一标准，训练判断太粗糙。</div>
+      </div>
+      <div class="quiz">
+        <h3>2. 单选: 腰带最主要的作用是?</h3>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">A.</span>替代核心肌肉发力</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">B.</span>让腰椎可以随便圆背</div>
+        <div class="opt" onclick="pick(this,'correct')"><span class="lbl">C.</span>给腹部外撑反馈，帮助建立腹内压</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">D.</span>让所有训练都更安全</div>
+        <button onclick="showAns('ans2')">查看解析</button>
+        <div class="reveal" id="ans2">答案 C。腰带像压力罐外壁，核心仍要主动撑住。A 错在替代，B 错在把腰带当免死牌，D 错在绝对化；技术错误和过度负荷仍会带来风险。</div>
+      </div>
+      <div class="quiz">
+        <h3>3. 多选: 哪些情况会提高负重训练中的腰椎风险?</h3>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">A.</span>杠铃离身体很远，腰椎力臂变长</div>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">B.</span>疲劳后明显圆背继续冲次数</div>
+        <div class="opt" onclick="pickMulti(this)"><span class="lbl">C.</span>保留自然曲度并建立腹压</div>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">D.</span>负重屈曲再叠加旋转</div>
+        <button onclick="showAns('ans3')">查看解析</button>
+        <div class="reveal" id="ans3">答案 A、B、D。杠铃离身会增加外力线到腰椎的力臂；疲劳圆背说明控制下降；负重屈曲加旋转会把压力和剪切叠加。C 是风险控制策略，不是风险来源。</div>
+      </div>
+      <div class="quiz">
+        <h3>4. 案例题: 客户硬拉时每次离地后腰先圆，臀腿没感觉。怎么处理?</h3>
+        <button onclick="showAns('ans4')">查看解析</button>
+        <div class="reveal" id="ans4">先降重量或暂停重拉。按顺序检查: 杠铃是否贴近小腿，髋是否向后坐，腘绳肌是否过早拉紧，吸气撑腹是否建立，肋骨和骨盆是否叠住。训练上可退阶到髋铰链靠墙、PVC 三点接触、壶铃硬拉或架上硬拉。目标不是“强行挺腰”，而是让髋主导折叠，核心保持中立区间，杠铃路径贴近身体。</div>
+      </div>
+    </section>
+
+    <footer>阶段1基础科学 · Day 18/112 · 今日早间新知识(工作日6:00) · 中午12:00复习巩固</footer>
+  </main>
+  <div class="lightbox" id="lightbox"><img alt="放大学习图"></div>
+  <script>
+    document.querySelectorAll('ul.kp>li>.kp-head').forEach(function(h){h.addEventListener('click',function(){h.parentElement.classList.toggle('open')});});
+    function pick(el,type){el.closest('.quiz').querySelectorAll('.opt').forEach(function(o){o.classList.remove('correct','wrong-show')});el.classList.add(type==='correct'?'correct':'wrong-show');}
+    function pickMulti(el){if(el.classList.contains('correct')||el.classList.contains('wrong-show')){el.classList.remove('correct','wrong-show');}else{el.classList.add(el.dataset.c==='1'?'correct':'wrong-show');}}
+    function showAns(id){document.getElementById(id).classList.add('show');}
+    var lb=document.getElementById('lightbox');var lbImg=lb.querySelector('img');document.querySelectorAll('.figure img').forEach(function(img){img.addEventListener('click',function(){lbImg.src=img.src;lb.classList.add('show');});});lb.addEventListener('click',function(e){if(e.target===lb){lb.classList.remove('show');lbImg.src='';}});document.addEventListener('keydown',function(e){if(e.key==='Escape'){lb.classList.remove('show');lbImg.src='';}});
+  </script>
+</body>
+</html>

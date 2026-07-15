@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 15 中午复习 · 生物力学基本概念与力</title>
+  <style>
+    :root{--paper:#fff;--ink:#1a2b22;--muted:#5a6b62;--line:#e2e8e4;--green:#0ea66b;--blue:#0ea5e9;--orange:#ea7a17;--rose:#e23b3b}
+    *{box-sizing:border-box}
+    body{margin:0;background:#f6f8f7;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.75;padding:18px}
+    a{color:inherit}
+    .wrap{max-width:980px;margin:auto}
+    .hero{text-align:center;padding:26px 10px}
+    .hero:before{content:"中午复习 · Day 15";display:inline-block;font-size:.78rem;font-weight:800;color:#0c6da3;background:#e8f4fb;border:1px solid #cfe8f8;border-radius:999px;padding:4px 12px;margin-bottom:10px}
+    .hero h1{margin:0 0 10px;font-size:2rem;background:linear-gradient(90deg,var(--green),var(--blue));-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:0}
+    .sub{color:var(--muted);margin:0 auto;max-width:820px}
+    .chips{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:12px}
+    .chip{font-size:.78rem;border:1px solid #d4ebe0;border-radius:999px;padding:3px 10px;background:#fff;color:#0c6da3;font-weight:700}
+    .section,.card,footer{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px;margin:14px 0;box-shadow:0 2px 12px rgba(20,40,30,.06)}
+    .section h2{font-size:1.18rem;margin:0 0 12px;color:#0a7d52}
+    .fresh{border-left:4px solid var(--green)}
+    .ebbinghaus{border-left:4px solid var(--blue)}
+    .mistakes{border-left:4px solid var(--rose)}
+    .thumb,.mini-img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:10px;border:1px solid var(--line);background:#f0f4f2;display:block;margin:8px 0}
+    .source{display:inline-block;margin-top:8px;color:#0c6da3;text-decoration:none;font-weight:800}
+    .source:hover{text-decoration:underline}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:12px}
+    .card{margin:0;display:block}
+    .card h3{margin:0 0 8px;color:#0a7d52;font-size:1rem}
+    .meta{font-size:.8rem;color:var(--muted);margin-bottom:8px;font-weight:500}
+    .card ul{margin:8px 0 0;padding-left:18px}
+    .card li{margin:5px 0}
+    .mnemonic{border-radius:12px;padding:12px;background:#e8f5ee;color:#0a7d52;font-weight:800;margin:10px 0}
+    .q{background:#f8fffb;border:1px solid #dbe8e1;border-radius:12px;padding:13px;margin:10px 0}
+    .q p{margin:0 0 8px}
+    button{border:0;border-radius:8px;background:var(--green);color:#fff;font-weight:700;padding:7px 12px;cursor:pointer}
+    .answer{display:none;border-left:4px solid var(--blue);background:#f0f8fc;border-radius:10px;padding:10px;margin-top:9px}
+    .answer.show{display:block}
+    .compare{width:100%;border-collapse:collapse;font-size:.92rem}
+    .compare th{background:var(--green);color:#fff;text-align:left}
+    .compare th,.compare td{padding:9px;border-bottom:1px solid var(--line);vertical-align:top}
+    .review-box{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px}
+    .note{border-left:4px solid var(--orange);background:#fffaf3;border-radius:10px;padding:10px}
+    footer{text-align:center;color:var(--muted);font-size:.84rem;margin:22px 0}
+    @media(max-width:640px){body{padding:12px}.hero h1{font-size:1.55rem}.section,.card{padding:14px}.thumb,.mini-img{height:auto}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="hero">
+      <h1>Day 15 中午复习 · 生物力学基本概念与力</h1>
+      <p class="sub">目标：把早上生物力学新知识压缩成可回忆框架，同时回拉 Day14、Day12、Day08、Day01。今天不推进进度，只复习。</p>
+      <div class="chips">
+        <span class="chip">今日新知识 Day15</span>
+        <span class="chip">1天 Day14</span>
+        <span class="chip">3天 Day12</span>
+        <span class="chip">7天 Day08</span>
+        <span class="chip">14天 Day01</span>
+      </div>
+    </header>
+
+    <section class="section fresh">
+      <h2>今日新知识速复盘</h2>
+      <article class="card">
+        <div class="meta">今天早上 · Day 15 · 今日新知识</div>
+        <h3>Day 15 · 生物力学基本概念与力</h3>
+        <img class="thumb" src="thumbs/day15-biomechanics-force-basics-thumbnail.png" alt="Day15 生物力学基本概念与力缩略图">
+        <p>生物力学把动作翻译成物理语言：力改变运动状态，质量越大越难加速，方向决定有效分量，摩擦让脚和手不打滑，重心位置决定稳定性。</p>
+        <p>先抓一条线：训练动作不是只有“用力大小”，还要问力往哪走、合力是否超过阻力、斜向力如何分解、支撑面和重心是否让身体能稳住。</p>
+        <a class="source" href="day15-生物力学基本概念与力.html">打开 Day15 原学习页 →</a>
+      </article>
+      <div class="mnemonic"><strong>口诀：</strong>力等质量乘加速，方向错了效率输；斜力拆成双分量，摩擦抓稳不打滑；重心落在支撑内，动作才稳能传力。</div>
+    </section>
+
+    <section class="section ebbinghaus">
+      <h2>艾宾浩斯复习区（1/3/7/14天）</h2>
+      <div class="grid">
+        <article class="card">
+          <div class="meta">1天前 · Day 14 · 间隔复习</div>
+          <img class="mini-img" src="thumbs/day14-week2-recap-thumbnail.png" alt="Day14 第2周复盘缩略图">
+          <h3>Day 14 · 第2周复盘-本体感觉/肌纤维/肌群/收缩</h3>
+          <ul>
+            <li>本体感觉给位置、长度、张力反馈；肌纤维决定输出倾向；肌群负责动作；收缩类型描述阶段。</li>
+            <li>肌梭看长度和速度，GTO 看张力；I 型耐疲劳，II 型偏力量速度。</li>
+            <li>向心缩短、离心拉长、等长不变；SSC 完整机制留到 Day76。</li>
+          </ul>
+          <a class="source" href="day14-第2周复盘-本体感觉肌纤维肌群收缩.html">复看原页</a>
+        </article>
+        <article class="card">
+          <div class="meta">3天前 · Day 12 · 间隔复习</div>
+          <img class="mini-img" src="thumbs/day12-core-mcgill-functions-thumbnail.png" alt="Day12 核心肌群缩略图">
+          <h3>Day 12 · 主要肌群-核心肌群与McGill核心功能分类</h3>
+          <ul>
+            <li>腹直肌屈曲，腹斜肌旋转和侧屈，腹横肌维持腹内压，竖脊肌伸展，多裂肌稳定椎间。</li>
+            <li>McGill 核心功能四类：抗伸展、抗旋转、抗侧屈、抗屈曲。</li>
+            <li>核心训练目标多是抗外力维持中立，不是反复做脊柱屈伸。</li>
+          </ul>
+          <a class="source" href="day12-主要肌群-核心肌群与McGill核心功能分类.html">复看原页</a>
+        </article>
+        <article class="card">
+          <div class="meta">7天前 · Day 8 · 间隔复习</div>
+          <img class="mini-img" src="thumbs/day08-proprioception-vestibular-thumbnail.png" alt="Day08 本体感觉缩略图">
+          <h3>Day 8 · 本体感觉与前庭系统</h3>
+          <ul>
+            <li>肌梭感受肌肉长度变化和速度，快速拉长触发牵张反射。</li>
+            <li>GTO 感受肌腱张力，参与自生抑制和保护机制。</li>
+            <li>关节感受器反馈关节位置，前庭系统帮助头部位置和平衡控制。</li>
+          </ul>
+          <a class="source" href="day08-本体感觉与前庭系统.html">复看原页</a>
+        </article>
+        <article class="card">
+          <div class="meta">14天前 · Day 1 · 间隔复习</div>
+          <img class="mini-img" src="thumbs/day01-skeletal-system-thumbnail.png" alt="Day01 骨学基础缩略图">
+          <h3>Day 1 · 骨学基础-骨骼系统总览</h3>
+          <ul>
+            <li>骨骼功能：支持、保护、造血、储存钙磷，也作为肌肉发力杠杆。</li>
+            <li>骨分类：长骨、短骨、扁骨、不规则骨；分区：中轴骨和附肢骨。</li>
+            <li>Wolff 定律：骨会沿长期受力方向重塑，训练负荷要渐进。</li>
+          </ul>
+          <a class="source" href="day01-骨学基础-骨骼系统总览.html">复看原页</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>主动回忆题</h2>
+      <div class="q"><p><b>今日新知识 Day 15：</b>牛顿第二定律 F=ma 放到硬拉离地瞬间怎么解释？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">杠铃从静止变运动需要向上合力超过重力并产生加速度。重量越大，想获得同样加速度需要更大力；重重量速度慢，也可能已经需要很高输出。</div></div>
+      <div class="q"><p><b>今日新知识 Day 15：</b>为什么“力大”不一定等于“目标肌刺激好”？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">力是矢量，有大小也有方向。方向、关节角度、力臂和稳定性会决定有效分量落在哪个关节和肌群；方向错，主观用力大也可能变成代偿或关节压力。</div></div>
+      <div class="q"><p><b>Day 14：</b>用一句话区分肌梭和 GTO，并说出对应训练意义。</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">肌梭在肌腹感受长度和拉伸速度，帮助牵张反射；GTO 在肌腱感受张力，参与自生抑制和保护。跳跃、PNF、SMR 都会用到这些机制。</div></div>
+      <div class="q"><p><b>Day 14：</b>深蹲下降、底部停顿、起立分别对应哪类收缩？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">下降时股四头肌和臀肌多为离心控制，底部停顿是等长稳定，起立是向心发力。判断标准是目标肌长度变化，不是身体是否向上或向下。</div></div>
+      <div class="q"><p><b>Day 12：</b>McGill 核心功能四类是什么？平板支撑和 Pallof press 分别偏哪类？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">四类是抗伸展、抗旋转、抗侧屈、抗屈曲。平板支撑主要偏抗伸展，Pallof press 主要偏抗旋转，重点都是维持中立和传力。</div></div>
+      <div class="q"><p><b>Day 12：</b>为什么“核心强=卷腹多”这个说法不完整？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">卷腹主要训练脊柱屈曲能力，但很多训练和运动场景需要核心抗外力、维持中立、传递上下肢力量。反复屈曲还可能增加椎间盘压力，不等于全面核心稳定。</div></div>
+      <div class="q"><p><b>Day 8：</b>快速预拉伸为什么可能提升起跳表现？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">快速预拉伸会刺激肌梭感受长度和速度变化，触发牵张反射；同时 SSC 可储存并释放弹性势能。前提是动作节奏和关节对线可控。</div></div>
+      <div class="q"><p><b>Day 8：</b>客户单腿落地总不稳，你从哪些感觉系统考虑？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">看肌梭、GTO、关节感受器和前庭系统是否能提供足够反馈，并观察足踝、膝、髋、躯干对线。训练从低速控制、单脚稳定、落地制动逐步进阶。</div></div>
+      <div class="q"><p><b>Day 1：</b>骨骼四大功能是什么？哪一个和力量训练渐进负荷关系最大？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">四大功能是支持、保护、造血、矿物储存。渐进负荷最直接关联骨的力学适应和 Wolff 定律：骨会根据长期机械应力重塑。</div></div>
+      <div class="q"><p><b>Day 1：</b>中轴骨和附肢骨怎么分？为什么动作分析要先有这张骨架地图？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">中轴骨包括颅骨、脊柱、胸廓；附肢骨包括肩带、骨盆带和四肢。动作分析要知道骨和关节坐标，才能理解肌肉起止点、杠杆、稳定和传力路径。</div></div>
+    </section>
+
+    <section class="section mistakes">
+      <h2>错因辨析</h2>
+      <table class="compare">
+        <tr><th>易错点</th><th>错因</th><th>修正句</th></tr>
+        <tr><td>把力当成主观用力感</td><td>没把力和加速度、方向联系起来。</td><td>力是改变运动状态的矢量，既看大小也看方向。</td></tr>
+        <tr><td>只看器械重量</td><td>忽略力臂、关节角度和绳索方向。</td><td>目标肌承受的是和动作结构有关的有效分量，不是重量片数字本身。</td></tr>
+        <tr><td>摩擦只理解为阻碍</td><td>没看到摩擦提供抓握和地面反作用力传递条件。</td><td>脚底和手掌需要足够摩擦，动作才不会打滑，力才能传出去。</td></tr>
+        <tr><td>核心只练卷腹</td><td>把核心理解成腹直肌屈曲。</td><td>核心训练常要抗伸展、抗旋转、抗侧屈、抗屈曲，维持中立传力。</td></tr>
+        <tr><td>骨只当静态支架</td><td>忘记骨会承载、传力和重塑。</td><td>骨是活组织，负荷方向和进阶速度都会影响适应。</td></tr>
+      </table>
+    </section>
+
+    <section class="section">
+      <h2>今日复盘</h2>
+      <div class="review-box">
+        <div class="note"><strong>30 秒默写：</strong>F=ma、矢量、力的分解、摩擦、重力、重心各一句训练解释。</div>
+        <div class="note"><strong>动作拆解：</strong>用硬拉说明重力向下、地面反作用力向上、髋膝伸展输出、重心落在支撑面内。</div>
+        <div class="note"><strong>旧知连接：</strong>用 Day01 骨杠杆 + Day12 核心稳定 + Day15 力方向，解释为什么硬拉背要保持中立。</div>
+        <div class="note"><strong>错题回看：</strong>力方向错回看 Day15；感受器错回看 Day08/14；核心功能错回看 Day12；骨架地图错回看 Day01。</div>
+      </div>
+    </section>
+
+    <footer>Fitness Study · Day 15/112 · 中午12:00复习推送 · 仅复习，不推进进度</footer>
+  </main>
+  <script>
+    function showAnswer(btn){btn.nextElementSibling.classList.toggle("show")}
+  </script>
+</body>
+</html>

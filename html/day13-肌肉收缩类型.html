@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 13 · 肌肉收缩类型</title>
+  <style>
+    *{box-sizing:border-box}
+    body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.75;background:#f6f8f7;color:#1a2b22;padding:18px}
+    .wrap{max-width:980px;margin:auto}.header{text-align:center;padding:24px 10px}
+    .header h1{margin:0 0 10px;font-size:2rem;background:linear-gradient(90deg,#0ea66b,#0ea5e9);-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:0}
+    .sub{color:#5a6b62}.chips{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:10px}
+    .chip{font-size:.78rem;border:1px solid #d4ebe0;border-radius:999px;padding:3px 10px;background:#fff;color:#0c6da3}
+    .panel,.figure,.warn{background:#fff;border:1px solid #e2e8e4;border-radius:14px;padding:18px;margin:14px 0;box-shadow:0 2px 12px rgba(20,40,30,.06)}
+    .lead{border-left:4px solid #0ea66b}.orange{border-left:4px solid #ea7a17}
+    .figure img{width:100%;display:block;border-radius:12px;border:1px solid #e2e8e4;background:#fbfdfc;cursor:zoom-in}
+    .caption{font-size:.85rem;color:#5a6b62;margin-top:8px;text-align:center}
+    .panel h2,.warn h2{font-size:1.18rem;margin:0 0 10px;color:#0a7d52}
+    .term{font-weight:700;color:#0a7d52;background:#e8f5ee;border-radius:5px;padding:1px 5px}
+    ul.kp{list-style:none;padding:0;margin:0}ul.kp>li{border-bottom:1px dashed #e2e8e4}
+    .kp-head{display:block;cursor:pointer;position:relative;padding:13px 8px 13px 30px}.kp-head:before{content:"▸";position:absolute;left:8px;color:#0ea66b;font-weight:800;transition:.2s}
+    .open>.kp-head:before{transform:rotate(90deg)}.kp-head:hover{background:#f0f4f2}.kp-body{display:none;padding:0 14px 16px 30px}.open>.kp-body{display:block}
+    .dim{display:block;margin-top:10px;font-size:.78rem;font-weight:800;color:#0c6da3}.take{border-left:4px solid #0ea66b;background:#f0fbf5;border-radius:10px;padding:10px 12px;margin:10px 0}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin:12px 0}.mini{border:1px solid #dbe8e1;border-radius:12px;background:#fbfdfc;padding:12px}.mini h4{margin:0 0 7px;font-size:.98rem;color:#0a7d52}
+    .tag{display:inline-block;font-size:.74rem;font-weight:800;color:#0c6da3;background:#e8f4fb;border-radius:999px;padding:2px 8px;margin-right:5px}
+    .tbl{width:100%;border-collapse:collapse;font-size:.9rem;margin:10px 0}.tbl th{background:#0ea66b;color:#fff;text-align:left}.tbl th,.tbl td{padding:8px;border-bottom:1px solid #e2e8e4;vertical-align:top}
+    .warn{border-left:4px solid #e23b3b}.warn p{margin:8px 0}
+    .mnemonic{background:linear-gradient(135deg,#0ea66b,#0ea5e9);color:#fff;border-radius:14px;padding:20px;margin:14px 0;box-shadow:0 2px 12px rgba(20,40,30,.08)}
+    .mnemonic h2{margin:0 0 8px;font-size:1.15rem}.mnemonic strong{color:#fff7d6}
+    .card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}.flip{min-height:145px;perspective:800px;cursor:pointer}.flip-inner{position:relative;width:100%;height:100%;min-height:145px;transition:transform .5s;transform-style:preserve-3d}.flip.flipped .flip-inner{transform:rotateY(180deg)}
+    .face{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:15px;border-radius:13px;border:1px solid #e2e8e4;backface-visibility:hidden;background:#fff;font-weight:700}.front{color:#0a7d52;background:#f8fffb}.back{transform:rotateY(180deg);background:#eef7ff;color:#0c6da3;font-weight:600}
+    .quiz{border-top:1px dashed #e2e8e4;padding-top:12px;margin-top:12px}.quiz h3{margin:0 0 8px;font-size:1rem;color:#1a2b22}.opt{border:1px solid #e2e8e4;border-radius:10px;padding:9px 10px;margin:7px 0;background:#fff;cursor:pointer}.opt:hover{background:#f0f4f2}.lbl{font-weight:800;color:#0c6da3;margin-right:4px}
+    .correct{border-color:#0ea66b!important;background:#e9f8f0!important}.wrong-show{border-color:#e23b3b!important;background:#fff0f0!important}.selected{border-color:#0ea5e9;background:#eef7ff}
+    button{border:0;border-radius:999px;background:#0ea66b;color:#fff;font-weight:800;padding:8px 14px;cursor:pointer;margin-top:6px}.reveal{display:none;border-left:4px solid #0ea5e9;background:#f0f8fc;border-radius:10px;padding:10px;margin-top:8px}.reveal.show{display:block}
+    .list{padding-left:20px;margin:8px 0}.list li{margin:7px 0}footer{text-align:center;color:#5a6b62;font-size:.85rem;margin:22px 0}
+    .lightbox{position:fixed;inset:0;background:rgba(0,0,0,.82);display:none;align-items:center;justify-content:center;z-index:9;padding:18px}.lightbox.show{display:flex}.lightbox img{max-width:96vw;max-height:92vh;border-radius:10px;background:#fff}
+    @media(max-width:640px){body{padding:10px}.header h1{font-size:1.5rem}.panel,.figure,.warn{padding:14px}.kp-body{padding-left:14px}.card-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="header">
+      <h1>Day 13 · 肌肉收缩类型</h1>
+      <div class="sub">今天主题: 向心、离心、等长、等动，以及 SSC 牵张-缩短循环只做概念入门。</div>
+      <div class="chips">
+        <span class="chip">第2周 · 阶段1基础科学</span>
+        <span class="chip">NSCA + NASM 双证</span>
+        <span class="chip">早间新知识</span>
+      </div>
+    </header>
+
+    <section class="panel lead">
+      <h2>一句话总结</h2>
+      <p>肌肉收缩看两件事: <strong>有没有产生张力</strong>、<strong>肌肉长度怎么变</strong>。缩短发力叫向心，拉长但仍控制叫离心，长度不变但顶住外力叫等长；SSC 是“先快速离心储能，再立刻向心释放”的弹簧式发力。</p>
+    </section>
+
+    <figure class="figure">
+      <img src="assets/阶段1基础科学/day13-肌肉收缩类型.png" alt="肌肉收缩类型中文标注图">
+      <div class="caption">看图重点: 同样是产生张力，肌肉可以缩短、延长或维持长度不变；SSC 把离心和向心连续接起来。</div>
+    </figure>
+
+    <section class="panel">
+      <h2>核心要点</h2>
+      <ul class="kp">
+        <li>
+          <span class="kp-head"><span class="term">收缩</span>: 不等于变短，而是肌肉产生张力。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 考试看到“contraction”不要自动翻译成缩短。肌肉只要在发力产生张力，就属于收缩状态。</div>
+            <div class="grid">
+              <div class="mini"><h4>字面意思</h4><p>肌肉收缩指肌肉主动产生张力，长度可能缩短、变长或不变。</p></div>
+              <div class="mini"><h4>大白话</h4><p>像你拉绳子。你可以把绳子拉近，也可以被别人拉走但你还在控，也可以双方僵持不动。</p></div>
+              <div class="mini"><h4>考试价值</h4><p>NSCA/NASM 常用动作阶段判断收缩类型，如深蹲下降是离心，起立是向心，底部停顿是等长。</p></div>
+            </div>
+            <span class="dim">常见误解</span>
+            <p>❌以为只有肌肉变短才叫收缩。✅其实离心收缩时肌肉在变长，但它仍然主动产生张力控制外力。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">向心收缩</span>: 肌肉缩短并产生张力，通常负责把重量举起来。</span>
+          <div class="kp-body">
+            <span class="dim">底层机制</span>
+            <p>横桥循环让肌动蛋白和肌球蛋白相对滑动，肌小节整体缩短，肌肉长度变短。二头弯举向上时，肱二头肌缩短并带动肘关节屈曲。</p>
+            <span class="dim">真实例子</span>
+            <p>深蹲起立时股四头肌和臀大肌向心发力；卧推推起杠铃时胸大肌、三角肌前束和肱三头肌向心发力。</p>
+            <span class="dim">训练含义</span>
+            <p>向心阶段常决定“能不能完成动作”。速度越快、负荷越大，向心输出越难维持，所以最后几次常卡在推起或站起阶段。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为向心阶段一定要爆发越快越好。✅其实目标不同节奏不同；力量和爆发可快推，技术学习和增肌可用可控速度。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">离心收缩</span>: 肌肉延长但仍产生张力，通常负责刹车和控制下降。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 离心不是“放松下去”，而是有控制地被拉长。它像刹车系统，保护关节并储存一部分弹性能量。</div>
+            <table class="tbl">
+              <tr><th>动作</th><th>离心阶段</th><th>主要感觉</th></tr>
+              <tr><td>二头弯举</td><td>哑铃下降，肱二头肌变长</td><td>上臂前侧仍在用力控制速度</td></tr>
+              <tr><td>深蹲</td><td>身体下蹲，股四头肌和臀肌被拉长</td><td>下肢像刹车一样控制重心下降</td></tr>
+              <tr><td>俯卧撑</td><td>身体下降，胸大肌和肱三头肌被拉长</td><td>不能砸向地面，要慢慢降</td></tr>
+            </table>
+            <span class="dim">训练含义</span>
+            <p>离心通常能承受更大张力，也更容易造成延迟性酸痛。初学者、恢复期或新动作不要突然加入大量慢离心和超负荷离心。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为下降越慢一定越好。✅其实慢离心会增加张力时间和疲劳，适合特定目标，不适合所有训练日都堆满。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">等长收缩</span>: 肌肉长度不变但维持张力，负责稳住姿势和关节位置。</span>
+          <div class="kp-body">
+            <span class="dim">底层机制</span>
+            <p>外力和肌肉产生的力大致平衡，关节角度不明显改变。肌肉不是休息，而是在持续输出张力维持位置。</p>
+            <span class="dim">真实例子</span>
+            <p>平板支撑时腹直肌、腹横肌和臀肌等长工作，避免腰椎伸展；深蹲底部停 2 秒时，髋膝周围肌群也在等长维持姿势。</p>
+            <span class="dim">训练含义</span>
+            <p>等长训练能帮助学习稳定、突破薄弱角度、减少动作中乱晃。康复里常用低痛感等长收缩，先恢复张力耐受。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为静止动作没有训练效果。✅其实只要张力足够，等长也能提高局部耐力、关节稳定和特定角度力量。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">等动收缩</span>: 全程速度恒定，通常需要专用器械控制。</span>
+          <div class="kp-body">
+            <div class="grid">
+              <div class="mini"><h4>字面意思</h4><p>等动 = 速度相等。无论你用多大力，机器把关节运动速度限制在设定值。</p></div>
+              <div class="mini"><h4>大白话</h4><p>像机器给你装了限速器，你用力越大，机器给的阻力越大，但速度不变。</p></div>
+              <div class="mini"><h4>考试价值</h4><p>等动常出现在测试和康复设备中，不是普通哑铃、杠铃、弹力带训练的常见收缩类型。</p></div>
+            </div>
+            <span class="dim">真实例子</span>
+            <p>等速肌力测试仪可以让膝关节伸展以固定角速度完成，用来比较左右侧股四头肌力量或康复进度。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为跑步机匀速跑就是等动收缩。✅其实等动说的是肌肉/关节在阻力设备控制下恒定角速度收缩，不是人移动速度恒定。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">SSC</span>: Stretch-Shortening Cycle，先离心预拉伸，再立刻向心发力。</span>
+          <div class="kp-body">
+            <div class="take">本日只掌握概念名: SSC = 牵张-缩短循环。完整三阶段和训练安排留到 Day 76 增强式训练再展开。</div>
+            <span class="dim">字面意思</span>
+            <p>Stretch 是牵张，Shortening 是缩短，Cycle 是连续循环。肌肉和肌腱先被快速拉长，再马上缩短发力。</p>
+            <span class="dim">大白话</span>
+            <p>像弹簧先被压一下，马上松开就弹得更高。跳跃前快速下蹲再起跳，通常比完全静止起跳更有力。</p>
+            <span class="dim">为什么影响训练/考试</span>
+            <p>SSC 把离心和向心连成一个高效发力过程，涉及弹性势能和牵张反射。今天只需会识别: 跳深、反向跳、快速变向都用到 SSC。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为蹲得越深、停得越久 SSC 越强。✅其实 SSC 关键是快速离心后短时间转换；停太久会损失弹性势能。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">动作阶段分析</span>: 先看目标肌长度变化，再判断关节运动和外力方向。</span>
+          <div class="kp-body">
+            <table class="tbl">
+              <tr><th>分析步骤</th><th>怎么问自己</th><th>例子</th></tr>
+              <tr><td>1. 找目标肌</td><td>题目问哪块肌肉?</td><td>二头弯举问肱二头肌，不是全身所有肌肉。</td></tr>
+              <tr><td>2. 看长度变化</td><td>它在变短、变长，还是不变?</td><td>哑铃上升时肱二头肌变短，哑铃下降时变长。</td></tr>
+              <tr><td>3. 看是否控重</td><td>下降是否有主动控制?</td><td>有控制下降是离心；直接松手不是有效离心训练。</td></tr>
+              <tr><td>4. 看停顿</td><td>姿势不动但是否顶住外力?</td><td>墙蹲停住、平板支撑、深蹲底部停顿多为等长。</td></tr>
+            </table>
+            <span class="dim">训练含义</span>
+            <p>会分析阶段，就能写训练节奏。比如 3-1-1 表示离心 3 秒、底部等长 1 秒、向心 1 秒，用来控制技术和张力时间。</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="warn">
+      <h2>常见误区</h2>
+      <p>❌很多人以为离心就是肌肉放松。✅其实离心是肌肉主动产生张力并被拉长，重点是控制外力。</p>
+      <p>❌很多人以为等长没有关节运动就没有训练价值。✅其实等长能强化稳定、特定角度力量和姿势控制。</p>
+      <p>❌很多人把 SSC 当成任何连续动作。✅其实 SSC 关键是快速牵张后立刻缩短，转换时间太长效果会下降。</p>
+    </section>
+
+    <section class="mnemonic">
+      <h2>记忆口诀</h2>
+      <p><strong>缩短向心举起来，拉长离心慢刹车；不动等长稳住它，等动机器限速度；先拉再缩叫 SSC。</strong></p>
+    </section>
+
+    <section class="panel">
+      <h2>翻转卡复习</h2>
+      <div class="card-grid">
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">收缩一定代表变短吗?</div><div class="face back">不一定。收缩指产生张力，长度可缩短、延长或不变。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">弯举上升阶段?</div><div class="face back">肱二头肌向心收缩，肌肉缩短并屈肘。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">弯举下降阶段?</div><div class="face back">肱二头肌离心收缩，肌肉延长并控制重量。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">平板支撑腹肌怎么工作?</div><div class="face back">多为等长收缩，长度基本不变但维持张力。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">等动收缩常见在哪里?</div><div class="face back">等速测试和康复设备，普通自由重量不常见。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">SSC 全称?</div><div class="face back">Stretch-Shortening Cycle，牵张-缩短循环。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">反向跳为何常更高?</div><div class="face back">快速离心预拉伸后立刻向心，利用 SSC。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">3-1-1 节奏怎么读?</div><div class="face back">离心 3 秒、停顿等长 1 秒、向心 1 秒。</div></div></div>
+      </div>
+    </section>
+
+    <section class="panel orange">
+      <h2>实操关联</h2>
+      <ul class="list">
+        <li><strong>增肌:</strong> 用可控离心增加张力时间，但不要每组都超慢，否则疲劳和酸痛会影响总训练量。</li>
+        <li><strong>减脂:</strong> 循环训练疲劳后，离心控制最容易丢；下降砸地说明重量或速度该降。</li>
+        <li><strong>爆发:</strong> 跳跃、冲刺、快速变向依赖 SSC；先练落地控制，再练快速转换。</li>
+        <li><strong>耐力:</strong> 长时间跑步下坡会增加股四头肌离心负担，酸痛常比平路明显。</li>
+        <li><strong>康复:</strong> 疼痛期常先用低强度等长建立张力耐受，再逐步加入离心和向心。</li>
+        <li><strong>技术学习:</strong> 停顿深蹲用底部等长减少反弹，让你真正控制姿势和关节位置。</li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2>练习题</h2>
+      <div class="quiz">
+        <h3>1. 单选: 二头弯举把哑铃从下方向上举起时，肱二头肌主要属于哪类收缩?</h3>
+        <div class="opt" onclick="pick(this,'correct')"><span class="lbl">A.</span>向心收缩</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">B.</span>离心收缩</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">C.</span>等长收缩</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">D.</span>等动收缩</div>
+        <button onclick="showAns('ans1')">查看解析</button>
+        <div class="reveal" id="ans1">答案 A。哑铃上升时肘关节屈曲，肱二头肌缩短并产生张力。B 是控制下降，C 是角度不变但发力，D 需要专用等速设备。</div>
+      </div>
+      <div class="quiz">
+        <h3>2. 单选: 平板支撑中，腹部肌群主要任务是什么?</h3>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">A.</span>快速向心缩短</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">B.</span>完全放松省力</div>
+        <div class="opt" onclick="pick(this,'correct')"><span class="lbl">C.</span>等长维持张力</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">D.</span>等动控制速度</div>
+        <button onclick="showAns('ans2')">查看解析</button>
+        <div class="reveal" id="ans2">答案 C。平板支撑没有明显躯干屈伸，但腹肌要持续产生张力避免腰椎塌陷。A 没有明显缩短，B 会塌腰，D 不是普通自重训练特征。</div>
+      </div>
+      <div class="quiz">
+        <h3>3. 多选: 下列哪些描述符合离心收缩?</h3>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">A.</span>肌肉延长但仍主动产生张力</div>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">B.</span>常用于控制重量下降或身体减速</div>
+        <div class="opt" onclick="pickMulti(this)"><span class="lbl">C.</span>一定代表肌肉完全放松</div>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">D.</span>可能带来更明显延迟性酸痛</div>
+        <button onclick="showAns('ans3')">查看解析</button>
+        <div class="reveal" id="ans3">答案 A、B、D。离心是主动控制中的延长，不是放松。它常用于刹车，张力和肌肉损伤刺激可较高，所以新手需要控制剂量。</div>
+      </div>
+      <div class="quiz">
+        <h3>4. 案例题: 学员做深蹲，下降 3 秒、底部停 1 秒、起立 1 秒。请判断股四头肌三个阶段。</h3>
+        <button onclick="showAns('ans4')">查看解析</button>
+        <div class="reveal" id="ans4">下降 3 秒: 股四头肌离心收缩，控制膝关节屈曲和重心下降。底部停 1 秒: 股四头肌等长收缩，维持膝关节角度。起立 1 秒: 股四头肌向心收缩，伸膝把身体推起。这个节奏可写作 3-1-1。</div>
+      </div>
+    </section>
+
+    <footer>阶段1基础科学 · Day 13/112 · 今日早间新知识(工作日6:00) · 中午12:00复习巩固</footer>
+  </main>
+  <div class="lightbox" id="lightbox"><img alt="放大图"></div>
+  <script>
+    document.querySelectorAll('ul.kp>li>.kp-head').forEach(function(h){h.addEventListener('click',function(){h.parentElement.classList.toggle('open')});});
+    document.querySelectorAll('.figure img').forEach(function(img){img.addEventListener('click',function(){var lb=document.getElementById('lightbox');lb.querySelector('img').src=img.src;lb.classList.add('show');});});
+    document.getElementById('lightbox').addEventListener('click',function(){this.classList.remove('show');});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape')document.getElementById('lightbox').classList.remove('show');});
+    function pick(el,type){el.closest('.quiz').querySelectorAll('.opt').forEach(function(o){o.classList.remove('correct','wrong-show')});el.classList.add(type==='correct'?'correct':'wrong-show');}
+    function pickMulti(el){if(el.classList.contains('correct')||el.classList.contains('wrong-show')){el.classList.remove('correct');el.classList.remove('wrong-show');}else{el.classList.add(el.dataset.c==='1'?'correct':'wrong-show');}}
+    function showAns(id){document.getElementById(id).classList.add('show');}
+  </script>
+</body>
+</html>

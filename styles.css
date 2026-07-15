@@ -147,18 +147,25 @@ a {
 
 .search-box input {
   width: 100%;
-  height: 38px;
+  height: 32px;
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
   background: var(--bg-input);
   color: var(--text);
   outline: 0;
-  padding: 0 32px;
-  font-size: 13px;
+  padding: 0 46px 0 38px;
+  font-size: 11px;
 }
 
 .search-box input:focus {
   border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-muted);
+}
+
+/* Keep one clear action: Chrome/Safari add one to search inputs by default. */
+.search-box input::-webkit-search-cancel-button,
+.search-box input::-webkit-search-decoration {
+  appearance: none;
 }
 
 .search-icon,
@@ -170,19 +177,36 @@ a {
 }
 
 .search-icon {
-  left: 11px;
+  left: 13px;
+  font-size: 20px;
+  line-height: 1;
 }
 
 .clear-search {
   right: 8px;
   display: none;
-  padding: 2px 5px;
-  font-size: 18px;
-  line-height: 1;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  padding: 0;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
 }
 
 .clear-search.visible {
   display: block;
+}
+
+.clear-search:hover,
+.clear-search:focus-visible {
+  background: var(--border);
+  color: var(--text);
+}
+
+.clear-search:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
 }
 
 .filter-section h2 {
@@ -225,17 +249,19 @@ a {
 
 .select-wrap {
   position: relative;
+  border-radius: var(--radius-md);
+  background: var(--bg-surface);
 }
 
 .select-wrap::after {
   content: "";
   position: absolute;
-  right: 12px;
+  right: 14px;
   top: 50%;
   width: 7px;
   height: 7px;
-  border-bottom: 2px solid var(--faint);
-  border-right: 2px solid var(--faint);
+  border-bottom: 2px solid var(--muted);
+  border-right: 2px solid var(--muted);
   pointer-events: none;
   transform: translateY(-65%) rotate(45deg);
 }
@@ -246,10 +272,10 @@ select {
   appearance: none;
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
-  background: var(--bg-surface);
+  background: transparent;
   color: var(--text);
   outline: 0;
-  padding: 0 34px 0 12px;
+  padding: 0 38px 0 12px;
   font-size: 13px;
   font-weight: 600;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
@@ -257,6 +283,7 @@ select {
 
 select:hover {
   border-color: var(--border-strong);
+  background: var(--bg-input);
 }
 
 select:focus {
@@ -631,11 +658,16 @@ select:focus {
   padding: 14px;
 }
 
+.atlas-layout.atlas-static {
+  grid-template-columns: 1fr;
+}
+
 .atlas-figure {
   position: relative;
   justify-self: center;
   width: 100%;
   max-width: 640px;
+  aspect-ratio: 655 / 865;
   overflow: hidden;
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
@@ -645,20 +677,23 @@ select:focus {
 }
 
 .atlas-figure img {
-  display: block;
+  position: absolute;
+  inset: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: fill;
 }
 
 .hotspot-layer {
   position: absolute;
-  inset: 0;
+  pointer-events: none;
 }
 
 .muscle-hotspot {
   position: absolute;
-  width: 26px;
-  height: 26px;
+  pointer-events: auto;
+  width: 22px;
+  height: 22px;
   border: 2px solid rgba(255, 255, 255, 0.92);
   border-radius: 999px;
   background: rgba(255, 90, 31, 0.92);
@@ -668,7 +703,7 @@ select:focus {
 
 .muscle-hotspot span {
   position: absolute;
-  inset: 5px;
+  inset: 4px;
   border-radius: inherit;
   background: white;
   opacity: 0.9;
@@ -677,7 +712,7 @@ select:focus {
 .muscle-hotspot::after {
   content: "";
   position: absolute;
-  inset: -9px;
+  inset: -7px;
   border: 1px solid rgba(255, 90, 31, 0.36);
   border-radius: inherit;
 }

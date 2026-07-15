@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fitness Study · 健身知识库</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=atlas-anatomy-3" />
   </head>
   <body>
     <div class="app-shell">
@@ -35,7 +35,7 @@
           <section class="filter-section">
             <h2>阶段</h2>
             <div class="select-wrap">
-              <select id="phaseFilter" aria-label="选择阶段"></select>
+              <select id="phaseFilter" aria-label="按学习阶段筛选"></select>
             </div>
           </section>
 
@@ -49,12 +49,12 @@
       <main class="main-content">
         <header class="main-header">
           <div>
-            <div class="kicker">112 Day Library</div>
-            <h1>健身知识库</h1>
-            <p>按理论、证书、阶段和主题检索；已有详情页可直接弹窗阅读。</p>
+            <div class="kicker" id="headerKicker">112 Day Library</div>
+            <h1 id="headerTitle">健身知识库</h1>
+            <p id="headerDescription">按理论、证书、阶段和主题检索；已有详情页可直接弹窗阅读。</p>
           </div>
           <div class="quick-links">
-            <a href="html/review-day11-主要肌群-上肢肌功能分群.html">最新复习</a>
+            <a id="headerAction" href="html/review-day21-第3周复盘-生物力学.html">最新复习</a>
           </div>
         </header>
 
@@ -125,6 +125,6 @@
       </article>
     </div>
 
-    <script src="app.js"></script>
+    <script src="app.js?v=atlas-anatomy-3"></script>
   </body>
 </html>

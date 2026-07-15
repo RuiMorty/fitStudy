@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 16 中午复习 · 杠杆系统与力矩</title>
+  <style>
+    :root{--paper:#fff;--ink:#1a2b22;--muted:#5a6b62;--line:#e2e8e4;--green:#0ea66b;--blue:#0ea5e9;--orange:#ea7a17;--rose:#e23b3b}
+    *{box-sizing:border-box}
+    body{margin:0;background:#f6f8f7;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.75;padding:18px}
+    a{color:inherit}
+    .wrap{max-width:980px;margin:auto}
+    .hero{text-align:center;padding:26px 10px}
+    .hero:before{content:"中午复习 · Day 16";display:inline-block;font-size:.78rem;font-weight:800;color:#0c6da3;background:#e8f4fb;border:1px solid #cfe8f8;border-radius:999px;padding:4px 12px;margin-bottom:10px}
+    .hero h1{margin:0 0 10px;font-size:2rem;background:linear-gradient(90deg,var(--green),var(--blue));-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:0}
+    .sub{color:var(--muted);margin:0 auto;max-width:820px}
+    .chips{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:12px}
+    .chip{font-size:.78rem;border:1px solid #d4ebe0;border-radius:999px;padding:3px 10px;background:#fff;color:#0c6da3;font-weight:700}
+    .section,.card,footer{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px;margin:14px 0;box-shadow:0 2px 12px rgba(20,40,30,.06)}
+    .section h2{font-size:1.18rem;margin:0 0 12px;color:#0a7d52}
+    .fresh{border-left:4px solid var(--green)}
+    .ebbinghaus{border-left:4px solid var(--blue)}
+    .mistakes{border-left:4px solid var(--rose)}
+    .thumb,.mini-img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:10px;border:1px solid var(--line);background:#f0f4f2;display:block;margin:8px 0}
+    .source{display:inline-block;margin-top:8px;color:#0c6da3;text-decoration:none;font-weight:800}
+    .source:hover{text-decoration:underline}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:12px}
+    .card{margin:0;display:block}
+    .card h3{margin:0 0 8px;color:#0a7d52;font-size:1rem}
+    .meta{font-size:.8rem;color:var(--muted);margin-bottom:8px;font-weight:500}
+    .card ul{margin:8px 0 0;padding-left:18px}
+    .card li{margin:5px 0}
+    .mnemonic{border-radius:12px;padding:12px;background:#e8f5ee;color:#0a7d52;font-weight:800;margin:10px 0}
+    .q{background:#f8fffb;border:1px solid #dbe8e1;border-radius:12px;padding:13px;margin:10px 0}
+    .q p{margin:0 0 8px}
+    button{border:0;border-radius:8px;background:var(--green);color:#fff;font-weight:700;padding:7px 12px;cursor:pointer}
+    .answer{display:none;border-left:4px solid var(--blue);background:#f0f8fc;border-radius:10px;padding:10px;margin-top:9px}
+    .answer.show{display:block}
+    .compare{width:100%;border-collapse:collapse;font-size:.92rem}
+    .compare th{background:var(--green);color:#fff;text-align:left}
+    .compare th,.compare td{padding:9px;border-bottom:1px solid var(--line);vertical-align:top}
+    .review-box{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px}
+    .note{border-left:4px solid var(--orange);background:#fffaf3;border-radius:10px;padding:10px}
+    footer{text-align:center;color:var(--muted);font-size:.84rem;margin:22px 0}
+    @media(max-width:640px){body{padding:12px}.hero h1{font-size:1.55rem}.section,.card{padding:14px}.thumb,.mini-img{height:auto}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="hero">
+      <h1>Day 16 中午复习 · 杠杆系统与力矩</h1>
+      <p class="sub">目标：把早上杠杆与力矩新知识压缩成可回忆框架，同时回拉 Day15、Day13、Day09、Day02。今天不推进进度，只复习。</p>
+      <div class="chips">
+        <span class="chip">今日新知识 Day16</span>
+        <span class="chip">1天 Day15</span>
+        <span class="chip">3天 Day13</span>
+        <span class="chip">7天 Day09</span>
+        <span class="chip">14天 Day02</span>
+      </div>
+    </header>
+
+    <section class="section fresh">
+      <h2>今日新知识速复盘</h2>
+      <article class="card">
+        <div class="meta">今天早上 · Day 16 · 今日新知识</div>
+        <h3>Day 16 · 杠杆系统与力矩</h3>
+        <img class="thumb" src="thumbs/day16-lever-torque-system-thumbnail.png" alt="Day16 杠杆系统与力矩缩略图">
+        <p>人体动作可以看成会移动的杠杆系统：关节是支点，肌肉附着处是力点，外部重量或身体重量是阻力点。动作难度不只看重量，还看力臂和阻力臂。</p>
+        <p>先抓公式：力矩 = 力 × 力臂。自由重量方向主要受重力控制，所以同一个哑铃在不同关节角度，阻力臂会变，最难点也会变。</p>
+        <a class="source" href="day16-杠杆系统与力矩.html">打开 Day16 原学习页 →</a>
+      </article>
+      <div class="mnemonic"><strong>口诀：</strong>支点看关节，力点看肌腱；阻力看重量，力臂看垂线；力矩力乘臂，三类位置辨；人体多三类，费力换速度。</div>
+    </section>
+
+    <section class="section ebbinghaus">
+      <h2>艾宾浩斯复习区（1/3/7/14天）</h2>
+      <div class="grid">
+        <article class="card">
+          <div class="meta">1天前 · Day 15 · 间隔复习</div>
+          <img class="mini-img" src="thumbs/day15-biomechanics-force-basics-thumbnail.png" alt="Day15 生物力学基本概念与力缩略图">
+          <h3>Day 15 · 生物力学基本概念与力</h3>
+          <ul>
+            <li>力/质量/加速度：牛顿第二定律 F=ma，质量越大，同样加速度需要更大力。</li>
+            <li>力是矢量，方向决定有效分量；斜向力可拆成水平和垂直分量。</li>
+            <li>摩擦影响抓握和地面反作用力，重心位置影响平衡与稳定。</li>
+          </ul>
+          <a class="source" href="day15-生物力学基本概念与力.html">复看原页</a>
+        </article>
+        <article class="card">
+          <div class="meta">3天前 · Day 13 · 间隔复习</div>
+          <img class="mini-img" src="thumbs/day13-muscle-contraction-types-thumbnail.png" alt="Day13 肌肉收缩类型缩略图">
+          <h3>Day 13 · 肌肉收缩类型</h3>
+          <ul>
+            <li>收缩不等于变短，而是肌肉产生张力；长度可缩短、变长或不变。</li>
+            <li>向心缩短，离心拉长但控制外力，等长维持长度，等动需专用器械。</li>
+            <li>SSC 是快速离心接向心，利用弹性势能；完整机制留到 Day76。</li>
+          </ul>
+          <a class="source" href="day13-肌肉收缩类型.html">复看原页</a>
+        </article>
+        <article class="card">
+          <div class="meta">7天前 · Day 9 · 间隔复习</div>
+          <img class="mini-img" src="thumbs/day09-muscle-fiber-types-thumbnail.png" alt="Day09 肌纤维类型缩略图">
+          <h3>Day 9 · 肌纤维类型与特性</h3>
+          <ul>
+            <li>I 型慢氧化：慢收缩、低力量、抗疲劳，线粒体和毛细血管丰富。</li>
+            <li>IIa 型速度力量中等且较抗疲劳；IIx/IIb 型速度快、力量高、易疲劳。</li>
+            <li>训练能改变 II 型亚型表现，不能把 IIa 直接说成变成 I 型。</li>
+          </ul>
+          <a class="source" href="day09-肌纤维类型与特性.html">复看原页</a>
+        </article>
+        <article class="card">
+          <div class="meta">14天前 · Day 2 · 间隔复习</div>
+          <img class="mini-img" src="thumbs/day02-bony-landmarks-thumbnail.png" alt="Day02 主要骨性标志缩略图">
+          <h3>Day 2 · 主要骨性标志与骨骼辨识</h3>
+          <ul>
+            <li>上肢关键点：肩峰、喙突、鹰嘴、桡骨茎突，用于体表定位和动作观察。</li>
+            <li>下肢关键点：髂前上棘、坐骨结节、大转子、胫骨粗隆。</li>
+            <li>骨标志帮助定位肌肉起止点、皮褶测量点，也避免把髂前上棘和髂嵴混淆。</li>
+          </ul>
+          <a class="source" href="day02-主要骨性标志与骨骼辨识.html">复看原页</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>主动回忆题</h2>
+      <div class="q"><p><b>今日新知识 Day 16：</b>杠杆三要素是什么？用二头弯举各对应哪里？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">三要素是支点、力点、阻力点。二头弯举中肘关节是支点，肱二头肌肌腱附着附近是力点，手中哑铃和前臂重量是阻力点。</div></div>
+      <div class="q"><p><b>今日新知识 Day 16：</b>力矩公式是什么？为什么侧平举在手臂接近水平时最难？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">力矩 = 力 × 力臂。侧平举接近水平时，哑铃重力线到肩关节的垂直距离最大，外部阻力矩最大，所以肩外展肌群最难。</div></div>
+      <div class="q"><p><b>Day 15：</b>为什么训练动作不能只看“重量多少”，还要看力的方向？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">力是矢量，有大小也有方向。绳索高度、身体角度和关节位置会改变有效分量；方向错，主观用力大也可能变成代偿或关节压力。</div></div>
+      <div class="q"><p><b>Day 15：</b>硬拉里摩擦力和地面反作用力各有什么作用？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">摩擦力让脚不打滑、手能握住杠铃；地面反作用力来自脚推地后地面推回身体，帮助髋膝伸展并把力传到杠铃。</div></div>
+      <div class="q"><p><b>Day 13：</b>深蹲下降、底部停顿、起立分别属于哪类收缩？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">下降时股四头肌和臀肌多为离心控制，底部停顿是等长稳定，起立是向心发力。判断标准是目标肌长度变化。</div></div>
+      <div class="q"><p><b>Day 13：</b>为什么“收缩”不等于肌肉一定变短？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">收缩指肌肉产生张力。离心时肌肉被拉长但仍主动控制外力，等长时长度不变但仍维持张力，所以收缩不只等于缩短。</div></div>
+      <div class="q"><p><b>Day 9：</b>I 型、IIa 型、IIx/IIb 型肌纤维各自关键词是什么？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">I 型慢、力量低、抗疲劳、氧化能力强；IIa 型速度力量中等偏高、兼具氧化和糖酵解；IIx/IIb 型速度快、力量高、易疲劳、爆发倾向强。</div></div>
+      <div class="q"><p><b>Day 9：</b>为什么不能说耐力训练把 IIa 直接训练成 I 型？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">关键澄清是 IIa 不会直接变成 I 型。训练主要改变代谢特性、募集效率和 II 型亚型之间的比例或表现，不应把适应说成完全换类型。</div></div>
+      <div class="q"><p><b>Day 2：</b>说出 4 个常见骨性标志，并说明它们为什么对私教有用。</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">例：肩峰、鹰嘴、髂前上棘、大转子。它们用于体表定位、动作观察、肌肉起止点推断、围度或皮褶测量点确认。</div></div>
+      <div class="q"><p><b>Day 2 场景题：</b>客户做姿势评估时，你把髂前上棘和髂嵴混淆，可能带来什么问题？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">会影响骨盆位置判断、体表定位和测量一致性，进而误判姿势偏差或训练调整方向。骨性标志必须先摸准再分析。</div></div>
+    </section>
+
+    <section class="section mistakes">
+      <h2>错因辨析</h2>
+      <table class="compare">
+        <tr><th>易错点</th><th>错因</th><th>修正句</th></tr>
+        <tr><td>把力臂当骨头长度</td><td>没看力作用线。</td><td>力臂是支点到力作用线的垂直距离，不等于骨头全长。</td></tr>
+        <tr><td>觉得轻重量一定安全</td><td>忽略长阻力臂放大关节力矩。</td><td>轻重量加长力臂也能形成很高外部力矩。</td></tr>
+        <tr><td>把三类杠杆按动作名字背</td><td>没画三点位置。</td><td>先找支点、力点、阻力点，再判断排列。</td></tr>
+        <tr><td>把人体第三类杠杆当缺点</td><td>只看省力，不看速度和幅度。</td><td>人体多第三类杠杆，牺牲力量换速度、活动范围和精细控制。</td></tr>
+        <tr><td>把等长理解成没有工作</td><td>只看外部动作是否移动。</td><td>等长没有明显位移，但肌肉仍在持续产生张力。</td></tr>
+      </table>
+    </section>
+
+    <section class="section">
+      <h2>今日复盘</h2>
+      <div class="review-box">
+        <div class="note"><strong>30 秒默写：</strong>支点、力点、阻力点、力矩公式、机械优势公式、人体常见杠杆类型。</div>
+        <div class="note"><strong>动作拆解：</strong>用二头弯举画出肘关节支点、肱二头肌力点、哑铃阻力点和外部阻力臂。</div>
+        <div class="note"><strong>旧知连接：</strong>用 Day15 力方向 + Day16 力矩解释为什么侧平举、前平举和绳索侧平举难点不同。</div>
+        <div class="note"><strong>错题回看：</strong>力臂错回 Day16；矢量/摩擦错回 Day15；收缩阶段错回 Day13；肌纤维和骨标志错回 Day09/Day02。</div>
+      </div>
+    </section>
+
+    <footer>Fitness Study · Day 16/112 · 中午12:00复习推送 · 仅复习，不推进进度</footer>
+  </main>
+  <script>
+    function showAnswer(btn){btn.nextElementSibling.classList.toggle("show")}
+  </script>
+</body>
+</html>

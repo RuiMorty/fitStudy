@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 17 · 动作的生物力学分析-动作模式</title>
+  <style>
+    * {
+      box-sizing: border-box
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+      line-height: 1.75;
+      background: #f6f8f7;
+      color: #1a2b22;
+      padding: 18px
+    }
+
+    .wrap {
+      max-width: 980px;
+      margin: auto
+    }
+
+    .header {
+      text-align: center;
+      padding: 24px 10px
+    }
+
+    .header h1 {
+      margin: 0 0 10px;
+      font-size: 2rem;
+      background: linear-gradient(90deg, #0ea66b, #0ea5e9);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      letter-spacing: 0
+    }
+
+    .sub {
+      color: #5a6b62
+    }
+
+    .chips {
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 10px
+    }
+
+    .chip {
+      font-size: .78rem;
+      border: 1px solid #d4ebe0;
+      border-radius: 999px;
+      padding: 3px 10px;
+      background: #fff;
+      color: #0c6da3
+    }
+
+    .panel,
+    .figure,
+    .warn {
+      background: #fff;
+      border: 1px solid #e2e8e4;
+      border-radius: 14px;
+      padding: 18px;
+      margin: 14px 0;
+      box-shadow: 0 2px 12px rgba(20, 40, 30, .06)
+    }
+
+    .lead {
+      border-left: 4px solid #0ea66b
+    }
+
+    .orange {
+      border-left: 4px solid #ea7a17
+    }
+
+    .figure img {
+      width: 100%;
+      display: block;
+      border-radius: 12px;
+      border: 1px solid #e2e8e4;
+      background: #fbfdfc;
+      cursor: zoom-in
+    }
+
+    .action-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px
+    }
+
+    .action-panel {
+      min-width: 0
+    }
+
+    .action-panel h3 {
+      margin: 0 0 8px;
+      color: #0a7d52;
+      font-size: 1.15rem
+    }
+
+    .action-panel img {
+      aspect-ratio: 4/5;
+      object-fit: cover;
+      object-position: center
+    }
+
+    .action-meta {
+      margin: 10px 0 0;
+      padding: 11px 12px;
+      border-left: 3px solid #0ea66b;
+      background: #f0fbf5;
+      font-size: .9rem
+    }
+
+    .action-meta p {
+      margin: 4px 0
+    }
+
+    .lower-visual {
+      aspect-ratio: 3/4;
+      border: 1px solid #e2e8e4;
+      border-radius: 12px;
+      background: #fbfdfc url("assets/阶段1基础科学/day17-动作的生物力学分析-动作模式-修正版-v4-亮蓝配色-3x4.png") center/contain no-repeat
+    }
+
+    .caption {
+      font-size: .85rem;
+      color: #5a6b62;
+      margin-top: 8px;
+      text-align: center
+    }
+
+    .panel h2,
+    .warn h2 {
+      font-size: 1.18rem;
+      margin: 0 0 10px;
+      color: #0a7d52
+    }
+
+    .term {
+      font-weight: 700;
+      color: #0a7d52;
+      background: #e8f5ee;
+      border-radius: 5px;
+      padding: 1px 5px
+    }
+
+    ul.kp {
+      list-style: none;
+      padding: 0;
+      margin: 0
+    }
+
+    ul.kp>li {
+      border-bottom: 1px dashed #e2e8e4
+    }
+
+    .kp-head {
+      display: block;
+      cursor: pointer;
+      position: relative;
+      padding: 13px 8px 13px 30px
+    }
+
+    .kp-head:before {
+      content: "▸";
+      position: absolute;
+      left: 8px;
+      color: #0ea66b;
+      font-weight: 800;
+      transition: .2s
+    }
+
+    .open>.kp-head:before {
+      transform: rotate(90deg)
+    }
+
+    .kp-head:hover {
+      background: #f0f4f2
+    }
+
+    .kp-body {
+      display: none;
+      padding: 0 14px 16px 30px
+    }
+
+    .open>.kp-body {
+      display: block
+    }
+
+    .dim {
+      display: block;
+      margin-top: 10px;
+      font-size: .78rem;
+      font-weight: 800;
+      color: #0c6da3
+    }
+
+    .take {
+      border-left: 4px solid #0ea66b;
+      background: #f0fbf5;
+      border-radius: 10px;
+      padding: 10px 12px;
+      margin: 10px 0
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 10px;
+      margin: 12px 0
+    }
+
+    .mini {
+      border: 1px solid #dbe8e1;
+      border-radius: 12px;
+      background: #fbfdfc;
+      padding: 12px
+    }
+
+    .mini h4 {
+      margin: 0 0 7px;
+      font-size: .98rem;
+      color: #0a7d52
+    }
+
+    .tbl {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .9rem;
+      margin: 10px 0
+    }
+
+    .tbl th {
+      background: #0ea66b;
+      color: #fff;
+      text-align: left
+    }
+
+    .tbl th,
+    .tbl td {
+      padding: 8px;
+      border-bottom: 1px solid #e2e8e4;
+      vertical-align: top
+    }
+
+    .warn {
+      border-left: 4px solid #e23b3b
+    }
+
+    .warn p {
+      margin: 8px 0
+    }
+
+    .mnemonic {
+      background: linear-gradient(135deg, #0ea66b, #0ea5e9);
+      color: #fff;
+      border-radius: 14px;
+      padding: 20px;
+      margin: 14px 0;
+      box-shadow: 0 2px 12px rgba(20, 40, 30, .08)
+    }
+
+    .mnemonic h2 {
+      margin: 0 0 8px;
+      font-size: 1.15rem
+    }
+
+    .mnemonic strong {
+      color: #fff7d6
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px
+    }
+
+    .flip {
+      min-height: 145px;
+      perspective: 800px;
+      cursor: pointer
+    }
+
+    .flip-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      min-height: 145px;
+      transition: transform .5s;
+      transform-style: preserve-3d
+    }
+
+    .flip.flipped .flip-inner {
+      transform: rotateY(180deg)
+    }
+
+    .face {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 15px;
+      border-radius: 13px;
+      border: 1px solid #e2e8e4;
+      backface-visibility: hidden;
+      background: #fff;
+      font-weight: 700
+    }
+
+    .front {
+      color: #0a7d52;
+      background: #f8fffb
+    }
+
+    .back {
+      transform: rotateY(180deg);
+      background: #eef7ff;
+      color: #0c6da3;
+      font-weight: 600
+    }
+
+    .quiz {
+      border-top: 1px dashed #e2e8e4;
+      padding-top: 12px;
+      margin-top: 12px
+    }
+
+    .quiz h3 {
+      margin: 0 0 8px;
+      font-size: 1rem;
+      color: #1a2b22
+    }
+
+    .opt {
+      border: 1px solid #e2e8e4;
+      border-radius: 10px;
+      padding: 9px 10px;
+      margin: 7px 0;
+      background: #fff;
+      cursor: pointer
+    }
+
+    .opt:hover {
+      background: #f0f4f2
+    }
+
+    .lbl {
+      font-weight: 800;
+      color: #0c6da3;
+      margin-right: 4px
+    }
+
+    .correct {
+      border-color: #0ea66b !important;
+      background: #e9f8f0 !important
+    }
+
+    .wrong-show {
+      border-color: #e23b3b !important;
+      background: #fff0f0 !important
+    }
+
+    button {
+      border: 0;
+      border-radius: 999px;
+      background: #0ea66b;
+      color: #fff;
+      font-weight: 800;
+      padding: 8px 14px;
+      cursor: pointer;
+      margin-top: 6px
+    }
+
+    .reveal {
+      display: none;
+      border-left: 4px solid #0ea5e9;
+      background: #f0f8fc;
+      border-radius: 10px;
+      padding: 10px;
+      margin-top: 8px
+    }
+
+    .reveal.show {
+      display: block
+    }
+
+    .list {
+      padding-left: 20px;
+      margin: 8px 0
+    }
+
+    .list li {
+      margin: 7px 0
+    }
+
+    footer {
+      text-align: center;
+      color: #5a6b62;
+      font-size: .85rem;
+      margin: 22px 0
+    }
+
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, .82);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 9;
+      padding: 18px
+    }
+
+    .lightbox img {
+      max-width: 96vw;
+      max-height: 92vh;
+      border-radius: 10px;
+      background: #fff
+    }
+
+    @media(max-width:640px) {
+      body {
+        padding: 10px
+      }
+
+      .header h1 {
+        font-size: 1.5rem
+      }
+
+      .panel,
+      .figure,
+      .warn {
+        padding: 14px
+      }
+
+      .action-grid {
+        grid-template-columns: 1fr
+      }
+
+      .kp-body {
+        padding-left: 14px
+      }
+
+      .card-grid {
+        grid-template-columns: 1fr
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+    <header class="header">
+      <h1>Day 17 · 动作的生物力学分析-动作模式</h1>
+      <div class="sub">今天主题: 把训练动作拆成关节、肌肉、链式结构、稳定需求和力矩。</div>
+      <div class="chips"><span class="chip">第3周 · 阶段1基础科学</span><span class="chip">NSCA + NASM 双证</span><span
+          class="chip">早间新知识</span></div>
+    </header>
+
+    <section class="panel lead">
+      <h2>一句话总结</h2>
+      <p>动作分析像看一台人体机器的传动路线:
+        <strong>先看关节怎么动，再看谁在发力，再判断远端固定还是自由，最后看稳定和力矩压力落在哪</strong>。这样你不会只记“深蹲练腿、划船练背”，而能解释为什么同一个动作换器械、换站姿、换负重位置后训练效果会变。
+      </p>
+    </section>
+
+    <figure class="figure">
+      <div class="lower-visual" role="img" aria-label="动作分析四步法、七大动作模式和开放链闭合链对比"></div>
+      <div class="caption">动作分析流程、七大模式及开放链与闭合链对比。</div>
+    </figure>
+
+    <section class="panel">
+      <h2>核心要点</h2>
+      <ul class="kp">
+        <li>
+          <span class="kp-head"><span class="term">七大动作模式</span>: 推、拉、深蹲、铰链、箭步、旋转、携带，是训练动作的基本分类框架。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 动作模式不是动作名字，而是身体主要在解决哪类力学任务。</div>
+            <table class="tbl">
+              <tr>
+                <th>模式</th>
+                <th>大白话</th>
+                <th>动作例子</th>
+              </tr>
+              <tr>
+                <td>推</td>
+                <td>把阻力推离身体。</td>
+                <td>卧推、俯卧撑、肩推。</td>
+              </tr>
+              <tr>
+                <td>拉</td>
+                <td>把阻力拉向身体。</td>
+                <td>划船、引体向上、高位下拉。</td>
+              </tr>
+              <tr>
+                <td>深蹲</td>
+                <td>髋膝踝一起弯再伸。</td>
+                <td>深蹲、腿举。</td>
+              </tr>
+              <tr>
+                <td>铰链</td>
+                <td>髋主导，躯干像门合页前倾。</td>
+                <td>硬拉、罗马尼亚硬拉。</td>
+              </tr>
+              <tr>
+                <td>箭步</td>
+                <td>单腿或分腿承重。</td>
+                <td>弓步、台阶上步。</td>
+              </tr>
+              <tr>
+                <td>旋转</td>
+                <td>躯干或髋肩产生转动。</td>
+                <td>药球转体、绳索伐木。</td>
+              </tr>
+              <tr>
+                <td>携带</td>
+                <td>带重量走路并保持姿势。</td>
+                <td>农夫走、单侧提壶铃走。</td>
+              </tr>
+            </table>
+            <span class="dim">真实例子</span>
+            <p>硬拉和深蹲都练下肢，但硬拉更偏髋铰链，髋伸和后链压力更大；深蹲更明显同时考验髋、膝、踝协同。</p>
+            <span class="dim">训练含义</span>
+            <p>做计划时按动作模式覆盖，比按“今天随便练几个器械”更完整。推多拉少会让肩胛控制和肩前侧压力失衡。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为动作模式等于肌肉部位。✅其实一个模式通常涉及多个关节和肌群，肌肉只是完成模式的工具。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">开放链</span>: 远端自由移动，例如腿举或坐姿腿屈伸时脚可以在空间里动。</span>
+          <div class="kp-body">
+            <div class="take">开放链 = 手或脚这类远端没有固定在地面或稳定表面上，动作更容易集中在某个关节。</div>
+            <span class="dim">底层机制</span>
+            <p>远端自由时，阻力常通过器械或哑铃直接作用到某一段肢体。身体不必把力量通过地面传回全身，所以多关节协同要求较低。</p>
+            <span class="dim">真实例子</span>
+            <p>坐姿腿屈伸中，小腿围绕膝关节伸直，脚端自由移动，主要挑战股四头肌和膝伸动作。哑铃弯举也是上肢开放链，手端拿着哑铃移动。</p>
+            <span class="dim">训练含义</span>
+            <p>开放链适合局部强化、肌肉感受、康复后期特定关节控制。但它不一定等于日常或运动场上的整体发力模式。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为开放链就是“不功能”。✅其实它很适合补短板，只是不能完全替代闭合链的整体控制。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">闭合链</span>: 远端固定，例如深蹲时脚固定在地面，身体相对远端移动。</span>
+          <div class="kp-body">
+            <div class="take">闭合链 = 远端固定，力量需要从地面、关节和躯干之间传递，协同和稳定要求更高。</div>
+            <div class="grid">
+              <div class="mini">
+                <h4>字面意思</h4>
+                <p>链条末端被固定，身体其他部分围绕固定点运动。</p>
+              </div>
+              <div class="mini">
+                <h4>大白话</h4>
+                <p>脚像钉在地上，身体这辆车在脚上方升降和调整。</p>
+              </div>
+              <div class="mini">
+                <h4>为什么重要</h4>
+                <p>闭合链更接近日常站立、跑跳、上楼、搬东西等任务。</p>
+              </div>
+            </div>
+            <span class="dim">真实例子</span>
+            <p>深蹲、俯卧撑、硬拉都是闭合链或接近闭合链。脚或手固定后，髋、膝、踝、肩胛、核心一起参与稳定和传力。</p>
+            <span class="dim">训练含义</span>
+            <p>闭合链常对关节剪切力更友好，也更考验整体动作质量。膝内扣、足弓塌陷、骨盆失控都容易在闭合链中暴露。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为闭合链一定更安全。✅其实动作控制差、负荷过大、活动度不足时，闭合链也会放大代偿。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">稳定与不稳定</span>: 不稳定表面会增加控制需求，但通常降低最大力量输出。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 不稳定训练不是“高级力量训练”，它更像平衡和控制训练。</div>
+            <table class="tbl">
+              <tr>
+                <th>条件</th>
+                <th>身体任务</th>
+                <th>训练结果倾向</th>
+              </tr>
+              <tr>
+                <td>稳定地面</td>
+                <td>把更多资源用于产力。</td>
+                <td>更适合力量、增肌、爆发输出。</td>
+              </tr>
+              <tr>
+                <td>不稳定表面</td>
+                <td>先防晃，再发力。</td>
+                <td>核心和小稳定肌参与上升，主力输出下降。</td>
+              </tr>
+              <tr>
+                <td>外部负荷不稳定</td>
+                <td>控制摆动和方向。</td>
+                <td>提高控制，但负重应更保守。</td>
+              </tr>
+            </table>
+            <span class="dim">真实例子</span>
+            <p>站在波速球上深蹲，腿部最大力量输出会下降，因为神经系统要先处理平衡。想练大重量深蹲，稳定地面更合理。</p>
+            <span class="dim">训练含义</span>
+            <p>不稳定训练可放在热身、康复、平衡控制阶段。力量主项不要为了“看起来难”牺牲目标输出。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为越晃越功能。✅其实功能性取决于目标任务，运动员冲刺、跳跃、硬拉多数需要稳定地面上的高输出。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">动作分析顺序</span>: 识别关节运动 → 主动肌 → 杠杆类型 → 力矩，是考试和实操都好用的步骤。</span>
+          <div class="kp-body">
+            <div class="take">不要一上来背肌肉名。先看骨头怎么绕关节动，再找能制造这个动作的肌肉。</div>
+            <table class="tbl">
+              <tr>
+                <th>步骤</th>
+                <th>问自己什么</th>
+                <th>例子</th>
+              </tr>
+              <tr>
+                <td>1 关节运动</td>
+                <td>哪几个关节在动? 方向是什么?</td>
+                <td>卧推: 肩水平内收 + 肘伸。</td>
+              </tr>
+              <tr>
+                <td>2 主动肌</td>
+                <td>谁能制造主要运动?</td>
+                <td>胸大肌、前三角、肱三头肌。</td>
+              </tr>
+              <tr>
+                <td>3 杠杆类型</td>
+                <td>支点、力点、阻力点在哪?</td>
+                <td>肘伸常表现为第三类杠杆。</td>
+              </tr>
+              <tr>
+                <td>4 力矩</td>
+                <td>外力线到关节垂直距离多大?</td>
+                <td>哑铃越远离肩，肩力矩越大。</td>
+              </tr>
+            </table>
+            <span class="dim">训练含义</span>
+            <p>同样是“推”，卧推、俯卧撑、肩推的关节角度和外力方向不同，主动肌比例也不同。按步骤拆，才能解释差异。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为动作分析就是列肌肉清单。✅其实肌肉清单必须服务于关节运动和外力需求，否则只是背名字。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">主动肌、协同肌、稳定肌</span>: 一个动作里有人主拉，有人帮忙，有人负责不乱晃。</span>
+          <div class="kp-body">
+            <div class="grid">
+              <div class="mini">
+                <h4>主动肌</h4>
+                <p>主要制造目标动作的肌肉。划船时背阔肌、菱形肌、斜方肌中下部常是主力。</p>
+              </div>
+              <div class="mini">
+                <h4>协同肌</h4>
+                <p>帮助完成动作但不是唯一主角。划船时肱二头肌帮助屈肘。</p>
+              </div>
+              <div class="mini">
+                <h4>稳定肌</h4>
+                <p>让关节和躯干保持可发力位置。划船时核心、肩袖、肩胛稳定肌很关键。</p>
+              </div>
+            </div>
+            <span class="dim">真实例子</span>
+            <p>卧推不是只有胸大肌。胸大肌负责肩水平内收，肱三头肌负责肘伸，前三角帮忙肩屈和水平内收，肩胛稳定肌让肩胛保持合适位置。</p>
+            <span class="dim">训练含义</span>
+            <p>如果目标肌没有感觉，不一定是目标肌弱，可能是协同肌抢工、稳定肌失控、动作角度让力矩转移。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为一个动作只能练一块肌肉。✅其实复合动作是角色分工，主次会随角度、器械和技术改变。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">动作模式筛查</span>: 看代偿要回到模式，判断是活动度、稳定性还是力量瓶颈。</span>
+          <div class="kp-body">
+            <div class="take">模式筛查不是给人贴标签，而是找“哪一环先失控”。</div>
+            <table class="tbl">
+              <tr>
+                <th>看到的问题</th>
+                <th>可能原因</th>
+                <th>下一步</th>
+              </tr>
+              <tr>
+                <td>深蹲膝内扣</td>
+                <td>髋外展外旋控制不足、足踝控制差、负荷太高。</td>
+                <td>降负荷，练髋控制和足踝路线。</td>
+              </tr>
+              <tr>
+                <td>硬拉圆背</td>
+                <td>髋铰链不会做、核心抗屈不足、重量太重。</td>
+                <td>练髋折叠、杆铃贴身、中立脊柱。</td>
+              </tr>
+              <tr>
+                <td>划船耸肩</td>
+                <td>肩胛下压后缩不足，上斜方代偿。</td>
+                <td>降低重量，先找肩胛运动。</td>
+              </tr>
+            </table>
+            <span class="dim">训练含义</span>
+            <p>分析动作时，先把动作归到模式，再看哪段关节链条没有完成任务。这样纠错比直接说“你姿势不对”更有效。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为所有代偿都靠拉伸解决。✅有些是活动度限制，有些是稳定控制差，有些只是重量超过当前能力。</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="warn">
+      <h2>常见误区</h2>
+      <p>❌很多人以为“深蹲就是练股四头”。✅其实深蹲是闭合链深蹲模式，髋、膝、踝、核心一起参与，股四头只是重要角色之一。</p>
+      <p>❌很多人以为不稳定表面一定更功能。✅其实不稳定会降低力量输出，是否功能要看目标运动是否也需要这种不稳定。</p>
+      <p>❌很多人以为开放链不值得练。✅其实开放链很适合局部补强和康复，只是要和闭合链整合使用。</p>
+    </section>
+
+    <section class="mnemonic">
+      <h2>记忆口诀</h2>
+      <p><strong>先看关节怎么动，再问肌肉谁主攻；远端自由开放链，远端固定闭合链；稳定决定能否发力，力矩决定哪里吃力。</strong></p>
+    </section>
+
+    <section class="panel">
+      <h2>翻转卡复习</h2>
+      <div class="card-grid">
+        <div class="flip" onclick="this.classList.toggle('flipped')">
+          <div class="flip-inner">
+            <div class="face front">七大动作模式?</div>
+            <div class="face back">推、拉、深蹲、铰链、箭步、旋转、携带。</div>
+          </div>
+        </div>
+        <div class="flip" onclick="this.classList.toggle('flipped')">
+          <div class="flip-inner">
+            <div class="face front">开放链核心特征?</div>
+            <div class="face back">远端自由移动，例如坐姿腿屈伸。</div>
+          </div>
+        </div>
+        <div class="flip" onclick="this.classList.toggle('flipped')">
+          <div class="flip-inner">
+            <div class="face front">闭合链核心特征?</div>
+            <div class="face back">远端固定，身体相对固定点运动，例如深蹲。</div>
+          </div>
+        </div>
+        <div class="flip" onclick="this.classList.toggle('flipped')">
+          <div class="flip-inner">
+            <div class="face front">动作分析第一步?</div>
+            <div class="face back">识别关节运动和运动方向。</div>
+          </div>
+        </div>
+        <div class="flip" onclick="this.classList.toggle('flipped')">
+          <div class="flip-inner">
+            <div class="face front">不稳定表面对力量输出影响?</div>
+            <div class="face back">通常降低最大力量输出，增加控制需求。</div>
+          </div>
+        </div>
+        <div class="flip" onclick="this.classList.toggle('flipped')">
+          <div class="flip-inner">
+            <div class="face front">硬拉更偏哪种模式?</div>
+            <div class="face back">髋铰链模式。</div>
+          </div>
+        </div>
+        <div class="flip" onclick="this.classList.toggle('flipped')">
+          <div class="flip-inner">
+            <div class="face front">划船中肱二头肌常是什么角色?</div>
+            <div class="face back">协同肌，帮助屈肘。</div>
+          </div>
+        </div>
+        <div class="flip" onclick="this.classList.toggle('flipped')">
+          <div class="flip-inner">
+            <div class="face front">动作代偿先看什么?</div>
+            <div class="face back">先归类动作模式，再找失控关节链条。</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel orange">
+      <h2>实操关联</h2>
+      <ul class="list">
+        <li><strong>增肌:</strong> 用开放链补目标肌感受，用闭合链练整体输出。比如腿屈伸补股四头，深蹲练下肢协同。</li>
+        <li><strong>减脂:</strong> 优先选择大动作模式组合，推、拉、深蹲、铰链、携带能动员更多肌群，提高训练密度。</li>
+        <li><strong>爆发:</strong> 爆发训练需要稳定地面和清晰传力链，不要把主项放在过度不稳定表面上。</li>
+        <li><strong>耐力:</strong> 跑步、划船机、骑车都可按关节运动和链式结构分析，找出重复压力落点。</li>
+        <li><strong>康复:</strong> 早期可用开放链精确强化，后期回到闭合链，让力量重新整合进站立、走跑和跳跃。</li>
+        <li><strong>动作纠错:</strong> 遇到膝内扣、圆背、耸肩，先判断是活动度、稳定性、力量还是力矩安排问题。</li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2>练习题</h2>
+      <div class="quiz">
+        <h3>1. 单选: 深蹲最典型属于哪类链式结构?</h3>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">A.</span>开放链，因为膝关节在动</div>
+        <div class="opt" onclick="pick(this,'correct')"><span class="lbl">B.</span>闭合链，因为脚固定在地面</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">C.</span>开放链，因为身体上下移动</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">D.</span>不属于链式动作</div>
+        <button onclick="showAns('ans1')">查看解析</button>
+        <div class="reveal" id="ans1">答案 B。闭合链看远端是否固定，深蹲时脚固定在地面，身体在脚上方移动。A 和 C 都只看到了关节或身体在动，没抓住远端固定这个标准。D
+          错，深蹲非常适合用链式结构分析。</div>
+      </div>
+      <div class="quiz">
+        <h3>2. 单选: 坐姿腿屈伸更接近什么训练特征?</h3>
+        <div class="opt" onclick="pick(this,'correct')"><span class="lbl">A.</span>开放链，适合局部强化膝伸</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">B.</span>闭合链，适合全身传力</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">C.</span>携带模式</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">D.</span>旋转模式</div>
+        <button onclick="showAns('ans2')">查看解析</button>
+        <div class="reveal" id="ans2">答案 A。腿屈伸时脚端自由移动，动作集中在膝伸和股四头肌。B 更像深蹲、硬拉。C 是带重量走路。D 是躯干或肢体绕垂直轴旋转。</div>
+      </div>
+      <div class="quiz">
+        <h3>3. 多选: 规范动作分析通常包括哪些步骤?</h3>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">A.</span>识别关节运动</div>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">B.</span>判断主动肌和协同肌</div>
+        <div class="opt" onclick="pickMulti(this)"><span class="lbl">C.</span>只看哪个肌肉最酸</div>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">D.</span>分析外力线、力臂和稳定需求</div>
+        <button onclick="showAns('ans3')">查看解析</button>
+        <div class="reveal" id="ans3">答案 A、B、D。动作分析要先看关节运动，再看肌肉角色，最后看外力和稳定需求。C 只能反映主观感受，不能单独判断动作力学。</div>
+      </div>
+      <div class="quiz">
+        <h3>4. 案例题: 客户做划船总是耸肩，手臂很酸但背部没感觉。怎么分析?</h3>
+        <button onclick="showAns('ans4')">查看解析</button>
+        <div class="reveal" id="ans4">先归类为拉类动作，再看关节运动: 肩伸或肩水平外展 +
+          肘屈。背阔肌、菱形肌、斜方肌中下部应参与肩胛后缩下压和肩伸，肱二头肌只是协同屈肘。耸肩说明上斜方肌代偿、肩胛下压后缩不足，重量可能过大或动作路径不对。处理方式:
+          降低重量，先练肩胛后缩下压，再让肘向后走，不要先用手把重量卷回来。</div>
+      </div>
+    </section>
+
+    <footer>阶段1基础科学 · Day 17/112 · 今日早间新知识(工作日6:00) · 中午12:00复习巩固</footer>
+  </main>
+  <div class="lightbox" id="lightbox"><img alt="放大学习图"></div>
+  <script>
+    document.querySelectorAll('ul.kp>li>.kp-head').forEach(function (h) { h.addEventListener('click', function () { h.parentElement.classList.toggle('open') }); });
+    function pick(el, type) { el.closest('.quiz').querySelectorAll('.opt').forEach(function (o) { o.classList.remove('correct', 'wrong-show') }); el.classList.add(type === 'correct' ? 'correct' : 'wrong-show'); }
+    function pickMulti(el) { if (el.classList.contains('correct') || el.classList.contains('wrong-show')) { el.classList.remove('correct', 'wrong-show'); } else { el.classList.add(el.dataset.c === '1' ? 'correct' : 'wrong-show'); } }
+    function showAns(id) { document.getElementById(id).classList.add('show'); }
+    var lb = document.getElementById('lightbox'); var lbImg = lb.querySelector('img'); document.querySelectorAll('.figure img').forEach(function (img) { img.addEventListener('click', function () { lbImg.src = img.src; lb.classList.add('show'); }); }); lb.addEventListener('click', function (e) { if (e.target === lb) { lb.classList.remove('show'); lbImg.src = ''; } }); document.addEventListener('keydown', function (e) { if (e.key === 'Escape') { lb.classList.remove('show'); lbImg.src = ''; } });
+  </script>
+</body>
+
+</html>

@@ -15,3 +15,16 @@ No application knows how to open URL file:///Users/zhaoqr/Documents/fitness_stud
 2026-07-06 17:30:10 CST Day 12 open failed: kLSExecutableIncorrectFormat no compatible executable/default browser. Initial Chinese osascript notification failed syntax -2740; retrying ASCII.
 2026-07-06 17:31:05 CST Day 12 osascript notification failed after retries: syntax -2740. XHS package path: xhs/day12/.
 2026-07-06 17:37:38 CST Day 12 xhs package quality issue confirmed: Pillow fallback differs from official Playwright template; do not publish current xhs/day12 images until regenerated.
+2026-07-09 17:08:30 CST node scripts/generate-xhs-package.js --day=15 failed inside sandbox due Chromium MachPort permission; escalated rerun succeeded.
+2026/7/10 17:30:42 Day 16 first xhs package run failed in sandbox due Chromium MachPort permission; escalated rerun succeeded.
+2026-07-11 17:38:57 CST Day17 XHS first run failed in sandbox: Chromium MachPort permission denied; rerun outside sandbox succeeded.
+2026-07-11 18:10:59 CST Day17 XHS correction: sandbox Playwright reruns failed with Chromium MachPort permission denied; escalated reruns succeeded.
+2026-07-12 13:07:07 CST Day18 XHS first run failed in sandbox: Chromium MachPort permission denied; rerun outside sandbox succeeded.
+2026-07-12 13:24:21 CST Day18 XHS correction first rerun failed in sandbox: Chromium MachPort permission denied; escalated rerun succeeded.
+2026-07-13 18:07:05 CST Day 19 initial XHS package render failed inside sandbox: Chromium MachPort permission denied; escalated rerun succeeded.
+2026-07-13 18:20:42 CST Day 19 XHS sandbox rerender failed due Chromium MachPort permission; escalated rerun succeeded.
+2026-07-14 17:27:16 CST Day20 first xhs package run failed in sandbox: Chromium MachPort permission denied; escalated rerun succeeded.
+2026-07-14 22:30:50 CST Day21 first xhs package run failed inside sandbox: Chromium MachPort permission denied; escalated rerun succeeded.
+2026-07-14 22:35:48 CST Day21 open failed: kLSExecutableIncorrectFormat no compatible executable/default browser. XHS package path: xhs/day21/.
+2026-07-14 22:35:48 CST Day21 osascript notification failed: syntax -2740. XHS package path: xhs/day21/.
+2026-07-14 22:37:10 CST Day21 osascript retry failed: syntax -2740. No desktop notification emitted.

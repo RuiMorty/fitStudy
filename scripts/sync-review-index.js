@@ -45,16 +45,6 @@ function findReviewFile(day) {
   };
 }
 
-function findThumbForDay(day) {
-  const prefix = `${dayToken(day)}-`;
-  const thumbsDir = path.join(HTML_DIR, "thumbs");
-  const filename = fs
-    .readdirSync(thumbsDir)
-    .find((item) => item.startsWith(prefix) && item.endsWith("-thumbnail.png"));
-  if (!filename) throw new Error(`Missing thumbnail for ${dayToken(day)}`);
-  return `thumbs/${filename}`;
-}
-
 function stripTags(value) {
   return String(value)
     .replace(/<script[\s\S]*?<\/script>/gi, "")
@@ -96,24 +86,19 @@ function extractCards(html) {
           ? "R2"
           : meta.includes("7天")
             ? "R3"
-            : "R?";
-    const label = type === "R0" ? "今日回忆" : type === "R1" ? "次日复习" : type === "R2" ? "第3天复习" : type === "R3" ? "第7天复习" : "间隔复习";
+            : meta.includes("14天")
+              ? "R4"
+              : "R?";
+    const label = type === "R0" ? "今日回忆" : type === "R1" ? "次日复习" : type === "R2" ? "第3天复习" : type === "R3" ? "第7天复习" : type === "R4" ? "第14天复习" : "间隔复习";
     cards.push({ type, day, label, heading });
   }
   return cards;
-}
-
-function replaceDetailImagesWithThumbs(html) {
-  return html.replace(/src="assets\/阶段[^"]*\/day(\d{2})-[^"]+\.png"/g, (_match, dayText) => {
-    return `src="${findThumbForDay(Number(dayText))}"`;
-  });
 }
 
 function validateReviewHtml(html, reviewAbs) {
   const errors = [];
   if (!html.startsWith("<!DOCTYPE html>")) errors.push("first line must be <!DOCTYPE html>");
   if (!/<\/html>\s*$/i.test(html)) errors.push("missing closing </html>");
-  if (/src="assets\/阶段/.test(html)) errors.push("review images must use html/thumbs, not html/assets detail images");
   if (/class="section lead"/.test(html) || /\.lead\s*\{[^}]*display\s*:\s*grid/i.test(html)) {
     errors.push("today review block must use a single article.card, not a side-by-side .lead grid");
   }
@@ -152,22 +137,17 @@ function updateReviewsJson(day, title, reviewRel, cards) {
 
 function updateLatestReviewLink(reviewRel) {
   const html = fs.readFileSync(INDEX_PATH, "utf8");
-  const current = html.match(/<a href="(html\/review-day\d{2}-[^"]+\.html)">最新复习<\/a>/);
+  const current = html.match(/<a([^>]*)href="(html\/review-day\d{2}-[^"]+\.html)"([^>]*)>最新复习<\/a>/);
   if (!current) throw new Error("Could not find latest review link in index.html");
-  if (current[1] === reviewRel) return;
-  const next = html.replace(current[0], `<a href="${reviewRel}">最新复习</a>`);
+  if (current[2] === reviewRel) return;
+  const next = html.replace(current[0], `<a${current[1]}href="${reviewRel}"${current[3]}>最新复习</a>`);
   fs.writeFileSync(INDEX_PATH, next);
 }
 
 function main() {
   const { day, checkOnly } = parseArgs();
   const review = findReviewFile(day);
-  let html = fs.readFileSync(review.abs, "utf8");
-  const fixedHtml = replaceDetailImagesWithThumbs(html);
-  if (!checkOnly && fixedHtml !== html) {
-    fs.writeFileSync(review.abs, fixedHtml);
-    html = fixedHtml;
-  }
+  const html = fs.readFileSync(review.abs, "utf8");
 
   const cards = extractCards(html);
   const title = extractTitle(html, day);

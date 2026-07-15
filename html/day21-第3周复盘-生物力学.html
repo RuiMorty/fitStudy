@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 21 · 第3周复盘-生物力学</title>
+  <style>
+    *{box-sizing:border-box}
+    body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.75;background:#f6f8f7;color:#1a2b22;padding:18px}
+    .wrap{max-width:980px;margin:auto}
+    .header{text-align:center;padding:24px 10px}
+    .header h1{margin:0 0 10px;font-size:2rem;background:linear-gradient(90deg,#0ea66b,#0ea5e9);-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:0}
+    .sub{color:#5a6b62}
+    .chips{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:10px}
+    .chip{font-size:.78rem;border:1px solid #d4ebe0;border-radius:999px;padding:3px 10px;background:#fff;color:#0c6da3}
+    .panel,.figure,.warn{background:#fff;border:1px solid #e2e8e4;border-radius:14px;padding:18px;margin:14px 0;box-shadow:0 2px 12px rgba(20,40,30,.06)}
+    .lead{border-left:4px solid #0ea66b}
+    .orange{border-left:4px solid #ea7a17}
+    .figure img{width:100%;display:block;border-radius:12px;border:1px solid #e2e8e4;background:#fbfdfc;cursor:zoom-in}
+    .caption{font-size:.85rem;color:#5a6b62;margin-top:8px;text-align:center}
+    .panel h2,.warn h2{font-size:1.18rem;margin:0 0 10px;color:#0a7d52}
+    .term{font-weight:700;color:#0a7d52;background:#e8f5ee;border-radius:5px;padding:1px 5px}
+    ul.kp{list-style:none;padding:0;margin:0}
+    ul.kp>li{border-bottom:1px dashed #e2e8e4}
+    .kp-head{display:block;cursor:pointer;position:relative;padding:13px 8px 13px 30px}
+    .kp-head:before{content:"▸";position:absolute;left:8px;color:#0ea66b;font-weight:800;transition:.2s}
+    .open>.kp-head:before{transform:rotate(90deg)}
+    .kp-head:hover{background:#f0f4f2}
+    .kp-body{display:none;padding:0 14px 16px 30px}
+    .open>.kp-body{display:block}
+    .dim{display:block;margin-top:10px;font-size:.78rem;font-weight:800;color:#0c6da3}
+    .take{border-left:4px solid #0ea66b;background:#f0fbf5;border-radius:10px;padding:10px 12px;margin:10px 0}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin:12px 0}
+    .mini{border:1px solid #dbe8e1;border-radius:12px;background:#fbfdfc;padding:12px}
+    .mini h4{margin:0 0 7px;font-size:.98rem;color:#0a7d52}
+    .tbl{width:100%;border-collapse:collapse;font-size:.9rem;margin:10px 0}
+    .tbl th{background:#0ea66b;color:#fff;text-align:left}
+    .tbl th,.tbl td{padding:8px;border-bottom:1px solid #e2e8e4;vertical-align:top}
+    .warn{border-left:4px solid #e23b3b}
+    .warn p{margin:8px 0}
+    .mnemonic{background:linear-gradient(135deg,#0ea66b,#0ea5e9);color:#fff;border-radius:14px;padding:20px;margin:14px 0;box-shadow:0 2px 12px rgba(20,40,30,.08)}
+    .mnemonic h2{margin:0 0 8px;font-size:1.15rem}
+    .mnemonic strong{color:#fff7d6}
+    .card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+    .flip{min-height:145px;perspective:800px;cursor:pointer}
+    .flip-inner{position:relative;width:100%;height:100%;min-height:145px;transition:transform .5s;transform-style:preserve-3d}
+    .flip.flipped .flip-inner{transform:rotateY(180deg)}
+    .face{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:15px;border-radius:13px;border:1px solid #e2e8e4;backface-visibility:hidden;background:#fff;font-weight:700}
+    .front{color:#0a7d52;background:#f8fffb}
+    .back{transform:rotateY(180deg);background:#eef7ff;color:#0c6da3;font-weight:600}
+    .quiz{border-top:1px dashed #e2e8e4;padding-top:12px;margin-top:12px}
+    .quiz h3{margin:0 0 8px;font-size:1rem;color:#1a2b22}
+    .opt{border:1px solid #e2e8e4;border-radius:10px;padding:9px 10px;margin:7px 0;background:#fff;cursor:pointer}
+    .opt:hover{background:#f0f4f2}
+    .lbl{font-weight:800;color:#0c6da3;margin-right:4px}
+    .correct{border-color:#0ea66b!important;background:#e9f8f0!important}
+    .wrong-show{border-color:#e23b3b!important;background:#fff0f0!important}
+    button{border:0;border-radius:999px;background:#0ea66b;color:#fff;font-weight:800;padding:8px 14px;cursor:pointer;margin-top:6px}
+    .reveal{display:none;border-left:4px solid #0ea5e9;background:#f0f8fc;border-radius:10px;padding:10px;margin-top:8px}
+    .reveal.show{display:block}
+    .list{padding-left:20px;margin:8px 0}
+    .list li{margin:7px 0}
+    footer{text-align:center;color:#5a6b62;font-size:.85rem;margin:22px 0}
+    .lightbox{position:fixed;inset:0;background:rgba(0,0,0,.82);display:none;align-items:center;justify-content:center;z-index:9;padding:18px}
+    .lightbox.show{display:flex}
+    .lightbox img{max-width:96vw;max-height:92vh;border-radius:10px;background:#fff}
+    @media(max-width:640px){body{padding:10px}.header h1{font-size:1.5rem}.panel,.figure,.warn{padding:14px}.kp-body{padding-left:14px}.card-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="header">
+      <h1>Day 21 · 第3周复盘-生物力学</h1>
+      <div class="sub">今天主题: 把力、杠杆、动作模式、脊柱、力量决定因素和损伤机制串成一条训练判断链。</div>
+      <div class="chips"><span class="chip">第3周 · 阶段1基础科学</span><span class="chip">NSCA + NASM 双证</span><span class="chip">早间新知识</span></div>
+    </header>
+
+    <section class="panel lead">
+      <h2>一句话总结</h2>
+      <p>第3周不是 3 篇散课，而是同一套逻辑换 3 个角度看: <strong>外力先变成力矩，力矩再落到动作模式，动作模式由脊柱和核心接住，最后再由神经、肌肉和组织耐受决定能不能撑住</strong>。会串链，就能同时看懂训练成绩和受伤风险。</p>
+    </section>
+
+    <figure class="figure">
+      <img src="assets/阶段1基础科学/day21-第3周复盘-生物力学.png" alt="第3周生物力学复盘中文标注图">
+      <div class="caption">看图重点: 先找外力和力臂，再看动作模式，接着看核心稳定与组织耐受，最后判断风险和训练决策。</div>
+    </figure>
+
+    <section class="panel">
+      <h2>核心要点</h2>
+      <ul class="kp">
+        <li>
+          <span class="kp-head"><span class="term">力矩与杠杆</span>: 力不只看大小，还要看作用点离关节多远，力臂越长，关节力矩越大。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 训练里最值钱的不是“硬拽”，而是让力臂变短、动作轨迹更贴身、杠杆更有利。</div>
+            <div class="grid">
+              <div class="mini"><h4>字面意思</h4><p>力矩 = 力 × 力臂。力是推拉大小，力臂是垂直距离。</p></div>
+              <div class="mini"><h4>大白话</h4><p>同样拿门把，离铰链越远越好开门，因为你手的“杆”更长。</p></div>
+              <div class="mini"><h4>训练含义</h4><p>杠铃离身体越远，腰椎、髋和肩承受的外力矩就越大，动作更难稳。</p></div>
+            </div>
+            <span class="dim">真实例子</span>
+            <p>硬拉里杠铃贴近小腿，腰更省力；同样的重量，如果杠铃前飘，腰背要替身体多扛力矩。卧推中肘部外展过大，肩关节力矩也会变大。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为力越大就一定越难。✅其实关键是力臂，轻重量也可能因为姿势差而变成高力矩挑战。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">动作模式</span>: 推、拉、深蹲、铰链、箭步、旋转、携带，是力学任务，不是肌肉清单。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 先认动作，再找主力肌和稳定肌。别一上来只背肌肉名。</div>
+            <table class="tbl">
+              <tr><th>模式</th><th>主问题</th><th>训练线索</th></tr>
+              <tr><td>推 / 拉</td><td>力量是离开身体还是靠近身体?</td><td>卧推、俯卧撑、划船、引体。</td></tr>
+              <tr><td>深蹲 / 铰链</td><td>是髋膝踝一起下去，还是髋主导折叠?</td><td>深蹲更像下沉，铰链更像坐屁股向后。</td></tr>
+              <tr><td>箭步 / 旋转 / 携带</td><td>单腿、转体或抗偏移能不能稳住?</td><td>弓步、转体、农夫走、单侧提壶铃走。</td></tr>
+            </table>
+            <span class="dim">训练含义</span>
+            <p>动作模式分析顺序很固定: 先看关节怎么动，再看谁跨过关节，再看谁在稳住躯干。这样不会把“动作差”误判成“某块肌肉弱”。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为所有动作都在练同一块大肌肉。✅其实同样是下肢动作，深蹲、硬拉、弓步、携带的受力任务完全不同。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">脊柱与核心</span>: 核心不是卷腹，而是把中立脊柱、腹内压和四抗稳定接起来。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 核心的主业是稳住位置，不是一直做大幅度屈曲。</div>
+            <div class="grid">
+              <div class="mini"><h4>中立脊柱</h4><p>保留自然曲度，让压力分散到椎体、椎间盘和肌肉，而不是挤到一处。</p></div>
+              <div class="mini"><h4>腹内压</h4><p>吸气撑开腹壁和侧腰，像躯干内部压力罐，帮脊柱抗压和抗弯。</p></div>
+              <div class="mini"><h4>四抗</h4><p>抗伸展、抗屈曲、抗旋转、抗侧屈，是核心训练的基本任务单。</p></div>
+            </div>
+            <span class="dim">真实例子</span>
+            <p>深蹲底部骨盆突然后卷、硬拉起拉时腰先圆、划船时胸椎乱塌，都是核心接力失败，不只是腹肌不够强。</p>
+            <span class="dim">训练含义</span>
+            <p>先学呼吸支撑、死虫、鸟狗、Pallof press，再上大重量。腰带只是外壁，不是替代核心。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">肌力与肌耐力</span>: 神经因素、横截面积、长度-张力、力-速度、离心和 SSC，一起决定输出上限。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 新手力量先涨，多半先是神经学会更会用现有肌肉，不一定先长肌肉。</div>
+            <table class="tbl">
+              <tr><th>因素</th><th>一句话</th><th>训练看点</th></tr>
+              <tr><td>神经因素</td><td>募集更多运动单位，发放更快更稳。</td><td>动作更协调、启动更快、发力更集中。</td></tr>
+              <tr><td>横截面积</td><td>肌肉底盘越大，潜在产力越高。</td><td>力量潜力，不等于动作成绩自动上涨。</td></tr>
+              <tr><td>长度-张力</td><td>太短或太长都不占便宜，中间区间最强。</td><td>关节角度变了，发力感也会变。</td></tr>
+              <tr><td>力-速度</td><td>向心越快，能产生的力量通常越小。</td><td>爆发训练不能练成疲劳堆量。</td></tr>
+            </table>
+            <span class="dim">真实例子</span>
+            <p>离心阶段下放杠铃、下楼和落地刹车时，肌肉能承受更高张力；SSC 则是快速拉长后立刻缩短，把弹性势能和牵张反射接上。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为离心就是“没发力”。✅其实离心常是高张力刹车，而且可承受的负荷往往比向心更高。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">损伤机制</span>: 看峰值还是累计，看哪种力在叠加，不是只看“疼不疼”。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 急性损伤看单次峰值，过度使用看重复累计；剪切、压缩、张力和扭转常一起出现。</div>
+            <div class="grid">
+              <div class="mini"><h4>剪切</h4><p>层与层平行错位，像扑克牌上下层推开。</p></div>
+              <div class="mini"><h4>压缩</h4><p>两端挤压，关节和椎间盘最常见。</p></div>
+              <div class="mini"><h4>张力 / 扭转</h4><p>被拉长和被拧动，变向、落地、旋转里很常见。</p></div>
+            </div>
+            <span class="dim">真实例子</span>
+            <p>ACL 风险常见于膝内扣、减速和旋转叠加；跑量突然翻倍，跟腱和胫骨可能先出现过度使用问题，再逐渐变成真实损伤。</p>
+            <span class="dim">训练含义</span>
+            <p>看风险不是先问“练没练到位”，而是先问“组织能不能扛住当前剂量、动作和疲劳”。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">易混点</span>: 开链/闭链、向心/离心/等长、三类杠杆，经常一起考。</span>
+          <div class="kp-body">
+            <table class="tbl">
+              <tr><th>概念</th><th>常见错法</th><th>正确抓手</th></tr>
+              <tr><td>开链 vs 闭链</td><td>只背名词，不看远端是否固定。</td><td>远端固定就是闭链，远端自由就是开链。</td></tr>
+              <tr><td>向心 / 离心 / 等长</td><td>把“下放”全叫向心。</td><td>向心是变短，离心是被拉长但仍发力，等长是不变长短。</td></tr>
+              <tr><td>三类杠杆</td><td>只记哪个最省力。</td><td>看支点、阻力、动力谁在中间，人体常是第三类杠杆。</td></tr>
+            </table>
+            <span class="dim">考试抓手</span>
+            <p>题干出现“膝内扣、减速、落地”先想损伤机制；出现“力量先于肌肥大”先想神经适应；出现“离心更能扛”先想力-速度曲线的离心段。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">训练决策</span>: 先改路径，再调剂量，最后谈专项速度和难度。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 动作、负荷、休息和疲劳管理，比单纯“狠狠干”更决定成绩和安全。</div>
+            <div class="grid">
+              <div class="mini"><h4>动作</h4><p>杠铃贴身、躯干稳定、对线清楚，先让力走对路。</p></div>
+              <div class="mini"><h4>剂量</h4><p>重量、次数、速度、组间休息，决定主要适应。</p></div>
+              <div class="mini"><h4>停止信号</h4><p>速度明显掉、动作变形、疼痛改样，就该降级或停组。</p></div>
+            </div>
+            <span class="dim">实操落点</span>
+            <p>增肌看足够训练量和接近力竭的张力；爆发看高速度和低疲劳；耐力看重复输出和恢复；康复看稳定、耐受和逐步回归。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为训练只有“更重”才算进步。✅真正进步是让动作更稳、负荷更合适、恢复更快。</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="warn">
+      <h2>常见误区</h2>
+      <p>❌很多人以为力大就一定赢。✅其实力臂和动作轨迹能把小重量放大成大难度。</p>
+      <p>❌很多人以为核心就是腹肌酸。✅核心更重要的是抗伸展、抗旋转和抗侧屈。</p>
+      <p>❌很多人以为受伤只看“有没有撞到”。✅过度使用、代偿和疲劳同样能把组织推到失控。</p>
+    </section>
+
+    <section class="mnemonic">
+      <h2>记忆口诀</h2>
+      <p><strong>力臂一长力矩大，动作先分推拉家；脊柱中立腹压撑，神经肌肉一起加；峰值看急伤，累计看疲劳，剪压张扭别混答。</strong></p>
+    </section>
+
+    <section class="panel">
+      <h2>翻转卡复习</h2>
+      <div class="card-grid">
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">力矩公式?</div><div class="face back">M = F × r。力臂越长，力矩越大。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">动作模式先看什么?</div><div class="face back">先看关节动作，再找主力肌和稳定肌。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">核心四抗?</div><div class="face back">抗伸展、抗屈曲、抗旋转、抗侧屈。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">力量先于肌肥大多指什么?</div><div class="face back">神经适应先发生，不一定先长肌肉。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">离心和向心区别?</div><div class="face back">离心被拉长但仍发力；向心是肌肉变短发力。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">SSC 是什么?</div><div class="face back">先快速拉长，再立刻缩短，把弹性势能和反射接上。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">急性 vs 过度使用?</div><div class="face back">急性看峰值，过度使用看累计和恢复不足。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">训练里先改什么?</div><div class="face back">先改动作路径，再调剂量，最后谈专项速度。</div></div></div>
+      </div>
+    </section>
+
+    <section class="panel orange">
+      <h2>实操关联</h2>
+      <ul class="list">
+        <li><strong>增肌:</strong> 先让动作轨迹和力臂稳定，再谈靠近力竭的训练量。</li>
+        <li><strong>减脂:</strong> 疲劳下动作变形最常见，循环训练别把质量换成数量。</li>
+        <li><strong>爆发:</strong> 练高速度前先练减速和落地，不然 SSC 只会变成失控反弹。</li>
+        <li><strong>耐力:</strong> 重复输出要看肌耐力、恢复和动作经济性，不只看意志力。</li>
+        <li><strong>康复:</strong> 先恢复中立脊柱、呼吸支撑和负荷耐受，再回专项速度。</li>
+        <li><strong>考试:</strong> 见到力矩、杠杆、SSC、ACL、腹内压，优先串到今天这条生物力学链。</li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2>练习题</h2>
+      <div class="quiz">
+        <h3>1. 单选: 同样重量下，杠铃离身体更远时，为什么腰更吃力?</h3>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">A.</span>因为重量本身突然变重了</div>
+        <div class="opt" onclick="pick(this,'correct')"><span class="lbl">B.</span>因为力臂变长，腰椎力矩变大</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">C.</span>因为肌肉立刻变短了</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">D.</span>因为关节不再参与受力</div>
+        <button onclick="show('ans1')">查看解析</button>
+        <div class="reveal" id="ans1">答案 B。问题核心是力臂，不是重量本身。杠铃越远，外力矩越大，腰背要付出更多稳定代价。A、C、D 都没有抓住力学关键。</div>
+      </div>
+      <div class="quiz">
+        <h3>2. 单选: 下列哪项最符合离心收缩?</h3>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">A.</span>上拉引体时背阔肌缩短</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">B.</span>静止平板支撑时保持长度不变</div>
+        <div class="opt" onclick="pick(this,'correct')"><span class="lbl">C.</span>下放杠铃时肌肉被拉长但仍主动控制</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">D.</span>脚固定后身体转走的扭转</div>
+        <button onclick="show('ans2')">查看解析</button>
+        <div class="reveal" id="ans2">答案 C。离心是“被拉长但仍发力”。A 是向心，B 是等长，D 是扭转情境，不是收缩类型本身。</div>
+      </div>
+      <div class="quiz">
+        <h3>3. 多选: 哪些线索更像损伤风险叠加?</h3>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">A.</span>落地膝内扣 + 疲劳后动作变硬</div>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">B.</span>跑量突然翻倍 + 恢复不足</div>
+        <div class="opt" onclick="pickMulti(this)"><span class="lbl">C.</span>中立脊柱 + 合理腹压</div>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">D.</span>变向时足固定 + 身体继续旋转</div>
+        <button onclick="show('ans3')">查看解析</button>
+        <div class="reveal" id="ans3">答案 A、B、D。A 和 D 是典型剪切/扭转叠加，B 是过度使用累计。C 是风险控制，不是风险来源。</div>
+      </div>
+      <div class="quiz">
+        <h3>4. 案例: 新手深蹲刚开始能稳，最后几组膝内扣、腰塌、速度掉。怎么分析?</h3>
+        <button onclick="show('ans4')">查看解析</button>
+        <div class="reveal" id="ans4">这是典型“疲劳后代偿”。先看动作模式: 深蹲在后半段失去髋膝踝对线。再看核心: 腹压掉了，中立脊柱守不住。再看组织耐受: 同样的负荷在疲劳下变成更高风险刺激。处理顺序: 降一点组数或重量，改成更短组、更长休息，先保住动作路径，再慢慢加量。</div>
+      </div>
+    </section>
+
+    <footer>阶段1 · Day 21/112 · 今日早间新知识(工作日6:00) · 中午12:00复习巩固</footer>
+  </main>
+  <div class="lightbox" id="lightbox"><img src="" alt="放大学习图"></div>
+  <script>
+    document.querySelectorAll('ul.kp>li>.kp-head').forEach(function(h){h.addEventListener('click',function(){h.parentElement.classList.toggle('open')});});
+    function pick(el,type){el.closest('.quiz').querySelectorAll('.opt').forEach(function(o){o.classList.remove('correct','wrong-show')});el.classList.add(type==='correct'?'correct':'wrong-show');}
+    function pickMulti(el){if(el.classList.contains('correct')||el.classList.contains('wrong-show')){el.classList.remove('correct','wrong-show');}else{el.classList.add(el.dataset.c==='1'?'correct':'wrong-show');}}
+    function show(id){document.getElementById(id).classList.add('show');}
+    var lb=document.getElementById('lightbox');var lbImg=lb.querySelector('img');document.querySelectorAll('.figure img').forEach(function(img){img.addEventListener('click',function(){lbImg.src=img.src;lb.classList.add('show');});});lb.addEventListener('click',function(e){if(e.target===lb){lb.classList.remove('show');lbImg.src='';}});document.addEventListener('keydown',function(e){if(e.key==='Escape'){lb.classList.remove('show');lbImg.src='';}});
+  </script>
+</body>
+</html>

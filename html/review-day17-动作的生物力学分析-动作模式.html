@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 17 中午复习 · 动作的生物力学分析-动作模式</title>
+  <style>
+    :root{--paper:#fff;--ink:#1a2b22;--muted:#5a6b62;--line:#e2e8e4;--green:#0ea66b;--blue:#0ea5e9;--orange:#ea7a17;--rose:#e23b3b}
+    *{box-sizing:border-box}
+    body{margin:0;background:#f6f8f7;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.75;padding:18px}
+    a{color:inherit}
+    .wrap{max-width:980px;margin:auto}
+    .hero{text-align:center;padding:26px 10px}
+    .hero:before{content:"中午复习 · Day 17";display:inline-block;font-size:.78rem;font-weight:800;color:#0c6da3;background:#e8f4fb;border:1px solid #cfe8f8;border-radius:999px;padding:4px 12px;margin-bottom:10px}
+    .hero h1{margin:0 0 10px;font-size:2rem;background:linear-gradient(90deg,var(--green),var(--blue));-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:0}
+    .sub{color:var(--muted);margin:0 auto;max-width:820px}
+    .chips{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:12px}
+    .chip{font-size:.78rem;border:1px solid #d4ebe0;border-radius:999px;padding:3px 10px;background:#fff;color:#0c6da3;font-weight:700}
+    .section,.card,footer{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px;margin:14px 0;box-shadow:0 2px 12px rgba(20,40,30,.06)}
+    .section h2{font-size:1.18rem;margin:0 0 12px;color:#0a7d52}
+    .fresh{border-left:4px solid var(--green)}
+    .ebbinghaus{border-left:4px solid var(--blue)}
+    .mistakes{border-left:4px solid var(--rose)}
+    .thumb,.mini-img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:10px;border:1px solid var(--line);background:#f0f4f2;display:block;margin:8px 0}
+    .source{display:inline-block;margin-top:8px;color:#0c6da3;text-decoration:none;font-weight:800}
+    .source:hover{text-decoration:underline}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:12px}
+    .card{margin:0;display:block}
+    .card h3{margin:0 0 8px;color:#0a7d52;font-size:1rem}
+    .meta{font-size:.8rem;color:var(--muted);margin-bottom:8px;font-weight:500}
+    .card ul{margin:8px 0 0;padding-left:18px}
+    .card li{margin:5px 0}
+    .mnemonic{border-radius:12px;padding:12px;background:#e8f5ee;color:#0a7d52;font-weight:800;margin:10px 0}
+    .q{background:#f8fffb;border:1px solid #dbe8e1;border-radius:12px;padding:13px;margin:10px 0}
+    .q p{margin:0 0 8px}
+    button{border:0;border-radius:8px;background:var(--green);color:#fff;font-weight:700;padding:7px 12px;cursor:pointer}
+    .answer{display:none;border-left:4px solid var(--blue);background:#f0f8fc;border-radius:10px;padding:10px;margin-top:9px}
+    .answer.show{display:block}
+    .compare{width:100%;border-collapse:collapse;font-size:.92rem}
+    .compare th{background:var(--green);color:#fff;text-align:left}
+    .compare th,.compare td{padding:9px;border-bottom:1px solid var(--line);vertical-align:top}
+    .review-box{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px}
+    .note{border-left:4px solid var(--orange);background:#fffaf3;border-radius:10px;padding:10px}
+    footer{text-align:center;color:var(--muted);font-size:.84rem;margin:22px 0}
+    @media(max-width:640px){body{padding:12px}.hero h1{font-size:1.55rem}.section,.card{padding:14px}.thumb,.mini-img{height:auto}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="hero">
+      <h1>Day 17 中午复习 · 动作的生物力学分析-动作模式</h1>
+      <p class="sub">目标：把早上动作模式与链式结构压缩成可回忆框架，同时回拉 Day16、Day14、Day10、Day03。今天不推进进度，只复习。</p>
+      <div class="chips">
+        <span class="chip">今日新知识 Day17</span>
+        <span class="chip">1天 Day16</span>
+        <span class="chip">3天 Day14</span>
+        <span class="chip">7天 Day10</span>
+        <span class="chip">14天 Day03</span>
+      </div>
+    </header>
+
+    <section class="section fresh">
+      <h2>今日新知识速复盘</h2>
+      <article class="card">
+        <div class="meta">今天早上 · Day 17 · 今日新知识</div>
+        <h3>Day 17 · 动作的生物力学分析-动作模式</h3>
+        <img class="thumb" src="thumbs/day17-biomechanical-movement-patterns-thumbnail.png" alt="Day17 动作的生物力学分析-动作模式无字缩略图">
+        <p>动作分析先分模式，再拆关节、肌肉、链式结构和力矩。七大动作模式是推、拉、深蹲、铰链、箭步、旋转、携带。</p>
+        <p>核心判断：开放链远端自由，适合局部强化；闭合链远端固定，多关节协同更强。不稳定表面提高控制需求，但通常降低最大力量输出。</p>
+        <a class="source" href="day17-动作的生物力学分析-动作模式.html">打开 Day17 原学习页 →</a>
+      </article>
+      <div class="mnemonic"><strong>口诀：</strong>先看关节怎么动，再问肌肉谁主攻；远端自由开放链，远端固定闭合链；稳定决定能否发力，力矩决定哪里吃力。</div>
+    </section>
+
+    <section class="section ebbinghaus">
+      <h2>艾宾浩斯复习区（1/3/7/14天）</h2>
+      <div class="grid">
+        <article class="card">
+          <div class="meta">1天前 · Day 16 · 间隔复习</div>
+          <img class="mini-img" src="thumbs/day16-lever-torque-system-thumbnail.png" alt="Day16 杠杆系统与力矩无字缩略图">
+          <h3>Day 16 · 杠杆系统与力矩</h3>
+          <ul>
+            <li>三要素：支点看关节，力点看肌腱附着，阻力点看外部重量或身体重量。</li>
+            <li>力矩 = 力 × 力臂；力臂是支点到力作用线的垂直距离。</li>
+            <li>人体多第三类杠杆，牺牲机械省力，换速度、幅度和精细控制。</li>
+          </ul>
+          <a class="source" href="day16-杠杆系统与力矩.html">复看原页</a>
+        </article>
+        <article class="card">
+          <div class="meta">3天前 · Day 14 · 间隔复习</div>
+          <img class="mini-img" src="thumbs/day14-week2-recap-thumbnail.png" alt="Day14 第2周复盘无字缩略图">
+          <h3>Day 14 · 第2周复盘-本体感觉/肌纤维/肌群/收缩</h3>
+          <ul>
+            <li>肌梭看长度和拉长速度，GTO 看肌腱张力，前庭系统帮平衡。</li>
+            <li>I 型偏耐力，II 型偏力量速度；训练不要写成 IIa 直接变 I 型。</li>
+            <li>向心举起、离心刹车、等长稳住，SSC 是先快速拉长再缩短。</li>
+          </ul>
+          <a class="source" href="day14-第2周复盘-本体感觉肌纤维肌群收缩.html">复看原页</a>
+        </article>
+        <article class="card">
+          <div class="meta">7天前 · Day 10 · 间隔复习</div>
+          <img class="mini-img" src="thumbs/day10-muscle-origin-insertion-thumbnail.png" alt="Day10 骨骼肌起止点与命名规则无字缩略图">
+          <h3>Day 10 · 骨骼肌起止点与命名规则</h3>
+          <ul>
+            <li>起点通常近端较固定，止点通常远端较移动；止点向起点靠近形成动作。</li>
+            <li>肌肉命名常透露位置、形状、大小、纤维方向、起止点或动作。</li>
+            <li>闭链时远端固定，身体可能向止点移动，分析要反向看。</li>
+          </ul>
+          <a class="source" href="day10-骨骼肌起止点与命名规则.html">复看原页</a>
+        </article>
+        <article class="card">
+          <div class="meta">14天前 · Day 3 · 间隔复习</div>
+          <img class="mini-img" src="thumbs/day03-joint-types-thumbnail.png" alt="Day03 关节分类无字缩略图">
+          <h3>Day 3 · 关节分类-纤维/软骨/滑膜关节</h3>
+          <ul>
+            <li>纤维关节稳定少动，软骨关节微动缓冲，滑膜关节可动且训练中最常见。</li>
+            <li>滑膜关节六结构：关节面、软骨、关节腔、关节囊、滑液、韧带。</li>
+            <li>自由度决定动作方向；活动越大，越依赖肌肉和神经做主动稳定。</li>
+          </ul>
+          <a class="source" href="day03-关节分类-纤维软骨滑膜关节.html">复看原页</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>主动回忆题</h2>
+      <div class="q"><p><b>今日新知识 Day 17：</b>七大基本动作模式是什么？各说一个训练例子。</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">推、拉、深蹲、铰链、箭步、旋转、携带。例：卧推、划船、深蹲、硬拉、弓步、药球转体、农夫走。</div></div>
+      <div class="q"><p><b>今日新知识 Day 17：</b>开放链和闭合链怎么区分？腿举和深蹲各属于哪类思路？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">看远端是否固定。开放链远端自由，腿举/腿屈伸更偏局部关节动作；闭合链远端固定，深蹲脚固定在地面，多关节协同更明显。</div></div>
+      <div class="q"><p><b>Day 17 场景题：</b>客户想把主力量深蹲都放在不稳定平衡垫上，你怎么解释风险？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">不稳定表面会提高平衡和核心控制需求，但通常降低最大力量输出。若目标是力量或增肌，主项应优先稳定地面；不稳定训练可作为控制练习或康复辅助。</div></div>
+      <div class="q"><p><b>Day 16：</b>杠杆三要素是什么？力矩公式是什么？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">三要素是支点、力点、阻力点。力矩 = 力 × 力臂，力臂是支点到力作用线的垂直距离。</div></div>
+      <div class="q"><p><b>Day 16：</b>为什么同样重量的侧平举，在手臂接近水平时更难？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">手臂接近水平时，哑铃重力线到肩关节的垂直距离最大，外部阻力矩最大。重量没变，但阻力臂变长，所以肩更吃力。</div></div>
+      <div class="q"><p><b>Day 14：</b>肌梭和 GTO 各自感受什么？训练中为什么重要？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">肌梭感受肌肉长度变化和拉长速度，帮助牵张反射和位置反馈；GTO 感受肌腱张力，参与张力监控和保护。二者共同影响稳定、速度转换和动作控制。</div></div>
+      <div class="q"><p><b>Day 14：</b>深蹲下降、底部停顿、起立分别更接近哪类收缩？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">下降多为离心控制，底部停顿是等长稳定，起立是向心发力。判断标准看目标肌长度变化和张力任务。</div></div>
+      <div class="q"><p><b>Day 10：</b>如何用起止点反推动作？开链和闭链差在哪里？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">先看肌肉跨哪个关节，再看止点向起点靠近会带来什么动作。开链远端自由，常见止点移动；闭链远端固定，身体或起点可能向固定端移动，需要反向分析。</div></div>
+      <div class="q"><p><b>Day 10 场景题：</b>为什么引体向上不能只按“止点向起点靠近”死背？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">引体向上手固定在单杠，远端成为固定端。背阔肌收缩时不是手被拉向身体，而是身体被拉向手，所以要按闭链反向分析。</div></div>
+      <div class="q"><p><b>Day 3：</b>三大关节类型和滑膜关节六结构是什么？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">三大关节是纤维关节、软骨关节、滑膜关节。滑膜关节六结构是关节面、关节软骨、关节腔、关节囊、滑液、韧带。</div></div>
+      <div class="q"><p><b>Day 3：</b>为什么肩关节灵活不等于越拉越好？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">肩是高自由度滑膜关节，活动大但稳定需求高。若已经灵活但控制差，继续盲目拉伸可能更不稳，应补肩袖、肩胛控制和动作技术。</div></div>
+    </section>
+
+    <section class="section mistakes">
+      <h2>错因辨析</h2>
+      <table class="compare">
+        <tr><th>易错点</th><th>错因</th><th>修正句</th></tr>
+        <tr><td>把动作模式当肌肉部位</td><td>只记“练腿练背”，没看任务类型。</td><td>动作模式描述身体解决哪类力学任务，肌肉是执行角色。</td></tr>
+        <tr><td>把开放链说成不功能</td><td>把局部训练和整体训练对立。</td><td>开放链适合局部补强，闭合链适合整体协同，二者可组合。</td></tr>
+        <tr><td>以为不稳定越高级</td><td>只看动作难，不看训练目标。</td><td>不稳定提高控制需求，但力量主项通常需要稳定地面保证输出。</td></tr>
+        <tr><td>动作分析直接背肌肉名</td><td>跳过关节运动和外力线。</td><td>先看关节运动，再看主动肌、链式结构、杠杆类型和力矩。</td></tr>
+        <tr><td>闭链还按开链死推</td><td>没看远端是否固定。</td><td>闭链远端固定时，身体可能向远端移动，要反向分析。</td></tr>
+      </table>
+    </section>
+
+    <section class="section">
+      <h2>今日复盘</h2>
+      <div class="review-box">
+        <div class="note"><strong>30 秒默写：</strong>七大动作模式、开放链、闭合链、不稳定训练影响、动作分析四步。</div>
+        <div class="note"><strong>动作拆解：</strong>用深蹲说明闭合链、髋膝踝协同、主动肌、稳定需求和力矩变化。</div>
+        <div class="note"><strong>旧知连接：</strong>用 Day10 起止点 + Day16 力矩解释为什么引体向上和高位下拉相似又不同。</div>
+        <div class="note"><strong>错题回看：</strong>链式结构错回 Day17；力臂错回 Day16；肌梭/GTO 和收缩阶段错回 Day14；起止点错回 Day10；关节分类错回 Day03。</div>
+      </div>
+    </section>
+
+    <footer>Fitness Study · Day 17/112 · 中午12:00复习推送 · 仅复习，不推进进度</footer>
+  </main>
+  <script>
+    function showAnswer(btn){btn.nextElementSibling.classList.toggle("show")}
+  </script>
+</body>
+</html>

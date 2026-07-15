@@ -227,7 +227,7 @@ function esc(value) {
 
 function baseCss() {
   return `
-*{box-sizing:border-box}body{margin:0;width:${WIDTH}px;height:${HEIGHT}px;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:#f4f4f5;color:#111113}.page{position:relative;width:${WIDTH}px;height:${HEIGHT}px;overflow:hidden;padding:58px 72px 52px;background:linear-gradient(180deg,#fff 0%,#f7f7f8 100%)}.page:before{content:"";position:absolute;left:0;top:0;width:100%;height:12px;background:#ff5a1f}.brand{display:flex;align-items:center;justify-content:space-between;color:#71717a;font-size:28px;font-weight:800}.brand b{color:#111113}.brand b span{color:#ff5a1f}.rule{width:120px;height:6px;border-radius:999px;background:#ff5a1f;margin:34px 0 24px}.eyebrow{color:#ff5a1f;font-size:28px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}.h1{margin:18px 0 14px;font-size:66px;line-height:1.12}.lead{margin:0;color:#52525b;font-size:30px;line-height:1.55}.chips{display:flex;flex-wrap:wrap;gap:14px;margin-top:24px}.chip{display:inline-flex;align-items:center;border-radius:999px;padding:13px 18px;font-size:24px;font-weight:900}.chip.orange{background:rgba(255,90,31,.1);color:#ff5a1f}.chip.blue{background:rgba(96,165,250,.16);color:#2563eb}.chip.green{background:rgba(74,222,128,.18);color:#15803d}.timeline{display:grid;gap:16px;margin-top:96px}.slot{border:1px solid #e4e4e7;border-radius:24px;background:#fff;padding:22px 24px;display:grid;grid-template-columns:190px 1fr;gap:20px;align-items:center}.slot b{color:#ff5a1f;font-size:28px;white-space:nowrap}.slot span{font-size:30px;font-weight:900}.slot small{display:block;margin-top:6px;color:#71717a;font-size:22px}.card{margin-top:22px;border:1px solid #e4e4e7;border-radius:26px;background:#fff;padding:22px 28px 21px;box-shadow:0 12px 28px rgba(0,0,0,.04)}.card+.card{margin-top:26px}.qtag{display:flex;align-items:center;gap:12px;margin-bottom:12px}.qtag span{border-radius:999px;background:rgba(255,90,31,.1);color:#ff5a1f;padding:8px 13px;font-size:21px;font-weight:900}.qtag b{font-size:24px;color:#52525b}.question{font-size:29px;font-weight:900;line-height:1.38;margin:0 0 15px}.opts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.opts.single{grid-template-columns:1fr}.opt{border:1px solid #e4e4e7;border-radius:18px;background:#fafafa;padding:14px 16px;font-size:24px;font-weight:800;line-height:1.35}.scenario{border-color:#bfdbfe;background:linear-gradient(135deg,rgba(96,165,250,.13),rgba(74,222,128,.1))}.scenario .qtag span{background:rgba(96,165,250,.18);color:#2563eb}.scenario .question{margin-bottom:0}.answers{display:grid;gap:24px;margin-top:24px}.answer{border:1px solid #e4e4e7;border-radius:22px;background:#fff;padding:20px 22px}.answer h2{margin:0 0 8px;font-size:29px;line-height:1.3}.answer p{margin:0;color:#52525b;font-size:24px;line-height:1.55}.answer-key{color:#ff5a1f}.scenario-answer{border-color:#bbf7d0;background:rgba(74,222,128,.09)}.scenario-answer h2{color:#15803d}.footer{position:absolute;left:72px;right:72px;bottom:42px;display:flex;justify-content:space-between;color:#a1a1aa;font-size:24px;font-weight:800}`;
+*{box-sizing:border-box}body{margin:0;width:${WIDTH}px;height:${HEIGHT}px;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:#f4f4f5;color:#111113}.page{position:relative;width:${WIDTH}px;height:${HEIGHT}px;overflow:hidden;padding:58px 72px 52px;background:linear-gradient(180deg,#fff 0%,#f7f7f8 100%)}.page:before{content:"";position:absolute;left:0;top:0;width:100%;height:12px;background:#ff5a1f}.brand{display:flex;align-items:center;justify-content:space-between;color:#71717a;font-size:28px;font-weight:800}.brand b{color:#111113}.brand b span{color:#ff5a1f}.rule{width:120px;height:6px;border-radius:999px;background:#ff5a1f;margin:34px 0 24px}.eyebrow{color:#ff5a1f;font-size:28px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}.h1{margin:18px 0 14px;font-size:66px;line-height:1.12}.lead{margin:0;color:#52525b;font-size:30px;line-height:1.55}.chips{display:flex;flex-wrap:wrap;gap:14px;margin-top:24px}.chip{display:inline-flex;align-items:center;border-radius:999px;padding:13px 18px;font-size:24px;font-weight:900}.chip.orange{background:rgba(255,90,31,.1);color:#ff5a1f}.chip.blue{background:rgba(96,165,250,.16);color:#2563eb}.chip.green{background:rgba(74,222,128,.18);color:#15803d}.timeline{display:grid;gap:16px;margin-top:96px}.slot{border:1px solid #e4e4e7;border-radius:24px;background:#fff;padding:22px 24px;display:grid;grid-template-columns:190px 1fr;gap:20px;align-items:center}.slot b{color:#ff5a1f;font-size:28px;white-space:nowrap}.slot span{font-size:30px;font-weight:900}.slot small{display:block;margin-top:6px;color:#71717a;font-size:22px}.card{margin-top:22px;border:1px solid #e4e4e7;border-radius:26px;background:#fff;padding:22px 28px 21px;box-shadow:0 12px 28px rgba(0,0,0,.04)}.card+.card{margin-top:26px}.qtag{display:flex;align-items:center;gap:12px;margin-bottom:12px}.qtag span{border-radius:999px;background:rgba(255,90,31,.1);color:#ff5a1f;padding:8px 13px;font-size:21px;font-weight:900}.qtag b{font-size:24px;color:#52525b}.question{font-size:29px;font-weight:900;line-height:1.38;margin:0 0 15px}.opts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.opts.single{grid-template-columns:1fr}.opt{border:1px solid #e4e4e7;border-radius:18px;background:#fafafa;padding:14px 16px;font-size:24px;font-weight:800;line-height:1.35}.lbl{font-weight:900;color:#ff5a1f;margin-right:6px}.scenario{border-color:#bfdbfe;background:linear-gradient(135deg,rgba(96,165,250,.13),rgba(74,222,128,.1))}.scenario .qtag span{background:rgba(96,165,250,.18);color:#2563eb}.scenario .question{margin-bottom:0}.answers{display:grid;gap:24px;margin-top:24px}.answer{border:1px solid #e4e4e7;border-radius:22px;background:#fff;padding:20px 22px}.answer h2{margin:0 0 8px;font-size:29px;line-height:1.3}.answer p{margin:0;color:#52525b;font-size:24px;line-height:1.55}.answer-key{color:#ff5a1f}.scenario-answer{border-color:#bbf7d0;background:rgba(74,222,128,.09)}.scenario-answer h2{color:#15803d}.footer{position:absolute;left:72px;right:72px;bottom:42px;display:flex;justify-content:space-between;color:#a1a1aa;font-size:24px;font-weight:800}`;
 }
 
 function optionsClass(options) {
@@ -250,6 +250,69 @@ function stripTags(value) {
     .replace(/&nbsp;/g, " ")
     .replace(/\s+/g, " ")
     .trim();
+}
+
+function headlineAnswer(value) {
+  const text = stripTags(value);
+  if (!text) return "";
+  const firstSentence = text.split(/[。！？!?]/).map((part) => part.trim()).find(Boolean) || text;
+  if (firstSentence.length <= 28) return firstSentence;
+  const compact = firstSentence.replace(/[，,；;、]\s*/g, "，");
+  return compact.length > 28 ? `${compact.slice(0, 28)}…` : compact;
+}
+
+function expandAnswer(value, topic) {
+  const text = stripTags(value);
+  if (!text) return "";
+  if (text.length > 45) return text;
+  return `${text}。落到 ${topic} 时，再看负荷、方向和控制。`;
+}
+
+function hashString(value) {
+  let hash = 2166136261;
+  for (let index = 0; index < value.length; index += 1) {
+    hash ^= value.charCodeAt(index);
+    hash = Math.imul(hash, 16777619);
+  }
+  return hash >>> 0;
+}
+
+function uniqueStrings(values) {
+  return [...new Set(values.map((value) => stripTags(value)).filter(Boolean))];
+}
+
+function shuffleDeterministic(values, seed) {
+  const items = values.slice();
+  let state = seed || 1;
+  for (let index = items.length - 1; index > 0; index -= 1) {
+    state = Math.imul(state ^ (state >>> 13), 2246822519) >>> 0;
+    state = Math.imul(state ^ (state >>> 15), 3266489917) >>> 0;
+    const swapIndex = state % (index + 1);
+    [items[index], items[swapIndex]] = [items[swapIndex], items[index]];
+  }
+  return items;
+}
+
+function buildChoiceOptions(question, pool) {
+  const correct = headlineAnswer(question.answer);
+  const topic = question.topic || question.scope || "";
+  const candidates = uniqueStrings(pool.map(headlineAnswer)).filter((item) => item && item !== correct);
+  const topicFallbacks = topic.includes("损伤")
+    ? ["看疼痛是否提前出现", "看负荷是否突然上调", "看落地和减速控制", "看足踝对线和旋转"]
+    : topic.includes("核心")
+      ? ["抗伸展和抗旋转", "只看腹肌酸胀", "只做卷腹", "忽略呼吸控制"]
+      : topic.includes("力矩") || topic.includes("杠杆")
+        ? ["看力臂变化", "只看骨头长度", "只看肌肉酸感", "只看器械重量"]
+        : topic.includes("动作")
+          ? ["看平面和运动轴", "只看器械外观", "只看出汗多少", "只看重量数字"]
+          : ["先看定义", "先看训练变量", "先看代偿模式", "先看恢复条件"];
+  const options = uniqueStrings([correct, ...candidates, ...topicFallbacks]).slice(0, 4);
+  while (options.length < 4) options.push(topicFallbacks[options.length % topicFallbacks.length]);
+  const shuffled = shuffleDeterministic(options, hashString(`${question.q}|${question.answer}|${topic}`));
+  return {
+    options: shuffled,
+    correctIndex: shuffled.indexOf(correct),
+  };
 }
 
 function splitTopic(value) {
@@ -276,7 +339,7 @@ function extractReviewCards(html) {
     cards.push({
       day: Number(dayMatch[1]),
       topic: splitTopic(heading),
-      label: meta.includes("今天早上") ? "R0 今日回忆" : meta.includes("1天") ? "R1 次日复习" : meta.includes("3天") ? "R2 第3天复习" : meta.includes("7天") ? "R3 第7天复习" : `R${cards.length} 间隔复习`,
+      label: meta.includes("今天早上") ? "R0 今日回忆" : meta.includes("1天") ? "R1 次日复习" : meta.includes("3天") ? "R2 第3天复习" : meta.includes("7天") ? "R3 第7天复习" : meta.includes("14天") ? "R4 第14天复习" : `R${cards.length} 间隔复习`,
     });
   }
   return cards;
@@ -326,6 +389,60 @@ function generatedScenario(card, fallback) {
       answer: "先看研究设计是否能支持因果，尤其是否有随机对照；再看是否控制训练经验、蛋白、热量、睡眠等混杂因素；最后看效果量和实际意义，不只看 p 值。",
     };
   }
+  if (topic.includes("核心")) {
+    return {
+      q: `场景题：客户平板支撑总是腰塌，和做 Pallof press 时躯干还会转。你会先怎么分辨问题？`,
+      answer: "先判断是抗伸展不足还是抗旋转不足。平板塌腰更偏抗伸展，Pallof press 乱转更偏抗旋转；再分别用死虫、侧桥、Pallof press 和呼吸撑腹去补。",
+    };
+  }
+  if (topic.includes("上肢")) {
+    return {
+      q: `场景题：客户卧推卡在下半程、划船时总耸肩。你先分别看哪块肌群和哪种动作模式？`,
+      answer: "卧推先看胸大肌、三角肌前束和肱三头肌的推类协同；划船先看背阔肌、菱形肌和下斜方肌的拉类控制。卡顿常来自肌群发力次序和肩胛控制，不是单一肌肉不够大。",
+    };
+  }
+  if (topic.includes("生物力学基本概念") || topic === "生物力学基本概念与力") {
+    return {
+      q: `场景题：客户硬拉时杠铃一离开小腿，腰就明显吃力。你会怎么改？`,
+      answer: "先把杠铃贴身，缩短腰椎和髋关节的力臂，再让髋主导后坐、重心落在足中。力没变，外部力矩变小，动作立刻会顺一点。",
+    };
+  }
+  if (topic.includes("杠杆") || topic.includes("力矩")) {
+    return {
+      q: `场景题：客户做侧平举时，为什么手臂抬到接近水平最难？`,
+      answer: "因为那时哑铃重力线到肩关节的力臂最大，肩外展力矩最高。要么缩短力臂，要么降低负荷，要么把动作分段做。",
+    };
+  }
+  if (topic.includes("动作的生物力学分析") || topic.includes("动作模式")) {
+    return {
+      q: `场景题：客户问腿举和深蹲差在哪。你会怎么从动作模式解释？`,
+      answer: "腿举偏开链，远端自由，局部肌群更容易孤立受力；深蹲偏闭链，脚固定在地面，多关节协同和传力更强。训练目的不同，选法就不同。",
+    };
+  }
+  if (topic.includes("脊柱") || topic.includes("核心生物力学")) {
+    return {
+      q: `场景题：客户硬拉到中段就开始圆背，你先看哪两个点？`,
+      answer: "先看髋铰链是否真的发生，再看腹压和杠铃是否贴身。髋没主导、杠铃离身，腰椎就容易被迫多吃屈曲力矩。",
+    };
+  }
+  if (topic.includes("肌力与肌耐力")) {
+    return {
+      q: `场景题：客户 1RM 提升快，但 12 次一组后半程总掉速。你会怎么区分是肌力问题还是肌耐力问题？`,
+      answer: "1RM 更看神经驱动、产力上限和技术；12 次后半程掉速更看局部抗疲劳、重复输出和动作经济性。一个能推重，不等于一个能重复撑住。",
+    };
+  }
+  if (topic.includes("肌肉收缩类型")) {
+    return {
+      q: `场景题：客户深蹲下放、底部停顿、起身三个阶段，你会怎么分别叫法？`,
+      answer: "下放是离心，底部停顿是等长，起身是向心。训练分析要分阶段看，不然很容易把控制和发力混成一团。",
+    };
+  }
+  if (topic.includes("运动损伤")) {
+    return {
+      q: `场景题：客户最近跑量突然翻倍，膝外侧和跟腱开始不舒服。你先按哪 3 步排查？`,
+      answer: "先看负荷是否突然上调，再看疼痛是训练中还是训练后提前出现，最后查落地、减速、变向和足踝对线。急性峰值和过度使用是两条不同线。",
+    };
+  }
   if (topic.includes("关节分类") || topic.includes("滑膜关节")) {
     return {
       q: `场景题：客户深蹲时脚踝卡、膝盖内扣。你用 Day ${day} 的关节分类和稳定-灵活权衡怎么分析？`,
@@ -364,15 +481,13 @@ function generatedScenario(card, fallback) {
   }
   if (topic.includes("骨学基础") || topic.includes("骨骼系统")) {
     return {
-      q: `场景题：新手问“骨头只是支架吗？”你用 Day ${day} 的骨功能解释它和训练有什么关系。`,
+      q: `场景题：客户做深蹲时总说“骨头只是撑着”，你会怎么解释骨在训练里的作用？`,
       answer: "骨不只是支架，还负责保护、储存矿物、参与造血，并作为肌肉发力的杠杆。力量训练要渐进，因为骨和结缔组织适应慢于神经与肌肉。",
     };
   }
   return {
-    q: `场景题：客户问“${topic} 和训练有什么关系？”请用 Day ${day} 的 3 个关键词解释，并指出 1 个常见误区。`,
-    answer: fallback
-      ? `先用本组核心题校准概念：${fallback.answer}。再补一句训练应用，并指出一个容易混淆的点。`
-      : `围绕 ${topic} 说清定义、训练应用和常见误区。`,
+    q: `场景题：客户在 ${topic} 相关动作上卡住，你会先看哪里？`,
+    answer: `先把 ${topic} 对应到一个具体动作场景，再看动作质量、负荷大小和恢复状态。通常先改最容易出错的一项，再用同类动作做回退或进阶。`,
   };
 }
 
@@ -385,27 +500,40 @@ function buildDeckFromReviewHtml(day) {
     throw new Error(`Could not extract cards/questions from ${reviewPath}`);
   }
   const groups = cards.map((card, index) => {
-    const questions = recallQuestions
-      .filter((question) => !question.isScenario && (question.day === card.day || (card.day === day && question.isToday)))
-      .slice(0, 2);
-    const fallback = recallQuestions.find((question) => question.day === card.day || (card.day === day && question.isToday));
-    const scenarioQuestion = recallQuestions.find((question) => question.isScenario && question.day === card.day);
+    const matched = recallQuestions.filter((question) => question.day === card.day || (card.day === day && question.isToday));
+    const questions = matched.filter((question) => !question.isScenario).slice(0, 2);
+    const scenarioQuestion = matched.find((question) => question.isScenario) || null;
     const scenario = scenarioQuestion
-      ? { q: `场景题：${scenarioQuestion.q}`, answer: scenarioQuestion.answer }
-      : generatedScenario(card, fallback);
+      ? { q: `场景题：${scenarioQuestion.q}`, answer: scenarioQuestion.answer, day: card.day, topic: card.topic }
+      : { ...generatedScenario(card), day: card.day, topic: card.topic };
     return {
       label: card.label || `R${index} 复习`,
       day: card.day,
       topic: card.topic,
-      questions: questions.length ? questions : fallback ? [fallback] : [],
+      questions,
       scenario,
     };
   });
+  const answerPool = groups.flatMap((group) => [
+    ...group.questions.map((question) => question.answer),
+    group.scenario.answer,
+  ]);
+  const enrichedGroups = groups.map((group) => ({
+    ...group,
+    questions: group.questions.map((question) => ({
+      ...question,
+      choice: buildChoiceOptions(question, answerPool),
+    })),
+    scenario: {
+      ...group.scenario,
+      choice: buildChoiceOptions(group.scenario, answerPool),
+    },
+  }));
   return {
     day,
     title: "艾宾浩斯复习区",
     subtitle: "今天 + 次日 + 第3天 + 第7天",
-    groups: groups.filter((group) => group.questions.length),
+    groups: enrichedGroups.filter((group) => group.questions.length),
   };
 }
 
@@ -437,7 +565,6 @@ function questionPage(deck, pageIndex, groups) {
           (question, index) => `<section class="card">
           <div class="qtag"><span>${group.label}</span><b>Day ${group.day} · ${group.topic} · Q${index + 1}</b></div>
           <p class="question">${esc(question.q)}</p>
-          ${question.options.length ? `<div class="${optionsClass(question.options)}">${question.options.map((option) => `<div class="opt">${esc(option)}</div>`).join("")}</div>` : `<div class="opt">先口头作答，再翻答案页校准。</div>`}
         </section>`,
         ),
         `<section class="card scenario">
@@ -464,13 +591,13 @@ function answerPage(deck, pageIndex, groups) {
       [
         ...group.questions.map(
           (question, index) => `<section class="answer">
-          <h2>${group.label} · Day ${group.day} · Q${index + 1}：<span class="answer-key">${esc(question.answer)}</span></h2>
-          <p>${esc(question.explain)}</p>
+          <h2>${group.label} · Day ${group.day} · Q${index + 1}：<span class="answer-key">${esc(headlineAnswer(question.answer))}</span></h2>
+          <p>${esc(expandAnswer(question.answer, group.topic))}</p>
         </section>`,
         ),
         `<section class="answer scenario-answer">
           <h2>场景题参考答法</h2>
-          <p>${esc(group.scenario.answer)}</p>
+          <p>${esc(expandAnswer(group.scenario.answer, group.topic))}</p>
         </section>`,
       ],
     )

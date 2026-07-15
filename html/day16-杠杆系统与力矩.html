@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 16 · 杠杆系统与力矩</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.75;background:#f6f8f7;color:#1a2b22;padding:18px}.wrap{max-width:980px;margin:auto}.header{text-align:center;padding:24px 10px}.header h1{margin:0 0 10px;font-size:2rem;background:linear-gradient(90deg,#0ea66b,#0ea5e9);-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:0}.sub{color:#5a6b62}.chips{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:10px}.chip{font-size:.78rem;border:1px solid #d4ebe0;border-radius:999px;padding:3px 10px;background:#fff;color:#0c6da3}.panel,.figure,.warn{background:#fff;border:1px solid #e2e8e4;border-radius:14px;padding:18px;margin:14px 0;box-shadow:0 2px 12px rgba(20,40,30,.06)}.lead{border-left:4px solid #0ea66b}.orange{border-left:4px solid #ea7a17}.figure img{width:100%;display:block;border-radius:12px;border:1px solid #e2e8e4;background:#fbfdfc;cursor:zoom-in}.caption{font-size:.85rem;color:#5a6b62;margin-top:8px;text-align:center}.panel h2,.warn h2{font-size:1.18rem;margin:0 0 10px;color:#0a7d52}.term{font-weight:700;color:#0a7d52;background:#e8f5ee;border-radius:5px;padding:1px 5px}ul.kp{list-style:none;padding:0;margin:0}ul.kp>li{border-bottom:1px dashed #e2e8e4}.kp-head{display:block;cursor:pointer;position:relative;padding:13px 8px 13px 30px}.kp-head:before{content:"▸";position:absolute;left:8px;color:#0ea66b;font-weight:800;transition:.2s}.open>.kp-head:before{transform:rotate(90deg)}.kp-head:hover{background:#f0f4f2}.kp-body{display:none;padding:0 14px 16px 30px}.open>.kp-body{display:block}.dim{display:block;margin-top:10px;font-size:.78rem;font-weight:800;color:#0c6da3}.take{border-left:4px solid #0ea66b;background:#f0fbf5;border-radius:10px;padding:10px 12px;margin:10px 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin:12px 0}.mini{border:1px solid #dbe8e1;border-radius:12px;background:#fbfdfc;padding:12px}.mini h4{margin:0 0 7px;font-size:.98rem;color:#0a7d52}.tbl{width:100%;border-collapse:collapse;font-size:.9rem;margin:10px 0}.tbl th{background:#0ea66b;color:#fff;text-align:left}.tbl th,.tbl td{padding:8px;border-bottom:1px solid #e2e8e4;vertical-align:top}.formula{font-weight:900;color:#ea7a17;background:#fff8ef;border:1px solid #f2d5b5;border-radius:10px;padding:10px 12px;margin:10px 0;text-align:center}.warn{border-left:4px solid #e23b3b}.warn p{margin:8px 0}.mnemonic{background:linear-gradient(135deg,#0ea66b,#0ea5e9);color:#fff;border-radius:14px;padding:20px;margin:14px 0;box-shadow:0 2px 12px rgba(20,40,30,.08)}.mnemonic h2{margin:0 0 8px;font-size:1.15rem}.mnemonic strong{color:#fff7d6}.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}.flip{min-height:145px;perspective:800px;cursor:pointer}.flip-inner{position:relative;width:100%;height:100%;min-height:145px;transition:transform .5s;transform-style:preserve-3d}.flip.flipped .flip-inner{transform:rotateY(180deg)}.face{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:15px;border-radius:13px;border:1px solid #e2e8e4;backface-visibility:hidden;background:#fff;font-weight:700}.front{color:#0a7d52;background:#f8fffb}.back{transform:rotateY(180deg);background:#eef7ff;color:#0c6da3;font-weight:600}.quiz{border-top:1px dashed #e2e8e4;padding-top:12px;margin-top:12px}.quiz h3{margin:0 0 8px;font-size:1rem;color:#1a2b22}.opt{border:1px solid #e2e8e4;border-radius:10px;padding:9px 10px;margin:7px 0;background:#fff;cursor:pointer}.opt:hover{background:#f0f4f2}.lbl{font-weight:800;color:#0c6da3;margin-right:4px}.correct{border-color:#0ea66b!important;background:#e9f8f0!important}.wrong-show{border-color:#e23b3b!important;background:#fff0f0!important}button{border:0;border-radius:999px;background:#0ea66b;color:#fff;font-weight:800;padding:8px 14px;cursor:pointer;margin-top:6px}.reveal{display:none;border-left:4px solid #0ea5e9;background:#f0f8fc;border-radius:10px;padding:10px;margin-top:8px}.reveal.show{display:block}.list{padding-left:20px;margin:8px 0}.list li{margin:7px 0}footer{text-align:center;color:#5a6b62;font-size:.85rem;margin:22px 0}.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.82);display:none;align-items:center;justify-content:center;z-index:9;padding:18px}.lightbox.show{display:flex}.lightbox img{max-width:96vw;max-height:92vh;border-radius:10px;background:#fff}@media(max-width:640px){body{padding:10px}.header h1{font-size:1.5rem}.panel,.figure,.warn{padding:14px}.kp-body{padding-left:14px}.card-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="header">
+      <h1>Day 16 · 杠杆系统与力矩</h1>
+      <div class="sub">今天主题: 用支点、力臂和阻力臂解释为什么同一个动作会忽然变难。</div>
+      <div class="chips"><span class="chip">第3周 · 阶段1基础科学</span><span class="chip">NSCA + NASM 双证</span><span class="chip">早间新知识</span></div>
+    </header>
+
+    <section class="panel lead">
+      <h2>一句话总结</h2>
+      <p>人体动作像一套会移动的撬棍: <strong>关节是支点，肌肉拉力是力点，外部重量或身体重量是阻力点；动作难不难，关键看力矩，也就是力 × 力臂</strong>。同样 10 kg 哑铃，在不同角度、不同握距、不同站距下，关节要扛的旋转压力完全不同。</p>
+    </section>
+
+    <figure class="figure">
+      <img src="assets/阶段1基础科学/day16-杠杆系统与力矩.png" alt="杠杆系统与力矩中文标注学习图">
+      <div class="caption">看图重点: 肘关节是支点，肱二头肌靠近支点发力，哑铃在远端形成阻力；力臂越长，旋转效果越强。</div>
+    </figure>
+
+    <section class="panel">
+      <h2>核心要点</h2>
+      <ul class="kp">
+        <li>
+          <span class="kp-head"><span class="term">杠杆三要素</span>: 支点、力点、阻力点决定一根骨头绕关节怎么转。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 骨头像杠杆，关节像铰链，肌肉通过肌腱拉骨头，外部重量或身体重量负责“反着拉”。</div>
+            <table class="tbl">
+              <tr><th>要素</th><th>大白话</th><th>弯举例子</th></tr>
+              <tr><td>支点</td><td>旋转中心。</td><td>肘关节。</td></tr>
+              <tr><td>力点</td><td>肌肉把力施加到骨头的位置。</td><td>肱二头肌肌腱附着附近。</td></tr>
+              <tr><td>阻力点</td><td>重量或身体重心施加阻力的位置。</td><td>手里哑铃和前臂重量。</td></tr>
+            </table>
+            <span class="dim">底层机制</span>
+            <p>肌肉不会直接“推”骨头，大多数情况下是通过肌腱把骨头向一个方向拉。骨头被拉后绕关节转动，于是形成杠杆系统。</p>
+            <span class="dim">真实例子</span>
+            <p>二头弯举时，肘关节固定为支点，肱二头肌收缩拉动桡骨附近，手里哑铃向下提供阻力。能不能弯起来，取决于肌肉力矩能否超过阻力力矩。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为杠杆只存在于器械。✅其实每个关节动作几乎都能用杠杆看: 肩推、深蹲、提踵、颈部伸展都一样。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">三类杠杆</span>: 第一类支点在中间，第二类阻力在中间，第三类力点在中间。</span>
+          <div class="kp-body">
+            <table class="tbl">
+              <tr><th>类型</th><th>排列方式</th><th>人体例子</th><th>考试抓点</th></tr>
+              <tr><td>第一类</td><td>力点-支点-阻力点</td><td>颈部伸展，寰枕关节附近。</td><td>支点在中间，像跷跷板。</td></tr>
+              <tr><td>第二类</td><td>支点-阻力点-力点</td><td>提踵，脚趾为支点，体重在中间，小腿三头肌发力。</td><td>阻力在中间，力量优势明显。</td></tr>
+              <tr><td>第三类</td><td>支点-力点-阻力点</td><td>二头弯举、膝伸展、肩外展。</td><td>人体最常见，速度和幅度优势。</td></tr>
+            </table>
+            <span class="dim">底层机制</span>
+            <p>分类不看动作名字，看三点相对位置。把支点、力点、阻力点画出来，就能判断是哪类杠杆。</p>
+            <span class="dim">训练含义</span>
+            <p>第二类杠杆省力，所以提踵能承受很大负荷；第三类杠杆费力但末端速度快、活动范围大，所以人体适合快速移动手脚。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为人体第三类杠杆是“不合理设计”。✅其实它牺牲机械力量，换来速度、精细控制和大范围运动。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">力矩</span>: 力矩 = 力 × 力臂，表示某个力让关节旋转的效果。</span>
+          <div class="kp-body">
+            <div class="formula">力矩 = 力 × 力臂</div>
+            <div class="grid">
+              <div class="mini"><h4>字面意思</h4><p>力矩衡量旋转能力。力越大，或力臂越长，越容易让物体绕支点转。</p></div>
+              <div class="mini"><h4>大白话</h4><p>开门时推门把手比推门轴旁边轻松，因为到门轴距离更长，力臂更大。</p></div>
+              <div class="mini"><h4>为什么影响训练</h4><p>哑铃没变重，但关节角度让力臂变长时，肌肉必须产生更大力矩，动作会突然变难。</p></div>
+            </div>
+            <span class="dim">真实例子</span>
+            <p>侧平举最难通常在手臂接近水平时，因为哑铃重力线到肩关节的垂直距离最大。手臂垂在身体旁边时，同样重量对肩的外展阻力矩很小。</p>
+            <span class="dim">训练含义</span>
+            <p>想判断某动作刺激哪个关节或肌肉，先看外力线，再看它到关节的垂直距离。这个距离比“看起来离得远”更重要。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为力臂就是骨头长度。✅其实力臂是支点到力作用线的垂直距离，不等于整段骨头的长度。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">人体第三类杠杆</span>: 大部分人体动作力点在支点和阻力点之间，机械优势常小于 1。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 人体很多肌腱附着点离关节很近，肌肉要用很大力，才能移动远端相对较小的重量。</div>
+            <table class="tbl">
+              <tr><th>特点</th><th>代价</th><th>好处</th></tr>
+              <tr><td>力点靠近支点</td><td>肌肉需要更大力量。</td><td>远端移动速度快。</td></tr>
+              <tr><td>阻力点远离支点</td><td>阻力力矩容易变大。</td><td>手脚活动范围大。</td></tr>
+              <tr><td>机械优势小于 1</td><td>不省力。</td><td>适合运动、投掷、抓握、跑跳。</td></tr>
+            </table>
+            <span class="dim">真实例子</span>
+            <p>弯举 10 kg 哑铃时，肱二头肌实际张力远不止 10 kg 对应的重量，因为肌肉力臂很短，必须用更大肌肉力矩抵消哑铃和前臂的阻力矩。</p>
+            <span class="dim">训练含义</span>
+            <p>不要用“外部重量轻”低估关节压力。小哑铃侧平举、直臂前平举、悬垂举腿，都可能因为长阻力臂而很难。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为练得重才有大力矩。✅其实轻重量加长力臂也能让目标关节承受很大力矩。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">机械优势</span>: 机械优势 = 力臂 / 阻力臂，用来判断杠杆省力还是费力。</span>
+          <div class="kp-body">
+            <div class="formula">机械优势 = 力臂 ÷ 阻力臂</div>
+            <div class="grid">
+              <div class="mini"><h4>大于 1</h4><p>力臂比阻力臂长，更省力。典型是很多第二类杠杆。</p></div>
+              <div class="mini"><h4>等于 1</h4><p>两边力臂差不多，省力和速度优势都不明显。</p></div>
+              <div class="mini"><h4>小于 1</h4><p>力臂短于阻力臂，更费力但末端速度快。人体第三类杠杆常见。</p></div>
+            </div>
+            <span class="dim">底层机制</span>
+            <p>机械优势只描述杠杆结构，不直接等于训练效果。省力动作适合搬重，费力动作可能更适合速度、幅度或局部肌肉刺激。</p>
+            <span class="dim">真实例子</span>
+            <p>提踵时脚趾附近是支点，体重在中间，小腿三头肌通过跟腱在后方发力，属于第二类杠杆，结构上更有力量优势。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为机械优势越高训练越好。✅其实目标不同。想举起大重量需要优势，想让某肌肉承担更大挑战，有时反而利用较差机械优势。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">角度改变力矩</span>: 同一重量在不同关节角度下，阻力臂会变长或变短。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 自由重量动作常有“最难点”，因为重力方向固定向下，关节转动后，重力线到关节的垂直距离不断变化。</div>
+            <table class="tbl">
+              <tr><th>动作</th><th>常见最难点</th><th>原因</th></tr>
+              <tr><td>二头弯举</td><td>前臂接近水平附近。</td><td>哑铃重力线到肘关节距离最大。</td></tr>
+              <tr><td>侧平举</td><td>上臂接近水平附近。</td><td>哑铃到肩关节的阻力臂最大。</td></tr>
+              <tr><td>俯卧撑</td><td>底部到中段。</td><td>肩肘力矩大，同时胸肩三头要协同。</td></tr>
+            </table>
+            <span class="dim">训练含义</span>
+            <p>弹力带、绳索和机器可以改变阻力曲线，让某些角度更难或更轻。选器械时要问: 它把最大阻力放在哪个角度?</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为全程重量一样，所以全程难度一样。✅自由重量的重量没变，但阻力臂在变，所以关节力矩会变。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">训练变量</span>: 握距、站距、负重位置会改变力臂，进而改变动作难度和刺激部位。</span>
+          <div class="kp-body">
+            <div class="grid">
+              <div class="mini"><h4>握距</h4><p>卧推握距改变肩肘角度，也改变胸、前三角、肱三头的相对力矩需求。</p></div>
+              <div class="mini"><h4>站距</h4><p>深蹲站距和脚尖方向会改变髋、膝、踝的力臂分配。</p></div>
+              <div class="mini"><h4>负重位置</h4><p>前蹲、后蹲、壶铃杯式深蹲让重心位置不同，躯干和髋膝力矩也不同。</p></div>
+            </div>
+            <span class="dim">真实例子</span>
+            <p>罗马尼亚硬拉把杠铃保持贴近身体，可缩短杠铃到腰椎和髋关节的水平距离。杠铃离身体越远，髋和腰背需要抵抗的外部力矩越大。</p>
+            <span class="dim">训练含义</span>
+            <p>调整动作时别只说“舒服就行”。要看调整后哪条力臂变长、哪个关节力矩变大、目标肌是否更接近训练目的。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为技术细节只是姿势好看。✅其实很多技术细节都在管理力臂，避免无效力矩或过高关节压力。</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="warn">
+      <h2>常见误区</h2>
+      <p>❌很多人以为“重量轻就安全”。✅其实长力臂会把轻重量放大成很高的关节力矩，侧平举就是典型例子。</p>
+      <p>❌很多人以为力臂就是从关节到哑铃的骨头距离。✅其实力臂是到力作用线的垂直距离，必须看外力方向。</p>
+      <p>❌很多人以为人体杠杆费力是缺点。✅其实第三类杠杆换来远端速度、动作幅度和精细控制。</p>
+    </section>
+
+    <section class="mnemonic">
+      <h2>记忆口诀</h2>
+      <p><strong>支点看关节，力点看肌腱；阻力看重量，力臂看垂线；力矩力乘臂，三类位置辨；人体多三类，费力换速度。</strong></p>
+    </section>
+
+    <section class="panel">
+      <h2>翻转卡复习</h2>
+      <div class="card-grid">
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">杠杆三要素是什么?</div><div class="face back">支点、力点、阻力点。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">力矩公式?</div><div class="face back">力矩 = 力 × 力臂。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">力臂怎么定义?</div><div class="face back">支点到力作用线的垂直距离。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">人体最常见哪类杠杆?</div><div class="face back">第三类杠杆。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">第三类杠杆排列?</div><div class="face back">支点-力点-阻力点。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">第二类杠杆人体例子?</div><div class="face back">提踵。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">机械优势公式?</div><div class="face back">力臂 ÷ 阻力臂。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">侧平举为什么水平处难?</div><div class="face back">肩关节到哑铃重力线的阻力臂最大。</div></div></div>
+      </div>
+    </section>
+
+    <section class="panel orange">
+      <h2>实操关联</h2>
+      <ul class="list">
+        <li><strong>增肌:</strong> 想让目标肌更吃力，可以在安全范围内增加目标关节外部力矩，例如侧平举保持手臂较长。</li>
+        <li><strong>力量:</strong> 想举更重，要管理力臂。硬拉让杠铃贴身，深蹲让杠铃保持在足中线附近。</li>
+        <li><strong>爆发:</strong> 第三类杠杆虽费力，但让手脚末端速度快，解释投掷、挥拍、跳跃摆臂的优势。</li>
+        <li><strong>康复:</strong> 早期可缩短力臂降低关节力矩，例如屈肘侧平举比直臂侧平举更容易。</li>
+        <li><strong>动作教学:</strong> 看到动作代偿时，先找支点、外力线和力臂，再判断是技术问题、活动度问题还是力量不足。</li>
+        <li><strong>器械选择:</strong> 绳索、弹力带和机器会改变阻力方向，阻力曲线不等于哑铃，需要单独分析。</li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2>练习题</h2>
+      <div class="quiz">
+        <h3>1. 单选: 力矩的正确公式是?</h3>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">A.</span>力矩 = 质量 × 速度</div>
+        <div class="opt" onclick="pick(this,'correct')"><span class="lbl">B.</span>力矩 = 力 × 力臂</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">C.</span>力矩 = 时间 × 距离</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">D.</span>力矩 = 阻力臂 ÷ 力臂</div>
+        <button onclick="showAns('ans1')">查看解析</button>
+        <div class="reveal" id="ans1">答案 B。力矩描述旋转效果，等于力乘以力臂。A 混入速度，C 是普通距离时间关系，D 更接近机械优势的倒数。</div>
+      </div>
+      <div class="quiz">
+        <h3>2. 单选: 二头弯举通常属于哪类杠杆?</h3>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">A.</span>第一类</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">B.</span>第二类</div>
+        <div class="opt" onclick="pick(this,'correct')"><span class="lbl">C.</span>第三类</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">D.</span>不属于杠杆</div>
+        <button onclick="showAns('ans2')">查看解析</button>
+        <div class="reveal" id="ans2">答案 C。肘关节是支点，肱二头肌力点在中间，哑铃阻力点在手部远端，所以是第三类杠杆。人体大多数动作也是第三类。</div>
+      </div>
+      <div class="quiz">
+        <h3>3. 多选: 下列哪些会改变关节力矩?</h3>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">A.</span>负重离关节更远</div>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">B.</span>绳索或弹力带拉力方向改变</div>
+        <div class="opt" onclick="pickMulti(this)"><span class="lbl">C.</span>只改变衣服颜色</div>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">D.</span>关节角度改变导致阻力臂变化</div>
+        <button onclick="showAns('ans3')">查看解析</button>
+        <div class="reveal" id="ans3">答案 A、B、D。A 增大阻力臂，B 改变力作用线，D 改变力臂长度，都会影响关节力矩。C 与力、力臂、外力方向无关。</div>
+      </div>
+      <div class="quiz">
+        <h3>4. 案例题: 会员做罗马尼亚硬拉时杠铃离小腿很远，感觉腰背压力很大。请用力矩解释。</h3>
+        <button onclick="showAns('ans4')">查看解析</button>
+        <div class="reveal" id="ans4">杠铃离身体越远，杠铃重力线到髋关节和腰椎的水平距离越长，外部阻力臂变长，髋伸肌和脊柱伸肌要抵抗的外部力矩变大。处理方式是让杠铃贴近小腿和大腿，保持背阔肌张力，把杠铃路径放回足中线附近。这样不是“偷懒”，而是在减少无效力臂，把训练压力更合理地分配给髋伸展。</div>
+      </div>
+    </section>
+
+    <footer>阶段1 · Day 16/112 · 今日早间新知识(工作日6:00) · 中午12:00复习巩固</footer>
+  </main>
+  <div class="lightbox" id="lightbox"><img alt="放大图"></div>
+  <script>
+    document.querySelectorAll('ul.kp>li>.kp-head').forEach(function(h){h.addEventListener('click',function(){h.parentElement.classList.toggle('open')})});
+    function pick(el,type){el.closest('.quiz').querySelectorAll('.opt').forEach(function(o){o.classList.remove('correct','wrong-show')});el.classList.add(type==='correct'?'correct':'wrong-show')}
+    function pickMulti(el){if(el.classList.contains('correct')||el.classList.contains('wrong-show')){el.classList.remove('correct','wrong-show')}else{el.classList.add(el.dataset.c==='1'?'correct':'wrong-show')}}
+    function showAns(id){document.getElementById(id).classList.add('show')}
+    var lb=document.getElementById('lightbox');document.querySelectorAll('.figure img').forEach(function(img){img.addEventListener('click',function(){lb.querySelector('img').src=img.src;lb.classList.add('show')})});lb.addEventListener('click',function(e){if(e.target===lb)lb.classList.remove('show')});document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('show')});
+  </script>
+</body>
+</html>

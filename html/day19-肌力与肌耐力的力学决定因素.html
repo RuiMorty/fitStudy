@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 19 · 肌力与肌耐力的力学决定因素</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.75;background:#f6f8f7;color:#1a2b22;padding:18px}.wrap{max-width:980px;margin:auto}.header{text-align:center;padding:24px 10px}.header h1{margin:0 0 10px;font-size:2rem;background:linear-gradient(90deg,#0ea66b,#0ea5e9);-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:0}.sub{color:#5a6b62}.chips{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:10px}.chip{font-size:.78rem;border:1px solid #d4ebe0;border-radius:999px;padding:3px 10px;background:#fff;color:#0c6da3}.panel,.figure,.warn{background:#fff;border:1px solid #e2e8e4;border-radius:14px;padding:18px;margin:14px 0;box-shadow:0 2px 12px rgba(20,40,30,.06)}.lead{border-left:4px solid #0ea66b}.orange{border-left:4px solid #ea7a17}.figure img{width:100%;display:block;border-radius:12px;border:1px solid #e2e8e4;background:#fbfdfc;cursor:zoom-in}.caption{font-size:.85rem;color:#5a6b62;margin-top:8px;text-align:center}.panel h2,.warn h2{font-size:1.18rem;margin:0 0 10px;color:#0a7d52}.term{font-weight:700;color:#0a7d52;background:#e8f5ee;border-radius:5px;padding:1px 5px}ul.kp{list-style:none;padding:0;margin:0}ul.kp>li{border-bottom:1px dashed #e2e8e4}.kp-head{display:block;cursor:pointer;position:relative;padding:13px 8px 13px 30px}.kp-head:before{content:"▸";position:absolute;left:8px;color:#0ea66b;font-weight:800;transition:.2s}.open>.kp-head:before{transform:rotate(90deg)}.kp-head:hover{background:#f0f4f2}.kp-body{display:none;padding:0 14px 16px 30px}.open>.kp-body{display:block}.dim{display:block;margin-top:10px;font-size:.78rem;font-weight:800;color:#0c6da3}.take{border-left:4px solid #0ea66b;background:#f0fbf5;border-radius:10px;padding:10px 12px;margin:10px 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin:12px 0}.mini{border:1px solid #dbe8e1;border-radius:12px;background:#fbfdfc;padding:12px}.mini h4{margin:0 0 7px;font-size:.98rem;color:#0a7d52}.tbl{width:100%;border-collapse:collapse;font-size:.9rem;margin:10px 0}.tbl th{background:#0ea66b;color:#fff;text-align:left}.tbl th,.tbl td{padding:8px;border-bottom:1px solid #e2e8e4;vertical-align:top}.warn{border-left:4px solid #e23b3b}.warn p{margin:8px 0}.mnemonic{background:linear-gradient(135deg,#0ea66b,#0ea5e9);color:#fff;border-radius:14px;padding:20px;margin:14px 0;box-shadow:0 2px 12px rgba(20,40,30,.08)}.mnemonic h2{margin:0 0 8px;font-size:1.15rem}.mnemonic strong{color:#fff7d6}.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}.flip{min-height:145px;perspective:800px;cursor:pointer}.flip-inner{position:relative;width:100%;height:100%;min-height:145px;transition:transform .5s;transform-style:preserve-3d}.flip.flipped .flip-inner{transform:rotateY(180deg)}.face{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:15px;border-radius:13px;border:1px solid #e2e8e4;backface-visibility:hidden;background:#fff;font-weight:700}.front{color:#0a7d52;background:#f8fffb}.back{transform:rotateY(180deg);background:#eef7ff;color:#0c6da3;font-weight:600}.quiz{border-top:1px dashed #e2e8e4;padding-top:12px;margin-top:12px}.quiz h3{margin:0 0 8px;font-size:1rem;color:#1a2b22}.opt{border:1px solid #e2e8e4;border-radius:10px;padding:9px 10px;margin:7px 0;background:#fff;cursor:pointer}.opt:hover{background:#f0f4f2}.lbl{font-weight:800;color:#0c6da3;margin-right:4px}.correct{border-color:#0ea66b!important;background:#e9f8f0!important}.wrong-show{border-color:#e23b3b!important;background:#fff0f0!important}button{border:0;border-radius:999px;background:#0ea66b;color:#fff;font-weight:800;padding:8px 14px;cursor:pointer;margin-top:6px}.reveal{display:none;border-left:4px solid #0ea5e9;background:#f0f8fc;border-radius:10px;padding:10px;margin-top:8px}.reveal.show{display:block}.list{padding-left:20px;margin:8px 0}.list li{margin:7px 0}footer{text-align:center;color:#5a6b62;font-size:.85rem;margin:22px 0}.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.82);display:none;align-items:center;justify-content:center;z-index:9;padding:18px}.lightbox.show{display:flex}.lightbox img{max-width:96vw;max-height:92vh;border-radius:10px;background:#fff}@media(max-width:640px){body{padding:10px}.header h1{font-size:1.5rem}.panel,.figure,.warn{padding:14px}.kp-body{padding-left:14px}.card-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="header">
+      <h1>Day 19 · 肌力与肌耐力的力学决定因素</h1>
+      <div class="sub">今天主题: 为什么同一块肌肉，有时能爆发大重量，有时却在高次数里先掉速。</div>
+      <div class="chips"><span class="chip">第3周 · 阶段1基础科学</span><span class="chip">NSCA + NASM 双证</span><span class="chip">早间新知识</span></div>
+    </header>
+
+    <section class="panel lead">
+      <h2>一句话总结</h2>
+      <p>肌力像一台车的最大扭矩，肌耐力像这台车能稳定跑多久: <strong>神经油门、肌肉横截面积、肌肉当下长度、收缩速度和疲劳管理</strong>共同决定输出。新手前几周力量涨很快，常常不是肌肉马上变大，而是神经系统更会“叫醒”肌肉。</p>
+    </section>
+
+    <figure class="figure">
+      <img src="assets/阶段1基础科学/day19-肌力与肌耐力的力学决定因素.png" alt="肌力与肌耐力的力学决定因素中文标注学习图">
+      <div class="caption">看图重点: 肌力不是只看肌肉大小，还要看运动单位募集、发放频率、长度-张力关系、力-速度曲线和 SSC 辅助。</div>
+    </figure>
+
+    <section class="panel">
+      <h2>核心要点</h2>
+      <ul class="kp">
+        <li>
+          <span class="kp-head"><span class="term">神经因素</span>: 力量输出首先取决于大脑和脊髓能叫醒多少运动单位、叫得多快、叫得是否协调。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 新手力量先涨，常是神经驱动变好，不是肌肉横截面积立刻暴增。</div>
+            <div class="grid">
+              <div class="mini"><h4>字面意思</h4><p>运动单位募集数量、发放频率和同步化决定同一时刻有多少肌纤维参与发力。</p></div>
+              <div class="mini"><h4>大白话</h4><p>像开工厂。以前只开三条生产线，现在能开八条，还能让它们同时开机。</p></div>
+              <div class="mini"><h4>训练与考试</h4><p>NSCA 常考“新手力量增长快于肌肥大”，答案优先找神经适应。</p></div>
+            </div>
+            <span class="dim">底层机制</span>
+            <p>运动单位 = 一个 alpha 运动神经元和它支配的所有肌纤维。募集更多运动单位，等于更多肌纤维加入；发放频率更高，等于神经信号更密集，肌肉张力更容易叠加。</p>
+            <span class="dim">真实例子</span>
+            <p>刚学深蹲的人，动作稳定后 1RM 上升很快，但腿围变化不明显。因为神经系统学会了更有效地调用股四头肌、臀大肌、内收肌和躯干稳定肌。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为力量涨就一定是肌肉变大。✅其实早期常是神经适应，肌肥大通常需要更长时间和足够训练量。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">肌肉横截面积</span>: 肌肉越粗，理论上能并联更多肌纤维，最大产力潜力越大。</span>
+          <div class="kp-body">
+            <div class="take">肌肉横截面积像发动机排量。排量大有更高上限，但还要会点火、会传力。</div>
+            <table class="tbl">
+              <tr><th>因素</th><th>怎么影响力量</th><th>训练提示</th></tr>
+              <tr><td>横截面积</td><td>更多肌纤维并联，最大张力潜力更高。</td><td>增肌训练提供长期力量底盘。</td></tr>
+              <tr><td>肌肉架构</td><td>羽状角、纤维排列影响有效拉力方向。</td><td>同样围度不代表完全相同力量。</td></tr>
+              <tr><td>技术传力</td><td>关节角度和杠杆力臂决定力量能否用到动作上。</td><td>大肌肉还要配合动作技术。</td></tr>
+            </table>
+            <span class="dim">真实例子</span>
+            <p>长期深蹲训练让股四头肌和臀大肌增大，最大力量上限提高。但如果深蹲路径不稳、膝髋节奏乱，新增肌肉不能完全转化为杠铃成绩。</p>
+            <span class="dim">训练含义</span>
+            <p>想长期提升最大力量，需要有足够训练量、渐进超负荷、蛋白质和恢复。只练低次数技术，早期有效，但长期上限会受肌肉量限制。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为肌肉越大就一定越强。✅更大通常潜力更高，但神经驱动、动作技术、肌腱刚度和杠杆结构也会影响表现。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">长度-张力关系</span>: 肌肉在“不太短也不太长”的最佳长度附近，肌动蛋白和肌球蛋白重叠最适合，产力最高。</span>
+          <div class="kp-body">
+            <div class="take">长度-张力关系 = 肌肉长度会影响横桥数量。太挤或太拉开，都不利于发力。</div>
+            <div class="grid">
+              <div class="mini"><h4>字面意思</h4><p>肌节长度改变时，粗肌丝和细肌丝可形成横桥的机会也改变。</p></div>
+              <div class="mini"><h4>大白话</h4><p>像两排人拉手。站太近手挤在一起，站太远够不到，距离刚好最好发力。</p></div>
+              <div class="mini"><h4>为什么影响训练</h4><p>不同关节角度会让同一块肌肉处在不同长度，所以同一动作不同位置难度不同。</p></div>
+            </div>
+            <span class="dim">真实例子</span>
+            <p>二头弯举在中间角度通常更容易发力，完全伸直或完全收缩时发力感会变弱。深蹲底部不仅有杠杆问题，也有肌肉长度和被动张力参与。</p>
+            <span class="dim">训练含义</span>
+            <p>训练计划要覆盖不同长度区域。增肌训练常重视全幅度和拉长位张力；力量专项也要练比赛动作最难角度。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为越拉长越能发力。✅适度拉长有利，过长会减少横桥重叠；极端位置也可能受关节和被动组织限制。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">力-速度曲线</span>: 向心收缩速度越快，可产生力量越小；离心收缩例外，通常能承受更大力量。</span>
+          <div class="kp-body">
+            <div class="take">力-速度曲线 = 肌肉收缩速度和产力能力互相牵制。快举轻，慢顶重，是同一条规律的表现。</div>
+            <table class="tbl">
+              <tr><th>收缩方式</th><th>速度变化</th><th>力量特点</th></tr>
+              <tr><td>向心</td><td>肌肉缩短，速度越快。</td><td>能产生的力越小。</td></tr>
+              <tr><td>等长</td><td>长度基本不变。</td><td>可产生较高稳定张力。</td></tr>
+              <tr><td>离心</td><td>肌肉被拉长仍在用力。</td><td>常能承受比向心更大的力。</td></tr>
+            </table>
+            <span class="dim">底层机制</span>
+            <p>向心很快时，横桥来不及大量结合和完成有效拉动，所以产力下降。离心时，横桥被外力拉开，加上被动弹性结构参与，因此能承受更大张力。</p>
+            <span class="dim">真实例子</span>
+            <p>卧推能慢慢下放比推起更大的重量；深蹲下蹲阶段能控制更重负荷，但起立向心阶段容易卡住。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为动作越快力量越大。✅爆发力需要快，但单纯“速度快”不等于最大力量大；重负荷向心速度必然变慢。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">离心产力更大</span>: 离心阶段能承受更高张力，但也更容易带来延迟性酸痛和组织微损伤。</span>
+          <div class="kp-body">
+            <div class="take">离心像刹车系统。刹车能承受大力，但频繁急刹会更耗材料。</div>
+            <div class="grid">
+              <div class="mini"><h4>字面意思</h4><p>肌肉一边被拉长，一边主动产生张力控制动作。</p></div>
+              <div class="mini"><h4>大白话</h4><p>下楼比上楼不喘，但腿更容易酸，因为肌肉在反复“刹住身体”。</p></div>
+              <div class="mini"><h4>训练判断</h4><p>离心训练可增肌和强化控制，但新手、恢复差或高量训练时要谨慎加量。</p></div>
+            </div>
+            <span class="dim">真实例子</span>
+            <p>北欧腿弯举主要是腘绳肌离心控制，刺激强、酸痛也强。下放引体、慢速深蹲下降也会提高离心负荷。</p>
+            <span class="dim">训练含义</span>
+            <p>离心适合用于动作控制、肌腱适应、增肌刺激和专项减速能力，但不应每次都堆到极限。恢复安排要比普通训练更保守。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为酸痛越强训练越好。✅离心酸痛强只说明刺激和损伤高，不自动等于更快进步。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">SSC</span>: Stretch-Shortening Cycle 是牵张-缩短循环，先快速离心预拉伸，再立刻向心发力，利用弹性势能和牵张反射。</span>
+          <div class="kp-body">
+            <div class="take">今日只提概念名和基本逻辑，完整三阶段留到 Day 76 增强式训练统一讲。</div>
+            <div class="grid">
+              <div class="mini"><h4>字面意思</h4><p>Stretch = 拉长，Shortening = 缩短，Cycle = 连续循环。</p></div>
+              <div class="mini"><h4>大白话</h4><p>像先压弹簧再立刻放开，压得快、接得快，反弹更有力。</p></div>
+              <div class="mini"><h4>为什么影响训练</h4><p>跳跃、冲刺、变向都依赖快速离心到向心的转换，停太久弹性帮助会消失。</p></div>
+            </div>
+            <span class="dim">真实例子</span>
+            <p>反向跳比静蹲跳通常跳得高，因为下蹲预拉伸储存弹性势能，并触发牵张反射增强后续向心输出。</p>
+            <span class="dim">训练含义</span>
+            <p>增强式训练要重视接触时间、动作刚性和落地控制。疲劳过高时做 SSC 训练，反而会变成软塌塌的高冲击动作。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为 SSC 就是跳得越多越好。✅SSC 关键是快速、弹性、可控，数量堆太多会降低质量并提高风险。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">肌耐力</span>: 肌耐力是肌肉在重复收缩中维持张力和动作质量的能力，不等于单次最大力量。</span>
+          <div class="kp-body">
+            <div class="take">肌力看峰值，肌耐力看能否长时间保持可用输出。两者相关，但训练重点不同。</div>
+            <table class="tbl">
+              <tr><th>决定因素</th><th>像什么</th><th>训练表现</th></tr>
+              <tr><td>局部代谢能力</td><td>肌肉内能源补给和废物处理。</td><td>高次数不容易烧到崩。</td></tr>
+              <tr><td>毛细血管与线粒体</td><td>送氧和制造 ATP 的基础设施。</td><td>中低强度能撑更久。</td></tr>
+              <tr><td>技术经济性</td><td>同样动作少浪费力。</td><td>重复多次仍保持轨迹稳定。</td></tr>
+              <tr><td>神经抗疲劳</td><td>信号持续稳定。</td><td>后半组不明显掉速失控。</td></tr>
+            </table>
+            <span class="dim">真实例子</span>
+            <p>俯卧撑 1RM 不存在，但能不能做 30 次高质量俯卧撑，取决于胸肩三头肌耐力、核心稳定和动作效率。</p>
+            <span class="dim">训练含义</span>
+            <p>肌耐力训练常用较轻到中等负荷、较高次数、短休息或循环安排。但如果动作质量塌掉，练到的可能是代偿耐受，不是目标肌耐力。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为高次数一定只练耐力、不增肌。✅高次数接近力竭也能增肌，只是疲劳类型和训练感受不同。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">训练判断</span>: 力量和耐力训练要看目标、负荷、速度、次数、休息和失败形式，而不是只看动作名称。</span>
+          <div class="kp-body">
+            <div class="take">同一个深蹲，可以练最大力量、增肌、肌耐力或爆发力。变量不同，适应不同。</div>
+            <table class="tbl">
+              <tr><th>目标</th><th>更重要变量</th><th>判断信号</th></tr>
+              <tr><td>最大力量</td><td>高负荷、低次数、充分休息、技术稳定。</td><td>速度慢但路径稳。</td></tr>
+              <tr><td>增肌</td><td>足够训练量、接近力竭、目标肌张力。</td><td>目标肌疲劳，动作不乱。</td></tr>
+              <tr><td>肌耐力</td><td>重复次数、短休息、局部抗疲劳。</td><td>后半组仍能保持质量。</td></tr>
+              <tr><td>爆发力</td><td>高速度、低疲劳、快速用力。</td><td>速度掉了就该停。</td></tr>
+            </table>
+            <span class="dim">真实例子</span>
+            <p>壶铃摆动如果速度快、组间休息足，更偏爆发髋伸；如果持续高次数到喘不过气，更偏代谢和肌耐力；如果腰开始代偿，就不再是好训练刺激。</p>
+            <span class="dim">训练含义</span>
+            <p>写计划时先确定目标，再选变量。考试看到“力量、耐力、速度、疲劳”混在一起，要先判断题目问的是峰值输出、重复能力还是爆发速度。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为某个动作天然属于某种目标。✅动作只是工具，训练变量才决定主要适应。</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="warn">
+      <h2>常见误区</h2>
+      <p>❌很多人以为新手力量暴涨就是肌肉长很快。✅其实早期主要来自运动单位募集、发放频率和动作协调改善。</p>
+      <p>❌很多人以为离心越多越高级。✅离心产力大，也更容易酸痛和微损伤，需要控制总量和恢复。</p>
+      <p>❌很多人以为肌耐力训练就是随便轻重量做到累。✅肌耐力仍要保持目标肌张力和动作质量，否则只是在练代偿。</p>
+    </section>
+
+    <section class="mnemonic">
+      <h2>记忆口诀</h2>
+      <p><strong>神经先点火，肌肉定底盘；长度找中间，速度越快力越难；离心能刹重，耐力看续航。</strong></p>
+    </section>
+
+    <section class="panel">
+      <h2>翻转卡复习</h2>
+      <div class="card-grid">
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">新手力量先涨，常见主因?</div><div class="face back">神经适应: 募集、发放频率、协调变好。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">运动单位是什么?</div><div class="face back">一个 alpha 运动神经元和它支配的肌纤维。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">横截面积越大意味着?</div><div class="face back">最大产力潜力通常更高，但不等于技术一定好。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">长度-张力关系核心?</div><div class="face back">肌肉在最佳长度附近横桥重叠最合适。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">向心速度越快，力量怎样?</div><div class="face back">可产生力量越小。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">离心为什么特殊?</div><div class="face back">可承受更大张力，但酸痛和微损伤更明显。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">SSC 大白话?</div><div class="face back">先压弹簧再立刻释放，借弹性和反射增力。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">肌耐力看什么?</div><div class="face back">重复收缩中维持张力和动作质量的能力。</div></div></div>
+      </div>
+    </section>
+
+    <section class="panel orange">
+      <h2>实操关联</h2>
+      <ul class="list">
+        <li><strong>增肌:</strong> 需要足够训练量和接近力竭，让目标肌在多个长度范围持续承受张力。</li>
+        <li><strong>最大力量:</strong> 重视神经输出、专项技术、高负荷低次数和充分休息。</li>
+        <li><strong>爆发:</strong> 训练速度掉了就要停，爆发训练不是练到累，而是练快速高质量输出。</li>
+        <li><strong>肌耐力:</strong> 用中低负荷、高次数、短休息训练续航，但动作质量不能崩。</li>
+        <li><strong>康复:</strong> 离心训练可用于肌腱和控制能力，但剂量要小步增加，避免酸痛过强。</li>
+        <li><strong>考试:</strong> 看到“力量先于肌肥大”选神经适应；看到“离心更大力”联想到力-速度曲线离心段。</li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2>练习题</h2>
+      <div class="quiz">
+        <h3>1. 单选: 新手训练前几周力量明显提升，但肌肉围度变化不大，最可能原因是?</h3>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">A.</span>肌纤维已经大量转成 I 型</div>
+        <div class="opt" onclick="pick(this,'correct')"><span class="lbl">B.</span>运动单位募集和发放频率改善</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">C.</span>椎间盘承压能力提高</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">D.</span>乳酸阈立刻大幅提高</div>
+        <button onclick="showAns('ans1')">查看解析</button>
+        <div class="reveal" id="ans1">答案 B。新手早期力量提升常来自神经适应。A 错，训练不会让 II 型直接大量变 I 型；C 是脊柱力学，不解释力量快速增长；D 属于耐力代谢指标，不是最大力量早期增长主因。</div>
+      </div>
+      <div class="quiz">
+        <h3>2. 单选: 关于力-速度曲线，哪项正确?</h3>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">A.</span>向心速度越快，肌肉产力越大</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">B.</span>离心产力一定小于向心产力</div>
+        <div class="opt" onclick="pick(this,'correct')"><span class="lbl">C.</span>向心速度越快，可产生力量通常越小</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">D.</span>速度和力量没有关系</div>
+        <button onclick="showAns('ans2')">查看解析</button>
+        <div class="reveal" id="ans2">答案 C。向心越快，横桥有效结合和拉动机会越少，可产生力量下降。A 与规律相反；B 错，离心通常能承受更大力量；D 忽略速度-力量关系。</div>
+      </div>
+      <div class="quiz">
+        <h3>3. 多选: 哪些因素会影响肌力或肌耐力表现?</h3>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">A.</span>运动单位募集数量</div>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">B.</span>肌肉横截面积</div>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">C.</span>肌肉当下长度</div>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">D.</span>收缩速度和疲劳程度</div>
+        <button onclick="showAns('ans3')">查看解析</button>
+        <div class="reveal" id="ans3">答案 A、B、C、D。神经因素决定调用能力；横截面积影响产力上限；长度影响横桥重叠；速度和疲劳决定当下能不能继续高质量输出。</div>
+      </div>
+      <div class="quiz">
+        <h3>4. 案例题: 客户做慢速下放引体后第二天背和手臂酸痛明显，但向上拉仍很弱。怎么解释?</h3>
+        <button onclick="showAns('ans4')">查看解析</button>
+        <div class="reveal" id="ans4">慢速下放是离心为主。离心阶段能承受更大张力，所以客户能控制下降，但向上拉是向心，需要更高主动拉起能力。酸痛明显说明离心刺激和微损伤较高，不代表向心力量已经同步提高。训练上应减少离心总量，加入弹力带辅助引体、划船和肩胛控制，让向心能力逐步追上。</div>
+      </div>
+    </section>
+
+    <footer>阶段1基础科学 · Day 19/112 · 今日早间新知识(工作日6:00) · 中午12:00复习巩固</footer>
+  </main>
+  <div class="lightbox" id="lightbox"><img src="" alt="放大学习图"></div>
+  <script>
+    document.querySelectorAll('ul.kp>li>.kp-head').forEach(function(h){h.addEventListener('click',function(){h.parentElement.classList.toggle('open')});});
+    document.querySelectorAll('.figure img').forEach(function(img){img.addEventListener('click',function(){var lb=document.getElementById('lightbox');lb.querySelector('img').src=img.src;lb.classList.add('show');});});
+    document.getElementById('lightbox').addEventListener('click',function(e){if(e.target===this){this.classList.remove('show');}});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape')document.getElementById('lightbox').classList.remove('show');});
+    function pick(el,type){el.closest('.quiz').querySelectorAll('.opt').forEach(function(o){o.classList.remove('correct','wrong-show')});el.classList.add(type==='correct'?'correct':'wrong-show');}
+    function pickMulti(el){if(el.classList.contains('correct')||el.classList.contains('wrong-show')){el.classList.remove('correct','wrong-show');}else{el.classList.add(el.dataset.c==='1'?'correct':'wrong-show');}}
+    function showAns(id){document.getElementById(id).classList.add('show');}
+  </script>
+</body>
+</html>

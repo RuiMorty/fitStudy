@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 20 中午复习 · 运动损伤的力学机制</title>
+  <style>
+    :root{--paper:#fff;--ink:#1a2b22;--muted:#5a6b62;--line:#e2e8e4;--green:#0ea66b;--blue:#0ea5e9;--orange:#ea7a17;--rose:#e23b3b}
+    *{box-sizing:border-box}
+    body{margin:0;background:#f6f8f7;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.75;padding:18px}
+    a{color:inherit}
+    .wrap{max-width:980px;margin:auto}
+    .hero{text-align:center;padding:26px 10px}
+    .hero:before{content:"中午复习 · Day 20";display:inline-block;font-size:.78rem;font-weight:800;color:#0c6da3;background:#e8f4fb;border:1px solid #cfe8f8;border-radius:999px;padding:4px 12px;margin-bottom:10px}
+    .hero h1{margin:0 0 10px;font-size:2rem;background:linear-gradient(90deg,var(--green),var(--blue));-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:0}
+    .sub{color:var(--muted);margin:0 auto;max-width:820px}
+    .chips{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:12px}
+    .chip{font-size:.78rem;border:1px solid #d4ebe0;border-radius:999px;padding:3px 10px;background:#fff;color:#0c6da3;font-weight:700}
+    .section,.card,footer{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px;margin:14px 0;box-shadow:0 2px 12px rgba(20,40,30,.06)}
+    .section h2{font-size:1.18rem;margin:0 0 12px;color:#0a7d52}
+    .fresh{border-left:4px solid var(--green)}
+    .ebbinghaus{border-left:4px solid var(--blue)}
+    .mistakes{border-left:4px solid var(--rose)}
+    .thumb,.mini-img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:10px;border:1px solid var(--line);background:#f0f4f2;display:block;margin:8px 0}
+    .source{display:inline-block;margin-top:8px;color:#0c6da3;text-decoration:none;font-weight:800}
+    .source:hover{text-decoration:underline}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:12px}
+    .card{margin:0;display:block}
+    .card h3{margin:0 0 8px;color:#0a7d52;font-size:1rem}
+    .meta{font-size:.8rem;color:var(--muted);margin-bottom:8px;font-weight:500}
+    .card ul{margin:8px 0 0;padding-left:18px}
+    .card li{margin:5px 0}
+    .mnemonic{border-radius:12px;padding:12px;background:#e8f5ee;color:#0a7d52;font-weight:800;margin:10px 0}
+    .q{background:#f8fffb;border:1px solid #dbe8e1;border-radius:12px;padding:13px;margin:10px 0}
+    .q p{margin:0 0 8px}
+    button{border:0;border-radius:8px;background:var(--green);color:#fff;font-weight:700;padding:7px 12px;cursor:pointer}
+    .answer{display:none;border-left:4px solid var(--blue);background:#f0f8fc;border-radius:10px;padding:10px;margin-top:9px}
+    .answer.show{display:block}
+    .compare{width:100%;border-collapse:collapse;font-size:.92rem}
+    .compare th{background:var(--green);color:#fff;text-align:left}
+    .compare th,.compare td{padding:9px;border-bottom:1px solid var(--line);vertical-align:top}
+    .review-box{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px}
+    .note{border-left:4px solid var(--orange);background:#fffaf3;border-radius:10px;padding:10px}
+    footer{text-align:center;color:var(--muted);font-size:.84rem;margin:22px 0}
+    @media(max-width:640px){body{padding:12px}.hero h1{font-size:1.55rem}.section,.card{padding:14px}.thumb,.mini-img{height:auto}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="hero">
+      <h1>Day 20 中午复习 · 运动损伤的力学机制</h1>
+      <div class="sub">目标: 把急性损伤、过度使用、剪压张扭、ACL 风险和动作筛查收成一张图。</div>
+      <div class="chips">
+        <span class="chip">今日新知识 Day20</span>
+        <span class="chip">1天 Day19</span>
+        <span class="chip">3天 Day17</span>
+        <span class="chip">7天 Day13</span>
+        <span class="chip">14天 Day06</span>
+      </div>
+    </header>
+
+    <section class="section fresh">
+      <h2>今日新知识速复盘</h2>
+      <article class="card">
+        <div class="meta">今天早上 · Day 20 · 今日新知识</div>
+        <h3>Day 20 · 运动损伤的力学机制</h3>
+        <img class="thumb" src="thumbs/day20-injury-biomechanics-thumbnail.png" alt="Day20 运动损伤的力学机制无字缩略图">
+        <p>损伤先看力，再看负荷史。单次峰值超了，就是急性扭伤、拉伤或撞击伤；重复小伤累起来，就是过度使用。剪切、压缩、张力、扭转四种力，决定哪个组织先扛不住。</p>
+        <p>ACL 风险常见在减速、落地、变向时叠加膝内扣、足固定和旋转。动作筛查不是诊断，是找代偿、找风险线索，再回去调负荷、调技术、调恢复。</p>
+        <a class="source" href="day20-运动损伤的力学机制.html">打开 Day20 原学习页 →</a>
+      </article>
+      <div class="mnemonic"><strong>口诀：</strong>急性看峰值，慢性看累计；剪压张扭四种力，膝内扣减速要警惕。</div>
+    </section>
+
+    <section class="section ebbinghaus">
+      <h2>艾宾浩斯复习区（1/3/7/14天）</h2>
+      <div class="grid">
+        <article class="card">
+          <div class="meta">1天前 · Day 19 · 间隔复习</div>
+          <img class="mini-img" src="thumbs/day19-strength-endurance-determinants-thumbnail.png" alt="Day19 肌力与肌耐力的力学决定因素无字缩略图">
+          <h3>Day 19 · 肌力与肌耐力的力学决定因素</h3>
+          <ul>
+            <li>新手力量先涨，常是神经募集和发放频率改善。</li>
+            <li>长度-张力和力-速度曲线决定同一肌肉在不同角度的产力。</li>
+            <li>离心可承受更大张力，但酸痛和微损伤也更明显。</li>
+          </ul>
+          <a class="source" href="day19-肌力与肌耐力的力学决定因素.html">复看原页</a>
+        </article>
+        <article class="card">
+          <div class="meta">3天前 · Day 17 · 间隔复习</div>
+          <img class="mini-img" src="thumbs/day17-biomechanical-movement-patterns-thumbnail.png" alt="Day17 动作的生物力学分析-动作模式无字缩略图">
+          <h3>Day 17 · 动作的生物力学分析-动作模式</h3>
+          <ul>
+            <li>七大模式: 推、拉、深蹲、铰链、箭步、旋转、携带。</li>
+            <li>开放链远端自由，闭合链远端固定，功能性更强。</li>
+            <li>先看关节运动，再看主动肌、杠杆和力矩。</li>
+          </ul>
+          <a class="source" href="day17-动作的生物力学分析-动作模式.html">复看原页</a>
+        </article>
+        <article class="card">
+          <div class="meta">7天前 · Day 13 · 间隔复习</div>
+          <img class="mini-img" src="thumbs/day13-muscle-contraction-types-thumbnail.png" alt="Day13 肌肉收缩类型无字缩略图">
+          <h3>Day 13 · 肌肉收缩类型</h3>
+          <ul>
+            <li>向心、离心、等长、等动四种基本收缩。</li>
+            <li>SSC 是快速离心接快速向心的组合。</li>
+            <li>离心更易带来高张力，也更易累积损伤。</li>
+          </ul>
+          <a class="source" href="day13-肌肉收缩类型.html">复看原页</a>
+        </article>
+        <article class="card">
+          <div class="meta">14天前 · Day 6 · 间隔复习</div>
+          <img class="mini-img" src="thumbs/day06-muscle-sliding-filament-thumbnail.png" alt="Day06 肌肉微观结构-肌丝滑行理论无字缩略图">
+          <h3>Day 6 · 肌肉微观结构-肌丝滑行理论</h3>
+          <ul>
+            <li>肌小节内，肌动蛋白和肌球蛋白相互滑动。</li>
+            <li>ATP 负责解离和复位，钙负责暴露结合位点。</li>
+            <li>横桥循环在等长收缩里也在继续。</li>
+          </ul>
+          <a class="source" href="day06-肌肉微观结构-肌丝滑行理论.html">复看原页</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>主动回忆题</h2>
+      <div class="q"><p><b>今日新知识 Day20：</b>急性损伤和过度使用损伤，最核心区别是什么？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">急性损伤是单次峰值超载，常带“突然、扭到、落地、碰撞”。过度使用是小损伤反复累积，常带“跑量上升、恢复不足、疼痛逐渐提前”。</div></div>
+      <div class="q"><p><b>今日新知识 Day20：</b>ACL 风险为什么常出现在减速和变向？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">因为减速和变向会把剪切、扭转和膝内扣叠在一起。若足固定、髋控制不足、疲劳上来，前交叉韧带就更容易吃到危险组合。</div></div>
+      <div class="q"><p><b>Day20：</b>剪切力和压缩力怎么区分？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">剪切力是层与层平行错位，像上下层错开推。压缩力是两端向中间挤，像把海绵按下去。训练里两者常一起出现，但方向不同。</div></div>
+      <div class="q"><p><b>Day19：</b>为什么新手前几周力量涨得快，但肌肉围度未必同步变大？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">主要是神经适应。运动单位募集、发放频率和协调变好，先把已有肌肉“用起来”，不代表肌肥大已经大幅发生。</div></div>
+      <div class="q"><p><b>Day17：</b>为什么闭合链动作通常更“功能性”？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">因为远端固定，多关节会一起协同，力量传递更接近日常和运动。它不等于一定更好，但更贴近负重、落地和支撑场景。</div></div>
+      <div class="q"><p><b>Day13：</b>离心收缩为什么常更容易酸和损伤？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">离心时肌肉被拉长还在出力，张力高、控制难，微损伤也更容易累积。所以它能扛更大力，也更需要剂量管理。</div></div>
+      <div class="q"><p><b>Day06：</b>等长收缩时，为什么肌肉仍在工作？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">关节不动，不代表横桥不动。肌动蛋白和肌球蛋白仍在持续抓拉，用 ATP 维持张力，只是外部长度变化被姿势抵消了。</div></div>
+    </section>
+
+    <section class="section mistakes">
+      <h2>错因辨析</h2>
+      <table class="compare">
+        <tr><th>易错点</th><th>错因</th><th>修正句</th></tr>
+        <tr><td>把“疼”当成损伤唯一证据</td><td>忽略过度使用的累积过程。</td><td>损伤常先有负荷和恢复失衡，疼痛只是后面才出现的信号。</td></tr>
+        <tr><td>把膝前移等同危险</td><td>把一个姿势细节绝对化。</td><td>真正要看对线、速度、负荷、深度和个体控制。</td></tr>
+        <tr><td>只盯股四头肌，不看腘绳肌和臀肌</td><td>把 ACL 风险简化成单肌问题。</td><td>膝稳定是髋、膝、踝和核心一起管出来的。</td></tr>
+        <tr><td>把筛查当诊断</td><td>误解动作筛查作用。</td><td>筛查只找代偿线索，诊断还要看临床评估。</td></tr>
+      </table>
+    </section>
+
+    <section class="section">
+      <h2>今日复盘</h2>
+      <div class="grid">
+        <div class="note"><strong>30 秒默写：</strong>急性损伤、过度使用、剪切、压缩、张力、扭转。</div>
+        <div class="note"><strong>场景串联：</strong>用一次篮球落地，串起 ACL 风险、膝内扣和减速控制。</div>
+        <div class="note"><strong>旧知连接：</strong>用 Day19 解释离心承载，用 Day17 解释动作模式，用 Day13 解释收缩类型，用 Day06 解释横桥循环。</div>
+      </div>
+    </section>
+
+    <footer>Fitness Study · Day 20/112 · 中午12:00复习推送 · 仅复习，不推进进度</footer>
+  </main>
+  <script>
+    function showAnswer(btn){btn.nextElementSibling.classList.toggle("show")}
+  </script>
+</body>
+</html>

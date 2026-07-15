@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 15 · 生物力学基本概念与力</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.75;background:#f6f8f7;color:#1a2b22;padding:18px}.wrap{max-width:980px;margin:auto}.header{text-align:center;padding:24px 10px}.header h1{margin:0 0 10px;font-size:2rem;background:linear-gradient(90deg,#0ea66b,#0ea5e9);-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:0}.sub{color:#5a6b62}.chips{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:10px}.chip{font-size:.78rem;border:1px solid #d4ebe0;border-radius:999px;padding:3px 10px;background:#fff;color:#0c6da3}.panel,.figure,.warn{background:#fff;border:1px solid #e2e8e4;border-radius:14px;padding:18px;margin:14px 0;box-shadow:0 2px 12px rgba(20,40,30,.06)}.lead{border-left:4px solid #0ea66b}.orange{border-left:4px solid #ea7a17}.figure img{width:100%;display:block;border-radius:12px;border:1px solid #e2e8e4;background:#fbfdfc;cursor:zoom-in}.caption{font-size:.85rem;color:#5a6b62;margin-top:8px;text-align:center}.panel h2,.warn h2{font-size:1.18rem;margin:0 0 10px;color:#0a7d52}.term{font-weight:700;color:#0a7d52;background:#e8f5ee;border-radius:5px;padding:1px 5px}ul.kp{list-style:none;padding:0;margin:0}ul.kp>li{border-bottom:1px dashed #e2e8e4}.kp-head{display:block;cursor:pointer;position:relative;padding:13px 8px 13px 30px}.kp-head:before{content:"▸";position:absolute;left:8px;color:#0ea66b;font-weight:800;transition:.2s}.open>.kp-head:before{transform:rotate(90deg)}.kp-head:hover{background:#f0f4f2}.kp-body{display:none;padding:0 14px 16px 30px}.open>.kp-body{display:block}.dim{display:block;margin-top:10px;font-size:.78rem;font-weight:800;color:#0c6da3}.take{border-left:4px solid #0ea66b;background:#f0fbf5;border-radius:10px;padding:10px 12px;margin:10px 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin:12px 0}.mini{border:1px solid #dbe8e1;border-radius:12px;background:#fbfdfc;padding:12px}.mini h4{margin:0 0 7px;font-size:.98rem;color:#0a7d52}.tbl{width:100%;border-collapse:collapse;font-size:.9rem;margin:10px 0}.tbl th{background:#0ea66b;color:#fff;text-align:left}.tbl th,.tbl td{padding:8px;border-bottom:1px solid #e2e8e4;vertical-align:top}.formula{font-weight:900;color:#ea7a17;background:#fff8ef;border:1px solid #f2d5b5;border-radius:10px;padding:10px 12px;margin:10px 0;text-align:center}.warn{border-left:4px solid #e23b3b}.warn p{margin:8px 0}.mnemonic{background:linear-gradient(135deg,#0ea66b,#0ea5e9);color:#fff;border-radius:14px;padding:20px;margin:14px 0;box-shadow:0 2px 12px rgba(20,40,30,.08)}.mnemonic h2{margin:0 0 8px;font-size:1.15rem}.mnemonic strong{color:#fff7d6}.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}.flip{min-height:145px;perspective:800px;cursor:pointer}.flip-inner{position:relative;width:100%;height:100%;min-height:145px;transition:transform .5s;transform-style:preserve-3d}.flip.flipped .flip-inner{transform:rotateY(180deg)}.face{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:15px;border-radius:13px;border:1px solid #e2e8e4;backface-visibility:hidden;background:#fff;font-weight:700}.front{color:#0a7d52;background:#f8fffb}.back{transform:rotateY(180deg);background:#eef7ff;color:#0c6da3;font-weight:600}.quiz{border-top:1px dashed #e2e8e4;padding-top:12px;margin-top:12px}.quiz h3{margin:0 0 8px;font-size:1rem;color:#1a2b22}.opt{border:1px solid #e2e8e4;border-radius:10px;padding:9px 10px;margin:7px 0;background:#fff;cursor:pointer}.opt:hover{background:#f0f4f2}.lbl{font-weight:800;color:#0c6da3;margin-right:4px}.correct{border-color:#0ea66b!important;background:#e9f8f0!important}.wrong-show{border-color:#e23b3b!important;background:#fff0f0!important}button{border:0;border-radius:999px;background:#0ea66b;color:#fff;font-weight:800;padding:8px 14px;cursor:pointer;margin-top:6px}.reveal{display:none;border-left:4px solid #0ea5e9;background:#f0f8fc;border-radius:10px;padding:10px;margin-top:8px}.reveal.show{display:block}.list{padding-left:20px;margin:8px 0}.list li{margin:7px 0}footer{text-align:center;color:#5a6b62;font-size:.85rem;margin:22px 0}.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.82);display:none;align-items:center;justify-content:center;z-index:9;padding:18px}.lightbox.show{display:flex}.lightbox img{max-width:96vw;max-height:92vh;border-radius:10px;background:#fff}@media(max-width:640px){body{padding:10px}.header h1{font-size:1.5rem}.panel,.figure,.warn{padding:14px}.kp-body{padding-left:14px}.card-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="header">
+      <h1>Day 15 · 生物力学基本概念与力</h1>
+      <div class="sub">今天主题: 用力、方向、摩擦、重心解释训练动作为什么会变难或变稳。</div>
+      <div class="chips"><span class="chip">第3周 · 阶段1基础科学</span><span class="chip">NSCA + NASM 双证</span><span class="chip">早间新知识</span></div>
+    </header>
+
+    <section class="panel lead">
+      <h2>一句话总结</h2>
+      <p>生物力学就是把训练动作翻译成物理语言: <strong>力让身体加速或减速，方向决定力有没有用，摩擦让你抓得住站得稳，重心决定你会不会倒</strong>。从今天开始，看硬拉、深蹲、推举不要只看“肌肉酸不酸”，还要看“力往哪走”。</p>
+    </section>
+
+    <figure class="figure">
+      <img src="assets/阶段1基础科学/day15-生物力学基本概念与力.png" alt="生物力学基本概念与力中文标注图">
+      <div class="caption">看图重点: 力有大小和方向，斜向力能分解，重力向下，地面反作用力向上，摩擦力帮助脚和杠铃不打滑。</div>
+    </figure>
+
+    <section class="panel">
+      <h2>核心要点</h2>
+      <ul class="kp">
+        <li>
+          <span class="kp-head"><span class="term">力</span>: 力是让物体加速、减速或改变方向的作用，训练里每次推拉都在制造力。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 力不是“感觉很用力”，而是能改变运动状态的东西。杠铃从地面被拉起来，是因为你给它向上的合力超过了重力。</div>
+            <div class="formula">牛顿第二定律: F = m × a</div>
+            <div class="grid">
+              <div class="mini"><h4>字面意思</h4><p>F 是力，m 是质量，a 是加速度。质量越大，要得到同样加速度，需要更大的力。</p></div>
+              <div class="mini"><h4>大白话</h4><p>同样想把车推快，空车容易，满载货车难。杠铃越重，想让它动起来越费力。</p></div>
+              <div class="mini"><h4>训练判断</h4><p>1RM 很重时，杠铃速度慢，不代表你没用力；可能是质量太大，同样输出只能产生很小加速度。</p></div>
+            </div>
+            <span class="dim">真实例子</span>
+            <p>硬拉离地瞬间最难，是因为杠铃从静止变运动需要先克服重力并产生向上加速度。若身体位置差，力没有高效传到杠铃，主观感觉会更费劲。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为动作越快就一定力量越大。✅其实速度还受重量、技术、疲劳和力的方向影响。轻重量快不等于最大力大，重重量慢也可能需要很大力。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">标量与矢量</span>: 标量只有大小，矢量有大小也有方向，力属于矢量。</span>
+          <div class="kp-body">
+            <table class="tbl">
+              <tr><th>概念</th><th>怎么记</th><th>训练例子</th></tr>
+              <tr><td>标量</td><td>只有多少，没有朝哪。</td><td>体重 70 kg、时间 30 秒、训练容量 3000 kg。</td></tr>
+              <tr><td>矢量</td><td>既有多少，也有方向。</td><td>力、速度、加速度、地面反作用力。</td></tr>
+              <tr><td>方向</td><td>方向错，力会打折。</td><td>划船时肘向后拉，背部更容易参与；耸肩乱拉，方向偏掉。</td></tr>
+            </table>
+            <span class="dim">底层机制</span>
+            <p>肌肉通过肌腱拉骨头，骨头绕关节转动。拉力方向和骨头、关节的位置关系，会决定它更像是在制造旋转、稳定关节，还是白白压迫关节。</p>
+            <span class="dim">真实例子</span>
+            <p>臀桥顶端如果小腿几乎垂直地面，脚对地的力更容易转成髋伸展；脚放太远或太近，力的方向改变，腘绳肌或股四头肌参与感会变多。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为“用力大”就够。✅其实考试和训练都要问方向。力是矢量，方向不对，目标肌不一定得到好刺激。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">力的合成与分解</span>: 多个力能合成一个结果，斜向力也能拆成水平和垂直分量。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 一条斜向箭头，可以拆成“向上多少”和“向前多少”。训练里你以为只是在向上举，其实常常同时有向前、向后、向内、向外的分量。</div>
+            <div class="grid">
+              <div class="mini"><h4>合成</h4><p>多个力一起作用，最后看合力。拔河时两边反方向拉，谁的合力更大，绳子就往谁那边加速。</p></div>
+              <div class="mini"><h4>分解</h4><p>斜向力可拆成互相垂直的分量。比如弹力带斜向拉手臂，既有向下分量，也有向侧方分量。</p></div>
+              <div class="mini"><h4>训练意义</h4><p>你可以通过绳索高度、弹力带方向、身体角度，改变目标肌主要对抗哪条分量。</p></div>
+            </div>
+            <span class="dim">真实例子</span>
+            <p>绳索夹胸如果滑轮略低，拉力有向上和向内分量，胸大肌下束与肩水平内收感觉会不同；面拉如果绳索高度合适，外旋和肩胛后缩更容易出现。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为器械重量片标多少，目标肌就承受多少。✅其实目标肌承受的是和关节角度、力臂、绳索方向有关的有效分量。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">摩擦力</span>: 摩擦力阻止相对滑动，抓握、站稳、冲刺、深蹲都离不开它。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 摩擦力像鞋底和地面之间的“刹车片”。没有足够摩擦，再强的肌肉也很难把力传出去。</div>
+            <table class="tbl">
+              <tr><th>场景</th><th>摩擦力作用</th><th>训练含义</th></tr>
+              <tr><td>硬拉握杠</td><td>手和杠铃之间摩擦不足会打滑。</td><td>镁粉、握距、握法、握力训练都影响输出。</td></tr>
+              <tr><td>深蹲站稳</td><td>鞋底和地面摩擦让脚能向外“拧地”。</td><td>鞋底太滑会让膝轨迹和髋发力变差。</td></tr>
+              <tr><td>冲刺蹬地</td><td>脚向后扒地，地面对人产生向前反作用。</td><td>钉鞋、地面材质、身体前倾角都会影响加速。</td></tr>
+            </table>
+            <span class="dim">底层机制</span>
+            <p>摩擦力方向总是反对接触面之间的相对滑动趋势。你硬拉时脚想向前或向后滑，地面摩擦就给相反方向的力，让身体能把髋膝伸展力量传到杠铃。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为摩擦力一定是阻碍。✅其实训练里摩擦常常是帮手，它让你抓得住、站得稳、蹬得出去。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">重力与地面反作用力</span>: 重力永远向地心，地面反作用力从接触点推回身体。</span>
+          <div class="kp-body">
+            <div class="grid">
+              <div class="mini"><h4>重力</h4><p>地球把身体和杠铃向下拉。杠铃越重，向下的重力越大，身体必须制造更大向上力。</p></div>
+              <div class="mini"><h4>地面反作用力</h4><p>你用脚推地，地面反过来推你。跳跃、深蹲、硬拉都靠这股反作用把身体带起来。</p></div>
+              <div class="mini"><h4>身体感觉</h4><p>“用脚蹬地”不是玄学，而是在用地面反作用力帮助髋膝伸展，把力传到身体和杠铃。</p></div>
+            </div>
+            <span class="dim">真实例子</span>
+            <p>深蹲起立时，脚对地施加向下和略向外的力，地面给向上和相反方向的反作用。若脚跟离地，接触点变了，反作用线也变了，平衡会更难。</p>
+            <span class="dim">训练含义</span>
+            <p>硬拉时想象“把地板踩走”常比“用手把杠铃拽起来”更有用，因为手只是连接杠铃，真正的大力来自腿髋对地面的推压和身体张力传递。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为上肢动作就没有地面反作用力。✅站姿推举、站姿划船、农夫走都需要脚和地面稳定交换力。</p>
+          </div>
+        </li>
+        <li>
+          <span class="kp-head"><span class="term">重心与稳定</span>: 重心落在支撑面内更稳，离支撑面边缘越近越容易失衡。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 稳不稳，不只看核心强不强，还看重心投影有没有落在脚、手或器械形成的支撑面里。</div>
+            <table class="tbl">
+              <tr><th>变量</th><th>更稳</th><th>更难</th></tr>
+              <tr><td>支撑面</td><td>站距略宽、双脚着地、双手支撑。</td><td>单脚站、窄站距、单手支撑。</td></tr>
+              <tr><td>重心高度</td><td>重心低，如深蹲底部保持可控。</td><td>重心高，如头顶推举走路。</td></tr>
+              <tr><td>重心投影</td><td>落在支撑面中央附近。</td><td>接近边缘，如箭步蹲身体过度前倾。</td></tr>
+            </table>
+            <span class="dim">真实例子</span>
+            <p>前蹲比高杠深蹲更要求躯干直立，因为杠铃在身体前方，重心系统改变。为了不往前倒，你需要更好的踝背屈、上背伸展和核心抗屈曲。</p>
+            <span class="dim">训练含义</span>
+            <p>想增加稳定挑战，可以缩小支撑面、提高重心、改变负重位置；想让新手先学会发力，应先扩大支撑面、降低复杂度，让力线清楚。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为不稳定表面一定更高级。✅其实不稳定会降低最大力输出。练力量时先要稳定，练平衡时才故意增加不稳定。</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="warn">
+      <h2>常见误区</h2>
+      <p>❌很多人以为生物力学只是在背公式。✅其实公式是语言，真正目的是真动作里判断力的大小、方向、分量和稳定性。</p>
+      <p>❌很多人以为“重量一样，刺激一样”。✅其实绳索角度、身体角度、关节位置会改变有效分量，目标肌刺激可能完全不同。</p>
+      <p>❌很多人以为越不稳定越训练核心。✅其实过度不稳定会牺牲输出，力量训练和稳定训练目标不同。</p>
+    </section>
+
+    <section class="mnemonic">
+      <h2>记忆口诀</h2>
+      <p><strong>力看 F=ma，大小还看方向；斜力拆两边，合力定去向；摩擦帮你稳，重力往下拉；重心进支撑，动作不乱晃。</strong></p>
+    </section>
+
+    <section class="panel">
+      <h2>翻转卡复习</h2>
+      <div class="card-grid">
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">F=ma 各代表什么?</div><div class="face back">F 是力，m 是质量，a 是加速度。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">力是标量还是矢量?</div><div class="face back">矢量。既有大小，也有方向。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">斜向力能拆成什么?</div><div class="face back">可拆成互相垂直的水平分量和垂直分量。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">摩擦力训练中有什么用?</div><div class="face back">帮助抓握、站稳、蹬地，阻止接触面打滑。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">地面反作用力怎么来?</div><div class="face back">你用脚推地，地面按相反方向推回身体。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">重心投影在哪里更稳?</div><div class="face back">落在支撑面内部，越接近中央越稳。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">为什么不稳定面不适合练最大力量?</div><div class="face back">稳定需求太高会降低可输出的最大力。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">硬拉“踩地”为什么有用?</div><div class="face back">脚推地获得地面反作用力，再通过身体张力传到杠铃。</div></div></div>
+      </div>
+    </section>
+
+    <section class="panel orange">
+      <h2>实操关联</h2>
+      <ul class="list">
+        <li><strong>增肌:</strong> 调绳索高度和身体角度时，先问目标肌要对抗哪条力的分量，不只看重量片数字。</li>
+        <li><strong>减脂:</strong> 高疲劳循环训练后，摩擦和重心控制变差，动作选择要保留足够支撑面和安全余量。</li>
+        <li><strong>爆发:</strong> 跳跃和冲刺看地面反作用力，重点是短时间把力准确传进地面，再拿到反作用。</li>
+        <li><strong>耐力:</strong> 长时间跑步里每一步都受重力、地面反作用力和摩擦影响，技术经济性就是减少无效分量。</li>
+        <li><strong>康复:</strong> 早期先用稳定支撑面和可控力线恢复信心，再逐步缩小支撑面或改变负重方向。</li>
+        <li><strong>动作分析:</strong> 看到代偿时按“力大小→力方向→摩擦→重心→支撑面”排查，别只说某块肌肉弱。</li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2>练习题</h2>
+      <div class="quiz">
+        <h3>1. 单选: 牛顿第二定律 F=ma 中，a 代表什么?</h3>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">A.</span>角度</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">B.</span>面积</div>
+        <div class="opt" onclick="pick(this,'correct')"><span class="lbl">C.</span>加速度</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">D.</span>摩擦系数</div>
+        <button onclick="showAns('ans1')">查看解析</button>
+        <div class="reveal" id="ans1">答案 C。F 是力，m 是质量，a 是加速度。A 角度会影响力线和力臂，但不是公式里的 a；B 面积和 D 摩擦系数也不是本式变量。</div>
+      </div>
+      <div class="quiz">
+        <h3>2. 单选: 下列哪个属于矢量?</h3>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">A.</span>训练时间</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">B.</span>体重数值</div>
+        <div class="opt" onclick="pick(this,'correct')"><span class="lbl">C.</span>地面反作用力</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">D.</span>组间休息时长</div>
+        <button onclick="showAns('ans2')">查看解析</button>
+        <div class="reveal" id="ans2">答案 C。地面反作用力有大小和方向，所以是矢量。A、B、D 只有多少，没有方向，属于标量或数值记录。</div>
+      </div>
+      <div class="quiz">
+        <h3>3. 多选: 下列哪些说法正确?</h3>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">A.</span>斜向拉力可以分解成水平和垂直分量</div>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">B.</span>摩擦力能帮助硬拉握杠和深蹲站稳</div>
+        <div class="opt" onclick="pickMulti(this)"><span class="lbl">C.</span>不稳定面一定能提高最大力量输出</div>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">D.</span>重心投影落在支撑面内通常更稳定</div>
+        <button onclick="showAns('ans3')">查看解析</button>
+        <div class="reveal" id="ans3">答案 A、B、D。A 是力分解核心，B 是摩擦力在训练里的正面作用，D 是稳定性判断原则。C 错在不稳定面常降低最大输出，更适合平衡或控制训练。</div>
+      </div>
+      <div class="quiz">
+        <h3>4. 案例题: 会员做壶铃摆动时脚底打滑、身体总往前扑。请用今天知识分析。</h3>
+        <button onclick="showAns('ans4')">查看解析</button>
+        <div class="reveal" id="ans4">先看摩擦: 鞋底或地面摩擦不足，脚无法稳定把力传给地面，摆动时容易滑。再看力方向: 壶铃向前摆会给身体向前牵拉分量，如果髋铰链和背阔肌张力不足，合力会把人带走。再看重心: 壶铃远离身体时，身体-壶铃系统重心向前移动，若脚掌压力和髋后移控制不好，重心投影接近支撑面前缘，就会往前扑。处理顺序: 换防滑地面和鞋，减轻重量，练髋铰链，保持壶铃贴近身体重心线，先用小幅度摆动找节奏。</div>
+      </div>
+    </section>
+
+    <footer>阶段1 · Day 15/112 · 今日早间新知识(工作日6:00) · 中午12:00复习巩固</footer>
+  </main>
+  <div class="lightbox" id="lightbox"><img alt="放大图"></div>
+  <script>
+    document.querySelectorAll('ul.kp>li>.kp-head').forEach(function(h){h.addEventListener('click',function(){h.parentElement.classList.toggle('open')})});
+    function pick(el,type){el.closest('.quiz').querySelectorAll('.opt').forEach(function(o){o.classList.remove('correct','wrong-show')});el.classList.add(type==='correct'?'correct':'wrong-show')}
+    function pickMulti(el){if(el.classList.contains('correct')||el.classList.contains('wrong-show')){el.classList.remove('correct','wrong-show')}else{el.classList.add(el.dataset.c==='1'?'correct':'wrong-show')}}
+    function showAns(id){document.getElementById(id).classList.add('show')}
+    var lb=document.getElementById('lightbox');document.querySelectorAll('.figure img').forEach(function(img){img.addEventListener('click',function(){lb.querySelector('img').src=img.src;lb.classList.add('show')})});lb.addEventListener('click',function(e){if(e.target===lb)lb.classList.remove('show')});document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('show')});
+  </script>
+</body>
+</html>

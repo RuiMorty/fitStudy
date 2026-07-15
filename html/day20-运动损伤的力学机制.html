@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 20 · 运动损伤的力学机制</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.75;background:#f6f8f7;color:#1a2b22;padding:18px}.wrap{max-width:980px;margin:auto}.header{text-align:center;padding:24px 10px}.header h1{margin:0 0 10px;font-size:2rem;background:linear-gradient(90deg,#0ea66b,#0ea5e9);-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:0}.sub{color:#5a6b62}.chips{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:10px}.chip{font-size:.78rem;border:1px solid #d4ebe0;border-radius:999px;padding:3px 10px;background:#fff;color:#0c6da3}.panel,.figure,.warn{background:#fff;border:1px solid #e2e8e4;border-radius:14px;padding:18px;margin:14px 0;box-shadow:0 2px 12px rgba(20,40,30,.06)}.lead{border-left:4px solid #0ea66b}.orange{border-left:4px solid #ea7a17}.figure img{width:100%;display:block;border-radius:12px;border:1px solid #e2e8e4;background:#fbfdfc;cursor:zoom-in}.caption{font-size:.85rem;color:#5a6b62;margin-top:8px;text-align:center}.panel h2,.warn h2{font-size:1.18rem;margin:0 0 10px;color:#0a7d52}.term{font-weight:700;color:#0a7d52;background:#e8f5ee;border-radius:5px;padding:1px 5px}ul.kp{list-style:none;padding:0;margin:0}ul.kp>li{border-bottom:1px dashed #e2e8e4}.kp-head{display:block;cursor:pointer;position:relative;padding:13px 8px 13px 30px}.kp-head:before{content:"▸";position:absolute;left:8px;color:#0ea66b;font-weight:800;transition:.2s}.open>.kp-head:before{transform:rotate(90deg)}.kp-head:hover{background:#f0f4f2}.kp-body{display:none;padding:0 14px 16px 30px}.open>.kp-body{display:block}.dim{display:block;margin-top:10px;font-size:.78rem;font-weight:800;color:#0c6da3}.take{border-left:4px solid #0ea66b;background:#f0fbf5;border-radius:10px;padding:10px 12px;margin:10px 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin:12px 0}.mini{border:1px solid #dbe8e1;border-radius:12px;background:#fbfdfc;padding:12px}.mini h4{margin:0 0 7px;font-size:.98rem;color:#0a7d52}.tbl{width:100%;border-collapse:collapse;font-size:.9rem;margin:10px 0}.tbl th{background:#0ea66b;color:#fff;text-align:left}.tbl th,.tbl td{padding:8px;border-bottom:1px solid #e2e8e4;vertical-align:top}.warn{border-left:4px solid #e23b3b}.warn p{margin:8px 0}.mnemonic{background:linear-gradient(135deg,#0ea66b,#0ea5e9);color:#fff;border-radius:14px;padding:20px;margin:14px 0;box-shadow:0 2px 12px rgba(20,40,30,.08)}.mnemonic h2{margin:0 0 8px;font-size:1.15rem}.mnemonic strong{color:#fff7d6}.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}.flip{min-height:145px;perspective:800px;cursor:pointer}.flip-inner{position:relative;width:100%;height:100%;min-height:145px;transition:transform .5s;transform-style:preserve-3d}.flip.flipped .flip-inner{transform:rotateY(180deg)}.face{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:15px;border-radius:13px;border:1px solid #e2e8e4;backface-visibility:hidden;background:#fff;font-weight:700}.front{color:#0a7d52;background:#f8fffb}.back{transform:rotateY(180deg);background:#eef7ff;color:#0c6da3;font-weight:600}.quiz{border-top:1px dashed #e2e8e4;padding-top:12px;margin-top:12px}.quiz h3{margin:0 0 8px;font-size:1rem;color:#1a2b22}.opt{border:1px solid #e2e8e4;border-radius:10px;padding:9px 10px;margin:7px 0;background:#fff;cursor:pointer}.opt:hover{background:#f0f4f2}.lbl{font-weight:800;color:#0c6da3;margin-right:4px}.correct{border-color:#0ea66b!important;background:#e9f8f0!important}.wrong-show{border-color:#e23b3b!important;background:#fff0f0!important}button{border:0;border-radius:999px;background:#0ea66b;color:#fff;font-weight:800;padding:8px 14px;cursor:pointer;margin-top:6px}.reveal{display:none;border-left:4px solid #0ea5e9;background:#f0f8fc;border-radius:10px;padding:10px;margin-top:8px}.reveal.show{display:block}.list{padding-left:20px;margin:8px 0}.list li{margin:7px 0}footer{text-align:center;color:#5a6b62;font-size:.85rem;margin:22px 0}.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.82);display:none;align-items:center;justify-content:center;z-index:9;padding:18px}.lightbox.show{display:flex}.lightbox img{max-width:96vw;max-height:92vh;border-radius:10px;background:#fff}@media(max-width:640px){body{padding:10px}.header h1{font-size:1.5rem}.panel,.figure,.warn{padding:14px}.kp-body{padding-left:14px}.card-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="header">
+      <h1>Day 20 · 运动损伤的力学机制</h1>
+      <div class="sub">今天主题: 用力学语言看懂扭伤、拉伤、过度使用和 ACL 风险。</div>
+      <div class="chips"><span class="chip">第3周 · 阶段1基础科学</span><span class="chip">NSCA + NASM 双证</span><span class="chip">早间新知识</span></div>
+    </header>
+
+    <section class="panel lead">
+      <h2>一句话总结</h2>
+      <p>运动损伤不是“倒霉碰坏了”这么简单，而是组织承受了超过可恢复能力的力: <strong>剪切、压缩、张力、扭转</strong>决定受力方向，<strong>急性冲击、重复累积、动作代偿和疲劳</strong>决定风险什么时候爆发。</p>
+    </section>
+
+    <figure class="figure">
+      <img src="assets/阶段1基础科学/day20-运动损伤的力学机制.png" alt="运动损伤的力学机制中文标注学习图">
+      <div class="caption">看图重点: 先分清四种受力，再把 ACL 风险、踝扭伤、肌腱过度使用和动作筛查放进同一张风险地图。</div>
+    </figure>
+
+    <section class="panel">
+      <h2>核心要点</h2>
+      <ul class="kp">
+        <li>
+          <span class="kp-head"><span class="term">急性损伤</span>: 单次外力或动作失控超过组织承受能力，常见扭伤、拉伤、撞击伤。</span>
+          <div class="kp-body">
+            <div class="take">急性损伤像保险丝被一次性烧断。关键不是疼得突然，而是负荷峰值超过组织当下上限。</div>
+            <div class="grid">
+              <div class="mini"><h4>字面意思</h4><p>急性 = 短时间发生。常由落地、变向、碰撞、滑倒或一次错误发力触发。</p></div>
+              <div class="mini"><h4>大白话</h4><p>像绳子被猛拉一下，超过极限就会断裂或部分撕裂。</p></div>
+              <div class="mini"><h4>考试判断</h4><p>题干有“突然、扭到、落地、碰撞、啪一声”，优先考虑急性机制。</p></div>
+            </div>
+            <span class="dim">真实例子</span>
+            <p>篮球落地踩到别人脚，踝关节快速内翻，外侧韧带承受过大张力与扭转，形成踝扭伤。冲刺中突然加速，腘绳肌被高速拉长，可能出现拉伤。</p>
+            <span class="dim">训练含义</span>
+            <p>预防急性损伤要降低失控峰值: 落地技术、减速能力、单腿稳定、场地鞋底摩擦、疲劳管理都要管。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为急性损伤一定来自外力碰撞。✅很多急性损伤也来自自身减速、变向或错误落地。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">过度使用损伤</span>: 单次负荷不大，但重复次数、恢复不足和组织适应不足让微损伤累积。</span>
+          <div class="kp-body">
+            <div class="take">过度使用不是练一次太狠，而是恢复账户长期透支。肌腱炎、应力骨折、胫骨内侧疼痛常属这类逻辑。</div>
+            <table class="tbl">
+              <tr><th>变量</th><th>风险怎么升高</th><th>训练信号</th></tr>
+              <tr><td>训练量</td><td>总次数、总距离、总跳跃次数过快增加。</td><td>疼痛从训练后出现，逐渐提前到训练中。</td></tr>
+              <tr><td>恢复</td><td>睡眠、营养、休息日不足，组织修复追不上。</td><td>热身后好一点，隔天又反复。</td></tr>
+              <tr><td>技术</td><td>同一代偿反复压在同一组织上。</td><td>左右不对称、局部总先酸痛。</td></tr>
+            </table>
+            <span class="dim">真实例子</span>
+            <p>跑量突然翻倍，小腿后侧肌腱和胫骨反复承受张力与冲击，可能从轻微不适发展为跟腱痛或应力反应。</p>
+            <span class="dim">训练含义</span>
+            <p>调整过度使用损伤，优先看负荷进阶、疼痛时间线、动作重复模式和恢复，而不是只找“哪个动作错了”。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为没有一次明确扭到就不是损伤。✅慢慢累积的微损伤也能形成真实损伤。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">剪切力</span>: 两个相邻组织层面朝相反或平行方向滑移，容易造成关节面、韧带或软组织受压错位。</span>
+          <div class="kp-body">
+            <div class="take">剪切力像两块板夹着毛巾反向推。毛巾不是被直接压扁，而是被层间滑移撕扯。</div>
+            <div class="grid">
+              <div class="mini"><h4>字面意思</h4><p>Shear force = 平行于组织面的相对滑动力。</p></div>
+              <div class="mini"><h4>大白话</h4><p>像把一副扑克牌上下层错开推，层与层之间最吃力。</p></div>
+              <div class="mini"><h4>训练判断</h4><p>膝、腰、肩在不稳姿势下承受水平错位，剪切风险会升高。</p></div>
+            </div>
+            <span class="dim">真实例子</span>
+            <p>深蹲或弓步中膝盖控制差，胫骨相对股骨出现过多前后或内外滑移，韧带和半月板压力会增加。腰椎在负重屈曲加旋转时，也会叠加剪切。</p>
+            <span class="dim">训练含义</span>
+            <p>减少剪切不是禁止关节移动，而是让关节在可控轨迹里承受负荷。髋膝踝对线、核心稳定和速度控制都很重要。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为只有垂直重量才伤关节。✅水平方向的错位力也会让关节结构受压。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">压缩力</span>: 两端向中间挤压组织，适量可促进适应，过量或角度差会造成局部压力集中。</span>
+          <div class="kp-body">
+            <div class="take">压缩力像按海绵。均匀按压可承受，斜着硬压或长时间压在一点上更容易出问题。</div>
+            <table class="tbl">
+              <tr><th>场景</th><th>可能受压结构</th><th>判断重点</th></tr>
+              <tr><td>深蹲</td><td>膝关节软骨、半月板、髌股关节。</td><td>负荷、深度、膝轨迹、疼痛反应。</td></tr>
+              <tr><td>硬拉</td><td>椎体、椎间盘、髋关节。</td><td>中立脊柱、腹压、杠铃贴身。</td></tr>
+              <tr><td>跳跃落地</td><td>足踝、膝、髋、脊柱。</td><td>落地吸收、膝内扣、疲劳程度。</td></tr>
+            </table>
+            <span class="dim">训练含义</span>
+            <p>骨骼和软骨需要机械负荷才能适应，但负荷进阶要让组织来得及修复。压缩力可训练，也可过载，区别在剂量和控制。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为压缩力一定坏。✅适量压缩是骨密度和软骨健康刺激，坏的是超量、偏斜、疲劳下反复堆叠。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">张力</span>: 组织被拉长时承受拉应力，肌肉、肌腱、韧带都可能在过大张力下受损。</span>
+          <div class="kp-body">
+            <div class="take">张力像拉橡皮筋。正常拉伸会回弹，速度太快、拉得太远或疲劳时拉，就可能超过弹性范围。</div>
+            <div class="grid">
+              <div class="mini"><h4>肌肉</h4><p>高速离心或被动拉长时最容易拉伤，例如冲刺腘绳肌。</p></div>
+              <div class="mini"><h4>肌腱</h4><p>反复高张力会让跟腱、髌腱出现疼痛和负荷不耐受。</p></div>
+              <div class="mini"><h4>韧带</h4><p>关节被拉到稳定范围外，韧带负责“兜底”，过量就会扭伤。</p></div>
+            </div>
+            <span class="dim">训练含义</span>
+            <p>离心训练能提高组织承受张力能力，但必须渐进。突然加入大量北欧腿弯举、跳跃或冲刺，容易让张力刺激超出恢复能力。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为拉伸越多越安全。✅柔韧性只是因素之一，力量、速度控制和组织耐受更关键。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">扭转力</span>: 组织绕轴旋转受力，常和剪切、张力一起出现，变向和落地最常见。</span>
+          <div class="kp-body">
+            <div class="take">扭转力像拧毛巾。单纯直上直下未必危险，卡住一端再旋转，组织就要承受更大扭矩。</div>
+            <table class="tbl">
+              <tr><th>动作</th><th>扭转来源</th><th>风险控制</th></tr>
+              <tr><td>变向急停</td><td>脚钉在地面，身体继续旋转。</td><td>先降重心、髋膝踝同向、减少膝内扣。</td></tr>
+              <tr><td>投掷/挥拍</td><td>躯干和肩髋快速旋转。</td><td>胸椎、髋部活动度和核心抗旋转。</td></tr>
+              <tr><td>负重转体</td><td>腰椎在负重下旋转。</td><td>用髋和胸椎转，避免腰椎硬拧。</td></tr>
+            </table>
+            <span class="dim">真实例子</span>
+            <p>足球变向时鞋钉抓地太牢，身体转向但膝盖向内塌，膝关节同时承受扭转、剪切和张力，ACL 风险显著升高。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为旋转训练都危险。✅危险的是失控、疲劳、负荷过大或关节被锁死时旋转。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">ACL风险</span>: ACL 损伤常见于减速、变向、落地时膝内扣叠加旋转和剪切。</span>
+          <div class="kp-body">
+            <div class="take">ACL 风险不是一个单点错误，而是“膝内扣 + 减速 + 足固定 + 髋控制不足 + 疲劳”的组合题。</div>
+            <div class="grid">
+              <div class="mini"><h4>字面意思</h4><p>ACL = 前交叉韧带，限制胫骨相对股骨过度前移和旋转。</p></div>
+              <div class="mini"><h4>大白话</h4><p>像膝关节里的安全带，防止小腿骨在某些方向上乱跑。</p></div>
+              <div class="mini"><h4>为什么影响训练</h4><p>落地和变向时若膝盖向内塌，安全带会承受过大拉力和扭力。</p></div>
+            </div>
+            <span class="dim">真实例子</span>
+            <p>跳箱落地下落时膝盖内扣、足弓塌陷、髋外展外旋控制不足，地面反作用力从脚传到膝，膝关节会被推向危险组合位置。</p>
+            <span class="dim">训练含义</span>
+            <p>ACL 风险管理常用单腿落地、侧向减速、臀中肌和腘绳肌强化、髋膝踝对线训练。重点不是让膝永远不动，而是让它不在高速冲击下失控内扣。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为只练股四头肌就能保护 ACL。✅腘绳肌、臀肌、足踝控制、落地技术和疲劳管理都参与保护。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">动作筛查</span>: 筛查不是诊断疾病，而是找出可能放大损伤力的代偿模式。</span>
+          <div class="kp-body">
+            <div class="take">筛查像给动作做体检。它不能直接说“你一定会受伤”，但能提示哪里更容易把负荷压到错误位置。</div>
+            <table class="tbl">
+              <tr><th>筛查动作</th><th>看什么</th><th>常见风险线索</th></tr>
+              <tr><td>深蹲</td><td>脊柱、骨盆、膝盖、足弓。</td><td>圆背、膝内扣、足弓塌陷。</td></tr>
+              <tr><td>弓步</td><td>左右控制、髋膝踝对线。</td><td>骨盆晃、膝盖内夹、前脚不稳。</td></tr>
+              <tr><td>单腿平衡</td><td>足踝和髋稳定。</td><td>髋下沉、躯干侧倒、足部乱抓地。</td></tr>
+              <tr><td>落地</td><td>吸收冲击和减速能力。</td><td>膝内扣、落地过硬、重心失控。</td></tr>
+            </table>
+            <span class="dim">训练含义</span>
+            <p>筛查后不要只贴标签，要把发现转成训练: 活动度不足补活动度，控制差补稳定，负荷太快就降量，疲劳导致代偿就调整休息。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为筛查发现代偿就必须停止训练。✅多数情况是调整动作、负荷和进阶顺序，而不是一刀切禁练。</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="warn">
+      <h2>常见误区</h2>
+      <p>❌很多人以为疼痛出现才说明损伤开始。✅过度使用损伤常在疼痛前已有负荷累积和恢复不足。</p>
+      <p>❌很多人以为膝盖不能过脚尖就安全。✅真正要看髋膝踝对线、负荷、速度、深度和个体结构。</p>
+      <p>❌很多人以为动作筛查能预测所有损伤。✅筛查只能发现风险线索，不能替代医学诊断。</p>
+    </section>
+
+    <section class="mnemonic">
+      <h2>记忆口诀</h2>
+      <p><strong>急性看峰值，慢性看累计；剪压张扭四种力，膝内扣减速要警惕；筛查找代偿，训练调剂量。</strong></p>
+    </section>
+
+    <section class="panel">
+      <h2>翻转卡复习</h2>
+      <div class="card-grid">
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">急性损伤关键词?</div><div class="face back">突然、单次峰值、扭伤、拉伤、碰撞、落地失控。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">过度使用损伤核心?</div><div class="face back">微损伤累积超过恢复能力。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">剪切力像什么?</div><div class="face back">两层组织平行错位，像扑克牌层间滑移。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">压缩力一定坏吗?</div><div class="face back">不一定。适量促进适应，过量或偏斜才危险。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">张力最常影响哪些组织?</div><div class="face back">肌肉、肌腱、韧带。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">扭转高风险场景?</div><div class="face back">足固定、身体旋转、变向急停或落地失控。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">ACL 风险组合?</div><div class="face back">膝内扣 + 减速 + 旋转/剪切 + 疲劳。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">动作筛查目的?</div><div class="face back">找代偿和风险线索，不是医学诊断。</div></div></div>
+      </div>
+    </section>
+
+    <section class="panel orange">
+      <h2>实操关联</h2>
+      <ul class="list">
+        <li><strong>增肌:</strong> 增量要让肌腱和关节一起适应，不要只看目标肌能不能撑住。</li>
+        <li><strong>减脂:</strong> 疲劳和热量缺口会降低控制能力，循环训练后半段更要看膝、腰、足踝轨迹。</li>
+        <li><strong>爆发:</strong> 变向和跳跃先练减速与落地吸收，再追求更高速度和更大弹性。</li>
+        <li><strong>耐力:</strong> 跑量、坡度、鞋、地面和恢复共同决定过度使用风险。</li>
+        <li><strong>康复:</strong> 疼痛下降不等于组织完全恢复，要按负荷耐受逐步回到专项动作。</li>
+        <li><strong>考试:</strong> 看到 ACL 常联想膝内扣、减速、旋转和非接触伤；看到肌腱炎联想过度使用。</li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2>练习题</h2>
+      <div class="quiz">
+        <h3>1. 篮球落地踩到别人脚，踝关节快速内翻，最符合哪类损伤机制?</h3>
+        <div class="opt" onclick="pick(this,'correct')"><span class="lbl">A.</span>急性损伤，韧带承受过大张力和扭转</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">B.</span>过度使用损伤，主要因为跑量累积</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">C.</span>单纯压缩力，和韧带无关</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">D.</span>正常适应，不需要处理</div>
+        <button onclick="show('ans1')">查看解析</button>
+        <div class="reveal" id="ans1">答案 A。A 符合突然落地、关节快速内翻、韧带受拉的急性扭伤。B 更像跑步量长期累积。C 忽略了内翻造成的张力和扭转。D 错，急性扭伤需要评估严重程度。</div>
+      </div>
+      <div class="quiz">
+        <h3>2. 跑者两周内跑量翻倍，跟腱从训练后酸到跑步中也痛，最应优先检查什么?</h3>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">A.</span>是否需要一直静养完全不动</div>
+        <div class="opt" onclick="pick(this,'correct')"><span class="lbl">B.</span>跑量进阶、恢复和跟腱负荷耐受</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">C.</span>是否所有深蹲都应该取消</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">D.</span>是否只缺少静态拉伸</div>
+        <button onclick="show('ans2')">查看解析</button>
+        <div class="reveal" id="ans2">答案 B。题干是典型过度使用: 负荷快速增加、恢复不足、疼痛时间提前。A 过度绝对化。C 与题干无关。D 只看拉伸，忽略主要负荷管理。</div>
+      </div>
+      <div class="quiz">
+        <h3>3. 多选: 哪些因素会提高非接触性 ACL 风险?</h3>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">A.</span>落地或变向时膝内扣</div>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">B.</span>减速时足固定、身体继续旋转</div>
+        <div class="opt" onclick="pickMulti(this)"><span class="lbl">C.</span>任何膝盖前移都必然危险</div>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">D.</span>疲劳后髋膝踝控制下降</div>
+        <button onclick="show('ans3')">查看解析</button>
+        <div class="reveal" id="ans3">答案 A、B、D。膝内扣、旋转/剪切、疲劳控制下降都常见于 ACL 风险情境。C 错，膝前移本身不是绝对危险，关键看对线、负荷、速度和个体结构。</div>
+      </div>
+      <div class="quiz">
+        <h3>4. 案例: 会员硬拉后腰酸，视频显示杠铃离身体远、下放末端圆背，并在疲劳后继续加次数。怎么分析?</h3>
+        <button onclick="show('ans4')">查看解析</button>
+        <div class="reveal" id="ans4">这是多因素风险: 杠铃离身增加腰椎外力矩；圆背下放让椎间盘和软组织压缩、剪切更集中；疲劳后继续加次数让动作控制下降。处理顺序: 降低负荷和次数，练髋铰链与腹压，杠铃贴身，保留中立脊柱；能稳定完成后再逐步增加训练量。</div>
+      </div>
+    </section>
+
+    <footer>阶段1 · Day 20/112 · 今日早间新知识(工作日6:00) · 中午12:00复习巩固</footer>
+  </main>
+  <div class="lightbox" id="lightbox"><img src="" alt="放大学习图"></div>
+  <script>
+    document.querySelectorAll('ul.kp>li>.kp-head').forEach(function(h){h.addEventListener('click',function(){h.parentElement.classList.toggle('open')});});
+    function pick(el,type){var q=el.closest('.quiz');q.querySelectorAll('.opt').forEach(function(o){o.classList.remove('correct','wrong-show')});el.classList.add(type==='correct'?'correct':'wrong-show');}
+    function pickMulti(el){if(el.classList.contains('correct')||el.classList.contains('wrong-show')){el.classList.remove('correct','wrong-show');}else{el.classList.add(el.dataset.c==='1'?'correct':'wrong-show');}}
+    function show(id){document.getElementById(id).classList.add('show');}
+    var lb=document.getElementById('lightbox');document.querySelectorAll('.figure img').forEach(function(img){img.addEventListener('click',function(){lb.querySelector('img').src=img.src;lb.classList.add('show');});});lb.addEventListener('click',function(e){if(e.target===lb)lb.classList.remove('show');});document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('show');});
+  </script>
+</body>
+</html>
