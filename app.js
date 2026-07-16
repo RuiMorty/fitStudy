@@ -7,10 +7,17 @@ const state = {
   phase: "全部",
   category: "全部",
   query: "",
-  exerciseView: "atlas",
+  exerciseView: "library",
+  exercisePattern: "全部",
+  exerciseMuscle: "全部",
+  exerciseEquipment: "全部",
+  exerciseQuery: "",
+  selectedExercise: "barbell-back-squat",
   atlasView: "front",
   selectedMuscle: "front-left-deltoid",
 };
+
+const navigationStorageKey = "fitness-study.navigation.v1";
 
 const publishedPages = new Map([
   [1, "html/day01-骨学基础-骨骼系统总览.html"],
@@ -34,6 +41,8 @@ const publishedPages = new Map([
   [19, "html/day19-肌力与肌耐力的力学决定因素.html"],
   [20, "html/day20-运动损伤的力学机制.html"],
   [21, "html/day21-第3周复盘-生物力学.html"],
+  [22, "html/day22-能量系统-ATP-PCr系统.html"],
+  [23, "html/day23-能量系统-糖酵解系统.html"],
 ]);
 
 const generatedThumbs = new Map([
@@ -58,6 +67,8 @@ const generatedThumbs = new Map([
   [19, "html/thumbs/day19-strength-endurance-determinants-thumbnail.png"],
   [20, "html/thumbs/day20-injury-biomechanics-thumbnail.png"],
   [21, "html/thumbs/day21-week3-biomechanics-review-thumbnail.png"],
+  [22, "html/thumbs/day22-atp-pcr-energy-system-thumbnail.png"],
+  [23, "html/thumbs/day23-glycolytic-energy-system-thumbnail.png"],
 ]);
 
 const categories = ["全部", "骨关节", "肌肉", "生物力学", "能量系统", "训练技术", "评估纠正", "营养", "模考"];
@@ -69,6 +80,111 @@ const atlasImages = {
 };
 
 const atlasLessons = ["Day 4 关节运动学", "Day 5 动作平面", "Day 6 肌肉收缩"];
+
+const exercises = [
+  {
+    id: "barbell-back-squat",
+    name: "杠铃深蹲",
+    english: "Barbell Back Squat",
+    pattern: "深蹲",
+    equipment: "杠铃",
+    level: "中级",
+    muscles: ["股四头肌", "臀大肌"],
+    support: ["核心", "竖脊肌"],
+    media: "html/assets/action-library/barbell-back-squat/barbell-back-squat.gif",
+    frames: [
+      "html/assets/action-library/barbell-back-squat/frame-01-standing.png",
+      "html/assets/action-library/barbell-back-squat/frame-02-shallow.png",
+      "html/assets/action-library/barbell-back-squat/frame-03-half.png",
+      "html/assets/action-library/barbell-back-squat/frame-04-bottom.png",
+    ],
+    phases: ["站立", "浅蹲", "半蹲", "最低点"],
+    cues: ["足底三点稳定接触地面", "膝盖沿脚尖方向追踪", "下放时保持躯干刚性"],
+    mistakes: ["膝内扣", "足弓塌陷", "腰椎失去中立"],
+    coachingVisuals: {
+      mistakes: [
+        {
+          title: "膝内扣",
+          description: "膝盖落在脚尖内侧时，主动向外推膝。",
+          src: "html/assets/action-library/barbell-back-squat/error-knee-valgus.png",
+          alt: "杠铃深蹲膝内扣错误示意图",
+        },
+        {
+          title: "足弓塌陷",
+          description: "下蹲时内侧足弓明显下沉，足舟骨（脚内侧突出的骨头）下移、跟骨（脚后跟的骨头）外翻；距下关节过度旋前使脚掌内侧承重增加，并可能连锁膝盖内扣。",
+          src: "html/assets/action-library/barbell-back-squat/error-arch-collapse.png",
+          alt: "杠铃深蹲足弓塌陷与跟骨外翻错误示意图",
+        },
+        {
+          title: "腰椎失去中立",
+          description: "最低点出现骨盆后卷、腰椎圆背时，缩小下蹲深度并保持躯干刚性。",
+          src: "html/assets/action-library/barbell-back-squat/error-lumbar-neutral-loss.png",
+          alt: "杠铃深蹲腰椎失去中立错误示意图",
+        },
+      ],
+    },
+  },
+  {
+    id: "romanian-deadlift",
+    name: "罗马尼亚硬拉",
+    english: "Romanian Deadlift",
+    pattern: "髋铰链",
+    equipment: "杠铃",
+    level: "中级",
+    muscles: ["腘绳肌", "臀大肌"],
+    support: ["竖脊肌", "背阔肌"],
+    cues: ["髋向后移，不是屈膝下蹲", "杠铃贴近腿部", "保持脊柱中立"],
+    mistakes: ["腰背圆曲", "杠铃离身体过远", "把髋铰链做成深蹲"],
+  },
+  {
+    id: "push-up",
+    name: "俯卧撑",
+    english: "Push-up",
+    pattern: "水平推",
+    equipment: "自重",
+    level: "初级",
+    muscles: ["胸大肌", "肱三头肌"],
+    support: ["前三角肌", "前锯肌"],
+    cues: ["身体维持一条直线", "肘部略向后打开", "推起时主动推远地面"],
+    mistakes: ["腰部塌陷", "耸肩", "头部前伸"],
+  },
+  {
+    id: "lat-pulldown",
+    name: "高位下拉",
+    english: "Lat Pulldown",
+    pattern: "垂直拉",
+    equipment: "器械",
+    level: "初级",
+    muscles: ["背阔肌", "大圆肌"],
+    support: ["肱二头肌", "下斜方肌"],
+    cues: ["先做肩胛下压", "肘部向下向后", "避免靠后仰借力"],
+    mistakes: ["颈后下拉", "身体大幅后仰", "耸肩拉动"],
+  },
+  {
+    id: "pallof-press",
+    name: "Pallof Press",
+    english: "Pallof Press",
+    pattern: "抗旋转",
+    equipment: "绳索",
+    level: "初级",
+    muscles: ["腹斜肌", "腹横肌"],
+    support: ["臀中肌", "肩胛稳定肌"],
+    cues: ["肋骨对齐骨盆", "推出时抵抗躯干旋转", "均匀呼吸"],
+    mistakes: ["骨盆旋转", "耸肩", "憋气"],
+  },
+  {
+    id: "split-squat",
+    name: "保加利亚分腿蹲",
+    english: "Bulgarian Split Squat",
+    pattern: "单腿深蹲",
+    equipment: "哑铃",
+    level: "中级",
+    muscles: ["股四头肌", "臀大肌"],
+    support: ["臀中肌", "核心"],
+    cues: ["前脚完整踩实", "骨盆保持水平", "前膝稳定追踪"],
+    mistakes: ["前膝内扣", "后脚过度发力", "骨盆下沉"],
+  },
+];
 
 function atlasMuscle(id, view, name, region, x, y, functionText, children, training, signs) {
   return { id, view, name, region, x, y, function: functionText, children, training, signs, lessons: atlasLessons };
@@ -130,8 +246,36 @@ async function init() {
   ]);
   state.reviews = reviews;
   parseSyllabus(markdown);
+  restoreNavigation();
   bindUI();
   render();
+}
+
+function restoreNavigation() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(navigationStorageKey));
+    if (!saved || typeof saved !== "object") return;
+
+    if (["theory", "review", "exercise", "nutrition"].includes(saved.tab)) state.tab = saved.tab;
+    if (["library", "atlas"].includes(saved.exerciseView)) state.exerciseView = saved.exerciseView;
+    if (["front", "back"].includes(saved.atlasView)) state.atlasView = saved.atlasView;
+    if (exercises.some((exercise) => exercise.id === saved.selectedExercise)) state.selectedExercise = saved.selectedExercise;
+  } catch {
+    // Invalid or unavailable browser storage should not block app startup.
+  }
+}
+
+function saveNavigation() {
+  try {
+    localStorage.setItem(navigationStorageKey, JSON.stringify({
+      tab: state.tab,
+      exerciseView: state.exerciseView,
+      atlasView: state.atlasView,
+      selectedExercise: state.selectedExercise,
+    }));
+  } catch {
+    // Private browsing or storage policies can disable localStorage.
+  }
 }
 
 function parseSyllabus(markdown) {
@@ -203,11 +347,17 @@ function bindUI() {
   $("atlasImage").addEventListener("load", syncHotspotLayer);
   window.addEventListener("resize", syncHotspotLayer);
   $("theoryTab").addEventListener("click", () => setTab("theory"));
-  $("reviewTab").addEventListener("click", () => setTab("review"));
   $("exerciseTab").addEventListener("click", () => setTab("exercise"));
+  $("nutritionTab").addEventListener("click", () => setTab("nutrition"));
+  $("headerAction").addEventListener("click", (event) => {
+    if ($("headerAction").dataset.view !== "review") return;
+    event.preventDefault();
+    setTab("review");
+  });
   document.querySelectorAll("[data-exercise-view]").forEach((button) => {
     button.addEventListener("click", () => {
       state.exerciseView = button.dataset.exerciseView;
+      saveNavigation();
       render();
     });
   });
@@ -216,8 +366,38 @@ function bindUI() {
       state.atlasView = button.dataset.atlasView;
       const firstMuscle = muscles.find((muscle) => muscle.view === state.atlasView);
       state.selectedMuscle = firstMuscle?.id || state.selectedMuscle;
+      saveNavigation();
       render();
     });
+  });
+  $("exerciseSearch").addEventListener("input", (event) => {
+    state.exerciseQuery = event.target.value.trim();
+    renderExerciseLibrary();
+  });
+  $("exercisePatternFilters").addEventListener("click", (event) => {
+    const button = event.target.closest("[data-exercise-pattern]");
+    if (!button) return;
+    state.exercisePattern = button.dataset.exercisePattern;
+    renderExerciseLibrary();
+  });
+  $("exerciseMuscleFilters").addEventListener("click", (event) => {
+    const button = event.target.closest("[data-exercise-muscle]");
+    if (!button) return;
+    state.exerciseMuscle = button.dataset.exerciseMuscle;
+    renderExerciseLibrary();
+  });
+  $("exerciseEquipmentFilters").addEventListener("click", (event) => {
+    const button = event.target.closest("[data-exercise-equipment]");
+    if (!button) return;
+    state.exerciseEquipment = button.dataset.exerciseEquipment;
+    renderExerciseLibrary();
+  });
+  $("exerciseCards").addEventListener("click", (event) => {
+    const card = event.target.closest("[data-exercise-id]");
+    if (!card) return;
+    state.selectedExercise = card.dataset.exerciseId;
+    saveNavigation();
+    renderExerciseLibrary();
   });
   $("searchInput").addEventListener("input", (event) => {
     state.query = event.target.value.trim();
@@ -236,8 +416,12 @@ function bindUI() {
   });
   $("resetFilters").addEventListener("click", resetFilters);
   document.querySelectorAll("[data-close-modal]").forEach((node) => node.addEventListener("click", closeModal));
+  document.querySelectorAll("[data-close-coaching-visual]").forEach((node) => node.addEventListener("click", closeCoachingVisual));
   document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") closeModal();
+    if (event.key === "Escape") {
+      closeModal();
+      closeCoachingVisual();
+    }
   });
 
   renderFilterControls();
@@ -245,9 +429,10 @@ function bindUI() {
 
 function setTab(tab) {
   state.tab = tab;
+  saveNavigation();
   $("theoryTab").classList.toggle("active", tab === "theory");
-  $("reviewTab").classList.toggle("active", tab === "review");
   $("exerciseTab").classList.toggle("active", tab === "exercise");
+  $("nutritionTab").classList.toggle("active", tab === "nutrition");
   render();
 }
 
@@ -305,22 +490,29 @@ function render() {
 
   const theoryMode = state.tab === "theory";
   const reviewMode = state.tab === "review";
+  const nutritionMode = state.tab === "nutrition";
   const exerciseMode = state.tab === "exercise";
+  $("theoryTab").classList.toggle("active", theoryMode);
+  $("exerciseTab").classList.toggle("active", exerciseMode);
+  $("nutritionTab").classList.toggle("active", nutritionMode);
   $("cardGrid").hidden = !theoryMode;
   $("reviewGrid").hidden = !reviewMode;
   $("exercisePanel").hidden = !exerciseMode;
+  $("resultBar").hidden = nutritionMode;
   renderMainHeader();
 
   if (theoryMode) renderCards(lessons);
   if (reviewMode) renderReviews(reviews);
   if (exerciseMode) renderExercise();
-  $("resultText").textContent = theoryMode
-    ? `找到 ${lessons.length} 个理论主题`
-    : reviewMode
-      ? `找到 ${reviews.length} 个复习包`
-      : state.exerciseView === "atlas"
-        ? `肌肉图谱 · ${state.atlasView === "front" ? "正面" : "背面"}`
-        : "健身动作库待补";
+  if (theoryMode) {
+    $("resultText").textContent = `找到 ${lessons.length} 个理论主题`;
+  } else if (reviewMode) {
+    $("resultText").textContent = `找到 ${reviews.length} 个复习页`;
+  } else if (exerciseMode) {
+    $("resultText").textContent = state.exerciseView === "atlas"
+      ? `肌肉图谱 · ${state.atlasView === "front" ? "正面" : "背面"}`
+      : `动作库 · ${filteredExercises().length} 个动作`;
+  }
 }
 
 function renderMainHeader() {
@@ -329,30 +521,39 @@ function renderMainHeader() {
       kicker: "112 Day Library",
       title: "健身知识库",
       description: "按理论、证书、阶段和主题检索；已有详情页可直接弹窗阅读。",
-      action: "最新复习",
-      href: "html/review-day20-运动损伤的力学机制.html",
+      action: "复习",
+      href: "#reviewGrid",
+      view: "review",
     },
     review: {
-      kicker: "Weekly Review",
-      title: "复习资料",
-      description: "按周回顾核心概念、错题要点和训练实践。",
-      action: "查看理论",
-      href: "#cardGrid",
+      kicker: "Review Library",
+      title: "复习",
+      description: "全部复习页，按学习节奏回顾核心知识。",
     },
     exercise: {
       kicker: "Training Lab",
       title: "健身动作",
       description: "通过肌肉图谱和动作库，建立训练动作与解剖知识的连接。",
-      action: "肌肉图谱",
-      href: "#muscleAtlas",
+    },
+    nutrition: {
+      kicker: "Nutrition Library",
+      title: "营养学",
+      description: "",
     },
   }[state.tab];
 
   $("headerKicker").textContent = header.kicker;
   $("headerTitle").textContent = header.title;
   $("headerDescription").textContent = header.description;
-  $("headerAction").textContent = header.action;
-  $("headerAction").href = header.href;
+  $("headerDescription").hidden = !header.description;
+  $("headerAction").hidden = !header.action;
+  if (header.action) {
+    $("headerAction").textContent = header.action;
+    $("headerAction").href = header.href;
+    $("headerAction").dataset.view = header.view || "";
+  } else {
+    delete $("headerAction").dataset.view;
+  }
 }
 
 function renderFilterState() {
@@ -457,11 +658,100 @@ function renderReviews(reviews) {
 function renderExercise() {
   document.querySelectorAll("[data-exercise-view]").forEach((button) => {
     button.classList.toggle("active", button.dataset.exerciseView === state.exerciseView);
+    button.setAttribute("aria-selected", String(button.dataset.exerciseView === state.exerciseView));
   });
   $("muscleAtlas").hidden = state.exerciseView !== "atlas";
   $("exerciseLibrary").hidden = state.exerciseView !== "library";
 
   if (state.exerciseView === "atlas") renderMuscleAtlas();
+  if (state.exerciseView === "library") renderExerciseLibrary();
+}
+
+function libraryChip(kind, value, active) {
+  const attr = `exercise-${kind}`;
+  return `<button class="library-chip ${value === active ? "active" : ""}" type="button" data-${attr}="${value}">${value}</button>`;
+}
+
+function filteredExercises() {
+  const query = state.exerciseQuery.toLowerCase();
+  return exercises.filter((exercise) => {
+    const patternOk = state.exercisePattern === "全部" || exercise.pattern === state.exercisePattern;
+    const muscleOk = state.exerciseMuscle === "全部" || [...exercise.muscles, ...exercise.support].includes(state.exerciseMuscle);
+    const equipmentOk = state.exerciseEquipment === "全部" || exercise.equipment === state.exerciseEquipment;
+    const text = [exercise.name, exercise.english, exercise.pattern, exercise.equipment, exercise.level, ...exercise.muscles, ...exercise.support].join(" ").toLowerCase();
+    return patternOk && muscleOk && equipmentOk && (!query || text.includes(query));
+  });
+}
+
+function renderExerciseLibrary() {
+  const patterns = ["全部", ...new Set(exercises.map((exercise) => exercise.pattern))];
+  const exerciseMuscles = ["全部", ...new Set(exercises.flatMap((exercise) => [...exercise.muscles, ...exercise.support]))];
+  const equipment = ["全部", ...new Set(exercises.map((exercise) => exercise.equipment))];
+  const filtered = filteredExercises();
+  if (!filtered.some((exercise) => exercise.id === state.selectedExercise)) {
+    state.selectedExercise = filtered[0]?.id || exercises[0].id;
+  }
+  const selected = exercises.find((exercise) => exercise.id === state.selectedExercise) || exercises[0];
+  $("exercisePatternFilters").innerHTML = patterns.map((pattern) => libraryChip("pattern", pattern, state.exercisePattern)).join("");
+  $("exerciseMuscleFilters").innerHTML = exerciseMuscles.map((muscle) => libraryChip("muscle", muscle, state.exerciseMuscle)).join("");
+  $("exerciseEquipmentFilters").innerHTML = equipment.map((item) => libraryChip("equipment", item, state.exerciseEquipment)).join("");
+  $("exerciseCount").textContent = `${filtered.length} 个动作`;
+  $("exerciseCards").innerHTML = filtered.map((exercise) => `
+    <button class="exercise-card ${exercise.id === selected.id ? "active" : ""}" type="button" data-exercise-id="${exercise.id}" aria-pressed="${exercise.id === selected.id}">
+      <span class="exercise-card-mark">${exercise.pattern.slice(0, 2)}</span>
+      <span class="exercise-card-copy"><strong>${exercise.name}</strong><small>${exercise.pattern} · ${exercise.equipment}</small></span>
+      <span class="exercise-card-level">${exercise.level}</span>
+    </button>
+  `).join("") || `<div class="exercise-empty">没有匹配动作</div>`;
+  const hasMedia = Boolean(selected.media);
+  $("exerciseDetail").innerHTML = `
+    <div class="detail-media ${hasMedia ? "has-media" : ""} ${selected.media?.endsWith(".gif") ? "is-animation" : ""}">
+      ${hasMedia ? `<img id="exerciseMedia" src="${selected.media}" alt="${selected.name}动作演示" />` : `<div class="detail-media-placeholder"><span>${selected.pattern}</span><strong>${selected.name}</strong><small>演示素材待接入</small></div>`}
+      <span class="detail-level">${selected.level}</span>
+    </div>
+    <div class="exercise-detail-body">
+      <div class="exercise-title-row"><div><div class="detail-overline">${selected.pattern} · ${selected.equipment}</div><h2>${selected.name}</h2><p>${selected.english}</p></div></div>
+      <section class="muscle-summary"><div><span>主练</span><strong>${selected.muscles.join(" · ")}</strong></div><div><span>协同</span><strong>${selected.support.join(" · ")}</strong></div></section>
+      ${hasMedia ? `<section class="phase-section"><div class="section-label">动作阶段</div><div class="phase-row" id="phaseRow">${selected.phases.map((phase, index) => `<button class="phase-button ${index === 0 ? "active" : ""}" type="button" data-frame-index="${index}"><span>${String(index + 1).padStart(2, "0")}</span>${phase}</button>`).join("")}</div></section>` : ""}
+      <div class="coaching-grid"><section><div class="section-label">关键提示</div><ul>${selected.cues.map((cue) => `<li>${cue}</li>`).join("")}</ul></section><section><div class="section-label">常见错误</div>${renderMistakes(selected.mistakes, selected.coachingVisuals?.mistakes)}</section></div>
+    </div>
+  `;
+  if (hasMedia) {
+    $("phaseRow").onclick = (event) => {
+      const button = event.target.closest("[data-frame-index]");
+      if (!button) return;
+      const index = Number(button.dataset.frameIndex);
+      $("exerciseMedia").src = selected.frames[index];
+      document.querySelectorAll(".phase-button").forEach((item) => item.classList.toggle("active", item === button));
+    };
+  }
+  $("exerciseDetail").onclick = (event) => {
+    const visual = event.target.closest("[data-coaching-visual]");
+    if (!visual) return;
+    openCoachingVisual(visual.dataset.coachingVisual, visual.dataset.coachingTitle, visual.dataset.coachingAlt);
+  };
+}
+
+function renderMistakes(mistakes, visuals = []) {
+  return `<ul class="mistake-list">${mistakes.map((mistake) => {
+    const visual = visuals.find((item) => item.title === mistake);
+    if (!visual) return `<li>${mistake}</li>`;
+    return `<li class="mistake-item"><button type="button" data-coaching-visual="${visual.src}" data-coaching-title="${visual.title}" data-coaching-alt="${visual.alt}" aria-label="查看${visual.title}错误示意图"><span>${mistake}</span><b aria-hidden="true">↗</b><span class="mistake-preview"><img src="${visual.src}" alt="" /><span><strong>${visual.title}</strong><small>${visual.description}</small></span></span></button></li>`;
+  }).join("")}</ul>`;
+}
+
+function openCoachingVisual(src, title, alt) {
+  $("coachingVisualTitle").textContent = title;
+  $("coachingVisualImage").src = src;
+  $("coachingVisualImage").alt = alt;
+  $("coachingVisualModal").classList.add("open");
+  $("coachingVisualModal").setAttribute("aria-hidden", "false");
+}
+
+function closeCoachingVisual() {
+  $("coachingVisualModal").classList.remove("open");
+  $("coachingVisualModal").setAttribute("aria-hidden", "true");
+  $("coachingVisualImage").removeAttribute("src");
 }
 
 function renderMuscleAtlas() {

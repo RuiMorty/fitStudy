@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 22 中午复习 · 能量系统-ATP-PCr系统</title>
+  <style>
+    :root{--paper:#fff;--ink:#1a2b22;--muted:#5a6b62;--line:#e2e8e4;--green:#0ea66b;--blue:#0ea5e9;--orange:#ea7a17;--rose:#e23b3b}
+    *{box-sizing:border-box}
+    body{margin:0;background:#f6f8f7;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.75;padding:18px}
+    a{color:inherit}
+    .wrap{max-width:980px;margin:auto}
+    .hero{text-align:center;padding:26px 10px}
+    .hero:before{content:"中午复习 · Day 22";display:inline-block;font-size:.78rem;font-weight:800;color:#0c6da3;background:#e8f4fb;border:1px solid #cfe8f8;border-radius:999px;padding:4px 12px;margin-bottom:10px}
+    .hero h1{margin:0 0 10px;font-size:2rem;background:linear-gradient(90deg,var(--green),var(--blue));-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:0}
+    .sub{color:var(--muted);margin:0 auto;max-width:820px}
+    .chips{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:12px}
+    .chip{font-size:.78rem;border:1px solid #d4ebe0;border-radius:999px;padding:3px 10px;background:#fff;color:#0c6da3;font-weight:700}
+    .section,.card,footer{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px;margin:14px 0;box-shadow:0 2px 12px rgba(20,40,30,.06)}
+    .section h2{font-size:1.18rem;margin:0 0 12px;color:#0a7d52}
+    .fresh{border-left:4px solid var(--green)}
+    .ebbinghaus{border-left:4px solid var(--blue)}
+    .mistakes{border-left:4px solid var(--rose)}
+    .thumb,.mini-img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:10px;border:1px solid var(--line);background:#f0f4f2;display:block;margin:8px 0}
+    .source{display:inline-block;margin-top:8px;color:#0c6da3;text-decoration:none;font-weight:800}
+    .source:hover{text-decoration:underline}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:12px}
+    .card{margin:0;display:block}
+    .card h3{margin:0 0 8px;color:#0a7d52;font-size:1rem}
+    .meta{font-size:.8rem;color:var(--muted);margin-bottom:8px;font-weight:500}
+    .card ul{margin:8px 0 0;padding-left:18px}
+    .card li{margin:5px 0}
+    .mnemonic{border-radius:12px;padding:12px;background:#e8f5ee;color:#0a7d52;font-weight:800;margin:10px 0}
+    .q{background:#f8fffb;border:1px solid #dbe8e1;border-radius:12px;padding:13px;margin:10px 0}
+    .q p{margin:0 0 8px}
+    button{border:0;border-radius:8px;background:var(--green);color:#fff;font-weight:700;padding:7px 12px;cursor:pointer}
+    .answer{display:none;border-left:4px solid var(--blue);background:#f0f8fc;border-radius:10px;padding:10px;margin-top:9px}
+    .answer.show{display:block}
+    .compare{width:100%;border-collapse:collapse;font-size:.92rem}
+    .compare th{background:var(--green);color:#fff;text-align:left}
+    .compare th,.compare td{padding:9px;border-bottom:1px solid var(--line);vertical-align:top}
+    .review-box{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px}
+    .note{border-left:4px solid var(--orange);background:#fffaf3;border-radius:10px;padding:10px}
+    footer{text-align:center;color:var(--muted);font-size:.84rem;margin:22px 0}
+    @media(max-width:640px){body{padding:12px}.hero h1{font-size:1.55rem}.section,.card{padding:14px}.thumb,.mini-img{height:auto}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="hero">
+      <h1>Day 22 中午复习 · 能量系统-ATP-PCr系统</h1>
+      <div class="sub">目标: 把 ATP、PCr、0-10 秒爆发供能和 3-5 分钟组间休息连成训练判断。</div>
+      <div class="chips">
+        <span class="chip">今日新知识 Day22</span>
+        <span class="chip">1天 Day21</span>
+        <span class="chip">3天 Day19</span>
+        <span class="chip">7天 Day15</span>
+        <span class="chip">14天 Day08</span>
+      </div>
+    </header>
+
+    <section class="section fresh">
+      <h2>今日新知识速复盘</h2>
+      <article class="card">
+        <div class="meta">今天早上 · Day 22 · 今日新知识</div>
+        <h3>Day 22 · 能量系统-ATP-PCr系统</h3>
+        <img class="thumb" src="thumbs/day22-atp-pcr-energy-system-thumbnail.png" alt="Day22 ATP-PCr系统无字缩略图">
+        <p>ATP-PCr 系统是极短时高强度动作的即时供能系统。ATP 是肌肉直接使用的能量货币，PCr 把磷酸基团快速转给 ADP，让 ADP 重新变回 ATP。</p>
+        <p>判断题干时抓两件事: 是否 0-10 秒内全力输出，是否需要最高功率。单次大重量、起跑加速、跳跃和投掷优先想到 ATP-PCr；想保持下一组输出质量，就需要 3-5 分钟让 PCr 接近完全恢复。</p>
+        <a class="source" href="day22-能量系统-ATP-PCr系统.html">打开 Day22 原学习页 →</a>
+      </article>
+      <div class="mnemonic"><strong>口诀：</strong>ATP 是现金，PCr 是快充；十秒内爆发，休三五分钟。</div>
+    </section>
+
+    <section class="section ebbinghaus">
+      <h2>艾宾浩斯复习区（1/3/7/14天）</h2>
+      <div class="grid">
+        <article class="card">
+          <div class="meta">1天前 · Day 21 · 间隔复习</div>
+          <img class="mini-img" src="thumbs/day21-week3-biomechanics-review-thumbnail.png" alt="Day21 第3周生物力学复盘无字缩略图">
+          <h3>Day 21 · 第3周复盘-生物力学</h3>
+          <ul>
+            <li>外力通过力臂形成力矩，动作难度不只看重量。</li>
+            <li>动作模式、脊柱核心、肌力决定因素和组织耐受要串起来看。</li>
+            <li>急性风险看单次峰值，慢性风险看重复累计和恢复不足。</li>
+          </ul>
+          <a class="source" href="day21-第3周复盘-生物力学.html">复看原页</a>
+        </article>
+        <article class="card">
+          <div class="meta">3天前 · Day 19 · 间隔复习</div>
+          <img class="mini-img" src="thumbs/day19-strength-endurance-determinants-thumbnail.png" alt="Day19 肌力与肌耐力力学决定因素无字缩略图">
+          <h3>Day 19 · 肌力与肌耐力的力学决定因素</h3>
+          <ul>
+            <li>新手力量先涨，常来自运动单位募集、发放频率和同步化。</li>
+            <li>横截面积越大潜在产力越高，但不是唯一决定因素。</li>
+            <li>向心速度越快可产力越小；离心段通常能承受更大力。</li>
+          </ul>
+          <a class="source" href="day19-肌力与肌耐力的力学决定因素.html">复看原页</a>
+        </article>
+        <article class="card">
+          <div class="meta">7天前 · Day 15 · 间隔复习</div>
+          <img class="mini-img" src="thumbs/day15-biomechanics-force-basics-thumbnail.png" alt="Day15 生物力学基本概念与力无字缩略图">
+          <h3>Day 15 · 生物力学基本概念与力</h3>
+          <ul>
+            <li>F=ma: 力和质量、加速度相关，训练中不要只盯重量。</li>
+            <li>力是矢量，有大小和方向；斜向力可分解成垂直分量。</li>
+            <li>重心位置影响平衡，摩擦力影响抓握和地面反作用力。</li>
+          </ul>
+          <a class="source" href="day15-生物力学基本概念与力.html">复看原页</a>
+        </article>
+        <article class="card">
+          <div class="meta">14天前 · Day 8 · 间隔复习</div>
+          <img class="mini-img" src="thumbs/day08-proprioception-vestibular-thumbnail.png" alt="Day08 本体感觉与前庭系统无字缩略图">
+          <h3>Day 8 · 本体感觉与前庭系统</h3>
+          <ul>
+            <li>肌梭感受肌肉长度变化和速度，触发牵张反射。</li>
+            <li>GTO 感受肌腱张力，参与自生抑制和保护机制。</li>
+            <li>前庭系统感受头部位置和平衡，是动作控制基础。</li>
+          </ul>
+          <a class="source" href="day08-本体感觉与前庭系统.html">复看原页</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>主动回忆题</h2>
+      <div class="q"><p><b>今日新知识 Day22：</b>ATP-PCr 系统为什么适合 0-10 秒爆发动作？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">它不依赖氧气，ATP 和 PCr 已在肌细胞内，PCr 可快速把磷酸转给 ADP 再合成 ATP。路径短、启动快，但储量有限。</div></div>
+      <div class="q"><p><b>今日新知识 Day22：</b>为什么最大力量训练常建议组间休息 3-5 分钟？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">PCr 约 30 秒恢复一半，3-5 分钟接近完全恢复。长休能维持下一组峰值输出、速度和技术质量。</div></div>
+      <div class="q"><p><b>Day21：</b>用一句话把力、力矩、动作模式和损伤风险串起来。</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">外力通过力臂变成关节力矩，落到具体动作模式中，再由脊柱核心和组织耐受承接；超过承受范围就变成急性或累计损伤风险。</div></div>
+      <div class="q"><p><b>Day19：</b>新手力量快速增长但肌肉没明显变大，先解释哪个机制？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">先解释神经适应: 运动单位募集增加、发放频率提高、同步化变好，动作技术也更熟，所以力量可先于肌肉横截面积增长。</div></div>
+      <div class="q"><p><b>Day15：</b>为什么力不能只说“多大”，还要说“朝哪里”？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">力是矢量，有大小和方向。训练动作中斜向力会分解成不同分量，方向改变会影响关节受力、稳定和平衡。</div></div>
+      <div class="q"><p><b>Day08：</b>肌梭和 GTO 最关键区别是什么？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">肌梭在肌腹内，感受肌肉长度变化和速度，促进牵张反射；GTO 在肌腱，感受张力，参与保护性抑制。</div></div>
+      <div class="q"><p><b>综合：</b>10 秒冲刺后只休 30 秒再冲，第二次速度下降，如何用 Day22 解释？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">第一次冲刺大量消耗 ATP-PCr，30 秒只能恢复约一半 PCr。第二次开始时快充储备不足，所以峰值输出和速度下降。</div></div>
+      <div class="q"><p><b>综合：</b>跳跃前快速下蹲为什么可能提高起跳，但疲劳时也可能变危险？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">快速预拉伸可激活肌梭和 SSC，提高爆发输出；但疲劳时本体感觉和控制下降，膝髋踝对线变差，力矩和损伤风险增加。</div></div>
+    </section>
+
+    <section class="section mistakes">
+      <h2>错因辨析</h2>
+      <table class="compare">
+        <tr><th>易错点</th><th>错因</th><th>修正句</th></tr>
+        <tr><td>把 ATP-PCr 当成乳酸系统</td><td>只记得“无氧”，没看持续时间。</td><td>ATP-PCr 是 0-10 秒即时快供能；较长高强度才更偏糖酵解。</td></tr>
+        <tr><td>以为短休一定更有效</td><td>把累和训练质量混为一谈。</td><td>力量和爆发训练要恢复 PCr，常需 3-5 分钟维持峰值输出。</td></tr>
+        <tr><td>只看重量，不看加速度</td><td>忽略 F=ma 和速度质量。</td><td>爆发动作要看力和加速度，重量相同也可能输出质量不同。</td></tr>
+        <tr><td>把肌梭和 GTO 混掉</td><td>把长度变化和张力变化都叫“感觉”。</td><td>肌梭看长度和速度；GTO 看肌腱张力。</td></tr>
+      </table>
+    </section>
+
+    <section class="section">
+      <h2>今日复盘</h2>
+      <div class="review-box">
+        <div class="note"><strong>30 秒默写：</strong>PCr + ADP → 肌酸 + ATP；0-10 秒；30 秒约 50%；3-5 分钟接近完全恢复。</div>
+        <div class="note"><strong>动作判断：</strong>1RM、短冲刺、跳跃、投掷先想 ATP-PCr；400 米后段和长跑不要误判。</div>
+        <div class="note"><strong>串联复习：</strong>爆发输出看 ATP-PCr，动作质量看力和力矩，安全落地看本体感觉和组织耐受。</div>
+      </div>
+    </section>
+
+    <footer>Fitness Study · Day 22/112 · 中午12:00复习推送 · 仅复习，不推进进度</footer>
+  </main>
+  <script>
+    function showAnswer(btn){btn.nextElementSibling.classList.toggle("show")}
+  </script>
+</body>
+</html>

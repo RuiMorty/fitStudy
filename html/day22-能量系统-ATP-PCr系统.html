@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 22 · 能量系统-ATP-PCr系统</title>
+  <style>
+    *{box-sizing:border-box}
+    body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.75;background:#f6f8f7;color:#1a2b22;padding:18px}
+    .wrap{max-width:980px;margin:auto}
+    .header{text-align:center;padding:24px 10px}
+    .header h1{margin:0 0 10px;font-size:2rem;background:linear-gradient(90deg,#0ea66b,#0ea5e9);-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:0}
+    .sub{color:#5a6b62}
+    .chips{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:10px}
+    .chip{font-size:.78rem;border:1px solid #d4ebe0;border-radius:999px;padding:3px 10px;background:#fff;color:#0c6da3}
+    .panel,.figure,.warn{background:#fff;border:1px solid #e2e8e4;border-radius:14px;padding:18px;margin:14px 0;box-shadow:0 2px 12px rgba(20,40,30,.06)}
+    .lead{border-left:4px solid #0ea66b}
+    .orange{border-left:4px solid #ea7a17}
+    .figure img{width:100%;display:block;border-radius:12px;border:1px solid #e2e8e4;background:#fbfdfc;cursor:zoom-in}
+    .caption{font-size:.85rem;color:#5a6b62;margin-top:8px;text-align:center}
+    .panel h2,.warn h2{font-size:1.18rem;margin:0 0 10px;color:#0a7d52}
+    .term{font-weight:700;color:#0a7d52;background:#e8f5ee;border-radius:5px;padding:1px 5px}
+    ul.kp{list-style:none;padding:0;margin:0}
+    ul.kp>li{border-bottom:1px dashed #e2e8e4}
+    .kp-head{display:block;cursor:pointer;position:relative;padding:13px 8px 13px 30px}
+    .kp-head:before{content:"▸";position:absolute;left:8px;color:#0ea66b;font-weight:800;transition:.2s}
+    .open>.kp-head:before{transform:rotate(90deg)}
+    .kp-head:hover{background:#f0f4f2}
+    .kp-body{display:none;padding:0 14px 16px 30px}
+    .open>.kp-body{display:block}
+    .dim{display:block;margin-top:10px;font-size:.78rem;font-weight:800;color:#0c6da3}
+    .take{border-left:4px solid #0ea66b;background:#f0fbf5;border-radius:10px;padding:10px 12px;margin:10px 0}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin:12px 0}
+    .mini{border:1px solid #dbe8e1;border-radius:12px;background:#fbfdfc;padding:12px}
+    .mini h4{margin:0 0 7px;font-size:.98rem;color:#0a7d52}
+    .tbl{width:100%;border-collapse:collapse;font-size:.9rem;margin:10px 0}
+    .tbl th{background:#0ea66b;color:#fff;text-align:left}
+    .tbl th,.tbl td{padding:8px;border-bottom:1px solid #e2e8e4;vertical-align:top}
+    .warn{border-left:4px solid #e23b3b}
+    .warn p{margin:8px 0}
+    .mnemonic{background:linear-gradient(135deg,#0ea66b,#0ea5e9);color:#fff;border-radius:14px;padding:20px;margin:14px 0;box-shadow:0 2px 12px rgba(20,40,30,.08)}
+    .mnemonic h2{margin:0 0 8px;font-size:1.15rem}
+    .mnemonic strong{color:#fff7d6}
+    .card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+    .flip{min-height:145px;perspective:800px;cursor:pointer}
+    .flip-inner{position:relative;width:100%;height:100%;min-height:145px;transition:transform .5s;transform-style:preserve-3d}
+    .flip.flipped .flip-inner{transform:rotateY(180deg)}
+    .face{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:15px;border-radius:13px;border:1px solid #e2e8e4;backface-visibility:hidden;background:#fff;font-weight:700}
+    .front{color:#0a7d52;background:#f8fffb}
+    .back{transform:rotateY(180deg);background:#eef7ff;color:#0c6da3;font-weight:600}
+    .quiz{border-top:1px dashed #e2e8e4;padding-top:12px;margin-top:12px}
+    .quiz h3{margin:0 0 8px;font-size:1rem;color:#1a2b22}
+    .opt{border:1px solid #e2e8e4;border-radius:10px;padding:9px 10px;margin:7px 0;background:#fff;cursor:pointer}
+    .opt:hover{background:#f0f4f2}
+    .lbl{font-weight:800;color:#0c6da3;margin-right:4px}
+    .correct{border-color:#0ea66b!important;background:#e9f8f0!important}
+    .wrong-show{border-color:#e23b3b!important;background:#fff0f0!important}
+    button{border:0;border-radius:999px;background:#0ea66b;color:#fff;font-weight:800;padding:8px 14px;cursor:pointer;margin-top:6px}
+    .reveal{display:none;border-left:4px solid #0ea5e9;background:#f0f8fc;border-radius:10px;padding:10px;margin-top:8px}
+    .reveal.show{display:block}
+    .list{padding-left:20px;margin:8px 0}
+    .list li{margin:7px 0}
+    footer{text-align:center;color:#5a6b62;font-size:.85rem;margin:22px 0}
+    .lightbox{position:fixed;inset:0;background:rgba(0,0,0,.82);display:none;align-items:center;justify-content:center;z-index:9;padding:18px}
+    .lightbox.show{display:flex}
+    .lightbox img{max-width:96vw;max-height:92vh;border-radius:10px;background:#fff}
+    @media(max-width:640px){body{padding:10px}.header h1{font-size:1.5rem}.panel,.figure,.warn{padding:14px}.kp-body{padding-left:14px}.card-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="header">
+      <h1>Day 22 · 能量系统-ATP-PCr系统</h1>
+      <div class="sub">今天主题: 解释 0-10 秒最大力量和爆发动作的“即时供能电池”。</div>
+      <div class="chips"><span class="chip">第4周 · 阶段1基础科学</span><span class="chip">NSCA + NASM 双证</span><span class="chip">早间新知识</span></div>
+    </header>
+
+    <section class="panel lead">
+      <h2>一句话总结</h2>
+      <p><strong>ATP-PCr 系统像肌肉里的应急充电宝</strong>: ATP 是能直接让肌肉收缩的现金，PCr 是旁边的备用零钱包。全力冲刺或单次大重量时，它能最快补 ATP，但储量很少，所以 0-10 秒最强，之后必须靠休息把 PCr 慢慢补回来。</p>
+    </section>
+
+    <figure class="figure">
+      <img src="assets/阶段1基础科学/day22-能量系统-ATP-PCr系统.png" alt="ATP-PCr系统中文标注学习图">
+      <div class="caption">看图重点: ATP 直接供能，PCr 快速捐出磷酸基团把 ADP 重新变回 ATP；右侧时间轴解释为什么大重量组间常需要 3-5 分钟。</div>
+    </figure>
+
+    <section class="panel">
+      <h2>核心要点</h2>
+      <ul class="kp">
+        <li>
+          <span class="kp-head"><span class="term">ATP-PCr</span>: ATP 是直接供能物质，PCr 是快速再生 ATP 的备用仓库。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 肌肉不能直接“烧脂肪推杠铃”，最后都要把能量换成 ATP，ATP 再驱动横桥循环。</div>
+            <div class="grid">
+              <div class="mini"><h4>字面意思</h4><p>ATP = 三磷酸腺苷，是细胞直接使用的能量货币。PCr = 磷酸肌酸，是带着高能磷酸的备用仓库。</p></div>
+              <div class="mini"><h4>大白话</h4><p>ATP 像手机当前电量，PCr 像快充宝；电量掉了，PCr 立刻帮它补一格。</p></div>
+              <div class="mini"><h4>考试含义</h4><p>题干出现“最大力量、爆发、短冲刺、0-10 秒”，优先联想 ATP-PCr，而不是乳酸或有氧。</p></div>
+            </div>
+            <span class="dim">底层机制</span>
+            <p>肌肉收缩时 ATP 断开一个磷酸变成 ADP，释放能量给肌球蛋白横桥做功。PCr 把自己的磷酸快速转给 ADP，让 ADP 重新变回 ATP。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为 ATP-PCr 是“燃烧蛋白质”。✅其实它主要是靠细胞里已经储存的 ATP 和磷酸肌酸快速周转，不需要氧气参与。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">反应过程</span>: PCr + ADP → 肌酸 + ATP，是最快的 ATP 再合成路径。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 它快，是因为反应步骤短、位置近，不用先把糖脂拆开再进复杂代谢链。</div>
+            <table class="tbl">
+              <tr><th>角色</th><th>做什么</th><th>训练类比</th></tr>
+              <tr><td>ADP</td><td>ATP 用掉一个磷酸后的低能状态。</td><td>电池掉了一格。</td></tr>
+              <tr><td>PCr</td><td>把磷酸基团捐给 ADP。</td><td>充电宝立刻补电。</td></tr>
+              <tr><td>肌酸</td><td>PCr 捐出磷酸后留下的形式。</td><td>充电宝用掉了，需要休息再充。</td></tr>
+            </table>
+            <span class="dim">真实例子</span>
+            <p>1RM 深蹲起杠、起跑前 10 米加速、抓举拉起瞬间，都需要几乎立刻输出高功率。身体没时间等氧化系统慢慢供能。</p>
+            <span class="dim">训练含义</span>
+            <p>想练最大力量和爆发力，重点不是把组练到酸，而是让每次输出都够快、够高质量，并给 PCr 足够恢复时间。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">0-10秒</span>: ATP-PCr 是无氧、即时、极短时系统，适合最高功率输出。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 它不是“能量很多”，而是“来得最快”。像火箭点火，猛烈但短。</div>
+            <div class="grid">
+              <div class="mini"><h4>无氧</h4><p>不依赖氧气到场，所以启动最快。</p></div>
+              <div class="mini"><h4>即时</h4><p>ATP 和 PCr 已在肌细胞内，反应路径短。</p></div>
+              <div class="mini"><h4>极短时</h4><p>储量有限，持续全力输出很快下降。</p></div>
+            </div>
+            <span class="dim">真实例子</span>
+            <p>单次最大卧推、3 次以内大重量硬拉、10 秒内冲刺、跳高起跳、投掷和举重爆发阶段，都高度依赖 ATP-PCr。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为 100 米全程都只靠 ATP-PCr。✅其实起跑和前段高度依赖 ATP-PCr，后段会逐渐叠加糖酵解供能。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">恢复速度</span>: 30 秒约恢复 50%，3-5 分钟接近完全恢复。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 组间休息不是偷懒，是在给 PCr 重新充电。</div>
+            <table class="tbl">
+              <tr><th>休息时间</th><th>PCr状态</th><th>适合目标</th></tr>
+              <tr><td>30 秒左右</td><td>恢复约一半，仍没满。</td><td>代谢压力、训练密度、轻中负荷循环。</td></tr>
+              <tr><td>1-2 分钟</td><td>恢复更多，但最大输出仍可能打折。</td><td>一般增肌、技术练习、不过分追求峰值。</td></tr>
+              <tr><td>3-5 分钟</td><td>接近完全恢复。</td><td>大重量力量、爆发、速度质量。</td></tr>
+            </table>
+            <span class="dim">底层机制</span>
+            <p>PCr 恢复需要有氧过程帮忙把肌酸重新“充成”磷酸肌酸。所以它输出时无氧，但恢复时会受氧供和休息影响。</p>
+            <span class="dim">训练含义</span>
+            <p>如果今天目标是 3RM 深蹲或跳跃速度，组间 30 秒很可能让下一组变成疲劳训练，不再是高质量力量训练。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">运动适用</span>: 最大力量、短冲刺、爆发动作越靠前段，ATP-PCr 占比越高。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 判断供能系统，先看强度和持续时间，再看是否能休息恢复。</div>
+            <table class="tbl">
+              <tr><th>运动情境</th><th>主供能判断</th><th>理由</th></tr>
+              <tr><td>1 次最大硬拉</td><td>ATP-PCr</td><td>时间极短，功率极高。</td></tr>
+              <tr><td>10 秒冲刺</td><td>ATP-PCr 为主</td><td>全力输出，尚未进入较长糖酵解主导。</td></tr>
+              <tr><td>400 米跑后段</td><td>糖酵解明显增加</td><td>时间更长，ATP-PCr 储量不够。</td></tr>
+              <tr><td>马拉松</td><td>氧化系统为主</td><td>持续时间长，强度相对低。</td></tr>
+            </table>
+            <span class="dim">常见误解</span>
+            <p>❌以为一种运动只有一个系统工作。✅三大系统一直都在供能，只是主导比例随强度和时间变化。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">休息策略</span>: 大重量组间 3-5 分钟，是为了保留神经输出和 PCr 储备。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 如果目标是力量成绩，短休息会把训练从“练峰值输出”改成“练疲劳下坚持”。</div>
+            <div class="grid">
+              <div class="mini"><h4>最大力量</h4><p>低次数、高负荷、长休息，让每组都有接近峰值的输出。</p></div>
+              <div class="mini"><h4>爆发速度</h4><p>宁可少做，也要每次速度快；速度掉太多就停组。</p></div>
+              <div class="mini"><h4>增肌训练</h4><p>可用中等休息追求训练量和张力，但不要误以为越喘越等于越增肌。</p></div>
+            </div>
+            <span class="dim">真实例子</span>
+            <p>做 5 组 3 次深蹲，休 4 分钟往往比休 45 秒更能维持动作质量和重量。休得短可能更累，但重量、速度和技术都下降。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为休息长就是训练不够狠。✅力量和爆发训练的“狠”，体现在每次输出质量高，而不是每组都喘到动作变形。</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="warn">
+      <h2>常见误区</h2>
+      <p>❌很多人以为 ATP-PCr 和乳酸是一回事。✅其实 ATP-PCr 是短时快速再生 ATP，乳酸主要出现在糖酵解系统相关情境。</p>
+      <p>❌很多人以为短休更适合所有目标。✅最大力量和爆发训练常需要 3-5 分钟，让 PCr 和神经输出恢复。</p>
+      <p>❌很多人以为供能系统按开关切换。✅三大系统同时工作，只是 ATP-PCr 在极短高强度时占主导。</p>
+    </section>
+
+    <section class="mnemonic">
+      <h2>记忆口诀</h2>
+      <p><strong>ATP 是现金，PCr 是快充；十秒内爆发，休三五分钟；短冲大重量，先想磷酸肌酸系统。</strong></p>
+    </section>
+
+    <section class="panel">
+      <h2>翻转卡复习</h2>
+      <div class="card-grid">
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">ATP 是什么?</div><div class="face back">三磷酸腺苷，肌肉可直接使用的能量货币。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">PCr 是什么?</div><div class="face back">磷酸肌酸，快速把磷酸转给 ADP 再生 ATP。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">ATP-PCr 主导多久?</div><div class="face back">极短时高强度，通常 0-10 秒最典型。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">30 秒恢复多少 PCr?</div><div class="face back">约恢复 50%，足够一部分但不是满格。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">3-5 分钟休息意义?</div><div class="face back">PCr 接近完全恢复，适合力量和爆发质量。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">ATP-PCr 是否需要氧气?</div><div class="face back">输出时不依赖氧气，但 PCr 恢复过程受有氧能力影响。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">100 米冲刺怎么判断?</div><div class="face back">前段 ATP-PCr 很高，后段糖酵解贡献增加。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">短休一定更好吗?</div><div class="face back">不是。短休提升密度，长休保留峰值输出。</div></div></div>
+      </div>
+    </section>
+
+    <section class="panel orange">
+      <h2>实操关联</h2>
+      <ul class="list">
+        <li><strong>最大力量:</strong> 1-5 次大重量组间休 3-5 分钟，让 PCr 和神经输出恢复，避免重量越做越塌。</li>
+        <li><strong>爆发训练:</strong> 跳跃、冲刺、投掷看速度质量；速度明显下降时，继续堆次数会偏离目标。</li>
+        <li><strong>增肌训练:</strong> ATP-PCr 仍参与每次发力，但中高次数会更快叠加糖酵解压力。</li>
+        <li><strong>减脂体能:</strong> 短休循环能提高训练密度，但那不等于更适合最大力量表现。</li>
+        <li><strong>康复回归:</strong> 先用低疲劳、高质量短组练动作控制，再逐步增加速度和负荷。</li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2>练习题</h2>
+      <div class="quiz">
+        <h3>1. 1RM 深蹲起杠瞬间，主导供能系统最可能是?</h3>
+        <div class="opt" onclick="pick(this,'correct')"><span class="lbl">A.</span>ATP-PCr 系统</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">B.</span>氧化系统</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">C.</span>长时脂肪氧化</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">D.</span>有氧糖酵解主导</div>
+        <button onclick="document.getElementById('ans1').classList.add('show')">查看解析</button>
+        <div class="reveal" id="ans1">答案 A。1RM 时间极短、功率极高，最符合 ATP-PCr。B/C/D 更适合较长时间或较低强度持续运动。</div>
+      </div>
+      <div class="quiz">
+        <h3>2. 想保持每组 3 次硬拉的最大输出，组间休息最合理是?</h3>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">A.</span>15 秒，越累越好</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">B.</span>30 秒，PCr 完全恢复</div>
+        <div class="opt" onclick="pick(this,'correct')"><span class="lbl">C.</span>3-5 分钟，接近恢复</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">D.</span>一直不休息，直接进入下一组</div>
+        <button onclick="document.getElementById('ans2').classList.add('show')">查看解析</button>
+        <div class="reveal" id="ans2">答案 C。30 秒约恢复 50%，不等于完全恢复。最大力量目标要保留峰值输出，常用 3-5 分钟。</div>
+      </div>
+      <div class="quiz">
+        <h3>3. 多选: 哪些情境高度依赖 ATP-PCr?</h3>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">A.</span>单次大重量卧推</div>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">B.</span>10 秒冲刺起跑段</div>
+        <div class="opt" onclick="pickMulti(this)"><span class="lbl">C.</span>90 分钟低强度慢跑</div>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">D.</span>一次纵跳起跳</div>
+        <button onclick="document.getElementById('ans3').classList.add('show')">查看解析</button>
+        <div class="reveal" id="ans3">答案 A/B/D。它们都短、快、功率高。C 时间长、强度低，氧化系统占主导。</div>
+      </div>
+      <div class="quiz">
+        <h3>4. 案例题: 学员做 5 组 2 次深蹲，休 30 秒后第 3 组速度明显变慢。怎么解释和调整?</h3>
+        <button onclick="document.getElementById('ans4').classList.add('show')">查看解析</button>
+        <div class="reveal" id="ans4">解释: 30 秒只恢复约一半 PCr，加上神经疲劳，下一组峰值输出下降。调整: 若目标是最大力量，把组间休息延长到 3-5 分钟；若目标是密度或体能，可保留短休但降低重量并承认训练目标已经变化。</div>
+      </div>
+    </section>
+
+    <footer>阶段1 · Day 22/112 · 今日早间新知识(工作日6:00) · 中午12:00复习巩固</footer>
+  </main>
+  <div class="lightbox" id="lightbox"><img src="" alt="放大学习图"></div>
+  <script>
+    document.querySelectorAll('ul.kp>li>.kp-head').forEach(function(h){h.addEventListener('click',function(){h.parentElement.classList.toggle('open')})});
+    function pick(el,type){el.closest('.quiz').querySelectorAll('.opt').forEach(function(o){o.classList.remove('correct','wrong-show')});el.classList.add(type==='correct'?'correct':'wrong-show')}
+    function pickMulti(el){if(el.classList.contains('correct')||el.classList.contains('wrong-show')){el.classList.remove('correct');el.classList.remove('wrong-show')}else{el.classList.add(el.dataset.c==='1'?'correct':'wrong-show')}}
+    var lb=document.getElementById('lightbox');document.querySelectorAll('.figure img').forEach(function(img){img.addEventListener('click',function(){lb.querySelector('img').src=img.src;lb.classList.add('show')})});lb.addEventListener('click',function(e){if(e.target===lb)lb.classList.remove('show')});document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('show')});
+  </script>
+</body>
+</html>

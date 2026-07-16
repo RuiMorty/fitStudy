@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const { execFileSync } = require("child_process");
 const { chromium } = require("playwright");
 
 const ROOT = path.resolve(__dirname, "..");
@@ -310,6 +311,9 @@ function buildSlides(lesson) {
   if (lesson.day === 18) return buildDay18Slides(lesson);
   if (lesson.day === 19) return buildDay19Slides(lesson);
   if (lesson.day === 20) return buildDay20Slides(lesson);
+  if (lesson.day === 21) return buildDay21Slides(lesson);
+  if (lesson.day === 22) return buildDay22Slides(lesson);
+  if (lesson.day === 23) return buildDay23Slides(lesson);
   const htmlKnowledge = extractHtmlKnowledge(lesson.day);
   const items = htmlKnowledge.items;
   const practiceItems = htmlKnowledge.practice.length ? htmlKnowledge.practice : [lesson.practice || "用一个训练动作把今天知识讲出来。"];
@@ -349,6 +353,156 @@ function buildSlides(lesson) {
       ],
       fill: [],
     },
+  ].map((slide) => {
+    const visualPath = slide.visualTitle ? findAiVisual(lesson.day, slide.eyebrow, slide.title) : "";
+    return visualPath ? { ...slide, visualImage: assetDataUrl(visualPath) } : slide;
+  });
+}
+
+function buildDay22Slides(lesson) {
+  const visual = (eyebrow, title, lead, points) => ({ type: "dense", eyebrow, title, lead, visualTitle: title, points, fill: [] });
+  return [
+    { type: "cover", kicker: `Day ${lesson.day} · ${lesson.cert}`, title: lesson.title, subtitle: "NSCA / NASM 双证健身知识", image: assetDataUrl(findCoverVisual(lesson.day) || findThumbnail(lesson.day)), chips: [lesson.phase, "运动科学"] },
+    { type: "image", eyebrow: "01", title: "先看 ATP、PCr 与恢复时间", lead: "先分清谁直接供能、谁快速补货，再理解大重量为什么需要长休息。", image: assetDataUrl(findLessonImage(lesson.day)), points: [], fill: [] },
+    visual("02", "ATP-PCr：即时供能双人组", "最大力量、纵跳、短冲刺等需要立刻高功率的动作，首先调用细胞内现成的 ATP 和 PCr。", [
+      "ATP 是直接能量：全称三磷酸腺苷，肌球蛋白横桥每次抓拉都直接用它｜脂肪和糖不能直接推杠铃，最后都要先转成 ATP。",
+      "PCr 是快速补给：全称磷酸肌酸，储存在肌细胞内并带着高能磷酸｜当 ATP 被用掉后，它能立刻把磷酸补回去，再生新的 ATP。",
+      "为什么只适合极短爆发：反应不用等氧气运到，也不用走长代谢链，所以启动最快｜但 ATP 和 PCr 库存很小，全力输出通常 0-10 秒最典型。",
+    ]),
+    visual("03", "反应过程：ATP 用掉后怎么补回", "把它看成一次交接：ATP 放能变 ADP，PCr 再把自己的磷酸交给 ADP，让 ATP 重新可用。", [
+      "第一步，ATP 放能：ATP 断开最外侧一个磷酸基团，释放能量给横桥做功｜剩下的是 ADP，中文叫二磷酸腺苷，能量较低但不是废物。",
+      "第二步，PCr 补磷酸：PCr 把自己携带的磷酸基团转给 ADP｜结果是 ADP 重新变 ATP，PCr 则变成肌酸，暂时失去“快充”能力。",
+      "训练里意味着什么：1RM 起杠、起跑前几步和抓举拉起时，身体没时间等慢系统供能｜PCr 库存下降后，同样重量的速度和峰值输出会掉。",
+    ]),
+    visual("04", "0-10 秒：快，但库存很小", "ATP-PCr 系统的特点不是能量总量大，而是供能速度最快，特别适合短到来不及等氧气参与的动作。", [
+      "无氧不等于憋气：意思是这次快速再生 ATP 的反应不直接依赖氧气到场｜ATP 和 PCr 本来就在肌细胞内，位置近、步骤少。",
+      "典型场景：单次最大深蹲或卧推、3 次以内重硬拉、一次纵跳、起跑前 10 秒｜共同点是时间短、用力猛、需要高功率。",
+      "别把时间线当开关：100 米前段 ATP-PCr 占比高，后段糖酵解贡献会上升｜三套系统始终同时工作，只是主导比例随时间和强度变化。",
+    ]),
+    visual("05", "恢复：休息是在补 PCr 库存", "PCr 输出时不靠氧气，但补回库存需要恢复过程支持；所以高质量力量训练必须把组间休息算进计划。", [
+      "休 30 秒：PCr 大约只恢复一半｜下一组仍能练，但峰值力量、速度和动作稳定性常会打折，更接近密度或代谢训练。",
+      "休 1-2 分钟：库存恢复更多，适合一般增肌和技术练习｜若目标是 3RM 或爆发速度，仍可能不够让每组回到接近峰值。",
+      "休 3-5 分钟：PCr 接近完全恢复，神经输出也更容易回到高水平｜适合大重量、跳跃、冲刺等需要每组高质量的训练。",
+    ]),
+    visual("06", "运动判断：先看时长与强度", "判断主供能系统别先背运动名称，先问动作全力持续多久、是否需要连续不断输出。", [
+      "1 次最大硬拉：ATP-PCr 主导｜动作只持续几秒，功率极高，PCr 能在这段时间快速补 ATP。",
+      "10 秒全力冲刺：ATP-PCr 为主，糖酵解开始加入｜越接近后段，PCr 越不够，速度维持开始更依赖其他供能。",
+      "400 米后段或马拉松：不能只靠 ATP-PCr｜前者糖酵解明显增加，后者以氧化系统为主，因为时间太长，PCr 库存早已不足。",
+    ]),
+    visual("07", "休息策略：目标不同，休法不同", "休息长短不是勤不勤奋问题，而是决定你下一组练峰值输出，还是练疲劳下重复输出。", [
+      "练最大力量：低次数、高负荷，组间 3-5 分钟｜目标是让每一组重量、速度和动作路径都接近最好状态。",
+      "练爆发速度：宁可少做，也要快｜若跳跃高度、冲刺速度或杠铃速度明显下降，继续堆次数已从练爆发变成练疲劳。",
+      "练增肌或密度：可用中等甚至短休累积训练量和张力｜会更喘不代表更适合力量目标，训练效果取决于你刻意保留什么。",
+    ]),
+    visual("08", "训练决策：先定目标，再定休息", "同一个深蹲动作，休 45 秒还是 4 分钟，会把训练推向完全不同的适应方向。", [
+      "目标是 5 组 3 次力量：优先保重量、速度和技术｜组间休 3-5 分钟，让 PCr 和神经输出恢复，避免后面几组只是在硬撑。",
+      "目标是肌肥大训练量：可缩短到中等休息，接受部分疲劳｜同时要相应调整重量和次数，别把峰值输出要求套到每一组。",
+      "判断是否该停：速度明显掉、动作变形或同样重量突然失控，先问 PCr 是否恢复不足｜延长休息或结束高质量组，不要只为凑次数。",
+    ]),
+  ].map((slide) => {
+    const visualPath = slide.visualTitle ? findAiVisual(lesson.day, slide.eyebrow, slide.title) : "";
+    return visualPath ? { ...slide, visualImage: assetDataUrl(visualPath) } : slide;
+  });
+}
+
+function buildDay23Slides(lesson) {
+  const visual = (eyebrow, title, lead, points) => ({ type: "dense", eyebrow, title, lead, visualTitle: title, points, fill: [] });
+  return [
+    { type: "cover", kicker: `Day ${lesson.day} · ${lesson.cert}`, title: lesson.title, subtitle: "NSCA / NASM 双证健身知识", image: assetDataUrl(findCoverVisual(lesson.day) || findThumbnail(lesson.day)), chips: [lesson.phase, "运动科学"] },
+    { type: "image", eyebrow: "01", title: "先看糖、丙酮酸和乳酸", lead: "先分清糖怎么快速拆成 ATP，丙酮酸为什么会走向乳酸或线粒体。", image: assetDataUrl(findLessonImage(lesson.day)), points: [], fill: [] },
+    visual("02", "糖酵解：快拆糖供能", "糖酵解把葡萄糖或肌糖原快速拆开，再把能量转成肌肉能直接使用的 ATP。", [
+      "原料从哪里来：血糖来自血液，肌糖原储存在肌肉里｜高强度重复动作时，工作肌优先用本地肌糖原，因为距离近、调动快。",
+      "它到底产什么：糖酵解不是直接“烧糖推杠铃”｜它把糖拆成丙酮酸，同时快速再合成 ATP，ATP 才是肌肉横桥真正能用的能量。",
+      "为什么叫快拆厨房：步骤比 ATP-PCr 多，所以不如 0-10 秒爆发快｜但糖库存更大，能撑 30 秒到 2 分钟这段中高强度。",
+      "怎么判断题干：看到 400 米、HIIT、8-15 次多组、后半段腿酸掉速｜先想糖酵解，而不是一上来就写有氧或乳酸中毒。",
+    ]),
+    visual("03", "无氧糖酵解：强度高时先顶住", "当强度太高、线粒体处理速度跟不上时，丙酮酸更容易转成乳酸，让供能继续周转。", [
+      "无氧不是不呼吸：你仍在吸氧，氧化系统也没关闭｜只是强度太高，线粒体来不及把所有丙酮酸慢慢处理完。",
+      "为什么转乳酸：丙酮酸转成乳酸能让糖酵解继续周转｜大白话是先把车流分流出去，让短时间供能别堵死。",
+      "身体感受是什么：局部灼烧、呼吸急、动作速度掉、同样重量突然变沉｜这些都提示糖酵解压力和相关代谢压力上来了。",
+      "训练例子怎么套：400 米后段、1 分钟冲刺车、搏击一回合后半段、12 次深蹲最后几次｜都不是单纯 PCr 能解决。",
+    ]),
+    visual("04", "有氧糖酵解：丙酮酸进线粒体", "当氧气和线粒体处理能力跟得上时，丙酮酸会进入线粒体，继续产生更多 ATP。", [
+      "分岔点在丙酮酸：糖先被拆成丙酮酸｜强度可控时，丙酮酸进入线粒体；强度太高时，更多转成乳酸。",
+      "线粒体像慢炖发电厂：它不如无氧路线快，但能榨出更多 ATP｜所以更适合持续输出，而不是几十秒硬冲。",
+      "为什么训练后会变强：有氧基础和阈值训练会提高线粒体处理能力｜同样配速下，更多丙酮酸能被处理，乳酸堆积更慢。",
+      "怎么用在配速：能说短句但不能聊天的强度，常接近阈值训练区｜目标不是冲爆，而是把可持续高强度往上推。",
+    ]),
+    visual("05", "乳酸阈：产出超过清除", "乳酸阈不是乳酸第一次出现，而是乳酸产生速度开始明显超过清除速度的转折区。", [
+      "低于阈值是什么感觉：乳酸产生和清除大体平衡｜呼吸快但还能维持，腿有压力但不会立刻崩。",
+      "超过阈值会怎样：产生速度大于清除速度｜代谢压力快速上升，速度、动作质量和主观用力都会更快恶化。",
+      "它不是开关：阈值是一个转折区，不是某一秒突然从无乳酸变成有乳酸｜休息时身体也有少量乳酸在周转。",
+      "考试关键句：看到“血乳酸堆积、阈值、中高强度可持续时长”｜答案核心是产生与清除失衡，不是乳酸中毒。",
+    ]),
+    visual("06", "运动判断：400 米和多次中等重量", "判断主供能系统不要只背项目名，先看强度和持续时间。", [
+      "第一步看时间：0-10 秒先想 ATP-PCr；30 秒到 2 分钟先看糖酵解；2 分钟以上氧化系统占比越来越高。",
+      "第二步看强度：强度越高，糖和 PCr 贡献越大｜同样 1 分钟，轻松走路和全力冲刺不是同一个供能逻辑。",
+      "400 米为什么典型：持续 45-90 秒，中高强度且超过 PCr 主导窗口｜后段常靠忍受代谢压力维持速度。",
+      "力量训练怎么判断：8-15 次多组、短休、后半组酸胀掉速，糖酵解参与高｜单次 1RM 则更偏 ATP-PCr。",
+    ]),
+    visual("07", "乳酸不是废物：它能回收再用", "乳酸是可运输、可再利用的燃料和强度信号，不是留在肌肉里几天的垃圾。", [
+      "乳酸能去哪：它可被心脏、其他肌肉和肝脏利用｜这叫乳酸穿梭，说明它是能量周转的一部分。",
+      "为什么不是废物：高强度时乳酸增加，代表糖酵解很忙｜它像物流包裹，可以被运走再利用，不是坏东西堆在肌肉里。",
+      "腿酸别全怪乳酸：灼烧和疲劳还受氢离子、无机磷、离子环境、神经输出影响｜延迟性酸痛更主要和微损伤有关。",
+      "恢复怎么理解：轻松走路或低强度骑车能促进血流和底物转运｜这不是排毒，而是帮身体更快处理代谢产物。",
+    ]),
+    visual("08", "训练安排：目标决定压力大小", "糖酵解训练能提升中高强度重复输出，但过多疲劳会干扰力量和爆发质量。", [
+      "增肌怎么用：中等重量、多次重复、适度短休可制造代谢压力｜但机械张力仍是底盘，不能只追求酸胀感。",
+      "体能怎么用：高强度间歇能训练糖酵解耐受和清除能力｜但恢复成本高，安排频率要看睡眠、总量和下次训练质量。",
+      "力量日怎么避开：最大力量和爆发需要高速度、高神经输出｜如果糖酵解疲劳太早上来，后面会变成硬撑，不是练峰值。",
+      "停组判断：速度明显下降、动作变形、局部酸到发力路线乱｜这时应延长休息、降负荷或结束高质量组。",
+    ]),
+  ].map((slide) => {
+    const visualPath = slide.visualTitle ? findAiVisual(lesson.day, slide.eyebrow, slide.title) : "";
+    return visualPath ? { ...slide, visualImage: assetDataUrl(visualPath) } : slide;
+  });
+}
+
+function buildDay21Slides(lesson) {
+  const visual = (eyebrow, title, lead, points) => ({ type: "dense", eyebrow, title, lead, visualTitle: title, points, fill: [] });
+  return [
+    { type: "cover", kicker: `Day ${lesson.day} · ${lesson.cert}`, title: lesson.title, subtitle: "NSCA / NASM 双证健身知识", image: assetDataUrl(findCoverVisual(lesson.day) || findThumbnail(lesson.day)), chips: [lesson.phase, "运动科学"] },
+    { type: "image", eyebrow: "01", title: "一张图串起第3周", lead: "先找外力和力臂，再看动作模式、核心稳定、力量输出和组织耐受。", image: assetDataUrl(findLessonImage(lesson.day)), points: [], fill: [] },
+    visual("02", "力矩与杠杆：先看力臂", "同样重量不一定同样难；外力作用线离关节越远，关节要抵抗的力矩越大。", [
+      "力矩 = 力 × 力臂：力臂是关节支点到外力作用线的垂直距离｜不是骨头长度，也不是看起来离得远不远。",
+      "训练里先缩短无效力臂：硬拉让杠铃贴近小腿和大腿，能减少腰髋要抵抗的外力矩｜动作更稳不是“偷力”。",
+      "人体多为第三类杠杆：肌肉力点常在支点和阻力之间｜机械上更费力，但换来更快、更大幅度和更精细的远端运动。",
+    ]),
+    visual("03", "动作模式：先认任务，再找肌肉", "推、拉、深蹲、铰链、箭步、旋转和携带，是不同受力任务，不是肌肉名称清单。", [
+      "分析顺序固定：先看关节怎么动，再看哪些肌肉跨过关节并制造同方向力矩｜最后看谁在稳定躯干和关节。",
+      "深蹲和铰链别混：深蹲是髋膝踝共同下沉；铰链以髋主导折叠｜两者都练下肢，但受力分配不同。",
+      "开链与闭链看远端：远端自由是开链，远端固定是闭链｜不要只背动作名称，要看当下任务。",
+    ]),
+    visual("04", "脊柱与核心：把位置稳住", "核心主业不是反复卷腹，而是在负荷和动作中守住中立脊柱、腹压和对线。", [
+      "中立脊柱是可控区间：保留自然曲度，让压力分散到椎体、椎间盘、韧带和肌肉｜不是把腰背硬掰成直线。",
+      "腹内压像内部压力罐：吸气撑开腹壁和侧腰，帮助躯干抗压和抗弯｜腰带只能提供外壁，不能替代主动支撑。",
+      "核心四抗是任务单：抗伸展、抗屈曲、抗旋转、抗侧屈｜深蹲、硬拉和划船先守住位置，再增加负荷。",
+    ]),
+    visual("05", "力量输出：神经、肌肉与速度", "力量上限由神经募集、肌肉横截面积、关节角度、收缩速度和离心控制共同决定。", [
+      "新手力量先涨常是神经适应：募集更多运动单位，发放更快更稳，动作协同更好｜不一定先长出明显肌肉。",
+      "长度和速度会改产力：肌肉太短或太长都不占便宜；向心越快，通常越难产生大力｜重重量自然更慢。",
+      "离心和 SSC 要分清：离心是被拉长但仍发力的刹车；SSC 是快速预拉伸后立刻缩短｜爆发训练重速度和质量，不靠疲劳堆量。",
+    ]),
+    visual("06", "损伤机制：峰值、累计与叠加", "风险不只看疼不疼。先分单次峰值还是重复累计，再看剪切、压缩、张力和扭转怎样叠加。", [
+      "急性损伤看峰值：踩空、落地、变向、碰撞或一次错误发力，让组织承受超过当下耐受的力量｜题干常出现突然和当场。",
+      "过度使用看累计：跑量、跳跃量、负荷或频率加得太快，恢复跟不上｜单次不重，也会把组织逐步推向超载。",
+      "高风险常是组合题：膝内扣、减速、足固定后身体旋转、疲劳下落地变硬，会让张力、扭转和剪切一起上升。",
+    ]),
+    visual("07", "易混点：抓住判断开关", "考试别靠整段死记；每组概念都有一个优先判断开关。", [
+      "开链 vs 闭链：看远端是否固定｜远端固定就是闭链，远端自由就是开链。",
+      "向心 / 离心 / 等长：看肌肉长度变化｜向心变短，离心被拉长但仍发力，等长不变长短。",
+      "三类杠杆：看支点、阻力、动力谁在中间｜人体最常见第三类；遇到“力量先于肌肥大”优先想到神经适应。",
+    ]),
+    visual("08", "训练决策：先路径，再剂量", "动作质量、负荷剂量、恢复和疲劳管理，共同决定训练能否变成适应而非磨损。", [
+      "先让力走对路：杠铃贴身、躯干稳定、髋膝踝对线清楚｜技术修正不是为了好看，而是管理力矩和组织受力。",
+      "剂量决定主要适应：重量、次数、速度和组间休息要服务目标｜增肌看张力和训练量，爆发看速度和低疲劳，耐力看重复输出。",
+      "把停止信号写进计划：速度明显掉、动作反复变形、疼痛改样或局部先失控时，降负荷、停组或改动作｜别硬凑次数。",
+    ]),
+    visual("09", "第3周复盘：一条训练判断链", "外力变成力矩，力矩落到动作模式，再由核心、神经肌肉和组织耐受共同决定表现与风险。", [
+      "看动作：先找支点、外力作用线和力臂，再判断哪段关节力矩最大。",
+      "看表现：再看动作模式、核心稳定、神经驱动和肌肉能力，找出最先限制输出的环节。",
+      "看风险：最后核对负荷进阶、疲劳、恢复和组织耐受，让计划逐步缩小外部负荷与当前能力的差距。",
+    ]),
   ].map((slide) => {
     const visualPath = slide.visualTitle ? findAiVisual(lesson.day, slide.eyebrow, slide.title) : "";
     return visualPath ? { ...slide, visualImage: assetDataUrl(visualPath) } : slide;
@@ -596,7 +750,7 @@ function slideHtml(slide, lesson) {
       const bodyItems = (body || "")
         .split("｜")
         .map((item) => item.trim())
-        .filter(Boolean)
+        .filter((item) => item && !/^[。！？；…]+$/.test(item))
         .map((item) => `<i>${item}</i>`)
         .join("");
       return `<li><b>${head}</b>${bodyItems ? `<span>${bodyItems}</span>` : ""}</li>`;
@@ -615,7 +769,7 @@ function slideHtml(slide, lesson) {
 <head>
 <meta charset="UTF-8">
 <style>
-*{box-sizing:border-box}body{margin:0;width:${WIDTH}px;height:${HEIGHT}px;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:#f4f4f5;color:#111113}.page{position:relative;width:${WIDTH}px;height:${HEIGHT}px;overflow:hidden;padding:58px 72px 52px;background:linear-gradient(180deg,#fff 0%,#f7f7f8 100%)}.page:before{content:"";position:absolute;left:0;top:0;width:100%;height:12px;background:#ff5a1f}.brand{display:flex;align-items:center;justify-content:space-between;color:#71717a;font-size:28px;font-weight:700}.brand b{color:#111113}.brand b span{color:#ff5a1f}.kicker,.eyebrow{color:#ff5a1f;font-weight:900;letter-spacing:.08em;text-transform:uppercase}.cover{display:flex;flex-direction:column}.cover h1{margin:26px 0 14px;font-size:66px;line-height:1.14;letter-spacing:-.025em}.cover-body{flex:1;display:flex;flex-direction:column}.cover-copy{margin-top:128px}.daymark{color:#ff5a1f;font-size:32px;font-weight:900}.subtitle{font-size:28px;color:#71717a}.cover .hero{height:520px;margin:24px 0 0}.hero{margin:22px 0 22px;border:1px solid #e4e4e7;border-radius:28px;background:#fff;overflow:hidden;height:540px;display:grid;place-items:center}.hero-img{width:100%;height:100%;object-fit:cover}.cover .hero-img{object-fit:contain}.hero-placeholder{width:82%;height:64%;border-radius:28px;background:repeating-linear-gradient(135deg,#f4f4f5 0 18px,#ececef 18px 36px)}.chips{display:flex;flex-wrap:wrap;gap:16px;margin-top:18px}.chips span,.tag{display:inline-flex;align-items:center;border-radius:999px;padding:12px 18px;font-size:24px;font-weight:800}.chips span:nth-child(1),.tag.green{background:rgba(74,222,128,.18);color:#15803d}.chips span:nth-child(2),.tag.blue{background:rgba(96,165,250,.18);color:#2563eb}.chips span:nth-child(3),.tag.orange{background:rgba(255,90,31,.1);color:#ff5a1f}.content{padding-top:34px}.eyebrow{font-size:26px}.content h1{margin:14px 0 16px;font-size:56px;line-height:1.12;letter-spacing:-.015em}.lead{margin:0 0 20px;color:#52525b;font-size:27px;line-height:1.62}.visual{height:300px;margin:0 0 18px;border:0;border-radius:24px;background:transparent;overflow:hidden;box-shadow:none}.visual img{width:100%;height:100%;object-fit:contain;display:block}.bullets{display:grid;gap:12px;margin:0;padding:0;list-style:none}.bullets li{border:1px solid #e4e4e7;border-radius:22px;background:#fff;padding:18px 24px;box-shadow:0 8px 20px rgba(0,0,0,.03)}.bullets b{display:block;margin-bottom:7px;font-size:27px;line-height:1.35}.bullets span{display:grid;gap:5px;color:#52525b;font-size:22px;line-height:1.58}.bullets span i{display:block;position:relative;padding-left:20px;font-style:normal}.bullets span i:before{content:"";position:absolute;left:0;top:.78em;width:7px;height:7px;border-radius:999px;background:#60a5fa}.steps{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:0 0 16px;padding:0;list-style:none}.steps li{min-height:168px;border:1px solid #e4e4e7;border-radius:24px;background:#fff;padding:22px;display:flex;flex-direction:column;justify-content:space-between}.steps em{display:grid;place-items:center;width:54px;height:54px;border-radius:17px;background:#ff5a1f;color:#fff;font-size:27px;font-style:normal;font-weight:900}.steps span{font-size:31px;font-weight:900;line-height:1.3}.notes{display:grid;gap:11px;margin:0;padding:0;list-style:none}.notes li{border-radius:18px;background:rgba(96,165,250,.13);padding:14px 17px;color:#2563eb;font-size:23px;font-weight:800;line-height:1.48}.fill{position:absolute;left:72px;right:72px;bottom:108px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.fill:empty{display:none}.fill span{border:1px solid #dbeafe;border-radius:22px;background:linear-gradient(135deg,rgba(255,90,31,.08),rgba(96,165,250,.12));padding:18px 16px;text-align:center;color:#27272a;font-size:24px;font-weight:900;line-height:1.25}.image .hero{height:1035px;margin:8px 0 8px;background:transparent;border:0;box-shadow:none;overflow:hidden;display:grid;place-items:center}.lesson-img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;display:block}.lesson-figure{background-size:contain;background-position:center;background-repeat:no-repeat}.image .bullets,.image .fill,.image .footer{display:none}.footer{position:absolute;left:72px;right:72px;bottom:42px;display:flex;justify-content:space-between;align-items:center;color:#a1a1aa;font-size:24px;font-weight:700}.rule{width:120px;height:6px;border-radius:999px;background:#ff5a1f;margin:0 0 24px}
+*{box-sizing:border-box}body{margin:0;width:${WIDTH}px;height:${HEIGHT}px;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:#f4f4f5;color:#111113}.page{position:relative;width:${WIDTH}px;height:${HEIGHT}px;overflow:hidden;padding:58px 72px 52px;background:linear-gradient(180deg,#fff 0%,#f7f7f8 100%)}.page:before{content:"";position:absolute;left:0;top:0;width:100%;height:12px;background:#ff5a1f}.brand{display:flex;align-items:center;justify-content:space-between;color:#71717a;font-size:28px;font-weight:700}.brand b{color:#111113}.brand b span{color:#ff5a1f}.kicker,.eyebrow{color:#ff5a1f;font-weight:900;letter-spacing:.08em;text-transform:uppercase}.cover{display:flex;flex-direction:column}.cover h1{margin:26px 0 14px;font-size:66px;line-height:1.14;letter-spacing:-.025em}.cover-body{flex:1;display:flex;flex-direction:column}.cover-copy{margin-top:128px}.daymark{color:#ff5a1f;font-size:32px;font-weight:900}.subtitle{font-size:28px;color:#71717a}.cover .hero{height:520px;margin:24px 0 0}.hero{margin:22px 0 22px;border:1px solid #e4e4e7;border-radius:28px;background:#fff;overflow:hidden;height:540px;display:grid;place-items:center}.hero-img{width:100%;height:100%;object-fit:cover}.cover .hero-img{object-fit:contain}.hero-placeholder{width:82%;height:64%;border-radius:28px;background:repeating-linear-gradient(135deg,#f4f4f5 0 18px,#ececef 18px 36px)}.chips{display:flex;flex-wrap:wrap;gap:16px;margin-top:18px}.chips span,.tag{display:inline-flex;align-items:center;border-radius:999px;padding:12px 18px;font-size:24px;font-weight:800}.chips span:nth-child(1),.tag.green{background:rgba(74,222,128,.18);color:#15803d}.chips span:nth-child(2),.tag.blue{background:rgba(96,165,250,.18);color:#2563eb}.chips span:nth-child(3),.tag.orange{background:rgba(255,90,31,.1);color:#ff5a1f}.content{padding-top:34px}.eyebrow{font-size:26px}.content h1{margin:14px 0 16px;font-size:56px;line-height:1.12;letter-spacing:-.015em}.lead{margin:0 0 20px;color:#52525b;font-size:27px;line-height:1.62}.visual{height:300px;margin:0 0 18px;border:0;border-radius:24px;background:transparent;overflow:hidden;box-shadow:none}.visual img{width:100%;height:100%;object-fit:contain;display:block;mix-blend-mode:multiply}.bullets{display:grid;gap:12px;margin:0;padding:0;list-style:none}.bullets li{border:1px solid #e4e4e7;border-radius:22px;background:#fff;padding:18px 24px;box-shadow:0 8px 20px rgba(0,0,0,.03)}.bullets b{display:block;margin-bottom:7px;font-size:27px;line-height:1.35}.bullets span{display:grid;gap:5px;color:#52525b;font-size:22px;line-height:1.58}.bullets span i{display:block;position:relative;padding-left:20px;font-style:normal}.bullets span i:before{content:"";position:absolute;left:0;top:.78em;width:7px;height:7px;border-radius:999px;background:#60a5fa}.steps{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:0 0 16px;padding:0;list-style:none}.steps li{min-height:168px;border:1px solid #e4e4e7;border-radius:24px;background:#fff;padding:22px;display:flex;flex-direction:column;justify-content:space-between}.steps em{display:grid;place-items:center;width:54px;height:54px;border-radius:17px;background:#ff5a1f;color:#fff;font-size:27px;font-style:normal;font-weight:900}.steps span{font-size:31px;font-weight:900;line-height:1.3}.notes{display:grid;gap:11px;margin:0;padding:0;list-style:none}.notes li{border-radius:18px;background:rgba(96,165,250,.13);padding:14px 17px;color:#2563eb;font-size:23px;font-weight:800;line-height:1.48}.fill{position:absolute;left:72px;right:72px;bottom:108px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.fill:empty{display:none}.fill span{border:1px solid #dbeafe;border-radius:22px;background:linear-gradient(135deg,rgba(255,90,31,.08),rgba(96,165,250,.12));padding:18px 16px;text-align:center;color:#27272a;font-size:24px;font-weight:900;line-height:1.25}.image .hero{height:1035px;margin:8px 0 8px;background:transparent;border:0;box-shadow:none;overflow:hidden;display:grid;place-items:center}.lesson-img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;display:block}.lesson-figure{background-size:contain;background-position:center;background-repeat:no-repeat}.image .bullets,.image .fill,.image .footer{display:none}.footer{position:absolute;left:72px;right:72px;bottom:42px;display:flex;justify-content:space-between;align-items:center;color:#a1a1aa;font-size:24px;font-weight:700}.rule{width:120px;height:6px;border-radius:999px;background:#ff5a1f;margin:0 0 24px}
 </style>
 </head>
 <body>
@@ -705,6 +859,19 @@ async function main() {
 }
 
 main().catch((error) => {
+  const message = String(error && (error.stack || error.message || error));
+  if (/MachPortRendezvous|bootstrap_check_in|Permission denied|Target page/.test(message)) {
+    try {
+      const { day } = parseArgs();
+      const fallback = path.join(ROOT, "scripts", "render-xhs-fallback.py");
+      execFileSync("python3", [fallback, `--day=${day}`], { stdio: "inherit", cwd: ROOT });
+      console.log(path.join(ROOT, "xhs", `day${String(day).padStart(2, "0")}`));
+      return;
+    } catch (fallbackError) {
+      console.error(fallbackError);
+      process.exit(1);
+    }
+  }
   console.error(error);
   process.exit(1);
 });

@@ -389,6 +389,12 @@ function generatedScenario(card, fallback) {
       answer: "先看研究设计是否能支持因果，尤其是否有随机对照；再看是否控制训练经验、蛋白、热量、睡眠等混杂因素；最后看效果量和实际意义，不只看 p 值。",
     };
   }
+  if (topic.includes("能量系统") || topic.includes("ATP-PCr")) {
+    return {
+      q: `场景题：客户做 5 组 3 次 85%1RM 深蹲，每组只休 30 秒。前两组还稳，第三组起身明显变慢、腰开始代偿。你怎么解释，下一组怎么改？`,
+      answer: "这是短时高强度力量输出，主要依赖 ATP-PCr。30 秒只能恢复约一半 PCr，第三组快充储备不足，所以速度掉、动作质量下降。下一组先把休息拉到 3-5 分钟；若仍掉速，就降重量或减少组数，目标是保留峰值输出和技术质量，而不是硬撑疲劳。",
+    };
+  }
   if (topic.includes("核心")) {
     return {
       q: `场景题：客户平板支撑总是腰塌，和做 Pallof press 时躯干还会转。你会先怎么分辨问题？`,
@@ -399,6 +405,12 @@ function generatedScenario(card, fallback) {
     return {
       q: `场景题：客户卧推卡在下半程、划船时总耸肩。你先分别看哪块肌群和哪种动作模式？`,
       answer: "卧推先看胸大肌、三角肌前束和肱三头肌的推类协同；划船先看背阔肌、菱形肌和下斜方肌的拉类控制。卡顿常来自肌群发力次序和肩胛控制，不是单一肌肉不够大。",
+    };
+  }
+  if (topic.includes("第3周复盘") || topic === "生物力学") {
+    return {
+      q: `场景题：客户硬拉 100kg 时，杠铃一离开小腿就说“腰特别吃力”，视频里杠铃在脚尖前方、起身时先抬屁股再拉背。你按第3周生物力学先查哪 3 点？`,
+      answer: "第一查力臂：杠铃离小腿远，重力线到髋和腰椎距离变长，腰背外力矩变大，先把杠铃拉回足中线上方并贴腿。第二查动作模式：先抬屁股说明髋铰链和腿部推地没接上，要让髋膝同步伸展，保持背角稳定。第三查核心和损伤风险：用腹压和背阔肌把躯干、杠铃固定住；若疲劳后才变形，就降重量或减少次数，避免用腰椎反复代偿。",
     };
   }
   if (topic.includes("生物力学基本概念") || topic === "生物力学基本概念与力") {
@@ -440,7 +452,7 @@ function generatedScenario(card, fallback) {
   if (topic.includes("运动损伤")) {
     return {
       q: `场景题：客户最近跑量突然翻倍，膝外侧和跟腱开始不舒服。你先按哪 3 步排查？`,
-      answer: "先看负荷是否突然上调，再看疼痛是训练中还是训练后提前出现，最后查落地、减速、变向和足踝对线。急性峰值和过度使用是两条不同线。",
+      answer: "第一步查负荷：把近 2-4 周跑量、速度课、爬坡、间歇和恢复日列出来；若周跑量或高冲击课突然增加，先回退到疼痛前最后能稳定完成的剂量，暂时不加量。第二步查疼痛时序：若跑前就痛、热身后也不缓解，或日常走路、上下楼仍痛，停止跑步并转专业评估；若跑中逐渐痛、停下后缓解，说明当前剂量超耐受，减量并改低冲击训练；若跑后或次日更痛，下一次训练继续降量，直到 24 小时内回到原水平。第三步查受力来源：膝外侧重点看步幅过大、下坡和髋膝控制；跟腱重点看突然加速、爬坡、鞋跟落差变化、踝背屈和小腿耐力。只要疼痛越来越早出现、强度上升或改变跑姿，就停止进阶。",
     };
   }
   if (topic.includes("关节分类") || topic.includes("滑膜关节")) {
@@ -503,9 +515,12 @@ function buildDeckFromReviewHtml(day) {
     const matched = recallQuestions.filter((question) => question.day === card.day || (card.day === day && question.isToday));
     const questions = matched.filter((question) => !question.isScenario).slice(0, 2);
     const scenarioQuestion = matched.find((question) => question.isScenario) || null;
-    const scenario = scenarioQuestion
-      ? { q: `场景题：${scenarioQuestion.q}`, answer: scenarioQuestion.answer, day: card.day, topic: card.topic }
-      : { ...generatedScenario(card), day: card.day, topic: card.topic };
+    const skipScenario = day === 21 && card.day === 21 && card.topic === "第3周复盘-生物力学";
+    const scenario = skipScenario
+      ? null
+      : scenarioQuestion
+        ? { q: `场景题：${scenarioQuestion.q}`, answer: scenarioQuestion.answer, day: card.day, topic: card.topic }
+        : { ...generatedScenario(card), day: card.day, topic: card.topic };
     return {
       label: card.label || `R${index} 复习`,
       day: card.day,
@@ -516,7 +531,7 @@ function buildDeckFromReviewHtml(day) {
   });
   const answerPool = groups.flatMap((group) => [
     ...group.questions.map((question) => question.answer),
-    group.scenario.answer,
+    ...(group.scenario ? [group.scenario.answer] : []),
   ]);
   const enrichedGroups = groups.map((group) => ({
     ...group,
@@ -524,10 +539,9 @@ function buildDeckFromReviewHtml(day) {
       ...question,
       choice: buildChoiceOptions(question, answerPool),
     })),
-    scenario: {
-      ...group.scenario,
-      choice: buildChoiceOptions(group.scenario, answerPool),
-    },
+    scenario: group.scenario
+      ? { ...group.scenario, choice: buildChoiceOptions(group.scenario, answerPool) }
+      : null,
   }));
   return {
     day,
@@ -567,10 +581,10 @@ function questionPage(deck, pageIndex, groups) {
           <p class="question">${esc(question.q)}</p>
         </section>`,
         ),
-        `<section class="card scenario">
+        group.scenario ? `<section class="card scenario">
           <div class="qtag"><span>场景题</span><b>Day ${group.day} · ${group.topic}</b></div>
           <p class="question">${esc(group.scenario.q)}</p>
-        </section>`,
+        </section>` : "",
       ],
     )
     .join("");
@@ -595,10 +609,10 @@ function answerPage(deck, pageIndex, groups) {
           <p>${esc(expandAnswer(question.answer, group.topic))}</p>
         </section>`,
         ),
-        `<section class="answer scenario-answer">
+        group.scenario ? `<section class="answer scenario-answer">
           <h2>场景题参考答法</h2>
           <p>${esc(expandAnswer(group.scenario.answer, group.topic))}</p>
-        </section>`,
+        </section>` : "",
       ],
     )
     .join("");

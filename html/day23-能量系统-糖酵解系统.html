@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 23 · 能量系统-糖酵解系统</title>
+  <style>
+    *{box-sizing:border-box}
+    body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.75;background:#f6f8f7;color:#1a2b22;padding:18px}
+    .wrap{max-width:980px;margin:auto}
+    .header{text-align:center;padding:24px 10px}
+    .header h1{margin:0 0 10px;font-size:2rem;background:linear-gradient(90deg,#0ea66b,#0ea5e9);-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:0}
+    .sub{color:#5a6b62}
+    .chips{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:10px}
+    .chip{font-size:.78rem;border:1px solid #d4ebe0;border-radius:999px;padding:3px 10px;background:#fff;color:#0c6da3}
+    .panel,.figure,.warn{background:#fff;border:1px solid #e2e8e4;border-radius:14px;padding:18px;margin:14px 0;box-shadow:0 2px 12px rgba(20,40,30,.06)}
+    .lead{border-left:4px solid #0ea66b}
+    .orange{border-left:4px solid #ea7a17}
+    .figure img{width:100%;display:block;border-radius:12px;border:1px solid #e2e8e4;background:#fbfdfc;cursor:zoom-in}
+    .caption{font-size:.85rem;color:#5a6b62;margin-top:8px;text-align:center}
+    .panel h2,.warn h2{font-size:1.18rem;margin:0 0 10px;color:#0a7d52}
+    .term{font-weight:700;color:#0a7d52;background:#e8f5ee;border-radius:5px;padding:1px 5px}
+    ul.kp{list-style:none;padding:0;margin:0}
+    ul.kp>li{border-bottom:1px dashed #e2e8e4}
+    .kp-head{display:block;cursor:pointer;position:relative;padding:13px 8px 13px 30px}
+    .kp-head:before{content:"▸";position:absolute;left:8px;color:#0ea66b;font-weight:800;transition:.2s}
+    .open>.kp-head:before{transform:rotate(90deg)}
+    .kp-head:hover{background:#f0f4f2}
+    .kp-body{display:none;padding:0 14px 16px 30px}
+    .open>.kp-body{display:block}
+    .dim{display:block;margin-top:10px;font-size:.78rem;font-weight:800;color:#0c6da3}
+    .take{border-left:4px solid #0ea66b;background:#f0fbf5;border-radius:10px;padding:10px 12px;margin:10px 0}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin:12px 0}
+    .mini{border:1px solid #dbe8e1;border-radius:12px;background:#fbfdfc;padding:12px}
+    .mini h4{margin:0 0 7px;font-size:.98rem;color:#0a7d52}
+    .tbl{width:100%;border-collapse:collapse;font-size:.9rem;margin:10px 0}
+    .tbl th{background:#0ea66b;color:#fff;text-align:left}
+    .tbl th,.tbl td{padding:8px;border-bottom:1px solid #e2e8e4;vertical-align:top}
+    .warn{border-left:4px solid #e23b3b}
+    .warn p{margin:8px 0}
+    .mnemonic{background:linear-gradient(135deg,#0ea66b,#0ea5e9);color:#fff;border-radius:14px;padding:20px;margin:14px 0;box-shadow:0 2px 12px rgba(20,40,30,.08)}
+    .mnemonic h2{margin:0 0 8px;font-size:1.15rem}
+    .mnemonic strong{color:#fff7d6}
+    .card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+    .flip{min-height:145px;perspective:800px;cursor:pointer}
+    .flip-inner{position:relative;width:100%;height:100%;min-height:145px;transition:transform .5s;transform-style:preserve-3d}
+    .flip.flipped .flip-inner{transform:rotateY(180deg)}
+    .face{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:15px;border-radius:13px;border:1px solid #e2e8e4;backface-visibility:hidden;background:#fff;font-weight:700}
+    .front{color:#0a7d52;background:#f8fffb}
+    .back{transform:rotateY(180deg);background:#eef7ff;color:#0c6da3;font-weight:600}
+    .quiz{border-top:1px dashed #e2e8e4;padding-top:12px;margin-top:12px}
+    .quiz h3{margin:0 0 8px;font-size:1rem;color:#1a2b22}
+    .opt{border:1px solid #e2e8e4;border-radius:10px;padding:9px 10px;margin:7px 0;background:#fff;cursor:pointer}
+    .opt:hover{background:#f0f4f2}
+    .lbl{font-weight:800;color:#0c6da3;margin-right:4px}
+    .correct{border-color:#0ea66b!important;background:#e9f8f0!important}
+    .wrong-show{border-color:#e23b3b!important;background:#fff0f0!important}
+    button{border:0;border-radius:999px;background:#0ea66b;color:#fff;font-weight:800;padding:8px 14px;cursor:pointer;margin-top:6px}
+    .reveal{display:none;border-left:4px solid #0ea5e9;background:#f0f8fc;border-radius:10px;padding:10px;margin-top:8px}
+    .reveal.show{display:block}
+    .list{padding-left:20px;margin:8px 0}
+    .list li{margin:7px 0}
+    footer{text-align:center;color:#5a6b62;font-size:.85rem;margin:22px 0}
+    .lightbox{position:fixed;inset:0;background:rgba(0,0,0,.82);display:none;align-items:center;justify-content:center;z-index:9;padding:18px}
+    .lightbox.show{display:flex}
+    .lightbox img{max-width:96vw;max-height:92vh;border-radius:10px;background:#fff}
+    @media(max-width:640px){body{padding:10px}.header h1{font-size:1.5rem}.panel,.figure,.warn{padding:14px}.kp-body{padding-left:14px}.card-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="header">
+      <h1>Day 23 · 能量系统-糖酵解系统</h1>
+      <div class="sub">今天主题: 解释 30 秒到 2 分钟中高强度运动里的“快速拆糖供能”。</div>
+      <div class="chips"><span class="chip">第4周 · 阶段1基础科学</span><span class="chip">NSCA + NASM 双证</span><span class="chip">早间新知识</span></div>
+    </header>
+
+    <section class="panel lead">
+      <h2>一句话总结</h2>
+      <p><strong>糖酵解系统像肌肉的快拆厨房</strong>: 它把葡萄糖或肌糖原快速拆开来再合成 ATP，速度比氧化系统快、持续时间比 ATP-PCr 长，特别适合 400 米跑、HIIT 和多次中等重量训练。乳酸不是废物，它更像一张“高强度账单”和可回收燃料。</p>
+    </section>
+
+    <figure class="figure">
+      <img src="assets/阶段1基础科学/day23-能量系统-糖酵解系统.png" alt="糖酵解系统中文标注学习图">
+      <div class="caption">看图重点: 葡萄糖或肌糖原进入糖酵解，丙酮酸可走无氧路线形成乳酸，也可在线粒体内继续氧化；乳酸能被肌肉、心脏和肝脏再利用。</div>
+    </figure>
+
+    <section class="panel">
+      <h2>核心要点</h2>
+      <ul class="kp">
+        <li>
+          <span class="kp-head"><span class="term">糖酵解系统</span>: 把葡萄糖或肌糖原拆成更小分子，快速再合成 ATP。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 糖酵解不是“吃糖马上变力量”，而是把糖拆成中间产物，再把能量换成肌肉真正能用的 ATP。</div>
+            <div class="grid">
+              <div class="mini"><h4>字面意思</h4><p>糖酵解 = glucose/glycogen 进入一串酶促反应，被拆成丙酮酸，同时快速产生少量 ATP。</p></div>
+              <div class="mini"><h4>大白话</h4><p>像后厨快速切菜出餐，量不如慢炖多，但比慢炖快很多，能顶住中高强度几分钟内的需求。</p></div>
+              <div class="mini"><h4>考试含义</h4><p>题干出现 30 秒-2 分钟、400 米、8-15 次多组、腿酸和中高强度间歇，优先联想糖酵解。</p></div>
+            </div>
+            <span class="dim">底层机制</span>
+            <p>肌肉最终还是要用 ATP 驱动横桥循环。糖酵解把葡萄糖拆成丙酮酸，同时让 ADP 重新变回 ATP。它不如 ATP-PCr 那样瞬间，但库存更大；不如氧化系统持久，但速度更快。</p>
+            <span class="dim">训练含义</span>
+            <p>中等偏高次数、短到中等休息、400 米跑和搏击回合，常把身体推到糖酵解主导区。训练感觉通常是呼吸急、局部灼烧、速度开始掉。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">无氧糖酵解</span>: 氧气供不上时，丙酮酸更容易转成乳酸，仍可快速供能。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: “无氧”不是没有呼吸，而是当下供能速度太快，氧化路线跟不上，只能先走更快的糖酵解路线。</div>
+            <table class="tbl">
+              <tr><th>步骤</th><th>发生什么</th><th>训练感觉</th></tr>
+              <tr><td>拆糖</td><td>葡萄糖或肌糖原进入糖酵解，产生 ATP 和丙酮酸。</td><td>中高强度还能继续顶。</td></tr>
+              <tr><td>转乳酸</td><td>当强度高、线粒体处理速度不够时，丙酮酸更多转成乳酸。</td><td>局部灼烧感和掉速开始明显。</td></tr>
+              <tr><td>继续周转</td><td>乳酸可被其他肌纤维、心脏或肝脏再利用。</td><td>停下后逐渐恢复，不是“毒素排出”。</td></tr>
+            </table>
+            <span class="dim">真实例子</span>
+            <p>400 米跑后段、1 分钟冲刺自行车、连续壶铃摆动、12 次左右接近力竭的深蹲，都可能明显依赖无氧糖酵解。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为无氧糖酵解等于完全不需要氧气。✅其实身体仍在呼吸，氧化系统也在工作，只是高强度下糖酵解贡献更突出。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">有氧糖酵解</span>: 氧气足够时，丙酮酸进入线粒体，继续走三羧酸循环。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 同样从糖开始，后面可以分路。强度没那么高、氧气能跟上时，丙酮酸更适合进入线粒体继续“慢炖”。</div>
+            <div class="grid">
+              <div class="mini"><h4>字面意思</h4><p>丙酮酸进入线粒体，变成乙酰辅酶 A，再进入 Krebs cycle，也叫三羧酸循环。</p></div>
+              <div class="mini"><h4>大白话</h4><p>先把糖切成小块，再送进更大的发电厂慢慢榨出更多 ATP。</p></div>
+              <div class="mini"><h4>为什么重要</h4><p>它解释了为什么强度降低或训练水平提高后，同样速度下乳酸堆积会更少、维持时间更长。</p></div>
+            </div>
+            <span class="dim">真实例子</span>
+            <p>配速跑、较长间歇的恢复段、稳定中等强度有氧，都在用糖的有氧路线。它不像 ATP-PCr 那么快，但 ATP 产量更高、持续更久。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为糖酵解只属于“无氧系统”。✅其实糖酵解先把糖拆成丙酮酸，之后走无氧还是有氧，取决于强度、氧供和线粒体处理能力。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">乳酸阈</span>: 乳酸产生速度超过清除速度时，血乳酸开始明显堆积。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 乳酸阈不是“突然中毒点”，而是产出和清除失衡的转折区。超过它越多，掉速越快。</div>
+            <table class="tbl">
+              <tr><th>状态</th><th>身体在做什么</th><th>训练判断</th></tr>
+              <tr><td>低于阈值</td><td>乳酸产生可被较快清除和再利用。</td><td>能稳定说短句，持续较久。</td></tr>
+              <tr><td>接近阈值</td><td>产生和清除接近平衡。</td><td>强度有压力，但可控，常用于阈值训练。</td></tr>
+              <tr><td>高于阈值</td><td>产生明显超过清除，代谢压力快速上升。</td><td>呼吸急、腿沉、速度难维持。</td></tr>
+            </table>
+            <span class="dim">底层机制</span>
+            <p>阈值受糖酵解速度、线粒体能力、毛细血管供血、乳酸转运和训练水平影响。训练越好，身体越能把乳酸快速搬运并再利用。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为乳酸阈就是乳酸开始出现。✅其实休息时也有乳酸；阈值说的是“明显堆积”，不是“从零开始”。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">乳酸不是废物</span>: 乳酸能被心脏、肌肉和肝脏重新利用，是可回收燃料。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 把乳酸当垃圾会误导训练。它更像快递单：说明高强度拆糖很快，也能被送到别处继续用。</div>
+            <div class="grid">
+              <div class="mini"><h4>字面意思</h4><p>乳酸是糖酵解产物之一，可在血液中运输，也可被其他组织氧化利用。</p></div>
+              <div class="mini"><h4>大白话</h4><p>不是垃圾桶里的废料，而是还没用完的能量包裹，被身体转运给需要它的地方。</p></div>
+              <div class="mini"><h4>考试含义</h4><p>看到“乳酸导致酸痛”要警惕。延迟性酸痛更多与微损伤和炎症反应有关，不是乳酸停在肌肉里几天。</p></div>
+            </div>
+            <span class="dim">真实例子</span>
+            <p>高强度间歇后，轻松慢走或低强度骑车能促进血流和乳酸转运。它不是“排毒”，更准确说是帮助身体把可利用底物搬走并处理。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为腿酸全是乳酸腐蚀肌肉。✅其实灼烧感和疲劳来自多因素，包括氢离子、无机磷、神经输出下降、离子环境变化和局部供能压力。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">训练适用</span>: 糖酵解最适合中高强度、持续 30 秒到 2 分钟的重复输出。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 判断供能系统，先看“多猛”和“持续多久”。糖酵解常站在 ATP-PCr 和氧化系统中间。</div>
+            <table class="tbl">
+              <tr><th>训练场景</th><th>主导倾向</th><th>理由</th></tr>
+              <tr><td>1 次最大硬拉</td><td>ATP-PCr</td><td>时间太短，峰值功率最高。</td></tr>
+              <tr><td>400 米跑</td><td>糖酵解明显</td><td>持续约 45-90 秒，高强度且不能完全靠 PCr。</td></tr>
+              <tr><td>8-15 次多组深蹲</td><td>糖酵解参与高</td><td>中高强度重复输出，局部代谢压力上升。</td></tr>
+              <tr><td>长距离慢跑</td><td>氧化系统</td><td>时间长、强度相对低。</td></tr>
+            </table>
+            <span class="dim">训练含义</span>
+            <p>想提高糖酵解能力，可用中高强度间歇、较短休息的循环训练、或中等重量多组训练。但如果目标是最大力量，过多糖酵解疲劳会干扰峰值输出。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为越酸越有效。✅酸只是代谢压力线索之一。增肌还需要足够机械张力、训练量和恢复；体能还需要可重复的高质量输出。</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="warn">
+      <h2>常见误区</h2>
+      <p>❌很多人以为乳酸是废物。✅其实乳酸能被心脏、肌肉和肝脏再利用，训练里更该理解为可转运燃料和强度信号。</p>
+      <p>❌很多人以为糖酵解只在完全无氧时工作。✅其实三大供能系统一直同时工作，只是主导比例随强度和时间改变。</p>
+      <p>❌很多人以为腿酸等于一定练到位。✅其实腿酸可来自代谢压力，但动作质量、目标肌张力和恢复是否匹配更关键。</p>
+    </section>
+
+    <section class="mnemonic">
+      <h2>记忆口诀</h2>
+      <p><strong>十秒靠 PCr，两分钟看糖；乳酸不是脏，阈值看收放。</strong>意思是：极短爆发先想 ATP-PCr；30 秒到 2 分钟中高强度先想糖酵解；乳酸能回收再用；阈值看产生和清除谁更快。</p>
+    </section>
+
+    <section class="panel">
+      <h2>翻转卡复习</h2>
+      <div class="card-grid">
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">糖酵解主要拆什么？</div><div class="face back">葡萄糖和肌糖原，快速产生 ATP 和丙酮酸。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">30 秒-2 分钟常想到哪个系统？</div><div class="face back">糖酵解系统，尤其是中高强度输出。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">丙酮酸有哪两条大方向？</div><div class="face back">强度高时更多转乳酸；氧气和线粒体处理足够时进入氧化路线。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">乳酸阈说的是什么？</div><div class="face back">乳酸产生速度超过清除速度，血乳酸开始明显堆积的转折区。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">乳酸是不是废物？</div><div class="face back">不是。它可以被心脏、肌肉和肝脏再利用。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">400 米跑后段为什么难顶？</div><div class="face back">糖酵解压力高，乳酸和相关代谢压力上升，速度维持变难。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">糖酵解和 ATP-PCr 谁更快？</div><div class="face back">ATP-PCr 更快；糖酵解持续更久，适合中高强度几十秒到几分钟。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">糖酵解和氧化系统谁更持久？</div><div class="face back">氧化系统更持久；糖酵解更快但更容易积累代谢压力。</div></div></div>
+      </div>
+    </section>
+
+    <section class="panel orange">
+      <h2>实操关联</h2>
+      <ul class="list">
+        <li>增肌: 8-15 次多组训练会明显调用糖酵解，但仍要保证目标肌张力，不要只追求酸胀。</li>
+        <li>减脂: HIIT 可提高单位时间消耗和 EPOC，但强度高、恢复成本高，不能天天硬堆。</li>
+        <li>爆发: 真正练峰值速度时，应避免让糖酵解疲劳太重；速度掉太多就不再是爆发训练。</li>
+        <li>耐力: 阈值训练能提高乳酸产生和清除平衡点，让同样配速下更不容易堆积。</li>
+        <li>康复: 早期不要急着上高糖酵解压力训练；先恢复动作质量、局部耐受和基础有氧。</li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2>练习题</h2>
+      <div class="quiz">
+        <h3>1. 下列哪个运动最典型依赖糖酵解系统？</h3>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">A.</span>1 次最大卧推</div>
+        <div class="opt" onclick="pick(this,'correct')"><span class="lbl">B.</span>400 米全力跑</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">C.</span>3 小时轻松骑行</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">D.</span>单次纵跳</div>
+        <button onclick="document.getElementById('ans1').classList.add('show')">查看解析</button>
+        <div class="reveal" id="ans1">答案 B。A 和 D 时间极短，更偏 ATP-PCr；C 时间很长，更偏氧化系统；400 米全力跑通常持续 45-90 秒，高强度且超过 PCr 主导窗口，糖酵解贡献很高。</div>
+      </div>
+      <div class="quiz">
+        <h3>2. “乳酸阈”最准确的理解是？</h3>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">A.</span>身体第一次产生乳酸的点</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">B.</span>乳酸把肌肉腐蚀坏的点</div>
+        <div class="opt" onclick="pick(this,'correct')"><span class="lbl">C.</span>乳酸产生速度超过清除速度的转折区</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">D.</span>只有停止呼吸才会出现的点</div>
+        <button onclick="document.getElementById('ans2').classList.add('show')">查看解析</button>
+        <div class="reveal" id="ans2">答案 C。休息时也有乳酸，所以 A 错；乳酸不是腐蚀性废物，所以 B 错；运动中身体仍在呼吸，D 把“无氧”理解错了。</div>
+      </div>
+      <div class="quiz">
+        <h3>3. 多选: 下列哪些说法正确？</h3>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">A.</span>乳酸可被心脏和肌肉再利用</div>
+        <div class="opt" onclick="pickMulti(this)"><span class="lbl">B.</span>糖酵解只在完全没有氧气时工作</div>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">C.</span>30 秒-2 分钟中高强度运动常明显依赖糖酵解</div>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">D.</span>三大供能系统会同时工作，只是比例不同</div>
+        <button onclick="document.getElementById('ans3').classList.add('show')">查看解析</button>
+        <div class="reveal" id="ans3">正确 A、C、D。B 错在“只在完全没有氧气”，糖酵解一直可发生；强度高时无氧路线贡献更明显，但氧化系统并没有关闭。</div>
+      </div>
+      <div class="quiz">
+        <h3>4. 案例题: 学员做 4 组 12 次深蹲，每组后半段腿很酸、速度掉。你如何解释？</h3>
+        <button onclick="document.getElementById('ans4').classList.add('show')">查看解析</button>
+        <div class="reveal" id="ans4">这属于中等重量多次重复，糖酵解参与明显。后半段腿酸和掉速说明局部代谢压力上升，乳酸和相关离子环境变化、ATP 再合成速度、神经输出都会影响表现。处理方式取决于目标：增肌可保留一定代谢压力，但要维持动作质量；最大力量日则应降低次数或延长休息，避免糖酵解疲劳干扰峰值输出。</div>
+      </div>
+    </section>
+
+    <footer>阶段1 · Day 23/112 · 今日早间新知识(工作日6:00) · 中午12:00复习巩固</footer>
+  </main>
+  <div class="lightbox" id="lightbox"><img src="" alt="放大学习图"></div>
+  <script>
+    document.querySelectorAll('ul.kp>li>.kp-head').forEach(function(h){h.addEventListener('click',function(){h.parentElement.classList.toggle('open')});});
+    function pick(el,type){el.closest('.quiz').querySelectorAll('.opt').forEach(function(o){o.classList.remove('correct','wrong-show')});el.classList.add(type==='correct'?'correct':'wrong-show');}
+    function pickMulti(el){if(el.classList.contains('correct')||el.classList.contains('wrong-show')){el.classList.remove('correct');el.classList.remove('wrong-show');}else{el.classList.add(el.dataset.c==='1'?'correct':'wrong-show');}}
+    document.querySelectorAll('.figure img').forEach(function(img){img.addEventListener('click',function(){var box=document.getElementById('lightbox');box.querySelector('img').src=img.src;box.classList.add('show');});});
+    document.getElementById('lightbox').addEventListener('click',function(e){if(e.target===this)this.classList.remove('show');});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape')document.getElementById('lightbox').classList.remove('show');});
+  </script>
+</body>
+</html>

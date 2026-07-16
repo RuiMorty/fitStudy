@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fitness Study · 健身知识库</title>
-    <link rel="stylesheet" href="styles.css?v=atlas-anatomy-3" />
+    <link rel="stylesheet" href="styles.css?v=training-lab-5" />
   </head>
   <body>
     <div class="app-shell">
@@ -17,8 +17,8 @@
         <div class="sidebar-body">
           <div class="tabs" role="tablist" aria-label="内容类型">
             <button class="tab active" id="theoryTab" type="button">理论</button>
-            <button class="tab" id="reviewTab" type="button">复习</button>
             <button class="tab" id="exerciseTab" type="button">健身动作</button>
+            <button class="tab" id="nutritionTab" type="button">营养学</button>
           </div>
 
           <label class="search-box">
@@ -54,11 +54,11 @@
             <p id="headerDescription">按理论、证书、阶段和主题检索；已有详情页可直接弹窗阅读。</p>
           </div>
           <div class="quick-links">
-            <a id="headerAction" href="html/review-day21-第3周复盘-生物力学.html">最新复习</a>
+            <a id="headerAction" href="#reviewGrid">复习</a>
           </div>
         </header>
 
-        <section class="result-bar">
+        <section class="result-bar" id="resultBar">
           <div id="resultText">载入中...</div>
           <button id="resetFilters" type="button">重置筛选</button>
         </section>
@@ -69,8 +69,8 @@
 
         <section class="exercise-panel" id="exercisePanel" hidden>
           <div class="exercise-tabs" role="tablist" aria-label="健身动作子模块">
-            <button class="exercise-tab active" type="button" data-exercise-view="atlas">肌肉图谱</button>
-            <button class="exercise-tab" type="button" data-exercise-view="library">动作库</button>
+            <button class="exercise-tab active" type="button" data-exercise-view="library" role="tab">动作库</button>
+            <button class="exercise-tab" type="button" data-exercise-view="atlas" role="tab">肌肉图谱</button>
           </div>
 
           <section class="muscle-atlas" id="muscleAtlas">
@@ -95,13 +95,42 @@
             </div>
           </section>
 
-          <section class="exercise-library-placeholder" id="exerciseLibrary" hidden>
-            <h2>动作库待接入</h2>
-            <p>下一步可按肌群、器械、动作模式、难度和训练目标接入动作数据。</p>
-            <div class="mock-actions">
-              <span>深蹲 · 下肢 · 闭链</span>
-              <span>俯卧撑 · 上肢 · 推</span>
-              <span>Pallof Press · 核心 · 抗旋转</span>
+          <section class="exercise-library" id="exerciseLibrary" hidden aria-label="动作库">
+            <header class="library-header">
+              <div>
+                <div class="kicker">Movement Library</div>
+                <h2>动作库</h2>
+                <p>选择动作，查看轨迹、关键提示与常见错误。</p>
+              </div>
+              <div class="library-count" id="exerciseCount">0 个动作</div>
+            </header>
+
+            <div class="library-filters" role="group" aria-label="动作库筛选">
+              <label class="library-search">
+                <span aria-hidden="true">⌕</span>
+                <input id="exerciseSearch" type="search" placeholder="搜索动作、肌群或器械" autocomplete="off" />
+              </label>
+              <div class="library-filter-group">
+                <span class="library-filter-label">动作</span>
+                <div class="library-chip-row" id="exercisePatternFilters" aria-label="按动作模式筛选"></div>
+              </div>
+              <div class="library-filter-group">
+                <span class="library-filter-label">肌肉</span>
+                <div class="library-chip-row" id="exerciseMuscleFilters" aria-label="按肌肉筛选"></div>
+              </div>
+              <div class="library-filter-group">
+                <span class="library-filter-label">器械</span>
+                <div class="library-chip-row" id="exerciseEquipmentFilters" aria-label="按器械筛选"></div>
+              </div>
+            </div>
+
+            <div class="library-layout">
+              <section class="exercise-catalog" aria-label="动作列表">
+                <div class="catalog-label">动作列表</div>
+                <div class="exercise-cards" id="exerciseCards"></div>
+              </section>
+
+              <article class="exercise-detail" id="exerciseDetail" aria-live="polite"></article>
             </div>
           </section>
         </section>
@@ -125,6 +154,14 @@
       </article>
     </div>
 
-    <script src="app.js?v=atlas-anatomy-3"></script>
+    <div class="coaching-visual-modal" id="coachingVisualModal" aria-hidden="true">
+      <button class="coaching-visual-backdrop" type="button" data-close-coaching-visual aria-label="关闭图片预览"></button>
+      <figure class="coaching-visual-dialog" role="dialog" aria-modal="true" aria-labelledby="coachingVisualTitle">
+        <figcaption><strong id="coachingVisualTitle"></strong><button type="button" data-close-coaching-visual aria-label="关闭图片预览">×</button></figcaption>
+        <img id="coachingVisualImage" alt="" />
+      </figure>
+    </div>
+
+    <script src="app.js?v=training-lab-6"></script>
   </body>
 </html>
