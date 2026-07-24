@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="../" />
+    <title>Fitness Study · 健身知识库</title>
+    <link rel="icon" type="image/svg+xml" href="html/assets/fitness-study-logo-open-circle.svg" />
+    <link rel="stylesheet" href="styles.css?v=training-lab-22" />
+    <script defer src="https://analytics.fitstudy.cn/script.js" data-website-id="fb761ce1-7ad3-4c9b-aeaa-c417e2ee8cca" data-domains="fitstudy.cn,www.fitstudy.cn"></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <header class="sidebar-header">
+          <div class="logo">
+            <img class="logo-mark" src="html/assets/fitness-study-logo-open-circle.svg" alt="FitnessStudy" />
+            <span class="logo-wordmark">Fitness<span>Study</span></span>
+          </div>
+          <div class="subline">NSCA / NASM 双证知识库</div>
+        </header>
+
+        <div class="sidebar-body">
+          <div class="tabs" role="tablist" aria-label="内容类型">
+            <button class="tab active" id="theoryTab" type="button">理论</button>
+            <button class="tab" id="exerciseTab" type="button">健身动作</button>
+            <button class="tab" id="nutritionTab" type="button">营养学</button>
+          </div>
+
+          <div id="theorySidebarControls">
+            <label class="search-box">
+              <span class="search-icon">⌕</span>
+              <input id="searchInput" type="search" placeholder="搜索课程、要点、证书..." autocomplete="off" />
+              <button id="clearSearch" class="clear-search" type="button" aria-label="清空搜索">×</button>
+            </label>
+
+            <section class="filter-section">
+              <h2>证书</h2>
+              <div class="chip-group" id="certFilters"></div>
+            </section>
+
+            <section class="filter-section">
+              <h2>阶段</h2>
+              <div class="select-wrap">
+                <select id="phaseFilter" aria-label="按学习阶段筛选"></select>
+              </div>
+            </section>
+
+            <section class="filter-section">
+              <h2>分类</h2>
+              <div class="chip-group" id="categoryFilters"></div>
+            </section>
+          </div>
+
+          <div class="sidebar-context" id="pendingSidebarControls" hidden aria-live="polite">
+            <section class="sidebar-pending">
+              <span class="pending-signal" aria-hidden="true"></span>
+              <div>
+                <strong id="pendingSidebarTitle">侧栏导航待开发</strong>
+                <p id="pendingSidebarDescription"></p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="main-header">
+          <div class="header-copy">
+            <div class="kicker" id="headerKicker">112 Day Library</div>
+            <h1 id="headerTitle">健身知识库</h1>
+            <p id="headerDescription">按理论、证书、阶段和主题检索；已有详情页可直接弹窗阅读。</p>
+          </div>
+          <div class="quick-links">
+            <div class="header-insight" id="headerInsight" aria-live="polite"></div>
+            <a id="headerAction" href="#reviewGrid">复习</a>
+          </div>
+        </header>
+
+        <section class="result-bar" id="resultBar">
+          <div id="resultText">载入中...</div>
+          <button id="resetFilters" type="button">重置筛选</button>
+        </section>
+
+        <section class="card-grid" id="cardGrid" aria-label="课程卡片"></section>
+
+        <section class="review-grid" id="reviewGrid" aria-label="复习卡片" hidden></section>
+
+        <section class="nutrition-panel" id="nutritionPanel" hidden aria-label="营养基础工具">
+          <div class="nutrition-intro" id="nutritionEnergy">
+            <div>
+              <div class="kicker">Nutrition Basics</div>
+              <h2>能量换算</h2>
+            </div>
+          </div>
+
+          <div class="nutrition-grid" aria-label="能量换算表">
+            <article class="nutrition-conversion-card"><span>碳水化合物</span><strong>1 g = 4 kcal</strong></article>
+            <article class="nutrition-conversion-card"><span>蛋白质</span><strong>1 g = 4 kcal</strong></article>
+            <article class="nutrition-conversion-card"><span>脂肪</span><strong>1 g = 9 kcal</strong></article>
+            <article class="nutrition-conversion-card"><span>能量单位</span><strong>1 kcal = 4.184 kJ</strong></article>
+          </div>
+
+          <section class="nutrition-section" id="nutritionMacros" aria-labelledby="nutritionMacrosTitle">
+            <header class="section-heading">
+              <div>
+                <div class="kicker">Macronutrients</div>
+                <h2 id="nutritionMacrosTitle">三大营养素</h2>
+              </div>
+            </header>
+            <div class="nutrition-grid nutrition-detail-grid">
+              <article class="nutrition-conversion-card"><span>碳水化合物</span><strong>训练燃料</strong><p>高强度训练优先调用；围绕训练前后分配更容易执行。</p></article>
+              <article class="nutrition-conversion-card"><span>蛋白质</span><strong>修复原料</strong><p>每餐均匀分配，搭配总热量和抗阻训练看效果。</p></article>
+              <article class="nutrition-conversion-card"><span>脂肪</span><strong>长期能量</strong><p>帮助脂溶性维生素吸收；不把它简单等同于增脂。</p></article>
+            </div>
+          </section>
+
+          <section class="nutrition-section" id="nutritionGoals" aria-labelledby="nutritionGoalsTitle">
+            <header class="section-heading">
+              <div>
+                <div class="kicker">Planning</div>
+                <h2 id="nutritionGoalsTitle">饮食目标</h2>
+              </div>
+            </header>
+            <div class="nutrition-goal-grid">
+              <article><span>减脂</span><strong>温和热量缺口</strong></article>
+              <article><span>增肌</span><strong>训练与蛋白优先</strong></article>
+              <article><span>维持</span><strong>稳定体重与表现</strong></article>
+            </div>
+          </section>
+        </section>
+
+        <section class="exercise-panel" id="exercisePanel" hidden>
+          <div class="exercise-tabs" role="tablist" aria-label="健身动作子模块">
+            <button class="exercise-tab active" type="button" data-exercise-view="library" role="tab">动作库</button>
+            <button class="exercise-tab" type="button" data-exercise-view="atlas" role="tab">肌肉图谱</button>
+          </div>
+
+          <section class="muscle-atlas" id="muscleAtlas">
+            <div class="atlas-toolbar">
+              <div>
+                <div class="kicker">Muscle Atlas</div>
+                <h2>全身肌肉图谱</h2>
+              </div>
+              <div class="view-switch" role="group" aria-label="肌肉视图">
+                <button class="active" type="button" data-atlas-view="front">正面</button>
+                <button type="button" data-atlas-view="back">背面</button>
+              </div>
+            </div>
+
+            <div class="atlas-layout">
+              <div class="atlas-figure" id="atlasFigure">
+                <img id="atlasImage" alt="全身肌肉图谱" />
+                <div class="hotspot-layer" id="hotspotLayer"></div>
+              </div>
+
+              <aside class="muscle-detail" id="muscleDetail" aria-live="polite"></aside>
+            </div>
+          </section>
+
+          <section class="exercise-library" id="exerciseLibrary" hidden aria-label="动作库">
+            <header class="library-header">
+              <div>
+                <div class="kicker">Movement Library</div>
+                <h2>动作库</h2>
+                <p>选择动作，查看轨迹、关键提示与常见错误。</p>
+              </div>
+              <div class="library-count" id="exerciseCount">0 个动作</div>
+            </header>
+
+            <div class="library-filters" role="group" aria-label="动作库筛选">
+              <label class="library-search">
+                <span aria-hidden="true">⌕</span>
+                <input id="exerciseSearch" type="search" placeholder="搜索动作、肌群或器械" autocomplete="off" />
+              </label>
+              <div class="library-filter-group">
+                <span class="library-filter-label">动作</span>
+                <div class="library-chip-row" id="exercisePatternFilters" aria-label="按动作模式筛选"></div>
+              </div>
+              <div class="library-filter-group">
+                <span class="library-filter-label">肌肉</span>
+                <div class="library-chip-row" id="exerciseMuscleFilters" aria-label="按肌肉筛选"></div>
+              </div>
+              <div class="library-filter-group">
+                <span class="library-filter-label">器械</span>
+                <div class="library-chip-row" id="exerciseEquipmentFilters" aria-label="按器械筛选"></div>
+              </div>
+            </div>
+
+            <div class="library-layout">
+              <section class="exercise-catalog" aria-label="动作列表">
+                <div class="catalog-label">动作列表</div>
+                <div class="exercise-cards" id="exerciseCards"></div>
+              </section>
+
+              <article class="exercise-detail" id="exerciseDetail" aria-live="polite"></article>
+            </div>
+          </section>
+        </section>
+        <footer class="site-footer"><span>晋ICP备2026009473号-1</span></footer>
+      </main>
+    </div>
+
+    <div class="modal" id="lessonModal" aria-hidden="true">
+      <div class="modal-backdrop" data-close-modal></div>
+      <article class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <header class="modal-header">
+          <div>
+            <div class="modal-meta" id="modalMeta"></div>
+            <h2 id="modalTitle"></h2>
+          </div>
+          <div class="modal-actions">
+            <a id="openPage" href="#" target="_blank" rel="noreferrer">新窗口</a>
+            <button type="button" data-close-modal>关闭</button>
+          </div>
+        </header>
+        <div class="modal-body" id="modalBody"></div>
+      </article>
+    </div>
+
+    <div class="coaching-visual-modal" id="coachingVisualModal" aria-hidden="true">
+      <button class="coaching-visual-backdrop" type="button" data-close-coaching-visual aria-label="关闭图片预览"></button>
+      <figure class="coaching-visual-dialog" role="dialog" aria-modal="true" aria-labelledby="coachingVisualTitle">
+        <figcaption><strong id="coachingVisualTitle"></strong><button type="button" data-close-coaching-visual aria-label="关闭图片预览">×</button></figcaption>
+        <img id="coachingVisualImage" alt="" />
+      </figure>
+    </div>
+
+    <script src="app.js?v=training-lab-24"></script>
+  </body>
+</html>

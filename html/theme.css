@@ -29,6 +29,23 @@ body {
   line-height: 1.65 !important;
 }
 
+p,
+li,
+td,
+th,
+.kp-head,
+.kp-body,
+.takeaway,
+.practice li,
+.question,
+.q,
+.answer,
+.reveal,
+.face,
+.mnemonic {
+  font-size: 14px !important;
+}
+
 .wrap,
 .container {
   max-width: 980px !important;
@@ -147,6 +164,13 @@ h2 {
   font-size: 1.05rem !important;
 }
 
+h3,
+.panel h3,
+.quiz h3,
+.question h3 {
+  font-size: 1rem !important;
+}
+
 .panel h3,
 .term,
 b,
@@ -185,6 +209,8 @@ strong {
 
 .mnemonic strong {
   color: var(--fs-orange) !important;
+  font-size: 14px !important;
+  line-height: 1.65 !important;
 }
 
 .front,
@@ -193,6 +219,19 @@ strong {
 .answer,
 .reveal {
   background: #fafafa !important;
+}
+
+.flip .face,
+.flip .front {
+  background: #fafafa !important;
+  color: var(--fs-text) !important;
+  border-color: var(--fs-border) !important;
+}
+
+.flip .back {
+  background: var(--fs-button) !important;
+  color: #fff !important;
+  border-color: var(--fs-button) !important;
 }
 
 .back,

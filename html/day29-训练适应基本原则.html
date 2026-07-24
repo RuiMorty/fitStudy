@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Day 29 · 训练适应基本原则</title>
+<link rel="icon" type="image/svg+xml" href="assets/fitness-study-logo-open-circle.svg">
+<style>
+:root{--bg:#f6f8f7;--card:#fff;--line:#e2e8e4;--soft:#f0f4f2;--green:#0ea66b;--blue:#0ea5e9;--orange:#ea7a17;--red:#e23b3b;--ink:#17332a;--muted:#5d7168}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC",sans-serif;line-height:1.7}main{max-width:980px;margin:auto;padding:30px 18px 60px}h1{font-size:clamp(28px,5vw,44px);line-height:1.2;margin:10px 0;background:linear-gradient(90deg,var(--green),var(--blue));color:transparent;background-clip:text}h2{font-size:22px;margin:0 0 14px}h3{font-size:17px;margin:0 0 8px}.meta{display:flex;gap:8px;flex-wrap:wrap;color:var(--muted);font-size:14px}.chip{background:#e6f6ef;border:1px solid #c8eadb;color:#0a7d52;padding:3px 10px;border-radius:999px}.sub{color:var(--muted);margin:5px 0 22px}.panel,.figure,.warn,.mnemonic{background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 2px 12px rgba(20,40,30,.06);padding:20px;margin:16px 0}.green{border-left:5px solid var(--green)}.orange{border-left:5px solid var(--orange)}.blue{border-left:5px solid var(--blue)}.takeaway{font-size:18px;margin:0}.figure{text-align:center}.figure img{max-width:100%;max-height:760px;border-radius:10px;cursor:zoom-in;background:#fff}.caption{color:var(--muted);font-size:14px;margin:10px 0 0}.kp{list-style:none;padding:0;margin:0}.kp>li{border-bottom:1px dashed var(--line)}.kp>li:last-child{border-bottom:0}.kp-head{display:block;position:relative;padding:13px 8px 13px 32px;cursor:pointer;font-weight:650}.kp-head:before{content:"▸";position:absolute;left:8px;color:var(--green);transition:transform .2s}.open>.kp-head:before{transform:rotate(90deg)}.kp-head:hover{background:var(--soft)}.term{color:#0a7d52}.kp-body{display:none;padding:2px 16px 16px 32px}.open>.kp-body{display:block}.dim{display:block;color:#0c6da3;font-size:12px;font-weight:700;margin:10px 0 3px}.kp-body p{margin:3px 0 8px}.explain-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px;margin:10px 0}.explain-card{background:#f8fbfa;border:1px solid var(--line);border-radius:10px;padding:12px}.explain-card h4{margin:0 0 4px;color:#0a7d52}.explain-card p{margin:0}.mini-table{width:100%;border-collapse:collapse;margin:10px 0;background:#fff}.mini-table th,.mini-table td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}.mini-table th{background:#eef9f4;color:#075e40}.warn{border-left:5px solid var(--red);background:#fffafa}.warn p{margin:8px 0}.mnemonic{background:linear-gradient(120deg,#0a7d52,#087db5);color:#fff}.mnemonic strong{color:#fff7d6;font-size:21px}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}.flip{height:145px;perspective:900px;cursor:pointer}.flip-in{height:100%;position:relative;transition:transform .5s;transform-style:preserve-3d}.flip.open .flip-in{transform:rotateY(180deg)}.face{position:absolute;inset:0;backface-visibility:hidden;border:1px solid var(--line);border-radius:10px;padding:15px;background:#fff;display:flex;align-items:center;justify-content:center;text-align:center}.back{transform:rotateY(180deg);background:#eef9f4;color:#075e40}.practice li{margin:7px 0}.question{border:1px solid var(--line);border-radius:10px;padding:16px;margin:12px 0;background:#fff}.options{display:grid;gap:7px;margin:10px 0}.option{border:1px solid var(--line);background:var(--soft);padding:8px 10px;border-radius:8px;cursor:pointer;text-align:left}.option.selected{border-color:var(--blue);background:#e7f6fd}.option.correct{border-color:var(--green);background:#e7f8ef}.option.wrong{border-color:var(--red);background:#fff0f0}.answer{display:none;background:#f8fbfa;border-left:3px solid var(--blue);padding:10px;margin-top:10px}.answer.show{display:block}.check{border:0;background:var(--green);color:#fff;padding:8px 13px;border-radius:7px;cursor:pointer}.zoom{display:none;position:fixed;inset:0;background:rgba(10,25,20,.86);z-index:5;align-items:center;justify-content:center;padding:4vh}.zoom.show{display:flex}.zoom img{max-width:96vw;max-height:92vh}.zoom button{position:fixed;right:18px;top:12px;background:#fff;border:0;border-radius:50%;width:36px;height:36px;font-size:24px;cursor:pointer}footer{color:var(--muted);font-size:13px;text-align:center;margin-top:32px}@media(max-width:600px){main{padding:20px 12px 45px}.panel,.figure,.warn,.mnemonic{padding:15px}.kp-body{padding-left:22px}.flip{height:160px}.mini-table{font-size:14px}}
+
+/* Day1 title alignment override */
+.header,
+header {
+  text-align: left !important;
+  padding: 22px 4px 14px !important;
+}
+.header h1,
+header h1,
+h1 {
+  background: none !important;
+  -webkit-background-clip: initial !important;
+  background-clip: initial !important;
+  color: #111113 !important;
+  font-size: clamp(1.45rem, 3vw, 2.25rem) !important;
+  line-height: 1.16 !important;
+  margin-bottom: 8px !important;
+  letter-spacing: 0 !important;
+}
+.header h1::before,
+header h1::before {
+  content: "";
+  display: block;
+  width: 34px;
+  height: 4px;
+  border-radius: 999px;
+  background: #ff5a1f;
+  margin-bottom: 10px;
+}
+.chips,
+.meta {
+  justify-content: flex-start !important;
+}
+.sub,
+.meta {
+  color: #71717a !important;
+}
+
+
+/* Day1 title chips override */
+.chip,
+.slot,
+.tag {
+  border: 1px solid #e4e4e7 !important;
+  border-radius: 999px !important;
+  background: #ffffff !important;
+  color: #71717a !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+}
+.chip:nth-child(1),
+.tag:nth-child(1) {
+  background: rgba(74, 222, 128, 0.16) !important;
+  border-color: transparent !important;
+  color: #15803d !important;
+}
+.chip:nth-child(2),
+.tag:nth-child(2) {
+  background: rgba(96, 165, 250, 0.16) !important;
+  border-color: transparent !important;
+  color: #2563eb !important;
+}
+
+
+/* Day1 mnemonic override */
+.mnemonic {
+  background: #ffffff !important;
+  border: 1px solid #e4e4e7 !important;
+  border-left: 4px solid #ff5a1f !important;
+  color: #111113 !important;
+  box-shadow: none !important;
+}
+.mnemonic strong {
+  color: #ff5a1f !important;
+}
+
+
+/* Day1 term highlight override */
+.term {
+  background: rgba(74, 222, 128, 0.16) !important;
+  border-radius: 6px !important;
+  padding: 1px 5px !important;
+}
+
+
+/* Day1 typography override */
+body {
+  font-size: 14px !important;
+  line-height: 1.65 !important;
+}
+p,
+li,
+td,
+th,
+.kp-head,
+.kp-body,
+.takeaway,
+.practice li,
+.question,
+.q,
+.answer,
+.reveal,
+.face,
+.mnemonic {
+  font-size: 14px !important;
+}
+.header h1,
+header h1,
+h1 {
+  font-size: clamp(1.45rem, 3vw, 2.25rem) !important;
+  line-height: 1.16 !important;
+}
+.panel h2,
+.warn h2,
+.card h2,
+h2 {
+  font-size: 1.05rem !important;
+}
+h3,
+.panel h3,
+.quiz h3,
+.question h3 {
+  font-size: 1rem !important;
+}
+.chip,
+.slot,
+.tag,
+.meta,
+.sub,
+.caption,
+.footer,
+footer,
+.dim {
+  font-size: 12px !important;
+}
+
+
+/* Day1 exact text sizing override */
+.sub { font-size: 14px !important; line-height: 1.65 !important; }
+.caption { font-size: 13.6px !important; line-height: 1.65 !important; }
+.footer,
+footer { font-size: 13.12px !important; line-height: 1.65 !important; }
+.dim { font-size: 12.48px !important; line-height: 1.65 !important; }
+.mnemonic strong { font-size: 14px !important; line-height: 1.65 !important; }
+
+
+/* Day1 flip card color override */
+.flip .face,
+.flip .front,
+.flip-inner .face:first-child,
+.flip-in .face:first-child {
+  background: #fafafa !important;
+  color: #111113 !important;
+  border-color: #e4e4e7 !important;
+}
+.flip .back,
+.flip-inner .back,
+.flip-in .back,
+.flip-inner .face.back,
+.flip-in .face.back {
+  background: #0ea66b !important;
+  color: #ffffff !important;
+  border-color: #0ea66b !important;
+}
+
+</style>
+</head>
+<body><main>
+<header><h1>Day 29 · 训练适应基本原则</h1><p class="sub">所有训练计划先过这一关：刺激够不够、方向对不对、能不能持续进阶。</p><div class="meta"><span class="chip">阶段2训练科学</span><span class="chip">第5周</span><span class="chip">NSCA / NASM 双证</span></div></header>
+<section class="panel green"><h2>一句话总结</h2><p class="takeaway">训练适应像给身体升级软件：<strong>刺激必须像目标、强度必须超过旧水平、进阶必须可恢复；停训会倒退，每个人升级速度不同。</strong></p></section>
+<figure class="figure"><img src="assets/阶段2训练科学/day29-训练适应基本原则.png" alt="训练适应基本原则中文标注图"><p class="caption">看图顺序：中间是训练刺激-恢复-适应-下一次进阶循环，四周是特异性、超负荷、可逆性、个体差异、持续变化与剂量-反应。</p></figure>
+<section class="panel"><h2>核心要点</h2><ul class="kp">
+<li><span class="kp-head"><span class="term">特异性原则</span>：身体最会适应它反复经历的刺激，练什么才更像什么。</span><div class="kp-body"><div class="explain-grid"><div class="explain-card"><h4>字面意思</h4><p>Specificity = 专一性。训练效果会贴着动作模式、能量系统、肌肉群、速度和关节角度走。</p></div><div class="explain-card"><h4>大白话</h4><p>想考数学就做数学题，不能只练语文期待数学高分。想深蹲强，核心训练和跑步有帮助，但不能替代深蹲相关刺激。</p></div><div class="explain-card"><h4>考试怎么用</h4><p>题干问“提升某专项表现”，先匹配动作、速度、供能和肌肉。练力量不等于自动涨耐力，练耐力也不等于自动涨 1RM。</p></div></div><span class="dim">训练例子</span><p>马拉松目标要大量低到中等强度持续跑和阈值训练；卧推 1RM 目标要水平推、胸肩肘协同、高负荷神经输出和足够长休息。</p><span class="dim">常见误解</span><p>❌以为“都运动了就都会进步”。✅其实进步会偏向你给身体的具体信号。</p></div></li>
+<li><span class="kp-head"><span class="term">超负荷原则</span>：刺激必须超过身体已习惯水平，才需要制造新适应。</span><div class="kp-body"><div class="explain-grid"><div class="explain-card"><h4>字面意思</h4><p>Overload = 超过常规负荷。可以来自重量、次数、组数、速度、密度、动作难度或总训练量。</p></div><div class="explain-card"><h4>大白话</h4><p>身体像省电系统：平时能轻松应付，就不会花资源长肌肉、提高酶活性或强化神经驱动。</p></div><div class="explain-card"><h4>为什么影响训练</h4><p>没有超负荷，训练只是在维持；超负荷太猛，则恢复跟不上，动作质量和伤病风险变差。</p></div></div><span class="dim">真实例子</span><p>一个人长期用 20kg 做 3 组 10 次深蹲，主观用力很低，身体会把它当日常活动。若计划目标是增肌，可逐步增加重量、次数、组数或接近力竭程度。</p><span class="dim">训练含义</span><p>超负荷不是每次练到趴下，而是给出“足以需要适应”的信号。RPE、速度下降、剩余次数和动作稳定性都能帮你判断刺激是否够。</p></div></li>
+<li><span class="kp-head"><span class="term">渐进性超负荷</span>：身体适应后，下一轮刺激要小步上调，不能永远停在同一档。</span><div class="kp-body"><span class="dim">底层机制</span><p>Progressive overload = 随适应逐步提高刺激。肌肉、神经、肌腱、心肺和能量系统适应速度不同，所以进阶要有台阶，而不是猛跳。</p><table class="mini-table"><tr><th>进阶方式</th><th>适合目标</th><th>风险点</th></tr><tr><td>加重量</td><td>力量、增肌</td><td>技术可能先崩</td></tr><tr><td>加次数或组数</td><td>增肌、肌耐力</td><td>总疲劳上升</td></tr><tr><td>缩短休息</td><td>密度、体能</td><td>峰值输出下降</td></tr><tr><td>提高速度意图</td><td>爆发、神经驱动</td><td>质量下降后收益变差</td></tr></table><span class="dim">训练例子</span><p>8 周计划不必每次都加重量。第 1-2 周稳技术，第 3-5 周小幅加量或加重，第 6 周维持或小降疲劳，第 7-8 周再推高质量输出，这比无脑每周加 10kg 更可靠。</p><span class="dim">常见误解</span><p>❌以为渐进只能加重量。✅次数、组数、动作范围、速度控制、频率和休息时间都能变成进阶变量。</p></div></li>
+<li><span class="kp-head"><span class="term">可逆性原则</span>：训练带来的适应若不再被需要，就会逐渐消退。</span><div class="kp-body"><span class="dim">底层机制</span><p>Reversibility = 可逆性。身体维持组织和代谢能力需要成本；停训后，神经效率、肌糖原、线粒体酶活性和肌肉横截面积会按不同速度下降。</p><span class="dim">真实例子</span><p>停训 2-3 周后，力量和耐力常开始可见下降；耐力相关适应通常更快受影响，最大力量会受神经熟练度、肌肉量和停训前水平影响。</p><span class="dim">训练含义</span><p>旅行或忙碌期不需要追求进步，但要做最低有效维持量。每周少量高质量抗阻和短有氧，比完全停掉更能保住适应。</p><span class="dim">常见误解</span><p>❌以为休息一周就全没了。✅短休常是恢复，长期停训才明显去训练化；关键是恢复后要有计划地重新爬坡。</p></div></li>
+<li><span class="kp-head"><span class="term">个体差异</span>：同一计划不会在每个人身上产生同样速度和幅度的适应。</span><div class="kp-body"><span class="dim">底层机制</span><p>个体差异来自训练史、年龄、性别、睡眠、营养、压力、伤病、肌纤维倾向、技术水平和遗传背景。计划是起点，反馈才是校准工具。</p><span class="dim">真实例子</span><p>同样 3 组 10 次卧推，新手可能技术和力量都涨很快；训练多年者可能需要更精细的强度分配、总量管理和变式安排；恢复差的人可能先表现为睡眠差、关节不适、速度下降。</p><span class="dim">训练含义</span><p>教练不能只复制模板。要看动作质量、主观用力、疼痛、睡眠、训练日志和表现趋势，再决定加量、维持、降量或换变式。</p><span class="dim">常见误解</span><p>❌以为别人有效就一定适合自己。✅原则通用，剂量和路径需要个体化。</p></div></li>
+<li><span class="kp-head"><span class="term">持续变化</span>：长期训练需要变换刺激，避免适应停滞和重复压力累积。</span><div class="kp-body"><span class="dim">字面意思</span><p>持续变化不是天天乱换动作，而是在目标不变前提下，周期性调整负荷、次数、组数、速度、动作变式或训练重点。</p><span class="dim">大白话</span><p>身体学会一条路线后，继续完全一样的刺激，升级信号会变弱；但每天换新动作，又让身体没有足够重复去变强。</p><span class="dim">训练例子</span><p>深蹲目标可在主项稳定的同时加入暂停深蹲、前蹲、节奏控制或不同次数区间。变化服务目标，不能把训练变成随机菜单。</p><span class="dim">常见误解</span><p>❌以为“肌肉混淆”越乱越好。✅有效变化要保留特异性，同时改变足够的刺激维度。</p></div></li>
+<li><span class="kp-head"><span class="term">剂量-反应关系</span>：训练效果随剂量变化，但不是越多越好。</span><div class="kp-body"><span class="dim">底层机制</span><p>剂量可以理解为总训练压力：强度、容量、频率、密度、动作难度和恢复成本共同决定。反应是力量、肌肉、耐力、技术或疼痛状态的变化。</p><span class="dim">关键判断</span><p>剂量太低只能维持或无效；剂量适中能进步；剂量过高会让疲劳超过恢复，表现下降或伤病风险上升。最佳区间会随训练水平变化。</p><span class="dim">训练含义</span><p>看周趋势，不只看单次训练爽不爽。若重量、速度、睡眠、疼痛和情绪连续变差，可能不是意志不足，而是剂量超过恢复能力。</p><span class="dim">考试锚点</span><p>后续 FITT-VP、抗阻技术、OPT 模型和周期化，都是在回答“给多少剂量、用什么刺激、何时调整”。</p></div></li>
+<li><span class="kp-head"><span class="term">八周计划模板</span>：先定目标，再用原则检查每周安排是否合理。</span><div class="kp-body"><span class="dim">步骤</span><p>第一步，写清目标：力量、增肌、耐力、减脂或康复。第二步，检查特异性：动作、速度、供能是否像目标。第三步，安排超负荷：让刺激略高于旧水平。第四步，安排渐进：每 1-2 周只改一两个变量。第五步，保留恢复和变化：避免一直顶到极限。</p><span class="dim">案例</span><p>想 8 周提高深蹲 5RM：主项深蹲每周 2 次，技术日较轻、强度日较重；每周小幅加重量或次数；第 4 或第 6 周根据疲劳做轻量周；辅助训练围绕髋膝伸展和核心稳定。</p><span class="dim">违反特异性错误</span><p>若计划大部分时间都在慢跑、卷腹和随机器械循环，却想显著提高深蹲 5RM，就是方向错。它可能改善健康和耐力，但不够像深蹲力量目标。</p></div></li>
+</ul></section>
+<section class="warn"><h2>常见误区</h2><p>❌很多人以为训练原则是背诵题。✅其实它们是检查训练计划是否合理的工具。</p><p>❌很多人以为超负荷就是每次加重量。✅加次数、组数、速度、动作范围、密度和动作难度都可能是超负荷。</p><p>❌很多人以为变化越多越高级。✅变化必须服务特异性，否则会稀释目标刺激。</p></section>
+<section class="mnemonic"><h2>记忆口诀</h2><p><strong>“像目标，超旧量；小步加，会变强。停太久，会退档；人不同，剂量量。”</strong></p></section>
+<section class="panel"><h2>翻转卡复习</h2><div class="cards">
+<div class="flip"><div class="flip-in"><div class="face">特异性原则核心？</div><div class="face back">身体适应具体刺激：动作、速度、肌群、供能和关节角度越像目标，迁移越直接。</div></div></div>
+<div class="flip"><div class="flip-in"><div class="face">超负荷为什么必要？</div><div class="face back">刺激不超过旧水平，身体没有理由投入资源制造新适应。</div></div></div>
+<div class="flip"><div class="flip-in"><div class="face">渐进性超负荷只能加重量吗？</div><div class="face back">否。次数、组数、频率、密度、动作范围、速度意图都可进阶。</div></div></div>
+<div class="flip"><div class="flip-in"><div class="face">可逆性说什么？</div><div class="face back">停训后适应会逐渐消退，常见 2-3 周开始看见力量耐力下降。</div></div></div>
+<div class="flip"><div class="flip-in"><div class="face">个体差异怎么影响计划？</div><div class="face back">同一训练量反应不同，要根据日志、恢复、疼痛和表现趋势调整。</div></div></div>
+<div class="flip"><div class="flip-in"><div class="face">持续变化等于乱换动作吗？</div><div class="face back">不是。变化要保留目标特异性，同时调整刺激维度。</div></div></div>
+<div class="flip"><div class="flip-in"><div class="face">剂量-反应关系怎么用？</div><div class="face back">训练剂量太低无效，适中进步，过高疲劳压过恢复。</div></div></div>
+<div class="flip"><div class="flip-in"><div class="face">8 周计划先检查什么？</div><div class="face back">先看目标和特异性，再看超负荷、渐进、恢复和个体反馈。</div></div></div>
+</div></section>
+<section class="panel orange practice"><h2>实操关联</h2><ul>
+<li><strong>增肌：</strong>保留目标肌张力，用重量、次数、组数和接近力竭程度小步进阶，不用每次换动作追新鲜感。</li>
+<li><strong>最大力量：</strong>主项动作要高度特异，低到中次数、较长休息、记录每组速度和技术稳定性。</li>
+<li><strong>耐力：</strong>用持续时间、频率、配速和阈值训练构成渐进，不要只用抗阻训练替代专项有氧。</li>
+<li><strong>减脂：</strong>训练剂量要能长期坚持，抗阻维持肌肉，有氧和日常活动提高总消耗。</li>
+<li><strong>康复：</strong>超负荷更小、更可控，先让组织重新适应，再逐步接近目标动作。</li>
+<li><strong>教练沟通：</strong>客户停训、睡眠差或疼痛上升时，先调整剂量，不要把所有下降都解释成“不努力”。</li>
+</ul></section>
+<section class="panel blue"><h2>练习题</h2>
+<div class="question"><h3>1. 单选：客户想提高卧推 1RM，哪项最符合特异性原则？</h3><div class="options" data-answer="B"><button class="option">A. 每次只做 40 分钟慢跑</button><button class="option">B. 安排卧推主项、水平推辅助和逐步提高负荷</button><button class="option">C. 每周随机换 10 个胸部动作</button><button class="option">D. 只做平板支撑</button></div><button class="check">查看解析</button><div class="answer">正确答案：B。卧推 1RM 需要水平推模式、胸肩肘协同、高负荷神经输出和足够恢复。A 偏耐力，C 缺少稳定进阶，D 可辅助核心但不能替代卧推特异刺激。</div></div>
+<div class="question"><h3>2. 单选：某人 3 个月一直用同重量、同组数、同次数训练且越来越轻松，最可能缺什么？</h3><div class="options" data-answer="C"><button class="option">A. 可逆性</button><button class="option">B. 专项比赛</button><button class="option">C. 超负荷或渐进性超负荷</button><button class="option">D. 过度变化</button></div><button class="check">查看解析</button><div class="answer">正确答案：C。越来越轻松说明身体已适应旧刺激，若还想继续进步，需要小步提高负荷、容量、密度或动作难度。</div></div>
+<div class="question"><h3>3. 多选：哪些方式可用于渐进性超负荷？</h3><div class="options multi"><button class="option">A. 加重量</button><button class="option">B. 加次数或组数</button><button class="option">C. 在动作质量不变时缩短休息</button><button class="option">D. 完全随机更换所有动作</button></div><button class="check">查看解析</button><div class="answer">答案：A、B、C。重量、次数、组数和密度都能构成进阶。D 不是可靠进阶，因为随机变化会让刺激难以追踪，也可能破坏特异性。</div></div>
+<div class="question"><h3>4. 案例：小周计划 8 周提高深蹲 5RM，却每周 4 次长跑、1 次轻器械循环，很少练深蹲。问题在哪？</h3><div class="options case" data-answer="A"><button class="option">A. 主要违反特异性，且力量超负荷不足</button><button class="option">B. 主要是可逆性太强</button><button class="option">C. 主要是变化太少</button><button class="option">D. 因为有氧训练完全没有价值</button></div><button class="check">查看解析</button><div class="answer">正确答案：A。目标是深蹲 5RM，计划却主要给耐力和轻量循环刺激，动作模式、负荷和神经输出都不够特异。D 错，有氧有健康和恢复价值，但不能替代深蹲力量主刺激。修正：每周安排 1-2 次深蹲主项，小步提高负荷或次数，辅助髋膝伸展和核心稳定，并用轻量周管理疲劳。</div></div>
+</section>
+<footer>阶段2训练科学 · Day 29/112 · 今日早间新知识(工作日6:00) · 中午12:00复习巩固</footer>
+</main><div class="zoom" id="zoom"><button aria-label="关闭">×</button><img alt="放大图"></div>
+<script>
+document.querySelectorAll('.kp-head').forEach(function(x){x.addEventListener('click',function(){x.parentElement.classList.toggle('open')})});
+document.querySelectorAll('.flip').forEach(function(x){x.addEventListener('click',function(){x.classList.toggle('open')})});
+document.querySelectorAll('.question').forEach(function(q){var opts=q.querySelectorAll('.option'),check=q.querySelector('.check'),ans=q.querySelector('.answer');opts.forEach(function(o){o.addEventListener('click',function(){if(q.querySelector('.multi'))o.classList.toggle('selected');else{opts.forEach(function(i){i.classList.remove('selected')});o.classList.add('selected')}})});check.addEventListener('click',function(){ans.classList.add('show');var selected=q.querySelectorAll('.option.selected');if(q.querySelector('.multi')){var good=['A','B','C'];selected.forEach(function(o){var i=[].slice.call(opts).indexOf(o);o.classList.add(good.includes(String.fromCharCode(65+i))?'correct':'wrong')})}else{selected.forEach(function(o){var i=[].slice.call(opts).indexOf(o);o.classList.add(String.fromCharCode(65+i)===q.querySelector('.options').dataset.answer?'correct':'wrong')})}})});
+var z=document.getElementById('zoom'),zi=z.querySelector('img');document.querySelector('.figure img').addEventListener('click',function(){zi.src=this.src;z.classList.add('show')});z.addEventListener('click',function(e){if(e.target===z||e.target.tagName==='BUTTON')z.classList.remove('show')});document.addEventListener('keydown',function(e){if(e.key==='Escape')z.classList.remove('show')});
+</script></body></html>

@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 27 · 运动单位募集与神经肌肉控制深化</title>
+<link rel="icon" type="image/svg+xml" href="assets/fitness-study-logo-open-circle.svg">
+  <style>
+    *{box-sizing:border-box;letter-spacing:0}
+    body{margin:0;padding:18px;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.7;background:#f6f8f7;color:#1a2b22}
+    .wrap{max-width:980px;margin:0 auto}
+    .header{padding:22px 6px 14px}
+    .header h1{margin:0 0 10px;font-size:clamp(1.55rem,3vw,2.3rem);line-height:1.14;background:linear-gradient(90deg,#0ea66b,#0ea5e9);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .sub{color:#5a6b62}
+    .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+    .chip{font-size:.78rem;border:1px solid #d4ebe0;border-radius:999px;padding:3px 10px;background:#fff;color:#0c6da3;font-weight:700}
+    .panel,.figure,.warn{background:#fff;border:1px solid #e2e8e4;border-radius:14px;padding:18px;margin:14px 0;box-shadow:0 2px 12px rgba(20,40,30,.06)}
+    .lead{border-left:4px solid #0ea66b}
+    .orange{border-left:4px solid #ea7a17}
+    .warn{border-left:4px solid #e23b3b}
+    .panel h2,.warn h2{margin:0 0 10px;font-size:1.08rem;color:#0a7d52}
+    .figure img{width:100%;display:block;border-radius:12px;border:1px solid #e2e8e4;background:#fbfdfc;cursor:zoom-in}
+    .caption{font-size:.86rem;color:#5a6b62;margin-top:8px;text-align:center}
+    .take{border-left:4px solid #0ea66b;background:#f0fbf5;border-radius:10px;padding:10px 12px;margin:10px 0}
+    .term{font-weight:800;color:#0a7d52;background:#e8f5ee;border-radius:5px;padding:1px 5px}
+    ul.kp{list-style:none;padding:0;margin:0}
+    ul.kp>li{border-bottom:1px dashed #e2e8e4}
+    .kp-head{display:block;cursor:pointer;position:relative;padding:13px 8px 13px 30px}
+    .kp-head:before{content:"▸";position:absolute;left:8px;color:#0ea66b;font-weight:800;transition:.2s}
+    .open>.kp-head:before{transform:rotate(90deg)}
+    .kp-head:hover{background:#f0f4f2}
+    .kp-body{display:none;padding:0 14px 16px 30px}
+    .open>.kp-body{display:block}
+    .dim{display:block;margin-top:10px;font-size:.78rem;font-weight:800;color:#0c6da3}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin:12px 0}
+    .explain-card,.mini{border:1px solid #dbe8e1;border-radius:12px;background:#fbfdfc;padding:12px}
+    .explain-card h4,.mini h4{margin:0 0 7px;font-size:.98rem;color:#0a7d52}
+    .tbl{width:100%;border-collapse:collapse;font-size:.9rem;margin:10px 0}
+    .tbl th{background:#0ea66b;color:#fff;text-align:left}
+    .tbl th,.tbl td{padding:8px;border-bottom:1px solid #e2e8e4;vertical-align:top}
+    .mnemonic{background:linear-gradient(135deg,#0ea66b,#0ea5e9);color:#fff;border-radius:14px;padding:20px;margin:14px 0;box-shadow:0 2px 12px rgba(20,40,30,.08)}
+    .mnemonic h2{margin:0 0 8px;font-size:1.1rem}
+    .mnemonic strong{color:#fff7d6}
+    .card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+    .flip{min-height:145px;perspective:800px;cursor:pointer}
+    .flip-inner{position:relative;width:100%;height:100%;min-height:145px;transition:transform .5s;transform-style:preserve-3d}
+    .flip.flipped .flip-inner{transform:rotateY(180deg)}
+    .face{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:15px;border-radius:13px;border:1px solid #e2e8e4;backface-visibility:hidden;background:#fff;font-weight:700}
+    .front{color:#0a7d52;background:#f8fffb}
+    .back{transform:rotateY(180deg);background:#eef7ff;color:#0c6da3;font-weight:600}
+    .quiz{border-top:1px dashed #e2e8e4;padding-top:12px;margin-top:12px}
+    .quiz h3{margin:0 0 8px;font-size:1rem;color:#1a2b22}
+    .opt{border:1px solid #e2e8e4;border-radius:10px;padding:9px 10px;margin:7px 0;background:#fff;cursor:pointer}
+    .opt:hover{background:#f0f4f2}
+    .lbl{font-weight:800;color:#0c6da3;margin-right:4px}
+    .correct{border-color:#0ea66b!important;background:#e9f8f0!important}
+    .wrong-show{border-color:#e23b3b!important;background:#fff0f0!important}
+    button{border:0;border-radius:999px;background:#0ea66b;color:#fff;font-weight:800;padding:8px 14px;cursor:pointer;margin-top:6px}
+    .reveal{display:none;border-left:4px solid #0ea5e9;background:#f0f8fc;border-radius:10px;padding:10px;margin-top:8px}
+    .reveal.show{display:block}
+    .list{padding-left:20px;margin:8px 0}
+    .list li{margin:7px 0}
+    footer{text-align:center;color:#5a6b62;font-size:.85rem;margin:22px 0}
+    .lightbox{position:fixed;inset:0;background:rgba(0,0,0,.82);display:none;align-items:center;justify-content:center;z-index:9;padding:18px}
+    .lightbox.show{display:flex}
+    .lightbox img{max-width:96vw;max-height:92vh;border-radius:10px;background:#fff}
+    @media(max-width:640px){
+      body{padding:10px}
+      .panel,.figure,.warn{padding:14px}
+      .kp-body{padding-left:14px}
+      .card-grid{grid-template-columns:1fr}
+    }
+  
+/* Day1 title alignment override */
+.header,
+header {
+  text-align: left !important;
+  padding: 22px 4px 14px !important;
+}
+.header h1,
+header h1,
+h1 {
+  background: none !important;
+  -webkit-background-clip: initial !important;
+  background-clip: initial !important;
+  color: #111113 !important;
+  font-size: clamp(1.45rem, 3vw, 2.25rem) !important;
+  line-height: 1.16 !important;
+  margin-bottom: 8px !important;
+  letter-spacing: 0 !important;
+}
+.header h1::before,
+header h1::before {
+  content: "";
+  display: block;
+  width: 34px;
+  height: 4px;
+  border-radius: 999px;
+  background: #ff5a1f;
+  margin-bottom: 10px;
+}
+.chips,
+.meta {
+  justify-content: flex-start !important;
+}
+.sub,
+.meta {
+  color: #71717a !important;
+}
+
+
+/* Day1 title chips override */
+.chip,
+.slot,
+.tag {
+  border: 1px solid #e4e4e7 !important;
+  border-radius: 999px !important;
+  background: #ffffff !important;
+  color: #71717a !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+}
+.chip:nth-child(1),
+.tag:nth-child(1) {
+  background: rgba(74, 222, 128, 0.16) !important;
+  border-color: transparent !important;
+  color: #15803d !important;
+}
+.chip:nth-child(2),
+.tag:nth-child(2) {
+  background: rgba(96, 165, 250, 0.16) !important;
+  border-color: transparent !important;
+  color: #2563eb !important;
+}
+
+
+/* Day1 mnemonic override */
+.mnemonic {
+  background: #ffffff !important;
+  border: 1px solid #e4e4e7 !important;
+  border-left: 4px solid #ff5a1f !important;
+  color: #111113 !important;
+  box-shadow: none !important;
+}
+.mnemonic strong {
+  color: #ff5a1f !important;
+}
+
+
+/* Day1 term highlight override */
+.term {
+  background: rgba(74, 222, 128, 0.16) !important;
+  border-radius: 6px !important;
+  padding: 1px 5px !important;
+}
+
+
+/* Day1 typography override */
+body {
+  font-size: 14px !important;
+  line-height: 1.65 !important;
+}
+p,
+li,
+td,
+th,
+.kp-head,
+.kp-body,
+.takeaway,
+.practice li,
+.question,
+.q,
+.answer,
+.reveal,
+.face,
+.mnemonic {
+  font-size: 14px !important;
+}
+.header h1,
+header h1,
+h1 {
+  font-size: clamp(1.45rem, 3vw, 2.25rem) !important;
+  line-height: 1.16 !important;
+}
+.panel h2,
+.warn h2,
+.card h2,
+h2 {
+  font-size: 1.05rem !important;
+}
+h3,
+.panel h3,
+.quiz h3,
+.question h3 {
+  font-size: 1rem !important;
+}
+.chip,
+.slot,
+.tag,
+.meta,
+.sub,
+.caption,
+.footer,
+footer,
+.dim {
+  font-size: 12px !important;
+}
+
+
+/* Day1 exact text sizing override */
+.sub { font-size: 14px !important; line-height: 1.65 !important; }
+.caption { font-size: 13.6px !important; line-height: 1.65 !important; }
+.footer,
+footer { font-size: 13.12px !important; line-height: 1.65 !important; }
+.dim { font-size: 12.48px !important; line-height: 1.65 !important; }
+.mnemonic strong { font-size: 14px !important; line-height: 1.65 !important; }
+
+
+/* Day1 flip card color override */
+.flip .face,
+.flip .front,
+.flip-inner .face:first-child,
+.flip-in .face:first-child {
+  background: #fafafa !important;
+  color: #111113 !important;
+  border-color: #e4e4e7 !important;
+}
+.flip .back,
+.flip-inner .back,
+.flip-in .back,
+.flip-inner .face.back,
+.flip-in .face.back {
+  background: #0ea66b !important;
+  color: #ffffff !important;
+  border-color: #0ea66b !important;
+}
+
+</style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="header">
+      <h1>Day 27 · 运动单位募集与神经肌肉控制深化</h1>
+      <div class="sub">今天主题: 身体怎样按力量需求调度运动单位、放电频率、同步化和神经肌肉效率。</div>
+      <div class="chips">
+        <span class="chip">第4周 · 阶段1基础科学</span>
+        <span class="chip">NSCA + NASM 双证</span>
+        <span class="chip">早间新知识</span>
+      </div>
+    </header>
+
+    <section class="panel lead">
+      <h2>一句话总结</h2>
+      <p><strong>力量不是“肌肉越多越会用”，而是神经系统先按大小原则从小运动单位招到大运动单位，再用更高放电频率和更好同步化把力量调上去，同时减少无关肌肉抢戏。</strong> 肌肉像发动机，神经控制像油门、换挡和车队调度。</p>
+    </section>
+
+    <figure class="figure">
+      <img id="mainFig" src="assets/阶段1基础科学/day27-运动单位募集与神经肌肉控制深化.png" alt="运动单位募集与神经肌肉控制深化中文标注学习图">
+      <div class="caption">看图重点: 先看 S、FR、FF 三类运动单位，再看低力募集、高力频率编码、同步化与减少多余激活。</div>
+    </figure>
+
+    <section class="panel">
+      <h2>核心要点</h2>
+      <ul class="kp">
+        <li>
+          <span class="kp-head"><span class="term">运动单位类型</span>: S、FR、FF 分别代表慢耐久、中等平衡、快爆发易疲劳。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 运动单位分类不是背字母，而是判断“谁耐久、谁爆发、谁容易累”。</div>
+            <div class="grid">
+              <div class="explain-card"><h4>S 单位</h4><p>S = slow，慢收缩抗疲劳。像省电小灯，输出小但能亮很久，适合站立控制、轻松有氧和低力姿势维持。</p></div>
+              <div class="explain-card"><h4>FR 单位</h4><p>FR = fast fatigue-resistant，快收缩抗疲劳。像中档发动机，速度比 S 快，续航比 FF 好，适合中等强度反复发力。</p></div>
+              <div class="explain-card"><h4>FF 单位</h4><p>FF = fast fatigable，快收缩易疲劳。像涡轮冲刺，力量最大、速度最快，但很快累，适合短时爆发和大重量关键段。</p></div>
+            </div>
+            <table class="tbl">
+              <tr><th>类型</th><th>输出特点</th><th>训练场景</th></tr>
+              <tr><td>S</td><td>慢、力量小、抗疲劳强</td><td>站姿、慢跑、热身、技术控制</td></tr>
+              <tr><td>FR</td><td>快、力量中、较抗疲劳</td><td>中等重量多次、间歇反复输出</td></tr>
+              <tr><td>FF</td><td>最快、力量大、易疲劳</td><td>1RM、跳跃、冲刺、爆发举</td></tr>
+            </table>
+            <span class="dim">常见误解</span>
+            <p>❌以为快单位都一样。✅其实 FR 和 FF 都快，但 FR 更耐疲劳，FF 更偏峰值爆发。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">大小原则</span>: 低力先募集小单位，力量需求升高才逐步拉上大单位。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 身体很省电，不会一开始就把最强、最容易累的单位全部叫上。</div>
+            <div class="grid">
+              <div class="explain-card"><h4>字面意思</h4><p>大小原则(Size Principle)指运动单位按阈值从小到大被募集。小单位阈值低，先上；大单位阈值高，后上。</p></div>
+              <div class="explain-card"><h4>大白话</h4><p>像搬东西。拿纸杯不用叫全队，搬冰箱才叫更多人，最后才把最壮但最容易累的人叫来。</p></div>
+              <div class="explain-card"><h4>训练含义</h4><p>大重量、高速度意图、接近力竭都能提高高阈值单位参与。轻重量也能招到大单位，但通常来得更晚。</p></div>
+            </div>
+            <span class="dim">真实例子</span>
+            <p>二头弯举前几次很轻松时，小单位足够。越接近力竭，身体才逐步叫上更大单位，所以最后几次明显更抖、更慢。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为轻重量永远练不到 II 型相关高阈值单位。✅其实接近力竭时也可能参与，只是效率、疲劳和训练目标要分清。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">频率编码</span>: 同一个运动单位发放更密，肌肉张力可以继续升高。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 力量变大不只靠“多招人”，还靠“命令发得更密”。</div>
+            <div class="grid">
+              <div class="explain-card"><h4>字面意思</h4><p>频率编码(rate coding)是运动神经元单位时间内发放动作电位的频率。频率越高，肌纤维接到收缩命令越密。</p></div>
+              <div class="explain-card"><h4>大白话</h4><p>像敲鼓从慢拍变快拍。人没变多，但节奏更紧，合力更容易叠上去。</p></div>
+              <div class="explain-card"><h4>训练含义</h4><p>1RM 起杠、跳跃起跳、冲刺第一步都需要高频神经输出。疲劳后频率掉，动作就慢、散、卡。</p></div>
+            </div>
+            <span class="dim">底层机制</span>
+            <p>单次脉冲引发一次肌纤维张力反应。脉冲间隔缩短时，前一次张力还没完全回落，后一次又来，整体张力更高。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为达到某重量后只能再招更多单位。✅其实已募集单位也能通过更高放电频率提高输出。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">同步化</span>: 训练让更多运动单位在关键时间窗口一起放电，爆发力更容易上来。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 爆发动作怕“各干各的”，需要很多单位在同一瞬间更整齐地贡献力量。</div>
+            <div class="grid">
+              <div class="explain-card"><h4>字面意思</h4><p>同步化是多个运动单位放电时间更协调。它不是所有单位永远同一秒开火，而是关键输出窗口更集中。</p></div>
+              <div class="explain-card"><h4>大白话</h4><p>像划龙舟。每个人都有力，但桨一起下水，船才冲得快。</p></div>
+              <div class="explain-card"><h4>训练含义</h4><p>跳箱、药球抛、抓举、高质量重单次都更依赖同步化。疲劳过高时，动作节奏散，爆发训练质量下降。</p></div>
+            </div>
+            <span class="dim">真实例子</span>
+            <p>同样会深蹲的人，测试纵跳时差别可能不在肌肉围度，而在能否把髋、膝、踝和相关运动单位在极短时间内一起拉起来。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为爆发力只等于肌肉大。✅其实高阈值单位参与、频率编码、同步化和技术路径都在决定峰值输出。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">神经肌肉效率</span>: 主动肌更集中出力，协同肌会帮忙，无关肌肉少浪费能量。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 练熟不是“全身更紧”，而是该紧的更准，不该抢戏的少抢。</div>
+            <div class="grid">
+              <div class="explain-card"><h4>字面意思</h4><p>神经肌肉效率是神经系统用更少多余激活完成更有效动作输出。主动肌、协同肌、稳定肌分工更清楚。</p></div>
+              <div class="explain-card"><h4>大白话</h4><p>像团队协作。主力负责推进，辅助负责稳定，反方向拉扯的人少了，同样用力就更有效。</p></div>
+              <div class="explain-card"><h4>训练含义</h4><p>新手弯举耸肩、腰后仰、前臂乱紧；熟练后肱二头肌更集中，肩和躯干只做稳定，不乱代偿。</p></div>
+            </div>
+            <span class="dim">真实例子</span>
+            <p>卧推初学者常把肩耸起、手腕乱晃、脚蹬地不稳。技术熟练后，胸大肌、三头肌、三角肌前束和背部稳定更像同一队伍。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为所有肌肉同时越紧越安全。✅其实过多无关紧张会浪费能量、干扰路线，也可能让动作更僵。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">去募集</span>: 力量需求下降时，高阈值大单位通常先退出，系统按需降档。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 神经系统不只会加码，也会撤人；控制好撤人，动作结束才稳。</div>
+            <div class="grid">
+              <div class="explain-card"><h4>发生什么</h4><p>当外部负荷变轻、动作接近完成或张力需求下降，身体会逐步减少运动单位参与，尤其先撤成本高的大单位。</p></div>
+              <div class="explain-card"><h4>动作例子</h4><p>硬拉最难点需要更高募集。锁定后外部力矩变小，系统会降档，让动作从最大输出转向稳定控制。</p></div>
+              <div class="explain-card"><h4>训练含义</h4><p>离心下降、落地缓冲、放下杠铃，都需要平稳去募集。突然松掉会让关节和组织承受不必要冲击。</p></div>
+            </div>
+            <span class="dim">常见误解</span>
+            <p>❌以为募集只关心“怎么上力”。✅其实怎么降低输出、怎么稳住结束，也属于神经控制。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">后续课程连接</span>: Day27 是 Day34 神经适应和爆发训练的前置底层逻辑。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 早期力量增长、爆发训练、抗阻编程，很多都要回到“募集、频率、同步、效率”。</div>
+            <div class="grid">
+              <div class="explain-card"><h4>接 Day34</h4><p>新手训练前几周力量涨很快，常见原因是运动单位募集更好、放电频率更高、同步化更强，而不是肌肉已经明显变大。</p></div>
+              <div class="explain-card"><h4>接爆发训练</h4><p>爆发训练要保速度和高质量休息，因为目标是高阈值单位快速加入并同步输出，不是把每组练到完全没速度。</p></div>
+              <div class="explain-card"><h4>接编程变量</h4><p>重量、速度意图、次数、组间休息会改变主要神经刺激。相同动作，用法不同，适应不同。</p></div>
+            </div>
+            <span class="dim">训练含义</span>
+            <p>想练最大力量，重负荷和长休息优先；想练爆发，速度和低疲劳优先；想练肌肥大，中等负荷接近力竭也能让高阈值单位参与。</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="warn">
+      <h2>常见误区</h2>
+      <p>❌很多人以为新手力量涨就是肌肉长大。✅其实早期常先来自神经适应: 募集更好、频率更高、动作效率更高。</p>
+      <p>❌很多人以为轻重量永远练不到高阈值单位。✅其实接近力竭时也可能参与，只是疲劳更大，训练目标要匹配。</p>
+      <p>❌很多人以为爆发训练越累越好。✅其实爆发训练更怕速度掉和同步质量下降，需要充分休息保输出。</p>
+    </section>
+
+    <section class="mnemonic">
+      <h2>记忆口诀</h2>
+      <p><strong>小先大后，低招高频；同发更爆，少抢更省。</strong> 先按大小原则招人，再用频率编码加力，同步化冲峰值，神经肌肉效率减少浪费。</p>
+    </section>
+
+    <section class="panel">
+      <h2>翻转卡复习</h2>
+      <div class="card-grid">
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">S 单位特点?</div><div class="face back">慢收缩、抗疲劳、力量小，适合低力耐久任务。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">FR 单位特点?</div><div class="face back">快收缩、较抗疲劳，适合中等强度反复输出。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">FF 单位特点?</div><div class="face back">快收缩、力量最大、易疲劳，适合短时爆发。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">大小原则?</div><div class="face back">低阈值小单位先上，高阈值大单位后上。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">频率编码?</div><div class="face back">已募集运动单位提高放电频率，让张力继续升高。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">同步化作用?</div><div class="face back">关键时间窗口一起放电，提升爆发与峰值输出。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">神经肌肉效率?</div><div class="face back">主动肌更集中，无关肌肉少代偿，输出更省更准。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">去募集?</div><div class="face back">力需求下降时，尤其高阈值大单位逐步退出。</div></div></div>
+      </div>
+    </section>
+
+    <section class="panel orange">
+      <h2>实操关联</h2>
+      <ul class="list">
+        <li><strong>最大力量:</strong> 用高负荷、低次数、长休息，优先练高阈值募集和高频神经输出。</li>
+        <li><strong>爆发训练:</strong> 用速度意图、充分休息、少量高质量组，优先练同步化，不追求酸胀。</li>
+        <li><strong>肌肥大:</strong> 中等负荷接近力竭，也能让大单位参与；但要控制动作质量和恢复成本。</li>
+        <li><strong>技术学习:</strong> 用低到中等负荷练神经肌肉效率，让主动肌清楚发力，协同代偿减少。</li>
+        <li><strong>康复训练:</strong> 先恢复低阈值控制和稳定，再逐步提高负荷与速度，不急着冲 FF 单位。</li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2>练习题</h2>
+      <div class="quiz">
+        <h3>1. 哪类运动单位最符合“快收缩、力量大、易疲劳”?</h3>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">A.</span>S 单位</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">B.</span>FR 单位</div>
+        <div class="opt" onclick="pick(this,'correct')"><span class="lbl">C.</span>FF 单位</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">D.</span>所有单位都一样</div>
+        <button onclick="document.getElementById('ans1').classList.add('show')">查看解析</button>
+        <div class="reveal" id="ans1">答案 C。S 慢且耐疲劳，不是爆发主力；FR 快且较耐疲劳，适合中等反复输出；FF 快、力量大、易疲劳，最符合题干；D 错在忽略类型差异。</div>
+      </div>
+      <div class="quiz">
+        <h3>2. 大小原则最准确的描述是?</h3>
+        <div class="opt" onclick="pick(this,'correct')"><span class="lbl">A.</span>小运动单位先募集，大运动单位后募集</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">B.</span>大运动单位永远先募集</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">C.</span>身体随机募集所有单位</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">D.</span>只有肌肉大的人才有大小原则</div>
+        <button onclick="document.getElementById('ans2').classList.add('show')">查看解析</button>
+        <div class="reveal" id="ans2">答案 A。大小原则是低阈值小单位先上，高阈值大单位后上。B 顺序反了；C 忽略阈值顺序；D 错在把普遍神经控制规律当成体型特例。</div>
+      </div>
+      <div class="quiz">
+        <h3>3. 多选: 下列哪些属于提升力量输出的神经因素?</h3>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">A.</span>募集更多运动单位</div>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">B.</span>提高放电频率</div>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">C.</span>运动单位同步化更好</div>
+        <div class="opt" onclick="pickMulti(this)"><span class="lbl">D.</span>乳酸永远越多越好</div>
+        <button onclick="document.getElementById('ans3').classList.add('show')">查看解析</button>
+        <div class="reveal" id="ans3">答案 A、B、C。募集决定参与规模；频率编码让已募集单位输出更强；同步化提升关键时间窗口的合力。D 不是神经因素，也不是训练目标的通用原则。</div>
+      </div>
+      <div class="quiz">
+        <h3>4. 案例题: 客户用 30%1RM 做弯举，只做 8 次就停，说“轻重量一定练不到大单位”。你怎么分析?</h3>
+        <button onclick="document.getElementById('ans4').classList.add('show')">查看解析</button>
+        <div class="reveal" id="ans4">轻重量不是绝对练不到高阈值单位，但 30%1RM 只做 8 次通常离力竭很远，主要还是低阈值单位承担。若目标是高阈值刺激，可提高负荷、加入高速意图，或用轻重量做到更接近力竭。若目标是技术或康复，轻重量少次数也有价值，但目标不是最大募集。</div>
+      </div>
+    </section>
+
+    <footer>阶段1基础科学 · Day 27/112 · 今日早间新知识(工作日6:00) · 中午12:00复习巩固</footer>
+  </main>
+  <div class="lightbox" id="lightbox"><img src="" alt="放大学习图"></div>
+  <script>
+    document.querySelectorAll('ul.kp>li>.kp-head').forEach(function(h){
+      h.addEventListener('click',function(){h.parentElement.classList.toggle('open')});
+    });
+    function pick(el,type){
+      el.parentElement.querySelectorAll('.opt').forEach(function(o){o.classList.remove('correct','wrong-show')});
+      el.classList.add(type==='correct'?'correct':'wrong-show');
+    }
+    function pickMulti(el){
+      if(el.classList.contains('correct')||el.classList.contains('wrong-show')){
+        el.classList.remove('correct');el.classList.remove('wrong-show');
+      } else {
+        el.classList.add(el.dataset.c==='1'?'correct':'wrong-show');
+      }
+    }
+    var fig=document.getElementById('mainFig');
+    var lb=document.getElementById('lightbox');
+    var lbImg=lb.querySelector('img');
+    fig.addEventListener('click',function(){lbImg.src=fig.src;lb.classList.add('show')});
+    lb.addEventListener('click',function(){lb.classList.remove('show')});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('show')});
+  </script>
+</body>
+</html>

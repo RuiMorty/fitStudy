@@ -261,11 +261,36 @@ function headlineAnswer(value) {
   return compact.length > 28 ? `${compact.slice(0, 28)}…` : compact;
 }
 
+function briefAnswer(value) {
+  const text = stripTags(value);
+  if (!text) return "";
+  if (text.includes("糖酵解参与明显") || text.includes("糖酵解贡献明显")) return "糖酵解主导，先保动作质量";
+  if (text.includes("中高强度") && text.includes("30 秒")) return "30秒到2分钟中高强度";
+  if (text.includes("乳酸可被") || text.includes("乳酸能被")) return "乳酸可再利用，不是废物";
+  if (text.includes("100 米") && text.includes("400 米")) return "100米偏ATP-PCr，400米偏糖酵解";
+  if (text.includes("ACL") || text.includes("膝内扣")) return "疲劳让膝扭转和剪切风险升高";
+  if (text.includes("力臂变长") || text.includes("力矩 =")) return "力臂越长，关节力矩越大";
+  if (text.includes("马拉松") && text.includes("举重")) return "耐力偏I型，爆发偏II型";
+  if (text.includes("PCr") && text.includes("恢复不足")) return "短休导致PCr恢复不足";
+  const firstSentence = text.split(/[。！？!?]/).map((part) => part.trim()).find(Boolean) || text;
+  const firstClause = firstSentence.split(/[；;，,]/).map((part) => part.trim()).find(Boolean) || firstSentence;
+  return firstClause;
+}
+
 function expandAnswer(value, topic) {
   const text = stripTags(value);
   if (!text) return "";
+  const brief = briefAnswer(text);
+  if (text === brief || text.startsWith(`${brief}。`) || text.startsWith(`${brief}，`)) {
+    if (topic.includes("糖酵解")) return `${text} 判断时看三个线索：持续时间超过纯 ATP-PCr、强度仍然很高、局部酸胀和速度下降开始明显。训练调整优先保动作质量，再决定休息、负重和次数。`;
+    if (topic.includes("ATP-PCr")) return `${text} 关键不是追求更累，而是让快供能储备恢复到能支撑峰值输出。力量和爆发训练要同时安排速度、技术和休息。`;
+    if (topic.includes("损伤")) return `${text} 真正要查的是负荷变化、疼痛时序和动作受力来源；风险升高时先降剂量，再修减速、落地和对线控制。`;
+    if (topic.includes("杠杆") || topic.includes("力矩")) return `${text} 所以同样重量也会因为负重位置不同而难度不同。训练调整可以改握距、站距、器械路径或负重位置。`;
+    if (topic.includes("肌纤维")) return `${text} I 型更耐疲劳，II 型更快更有力。训练感觉差异来自纤维特性、供能方式、休息长度和重复输出要求。`;
+    return `${text} 放到 ${topic} 的训练场景里，先判断时间、强度、方向、负荷和动作控制，再对应到训练调整。`;
+  }
   if (text.length > 45) return text;
-  return `${text}。落到 ${topic} 时，再看负荷、方向和控制。`;
+  return `${text}。放到 ${topic} 的训练场景里，再判断负荷、方向和控制。`;
 }
 
 function hashString(value) {
@@ -389,7 +414,25 @@ function generatedScenario(card, fallback) {
       answer: "先看研究设计是否能支持因果，尤其是否有随机对照；再看是否控制训练经验、蛋白、热量、睡眠等混杂因素；最后看效果量和实际意义，不只看 p 值。",
     };
   }
-  if (topic.includes("能量系统") || topic.includes("ATP-PCr")) {
+  if (topic.includes("运动单位募集") || topic.includes("神经肌肉控制")) {
+    return {
+      q: `场景题：客户练箱跳，计划 5 组×5 次，组间只休 30 秒。第 1 组能跳 60cm 且落地稳；第 3 组开始跳不上同高度，落地膝内扣，起跳前下蹲变深还停顿。你先怎么判断，下一组怎么调？`,
+      answer: "先判断目标是不是爆发质量。如果是，表现已说明神经输出和动作质量掉线：高阈值运动单位快速募集、频率编码和同步化被疲劳压低；SSC 从快速离心-立刻向心变成深蹲停顿，弹性势能流失；30 秒休息不足，氧化恢复和 PCr 补充跟不上。下一组把休息拉到 2-3 分钟，降到能稳定完成的箱高或改 3 次/组；若膝内扣仍出现，停止箱跳，回退到低箱落地、反向跳或髋膝踝对线练习。",
+    };
+  }
+  if (topic.includes("糖酵解")) {
+    return {
+      q: `场景题：客户做 4 组 12 次深蹲，每组最后 3 次腿酸、速度掉，但还想继续加短休。你用 Day ${day} 的糖酵解系统怎么解释，下一组怎么改？`,
+      answer: "这是中高强度重复输出，糖酵解参与明显。腿酸和掉速提示代谢压力上升，不代表越短休越好。下一组先保动作质量：可把休息拉长、减轻负重或减少次数，让输出稳定而不是硬堆疲劳。",
+    };
+  }
+  if (topic.includes("氧化系统") || topic.includes("有氧")) {
+    return {
+      q: `场景题：客户做 60 分钟骑行，20 分钟后开始掉速。应该怎么判断和调整？`,
+      answer: "可以分三类判断：1. 如果能稳住 2 分钟以上同一节奏，氧化系统和配速还对得上；2. 如果不能稳住，当前强度或疲劳已经超过有氧底盘，需要回到糖酵解/ATP-PCr 压力和配速安排；3. 掉速时间也要分开判断，0-10 分钟掉速多像起步过快或热身不足，10-20 分钟掉速多像接近阈值、糖酵解顶上来，20 分钟后掉速多像氧化能力或耐久度不够。调整上先降低过快起步和过高强度，再按掉速时间补有氧底盘、节奏控制或恢复安排。",
+    };
+  }
+  if (topic.includes("ATP-PCr")) {
     return {
       q: `场景题：客户做 5 组 3 次 85%1RM 深蹲，每组只休 30 秒。前两组还稳，第三组起身明显变慢、腰开始代偿。你怎么解释，下一组怎么改？`,
       answer: "这是短时高强度力量输出，主要依赖 ATP-PCr。30 秒只能恢复约一半 PCr，第三组快充储备不足，所以速度掉、动作质量下降。下一组先把休息拉到 3-5 分钟；若仍掉速，就降重量或减少组数，目标是保留峰值输出和技术质量，而不是硬撑疲劳。",
@@ -403,8 +446,8 @@ function generatedScenario(card, fallback) {
   }
   if (topic.includes("上肢")) {
     return {
-      q: `场景题：客户卧推卡在下半程、划船时总耸肩。你先分别看哪块肌群和哪种动作模式？`,
-      answer: "卧推先看胸大肌、三角肌前束和肱三头肌的推类协同；划船先看背阔肌、菱形肌和下斜方肌的拉类控制。卡顿常来自肌群发力次序和肩胛控制，不是单一肌肉不够大。",
+      q: `场景题：客户卧推卡在下半程、划船时总耸肩。应该怎么判断肌群和动作模式？`,
+      answer: "原因通常不是单一肌肉不够大，而是两个环节掉了。卧推下半程需要胸大肌、三角肌前束和肱三头肌继续把杠推过最难点，若肘伸和肩水平内收输出下降，就会卡住；划船总耸肩，多半是背阔肌和下斜方肌没有把肩胛稳住，上斜方肌抢了活，肩胛控制一乱，拉力就散。",
     };
   }
   if (topic.includes("第3周复盘") || topic === "生物力学") {
@@ -433,7 +476,7 @@ function generatedScenario(card, fallback) {
   }
   if (topic.includes("脊柱") || topic.includes("核心生物力学")) {
     return {
-      q: `场景题：客户硬拉到中段就开始圆背，你先看哪两个点？`,
+      q: `场景题：客户硬拉到中段就开始圆背。应该怎么判断和调整？`,
       answer: "先看髋铰链是否真的发生，再看腹压和杠铃是否贴身。髋没主导、杠铃离身，腰椎就容易被迫多吃屈曲力矩。",
     };
   }
@@ -497,9 +540,15 @@ function generatedScenario(card, fallback) {
       answer: "骨不只是支架，还负责保护、储存矿物、参与造血，并作为肌肉发力的杠杆。力量训练要渐进，因为骨和结缔组织适应慢于神经与肌肉。",
     };
   }
+  if (topic.includes("能量系统交互") || topic.includes("运动强度关系")) {
+    return {
+      q: "场景题：客户做 400 米冲刺，前 120 米很快，250 米后明显掉速、步幅变短。应该怎么判断和调整？",
+      answer: "可以分三层判断：1. 如果 0-10 秒就冲得很猛，ATP-PCr 会快速顶上，但储量很少，前段过快会让后面更早掉速；2. 如果 30 秒到 2 分钟内开始腿酸、步频掉、呼吸急，糖酵解压力已经上来，配速可能超过当前乳酸阈或糖酵解耐受；3. 如果后半程步幅变短、髋伸不足、躯干晃动，疲劳已经影响动作力学，力量没有顺利传到地面。调整上先控制前段强度，必要时延长间歇；如果后半程仍塌，再补后半程配速训练和跑姿稳定训练。",
+    };
+  }
   return {
-    q: `场景题：客户在 ${topic} 相关动作上卡住，你会先看哪里？`,
-    answer: `先把 ${topic} 对应到一个具体动作场景，再看动作质量、负荷大小和恢复状态。通常先改最容易出错的一项，再用同类动作做回退或进阶。`,
+    q: `场景题：客户做 4 组训练，前 2 组动作稳定；第 3 组开始速度明显下降，最后 2 次出现代偿，还说“目标肌没感觉，关节反而紧”。你用 ${topic} 先查哪 3 件事，下一组怎么调？`,
+    answer: `先查动作质量：关节路径、目标肌发力和代偿肌是否抢活；再查负荷剂量：重量、次数、速度和休息是否超过当前能力；最后查恢复状态：疼痛、疲劳和上一组表现是否已经提示该降阶。下一组先保质量，通常降重量或减少次数、拉长休息；若关节不适或代偿仍出现，回退到更简单动作并停止进阶。`,
   };
 }
 
@@ -513,7 +562,7 @@ function buildDeckFromReviewHtml(day) {
   }
   const groups = cards.map((card, index) => {
     const matched = recallQuestions.filter((question) => question.day === card.day || (card.day === day && question.isToday));
-    const questions = matched.filter((question) => !question.isScenario).slice(0, 2);
+    let questions = matched.filter((question) => !question.isScenario).slice(0, 2);
     const scenarioQuestion = matched.find((question) => question.isScenario) || null;
     const skipScenario = day === 21 && card.day === 21 && card.topic === "第3周复盘-生物力学";
     const scenario = skipScenario
@@ -521,6 +570,9 @@ function buildDeckFromReviewHtml(day) {
       : scenarioQuestion
         ? { q: `场景题：${scenarioQuestion.q}`, answer: scenarioQuestion.answer, day: card.day, topic: card.topic }
         : { ...generatedScenario(card), day: card.day, topic: card.topic };
+    if (day === 25 && card.day === 11 && card.topic.includes("上肢肌功能分群")) {
+      questions = [];
+    }
     return {
       label: card.label || `R${index} 复习`,
       day: card.day,
@@ -547,7 +599,7 @@ function buildDeckFromReviewHtml(day) {
     day,
     title: "艾宾浩斯复习区",
     subtitle: "今天 + 次日 + 第3天 + 第7天",
-    groups: enrichedGroups.filter((group) => group.questions.length),
+    groups: enrichedGroups.filter((group) => group.questions.length || group.scenario),
   };
 }
 
@@ -605,12 +657,12 @@ function answerPage(deck, pageIndex, groups) {
       [
         ...group.questions.map(
           (question, index) => `<section class="answer">
-          <h2>${group.label} · Day ${group.day} · Q${index + 1}：<span class="answer-key">${esc(headlineAnswer(question.answer))}</span></h2>
+          <h2>${group.label} · Day ${group.day} · Q${index + 1} 简答：<span class="answer-key">${esc(briefAnswer(question.answer))}</span></h2>
           <p>${esc(expandAnswer(question.answer, group.topic))}</p>
         </section>`,
         ),
         group.scenario ? `<section class="answer scenario-answer">
-          <h2>场景题参考答法</h2>
+          <h2>场景题简答：<span class="answer-key">${esc(briefAnswer(group.scenario.answer))}</span></h2>
           <p>${esc(expandAnswer(group.scenario.answer, group.topic))}</p>
         </section>` : "",
       ],

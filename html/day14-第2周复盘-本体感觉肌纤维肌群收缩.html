@@ -4,9 +4,175 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Day 14 · 第2周复盘-本体感觉/肌纤维/肌群/收缩</title>
+<link rel="icon" type="image/svg+xml" href="assets/fitness-study-logo-open-circle.svg">
   <style>
     *{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.75;background:#f6f8f7;color:#1a2b22;padding:18px}.wrap{max-width:980px;margin:auto}.header{text-align:center;padding:24px 10px}.header h1{margin:0 0 10px;font-size:2rem;background:linear-gradient(90deg,#0ea66b,#0ea5e9);-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:0}.sub{color:#5a6b62}.chips{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:10px}.chip{font-size:.78rem;border:1px solid #d4ebe0;border-radius:999px;padding:3px 10px;background:#fff;color:#0c6da3}.panel,.figure,.warn{background:#fff;border:1px solid #e2e8e4;border-radius:14px;padding:18px;margin:14px 0;box-shadow:0 2px 12px rgba(20,40,30,.06)}.lead{border-left:4px solid #0ea66b}.orange{border-left:4px solid #ea7a17}.figure img{width:100%;display:block;border-radius:12px;border:1px solid #e2e8e4;background:#fbfdfc;cursor:zoom-in}.caption{font-size:.85rem;color:#5a6b62;margin-top:8px;text-align:center}.panel h2,.warn h2{font-size:1.18rem;margin:0 0 10px;color:#0a7d52}.term{font-weight:700;color:#0a7d52;background:#e8f5ee;border-radius:5px;padding:1px 5px}ul.kp{list-style:none;padding:0;margin:0}ul.kp>li{border-bottom:1px dashed #e2e8e4}.kp-head{display:block;cursor:pointer;position:relative;padding:13px 8px 13px 30px}.kp-head:before{content:"▸";position:absolute;left:8px;color:#0ea66b;font-weight:800;transition:.2s}.open>.kp-head:before{transform:rotate(90deg)}.kp-head:hover{background:#f0f4f2}.kp-body{display:none;padding:0 14px 16px 30px}.open>.kp-body{display:block}.dim{display:block;margin-top:10px;font-size:.78rem;font-weight:800;color:#0c6da3}.take{border-left:4px solid #0ea66b;background:#f0fbf5;border-radius:10px;padding:10px 12px;margin:10px 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin:12px 0}.mini{border:1px solid #dbe8e1;border-radius:12px;background:#fbfdfc;padding:12px}.mini h4{margin:0 0 7px;font-size:.98rem;color:#0a7d52}.tbl{width:100%;border-collapse:collapse;font-size:.9rem;margin:10px 0}.tbl th{background:#0ea66b;color:#fff;text-align:left}.tbl th,.tbl td{padding:8px;border-bottom:1px solid #e2e8e4;vertical-align:top}.warn{border-left:4px solid #e23b3b}.warn p{margin:8px 0}.mnemonic{background:linear-gradient(135deg,#0ea66b,#0ea5e9);color:#fff;border-radius:14px;padding:20px;margin:14px 0;box-shadow:0 2px 12px rgba(20,40,30,.08)}.mnemonic h2{margin:0 0 8px;font-size:1.15rem}.mnemonic strong{color:#fff7d6}.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}.flip{min-height:145px;perspective:800px;cursor:pointer}.flip-inner{position:relative;width:100%;height:100%;min-height:145px;transition:transform .5s;transform-style:preserve-3d}.flip.flipped .flip-inner{transform:rotateY(180deg)}.face{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:15px;border-radius:13px;border:1px solid #e2e8e4;backface-visibility:hidden;background:#fff;font-weight:700}.front{color:#0a7d52;background:#f8fffb}.back{transform:rotateY(180deg);background:#eef7ff;color:#0c6da3;font-weight:600}.quiz{border-top:1px dashed #e2e8e4;padding-top:12px;margin-top:12px}.quiz h3{margin:0 0 8px;font-size:1rem;color:#1a2b22}.opt{border:1px solid #e2e8e4;border-radius:10px;padding:9px 10px;margin:7px 0;background:#fff;cursor:pointer}.opt:hover{background:#f0f4f2}.lbl{font-weight:800;color:#0c6da3;margin-right:4px}.correct{border-color:#0ea66b!important;background:#e9f8f0!important}.wrong-show{border-color:#e23b3b!important;background:#fff0f0!important}button{border:0;border-radius:999px;background:#0ea66b;color:#fff;font-weight:800;padding:8px 14px;cursor:pointer;margin-top:6px}.reveal{display:none;border-left:4px solid #0ea5e9;background:#f0f8fc;border-radius:10px;padding:10px;margin-top:8px}.reveal.show{display:block}.list{padding-left:20px;margin:8px 0}.list li{margin:7px 0}footer{text-align:center;color:#5a6b62;font-size:.85rem;margin:22px 0}.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.82);display:none;align-items:center;justify-content:center;z-index:9;padding:18px}.lightbox.show{display:flex}.lightbox img{max-width:96vw;max-height:92vh;border-radius:10px;background:#fff}@media(max-width:640px){body{padding:10px}.header h1{font-size:1.5rem}.panel,.figure,.warn{padding:14px}.kp-body{padding-left:14px}.card-grid{grid-template-columns:1fr}}
-  </style>
+  
+/* Day1 title alignment override */
+.header,
+header {
+  text-align: left !important;
+  padding: 22px 4px 14px !important;
+}
+.header h1,
+header h1,
+h1 {
+  background: none !important;
+  -webkit-background-clip: initial !important;
+  background-clip: initial !important;
+  color: #111113 !important;
+  font-size: clamp(1.45rem, 3vw, 2.25rem) !important;
+  line-height: 1.16 !important;
+  margin-bottom: 8px !important;
+  letter-spacing: 0 !important;
+}
+.header h1::before,
+header h1::before {
+  content: "";
+  display: block;
+  width: 34px;
+  height: 4px;
+  border-radius: 999px;
+  background: #ff5a1f;
+  margin-bottom: 10px;
+}
+.chips,
+.meta {
+  justify-content: flex-start !important;
+}
+.sub,
+.meta {
+  color: #71717a !important;
+}
+
+
+/* Day1 title chips override */
+.chip,
+.slot,
+.tag {
+  border: 1px solid #e4e4e7 !important;
+  border-radius: 999px !important;
+  background: #ffffff !important;
+  color: #71717a !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+}
+.chip:nth-child(1),
+.tag:nth-child(1) {
+  background: rgba(74, 222, 128, 0.16) !important;
+  border-color: transparent !important;
+  color: #15803d !important;
+}
+.chip:nth-child(2),
+.tag:nth-child(2) {
+  background: rgba(96, 165, 250, 0.16) !important;
+  border-color: transparent !important;
+  color: #2563eb !important;
+}
+
+
+/* Day1 mnemonic override */
+.mnemonic {
+  background: #ffffff !important;
+  border: 1px solid #e4e4e7 !important;
+  border-left: 4px solid #ff5a1f !important;
+  color: #111113 !important;
+  box-shadow: none !important;
+}
+.mnemonic strong {
+  color: #ff5a1f !important;
+}
+
+
+/* Day1 term highlight override */
+.term {
+  background: rgba(74, 222, 128, 0.16) !important;
+  border-radius: 6px !important;
+  padding: 1px 5px !important;
+}
+
+
+/* Day1 typography override */
+body {
+  font-size: 14px !important;
+  line-height: 1.65 !important;
+}
+p,
+li,
+td,
+th,
+.kp-head,
+.kp-body,
+.takeaway,
+.practice li,
+.question,
+.q,
+.answer,
+.reveal,
+.face,
+.mnemonic {
+  font-size: 14px !important;
+}
+.header h1,
+header h1,
+h1 {
+  font-size: clamp(1.45rem, 3vw, 2.25rem) !important;
+  line-height: 1.16 !important;
+}
+.panel h2,
+.warn h2,
+.card h2,
+h2 {
+  font-size: 1.05rem !important;
+}
+h3,
+.panel h3,
+.quiz h3,
+.question h3 {
+  font-size: 1rem !important;
+}
+.chip,
+.slot,
+.tag,
+.meta,
+.sub,
+.caption,
+.footer,
+footer,
+.dim {
+  font-size: 12px !important;
+}
+
+
+/* Day1 exact text sizing override */
+.sub { font-size: 14px !important; line-height: 1.65 !important; }
+.caption { font-size: 13.6px !important; line-height: 1.65 !important; }
+.footer,
+footer { font-size: 13.12px !important; line-height: 1.65 !important; }
+.dim { font-size: 12.48px !important; line-height: 1.65 !important; }
+.mnemonic strong { font-size: 14px !important; line-height: 1.65 !important; }
+
+
+/* Day1 flip card color override */
+.flip .face,
+.flip .front,
+.flip-inner .face:first-child,
+.flip-in .face:first-child {
+  background: #fafafa !important;
+  color: #111113 !important;
+  border-color: #e4e4e7 !important;
+}
+.flip .back,
+.flip-inner .back,
+.flip-in .back,
+.flip-inner .face.back,
+.flip-in .face.back {
+  background: #0ea66b !important;
+  color: #ffffff !important;
+  border-color: #0ea66b !important;
+}
+
+</style>
 </head>
 <body>
   <main class="wrap">

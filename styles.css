@@ -96,12 +96,23 @@ a {
 }
 
 .logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   font-size: 16px;
   font-weight: 800;
   letter-spacing: -0.02em;
 }
 
-.logo span {
+.logo-mark {
+  display: block;
+  width: 32px;
+  height: 32px;
+  flex: 0 0 32px;
+  object-fit: contain;
+}
+
+.logo-wordmark > span {
   color: var(--accent);
 }
 
@@ -117,7 +128,14 @@ a {
   padding: 14px 12px 24px;
 }
 
+#theorySidebarControls,
+.sidebar-context {
+  display: grid;
+  gap: 14px;
+}
+
 .tabs {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 6px;
@@ -126,18 +144,75 @@ a {
   padding: 4px;
 }
 
+.tabs::before {
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: 4px;
+  width: calc((100% - 20px) / 3);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--accent);
+  background: var(--accent-muted);
+  box-shadow: 0 2px 7px rgba(255, 90, 31, 0.16);
+  content: "";
+  pointer-events: none;
+  transform-origin: center;
+  transition: left 520ms cubic-bezier(.22, 1.45, .45, 1), opacity 160ms ease;
+}
+
+.tabs[data-active="exercise"]::before { left: calc((100% - 20px) / 3 + 10px); }
+.tabs[data-active="nutrition"]::before { left: calc((100% - 20px) * 2 / 3 + 16px); }
+.tabs[data-active="review"]::before { opacity: 0; }
+.tabs.is-jelly::before { animation: tab-indicator-jelly 560ms ease-out both; }
+@keyframes tab-indicator-jelly {
+  0% { transform: scaleX(1) scaleY(1); }
+  28% { transform: scaleX(1.15) scaleY(.86); }
+  58% { transform: scaleX(.94) scaleY(1.07); }
+  78% { transform: scaleX(1.035) scaleY(.98); }
+  100% { transform: scaleX(1) scaleY(1); }
+}
+
 .tab {
+  position: relative;
+  z-index: 1;
   height: 32px;
   border-radius: var(--radius-sm);
   color: var(--muted);
   font-size: 13px;
   font-weight: 700;
+  transition: color 180ms ease;
 }
 
 .tab.active {
-  background: var(--bg-surface);
-  color: var(--text);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  color: var(--accent);
+}
+
+.tab-panel-enter-forward { animation: tab-panel-enter-forward 240ms cubic-bezier(.2, .8, .2, 1) both; }
+.tab-panel-enter-backward { animation: tab-panel-enter-backward 240ms cubic-bezier(.2, .8, .2, 1) both; }
+.tab-panel-leave-forward { animation: tab-panel-leave-forward 170ms ease-in both; }
+.tab-panel-leave-backward { animation: tab-panel-leave-backward 170ms ease-in both; }
+@keyframes tab-panel-enter-forward { from { opacity: 0; transform: translateX(36px); } to { opacity: 1; transform: translateX(0); } }
+@keyframes tab-panel-enter-backward { from { opacity: 0; transform: translateX(-36px); } to { opacity: 1; transform: translateX(0); } }
+@keyframes tab-panel-leave-forward { from { opacity: 1; transform: translateX(0); } to { opacity: 0; transform: translateX(-28px); } }
+@keyframes tab-panel-leave-backward { from { opacity: 1; transform: translateX(0); } to { opacity: 0; transform: translateX(28px); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .selection-pop { animation: none !important; transition: none; }
+  .tab,
+  .tabs::before,
+  .chip.active,
+  .library-chip.active,
+  .sex-switch button.active,
+  .exercise-tab.active,
+  .view-switch button.active,
+  .phase-button.active,
+  .exercise-card.active,
+  .exercise-card.is-jelly,
+  .pending-signal::after,
+  .tab-panel-enter-forward,
+  .tab-panel-enter-backward,
+  .tab-panel-leave-forward,
+  .tab-panel-leave-backward { animation: none; transition: none; }
 }
 
 .search-box {
@@ -224,6 +299,52 @@ a {
   gap: 6px;
 }
 
+.sidebar-pending {
+  display: grid;
+  grid-template-columns: 18px minmax(0, 1fr);
+  gap: 10px;
+  align-items: start;
+  border-top: 1px solid var(--border);
+  padding: 14px 4px 0;
+}
+
+.pending-signal {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  margin: 5px 0 0 3px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.pending-signal::after {
+  position: absolute;
+  inset: -4px;
+  border: 1px solid rgba(255, 90, 31, 0.34);
+  border-radius: inherit;
+  content: "";
+  animation: pending-signal 1.8s ease-out infinite;
+}
+
+@keyframes pending-signal {
+  0% { transform: scale(.65); opacity: .9; }
+  75%,100% { transform: scale(1.8); opacity: 0; }
+}
+
+.sidebar-pending strong {
+  display: block;
+  color: var(--text);
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.sidebar-pending p {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.55;
+}
+
 .chip {
   display: inline-flex;
   align-items: center;
@@ -246,6 +367,44 @@ a {
   background: var(--accent-muted);
   color: var(--accent);
 }
+
+.chip,
+.library-chip,
+.sex-switch button,
+.exercise-tab,
+.view-switch button,
+.phase-button,
+.exercise-card,
+select {
+  transition: border-color 180ms ease, background-color 180ms ease, color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.chip.active,
+.library-chip.active,
+.sex-switch button.active,
+.exercise-tab.active,
+.view-switch button.active,
+.phase-button.active,
+.exercise-card.active {
+  animation: selection-pop 320ms cubic-bezier(.2, 1.45, .45, 1) both;
+}
+
+@keyframes selection-pop {
+  0% { transform: scale(1); }
+  48% { transform: scale(1.055); }
+  74% { transform: scale(.978); }
+  100% { transform: scale(1); }
+}
+
+/* Selection animation added by the click handler only. */
+.chip.active,
+.library-chip.active,
+.sex-switch button.active,
+.exercise-tab.active,
+.view-switch button.active,
+.phase-button.active,
+.exercise-card.active { animation: none; }
+.selection-pop { animation: selection-pop 320ms cubic-bezier(.2, 1.45, .45, 1) both !important; }
 
 .select-wrap {
   position: relative;
@@ -293,7 +452,8 @@ select:focus {
 
 .main-content {
   height: 100vh;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
   padding: 22px 26px 40px;
 }
 
@@ -330,8 +490,37 @@ select:focus {
 .quick-links {
   align-self: flex-start;
   display: flex;
+  align-items: center;
   flex: 0 0 auto;
   gap: 8px;
+}
+
+.header-insight {
+  display: grid;
+  min-width: 132px;
+  gap: 1px;
+  border-left: 2px solid var(--accent);
+  padding: 3px 0 3px 10px;
+}
+
+.header-insight span {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.header-insight strong {
+  color: var(--text);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 16px;
+  line-height: 1.15;
+}
+
+.header-insight small {
+  color: var(--muted);
+  font-family: inherit;
+  font-size: 10px;
+  font-weight: 700;
 }
 
 .quick-links a,
@@ -382,6 +571,26 @@ select:focus {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 12px;
 }
+
+.nutrition-panel { display: grid; gap: 28px; }
+.nutrition-intro { display: flex; align-items: end; justify-content: space-between; gap: 16px; }
+.nutrition-intro h2 { margin: 0; font-size: 24px; line-height: 1.15; }
+.nutrition-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.nutrition-conversion-card { display: grid; min-height: 126px; align-content: space-between; border: 1px solid var(--border); border-radius: 8px; background: var(--bg-surface); padding: 16px; }
+.nutrition-conversion-card span { color: var(--muted); font-size: 12px; font-weight: 800; }
+.nutrition-conversion-card strong { color: var(--accent); font-size: 22px; }
+.nutrition-section { scroll-margin-top: 18px; }
+.section-heading { margin-bottom: 12px; }
+.section-heading h2 { margin: 0; font-size: 20px; line-height: 1.2; }
+.nutrition-detail-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.nutrition-detail-grid .nutrition-conversion-card { min-height: 152px; gap: 10px; }
+.nutrition-detail-grid .nutrition-conversion-card strong { font-size: 17px; }
+.nutrition-detail-grid p { margin: 0; color: var(--muted); font-size: 12px; line-height: 1.55; }
+.nutrition-goal-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.nutrition-goal-grid article { display: grid; gap: 6px; min-height: 94px; align-content: center; border-top: 2px solid var(--accent); background: var(--bg-surface); padding: 14px 16px; }
+.nutrition-goal-grid span { color: var(--muted); font-size: 12px; font-weight: 800; }
+.nutrition-goal-grid strong { font-size: 15px; }
+.site-footer { margin-top: 28px; padding: 16px 0 4px; border-top: 1px solid var(--border); color: var(--faint); font-size: 12px; text-align: center; }
 
 .lesson-card,
 .review-card {
@@ -618,6 +827,13 @@ select:focus {
 }
 
 .exercise-tab.active::after { transform: scaleX(1); }
+.exercise-card.is-jelly { animation: action-card-jelly 320ms ease-out both; }
+@keyframes action-card-jelly {
+  0% { transform: scale(1); }
+  42% { transform: scaleX(1.035) scaleY(.975); }
+  72% { transform: scaleX(.992) scaleY(1.012); }
+  100% { transform: scale(1); }
+}
 
 .muscle-atlas {
   display: grid;
@@ -1020,6 +1236,15 @@ select:focus {
     display: grid;
   }
 
+  .nutrition-intro,
+  .nutrition-grid,
+  .nutrition-detail-grid,
+  .nutrition-goal-grid { display: grid; }
+
+  .nutrition-grid,
+  .nutrition-detail-grid,
+  .nutrition-goal-grid { grid-template-columns: 1fr; }
+
   .card-grid {
     grid-template-columns: 1fr;
   }
@@ -1075,6 +1300,11 @@ select:focus {
 }
 
 @media (max-width: 560px) {
+  .quick-links { width: 100%; justify-content: space-between; }
+  .header-insight { min-width: 0; }
+
+  .nutrition-intro h2 { font-size: 21px; }
+
   .exercise-tab {
     padding: 0 10px;
   }

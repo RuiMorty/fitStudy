@@ -138,7 +138,7 @@ function updateReviewsJson(day, title, reviewRel, cards) {
 function updateLatestReviewLink(reviewRel) {
   const html = fs.readFileSync(INDEX_PATH, "utf8");
   const current = html.match(/<a([^>]*)href="(html\/review-day\d{2}-[^"]+\.html)"([^>]*)>最新复习<\/a>/);
-  if (!current) throw new Error("Could not find latest review link in index.html");
+  if (!current) return;
   if (current[2] === reviewRel) return;
   const next = html.replace(current[0], `<a${current[1]}href="${reviewRel}"${current[3]}>最新复习</a>`);
   fs.writeFileSync(INDEX_PATH, next);

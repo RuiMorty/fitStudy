@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 26 中午复习 · 神经肌肉接头与兴奋-收缩耦联完整钙链条</title>
+<link rel="icon" type="image/svg+xml" href="assets/fitness-study-logo-open-circle.svg">
+  <style>
+    :root{
+      --paper:#fff;
+      --ink:#1a2b22;
+      --muted:#5a6b62;
+      --line:#e2e8e4;
+      --green:#0ea66b;
+      --blue:#0ea5e9;
+      --orange:#ea7a17;
+      --rose:#e23b3b;
+    }
+    *{box-sizing:border-box;letter-spacing:0}
+    body{margin:0;padding:18px;background:#f6f8f7;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.75}
+    a{color:inherit}
+    .wrap{max-width:980px;margin:auto}
+    .hero{text-align:center;padding:24px 10px 14px}
+    .hero h1{margin:0 0 10px;font-size:2rem;background:linear-gradient(90deg,var(--green),var(--blue));-webkit-background-clip:text;background-clip:text;color:transparent}
+    .sub{color:var(--muted);max-width:840px;margin:0 auto}
+    .chips{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:12px}
+    .chip{font-size:.78rem;border:1px solid #d4ebe0;border-radius:999px;padding:3px 10px;background:#fff;color:#0c6da3;font-weight:700}
+    .section,.card,footer{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px;margin:14px 0;box-shadow:0 2px 12px rgba(20,40,30,.06)}
+    .section h2{font-size:1.18rem;margin:0 0 12px;color:#0a7d52}
+    .fresh{border-left:4px solid var(--green)}
+    .ebbinghaus{border-left:4px solid var(--blue)}
+    .mistakes{border-left:4px solid var(--rose)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:12px}
+    .card{margin:0;display:block}
+    .card h3{margin:0 0 8px;color:#0a7d52;font-size:1rem}
+    .meta{font-size:.8rem;color:var(--muted);margin-bottom:8px;font-weight:500}
+    .card ul{margin:8px 0 0;padding-left:18px}
+    .card li{margin:5px 0}
+    .thumb,.mini-img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:10px;border:1px solid var(--line);background:#f0f4f2;display:block;margin:8px 0}
+    .source{display:inline-block;margin-top:8px;color:#0c6da3;text-decoration:none;font-weight:800}
+    .source:hover{text-decoration:underline}
+    .mnemonic{border-radius:12px;padding:12px;background:#e8f5ee;color:#0a7d52;font-weight:800;margin:10px 0}
+    .q{background:#f8fffb;border:1px solid #dbe8e1;border-radius:12px;padding:13px;margin:10px 0}
+    .q p{margin:0 0 8px}
+    button{border:0;border-radius:8px;background:var(--green);color:#fff;font-weight:700;padding:7px 12px;cursor:pointer}
+    .answer{display:none;border-left:4px solid var(--blue);background:#f0f8fc;border-radius:10px;padding:10px;margin-top:9px}
+    .answer.show{display:block}
+    .compare{width:100%;border-collapse:collapse;font-size:.92rem}
+    .compare th{background:var(--green);color:#fff;text-align:left}
+    .compare th,.compare td{padding:9px;border-bottom:1px solid var(--line);vertical-align:top}
+    .review-box{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px}
+    .note{border-left:4px solid var(--orange);background:#fffaf3;border-radius:10px;padding:10px}
+    footer{text-align:center;color:var(--muted);font-size:.84rem;margin:22px 0}
+    @media(max-width:640px){body{padding:12px}.hero h1{font-size:1.55rem}.section,.card{padding:14px}.thumb,.mini-img{height:auto}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="hero">
+      <h1>Day 26 中午复习 · 神经肌肉接头与兴奋-收缩耦联完整钙链条</h1>
+      <div class="sub">抓住一句话: 神经先用乙酰胆碱点火，动作电位进 T 管，肌浆网放钙，横桥才真正抓住肌动蛋白。</div>
+      <div class="chips">
+        <span class="chip">今日新知识 Day26</span>
+        <span class="chip">1天 Day25</span>
+        <span class="chip">3天 Day23</span>
+        <span class="chip">7天 Day19</span>
+        <span class="chip">14天 Day12</span>
+      </div>
+    </header>
+
+    <section class="section fresh">
+      <h2>今日新知识速复盘</h2>
+      <article class="card">
+        <div class="meta">今天早上 · Day 26 · 今日新知识</div>
+        <h3>Day 26 · 神经肌肉接头与兴奋-收缩耦联完整钙链条</h3>
+        <img class="thumb" src="thumbs/day26-neuromuscular-coupling-thumbnail.png" alt="Day26 神经肌肉接头与兴奋-收缩耦联无字缩略图">
+        <p>神经肌肉接头的关键是 ACh: 运动神经末梢释放乙酰胆碱，肌膜受体接收后去极化并产生动作电位。</p>
+        <p>E-C coupling 的顺序要完整: 动作电位沿肌膜走，深入 T-tubule，触发 SR 放钙；Ca2+ 结合肌钙蛋白，原肌球蛋白移位，横桥才能结合肌动蛋白。运动单位则是一个 alpha 运动神经元和它支配的全部肌纤维。</p>
+        <a class="source" href="day26-神经肌肉接头与兴奋-收缩耦联完整钙链条.html">打开 Day26 原学习页 →</a>
+      </article>
+      <div class="mnemonic"><strong>口诀：</strong>ACh 点火，肌膜传电，T 管入深，SR 放钙，钙开位点，横桥抓上。</div>
+    </section>
+
+    <section class="section ebbinghaus">
+      <h2>艾宾浩斯复习区（1/3/7/14天）</h2>
+      <div class="grid">
+        <article class="card">
+          <div class="meta">1天前 · Day 25 · 间隔复习</div>
+          <img class="mini-img" src="thumbs/day25-energy-system-interaction-intensity-thumbnail.png" alt="Day25 能量系统交互与运动强度关系无字缩略图">
+          <h3>Day 25 · 能量系统交互与运动强度关系</h3>
+          <ul>
+            <li>三大供能系统同时工作，区别在贡献比例。</li>
+            <li>强度越高，ATP-PCr 和糖酵解占比越大；时间越长，氧化系统占比越大。</li>
+            <li>HIIT 同时刺激冲刺供能和恢复供能，EPOC 是运动后继续补账。</li>
+          </ul>
+          <a class="source" href="day25-能量系统交互与运动强度关系.html">复看原页</a>
+        </article>
+        <article class="card">
+          <div class="meta">3天前 · Day 23 · 间隔复习</div>
+          <img class="mini-img" src="thumbs/day23-glycolytic-energy-system-thumbnail.png" alt="Day23 糖酵解系统无字缩略图">
+          <h3>Day 23 · 能量系统-糖酵解系统</h3>
+          <ul>
+            <li>无氧糖酵解适合 30 秒到 2 分钟中高强度输出。</li>
+            <li>乳酸阈决定中高强度能维持多久；乳酸本身不是废物。</li>
+            <li>400-800 米跑、多次中等重量训练常明显依赖糖酵解。</li>
+          </ul>
+          <a class="source" href="day23-能量系统-糖酵解系统.html">复看原页</a>
+        </article>
+        <article class="card">
+          <div class="meta">7天前 · Day 19 · 间隔复习</div>
+          <img class="mini-img" src="thumbs/day19-strength-endurance-determinants-thumbnail.png" alt="Day19 肌力与肌耐力决定因素无字缩略图">
+          <h3>Day 19 · 肌力与肌耐力的力学决定因素</h3>
+          <ul>
+            <li>力量受神经募集、发放频率、同步化和肌肉横截面积共同影响。</li>
+            <li>长度-张力关系解释最佳肌肉长度为何产力更大。</li>
+            <li>力-速度曲线: 向心越快力量越小，离心产力更大。</li>
+          </ul>
+          <a class="source" href="day19-肌力与肌耐力的力学决定因素.html">复看原页</a>
+        </article>
+        <article class="card">
+          <div class="meta">14天前 · Day 12 · 间隔复习</div>
+          <img class="mini-img" src="thumbs/day12-core-mcgill-functions-thumbnail.png" alt="Day12 核心肌群与McGill核心功能无字缩略图">
+          <h3>Day 12 · 主要肌群-核心肌群与McGill核心功能分类</h3>
+          <ul>
+            <li>核心包含腹直肌、腹斜肌、腹横肌、竖脊肌、多裂肌、盆底肌和膈肌。</li>
+            <li>McGill 四类核心功能: 抗伸展、抗旋转、抗侧屈、抗屈曲。</li>
+            <li>核心训练目标是维持中立和传力，不是反复屈伸找酸感。</li>
+          </ul>
+          <a class="source" href="day12-主要肌群-核心肌群与McGill核心功能分类.html">复看原页</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>主动回忆题</h2>
+      <div class="q"><p><b>今日新知识 Day26：</b>从神经信号到横桥结合，完整 E-C coupling 顺序是什么？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">运动神经末梢释放 ACh → 肌膜去极化产生动作电位 → 动作电位沿肌膜传播并进入 T-tubule → SR 释放 Ca2+ → Ca2+ 结合肌钙蛋白 → 原肌球蛋白移位 → 肌球蛋白横桥结合肌动蛋白。</div></div>
+      <div class="q"><p><b>今日新知识 Day26：</b>钙离子在收缩里到底做什么？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">钙不是能量，也不是横桥本身。它结合肌钙蛋白，让原肌球蛋白挪开，暴露肌动蛋白结合位点，横桥才抓得上。</div></div>
+      <div class="q"><p><b>Day25：</b>为什么不能说“前 10 秒只用 ATP-PCr”？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">三大系统一直同时供能，只是前 10 秒 ATP-PCr 占比最大。说“只用”会把比例变化误解成开关切换。</div></div>
+      <div class="q"><p><b>Day23：</b>400 米跑后段腿酸、掉速，主要复习哪个供能概念？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">糖酵解系统和乳酸阈。30 秒到 2 分钟中高强度输出时糖酵解压力大，代谢产物堆积和阈值限制会影响后段维持能力。</div></div>
+      <div class="q"><p><b>Day19：</b>为什么新手力量增长可能早于肌肉明显变大？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">早期力量提升常来自神经因素: 运动单位募集更多、发放频率提高、同步化更好。肌肉横截面积增长通常慢一些。</div></div>
+      <div class="q"><p><b>Day19：</b>为什么离心阶段常能承受更大力量？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">力-速度曲线在离心段不同于向心段。向心速度越快力量越小；离心时肌肉被拉长仍产张力，通常可产生或承受更大力。</div></div>
+      <div class="q"><p><b>Day12：</b>平板支撑和 Pallof press 分别主要抗什么？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">平板支撑主要抗伸展，避免腰椎塌陷；Pallof press 主要抗旋转，避免躯干被拉向阻力方向。</div></div>
+      <div class="q"><p><b>场景题 Day26：</b>客户大重量卧推第一下慢、第二下直接失败。只说“胸没力”够不够？怎么用 Day26 和 Day19 联合判断？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">不够。先看神经驱动: 是否募集不足、发放频率不够、动作电位和运动单位同步差；再看 E-C coupling 和疲劳: 钙释放/回收效率、局部离子环境可能让横桥效率下降；最后回到力学: 杠铃路径、胸大肌/三角肌前束/肱三头肌协同和稳定是否掉线。训练调整可从技术、休息、负荷强度、爆发意图和辅助肌群分层处理。</div></div>
+    </section>
+
+    <section class="section mistakes">
+      <h2>错因辨析</h2>
+      <table class="compare">
+        <tr><th>易错点</th><th>错因</th><th>修正句</th></tr>
+        <tr><td>把 ACh 当收缩力来源</td><td>混淆神经递质和肌肉产力机制。</td><td>ACh 负责点火，横桥循环才直接产力。</td></tr>
+        <tr><td>漏掉 T-tubule</td><td>只记肌膜表面电位，不记信号深入肌纤维。</td><td>动作电位要进入 T 管，才能触发深部 SR 放钙。</td></tr>
+        <tr><td>把钙当 ATP</td><td>混淆开锁信号和能量货币。</td><td>钙打开结合位点，ATP 提供横桥循环能量。</td></tr>
+        <tr><td>把运动单位等于肌纤维</td><td>漏掉神经元和支配关系。</td><td>运动单位是一个 alpha 运动神经元加其支配全部肌纤维。</td></tr>
+        <tr><td>把力量只归因肌肉大小</td><td>忽略神经募集和发放频率。</td><td>力量由神经因素、横截面积、长度-张力和力-速度共同决定。</td></tr>
+      </table>
+    </section>
+
+    <section class="section">
+      <h2>今日复盘</h2>
+      <div class="review-box">
+        <div class="note"><strong>30 秒默写：</strong>ACh → 肌膜动作电位 → T 管 → SR 放钙 → 钙结合肌钙蛋白 → 原肌球蛋白移位 → 横桥结合。</div>
+        <div class="note"><strong>一个区别：</strong>钙负责打开位点，ATP 负责横桥循环；ACh 负责把神经信号送进肌肉入口。</div>
+        <div class="note"><strong>串联复习：</strong>能量系统决定 ATP 续航，运动单位决定谁被叫醒，E-C coupling 决定信号能否变成收缩。</div>
+      </div>
+    </section>
+
+    <footer>Fitness Study · Day 26/112 · 中午12:00复习推送 · 仅复习，不推进进度</footer>
+  </main>
+  <script>
+    function showAnswer(btn){btn.nextElementSibling.classList.toggle("show")}
+  </script>
+</body>
+</html>

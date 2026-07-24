@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 25 · 能量系统交互与运动强度关系</title>
+<link rel="icon" type="image/svg+xml" href="assets/fitness-study-logo-open-circle.svg">
+  <style>
+    *{box-sizing:border-box;letter-spacing:0}
+    body{margin:0;padding:18px;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.7;background:#f6f8f7;color:#1a2b22}
+    .wrap{max-width:980px;margin:0 auto}
+    .header{padding:22px 6px 14px}
+    .header h1{margin:0 0 10px;font-size:clamp(1.55rem,3vw,2.3rem);line-height:1.14;background:linear-gradient(90deg,#0ea66b,#0ea5e9);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .sub{color:#5a6b62}
+    .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+    .chip{font-size:.78rem;border:1px solid #d4ebe0;border-radius:999px;padding:3px 10px;background:#fff;color:#0c6da3;font-weight:700}
+    .panel,.figure,.warn{background:#fff;border:1px solid #e2e8e4;border-radius:14px;padding:18px;margin:14px 0;box-shadow:0 2px 12px rgba(20,40,30,.06)}
+    .lead{border-left:4px solid #0ea66b}
+    .orange{border-left:4px solid #ea7a17}
+    .warn{border-left:4px solid #e23b3b}
+    .panel h2,.warn h2{margin:0 0 10px;font-size:1.08rem;color:#0a7d52}
+    .figure img{width:100%;display:block;border-radius:12px;border:1px solid #e2e8e4;background:#fbfdfc;cursor:zoom-in}
+    .caption{font-size:.86rem;color:#5a6b62;margin-top:8px;text-align:center}
+    .take{border-left:4px solid #0ea66b;background:#f0fbf5;border-radius:10px;padding:10px 12px;margin:10px 0}
+    .term{font-weight:800;color:#0a7d52;background:#e8f5ee;border-radius:5px;padding:1px 5px}
+    ul.kp{list-style:none;padding:0;margin:0}
+    ul.kp>li{border-bottom:1px dashed #e2e8e4}
+    .kp-head{display:block;cursor:pointer;position:relative;padding:13px 8px 13px 30px}
+    .kp-head:before{content:"▸";position:absolute;left:8px;color:#0ea66b;font-weight:800;transition:.2s}
+    .open>.kp-head:before{transform:rotate(90deg)}
+    .kp-head:hover{background:#f0f4f2}
+    .kp-body{display:none;padding:0 14px 16px 30px}
+    .open>.kp-body{display:block}
+    .dim{display:block;margin-top:10px;font-size:.78rem;font-weight:800;color:#0c6da3}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin:12px 0}
+    .explain-card,.mini{border:1px solid #dbe8e1;border-radius:12px;background:#fbfdfc;padding:12px}
+    .explain-card h4,.mini h4{margin:0 0 7px;font-size:.98rem;color:#0a7d52}
+    .tbl{width:100%;border-collapse:collapse;font-size:.9rem;margin:10px 0}
+    .tbl th{background:#0ea66b;color:#fff;text-align:left}
+    .tbl th,.tbl td{padding:8px;border-bottom:1px solid #e2e8e4;vertical-align:top}
+    .mnemonic{background:linear-gradient(135deg,#0ea66b,#0ea5e9);color:#fff;border-radius:14px;padding:20px;margin:14px 0;box-shadow:0 2px 12px rgba(20,40,30,.08)}
+    .mnemonic h2{margin:0 0 8px;font-size:1.1rem}
+    .mnemonic strong{color:#fff7d6}
+    .card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+    .flip{min-height:145px;perspective:800px;cursor:pointer}
+    .flip-inner{position:relative;width:100%;height:100%;min-height:145px;transition:transform .5s;transform-style:preserve-3d}
+    .flip.flipped .flip-inner{transform:rotateY(180deg)}
+    .face{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:15px;border-radius:13px;border:1px solid #e2e8e4;backface-visibility:hidden;background:#fff;font-weight:700}
+    .front{color:#0a7d52;background:#f8fffb}
+    .back{transform:rotateY(180deg);background:#eef7ff;color:#0c6da3;font-weight:600}
+    .quiz{border-top:1px dashed #e2e8e4;padding-top:12px;margin-top:12px}
+    .quiz h3{margin:0 0 8px;font-size:1rem;color:#1a2b22}
+    .opt{border:1px solid #e2e8e4;border-radius:10px;padding:9px 10px;margin:7px 0;background:#fff;cursor:pointer}
+    .opt:hover{background:#f0f4f2}
+    .lbl{font-weight:800;color:#0c6da3;margin-right:4px}
+    .correct{border-color:#0ea66b!important;background:#e9f8f0!important}
+    .wrong-show{border-color:#e23b3b!important;background:#fff0f0!important}
+    button{border:0;border-radius:999px;background:#0ea66b;color:#fff;font-weight:800;padding:8px 14px;cursor:pointer;margin-top:6px}
+    .reveal{display:none;border-left:4px solid #0ea5e9;background:#f0f8fc;border-radius:10px;padding:10px;margin-top:8px}
+    .reveal.show{display:block}
+    .list{padding-left:20px;margin:8px 0}
+    .list li{margin:7px 0}
+    footer{text-align:center;color:#5a6b62;font-size:.85rem;margin:22px 0}
+    .lightbox{position:fixed;inset:0;background:rgba(0,0,0,.82);display:none;align-items:center;justify-content:center;z-index:9;padding:18px}
+    .lightbox.show{display:flex}
+    .lightbox img{max-width:96vw;max-height:92vh;border-radius:10px;background:#fff}
+    @media(max-width:640px){
+      body{padding:10px}
+      .panel,.figure,.warn{padding:14px}
+      .kp-body{padding-left:14px}
+      .card-grid{grid-template-columns:1fr}
+    }
+  
+/* Day1 title alignment override */
+.header,
+header {
+  text-align: left !important;
+  padding: 22px 4px 14px !important;
+}
+.header h1,
+header h1,
+h1 {
+  background: none !important;
+  -webkit-background-clip: initial !important;
+  background-clip: initial !important;
+  color: #111113 !important;
+  font-size: clamp(1.45rem, 3vw, 2.25rem) !important;
+  line-height: 1.16 !important;
+  margin-bottom: 8px !important;
+  letter-spacing: 0 !important;
+}
+.header h1::before,
+header h1::before {
+  content: "";
+  display: block;
+  width: 34px;
+  height: 4px;
+  border-radius: 999px;
+  background: #ff5a1f;
+  margin-bottom: 10px;
+}
+.chips,
+.meta {
+  justify-content: flex-start !important;
+}
+.sub,
+.meta {
+  color: #71717a !important;
+}
+
+
+/* Day1 title chips override */
+.chip,
+.slot,
+.tag {
+  border: 1px solid #e4e4e7 !important;
+  border-radius: 999px !important;
+  background: #ffffff !important;
+  color: #71717a !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+}
+.chip:nth-child(1),
+.tag:nth-child(1) {
+  background: rgba(74, 222, 128, 0.16) !important;
+  border-color: transparent !important;
+  color: #15803d !important;
+}
+.chip:nth-child(2),
+.tag:nth-child(2) {
+  background: rgba(96, 165, 250, 0.16) !important;
+  border-color: transparent !important;
+  color: #2563eb !important;
+}
+
+
+/* Day1 mnemonic override */
+.mnemonic {
+  background: #ffffff !important;
+  border: 1px solid #e4e4e7 !important;
+  border-left: 4px solid #ff5a1f !important;
+  color: #111113 !important;
+  box-shadow: none !important;
+}
+.mnemonic strong {
+  color: #ff5a1f !important;
+}
+
+
+/* Day1 term highlight override */
+.term {
+  background: rgba(74, 222, 128, 0.16) !important;
+  border-radius: 6px !important;
+  padding: 1px 5px !important;
+}
+
+
+/* Day1 typography override */
+body {
+  font-size: 14px !important;
+  line-height: 1.65 !important;
+}
+p,
+li,
+td,
+th,
+.kp-head,
+.kp-body,
+.takeaway,
+.practice li,
+.question,
+.q,
+.answer,
+.reveal,
+.face,
+.mnemonic {
+  font-size: 14px !important;
+}
+.header h1,
+header h1,
+h1 {
+  font-size: clamp(1.45rem, 3vw, 2.25rem) !important;
+  line-height: 1.16 !important;
+}
+.panel h2,
+.warn h2,
+.card h2,
+h2 {
+  font-size: 1.05rem !important;
+}
+h3,
+.panel h3,
+.quiz h3,
+.question h3 {
+  font-size: 1rem !important;
+}
+.chip,
+.slot,
+.tag,
+.meta,
+.sub,
+.caption,
+.footer,
+footer,
+.dim {
+  font-size: 12px !important;
+}
+
+
+/* Day1 exact text sizing override */
+.sub { font-size: 14px !important; line-height: 1.65 !important; }
+.caption { font-size: 13.6px !important; line-height: 1.65 !important; }
+.footer,
+footer { font-size: 13.12px !important; line-height: 1.65 !important; }
+.dim { font-size: 12.48px !important; line-height: 1.65 !important; }
+.mnemonic strong { font-size: 14px !important; line-height: 1.65 !important; }
+
+
+/* Day1 flip card color override */
+.flip .face,
+.flip .front,
+.flip-inner .face:first-child,
+.flip-in .face:first-child {
+  background: #fafafa !important;
+  color: #111113 !important;
+  border-color: #e4e4e7 !important;
+}
+.flip .back,
+.flip-inner .back,
+.flip-in .back,
+.flip-inner .face.back,
+.flip-in .face.back {
+  background: #0ea66b !important;
+  color: #ffffff !important;
+  border-color: #0ea66b !important;
+}
+
+</style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="header">
+      <h1>Day 25 · 能量系统交互与运动强度关系</h1>
+      <div class="sub">今天主题: 看懂同一套身体引擎，怎么随强度和时长换主角。</div>
+      <div class="chips">
+        <span class="chip">第4周 · 阶段1基础科学</span>
+        <span class="chip">NSCA + NASM 双证</span>
+        <span class="chip">早间新知识</span>
+      </div>
+    </header>
+
+    <section class="panel lead">
+      <h2>一句话总结</h2>
+      <p><strong>三大能量系统不是三台互斥机器，而是同一组发动机的不同档位</strong>: 强度越高，ATP-PCr 和糖酵解占比越大；时间越长，氧化系统占比越大。HIIT 之所以狠，是因为它把这三套系统一起叫上场；EPOC 和氧债，则是运动后还在“补账”的那部分耗氧。</p>
+    </section>
+
+    <figure class="figure">
+      <img id="mainFig" src="assets/阶段1基础科学/day25-能量系统交互与运动强度关系.png" alt="能量系统交互与运动强度关系中文标注学习图">
+      <div class="caption">看图重点: 横轴是时间，纵轴是供能比例。短时爆发看 ATP-PCr，中高强度间歇看糖酵解，长时活动看氧化系统；HIIT、EPOC、氧债也都在图里。</div>
+    </figure>
+
+    <section class="panel">
+      <h2>核心要点</h2>
+      <ul class="kp">
+        <li>
+          <span class="kp-head"><span class="term">三大系统同时供能</span>: 只是比例随强度和时长变化，不是开关式切换。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 任何动作都在用三大系统，只是某一时刻某一套更像主角。</div>
+            <div class="grid">
+              <div class="explain-card">
+                <h4>字面意思</h4>
+                <p>ATP-PCr、糖酵解、氧化系统都在产 ATP，只是贡献大小不同。</p>
+              </div>
+              <div class="explain-card">
+                <h4>大白话</h4>
+                <p>像三个人抬一块板子，板子一直在动，但谁出力最多，会随场景变化。</p>
+              </div>
+              <div class="explain-card">
+                <h4>训练含义</h4>
+                <p>别问“哪个系统启动了”，先问“现在谁占大头、训练目标要谁多干活”。</p>
+              </div>
+            </div>
+            <span class="dim">底层机制</span>
+            <p>肌肉只能直接用 ATP。三大系统都在给 ATP 续命，只是 ATP-PCr 最快、糖酵解居中、氧化系统最耐久。</p>
+            <span class="dim">真实例子</span>
+            <p>一次深蹲起杠，前几秒 ATP-PCr 最突出；一组 12 次深蹲，糖酵解明显增加；连续 40 分钟慢跑，氧化系统变成主角。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为每个动作只对应一个系统。✅其实任何动作都混用，只是比例变。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">强度越高</span>: ATP-PCr 和糖酵解比例越大，冲得越猛越偏短时快系统。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 高强度不是“只用一个系统”，而是把快系统拉到前台。</div>
+            <table class="tbl">
+              <tr><th>场景</th><th>主导倾向</th><th>原因</th></tr>
+              <tr><td>1RM、起跑、跳起</td><td>ATP-PCr</td><td>时间太短，必须立刻出力。</td></tr>
+              <tr><td>400 米后段</td><td>糖酵解</td><td>PCr 不够，速度维持转向拆糖。</td></tr>
+              <tr><td>HIIT 冲刺段</td><td>ATP-PCr + 糖酵解</td><td>强度高、恢复短，快系统一起顶上。</td></tr>
+            </table>
+            <span class="dim">训练含义</span>
+            <p>提高强度会把训练推向更高功率、更大代谢压力和更短可持续时间。想练爆发，就要接受快系统主导；想练耐力，就不能总把强度顶到天花板。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为强度高就等于氧化系统没用。✅其实氧化系统仍在参与，只是比例下降。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">时间越长</span>: 氧化系统比例越大，越到后面越靠“慢而久”的供能。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 时间拉长后，身体会把更多 ATP 生产任务交给氧化系统。</div>
+            <div class="grid">
+              <div class="explain-card">
+                <h4>0-10 秒</h4>
+                <p>ATP-PCr 最快，适合单次爆发。</p>
+              </div>
+              <div class="explain-card">
+                <h4>30 秒-2 分钟</h4>
+                <p>糖酵解压力明显，常见于 HIIT 和中高强度间歇。</p>
+              </div>
+              <div class="explain-card">
+                <h4>2 分钟以上</h4>
+                <p>氧化系统占比持续上升，耐力和恢复更依赖它。</p>
+              </div>
+            </div>
+            <span class="dim">真实例子</span>
+            <p>60 分钟骑行、节奏跑、长距离慢跑，都会把氧化系统推到主位；它不是慢到没用，而是久到能托底。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为氧化系统只在“轻松有氧”里工作。✅其实只要时间够长，它就会越来越重要。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">HIIT</span>: 高强度间歇训练能同时刺激快系统和氧化系统。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: HIIT 的价值在于“冲一段、歇一段、再冲一段”，三套系统都要被逼着配合。</div>
+            <div class="grid">
+              <div class="explain-card">
+                <h4>冲刺段</h4>
+                <p>ATP-PCr 和糖酵解迅速抬头，功率高。</p>
+              </div>
+              <div class="explain-card">
+                <h4>恢复段</h4>
+                <p>氧化系统加速回补 PCr、搬运代谢产物。</p>
+              </div>
+              <div class="explain-card">
+                <h4>重复段</h4>
+                <p>反复切换，训练输出能力和恢复能力。</p>
+              </div>
+            </div>
+            <span class="dim">训练含义</span>
+            <p>HIIT 不是单纯“练喘”。它同时挑战短时爆发、糖酵解耐受和有氧恢复，所以对体能、减脂和心肺都更像复合刺激。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为 HIIT 只练无氧。✅其实每次恢复都在调动氧化系统，整套训练是多系统协作。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">EPOC 与氧债</span>: 运动后仍在耗氧，是为了补回运动中没来得及完成的账。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 运动后呼吸还高，不代表“白喘了”，而是身体还在处理恢复任务。</div>
+            <table class="tbl">
+              <tr><th>概念</th><th>核心意思</th><th>别混淆成</th></tr>
+              <tr><td>EPOC</td><td>运动后过量耗氧，身体恢复时仍比静息多耗氧。</td><td>不是单一指标，更不是“脂肪燃烧神技”。</td></tr>
+              <tr><td>氧债</td><td>运动中欠下的氧需要在运动后偿还。</td><td>不是神秘债务，是对恢复需求的形象说法。</td></tr>
+            </table>
+            <span class="dim">真实例子</span>
+            <p>一次冲刺间歇后，心率、呼吸、体温和代谢都不会立刻回到静息，这段恢复期就是 EPOC 的一部分。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为 EPOC 等于训练后疯狂燃脂。✅其实它只是恢复耗氧增加，真正减脂还要看总消耗和长期饮食。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">训练应用</span>: 先定目标，再定强度、间歇和主供能系统。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 训练设计不是“越喘越好”，而是让系统比例服务目标。</div>
+            <table class="tbl">
+              <tr><th>目标</th><th>强度/时长</th><th>怎么用</th></tr>
+              <tr><td>爆发</td><td>高强度、极短时</td><td>保速度、保质量、长休息。</td></tr>
+              <tr><td>增肌</td><td>中等强度、多组</td><td>兼顾张力和适度糖酵解压力。</td></tr>
+              <tr><td>耐力</td><td>低到中等强度、较长时</td><td>让氧化系统长期主导。</td></tr>
+              <tr><td>减脂</td><td>可坚持的总量</td><td>别只盯“燃脂区”，先保可持续。</td></tr>
+            </table>
+            <span class="dim">真实例子</span>
+            <p>同样是深蹲，5 组 3 次配 4 分钟休息，更像练爆发；10 组 10 次配短休，更像练代谢和肌耐力。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为同一个动作只能有一种适应。✅其实负荷、休息和持续时间一变，主导系统和训练结果也会变。</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="warn">
+      <h2>常见误区</h2>
+      <p>❌很多人以为三大系统是轮流开关。✅其实它们一直同时工作，只是比例变化。</p>
+      <p>❌很多人以为 HIIT 只是无氧。✅其实恢复段和循环中的回补，本身就在拉氧化系统参与。</p>
+      <p>❌很多人以为 EPOC 就是减脂捷径。✅其实它只是恢复耗氧增加，长期结果还看总训练量和饮食。</p>
+    </section>
+
+    <section class="mnemonic">
+      <h2>记忆口诀</h2>
+      <p><strong>强度高，快系统上；时间长，氧化接棒；冲一段，歇一段，HIIT 三系统都上场。</strong>意思是: 不是单选，而是看哪套主导、哪套补位。</p>
+    </section>
+
+    <section class="panel">
+      <h2>翻转卡复习</h2>
+      <div class="card-grid">
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">三大系统是互斥吗？</div><div class="face back">不是。一直同时供能，只是比例不同。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">强度越高，谁更突出？</div><div class="face back">ATP-PCr 和糖酵解比例更大。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">时间越长，谁更突出？</div><div class="face back">氧化系统比例更大。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">HIIT 只练什么？</div><div class="face back">不只练无氧，还同时刺激氧化恢复。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">EPOC 是什么？</div><div class="face back">运动后过量耗氧，恢复期仍高于静息的耗氧。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">氧债怎么理解？</div><div class="face back">运动中欠下的氧需求，运动后再偿还。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">想练爆发，间歇怎么配？</div><div class="face back">短时高强度，长休息，保速度和质量。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">想练耐力，先抓什么？</div><div class="face back">持续时间和可恢复强度，让氧化系统长期主导。</div></div></div>
+      </div>
+    </section>
+
+    <section class="panel orange">
+      <h2>实操关联</h2>
+      <ul class="list">
+        <li>爆发: 低次数、高质量、长休息，让 ATP-PCr 和神经输出保住峰值。</li>
+        <li>增肌: 中等强度 + 合理休息，让糖酵解压力和机械张力同时有用。</li>
+        <li>减脂: 选能坚持的训练量，不只盯心率区间，长期总消耗更重要。</li>
+        <li>耐力: 长时稳定输出优先，让氧化系统、心肺和恢复能力一起进步。</li>
+        <li>HIIT: 冲刺段和恢复段都要算进来，别只记“累”。</li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2>练习题</h2>
+      <div class="quiz">
+        <h3>1. 下列哪种说法最正确？</h3>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">A.</span>三大系统轮流单独工作</div>
+        <div class="opt" onclick="pick(this,'correct')"><span class="lbl">B.</span>三大系统同时工作，比例会变</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">C.</span>氧化系统只在慢跑时启动</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">D.</span>ATP-PCr 和糖酵解只在力量训练中出现</div>
+        <button onclick="document.getElementById('ans1').classList.add('show')">查看解析</button>
+        <div class="reveal" id="ans1">答案 B。三大系统从来不是互斥开关。A、C、D 都把系统说成单独启动，错在忽略比例变化。</div>
+      </div>
+
+      <div class="quiz">
+        <h3>2. 哪个场景最像氧化系统主导？</h3>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">A.</span>10 秒冲刺</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">B.</span>30 秒全力划船</div>
+        <div class="opt" onclick="pick(this,'correct')"><span class="lbl">C.</span>60 分钟稳定骑行</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">D.</span>1RM 深蹲</div>
+        <button onclick="document.getElementById('ans2').classList.add('show')">查看解析</button>
+        <div class="reveal" id="ans2">答案 C。时间越长，氧化系统比例越大。A 和 D 更偏 ATP-PCr；B 更偏糖酵解和快系统。</div>
+      </div>
+
+      <div class="quiz">
+        <h3>3. 多选: HIIT 为什么会“全身都累”？</h3>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">A.</span>冲刺段拉高 ATP-PCr 和糖酵解</div>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">B.</span>恢复段让氧化系统参与回补</div>
+        <div class="opt" onclick="pickMulti(this)"><span class="lbl">C.</span>它只刺激一种供能系统</div>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">D.</span>反复切换让恢复与再爆发都被训练</div>
+        <button onclick="document.getElementById('ans3').classList.add('show')">查看解析</button>
+        <div class="reveal" id="ans3">答案 A、B、D。HIIT 的核心就是冲和歇都算训练。C 错在把复合刺激说成单一刺激。</div>
+      </div>
+
+      <div class="quiz">
+        <h3>4. 案例: 目标是 5 组 3 次深蹲，想保每组速度和技术。你更该怎么做？</h3>
+        <div class="opt" onclick="pick(this,'correct')"><span class="lbl">A.</span>组间休长一点，保 PCr 和神经输出</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">B.</span>每组都压到喘爆，速度掉也继续堆</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">C.</span>把重量大幅降下去，只追求泵感</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">D.</span>不休息，连续做完</div>
+        <button onclick="document.getElementById('ans4').classList.add('show')">查看解析</button>
+        <div class="reveal" id="ans4">答案 A。目标是峰值质量，不是疲劳堆积。长休息让 ATP-PCr 恢复，动作和速度更容易保住。</div>
+      </div>
+    </section>
+
+    <footer>阶段1 · Day 25/112 · 今日早间新知识(工作日6:00) · 中午12:00复习巩固</footer>
+  </main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true"><img id="lightboxImg" alt=""></div>
+
+  <script>
+    function pick(el,type){
+      document.querySelectorAll('.quiz .opt').forEach(function(o){o.classList.remove('correct','wrong-show')});
+      el.classList.add(type==='correct'?'correct':'wrong-show');
+    }
+    function pickMulti(el){
+      if(el.classList.contains('correct')||el.classList.contains('wrong-show')){
+        el.classList.remove('correct');
+        el.classList.remove('wrong-show');
+      }else{
+        el.classList.add(el.dataset.c==='1'?'correct':'wrong-show');
+      }
+    }
+    document.querySelectorAll('ul.kp>li>.kp-head').forEach(function(h){
+      h.addEventListener('click',function(){h.parentElement.classList.toggle('open')});
+    });
+    var lb=document.getElementById('lightbox');
+    var lbImg=document.getElementById('lightboxImg');
+    document.querySelectorAll('.figure img').forEach(function(img){
+      img.addEventListener('click',function(){
+        lbImg.src=img.src;
+        lbImg.alt=img.alt;
+        lb.classList.add('show');
+        lb.setAttribute('aria-hidden','false');
+      });
+    });
+    lb.addEventListener('click',function(){lb.classList.remove('show');lb.setAttribute('aria-hidden','true')});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape'){lb.classList.remove('show');lb.setAttribute('aria-hidden','true')}})
+  </script>
+</body>
+</html>

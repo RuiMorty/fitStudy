@@ -33,6 +33,7 @@
 - 每次生成新缩略图后, 必须更新 `app.js` 的 `generatedThumbs` 映射, 让首页 Day N 卡片优先使用该缩略图。
 - **早间新知识必须先用 imagegen 生成小红书轮播辅助图 `ai-visuals`**: 在运行 `node scripts/generate-xhs-package.js --day=N` 前, 必须创建 `xhs/dayNN/ai-visuals/`。至少包含 `visual-00-cover.png` 和 `visual-01-主题-base.png`; 对每个核心要点轮播页再生成 1 张无文字视觉图, 文件名按 slide 眉标对齐, 例如 `visual-02-origin-anchor.png`, `visual-03-insertion-mobile-end.png`。若页面有 8 条核心要点, 通常应有 `visual-00` 到 `visual-10` 共 11 张。轮播辅助图必须无文字/无标签/无水印, 白底或浅色底, 现代医学教育插画风格, 少量使用绿色 `#4ade80` 和蓝色 `#60a5fa`, 橙色 `#ff5a1f` 只作极少强调。不得直接复用正文中文标注图作为核心要点视觉图; `visual-00-cover.png` 可复用首页缩略图, `visual-01-*-base.png` 可用主题无字概念图。
 - 每次早间新知识生成成功后, 必须运行 `node scripts/generate-xhs-package.js --day=N` 生成小红书发布包到 `xhs/dayNN/`。发布包必须包含 `cover.png`, `slide-01.png` 至少 5 张轮播图, `title.txt`, `caption.txt`, `tags.txt`。图片规格为 1080x1440 PNG, 内容适合图文轮播, 最终仍由用户人工发布。脚本会读取已有 `xhs/dayNN/ai-visuals/visual-XX...` 并嵌入轮播, 但不会自动调用 imagegen; 因此 `ai-visuals` 缺失时必须先补图再运行脚本。
+- `caption.txt` 必须在末尾附当天正文链接，格式 `完整学习页：https://fitstudy.cn/html/dayNN-*.html`；链接由生成脚本根据实际 HTML 文件名写入，不能手填或省略。
 - **小红书发布包校验必须包含 `ai-visuals`**: 验证 `xhs/dayNN/ai-visuals/` 存在, `visual-00-cover.png` 存在, 每个核心要点 slide 对应的 `visual-XX-*.png` 存在, 且 `cover.png`, `slide-01.png` 至少 5 张轮播图、`title.txt`, `caption.txt`, `tags.txt` 都存在。若 `ai-visuals` 生成失败, 记录到 `logs/gen_err.log`, 不要删除已生成 HTML/正文图/缩略图; 但必须在最终说明里明确发布包缺少哪些辅助图, 并优先补齐后重跑发布包。
 - **首次出现缩写/机制词必须讲透, 不能只丢名词**: 遇到 ATP-PCr、EPOC、GTO、SSC、RPE、神经输出、局部离子环境、长度-张力关系、力-速度曲线等术语时, 第一次出现必须按“字面意思 → 大白话类比 → 为什么影响训练/考试”的顺序解释。示例: `ATP-PCr = ATP(三磷酸腺苷, 直接供能物质) + PCr(磷酸肌酸, ATP 的备用仓库); 大白话是短时大重量的火箭点火燃料; 因为 PCr 储量少, 全力输出 6-8 秒后 ATP 再生速度下降, 所以力量掉速, 这和乳酸不是一回事。`
 - **复杂原因链要拆开讲**: 如果写“短时大重量受 ATP-PCr、神经输出、局部离子环境等多因素限制”, 必须分别解释每一项: ① ATP-PCr 是什么、像什么、为什么耗尽后举不动; ② 神经输出/神经驱动是什么、像油门踏板、为什么中枢疲劳会让身体不听使唤; ③ 局部离子环境是什么(K⁺/Ca²⁺/H⁺ 等)、像电解质平衡、为什么会影响兴奋传导和横桥结合。禁止一句话带过。
@@ -121,12 +122,10 @@
 
 复习 HTML 中所有课程图片必须使用 `thumbs/dayNN-...-thumbnail.png` 无字缩略图, 不使用 `assets/阶段.../dayNN-...png` 早间正文图。
 
-中午复习 HTML 生成并校验通过后，同步生成小红书复习预览:
-- 命令: `node scripts/generate-xhs-review-package.js --day=<day0>`
-- 该命令会先自动运行 `scripts/sync-review-index.js --day=<day0>`, 同步 `reviews.json`, 更新 `index.html` 最新复习链接, 并把复习页里的正文详情图替换为 `thumbs/` 无字缩略图。
-- 若只需同步/校验首页与复习索引, 可单独运行 `node scripts/sync-review-index.js --day=<day0>`；CI/自动化可用 `--check-only` 做硬校验。
-- 输出目录: `xhs-review/dayNN/`
-- 成功写入 `logs/push.log`: `xhs review package ready at xhs-review/dayNN/`
+中午复习 HTML 生成并校验通过后，仅同步首页复习索引:
+- 命令: `node scripts/sync-review-index.js --day=<day0>`，同步 `reviews.json` 并更新 `index.html` 最新复习链接。
+- **禁止**运行 `scripts/generate-xhs-review-package.js`，不生成 `xhs-review/dayNN/` 发布包。
+- 成功写入 `logs/push.log`: `review HTML ready: html/review-dayNN-*.html; index synced`
 - 失败写入 `logs/gen_err.log`, 但不要修改 `.progress.json`
 
 ---

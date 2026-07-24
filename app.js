@@ -2,7 +2,10 @@ const state = {
   lessons: [],
   reviews: [],
   phases: [],
+  currentDay: null,
   tab: "theory",
+  visibleTab: "theory",
+  tabTransitionTimer: null,
   cert: "全部",
   phase: "全部",
   category: "全部",
@@ -12,12 +15,13 @@ const state = {
   exerciseMuscle: "全部",
   exerciseEquipment: "全部",
   exerciseQuery: "",
-  selectedExercise: "barbell-back-squat",
+  selectedExercise: "lat-pulldown",
   atlasView: "front",
   selectedMuscle: "front-left-deltoid",
 };
 
 const navigationStorageKey = "fitness-study.navigation.v1";
+let reviewsRequest = null;
 
 const publishedPages = new Map([
   [1, "html/day01-骨学基础-骨骼系统总览.html"],
@@ -43,6 +47,14 @@ const publishedPages = new Map([
   [21, "html/day21-第3周复盘-生物力学.html"],
   [22, "html/day22-能量系统-ATP-PCr系统.html"],
   [23, "html/day23-能量系统-糖酵解系统.html"],
+  [24, "html/day24-能量系统-氧化系统.html"],
+  [25, "html/day25-能量系统交互与运动强度关系.html"],
+  [26, "html/day26-神经肌肉接头与兴奋-收缩耦联完整钙链条.html"],
+  [27, "html/day27-运动单位募集与神经肌肉控制深化.html"],
+  [28, "html/day28-第4周复盘-能量系统与神经肌肉.html"],
+  [29, "html/day29-训练适应基本原则.html"],
+  [30, "html/day30-FITT-VP训练变量与ACSM身体活动指南.html"],
+  [31, "html/day31-PAR-Q+与医学筛查.html"],
 ]);
 
 const generatedThumbs = new Map([
@@ -69,6 +81,14 @@ const generatedThumbs = new Map([
   [21, "html/thumbs/day21-week3-biomechanics-review-thumbnail.png"],
   [22, "html/thumbs/day22-atp-pcr-energy-system-thumbnail.png"],
   [23, "html/thumbs/day23-glycolytic-energy-system-thumbnail.png"],
+  [24, "html/thumbs/day24-oxidative-energy-system-thumbnail.png"],
+  [25, "html/thumbs/day25-energy-system-interaction-intensity-thumbnail.png"],
+  [26, "html/thumbs/day26-neuromuscular-coupling-thumbnail.png"],
+  [27, "html/thumbs/day27-motor-unit-recruitment-control-thumbnail.png"],
+  [28, "html/thumbs/day28-fourth-week-review-energy-systems-neuromuscular-thumbnail.png"],
+  [29, "html/thumbs/day29-training-adaptation-principles-thumbnail.png"],
+  [30, "html/thumbs/day30-fitt-vp-acsm-guidelines-thumbnail.png"],
+  [31, "html/thumbs/day31-par-q-medical-screening-thumbnail.png"],
 ]);
 
 const categories = ["全部", "骨关节", "肌肉", "生物力学", "能量系统", "训练技术", "评估纠正", "营养", "模考"];
@@ -91,12 +111,12 @@ const exercises = [
     level: "中级",
     muscles: ["股四头肌", "臀大肌"],
     support: ["核心", "竖脊肌"],
-    media: "html/assets/action-library/barbell-back-squat/barbell-back-squat.gif",
+    media: "html/assets/action-library/barbell-back-squat/barbell-back-squat.gif?v=3",
     frames: [
-      "html/assets/action-library/barbell-back-squat/frame-01-standing.png",
-      "html/assets/action-library/barbell-back-squat/frame-02-shallow.png",
-      "html/assets/action-library/barbell-back-squat/frame-03-half.png",
-      "html/assets/action-library/barbell-back-squat/frame-04-bottom.png",
+      "html/assets/action-library/barbell-back-squat/frame-01-standing.png?v=3",
+      "html/assets/action-library/barbell-back-squat/frame-02-shallow.png?v=3",
+      "html/assets/action-library/barbell-back-squat/frame-03-half.png?v=3",
+      "html/assets/action-library/barbell-back-squat/frame-04-bottom.png?v=3",
     ],
     phases: ["站立", "浅蹲", "半蹲", "最低点"],
     cues: ["足底三点稳定接触地面", "膝盖沿脚尖方向追踪", "下放时保持躯干刚性"],
@@ -157,6 +177,13 @@ const exercises = [
     level: "初级",
     muscles: ["背阔肌", "大圆肌"],
     support: ["肱二头肌", "下斜方肌"],
+    media: "html/assets/action-library/lat-pulldown-rear/lat-pulldown-rear.gif?v=2",
+    frames: [
+      "html/assets/action-library/lat-pulldown-rear/frame-01-start.png?v=2",
+      "html/assets/action-library/lat-pulldown-rear/frame-02-pull.png?v=2",
+      "html/assets/action-library/lat-pulldown-rear/frame-03-contracted.png?v=2",
+    ],
+    phases: ["起始位", "下拉中段", "收缩位"],
     cues: ["先做肩胛下压", "肘部向下向后", "避免靠后仰借力"],
     mistakes: ["颈后下拉", "身体大幅后仰", "耸肩拉动"],
   },
@@ -238,17 +265,32 @@ const muscles = [
 ];
 
 async function init() {
-  const [markdown, reviews] = await Promise.all([
+  const [markdown, progress] = await Promise.all([
     fetch("fitness_syllabus.md").then((response) => response.text()),
-    fetch("reviews.json")
-      .then((response) => (response.ok ? response.json() : []))
-      .catch(() => []),
+    fetch("progress.json", { cache: "no-store" })
+      .then((response) => (response.ok ? response.json() : null))
+      .catch(() => null),
   ]);
-  state.reviews = reviews;
+  if (Number.isInteger(progress?.day)) state.currentDay = progress.day;
   parseSyllabus(markdown);
   restoreNavigation();
   bindUI();
   render();
+  state.visibleTab = state.tab;
+  if (state.tab === "review") loadReviews();
+}
+
+function loadReviews() {
+  if (reviewsRequest) return reviewsRequest;
+  reviewsRequest = fetch("reviews.json")
+    .then((response) => (response.ok ? response.json() : []))
+    .catch(() => [])
+    .then((reviews) => {
+      state.reviews = reviews;
+      if (state.tab === "review" && state.visibleTab === "review") render();
+      return reviews;
+    });
+  return reviewsRequest;
 }
 
 function restoreNavigation() {
@@ -359,6 +401,7 @@ function bindUI() {
       state.exerciseView = button.dataset.exerciseView;
       saveNavigation();
       render();
+      pulseSelection(button);
     });
   });
   document.querySelectorAll("[data-atlas-view]").forEach((button) => {
@@ -368,6 +411,7 @@ function bindUI() {
       state.selectedMuscle = firstMuscle?.id || state.selectedMuscle;
       saveNavigation();
       render();
+      pulseSelection(button);
     });
   });
   $("exerciseSearch").addEventListener("input", (event) => {
@@ -379,18 +423,21 @@ function bindUI() {
     if (!button) return;
     state.exercisePattern = button.dataset.exercisePattern;
     renderExerciseLibrary();
+    pulseSelection(document.querySelector(`[data-exercise-pattern="${state.exercisePattern}"]`));
   });
   $("exerciseMuscleFilters").addEventListener("click", (event) => {
     const button = event.target.closest("[data-exercise-muscle]");
     if (!button) return;
     state.exerciseMuscle = button.dataset.exerciseMuscle;
     renderExerciseLibrary();
+    pulseSelection(document.querySelector(`[data-exercise-muscle="${state.exerciseMuscle}"]`));
   });
   $("exerciseEquipmentFilters").addEventListener("click", (event) => {
     const button = event.target.closest("[data-exercise-equipment]");
     if (!button) return;
     state.exerciseEquipment = button.dataset.exerciseEquipment;
     renderExerciseLibrary();
+    pulseSelection(document.querySelector(`[data-exercise-equipment="${state.exerciseEquipment}"]`));
   });
   $("exerciseCards").addEventListener("click", (event) => {
     const card = event.target.closest("[data-exercise-id]");
@@ -398,6 +445,7 @@ function bindUI() {
     state.selectedExercise = card.dataset.exerciseId;
     saveNavigation();
     renderExerciseLibrary();
+    jellySelection(document.querySelector(`[data-exercise-id="${state.selectedExercise}"]`));
   });
   $("searchInput").addEventListener("input", (event) => {
     state.query = event.target.value.trim();
@@ -428,12 +476,56 @@ function bindUI() {
 }
 
 function setTab(tab) {
+  const fromTab = state.visibleTab;
+  if (tab === state.tab && !state.tabTransitionTimer) return;
+
+  if (state.tabTransitionTimer) window.clearTimeout(state.tabTransitionTimer);
   state.tab = tab;
+  if (tab === "review") loadReviews();
   saveNavigation();
+  updateTabSelection(tab, tab !== fromTab);
+
+  if (tab === fromTab) {
+    const panel = panelForTab(fromTab);
+    panel.classList.remove("tab-panel-leave-forward", "tab-panel-leave-backward");
+    state.tabTransitionTimer = null;
+    render();
+    return;
+  }
+
+  const direction = tabDirection(fromTab, tab);
+  const outgoingPanel = panelForTab(fromTab);
+  outgoingPanel.classList.remove("tab-panel-enter-forward", "tab-panel-enter-backward", "tab-panel-leave-forward", "tab-panel-leave-backward");
+  outgoingPanel.classList.add(`tab-panel-leave-${direction}`);
+  state.tabTransitionTimer = window.setTimeout(() => {
+    outgoingPanel.classList.remove(`tab-panel-leave-${direction}`);
+    state.tabTransitionTimer = null;
+    render(direction);
+    state.visibleTab = state.tab;
+  }, 170);
+}
+
+function panelForTab(tab) {
+  return $(tab === "theory" ? "cardGrid" : tab === "review" ? "reviewGrid" : tab === "nutrition" ? "nutritionPanel" : "exercisePanel");
+}
+
+function tabDirection(fromTab, toTab) {
+  const tabOrder = { theory: 0, review: 0, exercise: 1, nutrition: 2 };
+  return tabOrder[toTab] >= tabOrder[fromTab] ? "forward" : "backward";
+}
+
+function updateTabSelection(tab, animate = false) {
+  const tabs = document.querySelector(".tabs");
   $("theoryTab").classList.toggle("active", tab === "theory");
   $("exerciseTab").classList.toggle("active", tab === "exercise");
   $("nutritionTab").classList.toggle("active", tab === "nutrition");
-  render();
+  tabs.dataset.active = tab;
+
+  if (animate && tab !== "review") {
+    tabs.classList.remove("is-jelly");
+    void tabs.offsetWidth;
+    tabs.classList.add("is-jelly");
+  }
 }
 
 function renderFilterControls() {
@@ -448,17 +540,33 @@ function renderFilterControls() {
     if (!button) return;
     state.cert = button.dataset.cert;
     render();
+    pulseSelection(button);
   });
   $("categoryFilters").addEventListener("click", (event) => {
     const button = event.target.closest("[data-category]");
     if (!button) return;
     state.category = button.dataset.category;
     render();
+    pulseSelection(button);
   });
 }
 
 function chip(kind, value, active) {
   return `<button class="chip ${value === active ? "active" : ""}" type="button" data-${kind}="${value}">${value}</button>`;
+}
+
+function pulseSelection(control) {
+  if (!control) return;
+  control.classList.remove("selection-pop");
+  void control.offsetWidth;
+  control.classList.add("selection-pop");
+}
+
+function jellySelection(control) {
+  if (!control) return;
+  control.classList.remove("is-jelly");
+  void control.offsetWidth;
+  control.classList.add("is-jelly");
 }
 
 function resetFilters() {
@@ -480,10 +588,14 @@ function filteredLessons() {
     const text = [lesson.day, lesson.title, lesson.cert, lesson.phase, lesson.category, lesson.goal, ...lesson.points].join(" ").toLowerCase();
     const queryOk = !query || text.includes(query);
     return certOk && phaseOk && categoryOk && queryOk;
+  }).sort((a, b) => {
+    if (a.day === state.currentDay) return -1;
+    if (b.day === state.currentDay) return 1;
+    return a.day - b.day;
   });
 }
 
-function render() {
+function render(enterDirection = "") {
   const lessons = filteredLessons();
   const reviews = filteredReviews();
   renderFilterState();
@@ -492,27 +604,42 @@ function render() {
   const reviewMode = state.tab === "review";
   const nutritionMode = state.tab === "nutrition";
   const exerciseMode = state.tab === "exercise";
-  $("theoryTab").classList.toggle("active", theoryMode);
-  $("exerciseTab").classList.toggle("active", exerciseMode);
-  $("nutritionTab").classList.toggle("active", nutritionMode);
+  updateTabSelection(state.tab);
   $("cardGrid").hidden = !theoryMode;
   $("reviewGrid").hidden = !reviewMode;
+  $("nutritionPanel").hidden = !nutritionMode;
   $("exercisePanel").hidden = !exerciseMode;
-  $("resultBar").hidden = nutritionMode;
+  $("resultBar").hidden = !theoryMode;
+  $("resetFilters").hidden = !theoryMode;
   renderMainHeader();
+  renderSidebarContext();
 
   if (theoryMode) renderCards(lessons);
   if (reviewMode) renderReviews(reviews);
   if (exerciseMode) renderExercise();
-  if (theoryMode) {
-    $("resultText").textContent = `找到 ${lessons.length} 个理论主题`;
-  } else if (reviewMode) {
-    $("resultText").textContent = `找到 ${reviews.length} 个复习页`;
-  } else if (exerciseMode) {
-    $("resultText").textContent = state.exerciseView === "atlas"
-      ? `肌肉图谱 · ${state.atlasView === "front" ? "正面" : "背面"}`
-      : `动作库 · ${filteredExercises().length} 个动作`;
+  if (theoryMode) $("resultText").textContent = `找到 ${lessons.length} 个理论主题`;
+
+  if (enterDirection) {
+    const activePanel = theoryMode ? $("cardGrid") : reviewMode ? $("reviewGrid") : nutritionMode ? $("nutritionPanel") : $("exercisePanel");
+    const enterClass = `tab-panel-enter-${enterDirection}`;
+    activePanel.classList.remove("tab-panel-enter-forward", "tab-panel-enter-backward");
+    requestAnimationFrame(() => activePanel.classList.add(enterClass));
   }
+}
+
+function renderSidebarContext() {
+  const theoryMode = state.tab === "theory";
+  $("theorySidebarControls").hidden = !theoryMode;
+  $("pendingSidebarControls").hidden = theoryMode;
+  if (theoryMode) return;
+
+  const pendingCopy = {
+    exercise: ["功能待开发", "更多动作学习功能正在开发中。"],
+    nutrition: ["功能待开发", "更多营养工具正在开发中。"],
+    review: ["功能待开发", "更多复习工具正在开发中。"],
+  }[state.tab];
+  $("pendingSidebarTitle").textContent = pendingCopy[0];
+  $("pendingSidebarDescription").textContent = pendingCopy[1];
 }
 
 function renderMainHeader() {
@@ -524,21 +651,32 @@ function renderMainHeader() {
       action: "复习",
       href: "#reviewGrid",
       view: "review",
+      insight: `<span>课程总览</span><strong>${state.lessons.length} <small>主题</small></strong>`,
     },
     review: {
       kicker: "Review Library",
       title: "复习",
       description: "全部复习页，按学习节奏回顾核心知识。",
+      insight: `<span>已生成</span><strong>${state.reviews.length} <small>复习页</small></strong>`,
     },
     exercise: {
       kicker: "Training Lab",
       title: "健身动作",
       description: "通过肌肉图谱和动作库，建立训练动作与解剖知识的连接。",
+      insight: state.exerciseView === "atlas"
+        ? `<span>当前浏览</span><strong>肌肉 <small>${state.atlasView === "front" ? "正面" : "背面"}</small></strong>`
+        : (() => {
+            const exercise = exercises.find((item) => item.id === state.selectedExercise);
+            return exercise
+              ? `<span>当前查看</span><strong>${exercise.name}<small>${exercise.pattern} · ${exercise.level}</small></strong>`
+              : `<span>当前查看</span><strong>动作库</strong>`;
+          })(),
     },
     nutrition: {
       kicker: "Nutrition Library",
       title: "营养学",
       description: "",
+      insight: `<span>能量速查</span><strong>4 · 4 · 9 <small>kcal/g</small></strong>`,
     },
   }[state.tab];
 
@@ -546,6 +684,7 @@ function renderMainHeader() {
   $("headerTitle").textContent = header.title;
   $("headerDescription").textContent = header.description;
   $("headerDescription").hidden = !header.description;
+  $("headerInsight").innerHTML = header.insight;
   $("headerAction").hidden = !header.action;
   if (header.action) {
     $("headerAction").textContent = header.action;
@@ -723,6 +862,7 @@ function renderExerciseLibrary() {
       const index = Number(button.dataset.frameIndex);
       $("exerciseMedia").src = selected.frames[index];
       document.querySelectorAll(".phase-button").forEach((item) => item.classList.toggle("active", item === button));
+      pulseSelection(button);
     };
   }
   $("exerciseDetail").onclick = (event) => {
@@ -730,6 +870,7 @@ function renderExerciseLibrary() {
     if (!visual) return;
     openCoachingVisual(visual.dataset.coachingVisual, visual.dataset.coachingTitle, visual.dataset.coachingAlt);
   };
+  renderMainHeader();
 }
 
 function renderMistakes(mistakes, visuals = []) {

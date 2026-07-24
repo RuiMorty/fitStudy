@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 24 · 能量系统-氧化系统</title>
+<link rel="icon" type="image/svg+xml" href="assets/fitness-study-logo-open-circle.svg">
+  <style>
+    *{box-sizing:border-box}
+    body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.75;background:#f6f8f7;color:#1a2b22;padding:18px}
+    .wrap{max-width:980px;margin:auto}
+    .header{text-align:center;padding:24px 10px}
+    .header h1{margin:0 0 10px;font-size:2rem;background:linear-gradient(90deg,#0ea66b,#0ea5e9);-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:0}
+    .sub{color:#5a6b62}
+    .chips{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:10px}
+    .chip{font-size:.78rem;border:1px solid #d4ebe0;border-radius:999px;padding:3px 10px;background:#fff;color:#0c6da3}
+    .panel,.figure,.warn{background:#fff;border:1px solid #e2e8e4;border-radius:14px;padding:18px;margin:14px 0;box-shadow:0 2px 12px rgba(20,40,30,.06)}
+    .lead{border-left:4px solid #0ea66b}
+    .orange{border-left:4px solid #ea7a17}
+    .figure img{width:100%;display:block;border-radius:12px;border:1px solid #e2e8e4;background:#fbfdfc;cursor:zoom-in}
+    .caption{font-size:.85rem;color:#5a6b62;margin-top:8px;text-align:center}
+    .panel h2,.warn h2{font-size:1.18rem;margin:0 0 10px;color:#0a7d52}
+    .term{font-weight:700;color:#0a7d52;background:#e8f5ee;border-radius:5px;padding:1px 5px}
+    ul.kp{list-style:none;padding:0;margin:0}
+    ul.kp>li{border-bottom:1px dashed #e2e8e4}
+    .kp-head{display:block;cursor:pointer;position:relative;padding:13px 8px 13px 30px}
+    .kp-head:before{content:"▸";position:absolute;left:8px;color:#0ea66b;font-weight:800;transition:.2s}
+    .open>.kp-head:before{transform:rotate(90deg)}
+    .kp-head:hover{background:#f0f4f2}
+    .kp-body{display:none;padding:0 14px 16px 30px}
+    .open>.kp-body{display:block}
+    .dim{display:block;margin-top:10px;font-size:.78rem;font-weight:800;color:#0c6da3}
+    .take{border-left:4px solid #0ea66b;background:#f0fbf5;border-radius:10px;padding:10px 12px;margin:10px 0}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin:12px 0}
+    .mini{border:1px solid #dbe8e1;border-radius:12px;background:#fbfdfc;padding:12px}
+    .mini h4{margin:0 0 7px;font-size:.98rem;color:#0a7d52}
+    .tbl{width:100%;border-collapse:collapse;font-size:.9rem;margin:10px 0}
+    .tbl th{background:#0ea66b;color:#fff;text-align:left}
+    .tbl th,.tbl td{padding:8px;border-bottom:1px solid #e2e8e4;vertical-align:top}
+    .warn{border-left:4px solid #e23b3b}
+    .warn p{margin:8px 0}
+    .mnemonic{background:linear-gradient(135deg,#0ea66b,#0ea5e9);color:#fff;border-radius:14px;padding:20px;margin:14px 0;box-shadow:0 2px 12px rgba(20,40,30,.08)}
+    .mnemonic h2{margin:0 0 8px;font-size:1.15rem}
+    .mnemonic strong{color:#fff7d6}
+    .card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+    .flip{min-height:145px;perspective:800px;cursor:pointer}
+    .flip-inner{position:relative;width:100%;height:100%;min-height:145px;transition:transform .5s;transform-style:preserve-3d}
+    .flip.flipped .flip-inner{transform:rotateY(180deg)}
+    .face{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:15px;border-radius:13px;border:1px solid #e2e8e4;backface-visibility:hidden;background:#fff;font-weight:700}
+    .front{color:#0a7d52;background:#f8fffb}
+    .back{transform:rotateY(180deg);background:#eef7ff;color:#0c6da3;font-weight:600}
+    .quiz{border-top:1px dashed #e2e8e4;padding-top:12px;margin-top:12px}
+    .quiz h3{margin:0 0 8px;font-size:1rem;color:#1a2b22}
+    .opt{border:1px solid #e2e8e4;border-radius:10px;padding:9px 10px;margin:7px 0;background:#fff;cursor:pointer}
+    .opt:hover{background:#f0f4f2}
+    .lbl{font-weight:800;color:#0c6da3;margin-right:4px}
+    .correct{border-color:#0ea66b!important;background:#e9f8f0!important}
+    .wrong-show{border-color:#e23b3b!important;background:#fff0f0!important}
+    button{border:0;border-radius:999px;background:#0ea66b;color:#fff;font-weight:800;padding:8px 14px;cursor:pointer;margin-top:6px}
+    .reveal{display:none;border-left:4px solid #0ea5e9;background:#f0f8fc;border-radius:10px;padding:10px;margin-top:8px}
+    .reveal.show{display:block}
+    .list{padding-left:20px;margin:8px 0}
+    .list li{margin:7px 0}
+    footer{text-align:center;color:#5a6b62;font-size:.85rem;margin:22px 0}
+    .lightbox{position:fixed;inset:0;background:rgba(0,0,0,.82);display:none;align-items:center;justify-content:center;z-index:9;padding:18px}
+    .lightbox.show{display:flex}
+    .lightbox img{max-width:96vw;max-height:92vh;border-radius:10px;background:#fff}
+    @media(max-width:640px){body{padding:10px}.header h1{font-size:1.5rem}.panel,.figure,.warn{padding:14px}.kp-body{padding-left:14px}.card-grid{grid-template-columns:1fr}}
+  
+/* Day1 title alignment override */
+.header,
+header {
+  text-align: left !important;
+  padding: 22px 4px 14px !important;
+}
+.header h1,
+header h1,
+h1 {
+  background: none !important;
+  -webkit-background-clip: initial !important;
+  background-clip: initial !important;
+  color: #111113 !important;
+  font-size: clamp(1.45rem, 3vw, 2.25rem) !important;
+  line-height: 1.16 !important;
+  margin-bottom: 8px !important;
+  letter-spacing: 0 !important;
+}
+.header h1::before,
+header h1::before {
+  content: "";
+  display: block;
+  width: 34px;
+  height: 4px;
+  border-radius: 999px;
+  background: #ff5a1f;
+  margin-bottom: 10px;
+}
+.chips,
+.meta {
+  justify-content: flex-start !important;
+}
+.sub,
+.meta {
+  color: #71717a !important;
+}
+
+
+/* Day1 title chips override */
+.chip,
+.slot,
+.tag {
+  border: 1px solid #e4e4e7 !important;
+  border-radius: 999px !important;
+  background: #ffffff !important;
+  color: #71717a !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+}
+.chip:nth-child(1),
+.tag:nth-child(1) {
+  background: rgba(74, 222, 128, 0.16) !important;
+  border-color: transparent !important;
+  color: #15803d !important;
+}
+.chip:nth-child(2),
+.tag:nth-child(2) {
+  background: rgba(96, 165, 250, 0.16) !important;
+  border-color: transparent !important;
+  color: #2563eb !important;
+}
+
+
+/* Day1 mnemonic override */
+.mnemonic {
+  background: #ffffff !important;
+  border: 1px solid #e4e4e7 !important;
+  border-left: 4px solid #ff5a1f !important;
+  color: #111113 !important;
+  box-shadow: none !important;
+}
+.mnemonic strong {
+  color: #ff5a1f !important;
+}
+
+
+/* Day1 term highlight override */
+.term {
+  background: rgba(74, 222, 128, 0.16) !important;
+  border-radius: 6px !important;
+  padding: 1px 5px !important;
+}
+
+
+/* Day1 typography override */
+body {
+  font-size: 14px !important;
+  line-height: 1.65 !important;
+}
+p,
+li,
+td,
+th,
+.kp-head,
+.kp-body,
+.takeaway,
+.practice li,
+.question,
+.q,
+.answer,
+.reveal,
+.face,
+.mnemonic {
+  font-size: 14px !important;
+}
+.header h1,
+header h1,
+h1 {
+  font-size: clamp(1.45rem, 3vw, 2.25rem) !important;
+  line-height: 1.16 !important;
+}
+.panel h2,
+.warn h2,
+.card h2,
+h2 {
+  font-size: 1.05rem !important;
+}
+h3,
+.panel h3,
+.quiz h3,
+.question h3 {
+  font-size: 1rem !important;
+}
+.chip,
+.slot,
+.tag,
+.meta,
+.sub,
+.caption,
+.footer,
+footer,
+.dim {
+  font-size: 12px !important;
+}
+
+
+/* Day1 exact text sizing override */
+.sub { font-size: 14px !important; line-height: 1.65 !important; }
+.caption { font-size: 13.6px !important; line-height: 1.65 !important; }
+.footer,
+footer { font-size: 13.12px !important; line-height: 1.65 !important; }
+.dim { font-size: 12.48px !important; line-height: 1.65 !important; }
+.mnemonic strong { font-size: 14px !important; line-height: 1.65 !important; }
+
+
+/* Day1 flip card color override */
+.flip .face,
+.flip .front,
+.flip-inner .face:first-child,
+.flip-in .face:first-child {
+  background: #fafafa !important;
+  color: #111113 !important;
+  border-color: #e4e4e7 !important;
+}
+.flip .back,
+.flip-inner .back,
+.flip-in .back,
+.flip-inner .face.back,
+.flip-in .face.back {
+  background: #0ea66b !important;
+  color: #ffffff !important;
+  border-color: #0ea66b !important;
+}
+
+</style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="header">
+      <h1>Day 24 · 能量系统-氧化系统</h1>
+      <div class="sub">今天主题: 解释 2 分钟以上运动里，身体如何用氧气把糖和脂肪慢慢“榨”成大量 ATP。</div>
+      <div class="chips"><span class="chip">第4周 · 阶段1基础科学</span><span class="chip">NSCA + NASM 双证</span><span class="chip">早间新知识</span></div>
+    </header>
+
+    <section class="panel lead">
+      <h2>一句话总结</h2>
+      <p><strong>氧化系统像线粒体里的慢炖发电厂</strong>: 它产能速度不如 ATP-PCr 和糖酵解快，但能把糖、脂肪和少量蛋白质在线粒体内充分氧化，换来更大量 ATP，所以支撑长跑、骑行、稳定有氧和组间恢复。</p>
+    </section>
+
+    <figure class="figure">
+      <img src="assets/阶段1基础科学/day24-能量系统-氧化系统.png" alt="氧化系统中文标注学习图">
+      <div class="caption">看图重点: 糖、脂肪和少量蛋白质进入线粒体，经三羧酸循环与电子传递链产生大量 ATP；低强度更偏脂肪，高强度更偏糖。</div>
+    </figure>
+
+    <section class="panel">
+      <h2>核心要点</h2>
+      <ul class="kp">
+        <li>
+          <span class="kp-head"><span class="term">氧化系统</span>: 用氧气在线粒体内充分分解底物，产生大量 ATP。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 氧化系统不是“低强度才开机”，而是一直参与供能；运动越久、强度越可控，它贡献越大。</div>
+            <div class="grid">
+              <div class="mini"><h4>字面意思</h4><p>氧化 = 底物在有氧条件下逐步释放能量。系统主要在线粒体内完成，产物包括 ATP、二氧化碳和水。</p></div>
+              <div class="mini"><h4>大白话</h4><p>像慢炖锅：出餐慢一点，但能把食材榨得很干净，特别适合长时间稳定输出。</p></div>
+              <div class="mini"><h4>考试含义</h4><p>题干出现 2 分钟以上、耐力、低到中等强度、线粒体、脂肪氧化，优先想到氧化系统。</p></div>
+            </div>
+            <span class="dim">底层机制</span>
+            <p>肌肉真正直接使用的仍是 ATP。氧化系统负责把糖、脂肪和少量蛋白质拆成可进入线粒体的中间产物，再经过一系列反应把能量转移到 ATP 上。</p>
+            <span class="dim">训练含义</span>
+            <p>基础有氧、长距离耐力、循环训练的恢复段、组间恢复，都离不开氧化系统。氧化能力越好，同样强度下越不容易早早堆积代谢压力。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">三羧酸循环(Krebs)</span>: 在线粒体中进一步拆解燃料，把高能电子交给后续系统。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: Krebs 循环不是直接“制造最多 ATP”的地方，它更像把燃料拆开并装上运输车，送去电子传递链发电。</div>
+            <div class="grid">
+              <div class="mini"><h4>字面意思</h4><p>三羧酸循环又叫 Krebs cycle。糖和脂肪分解后形成乙酰辅酶 A，进入循环，产生二氧化碳和携带能量的电子载体。</p></div>
+              <div class="mini"><h4>大白话</h4><p>像加工厂前段：先把原料拆开、打包、贴上能量标签，再送到真正的大电站。</p></div>
+              <div class="mini"><h4>为什么影响训练</h4><p>线粒体数量、酶活性和供氧能力越好，燃料处理越顺，耐力和高强度后的恢复越稳。</p></div>
+            </div>
+            <span class="dim">真实例子</span>
+            <p>稳定跑步时，糖酵解产生的丙酮酸可转为乙酰辅酶 A，脂肪酸也能通过β氧化变成乙酰辅酶 A，最后都汇入 Krebs 循环。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为 Krebs 只属于化学考试，健身不用懂。✅其实它解释了为什么有氧训练能提高线粒体能力，也解释了为什么耐力不是只靠“意志硬扛”。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">电子传递链</span>: 在线粒体内膜上利用氧气，完成大部分 ATP 生产。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 氧气在这里很关键。没有足够氧气，电子传递链难以顺畅运行，氧化系统产 ATP 的优势就发挥不出来。</div>
+            <table class="tbl">
+              <tr><th>环节</th><th>发生什么</th><th>训练判断</th></tr>
+              <tr><td>电子进入</td><td>Krebs 循环等环节把高能电子送到线粒体内膜。</td><td>像把燃料票送进发电站。</td></tr>
+              <tr><td>建立梯度</td><td>电子移动带动质子梯度形成，能量被暂时储存。</td><td>像水坝蓄水，准备推动涡轮。</td></tr>
+              <tr><td>合成 ATP</td><td>ATP 合酶利用梯度，把 ADP 重新合成 ATP。</td><td>产量大，适合长时间输出。</td></tr>
+            </table>
+            <span class="dim">底层机制</span>
+            <p>电子传递链是氧化系统 ATP 产量最高的部分。氧气作为最终电子受体，帮助整条链持续运转，所以呼吸、心血管运输和肌肉用氧能力都会影响耐力表现。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为有氧只等于“呼吸很轻松”。✅其实有氧能力包含肺通气、心脏泵血、毛细血管供血、线粒体处理和酶活性，任何一环弱都会限制输出。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">底物切换</span>: 低强度更偏脂肪，高强度更偏糖，但不是二选一。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: “燃脂区”不是只烧脂肪，“高强度”也不是不烧脂肪。身体同时用多种燃料，只是比例变化。</div>
+            <table class="tbl">
+              <tr><th>强度状态</th><th>主要倾向</th><th>原因</th></tr>
+              <tr><td>低强度长时间</td><td>脂肪比例高</td><td>脂肪库存大，氧化慢但耐用，强度低时来得及处理。</td></tr>
+              <tr><td>中等强度</td><td>脂肪和糖都明显参与</td><td>能量需求升高，糖的供能速度优势开始重要。</td></tr>
+              <tr><td>高强度</td><td>糖比例升高</td><td>糖分解速度更快，更适合快速 ATP 需求。</td></tr>
+            </table>
+            <span class="dim">真实例子</span>
+            <p>慢走和轻松骑行时，脂肪供能比例较高；节奏跑或爬坡骑行时，糖的比例上升；冲刺时 ATP-PCr 和糖酵解贡献更突出。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为只要低强度脂肪比例高，减脂就一定最好。✅其实减脂看长期能量平衡、总消耗、饮食和可持续性，不只看当下脂肪供能比例。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">持续时间</span>: 2 分钟以上运动中，氧化系统贡献逐步变成主角。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 不是到了 2 分钟才突然启动氧化系统，而是 2 分钟以上时，它的相对贡献通常越来越大。</div>
+            <div class="grid">
+              <div class="mini"><h4>0-10 秒</h4><p>ATP-PCr 最突出，适合单次爆发、短冲刺、大重量单次。</p></div>
+              <div class="mini"><h4>30 秒-2 分钟</h4><p>糖酵解压力明显，常见于 400 米跑、多次高强度间歇。</p></div>
+              <div class="mini"><h4>2 分钟以上</h4><p>氧化系统越来越关键，支撑长跑、长骑、稳定有氧和长时活动。</p></div>
+            </div>
+            <span class="dim">训练含义</span>
+            <p>如果目标是耐力基础，训练不该每次都冲到崩溃。大量可持续的低到中等强度训练，能累积线粒体、毛细血管和脂肪氧化适应。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为强度越高越能练有氧。✅其实高强度能刺激心肺和糖酵解，但氧化基础也需要足够可恢复、可重复的稳定训练量。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">训练应用</span>: 氧化能力决定耐力表现，也影响高强度训练后的恢复速度。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 氧化系统不只是跑马拉松的人才需要。力量训练组间恢复、HIIT 间歇恢复、日常体能底盘都靠它托底。</div>
+            <table class="tbl">
+              <tr><th>目标</th><th>怎么用</th><th>注意点</th></tr>
+              <tr><td>耐力</td><td>低到中等强度稳定训练，提高线粒体和脂肪氧化。</td><td>强度太高会变成每次都在硬扛疲劳。</td></tr>
+              <tr><td>减脂</td><td>选择能长期坚持的有氧量，配合饮食制造能量缺口。</td><td>不要只迷信“燃脂心率”。</td></tr>
+              <tr><td>力量</td><td>良好氧化能力帮助组间恢复 PCr、清除代谢压力。</td><td>耐力量过大可能干扰最大力量目标。</td></tr>
+              <tr><td>健康</td><td>提高心肺、血管和代谢健康，降低久坐风险。</td><td>从可恢复的剂量开始。</td></tr>
+            </table>
+            <span class="dim">真实例子</span>
+            <p>同样做深蹲 5 组，有氧基础好的人组间心率下降更快、呼吸恢复更稳，下一组动作质量更容易维持。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为练力量就不需要有氧。✅其实适量有氧能提高恢复和健康底盘，关键是控制剂量、安排顺序和避免抢走力量训练恢复资源。</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="warn">
+      <h2>常见误区</h2>
+      <p>❌很多人以为氧化系统只在慢跑时工作。✅其实三大系统一直同时工作，只是强度和时间决定主导比例。</p>
+      <p>❌很多人以为低强度“燃脂比例高”就一定最减脂。✅其实减脂看长期能量缺口和可坚持性，不只看某一刻烧的底物比例。</p>
+      <p>❌很多人以为有氧会天然削弱力量。✅过量耐力训练可能干扰力量，但适量有氧能改善恢复、心肺和训练容量。</p>
+    </section>
+
+    <section class="mnemonic">
+      <h2>记忆口诀</h2>
+      <p><strong>氧化慢而久，线粒体发电；低强脂肪多，高强糖上前。</strong>意思是：氧化系统产能慢但耐用；核心场地是线粒体；低强度更偏脂肪，高强度更偏糖，但所有系统都在同时工作。</p>
+    </section>
+
+    <section class="panel">
+      <h2>翻转卡复习</h2>
+      <div class="card-grid">
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">氧化系统主要在哪里发生？</div><div class="face back">主要在线粒体内发生，尤其三羧酸循环和电子传递链。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">氧化系统适合多长时间运动？</div><div class="face back">2 分钟以上越重要，特别是长时间低到中等强度。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">氧化系统能用哪些底物？</div><div class="face back">糖、脂肪和少量蛋白质都可氧化供能。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">低强度更偏用什么？</div><div class="face back">脂肪比例较高，但不是只用脂肪。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">高强度更偏用什么？</div><div class="face back">糖的比例升高，因为糖供能速度更快。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">电子传递链为什么需要氧气？</div><div class="face back">氧气是最终电子受体，帮助链条持续运行并大量合成 ATP。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">氧化系统和组间恢复有什么关系？</div><div class="face back">帮助恢复 PCr、处理代谢压力，让下一组更容易维持质量。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">“燃脂区”最大误解是什么？</div><div class="face back">把脂肪供能比例误当成减脂效果；减脂仍看长期能量平衡。</div></div></div>
+      </div>
+    </section>
+
+    <section class="panel orange">
+      <h2>实操关联</h2>
+      <ul class="list">
+        <li>增肌: 适量有氧能提高组间恢复和训练容量，但不要把下肢练到长期疲劳，影响大重量表现。</li>
+        <li>减脂: 用可坚持的低到中等强度有氧增加总消耗，再配合饮食控制，效果比只盯“燃脂心率”稳。</li>
+        <li>爆发: 爆发训练本身不靠氧化系统主导，但氧化能力好能帮助间歇间恢复，维持多组质量。</li>
+        <li>耐力: 长时间稳定训练是氧化系统主课，目标是提高线粒体、毛细血管、脂肪氧化和配速耐受。</li>
+        <li>康复: 低冲击有氧如步行、骑车、椭圆机可提升循环和恢复，但强度要低到不加重症状。</li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2>练习题</h2>
+      <div class="quiz">
+        <h3>1. 下列哪个运动最典型依赖氧化系统？</h3>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">A.</span>单次 1RM 深蹲</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">B.</span>10 秒全力冲刺</div>
+        <div class="opt" onclick="pick(this,'correct')"><span class="lbl">C.</span>60 分钟稳定骑行</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">D.</span>30 秒高强度战绳</div>
+        <button onclick="document.getElementById('ans1').classList.add('show')">查看解析</button>
+        <div class="reveal" id="ans1">答案 C。A 和 B 更偏 ATP-PCr；D 时间短且强度高，糖酵解压力明显；60 分钟稳定骑行持续时间长、强度可控，氧化系统贡献最大。</div>
+      </div>
+
+      <div class="quiz">
+        <h3>2. 关于低强度运动和脂肪供能，哪项正确？</h3>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">A.</span>低强度只烧脂肪，不用糖</div>
+        <div class="opt" onclick="pick(this,'correct')"><span class="lbl">B.</span>低强度脂肪供能比例较高，但糖也参与</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">C.</span>脂肪供能比例高就一定最减脂</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">D.</span>高强度完全不能用脂肪</div>
+        <button onclick="document.getElementById('ans2').classList.add('show')">查看解析</button>
+        <div class="reveal" id="ans2">答案 B。身体同时使用多种底物，只是比例变化。A 和 D 把系统说成开关，错误；C 忽略总能量消耗、饮食和长期能量平衡。</div>
+      </div>
+
+      <div class="quiz">
+        <h3>3. 多选: 哪些因素会影响氧化系统能力？</h3>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">A.</span>线粒体数量与酶活性</div>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">B.</span>心肺供氧与血液运输</div>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">C.</span>毛细血管密度</div>
+        <div class="opt" onclick="pickMulti(this)"><span class="lbl">D.</span>只要意志力强，生理能力不重要</div>
+        <button onclick="document.getElementById('ans3').classList.add('show')">查看解析</button>
+        <div class="reveal" id="ans3">答案 A、B、C。氧化系统需要把氧送到肌肉、让线粒体处理燃料，并把产物和热量带走。D 错在忽略生理限制；意志能帮助执行，但不能替代供氧、线粒体和毛细血管适应。</div>
+      </div>
+
+      <div class="quiz">
+        <h3>4. 案例题: 会员说“我只做力量，不需要有氧”，你怎么解释？</h3>
+        <button onclick="document.getElementById('ans4').classList.add('show')">查看解析</button>
+        <div class="reveal" id="ans4">可以这样答: 最大力量单次输出确实主要靠 ATP-PCr，不是氧化系统主导；但组间恢复、心率下降、PCr 再合成、代谢压力处理都需要氧化能力。建议保留适量低到中等强度有氧，放在不干扰大重量训练的位置。错误做法是把有氧堆到影响下肢恢复，或把有氧完全砍掉导致体能底盘太差。</div>
+      </div>
+    </section>
+
+    <footer>阶段1基础科学 · Day 24/112 · 今日早间新知识(工作日6:00) · 中午12:00复习巩固</footer>
+  </main>
+
+  <div class="lightbox" id="lightbox"><img src="" alt="放大学习图"></div>
+  <script>
+    document.querySelectorAll('ul.kp>li>.kp-head').forEach(function(h){
+      h.addEventListener('click',function(){h.parentElement.classList.toggle('open')});
+    });
+    function pick(el,type){
+      el.closest('.quiz').querySelectorAll('.opt').forEach(function(o){o.classList.remove('correct','wrong-show')});
+      el.classList.add(type==='correct'?'correct':'wrong-show');
+    }
+    function pickMulti(el){
+      if(el.classList.contains('correct')||el.classList.contains('wrong-show')){
+        el.classList.remove('correct');el.classList.remove('wrong-show');
+      } else {
+        el.classList.add(el.dataset.c==='1'?'correct':'wrong-show');
+      }
+    }
+    document.querySelectorAll('.reveal').forEach(function(r){r.classList.remove('show')});
+    var lb=document.getElementById('lightbox');
+    document.querySelectorAll('.figure img').forEach(function(img){
+      img.addEventListener('click',function(){lb.querySelector('img').src=img.src;lb.classList.add('show')});
+    });
+    lb.addEventListener('click',function(e){if(e.target===lb)lb.classList.remove('show')});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('show')});
+  </script>
+</body>
+</html>

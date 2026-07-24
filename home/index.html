@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="FitnessStudy - 系统健身知识库" />
+    <title>FitnessStudy | 科学训练，从理解身体开始</title>
+    <link rel="icon" type="image/svg+xml" href="../html/assets/fitness-study-logo-open-circle.svg" />
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <nav class="nav" aria-label="主导航">
+      <a class="brand" href="#top" aria-label="FitnessStudy 首页">
+        <img src="../html/assets/fitness-study-logo-open-circle.svg" alt="" />
+        <span>Fitness<span>Study</span></span>
+      </a>
+      <div class="nav-links">
+        <a href="#anatomy">人体</a>
+        <a href="#training">训练</a>
+        <a href="#nutrition">饮食</a>
+          <a class="nav-cta" href="../library/">进入知识库 <span aria-hidden="true">→</span></a>
+      </div>
+    </nav>
+
+    <main id="top">
+      <!-- 01 · DNA hero -->
+      <section class="hero" aria-label="首页主视觉">
+        <canvas id="dna-canvas" aria-hidden="true"></canvas>
+        <div class="hero-inner">
+          <p class="eyebrow"><span></span> FITNESSSTUDY · 系统健身知识库</p>
+          <h1>理解身体，<br />训练才有<em>方向</em>。</h1>
+          <p class="hero-sub">从骨骼、肌肉到能量系统——把人体科学翻译成可执行的训练与饮食决策。</p>
+          <div class="hero-actions">
+            <a class="btn-primary" href="../library/">进入知识库 <span aria-hidden="true">→</span></a>
+            <a class="btn-ghost" href="#training">了解课程体系</a>
+          </div>
+        </div>
+        <p class="hero-scroll" aria-hidden="true">SCROLL<span></span></p>
+      </section>
+
+      <!-- 02 · anatomy video -->
+      <section class="anatomy-section" id="anatomy">
+        <div class="anatomy-ghost" aria-hidden="true">ANATOMY</div>
+        <div class="anatomy-copy">
+          <p class="section-label">01 / HUMAN MOVEMENT</p>
+          <h2>身体从不孤立<br />完成一个动作。</h2>
+          <p>骨骼提供结构，神经系统发出信号，肌肉产生力量。FitnessStudy 把这些层级放进同一套训练语言。</p>
+          <dl class="anatomy-list">
+            <div><dt>骨骼</dt><dd>结构与关节运动</dd></div>
+            <div><dt>神经</dt><dd>控制与肌肉募集</dd></div>
+            <div><dt>肌肉</dt><dd>力量与动作表现</dd></div>
+          </dl>
+        </div>
+        <div class="anatomy-media" aria-label="骨骼、经脉与肌肉动态演示">
+          <video autoplay muted loop playsinline preload="metadata">
+            <source src="../html/assets/home/fullbody-anatomy.mp4" type="video/mp4" />
+          </video>
+          <p>ANATOMY / 01</p>
+        </div>
+      </section>
+
+      <!-- 03 · training -->
+      <section class="training-section" id="training" aria-labelledby="training-title">
+        <div class="training-heading">
+          <p class="section-label">02 / TRAINING</p>
+          <h2 id="training-title">训练知识，<br />应该成为你的判断力。</h2>
+          <p>从人体基础到训练科学，按逻辑组织知识，而非堆叠碎片结论。</p>
+          <a class="button-light" href="../library/">打开知识库 <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="training-grid">
+          <article>
+            <span>01</span>
+            <h3>人体基础</h3>
+            <p>骨骼、关节、肌肉与神经控制，理解动作如何发生。</p>
+            <i aria-hidden="true">→</i>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>训练科学</h3>
+            <p>生物力学、能量系统、训练适应，建立训练逻辑。</p>
+            <i aria-hidden="true">→</i>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>实践应用</h3>
+            <p>动作库、肌肉图谱、复习系统，把知识变成行动。</p>
+            <i aria-hidden="true">→</i>
+          </article>
+        </div>
+      </section>
+
+      <!-- 04 · nutrition -->
+      <section class="nutrition-section" id="nutrition" aria-labelledby="nutrition-title">
+        <div class="nutrition-ghost" aria-hidden="true">FUEL</div>
+        <div class="nutrition-title-block">
+          <p class="section-label">03 / NUTRITION</p>
+          <h2 id="nutrition-title">吃得明白，<br />训练才会有结果。</h2>
+        </div>
+        <div class="nutrition-cards">
+          <article><span>CARBOHYDRATE</span><strong>训练燃料</strong><p>为训练强度与恢复提供可用能量。</p></article>
+          <article><span>PROTEIN</span><strong>修复原料</strong><p>支持肌肉修复，帮助长期适应训练。</p></article>
+          <article><span>FAT</span><strong>长期能量</strong><p>维持激素与脂溶性维生素吸收。</p></article>
+        </div>
+        <a class="nutrition-link" href="../library/">进入营养学模块 <span aria-hidden="true">→</span></a>
+      </section>
+    </main>
+
+    <footer>
+      <strong>FITNESSSTUDY</strong>
+      <span>科学训练，从理解身体开始</span>
+      <a href="../library/">进入知识库 →</a>
+    </footer>
+    <script src="home.js"></script>
+  </body>
+</html>

@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 26 · 神经肌肉接头与兴奋-收缩耦联完整钙链条</title>
+<link rel="icon" type="image/svg+xml" href="assets/fitness-study-logo-open-circle.svg">
+  <style>
+    *{box-sizing:border-box;letter-spacing:0}
+    body{margin:0;padding:18px;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.7;background:#f6f8f7;color:#1a2b22}
+    .wrap{max-width:980px;margin:0 auto}
+    .header{padding:22px 6px 14px}
+    .header h1{margin:0 0 10px;font-size:clamp(1.55rem,3vw,2.3rem);line-height:1.14;background:linear-gradient(90deg,#0ea66b,#0ea5e9);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .sub{color:#5a6b62}
+    .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+    .chip{font-size:.78rem;border:1px solid #d4ebe0;border-radius:999px;padding:3px 10px;background:#fff;color:#0c6da3;font-weight:700}
+    .panel,.figure,.warn{background:#fff;border:1px solid #e2e8e4;border-radius:14px;padding:18px;margin:14px 0;box-shadow:0 2px 12px rgba(20,40,30,.06)}
+    .lead{border-left:4px solid #0ea66b}
+    .orange{border-left:4px solid #ea7a17}
+    .warn{border-left:4px solid #e23b3b}
+    .panel h2,.warn h2{margin:0 0 10px;font-size:1.08rem;color:#0a7d52}
+    .figure img{width:100%;display:block;border-radius:12px;border:1px solid #e2e8e4;background:#fbfdfc;cursor:zoom-in}
+    .caption{font-size:.86rem;color:#5a6b62;margin-top:8px;text-align:center}
+    .take{border-left:4px solid #0ea66b;background:#f0fbf5;border-radius:10px;padding:10px 12px;margin:10px 0}
+    .term{font-weight:800;color:#0a7d52;background:#e8f5ee;border-radius:5px;padding:1px 5px}
+    ul.kp{list-style:none;padding:0;margin:0}
+    ul.kp>li{border-bottom:1px dashed #e2e8e4}
+    .kp-head{display:block;cursor:pointer;position:relative;padding:13px 8px 13px 30px}
+    .kp-head:before{content:"▸";position:absolute;left:8px;color:#0ea66b;font-weight:800;transition:.2s}
+    .open>.kp-head:before{transform:rotate(90deg)}
+    .kp-head:hover{background:#f0f4f2}
+    .kp-body{display:none;padding:0 14px 16px 30px}
+    .open>.kp-body{display:block}
+    .dim{display:block;margin-top:10px;font-size:.78rem;font-weight:800;color:#0c6da3}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin:12px 0}
+    .explain-card,.mini{border:1px solid #dbe8e1;border-radius:12px;background:#fbfdfc;padding:12px}
+    .explain-card h4,.mini h4{margin:0 0 7px;font-size:.98rem;color:#0a7d52}
+    .tbl{width:100%;border-collapse:collapse;font-size:.9rem;margin:10px 0}
+    .tbl th{background:#0ea66b;color:#fff;text-align:left}
+    .tbl th,.tbl td{padding:8px;border-bottom:1px solid #e2e8e4;vertical-align:top}
+    .mnemonic{background:linear-gradient(135deg,#0ea66b,#0ea5e9);color:#fff;border-radius:14px;padding:20px;margin:14px 0;box-shadow:0 2px 12px rgba(20,40,30,.08)}
+    .mnemonic h2{margin:0 0 8px;font-size:1.1rem}
+    .mnemonic strong{color:#fff7d6}
+    .card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+    .flip{min-height:145px;perspective:800px;cursor:pointer}
+    .flip-inner{position:relative;width:100%;height:100%;min-height:145px;transition:transform .5s;transform-style:preserve-3d}
+    .flip.flipped .flip-inner{transform:rotateY(180deg)}
+    .face{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:15px;border-radius:13px;border:1px solid #e2e8e4;backface-visibility:hidden;background:#fff;font-weight:700}
+    .front{color:#0a7d52;background:#f8fffb}
+    .back{transform:rotateY(180deg);background:#eef7ff;color:#0c6da3;font-weight:600}
+    .quiz{border-top:1px dashed #e2e8e4;padding-top:12px;margin-top:12px}
+    .quiz h3{margin:0 0 8px;font-size:1rem;color:#1a2b22}
+    .opt{border:1px solid #e2e8e4;border-radius:10px;padding:9px 10px;margin:7px 0;background:#fff;cursor:pointer}
+    .opt:hover{background:#f0f4f2}
+    .lbl{font-weight:800;color:#0c6da3;margin-right:4px}
+    .correct{border-color:#0ea66b!important;background:#e9f8f0!important}
+    .wrong-show{border-color:#e23b3b!important;background:#fff0f0!important}
+    button{border:0;border-radius:999px;background:#0ea66b;color:#fff;font-weight:800;padding:8px 14px;cursor:pointer;margin-top:6px}
+    .reveal{display:none;border-left:4px solid #0ea5e9;background:#f0f8fc;border-radius:10px;padding:10px;margin-top:8px}
+    .reveal.show{display:block}
+    .list{padding-left:20px;margin:8px 0}
+    .list li{margin:7px 0}
+    footer{text-align:center;color:#5a6b62;font-size:.85rem;margin:22px 0}
+    .lightbox{position:fixed;inset:0;background:rgba(0,0,0,.82);display:none;align-items:center;justify-content:center;z-index:9;padding:18px}
+    .lightbox.show{display:flex}
+    .lightbox img{max-width:96vw;max-height:92vh;border-radius:10px;background:#fff}
+    @media(max-width:640px){
+      body{padding:10px}
+      .panel,.figure,.warn{padding:14px}
+      .kp-body{padding-left:14px}
+      .card-grid{grid-template-columns:1fr}
+    }
+  
+/* Day1 title alignment override */
+.header,
+header {
+  text-align: left !important;
+  padding: 22px 4px 14px !important;
+}
+.header h1,
+header h1,
+h1 {
+  background: none !important;
+  -webkit-background-clip: initial !important;
+  background-clip: initial !important;
+  color: #111113 !important;
+  font-size: clamp(1.45rem, 3vw, 2.25rem) !important;
+  line-height: 1.16 !important;
+  margin-bottom: 8px !important;
+  letter-spacing: 0 !important;
+}
+.header h1::before,
+header h1::before {
+  content: "";
+  display: block;
+  width: 34px;
+  height: 4px;
+  border-radius: 999px;
+  background: #ff5a1f;
+  margin-bottom: 10px;
+}
+.chips,
+.meta {
+  justify-content: flex-start !important;
+}
+.sub,
+.meta {
+  color: #71717a !important;
+}
+
+
+/* Day1 title chips override */
+.chip,
+.slot,
+.tag {
+  border: 1px solid #e4e4e7 !important;
+  border-radius: 999px !important;
+  background: #ffffff !important;
+  color: #71717a !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+}
+.chip:nth-child(1),
+.tag:nth-child(1) {
+  background: rgba(74, 222, 128, 0.16) !important;
+  border-color: transparent !important;
+  color: #15803d !important;
+}
+.chip:nth-child(2),
+.tag:nth-child(2) {
+  background: rgba(96, 165, 250, 0.16) !important;
+  border-color: transparent !important;
+  color: #2563eb !important;
+}
+
+
+/* Day1 mnemonic override */
+.mnemonic {
+  background: #ffffff !important;
+  border: 1px solid #e4e4e7 !important;
+  border-left: 4px solid #ff5a1f !important;
+  color: #111113 !important;
+  box-shadow: none !important;
+}
+.mnemonic strong {
+  color: #ff5a1f !important;
+}
+
+
+/* Day1 term highlight override */
+.term {
+  background: rgba(74, 222, 128, 0.16) !important;
+  border-radius: 6px !important;
+  padding: 1px 5px !important;
+}
+
+
+/* Day1 typography override */
+body {
+  font-size: 14px !important;
+  line-height: 1.65 !important;
+}
+p,
+li,
+td,
+th,
+.kp-head,
+.kp-body,
+.takeaway,
+.practice li,
+.question,
+.q,
+.answer,
+.reveal,
+.face,
+.mnemonic {
+  font-size: 14px !important;
+}
+.header h1,
+header h1,
+h1 {
+  font-size: clamp(1.45rem, 3vw, 2.25rem) !important;
+  line-height: 1.16 !important;
+}
+.panel h2,
+.warn h2,
+.card h2,
+h2 {
+  font-size: 1.05rem !important;
+}
+h3,
+.panel h3,
+.quiz h3,
+.question h3 {
+  font-size: 1rem !important;
+}
+.chip,
+.slot,
+.tag,
+.meta,
+.sub,
+.caption,
+.footer,
+footer,
+.dim {
+  font-size: 12px !important;
+}
+
+
+/* Day1 exact text sizing override */
+.sub { font-size: 14px !important; line-height: 1.65 !important; }
+.caption { font-size: 13.6px !important; line-height: 1.65 !important; }
+.footer,
+footer { font-size: 13.12px !important; line-height: 1.65 !important; }
+.dim { font-size: 12.48px !important; line-height: 1.65 !important; }
+.mnemonic strong { font-size: 14px !important; line-height: 1.65 !important; }
+
+
+/* Day1 flip card color override */
+.flip .face,
+.flip .front,
+.flip-inner .face:first-child,
+.flip-in .face:first-child {
+  background: #fafafa !important;
+  color: #111113 !important;
+  border-color: #e4e4e7 !important;
+}
+.flip .back,
+.flip-inner .back,
+.flip-in .back,
+.flip-inner .face.back,
+.flip-in .face.back {
+  background: #0ea66b !important;
+  color: #ffffff !important;
+  border-color: #0ea66b !important;
+}
+
+</style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="header">
+      <h1>Day 26 · 神经肌肉接头与兴奋-收缩耦联完整钙链条</h1>
+      <div class="sub">今天主题: 神经信号怎么变成肌肉收缩，钙离子在哪一步最关键。</div>
+      <div class="chips">
+        <span class="chip">第4周 · 阶段1基础科学</span>
+        <span class="chip">NSCA + NASM 双证</span>
+        <span class="chip">早间新知识</span>
+      </div>
+    </header>
+
+    <section class="panel lead">
+      <h2>一句话总结</h2>
+      <p><strong>肌肉不是“听见神经就立刻缩”，而是先在神经肌肉接头接收乙酰胆碱，再沿肌膜和横管把信号送进肌纤维，最后靠肌浆网放钙、钙去推开原肌球蛋白，横桥才有机会抓住肌动蛋白。</strong> 这条链一断，力就上不去。</p>
+    </section>
+
+    <figure class="figure">
+      <img id="mainFig" src="assets/阶段1基础科学/day26-神经肌肉接头与兴奋-收缩耦联完整钙链条.png" alt="神经肌肉接头与兴奋-收缩耦联完整钙链条中文标注学习图">
+      <div class="caption">看图重点: 先看神经末梢释放乙酰胆碱，再看肌膜去极化、T 管传信、肌浆网放钙，最后钙推动横桥结合。</div>
+    </figure>
+
+    <section class="panel">
+      <h2>核心要点</h2>
+      <ul class="kp">
+        <li>
+          <span class="kp-head"><span class="term">神经肌肉接头</span>: 运动神经末梢释放乙酰胆碱，肌膜先接到“开工信号”。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 神经信号到肌肉之间，不是电线直连，而是靠化学信号传话。</div>
+            <div class="grid">
+              <div class="explain-card">
+                <h4>字面意思</h4>
+                <p>神经末梢释放乙酰胆碱(ACh, acetylcholine)，ACh 进入突触间隙并结合肌膜受体，促使钠离子内流，肌膜去极化，动作电位从这里开始。</p>
+              </div>
+              <div class="explain-card">
+                <h4>大白话</h4>
+                <p>像按门铃。神经不是亲手把门推开，而是先按响门铃；肌肉门口受体听到后，才把“有人来了”变成可传播信号。</p>
+              </div>
+              <div class="explain-card">
+                <h4>训练含义</h4>
+                <p>起跳、起杠、冲刺前几步都看这层。神经驱动差时，肌肉不是完全没力，而是启动慢、发力散、峰值来得晚。</p>
+              </div>
+            </div>
+            <span class="dim">底层机制</span>
+            <p>乙酰胆碱进入突触间隙后，不是直接让肌纤维缩短，而是先改变肌膜电位。只有肌膜完成去极化，后续信号才有机会沿整条肌纤维跑开。</p>
+            <span class="dim">真实例子</span>
+            <p>举 1RM、起跳、短冲刺时，神经系统要先把大量运动单位叫醒。没有这一层，肌肉横截面积再大也不一定能立刻出力。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为 ACh(乙酰胆碱) 直接“把肌肉拉短”。✅其实它只是点火，真正收缩还要后面钙链条接上。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">动作电位传导</span>: 信号沿肌膜走，再钻进横管 T-tubule，触发深部肌纤维同步反应。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 横管像“地铁隧道”，把表面电信号带进肌纤维深处。</div>
+            <div class="grid">
+              <div class="explain-card">
+                <h4>表面信号</h4>
+                <p>肌膜去极化只是在肌纤维表面点火。没有横管，深处肌原纤维收到命令会慢，整块肌肉难以同步发力。</p>
+              </div>
+              <div class="explain-card">
+                <h4>深部传导</h4>
+                <p>T-tubule 是肌膜向内凹陷形成的管道，把动作电位带到肌纤维内部，贴近肌浆网钙释放通道。</p>
+              </div>
+              <div class="explain-card">
+                <h4>输出质量</h4>
+                <p>越需要爆发，越需要信号到达快且同步。疲劳后发力断续，常和膜兴奋性、离子环境、钙释放效率一起有关。</p>
+              </div>
+            </div>
+            <table class="tbl">
+              <tr><th>步骤</th><th>发生什么</th><th>意义</th></tr>
+              <tr><td>肌膜去极化</td><td>ACh(乙酰胆碱) 让膜电位改变。</td><td>把“神经到达”变成可传播的电信号。</td></tr>
+              <tr><td>T 管传导</td><td>动作电位沿横管下潜。</td><td>让深层肌原纤维一起收到命令。</td></tr>
+              <tr><td>SR 触发放钙</td><td>肌浆网打开钙库。</td><td>把信号翻译成可收缩状态。</td></tr>
+            </table>
+            <span class="dim">训练含义</span>
+            <p>大肌群动作不是只靠表层几根纤维干活。T 管和 SR 的同步性越好，整块肌肉越容易一起上场，动作越干脆。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为电信号只在肌膜表面走一圈。✅其实关键是进入 T 管，把深处也叫醒。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">钙链条</span>: Ca2+ 结合肌钙蛋白，原肌球蛋白移位，横桥才露出结合位点。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 钙不是“肌肉的能量”，而是“开锁钥匙”。</div>
+            <div class="grid">
+              <div class="explain-card">
+                <h4>字面意思</h4>
+                <p>Ca2+ 从肌浆网释放到胞质，结合肌钙蛋白后改变其形状，原肌球蛋白移开，肌动蛋白上的结合位点露出来。</p>
+              </div>
+              <div class="explain-card">
+                <h4>大白话</h4>
+                <p>像把挡住门把手的横杆移开。横杆移开后，手才能抓上门把；钙做的是“开锁”，不是亲自把门拉开。</p>
+              </div>
+              <div class="explain-card">
+                <h4>训练含义</h4>
+                <p>高强度后半段掉速，不只因 ATP 少。Ca2+ 释放/回收、H+、K+ 等局部环境变差，也会让横桥抓拉效率下降。</p>
+              </div>
+            </div>
+            <span class="dim">底层机制</span>
+            <p>Day6 讲过横桥循环，但那时缺的是“位点是否开放”。现在补齐这一步: 没有钙，原肌球蛋白挡住结合位点，横桥再想抓也抓不到。</p>
+            <span class="dim">真实例子</span>
+            <p>力量掉速时，不一定是肌肉“没劲”，也可能是钙释放、回收或局部离子环境让横桥效率下降。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为钙就是收缩本身。✅其实钙更像“允许收缩发生”的开关。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">运动单位</span>: 一个 α 运动神经元及其支配的所有肌纤维，是募集的基本单位。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 你不是一根一根叫肌纤维，是按“运动单位”打包叫醒。</div>
+            <div class="grid">
+              <div class="explain-card">
+                <h4>字面意思</h4>
+                <p>一个 α 运动神经元连着一组肌纤维。只要这个神经元发放信号，它支配的整组肌纤维会按同一命令响应。</p>
+              </div>
+              <div class="explain-card">
+                <h4>大白话</h4>
+                <p>像一个遥控器管一排灯泡。你按一次不是只亮一盏，而是一组一起亮；不同遥控器管的灯泡数量也不同。</p>
+              </div>
+              <div class="explain-card">
+                <h4>训练含义</h4>
+                <p>新手力量先涨，常不是肌肉立刻变大，而是神经更会招人、发放更稳、协同肌少抢戏，主动肌输出更集中。</p>
+              </div>
+            </div>
+            <span class="dim">大小原则(Size Principle)</span>
+            <p>小运动单位先募集，大运动单位后募集。低力任务先叫小队伍，高力任务再把大队伍拉上来。</p>
+            <table class="tbl">
+              <tr><th>单位</th><th>特征</th><th>先后</th></tr>
+              <tr><td>小单位</td><td>阈值低、耐疲劳、常见于轻稳动作。</td><td>先上</td></tr>
+              <tr><td>大单位</td><td>阈值高、爆发强、也更容易疲劳。</td><td>后上</td></tr>
+            </table>
+            <span class="dim">常见误解</span>
+            <p>❌以为轻重量“只练小纤维”。✅其实轻重量也会带动高次数和疲劳，只是大单位更晚加入。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">去募集</span>: 力减小时，大运动单位先退出，系统按需降档。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: 招人容易，撤人也有顺序；不是所有单位同时下班。</div>
+            <div class="grid">
+              <div class="explain-card">
+                <h4>发生什么</h4>
+                <p>外部负荷变轻、动作越过最难点、或中枢驱动下降时，高阈值大单位通常先撤出，小单位保留更久负责低力控制。</p>
+              </div>
+              <div class="explain-card">
+                <h4>为什么重要</h4>
+                <p>这解释了为什么收杠、落杠、减速和动作结束不是“突然没力”，而是神经系统按输出需求逐步降档。</p>
+              </div>
+              <div class="explain-card">
+                <h4>训练含义</h4>
+                <p>爆发训练要避免太早疲劳，否则大单位刚上场就被迫退。控制训练则要练会平稳降档，别让动作结束乱晃。</p>
+              </div>
+            </div>
+            <span class="dim">真实例子</span>
+            <p>深蹲起立时，大单位在最难那一段帮助撑住；站稳后，系统自然会逐步撤兵，不会一直硬撑。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为“募集”只会加，不会减。✅其实力下降时，去募集同样是神经控制的一部分。</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="kp-head"><span class="term">完整链条</span>: 神经信号、钙离子、横桥和运动单位是一条线，不是四个孤立知识点。</span>
+          <div class="kp-body">
+            <div class="take">先抓结论: Day6 讲横桥，Day26 补“谁让横桥能开始”。</div>
+            <div class="grid">
+              <div class="explain-card">
+                <h4>链条顺序</h4>
+                <p>神经末梢放 ACh(乙酰胆碱) → 肌膜去极化 → T 管把信号送深 → SR 放 Ca2+ → 钙结合肌钙蛋白 → 横桥结合肌动蛋白。</p>
+              </div>
+              <div class="explain-card">
+                <h4>训练里怎么看</h4>
+                <p>爆发、力量和动作质量都受这条链影响。链越顺，神经命令越能兑现成实际力；链卡住，表现就是慢、抖、掉速。</p>
+              </div>
+              <div class="explain-card">
+                <h4>和 Day27 的关系</h4>
+                <p>募集是“叫谁上”，E-C coupling 是“叫上之后怎么缩”。Day27 会继续讲发放频率、同步化和神经效率。</p>
+              </div>
+            </div>
+            <span class="dim">训练判断</span>
+            <p>如果动作慢、抖、掉速快，别只怪肌肉“没练大”。也要看神经驱动、钙处理和局部兴奋性有没有卡住。</p>
+            <span class="dim">常见误解</span>
+            <p>❌以为神经问题和肌肉问题是两张皮。✅其实神经输出、钙链条和横桥效率是一整套。</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="warn">
+      <h2>常见误区</h2>
+      <p>❌很多人以为 ACh(乙酰胆碱) 直接让肌肉缩短。✅其实它先让肌膜去极化，后面还有 T 管和 SR 放钙。</p>
+      <p>❌很多人以为钙是能量。✅其实钙是开关，不是燃料。</p>
+      <p>❌很多人以为小运动单位等于小肌肉。✅其实是神经元支配的纤维数量和阈值不同，不是肌肉大小本身。</p>
+    </section>
+
+    <section class="mnemonic">
+      <h2>记忆口诀</h2>
+      <p><strong>铃一响，膜先亮；T 管传，SR 放钙；钙开门，桥来抓；小先上，大后到；力一降，大先退。</strong> 记住这句，整条链就顺了。</p>
+    </section>
+
+    <section class="panel">
+      <h2>翻转卡复习</h2>
+      <div class="card-grid">
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">ACh 到底是什么？</div><div class="face back">ACh = acetylcholine，中文叫乙酰胆碱；它是接头处化学信号，先让肌膜去极化。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">T 管像什么？</div><div class="face back">像隧道，把表面电信号带进肌纤维深处，让整块肌肉一起响应。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">Ca2+ 做什么？</div><div class="face back">它和肌钙蛋白结合，挪开原肌球蛋白，暴露横桥结合位点。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">大小原则是什么？</div><div class="face back">小运动单位先募集，大运动单位后募集。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">去募集谁先走？</div><div class="face back">力下降时，大运动单位通常先退出。</div></div></div>
+        <div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face front">Day6 和 Day26 怎么接？</div><div class="face back">Day6 讲横桥怎么滑，Day26 讲钙怎么把横桥门打开。</div></div></div>
+      </div>
+    </section>
+
+    <section class="panel orange">
+      <h2>实操关联</h2>
+      <ul class="list">
+        <li>增肌: 先保动作质量，再追求足够募集和总张力；中后段掉速明显，常说明神经驱动和离子环境开始累。</li>
+        <li>爆发: 重点是高阈值运动单位能不能被及时叫醒，起杠、起跳、起跑都看这条链。</li>
+        <li>耐力: 更看重复募集和恢复能力；如果每次都叫不回去，后面动作就会散。</li>
+        <li>康复: 先把神经-肌肉重新接通，再谈负荷进阶，别一上来就硬堆重量。</li>
+        <li>技术: 动作越干净，说明神经传导、募集和钙链条越顺，代偿越少。</li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2>练习题</h2>
+      <div class="quiz">
+        <h3>1. 单选: 乙酰胆碱最先做什么？</h3>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">A.</span>直接让肌动蛋白和肌球蛋白结合</div>
+        <div class="opt" onclick="pick(this,'correct')"><span class="lbl">B.</span>让肌膜去极化，启动动作电位</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">C.</span>直接从肌浆网释放钙离子</div>
+        <button onclick="document.getElementById('ans1').classList.add('show')">查看解析</button>
+        <div class="reveal" id="ans1">答案 B。ACh 是 acetylcholine(乙酰胆碱)，先绑定受体，引发肌膜去极化。A 错在跳过电信号；C 错在把 ACh 和 SR 放钙混为一谈。</div>
+      </div>
+      <div class="quiz">
+        <h3>2. 单选: 钙离子的核心作用是什么？</h3>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">A.</span>提供 ATP</div>
+        <div class="opt" onclick="pick(this,'correct')"><span class="lbl">B.</span>暴露肌动蛋白结合位点</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">C.</span>让肌纤维自发变短</div>
+        <button onclick="document.getElementById('ans2').classList.add('show')">查看解析</button>
+        <div class="reveal" id="ans2">答案 B。Ca2+ 结合肌钙蛋白后，原肌球蛋白移位，横桥才有位置可抓。A 错在把钙当能量；C 错在把“允许收缩”误成“直接收缩”。</div>
+      </div>
+      <div class="quiz">
+        <h3>3. 多选: 哪些说法对运动单位正确？</h3>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">A.</span>一个 α 运动神经元及其支配的所有肌纤维</div>
+        <div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">B.</span>募集按大小原则进行</div>
+        <div class="opt" onclick="pickMulti(this)"><span class="lbl">C.</span>大单位通常最先募集</div>
+        <div class="opt" onclick="pickMulti(this)"><span class="lbl">D.</span>去募集时大单位常先退出</div>
+        <button onclick="document.getElementById('ans3').classList.add('show')">查看解析</button>
+        <div class="reveal" id="ans3">答案 A、B、D。C 错。运动单位是神经元加其支配纤维的组合，不是单根肌纤维；大小原则是小先大后；去募集时高阈值大单位通常先退。</div>
+      </div>
+      <div class="quiz">
+        <h3>4. 案例: 你做 1RM 深蹲起杠时，为什么越到最难点越需要神经驱动？</h3>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">A.</span>因为钙变成了燃料</div>
+        <div class="opt" onclick="pick(this,'wrong')"><span class="lbl">B.</span>因为大单位必须先退出</div>
+        <div class="opt" onclick="pick(this,'correct')"><span class="lbl">C.</span>因为需要更高阈值运动单位更快加入，钙链条也要完整</div>
+        <button onclick="document.getElementById('ans4').classList.add('show')">查看解析</button>
+        <div class="reveal" id="ans4">答案 C。最难点需要更多高阈值单位参与，同时 ACh(乙酰胆碱) 传导、T 管传信和 SR 放钙要顺。A 错在把钙当燃料；B 错在方向反了，大单位是参与，不是先退出。</div>
+      </div>
+    </section>
+
+    <footer>阶段1基础科学 · Day 26/112 · 今日早间新知识(工作日6:00) · 中午12:00复习巩固</footer>
+  </main>
+  <div class="lightbox" id="lightbox" aria-hidden="true"><img id="lightboxImg" alt=""></div>
+  <script>
+    document.querySelectorAll('ul.kp>li>.kp-head').forEach(function(h){
+      h.addEventListener('click',function(){h.parentElement.classList.toggle('open')});
+    });
+    function pick(el,type){
+      el.parentElement.querySelectorAll('.opt').forEach(function(o){o.classList.remove('wrong-show','correct')});
+      el.classList.add(type==='correct'?'correct':'wrong-show');
+    }
+    function pickMulti(el){
+      if(el.classList.contains('correct')||el.classList.contains('wrong-show')){
+        el.classList.remove('correct');el.classList.remove('wrong-show');
+      } else {
+        el.classList.add(el.dataset.c==='1'?'correct':'wrong-show');
+      }
+    }
+    document.querySelectorAll('.flip').forEach(function(card){
+      card.addEventListener('click',function(){card.classList.toggle('flipped')});
+    });
+    document.querySelectorAll('.figure img').forEach(function(img){
+      img.addEventListener('click',function(){
+        var lightbox=document.getElementById('lightbox');
+        var lightboxImg=document.getElementById('lightboxImg');
+        lightboxImg.src=img.src;
+        lightbox.classList.add('show');
+        lightbox.setAttribute('aria-hidden','false');
+      });
+    });
+    document.getElementById('lightbox').addEventListener('click',function(e){
+      if(e.target.id==='lightbox' || e.target.id==='lightboxImg'){
+        e.currentTarget.classList.remove('show');
+        e.currentTarget.setAttribute('aria-hidden','true');
+      }
+    });
+    document.addEventListener('keydown',function(e){
+      if(e.key==='Escape'){
+        var lightbox=document.getElementById('lightbox');
+        lightbox.classList.remove('show');
+        lightbox.setAttribute('aria-hidden','true');
+      }
+    });
+  </script>
+</body>
+</html>
