@@ -273,6 +273,18 @@ function findAiVisual(day, eyebrow, title = "") {
   const dir = path.join(ROOT, "xhs", `day${String(day).padStart(2, "0")}`, "ai-visuals");
   if (!fs.existsSync(dir)) return "";
   const files = fs.readdirSync(dir).filter((file) => /\.(png|jpe?g|webp)$/i.test(file)).sort();
+  const day32Visuals = {
+    "02": "visual-02-four-chambers-v2.png",
+    "03": "visual-03-circulation-v2.png",
+    "04": "visual-04-vessels-v2.png",
+    "05": "visual-05-airway-alveoli-v2.png",
+    "06": "visual-06-breathing-muscles-v2.png",
+    "07": "visual-07-oxygen-delivery-v2.png",
+  };
+  if (day === 32 && day32Visuals[eyebrow]) {
+    const match = files.find((file) => file === day32Visuals[eyebrow]);
+    if (match) return path.join("xhs", `day${String(day).padStart(2, "0")}`, "ai-visuals", match);
+  }
   const day16Slugs = {
     "00": "cover", "01": "lever-overview", "02": "three-elements", "03": "three-lever-classes",
     "04": "torque-moment-arm", "05": "curl-third-class", "06": "mechanical-advantage",
@@ -314,6 +326,7 @@ function findAiVisual(day, eyebrow, title = "") {
 }
 
 function buildSlides(lesson) {
+  if (lesson.day === 32) return buildDay32Slides(lesson);
   if (lesson.day === 16) return buildDay16Slides(lesson);
   if (lesson.day === 17) return buildDay17Slides(lesson);
   if (lesson.day === 18) return buildDay18Slides(lesson);
@@ -369,6 +382,52 @@ function buildSlides(lesson) {
       ],
       fill: [],
     },
+  ].map((slide) => {
+    const visualPath = slide.visualTitle ? findAiVisual(lesson.day, slide.eyebrow, slide.title) : "";
+    return visualPath ? { ...slide, visualImage: assetDataUrl(visualPath) } : slide;
+  });
+}
+
+function buildDay32Slides(lesson) {
+  const cardSlide = (eyebrow, title, lead, cards) => ({ type: "denseCompact", eyebrow, title, lead, visualTitle: title, cards, fill: [] });
+  return [
+    { type: "cover", kicker: `Day ${lesson.day} · ${lesson.cert}`, title: "心血管与呼吸系统解剖", subtitle: "氧怎么进肺、进血、再送到肌肉", image: assetDataUrl(findCoverVisual(lesson.day) || findThumbnail(lesson.day)), chips: [lesson.phase, "训练科学", "心肺解剖"] },
+    { type: "image", eyebrow: "01", title: "先看整条氧运输链", lead: "先把心脏、血管、肺和呼吸肌放在同一条链里，再看氧气怎样被装车、配送和使用。", image: assetDataUrl(findLessonImage(lesson.day)), points: [], fill: [] },
+    cardSlide("02", "心脏四腔：右去肺，左去身", "心脏不是一团混流，而是两套泵串联：右心负责去肺，左心负责去全身。", [
+      { title: "右心房 / 右心室", body: "右心房接回全身缺氧血，右心室把血送到肺循环。" },
+      { title: "左心房 / 左心室", body: "左心房接回肺来的含氧血，左心室再把血泵到全身。" },
+      { title: "训练判断", body: "心跳加快时，目的不是“乱跳”，而是把更多含氧血送向工作肌肉。" },
+    ]),
+    cardSlide("03", "瓣膜与双循环：只准单向流", "房室瓣和半月瓣像单向门，体循环和肺循环像两条接力线。", [
+      { title: "房室瓣 / 半月瓣", body: "房室瓣防回流心房，半月瓣防血倒回心室。" },
+      { title: "体循环", body: "左心室 → 全身毛细血管 → 静脉 → 右心房，负责供氧和回收。" },
+      { title: "肺循环", body: "右心室 → 肺 → 左心房，负责把二氧化碳卸下、把氧装上。" },
+    ]),
+    cardSlide("04", "血管三类：承压、回流、交换", "动脉、静脉和毛细血管分工不同，不要把它们都当“管子”。", [
+      { title: "动脉", body: "壁厚、弹性强，适合高压射血；收缩压上升和动脉承压有关。" },
+      { title: "静脉", body: "壁薄、常有瓣膜，负责低压回流；肌肉泵和呼吸泵会帮忙。" },
+      { title: "毛细血管", body: "壁最薄，是氧和代谢物交换主场；耐力训练常提高密度。" },
+    ]),
+    cardSlide("05", "呼吸道与肺泡：空气要走完整条路", "空气不是吸进来就完事，必须经过气道分级并在肺泡完成气体交换。", [
+      { title: "气道分级", body: "鼻/咽/喉/气管/支气管/细支气管/肺泡，层层把空气送到交换终点。" },
+      { title: "肺泡交换", body: "肺泡壁和毛细血管壁都很薄，氧进血，二氧化碳出血。" },
+      { title: "训练含义", body: "喘不是只看肺活量，而是通气需求、二氧化碳堆积和整条链一起在工作。" },
+    ]),
+    cardSlide("06", "呼吸肌：膈肌是主力", "呼吸不只为供氧，也参与核心稳定和腹压建立。", [
+      { title: "膈肌", body: "主要吸气肌，下降时胸腔容积变大，空气被吸入。" },
+      { title: "肋间肌", body: "帮助肋骨上提或下降，改变胸廓大小；高强度时辅助肌会参与。" },
+      { title: "腹压", body: "深蹲和硬拉里，呼吸也帮助建立腹内压，让躯干更稳。" },
+    ]),
+    cardSlide("07", "辅助呼吸肌：吸气和呼气分开看", "吸气辅助肌和呼气辅助肌不是一锅端，必须分开标、分开认。", [
+      { title: "吸气辅助肌", body: "胸锁乳突肌、斜角肌、胸大肌上部；高通气或呼吸困难时帮忙吸气。" },
+      { title: "呼气辅助肌", body: "腹直肌、腹外斜肌、腹内斜肌；用力呼气或高强度运动时更明显。" },
+      { title: "标图原则", body: "箭头必须落在肌腹，不落骨头；深层结构写“深层/不可见”。" },
+    ]),
+    cardSlide("08", "训练连接：心肺链条接上强度", "VO2max、心率储备和运动反应都建立在今天这条氧运输链上。", [
+      { title: "VO2max", body: "气进肺、氧进血、心脏泵血、血管配送、肌肉利用都算在内。" },
+      { title: "有氧训练", body: "让同样速度更轻松，因为泵血、交换和利用效率更好。" },
+      { title: "风险筛查", body: "力量训练里，过高血压反应或异常胸闷都要回到筛查流程。" },
+    ]),
   ].map((slide) => {
     const visualPath = slide.visualTitle ? findAiVisual(lesson.day, slide.eyebrow, slide.title) : "";
     return visualPath ? { ...slide, visualImage: assetDataUrl(visualPath) } : slide;

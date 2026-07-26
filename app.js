@@ -55,6 +55,7 @@ const publishedPages = new Map([
   [29, "html/day29-训练适应基本原则.html"],
   [30, "html/day30-FITT-VP训练变量与ACSM身体活动指南.html"],
   [31, "html/day31-PAR-Q+与医学筛查.html"],
+  [32, "html/day32-心血管与呼吸系统解剖.html"],
 ]);
 
 const generatedThumbs = new Map([
@@ -89,6 +90,7 @@ const generatedThumbs = new Map([
   [29, "html/thumbs/day29-training-adaptation-principles-thumbnail.png"],
   [30, "html/thumbs/day30-fitt-vp-acsm-guidelines-thumbnail.png"],
   [31, "html/thumbs/day31-par-q-medical-screening-thumbnail.png"],
+  [32, "html/thumbs/day32-cardiovascular-respiratory-anatomy-thumbnail.png"],
 ]);
 
 const categories = ["全部", "骨关节", "肌肉", "生物力学", "能量系统", "训练技术", "评估纠正", "营养", "模考"];

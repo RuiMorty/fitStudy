@@ -1,9 +1,9 @@
 /* FitnessStudy home — DNA helix hero animation */
 (() => {
-  const canvas = document.getElementById("dna-canvas");
+  const canvas = document.getElementById('dna-canvas');
   if (!canvas) return;
-  const ctx = canvas.getContext("2d");
-  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const ctx = canvas.getContext('2d');
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   const ORANGE = [239, 102, 53];
   const MINT = [62, 208, 165];
@@ -53,12 +53,25 @@
 
   function drawHelix() {
     const cx = w * 0.5 + (mouseX - 0.5) * 26;
-    const top = h * 0.07;
-    const span = h * 0.86;
-    const amp = Math.min(w * 0.3, 168);
-    const turns = 3.1;
-    const rungs = 42;
+    const cy = h * 0.5;
+    const top = h * 0.14;
+    const span = h * 0.72;
+    const amp = Math.min(w * 0.33, 100);
+    const turns = 1;
+    const rungs = 34;
+    const tilt = (-17 * Math.PI) / 180;
+    const tiltCos = Math.cos(tilt);
+    const tiltSin = Math.sin(tilt);
     const pts = [];
+
+    function project(x, y) {
+      const dx = x - cx;
+      const dy = y - cy;
+      return {
+        x: cx + dx * tiltCos - dy * tiltSin,
+        y: cy + dx * tiltSin + dy * tiltCos,
+      };
+    }
 
     for (let i = 0; i <= rungs; i += 1) {
       const p = i / rungs;
@@ -66,9 +79,11 @@
       const a = t + p * Math.PI * turns * 2;
       const s = Math.sin(a);
       const c = Math.cos(a); // depth of strand A, -1..1
-      pts.push({ x: cx + s * amp, y, z: c, rgb: ORANGE, strand: "A" });
-      pts.push({ x: cx - s * amp, y, z: -c, rgb: MINT, strand: "B" });
-      pts.push({ rung: true, x1: cx + s * amp, x2: cx - s * amp, y, z: c });
+      const aPoint = project(cx + s * amp, y);
+      const bPoint = project(cx - s * amp, y);
+      pts.push({ ...aPoint, z: c, rgb: ORANGE, strand: 'A' });
+      pts.push({ ...bPoint, z: -c, rgb: MINT, strand: 'B' });
+      pts.push({ rung: true, x1: aPoint.x, y1: aPoint.y, x2: bPoint.x, y2: bPoint.y, z: c });
     }
 
     // Painter's order: far points first.
@@ -77,15 +92,15 @@
     for (const pt of pts) {
       const depth = (pt.z + 1) / 2; // 0 far, 1 near
       if (pt.rung) {
-        const grad = ctx.createLinearGradient(pt.x1, pt.y, pt.x2, pt.y);
+        const grad = ctx.createLinearGradient(pt.x1, pt.y1, pt.x2, pt.y2);
         grad.addColorStop(0, rgba(ORANGE, 0.05 + depth * 0.28));
         grad.addColorStop(0.5, rgba([255, 255, 255], 0.03 + depth * 0.1));
         grad.addColorStop(1, rgba(MINT, 0.05 + depth * 0.28));
         ctx.strokeStyle = grad;
         ctx.lineWidth = 1;
         ctx.beginPath();
-        ctx.moveTo(pt.x1, pt.y);
-        ctx.lineTo(pt.x2, pt.y);
+        ctx.moveTo(pt.x1, pt.y1);
+        ctx.lineTo(pt.x2, pt.y2);
         ctx.stroke();
       } else {
         const r = 1.6 + depth * 3.4;
@@ -119,9 +134,13 @@
     still();
   } else {
     frame();
-    window.addEventListener("pointermove", (e) => {
-      mouseX = e.clientX / window.innerWidth;
-    }, { passive: true });
+    window.addEventListener(
+      'pointermove',
+      (e) => {
+        mouseX = e.clientX / window.innerWidth;
+      },
+      { passive: true },
+    );
     // Pause when hero is off-screen.
     const io = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting) {
@@ -133,7 +152,7 @@
     });
     io.observe(canvas);
   }
-  window.addEventListener("resize", () => {
+  window.addEventListener('resize', () => {
     resize();
     if (reduceMotion) still();
   });

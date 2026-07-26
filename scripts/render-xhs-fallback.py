@@ -7,7 +7,7 @@ import re
 from pathlib import Path
 from urllib.parse import quote
 
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageChops, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parents[1]
 WIDTH, HEIGHT = 1080, 1440
@@ -15,14 +15,16 @@ WIDTH, HEIGHT = 1080, 1440
 
 def font(size, bold=False):
     candidates = [
-        "/System/Library/Fonts/PingFang.ttc",
+        "/System/Library/Fonts/Hiragino Sans GB.ttc",
         "/System/Library/Fonts/STHeiti Light.ttc",
         "/Library/Fonts/Arial Unicode.ttf",
     ]
     for path in candidates:
         if os.path.exists(path):
             try:
-                return ImageFont.truetype(path, size=size, index=1 if bold else 0)
+                # Hiragino Sans GB W6/W3 keeps Chinese headings dense and legible in image posts.
+                index = 2 if bold and "Hiragino" in path else 0
+                return ImageFont.truetype(path, size=size, index=index)
             except Exception:
                 continue
     return ImageFont.load_default()
@@ -33,6 +35,8 @@ F_H1 = font(48, True)
 F_H2 = font(34, True)
 F_BODY = font(27)
 F_SMALL = font(23)
+F_BRAND = font(28, True)
+F_TAG = font(24, True)
 F_TINY = font(20)
 
 
@@ -143,11 +147,67 @@ def fit_image(path, box):
     return canvas
 
 
+def fit_image_tight(path, box):
+    """Crop generated visual whitespace before fitting it into a social card."""
+    img = Image.open(path).convert("RGB")
+    difference = ImageChops.difference(img, Image.new("RGB", img.size, "white"))
+    mask = difference.convert("L").point(lambda value: 255 if value > 22 else 0)
+    bounds = mask.getbbox()
+    if bounds:
+        left, top, right, bottom = bounds
+        padding = 38
+        img = img.crop((max(0, left - padding), max(0, top - padding), min(img.width, right + padding), min(img.height, bottom + padding)))
+    x, y, w, h = box
+    img.thumbnail((w, h), Image.LANCZOS)
+    canvas = Image.new("RGB", (w, h), "white")
+    canvas.paste(img, ((w - img.width) // 2, (h - img.height) // 2))
+    return canvas
+
+
+def paste_day32_cutout(canvas, path, box, trim=0):
+    """Place a Day32 illustration without its generated pale background."""
+    x, y, width, height = box
+    image = Image.open(path).convert("RGBA")
+    if trim:
+        image = image.crop((trim, trim, image.width - trim, image.height - trim))
+    image.thumbnail((width, height), Image.LANCZOS)
+    pixels = []
+    for red, green, blue, alpha in image.getdata():
+        minimum = min(red, green, blue)
+        spread = max(red, green, blue) - minimum
+        if minimum >= 194 and spread <= 78:
+            pixels.append((red, green, blue, 0))
+        elif minimum >= 170 and spread <= 78:
+            fade = int((194 - minimum) / 24 * 255)
+            pixels.append((red, green, blue, min(alpha, max(0, fade))))
+        else:
+            pixels.append((red, green, blue, alpha))
+    image.putdata(pixels)
+    canvas.paste(image, (x + (width - image.width) // 2, y + (height - image.height) // 2), image)
+
+
+def paste_transparent(canvas, path, box):
+    """Place an illustration that already has an alpha channel."""
+    x, y, width, height = box
+    image = Image.open(path).convert("RGBA")
+    image.thumbnail((width, height), Image.LANCZOS)
+    canvas.paste(image, (x + (width - image.width) // 2, y + (height - image.height) // 2), image)
+
+
+def paste_rounded(canvas, image, xy, radius=22):
+    x, y = xy
+    mask = Image.new("L", image.size, 0)
+    ImageDraw.Draw(mask).rounded_rectangle((0, 0, image.width, image.height), radius=radius, fill=255)
+    canvas.paste(image, (x, y), mask)
+
+
 def base_page():
     im = Image.new("RGB", (WIDTH, HEIGHT), "#f7f7f8")
     draw = ImageDraw.Draw(im)
     draw.rectangle((0, 0, WIDTH, 12), fill="#ff5a1f")
-    draw.text((72, 50), "健身学习", font=F_SMALL, fill="#111113")
+    draw.text((72, 50), "健身", font=F_BRAND, fill="#111113")
+    brand_width = draw.textlength("健身", font=F_BRAND)
+    draw.text((72 + brand_width, 50), "学习", font=F_BRAND, fill="#ff5a1f")
     return im, draw
 
 
@@ -263,6 +323,106 @@ def save_dense_slide(lesson, out_dir, index, title, lead):
     im.save(out_dir / f"slide-{index:02d}.png")
 
 
+def day32_page(index):
+    return base_page()
+
+
+def day32_card(draw, xy, size, title, body, accent):
+    x, y = xy
+    width, height = size
+    draw.rounded_rectangle((x, y, x + width, y + height), radius=20, fill="white", outline="#e4e4e7", width=2)
+    draw.rounded_rectangle((x + 16, y + 17, x + 24, y + height - 17), radius=4, fill=accent)
+    draw.text((x + 44, y + 18), title, font=F_H2, fill="#111113")
+    draw_wrapped(draw, (x + 44, y + 65), body, F_SMALL, "#52525b", width - 68, line_gap=6, max_lines=3)
+
+
+def save_day32_cover(lesson, out_dir):
+    im, draw = base_page()
+    thumb = find_thumbnail(lesson["day"])
+    if thumb:
+        visual = fit_image(thumb, (72, 118, 936, 520))
+        paste_rounded(im, visual, (72, 118), radius=26)
+    draw.text((72, 710), f"Day {lesson['day']}", font=F_H2, fill="#ff5a1f")
+    title_end = draw_wrapped(draw, (72, 760), lesson["title"], F_TITLE, "#111113", 900, max_lines=3)
+    summary = "把心脏、血管、肺和呼吸肌看成一套氧气运输管线：空气进肺，血液带氧，心脏做泵，肌肉才有持续输出。"
+    summary_end = draw_wrapped(draw, (72, title_end + 42), summary, F_BODY, "#71717a", 900, line_gap=8, max_lines=2)
+    chips = [lesson["phase"].replace(" · ", "·"), "训练科学", "心肺解剖"]
+    chip_top = summary_end + 24
+    x = 72
+    for chip, background, color in zip(chips, ["#dcfce7", "#dbeafe", "#ffede7"], ["#15803d", "#2563eb", "#ff5a1f"]):
+        chip_width = int(draw.textlength(chip, font=F_TAG)) + 36
+        draw.rounded_rectangle((x, chip_top, x + chip_width, chip_top + 56), radius=28, fill=background)
+        draw.text((x + 18, chip_top + 12), chip, font=F_TAG, fill=color)
+        x += chip_width + 16
+    draw.text((72, 1345), f"Day {lesson['day']}/112", font=F_TINY, fill="#a1a1aa")
+    im.save(out_dir / "cover.png")
+
+
+def save_day32_overview(lesson, out_dir):
+    im, draw = base_page()
+    draw.rectangle((72, 120, 192, 126), fill="#ff5a1f")
+    draw.text((72, 160), "01", font=F_SMALL, fill="#ff5a1f")
+    draw.text((72, 205), "先看图，再看概念", font=F_H1, fill="#111113")
+    draw_wrapped(draw, (72, 275), "先把心脏、血管、肺和呼吸肌放进同一条氧运输链，再看每一环怎样影响训练表现。", F_BODY, "#52525b", 900, max_lines=3)
+    visual = out_dir / "ai-visuals" / "visual-01-labelled-overview.png"
+    if visual.exists():
+        paste_day32_cutout(im, visual, (72, 400, 936, 680))
+    draw.text((72, 1345), f"Day {lesson['day']}/112", font=F_TINY, fill="#a1a1aa")
+    im.save(out_dir / "slide-01.png")
+
+
+def save_day32_cards_slide(lesson, out_dir, index, title, lead, cards, visual_name):
+    im, draw = day32_page(index)
+    draw.rectangle((72, 120, 192, 126), fill="#ff5a1f")
+    draw.text((72, 160), f"{index:02d}", font=F_SMALL, fill="#ff5a1f")
+    heading_end = draw_wrapped(draw, (72, 205), title, F_H1, "#111113", 900, line_gap=5, max_lines=2)
+    lead_end = draw_wrapped(draw, (72, heading_end + 13), lead, F_BODY, "#52525b", 900, line_gap=7, max_lines=2)
+    visual_top = max(350, lead_end + 16)
+    visual_path = out_dir / "ai-visuals" / visual_name
+    if visual_path.exists():
+        paste_day32_cutout(im, visual_path, (360, visual_top, 360, 300), trim=70)
+    cards_top = visual_top + 324
+    for position, (card_title, card_body) in enumerate(cards):
+        day32_card(draw, (72, cards_top + position * 164), (936, 150), card_title, card_body, "#ff5a1f")
+    draw.text((72, 1345), f"Day {lesson['day']}/112", font=F_TINY, fill="#a1a1aa")
+    im.save(out_dir / f"slide-{index:02d}.png")
+
+
+def save_day32_slides(lesson, out_dir):
+    save_day32_cover(lesson, out_dir)
+    save_day32_overview(lesson, out_dir)
+    save_day32_cards_slide(lesson, out_dir, 2, "心脏四腔：右去肺，左去身", "心脏不是一团混流，而是两台串联泵：右心负责去肺换气，左心负责向全身配送。", [
+        ("右心：把血送去肺", "右心房接回全身静脉血，经三尖瓣进入右心室；右室再经肺动脉把血送往肺换气。"),
+        ("左心：把氧送去全身", "肺静脉把含氧血送回左房，经二尖瓣进入左室；左室壁最厚，负责高压泵向全身。"),
+        ("训练时：输出要提速", "配速上升时，心率和每搏输出量共同抬高心输出量，让工作肌肉更快拿到氧。"),
+    ], "visual-02-four-chambers-v2.png")
+    save_day32_cards_slide(lesson, out_dir, 3, "双循环：血流不走回头路", "瓣膜确保单向流，肺循环负责换气，体循环负责配送。把路径说顺，心肺题就不会乱。", [
+        ("瓣膜：防止倒流", "房室瓣在心房和心室之间，阻止血回流心房；半月瓣在出口处，阻止血回流心室。"),
+        ("肺循环：右室 → 肺 → 左房", "右室经肺动脉送出缺氧血；血在肺泡旁卸下二氧化碳、装上氧，再经肺静脉回到左房。"),
+        ("体循环：左室 → 全身 → 右房", "左室把含氧血泵入主动脉；组织毛细血管完成交换后，静脉血再回到右心房。"),
+    ], "visual-03-circulation-v2.png")
+    save_day32_cards_slide(lesson, out_dir, 4, "血管三工种：推、回、换", "血管不只是管子。结构不同，决定它承担高压射血、低压回流，还是物质交换。", [
+        ("动脉：厚壁承压", "管壁厚、弹性强，承受心室射血的高压力；运动时收缩压上升主要反映这段压力反应。"),
+        ("静脉：低压回心", "管壁较薄、容量大，很多静脉有瓣膜；走路时小腿肌肉泵和呼吸泵都会帮它回流。"),
+        ("毛细血管：交换主场", "管壁只有一层细胞厚；氧、二氧化碳、营养和代谢产物在这里跨壁进出组织。"),
+    ], "visual-04-vessels-v2.png")
+    save_day32_cards_slide(lesson, out_dir, 5, "气道到肺泡：氧在哪进血？", "吸进空气不等于氧已到肌肉。空气必须沿气道进入肺泡，才能和毛细血管完成交换。", [
+        ("气道：层层送达", "鼻、咽、喉、气管、支气管到细支气管，像树枝不断分叉，把空气送到肺泡终点。"),
+        ("肺泡：气体交换站", "肺泡壁和周围毛细血管壁都很薄；氧沿分压差进入血液，二氧化碳反向进入肺泡排出。"),
+        ("为什么跑快会喘", "强度升高时，通气和清除二氧化碳的需求一起上升；喘不是单靠“肺活量”能解释。"),
+    ], "visual-05-airway-alveoli-v2.png")
+    save_day32_cards_slide(lesson, out_dir, 6, "呼吸肌：膈肌是主力", "吸气靠膈肌下沉扩大胸腔。力量动作里，呼吸还要配合腹压，帮助躯干稳定。", [
+        ("膈肌：主要吸气肌", "收缩下沉时胸腔容积变大、胸内压下降，空气被吸入；放松上升后，安静呼气主要靠弹性回缩。"),
+        ("肋间肌：帮胸廓扩张", "外肋间肌帮助肋骨上提，扩大胸廓；高通气时胸锁乳突肌、斜角肌等辅助肌参与更明显。"),
+        ("腹压：训练里的稳定器", "深蹲和硬拉中，规范呼吸可建立腹内压、帮助躯干稳定；但高风险者不能用憋气硬顶。"),
+    ], "visual-06-breathing-muscles-v2.png")
+    save_day32_cards_slide(lesson, out_dir, 7, "跑步时的氧运输链", "有氧能力不是“肺活量”单项比赛，而是通气、交换、泵血、配送和肌肉利用共同决定。", [
+        ("VO2max：整条链的结果", "空气进肺、氧进入血、心脏泵血、血管配送、肌肉摄氧，任一环受限都会限制有氧表现。"),
+        ("同样配速更轻松", "训练后心输出、毛细血管和肌肉利用氧的效率更好；同样速度下，心率和主观喘感可能更低。"),
+        ("如何用在编程", "Day33 用心率储备定强度；Day34 看急性反应和长期适应。先筛风险，再决定配速、间歇与进阶。"),
+    ], "visual-07-oxygen-delivery-v2.png")
+
+
 def save_day26_slides(lesson, out_dir):
     save_image_slide(lesson, out_dir)
     save_cards_slide(lesson, out_dir, 2, "神经肌肉接头：先把信号送到门口", "ACh 是 acetylcholine，中文叫乙酰胆碱；运动神经释放它，让肌膜先产生动作电位。", [
@@ -324,7 +484,24 @@ def main():
     (out_dir / "caption.txt").write_text(caption, encoding="utf-8")
     (out_dir / "tags.txt").write_text("#健身教练 #NSCA #NASM #运动科学 #健身知识 #训练科学 #力量训练", encoding="utf-8")
     save_cover(lesson, out_dir)
-    if args.day == 25:
+    if args.day == 32:
+        (out_dir / "title.txt").write_text("Day32｜跑步时氧怎么送到肌肉", encoding="utf-8")
+        (out_dir / "caption.txt").write_text(
+            "跑步越快，身体不是只把呼吸变急，而是把整条氧运输链提速。\n\n"
+            "这 7 张图带你顺一遍：\n"
+            "1. 右心把血送去肺，左心把含氧血送去全身。\n"
+            "2. 肺循环负责换气，体循环负责配送；瓣膜保证血流不倒退。\n"
+            "3. 动脉承压、静脉回流、毛细血管交换，角色不能混。\n"
+            "4. 空气需经过气道抵达肺泡，氧才进入血液。\n"
+            "5. 膈肌负责主要吸气；力量动作里，呼吸还参与腹压和躯干稳定。\n"
+            "6. 有氧能力是通气、交换、泵血、配送和肌肉利用共同结果，不只是肺活量。\n\n"
+            "记忆口诀：右心去肺，左心去身；动脉承压，静脉回心；气道分树，肺泡换气。\n\n"
+            f"完整学习页：{page_url}",
+            encoding="utf-8",
+        )
+        (out_dir / "tags.txt").write_text("#健身教练 #NSCA #NASM #运动科学 #心肺训练 #解剖学 #健身学习", encoding="utf-8")
+        save_day32_slides(lesson, out_dir)
+    elif args.day == 25:
         save_image_slide(lesson, out_dir)
         save_cards_slide(lesson, out_dir, 2, "三大系统同时供能", "先分清时间、强度和恢复，再看哪套系统主导。", [
             ("看结论", "三大系统一直同时供能，只是比例随强度和时长变化。"),
