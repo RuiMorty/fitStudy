@@ -56,7 +56,17 @@ const publishedPages = new Map([
   [30, "html/day30-FITT-VP训练变量与ACSM身体活动指南.html"],
   [31, "html/day31-PAR-Q+与医学筛查.html"],
   [32, "html/day32-心血管与呼吸系统解剖.html"],
+  [33, "html/day33-心肺生理-摄氧量与心率储备.html"],
+  [34, "html/day34-心血管与呼吸对运动的急性反应与训练适应.html"],
+  [35, "html/day35-抗阻训练的生理适应.html"],
 ]);
+
+// Keep the Windows-generated Chinese filename encoding-independent in JavaScript.
+publishedPages.set(35, "html/day35-\u6297\u963b\u8bad\u7ec3\u7684\u751f\u7406\u9002\u5e94.html");
+publishedPages.set(36, "html/day36-\u9002\u5e94\u6027\u4e0e\u8fc7\u5ea6\u8bad\u7ec3.html");
+publishedPages.set(37, "html/day37-\u75b2\u52b3\u4e0e\u5ef6\u8fdf\u6027\u808c\u8089\u9178\u75db.html");
+publishedPages.set(38, "html/day38-\u73af\u5883\u56e0\u7d20\u4e0e\u8fd0\u52a8\u63a7\u5236\u6280\u80fd\u5206\u7c7b.html");
+publishedPages.set(39, "html/day39-\u8fd0\u52a8\u5b66\u4e60\u7684\u4e09\u9636\u6bb5.html");
 
 const generatedThumbs = new Map([
   [1, "html/thumbs/day01-skeletal-system-thumbnail.png"],
@@ -91,6 +101,13 @@ const generatedThumbs = new Map([
   [30, "html/thumbs/day30-fitt-vp-acsm-guidelines-thumbnail.png"],
   [31, "html/thumbs/day31-par-q-medical-screening-thumbnail.png"],
   [32, "html/thumbs/day32-cardiovascular-respiratory-anatomy-thumbnail.png"],
+  [33, "html/thumbs/day33-cardio-aerobic-capacity-thumbnail.png"],
+  [34, "html/thumbs/day34-cardiorespiratory-exercise-adaptations-thumbnail.png"],
+  [35, "html/thumbs/day35-resistance-training-physiological-adaptations-thumbnail.png"],
+  [36, "html/thumbs/day36-adaptation-overtraining-thumbnail.png"],
+  [37, "html/thumbs/day37-fatigue-doms-thumbnail.png"],
+  [38, "html/thumbs/day38-environment-skill-thumbnail.png"],
+  [39, "html/thumbs/day39-motor-learning-stages-thumbnail.png"],
 ]);
 
 const categories = ["全部", "骨关节", "肌肉", "生物力学", "能量系统", "训练技术", "评估纠正", "营养", "模考"];
@@ -284,7 +301,7 @@ async function init() {
 
 function loadReviews() {
   if (reviewsRequest) return reviewsRequest;
-  reviewsRequest = fetch("reviews.json")
+  reviewsRequest = fetch("reviews.json", { cache: "no-store" })
     .then((response) => (response.ok ? response.json() : []))
     .catch(() => [])
     .then((reviews) => {
@@ -606,6 +623,7 @@ function render(enterDirection = "") {
   const reviewMode = state.tab === "review";
   const nutritionMode = state.tab === "nutrition";
   const exerciseMode = state.tab === "exercise";
+  document.body.dataset.activeTab = state.tab;
   updateTabSelection(state.tab);
   $("cardGrid").hidden = !theoryMode;
   $("reviewGrid").hidden = !reviewMode;
@@ -637,7 +655,7 @@ function renderSidebarContext() {
 
   const pendingCopy = {
     exercise: ["功能待开发", "更多动作学习功能正在开发中。"],
-    nutrition: ["功能待开发", "更多营养工具正在开发中。"],
+    nutrition: ["碳水导读", "来源、分类、吸收和主食饮料差异。"],
     review: ["功能待开发", "更多复习工具正在开发中。"],
   }[state.tab];
   $("pendingSidebarTitle").textContent = pendingCopy[0];
@@ -677,8 +695,8 @@ function renderMainHeader() {
     nutrition: {
       kicker: "Nutrition Library",
       title: "营养学",
-      description: "",
-      insight: `<span>能量速查</span><strong>4 · 4 · 9 <small>kcal/g</small></strong>`,
+      description: "认识不同碳水的来源、消化路径，以及固体食物与甜饮的差异。",
+      insight: `<span>当前主题</span><strong>碳水 <small>Carbs</small></strong>`,
     },
   }[state.tab];
 

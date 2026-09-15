@@ -86,46 +86,141 @@
 
         <section class="review-grid" id="reviewGrid" aria-label="复习卡片" hidden></section>
 
-        <section class="nutrition-panel" id="nutritionPanel" hidden aria-label="营养基础工具">
-          <div class="nutrition-intro" id="nutritionEnergy">
-            <div>
-              <div class="kicker">Nutrition Basics</div>
-              <h2>能量换算</h2>
+        <section class="nutrition-panel" id="nutritionPanel" hidden aria-label="碳水营养基础">
+          <header class="carb-hero" id="nutritionCarbs">
+            <div class="carb-hero-copy">
+              <div class="kicker">Carbohydrate Basics</div>
+              <h2>碳水，<span>不只是一种糖</span></h2>
+              <p>来源和结构不同，进入身体后的速度、去向与饱腹感也会不同。</p>
+              <div class="carb-hero-topics" aria-label="本节内容">
+                <span>来源</span><span>结构</span><span>消化</span><span>选择</span>
+              </div>
             </div>
-          </div>
+            <div class="carb-energy-fact" aria-label="碳水化合物每克供能 4 千卡">
+              <span>每克供能</span>
+              <strong><b>4</b> kcal</strong>
+              <p>日常活动与训练的重要燃料</p>
+            </div>
+          </header>
 
-          <div class="nutrition-grid" aria-label="能量换算表">
-            <article class="nutrition-conversion-card"><span>碳水化合物</span><strong>1 g = 4 kcal</strong></article>
-            <article class="nutrition-conversion-card"><span>蛋白质</span><strong>1 g = 4 kcal</strong></article>
-            <article class="nutrition-conversion-card"><span>脂肪</span><strong>1 g = 9 kcal</strong></article>
-            <article class="nutrition-conversion-card"><span>能量单位</span><strong>1 kcal = 4.184 kJ</strong></article>
-          </div>
-
-          <section class="nutrition-section" id="nutritionMacros" aria-labelledby="nutritionMacrosTitle">
-            <header class="section-heading">
+          <section class="nutrition-section carb-source-section" aria-labelledby="nutritionCarbSourcesTitle">
+            <header class="section-heading carb-section-heading">
+              <div class="section-index">01</div>
               <div>
-                <div class="kicker">Macronutrients</div>
-                <h2 id="nutritionMacrosTitle">三大营养素</h2>
+                <div class="kicker">Food Sources</div>
+                <h2 id="nutritionCarbSourcesTitle">先看它从哪里来</h2>
+                <p>食物形态会影响进食速度和饱腹感，不只看“含不含糖”。</p>
               </div>
             </header>
-            <div class="nutrition-grid nutrition-detail-grid">
-              <article class="nutrition-conversion-card"><span>碳水化合物</span><strong>训练燃料</strong><p>高强度训练优先调用；围绕训练前后分配更容易执行。</p></article>
-              <article class="nutrition-conversion-card"><span>蛋白质</span><strong>修复原料</strong><p>每餐均匀分配，搭配总热量和抗阻训练看效果。</p></article>
-              <article class="nutrition-conversion-card"><span>脂肪</span><strong>长期能量</strong><p>帮助脂溶性维生素吸收；不把它简单等同于增脂。</p></article>
+            <div class="carb-source-spectrum" aria-label="常见碳水来源">
+              <article class="starch">
+                <span class="source-number">01</span>
+                <div><span>米饭 / 馒头 / 燕麦</span><strong>淀粉类主食</strong><p>消化后主要提供葡萄糖</p></div>
+              </article>
+              <article class="sugar">
+                <span class="source-number">02</span>
+                <div><span>可乐 / 奶茶 / 糖果</span><strong>添加糖</strong><p>入口快，饱腹感较弱</p></div>
+              </article>
+              <article class="fruit">
+                <span class="source-number">03</span>
+                <div><span>完整水果 / 果汁</span><strong>天然糖</strong><p>完整水果通常更耐饱</p></div>
+              </article>
+              <article class="fiber">
+                <span class="source-number">04</span>
+                <div><span>蔬菜 / 豆类 / 全谷</span><strong>膳食纤维</strong><p>不完全消化，帮助控制节奏</p></div>
+              </article>
             </div>
           </section>
 
-          <section class="nutrition-section" id="nutritionGoals" aria-labelledby="nutritionGoalsTitle">
-            <header class="section-heading">
+          <section class="nutrition-section carb-taxonomy" id="nutritionCarbTypes" aria-labelledby="nutritionCarbTypesTitle">
+            <header class="section-heading carb-section-heading inverse">
+              <div class="section-index">02</div>
               <div>
-                <div class="kicker">Planning</div>
-                <h2 id="nutritionGoalsTitle">饮食目标</h2>
+                <div class="kicker">Structure</div>
+                <h2 id="nutritionCarbTypesTitle">按结构，分成 4 类</h2>
               </div>
             </header>
-            <div class="nutrition-goal-grid">
-              <article><span>减脂</span><strong>温和热量缺口</strong></article>
-              <article><span>增肌</span><strong>训练与蛋白优先</strong></article>
-              <article><span>维持</span><strong>稳定体重与表现</strong></article>
+            <div class="carb-taxonomy-grid">
+              <article><span>最小单位</span><strong>单糖</strong><p>葡萄糖 / 果糖</p></article>
+              <article><span>两个单糖</span><strong>双糖</strong><p>蔗糖 / 乳糖</p></article>
+              <article><span>长链结构</span><strong>多糖</strong><p>淀粉 / 糖原</p></article>
+              <article><span>特殊长链</span><strong>纤维</strong><p>不完全消化</p></article>
+            </div>
+          </section>
+
+          <section class="nutrition-section carb-process-section" id="nutritionCarbProcess" aria-labelledby="nutritionCarbProcessTitle">
+            <header class="section-heading carb-section-heading">
+              <div class="section-index">03</div>
+              <div>
+                <div class="kicker">Digestion &amp; Absorption</div>
+                <h2 id="nutritionCarbProcessTitle">先拆开，再分流</h2>
+                <p>蔗糖不是一条独立去向，它会先被拆成葡萄糖和果糖。</p>
+              </div>
+            </header>
+
+            <div class="carb-flow-canvas" aria-label="碳水消化与吸收路径">
+              <div class="digestion-stage">
+                <div class="flow-stage-label"><span>STEP 1</span><strong>消化拆解</strong></div>
+                <div class="digestion-paths">
+                  <div class="digestion-row">
+                    <strong>淀粉</strong><i aria-hidden="true"></i>
+                    <div class="digestion-output"><b>葡萄糖</b><span>主要产物</span></div>
+                  </div>
+                  <div class="digestion-row">
+                    <strong>蔗糖</strong><i aria-hidden="true"></i>
+                    <div class="digestion-output split"><b>葡萄糖</b><em>+</em><b>果糖</b></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flow-transition"><span>吸收进入身体</span></div>
+
+              <div class="metabolism-stage">
+                <div class="flow-stage-label"><span>STEP 2</span><strong>身体分流</strong></div>
+                <div class="metabolism-lanes">
+                  <article class="metabolism-lane glucose">
+                    <header><span>全身通用燃料</span><h3>葡萄糖</h3><p>进入血液后，可被多种组织直接使用。</p></header>
+                    <ol class="route-steps">
+                      <li><span>01</span><div><strong>进入血液</strong><small>血糖短暂升高</small></div></li>
+                      <li><span>02</span><div><strong>立即供能</strong><small>肌肉与大脑等组织使用</small></div></li>
+                      <li><span>03</span><div><strong>补充糖原</strong><small>储存在肝脏与肌肉</small></div></li>
+                    </ol>
+                  </article>
+
+                  <article class="metabolism-lane fructose">
+                    <header><span>先由肝脏处理</span><h3>果糖</h3><p>不是直接变成脂肪，去向取决于能量状态。</p></header>
+                    <ol class="route-steps">
+                      <li><span>01</span><div><strong>进入肝脏</strong><small>先在肝内代谢</small></div></li>
+                      <li><span>02</span><div><strong>补充与转换</strong><small>补肝糖原或参与供能</small></div></li>
+                      <li class="caution"><span>03</span><div><strong>长期过量时</strong><small>更多进入脂肪合成路径</small></div></li>
+                    </ol>
+                  </article>
+                </div>
+              </div>
+
+              <aside class="carb-flow-note">
+                <strong>关键不是把果糖妖魔化</strong>
+                <span>真正需要留意的是甜饮和果汁：喝得快、饱腹感弱，更容易让总摄入超过需要。</span>
+              </aside>
+            </div>
+          </section>
+
+          <section class="nutrition-section carb-compare-section" aria-labelledby="nutritionCarbCompareTitle">
+            <header class="section-heading carb-section-heading">
+              <div class="section-index">04</div>
+              <div>
+                <div class="kicker">Food Choice</div>
+                <h2 id="nutritionCarbCompareTitle">同样是碳水，体感可以很不同</h2>
+              </div>
+            </header>
+            <div class="carb-compare-table" role="table" aria-label="固体主食与含糖饮料对比">
+              <div class="compare-head" role="row">
+                <span role="columnheader">比较项</span><strong role="columnheader">固体主食</strong><strong role="columnheader">含糖饮料</strong>
+              </div>
+              <div class="compare-row" role="row"><span role="rowheader">入口速度</span><b role="cell">需要咀嚼</b><b role="cell">喝得很快</b></div>
+              <div class="compare-row" role="row"><span role="rowheader">胃内停留</span><b role="cell">相对更久</b><b role="cell">相对更短</b></div>
+              <div class="compare-row" role="row"><span role="rowheader">饱腹感</span><b role="cell">通常更强</b><b role="cell">通常更弱</b></div>
+              <div class="compare-row" role="row"><span role="rowheader">日常策略</span><b role="cell">优先完整主食</b><b role="cell">控制频率与份量</b></div>
             </div>
           </section>
         </section>
@@ -226,6 +321,6 @@
       </figure>
     </div>
 
-    <script src="app.js?v=training-lab-24"></script>
+    <script src="app.js?v=training-lab-25"></script>
   </body>
 </html>

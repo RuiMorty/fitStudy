@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 33 中午复习 · 心肺生理-摄氧量与心率储备</title>
+  <style>
+    :root{--paper:#fff;--ink:#17332a;--muted:#5d7168;--line:#e2e8e4;--soft:#f0f4f2;--green:#0ea66b;--blue:#0ea5e9;--orange:#ea7a17;--rose:#e23b3b;--violet:#7c3aed}
+    *{box-sizing:border-box;letter-spacing:0}
+    body{margin:0;padding:18px;background:#f6f8f7;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.75}
+    a{color:inherit}
+    .wrap{max-width:980px;margin:auto}
+    .hero{text-align:center;padding:24px 10px 14px}
+    .hero h1{margin:0 0 10px;font-size:2rem;background:linear-gradient(90deg,var(--green),var(--blue));-webkit-background-clip:text;background-clip:text;color:transparent}
+    .sub{color:var(--muted);max-width:850px;margin:0 auto}
+    .chips{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:12px}
+    .chip{font-size:.78rem;border:1px solid #d4ebe0;border-radius:999px;padding:3px 10px;background:#fff;color:#0c6da3;font-weight:700}
+    .section,.card,footer{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px;margin:14px 0;box-shadow:0 2px 12px rgba(20,40,30,.06)}
+    .section h2{font-size:1.18rem;margin:0 0 12px;color:#0a7d52}
+    .fresh{border-left:4px solid var(--green)}
+    .ebbinghaus{border-left:4px solid var(--blue)}
+    .mistakes{border-left:4px solid var(--rose)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:12px}
+    .card{margin:0;display:block}
+    .card h3{margin:0 0 8px;color:#0a7d52;font-size:1rem}
+    .meta{font-size:.8rem;color:var(--muted);margin-bottom:8px;font-weight:500}
+    .card ul{margin:8px 0 0;padding-left:18px}
+    .card li{margin:5px 0}
+    .thumb,.mini-img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:10px;border:1px solid var(--line);background:var(--soft);display:block;margin:8px 0}
+    .source{display:inline-block;margin-top:8px;color:#0c6da3;text-decoration:none;font-weight:800}
+    .source:hover{text-decoration:underline}
+    .mnemonic{border-radius:12px;padding:12px;background:#e8f5ee;color:#0a7d52;font-weight:800;margin:10px 0}
+    .formula{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin:12px 0}
+    .formula div{border:1px solid #dbe8e1;border-radius:12px;background:#f8fffb;padding:12px}
+    .formula b{color:#0a7d52}
+    .q{background:#f8fffb;border:1px solid #dbe8e1;border-radius:12px;padding:13px;margin:10px 0}
+    .q p{margin:0 0 8px}
+    button{border:0;border-radius:8px;background:var(--green);color:#fff;font-weight:700;padding:7px 12px;cursor:pointer}
+    .answer{display:none;border-left:4px solid var(--blue);background:#f0f8fc;border-radius:10px;padding:10px;margin-top:9px}
+    .answer.show{display:block}
+    .compare{width:100%;border-collapse:collapse;font-size:.92rem}
+    .compare th{background:var(--green);color:#fff;text-align:left}
+    .compare th,.compare td{padding:9px;border-bottom:1px solid var(--line);vertical-align:top}
+    .review-box{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px}
+    .note{border-left:4px solid var(--orange);background:#fffaf3;border-radius:10px;padding:10px}
+    footer{text-align:center;color:var(--muted);font-size:.84rem;margin:22px 0}
+    @media(max-width:640px){body{padding:12px}.hero h1{font-size:1.55rem}.section,.card{padding:14px}.thumb,.mini-img{height:auto}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="hero">
+      <h1>Day 33 中午复习 · 心肺生理-摄氧量与心率储备</h1>
+      <div class="sub">抓住一句话: VO2max 看整条送氧链，Karvonen 用心率储备定个人强度，心输出量和通气阈解释为什么同样配速有人稳、有人喘。</div>
+      <div class="chips">
+        <span class="chip">今日新知识 Day33</span>
+        <span class="chip">1天 Day32</span>
+        <span class="chip">3天 Day30</span>
+        <span class="chip">7天 Day26</span>
+        <span class="chip">14天 Day19</span>
+      </div>
+    </header>
+
+    <section class="section fresh">
+      <h2>今日新知识速复盘</h2>
+      <article class="card">
+        <div class="meta">今天早上 · Day 33 · 今日新知识</div>
+        <h3>Day 33 · 心肺生理-摄氧量与心率储备</h3>
+        <img class="thumb" src="thumbs/day33-cardio-aerobic-capacity-thumbnail.png" alt="Day33 心肺生理与心率储备无字缩略图">
+        <p>今天核心是把心肺解剖变成训练处方。VO2max 不是肺活量，而是摄取、运输、利用氧气的整条链上限；心输出量 = 心率 × 每搏输出量，说明“跳得快”和“每次泵得多”都影响供氧。</p>
+        <div class="formula">
+          <div><b>Karvonen 公式</b><br>靶心率 = (最大心率 - 静息心率) × 强度 + 静息心率</div>
+          <div><b>血压反应</b><br>运动时收缩压通常上升，舒张压变化不大；异常症状回到筛查和转诊流程。</div>
+          <div><b>通气阈</b><br>呼吸量非线性增加，谈话从完整句变成断词，常对应更高代谢压力。</div>
+        </div>
+        <a class="source" href="day33-心肺生理-摄氧量与心率储备.html">打开 Day33 原学习页 →</a>
+      </article>
+      <div class="mnemonic"><strong>口诀：</strong>VO2 看全链，HRR 算个体；心率乘每搏，才得心输出；收缩压上，舒张压稳；呼吸一拐陡，就到通气阈。</div>
+    </section>
+
+    <section class="section ebbinghaus">
+      <h2>艾宾浩斯复习区（1/3/7/14天）</h2>
+      <div class="grid">
+        <article class="card">
+          <div class="meta">1天前 · Day 32 · 间隔复习</div>
+          <img class="mini-img" src="thumbs/day32-cardiovascular-respiratory-anatomy-thumbnail.png" alt="Day32 心血管与呼吸系统解剖无字缩略图">
+          <h3>Day 32 · 心血管与呼吸系统解剖</h3>
+          <ul>
+            <li>右心去肺，左心去身；体循环和肺循环分工不同。</li>
+            <li>动脉按离开心脏命名，静脉按回到心脏命名，不按含氧量命名。</li>
+            <li>肺泡交换、血管配送、心脏泵血，是 Day33 VO2max 的解剖底座。</li>
+          </ul>
+          <a class="source" href="day32-心血管与呼吸系统解剖.html">复看原页</a>
+        </article>
+        <article class="card">
+          <div class="meta">3天前 · Day 30 · 间隔复习</div>
+          <img class="mini-img" src="thumbs/day30-fitt-vp-acsm-guidelines-thumbnail.png" alt="Day30 FITT-VP与ACSM指南无字缩略图">
+          <h3>Day 30 · FITT-VP训练变量与ACSM身体活动指南</h3>
+          <ul>
+            <li>FITT-VP 是频率、强度、时间、类型、容量、进阶六个处方旋钮。</li>
+            <li>ACSM 健康底线：每周 150 分钟中等或 75 分钟高强有氧，加 2 次全身抗阻。</li>
+            <li>NASM Zone 给强度区间，Day33 HRR 把区间换成更个体化靶心率。</li>
+          </ul>
+          <a class="source" href="day30-FITT-VP训练变量与ACSM身体活动指南.html">复看原页</a>
+        </article>
+        <article class="card">
+          <div class="meta">7天前 · Day 26 · 间隔复习</div>
+          <img class="mini-img" src="thumbs/day26-neuromuscular-coupling-thumbnail.png" alt="Day26 神经肌肉接头与兴奋收缩耦联无字缩略图">
+          <h3>Day 26 · 神经肌肉接头与兴奋-收缩耦联完整钙链条</h3>
+          <ul>
+            <li>运动神经末梢释放乙酰胆碱，肌膜去极化产生动作电位。</li>
+            <li>动作电位进 T 管，触发肌浆网释放钙，钙结合肌钙蛋白，横桥开始工作。</li>
+            <li>运动单位 = 一个 alpha 运动神经元及其支配的所有肌纤维；小单位先募集。</li>
+          </ul>
+          <a class="source" href="day26-神经肌肉接头与兴奋-收缩耦联完整钙链条.html">复看原页</a>
+        </article>
+        <article class="card">
+          <div class="meta">14天前 · Day 19 · 间隔复习</div>
+          <img class="mini-img" src="thumbs/day19-strength-endurance-determinants-thumbnail.png" alt="Day19 肌力与肌耐力决定因素无字缩略图">
+          <h3>Day 19 · 肌力与肌耐力的力学决定因素</h3>
+          <ul>
+            <li>肌力受运动单位募集、发放频率、同步化和肌肉横截面积影响。</li>
+            <li>长度-张力关系说明最佳肌肉长度附近产生最大张力。</li>
+            <li>力-速度曲线：向心速度越快力量越小，离心产力可更大。</li>
+          </ul>
+          <a class="source" href="day19-肌力与肌耐力的力学决定因素.html">复看原页</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>主动回忆题</h2>
+      <div class="q"><p><b>今日新知识 Day33：</b>VO2max 为什么不能理解成“肺活量越大越好”？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">VO2max 是单位时间内最大摄氧、运输和利用能力。限制点可能在肺泡交换、血红蛋白、心输出量、毛细血管、线粒体利用，不是只看肺容量。</div></div>
+      <div class="q"><p><b>今日新知识 Day33：</b>静息心率 60、最大心率 190、目标 70% 强度，Karvonen 靶心率是多少？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">(190 - 60) × 0.70 + 60 = 151 bpm。先算心率储备 130，再乘强度，最后加回静息心率。</div></div>
+      <div class="q"><p><b>今日新知识 Day33：</b>心输出量公式是什么？为什么训练者同样心率下可能更稳？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">心输出量 = 心率 × 每搏输出量。耐力训练可提高每搏输出量，所以同样心率下每分钟泵血更多，供氧更稳。</div></div>
+      <div class="q"><p><b>Day32：</b>肺循环中，肺动脉和肺静脉分别带什么血？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">肺动脉带缺氧血，从右心室去肺；肺静脉带含氧血，从肺回左心房。动脉/静脉按血流相对心脏方向命名。</div></div>
+      <div class="q"><p><b>Day30：</b>ACSM 成人身体活动底线怎么背？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">每周至少 150 分钟中等强度有氧或 75 分钟高强度有氧，再加每周至少 2 次全身大肌群抗阻训练。</div></div>
+      <div class="q"><p><b>Day30 + Day33：</b>为什么先算 HRR，再对照 Zone，比只背 Zone 更可执行？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">Zone 给强度层级，HRR 把强度层级换成个人靶心率。静息心率不同，70% 强度对应的可执行心率也不同。</div></div>
+      <div class="q"><p><b>Day26：</b>从神经信号到肌肉横桥，钙离子链条怎么走？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">乙酰胆碱让肌膜去极化，动作电位沿肌膜进入 T 管，触发肌浆网释放钙，钙结合肌钙蛋白，原肌球蛋白移位，肌动蛋白与肌球蛋白横桥结合。</div></div>
+      <div class="q"><p><b>Day19：</b>新手力量增长早于明显增肌，主要解释是什么？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">早期力量提升多来自神经适应：募集更多运动单位、提高发放频率、同步化更好、动作协调更省力。肌肉横截面积增长通常更慢。</div></div>
+      <div class="q"><p><b>串联题：</b>客户跑步能说完整句，后来只能断词，心率进入 HRR 80%。你会如何判断强度？</p><button onclick="showAnswer(this)">查看答案</button><div class="answer">呼吸从完整句到断词，提示接近或超过通气阈；HRR 80% 属较高有氧强度，常接近 Zone2/Zone3 交界。是否保留取决于目标、筛查状态和恢复能力。</div></div>
+    </section>
+
+    <section class="section mistakes">
+      <h2>错因辨析</h2>
+      <table class="compare">
+        <tr><th>易错点</th><th>错因</th><th>修正句</th></tr>
+        <tr><td>VO2max = 肺活量</td><td>只盯空气入口，漏掉心血管和肌肉用氧。</td><td>VO2max 是摄取、运输、利用氧气的整链能力。</td></tr>
+        <tr><td>最大心率百分比已经够准</td><td>忽略静息心率和个体差异。</td><td>Karvonen 用 HRR，把静息心率从可用心率空间里扣出来。</td></tr>
+        <tr><td>心率越高，心输出量一定越高</td><td>忘记每搏输出量会受疲劳、训练水平和强度影响。</td><td>心输出量 = 心率 × 每搏输出量，心率只是其中一半。</td></tr>
+        <tr><td>运动时血压升高都是危险</td><td>把正常急性反应和异常反应混在一起。</td><td>收缩压上升常见；异常过高、症状明显或恢复慢才要警惕。</td></tr>
+        <tr><td>喘是意志力问题</td><td>忽略通气阈和二氧化碳排出需求。</td><td>过通气阈后呼吸负担会非线性上升，处方要看强度和恢复。</td></tr>
+      </table>
+    </section>
+
+    <section class="section">
+      <h2>今日复盘</h2>
+      <div class="review-box">
+        <div class="note"><strong>公式必会：</strong>HRR = HRmax - HRrest；靶心率 = HRR × 强度 + HRrest；心输出量 = HR × SV。</div>
+        <div class="note"><strong>判断必会：</strong>VO2max 看整链；通气阈看呼吸突然变陡；血压反应看收缩压、症状和恢复。</div>
+        <div class="note"><strong>串联必会：</strong>Day32 解剖给路线，Day33 生理给强度，Day30 FITT-VP 把强度写进计划。</div>
+      </div>
+    </section>
+
+    <footer>Fitness Study · Day 33/112 · 中午12:00复习推送 · 仅复习，不推进进度</footer>
+  </main>
+  <script>
+    function showAnswer(btn){btn.nextElementSibling.classList.toggle("show")}
+  </script>
+</body>
+</html>

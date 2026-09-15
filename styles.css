@@ -572,9 +572,20 @@ select:focus {
   gap: 12px;
 }
 
-.nutrition-panel { display: grid; gap: 28px; }
-.nutrition-intro { display: flex; align-items: end; justify-content: space-between; gap: 16px; }
+.nutrition-panel {
+  --carb-ink: #18181b;
+  --carb-soft: #f7f7f5;
+  --carb-blue: #2563eb;
+  --carb-green: #15803d;
+  --carb-amber: #d97706;
+  display: grid;
+  gap: 38px;
+  padding-bottom: 12px;
+}
+.nutrition-panel .kicker { letter-spacing: 0; }
+.nutrition-intro { display: flex; align-items: stretch; justify-content: space-between; gap: 16px; }
 .nutrition-intro h2 { margin: 0; font-size: 24px; line-height: 1.15; }
+.nutrition-intro p { max-width: 420px; margin: 8px 0 0; color: var(--muted); font-size: 13px; }
 .nutrition-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
 .nutrition-conversion-card { display: grid; min-height: 126px; align-content: space-between; border: 1px solid var(--border); border-radius: 8px; background: var(--bg-surface); padding: 16px; }
 .nutrition-conversion-card span { color: var(--muted); font-size: 12px; font-weight: 800; }
@@ -590,6 +601,363 @@ select:focus {
 .nutrition-goal-grid article { display: grid; gap: 6px; min-height: 94px; align-content: center; border-top: 2px solid var(--accent); background: var(--bg-surface); padding: 14px 16px; }
 .nutrition-goal-grid span { color: var(--muted); font-size: 12px; font-weight: 800; }
 .nutrition-goal-grid strong { font-size: 15px; }
+.carb-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 0.42fr);
+  min-height: 248px;
+  overflow: hidden;
+  border-radius: 8px;
+  background: var(--carb-ink);
+  color: #ffffff;
+}
+.carb-hero-copy {
+  display: grid;
+  align-content: center;
+  padding: 32px;
+}
+.carb-hero-copy h2 {
+  max-width: 620px;
+  margin: 0;
+  font-size: 36px;
+  line-height: 1.15;
+}
+.carb-hero-copy h2 span { color: #ff8a5c; }
+.carb-hero-copy > p {
+  max-width: 560px;
+  margin: 12px 0 0;
+  color: #d4d4d8;
+  font-size: 14px;
+}
+.carb-hero-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  margin-top: 26px;
+}
+.carb-hero-topics span {
+  border-left: 1px solid #52525b;
+  padding: 0 14px;
+  color: #a1a1aa;
+  font-size: 11px;
+  font-weight: 800;
+}
+.carb-hero-topics span:first-child { border-left: 0; padding-left: 0; }
+.carb-energy-fact {
+  display: grid;
+  align-content: center;
+  border-left: 1px solid #3f3f46;
+  padding: 30px;
+}
+.carb-energy-fact > span {
+  color: #a1a1aa;
+  font-size: 11px;
+  font-weight: 800;
+}
+.carb-energy-fact strong {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-top: 6px;
+  color: #ffffff;
+  font-size: 18px;
+}
+.carb-energy-fact strong b {
+  color: var(--accent);
+  font-size: 72px;
+  line-height: 1.08;
+}
+.carb-energy-fact p {
+  max-width: 190px;
+  margin: 10px 0 0;
+  color: #a1a1aa;
+  font-size: 12px;
+}
+.carb-section-heading {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr);
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.carb-section-heading .section-index {
+  padding-top: 2px;
+  color: var(--accent);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 12px;
+  font-weight: 900;
+}
+.carb-section-heading h2 { font-size: 23px; }
+.carb-section-heading p {
+  margin: 7px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+.carb-source-spectrum {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg-surface);
+}
+.carb-source-spectrum article {
+  position: relative;
+  display: grid;
+  min-height: 170px;
+  align-content: space-between;
+  border-right: 1px solid var(--border);
+  padding: 20px;
+}
+.carb-source-spectrum article:last-child { border-right: 0; }
+.carb-source-spectrum article::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 4px;
+  background: var(--source-color);
+  content: "";
+}
+.carb-source-spectrum .starch { --source-color: var(--carb-blue); }
+.carb-source-spectrum .sugar { --source-color: #dc2626; }
+.carb-source-spectrum .fruit { --source-color: var(--carb-amber); }
+.carb-source-spectrum .fiber { --source-color: var(--carb-green); }
+.source-number {
+  color: var(--source-color);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 12px;
+  font-weight: 900;
+}
+.carb-source-spectrum article > div { display: grid; gap: 5px; }
+.carb-source-spectrum article > div > span {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 700;
+}
+.carb-source-spectrum strong {
+  font-size: 18px;
+  line-height: 1.35;
+}
+.carb-source-spectrum p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.5;
+}
+.carb-taxonomy {
+  border-radius: 8px;
+  background: var(--carb-ink);
+  padding: 28px;
+  color: #ffffff;
+}
+.carb-section-heading.inverse h2 { color: #ffffff; }
+.carb-taxonomy-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-top: 1px solid #3f3f46;
+}
+.carb-taxonomy-grid article {
+  display: grid;
+  gap: 4px;
+  border-right: 1px solid #3f3f46;
+  padding: 22px 18px 2px;
+}
+.carb-taxonomy-grid article:first-child { padding-left: 0; }
+.carb-taxonomy-grid article:last-child { border-right: 0; }
+.carb-taxonomy-grid span {
+  color: #a1a1aa;
+  font-size: 11px;
+  font-weight: 700;
+}
+.carb-taxonomy-grid strong {
+  color: #ffffff;
+  font-size: 20px;
+}
+.carb-taxonomy-grid p {
+  margin: 0;
+  color: #ff8a5c;
+  font-size: 13px;
+  font-weight: 800;
+}
+.carb-flow-canvas {
+  display: grid;
+  gap: 22px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg-surface);
+  padding: 26px;
+}
+.digestion-stage,
+.metabolism-stage {
+  display: grid;
+  grid-template-columns: 128px minmax(0, 1fr);
+  gap: 22px;
+}
+.flow-stage-label {
+  display: grid;
+  align-content: start;
+  gap: 4px;
+}
+.flow-stage-label span {
+  color: var(--accent);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 10px;
+  font-weight: 900;
+}
+.flow-stage-label strong { font-size: 16px; }
+.digestion-paths { display: grid; gap: 12px; }
+.digestion-row {
+  display: grid;
+  grid-template-columns: minmax(70px, 0.24fr) minmax(50px, 1fr) minmax(170px, 0.62fr);
+  align-items: center;
+  min-height: 58px;
+}
+.digestion-row > strong { font-size: 16px; }
+.digestion-row > i {
+  position: relative;
+  height: 1px;
+  margin: 0 18px;
+  background: #c4c4c7;
+}
+.digestion-row > i::after {
+  position: absolute;
+  top: 50%;
+  right: 2px;
+  width: 7px;
+  height: 7px;
+  border-top: 1px solid #71717a;
+  border-right: 1px solid #71717a;
+  content: "";
+  transform: translateY(-50%) rotate(45deg);
+}
+.digestion-output {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  border-bottom: 2px solid var(--carb-blue);
+  padding: 8px 0;
+}
+.digestion-output span {
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 700;
+}
+.digestion-output.split { justify-content: flex-start; border-color: var(--carb-amber); }
+.digestion-output.split em { color: var(--muted); font-style: normal; }
+.flow-transition {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 800;
+}
+.flow-transition::before,
+.flow-transition::after {
+  height: 1px;
+  flex: 1;
+  background: var(--border);
+  content: "";
+}
+.metabolism-lanes {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+.metabolism-lane {
+  overflow: hidden;
+  border-radius: 8px;
+  background: var(--carb-soft);
+}
+.metabolism-lane > header {
+  min-height: 126px;
+  border-top: 4px solid var(--lane-color);
+  padding: 18px;
+}
+.metabolism-lane.glucose { --lane-color: var(--carb-blue); }
+.metabolism-lane.fructose { --lane-color: var(--carb-amber); }
+.metabolism-lane header > span {
+  color: var(--lane-color);
+  font-size: 11px;
+  font-weight: 900;
+}
+.metabolism-lane h3 {
+  margin: 5px 0 4px;
+  font-size: 23px;
+  line-height: 1.2;
+}
+.metabolism-lane header p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+.route-steps {
+  display: grid;
+  margin: 0;
+  padding: 0 18px 14px;
+  list-style: none;
+}
+.route-steps li {
+  display: grid;
+  grid-template-columns: 26px minmax(0, 1fr);
+  align-items: center;
+  gap: 10px;
+  min-height: 66px;
+  border-top: 1px solid #dededb;
+}
+.route-steps li > span {
+  color: var(--lane-color);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 10px;
+  font-weight: 900;
+}
+.route-steps li > div { display: grid; gap: 2px; }
+.route-steps strong { font-size: 13px; }
+.route-steps small { color: var(--muted); font-size: 11px; }
+.route-steps .caution { margin: 0 -8px; border-top: 0; border-radius: 6px; background: #fff1ec; padding: 0 8px; }
+.route-steps .caution span,
+.route-steps .caution strong { color: #c2410c; }
+.carb-flow-note {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  gap: 14px;
+  border-left: 3px solid var(--accent);
+  background: #fff4ef;
+  padding: 14px 16px;
+}
+.carb-flow-note strong { font-size: 13px; }
+.carb-flow-note span { color: var(--muted); font-size: 12px; }
+.carb-compare-table {
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg-surface);
+}
+.compare-head,
+.compare-row {
+  display: grid;
+  grid-template-columns: minmax(110px, 0.5fr) repeat(2, minmax(0, 1fr));
+}
+.compare-head { background: var(--carb-ink); color: #ffffff; }
+.compare-head > *,
+.compare-row > * {
+  display: flex;
+  min-height: 54px;
+  align-items: center;
+  border-right: 1px solid var(--border);
+  padding: 12px 16px;
+}
+.compare-head > * { border-color: #3f3f46; }
+.compare-head > *:last-child,
+.compare-row > *:last-child { border-right: 0; }
+.compare-head span { color: #a1a1aa; font-size: 11px; }
+.compare-head strong { font-size: 14px; }
+.compare-head strong:last-child { color: #ff8a5c; }
+.compare-row { border-top: 1px solid var(--border); }
+.compare-row > span { color: var(--muted); font-size: 11px; font-weight: 700; }
+.compare-row > b { font-size: 13px; }
+.compare-row > b:last-child { color: #9a3412; }
 .site-footer { margin-top: 28px; padding: 16px 0 4px; border-top: 1px solid var(--border); color: var(--faint); font-size: 12px; text-align: center; }
 
 .lesson-card,
@@ -1245,6 +1613,28 @@ select:focus {
   .nutrition-detail-grid,
   .nutrition-goal-grid { grid-template-columns: 1fr; }
 
+  .carb-hero { grid-template-columns: 1fr; }
+  .carb-energy-fact {
+    grid-template-columns: max-content max-content minmax(0, 1fr);
+    align-items: baseline;
+    gap: 12px;
+    border-top: 1px solid #3f3f46;
+    border-left: 0;
+    padding: 22px 28px;
+  }
+  .carb-energy-fact strong { margin-top: 0; }
+  .carb-energy-fact strong b { font-size: 48px; }
+  .carb-energy-fact p { max-width: none; margin: 0; }
+  .carb-source-spectrum,
+  .carb-taxonomy-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .carb-source-spectrum article:nth-child(2) { border-right: 0; }
+  .carb-source-spectrum article:nth-child(-n + 2) { border-bottom: 1px solid var(--border); }
+  .carb-taxonomy-grid article:nth-child(2) { border-right: 0; }
+  .carb-taxonomy-grid article:nth-child(-n + 2) { border-bottom: 1px solid #3f3f46; padding-bottom: 18px; }
+  .carb-taxonomy-grid article:nth-child(3) { padding-left: 0; }
+  .digestion-stage,
+  .metabolism-stage { grid-template-columns: 1fr; gap: 14px; }
+
   .card-grid {
     grid-template-columns: 1fr;
   }
@@ -1304,6 +1694,45 @@ select:focus {
   .header-insight { min-width: 0; }
 
   .nutrition-intro h2 { font-size: 21px; }
+  body[data-active-tab="nutrition"] .sidebar-context { display: none; }
+  body[data-active-tab="nutrition"] .main-header { margin-bottom: 14px; }
+  body[data-active-tab="nutrition"] .main-header p { display: none; }
+  .nutrition-panel { gap: 30px; }
+  .carb-hero { min-height: 0; }
+  .carb-hero-copy { padding: 24px 22px; }
+  .carb-hero-copy h2 { font-size: 30px; }
+  .carb-hero-copy > p { font-size: 13px; }
+  .carb-hero-topics { margin-top: 20px; }
+  .carb-energy-fact {
+    grid-template-columns: max-content minmax(0, 1fr);
+    gap: 2px 12px;
+    padding: 18px 22px;
+  }
+  .carb-energy-fact > span { grid-row: 1; }
+  .carb-energy-fact strong { grid-row: 1 / span 2; }
+  .carb-energy-fact strong b { font-size: 44px; }
+  .carb-energy-fact p { grid-column: 1; font-size: 11px; }
+  .carb-section-heading { grid-template-columns: 30px minmax(0, 1fr); gap: 10px; }
+  .carb-section-heading h2 { font-size: 21px; }
+  .carb-section-heading p { font-size: 12px; }
+  .carb-source-spectrum article { min-height: 150px; padding: 16px 14px; }
+  .carb-source-spectrum strong { font-size: 16px; }
+  .carb-taxonomy { padding: 22px 18px; }
+  .carb-taxonomy-grid article { padding: 18px 12px 2px; }
+  .carb-taxonomy-grid strong { font-size: 18px; }
+  .carb-flow-canvas { gap: 18px; padding: 18px 16px; }
+  .digestion-row { grid-template-columns: 56px minmax(28px, 1fr) minmax(112px, 1.55fr); }
+  .digestion-row > i { margin: 0 10px; }
+  .digestion-output { gap: 6px; }
+  .digestion-output span { display: none; }
+  .metabolism-lanes { grid-template-columns: 1fr; }
+  .metabolism-lane > header { min-height: 0; }
+  .carb-flow-note { grid-template-columns: 1fr; gap: 4px; }
+  .compare-head,
+  .compare-row { grid-template-columns: 72px repeat(2, minmax(0, 1fr)); }
+  .compare-head > *,
+  .compare-row > * { min-height: 52px; padding: 10px 8px; }
+  .compare-row > b { font-size: 12px; }
 
   .exercise-tab {
     padding: 0 10px;

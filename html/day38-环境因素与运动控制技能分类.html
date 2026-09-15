@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Day 38：环境因素与运动控制技能分类</title>
+<style>
+:root{--bg:#f6f8f7;--card:#fff;--line:#e2e8e4;--soft:#f0f4f2;--ink:#17332a;--muted:#5d7168;--green:#0ea66b;--blue:#0ea5e9;--orange:#ea7a17;--red:#e23b3b}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;font-size:14px;line-height:1.7}
+.wrap{max-width:980px;margin:auto;padding:30px 18px 60px}
+.header{text-align:left}
+.eyebrow{display:none}
+.header h1{font-size:clamp(1.45rem,3vw,2.25rem);line-height:1.16;margin:10px 0 8px;color:#111113;letter-spacing:0}
+.header h1:before{content:"";display:block;width:34px;height:4px;border-radius:999px;background:#ff5a1f;margin:0 0 10px}
+.sub{color:#71717a;margin:5px 0 22px;font-size:14px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-start;color:#71717a;font-size:12px}
+.chip{border:1px solid #e4e4e7;border-radius:999px;background:#fff;color:#71717a;font-size:12px;font-weight:700;padding:3px 10px}
+.chip:nth-child(1){background:rgba(74,222,128,.16);border-color:transparent;color:#15803d}
+.chip:nth-child(2){background:rgba(96,165,250,.16);border-color:transparent;color:#2563eb}
+.chip:nth-child(3){background:rgba(234,122,23,.14);border-color:transparent;color:#9a4c05}
+.panel,.figure,.warn,.mnemonic{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 2px 12px rgba(20,40,30,.06)}
+h2{font-size:1.05rem;margin:0 0 14px}
+.takeaway{border-left:5px solid var(--green);background:#eefaf3;font-size:14px}
+.takeaway p{margin:0}
+.figure{text-align:center}
+.figure img{max-width:100%;max-height:760px;width:auto;border-radius:10px;cursor:zoom-in;background:#fff}
+.caption{color:var(--muted);font-size:13.6px;margin:10px 0 0;padding:0}
+.kp{padding:0;margin:0;list-style:none}
+.kp>li{border-bottom:1px dashed var(--line)}
+.kp>li:last-child{border-bottom:0}
+.kp-head{padding:13px 8px 13px 32px;cursor:pointer;position:relative;display:block;font-weight:700;font-size:15px}
+.kp-head::before{content:"▶";color:var(--green);position:absolute;left:8px;transition:transform .2s}
+.open>.kp-head::before{transform:rotate(90deg)}
+.kp-head:hover{background:var(--soft)}
+.kp-body{display:none;padding:2px 16px 16px 32px}
+.open>.kp-body{display:block}
+.kp-body p{margin:3px 0 8px}
+.dim{font-size:12.48px;font-weight:700;color:#0c6da3;display:block;margin:10px 0 3px}
+.term{background:rgba(74,222,128,.16);border-radius:6px;color:#0a7d52;padding:1px 5px}
+.warn{border-left:5px solid var(--red);background:#fffafa}
+.warn p{margin:8px 0}
+.mnemonic{margin:16px 0;padding:20px;border-radius:14px;background:#fff;border:1px solid var(--line);border-left:4px solid #ff5a1f;font-size:14px;color:#111113}
+.mnemonic strong{color:#ff5a1f}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}
+.flip{height:145px;perspective:900px;cursor:pointer}
+.flip-inner{height:100%;position:relative;transition:transform .5s;transform-style:preserve-3d}
+.flip.flipped .flip-inner{transform:rotateY(180deg)}
+.face{position:absolute;inset:0;backface-visibility:hidden;border:1px solid #e4e4e7;border-radius:10px;padding:15px;background:#fafafa;color:#111113;display:flex;align-items:center;justify-content:center;text-align:center}
+.back{transform:rotateY(180deg);background:#0ea66b;color:#fff;border-color:#0ea66b}
+.practice{margin:0;padding:0;list-style:none}
+.practice li{margin:7px 0}
+.orange{border-left:5px solid var(--orange)}
+.quiz .q{padding:16px;margin:12px 0;border:1px solid var(--line);border-radius:10px;background:#fff}
+.q h3{margin:0 0 10px;font-size:16px}
+.opt{border:1px solid var(--line);background:var(--soft);padding:8px 10px;border-radius:8px;cursor:pointer;text-align:left;margin:7px 0}
+.opt:hover{background:#e7f6fd}
+.lbl{font-weight:800;color:var(--green);margin-right:6px}
+.correct{background:#e7f8ef!important;border-color:var(--green)!important}
+.wrong-show{background:#fff0f0!important;border-color:var(--red)!important}
+.btn{border:0;background:var(--green);color:#fff;padding:8px 13px;border-radius:7px;cursor:pointer}
+.reveal{display:none;background:#f8fbfa;border-left:3px solid var(--blue);padding:10px;margin-top:10px}
+.reveal.show{display:block}
+.footer{color:var(--muted);font-size:13.12px;text-align:center;margin-top:32px}
+.img-modal{display:none;position:fixed;inset:0;background:rgba(10,25,20,.86);z-index:5;align-items:center;justify-content:center;padding:4vh}
+.img-modal.show{display:flex}
+.img-modal img{max-width:96vw;max-height:92vh}
+.img-modal button{position:fixed;right:18px;top:12px;background:#fff;border:0;border-radius:50%;width:36px;height:36px;font-size:24px;cursor:pointer}
+@media(max-width:600px){.wrap{padding:20px 12px 45px}.panel,.figure,.warn,.mnemonic{padding:15px}.kp-body{padding-left:22px}.flip{height:160px}}
+</style>
+</head>
+<body><main class="wrap">
+<header class="header"><div class="eyebrow">阶段 2 · 训练科学</div><h1>Day 38：环境因素与运动控制技能分类</h1><p class="sub">把外界条件对身体的影响，和动作在什么情境中完成，拆开判断，训练设计才不会混。</p><div class="chips"><span class="chip">阶段2训练科学</span><span class="chip">运动控制</span><span class="chip">双证</span></div></header>
+<section class="panel takeaway"><h2>一口话总结</h2><p>热、冷、高原先改变身体的可承受负荷；技能分类再看身体是否移动、环境条件是否变化，以及是否要操控物体。训练必须同时匹配人、环境和任务。</p></section>
+<figure class="figure"><img id="lessonFigure" src="assets/阶段2训练科学/day38-环境因素与运动控制技能分类.png" alt="环境因素与Gentile技能分类示意图"><figcaption class="caption">先看环境，再看身体状态。热、冷、高原影响生理条件；Gentile 矩阵决定动作放在什么情境里学。</figcaption></figure>
+<section class="panel"><h2>核心要点</h2><ul class="kp">
+<li><span class="kp-head"><span class="term">热环境</span>热适应的目标是更有效地散热，而不是在高温里硬扛。</span><div class="kp-body"><span class="dim">生理变化</span><p>高温训练时，身体既要把血液送往工作肌肉，又要把更多血液送往皮肤散热，因此心率和心血管负担会上升。出汗会带走热量，但大量出汗也会增加脱水风险。</p><span class="dim">适应表现</span><p>经过循序渐进的热暴露，通常会出现更早开始出汗、同一负荷下心率和主观用力感下降、体温更容易受控等变化。出汗量多本身不是“已经适应”的充分证据。</p><span class="dim">训练决策</span><p>优先调整时段、强度、时长和补液机会，再观察心率、主观疲劳和异常症状。初次暴露、睡眠不足、刚生病或有心血管风险的人，应采用更保守的负荷。</p></div></li>
+<li><span class="kp-head"><span class="term">冷环境</span>低肌温会拖慢发力与协调，动态热身是进入主训练的前提。</span><div class="kp-body"><span class="dim">生理变化</span><p>肌肉温度下降会影响神经传导速度、肌肉收缩速度和组织黏弹性，动作更容易显得僵硬，完成同样的爆发或精细协调任务会更困难。</p><span class="dim">训练决策</span><p>先通过低强度有氧、关节活动和动作专项的渐进组把体温带上来，再安排冲刺、跳跃、举重等高速度或高功率内容。停歇时及时保暖，避免热身成果在组间流失。</p><span class="dim">注意边界</span><p>寒冷、湿衣和风会共同加速散热。出现持续颤抖、麻木、动作控制明显变差时，不应把它当作“意志力不足”，而应降低暴露并恢复保暖。</p></div></li>
+<li><span class="kp-head"><span class="term">高原低氧</span>先区分急性反应和长期适应，训练负荷要给适应过程留空间。</span><div class="kp-body"><span class="dim">急性反应</span><p>海拔升高后，吸入空气的氧分压下降。相同配速或功率下，心率、呼吸频率和主观用力感常会上升，恢复时间也可能变长；这不等同于耐力突然变差。</p><span class="dim">适应与安排</span><p>初到高原应先降低强度和总量，用心率、主观用力和睡眠恢复来调节进度。长期暴露可出现红细胞相关适应，但速度存在个体差异，不能靠几次训练快速获得。</p><span class="dim">安全判断</span><p>若出现进行性头痛、明显恶心、静息气短、步态不稳或意识改变，应停止训练并寻求医疗评估；严重或加重时尽快下撤，比继续“适应”更重要。</p></div></li>
+<li><span class="kp-head"><span class="term">Gentile 技能分类</span>不是只有“稳/动 × 变/不变”，而是用环境条件与动作功能共同组织成 16 类技能。</span><div class="kp-body"><span class="dim">环境条件</span><p>先看调节条件是静止还是在运动，例如目标、地面或对手是否移动；再看每次尝试之间是否变化，例如距离、速度、方向或情境是否相同。这两个维度决定外界信息的稳定性与可预测性。</p><span class="dim">动作功能</span><p>再看身体是保持稳定还是发生位移，并判断是否需要操控物体。四个二分维度组合为 16 类，而不是只用四种组合概括所有技能。</p><span class="dim">如何使用</span><p>教学时可从“环境固定、条件重复、身体稳定、不操控物体”的简单情境起步，再逐步加入移动目标、条件变化、身体位移或器械操控。一次只提高一个维度，更容易定位学员卡在哪里。</p></div></li>
+<li><span class="kp-head"><span class="term">封闭技能与开放技能</span>区别在于环境线索是否稳定、能否预测，二者之间存在连续谱。</span><div class="kp-body"><span class="dim">封闭技能</span><p>深蹲、固定路线的技术动作或在稳定场地完成的直线冲刺，外界变化较少，动作程序可以在相近条件下重复。练习重点通常是动作质量、节奏和力量输出。</p><span class="dim">开放技能</span><p>篮球运球、网球接发球或躲避来球时，目标、对手和空间不断变化。学员需要感知线索、选择动作并及时修正，单独重复一个固定动作并不足以覆盖比赛需要。</p><span class="dim">实践提醒</span><p>技能不是绝对标签：同样的传球，在无干扰练习中更封闭，加入移动防守和时间压力后就更开放。训练设计应与目标场景的不可预测性相匹配。</p></div></li>
+<li><span class="kp-head"><span class="term">训练设计顺序</span>先确认风险和情境，再决定动作进阶，而不是只看动作难不难。</span><div class="kp-body"><span class="dim">第一步：人和环境</span><p>评估温度、湿度、海拔、场地、装备与学员当天的恢复状态。环境已经改变可承受负荷时，先调总量、强度、休息和补液，而非强行执行原计划。</p><span class="dim">第二步：任务约束</span><p>明确动作目标、身体是否位移、外界条件是否变化，以及是否需要操控物体。力量初学者先在稳定条件下建立动作质量；专项训练再逐步增加速度、反应和决策要求。</p><span class="dim">第三步：只改一个变量</span><p>每次进阶优先改变一个关键条件，例如先增加移动距离，再加入方向变化，最后引入对手或时间压力。这样既能维持安全，也能判断表现变化到底由哪一项要求造成。</p></div></li>
+</ul></section>
+<section class="warn"><h2>常见误区</h2><p>“出汗多 = 热适应完成” 不对。真正的热适应还包括心率、主观感受和体温控制的变化。</p><p>“高原心率快 = 不能练” 也不对。多数情况是需要减量、适应和阶段性推进，不是直接停掉。</p><p>“封闭技能就是简单，开放技能就是高级” 也不对。它们只是环境可预测性不同。</p></section>
+<section class="mnemonic"><strong>记忆口诀：</strong>热看汗，冷看温；高原先看氧；稳动看身体，变不变看环境。</section>
+<section class="panel"><h2>翻转卡复习</h2><div class="card-grid">
+<div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face">热环境训练最先调什么？</div><div class="face back">先调强度、时段和补液，再谈负荷。</div></div></div>
+<div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face">冷环境最怕什么？</div><div class="face back">肌温低，神经肌肉效率差。</div></div></div>
+<div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face">Gentile 看哪两个轴？</div><div class="face back">身体状态和环境状态。</div></div></div>
+<div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face">深蹲属于哪类技能？</div><div class="face back">封闭技能，环境可预测。</div></div></div>
+<div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face">篮球运球属于哪类技能？</div><div class="face back">开放技能，环境会变化。</div></div></div>
+<div class="flip" onclick="this.classList.toggle('flipped')"><div class="flip-inner"><div class="face">高原先看什么？</div><div class="face back">先看急性心率和呼吸反应。</div></div></div>
+</div></section>
+<section class="panel orange"><h2>实操关联</h2><ul class="practice"><li><strong>户外训练：</strong>热天先调低强度，冷天先拉长热身，高原先做适应，再谈进阶。</li><li><strong>技能分类：</strong>做计划时先判断动作是在稳态还是变动环境里完成。</li><li><strong>教练口令：</strong>闭链稳定动作先练质量，开放技能先练反应和决策。</li><li><strong>客户沟通：</strong>把“今天环境怎么变”讲清楚，客户更容易理解为什么训练要改。</li></ul></section>
+<section class="panel quiz"><h2>练习题</h2><div class="q"><h3>1. 下列最符合热适应的是哪项？</h3><div class="opt" onclick="pick(this,'wrong')"><span class="lbl">A.</span>一出汗就说明脱水严重，必须停练</div><div class="opt" onclick="pick(this,'correct')"><span class="lbl">B.</span>更早出汗和更好的散热能力</div><div class="opt" onclick="pick(this,'wrong')"><span class="lbl">C.</span>心率越高越说明已经适应完成</div><button class="btn" onclick="show('ans1')">查看解析</button><div class="reveal" id="ans1">答案 B。热适应不是“流汗越多越好”，而是散热更早、更有效，体温和心血管负担更可控。</div></div>
+<div class="q"><h3>2. 哪个属于开放技能？</h3><div class="opt" onclick="pick(this,'wrong')"><span class="lbl">A.</span>平板支撑</div><div class="opt" onclick="pick(this,'correct')"><span class="lbl">B.</span>篮球运球</div><div class="opt" onclick="pick(this,'wrong')"><span class="lbl">C.</span>杠铃深蹲</div><button class="btn" onclick="show('ans2')">查看解析</button><div class="reveal" id="ans2">答案 B。开放技能的关键是环境会变，需要随外界线索快速反应。</div></div>
+<div class="q"><h3>3. 多选：高原低氧的常见急性反应包括哪些？</h3><div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">A.</span>心率升高</div><div class="opt" data-c="1" onclick="pickMulti(this)"><span class="lbl">B.</span>呼吸加快</div><div class="opt" onclick="pickMulti(this)"><span class="lbl">C.</span>立刻红细胞暴增</div><div class="opt" onclick="pickMulti(this)"><span class="lbl">D.</span>一夜之间完全适应</div><button class="btn" onclick="show('ans3')">查看解析</button><div class="reveal" id="ans3">A、B 对。红细胞增多是慢性适应，不是立刻发生。</div></div>
+<div class="q"><h3>4. 训练场景：夏天户外跑步客户感觉闷热。你更应该先做什么？</h3><div class="opt" onclick="pick(this,'wrong')"><span class="lbl">A.</span>直接按原计划全强度完成</div><div class="opt" onclick="pick(this,'correct')"><span class="lbl">B.</span>减量、补液、延长热身并调整时段</div><div class="opt" onclick="pick(this,'wrong')"><span class="lbl">C.</span>只看出汗量，不看心率和主观感受</div><button class="btn" onclick="show('ans4')">查看解析</button><div class="reveal" id="ans4">答案 B。环境已经在改变身体状态，先调整负荷和暴露条件，再看是否继续推进。</div></div></section>
+<footer class="footer">阶段2训练科学 · Day 38/112 · 今日早间新知识（工作日17:00） · 中午12:00复习巩固</footer>
+</main><div class="img-modal" id="imgModal"><img src="assets/阶段2训练科学/day38-环境因素与运动控制技能分类.png" alt="放大机制图"><button type="button" aria-label="关闭">×</button></div>
+<script>
+document.querySelectorAll('ul.kp>li>.kp-head').forEach(function(h){h.addEventListener('click',function(){h.parentElement.classList.toggle('open')})});
+function pick(el,type){el.parentElement.querySelectorAll('.opt').forEach(function(o){o.classList.remove('correct','wrong-show')});el.classList.add(type==='correct'?'correct':'wrong-show')}
+function pickMulti(el){el.classList.toggle(el.dataset.c==='1'?'correct':'wrong-show')}
+function show(id){document.getElementById(id).classList.add('show')}
+var m=document.getElementById('imgModal');
+document.getElementById('lessonFigure').onclick=function(){m.classList.add('show')};
+m.onclick=function(){m.classList.remove('show')};
+document.addEventListener('keydown',function(e){if(e.key==='Escape')m.classList.remove('show')});
+</script>
+</body></html>
