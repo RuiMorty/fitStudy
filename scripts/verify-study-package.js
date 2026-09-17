@@ -98,7 +98,7 @@ async function main() {
       await page.locator('[data-view="lesson.html"]').click();
       await page.frameLocator('iframe').locator('.kp').waitFor();
     }
-    if (site) {
+    if (site && manifest.deliveryMode !== 'local-draft') {
       for (const width of [1440, 390]) {
         await page.setViewportSize({ width, height: 1000 });
         await page.goto('http://fitstudy.test/library/');
@@ -116,6 +116,13 @@ async function main() {
         }
       }
       results.push('catalog: thumbnail and all four card click targets reach the correct cover-free lesson');
+    }
+    if (site && manifest.deliveryMode === 'local-draft') {
+      assert.equal(manifest.publicLearningUrl, null);
+      assert.equal(manifest.publishApproved, false);
+      assert.ok(manifest.files.every((file) => !file.startsWith('go/')));
+      assert.doesNotMatch(fs.readFileSync(path.join(output, manifest.paths.xhs, 'caption.txt'), 'utf8'), /完整学习页：https?:\/\//);
+      results.push('local draft: no public learning URL or shortlink installation; catalog verification not applicable');
     }
     assert.deepEqual(errors, []);
     results.push(`${manifest.slides} slides: layout and 1080x1440 PNG dimensions passed; broken-layout gate verified`);

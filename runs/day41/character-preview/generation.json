@@ -1,0 +1,37 @@
+{
+  "status": "generated-awaiting-visual-review",
+  "startedAt": "2026-09-17T02:37:32.506277+00:00",
+  "model": "gpt-image-2.5-sunburst",
+  "authorization": {
+    "messages": [
+      "41今天的示例你先生成我看下效果先",
+      "当然不用生成多，我需要看下效果先"
+    ],
+    "scope": "two HTML style samples only: cover and Chinese detail",
+    "assumedTeacher": "Despa / 德斯帕",
+    "userPreferences": [
+      "示例优先男性",
+      "固定波吉与老师",
+      "背景融入XHS卡片"
+    ]
+  },
+  "attempts": [
+    {
+      "file": "cover.png",
+      "startedAt": "2026-09-17T02:37:32.507171+00:00",
+      "status": "generated",
+      "completedAt": "2026-09-17T02:38:09.142326+00:00",
+      "returncode": 0,
+      "bytes": 609669
+    },
+    {
+      "file": "detail.png",
+      "startedAt": "2026-09-17T02:38:09.143904+00:00",
+      "status": "generated",
+      "completedAt": "2026-09-17T02:38:52.933085+00:00",
+      "returncode": 0,
+      "bytes": 909124
+    }
+  ],
+  "completedAt": "2026-09-17T02:38:52.934142+00:00"
+}

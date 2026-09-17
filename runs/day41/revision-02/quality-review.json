@@ -1,0 +1,107 @@
+{
+  "revision": "02",
+  "checkedAt": "2026-09-17T04:25:22.125761+00:00",
+  "status": "passed-local-revision",
+  "userFinalReview": "pending",
+  "request": "优化模糊和有字图文字，修正04断杠、05配重连接、07颈后杠、10不明确蓝圈",
+  "correctedIssues": [
+    {
+      "issue": "清晰度",
+      "action": "前架采用近景；总览增大字号并以3072×2048输出真实字体，保留3:2比例；知识图从源组件等比排入1400×450",
+      "evidence": "runs/day41/revision-02/assets/detail.typesetting.json",
+      "status": "reviewed"
+    },
+    {
+      "issue": "有字图错误",
+      "action": "全部18处标题、说明与图例由已校对JSON用字体绘制；不复用模型绘制的旧文字",
+      "evidence": "runs/day41/revision-02/overview-layout.json",
+      "status": "checked-against-text-source"
+    },
+    {
+      "issue": "04颈部前方缺少中段杠身",
+      "action": "重绘为德斯帕交叉臂前架近景和浅蹲，手之间的灰色杠身在颈根前连续可见",
+      "status": "visually-checked"
+    },
+    {
+      "issue": "05抬起后配重与杠分离的观感",
+      "action": "旧支撑块画法被替换为两端圆形训练片，图中杆套穿过配重中心，站直时整体离地",
+      "status": "visually-checked"
+    },
+    {
+      "issue": "07波吉的杠在身后",
+      "action": "改为波吉前肩起始和过顶完成两阶段，起始中段杠在颈前；两阶段腿部稳定",
+      "status": "visually-checked"
+    },
+    {
+      "issue": "10蓝圈对象不明",
+      "action": "去掉圈图，使用左深蹲底部、右传统硬拉准备位；保留的蓝虚线由卡片导语明确解释",
+      "status": "visually-checked"
+    }
+  ],
+  "visualReview": {
+    "sources": [
+      "visual-04-front-squat.png",
+      "visual-05-conventional-deadlift.png",
+      "visual-07-overhead-press.png"
+    ],
+    "composedImages": [
+      "detail.png",
+      "visual-04-front-squat.png",
+      "visual-05-conventional-deadlift.png",
+      "visual-07-overhead-press.png",
+      "visual-10-practice-comparison.png"
+    ],
+    "finalCards": 11,
+    "contactSheets": [
+      "runs/day41/revision-02/verification/contact-sheet-01.jpg",
+      "runs/day41/revision-02/verification/contact-sheet-02.jpg",
+      "runs/day41/revision-02/verification/contact-sheet-03.jpg"
+    ],
+    "fullResolutionOverviewCard": "xhs/day41/slide-01.png",
+    "proofPreview": "runs/day41/revision-02/review/fixes-preview.jpg",
+    "blockingIssues": []
+  },
+  "generation": {
+    "newRequests": 3,
+    "successful": 3,
+    "automaticRetries": 0,
+    "model": "gpt-image-2.5-sunburst",
+    "record": "runs/day41/revision-02/generation.json",
+    "referenceConditioning": false
+  },
+  "verification": {
+    "browser": "runs/day41/revision-02/verification/browser-report.json",
+    "files": "runs/day41/revision-02/verification/file-report.json",
+    "textBlocks": 18,
+    "detailSize": [
+      3072,
+      2048
+    ],
+    "slideSize": [
+      1080,
+      1440
+    ],
+    "widths": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "protectedFilesUnchanged": 53
+  },
+  "delivery": {
+    "html": "html/day41-自由重量-下肢杠铃技术.html",
+    "thumbnail": "html/thumbs/day41-lower-body-barbell-technique-thumbnail.png",
+    "detail": "html/assets/阶段2训练科学/day41-自由重量-下肢杠铃技术.png",
+    "xhs": "xhs/day41",
+    "archive": "xhs/day41/day41-xhs.zip"
+  },
+  "priorVersionBackup": "runs/day41/revision-02/backup",
+  "scope": {
+    "deliveryMode": "local-draft",
+    "publishApproved": false,
+    "publicLearningUrl": null,
+    "progressUnchanged": true,
+    "nextLessonStarted": false
+  }
+}

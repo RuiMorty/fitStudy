@@ -1,0 +1,118 @@
+{
+  "id": "fitstudy-science-illustration-v1",
+  "status": "proposed-awaiting-sample-validation",
+  "createdAt": "2026-09-17",
+  "specification": "templates/study/v1/image-style.md",
+  "audit": "runs/style-audit-20260917/index.html",
+  "automationEnforcement": "not-implemented; production-held-by-existing-review-gate",
+  "referenceInputMode": "human-prompt-and-visual-review-only; current-provider-script-does-not-attach-reference-images",
+  "commonPrompt": "同一套医学与运动科学教材解释插画。纯白背景，轻柔体积、简洁明暗、适度真实且自然的人体比例；人物的面部、肤色和运动服保持克制一致。画面围绕需要讲清的结构、运动方向、位置、对比或因果关系组织，必要的剖面、箭头、局部放大应准确连接目标；人物和器械为解释服务。蓝色和绿色为主要辅助色，橙色少量强调，解剖结构保留合理颜色。白底与浅色分区、细线、少量接触阴影。保持主体大小与留白一致，安全边距内完整展示教学所需结构。不使用摄影棚或商业健身广告质感，不渲染油亮皮肤、夸张肌肉、亮面金属、浓重投影、无关飘带或强光效，不将饱和色大条幅作为标题背景。无品牌、Logo、水印。",
+  "roles": {
+    "cover": {
+      "deliverySize": [
+        1600,
+        900
+      ],
+      "ratio": "16:9",
+      "text": "none",
+      "prompt": "横向16:9无字封面。一个中心知识主题，主图搭配必要的一至两处解释细节，四周约6%安全边距。以知识关系取代无关场景细节。无任何中文、字母、数字、标题、边框。"
+    },
+    "detail": {
+      "deliverySize": [
+        1536,
+        1024
+      ],
+      "ratio": "3:2",
+      "text": "approved-simplified-chinese-only",
+      "prompt": "横向3:2中文知识详情图。准确使用提供的简体中文短标签；黑色主标题，浅色分区和细线，少量蓝绿橙标示关系。主标题约56px、分组标题约34px、标签约28px，以实际可读性为准。按信息选择主图加局部图、流程或对照，不强制六宫格，不使用浓绿浓蓝标题带，不堆整课正文。"
+    },
+    "knowledge": {
+      "deliverySize": [
+        1400,
+        450
+      ],
+      "ratio": "28:9",
+      "text": "none",
+      "targetSlot": [
+        936,
+        240
+      ],
+      "prompt": "横向28:9无字知识配图。只解释一个知识点，可用主图与必要局部图、两个状态或有意义的关联示意，沿水平方向组织。主体高度约占画布75%至85%，关键关系清楚，简单单体允许较窄，不添加无关场景填满画布。不能用大面积补白代替适合横幅的构图。无文字、字母、数字、边框或标题栏。"
+    },
+    "xhs-export": {
+      "deliverySize": [
+        1080,
+        1440
+      ],
+      "ratio": "3:4",
+      "renderMode": "existing-common-template",
+      "prompt": null
+    }
+  },
+  "references": [
+    {
+      "role": "cover",
+      "file": "html/thumbs/day02-bony-landmarks-thumbnail.png",
+      "use": "解剖主图与细节的关系"
+    },
+    {
+      "role": "cover",
+      "file": "html/thumbs/day17-biomechanical-movement-patterns-thumbnail.png",
+      "use": "动作与解释图结合，允许适度写实人物"
+    },
+    {
+      "role": "cover",
+      "file": "html/thumbs/day21-week3-biomechanics-review-thumbnail.png",
+      "use": "动作、受力和脊柱关系"
+    },
+    {
+      "role": "detail",
+      "file": "html/assets/阶段1基础科学/day05-动作平面与运动轴.png",
+      "use": "黑色文字与蓝绿橙关系标示"
+    },
+    {
+      "role": "detail",
+      "file": "html/assets/阶段1基础科学/day12-主要肌群-核心肌群与McGill核心功能分类.png",
+      "use": "主图、局部信息与浅色分区"
+    },
+    {
+      "role": "detail",
+      "file": "html/assets/阶段2训练科学/day29-训练适应基本原则.png",
+      "use": "抽象原则的关系图；不照抄字号"
+    },
+    {
+      "role": "detail",
+      "file": "html/assets/阶段2训练科学/day32-心血管与呼吸系统解剖.png",
+      "use": "系统结构与路径"
+    },
+    {
+      "role": "knowledge",
+      "file": "xhs/day17/ai-visuals/visual-07-lower-body-patterns.png",
+      "use": "关节与动作解释；不照抄原始比例"
+    },
+    {
+      "role": "knowledge",
+      "file": "xhs/day29/ai-visuals/visual-02-specificity.png",
+      "use": "单一主题与横幅交付先例；不照抄源图大幅留白"
+    }
+  ],
+  "requiredPromptFields": [
+    "role",
+    "topic",
+    "teachingRelationship",
+    "composition",
+    "allowedText",
+    "anatomyAndTechniqueConstraints"
+  ],
+  "reviewRequired": [
+    "canvas-and-subject-scale",
+    "cross-lesson-style",
+    "text-and-brand",
+    "anatomy-and-technique",
+    "actual-template-export"
+  ],
+  "retryPolicy": "no-automatic-paid-retry",
+  "historicalReplacement": "not-authorized-by-this-audit",
+  "activeSampleOverride": "runs/day41/character-preview/image-prompts.json",
+  "activeSampleStatus": "two-character-samples-awaiting-user-review; prior-realistic-human-prompt-is-not-current-character-direction"
+}

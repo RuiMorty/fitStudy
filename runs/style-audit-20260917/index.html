@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>健身课程 · 全历史图片风格审阅</title>
+  <link rel="stylesheet" href="report.css">
+  <script src="audit-data.js" defer></script>
+  <script src="report.js" defer></script>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <p class="eyebrow">图片风格审阅 · 2026.09.17</p>
+    <h1>你的感觉是对的，图片风格确实变了。</h1>
+    <p class="intro">已对照全部现存的 HTML 有字／无字图、小红书成图与原始配图，以及 Day41 新源图。问题来自画风、图中文字层级与主体占比；历史图片的格式也需要统一。</p>
+    <nav aria-label="报告导航"><a href="#findings">核查结论</a><a href="#comparison">并排对照</a><a href="#format">统一规范</a><a href="#gallery">全部图片</a><a href="#sheets">33 张总览</a></nav>
+  </div>
+</header>
+<main class="wrap">
+  <div class="metrics" aria-label="核查范围">
+    <div><b>40 课</b><span>HTML 封面与详情文件</span></div>
+    <div><b>310 张</b><span>小红书成图，含 33 张封面</span></div>
+    <div><b>297 张</b><span>小红书原图，含历史备选</span></div>
+    <div><b>11 张</b><span>Day41 源图，尚未导出成品</span></div>
+  </div>
+  <p class="note">HTML：Day01–40；小红书：Day01–32、Day40。Day11 详情文件存在，但当前正文未引用。33 张小红书封面已包含在 310 张成图内，不重复累计。审阅重点为风格、比例与信息排布。</p>
+
+  <section id="findings">
+    <h2>核查结论</h2>
+    <div class="finding-grid">
+      <article><span class="number">01</span><h3>画面重心从知识关系移向人物场景</h3><p>历史中反复出现白底、解剖剖面、运动方向和受力关系。早期也有写实人物，但通常配合解释图。Day40、尤其 Day41 更突出人物外形、皮肤、完整器械和场景，教材插画感变弱。</p></article>
+      <article><span class="number">02</span><h3>有字图的比例、标题和色块不统一</h3><p>40 个详情图文件共有 11 种尺寸，横版、竖版、长图混用。Day41 又使用大蓝标题、浓绿蓝标题带与六个等分格，整体更接近训练海报。历史中的黑色标题、浅色分区与细线可作为共同基准。</p></article>
+      <article><span class="number">03</span><h3>小红书统一了外框，内部图片仍在漂移</h3><p>310 张最终 PNG 全部是 1080×1440；297 张源图却有 30 种尺寸，且有图标、临床人物、蓝底方图等不同处理。相同外框无法自动统一图片的风格、主体大小与留白。</p></article>
+    </div>
+    <p class="responsibility">我之前锁定了页面组件，没有把图片本身的风格和比例一起锁定。只写“白底、半写实 3D”的通用提示词，约束不足。</p>
+    <details><summary>查看各类数量与尺寸统计</summary><div class="table-wrap"><table><thead><tr><th>类别</th><th>文件数</th><th>尺寸种类</th><th>最常见尺寸</th></tr></thead><tbody id="stats"></tbody></table></div><p class="note">原图目录含备选版本和拼图，不等于全部都在最终页面使用。实际成品与源图分别核查；HTML 详情以页面实际引用为主，Day11 的未使用文件已单独标记。</p></details>
+  </section>
+
+  <section id="comparison">
+    <h2>按用途并排看原图</h2>
+    <p>可切换任何现存课程；点击图片可打开原尺寸。Day41 显示的是源图，不能视作最终小红书海报。</p>
+    <div class="presets" aria-label="代表对照">
+      <button type="button" data-preset="cover">封面 · Day17 / 41</button>
+      <button type="button" data-preset="detail">有字图 · Day12 / 41</button>
+      <button type="button" data-preset="knowledge">配图 · Day17 / 41</button>
+      <button type="button" data-preset="export">小红书成图 · Day29 / 40</button>
+    </div>
+    <label class="category-control">用途 <select id="compare-kind"><option value="cover">HTML 无字封面</option><option value="detail">HTML 中文详情</option><option value="knowledge">小红书无字配图／原图</option><option value="export">小红书最终成图</option></select></label>
+    <div class="compare-grid">
+      <div class="compare-panel"><label for="left-select">左侧图片</label><select id="left-select"></select><a id="left-link" target="_blank" rel="noopener"><img id="left-image" alt="左侧对照图片"></a><p id="left-meta" class="image-meta"></p></div>
+      <div class="compare-panel"><label for="right-select">右侧图片</label><select id="right-select"></select><a id="right-link" target="_blank" rel="noopener"><img id="right-image" alt="右侧对照图片"></a><p id="right-meta" class="image-meta"></p></div>
+    </div>
+    <p id="compare-note" class="note"></p>
+    <details><summary>查看九张代表图总览</summary><a href="comparison.jpg" target="_blank" rel="noopener"><img class="full-image" src="comparison.jpg" loading="lazy" alt="历史封面、详情图和小红书配图与 Day41 的九图对照"></a></details>
+  </section>
+
+  <section id="format">
+    <h2>统一格式与绘制语言</h2>
+    <p>统一为白底、轻体积感的医学／运动科学解释插画，保留适度真实的人体、准确的结构与有意义的箭头。按学科选择主图、局部图、流程或对照；同一用途固定比例、字色、主体大小与留白。</p>
+    <div class="status">规范草案已写入共用模板，尚待新样图与实际排版验证；这不代表图片已完成统一。</div>
+    <div class="table-wrap"><table><thead><tr><th>用途</th><th>目标格式</th><th>固定规则</th></tr></thead><tbody>
+      <tr><td>无字封面</td><td>1600×900 · 16:9</td><td>核心知识主体＋必要解释细节；无字、无品牌。</td></tr>
+      <tr><td>中文详情／总览内图</td><td>1536×1024 · 3:2</td><td>黑色标题、浅色分区、短标签与清楚的关系图。</td></tr>
+      <tr><td>小红书知识配图</td><td>1400×450 · 28:9</td><td>同一知识点横向组织，固定主体高度，检查实际留白。</td></tr>
+      <tr><td>小红书最终海报</td><td>1080×1440 · 3:4</td><td>继续使用已验收的共用页面组件。</td></tr>
+    </tbody></table></div>
+    <details open><summary>为什么还要检查主体占比？</summary><p>当前知识页图片区为 936×240。使用 <code>contain</code> 时，3:2 源画布显示约 360×240；1400×450 显示约 747×240。这只是画布占位：Day29 的横图本身已经有大量白边，可见主体会更窄。只补白或改文件尺寸，不能真正统一效果。</p><p>后续样图必须同时比较实际主体边界、关键关系、整页与手机预览。不能拉伸人物、截断器械，或用无关场景撑满画面。参考图用于提示词与目检；当前生图脚本没有自动附带参考图。</p></details>
+    <div class="links"><a href="../../templates/study/v1/image-style.md">完整图片规范 ↗</a><a href="../../templates/study/v1/image-style.json">共用提示词预设 ↗</a></div>
+  </section>
+
+  <section id="gallery">
+    <h2>全部图片索引</h2>
+    <div class="filters">
+      <label>类别 <select id="gallery-kind"></select></label>
+      <label>课程 <select id="gallery-day"><option value="all">全部课程</option></select></label>
+      <label>文件名 <input id="gallery-query" type="search" placeholder="例如 low-bar 或 day17"></label>
+    </div>
+    <p id="gallery-count" aria-live="polite" class="note"></p>
+    <div id="gallery-items" class="gallery-grid"></div>
+    <div class="pager"><button id="prev-page" type="button">上一页</button><span id="page-label"></span><button id="next-page" type="button">下一页</button></div>
+  </section>
+
+  <section id="sheets">
+    <h2>全部 33 张风格总览</h2>
+    <p>本次已逐张看过全部总览。选择类别与页码可查看历史连续变化；点击总览可放大原图。</p>
+    <label>总览页 <select id="sheet-select"></select></label>
+    <p id="sheet-description" class="note"></p>
+    <a id="sheet-link" target="_blank" rel="noopener"><img id="sheet-image" class="full-image" loading="lazy" alt="所选类别的图片总览"></a>
+  </section>
+
+  <section class="hold">
+    <h2>Day41 当前状态</h2>
+    <p>11 张源图均保留，图片风格未通过；低杠杠位、前架手肩关系另有内容问题。未生成 Day41 最终小红书 PNG 或 ZIP。本次风格审阅没有新增生图请求，也没有替换历史图片。</p>
+    <p>下一步是在明确授权的样图范围内，先验证封面、有字详情、知识页配图三个用途，再检验实际共用模板效果。当前审核状态继续拦住后续生成与发布。</p>
+    <div class="links"><a href="findings.json">审阅记录 ↗</a><a href="inventory.json">完整文件清单 ↗</a><a href="statistics.json">尺寸与保护文件记录 ↗</a></div>
+  </section>
+</main>
+<footer class="wrap">本地审阅报告 · 原图保持不变 · 图片风格待样图验证</footer>
+</body>
+</html>

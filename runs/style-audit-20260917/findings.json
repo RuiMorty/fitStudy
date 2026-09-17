@@ -1,0 +1,76 @@
+{
+  "completedAt": "2026-09-17T02:25:43.366609+00:00",
+  "status": "audit-complete-image-style-not-approved",
+  "scope": "all-existing-history-plus-day41-sources",
+  "visuallyReviewedContactSheets": [
+    "html-cover-01.jpg",
+    "html-cover-02.jpg",
+    "html-detail-01.jpg",
+    "html-detail-02.jpg",
+    "xhs-cover-01.jpg",
+    "xhs-cover-02.jpg",
+    "xhs-export-01.jpg",
+    "xhs-export-02.jpg",
+    "xhs-export-03.jpg",
+    "xhs-export-04.jpg",
+    "xhs-export-05.jpg",
+    "xhs-export-06.jpg",
+    "xhs-export-07.jpg",
+    "xhs-export-08.jpg",
+    "xhs-export-09.jpg",
+    "xhs-export-10.jpg",
+    "xhs-export-11.jpg",
+    "xhs-export-12.jpg",
+    "xhs-export-13.jpg",
+    "xhs-export-14.jpg",
+    "xhs-export-15.jpg",
+    "xhs-export-16.jpg",
+    "xhs-source-01.jpg",
+    "xhs-source-02.jpg",
+    "xhs-source-03.jpg",
+    "xhs-source-04.jpg",
+    "xhs-source-05.jpg",
+    "xhs-source-06.jpg",
+    "xhs-source-07.jpg",
+    "xhs-source-08.jpg",
+    "xhs-source-09.jpg",
+    "xhs-source-10.jpg",
+    "day41-source-01.jpg"
+  ],
+  "counts": {
+    "html-cover": 40,
+    "html-detail": 40,
+    "xhs-cover": 33,
+    "xhs-export": 310,
+    "xhs-source": 297,
+    "day41-source": 11
+  },
+  "conclusion": "存在风格漂移；历史格式本身也未完全统一。小红书最终像素尺寸一致，但源图比例、主体占比和画风不一致。",
+  "findings": [
+    {
+      "category": "html-cover",
+      "text": "40 张无字封面中，39 张为 1672×941，Day09 为 1448×1086。早期反复出现解剖、运动方向、受力和概念关系图；Day40–41 更偏人物与教练场景，Day41 的力量架、皮肤与金属质感更抢眼。"
+    },
+    {
+      "category": "html-detail",
+      "text": "40 个详情图文件共 11 种尺寸，包含横版、竖版和长图；Day11 文件未被当前正文引用。Day41 的大蓝标题、浓绿蓝标题带、六等分面板使其更像训练海报。历史也有色带与写实人体，差别是组合与视觉重心。"
+    },
+    {
+      "category": "xhs-export",
+      "text": "现有 Day01–32、Day40 的 310 张最终 PNG 全为 1080×1440（含 33 张封面）。外层尺寸统一，内部图片画风、比例与留白仍有变化。Day33–39 没有现存小红书包，不能列为已检查成品。"
+    },
+    {
+      "category": "xhs-source",
+      "text": "297 张原始配图含备选版本、拼图和总览，共 30 种尺寸；不能把全部原图都当作在用成品。Day30 混入扁平图标，Day31 更多临床人物场景，Day32 原图含蓝底方图，历史并非单一画风。"
+    },
+    {
+      "category": "day41-source",
+      "text": "11 张源图有 3 种尺寸，单人场景、多人场景、局部图和对照图的景别混用；人物与完整器械主导，解释关系偏弱。低杠杠位和前架手肩关系另有阻断问题。没有 Day41 最终 PNG 可供审核。"
+    }
+  ],
+  "cause": "前序锁定了页面组件，但图片提示词只用白底、半写实3D等泛化描述，没有固定按用途的比例、主体占比、绘制语言与跨课比较标准。",
+  "proposedStandard": "fitstudy-science-illustration-v1",
+  "paidImageCallsDuringStyleAudit": 0,
+  "historicalAssetsChanged": false,
+  "nextGate": "用明确授权的代表样图验证三个用途及实际模板效果；当前不启动生图。"
+}

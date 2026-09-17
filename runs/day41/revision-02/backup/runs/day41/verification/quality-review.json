@@ -1,0 +1,134 @@
+{
+  "checkedAt": "2026-09-17T03:10:34.844206+00:00",
+  "status": "passed-local-delivery",
+  "userFinalReview": "pending",
+  "authorization": "完成41的任务",
+  "characterDirection": "Bojji + Despa; male examples; consistent 2D teaching illustration",
+  "contentSchema": {
+    "status": "passed-by-common-renderer",
+    "knowledgePoints": 8,
+    "quizQuestions": 6,
+    "xhsSlides": 11
+  },
+  "unitTests": {
+    "status": "passed",
+    "passed": 13,
+    "failed": 0,
+    "command": "node --test tests/study-template.test.js tests/study-draft.test.js",
+    "scope": "common template and local-draft installer; completed before rendering"
+  },
+  "browserVerification": {
+    "status": "passed",
+    "viewports": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "report": "runs/day41/verification/report.json",
+    "checks": [
+      "image decode",
+      "horizontal overflow",
+      "disclosures",
+      "flip cards",
+      "all six quizzes",
+      "image lightbox",
+      "XHS responsive preview",
+      "all slide layout",
+      "intentional overflow rejected"
+    ]
+  },
+  "visualReview": {
+    "status": "passed",
+    "reviewedExports": [
+      "xhs/day41/cover.png",
+      "xhs/day41/slide-01.png",
+      "xhs/day41/slide-02.png",
+      "xhs/day41/slide-03.png",
+      "xhs/day41/slide-04.png",
+      "xhs/day41/slide-05.png",
+      "xhs/day41/slide-06.png",
+      "xhs/day41/slide-07.png",
+      "xhs/day41/slide-08.png",
+      "xhs/day41/slide-09.png",
+      "xhs/day41/slide-10.png"
+    ],
+    "contactSheets": [
+      "runs/day41/verification/contact-sheet-01.jpg",
+      "runs/day41/verification/contact-sheet-02.jpg",
+      "runs/day41/verification/contact-sheet-03.jpg"
+    ],
+    "reviewedCourseScreenshots": [
+      "runs/day41/verification/course-390.png",
+      "runs/day41/verification/course-1440.png",
+      "runs/day41/verification/xhs-390.png"
+    ],
+    "checked": [
+      "fixed character clothing and color",
+      "2D contours and flat shading",
+      "transparent image integration on actual cards",
+      "Chinese terms and legibility",
+      "one point per knowledge page",
+      "image and text correspondence"
+    ],
+    "knownBlockingIssues": [],
+    "technicalCorrections": [
+      {
+        "topic": "low bar",
+        "resolution": "incorrect generated skeleton annotation removed; local two-dimensional schematic shows scapular spine above posterior shoulder support area, described as relative-position schematic",
+        "record": "runs/day41/character-final/diagram-correction.json"
+      },
+      {
+        "topic": "front rack",
+        "resolution": "new cross-arm front-rack illustration; lesson explicitly describes pictured cross-arm grip and alternative clean front rack"
+      }
+    ],
+    "limitations": [
+      "character proportions are stylized, not anthropometric standards",
+      "low-bar schematic expresses relative positions, not a scaled anatomical model",
+      "character consistency comes from shared text prompts and review; generation was not reference-image-conditioned"
+    ]
+  },
+  "assets": {
+    "trueTransparentPngs": 11,
+    "coverSize": [
+      1600,
+      900
+    ],
+    "detailSize": [
+      1536,
+      1024
+    ],
+    "knowledgeSize": [
+      1400,
+      450
+    ],
+    "exportSize": [
+      1080,
+      1440
+    ],
+    "reusedCover": "html/thumbs/day41-bojji-despa-thumbnail-preview.png",
+    "newRequests": 10,
+    "providerFailedRetries": 0,
+    "generationRecord": "runs/day41/character-final/generation.json",
+    "processingRecord": "runs/day41/character-final/asset-processing.json"
+  },
+  "fileVerification": "runs/day41/verification/file-verification.json",
+  "delivery": {
+    "html": "html/day41-自由重量-下肢杠铃技术.html",
+    "thumbnail": "html/thumbs/day41-lower-body-barbell-technique-thumbnail.png",
+    "detail": "html/assets/阶段2训练科学/day41-自由重量-下肢杠铃技术.png",
+    "xhs": "xhs/day41",
+    "archive": "xhs/day41/day41-xhs.zip"
+  },
+  "scope": {
+    "deliveryMode": "local-draft",
+    "publishApproved": false,
+    "publicLearningUrl": null,
+    "protectedFilesUnchanged": 53,
+    "progressDay": 39,
+    "legacyProgressDay": 33,
+    "nextLessonStarted": false
+  },
+  "historicalReview": "runs/day41/verification/quality-review-realistic-history.json"
+}

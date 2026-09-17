@@ -1,0 +1,13 @@
+{
+  "original": "runs/day41/character-final/source/detail.png",
+  "output": "runs/day41/character-final/detail-corrected.png",
+  "region": [
+    534,
+    191,
+    1032,
+    529
+  ],
+  "replacement": "runs/day41/character-final/low-bar-landmarks.svg",
+  "reason": "模型将肩胛冈箭头指向骨面，移除错误骨骼标注；统一为相对位置示意，蓝线在绿区上方，不作为按比例解剖模型。",
+  "extraGenerationRequests": 0
+}

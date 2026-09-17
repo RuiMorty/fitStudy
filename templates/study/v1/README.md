@@ -1,6 +1,6 @@
 # 每日课程与小红书模板
 
-当前状态：Day40 首轮样稿待用户验收。旧版 `xhs/day29` 是视觉基准，网站沿用原有课程模块。本轮未发布，未推进正式进度。
+当前状态：Day40 共用页面模板已验收。Day41 修正版 revision-02 已获用户验收并授权发布，2026-09-17 已部署服务器，短链 https://fitstudy.cn/go/41/ 已通过线上验证；11张小红书卡片、文案和ZIP保留本地交付。当前记录以 `runs/daily-preview/review.json` 与 `runs/day41/release/status.json` 为准。
 
 ## 固定结构
 
@@ -19,16 +19,17 @@
 
 JSON 不允许 CSS、HTML、脚本或样式覆盖字段，正文以纯文本段落和固定组件组织。图片必须有实际本地文件，知识页不得用无关图片、占位图冒充。超限内容必须改写；浏览器检测到溢出会终止导出，不自动缩字号、不截断、不切换备用渲染器。
 
-首次 Day40 包含 6 个核心知识点、1 个应用页，加封面和总览共 9 张。这个数量来自本课内容，不是之后每天的固定数量。示例页面仅供样式和内容验收，不应宣称用户已批准。
+首次 Day40 包含 6 个核心知识点、1 个应用页，加封面和总览共 9 张。这个数量来自本课内容，不是之后每天的固定数量。Day40 页面模板已验收；这不代表后续图片自动通过。
 
 ## 运行
 
 先安装 `package.json` 中固定版本的依赖，或使用 Codex 自带 Node 依赖路径。Playwright 需要已安装 Chromium；macOS 自动使用系统 Chrome，也可通过 `CHROME_EXECUTABLE` 指定。
 
 ```bash
-npm test
-node scripts/render-study-package.js --input runs/day40/lesson.json
-node scripts/verify-study-package.js --day 40
+node --test tests/study-template.test.js tests/study-draft.test.js
+node scripts/render-study-package.js --input runs/day41/lesson.json --out /tmp/fitstudy-day41-stage
+node scripts/install-study-draft.js --input runs/day41/lesson.json --from /tmp/fitstudy-day41-stage
+node scripts/verify-study-package.js --day 41
 ```
 
 输出必须沿用原项目目录，不把交付文件集中在临时预览目录：
@@ -40,11 +41,15 @@ node scripts/verify-study-package.js --day 40
 - `xhs/dayNN/ai-visuals/`：小红书配图及独立预览所需图片。
 - `runs/dayNN/`：输入 JSON、生图提示词与验证记录，不是用户交付页面的目录。
 
-渲染器先在临时目录校验完整包，通过后再写入这些固定位置。生成后必须同步 `app.js` 的 `publishedPages` 和 `generatedThumbs` 两个索引，并按项目惯例更新 `library/index.html` 的脚本缓存版本。索引数据更新不属于按天定制样式。验证真实课程卡片显示封面，点击卡片各区域可到达对应详情。
+渲染器先在临时目录校验完整包，通过后再写入这些固定位置。当前草稿阶段不修改 `app.js`、`library/index.html`、首页、`go/` 短链或两份进度文件。先用 `--out` 隔离渲染，再通过通用 `scripts/install-study-draft.js` 安装；它复用既有安装器，仅复制获准的课程与小红书文件，并从文案和 ZIP 中排除未发布公开链接。后续获得对应安装授权后，才同步 `publishedPages`、`generatedThumbs` 与脚本缓存版本，并验证课程卡片到详情的链接。
 
 `--out` 只用于隔离测试，不能把它的临时包当作最终目录。`--html-only` 必须同时提供隔离的 `--out`，不落入站点目录。只有所有 PNG 成功渲染并打包后状态才变为 `ready`；仍须浏览器交互验证与人工看图。不得覆盖其他课程或未知的已有文件。
 
 ## 图片与审核
+
+2026-09-17 角色方向：固定波吉＋德斯帕，统一二维动漫教学画法，透明背景融入卡片。最初两张样图保存在 `runs/day41/character-preview/`；后续整包的10次独立请求、处理及技术纠正保存在 `runs/day41/character-final/`，无失败重试。无字封面复用合格样图，中文详情与9张知识配图已完成；不包含历史全量替换或发布。
+
+新图片准备前读取 [image-style.md](image-style.md) 与 [image-style.json](image-style.json)，分别固定封面、中文详情与知识页配图的画布、构图、文字和色彩。角色方向已用于 Day41 整包；格式可由 `scripts/prepare-study-images.py` 按 JSON 清单统一，人物与动作仍须逐张目检，不能只靠尺寸通过。
 
 用户已明确授权 Day40 使用灵智生图。按已安装的 `lingzhi-image` 技能使用质量预设，凭据只由技能从环境或钥匙串读取，不写进任务、文件或日志。每张图独立请求，失败不自动重试，避免重复计费。
 
@@ -56,6 +61,8 @@ Day40 的完整生图提示词保存在 `runs/day40/image-prompts.json`。有效
 - 先读取 `runs/daily-preview/review.json`。`generating` 表示正在制作；`awaiting-review` 表示等待用户验收，不重复生成或覆盖。生成失败时保留结果并报告缺失项，不自动反复调用生图。
 - 模板经用户确认后才允许开始后续每日草稿。确认版式不等于授权发布。
 - 用户已要求把本地首页卡片封面、详情索引和课程短链接好；这不等于允许部署服务器、重做首页或推进进度。本阶段不部署、不改 `progress.json` 或 `.progress.json`。
-- 后续正式生成前要核对两份进度与实际课程；Day40 已生成到本地原目录但未上线，两份正式进度仍未更改。不能只读旧 `.progress.json` 后倒退、跳课或重生成 Day40。
+- 后续正式生成前要核对两份进度与实际课程；Day40、Day41 已上线，两份正式进度仍未因发布更改。不能只读旧 `.progress.json` 后倒退、跳课或重生成已完成草稿。
 - 未发布草稿不在小红书文案里伪造可访问的完整学习链接。发布获得授权且验证成功后，由生成脚本写入实际课程短链。
 - 模板调整必须是用户批准的共用版本变更，重新回归测试，不按日期打补丁。
+
+中文详情图采用 `scripts/compose-study-overview.py` 从审核JSON排字；模型只生成无字图。Day41修正版保留前一版成品备份，修正04连续前杠、05配重连接、07前肩推举及10图示标记，并重排全部总览文字。

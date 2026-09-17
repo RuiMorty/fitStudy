@@ -1,0 +1,97 @@
+{
+  "record": "runs/day41/character-final/asset-processing.json",
+  "assets": [
+    {
+      "source": "runs/day41/character-final/source/visual-02-high-bar.png",
+      "output": "runs/day41/character-final/assets/visual-02-high-bar.png",
+      "size": [
+        1400,
+        450
+      ],
+      "margin": 0.06
+    },
+    {
+      "source": "runs/day41/character-final/low-bar-corrected.png",
+      "output": "runs/day41/character-final/assets/visual-03-low-bar.png",
+      "size": [
+        1400,
+        450
+      ],
+      "margin": 0.06,
+      "note": "使用干净的相对位置示意，蓝线肩胛冈、绿区为下方后肩承杠区；不采用模型标错的骨骼图。"
+    },
+    {
+      "source": "runs/day41/character-final/source/visual-04-front-squat.png",
+      "output": "runs/day41/character-final/assets/visual-04-front-squat.png",
+      "size": [
+        1400,
+        450
+      ],
+      "margin": 0.06
+    },
+    {
+      "source": "runs/day41/character-final/source/visual-05-conventional-deadlift.png",
+      "output": "runs/day41/character-final/assets/visual-05-conventional-deadlift.png",
+      "size": [
+        1400,
+        450
+      ],
+      "margin": 0.06
+    },
+    {
+      "source": "runs/day41/character-final/source/visual-06-sumo-deadlift.png",
+      "output": "runs/day41/character-final/assets/visual-06-sumo-deadlift.png",
+      "size": [
+        1400,
+        450
+      ],
+      "margin": 0.06
+    },
+    {
+      "source": "runs/day41/character-final/source/visual-07-overhead-press.png",
+      "output": "runs/day41/character-final/assets/visual-07-overhead-press.png",
+      "size": [
+        1400,
+        450
+      ],
+      "margin": 0.06
+    },
+    {
+      "source": "runs/day41/character-final/source/visual-08-cue-correction.png",
+      "output": "runs/day41/character-final/assets/visual-08-cue-correction.png",
+      "size": [
+        1400,
+        450
+      ],
+      "margin": 0.06
+    },
+    {
+      "source": "runs/day41/character-final/source/visual-09-rack-safety.png",
+      "output": "runs/day41/character-final/assets/visual-09-rack-safety.png",
+      "size": [
+        1400,
+        450
+      ],
+      "margin": 0.06
+    },
+    {
+      "source": "runs/day41/character-final/source/visual-10-practice-comparison.png",
+      "output": "runs/day41/character-final/assets/visual-10-practice-comparison.png",
+      "size": [
+        1400,
+        450
+      ],
+      "margin": 0.06
+    },
+    {
+      "source": "runs/day41/character-final/detail-corrected.png",
+      "output": "runs/day41/character-final/assets/detail.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "margin": 0.06,
+      "note": "仅替换低杠图的错误解剖标注区域，使用与知识页一致的相对位置示意；其他角色画面和文字保留。"
+    }
+  ]
+}

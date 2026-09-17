@@ -1,0 +1,91 @@
+{
+  "createdAt": "2026-09-17T02:40:17.367076+00:00",
+  "status": "style-samples-awaiting-user-review",
+  "generatedImages": 2,
+  "automaticRetries": 0,
+  "characters": [
+    "Bojji",
+    "Despa"
+  ],
+  "background": "true-alpha-PNG",
+  "previewBackground": "linear-gradient(180deg,#fff,#f7f7f8)",
+  "finalXhsExport": false,
+  "assets": [
+    {
+      "role": "cover",
+      "source": "runs/day41/character-preview/source/cover.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "sourceSha256": "b2a026844a995a0eae9dcd0b26d6bba6cdefb76e130e206b92f7843cc7b89331",
+      "sourceCropBox": [
+        227,
+        17,
+        1368,
+        899
+      ],
+      "delivery": "html/thumbs/day41-bojji-despa-thumbnail-preview.png",
+      "deliverySize": [
+        1600,
+        900
+      ],
+      "preview": "runs/day41/character-preview/cover-on-card.jpg",
+      "resizedSubjectSize": [
+        1025,
+        792
+      ],
+      "subjectOffset": [
+        287,
+        54
+      ],
+      "transparentCorners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "transparentPixels": 1107910,
+      "backgroundPixelMismatches": 0,
+      "method": "remove alpha<=8 noise; crop transparent margin; scale uniformly; add transparent safe margin; preserve original source"
+    },
+    {
+      "role": "detail",
+      "source": "runs/day41/character-preview/source/detail.png",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceSha256": "39c7681272ef05b30344ea2697f3b17aa91af85505d9b469bbb686289c6b3c8b",
+      "sourceCropBox": [
+        52,
+        20,
+        1517,
+        997
+      ],
+      "delivery": "html/assets/阶段2训练科学/day41-下肢杠铃技术-波吉德斯帕预览.png",
+      "deliverySize": [
+        1536,
+        1024
+      ],
+      "preview": "runs/day41/character-preview/detail-on-card.jpg",
+      "resizedSubjectSize": [
+        1353,
+        902
+      ],
+      "subjectOffset": [
+        91,
+        61
+      ],
+      "transparentCorners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "transparentPixels": 1211306,
+      "backgroundPixelMismatches": 0,
+      "method": "remove alpha<=8 noise; crop transparent margin; scale uniformly; add transparent safe margin; preserve original source"
+    }
+  ]
+}

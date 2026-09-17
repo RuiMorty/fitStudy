@@ -1,0 +1,302 @@
+{
+  "method": "reviewed alpha masks and crops, one uniform resample per composition, no nonuniform scaling",
+  "components": [
+    {
+      "name": "front-close",
+      "source": "runs/day41/revision-02/source/visual-04-front-squat.png",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sha256": "a6e521aed82820448335681a3aa1f1ec3d21d5fce4a3abd4a0ab0e632b1441ff",
+      "crop": [
+        0,
+        0,
+        1020,
+        800
+      ],
+      "keepPolygon": [
+        [
+          0,
+          0
+        ],
+        [
+          910,
+          0
+        ],
+        [
+          910,
+          388
+        ],
+        [
+          1020,
+          388
+        ],
+        [
+          1020,
+          456
+        ],
+        [
+          916,
+          456
+        ],
+        [
+          916,
+          800
+        ],
+        [
+          0,
+          800
+        ]
+      ],
+      "clearRegions": null,
+      "trim": [
+        19,
+        25,
+        1011,
+        800
+      ],
+      "output": "runs/day41/revision-02/components/front-close.png"
+    },
+    {
+      "name": "front-squat",
+      "source": "runs/day41/revision-02/source/visual-04-front-squat.png",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sha256": "a6e521aed82820448335681a3aa1f1ec3d21d5fce4a3abd4a0ab0e632b1441ff",
+      "crop": [
+        916,
+        0,
+        1536,
+        975
+      ],
+      "keepPolygon": null,
+      "clearRegions": [
+        [
+          916,
+          388,
+          1020,
+          456
+        ]
+      ],
+      "trim": [
+        5,
+        59,
+        592,
+        950
+      ],
+      "output": "runs/day41/revision-02/components/front-squat.png"
+    },
+    {
+      "name": "deadlift-start",
+      "source": "runs/day41/revision-02/source/visual-05-conventional-deadlift.png",
+      "sourceSize": [
+        1774,
+        887
+      ],
+      "sha256": "11bd7504db73d01b26a802d41b5ad2221e25dd4d6314e503158f9b3c6342bd73",
+      "crop": [
+        0,
+        0,
+        900,
+        887
+      ],
+      "keepPolygon": null,
+      "clearRegions": null,
+      "trim": [
+        190,
+        210,
+        865,
+        837
+      ],
+      "output": "runs/day41/revision-02/components/deadlift-start.png"
+    },
+    {
+      "name": "deadlift-top",
+      "source": "runs/day41/revision-02/source/visual-05-conventional-deadlift.png",
+      "sourceSize": [
+        1774,
+        887
+      ],
+      "sha256": "11bd7504db73d01b26a802d41b5ad2221e25dd4d6314e503158f9b3c6342bd73",
+      "crop": [
+        930,
+        0,
+        1774,
+        887
+      ],
+      "keepPolygon": null,
+      "clearRegions": null,
+      "trim": [
+        51,
+        15,
+        650,
+        846
+      ],
+      "output": "runs/day41/revision-02/components/deadlift-top.png"
+    },
+    {
+      "name": "press-start",
+      "source": "runs/day41/revision-02/source/visual-07-overhead-press.png",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sha256": "68c7c69e033a31150e29770183b3b6a3a75a50872e872dec43c42ceb2789cfe7",
+      "crop": [
+        0,
+        0,
+        780,
+        1024
+      ],
+      "keepPolygon": null,
+      "clearRegions": null,
+      "trim": [
+        92,
+        105,
+        766,
+        987
+      ],
+      "output": "runs/day41/revision-02/components/press-start.png"
+    },
+    {
+      "name": "press-top",
+      "source": "runs/day41/revision-02/source/visual-07-overhead-press.png",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sha256": "68c7c69e033a31150e29770183b3b6a3a75a50872e872dec43c42ceb2789cfe7",
+      "crop": [
+        780,
+        0,
+        1536,
+        1024
+      ],
+      "keepPolygon": null,
+      "clearRegions": null,
+      "trim": [
+        7,
+        49,
+        687,
+        987
+      ],
+      "output": "runs/day41/revision-02/components/press-top.png"
+    },
+    {
+      "name": "back-squat",
+      "source": "runs/day41/character-final/source/visual-02-high-bar.png",
+      "sourceSize": [
+        2211,
+        711
+      ],
+      "sha256": "0b17fb9f3931d20bf725ec9d641de8289fcc453834bd8fc7902a0fd8f3812901",
+      "crop": [
+        510,
+        95,
+        1100,
+        675
+      ],
+      "keepPolygon": [
+        [
+          510,
+          95
+        ],
+        [
+          1025,
+          95
+        ],
+        [
+          1025,
+          276
+        ],
+        [
+          1100,
+          277
+        ],
+        [
+          1100,
+          339
+        ],
+        [
+          1017,
+          339
+        ],
+        [
+          1017,
+          467
+        ],
+        [
+          990,
+          490
+        ],
+        [
+          985,
+          675
+        ],
+        [
+          510,
+          675
+        ]
+      ],
+      "clearRegions": null,
+      "trim": [
+        13,
+        39,
+        584,
+        567
+      ],
+      "output": "runs/day41/revision-02/components/back-squat.png"
+    },
+    {
+      "name": "sumo-start",
+      "source": "runs/day41/character-final/source/visual-06-sumo-deadlift.png",
+      "sourceSize": [
+        2212,
+        711
+      ],
+      "sha256": "30461175a515fed43dd0f312c8e14b75e1e65518f7862ec9c126609c86bf758a",
+      "crop": [
+        0,
+        0,
+        1125,
+        711
+      ],
+      "keepPolygon": null,
+      "clearRegions": null,
+      "trim": [
+        39,
+        18,
+        1124,
+        646
+      ],
+      "output": "runs/day41/revision-02/components/sumo-start.png"
+    },
+    {
+      "name": "low-bar",
+      "source": "runs/day41/character-final/low-bar-corrected.png",
+      "sourceSize": [
+        940,
+        560
+      ],
+      "sha256": "0df5a91a3256406fe4e1f74744246ebb809c5357ef09dc4c23e9bfd8a5ea7ed8",
+      "crop": [
+        0,
+        0,
+        940,
+        560
+      ],
+      "keepPolygon": null,
+      "clearRegions": null,
+      "trim": [
+        117,
+        22,
+        813,
+        375
+      ],
+      "output": "runs/day41/revision-02/components/low-bar.png"
+    }
+  ]
+}

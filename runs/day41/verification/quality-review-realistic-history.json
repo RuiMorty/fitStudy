@@ -1,0 +1,73 @@
+{
+  "checkedAt": "2026-09-17T01:59:45.333428+00:00",
+  "unitTests": {
+    "status": "passed",
+    "passed": 11,
+    "failed": 0
+  },
+  "contentSchema": {
+    "status": "passed",
+    "knowledgePoints": 8,
+    "plannedSlides": 11,
+    "quizQuestions": 6
+  },
+  "scope": {
+    "templateAccepted": true,
+    "publishApproved": false
+  },
+  "visualReview": {
+    "status": "not-approved",
+    "reviewed": [
+      "cover-source.png",
+      "detail.png",
+      "visual-02-high-bar.png",
+      "visual-03-low-bar.png",
+      "visual-04-front-squat.png",
+      "visual-05-conventional-deadlift.png",
+      "visual-06-sumo-deadlift.png",
+      "visual-07-overhead-press.png",
+      "visual-08-cue-correction.png",
+      "visual-09-rack-safety.png",
+      "visual-10-practice-comparison.png"
+    ],
+    "issues": [
+      {
+        "file": "visual-03-low-bar.png",
+        "severity": "blocking",
+        "reason": "主图和上背局部的杠位仍靠近上斜方肌，未清楚表现肩胛冈下方后侧三角肌平台；不能作为低杠技术标准图通过。"
+      },
+      {
+        "file": "visual-04-front-squat.png",
+        "severity": "blocking",
+        "reason": "双手从杠上方勾握，未清楚表现前架握法的手指下托辅助、前肩承重关系；不能作为本课前架握法示范图通过。"
+      },
+      {
+        "file": "all-source-images",
+        "severity": "blocking",
+        "reason": "全历史对照确认新图偏人物与器械场景，绘制语言及主体占比不统一；详情图大蓝标题与重绿蓝色带偏离统一目标。不得仅修复两张动作图后视作整套通过。"
+      }
+    ],
+    "styleAuditCompletedAt": "2026-09-17T02:25:43.215015+00:00",
+    "styleAudit": "runs/style-audit-20260917/findings.json",
+    "scope": "All 11 source images reviewed for style; final-template export not performed. Two specific technique issues retained.",
+    "finalExportReview": "not-performed; no Day41 final PNG export exists"
+  },
+  "contentAudit": {
+    "syllabusDay": 41,
+    "covered": [
+      "高杠、低杠、前蹲的握法、站距、杠位和躯干角",
+      "传统与相扑硬拉的起始位、髋膝联动、中立脊柱与轨迹",
+      "严格过顶推举的下肢稳定与核心参与",
+      "膝内扣、圆背、轨迹偏移及纠正提示",
+      "深蹲安全杆、保护者位置与硬拉不人工接杠",
+      "实操对比深蹲与硬拉起始位"
+    ],
+    "terminologyClarification": "大纲把过顶推举放在下肢课；正文明确其为上肢推类，本课关注下肢和核心稳定。",
+    "status": "passed"
+  },
+  "publicationGuard": {
+    "status": "required",
+    "reason": "共用渲染器会附加未发布公开链接并生成短链；此次仅允许本地草稿。",
+    "method": "通过现有渲染器隔离导出；仅将获准的课程/图片/小红书产物移到固定目录，不安装 go 或首页索引；交付文案和ZIP移除未发布URL。"
+  }
+}

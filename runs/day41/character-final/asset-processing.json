@@ -1,0 +1,386 @@
+{
+  "processedAt": "2026-09-17T03:01:50.737960+00:00",
+  "method": "trim near-transparent noise; reviewed crop; uniform scale; transparent margin",
+  "assets": [
+    {
+      "source": "runs/day41/character-final/source/visual-02-high-bar.png",
+      "sourceSize": [
+        2211,
+        711
+      ],
+      "sourceSha256": "0b17fb9f3931d20bf725ec9d641de8289fcc453834bd8fc7902a0fd8f3812901",
+      "reviewedCrop": [
+        0,
+        0,
+        2211,
+        711
+      ],
+      "visibleCrop": [
+        520,
+        10,
+        1620,
+        668
+      ],
+      "output": "runs/day41/character-final/assets/visual-02-high-bar.png",
+      "size": [
+        1400,
+        450
+      ],
+      "subjectSize": [
+        662,
+        396
+      ],
+      "offset": [
+        369,
+        27
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "note": ""
+    },
+    {
+      "source": "runs/day41/character-final/low-bar-corrected.png",
+      "sourceSize": [
+        940,
+        560
+      ],
+      "sourceSha256": "0df5a91a3256406fe4e1f74744246ebb809c5357ef09dc4c23e9bfd8a5ea7ed8",
+      "reviewedCrop": [
+        0,
+        0,
+        940,
+        560
+      ],
+      "visibleCrop": [
+        114,
+        19,
+        816,
+        378
+      ],
+      "output": "runs/day41/character-final/assets/visual-03-low-bar.png",
+      "size": [
+        1400,
+        450
+      ],
+      "subjectSize": [
+        774,
+        396
+      ],
+      "offset": [
+        313,
+        27
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "note": "使用干净的相对位置示意，蓝线肩胛冈、绿区为下方后肩承杠区；不采用模型标错的骨骼图。"
+    },
+    {
+      "source": "runs/day41/character-final/source/visual-04-front-squat.png",
+      "sourceSize": [
+        2213,
+        711
+      ],
+      "sourceSha256": "e18740c74cd849135b6eb46fb795cf7eb90e2226a01b841aeede4831abb9e5a5",
+      "reviewedCrop": [
+        0,
+        0,
+        2213,
+        711
+      ],
+      "visibleCrop": [
+        418,
+        0,
+        1718,
+        701
+      ],
+      "output": "runs/day41/character-final/assets/visual-04-front-squat.png",
+      "size": [
+        1400,
+        450
+      ],
+      "subjectSize": [
+        734,
+        396
+      ],
+      "offset": [
+        333,
+        27
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "note": ""
+    },
+    {
+      "source": "runs/day41/character-final/source/visual-05-conventional-deadlift.png",
+      "sourceSize": [
+        2211,
+        711
+      ],
+      "sourceSha256": "00d139500c190509838d840f31e562d62e5af32410342cd1a682378706d7ec08",
+      "reviewedCrop": [
+        0,
+        0,
+        2211,
+        711
+      ],
+      "visibleCrop": [
+        433,
+        10,
+        1889,
+        687
+      ],
+      "output": "runs/day41/character-final/assets/visual-05-conventional-deadlift.png",
+      "size": [
+        1400,
+        450
+      ],
+      "subjectSize": [
+        852,
+        396
+      ],
+      "offset": [
+        274,
+        27
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "note": ""
+    },
+    {
+      "source": "runs/day41/character-final/source/visual-06-sumo-deadlift.png",
+      "sourceSize": [
+        2212,
+        711
+      ],
+      "sourceSha256": "30461175a515fed43dd0f312c8e14b75e1e65518f7862ec9c126609c86bf758a",
+      "reviewedCrop": [
+        0,
+        0,
+        2212,
+        711
+      ],
+      "visibleCrop": [
+        36,
+        15,
+        2179,
+        649
+      ],
+      "output": "runs/day41/character-final/assets/visual-06-sumo-deadlift.png",
+      "size": [
+        1400,
+        450
+      ],
+      "subjectSize": [
+        1339,
+        396
+      ],
+      "offset": [
+        30,
+        27
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "note": ""
+    },
+    {
+      "source": "runs/day41/character-final/source/visual-07-overhead-press.png",
+      "sourceSize": [
+        2211,
+        711
+      ],
+      "sourceSha256": "59aff88d8feaed66fd8a90ed185624fd64b20641610de21c52e519a3faf75882",
+      "reviewedCrop": [
+        0,
+        0,
+        2211,
+        711
+      ],
+      "visibleCrop": [
+        453,
+        14,
+        1672,
+        698
+      ],
+      "output": "runs/day41/character-final/assets/visual-07-overhead-press.png",
+      "size": [
+        1400,
+        450
+      ],
+      "subjectSize": [
+        706,
+        396
+      ],
+      "offset": [
+        347,
+        27
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "note": ""
+    },
+    {
+      "source": "runs/day41/character-final/source/visual-08-cue-correction.png",
+      "sourceSize": [
+        2210,
+        711
+      ],
+      "sourceSha256": "500e354da0189eb8dd9224017f948768d4451aa09d5256c2391ea5c3afb5a0db",
+      "reviewedCrop": [
+        0,
+        0,
+        2210,
+        711
+      ],
+      "visibleCrop": [
+        392,
+        27,
+        2102,
+        695
+      ],
+      "output": "runs/day41/character-final/assets/visual-08-cue-correction.png",
+      "size": [
+        1400,
+        450
+      ],
+      "subjectSize": [
+        1014,
+        396
+      ],
+      "offset": [
+        193,
+        27
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "note": ""
+    },
+    {
+      "source": "runs/day41/character-final/source/visual-09-rack-safety.png",
+      "sourceSize": [
+        2212,
+        711
+      ],
+      "sourceSha256": "ab45ea275d24a233b8104a6af9c2335a75a8f44f84dd10cfd3b92b54e65666f6",
+      "reviewedCrop": [
+        0,
+        0,
+        2212,
+        711
+      ],
+      "visibleCrop": [
+        63,
+        0,
+        2134,
+        671
+      ],
+      "output": "runs/day41/character-final/assets/visual-09-rack-safety.png",
+      "size": [
+        1400,
+        450
+      ],
+      "subjectSize": [
+        1222,
+        396
+      ],
+      "offset": [
+        89,
+        27
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "note": ""
+    },
+    {
+      "source": "runs/day41/character-final/source/visual-10-practice-comparison.png",
+      "sourceSize": [
+        2213,
+        711
+      ],
+      "sourceSha256": "471a0b0490efa6bee0aea719b4dcd4a8795f538e6ea52a05acb925ccf819a0ae",
+      "reviewedCrop": [
+        0,
+        0,
+        2213,
+        711
+      ],
+      "visibleCrop": [
+        27,
+        15,
+        2144,
+        685
+      ],
+      "output": "runs/day41/character-final/assets/visual-10-practice-comparison.png",
+      "size": [
+        1400,
+        450
+      ],
+      "subjectSize": [
+        1251,
+        396
+      ],
+      "offset": [
+        74,
+        27
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "note": ""
+    },
+    {
+      "source": "runs/day41/character-final/detail-corrected.png",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceSha256": "5ba03452aa37359255ae67dcdb9b377b25b7306855b80e785ffe2b8b55e173d6",
+      "reviewedCrop": [
+        0,
+        0,
+        1536,
+        1024
+      ],
+      "visibleCrop": [
+        30,
+        16,
+        1521,
+        995
+      ],
+      "output": "runs/day41/character-final/assets/detail.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "subjectSize": [
+        1374,
+        902
+      ],
+      "offset": [
+        81,
+        61
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "note": "仅替换低杠图的错误解剖标注区域，使用与知识页一致的相对位置示意；其他角色画面和文字保留。"
+    }
+  ]
+}

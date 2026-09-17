@@ -1,0 +1,22 @@
+{
+  "status": "published",
+  "serverDeployed": true,
+  "localVerification": "passed",
+  "networkStatus": "SSH restored after local network route changed; password authentication verified",
+  "publicUrl": "https://fitstudy.cn/go/41/",
+  "archive": "runs/day41/release/day41-site.tar.gz",
+  "sha256": "2678c19fc00088c8dda36d73e58bfca8fcc1c7f72ca79b9f43628efe4a7e1520",
+  "updatedAt": "2026-09-17T08:04:43.339760+00:00",
+  "publishedAt": "2026-09-17T08:04:43.339760+00:00",
+  "releaseId": "20260917T073444Z-day41",
+  "remoteBackup": "/home/zhaoqr/fitness/.fitstudy-deploy-backups/20260917T073444Z-day41",
+  "publicVerification": "passed",
+  "networkEvidence": {
+    "beforeGateway": "172.22.164.1",
+    "afterGateway": "172.22.134.1",
+    "serverSSH": "active on 0.0.0.0:22 and [::]:22",
+    "cloudFirewall": "TCP 22 allowed from all IPv4",
+    "cloudConsoleLogin": "TAT; independent of public SSH",
+    "conclusion": "Recovery coincided with a change in local network gateway; the exact component dropping traffic was not established."
+  }
+}

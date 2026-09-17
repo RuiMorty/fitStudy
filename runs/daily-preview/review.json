@@ -1,10 +1,91 @@
 {
-  "status": "awaiting-review",
-  "day": 40,
-  "templateApproved": false,
-  "publishApproved": false,
-  "output": "runs/daily-preview/day40/output",
-  "completedAt": "2026-09-15T12:20:41Z",
-  "verification": "runs/daily-preview/day40/output/verification/report.json",
-  "note": "Day40 HTML and 9 XHS PNGs generated with Lingzhi images; unit, browser, pixel and ZIP checks passed. Await user review. Do not regenerate or advance official progress."
+  "status": "published",
+  "day": 41,
+  "templateApproved": true,
+  "templateApprovedAt": "2026-09-17T01:53:12.356699+00:00",
+  "templateApprovalMessage": "确认，检验完毕",
+  "templateApprovedFromDay": 40,
+  "publishApproved": true,
+  "startedAt": "2026-09-17T01:53:12.356699+00:00",
+  "input": "runs/day41/lesson.json",
+  "output": "xhs/day41",
+  "previousDraft": {
+    "day": 40,
+    "status": "accepted",
+    "html": "html/day40-反馈与动作学习.html",
+    "xhs": "xhs/day40",
+    "acceptedAt": "2026-09-17T01:53:12.356699+00:00"
+  },
+  "note": "用户已验收修正版并授权短链和服务器发布。SSH在网络路径切换后恢复，已通过钥匙串密码以zhaoqr登录；第41课七个站点文件已备份后发布，公网文件哈希、短链、移动/桌面课程目录和交互验证通过。两份进度不因发布推进，未开始下一课，未发小红书平台。",
+  "imageStyleApproved": true,
+  "imageStyleReviewRequestedAt": "2026-09-17T02:12:19.901845+00:00",
+  "imageStyleReviewRequest": "不是只看40，29，你都对照下，我总感觉现在生成的怪怪的，我是希望统一图片格式的",
+  "artifactStatus": "published-revision-02",
+  "reviewFocus": "查看完整波吉与德斯帕角色版成品；制作方检查与用户验收分开记录",
+  "imageStyleAuditCompletedAt": "2026-09-17T02:25:43.215015+00:00",
+  "imageStyleAudit": "runs/style-audit-20260917/index.html",
+  "imageStyleSpecification": "templates/study/v1/image-style.md",
+  "imageStylePreset": "templates/study/v1/image-style.json",
+  "imageStyleSpecificationStatus": "accepted-revision-02",
+  "imageStyleAuditScope": {
+    "htmlDays": "1-40",
+    "htmlCoverFiles": 40,
+    "htmlDetailFiles": 40,
+    "xhsDays": "1-32,40",
+    "xhsExportFilesIncludingCovers": 310,
+    "xhsSourceFilesIncludingAlternates": 297,
+    "day41SourceFiles": 11,
+    "visuallyReviewedContactSheets": 33
+  },
+  "characterSampleAuthorization": {
+    "messages": [
+      "41今天的示例你先生成我看下效果先",
+      "当然不用生成多，我需要看下效果先"
+    ],
+    "scope": "two HTML style samples only: cover and Chinese detail",
+    "assumedTeacher": "Despa / 德斯帕",
+    "userPreferences": [
+      "示例优先男性",
+      "固定波吉与老师",
+      "背景融入XHS卡片"
+    ]
+  },
+  "characterSampleInput": "runs/day41/character-preview/image-prompts.json",
+  "characterSampleStartedAt": "2026-09-17T02:37:01.421847+00:00",
+  "characterSampleCompletedAt": "2026-09-17T02:40:59.553391+00:00",
+  "characterSampleManifest": "runs/day41/character-preview/manifest.json",
+  "characterSampleQualityReview": "runs/day41/character-preview/quality-review.json",
+  "characterSamplePreviews": [
+    "runs/day41/character-preview/cover-on-card.jpg",
+    "runs/day41/character-preview/detail-on-card.jpg"
+  ],
+  "day41CompletionAuthorizedAt": "2026-09-17T02:49:31.070051+00:00",
+  "day41CompletionAuthorization": "完成41的任务",
+  "characterDirectionAcceptedForCompletion": true,
+  "completedAt": "2026-09-17T04:25:22.125761+00:00",
+  "imageStyleQA": "passed",
+  "artifacts": {
+    "html": "html/day41-自由重量-下肢杠铃技术.html",
+    "thumbnail": "html/thumbs/day41-lower-body-barbell-technique-thumbnail.png",
+    "detail": "html/assets/阶段2训练科学/day41-自由重量-下肢杠铃技术.png",
+    "xhs": "xhs/day41",
+    "archive": "xhs/day41/day41-xhs.zip"
+  },
+  "qualityReview": "runs/day41/revision-02/quality-review.json",
+  "browserReport": "runs/day41/revision-02/verification/browser-report.json",
+  "fileVerification": "runs/day41/revision-02/verification/file-report.json",
+  "nextLessonStarted": false,
+  "currentRevision": "runs/day41/revision-02",
+  "publishApprovedAt": "2026-09-17T07:18:51.347985+00:00",
+  "publishApprovalMessage": "可以，现在可以生成，短链，推送推送到服务器，",
+  "imageStyleApprovedAt": "2026-09-17T07:18:51.349208+00:00",
+  "publishedAt": "2026-09-17T08:04:43.339760+00:00",
+  "publicLearningUrl": "https://fitstudy.cn/go/41/",
+  "releaseId": "20260917T073444Z-day41",
+  "publicationVerification": {
+    "files": "runs/day41/release/live-files-report.json",
+    "browser": "runs/day41/release/live-browser-report.json",
+    "localBrowser": "runs/day41/release/browser-report.json",
+    "remoteBackup": "/home/zhaoqr/fitness/.fitstudy-deploy-backups/20260917T073444Z-day41"
+  }
 }

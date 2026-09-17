@@ -69,6 +69,7 @@ publishedPages.set(37, "html/day37-\u75b2\u52b3\u4e0e\u5ef6\u8fdf\u6027\u808c\u8
 publishedPages.set(38, "html/day38-\u73af\u5883\u56e0\u7d20\u4e0e\u8fd0\u52a8\u63a7\u5236\u6280\u80fd\u5206\u7c7b.html");
 publishedPages.set(39, "html/day39-\u8fd0\u52a8\u5b66\u4e60\u7684\u4e09\u9636\u6bb5.html");
 publishedPages.set(40, "html/day40-\u53cd\u9988\u4e0e\u52a8\u4f5c\u5b66\u4e60.html");
+publishedPages.set(41, "html/day41-\u81ea\u7531\u91cd\u91cf-\u4e0b\u80a2\u6760\u94c3\u6280\u672f.html");
 
 function latestPublishedDay() {
   return Math.max(0, ...publishedPages.keys());
@@ -115,6 +116,7 @@ const generatedThumbs = new Map([
   [38, "html/thumbs/day38-environment-skill-thumbnail.png"],
   [39, "html/thumbs/day39-motor-learning-stages-thumbnail.png"],
   [40, "html/thumbs/day40-feedback-motor-learning-thumbnail.png"],
+  [41, "html/thumbs/day41-lower-body-barbell-technique-thumbnail.png"],
 ]);
 
 const categories = ["全部", "骨关节", "肌肉", "生物力学", "能量系统", "训练技术", "评估纠正", "营养", "模考"];

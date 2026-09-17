@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Day 41 · 自由重量-下肢杠铃技术</title><link rel="icon" type="image/svg+xml" href="assets/fitness-study-logo-open-circle.svg?v=a6d8e5caaa61"><style>:root { color-scheme: light; --ink: #111113; --muted: #71717a; --line: #e4e4e7; --accent: #ff5a1f; --green: #0ea66b; --blue: #2563eb; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; font-synthesis: none; letter-spacing: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); overflow-wrap: anywhere; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+img { display: block; max-width: 100%; }
+button:focus-visible, a:focus-visible, summary:focus-visible, input:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
+svg.icon { width: 20px; height: 20px; }
+.icon-button { display: inline-grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 1px solid var(--line); border-radius: 6px; background: white; }
+[hidden] { display: none !important; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
+
+body { background: #f6f8f7; font-size: 14px; line-height: 1.65; }
+main { max-width: 980px; margin: auto; padding: 24px 18px 60px; }
+.header { padding: 22px 4px 14px; }
+h1 { margin: 10px 0 8px; font-size: 36px; line-height: 1.2; }
+h1::before { content: ""; display: block; width: 34px; height: 4px; background: var(--accent); margin-bottom: 10px; }
+h2 { font-size: 17px; margin: 0 0 14px; }
+h3 { font-size: 16px; margin: 0 0 8px; }
+.sub { color: var(--muted); margin: 5px 0 18px; }
+.meta { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { display: inline-block; border: 1px solid var(--line); border-radius: 20px; background: white; color: var(--muted); padding: 3px 10px; font-size: 12px; font-weight: 600; }
+.chip:nth-child(1) { background: #e2f7eb; color: #15803d; border-color: transparent; }
+.chip:nth-child(2) { background: #e7f0fe; color: #2563eb; border-color: transparent; }
+.chip:nth-child(3) { background: #fff2e5; color: #9a4c05; border-color: transparent; }
+.panel, .figure, .warn, .mnemonic { background: white; border: 1px solid #e2e8e4; border-radius: 14px; box-shadow: 0 2px 12px rgba(20,40,30,.06); padding: 20px; margin: 16px 0; }
+.green { border-left: 5px solid var(--green); }
+.orange { border-left: 5px solid #ea7a17; }
+.blue { border-left: 5px solid #0ea5e9; }
+.takeaway { margin: 0; }
+.figure { text-align: center; }
+.figure button { display: block; position: relative; width: 100%; border: 0; padding: 0; background: white; cursor: zoom-in; }
+.figure img { max-height: 760px; width: 100%; object-fit: contain; }
+.figure .icon-button { position: absolute; bottom: 8px; right: 8px; background: #ffffffed; }
+.caption { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
+.kp { list-style: none; padding: 0; margin: 0; }
+.kp > li { border-bottom: 1px dashed #e2e8e4; }
+.kp > li:last-child { border-bottom: 0; }
+.kp summary { cursor: pointer; padding: 13px 8px; font-weight: 650; }
+.kp summary::marker { color: var(--green); }
+.term { color: #0a7d52; background: #e2f7eb; border-radius: 6px; padding: 1px 5px; }
+.kp-body { padding: 2px 14px 16px 24px; }
+.detail-block { margin: 12px 0; }
+.detail-block h4 { font-size: 13px; color: #08744d; margin: 0 0 4px; }
+.detail-block p { margin: 0; white-space: pre-line; }
+.warn { border-left: 5px solid #e23b3b; background: #fffafa; }
+.warn p { margin: 8px 0; }
+.misconception { color: #a82b32; }
+.mnemonic { border-left: 4px solid var(--accent); box-shadow: none; }
+.mnemonic strong { color: #df4716; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+.flip { height: 168px; perspective: 900px; border: 0; background: transparent; padding: 0; text-align: center; }
+.flip-in { display: block; height: 100%; position: relative; transition: transform .45s; transform-style: preserve-3d; }
+.flip[aria-pressed="true"] .flip-in { transform: rotateY(180deg); }
+.face { position: absolute; inset: 0; backface-visibility: hidden; border: 1px solid var(--line); border-radius: 10px; padding: 15px; background: #fafafa; display: flex; align-items: center; justify-content: center; overflow-y: auto; }
+.back { transform: rotateY(180deg); background: #eef9f4; color: #075e40; border-color: #c8eadb; }
+.practice { padding-left: 20px; }
+.practice li { margin: 7px 0; }
+.question { border-top: 1px solid #e2e8e4; padding: 20px 0 8px; margin-top: 12px; min-width: 0; }
+.options { display: grid; gap: 7px; margin: 10px 0; }
+.option { display: flex; gap: 10px; align-items: baseline; border: 1px solid #e2e8e4; background: #f0f4f2; padding: 9px 12px; border-radius: 8px; cursor: pointer; }
+.option input { flex-shrink: 0; accent-color: var(--green); }
+.option:has(input:checked) { border-color: #0ea5e9; background: #e7f6fd; }
+.question[data-result="correct"] .option:has(input:checked) { border-color: #0ea66b; background: #e7f8ef; }
+.question[data-result="wrong"] .option:has(input:checked) { border-color: #e23b3b; background: #fff0f0; }
+.answer { background: #f8fbfa; border-left: 3px solid #0ea5e9; padding: 10px; margin-top: 10px; }
+.check { border: 0; background: #0ea66b; color: white; padding: 9px 14px; border-radius: 7px; }
+footer { color: var(--muted); font-size: 12px; margin-top: 28px; }
+footer ul { padding-left: 20px; }
+dialog { width: min(1200px, 96vw); max-height: 94dvh; padding: 52px 16px 16px; border: 0; border-radius: 8px; background: white; }
+dialog::backdrop { background: #15191dd9; }
+dialog img { width: 100%; max-height: 78dvh; object-fit: contain; }
+dialog .icon-button { position: absolute; top: 8px; right: 10px; }
+@media (max-width: 600px) {
+  main { padding: 16px 12px 40px; }
+  h1 { font-size: 26px; }
+  .header { padding: 16px 4px 12px; }
+  .panel, .figure, .warn, .mnemonic { padding: 15px; }
+  .kp-body { padding-left: 16px; }
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .face { padding: 12px; }
+}
+</style></head><body><main><header class="header"><h1>Day 41 · 自由重量-下肢杠铃技术</h1><p class="sub">从杠位、站距与受力出发，学会区分三种深蹲和两种硬拉，再把躯干稳定与安全保护落实到练习。</p><div class="meta"><span class="chip">阶段2训练科学</span><span class="chip">第7周</span><span class="chip">NSCA · 杠铃技术</span></div></header><section class="panel green"><h2>一句话总结</h2><p class="takeaway">下肢杠铃技术先看杠放哪里、身体怎样维持平衡，再用足底稳定、躯干控制和贴近身体的杠铃轨迹完成动作，并在加重前安排好安全保护。</p></section><figure class="figure"><button data-zoom aria-label="放大详情图"><img class="" src="assets/阶段2训练科学/day41-自由重量-下肢杠铃技术.png" alt="波吉与德斯帕讲解三种深蹲杠位、传统与相扑硬拉及安全要点"><span class="icon-button"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 15 6 6" /><path d="m15 9 6-6" /><path d="M21 16v5h-5" /><path d="M21 8V3h-5" /><path d="M3 16v5h5" /><path d="m3 21 6-6" /><path d="M3 8V3h5" /><path d="M9 9 3 3" /></svg></span></button><figcaption class="caption">波吉与德斯帕辅助理解，角色比例不代表人体标准。低杠图只示肩胛冈与承杠区的相对关系；前蹲采用交叉臂握法。实际位置、握法和动作范围结合个体条件调整。</figcaption></figure><section class="panel"><h2>核心要点</h2><ul class="kp"><li><details><summary><span class="term">高杠深蹲：上背承杠，髋膝协同</span>：杠放在上斜方肌形成的平台；躯干通常比低杠更直立，但角度不是固定标准。</summary><div class="kp-body"><section class="detail-block"><h4>握法、杠位与站距</h4><p>高杠指杠铃置于上斜方肌肌腹形成的平台，不直接压在颈椎上。双手闭合握杠，选择能稳定上背且肩腕舒适的握距。站距可从肩宽附近试起，脚尖适度外展，再按髋部结构、踝活动度和个人舒适度调整。没有适合所有人的唯一站距或脚尖角度。</p></section><section class="detail-block"><h4>下蹲与起立</h4><p>准备时稳住足底与躯干，髋膝协调屈曲下蹲，膝大致沿脚尖方向移动；保持脚跟及前脚掌接触地面。下蹲至当前能控制且无痛的范围，再用脚推地起立，避免髋突然先冲高、胸部明显滞后。深度是训练目标与控制能力共同决定的，不以牺牲姿势强求。</p></section><section class="detail-block"><h4>躯干角度与杠铃轨迹</h4><p>杠位较高，常需要更多膝屈和较直立的躯干来维持平衡；股骨、躯干长度与负荷会影响实际角度。观察侧面时，杠铃通常在足中部附近上方运行，但人体与杠铃的整体平衡比追求一条像素级直线更重要。允许自然前倾，不能把前倾本身判成圆背。</p></section><section class="detail-block"><h4>一个可检验的提示</h4><p>若脚跟抬起，先减轻重量，核对站距、下蹲范围、踝活动需求与鞋底稳定性，再尝试“脚跟和前脚掌一起稳住”。膝盖可以根据动作需要超过脚尖；强行限制膝前移可能让髋后移和躯干前倾更多。不要用“膝永远不能过脚尖”取代观察。</p></section></div></details></li><li><details><summary><span class="term">低杠深蹲：杠位更低，髋需求改变</span>：杠放在肩胛冈下方、后侧三角肌形成的平台，通常需要更多髋后移与躯干前倾。</summary><div class="kp-body"><section class="detail-block"><h4>承重来自上背平台</h4><p>低杠的“低”是相对于高杠而言，不是把杠滑到腰背。杠铃稳定在肩胛冈下方后侧三角肌形成的平台，上背保持张力。握距与肘位须兼顾肩腕舒适和承杠稳定，双手负责固定杠，不用手腕单独托起全部负重。若无法舒适建立平台，可先选择其他变式。</p></section><section class="detail-block"><h4>为什么常更前倾</h4><p>为了使负重系统维持在支撑范围内，低杠常伴随更多髋后移和较明显的躯干前倾。脊柱仍保持可控制的自然曲线；整段躯干从髋部前倾，和腰背在负荷下突然屈曲，是不同现象。比较高杠与低杠时，不应要求同一个躯干角度。</p></section><section class="detail-block"><h4>站距与负荷选择</h4><p>有些人低杠采用稍宽站距，但宽站距不是低杠的定义。先用轻负荷找到足底稳定、膝沿脚尖方向、髋膝配合的姿势，再逐步增加负荷。低杠可能让部分人举起更大重量，不代表每个人都应选它，也不表示高杠训练效果较差。</p></section><section class="detail-block"><h4>常见偏差与调整</h4><p>如果起立时髋先猛抬、胸部掉下，先降低负荷，观察起始平衡和髋膝协同；可用“胸和髋一起起来”提醒。若只是符合变式特点的稳定前倾，则无需为了外观看起来直立而强改。出现肩腕疼痛或杠位滑动，应重新设置或更换变式。</p></section></div></details></li><li><details><summary><span class="term">前蹲：前肩承杠，抬肘保持平台</span>：杠铃由前三角肌平台承托，手帮助稳定；躯干通常更直立，上背控制需求明显。</summary><div class="kp-body"><section class="detail-block"><h4>前架与握法</h4><p>杠铃稳托在前三角肌形成的平台、靠近锁骨前方，重量不悬在手掌中。常见握法包括举重式前架和交叉臂前架：前者抬肘，手指从杠下辅助稳定；后者两臂在胸前交叉、手搭对侧杠，抬肘维持前肩平台。本课配图采用交叉臂示范。两者都由肩部承重，不做弯举，不强掰手腕。握法需结合肩腕活动能力、负荷和教练指导选择。</p></section><section class="detail-block"><h4>站距与躯干</h4><p>站距可从肩宽附近探索，膝沿脚尖方向屈曲，足底稳定。由于杠在身前，躯干通常需较直立，以免杠向前滚落；踝、髋活动度和身体比例影响可用深度。不要为了蹲深而脚跟离地、肘突然下掉或腰背失控。</p></section><section class="detail-block"><h4>起立与呼吸</h4><p>轻负荷练习时可在准备阶段吸气并建立躯干张力，在不失去稳定的前提下于用力阶段呼气，不要求全组持续憋气。起立时保持前架平台，髋膝共同伸展。若肘持续掉下，应检查负荷、疲劳和前架活动需求，不能只靠喊“抬肘”解决所有问题。</p></section><section class="detail-block"><h4>何时停止尝试</h4><p>杠明显向前滚、身体失去平衡或出现疼痛时应结束尝试。先在有合适安全杆的力量架中练习，预先和教练约定失败处理，不临时伸手接住滚落的重杠。前蹲常用重量低于后蹲，不能直接照搬后蹲训练重量。</p></section></div></details></li><li><details><summary><span class="term">传统硬拉：手在腿外，髋膝一起发力</span>：杠从地面起，起始髋位通常高于深蹲底部；先让杠贴近身体，再推动地面起拉。</summary><div class="kp-body"><section class="detail-block"><h4>起始位</h4><p>双脚约髋宽，杠放在足中部上方；髋向后折叠并屈膝，双手位于双腿外侧，初学轻负荷可用双正握。小腿接近杠而不把杠向前推，双臂伸直，肩通常略在杠前。髋一般高于膝，但具体高度受身体比例影响，不能照抄固定角度。</p></section><section class="detail-block"><h4>建立张力再起拉</h4><p>先稳定躯干，收紧背阔肌让杠靠近身体，平顺消除杠与负重系统的松弛，再用脚推动地面起拉。不要突然猛拽，也不要先把髋冲高、再用腰背把杠拉走。髋膝共同伸展，杠经过膝附近后继续完成髋伸展。</p></section><section class="detail-block"><h4>轨迹与结束位置</h4><p>杠尽量贴近小腿与大腿，减少无谓前移，但不需要用力磨擦皮肤。顶部站直、髋膝伸展即可，不用后仰过伸腰部。双臂像连接身体与杠的绳索，不屈肘把杠弯举起来。握力不足时先调整重量和方案，不靠身体扭转补偿。</p></section><section class="detail-block"><h4>回放与纠错</h4><p>按器械和场地规则控制回放，通常先髋后移，让杠沿大腿下降，杠越过膝后再配合屈膝回到地面。若起拉圆背或杠离身，先降低负荷并检查杠位、躯干控制与起拉高度。用适当直径的训练片或稳定垫高可降低起始活动范围需求。</p></section></div></details></li><li><details><summary><span class="term">相扑硬拉：宽站距，手在腿内</span>：相扑与传统的关键差别是站距和握手相对双腿的位置，选择仍取决于个人控制与目标。</summary><div class="kp-body"><section class="detail-block"><h4>站距、脚尖与握法</h4><p>双脚站得更宽，脚尖适度外展，双手握杠位于双腿之间，膝大致沿脚尖方向。宽度和外展角度以能稳定发力、无不适为准，不是越宽越好。避免为了追求幅度小而把髋硬挤到不舒适的位置。</p></section><section class="detail-block"><h4>髋膝联动与轨迹</h4><p>准备时保持杠靠近身体、手臂伸直、躯干稳定；推动地面，髋膝协同伸展。相较传统，躯干常更直立、杠铃移动距离可能更短，但这些是常见特点，不是每个人都完全相同。顶部仍只需站直，不向后甩腰。</p></section><section class="detail-block"><h4>与传统怎么比较</h4><p>传统常为较窄站距、手在腿外；相扑为较宽站距、手在腿内。两者都训练髋膝伸肌群，只是关节需求和用力分配存在差异。不能说传统只练背、相扑只练腿，也不能仅凭站宽就断言更安全或更轻松。</p></section><section class="detail-block"><h4>一个纠错重点</h4><p>若膝明显向内偏、足底边缘翻起，先减轻负荷，调整站距和脚尖角度，再给“膝沿脚尖走、脚掌稳住”的提示。若髋内侧出现疼痛，不强行压开或继续加宽；停止并调整动作，必要时寻求专业评估。</p></section></div></details></li><li><details><summary><span class="term">站姿严格推举：下肢稳定，上肢推起</span>：本课借推举学习下肢与核心如何支撑上肢发力；严格推举不靠屈膝蹬腿启动。</summary><div class="kp-body"><section class="detail-block"><h4>动作归类先分清</h4><p>站姿杠铃过顶推举主要是上肢推类动作，下肢和躯干提供稳定。本课把它放在这里是为了连接全身支撑。严格推举不利用屈膝后蹬腿；若有主动下蹲和蹬伸助力，更接近借力推举，不能把两者技术标准混为一谈。</p></section><section class="detail-block"><h4>准备与路径</h4><p>双脚约髋至肩宽，脚掌稳定；杠从上胸附近开始，闭合握杠，手腕与前臂合理对齐。给杠留出通过面部的空间，再推向头顶，不用大幅后仰躲杠。顶端负重通常接近身体支撑范围上方，具体握距与终点受肩部活动能力影响。</p></section><section class="detail-block"><h4>核心与肩胛协作</h4><p>臀部和腹部保持足够张力，肋骨与骨盆大致对齐，避免靠腰椎过伸完成推举。肩胛随手臂抬高自然上旋，不能要求全程死死下压肩。负重下降时继续控制，不突然松开身体去接杠。</p></section><section class="detail-block"><h4>什么时候回退</h4><p>若必须蹬腿、明显塌腰或出现肩部疼痛才能举起，先降低负荷或选择合适替代动作，再检查动作条件。不要为了保持所谓“严格”而强行推到疼痛终点。练习前确认头顶空间、器械设置和回架路径。</p></section></div></details></li><li><details><summary><span class="term">纠错顺序：先设置，再给一个提示</span>：膝内扣、圆背和杠铃偏移是观察到的现象；负荷、疲劳和动作设置常比口令更值得先查。</summary><div class="kp-body"><section class="detail-block"><h4>膝内扣怎么处理</h4><p>观察是否存在明显、反复且失控的膝向内偏，以及足底是否稳定。先调整负荷、站距、脚尖方向与深度，再给“膝沿脚尖走”这类可执行提示。不要仅凭单次观察诊断某块肌肉无力，也不要求所有人的膝轨迹像机械直线。</p></section><section class="detail-block"><h4>圆背与正常前倾</h4><p>区分髋部折叠造成的整段躯干前倾，和脊柱在负荷下突然失去控制。出现明显失控时先结束该次尝试，降低重量或调整起始高度，再观察是否改善。反复大喊“挺胸”可能变成过伸腰部，不是通用答案。</p></section><section class="detail-block"><h4>杠铃偏移先找原因</h4><p>深蹲时杠向前漂可能与足底平衡、髋膝节奏和前架失稳有关；硬拉时杠离腿则可能与初始杠位或背部张力有关。先在组后查看侧面视频，一次只选一项调整，复练时尽量保持其他条件相近，才能判断提示是否有效。</p></section><section class="detail-block"><h4>连接Day40的反馈</h4><p>“这一组3次都完成了目标范围”是在报告结果，可作为KR；“第3次起立时髋先抬、胸部滞后”是在报告表现，属于KP。下一组说“胸和髋一起起来”是指导性暗示。先让学习者自评，再给关键观察，稳定后逐渐减少即时口令。</p></section></div></details></li><li><details><summary><span class="term">安全保护：深蹲设保护，硬拉不接杠</span>：安全杆、合适负荷和事先约定优先；保护者必须受过训练，不能临时伸手抢救重杠。</summary><div class="kp-body"><section class="detail-block"><h4>训练前先做的事</h4><p>检查力量架、挂钩、安全杆与锁扣是否固定，负重片是否对称并按器械要求固定。深蹲安全杆通常设在本人正常下蹲最低杠位略下方，左右同高；先用空杠确认不妨碍正常动作且能承接失败回落。为自己设置，不能沿用上一位训练者的高度。</p></section><section class="detail-block"><h4>深蹲保护位与沟通</h4><p>后蹲的受训保护者通常在举者后方跟随；较大负荷可按场地规程配备两侧受训保护者与安全杆。训练前约定次数、何时介入及失败处理。前蹲的承杠位置不同，不能照搬后蹲的身体接触方式。单人保护者不应被当作万能保险，也不能代替合适安全设施。</p></section><section class="detail-block"><h4>硬拉无人工接杠</h4><p>硬拉通常不安排保护者在动作中托举人体或抓杠。失败时按事先练习和场地允许的方式把杠回放地面，旁人保持距离，手脚避开杠与杠片。不要靠突然伸手接杠、托腰或帮拉来完成失败重复，也不把可丢杠误解为任何地面都能任意摔杠。</p></section><section class="detail-block"><h4>加重之前的标准</h4><p>能在轻负荷下稳定完成、理解回架与失败处理，再逐步增加重量。出现疼痛、眩晕、明显失控或器械松动时先停止。练习技术不需要先测试极限重量；保护配置不足时应更换方案，而不是用勇气或更多口令填补。</p></section></div></details></li></ul></section><section class="warn"><h2>常见误区</h2><p><strong class="misconception">误区：所有深蹲都必须躯干竖直，膝盖绝不能过脚尖。</strong><br>辨析：杠位与个人比例影响躯干角度和膝前移。观察足底平衡、脊柱控制与无痛范围，不能把一个外形标准套在所有变式上。</p><p><strong class="misconception">误区：硬拉起始位应该像深蹲底部一样把髋坐得越低越好。</strong><br>辨析：传统硬拉起始髋位通常更高；髋过低可能把杠推离身体，起拉前又被迫先抬髋。应结合足中部杠位、身体比例与张力设置。</p><p><strong class="misconception">误区：相扑只练腿、传统只练背，站得越宽越安全。</strong><br>辨析：两者都需要髋膝伸展与躯干稳定。站距改变关节需求，是否合适取决于个人控制与舒适度，并非越宽越好。</p><p><strong class="misconception">误区：硬拉失败时，教练应赶快抓住杠铃帮忙抬起来。</strong><br>辨析：硬拉通常不做人工接杠保护。按预先练习的方式回放，旁人保持距离；深蹲则应事先设置安全杆并按需要安排受训保护者。</p></section><section class="mnemonic"><h2>记忆口诀</h2><p><strong>高杠上背，低杠后肩；前蹲抬肘，平台承担；传统手外，相扑手内；推举下肢稳，深蹲保护先。</strong></p></section><section class="panel"><h2>翻转卡复习</h2><div class="cards"><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">高杠与低杠的主要区别？</span><span class="face back" aria-hidden="true">承杠位置不同：高杠在上斜方肌，低杠在肩胛冈下方后侧三角肌平台；髋与躯干需求随之改变。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">前蹲的重量主要由哪里承托？</span><span class="face back" aria-hidden="true">前三角肌形成的平台，手辅助稳定；不是靠手掌做弯举承重。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">传统与相扑硬拉，手相对腿在哪里？</span><span class="face back" aria-hidden="true">传统通常手在腿外；相扑站距较宽，手在腿内。两者都需躯干稳定和髋膝伸展。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">硬拉为什么让杠靠近身体？</span><span class="face back" aria-hidden="true">减少无谓前移与额外力矩，保持可控制的负重路径；不需要刻意刮伤小腿。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">严格推举可以屈膝蹬腿启动吗？</span><span class="face back" aria-hidden="true">不可以。严格推举由上肢推起，下肢稳定；屈膝后蹬伸助力更接近借力推举。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">躯干前倾一定等于圆背吗？</span><span class="face back" aria-hidden="true">不一定。髋部折叠可让整段躯干前倾，仍保持自然脊柱曲线；要观察是否失去控制。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">深蹲安全杆怎么设？</span><span class="face back" aria-hidden="true">本人正常最低杠位略下方、左右同高，先用空杠确认不挡动作且能承接失败回落。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">硬拉失败时保护者应该抓杠吗？</span><span class="face back" aria-hidden="true">不应临时抓杠或托举人体。按预先练习的方式回放，旁人保持距离，手脚避开杠片。</span></span></button></div></section><section class="panel orange"><h2>实操关联</h2><ul class="practice"><li>准备：选空杠、轻训练杠或木棍，在合适场地检查挂钩和安全杆。先练动作与回架，不先测最大重量。未掌握承杠与保护时请受训教练现场指导。</li><li>深蹲观察：用组后侧面视频核对杠位、足底接触、髋膝节奏和脊柱控制。分别试高杠与前蹲准备位，描述躯干需求如何改变；不为了外观一致强凑同一角度。</li><li>硬拉观察：从合适起拉高度练传统硬拉，记录手在腿外、杠靠近小腿、髋高于膝。若试相扑，调整到舒适宽度并让手在腿内，比较两种设置，不把宽度当成绩。</li><li>比较起始位：深蹲从站立承杠开始下蹲，硬拉从地面设置开始起拉。用同一人的轻负荷录像比较，指出为何传统硬拉不必先坐到深蹲底部。</li><li>反馈练习：完成一小组后先自评，再报告一条KP，例如“起立时髋先抬”。下一组只调整重量或一个提示，观察改善；若疼痛或失控，结束尝试并调整方案。</li><li>安全演练：空杠确认安全杆高度、回架路线和教练口令。口头说明硬拉失败不伸手接杠；严格推举核对头顶空间，下肢稳住、避免靠塌腰或蹬腿完成。</li></ul></section><section class="panel blue"><h2>练习题</h2><section class="question" data-answers="[1]" data-explanation="B正确：杠位改变身体维持平衡的方式，低杠常伴更多髋后移和稳定前倾。A把后侧三角肌平台错当成腰背；C会破坏深蹲的髋膝协同；D忽略个体差异，站距不是唯一固定值。"><h3>1. 单选：与高杠相比，低杠深蹲常见的技术特点是哪项？</h3><div class="options"><label class="option"><input type="radio" name="question-0" value="0"><span>A. 杠移到腰椎，主要由手腕承重</span></label><label class="option"><input type="radio" name="question-0" value="1"><span>B. 杠位更低，常伴更多髋后移和躯干前倾</span></label><label class="option"><input type="radio" name="question-0" value="2"><span>C. 膝盖必须全程保持伸直</span></label><label class="option"><input type="radio" name="question-0" value="3"><span>D. 所有人都应使用完全相同的宽站距</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[0]" data-explanation="A正确：宽站距、手在腿内是相扑的典型组合。B和C不符合该变式；D会增加不必要的杠铃前移。实际站宽和脚尖角度需结合舒适度、控制与身体比例调整。"><h3>2. 单选：相扑硬拉最典型的起始设置是哪项？</h3><div class="options"><label class="option"><input type="radio" name="question-1" value="0"><span>A. 双脚较宽，双手位于双腿之间</span></label><label class="option"><input type="radio" name="question-1" value="1"><span>B. 双脚并拢，双手必须反握</span></label><label class="option"><input type="radio" name="question-1" value="2"><span>C. 手在腿外，同时把髋坐到脚跟</span></label><label class="option"><input type="radio" name="question-1" value="3"><span>D. 杠刻意离小腿很远，以免碰到身体</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[0,1,3]" data-explanation="A、B、D正确。前架平台、合理终点和先控制负荷都是关键。C错误：髋部折叠引起的躯干前倾可以保留自然脊柱曲线，不能只看躯干是否竖直。"><h3>3. 多选：哪些观察或处理符合本课技术原则？</h3><div class="options"><label class="option"><input type="checkbox" name="question-2" value="0"><span>A. 前蹲由前肩平台承杠，手辅助稳定</span></label><label class="option"><input type="checkbox" name="question-2" value="1"><span>B. 传统硬拉顶部站直即可，不刻意后仰</span></label><label class="option"><input type="checkbox" name="question-2" value="2"><span>C. 任何躯干前倾都必须判为圆背</span></label><label class="option"><input type="checkbox" name="question-2" value="3"><span>D. 明显失控时先减轻负荷，再核对设置和提示</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[0,2,3]" data-explanation="A、C、D正确。保护应在开始前准备好。B错误：硬拉通常不做人工接杠保护，临时抓杠或托举人体会增加失控风险，应按事先练习与场地规则回放。"><h3>4. 多选：哪些安全安排合理？</h3><div class="options"><label class="option"><input type="checkbox" name="question-3" value="0"><span>A. 深蹲前以空杠核对安全杆高度</span></label><label class="option"><input type="checkbox" name="question-3" value="1"><span>B. 硬拉失败时，旁人立即伸手抓杠</span></label><label class="option"><input type="checkbox" name="question-3" value="2"><span>C. 与受训保护者事先约定次数和介入方式</span></label><label class="option"><input type="checkbox" name="question-3" value="3"><span>D. 保护不足时更换方案，不强上极限负重</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[2]" data-explanation="C正确：先恢复合理起始设置和可控负荷，再观察髋膝联动。A可能继续把杠推离身体；B增加失控风险；D不是硬拉的常规保护方式。深蹲底部和地面硬拉准备位不需要相同。"><h3>5. 案例：小林传统硬拉时刻意把髋压到深蹲底部，杠被小腿推向前；真正起拉前，髋又先抬高。下一步更合理的是？</h3><div class="options"><label class="option"><input type="radio" name="question-4" value="0"><span>A. 继续降低髋位，直到躯干完全竖直</span></label><label class="option"><input type="radio" name="question-4" value="1"><span>B. 加大重量，让杠把姿势固定住</span></label><label class="option"><input type="radio" name="question-4" value="2"><span>C. 减轻负荷，重设足中部杠位、适合的髋高和起拉张力</span></label><label class="option"><input type="radio" name="question-4" value="3"><span>D. 让教练从后方托腰帮助拉起</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[1]" data-explanation="B正确：当前负荷或技术条件已不足以维持严格推举。蹬腿改变动作性质，明显后仰和失控提示需要调整。A、C继续放大问题；D不能替代合适的负荷、器械和事先约定的失败处理。"><h3>6. 案例：学习者做站姿严格推举，只有先屈膝蹬腿、明显后仰才能推起，且最后两次难以控制。教练应如何处理？</h3><div class="options"><label class="option"><input type="radio" name="question-5" value="0"><span>A. 把它当作严格推举继续加重</span></label><label class="option"><input type="radio" name="question-5" value="1"><span>B. 结束这组并降重，重建下肢稳定与躯干控制</span></label><label class="option"><input type="radio" name="question-5" value="2"><span>C. 要求全组憋气，忽略动作变化</span></label><label class="option"><input type="radio" name="question-5" value="3"><span>D. 站到杠下随时用手接住掉落重量</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section></section><footer>Day 41/112 · NSCA<ul><li>NSCA&#39;s Essentials of Personal Training, 3rd ed.：抗阻训练技术、动作教学与安全保护。</li><li>NSCA, Essentials of Strength Training and Conditioning, 4th ed.：自由重量技术、深蹲、硬拉、过顶推举与保护。</li><li>NSCA, Exercise Technique Manual for Resistance Training：杠铃动作准备、执行和保护要点。</li></ul></footer></main><dialog aria-label="详情大图"><button class="icon-button" aria-label="关闭大图" title="关闭大图"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></button><img alt=""></dialog><script>document.querySelectorAll('.flip').forEach((button) => {
+  button.addEventListener('click', () => {
+    const pressed = button.getAttribute('aria-pressed') !== 'true';
+    button.setAttribute('aria-pressed', String(pressed));
+    button.querySelector('.front').setAttribute('aria-hidden', String(pressed));
+    button.querySelector('.back').setAttribute('aria-hidden', String(!pressed));
+  });
+});
+document.querySelectorAll('.question').forEach((question) => {
+  question.querySelector('.check').addEventListener('click', () => {
+    const selected = [...question.querySelectorAll('input:checked')].map((input) => Number(input.value)).sort();
+    const answer = question.querySelector('.answer');
+    answer.hidden = false;
+    if (!selected.length) { answer.textContent = '请先选择答案。'; delete question.dataset.result; return; }
+    const correct = JSON.stringify(selected) === JSON.stringify(JSON.parse(question.dataset.answers).sort());
+    question.dataset.result = correct ? 'correct' : 'wrong';
+    answer.textContent = `${correct ? '回答正确。' : '再想一想。'}${question.dataset.explanation}`;
+  });
+});
+const imageDialog = document.querySelector('dialog');
+document.querySelectorAll('[data-zoom]').forEach((button) => {
+  button.addEventListener('click', () => {
+    const original = button.querySelector('img');
+    const image = imageDialog.querySelector('img');
+    image.src = original.src;
+    image.alt = original.alt;
+    imageDialog.showModal();
+  });
+});
+imageDialog.querySelector('button').addEventListener('click', () => imageDialog.close());
+imageDialog.addEventListener('click', (event) => {
+  const rect = imageDialog.getBoundingClientRect();
+  if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) imageDialog.close();
+});
+</script></body></html>
