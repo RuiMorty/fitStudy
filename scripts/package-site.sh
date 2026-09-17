@@ -18,6 +18,7 @@ tar -czf "$temporary_archive" \
   fitness_syllabus.md \
   reviews.json \
   progress.json \
+  go \
   html \
   home \
   library

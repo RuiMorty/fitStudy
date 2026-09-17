@@ -1,0 +1,14 @@
+{
+  "name": "fitstudy-content",
+  "private": true,
+  "scripts": {
+    "render:day40": "node scripts/render-study-package.js --input runs/day40/lesson.json",
+    "test": "node --test tests/study-template.test.js",
+    "test:browser": "node scripts/verify-study-package.js --day 40",
+    "render:lesson": "node scripts/render-study-package.js"
+  },
+  "devDependencies": {
+    "lucide": "1.8.0",
+    "playwright": "1.62.1"
+  }
+}

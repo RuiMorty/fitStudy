@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Day 40 · 反馈与动作学习</title><link rel="icon" type="image/svg+xml" href="assets/fitness-study-logo-open-circle.svg?v=a6d8e5caaa61"><style>:root { color-scheme: light; --ink: #111113; --muted: #71717a; --line: #e4e4e7; --accent: #ff5a1f; --green: #0ea66b; --blue: #2563eb; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; font-synthesis: none; letter-spacing: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); overflow-wrap: anywhere; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+img { display: block; max-width: 100%; }
+button:focus-visible, a:focus-visible, summary:focus-visible, input:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
+svg.icon { width: 20px; height: 20px; }
+.icon-button { display: inline-grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 1px solid var(--line); border-radius: 6px; background: white; }
+[hidden] { display: none !important; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
+
+body { background: #f6f8f7; font-size: 14px; line-height: 1.65; }
+main { max-width: 980px; margin: auto; padding: 24px 18px 60px; }
+.brand { display: flex; align-items: center; justify-content: space-between; color: var(--muted); font-size: 12px; }
+.brand img { width: 54px; height: 54px; object-fit: contain; }
+.header { padding: 22px 4px 14px; }
+h1 { margin: 10px 0 8px; font-size: 36px; line-height: 1.2; }
+h1::before { content: ""; display: block; width: 34px; height: 4px; background: var(--accent); margin-bottom: 10px; }
+h2 { font-size: 17px; margin: 0 0 14px; }
+h3 { font-size: 16px; margin: 0 0 8px; }
+.sub { color: var(--muted); margin: 5px 0 18px; }
+.meta { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { display: inline-block; border: 1px solid var(--line); border-radius: 20px; background: white; color: var(--muted); padding: 3px 10px; font-size: 12px; font-weight: 600; }
+.chip:nth-child(1) { background: #e2f7eb; color: #15803d; border-color: transparent; }
+.chip:nth-child(2) { background: #e7f0fe; color: #2563eb; border-color: transparent; }
+.chip:nth-child(3) { background: #fff2e5; color: #9a4c05; border-color: transparent; }
+.panel, .figure, .warn, .mnemonic { background: white; border: 1px solid #e2e8e4; border-radius: 14px; box-shadow: 0 2px 12px rgba(20,40,30,.06); padding: 20px; margin: 16px 0; }
+.green { border-left: 5px solid var(--green); }
+.orange { border-left: 5px solid #ea7a17; }
+.blue { border-left: 5px solid #0ea5e9; }
+.takeaway { margin: 0; }
+.figure { text-align: center; }
+.figure button { display: block; position: relative; width: 100%; border: 0; padding: 0; background: white; cursor: zoom-in; }
+.figure img { max-height: 760px; width: 100%; object-fit: contain; }
+.figure .icon-button { position: absolute; bottom: 8px; right: 8px; background: #ffffffed; }
+.caption { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
+.kp { list-style: none; padding: 0; margin: 0; }
+.kp > li { border-bottom: 1px dashed #e2e8e4; }
+.kp > li:last-child { border-bottom: 0; }
+.kp summary { cursor: pointer; padding: 13px 8px; font-weight: 650; }
+.kp summary::marker { color: var(--green); }
+.term { color: #0a7d52; background: #e2f7eb; border-radius: 6px; padding: 1px 5px; }
+.kp-body { padding: 2px 14px 16px 24px; }
+.detail-block { margin: 12px 0; }
+.detail-block h4 { font-size: 13px; color: #08744d; margin: 0 0 4px; }
+.detail-block p { margin: 0; white-space: pre-line; }
+.warn { border-left: 5px solid #e23b3b; background: #fffafa; }
+.warn p { margin: 8px 0; }
+.misconception { color: #a82b32; }
+.mnemonic { border-left: 4px solid var(--accent); box-shadow: none; }
+.mnemonic strong { color: #df4716; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+.flip { height: 168px; perspective: 900px; border: 0; background: transparent; padding: 0; text-align: center; }
+.flip-in { display: block; height: 100%; position: relative; transition: transform .45s; transform-style: preserve-3d; }
+.flip[aria-pressed="true"] .flip-in { transform: rotateY(180deg); }
+.face { position: absolute; inset: 0; backface-visibility: hidden; border: 1px solid var(--line); border-radius: 10px; padding: 15px; background: #fafafa; display: flex; align-items: center; justify-content: center; overflow-y: auto; }
+.back { transform: rotateY(180deg); background: #eef9f4; color: #075e40; border-color: #c8eadb; }
+.practice { padding-left: 20px; }
+.practice li { margin: 7px 0; }
+.question { border-top: 1px solid #e2e8e4; padding: 20px 0 8px; margin-top: 12px; min-width: 0; }
+.options { display: grid; gap: 7px; margin: 10px 0; }
+.option { display: flex; gap: 10px; align-items: baseline; border: 1px solid #e2e8e4; background: #f0f4f2; padding: 9px 12px; border-radius: 8px; cursor: pointer; }
+.option input { flex-shrink: 0; accent-color: var(--green); }
+.option:has(input:checked) { border-color: #0ea5e9; background: #e7f6fd; }
+.question[data-result="correct"] .option:has(input:checked) { border-color: #0ea66b; background: #e7f8ef; }
+.question[data-result="wrong"] .option:has(input:checked) { border-color: #e23b3b; background: #fff0f0; }
+.answer { background: #f8fbfa; border-left: 3px solid #0ea5e9; padding: 10px; margin-top: 10px; }
+.check { border: 0; background: #0ea66b; color: white; padding: 9px 14px; border-radius: 7px; }
+footer { color: var(--muted); font-size: 12px; margin-top: 28px; }
+footer ul { padding-left: 20px; }
+dialog { width: min(1200px, 96vw); max-height: 94dvh; padding: 52px 16px 16px; border: 0; border-radius: 8px; background: white; }
+dialog::backdrop { background: #15191dd9; }
+dialog img { width: 100%; max-height: 78dvh; object-fit: contain; }
+dialog .icon-button { position: absolute; top: 8px; right: 10px; }
+@media (max-width: 600px) {
+  main { padding: 16px 12px 40px; }
+  h1 { font-size: 26px; }
+  .header { padding: 16px 4px 12px; }
+  .panel, .figure, .warn, .mnemonic { padding: 15px; }
+  .kp-body { padding-left: 16px; }
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .face { padding: 12px; }
+}
+</style></head><body><main><div class="brand"><img src="assets/fitness-study-logo-open-circle.svg?v=a6d8e5caaa61" alt="Logo"><span>双证</span></div><header class="header"><h1>Day 40 · 反馈与动作学习</h1><p class="sub">把“信息从哪里来”“告诉了什么”和“怎样传达”分开，才能给出真正帮助学习的反馈。</p><div class="meta"><span class="chip">阶段2训练科学</span><span class="chip">第6周</span><span class="chip">NSCA / NASM</span></div></header><section class="panel green"><h2>一句话总结</h2><p class="takeaway">反馈像动作学习的导航：KR告诉你有没有到达目标，KP告诉你刚才是怎样走的。教练先帮助学习者识别主要问题，再逐渐把判断权交回去，避免只有听着口令才能做对。</p></section><figure class="figure"><button data-zoom aria-label="放大详情图"><img class="" src="assets/阶段2训练科学/day40-反馈与动作学习.png" alt="反馈来源、KR与KP、反馈安排和三种暗示方式的中文图解"><span class="icon-button"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 15 6 6" /><path d="m15 9 6-6" /><path d="M21 16v5h-5" /><path d="M21 8V3h-5" /><path d="M3 16v5h5" /><path d="m3 21 6-6" /><path d="M3 8V3h5" /><path d="M9 9 3 3" /></svg></span></button><figcaption class="caption">先区分三个维度：来源看内在与外在，内容看KR与KP，传达方式看言语、视觉与动觉。它们不是互相排斥的分类。</figcaption></figure><section class="panel"><h2>核心要点</h2><ul class="kp"><li><details><summary><span class="term">内在反馈与外在反馈</span>：先看信息来源，不要把“身体感觉”与“教练评价”混在一起。</summary><div class="kp-body"><section class="detail-block"><h4>字面意思</h4><p>内在反馈，是动作本身带来的感觉信息，例如肌肉用力感、关节位置、身体晃动和接触压力。外在反馈，也称追加反馈，是教练语言、镜面、视频或测量设备额外提供的信息。它们回答的是“信息从哪里来”。</p></section><section class="detail-block"><h4>身体感觉从哪里来</h4><p>本体感觉帮助我们感知身体的位置和运动。肌梭对肌肉长度及其变化敏感，腱器官提供与肌腱张力相关的信息；这些信号和视觉、前庭、皮肤感觉一起帮助控制动作。不要把任何单一感受或感受器当成动作正确与否的开关。</p></section><section class="detail-block"><h4>训练例子</h4><p>引体向上时，学习者觉得躯干在晃，这是内在感觉；教练指出“这次上拉时躯干向后摆了”，是外在追加信息。两者可能一致，也可能不一致。可先问学习者感受到什么，再用观察或视频校准，不直接用教练的判断覆盖自我感知。</p></section><section class="detail-block"><h4>为什么影响学习</h4><p>外在反馈能帮助新手发现自己尚未察觉的问题，但长期依赖它，可能使学习者忽略自身感觉。目标不是撤掉所有帮助，而是让学习者逐步能发现偏差、解释原因并调整下一次动作。出现疼痛、明显失控等安全信号时，应停止或调整任务，不用反复硬练来“适应”。</p></section></div></details></li><li><details><summary><span class="term">KR：结果反馈</span>：Knowledge of Results，告诉学习者结果是否达到预先明确的目标。</summary><div class="kp-body"><section class="detail-block"><h4>字面意思与类比</h4><p>KR = Knowledge of Results，通常译为结果反馈。它报告动作结果与目标之间的关系，像投篮后的“进了”或“偏左”，不一定解释身体各部位怎样运动。目标标准要先说清楚，否则“做得不错”只是模糊评价。</p></section><section class="detail-block"><h4>引体向上的例子</h4><p>若本次目标预先定义为“在规定动作范围内完成一次辅助引体向上”，教练说“这次完成了目标”，属于KR。若目标是完成5次，报告“完成了4次”，同样属于KR。它可以是成功与否，也可以是数量、距离、时间等结果信息。</p></section><section class="detail-block"><h4>作用与边界</h4><p>KR帮助学习者知道离目标还有多远，但单独说“没成功”通常不足以指导修正。学习者可能需要同时得到一条关键的KP，或先降低任务难度。判断KR要看信息是否围绕任务结果，不要机械地按“有没有数字”分类。</p></section><section class="detail-block"><h4>考试与沟通</h4><p>题目出现成绩、完成次数、命中情况或与预定目标的偏差时，优先考虑KR。但同一句话是否属于KR仍取决于任务目标，例如“深度不足”若是在报告未达到规定深度，可作为结果信息；若进一步描述髋膝怎样运动，则涉及表现信息。</p></section></div></details></li><li><details><summary><span class="term">KP：表现反馈</span>：Knowledge of Performance，说明动作过程、协调或技术质量。</summary><div class="kp-body"><section class="detail-block"><h4>字面意思与类比</h4><p>KP = Knowledge of Performance，通常译为表现反馈。它说明动作怎样完成，像看录像后指出“上拉开始时，你先摆动躯干，再屈肘”。KR像成绩单，KP像对完成过程的观察，两者可以在同一次练习后一起出现。</p></section><section class="detail-block"><h4>描述要具体</h4><p>“姿势不对”太笼统；“刚才上拉时躯干向后摆动明显”更具体。先描述看到了什么，再选择最值得调整的一件事。不要一次列出肩、肘、手腕、呼吸、腰背等所有细节，让新手无从分配注意力。</p></section><section class="detail-block"><h4>反馈不等于口令</h4><p>“这次回程突然放松了”是在描述已经发生的动作，属于KP；“下一次慢一些回程”是面向下一次尝试的指导性暗示。二者可以连着说，但不是所有训练前口令都叫反馈，更不能只看到动作词就无条件归类为KP。</p></section><section class="detail-block"><h4>和KR搭配</h4><p>可以先说“这次完成了一次目标动作”（KR），再说“但回程最后一段失去控制”（KP），最后给一个下一次的行动提示。若问题来自负荷过大，优先增加辅助或降低难度，不用更多语言硬补能力差距。</p></section></div></details></li><li><details><summary><span class="term">反馈频率与逐步消退</span>：帮助应随需要调整，不是永远每次纠错，也不是越少越好。</summary><div class="kp-body"><section class="detail-block"><h4>为什么会依赖</h4><p>教练每次都立即给答案，可能使当场表现更好，却让学习者少了自行识别误差的机会。反馈撤掉后若动作明显下降，就要检查是否对口令形成依赖。因此，课堂上做得顺，不等于已经形成稳定学习。</p></section><section class="detail-block"><h4>Fading是什么意思</h4><p>Fading指逐步减少或改变外在帮助。例如先对主要问题较频繁地提示，随着动作稳定，转为若干次尝试后总结，或者先让学习者自评。它不是规定所有人必须按相同百分比递减，也不意味着停止关注安全。</p></section><section class="detail-block"><h4>根据表现调整</h4><p>新任务、复杂动作或重大错误可能需要更及时的指导；表现逐渐稳定后，可以减少对轻微偏差的即时打断。难度突然提高、疲劳增大或动作退步时，也可以暂时增加帮助。调整依据是任务与个人表现，不是练到了第几天。</p></section><section class="detail-block"><h4>怎么检查是否有效</h4><p>在安全且难度合适的条件下，安排少量没有即时口令的尝试，或者下一次训练先不回看提示，观察能否保留关键控制。比较应尽量保持负荷和疲劳条件相近。涉及安全的明显失控不需要等待练习结束才处理。</p></section></div></details></li><li><details><summary><span class="term">反馈时机与注意焦点</span>：先让人有机会感知，再用一条清楚、可执行的信息帮助下一次尝试。</summary><div class="kp-body"><section class="detail-block"><h4>动作中还是动作后</h4><p>动作中的提示可以及时引导，但也可能增加注意负担；动作后的反馈方便学习者回顾刚才的感觉。没有适合所有动作的唯一时机。新手在悬吊或承重时不要为了看视频分心，应在安全停止后再回看。</p></section><section class="detail-block"><h4>一个简洁顺序</h4><p>一次尝试结束后，先问“刚才哪一段最不稳定”，让学习者自己判断；教练再报告关键观察；最后约定下一次只关注一个目标。适当保留自评时间，不等于需要机械等待固定秒数。</p></section><section class="detail-block"><h4>焦点怎么选</h4><p>可以把注意力引向动作效果，例如“平稳地把横杆带向身体”，也可以在需要定位时简要提示某个部位。外部焦点在许多任务中有利，但并非所有情境下都必然优于内部焦点。选择能被这个学习者理解、执行和检验的提示。</p></section><section class="detail-block"><h4>安全优先</h4><p>如果出现尖锐疼痛、明显失控或器械设置问题，先停止、保护或降低难度，再谈反馈技巧。不要为了观察学习者自纠错而容忍危险重复，也不要把持续疼痛解释成“还没找到感觉”。</p></section></div></details></li><li><details><summary><span class="term">言语、视觉与动觉暗示</span>：这是传达方式，和KR/KP的信息内容不是同一条分类轴。</summary><div class="kp-body"><section class="detail-block"><h4>言语：说得少而明确</h4><p>言语暗示用简短语言帮助组织动作，例如下一次尝试前说“回程保持控制”。避免同时堆多个口令。练习前的口令主要是指导；练习后报告“这次回程速度忽快忽慢”，才是在提供动作表现反馈。</p></section><section class="detail-block"><h4>视觉：先看到，再尝试</h4><p>视觉暗示可以来自示范、镜面或视频。展示时让学习者知道要看哪一个关键特征，再用合适的轻负荷尝试。视频既可以显示是否完成目标（KR），也可以显示躯干怎样摆动（KP），不因媒介是视频就自动属于某一种。</p></section><section class="detail-block"><h4>动觉：定位而不是强推</h4><p>动觉暗示可用安全、低负荷的姿势体验帮助感知位置。涉及教练触碰时，必须先取得明确同意，说明位置与目的；在稳定准备姿态下轻触定位，不在悬吊中突然触碰或强行推动身体。不适、拒绝或边界不清时改用其他方式。</p></section><section class="detail-block"><h4>把三个维度分开</h4><p>教练通过语言说“本次完成4次”：来源是外在，内容是KR，方式是言语。教练用视频指出“第4次出现躯干摆动”：来源同样是外在，内容是KP，方式是视觉。问清来源、内容和方式，就不会把分类混成一团。</p></section></div></details></li></ul></section><section class="warn"><h2>常见误区</h2><p><strong class="misconception">误区：KR就是表扬，KP就是批评。</strong><br>辨析：KR报告结果，KP报告过程；两者都可以描述成功或偏差，不能用评价的正负来分类。</p><p><strong class="misconception">误区：新手必须每次重复都立刻听到所有纠错。</strong><br>辨析：先保障安全并处理主要问题，随着表现稳定逐步减少帮助，给自我判断留空间。频率与时机要结合任务。</p><p><strong class="misconception">误区：言语、视觉、动觉与KR、KP只能选其中一类。</strong><br>辨析：前者是传达方式，后者是信息内容。同一段视频或一句话，都可能提供KR或KP；练习前的提示也不一定是反馈。</p></section><section class="mnemonic"><h2>记忆口诀</h2><p><strong>来源分内外，内容看果态；目标结果KR，动作过程KP；一次抓一事，稳定后渐退。</strong></p></section><section class="panel"><h2>翻转卡复习</h2><div class="cards"><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">内在反馈回答什么问题？</span><span class="face back" aria-hidden="true">信息来自哪里：动作本身产生的感觉，如位置、用力和晃动感。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">KR的英文与含义？</span><span class="face back" aria-hidden="true">Knowledge of Results：结果反馈，报告是否达到目标及偏差。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">KP的英文与含义？</span><span class="face back" aria-hidden="true">Knowledge of Performance：表现反馈，描述动作过程或技术质量。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">“完成了4次”通常是什么？</span><span class="face back" aria-hidden="true">在目标次数明确时是KR；它报告本次练习的结果。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">“刚才躯干摆动明显”是什么？</span><span class="face back" aria-hidden="true">KP：描述已经发生的动作过程，不只是成功与否。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">逐步消退反馈意味着什么？</span><span class="face back" aria-hidden="true">随表现稳定减少外在帮助，促进自我判断；不等于放弃安全指导。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">视频一定属于KP吗？</span><span class="face back" aria-hidden="true">不一定。视频是视觉方式，既能显示完成结果，也能显示动作过程。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">动觉提示前先做什么？</span><span class="face back" aria-hidden="true">先解释目的并获得明确同意，在稳定、安全姿态下轻触定位。</span></span></button></div></section><section class="panel orange"><h2>实操关联</h2><ul class="practice"><li>言语暗示：为辅助引体向上新手约定“回程保持控制”。这是下一次尝试前的指导；练习后再报告“刚才回程最后一段突然放松”，属于KP。</li><li>视觉暗示：在安全停止后回看一小段视频。若核对是否达到预定终点，是KR；若观察躯干是否摆动，是KP。每次只选一个观察目标。</li><li>动觉暗示：先征得同意，在双脚着地的准备姿态下，用轻触帮助定位上背部。不要在悬吊时突然触碰，也不要强推肩胛到某个位置。</li><li>反馈顺序：一次低难度尝试后先让学习者自评，再给一条关键KP，必要时加一句KR说明目标完成情况。下一次仍保持相近负荷，方便比较。</li><li>难度与安全：选能控制全程的辅助量；出现疼痛、明显摆动或回程失控时先停止或增加辅助。不要靠更多口令替代负荷调整。</li><li>检查学习：动作稳定后，尝试少量没有即时提示的重复。下一次训练再观察能否保留，而不只看当前有教练帮助时的表现。</li></ul></section><section class="panel blue"><h2>练习题</h2><section class="question" data-answers="[0]" data-explanation="A正确：报告的是完成次数与预定目标的关系。B强调动作怎样完成，这句话没有描述过程；C的信息应来自学习者自身感觉，而这里来自教练；D是传达方式中的身体感觉引导，与次数报告不同。"><h3>1. 单选：预先约定目标为完成5次辅助引体向上，教练说“这一组完成了4次”，主要属于什么？</h3><div class="options"><label class="option"><input type="radio" name="question-0" value="0"><span>A. KR，结果反馈</span></label><label class="option"><input type="radio" name="question-0" value="1"><span>B. KP，动作表现反馈</span></label><label class="option"><input type="radio" name="question-0" value="2"><span>C. 内在反馈</span></label><label class="option"><input type="radio" name="question-0" value="3"><span>D. 动觉暗示</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[1]" data-explanation="B正确：信息描述的是躯干如何运动。A混淆了日常语言中的“结果”和任务成绩；C错误，反馈可描述成功或偏差；D错误，教练给的是外在追加信息。"><h3>2. 单选：教练说“你刚才上拉时躯干明显向后摆”，主要在提供什么？</h3><div class="options"><label class="option"><input type="radio" name="question-1" value="0"><span>A. KR，因为教练说了结果</span></label><label class="option"><input type="radio" name="question-1" value="1"><span>B. KP，因为描述了动作过程</span></label><label class="option"><input type="radio" name="question-1" value="2"><span>C. 只要有批评就不是反馈</span></label><label class="option"><input type="radio" name="question-1" value="3"><span>D. 一定是内在反馈</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[0,1,3]" data-explanation="A、B、D正确。自评和适当减少帮助能为独立判断创造机会，触碰必须尊重边界。C错误：反馈应随任务、表现与风险调整，明显安全问题仍要及时处理。"><h3>3. 多选：哪些做法有助于合理使用反馈？</h3><div class="options"><label class="option"><input type="checkbox" name="question-2" value="0"><span>A. 安全前提下先让学习者自评</span></label><label class="option"><input type="checkbox" name="question-2" value="1"><span>B. 表现稳定后逐步减少即时提示</span></label><label class="option"><input type="checkbox" name="question-2" value="2"><span>C. 任何情况下都不再给反馈</span></label><label class="option"><input type="checkbox" name="question-2" value="3"><span>D. 涉及触碰时先解释并取得明确同意</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[2]" data-explanation="C正确：先让任务变得可控，再培养误差识别与独立控制。A可能进一步破坏动作；B可能维持提示依赖；D既缺乏事先同意，也可能造成失控。出现疼痛或危险动作时应先停止，而不是把撤掉提示当作硬性考验。"><h3>4. 案例：小林只有在教练每次重复都连续报口令时才能完成动作，撤掉口令就明显摆动。下一步更合理的是？</h3><div class="options"><label class="option"><input type="radio" name="question-3" value="0"><span>A. 增加重量，迫使他集中注意力</span></label><label class="option"><input type="radio" name="question-3" value="1"><span>B. 永远保持连续口令</span></label><label class="option"><input type="radio" name="question-3" value="2"><span>C. 降低任务难度，先自评，再给一条关键反馈并逐步减少帮助</span></label><label class="option"><input type="radio" name="question-3" value="3"><span>D. 悬吊中突然推动他的肩部帮助定位</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section></section><footer>Day 40/112 · 双证<ul><li>Schmidt &amp; Lee, Motor Control and Learning：追加反馈、KR、KP及学习测量。</li><li>Salmoni, Schmidt &amp; Walter (1984), Knowledge of results and motor learning: A review and critical reappraisal, Psychological Bulletin。</li><li>Winstein &amp; Schmidt (1990), Reduced frequency of knowledge of results enhances motor skill learning, Journal of Experimental Psychology: Learning, Memory, and Cognition。</li><li>NSCA, Essentials of Strength Training and Conditioning：动作教学与安全指导。</li></ul></footer></main><dialog aria-label="详情大图"><button class="icon-button" aria-label="关闭大图" title="关闭大图"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></button><img alt=""></dialog><script>document.querySelectorAll('.flip').forEach((button) => {
+  button.addEventListener('click', () => {
+    const pressed = button.getAttribute('aria-pressed') !== 'true';
+    button.setAttribute('aria-pressed', String(pressed));
+    button.querySelector('.front').setAttribute('aria-hidden', String(pressed));
+    button.querySelector('.back').setAttribute('aria-hidden', String(!pressed));
+  });
+});
+document.querySelectorAll('.question').forEach((question) => {
+  question.querySelector('.check').addEventListener('click', () => {
+    const selected = [...question.querySelectorAll('input:checked')].map((input) => Number(input.value)).sort();
+    const answer = question.querySelector('.answer');
+    answer.hidden = false;
+    if (!selected.length) { answer.textContent = '请先选择答案。'; delete question.dataset.result; return; }
+    const correct = JSON.stringify(selected) === JSON.stringify(JSON.parse(question.dataset.answers).sort());
+    question.dataset.result = correct ? 'correct' : 'wrong';
+    answer.textContent = `${correct ? '回答正确。' : '再想一想。'}${question.dataset.explanation}`;
+  });
+});
+const imageDialog = document.querySelector('dialog');
+document.querySelectorAll('[data-zoom]').forEach((button) => {
+  button.addEventListener('click', () => {
+    const original = button.querySelector('img');
+    const image = imageDialog.querySelector('img');
+    image.src = original.src;
+    image.alt = original.alt;
+    imageDialog.showModal();
+  });
+});
+imageDialog.querySelector('button').addEventListener('click', () => imageDialog.close());
+imageDialog.addEventListener('click', (event) => {
+  const rect = imageDialog.getBoundingClientRect();
+  if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) imageDialog.close();
+});
+</script></body></html>

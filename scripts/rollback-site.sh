@@ -19,7 +19,7 @@ ssh "${ssh_options[@]}" "$remote_target" "$remote_command" <<'REMOTE'
 set -euo pipefail
 
 backup_root="$SITE_DIR/.deploy-backups"
-targets=(index.html app.js styles.css fitness_syllabus.md reviews.json progress.json html)
+targets=(index.html app.js styles.css fitness_syllabus.md reviews.json progress.json go html home library)
 
 if [ -n "$BACKUP_ID" ]; then
   backup_dir="$backup_root/$BACKUP_ID"

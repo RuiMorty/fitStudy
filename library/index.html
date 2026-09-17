@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <base href="../" />
     <title>Fitness Study · 健身知识库</title>
-    <link rel="icon" type="image/svg+xml" href="html/assets/fitness-study-logo-open-circle.svg?v=20260915-ink" />
-    <link rel="stylesheet" href="styles.css?v=training-lab-22" />
+    <link rel="icon" type="image/svg+xml" href="html/assets/fitness-study-logo-open-circle.svg?v=a6d8e5caaa61" />
+    <link rel="stylesheet" href="styles.css?v=training-lab-23" />
     <script defer src="https://analytics.fitstudy.cn/script.js" data-website-id="fb761ce1-7ad3-4c9b-aeaa-c417e2ee8cca" data-domains="fitstudy.cn,www.fitstudy.cn"></script>
   </head>
   <body>
@@ -14,7 +14,7 @@
       <aside class="sidebar">
         <header class="sidebar-header">
           <div class="logo">
-            <img class="logo-mark" src="html/assets/fitness-study-logo-open-circle.svg?v=20260915-ink" alt="FitnessStudy" />
+            <img class="logo-mark" src="html/assets/fitness-study-logo-open-circle.svg?v=a6d8e5caaa61" alt="FitnessStudy" />
             <span class="logo-wordmark">Fitness<span>Study</span></span>
           </div>
           <div class="subline">NSCA / NASM 双证知识库</div>
@@ -47,6 +47,17 @@
             </section>
 
             <section class="filter-section">
+              <h2>排序</h2>
+              <div class="select-wrap">
+                <select id="sortFilter" aria-label="课程排序">
+                  <option value="published-desc">倒序（最新）</option>
+                  <option value="day-asc">顺序</option>
+                  <option value="current-first">当天优先</option>
+                </select>
+              </div>
+            </section>
+
+            <section class="filter-section">
               <h2>分类</h2>
               <div class="chip-group" id="categoryFilters"></div>
             </section>
@@ -73,7 +84,7 @@
           </div>
           <div class="quick-links">
             <div class="header-insight" id="headerInsight" aria-live="polite"></div>
-            <a id="headerAction" href="#reviewGrid">复习</a>
+            <a id="headerAction" href="#" hidden></a>
           </div>
         </header>
 
@@ -321,6 +332,6 @@
       </figure>
     </div>
 
-    <script src="app.js?v=training-lab-25"></script>
+    <script src="app.js?v=training-lab-32"></script>
   </body>
 </html>

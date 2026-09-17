@@ -26,7 +26,7 @@ set -euo pipefail
 backup_root="$SITE_DIR/.deploy-backups"
 backup_dir="$backup_root/$RELEASE_ID"
 failed_dir="$backup_root/failed-$RELEASE_ID"
-targets=(index.html app.js styles.css fitness_syllabus.md reviews.json progress.json html home library)
+targets=(index.html app.js styles.css fitness_syllabus.md reviews.json progress.json go html home library)
 
 [ -d "$SITE_DIR" ]
 mkdir -p "$backup_dir"

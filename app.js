@@ -9,6 +9,7 @@ const state = {
   cert: "全部",
   phase: "全部",
   category: "全部",
+  sortMode: "published-desc",
   query: "",
   exerciseView: "library",
   exercisePattern: "全部",
@@ -67,6 +68,11 @@ publishedPages.set(36, "html/day36-\u9002\u5e94\u6027\u4e0e\u8fc7\u5ea6\u8bad\u7
 publishedPages.set(37, "html/day37-\u75b2\u52b3\u4e0e\u5ef6\u8fdf\u6027\u808c\u8089\u9178\u75db.html");
 publishedPages.set(38, "html/day38-\u73af\u5883\u56e0\u7d20\u4e0e\u8fd0\u52a8\u63a7\u5236\u6280\u80fd\u5206\u7c7b.html");
 publishedPages.set(39, "html/day39-\u8fd0\u52a8\u5b66\u4e60\u7684\u4e09\u9636\u6bb5.html");
+publishedPages.set(40, "html/day40-\u53cd\u9988\u4e0e\u52a8\u4f5c\u5b66\u4e60.html");
+
+function latestPublishedDay() {
+  return Math.max(0, ...publishedPages.keys());
+}
 
 const generatedThumbs = new Map([
   [1, "html/thumbs/day01-skeletal-system-thumbnail.png"],
@@ -108,6 +114,7 @@ const generatedThumbs = new Map([
   [37, "html/thumbs/day37-fatigue-doms-thumbnail.png"],
   [38, "html/thumbs/day38-environment-skill-thumbnail.png"],
   [39, "html/thumbs/day39-motor-learning-stages-thumbnail.png"],
+  [40, "html/thumbs/day40-feedback-motor-learning-thumbnail.png"],
 ]);
 
 const categories = ["全部", "骨关节", "肌肉", "生物力学", "能量系统", "训练技术", "评估纠正", "营养", "模考"];
@@ -317,7 +324,8 @@ function restoreNavigation() {
     const saved = JSON.parse(localStorage.getItem(navigationStorageKey));
     if (!saved || typeof saved !== "object") return;
 
-    if (["theory", "review", "exercise", "nutrition"].includes(saved.tab)) state.tab = saved.tab;
+    if (["theory", "exercise", "nutrition"].includes(saved.tab)) state.tab = saved.tab;
+    if (["published-desc", "day-asc", "current-first"].includes(saved.sortMode)) state.sortMode = saved.sortMode;
     if (["library", "atlas"].includes(saved.exerciseView)) state.exerciseView = saved.exerciseView;
     if (["front", "back"].includes(saved.atlasView)) state.atlasView = saved.atlasView;
     if (exercises.some((exercise) => exercise.id === saved.selectedExercise)) state.selectedExercise = saved.selectedExercise;
@@ -330,6 +338,7 @@ function saveNavigation() {
   try {
     localStorage.setItem(navigationStorageKey, JSON.stringify({
       tab: state.tab,
+      sortMode: state.sortMode,
       exerciseView: state.exerciseView,
       atlasView: state.atlasView,
       selectedExercise: state.selectedExercise,
@@ -365,7 +374,7 @@ function parseSyllabus(markdown) {
     if (lessonMatch) {
       lesson = {
         day: Number(lessonMatch[1]),
-        title: lessonMatch[2],
+        title: cleanLessonTitle(lessonMatch[2]),
         cert: lessonMatch[3],
         phase: currentPhase,
         goal: currentGoal,
@@ -383,6 +392,29 @@ function parseSyllabus(markdown) {
     if (line.startsWith("- ")) lesson.points.push(line.slice(2));
     if (line.startsWith(">")) lesson.practice = line.replace(/^>\s*/, "").replace(/^🌙\s*/, "");
   }
+}
+
+function cleanLessonTitle(title) {
+  const next = title
+    .replace(/本日首讲/g, "")
+    .replace(/本日统一讲/g, "")
+    .replace(/本日首次完整定义/g, "完整定义")
+    .replace(/本日先引入框架/g, "")
+    .replace(/本日仅知概念名/g, "")
+    .replace(/首讲/g, "")
+    .replace(/统一讲/g, "");
+
+  return next
+    .replace(/\(([^()]*)\)/g, (_, content) => {
+      const trimmed = content.replace(/^[\s,，、]+|[\s,，、]+$/g, "");
+      return trimmed ? `(${trimmed})` : "";
+    })
+    .replace(/（([^（）]*)）/g, (_, content) => {
+      const trimmed = content.replace(/^[\s,，、]+|[\s,，、]+$/g, "");
+      return trimmed ? `（${trimmed}）` : "";
+    })
+    .replace(/\s{2,}/g, " ")
+    .trim();
 }
 
 function getLessonImage(lesson) {
@@ -479,6 +511,11 @@ function bindUI() {
   });
   $("phaseFilter").addEventListener("change", (event) => {
     state.phase = event.target.value;
+    render();
+  });
+  $("sortFilter").addEventListener("change", (event) => {
+    state.sortMode = event.target.value;
+    saveNavigation();
     render();
   });
   $("resetFilters").addEventListener("click", resetFilters);
@@ -592,9 +629,11 @@ function resetFilters() {
   state.cert = "全部";
   state.phase = "全部";
   state.category = "全部";
+  state.sortMode = "published-desc";
   state.query = "";
   $("searchInput").value = "";
   $("clearSearch").classList.remove("visible");
+  saveNavigation();
   render();
 }
 
@@ -607,11 +646,23 @@ function filteredLessons() {
     const text = [lesson.day, lesson.title, lesson.cert, lesson.phase, lesson.category, lesson.goal, ...lesson.points].join(" ").toLowerCase();
     const queryOk = !query || text.includes(query);
     return certOk && phaseOk && categoryOk && queryOk;
-  }).sort((a, b) => {
-    if (a.day === state.currentDay) return -1;
-    if (b.day === state.currentDay) return 1;
+  }).sort(compareLessons);
+}
+
+function compareLessons(a, b) {
+  if (state.sortMode === "day-asc") return a.day - b.day;
+  if (state.sortMode === "current-first") {
+    const priorityDay = latestPublishedDay() || state.currentDay;
+    if (a.day === priorityDay) return -1;
+    if (b.day === priorityDay) return 1;
     return a.day - b.day;
-  });
+  }
+
+  const aPublished = publishedPages.has(a.day);
+  const bPublished = publishedPages.has(b.day);
+  if (aPublished !== bPublished) return aPublished ? -1 : 1;
+  if (aPublished && bPublished) return b.day - a.day;
+  return a.day - b.day;
 }
 
 function render(enterDirection = "") {
@@ -668,9 +719,6 @@ function renderMainHeader() {
       kicker: "112 Day Library",
       title: "健身知识库",
       description: "按理论、证书、阶段和主题检索；已有详情页可直接弹窗阅读。",
-      action: "复习",
-      href: "#reviewGrid",
-      view: "review",
       insight: `<span>课程总览</span><strong>${state.lessons.length} <small>主题</small></strong>`,
     },
     review: {
@@ -717,20 +765,21 @@ function renderMainHeader() {
 
 function renderFilterState() {
   $("phaseFilter").value = state.phase;
+  $("sortFilter").value = state.sortMode;
   $("certFilters").innerHTML = ["全部", "双证", "NSCA", "NASM"].map((cert) => chip("cert", cert, state.cert)).join("");
   $("categoryFilters").innerHTML = categories.map((category) => chip("category", category, state.category)).join("");
 }
 
 function renderCards(lessons) {
   $("cardGrid").innerHTML = lessons
-    .map((lesson) => {
+    .map((lesson, index) => {
       const hasPage = publishedPages.has(lesson.day);
       return `
         <article class="lesson-card" data-day="${lesson.day}">
           <div class="thumb ${lesson.image ? "has-image" : "no-image"}">
             ${
               lesson.image
-                ? `<img src="${lesson.image}" alt="${lesson.title}缩略图" loading="lazy">`
+                ? cardThumbnail(lesson, index)
                 : `<div class="thumb-placeholder"><span>Day ${lesson.day}</span><b>${lesson.category}</b></div>`
             }
           </div>
@@ -755,6 +804,14 @@ function renderCards(lessons) {
     if (!card) return;
     openLesson(Number(card.dataset.day));
   };
+}
+
+function cardThumbnail(lesson, index) {
+  const loading = index < 4 ? "eager" : "lazy";
+  const priority = index === 0 ? ' fetchpriority="high"' : "";
+  const image = `<img src="${lesson.image}" alt="${lesson.title}缩略图" width="640" height="360" loading="${loading}" decoding="async"${priority}>`;
+  if (!lesson.image.startsWith("html/thumbs/") || !lesson.image.endsWith(".png")) return image;
+  return `<picture><source srcset="${lesson.image.replace(/\.png$/, ".webp")}" type="image/webp">${image}</picture>`;
 }
 
 function filteredReviews() {
