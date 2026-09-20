@@ -1,0 +1,7 @@
+{
+  "source": "runs/day42/revision-04/source/overview-art.png",
+  "sourceSha256": "a90fb13400419eb717d0c70a737a4190efb14645649016b460e49fec05334478",
+  "output": "runs/day42/revision-04/reviewed-source/overview-art.png",
+  "change": "Remove the two cyan arrows beside the rower that could imply torso swinging; preserve the characters, barbell and lower grip-width marks.",
+  "method": "Cyan mask restricted to two arrow outlines with 6px edge expansion; bar sleeve excluded explicitly; alpha<=8 noise removed"
+}

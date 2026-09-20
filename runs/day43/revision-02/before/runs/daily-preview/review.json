@@ -1,0 +1,71 @@
+{
+  "status": "awaiting-review",
+  "day": 43,
+  "templateApproved": true,
+  "templateApprovedAt": "2026-09-17T01:53:12.356699+00:00",
+  "templateApprovalMessage": "确认，检验完毕",
+  "templateApprovedFromDay": 40,
+  "publishApproved": false,
+  "startedAt": "2026-09-19T10:16:05.000Z",
+  "input": "runs/day43/lesson.json",
+  "output": "xhs/day43",
+  "previousDraft": {
+    "day": 42,
+    "status": "published",
+    "review": "runs/day42/release/status.json",
+    "publicLearningUrl": "https://fitstudy.cn/go/42/"
+  },
+  "artifactStatus": "ready-local-draft",
+  "imageStyleSpecification": "templates/study/v1/image-style.md",
+  "imageStylePreset": "templates/study/v1/image-style.json",
+  "userReviewStatus": "awaiting-user-acceptance",
+  "note": "Day43 已沿用共用模板完成本地草稿。用户 jixu 授权续接后，宿主机凭据可用，16 次单独生图成功，无自动重试。机架裁切用局部示意补齐，原图保留。11 张 XHS 卡片、中文详情、课程和 ZIP 已通过本地验证；等待用户验收。未发布，未修改首页、短链或正式进度。",
+  "contentReview": "runs/day43/lesson.json",
+  "imagePrompts": "runs/day43/image-prompts.json",
+  "lastCheckpointAt": "2026-09-20T01:57:24.785457+00:00",
+  "completedAt": "2026-09-20T01:57:24.785457+00:00",
+  "imageStyleDirectionApproved": true,
+  "imagesAccepted": false,
+  "publicLearningUrl": null,
+  "artifacts": {
+    "html": "html/day43-哑铃、壶铃、固定器械与自重训练.html",
+    "thumbnail": "html/thumbs/day43-dumbbell-kettlebell-machine-bodyweight-thumbnail.png",
+    "detail": "html/assets/阶段2训练科学/day43-哑铃、壶铃、固定器械与自重训练.png",
+    "xhs": "xhs/day43",
+    "archive": "xhs/day43/day43-xhs.zip"
+  },
+  "qualityReview": "runs/day43/verification/quality-review.json",
+  "browserReport": "runs/day43/verification/report.json",
+  "fileVerification": "runs/day43/verification/file-report.json",
+  "localPreview": {
+    "course": "http://127.0.0.1:8420/html/day43-哑铃、壶铃、固定器械与自重训练.html",
+    "xhs": "http://127.0.0.1:8420/xhs/day43/index.html",
+    "server": "127.0.0.1:8420",
+    "scope": "local-only"
+  },
+  "reviewFocus": [
+    "第07页图示（土耳其起立）的支撑与持铃姿势",
+    "第08页图示（固定器械）补齐的机架顶部和整套卡片实际清晰度"
+  ],
+  "nextLessonStarted": false,
+  "nextExpectedDay": 44,
+  "layoutRevision": "templates/study/v1",
+  "templateRevisionApproved": true,
+  "currentRevision": "runs/day43",
+  "revision": "draft-01",
+  "acceptedRevision": null,
+  "acceptedAt": null,
+  "publishApprovalMessage": null,
+  "publishedAt": null,
+  "releaseId": null,
+  "releaseStatus": null,
+  "serverDeployed": false,
+  "publicVerification": "not-attempted",
+  "failure": null,
+  "resumedAt": "2026-09-20T01:40:54.729974+00:00",
+  "resumeAuthorization": "runs/day43/resume-current/authorization.json",
+  "imageProgress": {
+    "generated": 16,
+    "planned": 16
+  }
+}

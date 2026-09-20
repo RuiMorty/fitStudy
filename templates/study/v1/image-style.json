@@ -29,12 +29,13 @@
         1536,
         1024
       ],
-      "pixelDensity": 2
+      "pixelDensity": 2,
+      "composition": "multi-panel overview; each panel independently generated for the overview; do not reuse later knowledge-page art"
     },
     "knowledge": {
       "deliverySize": [
-        1400,
-        450
+        2800,
+        900
       ],
       "ratio": "28:9",
       "text": "none",
@@ -42,7 +43,13 @@
         936,
         240
       ],
-      "prompt": "透明PNG，横向28:9无字知识配图。只解释一个知识点，固定角色及二维画法；必要的两态对照或局部示意横向排列。短边6%安全边距，主体等比缩放，不拉伸、裁掉手足杠铃或用无关物体撑宽。"
+      "prompt": "透明PNG，横向28:9无字知识配图。只解释一个知识点，固定角色及二维画法；必要的两态对照或局部示意横向排列。短边6%安全边距，主体等比缩放，不拉伸、裁掉手足杠铃或用无关物体撑宽。",
+      "logicalCanvas": [
+        1400,
+        450
+      ],
+      "pixelDensity": 2,
+      "allowUpscale": false
     },
     "xhs-export": {
       "deliverySize": [
@@ -163,5 +170,5 @@
     "exampleLayout": "runs/day41/revision-02/overview-layout.json",
     "requiredCheck": "exact terminology, no text overflow, visual check at native and card display sizes"
   },
-  "currentRevision": "revision-02-user-feedback-corrections"
+  "currentRevision": "day42-revision-05-dedicated-overview-panels-full-text-cards"
 }

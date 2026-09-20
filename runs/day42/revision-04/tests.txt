@@ -1,0 +1,23 @@
+✔ local draft strips the automatic public URL from text and archive and never installs shortlinks or site indexes (1676.29075ms)
+✔ draft preflight refuses an unknown existing course before installing any package files (898.065167ms)
+✔ validate the complete course and preserve one point per slide (3.6475ms)
+✔ page count follows point count, not a hard-coded daily total (2.45975ms)
+✔ reject per-day style overrides and invalid content (26.646791ms)
+✔ day changes only labels, never the layout, script or pagination (414.820833ms)
+✔ preserve legacy website sections and use only the new brand image (11.877833ms)
+✔ escape text and never silently truncate content (25.159958ms)
+✔ missing images fail before writing or changing output (1.914125ms)
+✔ transparent image framing retains opaque white pixels and excludes only the empty border (263.524167ms)
+✔ overview items preserve independent text and include their own local assets without adding a slide (134.965542ms)
+✔ protect unrelated output and remove stale generated files on rebuild (21.935083ms)
+✔ canonical delivery separates the catalog cover, lesson image and XHS package (475.339792ms)
+✔ canonical delivery refuses stale content or unknown existing lesson files (34.863ms)
+✔ published HTML never uses the permanently cached unversioned logo URL (22.674709ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2879.479666

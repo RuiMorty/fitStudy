@@ -1,0 +1,45 @@
+{
+  "processedAt": "2026-09-20T02:09:37.140497+00:00",
+  "method": "trim near-transparent noise; reviewed crop; uniform scale; transparent margin",
+  "assets": [
+    {
+      "source": "runs/day43/revision-02/visual-07-machine-supported.png",
+      "sourceSize": [
+        2210,
+        827
+      ],
+      "sourceSha256": "068064cb91d2d08a68a954bd6d5523a951cc04e3905c1389aa9555e3355effad",
+      "reviewedCrop": [
+        0,
+        0,
+        2210,
+        827
+      ],
+      "visibleCrop": [
+        201,
+        17,
+        2077,
+        788
+      ],
+      "output": "runs/day43/assets/visual-07-machine.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1876,
+        771
+      ],
+      "offset": [
+        462,
+        64
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "User requested a visible support for the idle handle. Added a two-post handle cradle, rubber saddles and gussets connected to the existing lower machine rail. Existing figure, feet, cable and machine retained."
+    }
+  ]
+}

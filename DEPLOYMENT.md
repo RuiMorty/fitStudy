@@ -13,7 +13,18 @@ python3 scripts/fitstudy-ssh.py scp runs/day41/release/day41-site.tar.gz fitstud
 
 包装脚本要求服务器密钥已在本机 `known_hosts` 中；不自动接受未知或变更的主机密钥。不要直接执行 askpass 脚本或在终端显示钥匙串密码。
 
-## Day41 当前状态
+## Day42 当前状态
+
+用户已验收 revision-05，并明确要求“OK了，部署吧”。2026-09-18 已完成七文件增量发布，短链为 https://fitstudy.cn/go/42/ 。课程目录最新项为 Day42；公网文件哈希、短链跳转、390px/1440px 目录封面与课程弹窗、正文图片和交互均已验证。当前状态以 `runs/day42/release/status.json` 与 `runs/daily-preview/review.json` 为准。
+
+- 发布编号：`20260918T120927Z-day42`；增量标记：`site/.deploy-day42-current`。
+- 备份目录：`/home/zhaoqr/fitness/.fitstudy-deploy-backups/20260918T120927Z-day42`，位于网站根目录外。
+- 发布清单及脚本：`runs/day42/release/release-manifest.json`、`apply-release.py`；数据包为同目录 `day42-site.tar.gz`。
+- 验证报告：`runs/day42/release/live-files-report.json`、`live-browser-report.json`、`final-verification.json`。
+- 已验收正文、封面、详情图和11张小红书PNG原样保留；本地小红书文案和ZIP已加入真实短链。历史课程和两份本地进度未改，未向小红书平台上传。
+- 回滚只处理本次七个路径，依据该备份目录的旧文件和 `previously-absent.json`；不要使用全站回滚脚本。
+
+## Day41 历史发布
 
 用户已验收 revision-02，并明确授权生成短链及部署服务器。短链为 `https://fitstudy.cn/go/41/`；2026-09-17 已上线，七个公网文件哈希、短链跳转、移动/桌面课程目录和正文交互已通过验证；以 `runs/day41/release/status.json` 为准。发布前再次读取该文件和 `runs/daily-preview/review.json`。
 

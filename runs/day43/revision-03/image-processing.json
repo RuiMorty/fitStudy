@@ -1,0 +1,45 @@
+{
+  "processedAt": "2026-09-20T02:25:57.889317+00:00",
+  "method": "trim near-transparent noise; reviewed crop; uniform scale; transparent margin",
+  "assets": [
+    {
+      "source": "runs/day43/revision-03/reviewed-source/visual-07-machine-side.png",
+      "sourceSize": [
+        2207,
+        712
+      ],
+      "sourceSha256": "88e8339f38f3fe90a0b52842ef41b68434482414202467aebe1aaf974022dc11",
+      "reviewedCrop": [
+        0,
+        0,
+        2207,
+        712
+      ],
+      "visibleCrop": [
+        377,
+        10,
+        1904,
+        696
+      ],
+      "output": "runs/day43/assets/visual-07-machine.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1527,
+        686
+      ],
+      "offset": [
+        636,
+        107
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "User-corrected side view: footplate close to low pulley; unloaded handle hangs below pulley without a support. Corrected the generated front-facing handle locally to a narrow side profile and connected the cable at the wheel rim."
+    }
+  ]
+}

@@ -217,7 +217,7 @@ function slideHtml(slide, index, total, lesson, assets, geometry) {
         : picture(lesson.detailImage, assets, 'overview-image');
       if (slide.note) body += `<p class="overview-note">${escapeHtml(slide.note)}</p>`;
     } else {
-      body += `${framedPicture(slide.image, assets, geometry)}<ul class="blocks">${slide.blocks.map((block) => `<li class="block"><h2>${escapeHtml(block.title)}</h2><ul>${block.bullets.map((bullet) => `<li>${escapeHtml(bullet)}</li>`).join('')}</ul></li>`).join('')}</ul>`;
+      body += `${picture(slide.image, assets, 'visual')}<ul class="blocks">${slide.blocks.map((block) => `<li class="block"><h2>${escapeHtml(block.title)}</h2><ul>${block.bullets.map((bullet) => `<li>${escapeHtml(bullet)}</li>`).join('')}</ul></li>`).join('')}</ul>`;
     }
   }
   return `<article class="slide ${slide.kind === 'cover' ? 'cover' : `content ${slide.kind}`}" data-slide="${index + 1}">${brand(lesson, assets)}<div class="slide-body">${body}</div><footer class="footer"><span>Day ${lesson.day}/112</span><span>${number(index + 1)} / ${number(total)}</span></footer></article>`;

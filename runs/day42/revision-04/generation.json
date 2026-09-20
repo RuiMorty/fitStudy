@@ -1,0 +1,41 @@
+{
+  "model": "gpt-image-2.5-sunburst",
+  "startedAt": "2026-09-18T09:52:31.127081+00:00",
+  "authorization": "用户2026-09-18明确回复：允许，使用灵智生成这4张。仅将封面、卧推过程、卧推保护、独立总览的文字提示词发往 https://lingzhi.agibot.com/v1；不上传项目文件。",
+  "attempts": [
+    {
+      "file": "cover.png",
+      "startedAt": "2026-09-18T09:52:31.127662+00:00",
+      "status": "generated",
+      "completedAt": "2026-09-18T09:53:11.995799+00:00",
+      "returncode": 0,
+      "bytes": 733793
+    },
+    {
+      "file": "visual-03-bench-path.png",
+      "startedAt": "2026-09-18T09:53:11.998559+00:00",
+      "status": "generated",
+      "completedAt": "2026-09-18T09:53:47.273706+00:00",
+      "returncode": 0,
+      "bytes": 553970
+    },
+    {
+      "file": "overview-art.png",
+      "startedAt": "2026-09-18T09:53:47.274269+00:00",
+      "status": "generated",
+      "completedAt": "2026-09-18T09:54:24.508185+00:00",
+      "returncode": 0,
+      "bytes": 581291
+    },
+    {
+      "file": "visual-04-bench-safety.png",
+      "startedAt": "2026-09-18T09:54:24.509191+00:00",
+      "status": "generated",
+      "completedAt": "2026-09-18T09:54:59.411887+00:00",
+      "returncode": 0,
+      "bytes": 717455
+    }
+  ],
+  "status": "batch-complete",
+  "updatedAt": "2026-09-18T09:54:59.412970+00:00"
+}

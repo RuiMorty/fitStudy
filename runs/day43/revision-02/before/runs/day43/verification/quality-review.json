@@ -1,0 +1,43 @@
+{
+  "status": "passed",
+  "reviewedAt": "2026-09-20T01:57:24.785457+00:00",
+  "makerReviewOnly": true,
+  "userAccepted": false,
+  "cardCount": 11,
+  "contactSheets": [
+    "runs/day43/verification/cards-01.jpg",
+    "runs/day43/verification/cards-02.jpg",
+    "runs/day43/verification/cards-03.jpg",
+    "runs/day43/verification/cards-04.jpg",
+    "runs/day43/verification/cards-05.jpg",
+    "runs/day43/verification/cards-06.jpg"
+  ],
+  "checks": [
+    "cover: four training elements visible, no generated text, complete silhouettes",
+    "overview: six dedicated images, separate from knowledge pages; Chinese text fitted and readable",
+    "02: dumbbell grip, seated support and both feet visible",
+    "03: one-hand and one-knee support; row and bench visible",
+    "04: hip-hinge and standing phases, connected kettlebell handles",
+    "05: close front rack shown; no overhead snatch falsely pictured",
+    "06: half-kneeling, same-side raised arm and forward foot",
+    "07: seat, footplate, pin, pulley and cable visible; locally completed cropped machine top",
+    "08: connected cable and stable stance; line direction visible",
+    "09: stable incline surface and band attached to bar and feet",
+    "10: bench-supported unilateral row and continuous barbell compared"
+  ],
+  "imageReview": {
+    "generatedFiles": 16,
+    "rgba": true,
+    "sourceFilesPreserved": true,
+    "automaticPaidRetries": 0,
+    "nativeKnowledgeSources": "approximately 2210x711; fitted without upscaling into the standard 2800x900 transparent canvas",
+    "localCorrection": "runs/day43/verification/local-image-corrections.json",
+    "identityMethod": "text-only character profile plus visual review; no reference images passed to generation API"
+  },
+  "layout": "Shared template unchanged; 936x240 knowledge image slots; 27 blocks and 81 bullets",
+  "mobileReview": "390px course and XHS screenshots inspected; tests passed at 320/390/768/1440px",
+  "userReviewFocus": [
+    "第07页图示（土耳其起立）的支撑与持铃姿势",
+    "第08页图示（固定器械）补齐的机架顶部和整套卡片实际清晰度"
+  ]
+}

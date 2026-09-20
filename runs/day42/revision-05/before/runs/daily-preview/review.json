@@ -1,0 +1,58 @@
+{
+  "status": "awaiting-review",
+  "day": 42,
+  "templateApproved": true,
+  "templateApprovedAt": "2026-09-17T01:53:12.356699+00:00",
+  "templateApprovalMessage": "确认，检验完毕",
+  "templateApprovedFromDay": 40,
+  "publishApproved": false,
+  "startedAt": "2026-09-17T10:03:23.965314+00:00",
+  "input": "runs/day42/lesson.json",
+  "output": "xhs/day42",
+  "previousDraft": {
+    "day": 41,
+    "status": "published",
+    "review": "runs/day42/previous-review.json",
+    "publicLearningUrl": "https://fitstudy.cn/go/41/"
+  },
+  "artifactStatus": "ready-local-draft",
+  "imageStyleSpecification": "templates/study/v1/image-style.md",
+  "imageStylePreset": "templates/study/v1/image-style.json",
+  "userReviewStatus": "awaiting-user-review",
+  "note": "Day42按6项用户反馈完成revision-04本地修订。4张经明确授权的灵智独立生成均成功；09/10装入现有比例修正版；恢复Day41知识图尺寸并验证透明清晰度。15项测试、浏览器交互、11张PNG及ZIP通过。未发布，等待用户验收。",
+  "contentReview": "runs/day42/verification/content-review.json",
+  "imagePrompts": "runs/day42/image-prompts.json",
+  "lastCheckpointAt": "2026-09-18T10:01:49.078953+00:00",
+  "completedAt": "2026-09-18T10:01:49.078953+00:00",
+  "imageStyleDirectionApproved": true,
+  "imagesAccepted": false,
+  "publicLearningUrl": null,
+  "artifacts": {
+    "html": "html/day42-自由重量-上肢杠铃技术.html",
+    "thumbnail": "html/thumbs/day42-upper-body-barbell-technique-thumbnail.png",
+    "detail": "html/assets/阶段2训练科学/day42-自由重量-上肢杠铃技术.png",
+    "xhs": "xhs/day42",
+    "archive": "xhs/day42/day42-xhs.zip"
+  },
+  "qualityReview": "runs/day42/revision-04/quality-review.json",
+  "browserReport": "runs/day42/verification/report.json",
+  "fileVerification": "runs/day42/revision-04/file-report.json",
+  "localPreview": {
+    "course": "http://127.0.0.1:8420/html/day42-%E8%87%AA%E7%94%B1%E9%87%8D%E9%87%8F-%E4%B8%8A%E8%82%A2%E6%9D%A0%E9%93%83%E6%8A%80%E6%9C%AF.html",
+    "xhs": "http://127.0.0.1:8420/xhs/day42/index.html",
+    "comparison": "http://127.0.0.1:8420/runs/day42/revision-04/index.html"
+  },
+  "reviewFocus": [
+    "封面杠与挂钩前后关系",
+    "独立有字总览整体构图",
+    "slide-03/09/10人物比例及slide-04杠铃宽度",
+    "最终卡片中240px图片区大小与清晰度"
+  ],
+  "nextLessonStarted": false,
+  "nextExpectedDay": 43,
+  "layoutRevision": "runs/day42/revision-04",
+  "layoutRevisionRequestedAt": "2026-09-17T11:31:23.538733+00:00",
+  "layoutRevisionRequest": "你试下，并且留白有点多，看这个图能不能弄的别那么挤",
+  "templateRevisionApproved": false,
+  "currentRevision": "runs/day42/revision-04"
+}

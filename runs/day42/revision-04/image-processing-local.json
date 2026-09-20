@@ -1,0 +1,279 @@
+{
+  "processedAt": "2026-09-18T09:53:17.550585+00:00",
+  "method": "trim near-transparent noise; reviewed crop; uniform scale; transparent margin",
+  "assets": [
+    {
+      "source": "runs/day42/raw/visual-02-bench-setup.png",
+      "sourceSize": [
+        2213,
+        711
+      ],
+      "sourceSha256": "dc5d4373173eea1bb33f9b213a6d8692c5401c7ad2143caa8769b4b7fa7ad895",
+      "reviewedCrop": [
+        1320,
+        40,
+        2213,
+        690
+      ],
+      "visibleCrop": [
+        28,
+        69,
+        821,
+        625
+      ],
+      "output": "runs/day42/revision-04/assets/visual-02-bench-setup.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        793,
+        556
+      ],
+      "offset": [
+        1003,
+        172
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "只保留右侧闭合握法局部，排除左侧可能被误读为抬臀的上箭头；原始完整响应保留。"
+    },
+    {
+      "source": "runs/day42/raw/visual-05-bent-row.png",
+      "sourceSize": [
+        2210,
+        711
+      ],
+      "sourceSha256": "affefa918195f0979ce905e408be5c9c64c48e26a17c6ab7d70721defcc2e4fc",
+      "reviewedCrop": [
+        0,
+        0,
+        2210,
+        711
+      ],
+      "visibleCrop": [
+        438,
+        5,
+        1726,
+        706
+      ],
+      "output": "runs/day42/revision-04/assets/visual-05-bent-row.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1288,
+        701
+      ],
+      "offset": [
+        756,
+        99
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day42/raw/visual-06-pendlay.png",
+      "sourceSize": [
+        2207,
+        712
+      ],
+      "sourceSha256": "9c355dff7583445c81f2fea3075e4878020b608b204cd7751f2c60c77b5eed55",
+      "reviewedCrop": [
+        0,
+        0,
+        2207,
+        712
+      ],
+      "visibleCrop": [
+        423,
+        12,
+        1861,
+        683
+      ],
+      "output": "runs/day42/revision-04/assets/visual-06-pendlay.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1438,
+        671
+      ],
+      "offset": [
+        681,
+        114
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day42/raw/visual-07-clean.png",
+      "sourceSize": [
+        2211,
+        711
+      ],
+      "sourceSha256": "578f225c9406645e2cd255b16070b8908067a2ffcbd5a10ea1e34a752e02d738",
+      "reviewedCrop": [
+        0,
+        0,
+        2211,
+        711
+      ],
+      "visibleCrop": [
+        100,
+        6,
+        2129,
+        693
+      ],
+      "output": "runs/day42/revision-04/assets/visual-07-clean.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        2029,
+        687
+      ],
+      "offset": [
+        385,
+        106
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day42/raw/visual-08-push-pull.png",
+      "sourceSize": [
+        2209,
+        712
+      ],
+      "sourceSha256": "6f450131250a686f1a818abe237033655a89fd9d82b546803822d381eff2f257",
+      "reviewedCrop": [
+        0,
+        0,
+        2209,
+        712
+      ],
+      "visibleCrop": [
+        244,
+        5,
+        2060,
+        707
+      ],
+      "output": "runs/day42/revision-04/assets/visual-08-push-pull.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1816,
+        702
+      ],
+      "offset": [
+        492,
+        99
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day42/raw/revision-03/visual-09-symmetry.png",
+      "sourceSize": [
+        1672,
+        940
+      ],
+      "sourceSha256": "c79e9e7e29499b8945ba06811319726bd7bb594ec4d030b298c2e932cdeeb87d",
+      "reviewedCrop": [
+        0,
+        0,
+        1672,
+        940
+      ],
+      "visibleCrop": [
+        292,
+        6,
+        1207,
+        933
+      ],
+      "output": "runs/day42/revision-04/assets/visual-09-symmetry.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        782,
+        792
+      ],
+      "offset": [
+        1009,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day42/raw/revision-03/visual-10-application.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "sourceSha256": "43472211c8d94825b87a3369eacfaac8c9a230166dbc5e346e136faec566b5dc",
+      "reviewedCrop": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "visibleCrop": [
+        270,
+        3,
+        1398,
+        940
+      ],
+      "output": "runs/day42/revision-04/assets/visual-10-application.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        953,
+        792
+      ],
+      "offset": [
+        923,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    }
+  ]
+}

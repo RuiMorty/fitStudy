@@ -1,0 +1,61 @@
+{
+  "day": 42,
+  "revision": "revision-05",
+  "status": "user-accepted-published",
+  "checkedAt": "2026-09-18T12:00:53.389045+00:00",
+  "userAccepted": true,
+  "publishApproved": true,
+  "deployed": true,
+  "generation": {
+    "service": "https://lingzhi.agibot.com/v1",
+    "model": "gpt-image-2.5-sunburst",
+    "requests": 7,
+    "succeeded": 7,
+    "automaticRetries": 0,
+    "record": "runs/day42/revision-05/generation.json"
+  },
+  "resolvedRequests": [
+    {
+      "item": "01总览各格独立生成",
+      "result": "六格布局已恢复；六张专用插图分别请求生成，与后续知识页图片来源及哈希均分开。网站中文有字详情同步使用这组六图。"
+    },
+    {
+      "item": "03恢复卧推架",
+      "result": "全新插画保留两根架柱、两只空J钩、安全臂、架脚和平凳；杠身连续、两端伸出架柱，保持人体自然比例。"
+    },
+    {
+      "item": "10晚间应用含义",
+      "result": "该名称来自课纲晚间复习安排。页面改为实操对照：卧推与划船，写出动作、肌群和稳定提示。"
+    },
+    {
+      "item": "恢复每页文字卡片",
+      "result": "依据已有课程正文，按Day41结构补齐02-10每页三块、每块三条。共27块81条；图片固定936×240，导出无溢出。"
+    }
+  ],
+  "visualReview": {
+    "overview-01": "手部闭合握持、杆连续，作为局部示意保留裁切杆段。",
+    "overview-02": "头端保护，架柱、安全臂、空挂钩与两侧外置配重完整。",
+    "overview-03": "髋部折叠，躯干稳定，肘后移，手在腿外。",
+    "overview-04": "前肩接铃示意，杆在颈根前方，大腿高于水平；小角色在旁观察。",
+    "overview-05": "肘部伸屈两态，统一左侧蓝色袖子局部配色，几何与箭头保留。",
+    "overview-06": "左右配重一致，两段中心到握点距离标线对称。",
+    "slide-03": "完整架内卧推顶部，空挂钩与杆分离；人物和关键器械未裁切。"
+  },
+  "validation": {
+    "browser": "runs/day42/verification/report.json",
+    "requirements": "runs/day42/revision-05/final-validation.json",
+    "filesAndArchive": "runs/day42/revision-05/file-verification.json",
+    "contentScope": "runs/day42/revision-05/scope-audit.json",
+    "protectedFilesUnchanged": 62
+  },
+  "paths": {
+    "comparison": "http://127.0.0.1:8420/runs/day42/revision-05/index.html?r=05",
+    "cards": "xhs/day42/index.html",
+    "zip": "xhs/day42/day42-xhs.zip"
+  },
+  "note": "制作方检查通过与用户验收分开记录；原图、旧版本、局部配色修正均保留。",
+  "acceptedAt": "2026-09-18T12:05:43.287438+00:00",
+  "publishedAt": "2026-09-18T12:11:15.567551+00:00",
+  "releaseId": "20260918T120927Z-day42",
+  "releaseStatus": "runs/day42/release/status.json"
+}

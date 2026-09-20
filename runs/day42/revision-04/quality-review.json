@@ -1,0 +1,54 @@
+{
+  "day": 42,
+  "revision": "revision-04",
+  "status": "local-qa-passed-awaiting-user-review",
+  "checkedAt": "2026-09-18T10:01:49.078953+00:00",
+  "userAccepted": false,
+  "publishApproved": false,
+  "checks": [
+    {
+      "issue": "cover 杠铃嵌入架柱",
+      "result": "重新生成训练前检查场景；杠放在突出J钩，杆与架柱前后关系清楚，杠片位于架柱外。"
+    },
+    {
+      "issue": "有字图由知识图拼接",
+      "result": "独立请求 overview-art.png，以单一整体构图配中文字体排版；不引用知识页插图。去掉两条可能暗示甩腰的弧线箭头。"
+    },
+    {
+      "issue": "slide-03、09、10身体比例",
+      "result": "03重新生成；09、10使用已存在的revision-03比例修正原图，逐图查看并装入最终卡片。"
+    },
+    {
+      "issue": "slide-04杠短于架",
+      "result": "独立重生成；两端袖套和杠片在架柱外，杠与空J钩分离；实际最终卡片已检查。"
+    },
+    {
+      "issue": "知识图太大",
+      "result": "浏览器验证Day41和Day42知识图区全部为936×240；Day42恢复原生img整图等比展示。"
+    },
+    {
+      "issue": "透明图插卡变糊",
+      "result": "对照透明/提前铺底同尺寸浏览器输出：98.172%颜色通道完全一致，最大差1/255；压小到450px后再次放大是主要可确认原因。保留高分辨率原图，避免上采样，正常alpha合成。"
+    }
+  ],
+  "validation": {
+    "unitTests": "15 passed",
+    "browser": "runs/day42/verification/report.json",
+    "geometry": "runs/day42/revision-04/geometry-report.json",
+    "alphaExperiment": "runs/day42/revision-04/alpha-comparison.json",
+    "files": "runs/day42/revision-04/file-report.json"
+  },
+  "limitations": [
+    "固定240px知识图区内的细小手指仍受最终像素数限制；PNG母版用于单独查看。",
+    "图像为二维角色教学示意，需用户最终验收。"
+  ],
+  "artworkRequests": {
+    "service": "https://lingzhi.agibot.com/v1",
+    "model": "gpt-image-2.5-sunburst",
+    "count": 4,
+    "succeeded": 4,
+    "noAutomaticRetry": true,
+    "authorization": "用户明确回复：允许，使用灵智生成这4张"
+  },
+  "deployed": false
+}

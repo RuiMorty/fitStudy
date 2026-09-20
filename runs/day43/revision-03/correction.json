@@ -1,0 +1,17 @@
+{
+  "rejectedRevision": "revision-02",
+  "reason": "Assistant incorrectly added a handle support. User clarified the handle should hang naturally below the low pulley, in side view; footplate should be close to the pulley.",
+  "scope": [
+    "07 knowledge illustration",
+    "image alt text matching the new side view",
+    "exported slide-07.png and archive"
+  ],
+  "layout": "unchanged shared 936x240 slot",
+  "referenceImage": "user annotated screenshot and low pulley close-up; used for visual interpretation only, not sent to generation API",
+  "originalImageRetained": "runs/day43/source/visual-07-machine.png",
+  "generationRequests": 1,
+  "generatedSource": "runs/day43/revision-03/source/visual-07-machine-side.png",
+  "reviewedSource": "runs/day43/revision-03/reviewed-source/visual-07-machine-side.png",
+  "localCorrection": "Removed generated axle connection and frontal V handle; drew the side wheel rim route, swivel and narrow side-profile overlapping grips. The low pulley has its own mounting cheek; the hanging handle has no support.",
+  "checkedAt": "2026-09-20T02:25:57.623301+00:00"
+}

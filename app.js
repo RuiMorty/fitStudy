@@ -70,6 +70,8 @@ publishedPages.set(38, "html/day38-\u73af\u5883\u56e0\u7d20\u4e0e\u8fd0\u52a8\u6
 publishedPages.set(39, "html/day39-\u8fd0\u52a8\u5b66\u4e60\u7684\u4e09\u9636\u6bb5.html");
 publishedPages.set(40, "html/day40-\u53cd\u9988\u4e0e\u52a8\u4f5c\u5b66\u4e60.html");
 publishedPages.set(41, "html/day41-\u81ea\u7531\u91cd\u91cf-\u4e0b\u80a2\u6760\u94c3\u6280\u672f.html");
+publishedPages.set(42, "html/day42-\u81ea\u7531\u91cd\u91cf-\u4e0a\u80a2\u6760\u94c3\u6280\u672f.html");
+publishedPages.set(43, "html/day43-\u54d1\u94c3\u3001\u58f6\u94c3\u3001\u56fa\u5b9a\u5668\u68b0\u4e0e\u81ea\u91cd\u8bad\u7ec3.html");
 
 function latestPublishedDay() {
   return Math.max(0, ...publishedPages.keys());
@@ -117,6 +119,8 @@ const generatedThumbs = new Map([
   [39, "html/thumbs/day39-motor-learning-stages-thumbnail.png"],
   [40, "html/thumbs/day40-feedback-motor-learning-thumbnail.png"],
   [41, "html/thumbs/day41-lower-body-barbell-technique-thumbnail.png"],
+  [42, "html/thumbs/day42-upper-body-barbell-technique-thumbnail.png"],
+  [43, "html/thumbs/day43-dumbbell-kettlebell-machine-bodyweight-thumbnail.png"],
 ]);
 
 const categories = ["全部", "骨关节", "肌肉", "生物力学", "能量系统", "训练技术", "评估纠正", "营养", "模考"];

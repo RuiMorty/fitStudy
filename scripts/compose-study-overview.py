@@ -31,12 +31,28 @@ def main():
 
     label(config['title'], width / 2, 52, 68, width - 128, center=True)
     label(config['subtitle'], width / 2, 138, 32, width - 128, center=True, color='#535963')
+    if config.get('scene'):
+        # A separately commissioned overview illustration, with live font text
+        # beside it. It does not reuse the knowledge-page thumbnails.
+        scene = config['scene']
+        if not 1 <= len(scene['notes']) <= 5 or any(not 1 <= len(item['lines']) <= 2 for item in scene['notes']):
+            raise ValueError('Independent overview allows 1-5 notes, each with 1-2 short lines')
+        art = Image.open(root / scene['image']).convert('RGBA')
+        art = art.crop(art.getchannel('A').getbbox())
+        fitted = ImageOps.contain(art, (940 * scale, 624 * scale), Image.Resampling.LANCZOS)
+        canvas.alpha_composite(fitted, (64 * scale + (940 * scale - fitted.width) // 2, 215 * scale + (624 * scale - fitted.height) // 2))
+        for i, item in enumerate(scene['notes']):
+            y = 226 + i * 126
+            label(item['title'], 1050, y, 38, width - 1114)
+            for j, line in enumerate(item['lines']):
+                label(line, 1050, y + 48 + j * 34, 28, width - 1114, color='#3f4650')
     columns = config.get('columns', 3)
-    rows = math.ceil(len(config['panels']) / columns)
+    panels = [] if config.get('scene') else config['panels']
+    rows = max(1, math.ceil(len(panels) / columns))
     gap, margin, top, bottom = 28, 64, 211, height - 138
     cell_width = (width - margin * 2 - gap * (columns - 1)) / columns
     cell_height = (bottom - top - gap * (rows - 1)) / rows
-    for i, panel in enumerate(config['panels']):
+    for i, panel in enumerate(panels):
         x = margin + (i % columns) * (cell_width + gap)
         y = top + (i // columns) * (cell_height + gap)
         label(panel['title'], x, y, 42, cell_width)

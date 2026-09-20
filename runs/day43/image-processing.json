@@ -1,0 +1,630 @@
+{
+  "processedAt": "2026-09-20T02:25:57.889317+00:00",
+  "method": "trim near-transparent noise; reviewed crop; uniform scale; transparent margin",
+  "assets": [
+    {
+      "source": "runs/day43/source/cover.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "sourceSha256": "146c50ef5ad5d91b65e79f2ee11cb78ec46e5e6d9945b88b3f2c58ae55749895",
+      "reviewedCrop": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "visibleCrop": [
+        40,
+        19,
+        1656,
+        930
+      ],
+      "output": "runs/day43/assets/cover.png",
+      "size": [
+        1600,
+        900
+      ],
+      "subjectSize": [
+        1405,
+        792
+      ],
+      "offset": [
+        97,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day43/source/visual-02-dumbbell-control.png",
+      "sourceSize": [
+        2212,
+        711
+      ],
+      "sourceSha256": "2967c7f634e3f6f0a038c2ec826fbbce775215eac8befebfeb4bb80934168b0c",
+      "reviewedCrop": [
+        0,
+        0,
+        2212,
+        711
+      ],
+      "visibleCrop": [
+        642,
+        8,
+        1544,
+        703
+      ],
+      "output": "runs/day43/assets/visual-02-dumbbell-control.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        902,
+        695
+      ],
+      "offset": [
+        949,
+        102
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day43/source/visual-03-unilateral-row.png",
+      "sourceSize": [
+        2210,
+        712
+      ],
+      "sourceSha256": "3605bd01c96350d8ba4fa3cf5c2f0ba720efc5f806d6a08f159f10a95443c4df",
+      "reviewedCrop": [
+        0,
+        0,
+        2210,
+        712
+      ],
+      "visibleCrop": [
+        496,
+        0,
+        1712,
+        689
+      ],
+      "output": "runs/day43/assets/visual-03-unilateral-row.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1216,
+        689
+      ],
+      "offset": [
+        792,
+        105
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day43/source/visual-04-kettlebell-swing.png",
+      "sourceSize": [
+        2213,
+        711
+      ],
+      "sourceSha256": "d640da94462bc486a88135eaf91f6b9c449aa0135987790befc4c9733178d250",
+      "reviewedCrop": [
+        0,
+        0,
+        2213,
+        711
+      ],
+      "visibleCrop": [
+        273,
+        11,
+        1970,
+        695
+      ],
+      "output": "runs/day43/assets/visual-04-kettlebell-swing.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1697,
+        684
+      ],
+      "offset": [
+        551,
+        108
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day43/source/visual-05-kettlebell-clean.png",
+      "sourceSize": [
+        2207,
+        712
+      ],
+      "sourceSha256": "2eaf7c87ef6b29cdab2eefed3d3bf30fb42bbb13aee70223f54d61bbe5a2b126",
+      "reviewedCrop": [
+        0,
+        0,
+        2207,
+        712
+      ],
+      "visibleCrop": [
+        706,
+        3,
+        1435,
+        701
+      ],
+      "output": "runs/day43/assets/visual-05-kettlebell-clean.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        729,
+        698
+      ],
+      "offset": [
+        1035,
+        101
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day43/source/visual-06-tgu.png",
+      "sourceSize": [
+        2212,
+        711
+      ],
+      "sourceSha256": "c6e075eaf6f6539adae8089b8ed910ec4d27987f5b3b8fd50fae321a21569a24",
+      "reviewedCrop": [
+        0,
+        0,
+        2212,
+        711
+      ],
+      "visibleCrop": [
+        704,
+        6,
+        1520,
+        703
+      ],
+      "output": "runs/day43/assets/visual-06-tgu.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        816,
+        697
+      ],
+      "offset": [
+        992,
+        101
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day43/revision-03/reviewed-source/visual-07-machine-side.png",
+      "sourceSize": [
+        2207,
+        712
+      ],
+      "sourceSha256": "88e8339f38f3fe90a0b52842ef41b68434482414202467aebe1aaf974022dc11",
+      "reviewedCrop": [
+        0,
+        0,
+        2207,
+        712
+      ],
+      "visibleCrop": [
+        377,
+        10,
+        1904,
+        696
+      ],
+      "output": "runs/day43/assets/visual-07-machine.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1527,
+        686
+      ],
+      "offset": [
+        636,
+        107
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "User-corrected side view: footplate close to low pulley; unloaded handle hangs below pulley without a support. Corrected the generated front-facing handle locally to a narrow side profile and connected the cable at the wheel rim."
+    },
+    {
+      "source": "runs/day43/source/visual-08-cable.png",
+      "sourceSize": [
+        2212,
+        711
+      ],
+      "sourceSha256": "fcb90767f5ce19c550603fd3c2ba7302a3c08463656af952acc09c312187f536",
+      "reviewedCrop": [
+        0,
+        0,
+        2212,
+        711
+      ],
+      "visibleCrop": [
+        386,
+        14,
+        1832,
+        678
+      ],
+      "output": "runs/day43/assets/visual-08-cable.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1446,
+        664
+      ],
+      "offset": [
+        677,
+        118
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day43/source/visual-09-bodyweight.png",
+      "sourceSize": [
+        2211,
+        711
+      ],
+      "sourceSha256": "8768b1ee03467b846e911182d44b6dca496b2ac24fdf1b9fa0500890ecedf0e0",
+      "reviewedCrop": [
+        0,
+        0,
+        2211,
+        711
+      ],
+      "visibleCrop": [
+        125,
+        12,
+        2107,
+        682
+      ],
+      "output": "runs/day43/assets/visual-09-bodyweight.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1982,
+        670
+      ],
+      "offset": [
+        409,
+        115
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day43/source/visual-10-row-compare.png",
+      "sourceSize": [
+        2209,
+        712
+      ],
+      "sourceSha256": "85d24defaf4c5be16efebd2fe2ca539889153a38d487ba7536d59744e0a6446a",
+      "reviewedCrop": [
+        0,
+        0,
+        2209,
+        712
+      ],
+      "visibleCrop": [
+        198,
+        0,
+        1961,
+        680
+      ],
+      "output": "runs/day43/assets/visual-10-row-compare.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1763,
+        680
+      ],
+      "offset": [
+        518,
+        110
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day43/source/overview-01-dumbbell.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "0a1fdbe35f5efc2974240ca0a08c583eabf4a78f54ab33246ee56e1bfd00ee6e",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        288,
+        7,
+        1140,
+        1056
+      ],
+      "output": "runs/day43/assets/overview-01-dumbbell.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        852,
+        1049
+      ],
+      "offset": [
+        374,
+        75
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day43/source/overview-02-hinge.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "36a43b9fa8a11815d756190971ef9a8142c6e5af81cae7e7963efa5745b06a0f",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        183,
+        19,
+        1240,
+        1040
+      ],
+      "output": "runs/day43/assets/overview-02-hinge.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1057,
+        1021
+      ],
+      "offset": [
+        271,
+        89
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day43/source/overview-03-kettlebell.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "60d1bd5182252ffe2022a2a63f8a2976d41adca4f58479a2d101f0ee69bdb97a",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        325,
+        11,
+        1178,
+        1073
+      ],
+      "output": "runs/day43/assets/overview-03-kettlebell.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        848,
+        1056
+      ],
+      "offset": [
+        376,
+        72
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day43/source/overview-04-machine.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "724f284c1a28458159774b8c60128464dad510d4775fa09cd3be3036ff652624",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        124,
+        17,
+        1382,
+        1048
+      ],
+      "output": "runs/day43/assets/overview-04-machine.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1258,
+        1031
+      ],
+      "offset": [
+        171,
+        84
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day43/source/overview-05-cable.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "825de1a7c327e918a80e7aafb1a38b34e79de0fc34ba14f0361f139bdac9b8be",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        66,
+        20,
+        1392,
+        1049
+      ],
+      "output": "runs/day43/assets/overview-05-cable.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1326,
+        1029
+      ],
+      "offset": [
+        137,
+        85
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day43/source/overview-06-bodyweight.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "c7415ee74df7fa7a3a9843d66369719302471dc5e64f1c4d88a5fce878115696",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        71,
+        70,
+        1403,
+        1004
+      ],
+      "output": "runs/day43/assets/overview-06-bodyweight.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1332,
+        934
+      ],
+      "offset": [
+        134,
+        133
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    }
+  ]
+}

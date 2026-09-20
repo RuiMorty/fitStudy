@@ -1,0 +1,178 @@
+{
+  "provider": "Lingzhi",
+  "model": "gpt-image-2.5-sunburst",
+  "startedAt": "2026-09-19T10:22:49.907872+00:00",
+  "authorization": "本次健身学习每日生成：Day42 已验收发布；按课纲顺序生成 Day43 本地草稿。用户已授权使用灵智生图；每项仅一次请求，失败不自动重试。",
+  "attempts": [
+    {
+      "file": "cover.png",
+      "role": "cover",
+      "startedAt": "2026-09-19T10:22:49.908306+00:00",
+      "status": "failed-no-retry",
+      "completedAt": "2026-09-19T10:22:50.032286+00:00",
+      "returncode": 1
+    },
+    {
+      "file": "cover.png",
+      "role": "cover",
+      "startedAt": "2026-09-20T01:41:07.095278+00:00",
+      "status": "generated",
+      "authorizationId": "day43-user-continue-2026-09-20T01:40:54.729974+00:00",
+      "completedAt": "2026-09-20T01:41:39.851327+00:00",
+      "returncode": 0,
+      "bytes": 756635
+    },
+    {
+      "file": "visual-02-dumbbell-control.png",
+      "role": "knowledge",
+      "startedAt": "2026-09-20T01:42:08.740721+00:00",
+      "status": "generated",
+      "authorizationId": "day43-user-continue-2026-09-20T01:40:54.729974+00:00",
+      "completedAt": "2026-09-20T01:42:31.464355+00:00",
+      "returncode": 0,
+      "bytes": 440544
+    },
+    {
+      "file": "visual-03-unilateral-row.png",
+      "role": "knowledge",
+      "startedAt": "2026-09-20T01:42:31.465755+00:00",
+      "status": "generated",
+      "authorizationId": "day43-user-continue-2026-09-20T01:40:54.729974+00:00",
+      "completedAt": "2026-09-20T01:42:56.384954+00:00",
+      "returncode": 0,
+      "bytes": 520102
+    },
+    {
+      "file": "visual-04-kettlebell-swing.png",
+      "role": "knowledge",
+      "startedAt": "2026-09-20T01:42:56.386027+00:00",
+      "status": "generated",
+      "authorizationId": "day43-user-continue-2026-09-20T01:40:54.729974+00:00",
+      "completedAt": "2026-09-20T01:43:24.816406+00:00",
+      "returncode": 0,
+      "bytes": 492633
+    },
+    {
+      "file": "visual-05-kettlebell-clean.png",
+      "role": "knowledge",
+      "startedAt": "2026-09-20T01:43:24.817370+00:00",
+      "status": "generated",
+      "authorizationId": "day43-user-continue-2026-09-20T01:40:54.729974+00:00",
+      "completedAt": "2026-09-20T01:43:49.597332+00:00",
+      "returncode": 0,
+      "bytes": 312328
+    },
+    {
+      "file": "visual-06-tgu.png",
+      "role": "knowledge",
+      "startedAt": "2026-09-20T01:43:49.598968+00:00",
+      "status": "generated",
+      "authorizationId": "day43-user-continue-2026-09-20T01:40:54.729974+00:00",
+      "completedAt": "2026-09-20T01:44:13.991747+00:00",
+      "returncode": 0,
+      "bytes": 345392
+    },
+    {
+      "file": "visual-07-machine.png",
+      "role": "knowledge",
+      "startedAt": "2026-09-20T01:44:13.992574+00:00",
+      "status": "generated",
+      "authorizationId": "day43-user-continue-2026-09-20T01:40:54.729974+00:00",
+      "completedAt": "2026-09-20T01:44:43.886605+00:00",
+      "returncode": 0,
+      "bytes": 853651
+    },
+    {
+      "file": "visual-08-cable.png",
+      "role": "knowledge",
+      "startedAt": "2026-09-20T01:44:43.888466+00:00",
+      "status": "generated",
+      "authorizationId": "day43-user-continue-2026-09-20T01:40:54.729974+00:00",
+      "completedAt": "2026-09-20T01:45:08.874043+00:00",
+      "returncode": 0,
+      "bytes": 483254
+    },
+    {
+      "file": "visual-09-bodyweight.png",
+      "role": "knowledge",
+      "startedAt": "2026-09-20T01:45:08.874643+00:00",
+      "status": "generated",
+      "authorizationId": "day43-user-continue-2026-09-20T01:40:54.729974+00:00",
+      "completedAt": "2026-09-20T01:45:33.536473+00:00",
+      "returncode": 0,
+      "bytes": 568148
+    },
+    {
+      "file": "visual-10-row-compare.png",
+      "role": "knowledge",
+      "startedAt": "2026-09-20T01:45:33.537358+00:00",
+      "status": "generated",
+      "authorizationId": "day43-user-continue-2026-09-20T01:40:54.729974+00:00",
+      "completedAt": "2026-09-20T01:45:57.762122+00:00",
+      "returncode": 0,
+      "bytes": 602445
+    },
+    {
+      "file": "overview-01-dumbbell.png",
+      "role": "overview-item",
+      "startedAt": "2026-09-20T01:45:57.763894+00:00",
+      "status": "generated",
+      "authorizationId": "day43-user-continue-2026-09-20T01:40:54.729974+00:00",
+      "completedAt": "2026-09-20T01:46:25.606179+00:00",
+      "returncode": 0,
+      "bytes": 507668
+    },
+    {
+      "file": "overview-02-hinge.png",
+      "role": "overview-item",
+      "startedAt": "2026-09-20T01:46:25.607304+00:00",
+      "status": "generated",
+      "authorizationId": "day43-user-continue-2026-09-20T01:40:54.729974+00:00",
+      "completedAt": "2026-09-20T01:46:54.442773+00:00",
+      "returncode": 0,
+      "bytes": 590824
+    },
+    {
+      "file": "overview-03-kettlebell.png",
+      "role": "overview-item",
+      "startedAt": "2026-09-20T01:46:54.443522+00:00",
+      "status": "generated",
+      "authorizationId": "day43-user-continue-2026-09-20T01:40:54.729974+00:00",
+      "completedAt": "2026-09-20T01:47:22.561854+00:00",
+      "returncode": 0,
+      "bytes": 498290
+    },
+    {
+      "file": "overview-04-machine.png",
+      "role": "overview-item",
+      "startedAt": "2026-09-20T01:47:22.563402+00:00",
+      "status": "generated",
+      "authorizationId": "day43-user-continue-2026-09-20T01:40:54.729974+00:00",
+      "completedAt": "2026-09-20T01:47:57.843312+00:00",
+      "returncode": 0,
+      "bytes": 911696
+    },
+    {
+      "file": "overview-05-cable.png",
+      "role": "overview-item",
+      "startedAt": "2026-09-20T01:47:57.844490+00:00",
+      "status": "generated",
+      "authorizationId": "day43-user-continue-2026-09-20T01:40:54.729974+00:00",
+      "completedAt": "2026-09-20T01:48:29.206957+00:00",
+      "returncode": 0,
+      "bytes": 690242
+    },
+    {
+      "file": "overview-06-bodyweight.png",
+      "role": "overview-item",
+      "startedAt": "2026-09-20T01:48:29.208755+00:00",
+      "status": "generated",
+      "authorizationId": "day43-user-continue-2026-09-20T01:40:54.729974+00:00",
+      "completedAt": "2026-09-20T01:49:00.426201+00:00",
+      "returncode": 0,
+      "bytes": 659943
+    }
+  ],
+  "status": "batch-complete",
+  "updatedAt": "2026-09-20T01:49:00.427615+00:00"
+}

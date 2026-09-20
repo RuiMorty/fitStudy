@@ -1,16 +1,30 @@
 {
   "day": 42,
-  "status": "awaiting-review",
-  "artifactStatus": "ready-local-draft",
-  "completedAt": "2026-09-17T10:17:59.909861+00:00",
+  "status": "published",
+  "artifactStatus": "published",
+  "completedAt": "2026-09-18T12:00:53.389045+00:00",
   "slides": 11,
-  "qualityReview": "runs/day42/verification/quality-review.json",
-  "publishApproved": false,
+  "qualityReview": "runs/day42/revision-05/quality-review.json",
+  "publishApproved": true,
   "paths": {
     "html": "html/day42-自由重量-上肢杠铃技术.html",
     "thumbnail": "html/thumbs/day42-upper-body-barbell-technique-thumbnail.png",
     "detail": "html/assets/阶段2训练科学/day42-自由重量-上肢杠铃技术.png",
     "xhs": "xhs/day42",
     "archive": "xhs/day42/day42-xhs.zip"
-  }
+  },
+  "revision": "revision-05",
+  "imagesAccepted": true,
+  "currentRevision": "runs/day42/revision-05",
+  "note": "用户已验收 revision-05 并授权部署。Day42 七文件增量发布完成，公网哈希、短链、移动/桌面目录及正文交互通过；本地小红书文案和ZIP已加入真实短链。",
+  "userReviewStatus": "accepted",
+  "lastCheckpointAt": "2026-09-18T12:11:15.567551+00:00",
+  "fileVerification": "runs/day42/revision-05/file-verification.json",
+  "imagePrompts": "runs/day42/revision-05/image-prompts.json",
+  "contentReview": "runs/day42/revision-05/content-restoration.json",
+  "publicLearningUrl": "https://fitstudy.cn/go/42/",
+  "publishedAt": "2026-09-18T12:11:15.567551+00:00",
+  "releaseId": "20260918T120927Z-day42",
+  "releaseStatus": "runs/day42/release/status.json",
+  "serverDeployed": true
 }

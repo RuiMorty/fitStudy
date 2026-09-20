@@ -26,11 +26,17 @@ def main():
         if not box:raise ValueError('Empty subject')
         box=(max(0,box[0]-3),max(0,box[1]-3),min(im.width,box[2]+3),min(im.height,box[3]+3))
         width,height=entry['size'];margin=round(min(width,height)*entry.get('margin',.06))
-        fitted=ImageOps.contain(im.crop(box),(width-margin*2,height-margin*2),Image.Resampling.LANCZOS)
+        subject=im.crop(box)
+        fit_size=(width-margin*2,height-margin*2)
+        if entry.get('allowUpscale',True):
+            fitted=ImageOps.contain(subject,fit_size,Image.Resampling.LANCZOS)
+        else:
+            fitted=subject.copy()
+            fitted.thumbnail(fit_size,Image.Resampling.LANCZOS)
         final=Image.new('RGBA',(width,height),(0,0,0,0))
         offset=((width-fitted.width)//2,(height-fitted.height)//2);final.alpha_composite(fitted,offset)
         target.parent.mkdir(parents=True,exist_ok=True);final.save(target)
-        record={'source':entry['source'],'sourceSize':original_size,'sourceSha256':hashlib.sha256(source.read_bytes()).hexdigest(),'reviewedCrop':crop,'visibleCrop':box,'output':entry['output'],'size':[width,height],'subjectSize':list(fitted.size),'offset':offset,'alphaRange':final.getchannel('A').getextrema(),'note':entry.get('note','')}
+        record={'source':entry['source'],'sourceSize':original_size,'sourceSha256':hashlib.sha256(source.read_bytes()).hexdigest(),'reviewedCrop':crop,'visibleCrop':box,'output':entry['output'],'size':[width,height],'subjectSize':list(fitted.size),'offset':offset,'alphaRange':final.getchannel('A').getextrema(),'allowUpscale':entry.get('allowUpscale',True),'note':entry.get('note','')}
         records.append(record)
     output=root/plan['record']
     output.write_text(json.dumps({'processedAt':datetime.now(timezone.utc).isoformat(),'method':'trim near-transparent noise; reviewed crop; uniform scale; transparent margin','assets':records},ensure_ascii=False,indent=2)+'\n')
