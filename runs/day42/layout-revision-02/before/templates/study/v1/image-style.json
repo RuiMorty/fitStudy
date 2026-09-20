@@ -1,0 +1,167 @@
+{
+  "id": "fitstudy-bojji-despa-illustration-v1",
+  "status": "active-character-direction-local-qa-passed-awaiting-user-review",
+  "createdAt": "2026-09-17",
+  "specification": "templates/study/v1/image-style.md",
+  "audit": "runs/style-audit-20260917/index.html",
+  "automationEnforcement": "read-this-preset-before-authorized-generation; daily-review-gate-remains-active",
+  "referenceInputMode": "text-only character profile; official character pages visually inspected; no reference image supplied to generation API",
+  "commonPrompt": "为同一个健身科学教学系列制作配图，使用《国王排名》Ranking of Kings 的波吉 Bojji 与德斯帕 Despa 两位明确可辨识的角色。先固定人物设定：波吉是矮小的男孩，黑色短发、圆脸、大圆眼、小鼻子、小金色三尖王冠、钴蓝色长袖短上衣、细白腰带、白色贴腿长裤、黑色圆头短靴；绝不把他画成长腿成年人或肌肉男。德斯帕是成年男性老师，金色向后梳的短发、细长眼、长鼻、上唇两撇细小金色胡须，穿红褐色及膝长外套、白色毛领、细金色门襟、浅米色裤子、深色短靴；不是金发长发剑士多玛斯，不要山羊胡。两位都是男性。复现人物辨识特征，衣服、发型、配色在所有小图中保持一致。\n统一使用清爽的二维动漫教材插画，圆润简洁的深灰细轮廓、平涂色块、极少柔和阴影，原作般简练亲切的面部。不要半写实3D、照片感、油亮皮肤、肌肉雕塑、厚涂或商业广告光影。用清楚的蓝绿细箭头和极少橙色提示解释动作关系，器械简化但结构正确。角色可以在不同示意中重复出现，但每个场景仅波吉和德斯帕，不添加其他人物。\n画布外围和所有未绘制区域要求真实透明背景，输出PNG alpha；无纸张底色、灰底、蓝底、渐变底、棋盘格图案、地板、摄影棚、装饰飘带、外框、贴纸白边、投影。角色的白裤子和德斯帕白毛领仍保留不透明白色。所有关键结构距离画布边缘至少6%，全身、杠和必要箭头完整。无作品Logo、无水印、无额外装饰文字。\n持续保持上述角色和二维线条风格。教学对象可按知识点选择波吉或德斯帕，但不出现其他人物。只画一个知识点，不用装饰布景。每张源图真实透明底，文字仅在明确允许时出现；其余绝对无汉字、英文字母或数字。宽幅横向构图，关键内容横向排列，全部轮廓完整，避免过多空白。",
+  "roles": {
+    "cover": {
+      "deliverySize": [
+        1600,
+        900
+      ],
+      "ratio": "16:9",
+      "text": "none",
+      "prompt": "透明PNG，横向16:9无字封面。波吉和德斯帕围绕一个核心知识主题，保留完整人物和器械及必要解释细节；安全边距按短边6%控制。无标题、文字、数字、品牌、外框。"
+    },
+    "detail": {
+      "deliverySize": [
+        3072,
+        2048
+      ],
+      "ratio": "3:2",
+      "text": "font-rendered-simplified-chinese-from-reviewed-json",
+      "prompt": "只生成无字透明人物或局部知识示意，保持固定角色、二维线条和平涂色。最终中文详情图用统一字体独立排版，AI图片不生成任何汉字、字母、数字。按知识关系组织大图、局部或对照；动作、杠身连续性和器械连接必须清楚。",
+      "logicalCanvas": [
+        1536,
+        1024
+      ],
+      "pixelDensity": 2
+    },
+    "knowledge": {
+      "deliverySize": [
+        1400,
+        450
+      ],
+      "ratio": "28:9",
+      "text": "none",
+      "targetSlot": [
+        936,
+        240
+      ],
+      "prompt": "透明PNG，横向28:9无字知识配图。只解释一个知识点，固定角色及二维画法；必要的两态对照或局部示意横向排列。短边6%安全边距，主体等比缩放，不拉伸、裁掉手足杠铃或用无关物体撑宽。"
+    },
+    "xhs-export": {
+      "deliverySize": [
+        1080,
+        1440
+      ],
+      "ratio": "3:4",
+      "renderMode": "existing-common-template",
+      "prompt": null
+    }
+  },
+  "references": [
+    {
+      "role": "historical-cover",
+      "file": "html/thumbs/day02-bony-landmarks-thumbnail.png",
+      "use": "历史信息结构参考，不作为当前人物画风要求；解剖主图与细节的关系"
+    },
+    {
+      "role": "historical-cover",
+      "file": "html/thumbs/day17-biomechanical-movement-patterns-thumbnail.png",
+      "use": "历史信息结构参考，不作为当前人物画风要求；动作与解释图结合，允许适度写实人物"
+    },
+    {
+      "role": "historical-cover",
+      "file": "html/thumbs/day21-week3-biomechanics-review-thumbnail.png",
+      "use": "历史信息结构参考，不作为当前人物画风要求；动作、受力和脊柱关系"
+    },
+    {
+      "role": "historical-detail",
+      "file": "html/assets/阶段1基础科学/day05-动作平面与运动轴.png",
+      "use": "历史信息结构参考，不作为当前人物画风要求；黑色文字与蓝绿橙关系标示"
+    },
+    {
+      "role": "historical-detail",
+      "file": "html/assets/阶段1基础科学/day12-主要肌群-核心肌群与McGill核心功能分类.png",
+      "use": "历史信息结构参考，不作为当前人物画风要求；主图、局部信息与浅色分区"
+    },
+    {
+      "role": "historical-detail",
+      "file": "html/assets/阶段2训练科学/day29-训练适应基本原则.png",
+      "use": "历史信息结构参考，不作为当前人物画风要求；抽象原则的关系图；不照抄字号"
+    },
+    {
+      "role": "historical-detail",
+      "file": "html/assets/阶段2训练科学/day32-心血管与呼吸系统解剖.png",
+      "use": "历史信息结构参考，不作为当前人物画风要求；系统结构与路径"
+    },
+    {
+      "role": "historical-knowledge",
+      "file": "xhs/day17/ai-visuals/visual-07-lower-body-patterns.png",
+      "use": "历史信息结构参考，不作为当前人物画风要求；关节与动作解释；不照抄原始比例"
+    },
+    {
+      "role": "historical-knowledge",
+      "file": "xhs/day29/ai-visuals/visual-02-specificity.png",
+      "use": "历史信息结构参考，不作为当前人物画风要求；单一主题与横幅交付先例；不照抄源图大幅留白"
+    }
+  ],
+  "requiredPromptFields": [
+    "role",
+    "topic",
+    "teachingRelationship",
+    "composition",
+    "allowedText",
+    "anatomyAndTechniqueConstraints"
+  ],
+  "reviewRequired": [
+    "true-alpha-and-opaque-white-clothing",
+    "canvas-and-subject-scale",
+    "same-character-features-and-2d-style",
+    "text-and-brand",
+    "anatomy-and-technique",
+    "actual-template-export",
+    "continuous-bar-and-correct-front-back-occlusion",
+    "bar-sleeve-plate-connection-in-every-phase",
+    "explain-or-remove-all-markers",
+    "font-rendered-exact-chinese-text"
+  ],
+  "retryPolicy": "no-automatic-paid-retry",
+  "historicalReplacement": "not-authorized-by-this-audit",
+  "updatedAt": "2026-09-17T03:09:25.529178+00:00",
+  "authorization": "完成41的任务；按波吉与德斯帕方向完成本课本地整包",
+  "background": "true-alpha-transparent; white clothing remains opaque",
+  "characterProfile": {
+    "Bojji": "矮小男孩，黑短发、小金冠、钴蓝上衣、白腰带白裤、黑短靴",
+    "Despa": "成年男性，金色后梳短发、细胡须、红褐外套、白毛领、米色裤、深色短靴"
+  },
+  "activeCharacterPreset": "runs/day41/revision-02/image-prompts.json",
+  "currentDeliveryManifest": "xhs/day41/manifest.json",
+  "qualityReview": "runs/day41/revision-02/quality-review.json",
+  "historicalProposal": "runs/style-audit-20260917/image-style-proposal.json",
+  "sourceRetention": "raw responses and prior versions retained; processed assets stored separately",
+  "padding": {
+    "measurement": "6% of canvas short edge on every side, uniform scale",
+    "knowledgePixels": 27,
+    "detailPixels": 61
+  },
+  "scientificDiagramPolicy": "允许同配色二维局部示意，位置关系必须准确，明确区分示意图与按比例解剖图；不可用角色比例定义人体标准",
+  "nextLessonGeneration": "requires existing daily review gate to permit it; no automatic expansion from Day41 completion",
+  "currentVisualReferences": [
+    {
+      "role": "cover",
+      "file": "html/thumbs/day41-lower-body-barbell-technique-thumbnail.png"
+    },
+    {
+      "role": "detail",
+      "file": "html/assets/阶段2训练科学/day41-自由重量-下肢杠铃技术.png"
+    },
+    {
+      "role": "knowledge",
+      "file": "xhs/day41/ai-visuals/visual-04-front-squat.png"
+    }
+  ],
+  "textRenderingPolicy": {
+    "generation": "no text in AI art",
+    "finalOverview": "font-rendered approved text from JSON",
+    "renderer": "scripts/compose-study-overview.py",
+    "exampleLayout": "runs/day41/revision-02/overview-layout.json",
+    "requiredCheck": "exact terminology, no text overflow, visual check at native and card display sizes"
+  },
+  "currentRevision": "revision-02-user-feedback-corrections"
+}

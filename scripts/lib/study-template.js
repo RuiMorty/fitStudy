@@ -7,6 +7,7 @@ const { execFileSync } = require('node:child_process');
 const ROOT = path.resolve(__dirname, '../..');
 const TEMPLATE = path.join(ROOT, 'templates/study/v1');
 const VERSION = 'study-day29-v1';
+const LAYOUT_REVISION = 'xhs-layout-20260917-v2';
 const LOGO = 'html/assets/fitness-study-logo-open-circle.svg';
 const LOGO_CACHE_BUST = crypto.createHash('sha256').update(fs.readFileSync(path.join(ROOT, LOGO))).digest('hex').slice(0, 12);
 const PUBLIC_ORIGIN = 'https://fitstudy.cn';
@@ -94,9 +95,20 @@ function validateLesson(lesson) {
   text(social.subtitle, 80, 'xhs.subtitle');
   texts(social.chips, 1, 3, 24, 'xhs.chips');
   if (social.overview) {
-    object(social.overview, ['title', 'lead'], 'xhs.overview');
+    object(social.overview, ['title', 'lead', 'items', 'note'], 'xhs.overview');
     text(social.overview.title, 30, 'xhs.overview.title');
     text(social.overview.lead, 100, 'xhs.overview.lead');
+    if (social.overview.items) {
+      array(social.overview.items, 2, 6, 'xhs.overview.items');
+      social.overview.items.forEach((item, i) => {
+        const field = `xhs.overview.items[${i}]`;
+        object(item, ['title', 'description', 'image'], field);
+        text(item.title, 16, `${field}.title`);
+        text(item.description, 34, `${field}.description`);
+        image(item.image, `${field}.image`);
+      });
+    }
+    if (social.overview.note !== undefined) text(social.overview.note, 90, 'xhs.overview.note');
   }
   array(social.points, 1, 18, 'xhs.points');
   social.points.forEach((point, i) => {
@@ -123,7 +135,23 @@ function buildSlides(lesson) {
 function icon(name) {
   return `<svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${lucide[name].map(([tag, attributes]) => `<${tag} ${Object.entries(attributes).map(([key, value]) => `${key}="${escapeHtml(value)}"`).join(' ')} />`).join('')}</svg>`;
 }
-function imagePaths(lesson) { return [...new Set([LOGO, lesson.cover.src, lesson.detailImage.src, ...lesson.xhs.points.map((point) => point.image.src)])]; }
+function socialImages(lesson) { return [...lesson.xhs.points.map((point) => point.image), ...(lesson.xhs.overview?.items || []).map((item) => item.image)]; }
+function imagePaths(lesson) { return [...new Set([LOGO, lesson.cover.src, lesson.detailImage.src, ...socialImages(lesson).map((value) => value.src)])]; }
+const geometryCache = new Map();
+function imageGeometry(images) {
+  const sources = [...new Set(images.map((value) => value.src))];
+  const entries = sources.map((source) => {
+    const filename = path.join(ROOT, source);
+    const hash = crypto.createHash('sha256').update(fs.readFileSync(filename)).digest('hex');
+    return { source, filename, key: `${source}:${hash}` };
+  });
+  const missing = entries.filter((entry) => !geometryCache.has(entry.key));
+  if (missing.length) {
+    const values = JSON.parse(execFileSync('python3', [path.join(ROOT, 'scripts/study-image-bounds.py')], { input: JSON.stringify(missing.map((entry) => entry.filename)), encoding: 'utf8' }));
+    missing.forEach((entry, i) => geometryCache.set(entry.key, values[i]));
+  }
+  return new Map(entries.map((entry) => [entry.source, geometryCache.get(entry.key)]));
+}
 function createAssets(lesson, output) {
   const assets = new Map();
   fs.mkdirSync(path.join(output, 'assets'), { recursive: true });
@@ -136,6 +164,10 @@ function createAssets(lesson, output) {
   return assets;
 }
 function picture(value, assets, className = '', prefix = '') { return `<img class="${className}" src="${prefix}${assets.get(value.src)}" alt="${escapeHtml(value.alt)}">`; }
+function framedPicture(value, assets, geometry, className = 'visual') {
+  const { size, viewBox } = geometry.get(value.src);
+  return `<svg class="${className}" xmlns="http://www.w3.org/2000/svg" viewBox="${viewBox.join(' ')}" role="img" aria-label="${escapeHtml(value.alt)}" preserveAspectRatio="xMidYMid meet"><image href="${escapeHtml(assets.get(value.src))}" width="${size[0]}" height="${size[1]}" /></svg>`;
+}
 function brand(lesson, assets, prefix = '') { return `<div class="brand"><img src="${prefix}${logoHref(assets.get(LOGO))}" alt="Logo"><span>${escapeHtml(lesson.cert)}</span></div>`; }
 function logoHref(logo) { return logo && /(?:fitness-study-logo-open-circle|logo)\.svg$/.test(logo) ? `${logo}?v=${LOGO_CACHE_BUST}` : logo; }
 function publicShortlink(lesson) { return `${PUBLIC_ORIGIN}/go/${lesson.day}/`; }
@@ -173,18 +205,26 @@ function courseHtml(lesson, assets) {
   const body = `<main><header class="header"><h1>Day ${lesson.day} · ${escapeHtml(lesson.title)}</h1><p class="sub">${escapeHtml(lesson.subtitle)}</p><div class="meta">${lesson.chips.map((chip) => `<span class="chip">${escapeHtml(chip)}</span>`).join('')}</div></header><section class="panel green"><h2>一句话总结</h2><p class="takeaway">${escapeHtml(lesson.summary)}</p></section><figure class="figure"><button data-zoom aria-label="放大详情图">${picture(lesson.detailImage, assets)}<span class="icon-button">${icon('Expand')}</span></button><figcaption class="caption">${escapeHtml(lesson.detailCaption)}</figcaption></figure><section class="panel"><h2>核心要点</h2><ul class="kp">${knowledge}</ul></section><section class="warn"><h2>常见误区</h2>${lesson.mistakes.map((mistake) => `<p><strong class="misconception">误区：${escapeHtml(mistake.wrong)}</strong><br>辨析：${escapeHtml(mistake.right)}</p>`).join('')}</section><section class="mnemonic"><h2>记忆口诀</h2><p><strong>${escapeHtml(lesson.mnemonic)}</strong></p></section><section class="panel"><h2>翻转卡复习</h2><div class="cards">${cards}</div></section><section class="panel orange"><h2>实操关联</h2><ul class="practice">${lesson.practice.map((item) => `<li>${escapeHtml(item)}</li>`).join('')}</ul></section><section class="panel blue"><h2>练习题</h2>${quizzes}</section><footer>Day ${lesson.day}/112 · ${escapeHtml(lesson.cert)}<ul>${lesson.sources.map((source) => `<li>${escapeHtml(source)}</li>`).join('')}</ul></footer></main><dialog aria-label="详情大图"><button class="icon-button" aria-label="关闭大图" title="关闭大图">${icon('X')}</button><img alt=""></dialog>`;
   return documentHtml(`Day ${lesson.day} · ${lesson.title}`, read('course.css'), body, read('course.js'), assets.get(LOGO));
 }
-function slideHtml(slide, index, total, lesson, assets) {
+function slideHtml(slide, index, total, lesson, assets, geometry) {
   let body;
   if (slide.kind === 'cover') {
     body = `${picture(lesson.cover, assets, 'cover-image')}<div class="cover-copy"><div class="daymark">Day ${lesson.day}</div><h1>${escapeHtml(lesson.xhs.coverTitle)}</h1><p class="subtitle">${escapeHtml(lesson.xhs.subtitle)}</p><div class="chips">${lesson.xhs.chips.map((chip) => `<span>${escapeHtml(chip)}</span>`).join('')}</div></div>`;
   } else {
     body = `<div class="rule"></div><div class="eyebrow">${number(index)}</div><h1>${escapeHtml(slide.title)}</h1><p class="lead">${escapeHtml(slide.lead)}</p>`;
-    body += slide.kind === 'overview' ? picture(lesson.detailImage, assets, 'overview-image') : `${picture(slide.image, assets, 'visual')}<ul class="blocks">${slide.blocks.map((block) => `<li class="block"><h2>${escapeHtml(block.title)}</h2><ul>${block.bullets.map((bullet) => `<li>${escapeHtml(bullet)}</li>`).join('')}</ul></li>`).join('')}</ul>`;
+    if (slide.kind === 'overview') {
+      body += slide.items
+        ? `<div class="overview-grid">${slide.items.map((item) => `<section class="overview-item"><h2>${escapeHtml(item.title)}</h2><p>${escapeHtml(item.description)}</p>${framedPicture(item.image, assets, geometry, 'overview-art')}</section>`).join('')}</div>`
+        : picture(lesson.detailImage, assets, 'overview-image');
+      if (slide.note) body += `<p class="overview-note">${escapeHtml(slide.note)}</p>`;
+    } else {
+      body += `${framedPicture(slide.image, assets, geometry)}<ul class="blocks">${slide.blocks.map((block) => `<li class="block"><h2>${escapeHtml(block.title)}</h2><ul>${block.bullets.map((bullet) => `<li>${escapeHtml(bullet)}</li>`).join('')}</ul></li>`).join('')}</ul>`;
+    }
   }
   return `<article class="slide ${slide.kind === 'cover' ? 'cover' : `content ${slide.kind}`}" data-slide="${index + 1}">${brand(lesson, assets)}<div class="slide-body">${body}</div><footer class="footer"><span>Day ${lesson.day}/112</span><span>${number(index + 1)} / ${number(total)}</span></footer></article>`;
 }
 function slidesHtml(lesson, assets, slides) {
-  const body = `<main class="slide-deck">${slides.map((slide, i) => `<div class="slide-frame">${slideHtml(slide, i, slides.length, lesson, assets)}</div>`).join('')}</main>`;
+  const geometry = imageGeometry(socialImages(lesson));
+  const body = `<main class="slide-deck">${slides.map((slide, i) => `<div class="slide-frame">${slideHtml(slide, i, slides.length, lesson, assets, geometry)}</div>`).join('')}</main>`;
   const script = `if (new URLSearchParams(location.search).has('export')) document.documentElement.classList.add('export'); else document.querySelectorAll('.slide-frame').forEach(frame => { const resize = () => frame.style.setProperty('--slide-scale', frame.clientWidth / 1080); new ResizeObserver(resize).observe(frame); resize(); });`;
   return documentHtml(lesson.xhs.coverTitle, read('slides.css'), body, script, assets.get(LOGO));
 }
@@ -212,7 +252,7 @@ function buildPackage(lesson, output) {
   fs.writeFileSync(path.join(output, 'index.html'), previewHtml(lesson, assets));
   fs.writeFileSync(path.join(output, 'xhs/index.html'), slidesHtml(lesson, new Map([...assets].map(([source, target]) => [source, `../${target}`])), slides));
   for (const field of ['title', 'caption', 'tags']) fs.writeFileSync(path.join(output, `xhs/${field}.txt`), `${field === 'tags' ? lesson.xhs.tags.map((tag) => `#${tag.replace(/^#/, '')}`).join(' ') : field === 'caption' ? captionText(lesson) : lesson.xhs[field]}\n`);
-  const manifest = { template: VERSION, id: lesson.id, day: lesson.day, status: 'html-ready', slides: slides.length, dimensions: [1080, 1440], files: ['lesson.html', 'index.html', 'xhs/index.html', 'xhs/title.txt', 'xhs/caption.txt', 'xhs/tags.txt'], assets: Object.fromEntries(assets) };
+  const manifest = { template: VERSION, layoutRevision: LAYOUT_REVISION, id: lesson.id, day: lesson.day, status: 'html-ready', slides: slides.length, dimensions: [1080, 1440], files: ['lesson.html', 'index.html', 'xhs/index.html', 'xhs/title.txt', 'xhs/caption.txt', 'xhs/tags.txt'], assets: Object.fromEntries(assets) };
   fs.writeFileSync(path.join(output, 'manifest.json'), `${JSON.stringify(manifest, null, 2)}\n`);
   return manifest;
 }
@@ -235,7 +275,7 @@ function sitePaths(lesson) {
 function installPackage(lesson, stagedOutput, root = ROOT) {
   const paths = sitePaths(lesson);
   const staged = JSON.parse(fs.readFileSync(path.join(stagedOutput, 'manifest.json'), 'utf8'));
-  if (staged.status !== 'ready' || staged.template !== VERSION || staged.id !== lesson.id || staged.day !== lesson.day || staged.slides !== buildSlides(lesson).length) fail('package', 'a complete matching rendered package is required');
+  if (staged.status !== 'ready' || staged.template !== VERSION || staged.layoutRevision !== LAYOUT_REVISION || staged.id !== lesson.id || staged.day !== lesson.day || staged.slides !== buildSlides(lesson).length) fail('package', 'a complete matching rendered package is required');
   const stagedSocialAssets = new Map(Object.entries(staged.assets).map(([source, target]) => [source, `../${target}`]));
   if (fs.readFileSync(path.join(stagedOutput, 'xhs/index.html'), 'utf8') !== slidesHtml(lesson, stagedSocialAssets, buildSlides(lesson))) fail('package', 'XHS content or template changed; render again before installing');
   const writes = new Map();
@@ -267,6 +307,9 @@ function installPackage(lesson, stagedOutput, root = ROOT) {
     const suffix = path.basename(point.image.src, path.extname(point.image.src)).replace(/^visual-\d+-/, '');
     addSocialAsset(point.image.src, `visual-${number(index + 2)}-${suffix}.png`);
   });
+  (lesson.xhs.overview?.items || []).forEach((item, index) => {
+    if (!socialAssets.has(item.image.src)) addSocialAsset(item.image.src, `overview-${number(index + 1)}.png`);
+  });
   writes.set(paths.html, Buffer.from(courseHtml(lesson, courseAssets)));
   writes.set(`${paths.xhs}/index.html`, Buffer.from(slidesHtml(lesson, socialAssets, buildSlides(lesson))));
   for (const filename of ['title.txt', 'caption.txt', 'tags.txt', ...Array.from({ length: staged.slides }, (_, i) => `${i === 0 ? 'cover' : `slide-${number(i)}`}.png`)]) {
@@ -287,7 +330,7 @@ function installPackage(lesson, stagedOutput, root = ROOT) {
   }
   if (fs.existsSync(path.join(root, paths.archive)) && !owned.has(paths.archive)) fail('output', `refusing to overwrite ${paths.archive}`);
   fs.mkdirSync(path.join(root, paths.xhs), { recursive: true });
-  const manifest = { template: VERSION, layout: 'site', id: lesson.id, day: lesson.day, status: 'installing', slides: staged.slides, dimensions: staged.dimensions, paths, files: [...writes.keys(), paths.archive] };
+  const manifest = { template: VERSION, layoutRevision: LAYOUT_REVISION, layout: 'site', id: lesson.id, day: lesson.day, status: 'installing', slides: staged.slides, dimensions: staged.dimensions, paths, files: [...writes.keys(), paths.archive] };
   fs.writeFileSync(previousPath, `${JSON.stringify(manifest, null, 2)}\n`);
   try {
     for (const [relative, bytes] of writes) {
@@ -314,6 +357,9 @@ async function checkSlideLayout(page) {
   await page.evaluate(async () => {
     await document.fonts.ready;
     await Promise.all([...document.images].map((image) => image.decode()));
+    await Promise.all([...document.querySelectorAll('svg image')].map((element) => {
+      const image = new Image(); image.src = element.getAttribute('href'); return image.decode();
+    }));
   });
   const errors = await page.evaluate(() => {
     const errors = [];
@@ -321,7 +367,7 @@ async function checkSlideLayout(page) {
       const label = `slide ${slide.dataset.slide}`;
       const footer = slide.querySelector('.footer').getBoundingClientRect();
       const rect = slide.getBoundingClientRect();
-      slide.querySelectorAll('.slide-body h1,.slide-body h2,.slide-body p,.slide-body li,.slide-body img,.chips').forEach((element) => {
+      slide.querySelectorAll('.slide-body h1,.slide-body h2,.slide-body p,.slide-body li,.slide-body img,.slide-body svg,.chips').forEach((element) => {
         const box = element.getBoundingClientRect();
         if (box.bottom > footer.top - 16 || box.left < rect.left || box.right > rect.right) errors.push(`${label}: ${element.className || element.tagName} overlaps footer or leaves page`);
         if (element.scrollWidth > element.clientWidth + 2) errors.push(`${label}: horizontal text overflow`);
@@ -334,7 +380,14 @@ async function checkSlideLayout(page) {
           if (text.bottom > box.bottom || text.right > box.right) errors.push(`${label}: text outside block`);
         });
       });
-      if (slide.classList.contains('overview') && slide.querySelector('.lead').getBoundingClientRect().bottom + 16 > slide.querySelector('.overview-image').getBoundingClientRect().top) errors.push(`${label}: overview heading overlaps image`);
+      if (slide.classList.contains('overview') && slide.querySelector('.lead').getBoundingClientRect().bottom + 16 > slide.querySelector('.overview-grid,.overview-image').getBoundingClientRect().top) errors.push(`${label}: overview heading overlaps image`);
+      slide.querySelectorAll('.overview-item').forEach((item) => {
+        const box = item.getBoundingClientRect();
+        item.querySelectorAll('h2,p,svg').forEach((element) => {
+          const child = element.getBoundingClientRect();
+          if (child.bottom > box.bottom + 1 || child.right > box.right + 1) errors.push(`${label}: overview content outside item`);
+        });
+      });
     });
     return errors;
   });

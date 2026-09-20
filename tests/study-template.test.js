@@ -4,6 +4,7 @@ const fs = require('node:fs');
 const os = require('node:os');
 const path = require('node:path');
 const crypto = require('node:crypto');
+const { execFileSync } = require('node:child_process');
 const { ROOT, validateLesson, buildSlides, buildPackage, sitePaths, installPackage } = require('../scripts/lib/study-template');
 const sample = () => JSON.parse(fs.readFileSync(path.join(ROOT, 'runs/day40/lesson.json'), 'utf8'));
 function temporary(t) {
@@ -83,6 +84,34 @@ test('missing images fail before writing or changing output', (t) => {
   const output = temporary(t);
   assert.throws(() => buildPackage(lesson, output), /missing missing.png/);
   assert.deepEqual(fs.readdirSync(output), []);
+});
+test('transparent image framing retains opaque white pixels and excludes only the empty border', (t) => {
+  const output = temporary(t), transparent = path.join(output, 'transparent.png'), opaque = path.join(output, 'opaque.png');
+  execFileSync('python3', ['-c', 'from PIL import Image,ImageDraw; import sys; im=Image.new("RGBA",(100,100)); ImageDraw.Draw(im).rectangle((30,20,69,79),fill="white"); im.putpixel((1,1),(255,255,255,4)); im.save(sys.argv[1]); Image.new("RGB",(100,100),"white").save(sys.argv[2])', transparent, opaque]);
+  const before = fs.readFileSync(transparent);
+  const geometry = JSON.parse(execFileSync('python3', [path.join(ROOT, 'scripts/study-image-bounds.py')], { input: JSON.stringify([transparent, opaque]), encoding: 'utf8' }));
+  assert.deepEqual(geometry, [
+    { size: [100, 100], viewBox: [28, 18, 44, 64] },
+    { size: [100, 100], viewBox: [0, 0, 100, 100] },
+  ]);
+  assert.ok(before.equals(fs.readFileSync(transparent)), 'framing must not resample the source image');
+});
+test('overview items preserve independent text and include their own local assets without adding a slide', (t) => {
+  const lesson = withExistingImages(), extra = sample().detailImage;
+  lesson.xhs.overview.items = [
+    { title: '独立标题', description: '独立说明', image: lesson.xhs.points[0].image },
+    { title: '<图示>', description: '第二项说明', image: extra },
+  ];
+  lesson.xhs.overview.note = '统一说明';
+  const output = temporary(t), manifest = buildPackage(lesson, output);
+  const html = fs.readFileSync(path.join(output, 'xhs/index.html'), 'utf8');
+  assert.ok(manifest.assets[extra.src]);
+  assert.equal(manifest.slides, lesson.xhs.points.length + 2);
+  assert.equal((html.match(/class="overview-item"/g) || []).length, 2);
+  assert.match(html, /<h2>&lt;图示&gt;<\/h2>/);
+  assert.match(html, /<svg class="overview-art"[^>]+viewBox=/);
+  lesson.xhs.overview.items[0].width = 500;
+  assert.throws(() => validateLesson(lesson), /unsupported field/);
 });
 test('protect unrelated output and remove stale generated files on rebuild', (t) => {
   const output = temporary(t), note = path.join(output, 'notes.txt');

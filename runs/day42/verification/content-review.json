@@ -1,0 +1,31 @@
+{
+  "status": "reviewed",
+  "syllabus": "fitness_syllabus.md Day42",
+  "coverage": [
+    "卧推握距、起桥、触胸、腿部驱动与受训保护者",
+    "传统与Pendlay划船、躯干角度与中立控制",
+    "力量翻一次拉、二次拉与接铃；补充全身动作归类",
+    "推拉肩肘动作、肌群与共同稳定",
+    "左右不对称的条件复核与训练调整",
+    "晚间卧推与划船主动肌和拮抗关系对照"
+  ],
+  "unitTests": {
+    "command": "NODE_PATH=/Users/agiuser/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules node --test tests/study-template.test.js tests/study-draft.test.js",
+    "passed": 13,
+    "failed": 0
+  },
+  "schema": "passed",
+  "knowledgePoints": 8,
+  "xhsKnowledgePages": 8,
+  "xhsApplicationPages": 1,
+  "expectedSlides": 11,
+  "technicalClarifications": [
+    "拇指绕杠，起桥不抬臀，腿驱动不弹胸",
+    "安全杆按本人姿势空杆实测，受训保护者站头端",
+    "Pendlay每次落地停稳，起点依器材与个体条件调整",
+    "Power clean接铃大腿高于水平，清楚区分full clean",
+    "二次拉衔接过渡；接铃前肩承托而非手腕悬托",
+    "肌群拮抗不等于关闭；杠倾斜不直接诊断弱侧"
+  ],
+  "publication": "local draft only; no public learning URL"
+}

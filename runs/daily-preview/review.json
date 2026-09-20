@@ -1,91 +1,55 @@
 {
-  "status": "published",
-  "day": 41,
+  "status": "generating",
+  "day": 42,
   "templateApproved": true,
   "templateApprovedAt": "2026-09-17T01:53:12.356699+00:00",
   "templateApprovalMessage": "确认，检验完毕",
   "templateApprovedFromDay": 40,
-  "publishApproved": true,
-  "startedAt": "2026-09-17T01:53:12.356699+00:00",
-  "input": "runs/day41/lesson.json",
-  "output": "xhs/day41",
+  "publishApproved": false,
+  "startedAt": "2026-09-17T10:03:23.965314+00:00",
+  "input": "runs/day42/lesson.json",
+  "output": "xhs/day42",
   "previousDraft": {
-    "day": 40,
-    "status": "accepted",
-    "html": "html/day40-反馈与动作学习.html",
-    "xhs": "xhs/day40",
-    "acceptedAt": "2026-09-17T01:53:12.356699+00:00"
+    "day": 41,
+    "status": "published",
+    "review": "runs/day42/previous-review.json",
+    "publicLearningUrl": "https://fitstudy.cn/go/41/"
   },
-  "note": "用户已验收修正版并授权短链和服务器发布。SSH在网络路径切换后恢复，已通过钥匙串密码以zhaoqr登录；第41课七个站点文件已备份后发布，公网文件哈希、短链、移动/桌面课程目录和交互验证通过。两份进度不因发布推进，未开始下一课，未发小红书平台。",
-  "imageStyleApproved": true,
-  "imageStyleReviewRequestedAt": "2026-09-17T02:12:19.901845+00:00",
-  "imageStyleReviewRequest": "不是只看40，29，你都对照下，我总感觉现在生成的怪怪的，我是希望统一图片格式的",
-  "artifactStatus": "published-revision-02",
-  "reviewFocus": "查看完整波吉与德斯帕角色版成品；制作方检查与用户验收分开记录",
-  "imageStyleAuditCompletedAt": "2026-09-17T02:25:43.215015+00:00",
-  "imageStyleAudit": "runs/style-audit-20260917/index.html",
+  "artifactStatus": "layout-revision-in-progress",
   "imageStyleSpecification": "templates/study/v1/image-style.md",
   "imageStylePreset": "templates/study/v1/image-style.json",
-  "imageStyleSpecificationStatus": "accepted-revision-02",
-  "imageStyleAuditScope": {
-    "htmlDays": "1-40",
-    "htmlCoverFiles": 40,
-    "htmlDetailFiles": 40,
-    "xhsDays": "1-32,40",
-    "xhsExportFilesIncludingCovers": 310,
-    "xhsSourceFilesIncludingAlternates": 297,
-    "day41SourceFiles": 11,
-    "visuallyReviewedContactSheets": 33
-  },
-  "characterSampleAuthorization": {
-    "messages": [
-      "41今天的示例你先生成我看下效果先",
-      "当然不用生成多，我需要看下效果先"
-    ],
-    "scope": "two HTML style samples only: cover and Chinese detail",
-    "assumedTeacher": "Despa / 德斯帕",
-    "userPreferences": [
-      "示例优先男性",
-      "固定波吉与老师",
-      "背景融入XHS卡片"
-    ]
-  },
-  "characterSampleInput": "runs/day41/character-preview/image-prompts.json",
-  "characterSampleStartedAt": "2026-09-17T02:37:01.421847+00:00",
-  "characterSampleCompletedAt": "2026-09-17T02:40:59.553391+00:00",
-  "characterSampleManifest": "runs/day41/character-preview/manifest.json",
-  "characterSampleQualityReview": "runs/day41/character-preview/quality-review.json",
-  "characterSamplePreviews": [
-    "runs/day41/character-preview/cover-on-card.jpg",
-    "runs/day41/character-preview/detail-on-card.jpg"
-  ],
-  "day41CompletionAuthorizedAt": "2026-09-17T02:49:31.070051+00:00",
-  "day41CompletionAuthorization": "完成41的任务",
-  "characterDirectionAcceptedForCompletion": true,
-  "completedAt": "2026-09-17T04:25:22.125761+00:00",
-  "imageStyleQA": "passed",
+  "userReviewStatus": "awaiting-user-review",
+  "note": "用户授权尝试共用XHS版式修正：总览留白与拥挤、知识配图太小。保留旧版本，不重新生图；只重导Day42本地草稿。",
+  "contentReview": "runs/day42/verification/content-review.json",
+  "imagePrompts": "runs/day42/image-prompts.json",
+  "lastCheckpointAt": "2026-09-17T10:08:47.503088+00:00",
+  "completedAt": "2026-09-17T10:17:59.909861+00:00",
+  "imageStyleDirectionApproved": true,
+  "imagesAccepted": false,
+  "publicLearningUrl": null,
   "artifacts": {
-    "html": "html/day41-自由重量-下肢杠铃技术.html",
-    "thumbnail": "html/thumbs/day41-lower-body-barbell-technique-thumbnail.png",
-    "detail": "html/assets/阶段2训练科学/day41-自由重量-下肢杠铃技术.png",
-    "xhs": "xhs/day41",
-    "archive": "xhs/day41/day41-xhs.zip"
+    "html": "html/day42-自由重量-上肢杠铃技术.html",
+    "thumbnail": "html/thumbs/day42-upper-body-barbell-technique-thumbnail.png",
+    "detail": "html/assets/阶段2训练科学/day42-自由重量-上肢杠铃技术.png",
+    "xhs": "xhs/day42",
+    "archive": "xhs/day42/day42-xhs.zip"
   },
-  "qualityReview": "runs/day41/revision-02/quality-review.json",
-  "browserReport": "runs/day41/revision-02/verification/browser-report.json",
-  "fileVerification": "runs/day41/revision-02/verification/file-report.json",
+  "qualityReview": "runs/day42/verification/quality-review.json",
+  "browserReport": "runs/day42/verification/report.json",
+  "fileVerification": "runs/day42/verification/file-report.json",
+  "localPreview": {
+    "course": "http://127.0.0.1:8420/html/day42-%E8%87%AA%E7%94%B1%E9%87%8D%E9%87%8F-%E4%B8%8A%E8%82%A2%E6%9D%A0%E9%93%83%E6%8A%80%E6%9C%AF.html",
+    "xhs": "http://127.0.0.1:8420/xhs/day42/index.html"
+  },
+  "reviewFocus": [
+    "第05张卧推保护图的头端站位与安全臂",
+    "第08张力量翻的前肩接铃与阶段关系",
+    "整套人物、图示与文字在实际卡片中的显示"
+  ],
   "nextLessonStarted": false,
-  "currentRevision": "runs/day41/revision-02",
-  "publishApprovedAt": "2026-09-17T07:18:51.347985+00:00",
-  "publishApprovalMessage": "可以，现在可以生成，短链，推送推送到服务器，",
-  "imageStyleApprovedAt": "2026-09-17T07:18:51.349208+00:00",
-  "publishedAt": "2026-09-17T08:04:43.339760+00:00",
-  "publicLearningUrl": "https://fitstudy.cn/go/41/",
-  "releaseId": "20260917T073444Z-day41",
-  "publicationVerification": {
-    "files": "runs/day41/release/live-files-report.json",
-    "browser": "runs/day41/release/live-browser-report.json",
-    "localBrowser": "runs/day41/release/browser-report.json",
-    "remoteBackup": "/home/zhaoqr/fitness/.fitstudy-deploy-backups/20260917T073444Z-day41"
-  }
+  "nextExpectedDay": 43,
+  "layoutRevision": "runs/day42/layout-revision-02",
+  "layoutRevisionRequestedAt": "2026-09-17T11:31:23.538733+00:00",
+  "layoutRevisionRequest": "你试下，并且留白有点多，看这个图能不能弄的别那么挤",
+  "templateRevisionApproved": false
 }

@@ -1,0 +1,51 @@
+{
+  "status": "awaiting-review",
+  "day": 42,
+  "templateApproved": true,
+  "templateApprovedAt": "2026-09-17T01:53:12.356699+00:00",
+  "templateApprovalMessage": "确认，检验完毕",
+  "templateApprovedFromDay": 40,
+  "publishApproved": false,
+  "startedAt": "2026-09-17T10:03:23.965314+00:00",
+  "input": "runs/day42/lesson.json",
+  "output": "xhs/day42",
+  "previousDraft": {
+    "day": 41,
+    "status": "published",
+    "review": "runs/day42/previous-review.json",
+    "publicLearningUrl": "https://fitstudy.cn/go/41/"
+  },
+  "artifactStatus": "ready-local-draft",
+  "imageStyleSpecification": "templates/study/v1/image-style.md",
+  "imageStylePreset": "templates/study/v1/image-style.json",
+  "userReviewStatus": "awaiting-user-review",
+  "note": "Day42本地课程、无字封面、中文详情图、11张XHS卡片、文案与ZIP已完成并通过制作方检查。十次灵智请求均成功，无失败重试；两图裁切和保护架安全臂局部技术纠正有记录。待用户验收，不重复生成、不覆盖、不开始Day43。未部署，不修改首页、短链或两份正式进度；Day41已发布状态保留于previous-review.json。",
+  "contentReview": "runs/day42/verification/content-review.json",
+  "imagePrompts": "runs/day42/image-prompts.json",
+  "lastCheckpointAt": "2026-09-17T10:08:47.503088+00:00",
+  "completedAt": "2026-09-17T10:17:59.909861+00:00",
+  "imageStyleDirectionApproved": true,
+  "imagesAccepted": false,
+  "publicLearningUrl": null,
+  "artifacts": {
+    "html": "html/day42-自由重量-上肢杠铃技术.html",
+    "thumbnail": "html/thumbs/day42-upper-body-barbell-technique-thumbnail.png",
+    "detail": "html/assets/阶段2训练科学/day42-自由重量-上肢杠铃技术.png",
+    "xhs": "xhs/day42",
+    "archive": "xhs/day42/day42-xhs.zip"
+  },
+  "qualityReview": "runs/day42/verification/quality-review.json",
+  "browserReport": "runs/day42/verification/report.json",
+  "fileVerification": "runs/day42/verification/file-report.json",
+  "localPreview": {
+    "course": "http://127.0.0.1:8420/html/day42-%E8%87%AA%E7%94%B1%E9%87%8D%E9%87%8F-%E4%B8%8A%E8%82%A2%E6%9D%A0%E9%93%83%E6%8A%80%E6%9C%AF.html",
+    "xhs": "http://127.0.0.1:8420/xhs/day42/index.html"
+  },
+  "reviewFocus": [
+    "第05张卧推保护图的头端站位与安全臂",
+    "第08张力量翻的前肩接铃与阶段关系",
+    "整套人物、图示与文字在实际卡片中的显示"
+  ],
+  "nextLessonStarted": false,
+  "nextExpectedDay": 43
+}

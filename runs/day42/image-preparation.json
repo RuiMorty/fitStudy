@@ -1,0 +1,110 @@
+{
+  "assets": [
+    {
+      "source": "runs/day42/raw/cover.png",
+      "output": "runs/day42/assets/cover.png",
+      "size": [
+        1600,
+        900
+      ],
+      "margin": 0.06
+    },
+    {
+      "source": "runs/day42/raw/visual-02-bench-setup.png",
+      "output": "runs/day42/assets/visual-02-bench-setup.png",
+      "size": [
+        1400,
+        450
+      ],
+      "margin": 0.06,
+      "crop": [
+        1320,
+        40,
+        2213,
+        690
+      ],
+      "note": "只保留右侧闭合握法局部，排除左侧可能被误读为抬臀的上箭头；原始完整响应保留。"
+    },
+    {
+      "source": "runs/day42/raw/visual-03-bench-path.png",
+      "output": "runs/day42/assets/visual-03-bench-path.png",
+      "size": [
+        1400,
+        450
+      ],
+      "margin": 0.06,
+      "crop": [
+        1190,
+        0,
+        2212,
+        711
+      ],
+      "note": "仅保留右侧推起顶部，左侧触胸位置和方向箭头不准确，不进入交付。"
+    },
+    {
+      "source": "runs/day42/reviewed-source/visual-04-bench-safety.png",
+      "output": "runs/day42/assets/visual-04-bench-safety.png",
+      "size": [
+        1400,
+        450
+      ],
+      "margin": 0.06,
+      "note": "原图安全臂朝架后方；仅调整两个器械安全臂的朝向，使其平行延伸至凳侧、位于杠下。保留人物、杠与原始响应。"
+    },
+    {
+      "source": "runs/day42/raw/visual-05-bent-row.png",
+      "output": "runs/day42/assets/visual-05-bent-row.png",
+      "size": [
+        1400,
+        450
+      ],
+      "margin": 0.06
+    },
+    {
+      "source": "runs/day42/raw/visual-06-pendlay.png",
+      "output": "runs/day42/assets/visual-06-pendlay.png",
+      "size": [
+        1400,
+        450
+      ],
+      "margin": 0.06
+    },
+    {
+      "source": "runs/day42/raw/visual-07-clean.png",
+      "output": "runs/day42/assets/visual-07-clean.png",
+      "size": [
+        1400,
+        450
+      ],
+      "margin": 0.06
+    },
+    {
+      "source": "runs/day42/raw/visual-08-push-pull.png",
+      "output": "runs/day42/assets/visual-08-push-pull.png",
+      "size": [
+        1400,
+        450
+      ],
+      "margin": 0.06
+    },
+    {
+      "source": "runs/day42/raw/visual-09-symmetry.png",
+      "output": "runs/day42/assets/visual-09-symmetry.png",
+      "size": [
+        1400,
+        450
+      ],
+      "margin": 0.06
+    },
+    {
+      "source": "runs/day42/raw/visual-10-application.png",
+      "output": "runs/day42/assets/visual-10-application.png",
+      "size": [
+        1400,
+        450
+      ],
+      "margin": 0.06
+    }
+  ],
+  "record": "runs/day42/image-processing.json"
+}

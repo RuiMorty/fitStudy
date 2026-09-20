@@ -21,18 +21,25 @@ body { background: #f4f4f5; }
 .rule { width: 120px; height: 6px; border-radius: 6px; background: var(--accent); margin: 0 0 24px; }
 .eyebrow { color: var(--accent); font-size: 26px; font-weight: 900; }
 .content h1 { margin: 14px 0 16px; font-size: 52px; line-height: 1.12; }
-.lead { margin: 0 0 12px; color: #52525b; font-size: 25px; line-height: 1.52; }
-.visual { width: 100%; height: 240px; object-fit: contain; margin: 0 0 12px; mix-blend-mode: multiply; }
-.blocks { display: grid; gap: 9px; margin: 0; padding: 0; list-style: none; }
-.block { border: 1px solid var(--line); border-radius: 20px; background: white; padding: 13px 22px; box-shadow: 0 8px 20px rgba(0,0,0,.03); }
-.block h2 { font-size: 25px; line-height: 1.35; margin: 0 0 4px; }
-.block ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 2px; }
-.block li { position: relative; padding-left: 20px; color: #52525b; font-size: 20px; line-height: 1.42; }
+.lead { margin: 0; color: #52525b; font-size: 26px; line-height: 1.48; }
+.point .slide-body, .overview .slide-body { display: flex; flex-direction: column; height: 1218px; max-height: none; }
+.point .slide-body > :not(.visual), .overview .slide-body > :not(.overview-grid):not(.overview-image) { flex-shrink: 0; }
+.visual { display: block; width: 100%; height: 440px; flex: 1; min-height: 310px; max-height: 520px; margin: 18px 0 24px; overflow: hidden; }
+.blocks { display: grid; gap: 14px; margin: 0; padding: 0; list-style: none; }
+.block { border: 1px solid var(--line); border-radius: 20px; background: white; padding: 16px 24px; box-shadow: 0 8px 20px rgba(0,0,0,.03); }
+.block h2 { font-size: 28px; line-height: 1.35; margin: 0 0 6px; }
+.block ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 4px; }
+.block li { position: relative; padding-left: 20px; color: #52525b; font-size: 24px; line-height: 1.45; }
 .block li::before { content: ""; position: absolute; left: 0; top: .65em; width: 7px; height: 7px; border-radius: 50%; background: #60a5fa; }
-.overview .brand { margin-bottom: 34px; }
 .overview h1 { font-size: 56px; }
-.overview .lead { font-size: 27px; line-height: 1.62; }
-.overview-image { position: absolute; top: 430px; left: 72px; width: 936px; height: 820px; object-fit: contain; }
+.overview .lead { font-size: 27px; line-height: 1.5; }
+.overview-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: minmax(0, 1fr); gap: 24px 32px; flex: 1; min-height: 0; margin-top: 24px; }
+.overview-item { display: flex; flex-direction: column; min-height: 0; padding: 18px 20px 12px; border: 1px solid var(--line); border-radius: 20px; background: #fff; }
+.overview-item h2 { flex-shrink: 0; font-size: 34px; line-height: 1.2; margin: 0 0 8px; }
+.overview-item > p { flex-shrink: 0; font-size: 25px; line-height: 1.4; margin: 0 0 12px; color: #52525b; }
+.overview-art { display: block; flex: 1; min-height: 0; width: 100%; overflow: hidden; }
+.overview .overview-note { margin: 18px 0 0; color: #52525b; font-size: 24px; line-height: 1.4; }
+.overview-image { display: block; width: 100%; flex: 1; min-height: 0; margin-top: 24px; object-fit: contain; object-position: center top; }
 html.export .slide-deck { display: block; padding: 0; }
 html.export .slide-frame { width: 1080px; height: 1440px; }
 html.export .slide { transform: none; }

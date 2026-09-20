@@ -1,0 +1,112 @@
+{
+  "status": "passed",
+  "reviewedAt": "2026-09-17T10:17:59.909861+00:00",
+  "reviewer": "Codex制作方检查；不代表用户验收",
+  "userAccepted": false,
+  "generation": {
+    "provider": "Lingzhi",
+    "preset": "quality",
+    "requests": 10,
+    "successes": 10,
+    "failures": 0,
+    "retries": 0,
+    "referenceMode": "text-only fixed character profile; no reference image supplied"
+  },
+  "imageObservations": [
+    {
+      "asset": "cover",
+      "result": "passed",
+      "notes": "无字；波吉观察、德斯帕在架中准备；双侧杆片连接、足底与臀部支撑可辨。"
+    },
+    {
+      "asset": "visual-02-bench-setup",
+      "result": "passed-after-crop",
+      "notes": "仅保留闭合握法近景；排除左侧有歧义的抬升箭头；图示范围与替代文字一致。"
+    },
+    {
+      "asset": "visual-03-bench-path",
+      "result": "passed-after-crop",
+      "notes": "仅保留准确的推起顶部；错误的左侧触胸位置及箭头不进入交付，正文说明实际触点与路径。"
+    },
+    {
+      "asset": "visual-04-bench-safety",
+      "result": "passed-after-local-equipment-correction",
+      "notes": "受训成年保护者位于头端，波吉使用轻杆；将两侧安全臂改为朝向凳前、位于杠下，原始响应保留。"
+    },
+    {
+      "asset": "visual-05-bent-row",
+      "result": "passed",
+      "notes": "髋铰链及两态躯干可比，杠与配重一起移动；文字解释蓝线和不同方向箭头。"
+    },
+    {
+      "asset": "visual-06-pendlay",
+      "result": "passed",
+      "notes": "起点杠片接地、上拉两侧片同杠离地；保留地面基准线，与每次停稳重置对应。"
+    },
+    {
+      "asset": "visual-07-clean",
+      "result": "passed",
+      "notes": "三阶段可分，杆身连续且配重始终连接；接铃在颈根前肩侧，大腿高于水平，文字区分力量翻与全蹲翻。"
+    },
+    {
+      "asset": "visual-08-push-pull",
+      "result": "passed",
+      "notes": "推时伸肘、拉时屈肘，标示方向可解释；橙色区域明确只作示意、不是精确解剖。"
+    },
+    {
+      "asset": "visual-09-symmetry",
+      "result": "passed",
+      "notes": "等负重与等距握点可见；蓝绿色标线含义在正文说明，不据此直接诊断弱侧。"
+    },
+    {
+      "asset": "visual-10-application",
+      "result": "passed",
+      "notes": "两态空手示肘屈和肘伸，方向箭头对应动作；不冒充具体负重划船动作。"
+    }
+  ],
+  "sourceRetention": "runs/day42/raw保留十张原始响应；器械修正在reviewed-source，裁切与尺寸处理见image-preparation.json和image-processing.json",
+  "chineseOverview": {
+    "size": [
+      3072,
+      2048
+    ],
+    "textBlocks": 16,
+    "fontRendered": true,
+    "layout": "runs/day42/overview-layout.json",
+    "nativeReview": "runs/day42/verification/detail-review.jpg"
+  },
+  "finalCards": {
+    "count": 11,
+    "size": [
+      1080,
+      1440
+    ],
+    "allVisuallyReviewed": true,
+    "contactSheets": [
+      "runs/day42/verification/cards-01.jpg",
+      "runs/day42/verification/cards-02.jpg",
+      "runs/day42/verification/cards-03.jpg",
+      "runs/day42/verification/cards-04.jpg",
+      "runs/day42/verification/cards-05.jpg",
+      "runs/day42/verification/cards-06.jpg"
+    ],
+    "layout": "passed; no overflow; approved shared template unchanged"
+  },
+  "verification": {
+    "unitTests": {
+      "passed": 13,
+      "failed": 0
+    },
+    "browser": "runs/day42/verification/report.json",
+    "allFlashcards": "runs/day42/verification/flashcard-report.json",
+    "imagesArchiveAndProtectedFiles": "runs/day42/verification/file-report.json",
+    "localPreview": "runs/day42/verification/local-preview-report.json"
+  },
+  "reviewFocus": [
+    "第05张卧推保护图的头端站位与安全臂",
+    "第08张力量翻的前肩接铃与阶段关系",
+    "整套人物、图示与文字在实际卡片中的显示"
+  ],
+  "unresolvedProductionIssues": [],
+  "publication": "not authorized; not deployed"
+}

@@ -1,0 +1,386 @@
+{
+  "processedAt": "2026-09-17T10:14:02.605789+00:00",
+  "method": "trim near-transparent noise; reviewed crop; uniform scale; transparent margin",
+  "assets": [
+    {
+      "source": "runs/day42/raw/cover.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "sourceSha256": "fd2525a396cad029f76100deabdad7fa53879eb6971ee304c89d2f1803f7e707",
+      "reviewedCrop": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "visibleCrop": [
+        134,
+        39,
+        1462,
+        903
+      ],
+      "output": "runs/day42/assets/cover.png",
+      "size": [
+        1600,
+        900
+      ],
+      "subjectSize": [
+        1217,
+        792
+      ],
+      "offset": [
+        191,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "note": ""
+    },
+    {
+      "source": "runs/day42/raw/visual-02-bench-setup.png",
+      "sourceSize": [
+        2213,
+        711
+      ],
+      "sourceSha256": "dc5d4373173eea1bb33f9b213a6d8692c5401c7ad2143caa8769b4b7fa7ad895",
+      "reviewedCrop": [
+        1320,
+        40,
+        2213,
+        690
+      ],
+      "visibleCrop": [
+        28,
+        69,
+        821,
+        625
+      ],
+      "output": "runs/day42/assets/visual-02-bench-setup.png",
+      "size": [
+        1400,
+        450
+      ],
+      "subjectSize": [
+        565,
+        396
+      ],
+      "offset": [
+        417,
+        27
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "note": "只保留右侧闭合握法局部，排除左侧可能被误读为抬臀的上箭头；原始完整响应保留。"
+    },
+    {
+      "source": "runs/day42/raw/visual-03-bench-path.png",
+      "sourceSize": [
+        2212,
+        711
+      ],
+      "sourceSha256": "1cfe924b8bddd7625c07e1effec7a5f69f52fe4f3ef6de3fa4cec816794349ce",
+      "reviewedCrop": [
+        1190,
+        0,
+        2212,
+        711
+      ],
+      "visibleCrop": [
+        15,
+        26,
+        943,
+        668
+      ],
+      "output": "runs/day42/assets/visual-03-bench-path.png",
+      "size": [
+        1400,
+        450
+      ],
+      "subjectSize": [
+        572,
+        396
+      ],
+      "offset": [
+        414,
+        27
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "note": "仅保留右侧推起顶部，左侧触胸位置和方向箭头不准确，不进入交付。"
+    },
+    {
+      "source": "runs/day42/reviewed-source/visual-04-bench-safety.png",
+      "sourceSize": [
+        2209,
+        712
+      ],
+      "sourceSha256": "aa721296eece08e52a1cc83ac4a311ae0c00bbea0feb51cf1f85a6030418a7a5",
+      "reviewedCrop": [
+        0,
+        0,
+        2209,
+        712
+      ],
+      "visibleCrop": [
+        568,
+        0,
+        1508,
+        708
+      ],
+      "output": "runs/day42/assets/visual-04-bench-safety.png",
+      "size": [
+        1400,
+        450
+      ],
+      "subjectSize": [
+        526,
+        396
+      ],
+      "offset": [
+        437,
+        27
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "note": "原图安全臂朝架后方；仅调整两个器械安全臂的朝向，使其平行延伸至凳侧、位于杠下。保留人物、杠与原始响应。"
+    },
+    {
+      "source": "runs/day42/raw/visual-05-bent-row.png",
+      "sourceSize": [
+        2210,
+        711
+      ],
+      "sourceSha256": "affefa918195f0979ce905e408be5c9c64c48e26a17c6ab7d70721defcc2e4fc",
+      "reviewedCrop": [
+        0,
+        0,
+        2210,
+        711
+      ],
+      "visibleCrop": [
+        438,
+        5,
+        1726,
+        706
+      ],
+      "output": "runs/day42/assets/visual-05-bent-row.png",
+      "size": [
+        1400,
+        450
+      ],
+      "subjectSize": [
+        728,
+        396
+      ],
+      "offset": [
+        336,
+        27
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "note": ""
+    },
+    {
+      "source": "runs/day42/raw/visual-06-pendlay.png",
+      "sourceSize": [
+        2207,
+        712
+      ],
+      "sourceSha256": "9c355dff7583445c81f2fea3075e4878020b608b204cd7751f2c60c77b5eed55",
+      "reviewedCrop": [
+        0,
+        0,
+        2207,
+        712
+      ],
+      "visibleCrop": [
+        423,
+        12,
+        1861,
+        683
+      ],
+      "output": "runs/day42/assets/visual-06-pendlay.png",
+      "size": [
+        1400,
+        450
+      ],
+      "subjectSize": [
+        849,
+        396
+      ],
+      "offset": [
+        275,
+        27
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "note": ""
+    },
+    {
+      "source": "runs/day42/raw/visual-07-clean.png",
+      "sourceSize": [
+        2211,
+        711
+      ],
+      "sourceSha256": "578f225c9406645e2cd255b16070b8908067a2ffcbd5a10ea1e34a752e02d738",
+      "reviewedCrop": [
+        0,
+        0,
+        2211,
+        711
+      ],
+      "visibleCrop": [
+        100,
+        6,
+        2129,
+        693
+      ],
+      "output": "runs/day42/assets/visual-07-clean.png",
+      "size": [
+        1400,
+        450
+      ],
+      "subjectSize": [
+        1170,
+        396
+      ],
+      "offset": [
+        115,
+        27
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "note": ""
+    },
+    {
+      "source": "runs/day42/raw/visual-08-push-pull.png",
+      "sourceSize": [
+        2209,
+        712
+      ],
+      "sourceSha256": "6f450131250a686f1a818abe237033655a89fd9d82b546803822d381eff2f257",
+      "reviewedCrop": [
+        0,
+        0,
+        2209,
+        712
+      ],
+      "visibleCrop": [
+        244,
+        5,
+        2060,
+        707
+      ],
+      "output": "runs/day42/assets/visual-08-push-pull.png",
+      "size": [
+        1400,
+        450
+      ],
+      "subjectSize": [
+        1024,
+        396
+      ],
+      "offset": [
+        188,
+        27
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "note": ""
+    },
+    {
+      "source": "runs/day42/raw/visual-09-symmetry.png",
+      "sourceSize": [
+        2212,
+        711
+      ],
+      "sourceSha256": "96d929610b4b8cd720af37396c4d4dba84d70c10371e168a428d402c0c9812cb",
+      "reviewedCrop": [
+        0,
+        0,
+        2212,
+        711
+      ],
+      "visibleCrop": [
+        584,
+        0,
+        1459,
+        683
+      ],
+      "output": "runs/day42/assets/visual-09-symmetry.png",
+      "size": [
+        1400,
+        450
+      ],
+      "subjectSize": [
+        507,
+        396
+      ],
+      "offset": [
+        446,
+        27
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "note": ""
+    },
+    {
+      "source": "runs/day42/raw/visual-10-application.png",
+      "sourceSize": [
+        2207,
+        712
+      ],
+      "sourceSha256": "b5e60137668a6a2afb44634ab214f752ff9a765b40c21cf3fbbb0586c3462a80",
+      "reviewedCrop": [
+        0,
+        0,
+        2207,
+        712
+      ],
+      "visibleCrop": [
+        562,
+        7,
+        1687,
+        702
+      ],
+      "output": "runs/day42/assets/visual-10-application.png",
+      "size": [
+        1400,
+        450
+      ],
+      "subjectSize": [
+        641,
+        396
+      ],
+      "offset": [
+        379,
+        27
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "note": ""
+    }
+  ]
+}
