@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "checkedAt": "2026-09-20T10:21:37.961Z",
+  "sourceGeneration": {
+    "planned": 13,
+    "generated": 13,
+    "retries": 0,
+    "failures": 0,
+    "preset": "Lingzhi quality / gpt-image-2.5-sunburst"
+  },
+  "overview": {
+    "independentImages": 6,
+    "knowledgeImages": 6,
+    "overviewAndKnowledgeImagesDisjoint": true,
+    "detailTextBlocks": 16
+  },
+  "visualInspection": {
+    "inspectedCards": [
+      "cover",
+      "overview",
+      "anti-extension",
+      "Pallof press",
+      "single-arm carry",
+      "anti-flexion",
+      "Chop/Lift",
+      "progress and breathing"
+    ],
+    "result": "All eight final 1080x1440 cards manually inspected after export: text readable, illustration subjects complete, cable and handle paths visible, no overflow, and no unsupported brand text."
+  },
+  "responsiveAndInteraction": "Shared verifier passed at 320, 390, 768, and 1440px; disclosure, flip cards, all quiz types, incorrect-feedback gate, zoom dialog, exported card dimensions, and broken-layout gate passed."
+}

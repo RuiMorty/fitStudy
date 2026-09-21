@@ -7,8 +7,9 @@ const { execFileSync } = require('node:child_process');
 const ROOT = path.resolve(__dirname, '../..');
 const TEMPLATE = path.join(ROOT, 'templates/study/v1');
 const VERSION = 'study-day29-v1';
-const LAYOUT_REVISION = 'xhs-layout-20260917-v2';
+const LAYOUT_REVISION = 'xhs-layout-20260921-v3';
 const LOGO = 'html/assets/fitness-study-logo-open-circle.svg';
+const TOTAL_LESSON_DAYS = 77;
 const LOGO_CACHE_BUST = crypto.createHash('sha256').update(fs.readFileSync(path.join(ROOT, LOGO))).digest('hex').slice(0, 12);
 const PUBLIC_ORIGIN = 'https://fitstudy.cn';
 const escapeHtml = (value) => String(value).replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]);
@@ -113,7 +114,7 @@ function validateLesson(lesson) {
   array(social.points, 1, 18, 'xhs.points');
   social.points.forEach((point, i) => {
     const field = `xhs.points[${i}]`;
-    object(point, ['title', 'lead', 'image', 'blocks'], field);
+    object(point, ['title', 'lead', 'emphasis', 'emphases', 'mistakeIndexes', 'image', 'blocks'], field);
     text(point.title, 32, `${field}.title`);
     text(point.lead, 110, `${field}.lead`);
     image(point.image, `${field}.image`);
@@ -123,6 +124,26 @@ function validateLesson(lesson) {
       text(block.title, 24, `${field}.blocks[${j}].title`);
       texts(block.bullets, 1, 3, 100, `${field}.blocks[${j}].bullets`);
     });
+    if (point.emphasis !== undefined && point.emphases !== undefined) fail(field, 'use either emphasis or emphases, not both');
+    const emphases = point.emphases === undefined ? (point.emphasis === undefined ? [] : [point.emphasis]) : point.emphases;
+    if (point.emphases !== undefined) array(emphases, 1, 6, `${field}.emphases`);
+    const emphasizedBullets = new Set();
+    emphases.forEach((emphasis, j) => {
+      const emphasisField = point.emphases === undefined ? `${field}.emphasis` : `${field}.emphases[${j}]`;
+      object(emphasis, ['block', 'bullet', 'keyword'], emphasisField);
+      const { block, bullet, keyword } = emphasis;
+      if (!Number.isInteger(block) || !Number.isInteger(bullet) || block < 0 || block >= point.blocks.length || bullet < 0 || bullet >= point.blocks[block].bullets.length) fail(emphasisField, 'must reference an existing bullet');
+      if (emphasizedBullets.has(`${block}:${bullet}`)) fail(emphasisField, 'must reference a different bullet');
+      emphasizedBullets.add(`${block}:${bullet}`);
+      text(keyword, 32, `${emphasisField}.keyword`);
+      if (!point.blocks[block].bullets[bullet].includes(keyword)) fail(`${emphasisField}.keyword`, 'must be text from the referenced bullet');
+    });
+    if (point.mistakeIndexes !== undefined) {
+      array(point.mistakeIndexes, 1, 1, `${field}.mistakeIndexes`);
+      point.mistakeIndexes.forEach((mistake, j) => {
+        if (!Number.isInteger(mistake) || mistake < 0 || mistake >= lesson.mistakes.length) fail(`${field}.mistakeIndexes[${j}]`, 'must reference an existing lesson mistake');
+      });
+    }
   });
   text(social.caption, 950, 'xhs.caption');
   texts(social.tags, 1, 8, 20, 'xhs.tags');
@@ -202,8 +223,14 @@ function courseHtml(lesson, assets) {
   const cards = lesson.flashcards.map((card) => `<button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">${escapeHtml(card.question)}</span><span class="face back" aria-hidden="true">${escapeHtml(card.answer)}</span></span></button>`).join('');
   const labels = { single: '单选', multi: '多选', case: '案例' };
   const quizzes = lesson.quiz.map((quiz, index) => `<section class="question" data-answers="${escapeHtml(JSON.stringify(quiz.answers))}" data-explanation="${escapeHtml(quiz.explanation)}"><h3>${index + 1}. ${labels[quiz.type]}：${escapeHtml(quiz.question)}</h3><div class="options">${quiz.options.map((option, i) => `<label class="option"><input type="${quiz.type === 'multi' ? 'checkbox' : 'radio'}" name="question-${index}" value="${i}"><span>${String.fromCharCode(65 + i)}. ${escapeHtml(option)}</span></label>`).join('')}</div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section>`).join('');
-  const body = `<main><header class="header"><h1>Day ${lesson.day} · ${escapeHtml(lesson.title)}</h1><p class="sub">${escapeHtml(lesson.subtitle)}</p><div class="meta">${lesson.chips.map((chip) => `<span class="chip">${escapeHtml(chip)}</span>`).join('')}</div></header><section class="panel green"><h2>一句话总结</h2><p class="takeaway">${escapeHtml(lesson.summary)}</p></section><figure class="figure"><button data-zoom aria-label="放大详情图">${picture(lesson.detailImage, assets)}<span class="icon-button">${icon('Expand')}</span></button><figcaption class="caption">${escapeHtml(lesson.detailCaption)}</figcaption></figure><section class="panel"><h2>核心要点</h2><ul class="kp">${knowledge}</ul></section><section class="warn"><h2>常见误区</h2>${lesson.mistakes.map((mistake) => `<p><strong class="misconception">误区：${escapeHtml(mistake.wrong)}</strong><br>辨析：${escapeHtml(mistake.right)}</p>`).join('')}</section><section class="mnemonic"><h2>记忆口诀</h2><p><strong>${escapeHtml(lesson.mnemonic)}</strong></p></section><section class="panel"><h2>翻转卡复习</h2><div class="cards">${cards}</div></section><section class="panel orange"><h2>实操关联</h2><ul class="practice">${lesson.practice.map((item) => `<li>${escapeHtml(item)}</li>`).join('')}</ul></section><section class="panel blue"><h2>练习题</h2>${quizzes}</section><footer>Day ${lesson.day}/112 · ${escapeHtml(lesson.cert)}<ul>${lesson.sources.map((source) => `<li>${escapeHtml(source)}</li>`).join('')}</ul></footer></main><dialog aria-label="详情大图"><button class="icon-button" aria-label="关闭大图" title="关闭大图">${icon('X')}</button><img alt=""></dialog>`;
+  const body = `<main><header class="header"><h1>Day ${lesson.day} · ${escapeHtml(lesson.title)}</h1><p class="sub">${escapeHtml(lesson.subtitle)}</p><div class="meta">${lesson.chips.map((chip) => `<span class="chip">${escapeHtml(chip)}</span>`).join('')}</div></header><section class="panel green"><h2>一句话总结</h2><p class="takeaway">${escapeHtml(lesson.summary)}</p></section><figure class="figure"><button data-zoom aria-label="放大详情图">${picture(lesson.detailImage, assets)}<span class="icon-button">${icon('Expand')}</span></button><figcaption class="caption">${escapeHtml(lesson.detailCaption)}</figcaption></figure><section class="panel"><h2>核心要点</h2><ul class="kp">${knowledge}</ul></section><section class="warn"><h2>常见误区</h2>${lesson.mistakes.map((mistake) => `<p><strong class="misconception">误区：${escapeHtml(mistake.wrong)}</strong><br>辨析：${escapeHtml(mistake.right)}</p>`).join('')}</section><section class="mnemonic"><h2>记忆口诀</h2><p><strong>${escapeHtml(lesson.mnemonic)}</strong></p></section><section class="panel"><h2>翻转卡复习</h2><div class="cards">${cards}</div></section><section class="panel orange"><h2>实操关联</h2><ul class="practice">${lesson.practice.map((item) => `<li>${escapeHtml(item)}</li>`).join('')}</ul></section><section class="panel blue"><h2>练习题</h2>${quizzes}</section><footer>Day ${lesson.day}/${TOTAL_LESSON_DAYS} · ${escapeHtml(lesson.cert)}<ul>${lesson.sources.map((source) => `<li>${escapeHtml(source)}</li>`).join('')}</ul></footer></main><dialog aria-label="详情大图"><button class="icon-button" aria-label="关闭大图" title="关闭大图">${icon('X')}</button><img alt=""></dialog>`;
   return documentHtml(`Day ${lesson.day} · ${lesson.title}`, read('course.css'), body, read('course.js'), assets.get(LOGO));
+}
+function emphasizedBullet(bullet, emphases, blockIndex, bulletIndex) {
+  const emphasis = emphases.find((item) => item.block === blockIndex && item.bullet === bulletIndex);
+  if (!emphasis) return escapeHtml(bullet);
+  const start = bullet.indexOf(emphasis.keyword);
+  return `${escapeHtml(bullet.slice(0, start))}<mark class="emphasis-keyword">${escapeHtml(emphasis.keyword)}</mark>${escapeHtml(bullet.slice(start + emphasis.keyword.length))}`;
 }
 function slideHtml(slide, index, total, lesson, assets, geometry) {
   let body;
@@ -217,10 +244,16 @@ function slideHtml(slide, index, total, lesson, assets, geometry) {
         : picture(lesson.detailImage, assets, 'overview-image');
       if (slide.note) body += `<p class="overview-note">${escapeHtml(slide.note)}</p>`;
     } else {
-      body += `${picture(slide.image, assets, 'visual')}<ul class="blocks">${slide.blocks.map((block) => `<li class="block"><h2>${escapeHtml(block.title)}</h2><ul>${block.bullets.map((bullet) => `<li>${escapeHtml(bullet)}</li>`).join('')}</ul></li>`).join('')}</ul>`;
+      const emphases = slide.emphases === undefined ? (slide.emphasis === undefined ? [] : [slide.emphasis]) : slide.emphases;
+      const blocks = slide.blocks.map((block, blockIndex) => `<li class="block"><h2>${escapeHtml(block.title)}</h2><ul>${block.bullets.map((bullet, bulletIndex) => `<li${emphases.some((item) => item.block === blockIndex && item.bullet === bulletIndex) ? ' class="is-emphasis"' : ''}>${emphasizedBullet(bullet, emphases, blockIndex, bulletIndex)}</li>`).join('')}</ul></li>`).join('');
+      const mistakes = (slide.mistakeIndexes || []).map((mistakeIndex) => {
+        const mistake = lesson.mistakes[mistakeIndex];
+        return `<aside class="inline-mistake"><strong>常见误区：${escapeHtml(mistake.wrong)}</strong><p>应该这样做：${escapeHtml(mistake.right)}</p></aside>`;
+      }).join('');
+      body += `${picture(slide.image, assets, 'visual')}<ul class="blocks">${blocks}</ul>${mistakes}`;
     }
   }
-  return `<article class="slide ${slide.kind === 'cover' ? 'cover' : `content ${slide.kind}`}" data-slide="${index + 1}">${brand(lesson, assets)}<div class="slide-body">${body}</div><footer class="footer"><span>Day ${lesson.day}/112</span><span>${number(index + 1)} / ${number(total)}</span></footer></article>`;
+  return `<article class="slide ${slide.kind === 'cover' ? 'cover' : `content ${slide.kind}`}" data-slide="${index + 1}">${brand(lesson, assets)}<div class="slide-body">${body}</div><footer class="footer"><span>Day ${lesson.day}/${TOTAL_LESSON_DAYS}</span><span>${number(index + 1)} / ${number(total)}</span></footer></article>`;
 }
 function slidesHtml(lesson, assets, slides) {
   const geometry = imageGeometry(socialImages(lesson));

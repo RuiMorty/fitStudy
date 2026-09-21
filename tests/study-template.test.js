@@ -33,6 +33,35 @@ test('page count follows point count, not a hard-coded daily total', () => {
   delete lesson.xhs.overview;
   assert.equal(buildSlides(validateLesson(lesson)).length, 5);
 });
+test('inline emphases and mapped mistakes reuse existing content without per-day styles', (t) => {
+  const lesson = withExistingImages();
+  const first = lesson.xhs.points[0].blocks[0].bullets[0].slice(0, 2);
+  const second = lesson.xhs.points[0].blocks[1].bullets[1].slice(0, 2);
+  lesson.xhs.points[0].emphases = [
+    { block: 0, bullet: 0, keyword: first },
+    { block: 1, bullet: 1, keyword: second },
+  ];
+  lesson.xhs.points[0].mistakeIndexes = [0];
+  const slides = buildSlides(validateLesson(lesson));
+  assert.equal(slides.length, lesson.xhs.points.length + 2);
+  assert.equal(slides.at(-1).kind, 'point');
+  const output = temporary(t); buildPackage(lesson, output);
+  const html = fs.readFileSync(path.join(output, 'xhs/index.html'), 'utf8');
+  assert.equal((html.match(/class="emphasis-keyword"/g) || []).length, 2);
+  assert.match(html, /class="inline-mistake"/);
+  lesson.xhs.points[0].emphases[0].color = 'red';
+  assert.throws(() => validateLesson(lesson), /unsupported field/);
+});
+test('inline emphases must be distinct exact phrases from their own existing bullets', () => {
+  const lesson = withExistingImages();
+  lesson.xhs.points[0].emphases = [
+    { block: 0, bullet: 0, keyword: '不存在' },
+    { block: 0, bullet: 0, keyword: lesson.xhs.points[0].blocks[0].bullets[0].slice(0, 2) },
+  ];
+  assert.throws(() => validateLesson(lesson), /must be text from the referenced bullet/);
+  lesson.xhs.points[0].emphases[0].keyword = lesson.xhs.points[0].blocks[0].bullets[0].slice(0, 2);
+  assert.throws(() => validateLesson(lesson), /must reference a different bullet/);
+});
 test('reject per-day style overrides and invalid content', () => {
   for (const mutate of [
     (x) => { x.css = 'body{}'; },

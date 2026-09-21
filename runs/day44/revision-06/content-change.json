@@ -1,0 +1,17 @@
+{
+  "revision": "revision-06-keyword-only-emphasis",
+  "changedAt": "2026-09-21T03:26:43.000Z",
+  "scope": "Shared XHS template plus local Day44 XHS cards; website lesson content and imagery unchanged.",
+  "changes": [
+    "Changed emphasis from an entire bullet row to one keyword or short phrase inside that existing bullet.",
+    "Added a schema check that the displayed keyword must occur verbatim in its referenced bullet.",
+    "For the anti-extension card, only ‘肩远离耳朵’ is highlighted; ‘也不憋气’ remains regular explanatory text."
+  ],
+  "deliberateDecision": "The keyword is a display reference to existing content, not a separate content field. No day-specific CSS or script branch was added; no image was regenerated; the course HTML, homepage, shortlink, progress files, server, and older lessons remain unchanged.",
+  "verification": [
+    "Shared template tests passed: 16/16",
+    "Final 1080x1440 anti-extension card visually inspected for keyword-only emphasis",
+    "Shared browser verification passed at 320/390/768/1440px, including course interactions and all 8 XHS cards",
+    "ZIP CRC passed"
+  ]
+}

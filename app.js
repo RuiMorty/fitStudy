@@ -123,7 +123,7 @@ const generatedThumbs = new Map([
   [43, "html/thumbs/day43-dumbbell-kettlebell-machine-bodyweight-thumbnail.png"],
 ]);
 
-const categories = ["全部", "骨关节", "肌肉", "生物力学", "能量系统", "训练技术", "评估纠正", "营养", "模考"];
+const categories = ["全部", "骨关节", "肌肉", "生物力学", "能量系统", "训练技术", "评估纠正", "营养"];
 const $ = (id) => document.getElementById(id);
 
 const atlasImages = {
@@ -438,7 +438,6 @@ function getCategory(title) {
   if (/训练|热身|柔韧|速度|敏捷|爆发|核心|平衡|周期/.test(title)) return "训练技术";
   if (/评估|筛查|姿势|纠正|综合征|CES/.test(title)) return "评估纠正";
   if (/营养|碳水|蛋白|脂肪|维生素|水合|补剂|体重/.test(title)) return "营养";
-  if (/模考|考试|错题|冲刺|收官/.test(title)) return "模考";
   return "训练技术";
 }
 
@@ -722,7 +721,7 @@ function renderSidebarContext() {
 function renderMainHeader() {
   const header = {
     theory: {
-      kicker: "112 Day Library",
+      kicker: `${state.lessons.length} Day Library`,
       title: "健身知识库",
       description: "按理论、证书、阶段和主题检索；已有详情页可直接弹窗阅读。",
       insight: `<span>课程总览</span><strong>${state.lessons.length} <small>主题</small></strong>`,

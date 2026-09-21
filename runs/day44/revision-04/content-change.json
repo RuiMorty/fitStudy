@@ -1,0 +1,17 @@
+{
+  "revision": "revision-04-action-highlights-mistakes",
+  "changedAt": "2026-09-21T02:59:59.000Z",
+  "scope": "Shared XHS template plus all local Day44 XHS cards; website lesson content and imagery unchanged.",
+  "changes": [
+    "Renamed the six action-card titles to state the training purpose first, then the matching movement and how to do it.",
+    "Added the shared orange highlight component for one immediately executable key action per knowledge card.",
+    "Added the shared mistakes-slide component and enabled it for Day44, reusing the five existing website mistakes without duplicating their source content."
+  ],
+  "deliberateDecision": "Changed only shared-template components and Day44 JSON content. No day-specific CSS or script branch was added; no image was regenerated; the course HTML, homepage, shortlink, progress files, server, and older lessons remain unchanged.",
+  "verification": [
+    "Shared template tests passed: 16/16",
+    "All six action cards and the mistakes card were visually inspected at final 1080x1440 export size",
+    "Shared browser verification passed at 320/390/768/1440px, including course interactions and all 9 XHS cards",
+    "ZIP CRC passed"
+  ]
+}

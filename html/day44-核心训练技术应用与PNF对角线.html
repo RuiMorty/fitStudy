@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Day 44 · 核心训练技术应用与PNF对角线</title><link rel="icon" type="image/svg+xml" href="assets/fitness-study-logo-open-circle.svg?v=a6d8e5caaa61"><style>:root { color-scheme: light; --ink: #111113; --muted: #71717a; --line: #e4e4e7; --accent: #ff5a1f; --green: #0ea66b; --blue: #2563eb; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; font-synthesis: none; letter-spacing: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); overflow-wrap: anywhere; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+img { display: block; max-width: 100%; }
+button:focus-visible, a:focus-visible, summary:focus-visible, input:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
+svg.icon { width: 20px; height: 20px; }
+.icon-button { display: inline-grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 1px solid var(--line); border-radius: 6px; background: white; }
+[hidden] { display: none !important; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
+
+body { background: #f6f8f7; font-size: 14px; line-height: 1.65; }
+main { max-width: 980px; margin: auto; padding: 24px 18px 60px; }
+.header { padding: 22px 4px 14px; }
+h1 { margin: 10px 0 8px; font-size: 36px; line-height: 1.2; }
+h1::before { content: ""; display: block; width: 34px; height: 4px; background: var(--accent); margin-bottom: 10px; }
+h2 { font-size: 17px; margin: 0 0 14px; }
+h3 { font-size: 16px; margin: 0 0 8px; }
+.sub { color: var(--muted); margin: 5px 0 18px; }
+.meta { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { display: inline-block; border: 1px solid var(--line); border-radius: 20px; background: white; color: var(--muted); padding: 3px 10px; font-size: 12px; font-weight: 600; }
+.chip:nth-child(1) { background: #e2f7eb; color: #15803d; border-color: transparent; }
+.chip:nth-child(2) { background: #e7f0fe; color: #2563eb; border-color: transparent; }
+.chip:nth-child(3) { background: #fff2e5; color: #9a4c05; border-color: transparent; }
+.panel, .figure, .warn, .mnemonic { background: white; border: 1px solid #e2e8e4; border-radius: 14px; box-shadow: 0 2px 12px rgba(20,40,30,.06); padding: 20px; margin: 16px 0; }
+.green { border-left: 5px solid var(--green); }
+.orange { border-left: 5px solid #ea7a17; }
+.blue { border-left: 5px solid #0ea5e9; }
+.takeaway { margin: 0; }
+.figure { text-align: center; }
+.figure button { display: block; position: relative; width: 100%; border: 0; padding: 0; background: white; cursor: zoom-in; }
+.figure img { max-height: 760px; width: 100%; object-fit: contain; }
+.figure .icon-button { position: absolute; bottom: 8px; right: 8px; background: #ffffffed; }
+.caption { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
+.kp { list-style: none; padding: 0; margin: 0; }
+.kp > li { border-bottom: 1px dashed #e2e8e4; }
+.kp > li:last-child { border-bottom: 0; }
+.kp summary { cursor: pointer; padding: 13px 8px; font-weight: 650; }
+.kp summary::marker { color: var(--green); }
+.term { color: #0a7d52; background: #e2f7eb; border-radius: 6px; padding: 1px 5px; }
+.kp-body { padding: 2px 14px 16px 24px; }
+.detail-block { margin: 12px 0; }
+.detail-block h4 { font-size: 13px; color: #08744d; margin: 0 0 4px; }
+.detail-block p { margin: 0; white-space: pre-line; }
+.warn { border-left: 5px solid #e23b3b; background: #fffafa; }
+.warn p { margin: 8px 0; }
+.misconception { color: #a82b32; }
+.mnemonic { border-left: 4px solid var(--accent); box-shadow: none; }
+.mnemonic strong { color: #df4716; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+.flip { height: 168px; perspective: 900px; border: 0; background: transparent; padding: 0; text-align: center; }
+.flip-in { display: block; height: 100%; position: relative; transition: transform .45s; transform-style: preserve-3d; }
+.flip[aria-pressed="true"] .flip-in { transform: rotateY(180deg); }
+.face { position: absolute; inset: 0; backface-visibility: hidden; border: 1px solid var(--line); border-radius: 10px; padding: 15px; background: #fafafa; display: flex; align-items: center; justify-content: center; overflow-y: auto; }
+.back { transform: rotateY(180deg); background: #eef9f4; color: #075e40; border-color: #c8eadb; }
+.practice { padding-left: 20px; }
+.practice li { margin: 7px 0; }
+.question { border-top: 1px solid #e2e8e4; padding: 20px 0 8px; margin-top: 12px; min-width: 0; }
+.options { display: grid; gap: 7px; margin: 10px 0; }
+.option { display: flex; gap: 10px; align-items: baseline; border: 1px solid #e2e8e4; background: #f0f4f2; padding: 9px 12px; border-radius: 8px; cursor: pointer; }
+.option input { flex-shrink: 0; accent-color: var(--green); }
+.option:has(input:checked) { border-color: #0ea5e9; background: #e7f6fd; }
+.question[data-result="correct"] .option:has(input:checked) { border-color: #0ea66b; background: #e7f8ef; }
+.question[data-result="wrong"] .option:has(input:checked) { border-color: #e23b3b; background: #fff0f0; }
+.answer { background: #f8fbfa; border-left: 3px solid #0ea5e9; padding: 10px; margin-top: 10px; }
+.check { border: 0; background: #0ea66b; color: white; padding: 9px 14px; border-radius: 7px; }
+footer { color: var(--muted); font-size: 12px; margin-top: 28px; }
+footer ul { padding-left: 20px; }
+dialog { width: min(1200px, 96vw); max-height: 94dvh; padding: 52px 16px 16px; border: 0; border-radius: 8px; background: white; }
+dialog::backdrop { background: #15191dd9; }
+dialog img { width: 100%; max-height: 78dvh; object-fit: contain; }
+dialog .icon-button { position: absolute; top: 8px; right: 10px; }
+@media (max-width: 600px) {
+  main { padding: 16px 12px 40px; }
+  h1 { font-size: 26px; }
+  .header { padding: 16px 4px 12px; }
+  .panel, .figure, .warn, .mnemonic { padding: 15px; }
+  .kp-body { padding-left: 16px; }
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .face { padding: 12px; }
+}
+</style></head><body><main><header class="header"><h1>Day 44 · 核心训练技术应用与PNF对角线</h1><p class="sub">把核心当作抵抗外力和传递力量的任务：先在不代偿的姿势里稳住，再用Pallof press、单臂负重和Chop／Lift逐步加入移动。</p><div class="meta"><span class="chip">阶段2训练科学</span><span class="chip">第7周</span><span class="chip">NASM · 核心应用</span></div></header><section class="panel green"><h2>一句话总结</h2><p class="takeaway">核心训练不等于反复卷腹。平板、Pallof press、单臂负重和Chop／Lift的共同目标，是在外力、步伐或手臂动作变化时维持可控制的躯干位置；呼吸不断、负荷小步进阶，才能把稳定带进动作。</p></section><figure class="figure"><button data-zoom aria-label="放大详情图"><img class="" src="assets/阶段2训练科学/day44-核心训练技术应用与PNF对角线.png" alt="六主题中文总览：抗伸展、抗旋转、抗侧屈、抗屈曲、Chop与Lift、呼吸和进阶"><span class="icon-button"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 15 6 6" /><path d="m15 9 6-6" /><path d="M21 16v5h-5" /><path d="M21 8V3h-5" /><path d="M3 16v5h5" /><path d="m3 21 6-6" /><path d="M3 8V3h5" /><path d="M9 9 3 3" /></svg></span></button><figcaption class="caption">核心训练应用总览：先让躯干在可控制的位置抵抗外力，再逐步加入四肢移动、行走和对角线拉力；疼痛、头晕或控制丢失时停止。</figcaption></figure><section class="panel"><h2>核心要点</h2><ul class="kp"><li><details><summary><span class="term">抗伸展：先让肋骨和骨盆同稳</span>：平板支撑和滚轮都不是比谁撑得久或伸得远；重点是腹部用力时，腰部不塌、肋骨不外翻、肩部仍能承受支撑。</summary><div class="kp-body"><section class="detail-block"><h4>从可控版本起步</h4><p>平板可从较高支撑面、短时保持或屈膝版本开始。手肘或手掌位于肩下附近，脚或膝的支撑面稳定；先找到能连续呼吸、肩颈不耸和腰部不下沉的姿势。不要为了把身体压得很低而让腰椎失去控制。</p></section><section class="detail-block"><h4>滚轮不是必经关卡</h4><p>Ab wheel rollout 会逐渐增加肩部前移和躯干抗伸展需求。先在小范围、可回到起始位的轨迹练习；如果肋骨明显上翻、腰部先塌、肩痛或回程只能靠猛拉，就缩短范围、提高支撑或换回平板。不会滚轮不表示核心训练无效。</p></section><section class="detail-block"><h4>用呼吸检查位置</h4><p>保持时可用短而连续的呼气与吸气检查自己是否在憋气。若一开口呼吸姿势立刻垮掉，说明当前杠杆、时长或负荷太高。把时间拆成更多可控组，比在塌腰后硬撑更能练到目标。</p></section></div></details></li><li><details><summary><span class="term">抗旋转：Pallof press先让拉线可控</span>：Pallof press 的价值来自侧方拉力试图带动躯干旋转；双手把把手从胸前推出时，任务是保持身体朝向和骨盆位置，而不是把绳索拉得很远。</summary><div class="kp-body"><section class="detail-block"><h4>设置决定任务</h4><p>把滑轮或弹力带固定在胸部附近高度，身体侧对拉力方向，双脚站稳后先把把手收在胸前。距离、阻力、站距和是否采用半跪都会改变难度；先用轻阻力试推一两次，确认绳索、固定点和周围空间安全。</p></section><section class="detail-block"><h4>推出时不跟着转</h4><p>推出和收回都缓慢，观察胸廓、骨盆和膝盖是否一起转向拉力侧。手臂伸直不是唯一标准：能保持自然呼吸、肩不耸、腰不扭的可控范围更重要。若必须大幅跨步、侧弯或用惯性回拉，先减阻力或缩短距离。</p></section><section class="detail-block"><h4>回程也要控制</h4><p>弹力带和绳索的固定处必须承重可靠，回程也要握住把手，不能突然放开。肩、腰或腹部出现疼痛、麻木、头晕，或拉力让你无法稳定站住时停止；训练记录能说明当时的表现，却不能单独诊断伤病。</p></section></div></details></li><li><details><summary><span class="term">单臂农夫行走：不向负重侧歪</span>：单侧负重行走常要求躯干抵抗向负重侧的侧屈，也要在每一步中减少不必要的旋转；它不是越重越练核心。</summary><div class="kp-body"><section class="detail-block"><h4>先把路线和负荷降下来</h4><p>选能安全拿起、放回的轻哑铃或壶铃，手持在身体一侧；在短、无障碍的直线路线上练习。头、肩和骨盆保持大致平齐，步幅自然，另一侧手臂可自然摆动。不要在拥挤通道、湿滑地面或转弯很多的区域贸然加重量。</p></section><section class="detail-block"><h4>观察的是偏移</h4><p>看负重侧肩是否被拉低、躯干是否明显侧弯、骨盆是否上下晃，或为了抓紧而耸肩憋气。出现这些情况时，可减重、缩短距离、放慢步速或改为原地持握。不要用屏气、快走或另一手扶大腿来掩盖控制问题。</p></section><section class="detail-block"><h4>左右都要有记录</h4><p>两侧使用相近的重量、距离、步速和休息，记录哪种设置会先丢失位置。一次差异不等于某侧失效；若差异持续、伴随疼痛或突然无力，应停止自行加码并寻求合适评估。</p></section></div></details></li><li><details><summary><span class="term">抗屈曲：负荷别把躯干拉成圆背</span>：抗屈曲不是永远不让脊柱活动，而是在抱持、提起、髋铰链或站立负重时，不让外部负荷把可控制的躯干位置突然拉成圆背。</summary><div class="kp-body"><section class="detail-block"><h4>先区分任务和动作</h4><p>日常和训练中脊柱本来可以活动；本课说的抗屈曲，是在需要传递力量的负重任务中维持可控制的位置。先在较高的起始高度、轻负荷或不负重髋铰链下练习，感受髋部后移与躯干共同配合，不追求僵直不动。</p></section><section class="detail-block"><h4>负荷离身体越远越难</h4><p>抱住、提起或前方持重时，负荷离身体越远，躯干需要应对的力矩通常越大。把重量贴近身体、减小范围或提高起始位置，能先把任务降到可控制水平。不要在疲劳后为了捡起重量而突然弯腰猛拉。</p></section><section class="detail-block"><h4>控制丢失就回退</h4><p>若每次下放都出现腰背突然圆曲、髋部不再参与、呼吸完全中断或疼痛加重，先停止该组。回退到更轻负荷、较短范围或更高起始位；不把硬顶过去当成核心稳定训练。</p></section></div></details></li><li><details><summary><span class="term">Chop与Lift：对角线拉力不带着躯干跑</span>：绳索Chop从较高位置向对侧下方带动双手，Lift从较低位置向对侧上方带动双手；两者借用PNF的对角线思路，但力量训练变式不等同于临床PNF评估。</summary><div class="kp-body"><section class="detail-block"><h4>先认识D1／D2的边界</h4><p>PNF 的D1、D2是包含肩、肘、前臂、腕手方向的规范对角线模式。健身房里的Chop和Lift常借用下劈、上提的对角线路径来组织训练，却会因把手、站姿和轨迹不同而变化。不要只凭动作名称就宣称完成了某个临床模式。</p></section><section class="detail-block"><h4>高到低与低到高都先稳住</h4><p>Chop 可从较高滑轮把把手带向对侧下方；Lift 可从较低滑轮带向对侧上方。先让脚、骨盆和胸廓稳定，手臂在肩部舒适范围内移动。髋和上背可有自然配合，但不靠猛扭腰、甩把手或把膝盖拧向一侧完成轨迹。</p></section><section class="detail-block"><h4>先轻后快</h4><p>开始时选能在每个终点暂停、再平顺回程的阻力；确认固定点、绳索长度和旁人距离。想加入速度前，先保持同样的呼吸与躯干控制。任何肩腰不适、把手回弹或踏步失控都表示应停止并退回简化版本。</p></section></div></details></li><li><details><summary><span class="term">进阶：先稳定，再把动作加进去</span>：核心练习可以从无明显脊柱移动的短时保持，发展到四肢移动、行走、对角线拉力和适度动作化；难度一次只改一个条件。</summary><div class="kp-body"><section class="detail-block"><h4>顺序不是固定菜单</h4><p>可先用短时平板、原地Pallof hold或轻负重站立找到稳定，再加入手臂推出、短距离行走或慢速对角线。之后是否加入脊柱动作，要看目标、技术、疼痛史和整体训练安排；稳定不是把每个人永远锁在同一姿势。</p></section><section class="detail-block"><h4>一次只改一个变量</h4><p>要进阶时，优先只改变阻力、杠杆长度、动作范围、持握时间、步行距离、支撑面积或速度中的一个。若同一周同时加重、延长距离、换更窄站姿又提高速度，就很难知道是哪一项让控制下降。</p></section><section class="detail-block"><h4>呼吸不是最后才补上</h4><p>在较轻到中等学习负荷下，保持连续呼吸：发力时可缓慢呼气，回程吸气，不把刻意Valsalva憋气当作默认技术。高强度专项举重的呼吸策略需要个体化指导；本课的判断标准是能呼吸、能控制、能安全停止。</p></section></div></details></li></ul></section><section class="warn"><h2>常见误区</h2><p><strong class="misconception">误区：核心训练就是把腰背完全锁死，任何脊柱活动都不该出现。</strong><br>辨析：核心任务取决于动作与负荷。本课先练在外力下保持可控制位置，再按目标和能力逐步加入四肢、行走和适度动作化，不把僵住当作唯一正确。</p><p><strong class="misconception">误区：Pallof press只要把手推出越远、阻力越大，就一定练得更好。</strong><br>辨析：推出范围和阻力必须让躯干、骨盆和呼吸仍可控制。扭腰、侧弯、跨步借力或憋气时，应先减阻力、缩短范围或调整站距。</p><p><strong class="misconception">误区：单臂农夫行走只练握力，身体歪一点没关系。</strong><br>辨析：它同时考验在步伐中抵抗侧屈和不必要旋转。观察肩、骨盆和躯干是否偏移；控制丢失时减重、缩短距离或改原地持握。</p><p><strong class="misconception">误区：所有Chop和Lift都等同于标准PNF D1或D2治疗动作。</strong><br>辨析：健身房的对角线绳索练习借用了PNF思路，但标准D1／D2还包含具体关节方向。应说明器械、站姿和目标，不把力量练习当作临床评估。</p><p><strong class="misconception">误区：核心不够稳就应该全程憋气用力。</strong><br>辨析：学习阶段以连续呼吸和可安全停止为先。若只能靠刻意Valsalva憋气维持姿势，先降低当前杠杆、范围、速度或阻力；高强度专项策略需个体化指导。</p></section><section class="mnemonic"><h2>记忆口诀</h2><p><strong>先稳躯干再动肢；抗伸抗转也抗偏；下劈上提走对角；能呼吸，才进阶。</strong></p></section><section class="panel"><h2>翻转卡复习</h2><div class="cards"><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">平板或滚轮练习中最先观察什么？</span><span class="face back" aria-hidden="true">能否连续呼吸，并让肋骨、骨盆和腰部保持可控制位置；塌腰、上翻或肩痛就回退。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">Pallof press的外力主要想带来什么？</span><span class="face back" aria-hidden="true">侧方拉力试图让躯干旋转；推出和收回时保持身体朝向、骨盆和呼吸可控。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">单臂农夫行走为什么会考验核心？</span><span class="face back" aria-hidden="true">单侧负重会要求躯干抵抗向负重侧偏移，并在每一步中减少不必要的旋转。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">抗屈曲是否等于永远不让脊柱活动？</span><span class="face back" aria-hidden="true">不是。它指负重传力任务中不让外力突然把躯干拉成失控圆背，日常脊柱仍可活动。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">Chop和Lift与PNF的关系是什么？</span><span class="face back" aria-hidden="true">它们借用对角线思路；标准PNF D1／D2还有具体关节方向，不能把任一绳索变式直接等同。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">核心进阶时一次改几个变量？</span><span class="face back" aria-hidden="true">优先一次只改一个，例如阻力、范围、时长、距离、支撑面积或速度，才知道控制为何变化。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">学习核心练习时怎样处理呼吸？</span><span class="face back" aria-hidden="true">保持连续呼吸，发力可缓慢呼气、回程吸气；不把刻意Valsalva憋气当作默认技术。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">对角线下劈的停止信号？</span><span class="face back" aria-hidden="true">扭腰甩绳、脚步失控、肩腰不适或把手回弹时停止，并回到更简单的可控版本。</span></span></button></div></section><section class="panel orange"><h2>实操关联</h2><ul class="practice"><li>平板定位：选高台或地面平板的可控版本，做3组短时保持。每组只记录能否连续呼吸、腰是否下沉、肩颈是否耸起；不要练到姿势垮掉。</li><li>Pallof press：用轻阻力、胸高固定点做慢推出与收回。固定站距、距离和阻力，观察胸廓与骨盆是否被拉向一侧；任一重复扭腰就降低难度。</li><li>单臂农夫行走：选短直线路线，左右各做同重量、同距离、同步速的轻负重行走。记录肩、骨盆、躯干是否偏移，不用一次表现给左右侧下结论。</li><li>对角线准备：分别用高位和低位滑轮空载或轻载练Chop与Lift的起止位，先确认脚、绳索、固定点和肩部舒适范围，再决定是否加重复。</li><li>呼吸复核：在一项核心练习中用正常音量数四次呼气；若无法完成或数到一半姿势垮掉，减少当前杠杆、时长、范围或负荷。</li><li>实操串联：先完成一组轻Pallof press，再完成一组能暂停的高位到低位Chop。下一次只改变一个变量，并记下控制是否仍稳定。</li></ul></section><section class="panel blue"><h2>练习题</h2><section class="question" data-answers="[1]" data-explanation="Pallof press 的核心任务是抵抗侧方拉力造成的不必要旋转。范围和阻力应服务于躯干、骨盆、肩部与呼吸的可控制性，而不是用扭腰、回弹或憋气换距离。"><h3>1. 单选：做Pallof press时，哪项最符合本课的目标？</h3><div class="options"><label class="option"><input type="radio" name="question-0" value="0"><span>A. 推出越远越好，即使躯干转向拉力侧</span></label><label class="option"><input type="radio" name="question-0" value="1"><span>B. 让躯干和骨盆在侧方拉力下保持可控制，再平顺推出和收回</span></label><label class="option"><input type="radio" name="question-0" value="2"><span>C. 每次都快速放开把手，让绳索回弹</span></label><label class="option"><input type="radio" name="question-0" value="3"><span>D. 只要憋气就能忽略站距和阻力</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[0,1,2]" data-explanation="单侧负重行走先练安全路线和姿势控制，并用一致条件观察两侧。侧弯或旋转失控时应回退；一次差异不够用来诊断结构或要求加倍训练。"><h3>2. 多选：关于单臂农夫行走，哪些做法符合本课原则？</h3><div class="options"><label class="option"><input type="checkbox" name="question-1" value="0"><span>A. 先用能安全拿放的轻负荷与短直线路线</span></label><label class="option"><input type="checkbox" name="question-1" value="1"><span>B. 观察负重侧肩、骨盆和躯干是否明显偏移</span></label><label class="option"><input type="checkbox" name="question-1" value="2"><span>C. 两侧用相近的重量、距离、步速和休息比较</span></label><label class="option"><input type="checkbox" name="question-1" value="3"><span>D. 一旦躯干侧弯，立刻加重来强迫适应</span></label><label class="option"><input type="checkbox" name="question-1" value="4"><span>E. 把一次左右差异直接诊断为结构问题</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[1]" data-explanation="Chop借用对角线拉力，但不该用猛扭腰、失控脚步和回弹完成。先回到能暂停、平顺收回并维持可控制位置的阻力、范围和站姿。"><h3>3. 案例：小林做高位绳索Chop时，为了把把手拉到更低，膝盖转向一边、腰猛扭、回程直接松手。最合适的处理是？</h3><div class="options"><label class="option"><input type="radio" name="question-2" value="0"><span>A. 继续加重量，让腰更快适应扭转</span></label><label class="option"><input type="radio" name="question-2" value="1"><span>B. 减轻阻力或缩短范围，先让脚、骨盆与呼吸稳定，并全程控制回程</span></label><label class="option"><input type="radio" name="question-2" value="2"><span>C. 屏气后把把手甩得更快，减少回程时间</span></label><label class="option"><input type="radio" name="question-2" value="3"><span>D. 只练同一侧，避免另一侧暴露差异</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[1]" data-explanation="抗屈曲是特定负重任务中的控制要求，不是把脊柱永久锁死。把负荷贴近身体、降低起始难度和在控制丢失时回退，比硬顶疲劳姿势更合适。"><h3>4. 单选：关于抗屈曲，哪种理解正确？</h3><div class="options"><label class="option"><input type="radio" name="question-3" value="0"><span>A. 它要求所有生活和训练动作都禁止脊柱活动</span></label><label class="option"><input type="radio" name="question-3" value="1"><span>B. 它指在负重传力任务中，不让外力把可控制的躯干位置突然拉成失控圆背</span></label><label class="option"><input type="radio" name="question-3" value="2"><span>C. 只要把重量远离身体，核心就会自动学会控制</span></label><label class="option"><input type="radio" name="question-3" value="3"><span>D. 疲劳后捡重物时越快弯腰越安全</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[0,1,2]" data-explanation="可追踪的小步进阶和持续呼吸更容易判断控制是否仍在。一次叠加多个变量会掩盖原因；学习阶段不把刻意Valsalva憋气当默认策略。"><h3>5. 多选：核心进阶时，哪些做法有助于判断难度是否合适？</h3><div class="options"><label class="option"><input type="checkbox" name="question-4" value="0"><span>A. 一次只改变阻力、范围、时长、距离、支撑面积或速度中的一个</span></label><label class="option"><input type="checkbox" name="question-4" value="1"><span>B. 保持连续呼吸，把是否能正常呼气作为控制检查</span></label><label class="option"><input type="checkbox" name="question-4" value="2"><span>C. 从短时稳定开始，再逐步加入四肢移动、行走或对角线拉力</span></label><label class="option"><input type="checkbox" name="question-4" value="3"><span>D. 同时加重、加速、延长距离和缩窄站距，快速挑战极限</span></label><label class="option"><input type="checkbox" name="question-4" value="4"><span>E. 任何情况下都应把Valsalva憋气当作默认技术</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[1]" data-explanation="力量训练的Chop／Lift可用于练习对角线拉力下的躯干控制，但不自动等同临床PNF模式。清楚说明具体设置与安全边界，才不会把术语替代技术检查。"><h3>6. 案例：阿远说“Chop就是PNF D1，所以所有高位到低位拉法都一样”。下列回应最准确的是？</h3><div class="options"><label class="option"><input type="radio" name="question-5" value="0"><span>A. 正确，器械对角线拉法都能替代PNF评估</span></label><label class="option"><input type="radio" name="question-5" value="1"><span>B. Chop和Lift借用PNF对角线思路，但标准D1／D2还包含具体关节方向；应说明当前器械、站姿、范围和控制目标</span></label><label class="option"><input type="radio" name="question-5" value="2"><span>C. 不必看动作和呼吸，只要记住D1与D2名字</span></label><label class="option"><input type="radio" name="question-5" value="3"><span>D. 对角线动作必须靠猛烈扭腰才有效</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section></section><footer>Day 44/77 · NASM<ul><li>NSCA：Essentials of Strength Training and Conditioning，第4版，核心训练、抗阻动作技术与负荷进阶相关章节。</li><li>NASM：Essentials of Personal Fitness Training，第7版，核心稳定、整合训练与渐进式动作选择相关章节。</li><li>McGill, S. M.：Low Back Disorders，第3版，脊柱负荷、耐力与运动控制原则；不替代个体医疗建议。</li><li>Adler, Beckers, Buck：PNF in Practice，第4版，对角线模式的临床定义；本课的Chop／Lift为健身训练应用，不等同临床评估。</li></ul></footer></main><dialog aria-label="详情大图"><button class="icon-button" aria-label="关闭大图" title="关闭大图"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></button><img alt=""></dialog><script>document.querySelectorAll('.flip').forEach((button) => {
+  button.addEventListener('click', () => {
+    const pressed = button.getAttribute('aria-pressed') !== 'true';
+    button.setAttribute('aria-pressed', String(pressed));
+    button.querySelector('.front').setAttribute('aria-hidden', String(pressed));
+    button.querySelector('.back').setAttribute('aria-hidden', String(!pressed));
+  });
+});
+document.querySelectorAll('.question').forEach((question) => {
+  question.querySelector('.check').addEventListener('click', () => {
+    const selected = [...question.querySelectorAll('input:checked')].map((input) => Number(input.value)).sort();
+    const answer = question.querySelector('.answer');
+    answer.hidden = false;
+    if (!selected.length) { answer.textContent = '请先选择答案。'; delete question.dataset.result; return; }
+    const correct = JSON.stringify(selected) === JSON.stringify(JSON.parse(question.dataset.answers).sort());
+    question.dataset.result = correct ? 'correct' : 'wrong';
+    answer.textContent = `${correct ? '回答正确。' : '再想一想。'}${question.dataset.explanation}`;
+  });
+});
+const imageDialog = document.querySelector('dialog');
+document.querySelectorAll('[data-zoom]').forEach((button) => {
+  button.addEventListener('click', () => {
+    const original = button.querySelector('img');
+    const image = imageDialog.querySelector('img');
+    image.src = original.src;
+    image.alt = original.alt;
+    imageDialog.showModal();
+  });
+});
+imageDialog.querySelector('button').addEventListener('click', () => imageDialog.close());
+imageDialog.addEventListener('click', (event) => {
+  const rect = imageDialog.getBoundingClientRect();
+  if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) imageDialog.close();
+});
+</script></body></html>

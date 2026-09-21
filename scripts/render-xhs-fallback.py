@@ -11,6 +11,7 @@ from PIL import Image, ImageChops, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parents[1]
 WIDTH, HEIGHT = 1080, 1440
+TOTAL_LESSON_DAYS = 77
 
 
 def font(size, bold=False):
@@ -254,7 +255,7 @@ def save_cards_slide(lesson, out_dir, index, title, lead, cards, visual_name=Non
     ]
     for (card_title, card_body), pos in zip(cards, positions):
         draw_card(draw, pos, (card_w, card_h), card_title, card_body)
-    draw.text((72, 1345), f"Day {lesson['day']}/112", font=F_TINY, fill="#a1a1aa")
+    draw.text((72, 1345), f"Day {lesson['day']}/{TOTAL_LESSON_DAYS}", font=F_TINY, fill="#a1a1aa")
     im.save(out_dir / f"slide-{index:02d}.png")
 
 
@@ -274,7 +275,7 @@ def save_cover(lesson, out_dir):
         draw.rounded_rectangle((x, 1040, x + tw, 1084), radius=22, fill=color)
         draw.text((x + 17, 1048), chip, font=F_SMALL, fill="#111113")
         x += tw + 16
-    draw.text((72, 1345), f"Day {lesson['day']}/112", font=F_TINY, fill="#a1a1aa")
+    draw.text((72, 1345), f"Day {lesson['day']}/{TOTAL_LESSON_DAYS}", font=F_TINY, fill="#a1a1aa")
     im.save(out_dir / "cover.png")
 
 
@@ -292,7 +293,7 @@ def save_image_slide(lesson, out_dir):
     if img:
         visual = fit_image(img, (72, 380, 936, 880))
         im.paste(visual, (72, 380))
-    draw.text((72, 1345), f"Day {lesson['day']}/112", font=F_TINY, fill="#a1a1aa")
+    draw.text((72, 1345), f"Day {lesson['day']}/{TOTAL_LESSON_DAYS}", font=F_TINY, fill="#a1a1aa")
     im.save(out_dir / "slide-01.png")
 
 
@@ -319,7 +320,7 @@ def save_dense_slide(lesson, out_dir, index, title, lead):
     for b in bullets:
         draw_card(draw, (72, y + 10), (936, 135), title[:10], b)
         y += 155
-    draw.text((72, 1345), f"Day {lesson['day']}/112", font=F_TINY, fill="#a1a1aa")
+    draw.text((72, 1345), f"Day {lesson['day']}/{TOTAL_LESSON_DAYS}", font=F_TINY, fill="#a1a1aa")
     im.save(out_dir / f"slide-{index:02d}.png")
 
 
@@ -354,7 +355,7 @@ def save_day32_cover(lesson, out_dir):
         draw.rounded_rectangle((x, chip_top, x + chip_width, chip_top + 56), radius=28, fill=background)
         draw.text((x + 18, chip_top + 12), chip, font=F_TAG, fill=color)
         x += chip_width + 16
-    draw.text((72, 1345), f"Day {lesson['day']}/112", font=F_TINY, fill="#a1a1aa")
+    draw.text((72, 1345), f"Day {lesson['day']}/{TOTAL_LESSON_DAYS}", font=F_TINY, fill="#a1a1aa")
     im.save(out_dir / "cover.png")
 
 
@@ -367,7 +368,7 @@ def save_day32_overview(lesson, out_dir):
     visual = out_dir / "ai-visuals" / "visual-01-labelled-overview.png"
     if visual.exists():
         paste_day32_cutout(im, visual, (72, 400, 936, 680))
-    draw.text((72, 1345), f"Day {lesson['day']}/112", font=F_TINY, fill="#a1a1aa")
+    draw.text((72, 1345), f"Day {lesson['day']}/{TOTAL_LESSON_DAYS}", font=F_TINY, fill="#a1a1aa")
     im.save(out_dir / "slide-01.png")
 
 
@@ -384,7 +385,7 @@ def save_day32_cards_slide(lesson, out_dir, index, title, lead, cards, visual_na
     cards_top = visual_top + 324
     for position, (card_title, card_body) in enumerate(cards):
         day32_card(draw, (72, cards_top + position * 164), (936, 150), card_title, card_body, "#ff5a1f")
-    draw.text((72, 1345), f"Day {lesson['day']}/112", font=F_TINY, fill="#a1a1aa")
+    draw.text((72, 1345), f"Day {lesson['day']}/{TOTAL_LESSON_DAYS}", font=F_TINY, fill="#a1a1aa")
     im.save(out_dir / f"slide-{index:02d}.png")
 
 

@@ -1,0 +1,31 @@
+{
+  "revision": "revision-01-content-pilot",
+  "changedAt": "2026-09-21T02:39:18.104Z",
+  "scope": "Only xhs.points[0] / exported xhs/day44/slide-02.png, index.html, ZIP and local package regeneration.",
+  "unchanged": [
+    "All source illustrations",
+    "Shared renderer and CSS",
+    "The other seven XHS cards",
+    "Website lesson knowledge content",
+    "Homepage, shortlink, progress files, server"
+  ],
+  "informationArchitecture": {
+    "before": [
+      "概念说明",
+      "注意事项",
+      "呼吸复核"
+    ],
+    "after": [
+      "① 起步：先选版本",
+      "② 执行：每一组这样查",
+      "③ 决策：加难还是退阶"
+    ]
+  },
+  "verification": [
+    "Lesson schema passed",
+    "Shared browser verification passed at 320/390/768/1440px",
+    "Revised slide is 1080x1440 PNG",
+    "ZIP CRC passed",
+    "Local preview HTTP 200"
+  ]
+}

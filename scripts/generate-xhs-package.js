@@ -7,6 +7,7 @@ const ROOT = path.resolve(__dirname, "..");
 const SITE_URL = "https://fitstudy.cn";
 const WIDTH = 1080;
 const HEIGHT = 1440;
+const TOTAL_LESSON_DAYS = 77;
 
 function parseArgs() {
   const dayArg = process.argv.find((arg) => arg.startsWith("--day="));
@@ -1298,7 +1299,7 @@ function slideHtml(slide, lesson) {
       ? `<div class="cover-body"><div class="hero">${image}</div><div class="cover-copy"><div class="daymark">Day ${lesson.day}</div><h1>${slide.title}</h1><p class="subtitle">${slide.subtitle}</p><div class="chips">${chips}</div></div></div>`
       : `<div class="rule"></div><div class="eyebrow">${slide.eyebrow}</div><h1>${slide.title}</h1><p class="lead">${slide.lead}</p>${slide.type === "comparison" ? comparison : slide.type === "image" ? lessonFigure : visual}${slide.type === "comparison" ? "" : slide.cards ? `<div class="cards">${cards}</div>` : slide.type === "denseSteps" ? `<ul class="steps">${steps}</ul><ul class="notes">${notes}</ul>` : `<ul class="bullets">${bullets}</ul>`}<div class="fill">${fill}</div>`
   }
-  <div class="footer"><span>Day ${lesson.day}/112</span><span>每天复习 1 个知识点</span></div>
+  <div class="footer"><span>Day ${lesson.day}/${TOTAL_LESSON_DAYS}</span><span>每天复习 1 个知识点</span></div>
 </main>
 </body>
 </html>`;
@@ -1358,7 +1359,7 @@ function lessonImageHtml(lesson, slide) {
   <div class="brand"><b>健身<span>学习</span></b><span>${lesson.cert}</span></div>
   ${omitHeading ? "" : `<div class="rule"></div><div class="eyebrow">${slide.eyebrow}</div><h1 class="title">${slide.title}</h1>${omitLead ? "" : `<p class="lead">${slide.lead}</p>`}`}
   <div class="figure" style="top:${figureTop}px"></div>
-  <div class="footer"><span>Day ${lesson.day}/112</span><span>每天复习 1 个知识点</span></div>
+  <div class="footer"><span>Day ${lesson.day}/${TOTAL_LESSON_DAYS}</span><span>每天复习 1 个知识点</span></div>
 </main>
 </body>
 </html>`;

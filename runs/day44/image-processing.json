@@ -1,0 +1,513 @@
+{
+  "processedAt": "2026-09-20T10:14:46.298377+00:00",
+  "method": "trim near-transparent noise; reviewed crop; uniform scale; transparent margin",
+  "assets": [
+    {
+      "source": "runs/day44/source/cover.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "sourceSha256": "6fde0a72c4feeaad89cb2be3d45445b15a56e686891bfe5887e7c41dddec3142",
+      "reviewedCrop": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "visibleCrop": [
+        89,
+        7,
+        1465,
+        920
+      ],
+      "output": "runs/day44/assets/cover.png",
+      "size": [
+        1600,
+        900
+      ],
+      "subjectSize": [
+        1194,
+        792
+      ],
+      "offset": [
+        203,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day44/source/visual-02-anti-extension.png",
+      "sourceSize": [
+        2211,
+        711
+      ],
+      "sourceSha256": "128199178bcdb89ce17b769c9e9db75f0d1dd2ead804bf14445e898ec9d0b021",
+      "reviewedCrop": [
+        0,
+        0,
+        2211,
+        711
+      ],
+      "visibleCrop": [
+        123,
+        5,
+        2002,
+        663
+      ],
+      "output": "runs/day44/assets/visual-02-anti-extension.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1879,
+        658
+      ],
+      "offset": [
+        460,
+        121
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day44/source/visual-03-pallof.png",
+      "sourceSize": [
+        2213,
+        711
+      ],
+      "sourceSha256": "5b3bb5878799e5c47beb3e5c21ab1d5face6a94de796b60a485278082470d140",
+      "reviewedCrop": [
+        0,
+        0,
+        2213,
+        711
+      ],
+      "visibleCrop": [
+        448,
+        2,
+        1763,
+        709
+      ],
+      "output": "runs/day44/assets/visual-03-pallof.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1315,
+        707
+      ],
+      "offset": [
+        742,
+        96
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day44/source/visual-04-suitcase-carry.png",
+      "sourceSize": [
+        2211,
+        711
+      ],
+      "sourceSha256": "465a298b3ecf39e6960b47472552c3d1db50cee7815ddf9743750f3efd430d0f",
+      "reviewedCrop": [
+        0,
+        0,
+        2211,
+        711
+      ],
+      "visibleCrop": [
+        624,
+        6,
+        1509,
+        694
+      ],
+      "output": "runs/day44/assets/visual-04-suitcase-carry.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        885,
+        688
+      ],
+      "offset": [
+        957,
+        106
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day44/source/visual-05-anti-flexion.png",
+      "sourceSize": [
+        2213,
+        711
+      ],
+      "sourceSha256": "562229094c13334eb715dded4cffd3d77e8440367c34ad0caae044a87207efe1",
+      "reviewedCrop": [
+        0,
+        0,
+        2213,
+        711
+      ],
+      "visibleCrop": [
+        676,
+        16,
+        1473,
+        689
+      ],
+      "output": "runs/day44/assets/visual-05-anti-flexion.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        797,
+        673
+      ],
+      "offset": [
+        1001,
+        113
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day44/source/visual-06-chop-lift.png",
+      "sourceSize": [
+        2209,
+        712
+      ],
+      "sourceSha256": "666170f4f5141311f8c59c11c69cd153ee6a1e3255f67886427535d0aec74003",
+      "reviewedCrop": [
+        0,
+        0,
+        2209,
+        712
+      ],
+      "visibleCrop": [
+        406,
+        9,
+        1789,
+        699
+      ],
+      "output": "runs/day44/assets/visual-06-chop-lift.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1383,
+        690
+      ],
+      "offset": [
+        708,
+        105
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day44/source/visual-07-progress-breathing.png",
+      "sourceSize": [
+        2212,
+        711
+      ],
+      "sourceSha256": "4852c9a4123bfe117411f39d18a5fe5979aced611588dd91e79f1b315bbf1fbe",
+      "reviewedCrop": [
+        0,
+        0,
+        2212,
+        711
+      ],
+      "visibleCrop": [
+        54,
+        28,
+        2159,
+        683
+      ],
+      "output": "runs/day44/assets/visual-07-progress-breathing.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        2105,
+        655
+      ],
+      "offset": [
+        347,
+        122
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day44/source/overview-01-anti-extension.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "9ea38d25965f2f095c3bb40a64f246577fb7e1e5e689573485f08d88c0c89bcc",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        42,
+        37,
+        1403,
+        1023
+      ],
+      "output": "runs/day44/assets/overview-01-anti-extension.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1361,
+        986
+      ],
+      "offset": [
+        119,
+        107
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day44/source/overview-02-pallof.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "19356ea9de6989a6200223b3d2c71eda522e206d9a3b7e1db86e39f5c8573c5d",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        70,
+        13,
+        1431,
+        1069
+      ],
+      "output": "runs/day44/assets/overview-02-pallof.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1361,
+        1056
+      ],
+      "offset": [
+        119,
+        72
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day44/source/overview-03-carry.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "365e012bdbb2bdd11e805558f315f93ede977f40023bfcc2f12a78f11949dfc2",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        247,
+        15,
+        1175,
+        1064
+      ],
+      "output": "runs/day44/assets/overview-03-carry.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        928,
+        1049
+      ],
+      "offset": [
+        336,
+        75
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day44/source/overview-04-anti-flexion.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "8fa0c982831bec39e9f9e02f437b95b964a44a77fad0b3cc9067e947b6c022d1",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        203,
+        16,
+        1242,
+        1046
+      ],
+      "output": "runs/day44/assets/overview-04-anti-flexion.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1039,
+        1030
+      ],
+      "offset": [
+        280,
+        85
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day44/source/overview-05-diagonal.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "101c58d2d6a14801b6f525e5466ffda3a47df355f1d462b4387bd5e591acff19",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        129,
+        2,
+        1396,
+        1063
+      ],
+      "output": "runs/day44/assets/overview-05-diagonal.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1261,
+        1056
+      ],
+      "offset": [
+        169,
+        72
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day44/source/overview-06-breathing.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "ac56f60eebda3fb05958cdc2cb572f93c3a5e04bbd290c2ac42ba1d388a37ed9",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        6,
+        15,
+        1436,
+        998
+      ],
+      "output": "runs/day44/assets/overview-06-breathing.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1430,
+        983
+      ],
+      "offset": [
+        85,
+        108
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    }
+  ]
+}

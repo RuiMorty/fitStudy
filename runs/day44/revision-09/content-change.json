@@ -1,0 +1,17 @@
+{
+  "revision": "revision-09-distributed-inline-emphases",
+  "changedAt": "2026-09-21T11:37:58.000Z",
+  "scope": "Local Day44 XHS card content and shared emphasis data contract only; website lesson content and imagery unchanged.",
+  "changes": [
+    "Replaced the one-highlight-per-card constraint with 1–6 inline phrase highlights on distinct existing bullets.",
+    "Each action card now exposes its existing how-to path across the three step blocks: setup or entry, control standard, and regression or progression.",
+    "Every highlighted phrase remains exact text from its own bullet; no line background, new copy, new card, image regeneration, or Day-specific renderer branch was added."
+  ],
+  "deliberateDecision": "The original full control criteria remain visible: ‘腰不塌、肋骨不翻、不耸肩’, ‘胸廓、骨盆和膝不跟着拉力转’, ‘肩、骨盆保持大致平齐’, ‘重量贴近’, ‘脚、骨盆和胸廓不被拉线拖转’, and ‘能呼吸、能控制、能停止’. Supporting inline phrases show what to do before or after each criterion.",
+  "verification": [
+    "All six action-card exports visually inspected at final 1080x1440 size",
+    "17 shared template and draft tests passed",
+    "Shared browser verification passed at 320/390/768/1440px, including course interactions and all 8 XHS cards",
+    "ZIP CRC passed"
+  ]
+}

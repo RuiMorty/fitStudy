@@ -1,0 +1,144 @@
+{
+  "provider": "Lingzhi",
+  "preset": "quality",
+  "model": "gpt-image-2.5-sunburst",
+  "createdAt": "2026-09-20T10:06:33.629Z",
+  "stylePreset": "templates/study/v1/image-style.json",
+  "authorization": "本次健身学习每日生成：Day43 已验收发布；按课纲顺序生成 Day44 本地草稿。用户已授权使用灵智生图；每项仅一次请求，失败不自动重试。",
+  "referenceMode": "text-only fixed Bojji and Despa character profile; no reference image is sent to the generation API",
+  "retryPolicy": "one request per asset; stop on provider failure; no automatic paid retry",
+  "commonPrompt": "为同一个健身科学教学系列制作配图，使用《国王排名》Ranking of Kings 的波吉 Bojji 与德斯帕 Despa 两位明确可辨识的角色。先固定人物设定：波吉是矮小的男孩，黑色短发、圆脸、大圆眼、小鼻子、小金色三尖王冠、钴蓝色长袖短上衣、细白腰带、白色贴腿长裤、黑色圆头短靴；绝不把他画成长腿成年人或肌肉男。德斯帕是成年男性老师，金色向后梳的短发、细长眼、长鼻、上唇两撇细小金色胡须，穿红褐色及膝长外套、白色毛领、细金色门襟、浅米色裤子、深色短靴；不是金发长发剑士多玛斯，不要山羊胡。两位都是男性。复现人物辨识特征，衣服、发型、配色在所有小图中保持一致。\n统一使用清爽的二维动漫教材插画，圆润简洁的深灰细轮廓、平涂色块、极少柔和阴影，原作般简练亲切的面部。不要半写实3D、照片感、油亮皮肤、肌肉雕塑、厚涂或商业广告光影。仅在明确要求时使用细蓝绿线；本次所有图片不画箭头，器械简化但结构正确。角色可以在不同示意中重复出现，但每个场景仅波吉和德斯帕，不添加其他人物。\n画布外围和所有未绘制区域要求真实透明背景，输出PNG alpha；无纸张底色、灰底、蓝底、渐变底、棋盘格图案、地板、摄影棚、装饰飘带、外框、贴纸白边、投影。角色的白裤子和德斯帕白毛领仍保留不透明白色。所有关键结构距离画布边缘至少6%，全身、杠和必要箭头完整。无作品Logo、无水印、无额外装饰文字。\n持续保持上述角色和二维线条风格。教学对象可按知识点选择波吉或德斯帕，但不出现其他人物。只画一个知识点，不用装饰布景。每张源图真实透明底，文字仅在明确允许时出现；其余绝对无汉字、英文字母或数字。宽幅横向构图，关键内容横向排列，全部轮廓完整，避免过多空白。",
+  "assets": [
+    {
+      "file": "cover.png",
+      "role": "cover",
+      "topic": "核心训练技术应用",
+      "teachingRelationship": "德斯帕示范可控制的核心训练技术，波吉在安全距离观察；不出现第三人。",
+      "composition": "横向16:9无字封面",
+      "allowedText": "none",
+      "anatomyAndTechniqueConstraints": "手足、绳索、把手、壶铃和支撑器械结构完整；关节自然，躯干不代偿，所有透明区域保留真实alpha。",
+      "prompt": "透明PNG，横向16:9无字封面。德斯帕在画面中央偏左，以侧对一台胸高绳索滑轮的稳定站姿，双手轻握单个把手停在胸前的Pallof press起始位，双脚完整落地、躯干没有转向拉力。波吉在右侧观察他的肩与骨盆是否保持方向。左下方放一只完整的小壶铃，表示单臂负重行走准备但不正在摆动。滑轮、连续绳索、把手、配重堆、两人全身和鞋子完整；无地面线、无箭头、无文字、无多余器械。"
+    },
+    {
+      "file": "visual-02-anti-extension.png",
+      "role": "knowledge",
+      "topic": "抗伸展平板支撑",
+      "teachingRelationship": "德斯帕示范可控制的核心训练技术，波吉在安全距离观察；不出现第三人。",
+      "composition": "横向28:9无字知识图",
+      "allowedText": "none",
+      "anatomyAndTechniqueConstraints": "手足、绳索、把手、壶铃和支撑器械结构完整；关节自然，躯干不代偿，所有透明区域保留真实alpha。",
+      "prompt": "透明PNG，横向28:9无字知识插图。德斯帕在稳固的低高台上做高台平板支撑顶端：手掌在肩下、头肩髋脚形成可控制斜线，腰不下沉、肋骨不外翻、双脚完整落地。波吉在画面右侧安全距离蹲下观察德斯帕的躯干线条，不触碰他或高台。高台四脚、人物四肢与鞋子完整。只画一个稳定姿势，不画滚轮、箭头、文字或第二个人物。"
+    },
+    {
+      "file": "visual-03-pallof.png",
+      "role": "knowledge",
+      "topic": "Pallof press抗旋转",
+      "teachingRelationship": "德斯帕示范可控制的核心训练技术，波吉在安全距离观察；不出现第三人。",
+      "composition": "横向28:9无字知识图",
+      "allowedText": "none",
+      "anatomyAndTechniqueConstraints": "手足、绳索、把手、壶铃和支撑器械结构完整；关节自然，躯干不代偿，所有透明区域保留真实alpha。",
+      "prompt": "透明PNG，横向28:9无字知识插图。画面左侧一座胸高滑轮和静止配重堆，黑色绳索连续连接单个把手。德斯帕在右侧身体侧对滑轮、双脚稳定分开，双手把把手从胸前推出到略低于肩的可控制位置，胸廓和骨盆仍正对画面前方，不扭腰、不侧弯、不耸肩。波吉在右后方观察但不碰绳索。滑轮、绳索、把手、配重、人物和鞋子完整；无箭头、无文字、无回弹姿势。"
+    },
+    {
+      "file": "visual-04-suitcase-carry.png",
+      "role": "knowledge",
+      "topic": "单臂农夫行走抗侧屈",
+      "teachingRelationship": "德斯帕示范可控制的核心训练技术，波吉在安全距离观察；不出现第三人。",
+      "composition": "横向28:9无字知识图",
+      "allowedText": "none",
+      "anatomyAndTechniqueConstraints": "手足、绳索、把手、壶铃和支撑器械结构完整；关节自然，躯干不代偿，所有透明区域保留真实alpha。",
+      "prompt": "透明PNG，横向28:9无字知识插图。德斯帕全身侧方三分之四视角向右缓慢行走，右手自然持一只小壶铃在身体侧方，双肩保持大致平齐、躯干不向壶铃侧弯、骨盆稳定，左手自然摆动，双脚完整且步幅自然。波吉在前方右侧安全距离回头观察。壶铃手柄完整且不碰腿，两人不跑、不憋气、不使用腰带。无地面线、无箭头、无文字。"
+    },
+    {
+      "file": "visual-05-anti-flexion.png",
+      "role": "knowledge",
+      "topic": "抗屈曲髋铰链提起",
+      "teachingRelationship": "德斯帕示范可控制的核心训练技术，波吉在安全距离观察；不出现第三人。",
+      "composition": "横向28:9无字知识图",
+      "allowedText": "none",
+      "anatomyAndTechniqueConstraints": "手足、绳索、把手、壶铃和支撑器械结构完整；关节自然，躯干不代偿，所有透明区域保留真实alpha。",
+      "prompt": "透明PNG，横向28:9无字知识插图。德斯帕以侧方三分之四视角做轻壶铃髋铰链提起准备：双脚稳落地，髋向后移、膝轻屈、脊柱自然可控制，双手把一只小壶铃贴近身体地握在小腿前方，壶铃完整可见且不穿过腿。波吉站在左侧观察壶铃与身体距离。只表达负荷贴近与髋部配合，不画圆背、猛拉、深蹲、箭头或文字。"
+    },
+    {
+      "file": "visual-06-chop-lift.png",
+      "role": "knowledge",
+      "topic": "Chop与Lift对角线",
+      "teachingRelationship": "德斯帕示范可控制的核心训练技术，波吉在安全距离观察；不出现第三人。",
+      "composition": "横向28:9无字知识图",
+      "allowedText": "none",
+      "anatomyAndTechniqueConstraints": "手足、绳索、把手、壶铃和支撑器械结构完整；关节自然，躯干不代偿，所有透明区域保留真实alpha。",
+      "prompt": "透明PNG，横向28:9无字知识插图。画面左侧为一台高低双滑轮绳索器械：上方和下方各有一个清晰滑轮与静止配重。德斯帕在右侧稳定分腿站姿，双手握一根短直把手，手位停在从右上胸前向左下髋旁的可控制对角线中段；绳索从高位滑轮连续连接，躯干不猛扭、膝不内扣。波吉站在远侧观察脚与骨盆方向。只画一个Chop静止方向，不画箭头、文字、速度线或第二个动作状态。"
+    },
+    {
+      "file": "visual-07-progress-breathing.png",
+      "role": "knowledge",
+      "topic": "稳定到动作的呼吸进阶",
+      "teachingRelationship": "德斯帕示范可控制的核心训练技术，波吉在安全距离观察；不出现第三人。",
+      "composition": "横向28:9无字知识图",
+      "allowedText": "none",
+      "anatomyAndTechniqueConstraints": "手足、绳索、把手、壶铃和支撑器械结构完整；关节自然，躯干不代偿，所有透明区域保留真实alpha。",
+      "prompt": "透明PNG，横向28:9无字知识插图。两个等比例独立状态横向排列。左侧德斯帕在半跪姿势，双手在胸前握轻把手抵抗侧方绳索拉力，躯干直立且能自然呼吸；右侧同一德斯帕站姿做轻阻力Pallof press推出位置，肩和骨盆仍稳定。波吉站在两种状态中间稍后方观察，不触碰器械。每个滑轮、连续绳索、把手、人物手脚完整。无箭头、无文字、无地面线。"
+    },
+    {
+      "file": "overview-01-anti-extension.png",
+      "role": "overview-item",
+      "topic": "抗伸展总览",
+      "teachingRelationship": "德斯帕示范可控制的核心训练技术，波吉在安全距离观察；不出现第三人。",
+      "composition": "横向4:3总览专用独立插图",
+      "allowedText": "none",
+      "anatomyAndTechniqueConstraints": "手足、绳索、把手、壶铃和支撑器械结构完整；关节自然，躯干不代偿，所有透明区域保留真实alpha。",
+      "prompt": "透明PNG，横向4:3总览专用独立插图。德斯帕在小高台上做高台平板支撑，身体从头、肩、髋到脚形成稳定斜线，手掌完整、腰不下沉。波吉站在左侧观察躯干而不触碰。构图必须与横幅知识图不同：从正面三分之四视角，人物完整。无文字、箭头或第二状态。"
+    },
+    {
+      "file": "overview-02-pallof.png",
+      "role": "overview-item",
+      "topic": "抗旋转总览",
+      "teachingRelationship": "德斯帕示范可控制的核心训练技术，波吉在安全距离观察；不出现第三人。",
+      "composition": "横向4:3总览专用独立插图",
+      "allowedText": "none",
+      "anatomyAndTechniqueConstraints": "手足、绳索、把手、壶铃和支撑器械结构完整；关节自然，躯干不代偿，所有透明区域保留真实alpha。",
+      "prompt": "透明PNG，横向4:3总览专用独立插图。德斯帕正面三分之四站姿，身体侧对画面右侧的胸高绳索滑轮，双手在胸前握把手准备缓慢推出；躯干正对前方、不转向滑轮。波吉站在后侧观察。滑轮、连续绳索、把手、配重和人物鞋子完整。无文字、箭头或横幅图同样构图。"
+    },
+    {
+      "file": "overview-03-carry.png",
+      "role": "overview-item",
+      "topic": "单臂行走总览",
+      "teachingRelationship": "德斯帕示范可控制的核心训练技术，波吉在安全距离观察；不出现第三人。",
+      "composition": "横向4:3总览专用独立插图",
+      "allowedText": "none",
+      "anatomyAndTechniqueConstraints": "手足、绳索、把手、壶铃和支撑器械结构完整；关节自然，躯干不代偿，所有透明区域保留真实alpha。",
+      "prompt": "透明PNG，横向4:3总览专用独立插图。德斯帕正面三分之四视角左手持一只小壶铃做短距离稳定行走，头、双肩和骨盆大致平齐，空手自然摆动，双脚完整。波吉在右侧观察，不做动作。不要地面线、文字、箭头、跑步姿势或与知识页相同视角。"
+    },
+    {
+      "file": "overview-04-anti-flexion.png",
+      "role": "overview-item",
+      "topic": "抗屈曲总览",
+      "teachingRelationship": "德斯帕示范可控制的核心训练技术，波吉在安全距离观察；不出现第三人。",
+      "composition": "横向4:3总览专用独立插图",
+      "allowedText": "none",
+      "anatomyAndTechniqueConstraints": "手足、绳索、把手、壶铃和支撑器械结构完整；关节自然，躯干不代偿，所有透明区域保留真实alpha。",
+      "prompt": "透明PNG，横向4:3总览专用独立插图。德斯帕面对画面略侧，以轻壶铃做高起始髋铰链提起的准备位，壶铃贴近身体、髋向后、膝轻屈、脊柱自然可控。波吉从左侧观察负荷距离。人物、壶铃和鞋子完整。不要圆背、箭头、文字或横幅图同样的侧面构图。"
+    },
+    {
+      "file": "overview-05-diagonal.png",
+      "role": "overview-item",
+      "topic": "对角线总览",
+      "teachingRelationship": "德斯帕示范可控制的核心训练技术，波吉在安全距离观察；不出现第三人。",
+      "composition": "横向4:3总览专用独立插图",
+      "allowedText": "none",
+      "anatomyAndTechniqueConstraints": "手足、绳索、把手、壶铃和支撑器械结构完整；关节自然，躯干不代偿，所有透明区域保留真实alpha。",
+      "prompt": "透明PNG，横向4:3总览专用独立插图。德斯帕站在高位绳索滑轮前，双手握把手处于从右上向左下移动前的稳定准备位，双脚分开、胸廓和骨盆面向前方，不扭腰。波吉站在远侧看滑轮和站位。滑轮、绳索、把手、配重和人物完整。无箭头、文字、速度线或第二动作状态。"
+    },
+    {
+      "file": "overview-06-breathing.png",
+      "role": "overview-item",
+      "topic": "呼吸与进阶总览",
+      "teachingRelationship": "德斯帕示范可控制的核心训练技术，波吉在安全距离观察；不出现第三人。",
+      "composition": "横向4:3总览专用独立插图",
+      "allowedText": "none",
+      "anatomyAndTechniqueConstraints": "手足、绳索、把手、壶铃和支撑器械结构完整；关节自然，躯干不代偿，所有透明区域保留真实alpha。",
+      "prompt": "透明PNG，横向4:3总览专用独立插图。德斯帕在半跪Pallof hold的静止姿势，双手把手停在胸前、躯干直立、表情平静自然呼吸；波吉在侧方用手势比出小小的一步，表示小步进阶但不画箭头或文字。低位滑轮、连续绳索、把手、人物手脚完整。无额外人物、地面线或装饰。"
+    }
+  ]
+}
+

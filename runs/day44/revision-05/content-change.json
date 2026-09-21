@@ -1,0 +1,17 @@
+{
+  "revision": "revision-05-inline-emphasis-mapped-mistakes",
+  "changedAt": "2026-09-21T03:13:23.000Z",
+  "scope": "Shared XHS template plus local Day44 XHS cards; website lesson content and imagery unchanged.",
+  "changes": [
+    "Removed the standalone key-action component; each knowledge page now emphasizes one existing bullet inside its existing text card.",
+    "Removed the standalone mistakes slide and its stale exported PNG.",
+    "Mapped the five existing course mistakes to their relevant action pages: anti-extension, Pallof, suitcase carry, Chop/Lift, and breathing progression."
+  ],
+  "deliberateDecision": "The highlighted text and the mistake text are both referenced from existing lesson content; no duplicate key-action copy or mistake copy was added. No day-specific CSS or script branch was added; no image was regenerated; the course HTML, homepage, shortlink, progress files, server, and older lessons remain unchanged.",
+  "verification": [
+    "Shared template tests passed: 16/16",
+    "Final 1080x1440 exports visually inspected for the inline emphasis and representative mapped mistakes",
+    "Shared browser verification passed at 320/390/768/1440px, including course interactions and all 8 XHS cards",
+    "ZIP CRC passed with cover plus slide-01 through slide-07 only"
+  ]
+}

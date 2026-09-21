@@ -6,6 +6,7 @@ const { chromium } = require("playwright");
 const ROOT = path.resolve(__dirname, "..");
 const WIDTH = 1080;
 const HEIGHT = 1440;
+const TOTAL_LESSON_DAYS = 77;
 
 function parseArgs() {
   const dayArg = process.argv.find((arg) => arg.startsWith("--day="));
@@ -619,7 +620,7 @@ function cover(deck) {
     <p class="lead">${deck.subtitle}。先答题，再翻答案页。</p>
     <div class="chips"><span class="chip orange">艾宾浩斯</span><span class="chip blue">间隔复习</span><span class="chip green">${totalQuestions}题自测</span></div>
     <div class="timeline">${slots}</div>
-    <div class="footer"><span>Day ${deck.day}/112</span><span>下午复习区</span></div>
+    <div class="footer"><span>Day ${deck.day}/${TOTAL_LESSON_DAYS}</span><span>下午复习区</span></div>
   </main>`);
 }
 
@@ -647,7 +648,7 @@ function questionPage(deck, pageIndex, groups) {
     <h1 class="h1">先自己答</h1>
     <p class="lead">每题 10 秒，别急着看答案。</p>
     ${cards}
-    <div class="footer"><span>Day ${deck.day}/112</span><span>下一页看答案</span></div>
+    <div class="footer"><span>Day ${deck.day}/${TOTAL_LESSON_DAYS}</span><span>下一页看答案</span></div>
   </main>`);
 }
 
@@ -675,7 +676,7 @@ function answerPage(deck, pageIndex, groups) {
     <h1 class="h1">对答案</h1>
     <p class="lead">错题不急着清零，隔天还能答对，才是真的记住。</p>
     <div class="answers">${answers}</div>
-    <div class="footer"><span>Day ${deck.day}/112</span><span>艾宾浩斯复习区</span></div>
+    <div class="footer"><span>Day ${deck.day}/${TOTAL_LESSON_DAYS}</span><span>艾宾浩斯复习区</span></div>
   </main>`);
 }
 
