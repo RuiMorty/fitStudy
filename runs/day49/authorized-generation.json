@@ -1,0 +1,360 @@
+{
+  "provider": "Lingzhi",
+  "preset": "quality",
+  "model": "gpt-image-2.5-sunburst",
+  "authorization": "runs/day49/retry-policy.json",
+  "hostCredentialCheck": "keychain-available-without-disclosing-secret",
+  "startedAt": "2026-09-28T11:44:00.851550+00:00",
+  "assets": [
+    {
+      "file": "visual-01-power-intent.png",
+      "role": "knowledge",
+      "status": "generated-pending-visual-quality",
+      "attempts": [
+        {
+          "providerRequestNumberForAsset": 1,
+          "output": "runs/day49/source/visual-01-power-intent.png",
+          "startedAt": "2026-09-28T11:44:00.851945+00:00",
+          "status": "generated-pending-visual-quality",
+          "completedAt": "2026-09-28T11:44:28.793049+00:00",
+          "returncode": 0,
+          "quality": {
+            "mode": "RGBA",
+            "size": [
+              2214,
+              710
+            ],
+            "alphaRange": [
+              0,
+              255
+            ],
+            "bytes": 984009,
+            "sha256": "e4ddf0f7638eab95e031d33bf23f5a0b76610741fa6d9b98c3154e9bb11c1970"
+          }
+        }
+      ],
+      "acceptedCandidate": "runs/day49/source/visual-01-power-intent.png"
+    },
+    {
+      "file": "visual-02-olympic-lifts.png",
+      "role": "knowledge",
+      "status": "generated-pending-visual-quality",
+      "attempts": [
+        {
+          "providerRequestNumberForAsset": 1,
+          "output": "runs/day49/source/visual-02-olympic-lifts.png",
+          "startedAt": "2026-09-28T11:44:28.832653+00:00",
+          "status": "generated-pending-visual-quality",
+          "completedAt": "2026-09-28T11:45:05.350433+00:00",
+          "returncode": 0,
+          "quality": {
+            "mode": "RGBA",
+            "size": [
+              2119,
+              742
+            ],
+            "alphaRange": [
+              0,
+              255
+            ],
+            "bytes": 1326571,
+            "sha256": "69e0a722a8473b84e59e4eeeff2f6b8d3f88dca842ca8dbf34d45813e3549d81"
+          }
+        }
+      ],
+      "acceptedCandidate": "runs/day49/source/visual-02-olympic-lifts.png"
+    },
+    {
+      "file": "visual-03-jump-landing.png",
+      "role": "knowledge",
+      "status": "generated-pending-visual-quality",
+      "attempts": [
+        {
+          "providerRequestNumberForAsset": 1,
+          "output": "runs/day49/source/visual-03-jump-landing.png",
+          "startedAt": "2026-09-28T11:45:05.382008+00:00",
+          "status": "generated-pending-visual-quality",
+          "completedAt": "2026-09-28T11:45:37.646319+00:00",
+          "returncode": 0,
+          "quality": {
+            "mode": "RGBA",
+            "size": [
+              2213,
+              711
+            ],
+            "alphaRange": [
+              0,
+              255
+            ],
+            "bytes": 1012591,
+            "sha256": "8c989d9550b65601f1328c29a67dc96eb31160c74d4f13059c18ffde343147ab"
+          }
+        }
+      ],
+      "acceptedCandidate": "runs/day49/source/visual-03-jump-landing.png"
+    },
+    {
+      "file": "visual-04-throws.png",
+      "role": "knowledge",
+      "status": "generated-pending-visual-quality",
+      "attempts": [
+        {
+          "providerRequestNumberForAsset": 1,
+          "output": "runs/day49/source/visual-04-throws.png",
+          "startedAt": "2026-09-28T11:45:37.740947+00:00",
+          "status": "generated-pending-visual-quality",
+          "completedAt": "2026-09-28T11:46:05.577123+00:00",
+          "returncode": 0,
+          "quality": {
+            "mode": "RGBA",
+            "size": [
+              2214,
+              710
+            ],
+            "alphaRange": [
+              0,
+              255
+            ],
+            "bytes": 784784,
+            "sha256": "d860e435f7755a6de425ca197fd9e87a81de3967555d2ddafa2cad416c3b83d6"
+          }
+        }
+      ],
+      "acceptedCandidate": "runs/day49/source/visual-04-throws.png"
+    },
+    {
+      "file": "visual-05-load-speed.png",
+      "role": "knowledge",
+      "status": "generated-pending-visual-quality",
+      "attempts": [
+        {
+          "providerRequestNumberForAsset": 1,
+          "output": "runs/day49/source/visual-05-load-speed.png",
+          "startedAt": "2026-09-28T11:46:05.603270+00:00",
+          "status": "generated-pending-visual-quality",
+          "completedAt": "2026-09-28T11:46:38.534276+00:00",
+          "returncode": 0,
+          "quality": {
+            "mode": "RGBA",
+            "size": [
+              2225,
+              707
+            ],
+            "alphaRange": [
+              0,
+              255
+            ],
+            "bytes": 1029437,
+            "sha256": "87451f51d99ce3fe46c7f3ed3ad390195493792291e81c65a62752ae1728bc43"
+          }
+        }
+      ],
+      "acceptedCandidate": "runs/day49/source/visual-05-load-speed.png"
+    },
+    {
+      "file": "visual-06-dosage-readiness.png",
+      "role": "knowledge",
+      "status": "generated-pending-visual-quality",
+      "attempts": [
+        {
+          "providerRequestNumberForAsset": 1,
+          "output": "runs/day49/source/visual-06-dosage-readiness.png",
+          "startedAt": "2026-09-28T11:46:38.561181+00:00",
+          "status": "generated-pending-visual-quality",
+          "completedAt": "2026-09-28T11:47:10.982660+00:00",
+          "returncode": 0,
+          "quality": {
+            "mode": "RGBA",
+            "size": [
+              2176,
+              722
+            ],
+            "alphaRange": [
+              0,
+              255
+            ],
+            "bytes": 1260757,
+            "sha256": "09822b847d587b874611948b4e9b7df5701c91f85083ace1f01d303b9dc7cc5e"
+          }
+        }
+      ],
+      "acceptedCandidate": "runs/day49/source/visual-06-dosage-readiness.png"
+    },
+    {
+      "file": "overview-01-power-intent.png",
+      "role": "overview-item",
+      "status": "generated-pending-visual-quality",
+      "attempts": [
+        {
+          "providerRequestNumberForAsset": 1,
+          "output": "runs/day49/source/overview-01-power-intent.png",
+          "startedAt": "2026-09-28T11:47:11.010849+00:00",
+          "status": "generated-pending-visual-quality",
+          "completedAt": "2026-09-28T11:47:44.970448+00:00",
+          "returncode": 0,
+          "quality": {
+            "mode": "RGBA",
+            "size": [
+              1448,
+              1086
+            ],
+            "alphaRange": [
+              0,
+              255
+            ],
+            "bytes": 717882,
+            "sha256": "0d9ab9e8ed9109a522c027672374fd7ccc3ced85250ae52a7645bb2001e2949e"
+          }
+        }
+      ],
+      "acceptedCandidate": "runs/day49/source/overview-01-power-intent.png"
+    },
+    {
+      "file": "overview-02-olympic-lifts.png",
+      "role": "overview-item",
+      "status": "generated-pending-visual-quality",
+      "attempts": [
+        {
+          "providerRequestNumberForAsset": 1,
+          "output": "runs/day49/source/overview-02-olympic-lifts.png",
+          "startedAt": "2026-09-28T11:47:44.993715+00:00",
+          "status": "generated-pending-visual-quality",
+          "completedAt": "2026-09-28T11:48:27.517371+00:00",
+          "returncode": 0,
+          "quality": {
+            "mode": "RGBA",
+            "size": [
+              1448,
+              1086
+            ],
+            "alphaRange": [
+              0,
+              255
+            ],
+            "bytes": 890863,
+            "sha256": "3b382ce52ed9f568caa0e1cfcc90a92f65454f73e04f654378b4a02e98fa74da"
+          }
+        }
+      ],
+      "acceptedCandidate": "runs/day49/source/overview-02-olympic-lifts.png"
+    },
+    {
+      "file": "overview-03-jump-landing.png",
+      "role": "overview-item",
+      "status": "generated-pending-visual-quality",
+      "attempts": [
+        {
+          "providerRequestNumberForAsset": 1,
+          "output": "runs/day49/source/overview-03-jump-landing.png",
+          "startedAt": "2026-09-28T11:48:27.538539+00:00",
+          "status": "generated-pending-visual-quality",
+          "completedAt": "2026-09-28T11:49:08.301968+00:00",
+          "returncode": 0,
+          "quality": {
+            "mode": "RGBA",
+            "size": [
+              1448,
+              1086
+            ],
+            "alphaRange": [
+              0,
+              255
+            ],
+            "bytes": 981762,
+            "sha256": "979553c820110ab483fd510ace300f003941dd4286f23b416847e178fc184178"
+          }
+        }
+      ],
+      "acceptedCandidate": "runs/day49/source/overview-03-jump-landing.png"
+    },
+    {
+      "file": "overview-04-throws.png",
+      "role": "overview-item",
+      "status": "generated-pending-visual-quality",
+      "attempts": [
+        {
+          "providerRequestNumberForAsset": 1,
+          "output": "runs/day49/source/overview-04-throws.png",
+          "startedAt": "2026-09-28T11:49:08.320330+00:00",
+          "status": "generated-pending-visual-quality",
+          "completedAt": "2026-09-28T11:49:43.046541+00:00",
+          "returncode": 0,
+          "quality": {
+            "mode": "RGBA",
+            "size": [
+              1448,
+              1086
+            ],
+            "alphaRange": [
+              0,
+              255
+            ],
+            "bytes": 1058964,
+            "sha256": "33db004d81011468bf7b92b820f4cc458f7643e1fdbf15027bb92a2a3e795d20"
+          }
+        }
+      ],
+      "acceptedCandidate": "runs/day49/source/overview-04-throws.png"
+    },
+    {
+      "file": "overview-05-load-speed.png",
+      "role": "overview-item",
+      "status": "generated-pending-visual-quality",
+      "attempts": [
+        {
+          "providerRequestNumberForAsset": 1,
+          "output": "runs/day49/source/overview-05-load-speed.png",
+          "startedAt": "2026-09-28T11:49:43.069749+00:00",
+          "status": "generated-pending-visual-quality",
+          "completedAt": "2026-09-28T11:50:21.117100+00:00",
+          "returncode": 0,
+          "quality": {
+            "mode": "RGBA",
+            "size": [
+              1448,
+              1086
+            ],
+            "alphaRange": [
+              0,
+              255
+            ],
+            "bytes": 871287,
+            "sha256": "d93ddb7e4346b3db6c4ec32886cb5ffaa49a8b242d27bc7317c74f780f9fdef4"
+          }
+        }
+      ],
+      "acceptedCandidate": "runs/day49/source/overview-05-load-speed.png"
+    },
+    {
+      "file": "overview-06-dosage-readiness.png",
+      "role": "overview-item",
+      "status": "generated-pending-visual-quality",
+      "attempts": [
+        {
+          "providerRequestNumberForAsset": 1,
+          "output": "runs/day49/source/overview-06-dosage-readiness.png",
+          "startedAt": "2026-09-28T11:50:21.141390+00:00",
+          "status": "generated-pending-visual-quality",
+          "completedAt": "2026-09-28T11:50:55.261720+00:00",
+          "returncode": 0,
+          "quality": {
+            "mode": "RGBA",
+            "size": [
+              1448,
+              1086
+            ],
+            "alphaRange": [
+              0,
+              255
+            ],
+            "bytes": 1045259,
+            "sha256": "81c5e941dd1fab8c72424ba349cd73fcf9d2fbd6d92829248f170c0788fc1972"
+          }
+        }
+      ],
+      "acceptedCandidate": "runs/day49/source/overview-06-dosage-readiness.png"
+    }
+  ],
+  "status": "awaiting-visual-quality",
+  "completedAt": "2026-09-28T11:50:55.288016+00:00"
+}

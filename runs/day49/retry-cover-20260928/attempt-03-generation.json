@@ -1,0 +1,33 @@
+{
+  "provider": "Lingzhi",
+  "preset": "quality",
+  "model": "gpt-image-2.5-sunburst",
+  "authorization": "runs/day49/retry-policy.json",
+  "hostCredentialCheck": "keychain-available-without-disclosing-secret",
+  "previousFailures": [
+    "runs/day49/failure.json",
+    "runs/day49/retry-cover-20260928/failure-attempt-02.json"
+  ],
+  "providerRequestNumberForCover": 1,
+  "status": "awaiting-visual-quality",
+  "attempt": {
+    "file": "cover-attempt-03.png",
+    "role": "cover-revision",
+    "startedAt": "2026-09-28T11:38:30.504602+00:00",
+    "status": "generated-pending-visual-quality",
+    "output": "runs/day49/retry-cover-20260928/cover-attempt-03.png",
+    "completedAt": "2026-09-28T11:39:02.031012+00:00",
+    "returncode": 0,
+    "size": [
+      1672,
+      941
+    ],
+    "bytes": 1088520,
+    "alphaRange": [
+      0,
+      255
+    ],
+    "sha256": "95937dbaf339026d0ba6f178ebf0e107995d99eea2efdfc5ed4e7e76ad05440f"
+  },
+  "completedAt": "2026-09-28T11:39:02.096459+00:00"
+}

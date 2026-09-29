@@ -1,0 +1,16 @@
+{
+  "status": "failed-no-retry",
+  "failedAt": "2026-09-28T02:11:00Z",
+  "asset": "cover.png",
+  "role": "cover",
+  "request": {
+    "provider": "Lingzhi",
+    "preset": "quality",
+    "model": "gpt-image-2.5-sunburst",
+    "attempt": 1
+  },
+  "result": "The request returned runs/day48/source/cover.png after a delayed write, but it is 1672x941 and hasAlpha: no. Visual inspection confirms that the gray checkerboard is embedded in the image pixels.",
+  "verification": "sips reports hasAlpha: no; SHA-256 is 3ccedb43d65dfd5491958d4154e2d18b9ad51fe76ef02b0c33306328e8a44cc4. The source file is retained as failed evidence and is not eligible for preprocessing.",
+  "policy": "No automatic retry. Do not request remaining images, preprocess, render, install, test, deploy, or publish this lesson.",
+  "nextAction": "Wait for the user to explicitly authorize one revised cover-image request with a stricter transparent-output constraint."
+}

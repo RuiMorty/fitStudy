@@ -1,0 +1,25 @@
+{
+  "updatedAt": "2026-09-28T11:20:00Z",
+  "authorization": "用户明确要求：每个照片可以重试5次。",
+  "scope": "Day49 的每一项灵智图片素材。",
+  "policy": {
+    "initialProviderRequests": 1,
+    "maximumAdditionalRetries": 5,
+    "maximumProviderRequestsPerAsset": 6,
+    "retryCondition": "Only retry after a provider request or output-quality failure, with a revised prompt and a preserved attempt record.",
+    "neverRetryBlindly": true,
+    "stopOnCredentialOrQuotaFailure": true
+  },
+  "cover": {
+    "localGeneratorAttempts": 3,
+    "providerRequestsSent": 1,
+    "remainingProviderRequestBudget": 5,
+    "acceptedAsset": "runs/day49/retry-cover-20260928/cover-attempt-03.png",
+    "blockedBy": null,
+    "credentialStatus": "Host execution can access the macOS Keychain entry. The LINGZHI_API_KEY environment variable is not set in the inspected host shell; this does not block the skill's Keychain fallback."
+  },
+  "boundaries": [
+    "The cover is usable and reviewed; the remaining twelve planned assets may now be requested.",
+    "Do not render, install, deploy, change public pages, short links, or formal progress without their separate authorization."
+  ]
+}

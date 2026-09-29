@@ -1,0 +1,23 @@
+{
+  "provider": "lingzhi",
+  "model": "gpt-image-2.5-sunburst",
+  "endpoint": "https://lingzhi.agibot.com/v1/images/generations",
+  "generationRequests": 1,
+  "status": "awaiting-user-review",
+  "output": "images/warmup-preview-v1.png",
+  "sha256": "81fc3473c42d7357eb5e6a9fd89345998a1f2904be994669f0c5e56008277a95",
+  "dimensions": [
+    1086,
+    1448
+  ],
+  "localQA": {
+    "file": "passed",
+    "layoutAndText": "readable",
+    "exerciseAccuracy": "needs-revision-before-publication",
+    "notes": [
+      "死虫式、鸟狗式的对侧肢体关系在当前视角中不够明确，需修正后用于教学。",
+      "侧卧开书式为动作中间状态，头颈支撑和屈髋幅度需优化。"
+    ]
+  },
+  "published": false
+}

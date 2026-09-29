@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2160" height="6960" viewBox="0 0 2160 6960">
+  <defs>
+    <linearGradient id="header" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#12334A"/>
+      <stop offset="1" stop-color="#23647A"/>
+    </linearGradient>
+    <filter id="shadow" x="-8%" y="-4%" width="116%" height="112%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#183247" flood-opacity=".17"/>
+    </filter>
+    <style>
+      .cn { font-family: 'PingFang SC','Noto Sans CJK SC','Microsoft YaHei',sans-serif; }
+      .title { font-size: 108px; font-weight: 800; fill: #FFFFFF; letter-spacing: 3px; }
+      .subtitle { font-size: 38px; font-weight: 600; fill: #D8EEF0; }
+      .caption { font-size: 30px; font-weight: 650; fill: #55717E; }
+      .footer { font-size: 28px; font-weight: 650; fill: #6B7E87; }
+    </style>
+  </defs>
+
+  <rect width="2160" height="6960" fill="#F7F5EF"/>
+  <rect width="2160" height="480" fill="url(#header)"/>
+  <circle cx="1910" cy="-74" r="280" fill="#65C7B8" opacity=".18"/>
+  <circle cx="2028" cy="198" r="124" fill="#F7B55A" opacity=".24"/>
+  <text class="cn title" x="140" y="279">今日错题复盘</text>
+
+  <!-- Sources: only the ten labeled PNGs below. 04 intentionally uses the direction-corrected v4 asset. -->
+  <g filter="url(#shadow)">
+    <rect x="140" y="600" width="800" height="1200" rx="24" fill="#FFFFFF"/>
+    <image href="../../xhs-wrong-notebook/2026-09-21-anatomy/01-muscle-tissue-labeled.png" x="140" y="600" width="800" height="1200"/>
+    <rect x="1220" y="600" width="800" height="1200" rx="24" fill="#FFFFFF"/>
+    <image href="../../xhs-wrong-notebook/2026-09-21-anatomy/02-plasma-labeled.png" x="1220" y="600" width="800" height="1200"/>
+
+    <rect x="140" y="1840" width="800" height="1200" rx="24" fill="#FFFFFF"/>
+    <image href="../../xhs-wrong-notebook/2026-09-21-anatomy/03-knee-joint-labeled.png" x="140" y="1840" width="800" height="1200"/>
+    <rect x="1220" y="1840" width="800" height="1200" rx="24" fill="#FFFFFF"/>
+    <image href="../../xhs-wrong-notebook/2026-09-21-anatomy/04-scapular-movement-labeled-v4.png" x="1220" y="1840" width="800" height="1200"/>
+
+    <rect x="140" y="3080" width="800" height="1200" rx="24" fill="#FFFFFF"/>
+    <image href="../../xhs-wrong-notebook/2026-09-21-anatomy/05-pelvic-girdle-muscles-labeled.png" x="140" y="3080" width="800" height="1200"/>
+    <rect x="1220" y="3080" width="800" height="1200" rx="24" fill="#FFFFFF"/>
+    <image href="../../xhs-wrong-notebook/2026-09-21-anatomy/06-pelvic-joints-labeled.png" x="1220" y="3080" width="800" height="1200"/>
+
+    <rect x="140" y="4320" width="800" height="1200" rx="24" fill="#FFFFFF"/>
+    <image href="../../xhs-wrong-notebook/2026-09-21-anatomy/07-iliopsoas-origin-labeled.png" x="140" y="4320" width="800" height="1200"/>
+    <rect x="1220" y="4320" width="800" height="1200" rx="24" fill="#FFFFFF"/>
+    <image href="../../xhs-wrong-notebook/2026-09-21-anatomy/08-intervertebral-discs-labeled.png" x="1220" y="4320" width="800" height="1200"/>
+
+    <rect x="140" y="5560" width="800" height="1200" rx="24" fill="#FFFFFF"/>
+    <image href="../../xhs-wrong-notebook/2026-09-21-anatomy/09-biceps-origins-labeled.png" x="140" y="5560" width="800" height="1200"/>
+    <rect x="1220" y="5560" width="800" height="1200" rx="24" fill="#FFFFFF"/>
+    <image href="../../xhs-wrong-notebook/2026-09-21-anatomy/10-glenoid-labrum-labeled.png" x="1220" y="5560" width="800" height="1200"/>
+  </g>
+</svg>

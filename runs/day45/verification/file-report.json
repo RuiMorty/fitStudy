@@ -1,0 +1,45 @@
+{
+  "status": "passed",
+  "checkedAt": "2026-09-21T11:47:12Z",
+  "installedFiles": 30,
+  "xhsCards": {
+    "count": 8,
+    "dimensions": [1080, 1440],
+    "renderMode": "RGB PNG on opaque common-template cards"
+  },
+  "transparentAssets": {
+    "generatedSource": 13,
+    "processedAssets": 15,
+    "alphaRange": [0, 255]
+  },
+  "archive": {
+    "path": "xhs/day45/day45-xhs.zip",
+    "entries": 27,
+    "crc": "passed",
+    "sha256": "530dfaebfc4ecbe1896fcb1623677feed2b8eaf1ad2708888f354f03e5c685a7"
+  },
+  "mainArtifacts": {
+    "html": {
+      "path": "html/day45-柔韧性分类与拉伸技术.html",
+      "sha256": "5dacbd3eb57fb8981aed9d316c1d7c3b47d80f2858b1336116a89a6935367a0d"
+    },
+    "thumbnail": {
+      "path": "html/thumbs/day45-flexibility-stretching-pnf-thumbnail.png",
+      "sha256": "6903ad6651e51ee5df9748a8313f21e863041cbf14a34dc946c58322c0a60e31"
+    },
+    "detail": {
+      "path": "html/assets/阶段2训练科学/day45-柔韧性分类与拉伸技术.png",
+      "sha256": "062ef06f33750afe79abb6be8d978d3a387c88511a38a866057faecacb5c5bc2"
+    }
+  },
+  "deliveryBoundary": {
+    "shortlinkExists": false,
+    "publicUrlPresent": false,
+    "progressJson": "unchanged day 39",
+    "hiddenProgressJson": "unchanged day 33"
+  },
+  "revision01": {
+    "changedOnly": ["detail overview image", "two overview art assets", "slide-01 overview card", "slides 02–06 text", "course HTML", "ZIP"],
+    "originalAssetsRetainedAt": "runs/day45/revision-01/"
+  }
+}

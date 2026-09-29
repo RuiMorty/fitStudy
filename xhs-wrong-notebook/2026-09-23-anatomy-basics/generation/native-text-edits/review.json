@@ -1,0 +1,131 @@
+{
+  "schemaVersion": "1.0",
+  "date": "2026-09-23",
+  "updatedAt": "2026-09-24",
+  "status": "awaiting-user-review",
+  "purpose": "今日错题卡图：原生中文文字生成候选",
+  "generationMethod": {
+    "provider": "Lingzhi",
+    "model": "gpt-image-2.5-sunburst",
+    "endpoint": "/v1/images/edits",
+    "perAssetPostCount": 1,
+    "referenceImages": [
+      {
+        "role": "fixed-presenter-model",
+        "path": "../../../2026-09-22-joint-actions/00-rick-muscular-cartoon-model-v4.png",
+        "sha256": "9df6044701cdeb4037f5b8573f266e634fe0e761b975d5c0ab51a351a1f5b1e4"
+      },
+      {
+        "role": "card-style-reference",
+        "path": "../../../2026-09-22-joint-actions/04-肩关节动作地图-修订.png",
+        "sha256": "b704fa506f6c74143daec10c708c39ed800788feef50e4a29f1c156036e2c6a3"
+      }
+    ],
+    "textHandling": "标题、红色笔刷下划线、中文标签、引线与底部 TIP 均在图像生成请求中原生生成；没有本地文字叠加。"
+  },
+  "localVisualCheck": {
+    "status": "passed",
+    "checkedAt": "2026-09-24",
+    "scope": "7 张正式候选图的尺寸、文件完整性、人物模型、中文文本可读性、主要解剖关系与样式一致性；01 已复核为四组常见固有背肌标注，05 已复核为成骨层与破骨细胞改建位点分开呈现，06 已复核为四种肌束架构比较并列出对应肌肉例子。",
+    "note": "这只是本地目检，不等同于用户验收。"
+  },
+  "assets": [
+    {
+      "id": "01",
+      "title": "背部深层肌",
+      "file": "../../images/01-背部深层肌.png",
+      "sourceRaw": "../native-text-edits-revision-02/raw/01-01-deep-back-muscles-native-text.png",
+      "revision": "2026-09-24-revision-02",
+      "revisionReason": "删除背浅层肌对照，补全夹肌、竖脊肌、横突棘肌和节段短肌；竖脊肌作为主结构呈现。",
+      "outputSha256": "fe48588a0ed217c6246d24d0e709853a4261db05f17eb8edd1e4309f6a51064c",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": "02",
+      "title": "大收肌：固定端决定谁动",
+      "file": "../../images/02-大收肌-固定端决定谁动.png",
+      "sourceRaw": "raw/02-02-adductor-magnus-fixed-end-native-text.png",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": "03",
+      "title": "上肢定位地图",
+      "file": "../../images/03-上肢定位地图.png",
+      "sourceRaw": "raw/03-03-upper-limb-location-map-native-text.png",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": "04",
+      "title": "小腿三群与腓肠肌",
+      "file": "../../images/04-小腿三群与腓肠肌.png",
+      "sourceRaw": "raw/04-04-leg-compartments-gastrocnemius-native-text.png",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": "05",
+      "title": "骨膜、骨内膜与骨细胞",
+      "file": "../../images/05-骨膜-骨内膜与骨细胞.png",
+      "sourceRaw": "../native-text-edits-revision-04/raw/05-05-bone-membranes-cells-native-text.png",
+      "revision": "2026-09-24-revision-04",
+      "revisionReason": "把骨原细胞和成骨细胞明确画在骨膜内层（成骨层），把破骨细胞明确画在邻近骨表面的改建位点。",
+      "outputSha256": "7e969a4aaf780078379ca46b82853029263e00582f761ec1896fc2759628fa28",
+      "attempts": [
+        {
+          "variant": "native-text-edits-revision-03",
+          "postCount": 1,
+          "status": "failed-safety-rejection"
+        },
+        {
+          "variant": "native-text-edits-revision-04",
+          "postCount": 1,
+          "status": "succeeded"
+        }
+      ],
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": "06",
+      "title": "羽状肌",
+      "file": "../../images/06-羽状肌.png",
+      "sourceRaw": "../native-text-edits-revision-05/raw/06-06-pennate-muscles-native-text.png",
+      "revision": "2026-09-24-revision-05",
+      "revisionReason": "在平行肌、单羽肌、双羽肌、多羽肌架构图中分别加入缝匠肌、伸趾长肌、股直肌、三角肌的对应例子。",
+      "outputSha256": "be49e35810098e839908a23f5d66c0095b08010025c39b8325d2d5972a5802f6",
+      "attempts": [
+        {
+          "variant": "native-text-edits",
+          "postCount": 1,
+          "status": "failed-safety-rejection"
+        },
+        {
+          "variant": "native-text-edits-revision-03",
+          "postCount": 1,
+          "status": "succeeded"
+        },
+        {
+          "variant": "native-text-edits-revision-05",
+          "postCount": 1,
+          "status": "succeeded"
+        }
+      ],
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": "07",
+      "title": "呼吸系统与骨连结",
+      "file": "../../images/07-呼吸系统与骨连结.png",
+      "sourceRaw": "raw/07-07-respiratory-and-bone-connections-native-text.png",
+      "status": "awaiting-user-review"
+    }
+  ],
+  "preliminaryArtifacts": {
+    "textOverlay": "../reference-edits/text-overlay-preliminary/",
+    "supersededNativeText": [
+      "replaced-by-revision-02/01-背部深层肌-v1-多裂肌单独强调.png",
+      "replaced-by-revision-04/05-骨膜-骨内膜与骨细胞-v1-细胞位置未明确.png",
+      "replaced-by-revision-05/06-羽状肌-v1-无肌肉例子.png"
+    ],
+    "status": "retained-for-traceability-not-for-delivery"
+  },
+  "nextAction": "等待用户验收。"
+}

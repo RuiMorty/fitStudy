@@ -1,0 +1,513 @@
+{
+  "processedAt": "2026-09-28T03:45:03.964184+00:00",
+  "method": "trim near-transparent noise; reviewed crop; uniform scale; transparent margin",
+  "assets": [
+    {
+      "source": "runs/day48/retry-budget-20260928/cover-attempt-03.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "sourceSha256": "d61c7cd6c6d688809d14bcf40046a5d516dcd4256d8797b44306f8359fc42961",
+      "reviewedCrop": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "visibleCrop": [
+        31,
+        55,
+        1654,
+        829
+      ],
+      "output": "runs/day48/assets/cover.png",
+      "size": [
+        1600,
+        900
+      ],
+      "subjectSize": [
+        1492,
+        712
+      ],
+      "offset": [
+        54,
+        94
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "无字封面；第3次请求通过真透明与构图检查，前两次失败文件保留"
+    },
+    {
+      "source": "runs/day48/source/visual-01-general-specific.png",
+      "sourceSize": [
+        2120,
+        742
+      ],
+      "sourceSha256": "8487afb058f0cb48d90cbbf338de9c2a00698d64a40a3134d5b6d74161b821d8",
+      "reviewedCrop": [
+        0,
+        0,
+        2120,
+        742
+      ],
+      "visibleCrop": [
+        222,
+        0,
+        2085,
+        721
+      ],
+      "output": "runs/day48/assets/visual-01-general-specific.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1863,
+        721
+      ],
+      "offset": [
+        468,
+        89
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "一般与专项热身"
+    },
+    {
+      "source": "runs/day48/source/visual-02-raise.png",
+      "sourceSize": [
+        2215,
+        710
+      ],
+      "sourceSha256": "8ac17abf5b0395ded319c696e7ec7b9de2f5fa0fe5ff4ab41ae1f2e92905e12d",
+      "reviewedCrop": [
+        0,
+        0,
+        2215,
+        710
+      ],
+      "visibleCrop": [
+        719,
+        0,
+        1487,
+        710
+      ],
+      "output": "runs/day48/assets/visual-02-raise.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        768,
+        710
+      ],
+      "offset": [
+        1016,
+        95
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "Raise逐步升温"
+    },
+    {
+      "source": "runs/day48/source/visual-03-activate-mobilize.png",
+      "sourceSize": [
+        2215,
+        710
+      ],
+      "sourceSha256": "e61fe56ccbf48345987bcd8fac20cd129cfe9eba128bdf447fe789fd8b4805da",
+      "reviewedCrop": [
+        0,
+        0,
+        2215,
+        710
+      ],
+      "visibleCrop": [
+        18,
+        0,
+        2208,
+        666
+      ],
+      "output": "runs/day48/assets/visual-03-activate-mobilize.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        2190,
+        666
+      ],
+      "offset": [
+        305,
+        117
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "Activate与Mobilize"
+    },
+    {
+      "source": "runs/day48/source/visual-04-potentiate.png",
+      "sourceSize": [
+        2111,
+        745
+      ],
+      "sourceSha256": "222848e88ff1e65b450e1f083c8601a291b7add67a09b91947553ac9accda8bf",
+      "reviewedCrop": [
+        0,
+        0,
+        2111,
+        745
+      ],
+      "visibleCrop": [
+        40,
+        64,
+        2107,
+        669
+      ],
+      "output": "runs/day48/assets/visual-04-potentiate.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        2067,
+        605
+      ],
+      "offset": [
+        366,
+        147
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "专项渐进准备组"
+    },
+    {
+      "source": "runs/day48/source/visual-05-stretching.png",
+      "sourceSize": [
+        2240,
+        702
+      ],
+      "sourceSha256": "a440fbdafce64a1d79962bcccad4d116f1b278043ed2d6c331ab18c150311fc6",
+      "reviewedCrop": [
+        0,
+        0,
+        2240,
+        702
+      ],
+      "visibleCrop": [
+        49,
+        8,
+        2146,
+        667
+      ],
+      "output": "runs/day48/assets/visual-05-stretching.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        2097,
+        659
+      ],
+      "offset": [
+        351,
+        120
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "动态与静态拉伸时机"
+    },
+    {
+      "source": "runs/day48/source/visual-06-cooldown-recovery.png",
+      "sourceSize": [
+        2075,
+        758
+      ],
+      "sourceSha256": "d4461aa0cbee763102330229dab0a54592e1965476d628e116efde11d6e5193c",
+      "reviewedCrop": [
+        0,
+        0,
+        2075,
+        758
+      ],
+      "visibleCrop": [
+        619,
+        0,
+        1469,
+        756
+      ],
+      "output": "runs/day48/assets/visual-06-cooldown-recovery.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        850,
+        756
+      ],
+      "offset": [
+        975,
+        72
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "整理与恢复记录"
+    },
+    {
+      "source": "runs/day48/source/overview-01-general-specific.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "e29ccc7435cddd727672537882492152553fe7dd533578d12c977eb663545064",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        7,
+        158,
+        1448,
+        859
+      ],
+      "output": "runs/day48/assets/overview-01-general-specific.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1441,
+        701
+      ],
+      "offset": [
+        79,
+        249
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day48/source/overview-02-raise.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "266aa856c04f17fe98af01532942e0d3abe3201ac3db4a9489fc34bc6ba53dd8",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        270,
+        12,
+        1149,
+        1061
+      ],
+      "output": "runs/day48/assets/overview-02-raise.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        879,
+        1049
+      ],
+      "offset": [
+        360,
+        75
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day48/source/overview-03-activate-mobilize.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "be2a6ba0ccf218760daec32bf4c3d62991d470d1fb79dcbd6e179458318da4c0",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        75,
+        0,
+        1380,
+        1062
+      ],
+      "output": "runs/day48/assets/overview-03-activate-mobilize.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1298,
+        1056
+      ],
+      "offset": [
+        151,
+        72
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day48/source/overview-04-potentiate.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "2fab95ecbc20ea6e46dce16d818c93f46a221e572f02298068a75f48e2ff3e0c",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        66,
+        59,
+        1442,
+        991
+      ],
+      "output": "runs/day48/assets/overview-04-potentiate.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1376,
+        932
+      ],
+      "offset": [
+        112,
+        134
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day48/source/overview-05-stretching.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "94a552363d73a9705140b98317d38c9ec76af28d5dacb87291ac7b710854540f",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        130,
+        0,
+        1335,
+        1066
+      ],
+      "output": "runs/day48/assets/overview-05-stretching.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1194,
+        1056
+      ],
+      "offset": [
+        203,
+        72
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day48/source/overview-06-cooldown-recovery.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "23ce146bd6350eba354f7ca072a4a509036a80a86fe404992bc239bfa1a91d46",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        171,
+        11,
+        1224,
+        1075
+      ],
+      "output": "runs/day48/assets/overview-06-cooldown-recovery.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1045,
+        1056
+      ],
+      "offset": [
+        277,
+        72
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    }
+  ]
+}

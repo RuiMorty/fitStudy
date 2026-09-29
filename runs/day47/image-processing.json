@@ -1,0 +1,513 @@
+{
+  "processedAt": "2026-09-27T09:23:37.060834+00:00",
+  "method": "trim near-transparent noise; reviewed crop; uniform scale; transparent margin",
+  "assets": [
+    {
+      "source": "runs/day47/source/cover.png",
+      "sourceSize": [
+        1672,
+        940
+      ],
+      "sourceSha256": "db0d840c43eeac09600e218fc89e09d87d6b4fef4d7728d52bfd89b1724eaf0e",
+      "reviewedCrop": [
+        0,
+        0,
+        1672,
+        940
+      ],
+      "visibleCrop": [
+        21,
+        166,
+        1659,
+        799
+      ],
+      "output": "runs/day47/assets/cover.png",
+      "size": [
+        1600,
+        900
+      ],
+      "subjectSize": [
+        1492,
+        577
+      ],
+      "offset": [
+        54,
+        161
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "无字封面；全身与锥桶完整"
+    },
+    {
+      "source": "runs/day47/source/visual-01-phases.png",
+      "sourceSize": [
+        2209,
+        712
+      ],
+      "sourceSha256": "7d816b959a543e26be081f2106fdf5c847c2417000982333401583fd1a8a9cd5",
+      "reviewedCrop": [
+        0,
+        0,
+        2209,
+        712
+      ],
+      "visibleCrop": [
+        34,
+        14,
+        2184,
+        677
+      ],
+      "output": "runs/day47/assets/visual-01-phases.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        2150,
+        663
+      ],
+      "offset": [
+        325,
+        118
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "冲刺三个阶段"
+    },
+    {
+      "source": "runs/day47/source/visual-02-acceleration.png",
+      "sourceSize": [
+        2210,
+        711
+      ],
+      "sourceSha256": "971ca74c930d393646aa3019b6561bc90e221771533d03bfac4d7a138d2296f7",
+      "reviewedCrop": [
+        0,
+        0,
+        2210,
+        711
+      ],
+      "visibleCrop": [
+        321,
+        0,
+        1911,
+        676
+      ],
+      "output": "runs/day47/assets/visual-02-acceleration.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1590,
+        676
+      ],
+      "offset": [
+        605,
+        112
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "自然前倾与向后推地"
+    },
+    {
+      "source": "runs/day47/source/visual-03-max-speed.png",
+      "sourceSize": [
+        2209,
+        712
+      ],
+      "sourceSha256": "a7b8ac1e157fe873539798a145f00d86b41103166e342cad9b98c66d3af96372",
+      "reviewedCrop": [
+        0,
+        0,
+        2209,
+        712
+      ],
+      "visibleCrop": [
+        378,
+        16,
+        1790,
+        702
+      ],
+      "output": "runs/day47/assets/visual-03-max-speed.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1412,
+        686
+      ],
+      "offset": [
+        694,
+        107
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "高速度姿态与节奏"
+    },
+    {
+      "source": "runs/day47/source/visual-04-cut.png",
+      "sourceSize": [
+        2210,
+        711
+      ],
+      "sourceSha256": "ed6a7cd64d6e10d6b6f05147f36f0733cbc17edf26101d18aa6b1c5112375400",
+      "reviewedCrop": [
+        0,
+        0,
+        2210,
+        711
+      ],
+      "visibleCrop": [
+        16,
+        12,
+        2198,
+        676
+      ],
+      "output": "runs/day47/assets/visual-04-cut.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        2182,
+        664
+      ],
+      "offset": [
+        309,
+        118
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "减速、支撑与转向"
+    },
+    {
+      "source": "runs/day47/source/visual-05-reactive.png",
+      "sourceSize": [
+        2210,
+        712
+      ],
+      "sourceSha256": "ca390b6af8a16b690daccdd796096c794715b06f6ea2e70bc27a7840d85b6fd9",
+      "reviewedCrop": [
+        0,
+        0,
+        2210,
+        712
+      ],
+      "visibleCrop": [
+        121,
+        8,
+        2028,
+        658
+      ],
+      "output": "runs/day47/assets/visual-05-reactive.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1907,
+        650
+      ],
+      "offset": [
+        446,
+        125
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "信号后才决定方向"
+    },
+    {
+      "source": "runs/day47/source/visual-06-programming.png",
+      "sourceSize": [
+        2210,
+        711
+      ],
+      "sourceSha256": "8ae3b9cb7b8b072f10accb909f08ebd7fdf51afd41e11a4c2ba7e0ec224d4b33",
+      "reviewedCrop": [
+        0,
+        0,
+        2210,
+        711
+      ],
+      "visibleCrop": [
+        442,
+        9,
+        1763,
+        701
+      ],
+      "output": "runs/day47/assets/visual-06-programming.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1321,
+        692
+      ],
+      "offset": [
+        739,
+        104
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "高质量重复与恢复"
+    },
+    {
+      "source": "runs/day47/source/overview-01-phases.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "7b39470a3d93c036e1a1f8926ba18a02902eff929b15f6b2001493a88173b425",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        42,
+        156,
+        1432,
+        858
+      ],
+      "output": "runs/day47/assets/overview-01-phases.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1390,
+        702
+      ],
+      "offset": [
+        105,
+        249
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day47/source/overview-02-acceleration.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "9555728727807c90462f8305ad89995a64efea75492788ab88856dbe13a6058d",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        16,
+        113,
+        1432,
+        920
+      ],
+      "output": "runs/day47/assets/overview-02-acceleration.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1416,
+        807
+      ],
+      "offset": [
+        92,
+        196
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day47/source/overview-03-max-speed.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "d828b93c08bb10d46e63a8f1674a4c0e5247423fb272eb10b4c5582f618f8c8d",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        200,
+        14,
+        1246,
+        1069
+      ],
+      "output": "runs/day47/assets/overview-03-max-speed.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1046,
+        1055
+      ],
+      "offset": [
+        277,
+        72
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day47/source/overview-04-cut.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "555083af1f78b19cb45497b79239126a7015dfe0e2c52c93efaef318550e24bf",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        32,
+        25,
+        1414,
+        1022
+      ],
+      "output": "runs/day47/assets/overview-04-cut.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1382,
+        997
+      ],
+      "offset": [
+        109,
+        101
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day47/retry-reactive-20260926/overview-05-reactive-attempt-01.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "c0ed7be327016f2310e69ea2c3fdcf87b6ff9fd73c48df891e5eba89a9253678",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        84,
+        11,
+        1382,
+        1039
+      ],
+      "output": "runs/day47/assets/overview-05-reactive.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1298,
+        1028
+      ],
+      "offset": [
+        151,
+        86
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用；2026-09-26 首次重试通过透明与构图检查"
+    },
+    {
+      "source": "runs/day47/finish-20260927/overview-06-programming-attempt-01.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "01a91ef2cea0753393cb10c36caa9675e040a3b88437ef043c5187f9adc03877",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        140,
+        24,
+        1309,
+        1047
+      ],
+      "output": "runs/day47/assets/overview-06-programming.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1169,
+        1023
+      ],
+      "offset": [
+        215,
+        88
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用独立插图；2026-09-27 用户确认的一笔修订请求通过真透明与构图检查，失败原图保留。"
+    }
+  ]
+}

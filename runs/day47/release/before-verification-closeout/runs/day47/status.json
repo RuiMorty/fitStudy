@@ -1,0 +1,41 @@
+{
+  "status": "deployed-verification-pending",
+  "artifactStatus": "ready-local-draft",
+  "day": 47,
+  "startedAt": "2026-09-23T10:04:16Z",
+  "input": "runs/day47/lesson.json",
+  "imagePlan": "runs/day47/image-prompts.json",
+  "planned": 13,
+  "generated": 13,
+  "retryPolicy": "one-user-confirmed-programming-revision-completed-no-further-requests",
+  "publishApproved": true,
+  "serverDeployed": true,
+  "resumeAuthorization": "runs/day47/retry-reactive-20260926/authorization.json",
+  "acceptedReplacement": "runs/day47/retry-reactive-20260926/attempt-01.json",
+  "remainingUnrequestedAssets": [],
+  "failureHistory": [
+    "runs/day47/failure-20260924-reactive-alpha.json",
+    "runs/day47/failure-20260926-reactive-request.json",
+    "runs/day47/failure-20260926-programming-alpha.json"
+  ],
+  "note": "用户已验收并授权部署。Day47 七文件增量安装成功，远端哈希校验及备份完成；本地发布浏览器检查通过。公网文件与浏览器校验因自动审批系统 invalid_encrypted_content 错误未执行，等待恢复后补验。caption 已含 SAQ 解释，真实短链待公网验证后补入 caption 和 ZIP。",
+  "completionAuthorization": "runs/day47/finish-20260927/authorization.json",
+  "lastCheckpointAt": "2026-09-27T09:45:08.868615+00:00",
+  "completedAt": "2026-09-27T09:27:18.677635+00:00",
+  "userReviewStatus": "accepted",
+  "productionQualityStatus": "passed",
+  "qualityReview": "runs/day47/finish-20260927/quality-review.json",
+  "manifest": "xhs/day47/manifest.json",
+  "releaseStatus": "deployed-verification-blocked",
+  "programmingReplacement": {
+    "file": "overview-06-programming.png",
+    "record": "runs/day47/finish-20260927/generation.json",
+    "status": "accepted-production-qa"
+  },
+  "imagesAccepted": true,
+  "publicationApproval": "部署吧",
+  "release": "runs/day47/release/status.json",
+  "publicVerification": "blocked-by-approval-system-error",
+  "publicLearningUrl": "https://fitstudy.cn/go/47/",
+  "releaseId": "20260927T094205Z-day47"
+}

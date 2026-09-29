@@ -13,7 +13,15 @@ python3 scripts/fitstudy-ssh.py scp runs/day41/release/day41-site.tar.gz fitstud
 
 包装脚本要求服务器密钥已在本机 `known_hosts` 中；不自动接受未知或变更的主机密钥。不要直接执行 askpass 脚本或在终端显示钥匙串密码。
 
-## Day42 当前状态
+## Day47 已发布并通过公网验证
+
+2026-09-27 用户明确授权“部署吧”，七文件增量安装完成，发布编号 `20260927T094205Z-day47`，备份位于 `/home/zhaoqr/fitness/.fitstudy-deploy-backups/20260927T094205Z-day47`。2026-09-28 已完成此前被审批系统错误阻断的公网验证：七个文件 HTTP 200 且 SHA-256 与发布包一致；短链 https://fitstudy.cn/go/47/ 正确跳转，390px/1440px 目录封面与课程弹窗、正文折叠、翻转卡、练习题和图片放大均通过。
+
+当前记录为 `runs/day47/release/status.json`、`live-files-report.json`、`live-browser-report.json` 与 `final-verification.json`。验证阻塞记录已解决；本地 caption、lesson JSON 与 ZIP 已同步真实短链，并保留 SAQ 中文解释。此次收尾没有重新部署或生图。
+
+`runs/day47/release/server-before` 是本次发布的真实旧版基线。项目根目录 `app.js`、`library/index.html` 存在历史差异，本次没有覆盖这些本地文件。原8张卡片及两份正式进度保持不变。
+
+## Day42 历史状态
 
 用户已验收 revision-05，并明确要求“OK了，部署吧”。2026-09-18 已完成七文件增量发布，短链为 https://fitstudy.cn/go/42/ 。课程目录最新项为 Day42；公网文件哈希、短链跳转、390px/1440px 目录封面与课程弹窗、正文图片和交互均已验证。当前状态以 `runs/day42/release/status.json` 与 `runs/daily-preview/review.json` 为准。
 

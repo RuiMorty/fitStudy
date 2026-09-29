@@ -1,0 +1,10 @@
+{
+  "authorizedAt": "2026-09-28T10:00:00Z",
+  "authorization": "健身学习每日生成自动化：在无 awaiting-review 或 generating 冲突时，按课纲生成下一课本地草稿；用户已授权使用灵智生图。",
+  "scope": "Day49《爆发力训练技术》的本地草稿：13 项独立灵智质量档图片、共用模板渲染和本地验证。",
+  "boundaries": [
+    "每项素材只发起一次请求；任一请求失败或透明校验不合格，立即停止且不自动重试。",
+    "不发布服务器，不改 app.js、library/index.html、首页、go 短链、progress.json 或 .progress.json。",
+    "制作方检查不等于用户验收或发布授权。"
+  ]
+}

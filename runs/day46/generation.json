@@ -1,0 +1,127 @@
+{
+  "provider": "Lingzhi",
+  "model": "gpt-image-2.5-sunburst",
+  "startedAt": "2026-09-22T11:56:47.652791+00:00",
+  "authorization": "用户在本次自动化中明确继续 Day46；按课纲从已发布 Day45 生成本地草稿。每项仅一次灵智请求，失败不自动重试。",
+  "attempts": [
+    {
+      "file": "cover.png",
+      "role": "cover",
+      "startedAt": "2026-09-22T11:56:47.653141+00:00",
+      "status": "generated",
+      "completedAt": "2026-09-22T11:57:26.134136+00:00",
+      "returncode": 0,
+      "bytes": 1016594
+    },
+    {
+      "file": "visual-01-mechanism.png",
+      "role": "knowledge",
+      "startedAt": "2026-09-22T11:57:26.135367+00:00",
+      "status": "generated",
+      "completedAt": "2026-09-22T11:57:54.484857+00:00",
+      "returncode": 0,
+      "bytes": 1201796
+    },
+    {
+      "file": "visual-02-roller.png",
+      "role": "knowledge",
+      "startedAt": "2026-09-22T11:57:54.485682+00:00",
+      "status": "generated",
+      "completedAt": "2026-09-22T11:58:23.621411+00:00",
+      "returncode": 0,
+      "bytes": 927555
+    },
+    {
+      "file": "visual-03-tools.png",
+      "role": "knowledge",
+      "startedAt": "2026-09-22T11:58:23.622143+00:00",
+      "status": "generated",
+      "completedAt": "2026-09-22T11:58:56.600316+00:00",
+      "returncode": 0,
+      "bytes": 961210
+    },
+    {
+      "file": "visual-04-mobility.png",
+      "role": "knowledge",
+      "startedAt": "2026-09-22T11:58:56.601714+00:00",
+      "status": "generated",
+      "completedAt": "2026-09-22T11:59:29.370863+00:00",
+      "returncode": 0,
+      "bytes": 1038283
+    },
+    {
+      "file": "visual-05-timing.png",
+      "role": "knowledge",
+      "startedAt": "2026-09-22T11:59:29.371623+00:00",
+      "status": "generated",
+      "completedAt": "2026-09-22T12:00:04.048377+00:00",
+      "returncode": 0,
+      "bytes": 1000207
+    },
+    {
+      "file": "visual-06-safety.png",
+      "role": "knowledge",
+      "startedAt": "2026-09-22T12:00:04.049350+00:00",
+      "status": "generated",
+      "completedAt": "2026-09-22T12:00:29.124274+00:00",
+      "returncode": 0,
+      "bytes": 663817
+    },
+    {
+      "file": "overview-01-mechanism.png",
+      "role": "overview-item",
+      "startedAt": "2026-09-22T12:00:29.125616+00:00",
+      "status": "generated",
+      "completedAt": "2026-09-22T12:01:22.390030+00:00",
+      "returncode": 0,
+      "bytes": 1030604
+    },
+    {
+      "file": "overview-02-roller.png",
+      "role": "overview-item",
+      "startedAt": "2026-09-22T12:01:22.391097+00:00",
+      "status": "generated",
+      "completedAt": "2026-09-22T12:01:57.373516+00:00",
+      "returncode": 0,
+      "bytes": 997362
+    },
+    {
+      "file": "overview-03-tools.png",
+      "role": "overview-item",
+      "startedAt": "2026-09-22T12:01:57.374678+00:00",
+      "status": "generated",
+      "completedAt": "2026-09-22T12:02:33.786893+00:00",
+      "returncode": 0,
+      "bytes": 853254
+    },
+    {
+      "file": "overview-04-mobility.png",
+      "role": "overview-item",
+      "startedAt": "2026-09-22T12:02:33.788425+00:00",
+      "status": "generated",
+      "completedAt": "2026-09-22T12:03:09.551406+00:00",
+      "returncode": 0,
+      "bytes": 861908
+    },
+    {
+      "file": "overview-05-timing.png",
+      "role": "overview-item",
+      "startedAt": "2026-09-22T12:03:09.552694+00:00",
+      "status": "generated",
+      "completedAt": "2026-09-22T12:03:49.344657+00:00",
+      "returncode": 0,
+      "bytes": 967930
+    },
+    {
+      "file": "overview-06-safety.png",
+      "role": "overview-item",
+      "startedAt": "2026-09-22T12:03:49.345118+00:00",
+      "status": "generated",
+      "completedAt": "2026-09-22T12:04:25.948719+00:00",
+      "returncode": 0,
+      "bytes": 858673
+    }
+  ],
+  "status": "batch-complete",
+  "updatedAt": "2026-09-22T12:04:25.949743+00:00"
+}

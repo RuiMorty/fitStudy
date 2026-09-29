@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1536" viewBox="0 0 1024 1536">
+  <defs>
+    <filter id="shadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#522018" flood-opacity=".18"/>
+    </filter>
+    <marker id="arrow" markerWidth="20" markerHeight="20" refX="17" refY="10" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L20,10 L0,20 Z" fill="#941B1B"/>
+    </marker>
+    <style>
+      .cn { font-family: 'PingFang SC','Noto Sans CJK SC','Microsoft YaHei',sans-serif; }
+      .title { fill:#111111; font-size:55px; font-weight:800; letter-spacing:-1px; }
+      .subtitle { fill:#941B1B; font-size:52px; font-weight:800; }
+      .label { fill:#941B1B; font-size:47px; font-weight:800; paint-order:stroke; stroke:#F8F2E6; stroke-width:9px; stroke-linejoin:round; }
+      .note { fill:#593E35; font-size:28px; font-weight:650; }
+      .leader { fill:none; stroke:#941B1B; stroke-width:6px; stroke-linecap:round; stroke-linejoin:round; }
+      .motion { fill:none; stroke:#941B1B; stroke-width:11px; stroke-linecap:round; stroke-linejoin:round; marker-end:url(#arrow); }
+      .dot { fill:#941B1B; stroke:#FFFFFF; stroke-width:5px; }
+    </style>
+  </defs>
+
+  <rect width="1024" height="1536" fill="#F8F2E6"/>
+  <text class="cn title" x="512" y="92" text-anchor="middle">上肢带运动主要表现为什么？</text>
+  <text class="cn subtitle" x="512" y="168" text-anchor="middle">肩胛骨的运动</text>
+
+  <g filter="url(#shadow)">
+    <rect x="20" y="224" width="984" height="914" rx="30" fill="#FBF8F1"/>
+    <image href="../../xhs-wrong-notebook/2026-09-21-anatomy/04-scapular-movement.png" x="20" y="224" width="984" height="914" preserveAspectRatio="xMidYMid meet" clip-path="inset(0 round 30px)"/>
+  </g>
+
+  <!-- 上提、下沉 -->
+  <text class="cn label" x="74" y="508">上提</text>
+  <path class="leader" d="M180 518 L236 565"/><circle class="dot" cx="244" cy="572" r="12"/>
+  <path class="motion" d="M271 638 L271 526"/>
+  <text class="cn label" x="40" y="712">下沉</text>
+  <path class="leader" d="M145 702 L218 732"/><circle class="dot" cx="230" cy="737" r="12"/>
+  <path class="motion" d="M271 655 L271 770"/>
+
+  <!-- 上旋、下旋 -->
+  <text class="cn label" x="846" y="526">上旋</text>
+  <path class="leader" d="M846 542 L788 579"/><circle class="dot" cx="778" cy="585" r="12"/>
+  <path class="motion" d="M821 687 C877 651 878 593 821 556"/>
+  <text class="cn label" x="848" y="733">下旋</text>
+  <path class="leader" d="M848 721 L790 748"/><circle class="dot" cx="780" cy="753" r="12"/>
+  <path class="motion" d="M821 620 C877 659 878 713 821 757"/>
+
+  <!-- 背面观察：后缩朝脊柱，前伸离开脊柱 -->
+  <text class="cn label" x="54" y="1004">后缩</text>
+  <path class="leader" d="M167 985 L255 935"/><circle class="dot" cx="270" cy="927" r="12"/>
+  <path class="motion" d="M299 927 L426 927"/>
+  <text class="cn label" x="842" y="1004">前伸</text>
+  <path class="leader" d="M842 985 L763 935"/><circle class="dot" cx="751" cy="927" r="12"/>
+  <path class="motion" d="M723 927 L852 927"/>
+
+  <g transform="translate(48 1200)">
+    <rect width="928" height="244" rx="28" fill="#FFF9F1" stroke="#DDBFA7" stroke-width="3"/>
+    <text class="cn note" x="42" y="61">背面观察：后缩 → 向脊柱靠拢；前伸 → 离开脊柱、向外侧滑动。</text>
+    <path d="M42 95 H886" stroke="#E4D1C2" stroke-width="2"/>
+    <text class="cn note" x="42" y="145">口诀：前伸向外，后缩向内；上提下沉、上旋下旋。</text>
+    <text class="cn note" x="42" y="198">箭头表示肩胛骨移动方向，不是手臂运动方向。</text>
+  </g>
+</svg>

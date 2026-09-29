@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.0",
+  "model": "gpt-image-2.5-sunburst",
+  "preset": "quality",
+  "size": "1024x1536",
+  "referenceEditSharedPrompt": "Use the two supplied reference images. Make a complete vertical 1024x1536 Chinese anatomy study card. Use the same cartoon coach from reference 1 only as a small presenter. Copy reference 2's warm ivory paper, brick-red title, single red brush underline below the title, thin red frames, and one bottom brick-red TIP strip. Put all requested Simplified Chinese text directly in the image in clear bold type; do not use English, blank red bars, placeholder text, a watermark, a logo, or local post-production.",
+  "cards": [
+    {
+      "id": "01-hip-bone-pelvis-native-text",
+      "nativeTextPrompt": "Unused placeholder."
+    },
+    {
+      "id": "02-shoulder-girdle-muscles-joint-native-text",
+      "nativeTextPrompt": "Unused placeholder."
+    },
+    {
+      "id": "03-neuron-nerve-fiber-native-text",
+      "nativeTextPrompt": "Unused placeholder."
+    },
+    {
+      "id": "04-shoulder-girdle-six-members-and-joint-native-text",
+      "nativeTextPrompt": "Top title exactly: 肩带肌：6块肌的总称. Directly below it, one brick-red brush underline. Card purpose: list the six muscles and show the shoulder joint. Absolutely do not include any origin/insertion rule, the phrase 共同规律, or a statement that every muscle begins at the clavicle. Below the title, one relationship line exactly: 肩带肌 = 三角肌 + 冈上肌 + 冈下肌 + 小圆肌 + 大圆肌 + 肩胛下肌. Main middle area: two large framed clean textbook diagrams with leader-line labels. Left heading exactly: 后面观. It labels exactly: 三角肌, 冈上肌, 冈下肌, 小圆肌, 大圆肌. Right heading exactly: 前面观. It labels exactly: 肩胛下肌. Bottom framed panel heading exactly: 肩关节构成. Show only a simple shoulder-joint drawing labelled exactly: 肩胛骨关节盂 and 肱骨头. Bottom TIP strip exactly: TIP：肩带肌不是一块肌；共有6个成员。"
+    },
+    {
+      "id": "05-shoulder-girdle-origin-insertion-native-text",
+      "nativeTextPrompt": "Unused placeholder."
+    }
+  ]
+}

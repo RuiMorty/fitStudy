@@ -1,0 +1,26 @@
+{
+  "job": "01-deadbug-corrected",
+  "variant": "reference-edits",
+  "started_at": "2026-09-28T13:14:13.321577+00:00",
+  "provider": "Lingzhi",
+  "model": "gpt-image-2.5-sunburst",
+  "endpoint": "/v1/images/edits",
+  "references": [
+    {
+      "role": "fixed-presenter-model",
+      "path": "/Users/agiuser/Documents/fit/xhs-wrong-notebook/2026-09-22-joint-actions/00-rick-muscular-cartoon-model-v4.png",
+      "sha256": "9df6044701cdeb4037f5b8573f266e634fe0e761b975d5c0ab51a351a1f5b1e4"
+    },
+    {
+      "role": "card-style-reference",
+      "path": "/Users/agiuser/Documents/fit/xhs-knowledge/2026-09-28-warmup/images/warmup-preview-v2-rick.png",
+      "sha256": "326221feef6ae227ea0ac1c01f2293eee258b48a78a81cf6201ad251275535b6"
+    }
+  ],
+  "status": "succeeded",
+  "post_count": 1,
+  "output": "/Users/agiuser/Documents/fit/xhs-knowledge/2026-09-28-warmup/generation/revision-03/reference-edits/raw/01-deadbug-corrected.png",
+  "bytes": 2610290,
+  "output_sha256": "025abddaac4260bdacbad516c6fb9a0ce76cc8efde9a82297d269f6cf4cf3d6d",
+  "completed_at": "2026-09-28T13:16:21.534943+00:00"
+}

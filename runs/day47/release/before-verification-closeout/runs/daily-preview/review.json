@@ -1,0 +1,104 @@
+{
+  "status": "deployed-verification-pending",
+  "day": 47,
+  "templateApproved": true,
+  "templateApprovedAt": "2026-09-17T01:53:12.356699+00:00",
+  "templateApprovalMessage": "确认，检验完毕",
+  "templateApprovedFromDay": 40,
+  "publishApproved": true,
+  "startedAt": "2026-09-23T10:04:16Z",
+  "input": "runs/day47/lesson.json",
+  "output": "xhs/day47",
+  "previousDraft": {
+    "day": 46,
+    "status": "published",
+    "review": "runs/day46/release/status.json",
+    "publicLearningUrl": "https://fitstudy.cn/go/46/"
+  },
+  "artifactStatus": "ready-local-draft",
+  "userReviewStatus": "accepted",
+  "note": "用户已验收并授权部署。Day47 七文件增量安装成功，远端哈希校验及备份完成；本地发布浏览器检查通过。公网文件与浏览器校验因自动审批系统 invalid_encrypted_content 错误未执行，等待恢复后补验。caption 已含 SAQ 解释，真实短链待公网验证后补入 caption 和 ZIP。",
+  "imageStyleSpecification": "templates/study/v1/image-style.md",
+  "imageStylePreset": "templates/study/v1/image-style.json",
+  "nextLessonStarted": true,
+  "nextExpectedDay": 47,
+  "layoutRevision": "xhs-layout-20260921-v3",
+  "templateRevisionApproved": true,
+  "currentRevision": "saq-draft-completed-20260927",
+  "releaseStatus": "deployed-verification-blocked",
+  "serverDeployed": true,
+  "publicVerification": "blocked-by-approval-system-error",
+  "lastCheckpointAt": "2026-09-27T09:45:08.868615+00:00",
+  "previousFailure": {
+    "file": "overview-04-cut.png",
+    "role": "overview-item",
+    "status": "failed-no-retry",
+    "record": "runs/day47/failure.json",
+    "nextAction": "原失败素材已由用户授权的一笔新请求补齐；历史记录保留。"
+  },
+  "priorFailure": {
+    "file": "overview-05-reactive.png",
+    "role": "overview-item",
+    "status": "failed-no-retry",
+    "record": "runs/day47/failure-20260924-reactive-alpha.json",
+    "nextAction": "已由 2026-09-26 的一笔新请求取代；原失败文件与记录保留。"
+  },
+  "acceptedReplacement": {
+    "file": "overview-05-reactive.png",
+    "record": "runs/day47/retry-reactive-20260926/attempt-01.json",
+    "status": "accepted",
+    "remainingRetries": 4
+  },
+  "resume": {
+    "authorization": "runs/day47/retry-reactive-20260926/authorization.json",
+    "record": "runs/day47/retry-reactive-20260926/attempt-01.json",
+    "asset": "overview-05-reactive.png",
+    "status": "accepted"
+  },
+  "contentReview": "runs/day47/lesson.json",
+  "imagePrompts": "runs/day47/image-prompts.json",
+  "imageStyleDirectionApproved": true,
+  "imagesAccepted": true,
+  "plannedArtifacts": {
+    "html": "html/day47-速度敏捷SAQ训练.html",
+    "thumbnail": "html/thumbs/day47-speed-agility-saq-thumbnail.png",
+    "detail": "html/assets/阶段2训练科学/day47-速度敏捷SAQ训练.png",
+    "xhs": "xhs/day47",
+    "archive": "xhs/day47/day47-xhs.zip"
+  },
+  "reviewFocus": [
+    "加速、较高速度和减速三段姿态是否清楚，且脚、锥桶与人物全身完整。",
+    "减速变向图是否表现先制动、髋膝缓冲和稳定支撑，而不是突然扭转或膝内扣。",
+    "反应信号、场地安全和短距离高质量重复是否在图文中容易理解。"
+  ],
+  "imageProgress": {
+    "generated": 13,
+    "planned": 13
+  },
+  "completionAuthorization": "runs/day47/finish-20260927/authorization.json",
+  "resolvedFailures": [
+    {
+      "file": "overview-06-programming.png",
+      "role": "overview-item",
+      "status": "failed-no-retry",
+      "record": "runs/day47/failure-20260926-programming-alpha.json",
+      "nextAction": "等待用户明确授权一笔改写透明输出约束的修订请求；不得自动重试。",
+      "resolvedAt": "2026-09-27T09:27:18.677635+00:00",
+      "replacementRecord": "runs/day47/finish-20260927/generation.json"
+    }
+  ],
+  "completedAt": "2026-09-27T09:27:18.677635+00:00",
+  "productionQualityStatus": "passed",
+  "qualityReview": "runs/day47/finish-20260927/quality-review.json",
+  "manifest": "xhs/day47/manifest.json",
+  "retryPolicy": "one-user-confirmed-programming-revision-completed-no-further-requests",
+  "programmingReplacement": {
+    "file": "overview-06-programming.png",
+    "record": "runs/day47/finish-20260927/generation.json",
+    "status": "accepted-production-qa"
+  },
+  "publicationApproval": "部署吧",
+  "release": "runs/day47/release/status.json",
+  "publicLearningUrl": "https://fitstudy.cn/go/47/",
+  "releaseId": "20260927T094205Z-day47"
+}

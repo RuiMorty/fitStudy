@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Day 46 · 软组织松解与关节活动度</title><link rel="icon" type="image/svg+xml" href="assets/fitness-study-logo-open-circle.svg?v=a6d8e5caaa61"><style>:root { color-scheme: light; --ink: #111113; --muted: #71717a; --line: #e4e4e7; --accent: #ff5a1f; --green: #0ea66b; --blue: #2563eb; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; font-synthesis: none; letter-spacing: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); overflow-wrap: anywhere; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+img { display: block; max-width: 100%; }
+button:focus-visible, a:focus-visible, summary:focus-visible, input:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
+svg.icon { width: 20px; height: 20px; }
+.icon-button { display: inline-grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 1px solid var(--line); border-radius: 6px; background: white; }
+[hidden] { display: none !important; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
+
+body { background: #f6f8f7; font-size: 14px; line-height: 1.65; }
+main { max-width: 980px; margin: auto; padding: 24px 18px 60px; }
+.header { padding: 22px 4px 14px; }
+h1 { margin: 10px 0 8px; font-size: 36px; line-height: 1.2; }
+h1::before { content: ""; display: block; width: 34px; height: 4px; background: var(--accent); margin-bottom: 10px; }
+h2 { font-size: 17px; margin: 0 0 14px; }
+h3 { font-size: 16px; margin: 0 0 8px; }
+.sub { color: var(--muted); margin: 5px 0 18px; }
+.meta { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { display: inline-block; border: 1px solid var(--line); border-radius: 20px; background: white; color: var(--muted); padding: 3px 10px; font-size: 12px; font-weight: 600; }
+.chip:nth-child(1) { background: #e2f7eb; color: #15803d; border-color: transparent; }
+.chip:nth-child(2) { background: #e7f0fe; color: #2563eb; border-color: transparent; }
+.chip:nth-child(3) { background: #fff2e5; color: #9a4c05; border-color: transparent; }
+.panel, .figure, .warn, .mnemonic { background: white; border: 1px solid #e2e8e4; border-radius: 14px; box-shadow: 0 2px 12px rgba(20,40,30,.06); padding: 20px; margin: 16px 0; }
+.green { border-left: 5px solid var(--green); }
+.orange { border-left: 5px solid #ea7a17; }
+.blue { border-left: 5px solid #0ea5e9; }
+.takeaway { margin: 0; }
+.figure { text-align: center; }
+.figure button { display: block; position: relative; width: 100%; border: 0; padding: 0; background: white; cursor: zoom-in; }
+.figure img { max-height: 760px; width: 100%; object-fit: contain; }
+.figure .icon-button { position: absolute; bottom: 8px; right: 8px; background: #ffffffed; }
+.caption { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
+.kp { list-style: none; padding: 0; margin: 0; }
+.kp > li { border-bottom: 1px dashed #e2e8e4; }
+.kp > li:last-child { border-bottom: 0; }
+.kp summary { cursor: pointer; padding: 13px 8px; font-weight: 650; }
+.kp summary::marker { color: var(--green); }
+.term { color: #0a7d52; background: #e2f7eb; border-radius: 6px; padding: 1px 5px; }
+.kp-body { padding: 2px 14px 16px 24px; }
+.detail-block { margin: 12px 0; }
+.detail-block h4 { font-size: 13px; color: #08744d; margin: 0 0 4px; }
+.detail-block p { margin: 0; white-space: pre-line; }
+.warn { border-left: 5px solid #e23b3b; background: #fffafa; }
+.warn p { margin: 8px 0; }
+.misconception { color: #a82b32; }
+.mnemonic { border-left: 4px solid var(--accent); box-shadow: none; }
+.mnemonic strong { color: #df4716; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+.flip { height: 168px; perspective: 900px; border: 0; background: transparent; padding: 0; text-align: center; }
+.flip-in { display: block; height: 100%; position: relative; transition: transform .45s; transform-style: preserve-3d; }
+.flip[aria-pressed="true"] .flip-in { transform: rotateY(180deg); }
+.face { position: absolute; inset: 0; backface-visibility: hidden; border: 1px solid var(--line); border-radius: 10px; padding: 15px; background: #fafafa; display: flex; align-items: center; justify-content: center; overflow-y: auto; }
+.back { transform: rotateY(180deg); background: #eef9f4; color: #075e40; border-color: #c8eadb; }
+.practice { padding-left: 20px; }
+.practice li { margin: 7px 0; }
+.question { border-top: 1px solid #e2e8e4; padding: 20px 0 8px; margin-top: 12px; min-width: 0; }
+.options { display: grid; gap: 7px; margin: 10px 0; }
+.option { display: flex; gap: 10px; align-items: baseline; border: 1px solid #e2e8e4; background: #f0f4f2; padding: 9px 12px; border-radius: 8px; cursor: pointer; }
+.option input { flex-shrink: 0; accent-color: var(--green); }
+.option:has(input:checked) { border-color: #0ea5e9; background: #e7f6fd; }
+.question[data-result="correct"] .option:has(input:checked) { border-color: #0ea66b; background: #e7f8ef; }
+.question[data-result="wrong"] .option:has(input:checked) { border-color: #e23b3b; background: #fff0f0; }
+.answer { background: #f8fbfa; border-left: 3px solid #0ea5e9; padding: 10px; margin-top: 10px; }
+.check { border: 0; background: #0ea66b; color: white; padding: 9px 14px; border-radius: 7px; }
+footer { color: var(--muted); font-size: 12px; margin-top: 28px; }
+footer ul { padding-left: 20px; }
+dialog { width: min(1200px, 96vw); max-height: 94dvh; padding: 52px 16px 16px; border: 0; border-radius: 8px; background: white; }
+dialog::backdrop { background: #15191dd9; }
+dialog img { width: 100%; max-height: 78dvh; object-fit: contain; }
+dialog .icon-button { position: absolute; top: 8px; right: 10px; }
+@media (max-width: 600px) {
+  main { padding: 16px 12px 40px; }
+  h1 { font-size: 26px; }
+  .header { padding: 16px 4px 12px; }
+  .panel, .figure, .warn, .mnemonic { padding: 15px; }
+  .kp-body { padding-left: 16px; }
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .face { padding: 12px; }
+}
+</style></head><body><main><header class="header"><h1>Day 46 · 软组织松解与关节活动度</h1><p class="sub">SMR是自我管理工具，不是把疼痛滚掉；先识别部位与目标，再用合适压力和活动度练习把感觉带回动作。</p><div class="meta"><span class="chip">阶段2训练科学</span><span class="chip">第7周</span><span class="chip">SMR · 活动度</span></div></header><section class="panel green"><h2>一句话总结</h2><p class="takeaway">泡沫轴、筋膜球和按摩棒可以作为短时自我管理工具，帮助你在训练前后观察张力和活动度变化；它们不能替代诊断、治疗或力量控制。先轻压、慢呼吸、短时间，再接髋、胸椎、踝的主动活动。</p></section><figure class="figure"><button data-zoom aria-label="放大详情图"><img class="" src="assets/阶段2训练科学/day46-软组织松解与关节活动度.png" alt="六主题中文总览：SMR机制、泡沫轴、局部工具、髋胸椎踝活动度、时机与禁忌"><span class="icon-button"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 15 6 6" /><path d="m15 9 6-6" /><path d="M21 16v5h-5" /><path d="M21 8V3h-5" /><path d="M3 16v5h5" /><path d="m3 21 6-6" /><path d="M3 8V3h5" /><path d="M9 9 3 3" /></svg></span></button><figcaption class="caption">SMR总览：用可控制的压力和短时活动度练习改善当下感觉，再把变化带回热身或训练动作；急性损伤、炎症或出血风险时先暂停并咨询专业人员。</figcaption></figure><section class="panel"><h2>核心要点</h2><ul class="kp"><li><details><summary><span class="term">SMR在做什么：改变感觉，不是碾碎筋膜</span>：SMR常通过压力、呼吸和注意力改变当下的紧张与活动感；不要把短暂范围变化解释成组织被永久拉长。</summary><div class="kp-body"><section class="detail-block"><h4>自生抑制只是理解线索</h4><p>压力和收缩后的张力调节可能影响你对范围与不适的感觉，GTO和自生抑制可以帮助理解这种现象，但不是按一下就能关闭疼痛的按钮。SMR的效果常是短时、个体化的。</p></section><section class="detail-block"><h4>先问训练目标</h4><p>如果目标是训练前更容易完成深蹲或上举，检查的是当下活动度和控制；如果目标是训练后放松，关注的是呼吸、舒适感和恢复安排。不要为了追求某个“结”而持续加压。</p></section><section class="detail-block"><h4>变化要回到动作里</h4><p>滚完后用一次轻量深蹲、髋铰链或上举复查。若范围变大但疼痛、代偿或稳定性更差，就不算有用的进步，应减压或停止。</p></section></div></details></li><li><details><summary><span class="term">泡沫轴：大区域、慢速度、不过痛</span>：泡沫轴适合大腿、背部等较大区域；用身体重量调压力，避开骨点、关节和明显疼痛处。</summary><div class="kp-body"><section class="detail-block"><h4>先找支撑和路线</h4><p>让泡沫轴接触目标肌肉的软组织区域，双手或另一条腿负责支撑。动作慢而短，能随时停住；不要把腰椎、颈椎、膝盖或踝骨直接压在滚筒上。</p></section><section class="detail-block"><h4>压力应能呼吸</h4><p>从轻压力开始，保持自然呼吸和面部放松。出现尖锐痛、麻电、搏动性疼痛、皮肤异常或明显防御性收缩时，移开滚筒，不要用更大体重“压开”。</p></section><section class="detail-block"><h4>每处不必滚很久</h4><p>短时间探索后立刻接主动活动，比长时间反复来回更容易判断是否有帮助。记录滚前滚后的动作感受，不把酸痛或淤青当成效果证明。</p></section></div></details></li><li><details><summary><span class="term">筋膜球与按摩棒：小范围要更谨慎</span>：小工具能更精确地接触足底、臀部或胸椎周围，但压力集中，必须降低力度并保持可控。</summary><div class="kp-body"><section class="detail-block"><h4>足底：滚动而不是压痛点</h4><p>足底可用球做缓慢来回或停留探索，脚趾和踝保持自然。不要追着最痛的点反复按，也不要在麻木、伤口或明显肿胀处继续。</p></section><section class="detail-block"><h4>臀部：位置要分清</h4><p>臀肌和梨状肌附近应在稳定坐姿或侧卧支撑下轻压；避开骨性突起、神经放射感和会让腿麻的角度。疼痛向下放射或出现无力时停止。</p></section><section class="detail-block"><h4>胸椎：保持呼吸和颈部中立</h4><p>胸椎区域可用球靠墙或滚筒短时探索，头颈不要被迫后仰。若肩、胸或脊柱出现锐痛、眩晕或呼吸不适，应退出并寻求合适评估。</p></section></div></details></li><li><details><summary><span class="term">三大活动度：髋、胸椎、踝</span>：SMR之后要用主动练习把感觉带回关节：髋要能折叠，胸椎要能旋转，踝要能前移且脚掌稳定。</summary><div class="kp-body"><section class="detail-block"><h4>髋：从髋折叠</h4><p>用半跪髋屈伸、90／90转换或轻量髋铰链练习髋部主动范围；骨盆和腰椎不靠大幅代偿。活动度增加后仍要能控制回程。</p></section><section class="detail-block"><h4>胸椎：旋转不带着腰跑</h4><p>侧卧开书或四点跪姿旋转时，让骨盆和腰部保持相对稳定，胸廓逐步转动。幅度小也可以，重点是呼吸、方向和可重复性。</p></section><section class="detail-block"><h4>踝：膝向脚尖前移</h4><p>靠墙踝前移或分腿踝背屈时，脚跟保持接触地面、膝盖朝脚尖方向。脚掌塌陷、脚跟抬起或关节前方刺痛时应回退。</p></section></div></details></li><li><details><summary><span class="term">训练前后：短时SMR接回任务</span>：训练前用短时、轻压力配合动态热身；训练后按舒适度整理，不把SMR当作必须完成的仪式。</summary><div class="kp-body"><section class="detail-block"><h4>训练前：只处理影响动作的部分</h4><p>先选一个确实限制热身动作的区域，做短时轻压，再接动态活动和徒手或低负荷专项练习。若滚完感觉迟钝、无力或不稳，就不要继续加压。</p></section><section class="detail-block"><h4>训练后：恢复安排优先</h4><p>训练后可按舒适度使用SMR，再做轻松走动、补水和睡眠安排。SMR可能让主观紧张感下降，但不会替代负荷管理、营养和恢复时间。</p></section><section class="detail-block"><h4>用复测决定是否保留</h4><p>每次只改变一个部位或工具，复测同一个动作和不适评分。没有改善、症状反而增加或需要越来越大压力才能有效时，应停止这套做法并重新评估。</p></section></div></details></li><li><details><summary><span class="term">禁忌与停止信号：先保护，再处理</span>：急性损伤、明显炎症、出血风险和不明神经症状不是自己加压的场景；必要时先问医生或康复专业人员。</summary><div class="kp-body"><section class="detail-block"><h4>这些情况先不做</h4><p>急性扭伤或拉伤、明显肿胀发热、开放性伤口、骨折恢复期、近期手术和正在恶化的疼痛，都不适合自行用滚筒或球强压。</p></section><section class="detail-block"><h4>药物与出血风险</h4><p>使用抗凝药物、存在凝血问题或容易出现不明淤青的人，应先向医疗专业人员确认是否适合压力工具。不要把淤青、肿胀或持续痛当成正常“排酸”。</p></section><section class="detail-block"><h4>出现异常立即停</h4><p>麻木、电击样放射、突然无力、头晕、呼吸不适、关节卡住或疼痛快速加重时立刻停止。记录症状和触发动作，按需要寻求及时评估。</p></section></div></details></li></ul></section><section class="warn"><h2>常见误区</h2><p><strong class="misconception">误区：SMR就是把筋膜结节滚碎，越痛越有效。</strong><br>辨析：SMR主要用于短时感觉和活动度管理；压力应能呼吸、可随时停止，疼痛或淤青不是效果证明。</p><p><strong class="misconception">误区：泡沫轴可以直接压脊柱、关节和骨点。</strong><br>辨析：选择肌肉软组织区域并用手脚分担体重，避开骨点、关节、颈腰椎和明显症状区域。</p><p><strong class="misconception">误区：滚完就等于完成了活动度训练。</strong><br>辨析：滚动后要用髋、胸椎或踝的主动练习和专项动作复测，变化才能转成可控制的动作。</p><p><strong class="misconception">误区：训练前后都应该长时间全身滚一遍。</strong><br>辨析：按目标选择一个需要处理的部位，短时低压后接任务；训练后也要优先负荷、睡眠和整体恢复。</p><p><strong class="misconception">误区：急性损伤或吃抗凝药时，轻轻滚就一定安全。</strong><br>辨析：急性损伤、炎症、出血风险和不明神经症状应先暂停并咨询专业人员，不自行试压。</p></section><section class="mnemonic"><h2>记忆口诀</h2><p><strong>轻压慢呼吸，滚后要主动；先髋胸踝，异常立刻停。</strong></p></section><section class="panel"><h2>翻转卡复习</h2><div class="cards"><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">SMR最适合被理解成什么？</span><span class="face back" aria-hidden="true">短时自我管理工具，用于观察张力与活动感，不是把组织永久拉长或替代诊断。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">泡沫轴压力的第一标准？</span><span class="face back" aria-hidden="true">能自然呼吸、随时停住且没有尖锐痛、麻电或明显防御性收缩。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">筋膜球为什么要更轻？</span><span class="face back" aria-hidden="true">接触面积小、压力更集中，容易刺激骨点、神经或引发保护性紧缩。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">SMR后为什么要接主动活动？</span><span class="face back" aria-hidden="true">把短时感觉变化带回髋、胸椎、踝和实际动作，检查是否真的更可控制。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">训练前SMR怎么安排？</span><span class="face back" aria-hidden="true">只处理影响目标动作的部位，短时轻压后接动态和低负荷专项热身。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">哪些情况应避免自行SMR？</span><span class="face back" aria-hidden="true">急性损伤、炎症肿胀、伤口、近期手术、抗凝或凝血问题及不明神经症状。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">踝活动度复测看什么？</span><span class="face back" aria-hidden="true">膝向脚尖前移时脚跟保持接触、脚掌稳定且无关节前方刺痛。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">什么变化表示应停止？</span><span class="face back" aria-hidden="true">麻木、电击样放射、突然无力、头晕、呼吸不适或疼痛快速加重。</span></span></button></div></section><section class="panel orange"><h2>实操关联</h2><ul class="practice"><li>训练前复测：做一次徒手深蹲或上举，选一个确实受限的部位，轻压30–60秒后再复测；只记录一个变量的变化。</li><li>泡沫轴练习：用双手和另一条腿分担体重，在大腿软组织区域慢速往返；每次保持自然呼吸，不追着最痛点滚。</li><li>小工具练习：足底、臀部或胸椎只选一个区域，用筋膜球靠墙或坐姿轻压，出现放射感就退出。</li><li>活动度串联：SMR后分别做髋铰链、侧卧开书和靠墙踝前移，每项少量重复并观察代偿。</li><li>训练前热身：短时SMR后接动态弓步、胸椎旋转和低负荷专项动作；若感觉迟钝或无力，取消SMR并降低热身难度。</li><li>安全筛查：有急性损伤、发热肿胀、近期手术、抗凝用药或不明麻木时，暂停工具并记录问题，先咨询专业人员。</li></ul></section><section class="panel blue"><h2>练习题</h2><section class="question" data-answers="[1]" data-explanation="SMR的价值要回到目标动作和控制中复测；淤青、麻木和忍痛都不是效果标准。"><h3>1. 单选：SMR后最能说明这次处理有帮助的是？</h3><div class="options"><label class="option"><input type="radio" name="question-0" value="0"><span>A. 滚动处出现明显淤青</span></label><label class="option"><input type="radio" name="question-0" value="1"><span>B. 目标动作在更舒适且可控制的范围完成</span></label><label class="option"><input type="radio" name="question-0" value="2"><span>C. 压力越大越能忍痛</span></label><label class="option"><input type="radio" name="question-0" value="3"><span>D. 滚完后局部暂时麻木</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[1]" data-explanation="软组织区域、轻压力和可呼吸的控制更符合安全原则，骨点、关节和尖锐症状应避开。"><h3>2. 单选：使用泡沫轴时哪项更合适？</h3><div class="options"><label class="option"><input type="radio" name="question-1" value="0"><span>A. 直接压膝盖和腰椎</span></label><label class="option"><input type="radio" name="question-1" value="1"><span>B. 从轻压力开始，避开骨点并保持呼吸</span></label><label class="option"><input type="radio" name="question-1" value="2"><span>C. 找到最痛点后反复快速碾压</span></label><label class="option"><input type="radio" name="question-1" value="3"><span>D. 憋气让体重全部压上去</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[0,2,3]" data-explanation="SMR应接主动控制和复测。胸椎练习要减少腰部代偿，逐次只改一个变量更容易判断效果。"><h3>3. 多选：关于SMR后活动度练习，哪些做法正确？</h3><div class="options"><label class="option"><input type="checkbox" name="question-2" value="0"><span>A. 髋部用主动髋铰链复查</span></label><label class="option"><input type="checkbox" name="question-2" value="1"><span>B. 胸椎旋转时让腰部代偿越大越好</span></label><label class="option"><input type="checkbox" name="question-2" value="2"><span>C. 踝前移时脚跟保持接触</span></label><label class="option"><input type="checkbox" name="question-2" value="3"><span>D. 每次只改变一个部位或工具</span></label><label class="option"><input type="checkbox" name="question-2" value="4"><span>E. 只滚不做动作复测</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[0,1,2,4]" data-explanation="急性损伤、出血风险、伤口和神经异常不适合自行加压；普通疲劳可按整体恢复安排处理。"><h3>4. 多选：哪些情况应先停止自行SMR并咨询专业人员？</h3><div class="options"><label class="option"><input type="checkbox" name="question-3" value="0"><span>A. 急性扭伤伴肿胀</span></label><label class="option"><input type="checkbox" name="question-3" value="1"><span>B. 抗凝药物或凝血问题</span></label><label class="option"><input type="checkbox" name="question-3" value="2"><span>C. 开放性伤口</span></label><label class="option"><input type="checkbox" name="question-3" value="3"><span>D. 轻微运动后正常疲劳</span></label><label class="option"><input type="checkbox" name="question-3" value="4"><span>E. 突然麻木或电击样放射</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[2]" data-explanation="麻木和稳定性下降是停止信号。不要用更大压力掩盖症状，应退出并按需要寻求评估。"><h3>5. 案例：小林训练前滚大腿后感觉局部麻木，深蹲也变得不稳。最合适的处理是？</h3><div class="options"><label class="option"><input type="radio" name="question-4" value="0"><span>A. 继续加压让麻木消失</span></label><label class="option"><input type="radio" name="question-4" value="1"><span>B. 改滚更久并屏气</span></label><label class="option"><input type="radio" name="question-4" value="2"><span>C. 立即停止，恢复感觉后再用动态和低负荷热身评估</span></label><label class="option"><input type="radio" name="question-4" value="3"><span>D. 换更硬的球寻找新的痛点</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[1]" data-explanation="SMR后要把感觉接回主动活动。靠墙踝前移能观察脚跟、脚掌和膝盖方向，控制丢失时应回退。"><h3>6. 案例：阿远想改善踝背屈，滚完小腿后脚跟仍抬起、膝盖向内塌。下一步应是？</h3><div class="options"><label class="option"><input type="radio" name="question-5" value="0"><span>A. 继续滚到疼痛再练</span></label><label class="option"><input type="radio" name="question-5" value="1"><span>B. 用靠墙踝前移的轻量主动练习，保持脚跟和膝脚尖方向</span></label><label class="option"><input type="radio" name="question-5" value="2"><span>C. 把膝盖强行推到最前</span></label><label class="option"><input type="radio" name="question-5" value="3"><span>D. 只做静态按压，不再复测</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section></section><footer>Day 46/77 · NASM／NSCA<ul><li>NASM：Essentials of Personal Fitness Training，第7版，柔韧性、SMR与整合训练相关章节。</li><li>NSCA：Essentials of Strength Training and Conditioning，第4版，热身、恢复与动作准备相关章节。</li><li>ACSM：ACSM&#39;s Guidelines for Exercise Testing and Prescription，第11版，运动前筛查与安全边界相关章节。</li><li>Cheatham等：Self-myofascial release相关综述；用于理解短时活动感变化，不替代个体医疗建议。</li></ul></footer></main><dialog aria-label="详情大图"><button class="icon-button" aria-label="关闭大图" title="关闭大图"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></button><img alt=""></dialog><script>document.querySelectorAll('.flip').forEach((button) => {
+  button.addEventListener('click', () => {
+    const pressed = button.getAttribute('aria-pressed') !== 'true';
+    button.setAttribute('aria-pressed', String(pressed));
+    button.querySelector('.front').setAttribute('aria-hidden', String(pressed));
+    button.querySelector('.back').setAttribute('aria-hidden', String(!pressed));
+  });
+});
+document.querySelectorAll('.question').forEach((question) => {
+  question.querySelector('.check').addEventListener('click', () => {
+    const selected = [...question.querySelectorAll('input:checked')].map((input) => Number(input.value)).sort();
+    const answer = question.querySelector('.answer');
+    answer.hidden = false;
+    if (!selected.length) { answer.textContent = '请先选择答案。'; delete question.dataset.result; return; }
+    const correct = JSON.stringify(selected) === JSON.stringify(JSON.parse(question.dataset.answers).sort());
+    question.dataset.result = correct ? 'correct' : 'wrong';
+    answer.textContent = `${correct ? '回答正确。' : '再想一想。'}${question.dataset.explanation}`;
+  });
+});
+const imageDialog = document.querySelector('dialog');
+document.querySelectorAll('[data-zoom]').forEach((button) => {
+  button.addEventListener('click', () => {
+    const original = button.querySelector('img');
+    const image = imageDialog.querySelector('img');
+    image.src = original.src;
+    image.alt = original.alt;
+    imageDialog.showModal();
+  });
+});
+imageDialog.querySelector('button').addEventListener('click', () => imageDialog.close());
+imageDialog.addEventListener('click', (event) => {
+  const rect = imageDialog.getBoundingClientRect();
+  if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) imageDialog.close();
+});
+</script></body></html>

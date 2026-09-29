@@ -1,0 +1,15 @@
+{
+  "at": "2026-09-24T06:00:00+08:00",
+  "asset": "overview-05-reactive.png",
+  "role": "overview-item",
+  "requestCount": 1,
+  "requestRecord": "runs/day47/automation-20260924-authorization.json",
+  "output": "runs/day47/source/overview-05-reactive.png",
+  "sha256": "ff525c2e47b8b4b02cea9c4762636e0d1dffa1ab957528b8f955c8ba0f80465a",
+  "dimensions": [1448, 1086],
+  "hasAlpha": false,
+  "failure": "输出 PNG 没有 alpha 通道，且目检为嵌入像素的灰白棋盘格背景；不符合共用透明 PNG 规范。",
+  "retryPolicy": "no-automatic-paid-retry",
+  "remainingUnrequestedAssets": ["overview-06-programming.png"],
+  "nextAction": "等待用户明确授权一笔修订后的新请求；不得将此文件预处理为交付素材，也不得自动请求剩余图片。"
+}

@@ -1,0 +1,26 @@
+{
+  "job": "02-02-adductor-magnus-fixed-end-native-text",
+  "variant": "native-text-edits",
+  "started_at": "2026-09-23T13:14:36.662204+00:00",
+  "provider": "Lingzhi",
+  "model": "gpt-image-2.5-sunburst",
+  "endpoint": "/v1/images/edits",
+  "references": [
+    {
+      "role": "fixed-presenter-model",
+      "path": "/Users/agiuser/Documents/fit/xhs-wrong-notebook/2026-09-22-joint-actions/00-rick-muscular-cartoon-model-v4.png",
+      "sha256": "9df6044701cdeb4037f5b8573f266e634fe0e761b975d5c0ab51a351a1f5b1e4"
+    },
+    {
+      "role": "card-style-reference",
+      "path": "/Users/agiuser/Documents/fit/xhs-wrong-notebook/2026-09-22-joint-actions/04-肩关节动作地图-修订.png",
+      "sha256": "b704fa506f6c74143daec10c708c39ed800788feef50e4a29f1c156036e2c6a3"
+    }
+  ],
+  "status": "succeeded",
+  "post_count": 1,
+  "output": "/Users/agiuser/Documents/fit/xhs-wrong-notebook/2026-09-23-anatomy-basics/generation/native-text-edits/raw/02-02-adductor-magnus-fixed-end-native-text.png",
+  "bytes": 1625603,
+  "output_sha256": "f6ed6341b3f2f7a2f9eb98e9a7bab887ec300cbf9b3b0c37bff07c09dd223fa1",
+  "completed_at": "2026-09-23T13:15:58.063681+00:00"
+}

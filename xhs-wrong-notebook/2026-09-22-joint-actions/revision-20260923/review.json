@@ -1,0 +1,47 @@
+{
+  "status": "awaiting-user-review",
+  "headline_color": "#B44339",
+  "checks": [
+    "01–05 主标题统一为 #B44339。",
+    "02 将旧图和 00-rick-muscular-cartoon-model-v4.png 真实上传作为参考，重新生成左右两种仰卧动作。",
+    "03 以“上肢带关节 = 胸锁关节 + 肩锁关节”说明统称关系，分别标注两个关节界面。",
+    "03 的“肱骨”“肱尺关节”“肱桡关节”用 PingFang SC 标准字形校正；02 的“肱三头肌”同步校正。",
+    "04 右下角“前臂”相关标题用 PingFang SC 标准字形校正。",
+    "04 右部中间和右下角外旋箭头均检查为向外的单向箭头。",
+    "05 按用户参考加入短肌／长肌并排精细解剖对照。"
+  ],
+  "generation": {
+    "provider": "Lingzhi",
+    "model": "gpt-image-2.5-sunburst",
+    "requests": 4,
+    "automatic_retries": 0,
+    "content_restriction_errors": []
+  },
+  "files": [
+    {
+      "name": "01-下行踝关节背屈-修订.png",
+      "bytes": 1811248,
+      "sha256": "b3a42d70a2c3c5c8b256181abf676101394115f2f8c0b3532bfa6688aed49121"
+    },
+    {
+      "name": "02-窄握杠铃仰卧臂屈伸-修订.png",
+      "bytes": 1645625,
+      "sha256": "29e9fa0b7f29568150a8a085dde5a12f6c6d50ddc07fcf6ae190d2916a241b0c"
+    },
+    {
+      "name": "03-关节构成速记-修订.png",
+      "bytes": 1616378,
+      "sha256": "941e0286c81367e51c5542839fffb2821af7aa9eeedc5d833e9954067cca4d05"
+    },
+    {
+      "name": "04-肩关节动作地图-修订.png",
+      "bytes": 1659778,
+      "sha256": "b704fa506f6c74143daec10c708c39ed800788feef50e4a29f1c156036e2c6a3"
+    },
+    {
+      "name": "05-多裂肌与短肌长肌对比-修订.png",
+      "bytes": 1528070,
+      "sha256": "78b0cd4335ec87b3157b65c6ebf39e3d350897316741f1d5bab23fd686ef65e1"
+    }
+  ]
+}

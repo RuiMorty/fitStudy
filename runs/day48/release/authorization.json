@@ -1,0 +1,11 @@
+{
+  "authorizedAt": "2026-09-28T09:05:44Z",
+  "authorization": "用户明确输入：keyi ，发布吧",
+  "scope": "Day48 网站七文件增量发布与对应公网文件、短链、目录和交互验证。",
+  "boundaries": [
+    "不上传小红书平台。",
+    "不修改 progress.json 或 .progress.json。",
+    "只允许 html/day48、详情图、PNG/WebP 缩略图、go/48、app.js 和 library/index.html。",
+    "公网验证成功后，才更新本地小红书 caption、lesson JSON 与 ZIP 中的真实短链。"
+  ]
+}

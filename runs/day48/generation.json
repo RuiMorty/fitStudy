@@ -1,0 +1,49 @@
+{
+  "provider": "Lingzhi",
+  "preset": "quality",
+  "model": "gpt-image-2.5-sunburst",
+  "authorization": "runs/day48/authorization.json",
+  "attempts": [
+    {
+      "file": "cover.png",
+      "role": "cover",
+      "attempt": 1,
+      "status": "failed-invalid-transparency",
+      "record": "runs/day48/failure.json"
+    },
+    {
+      "file": "cover-attempt-02.png",
+      "role": "cover-revision",
+      "attempt": 2,
+      "status": "failed-invalid-transparency",
+      "authorization": "runs/day48/retry-cover-20260928/authorization.json",
+      "record": "runs/day48/retry-cover-20260928/failure-attempt-02.json"
+    },
+    {
+      "file": "cover-attempt-03.png",
+      "role": "cover-revision",
+      "attempt": 3,
+      "status": "accepted-true-alpha",
+      "authorization": "runs/day48/retry-budget-20260928/authorization.json",
+      "record": "runs/day48/retry-budget-20260928/cover-acceptance.json"
+    }
+  ],
+  "acceptedAssets": [
+    {"file":"cover-attempt-03.png","path":"runs/day48/retry-budget-20260928/cover-attempt-03.png","sha256":"d61c7cd6c6d688809d14bcf40046a5d516dcd4256d8797b44306f8359fc42961","hasAlpha":true},
+    {"file":"visual-01-general-specific.png","path":"runs/day48/source/visual-01-general-specific.png","sha256":"8487afb058f0cb48d90cbbf338de9c2a00698d64a40a3134d5b6d74161b821d8","hasAlpha":true},
+    {"file":"visual-02-raise.png","path":"runs/day48/source/visual-02-raise.png","sha256":"8ac17abf5b0395ded319c696e7ec7b9de2f5fa0fe5ff4ab41ae1f2e92905e12d","hasAlpha":true},
+    {"file":"visual-03-activate-mobilize.png","path":"runs/day48/source/visual-03-activate-mobilize.png","sha256":"e61fe56ccbf48345987bcd8fac20cd129cfe9eba128bdf447fe789fd8b4805da","hasAlpha":true},
+    {"file":"visual-04-potentiate.png","path":"runs/day48/source/visual-04-potentiate.png","sha256":"222848e88ff1e65b450e1f083c8601a291b7add67a09b91947553ac9accda8bf","hasAlpha":true},
+    {"file":"visual-05-stretching.png","path":"runs/day48/source/visual-05-stretching.png","sha256":"a440fbdafce64a1d79962bcccad4d116f1b278043ed2d6c331ab18c150311fc6","hasAlpha":true},
+    {"file":"visual-06-cooldown-recovery.png","path":"runs/day48/source/visual-06-cooldown-recovery.png","sha256":"d4461aa0cbee763102330229dab0a54592e1965476d628e116efde11d6e5193c","hasAlpha":true},
+    {"file":"overview-01-general-specific.png","path":"runs/day48/source/overview-01-general-specific.png","sha256":"e29ccc7435cddd727672537882492152553fe7dd533578d12c977eb663545064","hasAlpha":true},
+    {"file":"overview-02-raise.png","path":"runs/day48/source/overview-02-raise.png","sha256":"266aa856c04f17fe98af01532942e0d3abe3201ac3db4a9489fc34bc6ba53dd8","hasAlpha":true},
+    {"file":"overview-03-activate-mobilize.png","path":"runs/day48/source/overview-03-activate-mobilize.png","sha256":"be2a6ba0ccf218760daec32bf4c3d62991d470d1fb79dcbd6e179458318da4c0","hasAlpha":true},
+    {"file":"overview-04-potentiate.png","path":"runs/day48/source/overview-04-potentiate.png","sha256":"2fab95ecbc20ea6e46dce16d818c93f46a221e572f02298068a75f48e2ff3e0c","hasAlpha":true},
+    {"file":"overview-05-stretching.png","path":"runs/day48/source/overview-05-stretching.png","sha256":"94a552363d73a9705140b98317d38c9ec76af28d5dacb87291ac7b710854540f","hasAlpha":true},
+    {"file":"overview-06-cooldown-recovery.png","path":"runs/day48/source/overview-06-cooldown-recovery.png","sha256":"23ce146bd6350eba354f7ca072a4a509036a80a86fe404992bc239bfa1a91d46","hasAlpha":true}
+  ],
+  "remainingUnrequested": [],
+  "sourceQualityReview": "runs/day48/verification/source-quality-review.json",
+  "status": "thirteen-assets-accepted-ready-preprocessing"
+}

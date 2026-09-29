@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Day 45 · 柔韧性分类与拉伸技术</title><link rel="icon" type="image/svg+xml" href="assets/fitness-study-logo-open-circle.svg?v=a6d8e5caaa61"><style>:root { color-scheme: light; --ink: #111113; --muted: #71717a; --line: #e4e4e7; --accent: #ff5a1f; --green: #0ea66b; --blue: #2563eb; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; font-synthesis: none; letter-spacing: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); overflow-wrap: anywhere; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+img { display: block; max-width: 100%; }
+button:focus-visible, a:focus-visible, summary:focus-visible, input:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
+svg.icon { width: 20px; height: 20px; }
+.icon-button { display: inline-grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 1px solid var(--line); border-radius: 6px; background: white; }
+[hidden] { display: none !important; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
+
+body { background: #f6f8f7; font-size: 14px; line-height: 1.65; }
+main { max-width: 980px; margin: auto; padding: 24px 18px 60px; }
+.header { padding: 22px 4px 14px; }
+h1 { margin: 10px 0 8px; font-size: 36px; line-height: 1.2; }
+h1::before { content: ""; display: block; width: 34px; height: 4px; background: var(--accent); margin-bottom: 10px; }
+h2 { font-size: 17px; margin: 0 0 14px; }
+h3 { font-size: 16px; margin: 0 0 8px; }
+.sub { color: var(--muted); margin: 5px 0 18px; }
+.meta { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { display: inline-block; border: 1px solid var(--line); border-radius: 20px; background: white; color: var(--muted); padding: 3px 10px; font-size: 12px; font-weight: 600; }
+.chip:nth-child(1) { background: #e2f7eb; color: #15803d; border-color: transparent; }
+.chip:nth-child(2) { background: #e7f0fe; color: #2563eb; border-color: transparent; }
+.chip:nth-child(3) { background: #fff2e5; color: #9a4c05; border-color: transparent; }
+.panel, .figure, .warn, .mnemonic { background: white; border: 1px solid #e2e8e4; border-radius: 14px; box-shadow: 0 2px 12px rgba(20,40,30,.06); padding: 20px; margin: 16px 0; }
+.green { border-left: 5px solid var(--green); }
+.orange { border-left: 5px solid #ea7a17; }
+.blue { border-left: 5px solid #0ea5e9; }
+.takeaway { margin: 0; }
+.figure { text-align: center; }
+.figure button { display: block; position: relative; width: 100%; border: 0; padding: 0; background: white; cursor: zoom-in; }
+.figure img { max-height: 760px; width: 100%; object-fit: contain; }
+.figure .icon-button { position: absolute; bottom: 8px; right: 8px; background: #ffffffed; }
+.caption { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
+.kp { list-style: none; padding: 0; margin: 0; }
+.kp > li { border-bottom: 1px dashed #e2e8e4; }
+.kp > li:last-child { border-bottom: 0; }
+.kp summary { cursor: pointer; padding: 13px 8px; font-weight: 650; }
+.kp summary::marker { color: var(--green); }
+.term { color: #0a7d52; background: #e2f7eb; border-radius: 6px; padding: 1px 5px; }
+.kp-body { padding: 2px 14px 16px 24px; }
+.detail-block { margin: 12px 0; }
+.detail-block h4 { font-size: 13px; color: #08744d; margin: 0 0 4px; }
+.detail-block p { margin: 0; white-space: pre-line; }
+.warn { border-left: 5px solid #e23b3b; background: #fffafa; }
+.warn p { margin: 8px 0; }
+.misconception { color: #a82b32; }
+.mnemonic { border-left: 4px solid var(--accent); box-shadow: none; }
+.mnemonic strong { color: #df4716; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+.flip { height: 168px; perspective: 900px; border: 0; background: transparent; padding: 0; text-align: center; }
+.flip-in { display: block; height: 100%; position: relative; transition: transform .45s; transform-style: preserve-3d; }
+.flip[aria-pressed="true"] .flip-in { transform: rotateY(180deg); }
+.face { position: absolute; inset: 0; backface-visibility: hidden; border: 1px solid var(--line); border-radius: 10px; padding: 15px; background: #fafafa; display: flex; align-items: center; justify-content: center; overflow-y: auto; }
+.back { transform: rotateY(180deg); background: #eef9f4; color: #075e40; border-color: #c8eadb; }
+.practice { padding-left: 20px; }
+.practice li { margin: 7px 0; }
+.question { border-top: 1px solid #e2e8e4; padding: 20px 0 8px; margin-top: 12px; min-width: 0; }
+.options { display: grid; gap: 7px; margin: 10px 0; }
+.option { display: flex; gap: 10px; align-items: baseline; border: 1px solid #e2e8e4; background: #f0f4f2; padding: 9px 12px; border-radius: 8px; cursor: pointer; }
+.option input { flex-shrink: 0; accent-color: var(--green); }
+.option:has(input:checked) { border-color: #0ea5e9; background: #e7f6fd; }
+.question[data-result="correct"] .option:has(input:checked) { border-color: #0ea66b; background: #e7f8ef; }
+.question[data-result="wrong"] .option:has(input:checked) { border-color: #e23b3b; background: #fff0f0; }
+.answer { background: #f8fbfa; border-left: 3px solid #0ea5e9; padding: 10px; margin-top: 10px; }
+.check { border: 0; background: #0ea66b; color: white; padding: 9px 14px; border-radius: 7px; }
+footer { color: var(--muted); font-size: 12px; margin-top: 28px; }
+footer ul { padding-left: 20px; }
+dialog { width: min(1200px, 96vw); max-height: 94dvh; padding: 52px 16px 16px; border: 0; border-radius: 8px; background: white; }
+dialog::backdrop { background: #15191dd9; }
+dialog img { width: 100%; max-height: 78dvh; object-fit: contain; }
+dialog .icon-button { position: absolute; top: 8px; right: 10px; }
+@media (max-width: 600px) {
+  main { padding: 16px 12px 40px; }
+  h1 { font-size: 26px; }
+  .header { padding: 16px 4px 12px; }
+  .panel, .figure, .warn, .mnemonic { padding: 15px; }
+  .kp-body { padding-left: 16px; }
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .face { padding: 12px; }
+}
+</style></head><body><main><header class="header"><h1>Day 45 · 柔韧性分类与拉伸技术</h1><p class="sub">把“能到多大范围”和“能否在动作中控制范围”分开看；训练前准备、训练后放松和PNF都要服务于当下目标。</p><div class="meta"><span class="chip">阶段2训练科学</span><span class="chip">第7周</span><span class="chip">柔韧性 · PNF</span></div></header><section class="panel green"><h2>一句话总结</h2><p class="takeaway">柔韧性不是单纯把身体拉到最远。训练前用可控制的动态动作准备目标范围，训练后可用舒适的静态保持；PNF 的CR、HR、CRAC需要清楚的收缩与放松阶段，通常更适合有人协助、能随时停下的条件。</p></section><figure class="figure"><button data-zoom aria-label="放大详情图"><img class="" src="assets/阶段2训练科学/day45-柔韧性分类与拉伸技术.png" alt="六主题中文总览：静态与动态柔韧性、影响因素、静态拉伸、动态拉伸、PNF三法与安全边界"><span class="icon-button"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 15 6 6" /><path d="m15 9 6-6" /><path d="M21 16v5h-5" /><path d="M21 8V3h-5" /><path d="M3 16v5h5" /><path d="m3 21 6-6" /><path d="M3 8V3h5" /><path d="M9 9 3 3" /></svg></span></button><figcaption class="caption">柔韧性与拉伸技术总览：先明确要准备动作、恢复舒适范围还是在合适监督下做PNF；每次以可控制、无痛和不过度追求幅度为边界。</figcaption></figure><section class="panel"><h2>核心要点</h2><ul class="kp"><li><details><summary><span class="term">静态与动态柔韧性：先分清任务</span>：静态柔韧性看能否在外力或姿势中到达某一范围；动态柔韧性看能否主动、可控制地穿过范围。两者不能互相替代。</summary><div class="kp-body"><section class="detail-block"><h4>静态范围不是动作质量</h4><p>静态柔韧性常用保持姿势来观察，例如仰卧抬腿或舒适的后侧链拉伸。到达较大范围不自动表示你能在深蹲、跑跳或举重中控制那个范围；还要看疼痛、骨盆和脊柱代偿，以及力量是否足以稳定末端位置。</p></section><section class="detail-block"><h4>动态范围要能主动刹住</h4><p>动态柔韧性是在动作中主动通过范围，例如可控制的腿摆、弓步转体或深蹲下沉。它不是甩得越高越好：速度、范围和稳定都应在你能随时停住的条件内。训练前真正需要的是与随后动作相关的可控范围。</p></section><section class="detail-block"><h4>按目标选择检查方式</h4><p>想知道某姿势是否舒适，可用短暂静态保持；想为跑步、深蹲或上举做准备，则观察相近动作能否稳定完成。同一个人也会受疲劳、热身、睡眠和当天不适影响，单次范围不是给身体贴标签。</p></section></div></details></li><li><details><summary><span class="term">限制因素：别把紧都归到肌肉</span>：活动范围会受关节结构、结缔组织、肌肉张力、神经系统和当前安全感共同影响；拉伸感觉不是一个组织的直接读数。</summary><div class="kp-body"><section class="detail-block"><h4>结缔组织与关节结构有边界</h4><p>骨性结构、关节囊、韧带和肌腱都会影响活动范围。它们不是靠一次大力拉伸就该被“拉开”的目标。若出现卡住感、尖锐痛、肿胀或不稳定，应停止把它当成普通柔韧性问题，必要时寻求医疗或康复专业评估。</p></section><section class="detail-block"><h4>肌肉与神经会调节保护</h4><p>肌肉的张力、疲劳和对陌生范围的警觉会改变拉伸感。快速、弹震式的牵拉更容易触发牵张反射，使肌肉短暂收紧；缓慢进入、平稳呼吸和可预测的范围通常更利于学习控制。Day8 的肌梭概念解释的是这种反射参与，不是“忍痛就能关掉反射”。</p></section><section class="detail-block"><h4>疼痛不是进步刻度</h4><p>轻度、可呼吸的牵拉感可以作为范围边缘的提示；刺痛、麻电感、关节疼痛、头晕、麻木或越来越强的疼痛都不是应继续加码的信号。把强度退回到能稳定呼吸、肌肉不防御性紧缩的位置。</p></section></div></details></li><li><details><summary><span class="term">静态拉伸：训练后舒适保持</span>：静态拉伸是在不疼的末端附近保持15–60秒，适合训练后或独立恢复时整理感觉；它不等于必须拉到极限。</summary><div class="kp-body"><section class="detail-block"><h4>找到温和终点</h4><p>缓慢进入姿势，在明显但可呼吸的牵拉感前停下。保持时不反复加压、不憋气，也不把伙伴的力量当作测试。对初学者，先用较短保持和可支撑姿势；每次结束后应能平稳离开，而不是靠弹回或疼痛硬撑。</p></section><section class="detail-block"><h4>时间与总量都要可恢复</h4><p>单次可保持约15–60秒，具体取决于部位、训练量和舒适度。与其一次做很长、很痛的拉伸，不如选择少量目标部位，在几次轻松保持中观察呼吸、紧张感和第二天反应。范围没有长期稳定改善时，也要回看力量和动作控制。</p></section><section class="detail-block"><h4>训练前不把长保持当主菜</h4><p>训练前若需要准备动作，优先用与训练相关的动态活动和低负荷练习。长时间、强度很高的静态保持不一定帮助随后需要爆发或高输出的表现；若因个人需要做静态拉伸，保持温和、短暂，并接回动态准备。</p></section></div></details></li><li><details><summary><span class="term">动态拉伸：为下一项动作排练</span>：动态拉伸用主动、连续而可控制的动作进入范围，通常放在训练前热身；它不是利用惯性猛甩。</summary><div class="kp-body"><section class="detail-block"><h4>从小范围主动开始</h4><p>选择和训练相近的模式，例如下肢训练前用可控制的弓步、髋部开合或踝关节前移，上肢训练前用肩胛控制、胸椎旋转和轻量上举。先从你能主动控制的较小范围开始，再逐步增加，不用借助疼痛或甩动找幅度。</p></section><section class="detail-block"><h4>每一下都能停住</h4><p>动态拉伸的速度应让你能在任意位置暂停或回到起点。膝、髋、脊柱和肩需要一起看：例如腿摆时躯干不后仰、骨盆不明显扭转；弓步转体时膝盖方向和脚掌支撑仍稳定。失去控制就减小范围或放慢。</p></section><section class="detail-block"><h4>接到专项热身</h4><p>动态活动后，用空杆、徒手、低阻力或低速度的专项动作继续热身。这样能把新获得的感觉带回真正的训练姿势。热身不是表演动作库；总时间、动作数量和强度要给主训练留出精力。</p></section></div></details></li><li><details><summary><span class="term">PNF三法：CR、HR与CRAC</span>：PNF拉伸在受控范围中安排短暂收缩与放松：CR为收缩—放松，HR为保持—放松，CRAC再加入拮抗肌主动收缩。需要沟通与监督。</summary><div class="kp-body"><section class="detail-block"><h4>CR：先收缩，再放松进入</h4><p>收缩—放松（CR）可在舒适牵拉位开始，让被拉长的肌群做温和的等长收缩，再完全放松后缓慢进入新的可控范围。收缩不是拼命对抗伙伴，也不需要疼痛；伙伴应只提供稳定、可预测的阻力，并随时听从停止信号。</p></section><section class="detail-block"><h4>HR：保持，不让关节移动</h4><p>保持—放松（HR）常用在不适合明显关节动作时：在舒适位置让目标肌群温和用力“保持住”，伙伴提供相反方向的稳定阻力，随后放松并重新评估范围。实际命名和操作在不同教材或场景可能略有差别，重点是动作、阻力和目的要说清楚。</p></section><section class="detail-block"><h4>CRAC：放松后主动带进去</h4><p>收缩—放松—拮抗肌收缩（CRAC）在放松后，主动收缩相反方向的肌群把关节带向新范围。例如腘绳肌伸展中，在舒适收缩与放松后主动抬腿，而不是让伙伴猛压。它要求动作控制更好；初学者先把静态和动态技术练稳。</p></section></div></details></li><li><details><summary><span class="term">机制与安全：范围不能靠硬压</span>：PNF可能利用收缩后的张力调节与主动控制变化；GTO与自生抑制是理解线索，不是保证任何人都能安全获得更大范围的开关。</summary><div class="kp-body"><section class="detail-block"><h4>把GTO当作机制线索</h4><p>高尔基腱器官（GTO）对肌腱张力变化敏感，相关的自生抑制常被用于解释收缩后放松阶段为何可能更容易进入范围。它不是“收缩一下就能解锁”的单一按钮；神经系统、疼痛、伙伴沟通和当天状态都会影响结果。</p></section><section class="detail-block"><h4>伙伴只协助，不强迫</h4><p>PNF通常更适合有受过训练的伙伴或专业人员协助：先约定强度、方向、口令和停止信号；阻力稳定、力度温和，不压在关节上，也不追求把肢体推到末端。独自练习时，用可控主动活动或轻度静态拉伸通常更直接。</p></section><section class="detail-block"><h4>这些情况先停下询问</h4><p>急性损伤、明显炎症或肿胀、近期手术、关节不稳、放射性症状、感觉异常，或医生已限制的范围，都不应自行用PNF硬拉。出现疼痛加重、麻木、无力、头晕或异常反应时停止，并咨询合适的医疗或康复专业人员。</p></section></div></details></li></ul></section><section class="warn"><h2>常见误区</h2><p><strong class="misconception">误区：能被动拉到很深，就代表动作时一定稳定。</strong><br>辨析：静态范围与动态控制不同；把范围放回相近动作中，看能否主动通过、停住且不代偿。</p><p><strong class="misconception">误区：拉伸越痛，柔韧性进步越快。</strong><br>辨析：用轻到中等、可呼吸的牵拉感作为边界；刺痛、麻电、关节痛或症状加重时停止。</p><p><strong class="misconception">误区：训练前只要长时间静态拉伸，就算完成热身。</strong><br>辨析：训练前优先动态活动和低负荷专项准备；如做静态保持，应温和短暂并接回动态动作。</p><p><strong class="misconception">误区：动态拉伸就是把腿和手臂甩得越快越大。</strong><br>辨析：每次动作都要能暂停，范围、速度和躯干稳定都由主动控制决定。</p><p><strong class="misconception">误区：PNF伙伴应尽量把我压到最大范围，效果才强。</strong><br>辨析：PNF应在舒适范围内用温和、可预测阻力和清楚口令；伙伴协助稳定，不强迫关节末端。</p></section><section class="mnemonic"><h2>记忆口诀</h2><p><strong>前动后静，幅度可控；PNF先沟通，收缩放松不硬冲。</strong></p></section><section class="panel"><h2>翻转卡复习</h2><div class="cards"><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">静态柔韧性与动态柔韧性最大的区别？</span><span class="face back" aria-hidden="true">前者看保持或被动到达的范围；后者看能否主动、可控制地穿过范围。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">训练前的拉伸首选什么思路？</span><span class="face back" aria-hidden="true">围绕主训练的动态活动，再接低负荷、低速度的专项准备。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">静态拉伸的舒适保持常见时长？</span><span class="face back" aria-hidden="true">约15–60秒；以无痛、能呼吸和能平稳退出为准。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">快速弹震式牵拉为什么要谨慎？</span><span class="face back" aria-hidden="true">可能提高牵张反射与代偿风险，容易失去对范围和速度的控制。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">CR在PNF中指什么？</span><span class="face back" aria-hidden="true">收缩—放松：目标肌群温和收缩后，完全放松再缓慢进入可控范围。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">HR与CRAC各自多了什么要点？</span><span class="face back" aria-hidden="true">HR强调保持住的等长用力；CRAC在放松后主动收缩拮抗肌带入范围。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">GTO与自生抑制在本课如何理解？</span><span class="face back" aria-hidden="true">它解释收缩后可能出现的张力调节线索，不是忍痛“解锁”范围的按钮。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">伙伴PNF的首要安全规则？</span><span class="face back" aria-hidden="true">先约定强度、方向和停止信号；阻力温和稳定，不压关节、不追求最大范围。</span></span></button></div></section><section class="panel orange"><h2>实操关联</h2><ul class="practice"><li>在下肢训练前，选一个你能主动控制的动态弓步或髋部活动，先小范围做6–8次，再接一组徒手深蹲；记录何时出现代偿。</li><li>训练结束后，选一个当天主要用到的部位，做1–2组15–60秒的舒适静态保持；保持连续呼吸，不用疼痛换幅度。</li><li>和伙伴先用口头说明CR流程：舒适起点、温和收缩、完全放松、缓慢进入；没有受训伙伴时不要互相强压。</li><li>分别写下静态、动态、PNF各一个适用时机，并说明它服务的是准备、恢复还是受控范围练习。</li><li>若做腿摆或肩部环绕，拍短视频检查：躯干是否借力、关节是否能随时停住、范围是否超过可控制边界。</li><li>有急性疼痛、肿胀、麻木、近期手术或关节不稳时，暂停拉伸方案，先按医疗或康复建议处理。</li></ul></section><section class="panel blue"><h2>练习题</h2><section class="question" data-answers="[1]" data-explanation="动态柔韧性强调主动控制和动作中的范围；速度或幅度不能替代控制。"><h3>1. 单选：下列最符合动态柔韧性定义的是？</h3><div class="options"><label class="option"><input type="radio" name="question-0" value="0"><span>A. 在他人帮助下被推到末端保持不动</span></label><label class="option"><input type="radio" name="question-0" value="1"><span>B. 主动、可控制地通过某一关节范围，并能随时减速或停止</span></label><label class="option"><input type="radio" name="question-0" value="2"><span>C. 训练前忍痛静态保持两分钟</span></label><label class="option"><input type="radio" name="question-0" value="3"><span>D. 快速反复弹震身体直到感觉麻木</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[1]" data-explanation="静态拉伸以舒适、可呼吸和可控退出为边界；异常症状或关节问题不靠硬拉处理。"><h3>2. 单选：训练结束后做静态拉伸时，哪项做法更合适？</h3><div class="options"><label class="option"><input type="radio" name="question-1" value="0"><span>A. 进入刺痛位置后屏气硬撑</span></label><label class="option"><input type="radio" name="question-1" value="1"><span>B. 缓慢进入可呼吸的牵拉感，保持约15–60秒并平稳退出</span></label><label class="option"><input type="radio" name="question-1" value="2"><span>C. 每次都让伙伴把关节压到最大范围</span></label><label class="option"><input type="radio" name="question-1" value="3"><span>D. 把静态拉伸当成关节不稳的自我治疗</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[0,1,3]" data-explanation="训练前重视与专项相关的主动范围、稳定和低负荷排练；失控甩动与疼痛不能提高准备质量。"><h3>3. 多选：训练前为深蹲做柔韧性准备，哪些选择更合理？</h3><div class="options"><label class="option"><input type="checkbox" name="question-2" value="0"><span>A. 先用可控弓步、踝前移或髋部活动探索范围</span></label><label class="option"><input type="checkbox" name="question-2" value="1"><span>B. 动态活动后接徒手或轻负荷深蹲</span></label><label class="option"><input type="checkbox" name="question-2" value="2"><span>C. 腿摆时允许躯干大幅后仰，只要腿抬得高</span></label><label class="option"><input type="checkbox" name="question-2" value="3"><span>D. 把速度调到每一下都能停住</span></label><label class="option"><input type="checkbox" name="question-2" value="4"><span>E. 用疼痛和弹震替代专项热身</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[0,1,3]" data-explanation="PNF的重点是受控收缩、放松和沟通；GTO相关机制不能取消疼痛与安全边界。"><h3>4. 多选：关于PNF的说法，哪些正确？</h3><div class="options"><label class="option"><input type="checkbox" name="question-3" value="0"><span>A. CR包含目标肌群温和收缩后再放松进入范围</span></label><label class="option"><input type="checkbox" name="question-3" value="1"><span>B. CRAC在放松后会主动收缩拮抗肌带入范围</span></label><label class="option"><input type="checkbox" name="question-3" value="2"><span>C. 伙伴越用力压关节，PNF越有效</span></label><label class="option"><input type="checkbox" name="question-3" value="3"><span>D. 应预先约定强度、方向和停止信号</span></label><label class="option"><input type="checkbox" name="question-3" value="4"><span>E. GTO意味着可以无视疼痛继续拉</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[1]" data-explanation="后仰和骨盆扭转说明当前范围或速度超出控制能力；先降低难度，建立可转移到深蹲的动态控制。"><h3>5. 案例：小林在训练前做高踢腿，腿越甩越高，但每次都会后仰、骨盆扭转，随后深蹲也不稳。最合适的调整是？</h3><div class="options"><label class="option"><input type="radio" name="question-4" value="0"><span>A. 继续加快腿摆，直到身体适应</span></label><label class="option"><input type="radio" name="question-4" value="1"><span>B. 改成更小、更慢且能暂停的主动范围，再接徒手深蹲准备</span></label><label class="option"><input type="radio" name="question-4" value="2"><span>C. 训练前静态拉到疼痛位置保持更久</span></label><label class="option"><input type="radio" name="question-4" value="3"><span>D. 请伙伴把腿压到最高点</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[2]" data-explanation="刺痛、麻感等异常症状不是PNF应继续推进的信号，应停止并进行合适的专业评估。"><h3>6. 案例：伙伴帮阿远做腘绳肌PNF时，阿远说膝后出现刺痛和麻感。下一步应是？</h3><div class="options"><label class="option"><input type="radio" name="question-5" value="0"><span>A. 让伙伴再加力，以便通过保护反射</span></label><label class="option"><input type="radio" name="question-5" value="1"><span>B. 屏气坚持完本组</span></label><label class="option"><input type="radio" name="question-5" value="2"><span>C. 立即停止，不把异常症状当普通牵拉，并按需要咨询医疗或康复专业人员</span></label><label class="option"><input type="radio" name="question-5" value="3"><span>D. 改为更快的弹震式拉伸</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section></section><footer>Day 45/77 · NASM／NSCA<ul><li>NSCA：Essentials of Strength Training and Conditioning，第4版，热身、柔韧性训练与运动准备相关章节。</li><li>NASM：Essentials of Personal Fitness Training，第7版，柔韧性连续体、静态与动态拉伸、PNF相关章节。</li><li>ACSM：ACSM&#39;s Guidelines for Exercise Testing and Prescription，第11版，运动前筛查与安全边界相关章节。</li><li>Sharman, Cresswell, Riek：Proprioceptive neuromuscular facilitation stretching，Mechanisms and clinical implications；用于理解PNF机制，不替代个体医疗建议。</li></ul></footer></main><dialog aria-label="详情大图"><button class="icon-button" aria-label="关闭大图" title="关闭大图"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></button><img alt=""></dialog><script>document.querySelectorAll('.flip').forEach((button) => {
+  button.addEventListener('click', () => {
+    const pressed = button.getAttribute('aria-pressed') !== 'true';
+    button.setAttribute('aria-pressed', String(pressed));
+    button.querySelector('.front').setAttribute('aria-hidden', String(pressed));
+    button.querySelector('.back').setAttribute('aria-hidden', String(!pressed));
+  });
+});
+document.querySelectorAll('.question').forEach((question) => {
+  question.querySelector('.check').addEventListener('click', () => {
+    const selected = [...question.querySelectorAll('input:checked')].map((input) => Number(input.value)).sort();
+    const answer = question.querySelector('.answer');
+    answer.hidden = false;
+    if (!selected.length) { answer.textContent = '请先选择答案。'; delete question.dataset.result; return; }
+    const correct = JSON.stringify(selected) === JSON.stringify(JSON.parse(question.dataset.answers).sort());
+    question.dataset.result = correct ? 'correct' : 'wrong';
+    answer.textContent = `${correct ? '回答正确。' : '再想一想。'}${question.dataset.explanation}`;
+  });
+});
+const imageDialog = document.querySelector('dialog');
+document.querySelectorAll('[data-zoom]').forEach((button) => {
+  button.addEventListener('click', () => {
+    const original = button.querySelector('img');
+    const image = imageDialog.querySelector('img');
+    image.src = original.src;
+    image.alt = original.alt;
+    imageDialog.showModal();
+  });
+});
+imageDialog.querySelector('button').addEventListener('click', () => imageDialog.close());
+imageDialog.addEventListener('click', (event) => {
+  const rect = imageDialog.getBoundingClientRect();
+  if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) imageDialog.close();
+});
+</script></body></html>

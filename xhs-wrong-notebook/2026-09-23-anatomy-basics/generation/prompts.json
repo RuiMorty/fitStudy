@@ -1,0 +1,65 @@
+{
+  "schemaVersion": "1.0",
+  "createdAt": "2026-09-23",
+  "model": "gpt-image-2.5-sunburst",
+  "preset": "quality",
+  "size": "1024x1536",
+  "referenceStyle": {
+    "modelAsset": "../../2026-09-22-joint-actions/00-rick-muscular-cartoon-model-v4.png",
+    "styleAsset": "../../2026-09-22-joint-actions/04-肩关节动作地图-修订.png",
+    "use": "这两个文件只作为本地排版和人工目检的母版；灵智标准文生图接口不接收参考图。最终卡片把 modelAsset 作为同一讲解人物合成进去。"
+  },
+  "sharedPrompt": "Create a polished vertical 1024x1536 Chinese fitness-anatomy study-card illustration base, with absolutely no letters, words, numbers, labels, watermarks, logos, arrows, or icons. Warm ivory paper background #F8F2E9, deep navy fine outlines, restrained brick-red anatomy emphasis #B44339, muted blue-gray secondary structures, clean 2D cartoon-medical teaching illustration, precise and uncluttered. Leave a clear blank header band at the top 175 pixels, a clear blank footer band at the bottom 175 pixels, and a clear vertical right-side margin about 210 pixels wide for a locally composited recurring presenter. No human cartoon character, no face, no clothing: only the requested anatomical diagrams. Keep all key anatomy away from the reserved blank areas. Use one coherent scale, accurate joints and tendon paths, and generous breathing room for local Chinese labels.",
+  "referenceEditSharedPrompt": "Create one finished vertical 1024x1536 Chinese fitness-anatomy study-card illustration. Reference image 1 is the mandatory, exact recurring adult male cartoon coach: use the same facial features, light cyan spiky hair, muscular build, white training tank top, dark forest-green shorts with brick-red side panels, black wrist wraps, and white sneakers. He must appear naturally in the topic-specific pose or as the active demonstrator, never as a pasted miniature, and no other human figure may appear. Reference image 2 is the mandatory visual-style reference: match its warm ivory paper background #F8F2E9, clean navy outlines, brick-red #B44339 emphasis, practical anatomical-card composition, title-zone rhythm, and bottom-tip-zone rhythm. Do not render any letters, Chinese characters, numbers, labels, logos, watermarks, arrows, or icons; exact Chinese typography and arrows will be added locally. Reserve a clear header band around 170 pixels high and a clear footer band around 165 pixels high. Keep anatomy precise, coherent, and uncluttered.",
+  "cards": [
+    {
+      "id": "01-deep-back-muscles",
+      "title": "背部深层肌",
+      "tip": "深层贴脊柱，重点在椎间稳定。",
+      "output": "raw/01-deep-back-muscles-base.png",
+      "prompt": "Show the recurring presenter from reference image 1 in a posterior three-quarter teaching pose, wearing exactly the same clothes. His back has a clean educational cut-away window from upper back to pelvis: one side retains a light semi-transparent superficial layer, the other reveals paired short oblique multifidus bundles directly beside the thoracolumbar spine. Keep the spine and deep brick-red multifidus crisp; superficial trapezius and latissimus are neutral overlays. No labels and no arrows."
+    },
+    {
+      "id": "02-adductor-magnus-fixed-end",
+      "title": "大收肌：固定端决定谁动",
+      "tip": "近固定看大腿；骨盆动作先看股骨是否固定。",
+      "output": "raw/02-adductor-magnus-fixed-end-base.png",
+      "prompt": "Show the same recurring presenter from reference image 1 twice, at identical scale and in his exact outfit, with a precise educational skeleton-and-muscle cut-away over the pelvis and medial thigh. Left demonstrator: pelvis visually stable with the femur free in a hip-adduction pose. Right demonstrator: both femora visibly planted and the pelvis shown as the mobile segment in anterior tilt. Highlight adductor magnus in brick red. No labels, arrows, or text."
+    },
+    {
+      "id": "03-upper-limb-location-map",
+      "title": "上肢定位地图",
+      "tip": "长头腱看横肱韧带；旋前圆肌屈肘只是辅助。",
+      "output": "raw/03-upper-limb-location-map-base.png",
+      "prompt": "Use the same recurring presenter from reference image 1 as a natural active demonstrator in a vertical three-part upper-limb study card. Top: his anterior shoulder close-up with bicipital groove, biceps long-head tendon inside the groove, a transverse humeral ligament bridging the groove, and a separate coracoacromial arch above. Middle: his elbow and proximal forearm with pronator teres running obliquely from medial epicondyle region to radius. Bottom: dorsal wrist skeleton with radius, articular disc, scaphoid, lunate, triquetrum and all carpal rows with visible joint spaces. No labels, arrows, or text."
+    },
+    {
+      "id": "04-leg-compartments-gastrocnemius",
+      "title": "小腿三群与腓肠肌",
+      "tip": "前群背屈、外侧群外翻、后群跖屈；腓肠肌还屈膝。",
+      "output": "raw/04-leg-compartments-gastrocnemius-base.png",
+      "prompt": "Use the same recurring presenter from reference image 1 in a balanced standing teaching pose, with an anatomical cut-away through one lower leg. Main center: a lower-leg cross-section with anterior, lateral, and posterior muscle compartments clearly color-separated in red, muted blue, and warm ochre; show tibia and fibula accurately. Side inset: posterior leg from knee to heel showing gastrocnemius crossing the knee and becoming Achilles tendon at the calcaneus. No labels, arrows, or text."
+    },
+    {
+      "id": "05-bone-membranes-cells",
+      "title": "骨膜、骨内膜与骨细胞",
+      "tip": "骨原细胞→成骨细胞；破骨细胞不是同一来源。",
+      "output": "raw/05-bone-membranes-cells-base.png",
+      "prompt": "Use the same recurring presenter from reference image 1 at the left, naturally pointing to a clean long-bone cutaway. The cutaway shows outer periosteum peeled back, compact cortical bone, trabecular bone, marrow cavity, and a thin endosteum lining inside. In two separate small inset scenes, show osteoprogenitor cells becoming osteoblasts and then osteocytes on a bone-forming surface, and separately show a large multinucleated osteoclast resorbing bone in a resorption bay. No labels, arrows, or text."
+    },
+    {
+      "id": "06-pennate-muscles",
+      "title": "羽状肌",
+      "tip": "肌束斜接肌腱，常以力量优势换取位移范围。",
+      "output": "raw/06-pennate-muscles-base.png",
+      "prompt": "Use the same recurring presenter from reference image 1 as a natural instructor beside a horizontal four-part anatomy-diagram comparison of muscle architecture: parallel-fiber muscle, unipennate muscle, bipennate muscle, and multipennate muscle. Use the same scale and color scheme in all four sections: neutral pale tendons and brick-red striated muscle fibers visibly attaching at different angles. No labels, arrows, or text."
+    },
+    {
+      "id": "07-respiratory-and-bone-connections",
+      "title": "呼吸系统与骨连结",
+      "tip": "呼吸道＋肺；直接连结→半关节→关节。",
+      "output": "raw/07-respiratory-and-bone-connections-base.png",
+      "prompt": "Use the same recurring presenter from reference image 1 as a natural instructor at the side of a vertically split two-topic teaching composition, with separate rounded frames and a clean gap between them. Top frame: respiratory tract path from nose through pharynx, larynx, trachea, bronchi into both lungs ending in alveoli; include diaphragm as a subtle supporting structure. Bottom frame: three side-by-side bone-connection cross-sections showing a solid direct fibrous or cartilaginous connection with no cavity, a transitional fibrocartilage connection with a tiny slit-like cleft, and a synovial joint with a clear joint cavity and capsule. No labels, arrows, or text."
+    }
+  ]
+}

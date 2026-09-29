@@ -1,0 +1,26 @@
+{
+  "job": "05",
+  "started_at": "2026-09-23T05:52:00.904326+00:00",
+  "model": "gpt-image-2.5-sunburst",
+  "endpoint": "/v1/images/edits",
+  "references": [
+    {
+      "path": "/Users/agiuser/Documents/fit/xhs-wrong-notebook/2026-09-22-joint-actions/05-多裂肌深层短肌-rick-v4-带字.png",
+      "sha256": "3367a77c9b5fc8b4983ad382f6977aebdd0568e90e63b25c96e9d5ffeba4282b"
+    },
+    {
+      "path": "/Users/agiuser/Documents/fit/xhs-wrong-notebook/2026-09-22-joint-actions/00-rick-muscular-cartoon-model-v4.png",
+      "sha256": "9df6044701cdeb4037f5b8573f266e634fe0e761b975d5c0ab51a351a1f5b1e4"
+    },
+    {
+      "path": "/Users/agiuser/Documents/fit/xhs-wrong-notebook/2026-09-22-joint-actions/revision-20260923/inputs/05-short-long-reference.png",
+      "sha256": "ffad5fe4837e127ac34c45cf7602cf41967f33e9dbce67f08a943fa6cd465458"
+    }
+  ],
+  "status": "succeeded",
+  "post_count": 1,
+  "output": "/Users/agiuser/Documents/fit/xhs-wrong-notebook/2026-09-22-joint-actions/revision-20260923/raw/05.png",
+  "bytes": 1839927,
+  "output_sha256": "3e5441c0d671e19c335d7b7991ccad955994927f5f96edd10deae6fdb86405f1",
+  "completed_at": "2026-09-23T05:55:08.352607+00:00"
+}

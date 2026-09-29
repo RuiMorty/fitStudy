@@ -1,0 +1,35 @@
+{
+  "status": "awaiting-review",
+  "artifactStatus": "ready-local-draft",
+  "day": 47,
+  "startedAt": "2026-09-23T10:04:16Z",
+  "input": "runs/day47/lesson.json",
+  "imagePlan": "runs/day47/image-prompts.json",
+  "planned": 13,
+  "generated": 13,
+  "retryPolicy": "one-user-confirmed-programming-revision-completed-no-further-requests",
+  "publishApproved": false,
+  "serverDeployed": false,
+  "resumeAuthorization": "runs/day47/retry-reactive-20260926/authorization.json",
+  "acceptedReplacement": "runs/day47/retry-reactive-20260926/attempt-01.json",
+  "remainingUnrequestedAssets": [],
+  "failureHistory": [
+    "runs/day47/failure-20260924-reactive-alpha.json",
+    "runs/day47/failure-20260926-reactive-request.json",
+    "runs/day47/failure-20260926-programming-alpha.json"
+  ],
+  "note": "Day47 本地课程包完成：13张透明素材、中文详情图、课程HTML、8张小红书卡片、文案与ZIP已生成并检查。最后一张编排总览由用户确认的一笔修订请求补齐，旧失败原图保留。模板17项、四种宽度交互与排版、ZIP完整性通过；待用户验收，未发布。",
+  "completionAuthorization": "runs/day47/finish-20260927/authorization.json",
+  "lastCheckpointAt": "2026-09-27T09:27:18.677635+00:00",
+  "completedAt": "2026-09-27T09:27:18.677635+00:00",
+  "userReviewStatus": "awaiting-review",
+  "productionQualityStatus": "passed",
+  "qualityReview": "runs/day47/finish-20260927/quality-review.json",
+  "manifest": "xhs/day47/manifest.json",
+  "releaseStatus": "not-started",
+  "programmingReplacement": {
+    "file": "overview-06-programming.png",
+    "record": "runs/day47/finish-20260927/generation.json",
+    "status": "accepted-production-qa"
+  }
+}

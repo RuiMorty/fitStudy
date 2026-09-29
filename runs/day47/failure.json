@@ -1,0 +1,20 @@
+{
+  "recordedAt": "2026-09-23T10:18:31Z",
+  "status": "failed-no-retry",
+  "blockedAsset": "overview-04-cut.png",
+  "role": "overview-item",
+  "reason": "Lingzhi generator returned a non-zero status and no local output file was created. The generator did not expose a provider error message.",
+  "successfulAssets": 10,
+  "plannedAssets": 13,
+  "remainingUnrequestedAssets": [
+    "overview-05-reactive.png",
+    "overview-06-programming.png"
+  ],
+  "nextAction": "The user subsequently authorized one new request only. That replacement succeeded; the remaining two unrequested overview images still require explicit authorization before rendering.",
+  "resolution": {
+    "resolvedAt": "2026-09-23T11:31:39.568261+00:00",
+    "status": "replacement-generated",
+    "resumeRecord": "runs/day47/resume-current/generation.json",
+    "output": "runs/day47/source/overview-04-cut.png"
+  }
+}

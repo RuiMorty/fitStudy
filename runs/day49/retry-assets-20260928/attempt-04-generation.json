@@ -1,0 +1,33 @@
+{
+  "provider": "Lingzhi",
+  "preset": "quality",
+  "model": "gpt-image-2.5-sunburst",
+  "authorization": "runs/day49/retry-policy.json",
+  "visualReviews": [
+    "runs/day49/visual-quality-review-01.json",
+    "runs/day49/visual-quality-review-02.json",
+    "runs/day49/visual-quality-review-03.json"
+  ],
+  "status": "awaiting-visual-quality",
+  "attempt": {
+    "file": "visual-06-dosage-readiness.png",
+    "role": "knowledge",
+    "providerRequestNumberForAsset": 4,
+    "startedAt": "2026-09-28T12:14:04.566998+00:00",
+    "status": "generated-pending-visual-quality",
+    "output": "runs/day49/source/visual-06-dosage-readiness-attempt-04.png",
+    "completedAt": "2026-09-28T12:14:38.563625+00:00",
+    "returncode": 0,
+    "size": [
+      1983,
+      793
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "bytes": 1071569,
+    "sha256": "cb23cdcd534aa5e8151f7431dd34dd6ea1b2199d8dd02df6798d30aa3bbd5f5d"
+  },
+  "completedAt": "2026-09-28T12:14:38.609072+00:00"
+}

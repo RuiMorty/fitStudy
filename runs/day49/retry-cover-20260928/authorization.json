@@ -1,0 +1,12 @@
+{
+  "authorizedAt": "2026-09-28T10:30:00Z",
+  "authorization": "用户明确输入：继续",
+  "scope": "仅限 Day49 首张封面的一笔新的、经修改提示词的灵智质量档请求。",
+  "previousFailure": "runs/day49/failure.json",
+  "output": "runs/day49/retry-cover-20260928/cover-attempt-02.png",
+  "boundaries": [
+    "只发起一次请求，不覆盖首次失败记录或文件。",
+    "若请求失败、无文件或透明通道不合格，立即停止，不请求其余12张素材。",
+    "不预处理、渲染、安装、测试、部署或修改首页、短链和正式进度。"
+  ]
+}

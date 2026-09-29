@@ -1,0 +1,26 @@
+{
+  "provider": "Lingzhi",
+  "preset": "quality",
+  "model": "gpt-image-2.5-sunburst",
+  "createdAt": "2026-09-22T10:00:00Z",
+  "stylePreset": "templates/study/v1/image-style.json",
+  "authorization": "用户在本次自动化中明确继续 Day46；按课纲从已发布 Day45 生成本地草稿。每项仅一次灵智请求，失败不自动重试。",
+  "referenceMode": "text-only fixed Bojji and Despa character profile; no reference image is sent to the generation API",
+  "retryPolicy": "one request per asset; stop on provider failure; no automatic paid retry",
+  "commonPrompt": "为同一个健身科学教学系列制作配图，使用《国王排名》Ranking of Kings 的波吉 Bojji 与德斯帕 Despa。波吉是矮小男孩，黑色短发、圆脸、大圆眼、小金色三尖王冠、钴蓝色上衣、白腰带白裤、黑色短靴；绝不画成长腿成年人。德斯帕是成年男性老师，金色后梳短发、细长眼、长鼻、上唇两撇细小金色胡须，红褐色外套、白毛领、米色裤、深色短靴；不要长发剑士或山羊胡。清爽二维动漫教材插画，深灰细轮廓、平涂色块、极少柔和阴影；不要3D、照片感、厚涂或广告光效。每个场景仅波吉和德斯帕，不添加其他人物。外围和未绘制区域是真实透明PNG alpha；无底色、地板、外框、贴纸白边、投影、Logo、水印、汉字、英文字母或数字。白裤子和白毛领保持不透明白色；关键结构距边缘至少6%，手脚完整；工具、关节和支撑关系准确。",
+  "assets": [
+    {"file":"cover.png","role":"cover","topic":"泡沫轴、筋膜球与训练前后时机","teachingRelationship":"德斯帕示范温和泡沫轴与动态热身，波吉观察压力和时机；不出现第三人。","composition":"横向16:9无字封面","allowedText":"none","anatomyAndTechniqueConstraints":"全身完整，泡沫轴接触大腿软组织而非膝关节；动态弓步稳定，透明背景。","prompt":"透明PNG，横向16:9无字封面。左侧德斯帕侧卧用泡沫轴轻压大腿软组织，双手支撑、面部平静；右侧同一德斯帕站立做小幅弓步转体作为滚后动态热身。波吉位于两种姿势之间观察并做比较手势。泡沫轴、双脚和膝髋关系完整；无箭头无文字无地面线。"},
+    {"file":"visual-01-mechanism.png","role":"knowledge","topic":"SMR改变当下感觉并需动作复测","teachingRelationship":"德斯帕轻压泡沫轴，波吉观察呼吸和复测；不出现第三人。","composition":"横向28:9无字知识图","allowedText":"none","anatomyAndTechniqueConstraints":"泡沫轴在大腿软组织下方，身体由手脚支撑；不压膝腰椎。","prompt":"透明PNG，横向28:9无字知识插图。德斯帕以安全侧卧姿势用泡沫轴轻压大腿软组织，一侧保留小幅徒手深蹲复测的姿势对照；波吉在旁观察呼吸。压力轻、表情平静、动作可控，泡沫轴与四肢完整；无文字箭头地面线。"},
+    {"file":"visual-02-roller.png","role":"knowledge","topic":"泡沫轴大区域慢速度与避开骨点","teachingRelationship":"德斯帕示范大腿软组织滚动，波吉观察支撑和安全位置；不出现第三人。","composition":"横向28:9无字知识图","allowedText":"none","anatomyAndTechniqueConstraints":"手脚分担体重，滚筒只接触肌肉，不接触膝、腰、颈。","prompt":"透明PNG，横向28:9无字知识插图。德斯帕用双手和另一条腿支撑身体，泡沫轴横置在大腿肌肉下方，动作短而慢；膝关节、腰椎和颈椎明显避开滚筒。波吉在另一侧观察。全身和泡沫轴完整，无文字箭头。"},
+    {"file":"visual-03-tools.png","role":"knowledge","topic":"筋膜球与按摩棒的小范围轻压","teachingRelationship":"德斯帕分别示范靠墙球和按摩棒，波吉保持安全距离；不出现第三人。","composition":"横向28:9无字知识图","allowedText":"none","anatomyAndTechniqueConstraints":"球接触臀肌或足底软组织，按摩棒不压关节；头颈中立。","prompt":"透明PNG，横向28:9无字知识插图。横向排列两个小场景：德斯帕靠墙用小球轻压臀部软组织，另一侧用按摩棒轻扫小腿或大腿；脚踝、膝和骨点避开，头颈自然。波吉观察并做轻柔提示手势。无文字箭头。"},
+    {"file":"visual-04-mobility.png","role":"knowledge","topic":"SMR后髋胸椎踝主动活动度","teachingRelationship":"德斯帕示范髋铰链、胸椎旋转和靠墙踝前移，波吉观察稳定；不出现第三人。","composition":"横向28:9无字知识图","allowedText":"none","anatomyAndTechniqueConstraints":"三种动作都低幅可控；踝动作脚跟接地，胸椎旋转不带腰。","prompt":"透明PNG，横向28:9无字知识插图。横向三段示意：德斯帕做轻量髋铰链、侧卧开书胸椎旋转、靠墙膝向脚尖踝前移；每段姿势自然、脚跟接触地面、骨盆和腰不代偿。波吉在后方观察。无器械文字箭头。"},
+    {"file":"visual-05-timing.png","role":"knowledge","topic":"训练前后短时SMR接回任务","teachingRelationship":"德斯帕从短时泡沫轴转入动态弓步热身，波吉观察时机；不出现第三人。","composition":"横向28:9无字知识图","allowedText":"none","anatomyAndTechniqueConstraints":"泡沫轴仅短时轻压；弓步前膝脚尖同向且能停住。","prompt":"透明PNG，横向28:9无字知识插图。德斯帕左侧从泡沫轴轻压大腿结束，右侧立即站起做低幅动态弓步，两个状态用留白分开；波吉观察转接。人物和泡沫轴完整，动态弓步稳定不后仰；无箭头文字地面线。"},
+    {"file":"visual-06-safety.png","role":"knowledge","topic":"SMR禁忌与停止信号","teachingRelationship":"波吉做清晰停止手势，德斯帕从工具旁回到中立站姿；不出现第三人。","composition":"横向28:9无字知识图","allowedText":"none","anatomyAndTechniqueConstraints":"停止手势平静明确；不画痛苦、伤口或医疗符号。","prompt":"透明PNG，横向28:9无字知识插图。波吉在左侧抬手做清晰停止手势，德斯帕在右侧从泡沫轴旁回到稳定中立站姿，工具放在一边不接触身体。两人表情平静，突出沟通和退出；无文字箭头。"},
+    {"file":"overview-01-mechanism.png","role":"overview-item","topic":"SMR机制","teachingRelationship":"德斯帕示范轻压，波吉观察呼吸；不出现第三人。","composition":"横向4:3独立总览插图","allowedText":"none","anatomyAndTechniqueConstraints":"泡沫轴接触大腿软组织，姿势安全。","prompt":"透明PNG，横向4:3总览专用独立插图。德斯帕侧卧用泡沫轴轻压大腿，双手支撑、面部平静；波吉在旁观察呼吸。全身完整，不画文字箭头地面线，构图不同于横幅。"},
+    {"file":"overview-02-roller.png","role":"overview-item","topic":"泡沫轴","teachingRelationship":"德斯帕示范有支撑的泡沫轴，波吉观察；不出现第三人。","composition":"横向4:3独立总览插图","allowedText":"none","anatomyAndTechniqueConstraints":"滚筒避开膝腰颈和骨点。","prompt":"透明PNG，横向4:3总览专用独立插图。德斯帕坐姿或侧卧用手脚分担体重，泡沫轴只接触大腿软组织；波吉在远侧观察。动作简洁、完整人物和器械，无文字箭头。"},
+    {"file":"overview-03-tools.png","role":"overview-item","topic":"局部工具","teachingRelationship":"德斯帕用筋膜球轻压，波吉观察；不出现第三人。","composition":"横向4:3独立总览插图","allowedText":"none","anatomyAndTechniqueConstraints":"小球接触软组织，关节骨点避开。","prompt":"透明PNG，横向4:3总览专用独立插图。德斯帕靠墙用筋膜球轻压臀部软组织，旁边放一根简化按摩棒但不制造多余场景；波吉做观察手势。无文字箭头、透明背景。"},
+    {"file":"overview-04-mobility.png","role":"overview-item","topic":"髋胸椎踝活动度","teachingRelationship":"德斯帕做靠墙踝前移，波吉观察脚跟和膝方向；不出现第三人。","composition":"横向4:3独立总览插图","allowedText":"none","anatomyAndTechniqueConstraints":"脚跟接触、膝朝脚尖，低幅可控。","prompt":"透明PNG，横向4:3总览专用独立插图。德斯帕做靠墙踝背屈前移，脚跟完整接地、膝朝脚尖；波吉在旁观察。可用小型胸椎旋转姿势作层次但不拥挤，无文字箭头。"},
+    {"file":"overview-05-timing.png","role":"overview-item","topic":"训练时机","teachingRelationship":"德斯帕从轻压转入动态热身，波吉观察；不出现第三人。","composition":"横向4:3独立总览插图","allowedText":"none","anatomyAndTechniqueConstraints":"滚筒和弓步各自完整，动作稳定。","prompt":"透明PNG，横向4:3总览专用独立插图。德斯帕一侧放好泡沫轴，随后做小幅动态弓步准备；波吉在旁观察转接。构图体现短时处理后回到任务，无文字箭头地面线。"},
+    {"file":"overview-06-safety.png","role":"overview-item","topic":"禁忌与停止信号","teachingRelationship":"波吉停止，德斯帕退出工具；不出现第三人。","composition":"横向4:3独立总览插图","allowedText":"none","anatomyAndTechniqueConstraints":"停止手势清晰、直立中立、安全无痛苦表情。","prompt":"透明PNG，横向4:3总览专用独立插图。波吉抬手做清楚停止手势，德斯帕远离泡沫轴回到稳定直立位；工具放在地面但不画地面线。无文字箭头和医疗符号。"}
+  ]
+}

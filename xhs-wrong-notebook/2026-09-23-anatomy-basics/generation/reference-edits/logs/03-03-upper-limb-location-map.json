@@ -1,0 +1,25 @@
+{
+  "job": "03-03-upper-limb-location-map",
+  "started_at": "2026-09-23T12:38:24.085234+00:00",
+  "provider": "Lingzhi",
+  "model": "gpt-image-2.5-sunburst",
+  "endpoint": "/v1/images/edits",
+  "references": [
+    {
+      "role": "fixed-presenter-model",
+      "path": "/Users/agiuser/Documents/fit/xhs-wrong-notebook/2026-09-22-joint-actions/00-rick-muscular-cartoon-model-v4.png",
+      "sha256": "9df6044701cdeb4037f5b8573f266e634fe0e761b975d5c0ab51a351a1f5b1e4"
+    },
+    {
+      "role": "card-style-reference",
+      "path": "/Users/agiuser/Documents/fit/xhs-wrong-notebook/2026-09-22-joint-actions/04-肩关节动作地图-修订.png",
+      "sha256": "b704fa506f6c74143daec10c708c39ed800788feef50e4a29f1c156036e2c6a3"
+    }
+  ],
+  "status": "succeeded",
+  "post_count": 1,
+  "output": "/Users/agiuser/Documents/fit/xhs-wrong-notebook/2026-09-23-anatomy-basics/generation/reference-edits/raw/03-03-upper-limb-location-map.png",
+  "bytes": 1765554,
+  "output_sha256": "62278935f8a882b0dcbb4e20826c282d780e1868847b00675efcd1e35ea083cf",
+  "completed_at": "2026-09-23T12:39:40.603424+00:00"
+}

@@ -1,0 +1,54 @@
+{
+  "provider": "Lingzhi",
+  "preset": "quality",
+  "model": "gpt-image-2.5-sunburst",
+  "authorization": "runs/day49/retry-policy.json",
+  "visualReviews": [
+    "runs/day49/visual-quality-review-01.json",
+    "runs/day49/visual-quality-review-02.json"
+  ],
+  "status": "awaiting-visual-quality",
+  "attempts": [
+    {
+      "file": "visual-01-power-intent.png",
+      "role": "knowledge",
+      "providerRequestNumberForAsset": 3,
+      "startedAt": "2026-09-28T12:06:17.435921+00:00",
+      "status": "generated-pending-visual-quality",
+      "output": "runs/day49/source/visual-01-power-intent-attempt-03.png",
+      "completedAt": "2026-09-28T12:06:53.113488+00:00",
+      "returncode": 0,
+      "size": [
+        2020,
+        779
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "bytes": 1012840,
+      "sha256": "a3fd902ec26930096c8a9eb22354391be9d04f975f572cdd9348f1de1312a279"
+    },
+    {
+      "file": "visual-06-dosage-readiness.png",
+      "role": "knowledge",
+      "providerRequestNumberForAsset": 3,
+      "startedAt": "2026-09-28T12:06:53.144071+00:00",
+      "status": "generated-pending-visual-quality",
+      "output": "runs/day49/source/visual-06-dosage-readiness-attempt-03.png",
+      "completedAt": "2026-09-28T12:07:23.026776+00:00",
+      "returncode": 0,
+      "size": [
+        1981,
+        793
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "bytes": 959044,
+      "sha256": "b4a8afa7074ccd7661d3edf880daf2d27a1b0a63ec612e7d56ce7bac4a00902d"
+    }
+  ],
+  "completedAt": "2026-09-28T12:07:23.056166+00:00"
+}

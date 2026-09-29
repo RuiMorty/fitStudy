@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Day 47 · 速度敏捷SAQ训练</title><link rel="icon" type="image/svg+xml" href="assets/a6d8e5caaa61ed31.svg"><style>:root { color-scheme: light; --ink: #111113; --muted: #71717a; --line: #e4e4e7; --accent: #ff5a1f; --green: #0ea66b; --blue: #2563eb; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; font-synthesis: none; letter-spacing: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); overflow-wrap: anywhere; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+img { display: block; max-width: 100%; }
+button:focus-visible, a:focus-visible, summary:focus-visible, input:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
+svg.icon { width: 20px; height: 20px; }
+.icon-button { display: inline-grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 1px solid var(--line); border-radius: 6px; background: white; }
+[hidden] { display: none !important; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
+
+body { background: #f6f8f7; font-size: 14px; line-height: 1.65; }
+main { max-width: 980px; margin: auto; padding: 24px 18px 60px; }
+.header { padding: 22px 4px 14px; }
+h1 { margin: 10px 0 8px; font-size: 36px; line-height: 1.2; }
+h1::before { content: ""; display: block; width: 34px; height: 4px; background: var(--accent); margin-bottom: 10px; }
+h2 { font-size: 17px; margin: 0 0 14px; }
+h3 { font-size: 16px; margin: 0 0 8px; }
+.sub { color: var(--muted); margin: 5px 0 18px; }
+.meta { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { display: inline-block; border: 1px solid var(--line); border-radius: 20px; background: white; color: var(--muted); padding: 3px 10px; font-size: 12px; font-weight: 600; }
+.chip:nth-child(1) { background: #e2f7eb; color: #15803d; border-color: transparent; }
+.chip:nth-child(2) { background: #e7f0fe; color: #2563eb; border-color: transparent; }
+.chip:nth-child(3) { background: #fff2e5; color: #9a4c05; border-color: transparent; }
+.panel, .figure, .warn, .mnemonic { background: white; border: 1px solid #e2e8e4; border-radius: 14px; box-shadow: 0 2px 12px rgba(20,40,30,.06); padding: 20px; margin: 16px 0; }
+.green { border-left: 5px solid var(--green); }
+.orange { border-left: 5px solid #ea7a17; }
+.blue { border-left: 5px solid #0ea5e9; }
+.takeaway { margin: 0; }
+.figure { text-align: center; }
+.figure button { display: block; position: relative; width: 100%; border: 0; padding: 0; background: white; cursor: zoom-in; }
+.figure img { max-height: 760px; width: 100%; object-fit: contain; }
+.figure .icon-button { position: absolute; bottom: 8px; right: 8px; background: #ffffffed; }
+.caption { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
+.kp { list-style: none; padding: 0; margin: 0; }
+.kp > li { border-bottom: 1px dashed #e2e8e4; }
+.kp > li:last-child { border-bottom: 0; }
+.kp summary { cursor: pointer; padding: 13px 8px; font-weight: 650; }
+.kp summary::marker { color: var(--green); }
+.term { color: #0a7d52; background: #e2f7eb; border-radius: 6px; padding: 1px 5px; }
+.kp-body { padding: 2px 14px 16px 24px; }
+.detail-block { margin: 12px 0; }
+.detail-block h4 { font-size: 13px; color: #08744d; margin: 0 0 4px; }
+.detail-block p { margin: 0; white-space: pre-line; }
+.warn { border-left: 5px solid #e23b3b; background: #fffafa; }
+.warn p { margin: 8px 0; }
+.misconception { color: #a82b32; }
+.mnemonic { border-left: 4px solid var(--accent); box-shadow: none; }
+.mnemonic strong { color: #df4716; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+.flip { height: 168px; perspective: 900px; border: 0; background: transparent; padding: 0; text-align: center; }
+.flip-in { display: block; height: 100%; position: relative; transition: transform .45s; transform-style: preserve-3d; }
+.flip[aria-pressed="true"] .flip-in { transform: rotateY(180deg); }
+.face { position: absolute; inset: 0; backface-visibility: hidden; border: 1px solid var(--line); border-radius: 10px; padding: 15px; background: #fafafa; display: flex; align-items: center; justify-content: center; overflow-y: auto; }
+.back { transform: rotateY(180deg); background: #eef9f4; color: #075e40; border-color: #c8eadb; }
+.practice { padding-left: 20px; }
+.practice li { margin: 7px 0; }
+.question { border-top: 1px solid #e2e8e4; padding: 20px 0 8px; margin-top: 12px; min-width: 0; }
+.options { display: grid; gap: 7px; margin: 10px 0; }
+.option { display: flex; gap: 10px; align-items: baseline; border: 1px solid #e2e8e4; background: #f0f4f2; padding: 9px 12px; border-radius: 8px; cursor: pointer; }
+.option input { flex-shrink: 0; accent-color: var(--green); }
+.option:has(input:checked) { border-color: #0ea5e9; background: #e7f6fd; }
+.question[data-result="correct"] .option:has(input:checked) { border-color: #0ea66b; background: #e7f8ef; }
+.question[data-result="wrong"] .option:has(input:checked) { border-color: #e23b3b; background: #fff0f0; }
+.answer { background: #f8fbfa; border-left: 3px solid #0ea5e9; padding: 10px; margin-top: 10px; }
+.check { border: 0; background: #0ea66b; color: white; padding: 9px 14px; border-radius: 7px; }
+footer { color: var(--muted); font-size: 12px; margin-top: 28px; }
+footer ul { padding-left: 20px; }
+dialog { width: min(1200px, 96vw); max-height: 94dvh; padding: 52px 16px 16px; border: 0; border-radius: 8px; background: white; }
+dialog::backdrop { background: #15191dd9; }
+dialog img { width: 100%; max-height: 78dvh; object-fit: contain; }
+dialog .icon-button { position: absolute; top: 8px; right: 10px; }
+@media (max-width: 600px) {
+  main { padding: 16px 12px 40px; }
+  h1 { font-size: 26px; }
+  .header { padding: 16px 4px 12px; }
+  .panel, .figure, .warn, .mnemonic { padding: 15px; }
+  .kp-body { padding-left: 16px; }
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .face { padding: 12px; }
+}
+</style></head><body><main><header class="header"><h1>Day 47 · 速度敏捷SAQ训练</h1><p class="sub">SAQ不只是跑得快：先学会加速、稳定减速和重新发力，再把路线或信号加入训练。</p><div class="meta"><span class="chip">阶段2训练科学</span><span class="chip">第7周</span><span class="chip">SAQ · 变向</span></div></header><section class="panel green"><h2>一句话总结</h2><p class="takeaway">速度敏捷训练的核心是把力量在合适的方向、时机和身体位置用出来。加速时身体自然前倾、用连续步把地面向后推；最大速度时姿态逐步变高；变向前要先减速，降低重心并重新组织支撑。先练预设路线，再加反应信号，质量下降就休息或结束。</p></section><figure class="figure"><button data-zoom aria-label="放大详情图"><img class="" src="assets/886d7abbd48d4c80.png" alt="六主题中文总览：冲刺阶段、加速、最大速度、减速变向、反应敏捷和SAQ安排"><span class="icon-button"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 15 6 6" /><path d="m15 9 6-6" /><path d="M21 16v5h-5" /><path d="M21 8V3h-5" /><path d="M3 16v5h5" /><path d="m3 21 6-6" /><path d="M3 8V3h5" /><path d="M9 9 3 3" /></svg></span></button><figcaption class="caption">SAQ总览：把速度训练拆成可观察的阶段。先在可控距离内练制动和重新发力，再增加速度、角度、路线或外部信号；疲劳和动作失控时及时结束。</figcaption></figure><section class="panel"><h2>核心要点</h2><ul class="kp"><li><details><summary><span class="term">冲刺分三段：加速、速度、减速</span>：同一次跑动里身体位置会改变：前段建立速度，中段保持高效步态，进入转向或终点前则需要主动制动。</summary><div class="kp-body"><section class="detail-block"><h4>加速不是一开始就直立</h4><p>起跑后的几步身体会自然向前倾，脚在身体下方或略后方连续发力。重点是稳定地把地面向后推，不是把上身硬压到很低或跨很大的第一步。</p></section><section class="detail-block"><h4>最高速度姿态会变高</h4><p>随着速度建立，躯干逐步更直立，双臂和摆腿节奏配合。不要为了“步幅大”把脚伸到身体很前方制动，也不要用耸肩和憋气追速度。</p></section><section class="detail-block"><h4>减速也属于技术</h4><p>到标志点、接球或准备转向前，必须用几步逐渐降低速度并让髋膝屈曲吸收力量。能停稳、站稳，才有下一次高质量再加速。</p></section></div></details></li><li><details><summary><span class="term">加速：前倾、推地、连续小步</span>：前几步的目标是建立前向速度。自然前倾来自全身排列，双脚持续向后推地，而不是只用脚尖急点。</summary><div class="kp-body"><section class="detail-block"><h4>用全身排列获得前倾</h4><p>从脚踝到头部保持相对整齐的斜线，视线自然向前下方。若腰部折叠、肩膀过度向前扑或脚步杂乱，先降低起跑强度和距离。</p></section><section class="detail-block"><h4>先把每一步踩稳</h4><p>加速初段步幅通常较短且有力，脚接触后迅速向后推离地面。不要为了追求大步跨到身体前方，也不要在湿滑地面或拥挤空间做全力起跑。</p></section><section class="detail-block"><h4>阻力工具只是在放大任务</h4><p>轻阻力雪橇或上坡可帮助体验推地，但阻力太大就会改变姿势和节奏。助力冲刺对制动和场地要求更高，应在具备基础加速与专业看护时使用。</p></section></div></details></li><li><details><summary><span class="term">最大速度：节奏和放松共同工作</span>：速度建立后，步频与有效步幅都重要；能保持弹性、肩颈放松和稳定躯干，比刻意迈很大步更可持续。</summary><div class="kp-body"><section class="detail-block"><h4>步频不是拼命碎踩</h4><p>加速期常以较快、连续的步来建立速度；进入较高速度后，身体位置和推地时间会改变。不要把任何一个固定步频或步幅数字当成所有人的标准。</p></section><section class="detail-block"><h4>有效步幅不等于伸脚够远</h4><p>更有效的步幅来自在身体下方的支撑与向后推地，而不是把脚远远探到前面。过度前伸会增加制动，容易让节奏断掉。</p></section><section class="detail-block"><h4>上肢帮助节奏，不负责甩速度</h4><p>双臂在身体两侧自然前后摆动，肩颈相对放松，躯干不大幅左右扭转。出现耸肩、屏气或脚步越来越重时，先休息再做下一趟。</p></section></div></details></li><li><details><summary><span class="term">变向：先减速，再重新加速</span>：改变方向不是冲到锥桶旁猛拧身体。先用减速步降低重心和速度，再以合适的支撑脚把力量推向新方向。</summary><div class="kp-body"><section class="detail-block"><h4>转向前先留出制动距离</h4><p>角度越大、速度越高，通常越早需要开始减速。髋膝一起屈曲、躯干保持可控，避免膝盖内扣、脚掌塌陷或只靠一条腿突然急停。</p></section><section class="detail-block"><h4>外侧支撑脚负责推离</h4><p>在明确的转向任务里，靠转向外侧的支撑腿常承担把身体推向新方向的任务；具体步序会随角度、速度和个人策略变化。先从慢速预设路线观察稳定性。</p></section><section class="detail-block"><h4>出弯还要重建加速</h4><p>重心稳定后再用短而有力的几步离开转向点。若每次都滑步、膝痛或无法停稳，先减小速度、角度和距离，而不是继续增加锥桶数量。</p></section></div></details></li><li><details><summary><span class="term">敏捷：预设路线和反应信号不同</span>：已知路线训练的是预设性变向；看到颜色、手势或移动对象后才决定方向，才加入了反应和决策负荷。</summary><div class="kp-body"><section class="detail-block"><h4>预设性先练位置</h4><p>锥桶路线已知时，可以把注意力放在减速、支撑和出弯姿势。先用简单直线、45度或90度路线，动作稳定后才提升速度或缩短反应时间。</p></section><section class="detail-block"><h4>反应性增加信息处理</h4><p>反应灯、颜色卡、教练手势或安全的同伴移动可作为信号。规则必须清楚、场地必须空，避免为了追信号忽略周围人、器械和地面。</p></section><section class="detail-block"><h4>比较时只改一个条件</h4><p>同一距离下，可比较预设路线和加信号后的完成质量，但不能只看秒数。记录能否停稳、是否提前猜方向和疲劳后的姿势变化。</p></section></div></details></li><li><details><summary><span class="term">SAQ安排：短距离、高质量、足够休息</span>：速度和变向对神经与关节负荷较高。每次选择少量高质量重复，完成前就准备好场地、鞋和恢复时间。</summary><div class="kp-body"><section class="detail-block"><h4>先做热身和低速排练</h4><p>用动态热身、低速直线跑和预设减速进入训练，再做正式加速或变向。若踝、膝、髋有疼痛、肿胀或不稳，暂停冲刺和切入动作并评估。</p></section><section class="detail-block"><h4>质量比堆次数重要</h4><p>短距离全力动作之间给足恢复，下一趟应还能维持相近的姿势和控制。动作越来越重、反应变慢或无法按计划制动时，延长休息或结束该项。</p></section><section class="detail-block"><h4>进阶顺序要可追踪</h4><p>可先增加直线距离或稳定重复，再增加速度、转向角度，最后加入不确定信号。不要在同一天同时加距离、速度、角度和复杂信号。</p></section></div></details></li></ul></section><section class="warn"><h2>常见误区</h2><p><strong class="misconception">误区：速度训练就是每一步尽量迈得更大。</strong><br>辨析：有效步幅来自稳定支撑和向后推地；脚过度伸到身体前方会增加制动并打乱节奏。</p><p><strong class="misconception">误区：变向时冲到锥桶前猛拧身体，越晚刹车越快。</strong><br>辨析：转向前需要制动距离。先降低重心、用多步控制速度，再向新方向重新加速。</p><p><strong class="misconception">误区：看到反应灯就可以完全不练预设路线。</strong><br>辨析：预设路线先建立减速、支撑和转向位置；反应训练是在此基础上增加决策负荷。</p><p><strong class="misconception">误区：阻力雪橇越重，加速训练就越有效。</strong><br>辨析：阻力过大可能改变姿势和节奏。选能保持可控推地的轻阻力，先练基础加速。</p><p><strong class="misconception">误区：冲刺练到脚步越来越重才算训练到位。</strong><br>辨析：SAQ重视高质量重复。姿势、反应或制动下降时应延长休息、降难度或结束。</p></section><section class="mnemonic"><h2>记忆口诀</h2><p><strong>先推地，后直立；先刹稳，再转向；先预设，后反应；质量掉，就休息。</strong></p></section><section class="panel"><h2>翻转卡复习</h2><div class="cards"><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">冲刺的三个常见阶段？</span><span class="face back" aria-hidden="true">加速、较高速度和减速；每段的身体位置与任务不同。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">加速初段的核心感觉？</span><span class="face back" aria-hidden="true">自然前倾、连续推地、短而稳定的步，不跨大步急拉速度。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">有效步幅不是什么？</span><span class="face back" aria-hidden="true">不是把脚远伸到身体前方；那会增加制动并破坏节奏。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">变向前最先要做什么？</span><span class="face back" aria-hidden="true">留出减速距离，降低速度与重心，建立可控制的支撑。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">预设敏捷与反应敏捷差别？</span><span class="face back" aria-hidden="true">预设路线已知；反应敏捷要看信号后再决定方向。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">阻力雪橇怎样选阻力？</span><span class="face back" aria-hidden="true">以不破坏可控推地和节奏的轻阻力为起点，不是越重越好。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">SAQ重复之间为什么要休息？</span><span class="face back" aria-hidden="true">让姿势、反应和制动保持质量，避免在疲劳中练成失控动作。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">何时应停止冲刺或切入？</span><span class="face back" aria-hidden="true">出现疼痛、肿胀、不稳，或已无法按计划减速、支撑和转向时。</span></span></button></div></section><section class="panel orange"><h2>实操关联</h2><ul class="practice"><li>直线加速：在空旷、防滑场地做4次10米渐进加速；每次从低速开始，观察自然前倾、连续推地和落脚是否稳定。</li><li>减速排练：慢跑5–8米后，在标志前用2–4步逐渐减速并站稳；记录哪一次能不跨大步、不内扣地停止。</li><li>预设变向：用两个标志做低速45度转向，先练提前减速、髋膝屈曲和出弯两步，不追计时。</li><li>反应加入：由同伴在安全距离外举左右颜色卡，看到信号后才走向对应标志；规则不清或场地有人时不做。</li><li>雪橇替代：没有雪橇时做短距离山坡走跑或徒手起跑排练；只选一种变量，不在同次同时加坡度和距离。</li><li>站循环：把10米加速、预设变向和颜色反应各做一站，中间完全恢复；任一站动作变形就延长休息或删除下一轮。</li></ul></section><section class="panel blue"><h2>练习题</h2><section class="question" data-answers="[1]" data-explanation="加速需要自然前倾和可控制的连续推地。过度前跨、耸肩或只追脚尖速度都会增加制动或失去稳定。"><h3>1. 单选：关于加速初段，哪项最符合本课的技术线索？</h3><div class="options"><label class="option"><input type="radio" name="question-0" value="0"><span>A. 第一步尽量跨到身体最前方</span></label><label class="option"><input type="radio" name="question-0" value="1"><span>B. 保持自然前倾，用连续步向后推地</span></label><label class="option"><input type="radio" name="question-0" value="2"><span>C. 立刻直立并耸肩甩臂</span></label><label class="option"><input type="radio" name="question-0" value="3"><span>D. 只用脚尖快速点地，不管支撑</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[1]" data-explanation="变向前要先制动。留出距离、降低重心和建立支撑能减少突然急停带来的失控。"><h3>2. 单选：准备做90度变向时，最合理的第一步是？</h3><div class="options"><label class="option"><input type="radio" name="question-1" value="0"><span>A. 冲到标志旁才猛拧身体</span></label><label class="option"><input type="radio" name="question-1" value="1"><span>B. 先留出减速距离，降低重心并控制速度</span></label><label class="option"><input type="radio" name="question-1" value="2"><span>C. 闭眼等待反应信号</span></label><label class="option"><input type="radio" name="question-1" value="3"><span>D. 把脚远伸出去急停</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[0,1,3]" data-explanation="预设路线和反应敏捷的决策负荷不同。无论是否计时，都要保证场地安全并逐项增加难度。"><h3>3. 多选：关于预设路线和反应敏捷，哪些做法正确？</h3><div class="options"><label class="option"><input type="checkbox" name="question-2" value="0"><span>A. 预设路线可先练减速与支撑位置</span></label><label class="option"><input type="checkbox" name="question-2" value="1"><span>B. 反应训练要在看到信号后再决定方向</span></label><label class="option"><input type="checkbox" name="question-2" value="2"><span>C. 加反应灯后不再需要检查场地</span></label><label class="option"><input type="checkbox" name="question-2" value="3"><span>D. 可记录是否停稳而不只看秒数</span></label><label class="option"><input type="checkbox" name="question-2" value="4"><span>E. 每次都同时增加距离、角度和信号</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[0,1,3]" data-explanation="质量明显下降、疼痛或支撑失控应促使休息、降难度或停止。恢复后的稳定表现和持续控制本身不是结束信号。"><h3>4. 多选：哪些情况提示应调整或结束当次SAQ训练？</h3><div class="options"><label class="option"><input type="checkbox" name="question-3" value="0"><span>A. 脚步越来越重且无法按计划减速</span></label><label class="option"><input type="checkbox" name="question-3" value="1"><span>B. 膝踝出现疼痛、肿胀或不稳</span></label><label class="option"><input type="checkbox" name="question-3" value="2"><span>C. 休息后姿势和反应恢复稳定</span></label><label class="option"><input type="checkbox" name="question-3" value="3"><span>D. 转向时反复膝内扣或脚掌塌陷</span></label><label class="option"><input type="checkbox" name="question-3" value="4"><span>E. 每一趟都能维持相近控制</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[1]" data-explanation="他缺少可控制的制动与支撑。应先降难度、提前减速并在低速预设路线里建立稳定位置。"><h3>5. 案例：小周从10米冲刺直接扑向锥桶转向，常在最后一步膝内扣并差点滑倒。下一步最合适的是？</h3><div class="options"><label class="option"><input type="radio" name="question-4" value="0"><span>A. 把锥桶放得更近，强迫更快转</span></label><label class="option"><input type="radio" name="question-4" value="1"><span>B. 先降低跑速，在更早位置用多步减速并练低速预设转向</span></label><label class="option"><input type="radio" name="question-4" value="2"><span>C. 立刻做助力冲刺追求更快</span></label><label class="option"><input type="radio" name="question-4" value="3"><span>D. 继续全力练到身体适应</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[1]" data-explanation="SAQ训练看重质量。反应和制动下降说明当前疲劳或复杂度已超出可控制范围，应恢复或结束。"><h3>6. 案例：小林做反应灯训练时，后几轮开始耸肩、漏看信号且停不稳。更合理的安排是？</h3><div class="options"><label class="option"><input type="radio" name="question-5" value="0"><span>A. 加快灯光频率来逼出速度</span></label><label class="option"><input type="radio" name="question-5" value="1"><span>B. 延长休息或结束该项，下一次从更少的高质量重复开始</span></label><label class="option"><input type="radio" name="question-5" value="2"><span>C. 改用更重雪橇继续</span></label><label class="option"><input type="radio" name="question-5" value="3"><span>D. 只要不疼就忽略停不稳</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section></section><footer>Day 47/77 · NASM／NSCA<ul><li>NSCA：Essentials of Strength Training and Conditioning，第4版，速度、敏捷与变向训练相关章节。</li><li>NASM：Essentials of Personal Fitness Training，第7版，运动表现、加速与敏捷训练相关章节。</li><li>ACSM：ACSM&#39;s Guidelines for Exercise Testing and Prescription，第11版，运动前筛查与安全边界相关章节。</li><li>本课用于基础动作学习与训练安排，不替代运动医学评估、现场教练或专项竞技训练。</li></ul></footer></main><dialog aria-label="详情大图"><button class="icon-button" aria-label="关闭大图" title="关闭大图"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></button><img alt=""></dialog><script>document.querySelectorAll('.flip').forEach((button) => {
+  button.addEventListener('click', () => {
+    const pressed = button.getAttribute('aria-pressed') !== 'true';
+    button.setAttribute('aria-pressed', String(pressed));
+    button.querySelector('.front').setAttribute('aria-hidden', String(pressed));
+    button.querySelector('.back').setAttribute('aria-hidden', String(!pressed));
+  });
+});
+document.querySelectorAll('.question').forEach((question) => {
+  question.querySelector('.check').addEventListener('click', () => {
+    const selected = [...question.querySelectorAll('input:checked')].map((input) => Number(input.value)).sort();
+    const answer = question.querySelector('.answer');
+    answer.hidden = false;
+    if (!selected.length) { answer.textContent = '请先选择答案。'; delete question.dataset.result; return; }
+    const correct = JSON.stringify(selected) === JSON.stringify(JSON.parse(question.dataset.answers).sort());
+    question.dataset.result = correct ? 'correct' : 'wrong';
+    answer.textContent = `${correct ? '回答正确。' : '再想一想。'}${question.dataset.explanation}`;
+  });
+});
+const imageDialog = document.querySelector('dialog');
+document.querySelectorAll('[data-zoom]').forEach((button) => {
+  button.addEventListener('click', () => {
+    const original = button.querySelector('img');
+    const image = imageDialog.querySelector('img');
+    image.src = original.src;
+    image.alt = original.alt;
+    imageDialog.showModal();
+  });
+});
+imageDialog.querySelector('button').addEventListener('click', () => imageDialog.close());
+imageDialog.addEventListener('click', (event) => {
+  const rect = imageDialog.getBoundingClientRect();
+  if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) imageDialog.close();
+});
+</script></body></html>

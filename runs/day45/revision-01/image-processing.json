@@ -1,0 +1,84 @@
+{
+  "processedAt": "2026-09-22T07:57:59.161594+00:00",
+  "method": "trim near-transparent noise; reviewed crop; uniform scale; transparent margin",
+  "assets": [
+    {
+      "source": "runs/day45/revision-01/source/overview-05-pnf.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "d35f0234d2fc25106384fa7e5df20280d7e88f10fe174ab634e27e9528ea0c6c",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        58,
+        123,
+        1389,
+        919
+      ],
+      "output": "runs/day45/assets/overview-05-pnf.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1331,
+        796
+      ],
+      "offset": [
+        134,
+        202
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day45/revision-01/source/overview-06-safety.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "a6ad7f7e5a97a1ba61bbcb6c6a25692eb4374071e56aefec585fd45b94fca6be",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        270,
+        21,
+        1215,
+        1058
+      ],
+      "output": "runs/day45/assets/overview-06-safety.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        945,
+        1037
+      ],
+      "offset": [
+        327,
+        81
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "status": "failed-no-retry",
+  "artifactStatus": "blocked-invalid-programming-overview-image",
+  "day": 47,
+  "startedAt": "2026-09-23T10:04:16Z",
+  "input": "runs/day47/lesson.json",
+  "imagePlan": "runs/day47/image-prompts.json",
+  "planned": 13,
+  "generated": 12,
+  "retryPolicy": "up-to-five-user-authorized-retries-for-overview-05",
+  "publishApproved": false,
+  "serverDeployed": false,
+  "resumeAuthorization": "runs/day47/retry-reactive-20260926/authorization.json",
+  "acceptedReplacement": "runs/day47/retry-reactive-20260926/attempt-01.json",
+  "remainingUnrequestedAssets": [],
+  "failureHistory": ["runs/day47/failure-20260924-reactive-alpha.json", "runs/day47/failure-20260926-reactive-request.json", "runs/day47/failure-20260926-programming-alpha.json"],
+  "note": "overview-05-reactive.png 的首次用户授权重试生成了通过真透明与构图检查的替换文件；overview-06-programming.png 的首次请求为无 alpha 的嵌入棋盘格 PNG，已保留失败记录并停止。未预处理、未渲染、未安装、未发布。"
+}

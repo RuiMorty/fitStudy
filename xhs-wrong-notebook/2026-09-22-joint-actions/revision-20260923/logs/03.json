@@ -1,0 +1,22 @@
+{
+  "job": "03",
+  "started_at": "2026-09-23T05:51:24.486175+00:00",
+  "model": "gpt-image-2.5-sunburst",
+  "endpoint": "/v1/images/edits",
+  "references": [
+    {
+      "path": "/Users/agiuser/Documents/fit/xhs-wrong-notebook/2026-09-22-joint-actions/03-关节构成速记-rick-v4-带字.png",
+      "sha256": "d7b9f2b2925a41292c73dca971340f41d881ed6808a00c70508ca53414c7a1cc"
+    },
+    {
+      "path": "/Users/agiuser/Documents/fit/xhs-wrong-notebook/2026-09-22-joint-actions/00-rick-muscular-cartoon-model-v4.png",
+      "sha256": "9df6044701cdeb4037f5b8573f266e634fe0e761b975d5c0ab51a351a1f5b1e4"
+    }
+  ],
+  "status": "succeeded",
+  "post_count": 1,
+  "output": "/Users/agiuser/Documents/fit/xhs-wrong-notebook/2026-09-22-joint-actions/revision-20260923/raw/03.png",
+  "bytes": 1890576,
+  "output_sha256": "aa63665941e98d82a69bf94554332e9f31cd7b4e496a539ce25ea002e44b063d",
+  "completed_at": "2026-09-23T05:52:45.990751+00:00"
+}

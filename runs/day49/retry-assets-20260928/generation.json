@@ -1,0 +1,91 @@
+{
+  "provider": "Lingzhi",
+  "preset": "quality",
+  "model": "gpt-image-2.5-sunburst",
+  "authorization": "runs/day49/retry-policy.json",
+  "visualReview": "runs/day49/visual-quality-review-01.json",
+  "status": "awaiting-visual-quality",
+  "attempts": [
+    {
+      "file": "visual-01-power-intent.png",
+      "role": "knowledge",
+      "providerRequestNumberForAsset": 2,
+      "startedAt": "2026-09-28T11:59:36.326043+00:00",
+      "status": "generated-pending-visual-quality",
+      "output": "runs/day49/source/visual-01-power-intent-attempt-02.png",
+      "completedAt": "2026-09-28T12:00:02.437457+00:00",
+      "returncode": 0,
+      "size": [
+        2172,
+        724
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "bytes": 766603,
+      "sha256": "5c1e1937800710d2ab17cd3d5226270d3c0c2b68ba1e506fca3dc0d1a0c383bd"
+    },
+    {
+      "file": "visual-05-load-speed.png",
+      "role": "knowledge",
+      "providerRequestNumberForAsset": 2,
+      "startedAt": "2026-09-28T12:00:02.471584+00:00",
+      "status": "generated-pending-visual-quality",
+      "output": "runs/day49/source/visual-05-load-speed-attempt-02.png",
+      "completedAt": "2026-09-28T12:00:38.648031+00:00",
+      "returncode": 0,
+      "size": [
+        2009,
+        783
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "bytes": 1006334,
+      "sha256": "851c33824d9c944d42d542cbb390ce0ac1e112b6d1c49ca094963ee51eb88b03"
+    },
+    {
+      "file": "visual-06-dosage-readiness.png",
+      "role": "knowledge",
+      "providerRequestNumberForAsset": 2,
+      "startedAt": "2026-09-28T12:00:38.672642+00:00",
+      "status": "generated-pending-visual-quality",
+      "output": "runs/day49/source/visual-06-dosage-readiness-attempt-02.png",
+      "completedAt": "2026-09-28T12:01:15.087242+00:00",
+      "returncode": 0,
+      "size": [
+        2241,
+        702
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "bytes": 992130,
+      "sha256": "0c7c9343fdcfbfdbcc4c9cf8f4c9a637c7c3e54efb8dc42057f7a5230aa4eba5"
+    },
+    {
+      "file": "overview-06-dosage-readiness.png",
+      "role": "overview-item",
+      "providerRequestNumberForAsset": 2,
+      "startedAt": "2026-09-28T12:01:15.125079+00:00",
+      "status": "generated-pending-visual-quality",
+      "output": "runs/day49/source/overview-06-dosage-readiness-attempt-02.png",
+      "completedAt": "2026-09-28T12:01:49.772087+00:00",
+      "returncode": 0,
+      "size": [
+        1448,
+        1086
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "bytes": 1019300,
+      "sha256": "148118e1689deb1c09c6deb3eaa58b2ebc0ce43fd4bb877952d0f4d696962e49"
+    }
+  ],
+  "completedAt": "2026-09-28T12:01:49.798857+00:00"
+}

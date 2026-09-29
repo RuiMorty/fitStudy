@@ -1,0 +1,13 @@
+{
+  "occurredAt": "2026-09-28T10:30:00Z",
+  "asset": "cover-attempt-02.png",
+  "role": "cover-revision",
+  "status": "failed-no-retry",
+  "authorization": "runs/day49/retry-cover-20260928/authorization.json",
+  "generationRecord": "runs/day49/retry-cover-20260928/generation.json",
+  "previousFailure": "runs/day49/failure.json",
+  "reason": "The single user-authorized revised Lingzhi request returned no usable local PNG.",
+  "attemptsUsedForCover": 2,
+  "remainingAssetsNotRequested": 12,
+  "nextAction": "Wait for explicit user authorization for another revised cover request."
+}

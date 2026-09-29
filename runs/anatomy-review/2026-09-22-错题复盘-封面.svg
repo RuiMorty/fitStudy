@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1440" viewBox="0 0 1080 1440" role="img" aria-labelledby="title desc">
+  <title id="title">错题复盘</title>
+  <desc id="desc">米色纸张背景的解剖错题复盘封面，使用三张无字解剖图错落叠放。</desc>
+  <defs>
+    <filter id="shadow" x="-25%" y="-25%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="12" stdDeviation="13" flood-color="#705547" flood-opacity="0.18"/>
+    </filter>
+    <clipPath id="scapulaClip"><rect width="590" height="540" rx="18"/></clipPath>
+    <clipPath id="iliopsoasClip"><rect width="270" height="405" rx="16"/></clipPath>
+    <clipPath id="pelvisClip"><rect width="580" height="387" rx="18"/></clipPath>
+    <style>
+      .cn { font-family: "PingFang SC", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif; }
+    </style>
+  </defs>
+
+  <rect width="1080" height="1440" fill="#f7f0e7"/>
+  <path d="M54 96H270M810 96H1026" fill="none" stroke="#bd564a" stroke-width="4" opacity="0.72"/>
+
+  <!-- Direct original brand mark; no extra label or color block. -->
+  <image href="../../html/assets/fitness-study-logo-open-circle.svg" x="76" y="116" width="76" height="76"/>
+  <text class="cn" x="540" y="338" text-anchor="middle" font-size="116" font-weight="800" fill="#b44339">错题复盘</text>
+
+  <!-- Three original unlabeled illustrations in a deliberately loose, pinned-paper layout. -->
+  <g transform="translate(74 465) rotate(-2 295 270)" filter="url(#shadow)">
+    <rect width="590" height="540" rx="18" fill="#fffdf9" stroke="#dfcfbc" stroke-width="3"/>
+    <g clip-path="url(#scapulaClip)">
+      <image href="../../xhs-wrong-notebook/2026-09-21-anatomy/04-scapular-movement.png" width="590" height="540" preserveAspectRatio="xMidYMid meet"/>
+    </g>
+    <circle cx="555" cy="30" r="9" fill="#b94d42"/>
+  </g>
+
+  <g transform="translate(236 1008) rotate(-1 290 193)" filter="url(#shadow)">
+    <rect width="580" height="387" rx="18" fill="#fffdf9" stroke="#dfcfbc" stroke-width="3"/>
+    <g clip-path="url(#pelvisClip)">
+      <image href="../../xhs-wrong-notebook/2026-09-21-anatomy/06-pelvic-joints.png" width="580" height="387" preserveAspectRatio="xMidYMid meet"/>
+    </g>
+    <circle cx="548" cy="29" r="8" fill="#b94d42"/>
+  </g>
+
+  <g transform="translate(690 590) rotate(4 135 202)" filter="url(#shadow)">
+    <rect width="270" height="405" rx="16" fill="#fffdf9" stroke="#dfcfbc" stroke-width="3"/>
+    <g clip-path="url(#iliopsoasClip)">
+      <image href="../../xhs-wrong-notebook/2026-09-21-anatomy/07-iliopsoas-origin.png" width="270" height="405" preserveAspectRatio="xMidYMid meet"/>
+    </g>
+    <circle cx="240" cy="29" r="8" fill="#b94d42"/>
+  </g>
+</svg>

@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "1.0",
+  "model": "gpt-image-2.5-sunburst",
+  "preset": "quality",
+  "size": "1024x1536",
+  "referenceEditSharedPrompt": "Create one complete vertical 1024x1536 Chinese fitness-anatomy study card using both supplied reference images. Reference image 1 is mandatory: the same adult male cartoon coach must appear naturally and consistently, with identical light cyan spiky hair, face, muscular build, white tank top, dark forest-green shorts with brick-red side panels, black wrist wraps and white sneakers. Reference image 2 is mandatory: copy its warm ivory paper background, clean dark-navy outlines, brick-red #B44339 headline, red brush underline, thin red framed cards, and bottom brick-red TIP strip. Render all required Chinese text exactly as supplied below in clear standard Simplified Chinese, using a clean bold sans-serif. The title and labels must be fully readable, not covered by the person or anatomy. Do not leave blank red bars, blank title areas, placeholder text, extra text, English, watermarks, logos, or invented symbols. The complete image, including all text, must be created in this request; do not rely on post-production text overlay.",
+  "cards": [
+    {
+      "id": "01-hip-bone-pelvis-native-text",
+      "nativeTextPrompt": "Title at top: 髋骨与骨盆. Under the title, a brick-red brush underline. The same coach presents two separate framed anatomical diagrams. Left: one isolated hip bone in anterior view, with three clean color regions and exact labels 髂骨, 坐骨, 耻骨; add the exact equation 髂 + 坐 + 耻 = 髋骨. Right: a complete bony pelvis in anterior view with both hip bones, sacrum and coccyx clearly colored and exact labels 左右髋骨, 骶骨, 尾骨; add the exact equation 两髋 + 骶 + 尾 = 骨盆. Clearly show the sacrum only on the pelvis side, never as part of the isolated hip bone. Bottom brick-red TIP strip, exact white text: TIP：骶骨属于骨盆，不属于单独的髋骨。"
+    },
+    {
+      "id": "02-shoulder-girdle-muscles-joint-native-text",
+      "nativeTextPrompt": "Title at top: 肩带肌：6块肌的总称. Under the title, a brick-red brush underline. Create a clean, simplified, non-photorealistic textbook anatomy card with no injury, blood, surgery, or body cut-away. Add a clear top relationship strip with exact Chinese text: 肩带肌 = 三角肌 + 冈上肌 + 冈下肌 + 小圆肌 + 大圆肌 + 肩胛下肌. The same clothed cartoon coach appears small as a presenter only. Use two large separate isolated anatomical shoulder-muscle diagrams, each with clear individual leader-line labels; never use one unlabeled red mass. Left plate is a posterior shoulder/scapula diagram with exact labels 三角肌, 冈上肌, 冈下肌, 小圆肌, 大圆肌. Right plate is an anterior scapula diagram with exact label 肩胛下肌. Add a small exact common-rule strip: 共同规律：起自锁骨、肩胛骨 → 止于肱骨. Bottom framed panel: simplified shoulder-joint diagram with exact labels 肩胛骨关节盂 and 肱骨头. Bottom brick-red TIP strip, exact white text: TIP：肩带肌不是一块肌；要记住6个成员。"
+    },
+    {
+      "id": "03-neuron-nerve-fiber-native-text",
+      "nativeTextPrompt": "Title at top: 神经元与神经纤维. Under the title, a brick-red brush underline. The same coach points to a large clean neuron diagram with a soma and nucleus, many short branching dendrites, and one long axon. Use exact labels 胞体：含细胞核; 树突：接收信息; 轴突：传出信息. In a second framed panel show a close-up cross-section and longitudinal view of one nerve fiber as an axon with myelin/glial wrapping; exact label 神经纤维：轴突 + 包裹结构. Add one small exact relationship label 神经元 = 胞体 + 突起. Bottom brick-red TIP strip, exact white text: TIP：神经元是完整细胞；神经纤维不是完整神经元。"
+    }
+  ]
+}

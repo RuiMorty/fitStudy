@@ -1,0 +1,33 @@
+{
+  "revision": "revision-01-visual-anatomy-and-action-examples",
+  "completedAt": "2026-09-22T08:03:09Z",
+  "authorization": "runs/day45/revision-01/authorization.json",
+  "visualChanges": [
+    {
+      "asset": "overview-05-pnf.png",
+      "issue": "The original teacher illustration omitted a leg.",
+      "resolution": "New user-authorized source explicitly shows two separate complete legs, knees, calves, and boots; the original source and processed asset are retained in this revision folder."
+    },
+    {
+      "asset": "overview-06-safety.png",
+      "issue": "The original standing teacher proportion was incorrect.",
+      "resolution": "New user-authorized source uses a normal adult head-to-body ratio and coordinated torso and leg lengths; the original source and processed asset are retained in this revision folder."
+    }
+  ],
+  "contentChanges": [
+    "Slide 02 now distinguishes static versus dynamic range through named 仰卧抱大腿 and 弓步转体 examples, with timing and use.",
+    "Slide 03 now uses 坐姿伸腿前屈 to explain what a tight feeling means and when to stop.",
+    "Slide 04 now demonstrates 坐姿后侧链拉伸 step by step and distinguishes post-training use from pre-training preparation.",
+    "Slide 06 expands PNF as 本体感觉神经肌肉促进技术 and explains CR, HR, and CRAC using one hamstring-stretch example."
+  ],
+  "unchangedBoundaries": [
+    "Shared renderer and styles",
+    "Homepage, library index, shortlink, server, progress.json, and .progress.json"
+  ],
+  "verification": {
+    "templateTests": "17/17 passed",
+    "browser": "320/390/768/1440px, interactions, 8 cards, and broken-layout gate passed",
+    "archive": "27 entries, CRC passed",
+    "localPreview": "course, XHS, and ZIP returned HTTP 200"
+  }
+}

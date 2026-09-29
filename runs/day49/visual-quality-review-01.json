@@ -1,0 +1,26 @@
+{
+  "reviewedAt": "2026-09-28T12:00:00Z",
+  "reviewer": "local visual QA on alpha-composited contact sheet",
+  "cover": {
+    "file": "runs/day49/retry-cover-20260928/cover-attempt-03.png",
+    "decision": "accepted",
+    "reason": "True alpha, no checkerboard or text; complete figures, feet, low box and medicine ball; controlled landing scene."
+  },
+  "assets": [
+    {"file":"visual-01-power-intent.png","decision":"retry","reason":"The middle position is a loaded-bar jump, explicitly unsafe and prohibited by the prompt. Replace with an unloaded jump only."},
+    {"file":"visual-02-olympic-lifts.png","decision":"accepted","reason":"Three distinct bar positions are present; the bar and plates are continuous and the front-rack catch is stable."},
+    {"file":"visual-03-jump-landing.png","decision":"accepted","reason":"A low-box, controlled landing and a separate quiet stable stance are visible, with complete feet and box."},
+    {"file":"visual-04-throws.png","decision":"accepted","reason":"Balanced chest pass, one medicine ball, safe observer placement, and no text or markers."},
+    {"file":"visual-05-load-speed.png","decision":"retry","reason":"The middle swing object does not read clearly as a kettlebell; regenerate with a visible handle and the bell below chest height."},
+    {"file":"visual-06-dosage-readiness.png","decision":"retry","reason":"Too many sequential figures turn the card into a multi-action montage instead of one high-quality repetition followed by a clear recovery pause."},
+    {"file":"overview-01-power-intent.png","decision":"accepted","reason":"Simple unloaded jump illustration, complete characters and no text or checkerboard."},
+    {"file":"overview-02-olympic-lifts.png","decision":"accepted","reason":"Stable front-rack catch, connected bar and plates, complete figures."},
+    {"file":"overview-03-jump-landing.png","decision":"accepted","reason":"Low-box landing position is stable and visually clear."},
+    {"file":"overview-04-throws.png","decision":"accepted","reason":"Controlled two-hand medicine-ball throw with safe observer placement."},
+    {"file":"overview-05-load-speed.png","decision":"accepted","reason":"Kettlebell handle, hip-hinge posture and complete feet are clear."},
+    {"file":"overview-06-dosage-readiness.png","decision":"retry","reason":"Teacher is bent forward rather than resting upright; replace with a clearly upright recovery pause beside the low box."}
+  ],
+  "accepted": 8,
+  "retry": 4,
+  "nextAction": "Make one revised second provider request for each retry-listed asset, then repeat alpha and visual QA."
+}

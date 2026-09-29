@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.0",
+  "model": "gpt-image-2.5-sunburst",
+  "preset": "quality",
+  "size": "1024x1536",
+  "referenceEditSharedPrompt": "Create one complete vertical 1024x1536 Chinese fitness-anatomy study card using both supplied reference images. Reference image 1 is mandatory: the same adult male cartoon coach must appear naturally and consistently, with identical light cyan spiky hair, face, muscular build, white tank top, dark forest-green shorts with brick-red side panels, black wrist wraps and white sneakers. Reference image 2 is mandatory: copy its warm ivory paper background, clean dark-navy outlines, brick-red #B44339 headline, red brush underline, thin red framed cards, and bottom brick-red TIP strip. Render all required Chinese text exactly as supplied below in clear standard Simplified Chinese, using a clean bold sans-serif. The title and labels must be fully readable, not covered by the person or anatomy. Do not leave blank red bars, blank title areas, placeholder text, extra text, English, watermarks, logos, or invented symbols. The complete image, including all text, must be created in this request; do not rely on post-production text overlay.",
+  "cards": [
+    {
+      "id": "01-hip-bone-pelvis-native-text",
+      "nativeTextPrompt": "Historical placeholder; do not generate this card in this revision."
+    },
+    {
+      "id": "02-shoulder-girdle-muscles-joint-native-text",
+      "nativeTextPrompt": "Historical placeholder; do not generate this card in this revision."
+    },
+    {
+      "id": "03-neuron-nerve-fiber-native-text",
+      "nativeTextPrompt": "Historical placeholder; do not generate this card in this revision."
+    },
+    {
+      "id": "04-shoulder-girdle-six-members-and-joint-native-text",
+      "nativeTextPrompt": "Title at top: 肩带肌：6块肌的总称. Under the title, a brick-red brush underline. This is the first of two cards: it teaches members and shoulder-joint structure only. Do not state any shared origin/insertion rule anywhere on this card. Add a clear relationship strip with exact Chinese text: 肩带肌 = 三角肌 + 冈上肌 + 冈下肌 + 小圆肌 + 大圆肌 + 肩胛下肌. The same clothed cartoon coach appears small as a presenter only and never covers a label. Use two separate isolated, clean, simplified, non-photorealistic shoulder-muscle diagrams, with one leader-line label per muscle; never use one unlabeled red mass. Left panel heading: 后面观. It must label exactly 三角肌, 冈上肌, 冈下肌, 小圆肌, 大圆肌. Right panel heading: 前面观. It must label exactly 肩胛下肌. In a separate bottom framed panel heading: 肩关节构成, show a simplified shoulder-joint diagram with exact labels 肩胛骨关节盂 and 肱骨头. Bottom brick-red TIP strip, exact white text: TIP：肩带肌不是一块肌；共有6个成员。"
+    },
+    {
+      "id": "05-shoulder-girdle-origin-insertion-native-text",
+      "nativeTextPrompt": "Title at top: 肩带肌：逐块记起止点. Under the title, a brick-red brush underline. Add a compact subtitle strip with exact Chinese text: 6块肌的起止点并不完全相同. The same clothed cartoon coach appears very small in one corner as a presenter only and never covers text. Create a clean two-column grid of six spacious framed mini cards, with a clear red muscle-name heading and two readable Chinese lines in each card: one line beginning 起点： and the next line beginning 止点：. Render the following six cards exactly. Card 1: 三角肌；起点：锁骨外侧1/3、肩峰、肩胛冈；止点：肱骨三角肌粗隆。 Card 2: 冈上肌；起点：冈上窝；止点：肱骨大结节上面。 Card 3: 冈下肌；起点：冈下窝；止点：肱骨大结节中面。 Card 4: 小圆肌；起点：肩胛骨外侧缘背面上2/3；止点：肱骨大结节下面。 Card 5: 大圆肌；起点：肩胛骨下角背面；止点：肱骨小结节嵴。 Card 6: 肩胛下肌；起点：肩胛下窝；止点：肱骨小结节。 Do not use the phrase 共同规律 and do not generalize that every muscle starts from the clavicle. Add small, clean shoulder/scapula line-art accents only if they do not reduce text readability. Bottom brick-red TIP strip, exact white text: TIP：三角肌涉及锁骨；其余5块主要起自肩胛骨。"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "authorizedAt": "2026-09-28T01:34:57Z",
+  "authorization": "用户明确输入：可以重试",
+  "scope": "仅对 Day48 的 cover.png 发起一笔新的灵智质量档修订请求。",
+  "previousFailure": "runs/day48/failure.json",
+  "output": "runs/day48/retry-cover-20260928/cover-attempt-02.png",
+  "boundaries": [
+    "严格要求真实 RGBA Alpha 通道，背景像素 Alpha=0；禁止嵌入棋盘格。",
+    "保留原失败图片与记录，不覆盖。",
+    "不请求余下12张，不预处理、渲染、安装、测试、部署或发布。"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "1.0",
+  "model": "gpt-image-2.5-sunburst",
+  "preset": "quality",
+  "size": "1024x1536",
+  "referenceEditSharedPrompt": "Create one complete vertical 1024x1536 Chinese fitness-anatomy study card using both supplied reference images. Reference image 1 is mandatory: the same adult male cartoon coach must appear naturally and consistently, with identical light cyan spiky hair, face, muscular build, white tank top, dark forest-green shorts with brick-red side panels, black wrist wraps and white sneakers. Reference image 2 is mandatory: copy its warm ivory paper background, clean dark-navy outlines, brick-red #B44339 headline, red brush underline, thin red framed cards, and bottom brick-red TIP strip. Render all required Chinese text exactly as supplied below in clear standard Simplified Chinese, using a clean bold sans-serif. The title and labels must be fully readable, not covered by the person or anatomy. Do not leave blank red bars, blank title areas, placeholder text, extra text, English, watermarks, logos, or invented symbols. The complete image, including all text, must be created in this request; do not rely on post-production text overlay.",
+  "cards": [
+    {
+      "id": "01-deep-back-muscles-native-text",
+      "nativeTextPrompt": "Title at top: 背部深层肌. Under the title, a brick-red brush underline. Main composition: the fixed coach in a posterior three-quarter pose with a precise posterior back cut-away. Show the four common intrinsic deep back-muscle groups only; do not show or label trapezius, latissimus dorsi, or any superficial-back-muscle comparison. Make broad paired longitudinal erector spinae columns the largest highlighted muscles on both sides of the spine. Add a separate medial layer of short oblique multifidus bundles next to the spinous processes, an upper-neck splenius region, and tiny segmental muscles between spinal processes. Use exactly these four framed Chinese labels: 夹肌：头夹肌、颈夹肌; 竖脊肌：髂肋肌、最长肌、棘肌; 横突棘肌：半棘肌、多裂肌、回旋肌; 节段短肌：棘间肌、横突间肌、肋提肌. Bottom brick-red TIP strip, exact white text: TIP：竖脊肌主伸背；多裂肌属于横突棘肌。"
+    },
+    {
+      "id": "02-adductor-magnus-fixed-end-native-text",
+      "nativeTextPrompt": "Title at top: 大收肌：固定端决定谁动. Under the title, a brick-red brush underline. Show two identical fixed coaches side by side, with pelvis and medial thigh anatomical cut-aways highlighting adductor magnus. Left labels exactly: 近固定：骨盆固定 and 主看：大腿内收. Right labels exactly: 远固定：股骨固定 and 双侧：骨盆前倾. Bottom brick-red TIP strip, exact white text: TIP：近固定看大腿；骨盆动作先看股骨是否固定。"
+    },
+    {
+      "id": "03-upper-limb-location-map-native-text",
+      "nativeTextPrompt": "Title at top: 上肢定位地图. Under the title, a brick-red brush underline. Three clearly framed vertical anatomy sections with the same coach demonstrating: shoulder close-up with bicipital groove and transverse humeral ligament, elbow/proximal forearm with pronator teres, and dorsal wrist bones. Exact labels: 横肱韧带：固定长头腱; 旋前圆肌：主旋前，助屈肘; 桡腕 / 腕骨间 / 腕中. Bottom brick-red TIP strip, exact white text: TIP：长头腱看横肱韧带；旋前圆肌屈肘只是辅助。"
+    },
+    {
+      "id": "04-leg-compartments-gastrocnemius-native-text",
+      "nativeTextPrompt": "Title at top: 小腿三群与腓肠肌. Under the title, a brick-red brush underline. The same coach stands as an anatomy demonstrator beside an accurate lower-leg cross-section and posterior lower-leg inset. Exact labels: 前群：背屈; 外侧群：外翻; 后群：跖屈; 腓肠肌：屈膝 + 跖屈. Bottom brick-red TIP strip, exact white text: TIP：前群背屈、外侧群外翻、后群跖屈；腓肠肌还屈膝。"
+    },
+    {
+      "id": "05-bone-membranes-cells-native-text",
+      "nativeTextPrompt": "Title at top: 骨膜、骨内膜与骨细胞. Under the title, a brick-red brush underline. Create a clean, simplified textbook anatomy card only, with no injury, blood, surgery, or photorealistic tissue. The same cartoon coach points to a long-bone cut-away. Draw a clearly visible two-layer periosteum around compact bone. In one magnified callout of the periosteum inner osteogenic layer, place osteoprogenitor cells and a neat row of cuboidal osteoblasts along the outer bone surface. In a second clean schematic callout nearby, place a pink multinucleated osteoclast sitting on a shallow simplified bone-surface remodeling indentation; keep it separate from the osteoprogenitor lineage. Point separately to endosteum lining the marrow cavity. Use exactly these Chinese labels: 骨膜内层（成骨层）：骨原细胞、成骨细胞; 破骨细胞：骨表面改建／骨吸收; 骨内膜：衬骨髓腔; 骨原细胞 → 成骨细胞 → 骨细胞. Bottom brick-red TIP strip, exact white text: TIP：骨膜内层有成骨细胞；破骨细胞在骨表面改建。"
+    },
+    {
+      "id": "06-pennate-muscles-native-text",
+      "nativeTextPrompt": "Title at top: 羽状肌. Under the title, a brick-red brush underline. The same clothed cartoon coach teaches beside four clean textbook muscle-architecture diagrams of identical size. Use pale-gray tendons and brick-red muscle fibers. Diagram 1 has fibers parallel to one long tendon. Diagram 2 has oblique fibers on one side of a tendon. Diagram 3 has oblique fibers on both sides of a central tendon. Diagram 4 has several tendon branches with oblique fibers. Under each diagram, render the exact two-line Chinese label pair: 平行肌 / 例：缝匠肌; 单羽肌 / 例：伸趾长肌; 双羽肌 / 例：股直肌; 多羽肌 / 例：三角肌. Add one clear small Chinese label with a leader line: 肌束与肌腱成斜角. Bottom brick-red TIP strip, exact white text: TIP：羽状肌肌束斜接肌腱，通常更利于产生力量。"
+    },
+    {
+      "id": "07-respiratory-and-bone-connections-native-text",
+      "nativeTextPrompt": "Title at top: 呼吸系统与骨连结. Under the title, a brick-red brush underline. The same coach presents two separate framed topics. Top: respiratory tract and both lungs, exact label 呼吸道 + 肺. Bottom: three bone-connection cross-sections, exact labels 直接连结（无腔）, 半关节, 关节（有关节腔）. Bottom brick-red TIP strip, exact white text: TIP：呼吸道＋肺；直接连结 → 半关节 → 关节。"
+    }
+  ]
+}

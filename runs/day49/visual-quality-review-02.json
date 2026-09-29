@@ -1,0 +1,11 @@
+{
+  "reviewedAt": "2026-09-28T12:05:00Z",
+  "source": "runs/day49/retry-assets-20260928/generation.json",
+  "assets": [
+    {"file":"visual-01-power-intent-attempt-02.png","decision":"retry","reason":"The unsafe loaded jump is gone, but the requested left empty-bar squat setup is missing, so the load-versus-speed teaching contrast is incomplete."},
+    {"file":"visual-05-load-speed-attempt-02.png","decision":"accepted","reason":"The kettlebell handle is unmistakable in all three positions and the swing stays below chest height."},
+    {"file":"visual-06-dosage-readiness-attempt-02.png","decision":"retry","reason":"It has two separate Bojji figures despite the request for one observer; regenerate one observer between the landing and upright recovery positions."},
+    {"file":"overview-06-dosage-readiness-attempt-02.png","decision":"accepted","reason":"Despa is visibly upright and resting beside one low box; Bojji shows a single calm pause gesture."}
+  ],
+  "nextAction": "Use a third provider request for visual-01 and visual-06 only; retain all prior outputs and records."
+}

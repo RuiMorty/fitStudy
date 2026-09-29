@@ -1,0 +1,18 @@
+{
+  "status": "failed-no-retry",
+  "failedAt": "2026-09-28T01:36:00Z",
+  "asset": "cover-attempt-02.png",
+  "role": "cover-revision",
+  "authorization": "runs/day48/retry-cover-20260928/authorization.json",
+  "request": {
+    "provider": "Lingzhi",
+    "preset": "quality",
+    "model": "gpt-image-2.5-sunburst",
+    "attempt": 2,
+    "constraint": "Explicitly required a real RGBA alpha channel with background pixels alpha=0 and explicitly prohibited a rendered checkerboard."
+  },
+  "result": "The revision file exists at runs/day48/retry-cover-20260928/cover-attempt-02.png, but it is 1672x941 and hasAlpha: no. Visual inspection confirms the gray checkerboard is embedded in the pixels.",
+  "verification": "sips reports hasAlpha: no; SHA-256 is c29e05e2892bdce45bc94e6d4f69dd8ed9bc0d1539950cce8b2a8e594558b1ad. The file is preserved as failed evidence and is not eligible for preprocessing.",
+  "policy": "The user authorized this one retry only. Do not request a third cover, remaining assets, preprocessing, rendering, installation, testing, deployment, or publication.",
+  "nextAction": "Wait for a new explicit user decision."
+}

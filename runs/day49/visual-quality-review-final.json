@@ -1,0 +1,28 @@
+{
+  "reviewedAt": "2026-09-28T12:18:00Z",
+  "decision": "all-thirteen-assets-accepted-for-preprocessing",
+  "acceptedAssets": [
+    {"file":"cover.png","source":"runs/day49/retry-cover-20260928/cover-attempt-03.png","providerRequestNumber":1,"reason":"True alpha; controlled low-box landing, complete figures, feet and medicine ball."},
+    {"file":"visual-01-power-intent.png","source":"runs/day49/source/visual-01-power-intent-attempt-03.png","providerRequestNumber":3,"reason":"Empty-bar stable setup contrasts with an unloaded quiet landing; one observer only."},
+    {"file":"visual-02-olympic-lifts.png","source":"runs/day49/source/visual-02-olympic-lifts.png","providerRequestNumber":1,"reason":"Three distinct positions with connected bar and plates; stable front-rack catch."},
+    {"file":"visual-03-jump-landing.png","source":"runs/day49/source/visual-03-jump-landing.png","providerRequestNumber":1,"reason":"Low-box landing and stable stance are clear, controlled and complete."},
+    {"file":"visual-04-throws.png","source":"runs/day49/source/visual-04-throws.png","providerRequestNumber":1,"reason":"Balanced chest pass, one medicine ball and safe observer position."},
+    {"file":"visual-05-load-speed.png","source":"runs/day49/source/visual-05-load-speed-attempt-02.png","providerRequestNumber":2,"reason":"Kettlebell handle is clear and the swing is below chest height."},
+    {"file":"visual-06-dosage-readiness.png","source":"runs/day49/source/visual-06-dosage-readiness-attempt-04.png","providerRequestNumber":4,"reason":"Exactly one box and one observer; landing and upright recovery pause are distinct."},
+    {"file":"overview-01-power-intent.png","source":"runs/day49/source/overview-01-power-intent.png","providerRequestNumber":1,"reason":"Simple unloaded jump, complete figures and no markers."},
+    {"file":"overview-02-olympic-lifts.png","source":"runs/day49/source/overview-02-olympic-lifts.png","providerRequestNumber":1,"reason":"Stable front-rack catch with connected bar and plates."},
+    {"file":"overview-03-jump-landing.png","source":"runs/day49/source/overview-03-jump-landing.png","providerRequestNumber":1,"reason":"Controlled low-box landing is clear."},
+    {"file":"overview-04-throws.png","source":"runs/day49/source/overview-04-throws.png","providerRequestNumber":1,"reason":"Controlled medicine-ball throw and safe observer placement."},
+    {"file":"overview-05-load-speed.png","source":"runs/day49/source/overview-05-load-speed.png","providerRequestNumber":1,"reason":"Clear handled kettlebell and stable hip hinge."},
+    {"file":"overview-06-dosage-readiness.png","source":"runs/day49/source/overview-06-dosage-readiness-attempt-02.png","providerRequestNumber":2,"reason":"Upright recovery pause beside one box is clear."}
+  ],
+  "rejectedButRetained": [
+    "runs/day49/source/visual-01-power-intent.png",
+    "runs/day49/source/visual-01-power-intent-attempt-02.png",
+    "runs/day49/source/visual-05-load-speed.png",
+    "runs/day49/source/visual-06-dosage-readiness.png",
+    "runs/day49/source/visual-06-dosage-readiness-attempt-02.png",
+    "runs/day49/source/visual-06-dosage-readiness-attempt-03.png",
+    "runs/day49/source/overview-06-dosage-readiness.png"
+  ]
+}

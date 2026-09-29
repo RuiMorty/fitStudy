@@ -1,0 +1,40 @@
+{
+  "day": 45,
+  "status": "published",
+  "artifactStatus": "published",
+  "source": "runs/day45/lesson.json",
+  "imageProgress": {
+    "generated": 13,
+    "planned": 13
+  },
+  "previousFailure": {
+    "at": "2026-09-21T10:16:06.773618Z",
+    "asset": "runs/day45/source/visual-04-dynamic.png",
+    "role": "knowledge",
+    "returncode": 1,
+    "retryPolicy": "no automatic retry"
+  },
+  "failure": null,
+  "resumeAuthorization": "runs/day45/resume-current/authorization.json",
+  "completedAt": "2026-09-22T08:03:09Z",
+  "verification": {
+    "content": "runs/day45/verification/content-review.json",
+    "quality": "runs/day45/verification/quality-review.json",
+    "browser": "runs/day45/verification/report.json",
+    "files": "runs/day45/verification/file-report.json",
+    "revision": "runs/day45/revision-01/content-change.json"
+  },
+  "publishApproved": true,
+  "imagesAccepted": true,
+  "serverDeployed": true,
+  "revision": "revision-01-visual-anatomy-and-action-examples",
+  "publicUrl": "https://fitstudy.cn/go/45/",
+  "releaseId": "20260922T085916121Z-day45",
+  "archive": "runs/day45/release/day45-site.tar.gz",
+  "releaseManifest": "runs/day45/release/release-manifest.json",
+  "remoteBackup": "/home/zhaoqr/fitness/.fitstudy-deploy-backups/20260922T085916121Z-day45",
+  "localVerification": "passed",
+  "publicVerification": "passed",
+  "publishedAt": "2026-09-22T09:02:43Z",
+  "nextAction": "Day45 revision-01 is published. Generate a later lesson only under the normal daily-generation authorization and progress checks."
+}

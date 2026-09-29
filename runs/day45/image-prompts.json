@@ -1,0 +1,143 @@
+{
+  "provider": "Lingzhi",
+  "preset": "quality",
+  "model": "gpt-image-2.5-sunburst",
+  "createdAt": "2026-09-21T10:02:52Z",
+  "stylePreset": "templates/study/v1/image-style.json",
+  "authorization": "本次健身学习每日生成：Day44 已验收发布；按课纲顺序生成 Day45 本地草稿。用户已授权使用灵智生图；每项仅一次请求，失败不自动重试。",
+  "referenceMode": "text-only fixed Bojji and Despa character profile; no reference image is sent to the generation API",
+  "retryPolicy": "one request per asset; stop on provider failure; no automatic paid retry",
+  "commonPrompt": "为同一个健身科学教学系列制作配图，使用《国王排名》Ranking of Kings 的波吉 Bojji 与德斯帕 Despa 两位明确可辨识的角色。波吉是矮小男孩，黑色短发、圆脸、大圆眼、小金色三尖王冠、钴蓝色长袖短上衣、细白腰带、白色贴腿长裤、黑色圆头短靴；绝不画成长腿成年人或肌肉男。德斯帕是成年男性老师，金色向后梳短发、细长眼、长鼻、上唇两撇细小金色胡须，红褐色及膝长外套、白色毛领、细金色门襟、浅米色裤、深色短靴；不是金发长发剑士或山羊胡。两位都是男性，衣服、发型、配色在所有图中一致。\n统一使用清爽二维动漫教材插画：圆润简洁的深灰细轮廓、平涂色块、极少柔和阴影、亲切简练面部。不要半写实3D、照片感、油亮皮肤、厚涂、商业广告光影。可使用极少蓝绿色细线来说明关系，但本次不画箭头。每个场景只出现波吉和德斯帕，不添加其他人物。\n画布外围及未绘制区域必须是真实透明PNG alpha；不要纸张底色、灰蓝背景、渐变、棋盘格、地板、摄影棚、外框、贴纸白边或投影。波吉白裤子和德斯帕白毛领应保持不透明白色。所有关键结构距画布边缘至少6%，人物手脚完整。无Logo、无水印、无任何汉字、英文字母或数字。只表达一个知识点，不用无关布景。动作与关节自然，伙伴不强压关节；宽幅图关键内容横向清晰排列。",
+  "assets": [
+    {
+      "file": "cover.png",
+      "role": "cover",
+      "topic": "训练前动态准备与训练后静态放松",
+      "teachingRelationship": "德斯帕示范可控制的动作准备，波吉观察时机区别；不出现第三人。",
+      "composition": "横向16:9无字封面",
+      "allowedText": "none",
+      "anatomyAndTechniqueConstraints": "全身、双脚、前腿膝盖和骨盆完整；弓步与后侧链姿势都温和可控；透明背景。",
+      "prompt": "透明PNG，横向16:9无字封面。画面左侧德斯帕做训练前的低幅可控制前跨弓步加胸椎轻旋转，前脚、前膝和髋方向稳定；右侧同一德斯帕改为训练后坐姿、膝微屈的舒适后侧链静态保持，绝不拉到疼痛。波吉站在两种姿势中间偏后观察、作清楚比较手势。两个状态分开且完整，人物手脚完整；无箭头、无文字、无地面线。"
+    },
+    {
+      "file": "visual-01-static-dynamic.png",
+      "role": "knowledge",
+      "topic": "静态与动态柔韧性的任务区别",
+      "teachingRelationship": "德斯帕并列示范舒适保持与主动范围，波吉观察；不出现第三人。",
+      "composition": "横向28:9无字知识图",
+      "allowedText": "none",
+      "anatomyAndTechniqueConstraints": "两种姿势比例一致、全身完整；动态弓步不后仰、不扭膝；透明背景。",
+      "prompt": "透明PNG，横向28:9无字知识插图。左侧德斯帕仰卧、用双手轻抱大腿做舒适腘绳肌静态保持，膝轻屈且不强压；右侧德斯帕站姿做小范围前跨弓步，双脚完整、前膝与脚尖同向、躯干直立且能随时停住。波吉在中央偏后观察两种不同任务。只画这两个状态，无箭头、无文字、无器械、无地面线。"
+    },
+    {
+      "file": "visual-02-factors.png",
+      "role": "knowledge",
+      "topic": "范围受结构与神经保护共同影响",
+      "teachingRelationship": "德斯帕以温和姿势示范范围边缘，波吉观察身体信号；不出现第三人。",
+      "composition": "横向28:9无字知识图",
+      "allowedText": "none",
+      "anatomyAndTechniqueConstraints": "只用简洁同配色局部示意；不呈现疼痛或强压；人物肢体和关节方向自然。",
+      "prompt": "透明PNG，横向28:9无字知识插图。德斯帕坐姿、膝微屈，双手轻放在大腿后方，缓慢进入舒适后侧链拉伸但没有拉到极限；他旁边以极简蓝绿色细轮廓显示一条柔和的肌肉—肌腱—关节关系示意，不画医学细节、不画箭头或文字。波吉在另一侧观察德斯帕平静呼吸和安全距离。无痛苦表情、无强压、无文字。"
+    },
+    {
+      "file": "visual-03-static.png",
+      "role": "knowledge",
+      "topic": "训练后静态拉伸",
+      "teachingRelationship": "德斯帕示范温和保持与呼吸，波吉观察；不出现第三人。",
+      "composition": "横向28:9无字知识图",
+      "allowedText": "none",
+      "anatomyAndTechniqueConstraints": "坐姿后侧链保持，膝微屈可见；背部自然、非圆背硬拉；透明背景。",
+      "prompt": "透明PNG，横向28:9无字知识插图。德斯帕坐在地面但不画地面线，双腿向前、膝盖微屈，身体从髋缓慢前倾，双手轻放在小腿上做温和后侧链静态拉伸；背部自然、面部平静、没有用手猛拉脚尖。波吉在右侧以轻松呼吸姿势观察，不触碰德斯帕。两人全身和鞋子完整；无箭头、无文字。"
+    },
+    {
+      "file": "visual-04-dynamic.png",
+      "role": "knowledge",
+      "topic": "训练前动态弓步准备",
+      "teachingRelationship": "德斯帕示范能停住的动态弓步转体，波吉观察脚膝躯干稳定；不出现第三人。",
+      "composition": "横向28:9无字知识图",
+      "allowedText": "none",
+      "anatomyAndTechniqueConstraints": "前膝与脚尖同向，双脚完整，躯干轻旋而不靠腰猛拧，保持可控。",
+      "prompt": "透明PNG，横向28:9无字知识插图。德斯帕在稳定的前跨弓步中停在可控制位置，前膝朝同向脚尖、后脚跟自然抬起，双手在胸前轻轻向前腿方向做小幅胸椎旋转，骨盆稳定不猛扭。波吉在右侧观察德斯帕的脚、膝和躯干位置。全身完整，无箭头、无速度线、无文字、无地面线。"
+    },
+    {
+      "file": "visual-05-pnf.png",
+      "role": "knowledge",
+      "topic": "PNF CR、HR与CRAC的温和沟通",
+      "teachingRelationship": "德斯帕与波吉示范伙伴协助只提供稳定阻力和口令；不出现第三人。",
+      "composition": "横向28:9无字知识图",
+      "allowedText": "none",
+      "anatomyAndTechniqueConstraints": "波吉不承受危险负荷，不强压关节；德斯帕仰卧、膝微屈，腿部可控；透明背景。",
+      "prompt": "透明PNG，横向28:9无字知识插图。德斯帕仰卧，左髋屈曲、膝微屈，缓慢抬起左腿处在舒适范围；波吉站在腿外侧的安全位置，双手轻且稳定地放在德斯帕小腿远端附近，只提供很小的等长阻力，不向身体压腿。两人面部平静，表达沟通与温和收缩—放松；关节不在末端、手脚完整。无文字、无箭头、无用力压迫。"
+    },
+    {
+      "file": "visual-06-safety.png",
+      "role": "knowledge",
+      "topic": "PNF与拉伸安全边界",
+      "teachingRelationship": "波吉和德斯帕示范清晰停止信号和从舒适姿势退出；不出现第三人。",
+      "composition": "横向28:9无字知识图",
+      "allowedText": "none",
+      "anatomyAndTechniqueConstraints": "停止手势清楚、姿势自然；不描述疾病或痛苦；透明背景。",
+      "prompt": "透明PNG，横向28:9无字知识插图。画面左侧波吉面向德斯帕抬一只手做清晰、平静的停止手势；右侧德斯帕从一个温和站姿腘绳肌拉伸中回到直立中立位，双脚稳定、手离开腿、没有强撑。两人相互看到对方，强调停下与沟通。无医疗器械、无痛苦表情、无箭头、无文字、无地面线。"
+    },
+    {
+      "file": "overview-01-static-dynamic.png",
+      "role": "overview-item",
+      "topic": "静态与动态范围总览",
+      "teachingRelationship": "德斯帕示范主动控制的动态弓步，波吉观察；不出现第三人。",
+      "composition": "横向4:3总览专用独立插图",
+      "allowedText": "none",
+      "anatomyAndTechniqueConstraints": "不同于知识横幅构图，德斯帕正面三分之四可控弓步；膝与脚尖同向。",
+      "prompt": "透明PNG，横向4:3总览专用独立插图。德斯帕正面三分之四视角停在一个小幅稳定前跨弓步，双手在胸前、躯干直立，前膝和脚尖同向。波吉在侧后方观察，人物全身完整。只画一个动态控制姿势，构图不要与横幅并列图相同；无箭头、无文字、无地面线。"
+    },
+    {
+      "file": "overview-02-factors.png",
+      "role": "overview-item",
+      "topic": "范围影响因素总览",
+      "teachingRelationship": "波吉和德斯帕观察温和关节范围关系；不出现第三人。",
+      "composition": "横向4:3总览专用独立插图",
+      "allowedText": "none",
+      "anatomyAndTechniqueConstraints": "使用简洁关节局部示意但无医学文字或箭头；人物比例自然。",
+      "prompt": "透明PNG，横向4:3总览专用独立插图。德斯帕站姿轻抬一条腿做温和髋部活动，波吉在旁以好奇但不触碰的姿势观察；两人之间有一个简洁的半透明风格髋关节与肌腱轮廓小示意，强调理解范围而不是突破极限。无文字、无箭头、无痛苦表情、无地面线。"
+    },
+    {
+      "file": "overview-03-static.png",
+      "role": "overview-item",
+      "topic": "训练后静态拉伸总览",
+      "teachingRelationship": "德斯帕在可呼吸范围保持，波吉观察；不出现第三人。",
+      "composition": "横向4:3总览专用独立插图",
+      "allowedText": "none",
+      "anatomyAndTechniqueConstraints": "不同于横幅视角，采用侧前方坐姿，膝微屈与平静呼吸清楚。",
+      "prompt": "透明PNG，横向4:3总览专用独立插图。德斯帕从侧前方视角坐姿做温和后侧链静态保持，膝微屈、双手自然放在小腿、肩颈放松。波吉在一旁双手放在胸前观察呼吸节奏。人物完整，构图不重复横幅；无文字、无箭头、无地面线。"
+    },
+    {
+      "file": "overview-04-dynamic.png",
+      "role": "overview-item",
+      "topic": "训练前动态准备总览",
+      "teachingRelationship": "德斯帕在可控制弓步转体中准备，波吉观察；不出现第三人。",
+      "composition": "横向4:3总览专用独立插图",
+      "allowedText": "none",
+      "anatomyAndTechniqueConstraints": "不同于横幅角度，侧前方完整弓步；肢体和关节自然。",
+      "prompt": "透明PNG，横向4:3总览专用独立插图。德斯帕侧前方完整视角，做小范围稳定弓步并把双手轻放在胸前准备转体，前膝对脚尖、躯干不后仰。波吉站在远侧观察，人物手脚完整。不要第二状态、箭头、速度线或文字。"
+    },
+    {
+      "file": "overview-05-pnf.png",
+      "role": "overview-item",
+      "topic": "PNF三法总览",
+      "teachingRelationship": "德斯帕与波吉以安全距离示范温和等长阻力和沟通；不出现第三人。",
+      "composition": "横向4:3总览专用独立插图",
+      "allowedText": "none",
+      "anatomyAndTechniqueConstraints": "波吉仅提供轻阻力、不得压关节；德斯帕动作不在末端范围。",
+      "prompt": "透明PNG，横向4:3总览专用独立插图。德斯帕仰卧、膝微屈抬腿到舒适位置，波吉在腿外侧用双手提供轻而稳定的等长阻力；两人面部冷静且相互沟通，姿势安全。构图不同于横幅图，人物完整；无文字、无箭头、无地面线。"
+    },
+    {
+      "file": "overview-06-safety.png",
+      "role": "overview-item",
+      "topic": "停止与安全边界总览",
+      "teachingRelationship": "波吉发出停止信号，德斯帕平稳回到中立位；不出现第三人。",
+      "composition": "横向4:3总览专用独立插图",
+      "allowedText": "none",
+      "anatomyAndTechniqueConstraints": "清楚的停止手势和自然直立位；不画医学符号或文字。",
+      "prompt": "透明PNG，横向4:3总览专用独立插图。波吉正面三分之四抬手做清楚平静的停止手势，德斯帕在他旁边直立中立、双手自然垂下，表示从拉伸平稳退出并听到信号。人物全身完整，无疼痛表情、无箭头、无文字、无地面线。"
+    }
+  ]
+}

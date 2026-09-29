@@ -1,0 +1,513 @@
+{
+  "processedAt": "2026-09-28T12:18:43.206802+00:00",
+  "method": "trim near-transparent noise; reviewed crop; uniform scale; transparent margin",
+  "assets": [
+    {
+      "source": "runs/day49/retry-cover-20260928/cover-attempt-03.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "sourceSha256": "95937dbaf339026d0ba6f178ebf0e107995d99eea2efdfc5ed4e7e76ad05440f",
+      "reviewedCrop": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "visibleCrop": [
+        172,
+        29,
+        1584,
+        872
+      ],
+      "output": "runs/day49/assets/cover.png",
+      "size": [
+        1600,
+        900
+      ],
+      "subjectSize": [
+        1327,
+        792
+      ],
+      "offset": [
+        136,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "无字封面，质量审核通过"
+    },
+    {
+      "source": "runs/day49/source/visual-01-power-intent-attempt-03.png",
+      "sourceSize": [
+        2020,
+        779
+      ],
+      "sourceSha256": "a3fd902ec26930096c8a9eb22354391be9d04f975f572cdd9348f1de1312a279",
+      "reviewedCrop": [
+        0,
+        0,
+        2020,
+        779
+      ],
+      "visibleCrop": [
+        25,
+        12,
+        1949,
+        734
+      ],
+      "output": "runs/day49/assets/visual-01-power-intent.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1924,
+        722
+      ],
+      "offset": [
+        438,
+        89
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "爆发力与速度意图，质量审核通过"
+    },
+    {
+      "source": "runs/day49/source/visual-02-olympic-lifts.png",
+      "sourceSize": [
+        2119,
+        742
+      ],
+      "sourceSha256": "69e0a722a8473b84e59e4eeeff2f6b8d3f88dca842ca8dbf34d45813e3549d81",
+      "reviewedCrop": [
+        0,
+        0,
+        2119,
+        742
+      ],
+      "visibleCrop": [
+        0,
+        0,
+        2119,
+        711
+      ],
+      "output": "runs/day49/assets/visual-02-olympic-lifts.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        2119,
+        711
+      ],
+      "offset": [
+        340,
+        94
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "奥举分解动作"
+    },
+    {
+      "source": "runs/day49/source/visual-03-jump-landing.png",
+      "sourceSize": [
+        2213,
+        711
+      ],
+      "sourceSha256": "8c989d9550b65601f1328c29a67dc96eb31160c74d4f13059c18ffde343147ab",
+      "reviewedCrop": [
+        0,
+        0,
+        2213,
+        711
+      ],
+      "visibleCrop": [
+        193,
+        0,
+        2036,
+        675
+      ],
+      "output": "runs/day49/assets/visual-03-jump-landing.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1843,
+        675
+      ],
+      "offset": [
+        478,
+        112
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "跳跃与落地控制"
+    },
+    {
+      "source": "runs/day49/source/visual-04-throws.png",
+      "sourceSize": [
+        2214,
+        710
+      ],
+      "sourceSha256": "d860e435f7755a6de425ca197fd9e87a81de3967555d2ddafa2cad416c3b83d6",
+      "reviewedCrop": [
+        0,
+        0,
+        2214,
+        710
+      ],
+      "visibleCrop": [
+        416,
+        8,
+        1797,
+        696
+      ],
+      "output": "runs/day49/assets/visual-04-throws.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1381,
+        688
+      ],
+      "offset": [
+        709,
+        106
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "药球投掷"
+    },
+    {
+      "source": "runs/day49/source/visual-05-load-speed-attempt-02.png",
+      "sourceSize": [
+        2009,
+        783
+      ],
+      "sourceSha256": "851c33824d9c944d42d542cbb390ce0ac1e112b6d1c49ca094963ee51eb88b03",
+      "reviewedCrop": [
+        0,
+        0,
+        2009,
+        783
+      ],
+      "visibleCrop": [
+        84,
+        17,
+        1856,
+        747
+      ],
+      "output": "runs/day49/assets/visual-05-load-speed.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1772,
+        730
+      ],
+      "offset": [
+        514,
+        85
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "负荷与速度意图，质量审核通过"
+    },
+    {
+      "source": "runs/day49/source/visual-06-dosage-readiness-attempt-04.png",
+      "sourceSize": [
+        1983,
+        793
+      ],
+      "sourceSha256": "cb23cdcd534aa5e8151f7431dd34dd6ea1b2199d8dd02df6798d30aa3bbd5f5d",
+      "reviewedCrop": [
+        0,
+        0,
+        1983,
+        793
+      ],
+      "visibleCrop": [
+        173,
+        11,
+        1805,
+        756
+      ],
+      "output": "runs/day49/assets/visual-06-dosage-readiness.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1632,
+        745
+      ],
+      "offset": [
+        584,
+        77
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "剂量与准备度，质量审核通过"
+    },
+    {
+      "source": "runs/day49/source/overview-01-power-intent.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "0d9ab9e8ed9109a522c027672374fd7ccc3ced85250ae52a7645bb2001e2949e",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        281,
+        14,
+        1061,
+        1044
+      ],
+      "output": "runs/day49/assets/overview-01-power-intent.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        780,
+        1030
+      ],
+      "offset": [
+        410,
+        85
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day49/source/overview-02-olympic-lifts.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "3b382ce52ed9f568caa0e1cfcc90a92f65454f73e04f654378b4a02e98fa74da",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        126,
+        16,
+        1426,
+        1034
+      ],
+      "output": "runs/day49/assets/overview-02-olympic-lifts.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1300,
+        1018
+      ],
+      "offset": [
+        150,
+        91
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day49/source/overview-03-jump-landing.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "979553c820110ab483fd510ace300f003941dd4286f23b416847e178fc184178",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        308,
+        17,
+        1196,
+        1038
+      ],
+      "output": "runs/day49/assets/overview-03-jump-landing.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        888,
+        1021
+      ],
+      "offset": [
+        356,
+        89
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day49/source/overview-04-throws.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "33db004d81011468bf7b92b820f4cc458f7643e1fdbf15027bb92a2a3e795d20",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        33,
+        57,
+        1438,
+        1017
+      ],
+      "output": "runs/day49/assets/overview-04-throws.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1405,
+        960
+      ],
+      "offset": [
+        97,
+        120
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day49/source/overview-05-load-speed.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "d93ddb7e4346b3db6c4ec32886cb5ffaa49a8b242d27bc7317c74f780f9fdef4",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        133,
+        0,
+        1294,
+        1063
+      ],
+      "output": "runs/day49/assets/overview-05-load-speed.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1153,
+        1056
+      ],
+      "offset": [
+        223,
+        72
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day49/source/overview-06-dosage-readiness-attempt-02.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "148118e1689deb1c09c6deb3eaa58b2ebc0ce43fd4bb877952d0f4d696962e49",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        172,
+        12,
+        1295,
+        1035
+      ],
+      "output": "runs/day49/assets/overview-06-dosage-readiness.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1123,
+        1023
+      ],
+      "offset": [
+        238,
+        88
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用；质量审核通过"
+    }
+  ]
+}

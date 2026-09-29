@@ -1,0 +1,513 @@
+{
+  "processedAt": "2026-09-21T11:42:33.600354+00:00",
+  "method": "trim near-transparent noise; reviewed crop; uniform scale; transparent margin",
+  "assets": [
+    {
+      "source": "runs/day45/source/cover.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "sourceSha256": "bf3bada27edaecb8a09201e022a3e808301bfb503ea7cdf61c50536e75f80c73",
+      "reviewedCrop": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "visibleCrop": [
+        45,
+        81,
+        1627,
+        811
+      ],
+      "output": "runs/day45/assets/cover.png",
+      "size": [
+        1600,
+        900
+      ],
+      "subjectSize": [
+        1492,
+        688
+      ],
+      "offset": [
+        54,
+        106
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day45/source/visual-01-static-dynamic.png",
+      "sourceSize": [
+        2207,
+        712
+      ],
+      "sourceSha256": "3bb73a06e6c29c160ec6ca341e592ab40a04ce3f96d2215bc24a461690e52efc",
+      "reviewedCrop": [
+        0,
+        0,
+        2207,
+        712
+      ],
+      "visibleCrop": [
+        123,
+        17,
+        2045,
+        651
+      ],
+      "output": "runs/day45/assets/visual-01-static-dynamic.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1922,
+        634
+      ],
+      "offset": [
+        439,
+        133
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day45/source/visual-02-factors.png",
+      "sourceSize": [
+        2210,
+        712
+      ],
+      "sourceSha256": "f5fad75695ab3bc94de47b3c4de85ad477087b695ec813322c776c26a6d5f60d",
+      "reviewedCrop": [
+        0,
+        0,
+        2210,
+        712
+      ],
+      "visibleCrop": [
+        378,
+        6,
+        1879,
+        648
+      ],
+      "output": "runs/day45/assets/visual-02-factors.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1501,
+        642
+      ],
+      "offset": [
+        649,
+        129
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day45/source/visual-03-static.png",
+      "sourceSize": [
+        2207,
+        712
+      ],
+      "sourceSha256": "965640a5b57ad6acb555d7dc05c36cce29eba5794ec3abdd222232daea3c3497",
+      "reviewedCrop": [
+        0,
+        0,
+        2207,
+        712
+      ],
+      "visibleCrop": [
+        401,
+        22,
+        1796,
+        680
+      ],
+      "output": "runs/day45/assets/visual-03-static.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1395,
+        658
+      ],
+      "offset": [
+        702,
+        121
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day45/source/visual-04-dynamic.png",
+      "sourceSize": [
+        2209,
+        712
+      ],
+      "sourceSha256": "114b9ae652f0e764504a5094e29f233031ef9d0c1b594dae44420c3a3a60a137",
+      "reviewedCrop": [
+        0,
+        0,
+        2209,
+        712
+      ],
+      "visibleCrop": [
+        580,
+        13,
+        1595,
+        698
+      ],
+      "output": "runs/day45/assets/visual-04-dynamic.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1015,
+        685
+      ],
+      "offset": [
+        892,
+        107
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day45/source/visual-05-pnf.png",
+      "sourceSize": [
+        2209,
+        712
+      ],
+      "sourceSha256": "0f961b9dcde2284164c1833f0aa44e605ccfd7338fdcf3dd8c1b03cf6b16fb8a",
+      "reviewedCrop": [
+        0,
+        0,
+        2209,
+        712
+      ],
+      "visibleCrop": [
+        373,
+        14,
+        1766,
+        686
+      ],
+      "output": "runs/day45/assets/visual-05-pnf.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1393,
+        672
+      ],
+      "offset": [
+        703,
+        114
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day45/source/visual-06-safety.png",
+      "sourceSize": [
+        2212,
+        711
+      ],
+      "sourceSha256": "e9a4240021a1d1c95e9fdb4e4cfd229c5ab836a239b7e2a8bec544892a637f00",
+      "reviewedCrop": [
+        0,
+        0,
+        2212,
+        711
+      ],
+      "visibleCrop": [
+        692,
+        8,
+        1536,
+        700
+      ],
+      "output": "runs/day45/assets/visual-06-safety.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        844,
+        692
+      ],
+      "offset": [
+        978,
+        104
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day45/source/overview-01-static-dynamic.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "586406b1d306a896b3a2bcfe8702bdbff2c357c60b52f709a688e50053488cbc",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        201,
+        52,
+        1292,
+        1033
+      ],
+      "output": "runs/day45/assets/overview-01-static-dynamic.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1091,
+        981
+      ],
+      "offset": [
+        254,
+        109
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day45/source/overview-02-factors.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "9c33c7e56a3c0ef2e261b6dd55906c5cf92b9dedd92a30e535ba5dc384823af7",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        138,
+        15,
+        1346,
+        1072
+      ],
+      "output": "runs/day45/assets/overview-02-factors.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1207,
+        1056
+      ],
+      "offset": [
+        196,
+        72
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day45/source/overview-03-static.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "7d3253887bf6554006e2bfe3a056b011c44a823a91239083a3281b67c76f1b43",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        60,
+        97,
+        1426,
+        971
+      ],
+      "output": "runs/day45/assets/overview-03-static.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1366,
+        874
+      ],
+      "offset": [
+        117,
+        163
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day45/source/overview-04-dynamic.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "52c92cfa5945f5e8cbad9769538f79d4fd2f5e74fbac52e7431735fd10a46355",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        129,
+        16,
+        1371,
+        1063
+      ],
+      "output": "runs/day45/assets/overview-04-dynamic.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1242,
+        1047
+      ],
+      "offset": [
+        179,
+        76
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day45/source/overview-05-pnf.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "9fbe8fb196ace8537809c4ffa678ac79be5667d0be9abb559ee67cf911b6373c",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        169,
+        122,
+        1384,
+        891
+      ],
+      "output": "runs/day45/assets/overview-05-pnf.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1215,
+        769
+      ],
+      "offset": [
+        192,
+        215
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day45/source/overview-06-safety.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "cc4fc2233ea75a5863192c224b149d248e96cc8a72f43bc70966cc49a74693ba",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        328,
+        12,
+        1135,
+        1071
+      ],
+      "output": "runs/day45/assets/overview-06-safety.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        805,
+        1056
+      ],
+      "offset": [
+        397,
+        72
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    }
+  ]
+}

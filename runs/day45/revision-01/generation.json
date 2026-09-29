@@ -1,0 +1,28 @@
+{
+  "provider": "Lingzhi",
+  "model": "gpt-image-2.5-sunburst",
+  "startedAt": "2026-09-22T07:55:12.458649+00:00",
+  "authorization": "runs/day45/revision-01/authorization.json",
+  "attempts": [
+    {
+      "file": "overview-05-pnf.png",
+      "role": "overview-item",
+      "startedAt": "2026-09-22T07:55:12.459164+00:00",
+      "status": "generated",
+      "completedAt": "2026-09-22T07:55:57.475637+00:00",
+      "returncode": 0,
+      "bytes": 837171
+    },
+    {
+      "file": "overview-06-safety.png",
+      "role": "overview-item",
+      "startedAt": "2026-09-22T07:56:38.439037+00:00",
+      "status": "generated",
+      "completedAt": "2026-09-22T07:57:12.575823+00:00",
+      "returncode": 0,
+      "bytes": 750842
+    }
+  ],
+  "status": "batch-complete",
+  "updatedAt": "2026-09-22T07:57:12.577341+00:00"
+}

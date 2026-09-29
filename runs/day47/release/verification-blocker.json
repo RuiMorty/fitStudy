@@ -1,0 +1,15 @@
+{
+  "status": "resolved",
+  "errorCode": "invalid_encrypted_content",
+  "reason": "Automatic approval review could not decrypt/parse encrypted content; this is a review system failure, not an unsafe-action determination.",
+  "notExecuted": [
+    "HTTPS seven-file hash verification",
+    "live browser shortlink/catalog/course checks"
+  ],
+  "serverDeployment": "completed",
+  "requestNewAuthorization": false,
+  "nextStep": "Retry public verification through normal approval workflow when approval system is available; after successful public checks add verified shortlink to local caption and ZIP.",
+  "recordedAt": "2026-09-27T09:45:08.868615+00:00",
+  "resolvedAt": "2026-09-28T01:22:36.265089+00:00",
+  "resolution": "Public file and live browser checks completed successfully through normal approval workflow."
+}

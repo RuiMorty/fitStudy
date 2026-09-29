@@ -1,0 +1,38 @@
+{
+  "status": "awaiting-review",
+  "artifactStatus": "ready-local-draft",
+  "day": 49,
+  "startedAt": "2026-09-28T10:00:00Z",
+  "input": "runs/day49/lesson.json",
+  "imagePlan": "runs/day49/image-prompts.json",
+  "planned": 13,
+  "generated": 13,
+  "authorization": "runs/day49/authorization.json",
+  "previousDraft": {"day": 48, "status": "published", "publicLearningUrl": "https://fitstudy.cn/go/48/"},
+  "publishApproved": false,
+  "retryPolicy": "each asset permits one initial provider request plus up to five revised retries; credential or quota failures stop without consuming provider-request budget",
+  "failure": "runs/day49/failure.json",
+  "coverRevisionAuthorization": "runs/day49/retry-cover-20260928/authorization.json",
+  "coverRevisionFailure": "runs/day49/retry-cover-20260928/failure-attempt-02.json",
+  "retryAuthorization": "runs/day49/retry-policy.json",
+  "credentialStatus": "host-keychain-available",
+  "acceptedCover": "runs/day49/retry-cover-20260928/cover-acceptance.json",
+  "imagesAccepted": true,
+  "sourceQualityReview": "runs/day49/visual-quality-review-final.json",
+  "completedAt": "2026-09-28T12:50:00Z",
+  "verification": {
+    "templateTests": "17 passed",
+    "sourceQuality": "runs/day49/visual-quality-review-final.json",
+    "imageProcessing": "runs/day49/image-processing.json",
+    "typesetting": "runs/day49/assets/detail.typesetting.json",
+    "browser": "runs/day49/verification/report.json",
+    "zip": "xhs/day49/day49-xhs.zip"
+  },
+  "localPreview": {
+    "course": "http://127.0.0.1:8420/html/day49-%E7%88%86%E5%8F%91%E5%8A%9B%E8%AE%AD%E7%BB%83%E6%8A%80%E6%9C%AF.html",
+    "xhs": "http://127.0.0.1:8420/xhs/day49/index.html",
+    "zip": "http://127.0.0.1:8420/xhs/day49/day49-xhs.zip",
+    "httpStatus": "200 for course, XHS page, and ZIP"
+  },
+  "nextAction": "Await user acceptance of the local draft. Do not regenerate, publish, update public pages, shortlinks, or formal progress."
+}

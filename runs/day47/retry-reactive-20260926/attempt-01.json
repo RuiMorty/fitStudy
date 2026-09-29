@@ -1,0 +1,14 @@
+{
+  "number": 1,
+  "asset": "overview-05-reactive.png",
+  "status": "accepted",
+  "requestedAt": "2026-09-26T08:04:45+08:00",
+  "output": "runs/day47/retry-reactive-20260926/overview-05-reactive-attempt-01.png",
+  "prompt": "透明PNG，4:3横向总览插图。真正透明的 alpha 背景：所有未绘制区域 alpha=0，绝不能有棋盘格、白底、灰底、地面、边框或投影。只画一个清晰反应瞬间：波吉在安全距离外举一张无文字纯蓝圆卡；德斯帕转头看蓝卡后，向蓝色小锥桶迈出第一步。橙色小锥桶表示未选择方向。两人、双脚和两个锥桶完整，不接触。无文字、数字、箭头、标志或水印。",
+  "completedAt": "2026-09-26T08:05:51+08:00",
+  "dimensions": [1448, 1086],
+  "hasAlpha": true,
+  "bytes": 979284,
+  "sha256": "c0ed7be327016f2310e69ea2c3fdcf87b6ff9fd73c48df891e5eba89a9253678",
+  "qualityReview": "Accepted after visual inspection: true alpha channel, no embedded checkerboard, complete figures and feet, blue signal card, blue chosen cone, orange alternative cone, and no text or arrows."
+}

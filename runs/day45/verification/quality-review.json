@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "checkedAt": "2026-09-21T11:47:12Z",
+  "sourceGeneration": {
+    "planned": 13,
+    "generated": 13,
+    "successfulRequests": 13,
+    "previousFailure": 1,
+    "userAuthorizedRetry": 1,
+    "automaticRetries": 0,
+    "preset": "Lingzhi quality / gpt-image-2.5-sunburst",
+    "authorization": "runs/day45/resume-current/authorization.json"
+  },
+  "overview": {
+    "independentImages": 6,
+    "knowledgeImages": 6,
+    "overviewAndKnowledgeImagesDisjoint": true,
+    "detailTextBlocks": 16
+  },
+  "visualInspection": {
+    "inspectedCards": [
+      "cover",
+      "overview",
+      "static versus dynamic range",
+      "range factors",
+      "post-training static stretch",
+      "pre-training dynamic preparation",
+      "PNF CR HR CRAC",
+      "partner safety"
+    ],
+    "result": "All eight final 1080x1440 cards were manually inspected after export: text remains readable, each page uses its matching illustration, figures have complete limbs, and no overflow, placeholder, unrelated image, or unsupported brand text is present."
+  },
+  "responsiveAndInteraction": "Shared verifier passed at 320, 390, 768, and 1440px; disclosure, flip cards, all quiz types, incorrect-feedback gate, zoom dialog, exported card dimensions, and broken-layout gate passed.",
+  "revision01": {
+    "authorization": "runs/day45/revision-01/authorization.json",
+    "newPaidRequests": 2,
+    "automaticRetries": 0,
+    "replacedOverviewAssets": ["overview-05-pnf.png", "overview-06-safety.png"],
+    "visualResult": "PNF overview visibly contains both teacher legs, knees, calves, and boots. Safety overview shows a proportionate full-body adult teacher. Final overview card and revised slides 02–06 were manually inspected after export."
+  }
+}

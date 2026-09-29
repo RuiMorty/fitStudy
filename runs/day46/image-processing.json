@@ -1,0 +1,513 @@
+{
+  "processedAt": "2026-09-22T12:06:29.125391+00:00",
+  "method": "trim near-transparent noise; reviewed crop; uniform scale; transparent margin",
+  "assets": [
+    {
+      "source": "runs/day46/source/cover.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "sourceSha256": "9e8b595cd56a9e6bb2916fcc05a93d32f1fda37bf684b0231d6316619a68b7ed",
+      "reviewedCrop": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "visibleCrop": [
+        10,
+        12,
+        1661,
+        880
+      ],
+      "output": "runs/day46/assets/cover.png",
+      "size": [
+        1600,
+        900
+      ],
+      "subjectSize": [
+        1492,
+        784
+      ],
+      "offset": [
+        54,
+        58
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day46/source/visual-01-mechanism.png",
+      "sourceSize": [
+        2209,
+        712
+      ],
+      "sourceSha256": "c3f8ab60a77869d44a61408bc8013d724210c11d7d60ae54115d46edb8f8e471",
+      "reviewedCrop": [
+        0,
+        0,
+        2209,
+        712
+      ],
+      "visibleCrop": [
+        35,
+        14,
+        2180,
+        666
+      ],
+      "output": "runs/day46/assets/visual-01-mechanism.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        2145,
+        652
+      ],
+      "offset": [
+        327,
+        124
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day46/source/visual-02-roller.png",
+      "sourceSize": [
+        2210,
+        711
+      ],
+      "sourceSha256": "e9fdf1f967b2e8ea09dbf913b96c4e07cddb1a1ea892f6f5360969bd4867fcf6",
+      "reviewedCrop": [
+        0,
+        0,
+        2210,
+        711
+      ],
+      "visibleCrop": [
+        190,
+        17,
+        2057,
+        676
+      ],
+      "output": "runs/day46/assets/visual-02-roller.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1867,
+        659
+      ],
+      "offset": [
+        466,
+        120
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day46/source/visual-03-tools.png",
+      "sourceSize": [
+        2213,
+        711
+      ],
+      "sourceSha256": "9dc000f424205ba2ec24b02ea1a193ac6bf2b7acf7168a4d325c1fa3a69cba10",
+      "reviewedCrop": [
+        0,
+        0,
+        2213,
+        711
+      ],
+      "visibleCrop": [
+        206,
+        0,
+        2045,
+        682
+      ],
+      "output": "runs/day46/assets/visual-03-tools.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1839,
+        682
+      ],
+      "offset": [
+        480,
+        109
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day46/source/visual-04-mobility.png",
+      "sourceSize": [
+        2212,
+        711
+      ],
+      "sourceSha256": "a303e7b4444aca42b2dfa4887f016867d14edfd397f361a3e3d51dd9bd664b47",
+      "reviewedCrop": [
+        0,
+        0,
+        2212,
+        711
+      ],
+      "visibleCrop": [
+        69,
+        12,
+        2192,
+        638
+      ],
+      "output": "runs/day46/assets/visual-04-mobility.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        2123,
+        626
+      ],
+      "offset": [
+        338,
+        137
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day46/source/visual-05-timing.png",
+      "sourceSize": [
+        2207,
+        712
+      ],
+      "sourceSha256": "0ec7c4d42e2d4aac3106eecd17a3e79136b1565b9f9c0e87fbe50caf6d22e072",
+      "reviewedCrop": [
+        0,
+        0,
+        2207,
+        712
+      ],
+      "visibleCrop": [
+        74,
+        13,
+        2129,
+        665
+      ],
+      "output": "runs/day46/assets/visual-05-timing.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        2055,
+        652
+      ],
+      "offset": [
+        372,
+        124
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day46/source/visual-06-safety.png",
+      "sourceSize": [
+        2210,
+        711
+      ],
+      "sourceSha256": "2e2975f6bad2983f9af195a91a45f7b487fb20039430442deb9e364d6a5a978d",
+      "reviewedCrop": [
+        0,
+        0,
+        2210,
+        711
+      ],
+      "visibleCrop": [
+        588,
+        7,
+        1768,
+        700
+      ],
+      "output": "runs/day46/assets/visual-06-safety.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1180,
+        693
+      ],
+      "offset": [
+        810,
+        103
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day46/source/overview-01-mechanism.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "1f0313670f45ed3942e8daf0303ad29ef9188fa23349d2f745f2138cd3bbb349",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        42,
+        114,
+        1405,
+        943
+      ],
+      "output": "runs/day46/assets/overview-01-mechanism.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1363,
+        829
+      ],
+      "offset": [
+        118,
+        185
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day46/source/overview-02-roller.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "d49f9ef1aa5a873347b207293969fa846ae6bac97db9745482594cc1db1c0f6e",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        30,
+        91,
+        1403,
+        979
+      ],
+      "output": "runs/day46/assets/overview-02-roller.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1373,
+        888
+      ],
+      "offset": [
+        113,
+        156
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day46/source/overview-03-tools.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "b5b73a8a30c9d5db0207e760ec66e8b3a9a740180825a5411ef3a06ee3b6a6ea",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        241,
+        0,
+        1293,
+        1075
+      ],
+      "output": "runs/day46/assets/overview-03-tools.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1033,
+        1056
+      ],
+      "offset": [
+        283,
+        72
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day46/source/overview-04-mobility.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "52270666095779974c6d336d87a7cfc0b1c82b9948ec18bb5d3dd8cb2dc2d695",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        150,
+        1,
+        1369,
+        1071
+      ],
+      "output": "runs/day46/assets/overview-04-mobility.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1203,
+        1056
+      ],
+      "offset": [
+        198,
+        72
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day46/source/overview-05-timing.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "a69fb066ada2ed8d62dec76459f729884ba95409c79f4c3bfd1a7df860dd56c1",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        121,
+        23,
+        1372,
+        1014
+      ],
+      "output": "runs/day46/assets/overview-05-timing.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1251,
+        991
+      ],
+      "offset": [
+        174,
+        104
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    },
+    {
+      "source": "runs/day46/source/overview-06-safety.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "47d71153e97f3fa99bb5a8a02c3bd76ed6f087561b96366e04e59ad8ca0da237",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        140,
+        9,
+        1317,
+        1060
+      ],
+      "output": "runs/day46/assets/overview-06-safety.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1177,
+        1051
+      ],
+      "offset": [
+        211,
+        74
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": ""
+    }
+  ]
+}

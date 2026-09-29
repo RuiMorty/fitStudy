@@ -1,0 +1,20 @@
+{
+  "provider": "Lingzhi",
+  "preset": "quality",
+  "model": "gpt-image-2.5-sunburst",
+  "authorization": "runs/day49/authorization.json",
+  "startedAt": "2026-09-28T10:25:59.696811+00:00",
+  "attempts": [
+    {
+      "file": "cover.png",
+      "role": "cover",
+      "startedAt": "2026-09-28T10:25:59.697341+00:00",
+      "status": "failed-no-retry",
+      "output": "runs/day49/source/cover.png",
+      "completedAt": "2026-09-28T10:25:59.800197+00:00",
+      "returncode": 1,
+      "errorSummary": "The authorized Lingzhi request returned no usable local PNG; no retry was sent."
+    }
+  ],
+  "status": "failed-no-retry"
+}

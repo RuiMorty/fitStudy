@@ -1,0 +1,85 @@
+{
+  "status": "failed-no-retry",
+  "day": 47,
+  "templateApproved": true,
+  "templateApprovedAt": "2026-09-17T01:53:12.356699+00:00",
+  "templateApprovalMessage": "确认，检验完毕",
+  "templateApprovedFromDay": 40,
+  "publishApproved": false,
+  "startedAt": "2026-09-23T10:04:16Z",
+  "input": "runs/day47/lesson.json",
+  "output": "xhs/day47",
+  "previousDraft": {
+    "day": 46,
+    "status": "published",
+    "review": "runs/day46/release/status.json",
+    "publicLearningUrl": "https://fitstudy.cn/go/46/"
+  },
+  "artifactStatus": "blocked-invalid-programming-overview-image",
+  "userReviewStatus": "not-submitted",
+  "note": "2026-09-26 用户授权最多五次重试后，overview-05-reactive.png 的第 1 次重试已通过真透明和构图检查；未使用其余四次。overview-06-programming.png 的首次灵智请求返回了嵌入灰白棋盘格、无 alpha 通道的 PNG，不能作为交付素材；该请求不自动重试，尚未预处理、渲染、安装或发布。",
+  "imageStyleSpecification": "templates/study/v1/image-style.md",
+  "imageStylePreset": "templates/study/v1/image-style.json",
+  "nextLessonStarted": true,
+  "nextExpectedDay": 47,
+  "layoutRevision": "xhs-layout-20260921-v3",
+  "templateRevisionApproved": true,
+  "currentRevision": "initial-saq-draft",
+  "releaseStatus": "not-started",
+  "serverDeployed": false,
+  "publicVerification": "not-applicable",
+  "lastCheckpointAt": "2026-09-26T18:03:12+08:00",
+  "previousFailure": {
+    "file": "overview-04-cut.png",
+    "role": "overview-item",
+    "status": "failed-no-retry",
+    "record": "runs/day47/failure.json",
+    "nextAction": "原失败素材已由用户授权的一笔新请求补齐；历史记录保留。"
+  },
+  "priorFailure": {
+    "file": "overview-05-reactive.png",
+    "role": "overview-item",
+    "status": "failed-no-retry",
+    "record": "runs/day47/failure-20260924-reactive-alpha.json",
+    "nextAction": "已由 2026-09-26 的一笔新请求取代；原失败文件与记录保留。"
+  },
+  "failure": {
+    "file": "overview-06-programming.png",
+    "role": "overview-item",
+    "status": "failed-no-retry",
+    "record": "runs/day47/failure-20260926-programming-alpha.json",
+    "nextAction": "等待用户明确授权一笔改写透明输出约束的修订请求；不得自动重试。"
+  },
+  "acceptedReplacement": {
+    "file": "overview-05-reactive.png",
+    "record": "runs/day47/retry-reactive-20260926/attempt-01.json",
+    "status": "accepted",
+    "remainingRetries": 4
+  },
+  "resume": {
+    "authorization": "runs/day47/retry-reactive-20260926/authorization.json",
+    "record": "runs/day47/retry-reactive-20260926/attempt-01.json",
+    "asset": "overview-05-reactive.png",
+    "status": "accepted"
+  },
+  "contentReview": "runs/day47/lesson.json",
+  "imagePrompts": "runs/day47/image-prompts.json",
+  "imageStyleDirectionApproved": true,
+  "imagesAccepted": false,
+  "plannedArtifacts": {
+    "html": "html/day47-速度敏捷SAQ训练.html",
+    "thumbnail": "html/thumbs/day47-speed-agility-saq-thumbnail.png",
+    "detail": "html/assets/阶段2训练科学/day47-速度敏捷SAQ训练.png",
+    "xhs": "xhs/day47",
+    "archive": "xhs/day47/day47-xhs.zip"
+  },
+  "reviewFocus": [
+    "加速、较高速度和减速三段姿态是否清楚，且脚、锥桶与人物全身完整。",
+    "减速变向图是否表现先制动、髋膝缓冲和稳定支撑，而不是突然扭转或膝内扣。",
+    "反应信号、场地安全和短距离高质量重复是否在图文中容易理解。"
+  ],
+  "imageProgress": {
+    "generated": 12,
+    "planned": 13
+  }
+}

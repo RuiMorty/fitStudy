@@ -1,0 +1,413 @@
+{
+  "schemaVersion": "1.0",
+  "updatedAt": "2026-09-27",
+  "purpose": "错题检索索引。每条记录是一个可独立搜索、复习或出图的知识点；图片只作来源，不替代本文件中的题干与结论。",
+  "records": [
+    {
+      "id": "wn-20260920-01",
+      "date": "2026-09-20",
+      "category": ["骨骼系统", "躯干骨"],
+      "question": "胸廓由什么构成？",
+      "answer": "胸廓由12个胸椎、12对肋和胸骨构成。",
+      "keywords": ["胸廓", "胸椎", "肋", "胸骨"],
+      "source": "2026-09-20-anatomy/01-thoracic-cage.png",
+      "visualStatus": "existing"
+    },
+    {
+      "id": "wn-20260920-02",
+      "date": "2026-09-20",
+      "category": ["肌肉系统", "腹壁肌"],
+      "question": "腹外斜肌和腹内斜肌的肌纤维方向如何区分？",
+      "answer": "腹外斜肌为外上向内下；腹内斜肌为外下向内上，可用“内同外反”记忆。",
+      "keywords": ["腹斜肌", "腹外斜肌", "腹内斜肌", "肌纤维方向", "内同外反"],
+      "source": "2026-09-20-anatomy/02-oblique-muscles.png",
+      "visualStatus": "existing"
+    },
+    {
+      "id": "wn-20260920-03",
+      "date": "2026-09-20",
+      "category": ["肌肉系统", "背肌"],
+      "question": "背浅层肌包括哪些代表性肌肉？",
+      "answer": "图中归纳为斜方肌、背阔肌、肩胛提肌和菱形肌。",
+      "keywords": ["背浅层肌", "斜方肌", "背阔肌", "肩胛提肌", "菱形肌"],
+      "source": "2026-09-20-anatomy/03-superficial-back-muscles.png",
+      "visualStatus": "existing"
+    },
+    {
+      "id": "wn-20260920-04",
+      "date": "2026-09-20",
+      "category": ["肌肉系统", "髋关节"],
+      "question": "臀中肌在哪里，主要做什么？",
+      "answer": "臀中肌位于臀大肌深面，主要使髋关节外展；单脚支撑时帮助稳定骨盆。",
+      "keywords": ["臀中肌", "臀大肌深面", "髋外展", "单脚支撑", "骨盆稳定"],
+      "source": "2026-09-20-anatomy/04-gluteus-medius.png",
+      "visualStatus": "existing"
+    },
+    {
+      "id": "wn-20260920-05",
+      "date": "2026-09-20",
+      "category": ["肌肉系统", "髋关节"],
+      "question": "髂腰肌的拮抗肌是什么？",
+      "answer": "髂腰肌主要屈髋，臀大肌主要伸髋，因此臀大肌是其主要拮抗肌。",
+      "keywords": ["髂腰肌", "臀大肌", "拮抗肌", "髋屈", "髋伸"],
+      "source": "2026-09-20-anatomy/05-iliopsoas-gluteus-maximus.png",
+      "visualStatus": "existing"
+    },
+    {
+      "id": "wn-20260920-06",
+      "date": "2026-09-20",
+      "category": ["呼吸系统", "循环系统"],
+      "question": "肺循环的血流路径和血液性质是什么？",
+      "answer": "右心室→肺动脉（静脉血）→肺毛细血管→肺静脉（动脉血）→左心房。",
+      "keywords": ["肺循环", "右心室", "肺动脉", "肺静脉", "左心房", "静脉血", "动脉血"],
+      "source": "2026-09-20-anatomy/06-pulmonary-circulation.png",
+      "visualStatus": "existing"
+    },
+    {
+      "id": "wn-20260920-07",
+      "date": "2026-09-20",
+      "category": ["呼吸系统", "肺"],
+      "question": "肺的结构单位和气体交换功能单位分别是什么？",
+      "answer": "肺小叶是结构单位；肺泡是气体交换的功能单位。",
+      "keywords": ["肺小叶", "肺泡", "结构单位", "功能单位", "气体交换"],
+      "source": "2026-09-20-anatomy/07-lung-units.png",
+      "visualStatus": "existing"
+    },
+    {
+      "id": "wn-20260920-08",
+      "date": "2026-09-20",
+      "category": ["人体组成", "组织"],
+      "question": "不同人体组织的含水量如何比较？",
+      "answer": "图示：血浆约90%–92%，肌肉约75%–80%，神经组织/脑约70%–75%，皮肤约60%–70%，骨约20%–30%，脂肪约10%–15%。",
+      "keywords": ["组织含水量", "血浆", "肌肉", "脑", "皮肤", "骨", "脂肪"],
+      "source": "2026-09-20-anatomy/08-water-content.png",
+      "visualStatus": "existing"
+    },
+    {
+      "id": "wn-20260921-01",
+      "date": "2026-09-21",
+      "category": ["组织学", "肌肉系统"],
+      "question": "肌组织分为哪三类？",
+      "answer": "骨骼肌、心肌和平滑肌。",
+      "keywords": ["肌组织", "骨骼肌", "心肌", "平滑肌"],
+      "source": "2026-09-21-anatomy/labeled-prompts.json#01-muscle-tissue-labeled",
+      "visualStatus": "existing"
+    },
+    {
+      "id": "wn-20260921-02",
+      "date": "2026-09-21",
+      "category": ["血液", "人体组成"],
+      "question": "血浆约占全血多少？",
+      "answer": "约50%–60%，常记为约55%。",
+      "keywords": ["血浆", "全血", "55%"],
+      "source": "2026-09-21-anatomy/labeled-prompts.json#02-plasma-labeled",
+      "visualStatus": "existing"
+    },
+    {
+      "id": "wn-20260921-03",
+      "date": "2026-09-21",
+      "category": ["关节", "膝关节"],
+      "question": "膝关节由哪些骨构成？",
+      "answer": "股骨下端、胫骨上端和髌骨；腓骨不参与膝关节构成。",
+      "keywords": ["膝关节", "股骨", "胫骨", "髌骨", "腓骨"],
+      "source": "2026-09-21-anatomy/labeled-prompts.json#03-knee-joint-labeled",
+      "visualStatus": "existing"
+    },
+    {
+      "id": "wn-20260921-04",
+      "date": "2026-09-21",
+      "category": ["关节", "上肢带"],
+      "question": "上肢带运动主要表现为什么？",
+      "answer": "主要是肩胛骨的上提、下沉、前伸、后缩、上旋和下旋。",
+      "keywords": ["上肢带", "肩胛骨", "上提", "下沉", "前伸", "后缩", "上旋", "下旋"],
+      "source": "2026-09-21-anatomy/labeled-prompts.json#04-scapular-movement-labeled",
+      "visualStatus": "existing"
+    },
+    {
+      "id": "wn-20260921-05",
+      "date": "2026-09-21",
+      "category": ["肌肉系统", "髋关节"],
+      "question": "哪些肌肉属于盆带肌群？",
+      "answer": "髂腰肌、梨状肌和臀大肌属于本题归纳的盆带肌群；耻骨肌不属于该组。",
+      "keywords": ["盆带肌", "髂腰肌", "梨状肌", "臀大肌", "耻骨肌"],
+      "source": "2026-09-21-anatomy/labeled-prompts.json#05-pelvic-girdle-muscles-labeled",
+      "visualStatus": "existing"
+    },
+    {
+      "id": "wn-20260921-06",
+      "date": "2026-09-21",
+      "category": ["关节", "骨盆"],
+      "question": "下肢带有哪些主要关节？",
+      "answer": "骶髂关节和耻骨联合。",
+      "keywords": ["下肢带", "骶髂关节", "耻骨联合"],
+      "source": "2026-09-21-anatomy/labeled-prompts.json#06-pelvic-joints-labeled",
+      "visualStatus": "existing"
+    },
+    {
+      "id": "wn-20260921-07",
+      "date": "2026-09-21",
+      "category": ["肌肉系统", "髋关节"],
+      "question": "髂腰肌如何与脊柱连接？",
+      "answer": "腰大肌起自T12–L5，髂肌与其共同汇合，止于股骨小转子。",
+      "keywords": ["髂腰肌", "腰大肌", "髂肌", "T12", "L5", "股骨小转子"],
+      "source": "2026-09-21-anatomy/labeled-prompts.json#07-iliopsoas-origin-labeled",
+      "visualStatus": "existing"
+    },
+    {
+      "id": "wn-20260921-08",
+      "date": "2026-09-21",
+      "category": ["骨骼系统", "脊柱"],
+      "question": "人体有多少个椎间盘？",
+      "answer": "23个：颈椎6个、胸椎12个、腰椎5个。",
+      "keywords": ["椎间盘", "23个", "颈椎", "胸椎", "腰椎"],
+      "source": "2026-09-21-anatomy/labeled-prompts.json#08-intervertebral-discs-labeled",
+      "visualStatus": "existing"
+    },
+    {
+      "id": "wn-20260921-09",
+      "date": "2026-09-21",
+      "category": ["肌肉系统", "肩关节"],
+      "question": "肱二头肌两头分别起自哪里？",
+      "answer": "长头起自肩胛骨盂上结节；短头起自肩胛骨喙突。",
+      "keywords": ["肱二头肌", "长头", "短头", "盂上结节", "喙突"],
+      "source": "2026-09-21-anatomy/labeled-prompts.json#09-biceps-origins-labeled",
+      "visualStatus": "existing"
+    },
+    {
+      "id": "wn-20260921-10",
+      "date": "2026-09-21",
+      "category": ["关节", "肩关节"],
+      "question": "肩关节盂唇是什么？",
+      "answer": "附着于关节盂周缘的纤维软骨环，可加深关节盂并与肱二头肌长头腱相关。",
+      "keywords": ["盂唇", "肩关节", "关节盂", "纤维软骨", "肱二头肌长头腱"],
+      "source": "2026-09-21-anatomy/labeled-prompts.json#10-glenoid-labrum-labeled",
+      "visualStatus": "existing"
+    },
+    {
+      "id": "wn-20260922-01",
+      "date": "2026-09-22",
+      "category": ["关节运动", "踝关节"],
+      "question": "下行和提踵时，踝关节分别做什么动作？",
+      "answer": "下行时踝背屈；提踵向上时踝跖屈。图中同时关联股直肌屈髋和缝匠肌屈髋、外展、外旋。",
+      "keywords": ["下行", "提踵", "踝背屈", "踝跖屈", "股直肌", "缝匠肌"],
+      "source": "2026-09-22-joint-actions/01-下行踝关节背屈-修订.png",
+      "visualStatus": "existing"
+    },
+    {
+      "id": "wn-20260922-02",
+      "date": "2026-09-22",
+      "category": ["训练动作", "肘关节"],
+      "question": "窄握杠铃仰卧臂屈伸的主动作、主要肌肉和观察重点是什么？",
+      "answer": "主动作是肘关节伸，主要肌肉是肱三头肌；窄握不等于腕关节外展，应看肘关节轨迹和腕部中立稳定。",
+      "keywords": ["窄握杠铃仰卧臂屈伸", "肘伸", "肱三头肌", "腕关节", "腕中立"],
+      "source": "2026-09-22-joint-actions/02-窄握杠铃仰卧臂屈伸-修订.png",
+      "visualStatus": "existing"
+    },
+    {
+      "id": "wn-20260922-03",
+      "date": "2026-09-22",
+      "category": ["关节", "上肢带", "踝关节"],
+      "question": "上肢带、肘和踝的构成及主要运动如何区分？",
+      "answer": "上肢带关节=胸锁关节+肩锁关节，功能上有肩胛胸廓关节；肘为复合关节；踝由胫腓骨下端形成踝穴并与距骨滑车构成。",
+      "keywords": ["上肢带关节", "胸锁关节", "肩锁关节", "肩胛胸廓关节", "肘关节", "踝关节", "距骨"],
+      "source": "2026-09-22-joint-actions/03-关节构成速记-修订.png",
+      "visualStatus": "existing"
+    },
+    {
+      "id": "wn-20260922-04",
+      "date": "2026-09-22",
+      "category": ["关节运动", "肩关节"],
+      "question": "肩关节有哪些基本动作，怎样与前臂旋前旋后区分？",
+      "answer": "肩关节有屈伸、外展内收、水平内收/外展、内旋外旋；旋前旋后是前臂运动，不能与肩关节内外旋混同。",
+      "keywords": ["肩关节", "屈伸", "外展", "内收", "水平内收", "水平外展", "内旋", "外旋", "旋前", "旋后"],
+      "source": "2026-09-22-joint-actions/04-肩关节动作地图-修订.png",
+      "visualStatus": "existing"
+    },
+    {
+      "id": "wn-20260922-05",
+      "date": "2026-09-22",
+      "category": ["肌肉系统", "脊柱"],
+      "question": "多裂肌在哪里；短肌与长肌的功能倾向如何比较？",
+      "answer": "多裂肌位于脊柱两侧深层，参与稳定、伸展和旋转控制；短肌跨节段少、贴近脊柱，偏局部稳定，长肌跨节段多，偏动力输出。",
+      "keywords": ["多裂肌", "脊柱深层肌", "短肌", "长肌", "局部稳定", "动力输出"],
+      "source": "2026-09-22-joint-actions/05-多裂肌与短肌长肌对比-修订.png",
+      "visualStatus": "existing"
+    },
+    {
+      "id": "wn-20260923-01",
+      "date": "2026-09-23",
+      "category": ["肌肉系统", "背肌"],
+      "question": "背部深层肌的定位与核心作用是什么？",
+      "answer": "背部深层肌不只多裂肌。常见分组有夹肌、竖脊肌、横突棘肌与节段短肌；竖脊肌包括髂肋肌、最长肌、棘肌，主要伸展脊柱、维持姿势；多裂肌属于横突棘肌，重在椎间稳定。",
+      "keywords": ["背部深层肌", "背深层肌", "夹肌", "竖脊肌", "髂肋肌", "最长肌", "棘肌", "横突棘肌", "多裂肌", "节段短肌", "椎间稳定", "脊柱伸展"],
+      "source": "2026-09-23-anatomy-basics/today-analysis.md#01",
+      "image": "2026-09-23-anatomy-basics/images/01-背部深层肌.png",
+      "visualStatus": "awaiting-user-review"
+    },
+    {
+      "id": "wn-20260923-02",
+      "date": "2026-09-23",
+      "category": ["肌肉系统", "髋关节", "骨盆"],
+      "question": "大收肌在近固定和远固定时分别有什么作用？“近固定时双侧收缩使骨盆后倾”对吗？",
+      "answer": "近固定时主要使大腿内收，前部可助屈髋、后部可助伸髋；骨盆动作要以下肢/股骨固定为前提。将“近固定时使骨盆后倾”判为错误。",
+      "keywords": ["大收肌", "近固定", "远固定", "骨盆前倾", "骨盆后倾", "髋内收"],
+      "source": "2026-09-23-anatomy-basics/today-analysis.md#02",
+      "image": "2026-09-23-anatomy-basics/images/02-大收肌-固定端决定谁动.png",
+      "visualStatus": "awaiting-user-review"
+    },
+    {
+      "id": "wn-20260923-03",
+      "date": "2026-09-23",
+      "category": ["肌肉系统", "肘关节", "前臂"],
+      "question": "旋前圆肌有屈肘功能吗？",
+      "answer": "有。旋前是主功能，屈肘是其辅助功能，不能当作主要屈肘肌。",
+      "keywords": ["旋前圆肌", "旋前", "屈肘", "前臂", "肘关节"],
+      "source": "2026-09-23-anatomy-basics/today-analysis.md#03",
+      "image": "2026-09-23-anatomy-basics/images/03-上肢定位地图.png",
+      "visualStatus": "awaiting-user-review"
+    },
+    {
+      "id": "wn-20260923-04",
+      "date": "2026-09-23",
+      "category": ["韧带", "肩关节"],
+      "question": "横韧带和喙肩韧带中，哪个将肱二头肌长头腱固定在结节间沟？",
+      "answer": "横肱韧带固定肱二头肌长头腱于肱骨结节间沟；喙肩韧带构成喙肩弓，不承担该固定作用。",
+      "keywords": ["横肱韧带", "横韧带", "喙肩韧带", "肱二头肌长头腱", "结节间沟", "喙肩弓"],
+      "source": "2026-09-23-anatomy-basics/today-analysis.md#04",
+      "image": "2026-09-23-anatomy-basics/images/03-上肢定位地图.png",
+      "visualStatus": "awaiting-user-review"
+    },
+    {
+      "id": "wn-20260923-05",
+      "date": "2026-09-23",
+      "category": ["关节", "腕关节"],
+      "question": "桡腕关节和腕骨间关节分别在哪里？",
+      "answer": "桡腕关节位于桡骨远端和关节盘与舟骨、月骨、三角骨近端之间；腕骨间关节位于相邻腕骨之间，腕中关节则在近、远两列腕骨之间。",
+      "keywords": ["桡腕关节", "腕骨间关节", "腕中关节", "舟骨", "月骨", "三角骨", "桡骨远端"],
+      "source": "2026-09-23-anatomy-basics/today-analysis.md#05",
+      "image": "2026-09-23-anatomy-basics/images/03-上肢定位地图.png",
+      "visualStatus": "awaiting-user-review"
+    },
+    {
+      "id": "wn-20260923-06",
+      "date": "2026-09-23",
+      "category": ["肌肉系统", "小腿"],
+      "question": "小腿骨骼肌如何按前、外侧、后群及功能划分？",
+      "answer": "前群主要背屈踝、伸趾；外侧群以足外翻为主；后群主要跖屈踝、屈趾。该分群是正确的总括，具体肌还可有协同作用。",
+      "keywords": ["小腿肌", "前群", "外侧群", "后群", "背屈", "跖屈", "足外翻", "伸趾", "屈趾"],
+      "source": "2026-09-23-anatomy-basics/today-analysis.md#06",
+      "image": "2026-09-23-anatomy-basics/images/04-小腿三群与腓肠肌.png",
+      "visualStatus": "awaiting-user-review"
+    },
+    {
+      "id": "wn-20260923-07",
+      "date": "2026-09-23",
+      "category": ["肌肉系统", "小腿", "膝关节"],
+      "question": "腓肠肌既能屈膝又能使踝关节伸吗？",
+      "answer": "对。腓肠肌跨膝、踝两关节，可屈膝，也可使足跖屈（教材常称踝关节伸）。",
+      "keywords": ["腓肠肌", "屈膝", "跖屈", "踝关节伸", "双关节肌"],
+      "source": "2026-09-23-anatomy-basics/today-analysis.md#07",
+      "image": "2026-09-23-anatomy-basics/images/04-小腿三群与腓肠肌.png",
+      "visualStatus": "awaiting-user-review"
+    },
+    {
+      "id": "wn-20260923-08",
+      "date": "2026-09-23",
+      "category": ["骨组织", "组织学"],
+      "question": "“骨外膜内没有成骨细胞和破骨细胞”为什么错误？骨内膜和骨原细胞是什么？",
+      "answer": "骨膜内层为成骨层，含骨原细胞和成骨细胞；骨表面重塑处可见破骨细胞。骨内膜衬于髓腔、骨小梁和骨管内表面，也参与骨改建。骨原细胞可分化为成骨细胞；破骨细胞不来源于骨原细胞。",
+      "keywords": ["骨膜", "骨外膜", "骨内膜", "骨原细胞", "成骨细胞", "破骨细胞", "骨改建"],
+      "source": "2026-09-23-anatomy-basics/today-analysis.md#08",
+      "image": "2026-09-23-anatomy-basics/images/05-骨膜-骨内膜与骨细胞.png",
+      "visualStatus": "awaiting-user-review"
+    },
+    {
+      "id": "wn-20260923-09",
+      "date": "2026-09-23",
+      "category": ["肌肉系统", "肌肉形态"],
+      "question": "什么是羽状肌？",
+      "answer": "羽状肌的肌纤维斜向附着于肌腱，形似羽毛；单羽肌可记伸趾长肌，双羽肌可记股直肌，多羽肌可记三角肌。与之对照的平行肌可记缝匠肌。",
+      "keywords": ["羽状肌", "单羽肌", "双羽肌", "多羽肌", "平行肌", "缝匠肌", "伸趾长肌", "股直肌", "三角肌", "肌纤维", "肌腱", "力量"],
+      "source": "2026-09-23-anatomy-basics/today-analysis.md#09",
+      "image": "2026-09-23-anatomy-basics/images/06-羽状肌.png",
+      "visualStatus": "awaiting-user-review"
+    },
+    {
+      "id": "wn-20260923-10",
+      "date": "2026-09-23",
+      "category": ["呼吸系统"],
+      "question": "呼吸系统由什么组成？",
+      "answer": "考试常规答法：呼吸道和肺。按功能还可分为导气部与呼吸部；膈肌、肋间肌等是通气动力，不替代该组成答案。",
+      "keywords": ["呼吸系统", "呼吸道", "肺", "导气部", "呼吸部", "呼吸肌"],
+      "source": "2026-09-23-anatomy-basics/today-analysis.md#10",
+      "image": "2026-09-23-anatomy-basics/images/07-呼吸系统与骨连结.png",
+      "visualStatus": "awaiting-user-review"
+    },
+    {
+      "id": "wn-20260923-11",
+      "date": "2026-09-23",
+      "category": ["骨骼系统", "骨连结"],
+      "question": "骨连结怎样按连结组织、方式和活动情况分类？",
+      "answer": "直接连结无腔隙，包括纤维连结、软骨连结和骨性结合；间接连结即关节，有关节腔；半关节为由直接连结向关节过渡的形式，出现裂隙样腔隙而活动很小。",
+      "keywords": ["骨连结", "直接连结", "间接连结", "无腔隙", "关节腔", "半关节", "纤维连结", "软骨连结", "骨性结合"],
+      "source": "2026-09-23-anatomy-basics/today-analysis.md#11",
+      "image": "2026-09-23-anatomy-basics/images/07-呼吸系统与骨连结.png",
+      "visualStatus": "awaiting-user-review"
+    },
+    {
+      "id": "wn-20260924-01",
+      "date": "2026-09-24",
+      "category": ["骨骼系统", "髋骨"],
+      "question": "“髋骨由坐骨、耻骨和骶骨组成”对吗？",
+      "answer": "不对。一块髋骨由髂骨、坐骨和耻骨组成；骶骨不属于一侧髋骨。",
+      "keywords": ["髋骨", "髂骨", "坐骨", "耻骨", "骶骨", "髋臼"],
+      "source": "2026-09-24-anatomy-basics/today-analysis.md#01",
+      "image": "2026-09-24-anatomy-basics/images/01-髋骨与骨盆.png",
+      "visualStatus": "awaiting-user-review"
+    },
+    {
+      "id": "wn-20260924-02",
+      "date": "2026-09-24",
+      "category": ["骨骼系统", "骨盆"],
+      "question": "骨盆由什么组成？",
+      "answer": "骨盆由左右两块髋骨、骶骨和尾骨组成。髋骨只是骨盆的组成部分。",
+      "keywords": ["骨盆", "髋骨", "骶骨", "尾骨", "左右髋骨"],
+      "source": "2026-09-24-anatomy-basics/today-analysis.md#02",
+      "image": "2026-09-24-anatomy-basics/images/01-髋骨与骨盆.png",
+      "visualStatus": "awaiting-user-review"
+    },
+    {
+      "id": "wn-20260924-03",
+      "date": "2026-09-24",
+      "category": ["肌肉系统", "肩带肌", "肩关节"],
+      "question": "肩带肌位于哪里，起点和止点有什么关系？",
+      "answer": "肩带肌不是一块肌，而是一组跨越肩关节的肌：三角肌、冈上肌、冈下肌、小圆肌、大圆肌、肩胛下肌。六块肌的起止点不完全相同：三角肌涉及锁骨外侧1/3、肩峰和肩胛冈；其余5块主要起自肩胛骨不同部位，分别止于肱骨的不同骨性标志。",
+      "keywords": ["肩带肌", "锁骨", "肩胛骨", "肱骨", "三角肌", "冈上肌", "冈下肌", "小圆肌", "大圆肌", "肩胛下肌", "肩关节"],
+      "source": "2026-09-24-anatomy-basics/today-analysis.md#03",
+      "image": "2026-09-24-anatomy-basics/images/04-肩带肌逐块起止点.png",
+      "visualStatus": "awaiting-user-review"
+    },
+    {
+      "id": "wn-20260924-04",
+      "date": "2026-09-24",
+      "category": ["关节", "肩关节"],
+      "question": "肩关节由什么组成？",
+      "answer": "肩关节由肩胛骨的关节盂和肱骨头构成；盂唇可加深关节盂。",
+      "keywords": ["肩关节", "关节盂", "肱骨头", "盂唇", "肩胛骨"],
+      "source": "2026-09-24-anatomy-basics/today-analysis.md#04",
+      "image": "2026-09-24-anatomy-basics/images/02-肩带肌与肩关节.png",
+      "visualStatus": "awaiting-user-review"
+    },
+    {
+      "id": "wn-20260924-05",
+      "date": "2026-09-24",
+      "category": ["神经系统", "组织学"],
+      "question": "胞体、树突、轴突、神经元和神经纤维分别是什么，有何关系？",
+      "answer": "神经元由胞体和突起组成；树突主要接收信息，轴突主要传出信息。神经纤维主要是轴突及其周围包裹结构，不是完整神经元。",
+      "keywords": ["神经元", "胞体", "树突", "轴突", "神经纤维", "髓鞘", "神经胶质细胞"],
+      "source": "2026-09-24-anatomy-basics/today-analysis.md#05",
+      "image": "2026-09-24-anatomy-basics/images/03-神经元与神经纤维.png",
+      "visualStatus": "awaiting-user-review"
+    }
+  ]
+}

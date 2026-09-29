@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2160" height="3840" viewBox="0 0 2160 3840">
+  <defs>
+    <filter id="shadow" x="-15%" y="-15%" width="130%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#183247" flood-opacity=".12"/>
+    </filter>
+    <linearGradient id="header" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#12334A"/>
+      <stop offset="1" stop-color="#235D74"/>
+    </linearGradient>
+    <style>
+      .cn { font-family: 'PingFang SC','Noto Sans CJK SC','Microsoft YaHei',sans-serif; }
+      .title { font-size: 100px; font-weight: 800; fill: #FFFFFF; letter-spacing: 3px; }
+      .subtitle { font-size: 38px; font-weight: 500; fill: #D7EEF0; letter-spacing: 1px; }
+      .cardq { font-size: 38px; font-weight: 750; fill: #17324A; }
+      .answer { font-size: 42px; font-weight: 800; fill: #08775D; }
+      .body { font-size: 32px; font-weight: 600; fill: #365166; }
+      .note { font-size: 27px; font-weight: 650; fill: #A65C19; }
+      .label { font-size: 25px; font-weight: 700; fill: #365166; }
+      .tiny { font-size: 22px; font-weight: 700; fill: #365166; }
+      .number { font-size: 28px; font-weight: 800; fill: #FFFFFF; }
+      .line { fill: none; stroke: #315168; stroke-width: 11; stroke-linecap: round; stroke-linejoin: round; }
+      .thin { fill: none; stroke: #315168; stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; }
+      .teal { fill: #43B6A5; stroke: #08775D; stroke-width: 9; stroke-linejoin: round; }
+      .orange { fill: #F7B55A; stroke: #D97C1A; stroke-width: 9; stroke-linejoin: round; }
+      .blue { fill: #8FC5E8; stroke: #34789C; stroke-width: 9; stroke-linejoin: round; }
+      .rose { fill: #EC9AA0; stroke: #B74F5C; stroke-width: 9; stroke-linejoin: round; }
+      .bone { fill: #F5E8C7; stroke: #315168; stroke-width: 9; stroke-linejoin: round; }
+      .disc { fill: #F7B55A; stroke: #B86A18; stroke-width: 7; }
+    </style>
+    <clipPath id="source01"><rect x="142" y="582" width="268" height="345" rx="32"/></clipPath>
+    <clipPath id="source02"><rect x="1154" y="582" width="268" height="345" rx="32"/></clipPath>
+    <clipPath id="source03"><rect x="142" y="1237" width="268" height="345" rx="32"/></clipPath>
+    <clipPath id="source04"><rect x="1154" y="1237" width="268" height="345" rx="32"/></clipPath>
+    <clipPath id="source05"><rect x="142" y="1892" width="268" height="345" rx="32"/></clipPath>
+    <clipPath id="source06"><rect x="1154" y="1892" width="268" height="345" rx="32"/></clipPath>
+    <clipPath id="source07"><rect x="142" y="2547" width="268" height="345" rx="32"/></clipPath>
+    <clipPath id="source08"><rect x="1154" y="2547" width="268" height="345" rx="32"/></clipPath>
+    <clipPath id="source09"><rect x="142" y="3202" width="268" height="345" rx="32"/></clipPath>
+    <clipPath id="source10"><rect x="1154" y="3202" width="268" height="345" rx="32"/></clipPath>
+  </defs>
+
+  <rect width="2160" height="3840" fill="#F7F5EF"/>
+  <rect x="0" y="0" width="2160" height="370" fill="url(#header)"/>
+  <circle cx="1900" cy="-62" r="270" fill="#65C7B8" opacity=".18"/>
+  <circle cx="2020" cy="185" r="120" fill="#F7B55A" opacity=".25"/>
+  <text class="cn title" x="110" y="155">今日错题复盘</text>
+  <text class="cn subtitle" x="114" y="225">运动解剖基础 · 10 个知识点 · 10 张对应示意图</text>
+  <rect x="110" y="275" width="820" height="54" rx="27" fill="#FFFFFF" opacity=".16"/>
+  <text class="cn subtitle" x="143" y="314" font-size="28px">看图定位 · 用完整答案替代选择题</text>
+
+  <!-- 01: muscle tissue -->
+  <g filter="url(#shadow)">
+    <rect x="90" y="440" width="968" height="620" rx="48" fill="#FFFFFF"/>
+    <rect x="90" y="440" width="968" height="76" rx="48" fill="#E8F7F4"/>
+    <circle cx="145" cy="478" r="25" fill="#08775D"/><text class="cn number" x="128" y="488">01</text>
+    <text class="cn cardq" x="193" y="491">人体肌组织分为哪三类？</text>
+    <rect x="142" y="582" width="268" height="345" rx="32" fill="#F4FAF8"/>
+    <g transform="translate(169 620)">
+      <rect x="0" y="0" width="204" height="60" rx="24" fill="#F3B4B5"/>
+      <path d="M15 16h172M15 31h172M15 46h172" stroke="#B74F5C" stroke-width="8" stroke-dasharray="12 7"/>
+      <rect x="0" y="98" width="204" height="60" rx="28" fill="#F7D26A"/>
+      <path d="M18 128 C45 101 65 153 92 128 S140 101 180 128" fill="none" stroke="#AF7C00" stroke-width="9"/>
+      <path d="M86 210 C112 172 157 180 165 218 C177 262 105 277 82 239 C59 200 47 166 22 186 C5 200 9 231 43 233" fill="#F08C95" stroke="#B74F5C" stroke-width="8"/>
+      <path d="M106 208v50M141 200v51" stroke="#B74F5C" stroke-width="6"/>
+      <text class="cn tiny" x="0" y="292">骨骼肌</text><text class="cn tiny" x="80" y="292">平滑肌</text><text class="cn tiny" x="155" y="292">心肌</text>
+    </g>
+    <text class="cn answer" x="464" y="628">骨骼肌 · 心肌 · 平滑肌</text>
+    <text class="cn body" x="464" y="693">骨骼肌：随意运动</text>
+    <text class="cn body" x="464" y="748">心肌：心脏特有</text>
+    <text class="cn body" x="464" y="803">平滑肌：内脏和血管壁</text>
+    <text class="cn note" x="464" y="875">记忆：三类中只有心肌分支相连</text>
+  </g>
+
+  <!-- 02: plasma -->
+  <g filter="url(#shadow)">
+    <rect x="1102" y="440" width="968" height="620" rx="48" fill="#FFFFFF"/>
+    <rect x="1102" y="440" width="968" height="76" rx="48" fill="#FFF4E5"/>
+    <circle cx="1157" cy="478" r="25" fill="#D97C1A"/><text class="cn number" x="1140" y="488">02</text>
+    <text class="cn cardq" x="1205" y="491">血浆约占全血多少？</text>
+    <rect x="1154" y="582" width="268" height="345" rx="32" fill="#FFFAF1"/>
+    <g transform="translate(1236 607)">
+      <path d="M0 0h104v220c0 37-24 58-52 58s-52-21-52-58z" fill="#FFFFFF" stroke="#315168" stroke-width="9"/>
+      <path d="M5 45h94v112H5z" fill="#F6D56E"/>
+      <path d="M5 157h94v64H5z" fill="#D95055"/>
+      <path d="M5 221h94c-3 34-21 52-47 52s-44-18-47-52" fill="#EFEAE1"/>
+      <path d="M0 45h104" stroke="#315168" stroke-width="6"/>
+      <path d="M0 157h104" stroke="#315168" stroke-width="6"/>
+      <text class="cn tiny" x="119" y="105">血浆</text><path d="M106 99h45" class="thin"/>
+      <text class="cn tiny" x="119" y="190">血细胞</text><path d="M106 184h45" class="thin"/>
+    </g>
+    <text class="cn answer" x="1476" y="645">约 55%</text>
+    <text class="cn body" x="1476" y="711">正常范围约为</text>
+    <text class="cn answer" x="1476" y="763">50%–60%</text>
+    <text class="cn body" x="1476" y="831">其余主要为血细胞</text>
+    <text class="cn note" x="1476" y="890">看到“血浆”先想：约一半多</text>
+  </g>
+
+  <!-- 03: knee -->
+  <g filter="url(#shadow)">
+    <rect x="90" y="1095" width="968" height="620" rx="48" fill="#FFFFFF"/>
+    <rect x="90" y="1095" width="968" height="76" rx="48" fill="#EDF4FF"/>
+    <circle cx="145" cy="1133" r="25" fill="#34789C"/><text class="cn number" x="128" y="1143">03</text>
+    <text class="cn cardq" x="193" y="1146">膝关节由哪些骨构成？</text>
+    <rect x="142" y="1237" width="268" height="345" rx="32" fill="#F5F9FF"/>
+    <g transform="translate(193 1262)">
+      <path d="M48 0 C8 42 17 113 50 133 L132 133 C163 112 170 42 131 0 Z" class="bone"/>
+      <path d="M57 151 C43 192 44 265 54 291 L126 291 C138 259 137 190 122 151 Z" class="bone"/>
+      <ellipse cx="91" cy="145" rx="31" ry="40" class="orange"/>
+      <path d="M137 167 C172 200 174 256 152 281" fill="none" stroke="#B4C0C8" stroke-width="20" stroke-linecap="round"/>
+      <text class="cn tiny" x="155" y="36">股骨</text><path d="M142 40h43" class="thin"/>
+      <text class="cn tiny" x="143" y="237">胫骨</text><path d="M133 230h48" class="thin"/>
+      <text class="cn tiny" x="-20" y="155">髌骨</text><path d="M38 149h-40" class="thin"/>
+      <text class="cn tiny" x="149" y="302" fill="#8A969E">腓骨</text>
+    </g>
+    <text class="cn answer" x="464" y="1290">股骨下端 · 胫骨上端 · 髌骨</text>
+    <text class="cn body" x="464" y="1356">这三者共同构成膝关节。</text>
+    <text class="cn note" x="464" y="1434">腓骨位于膝关节附近，</text>
+    <text class="cn note" x="464" y="1477">但不参与膝关节构成。</text>
+  </g>
+
+  <!-- 04: shoulder girdle -->
+  <g filter="url(#shadow)">
+    <rect x="1102" y="1095" width="968" height="620" rx="48" fill="#FFFFFF"/>
+    <rect x="1102" y="1095" width="968" height="76" rx="48" fill="#E8F7F4"/>
+    <circle cx="1157" cy="1133" r="25" fill="#08775D"/><text class="cn number" x="1140" y="1143">04</text>
+    <text class="cn cardq" x="1205" y="1146">上肢带运动主要表现为什么？</text>
+    <rect x="1154" y="1237" width="268" height="345" rx="32" fill="#F4FAF8"/>
+    <g transform="translate(1190 1260)">
+      <path d="M105 35 C50 32 26 73 38 137 C44 172 69 214 105 250 C142 214 166 172 172 137 C184 73 160 32 105 35 Z" fill="#D8E5E5" stroke="#315168" stroke-width="9"/>
+      <path d="M105 62 C67 91 75 160 104 201 C134 160 143 91 105 62 Z" class="teal"/>
+      <path d="M105 18v-27M105 267v27M19 142H-10M190 142h29" stroke="#D97C1A" stroke-width="12" stroke-linecap="round"/>
+      <path d="M105 -8 l-13 18h26zM105 294 l-13-18h26zM-7 142 l18-13v26zM218 142 l-18-13v26z" fill="#D97C1A"/>
+      <path d="M44 71 C20 98 20 187 44 215M166 71 C190 98 190 187 166 215" fill="none" stroke="#D97C1A" stroke-width="9" stroke-dasharray="10 11"/>
+    </g>
+    <text class="cn answer" x="1476" y="1282">肩胛骨的运动</text>
+    <text class="cn body" x="1476" y="1347">上提 · 下沉</text>
+    <text class="cn body" x="1476" y="1399">前伸 · 后缩</text>
+    <text class="cn body" x="1476" y="1451">上旋 · 下旋</text>
+    <text class="cn note" x="1476" y="1524">口诀：上肢带，看肩胛骨</text>
+  </g>
+
+  <!-- 05: pelvic girdle muscles -->
+  <g filter="url(#shadow)">
+    <rect x="90" y="1750" width="968" height="620" rx="48" fill="#FFFFFF"/>
+    <rect x="90" y="1750" width="968" height="76" rx="48" fill="#FFF0F1"/>
+    <circle cx="145" cy="1788" r="25" fill="#B74F5C"/><text class="cn number" x="128" y="1798">05</text>
+    <text class="cn cardq" x="193" y="1801">哪些肌肉属于盆带肌群？</text>
+    <rect x="142" y="1892" width="268" height="345" rx="32" fill="#FFF7F7"/>
+    <g transform="translate(182 1911)">
+      <path d="M69 5 C27 16 0 52 13 111 L40 193 C55 232 84 251 111 220 L132 194 L153 220 C180 251 209 232 224 193 L251 111 C264 52 237 16 195 5 L160 35 H104 Z" class="bone"/>
+      <path d="M45 79 C31 130 49 194 94 211 L102 130 C84 94 66 77 45 79 Z" class="rose"/>
+      <path d="M218 79 C232 130 214 194 169 211 L161 130 C179 94 197 77 218 79 Z" class="rose"/>
+      <path d="M113 34 C103 85 102 128 125 173 L142 173 C163 128 162 85 152 34 Z" class="teal"/>
+      <path d="M111 95 C81 73 67 52 69 30M153 95 C183 73 197 52 195 30" fill="none" stroke="#D97C1A" stroke-width="12"/>
+      <text class="cn tiny" x="-3" y="272">臀大肌</text><text class="cn tiny" x="85" y="300">髂腰肌</text><text class="cn tiny" x="172" y="272">梨状肌</text>
+    </g>
+    <text class="cn answer" x="464" y="1942">髂腰肌 · 梨状肌 · 臀大肌</text>
+    <text class="cn body" x="464" y="2010">题目中的三块盆带肌。</text>
+    <text class="cn note" x="464" y="2087">易错：耻骨肌不属于本题的</text>
+    <text class="cn note" x="464" y="2130">盆带肌群分类。</text>
+  </g>
+
+  <!-- 06: lower limb girdle joints -->
+  <g filter="url(#shadow)">
+    <rect x="1102" y="1750" width="968" height="620" rx="48" fill="#FFFFFF"/>
+    <rect x="1102" y="1750" width="968" height="76" rx="48" fill="#EDF4FF"/>
+    <circle cx="1157" cy="1788" r="25" fill="#34789C"/><text class="cn number" x="1140" y="1798">06</text>
+    <text class="cn cardq" x="1205" y="1801">下肢带有哪些主要关节？</text>
+    <rect x="1154" y="1892" width="268" height="345" rx="32" fill="#F5F9FF"/>
+    <g transform="translate(1192 1905)">
+      <path d="M103 0 L130 0 L150 66 L144 139 L130 210 L103 210 L89 139 L83 66 Z" class="bone"/>
+      <path d="M78 37 C28 50 11 88 25 142 L54 220 C67 257 92 268 113 231 L120 210 L136 231 C157 268 182 257 195 220 L224 142 C238 88 221 50 171 37 L151 63 H98 Z" class="bone"/>
+      <path d="M88 63 L104 112 L91 146" fill="none" stroke="#D97C1A" stroke-width="16"/>
+      <path d="M166 63 L150 112 L163 146" fill="none" stroke="#D97C1A" stroke-width="16"/>
+      <ellipse cx="128" cy="211" rx="17" ry="24" class="orange"/>
+      <text class="cn tiny" x="-20" y="151">骶髂关节</text><path d="M70 145H19" class="thin"/>
+      <text class="cn tiny" x="150" y="226">耻骨联合</text><path d="M146 218h-18" class="thin"/>
+    </g>
+    <text class="cn answer" x="1476" y="1947">骶髂关节</text>
+    <text class="cn body" x="1476" y="2012">左右各一处，连接骶骨</text>
+    <text class="cn body" x="1476" y="2064">与两侧髋骨。</text>
+    <text class="cn answer" x="1476" y="2136">耻骨联合</text>
+    <text class="cn note" x="1476" y="2193">原题正确选项：骶髂关节</text>
+  </g>
+
+  <!-- 07: iliopsoas -->
+  <g filter="url(#shadow)">
+    <rect x="90" y="2405" width="968" height="620" rx="48" fill="#FFFFFF"/>
+    <rect x="90" y="2405" width="968" height="76" rx="48" fill="#FFF4E5"/>
+    <circle cx="145" cy="2443" r="25" fill="#D97C1A"/><text class="cn number" x="128" y="2453">07</text>
+    <text class="cn cardq" x="193" y="2456">髂腰肌如何与脊柱连接？</text>
+    <rect x="142" y="2547" width="268" height="345" rx="32" fill="#FFFAF1"/>
+    <g transform="translate(188 2555)">
+      <path d="M97 0 v113" class="line"/>
+      <path d="M66 12h61M66 37h61M66 62h61M66 87h61M66 112h61" stroke="#315168" stroke-width="11"/>
+      <path d="M93 112 C58 137 53 178 79 211 C93 229 102 249 105 280" fill="none" stroke="#F08C95" stroke-width="28" stroke-linecap="round"/>
+      <path d="M82 138 C45 148 33 185 52 229 L83 273" fill="none" stroke="#F08C95" stroke-width="31" stroke-linecap="round"/>
+      <path d="M110 273 L150 305" class="line"/>
+      <circle cx="151" cy="306" r="16" class="orange"/>
+      <text class="cn tiny" x="125" y="31">T12</text><text class="cn tiny" x="130" y="111">L5</text>
+      <text class="cn tiny" x="4" y="173">腰大肌</text><path d="M52 170H31" class="thin"/>
+      <text class="cn tiny" x="155" y="330">股骨小转子</text>
+    </g>
+    <text class="cn answer" x="464" y="2602">腰大肌起自 T12–L5</text>
+    <text class="cn body" x="464" y="2667">它与髂肌汇合，形成髂腰肌。</text>
+    <text class="cn body" x="464" y="2722">共同止于股骨小转子。</text>
+    <text class="cn note" x="464" y="2804">题干说“与胸椎相连”时，</text>
+    <text class="cn note" x="464" y="2847">关键是腰大肌的 T12 起点。</text>
+  </g>
+
+  <!-- 08: intervertebral discs -->
+  <g filter="url(#shadow)">
+    <rect x="1102" y="2405" width="968" height="620" rx="48" fill="#FFFFFF"/>
+    <rect x="1102" y="2405" width="968" height="76" rx="48" fill="#E8F7F4"/>
+    <circle cx="1157" cy="2443" r="25" fill="#08775D"/><text class="cn number" x="1140" y="2453">08</text>
+    <text class="cn cardq" x="1205" y="2456">人体有多少个椎间盘？</text>
+    <rect x="1154" y="2547" width="268" height="345" rx="32" fill="#F4FAF8"/>
+    <g transform="translate(1240 2560)">
+      <path d="M80 0 C110 38 70 71 96 104 C122 137 81 174 106 207 C132 241 90 276 113 313" class="line"/>
+      <g class="disc"><rect x="66" y="26" width="41" height="13" rx="6"/><rect x="77" y="61" width="41" height="13" rx="6"/><rect x="79" y="96" width="41" height="13" rx="6"/><rect x="89" y="132" width="41" height="13" rx="6"/><rect x="81" y="168" width="41" height="13" rx="6"/><rect x="95" y="204" width="41" height="13" rx="6"/><rect x="94" y="241" width="41" height="13" rx="6"/><rect x="105" y="278" width="41" height="13" rx="6"/></g>
+      <path d="M46 20v61M46 106v130M46 252v61" stroke="#08775D" stroke-width="8"/>
+      <text class="cn tiny" x="-1" y="55">颈 6</text><text class="cn tiny" x="-1" y="172">胸 12</text><text class="cn tiny" x="-1" y="291">腰 5</text>
+    </g>
+    <text class="cn answer" x="1476" y="2605">23 个椎间盘</text>
+    <text class="cn body" x="1476" y="2670">颈椎：6 个</text>
+    <text class="cn body" x="1476" y="2722">胸椎：12 个</text>
+    <text class="cn body" x="1476" y="2774">腰椎：5 个</text>
+    <text class="cn note" x="1476" y="2847">从 C2/3 延续至 L5/S1</text>
+  </g>
+
+  <!-- 09: biceps origins -->
+  <g filter="url(#shadow)">
+    <rect x="90" y="3060" width="968" height="620" rx="48" fill="#FFFFFF"/>
+    <rect x="90" y="3060" width="968" height="76" rx="48" fill="#FFF0F1"/>
+    <circle cx="145" cy="3098" r="25" fill="#B74F5C"/><text class="cn number" x="128" y="3108">09</text>
+    <text class="cn cardq" x="193" y="3111">肱二头肌两头分别起自哪里？</text>
+    <rect x="142" y="3202" width="268" height="345" rx="32" fill="#FFF7F7"/>
+    <g transform="translate(178 3214)">
+      <path d="M85 19 C34 42 20 92 52 124 L93 151 L139 128 C181 107 180 55 138 31 C122 22 104 18 85 19 Z" class="bone"/>
+      <ellipse cx="130" cy="113" rx="23" ry="31" class="blue"/>
+      <path d="M82 50 C99 85 104 120 113 174" fill="none" stroke="#F08C95" stroke-width="15"/>
+      <path d="M57 100 C82 119 95 139 113 174" fill="none" stroke="#F08C95" stroke-width="15"/>
+      <circle cx="83" cy="50" r="11" class="orange"/><circle cx="57" cy="100" r="11" class="teal"/>
+      <text class="cn tiny" x="122" y="45">盂上结节</text><path d="M93 49h24" class="thin"/>
+      <text class="cn tiny" x="-2" y="119">喙突</text><path d="M49 104H34" class="thin"/>
+      <text class="cn tiny" x="93" y="210">肱二头肌</text>
+    </g>
+    <text class="cn answer" x="464" y="3264">长头：盂上结节</text>
+    <text class="cn answer" x="464" y="3334">短头：喙突</text>
+    <text class="cn body" x="464" y="3405">两者都起于肩胛骨，</text>
+    <text class="cn body" x="464" y="3457">但定位点不同。</text>
+    <text class="cn note" x="464" y="3530">长头记“盂上”，短头记“喙突”</text>
+  </g>
+
+  <!-- 10: labrum -->
+  <g filter="url(#shadow)">
+    <rect x="1102" y="3060" width="968" height="620" rx="48" fill="#FFFFFF"/>
+    <rect x="1102" y="3060" width="968" height="76" rx="48" fill="#EDF4FF"/>
+    <circle cx="1157" cy="3098" r="25" fill="#34789C"/><text class="cn number" x="1140" y="3108">10</text>
+    <text class="cn cardq" x="1205" y="3111">肩关节盂唇是什么？</text>
+    <rect x="1154" y="3202" width="268" height="345" rx="32" fill="#F5F9FF"/>
+    <g transform="translate(1180 3214)">
+      <path d="M31 78 C31 26 77 0 123 14 C166 27 186 75 164 119 L144 155 L104 169 L62 150 Z" class="bone"/>
+      <circle cx="108" cy="89" r="55" fill="#8FC5E8" stroke="#34789C" stroke-width="11"/>
+      <circle cx="108" cy="89" r="68" fill="none" stroke="#F08C95" stroke-width="19"/>
+      <path d="M107 20 C108 -11 123 -25 145 -39" fill="none" stroke="#F7B55A" stroke-width="15" stroke-linecap="round"/>
+      <path d="M168 49h53" class="thin"/><text class="cn tiny" x="145" y="39">盂唇</text>
+      <path d="M139 -31h73" class="thin"/><text class="cn tiny" x="104" y="-45">长头腱</text>
+      <text class="cn tiny" x="47" y="202">关节盂</text>
+    </g>
+    <text class="cn answer" x="1476" y="3252">关节盂周缘的纤维软骨环</text>
+    <text class="cn body" x="1476" y="3318">作用：加深关节窝，</text>
+    <text class="cn body" x="1476" y="3370">增强肩关节稳定性。</text>
+    <text class="cn note" x="1476" y="3446">上方盂唇与肱二头肌</text>
+    <text class="cn note" x="1476" y="3489">长头腱密切相关。</text>
+  </g>
+
+  <!-- Lingzhi source illustrations: generated separately, without text; Chinese terminology remains vector-set for accuracy. -->
+  <g>
+    <rect x="142" y="582" width="268" height="345" rx="32" fill="#F4FAF8"/><image href="../../xhs-wrong-notebook/2026-09-21-anatomy/01-muscle-tissue.png" x="142" y="582" width="268" height="345" preserveAspectRatio="xMidYMid slice" clip-path="url(#source01)"/>
+    <rect x="1154" y="582" width="268" height="345" rx="32" fill="#FFFAF1"/><image href="../../xhs-wrong-notebook/2026-09-21-anatomy/02-plasma.png" x="1154" y="582" width="268" height="345" preserveAspectRatio="xMidYMid slice" clip-path="url(#source02)"/>
+    <rect x="142" y="1237" width="268" height="345" rx="32" fill="#F5F9FF"/><image href="../../xhs-wrong-notebook/2026-09-21-anatomy/03-knee-joint.png" x="142" y="1237" width="268" height="345" preserveAspectRatio="xMidYMid slice" clip-path="url(#source03)"/>
+    <rect x="1154" y="1237" width="268" height="345" rx="32" fill="#F4FAF8"/><image href="../../xhs-wrong-notebook/2026-09-21-anatomy/04-scapular-movement.png" x="1154" y="1237" width="268" height="345" preserveAspectRatio="xMidYMid slice" clip-path="url(#source04)"/>
+    <rect x="142" y="1892" width="268" height="345" rx="32" fill="#FFF7F7"/><image href="../../xhs-wrong-notebook/2026-09-21-anatomy/05-pelvic-girdle-muscles.png" x="142" y="1892" width="268" height="345" preserveAspectRatio="xMinYMid slice" clip-path="url(#source05)"/>
+    <rect x="1154" y="1892" width="268" height="345" rx="32" fill="#F5F9FF"/><image href="../../xhs-wrong-notebook/2026-09-21-anatomy/06-pelvic-joints.png" x="1154" y="1892" width="268" height="345" preserveAspectRatio="xMidYMid slice" clip-path="url(#source06)"/>
+    <rect x="142" y="2547" width="268" height="345" rx="32" fill="#FFFAF1"/><image href="../../xhs-wrong-notebook/2026-09-21-anatomy/07-iliopsoas-origin.png" x="142" y="2547" width="268" height="345" preserveAspectRatio="xMidYMid slice" clip-path="url(#source07)"/>
+    <rect x="1154" y="2547" width="268" height="345" rx="32" fill="#F4FAF8"/><image href="../../xhs-wrong-notebook/2026-09-21-anatomy/08-intervertebral-discs.png" x="1154" y="2547" width="268" height="345" preserveAspectRatio="xMidYMid slice" clip-path="url(#source08)"/>
+    <rect x="142" y="3202" width="268" height="345" rx="32" fill="#FFF7F7"/><image href="../../xhs-wrong-notebook/2026-09-21-anatomy/09-biceps-origins.png" x="142" y="3202" width="268" height="345" preserveAspectRatio="xMidYMid slice" clip-path="url(#source09)"/>
+    <rect x="1154" y="3202" width="268" height="345" rx="32" fill="#F5F9FF"/><image href="../../xhs-wrong-notebook/2026-09-21-anatomy/10-glenoid-labrum.png" x="1154" y="3202" width="268" height="345" preserveAspectRatio="xMidYMid slice" clip-path="url(#source10)"/>
+  </g>
+
+  <text class="cn label" x="1080" y="3760" text-anchor="middle" fill="#6A7D88">复习方法：先遮住绿色答案，看图说出结构与功能；再核对完整表述。</text>
+</svg>

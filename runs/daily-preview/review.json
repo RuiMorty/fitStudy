@@ -1,72 +1,61 @@
 {
-  "status": "published",
-  "day": 44,
+  "status": "awaiting-review",
+  "day": 49,
   "templateApproved": true,
   "templateApprovedAt": "2026-09-17T01:53:12.356699+00:00",
-  "templateApprovalMessage": "确认，检验完毕",
   "templateApprovedFromDay": 40,
-  "publishApproved": true,
-  "startedAt": "2026-09-20T10:07:01.230Z",
-  "input": "runs/day44/lesson.json",
-  "output": "xhs/day44",
+  "templateRevisionApproved": true,
+  "layoutRevision": "xhs-layout-20260921-v3",
+  "publishApproved": false,
+  "startedAt": "2026-09-28T10:00:00Z",
+  "input": "runs/day49/lesson.json",
+  "output": "xhs/day49",
   "previousDraft": {
-    "day": 43,
+    "day": 48,
     "status": "published",
-    "review": "runs/day43/release/status.json",
-    "publicLearningUrl": "https://fitstudy.cn/go/43/"
+    "review": "runs/day48/release/status.json",
+    "publicLearningUrl": "https://fitstudy.cn/go/48/"
   },
-  "artifactStatus": "published",
-  "userReviewStatus": "accepted-and-published",
-  "note": "Day44 revision-09 已在用户明确授权后发布。六张动作卡保留分布在既有步骤里的内联短语高亮与对应常见误区；网站发布仅包含课程页、封面 PNG/WebP、详情图、短链和目录索引。7 个公网文件 SHA-256、短链与目录的 390px／1440px 浏览器交互均通过；小红书 PNG、文案和 ZIP 保留本地，未上传平台。",
-  "contentReview": "runs/day44/verification/content-review.json",
-  "imagePrompts": "runs/day44/image-prompts.json",
-  "imageStyleSpecification": "templates/study/v1/image-style.md",
-  "imageStylePreset": "templates/study/v1/image-style.json",
-  "lastCheckpointAt": "2026-09-21T04:08:41Z",
-  "completedAt": "2026-09-20T10:21:37.961Z",
-  "imageStyleDirectionApproved": true,
+  "artifactStatus": "ready-local-draft",
+  "userReviewStatus": "awaiting-user-review",
+  "authorization": "runs/day49/authorization.json",
+  "imageProgress": {"generated": 13, "planned": 13},
+  "plannedArtifacts": {
+    "html": "html/day49-爆发力训练技术.html",
+    "thumbnail": "html/thumbs/day49-power-training-technique-thumbnail.png",
+    "detail": "html/assets/阶段2训练科学/day49-爆发力训练技术.png",
+    "xhs": "xhs/day49",
+    "archive": "xhs/day49/day49-xhs.zip"
+  },
+  "nextLessonStarted": true,
+  "nextExpectedDay": 50,
+  "failure": {
+    "file": "cover.png",
+    "role": "cover",
+    "status": "resolved",
+    "record": "runs/day49/retry-cover-20260928/cover-acceptance.json",
+    "nextAction": "封面已通过真实 alpha 和构图检查；继续生成余下12张素材。"
+  },
+  "coverRevisionAuthorization": "runs/day49/retry-cover-20260928/authorization.json",
+  "coverRevisionFailure": "runs/day49/retry-cover-20260928/failure-attempt-02.json",
+  "retryAuthorization": "runs/day49/retry-policy.json",
+  "note": "Day49 本地草稿已完成：13项透明素材全部通过技术与目检，沿用共用模板导出网站课程、无字封面、中文详情图和8张1080×1440小红书卡。17项模板测试、320/390/768/1440响应式交互与破版守卫、ZIP 27项CRC，以及本地课程/XHS/ZIP HTTP 200均通过。未发布，未改app.js、library、首页、go短链或正式进度。",
   "imagesAccepted": true,
-  "publicLearningUrl": "https://fitstudy.cn/go/44/",
-  "artifacts": {
-    "html": "html/day44-核心训练技术应用与PNF对角线.html",
-    "thumbnail": "html/thumbs/day44-core-training-pnf-diagonals-thumbnail.png",
-    "detail": "html/assets/阶段2训练科学/day44-核心训练技术应用与PNF对角线.png",
-    "xhs": "xhs/day44",
-    "archive": "xhs/day44/day44-xhs.zip"
+  "sourceQualityReview": "runs/day49/visual-quality-review-final.json",
+  "verification": {
+    "templateTests": "17 passed",
+    "browser": "runs/day49/verification/report.json",
+    "imageProcessing": "runs/day49/image-processing.json",
+    "zip": "xhs/day49/day49-xhs.zip"
   },
-  "qualityReview": "runs/day44/verification/quality-review.json",
-  "browserReport": "runs/day44/verification/report.json",
-  "fileVerification": "runs/day44/verification/file-report.json",
   "localPreview": {
-    "course": "http://127.0.0.1:8420/html/day44-%E6%A0%B8%E5%BF%83%E8%AE%AD%E7%BB%83%E6%8A%80%E6%9C%AF%E5%BA%94%E7%94%A8%E4%B8%8EPNF%E5%AF%B9%E8%A7%92%E7%BA%BF.html",
-    "xhs": "http://127.0.0.1:8420/xhs/day44/index.html",
-    "archive": "http://127.0.0.1:8420/xhs/day44/day44-xhs.zip",
-    "server": "127.0.0.1:8420",
-    "scope": "local-only"
+    "course": "http://127.0.0.1:8420/html/day49-%E7%88%86%E5%8F%91%E5%8A%9B%E8%AE%AD%E7%BB%83%E6%8A%80%E6%9C%AF.html",
+    "xhs": "http://127.0.0.1:8420/xhs/day49/index.html",
+    "zip": "http://127.0.0.1:8420/xhs/day49/day49-xhs.zip"
   },
   "reviewFocus": [
-    "6 张动作卡的高亮是否能沿既有步骤直接看出怎么做，而不只停留在单一控制结果。",
-    "五条常见误区在对应动作卡下方的归属和阅读密度是否合适。",
-    "8 张卡的整体节奏是否比上一版更符合预期。"
-  ],
-  "nextLessonStarted": false,
-  "nextExpectedDay": 45,
-  "layoutRevision": "xhs-layout-20260921-v3",
-  "templateRevisionApproved": true,
-  "currentRevision": "revision-09-distributed-inline-emphases",
-  "revision": "revision-09-distributed-inline-emphases",
-  "acceptedRevision": "revision-09-distributed-inline-emphases",
-  "acceptedAt": "2026-09-21T04:05:43.349Z",
-  "publishApprovalMessage": "发布day44吧",
-  "publishedAt": "2026-09-21T04:05:43.349Z",
-  "releaseId": "20260921T040307339Z-day44",
-  "releaseStatus": "published",
-  "serverDeployed": true,
-  "publicVerification": "passed",
-  "publicVerificationAt": "2026-09-21T04:05:43.349Z",
-  "failure": null,
-  "imageProgress": {
-    "generated": 13,
-    "planned": 13
-  }
+    "从基础力量和稳定落地到爆发训练的进阶边界是否清楚。",
+    "抓举、挺举、跳跃与投掷是否被呈现为不同工具，而不是不加条件地堆量。",
+    "轻中负荷的最大速度意图、低次数和充分恢复是否易于执行。"
+  ]
 }

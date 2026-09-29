@@ -1,0 +1,20 @@
+{
+  "provider": "Lingzhi",
+  "preset": "quality",
+  "model": "gpt-image-2.5-sunburst",
+  "authorization": "runs/day49/retry-cover-20260928/authorization.json",
+  "previousFailure": "runs/day49/failure.json",
+  "status": "failed-no-retry",
+  "attempts": [
+    {
+      "file": "cover-attempt-02.png",
+      "role": "cover-revision",
+      "startedAt": "2026-09-28T11:12:56.000337+00:00",
+      "status": "failed-no-retry",
+      "output": "runs/day49/retry-cover-20260928/cover-attempt-02.png",
+      "completedAt": "2026-09-28T11:12:56.117069+00:00",
+      "returncode": 1,
+      "errorSummary": "The single authorized revision returned no usable local PNG; no further request was sent."
+    }
+  ]
+}

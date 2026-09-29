@@ -1,0 +1,63 @@
+{
+  "status": "passed",
+  "checkedAt": "2026-09-28T09:09:44Z",
+  "installedFiles": 30,
+  "xhsCards": {
+    "count": 8,
+    "dimensions": [1080, 1440],
+    "renderMode": "RGB PNG on opaque common-template cards"
+  },
+  "sourceAssets": {
+    "generated": 13,
+    "trueAlphaChecked": 13,
+    "qualityReview": "runs/day48/verification/source-quality-review.json"
+  },
+  "contentRevision": {
+    "id": "revision-01-expanded-xhs-explanations",
+    "scope": "All six XHS knowledge cards now use complete explanatory sentences; slide 03 replaces the contextless emphasis ‘完整句子’ with ‘仍能完整说话’ in its intensity explanation.",
+    "sourceImages": "unchanged",
+    "visualReview": "All revised knowledge cards were visually inspected at 1080x1440; no text overflow or footer collision observed."
+  },
+  "archive": {
+    "path": "xhs/day48/day48-xhs.zip",
+    "entries": 27,
+    "crc": "passed",
+    "sha256": "33d56751d533b06f8d8d41132d280e03bcf10902b3064b81b9fbf096c1e48d10"
+  },
+  "mainArtifacts": {
+    "html": {
+      "path": "html/day48-热身设计与整理恢复.html",
+      "sha256": "51be4c76b36340d8c4108f876b8b56c341e08bbdc07d11eec012ff20689fc8c8"
+    },
+    "thumbnail": {
+      "path": "html/thumbs/day48-warmup-cooldown-recovery-thumbnail.png",
+      "sha256": "e0b7d4f1af6fbbe235f4324468e37ce3c46a3668b6a932fd44ef035a5344305e"
+    },
+    "detail": {
+      "path": "html/assets/阶段2训练科学/day48-热身设计与整理恢复.png",
+      "sha256": "131dfcd5e6e31bd44f175433f7242b625cc892404fe9543b57cba622b3dc7571"
+    }
+  },
+  "deliveryBoundary": {
+    "deliveryMode": "published",
+    "shortlinkExists": true,
+    "publicUrlPresent": true,
+    "publicUrl": "https://fitstudy.cn/go/48/",
+    "protectedFiles": {
+      "app.js": "dc0fc212ca64f29e5f90a6db0ebf315ffae7810c2e837abe5fbaadb1802f1fdc",
+      "library/index.html": "a720d79376b8795488f36eb9593798a595ee941ca5721db7fbe9a16175c49662",
+      "progress.json": "f5d6d86e534b4762f15495a8e3546630a0f4e473c3d9f67147cd80c82bdeed7a",
+      ".progress.json": "cb2e148ffbe220b73b6503a7343e9fa044e2055988d3a3d5dc2a853386f1d252"
+    },
+    "gitStatusForProtectedPaths": "clean",
+    "go48Exists": true,
+    "releaseManifest": "runs/day48/release/release-manifest.json",
+    "publicVerification": "runs/day48/release/final-verification.json"
+  },
+  "browser": "runs/day48/verification/report.json",
+  "localPreview": {
+    "courseUrl": "http://127.0.0.1:8420/html/day48-%E7%83%AD%E8%BA%AB%E8%AE%BE%E8%AE%A1%E4%B8%8E%E6%95%B4%E7%90%86%E6%81%A2%E5%A4%8D.html",
+    "xhsUrl": "http://127.0.0.1:8420/xhs/day48/index.html",
+    "httpStatus": 200
+  }
+}
