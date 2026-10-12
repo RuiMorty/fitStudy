@@ -12,7 +12,7 @@ const BONE_STYLE = {
   fill: 0.45,
 };
 const $=id=>document.getElementById(id), host=$('viewer');
-const scene=new THREE.Scene();scene.background=new THREE.Color('#202923');
+const scene=new THREE.Scene();scene.background=new THREE.Color('#292929');
 const camera=new THREE.PerspectiveCamera(35,1,.005,30);
 const renderer=new THREE.WebGLRenderer({antialias:true});renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.setSize(host.clientWidth,host.clientHeight);renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=BONE_STYLE.exposure;host.appendChild(renderer.domElement);
 const controls=new OrbitControls(camera,renderer.domElement);controls.enableDamping=true;controls.zoomToCursor=true;controls.enablePan=true;controls.screenSpacePanning=true;controls.minDistance=.03;controls.maxDistance=8;
