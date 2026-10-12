@@ -1,0 +1,435 @@
+{
+  "processedAt": "2026-09-30T10:16:38.619564+00:00",
+  "method": "trim near-transparent noise; reviewed crop; uniform scale; transparent margin",
+  "assets": [
+    {
+      "source": "runs/day61/source/cover.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "sourceSha256": "81ac4ca76e2ed894cfd629bb2117c7d6b4ef65ef2dfa812183b44948aa12eb9e",
+      "reviewedCrop": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "visibleCrop": [
+        204,
+        32,
+        1493,
+        905
+      ],
+      "output": "runs/day61/assets/cover.png",
+      "size": [
+        1600,
+        900
+      ],
+      "subjectSize": [
+        1169,
+        792
+      ],
+      "offset": [
+        215,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "无字封面"
+    },
+    {
+      "source": "runs/day61/source/visual-01-ssc.png",
+      "sourceSize": [
+        1983,
+        793
+      ],
+      "sourceSha256": "2c58f32f3207d67022fd058dc0997a9fac305fa50567254c0535e8ea6cf866b2",
+      "reviewedCrop": [
+        0,
+        0,
+        1983,
+        793
+      ],
+      "visibleCrop": [
+        262,
+        13,
+        1563,
+        767
+      ],
+      "output": "runs/day61/assets/visual-01-ssc.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1301,
+        754
+      ],
+      "offset": [
+        749,
+        73
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "SSC三阶段的连续准备姿势"
+    },
+    {
+      "source": "runs/day61/source/visual-02-amortization.png",
+      "sourceSize": [
+        2059,
+        764
+      ],
+      "sourceSha256": "32fd2bde3574e2f4ef0d1f13ad6d36e01f1125ee0e19e48a58f2d266b33c6ba1",
+      "reviewedCrop": [
+        0,
+        0,
+        2059,
+        764
+      ],
+      "visibleCrop": [
+        521,
+        10,
+        1376,
+        716
+      ],
+      "output": "runs/day61/assets/visual-02-amortization.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        855,
+        706
+      ],
+      "offset": [
+        972,
+        97
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "缓冲控制"
+    },
+    {
+      "source": "runs/day61/source/visual-03-landing.png",
+      "sourceSize": [
+        2214,
+        710
+      ],
+      "sourceSha256": "19a624bb018d81315927e62499969e12c294e2b54036d1f8ad1294b5108b8c78",
+      "reviewedCrop": [
+        0,
+        0,
+        2214,
+        710
+      ],
+      "visibleCrop": [
+        417,
+        12,
+        1827,
+        690
+      ],
+      "output": "runs/day61/assets/visual-03-landing.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1410,
+        678
+      ],
+      "offset": [
+        695,
+        111
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "安静落地与制动"
+    },
+    {
+      "source": "runs/day61/source/visual-04-progression.png",
+      "sourceSize": [
+        1993,
+        789
+      ],
+      "sourceSha256": "21ac45a14e23c65350ef18d33a0b1f7bfa617618b03b25b55b6e38248055c2d0",
+      "reviewedCrop": [
+        0,
+        0,
+        1993,
+        789
+      ],
+      "visibleCrop": [
+        378,
+        13,
+        1633,
+        771
+      ],
+      "output": "runs/day61/assets/visual-04-progression.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1255,
+        758
+      ],
+      "offset": [
+        772,
+        71
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "方向任务进阶"
+    },
+    {
+      "source": "runs/day61/source/visual-05-saq.png",
+      "sourceSize": [
+        2020,
+        778
+      ],
+      "sourceSha256": "483fd05ccb02774bbe79e8dd5614b84899de622aeb4f228ac2a43762e0f2c009",
+      "reviewedCrop": [
+        0,
+        0,
+        2020,
+        778
+      ],
+      "visibleCrop": [
+        108,
+        27,
+        1954,
+        706
+      ],
+      "output": "runs/day61/assets/visual-05-saq.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1846,
+        679
+      ],
+      "offset": [
+        477,
+        110
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "SAQ减速与变向准备"
+    },
+    {
+      "source": "runs/day61/source/overview-01-ssc.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "63598e5082e27caf44055a1cc769895207a7ee6f446641c3b469ecb9c7e182a9",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        178,
+        12,
+        1224,
+        1074
+      ],
+      "output": "runs/day61/assets/overview-01-ssc.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1040,
+        1056
+      ],
+      "offset": [
+        280,
+        72
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day61/source/overview-02-amortization.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "b79f1f82cf2f747de76b5a31af9f015316b0992aa774dc4461cd7d11bed93f36",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        170,
+        32,
+        1299,
+        981
+      ],
+      "output": "runs/day61/assets/overview-02-amortization.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1129,
+        949
+      ],
+      "offset": [
+        235,
+        125
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day61/source/overview-03-landing.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "9cbb91f9e78b5f8892dfebf0e661cef02767b506193f179a2f91785c801bbd09",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        70,
+        102,
+        1403,
+        927
+      ],
+      "output": "runs/day61/assets/overview-03-landing.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1333,
+        825
+      ],
+      "offset": [
+        133,
+        187
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day61/source/overview-04-progression.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "169d9d05f6cb9b03354b7686f4bcf390873441ce55c60ac16b5066d9bce4a4e7",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        88,
+        112,
+        1344,
+        960
+      ],
+      "output": "runs/day61/assets/overview-04-progression.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1256,
+        848
+      ],
+      "offset": [
+        172,
+        176
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day61/source/overview-05-saq.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "d5e246f9e10cf4e44920b3b9da3e0abb25d7ad093fe3050e43036d369119e612",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        83,
+        87,
+        1379,
+        995
+      ],
+      "output": "runs/day61/assets/overview-05-saq.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1296,
+        908
+      ],
+      "offset": [
+        152,
+        146
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    }
+  ]
+}

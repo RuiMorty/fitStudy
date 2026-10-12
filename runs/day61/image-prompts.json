@@ -1,0 +1,60 @@
+{
+  "commonPrompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.",
+  "assets": [
+    {
+      "file": "cover.png",
+      "role": "cover",
+      "prompt": "Wide 16:9 wordless single-scene course cover. Exactly one Despa is the sole main action figure, holding a quiet low athletic landing stance after a tiny hop with both feet grounded, hips knees and ankles softly bent. Exactly one Bojji stands nearby as an observing companion with open hands. Keep both full bodies visible. Explain landing, braking and speed agility with one continuous action pose. No duplicate figures, alternate poses, sequence frames, motion trails, arrows, text, reaction lights or extra equipment."
+    },
+    {
+      "file": "visual-01-ssc.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Exactly one Despa is the sole main action figure in a controlled shallow countermovement preparation: both feet grounded, hips knees and ankles softly flexed, trunk long, arms naturally set for a small jump. Exactly one Bojji observes at a respectful distance with open hand. Explain the integrated stretch-shortening cycle through one continuous body position, not separate phase snapshots. No duplicate figures, alternate poses, sequence frames, arrows, motion lines, labels, text or equipment."
+    },
+    {
+      "file": "visual-02-amortization.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Exactly one Despa is the sole main action figure in a very small quiet rebound loading stance, both feet planted and knees softly bent, posture stable and not a maximal jump. Exactly one Bojji stands nearby observing with one open hand. Explain controlled transition and strength before speed through one continuous stance. No duplicate figures, alternate poses, sequence frames, stopwatch, numbers, arrows, motion trails, text or extra equipment."
+    },
+    {
+      "file": "visual-03-landing.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Exactly one Bojji is the sole main action figure in a quiet landing position just after stepping from one very low plain box, with whole-foot contact and hips knees and ankles sharing a small bend. Exactly one Despa observes calmly with open hands. Explain landing absorption and braking with one continuous pose. No duplicate figures, alternate poses, sequence frames, impact burst, arrows, text or extra equipment beyond the one low box."
+    },
+    {
+      "file": "visual-04-progression.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Exactly one Despa is the sole main action figure in a modest lateral step-and-stick landing, one foot bearing weight with hips knees and ankles quiet and controlled. Exactly one Bojji observes from a stable two-foot stance. Explain a controlled directional task as a later progression without showing earlier or later steps. No duplicate figures, alternate poses, sequence frames, high jump, arrows, text, boxes or extra equipment."
+    },
+    {
+      "file": "visual-05-saq.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Exactly one Despa is the sole main action figure in a low controlled deceleration stance just before three plain cones, torso calm and feet fully visible. Exactly one Bojji observes from a safe stable stance. Explain braking before planned change of direction through one continuous pose. No duplicate figures, alternate poses, sequence frames, running trails, reaction lights, arrows, readable signs, text or other equipment."
+    },
+    {
+      "file": "overview-01-ssc.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Exactly one Despa is the sole main action figure in a shallow controlled countermovement preparation with both feet grounded; exactly one Bojji observes nearby. Explain integrated SSC preparation with one continuous pose. No duplicate figures, alternate poses, sequence frames, arrows, motion trails, labels or text."
+    },
+    {
+      "file": "overview-02-amortization.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Exactly one Despa is the sole main action figure in a quiet low rebound loading stance with feet grounded; exactly one Bojji observes with open hand. Explain controlled transition. No duplicate figures, alternate poses, sequence frames, stopwatch, numbers, text, arrows or motion trails."
+    },
+    {
+      "file": "overview-03-landing.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Exactly one Bojji is the sole main action figure in a quiet two-foot landing stance just after one low plain box; exactly one Despa observes. Explain braking and absorption. No duplicate figures, alternate poses, sequence frames, impact burst, arrows, text or extra equipment beyond the box."
+    },
+    {
+      "file": "overview-04-progression.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Exactly one Despa is the sole main action figure in a modest lateral step-and-stick landing; exactly one Bojji observes from stable stance. Explain gradual plyometric progression through one controlled direction task. No duplicate figures, alternate poses, sequence frames, high jump, arrows, text or equipment."
+    },
+    {
+      "file": "overview-05-saq.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Exactly one Despa is the sole main action figure in a low controlled braking stance before two plain cones; exactly one Bojji observes. Explain SAQ deceleration and direction change. No duplicate figures, alternate poses, sequence frames, reaction lights, arrows, text, motion trails or readable signs."
+    }
+  ]
+}

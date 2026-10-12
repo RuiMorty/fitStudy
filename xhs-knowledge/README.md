@@ -9,3 +9,8 @@
 - `2026-09-28-warmup`：死虫式、鸟狗式、臀桥、侧卧开书式，四个训练前激活动作。
 - 状态：Rick 热身功效第二版已生成，待用户审阅。未发布。
 - 最新预览：`2026-09-28-warmup/images/warmup-preview-v2-rick.png`。
+
+## 有氧供能知识图
+
+- 2026-10-08-aerobic-fueling：ATP-CP、肌糖原、肝糖原、脂肪和糖异生的阶段与消耗量，6 张 3:4 知识图。
+- 状态：本地成品待用户审阅，未发布；成品见 2026-10-08-aerobic-fueling/images/01-cover.png 至 06-gluconeogenesis.png。

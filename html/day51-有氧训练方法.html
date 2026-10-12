@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Day 51 · 有氧训练方法</title><link rel="icon" type="image/svg+xml" href="assets/fitness-study-logo-open-circle.svg?v=a6d8e5caaa61"><style>:root { color-scheme: light; --ink: #111113; --muted: #71717a; --line: #e4e4e7; --accent: #ff5a1f; --green: #0ea66b; --blue: #2563eb; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; font-synthesis: none; letter-spacing: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); overflow-wrap: anywhere; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+img { display: block; max-width: 100%; }
+button:focus-visible, a:focus-visible, summary:focus-visible, input:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
+svg.icon { width: 20px; height: 20px; }
+.icon-button { display: inline-grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 1px solid var(--line); border-radius: 6px; background: white; }
+[hidden] { display: none !important; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
+
+body { background: #f6f8f7; font-size: 14px; line-height: 1.65; }
+main { max-width: 980px; margin: auto; padding: 24px 18px 60px; }
+.header { padding: 22px 4px 14px; }
+h1 { margin: 10px 0 8px; font-size: 36px; line-height: 1.2; }
+h1::before { content: ""; display: block; width: 34px; height: 4px; background: var(--accent); margin-bottom: 10px; }
+h2 { font-size: 17px; margin: 0 0 14px; }
+h3 { font-size: 16px; margin: 0 0 8px; }
+.sub { color: var(--muted); margin: 5px 0 18px; }
+.meta { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { display: inline-block; border: 1px solid var(--line); border-radius: 20px; background: white; color: var(--muted); padding: 3px 10px; font-size: 12px; font-weight: 600; }
+.chip:nth-child(1) { background: #e2f7eb; color: #15803d; border-color: transparent; }
+.chip:nth-child(2) { background: #e7f0fe; color: #2563eb; border-color: transparent; }
+.chip:nth-child(3) { background: #fff2e5; color: #9a4c05; border-color: transparent; }
+.panel, .figure, .warn, .mnemonic { background: white; border: 1px solid #e2e8e4; border-radius: 14px; box-shadow: 0 2px 12px rgba(20,40,30,.06); padding: 20px; margin: 16px 0; }
+.green { border-left: 5px solid var(--green); }
+.orange { border-left: 5px solid #ea7a17; }
+.blue { border-left: 5px solid #0ea5e9; }
+.takeaway { margin: 0; }
+.figure { text-align: center; }
+.figure button { display: block; position: relative; width: 100%; border: 0; padding: 0; background: white; cursor: zoom-in; }
+.figure img { max-height: 760px; width: 100%; object-fit: contain; }
+.figure .icon-button { position: absolute; bottom: 8px; right: 8px; background: #ffffffed; }
+.caption { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
+.kp { list-style: none; padding: 0; margin: 0; }
+.kp > li { border-bottom: 1px dashed #e2e8e4; }
+.kp > li:last-child { border-bottom: 0; }
+.kp summary { cursor: pointer; padding: 13px 8px; font-weight: 650; }
+.kp summary::marker { color: var(--green); }
+.term { color: #0a7d52; background: #e2f7eb; border-radius: 6px; padding: 1px 5px; }
+.kp-body { padding: 2px 14px 16px 24px; }
+.detail-block { margin: 12px 0; }
+.detail-block h4 { font-size: 13px; color: #08744d; margin: 0 0 4px; }
+.detail-block p { margin: 0; white-space: pre-line; }
+.warn { border-left: 5px solid #e23b3b; background: #fffafa; }
+.warn p { margin: 8px 0; }
+.misconception { color: #a82b32; }
+.mnemonic { border-left: 4px solid var(--accent); box-shadow: none; }
+.mnemonic strong { color: #df4716; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+.flip { height: 168px; perspective: 900px; border: 0; background: transparent; padding: 0; text-align: center; }
+.flip-in { display: block; height: 100%; position: relative; transition: transform .45s; transform-style: preserve-3d; }
+.flip[aria-pressed="true"] .flip-in { transform: rotateY(180deg); }
+.face { position: absolute; inset: 0; backface-visibility: hidden; border: 1px solid var(--line); border-radius: 10px; padding: 15px; background: #fafafa; display: flex; align-items: center; justify-content: center; overflow-y: auto; }
+.back { transform: rotateY(180deg); background: #eef9f4; color: #075e40; border-color: #c8eadb; }
+.practice { padding-left: 20px; }
+.practice li { margin: 7px 0; }
+.question { border-top: 1px solid #e2e8e4; padding: 20px 0 8px; margin-top: 12px; min-width: 0; }
+.options { display: grid; gap: 7px; margin: 10px 0; }
+.option { display: flex; gap: 10px; align-items: baseline; border: 1px solid #e2e8e4; background: #f0f4f2; padding: 9px 12px; border-radius: 8px; cursor: pointer; }
+.option input { flex-shrink: 0; accent-color: var(--green); }
+.option:has(input:checked) { border-color: #0ea5e9; background: #e7f6fd; }
+.question[data-result="correct"] .option:has(input:checked) { border-color: #0ea66b; background: #e7f8ef; }
+.question[data-result="wrong"] .option:has(input:checked) { border-color: #e23b3b; background: #fff0f0; }
+.answer { background: #f8fbfa; border-left: 3px solid #0ea5e9; padding: 10px; margin-top: 10px; }
+.check { border: 0; background: #0ea66b; color: white; padding: 9px 14px; border-radius: 7px; }
+footer { color: var(--muted); font-size: 12px; margin-top: 28px; }
+footer ul { padding-left: 20px; }
+dialog { width: min(1200px, 96vw); max-height: 94dvh; padding: 52px 16px 16px; border: 0; border-radius: 8px; background: white; }
+dialog::backdrop { background: #15191dd9; }
+dialog img { width: 100%; max-height: 78dvh; object-fit: contain; }
+dialog .icon-button { position: absolute; top: 8px; right: 10px; }
+@media (max-width: 600px) {
+  main { padding: 16px 12px 40px; }
+  h1 { font-size: 26px; }
+  .header { padding: 16px 4px 12px; }
+  .panel, .figure, .warn, .mnemonic { padding: 15px; }
+  .kp-body { padding-left: 16px; }
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .face { padding: 12px; }
+}
+</style></head><body><main><header class="header"><h1>Day 51 · 有氧训练方法</h1><p class="sub">持续、间歇、法特莱克与重复训练服务于不同目标；先明确强度分布和恢复，再选择方法。</p><div class="meta"><span class="chip">阶段2训练科学</span><span class="chip">第8周</span><span class="chip">有氧训练</span></div></header><section class="panel green"><h2>一句话总结</h2><p class="takeaway">长慢距离、间歇、法特莱克和重复训练是安排刺激的不同工具。持续训练适合积累低强度容量；间歇通过工作与恢复的组合管理高强度时间；法特莱克在连续运动中变换节奏；重复训练则以接近高强度的少量高质量重复配合较长休息。极化和金字塔是整个周期的强度分布思路，不是单堂训练的魔法比例。选择前先看目标、训练基础、总量与恢复，再让方法为目的服务。</p></section><figure class="figure"><button data-zoom aria-label="放大详情图"><img class="" src="assets/阶段2训练科学/day51-有氧训练方法.png" alt="六主题中文总览：持续训练、间歇、法特莱克、重复训练、强度分配与方法选择"><span class="icon-button"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 15 6 6" /><path d="m15 9 6-6" /><path d="M21 16v5h-5" /><path d="M21 8V3h-5" /><path d="M3 16v5h5" /><path d="m3 21 6-6" /><path d="M3 8V3h5" /><path d="M9 9 3 3" /></svg></span></button><figcaption class="caption">有氧训练方法总览：不同方法不以谁更累取胜，而以目标、技术、强度分布与恢复是否匹配判断。</figcaption></figure><section class="panel"><h2>核心要点</h2><ul class="kp"><li><details><summary><span class="term">持续训练：用可控强度积累时间</span>：LSD长慢距离是连续、相对较低强度的训练方式，重点是可持续的时间与稳定节奏，不是越慢越好或无限加时。</summary><div class="kp-body"><section class="detail-block"><h4>稳定输出而非硬顶配速</h4><p>持续训练常用舒适到中等的强度，让呼吸、姿势和技术在较长时间内保持稳定。刚开始可从短时连续步行、骑行或慢跑开始，按周逐步增加；把每次都做成力竭，不利于建立可重复的基础容量。</p></section><section class="detail-block"><h4>时长要与当前耐受匹配</h4><p>长时间并不自动更好。足部、小腿、坐垫接触点或肩颈开始持续不适时，应先缩短、换低冲击模式或检查设置。训练后的恢复、睡眠和下一次质量决定当前时长是否合适。</p></section><section class="detail-block"><h4>LSD不是所有人的唯一答案</h4><p>它适合许多人的基础活动量和耐力基础，但比赛需求、训练经验和总周期会决定是否加入其他刺激。不要把低强度长时间误解为只要堆里程；力量训练、技术和恢复仍要共同安排。</p></section></div></details></li><li><details><summary><span class="term">间歇训练：把工作与恢复写清楚</span>：间歇训练由工作段、恢复段、重复次数和目标强度组成；长间歇与短间歇的体验和限制不同。</summary><div class="kp-body"><section class="detail-block"><h4>长间歇：单次工作更长</h4><p>较长工作段常用于在较高但可控制的强度下累积时间，恢复段让下一次仍能维持目标。若每次后半段完全崩盘，优先降低工作强度、缩短工作段或延长恢复，而不是继续堆次数。</p></section><section class="detail-block"><h4>短间歇：转换更频繁</h4><p>较短工作与恢复段让节奏转换更频繁，可用于速度、心肺刺激或技术节奏练习。短恢复不等于必须喘到失控；工作、恢复、次数和模式要同时写清，避免只有“HIIT”标签没有可执行处方。</p></section><section class="detail-block"><h4>看工作质量也看总量</h4><p>选择跑、骑、划或其他模式时，先确认动作能在疲劳下保持安全。记录实际完成的工作时间、恢复时间、RPE和恢复反应；相同的间歇格式，对不同基础的人可能是完全不同的总负荷。</p></section></div></details></li><li><details><summary><span class="term">法特莱克：连续运动里的有意变速</span>：Fartlek意为速度游戏，在连续活动中按路线、地形、时间或主观感觉改变节奏，兼顾结构与趣味。</summary><div class="kp-body"><section class="detail-block"><h4>变化要有目的</h4><p>可把一段平路加快、一个缓坡维持、下坡放松或按时间交替写入计划。变化不是随意冲刺；每次加速前仍要确认路面、姿势和呼吸可控，尤其在户外、转弯或人多场地。</p></section><section class="detail-block"><h4>用内部线索管理节奏</h4><p>没有精确配速设备时，可用谈话能力、RPE、路标或时间段作为线索。要提前约定“快”与“慢”的感受边界，避免每一段都被做成接近最大努力。</p></section><section class="detail-block"><h4>适合打破单调，不替代基础</h4><p>它能提高参与感并练习节奏调整，但仍应建立在连续活动耐受之上。新手可只做少数温和变化，恢复不足或技术不稳时回到稳定持续训练。</p></section></div></details></li><li><details><summary><span class="term">重复训练：高质量重复配较长恢复</span>：重复训练通常让单次工作接近较高强度，并给较长恢复，以便每次重复仍保持预期速度、技术和质量。</summary><div class="kp-body"><section class="detail-block"><h4>恢复是处方的一部分</h4><p>较长休息并非偷懒，而是让能量、呼吸和注意力恢复，使下一次工作仍有明确质量。若恢复不够导致速度大幅下降、姿势变形或无法完成目标，训练已变成别的方法，不应继续硬顶。</p></section><section class="detail-block"><h4>高强度不是无条件冲刺</h4><p>接近高强度的重复需要已有基础、热身、安全场地和清楚的终止条件。跑步可用平坦直线、骑行可用固定阻力；新手或恢复欠佳者可先使用更低冲击、更低强度的间歇版本。</p></section><section class="detail-block"><h4>次数少，观察更重要</h4><p>每次工作后的速度、RPE、技术和恢复时间比完成“漂亮数量”更有价值。疼痛、异常气促、头晕或反复质量下滑时结束，并在下一次调整剂量。</p></section></div></details></li><li><details><summary><span class="term">强度分布：极化与金字塔是周期思路</span>：极化训练常概括为大部分低强度、少量高强度；金字塔分布包含更多中等强度。两者都需按目标和训练背景解释。</summary><div class="kp-body"><section class="detail-block"><h4>极化不是硬套80/20</h4><p>80/20常是对某些耐力训练分布的概括，低、高强度的划分、按时间还是按课次统计、运动水平和赛季阶段都会改变实际数字。不能把每周任意五次课分成四次轻松、一次极累就称为科学极化。</p></section><section class="detail-block"><h4>金字塔不是“中等越多越好”</h4><p>金字塔分布通常低强度最多、中等次之、高强度最少；它是否合适要看项目、总量和恢复。长期把大量时间卡在“有点累但无法恢复”的中等区，反而可能挤压真正低强度与高质量训练。</p></section><section class="detail-block"><h4>先看全周，再看单课</h4><p>一节间歇或重复课不代表整个周期高强度过多。将每周各课的模式、时长、强度和恢复并排记录，才能判断分布与生活压力是否匹配。</p></section></div></details></li><li><details><summary><span class="term">方法选择：目标、基础与恢复一起决定</span>：先决定需要什么适应，再选择最容易稳定执行的方法；同一目标可有多条安全路径。</summary><div class="kp-body"><section class="detail-block"><h4>从目标反推刺激</h4><p>想建立基础活动耐受，可优先持续训练；想练可控的较高强度时间，可选择结构清楚的间歇；想练节奏变化可用法特莱克；需要少量高质量速度工作时再考虑重复训练。方法名称不能替代目标说明。</p></section><section class="detail-block"><h4>先给出可恢复版本</h4><p>没有连续训练基础时，不直接堆高强度。可先减少工作段、降低阻力、加长恢复或换低冲击模式；当能连续多周稳定完成且恢复良好，再一次只增加一个变量。</p></section><section class="detail-block"><h4>把反应写回下一次计划</h4><p>记录完成度、RPE、谈话能力、局部不适、睡眠和次日反应。若计划与实际偏差很大，调整的是剂量或模式，而不是用意志把下一次推得更狠。</p></section></div></details></li></ul></section><section class="warn"><h2>常见误区</h2><p><strong class="misconception">误区：LSD就是慢跑越久越好。</strong><br>辨析：LSD是较轻松、较长时间的持续运动；时长要按自己的耐受逐步增加。</p><p><strong class="misconception">误区：间歇训练只要练得很累就有效。</strong><br>辨析：要写清快练多久、慢下来多久、重复几次；做不动或动作变乱时要调整。</p><p><strong class="misconception">误区：法特莱克就是想冲刺就冲刺。</strong><br>辨析：它是在连续运动中有意变速，快慢有安排，路面和身体反应也要考虑。</p><p><strong class="misconception">误区：重复训练的休息越短越好。</strong><br>辨析：充分休息是为了让下一趟保持速度和动作质量；明显下降时就该结束。</p><p><strong class="misconception">误区：极化训练的“80/20”每个人、每周都必须做到。</strong><br>辨析：先看自己一周的目标、训练量和恢复；比例只是描述强度分布的参考。</p></section><section class="mnemonic"><h2>记忆口诀</h2><p><strong>持续打底，间歇分段；法特莱克变速，重复重质量；看全周分布，再加下一步。</strong></p></section><section class="panel"><h2>翻转卡复习</h2><div class="cards"><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">LSD的核心是什么？</span><span class="face back" aria-hidden="true">以可控的较低强度连续积累时间和稳定节奏，不把每次都做成力竭。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">一份间歇处方至少写清什么？</span><span class="face back" aria-hidden="true">工作段、恢复段、重复次数、目标强度和所用模式。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">长间歇与短间歇的共同原则？</span><span class="face back" aria-hidden="true">让工作与恢复共同服务目标；质量下滑时调整，而非只堆更多重复。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">法特莱克怎样避免变成乱冲？</span><span class="face back" aria-hidden="true">提前用路标、时间或RPE约定快慢边界，并保持路面、姿势和呼吸可控。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">重复训练为什么常要较长恢复？</span><span class="face back" aria-hidden="true">让下一次仍保持目标速度、技术与质量，而非在疲劳中勉强凑数量。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">极化80/20为何不能照抄？</span><span class="face back" aria-hidden="true">强度划分、统计单位、运动水平、项目和赛季阶段不同，实际分布应个体化。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">金字塔分布的基本形状？</span><span class="face back" aria-hidden="true">低强度最多，中等强度其次，高强度最少；不是无限增加中等强度。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">选训练方法的第一步？</span><span class="face back" aria-hidden="true">先明确要建立的适应、当前基础和可恢复剂量，再选最容易稳定执行的模式。</span></span></button></div></section><section class="panel orange"><h2>实操关联</h2><ul class="practice"><li>安排一次20—30分钟的舒适持续步行、骑行或椭圆，记录何时仍能完整说话以及结束后的局部反应。</li><li>把一次间歇写成具体格式：工作多久、恢复多久、做几次、以什么RPE或谈话能力完成；先从可重复版本开始。</li><li>在安全平路做一次简化法特莱克：2分钟舒适、30秒略快、90秒舒适，重复3次；全程不追求冲刺。</li><li>选择一个低冲击模式做3次短工作段，并在每次之间充分恢复；比较三次的节奏、RPE与姿势是否一致。</li><li>把本周所有有氧训练按低、中、高主观强度写成表，先看全周分布，再决定是否真的需要增加高强度。</li><li>若某次计划完成度明显偏低，下一次只调整一个变量：工作段、恢复、阻力、模式或总次数，而不是全部加码。</li></ul></section><section class="panel blue"><h2>练习题</h2><section class="question" data-answers="[1]" data-explanation="LSD强调可持续的连续活动与渐进耐受，不是无限堆时长或力竭。"><h3>1. 单选：哪种描述最符合LSD长慢距离？</h3><div class="options"><label class="option"><input type="radio" name="question-0" value="0"><span>A. 每次训练都做到无法说话</span></label><label class="option"><input type="radio" name="question-0" value="1"><span>B. 以可控较低强度连续积累时间与稳定节奏</span></label><label class="option"><input type="radio" name="question-0" value="2"><span>C. 只适用于跑步且不能骑车</span></label><label class="option"><input type="radio" name="question-0" value="3"><span>D. 只要时长越长越有效</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[2]" data-explanation="工作与恢复共同构成刺激，必须有明确格式才能判断和调整。"><h3>2. 单选：一份可执行的间歇处方最缺不了哪组信息？</h3><div class="options"><label class="option"><input type="radio" name="question-1" value="0"><span>A. 只写HIIT名称</span></label><label class="option"><input type="radio" name="question-1" value="1"><span>B. 只写最高心率</span></label><label class="option"><input type="radio" name="question-1" value="2"><span>C. 工作段、恢复段、次数、强度和模式</span></label><label class="option"><input type="radio" name="question-1" value="3"><span>D. 只写总时长</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[0,2,4]" data-explanation="变速要有边界；重复训练重高质量和充分恢复，不以疲劳堆量。"><h3>3. 多选：关于法特莱克和重复训练，哪些说法正确？</h3><div class="options"><label class="option"><input type="checkbox" name="question-2" value="0"><span>A. 法特莱克可按路标、时间或感觉有意变速</span></label><label class="option"><input type="checkbox" name="question-2" value="1"><span>B. 法特莱克等于随机全力冲刺</span></label><label class="option"><input type="checkbox" name="question-2" value="2"><span>C. 重复训练的较长恢复可保留下一次质量</span></label><label class="option"><input type="checkbox" name="question-2" value="3"><span>D. 重复训练质量下降仍应硬凑次数</span></label><label class="option"><input type="checkbox" name="question-2" value="4"><span>E. 两者都需要安全场地与可控技术</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[0,1,2,4]" data-explanation="极化或金字塔是整体分布框架，不能仅以单课或固定比例判断。"><h3>4. 多选：哪些是理解强度分布时应考虑的因素？</h3><div class="options"><label class="option"><input type="checkbox" name="question-3" value="0"><span>A. 低中高强度的划分方式</span></label><label class="option"><input type="checkbox" name="question-3" value="1"><span>B. 按时间还是按课次统计</span></label><label class="option"><input type="checkbox" name="question-3" value="2"><span>C. 项目、训练基础与赛季阶段</span></label><label class="option"><input type="checkbox" name="question-3" value="3"><span>D. 只看某一节高强度课</span></label><label class="option"><input type="checkbox" name="question-3" value="4"><span>E. 整周恢复与生活压力</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[1]" data-explanation="基础尚浅时先建立持续耐受，再以少量结构清楚、可恢复的刺激进阶。"><h3>5. 案例：小陈刚能稳定连续骑行20分钟，想立刻做10组全力冲刺。更合理的安排是？</h3><div class="options"><label class="option"><input type="radio" name="question-4" value="0"><span>A. 直接冲刺，越累越有效</span></label><label class="option"><input type="radio" name="question-4" value="1"><span>B. 先持续训练打基础，再从少量可控间歇开始并记录恢复</span></label><label class="option"><input type="radio" name="question-4" value="2"><span>C. 只缩短休息而不改变次数</span></label><label class="option"><input type="radio" name="question-4" value="3"><span>D. 把所有骑行改为重复训练</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[2]" data-explanation="重复训练的价值在于保留每次质量；速度和技术持续下降说明当前恢复或剂量不匹配。"><h3>6. 案例：小林做重复跑时，第二次后速度连续下降、姿势开始乱，休息也不足。他该怎么做？</h3><div class="options"><label class="option"><input type="radio" name="question-5" value="0"><span>A. 增加次数练意志</span></label><label class="option"><input type="radio" name="question-5" value="1"><span>B. 缩短休息以适应</span></label><label class="option"><input type="radio" name="question-5" value="2"><span>C. 结束或降低本次剂量，下一次调整恢复或工作段</span></label><label class="option"><input type="radio" name="question-5" value="3"><span>D. 忽略姿势，只记录总距离</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section></section><footer>Day 51/110<ul><li>ACSM：ACSM&#39;s Guidelines for Exercise Testing and Prescription，第11版，有氧训练处方与进阶原则相关章节。</li><li>Seiler S. What is Best Practice for Training Intensity and Duration Distribution in Endurance Athletes?，耐力训练强度分布的综述框架。</li><li>NSCA：Essentials of Strength Training and Conditioning，第4版，能量系统与间歇训练基本原则。</li><li>本课用于一般健身教育；胸痛、晕厥感、异常气促、持续疼痛或近期疾病恢复期间，应停止训练并咨询医疗或运动专业人员。</li></ul></footer></main><dialog aria-label="详情大图"><button class="icon-button" aria-label="关闭大图" title="关闭大图"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></button><img alt=""></dialog><script>document.querySelectorAll('.flip').forEach((button) => {
+  button.addEventListener('click', () => {
+    const pressed = button.getAttribute('aria-pressed') !== 'true';
+    button.setAttribute('aria-pressed', String(pressed));
+    button.querySelector('.front').setAttribute('aria-hidden', String(pressed));
+    button.querySelector('.back').setAttribute('aria-hidden', String(!pressed));
+  });
+});
+document.querySelectorAll('.question').forEach((question) => {
+  question.querySelector('.check').addEventListener('click', () => {
+    const selected = [...question.querySelectorAll('input:checked')].map((input) => Number(input.value)).sort();
+    const answer = question.querySelector('.answer');
+    answer.hidden = false;
+    if (!selected.length) { answer.textContent = '请先选择答案。'; delete question.dataset.result; return; }
+    const correct = JSON.stringify(selected) === JSON.stringify(JSON.parse(question.dataset.answers).sort());
+    question.dataset.result = correct ? 'correct' : 'wrong';
+    answer.textContent = `${correct ? '回答正确。' : '再想一想。'}${question.dataset.explanation}`;
+  });
+});
+const imageDialog = document.querySelector('dialog');
+document.querySelectorAll('[data-zoom]').forEach((button) => {
+  button.addEventListener('click', () => {
+    const original = button.querySelector('img');
+    const image = imageDialog.querySelector('img');
+    image.src = original.src;
+    image.alt = original.alt;
+    imageDialog.showModal();
+  });
+});
+imageDialog.querySelector('button').addEventListener('click', () => imageDialog.close());
+imageDialog.addEventListener('click', (event) => {
+  const rect = imageDialog.getBoundingClientRect();
+  if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) imageDialog.close();
+});
+</script></body></html>

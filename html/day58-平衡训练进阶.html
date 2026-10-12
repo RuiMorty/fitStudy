@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Day 58 · 平衡训练进阶</title><link rel="icon" type="image/svg+xml" href="assets/fitness-study-logo-open-circle.svg?v=a6d8e5caaa61"><style>:root { color-scheme: light; --ink: #111113; --muted: #71717a; --line: #e4e4e7; --accent: #ff5a1f; --green: #0ea66b; --blue: #2563eb; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; font-synthesis: none; letter-spacing: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); overflow-wrap: anywhere; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+img { display: block; max-width: 100%; }
+button:focus-visible, a:focus-visible, summary:focus-visible, input:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
+svg.icon { width: 20px; height: 20px; }
+.icon-button { display: inline-grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 1px solid var(--line); border-radius: 6px; background: white; }
+[hidden] { display: none !important; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
+
+body { background: #f6f8f7; font-size: 14px; line-height: 1.65; }
+main { max-width: 980px; margin: auto; padding: 24px 18px 60px; }
+.header { padding: 22px 4px 14px; }
+h1 { margin: 10px 0 8px; font-size: 36px; line-height: 1.2; }
+h1::before { content: ""; display: block; width: 34px; height: 4px; background: var(--accent); margin-bottom: 10px; }
+h2 { font-size: 17px; margin: 0 0 14px; }
+h3 { font-size: 16px; margin: 0 0 8px; }
+.sub { color: var(--muted); margin: 5px 0 18px; }
+.meta { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { display: inline-block; border: 1px solid var(--line); border-radius: 20px; background: white; color: var(--muted); padding: 3px 10px; font-size: 12px; font-weight: 600; }
+.chip:nth-child(1) { background: #e2f7eb; color: #15803d; border-color: transparent; }
+.chip:nth-child(2) { background: #e7f0fe; color: #2563eb; border-color: transparent; }
+.chip:nth-child(3) { background: #fff2e5; color: #9a4c05; border-color: transparent; }
+.panel, .figure, .warn, .mnemonic { background: white; border: 1px solid #e2e8e4; border-radius: 14px; box-shadow: 0 2px 12px rgba(20,40,30,.06); padding: 20px; margin: 16px 0; }
+.green { border-left: 5px solid var(--green); }
+.orange { border-left: 5px solid #ea7a17; }
+.blue { border-left: 5px solid #0ea5e9; }
+.takeaway { margin: 0; }
+.figure { text-align: center; }
+.figure button { display: block; position: relative; width: 100%; border: 0; padding: 0; background: white; cursor: zoom-in; }
+.figure img { max-height: 760px; width: 100%; object-fit: contain; }
+.figure .icon-button { position: absolute; bottom: 8px; right: 8px; background: #ffffffed; }
+.caption { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
+.kp { list-style: none; padding: 0; margin: 0; }
+.kp > li { border-bottom: 1px dashed #e2e8e4; }
+.kp > li:last-child { border-bottom: 0; }
+.kp summary { cursor: pointer; padding: 13px 8px; font-weight: 650; }
+.kp summary::marker { color: var(--green); }
+.term { color: #0a7d52; background: #e2f7eb; border-radius: 6px; padding: 1px 5px; }
+.kp-body { padding: 2px 14px 16px 24px; }
+.detail-block { margin: 12px 0; }
+.detail-block h4 { font-size: 13px; color: #08744d; margin: 0 0 4px; }
+.detail-block p { margin: 0; white-space: pre-line; }
+.warn { border-left: 5px solid #e23b3b; background: #fffafa; }
+.warn p { margin: 8px 0; }
+.misconception { color: #a82b32; }
+.mnemonic { border-left: 4px solid var(--accent); box-shadow: none; }
+.mnemonic strong { color: #df4716; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+.flip { height: 168px; perspective: 900px; border: 0; background: transparent; padding: 0; text-align: center; }
+.flip-in { display: block; height: 100%; position: relative; transition: transform .45s; transform-style: preserve-3d; }
+.flip[aria-pressed="true"] .flip-in { transform: rotateY(180deg); }
+.face { position: absolute; inset: 0; backface-visibility: hidden; border: 1px solid var(--line); border-radius: 10px; padding: 15px; background: #fafafa; display: flex; align-items: center; justify-content: center; overflow-y: auto; }
+.back { transform: rotateY(180deg); background: #eef9f4; color: #075e40; border-color: #c8eadb; }
+.practice { padding-left: 20px; }
+.practice li { margin: 7px 0; }
+.question { border-top: 1px solid #e2e8e4; padding: 20px 0 8px; margin-top: 12px; min-width: 0; }
+.options { display: grid; gap: 7px; margin: 10px 0; }
+.option { display: flex; gap: 10px; align-items: baseline; border: 1px solid #e2e8e4; background: #f0f4f2; padding: 9px 12px; border-radius: 8px; cursor: pointer; }
+.option input { flex-shrink: 0; accent-color: var(--green); }
+.option:has(input:checked) { border-color: #0ea5e9; background: #e7f6fd; }
+.question[data-result="correct"] .option:has(input:checked) { border-color: #0ea66b; background: #e7f8ef; }
+.question[data-result="wrong"] .option:has(input:checked) { border-color: #e23b3b; background: #fff0f0; }
+.answer { background: #f8fbfa; border-left: 3px solid #0ea5e9; padding: 10px; margin-top: 10px; }
+.check { border: 0; background: #0ea66b; color: white; padding: 9px 14px; border-radius: 7px; }
+footer { color: var(--muted); font-size: 12px; margin-top: 28px; }
+footer ul { padding-left: 20px; }
+dialog { width: min(1200px, 96vw); max-height: 94dvh; padding: 52px 16px 16px; border: 0; border-radius: 8px; background: white; }
+dialog::backdrop { background: #15191dd9; }
+dialog img { width: 100%; max-height: 78dvh; object-fit: contain; }
+dialog .icon-button { position: absolute; top: 8px; right: 10px; }
+@media (max-width: 600px) {
+  main { padding: 16px 12px 40px; }
+  h1 { font-size: 26px; }
+  .header { padding: 16px 4px 12px; }
+  .panel, .figure, .warn, .mnemonic { padding: 15px; }
+  .kp-body { padding-left: 16px; }
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .face { padding: 12px; }
+}
+</style></head><body><main><header class="header"><h1>Day 58 · 平衡训练进阶</h1><p class="sub">先在可预测环境找到重心，再把控制带进移动与落地。</p><div class="meta"><span class="chip">感觉整合</span><span class="chip">单腿控制</span><span class="chip">安全进阶</span></div></header><section class="panel green"><h2>一句话总结</h2><p class="takeaway">平衡不是站得越摇晃越好，而是大脑持续整合视觉、前庭与体感／本体感觉信息，在支撑面和任务变化时管理重心。起点应是睁眼、稳固地面、附近有可靠支撑的可控版本；再把单腿控制带进触地、髋铰链、台阶和低冲击着地。进阶一次只改变支撑面、视觉条件、范围、速度、负荷或任务复杂度中的一项。疼痛、眩晕、反复失衡或明显代偿时，应回退并在需要时先做专业评估。</p></section><figure class="figure"><button data-zoom aria-label="放大详情图"><img class="" src="assets/阶段3 OPT训练模型/day58-平衡训练进阶.png" alt="平衡训练进阶四主题中文总览"><span class="icon-button"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 15 6 6" /><path d="m15 9 6-6" /><path d="M21 16v5h-5" /><path d="M21 8V3h-5" /><path d="M3 16v5h5" /><path d="m3 21 6-6" /><path d="M3 8V3h5" /><path d="M9 9 3 3" /></svg></span></button><figcaption class="caption">平衡训练整合视觉、前庭与体感信息；稳定控制是移动、着地和防跌倒进阶的前提。</figcaption></figure><section class="panel"><h2>核心要点</h2><ul class="kp"><li><details><summary><span class="term">平衡是感觉整合，不只是“感觉好”</span>：视觉、前庭与体感／本体感觉共同提供身体和环境信息；任务或环境一变，平衡策略也会变化。</summary><div class="kp-body"><section class="detail-block"><h4>三路输入一起工作</h4><p>视觉提供身体与环境的相对位置；前庭系统感知头部运动及相对重力方向；足底、关节和肌肉的体感／本体感觉提供接触与位置线索。大脑会根据任务整合这些输入，而不是依赖某一种“平衡感”。</p></section><section class="detail-block"><h4>改变条件就改变任务</h4><p>转头、看远处目标、缩窄站距、改变地面或加快动作，都可能改变所需策略。闭眼会减少视觉线索，却不是人人都必须经历的升级；先问当前版本能否安全、自然呼吸并维持对线。</p></section></div></details></li><li><details><summary><span class="term">稳定化平衡：先站得住、站得齐</span>：从睁眼、稳固地面和可近扶手的版本开始，用单腿控制观察足部、膝、骨盆和呼吸。</summary><div class="kp-body"><section class="detail-block"><h4>先选可退出的起点</h4><p>可从窄站距、前后站或轻支撑单腿站立开始，附近保留稳固扶手或墙面。目标不是硬撑时间，而是在该版本中能自然呼吸、平稳下放脚并随时安全退出。</p></section><section class="detail-block"><h4>看控制而非晃动</h4><p>观察足部接触是否稳定、膝盖是否大致随足部方向、骨盆是否明显侧移，以及躯干是否靠大幅摆动维持姿势。反复抓扶手、疼痛、明显塌膝或持续失衡，说明应增加支撑、缩短时间或回到更简单版本。</p></section></div></details></li><li><details><summary><span class="term">动作化平衡：把控制带进移动和落地</span>：单腿髋铰链、触地伸手、台阶控制和低冲击着地，都要求身体移动时继续管理重心与对线。</summary><div class="kp-body"><section class="detail-block"><h4>从小范围和慢速度开始</h4><p>轻支撑单腿罗马尼亚硬拉、前后轻触地或低台阶下台，可让重心在移动中仍保持可控。先减少范围、速度和负荷；髋部控制、膝足方向与能停止的能力，比做到多深或多快更优先。</p></section><section class="detail-block"><h4>落地先安静，后弹性</h4><p>低冲击跳跃或落地应建立在已有静态单腿控制基础上。观察脚步是否安静、躯干是否能管理、膝足方向是否可控，以及能否无疼痛地重复；跳得高或没有摔倒都不足以证明平衡质量。</p></section></div></details></li><li><details><summary><span class="term">进阶与防跌倒：一次只改一个变量</span>：支撑面、视觉线索、静态到动态、范围、速度、负荷与任务复杂度都可改变，但每一步只加一项挑战。</summary><div class="kp-body"><section class="detail-block"><h4>不是固定的难度阶梯</h4><p>稳定到较不稳定、静态到动态、睁眼到减少视觉线索，是可能的路径而非每个人的必经顺序。当前版本连续多次仍可控后，再有目的地选择一个变量改变，并记录哪一项影响了质量。</p></section><section class="detail-block"><h4>安全环境是训练的一部分</h4><p>平衡训练可成为老年人与部分康复计划的防跌倒组成，但有近期跌倒、眩晕、疼痛、明显神经症状或新近伤病时，应先由合格专业人员评估。训练区清空障碍、保留可靠支撑，不把闭眼或不稳定器械当作默认选择。</p></section></div></details></li></ul></section><section class="warn"><h2>常见误区</h2><p><strong class="misconception">误区：平衡训练必须站在BOSU上，越摇晃越有效。</strong><br>辨析：稳固地面上的高质量控制同样是训练；不稳定面只是合适时改变任务条件的一种工具。</p><p><strong class="misconception">误区：闭眼一定更高级，所以应尽早加入。</strong><br>辨析：闭眼显著改变感觉策略和风险，只应在安全环境、已有可控基础和合适目标下谨慎使用。</p><p><strong class="misconception">误区：单腿练习膝盖晃、骨盆歪，继续做就会自己变好。</strong><br>辨析：明显代偿应缩小范围、减速、增加支撑或回到静态版本，而不是硬撑。</p><p><strong class="misconception">误区：跳跃落地只要不摔倒，就说明平衡好。</strong><br>辨析：还要看安静着地、躯干与膝足控制、无疼痛以及能否重复保持质量。</p></section><section class="mnemonic"><h2>记忆口诀</h2><p><strong>三路感知先站稳，眼开地稳再动身；每次只加一变量，失控疼痛就回程。</strong></p></section><section class="panel"><h2>翻转卡复习</h2><div class="cards"><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">平衡主要整合哪三类感觉输入？</span><span class="face back" aria-hidden="true">视觉、前庭与体感／本体感觉。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">静态与动作化平衡的差别？</span><span class="face back" aria-hidden="true">前者在较少移动下管理重心；后者在移动、触地或落地中维持控制。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">单腿平衡的合适起点？</span><span class="face back" aria-hidden="true">睁眼、稳固地面、附近有可靠支撑，并能自然呼吸和维持对线。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">动作化平衡的代表练习？</span><span class="face back" aria-hidden="true">单腿髋铰链、单腿触地伸手、台阶控制或低冲击着地。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">平衡进阶的核心规则？</span><span class="face back" aria-hidden="true">一次只改变一个变量，当前版本可控后才加难度。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">何时应回退练习？</span><span class="face back" aria-hidden="true">疼痛、反复失去平衡、明显塌膝或骨盆偏移、抓扶手或无法呼吸时。</span></span></button></div></section><section class="panel orange"><h2>实操关联</h2><ul class="practice"><li>在稳固扶手旁，依序尝试窄站距、前后站和单腿轻触；记录能自然呼吸且姿势可控的版本。</li><li>做轻支撑单腿罗马尼亚硬拉：先缩小髋铰链范围，保持骨盆和躯干稳定，再逐步减少手部辅助。</li><li>已能稳定单腿控制者，可从低台阶下台或原地轻落地开始；以安静、膝足方向可控为完成标准。</li><li>为同一个练习设计一条进阶链，每一步只改支撑面、动作范围、视觉条件或速度中的一项。</li></ul></section><section class="panel blue"><h2>练习题</h2><section class="question" data-answers="[0]" data-explanation="视觉、前庭和体感／本体感觉共同提供身体与环境线索；平衡任务会整合这些输入。"><h3>1. 单选：哪组是平衡控制的三类主要感觉输入？</h3><div class="options"><label class="option"><input type="radio" name="question-0" value="0"><span>A. 视觉、前庭、体感／本体感觉</span></label><label class="option"><input type="radio" name="question-0" value="1"><span>B. 听觉、嗅觉、味觉</span></label><label class="option"><input type="radio" name="question-0" value="2"><span>C. 肌肉围度、体脂、体重</span></label><label class="option"><input type="radio" name="question-0" value="3"><span>D. 速度、力量、耐力</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[1]" data-explanation="反复抓扶手与明显代偿说明当前版本超出可控范围，应先增加安全与可控性。"><h3>2. 单选：单腿站立出现明显骨盆偏移并持续抓扶手，最合适的处理是？</h3><div class="options"><label class="option"><input type="radio" name="question-1" value="0"><span>A. 闭眼增加难度</span></label><label class="option"><input type="radio" name="question-1" value="1"><span>B. 回到睁眼、稳固地面、较短时间或更多支撑</span></label><label class="option"><input type="radio" name="question-1" value="2"><span>C. 立刻加跳跃</span></label><label class="option"><input type="radio" name="question-1" value="3"><span>D. 继续硬撑到规定秒数</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[0,2,3,4]" data-explanation="合理进阶以当前质量为门槛，每次只改变一个变量并保留安全条件；同时叠加多项挑战不利于判断与控制。"><h3>3. 多选：哪些属于合理的平衡进阶做法？</h3><div class="options"><label class="option"><input type="checkbox" name="question-2" value="0"><span>A. 当前版本可控后再小幅增加动作范围</span></label><label class="option"><input type="checkbox" name="question-2" value="1"><span>B. 一次同时加负荷、速度、不稳定面和闭眼</span></label><label class="option"><input type="checkbox" name="question-2" value="2"><span>C. 安全条件下谨慎减少视觉线索</span></label><label class="option"><input type="checkbox" name="question-2" value="3"><span>D. 保留可靠支撑与退出空间</span></label><label class="option"><input type="checkbox" name="question-2" value="4"><span>E. 根据目标逐一改变任务变量</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[1]" data-explanation="当前出现多项失控信号，应先回到安全、可控的基础版本，再按单变量原则进阶。"><h3>4. 案例：学员在闭眼半圆球上反复失衡、膝盖内扣，却想加入跳跃。下一步最合适的是？</h3><div class="options"><label class="option"><input type="radio" name="question-3" value="0"><span>A. 继续闭眼半圆球并加跳跃</span></label><label class="option"><input type="radio" name="question-3" value="1"><span>B. 先回到睁眼稳固地面，恢复单腿控制和对线，再一次只加一个变量</span></label><label class="option"><input type="radio" name="question-3" value="2"><span>C. 用更重的壶铃固定姿势</span></label><label class="option"><input type="radio" name="question-3" value="3"><span>D. 只延长训练时间</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section></section><footer>Day 58/110 · NASM<ul><li>NASM：Balance Training Concepts 与OPT稳定耐力阶段的平衡训练框架。</li><li>ACSM：ACSM&#39;s Guidelines for Exercise Testing and Prescription，第11版，运动进阶与安全原则。</li><li>World Health Organization：Step Safely，老年人防跌倒与安全环境的一般建议。</li><li>本课为一般健身教育；近期跌倒、眩晕、疼痛、明显神经症状或新近伤病恢复期，请先咨询医疗或合格运动专业人员。</li></ul></footer></main><dialog aria-label="详情大图"><button class="icon-button" aria-label="关闭大图" title="关闭大图"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></button><img alt=""></dialog><script>document.querySelectorAll('.flip').forEach((button) => {
+  button.addEventListener('click', () => {
+    const pressed = button.getAttribute('aria-pressed') !== 'true';
+    button.setAttribute('aria-pressed', String(pressed));
+    button.querySelector('.front').setAttribute('aria-hidden', String(pressed));
+    button.querySelector('.back').setAttribute('aria-hidden', String(!pressed));
+  });
+});
+document.querySelectorAll('.question').forEach((question) => {
+  question.querySelector('.check').addEventListener('click', () => {
+    const selected = [...question.querySelectorAll('input:checked')].map((input) => Number(input.value)).sort();
+    const answer = question.querySelector('.answer');
+    answer.hidden = false;
+    if (!selected.length) { answer.textContent = '请先选择答案。'; delete question.dataset.result; return; }
+    const correct = JSON.stringify(selected) === JSON.stringify(JSON.parse(question.dataset.answers).sort());
+    question.dataset.result = correct ? 'correct' : 'wrong';
+    answer.textContent = `${correct ? '回答正确。' : '再想一想。'}${question.dataset.explanation}`;
+  });
+});
+const imageDialog = document.querySelector('dialog');
+document.querySelectorAll('[data-zoom]').forEach((button) => {
+  button.addEventListener('click', () => {
+    const original = button.querySelector('img');
+    const image = imageDialog.querySelector('img');
+    image.src = original.src;
+    image.alt = original.alt;
+    imageDialog.showModal();
+  });
+});
+imageDialog.querySelector('button').addEventListener('click', () => imageDialog.close());
+imageDialog.addEventListener('click', (event) => {
+  const rect = imageDialog.getBoundingClientRect();
+  if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) imageDialog.close();
+});
+</script></body></html>

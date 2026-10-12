@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "kind": "fitnessstudy-content-planning-batch",
+  "createdAt": "2026-09-30",
+  "status": "content-only-not-generated",
+  "scope": {
+    "curriculumSource": "fitness_syllabus.md, Day 68 through Day 77",
+    "templateReference": "templates/study/v1/README.md",
+    "imageStyleReference": "templates/study/v1/image-style.md and image-style.json",
+    "lessonSchemaReference": "scripts/lib/study-template.js#validateLesson"
+  },
+  "guardrails": [
+    "These are planning drafts only: no image source, processed asset, detail composition, HTML, XHS PNG, ZIP, or installed package exists in this directory.",
+    "Each future implementation must use the shared renderer and create real transparent assets before rendering; no placeholder or reused unrelated art is authorized by this manifest.",
+    "No review state, batch state, formal progress file, deployment target, homepage, library ordering, shortlink, or public page is changed by this planning batch.",
+    "Prompt concepts are not generation requests. A future image request must follow the then-current user authorization and retry policy."
+  ],
+  "entries": [
+    {"day": 68, "topic": "营养基础复盘与运动营养时机", "lesson": "day68.lesson.json", "promptConcepts": "day68.image-prompt-concepts.json", "expectedAssetRoot": "runs/day68/assets", "status": "content-planned-assets-absent"},
+    {"day": 69, "topic": "肌肥大与减脂专项营养", "lesson": "day69.lesson.json", "promptConcepts": "day69.image-prompt-concepts.json", "expectedAssetRoot": "runs/day69/assets", "status": "content-planned-assets-absent"},
+    {"day": 70, "topic": "进食障碍识别与营养评估边界", "lesson": "day70.lesson.json", "promptConcepts": "day70.image-prompt-concepts.json", "expectedAssetRoot": "runs/day70/assets", "status": "content-planned-assets-absent"},
+    {"day": 71, "topic": "运动相关药物与禁用物质", "lesson": "day71.lesson.json", "promptConcepts": "day71.image-prompt-concepts.json", "expectedAssetRoot": "runs/day71/assets", "status": "content-planned-assets-absent"},
+    {"day": 72, "topic": "常见合法补剂评估", "lesson": "day72.lesson.json", "promptConcepts": "day72.image-prompt-concepts.json", "expectedAssetRoot": "runs/day72/assets", "status": "content-planned-assets-absent"},
+    {"day": 73, "topic": "补剂安全纯度与营养恢复复盘", "lesson": "day73.lesson.json", "promptConcepts": "day73.image-prompt-concepts.json", "expectedAssetRoot": "runs/day73/assets", "status": "content-planned-assets-absent"},
+    {"day": 74, "topic": "训练变量深化：休息、顺序与节奏", "lesson": "day74.lesson.json", "promptConcepts": "day74.image-prompt-concepts.json", "expectedAssetRoot": "runs/day74/assets", "status": "content-planned-assets-absent"},
+    {"day": 75, "topic": "微周期、分化与减量峰值", "lesson": "day75.lesson.json", "promptConcepts": "day75.image-prompt-concepts.json", "expectedAssetRoot": "runs/day75/assets", "status": "content-planned-assets-absent"},
+    {"day": 76, "topic": "特殊人群训练：老年、青少年、孕产与慢病", "lesson": "day76.lesson.json", "promptConcepts": "day76.image-prompt-concepts.json", "expectedAssetRoot": "runs/day76/assets", "status": "content-planned-assets-absent"},
+    {"day": 77, "topic": "特殊人群续：关节骨骼、运动员与低能量可用性", "lesson": "day77.lesson.json", "promptConcepts": "day77.image-prompt-concepts.json", "expectedAssetRoot": "runs/day77/assets", "status": "content-planned-assets-absent"}
+  ]
+}

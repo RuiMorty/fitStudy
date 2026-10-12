@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Day 71 · 运动相关药物与禁用物质</title><link rel="icon" type="image/svg+xml" href="assets/fitness-study-logo-open-circle.svg?v=a6d8e5caaa61"><style>:root { color-scheme: light; --ink: #111113; --muted: #71717a; --line: #e4e4e7; --accent: #ff5a1f; --green: #0ea66b; --blue: #2563eb; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; font-synthesis: none; letter-spacing: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); overflow-wrap: anywhere; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+img { display: block; max-width: 100%; }
+button:focus-visible, a:focus-visible, summary:focus-visible, input:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
+svg.icon { width: 20px; height: 20px; }
+.icon-button { display: inline-grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 1px solid var(--line); border-radius: 6px; background: white; }
+[hidden] { display: none !important; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
+
+body { background: #f6f8f7; font-size: 14px; line-height: 1.65; }
+main { max-width: 980px; margin: auto; padding: 24px 18px 60px; }
+.header { padding: 22px 4px 14px; }
+h1 { margin: 10px 0 8px; font-size: 36px; line-height: 1.2; }
+h1::before { content: ""; display: block; width: 34px; height: 4px; background: var(--accent); margin-bottom: 10px; }
+h2 { font-size: 17px; margin: 0 0 14px; }
+h3 { font-size: 16px; margin: 0 0 8px; }
+.sub { color: var(--muted); margin: 5px 0 18px; }
+.meta { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { display: inline-block; border: 1px solid var(--line); border-radius: 20px; background: white; color: var(--muted); padding: 3px 10px; font-size: 12px; font-weight: 600; }
+.chip:nth-child(1) { background: #e2f7eb; color: #15803d; border-color: transparent; }
+.chip:nth-child(2) { background: #e7f0fe; color: #2563eb; border-color: transparent; }
+.chip:nth-child(3) { background: #fff2e5; color: #9a4c05; border-color: transparent; }
+.panel, .figure, .warn, .mnemonic { background: white; border: 1px solid #e2e8e4; border-radius: 14px; box-shadow: 0 2px 12px rgba(20,40,30,.06); padding: 20px; margin: 16px 0; }
+.green { border-left: 5px solid var(--green); }
+.orange { border-left: 5px solid #ea7a17; }
+.blue { border-left: 5px solid #0ea5e9; }
+.takeaway { margin: 0; }
+.figure { text-align: center; }
+.figure button { display: block; position: relative; width: 100%; border: 0; padding: 0; background: white; cursor: zoom-in; }
+.figure img { max-height: 760px; width: 100%; object-fit: contain; }
+.figure .icon-button { position: absolute; bottom: 8px; right: 8px; background: #ffffffed; }
+.caption { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
+.kp { list-style: none; padding: 0; margin: 0; }
+.kp > li { border-bottom: 1px dashed #e2e8e4; }
+.kp > li:last-child { border-bottom: 0; }
+.kp summary { cursor: pointer; padding: 13px 8px; font-weight: 650; }
+.kp summary::marker { color: var(--green); }
+.term { color: #0a7d52; background: #e2f7eb; border-radius: 6px; padding: 1px 5px; }
+.kp-body { padding: 2px 14px 16px 24px; }
+.detail-block { margin: 12px 0; }
+.detail-block h4 { font-size: 13px; color: #08744d; margin: 0 0 4px; }
+.detail-block p { margin: 0; white-space: pre-line; }
+.warn { border-left: 5px solid #e23b3b; background: #fffafa; }
+.warn p { margin: 8px 0; }
+.misconception { color: #a82b32; }
+.mnemonic { border-left: 4px solid var(--accent); box-shadow: none; }
+.mnemonic strong { color: #df4716; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+.flip { height: 168px; perspective: 900px; border: 0; background: transparent; padding: 0; text-align: center; }
+.flip-in { display: block; height: 100%; position: relative; transition: transform .45s; transform-style: preserve-3d; }
+.flip[aria-pressed="true"] .flip-in { transform: rotateY(180deg); }
+.face { position: absolute; inset: 0; backface-visibility: hidden; border: 1px solid var(--line); border-radius: 10px; padding: 15px; background: #fafafa; display: flex; align-items: center; justify-content: center; overflow-y: auto; }
+.back { transform: rotateY(180deg); background: #eef9f4; color: #075e40; border-color: #c8eadb; }
+.practice { padding-left: 20px; }
+.practice li { margin: 7px 0; }
+.question { border-top: 1px solid #e2e8e4; padding: 20px 0 8px; margin-top: 12px; min-width: 0; }
+.options { display: grid; gap: 7px; margin: 10px 0; }
+.option { display: flex; gap: 10px; align-items: baseline; border: 1px solid #e2e8e4; background: #f0f4f2; padding: 9px 12px; border-radius: 8px; cursor: pointer; }
+.option input { flex-shrink: 0; accent-color: var(--green); }
+.option:has(input:checked) { border-color: #0ea5e9; background: #e7f6fd; }
+.question[data-result="correct"] .option:has(input:checked) { border-color: #0ea66b; background: #e7f8ef; }
+.question[data-result="wrong"] .option:has(input:checked) { border-color: #e23b3b; background: #fff0f0; }
+.answer { background: #f8fbfa; border-left: 3px solid #0ea5e9; padding: 10px; margin-top: 10px; }
+.check { border: 0; background: #0ea66b; color: white; padding: 9px 14px; border-radius: 7px; }
+footer { color: var(--muted); font-size: 12px; margin-top: 28px; }
+footer ul { padding-left: 20px; }
+dialog { width: min(1200px, 96vw); max-height: 94dvh; padding: 52px 16px 16px; border: 0; border-radius: 8px; background: white; }
+dialog::backdrop { background: #15191dd9; }
+dialog img { width: 100%; max-height: 78dvh; object-fit: contain; }
+dialog .icon-button { position: absolute; top: 8px; right: 10px; }
+@media (max-width: 600px) {
+  main { padding: 16px 12px 40px; }
+  h1 { font-size: 26px; }
+  .header { padding: 16px 4px 12px; }
+  .panel, .figure, .warn, .mnemonic { padding: 15px; }
+  .kp-body { padding-left: 16px; }
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .face { padding: 12px; }
+}
+</style></head><body><main><header class="header"><h1>Day 71 · 运动相关药物与禁用物质</h1><p class="sub">以最新规则、健康风险和执业边界为准，不把社交媒体当药物建议。</p><div class="meta"><span class="chip">反兴奋剂</span><span class="chip">健康风险</span><span class="chip">TUE</span></div></header><section class="panel green"><h2>一句话总结</h2><p class="takeaway">兴奋剂、AAS、肽类/生长因子、EPO、利尿剂和部分β2激动剂可能涉及表现、健康风险与反兴奋剂规则；具体禁用状态会随项目、比赛内外、给药途径和年度清单变化。运动员应使用适用组织的当前正式渠道核对；处方药不能因担心禁赛自行停用或更改。TUE由相应反兴奋剂组织按规则审查，不是教练可批准的通行证。教练应做一般教育、识别风险并转给医生、药师、队医或反兴奋剂机构。</p></section><figure class="figure"><button data-zoom aria-label="放大详情图"><img class="" src="assets/阶段4 营养恢复/day71-运动相关药物与禁用物质.png" alt="运动相关药物、禁用物质和转介边界中文总览"><span class="icon-button"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 15 6 6" /><path d="m15 9 6-6" /><path d="M21 16v5h-5" /><path d="M21 8V3h-5" /><path d="M3 16v5h5" /><path d="m3 21 6-6" /><path d="M3 8V3h5" /><path d="M9 9 3 3" /></svg></span></button><figcaption class="caption">禁用状态、治疗需要和健康风险需要以运动组织的最新规则及医生、药师、反兴奋剂机构的正式建议核对；教练不提供药物处方或停药建议。</figcaption></figure><section class="panel"><h2>核心要点</h2><ul class="kp"><li><details><summary><span class="term">类别能帮助识别，不能替代核对</span>：常见类别包括兴奋剂、AAS、生长激素等肽类/生长因子、EPO、利尿剂和部分β2激动剂；它们在概念上可影响兴奋、激素/组织信号、红细胞、体液或呼吸相关通路，具体规则仍以当期正式清单为准。</summary><div class="kp-body"><section class="detail-block"><h4>为什么不能背一张旧表</h4><p>禁用状态可能取决于比赛内或比赛外、项目、给药途径、阈值和年度更新。网络截图、朋友经验或补剂广告都不能取代运动组织的正式数据库、药师或反兴奋剂机构的核对。</p></section><section class="detail-block"><h4>名称相似不等于同一风险</h4><p>药物、成分、商品名和复方制剂容易混淆。运动员应保留处方和成分信息，在使用前向医生、药师、队医或适用的反兴奋剂服务确认，而不是请教练猜测。</p></section></div></details></li><li><details><summary><span class="term">健康风险不是“副作用小事”</span>：不同物质可能影响心血管、肝脏、内分泌、精神健康、体液和血液系统；非法来源还带来污染与剂量不明风险。</summary><div class="kp-body"><section class="detail-block"><h4>AAS与激素相关风险</h4><p>合成代谢雄激素类固醇可能与血压、血脂、心血管事件、肝脏损伤、内分泌抑制、生育问题、情绪和依赖风险相关。风险会受剂量、组合、既往健康和来源影响，不能用“别人没事”推断安全。</p></section><section class="detail-block"><h4>兴奋剂、利尿剂等也有代价</h4><p>兴奋剂可能增加心率、血压、焦虑、睡眠和热相关风险；利尿剂可造成脱水和电解质紊乱。出现胸痛、心悸、晕厥、严重焦虑或异常不适，应立即停止运动；症状严重、持续或伴呼吸困难、意识异常时，按当地紧急服务或医疗流程处理。</p></section></div></details></li><li><details><summary><span class="term">处方与TUE：走正式医疗和规则路径</span>：需要治疗的运动员应先保护健康、遵循处方，并尽早通过医生、药师、队医和相应反兴奋剂组织核对规则。</summary><div class="kp-body"><section class="detail-block"><h4>不要自行停药或换药</h4><p>处方药的开始、停止、剂量和替代只能由有处方权的临床人员决定。若运动员担心禁用状态，应带着完整药名、成分、用途和赛事信息去核对，而不是为了比赛冒险中断治疗。</p></section><section class="detail-block"><h4>TUE不是口头许可</h4><p>TUE通常需要符合医学必要性、无合理替代等规则并向相应组织提交材料；要求、时限和追溯条件因组织而异。应尽早咨询本项目的反兴奋剂机构，保存正式书面结果。</p></section></div></details></li><li><details><summary><span class="term">教练边界：不处方、不推荐、不掩盖</span>：教练可说明一般风险、鼓励正式核对、调整训练安全和转介；不能提供药物方案、停药建议或规避检测技巧。</summary><div class="kp-body"><section class="detail-block"><h4>面对“给我一个周期”</h4><p>明确拒绝提供剂量、组合、用法、来源、掩蔽或检测规避建议。可以把对话转向目标、训练、睡眠、营养、医学评估和反兴奋剂资源，并记录与安全有关的客观观察。</p></section><section class="detail-block"><h4>把高风险训练先降下来</h4><p>若出现心悸、胸痛、晕厥、异常血压症状、明显情绪变化或可疑药物不良反应，应停止运动并转介医疗人员；症状严重或持续时，按当地紧急服务或医疗流程处理。保密义务也受当地法律、机构政策和即时安全风险限制。</p></section></div></details></li></ul></section><section class="warn"><h2>常见误区</h2><p><strong class="misconception">误区：去年没被禁的成分，今年也一定安全合规。</strong><br>辨析：禁用状态会更新且取决于情境；必须核对当前、适用的正式反兴奋剂规则。</p><p><strong class="misconception">误区：处方药为了比赛可以自己停掉或换掉。</strong><br>辨析：处方调整只能由有处方权的临床人员决定；先保护健康，再走正式核对或TUE流程。</p><p><strong class="misconception">误区：TUE是教练或朋友一句同意就能拿到。</strong><br>辨析：TUE由相应反兴奋剂组织按医学和规则条件审查，需要正式材料和书面结果。</p><p><strong class="misconception">误区：教练可以给药物周期、来源或规避检测建议。</strong><br>辨析：这超出教练执业范围且可能造成严重健康与法律风险；应拒绝并转介合格专业人员。</p></section><section class="mnemonic"><h2>记忆口诀</h2><p><strong>规则看最新版，用药听医生；TUE走正式，教练不处方。</strong></p></section><section class="panel"><h2>翻转卡复习</h2><div class="cards"><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">为什么不能只看旧版禁药清单？</span><span class="face back" aria-hidden="true">规则会更新，还可能受比赛内外、项目、途径和阈值影响。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">AAS的风险可涉及哪些系统？</span><span class="face back" aria-hidden="true">心血管、肝脏、内分泌、生育与精神健康等，且来源可能不明。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">处方药担心禁赛时先做什么？</span><span class="face back" aria-hidden="true">不要自行停药；带完整信息找医生、药师、队医和适用反兴奋剂渠道核对。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">TUE由谁批准？</span><span class="face back" aria-hidden="true">由相应反兴奋剂组织按正式规则审查，不是教练口头许可。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">教练不能提供哪些建议？</span><span class="face back" aria-hidden="true">药物剂量、组合、来源、停药和规避检测方法。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">心悸或胸痛训练中出现时？</span><span class="face back" aria-hidden="true">停止高强度训练并尽快接受医疗评估；紧急时按当地急救流程。</span></span></button></div></section><section class="panel orange"><h2>实操关联</h2><ul class="practice"><li>为所在项目保存当前反兴奋剂机构、队医和药师的正式联系路径；不要把社交媒体帖当核对工具。</li><li>练习一段边界回应：我不能给药物或规避建议，但可以帮你联系医生、药师或反兴奋剂机构。</li><li>检查场馆的急救、事件记录和隐私流程，明确出现胸痛、晕厥或严重不适时谁负责升级处理。</li><li>若客户提到处方药，只记录训练安全相关的客观信息；不要求其分享不必要的病史或自行改变治疗。</li></ul></section><section class="panel blue"><h2>练习题</h2><section class="question" data-answers="[2]" data-explanation="禁用状态动态且情境相关，应使用当前正式渠道和合格临床人员核对。"><h3>1. 单选：运动员想确认一项药物是否禁用，最可靠的下一步是？</h3><div class="options"><label class="option"><input type="radio" name="question-0" value="0"><span>A. 问健身房朋友</span></label><label class="option"><input type="radio" name="question-0" value="1"><span>B. 查看旧截图</span></label><label class="option"><input type="radio" name="question-0" value="2"><span>C. 向适用的正式反兴奋剂渠道、医生或药师核对当前规则</span></label><label class="option"><input type="radio" name="question-0" value="3"><span>D. 自行停药</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[2]" data-explanation="TUE有医学材料和组织规则要求，不能由个人或教练自行宣布。"><h3>2. 单选：TUE最准确的描述是？</h3><div class="options"><label class="option"><input type="radio" name="question-1" value="0"><span>A. 教练口头批准</span></label><label class="option"><input type="radio" name="question-1" value="1"><span>B. 任何处方自动豁免</span></label><label class="option"><input type="radio" name="question-1" value="2"><span>C. 相应组织按规则审查治疗用药的正式程序</span></label><label class="option"><input type="radio" name="question-1" value="3"><span>D. 规避检测的技巧</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[0,2,3]" data-explanation="教练可做一般教育、安全调整和转介；处方、剂量及规避检测不在其职责范围。"><h3>3. 多选：下列哪些属于教练合适的反兴奋剂边界行为？</h3><div class="options"><label class="option"><input type="checkbox" name="question-2" value="0"><span>A. 说明一般风险并鼓励正式核对</span></label><label class="option"><input type="checkbox" name="question-2" value="1"><span>B. 提供药物剂量周期</span></label><label class="option"><input type="checkbox" name="question-2" value="2"><span>C. 出现不适时降低风险训练并转介</span></label><label class="option"><input type="checkbox" name="question-2" value="3"><span>D. 协助联系队医、药师或反兴奋剂机构</span></label><label class="option"><input type="checkbox" name="question-2" value="4"><span>E. 教授规避检测</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[2]" data-explanation="健康治疗和规则核对都应走正式路径；教练不能替代临床决策或提供规避建议。"><h3>4. 案例：一名参赛者说医生开了药，但担心赛前被禁，打算今天自己停用，并问你能否给替代药。更合适的是？</h3><div class="options"><label class="option"><input type="radio" name="question-3" value="0"><span>A. 替他选一种替代药</span></label><label class="option"><input type="radio" name="question-3" value="1"><span>B. 建议立刻自行停用</span></label><label class="option"><input type="radio" name="question-3" value="2"><span>C. 说明不能给药物建议，提醒不要自行改处方，并协助其联系处方医生、药师、队医和适用反兴奋剂机构</span></label><label class="option"><input type="radio" name="question-3" value="3"><span>D. 告诉他只要不说就没事</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section></section><footer>Day 71/110<ul><li>World Anti-Doping Agency：Prohibited List，须以赛事当年、适用版本及相应反兴奋剂组织说明为准。</li><li>World Anti-Doping Agency：Therapeutic Use Exemptions 国际标准，TUE的一般程序与医学必要性原则。</li><li>NSCA：Essentials of Strength Training and Conditioning，运动相关药物、健康风险与教练职责概述。</li><li>本课为一般教育，不提供处方、停药、剂量、来源或规避检测建议；药物和紧急不适请联系医生、药师、队医、反兴奋剂机构或当地急救服务。</li></ul></footer></main><dialog aria-label="详情大图"><button class="icon-button" aria-label="关闭大图" title="关闭大图"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></button><img alt=""></dialog><script>document.querySelectorAll('.flip').forEach((button) => {
+  button.addEventListener('click', () => {
+    const pressed = button.getAttribute('aria-pressed') !== 'true';
+    button.setAttribute('aria-pressed', String(pressed));
+    button.querySelector('.front').setAttribute('aria-hidden', String(pressed));
+    button.querySelector('.back').setAttribute('aria-hidden', String(!pressed));
+  });
+});
+document.querySelectorAll('.question').forEach((question) => {
+  question.querySelector('.check').addEventListener('click', () => {
+    const selected = [...question.querySelectorAll('input:checked')].map((input) => Number(input.value)).sort();
+    const answer = question.querySelector('.answer');
+    answer.hidden = false;
+    if (!selected.length) { answer.textContent = '请先选择答案。'; delete question.dataset.result; return; }
+    const correct = JSON.stringify(selected) === JSON.stringify(JSON.parse(question.dataset.answers).sort());
+    question.dataset.result = correct ? 'correct' : 'wrong';
+    answer.textContent = `${correct ? '回答正确。' : '再想一想。'}${question.dataset.explanation}`;
+  });
+});
+const imageDialog = document.querySelector('dialog');
+document.querySelectorAll('[data-zoom]').forEach((button) => {
+  button.addEventListener('click', () => {
+    const original = button.querySelector('img');
+    const image = imageDialog.querySelector('img');
+    image.src = original.src;
+    image.alt = original.alt;
+    imageDialog.showModal();
+  });
+});
+imageDialog.querySelector('button').addEventListener('click', () => imageDialog.close());
+imageDialog.addEventListener('click', (event) => {
+  const rect = imageDialog.getBoundingClientRect();
+  if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) imageDialog.close();
+});
+</script></body></html>

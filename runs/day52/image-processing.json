@@ -1,0 +1,435 @@
+{
+  "processedAt": "2026-09-30T02:21:57.106083+00:00",
+  "method": "trim near-transparent noise; reviewed crop; uniform scale; transparent margin",
+  "assets": [
+    {
+      "source": "runs/day52/source/cover.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "sourceSha256": "126f4b035828448d4977b6d2a7e9a18c8fa4fced535958a99b2ccc3014710ef3",
+      "reviewedCrop": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "visibleCrop": [
+        321,
+        16,
+        1404,
+        910
+      ],
+      "output": "runs/day52/assets/cover.png",
+      "size": [
+        1600,
+        900
+      ],
+      "subjectSize": [
+        959,
+        792
+      ],
+      "offset": [
+        320,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "无字封面"
+    },
+    {
+      "source": "runs/day52/source/visual-01-goal.png",
+      "sourceSize": [
+        1881,
+        836
+      ],
+      "sourceSha256": "8e32449802f21759b5f7ea6408ce18288a9392c1342eeb3c4c5e9f195db6b45c",
+      "reviewedCrop": [
+        0,
+        0,
+        1881,
+        836
+      ],
+      "visibleCrop": [
+        297,
+        11,
+        1586,
+        802
+      ],
+      "output": "runs/day52/assets/visual-01-goal.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1289,
+        791
+      ],
+      "offset": [
+        755,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "稳定耐力目标"
+    },
+    {
+      "source": "runs/day52/source/visual-02-variables.png",
+      "sourceSize": [
+        1774,
+        887
+      ],
+      "sourceSha256": "3d3c9ed391bd2ca7051225fddd5c3b862c970866123a9f1183f40a224afff1d8",
+      "reviewedCrop": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "visibleCrop": [
+        145,
+        3,
+        1632,
+        841
+      ],
+      "output": "runs/day52/assets/visual-02-variables.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1405,
+        792
+      ],
+      "offset": [
+        697,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "训练变量"
+    },
+    {
+      "source": "runs/day52/source/visual-03-progression.png",
+      "sourceSize": [
+        2209,
+        712
+      ],
+      "sourceSha256": "0335075ab25f6e566d3d544bba6327ecd463511bd7d3f81096e0df8b4934f778",
+      "reviewedCrop": [
+        0,
+        0,
+        2209,
+        712
+      ],
+      "visibleCrop": [
+        313,
+        7,
+        1935,
+        686
+      ],
+      "output": "runs/day52/assets/visual-03-progression.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1622,
+        679
+      ],
+      "offset": [
+        589,
+        110
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "进阶路径"
+    },
+    {
+      "source": "runs/day52/source/visual-04-library.png",
+      "sourceSize": [
+        1881,
+        836
+      ],
+      "sourceSha256": "6dd47f9d5a161e5b7bf12effa82d86124c786f4f858cbde7737c7be6fef52beb",
+      "reviewedCrop": [
+        0,
+        0,
+        1881,
+        836
+      ],
+      "visibleCrop": [
+        80,
+        155,
+        1836,
+        681
+      ],
+      "output": "runs/day52/assets/visual-04-library.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1756,
+        526
+      ],
+      "offset": [
+        522,
+        187
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "练习库"
+    },
+    {
+      "source": "runs/day52/retry-visual-05-checks-20260930/visual-05-checks-attempt-03.png",
+      "sourceSize": [
+        2213,
+        711
+      ],
+      "sourceSha256": "5093cecbf4fc53d5c8d2775d55c48f6a115a237366b005bb851d4c0c4cfe614b",
+      "reviewedCrop": [
+        0,
+        0,
+        2213,
+        711
+      ],
+      "visibleCrop": [
+        92,
+        0,
+        2086,
+        697
+      ],
+      "output": "runs/day52/assets/visual-05-checks.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1994,
+        697
+      ],
+      "offset": [
+        403,
+        101
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "组间检查；采用第3次请求"
+    },
+    {
+      "source": "runs/day52/source/overview-01-goal.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "7cfc9c067bde3463a34ecb8fcd4d69efbd6cbc67a7ddb16cfbb4f1648b12aa9b",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        135,
+        49,
+        1331,
+        1010
+      ],
+      "output": "runs/day52/assets/overview-01-goal.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1196,
+        961
+      ],
+      "offset": [
+        202,
+        119
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day52/source/overview-02-variables.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "eadfd02c78246ba4a27f49ca21fb5aeb10af53e17747de597218d8ed1071201d",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        189,
+        76,
+        1277,
+        978
+      ],
+      "output": "runs/day52/assets/overview-02-variables.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1088,
+        902
+      ],
+      "offset": [
+        256,
+        149
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day52/retry-overview-03-progression-20260930/overview-03-progression-attempt-03.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "00f9db4820be24cf65fb863ffead8d24b1b77fe1ea2d1c1433e33f5ee4d596c8",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        112,
+        53,
+        1377,
+        986
+      ],
+      "output": "runs/day52/assets/overview-03-progression.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1265,
+        933
+      ],
+      "offset": [
+        167,
+        133
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用；采用第3次请求"
+    },
+    {
+      "source": "runs/day52/source/overview-04-library.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "bafa9b82ce1f6c02af8f6a27b82bc532dade69813041ec89b79f14093ef71553",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        33,
+        232,
+        1438,
+        831
+      ],
+      "output": "runs/day52/assets/overview-04-library.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1405,
+        599
+      ],
+      "offset": [
+        97,
+        300
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day52/source/overview-05-checks.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "5db8fc02077a815267f622b22ef22fb9a5d232b7cca553910904a3a264347b70",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        232,
+        24,
+        1219,
+        1048
+      ],
+      "output": "runs/day52/assets/overview-05-checks.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        987,
+        1024
+      ],
+      "offset": [
+        306,
+        88
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    }
+  ]
+}

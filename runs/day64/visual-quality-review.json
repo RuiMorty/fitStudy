@@ -1,0 +1,40 @@
+{
+  "reviewer": "local source visual and alpha QA",
+  "requirements": [
+    "true-alpha transparent PNG with no rendered checkerboard or opaque background",
+    "wordless Bojji and Despa teaching art with coherent food and training props",
+    "no generated text, arrows, flow lines, bubbles, icons, charts, markers, collage panels, duplicate figures or clipped bodies",
+    "each overview asset is independently generated and is not reused as a knowledge-page asset"
+  ],
+  "technicalChecks": {
+    "checkedWith": [
+      "RGBA alpha extrema and transparent-background inspection",
+      "individual visual inspection on dark and white composites",
+      "character, prop, marker, clipping and topic-specific review"
+    ],
+    "result": "All nine selected source PNGs are non-empty RGBA files with alpha. No selected image has a rendered checkerboard, opaque canvas, generated text, prohibited marker, duplicate figure or clipped body/prop. The two selected overview candidates with tight raw margins are normalized by the required prepare-study-images.py alpha-bounds pipeline into the configured 6% final transparent margin before rendering."
+  },
+  "accepted": [
+    {"file":"cover.png","attempt":1,"source":"runs/day64/image-requests/cover-eb86e17540/attempt-01/cover.png","review":"Bojji, Despa, avocado, nuts and balanced fish/rice meal are complete and match the dietary-fat cover brief."},
+    {"file":"visual-01-role.png","attempt":2,"source":"runs/day64/image-requests/visual-01-role-0cd3690c78/attempt-02/visual-01-role.png","review":"Corrected single scene has only the two specified characters, food, oil dish and plain crate; no energy icon or collage."},
+    {"file":"visual-02-types.png","attempt":2,"source":"runs/day64/image-requests/visual-02-types-7c848bbf39/attempt-02/visual-02-types.png","review":"Corrected crown-free Despa and full figures express food-source context without labels or ranking devices."},
+    {"file":"visual-03-essential.png","attempt":1,"source":"runs/day64/image-requests/visual-03-essential-1c17dd9e24/attempt-01/visual-03-essential.png","review":"Fish plus seeds/nuts express food-source variety with no symbols or extra figures."},
+    {"file":"visual-04-timing.png","attempt":2,"source":"runs/day64/image-requests/visual-04-timing-9e5ddcd30d/attempt-02/visual-04-timing.png","review":"Corrected run and later balanced meal express timing without arrows, clocks or connectors."},
+    {"file":"overview-01-role.png","attempt":1,"source":"runs/day64/image-requests/overview-01-role-9b91f77a75/attempt-01/overview-01-role.png","review":"Independent overview scene is clean and semantically matched."},
+    {"file":"overview-02-types.png","attempt":3,"source":"runs/day64/image-requests/overview-02-types-4ed43fdf17/attempt-03/overview-02-types.png","review":"Independent fish-and-nuts-on-one-plate scene is clean; raw margin is reset by required alpha-bound preparation."},
+    {"file":"overview-03-essential.png","attempt":3,"source":"runs/day64/image-requests/overview-03-essential-24541fed3e/attempt-03/overview-03-essential.png","review":"Independent fish-and-seeds scene is clean; raw margin is reset by required alpha-bound preparation."},
+    {"file":"overview-04-timing.png","attempt":2,"source":"runs/day64/image-requests/overview-04-timing-06a74cefc3/attempt-02/overview-04-timing.png","review":"Corrected lunge, meal and avocado scene has no stomach bubble, icon or marker."}
+  ],
+  "rejected": [
+    {"file":"visual-01-role.png","attempt":1,"reason":"Extra human silhouette and glowing energy icon within bubbles created a prohibited collage."},
+    {"file":"visual-02-types.png","attempt":1,"reason":"Despa was given a crown and the artwork touched the canvas edge."},
+    {"file":"visual-04-timing.png","attempt":1,"reason":"Green dotted flow line and arrow were prohibited markers."},
+    {"file":"overview-02-types.png","attempt":1,"reason":"Detached floating fish and nuts read as a food collage."},
+    {"file":"overview-02-types.png","attempt":2,"reason":"Raw source margin was too tight; attempt 3 preserves clean semantics and is normalized by the required preparation step."},
+    {"file":"overview-03-essential.png","attempt":1,"reason":"Detached food piles and yellow attention marks created a collage and icon-like graphics."},
+    {"file":"overview-03-essential.png","attempt":2,"reason":"Raw source margin was too tight; attempt 3 preserves clean semantics and is normalized by the required preparation step."},
+    {"file":"overview-04-timing.png","attempt":1,"reason":"Thought bubbles with stomach pictograms and rays were prohibited."}
+  ],
+  "retriesUsed": 8,
+  "result": "9 selected source assets passed local source QA; rejected candidates and prompt history remain preserved."
+}

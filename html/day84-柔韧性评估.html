@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Day 84 · 柔韧性评估</title><link rel="icon" type="image/svg+xml" href="assets/fitness-study-logo-open-circle.svg?v=a6d8e5caaa61"><style>:root { color-scheme: light; --ink: #111113; --muted: #71717a; --line: #e4e4e7; --accent: #ff5a1f; --green: #0ea66b; --blue: #2563eb; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; font-synthesis: none; letter-spacing: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); overflow-wrap: anywhere; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+img { display: block; max-width: 100%; }
+button:focus-visible, a:focus-visible, summary:focus-visible, input:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
+svg.icon { width: 20px; height: 20px; }
+.icon-button { display: inline-grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 1px solid var(--line); border-radius: 6px; background: white; }
+[hidden] { display: none !important; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
+
+body { background: #f6f8f7; font-size: 14px; line-height: 1.65; }
+main { max-width: 980px; margin: auto; padding: 24px 18px 60px; }
+.header { padding: 22px 4px 14px; }
+h1 { margin: 10px 0 8px; font-size: 36px; line-height: 1.2; }
+h1::before { content: ""; display: block; width: 34px; height: 4px; background: var(--accent); margin-bottom: 10px; }
+h2 { font-size: 17px; margin: 0 0 14px; }
+h3 { font-size: 16px; margin: 0 0 8px; }
+.sub { color: var(--muted); margin: 5px 0 18px; }
+.meta { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { display: inline-block; border: 1px solid var(--line); border-radius: 20px; background: white; color: var(--muted); padding: 3px 10px; font-size: 12px; font-weight: 600; }
+.chip:nth-child(1) { background: #e2f7eb; color: #15803d; border-color: transparent; }
+.chip:nth-child(2) { background: #e7f0fe; color: #2563eb; border-color: transparent; }
+.chip:nth-child(3) { background: #fff2e5; color: #9a4c05; border-color: transparent; }
+.panel, .figure, .warn, .mnemonic { background: white; border: 1px solid #e2e8e4; border-radius: 14px; box-shadow: 0 2px 12px rgba(20,40,30,.06); padding: 20px; margin: 16px 0; }
+.green { border-left: 5px solid var(--green); }
+.orange { border-left: 5px solid #ea7a17; }
+.blue { border-left: 5px solid #0ea5e9; }
+.takeaway { margin: 0; }
+.figure { text-align: center; }
+.figure button { display: block; position: relative; width: 100%; border: 0; padding: 0; background: white; cursor: zoom-in; }
+.figure img { max-height: 760px; width: 100%; object-fit: contain; }
+.figure .icon-button { position: absolute; bottom: 8px; right: 8px; background: #ffffffed; }
+.caption { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
+.kp { list-style: none; padding: 0; margin: 0; }
+.kp > li { border-bottom: 1px dashed #e2e8e4; }
+.kp > li:last-child { border-bottom: 0; }
+.kp summary { cursor: pointer; padding: 13px 8px; font-weight: 650; }
+.kp summary::marker { color: var(--green); }
+.term { color: #0a7d52; background: #e2f7eb; border-radius: 6px; padding: 1px 5px; }
+.kp-body { padding: 2px 14px 16px 24px; }
+.detail-block { margin: 12px 0; }
+.detail-block h4 { font-size: 13px; color: #08744d; margin: 0 0 4px; }
+.detail-block p { margin: 0; white-space: pre-line; }
+.warn { border-left: 5px solid #e23b3b; background: #fffafa; }
+.warn p { margin: 8px 0; }
+.misconception { color: #a82b32; }
+.mnemonic { border-left: 4px solid var(--accent); box-shadow: none; }
+.mnemonic strong { color: #df4716; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+.flip { height: 168px; perspective: 900px; border: 0; background: transparent; padding: 0; text-align: center; }
+.flip-in { display: block; height: 100%; position: relative; transition: transform .45s; transform-style: preserve-3d; }
+.flip[aria-pressed="true"] .flip-in { transform: rotateY(180deg); }
+.face { position: absolute; inset: 0; backface-visibility: hidden; border: 1px solid var(--line); border-radius: 10px; padding: 15px; background: #fafafa; display: flex; align-items: center; justify-content: center; overflow-y: auto; }
+.back { transform: rotateY(180deg); background: #eef9f4; color: #075e40; border-color: #c8eadb; }
+.practice { padding-left: 20px; }
+.practice li { margin: 7px 0; }
+.question { border-top: 1px solid #e2e8e4; padding: 20px 0 8px; margin-top: 12px; min-width: 0; }
+.options { display: grid; gap: 7px; margin: 10px 0; }
+.option { display: flex; gap: 10px; align-items: baseline; border: 1px solid #e2e8e4; background: #f0f4f2; padding: 9px 12px; border-radius: 8px; cursor: pointer; }
+.option input { flex-shrink: 0; accent-color: var(--green); }
+.option:has(input:checked) { border-color: #0ea5e9; background: #e7f6fd; }
+.question[data-result="correct"] .option:has(input:checked) { border-color: #0ea66b; background: #e7f8ef; }
+.question[data-result="wrong"] .option:has(input:checked) { border-color: #e23b3b; background: #fff0f0; }
+.answer { background: #f8fbfa; border-left: 3px solid #0ea5e9; padding: 10px; margin-top: 10px; }
+.check { border: 0; background: #0ea66b; color: white; padding: 9px 14px; border-radius: 7px; }
+footer { color: var(--muted); font-size: 12px; margin-top: 28px; }
+footer ul { padding-left: 20px; }
+dialog { width: min(1200px, 96vw); max-height: 94dvh; padding: 52px 16px 16px; border: 0; border-radius: 8px; background: white; }
+dialog::backdrop { background: #15191dd9; }
+dialog img { width: 100%; max-height: 78dvh; object-fit: contain; }
+dialog .icon-button { position: absolute; top: 8px; right: 10px; }
+@media (max-width: 600px) {
+  main { padding: 16px 12px 40px; }
+  h1 { font-size: 26px; }
+  .header { padding: 16px 4px 12px; }
+  .panel, .figure, .warn, .mnemonic { padding: 15px; }
+  .kp-body { padding-left: 16px; }
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .face { padding: 12px; }
+}
+</style></head><body><main><header class="header"><h1>Day 84 · 柔韧性评估</h1><p class="sub">区分柔韧性、关节活动度和动作控制，用目标与安全边界决定如何记录。</p><div class="meta"><span class="chip">柔韧性</span><span class="chip">关节活动度</span><span class="chip">动作控制</span></div></header><section class="panel green"><h2>一句话总结</h2><p class="takeaway">柔韧性、关节活动度和动作控制并不等同。评估要根据目标选择合适测试，统一姿势、代偿限制、工具与左右记录；结果应导向保持、温和活动度工作或控制力量训练，而不是单纯追求更大数字。</p></section><figure class="figure"><button data-zoom aria-label="放大详情图"><img class="" src="assets/阶段6行为改变与评估/day84-柔韧性评估.png" alt="柔韧性评估中文总览图"><span class="icon-button"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 15 6 6" /><path d="m15 9 6-6" /><path d="M21 16v5h-5" /><path d="M21 8V3h-5" /><path d="M3 16v5h5" /><path d="m3 21 6-6" /><path d="M3 8V3h5" /><path d="M9 9 3 3" /></svg></span></button><figcaption class="caption">范围是否“更大”不是唯一答案；无痛、目标相关、可控制的动作更值得追踪。</figcaption></figure><section class="panel"><h2>核心要点</h2><ul class="kp"><li><details><summary><span class="term">柔韧性、ROM与控制不同</span>：柔韧性描述组织在拉长时的可接受程度；ROM是关节可达到的活动范围；动作控制是在任务中稳定使用范围的能力。范围大不自动等于动作好。</summary><div class="kp-body"><section class="detail-block"><h4>范围不是表现全部</h4><p>有人在被动或辅助条件下能达到较大范围，但在深蹲、举臂或单腿动作中仍可能无法控制躯干、骨盆或关节路径。训练决策应回到具体任务。</p></section><section class="detail-block"><h4>控制也不等于僵硬</h4><p>范围较小不必被直接判为问题；只要日常和训练目标无受限、无痛且控制良好，不需要为了数字强行追求更大幅度。</p></section></div></details></li><li><details><summary><span class="term">测试按目标选择</span>：坐位体前屈、背抓、关节角度记录或专项任务各有适用性。选择时先写清想了解哪一动作与哪一部位，而不是把一个测试当全身结论。</summary><div class="kp-body"><section class="detail-block"><h4>工具回答局部问题</h4><p>坐位体前屈受髋、脊柱、腘绳肌和手臂长度等多因素影响；背抓更接近肩带与上肢相关任务。单项结果不应外推成“全身柔软或僵硬”。</p></section><section class="detail-block"><h4>任务决定优先级</h4><p>若目标是无痛完成推举、深蹲或日常抬举，应记录与该任务相关的范围、代偿和控制。必要时由合适专业人员做更精细评估。</p></section></div></details></li><li><details><summary><span class="term">统一姿势与代偿限制</span>：起始姿势、关节对齐、工具、左右顺序与代偿限制决定复测是否可比。只要流程变化，数值变化就可能不是能力变化。</summary><div class="kp-body"><section class="detail-block"><h4>定义起点和终点</h4><p>记录从何处开始、何时结束、哪些代偿不计入，例如骨盆明显后倾、躯干扭转或耸肩出现时不把额外距离全算作目标关节范围。</p></section><section class="detail-block"><h4>左右都要记录</h4><p>左右差异需要在相同流程下记录并结合训练史、惯用侧、疼痛和任务需求理解。单次轻微差异不自动等于损伤或固定失衡。</p></section></div></details></li><li><details><summary><span class="term">结果导向合适干预</span>：评估结果可能提示保持现有范围、温和改善活动度或加强控制与力量。选择取决于目标动作、无痛程度、代偿和训练反应。</summary><div class="kp-body"><section class="detail-block"><h4>先选最小有效改变</h4><p>若目标动作已经无痛、稳定且满足需求，保持和继续练力量可能比增加拉伸量更合适。若范围限制任务，可在可接受范围内渐进活动度与控制练习。</p></section><section class="detail-block"><h4>和Day45衔接</h4><p>拉伸、PNF或活动度练习应有明确目标，并通过目标动作或日常任务复查。任何强压、疼痛或反应变差都不是“拉开了”的证据。</p></section></div></details></li><li><details><summary><span class="term">无痛与转介是底线</span>：柔韧性测试不应在疼痛中强压关节。急性伤病、神经症状、术后限制或明显、持续的不对称应停止一般测试并寻求适当评估。</summary><div class="kp-body"><section class="detail-block"><h4>疼痛不是有效范围</h4><p>到达不适、刺痛、麻木、放射感或关节卡住感时，不应通过外力继续推进。记录现象和停止条件，而不是自行给出组织诊断。</p></section><section class="detail-block"><h4>尊重限制与意愿</h4><p>术后、孕期、慢病或既往伤病的限制可能需要医疗或康复专业建议。训练者不同意被动测量或身体接触时，应尊重其选择并寻找适当替代。</p></section></div></details></li></ul></section><section class="warn"><h2>常见误区</h2><p><strong class="misconception">误区：柔韧性大就一定代表动作控制好。</strong><br>辨析：范围和控制相关但不等同；应观察范围能否在目标动作中无痛、稳定地使用。</p><p><strong class="misconception">误区：一个坐位体前屈成绩可以说明全身活动度。</strong><br>辨析：单项测试受多因素影响，只回答有限的局部问题。</p><p><strong class="misconception">误区：为了测到更大范围可以强压或忍痛。</strong><br>辨析：疼痛、麻木或卡住时应停止，不能把强压当作有效测量。</p><p><strong class="misconception">误区：左右差异一次出现就等于需要诊断。</strong><br>辨析：左右结果需在统一流程下结合训练史、任务和症状判断。</p><p><strong class="misconception">误区：评估后唯一正确选择就是多拉伸。</strong><br>辨析：结果可能指向保持、温和活动度工作或控制与力量训练。</p></section><section class="mnemonic"><h2>记忆口诀</h2><p><strong>先分范围与控制；同姿势、同工具、无痛再比较。</strong></p></section><section class="panel"><h2>翻转卡复习</h2><div class="cards"><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">柔韧性、ROM与控制不同？</span><span class="face back" aria-hidden="true">柔韧性、ROM和动作控制相关但不相同。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">测试按目标选择？</span><span class="face back" aria-hidden="true">先确定目标动作，再选择能回答局部问题的测试。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">统一姿势与代偿限制？</span><span class="face back" aria-hidden="true">统一起点、终点、工具和左右记录，才能比较变化。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">结果导向合适干预？</span><span class="face back" aria-hidden="true">结果可能指向保持、温和活动度或控制力量，不是只加拉伸。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">无痛与转介是底线？</span><span class="face back" aria-hidden="true">疼痛、神经症状、术后限制或不同意时，不强测并考虑转介。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">本课安排的首要原则？</span><span class="face back" aria-hidden="true">先分范围与控制；同姿势、同工具、无痛再比较。</span></span></button></div></section><section class="panel orange"><h2>实操关联</h2><ul class="practice"><li>为一个目标动作写下：要观察的范围、控制表现、允许的代偿和停止条件。</li><li>选择一个柔韧性或ROM记录，写明起始姿势、工具、左右顺序、终点标准和复测条件。</li><li>把一个评估结果分别改写成“保持”“温和活动度”“控制力量”三种可能下一步，并说明适用条件。</li><li>写出四个不进行一般柔韧性测试的情况，包括疼痛或神经症状、急性伤病、术后限制和不同意。</li></ul></section><section class="panel blue"><h2>练习题</h2><section class="question" data-answers="[2]" data-explanation="ROM和动作控制相关但不等同，应回到具体任务判断。"><h3>1. 单选：最能说明ROM与动作控制关系的说法是？</h3><div class="options"><label class="option"><input type="radio" name="question-0" value="0"><span>A. 范围大就一定控制好</span></label><label class="option"><input type="radio" name="question-0" value="1"><span>B. 范围和控制是同一件事</span></label><label class="option"><input type="radio" name="question-0" value="2"><span>C. 范围能否在目标动作中无痛稳定使用需要单独观察</span></label><label class="option"><input type="radio" name="question-0" value="3"><span>D. 只测一次就能诊断</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[1]" data-explanation="流程一致才更能解释变化。"><h3>2. 单选：想让前后柔韧性记录可比，应优先？</h3><div class="options"><label class="option"><input type="radio" name="question-1" value="0"><span>A. 每次换姿势</span></label><label class="option"><input type="radio" name="question-1" value="1"><span>B. 统一起始姿势、工具、代偿限制和左右流程</span></label><label class="option"><input type="radio" name="question-1" value="2"><span>C. 只记最大数字</span></label><label class="option"><input type="radio" name="question-1" value="3"><span>D. 在疼痛中多推一点</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[0,1,2,3]" data-explanation="这些情况都不应靠一般测试硬推进。"><h3>3. 多选：哪些信号应停止一般柔韧性测试？</h3><div class="options"><label class="option"><input type="checkbox" name="question-2" value="0"><span>A. 刺痛或麻木</span></label><label class="option"><input type="checkbox" name="question-2" value="1"><span>B. 急性伤病</span></label><label class="option"><input type="checkbox" name="question-2" value="2"><span>C. 术后限制不明</span></label><label class="option"><input type="checkbox" name="question-2" value="3"><span>D. 训练者不同意</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[1]" data-explanation="异常不适不是扩大范围的信号，应停止并遵循专业边界。"><h3>4. 案例：小宁做肩部活动度记录时出现放射样不适，教练最合适的做法是？</h3><div class="options"><label class="option"><input type="radio" name="question-3" value="0"><span>A. 继续加压力到终点</span></label><label class="option"><input type="radio" name="question-3" value="1"><span>B. 停止、记录现象并按需要转介</span></label><label class="option"><input type="radio" name="question-3" value="2"><span>C. 把疼痛算进更大范围</span></label><label class="option"><input type="radio" name="question-3" value="3"><span>D. 强迫对侧也做</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section></section><footer>Day 84/110<ul><li>ACSM运动测试与处方指南：评估选择、停止条件与专业边界。</li><li>NSCA Essentials of Strength Training and Conditioning：关节活动度、动作控制与训练计划。</li><li>本课为一般训练教育；疼痛、神经症状、急性伤病和术后限制应优先由适当专业人员评估。</li></ul></footer></main><dialog aria-label="详情大图"><button class="icon-button" aria-label="关闭大图" title="关闭大图"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></button><img alt=""></dialog><script>document.querySelectorAll('.flip').forEach((button) => {
+  button.addEventListener('click', () => {
+    const pressed = button.getAttribute('aria-pressed') !== 'true';
+    button.setAttribute('aria-pressed', String(pressed));
+    button.querySelector('.front').setAttribute('aria-hidden', String(pressed));
+    button.querySelector('.back').setAttribute('aria-hidden', String(!pressed));
+  });
+});
+document.querySelectorAll('.question').forEach((question) => {
+  question.querySelector('.check').addEventListener('click', () => {
+    const selected = [...question.querySelectorAll('input:checked')].map((input) => Number(input.value)).sort();
+    const answer = question.querySelector('.answer');
+    answer.hidden = false;
+    if (!selected.length) { answer.textContent = '请先选择答案。'; delete question.dataset.result; return; }
+    const correct = JSON.stringify(selected) === JSON.stringify(JSON.parse(question.dataset.answers).sort());
+    question.dataset.result = correct ? 'correct' : 'wrong';
+    answer.textContent = `${correct ? '回答正确。' : '再想一想。'}${question.dataset.explanation}`;
+  });
+});
+const imageDialog = document.querySelector('dialog');
+document.querySelectorAll('[data-zoom]').forEach((button) => {
+  button.addEventListener('click', () => {
+    const original = button.querySelector('img');
+    const image = imageDialog.querySelector('img');
+    image.src = original.src;
+    image.alt = original.alt;
+    imageDialog.showModal();
+  });
+});
+imageDialog.querySelector('button').addEventListener('click', () => imageDialog.close());
+imageDialog.addEventListener('click', (event) => {
+  const rect = imageDialog.getBoundingClientRect();
+  if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) imageDialog.close();
+});
+</script></body></html>

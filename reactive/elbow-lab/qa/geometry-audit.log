@@ -1,0 +1,349 @@
+00:00.616  blend            | Read blend: "/Users/agiuser/Documents/fit/reactive/elbow-lab/assets/elbow-right.blend"
+{
+  "note": "Triangle overlaps detect surface intersections, not anatomical contact validity; intended attachment junctions included. All surfaces schematic.",
+  "angles": [
+    {
+      "angle": 0,
+      "boneMuscleSurfaceIntersections": {
+        "muscle_brachialis_R / bone_humerus_R": 24,
+        "muscle_triceps_lateral_R / bone_humerus_R": 13,
+        "muscle_triceps_medial_R / bone_humerus_R": 22
+      },
+      "muscleSurfaceIntersections": {
+        "muscle_biceps_long_R / muscle_biceps_short_R": {
+          "pairs": 47,
+          "firstMusclePathFraction": [
+            0.87,
+            1.0
+          ],
+          "secondMusclePathFraction": [
+            0.86,
+            1.0
+          ]
+        },
+        "muscle_triceps_long_R / muscle_triceps_lateral_R": {
+          "pairs": 28,
+          "firstMusclePathFraction": [
+            0.92,
+            1.0
+          ],
+          "secondMusclePathFraction": [
+            0.93,
+            1.0
+          ]
+        },
+        "muscle_triceps_long_R / muscle_triceps_medial_R": {
+          "pairs": 27,
+          "firstMusclePathFraction": [
+            0.96,
+            1.0
+          ],
+          "secondMusclePathFraction": [
+            0.92,
+            1.0
+          ]
+        },
+        "muscle_triceps_lateral_R / muscle_triceps_medial_R": {
+          "pairs": 33,
+          "firstMusclePathFraction": [
+            0.96,
+            1.0
+          ],
+          "secondMusclePathFraction": [
+            0.86,
+            1.0
+          ]
+        }
+      },
+      "anchorSurfaceDistancesMm": {
+        "origin__muscle_biceps_long_R": 0.0,
+        "insertion__muscle_biceps_long_R": 0.0,
+        "origin__muscle_biceps_short_R": 0.0,
+        "insertion__muscle_biceps_short_R": 0.0,
+        "origin__muscle_brachialis_R": 0.0,
+        "insertion__muscle_brachialis_R": 0.0,
+        "origin__muscle_triceps_long_R": 0.0,
+        "insertion__muscle_triceps_long_R": 0.0,
+        "origin__muscle_triceps_lateral_R": 0.0,
+        "insertion__muscle_triceps_lateral_R": 0.0,
+        "origin__muscle_triceps_medial_R": 0.0,
+        "insertion__muscle_triceps_medial_R": 0.0
+      }
+    },
+    {
+      "angle": 30,
+      "boneMuscleSurfaceIntersections": {
+        "muscle_brachialis_R / bone_humerus_R": 22,
+        "muscle_triceps_lateral_R / bone_humerus_R": 13,
+        "muscle_triceps_medial_R / bone_humerus_R": 22
+      },
+      "muscleSurfaceIntersections": {
+        "muscle_biceps_long_R / muscle_biceps_short_R": {
+          "pairs": 47,
+          "firstMusclePathFraction": [
+            0.87,
+            1.0
+          ],
+          "secondMusclePathFraction": [
+            0.83,
+            1.0
+          ]
+        },
+        "muscle_triceps_long_R / muscle_triceps_lateral_R": {
+          "pairs": 26,
+          "firstMusclePathFraction": [
+            0.92,
+            1.0
+          ],
+          "secondMusclePathFraction": [
+            0.95,
+            1.0
+          ]
+        },
+        "muscle_triceps_long_R / muscle_triceps_medial_R": {
+          "pairs": 29,
+          "firstMusclePathFraction": [
+            0.96,
+            1.0
+          ],
+          "secondMusclePathFraction": [
+            0.92,
+            1.0
+          ]
+        },
+        "muscle_triceps_lateral_R / muscle_triceps_medial_R": {
+          "pairs": 30,
+          "firstMusclePathFraction": [
+            0.96,
+            1.0
+          ],
+          "secondMusclePathFraction": [
+            0.89,
+            1.0
+          ]
+        }
+      },
+      "anchorSurfaceDistancesMm": {
+        "origin__muscle_biceps_long_R": 0.0,
+        "insertion__muscle_biceps_long_R": 0.0,
+        "origin__muscle_biceps_short_R": 0.0,
+        "insertion__muscle_biceps_short_R": 0.0,
+        "origin__muscle_brachialis_R": 0.0,
+        "insertion__muscle_brachialis_R": 0.0,
+        "origin__muscle_triceps_long_R": 0.0,
+        "insertion__muscle_triceps_long_R": 0.0,
+        "origin__muscle_triceps_lateral_R": 0.0,
+        "insertion__muscle_triceps_lateral_R": 0.0,
+        "origin__muscle_triceps_medial_R": 0.0,
+        "insertion__muscle_triceps_medial_R": 0.0
+      }
+    },
+    {
+      "angle": 60,
+      "boneMuscleSurfaceIntersections": {
+        "muscle_brachialis_R / bone_humerus_R": 24,
+        "muscle_triceps_lateral_R / bone_humerus_R": 13,
+        "muscle_triceps_medial_R / bone_humerus_R": 22
+      },
+      "muscleSurfaceIntersections": {
+        "muscle_biceps_long_R / muscle_biceps_short_R": {
+          "pairs": 44,
+          "firstMusclePathFraction": [
+            0.87,
+            1.0
+          ],
+          "secondMusclePathFraction": [
+            0.83,
+            1.0
+          ]
+        },
+        "muscle_triceps_long_R / muscle_triceps_lateral_R": {
+          "pairs": 24,
+          "firstMusclePathFraction": [
+            0.94,
+            1.0
+          ],
+          "secondMusclePathFraction": [
+            0.95,
+            1.0
+          ]
+        },
+        "muscle_triceps_long_R / muscle_triceps_medial_R": {
+          "pairs": 31,
+          "firstMusclePathFraction": [
+            0.96,
+            1.0
+          ],
+          "secondMusclePathFraction": [
+            0.9,
+            1.0
+          ]
+        },
+        "muscle_triceps_lateral_R / muscle_triceps_medial_R": {
+          "pairs": 37,
+          "firstMusclePathFraction": [
+            0.94,
+            1.0
+          ],
+          "secondMusclePathFraction": [
+            0.86,
+            1.0
+          ]
+        }
+      },
+      "anchorSurfaceDistancesMm": {
+        "origin__muscle_biceps_long_R": 0.0,
+        "insertion__muscle_biceps_long_R": 0.0,
+        "origin__muscle_biceps_short_R": 0.0,
+        "insertion__muscle_biceps_short_R": 0.0,
+        "origin__muscle_brachialis_R": 0.0,
+        "insertion__muscle_brachialis_R": 0.0,
+        "origin__muscle_triceps_long_R": 0.0,
+        "insertion__muscle_triceps_long_R": 0.0,
+        "origin__muscle_triceps_lateral_R": 0.0,
+        "insertion__muscle_triceps_lateral_R": 0.0,
+        "origin__muscle_triceps_medial_R": 0.0,
+        "insertion__muscle_triceps_medial_R": 0.0
+      }
+    },
+    {
+      "angle": 90,
+      "boneMuscleSurfaceIntersections": {
+        "muscle_brachialis_R / bone_humerus_R": 31,
+        "muscle_triceps_lateral_R / bone_humerus_R": 13,
+        "muscle_triceps_medial_R / bone_humerus_R": 18
+      },
+      "muscleSurfaceIntersections": {
+        "muscle_biceps_long_R / muscle_biceps_short_R": {
+          "pairs": 47,
+          "firstMusclePathFraction": [
+            0.85,
+            1.0
+          ],
+          "secondMusclePathFraction": [
+            0.81,
+            1.0
+          ]
+        },
+        "muscle_triceps_long_R / muscle_triceps_lateral_R": {
+          "pairs": 24,
+          "firstMusclePathFraction": [
+            0.94,
+            1.0
+          ],
+          "secondMusclePathFraction": [
+            0.95,
+            1.0
+          ]
+        },
+        "muscle_triceps_long_R / muscle_triceps_medial_R": {
+          "pairs": 34,
+          "firstMusclePathFraction": [
+            0.94,
+            1.0
+          ],
+          "secondMusclePathFraction": [
+            0.9,
+            1.0
+          ]
+        },
+        "muscle_triceps_lateral_R / muscle_triceps_medial_R": {
+          "pairs": 40,
+          "firstMusclePathFraction": [
+            0.93,
+            1.0
+          ],
+          "secondMusclePathFraction": [
+            0.86,
+            1.0
+          ]
+        }
+      },
+      "anchorSurfaceDistancesMm": {
+        "origin__muscle_biceps_long_R": 0.0,
+        "insertion__muscle_biceps_long_R": 0.0,
+        "origin__muscle_biceps_short_R": 0.0,
+        "insertion__muscle_biceps_short_R": 0.0,
+        "origin__muscle_brachialis_R": 0.0,
+        "insertion__muscle_brachialis_R": 0.0,
+        "origin__muscle_triceps_long_R": 0.0,
+        "insertion__muscle_triceps_long_R": 0.0,
+        "origin__muscle_triceps_lateral_R": 0.0,
+        "insertion__muscle_triceps_lateral_R": 0.0,
+        "origin__muscle_triceps_medial_R": 0.0,
+        "insertion__muscle_triceps_medial_R": 0.0
+      }
+    },
+    {
+      "angle": 120,
+      "boneMuscleSurfaceIntersections": {
+        "muscle_brachialis_R / bone_humerus_R": 39,
+        "muscle_triceps_lateral_R / bone_humerus_R": 13,
+        "muscle_triceps_medial_R / bone_humerus_R": 18
+      },
+      "muscleSurfaceIntersections": {
+        "muscle_biceps_long_R / muscle_biceps_short_R": {
+          "pairs": 45,
+          "firstMusclePathFraction": [
+            0.85,
+            1.0
+          ],
+          "secondMusclePathFraction": [
+            0.81,
+            1.0
+          ]
+        },
+        "muscle_triceps_long_R / muscle_triceps_lateral_R": {
+          "pairs": 26,
+          "firstMusclePathFraction": [
+            0.94,
+            1.0
+          ],
+          "secondMusclePathFraction": [
+            0.95,
+            1.0
+          ]
+        },
+        "muscle_triceps_long_R / muscle_triceps_medial_R": {
+          "pairs": 34,
+          "firstMusclePathFraction": [
+            0.94,
+            1.0
+          ],
+          "secondMusclePathFraction": [
+            0.9,
+            1.0
+          ]
+        },
+        "muscle_triceps_lateral_R / muscle_triceps_medial_R": {
+          "pairs": 40,
+          "firstMusclePathFraction": [
+            0.93,
+            1.0
+          ],
+          "secondMusclePathFraction": [
+            0.86,
+            1.0
+          ]
+        }
+      },
+      "anchorSurfaceDistancesMm": {
+        "origin__muscle_biceps_long_R": 0.0,
+        "insertion__muscle_biceps_long_R": 0.0,
+        "origin__muscle_biceps_short_R": 0.0,
+        "insertion__muscle_biceps_short_R": 0.0,
+        "origin__muscle_brachialis_R": 0.0,
+        "insertion__muscle_brachialis_R": 0.0,
+        "origin__muscle_triceps_long_R": 0.0,
+        "insertion__muscle_triceps_long_R": 0.0,
+        "origin__muscle_triceps_lateral_R": 0.0,
+        "insertion__muscle_triceps_lateral_R": 0.0,
+        "origin__muscle_triceps_medial_R": 0.0,
+        "insertion__muscle_triceps_medial_R": 0.0
+      }
+    }
+  ]
+}
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 01:35:57)
+
+Blender quit

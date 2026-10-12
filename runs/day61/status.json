@@ -1,0 +1,19 @@
+{
+  "day": 61,
+  "title": "SSC增强式与速度敏捷",
+  "status": "awaiting-review",
+  "artifactStatus": "ready-local-draft",
+  "authorization": "用户于2026-09-30授权连续生成后续本地草稿；每张图片首次请求后最多5次经调整提示词重试，始终不部署。",
+  "imagePlan": "runs/day61/image-prompts.json",
+  "retryPolicy": "每张图片首次请求后，最多5次经调整提示词的重试；成功即停止。",
+  "generated": 11,
+  "planned": 11,
+  "sourceQualityReview": "runs/day61/visual-quality-review.json",
+  "verification": {
+    "templateTests": "17/17 passed",
+    "isolatedPackage": "scripts/verify-study-package.js --out /tmp/fitstudy-day61-stage.Zh0hgW passed",
+    "installedPackage": "scripts/verify-study-package.js --day 61 passed after local-host browser verification",
+    "zip": "xhs/day61/day61-xhs.zip CRC passed"
+  },
+  "nextAction": "等待用户验收本地稿；未经用户明确点名，不部署、不改首页、短链、排序或两份正式进度文件。"
+}

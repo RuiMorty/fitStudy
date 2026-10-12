@@ -1,0 +1,357 @@
+{
+  "processedAt": "2026-09-30T10:57:35.992264+00:00",
+  "method": "trim near-transparent noise; reviewed crop; uniform scale; transparent margin",
+  "assets": [
+    {
+      "source": "runs/day62/source/cover.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "sourceSha256": "60f92d62cb08f41c3f691154c9f8907c09608d478c70b9e68e3e143c9bf50826",
+      "reviewedCrop": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "visibleCrop": [
+        317,
+        10,
+        1440,
+        906
+      ],
+      "output": "runs/day62/assets/cover.png",
+      "size": [
+        1600,
+        900
+      ],
+      "subjectSize": [
+        993,
+        792
+      ],
+      "offset": [
+        303,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "无字封面"
+    },
+    {
+      "source": "runs/day62/source/visual-01-types.png",
+      "sourceSize": [
+        2210,
+        711
+      ],
+      "sourceSha256": "05d5b2ffc5b38877d847067e444bc0e2f33e2f12a5e8967e383f430cd3874bce",
+      "reviewedCrop": [
+        0,
+        0,
+        2210,
+        711
+      ],
+      "visibleCrop": [
+        317,
+        7,
+        1665,
+        704
+      ],
+      "output": "runs/day62/assets/visual-01-types.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1348,
+        697
+      ],
+      "offset": [
+        726,
+        101
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "小红书独立知识页，无字"
+    },
+    {
+      "source": "runs/day62/source/visual-02-glycogen.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "sourceSha256": "cf873cd4eedba44205658af5e96c1769c60760cfe1e2774447f321aa12269278",
+      "reviewedCrop": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "visibleCrop": [
+        185,
+        17,
+        1459,
+        923
+      ],
+      "output": "runs/day62/assets/visual-02-glycogen.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1114,
+        792
+      ],
+      "offset": [
+        843,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "小红书独立知识页，无字"
+    },
+    {
+      "source": "runs/day62/source/visual-03-gi-gl.png",
+      "sourceSize": [
+        1870,
+        841
+      ],
+      "sourceSha256": "4b2f891632aef332508526383ac4d1f3dd9fc83202eb775df941069b57decdb0",
+      "reviewedCrop": [
+        0,
+        0,
+        1870,
+        841
+      ],
+      "visibleCrop": [
+        67,
+        13,
+        1806,
+        822
+      ],
+      "output": "runs/day62/assets/visual-03-gi-gl.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1702,
+        792
+      ],
+      "offset": [
+        549,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "小红书独立知识页，无字"
+    },
+    {
+      "source": "runs/day62/source/visual-04-timing.png",
+      "sourceSize": [
+        1891,
+        831
+      ],
+      "sourceSha256": "0664d36539bef2b192ab7172a4d75fd17769003cfa72b91deb7ce251a68bef2f",
+      "reviewedCrop": [
+        0,
+        0,
+        1891,
+        831
+      ],
+      "visibleCrop": [
+        198,
+        8,
+        1625,
+        823
+      ],
+      "output": "runs/day62/assets/visual-04-timing.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1387,
+        792
+      ],
+      "offset": [
+        706,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "小红书独立知识页，无字"
+    },
+    {
+      "source": "runs/day62/source/overview-01-types.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "d8a624be2fcf6cab6b0748bcf7c92eb9eac4d3974853d446ea1dff85974ca9f2",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        195,
+        16,
+        1338,
+        1054
+      ],
+      "output": "runs/day62/assets/overview-01-types.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1143,
+        1038
+      ],
+      "offset": [
+        228,
+        81
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day62/source/overview-02-glycogen.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "02b79313b5a1afa138ff570f9bcc080f4adb80c490832e800d93b24d3ac84d8d",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        224,
+        0,
+        1227,
+        1063
+      ],
+      "output": "runs/day62/assets/overview-02-glycogen.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        996,
+        1056
+      ],
+      "offset": [
+        302,
+        72
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day62/source/overview-03-gi-gl.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "f634bbf1cbd14c2e8d2d8d2dff92501f8dc79bd5238f69a7653fb42ff5513c81",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        35,
+        41,
+        1400,
+        1017
+      ],
+      "output": "runs/day62/assets/overview-03-gi-gl.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1365,
+        976
+      ],
+      "offset": [
+        117,
+        112
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day62/source/overview-04-timing.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "b96bc72616a0ce9995966e1c043ee026c4102c33e838f0ba7fee768e07db971f",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        237,
+        13,
+        1245,
+        1072
+      ],
+      "output": "runs/day62/assets/overview-04-timing.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1005,
+        1056
+      ],
+      "offset": [
+        297,
+        72
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    }
+  ]
+}

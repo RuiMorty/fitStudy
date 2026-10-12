@@ -1,0 +1,50 @@
+{
+  "commonPrompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.",
+  "assets": [
+    {
+      "file": "cover.png",
+      "role": "cover",
+      "prompt": "Wide 16:9 wordless course cover. Exactly one Despa performs a controlled light dumbbell-free squat while exactly one Bojji holds a pencil above a completely blank, unmarked open notebook beside a balanced meal. Explain monitoring training and habits, not chasing a scale. The notebook pages must have no handwriting, lines, glyphs or pseudo-text. No scales, numbers, charts, text or diet branding. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    },
+    {
+      "file": "visual-01-balance.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Bojji sees two ordinary balanced meal settings on opposite sides, while exactly one Despa calmly performs a light walking warm-up in the center. Explain long-term intake and activity balance without a scale, numbers, food morality, arrows or charts. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    },
+    {
+      "file": "visual-02-tdee.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless knowledge illustration. Make one single continuous everyday scene: exactly one Despa carries one plain crate toward a simple meal table, while exactly one Bojji takes an easy walk nearby. Explain that total daily expenditure includes ordinary movement and eating context without a before-after sequence, repeated person, panel or collage. No calculator, formula, labels, arrows, charts or text. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    },
+    {
+      "file": "visual-03-preserve.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Despa performs a controlled light split squat; exactly one Bojji holds a plain balanced meal with rice, tofu and vegetables. Explain preserving training quality and lean tissue through resistance training, food and recovery. No muscular body transformation, scale, text or arrows. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    },
+    {
+      "file": "visual-04-boundary.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Bojji rests calmly seated with a simple notebook closed; exactly one Despa stands nearby with a supportive open hand, and a balanced meal is on a plain table. Explain small sustainable adjustments and seeking support. No sad drama, medical symbols, scale, text or warning icons. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    },
+    {
+      "file": "overview-01-balance.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Bojji stands beside a balanced plain meal; exactly one Despa performs a relaxed walking warm-up. Explain long-term energy balance without a scale, numbers, labels or charts. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    },
+    {
+      "file": "overview-02-tdee.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Despa carries a small plain crate while exactly one Bojji takes an easy walk. Explain several daily activity components. No calculator, formula, text or arrows. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    },
+    {
+      "file": "overview-03-preserve.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Despa performs a controlled light split squat while exactly one Bojji holds a balanced plain meal. Explain performance and recovery. No scale, transformation imagery, labels or text. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    },
+    {
+      "file": "overview-04-boundary.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Bojji rests calmly with a closed plain notebook while exactly one Despa offers a supportive open hand. Explain sustainable adjustment and support. No medical symbol, warning icon, text or scale. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    }
+  ]
+}

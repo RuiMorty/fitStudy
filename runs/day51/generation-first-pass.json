@@ -1,0 +1,139 @@
+{
+  "provider": "Lingzhi",
+  "preset": "quality",
+  "model": "gpt-image-2.5-sunburst",
+  "authorization": "用户于2026-09-30授权每图最多首次加5次重试；本记录仅为Day51首轮。",
+  "updatedAt": "2026-09-30T01:56:26.228980Z",
+  "assets": [
+    {
+      "file": "cover.png",
+      "role": "cover",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day51/source/cover.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 958101,
+      "sha256": "4f6978349771615e3fee05e9bd897e17dcef6b02ff720f4e2c2f1275f2763e93"
+    },
+    {
+      "file": "visual-01-lsd.png",
+      "role": "knowledge",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day51/source/visual-01-lsd.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 721457,
+      "sha256": "ebd9d69a01a72b848703f2cb2e330a48f2fb912387070502830dc0b9605eea45"
+    },
+    {
+      "file": "visual-02-intervals.png",
+      "role": "knowledge",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day51/source/visual-02-intervals.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 862291,
+      "sha256": "be434b3a8116c9a4c37610be6a17f5ef3f061c2018aa5a99b1cd2cbb8cd6f6bd"
+    },
+    {
+      "file": "visual-03-fartlek.png",
+      "role": "knowledge",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day51/source/visual-03-fartlek.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 1518769,
+      "sha256": "e558978450461a71d2920d43824cc8bfee45a42b68df07d8434de75befbcb19b"
+    },
+    {
+      "file": "visual-04-repetition.png",
+      "role": "knowledge",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day51/source/visual-04-repetition.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 751824,
+      "sha256": "1ccbb8f2f55ffab703cc60f1f07b925444d09de1890a8dd42587405573f81176"
+    },
+    {
+      "file": "visual-05-distribution.png",
+      "role": "knowledge",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day51/source/visual-05-distribution.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 894290,
+      "sha256": "0f40617998abf7e79794a14b855590f2052bfed4ab57e574e6d8cf12a2034ea5"
+    },
+    {
+      "file": "visual-06-selection.png",
+      "role": "knowledge",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day51/source/visual-06-selection.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 1209697,
+      "sha256": "175f15d1e70c3557b9849e7664b5ff4551a22cb49318538396c03fa2bfd0004e"
+    },
+    {
+      "file": "overview-01-lsd.png",
+      "role": "overview-item",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day51/source/overview-01-lsd.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 790619,
+      "sha256": "5e33cf2339b6270d75b7ef49183313572954f98e62d9f7f711ce561bb08e9c7c"
+    },
+    {
+      "file": "overview-02-intervals.png",
+      "role": "overview-item",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day51/source/overview-02-intervals.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 1057974,
+      "sha256": "796b5eea5446f5b8542e892c8764450e4b82cae223a23d765371ebf286e5bba3"
+    },
+    {
+      "file": "overview-03-fartlek.png",
+      "role": "overview-item",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day51/source/overview-03-fartlek.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 866088,
+      "sha256": "e909aca7657d46acadb7ce047e092390f16a265bbfb08728cd4ca7cfd13dcb91"
+    },
+    {
+      "file": "overview-04-repetition.png",
+      "role": "overview-item",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day51/source/overview-04-repetition.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 690283,
+      "sha256": "79e4bd7e6973d1f4d0fb87a004f55e9b78f8aec16ac6aa5603e359ad1cc43627"
+    },
+    {
+      "file": "overview-05-distribution.png",
+      "role": "overview-item",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day51/source/overview-05-distribution.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 962805,
+      "sha256": "e47da5c5c4995da2ebf0103a0618d4d512b34c4a16547065f06507823930644a"
+    },
+    {
+      "file": "overview-06-selection.png",
+      "role": "overview-item",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day51/source/overview-06-selection.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 875725,
+      "sha256": "a912cf02ce57d4ce9e60e4b99192ace3c171539e6bf5159787ce8ca682292e63"
+    }
+  ]
+}

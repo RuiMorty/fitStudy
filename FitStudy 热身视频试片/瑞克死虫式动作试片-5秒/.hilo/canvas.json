@@ -1,0 +1,128 @@
+{
+  "version": 1,
+  "mode": "workflow",
+  "nodes": [
+    {
+      "id": "7f9eab00-847a-476a-888f-c75b467f5451",
+      "type": "image",
+      "positions": {
+        "workflow": {
+          "x": 351,
+          "y": 395.5
+        }
+      },
+      "size": {
+        "width": 197,
+        "height": 350
+      },
+      "assetId": "eb7caa81-7496-4155-8fd8-b03be0fb6fe3",
+      "meta": {
+        "addedAt": 1790667137250
+      },
+      "data": {
+        "name": "deadbug-portrait-9x16-padded.png",
+        "path": "deadbug-portrait-9x16-padded.png"
+      }
+    },
+    {
+      "id": "c0c958d9-8012-491d-89ae-cf90a1684b73",
+      "type": "video",
+      "positions": {
+        "workflow": {
+          "x": 797.5,
+          "y": 505.5
+        }
+      },
+      "size": {
+        "width": 200,
+        "height": 350
+      },
+      "assetId": "bd26669a-c983-4196-8913-cba10d04b95f",
+      "meta": {
+        "addedAt": 1790668286817
+      },
+      "data": {
+        "aspectRatio": "adaptive",
+        "createdAt": "2026-09-29T07:59:21.558Z",
+        "generationStartedAt": "2026-09-29T07:59:17.440Z",
+        "mediaType": "video",
+        "retryPayload": {
+          "sourceNodeId": "c0c958d9-8012-491d-89ae-cf90a1684b73",
+          "prompt": "Animate one continuous 10-second 2D cartoon dead-bug exercise shot from the supplied first frame. Keep the same normal-proportioned Rick, face, spiky blue hair, white tank top, green shorts with red stripe, black wristbands, white shoes, teal mirrored gym, dark mat and fixed slightly elevated side camera. The first frame is the right-arm/left-leg extension endpoint. Blend the soft padded edges into the gym background without a visible floating photo border. Keep the full body, both hands and both shoes safely inside the 9:16 frame, with empty floor at the bottom for subtitles to be added later. 0–0.5s hold the first-frame pose. 0.5–4.5s move only the foreground RIGHT arm and far-side LEFT leg slowly back to tabletop: right arm rotates from its shoulder to vertical; left hip and knee bend to about 90 degrees, foot raised. 4.5–5.5s hold tabletop. 5.5–9.5s slowly extend those SAME two limbs back to the exact original pose, right arm toward screen left above the mat and left leg low toward screen right with shoe hovering above the mat. 9.5–10s hold the original pose. Far-side LEFT arm remains vertical and foreground RIGHT leg remains bent in tabletop throughout. Keep the back of the head, both shoulder blades, pelvis and lower back stable on the mat; torso actively braced, never limp. Exactly two connected arms, two hands, two connected legs and two shoes in every frame. No extra knee, shin or foot, no detached limb, reflection duplicate, other person, body morphing, head lift, crunch, bicycle kick, camera move, crop, cut, text, subtitle, voice, music or sound.",
+          "modelId": "MiniMax-H3",
+          "params": {
+            "image_mode": "first-last-frame",
+            "duration": "10",
+            "ratio": "adaptive",
+            "resolution": "768P",
+            "generate_audio": "false",
+            "model_name": "MiniMax-H3"
+          },
+          "backend": "minimax_v3",
+          "displayPrompt": "Animate one continuous 10-second 2D cartoon dead-bug exercise shot from the supplied first frame. Keep the same normal-proportioned Rick, face, spiky blue hair, white tank top, green shorts with red stripe, black wristbands, white shoes, teal mirrored gym, dark mat and fixed slightly elevated side camera. The first frame is the right-arm/left-leg extension endpoint. Blend the soft padded edges into the gym background without a visible floating photo border. Keep the full body, both hands and both shoes safely inside the 9:16 frame, with empty floor at the bottom for subtitles to be added later. 0–0.5s hold the first-frame pose. 0.5–4.5s move only the foreground RIGHT arm and far-side LEFT leg slowly back to tabletop: right arm rotates from its shoulder to vertical; left hip and knee bend to about 90 degrees, foot raised. 4.5–5.5s hold tabletop. 5.5–9.5s slowly extend those SAME two limbs back to the exact original pose, right arm toward screen left above the mat and left leg low toward screen right with shoe hovering above the mat. 9.5–10s hold the original pose. Far-side LEFT arm remains vertical and foreground RIGHT leg remains bent in tabletop throughout. Keep the back of the head, both shoulder blades, pelvis and lower back stable on the mat; torso actively braced, never limp. Exactly two connected arms, two hands, two connected legs and two shoes in every frame. No extra knee, shin or foot, no detached limb, reflection duplicate, other person, body morphing, head lift, crunch, bicycle kick, camera move, crop, cut, text, subtitle, voice, music or sound.",
+          "kind": "video",
+          "imagePaths": [
+            "deadbug-portrait-9x16-padded.png"
+          ],
+          "videoPaths": [],
+          "audioPaths": []
+        },
+        "name": "img2video-c0c958d9-8012-491d-89ae-cf90a1684b73.mp4",
+        "path": "img2video-c0c958d9-8012-491d-89ae-cf90a1684b73.mp4",
+        "duration": 10.125
+      }
+    },
+    {
+      "id": "c153eafc-2431-449c-95e0-98c69fb8c0f0",
+      "type": "image",
+      "positions": {
+        "workflow": {
+          "x": 367.5,
+          "y": 668
+        }
+      },
+      "size": {
+        "width": 350,
+        "height": 189
+      },
+      "assetId": "f747d0c0-5d82-46d4-96d2-13636896140b",
+      "meta": {
+        "addedAt": 1790668318038
+      },
+      "data": {
+        "name": "尾帧.png",
+        "path": "尾帧.png"
+      }
+    },
+    {
+      "id": "83f0ef52-dff4-45dd-9846-a39e9cfc47cf",
+      "type": "image",
+      "positions": {
+        "workflow": {
+          "x": 367.5,
+          "y": 434
+        }
+      },
+      "size": {
+        "width": 350,
+        "height": 194
+      },
+      "assetId": "d513a2d5-3ff3-431d-a5ec-6324a2d12d2f",
+      "meta": {
+        "addedAt": 1790668317821
+      },
+      "data": {
+        "name": "首帧.png",
+        "path": "首帧.png"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "7f9eab00-847a-476a-888f-c75b467f5451->c0c958d9-8012-491d-89ae-cf90a1684b73",
+      "source": "7f9eab00-847a-476a-888f-c75b467f5451",
+      "target": "c0c958d9-8012-491d-89ae-cf90a1684b73",
+      "type": "derivation"
+    }
+  ]
+}

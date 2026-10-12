@@ -1,0 +1,357 @@
+{
+  "processedAt": "2026-09-30T12:08:22.893190+00:00",
+  "method": "trim near-transparent noise; reviewed crop; uniform scale; transparent margin",
+  "assets": [
+    {
+      "source": "runs/day64/source/cover.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "sourceSha256": "1375052e61c92b797eff5d45eb1fbd946912d3b54b627dd77e75555420b0ec09",
+      "reviewedCrop": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "visibleCrop": [
+        127,
+        16,
+        1552,
+        917
+      ],
+      "output": "runs/day64/assets/cover.png",
+      "size": [
+        1600,
+        900
+      ],
+      "subjectSize": [
+        1253,
+        792
+      ],
+      "offset": [
+        173,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "无字封面"
+    },
+    {
+      "source": "runs/day64/source/visual-01-role.png",
+      "sourceSize": [
+        2212,
+        711
+      ],
+      "sourceSha256": "a2176f3819775307f704606162af7006bf43a3254623042e0c65d2f5490a5298",
+      "reviewedCrop": [
+        0,
+        0,
+        2212,
+        711
+      ],
+      "visibleCrop": [
+        529,
+        16,
+        1815,
+        685
+      ],
+      "output": "runs/day64/assets/visual-01-role.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1286,
+        669
+      ],
+      "offset": [
+        757,
+        115
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "小红书独立知识页，无字"
+    },
+    {
+      "source": "runs/day64/source/visual-02-types.png",
+      "sourceSize": [
+        2213,
+        711
+      ],
+      "sourceSha256": "77845e26cd6f471a6feb78769f7514cbe1b0b21166ba7e5b87b6a53e28da7732",
+      "reviewedCrop": [
+        0,
+        0,
+        2213,
+        711
+      ],
+      "visibleCrop": [
+        795,
+        11,
+        1449,
+        700
+      ],
+      "output": "runs/day64/assets/visual-02-types.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        654,
+        689
+      ],
+      "offset": [
+        1073,
+        105
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "小红书独立知识页，无字"
+    },
+    {
+      "source": "runs/day64/source/visual-03-essential.png",
+      "sourceSize": [
+        1881,
+        836
+      ],
+      "sourceSha256": "28187535074eed8fe278161b92c4bcdfb0a70c4253dced652ad996785f306063",
+      "reviewedCrop": [
+        0,
+        0,
+        1881,
+        836
+      ],
+      "visibleCrop": [
+        382,
+        13,
+        1602,
+        829
+      ],
+      "output": "runs/day64/assets/visual-03-essential.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1184,
+        792
+      ],
+      "offset": [
+        808,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "小红书独立知识页，无字"
+    },
+    {
+      "source": "runs/day64/source/visual-04-timing.png",
+      "sourceSize": [
+        2213,
+        711
+      ],
+      "sourceSha256": "5987dae9f9c1ba285add210f9c833ec6b0bac99974aa7622f275915e97f7c424",
+      "reviewedCrop": [
+        0,
+        0,
+        2213,
+        711
+      ],
+      "visibleCrop": [
+        369,
+        12,
+        1928,
+        700
+      ],
+      "output": "runs/day64/assets/visual-04-timing.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1559,
+        688
+      ],
+      "offset": [
+        620,
+        106
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "小红书独立知识页，无字"
+    },
+    {
+      "source": "runs/day64/source/overview-01-role.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "f0b7ecf0c6ef54e49ef220713e3a44df0b83a5f5e63f5abf3fa671a2e1c7cc93",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        223,
+        11,
+        1316,
+        1055
+      ],
+      "output": "runs/day64/assets/overview-01-role.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1093,
+        1044
+      ],
+      "offset": [
+        253,
+        78
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day64/source/overview-02-types.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "2d540003a9b56a7e31be830a9d6ea167af79536bee51b885733db8191d2bdb9d",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        358,
+        16,
+        1094,
+        1070
+      ],
+      "output": "runs/day64/assets/overview-02-types.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        736,
+        1054
+      ],
+      "offset": [
+        432,
+        73
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day64/source/overview-03-essential.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "8a78071988665306c685615358b8ca976954fa54cc9629d2ddbe7cb1d6ccf24e",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        378,
+        41,
+        1130,
+        1036
+      ],
+      "output": "runs/day64/assets/overview-03-essential.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        752,
+        995
+      ],
+      "offset": [
+        424,
+        102
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day64/source/overview-04-timing.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "7a0bb8de6b1bd310e1cbfc21737a98a7317344cecf88ef323c95c22a82d91c8d",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        93,
+        74,
+        1339,
+        992
+      ],
+      "output": "runs/day64/assets/overview-04-timing.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1246,
+        918
+      ],
+      "offset": [
+        177,
+        141
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    }
+  ]
+}

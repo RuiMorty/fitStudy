@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "assets": [
+    {
+      "file": "cover.png",
+      "role": "cover",
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "initial",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T22:43:18.953445Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper background, loose paper sheets, border, sticker edge, shadow, or halo. A small unmarked rigid evidence card is allowed as a prop. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nWide 16:9 wordless course cover. Exactly one Despa and exactly one Bojji stand at a calm respectful conversation distance. Bojji holds one small unmarked rigid plan card at waist height, and Despa has an open listening hand. Explain collaborative coaching, not therapy or command. Isolate the figures and card on the transparent canvas: no ground plane, cast shadow, screens, arrows, medical symbols, room, extra people or extra props.",
+          "promptSha256": "76f0f8c3111944cbf5e3c4a0a480dc7fd54b8689c8b63e527c5f95498800d805",
+          "assetPrompt": "Wide 16:9 wordless course cover. Exactly one Despa and exactly one Bojji stand at a calm respectful conversation distance. Bojji holds one small unmarked rigid plan card at waist height, and Despa has an open listening hand. Explain collaborative coaching, not therapy or command. Isolate the figures and card on the transparent canvas: no ground plane, cast shadow, screens, arrows, medical symbols, room, extra people or extra props.",
+          "output": "runs/day80/image-requests/cover-eb86e17540/attempt-01/cover.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T22:43:46.125222Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 910459,
+          "usablePng": true,
+          "sha256": "12c482ef2ccc04aa8ee3218bd6483ccb8e04946a54ce51c03c144a764858851e"
+        }
+      ],
+      "source": {
+        "path": "runs/day80/source/cover.png",
+        "exists": false
+      },
+      "lastStatus": "generated-pending-quality-review"
+    },
+    {
+      "file": "visual-01-listen.png",
+      "role": "knowledge",
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "initial",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T22:45:23.795819Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper background, loose paper sheets, border, sticker edge, shadow, or halo. A small unmarked rigid evidence card is allowed as a prop. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nWide 28:9 wordless knowledge illustration. Exactly one Bojji calmly describes a simple training concern with an open hand while exactly one Despa listens with relaxed attentive posture and a supportive open palm. Explain open questions, reflection and consent through one continuous interaction. Isolate the figures on the transparent canvas: no duplicate figures, speech bubbles, text, labels, arrows, judgment signs, ground plane, cast shadow, room or medical imagery.",
+          "promptSha256": "064bc8207d9e1606bf3151662da8c0ba30bb120e383578cec4963f9dad6814b3",
+          "assetPrompt": "Wide 28:9 wordless knowledge illustration. Exactly one Bojji calmly describes a simple training concern with an open hand while exactly one Despa listens with relaxed attentive posture and a supportive open palm. Explain open questions, reflection and consent through one continuous interaction. Isolate the figures on the transparent canvas: no duplicate figures, speech bubbles, text, labels, arrows, judgment signs, ground plane, cast shadow, room or medical imagery.",
+          "output": "runs/day80/image-requests/visual-01-listen-706c4cec57/attempt-01/visual-01-listen.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T22:45:52.896349Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 1374567,
+          "usablePng": true,
+          "sha256": "91083c54fee9d8aae99c205888405c1150e0fe90787f3d2e54ed36d013541fb1"
+        },
+        {
+          "attempt": 2,
+          "kind": "adjusted-retry",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T22:47:12.269402Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper background, loose paper sheets, border, sticker edge, shadow, or halo. A small unmarked rigid evidence card is allowed as a prop. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nCorrect the rejected multi-panel candidate into one single current listening interaction. Wide 28:9 wordless transparent PNG. Exactly one Bojji on the left faces exactly one Despa on the right. Bojji calmly explains a simple training concern with one open hand; Despa listens in one relaxed attentive pose with one supportive open palm. Show open questions, reflection and consent only through this one continuous present interaction. No duplicate character, alternate pose, panel, thought bubble, question mark, speech bubble, imagined scene, arrow, motion trail, ground, floor, cast shadow, room, text, number, label, icon, medical imagery, equipment or extra prop. Keep both complete figures inside a six-percent transparent-canvas safe margin.",
+          "promptSha256": "04a34dd60f10a475043aeae9ac1a087497155e23909ac830d323536da8499076",
+          "assetPrompt": "Correct the rejected multi-panel candidate into one single current listening interaction. Wide 28:9 wordless transparent PNG. Exactly one Bojji on the left faces exactly one Despa on the right. Bojji calmly explains a simple training concern with one open hand; Despa listens in one relaxed attentive pose with one supportive open palm. Show open questions, reflection and consent only through this one continuous present interaction. No duplicate character, alternate pose, panel, thought bubble, question mark, speech bubble, imagined scene, arrow, motion trail, ground, floor, cast shadow, room, text, number, label, icon, medical imagery, equipment or extra prop. Keep both complete figures inside a six-percent transparent-canvas safe margin.",
+          "output": "runs/day80/image-requests/visual-01-listen-706c4cec57/attempt-02/visual-01-listen.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T22:47:35.559715Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 746165,
+          "usablePng": true,
+          "sha256": "ca08c0a649434826a60b03fb8bfc4c33f899b217de8ec608d351f1d8ee5250eb"
+        }
+      ],
+      "source": {
+        "path": "runs/day80/source/visual-01-listen.png",
+        "exists": false
+      },
+      "lastStatus": "generated-pending-quality-review"
+    },
+    {
+      "file": "visual-02-cues.png",
+      "role": "knowledge",
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "initial",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T22:49:28.269275Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper background, loose paper sheets, border, sticker edge, shadow, or halo. A small unmarked rigid evidence card is allowed as a prop. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nWide 28:9 wordless knowledge illustration. Exactly one Bojji holds a shallow stable bodyweight squat with feet set evenly while exactly one Despa demonstrates one clear non-contact visual cue from a respectful distance. Explain one clear cue and consent before assistance. Isolate the figures on the transparent canvas: no touching, duplicate poses, arrows, text, labels, screens, ground plane, cast shadow or extra equipment.",
+          "promptSha256": "9e55bb46bae1de1a7fbcd69bc7c18cf74343b3e762f32cbeb1957b82d6f31e81",
+          "assetPrompt": "Wide 28:9 wordless knowledge illustration. Exactly one Bojji holds a shallow stable bodyweight squat with feet set evenly while exactly one Despa demonstrates one clear non-contact visual cue from a respectful distance. Explain one clear cue and consent before assistance. Isolate the figures on the transparent canvas: no touching, duplicate poses, arrows, text, labels, screens, ground plane, cast shadow or extra equipment.",
+          "output": "runs/day80/image-requests/visual-02-cues-4d03e7c0b3/attempt-01/visual-02-cues.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T22:49:52.585047Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 922885,
+          "usablePng": true,
+          "sha256": "734e14ea2b2b931c14f055510e720bf4aab7a0acbfb004832fa7fad02fd2ef3b"
+        }
+      ],
+      "source": {
+        "path": "runs/day80/source/visual-02-cues.png",
+        "exists": false
+      },
+      "lastStatus": "generated-pending-quality-review"
+    },
+    {
+      "file": "visual-03-adherence.png",
+      "role": "knowledge",
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "initial",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T22:51:23.423387Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper background, loose paper sheets, border, sticker edge, shadow, or halo. A small unmarked rigid evidence card is allowed as a prop. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nWide 28:9 wordless knowledge illustration. Exactly one Bojji holds one pair of plain training shoes and a neatly rolled simple exercise mat as prepared equipment while exactly one Despa stands nearby offering an open supportive hand. Explain reducing friction with prepared environment and chosen support, not surveillance or punishment. Isolate the figures and props on the transparent canvas: no calendar marks, checklists, text, numbers, scales, arrows, ground plane, cast shadow, room or extra people.",
+          "promptSha256": "f31e1e1d92953175844b79ba1f48d44c6476d8e06104c3d90fc617b33080b379",
+          "assetPrompt": "Wide 28:9 wordless knowledge illustration. Exactly one Bojji holds one pair of plain training shoes and a neatly rolled simple exercise mat as prepared equipment while exactly one Despa stands nearby offering an open supportive hand. Explain reducing friction with prepared environment and chosen support, not surveillance or punishment. Isolate the figures and props on the transparent canvas: no calendar marks, checklists, text, numbers, scales, arrows, ground plane, cast shadow, room or extra people.",
+          "output": "runs/day80/image-requests/visual-03-adherence-fa00485c17/attempt-01/visual-03-adherence.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T22:51:48.171322Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 963002,
+          "usablePng": true,
+          "sha256": "1a739997607c55f764b2647bc7af665f80a6e646871d3e1b97286133495fcd6d"
+        }
+      ],
+      "source": {
+        "path": "runs/day80/source/visual-03-adherence.png",
+        "exists": false
+      },
+      "lastStatus": "generated-pending-quality-review"
+    },
+    {
+      "file": "visual-04-regulate.png",
+      "role": "knowledge",
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "initial",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T22:53:27.990429Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper background, loose paper sheets, border, sticker edge, shadow, or halo. A small unmarked rigid evidence card is allowed as a prop. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nWide 28:9 wordless knowledge illustration. Exactly one Bojji stands in a comfortable calm pre-training pause with feet set evenly and relaxed hands, while exactly one Despa nearby mirrors a gentle slow-breathing posture without touching. Explain ordinary self-regulation before a safe task, not psychotherapy or meditation claims. Isolate the figures on the transparent canvas: no text, symbols, magical effects, medical imagery, arrows, ground plane, cast shadow or extra props.",
+          "promptSha256": "f7f93650a2bdac3d72a21f1404635a13dc8d287c9616426e4480e36fca397c4f",
+          "assetPrompt": "Wide 28:9 wordless knowledge illustration. Exactly one Bojji stands in a comfortable calm pre-training pause with feet set evenly and relaxed hands, while exactly one Despa nearby mirrors a gentle slow-breathing posture without touching. Explain ordinary self-regulation before a safe task, not psychotherapy or meditation claims. Isolate the figures on the transparent canvas: no text, symbols, magical effects, medical imagery, arrows, ground plane, cast shadow or extra props.",
+          "output": "runs/day80/image-requests/visual-04-regulate-f66e040b79/attempt-01/visual-04-regulate.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T22:53:50.888867Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 648502,
+          "usablePng": true,
+          "sha256": "da41bf244947784dbf25b011ff456388a0025a7e5a450d7b1dadd67ba46c8c16"
+        }
+      ],
+      "source": {
+        "path": "runs/day80/source/visual-04-regulate.png",
+        "exists": false
+      },
+      "lastStatus": "generated-pending-quality-review"
+    },
+    {
+      "file": "overview-01-listen.png",
+      "role": "overview-item",
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "initial",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T22:55:08.936828Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper background, loose paper sheets, border, sticker edge, shadow, or halo. A small unmarked rigid evidence card is allowed as a prop. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nWide 4:3 wordless overview-only illustration. Exactly one Despa listens with an open hand while exactly one Bojji explains a simple training concern comfortably. Explain respectful listening and shared choice. Isolate the figures on the transparent canvas: no duplicate figures, speech bubbles, text, arrows, labels, ground plane, cast shadow, room or medical imagery.",
+          "promptSha256": "6ae1ed1651340ac3103dd60b25e6e08d619494cb9c4e48eb8122cc3a08ec13cc",
+          "assetPrompt": "Wide 4:3 wordless overview-only illustration. Exactly one Despa listens with an open hand while exactly one Bojji explains a simple training concern comfortably. Explain respectful listening and shared choice. Isolate the figures on the transparent canvas: no duplicate figures, speech bubbles, text, arrows, labels, ground plane, cast shadow, room or medical imagery.",
+          "output": "runs/day80/image-requests/overview-01-listen-9a5712f5ec/attempt-01/overview-01-listen.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T22:55:38.398776Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 944704,
+          "usablePng": true,
+          "sha256": "20b605cdc6dfc8c507d11b641c3e408e9839f5ac90659b07149b7f96212a0ea8"
+        }
+      ],
+      "source": {
+        "path": "runs/day80/source/overview-01-listen.png",
+        "exists": false
+      },
+      "lastStatus": "generated-pending-quality-review"
+    },
+    {
+      "file": "overview-02-cues.png",
+      "role": "overview-item",
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "initial",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T22:57:25.978245Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper background, loose paper sheets, border, sticker edge, shadow, or halo. A small unmarked rigid evidence card is allowed as a prop. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nWide 4:3 wordless overview-only illustration. Exactly one Bojji holds a shallow stable bodyweight squat with feet set evenly while exactly one Despa gives one clear non-contact visual cue from a respectful distance. Explain a single focused cue. Isolate the figures on the transparent canvas: no touching, duplicate poses, text, arrows, labels, ground plane, cast shadow or extra equipment.",
+          "promptSha256": "2804cd53d6baaea545d53d8a53e8fbc37893f900578c80225f45f5db827a875b",
+          "assetPrompt": "Wide 4:3 wordless overview-only illustration. Exactly one Bojji holds a shallow stable bodyweight squat with feet set evenly while exactly one Despa gives one clear non-contact visual cue from a respectful distance. Explain a single focused cue. Isolate the figures on the transparent canvas: no touching, duplicate poses, text, arrows, labels, ground plane, cast shadow or extra equipment.",
+          "output": "runs/day80/image-requests/overview-02-cues-bad4e785f3/attempt-01/overview-02-cues.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T22:57:51.475133Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 919277,
+          "usablePng": true,
+          "sha256": "403db9d157e150e1488f2205bc1f1e981bda24209f3cf26bf6a1c58983be1896"
+        }
+      ],
+      "source": {
+        "path": "runs/day80/source/overview-02-cues.png",
+        "exists": false
+      },
+      "lastStatus": "generated-pending-quality-review"
+    },
+    {
+      "file": "overview-03-adherence.png",
+      "role": "overview-item",
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "initial",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T22:59:45.863665Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper background, loose paper sheets, border, sticker edge, shadow, or halo. A small unmarked rigid evidence card is allowed as a prop. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nWide 4:3 wordless overview-only illustration. Exactly one Bojji holds one pair of plain training shoes and a neatly rolled simple exercise mat as prepared equipment while exactly one Despa offers calm support. Explain a low-friction environment and chosen support. Isolate the figures and props on the transparent canvas: no text, calendar, checklist, scale, arrows, ground plane, cast shadow, room or extra people.",
+          "promptSha256": "f1b1bfda5f250036f24b0d0d29b0280dc8deb3ad23a84948b84a01c63a79df82",
+          "assetPrompt": "Wide 4:3 wordless overview-only illustration. Exactly one Bojji holds one pair of plain training shoes and a neatly rolled simple exercise mat as prepared equipment while exactly one Despa offers calm support. Explain a low-friction environment and chosen support. Isolate the figures and props on the transparent canvas: no text, calendar, checklist, scale, arrows, ground plane, cast shadow, room or extra people.",
+          "output": "runs/day80/image-requests/overview-03-adherence-24d0749a09/attempt-01/overview-03-adherence.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T23:00:12.831958Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 1066172,
+          "usablePng": true,
+          "sha256": "c5ef0fec65259f1008dddee95dcedbee6c9ee684a60722a17ed62ff7aabc9cd1"
+        },
+        {
+          "attempt": 2,
+          "kind": "adjusted-retry",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T23:01:33.653229Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper background, loose paper sheets, border, sticker edge, shadow, or halo. A small unmarked rigid evidence card is allowed as a prop. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nCorrect the rejected touching candidate into a compact no-contact support scene. Wide 4:3 wordless transparent overview illustration. Exactly one Bojji holds exactly one rolled simple exercise mat and exactly one pair of plain training shoes. Exactly one Despa stands or kneels at a respectful distance with one open supportive hand only; Despa must not touch Bojji, the shoes or the mat. Explain a low-friction prepared environment and chosen support, not supervision or punishment. No duplicate character, alternate pose, physical contact, thought bubble, calendar, checklist, scale, text, number, label, arrow, ground, floor, cast shadow, room, screen or extra prop. Keep both complete figures and the two permitted props inside a six-percent transparent-canvas safe margin.",
+          "promptSha256": "429099b33bf1caa4358d41226aa54ff67b93abf71e2af58bf61e0ec9edb78e5d",
+          "assetPrompt": "Correct the rejected touching candidate into a compact no-contact support scene. Wide 4:3 wordless transparent overview illustration. Exactly one Bojji holds exactly one rolled simple exercise mat and exactly one pair of plain training shoes. Exactly one Despa stands or kneels at a respectful distance with one open supportive hand only; Despa must not touch Bojji, the shoes or the mat. Explain a low-friction prepared environment and chosen support, not supervision or punishment. No duplicate character, alternate pose, physical contact, thought bubble, calendar, checklist, scale, text, number, label, arrow, ground, floor, cast shadow, room, screen or extra prop. Keep both complete figures and the two permitted props inside a six-percent transparent-canvas safe margin.",
+          "output": "runs/day80/image-requests/overview-03-adherence-24d0749a09/attempt-02/overview-03-adherence.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T23:02:04.555970Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 1033595,
+          "usablePng": true,
+          "sha256": "9f9abc3f48657a7bb7bfc584376f1491a73ff76eb3c4493e223be999cd21e1af"
+        }
+      ],
+      "source": {
+        "path": "runs/day80/source/overview-03-adherence.png",
+        "exists": false
+      },
+      "lastStatus": "generated-pending-quality-review"
+    },
+    {
+      "file": "overview-04-regulate.png",
+      "role": "overview-item",
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "initial",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T23:04:40.412758Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper background, loose paper sheets, border, sticker edge, shadow, or halo. A small unmarked rigid evidence card is allowed as a prop. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nWide 4:3 wordless overview-only illustration. Exactly one Bojji stands in a calm short pre-training pause with feet set evenly and relaxed hands while exactly one Despa mirrors a gentle slow-breathing posture nearby. Explain self-regulation before action. Isolate the figures on the transparent canvas: no text, meditation symbols, magical effects, medical imagery, arrows, ground plane, cast shadow or extra props.",
+          "promptSha256": "ed547efcdca5fa9656909a4b8a344371f21c692dbb2653e32953ab517c1bdd8d",
+          "assetPrompt": "Wide 4:3 wordless overview-only illustration. Exactly one Bojji stands in a calm short pre-training pause with feet set evenly and relaxed hands while exactly one Despa mirrors a gentle slow-breathing posture nearby. Explain self-regulation before action. Isolate the figures on the transparent canvas: no text, meditation symbols, magical effects, medical imagery, arrows, ground plane, cast shadow or extra props.",
+          "output": "runs/day80/image-requests/overview-04-regulate-6b2802a56e/attempt-01/overview-04-regulate.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T23:05:05.626085Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 777772,
+          "usablePng": true,
+          "sha256": "d8887c2d6da5e3377c592cdac53f6e17744668c8d4cab759a56d9170b6f15cad"
+        }
+      ],
+      "source": {
+        "path": "runs/day80/source/overview-04-regulate.png",
+        "exists": false
+      },
+      "lastStatus": "generated-pending-quality-review"
+    }
+  ],
+  "provider": "Lingzhi",
+  "preset": "quality",
+  "model": "gpt-image-2.5-sunburst",
+  "input": "runs/day80/image-prompts.json",
+  "updatedAt": "2026-09-30T23:05:05.626261Z"
+}

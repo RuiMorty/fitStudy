@@ -1,0 +1,3578 @@
+{
+  "scope": "运动连接与连接组首轮登记；组内关节面、全部颅缝和各韧带/关节囊尚需进一步细分。记录数不等于人体关节数。",
+  "connections": [
+    {
+      "id": "cranial_sutures",
+      "name_zh": "颅骨缝连接组",
+      "bone_ids": [
+        "bone_frontal_M",
+        "bone_occipital_M",
+        "bone_sphenoid_M",
+        "bone_ethmoid_M",
+        "bone_vomer_M",
+        "bone_parietal_L",
+        "bone_temporal_L",
+        "bone_maxilla_L",
+        "bone_zygomatic_L",
+        "bone_nasal_L",
+        "bone_lacrimal_L",
+        "bone_palatine_L",
+        "bone_inferior_nasal_concha_L",
+        "bone_parietal_R",
+        "bone_temporal_R",
+        "bone_maxilla_R",
+        "bone_zygomatic_R",
+        "bone_nasal_R",
+        "bone_lacrimal_R",
+        "bone_palatine_R",
+        "bone_inferior_nasal_concha_R"
+      ],
+      "kind": "suture_group",
+      "motion_requirements": "日常运动示范保持整体稳定；各骨可独立展开",
+      "required_soft_tissues": "颅缝纤维组织",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": "包含多条实际颅缝；逐缝结构与边界需后续另列，不能把本组当成一个关节。"
+    },
+    {
+      "id": "hyoid_suspension",
+      "name_zh": "舌骨悬吊",
+      "bone_ids": [
+        "bone_hyoid_M"
+      ],
+      "kind": "soft_tissue_suspension",
+      "motion_requirements": "由周围肌肉与韧带关系控制，不虚构骨性转轴",
+      "required_soft_tissues": "舌骨上/下肌群、茎突舌骨韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": "其他附着骨关系由软组织连接表描述。"
+    },
+    {
+      "id": "atlanto_occipital",
+      "name_zh": "寰枕关节组",
+      "bone_ids": [
+        "bone_occipital_M",
+        "bone_vertebra_C1_M"
+      ],
+      "kind": "paired_synovial",
+      "motion_requirements": "点头为主，含小范围其他运动；左右成对约束",
+      "required_soft_tissues": "关节囊、寰枕膜等",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": "轴由关节面校准。"
+    },
+    {
+      "id": "atlanto_axial",
+      "name_zh": "寰枢关节组",
+      "bone_ids": [
+        "bone_vertebra_C1_M",
+        "bone_vertebra_C2_M"
+      ],
+      "kind": "coupled_synovial",
+      "motion_requirements": "中央与两侧关节共同约束旋转",
+      "required_soft_tissues": "寰椎横韧带、翼状韧带、覆膜、关节囊",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": "寰枕和寰枢之间无椎间盘。"
+    },
+    {
+      "id": "spine_vertebra_C2_vertebra_C3",
+      "name_zh": "C2—C3运动节段",
+      "bone_ids": [
+        "bone_vertebra_C2_M",
+        "bone_vertebra_C3_M"
+      ],
+      "kind": "motion_segment",
+      "motion_requirements": "椎间盘与双侧关节突共同约束；屈伸、侧屈、旋转按节段耦合",
+      "required_soft_tissues": "椎间盘、关节突软骨/关节囊、纵韧带、黄韧带及棘间等韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": "组内各关节及韧带仍须细分；胸腰段不能共享单一轴和角度。"
+    },
+    {
+      "id": "spine_vertebra_C3_vertebra_C4",
+      "name_zh": "C3—C4运动节段",
+      "bone_ids": [
+        "bone_vertebra_C3_M",
+        "bone_vertebra_C4_M"
+      ],
+      "kind": "motion_segment",
+      "motion_requirements": "椎间盘与双侧关节突共同约束；屈伸、侧屈、旋转按节段耦合",
+      "required_soft_tissues": "椎间盘、关节突软骨/关节囊、纵韧带、黄韧带及棘间等韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": "组内各关节及韧带仍须细分；胸腰段不能共享单一轴和角度。"
+    },
+    {
+      "id": "spine_vertebra_C4_vertebra_C5",
+      "name_zh": "C4—C5运动节段",
+      "bone_ids": [
+        "bone_vertebra_C4_M",
+        "bone_vertebra_C5_M"
+      ],
+      "kind": "motion_segment",
+      "motion_requirements": "椎间盘与双侧关节突共同约束；屈伸、侧屈、旋转按节段耦合",
+      "required_soft_tissues": "椎间盘、关节突软骨/关节囊、纵韧带、黄韧带及棘间等韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": "组内各关节及韧带仍须细分；胸腰段不能共享单一轴和角度。"
+    },
+    {
+      "id": "spine_vertebra_C5_vertebra_C6",
+      "name_zh": "C5—C6运动节段",
+      "bone_ids": [
+        "bone_vertebra_C5_M",
+        "bone_vertebra_C6_M"
+      ],
+      "kind": "motion_segment",
+      "motion_requirements": "椎间盘与双侧关节突共同约束；屈伸、侧屈、旋转按节段耦合",
+      "required_soft_tissues": "椎间盘、关节突软骨/关节囊、纵韧带、黄韧带及棘间等韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": "组内各关节及韧带仍须细分；胸腰段不能共享单一轴和角度。"
+    },
+    {
+      "id": "spine_vertebra_C6_vertebra_C7",
+      "name_zh": "C6—C7运动节段",
+      "bone_ids": [
+        "bone_vertebra_C6_M",
+        "bone_vertebra_C7_M"
+      ],
+      "kind": "motion_segment",
+      "motion_requirements": "椎间盘与双侧关节突共同约束；屈伸、侧屈、旋转按节段耦合",
+      "required_soft_tissues": "椎间盘、关节突软骨/关节囊、纵韧带、黄韧带及棘间等韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": "组内各关节及韧带仍须细分；胸腰段不能共享单一轴和角度。"
+    },
+    {
+      "id": "spine_vertebra_C7_vertebra_T1",
+      "name_zh": "C7—T1运动节段",
+      "bone_ids": [
+        "bone_vertebra_C7_M",
+        "bone_vertebra_T1_M"
+      ],
+      "kind": "motion_segment",
+      "motion_requirements": "椎间盘与双侧关节突共同约束；屈伸、侧屈、旋转按节段耦合",
+      "required_soft_tissues": "椎间盘、关节突软骨/关节囊、纵韧带、黄韧带及棘间等韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": "组内各关节及韧带仍须细分；胸腰段不能共享单一轴和角度。"
+    },
+    {
+      "id": "spine_vertebra_T1_vertebra_T2",
+      "name_zh": "T1—T2运动节段",
+      "bone_ids": [
+        "bone_vertebra_T1_M",
+        "bone_vertebra_T2_M"
+      ],
+      "kind": "motion_segment",
+      "motion_requirements": "椎间盘与双侧关节突共同约束；屈伸、侧屈、旋转按节段耦合",
+      "required_soft_tissues": "椎间盘、关节突软骨/关节囊、纵韧带、黄韧带及棘间等韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": "组内各关节及韧带仍须细分；胸腰段不能共享单一轴和角度。"
+    },
+    {
+      "id": "spine_vertebra_T2_vertebra_T3",
+      "name_zh": "T2—T3运动节段",
+      "bone_ids": [
+        "bone_vertebra_T2_M",
+        "bone_vertebra_T3_M"
+      ],
+      "kind": "motion_segment",
+      "motion_requirements": "椎间盘与双侧关节突共同约束；屈伸、侧屈、旋转按节段耦合",
+      "required_soft_tissues": "椎间盘、关节突软骨/关节囊、纵韧带、黄韧带及棘间等韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": "组内各关节及韧带仍须细分；胸腰段不能共享单一轴和角度。"
+    },
+    {
+      "id": "spine_vertebra_T3_vertebra_T4",
+      "name_zh": "T3—T4运动节段",
+      "bone_ids": [
+        "bone_vertebra_T3_M",
+        "bone_vertebra_T4_M"
+      ],
+      "kind": "motion_segment",
+      "motion_requirements": "椎间盘与双侧关节突共同约束；屈伸、侧屈、旋转按节段耦合",
+      "required_soft_tissues": "椎间盘、关节突软骨/关节囊、纵韧带、黄韧带及棘间等韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": "组内各关节及韧带仍须细分；胸腰段不能共享单一轴和角度。"
+    },
+    {
+      "id": "spine_vertebra_T4_vertebra_T5",
+      "name_zh": "T4—T5运动节段",
+      "bone_ids": [
+        "bone_vertebra_T4_M",
+        "bone_vertebra_T5_M"
+      ],
+      "kind": "motion_segment",
+      "motion_requirements": "椎间盘与双侧关节突共同约束；屈伸、侧屈、旋转按节段耦合",
+      "required_soft_tissues": "椎间盘、关节突软骨/关节囊、纵韧带、黄韧带及棘间等韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": "组内各关节及韧带仍须细分；胸腰段不能共享单一轴和角度。"
+    },
+    {
+      "id": "spine_vertebra_T5_vertebra_T6",
+      "name_zh": "T5—T6运动节段",
+      "bone_ids": [
+        "bone_vertebra_T5_M",
+        "bone_vertebra_T6_M"
+      ],
+      "kind": "motion_segment",
+      "motion_requirements": "椎间盘与双侧关节突共同约束；屈伸、侧屈、旋转按节段耦合",
+      "required_soft_tissues": "椎间盘、关节突软骨/关节囊、纵韧带、黄韧带及棘间等韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": "组内各关节及韧带仍须细分；胸腰段不能共享单一轴和角度。"
+    },
+    {
+      "id": "spine_vertebra_T6_vertebra_T7",
+      "name_zh": "T6—T7运动节段",
+      "bone_ids": [
+        "bone_vertebra_T6_M",
+        "bone_vertebra_T7_M"
+      ],
+      "kind": "motion_segment",
+      "motion_requirements": "椎间盘与双侧关节突共同约束；屈伸、侧屈、旋转按节段耦合",
+      "required_soft_tissues": "椎间盘、关节突软骨/关节囊、纵韧带、黄韧带及棘间等韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": "组内各关节及韧带仍须细分；胸腰段不能共享单一轴和角度。"
+    },
+    {
+      "id": "spine_vertebra_T7_vertebra_T8",
+      "name_zh": "T7—T8运动节段",
+      "bone_ids": [
+        "bone_vertebra_T7_M",
+        "bone_vertebra_T8_M"
+      ],
+      "kind": "motion_segment",
+      "motion_requirements": "椎间盘与双侧关节突共同约束；屈伸、侧屈、旋转按节段耦合",
+      "required_soft_tissues": "椎间盘、关节突软骨/关节囊、纵韧带、黄韧带及棘间等韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": "组内各关节及韧带仍须细分；胸腰段不能共享单一轴和角度。"
+    },
+    {
+      "id": "spine_vertebra_T8_vertebra_T9",
+      "name_zh": "T8—T9运动节段",
+      "bone_ids": [
+        "bone_vertebra_T8_M",
+        "bone_vertebra_T9_M"
+      ],
+      "kind": "motion_segment",
+      "motion_requirements": "椎间盘与双侧关节突共同约束；屈伸、侧屈、旋转按节段耦合",
+      "required_soft_tissues": "椎间盘、关节突软骨/关节囊、纵韧带、黄韧带及棘间等韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": "组内各关节及韧带仍须细分；胸腰段不能共享单一轴和角度。"
+    },
+    {
+      "id": "spine_vertebra_T9_vertebra_T10",
+      "name_zh": "T9—T10运动节段",
+      "bone_ids": [
+        "bone_vertebra_T9_M",
+        "bone_vertebra_T10_M"
+      ],
+      "kind": "motion_segment",
+      "motion_requirements": "椎间盘与双侧关节突共同约束；屈伸、侧屈、旋转按节段耦合",
+      "required_soft_tissues": "椎间盘、关节突软骨/关节囊、纵韧带、黄韧带及棘间等韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": "组内各关节及韧带仍须细分；胸腰段不能共享单一轴和角度。"
+    },
+    {
+      "id": "spine_vertebra_T10_vertebra_T11",
+      "name_zh": "T10—T11运动节段",
+      "bone_ids": [
+        "bone_vertebra_T10_M",
+        "bone_vertebra_T11_M"
+      ],
+      "kind": "motion_segment",
+      "motion_requirements": "椎间盘与双侧关节突共同约束；屈伸、侧屈、旋转按节段耦合",
+      "required_soft_tissues": "椎间盘、关节突软骨/关节囊、纵韧带、黄韧带及棘间等韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": "组内各关节及韧带仍须细分；胸腰段不能共享单一轴和角度。"
+    },
+    {
+      "id": "spine_vertebra_T11_vertebra_T12",
+      "name_zh": "T11—T12运动节段",
+      "bone_ids": [
+        "bone_vertebra_T11_M",
+        "bone_vertebra_T12_M"
+      ],
+      "kind": "motion_segment",
+      "motion_requirements": "椎间盘与双侧关节突共同约束；屈伸、侧屈、旋转按节段耦合",
+      "required_soft_tissues": "椎间盘、关节突软骨/关节囊、纵韧带、黄韧带及棘间等韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": "组内各关节及韧带仍须细分；胸腰段不能共享单一轴和角度。"
+    },
+    {
+      "id": "spine_vertebra_T12_vertebra_L1",
+      "name_zh": "T12—L1运动节段",
+      "bone_ids": [
+        "bone_vertebra_T12_M",
+        "bone_vertebra_L1_M"
+      ],
+      "kind": "motion_segment",
+      "motion_requirements": "椎间盘与双侧关节突共同约束；屈伸、侧屈、旋转按节段耦合",
+      "required_soft_tissues": "椎间盘、关节突软骨/关节囊、纵韧带、黄韧带及棘间等韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": "组内各关节及韧带仍须细分；胸腰段不能共享单一轴和角度。"
+    },
+    {
+      "id": "spine_vertebra_L1_vertebra_L2",
+      "name_zh": "L1—L2运动节段",
+      "bone_ids": [
+        "bone_vertebra_L1_M",
+        "bone_vertebra_L2_M"
+      ],
+      "kind": "motion_segment",
+      "motion_requirements": "椎间盘与双侧关节突共同约束；屈伸、侧屈、旋转按节段耦合",
+      "required_soft_tissues": "椎间盘、关节突软骨/关节囊、纵韧带、黄韧带及棘间等韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": "组内各关节及韧带仍须细分；胸腰段不能共享单一轴和角度。"
+    },
+    {
+      "id": "spine_vertebra_L2_vertebra_L3",
+      "name_zh": "L2—L3运动节段",
+      "bone_ids": [
+        "bone_vertebra_L2_M",
+        "bone_vertebra_L3_M"
+      ],
+      "kind": "motion_segment",
+      "motion_requirements": "椎间盘与双侧关节突共同约束；屈伸、侧屈、旋转按节段耦合",
+      "required_soft_tissues": "椎间盘、关节突软骨/关节囊、纵韧带、黄韧带及棘间等韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": "组内各关节及韧带仍须细分；胸腰段不能共享单一轴和角度。"
+    },
+    {
+      "id": "spine_vertebra_L3_vertebra_L4",
+      "name_zh": "L3—L4运动节段",
+      "bone_ids": [
+        "bone_vertebra_L3_M",
+        "bone_vertebra_L4_M"
+      ],
+      "kind": "motion_segment",
+      "motion_requirements": "椎间盘与双侧关节突共同约束；屈伸、侧屈、旋转按节段耦合",
+      "required_soft_tissues": "椎间盘、关节突软骨/关节囊、纵韧带、黄韧带及棘间等韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": "组内各关节及韧带仍须细分；胸腰段不能共享单一轴和角度。"
+    },
+    {
+      "id": "spine_vertebra_L4_vertebra_L5",
+      "name_zh": "L4—L5运动节段",
+      "bone_ids": [
+        "bone_vertebra_L4_M",
+        "bone_vertebra_L5_M"
+      ],
+      "kind": "motion_segment",
+      "motion_requirements": "椎间盘与双侧关节突共同约束；屈伸、侧屈、旋转按节段耦合",
+      "required_soft_tissues": "椎间盘、关节突软骨/关节囊、纵韧带、黄韧带及棘间等韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": "组内各关节及韧带仍须细分；胸腰段不能共享单一轴和角度。"
+    },
+    {
+      "id": "spine_vertebra_L5_sacrum",
+      "name_zh": "L5—sacrum运动节段",
+      "bone_ids": [
+        "bone_vertebra_L5_M",
+        "bone_sacrum_M"
+      ],
+      "kind": "motion_segment",
+      "motion_requirements": "椎间盘与双侧关节突共同约束；屈伸、侧屈、旋转按节段耦合",
+      "required_soft_tissues": "椎间盘、关节突软骨/关节囊、纵韧带、黄韧带及棘间等韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": "组内各关节及韧带仍须细分；胸腰段不能共享单一轴和角度。"
+    },
+    {
+      "id": "sacrococcygeal",
+      "name_zh": "骶尾连接",
+      "bone_ids": [
+        "bone_sacrum_M",
+        "bone_coccyx_M"
+      ],
+      "kind": "symphysis_or_fused_variant",
+      "motion_requirements": "按选定成人模板记录活动或融合状态",
+      "required_soft_tissues": "骶尾韧带、连接组织",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": "保留变异说明。"
+    },
+    {
+      "id": "tmj_L",
+      "name_zh": "左颞下颌关节",
+      "bone_ids": [
+        "bone_temporal_L",
+        "bone_mandible_M"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "两侧共同控制下颌；转动加滑动",
+      "required_soft_tissues": "关节盘、关节囊、韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": "不能用两个独立动画同时驱动同一下颌骨。"
+    },
+    {
+      "id": "incudomalleolar_L",
+      "name_zh": "左锤砧关节",
+      "bone_ids": [
+        "bone_malleus_L",
+        "bone_incus_L"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "微小传振；运动教学阶段可保持装配",
+      "required_soft_tissues": "关节囊、听小骨悬吊韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": ""
+    },
+    {
+      "id": "incudostapedial_L",
+      "name_zh": "左砧镫关节",
+      "bone_ids": [
+        "bone_incus_L",
+        "bone_stapes_L"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "微小传振",
+      "required_soft_tissues": "关节囊",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": ""
+    },
+    {
+      "id": "stapes_window_L",
+      "name_zh": "左镫骨—前庭窗连接",
+      "bone_ids": [
+        "bone_stapes_L",
+        "bone_temporal_L"
+      ],
+      "kind": "fibrous_connection",
+      "motion_requirements": "镫骨底板微动，非普通大关节",
+      "required_soft_tissues": "镫骨环韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": ""
+    },
+    {
+      "id": "costovertebral_01_L",
+      "name_zh": "左第1肋椎连接组",
+      "bone_ids": [
+        "bone_rib_01_L",
+        "bone_vertebra_T1_M"
+      ],
+      "kind": "rib_joint_group",
+      "motion_requirements": "呼吸时肋骨与椎体协同；肋头关节与肋横突关节分别校准",
+      "required_soft_tissues": "肋头及肋横突关节囊/韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": "第11/12肋无肋横突关节；第10肋关节面及肋头连接存在变异，需按源模板确认。"
+    },
+    {
+      "id": "sternocostal_01_L",
+      "name_zh": "左第1胸肋连接",
+      "bone_ids": [
+        "bone_rib_01_L",
+        "bone_sternum_M"
+      ],
+      "kind": "cartilage_mediated_connection",
+      "motion_requirements": "通过肋软骨连接；呼吸不能将肋骨和胸骨焊死",
+      "required_soft_tissues": "肋软骨、胸肋韧带；第1连接类型与其余不同",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": "此条包括肋软骨两端连接；软骨待单独建模。"
+    },
+    {
+      "id": "costovertebral_02_L",
+      "name_zh": "左第2肋椎连接组",
+      "bone_ids": [
+        "bone_rib_02_L",
+        "bone_vertebra_T2_M",
+        "bone_vertebra_T1_M"
+      ],
+      "kind": "rib_joint_group",
+      "motion_requirements": "呼吸时肋骨与椎体协同；肋头关节与肋横突关节分别校准",
+      "required_soft_tissues": "肋头及肋横突关节囊/韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": "第11/12肋无肋横突关节；第10肋关节面及肋头连接存在变异，需按源模板确认。"
+    },
+    {
+      "id": "sternocostal_02_L",
+      "name_zh": "左第2胸肋连接",
+      "bone_ids": [
+        "bone_rib_02_L",
+        "bone_sternum_M"
+      ],
+      "kind": "cartilage_mediated_connection",
+      "motion_requirements": "通过肋软骨连接；呼吸不能将肋骨和胸骨焊死",
+      "required_soft_tissues": "肋软骨、胸肋韧带；第1连接类型与其余不同",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": "此条包括肋软骨两端连接；软骨待单独建模。"
+    },
+    {
+      "id": "costovertebral_03_L",
+      "name_zh": "左第3肋椎连接组",
+      "bone_ids": [
+        "bone_rib_03_L",
+        "bone_vertebra_T3_M",
+        "bone_vertebra_T2_M"
+      ],
+      "kind": "rib_joint_group",
+      "motion_requirements": "呼吸时肋骨与椎体协同；肋头关节与肋横突关节分别校准",
+      "required_soft_tissues": "肋头及肋横突关节囊/韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": "第11/12肋无肋横突关节；第10肋关节面及肋头连接存在变异，需按源模板确认。"
+    },
+    {
+      "id": "sternocostal_03_L",
+      "name_zh": "左第3胸肋连接",
+      "bone_ids": [
+        "bone_rib_03_L",
+        "bone_sternum_M"
+      ],
+      "kind": "cartilage_mediated_connection",
+      "motion_requirements": "通过肋软骨连接；呼吸不能将肋骨和胸骨焊死",
+      "required_soft_tissues": "肋软骨、胸肋韧带；第1连接类型与其余不同",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": "此条包括肋软骨两端连接；软骨待单独建模。"
+    },
+    {
+      "id": "costovertebral_04_L",
+      "name_zh": "左第4肋椎连接组",
+      "bone_ids": [
+        "bone_rib_04_L",
+        "bone_vertebra_T4_M",
+        "bone_vertebra_T3_M"
+      ],
+      "kind": "rib_joint_group",
+      "motion_requirements": "呼吸时肋骨与椎体协同；肋头关节与肋横突关节分别校准",
+      "required_soft_tissues": "肋头及肋横突关节囊/韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": "第11/12肋无肋横突关节；第10肋关节面及肋头连接存在变异，需按源模板确认。"
+    },
+    {
+      "id": "sternocostal_04_L",
+      "name_zh": "左第4胸肋连接",
+      "bone_ids": [
+        "bone_rib_04_L",
+        "bone_sternum_M"
+      ],
+      "kind": "cartilage_mediated_connection",
+      "motion_requirements": "通过肋软骨连接；呼吸不能将肋骨和胸骨焊死",
+      "required_soft_tissues": "肋软骨、胸肋韧带；第1连接类型与其余不同",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": "此条包括肋软骨两端连接；软骨待单独建模。"
+    },
+    {
+      "id": "costovertebral_05_L",
+      "name_zh": "左第5肋椎连接组",
+      "bone_ids": [
+        "bone_rib_05_L",
+        "bone_vertebra_T5_M",
+        "bone_vertebra_T4_M"
+      ],
+      "kind": "rib_joint_group",
+      "motion_requirements": "呼吸时肋骨与椎体协同；肋头关节与肋横突关节分别校准",
+      "required_soft_tissues": "肋头及肋横突关节囊/韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": "第11/12肋无肋横突关节；第10肋关节面及肋头连接存在变异，需按源模板确认。"
+    },
+    {
+      "id": "sternocostal_05_L",
+      "name_zh": "左第5胸肋连接",
+      "bone_ids": [
+        "bone_rib_05_L",
+        "bone_sternum_M"
+      ],
+      "kind": "cartilage_mediated_connection",
+      "motion_requirements": "通过肋软骨连接；呼吸不能将肋骨和胸骨焊死",
+      "required_soft_tissues": "肋软骨、胸肋韧带；第1连接类型与其余不同",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": "此条包括肋软骨两端连接；软骨待单独建模。"
+    },
+    {
+      "id": "costovertebral_06_L",
+      "name_zh": "左第6肋椎连接组",
+      "bone_ids": [
+        "bone_rib_06_L",
+        "bone_vertebra_T6_M",
+        "bone_vertebra_T5_M"
+      ],
+      "kind": "rib_joint_group",
+      "motion_requirements": "呼吸时肋骨与椎体协同；肋头关节与肋横突关节分别校准",
+      "required_soft_tissues": "肋头及肋横突关节囊/韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": "第11/12肋无肋横突关节；第10肋关节面及肋头连接存在变异，需按源模板确认。"
+    },
+    {
+      "id": "sternocostal_06_L",
+      "name_zh": "左第6胸肋连接",
+      "bone_ids": [
+        "bone_rib_06_L",
+        "bone_sternum_M"
+      ],
+      "kind": "cartilage_mediated_connection",
+      "motion_requirements": "通过肋软骨连接；呼吸不能将肋骨和胸骨焊死",
+      "required_soft_tissues": "肋软骨、胸肋韧带；第1连接类型与其余不同",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": "此条包括肋软骨两端连接；软骨待单独建模。"
+    },
+    {
+      "id": "costovertebral_07_L",
+      "name_zh": "左第7肋椎连接组",
+      "bone_ids": [
+        "bone_rib_07_L",
+        "bone_vertebra_T7_M",
+        "bone_vertebra_T6_M"
+      ],
+      "kind": "rib_joint_group",
+      "motion_requirements": "呼吸时肋骨与椎体协同；肋头关节与肋横突关节分别校准",
+      "required_soft_tissues": "肋头及肋横突关节囊/韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": "第11/12肋无肋横突关节；第10肋关节面及肋头连接存在变异，需按源模板确认。"
+    },
+    {
+      "id": "sternocostal_07_L",
+      "name_zh": "左第7胸肋连接",
+      "bone_ids": [
+        "bone_rib_07_L",
+        "bone_sternum_M"
+      ],
+      "kind": "cartilage_mediated_connection",
+      "motion_requirements": "通过肋软骨连接；呼吸不能将肋骨和胸骨焊死",
+      "required_soft_tissues": "肋软骨、胸肋韧带；第1连接类型与其余不同",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": "此条包括肋软骨两端连接；软骨待单独建模。"
+    },
+    {
+      "id": "costovertebral_08_L",
+      "name_zh": "左第8肋椎连接组",
+      "bone_ids": [
+        "bone_rib_08_L",
+        "bone_vertebra_T8_M",
+        "bone_vertebra_T7_M"
+      ],
+      "kind": "rib_joint_group",
+      "motion_requirements": "呼吸时肋骨与椎体协同；肋头关节与肋横突关节分别校准",
+      "required_soft_tissues": "肋头及肋横突关节囊/韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": "第11/12肋无肋横突关节；第10肋关节面及肋头连接存在变异，需按源模板确认。"
+    },
+    {
+      "id": "costal_arch_08_L",
+      "name_zh": "左第8肋软骨弓连接",
+      "bone_ids": [
+        "bone_rib_08_L",
+        "bone_rib_07_L"
+      ],
+      "kind": "cartilage_mediated_connection",
+      "motion_requirements": "经软骨连接上位肋软骨，不建立肋骨间直接铰链",
+      "required_soft_tissues": "肋软骨及软骨间连接",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": "骨ID描述间接关系；软骨对象会补入连接图。"
+    },
+    {
+      "id": "costovertebral_09_L",
+      "name_zh": "左第9肋椎连接组",
+      "bone_ids": [
+        "bone_rib_09_L",
+        "bone_vertebra_T9_M",
+        "bone_vertebra_T8_M"
+      ],
+      "kind": "rib_joint_group",
+      "motion_requirements": "呼吸时肋骨与椎体协同；肋头关节与肋横突关节分别校准",
+      "required_soft_tissues": "肋头及肋横突关节囊/韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": "第11/12肋无肋横突关节；第10肋关节面及肋头连接存在变异，需按源模板确认。"
+    },
+    {
+      "id": "costal_arch_09_L",
+      "name_zh": "左第9肋软骨弓连接",
+      "bone_ids": [
+        "bone_rib_09_L",
+        "bone_rib_08_L"
+      ],
+      "kind": "cartilage_mediated_connection",
+      "motion_requirements": "经软骨连接上位肋软骨，不建立肋骨间直接铰链",
+      "required_soft_tissues": "肋软骨及软骨间连接",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": "骨ID描述间接关系；软骨对象会补入连接图。"
+    },
+    {
+      "id": "costovertebral_10_L",
+      "name_zh": "左第10肋椎连接组",
+      "bone_ids": [
+        "bone_rib_10_L",
+        "bone_vertebra_T10_M"
+      ],
+      "kind": "rib_joint_group",
+      "motion_requirements": "呼吸时肋骨与椎体协同；肋头关节与肋横突关节分别校准",
+      "required_soft_tissues": "肋头及肋横突关节囊/韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": "第11/12肋无肋横突关节；第10肋关节面及肋头连接存在变异，需按源模板确认。"
+    },
+    {
+      "id": "costal_arch_10_L",
+      "name_zh": "左第10肋软骨弓连接",
+      "bone_ids": [
+        "bone_rib_10_L",
+        "bone_rib_09_L"
+      ],
+      "kind": "cartilage_mediated_connection",
+      "motion_requirements": "经软骨连接上位肋软骨，不建立肋骨间直接铰链",
+      "required_soft_tissues": "肋软骨及软骨间连接",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": "骨ID描述间接关系；软骨对象会补入连接图。"
+    },
+    {
+      "id": "costovertebral_11_L",
+      "name_zh": "左第11肋椎连接组",
+      "bone_ids": [
+        "bone_rib_11_L",
+        "bone_vertebra_T11_M"
+      ],
+      "kind": "rib_joint_group",
+      "motion_requirements": "呼吸时肋骨与椎体协同；肋头关节与肋横突关节分别校准",
+      "required_soft_tissues": "肋头及肋横突关节囊/韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": "第11/12肋无肋横突关节；第10肋关节面及肋头连接存在变异，需按源模板确认。"
+    },
+    {
+      "id": "costovertebral_12_L",
+      "name_zh": "左第12肋椎连接组",
+      "bone_ids": [
+        "bone_rib_12_L",
+        "bone_vertebra_T12_M"
+      ],
+      "kind": "rib_joint_group",
+      "motion_requirements": "呼吸时肋骨与椎体协同；肋头关节与肋横突关节分别校准",
+      "required_soft_tissues": "肋头及肋横突关节囊/韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": "第11/12肋无肋横突关节；第10肋关节面及肋头连接存在变异，需按源模板确认。"
+    },
+    {
+      "id": "sternoclavicular_L",
+      "name_zh": "左胸锁关节",
+      "bone_ids": [
+        "bone_sternum_M",
+        "bone_clavicle_L"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "锁骨抬降、前后运动和轴向旋转；联动肩胛",
+      "required_soft_tissues": "关节盘、关节囊、胸锁/肋锁韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "acromioclavicular_L",
+      "name_zh": "左肩锁关节",
+      "bone_ids": [
+        "bone_clavicle_L",
+        "bone_scapula_L"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "肩胛与锁骨之间小幅多轴运动",
+      "required_soft_tissues": "肩锁/喙锁韧带、关节囊、关节盘变异",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "scapulothoracic_L",
+      "name_zh": "左肩胛胸壁功能连接",
+      "bone_ids": [
+        "bone_scapula_L",
+        "bone_rib_02_L",
+        "bone_rib_03_L",
+        "bone_rib_04_L",
+        "bone_rib_05_L",
+        "bone_rib_06_L",
+        "bone_rib_07_L"
+      ],
+      "kind": "functional_gliding",
+      "motion_requirements": "肩胛沿胸壁上/下回旋、内外旋、前后倾及位移；与胸锁/肩锁耦合",
+      "required_soft_tissues": "前锯肌、肩胛下肌及相关筋膜/滑动界面",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": "功能性滑动关系，不是有共同关节腔的骨性关节；比例不预设为固定常数。"
+    },
+    {
+      "id": "glenohumeral_L",
+      "name_zh": "左盂肱关节",
+      "bone_ids": [
+        "bone_scapula_L",
+        "bone_humerus_L"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "屈伸、外展内收、内外旋；校准关节中心与伴随平移",
+      "required_soft_tissues": "盂唇、关节囊、盂肱/喙肱韧带、肩袖",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "humeroulnar_L",
+      "name_zh": "左肱尺关节",
+      "bone_ids": [
+        "bone_humerus_L",
+        "bone_ulna_L"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "以屈伸为主；检查提携角和全范围关节面接触",
+      "required_soft_tissues": "软骨、关节囊、尺侧/外侧副韧带复合体",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "humeroradial_L",
+      "name_zh": "左肱桡关节",
+      "bone_ids": [
+        "bone_humerus_L",
+        "bone_radius_L"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "随肘屈伸及前臂旋转共同运动",
+      "required_soft_tissues": "关节软骨、关节囊",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "proximal_radioulnar_L",
+      "name_zh": "左近侧桡尺关节",
+      "bone_ids": [
+        "bone_radius_L",
+        "bone_ulna_L"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "与远侧桡尺共同控制旋前旋后",
+      "required_soft_tissues": "桡骨环状韧带、方形韧带、关节囊",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "distal_radioulnar_L",
+      "name_zh": "左远侧桡尺关节",
+      "bone_ids": [
+        "bone_radius_L",
+        "bone_ulna_L"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "桡骨相对尺骨旋转和平移；不能让前臂两骨锁成一体",
+      "required_soft_tissues": "三角纤维软骨复合体、关节囊",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "forearm_interosseous_L",
+      "name_zh": "左前臂骨间连接",
+      "bone_ids": [
+        "bone_radius_L",
+        "bone_ulna_L"
+      ],
+      "kind": "syndesmosis",
+      "motion_requirements": "与桡尺关节协调，不独立指定重复驱动",
+      "required_soft_tissues": "前臂骨间膜",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "radiocarpal_L",
+      "name_zh": "左桡腕关节组",
+      "bone_ids": [
+        "bone_radius_L",
+        "bone_scaphoid_L",
+        "bone_lunate_L",
+        "bone_triquetrum_L"
+      ],
+      "kind": "synovial_group",
+      "motion_requirements": "屈伸及桡尺偏，与腕中关节分配运动",
+      "required_soft_tissues": "关节软骨、关节盘、桡腕及腕侧副韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "intercarpal_L",
+      "name_zh": "左腕骨间连接组",
+      "bone_ids": [
+        "bone_scaphoid_L",
+        "bone_lunate_L",
+        "bone_triquetrum_L",
+        "bone_pisiform_L",
+        "bone_trapezium_L",
+        "bone_trapezoid_L",
+        "bone_capitate_L",
+        "bone_hamate_L"
+      ],
+      "kind": "joint_group",
+      "motion_requirements": "腕中和腕骨间协同；豌豆骨与三角骨关系单列校准",
+      "required_soft_tissues": "腕骨间韧带、关节囊、软骨",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": "后续逐关节面展开；不能将8块腕骨看作一个刚体。"
+    },
+    {
+      "id": "cmc_1_L",
+      "name_zh": "左第1腕掌连接",
+      "bone_ids": [
+        "bone_metacarpal_1_L",
+        "bone_trapezium_L"
+      ],
+      "kind": "synovial_group",
+      "motion_requirements": "拇指鞍状关节需表现对掌；其余腕掌活动差异化",
+      "required_soft_tissues": "腕掌韧带、关节囊、软骨",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "mcp_1_L",
+      "name_zh": "左第1掌指关节",
+      "bone_ids": [
+        "bone_metacarpal_1_L",
+        "bone_hand_phalanx_1_proximal_L"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "屈伸及条件性外展内收，按手指区分",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、伸肌腱帽",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "hand_ip_1_proximal_distal_L",
+      "name_zh": "左第1指近节—远节指间关节",
+      "bone_ids": [
+        "bone_hand_phalanx_1_proximal_L",
+        "bone_hand_phalanx_1_distal_L"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "以屈伸为主；与屈伸肌腱路径耦合",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、腱鞘/滑车",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "cmc_2_L",
+      "name_zh": "左第2腕掌连接",
+      "bone_ids": [
+        "bone_metacarpal_2_L",
+        "bone_trapezium_L",
+        "bone_trapezoid_L",
+        "bone_capitate_L"
+      ],
+      "kind": "synovial_group",
+      "motion_requirements": "拇指鞍状关节需表现对掌；其余腕掌活动差异化",
+      "required_soft_tissues": "腕掌韧带、关节囊、软骨",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "mcp_2_L",
+      "name_zh": "左第2掌指关节",
+      "bone_ids": [
+        "bone_metacarpal_2_L",
+        "bone_hand_phalanx_2_proximal_L"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "屈伸及条件性外展内收，按手指区分",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、伸肌腱帽",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "hand_ip_2_proximal_middle_L",
+      "name_zh": "左第2指近节—中节指间关节",
+      "bone_ids": [
+        "bone_hand_phalanx_2_proximal_L",
+        "bone_hand_phalanx_2_middle_L"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "以屈伸为主；与屈伸肌腱路径耦合",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、腱鞘/滑车",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "hand_ip_2_middle_distal_L",
+      "name_zh": "左第2指中节—远节指间关节",
+      "bone_ids": [
+        "bone_hand_phalanx_2_middle_L",
+        "bone_hand_phalanx_2_distal_L"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "以屈伸为主；与屈伸肌腱路径耦合",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、腱鞘/滑车",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "cmc_3_L",
+      "name_zh": "左第3腕掌连接",
+      "bone_ids": [
+        "bone_metacarpal_3_L",
+        "bone_capitate_L"
+      ],
+      "kind": "synovial_group",
+      "motion_requirements": "拇指鞍状关节需表现对掌；其余腕掌活动差异化",
+      "required_soft_tissues": "腕掌韧带、关节囊、软骨",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "mcp_3_L",
+      "name_zh": "左第3掌指关节",
+      "bone_ids": [
+        "bone_metacarpal_3_L",
+        "bone_hand_phalanx_3_proximal_L"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "屈伸及条件性外展内收，按手指区分",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、伸肌腱帽",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "hand_ip_3_proximal_middle_L",
+      "name_zh": "左第3指近节—中节指间关节",
+      "bone_ids": [
+        "bone_hand_phalanx_3_proximal_L",
+        "bone_hand_phalanx_3_middle_L"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "以屈伸为主；与屈伸肌腱路径耦合",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、腱鞘/滑车",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "hand_ip_3_middle_distal_L",
+      "name_zh": "左第3指中节—远节指间关节",
+      "bone_ids": [
+        "bone_hand_phalanx_3_middle_L",
+        "bone_hand_phalanx_3_distal_L"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "以屈伸为主；与屈伸肌腱路径耦合",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、腱鞘/滑车",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "cmc_4_L",
+      "name_zh": "左第4腕掌连接",
+      "bone_ids": [
+        "bone_metacarpal_4_L",
+        "bone_capitate_L",
+        "bone_hamate_L"
+      ],
+      "kind": "synovial_group",
+      "motion_requirements": "拇指鞍状关节需表现对掌；其余腕掌活动差异化",
+      "required_soft_tissues": "腕掌韧带、关节囊、软骨",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "mcp_4_L",
+      "name_zh": "左第4掌指关节",
+      "bone_ids": [
+        "bone_metacarpal_4_L",
+        "bone_hand_phalanx_4_proximal_L"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "屈伸及条件性外展内收，按手指区分",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、伸肌腱帽",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "hand_ip_4_proximal_middle_L",
+      "name_zh": "左第4指近节—中节指间关节",
+      "bone_ids": [
+        "bone_hand_phalanx_4_proximal_L",
+        "bone_hand_phalanx_4_middle_L"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "以屈伸为主；与屈伸肌腱路径耦合",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、腱鞘/滑车",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "hand_ip_4_middle_distal_L",
+      "name_zh": "左第4指中节—远节指间关节",
+      "bone_ids": [
+        "bone_hand_phalanx_4_middle_L",
+        "bone_hand_phalanx_4_distal_L"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "以屈伸为主；与屈伸肌腱路径耦合",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、腱鞘/滑车",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "cmc_5_L",
+      "name_zh": "左第5腕掌连接",
+      "bone_ids": [
+        "bone_metacarpal_5_L",
+        "bone_hamate_L"
+      ],
+      "kind": "synovial_group",
+      "motion_requirements": "拇指鞍状关节需表现对掌；其余腕掌活动差异化",
+      "required_soft_tissues": "腕掌韧带、关节囊、软骨",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "mcp_5_L",
+      "name_zh": "左第5掌指关节",
+      "bone_ids": [
+        "bone_metacarpal_5_L",
+        "bone_hand_phalanx_5_proximal_L"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "屈伸及条件性外展内收，按手指区分",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、伸肌腱帽",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "hand_ip_5_proximal_middle_L",
+      "name_zh": "左第5指近节—中节指间关节",
+      "bone_ids": [
+        "bone_hand_phalanx_5_proximal_L",
+        "bone_hand_phalanx_5_middle_L"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "以屈伸为主；与屈伸肌腱路径耦合",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、腱鞘/滑车",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "hand_ip_5_middle_distal_L",
+      "name_zh": "左第5指中节—远节指间关节",
+      "bone_ids": [
+        "bone_hand_phalanx_5_middle_L",
+        "bone_hand_phalanx_5_distal_L"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "以屈伸为主；与屈伸肌腱路径耦合",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、腱鞘/滑车",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "intermetacarpal_L",
+      "name_zh": "左掌骨间连接组",
+      "bone_ids": [
+        "bone_metacarpal_2_L",
+        "bone_metacarpal_3_L",
+        "bone_metacarpal_4_L",
+        "bone_metacarpal_5_L"
+      ],
+      "kind": "joint_group",
+      "motion_requirements": "第2—5掌骨基底间的微动",
+      "required_soft_tissues": "掌骨间韧带、关节囊",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": ""
+    },
+    {
+      "id": "sacroiliac_L",
+      "name_zh": "左骶髂关节",
+      "bone_ids": [
+        "bone_sacrum_M",
+        "bone_hip_L"
+      ],
+      "kind": "mixed_joint_complex",
+      "motion_requirements": "小幅点头/反点头与骨盆环协调",
+      "required_soft_tissues": "骶髂关节软骨、骨间/前后骶髂韧带、骶结节/骶棘韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": "不能把骶髂关节做成大幅球窝运动。"
+    },
+    {
+      "id": "hip_L",
+      "name_zh": "左髋关节",
+      "bone_ids": [
+        "bone_hip_L",
+        "bone_femur_L"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "多轴运动，中心与轴由股骨头和髋臼校准",
+      "required_soft_tissues": "髋臼唇、软骨、关节囊、髂股/耻股/坐股韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "tibiofemoral_L",
+      "name_zh": "左胫股关节组",
+      "bone_ids": [
+        "bone_femur_L",
+        "bone_tibia_L"
+      ],
+      "kind": "synovial_group",
+      "motion_requirements": "屈伸伴随滚动、滑动和轴向旋转；不采用全范围固定单轴",
+      "required_soft_tissues": "内外侧半月板、交叉/侧副韧带、关节囊、软骨",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "patellofemoral_L",
+      "name_zh": "左髌股关节",
+      "bone_ids": [
+        "bone_femur_L",
+        "bone_patella_L"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "髌骨沿滑车滑动并伴倾斜/旋转，随膝角变化",
+      "required_soft_tissues": "软骨、髌支持带、股四头肌腱、髌韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "proximal_tibiofibular_L",
+      "name_zh": "左近侧胫腓关节",
+      "bone_ids": [
+        "bone_tibia_L",
+        "bone_fibula_L"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "小幅滑动，与踝及膝状态协调",
+      "required_soft_tissues": "关节囊、胫腓头韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "distal_tibiofibular_L",
+      "name_zh": "左远侧胫腓连接",
+      "bone_ids": [
+        "bone_tibia_L",
+        "bone_fibula_L"
+      ],
+      "kind": "syndesmosis",
+      "motion_requirements": "踝背屈时允许与踝穴匹配的微动",
+      "required_soft_tissues": "胫腓前后韧带、骨间韧带与小腿骨间膜",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "talocrural_L",
+      "name_zh": "左距小腿关节组",
+      "bone_ids": [
+        "bone_tibia_L",
+        "bone_fibula_L",
+        "bone_talus_L"
+      ],
+      "kind": "synovial_group",
+      "motion_requirements": "背屈跖屈为主，校准踝穴和距骨滑车",
+      "required_soft_tissues": "软骨、关节囊、三角韧带、外侧韧带复合体",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "subtalar_L",
+      "name_zh": "左距下关节",
+      "bone_ids": [
+        "bone_talus_L",
+        "bone_calcaneus_L"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "斜轴耦合运动；与横跗关节共同表现足部内外翻",
+      "required_soft_tissues": "距跟骨间韧带、颈韧带、关节囊、软骨",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "talocalcaneonavicular_L",
+      "name_zh": "左距跟舟关节组",
+      "bone_ids": [
+        "bone_talus_L",
+        "bone_calcaneus_L",
+        "bone_navicular_L"
+      ],
+      "kind": "synovial_group",
+      "motion_requirements": "与距下、跟骰关节共同控制后/中足运动",
+      "required_soft_tissues": "足底跟舟韧带、关节囊、软骨",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "calcaneocuboid_L",
+      "name_zh": "左跟骰关节",
+      "bone_ids": [
+        "bone_calcaneus_L",
+        "bone_cuboid_L"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "与距舟部分共同构成横跗运动关系",
+      "required_soft_tissues": "长/短足底韧带、分歧韧带、关节囊",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "distal_intertarsal_L",
+      "name_zh": "左远侧跗骨间连接组",
+      "bone_ids": [
+        "bone_navicular_L",
+        "bone_cuboid_L",
+        "bone_medial_cuneiform_L",
+        "bone_intermediate_cuneiform_L",
+        "bone_lateral_cuneiform_L"
+      ],
+      "kind": "joint_group",
+      "motion_requirements": "舟楔、楔骨间及楔骰等微动；足弓不能作为僵硬三角架",
+      "required_soft_tissues": "跗骨间韧带、关节囊、软骨",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "tmt_1_L",
+      "name_zh": "左第1跗跖连接",
+      "bone_ids": [
+        "bone_metatarsal_1_L",
+        "bone_medial_cuneiform_L"
+      ],
+      "kind": "synovial_group",
+      "motion_requirements": "按足柱分配活动，保留第2跖骨基底嵌入关系",
+      "required_soft_tissues": "跗跖韧带、Lisfranc韧带复合体、关节囊",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "mtp_1_L",
+      "name_zh": "左第1跖趾关节",
+      "bone_ids": [
+        "bone_metatarsal_1_L",
+        "bone_foot_phalanx_1_proximal_L"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "屈伸及有限外展内收；拇趾背伸关联足底腱膜绞盘效应",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊；第1跖趾还需成对籽骨",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "foot_ip_1_proximal_distal_L",
+      "name_zh": "左第1趾近节—远节趾间关节",
+      "bone_ids": [
+        "bone_foot_phalanx_1_proximal_L",
+        "bone_foot_phalanx_1_distal_L"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "以屈伸为主",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊、肌腱",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "tmt_2_L",
+      "name_zh": "左第2跗跖连接",
+      "bone_ids": [
+        "bone_metatarsal_2_L",
+        "bone_medial_cuneiform_L",
+        "bone_intermediate_cuneiform_L",
+        "bone_lateral_cuneiform_L"
+      ],
+      "kind": "synovial_group",
+      "motion_requirements": "按足柱分配活动，保留第2跖骨基底嵌入关系",
+      "required_soft_tissues": "跗跖韧带、Lisfranc韧带复合体、关节囊",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "mtp_2_L",
+      "name_zh": "左第2跖趾关节",
+      "bone_ids": [
+        "bone_metatarsal_2_L",
+        "bone_foot_phalanx_2_proximal_L"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "屈伸及有限外展内收；拇趾背伸关联足底腱膜绞盘效应",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊；第1跖趾还需成对籽骨",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "foot_ip_2_proximal_middle_L",
+      "name_zh": "左第2趾近节—中节趾间关节",
+      "bone_ids": [
+        "bone_foot_phalanx_2_proximal_L",
+        "bone_foot_phalanx_2_middle_L"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "以屈伸为主",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊、肌腱",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "foot_ip_2_middle_distal_L",
+      "name_zh": "左第2趾中节—远节趾间关节",
+      "bone_ids": [
+        "bone_foot_phalanx_2_middle_L",
+        "bone_foot_phalanx_2_distal_L"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "以屈伸为主",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊、肌腱",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "tmt_3_L",
+      "name_zh": "左第3跗跖连接",
+      "bone_ids": [
+        "bone_metatarsal_3_L",
+        "bone_lateral_cuneiform_L"
+      ],
+      "kind": "synovial_group",
+      "motion_requirements": "按足柱分配活动，保留第2跖骨基底嵌入关系",
+      "required_soft_tissues": "跗跖韧带、Lisfranc韧带复合体、关节囊",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "mtp_3_L",
+      "name_zh": "左第3跖趾关节",
+      "bone_ids": [
+        "bone_metatarsal_3_L",
+        "bone_foot_phalanx_3_proximal_L"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "屈伸及有限外展内收；拇趾背伸关联足底腱膜绞盘效应",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊；第1跖趾还需成对籽骨",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "foot_ip_3_proximal_middle_L",
+      "name_zh": "左第3趾近节—中节趾间关节",
+      "bone_ids": [
+        "bone_foot_phalanx_3_proximal_L",
+        "bone_foot_phalanx_3_middle_L"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "以屈伸为主",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊、肌腱",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "foot_ip_3_middle_distal_L",
+      "name_zh": "左第3趾中节—远节趾间关节",
+      "bone_ids": [
+        "bone_foot_phalanx_3_middle_L",
+        "bone_foot_phalanx_3_distal_L"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "以屈伸为主",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊、肌腱",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "tmt_4_L",
+      "name_zh": "左第4跗跖连接",
+      "bone_ids": [
+        "bone_metatarsal_4_L",
+        "bone_cuboid_L"
+      ],
+      "kind": "synovial_group",
+      "motion_requirements": "按足柱分配活动，保留第2跖骨基底嵌入关系",
+      "required_soft_tissues": "跗跖韧带、Lisfranc韧带复合体、关节囊",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "mtp_4_L",
+      "name_zh": "左第4跖趾关节",
+      "bone_ids": [
+        "bone_metatarsal_4_L",
+        "bone_foot_phalanx_4_proximal_L"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "屈伸及有限外展内收；拇趾背伸关联足底腱膜绞盘效应",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊；第1跖趾还需成对籽骨",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "foot_ip_4_proximal_middle_L",
+      "name_zh": "左第4趾近节—中节趾间关节",
+      "bone_ids": [
+        "bone_foot_phalanx_4_proximal_L",
+        "bone_foot_phalanx_4_middle_L"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "以屈伸为主",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊、肌腱",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "foot_ip_4_middle_distal_L",
+      "name_zh": "左第4趾中节—远节趾间关节",
+      "bone_ids": [
+        "bone_foot_phalanx_4_middle_L",
+        "bone_foot_phalanx_4_distal_L"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "以屈伸为主",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊、肌腱",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "tmt_5_L",
+      "name_zh": "左第5跗跖连接",
+      "bone_ids": [
+        "bone_metatarsal_5_L",
+        "bone_cuboid_L"
+      ],
+      "kind": "synovial_group",
+      "motion_requirements": "按足柱分配活动，保留第2跖骨基底嵌入关系",
+      "required_soft_tissues": "跗跖韧带、Lisfranc韧带复合体、关节囊",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "mtp_5_L",
+      "name_zh": "左第5跖趾关节",
+      "bone_ids": [
+        "bone_metatarsal_5_L",
+        "bone_foot_phalanx_5_proximal_L"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "屈伸及有限外展内收；拇趾背伸关联足底腱膜绞盘效应",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊；第1跖趾还需成对籽骨",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "foot_ip_5_proximal_middle_L",
+      "name_zh": "左第5趾近节—中节趾间关节",
+      "bone_ids": [
+        "bone_foot_phalanx_5_proximal_L",
+        "bone_foot_phalanx_5_middle_L"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "以屈伸为主",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊、肌腱",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "foot_ip_5_middle_distal_L",
+      "name_zh": "左第5趾中节—远节趾间关节",
+      "bone_ids": [
+        "bone_foot_phalanx_5_middle_L",
+        "bone_foot_phalanx_5_distal_L"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "以屈伸为主",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊、肌腱",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "intermetatarsal_L",
+      "name_zh": "左跖骨间连接组",
+      "bone_ids": [
+        "bone_metatarsal_2_L",
+        "bone_metatarsal_3_L",
+        "bone_metatarsal_4_L",
+        "bone_metatarsal_5_L"
+      ],
+      "kind": "joint_group",
+      "motion_requirements": "第2—5跖骨基底间微动",
+      "required_soft_tissues": "跖骨间韧带、关节囊",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": ""
+    },
+    {
+      "id": "tmj_R",
+      "name_zh": "右颞下颌关节",
+      "bone_ids": [
+        "bone_temporal_R",
+        "bone_mandible_M"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "两侧共同控制下颌；转动加滑动",
+      "required_soft_tissues": "关节盘、关节囊、韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": "不能用两个独立动画同时驱动同一下颌骨。"
+    },
+    {
+      "id": "incudomalleolar_R",
+      "name_zh": "右锤砧关节",
+      "bone_ids": [
+        "bone_malleus_R",
+        "bone_incus_R"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "微小传振；运动教学阶段可保持装配",
+      "required_soft_tissues": "关节囊、听小骨悬吊韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": ""
+    },
+    {
+      "id": "incudostapedial_R",
+      "name_zh": "右砧镫关节",
+      "bone_ids": [
+        "bone_incus_R",
+        "bone_stapes_R"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "微小传振",
+      "required_soft_tissues": "关节囊",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": ""
+    },
+    {
+      "id": "stapes_window_R",
+      "name_zh": "右镫骨—前庭窗连接",
+      "bone_ids": [
+        "bone_stapes_R",
+        "bone_temporal_R"
+      ],
+      "kind": "fibrous_connection",
+      "motion_requirements": "镫骨底板微动，非普通大关节",
+      "required_soft_tissues": "镫骨环韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": ""
+    },
+    {
+      "id": "costovertebral_01_R",
+      "name_zh": "右第1肋椎连接组",
+      "bone_ids": [
+        "bone_rib_01_R",
+        "bone_vertebra_T1_M"
+      ],
+      "kind": "rib_joint_group",
+      "motion_requirements": "呼吸时肋骨与椎体协同；肋头关节与肋横突关节分别校准",
+      "required_soft_tissues": "肋头及肋横突关节囊/韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": "第11/12肋无肋横突关节；第10肋关节面及肋头连接存在变异，需按源模板确认。"
+    },
+    {
+      "id": "sternocostal_01_R",
+      "name_zh": "右第1胸肋连接",
+      "bone_ids": [
+        "bone_rib_01_R",
+        "bone_sternum_M"
+      ],
+      "kind": "cartilage_mediated_connection",
+      "motion_requirements": "通过肋软骨连接；呼吸不能将肋骨和胸骨焊死",
+      "required_soft_tissues": "肋软骨、胸肋韧带；第1连接类型与其余不同",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": "此条包括肋软骨两端连接；软骨待单独建模。"
+    },
+    {
+      "id": "costovertebral_02_R",
+      "name_zh": "右第2肋椎连接组",
+      "bone_ids": [
+        "bone_rib_02_R",
+        "bone_vertebra_T2_M",
+        "bone_vertebra_T1_M"
+      ],
+      "kind": "rib_joint_group",
+      "motion_requirements": "呼吸时肋骨与椎体协同；肋头关节与肋横突关节分别校准",
+      "required_soft_tissues": "肋头及肋横突关节囊/韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": "第11/12肋无肋横突关节；第10肋关节面及肋头连接存在变异，需按源模板确认。"
+    },
+    {
+      "id": "sternocostal_02_R",
+      "name_zh": "右第2胸肋连接",
+      "bone_ids": [
+        "bone_rib_02_R",
+        "bone_sternum_M"
+      ],
+      "kind": "cartilage_mediated_connection",
+      "motion_requirements": "通过肋软骨连接；呼吸不能将肋骨和胸骨焊死",
+      "required_soft_tissues": "肋软骨、胸肋韧带；第1连接类型与其余不同",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": "此条包括肋软骨两端连接；软骨待单独建模。"
+    },
+    {
+      "id": "costovertebral_03_R",
+      "name_zh": "右第3肋椎连接组",
+      "bone_ids": [
+        "bone_rib_03_R",
+        "bone_vertebra_T3_M",
+        "bone_vertebra_T2_M"
+      ],
+      "kind": "rib_joint_group",
+      "motion_requirements": "呼吸时肋骨与椎体协同；肋头关节与肋横突关节分别校准",
+      "required_soft_tissues": "肋头及肋横突关节囊/韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": "第11/12肋无肋横突关节；第10肋关节面及肋头连接存在变异，需按源模板确认。"
+    },
+    {
+      "id": "sternocostal_03_R",
+      "name_zh": "右第3胸肋连接",
+      "bone_ids": [
+        "bone_rib_03_R",
+        "bone_sternum_M"
+      ],
+      "kind": "cartilage_mediated_connection",
+      "motion_requirements": "通过肋软骨连接；呼吸不能将肋骨和胸骨焊死",
+      "required_soft_tissues": "肋软骨、胸肋韧带；第1连接类型与其余不同",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": "此条包括肋软骨两端连接；软骨待单独建模。"
+    },
+    {
+      "id": "costovertebral_04_R",
+      "name_zh": "右第4肋椎连接组",
+      "bone_ids": [
+        "bone_rib_04_R",
+        "bone_vertebra_T4_M",
+        "bone_vertebra_T3_M"
+      ],
+      "kind": "rib_joint_group",
+      "motion_requirements": "呼吸时肋骨与椎体协同；肋头关节与肋横突关节分别校准",
+      "required_soft_tissues": "肋头及肋横突关节囊/韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": "第11/12肋无肋横突关节；第10肋关节面及肋头连接存在变异，需按源模板确认。"
+    },
+    {
+      "id": "sternocostal_04_R",
+      "name_zh": "右第4胸肋连接",
+      "bone_ids": [
+        "bone_rib_04_R",
+        "bone_sternum_M"
+      ],
+      "kind": "cartilage_mediated_connection",
+      "motion_requirements": "通过肋软骨连接；呼吸不能将肋骨和胸骨焊死",
+      "required_soft_tissues": "肋软骨、胸肋韧带；第1连接类型与其余不同",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": "此条包括肋软骨两端连接；软骨待单独建模。"
+    },
+    {
+      "id": "costovertebral_05_R",
+      "name_zh": "右第5肋椎连接组",
+      "bone_ids": [
+        "bone_rib_05_R",
+        "bone_vertebra_T5_M",
+        "bone_vertebra_T4_M"
+      ],
+      "kind": "rib_joint_group",
+      "motion_requirements": "呼吸时肋骨与椎体协同；肋头关节与肋横突关节分别校准",
+      "required_soft_tissues": "肋头及肋横突关节囊/韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": "第11/12肋无肋横突关节；第10肋关节面及肋头连接存在变异，需按源模板确认。"
+    },
+    {
+      "id": "sternocostal_05_R",
+      "name_zh": "右第5胸肋连接",
+      "bone_ids": [
+        "bone_rib_05_R",
+        "bone_sternum_M"
+      ],
+      "kind": "cartilage_mediated_connection",
+      "motion_requirements": "通过肋软骨连接；呼吸不能将肋骨和胸骨焊死",
+      "required_soft_tissues": "肋软骨、胸肋韧带；第1连接类型与其余不同",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": "此条包括肋软骨两端连接；软骨待单独建模。"
+    },
+    {
+      "id": "costovertebral_06_R",
+      "name_zh": "右第6肋椎连接组",
+      "bone_ids": [
+        "bone_rib_06_R",
+        "bone_vertebra_T6_M",
+        "bone_vertebra_T5_M"
+      ],
+      "kind": "rib_joint_group",
+      "motion_requirements": "呼吸时肋骨与椎体协同；肋头关节与肋横突关节分别校准",
+      "required_soft_tissues": "肋头及肋横突关节囊/韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": "第11/12肋无肋横突关节；第10肋关节面及肋头连接存在变异，需按源模板确认。"
+    },
+    {
+      "id": "sternocostal_06_R",
+      "name_zh": "右第6胸肋连接",
+      "bone_ids": [
+        "bone_rib_06_R",
+        "bone_sternum_M"
+      ],
+      "kind": "cartilage_mediated_connection",
+      "motion_requirements": "通过肋软骨连接；呼吸不能将肋骨和胸骨焊死",
+      "required_soft_tissues": "肋软骨、胸肋韧带；第1连接类型与其余不同",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": "此条包括肋软骨两端连接；软骨待单独建模。"
+    },
+    {
+      "id": "costovertebral_07_R",
+      "name_zh": "右第7肋椎连接组",
+      "bone_ids": [
+        "bone_rib_07_R",
+        "bone_vertebra_T7_M",
+        "bone_vertebra_T6_M"
+      ],
+      "kind": "rib_joint_group",
+      "motion_requirements": "呼吸时肋骨与椎体协同；肋头关节与肋横突关节分别校准",
+      "required_soft_tissues": "肋头及肋横突关节囊/韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": "第11/12肋无肋横突关节；第10肋关节面及肋头连接存在变异，需按源模板确认。"
+    },
+    {
+      "id": "sternocostal_07_R",
+      "name_zh": "右第7胸肋连接",
+      "bone_ids": [
+        "bone_rib_07_R",
+        "bone_sternum_M"
+      ],
+      "kind": "cartilage_mediated_connection",
+      "motion_requirements": "通过肋软骨连接；呼吸不能将肋骨和胸骨焊死",
+      "required_soft_tissues": "肋软骨、胸肋韧带；第1连接类型与其余不同",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": "此条包括肋软骨两端连接；软骨待单独建模。"
+    },
+    {
+      "id": "costovertebral_08_R",
+      "name_zh": "右第8肋椎连接组",
+      "bone_ids": [
+        "bone_rib_08_R",
+        "bone_vertebra_T8_M",
+        "bone_vertebra_T7_M"
+      ],
+      "kind": "rib_joint_group",
+      "motion_requirements": "呼吸时肋骨与椎体协同；肋头关节与肋横突关节分别校准",
+      "required_soft_tissues": "肋头及肋横突关节囊/韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": "第11/12肋无肋横突关节；第10肋关节面及肋头连接存在变异，需按源模板确认。"
+    },
+    {
+      "id": "costal_arch_08_R",
+      "name_zh": "右第8肋软骨弓连接",
+      "bone_ids": [
+        "bone_rib_08_R",
+        "bone_rib_07_R"
+      ],
+      "kind": "cartilage_mediated_connection",
+      "motion_requirements": "经软骨连接上位肋软骨，不建立肋骨间直接铰链",
+      "required_soft_tissues": "肋软骨及软骨间连接",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": "骨ID描述间接关系；软骨对象会补入连接图。"
+    },
+    {
+      "id": "costovertebral_09_R",
+      "name_zh": "右第9肋椎连接组",
+      "bone_ids": [
+        "bone_rib_09_R",
+        "bone_vertebra_T9_M",
+        "bone_vertebra_T8_M"
+      ],
+      "kind": "rib_joint_group",
+      "motion_requirements": "呼吸时肋骨与椎体协同；肋头关节与肋横突关节分别校准",
+      "required_soft_tissues": "肋头及肋横突关节囊/韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": "第11/12肋无肋横突关节；第10肋关节面及肋头连接存在变异，需按源模板确认。"
+    },
+    {
+      "id": "costal_arch_09_R",
+      "name_zh": "右第9肋软骨弓连接",
+      "bone_ids": [
+        "bone_rib_09_R",
+        "bone_rib_08_R"
+      ],
+      "kind": "cartilage_mediated_connection",
+      "motion_requirements": "经软骨连接上位肋软骨，不建立肋骨间直接铰链",
+      "required_soft_tissues": "肋软骨及软骨间连接",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": "骨ID描述间接关系；软骨对象会补入连接图。"
+    },
+    {
+      "id": "costovertebral_10_R",
+      "name_zh": "右第10肋椎连接组",
+      "bone_ids": [
+        "bone_rib_10_R",
+        "bone_vertebra_T10_M"
+      ],
+      "kind": "rib_joint_group",
+      "motion_requirements": "呼吸时肋骨与椎体协同；肋头关节与肋横突关节分别校准",
+      "required_soft_tissues": "肋头及肋横突关节囊/韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": "第11/12肋无肋横突关节；第10肋关节面及肋头连接存在变异，需按源模板确认。"
+    },
+    {
+      "id": "costal_arch_10_R",
+      "name_zh": "右第10肋软骨弓连接",
+      "bone_ids": [
+        "bone_rib_10_R",
+        "bone_rib_09_R"
+      ],
+      "kind": "cartilage_mediated_connection",
+      "motion_requirements": "经软骨连接上位肋软骨，不建立肋骨间直接铰链",
+      "required_soft_tissues": "肋软骨及软骨间连接",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": "骨ID描述间接关系；软骨对象会补入连接图。"
+    },
+    {
+      "id": "costovertebral_11_R",
+      "name_zh": "右第11肋椎连接组",
+      "bone_ids": [
+        "bone_rib_11_R",
+        "bone_vertebra_T11_M"
+      ],
+      "kind": "rib_joint_group",
+      "motion_requirements": "呼吸时肋骨与椎体协同；肋头关节与肋横突关节分别校准",
+      "required_soft_tissues": "肋头及肋横突关节囊/韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": "第11/12肋无肋横突关节；第10肋关节面及肋头连接存在变异，需按源模板确认。"
+    },
+    {
+      "id": "costovertebral_12_R",
+      "name_zh": "右第12肋椎连接组",
+      "bone_ids": [
+        "bone_rib_12_R",
+        "bone_vertebra_T12_M"
+      ],
+      "kind": "rib_joint_group",
+      "motion_requirements": "呼吸时肋骨与椎体协同；肋头关节与肋横突关节分别校准",
+      "required_soft_tissues": "肋头及肋横突关节囊/韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": "第11/12肋无肋横突关节；第10肋关节面及肋头连接存在变异，需按源模板确认。"
+    },
+    {
+      "id": "sternoclavicular_R",
+      "name_zh": "右胸锁关节",
+      "bone_ids": [
+        "bone_sternum_M",
+        "bone_clavicle_R"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "锁骨抬降、前后运动和轴向旋转；联动肩胛",
+      "required_soft_tissues": "关节盘、关节囊、胸锁/肋锁韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "acromioclavicular_R",
+      "name_zh": "右肩锁关节",
+      "bone_ids": [
+        "bone_clavicle_R",
+        "bone_scapula_R"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "肩胛与锁骨之间小幅多轴运动",
+      "required_soft_tissues": "肩锁/喙锁韧带、关节囊、关节盘变异",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "scapulothoracic_R",
+      "name_zh": "右肩胛胸壁功能连接",
+      "bone_ids": [
+        "bone_scapula_R",
+        "bone_rib_02_R",
+        "bone_rib_03_R",
+        "bone_rib_04_R",
+        "bone_rib_05_R",
+        "bone_rib_06_R",
+        "bone_rib_07_R"
+      ],
+      "kind": "functional_gliding",
+      "motion_requirements": "肩胛沿胸壁上/下回旋、内外旋、前后倾及位移；与胸锁/肩锁耦合",
+      "required_soft_tissues": "前锯肌、肩胛下肌及相关筋膜/滑动界面",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": "功能性滑动关系，不是有共同关节腔的骨性关节；比例不预设为固定常数。"
+    },
+    {
+      "id": "glenohumeral_R",
+      "name_zh": "右盂肱关节",
+      "bone_ids": [
+        "bone_scapula_R",
+        "bone_humerus_R"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "屈伸、外展内收、内外旋；校准关节中心与伴随平移",
+      "required_soft_tissues": "盂唇、关节囊、盂肱/喙肱韧带、肩袖",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "humeroulnar_R",
+      "name_zh": "右肱尺关节",
+      "bone_ids": [
+        "bone_humerus_R",
+        "bone_ulna_R"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "以屈伸为主；检查提携角和全范围关节面接触",
+      "required_soft_tissues": "软骨、关节囊、尺侧/外侧副韧带复合体",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "humeroradial_R",
+      "name_zh": "右肱桡关节",
+      "bone_ids": [
+        "bone_humerus_R",
+        "bone_radius_R"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "随肘屈伸及前臂旋转共同运动",
+      "required_soft_tissues": "关节软骨、关节囊",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "proximal_radioulnar_R",
+      "name_zh": "右近侧桡尺关节",
+      "bone_ids": [
+        "bone_radius_R",
+        "bone_ulna_R"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "与远侧桡尺共同控制旋前旋后",
+      "required_soft_tissues": "桡骨环状韧带、方形韧带、关节囊",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "distal_radioulnar_R",
+      "name_zh": "右远侧桡尺关节",
+      "bone_ids": [
+        "bone_radius_R",
+        "bone_ulna_R"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "桡骨相对尺骨旋转和平移；不能让前臂两骨锁成一体",
+      "required_soft_tissues": "三角纤维软骨复合体、关节囊",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "forearm_interosseous_R",
+      "name_zh": "右前臂骨间连接",
+      "bone_ids": [
+        "bone_radius_R",
+        "bone_ulna_R"
+      ],
+      "kind": "syndesmosis",
+      "motion_requirements": "与桡尺关节协调，不独立指定重复驱动",
+      "required_soft_tissues": "前臂骨间膜",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "radiocarpal_R",
+      "name_zh": "右桡腕关节组",
+      "bone_ids": [
+        "bone_radius_R",
+        "bone_scaphoid_R",
+        "bone_lunate_R",
+        "bone_triquetrum_R"
+      ],
+      "kind": "synovial_group",
+      "motion_requirements": "屈伸及桡尺偏，与腕中关节分配运动",
+      "required_soft_tissues": "关节软骨、关节盘、桡腕及腕侧副韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "intercarpal_R",
+      "name_zh": "右腕骨间连接组",
+      "bone_ids": [
+        "bone_scaphoid_R",
+        "bone_lunate_R",
+        "bone_triquetrum_R",
+        "bone_pisiform_R",
+        "bone_trapezium_R",
+        "bone_trapezoid_R",
+        "bone_capitate_R",
+        "bone_hamate_R"
+      ],
+      "kind": "joint_group",
+      "motion_requirements": "腕中和腕骨间协同；豌豆骨与三角骨关系单列校准",
+      "required_soft_tissues": "腕骨间韧带、关节囊、软骨",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": "后续逐关节面展开；不能将8块腕骨看作一个刚体。"
+    },
+    {
+      "id": "cmc_1_R",
+      "name_zh": "右第1腕掌连接",
+      "bone_ids": [
+        "bone_metacarpal_1_R",
+        "bone_trapezium_R"
+      ],
+      "kind": "synovial_group",
+      "motion_requirements": "拇指鞍状关节需表现对掌；其余腕掌活动差异化",
+      "required_soft_tissues": "腕掌韧带、关节囊、软骨",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "mcp_1_R",
+      "name_zh": "右第1掌指关节",
+      "bone_ids": [
+        "bone_metacarpal_1_R",
+        "bone_hand_phalanx_1_proximal_R"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "屈伸及条件性外展内收，按手指区分",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、伸肌腱帽",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "hand_ip_1_proximal_distal_R",
+      "name_zh": "右第1指近节—远节指间关节",
+      "bone_ids": [
+        "bone_hand_phalanx_1_proximal_R",
+        "bone_hand_phalanx_1_distal_R"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "以屈伸为主；与屈伸肌腱路径耦合",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、腱鞘/滑车",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "cmc_2_R",
+      "name_zh": "右第2腕掌连接",
+      "bone_ids": [
+        "bone_metacarpal_2_R",
+        "bone_trapezium_R",
+        "bone_trapezoid_R",
+        "bone_capitate_R"
+      ],
+      "kind": "synovial_group",
+      "motion_requirements": "拇指鞍状关节需表现对掌；其余腕掌活动差异化",
+      "required_soft_tissues": "腕掌韧带、关节囊、软骨",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "mcp_2_R",
+      "name_zh": "右第2掌指关节",
+      "bone_ids": [
+        "bone_metacarpal_2_R",
+        "bone_hand_phalanx_2_proximal_R"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "屈伸及条件性外展内收，按手指区分",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、伸肌腱帽",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "hand_ip_2_proximal_middle_R",
+      "name_zh": "右第2指近节—中节指间关节",
+      "bone_ids": [
+        "bone_hand_phalanx_2_proximal_R",
+        "bone_hand_phalanx_2_middle_R"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "以屈伸为主；与屈伸肌腱路径耦合",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、腱鞘/滑车",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "hand_ip_2_middle_distal_R",
+      "name_zh": "右第2指中节—远节指间关节",
+      "bone_ids": [
+        "bone_hand_phalanx_2_middle_R",
+        "bone_hand_phalanx_2_distal_R"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "以屈伸为主；与屈伸肌腱路径耦合",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、腱鞘/滑车",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "cmc_3_R",
+      "name_zh": "右第3腕掌连接",
+      "bone_ids": [
+        "bone_metacarpal_3_R",
+        "bone_capitate_R"
+      ],
+      "kind": "synovial_group",
+      "motion_requirements": "拇指鞍状关节需表现对掌；其余腕掌活动差异化",
+      "required_soft_tissues": "腕掌韧带、关节囊、软骨",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "mcp_3_R",
+      "name_zh": "右第3掌指关节",
+      "bone_ids": [
+        "bone_metacarpal_3_R",
+        "bone_hand_phalanx_3_proximal_R"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "屈伸及条件性外展内收，按手指区分",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、伸肌腱帽",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "hand_ip_3_proximal_middle_R",
+      "name_zh": "右第3指近节—中节指间关节",
+      "bone_ids": [
+        "bone_hand_phalanx_3_proximal_R",
+        "bone_hand_phalanx_3_middle_R"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "以屈伸为主；与屈伸肌腱路径耦合",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、腱鞘/滑车",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "hand_ip_3_middle_distal_R",
+      "name_zh": "右第3指中节—远节指间关节",
+      "bone_ids": [
+        "bone_hand_phalanx_3_middle_R",
+        "bone_hand_phalanx_3_distal_R"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "以屈伸为主；与屈伸肌腱路径耦合",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、腱鞘/滑车",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "cmc_4_R",
+      "name_zh": "右第4腕掌连接",
+      "bone_ids": [
+        "bone_metacarpal_4_R",
+        "bone_capitate_R",
+        "bone_hamate_R"
+      ],
+      "kind": "synovial_group",
+      "motion_requirements": "拇指鞍状关节需表现对掌；其余腕掌活动差异化",
+      "required_soft_tissues": "腕掌韧带、关节囊、软骨",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "mcp_4_R",
+      "name_zh": "右第4掌指关节",
+      "bone_ids": [
+        "bone_metacarpal_4_R",
+        "bone_hand_phalanx_4_proximal_R"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "屈伸及条件性外展内收，按手指区分",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、伸肌腱帽",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "hand_ip_4_proximal_middle_R",
+      "name_zh": "右第4指近节—中节指间关节",
+      "bone_ids": [
+        "bone_hand_phalanx_4_proximal_R",
+        "bone_hand_phalanx_4_middle_R"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "以屈伸为主；与屈伸肌腱路径耦合",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、腱鞘/滑车",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "hand_ip_4_middle_distal_R",
+      "name_zh": "右第4指中节—远节指间关节",
+      "bone_ids": [
+        "bone_hand_phalanx_4_middle_R",
+        "bone_hand_phalanx_4_distal_R"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "以屈伸为主；与屈伸肌腱路径耦合",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、腱鞘/滑车",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "cmc_5_R",
+      "name_zh": "右第5腕掌连接",
+      "bone_ids": [
+        "bone_metacarpal_5_R",
+        "bone_hamate_R"
+      ],
+      "kind": "synovial_group",
+      "motion_requirements": "拇指鞍状关节需表现对掌；其余腕掌活动差异化",
+      "required_soft_tissues": "腕掌韧带、关节囊、软骨",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "mcp_5_R",
+      "name_zh": "右第5掌指关节",
+      "bone_ids": [
+        "bone_metacarpal_5_R",
+        "bone_hand_phalanx_5_proximal_R"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "屈伸及条件性外展内收，按手指区分",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、伸肌腱帽",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "hand_ip_5_proximal_middle_R",
+      "name_zh": "右第5指近节—中节指间关节",
+      "bone_ids": [
+        "bone_hand_phalanx_5_proximal_R",
+        "bone_hand_phalanx_5_middle_R"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "以屈伸为主；与屈伸肌腱路径耦合",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、腱鞘/滑车",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "hand_ip_5_middle_distal_R",
+      "name_zh": "右第5指中节—远节指间关节",
+      "bone_ids": [
+        "bone_hand_phalanx_5_middle_R",
+        "bone_hand_phalanx_5_distal_R"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "以屈伸为主；与屈伸肌腱路径耦合",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、腱鞘/滑车",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "intermetacarpal_R",
+      "name_zh": "右掌骨间连接组",
+      "bone_ids": [
+        "bone_metacarpal_2_R",
+        "bone_metacarpal_3_R",
+        "bone_metacarpal_4_R",
+        "bone_metacarpal_5_R"
+      ],
+      "kind": "joint_group",
+      "motion_requirements": "第2—5掌骨基底间的微动",
+      "required_soft_tissues": "掌骨间韧带、关节囊",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": ""
+    },
+    {
+      "id": "sacroiliac_R",
+      "name_zh": "右骶髂关节",
+      "bone_ids": [
+        "bone_sacrum_M",
+        "bone_hip_R"
+      ],
+      "kind": "mixed_joint_complex",
+      "motion_requirements": "小幅点头/反点头与骨盆环协调",
+      "required_soft_tissues": "骶髂关节软骨、骨间/前后骶髂韧带、骶结节/骶棘韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": "不能把骶髂关节做成大幅球窝运动。"
+    },
+    {
+      "id": "hip_R",
+      "name_zh": "右髋关节",
+      "bone_ids": [
+        "bone_hip_R",
+        "bone_femur_R"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "多轴运动，中心与轴由股骨头和髋臼校准",
+      "required_soft_tissues": "髋臼唇、软骨、关节囊、髂股/耻股/坐股韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "tibiofemoral_R",
+      "name_zh": "右胫股关节组",
+      "bone_ids": [
+        "bone_femur_R",
+        "bone_tibia_R"
+      ],
+      "kind": "synovial_group",
+      "motion_requirements": "屈伸伴随滚动、滑动和轴向旋转；不采用全范围固定单轴",
+      "required_soft_tissues": "内外侧半月板、交叉/侧副韧带、关节囊、软骨",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "patellofemoral_R",
+      "name_zh": "右髌股关节",
+      "bone_ids": [
+        "bone_femur_R",
+        "bone_patella_R"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "髌骨沿滑车滑动并伴倾斜/旋转，随膝角变化",
+      "required_soft_tissues": "软骨、髌支持带、股四头肌腱、髌韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "proximal_tibiofibular_R",
+      "name_zh": "右近侧胫腓关节",
+      "bone_ids": [
+        "bone_tibia_R",
+        "bone_fibula_R"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "小幅滑动，与踝及膝状态协调",
+      "required_soft_tissues": "关节囊、胫腓头韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "distal_tibiofibular_R",
+      "name_zh": "右远侧胫腓连接",
+      "bone_ids": [
+        "bone_tibia_R",
+        "bone_fibula_R"
+      ],
+      "kind": "syndesmosis",
+      "motion_requirements": "踝背屈时允许与踝穴匹配的微动",
+      "required_soft_tissues": "胫腓前后韧带、骨间韧带与小腿骨间膜",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "talocrural_R",
+      "name_zh": "右距小腿关节组",
+      "bone_ids": [
+        "bone_tibia_R",
+        "bone_fibula_R",
+        "bone_talus_R"
+      ],
+      "kind": "synovial_group",
+      "motion_requirements": "背屈跖屈为主，校准踝穴和距骨滑车",
+      "required_soft_tissues": "软骨、关节囊、三角韧带、外侧韧带复合体",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "subtalar_R",
+      "name_zh": "右距下关节",
+      "bone_ids": [
+        "bone_talus_R",
+        "bone_calcaneus_R"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "斜轴耦合运动；与横跗关节共同表现足部内外翻",
+      "required_soft_tissues": "距跟骨间韧带、颈韧带、关节囊、软骨",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "talocalcaneonavicular_R",
+      "name_zh": "右距跟舟关节组",
+      "bone_ids": [
+        "bone_talus_R",
+        "bone_calcaneus_R",
+        "bone_navicular_R"
+      ],
+      "kind": "synovial_group",
+      "motion_requirements": "与距下、跟骰关节共同控制后/中足运动",
+      "required_soft_tissues": "足底跟舟韧带、关节囊、软骨",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "calcaneocuboid_R",
+      "name_zh": "右跟骰关节",
+      "bone_ids": [
+        "bone_calcaneus_R",
+        "bone_cuboid_R"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "与距舟部分共同构成横跗运动关系",
+      "required_soft_tissues": "长/短足底韧带、分歧韧带、关节囊",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "distal_intertarsal_R",
+      "name_zh": "右远侧跗骨间连接组",
+      "bone_ids": [
+        "bone_navicular_R",
+        "bone_cuboid_R",
+        "bone_medial_cuneiform_R",
+        "bone_intermediate_cuneiform_R",
+        "bone_lateral_cuneiform_R"
+      ],
+      "kind": "joint_group",
+      "motion_requirements": "舟楔、楔骨间及楔骰等微动；足弓不能作为僵硬三角架",
+      "required_soft_tissues": "跗骨间韧带、关节囊、软骨",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "tmt_1_R",
+      "name_zh": "右第1跗跖连接",
+      "bone_ids": [
+        "bone_metatarsal_1_R",
+        "bone_medial_cuneiform_R"
+      ],
+      "kind": "synovial_group",
+      "motion_requirements": "按足柱分配活动，保留第2跖骨基底嵌入关系",
+      "required_soft_tissues": "跗跖韧带、Lisfranc韧带复合体、关节囊",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "mtp_1_R",
+      "name_zh": "右第1跖趾关节",
+      "bone_ids": [
+        "bone_metatarsal_1_R",
+        "bone_foot_phalanx_1_proximal_R"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "屈伸及有限外展内收；拇趾背伸关联足底腱膜绞盘效应",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊；第1跖趾还需成对籽骨",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "foot_ip_1_proximal_distal_R",
+      "name_zh": "右第1趾近节—远节趾间关节",
+      "bone_ids": [
+        "bone_foot_phalanx_1_proximal_R",
+        "bone_foot_phalanx_1_distal_R"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "以屈伸为主",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊、肌腱",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "tmt_2_R",
+      "name_zh": "右第2跗跖连接",
+      "bone_ids": [
+        "bone_metatarsal_2_R",
+        "bone_medial_cuneiform_R",
+        "bone_intermediate_cuneiform_R",
+        "bone_lateral_cuneiform_R"
+      ],
+      "kind": "synovial_group",
+      "motion_requirements": "按足柱分配活动，保留第2跖骨基底嵌入关系",
+      "required_soft_tissues": "跗跖韧带、Lisfranc韧带复合体、关节囊",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "mtp_2_R",
+      "name_zh": "右第2跖趾关节",
+      "bone_ids": [
+        "bone_metatarsal_2_R",
+        "bone_foot_phalanx_2_proximal_R"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "屈伸及有限外展内收；拇趾背伸关联足底腱膜绞盘效应",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊；第1跖趾还需成对籽骨",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "foot_ip_2_proximal_middle_R",
+      "name_zh": "右第2趾近节—中节趾间关节",
+      "bone_ids": [
+        "bone_foot_phalanx_2_proximal_R",
+        "bone_foot_phalanx_2_middle_R"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "以屈伸为主",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊、肌腱",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "foot_ip_2_middle_distal_R",
+      "name_zh": "右第2趾中节—远节趾间关节",
+      "bone_ids": [
+        "bone_foot_phalanx_2_middle_R",
+        "bone_foot_phalanx_2_distal_R"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "以屈伸为主",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊、肌腱",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "tmt_3_R",
+      "name_zh": "右第3跗跖连接",
+      "bone_ids": [
+        "bone_metatarsal_3_R",
+        "bone_lateral_cuneiform_R"
+      ],
+      "kind": "synovial_group",
+      "motion_requirements": "按足柱分配活动，保留第2跖骨基底嵌入关系",
+      "required_soft_tissues": "跗跖韧带、Lisfranc韧带复合体、关节囊",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "mtp_3_R",
+      "name_zh": "右第3跖趾关节",
+      "bone_ids": [
+        "bone_metatarsal_3_R",
+        "bone_foot_phalanx_3_proximal_R"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "屈伸及有限外展内收；拇趾背伸关联足底腱膜绞盘效应",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊；第1跖趾还需成对籽骨",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "foot_ip_3_proximal_middle_R",
+      "name_zh": "右第3趾近节—中节趾间关节",
+      "bone_ids": [
+        "bone_foot_phalanx_3_proximal_R",
+        "bone_foot_phalanx_3_middle_R"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "以屈伸为主",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊、肌腱",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "foot_ip_3_middle_distal_R",
+      "name_zh": "右第3趾中节—远节趾间关节",
+      "bone_ids": [
+        "bone_foot_phalanx_3_middle_R",
+        "bone_foot_phalanx_3_distal_R"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "以屈伸为主",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊、肌腱",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "tmt_4_R",
+      "name_zh": "右第4跗跖连接",
+      "bone_ids": [
+        "bone_metatarsal_4_R",
+        "bone_cuboid_R"
+      ],
+      "kind": "synovial_group",
+      "motion_requirements": "按足柱分配活动，保留第2跖骨基底嵌入关系",
+      "required_soft_tissues": "跗跖韧带、Lisfranc韧带复合体、关节囊",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "mtp_4_R",
+      "name_zh": "右第4跖趾关节",
+      "bone_ids": [
+        "bone_metatarsal_4_R",
+        "bone_foot_phalanx_4_proximal_R"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "屈伸及有限外展内收；拇趾背伸关联足底腱膜绞盘效应",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊；第1跖趾还需成对籽骨",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "foot_ip_4_proximal_middle_R",
+      "name_zh": "右第4趾近节—中节趾间关节",
+      "bone_ids": [
+        "bone_foot_phalanx_4_proximal_R",
+        "bone_foot_phalanx_4_middle_R"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "以屈伸为主",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊、肌腱",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "foot_ip_4_middle_distal_R",
+      "name_zh": "右第4趾中节—远节趾间关节",
+      "bone_ids": [
+        "bone_foot_phalanx_4_middle_R",
+        "bone_foot_phalanx_4_distal_R"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "以屈伸为主",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊、肌腱",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "tmt_5_R",
+      "name_zh": "右第5跗跖连接",
+      "bone_ids": [
+        "bone_metatarsal_5_R",
+        "bone_cuboid_R"
+      ],
+      "kind": "synovial_group",
+      "motion_requirements": "按足柱分配活动，保留第2跖骨基底嵌入关系",
+      "required_soft_tissues": "跗跖韧带、Lisfranc韧带复合体、关节囊",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "mtp_5_R",
+      "name_zh": "右第5跖趾关节",
+      "bone_ids": [
+        "bone_metatarsal_5_R",
+        "bone_foot_phalanx_5_proximal_R"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "屈伸及有限外展内收；拇趾背伸关联足底腱膜绞盘效应",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊；第1跖趾还需成对籽骨",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "foot_ip_5_proximal_middle_R",
+      "name_zh": "右第5趾近节—中节趾间关节",
+      "bone_ids": [
+        "bone_foot_phalanx_5_proximal_R",
+        "bone_foot_phalanx_5_middle_R"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "以屈伸为主",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊、肌腱",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "foot_ip_5_middle_distal_R",
+      "name_zh": "右第5趾中节—远节趾间关节",
+      "bone_ids": [
+        "bone_foot_phalanx_5_middle_R",
+        "bone_foot_phalanx_5_distal_R"
+      ],
+      "kind": "synovial",
+      "motion_requirements": "以屈伸为主",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊、肌腱",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    },
+    {
+      "id": "intermetatarsal_R",
+      "name_zh": "右跖骨间连接组",
+      "bone_ids": [
+        "bone_metatarsal_2_R",
+        "bone_metatarsal_3_R",
+        "bone_metatarsal_4_R",
+        "bone_metatarsal_5_R"
+      ],
+      "kind": "joint_group",
+      "motion_requirements": "第2—5跖骨基底间微动",
+      "required_soft_tissues": "跖骨间韧带、关节囊",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P2",
+      "notes": ""
+    },
+    {
+      "id": "pubic_symphysis",
+      "name_zh": "耻骨联合",
+      "bone_ids": [
+        "bone_hip_L",
+        "bone_hip_R"
+      ],
+      "kind": "symphysis",
+      "motion_requirements": "骨盆环有限运动，不做大幅独立滑动",
+      "required_soft_tissues": "耻骨间盘及耻骨韧带",
+      "calibration_status": "pending_geometry_and_anatomy_review",
+      "joint_frames": null,
+      "axis_definition": null,
+      "range_of_motion": null,
+      "priority": "P1",
+      "notes": ""
+    }
+  ]
+}

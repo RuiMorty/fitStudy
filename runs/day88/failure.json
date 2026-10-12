@@ -1,0 +1,36 @@
+{
+  "day": 88,
+  "title": "FMS功能性动作筛查",
+  "status": "missing-reviewed-source-image",
+  "asset": "cover.png",
+  "attempts": 3,
+  "retryPolicy": "首次请求后最多五次经调整提示词重试；本次已使用首次加两次不同提示词重试，并在连续同类质量问题下止损。",
+  "reason": "封面三次候选均为真 RGBA PNG，但在人物和木棍外保留明显红黄外缘/晕染。第 2、3 次明确改为稀疏扁平矢量构图并禁止所有彩色外描边、光晕和阴影，问题仍未改善。该边缘在透明素材叠入浅色卡片时不符合共同图片规范，不能作为封面或占位图使用。",
+  "relatedCandidates": {
+    "rejectedGeneratedCandidates": 11,
+    "requestFailures": 1,
+    "otherRejectedAssets": [
+      "visual-01.png",
+      "visual-02.png",
+      "visual-03.png",
+      "visual-04.png",
+      "visual-05.png"
+    ],
+    "unrequestedAssets": [
+      "overview-01.png",
+      "overview-02.png",
+      "overview-03.png",
+      "overview-04.png",
+      "overview-05.png"
+    ]
+  },
+  "records": [
+    "runs/day88/image-request-log.json",
+    "runs/day88/rejected/cover-attempt-01.md",
+    "runs/day88/rejected/cover-attempt-02.md",
+    "runs/day88/rejected/cover-attempt-03.md",
+    "runs/day88/rejected/visual-03-attempt-04.md"
+  ],
+  "nextAction": "等待用户明确决定是否继续本封面的剩余三次已授权尝试，或提供经审核的替代源图；未取得合格封面前不得渲染、安装、部署或开始下一课。",
+  "deployment": "not allowed"
+}

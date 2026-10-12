@@ -1,0 +1,50 @@
+{
+  "commonPrompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.",
+  "assets": [
+    {
+      "file": "cover.png",
+      "role": "cover",
+      "prompt": "Wide 16:9 wordless course cover. Exactly one Bojji arranges a colorful plain meal with leafy vegetables, fruit, beans, dairy-like yogurt and fish; exactly one Despa performs a gentle running warm-up nearby. Explain varied foods supporting training. No vitamins letters, supplement bottles, labels, text or medical symbols. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    },
+    {
+      "file": "visual-01-vitamins.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Bojji holds a fruit-and-vegetable basket; exactly one Despa holds a small plain plate with egg and yogurt. Explain different food sources and storage differences without letters, capsules, sun icons, text or molecular symbols. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    },
+    {
+      "file": "visual-02-minerals.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Despa performs a controlled light calf raise with stable posture; exactly one Bojji holds a plain plate with beans, greens and fish. Explain minerals contribute across muscle, bone and food functions without skeleton diagram, labels, arrows or text. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    },
+    {
+      "file": "visual-03-risk.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Bojji rests calmly after an easy endurance walk with a water cup; exactly one Despa reviews a simple balanced meal with open hands. Explain noticing training and diet risk clues without showing illness, blood, medical tests, text or warning symbols. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    },
+    {
+      "file": "visual-04-supplements.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Despa chooses a plain balanced food plate; exactly one Bojji carefully places one unbranded plain small bottle aside rather than using it. Explain food first and cautious supplement boundaries. No readable bottle, pills, labels, arrows or medical symbols. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    },
+    {
+      "file": "overview-01-vitamins.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Bojji holds fruit and leafy vegetables; exactly one Despa holds a plain egg-and-yogurt plate. Explain vitamin source variety. No letters, pills or text. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    },
+    {
+      "file": "overview-02-minerals.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Despa performs a controlled calf raise; exactly one Bojji holds beans and greens on a plate. Explain food and mineral-related body function. No skeleton, labels or text. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    },
+    {
+      "file": "overview-03-risk.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Bojji rests after an easy walk while exactly one Despa looks at a balanced plain meal. Explain monitoring training and nutrition clues, not diagnosis. No test tube, warning sign or text. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    },
+    {
+      "file": "overview-04-supplements.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Despa chooses a balanced food plate while exactly one Bojji sets one small unbranded bottle aside. Explain food-first supplementation boundary. No readable bottle, pills or text. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    }
+  ]
+}

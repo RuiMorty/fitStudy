@@ -1,0 +1,15 @@
+{
+  "model": "gpt-image-2.5-sunburst",
+  "mode": "prompt-only full-page raster generation; no post-compositing or text editing",
+  "common": "Create one complete vertical 3:4 Chinese Xiaohongshu exercise-science teaching poster as a finished raster image, 1536x2048. No people, faces, cartoons, mascots or anthropomorphic characters. Keep the established look: warm cream paper, brick-red elegant Chinese headline, dark charcoal clear body text, muted blue and sage-green accents, precise hand-painted medical illustrations, generous spacing. Use large simplified Chinese text and one dominant explanatory diagram. Reproduce the required Chinese text exactly, with no invented text, English, watermarks, decorative food imagery or tiny footnotes. Scientific accuracy matters more than decoration. Do not leave blank areas for later editing.",
+  "pages": [
+    {
+      "file": "06-gluconeogenesis.png",
+      "prompt": "Teach the meaning of gluconeogenesis to a beginner in one glance. Exact headline: 糖异生是什么？ Exact definition directly below in very large text: 用不是糖的原料，重新制造葡萄糖. Main horizontal watercolor medical process diagram: on the left a working muscle releasing small pink lactate droplets labeled 乳酸, and separately adipose tissue releasing small gold glycerol droplets labeled 甘油; arrows from both go INTO a central liver labeled 肝脏; then a blue arrow from liver into blue blood with small individual glucose hexagons labeled 葡萄糖进入血液. Exact bottom takeaway: 起步就可参与；跑得久、不补糖时更重要. Exact small clarification: 脂肪酸不能直接变成葡萄糖. Do not show fatty acids flowing into liver or becoming glucose. No other text."
+    },
+    {
+      "file": "07-amounts.png",
+      "prompt": "Create a beautifully typeset Chinese EXPLANATION CARD, not a numeric chart. NO bars, graphs, axes, scales, pies, gauges or approximate lengths anywhere. NO food, organs, people or decoration that implies dietary intake. Exact large headline: 同样跑1小时，消耗的糖和脂肪也会不同. Directly below, exact sentence: 假设都消耗600千卡，只是糖脂比例不同. In the center, two large side-by-side bordered TABLE cards with equally sized cells. Left header: 情境A：脂肪占比高. Left rows: 总糖约54克 ; 总脂肪约42克. Right header: 情境B：糖占比高. Right rows: 总糖约108克 ; 总脂肪约20克. Below in a strong brick-red callout exact: A和B是两种假设，不是跑步的前后阶段. Exact bottom clarification: 只能估算总量，不能据此算出肌糖原消耗. No other writing. Check all four numbers and their associations carefully."
+    }
+  ]
+}

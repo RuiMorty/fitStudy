@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Day 67 · 能量平衡与体重管理</title><link rel="icon" type="image/svg+xml" href="assets/fitness-study-logo-open-circle.svg?v=a6d8e5caaa61"><style>:root { color-scheme: light; --ink: #111113; --muted: #71717a; --line: #e4e4e7; --accent: #ff5a1f; --green: #0ea66b; --blue: #2563eb; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; font-synthesis: none; letter-spacing: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); overflow-wrap: anywhere; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+img { display: block; max-width: 100%; }
+button:focus-visible, a:focus-visible, summary:focus-visible, input:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
+svg.icon { width: 20px; height: 20px; }
+.icon-button { display: inline-grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 1px solid var(--line); border-radius: 6px; background: white; }
+[hidden] { display: none !important; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
+
+body { background: #f6f8f7; font-size: 14px; line-height: 1.65; }
+main { max-width: 980px; margin: auto; padding: 24px 18px 60px; }
+.header { padding: 22px 4px 14px; }
+h1 { margin: 10px 0 8px; font-size: 36px; line-height: 1.2; }
+h1::before { content: ""; display: block; width: 34px; height: 4px; background: var(--accent); margin-bottom: 10px; }
+h2 { font-size: 17px; margin: 0 0 14px; }
+h3 { font-size: 16px; margin: 0 0 8px; }
+.sub { color: var(--muted); margin: 5px 0 18px; }
+.meta { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { display: inline-block; border: 1px solid var(--line); border-radius: 20px; background: white; color: var(--muted); padding: 3px 10px; font-size: 12px; font-weight: 600; }
+.chip:nth-child(1) { background: #e2f7eb; color: #15803d; border-color: transparent; }
+.chip:nth-child(2) { background: #e7f0fe; color: #2563eb; border-color: transparent; }
+.chip:nth-child(3) { background: #fff2e5; color: #9a4c05; border-color: transparent; }
+.panel, .figure, .warn, .mnemonic { background: white; border: 1px solid #e2e8e4; border-radius: 14px; box-shadow: 0 2px 12px rgba(20,40,30,.06); padding: 20px; margin: 16px 0; }
+.green { border-left: 5px solid var(--green); }
+.orange { border-left: 5px solid #ea7a17; }
+.blue { border-left: 5px solid #0ea5e9; }
+.takeaway { margin: 0; }
+.figure { text-align: center; }
+.figure button { display: block; position: relative; width: 100%; border: 0; padding: 0; background: white; cursor: zoom-in; }
+.figure img { max-height: 760px; width: 100%; object-fit: contain; }
+.figure .icon-button { position: absolute; bottom: 8px; right: 8px; background: #ffffffed; }
+.caption { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
+.kp { list-style: none; padding: 0; margin: 0; }
+.kp > li { border-bottom: 1px dashed #e2e8e4; }
+.kp > li:last-child { border-bottom: 0; }
+.kp summary { cursor: pointer; padding: 13px 8px; font-weight: 650; }
+.kp summary::marker { color: var(--green); }
+.term { color: #0a7d52; background: #e2f7eb; border-radius: 6px; padding: 1px 5px; }
+.kp-body { padding: 2px 14px 16px 24px; }
+.detail-block { margin: 12px 0; }
+.detail-block h4 { font-size: 13px; color: #08744d; margin: 0 0 4px; }
+.detail-block p { margin: 0; white-space: pre-line; }
+.warn { border-left: 5px solid #e23b3b; background: #fffafa; }
+.warn p { margin: 8px 0; }
+.misconception { color: #a82b32; }
+.mnemonic { border-left: 4px solid var(--accent); box-shadow: none; }
+.mnemonic strong { color: #df4716; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+.flip { height: 168px; perspective: 900px; border: 0; background: transparent; padding: 0; text-align: center; }
+.flip-in { display: block; height: 100%; position: relative; transition: transform .45s; transform-style: preserve-3d; }
+.flip[aria-pressed="true"] .flip-in { transform: rotateY(180deg); }
+.face { position: absolute; inset: 0; backface-visibility: hidden; border: 1px solid var(--line); border-radius: 10px; padding: 15px; background: #fafafa; display: flex; align-items: center; justify-content: center; overflow-y: auto; }
+.back { transform: rotateY(180deg); background: #eef9f4; color: #075e40; border-color: #c8eadb; }
+.practice { padding-left: 20px; }
+.practice li { margin: 7px 0; }
+.question { border-top: 1px solid #e2e8e4; padding: 20px 0 8px; margin-top: 12px; min-width: 0; }
+.options { display: grid; gap: 7px; margin: 10px 0; }
+.option { display: flex; gap: 10px; align-items: baseline; border: 1px solid #e2e8e4; background: #f0f4f2; padding: 9px 12px; border-radius: 8px; cursor: pointer; }
+.option input { flex-shrink: 0; accent-color: var(--green); }
+.option:has(input:checked) { border-color: #0ea5e9; background: #e7f6fd; }
+.question[data-result="correct"] .option:has(input:checked) { border-color: #0ea66b; background: #e7f8ef; }
+.question[data-result="wrong"] .option:has(input:checked) { border-color: #e23b3b; background: #fff0f0; }
+.answer { background: #f8fbfa; border-left: 3px solid #0ea5e9; padding: 10px; margin-top: 10px; }
+.check { border: 0; background: #0ea66b; color: white; padding: 9px 14px; border-radius: 7px; }
+footer { color: var(--muted); font-size: 12px; margin-top: 28px; }
+footer ul { padding-left: 20px; }
+dialog { width: min(1200px, 96vw); max-height: 94dvh; padding: 52px 16px 16px; border: 0; border-radius: 8px; background: white; }
+dialog::backdrop { background: #15191dd9; }
+dialog img { width: 100%; max-height: 78dvh; object-fit: contain; }
+dialog .icon-button { position: absolute; top: 8px; right: 10px; }
+@media (max-width: 600px) {
+  main { padding: 16px 12px 40px; }
+  h1 { font-size: 26px; }
+  .header { padding: 16px 4px 12px; }
+  .panel, .figure, .warn, .mnemonic { padding: 15px; }
+  .kp-body { padding-left: 16px; }
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .face { padding: 12px; }
+}
+</style></head><body><main><header class="header"><h1>Day 67 · 能量平衡与体重管理</h1><p class="sub">用趋势、训练表现和健康反馈管理目标，不用一次体重或公式估算给自己下判决。</p><div class="meta"><span class="chip">BMR与TDEE</span><span class="chip">能量可用性</span><span class="chip">保肌减脂</span></div></header><section class="panel green"><h2>一句话总结</h2><p class="takeaway">能量平衡是长期摄入与消耗的关系：持续赤字通常推动体重下降，持续盈余通常支持体重增加，但日体重还会受水分、糖原和消化内容物波动影响。基础代谢率和TDEE公式只能提供起点，必须用趋势、训练表现、饥饿、睡眠和恢复校准。减脂优先保留瘦体重、训练表现和健康；过快或过度限制可能损害恢复、情绪和能量可用性，不应作为常规策略。</p></section><figure class="figure"><button data-zoom aria-label="放大详情图"><img class="" src="assets/阶段4营养恢复/day67-能量平衡与体重管理.png" alt="能量平衡与体重管理四主题中文总览"><span class="icon-button"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 15 6 6" /><path d="m15 9 6-6" /><path d="M21 16v5h-5" /><path d="M21 8V3h-5" /><path d="M3 16v5h5" /><path d="m3 21 6-6" /><path d="M3 8V3h5" /><path d="M9 9 3 3" /></svg></span></button><figcaption class="caption">能量平衡影响体重趋势，但体重还受水分、糖原、消化内容物和训练适应影响；目标应兼顾表现、恢复、心理和健康。</figcaption></figure><section class="panel"><h2>核心要点</h2><ul class="kp"><li><details><summary><span class="term">能量平衡：看长期趋势，不给食物贴道德</span>：摄入与消耗的长期关系影响体重趋势，但短期体重可被水分、糖原、盐分、月经周期和消化内容物显著改变。</summary><div class="kp-body"><section class="detail-block"><h4>赤字和盈余是方向</h4><p>持续能量赤字通常与体重下降相关，持续盈余通常与体重增加相关，但实际变化速度受训练、蛋白质、睡眠、疾病、药物和适应性变化影响。把某一餐、某一种食物或一天体重当作“成功失败”会增加焦虑，也不利于长期执行。</p></section><section class="detail-block"><h4>先看多维反馈</h4><p>除体重趋势外，还应关注围度、力量和耐力表现、恢复、饥饿、情绪、睡眠、月经与伤病情况。若为特定赛事、医学治疗或产后恢复设目标，更应由具备资质的医疗和营养团队个体化支持。</p></section></div></details></li><li><details><summary><span class="term">BMR与TDEE：公式是起点，不是判决</span>：BMR是维持基础生理所需的估计能量；TDEE还包括活动、食物热效应和非运动活动等，都会随生活与训练改变。</summary><div class="kp-body"><section class="detail-block"><h4>Mifflin–St Jeor和其他方程怎么用</h4><p>Mifflin–St Jeor以体重、身高、年龄和性别常数估计静息能量消耗（RMR/REE，教练语境中常被简化称作BMR参考）：男性常数为+5，女性常数为−161；Harris–Benedict也是另一种群体估算方程。它们都只是粗估，特殊体型、疾病、妊娠、青春期或代谢相关医疗状况不应仅靠公式自行开处方。</p></section><section class="detail-block"><h4>TDEE不是固定乘数</h4><p>TDEE可理解为基础代谢、运动活动、非运动活动（NEAT）和食物热效应等的总和。训练量增加不一定线性增加全天消耗，因为人可能不自觉减少其他活动或改变食欲；用一至数周趋势复盘比迷信一个活动系数更可靠。</p></section></div></details></li><li><details><summary><span class="term">减脂与增重：先保护训练与瘦体重</span>：合理速度取决于起点、目标、训练史和健康状态；越快不等于越好，过度赤字会提高恢复差、肌肉流失和能量可用性不足的风险。</summary><div class="kp-body"><section class="detail-block"><h4>减脂不是只减秤数</h4><p>减脂期可通过规律抗阻训练、足够蛋白质、适量碳水和可持续赤字帮助保留瘦体重与训练质量。每周体重变化常用百分比或范围观察，而不是把某个绝对公斤数套给所有人；体重较轻、训练量大或已有疲劳者更需谨慎。</p></section><section class="detail-block"><h4>增重也不等于无上限盈余</h4><p>增肌或体重增加通常需要足够能量、蛋白质、渐进抗阻刺激和恢复。过大盈余不保证更多肌肉，反而可能增加不必要脂肪和胃肠压力；应小幅调整、观察力量表现、围度和体重趋势，而不是突然大幅加餐。</p></section></div></details></li><li><details><summary><span class="term">监测与边界：小步调整，健康优先</span>：将估算转成行动时，一次只改少量摄入或活动，并观察一至数周；任何影响身体或心理安全的信号都优先处理。</summary><div class="kp-body"><section class="detail-block"><h4>选少量可执行指标</h4><p>可固定相近条件下记录体重趋势、训练表现、饥饿和睡眠，并视目标记录围度或饮食结构。不要为追求数据完美而频繁称重、反复补偿性运动或跳过社交餐；记录应帮助决策，而不是扩大焦虑。</p></section><section class="detail-block"><h4>识别需要支持的情况</h4><p>持续疲劳、反复受伤、月经改变、怕冷、情绪恶化、暴食催吐、过度运动、体重快速异常变化或对食物体重的强烈恐惧，都可能提示能量可用性或心理健康问题。应停止极端限制，及时寻求医生、注册营养师或心理健康专业人员支持。</p></section></div></details></li></ul></section><section class="warn"><h2>常见误区</h2><p><strong class="misconception">误区：一天体重上涨，就说明当天脂肪增加了。</strong><br>辨析：短期体重受水分、糖原、盐分和消化内容物影响，应看相近条件下的长期趋势。</p><p><strong class="misconception">误区：BMR或TDEE公式算出的数就是我的精确处方。</strong><br>辨析：公式来自群体估计，只能作起点；要用趋势、表现、饥饿和恢复逐步校准。</p><p><strong class="misconception">误区：减脂越快越有效，训练表现下降也无所谓。</strong><br>辨析：过度赤字会增加恢复差、瘦体重流失和能量可用性不足风险；健康和训练质量优先。</p><p><strong class="misconception">误区：想增肌就要无限加热量。</strong><br>辨析：过大盈余不保证更多肌肉；应配合抗阻训练、恢复和小幅趋势调整。</p></section><section class="mnemonic"><h2>记忆口诀</h2><p><strong>公式作起点，趋势来校准；减脂保表现，增重不盲冲。</strong></p></section><section class="panel"><h2>翻转卡复习</h2><div class="cards"><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">什么是能量平衡？</span><span class="face back" aria-hidden="true">长期摄入与消耗的关系，会影响体重趋势。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">短期体重为何会波动？</span><span class="face back" aria-hidden="true">水分、糖原、盐分、月经周期和消化内容物等都会影响。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">BMR是什么？</span><span class="face back" aria-hidden="true">维持基础生理功能所需能量的估计值。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">TDEE包含哪些部分？</span><span class="face back" aria-hidden="true">基础代谢、运动活动、NEAT和食物热效应等。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">减脂期为何保留抗阻训练？</span><span class="face back" aria-hidden="true">有助保留瘦体重和训练功能，但还需足够恢复与营养。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">什么信号提示不应继续极端限制？</span><span class="face back" aria-hidden="true">持续疲劳、月经改变、情绪恶化、伤病或进食行为失控等。</span></span></button></div></section><section class="panel orange"><h2>实操关联</h2><ul class="practice"><li>选择一个相近的晨间条件记录一至两周体重趋势，同时写下训练表现、饥饿、睡眠和恢复，不因单日波动补偿性节食。</li><li>用Mifflin–St Jeor等方程仅粗估静息能量消耗（常被简化作BMR参考），再列出运动、NEAT和食物热效应等会让TDEE变化的因素。</li><li>若目标是减脂，先确认一周内仍保留规律抗阻训练、蛋白质来源、碳水和休息，而不是只删热量。</li><li>每次只调整一个小变量，例如餐食份量或日常步数；出现月经改变、持续疲劳、暴食催吐或情绪恶化时立即停止极端计划并寻求支持。</li></ul></section><section class="panel blue"><h2>练习题</h2><section class="question" data-answers="[1]" data-explanation="BMR只是总消耗的一部分。TDEE会受运动、日常活动、食物热效应和个体变化影响。"><h3>1. 单选：BMR与TDEE的关系，哪项最准确？</h3><div class="options"><label class="option"><input type="radio" name="question-0" value="0"><span>A. 两者完全相同</span></label><label class="option"><input type="radio" name="question-0" value="1"><span>B. BMR是基础估计，TDEE还包括活动、NEAT和食物热效应等</span></label><label class="option"><input type="radio" name="question-0" value="2"><span>C. TDEE只等于运动消耗</span></label><label class="option"><input type="radio" name="question-0" value="3"><span>D. BMR可以精确预测每一天体重</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[2]" data-explanation="短期体重波动很常见。趋势和多维反馈比单日数字更能指导安全调整。"><h3>2. 单选：体重管理中更可靠的复盘方式是？</h3><div class="options"><label class="option"><input type="radio" name="question-1" value="0"><span>A. 根据一天秤数立刻大幅改饮食</span></label><label class="option"><input type="radio" name="question-1" value="1"><span>B. 只使用活动系数不再观察</span></label><label class="option"><input type="radio" name="question-1" value="2"><span>C. 看相近条件下的趋势，并结合训练、恢复、饥饿和睡眠</span></label><label class="option"><input type="radio" name="question-1" value="3"><span>D. 每天用惩罚性运动抵消食物</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[0,1,2,4]" data-explanation="过度赤字可能损害恢复和瘦体重。减脂策略应兼顾训练表现、营养和健康反馈。"><h3>3. 多选：减脂期哪些做法更有助于保护训练与瘦体重？</h3><div class="options"><label class="option"><input type="checkbox" name="question-2" value="0"><span>A. 规律抗阻训练</span></label><label class="option"><input type="checkbox" name="question-2" value="1"><span>B. 足够蛋白质与适量碳水</span></label><label class="option"><input type="checkbox" name="question-2" value="2"><span>C. 可持续的小幅调整</span></label><label class="option"><input type="checkbox" name="question-2" value="3"><span>D. 长期极端能量赤字</span></label><label class="option"><input type="checkbox" name="question-2" value="4"><span>E. 观察恢复和表现</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[1]" data-explanation="这些可能是能量可用性和健康风险信号。应停止极端计划并获得专业评估与支持。"><h3>4. 案例：小安两周内快速减重，力量下降、睡眠变差、怕冷且月经改变，仍想继续减半饮食。更合适的是？</h3><div class="options"><label class="option"><input type="radio" name="question-3" value="0"><span>A. 继续加大赤字</span></label><label class="option"><input type="radio" name="question-3" value="1"><span>B. 停止极端限制并尽快寻求医生、注册营养师或心理健康专业支持</span></label><label class="option"><input type="radio" name="question-3" value="2"><span>C. 只增加有氧量</span></label><label class="option"><input type="radio" name="question-3" value="3"><span>D. 完全不看任何身体信号</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section></section><footer>Day 67/110<ul><li>Mifflin MD et al.：A new predictive equation for resting energy expenditure in healthy individuals，BMR估算公式的群体基础与局限。</li><li>ACSM、Academy of Nutrition and Dietetics、Dietitians of Canada：Nutrition and Athletic Performance，体成分、训练表现和能量可用性原则。</li><li>IOC：Relative Energy Deficiency in Sport（REDs）相关共识，能量可用性、月经、骨健康和表现风险线索。</li><li>本课为一般教育，不替代减重、增重或代谢疾病处方；孕期、青少年、老年、糖尿病或其他内分泌疾病、进食障碍史、月经改变或快速异常体重变化者，请咨询医生、注册营养师或心理健康专业人员。</li></ul></footer></main><dialog aria-label="详情大图"><button class="icon-button" aria-label="关闭大图" title="关闭大图"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></button><img alt=""></dialog><script>document.querySelectorAll('.flip').forEach((button) => {
+  button.addEventListener('click', () => {
+    const pressed = button.getAttribute('aria-pressed') !== 'true';
+    button.setAttribute('aria-pressed', String(pressed));
+    button.querySelector('.front').setAttribute('aria-hidden', String(pressed));
+    button.querySelector('.back').setAttribute('aria-hidden', String(!pressed));
+  });
+});
+document.querySelectorAll('.question').forEach((question) => {
+  question.querySelector('.check').addEventListener('click', () => {
+    const selected = [...question.querySelectorAll('input:checked')].map((input) => Number(input.value)).sort();
+    const answer = question.querySelector('.answer');
+    answer.hidden = false;
+    if (!selected.length) { answer.textContent = '请先选择答案。'; delete question.dataset.result; return; }
+    const correct = JSON.stringify(selected) === JSON.stringify(JSON.parse(question.dataset.answers).sort());
+    question.dataset.result = correct ? 'correct' : 'wrong';
+    answer.textContent = `${correct ? '回答正确。' : '再想一想。'}${question.dataset.explanation}`;
+  });
+});
+const imageDialog = document.querySelector('dialog');
+document.querySelectorAll('[data-zoom]').forEach((button) => {
+  button.addEventListener('click', () => {
+    const original = button.querySelector('img');
+    const image = imageDialog.querySelector('img');
+    image.src = original.src;
+    image.alt = original.alt;
+    imageDialog.showModal();
+  });
+});
+imageDialog.querySelector('button').addEventListener('click', () => imageDialog.close());
+imageDialog.addEventListener('click', (event) => {
+  const rect = imageDialog.getBoundingClientRect();
+  if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) imageDialog.close();
+});
+</script></body></html>

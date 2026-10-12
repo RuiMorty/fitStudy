@@ -1,0 +1,306 @@
+{
+  "scope": "Geometric checks on saved Blender geometry. Anatomical identity and complete footprints remain pending professional review.",
+  "angles": [
+    0.0,
+    2.5,
+    5.0,
+    7.5,
+    10.0,
+    12.5,
+    15.0,
+    17.5,
+    20.0,
+    22.5,
+    25.0,
+    27.5,
+    30.0,
+    32.5,
+    35.0,
+    37.5,
+    40.0,
+    42.5,
+    45.0,
+    47.5,
+    50.0,
+    52.5,
+    55.0,
+    57.5,
+    60.0,
+    62.5,
+    65.0,
+    67.5,
+    70.0,
+    72.5,
+    75.0,
+    77.5,
+    80.0,
+    82.5,
+    85.0,
+    87.5,
+    90.0,
+    92.5,
+    95.0,
+    97.5,
+    100.0,
+    102.5,
+    105.0,
+    107.5,
+    110.0,
+    112.5,
+    115.0,
+    117.5,
+    120.0
+  ],
+  "before": {
+    "muscle_biceps_long_R": {
+      "pinVertices": 0,
+      "fixedSamplePositions": [],
+      "maxPinDisplacementMm": 0,
+      "maxMarkerToTissueMm": 5.9944987297058105,
+      "maxMarkerToBoneMm": 1.0412503081980162e-06,
+      "oldOrNewOrigin": [
+        0.005248389206826687,
+        0.007591191679239273,
+        0.3049567937850952
+      ]
+    },
+    "muscle_biceps_short_R": {
+      "pinVertices": 0,
+      "fixedSamplePositions": [],
+      "maxPinDisplacementMm": 0,
+      "maxMarkerToTissueMm": 0.07563819963252172,
+      "maxMarkerToBoneMm": 0,
+      "oldOrNewOrigin": [
+        -0.021371006965637207,
+        0.017763789743185043,
+        0.295570433139801
+      ]
+    },
+    "muscle_triceps_long_R": {
+      "pinVertices": 0,
+      "fixedSamplePositions": [],
+      "maxPinDisplacementMm": 0,
+      "maxMarkerToTissueMm": 1.3023369247093797,
+      "maxMarkerToBoneMm": 4.656612873077393e-06,
+      "oldOrNewOrigin": [
+        -0.01184429693967104,
+        -0.014370528981089592,
+        0.25824689865112305
+      ]
+    },
+    "muscle_brachialis_R": {
+      "pinVertices": 0,
+      "fixedSamplePositions": [],
+      "maxPinDisplacementMm": 0,
+      "maxMarkerToTissueMm": 0.06676770135527477,
+      "maxMarkerToBoneMm": 9.313225746154785e-07,
+      "oldOrNewOrigin": [
+        0.015813304111361504,
+        0.013238606043159962,
+        0.17455226182937622
+      ]
+    },
+    "muscle_triceps_lateral_R": {
+      "pinVertices": 0,
+      "fixedSamplePositions": [],
+      "maxPinDisplacementMm": 0,
+      "maxMarkerToTissueMm": 0.03378781184437685,
+      "maxMarkerToBoneMm": 1.493023660259496e-05,
+      "oldOrNewOrigin": [
+        0.020178308710455894,
+        -0.0043326737359166145,
+        0.24723362922668457
+      ]
+    },
+    "muscle_triceps_medial_R": {
+      "pinVertices": 0,
+      "fixedSamplePositions": [],
+      "maxPinDisplacementMm": 0,
+      "maxMarkerToTissueMm": 0.0684341648593545,
+      "maxMarkerToBoneMm": 0,
+      "oldOrNewOrigin": [
+        0.00784800760447979,
+        -0.0033815624192357063,
+        0.2140113115310669
+      ]
+    }
+  },
+  "after": {
+    "muscle_biceps_long_R": {
+      "pinVertices": 33,
+      "fixedSamplePositions": [
+        [
+          -0.011245498433709145,
+          -0.0059105451218783855,
+          0.29076528549194336
+        ],
+        [
+          -0.012638970278203487,
+          -0.005591029301285744,
+          0.2927246689796448
+        ],
+        [
+          -0.014010384678840637,
+          -0.008216715417802334,
+          0.29253098368644714
+        ]
+      ],
+      "maxPinDisplacementMm": 0,
+      "maxMarkerToTissueMm": 0,
+      "maxMarkerToBoneMm": 4.165001232792065e-06,
+      "oldOrNewOrigin": [
+        -0.012639143504202366,
+        -0.0055909366346895695,
+        0.2927248179912567
+      ]
+    },
+    "muscle_biceps_short_R": {
+      "pinVertices": 50,
+      "fixedSamplePositions": [
+        [
+          -0.015946177765727043,
+          0.029346661642193794,
+          0.28932085633277893
+        ],
+        [
+          -0.01744801551103592,
+          0.024425789713859558,
+          0.2909364700317383
+        ],
+        [
+          -0.015488343313336372,
+          0.025322195142507553,
+          0.2943650186061859
+        ]
+      ],
+      "maxPinDisplacementMm": 0,
+      "maxMarkerToTissueMm": 2.63417798684884e-06,
+      "maxMarkerToBoneMm": 1.862645149230957e-06,
+      "oldOrNewOrigin": [
+        -0.016495827585458755,
+        0.024661848321557045,
+        0.29250189661979675
+      ]
+    },
+    "muscle_triceps_long_R": {
+      "pinVertices": 10,
+      "fixedSamplePositions": [
+        [
+          -0.012440405786037445,
+          -0.013448690064251423,
+          0.25745412707328796
+        ],
+        [
+          -0.019184501841664314,
+          -0.010706889443099499,
+          0.25430190563201904
+        ],
+        [
+          -0.022666336968541145,
+          -0.012303397059440613,
+          0.25263696908950806
+        ]
+      ],
+      "maxPinDisplacementMm": 0,
+      "maxMarkerToTissueMm": 3.455947350516908e-05,
+      "maxMarkerToBoneMm": 5.890201215663637e-06,
+      "oldOrNewOrigin": [
+        -0.01740790717303753,
+        -0.009857738390564919,
+        0.254970520734787
+      ]
+    },
+    "muscle_brachialis_R": {
+      "pinVertices": 154,
+      "fixedSamplePositions": [
+        [
+          0.0052282121032476425,
+          -4.099738725926727e-05,
+          0.05936947464942932
+        ],
+        [
+          0.020111726596951485,
+          0.010570126585662365,
+          0.15558655560016632
+        ],
+        [
+          0.024529678747057915,
+          0.0019704517908394337,
+          0.15673330426216125
+        ]
+      ],
+      "maxPinDisplacementMm": 0,
+      "maxMarkerToTissueMm": 0.04395257565192878,
+      "maxMarkerToBoneMm": 0,
+      "oldOrNewOrigin": [
+        0.019680220633745193,
+        0.010017627850174904,
+        0.1498454213142395
+      ]
+    },
+    "muscle_triceps_lateral_R": {
+      "pinVertices": 30,
+      "fixedSamplePositions": [
+        [
+          0.01987309940159321,
+          -0.005754316225647926,
+          0.2015739381313324
+        ],
+        [
+          0.018088018521666527,
+          -0.004642272833734751,
+          0.233514666557312
+        ],
+        [
+          0.01069454476237297,
+          -0.004811929538846016,
+          0.2212759554386139
+        ]
+      ],
+      "maxPinDisplacementMm": 0,
+      "maxMarkerToTissueMm": 0.05237775985733606,
+      "maxMarkerToBoneMm": 0,
+      "oldOrNewOrigin": [
+        0.016700422391295433,
+        -0.0051890951581299305,
+        0.23103877902030945
+      ]
+    },
+    "muscle_triceps_medial_R": {
+      "pinVertices": 113,
+      "fixedSamplePositions": [
+        [
+          0.006463794037699699,
+          -0.016616886481642723,
+          0.03965779021382332
+        ],
+        [
+          0.011129563674330711,
+          -0.016133537515997887,
+          0.09362553805112839
+        ],
+        [
+          0.009613705798983574,
+          -0.014629879035055637,
+          0.11002129316329956
+        ]
+      ],
+      "maxPinDisplacementMm": 0,
+      "maxMarkerToTissueMm": 0.07589158485643566,
+      "maxMarkerToBoneMm": 1.0412503081980162e-06,
+      "oldOrNewOrigin": [
+        0.007510848343372345,
+        -0.015154692344367504,
+        0.10013711452484131
+      ]
+    }
+  },
+  "checks": {
+    "old_long_head_marker_fails_1mm_tissue_contact": true,
+    "six_regions_have_fixed_contact_vertices": true,
+    "fixed_origin_vertices_do_not_drift_over_motion": true,
+    "markers_are_on_bone": true,
+    "all_origin_markers_within_0_5mm_of_their_tissue": true
+  },
+  "status": "passed"
+}

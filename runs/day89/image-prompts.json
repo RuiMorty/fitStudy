@@ -1,0 +1,60 @@
+{
+  "commonPrompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper background, loose paper sheets, border, sticker edge, shadow, or halo. A small unmarked rigid evidence card is allowed as a prop. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.",
+  "assets": [
+    {
+      "file": "cover.png",
+      "role": "cover",
+      "prompt": "Wide 16:9 wordless single-scene course cover. Despa guides Bojji in one calm warm-up pose with a soft ball, a light band, and a stable low box isolated along the lower canvas edge with no ground plane or cast shadow. No arrows or text. Keep exactly one Bojji and one Despa, both full bodies visible when practical. Explain one course theme through one coherent current situation, never sequence frames. No duplicate figures, alternate poses, motion trails, arrows, readable signs, text, numbers, labels or unrelated equipment."
+    },
+    {
+      "file": "visual-01.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Bojji makes a calm open-palm stop gesture while Despa holds a soft ball and light band at waist height with respectful space; no painful pose, medical procedure, ground plane, or cast shadow. Keep exactly one Bojji and one Despa. Use one continuous current pose to explain “先做疼痛与风险筛查”, with all limbs and props fully visible. No duplicate figures, alternate poses, sequence frames, arrows, motion trails, text, numbers, labels, readable screens, blue circles or unrelated equipment."
+    },
+    {
+      "file": "visual-02.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Despa holds a soft ball and a light band at waist height beside a stable low box isolated along the lower canvas edge, while Bojji holds a comfortable basic squat stance; no ground plane, cast shadow, or sequence frames. Keep exactly one Bojji and one Despa. Use one continuous current pose to explain “四个环节各有目的”, with all limbs and props fully visible. No duplicate figures, alternate poses, sequence frames, arrows, motion trails, text, numbers, labels, readable screens, blue circles or unrelated equipment."
+    },
+    {
+      "file": "visual-03.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Bojji holds a small supported squat toward a stable low box isolated along the lower canvas edge while Despa holds a light band at waist height; one current pose with no ground plane or cast shadow. Keep exactly one Bojji and one Despa. Use one continuous current pose to explain “用低风险热身衔接”, with all limbs and props fully visible. No duplicate figures, alternate poses, sequence frames, arrows, motion trails, text, numbers, labels, readable screens, blue circles or unrelated equipment."
+    },
+    {
+      "file": "visual-04.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Despa calmly holds one light band away from the simple isolated warm-up props while Bojji holds a comfortable squat stance, showing thoughtful adjustment without failure; no ground plane or cast shadow. Keep exactly one Bojji and one Despa. Use one continuous current pose to explain “反应决定顺序与剂量”, with all limbs and props fully visible. No duplicate figures, alternate poses, sequence frames, arrows, motion trails, text, numbers, labels, readable screens, blue circles or unrelated equipment."
+    },
+    {
+      "file": "visual-05.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Bojji holds one simple controlled goblet-squat ready stance with a very light plain weight while Despa holds a soft ball and band at waist height, showing main training remains central; no ground plane or cast shadow. Keep exactly one Bojji and one Despa. Use one continuous current pose to explain “放入计划并设复查点”, with all limbs and props fully visible. No duplicate figures, alternate poses, sequence frames, arrows, motion trails, text, numbers, labels, readable screens, blue circles or unrelated equipment."
+    },
+    {
+      "file": "overview-01.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Bojji makes a calm open-palm stop gesture while Despa holds a soft ball and light band at waist height with respectful space; no painful pose, medical procedure, ground plane, or cast shadow. Keep exactly one Bojji and one Despa. Compose specifically for a compact overview panel and do not reuse a knowledge-page composition. No duplicate figures, alternate poses, sequence frames, text, numbers, labels, arrows, motion trails or unrelated equipment."
+    },
+    {
+      "file": "overview-02.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Despa holds a soft ball and a light band at waist height beside a stable low box isolated along the lower canvas edge, while Bojji holds a comfortable basic squat stance; no ground plane, cast shadow, or sequence frames. Keep exactly one Bojji and one Despa. Compose specifically for a compact overview panel and do not reuse a knowledge-page composition. No duplicate figures, alternate poses, sequence frames, text, numbers, labels, arrows, motion trails or unrelated equipment."
+    },
+    {
+      "file": "overview-03.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Bojji holds a small supported squat toward a stable low box isolated along the lower canvas edge while Despa holds a light band at waist height; one current pose with no ground plane or cast shadow. Keep exactly one Bojji and one Despa. Compose specifically for a compact overview panel and do not reuse a knowledge-page composition. No duplicate figures, alternate poses, sequence frames, text, numbers, labels, arrows, motion trails or unrelated equipment."
+    },
+    {
+      "file": "overview-04.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Despa calmly holds one light band away from the simple isolated warm-up props while Bojji holds a comfortable squat stance, showing thoughtful adjustment without failure; no ground plane or cast shadow. Keep exactly one Bojji and one Despa. Compose specifically for a compact overview panel and do not reuse a knowledge-page composition. No duplicate figures, alternate poses, sequence frames, text, numbers, labels, arrows, motion trails or unrelated equipment."
+    },
+    {
+      "file": "overview-05.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Bojji holds one simple controlled goblet-squat ready stance with a very light plain weight while Despa holds a soft ball and band at waist height, showing main training remains central; no ground plane or cast shadow. Keep exactly one Bojji and one Despa. Compose specifically for a compact overview panel and do not reuse a knowledge-page composition. No duplicate figures, alternate poses, sequence frames, text, numbers, labels, arrows, motion trails or unrelated equipment."
+    }
+  ]
+}

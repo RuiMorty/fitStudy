@@ -1,0 +1,60 @@
+{
+  "commonPrompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light internal cel shading on painted forms only; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, ground plane, room, backdrop, paper background, loose paper sheets, border, sticker edge, cast or drop shadow, or halo. Tables, books, baskets, pencils, cards and models are isolated floating props only, never evidence of a room, floor or background; blank flashcards and evidence cards must be rigid and have no readable marks. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.",
+  "assets": [
+    {
+      "file": "cover.png",
+      "role": "cover",
+      "prompt": "Wide 16:9 wordless single-scene course cover. Bojji and Despa sit at a simple study table with blank flashcards, a plain pencil, and a small anatomical joint model without labels; no readable questions, scores, logos, or exam branding. Keep exactly one Bojji and one Despa, both full bodies visible when practical. Explain one course theme through one coherent current situation, never sequence frames. No duplicate figures, alternate poses, motion trails, arrows, readable signs, text, numbers, labels or unrelated equipment."
+    },
+    {
+      "file": "visual-01.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Despa places several blank flashcards and a plain pencil on a table while Bojji studies a simple unlabeled joint model; no readable cards or exam branding. Keep exactly one Bojji and one Despa. Use one continuous current pose to explain “原创题与公开范围”, with all limbs and props fully visible. No duplicate figures, alternate poses, sequence frames, arrows, motion trails, text, numbers, labels, readable screens, blue circles or unrelated equipment."
+    },
+    {
+      "file": "visual-02.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Bojji calmly sorts three blank cards into small groups beside a plain pencil while Despa observes; no numbers, marks, or score board. Keep exactly one Bojji and one Despa. Use one continuous current pose to explain “记录正确率、用时与信心”, with all limbs and props fully visible. No duplicate figures, alternate poses, sequence frames, arrows, motion trails, text, numbers, labels, readable screens, blue circles or unrelated equipment."
+    },
+    {
+      "file": "visual-03.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Despa and Bojji arrange four blank plain baskets beside flashcards and a pencil, showing organized review categories without labels or numbers. Keep exactly one Bojji and one Despa. Use one continuous current pose to explain “把错误分成四类”, with all limbs and props fully visible. No duplicate figures, alternate poses, sequence frames, arrows, motion trails, text, numbers, labels, readable screens, blue circles or unrelated equipment."
+    },
+    {
+      "file": "visual-04.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Bojji pauses with an open hand beside a small unmarked rigid evidence card while Despa holds a closed reference book aside, suggesting recall before checking; no text or equations. Keep exactly one Bojji and one Despa. Use one continuous current pose to explain “主动回忆回扣原课”, with all limbs and props fully visible. No duplicate figures, alternate poses, sequence frames, arrows, motion trails, text, numbers, labels, readable screens, blue circles or unrelated equipment."
+    },
+    {
+      "file": "visual-05.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Despa gently selects two blank flashcards from a larger stack while Bojji places them beside a simple plain calendar card with no dates or numbers. Keep exactly one Bojji and one Despa. Use one continuous current pose to explain “少量目标再复测”, with all limbs and props fully visible. No duplicate figures, alternate poses, sequence frames, arrows, motion trails, text, numbers, labels, readable screens, blue circles or unrelated equipment."
+    },
+    {
+      "file": "overview-01.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Despa places several blank flashcards and a plain pencil on a table while Bojji studies a simple unlabeled joint model; no readable cards or exam branding. Keep exactly one Bojji and one Despa. Compose specifically for a compact overview panel and do not reuse a knowledge-page composition. No duplicate figures, alternate poses, sequence frames, text, numbers, labels, arrows, motion trails or unrelated equipment."
+    },
+    {
+      "file": "overview-02.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Bojji calmly sorts three blank cards into small groups beside a plain pencil while Despa observes; no numbers, marks, or score board. Keep exactly one Bojji and one Despa. Compose specifically for a compact overview panel and do not reuse a knowledge-page composition. No duplicate figures, alternate poses, sequence frames, text, numbers, labels, arrows, motion trails or unrelated equipment."
+    },
+    {
+      "file": "overview-03.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Despa and Bojji arrange four blank plain baskets beside flashcards and a pencil, showing organized review categories without labels or numbers. Keep exactly one Bojji and one Despa. Compose specifically for a compact overview panel and do not reuse a knowledge-page composition. No duplicate figures, alternate poses, sequence frames, text, numbers, labels, arrows, motion trails or unrelated equipment."
+    },
+    {
+      "file": "overview-04.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Bojji pauses with an open hand beside a small unmarked rigid evidence card while Despa holds a closed reference book aside, suggesting recall before checking; no text or equations. Keep exactly one Bojji and one Despa. Compose specifically for a compact overview panel and do not reuse a knowledge-page composition. No duplicate figures, alternate poses, sequence frames, text, numbers, labels, arrows, motion trails or unrelated equipment."
+    },
+    {
+      "file": "overview-05.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Despa gently selects two blank flashcards from a larger stack while Bojji places them beside a simple plain calendar card with no dates or numbers. Keep exactly one Bojji and one Despa. Compose specifically for a compact overview panel and do not reuse a knowledge-page composition. No duplicate figures, alternate poses, sequence frames, text, numbers, labels, arrows, motion trails or unrelated equipment."
+    }
+  ]
+}

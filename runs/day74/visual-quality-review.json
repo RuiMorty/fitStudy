@@ -1,0 +1,83 @@
+{
+  "reviewer": "local source visual, alpha, safety and semantic QA",
+  "requirements": [
+    "true-alpha transparent PNG without a rendered checkerboard, opaque canvas, room, floor, loose paper, border, sticker edge, shadow or halo",
+    "only wordless Bojji and Despa in calm 2D fitness-science teaching scenes; no extra characters, text, numbers, labels, arrows, clocks, timers, charts, logos or watermarks",
+    "all squat, bench, medicine-ball, dumbbell and rack depictions are complete, structurally coherent and use safe light-load or bodyweight postures",
+    "each overview image is independently generated and compositionally distinct from its matching knowledge-page art",
+    "the shared image preparer removes only near-transparent edge noise, preserves opaque white clothing, and frames reviewed art with the required final six-percent margin"
+  ],
+  "technicalChecks": {
+    "checkedWith": [
+      "RGBA metadata and transparent-background inspection",
+      "individual visual semantic and equipment-safety review",
+      "shared image preparation, overview composition, final-card inspection and responsive browser QA"
+    ],
+    "result": "All nine selected processed PNGs are non-empty RGBA files with transparent pixels. The shared preparer centered approved artwork without upscaling; rendered XHS cards and responsive course screenshots were inspected separately in runs/day74/verification/."
+  },
+  "accepted": [
+    {
+      "file": "cover.png",
+      "attempt": 1,
+      "source": "runs/day74/image-requests/cover-eb86e17540/attempt-01/cover.png",
+      "review": "A complete empty bar and rack, a shallow bodyweight squat and a coaching gesture convey orderly training without weight markings, timers or unsafe loading."
+    },
+    {
+      "file": "visual-01-rest.png",
+      "attempt": 1,
+      "source": "runs/day74/image-requests/visual-01-rest-ffd36e1948/attempt-01/visual-01-rest.png",
+      "review": "The supported seated rest posture, flat feet, stable bench and complete light dumbbell make recovery-for-quality clear without an artificial timer cue."
+    },
+    {
+      "file": "visual-02-order.png",
+      "attempt": 2,
+      "source": "runs/day74/image-requests/visual-02-order-4de8af23c7/attempt-02/visual-02-order.png",
+      "review": "The adjusted composition keeps a modest medicine ball at Despa's chest, complete characters and a stable bench; it explains technical-priority order without arrows or sequence numbers."
+    },
+    {
+      "file": "visual-03-tempo.png",
+      "attempt": 1,
+      "source": "runs/day74/image-requests/visual-03-tempo-60b9f9be19/attempt-01/visual-03-tempo.png",
+      "review": "A controlled bodyweight squat has flat feet, natural knee alignment and a neutral trunk, with no jump, speed lines or risky load."
+    },
+    {
+      "file": "visual-04-adjustment.png",
+      "attempt": 1,
+      "source": "runs/day74/image-requests/visual-04-adjustment-d01a4805d2/attempt-01/visual-04-adjustment.png",
+      "review": "A blank rigid card in a small holder, one-finger gesture and complete light dumbbell communicate recording before changing one factor; there are no loose sheets, text or charts."
+    },
+    {
+      "file": "overview-01-rest.png",
+      "attempt": 1,
+      "source": "runs/day74/image-requests/overview-01-rest-55683f7a3f/attempt-01/overview-01-rest.png",
+      "review": "The dedicated 4:3 seated-rest composition differs from the knowledge strip and keeps bench, feet, dumbbell and coaching gesture fully visible."
+    },
+    {
+      "file": "overview-02-order.png",
+      "attempt": 1,
+      "source": "runs/day74/image-requests/overview-02-order-080351004d/attempt-01/overview-02-order.png",
+      "review": "The dedicated overview scene separates a calm medicine-ball hold from the knowledge-page composition and uses a complete stable bench without directional symbols."
+    },
+    {
+      "file": "overview-03-tempo.png",
+      "attempt": 1,
+      "source": "runs/day74/image-requests/overview-03-tempo-79e736ef0a/attempt-01/overview-03-tempo.png",
+      "review": "The overview-only controlled squat preserves full feet and posture, with the instructor observing; it has no jump or tempo symbol."
+    },
+    {
+      "file": "overview-04-adjustment.png",
+      "attempt": 1,
+      "source": "runs/day74/image-requests/overview-04-adjustment-4046fa0a45/attempt-01/overview-04-adjustment.png",
+      "review": "The separate 4:3 scene uses one blank rigid card, one complete dumbbell and a coaching gesture, distinct from the knowledge-page card-holder scene."
+    }
+  ],
+  "rejected": [
+    {
+      "file": "visual-02-order.png",
+      "attempt": 1,
+      "reason": "The medicine ball was oversized and the character's head was too close to the canvas edge; the adjusted second attempt fixed both composition issues."
+    }
+  ],
+  "retriesUsed": 1,
+  "result": "Nine selected source assets passed local visual, alpha, semantic and equipment-safety QA. Rejected candidates and their adjusted prompts remain preserved in image-request-log.json."
+}

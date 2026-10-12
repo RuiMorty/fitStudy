@@ -1,0 +1,114 @@
+{
+  "reviewer": "local source visual and alpha QA",
+  "scope": "Day63 Lingzhi attempt-01 source candidates only; no rendering, installation, deployment, global-review update, progress update, or paid retry was performed by this review.",
+  "requirements": [
+    "true-alpha transparent PNG with no rendered checkerboard or opaque full-canvas background",
+    "wordless Bojji and Despa teaching art with stable character appearance",
+    "no duplicated figures or malformed limbs",
+    "protein-food and training props must be sensible",
+    "no text, arrow, anatomy diagram, unexplained marker, chart, label, or symbol that violates the common prompt",
+    "each scene must match its exact protein / essential-amino-acid / total-intake / distribution / source-diversity prompt"
+  ],
+  "technicalChecks": {
+    "checkedWith": [
+      "sips: dimensions and hasAlpha",
+      "RGBA alpha extrema and pixel-count inspection",
+      "individual transparent-on-dark visual inspection",
+      "individual white-background composites for edge/background inspection"
+    ],
+    "result": "All nine candidates are non-empty RGBA PNGs with alpha extrema [0,255] and 61.11% to 71.16% fully transparent pixels. No candidate has an opaque full-canvas background or a rendered white/gray checkerboard. Transparent-edge antialiasing is present but no floor, paper, border, sticker edge, shadow, or halo was found."
+  },
+  "candidateAlphaEvidence": [
+    {"file": "cover.png", "attempt": 1, "size": [1672, 941], "transparentPixelPercent": 62.43},
+    {"file": "visual-01-eaa.png", "attempt": 1, "size": [1881, 836], "transparentPixelPercent": 61.11},
+    {"file": "visual-02-total.png", "attempt": 1, "size": [2211, 711], "transparentPixelPercent": 67.0},
+    {"file": "visual-03-distribution.png", "attempt": 1, "size": [1881, 836], "transparentPixelPercent": 67.76},
+    {"file": "visual-04-sources.png", "attempt": 1, "size": [2114, 744], "transparentPixelPercent": 71.16},
+    {"file": "overview-01-eaa.png", "attempt": 1, "size": [1448, 1086], "transparentPixelPercent": 64.43},
+    {"file": "overview-02-total.png", "attempt": 1, "size": [1448, 1086], "transparentPixelPercent": 64.46},
+    {"file": "overview-03-distribution.png", "attempt": 1, "size": [1448, 1086], "transparentPixelPercent": 66.81},
+    {"file": "overview-04-sources.png", "attempt": 1, "size": [1448, 1086], "transparentPixelPercent": 65.56}
+  ],
+  "accepted": [
+    {
+      "file": "visual-03-distribution.png",
+      "attempt": 1,
+      "candidate": "runs/day63/image-requests/visual-03-distribution-47a76f3c46/attempt-01/visual-03-distribution.png",
+      "source": "runs/day63/source/visual-03-distribution.png",
+      "sha256": "cd99cbbff11155a66c77ba395c4f2b4cb1080e2c294d47693411333c9f15c80c",
+      "review": "一位波吉制作酸奶燕麦早餐，旁边一位德斯帕以完成轻训练后的姿势配合米饭鸡蛋餐；人物比例、手脚、服装和食物关系正常，画面无文字、包装、箭头、图表或未解释标记。"
+    },
+    {
+      "file": "visual-04-sources.png",
+      "attempt": 1,
+      "candidate": "runs/day63/image-requests/visual-04-sources-7608e80272/attempt-01/visual-04-sources.png",
+      "source": "runs/day63/source/visual-04-sources.png",
+      "sha256": "a78720d6e30d4bccdc9a451acb052a8def24375e614d1d63f5aa3ad49ec91f8d",
+      "review": "一位德斯帕端鱼和蛋的动物性食物盘，一位波吉端豆腐、豆类和谷物的植物性食物盘；食物可辨且两人平等呈现多样性，四肢与透明边缘正常，无文字、箭头或图示。"
+    },
+    {
+      "file": "overview-01-eaa.png",
+      "attempt": 1,
+      "candidate": "runs/day63/image-requests/overview-01-eaa-9544e13e0c/attempt-01/overview-01-eaa.png",
+      "source": "runs/day63/source/overview-01-eaa.png",
+      "sha256": "37a065e237363c2923da79cf0cf2c77d7ee4897d7a5b2bbbd12a3fc9323da2ea",
+      "review": "独立的总览图中波吉端着豆腐豆类盘、德斯帕举蛋，角色外观和食物均清楚；无额外人物、文字、分子符号、箭头或标记。"
+    },
+    {
+      "file": "overview-04-sources.png",
+      "attempt": 1,
+      "candidate": "runs/day63/image-requests/overview-04-sources-756d740d65/attempt-01/overview-04-sources.png",
+      "source": "runs/day63/source/overview-04-sources.png",
+      "sha256": "2c2fe9e22b2817c94ff11d39f01989a31e4e776eb72ece8a0efc3638f3173763",
+      "review": "独立的总览图中德斯帕端鱼蛋盘、波吉端豆腐豆类盘；人物、盘子和食物相互关系正常，能直接表达食物来源多样性，没有图示化标记。"
+    }
+  ],
+  "rejected": [
+    {
+      "file": "cover.png",
+      "attempt": 1,
+      "candidate": "runs/day63/image-requests/cover-eb86e17540/attempt-01/cover.png",
+      "sha256": "a12a519dfdc2c55962b5c0d6270efd32b40c93ef3641eddefbe4797ae122318c",
+      "reason": "德斯帕手持一只哑铃，直接违反该项的 dumbbell-free row rehearsal 要求；其余人物、食物和透明度均可读，但不能以此接受。",
+      "recommendedAdjustedRetryPrompt": "Wide 16:9 wordless course cover. Exactly one Despa rehearses an unweighted row movement: he leans lightly forward with one empty hand resting on a plain bench and his other empty elbow drawn back; use absolutely no dumbbell, barbell, kettlebell, resistance band, weight plate, handle, or other exercise equipment. Exactly one short Bojji arranges one plain plate with egg, tofu, beans and rice. Convey protein and training recovery only through the calm empty-hand row rehearsal and the food. No labels, powder tubs, text, brand package, arrows, rays, markers, thought bubble, floor, shadow or halo."
+    },
+    {
+      "file": "visual-01-eaa.png",
+      "attempt": 1,
+      "candidate": "runs/day63/image-requests/visual-01-eaa-bcfb785d28/attempt-01/visual-01-eaa.png",
+      "sha256": "0d20178977f82c6345dc5d2d9cfc5ddf383f25f48cb6cf81e000abfa51b790a3",
+      "reason": "人物和蛋、鱼、豆腐豆类本身可读，但头顶悬浮的彩色拼图件属于未解释的符号/标记；不能用装饰性图标替代必需氨基酸的食物语义。",
+      "recommendedAdjustedRetryPrompt": "Wide 28:9 wordless knowledge illustration. Exactly one Bojji holds one plain bowl containing tofu and beans; exactly one Despa holds one simple egg and one small fish on a plain plate. Arrange a few ordinary visible whole-food protein sources calmly around them if needed, but do not include any hovering puzzle piece, molecule icon, colored badge, dot, ray, spark, arrow, chart, marker, diagram, label, text, or supplement image. Explain varied protein sources and essential amino acids only through the two characters and recognizable foods."
+    },
+    {
+      "file": "visual-02-total.png",
+      "attempt": 1,
+      "candidate": "runs/day63/image-requests/visual-02-total-2af36ecc5e/attempt-01/visual-02-total.png",
+      "sha256": "4420a858d71568ee75bb243971797e646bef015659de8780b6742d3454e0afd3",
+      "reason": "三餐、波吉和德斯帕的分腿蹲均可读，但两处黄色感叹射线是共同提示词禁止的未解释标记；总量概念应只靠三份真实餐食表达。",
+      "recommendedAdjustedRetryPrompt": "Wide 28:9 wordless knowledge illustration. Exactly one Despa performs one controlled bodyweight split squat beside a plain bench, with no weight equipment; exactly one Bojji sets out exactly three small plain protein-containing meals across one table. Convey total food intake matched to training with the three real meals and calm exercise posture only. No yellow exclamation rays, sparkles, symbols, badges, icons, arrows, thought bubbles, charts, labels, numbers, clocks, text, or packaging."
+    },
+    {
+      "file": "overview-02-total.png",
+      "attempt": 1,
+      "candidate": "runs/day63/image-requests/overview-02-total-672beb74a9/attempt-01/overview-02-total.png",
+      "sha256": "927c477ac552eacedf03bd461bf01e6614f7b6edb55f84c7ca57b391b9a46d68",
+      "reason": "思考泡内的天平、迷你分腿蹲人物和餐盘构成明确的图示/标记，同时与“Exactly one Despa”冲突；总览必须保持无插图框的独立场景。",
+      "recommendedAdjustedRetryPrompt": "Wide 4:3 wordless overview-only illustration. Exactly one Despa performs one calm bodyweight split squat beside a plain bench; exactly one Bojji holds one balanced plain meal. Convey matching total intake to training only with those two full-size characters and the single meal. Do not include a thought bubble, inset, miniature character, scale, balance symbol, icon, arrow, ray, chart, label, number, text, packaging, floor, shadow, or halo."
+    },
+    {
+      "file": "overview-03-distribution.png",
+      "attempt": 1,
+      "candidate": "runs/day63/image-requests/overview-03-distribution-c1a29884fa/attempt-01/overview-03-distribution.png",
+      "sha256": "f2b13e00841b77a85f3a07470300d32de57cc4079b805b10c20d75806ed072cf",
+      "reason": "早餐、德斯帕和多份餐食可读，但上方连接餐盘的大弧形流程线属于未解释的标记/时间线；该概念应通过自然摆放的多餐而不是路线图表达。",
+      "recommendedAdjustedRetryPrompt": "Wide 4:3 wordless overview-only illustration. Exactly one Bojji calmly sets a simple breakfast plate on a plain table; exactly one Despa holds a simple post-training meal nearby. To imply regular distribution, place two or three ordinary meal plates naturally in the same calm scene, without connecting them. No curved path, arc, timeline, arrow, ray, icon, badge, clock, shaker, thought bubble, labels, text, or packaging."
+    }
+  ],
+  "retryPolicy": {
+    "initialRequestUsed": 1,
+    "adjustedRetriesRemainingPerRejectedAsset": 5,
+    "instruction": "Preserve every attempt-01 candidate. Request only the five rejected assets once with their exact adjusted prompts, visually QA each result, and copy only an accepted candidate into runs/day63/source/."
+  },
+  "result": "4 of 9 source candidates accepted and copied into runs/day63/source/. Five candidates require adjusted retries before preprocessing or package rendering may begin."
+}

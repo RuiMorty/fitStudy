@@ -1,0 +1,50 @@
+{
+  "commonPrompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.",
+  "assets": [
+    {
+      "file": "cover.png",
+      "role": "cover",
+      "prompt": "Wide 16:9 wordless single-scene course cover. Exactly one Despa performs a calm shallow bodyweight squat with both feet fully grounded, knees moving naturally with the feet and relaxed shoulders. Exactly one Bojji stands nearby in a stable two-foot stance with arms open. Both characters are fully visible. Explain foot-ankle-hip-knee coordination, not a rigid corrective pose. No duplicate figures, alternate poses, sequence frames, rail, box, bands, arrows, orthotics, text or medical imagery."
+    },
+    {
+      "file": "visual-01-observe.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless knowledge illustration for dynamic lower-limb observation. Show exactly one complete full-body Bojji doing one frozen low step-down from one very low plain box: whole front foot controlled on the ground, rear foot still on the box, knee naturally following the foot and trunk calm. Bojji is the only person; no Despa, no sequence, no before-and-after and no duplicate figure. No valgus exaggeration, pain cue, grid, arrow, text, detached limb, scattered mark, floor, room or extra equipment."
+    },
+    {
+      "file": "visual-02-foot.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless knowledge illustration for stable foot support. Show exactly one complete full-body Bojji in one still relaxed standing stance, both black boots fully visible and feet evenly grounded, knees soft, toes naturally relaxed and trunk quiet. Bojji is the only person; no Despa, no sequence and no duplicate figure. Explain whole-foot support without a close-up diagram. No wall, anatomy overlay, labels, arrows, toe gripping, detached limb, scattered mark, floor, room or equipment."
+    },
+    {
+      "file": "visual-03-hip-knee.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless knowledge illustration for hip-knee coordination. Show exactly one complete full-body Despa in one frozen shallow split-squat position, level pelvis, stable front foot, knee naturally following the foot and relaxed trunk. Despa is the only person; no Bojji, no sequence and no duplicate figure. No bands, arrows, forced knee position, text, detached limb, scattered mark, floor, room or equipment."
+    },
+    {
+      "file": "visual-04-squat.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless knowledge illustration for returning foot-ankle-hip-knee control to a complete squat. Show exactly one complete full-body Bojji in one frozen low box squat, both feet fully grounded, knees naturally following the feet, trunk calm and hands forward. Use one plain low box only. Bojji is the only person; no Despa, no sequence and no duplicate figure. No jump, arrows, text, bands, detached limb, scattered mark, floor, room or extra equipment."
+    },
+    {
+      "file": "overview-01-observe.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless overview-only illustration for dynamic observation. Show exactly one complete full-body Bojji in one frozen low step-down from one plain low box, whole front foot controlled on the ground and trunk calm. Bojji is the only person; no Despa, no sequence and no duplicate figure. No text, arrows, medical symbols, detached limb, scattered mark, floor, room or extra equipment."
+    },
+    {
+      "file": "overview-02-foot.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless overview-only illustration for stable foot support. Show exactly one complete full-body Bojji standing relaxed, both black boots fully visible and evenly grounded, knees soft and trunk quiet. Bojji is the only person; no Despa, no sequence and no duplicate figure. No wall, labels, arrows, close-up anatomy, detached limb, scattered mark, floor, room or equipment."
+    },
+    {
+      "file": "overview-03-hip-knee.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless overview-only illustration for hip-knee coordination. Show exactly one complete full-body Despa in one frozen calm shallow split squat, level pelvis, stable front foot and knee naturally following the foot. Despa is the only person; no Bojji, no sequence and no duplicate figure. No bands, arrows, forced posture, text, detached limb, scattered mark, floor, room or equipment."
+    },
+    {
+      "file": "overview-04-squat.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless overview-only illustration for gradual squat integration. Show exactly one complete full-body Bojji in one frozen low box squat, both feet grounded, knees naturally following the feet and trunk calm. Use one plain low box only. Bojji is the only person; no Despa, no sequence and no duplicate figure. No text, jump, arrows, bands, detached limb, scattered mark, floor, room or extra equipment."
+    }
+  ]
+}

@@ -1,0 +1,435 @@
+{
+  "processedAt": "2026-10-02T23:55:26.680285+00:00",
+  "method": "trim near-transparent noise; reviewed crop; uniform scale; transparent margin",
+  "assets": [
+    {
+      "source": "runs/day86/source/cover.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "sourceSha256": "da5da409739b9c50872e9b6cd1f659a2c0c2edcfe71f207bb1b8fbc0a74630a5",
+      "reviewedCrop": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "visibleCrop": [
+        389,
+        89,
+        1335,
+        862
+      ],
+      "output": "runs/day86/assets/cover.png",
+      "size": [
+        1600,
+        900
+      ],
+      "subjectSize": [
+        946,
+        773
+      ],
+      "offset": [
+        327,
+        63
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "无字封面"
+    },
+    {
+      "source": "runs/day86/source/visual-01.png",
+      "sourceSize": [
+        1983,
+        793
+      ],
+      "sourceSha256": "57e5e8f521ae16560c02ce2cb1a36d044af1cd0b86780eb3b0b73bcf014c1977",
+      "reviewedCrop": [
+        0,
+        0,
+        1983,
+        793
+      ],
+      "visibleCrop": [
+        679,
+        96,
+        1336,
+        696
+      ],
+      "output": "runs/day86/assets/visual-01.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        657,
+        600
+      ],
+      "offset": [
+        1071,
+        150
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "同意与隐私先行知识页配图"
+    },
+    {
+      "source": "runs/day86/source/visual-02.png",
+      "sourceSize": [
+        2214,
+        710
+      ],
+      "sourceSha256": "b92542ed6c5c3b958bd7521123c2f746eb46779feb4557769bf7a950afac9477",
+      "reviewedCrop": [
+        0,
+        0,
+        2214,
+        710
+      ],
+      "visibleCrop": [
+        735,
+        16,
+        1470,
+        692
+      ],
+      "output": "runs/day86/assets/visual-02.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        735,
+        676
+      ],
+      "offset": [
+        1032,
+        112
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "前侧后视只记相对位置知识页配图"
+    },
+    {
+      "source": "runs/day86/source/visual-03.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "sourceSha256": "53f7a7cb235d1997d72d55d4348f988119ec99defb71262778ccecfc1c579f34",
+      "reviewedCrop": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "visibleCrop": [
+        367,
+        15,
+        1328,
+        919
+      ],
+      "output": "runs/day86/assets/visual-03.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        842,
+        792
+      ],
+      "offset": [
+        979,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "重复性比一张照片重要知识页配图"
+    },
+    {
+      "source": "runs/day86/source/visual-04.png",
+      "sourceSize": [
+        1983,
+        793
+      ],
+      "sourceSha256": "23dae26db0fec371e24b3a4a60c583a0406e4c700fb58f06d9b9fb1b901918a3",
+      "reviewedCrop": [
+        0,
+        0,
+        1983,
+        793
+      ],
+      "visibleCrop": [
+        377,
+        0,
+        1638,
+        789
+      ],
+      "output": "runs/day86/assets/visual-04.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1261,
+        789
+      ],
+      "offset": [
+        769,
+        55
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "静态线索要回到动态知识页配图"
+    },
+    {
+      "source": "runs/day86/source/visual-05.png",
+      "sourceSize": [
+        2213,
+        711
+      ],
+      "sourceSha256": "798789e67f1f421fe70b699a641292dd6196c98d65173eb8d60a68d04291fc0f",
+      "reviewedCrop": [
+        0,
+        0,
+        2213,
+        711
+      ],
+      "visibleCrop": [
+        591,
+        16,
+        1636,
+        700
+      ],
+      "output": "runs/day86/assets/visual-05.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1045,
+        684
+      ],
+      "offset": [
+        877,
+        108
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "中性反馈与转介知识页配图"
+    },
+    {
+      "source": "runs/day86/source/overview-01.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "d87c9d09cedfe2bf87534dcd3dbc2b12afa74b76615acbbeaec9623db88affbf",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        200,
+        15,
+        1237,
+        1067
+      ],
+      "output": "runs/day86/assets/overview-01.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1037,
+        1052
+      ],
+      "offset": [
+        281,
+        74
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "同意与隐私先行总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day86/source/overview-02.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "266315bf7ccd14c30f8b191fe239c8da041c182c9aef50423dc34afb6ba8a09a",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        300,
+        31,
+        1249,
+        1040
+      ],
+      "output": "runs/day86/assets/overview-02.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        949,
+        1009
+      ],
+      "offset": [
+        325,
+        95
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "前侧后视只记相对位置总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day86/source/overview-03.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "0a699925b36ab18f7cf444c9315f085b5fca04801f90df44473cdea5b9a940cc",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        331,
+        14,
+        1154,
+        1073
+      ],
+      "output": "runs/day86/assets/overview-03.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        821,
+        1056
+      ],
+      "offset": [
+        389,
+        72
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "重复性比一张照片重要总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day86/source/overview-04.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "699b032c27786a8698eec060875b73e3c7eba926e38f7ac2b408bfd4c844f5b2",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        146,
+        21,
+        1387,
+        1029
+      ],
+      "output": "runs/day86/assets/overview-04.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1241,
+        1008
+      ],
+      "offset": [
+        179,
+        96
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "静态线索要回到动态总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day86/source/overview-05.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "cca3016904b09a951185786564c8f6a7ce7b26953e3f3c5d395e46f0ba555037",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        214,
+        31,
+        1271,
+        1039
+      ],
+      "output": "runs/day86/assets/overview-05.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1057,
+        1008
+      ],
+      "offset": [
+        271,
+        96
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "中性反馈与转介总览专用，不与知识页复用"
+    }
+  ]
+}

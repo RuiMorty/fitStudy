@@ -1,0 +1,262 @@
+{
+  "schema": "fitstudy-planning-image-map-v1",
+  "status": "planning-only-no-generation-performed",
+  "stylePreset": "templates/study/v1/image-style.json",
+  "styleSpecification": "templates/study/v1/image-style.md",
+  "globalInstructions": [
+    "Apply the active Bojji-and-Despa character preset and its common prompt to every generated asset.",
+    "All AI assets are wordless true-alpha PNGs: no Chinese, English, digits, logos, watermarks, labels, readable screens, arrows, chart axes, circles or unexplained markers.",
+    "Use only recognizable male Bojji and Despa, clear 2D flat-color teaching art, correct anatomy and equipment, no other people, and a six-percent safe margin.",
+    "Cover is 1600x900 (16:9); knowledge visual is 2800x900 (28:9); overview-only panel is 4:3; each overview panel must be an independent request and must not reuse a knowledge visual.",
+    "detail.png is not AI art: compose its approved Chinese text and independently generated overview panels with scripts/compose-study-overview.py at 1536x1024 logical size and 2x delivery scale."
+  ],
+  "retryPolicy": "For each asset: one initial request plus at most five prompt-adjusted retries after visual inspection. Preserve every source response and the reason for each retry. No automatic retry or cross-asset retry is authorized by this planning file.",
+  "days": [
+    {
+      "day": 59,
+      "lesson": "day59-lesson.json",
+      "detailImage": {
+        "src": "runs/day59/assets/detail.png",
+        "renderWith": "scripts/compose-study-overview.py",
+        "title": "纠正训练：先观察，再整合",
+        "subtitle": "先看任务 · 上交叉协同 · 下交叉协同 · 松拉激整",
+        "panels": [
+          {"title": "先看任务", "description": "外观不是诊断", "src": "runs/day59/assets/overview-01-observe.png"},
+          {"title": "上交叉", "description": "肩颈 · 肩胛协同", "src": "runs/day59/assets/overview-02-upper.png"},
+          {"title": "下交叉", "description": "骨盆 · 髋协同", "src": "runs/day59/assets/overview-03-lower.png"},
+          {"title": "回到动作", "description": "松 · 拉 · 激 · 整", "src": "runs/day59/assets/overview-04-integrate.png"}
+        ]
+      },
+      "assets": [
+        {"role": "cover", "src": "runs/day59/assets/cover.png", "prompt": "Wide 16:9 wordless course cover. Exactly one Despa calmly demonstrates a low box squat with arms forward and relaxed neck; exactly one Bojji performs an easy wall slide with ribs calm and feet grounded. Show two distinct whole-body training tasks, not a diagnosis pose. No equipment except a plain low box."},
+        {"role": "knowledge", "src": "runs/day59/assets/visual-01-observe.png", "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Bojji stands in a relaxed natural posture on the left while exactly one Despa performs a slow bodyweight box squat on the right; both remain comfortable and calm. Explain that dynamic task observation is more useful than judging a static silhouette. No labels, arrows, grids or medical imagery."},
+        {"role": "knowledge", "src": "runs/day59/assets/visual-02-upper.png", "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Despa performs a smooth wall slide with forearms on a plain wall, shoulders relaxed away from ears; exactly one Bojji performs a gentle wall push with a stable trunk. Explain shoulder-neck-scapula coordination. Do not show forced chest stretching, pain, bands, arrows or anatomy labels."},
+        {"role": "knowledge", "src": "runs/day59/assets/visual-03-lower.png", "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Bojji performs a short-range glute bridge with feet planted and a calm trunk; exactly one Despa demonstrates a light dowel-free hip hinge with hips moving back and a neutral comfortable spine. Explain pelvic-hip-trunk coordination. No exaggerated pelvic tilt, barbell, arrows or labels."},
+        {"role": "knowledge", "src": "runs/day59/assets/visual-04-integrate.png", "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Despa performs a controlled light goblet-free box squat with a small plain crate held close; exactly one Bojji performs a simple standing row using no equipment, hands open as if rehearsing the movement. Explain returning low-load control to a complete task. No bands, text or markers."},
+        {"role": "overview-item", "src": "runs/day59/assets/overview-01-observe.png", "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Bojji performs a calm bodyweight squat with stable feet while exactly one Despa watches with open hands. Explain observation during a task, not diagnosis. No text, arrows, tools or medical symbols."},
+        {"role": "overview-item", "src": "runs/day59/assets/overview-02-upper.png", "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Despa performs a relaxed wall slide with forearms supported; exactly one Bojji observes at the side with open hand. Explain shoulder and scapula coordination. No text, arrows, bands or anatomy labels."},
+        {"role": "overview-item", "src": "runs/day59/assets/overview-03-lower.png", "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Bojji performs a small glute bridge with feet grounded; exactly one Despa kneels nearby with an open hand. Explain hip and trunk control. No text, arrows or exaggerated spinal position."},
+        {"role": "overview-item", "src": "runs/day59/assets/overview-04-integrate.png", "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Despa performs a low controlled box squat holding a small plain crate close; exactly one Bojji stands beside in a stable stance. Explain integrating control into a full movement. No text, arrows or extra equipment."}
+      ]
+    },
+    {
+      "day": 60,
+      "lesson": "day60-lesson.json",
+      "detailImage": {
+        "src": "runs/day60/assets/detail.png",
+        "renderWith": "scripts/compose-study-overview.py",
+        "title": "下肢对线：先动态观察",
+        "subtitle": "任务观察 · 足踝支撑 · 髋膝协同 · 深蹲整合",
+        "panels": [
+          {"title": "动态观察", "description": "任务 · 症状", "src": "runs/day60/assets/overview-01-observe.png"},
+          {"title": "足踝支撑", "description": "三点 · 背屈", "src": "runs/day60/assets/overview-02-foot.png"},
+          {"title": "髋膝协同", "description": "稳定 · 平稳", "src": "runs/day60/assets/overview-03-hip-knee.png"},
+          {"title": "回到深蹲", "description": "慢练 · 渐进", "src": "runs/day60/assets/overview-04-squat.png"}
+        ]
+      },
+      "assets": [
+        {"role": "cover", "src": "runs/day60/assets/cover.png", "prompt": "Wide 16:9 wordless course cover. Exactly one Despa performs a calm assisted squat with both feet fully grounded and knees traveling naturally over the feet; exactly one Bojji balances on one foot near a plain low box with arms open. Explain foot-ankle-hip-knee coordination, not a rigid corrective pose. No text, bands, arrows or orthotics."},
+        {"role": "knowledge", "src": "runs/day60/assets/visual-01-observe.png", "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Bojji slowly steps down from a very low plain box with the whole foot controlled; exactly one Despa performs a shallow bodyweight squat nearby. Explain observing dynamic foot and knee control. No valgus exaggeration, pain cue, grid or arrow."},
+        {"role": "knowledge", "src": "runs/day60/assets/visual-02-foot.png", "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Bojji stands barefoot with heel, big-toe base and little-toe base visibly contacting a plain floor, toes relaxed; exactly one Despa performs a gentle knee-to-wall ankle mobility drill without touching a wall label. Explain stable tripod support and usable ankle motion. No close-up anatomy labels, arrows or toe gripping."},
+        {"role": "knowledge", "src": "runs/day60/assets/visual-03-hip-knee.png", "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Despa performs a controlled supported split squat with pelvis level and front foot stable; exactly one Bojji performs an easy side step in a shallow squat, both knees tracking naturally with feet. Explain hip-knee coordination. No resistance bands, arrows, forced knee position or text."},
+        {"role": "knowledge", "src": "runs/day60/assets/visual-04-squat.png", "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Bojji performs a slow box squat to a plain low box, feet fully grounded; exactly one Despa stands beside demonstrating a stable quiet landing stance. Explain progression from slow squat control to later impact tasks. No jump height, arrows, text or equipment."},
+        {"role": "overview-item", "src": "runs/day60/assets/overview-01-observe.png", "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Bojji slowly steps down from a low plain box while exactly one Despa observes calmly. Explain dynamic observation. No text, arrows or medical symbols."},
+        {"role": "overview-item", "src": "runs/day60/assets/overview-02-foot.png", "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Bojji stands with relaxed toes and full-foot grounded contact; exactly one Despa demonstrates a gentle ankle bend. Explain foot support and ankle motion. No labels, arrows or close-up anatomy."},
+        {"role": "overview-item", "src": "runs/day60/assets/overview-03-hip-knee.png", "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Despa performs a calm split squat with level pelvis and stable front foot; exactly one Bojji observes. Explain hip-knee coordination. No bands, arrows or forced posture."},
+        {"role": "overview-item", "src": "runs/day60/assets/overview-04-squat.png", "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Bojji performs a controlled low box squat with both feet grounded; exactly one Despa stands beside. Explain gradual integration into squat. No text, jump or markers."}
+      ]
+    },
+    {
+      "day": 61,
+      "lesson": "day61-lesson.json",
+      "detailImage": {
+        "src": "runs/day61/assets/detail.png",
+        "renderWith": "scripts/compose-study-overview.py",
+        "title": "爆发力不是硬跳：先吸收再反应",
+        "subtitle": "SSC三阶段 · 缓冲控制 · 落地制动 · 收束扩张 · SAQ整合",
+        "panels": [
+          {"title": "SSC三阶段", "description": "离心 · 缓冲 · 向心", "src": "runs/day61/assets/overview-01-ssc.png"},
+          {"title": "缓冲控制", "description": "质量不追秒", "src": "runs/day61/assets/overview-02-amortization.png"},
+          {"title": "落地制动", "description": "轻 · 稳 · 可重复", "src": "runs/day61/assets/overview-03-landing.png"},
+          {"title": "增强进阶", "description": "收束 · 扩张", "src": "runs/day61/assets/overview-04-progression.png"},
+          {"title": "SAQ整合", "description": "加速 · 制动 · 反应", "src": "runs/day61/assets/overview-05-saq.png"}
+        ]
+      },
+      "assets": [
+        {"role": "cover", "src": "runs/day61/assets/cover.png", "prompt": "Wide 16:9 wordless course cover. Exactly one Despa lands quietly from a very small hop with hips, knees and ankles softly bent; exactly one Bojji runs through two plain cones then slows under control. Explain landing, braking and speed agility. No airborne height drama, arrows, text or reaction lights."},
+        {"role": "knowledge", "src": "runs/day61/assets/visual-01-ssc.png", "prompt": "Wide 28:9 wordless knowledge illustration. Show exactly three Despa snapshots left to right in one scene: a small countermovement lowering, a brief controlled transition, then a small upward takeoff; exactly one Bojji observes centered. The figures must be clearly separate and feet fully visible. Explain eccentric, amortization and concentric phases without arrows, labels or motion lines."},
+        {"role": "knowledge", "src": "runs/day61/assets/visual-02-amortization.png", "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Despa performs a small low rebound with a soft stable landing, not a maximal jump; exactly one Bojji practices a quiet landing hold nearby. Explain that short transition follows control and strength. No stopwatch, numbers, arrows, text or dramatic height."},
+        {"role": "knowledge", "src": "runs/day61/assets/visual-03-landing.png", "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Bojji lands from a tiny low step with whole foot contact, hips knees and ankles sharing bend; exactly one Despa demonstrates a low-speed deceleration stance with torso comfortable. Explain quiet landing and braking. No collapsed knees, impact burst, arrows or labels."},
+        {"role": "knowledge", "src": "runs/day61/assets/visual-04-progression.png", "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Bojji performs a small in-place two-foot hop on the left; exactly one Despa performs a modest lateral step-and-stick on the right. Explain progression from in-place double-leg control to directional movement, not a competition jump. No boxes, arrows, text or extra people."},
+        {"role": "knowledge", "src": "runs/day61/assets/visual-05-saq.png", "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Despa accelerates through three plain cones then brakes in a calm athletic stance; exactly one Bojji waits at the side with an open hand as a simple training partner. Explain speed, deceleration and planned change of direction. No reaction light, arrows, readable signs or text."},
+        {"role": "overview-item", "src": "runs/day61/assets/overview-01-ssc.png", "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Despa performs a shallow countermovement with soft knees; exactly one Bojji observes. Explain the first phase of a controlled SSC. No text, arrow or motion trails."},
+        {"role": "overview-item", "src": "runs/day61/assets/overview-02-amortization.png", "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Bojji makes a tiny quiet rebound from both feet while exactly one Despa observes with open palm. Explain controlled transition. No stopwatch, numbers, text or arrows."},
+        {"role": "overview-item", "src": "runs/day61/assets/overview-03-landing.png", "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Despa lands quietly from a very low step with full feet visible; exactly one Bojji observes. Explain braking and absorption. No impact bursts, arrows or text."},
+        {"role": "overview-item", "src": "runs/day61/assets/overview-04-progression.png", "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Bojji does a small in-place double-leg hop and exactly one Despa performs a controlled lateral step-and-stick. Explain gradual plyometric progression. No text, boxes or arrows."},
+        {"role": "overview-item", "src": "runs/day61/assets/overview-05-saq.png", "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Despa moves through two plain cones and stops under control; exactly one Bojji observes. Explain SAQ braking and direction change. No text, lights or arrows."}
+      ]
+    },
+    {
+      "day": 62,
+      "lesson": "day62-lesson.json",
+      "detailImage": {
+        "src": "runs/day62/assets/detail.png",
+        "renderWith": "scripts/compose-study-overview.py",
+        "title": "碳水不是好坏题，是训练燃料题",
+        "subtitle": "类型与搭配 · 糖原储备 · GI与GL · 训练分配",
+        "panels": [
+          {"title": "类型与搭配", "description": "纤维 · 餐食组合", "src": "runs/day62/assets/overview-01-types.png"},
+          {"title": "糖原储备", "description": "肌肉 · 肝脏", "src": "runs/day62/assets/overview-02-glycogen.png"},
+          {"title": "GI与GL", "description": "工具 · 非判决", "src": "runs/day62/assets/overview-03-gi-gl.png"},
+          {"title": "训练分配", "description": "总量 · 时机 · 耐受", "src": "runs/day62/assets/overview-04-timing.png"}
+        ]
+      },
+      "assets": [
+        {"role": "cover", "src": "runs/day62/assets/cover.png", "prompt": "Wide 16:9 wordless course cover. Exactly one Bojji sits beside a simple balanced meal with plain rice, potato, beans and fruit; exactly one Despa does a light stationary running warm-up nearby. Explain carbohydrate as training fuel. No packaging, labels, words, numbers, charts or giant food."},
+        {"role": "knowledge", "src": "runs/day62/assets/visual-01-types.png", "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Bojji arranges a plain bowl with rice, beans, potato and fruit; exactly one Despa holds a small bowl of oats beside him. Explain food variety and fiber in whole meals. No food labels, ingredient text, brand packages, arrows or medical imagery."},
+        {"role": "knowledge", "src": "runs/day62/assets/visual-02-glycogen.png", "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Despa performs a controlled moderate stationary cycling pose on a plain exercise bike with no console text; exactly one Bojji rests beside a simple meal and water cup. Explain muscle and liver fuel storage through training and recovery, without anatomy labels, arrows or charts."},
+        {"role": "knowledge", "src": "runs/day62/assets/visual-03-gi-gl.png", "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Bojji compares two calm plain meals: one bowl of porridge with fruit and one rice-and-bean bowl; exactly one Despa gestures thoughtfully. Explain that food response depends on portion and meal context, not a good-bad ranking. No graphs, numbers, labels, arrows or medical glucose devices."},
+        {"role": "knowledge", "src": "runs/day62/assets/visual-04-timing.png", "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Despa finishes a light training pose and holds a simple bowl of rice with egg; exactly one Bojji prepares a small easy-to-digest snack on a plain plate. Explain distributing carbohydrate around training and recovery. No clock, text, labels or packaging."},
+        {"role": "overview-item", "src": "runs/day62/assets/overview-01-types.png", "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Bojji holds a small bowl with plain rice and beans; exactly one Despa holds a piece of fruit. Explain food variety and meal combination. No text, packages or arrows."},
+        {"role": "overview-item", "src": "runs/day62/assets/overview-02-glycogen.png", "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Despa performs light stationary cycling; exactly one Bojji holds a simple post-training bowl. Explain fuel and recovery. No labels, console text or anatomy diagram."},
+        {"role": "overview-item", "src": "runs/day62/assets/overview-03-gi-gl.png", "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Bojji looks at two different plain balanced plates while exactly one Despa gestures open-handed. Explain context and portion. No charts, text, numbers or medical devices."},
+        {"role": "overview-item", "src": "runs/day62/assets/overview-04-timing.png", "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Despa finishes a gentle run warm-up holding a water cup; exactly one Bojji holds a small plain snack plate. Explain training meal timing. No clock, text or packaging."}
+      ]
+    },
+    {
+      "day": 63,
+      "lesson": "day63-lesson.json",
+      "detailImage": {
+        "src": "runs/day63/assets/detail.png",
+        "renderWith": "scripts/compose-study-overview.py",
+        "title": "蛋白质：先看整天，不迷信一口",
+        "subtitle": "氨基酸 · 全天总量 · 餐次分配 · 来源选择",
+        "panels": [
+          {"title": "氨基酸", "description": "EAA · 不是魔法键", "src": "runs/day63/assets/overview-01-eaa.png"},
+          {"title": "全天总量", "description": "训练 · 目标 · 能量", "src": "runs/day63/assets/overview-02-total.png"},
+          {"title": "餐次分配", "description": "规律 · 可执行", "src": "runs/day63/assets/overview-03-distribution.png"},
+          {"title": "来源选择", "description": "动物 · 植物 · 多样", "src": "runs/day63/assets/overview-04-sources.png"}
+        ]
+      },
+      "assets": [
+        {"role": "cover", "src": "runs/day63/assets/cover.png", "prompt": "Wide 16:9 wordless course cover. Exactly one Despa performs a light dumbbell-free row rehearsal with stable posture; exactly one Bojji arranges a plain plate with egg, tofu, beans and rice. Explain protein in training recovery through food, not supplements. No labels, powder tubs, text or brand packages."},
+        {"role": "knowledge", "src": "runs/day63/assets/visual-01-eaa.png", "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Bojji holds a plain bowl with tofu and beans; exactly one Despa holds a simple egg and a small fish on a plate, both calm. Explain varied protein sources and essential amino acids without molecular symbols, labels, arrows or supplement imagery."},
+        {"role": "knowledge", "src": "runs/day63/assets/visual-02-total.png", "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Despa performs a controlled bodyweight split squat; exactly one Bojji sets out three small plain meals with visible protein foods across the width. Explain matching total food intake to training rather than one giant serving. No meal labels, numbers, clocks or text."},
+        {"role": "knowledge", "src": "runs/day63/assets/visual-03-distribution.png", "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Bojji prepares a small breakfast plate with yogurt and oats; exactly one Despa finishes a light training pose beside a simple rice-and-egg meal. Explain regular meal distribution and recovery meal context. No protein shaker, clock, labels or text."},
+        {"role": "knowledge", "src": "runs/day63/assets/visual-04-sources.png", "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Despa holds a plate with fish and egg; exactly one Bojji holds a plate with tofu, beans and grains. Explain animal and plant protein diversity, not a competition between them. No packaging, arrows, text or logos."},
+        {"role": "overview-item", "src": "runs/day63/assets/overview-01-eaa.png", "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Bojji holds tofu and beans on a plain plate; exactly one Despa holds an egg. Explain varied essential amino acid sources. No labels, molecule icons or text."},
+        {"role": "overview-item", "src": "runs/day63/assets/overview-02-total.png", "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Despa performs a calm bodyweight split squat; exactly one Bojji holds a balanced plain meal. Explain total intake matched to training. No numbers or text."},
+        {"role": "overview-item", "src": "runs/day63/assets/overview-03-distribution.png", "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Bojji sets a simple breakfast plate; exactly one Despa holds a simple post-training meal. Explain regular distribution. No clock, shaker, labels or text."},
+        {"role": "overview-item", "src": "runs/day63/assets/overview-04-sources.png", "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Despa holds a fish-and-egg plate while exactly one Bojji holds tofu-and-bean plate. Explain food-source diversity. No text, package or arrows."}
+      ]
+    },
+    {
+      "day": 64,
+      "lesson": "day64-lesson.json",
+      "detailImage": {
+        "src": "runs/day64/assets/detail.png",
+        "renderWith": "scripts/compose-study-overview.py",
+        "title": "脂肪不是敌人，安排才是重点",
+        "subtitle": "基础功能 · 类型来源 · 必需脂肪酸 · 训练安排",
+        "panels": [
+          {"title": "基础功能", "description": "能量 · 吸收 · 结构", "src": "runs/day64/assets/overview-01-role.png"},
+          {"title": "类型来源", "description": "整体 · 非口号", "src": "runs/day64/assets/overview-02-types.png"},
+          {"title": "必需脂肪酸", "description": "ω-3 · ω-6", "src": "runs/day64/assets/overview-03-essential.png"},
+          {"title": "训练安排", "description": "总量 · 时机 · 耐受", "src": "runs/day64/assets/overview-04-timing.png"}
+        ]
+      },
+      "assets": [
+        {"role": "cover", "src": "runs/day64/assets/cover.png", "prompt": "Wide 16:9 wordless course cover. Exactly one Bojji holds a plain small bowl of nuts and an avocado half; exactly one Despa performs a calm light walking warm-up near a plate with fish and rice. Explain dietary fat as part of a balanced training meal. No oil labels, packaging, text or health symbols."},
+        {"role": "knowledge", "src": "runs/day64/assets/visual-01-role.png", "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Bojji sets a modest portion of nuts and olive-like plain oil dish beside a balanced meal; exactly one Despa performs a relaxed light carry with a plain crate. Explain energy density and function without calorie icons, labels, arrows or text."},
+        {"role": "knowledge", "src": "runs/day64/assets/visual-02-types.png", "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Despa holds a plate with fish and a few nuts; exactly one Bojji compares it with a plain whole-food meal, both calm. Explain source and food context rather than good-bad food ranking. No fried-food caricature, labels, charts or arrows."},
+        {"role": "knowledge", "src": "runs/day64/assets/visual-03-essential.png", "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Bojji holds a small fish on a plain plate; exactly one Despa holds a small handful of seeds and nuts. Explain varied food sources of essential fats. No omega symbols, capsules, medical charts, text or arrows."},
+        {"role": "knowledge", "src": "runs/day64/assets/visual-04-timing.png", "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Despa starts a gentle stationary run with a light easy-to-digest plate nearby; exactly one Bojji later enjoys a balanced meal with a modest avocado portion. Explain that richer-fat meals can be placed farther from intense training for comfort. No clock, labels or text."},
+        {"role": "overview-item", "src": "runs/day64/assets/overview-01-role.png", "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Bojji holds a small nut bowl while exactly one Despa holds a balanced plain meal. Explain dietary fat in a balanced context. No icons, text or arrows."},
+        {"role": "overview-item", "src": "runs/day64/assets/overview-02-types.png", "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Despa holds a fish-and-nut plate; exactly one Bojji observes. Explain food sources, not good-bad labels. No packages, text or charts."},
+        {"role": "overview-item", "src": "runs/day64/assets/overview-03-essential.png", "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Bojji holds small fish on a plain plate; exactly one Despa holds seeds. Explain essential-fat food variety. No supplement capsules, omega symbol or text."},
+        {"role": "overview-item", "src": "runs/day64/assets/overview-04-timing.png", "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Despa performs a light training warm-up near a small plain meal; exactly one Bojji holds a modest avocado portion. Explain timing and comfort. No clock, labels or text."}
+      ]
+    },
+    {
+      "day": 65,
+      "lesson": "day65-lesson.json",
+      "detailImage": {
+        "src": "runs/day65/assets/detail.png",
+        "renderWith": "scripts/compose-study-overview.py",
+        "title": "微量营养：食物先行，补剂有边界",
+        "subtitle": "维生素差异 · 矿物质功能 · 训练风险 · 补剂边界",
+        "panels": [
+          {"title": "维生素差异", "description": "水溶 · 脂溶", "src": "runs/day65/assets/overview-01-vitamins.png"},
+          {"title": "矿物质功能", "description": "骨骼 · 携氧 · 神经", "src": "runs/day65/assets/overview-02-minerals.png"},
+          {"title": "训练风险", "description": "线索 · 非诊断", "src": "runs/day65/assets/overview-03-risk.png"},
+          {"title": "补剂边界", "description": "食物先 · 核对叠加", "src": "runs/day65/assets/overview-04-supplements.png"}
+        ]
+      },
+      "assets": [
+        {"role": "cover", "src": "runs/day65/assets/cover.png", "prompt": "Wide 16:9 wordless course cover. Exactly one Bojji arranges a colorful plain meal with leafy vegetables, fruit, beans, dairy-like yogurt and fish; exactly one Despa performs a gentle running warm-up nearby. Explain varied foods supporting training. No vitamins letters, supplement bottles, labels, text or medical symbols."},
+        {"role": "knowledge", "src": "runs/day65/assets/visual-01-vitamins.png", "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Bojji holds a fruit-and-vegetable basket; exactly one Despa holds a small plain plate with egg and yogurt. Explain different food sources and storage differences without letters, capsules, sun icons, text or molecular symbols."},
+        {"role": "knowledge", "src": "runs/day65/assets/visual-02-minerals.png", "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Despa performs a controlled light calf raise with stable posture; exactly one Bojji holds a plain plate with beans, greens and fish. Explain minerals contribute across muscle, bone and food functions without skeleton diagram, labels, arrows or text."},
+        {"role": "knowledge", "src": "runs/day65/assets/visual-03-risk.png", "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Bojji rests calmly after an easy endurance walk with a water cup; exactly one Despa reviews a simple balanced meal with open hands. Explain noticing training and diet risk clues without showing illness, blood, medical tests, text or warning symbols."},
+        {"role": "knowledge", "src": "runs/day65/assets/visual-04-supplements.png", "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Despa chooses a plain balanced food plate; exactly one Bojji carefully places one unbranded plain small bottle aside rather than using it. Explain food first and cautious supplement boundaries. No readable bottle, pills, labels, arrows or medical symbols."},
+        {"role": "overview-item", "src": "runs/day65/assets/overview-01-vitamins.png", "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Bojji holds fruit and leafy vegetables; exactly one Despa holds a plain egg-and-yogurt plate. Explain vitamin source variety. No letters, pills or text."},
+        {"role": "overview-item", "src": "runs/day65/assets/overview-02-minerals.png", "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Despa performs a controlled calf raise; exactly one Bojji holds beans and greens on a plate. Explain food and mineral-related body function. No skeleton, labels or text."},
+        {"role": "overview-item", "src": "runs/day65/assets/overview-03-risk.png", "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Bojji rests after an easy walk while exactly one Despa looks at a balanced plain meal. Explain monitoring training and nutrition clues, not diagnosis. No test tube, warning sign or text."},
+        {"role": "overview-item", "src": "runs/day65/assets/overview-04-supplements.png", "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Despa chooses a balanced food plate while exactly one Bojji sets one small unbranded bottle aside. Explain food-first supplementation boundary. No readable bottle, pills or text."}
+      ]
+    },
+    {
+      "day": 66,
+      "lesson": "day66-lesson.json",
+      "detailImage": {
+        "src": "runs/day66/assets/detail.png",
+        "renderWith": "scripts/compose-study-overview.py",
+        "title": "喝水不是固定题，是个人反馈题",
+        "subtitle": "个体出汗 · 前中后补液 · 电解质 · 热安全",
+        "panels": [
+          {"title": "个体出汗", "description": "环境 · 时长 · 反馈", "src": "runs/day66/assets/overview-01-sweat.png"},
+          {"title": "前中后补液", "description": "范围 · 分次 · 复盘", "src": "runs/day66/assets/overview-02-timing.png"},
+          {"title": "电解质", "description": "长时出汗 · 防低钠", "src": "runs/day66/assets/overview-03-electrolytes.png"},
+          {"title": "热安全", "description": "适应 · 休息 · 红旗", "src": "runs/day66/assets/overview-04-heat.png"}
+        ]
+      },
+      "assets": [
+        {"role": "cover", "src": "runs/day66/assets/cover.png", "prompt": "Wide 16:9 wordless course cover. Exactly one Despa takes a small drink from a plain clear water bottle during a warm outdoor walk; exactly one Bojji rests in a shaded spot with a plain cup. Explain measured hydration and heat-aware rest. No sun icon, temperature, text, electrolyte branding or medical symbols."},
+        {"role": "knowledge", "src": "runs/day66/assets/visual-01-sweat.png", "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Despa performs a light outdoor jog in simple breathable clothing; exactly one Bojji performs an indoor easy walk with a plain cup. Explain that environment and task change fluid loss. No sweat labels, thermometer, charts, text or visible wetness exaggeration."},
+        {"role": "knowledge", "src": "runs/day66/assets/visual-02-timing.png", "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Bojji takes a small drink before a gentle warm-up; exactly one Despa takes a small drink after a relaxed cool-down, with two separate plain cups. Explain before-during-after distributed hydration without clock, numbers, arrows, text or giant bottles."},
+        {"role": "knowledge", "src": "runs/day66/assets/visual-03-electrolytes.png", "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Despa finishes a long easy walk and holds a plain bowl of a normal meal with water; exactly one Bojji holds a small unbranded cup. Explain that long sweating requires a broader food-and-fluid plan, not excessive plain water. No salt shaker label, powders, bottles, symbols or text."},
+        {"role": "knowledge", "src": "runs/day66/assets/visual-04-heat.png", "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Bojji sits comfortably in shade with a plain cup after stopping exercise; exactly one Despa uses an open hand to signal a calm rest break. Explain heat adaptation, pacing and rest. No emergency drama, red icons, sun symbols, text or medical equipment."},
+        {"role": "overview-item", "src": "runs/day66/assets/overview-01-sweat.png", "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Despa lightly jogs outdoors; exactly one Bojji walks indoors with a plain cup. Explain changing sweat conditions. No thermometer, charts, text or symbols."},
+        {"role": "overview-item", "src": "runs/day66/assets/overview-02-timing.png", "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Bojji takes a small drink before a warm-up; exactly one Despa drinks after a cool-down. Explain distributed hydration. No clock, numbers or text."},
+        {"role": "overview-item", "src": "runs/day66/assets/overview-03-electrolytes.png", "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Despa holds a normal meal bowl and water after a long walk; exactly one Bojji observes with a small plain cup. Explain food-and-fluid planning. No salt label, powder or text."},
+        {"role": "overview-item", "src": "runs/day66/assets/overview-04-heat.png", "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Bojji rests in a shaded calm spot while exactly one Despa signals a rest break. Explain heat safety. No danger icon, sun symbol or text."}
+      ]
+    },
+    {
+      "day": 67,
+      "lesson": "day67-lesson.json",
+      "detailImage": {
+        "src": "runs/day67/assets/detail.png",
+        "renderWith": "scripts/compose-study-overview.py",
+        "title": "体重管理：别让一个数字主导训练",
+        "subtitle": "长期趋势 · BMR与TDEE · 保肌策略 · 健康边界",
+        "panels": [
+          {"title": "长期趋势", "description": "赤字 · 盈余 · 波动", "src": "runs/day67/assets/overview-01-balance.png"},
+          {"title": "BMR与TDEE", "description": "估算 · 非处方", "src": "runs/day67/assets/overview-02-tdee.png"},
+          {"title": "保肌策略", "description": "训练 · 营养 · 恢复", "src": "runs/day67/assets/overview-03-preserve.png"},
+          {"title": "健康边界", "description": "小步调整 · 及时支持", "src": "runs/day67/assets/overview-04-boundary.png"}
+        ]
+      },
+      "assets": [
+        {"role": "cover", "src": "runs/day67/assets/cover.png", "prompt": "Wide 16:9 wordless course cover. Exactly one Despa performs a controlled light dumbbell-free squat while exactly one Bojji writes a few non-readable lines in a plain notebook beside a balanced meal. Explain monitoring training and habits, not chasing a scale. No scales, numbers, charts, text or diet branding."},
+        {"role": "knowledge", "src": "runs/day67/assets/visual-01-balance.png", "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Bojji sees two ordinary balanced meal settings on opposite sides, while exactly one Despa calmly performs a light walking warm-up in the center. Explain long-term intake and activity balance without a scale, numbers, food morality, arrows or charts."},
+        {"role": "knowledge", "src": "runs/day67/assets/visual-02-tdee.png", "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Despa does a light carry with a plain crate, then rests at a simple meal table; exactly one Bojji takes an easy walk nearby. Explain that total daily expenditure has several everyday parts. No calculator, formula, labels, arrows, charts or text."},
+        {"role": "knowledge", "src": "runs/day67/assets/visual-03-preserve.png", "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Despa performs a controlled light split squat; exactly one Bojji holds a plain balanced meal with rice, tofu and vegetables. Explain preserving training quality and lean tissue through resistance training, food and recovery. No muscular body transformation, scale, text or arrows."},
+        {"role": "knowledge", "src": "runs/day67/assets/visual-04-boundary.png", "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Bojji rests calmly seated with a simple notebook closed; exactly one Despa stands nearby with a supportive open hand, and a balanced meal is on a plain table. Explain small sustainable adjustments and seeking support. No sad drama, medical symbols, scale, text or warning icons."},
+        {"role": "overview-item", "src": "runs/day67/assets/overview-01-balance.png", "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Bojji stands beside a balanced plain meal; exactly one Despa performs a relaxed walking warm-up. Explain long-term energy balance without a scale, numbers, labels or charts."},
+        {"role": "overview-item", "src": "runs/day67/assets/overview-02-tdee.png", "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Despa carries a small plain crate while exactly one Bojji takes an easy walk. Explain several daily activity components. No calculator, formula, text or arrows."},
+        {"role": "overview-item", "src": "runs/day67/assets/overview-03-preserve.png", "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Despa performs a controlled light split squat while exactly one Bojji holds a balanced plain meal. Explain performance and recovery. No scale, transformation imagery, labels or text."},
+        {"role": "overview-item", "src": "runs/day67/assets/overview-04-boundary.png", "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Bojji rests calmly with a closed plain notebook while exactly one Despa offers a supportive open hand. Explain sustainable adjustment and support. No medical symbol, warning icon, text or scale."}
+      ]
+    }
+  ]
+}

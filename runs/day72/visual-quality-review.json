@@ -1,0 +1,93 @@
+{
+  "reviewer": "local source visual, alpha and semantic QA",
+  "requirements": [
+    "true-alpha transparent PNG without a rendered checkerboard, opaque canvas, floor, room, paper background, border, sticker edge, shadow or halo",
+    "only wordless Bojji and Despa in calm 2D fitness-science teaching scenes",
+    "no pills, capsules, powder, supplement tubs, package labels, dosage marks, promotional physique, medical-treatment claim or third-person depiction",
+    "each overview image is independently generated and visually distinct from its matching knowledge-page art",
+    "the shared image preparer removes only near-transparent edge noise and supplies the final six-percent canvas margin"
+  ],
+  "technicalChecks": {
+    "checkedWith": [
+      "RGBA metadata and transparent-background inspection",
+      "individual visual semantic and safety review",
+      "shared image preparation and final-canvas bounds check"
+    ],
+    "result": "All nine selected processed PNGs are non-empty RGBA files with transparent pixels. The shared preparer centered reviewed art on the required final canvases without upscaling. Final rendered-card and responsive-page QA remains recorded separately in runs/day72/verification/."
+  },
+  "accepted": [
+    {
+      "file": "cover.png",
+      "attempt": 1,
+      "source": "runs/day72/image-requests/cover-eb86e17540/attempt-01/cover.png",
+      "review": "A calm discussion around ordinary food, water and blank evidence cards communicates that basic recovery and evidence review precede a purchase; no product, package or dose imagery appears."
+    },
+    {
+      "file": "visual-01-framework.png",
+      "attempt": 2,
+      "source": "runs/day72/image-requests/visual-01-framework-b6cfb7a8cc/attempt-02/visual-01-framework.png",
+      "review": "The revised full-subject composition shows a stable light squat-preparation scene, water and blank cards, reinforcing needs-before-products without labels, packaging or unsafe lifting."
+    },
+    {
+      "file": "visual-02-core.png",
+      "attempt": 1,
+      "source": "runs/day72/image-requests/visual-02-core-e16225057d/attempt-01/visual-02-core.png",
+      "review": "A controlled light-dumbbell teaching posture and a calm pause cue convey conditional use without stimulant, powder, package or exaggerated-strength imagery."
+    },
+    {
+      "file": "visual-03-other.png",
+      "attempt": 2,
+      "source": "runs/day72/image-requests/visual-03-other-0e336e5220/attempt-02/visual-03-other.png",
+      "review": "The accepted simple walking-and-card composition avoids the rejected prop collage and cleanly communicates task-and-tolerance comparison without product imagery or text."
+    },
+    {
+      "file": "visual-04-safety.png",
+      "attempt": 1,
+      "source": "runs/day72/image-requests/visual-04-safety-7edea1ba70/attempt-01/visual-04-safety.png",
+      "review": "The table scene uses a permitted blank rigid evidence card, water and an unreadable notebook to express one-change-at-a-time recording; neither a prescription nor a supplement container is depicted."
+    },
+    {
+      "file": "overview-01-framework.png",
+      "attempt": 1,
+      "source": "runs/day72/image-requests/overview-01-framework-905ba25e3a/attempt-01/overview-01-framework.png",
+      "review": "This dedicated 4:3 scene combines ordinary food, water and a blank card, distinct from the knowledge-page squat composition."
+    },
+    {
+      "file": "overview-02-core.png",
+      "attempt": 2,
+      "source": "runs/day72/image-requests/overview-02-core-d040eadf57/attempt-02/overview-02-core.png",
+      "review": "The adjusted 4:3 composition uses clearly small ordinary dumbbells, a controlled seated press and a water glass, distinct from the knowledge art and free of products or doses."
+    },
+    {
+      "file": "overview-03-other.png",
+      "attempt": 1,
+      "source": "runs/day72/image-requests/overview-03-other-65774a027f/attempt-01/overview-03-other.png",
+      "review": "The dedicated walking-and-comparison-card scene is visually separate from the knowledge-page version and contains only an unmarked rigid card."
+    },
+    {
+      "file": "overview-04-safety.png",
+      "attempt": 1,
+      "source": "runs/day72/image-requests/overview-04-safety-1b61443daf/attempt-01/overview-04-safety.png",
+      "review": "A distinct table scene conveys recording and an exit option through a blank rigid card, ordinary food, water and an unreadable notebook without packaging or medical claims."
+    }
+  ],
+  "rejected": [
+    {
+      "file": "visual-01-framework.png",
+      "attempt": 1,
+      "reason": "The initial candidate cropped a character's head and introduced an incorrect loaded barbell, failing the full-subject and simple-accurate-equipment requirements."
+    },
+    {
+      "file": "visual-03-other.png",
+      "attempt": 1,
+      "reason": "The initial candidate used a cluttered prop collage instead of one clear walking-and-comparison teaching scene."
+    },
+    {
+      "file": "overview-02-core.png",
+      "attempt": 1,
+      "reason": "The dumbbells were visibly oversized for the requested light, non-extreme teaching movement."
+    }
+  ],
+  "retriesUsed": 3,
+  "result": "Nine selected source assets passed local visual, alpha and supplement-safety semantic QA. Rejected candidates and their adjusted prompts remain preserved in image-request-log.json."
+}

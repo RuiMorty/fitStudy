@@ -1,0 +1,50 @@
+{
+  "reviewer": "local source visual, alpha and semantic QA",
+  "requirements": [
+    "true-alpha transparent PNG with no rendered checkerboard, opaque canvas, floor, ground plane or visible shadow",
+    "wordless Bojji and Despa teaching art with coherent nutrition-timing props",
+    "no generated text, arrows, flow lines, bubbles, icons, charts, markers, collage panels, duplicate figures or clipped bodies",
+    "each overview asset is independently generated and is not reused as a knowledge-page asset",
+    "effective visible subject pixels retain at least the six-percent safety margin; alpha 1-8 antialiasing noise is removed only by the existing shared preparer"
+  ],
+  "technicalChecks": {
+    "checkedWith": [
+      "RGBA alpha extrema and transparent-background inspection",
+      "individual white-composite inspection",
+      "character, prop, action, margin, projection and topic-specific review"
+    ],
+    "result": "All nine selected source PNGs are non-empty RGBA files with real alpha. White-composite QA found no visible colored fringe, floor, shadow or opaque canvas. The small alpha 1-8 edge pixels are ordinary antialiasing noise already removed by prepare-study-images.py; no new generic image treatment was added."
+  },
+  "accepted": [
+    {"file":"cover.png","attempt":2,"source":"runs/day68/image-requests/cover-eb86e17540/attempt-02/cover.png","review":"One standing Bojji with a water cup and one standing Despa with a calm open hand make a single pre-training scene beside a blank meal plate on a bench."},
+    {"file":"visual-01-foundation.png","attempt":4,"source":"runs/day68/image-requests/visual-01-foundation-cea62a6b7f/attempt-04/visual-01-foundation.png","review":"Centered Bojji and Despa with ordinary food, water and a simple mat explain daily nutrition foundation without a floor, scale, chart or food collage."},
+    {"file":"visual-02-pre.png","attempt":2,"source":"runs/day68/image-requests/visual-02-pre-ccb0874e3f/attempt-02/visual-02-pre.png","review":"Bojji calmly sits on a complete bench with a banana and plain cup while Despa offers a supportive preparation gesture; subject bounds clear the six-percent margin."},
+    {"file":"visual-03-during.png","attempt":5,"source":"runs/day68/image-requests/visual-03-during-e365525b94/attempt-05/visual-03-during.png","review":"One walking Despa holds a plain water cup while one Bojji offers an unwrapped bread piece; it is a single clear gradual-fueling scene with effective bounds above six percent."},
+    {"file":"visual-04-post.png","attempt":4,"source":"runs/day68/image-requests/visual-04-post-4cccd8d9d0/attempt-04/visual-04-post.png","review":"One calm seated pair with normal plates and water cups communicates recovery without exaggerated eating, clipping, floor or shadow."},
+    {"file":"overview-01-foundation.png","attempt":3,"source":"runs/day68/image-requests/overview-01-foundation-d9f03459f2/attempt-03/overview-01-foundation.png","review":"Independent centered tray, meal and cup scene has a complete Bojji and observing Despa, with clean alpha and adequate margins."},
+    {"file":"overview-02-pre.png","attempt":2,"source":"runs/day68/image-requests/overview-02-pre-d54f64ad83/attempt-02/overview-02-pre.png","review":"Independent pre-training scene shows Bojji standing beside a bench and packing banana plus cup into an unmarked bag, separate from the knowledge image."},
+    {"file":"overview-03-during.png","attempt":2,"source":"runs/day68/image-requests/overview-03-during-a15f5df437/attempt-02/overview-03-during.png","review":"Independent standing-rest scene shows Despa sipping from a cup and Bojji holding an unwrapped snack, without walking sequence, handoff or timer."},
+    {"file":"overview-04-post.png","attempt":2,"source":"runs/day68/image-requests/overview-04-post-cd46f8a234/attempt-02/overview-04-post.png","review":"Independent post-training scene has standing Bojji holding a bowl and Despa pouring water by a low tray, distinct from the seated knowledge image."}
+  ],
+  "rejected": [
+    {"file":"cover.png","attempt":1,"reason":"Despa was not standing and the effective top and bottom margins were below the source gate."},
+    {"file":"visual-01-foundation.png","attempt":1,"reason":"Multiple subjects and props were too close to the canvas edges."},
+    {"file":"visual-01-foundation.png","attempt":2,"reason":"A visible gray ground or projection remained under the figures on white composite."},
+    {"file":"visual-01-foundation.png","attempt":3,"reason":"The effective top safety margin remained below six percent."},
+    {"file":"visual-02-pre.png","attempt":1,"reason":"Head, shoes and bench legs were too close to the top and bottom edges."},
+    {"file":"visual-03-during.png","attempt":1,"reason":"Effective top and bottom subject margins were below six percent."},
+    {"file":"visual-03-during.png","attempt":2,"reason":"Top and bottom margins remained below six percent and the drink read as a sports bottle rather than the requested cup."},
+    {"file":"visual-03-during.png","attempt":3,"reason":"Effective top margin was marginally below the source gate."},
+    {"file":"visual-03-during.png","attempt":4,"reason":"Top and bottom subject bounds remained below six percent."},
+    {"file":"visual-04-post.png","attempt":1,"reason":"Bodies and table were actually clipped at the top and bottom edges."},
+    {"file":"visual-04-post.png","attempt":2,"reason":"Subject bounds were too close to top and bottom and the eating gesture was overly exaggerated."},
+    {"file":"visual-04-post.png","attempt":3,"reason":"Effective top and bottom bounds were below six percent."},
+    {"file":"overview-01-foundation.png","attempt":1,"reason":"Top and bottom subject bounds were below six percent."},
+    {"file":"overview-01-foundation.png","attempt":2,"reason":"Top safety margin remained below six percent."},
+    {"file":"overview-02-pre.png","attempt":1,"reason":"Multiple effective subject edges were below the six-percent safety margin."},
+    {"file":"overview-03-during.png","attempt":1,"reason":"Top and bottom effective subject bounds were below the six-percent safety margin."},
+    {"file":"overview-04-post.png","attempt":1,"reason":"Top and bottom effective subject bounds were below the six-percent safety margin."}
+  ],
+  "retriesUsed": 17,
+  "result": "9 selected source assets passed local source QA; all rejected candidates and adjusted prompts remain preserved in image-request-log.json."
+}

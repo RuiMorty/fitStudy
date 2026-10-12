@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Day 62 · 宏量营养素：碳水化合物</title><link rel="icon" type="image/svg+xml" href="assets/fitness-study-logo-open-circle.svg?v=a6d8e5caaa61"><style>:root { color-scheme: light; --ink: #111113; --muted: #71717a; --line: #e4e4e7; --accent: #ff5a1f; --green: #0ea66b; --blue: #2563eb; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; font-synthesis: none; letter-spacing: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); overflow-wrap: anywhere; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+img { display: block; max-width: 100%; }
+button:focus-visible, a:focus-visible, summary:focus-visible, input:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
+svg.icon { width: 20px; height: 20px; }
+.icon-button { display: inline-grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 1px solid var(--line); border-radius: 6px; background: white; }
+[hidden] { display: none !important; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
+
+body { background: #f6f8f7; font-size: 14px; line-height: 1.65; }
+main { max-width: 980px; margin: auto; padding: 24px 18px 60px; }
+.header { padding: 22px 4px 14px; }
+h1 { margin: 10px 0 8px; font-size: 36px; line-height: 1.2; }
+h1::before { content: ""; display: block; width: 34px; height: 4px; background: var(--accent); margin-bottom: 10px; }
+h2 { font-size: 17px; margin: 0 0 14px; }
+h3 { font-size: 16px; margin: 0 0 8px; }
+.sub { color: var(--muted); margin: 5px 0 18px; }
+.meta { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { display: inline-block; border: 1px solid var(--line); border-radius: 20px; background: white; color: var(--muted); padding: 3px 10px; font-size: 12px; font-weight: 600; }
+.chip:nth-child(1) { background: #e2f7eb; color: #15803d; border-color: transparent; }
+.chip:nth-child(2) { background: #e7f0fe; color: #2563eb; border-color: transparent; }
+.chip:nth-child(3) { background: #fff2e5; color: #9a4c05; border-color: transparent; }
+.panel, .figure, .warn, .mnemonic { background: white; border: 1px solid #e2e8e4; border-radius: 14px; box-shadow: 0 2px 12px rgba(20,40,30,.06); padding: 20px; margin: 16px 0; }
+.green { border-left: 5px solid var(--green); }
+.orange { border-left: 5px solid #ea7a17; }
+.blue { border-left: 5px solid #0ea5e9; }
+.takeaway { margin: 0; }
+.figure { text-align: center; }
+.figure button { display: block; position: relative; width: 100%; border: 0; padding: 0; background: white; cursor: zoom-in; }
+.figure img { max-height: 760px; width: 100%; object-fit: contain; }
+.figure .icon-button { position: absolute; bottom: 8px; right: 8px; background: #ffffffed; }
+.caption { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
+.kp { list-style: none; padding: 0; margin: 0; }
+.kp > li { border-bottom: 1px dashed #e2e8e4; }
+.kp > li:last-child { border-bottom: 0; }
+.kp summary { cursor: pointer; padding: 13px 8px; font-weight: 650; }
+.kp summary::marker { color: var(--green); }
+.term { color: #0a7d52; background: #e2f7eb; border-radius: 6px; padding: 1px 5px; }
+.kp-body { padding: 2px 14px 16px 24px; }
+.detail-block { margin: 12px 0; }
+.detail-block h4 { font-size: 13px; color: #08744d; margin: 0 0 4px; }
+.detail-block p { margin: 0; white-space: pre-line; }
+.warn { border-left: 5px solid #e23b3b; background: #fffafa; }
+.warn p { margin: 8px 0; }
+.misconception { color: #a82b32; }
+.mnemonic { border-left: 4px solid var(--accent); box-shadow: none; }
+.mnemonic strong { color: #df4716; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+.flip { height: 168px; perspective: 900px; border: 0; background: transparent; padding: 0; text-align: center; }
+.flip-in { display: block; height: 100%; position: relative; transition: transform .45s; transform-style: preserve-3d; }
+.flip[aria-pressed="true"] .flip-in { transform: rotateY(180deg); }
+.face { position: absolute; inset: 0; backface-visibility: hidden; border: 1px solid var(--line); border-radius: 10px; padding: 15px; background: #fafafa; display: flex; align-items: center; justify-content: center; overflow-y: auto; }
+.back { transform: rotateY(180deg); background: #eef9f4; color: #075e40; border-color: #c8eadb; }
+.practice { padding-left: 20px; }
+.practice li { margin: 7px 0; }
+.question { border-top: 1px solid #e2e8e4; padding: 20px 0 8px; margin-top: 12px; min-width: 0; }
+.options { display: grid; gap: 7px; margin: 10px 0; }
+.option { display: flex; gap: 10px; align-items: baseline; border: 1px solid #e2e8e4; background: #f0f4f2; padding: 9px 12px; border-radius: 8px; cursor: pointer; }
+.option input { flex-shrink: 0; accent-color: var(--green); }
+.option:has(input:checked) { border-color: #0ea5e9; background: #e7f6fd; }
+.question[data-result="correct"] .option:has(input:checked) { border-color: #0ea66b; background: #e7f8ef; }
+.question[data-result="wrong"] .option:has(input:checked) { border-color: #e23b3b; background: #fff0f0; }
+.answer { background: #f8fbfa; border-left: 3px solid #0ea5e9; padding: 10px; margin-top: 10px; }
+.check { border: 0; background: #0ea66b; color: white; padding: 9px 14px; border-radius: 7px; }
+footer { color: var(--muted); font-size: 12px; margin-top: 28px; }
+footer ul { padding-left: 20px; }
+dialog { width: min(1200px, 96vw); max-height: 94dvh; padding: 52px 16px 16px; border: 0; border-radius: 8px; background: white; }
+dialog::backdrop { background: #15191dd9; }
+dialog img { width: 100%; max-height: 78dvh; object-fit: contain; }
+dialog .icon-button { position: absolute; top: 8px; right: 10px; }
+@media (max-width: 600px) {
+  main { padding: 16px 12px 40px; }
+  h1 { font-size: 26px; }
+  .header { padding: 16px 4px 12px; }
+  .panel, .figure, .warn, .mnemonic { padding: 15px; }
+  .kp-body { padding-left: 16px; }
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .face { padding: 12px; }
+}
+</style></head><body><main><header class="header"><h1>Day 62 · 宏量营养素：碳水化合物</h1><p class="sub">把碳水当作可按训练量、恢复和个人耐受度调节的燃料，而不是简单贴好坏标签。</p><div class="meta"><span class="chip">糖原</span><span class="chip">GI与GL</span><span class="chip">训练供能</span></div></header><section class="panel green"><h2>一句话总结</h2><p class="takeaway">可消化碳水通常按每克约4千卡计算，是中高强度训练的重要燃料，也参与肌糖原、肝糖原和血糖调节。单糖、双糖、淀粉和膳食纤维的食物来源、消化速度与饱腹感不同；GI和GL只是帮助理解餐后反应的工具。碳水需要量应随训练量、恢复目标和个体耐受度调整，不能用固定比例或单一“低GI”标签代替整体饮食。</p></section><figure class="figure"><button data-zoom aria-label="放大详情图"><img class="" src="assets/阶段4营养恢复/day62-宏量营养素：碳水化合物.png" alt="碳水化合物与训练供能四主题中文总览"><span class="icon-button"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 15 6 6" /><path d="m15 9 6-6" /><path d="M21 16v5h-5" /><path d="M21 8V3h-5" /><path d="M3 16v5h5" /><path d="m3 21 6-6" /><path d="M3 8V3h5" /><path d="M9 9 3 3" /></svg></span></button><figcaption class="caption">碳水的种类、总量、分配和时机要结合训练时长、强度、目标、总饮食与个人耐受度，而非只看单一食物标签。</figcaption></figure><section class="panel"><h2>核心要点</h2><ul class="kp"><li><details><summary><span class="term">碳水的类型：不只是一张好坏清单</span>：单糖、双糖和多糖描述化学结构；全谷物、豆类、薯类、水果和乳制品还同时带来纤维、蛋白质或微量营养素。</summary><div class="kp-body"><section class="detail-block"><h4>可消化碳水与纤维</h4><p>葡萄糖等可消化碳水是直接能量来源，通常按每克约4千卡计算。膳食纤维不等同于“无用碳水”，它有助于肠道功能、饱腹感和饮食质量；但运动前临近训练时，大量高纤维食物可能让部分人胃肠不适。</p></section><section class="detail-block"><h4>食物组合更重要</h4><p>把碳水放在完整餐食中看：主食、豆类、蔬果、乳制品与蛋白质和脂肪的组合，会改变消化速度、饱腹感与实际可执行性。没有任何一种碳水食物能单独决定健康或训练表现。</p></section></div></details></li><li><details><summary><span class="term">糖原：训练燃料和恢复储备</span>：肌糖原主要支持工作肌肉的运动，肝糖原帮助维持血糖；高强度或长时训练会更依赖充足碳水供给。</summary><div class="kp-body"><section class="detail-block"><h4>训练需求会变化</h4><p>短时低强度活动、间歇冲刺、耐力训练和一天多次训练对碳水的需求不同。碳水不足可能影响高强度输出、主观用力感和恢复，但并不表示每一餐都要吃到最大量；低训练量日通常可相应调整。</p></section><section class="detail-block"><h4>恢复看总量也看间隔</h4><p>训练后补充含碳水的餐食有助于糖原恢复。若同日很快还有下一次高质量训练，分配与时机更值得重视；若下次训练间隔较长，全天总能量、碳水总量和完整饮食通常比追逐分钟级“窗口”更关键。</p></section></div></details></li><li><details><summary><span class="term">GI与GL：用于提问，不用于定罪</span>：GI比较等量可利用碳水的餐后血糖反应，GL还把一次实际份量纳入；两者受食物加工、搭配和个人反应影响。</summary><div class="kp-body"><section class="detail-block"><h4>先理解定义</h4><p>GI不能直接代表一份食物的真实负荷，因为实际吃的量不同；GL尝试同时考虑质量与数量。成熟度、烹调方式、混合餐、前一餐、运动和个体血糖反应都会影响结果，因此不能把GI当作唯一的选食标准。</p></section><section class="detail-block"><h4>时机决定实用性</h4><p>日常餐食可优先考虑纤维和整体营养；临近高强度或长时训练时，部分人会选择相对易消化、低纤维的碳水来减少胃肠负担。糖尿病、反复低血糖或胃肠疾病人群应和医疗或营养专业人员共同制定方案。</p></section></div></details></li><li><details><summary><span class="term">分配与时机：跟训练和耐受度走</span>：一般膳食建议提供的是范围，不是运动员处方；训练时长、强度、体型、目标、总能量和胃肠耐受共同决定实际安排。</summary><div class="kp-body"><section class="detail-block"><h4>先排训练日程</h4><p>先识别一周中长时、高强度、双练和低训练量的日子，再把碳水更多安排在需要输出和恢复的餐次。不要只根据体重管理焦虑大幅删碳；能量长期不足会影响恢复、情绪、训练适应和健康。</p></section><section class="detail-block"><h4>用记录校准</h4><p>记录训练前后的饥饿、胃肠感觉、精神状态、输出和恢复，比照搬别人克数更有用。一次只调整一项，例如训练前的食物类型或份量；持续疲劳、月经改变、反复暴食或体重焦虑应寻求医生、注册营养师或心理专业支持。</p></section></div></details></li></ul></section><section class="warn"><h2>常见误区</h2><p><strong class="misconception">误区：所有碳水都是坏的，减脂必须尽量不吃。</strong><br>辨析：碳水是重要燃料；总能量、训练需求、食物质量和个人目标比简单删掉某类食物更重要。</p><p><strong class="misconception">误区：低GI就一定更健康或更适合每一次训练。</strong><br>辨析：GI和GL受份量、搭配和个体反应影响；临近训练的消化需求也可能不同。</p><p><strong class="misconception">误区：只要训练后错过半小时，恢复就完全失败。</strong><br>辨析：紧密双练时分配更重要；多数情况下全天总量、总能量和完整饮食仍是恢复基础。</p><p><strong class="misconception">误区：运动量增加时也要用同一份主食量。</strong><br>辨析：碳水安排应随训练时长、强度、目标和个人耐受度上调或下调。</p></section><section class="mnemonic"><h2>记忆口诀</h2><p><strong>看训练、看总量、看搭配；GI和GL只帮你提问。</strong></p></section><section class="panel"><h2>翻转卡复习</h2><div class="cards"><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">可消化碳水常按多少能量计算？</span><span class="face back" aria-hidden="true">通常约4千卡每克。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">肌糖原和肝糖原的主要角色？</span><span class="face back" aria-hidden="true">肌糖原支持工作肌肉；肝糖原帮助维持血糖。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">GI比较什么？</span><span class="face back" aria-hidden="true">等量可利用碳水引起的餐后血糖反应。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">GL比GI多考虑什么？</span><span class="face back" aria-hidden="true">一次实际摄入的碳水份量。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">何时更重视训练后碳水分配？</span><span class="face back" aria-hidden="true">同日较快还有下一次高质量训练或恢复时间较短时。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">碳水安排应随什么调整？</span><span class="face back" aria-hidden="true">训练量、目标、总能量、食物搭配和个人胃肠耐受度。</span></span></button></div></section><section class="panel orange"><h2>实操关联</h2><ul class="practice"><li>标出一周里最长或强度最高的两次训练，在这些训练前后记录碳水食物、饥饿感、胃肠感受和输出表现。</li><li>比较两份等量主食的搭配：一份配蛋白质和蔬菜，一份作为临近训练的易消化餐，观察适用场景而非给食物贴好坏。</li><li>为一次训练后餐设计“碳水加蛋白质加液体”的完整组合，并根据下一次训练间隔决定是否优先安排。</li><li>若想调整碳水，只改一个变量，例如训练前的份量或纤维量，连续记录数次再评价，不做极端删减。</li></ul></section><section class="panel blue"><h2>练习题</h2><section class="question" data-answers="[1]" data-explanation="GI比较等量可利用碳水的反应，GL还纳入一次实际摄入量；两者均不是医疗诊断工具。"><h3>1. 单选：GI与GL的区别，哪项最准确？</h3><div class="options"><label class="option"><input type="radio" name="question-0" value="0"><span>A. GI考虑份量，GL不考虑</span></label><label class="option"><input type="radio" name="question-0" value="1"><span>B. GL在GI概念上还考虑一次实际摄入的份量</span></label><label class="option"><input type="radio" name="question-0" value="2"><span>C. 两者都能诊断糖尿病</span></label><label class="option"><input type="radio" name="question-0" value="3"><span>D. 两者等同于食物热量</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[0]" data-explanation="恢复间隔短或同日双练时，及时补给更有实际意义；其他情况下全天总量和整体饮食仍很关键。"><h3>2. 单选：什么情况下训练后碳水的时机更值得优先安排？</h3><div class="options"><label class="option"><input type="radio" name="question-1" value="0"><span>A. 下一次高质量训练很快就要开始</span></label><label class="option"><input type="radio" name="question-1" value="1"><span>B. 当天没有再训练且饮食总量充足</span></label><label class="option"><input type="radio" name="question-1" value="2"><span>C. 只要想吃甜食</span></label><label class="option"><input type="radio" name="question-1" value="3"><span>D. 任何人都必须卡在同一分钟</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[0,1,2,4]" data-explanation="GI可提供信息，但不能脱离份量、混合餐、训练与个体反应单独决定方案。"><h3>3. 多选：制定碳水安排时，哪些因素值得一起考虑？</h3><div class="options"><label class="option"><input type="checkbox" name="question-2" value="0"><span>A. 训练时长和强度</span></label><label class="option"><input type="checkbox" name="question-2" value="1"><span>B. 总能量与目标</span></label><label class="option"><input type="checkbox" name="question-2" value="2"><span>C. 食物搭配和胃肠耐受</span></label><label class="option"><input type="checkbox" name="question-2" value="3"><span>D. 食物单独的GI数字</span></label><label class="option"><input type="checkbox" name="question-2" value="4"><span>E. 下一次训练的间隔</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[2]" data-explanation="训练前的选择要兼顾燃料和胃肠耐受；调整食物类型、份量或时机比简单删除碳水更可持续。"><h3>4. 案例：小李下午有高强度间歇训练，午餐吃大量高纤维豆类后常腹胀。更合理的调整是？</h3><div class="options"><label class="option"><input type="radio" name="question-3" value="0"><span>A. 长期完全不吃碳水</span></label><label class="option"><input type="radio" name="question-3" value="1"><span>B. 保持相同餐食并加大训练量</span></label><label class="option"><input type="radio" name="question-3" value="2"><span>C. 把高纤维食物放到更远离训练的餐次，临近训练选择更易消化的碳水</span></label><label class="option"><input type="radio" name="question-3" value="3"><span>D. 只喝能量饮料代替正餐</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section></section><footer>Day 62/110 · 双证<ul><li>ACSM、Academy of Nutrition and Dietetics、Dietitians of Canada：Nutrition and Athletic Performance，运动营养总量与时机原则。</li><li>IOC：Consensus Statement on Sports Nutrition，训练负荷、恢复与个体化营养安排。</li><li>中国营养学会：《中国居民膳食指南（2022）》，全谷物、薯类、豆类、蔬果与平衡膳食建议。</li><li>本课为一般营养教育，不替代个体饮食处方；糖尿病、反复低血糖、胃肠疾病、能量可用性不足或进食困扰，请咨询医生或注册营养专业人员。</li></ul></footer></main><dialog aria-label="详情大图"><button class="icon-button" aria-label="关闭大图" title="关闭大图"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></button><img alt=""></dialog><script>document.querySelectorAll('.flip').forEach((button) => {
+  button.addEventListener('click', () => {
+    const pressed = button.getAttribute('aria-pressed') !== 'true';
+    button.setAttribute('aria-pressed', String(pressed));
+    button.querySelector('.front').setAttribute('aria-hidden', String(pressed));
+    button.querySelector('.back').setAttribute('aria-hidden', String(!pressed));
+  });
+});
+document.querySelectorAll('.question').forEach((question) => {
+  question.querySelector('.check').addEventListener('click', () => {
+    const selected = [...question.querySelectorAll('input:checked')].map((input) => Number(input.value)).sort();
+    const answer = question.querySelector('.answer');
+    answer.hidden = false;
+    if (!selected.length) { answer.textContent = '请先选择答案。'; delete question.dataset.result; return; }
+    const correct = JSON.stringify(selected) === JSON.stringify(JSON.parse(question.dataset.answers).sort());
+    question.dataset.result = correct ? 'correct' : 'wrong';
+    answer.textContent = `${correct ? '回答正确。' : '再想一想。'}${question.dataset.explanation}`;
+  });
+});
+const imageDialog = document.querySelector('dialog');
+document.querySelectorAll('[data-zoom]').forEach((button) => {
+  button.addEventListener('click', () => {
+    const original = button.querySelector('img');
+    const image = imageDialog.querySelector('img');
+    image.src = original.src;
+    image.alt = original.alt;
+    imageDialog.showModal();
+  });
+});
+imageDialog.querySelector('button').addEventListener('click', () => imageDialog.close());
+imageDialog.addEventListener('click', (event) => {
+  const rect = imageDialog.getBoundingClientRect();
+  if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) imageDialog.close();
+});
+</script></body></html>

@@ -1,0 +1,25 @@
+{
+  "day": 58,
+  "title": "平衡训练进阶",
+  "status": "awaiting-review",
+  "artifactStatus": "ready-local-draft",
+  "authorization": "用户于2026-09-30授权连续生成后续本地草稿；每张图片首次请求后最多5次经调整提示词重试，始终不部署。",
+  "imagePlan": "runs/day58/image-prompts.json",
+  "retryPolicy": "每张图片首次请求后，最多5次经调整提示词的重试；成功即停止。",
+  "generated": 9,
+  "planned": 9,
+  "batchPolicy": "runs/daily-preview/batch-20260930.json",
+  "sourceQualityReview": "runs/day58/visual-quality-review.json",
+  "verification": {
+    "templateTests": "17 passed",
+    "browser": "runs/day58/verification/report.json",
+    "imageProcessing": "runs/day58/image-processing.json",
+    "zip": "xhs/day58/day58-xhs.zip"
+  },
+  "localPreview": {
+    "course": "http://127.0.0.1:8420/html/day58-%E5%B9%B3%E8%A1%A1%E8%AE%AD%E7%BB%83%E8%BF%9B%E9%98%B6.html",
+    "xhs": "http://127.0.0.1:8420/xhs/day58/index.html",
+    "zip": "http://127.0.0.1:8420/xhs/day58/day58-xhs.zip"
+  },
+  "nextAction": "等待用户验收 Day58；根据批量制作授权，可继续制作 Day59及后续本地草稿，但不得部署。"
+}

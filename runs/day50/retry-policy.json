@@ -1,0 +1,13 @@
+{
+  "authorizedAt": "2026-09-30",
+  "authorization": "用户明确要求：每张图片可以重试五次；今天连续生成后续可完成课程，但不部署。",
+  "scope": {
+    "firstAttempt": 1,
+    "retriesPerAsset": 5,
+    "maxProviderRequestsPerAsset": 6,
+    "stopOnSuccess": true,
+    "retryRequiresAdjustedPrompt": true,
+    "doNotRetryAuthOrQuotaFailuresBlindly": true
+  },
+  "releaseBoundary": "仅制作本地草稿；不部署、不改首页、短链、课程排序、progress.json 或 .progress.json。用户点名某天部署时，才部署该天；课程排序按课程日期，不以本轮最后生成日替代。"
+}

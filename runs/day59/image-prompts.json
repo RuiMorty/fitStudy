@@ -1,0 +1,50 @@
+{
+  "commonPrompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.",
+  "assets": [
+    {
+      "file": "cover.png",
+      "role": "cover",
+      "prompt": "Wide 16:9 wordless course cover. Exactly one Despa calmly demonstrates a low box squat with arms forward, relaxed neck and both feet stable; exactly one Bojji performs a gentle standing scapular reach with ribs calm and feet grounded. Show two whole-body training tasks, not a diagnosis pose. Use only a plain low box as equipment. No wall, text, arrows, grids, bands or medical imagery."
+    },
+    {
+      "file": "visual-01-observe.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Bojji stands in a relaxed natural stance on the left while exactly one Despa performs a slow bodyweight box squat on the right; both remain comfortable and calm with fully visible feet. Explain that dynamic task observation is more useful than judging a static silhouette. No labels, arrows, grids, medical imagery or extra equipment except one plain low box."
+    },
+    {
+      "file": "visual-02-upper.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Despa performs a smooth standing scapular reach with both open hands forward at shoulder height, shoulders relaxed away from ears; exactly one Bojji performs a gentle open-hand wall-free push pattern with a stable trunk. Explain shoulder-neck-scapula coordination. No wall, chest-stretch pose, bands, arrows, anatomy labels or extra equipment."
+    },
+    {
+      "file": "visual-03-lower.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Bojji performs a short-range glute bridge with feet planted and a calm trunk; exactly one Despa demonstrates a light hands-free hip hinge with hips moving back, knees soft and a neutral comfortable spine. Explain pelvic-hip-trunk coordination. No exaggerated pelvic tilt, barbell, arrows, labels or extra equipment."
+    },
+    {
+      "file": "visual-04-integrate.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Despa performs a controlled light box squat while holding a small plain crate close to the body; exactly one Bojji practices a small standing open-hand press with a stable trunk beside him. Explain returning low-load control to complete tasks. No wall, bands, text, markers or extra equipment except the plain low box and crate."
+    },
+    {
+      "file": "overview-01-observe.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless overview-only illustration for task observation. Show exactly one complete full-body Bojji in one frozen shallow bodyweight squat, both feet grounded, calm trunk and relaxed neck. Bojji is the only person; no Despa, no sequence, no before-and-after and no duplicate figure. No text, arrows, tools, grids, medical symbols, detached limbs, scattered marks, floor or room."
+    },
+    {
+      "file": "overview-02-upper.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless overview-only illustration for shoulder and scapula coordination. Show exactly one complete full-body Despa standing in one still scapular reach, both open hands forward at shoulder height, long relaxed neck and both feet grounded. Despa is the only person; no Bojji, no sequence, no duplicate figure. No wall, text, arrows, bands, anatomy labels, detached limbs, scattered marks, floor or room."
+    },
+    {
+      "file": "overview-03-lower.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless overview-only illustration for hip and trunk control. Show exactly one complete full-body Bojji doing one still short-range glute bridge in a clear gentle side-three-quarter view: both knees bent, both feet visibly grounded, hips lifted only a little and trunk calm. Bojji is the only person; no Despa, no sequence and no duplicate figure. No text, arrows, exaggerated spinal position, equipment, detached limbs, scattered marks, floor or room."
+    },
+    {
+      "file": "overview-04-integrate.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless overview-only illustration for returning control to a complete movement. Show exactly one complete full-body Despa in one frozen low controlled box squat, both feet grounded, upright calm trunk and hands naturally forward. Use one plain low box only. Despa is the only person; no Bojji, no sequence and no duplicate figure. No text, arrows, bands, crate, detached limbs, scattered marks, floor or room."
+    }
+  ]
+}

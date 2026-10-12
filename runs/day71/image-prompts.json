@@ -1,0 +1,50 @@
+{
+  "commonPrompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nAdditional course-specific guardrails: 固定波吉与德斯帕、二维教学画法、深灰细轮廓和平涂；除两位角色外不出现任何人。 每张为真实透明PNG，未绘制区域alpha为0；不画背景房间、地板、阴影、边框、棋盘格、药品品牌或水印。 AI图内不出现文字、数字、WADA标识、药名、处方、检测设备、尿检样本、注射器、针头、药片、药瓶、箭头或禁止符号。 强调核对和安全暂停，避免把禁用物质画得炫酷、可模仿或具备教学用法；不表现注射、服药、规避检测或身体夸张。",
+  "assets": [
+    {
+      "file": "cover.png",
+      "role": "cover",
+      "prompt": "Wide 16:9 wordless single-scene course cover illustration. 横向16:9，德斯帕以腰部高度的温和开放暂停手势面对波吉，另一只手拿合上的无字文件夹；两人表情放松、波吉保持倾听姿势 Teach 正式核对与执业边界: 面对药物问题，教练应暂停猜测并连接专业核对. 无药物或检测道具，人物不表现恐惧、责备或对抗。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters."
+    },
+    {
+      "file": "visual-01-rules.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. 横向28:9，德斯帕将两张无字空白卡片并列放在小桌上，波吉做观察手势；没有标记、清单文字或图标 Teach 当前规则核对: 旧信息不能代替当前正式渠道. 卡片完全空白，不使用反兴奋剂符号、屏幕或药物。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters."
+    },
+    {
+      "file": "visual-02-risk.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. 横向28:9，德斯帕双手在身体前稳握一只轻哑铃，波吉站在旁以开放手势提示暂停；不表现具体症状 Teach 健康风险优先: 身体异常时暂停高强度训练和转介优先. 器械完整且远离脚部，姿态稳定，无地面、昏厥、针头或药物。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters."
+    },
+    {
+      "file": "visual-03-treatment.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. 横向28:9，德斯帕把合上的无字文件夹递给波吉，二人做平静确认手势；无第三人或医疗符号 Teach 治疗用药走正式路径: 个人健康信息应由临床与反兴奋剂正式渠道处理. 文件夹无文字、无处方、无药物图样。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters."
+    },
+    {
+      "file": "visual-04-scope.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. 横向28:9，德斯帕一手开放指向远处空白方向、一手做温和暂停手势，波吉倾听；无禁止图标 Teach 教练拒绝药物建议: 拒绝处方建议，同时保留支持和转介. 避免指向药物或人物，不表现责备。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters."
+    },
+    {
+      "file": "overview-01-rules.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. 4:3总览专用，德斯帕与波吉看两张空白卡片 Teach 当前规则: 核对而不是猜测. 不与知识页复用；卡片无字无标识。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters."
+    },
+    {
+      "file": "overview-02-risk.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. 4:3总览专用，德斯帕双手在身体前稳握一只轻哑铃，波吉做温和暂停手势 Teach 健康风险: 不适时先暂停. 不与知识页复用；不画地面、症状、药物或急救。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters."
+    },
+    {
+      "file": "overview-03-treatment.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. 4:3总览专用，德斯帕拿合上的空白文件夹，波吉做确认手势 Teach 治疗路径: 处方和规则要走正式专业渠道. 不与知识页复用；无医疗图示。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters."
+    },
+    {
+      "file": "overview-04-scope.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. 4:3总览专用，德斯帕做温和暂停手势，波吉倾听 Teach 教练边界: 拒绝药物建议，转向安全支持. 不与知识页复用；无禁止符号或指责姿势。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters."
+    }
+  ]
+}

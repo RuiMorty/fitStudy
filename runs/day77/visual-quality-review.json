@@ -1,0 +1,83 @@
+{
+  "reviewer": "local source visual, alpha, safety and semantic QA",
+  "requirements": [
+    "true-alpha transparent PNG without a rendered checkerboard, opaque canvas, room, floor, loose paper, border, sticker edge, shadow or halo",
+    "only wordless Bojji and Despa in calm 2D training-planning scenes; no extra characters, text, numbers, labels, arrows, medical symbols, logos or watermarks",
+    "all stable bench, low platform, sit-to-bench, controlled carrying, medicine-ball and dumbbell depictions are complete, structurally coherent and safe",
+    "each overview image is independently generated and compositionally distinct from its matching knowledge-page art",
+    "the shared image preparer removes only near-transparent edge noise, preserves opaque white clothing, and frames reviewed art with the required final six-percent margin"
+  ],
+  "technicalChecks": {
+    "checkedWith": [
+      "RGBA metadata and transparent-background inspection",
+      "individual visual semantic and equipment-safety review",
+      "shared image preparation, overview composition, final-card inspection and responsive browser QA"
+    ],
+    "result": "All nine selected source PNGs are non-empty RGBA files with transparent pixels. The shared preparer centered approved artwork without upscaling; all six rendered 1080x1440 XHS cards and responsive course screenshots were inspected separately in runs/day77/verification/."
+  },
+  "accepted": [
+    {
+      "file": "cover.png",
+      "attempt": 1,
+      "source": "runs/day77/image-requests/cover-eb86e17540/attempt-01/cover.png",
+      "review": "Bojji's controlled low-step preparation and Despa's open planning gesture communicate functional progression and risk discussion without a scale, stadium, medical prop or text."
+    },
+    {
+      "file": "visual-01-function.png",
+      "attempt": 1,
+      "source": "runs/day77/image-requests/visual-01-function-c219e03241/attempt-01/visual-01-function.png",
+      "review": "The stable bench sit and close-to-body carrying setup give a clear functional-training cue without body comparison, weighing or an unsafe lift."
+    },
+    {
+      "file": "visual-02-bone-joint.png",
+      "attempt": 2,
+      "source": "runs/day77/image-requests/visual-02-bone-joint-80f7c3b671/attempt-02/visual-02-bone-joint.png",
+      "review": "The revised scene uses a solid four-legged low wooden platform and a structurally complete bench; both characters have stable, non-extreme positions with no pain or fall cue."
+    },
+    {
+      "file": "visual-03-demand.png",
+      "attempt": 1,
+      "source": "runs/day77/image-requests/visual-03-demand-9a87a4f710/attempt-01/visual-03-demand.png",
+      "review": "A close carrying task, chest-held medicine ball and unmarked rigid planning board distinguish daily and sport-task needs without a competition, medal, label or arrow."
+    },
+    {
+      "file": "visual-04-reds.png",
+      "attempt": 1,
+      "source": "runs/day77/image-requests/visual-04-reds-98f333d71d/attempt-01/visual-04-reds.png",
+      "review": "The dumbbell is horizontally placed at the lower image edge without a floor or projection; Bojji's water cup and pause gesture support reduced training risk without depicting a diagnosis, body stereotype or medical symbol."
+    },
+    {
+      "file": "overview-01-function.png",
+      "attempt": 1,
+      "source": "runs/day77/image-requests/overview-01-function-66e797e837/attempt-01/overview-01-function.png",
+      "review": "The dedicated 4:3 sit-and-carry overview is compositionally distinct from the wide knowledge illustration and retains a stable bench plus wordless functional cue."
+    },
+    {
+      "file": "overview-02-bone-joint.png",
+      "attempt": 1,
+      "source": "runs/day77/image-requests/overview-02-bone-joint-ddaebecfca/attempt-01/overview-02-bone-joint.png",
+      "review": "The separate overview uses a stable low platform and complete bench support with no skeletal diagram, pain symbol, floor or fall image."
+    },
+    {
+      "file": "overview-03-demand.png",
+      "attempt": 1,
+      "source": "runs/day77/image-requests/overview-03-demand-611071c4c2/attempt-01/overview-03-demand.png",
+      "review": "The independent planning-board, carrying and medicine-ball scene visually expresses task comparison while staying wordless and free of stadium, medal or arrow cues."
+    },
+    {
+      "file": "overview-04-reds.png",
+      "attempt": 1,
+      "source": "runs/day77/image-requests/overview-04-reds-8fb7523ca8/attempt-01/overview-04-reds.png",
+      "review": "The overview-only pause scene keeps the dumbbell flat at the lower edge without a rendered ground, pairs it with a water cup and closed blank folder, and avoids diagnostic or gender stereotypes."
+    }
+  ],
+  "rejected": [
+    {
+      "file": "visual-02-bone-joint.png",
+      "attempt": 1,
+      "reason": "The requested stable low training step was rendered as a cardboard box, which is an unsafe and unclear support surface for the bone-and-joint risk lesson."
+    }
+  ],
+  "retriesUsed": 1,
+  "result": "Nine selected source assets passed local visual, alpha, semantic and equipment-safety QA. The rejected candidate and its adjusted replacement prompt remain preserved in image-request-log.json."
+}

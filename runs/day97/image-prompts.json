@@ -1,0 +1,50 @@
+{
+  "commonPrompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, a cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, a rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light internal form shading only; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, letters, digits, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, ground plane, floor, table, platform, room, paper background, loose paper sheets, border, sticker edge, cast shadow, or halo. Every prop must be held by a character and must not imply a supporting surface. A small unmarked rigid evidence card is allowed as a prop. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.",
+  "assets": [
+    {
+      "file": "cover.png",
+      "role": "cover",
+      "prompt": "Wide 16:9 wordless single-scene teaching illustration. Despa holds three blank colored training blocks in a gentle progression at chest height while Bojji holds the fourth, smallest block with both hands; leave visibly open air between the blocks to suggest recovery. No extra equipment beyond the described props. Exactly one Bojji and exactly one Despa appear, both with full bodies visible. Every prop is hand-held: do not draw a table, ground, platform, contact shadow, text, labels or symbols. Use one continuous teaching moment only, never duplicate figures, alternate poses, sequence frames or motion trails."
+    },
+    {
+      "file": "visual-01-goal-screen.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene teaching illustration. Despa holds one unmarked goal card and a compact 2-by-2 grid of blank colored blocks that only suggests a schedule, never a paper calendar; Bojji holds one small round clock disk with no hands, numbers or markings. Convey goal-setting and screening through one coherent pose and these simple blank props. Exactly one Bojji and exactly one Despa appear, both with full bodies visible. Every prop is hand-held: do not draw a table, ground, platform, contact shadow, text, labels or symbols. Use one continuous teaching moment only, never duplicate figures, alternate poses, sequence frames or motion trails."
+    },
+    {
+      "file": "visual-02-fitt-vp.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene teaching illustration. Despa holds a vertical stack of four blank colored blocks of different sizes at chest height and points to just one block with his free hand; Bojji holds one small light training band. Convey linked training variables through one coherent pose and these simple blank props. Exactly one Bojji and exactly one Despa appear, both with full bodies visible. Every prop is hand-held: do not draw a table, ground, platform, contact shadow, text, labels or symbols. Use one continuous teaching moment only, never duplicate figures, alternate poses, sequence frames or motion trails."
+    },
+    {
+      "file": "visual-03-periodization.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene teaching illustration. Despa holds two blank colored blocks at different chest heights while Bojji holds a third at an intervening height, forming a gentle up-and-down rhythm with clear air gaps. Convey justified periodization choices through one coherent pose and these simple blank props. Exactly one Bojji and exactly one Despa appear, both with full bodies visible. Every prop is hand-held: do not draw a table, ground, platform, contact shadow, text, labels or symbols. Use one continuous teaching moment only, never duplicate figures, alternate poses, sequence frames or motion trails."
+    },
+    {
+      "file": "visual-04-interrupt-adjust.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene teaching illustration. Despa holds one small blank colored block at chest height while Bojji holds one larger blank colored block at chest height, separated by clear air, showing a cautious scaled return after an interruption. Convey adjustment after interruption through one coherent pose and these simple blank props. Exactly one Bojji and exactly one Despa appear, both with full bodies visible. Every prop is hand-held: do not draw a table, ground, platform, contact shadow, text, labels or symbols. Use one continuous teaching moment only, never duplicate figures, alternate poses, sequence frames or motion trails."
+    },
+    {
+      "file": "overview-01-goal-screen.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene teaching illustration. Bojji stands on the left holding one unmarked goal card and one small round clock disk with no hands, numbers or markings; Despa stands on the right holding a compact 2-by-2 grid of blank colored blocks that only suggests a schedule, never a paper calendar. This is overview-only art and must use this reversed role-and-prop arrangement to be visually distinct from the knowledge-page composition. Exactly one Bojji and exactly one Despa appear, both with full bodies visible. Every prop is hand-held: do not draw a table, ground, platform, contact shadow, text, labels or symbols. Use one continuous teaching moment only, never duplicate figures, alternate poses, sequence frames or motion trails."
+    },
+    {
+      "file": "overview-02-fitt-vp.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene teaching illustration. Bojji supports four blank colored blocks of different sizes horizontally in his arms while Despa holds one small light training band and gestures toward the middle block. This is overview-only art and must use this different horizontal arrangement to be visually distinct from the knowledge-page composition. Exactly one Bojji and exactly one Despa appear, both with full bodies visible. Every prop is hand-held: do not draw a table, ground, platform, contact shadow, text, labels or symbols. Use one continuous teaching moment only, never duplicate figures, alternate poses, sequence frames or motion trails."
+    },
+    {
+      "file": "overview-03-periodization.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene teaching illustration. Bojji holds two blank colored blocks at unequal heights while Despa holds a third block lower to one side, creating a calm staggered pattern with clear air gaps. This is overview-only art and must use this different character-and-prop arrangement to be visually distinct from the knowledge-page composition. Exactly one Bojji and exactly one Despa appear, both with full bodies visible. Every prop is hand-held: do not draw a table, ground, platform, contact shadow, text, labels or symbols. Use one continuous teaching moment only, never duplicate figures, alternate poses, sequence frames or motion trails."
+    },
+    {
+      "file": "overview-04-interrupt-adjust.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene teaching illustration. Bojji holds one small blank colored block at chest height while Despa holds one larger blank colored block at chest height, separated by clear air, showing a cautious scaled return after an interruption. This is overview-only art and must reverse the character-to-block sizes to be visually distinct from the knowledge-page composition. Exactly one Bojji and exactly one Despa appear, both with full bodies visible. Every prop is hand-held: do not draw a table, ground, platform, contact shadow, text, labels or symbols. Use one continuous teaching moment only, never duplicate figures, alternate poses, sequence frames or motion trails."
+    }
+  ]
+}

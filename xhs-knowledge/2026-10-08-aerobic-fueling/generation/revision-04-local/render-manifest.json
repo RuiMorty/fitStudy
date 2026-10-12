@@ -1,0 +1,81 @@
+{
+  "status": "awaiting-user-review",
+  "revision": 4,
+  "render": "Pillow text and diagrams; Lingzhi RGBA paintings; no SVG",
+  "title_font": "/System/Library/Fonts/Supplemental/Songti.ttc",
+  "body_font": "/System/Library/Fonts/STHeiti Medium.ttc",
+  "rick_source": "xhs-wrong-notebook/2026-09-22-joint-actions/00-rick-muscular-cartoon-model-v4.png",
+  "artwork_provider": "lingzhi-image / gpt-image-2.5-sunburst",
+  "artwork_prompt_file": "generation/lingzhi-revision-03/prompts.json",
+  "dimensions": [
+    1536,
+    2048
+  ],
+  "pillow": "12.3.0",
+  "content_sha256": "b6de3113f9f4862fbe4bddcb0f8a433ab85316ccb8a1bad9b00494f65329d9e6",
+  "images": [
+    {
+      "path": "images/01-cover.png",
+      "bytes": 265810,
+      "sha256": "f37dbea3775e38795157b14cf3eab2ee18c4e37d99413044af513134e5a7f664"
+    },
+    {
+      "path": "images/02-timeline.png",
+      "bytes": 285658,
+      "sha256": "340d6bae58d3688eb31cc51faf8839f8be4c8c5c0093ac98f3bb0b5192c1ad3e"
+    },
+    {
+      "path": "images/03-muscle-glycogen.png",
+      "bytes": 673550,
+      "sha256": "c8448529fba771bf7524b15f6d98bd173ec22b9cc83cc1effd2afe257645dc71"
+    },
+    {
+      "path": "images/04-liver-glycogen.png",
+      "bytes": 647532,
+      "sha256": "15cd571801c153b19d935d79447d4860dc769619067259ee6a8b68450bd5a046"
+    },
+    {
+      "path": "images/05-fat-oxidation.png",
+      "bytes": 667705,
+      "sha256": "ac54bcbc1a1da1a34f5dc8d78420f4809d1df897085da29776ad6c662ec9b5ba"
+    },
+    {
+      "path": "images/06-gluconeogenesis.png",
+      "bytes": 598456,
+      "sha256": "c459b31658ae0e5daca918f4a5263c2baacfb9b980dcd1dde01c4276642797f1"
+    },
+    {
+      "path": "images/07-amounts.png",
+      "bytes": 265048,
+      "sha256": "998af1aa85d5a9e3e810f37314fb3f6b9d1e88e85394394036f3803ce520f508"
+    }
+  ],
+  "artwork": [
+    {
+      "path": "assets/rick-standing-cutout.png",
+      "bytes": 529119,
+      "sha256": "10a7679b418208c9a984c7af1fca565226304dc7f84945252ae49dbaa419c7b0"
+    },
+    {
+      "path": "assets/muscle-glycogen.png",
+      "bytes": 2510953,
+      "sha256": "c37d6c198c685b873e6fdb42dad2dacc5fa22a578ebcdfa1525966345a93bb14"
+    },
+    {
+      "path": "assets/liver-glycogen.png",
+      "bytes": 2555194,
+      "sha256": "093ba52eed4f1954ff2e0f5b41e9087a6520b3798d4882ee7f0cdd549d2d8491"
+    },
+    {
+      "path": "assets/fat-oxidation.png",
+      "bytes": 2510098,
+      "sha256": "97f7696e2e0adde9bd4f93994cde8a29783bdfd876eec17450ef034c0771f78a"
+    },
+    {
+      "path": "assets/gluconeogenesis.png",
+      "bytes": 2447395,
+      "sha256": "c1f7054bed68a8da70e7b1a2c1d6581f99a300f9390baaefcbf22732fcf61533"
+    }
+  ],
+  "preview": "images/preview-contact-sheet.jpg"
+}

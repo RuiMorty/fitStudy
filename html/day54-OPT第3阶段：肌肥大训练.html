@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Day 54 · OPT第3阶段：肌肥大训练</title><link rel="icon" type="image/svg+xml" href="assets/fitness-study-logo-open-circle.svg?v=a6d8e5caaa61"><style>:root { color-scheme: light; --ink: #111113; --muted: #71717a; --line: #e4e4e7; --accent: #ff5a1f; --green: #0ea66b; --blue: #2563eb; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; font-synthesis: none; letter-spacing: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); overflow-wrap: anywhere; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+img { display: block; max-width: 100%; }
+button:focus-visible, a:focus-visible, summary:focus-visible, input:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
+svg.icon { width: 20px; height: 20px; }
+.icon-button { display: inline-grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 1px solid var(--line); border-radius: 6px; background: white; }
+[hidden] { display: none !important; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
+
+body { background: #f6f8f7; font-size: 14px; line-height: 1.65; }
+main { max-width: 980px; margin: auto; padding: 24px 18px 60px; }
+.header { padding: 22px 4px 14px; }
+h1 { margin: 10px 0 8px; font-size: 36px; line-height: 1.2; }
+h1::before { content: ""; display: block; width: 34px; height: 4px; background: var(--accent); margin-bottom: 10px; }
+h2 { font-size: 17px; margin: 0 0 14px; }
+h3 { font-size: 16px; margin: 0 0 8px; }
+.sub { color: var(--muted); margin: 5px 0 18px; }
+.meta { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { display: inline-block; border: 1px solid var(--line); border-radius: 20px; background: white; color: var(--muted); padding: 3px 10px; font-size: 12px; font-weight: 600; }
+.chip:nth-child(1) { background: #e2f7eb; color: #15803d; border-color: transparent; }
+.chip:nth-child(2) { background: #e7f0fe; color: #2563eb; border-color: transparent; }
+.chip:nth-child(3) { background: #fff2e5; color: #9a4c05; border-color: transparent; }
+.panel, .figure, .warn, .mnemonic { background: white; border: 1px solid #e2e8e4; border-radius: 14px; box-shadow: 0 2px 12px rgba(20,40,30,.06); padding: 20px; margin: 16px 0; }
+.green { border-left: 5px solid var(--green); }
+.orange { border-left: 5px solid #ea7a17; }
+.blue { border-left: 5px solid #0ea5e9; }
+.takeaway { margin: 0; }
+.figure { text-align: center; }
+.figure button { display: block; position: relative; width: 100%; border: 0; padding: 0; background: white; cursor: zoom-in; }
+.figure img { max-height: 760px; width: 100%; object-fit: contain; }
+.figure .icon-button { position: absolute; bottom: 8px; right: 8px; background: #ffffffed; }
+.caption { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
+.kp { list-style: none; padding: 0; margin: 0; }
+.kp > li { border-bottom: 1px dashed #e2e8e4; }
+.kp > li:last-child { border-bottom: 0; }
+.kp summary { cursor: pointer; padding: 13px 8px; font-weight: 650; }
+.kp summary::marker { color: var(--green); }
+.term { color: #0a7d52; background: #e2f7eb; border-radius: 6px; padding: 1px 5px; }
+.kp-body { padding: 2px 14px 16px 24px; }
+.detail-block { margin: 12px 0; }
+.detail-block h4 { font-size: 13px; color: #08744d; margin: 0 0 4px; }
+.detail-block p { margin: 0; white-space: pre-line; }
+.warn { border-left: 5px solid #e23b3b; background: #fffafa; }
+.warn p { margin: 8px 0; }
+.misconception { color: #a82b32; }
+.mnemonic { border-left: 4px solid var(--accent); box-shadow: none; }
+.mnemonic strong { color: #df4716; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+.flip { height: 168px; perspective: 900px; border: 0; background: transparent; padding: 0; text-align: center; }
+.flip-in { display: block; height: 100%; position: relative; transition: transform .45s; transform-style: preserve-3d; }
+.flip[aria-pressed="true"] .flip-in { transform: rotateY(180deg); }
+.face { position: absolute; inset: 0; backface-visibility: hidden; border: 1px solid var(--line); border-radius: 10px; padding: 15px; background: #fafafa; display: flex; align-items: center; justify-content: center; overflow-y: auto; }
+.back { transform: rotateY(180deg); background: #eef9f4; color: #075e40; border-color: #c8eadb; }
+.practice { padding-left: 20px; }
+.practice li { margin: 7px 0; }
+.question { border-top: 1px solid #e2e8e4; padding: 20px 0 8px; margin-top: 12px; min-width: 0; }
+.options { display: grid; gap: 7px; margin: 10px 0; }
+.option { display: flex; gap: 10px; align-items: baseline; border: 1px solid #e2e8e4; background: #f0f4f2; padding: 9px 12px; border-radius: 8px; cursor: pointer; }
+.option input { flex-shrink: 0; accent-color: var(--green); }
+.option:has(input:checked) { border-color: #0ea5e9; background: #e7f6fd; }
+.question[data-result="correct"] .option:has(input:checked) { border-color: #0ea66b; background: #e7f8ef; }
+.question[data-result="wrong"] .option:has(input:checked) { border-color: #e23b3b; background: #fff0f0; }
+.answer { background: #f8fbfa; border-left: 3px solid #0ea5e9; padding: 10px; margin-top: 10px; }
+.check { border: 0; background: #0ea66b; color: white; padding: 9px 14px; border-radius: 7px; }
+footer { color: var(--muted); font-size: 12px; margin-top: 28px; }
+footer ul { padding-left: 20px; }
+dialog { width: min(1200px, 96vw); max-height: 94dvh; padding: 52px 16px 16px; border: 0; border-radius: 8px; background: white; }
+dialog::backdrop { background: #15191dd9; }
+dialog img { width: 100%; max-height: 78dvh; object-fit: contain; }
+dialog .icon-button { position: absolute; top: 8px; right: 10px; }
+@media (max-width: 600px) {
+  main { padding: 16px 12px 40px; }
+  h1 { font-size: 26px; }
+  .header { padding: 16px 4px 12px; }
+  .panel, .figure, .warn, .mnemonic { padding: 15px; }
+  .kp-body { padding-left: 16px; }
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .face { padding: 12px; }
+}
+</style></head><body><main><header class="header"><h1>Day 54 · OPT第3阶段：肌肥大训练</h1><p class="sub">用足够的有效重复、可控总量与恢复，创造可持续的增肌刺激。</p><div class="meta"><span class="chip">OPT第3阶段</span><span class="chip">肌肥大</span><span class="chip">有效重复</span></div></header><section class="panel green"><h2>一句话总结</h2><p class="takeaway">OPT第3阶段以肌肥大为目标，常见框架为3—5组、6—12次、约75%—85%1RM、节奏2—0—2和0—60秒休息。数字是起点，不是保证增长的魔法：动作范围、稳定轨迹、逐步进阶、可恢复的总量和营养睡眠共同决定结果。接近力竭可以帮助累积有效重复，却不要求每组都做到技术崩溃；用记录来决定下一次加重量、次数或组数。</p></section><figure class="figure"><button data-zoom aria-label="放大详情图"><img class="" src="assets/阶段3 OPT训练模型/day54-OPT第3阶段：肌肥大训练.png" alt="OPT第3阶段肌肥大训练四主题中文总览"><span class="icon-button"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 15 6 6" /><path d="m15 9 6-6" /><path d="M21 16v5h-5" /><path d="M21 8V3h-5" /><path d="M3 16v5h5" /><path d="m3 21 6-6" /><path d="M3 8V3h5" /><path d="M9 9 3 3" /></svg></span></button><figcaption class="caption">肌肥大训练以可重复的张力、足够总量和恢复为基础；重量、次数与接近力竭程度都服务于动作质量。</figcaption></figure><section class="panel"><h2>核心要点</h2><ul class="kp"><li><details><summary><span class="term">肌肥大：张力与总量要能重复</span>：肌肥大需要足够的机械张力和训练量，但前提是动作轨迹、范围与恢复让刺激能长期积累。</summary><div class="kp-body"><section class="detail-block"><h4>有效不是乱堆</h4><p>每一组应在目标肌群可用、姿势可控的范围内完成。只追求泵感、酸痛或复杂动作，可能让关节和代偿承担过多负荷；选择能稳定加总量的动作更可持续。</p></section><section class="detail-block"><h4>总量渐进</h4><p>组数、次数、阻力和动作范围都能增加训练量，但一次只改一个变量。连续数周完成度稳定、恢复良好时再小幅加码；持续下降、疼痛或睡眠变差时应回退。</p></section></div></details></li><li><details><summary><span class="term">变量：6—12次只是常用区间</span>：常见的3—5组、6—12次、75%—85%1RM、2—0—2和短休息提供框架，实际负荷必须允许完整可控重复。</summary><div class="kp-body"><section class="detail-block"><h4>节奏服务张力</h4><p>2—0—2可理解为受控离心与向心，不是刻意憋气或甩动。负荷使范围缩短、关节轨迹改变或无法稳定呼吸时，当前重量已不适合该组目的。</p></section><section class="detail-block"><h4>休息影响下一组</h4><p>0—60秒常用于维持代谢压力，但不是必须赶时间。下一组若还没能稳定握住器械、保持姿势或完成计划范围，适当延长恢复比硬顶更符合长期总量。</p></section></div></details></li><li><details><summary><span class="term">接近力竭：保留技术边界</span>：接近力竭可提高有效重复的比例，却不等于每组都练到动作失败；复杂动作尤其要保留安全余地。</summary><div class="kp-body"><section class="detail-block"><h4>先定义技术失败</h4><p>当目标肌群不再主导、动作范围明显缩短、姿势代偿或需要借力时，已接近技术失败。可以停止本组、降低负荷或选择更稳定的版本，而不是把错误轨迹重复更多次。</p></section><section class="detail-block"><h4>动作决定余地</h4><p>器械、哑铃和稳定支撑动作通常更容易安全地接近力竭；高技术自由重量、疼痛敏感动作或疲劳状态应保留更多重复余量。RPE或RIR是交流工具，不是必须猜到精确数字。</p></section></div></details></li><li><details><summary><span class="term">编排与恢复：记录让进阶有证据</span>：用动作、组数、次数、阻力、RPE和恢复反应追踪训练；营养、睡眠与生活压力决定能否把刺激变成适应。</summary><div class="kp-body"><section class="detail-block"><h4>双重进阶</h4><p>先在既定负荷下把次数逐步做到目标上限且技术稳定，再小幅提高阻力并回到较低次数。这样能同时保护动作质量和长期进步，不必每次训练都加重量。</p></section><section class="detail-block"><h4>恢复是计划的一部分</h4><p>蛋白质、总能量、睡眠、休息日与生活压力影响恢复。持续酸痛、表现下降或关节不适时，先检查总量、动作和恢复；不把“更累”当成唯一进步证据。</p></section></div></details></li></ul></section><section class="warn"><h2>常见误区</h2><p><strong class="misconception">误区：6—12次是唯一能增肌的次数范围。</strong><br>辨析：6—12次是常用框架；关键是可控张力、足够有效总量和可恢复进阶。</p><p><strong class="misconception">误区：每一组都必须练到动作崩溃才会长肌肉。</strong><br>辨析：接近力竭可有价值，但技术失败、动作类型和恢复决定应保留多少余量。</p><p><strong class="misconception">误区：休息越短，肌肥大一定越好。</strong><br>辨析：短休息会影响下一组质量；完成不了计划范围或姿势失控时，应调整恢复。</p><p><strong class="misconception">误区：酸痛越强说明训练越有效。</strong><br>辨析：酸痛不是增长的可靠单一指标；长期记录完成度、负荷、技术和恢复更有用。</p></section><section class="mnemonic"><h2>记忆口诀</h2><p><strong>张力要稳，总量渐进；接近力竭，技术先行；先加次数，再加一点重量。</strong></p></section><section class="panel"><h2>翻转卡复习</h2><div class="cards"><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">OPT第3阶段的主要目标？</span><span class="face back" aria-hidden="true">在可恢复的总量中累积机械张力，促进肌肥大。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">常见肌肥大次数框架？</span><span class="face back" aria-hidden="true">常见为6—12次；是否合适取决于完整可控重复。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">什么是技术失败？</span><span class="face back" aria-hidden="true">目标肌群不再主导、范围明显缩短或姿势代偿，继续会重复错误轨迹。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">双重进阶怎么做？</span><span class="face back" aria-hidden="true">先在同一负荷下把次数做到上限且技术稳定，再小幅加重量。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">短休息何时需要调整？</span><span class="face back" aria-hidden="true">下一组无法稳定握住器械、保持姿势或达到计划范围时。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">恢复为何影响增肌？</span><span class="face back" aria-hidden="true">营养、睡眠和压力决定训练刺激能否恢复并适应。</span></span></button></div></section><section class="panel orange"><h2>实操关联</h2><ul class="practice"><li>为一个稳定的推、拉或深蹲动作设定3组可控次数范围，记录每组最后两次的技术。</li><li>同一负荷下先把次数逐步做到目标上限，再在下一次只小幅增加阻力。</li><li>选择一个器械或稳定支撑动作练习接近技术失败；轨迹或呼吸失控就停止。</li><li>连续两周记录睡眠、关节反应和完成度；恢复变差时先减少一个训练变量。</li></ul></section><section class="panel blue"><h2>练习题</h2><section class="question" data-answers="[1]" data-explanation="双重进阶以可重复技术为前提，更容易长期增加有效训练量。"><h3>1. 单选：哪项最符合肌肥大训练的长期进阶？</h3><div class="options"><label class="option"><input type="radio" name="question-0" value="0"><span>A. 每次都大幅加重量</span></label><label class="option"><input type="radio" name="question-0" value="1"><span>B. 技术稳定时先增加次数，再小幅加阻力</span></label><label class="option"><input type="radio" name="question-0" value="2"><span>C. 只看训练后酸痛</span></label><label class="option"><input type="radio" name="question-0" value="3"><span>D. 每组都练到动作崩溃</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[1]" data-explanation="这接近技术失败；继续会增加错误重复而非有效张力。"><h3>2. 单选：何时应停止一组而非继续硬顶？</h3><div class="options"><label class="option"><input type="radio" name="question-1" value="0"><span>A. 目标肌群仍能控制动作时</span></label><label class="option"><input type="radio" name="question-1" value="1"><span>B. 出现明显代偿、范围缩短或借力时</span></label><label class="option"><input type="radio" name="question-1" value="2"><span>C. 刚开始感觉疲劳时</span></label><label class="option"><input type="radio" name="question-1" value="3"><span>D. 教练不在场时</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[0,1,2,4]" data-explanation="增长来自可持续刺激与恢复；代偿不是应追求的训练信号。"><h3>3. 多选：哪些因素共同支持肌肥大训练？</h3><div class="options"><label class="option"><input type="checkbox" name="question-2" value="0"><span>A. 可控动作范围</span></label><label class="option"><input type="checkbox" name="question-2" value="1"><span>B. 逐步增加的可恢复总量</span></label><label class="option"><input type="checkbox" name="question-2" value="2"><span>C. 营养与睡眠</span></label><label class="option"><input type="checkbox" name="question-2" value="3"><span>D. 持续技术代偿</span></label><label class="option"><input type="checkbox" name="question-2" value="4"><span>E. 记录完成度和恢复</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[1]" data-explanation="下一组质量是处方是否匹配的证据；先回到能稳定完成的版本。"><h3>4. 案例：小王第二组一开始就无法保持卧推轨迹，但仍想按原计划短休息完成。更合适的是？</h3><div class="options"><label class="option"><input type="radio" name="question-3" value="0"><span>A. 继续压缩休息</span></label><label class="option"><input type="radio" name="question-3" value="1"><span>B. 调整负荷、次数或休息，让下一组回到可控轨迹</span></label><label class="option"><input type="radio" name="question-3" value="2"><span>C. 增加重量刺激更多</span></label><label class="option"><input type="radio" name="question-3" value="3"><span>D. 只记录总组数</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section></section><footer>Day 54/77 · NASM<ul><li>NASM：Optimum Performance Training Model，Phase 3 Hypertrophy 的变量与进阶框架。</li><li>ACSM：ACSM&#39;s Guidelines for Exercise Testing and Prescription，第11版，阻力训练总量与进阶原则。</li><li>Schoenfeld BJ. The mechanisms of muscle hypertrophy and their application to resistance training，肌肥大训练机制综述。</li><li>本课为一般健身教育；疼痛、眩晕、异常气促、近期伤病或疾病恢复期，请停止训练并咨询医疗或运动专业人员。</li></ul></footer></main><dialog aria-label="详情大图"><button class="icon-button" aria-label="关闭大图" title="关闭大图"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></button><img alt=""></dialog><script>document.querySelectorAll('.flip').forEach((button) => {
+  button.addEventListener('click', () => {
+    const pressed = button.getAttribute('aria-pressed') !== 'true';
+    button.setAttribute('aria-pressed', String(pressed));
+    button.querySelector('.front').setAttribute('aria-hidden', String(pressed));
+    button.querySelector('.back').setAttribute('aria-hidden', String(!pressed));
+  });
+});
+document.querySelectorAll('.question').forEach((question) => {
+  question.querySelector('.check').addEventListener('click', () => {
+    const selected = [...question.querySelectorAll('input:checked')].map((input) => Number(input.value)).sort();
+    const answer = question.querySelector('.answer');
+    answer.hidden = false;
+    if (!selected.length) { answer.textContent = '请先选择答案。'; delete question.dataset.result; return; }
+    const correct = JSON.stringify(selected) === JSON.stringify(JSON.parse(question.dataset.answers).sort());
+    question.dataset.result = correct ? 'correct' : 'wrong';
+    answer.textContent = `${correct ? '回答正确。' : '再想一想。'}${question.dataset.explanation}`;
+  });
+});
+const imageDialog = document.querySelector('dialog');
+document.querySelectorAll('[data-zoom]').forEach((button) => {
+  button.addEventListener('click', () => {
+    const original = button.querySelector('img');
+    const image = imageDialog.querySelector('img');
+    image.src = original.src;
+    image.alt = original.alt;
+    imageDialog.showModal();
+  });
+});
+imageDialog.querySelector('button').addEventListener('click', () => imageDialog.close());
+imageDialog.addEventListener('click', (event) => {
+  const rect = imageDialog.getBoundingClientRect();
+  if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) imageDialog.close();
+});
+</script></body></html>

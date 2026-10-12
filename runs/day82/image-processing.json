@@ -1,0 +1,435 @@
+{
+  "processedAt": "2026-10-01T00:48:17.468955+00:00",
+  "method": "trim near-transparent noise; reviewed crop; uniform scale; transparent margin",
+  "assets": [
+    {
+      "source": "runs/day82/source/cover.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "sourceSha256": "a7df678b7c4638f8128c12c542ad519a8621e9e9296fd5d443590674f565f70e",
+      "reviewedCrop": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "visibleCrop": [
+        249,
+        15,
+        1539,
+        925
+      ],
+      "output": "runs/day82/assets/cover.png",
+      "size": [
+        1600,
+        900
+      ],
+      "subjectSize": [
+        1123,
+        792
+      ],
+      "offset": [
+        238,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "无字封面"
+    },
+    {
+      "source": "runs/day82/source/visual-01.png",
+      "sourceSize": [
+        2211,
+        711
+      ],
+      "sourceSha256": "e959aa45e29cf9ea307a3378fedff6a442779b62309c46c5efd0e761e39bdcfc",
+      "reviewedCrop": [
+        0,
+        0,
+        2211,
+        711
+      ],
+      "visibleCrop": [
+        643,
+        13,
+        1637,
+        696
+      ],
+      "output": "runs/day82/assets/visual-01.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        994,
+        683
+      ],
+      "offset": [
+        903,
+        108
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "目标—能力—阶段—复查点知识页配图"
+    },
+    {
+      "source": "runs/day82/source/visual-02.png",
+      "sourceSize": [
+        2007,
+        783
+      ],
+      "sourceSha256": "756e3880478fecefc264e45abc537018f5d22029ccdfeb785cc432cc5333b1ae",
+      "reviewedCrop": [
+        0,
+        0,
+        2007,
+        783
+      ],
+      "visibleCrop": [
+        505,
+        6,
+        1556,
+        777
+      ],
+      "output": "runs/day82/assets/visual-02.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1051,
+        771
+      ],
+      "offset": [
+        874,
+        64
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "体重、成分与腰围不同知识页配图"
+    },
+    {
+      "source": "runs/day82/source/visual-03.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "sourceSha256": "6c84156bcda0dba6dbac5e74f95bdfde0e15b52abceb01ea5e03015c6d208382",
+      "reviewedCrop": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "visibleCrop": [
+        356,
+        10,
+        1325,
+        909
+      ],
+      "output": "runs/day82/assets/visual-03.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        854,
+        792
+      ],
+      "offset": [
+        973,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "方法各有误差与边界知识页配图"
+    },
+    {
+      "source": "runs/day82/source/visual-04.png",
+      "sourceSize": [
+        1881,
+        836
+      ],
+      "sourceSha256": "eefb6a8d58f9ea0475a1e0907dc3140a8e91667db55556e2ad0e71cf84dac86e",
+      "reviewedCrop": [
+        0,
+        0,
+        1881,
+        836
+      ],
+      "visibleCrop": [
+        340,
+        7,
+        1609,
+        798
+      ],
+      "output": "runs/day82/assets/visual-04.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1269,
+        791
+      ],
+      "offset": [
+        765,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "心肺现场测试重在追踪知识页配图"
+    },
+    {
+      "source": "runs/day82/source/visual-05.png",
+      "sourceSize": [
+        1916,
+        821
+      ],
+      "sourceSha256": "1a84cbfcee198db92a3bbc5d796a52909239c2012f42907e3ce15cfb2530f9dc",
+      "reviewedCrop": [
+        0,
+        0,
+        1916,
+        821
+      ],
+      "visibleCrop": [
+        356,
+        0,
+        1576,
+        820
+      ],
+      "output": "runs/day82/assets/visual-05.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1178,
+        792
+      ],
+      "offset": [
+        811,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "记录、同意与转介知识页配图"
+    },
+    {
+      "source": "runs/day82/source/overview-01.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "21d26bd44f2f6bcd63ecea21f4d919f5a949819ea7aa6f4996b2942ab9ffb3a3",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        127,
+        13,
+        1321,
+        1072
+      ],
+      "output": "runs/day82/assets/overview-01.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1191,
+        1056
+      ],
+      "offset": [
+        204,
+        72
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "目标—能力—阶段—复查点总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day82/source/overview-02.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "586376faa4711dff5fa4610340b5216aeeb9bedd2b2de514921514b805eb0e6d",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        203,
+        16,
+        1252,
+        1073
+      ],
+      "output": "runs/day82/assets/overview-02.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1048,
+        1056
+      ],
+      "offset": [
+        276,
+        72
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "体重、成分与腰围不同总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day82/source/overview-03.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "18599631003240064cd8305ffc5c828949338a1dd6aca65b838ae3fa3db36958",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        126,
+        15,
+        1358,
+        1054
+      ],
+      "output": "runs/day82/assets/overview-03.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1232,
+        1039
+      ],
+      "offset": [
+        184,
+        80
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "方法各有误差与边界总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day82/source/overview-04.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "879b9f341d2073de1d6ab55755f89ae11d961024b5f5a99ceaa40c5cfcc1fd19",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        122,
+        17,
+        1396,
+        1024
+      ],
+      "output": "runs/day82/assets/overview-04.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1274,
+        1007
+      ],
+      "offset": [
+        163,
+        96
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "心肺现场测试重在追踪总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day82/source/overview-05.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "8d43e52ee93240bd07aa4d332ceb2ad6c9f3b9b15e692cea79530d4e45d4aea7",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        68,
+        15,
+        1432,
+        1032
+      ],
+      "output": "runs/day82/assets/overview-05.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1364,
+        1017
+      ],
+      "offset": [
+        118,
+        91
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "记录、同意与转介总览专用，不与知识页复用"
+    }
+  ]
+}

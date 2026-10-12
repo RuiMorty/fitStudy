@@ -1,0 +1,364 @@
+{
+  "schemaVersion": 1,
+  "assets": [
+    {
+      "file": "cover.png",
+      "role": "cover",
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "initial",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T18:31:38.515690Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper background, loose paper sheets, border, sticker edge, shadow, or halo. A small unmarked rigid evidence card is allowed as a prop. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nAdditional course-specific guardrails: 固定波吉与德斯帕、二维教学画法、深灰细轮廓和平涂；每张仅两位角色。 输出真实透明PNG；无背景房间、货架、地板、边框、阴影、棋盘格、品牌、水印或商品包装。 AI图内不能出现认证Logo、商标、文字、数字、药片、胶囊、补剂罐、粉末、条形码、手机屏幕、箭头或图表。 用空白硬质证据卡、无字餐盘、水杯、合上的空白文件夹和日常训练姿态表达核对与恢复；不将补剂画成魔法或医疗替代。\n\nWide 16:9 wordless single-scene course cover illustration. 横向16:9，波吉与德斯帕在无字普通餐盘、水杯和两张空白卡片旁讨论；无包装、无货架 Teach 补剂安全和恢复复盘: 核对信息和恢复基础共同优先于营销. 食物与水杯完整，无品牌；人物为平静讨论姿态。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters.",
+          "promptSha256": "64d142678de10e8a126f7c921108856882d5706af96eabf2369aedd0879deb21",
+          "assetPrompt": "Wide 16:9 wordless single-scene course cover illustration. 横向16:9，波吉与德斯帕在无字普通餐盘、水杯和两张空白卡片旁讨论；无包装、无货架 Teach 补剂安全和恢复复盘: 核对信息和恢复基础共同优先于营销. 食物与水杯完整，无品牌；人物为平静讨论姿态。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters.",
+          "output": "runs/day73/image-requests/cover-eb86e17540/attempt-01/cover.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T18:32:10.689979Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 1176063,
+          "usablePng": true,
+          "sha256": "8a772e82ac4d962bedbb992b533eb6fae1ca33697cac96dccfbee02c8a7ae877"
+        }
+      ],
+      "source": {
+        "path": "runs/day73/source/cover.png",
+        "exists": false
+      },
+      "lastStatus": "generated-pending-quality-review"
+    },
+    {
+      "file": "visual-01-regulation.png",
+      "role": "knowledge",
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "initial",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T18:34:09.914587Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper background, loose paper sheets, border, sticker edge, shadow, or halo. A small unmarked rigid evidence card is allowed as a prop. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nAdditional course-specific guardrails: 固定波吉与德斯帕、二维教学画法、深灰细轮廓和平涂；每张仅两位角色。 输出真实透明PNG；无背景房间、货架、地板、边框、阴影、棋盘格、品牌、水印或商品包装。 AI图内不能出现认证Logo、商标、文字、数字、药片、胶囊、补剂罐、粉末、条形码、手机屏幕、箭头或图表。 用空白硬质证据卡、无字餐盘、水杯、合上的空白文件夹和日常训练姿态表达核对与恢复；不将补剂画成魔法或医疗替代。\n\nWide 28:9 wordless single-scene knowledge illustration. 横向28:9，德斯帕打开空白文件夹，波吉看两张空白卡片；旁边只有无字水杯 Teach 地区与成分核对: 在售产品仍需看完整信息和个人条件. 无监管标识、药品、包装或可读资料。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters.",
+          "promptSha256": "448670e5661b103d4c234287366fa07bc3c3533c575ce8514c6b0d44c174fae9",
+          "assetPrompt": "Wide 28:9 wordless single-scene knowledge illustration. 横向28:9，德斯帕打开空白文件夹，波吉看两张空白卡片；旁边只有无字水杯 Teach 地区与成分核对: 在售产品仍需看完整信息和个人条件. 无监管标识、药品、包装或可读资料。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters.",
+          "output": "runs/day73/image-requests/visual-01-regulation-89f05b11d0/attempt-01/visual-01-regulation.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T18:34:32.650810Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 884284,
+          "usablePng": true,
+          "sha256": "e6f8f25550cc992d638c91abb3364a5bd0b5110998c0f6612f81078411906255"
+        },
+        {
+          "attempt": 2,
+          "kind": "adjusted-retry",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T18:35:27.703777Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper background, loose paper sheets, border, sticker edge, shadow, or halo. A small unmarked rigid evidence card is allowed as a prop. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nAdditional course-specific guardrails: 固定波吉与德斯帕、二维教学画法、深灰细轮廓和平涂；每张仅两位角色。 输出真实透明PNG；无背景房间、货架、地板、边框、阴影、棋盘格、品牌、水印或商品包装。 AI图内不能出现认证Logo、商标、文字、数字、药片、胶囊、补剂罐、粉末、条形码、手机屏幕、箭头或图表。 用空白硬质证据卡、无字餐盘、水杯、合上的空白文件夹和日常训练姿态表达核对与恢复；不将补剂画成魔法或医疗替代。\n\nWide 28:9 wordless single-scene knowledge illustration. Keep both complete characters, every crown, hair, hand, card, water glass and prop fully inside a generous six-percent safe margin. Despa kneels beside Bojji and holds one closed, thick, blank rigid folder like a board; Bojji holds two small unmarked rigid evidence cards. Do not show loose paper sheets, open folders, pages, labels, text, logos, packaging, medicine, products or readable documents. Use only a small unmarked water glass. Teach that regional rules and complete information must be checked before personal use. This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters.",
+          "promptSha256": "d67d70fd7dcc0ac6b3cda246b11042a1863abeac3307fc62dd4cb61d9eaf55f6",
+          "assetPrompt": "Wide 28:9 wordless single-scene knowledge illustration. Keep both complete characters, every crown, hair, hand, card, water glass and prop fully inside a generous six-percent safe margin. Despa kneels beside Bojji and holds one closed, thick, blank rigid folder like a board; Bojji holds two small unmarked rigid evidence cards. Do not show loose paper sheets, open folders, pages, labels, text, logos, packaging, medicine, products or readable documents. Use only a small unmarked water glass. Teach that regional rules and complete information must be checked before personal use. This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters.",
+          "output": "runs/day73/image-requests/visual-01-regulation-89f05b11d0/attempt-02/visual-01-regulation.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T18:35:54.661233Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 866898,
+          "usablePng": true,
+          "sha256": "c1f18a2e3e045001a8f24c8e64af8dbe9276a1c2cda987ac7c9882ee74c15361"
+        }
+      ],
+      "source": {
+        "path": "runs/day73/source/visual-01-regulation.png",
+        "exists": false
+      },
+      "lastStatus": "generated-pending-quality-review"
+    },
+    {
+      "file": "visual-02-certification.png",
+      "role": "knowledge",
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "initial",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T18:37:02.357342Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper background, loose paper sheets, border, sticker edge, shadow, or halo. A small unmarked rigid evidence card is allowed as a prop. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nAdditional course-specific guardrails: 固定波吉与德斯帕、二维教学画法、深灰细轮廓和平涂；每张仅两位角色。 输出真实透明PNG；无背景房间、货架、地板、边框、阴影、棋盘格、品牌、水印或商品包装。 AI图内不能出现认证Logo、商标、文字、数字、药片、胶囊、补剂罐、粉末、条形码、手机屏幕、箭头或图表。 用空白硬质证据卡、无字餐盘、水杯、合上的空白文件夹和日常训练姿态表达核对与恢复；不将补剂画成魔法或医疗替代。\n\nWide 28:9 wordless single-scene knowledge illustration. 横向28:9，波吉和德斯帕并排查看两个不同颜色但无字的空白小卡，采用平衡手势 Teach 认证降低部分风险: 额外核对线索不等于绝对保证. 卡片无Logo、勾选、盾牌或文字；不画任何产品。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters.",
+          "promptSha256": "914125ad6284475a7fd75d5cdf24dc5c2ca81c84c039f1a4b9d78df5ba70059f",
+          "assetPrompt": "Wide 28:9 wordless single-scene knowledge illustration. 横向28:9，波吉和德斯帕并排查看两个不同颜色但无字的空白小卡，采用平衡手势 Teach 认证降低部分风险: 额外核对线索不等于绝对保证. 卡片无Logo、勾选、盾牌或文字；不画任何产品。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters.",
+          "output": "runs/day73/image-requests/visual-02-certification-cd55d89a1d/attempt-01/visual-02-certification.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T18:37:24.582070Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 785462,
+          "usablePng": true,
+          "sha256": "6c4ed3524847313687906252f77aa0b13edddb81b190b4e39a6ec813ae887e9e"
+        },
+        {
+          "attempt": 2,
+          "kind": "adjusted-retry",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T18:38:13.968496Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper background, loose paper sheets, border, sticker edge, shadow, or halo. A small unmarked rigid evidence card is allowed as a prop. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nAdditional course-specific guardrails: 固定波吉与德斯帕、二维教学画法、深灰细轮廓和平涂；每张仅两位角色。 输出真实透明PNG；无背景房间、货架、地板、边框、阴影、棋盘格、品牌、水印或商品包装。 AI图内不能出现认证Logo、商标、文字、数字、药片、胶囊、补剂罐、粉末、条形码、手机屏幕、箭头或图表。 用空白硬质证据卡、无字餐盘、水杯、合上的空白文件夹和日常训练姿态表达核对与恢复；不将补剂画成魔法或医疗替代。\n\nWide 28:9 wordless single-scene knowledge illustration. Use a compact centered composition placed well away from every edge: leave fully transparent empty space above all crowns and hair, at least ten percent of canvas height, and show both complete characters from head through boots. Bojji and Despa calmly compare two small unmarked rigid evidence cards of different plain colors while making balanced open-palm gestures. No loose sheets, folder pages, logos, shields, ticks, text, product packaging, bottles, medicine, screens, arrows, charts or extra characters. Teach that outside verification lowers some risk but never guarantees zero risk. This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters.",
+          "promptSha256": "694e3b93d975b3924a7a1f012be8e4b9801dfdc0c4e6a317fbb1706afc1f7b9d",
+          "assetPrompt": "Wide 28:9 wordless single-scene knowledge illustration. Use a compact centered composition placed well away from every edge: leave fully transparent empty space above all crowns and hair, at least ten percent of canvas height, and show both complete characters from head through boots. Bojji and Despa calmly compare two small unmarked rigid evidence cards of different plain colors while making balanced open-palm gestures. No loose sheets, folder pages, logos, shields, ticks, text, product packaging, bottles, medicine, screens, arrows, charts or extra characters. Teach that outside verification lowers some risk but never guarantees zero risk. This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters.",
+          "output": "runs/day73/image-requests/visual-02-certification-cd55d89a1d/attempt-02/visual-02-certification.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T18:38:35.288017Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 688089,
+          "usablePng": true,
+          "sha256": "9cd0c22209fe3dfc68f6bfde31dd1615cca9e1a22c0a14678249e8a083ff869b"
+        }
+      ],
+      "source": {
+        "path": "runs/day73/source/visual-02-certification.png",
+        "exists": false
+      },
+      "lastStatus": "generated-pending-quality-review"
+    },
+    {
+      "file": "visual-03-marketing.png",
+      "role": "knowledge",
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "initial",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T18:39:46.123196Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper background, loose paper sheets, border, sticker edge, shadow, or halo. A small unmarked rigid evidence card is allowed as a prop. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nAdditional course-specific guardrails: 固定波吉与德斯帕、二维教学画法、深灰细轮廓和平涂；每张仅两位角色。 输出真实透明PNG；无背景房间、货架、地板、边框、阴影、棋盘格、品牌、水印或商品包装。 AI图内不能出现认证Logo、商标、文字、数字、药片、胶囊、补剂罐、粉末、条形码、手机屏幕、箭头或图表。 用空白硬质证据卡、无字餐盘、水杯、合上的空白文件夹和日常训练姿态表达核对与恢复；不将补剂画成魔法或医疗替代。\n\nWide 28:9 wordless single-scene knowledge illustration. 横向28:9，德斯帕把一张简单空白卡片和一张装饰更复杂但仍无字的卡片并列，波吉做思考手势 Teach 区分证据与故事: 比较需要看研究结构，不看炫目宣传. 不出现星级、对比箭头、文字、前后体型或品牌。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters.",
+          "promptSha256": "9ac87ff4650ffab823087d36df8561f348014e60c2f45cac91dcb780f901611a",
+          "assetPrompt": "Wide 28:9 wordless single-scene knowledge illustration. 横向28:9，德斯帕把一张简单空白卡片和一张装饰更复杂但仍无字的卡片并列，波吉做思考手势 Teach 区分证据与故事: 比较需要看研究结构，不看炫目宣传. 不出现星级、对比箭头、文字、前后体型或品牌。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters.",
+          "output": "runs/day73/image-requests/visual-03-marketing-f1833c3d82/attempt-01/visual-03-marketing.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T18:40:08.334167Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 798645,
+          "usablePng": true,
+          "sha256": "6f04a6aa62afc50d522cf0db94999368f36bf73e7d9018344237f4499f520431"
+        },
+        {
+          "attempt": 2,
+          "kind": "adjusted-retry",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T18:41:06.969315Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper background, loose paper sheets, border, sticker edge, shadow, or halo. A small unmarked rigid evidence card is allowed as a prop. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nAdditional course-specific guardrails: 固定波吉与德斯帕、二维教学画法、深灰细轮廓和平涂；每张仅两位角色。 输出真实透明PNG；无背景房间、货架、地板、边框、阴影、棋盘格、品牌、水印或商品包装。 AI图内不能出现认证Logo、商标、文字、数字、药片、胶囊、补剂罐、粉末、条形码、手机屏幕、箭头或图表。 用空白硬质证据卡、无字餐盘、水杯、合上的空白文件夹和日常训练姿态表达核对与恢复；不将补剂画成魔法或医疗替代。\n\nWide 28:9 wordless single-scene knowledge illustration. Use a small, complete, centrally placed full-body composition with generous transparent margin above crowns, below boots and on both sides. Despa presents exactly two plain blank rigid evidence cards side by side: one completely plain off-white card and one completely plain pale-blue card. Both cards must have no decoration whatsoever: no crown, star, emblem, logo, frame, border design, ribbon, sparkle, shield, tick, chart, arrow or text. Bojji uses a calm thinking pose. Teach that evidence structure matters more than a decorative sales story. No before-and-after body, package, product, medicine, loose paper, screen or extra characters. This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters.",
+          "promptSha256": "d00859565f223a0c48e5efbeb9860bae8d5ecbc6b2d47a7fddaa8cc1e4795b1e",
+          "assetPrompt": "Wide 28:9 wordless single-scene knowledge illustration. Use a small, complete, centrally placed full-body composition with generous transparent margin above crowns, below boots and on both sides. Despa presents exactly two plain blank rigid evidence cards side by side: one completely plain off-white card and one completely plain pale-blue card. Both cards must have no decoration whatsoever: no crown, star, emblem, logo, frame, border design, ribbon, sparkle, shield, tick, chart, arrow or text. Bojji uses a calm thinking pose. Teach that evidence structure matters more than a decorative sales story. No before-and-after body, package, product, medicine, loose paper, screen or extra characters. This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters.",
+          "output": "runs/day73/image-requests/visual-03-marketing-f1833c3d82/attempt-02/visual-03-marketing.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T18:41:37.029096Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 673223,
+          "usablePng": true,
+          "sha256": "00c6c1090eff6b6a01fa3d6ae880ee4d84849dc6dab327c3e9a83d91cb354a8c"
+        }
+      ],
+      "source": {
+        "path": "runs/day73/source/visual-03-marketing.png",
+        "exists": false
+      },
+      "lastStatus": "generated-pending-quality-review"
+    },
+    {
+      "file": "visual-04-recovery.png",
+      "role": "knowledge",
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "initial",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T18:43:52.016037Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper background, loose paper sheets, border, sticker edge, shadow, or halo. A small unmarked rigid evidence card is allowed as a prop. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nAdditional course-specific guardrails: 固定波吉与德斯帕、二维教学画法、深灰细轮廓和平涂；每张仅两位角色。 输出真实透明PNG；无背景房间、货架、地板、边框、阴影、棋盘格、品牌、水印或商品包装。 AI图内不能出现认证Logo、商标、文字、数字、药片、胶囊、补剂罐、粉末、条形码、手机屏幕、箭头或图表。 用空白硬质证据卡、无字餐盘、水杯、合上的空白文件夹和日常训练姿态表达核对与恢复；不将补剂画成魔法或医疗替代。\n\nWide 28:9 wordless single-scene knowledge illustration. 横向28:9，德斯帕坐在小桌旁面对无字普通餐盘和水杯，波吉在旁做轻松拉伸准备；无床、时钟或文字 Teach 日常恢复基础: 正餐、水合、睡眠和训练负荷共同构成恢复. 拉伸姿态安全温和，不表现疲劳崩溃或医疗场景。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters.",
+          "promptSha256": "be044ed6f78120fce272f04e50f1f6ec7460971a720c7fd5f6ba167b6c257642",
+          "assetPrompt": "Wide 28:9 wordless single-scene knowledge illustration. 横向28:9，德斯帕坐在小桌旁面对无字普通餐盘和水杯，波吉在旁做轻松拉伸准备；无床、时钟或文字 Teach 日常恢复基础: 正餐、水合、睡眠和训练负荷共同构成恢复. 拉伸姿态安全温和，不表现疲劳崩溃或医疗场景。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters.",
+          "output": "runs/day73/image-requests/visual-04-recovery-2e6b8aab28/attempt-01/visual-04-recovery.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T18:44:17.583260Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 1170379,
+          "usablePng": true,
+          "sha256": "317c5041f71b54c7663dad9dc9184d126dee28394844ebd1bafab14233dd174c"
+        },
+        {
+          "attempt": 2,
+          "kind": "adjusted-retry",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T18:45:40.184919Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper background, loose paper sheets, border, sticker edge, shadow, or halo. A small unmarked rigid evidence card is allowed as a prop. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nAdditional course-specific guardrails: 固定波吉与德斯帕、二维教学画法、深灰细轮廓和平涂；每张仅两位角色。 输出真实透明PNG；无背景房间、货架、地板、边框、阴影、棋盘格、品牌、水印或商品包装。 AI图内不能出现认证Logo、商标、文字、数字、药片、胶囊、补剂罐、粉末、条形码、手机屏幕、箭头或图表。 用空白硬质证据卡、无字餐盘、水杯、合上的空白文件夹和日常训练姿态表达核对与恢复；不将补剂画成魔法或医疗替代。\n\nWide 28:9 wordless single-scene knowledge illustration. Use one simple centered scene only, with transparent empty space around all subjects. Despa sits at a small plain table with one ordinary unmarked meal plate and one clear water glass. Bojji stands beside the table doing one gentle safe overhead reach with both feet planted. Show no other props: no bed, pillow, cushion, yoga mat, dumbbell, bottle, book, clock, phone, packaging, product, medicine, screen, text, symbol or extra character. Keep crowns, hair, boots, table and water glass fully inside a six-percent safe margin. Teach recovery basics through ordinary food, water and a calm preparation movement, never fatigue collapse or medical care. This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters.",
+          "promptSha256": "b51c61954e750487dc9f1a30a404d7b5b70d3f8fe3ddba54958c274f2ab822a1",
+          "assetPrompt": "Wide 28:9 wordless single-scene knowledge illustration. Use one simple centered scene only, with transparent empty space around all subjects. Despa sits at a small plain table with one ordinary unmarked meal plate and one clear water glass. Bojji stands beside the table doing one gentle safe overhead reach with both feet planted. Show no other props: no bed, pillow, cushion, yoga mat, dumbbell, bottle, book, clock, phone, packaging, product, medicine, screen, text, symbol or extra character. Keep crowns, hair, boots, table and water glass fully inside a six-percent safe margin. Teach recovery basics through ordinary food, water and a calm preparation movement, never fatigue collapse or medical care. This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters.",
+          "output": "runs/day73/image-requests/visual-04-recovery-2e6b8aab28/attempt-02/visual-04-recovery.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T18:46:08.155098Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 1029504,
+          "usablePng": true,
+          "sha256": "f1a92c31469c6e7424ac9b08e4aff02dc93872e703ea82dfbff000d475d26087"
+        }
+      ],
+      "source": {
+        "path": "runs/day73/source/visual-04-recovery.png",
+        "exists": false
+      },
+      "lastStatus": "generated-pending-quality-review"
+    },
+    {
+      "file": "overview-01-regulation.png",
+      "role": "overview-item",
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "initial",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T18:48:17.452262Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper background, loose paper sheets, border, sticker edge, shadow, or halo. A small unmarked rigid evidence card is allowed as a prop. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nAdditional course-specific guardrails: 固定波吉与德斯帕、二维教学画法、深灰细轮廓和平涂；每张仅两位角色。 输出真实透明PNG；无背景房间、货架、地板、边框、阴影、棋盘格、品牌、水印或商品包装。 AI图内不能出现认证Logo、商标、文字、数字、药片、胶囊、补剂罐、粉末、条形码、手机屏幕、箭头或图表。 用空白硬质证据卡、无字餐盘、水杯、合上的空白文件夹和日常训练姿态表达核对与恢复；不将补剂画成魔法或医疗替代。\n\nWide 4:3 wordless single-scene overview-only illustration. 4:3总览专用，德斯帕打开空白文件夹，波吉看空白卡片 Teach 监管差异: 完整信息比包装宣传重要. 不与知识页复用；无Logo或产品。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters.",
+          "promptSha256": "c7dc4cb3bf9d473c5d478484229d4e45aa8851036e36e48db948c5c2fcf09af4",
+          "assetPrompt": "Wide 4:3 wordless single-scene overview-only illustration. 4:3总览专用，德斯帕打开空白文件夹，波吉看空白卡片 Teach 监管差异: 完整信息比包装宣传重要. 不与知识页复用；无Logo或产品。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters.",
+          "output": "runs/day73/image-requests/overview-01-regulation-7d38bc97bb/attempt-01/overview-01-regulation.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T18:48:45.645208Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 1012804,
+          "usablePng": true,
+          "sha256": "f50d59d06949b1f3113578b6488f0cfa84b449a289e8a690a52eb23dd77b69c5"
+        },
+        {
+          "attempt": 2,
+          "kind": "adjusted-retry",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T18:50:21.992335Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper background, loose paper sheets, border, sticker edge, shadow, or halo. A small unmarked rigid evidence card is allowed as a prop. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nAdditional course-specific guardrails: 固定波吉与德斯帕、二维教学画法、深灰细轮廓和平涂；每张仅两位角色。 输出真实透明PNG；无背景房间、货架、地板、边框、阴影、棋盘格、品牌、水印或商品包装。 AI图内不能出现认证Logo、商标、文字、数字、药片、胶囊、补剂罐、粉末、条形码、手机屏幕、箭头或图表。 用空白硬质证据卡、无字餐盘、水杯、合上的空白文件夹和日常训练姿态表达核对与恢复；不将补剂画成魔法或医疗替代。\n\nWide 4:3 wordless overview-only illustration, distinct from all knowledge-page art. Use a compact full-body composition with transparent margin above every crown and hair, below every boot, and around all props. Despa kneels and holds one closed thick blank rigid folder-board, not an open folder and never loose sheets or pages. Bojji holds one small plain unmarked rigid evidence card. Teach that complete information and region-specific rules matter more than package claims. No logos, labels, text, symbols, packaging, products, medicine, screen, arrows, chart, border design, extra characters or cropped body parts. This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters.",
+          "promptSha256": "6dada46b98b89df9bec2b7fd3153b05abad62f79d9b4bdba6f07c3431aa4afda",
+          "assetPrompt": "Wide 4:3 wordless overview-only illustration, distinct from all knowledge-page art. Use a compact full-body composition with transparent margin above every crown and hair, below every boot, and around all props. Despa kneels and holds one closed thick blank rigid folder-board, not an open folder and never loose sheets or pages. Bojji holds one small plain unmarked rigid evidence card. Teach that complete information and region-specific rules matter more than package claims. No logos, labels, text, symbols, packaging, products, medicine, screen, arrows, chart, border design, extra characters or cropped body parts. This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters.",
+          "output": "runs/day73/image-requests/overview-01-regulation-7d38bc97bb/attempt-02/overview-01-regulation.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T18:50:49.190556Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 1300671,
+          "usablePng": true,
+          "sha256": "b4049087007bc346c14d2ce5feab931e71e0c3ba7e348d547450a4607356cd92"
+        }
+      ],
+      "source": {
+        "path": "runs/day73/source/overview-01-regulation.png",
+        "exists": false
+      },
+      "lastStatus": "generated-pending-quality-review"
+    },
+    {
+      "file": "overview-02-certification.png",
+      "role": "overview-item",
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "initial",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T18:52:23.993753Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper background, loose paper sheets, border, sticker edge, shadow, or halo. A small unmarked rigid evidence card is allowed as a prop. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nAdditional course-specific guardrails: 固定波吉与德斯帕、二维教学画法、深灰细轮廓和平涂；每张仅两位角色。 输出真实透明PNG；无背景房间、货架、地板、边框、阴影、棋盘格、品牌、水印或商品包装。 AI图内不能出现认证Logo、商标、文字、数字、药片、胶囊、补剂罐、粉末、条形码、手机屏幕、箭头或图表。 用空白硬质证据卡、无字餐盘、水杯、合上的空白文件夹和日常训练姿态表达核对与恢复；不将补剂画成魔法或医疗替代。\n\nWide 4:3 wordless single-scene overview-only illustration. 4:3总览专用，两人查看两张无字空白小卡并做平衡手势 Teach 认证定位: 认证是额外线索而非零风险. 不与知识页复用；无盾牌、勾选或文字。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters.",
+          "promptSha256": "d0d1517657e4f34fb508255761e286992f51517c63c9dc94da62c0fad37ef810",
+          "assetPrompt": "Wide 4:3 wordless single-scene overview-only illustration. 4:3总览专用，两人查看两张无字空白小卡并做平衡手势 Teach 认证定位: 认证是额外线索而非零风险. 不与知识页复用；无盾牌、勾选或文字。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters.",
+          "output": "runs/day73/image-requests/overview-02-certification-7cb8f7368a/attempt-01/overview-02-certification.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T18:52:52.781133Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 914368,
+          "usablePng": true,
+          "sha256": "3edd0378c4fd0af8522382f277dc609b284e3f5fdf9c9d20608537f8dc0c4567"
+        }
+      ],
+      "source": {
+        "path": "runs/day73/source/overview-02-certification.png",
+        "exists": false
+      },
+      "lastStatus": "generated-pending-quality-review"
+    },
+    {
+      "file": "overview-03-marketing.png",
+      "role": "overview-item",
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "initial",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T18:55:19.384221Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper background, loose paper sheets, border, sticker edge, shadow, or halo. A small unmarked rigid evidence card is allowed as a prop. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nAdditional course-specific guardrails: 固定波吉与德斯帕、二维教学画法、深灰细轮廓和平涂；每张仅两位角色。 输出真实透明PNG；无背景房间、货架、地板、边框、阴影、棋盘格、品牌、水印或商品包装。 AI图内不能出现认证Logo、商标、文字、数字、药片、胶囊、补剂罐、粉末、条形码、手机屏幕、箭头或图表。 用空白硬质证据卡、无字餐盘、水杯、合上的空白文件夹和日常训练姿态表达核对与恢复；不将补剂画成魔法或医疗替代。\n\nWide 4:3 wordless single-scene overview-only illustration. 4:3总览专用，德斯帕在两张无字卡片间做比较手势，波吉思考 Teach 营销识别: 故事与证据需要区分. 不与知识页复用；无图表、前后体型或广告符号。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters.",
+          "promptSha256": "c6aa854882cbc7e78aa290b917e210ba2fc49436959210540b43ff9179ea89d8",
+          "assetPrompt": "Wide 4:3 wordless single-scene overview-only illustration. 4:3总览专用，德斯帕在两张无字卡片间做比较手势，波吉思考 Teach 营销识别: 故事与证据需要区分. 不与知识页复用；无图表、前后体型或广告符号。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters.",
+          "output": "runs/day73/image-requests/overview-03-marketing-9b4037f172/attempt-01/overview-03-marketing.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T18:55:53.162272Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 1197490,
+          "usablePng": true,
+          "sha256": "ed1bdfd380ccc5f55d21f1fb94561ac2c102f5485e02fb86d3d1f0e0de2e79a0"
+        },
+        {
+          "attempt": 2,
+          "kind": "adjusted-retry",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T18:58:11.700198Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper background, loose paper sheets, border, sticker edge, shadow, or halo. A small unmarked rigid evidence card is allowed as a prop. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nAdditional course-specific guardrails: 固定波吉与德斯帕、二维教学画法、深灰细轮廓和平涂；每张仅两位角色。 输出真实透明PNG；无背景房间、货架、地板、边框、阴影、棋盘格、品牌、水印或商品包装。 AI图内不能出现认证Logo、商标、文字、数字、药片、胶囊、补剂罐、粉末、条形码、手机屏幕、箭头或图表。 用空白硬质证据卡、无字餐盘、水杯、合上的空白文件夹和日常训练姿态表达核对与恢复；不将补剂画成魔法或医疗替代。\n\nWide 4:3 wordless overview-only illustration, distinct from all knowledge-page art. Show exactly one Bojji and exactly one Despa, with no duplicated figures, thought bubbles, imagined scenes, capes, weapons, stars, sparkles, beds, food, props or third-person depictions. Despa sits at a small plain stool and calmly holds two plain blank rigid evidence cards, one off-white and one pale blue; Bojji stands nearby in one thoughtful hand-to-chin pose. The cards must have no words, logo, frame design, star, crown, chart, arrow, shield or tick. Teach that marketing stories must be separated from structured evidence. Keep all heads, crowns, boots and cards fully inside a generous safe margin on transparent background. This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters.",
+          "promptSha256": "bcc3da2718c14e35711776a1752fb7ca53b9b4bc87568c7a7fc644f60b1fe73f",
+          "assetPrompt": "Wide 4:3 wordless overview-only illustration, distinct from all knowledge-page art. Show exactly one Bojji and exactly one Despa, with no duplicated figures, thought bubbles, imagined scenes, capes, weapons, stars, sparkles, beds, food, props or third-person depictions. Despa sits at a small plain stool and calmly holds two plain blank rigid evidence cards, one off-white and one pale blue; Bojji stands nearby in one thoughtful hand-to-chin pose. The cards must have no words, logo, frame design, star, crown, chart, arrow, shield or tick. Teach that marketing stories must be separated from structured evidence. Keep all heads, crowns, boots and cards fully inside a generous safe margin on transparent background. This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters.",
+          "output": "runs/day73/image-requests/overview-03-marketing-9b4037f172/attempt-02/overview-03-marketing.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T18:58:42.563617Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 1025628,
+          "usablePng": true,
+          "sha256": "73fe5faa41283029d1235e8756df9c01278de7cf19915bd56e660d3e5866ce7b"
+        }
+      ],
+      "source": {
+        "path": "runs/day73/source/overview-03-marketing.png",
+        "exists": false
+      },
+      "lastStatus": "generated-pending-quality-review"
+    },
+    {
+      "file": "overview-04-recovery.png",
+      "role": "overview-item",
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "initial",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T19:01:38.975168Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper background, loose paper sheets, border, sticker edge, shadow, or halo. A small unmarked rigid evidence card is allowed as a prop. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nAdditional course-specific guardrails: 固定波吉与德斯帕、二维教学画法、深灰细轮廓和平涂；每张仅两位角色。 输出真实透明PNG；无背景房间、货架、地板、边框、阴影、棋盘格、品牌、水印或商品包装。 AI图内不能出现认证Logo、商标、文字、数字、药片、胶囊、补剂罐、粉末、条形码、手机屏幕、箭头或图表。 用空白硬质证据卡、无字餐盘、水杯、合上的空白文件夹和日常训练姿态表达核对与恢复；不将补剂画成魔法或医疗替代。\n\nWide 4:3 wordless single-scene overview-only illustration. 4:3总览专用，波吉面对无字餐盘和水杯，德斯帕在旁做轻松拉伸 Teach 恢复基础: 吃、喝、睡和训练安排共同恢复. 不与知识页复用；无床、时钟或医疗暗示。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters.",
+          "promptSha256": "53e9cd4fa3b5b8ccf39d49afc8c65b2d88f3ca225d9f5ef20642700d4a323b75",
+          "assetPrompt": "Wide 4:3 wordless single-scene overview-only illustration. 4:3总览专用，波吉面对无字餐盘和水杯，德斯帕在旁做轻松拉伸 Teach 恢复基础: 吃、喝、睡和训练安排共同恢复. 不与知识页复用；无床、时钟或医疗暗示。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters.",
+          "output": "runs/day73/image-requests/overview-04-recovery-8175b65721/attempt-01/overview-04-recovery.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T19:02:11.455566Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 1110739,
+          "usablePng": true,
+          "sha256": "4bd5c5218dc610a51319d8c0a887d0f0e39bb19d21d1ef950ffea65230fa261a"
+        }
+      ],
+      "source": {
+        "path": "runs/day73/source/overview-04-recovery.png",
+        "exists": false
+      },
+      "lastStatus": "generated-pending-quality-review"
+    }
+  ],
+  "provider": "Lingzhi",
+  "preset": "quality",
+  "model": "gpt-image-2.5-sunburst",
+  "input": "runs/day73/image-prompts.json",
+  "updatedAt": "2026-09-30T19:02:11.455761Z"
+}

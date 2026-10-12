@@ -1,0 +1,26 @@
+{
+  "day": 59,
+  "title": "上交叉与下交叉综合征纠正",
+  "status": "awaiting-review",
+  "artifactStatus": "ready-local-draft",
+  "authorization": "用户于2026-09-30授权连续生成后续本地草稿；每张图片首次请求后最多5次经调整提示词重试，始终不部署。",
+  "imagePlan": "runs/day59/image-prompts.json",
+  "retryPolicy": "每张图片首次请求后，最多5次经调整提示词的重试；成功即停止。",
+  "generated": 9,
+  "planned": 9,
+  "batchPolicy": "runs/daily-preview/batch-20260930.json",
+  "sourceQualityReview": "runs/day59/visual-quality-review.json",
+  "verification": {
+    "templateTests": "17 passed",
+    "isolatedPackage": "/tmp/fitstudy-day59-stage.nJ0Io1",
+    "browser": "runs/day59/verification/report.json",
+    "imageProcessing": "runs/day59/image-processing.json",
+    "zip": "xhs/day59/day59-xhs.zip"
+  },
+  "localPreview": {
+    "course": "http://127.0.0.1:8420/html/day59-%E4%B8%8A%E4%BA%A4%E5%8F%89%E4%B8%8E%E4%B8%8B%E4%BA%A4%E5%8F%89%E7%BB%BC%E5%90%88%E5%BE%81%E7%BA%A0%E6%AD%A3.html",
+    "xhs": "http://127.0.0.1:8420/xhs/day59/index.html",
+    "zip": "http://127.0.0.1:8420/xhs/day59/day59-xhs.zip"
+  },
+  "nextAction": "等待用户验收 Day59；根据批量制作授权，可继续制作 Day60 及后续本地草稿，但不得部署。"
+}

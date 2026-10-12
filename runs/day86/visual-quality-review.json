@@ -1,0 +1,41 @@
+{
+  "day": 86,
+  "title": "静态姿势评估",
+  "reviewedAt": "2026-10-03T08:05:12+08:00",
+  "requestRecord": "runs/day86/image-request-log.json",
+  "requirements": [
+    "Accepted sources have a real alpha channel and were visually checked on a neutral background.",
+    "Each scene uses one Bojji and one Despa, without readable text, floor, room, cast shadow, duplicate pose or sequence framing.",
+    "Overview art is independently generated and compositionally distinct from its corresponding knowledge image.",
+    "Static posture observation emphasizes consent, privacy, descriptive language, repeatability, dynamic verification and referral boundaries rather than diagnosis."
+  ],
+  "accepted": [
+    {"file":"cover.png","attempt":2,"source":"runs/day86/image-requests/cover-eb86e17540/attempt-02/cover.png","sha256":"da5da409739b9c50872e9b6cd1f659a2c0c2edcfe71f207bb1b8fbc0a74630a5","review":"A respectful consent-card exchange introduces voluntary, privacy-aware observation without diagnostic imagery."},
+    {"file":"visual-01.png","attempt":3,"source":"runs/day86/image-requests/visual-01-8a79cc2ec8/attempt-03/visual-01.png","sha256":"57e5e8f521ae16560c02ce2cb1a36d044af1cd0b86780eb3b0b73bcf014c1977","review":"A compact choice gesture and blank consent card show voluntary participation and limited record use."},
+    {"file":"visual-02.png","attempt":2,"source":"runs/day86/image-requests/visual-02-1d99f16a14/attempt-02/visual-02.png","sha256":"b92542ed6c5c3b958bd7521123c2f746eb46779feb4557769bf7a950afac9477","review":"A relaxed upright stance and open-handed observation support descriptive relative-position language only."},
+    {"file":"visual-03.png","attempt":1,"source":"runs/day86/image-requests/visual-03-0c02636da0/attempt-01/visual-03.png","sha256":"53f7a7cb235d1997d72d55d4348f988119ec99defb71262778ccecfc1c579f34","review":"Two empty card compartments illustrate repeat observations without a photo, score or conclusion."},
+    {"file":"visual-04.png","attempt":1,"source":"runs/day86/image-requests/visual-04-dfef8f1f0d/attempt-01/visual-04.png","sha256":"23dae26db0fec371e24b3a4a60c583a0406e4c700fb58f06d9b9fb1b901918a3","review":"A controlled shallow squat converts a static clue into a safe dynamic question rather than a correction prescription."},
+    {"file":"visual-05.png","attempt":2,"source":"runs/day86/image-requests/visual-05-c5ca8b3979/attempt-02/visual-05.png","sha256":"798789e67f1f421fe70b699a641292dd6196c98d65173eb8d60a68d04291fc0f","review":"Open hands at a respectful distance communicate neutral feedback and a jointly chosen next step."},
+    {"file":"overview-01.png","attempt":1,"source":"runs/day86/image-requests/overview-01-9cdac68418/attempt-01/overview-01.png","sha256":"d87c9d09cedfe2bf87534dcd3dbc2b12afa74b76615acbbeaec9623db88affbf","review":"Independent consent composition is distinct from the wide knowledge scene."},
+    {"file":"overview-02.png","attempt":1,"source":"runs/day86/image-requests/overview-02-6a449564cb/attempt-01/overview-02.png","sha256":"266315bf7ccd14c30f8b191fe239c8da041c182c9aef50423dc34afb6ba8a09a","review":"Independent frontal neutral-stance panel contains no posture markings or diagnosis cue."},
+    {"file":"overview-03.png","attempt":1,"source":"runs/day86/image-requests/overview-03-827fcd4a79/attempt-01/overview-03.png","sha256":"0a699925b36ab18f7cf444c9315f085b5fca04801f90df44473cdea5b9a940cc","review":"Independent two-compartment record-card panel communicates repeated context checks."},
+    {"file":"overview-04.png","attempt":1,"source":"runs/day86/image-requests/overview-04-897df7e278/attempt-01/overview-04.png","sha256":"699b032c27786a8698eec060875b73e3c7eba926e38f7ac2b408bfd4c844f5b2","review":"Independent dynamic-squat panel keeps the observer calm and non-corrective."},
+    {"file":"overview-05.png","attempt":2,"source":"runs/day86/image-requests/overview-05-d059872d99/attempt-02/overview-05.png","sha256":"cca3016904b09a951185786564c8f6a7ce7b26953e3f3c5d395e46f0ba555037","review":"Independent no-prop exchange keeps the feedback and next-step choice neutral."}
+  ],
+  "rejected": [
+    {"file":"cover.png","attempt":1,"reason":"Figures were too close to the canvas edge for the required safety margin."},
+    {"file":"visual-01.png","attempt":1,"reason":"Figures were too close to the canvas edge for the required safety margin."},
+    {"file":"visual-01.png","attempt":2,"reason":"The compact figures still sat too close to the upper canvas edge."},
+    {"file":"visual-02.png","attempt":1,"reason":"Bojji was squatting rather than standing in a neutral posture."},
+    {"file":"visual-05.png","attempt":1,"reason":"A prohibited clipboard/record prop appeared in the feedback scene."},
+    {"file":"overview-05.png","attempt":1,"reason":"The scene added prohibited cards, icons and symbolic props."}
+  ],
+  "summary": {
+    "planned": 11,
+    "accepted": 11,
+    "requested": 17,
+    "retriesUsed": 6,
+    "allAcceptedSourcesHaveAlpha": true,
+    "readyForSharedPreparation": true
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "reviewer": "local source visual and alpha QA",
+  "scope": "Day62 adjusted attempt-02 candidates only; no paid image request, rendering, installation, deployment, or global review change was performed.",
+  "method": [
+    "individual visual inspection of every candidate on a white composite",
+    "individual transparency inspection and RGBA alpha extrema/bounding-box check",
+    "prompt and forbidden-element comparison against image-prompts.json and the initial source-quality-pending.json"
+  ],
+  "acceptedFromAttempt02": [
+    {
+      "file": "cover.png",
+      "attempt": 2,
+      "candidate": "runs/day62/image-requests/cover-eb86e17540/attempt-02/cover.png",
+      "source": "runs/day62/source/cover.png",
+      "sha256": "60f92d62cb08f41c3f691154c9f8907c09608d478c70b9e68e3e143c9bf50826",
+      "alpha": {"hasAlpha": true, "extrema": [0, 255], "fullyTransparentPercent": 77.67},
+      "review": "One short Bojji, one balanced rice/potato/bean/fruit meal, and one Despa running in place are all readable. The rejected thought bubble, fire, arrows, rays, labels, and other markers are gone; bodies, food, and limbs are coherent on white."
+    },
+    {
+      "file": "visual-02-glycogen.png",
+      "attempt": 2,
+      "candidate": "runs/day62/image-requests/visual-02-glycogen-142fa6b69f/attempt-02/visual-02-glycogen.png",
+      "source": "runs/day62/source/visual-02-glycogen.png",
+      "sha256": "cf873cd4eedba44205658af5e96c1769c60760cfe1e2774447f321aa12269278",
+      "alpha": {"hasAlpha": true, "extrema": [0, 255], "fullyTransparentPercent": 71.61},
+      "review": "One Despa rides a plain, text-free stationary bike while one Bojji has a sensible meal and water cup. The prior anatomy cutaway, organ, arrows, rays, and medical/chart imagery are absent; bike and limbs connect plausibly."
+    },
+    {
+      "file": "visual-04-timing.png",
+      "attempt": 2,
+      "candidate": "runs/day62/image-requests/visual-04-timing-9e5ddcd30d/attempt-02/visual-04-timing.png",
+      "source": "runs/day62/source/visual-04-timing.png",
+      "sha256": "0664d36539bef2b192ab7172a4d75fd17769003cfa72b91deb7ce251a68bef2f",
+      "alpha": {"hasAlpha": true, "extrema": [0, 255], "fullyTransparentPercent": 67.77},
+      "review": "One Despa holds the required rice-and-egg bowl after activity, and one Bojji prepares the distinct banana-and-toast snack. There is no clock, arrow, curved flow line, ray, text, label, package, or diagram; figures and food read cleanly on white."
+    },
+    {
+      "file": "overview-02-glycogen.png",
+      "attempt": 2,
+      "candidate": "runs/day62/image-requests/overview-02-glycogen-2ccd374f54/attempt-02/overview-02-glycogen.png",
+      "source": "runs/day62/source/overview-02-glycogen.png",
+      "sha256": "02b79313b5a1afa138ff570f9bcc080f4adb80c490832e800d93b24d3ac84d8d",
+      "alpha": {"hasAlpha": true, "extrema": [0, 255], "fullyTransparentPercent": 69.71},
+      "review": "The independent overview scene cleanly shows one cycling Despa and one Bojji with a post-training bowl. It has no thought bubble, organ, anatomy diagram, hexagon, flame, arrow, ray, label, text, or medical device."
+    },
+    {
+      "file": "overview-04-timing.png",
+      "attempt": 2,
+      "candidate": "runs/day62/image-requests/overview-04-timing-06a74cefc3/attempt-02/overview-04-timing.png",
+      "source": "runs/day62/source/overview-04-timing.png",
+      "sha256": "b96bc72616a0ce9995966e1c043ee026c4102c33e838f0ba7fee768e07db971f",
+      "alpha": {"hasAlpha": true, "extrema": [0, 255], "fullyTransparentPercent": 72.20},
+      "review": "One Despa runs lightly with a water cup and one Bojji holds only the small banana-and-toast snack plate. The previous full-meal mismatch and marker rays are absent; no clock, text, package, arrow, chart, floor, shadow, or halo remains."
+    }
+  ],
+  "stillRejected": [
+    {
+      "file": "overview-03-gi-gl.png",
+      "attempt": 2,
+      "candidate": "runs/day62/image-requests/overview-03-gi-gl-e85c3ab1b9/attempt-02/overview-03-gi-gl.png",
+      "sha256": "8e0dc03eba8cebaf1ae7defe714fc025064ac88b777662750c98df570281293d",
+      "alpha": {"hasAlpha": true, "extrema": [0, 255], "fullyTransparentPercent": 63.54},
+      "reason": "The two balanced meal scenes are semantically correct and text-free, but the left plate reaches the left canvas edge and the right plate reaches the bottom canvas edge (nontransparent bbox [0, 29, 1403, 1086]). This visibly crops the plate rims, violates the shared safe-margin requirement, and makes the overview tile cramped.",
+      "recommendedAdjustedRetryPrompt": "Wide 4:3 transparent wordless overview-only illustration. Exactly one short Bojji calmly looks at two different small, fully visible, plain balanced plates: a modest rice-and-bean plate with vegetables and a porridge-and-fruit plate with a small protein side. Make their portion or meal context visibly different but equally calm and balanced. Exactly one Despa gestures open-handed. Keep every complete plate rim, every body part, and every prop at least ten percent inside every canvas edge; do not crop any plate or character. Do not use burger, fries, junk-food contrast, good/bad symbols, charts, text, numbers, arrows, labels, or medical devices."
+    }
+  ],
+  "preservedEarlierAcceptance": [
+    "runs/day62/source/visual-01-types.png",
+    "runs/day62/source/visual-03-gi-gl.png",
+    "runs/day62/source/overview-01-types.png"
+  ],
+  "result": "Five adjusted candidates were accepted and copied to source. Source now contains 8 of 9 required images. overview-03-gi-gl.png alone needs a third request; it has four adjusted retries remaining under the user-authorized limit. Do not render or install Day62 until the missing overview source passes QA."
+}

@@ -1,0 +1,50 @@
+{
+  "commonPrompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.",
+  "assets": [
+    {
+      "file": "cover.png",
+      "role": "cover",
+      "prompt": "Wide 16:9 wordless course cover. Exactly one Bojji holds a plain small bowl of nuts and an avocado half; exactly one Despa performs a calm light walking warm-up near a plate with fish and rice. Explain dietary fat as part of a balanced training meal. No oil labels, packaging, text or health symbols. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    },
+    {
+      "file": "visual-01-role.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Bojji sets a modest portion of nuts and olive-like plain oil dish beside a balanced meal; exactly one Despa performs a relaxed light carry with a plain crate. Explain energy density and function without calorie icons, labels, arrows or text. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    },
+    {
+      "file": "visual-02-types.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Despa holds a plate with fish and a few nuts; exactly one Bojji compares it with a plain whole-food meal, both calm. Explain source and food context rather than good-bad food ranking. No fried-food caricature, labels, charts or arrows. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    },
+    {
+      "file": "visual-03-essential.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Bojji holds a small fish on a plain plate; exactly one Despa holds a small handful of seeds and nuts. Explain varied food sources of essential fats. No omega symbols, capsules, medical charts, text or arrows. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    },
+    {
+      "file": "visual-04-timing.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Despa starts a gentle stationary run with a light easy-to-digest plate nearby; exactly one Bojji later enjoys a balanced meal with a modest avocado portion. Explain that richer-fat meals can be placed farther from intense training for comfort. No clock, labels or text. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    },
+    {
+      "file": "overview-01-role.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Bojji holds a small nut bowl while exactly one Despa holds a balanced plain meal. Explain dietary fat in a balanced context. No icons, text or arrows. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    },
+    {
+      "file": "overview-02-types.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Despa holds a fish-and-nut plate; exactly one Bojji observes. Explain food sources, not good-bad labels. No packages, text or charts. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    },
+    {
+      "file": "overview-03-essential.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Bojji holds small fish on a plain plate; exactly one Despa holds seeds. Explain essential-fat food variety. No supplement capsules, omega symbol or text. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    },
+    {
+      "file": "overview-04-timing.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Despa performs a light training warm-up near a small plain meal; exactly one Bojji holds a modest avocado portion. Explain timing and comfort. No clock, labels or text. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    }
+  ]
+}

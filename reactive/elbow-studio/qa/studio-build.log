@@ -1,0 +1,74 @@
+00:00.867  io.stl           | WARNING Removed 1 duplicate triangles during import
+00:00.982  io.stl           | WARNING Removed 5 duplicate triangles during import
+00:01.064  io.stl           | WARNING Removed 1 duplicate triangles during import
+00:01.163  io.stl           | WARNING Removed 1 duplicate triangles during import
+00:01.242  io.stl           | WARNING Removed 2 duplicate triangles during import
+00:01.588  io.stl           | WARNING Removed 1 duplicate triangles during import
+00:01.671  io.stl           | WARNING Removed 5 duplicate triangles during import
+00:01.735  io.stl           | WARNING Removed 1 duplicate triangles during import
+00:01.815  io.stl           | WARNING Removed 1 duplicate triangles during import
+00:01.876  io.stl           | WARNING Removed 2 duplicate triangles during import
+/Users/agiuser/Documents/fit/reactive/elbow-studio/blender/build_studio.py:120: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(name);m.use_nodes=True;m.diffuse_color=(*color,alpha);nodes=m.node_tree.nodes;links=m.node_tree.links
+信息: 已另存为 "elbow-right.blend"
+INFO Draco is available, use library at /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_draco_bridge.dylib
+INFO MeshOptimizer is available, use library at /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_meshopt_bridge.dylib
+11:36:02 | INFO: Starting glTF 2.0 export
+11:36:02 | INFO: Extracting primitive: FMA23130
+11:36:02 | INFO: Primitives created: 1
+11:36:02 | INFO: Extracting primitive: FMA13395
+11:36:02 | INFO: Primitives created: 1
+11:36:02 | INFO: Extracting primitive: FasciaEnvelope
+11:36:02 | INFO: Primitives created: 1
+11:36:02 | INFO: Extracting primitive: FMA23464
+11:36:02 | INFO: Primitives created: 1
+11:36:02 | INFO: Extracting primitive: FMA23467
+11:36:02 | INFO: Primitives created: 1
+11:36:02 | INFO: Extracting primitive: FMA37686.001
+11:36:02 | INFO: Primitives created: 1
+11:36:02 | INFO: Extracting primitive: FMA37684.001
+11:36:02 | INFO: Primitives created: 1
+11:36:02 | INFO: Extracting primitive: FMA37668.001
+11:36:02 | INFO: Primitives created: 1
+11:36:02 | INFO: Extracting primitive: FMA37697.001
+11:36:02 | INFO: Primitives created: 1
+11:36:02 | INFO: Extracting primitive: FMA37699.001
+11:36:02 | INFO: Primitives created: 1
+11:36:02 | INFO: Extracting primitive: FMA37695.001
+11:36:02 | INFO: Primitives created: 1
+11:36:02 | INFO: Extracting primitive: FMA37686.004
+11:36:02 | INFO: Primitives created: 1
+11:36:02 | INFO: Extracting primitive: FMA37686.003
+11:36:02 | INFO: Primitives created: 1
+11:36:02 | WARNING: Mesh FMA37684.003 is not valid, and may be exported wrongly
+11:36:02 | INFO: Extracting primitive: FMA37684.003
+11:36:02 | INFO: Primitives created: 1
+11:36:02 | WARNING: Mesh FMA37668.003 is not valid, and may be exported wrongly
+11:36:02 | INFO: Extracting primitive: FMA37668.003
+11:36:02 | INFO: Primitives created: 1
+11:36:02 | INFO: Extracting primitive: FMA37695.003
+11:36:02 | INFO: Primitives created: 1
+11:36:02 | INFO: Extracting primitive: FMA37699.003
+11:36:02 | INFO: Primitives created: 1
+11:36:02 | INFO: Finished glTF 2.0 export in 0.630612850189209 s
+
+STUDIO_BUILD_COMPLETE
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 01:35:57)
+Timer 'STL Import' took 15.24 ms
+Timer 'STL Import' took 2.67 ms
+Timer 'STL Import' took 0.97 ms
+Timer 'STL Import' took 1.05 ms
+Timer 'STL Import' took 4.07 ms
+Timer 'STL Import' took 7.53 ms
+Timer 'STL Import' took 7.51 ms
+Timer 'STL Import' took 3.88 ms
+Timer 'STL Import' took 4.34 ms
+Timer 'STL Import' took 5.91 ms
+Timer 'STL Import' took 3.43 ms
+Timer 'STL Import' took 2.84 ms
+Timer 'STL Import' took 3.35 ms
+Timer 'STL Import' took 2.83 ms
+Timer 'STL Import' took 3.49 ms
+Timer 'STL Import' took 3.62 ms
+
+Blender quit

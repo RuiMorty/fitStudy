@@ -1,0 +1,104 @@
+{
+  "assets": [
+    {
+      "source": "runs/day109/source/cover.png",
+      "output": "runs/day109/assets/cover.png",
+      "size": [
+        1600,
+        900
+      ],
+      "margin": 0.06,
+      "allowUpscale": false,
+      "note": "无字封面"
+    },
+    {
+      "source": "runs/day109/source/visual-01-familiar-cards.png",
+      "output": "runs/day109/assets/visual-01-familiar-cards.png",
+      "size": [
+        2800,
+        900
+      ],
+      "margin": 0.06,
+      "allowUpscale": false,
+      "note": "知识页：只看熟悉核对卡，不扩展新内容"
+    },
+    {
+      "source": "runs/day109/source/visual-02-arrival-check.png",
+      "output": "runs/day109/assets/visual-02-arrival-check.png",
+      "size": [
+        2800,
+        900
+      ],
+      "margin": 0.06,
+      "allowUpscale": false,
+      "note": "知识页：到达、签到与设备检查留缓冲"
+    },
+    {
+      "source": "runs/day109/source/visual-03-question-flow.png",
+      "output": "runs/day109/assets/visual-03-question-flow.png",
+      "size": [
+        2800,
+        900
+      ],
+      "margin": 0.06,
+      "allowUpscale": false,
+      "note": "知识页：题干优先，先易后难，标记回看"
+    },
+    {
+      "source": "runs/day109/source/visual-04-after-boundary.png",
+      "output": "runs/day109/assets/visual-04-after-boundary.png",
+      "size": [
+        2800,
+        900
+      ],
+      "margin": 0.06,
+      "allowUpscale": false,
+      "note": "知识页：考后记录过程，保护题目边界"
+    },
+    {
+      "source": "runs/day109/source/overview-01-familiar-cards.png",
+      "output": "runs/day109/assets/overview-01-familiar-cards.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "margin": 0.06,
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用：只看熟悉核对卡，不扩展新内容"
+    },
+    {
+      "source": "runs/day109/source/overview-02-arrival-check.png",
+      "output": "runs/day109/assets/overview-02-arrival-check.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "margin": 0.06,
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用：到达、签到与设备检查留缓冲"
+    },
+    {
+      "source": "runs/day109/source/overview-03-question-flow.png",
+      "output": "runs/day109/assets/overview-03-question-flow.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "margin": 0.06,
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用：题干优先，先易后难，标记回看"
+    },
+    {
+      "source": "runs/day109/source/overview-04-after-boundary.png",
+      "output": "runs/day109/assets/overview-04-after-boundary.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "margin": 0.06,
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用：考后记录过程，保护题目边界"
+    }
+  ],
+  "record": "runs/day109/image-processing.json"
+}

@@ -1,0 +1,63 @@
+{
+  "checks": [
+    {
+      "name": "Initial camera faces anatomical front without lateral offset",
+      "pass": true
+    },
+    {
+      "name": "Camera-relative front light exists",
+      "pass": true
+    },
+    {
+      "name": "Projected shadow maps disabled",
+      "pass": true
+    },
+    {
+      "name": "Playback keeps material colors direction 1",
+      "pass": true
+    },
+    {
+      "name": "Playback keeps pixel ratio direction 1",
+      "pass": true
+    },
+    {
+      "name": "Playback keeps material colors direction -1",
+      "pass": true
+    },
+    {
+      "name": "Playback keeps pixel ratio direction -1",
+      "pass": true
+    },
+    {
+      "name": "Same-angle geometry is direction independent 0",
+      "pass": true
+    },
+    {
+      "name": "Same-angle geometry is direction independent 30",
+      "pass": true
+    },
+    {
+      "name": "Same-angle geometry is direction independent 82",
+      "pass": true
+    },
+    {
+      "name": "Same-angle geometry is direction independent 120",
+      "pass": true
+    },
+    {
+      "name": "Front light follows front view",
+      "pass": true
+    },
+    {
+      "name": "Front light follows side view",
+      "pass": true
+    },
+    {
+      "name": "Front light follows back view",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "environment": "Local Chrome headless; not a physical phone",
+  "status": "passed"
+}

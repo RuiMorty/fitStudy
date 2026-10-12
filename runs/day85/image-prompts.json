@@ -1,0 +1,60 @@
+{
+  "commonPrompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper background, loose paper sheets, border, sticker edge, shadow, or halo. A small unmarked rigid evidence card is allowed as a prop. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.",
+  "assets": [
+    {
+      "file": "cover.png",
+      "role": "cover",
+      "prompt": "Wide 16:9 wordless single-scene course cover. Despa calmly holds one low deceleration stance while three plain cones are isolated along the lower canvas edge with no ground plane or cast shadow; Bojji observes from a safe stable stance. No running trails, arrows, race finish, or numbers. Keep exactly one Bojji and one Despa, both full bodies visible when practical. Explain one course theme through one coherent current situation, never sequence frames. No duplicate figures, alternate poses, motion trails, arrows, readable signs, text, numbers, labels or unrelated equipment."
+    },
+    {
+      "file": "visual-01.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Despa holds a low braking stance aligned with a compact three-cone turn arrangement while Bojji holds a straight relaxed running-prep stance; all cones are isolated along the lower canvas edge with no ground plane or cast shadow. One scene, no motion trails. Keep exactly one Bojji and one Despa. Use one continuous current pose to explain “直线、变向与反应不同”, with all limbs and props fully visible. No duplicate figures, alternate poses, sequence frames, arrows, motion trails, text, numbers, labels, readable screens, blue circles or unrelated equipment."
+    },
+    {
+      "file": "visual-02.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Bojji holds one small blank rigid cue card with no markings, map, line, path or arrow while Despa observes three plain cones arranged only as a compact T-shaped cluster; neither is racing and the cones do not form a route, ground plane or cast shadow. Keep exactly one Bojji and one Despa. Use one continuous stable current pose to explain “测试要匹配项目目标”, with all limbs and props fully visible. No duplicate figures, alternate poses, sequence frames, arrows, motion trails, text, numbers, labels, readable screens, blue circles or unrelated equipment."
+    },
+    {
+      "file": "visual-03.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Despa holds one smooth blank timing prop with no face, display, buttons, digits or marks while Bojji stands stably and simply indicates one already-secured boot; three plain cones are isolated as loose props with no ground plane or cast shadow. No race, wet surface, kneeling, crouching or imbalance. Keep exactly one Bojji and one Despa. Use one continuous current pose to explain “统一场地与流程”, with all limbs and props fully visible. No duplicate figures, alternate poses, sequence frames, arrows, motion trails, text, numbers, labels, readable screens, blue circles or unrelated equipment."
+    },
+    {
+      "file": "visual-04.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Despa watches Bojji hold one quiet stable low deceleration-prep posture beside two isolated cones while one small closed camera prop sits near the far side fully inside the safe margin; the camera has no screen, recording light, labels, tripod or motion-capture points. Keep exactly one Bojji and one Despa. Use one continuous current pose to explain “成绩要配动作线索”, with all limbs and props fully visible. No duplicate figures, alternate poses, sequence frames, arrows, motion trails, text, numbers, labels, readable screens, blue circles, ground plane or cast shadow."
+    },
+    {
+      "file": "visual-05.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Bojji holds one calm stable low-speed stop posture beside one isolated cone while Despa holds one short slack resistance loop separately at waist height; the loop is not attached to either person or cone, not anchored, stretched, wrapped, stepped on or crossing Bojji's body. The two people do not touch and keep a respectful distance. Keep exactly one Bojji and one Despa. Use one continuous current pose to explain “结果连接训练与复测”, with all limbs and props fully visible. No duplicate figures, alternate poses, sequence frames, arrows, motion trails, text, numbers, labels, readable screens, blue circles, ground plane, cast shadow or unrelated equipment."
+    },
+    {
+      "file": "overview-01.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Despa holds a low braking stance aligned with a compact three-cone turn arrangement while Bojji holds a straight relaxed running-prep stance; all cones are isolated along the lower canvas edge with no ground plane or cast shadow. One scene, no motion trails. Keep exactly one Bojji and one Despa. Compose specifically for a compact overview panel and do not reuse a knowledge-page composition. No duplicate figures, alternate poses, sequence frames, text, numbers, labels, arrows, motion trails or unrelated equipment."
+    },
+    {
+      "file": "overview-02.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless compact overview-only illustration with a clearly independent composition: Bojji holds one small blank rigid cue card with no markings, map, line, path or arrow while Despa observes three plain cones arranged only as a compact T-shaped cluster; neither is racing and the cones do not form a route, ground plane or cast shadow. Keep exactly one Bojji and one Despa. Change the people’s left-right placement and card/cone hierarchy from the wide knowledge illustration. No duplicate figures, alternate poses, sequence frames, text, numbers, labels, arrows, motion trails or unrelated equipment."
+    },
+    {
+      "file": "overview-03.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless compact overview-only illustration with a clearly independent composition: Despa holds one smooth blank timing prop with no face, display, buttons, digits or marks while Bojji stands stably and simply indicates one already-secured boot; three plain cones are loose isolated props with no ground plane or cast shadow. No race, wet surface, kneeling, crouching or imbalance. Keep exactly one Bojji and one Despa. Change the people’s placement and prop hierarchy from the wide knowledge illustration. No duplicate figures, alternate poses, sequence frames, text, numbers, labels, arrows, motion trails or unrelated equipment."
+    },
+    {
+      "file": "overview-04.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless compact overview-only illustration with a clearly independent composition: Despa watches Bojji hold one quiet stable low deceleration-prep posture beside two isolated cones while one small closed camera prop sits near the far side fully inside the safe margin; the camera has no screen, recording light, labels, tripod or motion-capture points. Keep exactly one Bojji and one Despa. Change the people’s placement and camera/cone hierarchy from the wide knowledge illustration. No duplicate figures, alternate poses, sequence frames, text, numbers, labels, arrows, motion trails, ground plane, cast shadow or unrelated equipment."
+    },
+    {
+      "file": "overview-05.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless compact overview-only illustration with a clearly independent composition: Bojji holds one calm stable low-speed stop posture beside one isolated cone while Despa holds one short slack resistance loop separately at waist height; the loop is not attached to either person or cone, not anchored, stretched, wrapped, stepped on or crossing Bojji's body. The two people do not touch and keep a respectful distance. Keep exactly one Bojji and one Despa. Change the people’s placement and prop hierarchy from the wide knowledge illustration. No duplicate figures, alternate poses, sequence frames, text, numbers, labels, arrows, motion trails, ground plane, cast shadow or unrelated equipment."
+    }
+  ]
+}

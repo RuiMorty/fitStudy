@@ -1,0 +1,335 @@
+{
+  "schemaVersion": 1,
+  "assets": [
+    {
+      "file": "cover.png",
+      "role": "cover",
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "initial",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T09:56:08.143543Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nWide 16:9 wordless single-scene course cover. Exactly one Despa is the sole main action figure, holding a quiet low athletic landing stance after a tiny hop with both feet grounded, hips knees and ankles softly bent. Exactly one Bojji stands nearby as an observing companion with open hands. Keep both full bodies visible. Explain landing, braking and speed agility with one continuous action pose. No duplicate figures, alternate poses, sequence frames, motion trails, arrows, text, reaction lights or extra equipment.",
+          "promptSha256": "3f0eca54089a9ba238a1dead77b57ad3cadda6cc642c5735486e87f3f25134a5",
+          "assetPrompt": "Wide 16:9 wordless single-scene course cover. Exactly one Despa is the sole main action figure, holding a quiet low athletic landing stance after a tiny hop with both feet grounded, hips knees and ankles softly bent. Exactly one Bojji stands nearby as an observing companion with open hands. Keep both full bodies visible. Explain landing, braking and speed agility with one continuous action pose. No duplicate figures, alternate poses, sequence frames, motion trails, arrows, text, reaction lights or extra equipment.",
+          "output": "runs/day61/image-requests/cover-eb86e17540/attempt-01/cover.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T09:56:38.463805Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 852147,
+          "usablePng": true,
+          "sha256": "141480560e1a7681e9472b90ec02a0ba6878b41f660495b5c8b4cc2ca0ed8c1a"
+        },
+        {
+          "attempt": 2,
+          "kind": "adjusted-retry",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T09:57:12.200304Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nWide 16:9 wordless single-scene course cover. Exactly one Despa is the sole main action figure, holding a quiet low athletic landing stance after a tiny hop with both feet grounded, hips knees and ankles softly bent. Exactly one Bojji stands nearby as an observing companion with open hands. Keep both full bodies visible. Explain landing, braking and speed agility with one continuous action pose. Use only clean dark-gray linework; absolutely no red, yellow, rainbow or colored edge fringing, glow, halo, loose pixels or artifact outlines around either character. No duplicate figures, alternate poses, sequence frames, motion trails, arrows, text, reaction lights or extra equipment.",
+          "promptSha256": "a629543de1e5e2894621ecec3b20966da22712cde0b6e3bd36aa502a13123e9a",
+          "assetPrompt": "Wide 16:9 wordless single-scene course cover. Exactly one Despa is the sole main action figure, holding a quiet low athletic landing stance after a tiny hop with both feet grounded, hips knees and ankles softly bent. Exactly one Bojji stands nearby as an observing companion with open hands. Keep both full bodies visible. Explain landing, braking and speed agility with one continuous action pose. Use only clean dark-gray linework; absolutely no red, yellow, rainbow or colored edge fringing, glow, halo, loose pixels or artifact outlines around either character. No duplicate figures, alternate poses, sequence frames, motion trails, arrows, text, reaction lights or extra equipment.",
+          "output": "runs/day61/image-requests/cover-eb86e17540/attempt-02/cover.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T09:57:46.584045Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 871736,
+          "usablePng": true,
+          "sha256": "81ac4ca76e2ed894cfd629bb2117c7d6b4ef65ef2dfa812183b44948aa12eb9e"
+        }
+      ],
+      "source": {
+        "path": "runs/day61/source/cover.png",
+        "exists": false
+      },
+      "lastStatus": "generated-pending-quality-review"
+    },
+    {
+      "file": "visual-01-ssc.png",
+      "role": "knowledge",
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "initial",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T10:00:06.201331Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nWide 28:9 wordless single-scene knowledge illustration. Exactly one Despa is the sole main action figure in a controlled shallow countermovement preparation: both feet grounded, hips knees and ankles softly flexed, trunk long, arms naturally set for a small jump. Exactly one Bojji observes at a respectful distance with open hand. Explain the integrated stretch-shortening cycle through one continuous body position, not separate phase snapshots. No duplicate figures, alternate poses, sequence frames, arrows, motion lines, labels, text or equipment.",
+          "promptSha256": "efed23f877ce600e895f4a25551a8509798afc43ade6e6b3ae0246d1c532f66b",
+          "assetPrompt": "Wide 28:9 wordless single-scene knowledge illustration. Exactly one Despa is the sole main action figure in a controlled shallow countermovement preparation: both feet grounded, hips knees and ankles softly flexed, trunk long, arms naturally set for a small jump. Exactly one Bojji observes at a respectful distance with open hand. Explain the integrated stretch-shortening cycle through one continuous body position, not separate phase snapshots. No duplicate figures, alternate poses, sequence frames, arrows, motion lines, labels, text or equipment.",
+          "output": "runs/day61/image-requests/visual-01-ssc-31766ef62e/attempt-01/visual-01-ssc.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T10:00:34.277294Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 759206,
+          "usablePng": true,
+          "sha256": "2c58f32f3207d67022fd058dc0997a9fac305fa50567254c0535e8ea6cf866b2"
+        }
+      ],
+      "source": {
+        "path": "runs/day61/source/visual-01-ssc.png",
+        "exists": false
+      },
+      "lastStatus": "generated-pending-quality-review"
+    },
+    {
+      "file": "visual-02-amortization.png",
+      "role": "knowledge",
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "initial",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T10:00:34.339707Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nWide 28:9 wordless single-scene knowledge illustration. Exactly one Despa is the sole main action figure in a very small quiet rebound loading stance, both feet planted and knees softly bent, posture stable and not a maximal jump. Exactly one Bojji stands nearby observing with one open hand. Explain controlled transition and strength before speed through one continuous stance. No duplicate figures, alternate poses, sequence frames, stopwatch, numbers, arrows, motion trails, text or extra equipment.",
+          "promptSha256": "032ba1697d31e86469d5ca84cb233011d793e9acd359fff1e2777844920a1352",
+          "assetPrompt": "Wide 28:9 wordless single-scene knowledge illustration. Exactly one Despa is the sole main action figure in a very small quiet rebound loading stance, both feet planted and knees softly bent, posture stable and not a maximal jump. Exactly one Bojji stands nearby observing with one open hand. Explain controlled transition and strength before speed through one continuous stance. No duplicate figures, alternate poses, sequence frames, stopwatch, numbers, arrows, motion trails, text or extra equipment.",
+          "output": "runs/day61/image-requests/visual-02-amortization-60eedd26b4/attempt-01/visual-02-amortization.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T10:01:04.426331Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 703894,
+          "usablePng": true,
+          "sha256": "32fd2bde3574e2f4ef0d1f13ad6d36e01f1125ee0e19e48a58f2d266b33c6ba1"
+        }
+      ],
+      "source": {
+        "path": "runs/day61/source/visual-02-amortization.png",
+        "exists": false
+      },
+      "lastStatus": "generated-pending-quality-review"
+    },
+    {
+      "file": "visual-03-landing.png",
+      "role": "knowledge",
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "initial",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T10:01:04.481095Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nWide 28:9 wordless single-scene knowledge illustration. Exactly one Bojji is the sole main action figure in a quiet landing position just after stepping from one very low plain box, with whole-foot contact and hips knees and ankles sharing a small bend. Exactly one Despa observes calmly with open hands. Explain landing absorption and braking with one continuous pose. No duplicate figures, alternate poses, sequence frames, impact burst, arrows, text or extra equipment beyond the one low box.",
+          "promptSha256": "77554807cb8482a75be49819a08f1f6fba15860ec019b4785bea128928f25328",
+          "assetPrompt": "Wide 28:9 wordless single-scene knowledge illustration. Exactly one Bojji is the sole main action figure in a quiet landing position just after stepping from one very low plain box, with whole-foot contact and hips knees and ankles sharing a small bend. Exactly one Despa observes calmly with open hands. Explain landing absorption and braking with one continuous pose. No duplicate figures, alternate poses, sequence frames, impact burst, arrows, text or extra equipment beyond the one low box.",
+          "output": "runs/day61/image-requests/visual-03-landing-84c4cd86f5/attempt-01/visual-03-landing.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T10:01:32.094897Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 939467,
+          "usablePng": true,
+          "sha256": "19a624bb018d81315927e62499969e12c294e2b54036d1f8ad1294b5108b8c78"
+        }
+      ],
+      "source": {
+        "path": "runs/day61/source/visual-03-landing.png",
+        "exists": false
+      },
+      "lastStatus": "generated-pending-quality-review"
+    },
+    {
+      "file": "visual-04-progression.png",
+      "role": "knowledge",
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "initial",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T10:01:32.149888Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nWide 28:9 wordless single-scene knowledge illustration. Exactly one Despa is the sole main action figure in a modest lateral step-and-stick landing, one foot bearing weight with hips knees and ankles quiet and controlled. Exactly one Bojji observes from a stable two-foot stance. Explain a controlled directional task as a later progression without showing earlier or later steps. No duplicate figures, alternate poses, sequence frames, high jump, arrows, text, boxes or extra equipment.",
+          "promptSha256": "9f33224816ab92f3ef3b902e6ea989817fd7b8abefb2728eba30e955aba47952",
+          "assetPrompt": "Wide 28:9 wordless single-scene knowledge illustration. Exactly one Despa is the sole main action figure in a modest lateral step-and-stick landing, one foot bearing weight with hips knees and ankles quiet and controlled. Exactly one Bojji observes from a stable two-foot stance. Explain a controlled directional task as a later progression without showing earlier or later steps. No duplicate figures, alternate poses, sequence frames, high jump, arrows, text, boxes or extra equipment.",
+          "output": "runs/day61/image-requests/visual-04-progression-5aae35c3f9/attempt-01/visual-04-progression.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T10:01:59.654690Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 711993,
+          "usablePng": true,
+          "sha256": "21ac45a14e23c65350ef18d33a0b1f7bfa617618b03b25b55b6e38248055c2d0"
+        }
+      ],
+      "source": {
+        "path": "runs/day61/source/visual-04-progression.png",
+        "exists": false
+      },
+      "lastStatus": "generated-pending-quality-review"
+    },
+    {
+      "file": "visual-05-saq.png",
+      "role": "knowledge",
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "initial",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T10:01:59.711795Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nWide 28:9 wordless single-scene knowledge illustration. Exactly one Despa is the sole main action figure in a low controlled deceleration stance just before three plain cones, torso calm and feet fully visible. Exactly one Bojji observes from a safe stable stance. Explain braking before planned change of direction through one continuous pose. No duplicate figures, alternate poses, sequence frames, running trails, reaction lights, arrows, readable signs, text or other equipment.",
+          "promptSha256": "07d2d306faebd5b6bb39d3a7e4d6528cfa6c3fcc746d76fd87c7a1dc2ee22b83",
+          "assetPrompt": "Wide 28:9 wordless single-scene knowledge illustration. Exactly one Despa is the sole main action figure in a low controlled deceleration stance just before three plain cones, torso calm and feet fully visible. Exactly one Bojji observes from a safe stable stance. Explain braking before planned change of direction through one continuous pose. No duplicate figures, alternate poses, sequence frames, running trails, reaction lights, arrows, readable signs, text or other equipment.",
+          "output": "runs/day61/image-requests/visual-05-saq-6c4aec2a34/attempt-01/visual-05-saq.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T10:02:30.713381Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 854311,
+          "usablePng": true,
+          "sha256": "483fd05ccb02774bbe79e8dd5614b84899de622aeb4f228ac2a43762e0f2c009"
+        }
+      ],
+      "source": {
+        "path": "runs/day61/source/visual-05-saq.png",
+        "exists": false
+      },
+      "lastStatus": "generated-pending-quality-review"
+    },
+    {
+      "file": "overview-01-ssc.png",
+      "role": "overview-item",
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "initial",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T10:02:30.764296Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nWide 4:3 wordless single-scene overview-only illustration. Exactly one Despa is the sole main action figure in a shallow controlled countermovement preparation with both feet grounded; exactly one Bojji observes nearby. Explain integrated SSC preparation with one continuous pose. No duplicate figures, alternate poses, sequence frames, arrows, motion trails, labels or text.",
+          "promptSha256": "b529d49454ca056a934939f1b7599242b871662bca3e34a1986c67f3617f3ec0",
+          "assetPrompt": "Wide 4:3 wordless single-scene overview-only illustration. Exactly one Despa is the sole main action figure in a shallow controlled countermovement preparation with both feet grounded; exactly one Bojji observes nearby. Explain integrated SSC preparation with one continuous pose. No duplicate figures, alternate poses, sequence frames, arrows, motion trails, labels or text.",
+          "output": "runs/day61/image-requests/overview-01-ssc-5e20a1f62c/attempt-01/overview-01-ssc.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T10:03:05.026471Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 888289,
+          "usablePng": true,
+          "sha256": "63598e5082e27caf44055a1cc769895207a7ee6f446641c3b469ecb9c7e182a9"
+        }
+      ],
+      "source": {
+        "path": "runs/day61/source/overview-01-ssc.png",
+        "exists": false
+      },
+      "lastStatus": "generated-pending-quality-review"
+    },
+    {
+      "file": "overview-02-amortization.png",
+      "role": "overview-item",
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "initial",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T10:03:05.095899Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nWide 4:3 wordless single-scene overview-only illustration. Exactly one Despa is the sole main action figure in a quiet low rebound loading stance with feet grounded; exactly one Bojji observes with open hand. Explain controlled transition. No duplicate figures, alternate poses, sequence frames, stopwatch, numbers, text, arrows or motion trails.",
+          "promptSha256": "5c86ed19be3d80ceffd9f9610f0555698de37a5f7965be68c46f961170ca14cf",
+          "assetPrompt": "Wide 4:3 wordless single-scene overview-only illustration. Exactly one Despa is the sole main action figure in a quiet low rebound loading stance with feet grounded; exactly one Bojji observes with open hand. Explain controlled transition. No duplicate figures, alternate poses, sequence frames, stopwatch, numbers, text, arrows or motion trails.",
+          "output": "runs/day61/image-requests/overview-02-amortization-2d86c49850/attempt-01/overview-02-amortization.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T10:03:40.301004Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 841008,
+          "usablePng": true,
+          "sha256": "b79f1f82cf2f747de76b5a31af9f015316b0992aa774dc4461cd7d11bed93f36"
+        }
+      ],
+      "source": {
+        "path": "runs/day61/source/overview-02-amortization.png",
+        "exists": false
+      },
+      "lastStatus": "generated-pending-quality-review"
+    },
+    {
+      "file": "overview-03-landing.png",
+      "role": "overview-item",
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "initial",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T10:03:40.371246Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nWide 4:3 wordless single-scene overview-only illustration. Exactly one Bojji is the sole main action figure in a quiet two-foot landing stance just after one low plain box; exactly one Despa observes. Explain braking and absorption. No duplicate figures, alternate poses, sequence frames, impact burst, arrows, text or extra equipment beyond the box.",
+          "promptSha256": "280203d2eda76675dea3ef548f3a00c346482b46deb1deb7100f0745dd4d0271",
+          "assetPrompt": "Wide 4:3 wordless single-scene overview-only illustration. Exactly one Bojji is the sole main action figure in a quiet two-foot landing stance just after one low plain box; exactly one Despa observes. Explain braking and absorption. No duplicate figures, alternate poses, sequence frames, impact burst, arrows, text or extra equipment beyond the box.",
+          "output": "runs/day61/image-requests/overview-03-landing-938eb8651b/attempt-01/overview-03-landing.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T10:04:16.662010Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 886526,
+          "usablePng": true,
+          "sha256": "9cbb91f9e78b5f8892dfebf0e661cef02767b506193f179a2f91785c801bbd09"
+        }
+      ],
+      "source": {
+        "path": "runs/day61/source/overview-03-landing.png",
+        "exists": false
+      },
+      "lastStatus": "generated-pending-quality-review"
+    },
+    {
+      "file": "overview-04-progression.png",
+      "role": "overview-item",
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "initial",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T10:04:16.716098Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nWide 4:3 wordless single-scene overview-only illustration. Exactly one Despa is the sole main action figure in a modest lateral step-and-stick landing; exactly one Bojji observes from stable stance. Explain gradual plyometric progression through one controlled direction task. No duplicate figures, alternate poses, sequence frames, high jump, arrows, text or equipment.",
+          "promptSha256": "cf8f7436c3c3fee8844e6f05274e23cc6769fd10eb4080a61b7bcf4505dd5162",
+          "assetPrompt": "Wide 4:3 wordless single-scene overview-only illustration. Exactly one Despa is the sole main action figure in a modest lateral step-and-stick landing; exactly one Bojji observes from stable stance. Explain gradual plyometric progression through one controlled direction task. No duplicate figures, alternate poses, sequence frames, high jump, arrows, text or equipment.",
+          "output": "runs/day61/image-requests/overview-04-progression-15276d43bc/attempt-01/overview-04-progression.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T10:04:51.726108Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 818973,
+          "usablePng": true,
+          "sha256": "169d9d05f6cb9b03354b7686f4bcf390873441ce55c60ac16b5066d9bce4a4e7"
+        }
+      ],
+      "source": {
+        "path": "runs/day61/source/overview-04-progression.png",
+        "exists": false
+      },
+      "lastStatus": "generated-pending-quality-review"
+    },
+    {
+      "file": "overview-05-saq.png",
+      "role": "overview-item",
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "initial",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T10:04:51.783901Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nWide 4:3 wordless single-scene overview-only illustration. Exactly one Despa is the sole main action figure in a low controlled braking stance before two plain cones; exactly one Bojji observes. Explain SAQ deceleration and direction change. No duplicate figures, alternate poses, sequence frames, reaction lights, arrows, text, motion trails or readable signs.",
+          "promptSha256": "dc739cf9af67642ad09223139f1f1029450cf857d5e2d700c4488648ba1a2c87",
+          "assetPrompt": "Wide 4:3 wordless single-scene overview-only illustration. Exactly one Despa is the sole main action figure in a low controlled braking stance before two plain cones; exactly one Bojji observes. Explain SAQ deceleration and direction change. No duplicate figures, alternate poses, sequence frames, reaction lights, arrows, text, motion trails or readable signs.",
+          "output": "runs/day61/image-requests/overview-05-saq-7a77bcc4d7/attempt-01/overview-05-saq.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T10:05:24.182642Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 864154,
+          "usablePng": true,
+          "sha256": "d5e246f9e10cf4e44920b3b9da3e0abb25d7ad093fe3050e43036d369119e612"
+        }
+      ],
+      "source": {
+        "path": "runs/day61/source/overview-05-saq.png",
+        "exists": false
+      },
+      "lastStatus": "generated-pending-quality-review"
+    }
+  ],
+  "provider": "Lingzhi",
+  "preset": "quality",
+  "model": "gpt-image-2.5-sunburst",
+  "input": "runs/day61/image-prompts.json",
+  "updatedAt": "2026-09-30T10:05:24.183043Z"
+}

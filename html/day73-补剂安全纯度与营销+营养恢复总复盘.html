@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Day 73 · 补剂安全纯度与营销+营养恢复总复盘</title><link rel="icon" type="image/svg+xml" href="assets/fitness-study-logo-open-circle.svg?v=a6d8e5caaa61"><style>:root { color-scheme: light; --ink: #111113; --muted: #71717a; --line: #e4e4e7; --accent: #ff5a1f; --green: #0ea66b; --blue: #2563eb; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; font-synthesis: none; letter-spacing: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); overflow-wrap: anywhere; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+img { display: block; max-width: 100%; }
+button:focus-visible, a:focus-visible, summary:focus-visible, input:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
+svg.icon { width: 20px; height: 20px; }
+.icon-button { display: inline-grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 1px solid var(--line); border-radius: 6px; background: white; }
+[hidden] { display: none !important; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
+
+body { background: #f6f8f7; font-size: 14px; line-height: 1.65; }
+main { max-width: 980px; margin: auto; padding: 24px 18px 60px; }
+.header { padding: 22px 4px 14px; }
+h1 { margin: 10px 0 8px; font-size: 36px; line-height: 1.2; }
+h1::before { content: ""; display: block; width: 34px; height: 4px; background: var(--accent); margin-bottom: 10px; }
+h2 { font-size: 17px; margin: 0 0 14px; }
+h3 { font-size: 16px; margin: 0 0 8px; }
+.sub { color: var(--muted); margin: 5px 0 18px; }
+.meta { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { display: inline-block; border: 1px solid var(--line); border-radius: 20px; background: white; color: var(--muted); padding: 3px 10px; font-size: 12px; font-weight: 600; }
+.chip:nth-child(1) { background: #e2f7eb; color: #15803d; border-color: transparent; }
+.chip:nth-child(2) { background: #e7f0fe; color: #2563eb; border-color: transparent; }
+.chip:nth-child(3) { background: #fff2e5; color: #9a4c05; border-color: transparent; }
+.panel, .figure, .warn, .mnemonic { background: white; border: 1px solid #e2e8e4; border-radius: 14px; box-shadow: 0 2px 12px rgba(20,40,30,.06); padding: 20px; margin: 16px 0; }
+.green { border-left: 5px solid var(--green); }
+.orange { border-left: 5px solid #ea7a17; }
+.blue { border-left: 5px solid #0ea5e9; }
+.takeaway { margin: 0; }
+.figure { text-align: center; }
+.figure button { display: block; position: relative; width: 100%; border: 0; padding: 0; background: white; cursor: zoom-in; }
+.figure img { max-height: 760px; width: 100%; object-fit: contain; }
+.figure .icon-button { position: absolute; bottom: 8px; right: 8px; background: #ffffffed; }
+.caption { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
+.kp { list-style: none; padding: 0; margin: 0; }
+.kp > li { border-bottom: 1px dashed #e2e8e4; }
+.kp > li:last-child { border-bottom: 0; }
+.kp summary { cursor: pointer; padding: 13px 8px; font-weight: 650; }
+.kp summary::marker { color: var(--green); }
+.term { color: #0a7d52; background: #e2f7eb; border-radius: 6px; padding: 1px 5px; }
+.kp-body { padding: 2px 14px 16px 24px; }
+.detail-block { margin: 12px 0; }
+.detail-block h4 { font-size: 13px; color: #08744d; margin: 0 0 4px; }
+.detail-block p { margin: 0; white-space: pre-line; }
+.warn { border-left: 5px solid #e23b3b; background: #fffafa; }
+.warn p { margin: 8px 0; }
+.misconception { color: #a82b32; }
+.mnemonic { border-left: 4px solid var(--accent); box-shadow: none; }
+.mnemonic strong { color: #df4716; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+.flip { height: 168px; perspective: 900px; border: 0; background: transparent; padding: 0; text-align: center; }
+.flip-in { display: block; height: 100%; position: relative; transition: transform .45s; transform-style: preserve-3d; }
+.flip[aria-pressed="true"] .flip-in { transform: rotateY(180deg); }
+.face { position: absolute; inset: 0; backface-visibility: hidden; border: 1px solid var(--line); border-radius: 10px; padding: 15px; background: #fafafa; display: flex; align-items: center; justify-content: center; overflow-y: auto; }
+.back { transform: rotateY(180deg); background: #eef9f4; color: #075e40; border-color: #c8eadb; }
+.practice { padding-left: 20px; }
+.practice li { margin: 7px 0; }
+.question { border-top: 1px solid #e2e8e4; padding: 20px 0 8px; margin-top: 12px; min-width: 0; }
+.options { display: grid; gap: 7px; margin: 10px 0; }
+.option { display: flex; gap: 10px; align-items: baseline; border: 1px solid #e2e8e4; background: #f0f4f2; padding: 9px 12px; border-radius: 8px; cursor: pointer; }
+.option input { flex-shrink: 0; accent-color: var(--green); }
+.option:has(input:checked) { border-color: #0ea5e9; background: #e7f6fd; }
+.question[data-result="correct"] .option:has(input:checked) { border-color: #0ea66b; background: #e7f8ef; }
+.question[data-result="wrong"] .option:has(input:checked) { border-color: #e23b3b; background: #fff0f0; }
+.answer { background: #f8fbfa; border-left: 3px solid #0ea5e9; padding: 10px; margin-top: 10px; }
+.check { border: 0; background: #0ea66b; color: white; padding: 9px 14px; border-radius: 7px; }
+footer { color: var(--muted); font-size: 12px; margin-top: 28px; }
+footer ul { padding-left: 20px; }
+dialog { width: min(1200px, 96vw); max-height: 94dvh; padding: 52px 16px 16px; border: 0; border-radius: 8px; background: white; }
+dialog::backdrop { background: #15191dd9; }
+dialog img { width: 100%; max-height: 78dvh; object-fit: contain; }
+dialog .icon-button { position: absolute; top: 8px; right: 10px; }
+@media (max-width: 600px) {
+  main { padding: 16px 12px 40px; }
+  h1 { font-size: 26px; }
+  .header { padding: 16px 4px 12px; }
+  .panel, .figure, .warn, .mnemonic { padding: 15px; }
+  .kp-body { padding-left: 16px; }
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .face { padding: 12px; }
+}
+</style></head><body><main><header class="header"><h1>Day 73 · 补剂安全纯度与营销+营养恢复总复盘</h1><p class="sub">把监管、纯度、营销与恢复放在一套决策里，而不是把补剂当捷径。</p><div class="meta"><span class="chip">补剂纯度</span><span class="chip">营销识别</span><span class="chip">恢复复盘</span></div></header><section class="panel green"><h2>一句话总结</h2><p class="takeaway">补剂监管因地区而异。以美国DSHEA为例，补充剂通常不按药品式上市前疗效审批管理；其他地区规则不同。NSF Certified for Sport或Informed Sport可降低部分污染和标签风险，但不是零风险保证，参赛者仍需查当前规则。个案、代言和机制故事不能替代可重复人体研究。恢复主线仍是能量、营养、水合、睡眠和训练负荷，补剂只在明确缺口和安全条件下讨论。</p></section><figure class="figure"><button data-zoom aria-label="放大详情图"><img class="" src="assets/阶段4 营养恢复/day73-补剂安全纯度与营销+营养恢复总复盘.png" alt="补剂安全、认证、营销识别和营养恢复中文总览"><span class="icon-button"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 15 6 6" /><path d="m15 9 6-6" /><path d="M21 16v5h-5" /><path d="M21 8V3h-5" /><path d="M3 16v5h5" /><path d="m3 21 6-6" /><path d="M3 8V3h5" /><path d="M9 9 3 3" /></svg></span></button><figcaption class="caption">监管和第三方认证可以降低部分风险，却无法代替产品批次核对、赛事规则、医学判断和恢复基础；能量、营养、水合、睡眠与训练安排仍是主线。</figcaption></figure><section class="panel"><h2>核心要点</h2><ul class="kp"><li><details><summary><span class="term">监管不是药品审批：先分清地区与类别</span>：各地对补剂的定义、上市、标签和抽检要求不同；“在售”并不自动代表功效、纯度或适合个人。</summary><div class="kp-body"><section class="detail-block"><h4>以DSHEA为例，不以偏概全</h4><p>美国DSHEA下，补充剂通常不按药品的上市前疗效审批路径管理，生产商对安全与标签承担责任，并非每个产品都在上架前完成独立疗效审查。这是美国法规示例，不能直接替代中国或其他地区的监管判断。</p></section><section class="detail-block"><h4>成分表仍要逐项看</h4><p>查看完整成分、每份含量、批次、过敏原和不必要的复合刺激成分；不要只看正面大字或“天然”标签。疾病、用药、妊娠、未成年人和高水平赛事参与者应增加专业核对。</p></section></div></details></li><li><details><summary><span class="term">第三方认证：降低风险，不签绝对保证</span>：NSF Certified for Sport、Informed Sport等项目可提供额外筛查与追溯线索，但范围、批次和规则都要看清。</summary><div class="kp-body"><section class="detail-block"><h4>认证具体解决什么</h4><p>第三方项目通常关注禁用物质筛查、标签一致性或生产质量的部分环节；不同项目的检测范围和抽检方式不同。认证标识应能在项目官方数据库中查到对应产品和批次，不能只信包装图案。</p></section><section class="detail-block"><h4>为什么仍不是零风险</h4><p>污染、批次差异、储存、假货、规则更新和个体不良反应仍可能发生。参赛者应把认证作为风险管理的一层，而非合规担保；遇到赛事疑问仍需向适用反兴奋剂机构核对。</p></section></div></details></li><li><details><summary><span class="term">识别营销：证据强度要大于故事强度</span>：个案、代言、前后对比、专利名和模糊术语不能替代高质量、可重复、与目标人群匹配的人体研究。</summary><div class="kp-body"><section class="detail-block"><h4>先问四个问题</h4><p>研究对象和你的目标是否匹配？对照组和剂量是否清楚？结局是否是实际表现或健康指标？结果是否被独立团队重复？若只有品牌自有研究、模糊“临床级”字眼或极端承诺，证据应被降级看待。</p></section><section class="detail-block"><h4>警惕不可能的承诺</h4><p>“无训练增肌”“局部融脂”“排毒重置”“零风险适合所有人”等说法与训练科学不符。不要用恐惧营销替代营养教育，也不要因产品贵、网红多或包装复杂就推断有效。</p></section></div></details></li><li><details><summary><span class="term">恢复总复盘：补剂只占最小一层</span>：恢复要回到能量、碳水、蛋白质、液体、电解质、睡眠、训练负荷和压力管理；补剂只在明确缺口和安全条件下讨论。</summary><div class="kp-body"><section class="detail-block"><h4>把恢复写成日常动作</h4><p>根据训练量与目标安排规律进食、训练前后耐受的餐次、液体与睡眠；用训练表现、疲劳、胃肠反应和连续趋势反馈调整。一次高热量餐、一次补剂或一次完美睡眠都不能抵消长期恢复不足。</p></section><section class="detail-block"><h4>异常信号优先转介</h4><p>反复头晕、晕厥、胸痛、严重胃肠不适、月经变化、快速体重变化或对食物和训练的强迫焦虑，都不应被补剂方案掩盖。先降低风险训练并联系医生、注册营养师或心理健康专业人员。</p></section></div></details></li></ul></section><section class="warn"><h2>常见误区</h2><p><strong class="misconception">误区：能在商店或平台买到，就等于已经像药品一样审过疗效和纯度。</strong><br>辨析：监管路径因地区和类别不同；在售不能自动证明有效、准确或适合个人。</p><p><strong class="misconception">误区：有第三方认证就绝对不会污染、违规或产生不良反应。</strong><br>辨析：认证能降低部分风险，但批次、假货、规则更新和个人反应仍需管理。</p><p><strong class="misconception">误区：网红前后对比和“临床级”字眼就是强证据。</strong><br>辨析：应看研究人群、对照、实际结局、重复性和利益冲突，不把故事当结论。</p><p><strong class="misconception">误区：恢复差就再叠加几种补剂。</strong><br>辨析：先回到能量、营养、水合、睡眠和训练负荷；异常症状需要专业评估。</p></section><section class="mnemonic"><h2>记忆口诀</h2><p><strong>查地区、查批次、查证据；先吃睡练，补剂最后。</strong></p></section><section class="panel"><h2>翻转卡复习</h2><div class="cards"><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">美国DSHEA能说明什么？</span><span class="face back" aria-hidden="true">它是美国补剂监管的一个例子：补剂并非都走药品式上市前疗效审批路径。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">第三方认证的正确定位？</span><span class="face back" aria-hidden="true">额外风险管理线索，可降低部分风险，却不能保证零风险。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">识别营销可问哪四点？</span><span class="face back" aria-hidden="true">人群、对照与剂量、实际结局、是否独立重复。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">“天然”能证明安全吗？</span><span class="face back" aria-hidden="true">不能；仍需看完整成分、剂量、纯度、健康情况和相互作用。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">恢复最主要的基础？</span><span class="face back" aria-hidden="true">能量、碳水、蛋白质、液体、电解质、睡眠和合理训练负荷。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">异常症状被补剂掩盖时怎么办？</span><span class="face back" aria-hidden="true">停止加码和高风险训练，及时转给医生、注册营养师或心理健康专业人员。</span></span></button></div></section><section class="panel orange"><h2>实操关联</h2><ul class="practice"><li>选一款想购买的产品，分别写下所在地监管信息、完整成分、批次、认证数据库查询结果、赛事规则和个人禁忌，而非只复制广告页。</li><li>用四个证据问题拆解一则补剂宣传：研究人群、对照剂量、实际结局和独立重复性。</li><li>给一周恢复做基础清单：正餐、训练前后耐受、水合、睡眠、训练负荷和压力；补剂只写在最后一栏。</li><li>若是参赛者，保存官方反兴奋剂机构和认证数据库链接；有用药、疾病或不良反应时先咨询医生或药师。</li></ul></section><section class="panel blue"><h2>练习题</h2><section class="question" data-answers="[1]" data-explanation="认证是风险管理的一层，仍要核对批次、赛事规则、健康情况和个人反应。"><h3>1. 单选：第三方认证最准确的作用是？</h3><div class="options"><label class="option"><input type="radio" name="question-0" value="0"><span>A. 保证所有人都有效</span></label><label class="option"><input type="radio" name="question-0" value="1"><span>B. 降低部分污染或标签风险的额外线索</span></label><label class="option"><input type="radio" name="question-0" value="2"><span>C. 替代赛事规则核对</span></label><label class="option"><input type="radio" name="question-0" value="3"><span>D. 让产品自动变成药品</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[1]" data-explanation="局部融脂与无训练增肌等极端承诺不符合训练科学，故事和营销词不能代替可重复的人体证据。"><h3>2. 单选：面对“无需训练即可局部融脂”的宣传，最合适的判断是？</h3><div class="options"><label class="option"><input type="radio" name="question-1" value="0"><span>A. 产品越贵越可信</span></label><label class="option"><input type="radio" name="question-1" value="1"><span>B. 这是不可能承诺，应要求高质量相关证据</span></label><label class="option"><input type="radio" name="question-1" value="2"><span>C. 只看网红前后对比</span></label><label class="option"><input type="radio" name="question-1" value="3"><span>D. 马上购买多盒</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[0,1,2,3]" data-explanation="补剂是可选的一层，不能取代营养、水合、睡眠和负荷管理。"><h3>3. 多选：健康恢复计划的基础通常包括哪些？</h3><div class="options"><label class="option"><input type="checkbox" name="question-2" value="0"><span>A. 足够能量和规律进食</span></label><label class="option"><input type="checkbox" name="question-2" value="1"><span>B. 蛋白质与碳水安排</span></label><label class="option"><input type="checkbox" name="question-2" value="2"><span>C. 液体、电解质与睡眠</span></label><label class="option"><input type="checkbox" name="question-2" value="3"><span>D. 合理训练负荷</span></label><label class="option"><input type="checkbox" name="question-2" value="4"><span>E. 只购买更多补剂</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[1]" data-explanation="认证只能降低部分风险；参赛者还需核对真实产品、当前规则和个人健康情况，教练不能做绝对担保。"><h3>4. 案例：小程是参赛者，看到一款标有认证图案的复合预训练产品，想不看成分直接购买。更合适的是？</h3><div class="options"><label class="option"><input type="radio" name="question-3" value="0"><span>A. 认证图案足以保证合规</span></label><label class="option"><input type="radio" name="question-3" value="1"><span>B. 先核对官方认证数据库、完整成分、当前赛事规则、批次和个人健康情况</span></label><label class="option"><input type="radio" name="question-3" value="2"><span>C. 购买后比赛日第一次使用</span></label><label class="option"><input type="radio" name="question-3" value="3"><span>D. 让教练保证不会阳性</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section></section><footer>Day 73/110<ul><li>U.S. Food and Drug Administration：Dietary Supplements，补充剂监管与标签的一般信息；不同地区规则不同。</li><li>Australian Institute of Sport：Sports Supplement Framework，补剂风险、证据与实践框架。</li><li>NSF Certified for Sport 与 Informed Sport：各自公开的认证范围与产品数据库；须查实际产品和批次。</li><li>本课为一般教育，不构成法规、医学、药学或反兴奋剂意见；疾病、用药、赛事合规或异常症状请咨询相应专业人员。</li></ul></footer></main><dialog aria-label="详情大图"><button class="icon-button" aria-label="关闭大图" title="关闭大图"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></button><img alt=""></dialog><script>document.querySelectorAll('.flip').forEach((button) => {
+  button.addEventListener('click', () => {
+    const pressed = button.getAttribute('aria-pressed') !== 'true';
+    button.setAttribute('aria-pressed', String(pressed));
+    button.querySelector('.front').setAttribute('aria-hidden', String(pressed));
+    button.querySelector('.back').setAttribute('aria-hidden', String(!pressed));
+  });
+});
+document.querySelectorAll('.question').forEach((question) => {
+  question.querySelector('.check').addEventListener('click', () => {
+    const selected = [...question.querySelectorAll('input:checked')].map((input) => Number(input.value)).sort();
+    const answer = question.querySelector('.answer');
+    answer.hidden = false;
+    if (!selected.length) { answer.textContent = '请先选择答案。'; delete question.dataset.result; return; }
+    const correct = JSON.stringify(selected) === JSON.stringify(JSON.parse(question.dataset.answers).sort());
+    question.dataset.result = correct ? 'correct' : 'wrong';
+    answer.textContent = `${correct ? '回答正确。' : '再想一想。'}${question.dataset.explanation}`;
+  });
+});
+const imageDialog = document.querySelector('dialog');
+document.querySelectorAll('[data-zoom]').forEach((button) => {
+  button.addEventListener('click', () => {
+    const original = button.querySelector('img');
+    const image = imageDialog.querySelector('img');
+    image.src = original.src;
+    image.alt = original.alt;
+    imageDialog.showModal();
+  });
+});
+imageDialog.querySelector('button').addEventListener('click', () => imageDialog.close());
+imageDialog.addEventListener('click', (event) => {
+  const rect = imageDialog.getBoundingClientRect();
+  if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) imageDialog.close();
+});
+</script></body></html>

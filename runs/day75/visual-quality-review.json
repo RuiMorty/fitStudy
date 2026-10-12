@@ -1,0 +1,88 @@
+{
+  "reviewer": "local source visual, alpha, safety and semantic QA",
+  "requirements": [
+    "true-alpha transparent PNG without a rendered checkerboard, opaque canvas, room, floor, loose paper, border, sticker edge, shadow or halo",
+    "only wordless Bojji and Despa in calm 2D training-planning scenes; no extra characters, text, numbers, labels, arrows, calendars, medals, race cues, logos or watermarks",
+    "all kettlebell, dumbbell, bench, walking, sit-to-bench squat, supported row and stretching depictions are complete, structurally coherent and safe",
+    "each overview image is independently generated and compositionally distinct from its matching knowledge-page art",
+    "the shared image preparer removes only near-transparent edge noise, preserves opaque white clothing, and frames reviewed art with the required final six-percent margin"
+  ],
+  "technicalChecks": {
+    "checkedWith": [
+      "RGBA metadata and transparent-background inspection",
+      "individual visual semantic and equipment-safety review",
+      "shared image preparation, overview composition, final-card inspection and responsive browser QA"
+    ],
+    "result": "All nine selected processed PNGs are non-empty RGBA files with transparent pixels. The shared preparer centered approved artwork without upscaling; rendered XHS cards and responsive course screenshots were inspected separately in runs/day75/verification/."
+  },
+  "accepted": [
+    {
+      "file": "cover.png",
+      "attempt": 1,
+      "source": "runs/day75/image-requests/cover-eb86e17540/attempt-01/cover.png",
+      "review": "Bojji's controlled light goblet-squat preparation, the complete kettlebell, and Despa's blank rigid-card planning table connect a short training cycle to recovery without a calendar or number cue."
+    },
+    {
+      "file": "visual-01-microcycle.png",
+      "attempt": 1,
+      "source": "runs/day75/image-requests/visual-01-microcycle-d5f91aefe5/attempt-01/visual-01-microcycle.png",
+      "review": "Three bounded blank rigid cards plus a calm walking preparation communicate planned stimulus and recovery without a date grid, arrow or background."
+    },
+    {
+      "file": "visual-02-split.png",
+      "attempt": 2,
+      "source": "runs/day75/image-requests/visual-02-split-d2322613b6/attempt-02/visual-02-split.png",
+      "review": "The revised scene removes the oversized sign prop and retains a safe dumbbell press, controlled sit-to-bench squat and one small flat blank card."
+    },
+    {
+      "file": "visual-03-deload.png",
+      "attempt": 1,
+      "source": "runs/day75/image-requests/visual-03-deload-3c92372760/attempt-01/visual-03-deload.png",
+      "review": "A supported one-arm light dumbbell row and calm seated shoulder relaxation show lower fatigue while preserving movement quality; neither character appears collapsed or in pain."
+    },
+    {
+      "file": "visual-04-peak.png",
+      "attempt": 2,
+      "source": "runs/day75/image-requests/visual-04-peak-c74dd12a11/attempt-02/visual-04-peak.png",
+      "review": "The revised transition scene keeps only a relaxed walking step, a gentle non-extreme side stretch and one small blank rigid card; race, medal, bottle and mat cues are absent."
+    },
+    {
+      "file": "overview-01-microcycle.png",
+      "attempt": 1,
+      "source": "runs/day75/image-requests/overview-01-microcycle-84a5f5b50c/attempt-01/overview-01-microcycle.png",
+      "review": "The dedicated 4:3 kneeling card-placement scene is distinct from the knowledge-page table composition and keeps Bojji's calm walking separate."
+    },
+    {
+      "file": "overview-02-split.png",
+      "attempt": 1,
+      "source": "runs/day75/image-requests/overview-02-split-38cd998e72/attempt-01/overview-02-split.png",
+      "review": "The separate overview scene uses a stable seated light-dumbbell press and a low-bench controlled sit-to-bench position; equipment is complete and safe."
+    },
+    {
+      "file": "overview-03-deload.png",
+      "attempt": 1,
+      "source": "runs/day75/image-requests/overview-03-deload-1bdaa6ec28/attempt-01/overview-03-deload.png",
+      "review": "The overview-only supported row and shoulder stretch differ from the knowledge composition while retaining complete equipment and no fatigue or pain cue."
+    },
+    {
+      "file": "overview-04-peak.png",
+      "attempt": 1,
+      "source": "runs/day75/image-requests/overview-04-peak-b774c8f267/attempt-01/overview-04-peak.png",
+      "review": "The distinct 4:3 walking-and-gentle-stretch scene contains no stadium, calendar, medal, text or unsafe movement."
+    }
+  ],
+  "rejected": [
+    {
+      "file": "visual-02-split.png",
+      "attempt": 1,
+      "reason": "An oversized unrequested A-frame sign-like prop competed with the two training actions and made the sit-to-bench squat read as merely seated."
+    },
+    {
+      "file": "visual-04-peak.png",
+      "attempt": 1,
+      "reason": "An A-frame board, unrelated water bottle and yoga mat diluted the simple peak-transition teaching scene."
+    }
+  ],
+  "retriesUsed": 2,
+  "result": "Nine selected source assets passed local visual, alpha, semantic and equipment-safety QA. Rejected candidates and their adjusted prompts remain preserved in image-request-log.json."
+}

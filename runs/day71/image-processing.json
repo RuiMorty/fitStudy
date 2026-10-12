@@ -1,0 +1,357 @@
+{
+  "processedAt": "2026-09-30T17:30:12.860108+00:00",
+  "method": "trim near-transparent noise; reviewed crop; uniform scale; transparent margin",
+  "assets": [
+    {
+      "source": "runs/day71/source/cover.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "sourceSha256": "cded2c85150fff7b5f546bb606878abf29058552527592e29b6bae26590a0a85",
+      "reviewedCrop": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "visibleCrop": [
+        373,
+        23,
+        1357,
+        932
+      ],
+      "output": "runs/day71/assets/cover.png",
+      "size": [
+        1600,
+        900
+      ],
+      "subjectSize": [
+        857,
+        792
+      ],
+      "offset": [
+        371,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "无字封面"
+    },
+    {
+      "source": "runs/day71/source/visual-01-rules.png",
+      "sourceSize": [
+        2207,
+        712
+      ],
+      "sourceSha256": "2173572a82d4318dab20f03c3ba35e0c8f84abe77c4436d0549b6e9f3f7c3a13",
+      "reviewedCrop": [
+        0,
+        0,
+        2207,
+        712
+      ],
+      "visibleCrop": [
+        603,
+        9,
+        1692,
+        689
+      ],
+      "output": "runs/day71/assets/visual-01-rules.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1089,
+        680
+      ],
+      "offset": [
+        855,
+        110
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "小红书独立知识页，无字"
+    },
+    {
+      "source": "runs/day71/source/visual-02-risk.png",
+      "sourceSize": [
+        2212,
+        711
+      ],
+      "sourceSha256": "afe32cf464c2532fecc818d7298fdf35c007580a06f0fd81d2fd9d48e1a28c84",
+      "reviewedCrop": [
+        0,
+        0,
+        2212,
+        711
+      ],
+      "visibleCrop": [
+        744,
+        4,
+        1437,
+        689
+      ],
+      "output": "runs/day71/assets/visual-02-risk.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        693,
+        685
+      ],
+      "offset": [
+        1053,
+        107
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "小红书独立知识页，无字"
+    },
+    {
+      "source": "runs/day71/source/visual-03-treatment.png",
+      "sourceSize": [
+        2212,
+        711
+      ],
+      "sourceSha256": "0454ca966f05053f7a37009bcd3614de7a466d968359880d1cb70db5ab0f57bd",
+      "reviewedCrop": [
+        0,
+        0,
+        2212,
+        711
+      ],
+      "visibleCrop": [
+        474,
+        10,
+        1537,
+        699
+      ],
+      "output": "runs/day71/assets/visual-03-treatment.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1063,
+        689
+      ],
+      "offset": [
+        868,
+        105
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "小红书独立知识页，无字"
+    },
+    {
+      "source": "runs/day71/source/visual-04-scope.png",
+      "sourceSize": [
+        2210,
+        711
+      ],
+      "sourceSha256": "4fccabd59abd8e567a6ac018a254fa35bce0eb4e533d9da2c870d37cd68245c1",
+      "reviewedCrop": [
+        0,
+        0,
+        2210,
+        711
+      ],
+      "visibleCrop": [
+        204,
+        8,
+        1183,
+        693
+      ],
+      "output": "runs/day71/assets/visual-04-scope.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        979,
+        685
+      ],
+      "offset": [
+        910,
+        107
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "小红书独立知识页，无字"
+    },
+    {
+      "source": "runs/day71/source/overview-01-rules.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "fa8d92b0b8e1e931a8c53ed2ecc7e69c36c858717d9caef1ca81a4c24c49ea8b",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        140,
+        16,
+        1211,
+        1067
+      ],
+      "output": "runs/day71/assets/overview-01-rules.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1071,
+        1051
+      ],
+      "offset": [
+        264,
+        74
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day71/source/overview-02-risk.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "e15e7517f4cdd50816a38791f00030f96327b5ccb1d968ec9400d2e997bc40a3",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        180,
+        28,
+        1272,
+        1039
+      ],
+      "output": "runs/day71/assets/overview-02-risk.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1092,
+        1011
+      ],
+      "offset": [
+        254,
+        94
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day71/source/overview-03-treatment.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "e6717b52523b2529423e9d9fbdaa548684875aa8cc1ed39f61dd91f1c06d5fea",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        328,
+        7,
+        1136,
+        1077
+      ],
+      "output": "runs/day71/assets/overview-03-treatment.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        797,
+        1056
+      ],
+      "offset": [
+        401,
+        72
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day71/source/overview-04-scope.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "36ffbfa0d842598c760174a106dbe4c4fac7095e67c5aa3a67e35225c2ef9b7b",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        173,
+        16,
+        1386,
+        1055
+      ],
+      "output": "runs/day71/assets/overview-04-scope.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1213,
+        1039
+      ],
+      "offset": [
+        193,
+        80
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    }
+  ]
+}

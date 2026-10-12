@@ -1,0 +1,11 @@
+{
+  "name": "elbow-triceps-experiment",
+  "version": "0.3.4-experimental",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "python3 -m http.server 8770 --bind 127.0.0.1",
+    "build:model": "blender -b --python blender/build_studio.py",
+    "test": "node qa/verify.cjs"
+  }
+}

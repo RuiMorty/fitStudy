@@ -1,0 +1,121 @@
+{
+  "390": {
+    "loadAndFirstFrameMs": 291,
+    "overview": {
+      "loaded": true,
+      "objects": 199,
+      "visible": 199,
+      "selected": null,
+      "frames": 9,
+      "triangles": 1837147,
+      "restError": 0,
+      "assets": [
+        {
+          "name": "颅骨",
+          "file": "assets/region-0.glb",
+          "bytes": 4398972
+        },
+        {
+          "name": "舌骨",
+          "file": "assets/region-1.glb",
+          "bytes": 101144
+        },
+        {
+          "name": "脊柱",
+          "file": "assets/region-2.glb",
+          "bytes": 4491044
+        },
+        {
+          "name": "胸廓",
+          "file": "assets/region-3.glb",
+          "bytes": 14276676
+        },
+        {
+          "name": "上肢",
+          "file": "assets/region-4.glb",
+          "bytes": 6608104
+        },
+        {
+          "name": "下肢",
+          "file": "assets/region-5.glb",
+          "bytes": 3416704
+        }
+      ]
+    },
+    "sampledFramesInOneSecond": 12
+  },
+  "1440": {
+    "loadAndFirstFrameMs": 1514,
+    "overview": {
+      "loaded": true,
+      "objects": 199,
+      "visible": 199,
+      "selected": null,
+      "frames": 8,
+      "triangles": 1837147,
+      "restError": 0,
+      "assets": [
+        {
+          "name": "颅骨",
+          "file": "assets/region-0.glb",
+          "bytes": 4398972
+        },
+        {
+          "name": "舌骨",
+          "file": "assets/region-1.glb",
+          "bytes": 101144
+        },
+        {
+          "name": "脊柱",
+          "file": "assets/region-2.glb",
+          "bytes": 4491044
+        },
+        {
+          "name": "胸廓",
+          "file": "assets/region-3.glb",
+          "bytes": 14276676
+        },
+        {
+          "name": "上肢",
+          "file": "assets/region-4.glb",
+          "bytes": 6608104
+        },
+        {
+          "name": "下肢",
+          "file": "assets/region-5.glb",
+          "bytes": 3416704
+        }
+      ]
+    },
+    "sampledFramesInOneSecond": 13
+  },
+  "environment": "macOS Chrome headless; mobile viewport emulation, not physical phone",
+  "checks": [
+    "199 objects 1440",
+    "no overflow 1440",
+    "explosion moves 1440 100",
+    "explosion moves 1440 20",
+    "explosion moves 1440 85",
+    "explosion moves 1440 100",
+    "exact rest 1440",
+    "isolate 1440",
+    "actual canvas pick 1440",
+    "hide 1440",
+    "restore visibility 1440",
+    "assembly after region 1440",
+    "199 objects 390",
+    "no overflow 390",
+    "explosion moves 390 100",
+    "explosion moves 390 20",
+    "explosion moves 390 85",
+    "explosion moves 390 100",
+    "exact rest 390",
+    "isolate 390",
+    "actual canvas pick 390",
+    "hide 390",
+    "restore visibility 390",
+    "assembly after region 390",
+    "no browser errors"
+  ],
+  "errors": []
+}

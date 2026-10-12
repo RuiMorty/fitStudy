@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Day 53 · OPT第2阶段：力量耐力</title><link rel="icon" type="image/svg+xml" href="assets/fitness-study-logo-open-circle.svg?v=a6d8e5caaa61"><style>:root { color-scheme: light; --ink: #111113; --muted: #71717a; --line: #e4e4e7; --accent: #ff5a1f; --green: #0ea66b; --blue: #2563eb; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; font-synthesis: none; letter-spacing: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); overflow-wrap: anywhere; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+img { display: block; max-width: 100%; }
+button:focus-visible, a:focus-visible, summary:focus-visible, input:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
+svg.icon { width: 20px; height: 20px; }
+.icon-button { display: inline-grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 1px solid var(--line); border-radius: 6px; background: white; }
+[hidden] { display: none !important; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
+
+body { background: #f6f8f7; font-size: 14px; line-height: 1.65; }
+main { max-width: 980px; margin: auto; padding: 24px 18px 60px; }
+.header { padding: 22px 4px 14px; }
+h1 { margin: 10px 0 8px; font-size: 36px; line-height: 1.2; }
+h1::before { content: ""; display: block; width: 34px; height: 4px; background: var(--accent); margin-bottom: 10px; }
+h2 { font-size: 17px; margin: 0 0 14px; }
+h3 { font-size: 16px; margin: 0 0 8px; }
+.sub { color: var(--muted); margin: 5px 0 18px; }
+.meta { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { display: inline-block; border: 1px solid var(--line); border-radius: 20px; background: white; color: var(--muted); padding: 3px 10px; font-size: 12px; font-weight: 600; }
+.chip:nth-child(1) { background: #e2f7eb; color: #15803d; border-color: transparent; }
+.chip:nth-child(2) { background: #e7f0fe; color: #2563eb; border-color: transparent; }
+.chip:nth-child(3) { background: #fff2e5; color: #9a4c05; border-color: transparent; }
+.panel, .figure, .warn, .mnemonic { background: white; border: 1px solid #e2e8e4; border-radius: 14px; box-shadow: 0 2px 12px rgba(20,40,30,.06); padding: 20px; margin: 16px 0; }
+.green { border-left: 5px solid var(--green); }
+.orange { border-left: 5px solid #ea7a17; }
+.blue { border-left: 5px solid #0ea5e9; }
+.takeaway { margin: 0; }
+.figure { text-align: center; }
+.figure button { display: block; position: relative; width: 100%; border: 0; padding: 0; background: white; cursor: zoom-in; }
+.figure img { max-height: 760px; width: 100%; object-fit: contain; }
+.figure .icon-button { position: absolute; bottom: 8px; right: 8px; background: #ffffffed; }
+.caption { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
+.kp { list-style: none; padding: 0; margin: 0; }
+.kp > li { border-bottom: 1px dashed #e2e8e4; }
+.kp > li:last-child { border-bottom: 0; }
+.kp summary { cursor: pointer; padding: 13px 8px; font-weight: 650; }
+.kp summary::marker { color: var(--green); }
+.term { color: #0a7d52; background: #e2f7eb; border-radius: 6px; padding: 1px 5px; }
+.kp-body { padding: 2px 14px 16px 24px; }
+.detail-block { margin: 12px 0; }
+.detail-block h4 { font-size: 13px; color: #08744d; margin: 0 0 4px; }
+.detail-block p { margin: 0; white-space: pre-line; }
+.warn { border-left: 5px solid #e23b3b; background: #fffafa; }
+.warn p { margin: 8px 0; }
+.misconception { color: #a82b32; }
+.mnemonic { border-left: 4px solid var(--accent); box-shadow: none; }
+.mnemonic strong { color: #df4716; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+.flip { height: 168px; perspective: 900px; border: 0; background: transparent; padding: 0; text-align: center; }
+.flip-in { display: block; height: 100%; position: relative; transition: transform .45s; transform-style: preserve-3d; }
+.flip[aria-pressed="true"] .flip-in { transform: rotateY(180deg); }
+.face { position: absolute; inset: 0; backface-visibility: hidden; border: 1px solid var(--line); border-radius: 10px; padding: 15px; background: #fafafa; display: flex; align-items: center; justify-content: center; overflow-y: auto; }
+.back { transform: rotateY(180deg); background: #eef9f4; color: #075e40; border-color: #c8eadb; }
+.practice { padding-left: 20px; }
+.practice li { margin: 7px 0; }
+.question { border-top: 1px solid #e2e8e4; padding: 20px 0 8px; margin-top: 12px; min-width: 0; }
+.options { display: grid; gap: 7px; margin: 10px 0; }
+.option { display: flex; gap: 10px; align-items: baseline; border: 1px solid #e2e8e4; background: #f0f4f2; padding: 9px 12px; border-radius: 8px; cursor: pointer; }
+.option input { flex-shrink: 0; accent-color: var(--green); }
+.option:has(input:checked) { border-color: #0ea5e9; background: #e7f6fd; }
+.question[data-result="correct"] .option:has(input:checked) { border-color: #0ea66b; background: #e7f8ef; }
+.question[data-result="wrong"] .option:has(input:checked) { border-color: #e23b3b; background: #fff0f0; }
+.answer { background: #f8fbfa; border-left: 3px solid #0ea5e9; padding: 10px; margin-top: 10px; }
+.check { border: 0; background: #0ea66b; color: white; padding: 9px 14px; border-radius: 7px; }
+footer { color: var(--muted); font-size: 12px; margin-top: 28px; }
+footer ul { padding-left: 20px; }
+dialog { width: min(1200px, 96vw); max-height: 94dvh; padding: 52px 16px 16px; border: 0; border-radius: 8px; background: white; }
+dialog::backdrop { background: #15191dd9; }
+dialog img { width: 100%; max-height: 78dvh; object-fit: contain; }
+dialog .icon-button { position: absolute; top: 8px; right: 10px; }
+@media (max-width: 600px) {
+  main { padding: 16px 12px 40px; }
+  h1 { font-size: 26px; }
+  .header { padding: 16px 4px 12px; }
+  .panel, .figure, .warn, .mnemonic { padding: 15px; }
+  .kp-body { padding-left: 16px; }
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .face { padding: 12px; }
+}
+</style></head><body><main><header class="header"><h1>Day 53 · OPT第2阶段：力量耐力</h1><p class="sub">用力量动作与稳定动作配对，让力量输出在控制挑战下保持可重复。</p><div class="meta"><span class="chip">OPT第2阶段</span><span class="chip">力量耐力</span><span class="chip">超级组</span></div></header><section class="panel green"><h2>一句话总结</h2><p class="takeaway">OPT第2阶段的力量耐力训练常把一个稳定地面的力量动作与一个相近模式的稳定动作组成超级组：先完成较高负荷的力量动作，再做较低负荷、控制要求更高的稳定动作。常见变量可从2—4组、力量动作8—12次、稳定动作12—20次、约70%—80%1RM和0—60秒休息开始，但应以动作质量和恢复为边界。超级组不是无休止赶时间；每一对动作都应服务相同运动模式，并允许在技术下降时回退。</p></section><figure class="figure"><button data-zoom aria-label="放大详情图"><img class="" src="assets/阶段3 OPT训练模型/day53-OPT第2阶段：力量耐力.png" alt="OPT第2阶段力量耐力的四主题中文总览"><span class="icon-button"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 15 6 6" /><path d="m15 9 6-6" /><path d="M21 16v5h-5" /><path d="M21 8V3h-5" /><path d="M3 16v5h5" /><path d="m3 21 6-6" /><path d="M3 8V3h5" /><path d="M9 9 3 3" /></svg></span></button><figcaption class="caption">第2阶段用力量动作加稳定动作的配对练习控制与耐力；顺序、负荷和恢复都要让技术保持清楚。</figcaption></figure><section class="panel"><h2>核心要点</h2><ul class="kp"><li><details><summary><span class="term">力量耐力：力量动作后接稳定挑战</span>：第2阶段的核心是把可控力量输出与稳定需求连接起来，而不是把两种不相关动作随意拼在一起。</summary><div class="kp-body"><section class="detail-block"><h4>超级组的顺序有意义</h4><p>通常先做稳定地面上的力量动作，再做同一或相近模式的稳定动作。前者让你在较高负荷下练力量输出，后者在疲劳下要求姿势、核心与关节控制继续工作。顺序和配对都应有训练理由。</p></section><section class="detail-block"><h4>同一模式更容易检查</h4><p>例如推的力量动作可配较轻的稳定球推或飞鸟变式；下肢力量动作可配单腿或平衡控制版本。配对不必完全相同，但应让训练者能说清两者共同的动作模式和控制挑战。</p></section></div></details></li><li><details><summary><span class="term">变量：负荷、次数与恢复共同决定质量</span>：常见起点是2—4组；力量动作8—12次，稳定动作12—20次；约70%—80%1RM与较短休息只是框架。</summary><div class="kp-body"><section class="detail-block"><h4>两段的目的不同</h4><p>力量动作可在相对较高负荷下完成8—12次，稳定动作则用较轻阻力、较多重复把控制练进疲劳。稳定动作不是在不稳表面继续冲重量；如果无法保持轨迹，就应降低阻力、范围或支撑挑战。</p></section><section class="detail-block"><h4>短休息不是没有休息</h4><p>0—60秒的间隔使训练有连续性，但仍要让呼吸、握法与动作准备恢复。若第二个动作一开始就明显变形，当前负荷、次数或转换速度不匹配，应调整而不是硬做完。</p></section></div></details></li><li><details><summary><span class="term">动作配对：先找模式，再选器械</span>：配对可以是水平推、水平拉、下肢推、髋铰链或核心控制的延续；器械只是实现控制的工具。</summary><div class="kp-body"><section class="detail-block"><h4>推与拉的例子</h4><p>卧推可配稳定球哑铃飞鸟或更简单的地面哑铃推；坐姿划船可配单臂拉与躯干抗旋转控制。重点是肩胛、肋骨和躯干在动作中仍能组织，而不是为了“高级”强行上球。</p></section><section class="detail-block"><h4>下肢与核心的例子</h4><p>稳定地面深蹲可配单腿平衡触地，髋铰链可配轻负荷单腿髋控制。鸟狗、死虫等核心控制动作可作为准备或补充，但不应在腰部已代偿时继续加难。</p></section></div></details></li><li><details><summary><span class="term">编排与回退：每一对都要能重复干净</span>：先写清动作顺序、负荷、次数、休息和检查点；记录第二个动作的质量，决定下一次是否进阶。</summary><div class="kp-body"><section class="detail-block"><h4>组内看技术变化</h4><p>观察力量动作最后几次的轨迹，以及稳定动作开始后能否维持足底、膝盖、肩胛、肋骨与呼吸。若转换后马上失控，回退一个变量，例如降低负荷、缩小范围、延长休息或换稳定版本。</p></section><section class="detail-block"><h4>不要把疲劳当成果</h4><p>酸胀和心率升高不等于动作还在有效。出现疼痛、头晕、异常气促、关节不稳感或反复代偿时停止当次版本；连续多次完成质量稳定后，一次只增加一个因素。</p></section></div></details></li></ul></section><section class="warn"><h2>常见误区</h2><p><strong class="misconception">误区：超级组就是任何两个动作连着做，越累越好。</strong><br>辨析：第2阶段的配对应有共同模式和清楚顺序；疲劳不能取代动作质量。</p><p><strong class="misconception">误区：稳定动作必须比力量动作更难、更重。</strong><br>辨析：稳定动作多用较轻阻力和更高控制需求；技术下降时应回退。</p><p><strong class="misconception">误区：0—60秒休息等于完全不允许调整呼吸和器械。</strong><br>辨析：短间隔仍要完成安全转换；若第二动作一开始失控，应调整负荷、次数或恢复。</p><p><strong class="misconception">误区：第二个动作晃得越厉害，稳定训练越有效。</strong><br>辨析：明显晃动、疼痛或代偿提示当前版本过难；选择能保持轨迹的支撑和范围。</p></section><section class="mnemonic"><h2>记忆口诀</h2><p><strong>先力量，后稳定；同模式，能解释；短休息，仍有控制；第二动作干净，才算配对。</strong></p></section><section class="panel"><h2>翻转卡复习</h2><div class="cards"><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">OPT第2阶段的常见超级组顺序？</span><span class="face back" aria-hidden="true">先做稳定地面的力量动作，再做同一或相近模式的稳定动作。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">力量动作与稳定动作为什么要配对？</span><span class="face back" aria-hidden="true">让力量输出后的姿势、核心与关节控制继续在相近模式中工作。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">力量动作常见次数框架？</span><span class="face back" aria-hidden="true">常见起点为8—12次；负荷和次数必须让轨迹保持可控。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">稳定动作常见次数框架？</span><span class="face back" aria-hidden="true">常见起点为12—20次，通常用较轻阻力与较高控制要求。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">第二动作一开始就变形说明什么？</span><span class="face back" aria-hidden="true">当前负荷、次数、转换或恢复不匹配，应回退一个变量。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">超级组进阶的一条原则？</span><span class="face back" aria-hidden="true">连续多次完成质量稳定后，一次只增加一个因素，例如轻负荷或范围。</span></span></button></div></section><section class="panel orange"><h2>实操关联</h2><ul class="practice"><li>为水平推写一对动作：先选稳定地面的力量动作，再选同模式、可回退的稳定动作，并写下两者共同的控制目标。</li><li>做一对轻量下肢练习时，记录第二个动作开始后的足底、膝盖和呼吸；任一明显失控就回退。</li><li>把一组力量动作与稳定动作之间的转换拆成安全步骤：放好器械、调整支撑、呼气、再开始，不用赶时间。</li><li>比较同一配对在0秒和较长间隔下的第二动作质量；用结果决定休息是否足够。</li></ul></section><section class="panel blue"><h2>练习题</h2><section class="question" data-answers="[1]" data-explanation="先力量后稳定有助于将力量输出后的控制需求放在相近模式中检验。"><h3>1. 单选：哪种顺序最符合第2阶段常见超级组？</h3><div class="options"><label class="option"><input type="radio" name="question-0" value="0"><span>A. 先稳定动作再盲目加重</span></label><label class="option"><input type="radio" name="question-0" value="1"><span>B. 先稳定地面力量动作，再做相近模式稳定动作</span></label><label class="option"><input type="radio" name="question-0" value="2"><span>C. 把两个无关动作随意连做</span></label><label class="option"><input type="radio" name="question-0" value="3"><span>D. 每次都先做最晃的动作</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[1]" data-explanation="稳定动作的价值在控制；更重或更晃不自动代表更适合。"><h3>2. 单选：稳定动作在第2阶段的负荷选择应优先看什么？</h3><div class="options"><label class="option"><input type="radio" name="question-1" value="0"><span>A. 是否能让动作最快变形</span></label><label class="option"><input type="radio" name="question-1" value="1"><span>B. 是否能保持轨迹、呼吸和关节控制</span></label><label class="option"><input type="radio" name="question-1" value="2"><span>C. 是否一定比力量动作更重</span></label><label class="option"><input type="radio" name="question-1" value="3"><span>D. 是否让器械晃动最大</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[0,1,2,4]" data-explanation="配对要有逻辑且能重复控制；赶时间和无关拼接会掩盖技术问题。"><h3>3. 多选：哪些做法符合力量耐力超级组？</h3><div class="options"><label class="option"><input type="checkbox" name="question-2" value="0"><span>A. 配对动作有相近运动模式</span></label><label class="option"><input type="checkbox" name="question-2" value="1"><span>B. 第二动作失控时回退一个变量</span></label><label class="option"><input type="checkbox" name="question-2" value="2"><span>C. 短休息也允许安全转换与呼吸调整</span></label><label class="option"><input type="checkbox" name="question-2" value="3"><span>D. 任何动作都能为了赶时间强行组合</span></label><label class="option"><input type="checkbox" name="question-2" value="4"><span>E. 连续多次质量稳定后再进阶</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[1]" data-explanation="第二动作质量是处方是否匹配的证据；先调整一个变量，再保留训练目的。"><h3>4. 案例：小陈卧推后立刻做稳定球哑铃飞鸟，第一下就耸肩、腰部代偿。最合理的处理是？</h3><div class="options"><label class="option"><input type="radio" name="question-3" value="0"><span>A. 继续做到力竭</span></label><label class="option"><input type="radio" name="question-3" value="1"><span>B. 降低稳定动作阻力或改回更稳定版本，必要时延长转换</span></label><label class="option"><input type="radio" name="question-3" value="2"><span>C. 加大哑铃让身体适应</span></label><label class="option"><input type="radio" name="question-3" value="3"><span>D. 忽略轨迹只数次数</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section></section><footer>Day 53/77 · NASM<ul><li>NASM：Optimum Performance Training Model，Phase 2 Strength Endurance 的超级组与变量框架。</li><li>NASM：Essentials of Personal Fitness Training，力量耐力训练与动作进阶相关章节。</li><li>ACSM：ACSM&#39;s Guidelines for Exercise Testing and Prescription，第11版，阻力训练进阶和风险识别原则。</li><li>本课为一般健身教育；疼痛、头晕、异常气促、关节不稳感或近期伤病恢复期，请停止训练并咨询医疗或运动专业人员。</li></ul></footer></main><dialog aria-label="详情大图"><button class="icon-button" aria-label="关闭大图" title="关闭大图"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></button><img alt=""></dialog><script>document.querySelectorAll('.flip').forEach((button) => {
+  button.addEventListener('click', () => {
+    const pressed = button.getAttribute('aria-pressed') !== 'true';
+    button.setAttribute('aria-pressed', String(pressed));
+    button.querySelector('.front').setAttribute('aria-hidden', String(pressed));
+    button.querySelector('.back').setAttribute('aria-hidden', String(!pressed));
+  });
+});
+document.querySelectorAll('.question').forEach((question) => {
+  question.querySelector('.check').addEventListener('click', () => {
+    const selected = [...question.querySelectorAll('input:checked')].map((input) => Number(input.value)).sort();
+    const answer = question.querySelector('.answer');
+    answer.hidden = false;
+    if (!selected.length) { answer.textContent = '请先选择答案。'; delete question.dataset.result; return; }
+    const correct = JSON.stringify(selected) === JSON.stringify(JSON.parse(question.dataset.answers).sort());
+    question.dataset.result = correct ? 'correct' : 'wrong';
+    answer.textContent = `${correct ? '回答正确。' : '再想一想。'}${question.dataset.explanation}`;
+  });
+});
+const imageDialog = document.querySelector('dialog');
+document.querySelectorAll('[data-zoom]').forEach((button) => {
+  button.addEventListener('click', () => {
+    const original = button.querySelector('img');
+    const image = imageDialog.querySelector('img');
+    image.src = original.src;
+    image.alt = original.alt;
+    imageDialog.showModal();
+  });
+});
+imageDialog.querySelector('button').addEventListener('click', () => imageDialog.close());
+imageDialog.addEventListener('click', (event) => {
+  const rect = imageDialog.getBoundingClientRect();
+  if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) imageDialog.close();
+});
+</script></body></html>

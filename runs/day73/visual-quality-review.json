@@ -1,0 +1,108 @@
+{
+  "reviewer": "local source visual, alpha and semantic QA",
+  "requirements": [
+    "true-alpha transparent PNG without a rendered checkerboard, opaque canvas, room, floor, paper background, loose sheets, border, sticker edge, shadow or halo",
+    "only wordless Bojji and Despa in calm 2D fitness-science teaching scenes",
+    "no supplement package, bottle, medicine, pills, powder, barcode, certification logo, badge, shield, tick, product claim, readable document or advertising iconography",
+    "each overview image is independently generated and distinct from its matching knowledge-page art",
+    "the shared image preparer removes only near-transparent edge noise and centers reviewed art on the required final canvas with a six-percent margin"
+  ],
+  "technicalChecks": {
+    "checkedWith": [
+      "RGBA metadata and transparent-background inspection",
+      "individual visual semantic and safety review",
+      "shared image preparation and final-canvas bounds check"
+    ],
+    "result": "All nine selected processed PNGs are non-empty RGBA files with transparent pixels. The shared preparer centered the approved art without upscaling. Final rendered-card and responsive-page QA is recorded separately in runs/day73/verification/."
+  },
+  "accepted": [
+    {
+      "file": "cover.png",
+      "attempt": 1,
+      "source": "runs/day73/image-requests/cover-eb86e17540/attempt-01/cover.png",
+      "review": "A calm review scene uses ordinary meals, water, a closed blank folder and blank rigid cards to prioritize checking and recovery without a product, package or claim."
+    },
+    {
+      "file": "visual-01-regulation.png",
+      "attempt": 2,
+      "source": "runs/day73/image-requests/visual-01-regulation-89f05b11d0/attempt-02/visual-01-regulation.png",
+      "review": "The revised scene keeps both characters complete and uses a closed thick blank folder-board with two small blank rigid cards; it contains no loose pages, labels or regulatory logo."
+    },
+    {
+      "file": "visual-02-certification.png",
+      "attempt": 2,
+      "source": "runs/day73/image-requests/visual-02-certification-cd55d89a1d/attempt-02/visual-02-certification.png",
+      "review": "Two plainly colored unmarked rigid cards and balanced open-palm gestures explain limited risk reduction without a shield, tick, logo or guarantee claim."
+    },
+    {
+      "file": "visual-03-marketing.png",
+      "attempt": 2,
+      "source": "runs/day73/image-requests/visual-03-marketing-f1833c3d82/attempt-02/visual-03-marketing.png",
+      "review": "A complete, non-glamorized two-person comparison uses only an off-white and pale-blue blank card; there are no stars, crown graphics, advertising panels or duplicate characters."
+    },
+    {
+      "file": "visual-04-recovery.png",
+      "attempt": 2,
+      "source": "runs/day73/image-requests/visual-04-recovery-2e6b8aab28/attempt-02/visual-04-recovery.png",
+      "review": "The simplified scene contains a normal meal, clear water glass and gentle standing reach, without a bed, pillow, supplement product or medical implication."
+    },
+    {
+      "file": "overview-01-regulation.png",
+      "attempt": 2,
+      "source": "runs/day73/image-requests/overview-01-regulation-7d38bc97bb/attempt-02/overview-01-regulation.png",
+      "review": "A dedicated 4:3 kneeling folder-and-card scene differs from the knowledge-page composition and uses a closed blank rigid folder rather than pages."
+    },
+    {
+      "file": "overview-02-certification.png",
+      "attempt": 1,
+      "source": "runs/day73/image-requests/overview-02-certification-7cb8f7368a/attempt-01/overview-02-certification.png",
+      "review": "The overview-only standing comparison uses two completely blank cards and balanced gestures, with no certification badge or claim mark."
+    },
+    {
+      "file": "overview-03-marketing.png",
+      "attempt": 2,
+      "source": "runs/day73/image-requests/overview-03-marketing-9b4037f172/attempt-02/overview-03-marketing.png",
+      "review": "The revised overview uses exactly one of each character and two undecorated cards, avoiding imagined scenes, superhero imagery and repeated character depictions."
+    },
+    {
+      "file": "overview-04-recovery.png",
+      "attempt": 1,
+      "source": "runs/day73/image-requests/overview-04-recovery-8175b65721/attempt-01/overview-04-recovery.png",
+      "review": "The distinct 4:3 recovery scene pairs a normal meal and water with a safe lower-body stretch; it contains no package, text, bed or clinical claim."
+    }
+  ],
+  "rejected": [
+    {
+      "file": "visual-01-regulation.png",
+      "attempt": 1,
+      "reason": "Despa's hair touched the top edge and the open folder read as loose pages, failing the safe-margin and rigid-card requirements."
+    },
+    {
+      "file": "visual-02-certification.png",
+      "attempt": 1,
+      "reason": "A character's hair touched the top canvas edge, failing the full-subject safe-margin requirement."
+    },
+    {
+      "file": "visual-03-marketing.png",
+      "attempt": 1,
+      "reason": "The decorative card contained crown and star imagery and the composition cropped the character, introducing advertising-style iconography and edge failure."
+    },
+    {
+      "file": "visual-04-recovery.png",
+      "attempt": 1,
+      "reason": "The scene accumulated a pillow-like object, mat, bottle, book and dumbbells, making recovery look like an unrelated prop collage and approaching a prohibited bed cue."
+    },
+    {
+      "file": "overview-01-regulation.png",
+      "attempt": 1,
+      "reason": "The character was too close to the top edge and the open folder appeared as loose pages rather than a rigid file board."
+    },
+    {
+      "file": "overview-03-marketing.png",
+      "attempt": 1,
+      "reason": "Thought bubbles introduced a duplicate superhero version of Bojji, symbols and a bed scene, violating the exactly-two-character and no-advertising-icon rules."
+    }
+  ],
+  "retriesUsed": 6,
+  "result": "Nine selected source assets passed local visual, alpha and supplement-safety semantic QA. Rejected candidates and their adjusted prompts remain preserved in image-request-log.json."
+}

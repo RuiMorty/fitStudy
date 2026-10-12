@@ -1,0 +1,45 @@
+{
+  "day": 87,
+  "title": "动态动作评估-过顶深蹲与单腿",
+  "reviewedAt": "2026-10-04T06:48:10+08:00",
+  "requestRecord": "runs/day87/image-request-log.json",
+  "requirements": [
+    "Accepted sources have a real alpha channel and were visually checked after compositing on the shared light template.",
+    "Each scene uses one Bojji and one Despa, with no readable text, room, floor, cast shadow, duplicate pose or sequence framing.",
+    "Overview art is independently generated and compositionally distinct from its corresponding knowledge image.",
+    "Dynamic movement observation records visible movement and safety boundaries; it does not diagnose injury or prescribe treatment."
+  ],
+  "accepted": [
+    {"file":"cover.png","attempt":1,"source":"runs/day87/image-requests/cover-eb86e17540/attempt-01/cover.png","sha256":"29f93a90176b8633648ab10595860681027fcbcd102e8cf4e84431cde7105a84","review":"One controlled overhead squat with a calm observer establishes a non-diagnostic observation setting."},
+    {"file":"visual-01.png","attempt":1,"source":"runs/day87/image-requests/visual-01-8a79cc2ec8/attempt-01/visual-01.png","sha256":"ca2700f9998053b4aa04b63304b7d67113ded4399be84865cbe2470781078ac3","review":"A shallow squat toward a low box supports observing a training task rather than labeling a defect."},
+    {"file":"visual-02.png","attempt":1,"source":"runs/day87/image-requests/visual-02-1d99f16a14/attempt-01/visual-02.png","sha256":"910727aca07ba7b34f5992fd0eeb13df8f2a5f953891292e70b1b186f7059108","review":"A supported single-leg balance pose clearly conveys fixed task conditions and safe observation."},
+    {"file":"visual-03.png","attempt":3,"source":"runs/day87/image-requests/visual-03-0c02636da0/attempt-03/visual-03.png","sha256":"b2aec60539abc83b1d83a8b6a3f17330e1c491ef762a1af41cd1db080e6186e9","review":"Shoes and the low box express recording context without diagnosis, symbols or extra evidence cards."},
+    {"file":"visual-04.png","attempt":2,"source":"runs/day87/image-requests/visual-04-dfef8f1f0d/attempt-02/visual-04.png","sha256":"883d406b3fd99241a6cdb5ab093f1caf1f7147b615000dc5f7d209aee74a710a","review":"A simple open-hand cue and supported squat demonstrate one small low-risk change."},
+    {"file":"visual-05.png","attempt":2,"source":"runs/day87/image-requests/visual-05-c5ca8b3979/attempt-02/visual-05.png","sha256":"aa272c84dfe814ae125fd561862e3a7e321d11c44dccca1fdd58bec00de5facd","review":"Separated stop gestures and the clear low box keep the safety stop non-diagnostic and respectful."},
+    {"file":"overview-01.png","attempt":3,"source":"runs/day87/image-requests/overview-01-9cdac68418/attempt-03/overview-01.png","sha256":"88cb63abbad9ae0d78674de90bd188a38856660c1f8fcaa3be5d213ca9ebc8e4","review":"Independent compact squat-observer composition is distinct from the wide knowledge scene."},
+    {"file":"overview-02.png","attempt":2,"source":"runs/day87/image-requests/overview-02-6a449564cb/attempt-02/overview-02.png","sha256":"9ec0c8fb23b8d5afa99b9976d3029b52183e04c1d3b820ca593e2c7731b69599","review":"Independent rail-supported balance composition retains both full figures and the complete rail."},
+    {"file":"overview-03.png","attempt":2,"source":"runs/day87/image-requests/overview-03-827fcd4a79/attempt-02/overview-03.png","sha256":"7d619ead1b1607215073833c5d77729d32ec8eeb66c761ac92e99b050be1e2c9","review":"Independent shoes-and-low-box composition supports recording context without visual labels."},
+    {"file":"overview-04.png","attempt":2,"source":"runs/day87/image-requests/overview-04-897df7e278/attempt-02/overview-04.png","sha256":"e5596ea85416415f81575e2c92f3f9746627f52c2936e8cd57bd2ed88369238c","review":"Independent cue-and-supported-squat composition shows a single low-risk change."},
+    {"file":"overview-05.png","attempt":2,"source":"runs/day87/image-requests/overview-05-d059872d99/attempt-02/overview-05.png","sha256":"4ab0895e98c167adb895068d837fd10139c03b566d345664ac1b94c6907c046f","review":"Independent stop composition preserves distance, a neutral low box and complete safe margins."}
+  ],
+  "rejected": [
+    {"file":"visual-03.png","attempt":1,"reason":"Added unapproved picture cards and symbols instead of only shoes and a low box."},
+    {"file":"visual-03.png","attempt":2,"reason":"Despa's head was too close to the upper canvas edge."},
+    {"file":"visual-04.png","attempt":1,"reason":"Visible content was too close to the top and bottom canvas edges."},
+    {"file":"visual-05.png","attempt":1,"reason":"Visible content was too close to the top and bottom canvas edges."},
+    {"file":"overview-01.png","attempt":1,"reason":"Top and bottom safety margins were insufficient."},
+    {"file":"overview-01.png","attempt":2,"reason":"Top safety margin remained insufficient."},
+    {"file":"overview-02.png","attempt":1,"reason":"The support rail and figures touched the vertical safety boundaries."},
+    {"file":"overview-03.png","attempt":1,"reason":"Visible content touched the vertical safety boundaries."},
+    {"file":"overview-04.png","attempt":1,"reason":"Visible content touched the vertical safety boundaries."},
+    {"file":"overview-05.png","attempt":1,"reason":"Visible content touched the vertical safety boundaries."}
+  ],
+  "summary": {
+    "planned": 11,
+    "accepted": 11,
+    "requested": 21,
+    "retriesUsed": 10,
+    "allAcceptedSourcesHaveAlpha": true,
+    "readyForSharedPreparation": true
+  }
+}

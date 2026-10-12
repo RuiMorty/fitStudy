@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "title": "成人骨架与运动扩展规划",
+    "date": "2026-10-12",
+    "status": "planning_not_anatomically_validated",
+    "core_count": 206,
+    "counts": {
+      "颅骨": 22,
+      "听小骨": 6,
+      "舌骨": 1,
+      "脊柱": 26,
+      "胸廓": 25,
+      "上肢": 64,
+      "下肢": 62
+    },
+    "joint_connection_record_count": 205,
+    "joint_inventory_scope": "运动连接与连接组首轮登记；组内关节面、全部颅缝和各韧带/关节囊尚需进一步细分。记录数不等于人体关节数。",
+    "functional_scope": [
+      "结构交互",
+      "骨架运动",
+      "关节间隙与稳定结构",
+      "肌肉肌腱附着及形变"
+    ],
+    "excluded_scope": [
+      "真实肌力与关节受力计算"
+    ],
+    "source_set_status": "partial_coverage_199_verified_remaining_items_and_joint_fit_pending"
+  },
+  "checks": {
+    "206_unique_core_ids": true,
+    "expected_regional_counts": true,
+    "left_right_pairs": true,
+    "all_bones_have_connection_plan": true,
+    "all_connection_bone_references_exist": true,
+    "existing_4_raw_source_hashes_verified": 4,
+    "core_bones_with_downloaded_source_mapping": 199
+  },
+  "not_verified": [
+    "full_source_coverage",
+    "same_reference_registration",
+    "anatomical_accuracy",
+    "joint_axes_and_ranges",
+    "geometry_and_motion"
+  ]
+}

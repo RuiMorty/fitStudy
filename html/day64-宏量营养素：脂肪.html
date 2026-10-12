@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Day 64 · 宏量营养素：脂肪</title><link rel="icon" type="image/svg+xml" href="assets/fitness-study-logo-open-circle.svg?v=a6d8e5caaa61"><style>:root { color-scheme: light; --ink: #111113; --muted: #71717a; --line: #e4e4e7; --accent: #ff5a1f; --green: #0ea66b; --blue: #2563eb; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; font-synthesis: none; letter-spacing: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); overflow-wrap: anywhere; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+img { display: block; max-width: 100%; }
+button:focus-visible, a:focus-visible, summary:focus-visible, input:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
+svg.icon { width: 20px; height: 20px; }
+.icon-button { display: inline-grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 1px solid var(--line); border-radius: 6px; background: white; }
+[hidden] { display: none !important; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
+
+body { background: #f6f8f7; font-size: 14px; line-height: 1.65; }
+main { max-width: 980px; margin: auto; padding: 24px 18px 60px; }
+.header { padding: 22px 4px 14px; }
+h1 { margin: 10px 0 8px; font-size: 36px; line-height: 1.2; }
+h1::before { content: ""; display: block; width: 34px; height: 4px; background: var(--accent); margin-bottom: 10px; }
+h2 { font-size: 17px; margin: 0 0 14px; }
+h3 { font-size: 16px; margin: 0 0 8px; }
+.sub { color: var(--muted); margin: 5px 0 18px; }
+.meta { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { display: inline-block; border: 1px solid var(--line); border-radius: 20px; background: white; color: var(--muted); padding: 3px 10px; font-size: 12px; font-weight: 600; }
+.chip:nth-child(1) { background: #e2f7eb; color: #15803d; border-color: transparent; }
+.chip:nth-child(2) { background: #e7f0fe; color: #2563eb; border-color: transparent; }
+.chip:nth-child(3) { background: #fff2e5; color: #9a4c05; border-color: transparent; }
+.panel, .figure, .warn, .mnemonic { background: white; border: 1px solid #e2e8e4; border-radius: 14px; box-shadow: 0 2px 12px rgba(20,40,30,.06); padding: 20px; margin: 16px 0; }
+.green { border-left: 5px solid var(--green); }
+.orange { border-left: 5px solid #ea7a17; }
+.blue { border-left: 5px solid #0ea5e9; }
+.takeaway { margin: 0; }
+.figure { text-align: center; }
+.figure button { display: block; position: relative; width: 100%; border: 0; padding: 0; background: white; cursor: zoom-in; }
+.figure img { max-height: 760px; width: 100%; object-fit: contain; }
+.figure .icon-button { position: absolute; bottom: 8px; right: 8px; background: #ffffffed; }
+.caption { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
+.kp { list-style: none; padding: 0; margin: 0; }
+.kp > li { border-bottom: 1px dashed #e2e8e4; }
+.kp > li:last-child { border-bottom: 0; }
+.kp summary { cursor: pointer; padding: 13px 8px; font-weight: 650; }
+.kp summary::marker { color: var(--green); }
+.term { color: #0a7d52; background: #e2f7eb; border-radius: 6px; padding: 1px 5px; }
+.kp-body { padding: 2px 14px 16px 24px; }
+.detail-block { margin: 12px 0; }
+.detail-block h4 { font-size: 13px; color: #08744d; margin: 0 0 4px; }
+.detail-block p { margin: 0; white-space: pre-line; }
+.warn { border-left: 5px solid #e23b3b; background: #fffafa; }
+.warn p { margin: 8px 0; }
+.misconception { color: #a82b32; }
+.mnemonic { border-left: 4px solid var(--accent); box-shadow: none; }
+.mnemonic strong { color: #df4716; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+.flip { height: 168px; perspective: 900px; border: 0; background: transparent; padding: 0; text-align: center; }
+.flip-in { display: block; height: 100%; position: relative; transition: transform .45s; transform-style: preserve-3d; }
+.flip[aria-pressed="true"] .flip-in { transform: rotateY(180deg); }
+.face { position: absolute; inset: 0; backface-visibility: hidden; border: 1px solid var(--line); border-radius: 10px; padding: 15px; background: #fafafa; display: flex; align-items: center; justify-content: center; overflow-y: auto; }
+.back { transform: rotateY(180deg); background: #eef9f4; color: #075e40; border-color: #c8eadb; }
+.practice { padding-left: 20px; }
+.practice li { margin: 7px 0; }
+.question { border-top: 1px solid #e2e8e4; padding: 20px 0 8px; margin-top: 12px; min-width: 0; }
+.options { display: grid; gap: 7px; margin: 10px 0; }
+.option { display: flex; gap: 10px; align-items: baseline; border: 1px solid #e2e8e4; background: #f0f4f2; padding: 9px 12px; border-radius: 8px; cursor: pointer; }
+.option input { flex-shrink: 0; accent-color: var(--green); }
+.option:has(input:checked) { border-color: #0ea5e9; background: #e7f6fd; }
+.question[data-result="correct"] .option:has(input:checked) { border-color: #0ea66b; background: #e7f8ef; }
+.question[data-result="wrong"] .option:has(input:checked) { border-color: #e23b3b; background: #fff0f0; }
+.answer { background: #f8fbfa; border-left: 3px solid #0ea5e9; padding: 10px; margin-top: 10px; }
+.check { border: 0; background: #0ea66b; color: white; padding: 9px 14px; border-radius: 7px; }
+footer { color: var(--muted); font-size: 12px; margin-top: 28px; }
+footer ul { padding-left: 20px; }
+dialog { width: min(1200px, 96vw); max-height: 94dvh; padding: 52px 16px 16px; border: 0; border-radius: 8px; background: white; }
+dialog::backdrop { background: #15191dd9; }
+dialog img { width: 100%; max-height: 78dvh; object-fit: contain; }
+dialog .icon-button { position: absolute; top: 8px; right: 10px; }
+@media (max-width: 600px) {
+  main { padding: 16px 12px 40px; }
+  h1 { font-size: 26px; }
+  .header { padding: 16px 4px 12px; }
+  .panel, .figure, .warn, .mnemonic { padding: 15px; }
+  .kp-body { padding-left: 16px; }
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .face { padding: 12px; }
+}
+</style></head><body><main><header class="header"><h1>Day 64 · 宏量营养素：脂肪</h1><p class="sub">脂肪不是训练饮食的敌人：看来源、总量、整体膳食和训练前后的实际耐受度。</p><div class="meta"><span class="chip">9千卡每克</span><span class="chip">必需脂肪酸</span><span class="chip">食物来源</span></div></header><section class="panel green"><h2>一句话总结</h2><p class="takeaway">脂肪通常约提供每克9千卡，是能量密度最高的宏量营养素，并参与细胞膜、激素合成和脂溶性维生素吸收。饱和、单不饱和、多不饱和和反式脂肪描述的是脂肪酸结构，不是对一份食物的全部评价。训练饮食应优先选择营养密度高的食物来源，减少工业反式脂肪和过多饱和脂肪；同时根据总能量、目标和临近训练的胃肠耐受安排份量。</p></section><figure class="figure"><button data-zoom aria-label="放大详情图"><img class="" src="assets/阶段4营养恢复/day64-宏量营养素：脂肪.png" alt="膳食脂肪与训练饮食四主题中文总览"><span class="icon-button"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 15 6 6" /><path d="m15 9 6-6" /><path d="M21 16v5h-5" /><path d="M21 8V3h-5" /><path d="M3 16v5h5" /><path d="m3 21 6-6" /><path d="M3 8V3h5" /><path d="M9 9 3 3" /></svg></span></button><figcaption class="caption">脂肪提供能量并参与细胞、激素和脂溶性维生素吸收；安排要看食物来源和整体饮食，而不是只看某个单一标签。</figcaption></figure><section class="panel"><h2>核心要点</h2><ul class="kp"><li><details><summary><span class="term">脂肪的角色：高能量，不等于多余</span>：脂肪约9千卡每克，参与细胞膜、激素相关过程和脂溶性维生素吸收；训练者不宜因减脂焦虑长期极端低脂。</summary><div class="kp-body"><section class="detail-block"><h4>能量密度要会用</h4><p>同样体积的油脂、坚果和高脂加工食品可提供较多能量。对需要增加能量的人，适量高营养密度脂肪可能有帮助；对希望减脂的人，重点是份量、饱腹感和整体能量平衡，不是把脂肪全部归为禁忌。</p></section><section class="detail-block"><h4>别忽视生理功能</h4><p>脂肪参与细胞结构、部分激素相关过程，并帮助吸收维生素A、D、E、K。长期极端低脂可能让食物选择过窄；但“需要脂肪”不等于越多越好，仍要结合总能量、食物来源和个人医疗情况。</p></section></div></details></li><li><details><summary><span class="term">类型与来源：先看食物整体</span>：单不饱和、多不饱和、饱和与反式脂肪常来自不同食物组合；用来源和加工方式理解，比只背标签更实用。</summary><div class="kp-body"><section class="detail-block"><h4>多选自然来源</h4><p>坚果、种子、鱼类、橄榄油、菜籽油、牛油果等常提供不饱和脂肪，并带来其他营养成分。选择这些食物不等于可以无限量；坚果酱、油和高脂零食的份量仍会显著影响总能量。</p></section><section class="detail-block"><h4>减少反式与过多饱和脂肪</h4><p>工业反式脂肪与心血管风险相关，应尽量避免。饱和脂肪并非只存在于一种食物，但一般建议限制其在总能量中的比例，并用更多不饱和脂肪来源替代；不要以单一“坏油”说法替代整体膳食评估。</p></section></div></details></li><li><details><summary><span class="term">必需脂肪酸与血脂：避免过度简化</span>：α-亚麻酸（ω-3）和亚油酸（ω-6）属于需要从食物获得的必需脂肪酸；LDL、HDL等指标属于医疗风险评估的一部分，不能用口号或单一食物自行诊断。</summary><div class="kp-body"><section class="detail-block"><h4>必需不代表无限补充</h4><p>α-亚麻酸（ω-3）和亚油酸（ω-6）属于人体需要从食物获得的必需脂肪酸。日常可通过鱼类、坚果、种子和植物油等多样来源安排；高剂量鱼油或其他脂肪补剂可能与药物、凝血或手术安排相互作用，不宜自行大剂量使用。</p></section><section class="detail-block"><h4>血脂需要专业解读</h4><p>LDL和HDL是血脂评估中的指标，但“好”“坏”的简化称呼不足以解释个人风险。血脂异常、家族史、心血管疾病、糖尿病或正在用药者，应与医生或注册营养专业人员讨论整体饮食、运动和治疗方案。</p></section></div></details></li><li><details><summary><span class="term">训练中的安排：总量、时机与耐受</span>：脂肪可组成日常均衡饮食，但临近高强度训练时，过高脂肪和大份量餐食可能让部分人消化变慢或不适。</summary><div class="kp-body"><section class="detail-block"><h4>日常餐食重平衡</h4><p>一般成人的脂肪建议常以总能量的一定范围表示，实际份量要结合体重目标、饮食偏好和其他宏量营养素。把脂肪和蛋白质、富含纤维的食物、蔬果与主食一起安排，有助于构成可持续而非极端的饮食。</p></section><section class="detail-block"><h4>训练前后看舒适度</h4><p>训练前临近时，部分人会选择相对低脂、易消化的餐食，把较高脂肪食物放在更远离训练的餐次。训练后无需因害怕脂肪而完全回避它，但若需要迅速补充碳水和蛋白，过于油腻的大餐可能不利于胃肠舒适和执行。</p></section></div></details></li></ul></section><section class="warn"><h2>常见误区</h2><p><strong class="misconception">误区：减脂必须把脂肪压到越低越好。</strong><br>辨析：脂肪有重要生理功能；应管理总能量、份量和来源，而非长期极端低脂。</p><p><strong class="misconception">误区：所有饱和脂肪食物都一样，所有不饱和脂肪都能不限量。</strong><br>辨析：要看食物整体、加工方式和份量；不饱和来源也有能量密度。</p><p><strong class="misconception">误区：ω-3越多越安全，可以随意高剂量补剂。</strong><br>辨析：补剂可能和药物或医疗状况相互作用；优先食物来源，高剂量需专业建议。</p><p><strong class="misconception">误区：血脂只靠某一种油或补剂就能解决。</strong><br>辨析：血脂风险需结合整体饮食、运动、病史和医学评估，不能自行用单一食物诊断或治疗。</p></section><section class="mnemonic"><h2>记忆口诀</h2><p><strong>脂肪有功能，来源看整体；控份量、少反式、配训练。</strong></p></section><section class="panel"><h2>翻转卡复习</h2><div class="cards"><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">脂肪通常提供多少能量？</span><span class="face back" aria-hidden="true">通常约9千卡每克。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">脂肪参与哪些基础功能？</span><span class="face back" aria-hidden="true">细胞结构、部分激素相关过程和脂溶性维生素吸收等。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">哪些脂肪酸属于必需脂肪酸？</span><span class="face back" aria-hidden="true">α-亚麻酸（ω-3）和亚油酸（ω-6）需要从食物获得。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">工业反式脂肪的原则？</span><span class="face back" aria-hidden="true">与心血管风险相关，应尽量避免。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">为什么训练前大份高脂餐可能不适？</span><span class="face back" aria-hidden="true">部分人消化较慢，临近高强度训练时会增加胃肠负担。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">血脂异常能靠自己用油治疗吗？</span><span class="face back" aria-hidden="true">不能；需要结合病史、整体生活方式和医疗专业评估。</span></span></button></div></section><section class="panel orange"><h2>实操关联</h2><ul class="practice"><li>盘点一天中的脂肪来源，把它们分成坚果种子、鱼类、植物油、乳肉、加工零食等来源，而不是只写“好油坏油”。</li><li>为一餐设计主食、蛋白质、蔬果和适量脂肪的组合，记录饱腹与训练前后的胃肠感受。</li><li>若训练前吃高脂餐常不适，先把较油腻的食物移到更远离训练的餐次，只调整时机或份量之一。</li><li>检查包装配料中的部分氢化油和高加工油炸食品；不要自行用大剂量鱼油或其他脂肪补剂替代医疗建议。</li></ul></section><section class="panel blue"><h2>练习题</h2><section class="question" data-answers="[1]" data-explanation="脂肪有功能但能量密度高。合理安排看总能量、食物来源、份量和个人耐受度。"><h3>1. 单选：脂肪在训练饮食中更准确的定位是？</h3><div class="options"><label class="option"><input type="radio" name="question-0" value="0"><span>A. 完全不需要的热量</span></label><label class="option"><input type="radio" name="question-0" value="1"><span>B. 高能量且参与多种生理功能的营养素，需管理来源和份量</span></label><label class="option"><input type="radio" name="question-0" value="2"><span>C. 只适合增肌者</span></label><label class="option"><input type="radio" name="question-0" value="3"><span>D. 训练前越多越好</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[2]" data-explanation="高剂量补剂可能与药物或医疗情况相互作用，不应自行加量。"><h3>2. 单选：关于ω-3补剂，哪项更合适？</h3><div class="options"><label class="option"><input type="radio" name="question-1" value="0"><span>A. 剂量越高越安全</span></label><label class="option"><input type="radio" name="question-1" value="1"><span>B. 可替代所有鱼类和完整饮食</span></label><label class="option"><input type="radio" name="question-1" value="2"><span>C. 优先食物来源，高剂量或用药情况下先咨询专业人员</span></label><label class="option"><input type="radio" name="question-1" value="3"><span>D. 只要运动就必须服用</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[0,1,2,4]" data-explanation="脂肪安排要放在整体膳食和个人情况中看，单一食物或油的口号不能替代判断。"><h3>3. 多选：制定脂肪安排时，哪些考虑更合理？</h3><div class="options"><label class="option"><input type="checkbox" name="question-2" value="0"><span>A. 总能量和份量</span></label><label class="option"><input type="checkbox" name="question-2" value="1"><span>B. 食物来源与加工方式</span></label><label class="option"><input type="checkbox" name="question-2" value="2"><span>C. 临近训练的胃肠耐受</span></label><label class="option"><input type="checkbox" name="question-2" value="3"><span>D. 只按一种油的宣传决定</span></label><label class="option"><input type="checkbox" name="question-2" value="4"><span>E. 个人病史和用药情况</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[1]" data-explanation="部分人临近高强度训练时对高脂大份量餐耐受较差；优先调整时机或份量，保持整体饮食平衡。"><h3>4. 案例：小吴晚间间歇训练前一小时吃了炸物大餐，常反胃。更合理的尝试是？</h3><div class="options"><label class="option"><input type="radio" name="question-3" value="0"><span>A. 训练前完全禁食</span></label><label class="option"><input type="radio" name="question-3" value="1"><span>B. 把高脂大餐移到更远离训练的时段，临近训练选择更易消化餐食</span></label><label class="option"><input type="radio" name="question-3" value="2"><span>C. 训练中喝更多油</span></label><label class="option"><input type="radio" name="question-3" value="3"><span>D. 用鱼油替代正餐</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section></section><footer>Day 64/110 · 双证<ul><li>ACSM、Academy of Nutrition and Dietetics、Dietitians of Canada：Nutrition and Athletic Performance，运动饮食中的宏量营养素安排。</li><li>中国营养学会：《中国居民膳食指南（2022）》，适量油脂、坚果和多样食物来源建议。</li><li>World Health Organization：Guidelines on saturated fatty acid and trans-fatty acid intake，减少工业反式脂肪与限制饱和脂肪的公共卫生原则。</li><li>本课为一般营养教育；血脂异常、心血管疾病、糖尿病、胆囊或胰腺疾病、孕期、用抗凝药或计划高剂量补剂者，请咨询医生或注册营养专业人员。</li></ul></footer></main><dialog aria-label="详情大图"><button class="icon-button" aria-label="关闭大图" title="关闭大图"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></button><img alt=""></dialog><script>document.querySelectorAll('.flip').forEach((button) => {
+  button.addEventListener('click', () => {
+    const pressed = button.getAttribute('aria-pressed') !== 'true';
+    button.setAttribute('aria-pressed', String(pressed));
+    button.querySelector('.front').setAttribute('aria-hidden', String(pressed));
+    button.querySelector('.back').setAttribute('aria-hidden', String(!pressed));
+  });
+});
+document.querySelectorAll('.question').forEach((question) => {
+  question.querySelector('.check').addEventListener('click', () => {
+    const selected = [...question.querySelectorAll('input:checked')].map((input) => Number(input.value)).sort();
+    const answer = question.querySelector('.answer');
+    answer.hidden = false;
+    if (!selected.length) { answer.textContent = '请先选择答案。'; delete question.dataset.result; return; }
+    const correct = JSON.stringify(selected) === JSON.stringify(JSON.parse(question.dataset.answers).sort());
+    question.dataset.result = correct ? 'correct' : 'wrong';
+    answer.textContent = `${correct ? '回答正确。' : '再想一想。'}${question.dataset.explanation}`;
+  });
+});
+const imageDialog = document.querySelector('dialog');
+document.querySelectorAll('[data-zoom]').forEach((button) => {
+  button.addEventListener('click', () => {
+    const original = button.querySelector('img');
+    const image = imageDialog.querySelector('img');
+    image.src = original.src;
+    image.alt = original.alt;
+    imageDialog.showModal();
+  });
+});
+imageDialog.querySelector('button').addEventListener('click', () => imageDialog.close());
+imageDialog.addEventListener('click', (event) => {
+  const rect = imageDialog.getBoundingClientRect();
+  if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) imageDialog.close();
+});
+</script></body></html>

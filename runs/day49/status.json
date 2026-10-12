@@ -1,6 +1,6 @@
 {
-  "status": "awaiting-review",
-  "artifactStatus": "ready-local-draft",
+  "status": "published",
+  "artifactStatus": "published",
   "day": 49,
   "startedAt": "2026-09-28T10:00:00Z",
   "input": "runs/day49/lesson.json",
@@ -8,8 +8,13 @@
   "planned": 13,
   "generated": 13,
   "authorization": "runs/day49/authorization.json",
-  "previousDraft": {"day": 48, "status": "published", "publicLearningUrl": "https://fitstudy.cn/go/48/"},
-  "publishApproved": false,
+  "previousDraft": {
+    "day": 48,
+    "status": "published",
+    "publicLearningUrl": "https://fitstudy.cn/go/48/"
+  },
+  "publishApproved": true,
+  "serverDeployed": true,
   "retryPolicy": "each asset permits one initial provider request plus up to five revised retries; credential or quota failures stop without consuming provider-request budget",
   "failure": "runs/day49/failure.json",
   "coverRevisionAuthorization": "runs/day49/retry-cover-20260928/authorization.json",
@@ -34,5 +39,22 @@
     "zip": "http://127.0.0.1:8420/xhs/day49/day49-xhs.zip",
     "httpStatus": "200 for course, XHS page, and ZIP"
   },
-  "nextAction": "Await user acceptance of the local draft. Do not regenerate, publish, update public pages, shortlinks, or formal progress."
+  "nextAction": "Day49 is published and publicly verified. Generate a later lesson only through the normal daily authorization and curriculum checks.",
+  "titleRevision": "小红书标题与封面标题已统一为“爆发力训练技术”；渲染、响应式验证与ZIP CRC已重跑通过。",
+  "localVerification": "passed",
+  "userReviewStatus": "published",
+  "publicationApproval": "runs/day49/release/authorization.json",
+  "releaseId": "20260929T082035Z-day49",
+  "publicUrl": "https://fitstudy.cn/go/49/",
+  "remoteBackup": "/home/zhaoqr/fitness/.fitstudy-deploy-backups/20260929T082035Z-day49",
+  "archive": "runs/day49/release/day49-site.tar.gz",
+  "sha256": "d8c35a20b5c8c562ed599d5f697a9c4b78105d248a40aa9bce9f72fa75cc231f",
+  "publicVerification": "passed",
+  "verifiedAt": "2026-09-29T08:22:16.201Z",
+  "reports": {
+    "files": "runs/day49/release/live-files-report.json",
+    "browser": "runs/day49/release/live-browser-report.json",
+    "final": "runs/day49/release/final-verification.json"
+  },
+  "captionShortlinkStatus": "completed"
 }

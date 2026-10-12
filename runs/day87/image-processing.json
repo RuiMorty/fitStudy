@@ -1,0 +1,435 @@
+{
+  "processedAt": "2026-10-03T22:37:49.389873+00:00",
+  "method": "trim near-transparent noise; reviewed crop; uniform scale; transparent margin",
+  "assets": [
+    {
+      "source": "runs/day87/source/cover.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "sourceSha256": "29f93a90176b8633648ab10595860681027fcbcd102e8cf4e84431cde7105a84",
+      "reviewedCrop": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "visibleCrop": [
+        250,
+        17,
+        1562,
+        878
+      ],
+      "output": "runs/day87/assets/cover.png",
+      "size": [
+        1600,
+        900
+      ],
+      "subjectSize": [
+        1207,
+        792
+      ],
+      "offset": [
+        196,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "无字封面"
+    },
+    {
+      "source": "runs/day87/source/visual-01.png",
+      "sourceSize": [
+        1881,
+        836
+      ],
+      "sourceSha256": "ca2700f9998053b4aa04b63304b7d67113ded4399be84865cbe2470781078ac3",
+      "reviewedCrop": [
+        0,
+        0,
+        1881,
+        836
+      ],
+      "visibleCrop": [
+        273,
+        46,
+        1511,
+        774
+      ],
+      "output": "runs/day87/assets/visual-01.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1238,
+        728
+      ],
+      "offset": [
+        781,
+        86
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "动作观察的用途与边界知识页配图"
+    },
+    {
+      "source": "runs/day87/source/visual-02.png",
+      "sourceSize": [
+        1983,
+        793
+      ],
+      "sourceSha256": "910727aca07ba7b34f5992fd0eeb13df8f2a5f953891292e70b1b186f7059108",
+      "reviewedCrop": [
+        0,
+        0,
+        1983,
+        793
+      ],
+      "visibleCrop": [
+        330,
+        17,
+        1718,
+        773
+      ],
+      "output": "runs/day87/assets/visual-02.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1388,
+        756
+      ],
+      "offset": [
+        706,
+        72
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "固定视角、范围与次数知识页配图"
+    },
+    {
+      "source": "runs/day87/source/visual-03.png",
+      "sourceSize": [
+        1881,
+        836
+      ],
+      "sourceSha256": "b2aec60539abc83b1d83a8b6a3f17330e1c491ef762a1af41cd1db080e6186e9",
+      "reviewedCrop": [
+        0,
+        0,
+        1881,
+        836
+      ],
+      "visibleCrop": [
+        625,
+        75,
+        1265,
+        746
+      ],
+      "output": "runs/day87/assets/visual-03.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        640,
+        671
+      ],
+      "offset": [
+        1080,
+        114
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "把当日背景放进记录知识页配图"
+    },
+    {
+      "source": "runs/day87/source/visual-04.png",
+      "sourceSize": [
+        1870,
+        841
+      ],
+      "sourceSha256": "883d406b3fd99241a6cdb5ab093f1caf1f7147b615000dc5f7d209aee74a710a",
+      "reviewedCrop": [
+        0,
+        0,
+        1870,
+        841
+      ],
+      "visibleCrop": [
+        540,
+        85,
+        1428,
+        733
+      ],
+      "output": "runs/day87/assets/visual-04.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        888,
+        648
+      ],
+      "offset": [
+        956,
+        126
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "低风险下一步一次一项知识页配图"
+    },
+    {
+      "source": "runs/day87/source/visual-05.png",
+      "sourceSize": [
+        1881,
+        836
+      ],
+      "sourceSha256": "aa272c84dfe814ae125fd561862e3a7e321d11c44dccca1fdd58bec00de5facd",
+      "reviewedCrop": [
+        0,
+        0,
+        1881,
+        836
+      ],
+      "visibleCrop": [
+        476,
+        16,
+        1463,
+        788
+      ],
+      "output": "runs/day87/assets/visual-05.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        987,
+        772
+      ],
+      "offset": [
+        906,
+        64
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "停止与转介信号知识页配图"
+    },
+    {
+      "source": "runs/day87/source/overview-01.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "88cb63abbad9ae0d78674de90bd188a38856660c1f8fcaa3be5d213ca9ebc8e4",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        356,
+        207,
+        1151,
+        888
+      ],
+      "output": "runs/day87/assets/overview-01.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        795,
+        681
+      ],
+      "offset": [
+        402,
+        259
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "动作观察的用途与边界总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day87/source/overview-02.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "9ec0c8fb23b8d5afa99b9976d3029b52183e04c1d3b820ca593e2c7731b69599",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        293,
+        109,
+        1196,
+        938
+      ],
+      "output": "runs/day87/assets/overview-02.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        903,
+        829
+      ],
+      "offset": [
+        348,
+        185
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "固定视角、范围与次数总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day87/source/overview-03.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "7d619ead1b1607215073833c5d77729d32ec8eeb66c761ac92e99b050be1e2c9",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        377,
+        99,
+        1058,
+        966
+      ],
+      "output": "runs/day87/assets/overview-03.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        681,
+        867
+      ],
+      "offset": [
+        459,
+        166
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "把当日背景放进记录总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day87/source/overview-04.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "e5596ea85416415f81575e2c92f3f9746627f52c2936e8cd57bd2ed88369238c",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        279,
+        157,
+        1203,
+        895
+      ],
+      "output": "runs/day87/assets/overview-04.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        924,
+        738
+      ],
+      "offset": [
+        338,
+        231
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "低风险下一步一次一项总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day87/source/overview-05.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "4ab0895e98c167adb895068d837fd10139c03b566d345664ac1b94c6907c046f",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        303,
+        110,
+        1205,
+        880
+      ],
+      "output": "runs/day87/assets/overview-05.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        902,
+        770
+      ],
+      "offset": [
+        349,
+        215
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "停止与转介信号总览专用，不与知识页复用"
+    }
+  ]
+}

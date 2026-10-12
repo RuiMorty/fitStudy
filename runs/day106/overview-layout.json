@@ -1,0 +1,37 @@
+{
+  "size": [
+    1536,
+    1024
+  ],
+  "columns": 3,
+  "title": "混合整合：会切换语言，更要守住同一安全底线",
+  "subtitle": "分类切换 · 条件与边界 · 分线记录 · 去重错因",
+  "panels": [
+    {
+      "title": "分类切换",
+      "description": "先识别题目在问什么",
+      "image": "runs/day106/assets/overview-01-classify.png"
+    },
+    {
+      "title": "条件与边界",
+      "description": "为何此刻可用或不可用",
+      "image": "runs/day106/assets/overview-02-conditions.png"
+    },
+    {
+      "title": "分线记录",
+      "description": "正确率、时间、错因",
+      "image": "runs/day106/assets/overview-03-two-lines.png"
+    },
+    {
+      "title": "去重错因",
+      "description": "按概念，不按题号",
+      "image": "runs/day106/assets/overview-04-dedupe-list.png"
+    }
+  ],
+  "footer": [
+    "先分共同与特有，再写适用与边界；两线分开记，共同错再去重。",
+    "混合模考不是双证官方联合考试；不得泄露题目、透支复习或把结果当认证结论。"
+  ],
+  "output": "runs/day106/assets/detail.png",
+  "deliveryScale": 2
+}

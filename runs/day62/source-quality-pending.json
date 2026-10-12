@@ -1,0 +1,113 @@
+{
+  "reviewer": "local source visual and alpha QA",
+  "scope": "Day62 Lingzhi attempt-01 source candidates only; no rendering, installation, deployment, or paid retry was performed.",
+  "requirements": [
+    "true-alpha transparent PNG with no rendered checkerboard or opaque background",
+    "wordless Bojji and Despa teaching art with stable character appearance",
+    "no duplicated figures or malformed limbs",
+    "food, bicycle, and meal props must be sensible",
+    "each scene must correspond to its exact carbohydrate lesson prompt and its forbidden-elements list"
+  ],
+  "technicalChecks": {
+    "checkedWith": [
+      "sips: dimensions, PNG format, hasAlpha",
+      "RGBA alpha extrema and pixel-count inspection",
+      "individual white-background visual composites",
+      "individual transparent-on-dark visual inspection for edge/background validation"
+    ],
+    "result": "All 9 candidates are non-empty RGBA PNGs with alpha extrema [0,255] and 53.14% to 70.05% fully transparent pixels. None contains a rendered white/gray checkerboard or opaque full-canvas background. The one-pixel colored antialias fringe seen against black matches the already accepted Day60 source-art baseline; it is not a rendered background."
+  },
+  "candidateAlphaEvidence": [
+    {"file": "cover.png", "attempt": 1, "size": [1672, 941], "transparentPixelPercent": 63.63},
+    {"file": "visual-01-types.png", "attempt": 1, "size": [2210, 711], "transparentPixelPercent": 64.2},
+    {"file": "visual-02-glycogen.png", "attempt": 1, "size": [1881, 836], "transparentPixelPercent": 54.06},
+    {"file": "visual-03-gi-gl.png", "attempt": 1, "size": [1870, 841], "transparentPixelPercent": 54.64},
+    {"file": "visual-04-timing.png", "attempt": 1, "size": [2213, 711], "transparentPixelPercent": 70.05},
+    {"file": "overview-01-types.png", "attempt": 1, "size": [1448, 1086], "transparentPixelPercent": 53.14},
+    {"file": "overview-02-glycogen.png", "attempt": 1, "size": [1448, 1086], "transparentPixelPercent": 60.56},
+    {"file": "overview-03-gi-gl.png", "attempt": 1, "size": [1448, 1086], "transparentPixelPercent": 66.34},
+    {"file": "overview-04-timing.png", "attempt": 1, "size": [1448, 1086], "transparentPixelPercent": 66.16}
+  ],
+  "accepted": [
+    {
+      "file": "visual-01-types.png",
+      "attempt": 1,
+      "candidate": "runs/day62/image-requests/visual-01-types-c6b4e9597c/attempt-01/visual-01-types.png",
+      "source": "runs/day62/source/visual-01-types.png",
+      "sha256": "05d5b2ffc5b38877d847067e444bc0e2f33e2f12a5e8967e383f430cd3874bce",
+      "review": "一位波吉与一位德斯帕的比例、服装和四肢均正常；米饭、豆类、薯类、果蔬和燕麦碗构成清楚的食物多样性/纤维场景。无可读文字、包装、箭头、医学图或重复人物。"
+    },
+    {
+      "file": "visual-03-gi-gl.png",
+      "attempt": 1,
+      "candidate": "runs/day62/image-requests/visual-03-gi-gl-33c0683d8f/attempt-01/visual-03-gi-gl.png",
+      "source": "runs/day62/source/visual-03-gi-gl.png",
+      "sha256": "4b2f891632aef332508526383ac4d1f3dd9fc83202eb775df941069b57decdb0",
+      "review": "波吉清楚地比较水果粥与饭豆两餐，德斯帕以思考手势参与；两份餐食的器皿、手部和食物关系正常，画面无图表、数值、医疗设备、文字或箭头。"
+    },
+    {
+      "file": "overview-01-types.png",
+      "attempt": 1,
+      "candidate": "runs/day62/image-requests/overview-01-types-337c1059b6/attempt-01/overview-01-types.png",
+      "source": "runs/day62/source/overview-01-types.png",
+      "sha256": "d8a624be2fcf6cab6b0748bcf7c92eb9eac4d3974853d446ea1dff85974ca9f2",
+      "review": "独立于知识页绘制：波吉端着饭豆碗、德斯帕拿水果，周围完整餐食可表达搭配与多样性。人物、食材和透明边缘均可接受，无文字、包装或箭头。"
+    }
+  ],
+  "rejected": [
+    {
+      "file": "cover.png",
+      "attempt": 1,
+      "candidate": "runs/day62/image-requests/cover-eb86e17540/attempt-01/cover.png",
+      "sha256": "abfc78921b9f8e93c7c1d5df45cd7310a51fff2d36d2ea3bb23a2ceb7a7f4a79",
+      "reason": "思考框中以粗橙色箭头把食物连向火焰，直接违反共同提示词的“no arrows / unexplained markers”；这也把所需的简洁独立封面变成图示化标记场景。",
+      "recommendedAdjustedRetryPrompt": "Wide 16:9 transparent wordless course cover. Exactly one short Bojji sits beside one simple balanced meal of plain rice, potato, beans and fruit; exactly one Despa does a light stationary running warm-up nearby. Convey carbohydrate as training fuel only through the energetic warm-up and meal relationship. Absolutely no thought bubbles, fire icons, arrows, rays, markers, diagrams, text, labels, numbers, packaging, floor, shadow, or halo. Keep all bodies and props inside a six-percent safe margin."
+    },
+    {
+      "file": "visual-02-glycogen.png",
+      "attempt": 1,
+      "candidate": "runs/day62/image-requests/visual-02-glycogen-142fa6b69f/attempt-01/visual-02-glycogen.png",
+      "sha256": "b72cef1aa82ea48e1d9224df638fe938b485b7cfd3e4d5927a3703b47e28b295",
+      "reason": "自行车与餐食本身正常，但中央肌肉剖面和肝脏图成为明确的解剖图，并带有发光/射线标记；该项明确要求不用 anatomy labels、arrows 或 charts，不能以器官图替代训练与恢复场景。",
+      "recommendedAdjustedRetryPrompt": "Wide 28:9 transparent wordless knowledge illustration. Exactly one Despa performs a controlled moderate stationary cycling pose on a plain exercise bike with a blank, text-free console; exactly one Bojji rests beside one simple post-training meal and a water cup. Convey fuel storage through the before/after-training relationship only. Do not show any muscle cutaway, liver, organ, anatomy diagram, molecule icon, thought bubble, fire, arrow, ray, chart, label, number, text, or medical device. Keep all body parts and bike connections anatomically sensible and inside a six-percent safe margin."
+    },
+    {
+      "file": "visual-04-timing.png",
+      "attempt": 1,
+      "candidate": "runs/day62/image-requests/visual-04-timing-9e5ddcd30d/attempt-01/visual-04-timing.png",
+      "sha256": "8eda3b46e1f4919aad3f021b8432c1c46729ef36c4d7bf400bbccb773099bd9a",
+      "reason": "橙色弧线/放射线充当未解释的方向标记，违反共同提示词；画面还把多组散落食物连成近似流程图，而不是一张无标记的训练前后餐食场景。",
+      "recommendedAdjustedRetryPrompt": "Wide 28:9 transparent wordless knowledge illustration. Exactly one Despa has just finished a light training pose and holds one simple bowl of rice topped with egg; exactly one Bojji prepares one small easy-to-digest snack plate with banana slices and toast. Show the two meal moments as one calm scene with no connecting line. Absolutely no clock, arrow, curved flow line, ray, marker, thought bubble, text, label, package, chart, floor, shadow, or halo."
+    },
+    {
+      "file": "overview-02-glycogen.png",
+      "attempt": 1,
+      "candidate": "runs/day62/image-requests/overview-02-glycogen-2ccd374f54/attempt-01/overview-02-glycogen.png",
+      "sha256": "1f59df74f4b813d39008eb24c701538704ade63c5e6d4b57de67718544311247",
+      "reason": "两个思考框内出现肝脏、肌肉、六边形、火焰和绿色箭头，构成被明确禁止的解剖图和箭头图示；总览应保留独立、简明的训练与恢复画面。",
+      "recommendedAdjustedRetryPrompt": "Wide 4:3 transparent wordless overview-only illustration. Exactly one Despa performs light stationary cycling on a plain exercise bike with no console text; exactly one Bojji holds one simple post-training bowl nearby. Explain fuel and recovery only with the two characters and the meal. Do not include thought bubbles, liver, muscle, organ, anatomy diagram, hexagon, flame, arrow, ray, chart, label, number, text, or medical device."
+    },
+    {
+      "file": "overview-03-gi-gl.png",
+      "attempt": 1,
+      "candidate": "runs/day62/image-requests/overview-03-gi-gl-e85c3ab1b9/attempt-01/overview-03-gi-gl.png",
+      "sha256": "f7d187f714fc1c3a09097a13c9180d16d9cb16bef366bb40d82c695cad1bf849",
+      "reason": "一盘米饭鸡肉蔬菜与一盘汉堡薯条的对照引入了明显的“好/坏食物”暗示，且没有呈现份量或搭配这一课需要的上下文；不符合“two different plain balanced plates”和“不作好坏排名”的语义。",
+      "recommendedAdjustedRetryPrompt": "Wide 4:3 transparent wordless overview-only illustration. Exactly one Bojji calmly looks at two different plain balanced plates: one modest rice-and-bean plate with vegetables and one porridge-and-fruit plate with a small protein side; make their portion or meal context visibly different but equally calm and balanced. Exactly one Despa gestures open-handed. Do not use burger, fries, junk-food contrast, good/bad symbols, charts, text, numbers, arrows, labels, or medical devices."
+    },
+    {
+      "file": "overview-04-timing.png",
+      "attempt": 1,
+      "candidate": "runs/day62/image-requests/overview-04-timing-06a74cefc3/attempt-01/overview-04-timing.png",
+      "sha256": "d9f2dd08a005480316ca4524ea2784fd88779b2cc70fc59d59d14c1db02d9973",
+      "reason": "波吉端的是鸡肉、米饭和西兰花构成的完整正餐，不是要求的小份、朴素加餐；黄色感叹射线也是共同提示词禁止的未解释标记，德斯帕的动作也不够清楚地读作轻松跑步热身。",
+      "recommendedAdjustedRetryPrompt": "Wide 4:3 transparent wordless overview-only illustration. Exactly one Despa finishes a clearly readable gentle jogging warm-up pose and holds a plain water cup; exactly one Bojji holds one small plain snack plate containing only banana slices and toast. Convey timing through their contrasting pre-training snack and post-warm-up water moment. No full meal, thought bubble, clock, text, package, arrow, ray, marker, chart, floor, shadow, or halo."
+    }
+  ],
+  "retryPolicy": {
+    "initialRequestUsed": 1,
+    "adjustedRetriesRemainingPerRejectedAsset": 5,
+    "instruction": "Preserve all attempt-01 candidates and request only the six rejected assets with their exact adjusted prompts; visually QA each new candidate before copying it into source/."
+  },
+  "result": "3 of 9 source candidates accepted and copied into runs/day62/source/. Six candidate files require adjusted retries before preprocessing or package rendering may begin."
+}

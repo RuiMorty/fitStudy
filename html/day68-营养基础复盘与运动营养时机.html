@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Day 68 · 营养基础复盘与运动营养时机</title><link rel="icon" type="image/svg+xml" href="assets/fitness-study-logo-open-circle.svg?v=a6d8e5caaa61"><style>:root { color-scheme: light; --ink: #111113; --muted: #71717a; --line: #e4e4e7; --accent: #ff5a1f; --green: #0ea66b; --blue: #2563eb; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; font-synthesis: none; letter-spacing: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); overflow-wrap: anywhere; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+img { display: block; max-width: 100%; }
+button:focus-visible, a:focus-visible, summary:focus-visible, input:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
+svg.icon { width: 20px; height: 20px; }
+.icon-button { display: inline-grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 1px solid var(--line); border-radius: 6px; background: white; }
+[hidden] { display: none !important; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
+
+body { background: #f6f8f7; font-size: 14px; line-height: 1.65; }
+main { max-width: 980px; margin: auto; padding: 24px 18px 60px; }
+.header { padding: 22px 4px 14px; }
+h1 { margin: 10px 0 8px; font-size: 36px; line-height: 1.2; }
+h1::before { content: ""; display: block; width: 34px; height: 4px; background: var(--accent); margin-bottom: 10px; }
+h2 { font-size: 17px; margin: 0 0 14px; }
+h3 { font-size: 16px; margin: 0 0 8px; }
+.sub { color: var(--muted); margin: 5px 0 18px; }
+.meta { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { display: inline-block; border: 1px solid var(--line); border-radius: 20px; background: white; color: var(--muted); padding: 3px 10px; font-size: 12px; font-weight: 600; }
+.chip:nth-child(1) { background: #e2f7eb; color: #15803d; border-color: transparent; }
+.chip:nth-child(2) { background: #e7f0fe; color: #2563eb; border-color: transparent; }
+.chip:nth-child(3) { background: #fff2e5; color: #9a4c05; border-color: transparent; }
+.panel, .figure, .warn, .mnemonic { background: white; border: 1px solid #e2e8e4; border-radius: 14px; box-shadow: 0 2px 12px rgba(20,40,30,.06); padding: 20px; margin: 16px 0; }
+.green { border-left: 5px solid var(--green); }
+.orange { border-left: 5px solid #ea7a17; }
+.blue { border-left: 5px solid #0ea5e9; }
+.takeaway { margin: 0; }
+.figure { text-align: center; }
+.figure button { display: block; position: relative; width: 100%; border: 0; padding: 0; background: white; cursor: zoom-in; }
+.figure img { max-height: 760px; width: 100%; object-fit: contain; }
+.figure .icon-button { position: absolute; bottom: 8px; right: 8px; background: #ffffffed; }
+.caption { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
+.kp { list-style: none; padding: 0; margin: 0; }
+.kp > li { border-bottom: 1px dashed #e2e8e4; }
+.kp > li:last-child { border-bottom: 0; }
+.kp summary { cursor: pointer; padding: 13px 8px; font-weight: 650; }
+.kp summary::marker { color: var(--green); }
+.term { color: #0a7d52; background: #e2f7eb; border-radius: 6px; padding: 1px 5px; }
+.kp-body { padding: 2px 14px 16px 24px; }
+.detail-block { margin: 12px 0; }
+.detail-block h4 { font-size: 13px; color: #08744d; margin: 0 0 4px; }
+.detail-block p { margin: 0; white-space: pre-line; }
+.warn { border-left: 5px solid #e23b3b; background: #fffafa; }
+.warn p { margin: 8px 0; }
+.misconception { color: #a82b32; }
+.mnemonic { border-left: 4px solid var(--accent); box-shadow: none; }
+.mnemonic strong { color: #df4716; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+.flip { height: 168px; perspective: 900px; border: 0; background: transparent; padding: 0; text-align: center; }
+.flip-in { display: block; height: 100%; position: relative; transition: transform .45s; transform-style: preserve-3d; }
+.flip[aria-pressed="true"] .flip-in { transform: rotateY(180deg); }
+.face { position: absolute; inset: 0; backface-visibility: hidden; border: 1px solid var(--line); border-radius: 10px; padding: 15px; background: #fafafa; display: flex; align-items: center; justify-content: center; overflow-y: auto; }
+.back { transform: rotateY(180deg); background: #eef9f4; color: #075e40; border-color: #c8eadb; }
+.practice { padding-left: 20px; }
+.practice li { margin: 7px 0; }
+.question { border-top: 1px solid #e2e8e4; padding: 20px 0 8px; margin-top: 12px; min-width: 0; }
+.options { display: grid; gap: 7px; margin: 10px 0; }
+.option { display: flex; gap: 10px; align-items: baseline; border: 1px solid #e2e8e4; background: #f0f4f2; padding: 9px 12px; border-radius: 8px; cursor: pointer; }
+.option input { flex-shrink: 0; accent-color: var(--green); }
+.option:has(input:checked) { border-color: #0ea5e9; background: #e7f6fd; }
+.question[data-result="correct"] .option:has(input:checked) { border-color: #0ea66b; background: #e7f8ef; }
+.question[data-result="wrong"] .option:has(input:checked) { border-color: #e23b3b; background: #fff0f0; }
+.answer { background: #f8fbfa; border-left: 3px solid #0ea5e9; padding: 10px; margin-top: 10px; }
+.check { border: 0; background: #0ea66b; color: white; padding: 9px 14px; border-radius: 7px; }
+footer { color: var(--muted); font-size: 12px; margin-top: 28px; }
+footer ul { padding-left: 20px; }
+dialog { width: min(1200px, 96vw); max-height: 94dvh; padding: 52px 16px 16px; border: 0; border-radius: 8px; background: white; }
+dialog::backdrop { background: #15191dd9; }
+dialog img { width: 100%; max-height: 78dvh; object-fit: contain; }
+dialog .icon-button { position: absolute; top: 8px; right: 10px; }
+@media (max-width: 600px) {
+  main { padding: 16px 12px 40px; }
+  h1 { font-size: 26px; }
+  .header { padding: 16px 4px 12px; }
+  .panel, .figure, .warn, .mnemonic { padding: 15px; }
+  .kp-body { padding-left: 16px; }
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .face { padding: 12px; }
+}
+</style></head><body><main><header class="header"><h1>Day 68 · 营养基础复盘与运动营养时机</h1><p class="sub">全天总量打底，再让进食、水合和训练时点相互配合。</p><div class="meta"><span class="chip">营养时机</span><span class="chip">水合</span><span class="chip">总量优先</span></div></header><section class="panel green"><h2>一句话总结</h2><p class="takeaway">全天营养以能量、蛋白质、碳水、脂肪、微量营养和水合为基础。日常公式常估RMR/REE；BMR是严格基础条件下的最低消耗，TDEE还含食物热效应和各类活动。减重是体重下降，减脂是脂肪减少，单次波动不能等同减脂。GI看相对血糖反应，GL还看份量。训练前后按耐受安排食物和液体；长时、高强度或炎热训练中再按需补给。总量与耐受通常比死守“窗口”更重要。</p></section><figure class="figure"><button data-zoom aria-label="放大详情图"><img class="" src="assets/阶段4 营养恢复/day68-营养基础复盘与运动营养时机.png" alt="营养基础复盘与运动前中后时机中文总览"><span class="icon-button"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 15 6 6" /><path d="m15 9 6-6" /><path d="M21 16v5h-5" /><path d="M21 8V3h-5" /><path d="M3 16v5h5" /><path d="m3 21 6-6" /><path d="M3 8V3h5" /><path d="M9 9 3 3" /></svg></span></button><figcaption class="caption">运动营养的时机要服务于当天总能量、蛋白质、碳水、水合、训练时长与个人耐受；它不是一套人人相同的分钟表。</figcaption></figure><section class="panel"><h2>核心要点</h2><ul class="kp"><li><details><summary><span class="term">先看全天营养图景，再谈时机</span>：宏量营养、微量营养、水合和能量平衡共同影响训练与恢复；单次加餐不能替代全天基础，也不能把一次减重直接当作减脂。</summary><div class="kp-body"><section class="detail-block"><h4>能量概念别混用</h4><p>日常公式通常估算静息能量消耗（RMR/REE）；BMR是在严格基础条件下测得的最低能量消耗。TDEE是在静息消耗之外计入食物热效应、非运动活动和运动活动的全天总消耗。减重指体重下降，减脂指脂肪组织减少；一次体重波动不能直接等同于减脂。体重变化要结合趋势、行为与健康状态看，不能只用一次体重或公式给自己下结论。</p></section><section class="detail-block"><h4>GI不等于一餐的全部</h4><p>GI反映含固定可利用碳水的食物对血糖反应的相对特性；GL还考虑实际食用量。一餐里的蛋白质、脂肪、纤维、烹调和个人反应都会改变体验，不能只按GI给食物贴好坏标签。</p></section></div></details></li><li><details><summary><span class="term">训练前：补准备，也留出舒适度</span>：训练前约2—3小时可安排碳水、适量蛋白和液体；距离训练更近时，份量与纤维脂肪要按耐受调整。</summary><div class="kp-body"><section class="detail-block"><h4>目标是可用燃料</h4><p>碳水可支持较高强度或较长训练，蛋白质帮助全天摄入分配，液体从日常水合延续。训练时间、上一餐、项目与胃肠反应不同，不需要强迫每个人吃同一种餐或同一份量。</p></section><section class="detail-block"><h4>临近训练先减负担</h4><p>若离训练很近，可选择熟悉、易消化的小份食物；高脂、高纤或陌生补剂可能增加胃肠不适。比赛或长课前应在普通训练日测试方案，而不是第一次就在重要场合尝试。</p></section></div></details></li><li><details><summary><span class="term">训练中：时长、强度与出汗决定需要</span>：短而轻的训练通常不必强行补给；持续超过约60分钟、强度高或环境炎热时，可评估碳水、液体与钠的补充。</summary><div class="kp-body"><section class="detail-block"><h4>不是一看到训练就喝运动饮料</h4><p>是否补碳水取决于持续时间、强度、下一次训练间隔和目标；液体与电解质也要结合出汗量、环境和既往胃肠反应。以口渴、体重变化趋势和训练表现作为线索，比照搬别人水壶更有意义。</p></section><section class="detail-block"><h4>补给要能被身体接受</h4><p>长距离或多小时活动可在训练中逐步练习补给，避免一次大量灌水或第一次使用新产品。出现头晕、意识异常、持续呕吐、胸痛或严重虚弱时，不把它当作普通补给问题，应停止活动并寻求医疗帮助。</p></section></div></details></li><li><details><summary><span class="term">训练后：恢复要回到全天总量</span>：碳水、优质蛋白和液体可支持糖原、肌肉修复与再水合；紧急程度取决于下一次训练距离和全天摄入。</summary><div class="kp-body"><section class="detail-block"><h4>窗口是弹性的</h4><p>训练后较早吃一餐或加餐对当天多次训练、长耐力课或先前进食不足者更实用。常被提到的碳水与蛋白3:1—4:1是某些恢复饮品的实操比例，不是所有人必须遵守的生理定律。</p></section><section class="detail-block"><h4>恢复不只是一杯奶昔</h4><p>把训练后的食物放进全天计划：补回足够能量、蛋白质、碳水和液体，并维持睡眠。肾病、糖尿病、胃肠疾病、妊娠或正在接受医学营养治疗者，应由医生或注册营养师给个体化建议。</p></section></div></details></li></ul></section><section class="warn"><h2>常见误区</h2><p><strong class="misconception">误区：只要卡好训练后30分钟，全天吃什么都不重要。</strong><br>辨析：训练后较早补给有时有用，但全天能量、蛋白质、碳水、水合和规律饮食通常是恢复的基础。</p><p><strong class="misconception">误区：低GI一定更好，高GI一定不能吃。</strong><br>辨析：GI和GL只是选择食物的部分信息；训练时机、份量、耐受和整餐组成同样重要。</p><p><strong class="misconception">误区：训练超过60分钟就人人需要同样的运动饮料。</strong><br>辨析：补给应结合持续时间、强度、出汗、环境、目标和胃肠耐受，先在训练中测试。</p><p><strong class="misconception">误区：碳水与蛋白必须严格3:1或4:1才会恢复。</strong><br>辨析：这是部分场景的方便起点，不是通用处方；全天总量和下一次训练间隔决定优先级。</p></section><section class="mnemonic"><h2>记忆口诀</h2><p><strong>总量先打底，前中后看需求；熟悉食物先试，恢复回全天。</strong></p></section><section class="panel"><h2>翻转卡复习</h2><div class="cards"><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">BMR、RMR/REE和TDEE怎么区分？</span><span class="face back" aria-hidden="true">BMR是在严格基础条件下的最低能量消耗；日常公式常估RMR/REE；TDEE再加上食物热效应、非运动活动和运动活动。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">减重和减脂一样吗？</span><span class="face back" aria-hidden="true">不一样。减重是体重下降；减脂是脂肪组织减少，短期体重还会受水分和糖原影响。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">GI与GL各提示什么？</span><span class="face back" aria-hidden="true">GI看相对血糖反应；GL还纳入实际食用份量。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">训练前餐的三个常见要素？</span><span class="face back" aria-hidden="true">易耐受碳水、适量蛋白和液体，并按时间调整份量。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">何时考虑训练中补给？</span><span class="face back" aria-hidden="true">持续较久、高强度、炎热或多次训练时，再按个人需要评估。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">3:1—4:1说明什么？</span><span class="face back" aria-hidden="true">是某些恢复饮品的碳水蛋白实操比例，不是人人必守规则。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">训练后最优先看什么？</span><span class="face back" aria-hidden="true">下一次训练间隔与全天能量、蛋白质、碳水和水合是否足够。</span></span></button></div></section><section class="panel orange"><h2>实操关联</h2><ul class="practice"><li>连续记录三次训练前的食物、液体与胃肠感受，找出自己更易耐受的准备方案。</li><li>为一次超过60分钟的训练写下时长、环境、出汗和补给尝试，不照搬他人的剂量。</li><li>把训练后餐放进全天餐次，检查是否同时有碳水、蛋白质、蔬果或其他微量营养来源和液体。</li><li>用一周体重趋势、训练表现和饥饿感复盘能量平衡，不把一次体重下降直接当作减脂；有疾病或异常症状时转给医生或注册营养师。</li></ul></section><section class="panel blue"><h2>练习题</h2><section class="question" data-answers="[2]" data-explanation="恢复的紧急程度会随下一次训练和已有摄入改变；全天营养基础不能被单一窗口替代。"><h3>1. 单选：哪项最准确地说明训练后营养时机？</h3><div class="options"><label class="option"><input type="radio" name="question-0" value="0"><span>A. 30分钟后就完全无效</span></label><label class="option"><input type="radio" name="question-0" value="1"><span>B. 只需买固定比例恢复饮料</span></label><label class="option"><input type="radio" name="question-0" value="2"><span>C. 应结合下一次训练间隔和全天摄入</span></label><label class="option"><input type="radio" name="question-0" value="3"><span>D. 所有人都应跳过正餐</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[1]" data-explanation="临近训练应优先耐受与熟悉度；重要活动前的新方案要先在训练中测试。"><h3>2. 单选：训练前临近开练且容易胃胀时，更合适的做法是？</h3><div class="options"><label class="option"><input type="radio" name="question-1" value="0"><span>A. 第一次吃大量高脂高纤食物</span></label><label class="option"><input type="radio" name="question-1" value="1"><span>B. 选择熟悉、易消化的小份食物并调整时间</span></label><label class="option"><input type="radio" name="question-1" value="2"><span>C. 完全不喝水</span></label><label class="option"><input type="radio" name="question-1" value="3"><span>D. 靠陌生补剂压住不适</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[0,1,2,4]" data-explanation="补给是情境化决策；观察自身训练与耐受比照搬别人的方案可靠。"><h3>3. 多选：评估训练中是否需要补给时，哪些信息有帮助？</h3><div class="options"><label class="option"><input type="checkbox" name="question-2" value="0"><span>A. 训练时长与强度</span></label><label class="option"><input type="checkbox" name="question-2" value="1"><span>B. 环境和出汗情况</span></label><label class="option"><input type="checkbox" name="question-2" value="2"><span>C. 下一次训练间隔</span></label><label class="option"><input type="checkbox" name="question-2" value="3"><span>D. 别人的水壶容量</span></label><label class="option"><input type="checkbox" name="question-2" value="4"><span>E. 个人胃肠耐受</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[1]" data-explanation="反复或原因不明的头晕不应按普通补给问题处理，更不能用补剂硬扛。先暂停高强度训练并获得评估；只有在症状已评估且可训练时，才使用熟悉食物与水合安排。"><h3>4. 案例：小林下午计划90分钟高强度训练，上一餐在4小时前，且近期反复空腹头晕。最稳妥的下一步是？</h3><div class="options"><label class="option"><input type="radio" name="question-3" value="0"><span>A. 开练前第一次试强刺激补剂</span></label><label class="option"><input type="radio" name="question-3" value="1"><span>B. 先暂停高强度训练并咨询医疗专业人员；确认可训练后，再在普通训练日按耐受测试熟悉食物、液体和补给</span></label><label class="option"><input type="radio" name="question-3" value="2"><span>C. 整天不吃，训练后只喝水</span></label><label class="option"><input type="radio" name="question-3" value="3"><span>D. 无论感受如何都强行大量进食</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section></section><footer>Day 68/110<ul><li>ACSM、Academy of Nutrition and Dietetics、Dietitians of Canada：Nutrition and Athletic Performance 立场文件，运动营养与水合原则。</li><li>International Society of Sports Nutrition：Nutrient Timing 立场文件，时机与全天摄入的关系。</li><li>ACSM：ACSM&#39;s Guidelines for Exercise Testing and Prescription，第11版，运动、补液与风险识别原则。</li><li>本课为一般健身教育，不提供医学营养治疗；疾病、妊娠、反复头晕、进食问题或异常症状请咨询医生或注册营养师。</li></ul></footer></main><dialog aria-label="详情大图"><button class="icon-button" aria-label="关闭大图" title="关闭大图"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></button><img alt=""></dialog><script>document.querySelectorAll('.flip').forEach((button) => {
+  button.addEventListener('click', () => {
+    const pressed = button.getAttribute('aria-pressed') !== 'true';
+    button.setAttribute('aria-pressed', String(pressed));
+    button.querySelector('.front').setAttribute('aria-hidden', String(pressed));
+    button.querySelector('.back').setAttribute('aria-hidden', String(!pressed));
+  });
+});
+document.querySelectorAll('.question').forEach((question) => {
+  question.querySelector('.check').addEventListener('click', () => {
+    const selected = [...question.querySelectorAll('input:checked')].map((input) => Number(input.value)).sort();
+    const answer = question.querySelector('.answer');
+    answer.hidden = false;
+    if (!selected.length) { answer.textContent = '请先选择答案。'; delete question.dataset.result; return; }
+    const correct = JSON.stringify(selected) === JSON.stringify(JSON.parse(question.dataset.answers).sort());
+    question.dataset.result = correct ? 'correct' : 'wrong';
+    answer.textContent = `${correct ? '回答正确。' : '再想一想。'}${question.dataset.explanation}`;
+  });
+});
+const imageDialog = document.querySelector('dialog');
+document.querySelectorAll('[data-zoom]').forEach((button) => {
+  button.addEventListener('click', () => {
+    const original = button.querySelector('img');
+    const image = imageDialog.querySelector('img');
+    image.src = original.src;
+    image.alt = original.alt;
+    imageDialog.showModal();
+  });
+});
+imageDialog.querySelector('button').addEventListener('click', () => imageDialog.close());
+imageDialog.addEventListener('click', (event) => {
+  const rect = imageDialog.getBoundingClientRect();
+  if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) imageDialog.close();
+});
+</script></body></html>

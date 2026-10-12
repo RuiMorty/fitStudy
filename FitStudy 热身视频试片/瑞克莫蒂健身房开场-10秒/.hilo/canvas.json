@@ -1,0 +1,115 @@
+{
+  "version": 1,
+  "mode": "workflow",
+  "nodes": [
+    {
+      "id": "7279e70f-05f7-42b3-88c8-c5e6cdf06445",
+      "type": "image",
+      "positions": {
+        "workflow": {
+          "x": 587.8180907706745,
+          "y": 558
+        }
+      },
+      "size": {
+        "width": 197,
+        "height": 350
+      },
+      "assetId": "9de2f0e2-3d2a-4b6b-9d2b-30dfe67d70c5"
+    },
+    {
+      "id": "43f4fffe-0672-4b80-a282-a6891a987f08",
+      "type": "video",
+      "positions": {
+        "workflow": {
+          "x": 869.9259454049442,
+          "y": 718.582650742879
+        }
+      },
+      "size": {
+        "width": 350,
+        "height": 350
+      },
+      "isEmpty": true,
+      "meta": {
+        "addedAt": 1790732367464
+      },
+      "data": {
+        "aspectRatio": "adaptive",
+        "popoverDraft": {
+          "i2v": {
+            "prompt": "Animate the supplied illustration as one steady 10-second 2D cartoon gym shot. Keep the same two people, their clothes and the gym. They take two or three natural steps together toward the exercise mat, exchange a short English conversation and stop beside it. The shorter person asks, \"What's our warm-up?\" The taller person replies, \"Let's start with an easy core move. I'll show you.\" The shorter person says, \"Okay, show me.\" They speak one at a time with natural mouth movement and small gestures. Keep both full bodies visible. No cuts, new people, on-screen text or music.",
+            "modelId": "wan3.0-video",
+            "params": {
+              "image_mode": "first-last-frame",
+              "duration": "10",
+              "aspect_ratio": "adaptive",
+              "resolution": "720P",
+              "generate_audio": "true"
+            },
+            "imagePaths": [
+              "瑞克莫蒂健身房开场首帧.png"
+            ],
+            "videoPaths": [],
+            "audioPaths": [],
+            "textPaths": [],
+            "source": "submitted"
+          }
+        },
+        "generationAttemptId": "b8b0fd5b-7427-471b-addd-a14e99926506",
+        "status": "error",
+        "prompt": "Animate the supplied illustration as one steady 10-second 2D cartoon gym shot. Keep the same two people, their clothes and the gym. They take two or three natural steps together toward the exercise mat, exchange a short English conversation and stop beside it. The shorter person asks, \"What's our warm-up?\" The taller person replies, \"Let's start with an easy core move. I'll show you.\" The shorter person says, \"Okay, show me.\" They speak one at a time with natural mouth movement and small gestures. Keep both full bodies visible. No cuts, new people, on-screen text or music.",
+        "model": "Wan 3.0",
+        "createdAt": "2026-09-30T01:48:53.775Z",
+        "generationStartedAt": "2026-09-30T01:48:47.981Z",
+        "errorMessage": "生成的视频未通过安全审核，请调整提示词或参考素材后重试",
+        "mediaType": "video",
+        "retryPayload": {
+          "sourceNodeId": "43f4fffe-0672-4b80-a282-a6891a987f08",
+          "prompt": "Animate the supplied illustration as one steady 10-second 2D cartoon gym shot. Keep the same two people, their clothes and the gym. They take two or three natural steps together toward the exercise mat, exchange a short English conversation and stop beside it. The shorter person asks, \"What's our warm-up?\" The taller person replies, \"Let's start with an easy core move. I'll show you.\" The shorter person says, \"Okay, show me.\" They speak one at a time with natural mouth movement and small gestures. Keep both full bodies visible. No cuts, new people, on-screen text or music.",
+          "modelId": "wan3.0-video",
+          "params": {
+            "image_mode": "first-last-frame",
+            "duration": "10",
+            "aspect_ratio": "adaptive",
+            "resolution": "720P",
+            "generate_audio": "true",
+            "model_name": "wan3.0-video"
+          },
+          "backend": "wan_i2v",
+          "displayPrompt": "Animate the supplied illustration as one steady 10-second 2D cartoon gym shot. Keep the same two people, their clothes and the gym. They take two or three natural steps together toward the exercise mat, exchange a short English conversation and stop beside it. The shorter person asks, \"What's our warm-up?\" The taller person replies, \"Let's start with an easy core move. I'll show you.\" The shorter person says, \"Okay, show me.\" They speak one at a time with natural mouth movement and small gestures. Keep both full bodies visible. No cuts, new people, on-screen text or music.",
+          "kind": "video",
+          "imagePaths": [
+            "瑞克莫蒂健身房开场首帧.png"
+          ],
+          "videoPaths": [],
+          "audioPaths": []
+        },
+        "cloudTraceId": "6abc6a8300000000d4ebe4d46189da86",
+        "cloudTaskId": "561519943832723465",
+        "refundStatus": "refunded",
+        "refundedCredits": 700,
+        "generationTaskReceipt": {
+          "taskId": "qkZE1abmXDJO",
+          "backend": "wan_i2v",
+          "mediaType": "video",
+          "generationAttemptId": "b8b0fd5b-7427-471b-addd-a14e99926506",
+          "submittedAt": 1790732933750
+        },
+        "providerTaskId": "447197989773740"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "7279e70f-05f7-42b3-88c8-c5e6cdf06445->43f4fffe-0672-4b80-a282-a6891a987f08",
+      "source": "7279e70f-05f7-42b3-88c8-c5e6cdf06445",
+      "target": "43f4fffe-0672-4b80-a282-a6891a987f08",
+      "type": "derivation"
+    }
+  ],
+  "hiddenAssetIds": [
+    "1237e33a-4dfb-425e-a638-d5831d61c579",
+    "53e55a43-1dd2-45c3-8c50-ca67aca7021d"
+  ]
+}

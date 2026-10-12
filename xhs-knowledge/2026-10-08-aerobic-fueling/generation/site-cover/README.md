@@ -1,0 +1,1 @@
+横向网站封面由 lingzhi-image / gpt-image-2.5-sunburst 直接生成。landscape-original.png 首稿含有方向箭头，未采用；landscape-original-v2.png 为采用原图。网站使用 knowledge/thumbs/aerobic-fueling/landscape-cover.webp 的 640×427 压缩副本。原知识图未改动。

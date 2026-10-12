@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Day 75 · 微周期、分化与减量峰值</title><link rel="icon" type="image/svg+xml" href="assets/fitness-study-logo-open-circle.svg?v=a6d8e5caaa61"><style>:root { color-scheme: light; --ink: #111113; --muted: #71717a; --line: #e4e4e7; --accent: #ff5a1f; --green: #0ea66b; --blue: #2563eb; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; font-synthesis: none; letter-spacing: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); overflow-wrap: anywhere; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+img { display: block; max-width: 100%; }
+button:focus-visible, a:focus-visible, summary:focus-visible, input:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
+svg.icon { width: 20px; height: 20px; }
+.icon-button { display: inline-grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 1px solid var(--line); border-radius: 6px; background: white; }
+[hidden] { display: none !important; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
+
+body { background: #f6f8f7; font-size: 14px; line-height: 1.65; }
+main { max-width: 980px; margin: auto; padding: 24px 18px 60px; }
+.header { padding: 22px 4px 14px; }
+h1 { margin: 10px 0 8px; font-size: 36px; line-height: 1.2; }
+h1::before { content: ""; display: block; width: 34px; height: 4px; background: var(--accent); margin-bottom: 10px; }
+h2 { font-size: 17px; margin: 0 0 14px; }
+h3 { font-size: 16px; margin: 0 0 8px; }
+.sub { color: var(--muted); margin: 5px 0 18px; }
+.meta { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { display: inline-block; border: 1px solid var(--line); border-radius: 20px; background: white; color: var(--muted); padding: 3px 10px; font-size: 12px; font-weight: 600; }
+.chip:nth-child(1) { background: #e2f7eb; color: #15803d; border-color: transparent; }
+.chip:nth-child(2) { background: #e7f0fe; color: #2563eb; border-color: transparent; }
+.chip:nth-child(3) { background: #fff2e5; color: #9a4c05; border-color: transparent; }
+.panel, .figure, .warn, .mnemonic { background: white; border: 1px solid #e2e8e4; border-radius: 14px; box-shadow: 0 2px 12px rgba(20,40,30,.06); padding: 20px; margin: 16px 0; }
+.green { border-left: 5px solid var(--green); }
+.orange { border-left: 5px solid #ea7a17; }
+.blue { border-left: 5px solid #0ea5e9; }
+.takeaway { margin: 0; }
+.figure { text-align: center; }
+.figure button { display: block; position: relative; width: 100%; border: 0; padding: 0; background: white; cursor: zoom-in; }
+.figure img { max-height: 760px; width: 100%; object-fit: contain; }
+.figure .icon-button { position: absolute; bottom: 8px; right: 8px; background: #ffffffed; }
+.caption { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
+.kp { list-style: none; padding: 0; margin: 0; }
+.kp > li { border-bottom: 1px dashed #e2e8e4; }
+.kp > li:last-child { border-bottom: 0; }
+.kp summary { cursor: pointer; padding: 13px 8px; font-weight: 650; }
+.kp summary::marker { color: var(--green); }
+.term { color: #0a7d52; background: #e2f7eb; border-radius: 6px; padding: 1px 5px; }
+.kp-body { padding: 2px 14px 16px 24px; }
+.detail-block { margin: 12px 0; }
+.detail-block h4 { font-size: 13px; color: #08744d; margin: 0 0 4px; }
+.detail-block p { margin: 0; white-space: pre-line; }
+.warn { border-left: 5px solid #e23b3b; background: #fffafa; }
+.warn p { margin: 8px 0; }
+.misconception { color: #a82b32; }
+.mnemonic { border-left: 4px solid var(--accent); box-shadow: none; }
+.mnemonic strong { color: #df4716; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+.flip { height: 168px; perspective: 900px; border: 0; background: transparent; padding: 0; text-align: center; }
+.flip-in { display: block; height: 100%; position: relative; transition: transform .45s; transform-style: preserve-3d; }
+.flip[aria-pressed="true"] .flip-in { transform: rotateY(180deg); }
+.face { position: absolute; inset: 0; backface-visibility: hidden; border: 1px solid var(--line); border-radius: 10px; padding: 15px; background: #fafafa; display: flex; align-items: center; justify-content: center; overflow-y: auto; }
+.back { transform: rotateY(180deg); background: #eef9f4; color: #075e40; border-color: #c8eadb; }
+.practice { padding-left: 20px; }
+.practice li { margin: 7px 0; }
+.question { border-top: 1px solid #e2e8e4; padding: 20px 0 8px; margin-top: 12px; min-width: 0; }
+.options { display: grid; gap: 7px; margin: 10px 0; }
+.option { display: flex; gap: 10px; align-items: baseline; border: 1px solid #e2e8e4; background: #f0f4f2; padding: 9px 12px; border-radius: 8px; cursor: pointer; }
+.option input { flex-shrink: 0; accent-color: var(--green); }
+.option:has(input:checked) { border-color: #0ea5e9; background: #e7f6fd; }
+.question[data-result="correct"] .option:has(input:checked) { border-color: #0ea66b; background: #e7f8ef; }
+.question[data-result="wrong"] .option:has(input:checked) { border-color: #e23b3b; background: #fff0f0; }
+.answer { background: #f8fbfa; border-left: 3px solid #0ea5e9; padding: 10px; margin-top: 10px; }
+.check { border: 0; background: #0ea66b; color: white; padding: 9px 14px; border-radius: 7px; }
+footer { color: var(--muted); font-size: 12px; margin-top: 28px; }
+footer ul { padding-left: 20px; }
+dialog { width: min(1200px, 96vw); max-height: 94dvh; padding: 52px 16px 16px; border: 0; border-radius: 8px; background: white; }
+dialog::backdrop { background: #15191dd9; }
+dialog img { width: 100%; max-height: 78dvh; object-fit: contain; }
+dialog .icon-button { position: absolute; top: 8px; right: 10px; }
+@media (max-width: 600px) {
+  main { padding: 16px 12px 40px; }
+  h1 { font-size: 26px; }
+  .header { padding: 16px 4px 12px; }
+  .panel, .figure, .warn, .mnemonic { padding: 15px; }
+  .kp-body { padding-left: 16px; }
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .face { padding: 12px; }
+}
+</style></head><body><main><header class="header"><h1>Day 75 · 微周期、分化与减量峰值</h1><p class="sub">把训练日、恢复和比赛目标排进可执行的一周，而不是把疲劳堆到极限。</p><div class="meta"><span class="chip">微周期</span><span class="chip">训练分化</span><span class="chip">减量恢复</span></div></header><section class="panel green"><h2>一句话总结</h2><p class="takeaway">微周期用一周左右安排动作、总量、强度、频率和恢复。全身、上下肢、推拉腿或肌群分化没有天然优劣，关键是有效训练量、质量、恢复与时间能否匹配。相同肌群常留约48小时或更长恢复作为起点，但不是固定规则。减量可下调容量或高疲劳内容，常见约40—60%只是起点。赛前峰值和赛后过渡需结合项目、赛历和反馈，不承诺同一公式必然超量恢复。</p></section><figure class="figure"><button data-zoom aria-label="放大详情图"><img class="" src="assets/阶段5 训练安排/day75-微周期、分化与减量峰值.png" alt="微周期分化减量与峰值中文总览"><span class="icon-button"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 15 6 6" /><path d="m15 9 6-6" /><path d="M21 16v5h-5" /><path d="M21 8V3h-5" /><path d="M3 16v5h5" /><path d="m3 21 6-6" /><path d="M3 8V3h5" /><path d="M9 9 3 3" /></svg></span></button><figcaption class="caption">微周期把刺激与恢复排进短周期；分化方式、减量和赛前调整都需要与训练历史、生活压力、目标和实际反馈相匹配。</figcaption></figure><section class="panel"><h2>核心要点</h2><ul class="kp"><li><details><summary><span class="term">微周期：把刺激和恢复排到同一周</span>：微周期用短周期组织训练日、动作、强度、总量和恢复，目的是让计划在真实生活中持续执行。</summary><div class="kp-body"><section class="detail-block"><h4>频率要看总量怎么分配</h4><p>同一肌群每周练几次不是孤立答案：总量、动作选择、每组质量、经验、时间和恢复能力都会影响安排。把过多量塞进一天可能影响后半段质量；分散到多天也会增加准备和通勤成本。</p></section><section class="detail-block"><h4>48小时是起点，不是硬门槛</h4><p>相同肌群常留出约48小时或更长恢复可作为初始安排，但高负荷、多关节动作、陌生训练、睡眠不足或生活压力大时可能需要更多。低负荷技术练习或不同动作也不等于完全没有恢复需求。</p></section></div></details></li><li><details><summary><span class="term">训练分化：选择能完成且能恢复的结构</span>：全身、上下肢、推拉腿和肌群分化都是组织工具；选法应匹配每周可训练天数、目标、技术与恢复。</summary><div class="kp-body"><section class="detail-block"><h4>少天数不必硬拆很细</h4><p>每周可训练两到三天的人，常可用全身或上下肢框架，让主要动作得到稳定练习；四天以上可能更容易采用上下肢或推拉腿分化。重点不是名称，而是每次训练是否有足够质量和可恢复的总量。</p></section><section class="detail-block"><h4>分化不应制造盲区</h4><p>无论采用哪种结构，都要照顾基础推、拉、下肢、髋主导、核心、活动度与专项需要。把大量重复量集中给偏好肌群而忽略疼痛、弱项或技术，是分化失去意义的信号。</p></section></div></details></li><li><details><summary><span class="term">减量：管理疲劳，不是惩罚或躺平</span>：减量可暂时降低训练量、频率或高疲劳内容，帮助恢复训练质量；安排要根据表现、主观疲劳与生活压力调整。</summary><div class="kp-body"><section class="detail-block"><h4>容量常先降，技术可保留</h4><p>常见做法是将训练容量下调约40—60%，同时保留部分相对强度或技术练习，但这只是可测试的起点，不是每个人都必须按固定比例或固定日期执行。刚起步者、有伤病者和高压力人群需要更保守安排。</p></section><section class="detail-block"><h4>用趋势识别累积疲劳</h4><p>持续表现下滑、完成度变差、睡眠差、动力下降、肌肉酸痛迟迟不退或反复小伤都值得重新评估。单次疲劳不必立刻恐慌，但若症状持续或伴随疼痛、月经变化、胸痛和头晕，应优先处理健康风险。</p></section></div></details></li><li><details><summary><span class="term">峰值与过渡：服务赛历，避免赌一次状态</span>：赛前调整通常逐步降低疲劳、保留专项感觉；赛后过渡用低压力活动和逐步回归帮助恢复，具体策略需项目化。</summary><div class="kp-body"><section class="detail-block"><h4>峰值不是统一模板</h4><p>力量、耐力、体重级别和技能项目的赛前安排不同。常见原则是减少不必要训练量、保持部分专项强度和技术，但持续时间与幅度受赛历、经验和伤病史影响，重要赛事应由合格教练团队统筹。</p></section><section class="detail-block"><h4>过渡期不是完全失控</h4><p>赛后可安排轻松活动、睡眠、饮食和心理恢复，再逐步回到系统训练。不要用极端补偿训练或突然停掉所有活动处理疲劳；出现持续疼痛、情绪困扰或健康异常时应转介。</p></section></div></details></li></ul></section><section class="warn"><h2>常见误区</h2><p><strong class="misconception">误区：同一肌群必须严格间隔48小时，少一小时就一定过度训练。</strong><br>辨析：48小时只是常见起点；实际恢复受负荷、训练历史、睡眠、生活压力和动作类型影响。</p><p><strong class="misconception">误区：全身、上下肢、推拉腿里只有一种最科学。</strong><br>辨析：分化是组织工具；能完成有效训练量、保持质量并恢复的结构更适合当前阶段。</p><p><strong class="misconception">误区：减量周就是完全停练，或每个人固定每四周必须减量。</strong><br>辨析：减量通常是有目的地下调高疲劳量并保留部分技术；时机和幅度要看反馈。</p><p><strong class="misconception">误区：按网上峰值模板一定会在比赛当天状态爆棚。</strong><br>辨析：峰值受项目、赛历、经验、伤病与生活压力影响；重要赛事需要个体化和团队协作。</p></section><section class="mnemonic"><h2>记忆口诀</h2><p><strong>周内分刺激，分化看恢复；减量留技术，峰值看赛历。</strong></p></section><section class="panel"><h2>翻转卡复习</h2><div class="cards"><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">微周期通常组织什么？</span><span class="face back" aria-hidden="true">短周期内的训练日、总量、强度、动作、频率和恢复。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">48小时恢复间隔的定位？</span><span class="face back" aria-hidden="true">常见安排起点，不是适用于所有人的固定医学门槛。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">选训练分化最该看什么？</span><span class="face back" aria-hidden="true">可训练天数、有效总量、动作质量、恢复、目标和生活安排。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">减量常优先调整什么？</span><span class="face back" aria-hidden="true">可先下调容量或高疲劳内容，并保留部分技术和相对强度。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">累积疲劳可观察哪些趋势？</span><span class="face back" aria-hidden="true">表现、完成度、睡眠、动力、酸痛、伤病与健康信号。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">赛后过渡期的目的？</span><span class="face back" aria-hidden="true">用低压力活动和逐步回归帮助身体与心理恢复，而非极端补偿。</span></span></button></div></section><section class="panel orange"><h2>实操关联</h2><ul class="practice"><li>按自己实际可训练天数画一周微周期，标出主要动作、低强度日和至少一个恢复观察点。</li><li>比较全身、上下肢和推拉腿三种安排，分别写下在每周2、3、4天训练时最容易出现的执行难点。</li><li>为一次高疲劳训练周设计减量备选：先减少哪些组数或高疲劳动作，哪些技术练习保留，依据哪些信号启动。</li><li>若有赛事，把赛前两周的训练、睡眠和压力记录交给合格教练讨论，不用网络模板替代项目化安排。</li></ul></section><section class="panel blue"><h2>练习题</h2><section class="question" data-answers="[1]" data-explanation="分化没有单一最优名称，应匹配训练天数、目标、有效总量、动作质量和恢复。"><h3>1. 单选：选择训练分化方式时，最重要的原则是？</h3><div class="options"><label class="option"><input type="radio" name="question-0" value="0"><span>A. 名称听起来最专业</span></label><label class="option"><input type="radio" name="question-0" value="1"><span>B. 能在可训练天数内完成有效训练并恢复</span></label><label class="option"><input type="radio" name="question-0" value="2"><span>C. 每天练同一肌群到力竭</span></label><label class="option"><input type="radio" name="question-0" value="3"><span>D. 永远照抄职业运动员</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[1]" data-explanation="减量用于管理疲劳和恢复训练质量；时机、幅度和内容应个体化。"><h3>2. 单选：减量周的较合理描述是？</h3><div class="options"><label class="option"><input type="radio" name="question-1" value="0"><span>A. 所有人每四周完全停练</span></label><label class="option"><input type="radio" name="question-1" value="1"><span>B. 有目的地下调高疲劳量并根据反馈保留部分技术</span></label><label class="option"><input type="radio" name="question-1" value="2"><span>C. 训练量翻倍以突破平台</span></label><label class="option"><input type="radio" name="question-1" value="3"><span>D. 忽略持续疼痛</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[0,1,2,3]" data-explanation="微周期要在真实生活中可完成，训练目标与恢复条件同等重要。"><h3>3. 多选：安排微周期时，哪些信息值得纳入？</h3><div class="options"><label class="option"><input type="checkbox" name="question-2" value="0"><span>A. 可训练天数和时间</span></label><label class="option"><input type="checkbox" name="question-2" value="1"><span>B. 总量与动作质量</span></label><label class="option"><input type="checkbox" name="question-2" value="2"><span>C. 睡眠和生活压力</span></label><label class="option"><input type="checkbox" name="question-2" value="3"><span>D. 当前目标与专项需要</span></label><label class="option"><input type="checkbox" name="question-2" value="4"><span>E. 网上模板的字体颜色</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[1]" data-explanation="分化应适配可训练天数和恢复。三天可用全身或上下肢等结构，关键是覆盖主要动作、可完成和可恢复。"><h3>4. 案例：小薇每周只能练三天，却硬套六天肌群分化，常漏练下肢且持续疲劳。更合适的是？</h3><div class="options"><label class="option"><input type="radio" name="question-3" value="0"><span>A. 再增加两天力竭训练</span></label><label class="option"><input type="radio" name="question-3" value="1"><span>B. 改用能在三天内完成主要动作并可恢复的全身或上下肢框架，持续观察反馈</span></label><label class="option"><input type="radio" name="question-3" value="2"><span>C. 每次都只练手臂</span></label><label class="option"><input type="radio" name="question-3" value="3"><span>D. 不管疲劳继续套用</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section></section><footer>Day 75/110<ul><li>NSCA：Essentials of Strength Training and Conditioning，周期化、微周期、训练分化与赛前调整原则。</li><li>ACSM：Progression Models in Resistance Training for Healthy Adults，训练量、频率与进阶管理。</li><li>Mujika I、Padilla S：Scientific Bases for Precompetition Tapering Strategies，赛前减量和项目化安排综述。</li><li>本课为一般教育。持续疼痛、头晕、胸痛、月经或心理健康变化、伤病恢复和重要赛事安排应咨询医生及合格教练团队。</li></ul></footer></main><dialog aria-label="详情大图"><button class="icon-button" aria-label="关闭大图" title="关闭大图"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></button><img alt=""></dialog><script>document.querySelectorAll('.flip').forEach((button) => {
+  button.addEventListener('click', () => {
+    const pressed = button.getAttribute('aria-pressed') !== 'true';
+    button.setAttribute('aria-pressed', String(pressed));
+    button.querySelector('.front').setAttribute('aria-hidden', String(pressed));
+    button.querySelector('.back').setAttribute('aria-hidden', String(!pressed));
+  });
+});
+document.querySelectorAll('.question').forEach((question) => {
+  question.querySelector('.check').addEventListener('click', () => {
+    const selected = [...question.querySelectorAll('input:checked')].map((input) => Number(input.value)).sort();
+    const answer = question.querySelector('.answer');
+    answer.hidden = false;
+    if (!selected.length) { answer.textContent = '请先选择答案。'; delete question.dataset.result; return; }
+    const correct = JSON.stringify(selected) === JSON.stringify(JSON.parse(question.dataset.answers).sort());
+    question.dataset.result = correct ? 'correct' : 'wrong';
+    answer.textContent = `${correct ? '回答正确。' : '再想一想。'}${question.dataset.explanation}`;
+  });
+});
+const imageDialog = document.querySelector('dialog');
+document.querySelectorAll('[data-zoom]').forEach((button) => {
+  button.addEventListener('click', () => {
+    const original = button.querySelector('img');
+    const image = imageDialog.querySelector('img');
+    image.src = original.src;
+    image.alt = original.alt;
+    imageDialog.showModal();
+  });
+});
+imageDialog.querySelector('button').addEventListener('click', () => imageDialog.close());
+imageDialog.addEventListener('click', (event) => {
+  const rect = imageDialog.getBoundingClientRect();
+  if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) imageDialog.close();
+});
+</script></body></html>

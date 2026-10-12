@@ -1,0 +1,357 @@
+{
+  "processedAt": "2026-09-30T02:38:20.010669+00:00",
+  "method": "trim near-transparent noise; reviewed crop; uniform scale; transparent margin",
+  "assets": [
+    {
+      "source": "runs/day53/source/cover.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "sourceSha256": "3b73923f8a3e31ae8a87224a398f2359f802a78fd87e14bc827dcaee1d7c1ec1",
+      "reviewedCrop": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "visibleCrop": [
+        397,
+        12,
+        1345,
+        907
+      ],
+      "output": "runs/day53/assets/cover.png",
+      "size": [
+        1600,
+        900
+      ],
+      "subjectSize": [
+        839,
+        792
+      ],
+      "offset": [
+        380,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "无字封面"
+    },
+    {
+      "source": "runs/day53/source/visual-01-sequence.png",
+      "sourceSize": [
+        1881,
+        836
+      ],
+      "sourceSha256": "9f5dec94f866f64989bfb93e3c2195e3ad1a431c1d748a7acb086ba56353e0c8",
+      "reviewedCrop": [
+        0,
+        0,
+        1881,
+        836
+      ],
+      "visibleCrop": [
+        64,
+        13,
+        1881,
+        797
+      ],
+      "output": "runs/day53/assets/visual-01-sequence.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1817,
+        784
+      ],
+      "offset": [
+        491,
+        58
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "超级组顺序"
+    },
+    {
+      "source": "runs/day53/source/visual-02-variables.png",
+      "sourceSize": [
+        1870,
+        841
+      ],
+      "sourceSha256": "5db67c7b4c8b9ac1aad857127cf3dea8a78b4f83321059cebb76062d4934cb6c",
+      "reviewedCrop": [
+        0,
+        0,
+        1870,
+        841
+      ],
+      "visibleCrop": [
+        192,
+        16,
+        1596,
+        821
+      ],
+      "output": "runs/day53/assets/visual-02-variables.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1381,
+        792
+      ],
+      "offset": [
+        709,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "变量"
+    },
+    {
+      "source": "runs/day53/source/visual-03-pairing.png",
+      "sourceSize": [
+        2207,
+        712
+      ],
+      "sourceSha256": "f57b5fe5315cf0dfdeb3206a749e026aa68af5e054b15eaa5f061df0a8b327f0",
+      "reviewedCrop": [
+        0,
+        0,
+        2207,
+        712
+      ],
+      "visibleCrop": [
+        23,
+        22,
+        2186,
+        661
+      ],
+      "output": "runs/day53/assets/visual-03-pairing.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        2163,
+        639
+      ],
+      "offset": [
+        318,
+        130
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "配对"
+    },
+    {
+      "source": "runs/day53/source/visual-04-checks.png",
+      "sourceSize": [
+        1881,
+        836
+      ],
+      "sourceSha256": "ea8bcc26ef6eb4ff2f609dfaf66475d86fd389296fe2ccb8e0e2940fba0ce995",
+      "reviewedCrop": [
+        0,
+        0,
+        1881,
+        836
+      ],
+      "visibleCrop": [
+        88,
+        16,
+        1798,
+        792
+      ],
+      "output": "runs/day53/assets/visual-04-checks.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1710,
+        776
+      ],
+      "offset": [
+        545,
+        62
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "检查"
+    },
+    {
+      "source": "runs/day53/source/overview-01-sequence.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "049ff9ae4170b597fe2a62bd1e0635d999e27be863cb826383320f1d3b44a728",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        189,
+        7,
+        1363,
+        1028
+      ],
+      "output": "runs/day53/assets/overview-01-sequence.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1174,
+        1021
+      ],
+      "offset": [
+        213,
+        89
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day53/source/overview-02-variables.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "428203c0500dc61cec6968e8b0c64d58454e45580aefa1b4e73e03e8bbec459b",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        206,
+        26,
+        1270,
+        1060
+      ],
+      "output": "runs/day53/assets/overview-02-variables.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1064,
+        1034
+      ],
+      "offset": [
+        268,
+        83
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day53/source/overview-03-pairing.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "6ca04d32567b1bcd437853f873abbbe9c4883d61a9fa1d380359e35dcdb839bb",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        63,
+        50,
+        1420,
+        1019
+      ],
+      "output": "runs/day53/assets/overview-03-pairing.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1357,
+        969
+      ],
+      "offset": [
+        121,
+        115
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day53/source/overview-04-checks.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "2a855ddda50af3f12ca9e9fe3718e9198e9e2f015f93c01a039022129e569786",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        77,
+        120,
+        1384,
+        907
+      ],
+      "output": "runs/day53/assets/overview-04-checks.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1307,
+        787
+      ],
+      "offset": [
+        146,
+        206
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    }
+  ]
+}

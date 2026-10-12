@@ -1,0 +1,50 @@
+{
+  "commonPrompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper background, loose paper sheets, border, sticker edge, shadow, or halo. A small unmarked rigid evidence card is allowed as a prop. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.",
+  "assets": [
+    {
+      "file": "cover.png",
+      "role": "cover",
+      "prompt": "Wide 16:9 wordless course cover. Exactly one Despa and exactly one Bojji stand at a calm respectful conversation distance. Bojji holds one small unmarked rigid plan card at waist height, and Despa has an open listening hand. Explain collaborative coaching, not therapy or command. Isolate the figures and card on the transparent canvas: no ground plane, cast shadow, screens, arrows, medical symbols, room, extra people or extra props."
+    },
+    {
+      "file": "visual-01-listen.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Bojji calmly describes a simple training concern with an open hand while exactly one Despa listens with relaxed attentive posture and a supportive open palm. Explain open questions, reflection and consent through one continuous interaction. Isolate the figures on the transparent canvas: no duplicate figures, speech bubbles, text, labels, arrows, judgment signs, ground plane, cast shadow, room or medical imagery."
+    },
+    {
+      "file": "visual-02-cues.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Bojji holds a shallow stable bodyweight squat with feet set evenly while exactly one Despa demonstrates one clear non-contact visual cue from a respectful distance. Explain one clear cue and consent before assistance. Isolate the figures on the transparent canvas: no touching, duplicate poses, arrows, text, labels, screens, ground plane, cast shadow or extra equipment."
+    },
+    {
+      "file": "visual-03-adherence.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Bojji holds one pair of plain training shoes and a neatly rolled simple exercise mat as prepared equipment while exactly one Despa stands nearby offering an open supportive hand. Explain reducing friction with prepared environment and chosen support, not surveillance or punishment. Isolate the figures and props on the transparent canvas: no calendar marks, checklists, text, numbers, scales, arrows, ground plane, cast shadow, room or extra people."
+    },
+    {
+      "file": "visual-04-regulate.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Bojji stands in a comfortable calm pre-training pause with feet set evenly and relaxed hands, while exactly one Despa nearby mirrors a gentle slow-breathing posture without touching. Explain ordinary self-regulation before a safe task, not psychotherapy or meditation claims. Isolate the figures on the transparent canvas: no text, symbols, magical effects, medical imagery, arrows, ground plane, cast shadow or extra props."
+    },
+    {
+      "file": "overview-01-listen.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Despa listens with an open hand while exactly one Bojji explains a simple training concern comfortably. Explain respectful listening and shared choice. Isolate the figures on the transparent canvas: no duplicate figures, speech bubbles, text, arrows, labels, ground plane, cast shadow, room or medical imagery."
+    },
+    {
+      "file": "overview-02-cues.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Bojji holds a shallow stable bodyweight squat with feet set evenly while exactly one Despa gives one clear non-contact visual cue from a respectful distance. Explain a single focused cue. Isolate the figures on the transparent canvas: no touching, duplicate poses, text, arrows, labels, ground plane, cast shadow or extra equipment."
+    },
+    {
+      "file": "overview-03-adherence.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Bojji holds one pair of plain training shoes and a neatly rolled simple exercise mat as prepared equipment while exactly one Despa offers calm support. Explain a low-friction environment and chosen support. Isolate the figures and props on the transparent canvas: no text, calendar, checklist, scale, arrows, ground plane, cast shadow, room or extra people."
+    },
+    {
+      "file": "overview-04-regulate.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Bojji stands in a calm short pre-training pause with feet set evenly and relaxed hands while exactly one Despa mirrors a gentle slow-breathing posture nearby. Explain self-regulation before action. Isolate the figures on the transparent canvas: no text, meditation symbols, magical effects, medical imagery, arrows, ground plane, cast shadow or extra props."
+    }
+  ]
+}

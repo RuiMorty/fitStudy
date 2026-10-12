@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Day 74 · 训练变量深化-休息间歇/顺序/节奏</title><link rel="icon" type="image/svg+xml" href="assets/fitness-study-logo-open-circle.svg?v=a6d8e5caaa61"><style>:root { color-scheme: light; --ink: #111113; --muted: #71717a; --line: #e4e4e7; --accent: #ff5a1f; --green: #0ea66b; --blue: #2563eb; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; font-synthesis: none; letter-spacing: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); overflow-wrap: anywhere; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+img { display: block; max-width: 100%; }
+button:focus-visible, a:focus-visible, summary:focus-visible, input:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
+svg.icon { width: 20px; height: 20px; }
+.icon-button { display: inline-grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 1px solid var(--line); border-radius: 6px; background: white; }
+[hidden] { display: none !important; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
+
+body { background: #f6f8f7; font-size: 14px; line-height: 1.65; }
+main { max-width: 980px; margin: auto; padding: 24px 18px 60px; }
+.header { padding: 22px 4px 14px; }
+h1 { margin: 10px 0 8px; font-size: 36px; line-height: 1.2; }
+h1::before { content: ""; display: block; width: 34px; height: 4px; background: var(--accent); margin-bottom: 10px; }
+h2 { font-size: 17px; margin: 0 0 14px; }
+h3 { font-size: 16px; margin: 0 0 8px; }
+.sub { color: var(--muted); margin: 5px 0 18px; }
+.meta { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { display: inline-block; border: 1px solid var(--line); border-radius: 20px; background: white; color: var(--muted); padding: 3px 10px; font-size: 12px; font-weight: 600; }
+.chip:nth-child(1) { background: #e2f7eb; color: #15803d; border-color: transparent; }
+.chip:nth-child(2) { background: #e7f0fe; color: #2563eb; border-color: transparent; }
+.chip:nth-child(3) { background: #fff2e5; color: #9a4c05; border-color: transparent; }
+.panel, .figure, .warn, .mnemonic { background: white; border: 1px solid #e2e8e4; border-radius: 14px; box-shadow: 0 2px 12px rgba(20,40,30,.06); padding: 20px; margin: 16px 0; }
+.green { border-left: 5px solid var(--green); }
+.orange { border-left: 5px solid #ea7a17; }
+.blue { border-left: 5px solid #0ea5e9; }
+.takeaway { margin: 0; }
+.figure { text-align: center; }
+.figure button { display: block; position: relative; width: 100%; border: 0; padding: 0; background: white; cursor: zoom-in; }
+.figure img { max-height: 760px; width: 100%; object-fit: contain; }
+.figure .icon-button { position: absolute; bottom: 8px; right: 8px; background: #ffffffed; }
+.caption { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
+.kp { list-style: none; padding: 0; margin: 0; }
+.kp > li { border-bottom: 1px dashed #e2e8e4; }
+.kp > li:last-child { border-bottom: 0; }
+.kp summary { cursor: pointer; padding: 13px 8px; font-weight: 650; }
+.kp summary::marker { color: var(--green); }
+.term { color: #0a7d52; background: #e2f7eb; border-radius: 6px; padding: 1px 5px; }
+.kp-body { padding: 2px 14px 16px 24px; }
+.detail-block { margin: 12px 0; }
+.detail-block h4 { font-size: 13px; color: #08744d; margin: 0 0 4px; }
+.detail-block p { margin: 0; white-space: pre-line; }
+.warn { border-left: 5px solid #e23b3b; background: #fffafa; }
+.warn p { margin: 8px 0; }
+.misconception { color: #a82b32; }
+.mnemonic { border-left: 4px solid var(--accent); box-shadow: none; }
+.mnemonic strong { color: #df4716; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+.flip { height: 168px; perspective: 900px; border: 0; background: transparent; padding: 0; text-align: center; }
+.flip-in { display: block; height: 100%; position: relative; transition: transform .45s; transform-style: preserve-3d; }
+.flip[aria-pressed="true"] .flip-in { transform: rotateY(180deg); }
+.face { position: absolute; inset: 0; backface-visibility: hidden; border: 1px solid var(--line); border-radius: 10px; padding: 15px; background: #fafafa; display: flex; align-items: center; justify-content: center; overflow-y: auto; }
+.back { transform: rotateY(180deg); background: #eef9f4; color: #075e40; border-color: #c8eadb; }
+.practice { padding-left: 20px; }
+.practice li { margin: 7px 0; }
+.question { border-top: 1px solid #e2e8e4; padding: 20px 0 8px; margin-top: 12px; min-width: 0; }
+.options { display: grid; gap: 7px; margin: 10px 0; }
+.option { display: flex; gap: 10px; align-items: baseline; border: 1px solid #e2e8e4; background: #f0f4f2; padding: 9px 12px; border-radius: 8px; cursor: pointer; }
+.option input { flex-shrink: 0; accent-color: var(--green); }
+.option:has(input:checked) { border-color: #0ea5e9; background: #e7f6fd; }
+.question[data-result="correct"] .option:has(input:checked) { border-color: #0ea66b; background: #e7f8ef; }
+.question[data-result="wrong"] .option:has(input:checked) { border-color: #e23b3b; background: #fff0f0; }
+.answer { background: #f8fbfa; border-left: 3px solid #0ea5e9; padding: 10px; margin-top: 10px; }
+.check { border: 0; background: #0ea66b; color: white; padding: 9px 14px; border-radius: 7px; }
+footer { color: var(--muted); font-size: 12px; margin-top: 28px; }
+footer ul { padding-left: 20px; }
+dialog { width: min(1200px, 96vw); max-height: 94dvh; padding: 52px 16px 16px; border: 0; border-radius: 8px; background: white; }
+dialog::backdrop { background: #15191dd9; }
+dialog img { width: 100%; max-height: 78dvh; object-fit: contain; }
+dialog .icon-button { position: absolute; top: 8px; right: 10px; }
+@media (max-width: 600px) {
+  main { padding: 16px 12px 40px; }
+  h1 { font-size: 26px; }
+  .header { padding: 16px 4px 12px; }
+  .panel, .figure, .warn, .mnemonic { padding: 15px; }
+  .kp-body { padding-left: 16px; }
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .face { padding: 12px; }
+}
+</style></head><body><main><header class="header"><h1>Day 74 · 训练变量深化-休息间歇/顺序/节奏</h1><p class="sub">让休息、动作顺序和节奏服务目标与动作质量，而不是照抄一张固定表。</p><div class="meta"><span class="chip">组间休息</span><span class="chip">动作顺序</span><span class="chip">训练节奏</span></div></header><section class="panel green"><h2>一句话总结</h2><p class="takeaway">训练变量彼此联动。大负荷力量训练常以3—5分钟为起点；肌肥大可从30秒—1.5分钟、肌耐力常从少于30秒起步，但要看下一组质量和个体恢复。动作顺序通常先放爆发、技术性或重点多关节动作，再安排小肌群或孤立动作；弱项优先、上/下肢或推/拉分化可据目标调整。节奏需先说明记法，例如2-0-2可表示离心、底部停顿、向心；爆发意图不是失控抢速度。一次只改一个主要变量，记录完成次数、技术、RPE和恢复反应。</p></section><figure class="figure"><button data-zoom aria-label="放大详情图"><img class="" src="assets/阶段5 训练安排/day74-训练变量深化-休息间歇-顺序-节奏.png" alt="训练变量休息顺序节奏中文总览"><span class="icon-button"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 15 6 6" /><path d="m15 9 6-6" /><path d="M21 16v5h-5" /><path d="M21 8V3h-5" /><path d="M3 16v5h5" /><path d="m3 21 6-6" /><path d="M3 8V3h5" /><path d="M9 9 3 3" /></svg></span></button><figcaption class="caption">组间休息、动作顺序和节奏是可调变量；它们必须与训练目标、负荷、技术熟练度、恢复和实际表现共同判断。</figcaption></figure><section class="panel"><h2>核心要点</h2><ul class="kp"><li><details><summary><span class="term">组间休息：为下一组质量服务</span>：休息长短受目标、负荷、动作复杂度、训练水平与环境影响；用表现和技术决定是否延长，而不是只盯秒表。</summary><div class="kp-body"><section class="detail-block"><h4>范围是起点，不是律法</h4><p>大负荷力量训练常从3—5分钟起步；肌肥大可从30秒—1.5分钟、肌耐力常从少于30秒起步。较长恢复有助于高输出组的磷酸原（ATP-PCr）恢复和技术保持；若下一组技术明显塌陷、目标次数大幅丢失或呼吸未恢复，应适当延长。</p></section><section class="detail-block"><h4>短休息也有代价</h4><p>缩短间歇能提高训练密度，却可能降低负荷、重复质量或高技术动作安全性。不要因为追求“燃脂感”让爆发、自由重量或需要保护的动作在明显疲劳下反复变形。</p></section></div></details></li><li><details><summary><span class="term">动作顺序：先保护技术与优先级</span>：通常先做爆发性、技术性、高负荷或最重要的多关节动作，再安排辅助和孤立动作；目标与风险可让顺序调整。</summary><div class="kp-body"><section class="detail-block"><h4>疲劳会改变动作选择</h4><p>跳跃、投掷、奥举衍生动作或高技术自由重量动作，在疲劳前更容易保持输出和姿势。一般可先排爆发或技术动作，再排重点多关节动作，随后才是小肌群辅助、孤立或低风险收尾。</p></section><section class="detail-block"><h4>弱项优先不是唯一规则</h4><p>若目标是改进某个弱项，可把它提前；上/下肢或推/拉分化则是安排一周训练日的常见方式，不自动决定当天优先级。康复、疼痛、赛事专项或设备排队等情况也可能改变顺序，必要时由合格专业人员制定。</p></section></div></details></li><li><details><summary><span class="term">节奏：先说清记法，再谈意图</span>：节奏（TUT）需先写明采用的阶段记法；本课以三段式2-0-2表示离心、底部停顿、向心为例，其他体系也可能再加顶端停顿。</summary><div class="kp-body"><section class="detail-block"><h4>慢不等于永远更好</h4><p>较慢离心或停顿可帮助控制范围、减少借力并增加特定时间张力；它也会增加疲劳。若目标是力量或爆发，向心阶段可保持快速意图，但负荷、姿势和关节控制必须允许。</p></section><section class="detail-block"><h4>快不等于乱</h4><p>爆发意图强调尽可能快速地用力，不是为了速度牺牲起始位置、关节对线或落地控制。动作变形、疼痛、失去平衡或无法按计划停止时，应降低速度、范围或负荷。</p></section></div></details></li><li><details><summary><span class="term">变量联动：一次改一项，才知道发生了什么</span>：休息、顺序、负荷、重复、节奏和动作选择会彼此影响；一次只改一个主要变量更容易保留因果线索。</summary><div class="kp-body"><section class="detail-block"><h4>先记录实际完成度</h4><p>记录实际间歇、完成的重量和次数、技术感受、RPE/RIR、疼痛与恢复，而不是只保存计划表。计划中的90秒不等于现实中每组都恢复足够，也不等于每个人都适合。</p></section><section class="detail-block"><h4>质量下降是调整信号</h4><p>若连续多组出现明显动作变形、异常疼痛、头晕、胸痛或失衡，应停止相关动作并评估，而不是继续压缩休息或加快节奏。既往伤病、心血管风险或不确定症状需遵从医疗和筛查建议。</p></section></div></details></li></ul></section><section class="warn"><h2>常见误区</h2><p><strong class="misconception">误区：组间休息越短，训练就一定更有效。</strong><br>辨析：短休息会提高密度，也可能降低下一组输出和技术；休息应服务目标和动作质量。</p><p><strong class="misconception">误区：所有人都必须按同一动作顺序训练。</strong><br>辨析：一般优先技术、高输出和重点动作，但弱项、风险、专项和设备条件都可能改变顺序。</p><p><strong class="misconception">误区：爆发训练就是越快越好。</strong><br>辨析：爆发是快速意图加可控姿势；失去位置、平衡或落地控制时应降级。</p><p><strong class="misconception">误区：一次同时改重量、休息、节奏和动作，才能进步快。</strong><br>辨析：多变量同时改变会掩盖问题；一次改一个主要变量更容易观察训练反应。</p></section><section class="mnemonic"><h2>记忆口诀</h2><p><strong>休息保质量，顺序护技术；节奏先约定，变量一次改。</strong></p></section><section class="panel"><h2>翻转卡复习</h2><div class="cards"><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">大负荷力量训练为何常从3—5分钟休息起步？</span><span class="face back" aria-hidden="true">为了更好恢复下一组高输出、动作控制和技术质量；仍应按表现和个体恢复调整。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">动作顺序的一般原则？</span><span class="face back" aria-hidden="true">技术性、高输出、重点多关节动作通常在疲劳较少时先做。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">节奏2-0-2需先说明什么？</span><span class="face back" aria-hidden="true">采用的阶段记法；本课以离心、底部停顿、向心为例，其他体系可能再加顶端停顿。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">爆发意图等于动作失控吗？</span><span class="face back" aria-hidden="true">不等于；应快速用力，但保留起始位置、对线和停止控制。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">调整计划为何一次改一项？</span><span class="face back" aria-hidden="true">这样更容易识别表现或不适来自哪个变量。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">技术明显变形时优先做什么？</span><span class="face back" aria-hidden="true">延长休息、降低难度或停止相关动作，而不是硬压节奏。</span></span></button></div></section><section class="panel orange"><h2>实操关联</h2><ul class="practice"><li>选择一个多关节动作，记录三组的实际休息、完成次数、RPE和技术质量，而不是只写计划的休息秒数。</li><li>把一次训练按“高技术/高输出—重点多关节—辅助—低风险收尾”排一版，再说明因弱项优先会如何调整。</li><li>为一个自重深蹲写清节奏记法，例如2-0-2（离心—底部停顿—向心），并录下控制离心版与快速意图但姿势可控版，比较感受。</li><li>若要提高训练密度，本周只缩短一个动作的间歇；其余变量保持不变并记录技术和恢复。</li></ul></section><section class="panel blue"><h2>练习题</h2><section class="question" data-answers="[1]" data-explanation="高输出与技术性动作受疲劳影响明显，前段通常更利于姿势和表现，但实际顺序仍可因目标调整。"><h3>1. 单选：高技术、爆发性动作通常为什么放在训练前段？</h3><div class="options"><label class="option"><input type="radio" name="question-0" value="0"><span>A. 因为前段一定更燃脂</span></label><label class="option"><input type="radio" name="question-0" value="1"><span>B. 疲劳较少时更容易保持输出和技术</span></label><label class="option"><input type="radio" name="question-0" value="2"><span>C. 为了省去热身</span></label><label class="option"><input type="radio" name="question-0" value="3"><span>D. 因为后段不能做任何动作</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[1]" data-explanation="质量下降提示当前变量不匹配，应先恢复可控动作而不是用更大风险换密度。"><h3>2. 单选：下一组自由重量动作明显变形时，更合理的首选是？</h3><div class="options"><label class="option"><input type="radio" name="question-1" value="0"><span>A. 继续缩短休息</span></label><label class="option"><input type="radio" name="question-1" value="1"><span>B. 先延长恢复或降低难度，必要时停止该动作</span></label><label class="option"><input type="radio" name="question-1" value="2"><span>C. 用更快速度弥补</span></label><label class="option"><input type="radio" name="question-1" value="3"><span>D. 忽略疼痛</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[0,1,2,3]" data-explanation="休息是为实际训练质量服务的变量，需要结合任务和个人反应。"><h3>3. 多选：安排组间休息时，哪些信息值得考虑？</h3><div class="options"><label class="option"><input type="checkbox" name="question-2" value="0"><span>A. 训练目标与负荷</span></label><label class="option"><input type="checkbox" name="question-2" value="1"><span>B. 动作复杂度</span></label><label class="option"><input type="checkbox" name="question-2" value="2"><span>C. 下一组技术与输出</span></label><label class="option"><input type="checkbox" name="question-2" value="3"><span>D. 训练者恢复状态</span></label><label class="option"><input type="checkbox" name="question-2" value="4"><span>E. 只看别人计时器</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[2]" data-explanation="跳跃和自由重量在疲劳下明显变形时应调整顺序、休息和难度；安全和技术优先于训练密度。"><h3>4. 案例：小李把跳箱、深蹲和硬拉都排在最后，并把组间休息从3分钟压到20秒，结果落地不稳、深蹲塌腰。更合适的是？</h3><div class="options"><label class="option"><input type="radio" name="question-3" value="0"><span>A. 继续压缩休息练意志</span></label><label class="option"><input type="radio" name="question-3" value="1"><span>B. 先提高跳跃速度</span></label><label class="option"><input type="radio" name="question-3" value="2"><span>C. 把需要高输出和技术的动作移到疲劳前，恢复足够间歇并降低难度直到质量可控</span></label><label class="option"><input type="radio" name="question-3" value="3"><span>D. 只保留更多孤立动作</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section></section><footer>Day 74/110<ul><li>NSCA：Essentials of Strength Training and Conditioning，训练变量、组间休息、动作顺序与节奏原则。</li><li>ACSM：Progression Models in Resistance Training for Healthy Adults，抗阻训练变量与进阶原则。</li><li>Schoenfeld BJ 等：Resistance Training Recommendations to Maximize Muscle Hypertrophy，组间休息与训练量的综述建议。</li><li>本课为一般健身教育；异常疼痛、头晕、胸痛、失衡或既往疾病风险应停止相关训练并遵从医生或合格专业人员建议。</li></ul></footer></main><dialog aria-label="详情大图"><button class="icon-button" aria-label="关闭大图" title="关闭大图"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></button><img alt=""></dialog><script>document.querySelectorAll('.flip').forEach((button) => {
+  button.addEventListener('click', () => {
+    const pressed = button.getAttribute('aria-pressed') !== 'true';
+    button.setAttribute('aria-pressed', String(pressed));
+    button.querySelector('.front').setAttribute('aria-hidden', String(pressed));
+    button.querySelector('.back').setAttribute('aria-hidden', String(!pressed));
+  });
+});
+document.querySelectorAll('.question').forEach((question) => {
+  question.querySelector('.check').addEventListener('click', () => {
+    const selected = [...question.querySelectorAll('input:checked')].map((input) => Number(input.value)).sort();
+    const answer = question.querySelector('.answer');
+    answer.hidden = false;
+    if (!selected.length) { answer.textContent = '请先选择答案。'; delete question.dataset.result; return; }
+    const correct = JSON.stringify(selected) === JSON.stringify(JSON.parse(question.dataset.answers).sort());
+    question.dataset.result = correct ? 'correct' : 'wrong';
+    answer.textContent = `${correct ? '回答正确。' : '再想一想。'}${question.dataset.explanation}`;
+  });
+});
+const imageDialog = document.querySelector('dialog');
+document.querySelectorAll('[data-zoom]').forEach((button) => {
+  button.addEventListener('click', () => {
+    const original = button.querySelector('img');
+    const image = imageDialog.querySelector('img');
+    image.src = original.src;
+    image.alt = original.alt;
+    imageDialog.showModal();
+  });
+});
+imageDialog.querySelector('button').addEventListener('click', () => imageDialog.close());
+imageDialog.addEventListener('click', (event) => {
+  const rect = imageDialog.getBoundingClientRect();
+  if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) imageDialog.close();
+});
+</script></body></html>

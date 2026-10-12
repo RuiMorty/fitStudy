@@ -1,0 +1,357 @@
+{
+  "processedAt": "2026-09-30T06:16:48.312706+00:00",
+  "method": "trim near-transparent noise; reviewed crop; uniform scale; transparent margin",
+  "assets": [
+    {
+      "source": "runs/day54/source/cover.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "sourceSha256": "a9d796311695816e82543b0b611bc55eb34e483e0abe3a1a0ac1f3a2b893f550",
+      "reviewedCrop": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "visibleCrop": [
+        256,
+        14,
+        1423,
+        894
+      ],
+      "output": "runs/day54/assets/cover.png",
+      "size": [
+        1600,
+        900
+      ],
+      "subjectSize": [
+        1050,
+        792
+      ],
+      "offset": [
+        275,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "无字封面"
+    },
+    {
+      "source": "runs/day54/source/visual-01-volume.png",
+      "sourceSize": [
+        2207,
+        712
+      ],
+      "sourceSha256": "d15d9cbf32ed0dc535fba5f5e2196d37f9539450291557975f4df16ccd685c6a",
+      "reviewedCrop": [
+        0,
+        0,
+        2207,
+        712
+      ],
+      "visibleCrop": [
+        400,
+        12,
+        1735,
+        690
+      ],
+      "output": "runs/day54/assets/visual-01-volume.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1335,
+        678
+      ],
+      "offset": [
+        732,
+        111
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "张力总量"
+    },
+    {
+      "source": "runs/day54/source/visual-02-variables.png",
+      "sourceSize": [
+        2213,
+        711
+      ],
+      "sourceSha256": "98993c03276cae0c88b54c66a07a96353b41518b330baee8ecf9412798874eec",
+      "reviewedCrop": [
+        0,
+        0,
+        2213,
+        711
+      ],
+      "visibleCrop": [
+        45,
+        4,
+        2169,
+        688
+      ],
+      "output": "runs/day54/assets/visual-02-variables.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        2124,
+        684
+      ],
+      "offset": [
+        338,
+        108
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "变量"
+    },
+    {
+      "source": "runs/day54/source/visual-03-failure.png",
+      "sourceSize": [
+        2213,
+        711
+      ],
+      "sourceSha256": "2848573f8a9dd1e39642285b0d08499253f522974a1f6df85df503ad56c57965",
+      "reviewedCrop": [
+        0,
+        0,
+        2213,
+        711
+      ],
+      "visibleCrop": [
+        221,
+        25,
+        2100,
+        682
+      ],
+      "output": "runs/day54/assets/visual-03-failure.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1879,
+        657
+      ],
+      "offset": [
+        460,
+        121
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "技术边界"
+    },
+    {
+      "source": "runs/day54/source/visual-04-recovery.png",
+      "sourceSize": [
+        2209,
+        712
+      ],
+      "sourceSha256": "76e86a58e67c7ec0dc8f619ceedea432daaaddbf17bc91279c962550181fac64",
+      "reviewedCrop": [
+        0,
+        0,
+        2209,
+        712
+      ],
+      "visibleCrop": [
+        27,
+        8,
+        2182,
+        700
+      ],
+      "output": "runs/day54/assets/visual-04-recovery.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        2155,
+        692
+      ],
+      "offset": [
+        322,
+        104
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "恢复"
+    },
+    {
+      "source": "runs/day54/source/overview-01-volume.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "af88b8809e8dde3b0cea1cb006f8d91c24455f6c7f27c7cade01d17a490a5d5e",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        91,
+        48,
+        1384,
+        978
+      ],
+      "output": "runs/day54/assets/overview-01-volume.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1293,
+        930
+      ],
+      "offset": [
+        153,
+        135
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day54/source/overview-02-variables.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "5b8bada91bb39075a00c7730613236a8fc455e833be73c15fb63866bdd304956",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        281,
+        15,
+        1237,
+        1060
+      ],
+      "output": "runs/day54/assets/overview-02-variables.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        956,
+        1045
+      ],
+      "offset": [
+        322,
+        77
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day54/source/overview-03-failure.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "f0c48104c7074b21d17ade94fc7637d0b111ae9121d3b8becbbfa9c94c98d559",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        52,
+        111,
+        1399,
+        954
+      ],
+      "output": "runs/day54/assets/overview-03-failure.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1347,
+        843
+      ],
+      "offset": [
+        126,
+        178
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day54/source/overview-04-recovery.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "089d7d1352c9d28701758c24f4a8d66d840b511ab180bde1152b6a31d08d7ff0",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        161,
+        30,
+        1413,
+        1011
+      ],
+      "output": "runs/day54/assets/overview-04-recovery.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1252,
+        981
+      ],
+      "offset": [
+        174,
+        109
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    }
+  ]
+}

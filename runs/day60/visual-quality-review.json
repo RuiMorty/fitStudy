@@ -1,0 +1,36 @@
+{
+  "reviewer": "local visual and alpha QA",
+  "requirements": [
+    "true-alpha",
+    "no checkerboard or rendered background",
+    "wordless source art",
+    "consistent Bojji and Despa teaching style",
+    "one clear action per knowledge image",
+    "overview art independently generated from knowledge art"
+  ],
+  "technicalChecks": {
+    "checkedWith": ["sips pixel dimensions and hasAlpha", "individual source-image inspection", "isolated final-card inspection"],
+    "result": "9/9 source PNG are non-empty RGBA files with alpha. No accepted image contains readable generated text, checkerboard, unrelated image or placeholder."
+  },
+  "accepted": [
+    {"file": "cover.png", "attempt": 1, "source": "runs/day60/image-requests/cover-eb86e17540/attempt-01/cover.png", "review": "波吉与德斯帕的浅深蹲和双脚稳定站姿清楚，作为无字封面与课程主题匹配。"},
+    {"file": "visual-01-observe.png", "attempt": 2, "source": "runs/day60/image-requests/visual-01-observe-299476202f/attempt-02/visual-01-observe.png", "review": "单一波吉低台阶任务，双脚和动作关系清楚；首轮不清楚版本已保留。"},
+    {"file": "visual-02-foot.png", "attempt": 1, "source": "runs/day60/image-requests/visual-02-foot-9f346a743f/attempt-01/visual-02-foot.png", "review": "单一稳定站姿，双脚完整、边缘干净；作为足踝支撑的概念图可接受。"},
+    {"file": "visual-03-hip-knee.png", "attempt": 1, "source": "runs/day60/image-requests/visual-03-hip-knee-cbd925922d/attempt-01/visual-03-hip-knee.png", "review": "德斯帕分腿蹲的髋膝协同清楚，未见肢体或动作异常。"},
+    {"file": "visual-04-squat.png", "attempt": 1, "source": "runs/day60/image-requests/visual-04-squat-4e68bbbc8f/attempt-01/visual-04-squat.png", "review": "波吉箱式深蹲完整呈现慢节奏深蹲整合，四肢和箱体关系正常。"},
+    {"file": "overview-01-observe.png", "attempt": 1, "source": "runs/day60/image-requests/overview-01-observe-82993ee2f2/attempt-01/overview-01-observe.png", "review": "独立绘制的低台阶任务，不复用知识页源图。"},
+    {"file": "overview-02-foot.png", "attempt": 1, "source": "runs/day60/image-requests/overview-02-foot-ae695cbfba/attempt-01/overview-02-foot.png", "review": "独立绘制的双脚稳定站姿；概念对应足踝支撑，视觉上不直接展示三点支撑或背屈。"},
+    {"file": "overview-03-hip-knee.png", "attempt": 1, "source": "runs/day60/image-requests/overview-03-hip-knee-fd59702ef7/attempt-01/overview-03-hip-knee.png", "review": "独立绘制的德斯帕分腿蹲，稳定前足与髋膝协同清楚。"},
+    {"file": "overview-04-squat.png", "attempt": 1, "source": "runs/day60/image-requests/overview-04-squat-88f40af67e/attempt-01/overview-04-squat.png", "review": "独立绘制的波吉低箱式深蹲，不复用知识页源图。"}
+  ],
+  "rejected": [
+    {"file": "visual-01-observe.png", "attempt": 1, "source": "runs/day60/rejected/visual-01-observe-attempt-01-unclear-step-task.png", "reason": "动作与台阶任务关系不够清楚，按调整提示词重试一次。"}
+  ],
+  "retriesUsed": 1,
+  "finalCardReview": {
+    "isolatedPackage": "/tmp/fitstudy-day60-stage.z1QPyb",
+    "checked": ["cover.png", "slide-01.png", "slide-02.png", "slide-03.png", "slide-04.png", "slide-05.png", "html/assets/阶段3 OPT训练模型/day60-足旋前与膝外翻综合征纠正.png"],
+    "result": "六张最终小红书卡均为1080x1440；文字完整无溢出，透明插画在白卡上边缘干净，无重复人物、生成文字或肢体异常。足踝支撑图为泛化稳定站姿，保留为可接受的语义提示而非三点支撑的直观演示。"
+  },
+  "result": "9 项来源素材均通过本地质量审核；visual-01-observe 的首轮不清楚候选已保留，调整后第2次请求通过。"
+}

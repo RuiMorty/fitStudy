@@ -1,0 +1,50 @@
+{
+  "commonPrompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, a cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, a rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper background, loose paper sheets, border, sticker edge, shadow, or halo. A small unmarked rigid evidence card is allowed as a prop. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.",
+  "assets": [
+    {
+      "file": "cover.png",
+      "role": "cover",
+      "prompt": "Wide 16:9 wordless single-scene teaching illustration. Despa and Bojji hold four blank colored cards in a tidy square between them, showing a concept, situation, boundary and source without text. No extra equipment beyond the described props. Exactly one Bojji and exactly one Despa appear, both with full bodies visible. Use one continuous teaching moment only, never duplicate figures, alternate poses, sequence frames, motion trails, text, arrows or readable cards."
+    },
+    {
+      "file": "visual-01-independent-set.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene teaching illustration. Despa and Bojji set two distinct groups of blank cards in separate trays, both calmly checking that the groups are not duplicated. Explain 独立题组 through one coherent pose and a few simple blank props. Exactly one Bojji and exactly one Despa appear, both with full bodies visible. Use one continuous teaching moment only, never duplicate figures, alternate poses, sequence frames, motion trails, text, arrows or readable cards."
+    },
+    {
+      "file": "visual-02-four-grid.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene teaching illustration. Despa and Bojji point to four blank colored cards arranged in a square, with a closed unmarked reference book nearby. Explain 四格复习卡 through one coherent pose and a few simple blank props. Exactly one Bojji and exactly one Despa appear, both with full bodies visible. Use one continuous teaching moment only, never duplicate figures, alternate poses, sequence frames, motion trails, text, arrows or readable cards."
+    },
+    {
+      "file": "visual-03-speed-errors.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene teaching illustration. Despa and Bojji calmly compare one small stack of cards and one longer stack, without any clocks, numbers or racing gestures. Explain 速度与错因 through one coherent pose and a few simple blank props. Exactly one Bojji and exactly one Despa appear, both with full bodies visible. Use one continuous teaching moment only, never duplicate figures, alternate poses, sequence frames, motion trails, text, arrows or readable cards."
+    },
+    {
+      "file": "visual-04-mixed-ready.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene teaching illustration. Despa and Bojji choose three small blank cards from a larger quiet stack, leaving a simple folded rest mat beside them. Explain 混合前清单 through one coherent pose and a few simple blank props. Exactly one Bojji and exactly one Despa appear, both with full bodies visible. Use one continuous teaching moment only, never duplicate figures, alternate poses, sequence frames, motion trails, text, arrows or readable cards."
+    },
+    {
+      "file": "overview-01-independent-set.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene teaching illustration. Despa and Bojji set two distinct groups of blank cards in separate trays, both calmly checking that the groups are not duplicated. This is overview-only art and must be visually distinct from the knowledge-page composition. Exactly one Bojji and exactly one Despa appear, both with full bodies visible. Use one continuous teaching moment only, never duplicate figures, alternate poses, sequence frames, motion trails, text, arrows or readable cards."
+    },
+    {
+      "file": "overview-02-four-grid.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene teaching illustration. Despa and Bojji point to four blank colored cards arranged in a square, with a closed unmarked reference book nearby. This is overview-only art and must be visually distinct from the knowledge-page composition. Exactly one Bojji and exactly one Despa appear, both with full bodies visible. Use one continuous teaching moment only, never duplicate figures, alternate poses, sequence frames, motion trails, text, arrows or readable cards."
+    },
+    {
+      "file": "overview-03-speed-errors.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene teaching illustration. Despa and Bojji calmly compare one small stack of cards and one longer stack, without any clocks, numbers or racing gestures. This is overview-only art and must be visually distinct from the knowledge-page composition. Exactly one Bojji and exactly one Despa appear, both with full bodies visible. Use one continuous teaching moment only, never duplicate figures, alternate poses, sequence frames, motion trails, text, arrows or readable cards."
+    },
+    {
+      "file": "overview-04-mixed-ready.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene teaching illustration. Despa and Bojji choose three small blank cards from a larger quiet stack, leaving a simple folded rest mat beside them. This is overview-only art and must be visually distinct from the knowledge-page composition. Exactly one Bojji and exactly one Despa appear, both with full bodies visible. Use one continuous teaching moment only, never duplicate figures, alternate poses, sequence frames, motion trails, text, arrows or readable cards."
+    }
+  ]
+}

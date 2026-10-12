@@ -1,0 +1,40 @@
+{
+  "day": 85,
+  "title": "速度敏捷评估",
+  "reviewedAt": "2026-10-03T07:14:55+08:00",
+  "requestRecord": "runs/day85/image-request-log.json",
+  "requirements": [
+    "Accepted sources have a real alpha channel and were visually checked on a neutral background.",
+    "Each scene uses one Bojji and one Despa with no readable text, floor, room, cast shadow, duplicate pose or sequence framing.",
+    "Overview art is independently generated and compositionally distinct from its corresponding knowledge image.",
+    "Speed and agility assessment distinguishes tasks and repeatable conditions without race scores, path arrows or diagnostic claims."
+  ],
+  "accepted": [
+    {"file":"cover.png","attempt":1,"source":"runs/day85/image-requests/cover-eb86e17540/attempt-01/cover.png","sha256":"612059c362bd17f2d51319e647a5489e9bb68093a3c4fbb2c19afbf4521fc76b","review":"A low deceleration stance and three isolated cones introduce assessment without a race or score."},
+    {"file":"visual-01.png","attempt":1,"source":"runs/day85/image-requests/visual-01-8a79cc2ec8/attempt-01/visual-01.png","sha256":"9fb9556fd8afc87d53d5addca9585ebbe0077a0c2adff1c2d40e776d4c5e451e","review":"Straight running preparation and a low braking posture distinguish linear, change-of-direction and reactive demands."},
+    {"file":"visual-02.png","attempt":1,"source":"runs/day85/image-requests/visual-02-1d99f16a14/attempt-01/visual-02.png","sha256":"7721367e85f2c88bcf97cc7bb17e0e9f1e919361ce290072b3c5b864a5e3b5ac","review":"Blank cue card and compact cone cluster show task-led test selection without creating a race route."},
+    {"file":"visual-03.png","attempt":2,"source":"runs/day85/image-requests/visual-03-0c02636da0/attempt-02/visual-03.png","sha256":"66f9d8c238e0165ca8747cb3a330c173b0c0c38aafe9e8bde45d545c41b8af56","review":"Featureless timing token, secured boot and three matching cones communicate repeatable conditions without readable timing equipment."},
+    {"file":"visual-04.png","attempt":3,"source":"runs/day85/image-requests/visual-04-dfef8f1f0d/attempt-03/visual-04.png","sha256":"a20562fbf138ff29ebd43c2828baf3a1f5831a05e7cb602ae37325121c256936","review":"On-site observation of a low deceleration posture supplies action-quality context without a camera, tripod or tracking markers."},
+    {"file":"visual-05.png","attempt":1,"source":"runs/day85/image-requests/visual-05-c5ca8b3979/attempt-01/visual-05.png","sha256":"02d5259bdf1ce8ab95001241c4bde4dd0ae87df61d796dccdfe8061f3e47be6e","review":"One cone, a controlled stop position and separate slack resistance loop connect results to one focused next step."},
+    {"file":"overview-01.png","attempt":1,"source":"runs/day85/image-requests/overview-01-9cdac68418/attempt-01/overview-01.png","sha256":"1098528f42e8cef2197ecfbe72157fb6732310338b302668f6b9f2f2b397e0cb","review":"Independent compact braking composition uses a different scale and stance hierarchy from the knowledge illustration."},
+    {"file":"overview-02.png","attempt":1,"source":"runs/day85/image-requests/overview-02-6a449564cb/attempt-01/overview-02.png","sha256":"ebb490668a4ec91c1fa6850dc92e0b87f3cd75b94d844880206b384d9fb0f05e","review":"Card and cone hierarchy is independent from the wide selection scene and remains free of route markings."},
+    {"file":"overview-03.png","attempt":2,"source":"runs/day85/image-requests/overview-03-827fcd4a79/attempt-02/overview-03.png","sha256":"2c29a79bd9a267d3ba11fd81c5ba941f295be7f4b8a1c4970c3dc89be9b39938","review":"Featureless oval timing token and matching cones preserve the standard-condition idea without a stopwatch face or button."},
+    {"file":"overview-04.png","attempt":2,"source":"runs/day85/image-requests/overview-04-897df7e278/attempt-02/overview-04.png","sha256":"c7b7baeaf35f2de91112316ddbcb47bc6fc050c0105a3a863a88faa7576f028b","review":"In-person observation scene is independent of the wide version and contains no camera or tripod."},
+    {"file":"overview-05.png","attempt":1,"source":"runs/day85/image-requests/overview-05-d059872d99/attempt-01/overview-05.png","sha256":"5821c1c107dd92e2df919d1c5f1c94b240820a7cacffdcf3bdb6349ea5db2571","review":"Separate slack loop and a low-speed stop position show a measured next training focus."}
+  ],
+  "rejected": [
+    {"file":"visual-03.png","attempt":1,"reason":"The timing prop included a stopwatch-style top button despite the blank, no-button constraint."},
+    {"file":"visual-04.png","attempt":1,"reason":"The camera prop included a prohibited tripod."},
+    {"file":"visual-04.png","attempt":2,"reason":"The revised camera still showed a lens, so the valid on-site observation alternative was used."},
+    {"file":"overview-03.png","attempt":1,"reason":"The timing prop included a stopwatch-style top button and the cones were not visually standardized."},
+    {"file":"overview-04.png","attempt":1,"reason":"The compact observation scene included a prohibited tripod camera."}
+  ],
+  "summary": {
+    "planned": 11,
+    "accepted": 11,
+    "requested": 16,
+    "retriesUsed": 5,
+    "allAcceptedSourcesHaveAlpha": true,
+    "readyForSharedPreparation": true
+  }
+}

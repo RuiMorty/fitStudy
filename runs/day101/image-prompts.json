@@ -1,0 +1,50 @@
+{
+  "commonPrompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, a cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, a rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper background, loose paper sheets, border, sticker edge, shadow, or halo. A small unmarked rigid evidence card is allowed as a prop. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.",
+  "assets": [
+    {
+      "file": "cover.png",
+      "role": "cover",
+      "prompt": "Wide 16:9 wordless single-scene teaching illustration. Despa and Bojji calmly practice a supported single-leg balance near one low rail, with a blank choice card on a small stand and no text. No extra equipment beyond the described props. Exactly one Bojji and exactly one Despa appear, both with full bodies visible. Use one continuous teaching moment only, never duplicate figures, alternate poses, sequence frames, motion trails, text, arrows or readable cards."
+    },
+    {
+      "file": "visual-01-open-goal.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene teaching illustration. Despa and Bojji sit with two blank choice cards and gesture respectfully toward each other, showing a collaborative conversation. Explain 沟通与目标 through one coherent pose and a few simple blank props. Exactly one Bojji and exactly one Despa appear, both with full bodies visible. Use one continuous teaching moment only, never duplicate figures, alternate poses, sequence frames, motion trails, text, arrows or readable cards."
+    },
+    {
+      "file": "visual-02-nutrition-boundary.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene teaching illustration. Despa and Bojji sort simple blank food-color cards beside an open referral card, with no labels or food claims. Explain 营养边界 through one coherent pose and a few simple blank props. Exactly one Bojji and exactly one Despa appear, both with full bodies visible. Use one continuous teaching moment only, never duplicate figures, alternate poses, sequence frames, motion trails, text, arrows or readable cards."
+    },
+    {
+      "file": "visual-03-core-quality.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene teaching illustration. Despa and Bojji stand in a calm upright core-bracing posture with relaxed shoulders and gentle breathing, fully inside the safe margin. Explain 核心质量 through one coherent pose and a few simple blank props. Exactly one Bojji and exactly one Despa appear, both with full bodies visible. Use one continuous teaching moment only, never duplicate figures, alternate poses, sequence frames, motion trails, text, arrows or readable cards."
+    },
+    {
+      "file": "visual-04-balance-progress.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene teaching illustration. Despa stands beside a low support rail while Bojji performs a calm two-foot to single-foot weight shift, both fully visible. Explain 平衡进阶 through one coherent pose and a few simple blank props. Exactly one Bojji and exactly one Despa appear, both with full bodies visible. Use one continuous teaching moment only, never duplicate figures, alternate poses, sequence frames, motion trails, text, arrows or readable cards."
+    },
+    {
+      "file": "overview-01-open-goal.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene teaching illustration. Despa and Bojji sit with two blank choice cards and gesture respectfully toward each other, showing a collaborative conversation. This is overview-only art and must be visually distinct from the knowledge-page composition. Exactly one Bojji and exactly one Despa appear, both with full bodies visible. Use one continuous teaching moment only, never duplicate figures, alternate poses, sequence frames, motion trails, text, arrows or readable cards."
+    },
+    {
+      "file": "overview-02-nutrition-boundary.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene teaching illustration. Despa and Bojji sort simple blank food-color cards beside an open referral card, with no labels or food claims. This is overview-only art and must be visually distinct from the knowledge-page composition. Exactly one Bojji and exactly one Despa appear, both with full bodies visible. Use one continuous teaching moment only, never duplicate figures, alternate poses, sequence frames, motion trails, text, arrows or readable cards."
+    },
+    {
+      "file": "overview-03-core-quality.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene teaching illustration. Despa and Bojji stand in a calm upright core-bracing posture with relaxed shoulders and gentle breathing, fully inside the safe margin. This is overview-only art and must be visually distinct from the knowledge-page composition. Exactly one Bojji and exactly one Despa appear, both with full bodies visible. Use one continuous teaching moment only, never duplicate figures, alternate poses, sequence frames, motion trails, text, arrows or readable cards."
+    },
+    {
+      "file": "overview-04-balance-progress.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene teaching illustration. Despa stands beside a low support rail while Bojji performs a calm two-foot to single-foot weight shift, both fully visible. This is overview-only art and must be visually distinct from the knowledge-page composition. Exactly one Bojji and exactly one Despa appear, both with full bodies visible. Use one continuous teaching moment only, never duplicate figures, alternate poses, sequence frames, motion trails, text, arrows or readable cards."
+    }
+  ]
+}

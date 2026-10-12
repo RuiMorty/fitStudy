@@ -1,0 +1,357 @@
+{
+  "processedAt": "2026-09-30T19:05:05.554130+00:00",
+  "method": "trim near-transparent noise; reviewed crop; uniform scale; transparent margin",
+  "assets": [
+    {
+      "source": "runs/day73/source/cover.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "sourceSha256": "8a772e82ac4d962bedbb992b533eb6fae1ca33697cac96dccfbee02c8a7ae877",
+      "reviewedCrop": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "visibleCrop": [
+        229,
+        18,
+        1585,
+        903
+      ],
+      "output": "runs/day73/assets/cover.png",
+      "size": [
+        1600,
+        900
+      ],
+      "subjectSize": [
+        1214,
+        792
+      ],
+      "offset": [
+        193,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "无字封面"
+    },
+    {
+      "source": "runs/day73/source/visual-01-regulation.png",
+      "sourceSize": [
+        1881,
+        836
+      ],
+      "sourceSha256": "c1f18a2e3e045001a8f24c8e64af8dbe9276a1c2cda987ac7c9882ee74c15361",
+      "reviewedCrop": [
+        0,
+        0,
+        1881,
+        836
+      ],
+      "visibleCrop": [
+        516,
+        18,
+        1400,
+        814
+      ],
+      "output": "runs/day73/assets/visual-01-regulation.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        880,
+        792
+      ],
+      "offset": [
+        960,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "小红书独立知识页，无字"
+    },
+    {
+      "source": "runs/day73/source/visual-02-certification.png",
+      "sourceSize": [
+        2209,
+        712
+      ],
+      "sourceSha256": "9cd0c22209fe3dfc68f6bfde31dd1615cca9e1a22c0a14678249e8a083ff869b",
+      "reviewedCrop": [
+        0,
+        0,
+        2209,
+        712
+      ],
+      "visibleCrop": [
+        681,
+        21,
+        1529,
+        691
+      ],
+      "output": "runs/day73/assets/visual-02-certification.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        848,
+        670
+      ],
+      "offset": [
+        976,
+        115
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "小红书独立知识页，无字"
+    },
+    {
+      "source": "runs/day73/source/visual-03-marketing.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "sourceSha256": "00c6c1090eff6b6a01fa3d6ae880ee4d84849dc6dab327c3e9a83d91cb354a8c",
+      "reviewedCrop": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "visibleCrop": [
+        511,
+        26,
+        1221,
+        913
+      ],
+      "output": "runs/day73/assets/visual-03-marketing.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        634,
+        792
+      ],
+      "offset": [
+        1083,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "小红书独立知识页，无字"
+    },
+    {
+      "source": "runs/day73/source/visual-04-recovery.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "sourceSha256": "f1a92c31469c6e7424ac9b08e4aff02dc93872e703ea82dfbff000d475d26087",
+      "reviewedCrop": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "visibleCrop": [
+        313,
+        38,
+        1373,
+        900
+      ],
+      "output": "runs/day73/assets/visual-04-recovery.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        974,
+        792
+      ],
+      "offset": [
+        913,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "小红书独立知识页，无字"
+    },
+    {
+      "source": "runs/day73/source/overview-01-regulation.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "b4049087007bc346c14d2ce5feab931e71e0c3ba7e348d547450a4607356cd92",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        220,
+        21,
+        1268,
+        1068
+      ],
+      "output": "runs/day73/assets/overview-01-regulation.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1048,
+        1047
+      ],
+      "offset": [
+        276,
+        76
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day73/source/overview-02-certification.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "3edd0378c4fd0af8522382f277dc609b284e3f5fdf9c9d20608537f8dc0c4567",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        188,
+        15,
+        1308,
+        1067
+      ],
+      "output": "runs/day73/assets/overview-02-certification.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1120,
+        1052
+      ],
+      "offset": [
+        240,
+        74
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day73/source/overview-03-marketing.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "73fe5faa41283029d1235e8756df9c01278de7cf19915bd56e660d3e5866ce7b",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        178,
+        15,
+        1270,
+        1064
+      ],
+      "output": "runs/day73/assets/overview-03-marketing.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1092,
+        1049
+      ],
+      "offset": [
+        254,
+        75
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day73/source/overview-04-recovery.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "4bd5c5218dc610a51319d8c0a887d0f0e39bb19d21d1ef950ffea65230fa261a",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        47,
+        24,
+        1436,
+        1035
+      ],
+      "output": "runs/day73/assets/overview-04-recovery.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1389,
+        1011
+      ],
+      "offset": [
+        105,
+        94
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "status": "planning-only-no-generation-request",
+  "day": 71,
+  "lesson": "运动相关药物与禁用物质",
+  "styleReference": "templates/study/v1/image-style.json",
+  "commonRequirements": [
+    "固定波吉与德斯帕、二维教学画法、深灰细轮廓和平涂；除两位角色外不出现任何人。",
+    "每张为真实透明PNG，未绘制区域alpha为0；不画背景房间、地板、阴影、边框、棋盘格、药品品牌或水印。",
+    "AI图内不出现文字、数字、WADA标识、药名、处方、检测设备、尿检样本、注射器、针头、药片、药瓶、箭头或禁止符号。",
+    "强调核对和安全暂停，避免把禁用物质画得炫酷、可模仿或具备教学用法；不表现注射、服药、规避检测或身体夸张。"
+  ],
+  "assets": [
+    {"file": "cover.png", "role": "cover", "targetSize": [1600, 900], "topic": "正式核对与执业边界", "teachingRelationship": "面对药物问题，教练应暂停猜测并连接专业核对", "composition": "横向16:9，德斯帕以平静停止手势面对波吉，另一只手拿合上的无字文件夹；波吉保持倾听姿势", "allowedText": "none", "anatomyAndTechniqueConstraints": "无药物或检测道具，人物不表现恐惧或对抗。"},
+    {"file": "visual-01-rules.png", "role": "knowledge", "targetSize": [2800, 900], "topic": "当前规则核对", "teachingRelationship": "旧信息不能代替当前正式渠道", "composition": "横向28:9，德斯帕将两张无字空白卡片并列放在小桌上，波吉做观察手势；没有标记、清单文字或图标", "allowedText": "none", "anatomyAndTechniqueConstraints": "卡片完全空白，不使用反兴奋剂符号、屏幕或药物。"},
+    {"file": "visual-02-risk.png", "role": "knowledge", "targetSize": [2800, 900], "topic": "健康风险优先", "teachingRelationship": "身体异常时暂停高强度训练和转介优先", "composition": "横向28:9，德斯帕把轻哑铃安全放下，波吉站在旁以开放手势提示暂停；不表现具体症状", "allowedText": "none", "anatomyAndTechniqueConstraints": "哑铃平放不压脚，姿态稳定，无昏厥、针头或药物。"},
+    {"file": "visual-03-treatment.png", "role": "knowledge", "targetSize": [2800, 900], "topic": "治疗用药走正式路径", "teachingRelationship": "个人健康信息应由临床与反兴奋剂正式渠道处理", "composition": "横向28:9，德斯帕把合上的无字文件夹递给波吉，二人做平静确认手势；无第三人或医疗符号", "allowedText": "none", "anatomyAndTechniqueConstraints": "文件夹无文字、无处方、无药物图样。"},
+    {"file": "visual-04-scope.png", "role": "knowledge", "targetSize": [2800, 900], "topic": "教练拒绝药物建议", "teachingRelationship": "拒绝处方建议，同时保留支持和转介", "composition": "横向28:9，德斯帕一手开放指向远处空白方向、一手做温和暂停手势，波吉倾听；无禁止图标", "allowedText": "none", "anatomyAndTechniqueConstraints": "避免指向药物或人物，不表现责备。"},
+    {"file": "overview-01-rules.png", "role": "overview-item", "targetSize": [1600, 1200], "topic": "当前规则", "teachingRelationship": "核对而不是猜测", "composition": "4:3总览专用，德斯帕与波吉看两张空白卡片", "allowedText": "none", "anatomyAndTechniqueConstraints": "不与知识页复用；卡片无字无标识。"},
+    {"file": "overview-02-risk.png", "role": "overview-item", "targetSize": [1600, 1200], "topic": "健康风险", "teachingRelationship": "不适时先暂停", "composition": "4:3总览专用，德斯帕把轻哑铃安全放下，波吉做暂停手势", "allowedText": "none", "anatomyAndTechniqueConstraints": "不与知识页复用；不画症状、药物或急救。"},
+    {"file": "overview-03-treatment.png", "role": "overview-item", "targetSize": [1600, 1200], "topic": "治疗路径", "teachingRelationship": "处方和规则要走正式专业渠道", "composition": "4:3总览专用，德斯帕拿合上的空白文件夹，波吉做确认手势", "allowedText": "none", "anatomyAndTechniqueConstraints": "不与知识页复用；无医疗图示。"},
+    {"file": "overview-04-scope.png", "role": "overview-item", "targetSize": [1600, 1200], "topic": "教练边界", "teachingRelationship": "拒绝药物建议，转向安全支持", "composition": "4:3总览专用，德斯帕做温和暂停手势，波吉倾听", "allowedText": "none", "anatomyAndTechniqueConstraints": "不与知识页复用；无禁止符号或指责姿势。"}
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "status": "planning-only-no-generation-request",
+  "day": 74,
+  "lesson": "训练变量深化：休息、顺序与节奏",
+  "styleReference": "templates/study/v1/image-style.json",
+  "commonRequirements": [
+    "固定波吉与德斯帕，二维教学画法，深灰细轮廓和平涂；每张仅可出现这两位角色的一个或多个安全姿态。",
+    "每张为真实透明PNG；无健身房背景、地板、边框、影子、棋盘格、水印或品牌。",
+    "不生成文字、数字、计时器、时钟、箭头、图表、节奏符号、重量标识、Logo或无关装饰。",
+    "自由重量、长凳和哑铃必须结构正确、完整、无悬空配重；动作只用轻负荷或自重，避免高风险或失控姿态。"
+  ],
+  "assets": [
+    {"file": "cover.png", "role": "cover", "targetSize": [1600, 900], "topic": "休息、顺序与节奏的训练安排", "teachingRelationship": "安全器械、动作质量和恢复共同构成安排", "composition": "横向16:9，德斯帕站在空杠铃与长凳旁做安排手势，波吉做无负荷浅蹲准备；无时钟和文字", "allowedText": "none", "anatomyAndTechniqueConstraints": "空杠平放在安全支架或地面且连续，浅蹲膝盖与脚尖自然对线。"},
+    {"file": "visual-01-rest.png", "role": "knowledge", "targetSize": [2800, 900], "topic": "组间休息与下一组质量", "teachingRelationship": "短暂恢复帮助下一组保持技术和输出", "composition": "横向28:9，德斯帕坐在长凳上做平静呼吸，波吉站旁握轻哑铃但未开始动作；无时钟或计时器", "allowedText": "none", "anatomyAndTechniqueConstraints": "哑铃垂直握稳，长凳稳定；不表现力竭或脱水。"},
+    {"file": "visual-02-order.png", "role": "knowledge", "targetSize": [2800, 900], "topic": "动作顺序与技术优先", "teachingRelationship": "高技术任务在疲劳前完成，辅助动作在后", "composition": "横向28:9，左侧德斯帕做轻量药球胸前传球准备，右侧波吉做无负荷坐凳深蹲，居中另一位德斯帕以开放手势观察；无箭头和顺序数字", "allowedText": "none", "anatomyAndTechniqueConstraints": "药球紧贴胸前、肘部自然，坐凳深蹲安全对线；无高速抛掷。"},
+    {"file": "visual-03-tempo.png", "role": "knowledge", "targetSize": [2800, 900], "topic": "受控节奏与快速意图", "teachingRelationship": "控制离心和稳定起止位置使速度意图可安全表达", "composition": "横向28:9，两个德斯帕姿态并列展示自重深蹲的站立和浅蹲底部，波吉在中间做观察手势；无动作线、箭头或文字", "allowedText": "none", "anatomyAndTechniqueConstraints": "两种姿态均脚掌着地、膝盖对线、脊柱中立；不画跳跃落地。"},
+    {"file": "visual-04-adjustment.png", "role": "knowledge", "targetSize": [2800, 900], "topic": "一次调整一个变量", "teachingRelationship": "记录训练反应后再改变单一因素", "composition": "横向28:9，德斯帕把一张空白卡片放在小桌，波吉做单指手势并站在轻哑铃旁；无记录文字或数字", "allowedText": "none", "anatomyAndTechniqueConstraints": "哑铃平放安全，不画图表、计时或复杂设备。"},
+    {"file": "overview-01-rest.png", "role": "overview-item", "targetSize": [1600, 1200], "topic": "组间休息", "teachingRelationship": "恢复为下一组质量服务", "composition": "4:3总览专用，德斯帕坐在长凳平静呼吸，波吉拿轻哑铃站旁", "allowedText": "none", "anatomyAndTechniqueConstraints": "不与知识页复用；无时钟。"},
+    {"file": "overview-02-order.png", "role": "overview-item", "targetSize": [1600, 1200], "topic": "动作顺序", "teachingRelationship": "技术与重点优先", "composition": "4:3总览专用，德斯帕拿轻药球做准备，波吉做无负荷坐凳深蹲", "allowedText": "none", "anatomyAndTechniqueConstraints": "不与知识页复用；药球和姿势安全。"},
+    {"file": "overview-03-tempo.png", "role": "overview-item", "targetSize": [1600, 1200], "topic": "训练节奏", "teachingRelationship": "控制支撑速度意图", "composition": "4:3总览专用，一个德斯帕做自重浅蹲，波吉观察", "allowedText": "none", "anatomyAndTechniqueConstraints": "不与知识页复用；不画箭头、节拍或跳跃。"},
+    {"file": "overview-04-adjustment.png", "role": "overview-item", "targetSize": [1600, 1200], "topic": "变量联动", "teachingRelationship": "一次改变一个主要变量", "composition": "4:3总览专用，德斯帕把空白卡片放小桌，波吉做单指手势", "allowedText": "none", "anatomyAndTechniqueConstraints": "不与知识页复用；卡片无字，哑铃平放安全。"}
+  ]
+}

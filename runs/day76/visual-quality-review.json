@@ -1,0 +1,77 @@
+{
+  "reviewer": "local source visual, alpha, safety and semantic QA",
+  "requirements": [
+    "true-alpha transparent PNG without a rendered checkerboard, opaque canvas, room, floor, loose paper, border, sticker edge, shadow or halo",
+    "only wordless Bojji and Despa in calm 2D training-planning scenes; no extra characters, text, numbers, labels, arrows, medical symbols, logos or watermarks",
+    "all bench, sit-to-bench squat, supported balance, walking, water and light-training depictions are complete, structurally coherent and safe",
+    "each overview image is independently generated and compositionally distinct from its matching knowledge-page art",
+    "the shared image preparer removes only near-transparent edge noise, preserves opaque white clothing, and frames reviewed art with the required final six-percent margin"
+  ],
+  "technicalChecks": {
+    "checkedWith": [
+      "RGBA metadata and transparent-background inspection",
+      "individual visual semantic and equipment-safety review",
+      "shared image preparation, overview composition, final-card inspection and responsive browser QA"
+    ],
+    "result": "All nine selected processed PNGs are non-empty RGBA files with transparent pixels. The shared preparer centered approved artwork without upscaling; rendered XHS cards and responsive course screenshots were inspected separately in runs/day76/verification/."
+  },
+  "accepted": [
+    {
+      "file": "cover.png",
+      "attempt": 1,
+      "source": "runs/day76/image-requests/cover-eb86e17540/attempt-01/cover.png",
+      "review": "Despa's open planning gesture beside a stable bench and Bojji's controlled sit-to-bench preparation communicate individualized screening without medical props or age stereotypes."
+    },
+    {
+      "file": "visual-01-screening.png",
+      "attempt": 1,
+      "source": "runs/day76/image-requests/visual-01-screening-c790041ced/attempt-01/visual-01-screening.png",
+      "review": "A closed blank training card, calm pause gesture and stable bench communicate screening and stop rules with no diagnostic or emergency cue."
+    },
+    {
+      "file": "visual-02-age.png",
+      "attempt": 1,
+      "source": "runs/day76/image-requests/visual-02-age-eae5b7942c/attempt-01/visual-02-age.png",
+      "review": "Supported single-leg balance and controlled unweighted sit-to-bench positions are complete and safe, communicating ability-based progression without age labeling."
+    },
+    {
+      "file": "visual-03-pregnancy.png",
+      "attempt": 1,
+      "source": "runs/day76/image-requests/visual-03-pregnancy-a4c4a41c38/attempt-01/visual-03-pregnancy.png",
+      "review": "Natural walking, an unmarked water cup and a blank support pad express comfort-based adjustment without portraying pregnancy, medical care or symptoms."
+    },
+    {
+      "file": "visual-04-chronic.png",
+      "attempt": 1,
+      "source": "runs/day76/image-requests/visual-04-chronic-dfc6b590c9/attempt-01/visual-04-chronic.png",
+      "review": "The light sit-to-bench action, ordinary unmarked food and water reinforce preparation and controlled breathing without drugs, meters or disease stereotypes."
+    },
+    {
+      "file": "overview-01-screening.png",
+      "attempt": 1,
+      "source": "runs/day76/image-requests/overview-01-screening-703baf95c5/attempt-01/overview-01-screening.png",
+      "review": "The 4:3 overview-only discussion composition is distinct from the wide knowledge scene and keeps the blank card and bench safely framed."
+    },
+    {
+      "file": "overview-02-age.png",
+      "attempt": 1,
+      "source": "runs/day76/image-requests/overview-02-age-6881c28f2a/attempt-01/overview-02-age.png",
+      "review": "The dedicated balance-and-sit-to-bench overview is compositionally separate from the knowledge art and uses stable support without a floor or fall cue."
+    },
+    {
+      "file": "overview-03-pregnancy.png",
+      "attempt": 1,
+      "source": "runs/day76/image-requests/overview-03-pregnancy-0e2f13f6f3/attempt-01/overview-03-pregnancy.png",
+      "review": "The distinct walking-and-water overview stays wordless, non-medical and free of pregnancy stereotypes while retaining an appropriate six-percent safe margin."
+    },
+    {
+      "file": "overview-04-chronic.png",
+      "attempt": 1,
+      "source": "runs/day76/image-requests/overview-04-chronic-2298b7732e/attempt-01/overview-04-chronic.png",
+      "review": "The overview-only sit-to-bench, water and ordinary food grouping is distinct from the matching knowledge composition and contains no diagnostic device or medication cue."
+    }
+  ],
+  "rejected": [],
+  "retriesUsed": 0,
+  "result": "Nine selected source assets passed local visual, alpha, semantic and equipment-safety QA on their first requests."
+}

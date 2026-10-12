@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Day 87 · 动态动作评估-过顶深蹲与单腿</title><link rel="icon" type="image/svg+xml" href="assets/fitness-study-logo-open-circle.svg?v=a6d8e5caaa61"><style>:root { color-scheme: light; --ink: #111113; --muted: #71717a; --line: #e4e4e7; --accent: #ff5a1f; --green: #0ea66b; --blue: #2563eb; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; font-synthesis: none; letter-spacing: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); overflow-wrap: anywhere; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+img { display: block; max-width: 100%; }
+button:focus-visible, a:focus-visible, summary:focus-visible, input:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
+svg.icon { width: 20px; height: 20px; }
+.icon-button { display: inline-grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 1px solid var(--line); border-radius: 6px; background: white; }
+[hidden] { display: none !important; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
+
+body { background: #f6f8f7; font-size: 14px; line-height: 1.65; }
+main { max-width: 980px; margin: auto; padding: 24px 18px 60px; }
+.header { padding: 22px 4px 14px; }
+h1 { margin: 10px 0 8px; font-size: 36px; line-height: 1.2; }
+h1::before { content: ""; display: block; width: 34px; height: 4px; background: var(--accent); margin-bottom: 10px; }
+h2 { font-size: 17px; margin: 0 0 14px; }
+h3 { font-size: 16px; margin: 0 0 8px; }
+.sub { color: var(--muted); margin: 5px 0 18px; }
+.meta { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { display: inline-block; border: 1px solid var(--line); border-radius: 20px; background: white; color: var(--muted); padding: 3px 10px; font-size: 12px; font-weight: 600; }
+.chip:nth-child(1) { background: #e2f7eb; color: #15803d; border-color: transparent; }
+.chip:nth-child(2) { background: #e7f0fe; color: #2563eb; border-color: transparent; }
+.chip:nth-child(3) { background: #fff2e5; color: #9a4c05; border-color: transparent; }
+.panel, .figure, .warn, .mnemonic { background: white; border: 1px solid #e2e8e4; border-radius: 14px; box-shadow: 0 2px 12px rgba(20,40,30,.06); padding: 20px; margin: 16px 0; }
+.green { border-left: 5px solid var(--green); }
+.orange { border-left: 5px solid #ea7a17; }
+.blue { border-left: 5px solid #0ea5e9; }
+.takeaway { margin: 0; }
+.figure { text-align: center; }
+.figure button { display: block; position: relative; width: 100%; border: 0; padding: 0; background: white; cursor: zoom-in; }
+.figure img { max-height: 760px; width: 100%; object-fit: contain; }
+.figure .icon-button { position: absolute; bottom: 8px; right: 8px; background: #ffffffed; }
+.caption { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
+.kp { list-style: none; padding: 0; margin: 0; }
+.kp > li { border-bottom: 1px dashed #e2e8e4; }
+.kp > li:last-child { border-bottom: 0; }
+.kp summary { cursor: pointer; padding: 13px 8px; font-weight: 650; }
+.kp summary::marker { color: var(--green); }
+.term { color: #0a7d52; background: #e2f7eb; border-radius: 6px; padding: 1px 5px; }
+.kp-body { padding: 2px 14px 16px 24px; }
+.detail-block { margin: 12px 0; }
+.detail-block h4 { font-size: 13px; color: #08744d; margin: 0 0 4px; }
+.detail-block p { margin: 0; white-space: pre-line; }
+.warn { border-left: 5px solid #e23b3b; background: #fffafa; }
+.warn p { margin: 8px 0; }
+.misconception { color: #a82b32; }
+.mnemonic { border-left: 4px solid var(--accent); box-shadow: none; }
+.mnemonic strong { color: #df4716; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+.flip { height: 168px; perspective: 900px; border: 0; background: transparent; padding: 0; text-align: center; }
+.flip-in { display: block; height: 100%; position: relative; transition: transform .45s; transform-style: preserve-3d; }
+.flip[aria-pressed="true"] .flip-in { transform: rotateY(180deg); }
+.face { position: absolute; inset: 0; backface-visibility: hidden; border: 1px solid var(--line); border-radius: 10px; padding: 15px; background: #fafafa; display: flex; align-items: center; justify-content: center; overflow-y: auto; }
+.back { transform: rotateY(180deg); background: #eef9f4; color: #075e40; border-color: #c8eadb; }
+.practice { padding-left: 20px; }
+.practice li { margin: 7px 0; }
+.question { border-top: 1px solid #e2e8e4; padding: 20px 0 8px; margin-top: 12px; min-width: 0; }
+.options { display: grid; gap: 7px; margin: 10px 0; }
+.option { display: flex; gap: 10px; align-items: baseline; border: 1px solid #e2e8e4; background: #f0f4f2; padding: 9px 12px; border-radius: 8px; cursor: pointer; }
+.option input { flex-shrink: 0; accent-color: var(--green); }
+.option:has(input:checked) { border-color: #0ea5e9; background: #e7f6fd; }
+.question[data-result="correct"] .option:has(input:checked) { border-color: #0ea66b; background: #e7f8ef; }
+.question[data-result="wrong"] .option:has(input:checked) { border-color: #e23b3b; background: #fff0f0; }
+.answer { background: #f8fbfa; border-left: 3px solid #0ea5e9; padding: 10px; margin-top: 10px; }
+.check { border: 0; background: #0ea66b; color: white; padding: 9px 14px; border-radius: 7px; }
+footer { color: var(--muted); font-size: 12px; margin-top: 28px; }
+footer ul { padding-left: 20px; }
+dialog { width: min(1200px, 96vw); max-height: 94dvh; padding: 52px 16px 16px; border: 0; border-radius: 8px; background: white; }
+dialog::backdrop { background: #15191dd9; }
+dialog img { width: 100%; max-height: 78dvh; object-fit: contain; }
+dialog .icon-button { position: absolute; top: 8px; right: 10px; }
+@media (max-width: 600px) {
+  main { padding: 16px 12px 40px; }
+  h1 { font-size: 26px; }
+  .header { padding: 16px 4px 12px; }
+  .panel, .figure, .warn, .mnemonic { padding: 15px; }
+  .kp-body { padding-left: 16px; }
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .face { padding: 12px; }
+}
+</style></head><body><main><header class="header"><h1>Day 87 · 动态动作评估-过顶深蹲与单腿</h1><p class="sub">用统一观察流程记录可见代偿，并把结果变成低风险、可验证的下一步。</p><div class="meta"><span class="chip">过顶深蹲</span><span class="chip">单腿观察</span><span class="chip">动作决策</span></div></header><section class="panel green"><h2>一句话总结</h2><p class="takeaway">过顶深蹲、单腿动作和基础推拉观察可提供动作控制的线索，而不是诊断或损伤预测。固定视角、范围、次数与清单，结合训练史、疲劳、鞋具和当日状态，再选择一个低风险提示、缩小范围、降低负荷或基础控制动作来验证。</p></section><figure class="figure"><button data-zoom aria-label="放大详情图"><img class="" src="assets/阶段5 评估与训练整合/day87-动态动作评估-过顶深蹲与单腿.png" alt="动态动作评估-过顶深蹲与单腿中文总览图"><span class="icon-button"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 15 6 6" /><path d="m15 9 6-6" /><path d="M21 16v5h-5" /><path d="M21 8V3h-5" /><path d="M3 16v5h5" /><path d="m3 21 6-6" /><path d="M3 8V3h5" /><path d="M9 9 3 3" /></svg></span></button><figcaption class="caption">动态观察记录看得见的动作表现；疼痛、麻木、眩晕、失衡或明显失控时停止并转介。</figcaption></figure><section class="panel"><h2>核心要点</h2><ul class="kp"><li><details><summary><span class="term">动作观察的用途与边界</span>：过顶深蹲、单腿和基础推拉动作能帮助观察控制、范围与任务耐受的线索，但不能用来诊断肌肉骨骼问题、预测某个人一定受伤或直接开治疗方案。</summary><div class="kp-body"><section class="detail-block"><h4>观察回答训练问题</h4><p>例如训练者能否在无痛、可控范围内完成基础深蹲，或单腿任务中是否需要更简单的支撑版本。问题应围绕训练目标，而非寻找一块“必须修复”的肌肉。</p></section><section class="detail-block"><h4>边界先写清</h4><p>开始前说明观察目的、记录范围及是否使用照片或视频，取得明确同意并完成必要筛查。疼痛、麻木、眩晕、近期伤病、明显失衡或无法安全完成动作时，停止一般观察并建议合适评估。教练只记录现象和当日条件，不自行解释病理，并按同意范围保存必要信息。</p></section></div></details></li><li><details><summary><span class="term">固定视角、范围与次数</span>：视角、动作范围、速度、次数和观察清单变化都会影响所见现象。先把流程定下来，才有可能比较同一个人不同时间的表现。</summary><div class="kp-body"><section class="detail-block"><h4>一次看有限项目</h4><p>若使用照片或视频，先取得明确同意；固定视角、动作范围、次数和观察清单。过顶深蹲可观察足、膝、髋、躯干和肩带的可见协同；单腿动作可增加支撑与平衡要求。避免同时塞入太多动作和提示，让训练者无从理解。</p></section><section class="detail-block"><h4>定义可接受版本</h4><p>若完整范围不合适，可先设无痛、可控制的较小范围或支撑版本。记录版本本身，避免把不同深度或不同辅助下的表现误当为同一数据。</p></section></div></details></li><li><details><summary><span class="term">把当日背景放进记录</span>：训练史、疲劳、睡眠、鞋具、场地、当天情绪和熟悉程度都会影响表现。一次观察需要放回背景中，不能把某个代偿简单归因为固定的紧或弱。</summary><div class="kp-body"><section class="detail-block"><h4>先问再看</h4><p>在开始前询问近期训练量、疼痛、不适、睡眠和是否熟悉该动作。信息既帮助选择更安全版本，也避免把疲劳状态下的表现误作长期能力结论。</p></section><section class="detail-block"><h4>只记录可见代偿</h4><p>可以记录“下蹲时膝部向内移动”“躯干前倾增加”或“脚跟离地”，但不直接写“某肌肉无力”。后者需要更多评估，且可能超出一般教练范围。记录只保留必要信息，并按同意范围保存。</p></section></div></details></li><li><details><summary><span class="term">低风险下一步一次一项</span>：观察后可选择一个低风险改变，例如简短提示、缩小范围、降低负荷、增加支撑或练基础控制，再观察反应。一次改一项有助于知道什么真正有效。</summary><div class="kp-body"><section class="detail-block"><h4>从最简单改变开始</h4><p>如果无痛但动作在疲劳下失稳，可先减速、缩小范围或增加支撑，不必立刻添加复杂器械。提示应简短、可执行，并让训练者知道随时可以拒绝或停止。</p></section><section class="detail-block"><h4>把反应当反馈</h4><p>改变后记录动作质量、RPE、疼痛与主观感受。若没有改善或反应变差，停止堆新提示，回到更基础版本或寻求适当支持。</p></section></div></details></li><li><details><summary><span class="term">停止与转介信号</span>：疼痛、麻木、眩晕、明显失衡、动作失控或近期急性伤病，是停止一般动作评估并转介的信号。安全不应被“完成测试”或“找出问题”的目标覆盖。</summary><div class="kp-body"><section class="detail-block"><h4>不把信号当挑战</h4><p>面对不适，不要求训练者再试一次来证明意志力。帮助其安全结束当前任务、记录发生条件，并按照场地规则或专业路径处理。</p></section><section class="detail-block"><h4>转介不是放弃</h4><p>转介意味着承认一般训练观察的边界。待合适专业人员评估、允许并明确限制后，再在安全范围内继续训练，而不是远程猜测或治疗。</p></section></div></details></li></ul></section><section class="warn"><h2>常见误区</h2><p><strong class="misconception">误区：过顶深蹲观察可以诊断哪块肌肉紧或弱。</strong><br>辨析：观察只能记录可见现象和训练线索，不能替代诊断。</p><p><strong class="misconception">误区：一次动作表现就代表训练者长期能力。</strong><br>辨析：疲劳、睡眠、鞋具、熟悉度和任务版本都会影响当日表现。</p><p><strong class="misconception">误区：发现代偿后应一次加入很多纠正动作。</strong><br>辨析：先选择一个低风险改变，观察反应后再决定下一步。</p><p><strong class="misconception">误区：完整范围永远比可控范围更重要。</strong><br>辨析：无痛、可控的较小范围或支撑版本通常更适合作为起点。</p><p><strong class="misconception">误区：疼痛或眩晕时应多试几次确认。</strong><br>辨析：异常信号出现时停止一般观察并走适当转介路径。</p></section><section class="mnemonic"><h2>记忆口诀</h2><p><strong>先固定流程，再记现象；一次改一项，疼痛失控就停止。</strong></p></section><section class="panel"><h2>翻转卡复习</h2><div class="cards"><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">动作观察的用途与边界？</span><span class="face back" aria-hidden="true">动态动作观察提供训练线索，不诊断、不治疗、不预测伤病。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">固定视角、范围与次数？</span><span class="face back" aria-hidden="true">固定视角、范围、次数和可接受版本，观察才可复测。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">把当日背景放进记录？</span><span class="face back" aria-hidden="true">训练史、疲劳、鞋具和熟悉度会影响动作表现。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">低风险下一步一次一项？</span><span class="face back" aria-hidden="true">观察后一次只改一个低风险变量，再看动作与反应。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">停止与转介信号？</span><span class="face back" aria-hidden="true">疼痛、麻木、眩晕、失衡或明显失控时停止并转介。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">本课安排的首要原则？</span><span class="face back" aria-hidden="true">先固定流程，再记现象；一次改一项，疼痛失控就停止。</span></span></button></div></section><section class="panel orange"><h2>实操关联</h2><ul class="practice"><li>为过顶深蹲或单腿观察写一张流程卡：同意与记录范围、视角、范围、次数、可接受版本、观察项目和停止条件。</li><li>在取得同意后，列出观察前需要询问的四项背景：近期训练、睡眠/疲劳、不适、鞋具或动作熟悉度。</li><li>把一个可见现象写成不含诊断的描述，并设计一个一次只改一项的低风险验证。</li><li>写一份停止与转介记录模板，包含症状、发生条件、已停止的任务和下一步边界。</li></ul></section><section class="panel blue"><h2>练习题</h2><section class="question" data-answers="[1]" data-explanation="动态观察应服务于训练决策，不能取代医疗诊断或伤病预测。"><h3>1. 单选：动态动作评估最适合提供什么？</h3><div class="options"><label class="option"><input type="radio" name="question-0" value="0"><span>A. 疾病诊断</span></label><label class="option"><input type="radio" name="question-0" value="1"><span>B. 训练相关的可见动作线索</span></label><label class="option"><input type="radio" name="question-0" value="2"><span>C. 保证不受伤</span></label><label class="option"><input type="radio" name="question-0" value="3"><span>D. 固定肌肉处方</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[1]" data-explanation="先选择最小、低风险的任务改变，再看质量和感受。"><h3>2. 单选：观察到无痛但范围过大导致失控时，合适的首步是？</h3><div class="options"><label class="option"><input type="radio" name="question-1" value="0"><span>A. 加更多重量</span></label><label class="option"><input type="radio" name="question-1" value="1"><span>B. 缩小范围或增加支撑，观察反应</span></label><label class="option"><input type="radio" name="question-1" value="2"><span>C. 忽略失控</span></label><label class="option"><input type="radio" name="question-1" value="3"><span>D. 直接做治疗</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[0,1,2,3]" data-explanation="这些条件都应纳入记录，而非把单次表现简单归因。"><h3>3. 多选：哪些背景可能影响当日动作表现？</h3><div class="options"><label class="option"><input type="checkbox" name="question-2" value="0"><span>A. 近期训练疲劳</span></label><label class="option"><input type="checkbox" name="question-2" value="1"><span>B. 睡眠</span></label><label class="option"><input type="checkbox" name="question-2" value="2"><span>C. 鞋具与场地</span></label><label class="option"><input type="checkbox" name="question-2" value="3"><span>D. 动作熟悉度</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[1]" data-explanation="眩晕和明显失衡是停止一般观察的信号。"><h3>4. 案例：单腿任务中小琪突然眩晕且站不稳，最合适的是？</h3><div class="options"><label class="option"><input type="radio" name="question-3" value="0"><span>A. 继续完成次数</span></label><label class="option"><input type="radio" name="question-3" value="1"><span>B. 停止任务、确保安全并按需要转介</span></label><label class="option"><input type="radio" name="question-3" value="2"><span>C. 换更不稳定器械</span></label><label class="option"><input type="radio" name="question-3" value="3"><span>D. 用意志力克服</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section></section><footer>Day 87/110<ul><li>NASM 运动评估与OPT框架：动作观察、训练进阶与专业边界。</li><li>ACSM运动测试与处方指南：筛查、停止条件与症状处理原则。</li><li>本课为一般教育；照片或视频须先获明确同意，仅按同意范围保存；疼痛、麻木、眩晕、急性伤病和明显失衡需停止一般训练观察并寻求适当专业支持。</li></ul></footer></main><dialog aria-label="详情大图"><button class="icon-button" aria-label="关闭大图" title="关闭大图"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></button><img alt=""></dialog><script>document.querySelectorAll('.flip').forEach((button) => {
+  button.addEventListener('click', () => {
+    const pressed = button.getAttribute('aria-pressed') !== 'true';
+    button.setAttribute('aria-pressed', String(pressed));
+    button.querySelector('.front').setAttribute('aria-hidden', String(pressed));
+    button.querySelector('.back').setAttribute('aria-hidden', String(!pressed));
+  });
+});
+document.querySelectorAll('.question').forEach((question) => {
+  question.querySelector('.check').addEventListener('click', () => {
+    const selected = [...question.querySelectorAll('input:checked')].map((input) => Number(input.value)).sort();
+    const answer = question.querySelector('.answer');
+    answer.hidden = false;
+    if (!selected.length) { answer.textContent = '请先选择答案。'; delete question.dataset.result; return; }
+    const correct = JSON.stringify(selected) === JSON.stringify(JSON.parse(question.dataset.answers).sort());
+    question.dataset.result = correct ? 'correct' : 'wrong';
+    answer.textContent = `${correct ? '回答正确。' : '再想一想。'}${question.dataset.explanation}`;
+  });
+});
+const imageDialog = document.querySelector('dialog');
+document.querySelectorAll('[data-zoom]').forEach((button) => {
+  button.addEventListener('click', () => {
+    const original = button.querySelector('img');
+    const image = imageDialog.querySelector('img');
+    image.src = original.src;
+    image.alt = original.alt;
+    imageDialog.showModal();
+  });
+});
+imageDialog.querySelector('button').addEventListener('click', () => imageDialog.close());
+imageDialog.addEventListener('click', (event) => {
+  const rect = imageDialog.getBoundingClientRect();
+  if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) imageDialog.close();
+});
+</script></body></html>

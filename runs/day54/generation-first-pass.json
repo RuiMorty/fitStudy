@@ -1,0 +1,99 @@
+{
+  "provider": "Lingzhi",
+  "preset": "quality",
+  "model": "gpt-image-2.5-sunburst",
+  "authorization": "用户于2026-09-30授权每图最多首次加5次重试；本记录仅为Day54首轮。",
+  "updatedAt": "2026-09-30T06:15:41.450014Z",
+  "assets": [
+    {
+      "file": "cover.png",
+      "role": "cover",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day54/source/cover.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 920304,
+      "sha256": "a9d796311695816e82543b0b611bc55eb34e483e0abe3a1a0ac1f3a2b893f550"
+    },
+    {
+      "file": "visual-01-volume.png",
+      "role": "knowledge",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day54/source/visual-01-volume.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 796654,
+      "sha256": "d15d9cbf32ed0dc535fba5f5e2196d37f9539450291557975f4df16ccd685c6a"
+    },
+    {
+      "file": "visual-02-variables.png",
+      "role": "knowledge",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day54/source/visual-02-variables.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 1130272,
+      "sha256": "98993c03276cae0c88b54c66a07a96353b41518b330baee8ecf9412798874eec"
+    },
+    {
+      "file": "visual-03-failure.png",
+      "role": "knowledge",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day54/source/visual-03-failure.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 1144740,
+      "sha256": "2848573f8a9dd1e39642285b0d08499253f522974a1f6df85df503ad56c57965"
+    },
+    {
+      "file": "visual-04-recovery.png",
+      "role": "knowledge",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day54/source/visual-04-recovery.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 1008713,
+      "sha256": "76e86a58e67c7ec0dc8f619ceedea432daaaddbf17bc91279c962550181fac64"
+    },
+    {
+      "file": "overview-01-volume.png",
+      "role": "overview-item",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day54/source/overview-01-volume.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 923610,
+      "sha256": "af88b8809e8dde3b0cea1cb006f8d91c24455f6c7f27c7cade01d17a490a5d5e"
+    },
+    {
+      "file": "overview-02-variables.png",
+      "role": "overview-item",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day54/source/overview-02-variables.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 784446,
+      "sha256": "5b8bada91bb39075a00c7730613236a8fc455e833be73c15fb63866bdd304956"
+    },
+    {
+      "file": "overview-03-failure.png",
+      "role": "overview-item",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day54/source/overview-03-failure.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 988087,
+      "sha256": "f0c48104c7074b21d17ade94fc7637d0b111ae9121d3b8becbbfa9c94c98d559"
+    },
+    {
+      "file": "overview-04-recovery.png",
+      "role": "overview-item",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day54/source/overview-04-recovery.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 1035963,
+      "sha256": "089d7d1352c9d28701758c24f4a8d66d840b511ab180bde1152b6a31d08d7ff0"
+    }
+  ]
+}

@@ -88,7 +88,8 @@ test('day changes only labels, never the layout, script or pagination', (t) => {
 });
 test('preserve legacy website sections and use only the new brand image', (t) => {
   const output = temporary(t);
-  const manifest = buildPackage(withExistingImages(), output);
+  const lesson = withExistingImages();
+  const manifest = buildPackage(lesson, output);
   const html = fs.readFileSync(path.join(output, 'lesson.html'), 'utf8');
   assert.doesNotMatch(html, /cover-image/);
   assert.equal((html.match(/<figure\b/g) || []).length, 1);
@@ -97,7 +98,13 @@ test('preserve legacy website sections and use only the new brand image', (t) =>
   for (const file of ['lesson.html', 'xhs/index.html']) {
     const content = fs.readFileSync(path.join(output, file), 'utf8');
     assert.doesNotMatch(content, /FitnessStudy|Fitness<span>/i);
-    assert.doesNotMatch(content, /class="brand"[^]*?<b>/);
+    if (file === 'xhs/index.html') {
+      assert.match(content, /class="brand"><img [^>]+><\/div>/);
+      assert.doesNotMatch(content, /class="brand"><img[^>]*><span/);
+    } else {
+      assert.doesNotMatch(content, /class="brand"/);
+      assert.match(content, new RegExp(`<footer>Day ${lesson.day}/110<ul>`));
+    }
     assert.doesNotMatch(content, /(?:src|href)="https?:/);
   }
 });

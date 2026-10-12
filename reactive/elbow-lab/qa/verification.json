@@ -1,0 +1,368 @@
+{
+  "date": "2026-10-10T03:08:46.706Z",
+  "environment": "Chrome headless on macOS; desktop + emulated mobile touch viewport, not physical phone",
+  "checks": [
+    {
+      "name": "17 named GLB structures loaded",
+      "pass": true
+    },
+    {
+      "name": "Page has no horizontal overflow (desktop)",
+      "pass": true
+    },
+    {
+      "name": "Brachialis is exposed and ray-selectable after shallow layer is hidden",
+      "pass": true,
+      "detail": {
+        "x": 686,
+        "y": 437
+      }
+    },
+    {
+      "name": "Canvas click selects brachialis",
+      "pass": true
+    },
+    {
+      "name": "Superficial biceps and fascia do not intercept deep clicks",
+      "pass": true
+    },
+    {
+      "name": "Explosion moves individual structures 100",
+      "pass": true
+    },
+    {
+      "name": "Explosion moves individual structures 40",
+      "pass": true
+    },
+    {
+      "name": "Explosion moves individual structures 80",
+      "pass": true
+    },
+    {
+      "name": "Expanded structures restore exactly to original local transforms",
+      "pass": true
+    },
+    {
+      "name": "Forearm hinge angle 0",
+      "pass": true,
+      "detail": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "Forearm hinge angle 60",
+      "pass": true,
+      "detail": [
+        0.49999997740525165,
+        0,
+        0,
+        0.8660253840795819
+      ]
+    },
+    {
+      "name": "Forearm hinge angle 120",
+      "pass": true,
+      "detail": [
+        0.8660253751509144,
+        0,
+        0,
+        0.500000022672532
+      ]
+    },
+    {
+      "name": "Forearm hinge angle 30",
+      "pass": true,
+      "detail": [
+        0.2588191112796958,
+        0,
+        0,
+        0.9659258105672771
+      ]
+    },
+    {
+      "name": "Forearm hinge angle 0",
+      "pass": true,
+      "detail": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "Forearm hinge angle 119.7",
+      "pass": true,
+      "detail": [
+        0.8647134375549942,
+        0,
+        0,
+        0.5022655307694233
+      ]
+    },
+    {
+      "name": "Forearm hinge angle 2.3",
+      "pass": true,
+      "detail": [
+        0.02006993677147626,
+        0,
+        0,
+        0.999798586574729
+      ]
+    },
+    {
+      "name": "Muscle geometry changes with flexion",
+      "pass": true
+    },
+    {
+      "name": "Animation resets exact geometry at 0 degrees",
+      "pass": true
+    },
+    {
+      "name": "Distal tendon attachment error below 0.1 mm over sampled arc",
+      "pass": true,
+      "detail": {
+        "maxMetres": 0.00004398569581678492,
+        "samples": 147
+      }
+    },
+    {
+      "name": "Mesh hit area exists: bone_scapula_R",
+      "pass": true
+    },
+    {
+      "name": "Mesh pick identity: bone_scapula_R",
+      "pass": true
+    },
+    {
+      "name": "Mesh hit area exists: bone_humerus_R",
+      "pass": true
+    },
+    {
+      "name": "Mesh pick identity: bone_humerus_R",
+      "pass": true
+    },
+    {
+      "name": "Mesh hit area exists: bone_ulna_R",
+      "pass": true
+    },
+    {
+      "name": "Mesh pick identity: bone_ulna_R",
+      "pass": true
+    },
+    {
+      "name": "Mesh hit area exists: bone_radius_R",
+      "pass": true
+    },
+    {
+      "name": "Mesh pick identity: bone_radius_R",
+      "pass": true
+    },
+    {
+      "name": "Mesh hit area exists: muscle_biceps_long_R",
+      "pass": true
+    },
+    {
+      "name": "Mesh pick identity: muscle_biceps_long_R",
+      "pass": true
+    },
+    {
+      "name": "Mesh hit area exists: muscle_biceps_short_R",
+      "pass": true
+    },
+    {
+      "name": "Mesh pick identity: muscle_biceps_short_R",
+      "pass": true
+    },
+    {
+      "name": "Mesh hit area exists: muscle_brachialis_R",
+      "pass": true
+    },
+    {
+      "name": "Mesh pick identity: muscle_brachialis_R",
+      "pass": true
+    },
+    {
+      "name": "Mesh hit area exists: muscle_triceps_long_R",
+      "pass": true
+    },
+    {
+      "name": "Mesh pick identity: muscle_triceps_long_R",
+      "pass": true
+    },
+    {
+      "name": "Mesh hit area exists: muscle_triceps_lateral_R",
+      "pass": true
+    },
+    {
+      "name": "Mesh pick identity: muscle_triceps_lateral_R",
+      "pass": true
+    },
+    {
+      "name": "Mesh hit area exists: muscle_triceps_medial_R",
+      "pass": true
+    },
+    {
+      "name": "Mesh pick identity: muscle_triceps_medial_R",
+      "pass": true
+    },
+    {
+      "name": "Mesh hit area exists: tendon_biceps_long_prox_R",
+      "pass": true
+    },
+    {
+      "name": "Mesh pick identity: tendon_biceps_long_prox_R",
+      "pass": true
+    },
+    {
+      "name": "Mesh hit area exists: tendon_biceps_short_prox_R",
+      "pass": true
+    },
+    {
+      "name": "Mesh pick identity: tendon_biceps_short_prox_R",
+      "pass": true
+    },
+    {
+      "name": "Mesh hit area exists: tendon_biceps_distal_R",
+      "pass": true
+    },
+    {
+      "name": "Mesh pick identity: tendon_biceps_distal_R",
+      "pass": true
+    },
+    {
+      "name": "Mesh hit area exists: tendon_brachialis_distal_R",
+      "pass": true
+    },
+    {
+      "name": "Mesh pick identity: tendon_brachialis_distal_R",
+      "pass": true
+    },
+    {
+      "name": "Mesh hit area exists: tendon_triceps_long_prox_R",
+      "pass": true
+    },
+    {
+      "name": "Mesh pick identity: tendon_triceps_long_prox_R",
+      "pass": true
+    },
+    {
+      "name": "Mesh hit area exists: tendon_triceps_distal_R",
+      "pass": true
+    },
+    {
+      "name": "Mesh pick identity: tendon_triceps_distal_R",
+      "pass": true
+    },
+    {
+      "name": "Mesh hit area exists: fascia_brachial_R",
+      "pass": true
+    },
+    {
+      "name": "Mesh pick identity: fascia_brachial_R",
+      "pass": true
+    },
+    {
+      "name": "Fascia independently visible",
+      "pass": true
+    },
+    {
+      "name": "Fascia independently hidden",
+      "pass": true
+    },
+    {
+      "name": "Playback reverses after 120 and continues deforming",
+      "pass": true
+    },
+    {
+      "name": "Extending labels flexor passive lengthening",
+      "pass": true
+    },
+    {
+      "name": "Pause freezes pose",
+      "pass": true
+    },
+    {
+      "name": "Angle slider sets 0 degrees",
+      "pass": true
+    },
+    {
+      "name": "Angle slider sets 60 degrees",
+      "pass": true
+    },
+    {
+      "name": "Angle slider sets 120 degrees",
+      "pass": true
+    },
+    {
+      "name": "Pointer drag rotates view",
+      "pass": true
+    },
+    {
+      "name": "Wheel zoom changes orbit distance",
+      "pass": true
+    },
+    {
+      "name": "Mobile has no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "Mobile brachialis has true mesh tap area",
+      "pass": true,
+      "detail": {
+        "x": 186,
+        "y": 373
+      }
+    },
+    {
+      "name": "Mobile touch selects brachialis",
+      "pass": true
+    },
+    {
+      "name": "Mobile single-finger drag rotates model",
+      "pass": true
+    },
+    {
+      "name": "Mobile two-finger pinch zooms model",
+      "pass": true
+    },
+    {
+      "name": "Mobile fit restores all transformations",
+      "pass": true
+    },
+    {
+      "name": "Mobile playback updates angle",
+      "pass": true
+    },
+    {
+      "name": "No browser runtime or asset-load errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "desktop-overview.png",
+    "desktop-brachialis.png",
+    "desktop-exploded.png",
+    "motion-0.png",
+    "motion-60.png",
+    "motion-120.png",
+    "mobile-brachialis.png",
+    "mobile-exploded.png",
+    "mobile-overview.png"
+  ],
+  "desktopPerformance": {
+    "fps": 31.25945346374912,
+    "drawCalls": 18,
+    "triangles": 72116
+  },
+  "mobilePerformance": {
+    "fps": 34.99650034996499,
+    "drawCalls": 18,
+    "triangles": 72116
+  },
+  "status": "passed"
+}

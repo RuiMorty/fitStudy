@@ -1,0 +1,79 @@
+{
+  "status": "candidate-pending-anatomist",
+  "displayOffsetMetres": 0.00012,
+  "note": "These overlays are representative bone contact regions, not verified complete anatomical footprints.",
+  "regions": {
+    "muscle_biceps_long_R": {
+      "name": "盂上结节邻近骨面 / 关节盂上缘候选区",
+      "faces": 110,
+      "bone": "bone_scapula_R",
+      "tissue": "tendon_biceps_long_prox_R",
+      "anchor": [
+        -0.012639143504202366,
+        -0.0055909366346895695,
+        0.2927248179912567
+      ],
+      "status": "candidate-pending-anatomist"
+    },
+    "muscle_biceps_short_R": {
+      "name": "喙突尖邻近附着候选区",
+      "faces": 285,
+      "bone": "bone_scapula_R",
+      "tissue": "tendon_biceps_short_prox_R",
+      "anchor": [
+        -0.016495827585458755,
+        0.024661848321557045,
+        0.29250189661979675
+      ],
+      "status": "candidate-pending-anatomist"
+    },
+    "muscle_triceps_long_R": {
+      "name": "盂下结节邻近附着候选区",
+      "faces": 217,
+      "bone": "bone_scapula_R",
+      "tissue": "tendon_triceps_long_prox_R",
+      "anchor": [
+        -0.01740790717303753,
+        -0.009857738390564919,
+        0.254970520734787
+      ],
+      "status": "candidate-pending-anatomist"
+    },
+    "muscle_brachialis_R": {
+      "name": "肱骨远侧前面 · 宽起点代表区",
+      "faces": 4527,
+      "bone": "bone_humerus_R",
+      "tissue": "muscle_brachialis_R",
+      "anchor": [
+        0.019680220633745193,
+        0.010017627850174904,
+        0.1498454213142395
+      ],
+      "status": "candidate-pending-anatomist"
+    },
+    "muscle_triceps_lateral_R": {
+      "name": "肱骨后面近侧 · 桡神经沟上方候选区",
+      "faces": 837,
+      "bone": "bone_humerus_R",
+      "tissue": "muscle_triceps_lateral_R",
+      "anchor": [
+        0.016700422391295433,
+        -0.0051890951581299305,
+        0.23103877902030945
+      ],
+      "status": "candidate-pending-anatomist"
+    },
+    "muscle_triceps_medial_R": {
+      "name": "肱骨后面远侧 · 桡神经沟下方候选区",
+      "faces": 2334,
+      "bone": "bone_humerus_R",
+      "tissue": "muscle_triceps_medial_R",
+      "anchor": [
+        0.007510848343372345,
+        -0.015154692344367504,
+        0.10013711452484131
+      ],
+      "status": "candidate-pending-anatomist"
+    }
+  }
+}

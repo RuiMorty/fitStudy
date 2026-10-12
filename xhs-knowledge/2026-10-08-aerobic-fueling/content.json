@@ -1,0 +1,83 @@
+{
+  "topic": "长时间有氧运动的供能阶段",
+  "revision": 6,
+  "date": "2026-10-09",
+  "format": "6张3:4小红书知识图；全部为Lingzhi提示词直接生图，无人物、无后期合成",
+  "assumption": "从静止平稳进入中等强度；正常进食，运动中不补糖。时间是变化趋势，不是固定切换点。",
+  "slides": [
+    {
+      "id": "01-cover",
+      "title": "跑步30分钟才燃脂？",
+      "meaning": "脂肪从起步就参与；不存在30分钟开关。",
+      "file": "images/01-cover.png"
+    },
+    {
+      "id": "02-timeline",
+      "title": "跑步时，身体怎么供能？",
+      "meaning": "五个时间段与三条相对趋势同屏示意；PCr是快速ATP缓冲，糖和脂肪是燃料底物。曲线没有实测数值，不能逐点读作固定供能比例或相加为100%。",
+      "file": "images/02-timeline.png"
+    },
+    {
+      "id": "03-muscle-glycogen",
+      "title": "肌糖原＝肌肉自己的糖",
+      "meaning": "工作肌从起步就能用自己的肌糖原，强度升高时通常更依赖糖。",
+      "file": "images/03-muscle-glycogen.png"
+    },
+    {
+      "id": "04-liver-glycogen",
+      "title": "肝糖原＝肝脏的血糖储备",
+      "meaning": "肝脏释放葡萄糖进入血液，支持血糖；持续运动且不补糖时储量逐渐减少。",
+      "file": "images/04-liver-glycogen.png"
+    },
+    {
+      "id": "05-fat-oxidation",
+      "title": "脂肪从起步就参与",
+      "meaning": "脂肪酸经血液到工作肌氧化；持续中低强度运动时相对贡献通常增加。",
+      "file": "images/05-fat-oxidation.png"
+    },
+    {
+      "id": "06-gluconeogenesis",
+      "title": "糖异生＝肝脏重新造糖",
+      "meaning": "糖异生是利用乳酸、甘油等非糖原料重新制造葡萄糖，主要帮助维持血糖；运动早期可参与，跑得久且不补糖时通常更重要。脂肪酸不能直接变成葡萄糖。",
+      "file": "images/06-gluconeogenesis.png"
+    }
+  ],
+  "sources": [
+    {
+      "label": "Rossiter 等，2002；中等强度运动中 PCr 起始下降动力学",
+      "url": "https://europepmc.org/article/MED/12068057",
+      "doi": "10.1113/jphysiol.2001.012910"
+    },
+    {
+      "label": "Gaitanos 等，1993；首次 6 秒全力冲刺中 PCr 与糖酵解贡献",
+      "url": "https://europepmc.org/article/MED/8226473",
+      "doi": "10.1152/jappl.1993.75.2.712"
+    },
+    {
+      "label": "Romijn 等，1993；65% 最大摄氧量持续 2 小时的底物变化",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8214047/",
+      "doi": "10.1152/ajpendo.1993.265.3.E380"
+    },
+    {
+      "label": "Murray 与 Rosenbloom，2018；肌糖原和肝糖原储量",
+      "url": "https://europepmc.org/articles/PMC6019055",
+      "doi": "10.1093/nutrit/nuy001"
+    },
+    {
+      "label": "Baker 等，2010；ATP 与 PCr 的储量和作用",
+      "url": "https://europepmc.org/articles/PMC3005844",
+      "doi": "10.1155/2010/905612"
+    },
+    {
+      "label": "Weir，1949；能量消耗计算",
+      "url": "https://doi.org/10.1113/jphysiol.1949.sp004363",
+      "doi": "10.1113/jphysiol.1949.sp004363"
+    },
+    {
+      "label": "Frayn，1983；糖和脂肪氧化计算",
+      "url": "https://doi.org/10.1152/jappl.1983.55.2.628",
+      "doi": "10.1152/jappl.1983.55.2.628"
+    }
+  ],
+  "artwork_prompt_file": "generation/lingzhi-revision-05/prompts.json + generation/lingzhi-revision-06/prompts.json"
+}

@@ -1,0 +1,357 @@
+{
+  "processedAt": "2026-09-30T16:12:20.920918+00:00",
+  "method": "trim near-transparent noise; reviewed crop; uniform scale; transparent margin",
+  "assets": [
+    {
+      "source": "runs/day69/source/cover.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "sourceSha256": "8081b6167494aeac1b55d22c6d2b32712d145a920c01eb7030699cbd2341caae",
+      "reviewedCrop": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "visibleCrop": [
+        159,
+        17,
+        1590,
+        905
+      ],
+      "output": "runs/day69/assets/cover.png",
+      "size": [
+        1600,
+        900
+      ],
+      "subjectSize": [
+        1276,
+        792
+      ],
+      "offset": [
+        162,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "无字封面"
+    },
+    {
+      "source": "runs/day69/source/visual-01-energy.png",
+      "sourceSize": [
+        2212,
+        711
+      ],
+      "sourceSha256": "a085ae2ea8f70f80a42ac6437917060c1049d90edee15ffddb580d0bf9a9587e",
+      "reviewedCrop": [
+        0,
+        0,
+        2212,
+        711
+      ],
+      "visibleCrop": [
+        705,
+        11,
+        1529,
+        701
+      ],
+      "output": "runs/day69/assets/visual-01-energy.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        824,
+        690
+      ],
+      "offset": [
+        988,
+        105
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "小红书独立知识页，无字"
+    },
+    {
+      "source": "runs/day69/source/visual-02-protein.png",
+      "sourceSize": [
+        2210,
+        712
+      ],
+      "sourceSha256": "d83b3167e85307e7df1e148bd8ce883e6b6e3f891b6df3cb4e4d6a40c6fd444b",
+      "reviewedCrop": [
+        0,
+        0,
+        2210,
+        712
+      ],
+      "visibleCrop": [
+        627,
+        32,
+        1623,
+        670
+      ],
+      "output": "runs/day69/assets/visual-02-protein.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        996,
+        638
+      ],
+      "offset": [
+        902,
+        131
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "小红书独立知识页，无字"
+    },
+    {
+      "source": "runs/day69/source/visual-03-retention.png",
+      "sourceSize": [
+        2213,
+        711
+      ],
+      "sourceSha256": "6397cd8ffc9cb63231c7a702160f4c6cdd7a3391150f400f68e94327c09520f2",
+      "reviewedCrop": [
+        0,
+        0,
+        2213,
+        711
+      ],
+      "visibleCrop": [
+        396,
+        7,
+        1826,
+        690
+      ],
+      "output": "runs/day69/assets/visual-03-retention.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1430,
+        683
+      ],
+      "offset": [
+        685,
+        108
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "小红书独立知识页，无字"
+    },
+    {
+      "source": "runs/day69/source/visual-04-fit.png",
+      "sourceSize": [
+        2210,
+        711
+      ],
+      "sourceSha256": "a85c976492bb2945f0f08783c0774a35afd17b7605587e057e67fa1c1095e953",
+      "reviewedCrop": [
+        0,
+        0,
+        2210,
+        711
+      ],
+      "visibleCrop": [
+        611,
+        0,
+        1615,
+        711
+      ],
+      "output": "runs/day69/assets/visual-04-fit.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1004,
+        711
+      ],
+      "offset": [
+        898,
+        94
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "小红书独立知识页，无字"
+    },
+    {
+      "source": "runs/day69/source/overview-01-energy.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "cf3b9f7994523f50380fdcaa11d5db34536a1e0df11f634bce6cb5fc4aefcf3a",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        123,
+        36,
+        1357,
+        929
+      ],
+      "output": "runs/day69/assets/overview-01-energy.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1234,
+        893
+      ],
+      "offset": [
+        183,
+        153
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day69/source/overview-02-protein.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "8105c13178193489ce3ab6f0df48f1003dec1e7c43c66e85a9ea0ffea979b3e6",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        28,
+        27,
+        1420,
+        1059
+      ],
+      "output": "runs/day69/assets/overview-02-protein.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1392,
+        1032
+      ],
+      "offset": [
+        104,
+        84
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day69/source/overview-03-retention.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "65d6648f92e3b5f1ce6c1f00f53837a91a41ba9552221a3a6516047325d0503b",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        46,
+        161,
+        1411,
+        942
+      ],
+      "output": "runs/day69/assets/overview-03-retention.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1365,
+        781
+      ],
+      "offset": [
+        117,
+        209
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day69/source/overview-04-fit.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "00a37442a92f458c954fabd129a24f2ed7deeed2afeb8c40118225da821a7830",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        161,
+        16,
+        1405,
+        1060
+      ],
+      "output": "runs/day69/assets/overview-04-fit.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1244,
+        1044
+      ],
+      "offset": [
+        178,
+        78
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    }
+  ]
+}

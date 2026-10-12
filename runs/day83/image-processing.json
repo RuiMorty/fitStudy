@@ -1,0 +1,435 @@
+{
+  "processedAt": "2026-10-02T10:29:14.454767+00:00",
+  "method": "trim near-transparent noise; reviewed crop; uniform scale; transparent margin",
+  "assets": [
+    {
+      "source": "runs/day83/source/cover.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "sourceSha256": "0851a2e7c233b53ba267d26a8b33e062bcd45de00c30becd0debbbd38a02cb25",
+      "reviewedCrop": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "visibleCrop": [
+        96,
+        22,
+        1601,
+        876
+      ],
+      "output": "runs/day83/assets/cover.png",
+      "size": [
+        1600,
+        900
+      ],
+      "subjectSize": [
+        1396,
+        792
+      ],
+      "offset": [
+        102,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "无字封面"
+    },
+    {
+      "source": "runs/day83/source/visual-01.png",
+      "sourceSize": [
+        1870,
+        841
+      ],
+      "sourceSha256": "c2393ff4a1dc8e0f2b2862c410475c8a7bc609bd896a9d121f0c2e741443e936",
+      "reviewedCrop": [
+        0,
+        0,
+        1870,
+        841
+      ],
+      "visibleCrop": [
+        357,
+        16,
+        1483,
+        819
+      ],
+      "output": "runs/day83/assets/visual-01.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1111,
+        792
+      ],
+      "offset": [
+        844,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "先决定是否需要测试知识页配图"
+    },
+    {
+      "source": "runs/day83/source/visual-02.png",
+      "sourceSize": [
+        1881,
+        836
+      ],
+      "sourceSha256": "1425bd1e9515d92976bd36015238a043e9c24f1e62b5843fcfbe5bdd0b06c264",
+      "reviewedCrop": [
+        0,
+        0,
+        1881,
+        836
+      ],
+      "visibleCrop": [
+        197,
+        15,
+        1796,
+        797
+      ],
+      "output": "runs/day83/assets/visual-02.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1599,
+        782
+      ],
+      "offset": [
+        600,
+        59
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "不同测试回答不同问题知识页配图"
+    },
+    {
+      "source": "runs/day83/source/visual-03.png",
+      "sourceSize": [
+        1882,
+        836
+      ],
+      "sourceSha256": "58a44eeb42f91694ff998a4b179a4e18e84c0b74c3c487ecbefc82060468f204",
+      "reviewedCrop": [
+        0,
+        0,
+        1882,
+        836
+      ],
+      "visibleCrop": [
+        413,
+        8,
+        1565,
+        806
+      ],
+      "output": "runs/day83/assets/visual-03.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1143,
+        792
+      ],
+      "offset": [
+        828,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "标准化才能比较知识页配图"
+    },
+    {
+      "source": "runs/day83/source/visual-04.png",
+      "sourceSize": [
+        1870,
+        841
+      ],
+      "sourceSha256": "709714c298236408a090950baf0b0927e85ee50905cc5a885b1fe7f7822073af",
+      "reviewedCrop": [
+        0,
+        0,
+        1870,
+        841
+      ],
+      "visibleCrop": [
+        424,
+        13,
+        1454,
+        822
+      ],
+      "output": "runs/day83/assets/visual-04.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1008,
+        792
+      ],
+      "offset": [
+        896,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "停止条件保护测试价值知识页配图"
+    },
+    {
+      "source": "runs/day83/source/visual-05.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "sourceSha256": "238072d8e58592f9a5014484a712a58c10b21eb47895c12b2d98b704e392364e",
+      "reviewedCrop": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "visibleCrop": [
+        441,
+        14,
+        1293,
+        927
+      ],
+      "output": "runs/day83/assets/visual-05.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        739,
+        792
+      ],
+      "offset": [
+        1030,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "用基线写下一步假设知识页配图"
+    },
+    {
+      "source": "runs/day83/source/overview-01.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "21d50a318f3bd69a732321d9413d8e035cd1c4ced73de0b7bc00c2bbaa6b277c",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        169,
+        15,
+        1216,
+        1079
+      ],
+      "output": "runs/day83/assets/overview-01.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1039,
+        1056
+      ],
+      "offset": [
+        280,
+        72
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "先决定是否需要测试总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day83/source/overview-02.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "b614dd391806732cef8f60f99b57ba769405ffeb1960880dcfcb19c43335058f",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        38,
+        26,
+        1406,
+        1040
+      ],
+      "output": "runs/day83/assets/overview-02.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1368,
+        1014
+      ],
+      "offset": [
+        116,
+        93
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "不同测试回答不同问题总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day83/source/overview-03.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "ff49e652745b61e15cf69b1ce8dbbc1627afed024e05f0e4cc979275e5ed6ac2",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        155,
+        19,
+        1277,
+        1030
+      ],
+      "output": "runs/day83/assets/overview-03.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1122,
+        1011
+      ],
+      "offset": [
+        239,
+        94
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "标准化才能比较总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day83/source/overview-04.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "bc16ced1bc1631ac4c343b3655ac034a64c6c0672751c1a038fd5b50b9c336d0",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        156,
+        37,
+        1354,
+        1025
+      ],
+      "output": "runs/day83/assets/overview-04.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1198,
+        988
+      ],
+      "offset": [
+        201,
+        106
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "停止条件保护测试价值总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day83/source/overview-05.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "36dcb3840f4ed1881dc54be5b7f365e3ac1dc9781ec653bd275c467ec70c5513",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        136,
+        16,
+        1316,
+        1061
+      ],
+      "output": "runs/day83/assets/overview-05.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1180,
+        1045
+      ],
+      "offset": [
+        210,
+        77
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "用基线写下一步假设总览专用，不与知识页复用"
+    }
+  ]
+}

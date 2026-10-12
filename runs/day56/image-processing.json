@@ -1,0 +1,357 @@
+{
+  "processedAt": "2026-09-30T07:03:26.245709+00:00",
+  "method": "trim near-transparent noise; reviewed crop; uniform scale; transparent margin",
+  "assets": [
+    {
+      "source": "runs/day56/source/cover.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "sourceSha256": "78f9f21019f8621aba3cd5f195d527693ee6145c8ecca6ceef7f6838d36274d7",
+      "reviewedCrop": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "visibleCrop": [
+        28,
+        2,
+        1545,
+        927
+      ],
+      "output": "runs/day56/assets/cover.png",
+      "size": [
+        1600,
+        900
+      ],
+      "subjectSize": [
+        1299,
+        792
+      ],
+      "offset": [
+        150,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "无字封面"
+    },
+    {
+      "source": "runs/day56/retry-visual-01-foundation-20260930/attempt-02.png",
+      "sourceSize": [
+        2214,
+        710
+      ],
+      "sourceSha256": "a2a7cbe011d7edfb5d07fc799425ae951401174e4dcfbd27565bc5b623b45702",
+      "reviewedCrop": [
+        0,
+        0,
+        2214,
+        710
+      ],
+      "visibleCrop": [
+        459,
+        0,
+        1609,
+        699
+      ],
+      "output": "runs/day56/assets/visual-01-foundation.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1150,
+        699
+      ],
+      "offset": [
+        825,
+        100
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "力量底座；首图保留在重试记录中"
+    },
+    {
+      "source": "runs/day56/retry-visual-02-pairing-20260930/attempt-02.png",
+      "sourceSize": [
+        2214,
+        710
+      ],
+      "sourceSha256": "ea8846b63fb5ffe78a5583df14a3220684bbb038409c7b559f95f25ee9200fc3",
+      "reviewedCrop": [
+        0,
+        0,
+        2214,
+        710
+      ],
+      "visibleCrop": [
+        15,
+        7,
+        2181,
+        677
+      ],
+      "output": "runs/day56/assets/visual-02-pairing.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        2166,
+        670
+      ],
+      "offset": [
+        317,
+        115
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "复合配对；首图保留在重试记录中"
+    },
+    {
+      "source": "runs/day56/source/visual-03-load.png",
+      "sourceSize": [
+        2212,
+        711
+      ],
+      "sourceSha256": "6020271e25d696eecd4b7781228dff8a4bd84bdf6a37939f3244ab3b2f621799",
+      "reviewedCrop": [
+        0,
+        0,
+        2212,
+        711
+      ],
+      "visibleCrop": [
+        197,
+        15,
+        2027,
+        685
+      ],
+      "output": "runs/day56/assets/visual-03-load.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1830,
+        670
+      ],
+      "offset": [
+        485,
+        115
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "轻负荷快速完成"
+    },
+    {
+      "source": "runs/day56/source/visual-04-landing.png",
+      "sourceSize": [
+        2213,
+        711
+      ],
+      "sourceSha256": "362a7f488965e1f6068efbe47a7e0998d260f0582b42dc3a68a782410bcea711",
+      "reviewedCrop": [
+        0,
+        0,
+        2213,
+        711
+      ],
+      "visibleCrop": [
+        284,
+        9,
+        2008,
+        701
+      ],
+      "output": "runs/day56/assets/visual-04-landing.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1724,
+        692
+      ],
+      "offset": [
+        538,
+        104
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "落地与恢复"
+    },
+    {
+      "source": "runs/day56/source/overview-01-foundation.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "9eaeb38358f5e19d00b653fb7888a6b5ed8fb96af0b863ef5dff333ec3bbbf2f",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        22,
+        24,
+        1404,
+        994
+      ],
+      "output": "runs/day56/assets/overview-01-foundation.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1382,
+        970
+      ],
+      "offset": [
+        109,
+        115
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day56/source/overview-02-pairing.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "010bc059a793a5b6f5241e6cae467f48bd067d3558794d7e48faf8b1d071e941",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        60,
+        7,
+        1400,
+        1017
+      ],
+      "output": "runs/day56/assets/overview-02-pairing.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1340,
+        1010
+      ],
+      "offset": [
+        130,
+        95
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day56/source/overview-03-load.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "b5103a3a9a314460c19e3ac2497233ef022049420f726c3f51e4d83f8f7f8e33",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        54,
+        46,
+        1388,
+        994
+      ],
+      "output": "runs/day56/assets/overview-03-load.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1334,
+        948
+      ],
+      "offset": [
+        133,
+        126
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day56/source/overview-04-landing.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "839749906602d5bdd97556debca36840b7288808b2423a24f0dbf41addd2bf74",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        43,
+        26,
+        1406,
+        1008
+      ],
+      "output": "runs/day56/assets/overview-04-landing.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1363,
+        982
+      ],
+      "offset": [
+        118,
+        109
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    }
+  ]
+}

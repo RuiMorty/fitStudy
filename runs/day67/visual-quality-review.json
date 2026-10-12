@@ -1,0 +1,97 @@
+{
+  "reviewer": "local source visual, alpha and semantic QA",
+  "requirements": [
+    "true-alpha transparent PNG with no rendered checkerboard or opaque background",
+    "wordless Bojji and Despa teaching art with coherent energy-balance, daily-activity, recovery and health-boundary props",
+    "no generated text, arrows, flow lines, bubbles, icons, charts, markers, collage panels, duplicate figures or clipped bodies",
+    "each overview asset is independently generated and is not reused as a knowledge-page asset",
+    "visible subject pixels retain at least the configured six-percent safety margin after ignoring alpha 1-8 antialiasing noise that the shared preparer removes"
+  ],
+  "technicalChecks": {
+    "checkedWith": [
+      "RGBA alpha extrema and transparent-background inspection",
+      "individual visual inspection on white composites",
+      "semantic, character-count, action, margin and prohibited-marker review"
+    ],
+    "result": "All nine selected source PNGs are non-empty RGBA files with real alpha. White-composite QA found no visible colored fringe or halo. The few alpha 1-8 edge pixels are transparent antialiasing noise removed by the existing shared prepare-study-images.py pipeline; no generic erosion or color treatment was added. All selected subjects have usable safety margins, are complete, wordless and semantically coherent."
+  },
+  "accepted": [
+    {
+      "file": "cover.png",
+      "attempt": 2,
+      "source": "runs/day67/image-requests/cover-eb86e17540/attempt-02/cover.png",
+      "review": "One Despa performs a controlled shallow squat while one Bojji records a blank notebook beside a balanced meal; it clearly frames habits and training rather than scale chasing."
+    },
+    {
+      "file": "visual-01-balance.png",
+      "attempt": 2,
+      "source": "runs/day67/image-requests/visual-01-balance-dc252dcde3/attempt-02/visual-01-balance.png",
+      "review": "A calm connected everyday meal-and-walk scene communicates long-term balance without a scale, chart or food-morality cue."
+    },
+    {
+      "file": "visual-02-tdee.png",
+      "attempt": 4,
+      "source": "runs/day67/image-requests/visual-02-tdee-c8f66e91da/attempt-04/visual-02-tdee.png",
+      "review": "One Despa carrying a crate and one Bojji walking form a complete single daily-activity scene; white-composite review confirms low-alpha antialiasing is not a visible fringe."
+    },
+    {
+      "file": "visual-03-preserve.png",
+      "attempt": 4,
+      "source": "runs/day67/image-requests/visual-03-preserve-7727bea20a/attempt-04/visual-03-preserve.png",
+      "review": "One complete Despa split-squats while one Bojji carries rice, tofu and vegetables; the centered group has adequate margin and clean recovery/performance meaning."
+    },
+    {
+      "file": "visual-04-boundary.png",
+      "attempt": 2,
+      "source": "runs/day67/image-requests/visual-04-boundary-bab00ccc1c/attempt-02/visual-04-boundary.png",
+      "review": "A calm seated Bojji, supportive Despa and balanced meal table communicate small adjustments and seeking support without medical drama or warning symbols."
+    },
+    {
+      "file": "overview-01-balance.png",
+      "attempt": 4,
+      "source": "runs/day67/image-requests/overview-01-balance-c4c907bf6d/attempt-04/overview-01-balance.png",
+      "review": "Independent overview scene keeps Bojji standing beside the meal while Despa walks with a relaxed short stride; it is a single safe-margin balance scene, not a time-sequence collage."
+    },
+    {
+      "file": "overview-02-tdee.png",
+      "attempt": 2,
+      "source": "runs/day67/image-requests/overview-02-tdee-ddde4a2f81/attempt-02/overview-02-tdee.png",
+      "review": "Independent scene shows exactly one Despa carrying an unmarked crate and one Bojji walking on one curved path, with adequate margins and no montage."
+    },
+    {
+      "file": "overview-03-preserve.png",
+      "attempt": 2,
+      "source": "runs/day67/image-requests/overview-03-preserve-eb1fc06aec/attempt-02/overview-03-preserve.png",
+      "review": "Independent training-and-recovery scene has one Despa, one Bojji, a meal, towel and water bottle, with no thought bubbles, duplicate figures or clipped subject."
+    },
+    {
+      "file": "overview-04-boundary.png",
+      "attempt": 2,
+      "source": "runs/day67/image-requests/overview-04-boundary-c7e04b0201/attempt-02/overview-04-boundary.png",
+      "review": "Independent centered scene shows one seated Bojji holding a blank closed notebook and one respectful supportive Despa; all effective subject bounds clear the margin requirement."
+    }
+  ],
+  "rejected": [
+    {"file": "visual-01-balance.png", "attempt": 1, "reason": "Initial composition did not meet the requested clean, single-scene balance brief."},
+    {"file": "visual-02-tdee.png", "attempt": 1, "reason": "Initial candidate needed a clearer single continuous daily-activity scene."},
+    {"file": "visual-02-tdee.png", "attempt": 2, "reason": "Candidate required stronger subject isolation and safer composition."},
+    {"file": "visual-02-tdee.png", "attempt": 3, "reason": "Candidate did not yet meet the final single-scene and margin review."},
+    {"file": "visual-03-preserve.png", "attempt": 1, "reason": "Initial candidate did not meet the required clean performance-and-recovery composition."},
+    {"file": "visual-03-preserve.png", "attempt": 2, "reason": "Candidate needed a clearer centered complete action composition."},
+    {"file": "visual-03-preserve.png", "attempt": 3, "reason": "Top and bottom subject bounds were below the required safety margin."},
+    {"file": "visual-04-boundary.png", "attempt": 1, "reason": "Initial candidate required a calmer, clearer support-boundary composition."},
+    {"file": "overview-01-balance.png", "attempt": 1, "reason": "Candidate used a disallowed multi-scene treatment."},
+    {"file": "overview-01-balance.png", "attempt": 2, "reason": "Bojji was eating rather than standing beside the meal in a shared walking scene."},
+    {"file": "overview-01-balance.png", "attempt": 3, "reason": "Top safety margin was below six percent and Despa read as running rather than relaxed walking."},
+    {"file": "overview-02-tdee.png", "attempt": 1, "reason": "Candidate used a montage with repeated figures instead of one continuous scene."},
+    {"file": "overview-03-preserve.png", "attempt": 1, "reason": "Thought-bubble montage repeated a character and failed the independent single-scene requirement."},
+    {"file": "overview-04-boundary.png", "attempt": 1, "reason": "Subject bounds were too close to multiple canvas edges."}
+  ],
+  "requestFailure": {
+    "file": "cover.png",
+    "attempt": 1,
+    "reason": "The sandbox could not access the macOS Keychain; no image request completed and no candidate was created."
+  },
+  "retriesUsed": 15,
+  "result": "9 selected source assets passed local source QA; rejected candidates and every adjusted prompt remain preserved in image-request-log.json."
+}

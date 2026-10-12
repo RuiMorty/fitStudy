@@ -1,0 +1,50 @@
+{
+  "commonPrompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.",
+  "assets": [
+    {
+      "file": "cover.png",
+      "role": "cover",
+      "prompt": "Wide 16:9 wordless course cover. Exactly one Bojji sits beside a simple balanced meal with plain rice, potato, beans and fruit; exactly one Despa does a light stationary running warm-up nearby. Explain carbohydrate as training fuel. No packaging, labels, words, numbers, charts or giant food. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    },
+    {
+      "file": "visual-01-types.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Bojji arranges a plain bowl with rice, beans, potato and fruit; exactly one Despa holds a small bowl of oats beside him. Explain food variety and fiber in whole meals. No food labels, ingredient text, brand packages, arrows or medical imagery. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    },
+    {
+      "file": "visual-02-glycogen.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Despa performs a controlled moderate stationary cycling pose on a plain exercise bike with no console text; exactly one Bojji rests beside a simple meal and water cup. Explain muscle and liver fuel storage through training and recovery, without anatomy labels, arrows or charts. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    },
+    {
+      "file": "visual-03-gi-gl.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Bojji compares two calm plain meals: one bowl of porridge with fruit and one rice-and-bean bowl; exactly one Despa gestures thoughtfully. Explain that food response depends on portion and meal context, not a good-bad ranking. No graphs, numbers, labels, arrows or medical glucose devices. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    },
+    {
+      "file": "visual-04-timing.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Despa finishes a light training pose and holds a simple bowl of rice with egg; exactly one Bojji prepares a small easy-to-digest snack on a plain plate. Explain distributing carbohydrate around training and recovery. No clock, text, labels or packaging. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    },
+    {
+      "file": "overview-01-types.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Bojji holds a small bowl with plain rice and beans; exactly one Despa holds a piece of fruit. Explain food variety and meal combination. No text, packages or arrows. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    },
+    {
+      "file": "overview-02-glycogen.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Despa performs light stationary cycling; exactly one Bojji holds a simple post-training bowl. Explain fuel and recovery. No labels, console text or anatomy diagram. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    },
+    {
+      "file": "overview-03-gi-gl.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Bojji looks at two different plain balanced plates while exactly one Despa gestures open-handed. Explain context and portion. No charts, text, numbers or medical devices. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    },
+    {
+      "file": "overview-04-timing.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Despa finishes a gentle run warm-up holding a water cup; exactly one Bojji holds a small plain snack plate. Explain training meal timing. No clock, text or packaging. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    }
+  ]
+}

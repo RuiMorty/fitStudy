@@ -1,0 +1,93 @@
+{
+  "note": "核心206之外的功能性扩展，不混入206计数；不是全部人群变异骨的穷举。",
+  "planned": [
+    {
+      "id": "bone_hallux_sesamoid_medial_L",
+      "name_zh": "左第1跖趾关节内侧籽骨",
+      "reason": "前足负重、拇趾屈肌腱走行和第1跖趾运动需要；常用206清单未包含。",
+      "required_before": "前足完整运动与肌腱教学验收",
+      "source_status": "group_mesh_downloaded_requires_anatomical_component_assignment",
+      "anatomy_review": "pending",
+      "source_group_id": "FMA45098",
+      "resource_audit": "source-audit/mapping.json",
+      "planned_connection_id": "mtp_1_L"
+    },
+    {
+      "id": "bone_hallux_sesamoid_lateral_L",
+      "name_zh": "左第1跖趾关节外侧籽骨",
+      "reason": "前足负重、拇趾屈肌腱走行和第1跖趾运动需要；常用206清单未包含。",
+      "required_before": "前足完整运动与肌腱教学验收",
+      "source_status": "group_mesh_downloaded_requires_anatomical_component_assignment",
+      "anatomy_review": "pending",
+      "source_group_id": "FMA45098",
+      "resource_audit": "source-audit/mapping.json",
+      "planned_connection_id": "mtp_1_L"
+    },
+    {
+      "id": "bone_hallux_sesamoid_medial_R",
+      "name_zh": "右第1跖趾关节内侧籽骨",
+      "reason": "前足负重、拇趾屈肌腱走行和第1跖趾运动需要；常用206清单未包含。",
+      "required_before": "前足完整运动与肌腱教学验收",
+      "source_status": "group_mesh_downloaded_requires_anatomical_component_assignment",
+      "anatomy_review": "pending",
+      "source_group_id": "FMA45097",
+      "resource_audit": "source-audit/mapping.json",
+      "planned_connection_id": "mtp_1_R"
+    },
+    {
+      "id": "bone_hallux_sesamoid_lateral_R",
+      "name_zh": "右第1跖趾关节外侧籽骨",
+      "reason": "前足负重、拇趾屈肌腱走行和第1跖趾运动需要；常用206清单未包含。",
+      "required_before": "前足完整运动与肌腱教学验收",
+      "source_status": "group_mesh_downloaded_requires_anatomical_component_assignment",
+      "anatomy_review": "pending",
+      "source_group_id": "FMA45097",
+      "resource_audit": "source-audit/mapping.json",
+      "planned_connection_id": "mtp_1_R"
+    },
+    {
+      "id": "bone_thumb_sesamoid_radial_L",
+      "name_zh": "左拇指掌指关节桡侧籽骨",
+      "reason": "拇短屈肌、拇收肌附着及拇指掌指关节/屈肌腱教学需要；常用206清单未包含。",
+      "required_before": "拇指完整软组织与运动教学验收",
+      "source_status": "not_found_in_release_index",
+      "anatomy_review": "pending",
+      "source_group_id": null,
+      "resource_audit": "source-audit/mapping.json",
+      "planned_connection_id": "mcp_1_L"
+    },
+    {
+      "id": "bone_thumb_sesamoid_ulnar_L",
+      "name_zh": "左拇指掌指关节尺侧籽骨",
+      "reason": "拇短屈肌、拇收肌附着及拇指掌指关节/屈肌腱教学需要；常用206清单未包含。",
+      "required_before": "拇指完整软组织与运动教学验收",
+      "source_status": "not_found_in_release_index",
+      "anatomy_review": "pending",
+      "source_group_id": null,
+      "resource_audit": "source-audit/mapping.json",
+      "planned_connection_id": "mcp_1_L"
+    },
+    {
+      "id": "bone_thumb_sesamoid_radial_R",
+      "name_zh": "右拇指掌指关节桡侧籽骨",
+      "reason": "拇短屈肌、拇收肌附着及拇指掌指关节/屈肌腱教学需要；常用206清单未包含。",
+      "required_before": "拇指完整软组织与运动教学验收",
+      "source_status": "not_found_in_release_index",
+      "anatomy_review": "pending",
+      "source_group_id": null,
+      "resource_audit": "source-audit/mapping.json",
+      "planned_connection_id": "mcp_1_R"
+    },
+    {
+      "id": "bone_thumb_sesamoid_ulnar_R",
+      "name_zh": "右拇指掌指关节尺侧籽骨",
+      "reason": "拇短屈肌、拇收肌附着及拇指掌指关节/屈肌腱教学需要；常用206清单未包含。",
+      "required_before": "拇指完整软组织与运动教学验收",
+      "source_status": "not_found_in_release_index",
+      "anatomy_review": "pending",
+      "source_group_id": null,
+      "resource_audit": "source-audit/mapping.json",
+      "planned_connection_id": "mcp_1_R"
+    }
+  ]
+}

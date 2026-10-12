@@ -1,0 +1,37 @@
+{
+  "size": [
+    1536,
+    1024
+  ],
+  "columns": 2,
+  "title": "蛋白质：先看整天，不迷信一口",
+  "subtitle": "氨基酸 · 全天总量 · 餐次分配 · 来源选择",
+  "panels": [
+    {
+      "title": "氨基酸",
+      "description": "EAA · 不是魔法键",
+      "image": "runs/day63/assets/overview-01-eaa.png"
+    },
+    {
+      "title": "全天总量",
+      "description": "训练 · 目标 · 能量",
+      "image": "runs/day63/assets/overview-02-total.png"
+    },
+    {
+      "title": "餐次分配",
+      "description": "规律 · 可执行",
+      "image": "runs/day63/assets/overview-03-distribution.png"
+    },
+    {
+      "title": "来源选择",
+      "description": "动物 · 植物 · 多样",
+      "image": "runs/day63/assets/overview-04-sources.png"
+    }
+  ],
+  "footer": [
+    "先保全天总量，再分每餐来源；EAA要够，能量别少。",
+    "补剂只提供便利；医学情况、总能量和完整饮食始终优先。"
+  ],
+  "output": "runs/day63/assets/detail.png",
+  "deliveryScale": 2
+}

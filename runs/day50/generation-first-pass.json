@@ -1,0 +1,141 @@
+{
+  "provider": "Lingzhi",
+  "preset": "quality",
+  "model": "gpt-image-2.5-sunburst",
+  "authorization": "用户于2026-09-30授权：每张图片最多首次加5次重试；本文件只记录其余12张首轮。",
+  "updatedAt": "2026-09-30T01:29:45.416927Z",
+  "assets": [
+    {
+      "file": "visual-01-modes.png",
+      "role": "knowledge",
+      "attempt": 1,
+      "startedAt": "2026-09-30T01:25:21.238880Z",
+      "returncode": 0,
+      "output": "runs/day50/source/visual-01-modes.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 1179464,
+      "sha256": "482d81571a70ecb85ceb3d2051be6994f28f0a03b8a99e33f60d197d8d0ada6f"
+    },
+    {
+      "file": "visual-02-cross-training.png",
+      "role": "knowledge",
+      "attempt": 1,
+      "startedAt": "2026-09-30T01:25:39.126054Z",
+      "returncode": 0,
+      "output": "runs/day50/source/visual-02-cross-training.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 643372,
+      "sha256": "0186f5a26b0c60de1a78ea4a0322041e8d2e2b5c4f83fcbd55dd2cfa3c861652"
+    },
+    {
+      "file": "visual-03-heart-rate.png",
+      "role": "knowledge",
+      "attempt": 1,
+      "startedAt": "2026-09-30T01:26:08.468696Z",
+      "returncode": 0,
+      "output": "runs/day50/source/visual-03-heart-rate.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 868818,
+      "sha256": "2b2c245a0f85b6284eb6c657572617cc5ee1cf70c7f60b0a3929ab7138360330"
+    },
+    {
+      "file": "visual-04-rpe.png",
+      "role": "knowledge",
+      "attempt": 1,
+      "startedAt": "2026-09-30T01:26:42.228574Z",
+      "returncode": 0,
+      "output": "runs/day50/source/visual-04-rpe.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 1365131,
+      "sha256": "4f3112e84c7707ecf0bf814cce987f2174af9f0469474f0bdb2952bf3d4f0ace"
+    },
+    {
+      "file": "visual-05-talk-test.png",
+      "role": "knowledge",
+      "attempt": 1,
+      "startedAt": "2026-09-30T01:26:59.357211Z",
+      "returncode": 0,
+      "output": "runs/day50/source/visual-05-talk-test.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 935862,
+      "sha256": "57ea5a822095a677dbe2e88d02818a6a6ac82100ea4e1d70921ca6cc5b5129de"
+    },
+    {
+      "file": "visual-06-triangulation.png",
+      "role": "knowledge",
+      "attempt": 1,
+      "startedAt": "2026-09-30T01:27:29.069488Z",
+      "returncode": 0,
+      "output": "runs/day50/source/visual-06-triangulation.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 1029936,
+      "sha256": "6b09167aab4ac7e8370cbd3e85a674c81ff2eab3b6fe74dabd79e20942779668"
+    },
+    {
+      "file": "overview-01-modes.png",
+      "role": "overview-item",
+      "attempt": 1,
+      "startedAt": "2026-09-30T01:27:47.813439Z",
+      "returncode": 0,
+      "output": "runs/day50/source/overview-01-modes.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 880925,
+      "sha256": "1a65c5c32cd474f4bc7e5ad467694e5af1758ab098fa3a17ff2d0070c7fa1f20"
+    },
+    {
+      "file": "overview-02-cross-training.png",
+      "role": "overview-item",
+      "attempt": 1,
+      "startedAt": "2026-09-30T01:28:07.141968Z",
+      "returncode": 0,
+      "output": "runs/day50/source/overview-02-cross-training.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 866420,
+      "sha256": "b35601f5991129ac8d70943a83a3badfd2388508eb8ead4224ecf0462fe06741"
+    },
+    {
+      "file": "overview-03-heart-rate.png",
+      "role": "overview-item",
+      "attempt": 1,
+      "startedAt": "2026-09-30T01:28:44.739358Z",
+      "returncode": 0,
+      "output": "runs/day50/source/overview-03-heart-rate.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 1110715,
+      "sha256": "720c3d35bdcebf3837efc1de415c9a8fe8478739fbdd8c4b74b42a4f7041b716"
+    },
+    {
+      "file": "overview-04-rpe.png",
+      "role": "overview-item",
+      "attempt": 1,
+      "startedAt": "2026-09-30T01:29:04.713149Z",
+      "returncode": 0,
+      "output": "runs/day50/source/overview-04-rpe.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 1029180,
+      "sha256": "1d1cec8ab1a3c4afa26db3dd44f31f7db405d41cb66983efe26acb1db075ad19"
+    },
+    {
+      "file": "overview-05-talk-test.png",
+      "role": "overview-item",
+      "attempt": 1,
+      "startedAt": "2026-09-30T01:29:24.398078Z",
+      "returncode": 0,
+      "output": "runs/day50/source/overview-05-talk-test.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 729289,
+      "sha256": "8c8424aeb34d785a25532ff05e19800a3cb7e779097dfecb52a3e8a203affc69"
+    },
+    {
+      "file": "overview-06-triangulation.png",
+      "role": "overview-item",
+      "attempt": 1,
+      "startedAt": "2026-09-30T01:29:45.412043Z",
+      "returncode": 0,
+      "output": "runs/day50/source/overview-06-triangulation.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 1113783,
+      "sha256": "1580f919306b965c523998d5d39e3811e62803aee86a27fd06a53ebd32c6b086"
+    }
+  ]
+}

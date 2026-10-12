@@ -1,0 +1,197 @@
+{
+  "scope": "Unchanged source geometry in documented mm units; triangle-pair intersection and sampled local-normal signed depth. Not a clinical joint fit or motion validation.",
+  "results": [
+    {
+      "name": "肩",
+      "side": "L",
+      "bones": [
+        "bone_scapula_L",
+        "bone_humerus_L"
+      ],
+      "triangle_intersection_pairs": 0,
+      "sampled_max_signed_inside_mm": 0,
+      "sampled_nearest_distance_mm": 0.7935885787010193,
+      "samples": 5288
+    },
+    {
+      "name": "肱尺",
+      "side": "L",
+      "bones": [
+        "bone_humerus_L",
+        "bone_ulna_L"
+      ],
+      "triangle_intersection_pairs": 0,
+      "sampled_max_signed_inside_mm": 0,
+      "sampled_nearest_distance_mm": 0.1619671732187271,
+      "samples": 4521
+    },
+    {
+      "name": "肱桡",
+      "side": "L",
+      "bones": [
+        "bone_humerus_L",
+        "bone_radius_L"
+      ],
+      "triangle_intersection_pairs": 0,
+      "sampled_max_signed_inside_mm": 0,
+      "sampled_nearest_distance_mm": 4.2123870849609375,
+      "samples": 4109
+    },
+    {
+      "name": "髋",
+      "side": "L",
+      "bones": [
+        "bone_hip_L",
+        "bone_femur_L"
+      ],
+      "triangle_intersection_pairs": 204,
+      "sampled_max_signed_inside_mm": 0.8013672232627869,
+      "sampled_nearest_distance_mm": 0.00029910728335380554,
+      "samples": 8037
+    },
+    {
+      "name": "胫股",
+      "side": "L",
+      "bones": [
+        "bone_femur_L",
+        "bone_tibia_L"
+      ],
+      "triangle_intersection_pairs": 0,
+      "sampled_max_signed_inside_mm": 0,
+      "sampled_nearest_distance_mm": 0.4898339509963989,
+      "samples": 6715
+    },
+    {
+      "name": "髌股",
+      "side": "L",
+      "bones": [
+        "bone_femur_L",
+        "bone_patella_L"
+      ],
+      "triangle_intersection_pairs": 0,
+      "sampled_max_signed_inside_mm": 0,
+      "sampled_nearest_distance_mm": 1.9401390552520752,
+      "samples": 3973
+    },
+    {
+      "name": "胫距",
+      "side": "L",
+      "bones": [
+        "bone_tibia_L",
+        "bone_talus_L"
+      ],
+      "triangle_intersection_pairs": 22,
+      "sampled_max_signed_inside_mm": 0.04581499099731445,
+      "sampled_nearest_distance_mm": 0.0068837921135127544,
+      "samples": 6377
+    },
+    {
+      "name": "腓距",
+      "side": "L",
+      "bones": [
+        "bone_fibula_L",
+        "bone_talus_L"
+      ],
+      "triangle_intersection_pairs": 0,
+      "sampled_max_signed_inside_mm": 0,
+      "sampled_nearest_distance_mm": 2.288283586502075,
+      "samples": 5238
+    },
+    {
+      "name": "肩",
+      "side": "R",
+      "bones": [
+        "bone_scapula_R",
+        "bone_humerus_R"
+      ],
+      "triangle_intersection_pairs": 0,
+      "sampled_max_signed_inside_mm": 0,
+      "sampled_nearest_distance_mm": 0.7815209627151489,
+      "samples": 5287
+    },
+    {
+      "name": "肱尺",
+      "side": "R",
+      "bones": [
+        "bone_humerus_R",
+        "bone_ulna_R"
+      ],
+      "triangle_intersection_pairs": 0,
+      "sampled_max_signed_inside_mm": 0,
+      "sampled_nearest_distance_mm": 0.10186690092086792,
+      "samples": 4510
+    },
+    {
+      "name": "肱桡",
+      "side": "R",
+      "bones": [
+        "bone_humerus_R",
+        "bone_radius_R"
+      ],
+      "triangle_intersection_pairs": 0,
+      "sampled_max_signed_inside_mm": 0,
+      "sampled_nearest_distance_mm": 4.219821453094482,
+      "samples": 4116
+    },
+    {
+      "name": "髋",
+      "side": "R",
+      "bones": [
+        "bone_hip_R",
+        "bone_femur_R"
+      ],
+      "triangle_intersection_pairs": 0,
+      "sampled_max_signed_inside_mm": 0,
+      "sampled_nearest_distance_mm": 0.4661767780780792,
+      "samples": 8107
+    },
+    {
+      "name": "胫股",
+      "side": "R",
+      "bones": [
+        "bone_femur_R",
+        "bone_tibia_R"
+      ],
+      "triangle_intersection_pairs": 0,
+      "sampled_max_signed_inside_mm": 0,
+      "sampled_nearest_distance_mm": 0.43888208270072937,
+      "samples": 6676
+    },
+    {
+      "name": "髌股",
+      "side": "R",
+      "bones": [
+        "bone_femur_R",
+        "bone_patella_R"
+      ],
+      "triangle_intersection_pairs": 0,
+      "sampled_max_signed_inside_mm": 0,
+      "sampled_nearest_distance_mm": 2.004706382751465,
+      "samples": 3918
+    },
+    {
+      "name": "胫距",
+      "side": "R",
+      "bones": [
+        "bone_tibia_R",
+        "bone_talus_R"
+      ],
+      "triangle_intersection_pairs": 28,
+      "sampled_max_signed_inside_mm": 0.09574487060308456,
+      "sampled_nearest_distance_mm": 0.003163890680298209,
+      "samples": 6410
+    },
+    {
+      "name": "腓距",
+      "side": "R",
+      "bones": [
+        "bone_fibula_R",
+        "bone_talus_R"
+      ],
+      "triangle_intersection_pairs": 0,
+      "sampled_max_signed_inside_mm": 0,
+      "sampled_nearest_distance_mm": 2.282893180847168,
+      "samples": 5296
+    }
+  ]
+}

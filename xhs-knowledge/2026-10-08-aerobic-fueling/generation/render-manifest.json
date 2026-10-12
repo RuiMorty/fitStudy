@@ -1,0 +1,74 @@
+{
+  "status": "awaiting-user-review",
+  "revision": 6,
+  "model": "gpt-image-2.5-sunburst",
+  "provider": "lingzhi-image",
+  "render": "prompt-only; selected images copied byte-for-byte from raw outputs; no local image edit",
+  "prompt_files": [
+    "generation/lingzhi-revision-05/prompts.json",
+    "generation/lingzhi-revision-06/prompts.json"
+  ],
+  "content_sha256": "a2cad2cde111e45d7827447426a6dad35173632dd07f2c340cba33b657504d3d",
+  "images": [
+    {
+      "path": "images/01-cover.png",
+      "raw": "generation/lingzhi-revision-05/raw/01-cover-attempt-02.png",
+      "bytes": 5484829,
+      "sha256": "aac8c64f213b4964353b431b135cc0460f9f984a77b9b191ef4e38afea065137",
+      "dimensions": [
+        1536,
+        2048
+      ]
+    },
+    {
+      "path": "images/02-timeline.png",
+      "raw": "generation/lingzhi-revision-05/raw/02-timeline.png",
+      "bytes": 4918188,
+      "sha256": "2e25957f843c3ddfcda5d1231aaffcbec38bafa2b4a3d3b88ad5ddcf587eaaf0",
+      "dimensions": [
+        1536,
+        2048
+      ]
+    },
+    {
+      "path": "images/03-muscle-glycogen.png",
+      "raw": "generation/lingzhi-revision-05/raw/03-muscle-glycogen.png",
+      "bytes": 4828983,
+      "sha256": "95806107ffe0894a53d9710681f85ad782517702717023f8105b158aba47ed3b",
+      "dimensions": [
+        1536,
+        2048
+      ]
+    },
+    {
+      "path": "images/04-liver-glycogen.png",
+      "raw": "generation/lingzhi-revision-05/raw/04-liver-glycogen.png",
+      "bytes": 5090243,
+      "sha256": "3906b217e405c0e48eb2a1882aae198e9e145edb442cbd7ee743b64a09fe126d",
+      "dimensions": [
+        1536,
+        2048
+      ]
+    },
+    {
+      "path": "images/05-fat-oxidation.png",
+      "raw": "generation/lingzhi-revision-05/raw/05-fat-oxidation.png",
+      "bytes": 4797267,
+      "sha256": "bc2146c406c5b5bdd5612ecf034da5fb50177de06e72daaf3b05bc87a752f432",
+      "dimensions": [
+        1536,
+        2048
+      ]
+    },
+    {
+      "path": "images/06-gluconeogenesis.png",
+      "raw": "generation/lingzhi-revision-06/raw/06-gluconeogenesis.png",
+      "bytes": 4431261,
+      "sha256": "3a87810c7f394ddfdc7dbb6bc5f91e781e3d4d0ba8be35cf91f6dc20ef1c574e",
+      "dimensions": [
+        1536,
+        2048
+      ]
+    }
+  ]
+}

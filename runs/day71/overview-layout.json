@@ -1,0 +1,37 @@
+{
+  "size": [
+    1536,
+    1024
+  ],
+  "columns": 3,
+  "title": "反兴奋剂：核对比猜测重要",
+  "subtitle": "当前规则 · 健康风险 · 治疗路径 · 教练边界",
+  "panels": [
+    {
+      "title": "当前规则",
+      "description": "动态 · 核对",
+      "image": "runs/day71/assets/overview-01-rules.png"
+    },
+    {
+      "title": "健康风险",
+      "description": "系统 · 不明",
+      "image": "runs/day71/assets/overview-02-risk.png"
+    },
+    {
+      "title": "治疗路径",
+      "description": "处方 · TUE",
+      "image": "runs/day71/assets/overview-03-treatment.png"
+    },
+    {
+      "title": "教练边界",
+      "description": "拒绝 · 转介",
+      "image": "runs/day71/assets/overview-04-scope.png"
+    }
+  ],
+  "footer": [
+    "规则看最新版，用药听医生；TUE走正式，教练不处方。",
+    "不要自行停处方，也不要请教练猜禁用状态；胸痛、晕厥、严重不适先停止训练并就医。"
+  ],
+  "output": "runs/day71/assets/detail.png",
+  "deliveryScale": 2
+}

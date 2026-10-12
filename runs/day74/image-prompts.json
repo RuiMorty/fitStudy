@@ -1,0 +1,50 @@
+{
+  "commonPrompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper background, loose paper sheets, border, sticker edge, shadow, or halo. A small unmarked rigid evidence card is allowed as a prop. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nAdditional course-specific guardrails: 固定波吉与德斯帕，二维教学画法，深灰细轮廓和平涂；每张最多各出现一位波吉和一位德斯帕，均为一个安全姿态。每张为真实透明PNG；无健身房背景、地板、边框、影子、棋盘格、水印或品牌。 不生成文字、数字、计时器、时钟、箭头、图表、节奏符号、重量标识、Logo或无关装饰。 自由重量、长凳和哑铃必须结构正确、完整、无悬空配重；动作只用轻负荷或自重，避免高风险或失控姿态。",
+  "assets": [
+    {
+      "file": "cover.png",
+      "role": "cover",
+      "prompt": "Wide 16:9 wordless single-scene course cover illustration. 横向16:9，德斯帕站在一副结构正确的安全支架旁做安排手势，空杠铃完整连续地搁在两侧挂钩上且没有配重；波吉在旁做无负荷、浅而稳定的深蹲准备姿势。Teach 休息间歇、顺序与节奏共同服务训练安排：安全器械、动作质量和恢复。无时钟、计时器和文字；浅蹲膝盖与脚尖自然对线。This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters."
+    },
+    {
+      "file": "visual-01-rest.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. 横向28:9，德斯帕端正坐在稳定长凳上、双脚完全着地并平静呼吸；波吉在一旁自然站立，身旁一只轻哑铃完整平放且未开始动作。Teach 组间休息与下一组质量：短暂恢复帮助下一组保持技术和输出。无时钟、计时器、力竭或脱水表现。This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters."
+    },
+    {
+      "file": "visual-02-order.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. 横向28:9，左侧唯一的德斯帕把一只轻药球稳定贴在胸前做准备，右侧唯一的波吉在稳定长凳旁以自然站姿等待；无箭头和顺序数字。Teach 动作顺序与技术优先：高技术任务在疲劳前完成，辅助动作在后。药球紧贴胸前、肘部自然；长凳结构正确；无高速抛掷。This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters."
+    },
+    {
+      "file": "visual-03-tempo.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. 横向28:9，唯一的德斯帕做一个受控的自重浅蹲，脚掌完全着地、膝盖自然对线、脊柱中立；唯一的波吉在一旁以稳定站姿观察。无动作线、箭头或文字。Teach 受控节奏与快速意图：稳定起止位置使速度意图可安全表达；不画跳跃落地。This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters."
+    },
+    {
+      "file": "visual-04-adjustment.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. 横向28:9，德斯帕把一张无标记的硬质塑料记录卡竖直放进小桌上的卡座，波吉在旁做单指手势；一只轻哑铃完整平放。无记录文字、数字、松散纸张、图表、计时器或复杂设备。Teach 一次调整一个变量：记录训练反应后再改变单一因素。This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters."
+    },
+    {
+      "file": "overview-01-rest.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. 4:3总览专用，波吉端正坐在稳定长凳上、双脚完全着地且双手放松；德斯帕站在旁边做开放的教练手势，一只轻哑铃完整平放在安全位置。Teach 组间休息：恢复为下一组质量服务。构图与知识页不同；无时钟、计时器或文字。This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters."
+    },
+    {
+      "file": "overview-02-order.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. 4:3总览专用，波吉以自然站姿把一只轻药球稳定贴在胸前；德斯帕站在稳定长凳旁做开放的教练手势。Teach 动作顺序：技术与重点优先。构图与知识页不同；药球、长凳和姿势安全，无文字。This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters."
+    },
+    {
+      "file": "overview-03-tempo.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. 4:3总览专用，波吉做一个受控的自重浅蹲，脚掌完全着地、膝盖自然对线、脊柱中立；德斯帕在侧方以稳定站姿观察。Teach 训练节奏：控制支撑速度意图。构图与知识页不同；不画箭头、节拍或跳跃。This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters."
+    },
+    {
+      "file": "overview-04-adjustment.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. 4:3总览专用，波吉双手拿着一张无标记硬质塑料记录卡；德斯帕在旁对一只完整平放的轻哑铃做开放手势。Teach 变量联动：一次改变一个主要变量。构图与知识页不同；无松散纸张、文字、数字或图表。This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters."
+    }
+  ]
+}

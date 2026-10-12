@@ -1,0 +1,279 @@
+{
+  "schemaVersion": 1,
+  "assets": [
+    {
+      "file": "cover.png",
+      "role": "cover",
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "initial",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T09:18:34.977268Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nWide 16:9 wordless single-scene course cover. Exactly one Despa performs a calm shallow bodyweight squat with both feet fully grounded, knees moving naturally with the feet and relaxed shoulders. Exactly one Bojji stands nearby in a stable two-foot stance with arms open. Both characters are fully visible. Explain foot-ankle-hip-knee coordination, not a rigid corrective pose. No duplicate figures, alternate poses, sequence frames, rail, box, bands, arrows, orthotics, text or medical imagery.",
+          "promptSha256": "12ae1f6353187833a15849277f84f2011ad97c8b4bd55e3e8218e0b132a6123e",
+          "assetPrompt": "Wide 16:9 wordless single-scene course cover. Exactly one Despa performs a calm shallow bodyweight squat with both feet fully grounded, knees moving naturally with the feet and relaxed shoulders. Exactly one Bojji stands nearby in a stable two-foot stance with arms open. Both characters are fully visible. Explain foot-ankle-hip-knee coordination, not a rigid corrective pose. No duplicate figures, alternate poses, sequence frames, rail, box, bands, arrows, orthotics, text or medical imagery.",
+          "output": "runs/day60/image-requests/cover-eb86e17540/attempt-01/cover.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T09:19:09.079908Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 909384,
+          "usablePng": true,
+          "sha256": "80d72a6ad90f5f7c435bd06c23db61bf23d7c98c01d44f0f9b5282fa55a87bc8"
+        }
+      ],
+      "source": {
+        "path": "runs/day60/source/cover.png",
+        "exists": false
+      },
+      "lastStatus": "generated-pending-quality-review"
+    },
+    {
+      "file": "visual-01-observe.png",
+      "role": "knowledge",
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "initial",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T09:20:29.397648Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nWide 28:9 wordless knowledge illustration for dynamic lower-limb observation. Show exactly one complete full-body Bojji doing one frozen low step-down from one very low plain box: whole front foot controlled on the ground, rear foot still on the box, knee naturally following the foot and trunk calm. Bojji is the only person; no Despa, no sequence, no before-and-after and no duplicate figure. No valgus exaggeration, pain cue, grid, arrow, text, detached limb, scattered mark, floor, room or extra equipment.",
+          "promptSha256": "59e693163bba860807bf9365a0cfccf4f757a21a96c18a558d3de28319dda619",
+          "assetPrompt": "Wide 28:9 wordless knowledge illustration for dynamic lower-limb observation. Show exactly one complete full-body Bojji doing one frozen low step-down from one very low plain box: whole front foot controlled on the ground, rear foot still on the box, knee naturally following the foot and trunk calm. Bojji is the only person; no Despa, no sequence, no before-and-after and no duplicate figure. No valgus exaggeration, pain cue, grid, arrow, text, detached limb, scattered mark, floor, room or extra equipment.",
+          "output": "runs/day60/image-requests/visual-01-observe-299476202f/attempt-01/visual-01-observe.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T09:20:56.753583Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 568206,
+          "usablePng": true,
+          "sha256": "f2eebbaa0dcdd7e6288a92974aed6e96b48e434c55fbbec568b527bf273d14a8"
+        },
+        {
+          "attempt": 2,
+          "kind": "adjusted-retry",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T09:22:07.808514Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nWide 28:9 wordless knowledge illustration for dynamic lower-limb observation. Show exactly one complete full-body Bojji in a clear upright side-three-quarter low step-down snapshot: one entire foot planted on one low plain box, the other entire foot planted on the ground, hips not touching the box, knees softly bent and trunk tall. Show the clear transfer between box and ground, not sitting, kneeling, squatting onto the box or climbing. Bojji is the only person; no Despa, no sequence, no before-and-after and no duplicate figure. No valgus exaggeration, pain cue, grid, arrow, text, detached limb, scattered mark, floor, room or extra equipment.",
+          "promptSha256": "aa10c984488fe04eef4a7b165e7dc6c1823cd591d1e1794616784f297d528d32",
+          "assetPrompt": "Wide 28:9 wordless knowledge illustration for dynamic lower-limb observation. Show exactly one complete full-body Bojji in a clear upright side-three-quarter low step-down snapshot: one entire foot planted on one low plain box, the other entire foot planted on the ground, hips not touching the box, knees softly bent and trunk tall. Show the clear transfer between box and ground, not sitting, kneeling, squatting onto the box or climbing. Bojji is the only person; no Despa, no sequence, no before-and-after and no duplicate figure. No valgus exaggeration, pain cue, grid, arrow, text, detached limb, scattered mark, floor, room or extra equipment.",
+          "output": "runs/day60/image-requests/visual-01-observe-299476202f/attempt-02/visual-01-observe.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T09:22:36.793546Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 660949,
+          "usablePng": true,
+          "sha256": "5b6ad453e20ca17e2555b5b5caf20f944919bb8cf9977ea74f89ff07c69c508c"
+        }
+      ],
+      "source": {
+        "path": "runs/day60/source/visual-01-observe.png",
+        "exists": false
+      },
+      "lastStatus": "generated-pending-quality-review"
+    },
+    {
+      "file": "visual-02-foot.png",
+      "role": "knowledge",
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "initial",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T09:24:02.132626Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nWide 28:9 wordless knowledge illustration for stable foot support. Show exactly one complete full-body Bojji in one still relaxed standing stance, both black boots fully visible and feet evenly grounded, knees soft, toes naturally relaxed and trunk quiet. Bojji is the only person; no Despa, no sequence and no duplicate figure. Explain whole-foot support without a close-up diagram. No wall, anatomy overlay, labels, arrows, toe gripping, detached limb, scattered mark, floor, room or equipment.",
+          "promptSha256": "9d421c6f58cd15c7c8df65228b18ef35cf124b1703cca1d14a8b259a0b69fcf2",
+          "assetPrompt": "Wide 28:9 wordless knowledge illustration for stable foot support. Show exactly one complete full-body Bojji in one still relaxed standing stance, both black boots fully visible and feet evenly grounded, knees soft, toes naturally relaxed and trunk quiet. Bojji is the only person; no Despa, no sequence and no duplicate figure. Explain whole-foot support without a close-up diagram. No wall, anatomy overlay, labels, arrows, toe gripping, detached limb, scattered mark, floor, room or equipment.",
+          "output": "runs/day60/image-requests/visual-02-foot-9f346a743f/attempt-01/visual-02-foot.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T09:24:29.223876Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 525698,
+          "usablePng": true,
+          "sha256": "c91755f430135c894cc1b17a001f4be6815db783af66deebef6f40a4b0196676"
+        }
+      ],
+      "source": {
+        "path": "runs/day60/source/visual-02-foot.png",
+        "exists": false
+      },
+      "lastStatus": "generated-pending-quality-review"
+    },
+    {
+      "file": "visual-03-hip-knee.png",
+      "role": "knowledge",
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "initial",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T09:26:19.499220Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nWide 28:9 wordless knowledge illustration for hip-knee coordination. Show exactly one complete full-body Despa in one frozen shallow split-squat position, level pelvis, stable front foot, knee naturally following the foot and relaxed trunk. Despa is the only person; no Bojji, no sequence and no duplicate figure. No bands, arrows, forced knee position, text, detached limb, scattered mark, floor, room or equipment.",
+          "promptSha256": "3bc83a8690321554bcadfe51e113c9b71412b29bcfb3e1f6a9da5371fdecbe13",
+          "assetPrompt": "Wide 28:9 wordless knowledge illustration for hip-knee coordination. Show exactly one complete full-body Despa in one frozen shallow split-squat position, level pelvis, stable front foot, knee naturally following the foot and relaxed trunk. Despa is the only person; no Bojji, no sequence and no duplicate figure. No bands, arrows, forced knee position, text, detached limb, scattered mark, floor, room or equipment.",
+          "output": "runs/day60/image-requests/visual-03-hip-knee-cbd925922d/attempt-01/visual-03-hip-knee.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T09:26:47.916329Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 551911,
+          "usablePng": true,
+          "sha256": "bfe39eeb988f1d26aff8786a6c148adf94964f4cc18035c409203ca300e8ce61"
+        }
+      ],
+      "source": {
+        "path": "runs/day60/source/visual-03-hip-knee.png",
+        "exists": false
+      },
+      "lastStatus": "generated-pending-quality-review"
+    },
+    {
+      "file": "visual-04-squat.png",
+      "role": "knowledge",
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "initial",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T09:28:57.343638Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nWide 28:9 wordless knowledge illustration for returning foot-ankle-hip-knee control to a complete squat. Show exactly one complete full-body Bojji in one frozen low box squat, both feet fully grounded, knees naturally following the feet, trunk calm and hands forward. Use one plain low box only. Bojji is the only person; no Despa, no sequence and no duplicate figure. No jump, arrows, text, bands, detached limb, scattered mark, floor, room or extra equipment.",
+          "promptSha256": "75405c56602051e77dca0dbfe7787269eb9f46cc08a8c2acbeb6868220740c67",
+          "assetPrompt": "Wide 28:9 wordless knowledge illustration for returning foot-ankle-hip-knee control to a complete squat. Show exactly one complete full-body Bojji in one frozen low box squat, both feet fully grounded, knees naturally following the feet, trunk calm and hands forward. Use one plain low box only. Bojji is the only person; no Despa, no sequence and no duplicate figure. No jump, arrows, text, bands, detached limb, scattered mark, floor, room or extra equipment.",
+          "output": "runs/day60/image-requests/visual-04-squat-4e68bbbc8f/attempt-01/visual-04-squat.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T09:29:23.197277Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 675945,
+          "usablePng": true,
+          "sha256": "95b6116d8590845aa8ba437741da374ade5ee93aad026c457470b1f8a7c799cb"
+        }
+      ],
+      "source": {
+        "path": "runs/day60/source/visual-04-squat.png",
+        "exists": false
+      },
+      "lastStatus": "generated-pending-quality-review"
+    },
+    {
+      "file": "overview-01-observe.png",
+      "role": "overview-item",
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "initial",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T09:31:20.070173Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nWide 4:3 wordless overview-only illustration for dynamic observation. Show exactly one complete full-body Bojji in one frozen low step-down from one plain low box, whole front foot controlled on the ground and trunk calm. Bojji is the only person; no Despa, no sequence and no duplicate figure. No text, arrows, medical symbols, detached limb, scattered mark, floor, room or extra equipment.",
+          "promptSha256": "ffeaca198839571437055bf952e92604debadd17534b52496cf1c6f6f11b3d43",
+          "assetPrompt": "Wide 4:3 wordless overview-only illustration for dynamic observation. Show exactly one complete full-body Bojji in one frozen low step-down from one plain low box, whole front foot controlled on the ground and trunk calm. Bojji is the only person; no Despa, no sequence and no duplicate figure. No text, arrows, medical symbols, detached limb, scattered mark, floor, room or extra equipment.",
+          "output": "runs/day60/image-requests/overview-01-observe-82993ee2f2/attempt-01/overview-01-observe.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T09:31:55.039131Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 633052,
+          "usablePng": true,
+          "sha256": "65cc467890b5d0972907193851e99696738f2a67d6620b93357d0ac56aa48628"
+        }
+      ],
+      "source": {
+        "path": "runs/day60/source/overview-01-observe.png",
+        "exists": false
+      },
+      "lastStatus": "generated-pending-quality-review"
+    },
+    {
+      "file": "overview-02-foot.png",
+      "role": "overview-item",
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "initial",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T09:33:48.038605Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nWide 4:3 wordless overview-only illustration for stable foot support. Show exactly one complete full-body Bojji standing relaxed, both black boots fully visible and evenly grounded, knees soft and trunk quiet. Bojji is the only person; no Despa, no sequence and no duplicate figure. No wall, labels, arrows, close-up anatomy, detached limb, scattered mark, floor, room or equipment.",
+          "promptSha256": "4646b4f2bdf8b64ed63305a574c15d02c322ce16ebcf13cfa0f52cc1912af801",
+          "assetPrompt": "Wide 4:3 wordless overview-only illustration for stable foot support. Show exactly one complete full-body Bojji standing relaxed, both black boots fully visible and evenly grounded, knees soft and trunk quiet. Bojji is the only person; no Despa, no sequence and no duplicate figure. No wall, labels, arrows, close-up anatomy, detached limb, scattered mark, floor, room or equipment.",
+          "output": "runs/day60/image-requests/overview-02-foot-ae695cbfba/attempt-01/overview-02-foot.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T09:34:19.685286Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 579487,
+          "usablePng": true,
+          "sha256": "128451144dc7b54eb5f2d8537f156296af051048aa7053308383d7f7f4364c5d"
+        }
+      ],
+      "source": {
+        "path": "runs/day60/source/overview-02-foot.png",
+        "exists": false
+      },
+      "lastStatus": "generated-pending-quality-review"
+    },
+    {
+      "file": "overview-03-hip-knee.png",
+      "role": "overview-item",
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "initial",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T09:37:23.191985Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nWide 4:3 wordless overview-only illustration for hip-knee coordination. Show exactly one complete full-body Despa in one frozen calm shallow split squat, level pelvis, stable front foot and knee naturally following the foot. Despa is the only person; no Bojji, no sequence and no duplicate figure. No bands, arrows, forced posture, text, detached limb, scattered mark, floor, room or equipment.",
+          "promptSha256": "1deef5ed98fae080d7f1bedb951e401a4fed135ffb0c8d2d0f2b2c741f701f2a",
+          "assetPrompt": "Wide 4:3 wordless overview-only illustration for hip-knee coordination. Show exactly one complete full-body Despa in one frozen calm shallow split squat, level pelvis, stable front foot and knee naturally following the foot. Despa is the only person; no Bojji, no sequence and no duplicate figure. No bands, arrows, forced posture, text, detached limb, scattered mark, floor, room or equipment.",
+          "output": "runs/day60/image-requests/overview-03-hip-knee-fd59702ef7/attempt-01/overview-03-hip-knee.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T09:37:57.303512Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 800045,
+          "usablePng": true,
+          "sha256": "62ae6f34a01994e5d4c755e3782fd589581f72573295063abeed28d8341d3994"
+        }
+      ],
+      "source": {
+        "path": "runs/day60/source/overview-03-hip-knee.png",
+        "exists": false
+      },
+      "lastStatus": "generated-pending-quality-review"
+    },
+    {
+      "file": "overview-04-squat.png",
+      "role": "overview-item",
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "initial",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T09:39:53.943173Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nWide 4:3 wordless overview-only illustration for gradual squat integration. Show exactly one complete full-body Bojji in one frozen low box squat, both feet grounded, knees naturally following the feet and trunk calm. Use one plain low box only. Bojji is the only person; no Despa, no sequence and no duplicate figure. No text, jump, arrows, bands, detached limb, scattered mark, floor, room or extra equipment.",
+          "promptSha256": "ab65dce7b3e5872624e9b2895ef97e2282053a7bb6c732794967e9ef6e40a309",
+          "assetPrompt": "Wide 4:3 wordless overview-only illustration for gradual squat integration. Show exactly one complete full-body Bojji in one frozen low box squat, both feet grounded, knees naturally following the feet and trunk calm. Use one plain low box only. Bojji is the only person; no Despa, no sequence and no duplicate figure. No text, jump, arrows, bands, detached limb, scattered mark, floor, room or extra equipment.",
+          "output": "runs/day60/image-requests/overview-04-squat-88f40af67e/attempt-01/overview-04-squat.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T09:40:30.188218Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 742367,
+          "usablePng": true,
+          "sha256": "5359c46fbe1babf14bf536f878fba945f8b5cf1a0d27b7e2f77b3d324bcfd7a8"
+        }
+      ],
+      "source": {
+        "path": "runs/day60/source/overview-04-squat.png",
+        "exists": false
+      },
+      "lastStatus": "generated-pending-quality-review"
+    }
+  ],
+  "provider": "Lingzhi",
+  "preset": "quality",
+  "model": "gpt-image-2.5-sunburst",
+  "input": "runs/day60/image-prompts.json",
+  "updatedAt": "2026-09-30T09:40:30.188635Z"
+}

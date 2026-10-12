@@ -1,0 +1,99 @@
+{
+  "provider": "Lingzhi",
+  "preset": "quality",
+  "model": "gpt-image-2.5-sunburst",
+  "authorization": "用户于2026-09-30授权每张图片首次请求后最多5次经调整提示词重试；本记录仅为Day55首轮。",
+  "updatedAt": "2026-09-30T06:30:05.308897Z",
+  "assets": [
+    {
+      "file": "cover.png",
+      "role": "cover",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day55/source/cover.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 1150521,
+      "sha256": "ee360851ee3c064ca1d5d823f4a39561c3f9f354492dcbaab9e6e0f4af4314b8"
+    },
+    {
+      "file": "visual-01-output.png",
+      "role": "knowledge",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day55/source/visual-01-output.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 732918,
+      "sha256": "8ccdcc3021e12c98df27034d99916516033b2200211c4c871e4b93e701acd63b"
+    },
+    {
+      "file": "visual-02-variables.png",
+      "role": "knowledge",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day55/source/visual-02-variables.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 1142635,
+      "sha256": "25e72c5a8efba2ae02cc98131e15b8f7b40ff5bd3d727b19edc99bb74d64a840"
+    },
+    {
+      "file": "visual-03-rest.png",
+      "role": "knowledge",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day55/source/visual-03-rest.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 867300,
+      "sha256": "f3adeff765bdd7e78fc9e9fc6c2cbf134b0a438624dc3cdd045a0e4247423c9e"
+    },
+    {
+      "file": "visual-04-safety.png",
+      "role": "knowledge",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day55/source/visual-04-safety.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 835489,
+      "sha256": "6dfd80a17db2393279f72bb057fef00bb23aacd0ec2c02e51234d23d07fb1df7"
+    },
+    {
+      "file": "overview-01-output.png",
+      "role": "overview-item",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day55/source/overview-01-output.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 912828,
+      "sha256": "2a296221e712a858f5491be69fff80bf98e697754e8fb9672aea41f131a5647c"
+    },
+    {
+      "file": "overview-02-variables.png",
+      "role": "overview-item",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day55/source/overview-02-variables.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 1020220,
+      "sha256": "14d0ce3ce7e1a5f0a1b77d003f7948472b92cd3a9467b98dbc23957ea58c577c"
+    },
+    {
+      "file": "overview-03-rest.png",
+      "role": "overview-item",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day55/source/overview-03-rest.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 1003992,
+      "sha256": "7e9274446f4376173ded208b40ba53ec26fcc518a3fb00d87f02a76ada6510fd"
+    },
+    {
+      "file": "overview-04-safety.png",
+      "role": "overview-item",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day55/source/overview-04-safety.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 1034961,
+      "sha256": "71ca265ba7febadd62b99f80da2d89c0ada6287691e13d9d98e3b967a937e1e8"
+    }
+  ]
+}

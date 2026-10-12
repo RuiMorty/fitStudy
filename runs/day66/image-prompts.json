@@ -1,0 +1,50 @@
+{
+  "commonPrompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.",
+  "assets": [
+    {
+      "file": "cover.png",
+      "role": "cover",
+      "prompt": "Wide 16:9 wordless course cover. Exactly one Despa takes a small drink from a plain clear water bottle during a warm outdoor walk; exactly one Bojji rests in a shaded spot with a plain cup. Explain measured hydration and heat-aware rest. No sun icon, temperature, text, electrolyte branding or medical symbols. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    },
+    {
+      "file": "visual-01-sweat.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Despa performs a light outdoor jog in simple breathable clothing; exactly one Bojji performs an indoor easy walk with a plain cup. Explain that environment and task change fluid loss. No sweat labels, thermometer, charts, text or visible wetness exaggeration. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    },
+    {
+      "file": "visual-02-timing.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Bojji takes a small drink before a gentle warm-up; exactly one Despa takes a small drink after a relaxed cool-down, with two separate plain cups. Explain before-during-after distributed hydration without clock, numbers, arrows, text or giant bottles. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    },
+    {
+      "file": "visual-03-electrolytes.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Despa finishes a long easy walk and holds a plain bowl of a normal meal with water; exactly one Bojji holds a small unbranded cup. Explain that long sweating requires a broader food-and-fluid plan, not excessive plain water. No salt shaker label, powders, bottles, symbols or text. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    },
+    {
+      "file": "visual-04-heat.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Bojji sits comfortably in shade with a plain cup after stopping exercise; exactly one Despa uses an open hand to signal a calm rest break. Explain heat adaptation, pacing and rest. No emergency drama, red icons, sun symbols, text or medical equipment. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    },
+    {
+      "file": "overview-01-sweat.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Despa lightly jogs outdoors; exactly one Bojji walks indoors with a plain cup. Explain changing sweat conditions. No thermometer, charts, text or symbols. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    },
+    {
+      "file": "overview-02-timing.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Bojji takes a small drink before a warm-up; exactly one Despa drinks after a cool-down. Explain distributed hydration. No clock, numbers or text. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    },
+    {
+      "file": "overview-03-electrolytes.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Despa holds a normal meal bowl and water after a long walk; exactly one Bojji observes with a small plain cup. Explain food-and-fluid planning. No salt label, powder or text. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    },
+    {
+      "file": "overview-04-heat.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Bojji rests in a shaded calm spot while exactly one Despa signals a rest break. Explain heat safety. No danger icon, sun symbol or text. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    }
+  ]
+}

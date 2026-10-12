@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Day 56 · OPT第5阶段：爆发力训练</title><link rel="icon" type="image/svg+xml" href="assets/fitness-study-logo-open-circle.svg?v=a6d8e5caaa61"><style>:root { color-scheme: light; --ink: #111113; --muted: #71717a; --line: #e4e4e7; --accent: #ff5a1f; --green: #0ea66b; --blue: #2563eb; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; font-synthesis: none; letter-spacing: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); overflow-wrap: anywhere; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+img { display: block; max-width: 100%; }
+button:focus-visible, a:focus-visible, summary:focus-visible, input:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
+svg.icon { width: 20px; height: 20px; }
+.icon-button { display: inline-grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 1px solid var(--line); border-radius: 6px; background: white; }
+[hidden] { display: none !important; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
+
+body { background: #f6f8f7; font-size: 14px; line-height: 1.65; }
+main { max-width: 980px; margin: auto; padding: 24px 18px 60px; }
+.header { padding: 22px 4px 14px; }
+h1 { margin: 10px 0 8px; font-size: 36px; line-height: 1.2; }
+h1::before { content: ""; display: block; width: 34px; height: 4px; background: var(--accent); margin-bottom: 10px; }
+h2 { font-size: 17px; margin: 0 0 14px; }
+h3 { font-size: 16px; margin: 0 0 8px; }
+.sub { color: var(--muted); margin: 5px 0 18px; }
+.meta { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { display: inline-block; border: 1px solid var(--line); border-radius: 20px; background: white; color: var(--muted); padding: 3px 10px; font-size: 12px; font-weight: 600; }
+.chip:nth-child(1) { background: #e2f7eb; color: #15803d; border-color: transparent; }
+.chip:nth-child(2) { background: #e7f0fe; color: #2563eb; border-color: transparent; }
+.chip:nth-child(3) { background: #fff2e5; color: #9a4c05; border-color: transparent; }
+.panel, .figure, .warn, .mnemonic { background: white; border: 1px solid #e2e8e4; border-radius: 14px; box-shadow: 0 2px 12px rgba(20,40,30,.06); padding: 20px; margin: 16px 0; }
+.green { border-left: 5px solid var(--green); }
+.orange { border-left: 5px solid #ea7a17; }
+.blue { border-left: 5px solid #0ea5e9; }
+.takeaway { margin: 0; }
+.figure { text-align: center; }
+.figure button { display: block; position: relative; width: 100%; border: 0; padding: 0; background: white; cursor: zoom-in; }
+.figure img { max-height: 760px; width: 100%; object-fit: contain; }
+.figure .icon-button { position: absolute; bottom: 8px; right: 8px; background: #ffffffed; }
+.caption { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
+.kp { list-style: none; padding: 0; margin: 0; }
+.kp > li { border-bottom: 1px dashed #e2e8e4; }
+.kp > li:last-child { border-bottom: 0; }
+.kp summary { cursor: pointer; padding: 13px 8px; font-weight: 650; }
+.kp summary::marker { color: var(--green); }
+.term { color: #0a7d52; background: #e2f7eb; border-radius: 6px; padding: 1px 5px; }
+.kp-body { padding: 2px 14px 16px 24px; }
+.detail-block { margin: 12px 0; }
+.detail-block h4 { font-size: 13px; color: #08744d; margin: 0 0 4px; }
+.detail-block p { margin: 0; white-space: pre-line; }
+.warn { border-left: 5px solid #e23b3b; background: #fffafa; }
+.warn p { margin: 8px 0; }
+.misconception { color: #a82b32; }
+.mnemonic { border-left: 4px solid var(--accent); box-shadow: none; }
+.mnemonic strong { color: #df4716; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+.flip { height: 168px; perspective: 900px; border: 0; background: transparent; padding: 0; text-align: center; }
+.flip-in { display: block; height: 100%; position: relative; transition: transform .45s; transform-style: preserve-3d; }
+.flip[aria-pressed="true"] .flip-in { transform: rotateY(180deg); }
+.face { position: absolute; inset: 0; backface-visibility: hidden; border: 1px solid var(--line); border-radius: 10px; padding: 15px; background: #fafafa; display: flex; align-items: center; justify-content: center; overflow-y: auto; }
+.back { transform: rotateY(180deg); background: #eef9f4; color: #075e40; border-color: #c8eadb; }
+.practice { padding-left: 20px; }
+.practice li { margin: 7px 0; }
+.question { border-top: 1px solid #e2e8e4; padding: 20px 0 8px; margin-top: 12px; min-width: 0; }
+.options { display: grid; gap: 7px; margin: 10px 0; }
+.option { display: flex; gap: 10px; align-items: baseline; border: 1px solid #e2e8e4; background: #f0f4f2; padding: 9px 12px; border-radius: 8px; cursor: pointer; }
+.option input { flex-shrink: 0; accent-color: var(--green); }
+.option:has(input:checked) { border-color: #0ea5e9; background: #e7f6fd; }
+.question[data-result="correct"] .option:has(input:checked) { border-color: #0ea66b; background: #e7f8ef; }
+.question[data-result="wrong"] .option:has(input:checked) { border-color: #e23b3b; background: #fff0f0; }
+.answer { background: #f8fbfa; border-left: 3px solid #0ea5e9; padding: 10px; margin-top: 10px; }
+.check { border: 0; background: #0ea66b; color: white; padding: 9px 14px; border-radius: 7px; }
+footer { color: var(--muted); font-size: 12px; margin-top: 28px; }
+footer ul { padding-left: 20px; }
+dialog { width: min(1200px, 96vw); max-height: 94dvh; padding: 52px 16px 16px; border: 0; border-radius: 8px; background: white; }
+dialog::backdrop { background: #15191dd9; }
+dialog img { width: 100%; max-height: 78dvh; object-fit: contain; }
+dialog .icon-button { position: absolute; top: 8px; right: 10px; }
+@media (max-width: 600px) {
+  main { padding: 16px 12px 40px; }
+  h1 { font-size: 26px; }
+  .header { padding: 16px 4px 12px; }
+  .panel, .figure, .warn, .mnemonic { padding: 15px; }
+  .kp-body { padding-left: 16px; }
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .face { padding: 12px; }
+}
+</style></head><body><main><header class="header"><h1>Day 56 · OPT第5阶段：爆发力训练</h1><p class="sub">在力量基础和可控落地上，把力量更快地用出来。</p><div class="meta"><span class="chip">OPT第5阶段</span><span class="chip">爆发力</span><span class="chip">复合训练</span></div></header><section class="panel green"><h2>一句话总结</h2><p class="takeaway">OPT第5阶段以发力速率（RFD）为目标，常用复合训练把重负荷力量动作与相近模式的爆发动作配对，例如深蹲后纵跳。常见框架为3—5组、1—5次、意图快速的X—X—X节奏和3—5分钟恢复；下肢爆发动作常从自重或极轻负荷开始，上肢可用轻中等负荷。第4阶段的力量基础、动作技术和可控落地是前提：跳得更高或更快从不该以膝髋塌陷、疼痛或疲劳下失控为代价。</p></section><figure class="figure"><button data-zoom aria-label="放大详情图"><img class="" src="assets/阶段3 OPT训练模型/day56-OPT第5阶段：爆发力训练.png" alt="OPT第5阶段爆发力训练四主题中文总览"><span class="icon-button"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 15 6 6" /><path d="m15 9 6-6" /><path d="M21 16v5h-5" /><path d="M21 8V3h-5" /><path d="M3 16v5h5" /><path d="m3 21 6-6" /><path d="M3 8V3h5" /><path d="M9 9 3 3" /></svg></span></button><figcaption class="caption">爆发力训练把力量与速度结合；重负荷动作、爆发动作、落地质量和充分恢复必须共同安排。</figcaption></figure><section class="panel"><h2>核心要点</h2><ul class="kp"><li><details><summary><span class="term">目标：把力量更快地用出来</span>：爆发力不等于盲目跳跃，而是在合适动作和负荷下提高发力速率（RFD）。</summary><div class="kp-body"><section class="detail-block"><h4>力量是底座</h4><p>最大力量提供可调用的基础，但爆发力还要求在较短时间内产生力量。第5阶段通常建立在稳定的第4阶段力量与动作技术之上；无法控制基础深蹲、推或髋铰链时，先不急于增加跳跃或投掷。</p></section><section class="detail-block"><h4>速度不牺牲位置</h4><p>快速意图来自清楚的准备姿势、关节对线和可预测的轨迹。速度一提高就出现膝内扣、躯干失控、疼痛或落地很重时，应降低高度、距离、负荷或回到基础版本。</p></section></div></details></li><li><details><summary><span class="term">复合训练：重动作配爆发动作</span>：同一训练单元可先做熟练的重负荷力量动作，再做相近模式的快速动作；配对不是越复杂越好。</summary><div class="kp-body"><section class="detail-block"><h4>模式要相近</h4><p>深蹲可配低量纵跳或跳箱，卧推可配轻药球胸前抛，髋铰链可配低量跳跃。动作方向和目的相近，才便于比较质量；不要把陌生动作、复杂技巧或疲劳游戏硬凑成“复合训练”。</p></section><section class="detail-block"><h4>质量优先于数量</h4><p>每一次爆发动作都应有清晰起跳、着地或接球位置。高度、距离或速度连续下降时，结束该组、增加恢复或调整版本；不为凑次数在疲劳下重复糟糕动作。</p></section></div></details></li><li><details><summary><span class="term">负荷与次数：轻到能快速完成</span>：常见处方为3—5组、1—5次和3—5分钟恢复；下肢跳跃常以自重或极轻负荷起步，上肢投掷可用轻中等负荷。</summary><div class="kp-body"><section class="detail-block"><h4>百分比不是唯一开关</h4><p>上肢约30%—45%1RM、下肢爆发动作约0%—10%1RM是常见参考，不是每个人的固定答案。动作速度、稳定性、器材和经验决定实际选择；不会稳定接球、落地或控制轨迹，就不加重量。</p></section><section class="detail-block"><h4>少而清楚</h4><p>爆发训练的每次重复都应当有意图和恢复。与其在一次课里做大量疲劳跳跃，不如用较少、较高质量的重复，并给力量动作、爆发动作和下一组都留出足够恢复。</p></section></div></details></li><li><details><summary><span class="term">落地与恢复：先会吸收再追求输出</span>：跳跃、投掷和快速转换都需要安全的制动与恢复；记录质量比只记次数更有用。</summary><div class="kp-body"><section class="detail-block"><h4>落地先安静稳定</h4><p>落地时全脚掌可控接触地面，膝盖大致沿脚尖方向、躯干能稳定，随后再选择下一次动作。落地噪声很大、膝内扣、疼痛、头晕或无法平衡时停止并寻求专业评估。</p></section><section class="detail-block"><h4>恢复决定下一次速度</h4><p>3—5分钟组间恢复常用于让下一次力量与速度仍有质量。睡眠、关节反应、训练总量和场地条件都会影响准备状态；把恢复不足时的回退写进计划，不把硬做当作进阶。</p></section></div></details></li></ul></section><section class="warn"><h2>常见误区</h2><p><strong class="misconception">误区：爆发力训练就是尽可能多跳、多做、做到累。</strong><br>辨析：爆发力重视每次速度和位置；质量下降、落地失控或疼痛时应停止、恢复或回退。</p><p><strong class="misconception">误区：深蹲后随便配任何高难跳跃都叫复合训练。</strong><br>辨析：重动作与爆发动作应模式相近、技术熟练且可控；陌生高风险动作不应因“配对”而加入。</p><p><strong class="misconception">误区：下肢爆发一定要加很重的重量。</strong><br>辨析：下肢爆发动作常从自重或极轻负荷开始；速度、落地和稳定性比盲目加重更重要。</p><p><strong class="misconception">误区：跳得高就代表落地不需要练。</strong><br>辨析：制动和落地是爆发力训练的安全前提；膝髋对线、平衡与无疼痛必须持续检查。</p></section><section class="mnemonic"><h2>记忆口诀</h2><p><strong>力量打底，模式配对；快但不乱，轻但有力；先稳落地，再求高度。</strong></p></section><section class="panel"><h2>翻转卡复习</h2><div class="cards"><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">OPT第5阶段的主要目标？</span><span class="face back" aria-hidden="true">提高发力速率，把已有力量更快地用出来。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">什么是复合训练配对？</span><span class="face back" aria-hidden="true">先做熟练力量动作，再配相近模式的爆发动作。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">下肢爆发动作常从何种负荷开始？</span><span class="face back" aria-hidden="true">常从自重或极轻负荷开始，再依动作质量进阶。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">爆发训练为何需要3—5分钟恢复？</span><span class="face back" aria-hidden="true">让下一组仍保持力量、速度、落地和轨迹质量。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">何时应停止爆发动作？</span><span class="face back" aria-hidden="true">高度或速度下降、落地失控、疼痛、眩晕或无法平衡时。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">安全落地的首要检查？</span><span class="face back" aria-hidden="true">可控接触、膝髋对线、稳定平衡和无疼痛。</span></span></button></div></section><section class="panel orange"><h2>实操关联</h2><ul class="practice"><li>为一个熟练深蹲选择低量自重纵跳或低箱跳配对，先写下高度、场地、落地和停止规则。</li><li>练习安静落地：每次着地后停住两秒，检查膝盖方向、足底接触和躯干稳定。</li><li>将一组爆发动作控制在质量未下降前，记录起跳或投掷质量，而不只记录完成次数。</li><li>如果睡眠、关节反应或场地条件变差，降低高度和次数，或回到力量与稳定练习。</li></ul></section><section class="panel blue"><h2>练习题</h2><section class="question" data-answers="[1]" data-explanation="爆发力训练追求高质量速度输出，需以力量基础、技术和恢复支持。"><h3>1. 单选：哪项最符合OPT第5阶段的目标？</h3><div class="options"><label class="option"><input type="radio" name="question-0" value="0"><span>A. 把训练做得越累越好</span></label><label class="option"><input type="radio" name="question-0" value="1"><span>B. 在可控动作中提高发力速率</span></label><label class="option"><input type="radio" name="question-0" value="2"><span>C. 跳跃时忽略落地</span></label><label class="option"><input type="radio" name="question-0" value="3"><span>D. 取消所有组间休息</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[1]" data-explanation="复合配对需要熟练、相近模式和可控落地，不应为复杂而复杂。"><h3>2. 单选：深蹲后配低量纵跳的合理前提是？</h3><div class="options"><label class="option"><input type="radio" name="question-1" value="0"><span>A. 纵跳越陌生越有刺激</span></label><label class="option"><input type="radio" name="question-1" value="1"><span>B. 基础深蹲和落地均已能稳定控制</span></label><label class="option"><input type="radio" name="question-1" value="2"><span>C. 必须先做到力竭</span></label><label class="option"><input type="radio" name="question-1" value="3"><span>D. 无需考虑场地</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[0,1,2,4]" data-explanation="质量、疼痛、平衡和安全条件是进退依据；稳定高质量表现才支持继续。"><h3>3. 多选：哪些情况提示应调整或停止当前爆发训练？</h3><div class="options"><label class="option"><input type="checkbox" name="question-2" value="0"><span>A. 高度和速度连续下降</span></label><label class="option"><input type="checkbox" name="question-2" value="1"><span>B. 膝内扣或无法平衡</span></label><label class="option"><input type="checkbox" name="question-2" value="2"><span>C. 出现疼痛或眩晕</span></label><label class="option"><input type="checkbox" name="question-2" value="3"><span>D. 每次落地都安静稳定</span></label><label class="option"><input type="checkbox" name="question-2" value="4"><span>E. 保护条件不足</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[2]" data-explanation="落地质量已经下降。先停止、恢复并回退到可控版本，才符合爆发力训练的安全逻辑。"><h3>4. 案例：小周深蹲后做跳箱。第三次开始落地很响、膝盖向内，仍想加高箱子。更合适的是？</h3><div class="options"><label class="option"><input type="radio" name="question-3" value="0"><span>A. 加高箱子提高刺激</span></label><label class="option"><input type="radio" name="question-3" value="1"><span>B. 继续跳到计划次数</span></label><label class="option"><input type="radio" name="question-3" value="2"><span>C. 停止该组，降低高度或回到稳定落地练习</span></label><label class="option"><input type="radio" name="question-3" value="3"><span>D. 缩短休息并加快节奏</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section></section><footer>Day 56/77 · NASM<ul><li>NASM：Optimum Performance Training Model，Phase 5 Power 的变量与复合训练框架。</li><li>NSCA：Essentials of Strength Training and Conditioning，第4版，爆发力、跳跃与训练负荷原则。</li><li>ACSM：ACSM&#39;s Guidelines for Exercise Testing and Prescription，第11版，阻力训练进阶与安全原则。</li><li>本课为一般健身教育；疼痛、眩晕、麻木、异常气促、近期伤病或疾病恢复期，请停止训练并咨询医疗或运动专业人员。</li></ul></footer></main><dialog aria-label="详情大图"><button class="icon-button" aria-label="关闭大图" title="关闭大图"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></button><img alt=""></dialog><script>document.querySelectorAll('.flip').forEach((button) => {
+  button.addEventListener('click', () => {
+    const pressed = button.getAttribute('aria-pressed') !== 'true';
+    button.setAttribute('aria-pressed', String(pressed));
+    button.querySelector('.front').setAttribute('aria-hidden', String(pressed));
+    button.querySelector('.back').setAttribute('aria-hidden', String(!pressed));
+  });
+});
+document.querySelectorAll('.question').forEach((question) => {
+  question.querySelector('.check').addEventListener('click', () => {
+    const selected = [...question.querySelectorAll('input:checked')].map((input) => Number(input.value)).sort();
+    const answer = question.querySelector('.answer');
+    answer.hidden = false;
+    if (!selected.length) { answer.textContent = '请先选择答案。'; delete question.dataset.result; return; }
+    const correct = JSON.stringify(selected) === JSON.stringify(JSON.parse(question.dataset.answers).sort());
+    question.dataset.result = correct ? 'correct' : 'wrong';
+    answer.textContent = `${correct ? '回答正确。' : '再想一想。'}${question.dataset.explanation}`;
+  });
+});
+const imageDialog = document.querySelector('dialog');
+document.querySelectorAll('[data-zoom]').forEach((button) => {
+  button.addEventListener('click', () => {
+    const original = button.querySelector('img');
+    const image = imageDialog.querySelector('img');
+    image.src = original.src;
+    image.alt = original.alt;
+    imageDialog.showModal();
+  });
+});
+imageDialog.querySelector('button').addEventListener('click', () => imageDialog.close());
+imageDialog.addEventListener('click', (event) => {
+  const rect = imageDialog.getBoundingClientRect();
+  if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) imageDialog.close();
+});
+</script></body></html>

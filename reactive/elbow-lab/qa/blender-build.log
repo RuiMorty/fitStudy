@@ -1,0 +1,46 @@
+/Users/agiuser/Documents/fit/reactive/elbow-lab/blender/build_elbow.py:23: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(name);m.diffuse_color=(*color,alpha);m.use_nodes=True
+信息: 已另存为 "elbow-right.blend"
+INFO Draco is available, use library at /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_draco_bridge.dylib
+INFO MeshOptimizer is available, use library at /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_meshopt_bridge.dylib
+11:04:14 | INFO: Starting glTF 2.0 export
+11:04:14 | INFO: Extracting primitive: shaft_mesh
+11:04:14 | INFO: Primitives created: 1
+11:04:14 | INFO: Extracting primitive: blade_mesh
+11:04:14 | INFO: Primitives created: 1
+11:04:14 | INFO: Extracting primitive: fascia_brachial_R_mesh
+11:04:14 | INFO: Primitives created: 1
+11:04:14 | INFO: Extracting primitive: radius_shaft_mesh
+11:04:14 | INFO: Primitives created: 1
+11:04:14 | INFO: Extracting primitive: ulna_shaft_mesh
+11:04:14 | INFO: Primitives created: 1
+11:04:14 | INFO: Extracting primitive: muscle_biceps_long_R_mesh
+11:04:14 | INFO: Primitives created: 1
+11:04:14 | INFO: Extracting primitive: muscle_biceps_short_R_mesh
+11:04:14 | INFO: Primitives created: 1
+11:04:14 | INFO: Extracting primitive: muscle_brachialis_R_mesh
+11:04:14 | INFO: Primitives created: 1
+11:04:14 | INFO: Extracting primitive: muscle_triceps_lateral_R_mesh
+11:04:14 | INFO: Primitives created: 1
+11:04:14 | INFO: Extracting primitive: muscle_triceps_long_R_mesh
+11:04:14 | INFO: Primitives created: 1
+11:04:14 | INFO: Extracting primitive: muscle_triceps_medial_R_mesh
+11:04:14 | INFO: Primitives created: 1
+11:04:14 | INFO: Extracting primitive: tendon_biceps_distal_R_mesh
+11:04:14 | INFO: Primitives created: 1
+11:04:14 | INFO: Extracting primitive: tendon_biceps_long_prox_R_mesh
+11:04:14 | INFO: Primitives created: 1
+11:04:14 | INFO: Extracting primitive: tendon_biceps_short_prox_R_mesh
+11:04:14 | INFO: Primitives created: 1
+11:04:14 | INFO: Extracting primitive: tendon_brachialis_distal_R_mesh
+11:04:14 | INFO: Primitives created: 1
+11:04:14 | INFO: Extracting primitive: tendon_triceps_distal_R_mesh
+11:04:14 | INFO: Primitives created: 1
+11:04:14 | INFO: Extracting primitive: tendon_triceps_long_prox_R_mesh
+11:04:14 | INFO: Primitives created: 1
+11:04:14 | INFO: Finished glTF 2.0 export in 0.19921517372131348 s
+
+BUILD_COMPLETE 17 structures; 31 total objects
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 01:35:57)
+
+Blender quit

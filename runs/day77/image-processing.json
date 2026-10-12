@@ -1,0 +1,357 @@
+{
+  "processedAt": "2026-09-30T21:27:33.088481+00:00",
+  "method": "trim near-transparent noise; reviewed crop; uniform scale; transparent margin",
+  "assets": [
+    {
+      "source": "runs/day77/source/cover.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "sourceSha256": "c3840075fbbf4afce56e2a356e32136d4d37f4d26478b03da95b32147e9aef48",
+      "reviewedCrop": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "visibleCrop": [
+        366,
+        18,
+        1406,
+        881
+      ],
+      "output": "runs/day77/assets/cover.png",
+      "size": [
+        1600,
+        900
+      ],
+      "subjectSize": [
+        954,
+        792
+      ],
+      "offset": [
+        323,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "无字封面"
+    },
+    {
+      "source": "runs/day77/source/visual-01-function.png",
+      "sourceSize": [
+        2210,
+        711
+      ],
+      "sourceSha256": "c04ac5d0ff572227e9fb71afe4347319e4d6b56ee4426cdfb16c8b55d377b72b",
+      "reviewedCrop": [
+        0,
+        0,
+        2210,
+        711
+      ],
+      "visibleCrop": [
+        365,
+        12,
+        1651,
+        689
+      ],
+      "output": "runs/day77/assets/visual-01-function.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1286,
+        677
+      ],
+      "offset": [
+        757,
+        111
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "小红书独立知识页，无字"
+    },
+    {
+      "source": "runs/day77/source/visual-02-bone-joint.png",
+      "sourceSize": [
+        2210,
+        711
+      ],
+      "sourceSha256": "ddc92ef565067950d448c198dc80037780c2d23298c7c2ab512ae8a261f07f2c",
+      "reviewedCrop": [
+        0,
+        0,
+        2210,
+        711
+      ],
+      "visibleCrop": [
+        535,
+        4,
+        1859,
+        693
+      ],
+      "output": "runs/day77/assets/visual-02-bone-joint.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1324,
+        689
+      ],
+      "offset": [
+        738,
+        105
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "小红书独立知识页，无字"
+    },
+    {
+      "source": "runs/day77/source/visual-03-demand.png",
+      "sourceSize": [
+        2210,
+        711
+      ],
+      "sourceSha256": "815e62254404fead18d886c90c48c88a5bd5985885ef642180b9e546406ded54",
+      "reviewedCrop": [
+        0,
+        0,
+        2210,
+        711
+      ],
+      "visibleCrop": [
+        519,
+        0,
+        1718,
+        711
+      ],
+      "output": "runs/day77/assets/visual-03-demand.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1199,
+        711
+      ],
+      "offset": [
+        800,
+        94
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "小红书独立知识页，无字"
+    },
+    {
+      "source": "runs/day77/source/visual-04-reds.png",
+      "sourceSize": [
+        2212,
+        711
+      ],
+      "sourceSha256": "b536150226a4f7d74511bc6826d3a7049e9e051651a4e94ae5662f90a768790d",
+      "reviewedCrop": [
+        0,
+        0,
+        2212,
+        711
+      ],
+      "visibleCrop": [
+        496,
+        12,
+        1664,
+        690
+      ],
+      "output": "runs/day77/assets/visual-04-reds.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1168,
+        678
+      ],
+      "offset": [
+        816,
+        111
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "小红书独立知识页，无字"
+    },
+    {
+      "source": "runs/day77/source/overview-01-function.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "1a7045676de2cf7952016fd088e1c395a4c361a4173b5df5dbf174fcfb30d718",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        69,
+        26,
+        1381,
+        1039
+      ],
+      "output": "runs/day77/assets/overview-01-function.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1312,
+        1013
+      ],
+      "offset": [
+        144,
+        93
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day77/source/overview-02-bone-joint.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "bb560d253798111beb7dc5dab83d1b369daeffd948bd128933e6f2b86bf1f1d0",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        146,
+        38,
+        1384,
+        1009
+      ],
+      "output": "runs/day77/assets/overview-02-bone-joint.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1238,
+        971
+      ],
+      "offset": [
+        181,
+        114
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day77/source/overview-03-demand.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "a16663da1ba3200e726cd185494606b9aedb6a74ca218f2feeefb8cc9d95b7ad",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        19,
+        21,
+        1434,
+        998
+      ],
+      "output": "runs/day77/assets/overview-03-demand.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1415,
+        977
+      ],
+      "offset": [
+        92,
+        111
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day77/source/overview-04-reds.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "b46adf65a75e35f2956b7f261f81473612cd329590d05a521c42df727539b509",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        110,
+        46,
+        1421,
+        1032
+      ],
+      "output": "runs/day77/assets/overview-04-reds.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1311,
+        986
+      ],
+      "offset": [
+        144,
+        107
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    }
+  ]
+}

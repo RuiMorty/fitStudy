@@ -1,0 +1,60 @@
+{
+  "commonPrompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper background, loose paper sheets, border, sticker edge, shadow, or halo. A small unmarked rigid evidence card is allowed as a prop. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.",
+  "assets": [
+    {
+      "file": "cover.png",
+      "role": "cover",
+      "prompt": "Wide 16:9 wordless single-scene course cover. Despa and Bojji calmly review a closed plain emergency-equipment case, a small closed first-aid box, and one unmarked rigid route card held at waist height. No wall, room, exit path, emergency scenario, patient, device operation, CPR/AED procedure, medical intervention, ground plane, cast shadow, text, or logos. Keep exactly one Bojji and one Despa, both full bodies visible when practical. Explain one course theme through one coherent current situation, never sequence frames. No duplicate figures, alternate poses, motion trails, arrows, readable signs, text, numbers, labels or unrelated equipment."
+    },
+    {
+      "file": "visual-01.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Despa holds a closed plain emergency-equipment case while Bojji holds a small closed first-aid box and one unmarked rigid route card at waist height, calmly reviewing an EAP plan. No wall, room, emergency scene, patient, device operation, CPR/AED procedure, medical intervention, ground plane, or cast shadow. Keep exactly one Bojji and one Despa. Use one continuous current pose to explain “EAP覆盖五类要素”, with all limbs and props fully visible. No duplicate figures, alternate poses, sequence frames, arrows, motion trails, text, numbers, labels, readable screens, blue circles or unrelated equipment."
+    },
+    {
+      "file": "visual-02.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Bojji holds a closed plain emergency-equipment case at waist height while Despa holds a small closed first-aid box, showing accessible readiness rather than use. No wall, floor, room, logos, text, patient, device operation, CPR/AED procedure, medical intervention, ground plane, or cast shadow. Keep exactly one Bojji and one Despa. Use one continuous current pose to explain “设备与联系人保持可用”, with all limbs and props fully visible. No duplicate figures, alternate poses, sequence frames, arrows, motion trails, text, numbers, labels, readable screens, blue circles or unrelated equipment."
+    },
+    {
+      "file": "visual-03.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Despa respectfully holds a closed plain certificate folder while Bojji holds a closed generic emergency-equipment case at waist height, emphasizing certification preparation not procedure. No wall, room, text, patient, device operation, CPR/AED procedure, medical intervention, ground plane, or cast shadow. Keep exactly one Bojji and one Despa. Use one continuous current pose to explain “认证不等于看一遍教程”, with all limbs and props fully visible. No duplicate figures, alternate poses, sequence frames, arrows, motion trails, text, numbers, labels, readable screens, blue circles or unrelated equipment."
+    },
+    {
+      "file": "visual-04.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Despa and Bojji stand with one unmarked rigid route card between them in a calm planning pose, showing role coordination only. No wall, room, emergency, patient, person lying down, device, device operation, CPR/AED procedure, medical intervention, ground plane, or cast shadow. Keep exactly one Bojji and one Despa. Use one continuous current pose to explain “演练识别、呼叫、分工、记录”, with all limbs and props fully visible. No duplicate figures, alternate poses, sequence frames, arrows, motion trails, text, numbers, labels, readable screens, blue circles or unrelated equipment."
+    },
+    {
+      "file": "visual-05.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Despa holds one small unmarked rigid maintenance card while Bojji holds a closed simple first-aid box at waist height, showing calm routine review. No wall, room, checklist text, patient, device operation, CPR/AED procedure, medical intervention, ground plane, or cast shadow. Keep exactly one Bojji and one Despa. Use one continuous current pose to explain “定期检查与事件后改进”, with all limbs and props fully visible. No duplicate figures, alternate poses, sequence frames, arrows, motion trails, text, numbers, labels, readable screens, blue circles or unrelated equipment."
+    },
+    {
+      "file": "overview-01.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Despa holds a closed plain emergency-equipment case while Bojji holds a small closed first-aid box and one unmarked rigid route card at waist height, calmly reviewing an EAP plan. No wall, room, emergency scene, patient, device operation, CPR/AED procedure, medical intervention, ground plane, or cast shadow. Keep exactly one Bojji and one Despa. Compose specifically for a compact overview panel and do not reuse a knowledge-page composition. No duplicate figures, alternate poses, sequence frames, text, numbers, labels, arrows, motion trails or unrelated equipment."
+    },
+    {
+      "file": "overview-02.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Bojji holds a closed plain emergency-equipment case at waist height while Despa holds a small closed first-aid box, showing accessible readiness rather than use. No wall, floor, room, logos, text, patient, device operation, CPR/AED procedure, medical intervention, ground plane, or cast shadow. Keep exactly one Bojji and one Despa. Compose specifically for a compact overview panel and do not reuse a knowledge-page composition. No duplicate figures, alternate poses, sequence frames, text, numbers, labels, arrows, motion trails or unrelated equipment."
+    },
+    {
+      "file": "overview-03.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Despa respectfully holds a closed plain certificate folder while Bojji holds a closed generic emergency-equipment case at waist height, emphasizing certification preparation not procedure. No wall, room, text, patient, device operation, CPR/AED procedure, medical intervention, ground plane, or cast shadow. Keep exactly one Bojji and one Despa. Compose specifically for a compact overview panel and do not reuse a knowledge-page composition. No duplicate figures, alternate poses, sequence frames, text, numbers, labels, arrows, motion trails or unrelated equipment."
+    },
+    {
+      "file": "overview-04.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Despa and Bojji stand with one unmarked rigid route card between them in a calm planning pose, showing role coordination only. No wall, room, emergency, patient, person lying down, device, device operation, CPR/AED procedure, medical intervention, ground plane, or cast shadow. Keep exactly one Bojji and one Despa. Compose specifically for a compact overview panel and do not reuse a knowledge-page composition. No duplicate figures, alternate poses, sequence frames, text, numbers, labels, arrows, motion trails or unrelated equipment."
+    },
+    {
+      "file": "overview-05.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Despa holds one small unmarked rigid maintenance card while Bojji holds a closed simple first-aid box at waist height, showing calm routine review. No wall, room, checklist text, patient, device operation, CPR/AED procedure, medical intervention, ground plane, or cast shadow. Keep exactly one Bojji and one Despa. Compose specifically for a compact overview panel and do not reuse a knowledge-page composition. No duplicate figures, alternate poses, sequence frames, text, numbers, labels, arrows, motion trails or unrelated equipment."
+    }
+  ]
+}

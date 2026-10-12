@@ -1,0 +1,23 @@
+{
+  "day": 79,
+  "title": "目标设置与动机",
+  "status": "awaiting-review",
+  "artifactStatus": "ready-local-draft",
+  "authorization": "用户于2026-09-30授权连续生成后续本地草稿；每张图片首次请求后最多5次经调整提示词重试，始终不部署。",
+  "imagePlan": "runs/day79/image-prompts.json",
+  "retryPolicy": "每张图片首次请求后，最多5次经调整提示词的重试；成功即停止。",
+  "generated": 9,
+  "planned": 9,
+  "requested": 21,
+  "qualityAccepted": 9,
+  "imagesAccepted": true,
+  "sourceQualityReview": "runs/day79/visual-quality-review.json",
+  "verification": {
+    "sharedTests": "passed 17/17",
+    "isolatedPackage": "passed after shared renderer export",
+    "installedPackage": "passed at 320/390/768/1440 with disclosure, flip cards, quizzes, zoom and overflow checks",
+    "finalVisualQA": "accepted after visual review of all six 1080x1440 XHS PNGs and responsive course/XHS screenshots",
+    "zip": "xhs/day79/day79-xhs.zip CRC passed"
+  },
+  "nextAction": "等待用户验收本地草稿；根据用户的批量本地制作授权，后续课程可继续制作，但不得部署、发布或修改正式进度。"
+}

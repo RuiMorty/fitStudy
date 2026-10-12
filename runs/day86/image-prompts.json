@@ -1,0 +1,60 @@
+{
+  "commonPrompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper background, loose paper sheets, border, sticker edge, shadow, or halo. A small unmarked rigid evidence card is allowed as a prop. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.",
+  "assets": [
+    {
+      "file": "cover.png",
+      "role": "cover",
+      "prompt": "Wide 16:9 wordless single-scene course cover. Exactly one Bojji stands naturally in a relaxed neutral stance while exactly one Despa observes from a respectful distance, holding one small unmarked rigid consent card closed at chest height. Explain voluntary, privacy-aware posture observation, not photography, diagnosis, ranking or correction. Isolate the figures and card on the transparent canvas: no camera, body outline marks, arrows, ground plane, cast shadow, room, recording device, diagnostic symbols, duplicate figures, alternate poses, motion trails, readable signs, text, numbers, labels or unrelated equipment."
+    },
+    {
+      "file": "visual-01.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Exactly one Despa holds one small unmarked rigid consent card at chest level while exactly one Bojji makes an open-palm choose-or-pause gesture and remains fully clothed in a neutral stance. Explain voluntary choice, limited record access and privacy, never assumed consent. Use one continuous current pose with all limbs and the card fully visible. Isolate the figures and card on the transparent canvas: no camera, recording device, body outline marks, duplicate figures, alternate poses, sequence frames, arrows, motion trails, text, numbers, labels, readable screens, blue circles, ground plane, cast shadow or unrelated equipment."
+    },
+    {
+      "file": "visual-02.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Exactly one Bojji stands comfortably with both feet visible while exactly one Despa observes from one side at a respectful distance using an open palm. Explain descriptive relative positions only, not diagnosis, labels or a fixed ideal posture. Use one continuous current pose with all limbs fully visible. Isolate the figures on the transparent canvas: no camera, recording device, lines, arrows, markers, mirrored figures, duplicate figures, alternate poses, sequence frames, motion trails, text, numbers, labels, readable screens, blue circles, ground plane, cast shadow or unrelated equipment."
+    },
+    {
+      "file": "visual-03.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Exactly one Despa holds one small unmarked rigid record card with two empty non-symbolic compartments while exactly one Bojji remains in one natural stance. Explain repeated observation across contexts, not a conclusion from one image. Use one continuous current pose with all limbs and the card fully visible. Isolate the figures and card on the transparent canvas: no camera, photo, recording device, comparison marks, duplicate figures, alternate poses, sequence frames, arrows, motion trails, text, numbers, labels, readable screens, blue circles, ground plane, cast shadow or unrelated equipment."
+    },
+    {
+      "file": "visual-04.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Exactly one Bojji holds a shallow stable bodyweight squat with relaxed arms while exactly one Despa observes calmly from a respectful distance. Explain that a static cue becomes a question to test in a safe dynamic movement, not a correction prescription. Use one continuous current pose with all limbs fully visible. Isolate the figures on the transparent canvas: no camera, recording device, assessment diagram, duplicate figures, alternate poses, sequence frames, arrows, motion trails, text, numbers, labels, readable screens, blue circles, ground plane, cast shadow or unrelated equipment."
+    },
+    {
+      "file": "visual-05.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Exactly one Despa remains at a respectful open-handed distance while exactly one Bojji calmly indicates whether to continue with an open-palm choice gesture. Explain neutral feedback, joint decision and referral boundaries when needed, not treatment or diagnosis. Use one continuous current pose with all limbs fully visible. Isolate the figures on the transparent canvas: no camera, recording device, speech bubbles, duplicate figures, alternate poses, sequence frames, arrows, motion trails, text, numbers, labels, readable screens, blue circles, ground plane, cast shadow or unrelated equipment."
+    },
+    {
+      "file": "overview-01.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Exactly one Despa presents one small unmarked rigid consent card while exactly one fully clothed Bojji keeps an open-palm choice gesture. Explain privacy and voluntary choice in a compact panel; do not reuse the knowledge-page composition. Isolate the figures and card on the transparent canvas: no camera, recording device, body outline marks, duplicate figures, alternate poses, sequence frames, text, numbers, labels, arrows, motion trails, ground plane, cast shadow or unrelated equipment."
+    },
+    {
+      "file": "overview-02.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Exactly one Bojji stands in a balanced neutral posture while exactly one Despa observes from one side with an open hand at respectful distance. Explain neutral observation without labels in a compact panel; do not reuse the knowledge-page composition. Isolate the figures on the transparent canvas: no camera, recording device, lines, markers, mirrored figures, duplicate figures, alternate poses, sequence frames, text, numbers, labels, arrows, motion trails, ground plane, cast shadow or unrelated equipment."
+    },
+    {
+      "file": "overview-03.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Exactly one Despa holds one small unmarked rigid record card with two empty non-symbolic compartments while exactly one Bojji stays in a natural stance. Explain repeat observations rather than a single-image verdict in a compact panel; do not reuse the knowledge-page composition. Isolate the figures and card on the transparent canvas: no camera, photo, recording device, comparison marks, duplicate figures, alternate poses, sequence frames, text, numbers, labels, arrows, motion trails, ground plane, cast shadow or unrelated equipment."
+    },
+    {
+      "file": "overview-04.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Exactly one Bojji holds a small controlled bodyweight squat while exactly one Despa observes calmly from a respectful distance. Explain dynamic verification of a static cue in a compact panel; do not reuse the knowledge-page composition. Isolate the figures on the transparent canvas: no camera, recording device, assessment diagram, duplicate figures, alternate poses, sequence frames, text, numbers, labels, arrows, motion trails, ground plane, cast shadow or unrelated equipment."
+    },
+    {
+      "file": "overview-05.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Exactly one Despa and one Bojji face each other at a respectful distance with calm open hands. Explain neutral feedback and a joint next-step choice in a compact panel; do not reuse the knowledge-page composition. Isolate the figures on the transparent canvas: no camera, recording device, speech bubbles, duplicate figures, alternate poses, sequence frames, text, numbers, labels, arrows, motion trails, ground plane, cast shadow or unrelated equipment."
+    }
+  ]
+}

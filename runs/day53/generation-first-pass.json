@@ -1,0 +1,99 @@
+{
+  "provider": "Lingzhi",
+  "preset": "quality",
+  "model": "gpt-image-2.5-sunburst",
+  "authorization": "用户于2026-09-30授权每图最多首次加5次重试；本记录仅为Day53首轮。",
+  "updatedAt": "2026-09-30T02:36:25.671986Z",
+  "assets": [
+    {
+      "file": "cover.png",
+      "role": "cover",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day53/source/cover.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 533805,
+      "sha256": "3b73923f8a3e31ae8a87224a398f2359f802a78fd87e14bc827dcaee1d7c1ec1"
+    },
+    {
+      "file": "visual-01-sequence.png",
+      "role": "knowledge",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day53/source/visual-01-sequence.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 843971,
+      "sha256": "9f5dec94f866f64989bfb93e3c2195e3ad1a431c1d748a7acb086ba56353e0c8"
+    },
+    {
+      "file": "visual-02-variables.png",
+      "role": "knowledge",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day53/source/visual-02-variables.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 702480,
+      "sha256": "5db67c7b4c8b9ac1aad857127cf3dea8a78b4f83321059cebb76062d4934cb6c"
+    },
+    {
+      "file": "visual-03-pairing.png",
+      "role": "knowledge",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day53/source/visual-03-pairing.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 1013615,
+      "sha256": "f57b5fe5315cf0dfdeb3206a749e026aa68af5e054b15eaa5f061df0a8b327f0"
+    },
+    {
+      "file": "visual-04-checks.png",
+      "role": "knowledge",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day53/source/visual-04-checks.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 686705,
+      "sha256": "ea8bcc26ef6eb4ff2f609dfaf66475d86fd389296fe2ccb8e0e2940fba0ce995"
+    },
+    {
+      "file": "overview-01-sequence.png",
+      "role": "overview-item",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day53/source/overview-01-sequence.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 610073,
+      "sha256": "049ff9ae4170b597fe2a62bd1e0635d999e27be863cb826383320f1d3b44a728"
+    },
+    {
+      "file": "overview-02-variables.png",
+      "role": "overview-item",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day53/source/overview-02-variables.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 669237,
+      "sha256": "428203c0500dc61cec6968e8b0c64d58454e45580aefa1b4e73e03e8bbec459b"
+    },
+    {
+      "file": "overview-03-pairing.png",
+      "role": "overview-item",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day53/source/overview-03-pairing.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 663197,
+      "sha256": "6ca04d32567b1bcd437853f873abbbe9c4883d61a9fa1d380359e35dcdb839bb"
+    },
+    {
+      "file": "overview-04-checks.png",
+      "role": "overview-item",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day53/source/overview-04-checks.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 895483,
+      "sha256": "2a855ddda50af3f12ca9e9fe3718e9198e9e2f015f93c01a039022129e569786"
+    }
+  ]
+}

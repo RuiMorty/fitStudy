@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Day 77 · 特殊人群续+女运动员三联征(并入)</title><link rel="icon" type="image/svg+xml" href="assets/fitness-study-logo-open-circle.svg?v=a6d8e5caaa61"><style>:root { color-scheme: light; --ink: #111113; --muted: #71717a; --line: #e4e4e7; --accent: #ff5a1f; --green: #0ea66b; --blue: #2563eb; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; font-synthesis: none; letter-spacing: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); overflow-wrap: anywhere; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+img { display: block; max-width: 100%; }
+button:focus-visible, a:focus-visible, summary:focus-visible, input:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
+svg.icon { width: 20px; height: 20px; }
+.icon-button { display: inline-grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 1px solid var(--line); border-radius: 6px; background: white; }
+[hidden] { display: none !important; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
+
+body { background: #f6f8f7; font-size: 14px; line-height: 1.65; }
+main { max-width: 980px; margin: auto; padding: 24px 18px 60px; }
+.header { padding: 22px 4px 14px; }
+h1 { margin: 10px 0 8px; font-size: 36px; line-height: 1.2; }
+h1::before { content: ""; display: block; width: 34px; height: 4px; background: var(--accent); margin-bottom: 10px; }
+h2 { font-size: 17px; margin: 0 0 14px; }
+h3 { font-size: 16px; margin: 0 0 8px; }
+.sub { color: var(--muted); margin: 5px 0 18px; }
+.meta { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { display: inline-block; border: 1px solid var(--line); border-radius: 20px; background: white; color: var(--muted); padding: 3px 10px; font-size: 12px; font-weight: 600; }
+.chip:nth-child(1) { background: #e2f7eb; color: #15803d; border-color: transparent; }
+.chip:nth-child(2) { background: #e7f0fe; color: #2563eb; border-color: transparent; }
+.chip:nth-child(3) { background: #fff2e5; color: #9a4c05; border-color: transparent; }
+.panel, .figure, .warn, .mnemonic { background: white; border: 1px solid #e2e8e4; border-radius: 14px; box-shadow: 0 2px 12px rgba(20,40,30,.06); padding: 20px; margin: 16px 0; }
+.green { border-left: 5px solid var(--green); }
+.orange { border-left: 5px solid #ea7a17; }
+.blue { border-left: 5px solid #0ea5e9; }
+.takeaway { margin: 0; }
+.figure { text-align: center; }
+.figure button { display: block; position: relative; width: 100%; border: 0; padding: 0; background: white; cursor: zoom-in; }
+.figure img { max-height: 760px; width: 100%; object-fit: contain; }
+.figure .icon-button { position: absolute; bottom: 8px; right: 8px; background: #ffffffed; }
+.caption { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
+.kp { list-style: none; padding: 0; margin: 0; }
+.kp > li { border-bottom: 1px dashed #e2e8e4; }
+.kp > li:last-child { border-bottom: 0; }
+.kp summary { cursor: pointer; padding: 13px 8px; font-weight: 650; }
+.kp summary::marker { color: var(--green); }
+.term { color: #0a7d52; background: #e2f7eb; border-radius: 6px; padding: 1px 5px; }
+.kp-body { padding: 2px 14px 16px 24px; }
+.detail-block { margin: 12px 0; }
+.detail-block h4 { font-size: 13px; color: #08744d; margin: 0 0 4px; }
+.detail-block p { margin: 0; white-space: pre-line; }
+.warn { border-left: 5px solid #e23b3b; background: #fffafa; }
+.warn p { margin: 8px 0; }
+.misconception { color: #a82b32; }
+.mnemonic { border-left: 4px solid var(--accent); box-shadow: none; }
+.mnemonic strong { color: #df4716; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+.flip { height: 168px; perspective: 900px; border: 0; background: transparent; padding: 0; text-align: center; }
+.flip-in { display: block; height: 100%; position: relative; transition: transform .45s; transform-style: preserve-3d; }
+.flip[aria-pressed="true"] .flip-in { transform: rotateY(180deg); }
+.face { position: absolute; inset: 0; backface-visibility: hidden; border: 1px solid var(--line); border-radius: 10px; padding: 15px; background: #fafafa; display: flex; align-items: center; justify-content: center; overflow-y: auto; }
+.back { transform: rotateY(180deg); background: #eef9f4; color: #075e40; border-color: #c8eadb; }
+.practice { padding-left: 20px; }
+.practice li { margin: 7px 0; }
+.question { border-top: 1px solid #e2e8e4; padding: 20px 0 8px; margin-top: 12px; min-width: 0; }
+.options { display: grid; gap: 7px; margin: 10px 0; }
+.option { display: flex; gap: 10px; align-items: baseline; border: 1px solid #e2e8e4; background: #f0f4f2; padding: 9px 12px; border-radius: 8px; cursor: pointer; }
+.option input { flex-shrink: 0; accent-color: var(--green); }
+.option:has(input:checked) { border-color: #0ea5e9; background: #e7f6fd; }
+.question[data-result="correct"] .option:has(input:checked) { border-color: #0ea66b; background: #e7f8ef; }
+.question[data-result="wrong"] .option:has(input:checked) { border-color: #e23b3b; background: #fff0f0; }
+.answer { background: #f8fbfa; border-left: 3px solid #0ea5e9; padding: 10px; margin-top: 10px; }
+.check { border: 0; background: #0ea66b; color: white; padding: 9px 14px; border-radius: 7px; }
+footer { color: var(--muted); font-size: 12px; margin-top: 28px; }
+footer ul { padding-left: 20px; }
+dialog { width: min(1200px, 96vw); max-height: 94dvh; padding: 52px 16px 16px; border: 0; border-radius: 8px; background: white; }
+dialog::backdrop { background: #15191dd9; }
+dialog img { width: 100%; max-height: 78dvh; object-fit: contain; }
+dialog .icon-button { position: absolute; top: 8px; right: 10px; }
+@media (max-width: 600px) {
+  main { padding: 16px 12px 40px; }
+  h1 { font-size: 26px; }
+  .header { padding: 16px 4px 12px; }
+  .panel, .figure, .warn, .mnemonic { padding: 15px; }
+  .kp-body { padding-left: 16px; }
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .face { padding: 12px; }
+}
+</style></head><body><main><header class="header"><h1>Day 77 · 特殊人群续+女运动员三联征(并入)</h1><p class="sub">用功能、风险与项目需求安排训练；出现低能量和骨健康警讯时先转介。</p><div class="meta"><span class="chip">功能训练</span><span class="chip">需求分析</span><span class="chip">RED-S</span></div></header><section class="panel green"><h2>一句话总结</h2><p class="takeaway">体重较高、骨质疏松、关节炎或运动员身份都不等于固定训练法。体重管理可从低冲击有氧、渐进抗阻和可执行目标开始；骨与关节负荷要看骨折史、脊柱、急性炎症和症状。运动员计划先做项目需求分析。女性运动员三联征关联低能量可用性、月经功能障碍和低骨密度；RED-S可影响任何性别。月经不规律、反复骨应力伤、疲劳或表现下降需要尽快多学科转介。</p></section><figure class="figure"><button data-zoom aria-label="放大详情图"><img class="" src="assets/阶段5 训练安排/day77-特殊人群续+女运动员三联征(并入).png" alt="关节骨骼、运动员需求和低能量可用性中文总览"><span class="icon-button"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 15 6 6" /><path d="m15 9 6-6" /><path d="M21 16v5h-5" /><path d="M21 8V3h-5" /><path d="M3 16v5h5" /><path d="m3 21 6-6" /><path d="M3 8V3h5" /><path d="M9 9 3 3" /></svg></span></button><figcaption class="caption">体重、关节、骨健康、项目专项与能量可用性都需要个体化评估。教练可做一般教育与训练调整，不能诊断、治疗或替代多学科医疗营养支持。</figcaption></figure><section class="panel"><h2>核心要点</h2><ul class="kp"><li><details><summary><span class="term">体重管理：从功能与可执行行为开始</span>：体重较高不是懒惰或不能训练的同义词；低冲击有氧、渐进抗阻、环境适配和依从性比羞辱与极端计划更有效。</summary><div class="kp-body"><section class="detail-block"><h4>目标不只看秤</h4><p>可把步行耐受、坐站、提物、睡眠、疼痛、力量和生活参与作为目标。提供稳定器械、合适座椅、可调节范围与低冲击选择；避免公开称重、体型评论和把每次训练都变成惩罚性消耗。</p></section><section class="detail-block"><h4>行为策略要小而可持续</h4><p>从可完成的低冲击有氧频率、熟悉动作和积极反馈起步，逐步增加活动量与力量训练。若出现呼吸困难、胸痛、关节明显肿痛、行动功能突然下降或饮食困扰，应停止加码并转给医疗或注册营养师专业人员。</p></section></div></details></li><li><details><summary><span class="term">骨与关节：负荷有价值，风险需分层</span>：承重与渐进抗阻常支持骨骼和功能；骨折风险、脊柱状况、关节急性炎症和疼痛反应决定动作选择与转介。</summary><div class="kp-body"><section class="detail-block"><h4>骨质疏松不是完全不动</h4><p>在医疗建议下，步行、台阶、力量和平衡训练可支持功能与跌倒预防。已有椎体骨折、严重骨质疏松、近期骨折或高跌倒风险者，应由医疗/康复团队明确限制；负重脊柱大幅屈曲、快速扭转和高冲击并非人人适合。</p></section><section class="detail-block"><h4>关节炎看当日反应与功能</h4><p>渐进力量、活动度、低冲击有氧和节奏调整可帮助许多人维持功能。急性红肿热痛、关节锁住、明显不稳或症状持续加重时，应暂停加码并由临床人员评估，而不是强行“练开”。</p></section></div></details></li><li><details><summary><span class="term">运动员与非运动员：先做需求分析</span>：训练不应只看动作名称；项目动作、能量系统、赛程、技术、伤病史、训练年龄与恢复资源决定优先级。</summary><div class="kp-body"><section class="detail-block"><h4>从项目倒推训练</h4><p>分析比赛持续时间、重复冲刺或力量要求、关键姿势、碰撞/跌倒风险、赛季密度和近期比赛。专项训练要与基础力量、心肺、灵活性和恢复协调，而不是复制另一个项目或职业选手的模板。</p></section><section class="detail-block"><h4>非运动员同样需要需求分析</h4><p>日常提物、久坐、楼梯、工作姿势、睡眠和可训练时间也是需求。把训练绑定真实任务与可坚持的频率，比用“运动员级”强度定义进步更安全、更可持续。</p></section></div></details></li><li><details><summary><span class="term">低能量可用性：看警讯，尽快多学科转介</span>：女性运动员三联征关注低能量可用性、月经功能障碍和低骨密度；RED-S的健康与表现影响可涉及任何性别。</summary><div class="kp-body"><section class="detail-block"><h4>不是简单的“吃得比消耗少”</h4><p>低能量可用性涉及在运动能量消耗后，身体维持生理功能可获得的能量不足；它可能来自无意进食不足、训练增加、饮食限制或进食问题。教练不能凭一项症状自行诊断，却应识别风险模式。</p></section><section class="detail-block"><h4>把月经和骨伤当健康信号</h4><p>月经不规律或停经、反复骨应力伤、疲劳、表现下降、情绪变化、反复生病或饮食焦虑，都值得尽快转给运动医学医生、注册运动营养师和心理健康专业人员。可先降低高冲击或高负荷训练，不以称重或加练替代评估。</p></section></div></details></li></ul></section><section class="warn"><h2>常见误区</h2><p><strong class="misconception">误区：体重较高说明一个人不适合训练，必须先瘦下来。</strong><br>辨析：训练可从功能、低冲击、力量和环境适配开始；体重与能力不应成为羞辱或排除依据。</p><p><strong class="misconception">误区：骨质疏松或关节炎就只能完全不动。</strong><br>辨析：承重、渐进抗阻和活动度常有益，但骨折风险、急性炎症、脊柱状况和症状反应决定限制与转介。</p><p><strong class="misconception">误区：运动员只要照抄职业选手训练就够了。</strong><br>辨析：项目动作、能量系统、赛历、技术、伤病和恢复资源不同，必须从个人需求分析出发。</p><p><strong class="misconception">误区：月经不规律和反复骨应力伤是努力训练的正常代价。</strong><br>辨析：它们可能提示低能量可用性或其他健康问题，应停止加码并尽快多学科评估。</p></section><section class="mnemonic"><h2>记忆口诀</h2><p><strong>功能先于体重，需求先于模板；月经骨伤是信号，转介先于加练。</strong></p></section><section class="panel"><h2>翻转卡复习</h2><div class="cards"><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">体重管理训练可优先哪些目标？</span><span class="face back" aria-hidden="true">功能、耐受、力量、疼痛、睡眠和生活参与，不只看体重秤。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">骨质疏松就应完全不运动吗？</span><span class="face back" aria-hidden="true">不应一刀切；承重、力量和平衡常有益，但骨折与脊柱风险需医疗分层。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">关节急性红肿热痛时？</span><span class="face back" aria-hidden="true">暂停加码并由临床人员评估，不强行“练开”。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">运动员需求分析包含什么？</span><span class="face back" aria-hidden="true">项目动作、能量系统、赛程、技术、伤病史、训练年龄和恢复资源。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">女性运动员三联征的三个关联？</span><span class="face back" aria-hidden="true">低能量可用性、月经功能障碍和低骨密度。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">RED-S只影响女性吗？</span><span class="face back" aria-hidden="true">不只；低能量可用性的健康与表现影响可涉及任何性别。</span></span></button></div></section><section class="panel orange"><h2>实操关联</h2><ul class="practice"><li>把“减多少斤”改写成三个功能目标，例如连续步行、坐站、提物或楼梯耐受，并为每项设可执行起点。</li><li>为骨与关节风险客户列出课前确认项：骨折/跌倒史、当日红肿热痛、脊柱限制、医疗建议和环境支持。</li><li>选一个运动项目，写下动作、能量系统、赛程、关键技术、伤病与恢复资源，再决定训练优先级。</li><li>若客户出现月经不规律、反复骨伤、持续疲劳或饮食焦虑，准备支持性转介话术与本地运动医学、注册营养师、心理健康资源，不自行开能量或体重处方。</li></ul></section><section class="panel blue"><h2>练习题</h2><section class="question" data-answers="[1]" data-explanation="骨健康训练需要负荷和功能刺激，也必须尊重已有骨折、脊柱、平衡和医疗限制。"><h3>1. 单选：关于骨质疏松训练，哪项更准确？</h3><div class="options"><label class="option"><input type="radio" name="question-0" value="0"><span>A. 所有人都应完全避免力量训练</span></label><label class="option"><input type="radio" name="question-0" value="1"><span>B. 承重和力量常有益，但骨折、脊柱与跌倒风险需要个体化限制</span></label><label class="option"><input type="radio" name="question-0" value="2"><span>C. 只做高冲击跳跃最有效</span></label><label class="option"><input type="radio" name="question-0" value="3"><span>D. 疼痛时硬练即可适应</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[1]" data-explanation="专项训练要从个人和项目的实际需求倒推，不是复制别人的模板。"><h3>2. 单选：下列哪项最能说明运动员训练需要需求分析？</h3><div class="options"><label class="option"><input type="radio" name="question-1" value="0"><span>A. 职业选手计划一定适合所有人</span></label><label class="option"><input type="radio" name="question-1" value="1"><span>B. 项目动作、能量系统、赛历、伤病和恢复资源会改变训练优先级</span></label><label class="option"><input type="radio" name="question-1" value="2"><span>C. 只要增加训练总量就能进步</span></label><label class="option"><input type="radio" name="question-1" value="3"><span>D. 非运动员不需要功能目标</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[0,1,2,3]" data-explanation="这些是需要认真对待的风险模式，但不由教练单独诊断；应尽快多学科转介。"><h3>3. 多选：哪些情况可能提示需要评估低能量可用性或相关健康风险？</h3><div class="options"><label class="option"><input type="checkbox" name="question-2" value="0"><span>A. 月经不规律或停经</span></label><label class="option"><input type="checkbox" name="question-2" value="1"><span>B. 反复骨应力伤</span></label><label class="option"><input type="checkbox" name="question-2" value="2"><span>C. 持续疲劳和表现下降</span></label><label class="option"><input type="checkbox" name="question-2" value="3"><span>D. 饮食焦虑或限制加重</span></label><label class="option"><input type="checkbox" name="question-2" value="4"><span>E. 单次训练后正常疲劳</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[2]" data-explanation="该模式需要尽快评估低能量可用性、骨健康和心理营养风险。教练应保护安全与转介，不自行诊断或处方。"><h3>4. 案例：一名长跑运动员近半年月经不规律、两次骨应力伤、训练表现下降，还想继续加跑量减重。更合适的是？</h3><div class="options"><label class="option"><input type="radio" name="question-3" value="0"><span>A. 称赞其意志并加跑量</span></label><label class="option"><input type="radio" name="question-3" value="1"><span>B. 只给更严格饮食表</span></label><label class="option"><input type="radio" name="question-3" value="2"><span>C. 暂停加码，降低高冲击训练风险，并尽快转给运动医学医生、注册运动营养师和心理健康专业人员评估</span></label><label class="option"><input type="radio" name="question-3" value="3"><span>D. 让她忽略月经变化</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section></section><footer>Day 77/110<ul><li>ACSM：ACSM&#39;s Guidelines for Exercise Testing and Prescription，第11版，体重管理、骨关节与功能训练的一般原则。</li><li>International Osteoporosis Foundation 与 Osteoporosis Canada：骨健康、跌倒风险和运动的公众/临床教育资料。</li><li>IOC：Relative Energy Deficiency in Sport（RED-S）共识与临床评估资料，低能量可用性风险与多学科管理原则。</li><li>Female Athlete Triad Coalition：Treatment and Return-to-Play 相关共识，三联征风险识别与转介原则。</li><li>本课为一般教育，不诊断RED-S、三联征、骨质疏松或关节疾病，也不提供医疗营养治疗；骨折、急性关节症状、月经变化、反复骨伤或饮食困扰请咨询相应专业人员。</li></ul></footer></main><dialog aria-label="详情大图"><button class="icon-button" aria-label="关闭大图" title="关闭大图"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></button><img alt=""></dialog><script>document.querySelectorAll('.flip').forEach((button) => {
+  button.addEventListener('click', () => {
+    const pressed = button.getAttribute('aria-pressed') !== 'true';
+    button.setAttribute('aria-pressed', String(pressed));
+    button.querySelector('.front').setAttribute('aria-hidden', String(pressed));
+    button.querySelector('.back').setAttribute('aria-hidden', String(!pressed));
+  });
+});
+document.querySelectorAll('.question').forEach((question) => {
+  question.querySelector('.check').addEventListener('click', () => {
+    const selected = [...question.querySelectorAll('input:checked')].map((input) => Number(input.value)).sort();
+    const answer = question.querySelector('.answer');
+    answer.hidden = false;
+    if (!selected.length) { answer.textContent = '请先选择答案。'; delete question.dataset.result; return; }
+    const correct = JSON.stringify(selected) === JSON.stringify(JSON.parse(question.dataset.answers).sort());
+    question.dataset.result = correct ? 'correct' : 'wrong';
+    answer.textContent = `${correct ? '回答正确。' : '再想一想。'}${question.dataset.explanation}`;
+  });
+});
+const imageDialog = document.querySelector('dialog');
+document.querySelectorAll('[data-zoom]').forEach((button) => {
+  button.addEventListener('click', () => {
+    const original = button.querySelector('img');
+    const image = imageDialog.querySelector('img');
+    image.src = original.src;
+    image.alt = original.alt;
+    imageDialog.showModal();
+  });
+});
+imageDialog.querySelector('button').addEventListener('click', () => imageDialog.close());
+imageDialog.addEventListener('click', (event) => {
+  const rect = imageDialog.getBoundingClientRect();
+  if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) imageDialog.close();
+});
+</script></body></html>

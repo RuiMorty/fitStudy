@@ -1,0 +1,20 @@
+{
+  "at": "2026-09-30T12:20:00+08:00",
+  "reviewer": "local visual and alpha QA",
+  "requirements": ["true-alpha", "no-background-or-checkerboard", "wordless", "character-consistency", "single-knowledge-relationship", "safe-equipment-structure", "independent-overview-art"],
+  "technicalChecks": {"checkedWith": ["sips hasAlpha", "Pillow alpha extrema", "individual native visual inspection"], "result": "9个PNG均为非空RGBA，alpha范围均为[0,255]；无白底、灰底或棋盘格。"},
+  "accepted": [
+    {"file": "cover.png", "use": "cover", "review": "受控深蹲、连续杠身、配重、护杠与波吉观察关系清楚。"},
+    {"file": "visual-01-output.png", "use": "神经输出", "review": "稳定准备姿势与三枚无字关联符号表达募集协同；无可读文字。"},
+    {"file": "visual-02-variables.png", "use": "训练变量", "review": "下蹲与站立两态、连续杠身、配重和架位关系可辨。"},
+    {"file": "visual-03-rest.png", "use": "组间恢复", "review": "安全放回架位后的坐姿恢复与无数字计时器表达清楚。"},
+    {"file": "visual-04-safety.png", "use": "安全进阶", "review": "护杠高度、空杠J钩与检查动作关系清楚。"},
+    {"file": "overview-01-output.png", "use": "总览专用", "review": "独立绘制的准备姿势与无字协同符号。"},
+    {"file": "overview-02-variables.png", "use": "总览专用", "review": "独立绘制的深蹲与安全架位。"},
+    {"file": "overview-03-rest.png", "use": "总览专用", "review": "独立绘制的休息场景与无数字计时器。"},
+    {"file": "overview-04-safety.png", "use": "总览专用", "review": "独立绘制的护杠检查与空白清单。"}
+  ],
+  "rejected": [],
+  "retriesUsed": 0,
+  "result": "9项首轮来源全部通过本地素材审核；没有触发重试。"
+}

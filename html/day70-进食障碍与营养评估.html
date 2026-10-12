@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Day 70 · 进食障碍与营养评估</title><link rel="icon" type="image/svg+xml" href="assets/fitness-study-logo-open-circle.svg?v=a6d8e5caaa61"><style>:root { color-scheme: light; --ink: #111113; --muted: #71717a; --line: #e4e4e7; --accent: #ff5a1f; --green: #0ea66b; --blue: #2563eb; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; font-synthesis: none; letter-spacing: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); overflow-wrap: anywhere; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+img { display: block; max-width: 100%; }
+button:focus-visible, a:focus-visible, summary:focus-visible, input:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
+svg.icon { width: 20px; height: 20px; }
+.icon-button { display: inline-grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 1px solid var(--line); border-radius: 6px; background: white; }
+[hidden] { display: none !important; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
+
+body { background: #f6f8f7; font-size: 14px; line-height: 1.65; }
+main { max-width: 980px; margin: auto; padding: 24px 18px 60px; }
+.header { padding: 22px 4px 14px; }
+h1 { margin: 10px 0 8px; font-size: 36px; line-height: 1.2; }
+h1::before { content: ""; display: block; width: 34px; height: 4px; background: var(--accent); margin-bottom: 10px; }
+h2 { font-size: 17px; margin: 0 0 14px; }
+h3 { font-size: 16px; margin: 0 0 8px; }
+.sub { color: var(--muted); margin: 5px 0 18px; }
+.meta { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { display: inline-block; border: 1px solid var(--line); border-radius: 20px; background: white; color: var(--muted); padding: 3px 10px; font-size: 12px; font-weight: 600; }
+.chip:nth-child(1) { background: #e2f7eb; color: #15803d; border-color: transparent; }
+.chip:nth-child(2) { background: #e7f0fe; color: #2563eb; border-color: transparent; }
+.chip:nth-child(3) { background: #fff2e5; color: #9a4c05; border-color: transparent; }
+.panel, .figure, .warn, .mnemonic { background: white; border: 1px solid #e2e8e4; border-radius: 14px; box-shadow: 0 2px 12px rgba(20,40,30,.06); padding: 20px; margin: 16px 0; }
+.green { border-left: 5px solid var(--green); }
+.orange { border-left: 5px solid #ea7a17; }
+.blue { border-left: 5px solid #0ea5e9; }
+.takeaway { margin: 0; }
+.figure { text-align: center; }
+.figure button { display: block; position: relative; width: 100%; border: 0; padding: 0; background: white; cursor: zoom-in; }
+.figure img { max-height: 760px; width: 100%; object-fit: contain; }
+.figure .icon-button { position: absolute; bottom: 8px; right: 8px; background: #ffffffed; }
+.caption { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
+.kp { list-style: none; padding: 0; margin: 0; }
+.kp > li { border-bottom: 1px dashed #e2e8e4; }
+.kp > li:last-child { border-bottom: 0; }
+.kp summary { cursor: pointer; padding: 13px 8px; font-weight: 650; }
+.kp summary::marker { color: var(--green); }
+.term { color: #0a7d52; background: #e2f7eb; border-radius: 6px; padding: 1px 5px; }
+.kp-body { padding: 2px 14px 16px 24px; }
+.detail-block { margin: 12px 0; }
+.detail-block h4 { font-size: 13px; color: #08744d; margin: 0 0 4px; }
+.detail-block p { margin: 0; white-space: pre-line; }
+.warn { border-left: 5px solid #e23b3b; background: #fffafa; }
+.warn p { margin: 8px 0; }
+.misconception { color: #a82b32; }
+.mnemonic { border-left: 4px solid var(--accent); box-shadow: none; }
+.mnemonic strong { color: #df4716; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+.flip { height: 168px; perspective: 900px; border: 0; background: transparent; padding: 0; text-align: center; }
+.flip-in { display: block; height: 100%; position: relative; transition: transform .45s; transform-style: preserve-3d; }
+.flip[aria-pressed="true"] .flip-in { transform: rotateY(180deg); }
+.face { position: absolute; inset: 0; backface-visibility: hidden; border: 1px solid var(--line); border-radius: 10px; padding: 15px; background: #fafafa; display: flex; align-items: center; justify-content: center; overflow-y: auto; }
+.back { transform: rotateY(180deg); background: #eef9f4; color: #075e40; border-color: #c8eadb; }
+.practice { padding-left: 20px; }
+.practice li { margin: 7px 0; }
+.question { border-top: 1px solid #e2e8e4; padding: 20px 0 8px; margin-top: 12px; min-width: 0; }
+.options { display: grid; gap: 7px; margin: 10px 0; }
+.option { display: flex; gap: 10px; align-items: baseline; border: 1px solid #e2e8e4; background: #f0f4f2; padding: 9px 12px; border-radius: 8px; cursor: pointer; }
+.option input { flex-shrink: 0; accent-color: var(--green); }
+.option:has(input:checked) { border-color: #0ea5e9; background: #e7f6fd; }
+.question[data-result="correct"] .option:has(input:checked) { border-color: #0ea66b; background: #e7f8ef; }
+.question[data-result="wrong"] .option:has(input:checked) { border-color: #e23b3b; background: #fff0f0; }
+.answer { background: #f8fbfa; border-left: 3px solid #0ea5e9; padding: 10px; margin-top: 10px; }
+.check { border: 0; background: #0ea66b; color: white; padding: 9px 14px; border-radius: 7px; }
+footer { color: var(--muted); font-size: 12px; margin-top: 28px; }
+footer ul { padding-left: 20px; }
+dialog { width: min(1200px, 96vw); max-height: 94dvh; padding: 52px 16px 16px; border: 0; border-radius: 8px; background: white; }
+dialog::backdrop { background: #15191dd9; }
+dialog img { width: 100%; max-height: 78dvh; object-fit: contain; }
+dialog .icon-button { position: absolute; top: 8px; right: 10px; }
+@media (max-width: 600px) {
+  main { padding: 16px 12px 40px; }
+  h1 { font-size: 26px; }
+  .header { padding: 16px 4px 12px; }
+  .panel, .figure, .warn, .mnemonic { padding: 15px; }
+  .kp-body { padding-left: 16px; }
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .face { padding: 12px; }
+}
+</style></head><body><main><header class="header"><h1>Day 70 · 进食障碍与营养评估</h1><p class="sub">识别风险、支持转介、守住执业边界：不把警讯当作诊断。</p><div class="meta"><span class="chip">风险识别</span><span class="chip">转介</span><span class="chip">执业边界</span></div></header><section class="panel green"><h2>一句话总结</h2><p class="takeaway">进食障碍及其他进食问题属于医学和心理健康范畴。极端限制、暴食补偿、催吐或药物滥用、过度运动、昏厥或强烈身体焦虑都是警讯，却不能由教练凭一项表现诊断。合适做法是私下、非评判地表达观察，建议医生、注册营养师或心理专业人员评估；意识改变、胸痛、昏厥、严重脱水、吐血或自伤风险应走当地紧急服务。饮食记录和24小时回顾只能帮助了解行为，必须尊重同意、隐私和执业范围。</p></section><figure class="figure"><button data-zoom aria-label="放大详情图"><img class="" src="assets/阶段4 营养恢复/day70-进食障碍与营养评估.png" alt="进食障碍风险识别和营养评估边界中文总览"><span class="icon-button"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 15 6 6" /><path d="m15 9 6-6" /><path d="M21 16v5h-5" /><path d="M21 8V3h-5" /><path d="M3 16v5h5" /><path d="m3 21 6-6" /><path d="M3 8V3h5" /><path d="M9 9 3 3" /></svg></span></button><figcaption class="caption">私人教练可做一般健康教育、尊重地收集与训练有关的信息并及时转介；诊断、心理治疗和医学营养治疗属于相应专业人员职责。</figcaption></figure><section class="panel"><h2>核心要点</h2><ul class="kp"><li><details><summary><span class="term">识别警讯，不做诊断</span>：极端限制、暴食、清除行为、过度运动或身体功能异常值得关注；是否为疾病只能由合格医疗和心理专业人员评估。</summary><div class="kp-body"><section class="detail-block"><h4>看模式与风险</h4><p>可留意食物规则突然变得极端、回避社交进食、反复暴食后补偿、催吐或滥用药物、训练与伤病不匹配、昏厥和明显情绪困扰。任何单一体重、体型或一次饮食记录都不能证明或排除进食障碍。</p></section><section class="detail-block"><h4>警讯不是意志力标签</h4><p>不要称赞快速减重、极端克制或“能忍饿”，也不要用体型推断健康。关注功能、感受与安全，比评论外貌更可能让对方愿意接受支持。</p></section></div></details></li><li><details><summary><span class="term">先支持与转介，再谈训练计划</span>：私下、平静、以观察开场；在对方同意下提供合格资源，并在紧急情况优先处理安全。</summary><div class="kp-body"><section class="detail-block"><h4>怎么开启对话</h4><p>可说“我注意到你最近训练时头晕、吃得很少，担心你的安全；愿意聊聊最近感觉吗？”避免评价外表、追问热量、强迫记录或承诺保密到危及安全的程度。倾听不等于试图治疗。</p></section><section class="detail-block"><h4>何时需要紧急帮助</h4><p>昏厥、意识异常、胸痛、严重脱水、吐血、明显自伤或自杀风险需要停止训练并联系当地紧急服务、医疗人员或现场急救流程。非紧急但持续的风险也应尽快转给医生、注册营养师和心理健康专业人员。</p></section></div></details></li><li><details><summary><span class="term">营养信息：工具有限，隐私优先</span>：24小时回顾、饮食记录和食物频率问卷能描述行为，不等于精确诊断或医疗营养评估。</summary><div class="kp-body"><section class="detail-block"><h4>每种工具都有盲点</h4><p>24小时回顾受记忆影响；饮食记录可能改变行为或增加焦虑；食物频率问卷更适合了解模式。使用前说明目的、保存方式和可拒绝性，不把记录当作服从度考核。</p></section><section class="detail-block"><h4>最少必要原则</h4><p>只收集与安全训练和一般健康教育真正相关的信息，并按当地隐私规则保管。若记录触发焦虑、限制或补偿行为，应停止要求记录，转由具备资质的专业人员决定后续评估。</p></section></div></details></li><li><details><summary><span class="term">执业边界：教育、协作与转介</span>：教练可在资格和当地法规允许范围内提供一般教育；不能诊断、治疗进食障碍或制定医学营养治疗方案。</summary><div class="kp-body"><section class="detail-block"><h4>把职责说清楚</h4><p>不要承诺“我能帮你治好”，也不要给出强制热量、体重或补偿运动处方。可协助暂停高风险训练、调整到安全强度、记录客观训练观察，并在获得同意后与医疗团队沟通必要的训练信息。</p></section><section class="detail-block"><h4>边界随地区与资格变化</h4><p>营养咨询、隐私和转介要求受当地法律、机构政策和执照影响。若不确定自己能否收集某类健康信息或与家属沟通，应先查机构流程和法律要求，而不是自行扩大权限。</p></section></div></details></li></ul></section><section class="warn"><h2>常见误区</h2><p><strong class="misconception">误区：看起来很瘦或很胖，就能判断有没有进食障碍。</strong><br>辨析：体型不能诊断或排除进食障碍；要关注行为、功能与风险，并由合格专业人员评估。</p><p><strong class="misconception">误区：教练应该逼客户交详细饮食记录来证明自律。</strong><br>辨析：记录必须有明确目的、知情同意和隐私保护；若增加焦虑或补偿行为，应停止并转介。</p><p><strong class="misconception">误区：只要耐心聊天，教练就能治疗进食障碍。</strong><br>辨析：支持性倾听很重要，但诊断与治疗需要医生、注册营养师和心理健康专业人员协作。</p><p><strong class="misconception">误区：昏厥、胸痛或自伤风险可以等下次训练再说。</strong><br>辨析：这些可能是紧急风险，应立即停止训练并遵循当地紧急服务或医疗流程。</p></section><section class="mnemonic"><h2>记忆口诀</h2><p><strong>看警讯不贴标签，先支持再转介；记录需同意，紧急先安全。</strong></p></section><section class="panel"><h2>翻转卡复习</h2><div class="cards"><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">教练能凭体型诊断进食障碍吗？</span><span class="face back" aria-hidden="true">不能；体型不能诊断或排除，需要合格专业人员评估。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">哪些行为是需要关注的警讯？</span><span class="face back" aria-hidden="true">极端限制、暴食补偿、催吐、药物滥用、过度运动、昏厥或明显困扰等。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">支持性对话应避免什么？</span><span class="face back" aria-hidden="true">评论外表、强迫记录、追问热量或承诺超出安全范围的保密。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">饮食记录能证明诊断吗？</span><span class="face back" aria-hidden="true">不能；它只描述部分行为，还可能有记忆偏差或增加焦虑。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">紧急风险如何处理？</span><span class="face back" aria-hidden="true">停止训练，按当地紧急服务、医疗或机构急救流程行动。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">教练的核心边界？</span><span class="face back" aria-hidden="true">一般教育、支持与转介；不诊断、不治疗、不提供医学营养治疗。</span></span></button></div></section><section class="panel orange"><h2>实操关联</h2><ul class="practice"><li>把“你怎么吃这么少”改写成非评判开场：说明你观察到的客观训练现象和对安全的关心。</li><li>查看所在场馆的紧急联系人、事件记录、隐私和转介流程；不确定时向主管或合规人员确认。</li><li>若使用饮食回顾，只写清目的、保存范围、可拒绝性和停止条件，不把它用作打卡考核。</li><li>为客户准备本地医生、注册营养师和心理健康服务的可靠转介渠道；紧急风险优先使用当地急救资源。</li></ul></section><section class="panel blue"><h2>练习题</h2><section class="question" data-answers="[2]" data-explanation="教练可识别客观警讯并支持转介，但不能依据体型或单次记录诊断。"><h3>1. 单选：哪种说法最符合进食问题风险识别原则？</h3><div class="options"><label class="option"><input type="radio" name="question-0" value="0"><span>A. 体型能直接确诊</span></label><label class="option"><input type="radio" name="question-0" value="1"><span>B. 单次饮食记录可排除风险</span></label><label class="option"><input type="radio" name="question-0" value="2"><span>C. 警讯值得关注，但诊断交给合格专业人员</span></label><label class="option"><input type="radio" name="question-0" value="3"><span>D. 教练应先给极严格饮食计划</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[2]" data-explanation="这些可能代表紧急健康风险，安全和医疗处置优先于训练与资料收集。"><h3>2. 单选：出现昏厥、胸痛和意识异常时，优先做什么？</h3><div class="options"><label class="option"><input type="radio" name="question-1" value="0"><span>A. 继续完成训练</span></label><label class="option"><input type="radio" name="question-1" value="1"><span>B. 等下次课再观察</span></label><label class="option"><input type="radio" name="question-1" value="2"><span>C. 停止训练并按当地紧急医疗流程处理</span></label><label class="option"><input type="radio" name="question-1" value="3"><span>D. 立刻要求写饮食日记</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[0,1,2,4]" data-explanation="记录应有同意、隐私与停止条件，不能成为羞辱、控制或治疗替代品。"><h3>3. 多选：使用饮食记录时，哪些做法更合适？</h3><div class="options"><label class="option"><input type="checkbox" name="question-2" value="0"><span>A. 说明用途和保存方式</span></label><label class="option"><input type="checkbox" name="question-2" value="1"><span>B. 让客户知道可以拒绝或停止</span></label><label class="option"><input type="checkbox" name="question-2" value="2"><span>C. 只收集必要信息</span></label><label class="option"><input type="checkbox" name="question-2" value="3"><span>D. 把记录作为意志力评分</span></label><label class="option"><input type="checkbox" name="question-2" value="4"><span>E. 焦虑加重时暂停并转介</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[1]" data-explanation="这是需要关注的风险模式。教练应以安全、支持和转介为中心，不诊断或用训练惩罚。若症状紧急则依当地急救流程处理。"><h3>4. 案例：小安近期训练中头晕，提到常跳过正餐并在暴食后加倍运动。作为教练，更合适的是？</h3><div class="options"><label class="option"><input type="radio" name="question-3" value="0"><span>A. 称赞其自律并提高训练量</span></label><label class="option"><input type="radio" name="question-3" value="1"><span>B. 私下非评判地表达担心，暂停高风险训练并建议医生、注册营养师或心理专业人员评估</span></label><label class="option"><input type="radio" name="question-3" value="2"><span>C. 要求公开体重和饮食记录</span></label><label class="option"><input type="radio" name="question-3" value="3"><span>D. 直接诊断并开治疗方案</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section></section><footer>Day 70/110<ul><li>NICE：Eating disorders: recognition and treatment，识别、转介与多学科治疗原则。</li><li>Academy for Eating Disorders：Eating Disorders: A Guide to Medical Care，医学风险与转介原则。</li><li>NEDA：Warning Signs and Symptoms，公众教育用风险警讯资料；不作为自行诊断工具。</li><li>本课为一般健身教育。进食障碍、急性医学风险和心理危机需要当地医生、注册营养师、心理健康服务或紧急服务处理。</li></ul></footer></main><dialog aria-label="详情大图"><button class="icon-button" aria-label="关闭大图" title="关闭大图"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></button><img alt=""></dialog><script>document.querySelectorAll('.flip').forEach((button) => {
+  button.addEventListener('click', () => {
+    const pressed = button.getAttribute('aria-pressed') !== 'true';
+    button.setAttribute('aria-pressed', String(pressed));
+    button.querySelector('.front').setAttribute('aria-hidden', String(pressed));
+    button.querySelector('.back').setAttribute('aria-hidden', String(!pressed));
+  });
+});
+document.querySelectorAll('.question').forEach((question) => {
+  question.querySelector('.check').addEventListener('click', () => {
+    const selected = [...question.querySelectorAll('input:checked')].map((input) => Number(input.value)).sort();
+    const answer = question.querySelector('.answer');
+    answer.hidden = false;
+    if (!selected.length) { answer.textContent = '请先选择答案。'; delete question.dataset.result; return; }
+    const correct = JSON.stringify(selected) === JSON.stringify(JSON.parse(question.dataset.answers).sort());
+    question.dataset.result = correct ? 'correct' : 'wrong';
+    answer.textContent = `${correct ? '回答正确。' : '再想一想。'}${question.dataset.explanation}`;
+  });
+});
+const imageDialog = document.querySelector('dialog');
+document.querySelectorAll('[data-zoom]').forEach((button) => {
+  button.addEventListener('click', () => {
+    const original = button.querySelector('img');
+    const image = imageDialog.querySelector('img');
+    image.src = original.src;
+    image.alt = original.alt;
+    imageDialog.showModal();
+  });
+});
+imageDialog.querySelector('button').addEventListener('click', () => imageDialog.close());
+imageDialog.addEventListener('click', (event) => {
+  const rect = imageDialog.getBoundingClientRect();
+  if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) imageDialog.close();
+});
+</script></body></html>

@@ -1,0 +1,357 @@
+{
+  "processedAt": "2026-09-30T06:31:23.321139+00:00",
+  "method": "trim near-transparent noise; reviewed crop; uniform scale; transparent margin",
+  "assets": [
+    {
+      "source": "runs/day55/source/cover.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "sourceSha256": "ee360851ee3c064ca1d5d823f4a39561c3f9f354492dcbaab9e6e0f4af4314b8",
+      "reviewedCrop": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "visibleCrop": [
+        102,
+        0,
+        1619,
+        898
+      ],
+      "output": "runs/day55/assets/cover.png",
+      "size": [
+        1600,
+        900
+      ],
+      "subjectSize": [
+        1338,
+        792
+      ],
+      "offset": [
+        131,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "无字封面"
+    },
+    {
+      "source": "runs/day55/source/visual-01-output.png",
+      "sourceSize": [
+        2212,
+        711
+      ],
+      "sourceSha256": "8ccdcc3021e12c98df27034d99916516033b2200211c4c871e4b93e701acd63b",
+      "reviewedCrop": [
+        0,
+        0,
+        2212,
+        711
+      ],
+      "visibleCrop": [
+        532,
+        0,
+        1567,
+        700
+      ],
+      "output": "runs/day55/assets/visual-01-output.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1035,
+        700
+      ],
+      "offset": [
+        882,
+        100
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "神经输出"
+    },
+    {
+      "source": "runs/day55/source/visual-02-variables.png",
+      "sourceSize": [
+        2209,
+        712
+      ],
+      "sourceSha256": "25e72c5a8efba2ae02cc98131e15b8f7b40ff5bd3d727b19edc99bb74d64a840",
+      "reviewedCrop": [
+        0,
+        0,
+        2209,
+        712
+      ],
+      "visibleCrop": [
+        2,
+        0,
+        2209,
+        679
+      ],
+      "output": "runs/day55/assets/visual-02-variables.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        2207,
+        679
+      ],
+      "offset": [
+        296,
+        110
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "训练变量"
+    },
+    {
+      "source": "runs/day55/source/visual-03-rest.png",
+      "sourceSize": [
+        2207,
+        712
+      ],
+      "sourceSha256": "33a6f16452c9ca4868fcf524ebbe16175c21b65061c1959c9a0f9b5b2c16e2e4",
+      "reviewedCrop": [
+        0,
+        0,
+        2207,
+        712
+      ],
+      "visibleCrop": [
+        378,
+        10,
+        1754,
+        693
+      ],
+      "output": "runs/day55/assets/visual-03-rest.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1376,
+        683
+      ],
+      "offset": [
+        712,
+        108
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "组间恢复"
+    },
+    {
+      "source": "runs/day55/source/visual-04-safety.png",
+      "sourceSize": [
+        2213,
+        711
+      ],
+      "sourceSha256": "6dfd80a17db2393279f72bb057fef00bb23aacd0ec2c02e51234d23d07fb1df7",
+      "reviewedCrop": [
+        0,
+        0,
+        2213,
+        711
+      ],
+      "visibleCrop": [
+        449,
+        6,
+        1801,
+        695
+      ],
+      "output": "runs/day55/assets/visual-04-safety.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1352,
+        689
+      ],
+      "offset": [
+        724,
+        105
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "安全进阶"
+    },
+    {
+      "source": "runs/day55/source/overview-01-output.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "2a296221e712a858f5491be69fff80bf98e697754e8fb9672aea41f131a5647c",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        133,
+        24,
+        1375,
+        1029
+      ],
+      "output": "runs/day55/assets/overview-01-output.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1242,
+        1005
+      ],
+      "offset": [
+        179,
+        97
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day55/source/overview-02-variables.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "14d0ce3ce7e1a5f0a1b77d003f7948472b92cd3a9467b98dbc23957ea58c577c",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        54,
+        15,
+        1446,
+        1040
+      ],
+      "output": "runs/day55/assets/overview-02-variables.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1392,
+        1025
+      ],
+      "offset": [
+        104,
+        87
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day55/source/overview-03-rest.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "7e9274446f4376173ded208b40ba53ec26fcc518a3fb00d87f02a76ada6510fd",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        111,
+        49,
+        1416,
+        1006
+      ],
+      "output": "runs/day55/assets/overview-03-rest.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1305,
+        957
+      ],
+      "offset": [
+        147,
+        121
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day55/source/overview-04-safety.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "71ca265ba7febadd62b99f80da2d89c0ada6287691e13d9d98e3b967a937e1e8",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        24,
+        21,
+        1412,
+        1039
+      ],
+      "output": "runs/day55/assets/overview-04-safety.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1388,
+        1018
+      ],
+      "offset": [
+        106,
+        91
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    }
+  ]
+}

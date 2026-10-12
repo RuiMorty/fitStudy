@@ -1,0 +1,237 @@
+{
+  "version": "0.2-atlas",
+  "date": "2026-10-10",
+  "status": "local-interactive-verified-anatomical-adaptation-pending-review",
+  "glb": {
+    "bytes": 24421824,
+    "meshes": 17,
+    "nodes": 43
+  },
+  "browserChecks": 71,
+  "files": {
+    "README.md": {
+      "bytes": 3787,
+      "sha256": "0660591815c828d666c50ac413a0c6961b652e90fbd05841e8c0c3d106953720"
+    },
+    "assets/elbow-right.blend": {
+      "bytes": 15440855,
+      "sha256": "ed657790d7eab89ea0a70d78723ecd91cf3c452c250aca788a0659769147e1e3"
+    },
+    "assets/elbow-right.glb": {
+      "bytes": 24421824,
+      "sha256": "719e1ad8873da604a51bde455bf3f4b32f9d65551b0e9fa805fb03a2f926ab0f"
+    },
+    "assets/muscle-fibre-color.png": {
+      "bytes": 1211379,
+      "sha256": "abaefb32851464302744425d7078466c65d41dab906b25f44630ac5ee35fdaf7"
+    },
+    "assets/muscle-fibre-normal.png": {
+      "bytes": 2607673,
+      "sha256": "21caeb7bb2717a425c57a0206ccfeda432e44eaf50d0cd9f0e231e299b66dfdf"
+    },
+    "assets/muscle-fibre-roughness.png": {
+      "bytes": 375917,
+      "sha256": "46f9484221a000f378c10e0be8b8c0c026d3275dba5b7b2674ad708b0a9ec744"
+    },
+    "assets/tendon-collagen-normal.png": {
+      "bytes": 2062531,
+      "sha256": "2373f7f095ffd0c855c144bdac1d88067d3189f80e1329086c07c580585a89cc"
+    },
+    "blender/audit_studio.py": {
+      "bytes": 1853,
+      "sha256": "f74c77eca0b4d26d018ed2ee51dd6446d84fa0f4902da21c3964eab322e4c5c5"
+    },
+    "blender/build_studio.py": {
+      "bytes": 19602,
+      "sha256": "139dbf9ba1ecc9b476f69b47ef79634ced84f18a9d17911bad7beac5245db4a1"
+    },
+    "data/geometry-stats.json": {
+      "bytes": 10930,
+      "sha256": "625a489936b14ba1ff9dec42771e640d2d00becb4c60a492678aac5e13e7a894"
+    },
+    "data/structures.json": {
+      "bytes": 23254,
+      "sha256": "ab097716be7955dc35f00cb9cefd2b88e1bed19e5c664dba4b535615913c8a44"
+    },
+    "docs/IMPLEMENTATION.md": {
+      "bytes": 1134,
+      "sha256": "6927a5cbe78a9369db0c3330ebc667f5be6bf138cfb364df932828ba491f367e"
+    },
+    "docs/MODEL-REVIEW.md": {
+      "bytes": 3772,
+      "sha256": "bc4c58aee75434c503e8b09f9df8e01f645c71955f5ba55812dd318347169e19"
+    },
+    "docs/SOURCES.md": {
+      "bytes": 1997,
+      "sha256": "15033083ea4962cf01fe451a235e1ed47d1cda7d288e1a961e2c3e969e87cab1"
+    },
+    "docs/STRUCTURES.md": {
+      "bytes": 3642,
+      "sha256": "d546538ec09b5c19f7cf9d2e1bb2a2632165c5632dfa83c90cf377108797cdc0"
+    },
+    "docs/VALIDATION.md": {
+      "bytes": 2816,
+      "sha256": "9c171de3c4bcc25b7553497ca021a487d5cb7fe0f11e42ecbb1e6b2bd2abc147"
+    },
+    "index.html": {
+      "bytes": 5290,
+      "sha256": "19e0d2126f49bf58fe8ca80e839866c37425e823f5596654c544756045745e66"
+    },
+    "package.json": {
+      "bytes": 276,
+      "sha256": "5b5282dc8eb72f14ce043d1d66b1450fac4558e3dfedb8a71ee8ce8893bf6c0c"
+    },
+    "qa/before-after.png": {
+      "bytes": 366068,
+      "sha256": "785d019cecf19faa9d91a64f4c48045a9dfb5a99acb8e1cb4a2759cb534f9f36"
+    },
+    "qa/desktop-brachialis.png": {
+      "bytes": 372993,
+      "sha256": "9b2540653afd14df973078dad746d3191f851aca7aeb67425f8fcbf69fb4aea4"
+    },
+    "qa/desktop-detail.png": {
+      "bytes": 475383,
+      "sha256": "f9bf6c76320c87a232e1662887895f4ba70c78d6be9abaeb554241665712414e"
+    },
+    "qa/desktop-exploded.png": {
+      "bytes": 411310,
+      "sha256": "1b55efde687080de94edf495d4d766dcbec85bddbd8c4ece89517bd5136e12cf"
+    },
+    "qa/desktop-overview.png": {
+      "bytes": 388035,
+      "sha256": "cce3956ef66ebca314e0515a7b58d6443e4f740e3397f4f0668f31380fd4a1c2"
+    },
+    "qa/geometry-audit.json": {
+      "bytes": 5208,
+      "sha256": "41ca13c1d8b90570b93018474999327ff32de23e56eb6d78441cfc0e6bbf4605"
+    },
+    "qa/geometry-audit.log": {
+      "bytes": 5406,
+      "sha256": "514c00099e942a17ecf863461b31cd7c7ad75047bba129a132416a85e59dc1d6"
+    },
+    "qa/mobile-brachialis.png": {
+      "bytes": 571576,
+      "sha256": "6b5c7ef6b51983a5c4ea69829ac5077d03a7cee1902bcfdb0887cc72e7220941"
+    },
+    "qa/mobile-exploded.png": {
+      "bytes": 632205,
+      "sha256": "f6db5fcb4808efa541a508b80974e9ade3da99a0af475e18965e50323dc1147d"
+    },
+    "qa/mobile-overview.png": {
+      "bytes": 574018,
+      "sha256": "ddf80bb60ff6eac4eaf2e1d6ded653d7774d58a1c53003ffda1202921e5166cc"
+    },
+    "qa/motion-0.png": {
+      "bytes": 383516,
+      "sha256": "c0adecd2df80b60236d5f76c02d92a8d63615af7f7724880c79ae6f09717d53e"
+    },
+    "qa/motion-120.png": {
+      "bytes": 383528,
+      "sha256": "81606a986fbbdedecededd061b06ba47efd9ceee32254cd8ec69024f481e6b1b"
+    },
+    "qa/motion-60.png": {
+      "bytes": 385112,
+      "sha256": "ea8112e5b2e7e4206870e0816fece8c94db3c1d01cc2b3fba26187165783d560"
+    },
+    "qa/studio-build.log": {
+      "bytes": 3888,
+      "sha256": "e70da36c3ca771578a6364f1907ccfa0dbf19464299d608ad8746655cd0d0264"
+    },
+    "qa/verification.json": {
+      "bytes": 7846,
+      "sha256": "491a992b52f2a08f88bb1241329fd2bea4d8d5081d153557b57a97abcc3e3d6f"
+    },
+    "qa/verify.cjs": {
+      "bytes": 11233,
+      "sha256": "38a290eb8db8fcd5e77ac98a4a42131c5c0b5c548a043393580ca73b4a7bfc29"
+    },
+    "sources/FMA13395.stl": {
+      "bytes": 5662884,
+      "sha256": "c0a3afd469db1fec9527bb81ec1f0956876d3d64d3acbf3a083619d4e7ce297b"
+    },
+    "sources/FMA23130.stl": {
+      "bytes": 813484,
+      "sha256": "6e26ad2b9794b136000abe2cc0b54cade989b943214e2149732cc2db2e337dce"
+    },
+    "sources/FMA23464.stl": {
+      "bytes": 140284,
+      "sha256": "23eed49ade9f558406782b47decee325d12ee9e1d5ef661a051a0516a142dfa3"
+    },
+    "sources/FMA23467.stl": {
+      "bytes": 179684,
+      "sha256": "c6074d69a2ccbcef6db2fb8bf758b44a5f6438b035da3399d6efb41b9d759a03"
+    },
+    "sources/FMA37668.stl": {
+      "bytes": 1749484,
+      "sha256": "2eb8019befa2c5f67e138757b0b4b52bef9bedba735e6bde1596becca8388b19"
+    },
+    "sources/FMA37684.stl": {
+      "bytes": 1392084,
+      "sha256": "254c2b9528925155b360d919be825040fd6fb46f9fcf006a9969f25d738a50b0"
+    },
+    "sources/FMA37686.stl": {
+      "bytes": 1613384,
+      "sha256": "1ceb9b9892b4cfe905d108cd096a24c9ea0c20bbe182364d748852e1eaeab344"
+    },
+    "sources/FMA37695.stl": {
+      "bytes": 1344084,
+      "sha256": "1a92c34f2891072488e55f65b9bed1560b473f36b6a4b996a2ccab6681b4c3ea"
+    },
+    "sources/FMA37697.stl": {
+      "bytes": 1815684,
+      "sha256": "c875ced0ecedde0637edf88b27e9a2086fd80088d9f89252664f49e981a8f855"
+    },
+    "sources/FMA37699.stl": {
+      "bytes": 1975784,
+      "sha256": "1ed7dd3d76fe3b6c89a6998e4cbd908ae22a545c4779a54e4cb720dc0e571a9f"
+    },
+    "sources/LICENSE-BodyParts3D.txt": {
+      "bytes": 715,
+      "sha256": "0e26340c8fadac4a0478d23dd12f4cb20b4043c436d0ab95eacb062391a7ec84"
+    },
+    "sources/coordinate_system.png": {
+      "bytes": 28425,
+      "sha256": "338736275c11eac8c89531fdc14193c9a8adf5baab674033d9d89259f152a5f6"
+    },
+    "sources/provenance.json": {
+      "bytes": 2316,
+      "sha256": "c0c4a21e539df99a7fab76d4d2f02dba0357b9531172db815632b399a47fb9ca"
+    },
+    "sources/upstream-README.md": {
+      "bytes": 6037,
+      "sha256": "3523aed34207691dfaf9689407af23b145b431a6ce750155775da5ac4139c339"
+    },
+    "src/app.js": {
+      "bytes": 18728,
+      "sha256": "cfac79282f2e41b832425129eee1d29aad09c8f74876134a921e5e72b3b35a0b"
+    },
+    "src/style.css": {
+      "bytes": 15264,
+      "sha256": "006dc726f5705e3fd705a9c62673fe75b9fa5fdeadb7efc8a56a56374507aa9e"
+    },
+    "vendor/BufferGeometryUtils.js": {
+      "bytes": 35539,
+      "sha256": "fda7e946b8e0b5ab39b779206589e7a1079a22eb24efb89d7223e03fdfb1f751"
+    },
+    "vendor/GLTFLoader.js": {
+      "bytes": 114732,
+      "sha256": "adbbafe8ce40416525b6be0ee5cac0d3782482bcf0122c8ca8ec1ffa77d3440b"
+    },
+    "vendor/OrbitControls.js": {
+      "bytes": 38703,
+      "sha256": "b97879c748170baadeb3fb84cea1ffdf4674e283dc06042f34e2acb95a76042c"
+    },
+    "vendor/THREE-LICENSE.txt": {
+      "bytes": 1081,
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    "vendor/three.core.js": {
+      "bytes": 1403455,
+      "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20"
+    },
+    "vendor/three.module.js": {
+      "bytes": 603113,
+      "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a"
+    }
+  }
+}

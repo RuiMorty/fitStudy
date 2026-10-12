@@ -1,0 +1,27 @@
+{
+  "at":"2026-09-30T10:20:00+08:00",
+  "reviewer":"local visual and alpha QA",
+  "requirements":["true-alpha","no-background-or-checkerboard","wordless","character-consistency","single-knowledge-relationship","safe-equipment-structure","independent-overview-art","effective-size-in-fixed-knowledge-region"],
+  "technicalChecks":{"checkedWith":["sips hasAlpha","scripts/study-image-bounds.py","local contact-sheet and native-size visual review"],"result":"选用的11个 PNG 都有透明通道、非空 alpha 边界且无白底或棋盘格；知识图的主体宽度适合固定图区。"},
+  "accepted":[
+    {"file":"cover.png","use":"cover","review":"波吉观察德斯帕在蓝色平衡垫上进行受控浅蹲；完整无字。"},
+    {"file":"visual-01-goal.png","use":"稳定耐力目标","review":"稳定地面的受控浅蹲与观察关系清楚。"},
+    {"file":"visual-02-variables.png","use":"训练变量","review":"底部停顿与平稳站起形成慢节奏两态，人物和关节完整。"},
+    {"file":"visual-03-progression.png","use":"进阶路径","review":"稳定地面与平衡垫两态清楚，波吉居中观察。"},
+    {"file":"visual-04-library.png","use":"练习库","review":"鸟狗动作的对侧伸展、躯干和支撑手清楚；器材未造成遮挡。"},
+    {"file":"visual-05-checks-attempt-03.png","use":"组间检查","review":"固定角色保持一致，德斯帕、四个无字检查点与波吉横向铺开，适合固定图区。"},
+    {"file":"overview-01-goal.png","use":"总览专用","review":"独立绘制的稳定地面浅蹲。"},
+    {"file":"overview-02-variables.png","use":"总览专用","review":"独立绘制的底部停顿。"},
+    {"file":"overview-03-progression-attempt-03.png","use":"总览专用","review":"独立绘制，波吉与固定德斯帕完整出现，平衡垫支撑清楚。"},
+    {"file":"overview-04-library.png","use":"总览专用","review":"独立绘制的鸟狗动作。"},
+    {"file":"overview-05-checks.png","use":"总览专用","review":"独立绘制的恢复与单一无字检查点。"}
+  ],
+  "rejected":[
+    {"file":"overview-03-progression.png","attempt":1,"reason":"漏画波吉。"},
+    {"file":"overview-03-progression-attempt-02.png","attempt":2,"reason":"出现非固定德斯帕的光头黑衣角色，拒收。"},
+    {"file":"visual-05-checks.png","attempt":1,"reason":"主体只占画布中央窄区，固定知识图区内会过小。"},
+    {"file":"visual-05-checks-attempt-02.png","attempt":2,"reason":"出现照片感武术人物，违反固定二维角色风格。"}
+  ],
+  "retriesUsed":{"overview-03-progression.png":2,"visual-05-checks.png":2},
+  "result":"11项交付来源均已选择；两项各经2次针对性重试后通过，未超过每图6次请求上限。"
+}

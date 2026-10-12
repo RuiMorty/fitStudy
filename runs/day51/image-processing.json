@@ -1,0 +1,513 @@
+{
+  "processedAt": "2026-09-30T02:00:49.254513+00:00",
+  "method": "trim near-transparent noise; reviewed crop; uniform scale; transparent margin",
+  "assets": [
+    {
+      "source": "runs/day51/source/cover.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "sourceSha256": "4f6978349771615e3fee05e9bd897e17dcef6b02ff720f4e2c2f1275f2763e93",
+      "reviewedCrop": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "visibleCrop": [
+        158,
+        21,
+        1672,
+        941
+      ],
+      "output": "runs/day51/assets/cover.png",
+      "size": [
+        1600,
+        900
+      ],
+      "subjectSize": [
+        1303,
+        792
+      ],
+      "offset": [
+        148,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "无字封面"
+    },
+    {
+      "source": "runs/day51/source/visual-01-lsd.png",
+      "sourceSize": [
+        1881,
+        836
+      ],
+      "sourceSha256": "ebd9d69a01a72b848703f2cb2e330a48f2fb912387070502830dc0b9605eea45",
+      "reviewedCrop": [
+        0,
+        0,
+        1881,
+        836
+      ],
+      "visibleCrop": [
+        14,
+        14,
+        1865,
+        775
+      ],
+      "output": "runs/day51/assets/visual-01-lsd.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1851,
+        761
+      ],
+      "offset": [
+        474,
+        69
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "持续训练"
+    },
+    {
+      "source": "runs/day51/source/visual-02-intervals.png",
+      "sourceSize": [
+        1881,
+        836
+      ],
+      "sourceSha256": "be434b3a8116c9a4c37610be6a17f5ef3f061c2018aa5a99b1cd2cbb8cd6f6bd",
+      "reviewedCrop": [
+        0,
+        0,
+        1881,
+        836
+      ],
+      "visibleCrop": [
+        126,
+        0,
+        1756,
+        819
+      ],
+      "output": "runs/day51/assets/visual-02-intervals.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1576,
+        792
+      ],
+      "offset": [
+        612,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "间歇训练"
+    },
+    {
+      "source": "runs/day51/source/visual-03-fartlek.png",
+      "sourceSize": [
+        1891,
+        832
+      ],
+      "sourceSha256": "e558978450461a71d2920d43824cc8bfee45a42b68df07d8434de75befbcb19b",
+      "reviewedCrop": [
+        0,
+        0,
+        1891,
+        832
+      ],
+      "visibleCrop": [
+        5,
+        24,
+        1891,
+        806
+      ],
+      "output": "runs/day51/assets/visual-03-fartlek.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1886,
+        782
+      ],
+      "offset": [
+        457,
+        59
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "法特莱克"
+    },
+    {
+      "source": "runs/day51/source/visual-04-repetition.png",
+      "sourceSize": [
+        1881,
+        836
+      ],
+      "sourceSha256": "1ccbb8f2f55ffab703cc60f1f07b925444d09de1890a8dd42587405573f81176",
+      "reviewedCrop": [
+        0,
+        0,
+        1881,
+        836
+      ],
+      "visibleCrop": [
+        72,
+        29,
+        1800,
+        796
+      ],
+      "output": "runs/day51/assets/visual-04-repetition.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1728,
+        767
+      ],
+      "offset": [
+        536,
+        66
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "重复训练"
+    },
+    {
+      "source": "runs/day51/source/visual-05-distribution.png",
+      "sourceSize": [
+        1870,
+        841
+      ],
+      "sourceSha256": "0f40617998abf7e79794a14b855590f2052bfed4ab57e574e6d8cf12a2034ea5",
+      "reviewedCrop": [
+        0,
+        0,
+        1870,
+        841
+      ],
+      "visibleCrop": [
+        65,
+        12,
+        1861,
+        810
+      ],
+      "output": "runs/day51/assets/visual-05-distribution.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1782,
+        792
+      ],
+      "offset": [
+        509,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "强度分布"
+    },
+    {
+      "source": "runs/day51/source/visual-06-selection.png",
+      "sourceSize": [
+        1881,
+        836
+      ],
+      "sourceSha256": "175f15d1e70c3557b9849e7664b5ff4551a22cb49318538396c03fa2bfd0004e",
+      "reviewedCrop": [
+        0,
+        0,
+        1881,
+        836
+      ],
+      "visibleCrop": [
+        45,
+        15,
+        1833,
+        807
+      ],
+      "output": "runs/day51/assets/visual-06-selection.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1788,
+        792
+      ],
+      "offset": [
+        506,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "方法选择"
+    },
+    {
+      "source": "runs/day51/source/overview-01-lsd.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "5e33cf2339b6270d75b7ef49183313572954f98e62d9f7f711ce561bb08e9c7c",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        77,
+        58,
+        1370,
+        960
+      ],
+      "output": "runs/day51/assets/overview-01-lsd.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1293,
+        902
+      ],
+      "offset": [
+        153,
+        149
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day51/source/overview-02-intervals.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "796b5eea5446f5b8542e892c8764450e4b82cae223a23d765371ebf286e5bba3",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        146,
+        16,
+        1278,
+        1065
+      ],
+      "output": "runs/day51/assets/overview-02-intervals.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1132,
+        1049
+      ],
+      "offset": [
+        234,
+        75
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day51/source/overview-03-fartlek.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "e909aca7657d46acadb7ce047e092390f16a265bbfb08728cd4ca7cfd13dcb91",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        122,
+        85,
+        1314,
+        993
+      ],
+      "output": "runs/day51/assets/overview-03-fartlek.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1192,
+        908
+      ],
+      "offset": [
+        204,
+        146
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day51/source/overview-04-repetition.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "79e4bd7e6973d1f4d0fb87a004f55e9b78f8aec16ac6aa5603e359ad1cc43627",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        175,
+        28,
+        1297,
+        1027
+      ],
+      "output": "runs/day51/assets/overview-04-repetition.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1122,
+        999
+      ],
+      "offset": [
+        239,
+        100
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day51/source/overview-05-distribution.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "e47da5c5c4995da2ebf0103a0618d4d512b34c4a16547065f06507823930644a",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        31,
+        31,
+        1332,
+        971
+      ],
+      "output": "runs/day51/assets/overview-05-distribution.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1301,
+        940
+      ],
+      "offset": [
+        149,
+        130
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day51/source/overview-06-selection.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "a912cf02ce57d4ce9e60e4b99192ace3c171539e6bf5159787ce8ca682292e63",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        17,
+        18,
+        1442,
+        1021
+      ],
+      "output": "runs/day51/assets/overview-06-selection.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1425,
+        1003
+      ],
+      "offset": [
+        87,
+        98
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    }
+  ]
+}

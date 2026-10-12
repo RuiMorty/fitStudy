@@ -1,0 +1,34 @@
+{
+  "day": 51,
+  "title": "有氧训练方法",
+  "status": "awaiting-review",
+  "artifactStatus": "ready-local-draft",
+  "startedAt": "2026-09-30T09:50:00+08:00",
+  "authorization": "用户于2026-09-30授权连续生成后续本地草稿；每图最多首次加5次重试，始终不部署。",
+  "imagePlan": "runs/day51/image-prompts.json",
+  "retryPolicy": "runs/day50/retry-policy.json",
+  "generated": 13,
+  "planned": 13,
+  "batchPolicy": "runs/daily-preview/batch-20260930.json",
+  "sourceQualityReview": "runs/day51/visual-quality-review.json",
+  "verification": {
+    "templateTests": "17 passed",
+    "browser": "runs/day51/verification/report.json",
+    "imageProcessing": "runs/day51/image-processing.json",
+    "zip": "xhs/day51/day51-xhs.zip"
+  },
+  "localPreview": {
+    "course": "http://127.0.0.1:8420/html/day51-%E6%9C%89%E6%B0%A7%E8%AE%AD%E7%BB%83%E6%96%B9%E6%B3%95.html",
+    "xhs": "http://127.0.0.1:8420/xhs/day51/index.html",
+    "zip": "http://127.0.0.1:8420/xhs/day51/day51-xhs.zip"
+  },
+  "nextAction": "等待用户复核 Day51 本地卡片修订；未授权发布。",
+  "cardRevision": {
+    "date": "2026-10-09",
+    "scope": "小红书总览、六张知识卡、误区提示和caption",
+    "structure": "每张卡按是什么、有什么用、实际怎么用组织",
+    "verification": "模板测试17/17，隔离渲染与逐页目检完成，安装后课程320/390/768/1440交互及8张卡片排版验证通过，ZIP CRC及内容一致",
+    "userAcceptance": "pending",
+    "followUp": "2026-10-09：六张小红书知识卡保留“概念、作用、应用”的内容顺序，将18个小标题改为各主题专属短句，避免统一模板标签。"
+  }
+}

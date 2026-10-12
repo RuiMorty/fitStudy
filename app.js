@@ -19,6 +19,11 @@ const state = {
   selectedExercise: "lat-pulldown",
   atlasView: "front",
   selectedMuscle: "front-left-deltoid",
+  knowledgeArticles: [],
+  knowledgeArticleId: null,
+  knowledgeSlideIndex: 0,
+  knowledgeSlideTransitionTimer: null,
+  knowledgeImageIndex: 0,
 };
 
 const navigationStorageKey = "fitness-study.navigation.v1";
@@ -297,13 +302,15 @@ const muscles = [
 ];
 
 async function init() {
-  const [markdown, progress] = await Promise.all([
+  const [markdown, progress, knowledgeArticles] = await Promise.all([
     fetch("fitness_syllabus.md").then((response) => response.text()),
     fetch("progress.json", { cache: "no-store" })
       .then((response) => (response.ok ? response.json() : null))
       .catch(() => null),
+    fetch("knowledge/catalog.json", { cache: "no-store" }).then((response) => response.ok ? response.json() : []).catch(() => []),
   ]);
   if (Number.isInteger(progress?.day)) state.currentDay = progress.day;
+  state.knowledgeArticles = Array.isArray(knowledgeArticles) ? knowledgeArticles : [];
   parseSyllabus(markdown);
   restoreNavigation();
   bindUI();
@@ -330,7 +337,7 @@ function restoreNavigation() {
     const saved = JSON.parse(localStorage.getItem(navigationStorageKey));
     if (!saved || typeof saved !== "object") return;
 
-    if (["theory", "exercise", "nutrition"].includes(saved.tab)) state.tab = saved.tab;
+    if (["theory", "exercise", "nutrition", "knowledge"].includes(saved.tab)) state.tab = saved.tab;
     if (["published-desc", "day-asc", "current-first"].includes(saved.sortMode)) state.sortMode = saved.sortMode;
     if (["library", "atlas"].includes(saved.exerciseView)) state.exerciseView = saved.exerciseView;
     if (["front", "back"].includes(saved.atlasView)) state.atlasView = saved.atlasView;
@@ -447,6 +454,44 @@ function bindUI() {
   $("theoryTab").addEventListener("click", () => setTab("theory"));
   $("exerciseTab").addEventListener("click", () => setTab("exercise"));
   $("nutritionTab").addEventListener("click", () => setTab("nutrition"));
+  $("knowledgeTab").addEventListener("click", () => setTab("knowledge"));
+  $("knowledgeContent").addEventListener("click", (event) => {
+    const card = event.target.closest("[data-knowledge-article]");
+    if (card) {
+      state.knowledgeArticleId = card.dataset.knowledgeArticle;
+      state.knowledgeSlideIndex = 0;
+      render();
+      document.querySelector(".main-content").scrollTo(0, 0);
+      return;
+    }
+    if (event.target.closest("[data-knowledge-back]")) {
+      if (state.knowledgeSlideTransitionTimer) window.clearTimeout(state.knowledgeSlideTransitionTimer);
+      state.knowledgeSlideTransitionTimer = null;
+      state.knowledgeArticleId = null;
+      render();
+      document.querySelector(".main-content").scrollTo(0, 0);
+      return;
+    }
+    const image = event.target.closest("[data-knowledge-image]");
+    if (image) openKnowledgeImage(Number(image.dataset.knowledgeImage));
+    const step = event.target.closest("[data-knowledge-step]");
+    if (step) {
+      switchKnowledgeSlide(Number(step.dataset.knowledgeStep));
+      return;
+    }
+    if (event.target.closest("[data-knowledge-prev]")) {
+      switchKnowledgeSlide(state.knowledgeSlideIndex - 1);
+    }
+    if (event.target.closest("[data-knowledge-next]")) {
+      switchKnowledgeSlide(state.knowledgeSlideIndex + 1);
+    }
+  });
+  $("knowledgeCloseImage").addEventListener("click", closeKnowledgeImage);
+  $("knowledgePrevImage").addEventListener("click", () => showKnowledgeImage(state.knowledgeImageIndex - 1));
+  $("knowledgeNextImage").addEventListener("click", () => showKnowledgeImage(state.knowledgeImageIndex + 1));
+  $("knowledgeLightbox").addEventListener("click", (event) => {
+    if (event.target === $("knowledgeLightbox")) closeKnowledgeImage();
+  });
   $("headerAction").addEventListener("click", (event) => {
     if ($("headerAction").dataset.view !== "review") return;
     event.preventDefault();
@@ -528,15 +573,22 @@ function bindUI() {
   document.querySelectorAll("[data-close-coaching-visual]").forEach((node) => node.addEventListener("click", closeCoachingVisual));
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") {
+      closeKnowledgeImage();
       closeModal();
       closeCoachingVisual();
     }
+    if (!$("knowledgeLightbox").hidden && event.key === "ArrowLeft") showKnowledgeImage(state.knowledgeImageIndex - 1);
+    if (!$("knowledgeLightbox").hidden && event.key === "ArrowRight") showKnowledgeImage(state.knowledgeImageIndex + 1);
   });
 
   renderFilterControls();
 }
 
 function setTab(tab) {
+  if (tab !== "knowledge" && state.knowledgeSlideTransitionTimer) {
+    window.clearTimeout(state.knowledgeSlideTransitionTimer);
+    state.knowledgeSlideTransitionTimer = null;
+  }
   const fromTab = state.visibleTab;
   if (tab === state.tab && !state.tabTransitionTimer) return;
 
@@ -567,11 +619,11 @@ function setTab(tab) {
 }
 
 function panelForTab(tab) {
-  return $(tab === "theory" ? "cardGrid" : tab === "review" ? "reviewGrid" : tab === "nutrition" ? "nutritionPanel" : "exercisePanel");
+  return $({ theory: "cardGrid", review: "reviewGrid", exercise: "exercisePanel", nutrition: "nutritionPanel", knowledge: "knowledgePanel" }[tab]);
 }
 
 function tabDirection(fromTab, toTab) {
-  const tabOrder = { theory: 0, review: 0, exercise: 1, nutrition: 2 };
+  const tabOrder = { theory: 0, review: 0, exercise: 1, nutrition: 2, knowledge: 3 };
   return tabOrder[toTab] >= tabOrder[fromTab] ? "forward" : "backward";
 }
 
@@ -580,6 +632,7 @@ function updateTabSelection(tab, animate = false) {
   $("theoryTab").classList.toggle("active", tab === "theory");
   $("exerciseTab").classList.toggle("active", tab === "exercise");
   $("nutritionTab").classList.toggle("active", tab === "nutrition");
+  $("knowledgeTab").classList.toggle("active", tab === "knowledge");
   tabs.dataset.active = tab;
 
   if (animate && tab !== "review") {
@@ -679,12 +732,14 @@ function render(enterDirection = "") {
   const reviewMode = state.tab === "review";
   const nutritionMode = state.tab === "nutrition";
   const exerciseMode = state.tab === "exercise";
+  const knowledgeMode = state.tab === "knowledge";
   document.body.dataset.activeTab = state.tab;
   updateTabSelection(state.tab);
   $("cardGrid").hidden = !theoryMode;
   $("reviewGrid").hidden = !reviewMode;
   $("nutritionPanel").hidden = !nutritionMode;
   $("exercisePanel").hidden = !exerciseMode;
+  $("knowledgePanel").hidden = !knowledgeMode;
   $("resultBar").hidden = !theoryMode;
   $("resetFilters").hidden = !theoryMode;
   renderMainHeader();
@@ -693,14 +748,106 @@ function render(enterDirection = "") {
   if (theoryMode) renderCards(lessons);
   if (reviewMode) renderReviews(reviews);
   if (exerciseMode) renderExercise();
+  if (knowledgeMode) renderKnowledge();
   if (theoryMode) $("resultText").textContent = `找到 ${lessons.length} 个理论主题`;
 
   if (enterDirection) {
-    const activePanel = theoryMode ? $("cardGrid") : reviewMode ? $("reviewGrid") : nutritionMode ? $("nutritionPanel") : $("exercisePanel");
+    const activePanel = panelForTab(state.tab);
     const enterClass = `tab-panel-enter-${enterDirection}`;
     activePanel.classList.remove("tab-panel-enter-forward", "tab-panel-enter-backward");
     requestAnimationFrame(() => activePanel.classList.add(enterClass));
   }
+}
+
+function knowledgeText(value) {
+  return String(value ?? "").replace(/[&<>"']/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[char]);
+}
+
+function switchKnowledgeSlide(targetIndex) {
+  const article = state.knowledgeArticles.find((item) => item.id === state.knowledgeArticleId);
+  if (!article) return;
+  const nextIndex = Math.max(0, Math.min(article.slides.length - 1, targetIndex));
+  if (nextIndex === state.knowledgeSlideIndex) {
+    if (state.knowledgeSlideTransitionTimer) {
+      window.clearTimeout(state.knowledgeSlideTransitionTimer);
+      state.knowledgeSlideTransitionTimer = null;
+      $("knowledgeContent").querySelector(".knowledge-reader")?.classList.remove("is-leaving-forward", "is-leaving-backward");
+    }
+    return;
+  }
+  const direction = nextIndex > state.knowledgeSlideIndex ? "forward" : "backward";
+  if (state.knowledgeSlideTransitionTimer) window.clearTimeout(state.knowledgeSlideTransitionTimer);
+  const reader = $("knowledgeContent").querySelector(".knowledge-reader");
+  reader?.classList.remove("is-leaving-forward", "is-leaving-backward", "is-entering-forward", "is-entering-backward");
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches || !reader) {
+    state.knowledgeSlideIndex = nextIndex;
+    renderKnowledge();
+    return;
+  }
+  void reader.offsetWidth;
+  reader.classList.add(`is-leaving-${direction}`);
+  state.knowledgeSlideTransitionTimer = window.setTimeout(() => {
+    state.knowledgeSlideTransitionTimer = null;
+    state.knowledgeSlideIndex = nextIndex;
+    renderKnowledge(direction);
+  }, 150);
+}
+
+function renderKnowledge(enterDirection = "") {
+  const selected = state.knowledgeArticles.find((article) => article.id === state.knowledgeArticleId);
+  if (!selected) {
+    $("knowledgeContent").innerHTML = `
+      <div class="knowledge-card-grid">${state.knowledgeArticles.map((article) => `
+        <button class="knowledge-article-card" type="button" data-knowledge-article="${knowledgeText(article.id)}">
+          <img src="${knowledgeText(article.cover)}" alt="" loading="lazy" width="640" height="427" />
+          <span class="knowledge-card-copy"><small>${knowledgeText(article.category)} · ${knowledgeText(article.slides.length)} 张图</small><strong>${knowledgeText(article.title)}</strong><span>${knowledgeText(article.summary)}</span><em>阅读专题 →</em></span>
+        </button>`).join("")}</div>`;
+    return;
+  }
+
+  const index = Math.min(state.knowledgeSlideIndex, selected.slides.length - 1);
+  const slide = selected.slides[index];
+  $("knowledgeContent").innerHTML = `
+    <button class="knowledge-back" type="button" data-knowledge-back>← 返回专题</button>
+    <article class="knowledge-article">
+      <header class="knowledge-article-heading"><small>${knowledgeText(selected.category)} · ${knowledgeText(selected.date)}</small><h2>${knowledgeText(selected.title)}</h2><p>${knowledgeText(selected.summary)}</p></header>
+      <div class="knowledge-reading-layout">
+        <nav class="knowledge-chapters" aria-label="文章目录"><span>本篇目录</span>${selected.slides.map((item, step) => `
+          <button type="button" class="${step === index ? "active" : ""}" data-knowledge-step="${step}" ${step === index ? 'aria-current="step"' : ""}><b>${String(step + 1).padStart(2, "0")}</b><span>${knowledgeText(item.title)}</span></button>`).join("")}</nav>
+        <div class="knowledge-reader ${enterDirection ? `is-entering-${enterDirection}` : ""}">
+          <div class="knowledge-reader-progress"><span>图解 ${String(index + 1).padStart(2, "0")} / ${String(selected.slides.length).padStart(2, "0")}</span><span>点击图片查看原图</span></div>
+          <div class="knowledge-reader-stage"><button type="button" data-knowledge-image="${index}" aria-label="查看第 ${index + 1} 张原图：${knowledgeText(slide.title)}"><img src="${knowledgeText(slide.thumbnail)}" alt="${knowledgeText(slide.title)}" width="420" height="560" /></button></div>
+          <div class="knowledge-reader-copy"><span>第 ${index + 1} 张 · 图解说明</span><h3>${knowledgeText(slide.title)}</h3><p class="knowledge-reader-lead">${knowledgeText(slide.description)}</p>${(slide.details || []).map((paragraph) => `<p>${knowledgeText(paragraph)}</p>`).join("")}</div>
+          <div class="knowledge-reader-nav"><button type="button" data-knowledge-prev ${index === 0 ? "disabled" : ""}>← 上一张</button><button type="button" data-knowledge-next ${index === selected.slides.length - 1 ? "disabled" : ""}>下一张 →</button></div>
+        </div>
+      </div>
+      <p class="knowledge-note">${knowledgeText(selected.note)}</p>
+    </article>`;
+}
+
+function openKnowledgeImage(index) {
+  $("knowledgeLightbox").hidden = false;
+  document.body.classList.add("knowledge-image-open");
+  showKnowledgeImage(index);
+  $("knowledgeCloseImage").focus();
+}
+
+function showKnowledgeImage(index) {
+  const article = state.knowledgeArticles.find((item) => item.id === state.knowledgeArticleId);
+  if (!article?.slides?.length) return;
+  state.knowledgeImageIndex = (index + article.slides.length) % article.slides.length;
+  const slide = article.slides[state.knowledgeImageIndex];
+  $("knowledgeFullImage").src = slide.image;
+  $("knowledgeFullImage").alt = slide.title;
+  $("knowledgeImageCount").textContent = `${state.knowledgeImageIndex + 1} / ${article.slides.length}`;
+}
+
+function closeKnowledgeImage() {
+  if ($("knowledgeLightbox").hidden) return;
+  $("knowledgeLightbox").hidden = true;
+  $("knowledgeFullImage").removeAttribute("src");
+  document.body.classList.remove("knowledge-image-open");
+  $("knowledgeContent").querySelector(`[data-knowledge-image="${state.knowledgeSlideIndex}"]`)?.focus();
 }
 
 function renderSidebarContext() {
@@ -711,7 +858,8 @@ function renderSidebarContext() {
 
   const pendingCopy = {
     exercise: ["功能待开发", "更多动作学习功能正在开发中。"],
-    nutrition: ["碳水导读", "来源、分类、吸收和主食饮料差异。"],
+    nutrition: ["暂无内容", "营养学内容整理中。"],
+    knowledge: ["知识图解", "按主题阅读运动与训练知识。"],
     review: ["功能待开发", "更多复习工具正在开发中。"],
   }[state.tab];
   $("pendingSidebarTitle").textContent = pendingCopy[0];
@@ -748,8 +896,14 @@ function renderMainHeader() {
     nutrition: {
       kicker: "Nutrition Library",
       title: "营养学",
-      description: "认识不同碳水的来源、消化路径，以及固体食物与甜饮的差异。",
-      insight: `<span>当前主题</span><strong>碳水 <small>Carbs</small></strong>`,
+      description: "内容整理中。",
+      insight: "",
+    },
+    knowledge: {
+      kicker: "Visual Stories",
+      title: "知识图解",
+      description: "按主题读懂训练和运动科学。",
+      insight: `<span>图解专题</span><strong>${state.knowledgeArticles.length} <small>篇</small></strong>`,
     },
   }[state.tab];
 

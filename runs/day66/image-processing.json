@@ -1,0 +1,357 @@
+{
+  "processedAt": "2026-09-30T13:46:31.368978+00:00",
+  "method": "trim near-transparent noise; reviewed crop; uniform scale; transparent margin",
+  "assets": [
+    {
+      "source": "runs/day66/source/cover.png",
+      "sourceSize": [
+        1672,
+        940
+      ],
+      "sourceSha256": "40bb8e3725f63218a37465229d6e82e3a79d9fbbece2f886981232fe8c97a9f2",
+      "reviewedCrop": [
+        0,
+        0,
+        1672,
+        940
+      ],
+      "visibleCrop": [
+        25,
+        0,
+        1653,
+        909
+      ],
+      "output": "runs/day66/assets/cover.png",
+      "size": [
+        1600,
+        900
+      ],
+      "subjectSize": [
+        1418,
+        792
+      ],
+      "offset": [
+        91,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "无字封面"
+    },
+    {
+      "source": "runs/day66/source/visual-01-sweat.png",
+      "sourceSize": [
+        2210,
+        711
+      ],
+      "sourceSha256": "8af049b1b5929b5b9f0614d013f7c4675f6bcf2163059c82d85741976caab1c2",
+      "reviewedCrop": [
+        0,
+        0,
+        2210,
+        711
+      ],
+      "visibleCrop": [
+        651,
+        24,
+        1569,
+        679
+      ],
+      "output": "runs/day66/assets/visual-01-sweat.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        918,
+        655
+      ],
+      "offset": [
+        941,
+        122
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "小红书独立知识页，无字"
+    },
+    {
+      "source": "runs/day66/source/visual-02-timing.png",
+      "sourceSize": [
+        1951,
+        806
+      ],
+      "sourceSha256": "add98fa248fc1f8ebfdcb13638aef7b6a0be1f482f38b030d2a4f972b6167995",
+      "reviewedCrop": [
+        0,
+        0,
+        1951,
+        806
+      ],
+      "visibleCrop": [
+        186,
+        16,
+        1739,
+        760
+      ],
+      "output": "runs/day66/assets/visual-02-timing.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1553,
+        744
+      ],
+      "offset": [
+        623,
+        78
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "小红书独立知识页，无字"
+    },
+    {
+      "source": "runs/day66/source/visual-03-electrolytes.png",
+      "sourceSize": [
+        2213,
+        711
+      ],
+      "sourceSha256": "427550060d85a7a30091fd0f929311b6b50a132710b9c668aafd96f86e0cb27d",
+      "reviewedCrop": [
+        0,
+        0,
+        2213,
+        711
+      ],
+      "visibleCrop": [
+        804,
+        45,
+        1395,
+        673
+      ],
+      "output": "runs/day66/assets/visual-03-electrolytes.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        591,
+        628
+      ],
+      "offset": [
+        1104,
+        136
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "小红书独立知识页，无字"
+    },
+    {
+      "source": "runs/day66/source/visual-04-heat.png",
+      "sourceSize": [
+        2207,
+        712
+      ],
+      "sourceSha256": "13f2428eaf9efd5f8bf77eada7878e3cdfbf7d1b31f8b3b9a077ed5c340e1a2d",
+      "reviewedCrop": [
+        0,
+        0,
+        2207,
+        712
+      ],
+      "visibleCrop": [
+        447,
+        6,
+        1622,
+        691
+      ],
+      "output": "runs/day66/assets/visual-04-heat.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1175,
+        685
+      ],
+      "offset": [
+        812,
+        107
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "小红书独立知识页，无字"
+    },
+    {
+      "source": "runs/day66/source/overview-01-sweat.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "8b1ed5d59e553c4fd673cdee6e320baab1733a6a56681f44b42976a8a69ff612",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        35,
+        41,
+        1416,
+        1043
+      ],
+      "output": "runs/day66/assets/overview-01-sweat.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1381,
+        1002
+      ],
+      "offset": [
+        109,
+        99
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day66/source/overview-02-timing.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "02a2bbbf5d36ff5e7ce49947166cb84d1a92ddad4b0ebb1121b56636a5dbf473",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        162,
+        65,
+        1323,
+        1010
+      ],
+      "output": "runs/day66/assets/overview-02-timing.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1161,
+        945
+      ],
+      "offset": [
+        219,
+        127
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day66/source/overview-03-electrolytes.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "9756cf3d4265b54434483ad2ef0cb7bf0b40f58634ab462d089753d211213472",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        27,
+        70,
+        1421,
+        965
+      ],
+      "output": "runs/day66/assets/overview-03-electrolytes.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1394,
+        895
+      ],
+      "offset": [
+        103,
+        152
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day66/source/overview-04-heat.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "1fecb9779681800d5c807fb34b643e6bbb1ffeefbeb1d2fd0ad3ffa3dcb35588",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        54,
+        29,
+        1379,
+        1025
+      ],
+      "output": "runs/day66/assets/overview-04-heat.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1325,
+        996
+      ],
+      "offset": [
+        137,
+        102
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    }
+  ]
+}

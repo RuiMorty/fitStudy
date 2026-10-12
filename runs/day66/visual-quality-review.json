@@ -1,0 +1,44 @@
+{
+  "reviewer": "local source visual and alpha QA",
+  "requirements": [
+    "true-alpha transparent PNG with no rendered checkerboard or opaque background",
+    "wordless Bojji and Despa teaching art with coherent hydration, food and training props",
+    "no generated text, arrows, flow lines, bubbles, icons, charts, markers, collage panels, duplicate figures or clipped bodies",
+    "each overview asset is independently generated and is not reused as a knowledge-page asset"
+  ],
+  "technicalChecks": {
+    "checkedWith": [
+      "RGBA alpha extrema and transparent-background inspection",
+      "individual visual inspection on dark and white composites",
+      "character, prop, marker, clipping and topic-specific review"
+    ],
+    "result": "All nine selected source PNGs are non-empty RGBA files with alpha. No selected image has a rendered checkerboard, opaque canvas, generated text, prohibited marker, duplicate figure or clipped body/prop. Any modest raw transparent margin is normalized by the required prepare-study-images.py alpha-bounds pipeline into the configured final transparent margin before rendering."
+  },
+  "accepted": [
+    {"file":"cover.png","attempt":1,"source":"runs/day66/image-requests/cover-eb86e17540/attempt-01/cover.png","review":"One Despa takes a measured drink during an outdoor walk while one Bojji rests with a cup in shade; the heat-aware hydration theme is clean and wordless."},
+    {"file":"visual-01-sweat.png","attempt":3,"source":"runs/day66/image-requests/visual-01-sweat-7cbe2288da/attempt-03/visual-01-sweat.png","review":"A clean shared park scene relates light jogging, easy walking and shade to changing fluid loss without icons, panels or duplicated characters."},
+    {"file":"visual-02-timing.png","attempt":4,"source":"runs/day66/image-requests/visual-02-timing-1b05f18f51/attempt-04/visual-02-timing.png","review":"Bojji's pre-warm-up cup and Despa's post-cool-down cup, mat and resistance band communicate distributed hydration without a clock, arrows or a repeated character."},
+    {"file":"visual-03-electrolytes.png","attempt":3,"source":"runs/day66/image-requests/visual-03-electrolytes-9cd16aa9e6/attempt-03/visual-03-electrolytes.png","review":"Balanced meal, plain water and a small cup communicate food-plus-fluid planning after a longer session without labels, symbols or extra people."},
+    {"file":"visual-04-heat.png","attempt":2,"source":"runs/day66/image-requests/visual-04-heat-3f79303411/attempt-02/visual-04-heat.png","review":"The shaded rest and calm open-hand pause cue explain heat-aware self-regulation without warning symbols or emergency drama."},
+    {"file":"overview-01-sweat.png","attempt":2,"source":"runs/day66/image-requests/overview-01-sweat-4bd8964abb/attempt-02/overview-01-sweat.png","review":"Independent overview scene cleanly contrasts task and environment while retaining complete figures and props."},
+    {"file":"overview-02-timing.png","attempt":2,"source":"runs/day66/image-requests/overview-02-timing-c9bd9b629b/attempt-02/overview-02-timing.png","review":"Independent overview scene uses a mat and towel to distinguish before-warm-up and after-cool-down drinking without sequence graphics."},
+    {"file":"overview-03-electrolytes.png","attempt":2,"source":"runs/day66/image-requests/overview-03-electrolytes-44ddf94a35/attempt-02/overview-03-electrolytes.png","review":"Independent trail-rest scene connects a normal meal and water to a longer walk without a food collage, labels or markers."},
+    {"file":"overview-04-heat.png","attempt":2,"source":"runs/day66/image-requests/overview-04-heat-e7a485e237/attempt-02/overview-04-heat.png","review":"Independent shaded rest scene is complete, calm and free of emergency symbols, panels, text or clipped foliage."}
+  ],
+  "rejected": [
+    {"file":"visual-01-sweat.png","attempt":1,"reason":"Initial candidate did not preserve the required clean, coherent comparison composition."},
+    {"file":"visual-01-sweat.png","attempt":2,"reason":"Initial correction retained disallowed or ambiguous scene treatment; attempt 3 removed it."},
+    {"file":"visual-02-timing.png","attempt":1,"reason":"Initial candidate did not establish the required clean distributed-hydration routine."},
+    {"file":"visual-02-timing.png","attempt":2,"reason":"Candidate required a clearer one-routine composition without prohibited sequence treatment."},
+    {"file":"visual-02-timing.png","attempt":3,"reason":"Candidate retained a prohibited curved motion-line marker; attempt 4 removes it."},
+    {"file":"visual-03-electrolytes.png","attempt":1,"reason":"Initial candidate did not meet the clean food-plus-fluid teaching brief."},
+    {"file":"visual-03-electrolytes.png","attempt":2,"reason":"Despa's head was actually cropped at the image boundary; attempt 3 has complete figures."},
+    {"file":"visual-04-heat.png","attempt":1,"reason":"Initial candidate did not meet the required clean heat-safety composition."},
+    {"file":"overview-01-sweat.png","attempt":1,"reason":"Initial candidate required a cleaner independent overview composition."},
+    {"file":"overview-02-timing.png","attempt":1,"reason":"Initial candidate required a cleaner independent overview composition."},
+    {"file":"overview-03-electrolytes.png","attempt":1,"reason":"Initial candidate required a cleaner independent overview composition."},
+    {"file":"overview-04-heat.png","attempt":1,"reason":"Initial candidate required a cleaner independent overview composition."}
+  ],
+  "retriesUsed": 12,
+  "result": "9 selected source assets passed local source QA; rejected candidates and adjusted prompt history remain preserved."
+}

@@ -1,0 +1,28 @@
+{
+  "day": 81,
+  "title": "NASM OPT模型总览",
+  "status": "awaiting-review",
+  "artifactStatus": "ready-local-draft",
+  "authorization": "用户于2026-09-30授权连续生成至Day110的本地草稿；每张图片首次请求后最多5次经调整提示词重试；不部署。",
+  "imagePlan": "runs/day81/image-prompts.json",
+  "retryPolicy": "每张图片首次请求后，最多5次经调整提示词的重试；成功即停止。",
+  "generated": 11,
+  "planned": 11,
+  "requested": 15,
+  "qualityAccepted": 11,
+  "retriesUsed": 4,
+  "imagesAccepted": true,
+  "sourceQualityReview": "runs/day81/visual-quality-review.json",
+  "verification": {
+    "sharedTests": "passed 17/17",
+    "isolatedPackage": "passed after shared renderer export",
+    "installedPackage": "passed at 320/390/768/1440 with disclosure, flip cards, quizzes, zoom and overflow checks",
+    "finalVisualQA": "accepted after visual review of all seven 1080x1440 XHS PNGs and the course/detail outputs",
+    "zip": "xhs/day81/day81-xhs.zip CRC passed"
+  },
+  "deployment": {
+    "status": "not-deployed",
+    "reason": "本地草稿等待用户验收；未获部署授权。"
+  },
+  "nextAction": "等待用户验收 Day81 本地草稿；用户已授权继续制作后续本地草稿，但不得部署、发布、修改首页、短链或正式进度。"
+}

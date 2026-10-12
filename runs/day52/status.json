@@ -1,0 +1,17 @@
+{
+  "day":52,
+  "title":"OPT第1阶段：稳定耐力训练",
+  "status":"awaiting-review",
+  "artifactStatus":"ready-local-draft",
+  "startedAt":"2026-09-30T10:09:25+08:00",
+  "authorization":"用户于2026-09-30授权连续生成后续本地草稿；每图最多首次加5次重试，始终不部署。",
+  "imagePlan":"runs/day52/image-prompts.json",
+  "retryPolicy":"每张图片首次请求后，最多5次经调整提示词的重试；成功即停止。",
+  "generated":11,
+  "planned":11,
+  "batchPolicy":"runs/daily-preview/batch-20260930.json",
+  "sourceQualityReview":"runs/day52/visual-quality-review.json",
+  "verification":{"templateTests":"17 passed","browser":"runs/day52/verification/report.json","imageProcessing":"runs/day52/image-processing.json","zip":"xhs/day52/day52-xhs.zip"},
+  "localPreview":{"course":"http://127.0.0.1:8420/html/day52-OPT%E7%AC%AC1%E9%98%B6%E6%AE%B5%EF%BC%9A%E7%A8%B3%E5%AE%9A%E8%80%90%E5%8A%9B%E8%AE%AD%E7%BB%83.html","xhs":"http://127.0.0.1:8420/xhs/day52/index.html","zip":"http://127.0.0.1:8420/xhs/day52/day52-xhs.zip"},
+  "nextAction":"等待用户验收 Day52；根据用户2026-09-30的批量制作授权，可继续制作 Day53 及后续本地草稿，但不得部署。"
+}

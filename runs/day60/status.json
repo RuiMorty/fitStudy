@@ -1,0 +1,18 @@
+{
+  "day": 60,
+  "title": "足旋前与膝外翻综合征纠正",
+  "status": "awaiting-review",
+  "artifactStatus": "ready-local-draft",
+  "authorization": "用户于2026-09-30授权连续生成后续本地草稿；每张图片首次请求后最多5次经调整提示词重试，始终不部署。",
+  "imagePlan": "runs/day60/image-prompts.json",
+  "retryPolicy": "每张图片首次请求后，最多5次经调整提示词的重试；成功即停止。",
+  "generated": 9,
+  "planned": 9,
+  "sourceQualityReview": "runs/day60/visual-quality-review.json",
+  "verification": {
+    "templateTests": "17/17 passed",
+    "package": "scripts/verify-study-package.js --day 60 passed after local-host browser verification",
+    "zip": "xhs/day60/day60-xhs.zip CRC passed"
+  },
+  "nextAction": "等待用户验收本地稿；未经用户明确点名，不部署、不改首页、短链、排序或两份正式进度文件。"
+}

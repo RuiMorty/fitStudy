@@ -1,0 +1,12 @@
+{
+  "day": 109,
+  "title": "考试当天临考要点+轻量回顾",
+  "status": "preparing",
+  "artifactStatus": "runtime-inputs-ready",
+  "authorization": "用户于2026-09-30授权连续生成后续本地草稿；每张图片首次请求后最多5次经调整提示词重试，始终不部署。",
+  "imagePlan": "runs/day109/image-prompts.json",
+  "retryPolicy": "每张图片首次请求后，最多5次经调整提示词的重试；成功即停止。",
+  "generated": 0,
+  "planned": 9,
+  "nextAction": "待批量制作流程启动后，逐项生成首轮无字透明PNG并进行质量检查；不得渲染、安装、部署或修改正式进度。"
+}

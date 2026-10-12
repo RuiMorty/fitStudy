@@ -1,0 +1,35 @@
+{
+  "model": "gpt-image-2.5-sunburst",
+  "mode": "prompt-only full-page raster generation; no post-compositing or local image edits",
+  "common": "Create one complete vertical 3:4 Chinese Xiaohongshu exercise-science teaching poster as a finished raster image, 1536x2048 if available. Editorial illustration in warm cream paper, brick-red headlines, deep charcoal text, muted blue and sage green accents, thin red rules, professional illustrated textbook quality. The recurring presenter is an original muscular older male cartoon coach: short spiky pale blue hair, angular face, calm half-lidded eyes, white sleeveless athletic tank, dark green shorts with burgundy side panel, black wristbands, muscular arms. Make him LARGE and actively explaining, with open arms or a clear pointing gesture toward the diagram, in the same visual language on every page. Use spacious layout, one dominant illustration, very few words, large legible simplified Chinese. Reproduce every Chinese string listed below exactly, without inventing any other writing, logos, English words, random numerals, or footnotes. The diagram must be scientifically correct. Avoid SVG/vector flat-icon appearance, clutter, dense paragraph text, tiny labels, and photorealism. The poster must be fully designed in the generated image; no blank space left for later editing.",
+  "pages": [
+    {
+      "file": "01-cover.png",
+      "prompt": "Cover poster. The same original muscular blue-haired cartoon coach fills the lower half, waist-up, both arms spread open like the user's reference; three clean visual routes around him: a small blue lightning bolt for fast PCr support, a brick-red muscle/glycogen visual, a sage-green fat-droplet-to-muscle visual. Visuals show parallel participation, not a sequence of one replacing another. Exact large Chinese headline at top: 跑步30分钟才燃脂？ Exact large answer below: 没有！脂肪从起步就参与. No other text."
+    },
+    {
+      "file": "02-timeline.png",
+      "prompt": "A clean educational timeline with five clearly separated horizontal time cards. The same original muscular blue-haired cartoon coach at left pointing across the timeline. Use a single arrow of elapsed time, not an energy percentage chart. Exact headline: 跑步时，身体怎么供能？ Exact time-card texts, each on its own card: 0–10秒：PCr快速支援 ; 10秒–3分钟：有氧供能跟上 ; 3–30分钟：糖与脂肪并行 ; 30–120分钟：脂肪占比常升 ; 2小时后：肝脏造糖更重要. Exact small bottom line: 这些是趋势，没有固定切换点. The diagram must make all routes appear active together, with changing prominence only. No other text."
+    },
+    {
+      "file": "03-muscle-glycogen.png",
+      "prompt": "The same original muscular blue-haired cartoon coach on left, large waist-up, pointing with one finger into a richly illustrated cutaway of ONE contracting skeletal muscle fiber on the right. Inside the muscle are distinct red glycogen granules, clearly stored and used locally. No liver, no glycogen granules in blood. Three step visual: store inside muscle -> break down inside muscle -> contract. Exact headline: 肌糖原＝肌肉自己的糖. Exact callout: 起步就参与；跑快时更依赖. Exact bottom line: 主要由这块工作肌自己使用. No other text."
+    },
+    {
+      "file": "04-liver-glycogen.png",
+      "prompt": "The same original muscular blue-haired cartoon coach large at upper left pointing at a warm illustrated liver; liver contains stored glycogen granules. A clear blue blood vessel carries small glucose molecules away from liver toward a working skeletal muscle. Molecules in blood are glucose, not whole glycogen. Show a simple anatomical journey, generous spacing. Exact headline: 肝糖原＝肝脏的血糖储备. Exact large flow labels: 肝脏 → 血液 → 肌肉. Exact bottom line: 运动中帮助维持血糖；跑久了储量渐少. No other text."
+    },
+    {
+      "file": "05-fat-oxidation.png",
+      "prompt": "The same original muscular blue-haired cartoon coach large at left pointing at a precise illustrated path: sage-green adipose tissue, free fatty acids travelling through a soft blue blood vessel, and a working red muscle mitochondrion where fatty acids are oxidized. Use a prominent sage-green upward trend arrow over elapsed time but do not portray an on/off switch. Exact headline: 脂肪从起步就参与. Exact flow labels: 脂肪组织 → 血液 → 肌肉. Exact bottom line: 中低强度持续运动时，占比通常逐渐增加. No other text."
+    },
+    {
+      "file": "06-gluconeogenesis.png",
+      "prompt": "The same original muscular blue-haired cartoon coach on left presenting a medical illustration of gluconeogenesis. A red muscle provides pink lactate droplets; a green adipose cluster provides golden glycerol droplets; both enter the liver, which releases individual glucose molecules into blue blood. Clearly distinguish the two inputs, and DO NOT depict fatty acids directly turning into glucose. Exact headline: 糖异生＝肝脏重新造糖. Exact simple flow labels: 乳酸、甘油等 → 肝脏 → 血糖. Exact bottom line: 早期可参与；运动越久，作用常越重要. No other text."
+    },
+    {
+      "file": "07-amounts.png",
+      "prompt": "A refined full-page comparison poster with The same original muscular blue-haired cartoon coach at top pointing at two large side-by-side horizontal bar-chart panels. Maintain exact numeric relationships: first case has total carbohydrate oxidation 54 g and total fat oxidation 42 g; second case has total carbohydrate oxidation 108 g and total fat oxidation 20 g. Red bars for carbohydrate, sage green for fat, drawn to a shared scale so 108 is twice 54 and 42 is longer than 20. Exact headline: 同样消耗600千卡，糖脂用量能差多少？ Exact first panel title: 偏脂肪供能. Exact labels: 糖54克 ; 脂肪42克. Exact second panel title: 偏糖供能. Exact labels: 糖108克 ; 脂肪20克. Exact bottom line: 这是总氧化量，不能直接当作肌糖原消耗量. No other text."
+    }
+  ]
+}

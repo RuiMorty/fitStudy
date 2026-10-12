@@ -1,0 +1,17 @@
+{
+  "size":[1536,1024],
+  "columns":3,
+  "title":"有氧训练：模式对，强度才好管",
+  "subtitle":"模式选择 · 交叉训练 · 心率 · RPE · 谈话测试 · 综合判断",
+  "panels":[
+    {"title":"模式选择","description":"冲击 · 技术 · 耐受","image":"runs/day50/assets/overview-01-modes.png"},
+    {"title":"交叉训练","description":"换模式 · 管总量","image":"runs/day50/assets/overview-02-cross-training.png"},
+    {"title":"心率线索","description":"%HRmax · HRR","image":"runs/day50/assets/overview-03-heart-rate.png"},
+    {"title":"RPE量表","description":"主观努力 · 固定记录","image":"runs/day50/assets/overview-04-rpe.png"},
+    {"title":"谈话测试","description":"唱歌 · 说话 · 短句","image":"runs/day50/assets/overview-05-talk-test.png"},
+    {"title":"综合判断","description":"看趋势 · 选保守","image":"runs/day50/assets/overview-06-triangulation.png"}
+  ],
+  "footer":["选到身体能持续完成的模式，再让心率、RPE和谈话能力彼此核对。","线索不一致或异常症状出现时，先减速、换低冲击版本或停止并评估。"],
+  "output":"runs/day50/assets/detail.png",
+  "deliveryScale":2
+}

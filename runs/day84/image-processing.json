@@ -1,0 +1,435 @@
+{
+  "processedAt": "2026-10-02T22:15:03.414734+00:00",
+  "method": "trim near-transparent noise; reviewed crop; uniform scale; transparent margin",
+  "assets": [
+    {
+      "source": "runs/day84/source/cover.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "sourceSha256": "d6040e22eb20458d4073b97f109a1b64c247f896622363bbbb386fdb00b0a54f",
+      "reviewedCrop": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "visibleCrop": [
+        365,
+        16,
+        1315,
+        923
+      ],
+      "output": "runs/day84/assets/cover.png",
+      "size": [
+        1600,
+        900
+      ],
+      "subjectSize": [
+        830,
+        792
+      ],
+      "offset": [
+        385,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "无字封面"
+    },
+    {
+      "source": "runs/day84/source/visual-01.png",
+      "sourceSize": [
+        1870,
+        841
+      ],
+      "sourceSha256": "14e5bea31e0033c6db3091229980a12a166d0683283eb740e01d9820a5ea4032",
+      "reviewedCrop": [
+        0,
+        0,
+        1870,
+        841
+      ],
+      "visibleCrop": [
+        524,
+        17,
+        1394,
+        818
+      ],
+      "output": "runs/day84/assets/visual-01.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        860,
+        792
+      ],
+      "offset": [
+        970,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "柔韧性、ROM与控制不同知识页配图"
+    },
+    {
+      "source": "runs/day84/source/visual-02.png",
+      "sourceSize": [
+        1877,
+        838
+      ],
+      "sourceSha256": "42a774492411bc7f44418e68966944076f3fe44cf4e3187d19acf221f86a6bf9",
+      "reviewedCrop": [
+        0,
+        0,
+        1877,
+        838
+      ],
+      "visibleCrop": [
+        295,
+        15,
+        1582,
+        820
+      ],
+      "output": "runs/day84/assets/visual-02.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1266,
+        792
+      ],
+      "offset": [
+        767,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "测试按目标选择知识页配图"
+    },
+    {
+      "source": "runs/day84/source/visual-03.png",
+      "sourceSize": [
+        1870,
+        841
+      ],
+      "sourceSha256": "b86e926d82feacb43d4ecc2bb46fdd2f58d7cb71f7171485e2014925798aeef5",
+      "reviewedCrop": [
+        0,
+        0,
+        1870,
+        841
+      ],
+      "visibleCrop": [
+        385,
+        16,
+        1487,
+        825
+      ],
+      "output": "runs/day84/assets/visual-03.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1079,
+        792
+      ],
+      "offset": [
+        860,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "统一姿势与代偿限制知识页配图"
+    },
+    {
+      "source": "runs/day84/source/visual-04.png",
+      "sourceSize": [
+        2032,
+        774
+      ],
+      "sourceSha256": "7560e76ee74e0d6a8e6f54228377a66be489f1950cc52a72160f05a05663e8db",
+      "reviewedCrop": [
+        0,
+        0,
+        2032,
+        774
+      ],
+      "visibleCrop": [
+        623,
+        0,
+        1501,
+        774
+      ],
+      "output": "runs/day84/assets/visual-04.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        878,
+        774
+      ],
+      "offset": [
+        961,
+        63
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "结果导向合适干预知识页配图"
+    },
+    {
+      "source": "runs/day84/source/visual-05.png",
+      "sourceSize": [
+        1870,
+        841
+      ],
+      "sourceSha256": "6a07dd6c0853adbaeaa46205d4aefd49305dc53383d9b5dfe182830823dbe831",
+      "reviewedCrop": [
+        0,
+        0,
+        1870,
+        841
+      ],
+      "visibleCrop": [
+        496,
+        18,
+        1391,
+        820
+      ],
+      "output": "runs/day84/assets/visual-05.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        884,
+        792
+      ],
+      "offset": [
+        958,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "无痛与转介是底线知识页配图"
+    },
+    {
+      "source": "runs/day84/source/overview-01.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "a37b3ec83595da0508a9021b7e6ad3570b3349e5ab8034483855827e32533dbc",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        259,
+        42,
+        1246,
+        1027
+      ],
+      "output": "runs/day84/assets/overview-01.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        987,
+        985
+      ],
+      "offset": [
+        306,
+        107
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "柔韧性、ROM与控制不同总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day84/source/overview-02.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "53e46f256d2b2a7e1539767b48680bd2ab0e17470beb10fb54ee46c477c34281",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        144,
+        7,
+        1400,
+        1079
+      ],
+      "output": "runs/day84/assets/overview-02.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1237,
+        1056
+      ],
+      "offset": [
+        181,
+        72
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "测试按目标选择总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day84/source/overview-03.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "1008391dba58186b3c5daa121bfbfc05d975256f346f112697fd2de9000f80b1",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        236,
+        16,
+        1277,
+        1071
+      ],
+      "output": "runs/day84/assets/overview-03.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1041,
+        1055
+      ],
+      "offset": [
+        279,
+        72
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "统一姿势与代偿限制总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day84/source/overview-04.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "5fe89a8fa45cd9a59a15991747134de5e74ea1293e3bfda5d09cd76467a25b12",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        79,
+        26,
+        1383,
+        1053
+      ],
+      "output": "runs/day84/assets/overview-04.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1304,
+        1027
+      ],
+      "offset": [
+        148,
+        86
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "结果导向合适干预总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day84/source/overview-05.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "f2dffe976324310af46995621b6ef635f12be902aa230443935bf2f45fade567",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        135,
+        18,
+        1373,
+        1074
+      ],
+      "output": "runs/day84/assets/overview-05.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1238,
+        1056
+      ],
+      "offset": [
+        181,
+        72
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "无痛与转介是底线总览专用，不与知识页复用"
+    }
+  ]
+}

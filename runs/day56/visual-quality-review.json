@@ -1,0 +1,23 @@
+{
+  "at": "2026-09-30T13:10:00+08:00",
+  "reviewer": "local visual and alpha QA",
+  "requirements": ["true-alpha", "no-background-or-checkerboard", "wordless", "character-consistency", "single-knowledge-relationship", "safe-equipment-structure", "controlled-landing", "independent-overview-art"],
+  "technicalChecks": {"checkedWith": ["sips hasAlpha", "Pillow alpha extrema", "individual native visual inspection"], "result": "选用的9个PNG均为非空RGBA，alpha范围均为[0,255]；无白底、灰底或棋盘格。"},
+  "accepted": [
+    {"file": "cover.png", "use": "cover", "review": "重深蹲与低平台跳跃的配对关系清楚，杠铃、配重和架位完整。"},
+    {"file": "retry-visual-01-foundation-20260930/attempt-02.png", "use": "力量底座", "review": "无标记重绘；两人均完整落地，准备姿势清楚。"},
+    {"file": "retry-visual-02-pairing-20260930/attempt-02.png", "use": "复合配对", "review": "无悬空或残影；深蹲与低平台后的可控落地两态清楚。"},
+    {"file": "visual-03-load.png", "use": "轻负荷速度", "review": "轻药球胸前抛与空目标圈关系明确，人物和足部完整。"},
+    {"file": "visual-04-landing.png", "use": "落地与恢复", "review": "波吉双脚落地、屈髋屈膝和德斯帕观察关系清楚。"},
+    {"file": "overview-01-foundation.png", "use": "总览专用", "review": "独立绘制的力量准备和小幅预备姿势。"},
+    {"file": "overview-02-pairing.png", "use": "总览专用", "review": "独立绘制的深蹲与安全架位。"},
+    {"file": "overview-03-load.png", "use": "总览专用", "review": "独立绘制的轻药球传递。"},
+    {"file": "overview-04-landing.png", "use": "总览专用", "review": "独立绘制的稳定落地和低平台。"}
+  ],
+  "rejected": [
+    {"file": "source/visual-01-foundation.png", "reason": "出现未要求的蓝色速度符号和图标化身体部位；原图保存于retry-visual-01-foundation-20260930/rejected/attempt-01.png。"},
+    {"file": "source/visual-02-pairing.png", "reason": "第二动作悬空且下方有无关残影；原图保存于retry-visual-02-pairing-20260930/rejected/attempt-01.png。"}
+  ],
+  "retriesUsed": 2,
+  "result": "9项最终来源均通过本地素材审核；两次质量重试均在用户授权的单图限额内完成。"
+}

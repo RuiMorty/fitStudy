@@ -1,0 +1,60 @@
+{
+  "commonPrompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, ground plane, cast shadow, room, paper background, loose paper sheets, border, sticker edge, shadow, or halo. A small unmarked rigid evidence card is allowed as a prop. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.",
+  "assets": [
+    {
+      "file": "cover.png",
+      "role": "cover",
+      "prompt": "Wide 16:9 wordless single-scene course cover. Despa supervises Bojji in one controlled box sit-to-stand position beside a stable low box; a small medicine ball and a plain low horizontal jump marker are isolated along the lower canvas edge with no ground plane or cast shadow. Illustrate safe test-goal selection without numbers or comparison. Keep exactly one Bojji and one Despa, both full bodies visible when practical. Explain one course theme through one coherent current situation, never sequence frames. No duplicate figures, alternate poses, motion trails, arrows, readable signs, text, numbers, labels or unrelated equipment."
+    },
+    {
+      "file": "visual-01.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Despa holds an open blank evidence card and a pair of simple walking shoes at waist level while Bojji holds a light dumbbell, showing thoughtful test selection rather than maximal effort. Keep exactly one Bojji and one Despa. Use one continuous current pose to explain “先决定是否需要测试”, with all limbs and props fully visible. No duplicate figures, alternate poses, sequence frames, arrows, motion trails, text, numbers, labels, readable screens, blue circles or unrelated equipment."
+    },
+    {
+      "file": "visual-02.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Bojji safely holds a light dumbbell while a small medicine ball and a plain low horizontal jump marker are level-positioned along the lower canvas edge with no ground plane or cast shadow; Despa observes one calm scene without a jumping sequence. Keep exactly one Bojji and one Despa. Use one continuous current pose to explain “不同测试回答不同问题”, with all limbs and props fully visible. No duplicate figures, alternate poses, sequence frames, arrows, motion trails, text, numbers, labels, readable screens, blue circles or unrelated equipment."
+    },
+    {
+      "file": "visual-03.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Despa arranges a plain low bench, one light dumbbell, and a small blank timer as isolated props while Bojji rehearses one controlled repetition; no numbers, stopwatch face, ground plane or cast shadow. Keep exactly one Bojji and one Despa. Use one continuous current pose to explain “标准化才能比较”, with all limbs and props fully visible. No duplicate figures, alternate poses, sequence frames, arrows, motion trails, text, numbers, labels, readable screens, blue circles or unrelated equipment."
+    },
+    {
+      "file": "visual-04.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Bojji calmly makes an open-palm stop gesture beside a stable low box while Despa holds a light medicine ball at waist height; no distress, medical procedure, ground plane or cast shadow. Keep exactly one Bojji and one Despa. Use one continuous current pose to explain “停止条件保护测试价值”, with all limbs and props fully visible. No duplicate figures, alternate poses, sequence frames, arrows, motion trails, text, numbers, labels, readable screens, blue circles or unrelated equipment."
+    },
+    {
+      "file": "visual-05.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Despa and Bojji look at two blank comparison cards while Bojji holds one light dumbbell at waist height, suggesting personal trend tracking without scores. Keep exactly one Bojji and one Despa. Use one continuous current pose to explain “用基线写下一步假设”, with all limbs and props fully visible. No duplicate figures, alternate poses, sequence frames, arrows, motion trails, text, numbers, labels, readable screens, blue circles or unrelated equipment."
+    },
+    {
+      "file": "overview-01.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Despa holds an open blank evidence card and raises a pair of simple walking shoes at waist level while Bojji evaluates a light dumbbell, showing thoughtful test selection rather than maximal effort. Keep exactly one Bojji and one Despa. Compose specifically for a compact overview panel and do not reuse a knowledge-page composition. No duplicate figures, alternate poses, sequence frames, text, numbers, labels, arrows, motion trails or unrelated equipment."
+    },
+    {
+      "file": "overview-02.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Bojji safely holds a light dumbbell while a small medicine ball and a plain low horizontal jump marker are level-positioned along the lower canvas edge with no ground plane or cast shadow; Despa observes one calm scene without a jumping sequence. Keep exactly one Bojji and one Despa. Compose specifically for a compact overview panel and do not reuse a knowledge-page composition. No duplicate figures, alternate poses, sequence frames, text, numbers, labels, arrows, motion trails or unrelated equipment."
+    },
+    {
+      "file": "overview-03.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Despa arranges a plain low bench, one light dumbbell, and a small blank timer as isolated props while Bojji rehearses one controlled repetition; no numbers, stopwatch face, ground plane or cast shadow. Keep exactly one Bojji and one Despa. Compose specifically for a compact overview panel and do not reuse a knowledge-page composition. No duplicate figures, alternate poses, sequence frames, text, numbers, labels, arrows, motion trails or unrelated equipment."
+    },
+    {
+      "file": "overview-04.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Bojji calmly makes an open-palm stop gesture beside a stable low box while Despa holds a light medicine ball at waist height; no distress, medical procedure, ground plane or cast shadow. Keep exactly one Bojji and one Despa. Compose specifically for a compact overview panel and do not reuse a knowledge-page composition. No duplicate figures, alternate poses, sequence frames, text, numbers, labels, arrows, motion trails or unrelated equipment."
+    },
+    {
+      "file": "overview-05.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Despa presents two blank comparison cards while Bojji holds one light dumbbell at waist height, suggesting personal trend tracking without scores. Keep exactly one Bojji and one Despa. Compose specifically for a compact overview panel and do not reuse a knowledge-page composition. No duplicate figures, alternate poses, sequence frames, text, numbers, labels, arrows, motion trails or unrelated equipment."
+    }
+  ]
+}

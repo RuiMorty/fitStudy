@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Day 57 · 核心训练体系与进阶</title><link rel="icon" type="image/svg+xml" href="assets/fitness-study-logo-open-circle.svg?v=a6d8e5caaa61"><style>:root { color-scheme: light; --ink: #111113; --muted: #71717a; --line: #e4e4e7; --accent: #ff5a1f; --green: #0ea66b; --blue: #2563eb; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; font-synthesis: none; letter-spacing: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); overflow-wrap: anywhere; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+img { display: block; max-width: 100%; }
+button:focus-visible, a:focus-visible, summary:focus-visible, input:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
+svg.icon { width: 20px; height: 20px; }
+.icon-button { display: inline-grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 1px solid var(--line); border-radius: 6px; background: white; }
+[hidden] { display: none !important; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
+
+body { background: #f6f8f7; font-size: 14px; line-height: 1.65; }
+main { max-width: 980px; margin: auto; padding: 24px 18px 60px; }
+.header { padding: 22px 4px 14px; }
+h1 { margin: 10px 0 8px; font-size: 36px; line-height: 1.2; }
+h1::before { content: ""; display: block; width: 34px; height: 4px; background: var(--accent); margin-bottom: 10px; }
+h2 { font-size: 17px; margin: 0 0 14px; }
+h3 { font-size: 16px; margin: 0 0 8px; }
+.sub { color: var(--muted); margin: 5px 0 18px; }
+.meta { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { display: inline-block; border: 1px solid var(--line); border-radius: 20px; background: white; color: var(--muted); padding: 3px 10px; font-size: 12px; font-weight: 600; }
+.chip:nth-child(1) { background: #e2f7eb; color: #15803d; border-color: transparent; }
+.chip:nth-child(2) { background: #e7f0fe; color: #2563eb; border-color: transparent; }
+.chip:nth-child(3) { background: #fff2e5; color: #9a4c05; border-color: transparent; }
+.panel, .figure, .warn, .mnemonic { background: white; border: 1px solid #e2e8e4; border-radius: 14px; box-shadow: 0 2px 12px rgba(20,40,30,.06); padding: 20px; margin: 16px 0; }
+.green { border-left: 5px solid var(--green); }
+.orange { border-left: 5px solid #ea7a17; }
+.blue { border-left: 5px solid #0ea5e9; }
+.takeaway { margin: 0; }
+.figure { text-align: center; }
+.figure button { display: block; position: relative; width: 100%; border: 0; padding: 0; background: white; cursor: zoom-in; }
+.figure img { max-height: 760px; width: 100%; object-fit: contain; }
+.figure .icon-button { position: absolute; bottom: 8px; right: 8px; background: #ffffffed; }
+.caption { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
+.kp { list-style: none; padding: 0; margin: 0; }
+.kp > li { border-bottom: 1px dashed #e2e8e4; }
+.kp > li:last-child { border-bottom: 0; }
+.kp summary { cursor: pointer; padding: 13px 8px; font-weight: 650; }
+.kp summary::marker { color: var(--green); }
+.term { color: #0a7d52; background: #e2f7eb; border-radius: 6px; padding: 1px 5px; }
+.kp-body { padding: 2px 14px 16px 24px; }
+.detail-block { margin: 12px 0; }
+.detail-block h4 { font-size: 13px; color: #08744d; margin: 0 0 4px; }
+.detail-block p { margin: 0; white-space: pre-line; }
+.warn { border-left: 5px solid #e23b3b; background: #fffafa; }
+.warn p { margin: 8px 0; }
+.misconception { color: #a82b32; }
+.mnemonic { border-left: 4px solid var(--accent); box-shadow: none; }
+.mnemonic strong { color: #df4716; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+.flip { height: 168px; perspective: 900px; border: 0; background: transparent; padding: 0; text-align: center; }
+.flip-in { display: block; height: 100%; position: relative; transition: transform .45s; transform-style: preserve-3d; }
+.flip[aria-pressed="true"] .flip-in { transform: rotateY(180deg); }
+.face { position: absolute; inset: 0; backface-visibility: hidden; border: 1px solid var(--line); border-radius: 10px; padding: 15px; background: #fafafa; display: flex; align-items: center; justify-content: center; overflow-y: auto; }
+.back { transform: rotateY(180deg); background: #eef9f4; color: #075e40; border-color: #c8eadb; }
+.practice { padding-left: 20px; }
+.practice li { margin: 7px 0; }
+.question { border-top: 1px solid #e2e8e4; padding: 20px 0 8px; margin-top: 12px; min-width: 0; }
+.options { display: grid; gap: 7px; margin: 10px 0; }
+.option { display: flex; gap: 10px; align-items: baseline; border: 1px solid #e2e8e4; background: #f0f4f2; padding: 9px 12px; border-radius: 8px; cursor: pointer; }
+.option input { flex-shrink: 0; accent-color: var(--green); }
+.option:has(input:checked) { border-color: #0ea5e9; background: #e7f6fd; }
+.question[data-result="correct"] .option:has(input:checked) { border-color: #0ea66b; background: #e7f8ef; }
+.question[data-result="wrong"] .option:has(input:checked) { border-color: #e23b3b; background: #fff0f0; }
+.answer { background: #f8fbfa; border-left: 3px solid #0ea5e9; padding: 10px; margin-top: 10px; }
+.check { border: 0; background: #0ea66b; color: white; padding: 9px 14px; border-radius: 7px; }
+footer { color: var(--muted); font-size: 12px; margin-top: 28px; }
+footer ul { padding-left: 20px; }
+dialog { width: min(1200px, 96vw); max-height: 94dvh; padding: 52px 16px 16px; border: 0; border-radius: 8px; background: white; }
+dialog::backdrop { background: #15191dd9; }
+dialog img { width: 100%; max-height: 78dvh; object-fit: contain; }
+dialog .icon-button { position: absolute; top: 8px; right: 10px; }
+@media (max-width: 600px) {
+  main { padding: 16px 12px 40px; }
+  h1 { font-size: 26px; }
+  .header { padding: 16px 4px 12px; }
+  .panel, .figure, .warn, .mnemonic { padding: 15px; }
+  .kp-body { padding-left: 16px; }
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .face { padding: 12px; }
+}
+</style></head><body><main><header class="header"><h1>Day 57 · 核心训练体系与进阶</h1><p class="sub">先用呼吸和稳定建立控制，再把核心力量带进动作。</p><div class="meta"><span class="chip">LPHC</span><span class="chip">核心稳定</span><span class="chip">呼吸控制</span></div></header><section class="panel green"><h2>一句话总结</h2><p class="takeaway">核心并不只等于腹肌。NASM常以腰椎—骨盆—髋复合体（LPHC）描述核心控制区域：局部稳定肌与整体运动肌共同工作，呼吸和腹内压帮助躯干在受力时保持可用位置。稳定化练习如死虫、鸟狗和平板强调脊柱相对稳定；卷腹、转体等动作化练习才包含可控脊柱运动。进阶不是一味增加不稳定或时间，而是先能呼吸、维持对线和无疼痛控制，再逐步加入动作、负荷与更复杂任务。</p></section><figure class="figure"><button data-zoom aria-label="放大详情图"><img class="" src="assets/阶段3 OPT训练模型/day57-核心训练体系与进阶.png" alt="核心训练体系与进阶四主题中文总览"><span class="icon-button"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 15 6 6" /><path d="m15 9 6-6" /><path d="M21 16v5h-5" /><path d="M21 8V3h-5" /><path d="M3 16v5h5" /><path d="m3 21 6-6" /><path d="M3 8V3h5" /><path d="M9 9 3 3" /></svg></span></button><figcaption class="caption">核心训练围绕腰椎—骨盆—髋复合体的控制；呼吸、稳定和动作进阶应服务于实际训练。</figcaption></figure><section class="panel"><h2>核心要点</h2><ul class="kp"><li><details><summary><span class="term">核心：控制LPHC，不只是练腹肌</span>：腰椎、骨盆和髋需要在力量传递、移动与外力下协同；核心训练关注可控位置而非把腹部持续绷死。</summary><div class="kp-body"><section class="detail-block"><h4>连接而不是孤立</h4><p>LPHC连接下肢、躯干与上肢。深蹲、推、拉、跑跳时，核心帮助传递力量并管理躯干位置；它不能替代髋、肩或足部本身的技术，也不应把轻微自然运动都当成错误。</p></section><section class="detail-block"><h4>感觉不等于效果</h4><p>腹部灼热、出汗或憋气不等于控制更好。能在呼吸、关节对线和任务要求下保持稳定，且没有疼痛、麻木或异常不适，才是选择或进阶动作的更可靠依据。</p></section></div></details></li><li><details><summary><span class="term">稳定肌与运动肌：分工但不孤立</span>：腹横肌、多裂肌、膈肌与盆底等参与局部压力和稳定；腹直肌、竖脊肌等也参与产生或控制较大动作。</summary><div class="kp-body"><section class="detail-block"><h4>不是谁更重要</h4><p>局部与整体肌群会共同工作，任务不同配合不同。把任何一块肌肉单独贴成“唯一稳定肌”会过度简化；训练时应观察呼吸、姿势、负荷和动作目标，而不是只追求某个部位的紧张感。</p></section><section class="detail-block"><h4>呼吸帮助调节压力</h4><p>膈肌下沉、腹壁适度张力与盆底协同可帮助形成腹内压。它不是屏住呼吸越久越好：先学会在低负荷下顺畅呼吸，再在需要时用合适的短暂支撑策略；有心血管或盆底相关问题应咨询专业人员。</p></section></div></details></li><li><details><summary><span class="term">稳定化与动作化：先会不乱，再会动</span>：死虫、鸟狗、平板等让脊柱相对稳定；卷腹、转体等包含可控脊柱运动。两类都有位置，关键是目的与准备程度。</summary><div class="kp-body"><section class="detail-block"><h4>稳定化练什么</h4><p>重点是肢体移动或外力出现时，躯干仍能维持可控位置并继续呼吸。死虫和鸟狗可从小范围、短杠杆开始；骨盆大幅滚动、腰部疼痛或憋气时先缩小动作。</p></section><section class="detail-block"><h4>动作化何时加入</h4><p>能稳定呼吸、维持基础对线后，可加入小范围卷腹、转体或更具体的动作任务。速度、范围和负荷一次只增加一个；扭动腰椎或借惯性不是核心进阶。</p></section></div></details></li><li><details><summary><span class="term">进阶：从控制到任务，而非更难姿势</span>：进阶可改变支撑面、杠杆、动作范围、外力和任务复杂度，但每一步都要保留呼吸、对线和退出规则。</summary><div class="kp-body"><section class="detail-block"><h4>一个变量一次改</h4><p>先延长可控时间或增加少量肢体杠杆，再考虑不稳定支撑、负荷或速度。一次同时改变多个变量很难知道问题来自哪里；完成度下降时回到上一个稳定版本并记录。</p></section><section class="detail-block"><h4>把核心带回动作</h4><p>核心练习最终要帮助深蹲、提物、推拉、跑跳和日常活动。选择和客户目标相关的任务，在轻负荷下先练好呼吸与对线；疼痛、放射痛、麻木或突然无力时停止并评估。</p></section></div></details></li></ul></section><section class="warn"><h2>常见误区</h2><p><strong class="misconception">误区：核心训练就是把腹部一直用力收紧。</strong><br>辨析：核心控制需要与呼吸、动作和任务匹配；持续憋气或过度紧张不等于更稳定。</p><p><strong class="misconception">误区：腹横肌或多裂肌能单独完成所有稳定任务。</strong><br>辨析：局部与整体肌群会按任务协同；训练应看呼吸、对线、负荷与实际功能。</p><p><strong class="misconception">误区：平板越久、支撑越不稳就一定更进阶。</strong><br>辨析：只有呼吸、姿势和任务质量仍可控时才进阶；时间或不稳定导致代偿时应回退。</p><p><strong class="misconception">误区：核心训练不该让脊柱动。</strong><br>辨析：稳定化强调相对稳定；卷腹、转体等动作化训练可在合适准备和控制下使用。</p></section><section class="mnemonic"><h2>记忆口诀</h2><p><strong>核心先呼吸，稳定再动作；一次改一项，控制带回任务。</strong></p></section><section class="panel"><h2>翻转卡复习</h2><div class="cards"><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">LPHC指什么？</span><span class="face back" aria-hidden="true">腰椎、骨盆与髋的复合控制区域。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">核心训练只等于腹肌吗？</span><span class="face back" aria-hidden="true">不等于；它涉及呼吸、稳定、力量传递与动作控制。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">稳定化练习的共同目标？</span><span class="face back" aria-hidden="true">肢体移动或外力出现时，躯干保持可控并能呼吸。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">腹内压如何参与控制？</span><span class="face back" aria-hidden="true">膈肌、腹壁和盆底等协同调节压力，帮助受力时稳定躯干。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">动作化核心训练何时加入？</span><span class="face back" aria-hidden="true">基础呼吸、对线和稳定可控后，小范围逐步加入。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">核心进阶的原则？</span><span class="face back" aria-hidden="true">一次改一个变量；质量下降、疼痛或憋气时回退。</span></span></button></div></section><section class="panel orange"><h2>实操关联</h2><ul class="practice"><li>做死虫或鸟狗的低难度版本：每次肢体移动时保持顺畅呼吸和骨盆可控。</li><li>选择一个平板版本，记录能维持呼吸和对线的时间，而不是硬撑到姿势变形。</li><li>为卷腹或转体设定小范围和慢速度；借惯性或腰部不适时立即缩小范围。</li><li>把核心控制带进轻负荷提物或深蹲：先练呼吸与躯干位置，再逐步增加任务。</li></ul></section><section class="panel blue"><h2>练习题</h2><section class="question" data-answers="[1]" data-explanation="核心控制服务于呼吸、稳定与实际任务，不等于持续紧张或避免一切脊柱运动。"><h3>1. 单选：哪项最能描述核心训练的目标？</h3><div class="options"><label class="option"><input type="radio" name="question-0" value="0"><span>A. 始终憋气并收腹</span></label><label class="option"><input type="radio" name="question-0" value="1"><span>B. 管理LPHC在任务中的呼吸、位置与力量传递</span></label><label class="option"><input type="radio" name="question-0" value="2"><span>C. 只让脊柱完全不动</span></label><label class="option"><input type="radio" name="question-0" value="3"><span>D. 把所有动作改成不稳定支撑</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[1]" data-explanation="稳定化练习的质量是呼吸、对线和无疼痛控制；出现代偿应缩小范围或杠杆。"><h3>2. 单选：何时应把死虫练习回退到更简单版本？</h3><div class="options"><label class="option"><input type="radio" name="question-1" value="0"><span>A. 能稳定呼吸和对线时</span></label><label class="option"><input type="radio" name="question-1" value="1"><span>B. 骨盆明显滚动、腰部不适或持续憋气时</span></label><label class="option"><input type="radio" name="question-1" value="2"><span>C. 完成次数很少时</span></label><label class="option"><input type="radio" name="question-1" value="3"><span>D. 教练在旁边时</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[0,1,2,4]" data-explanation="可逐步改变一个变量并保持质量；同时叠加变量会掩盖问题。"><h3>3. 多选：合理的核心进阶可考虑哪些变量？</h3><div class="options"><label class="option"><input type="checkbox" name="question-2" value="0"><span>A. 肢体杠杆</span></label><label class="option"><input type="checkbox" name="question-2" value="1"><span>B. 动作范围</span></label><label class="option"><input type="checkbox" name="question-2" value="2"><span>C. 外力或负荷</span></label><label class="option"><input type="checkbox" name="question-2" value="3"><span>D. 一次同时增加所有变量</span></label><label class="option"><input type="checkbox" name="question-2" value="4"><span>E. 任务与目标的相关性</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[2]" data-explanation="先恢复可控呼吸和对线，再逐步改变一个变量，才是安全进阶。"><h3>4. 案例：小陈平板支撑45秒后开始塌腰、耸肩且无法说完整一句话，却想加不稳定球。更合适的是？</h3><div class="options"><label class="option"><input type="radio" name="question-3" value="0"><span>A. 立刻加球</span></label><label class="option"><input type="radio" name="question-3" value="1"><span>B. 继续憋气撑更久</span></label><label class="option"><input type="radio" name="question-3" value="2"><span>C. 回到能呼吸并维持对线的短时版本</span></label><label class="option"><input type="radio" name="question-3" value="3"><span>D. 只练卷腹</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section></section><footer>Day 57/77 · NASM<ul><li>NASM：Core Training Concepts 与OPT核心训练的稳定化、动作化进阶框架。</li><li>McGill SM：Low Back Disorders，核心稳定与脊柱负荷管理的训练原则。</li><li>ACSM：ACSM&#39;s Guidelines for Exercise Testing and Prescription，第11版，阻力训练进阶与安全原则。</li><li>本课为一般健身教育；疼痛、放射痛、麻木、突然无力或近期伤病恢复期，请停止训练并咨询医疗或运动专业人员。</li></ul></footer></main><dialog aria-label="详情大图"><button class="icon-button" aria-label="关闭大图" title="关闭大图"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></button><img alt=""></dialog><script>document.querySelectorAll('.flip').forEach((button) => {
+  button.addEventListener('click', () => {
+    const pressed = button.getAttribute('aria-pressed') !== 'true';
+    button.setAttribute('aria-pressed', String(pressed));
+    button.querySelector('.front').setAttribute('aria-hidden', String(pressed));
+    button.querySelector('.back').setAttribute('aria-hidden', String(!pressed));
+  });
+});
+document.querySelectorAll('.question').forEach((question) => {
+  question.querySelector('.check').addEventListener('click', () => {
+    const selected = [...question.querySelectorAll('input:checked')].map((input) => Number(input.value)).sort();
+    const answer = question.querySelector('.answer');
+    answer.hidden = false;
+    if (!selected.length) { answer.textContent = '请先选择答案。'; delete question.dataset.result; return; }
+    const correct = JSON.stringify(selected) === JSON.stringify(JSON.parse(question.dataset.answers).sort());
+    question.dataset.result = correct ? 'correct' : 'wrong';
+    answer.textContent = `${correct ? '回答正确。' : '再想一想。'}${question.dataset.explanation}`;
+  });
+});
+const imageDialog = document.querySelector('dialog');
+document.querySelectorAll('[data-zoom]').forEach((button) => {
+  button.addEventListener('click', () => {
+    const original = button.querySelector('img');
+    const image = imageDialog.querySelector('img');
+    image.src = original.src;
+    image.alt = original.alt;
+    imageDialog.showModal();
+  });
+});
+imageDialog.querySelector('button').addEventListener('click', () => imageDialog.close());
+imageDialog.addEventListener('click', (event) => {
+  const rect = imageDialog.getBoundingClientRect();
+  if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) imageDialog.close();
+});
+</script></body></html>

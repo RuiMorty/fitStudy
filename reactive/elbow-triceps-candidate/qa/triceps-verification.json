@@ -1,0 +1,4165 @@
+{
+  "scope": "0\u2013120 degrees every 2.5 degrees; all vertices and triangle centres. Local nearest-normal signed surface distances, not volumetric intersection or anatomical validation.",
+  "maxInsideMm": {
+    "muscle_triceps_long_R": {
+      "humerus": 0,
+      "ulna": 0,
+      "radius": 0
+    },
+    "muscle_triceps_lateral_R": {
+      "humerus": 1.0538315400481224,
+      "ulna": 0,
+      "radius": 0
+    },
+    "muscle_triceps_medial_R": {
+      "humerus": 1.1143464362248778,
+      "ulna": 0,
+      "radius": 0
+    },
+    "tendon_triceps_distal_R": {
+      "humerus": 0.7953972672112286,
+      "ulna": 0.022649928723694757,
+      "radius": 0
+    }
+  },
+  "distributedMotion": {
+    "muscle_triceps_long_R": {
+      "middleUpperFreeVertices": 10147,
+      "medianDisplacementMm": 29.573097229003906,
+      "fractionMovingOver1mm": 1.0
+    },
+    "muscle_triceps_lateral_R": {
+      "middleUpperFreeVertices": 10261,
+      "medianDisplacementMm": 29.1086483001709,
+      "fractionMovingOver1mm": 1.0
+    },
+    "muscle_triceps_medial_R": {
+      "middleUpperFreeVertices": 4272,
+      "medianDisplacementMm": 21.803560256958008,
+      "fractionMovingOver1mm": 0.9786985018726592
+    }
+  },
+  "checks": {
+    "triceps_middle_upper_bellies_participate": true,
+    "bone_surface_intrusion_under_1mm": false
+  },
+  "samples": [
+    {
+      "angle": 0.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 0.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 0.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 0.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.19305440946482122,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 0.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 0.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 0.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.5558215198107064,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 0.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 0.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 0.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.027058320483774878,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 0.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "ulna",
+      "maxInsideMm": 2.817762023710202e-06,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 0.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 2.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 2.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 2.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 2.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.15192294085863978,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 2.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 2.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 2.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.34242431866005063,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 2.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 2.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 2.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 2.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.022647607693215832,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 2.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 5.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 5.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 5.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 5.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.24996226420626044,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 5.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 5.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 5.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.33942185109481215,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 5.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 5.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 5.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 5.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "ulna",
+      "maxInsideMm": 4.324637092878447e-06,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 5.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 7.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 7.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 7.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 7.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.2512692881282419,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 7.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 7.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 7.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.14422397362068295,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 7.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 7.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 7.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 7.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.022644537239102647,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 7.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 10.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 10.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 10.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 10.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.2943020372185856,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 10.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 10.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 10.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.14422397362068295,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 10.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 10.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 10.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 10.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "ulna",
+      "maxInsideMm": 3.839941253858115e-06,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 10.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 12.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 12.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 12.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 12.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.30659971525892615,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 12.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 12.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 12.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.14422397362068295,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 12.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 12.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 12.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 12.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.022642903786618263,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 12.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 15.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 15.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 15.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 15.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.35514021874405444,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 15.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 15.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 15.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.14422397362068295,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 15.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 15.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 15.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 15.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "ulna",
+      "maxInsideMm": 3.951266869250958e-06,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 15.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 17.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 17.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 17.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 17.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.4035588644910604,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 17.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 17.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 17.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.14422397362068295,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 17.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 17.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 17.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 17.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.022646268917014822,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 17.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 20.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 20.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 20.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 20.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.45197547296993434,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 20.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 20.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 20.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.14422397362068295,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 20.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 20.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 20.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 20.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "ulna",
+      "maxInsideMm": 3.754281330259346e-06,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 20.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 22.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 22.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 22.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 22.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.4721671575680375,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 22.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 22.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 22.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.14422397362068295,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 22.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 22.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 22.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 22.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.022647351215709932,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 22.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 25.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 25.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 25.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 25.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.49315986689180136,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 25.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 25.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 25.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.14422397362068295,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 25.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 25.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 25.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 25.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "ulna",
+      "maxInsideMm": 2.63417798684884e-06,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 25.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 27.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 27.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 27.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 27.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.49005652545019984,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 27.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 27.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 27.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.14422397362068295,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 27.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 27.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 27.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 27.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.022644468117505312,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 27.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 30.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 30.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 30.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 30.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.48695376608520746,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 30.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 30.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 30.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.14422397362068295,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 30.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 30.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 30.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 30.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "ulna",
+      "maxInsideMm": 2.63417798684884e-06,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 30.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 32.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 32.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 32.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 32.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.4644755972549319,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 32.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 32.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 32.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.14422397362068295,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 32.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 32.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 32.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 32.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.02264487739012111,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 32.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 35.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 35.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 35.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 35.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.450708728749305,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 35.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 35.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 35.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.14422397362068295,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 35.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 35.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 35.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 35.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "ulna",
+      "maxInsideMm": 4.267856290596228e-06,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 35.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 37.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 37.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 37.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 37.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.44078807695768774,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 37.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 37.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 37.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.14422397362068295,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 37.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 37.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 37.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 37.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.022643042029812932,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 37.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 40.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 40.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 40.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 40.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.4208413593005389,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 40.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 40.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 40.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.14422397362068295,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 40.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 40.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 40.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 40.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "ulna",
+      "maxInsideMm": 3.8680729730344865e-06,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 40.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 42.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 42.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 42.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 42.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.38062455132603645,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 42.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 42.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 42.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.14422397362068295,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 42.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 42.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 42.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 42.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.022644717319053598,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 42.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 45.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 45.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 45.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 45.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.34238456282764673,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 45.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 45.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 45.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.14422397362068295,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 45.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 45.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 45.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 45.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "ulna",
+      "maxInsideMm": 3.839941253858115e-06,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 45.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 47.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 47.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 47.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 47.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.3111577534582466,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 47.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 47.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 47.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.14422397362068295,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 47.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 47.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 47.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 47.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.022647325749858283,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 47.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 50.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 50.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 50.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 50.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.34656288335099816,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 50.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 50.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 50.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.14422397362068295,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 50.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 50.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 50.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 50.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "ulna",
+      "maxInsideMm": 4.190951585769653e-06,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 50.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 52.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 52.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 52.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 52.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.36704225931316614,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 52.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 52.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 52.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.14422397362068295,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 52.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 52.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 52.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 52.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.022645104763796553,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 52.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 55.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 55.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 55.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 55.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.39149101939983666,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 55.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 55.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 55.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.14422397362068295,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 55.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 55.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 55.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 55.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "ulna",
+      "maxInsideMm": 2.7939677238464355e-06,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 55.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 57.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 57.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 57.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 57.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.41502146632410586,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 57.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 57.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 57.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.14422397362068295,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 57.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 57.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 57.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 57.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.022646674551651813,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 57.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 60.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 60.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 60.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 60.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.4385522042866796,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 60.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 60.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 60.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.14422397362068295,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 60.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 60.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 60.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 60.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "ulna",
+      "maxInsideMm": 2.7939677238464355e-06,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 60.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 62.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 62.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 62.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 62.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.3663467650767416,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 62.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 62.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 62.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.14422397362068295,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 62.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 62.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 62.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 62.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.02264571412524674,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 62.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 65.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 65.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 65.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 65.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.38927781861275434,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 65.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 65.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 65.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.14422397362068295,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 65.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 65.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 65.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 65.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "ulna",
+      "maxInsideMm": 2.7939677238464355e-06,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 65.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 67.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 67.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 67.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 67.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.4011862329207361,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 67.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 67.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 67.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.14422397362068295,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 67.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 67.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 67.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 67.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.02264643262606114,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 67.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 70.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 70.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 70.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 70.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.44314764090813696,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 70.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 70.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 70.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.14422397362068295,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 70.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 70.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 70.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 70.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "ulna",
+      "maxInsideMm": 2.981687119429921e-06,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 70.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 72.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 72.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 72.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 72.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.35087415017187595,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 72.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 72.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 72.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.14422397362068295,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 72.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 72.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 72.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 72.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.02264596514578443,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 72.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 75.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 75.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 75.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 75.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.371170841390267,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 75.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 75.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 75.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.14422397362068295,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 75.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 75.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 75.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 75.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "ulna",
+      "maxInsideMm": 2.981687119429921e-06,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 75.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 77.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 77.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 77.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 77.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.4116145137231797,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 77.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 77.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 77.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.14422397362068295,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 77.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 77.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 77.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 77.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.02264537033624947,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 77.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 80.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 80.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 80.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 80.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.4741672892123461,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 80.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 80.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 80.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.14422397362068295,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 80.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 80.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 80.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 80.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "ulna",
+      "maxInsideMm": 4.047839397003372e-06,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 80.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 82.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 82.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 82.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 82.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.48547741607762873,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 82.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 82.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 82.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.14422397362068295,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 82.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 82.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 82.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 82.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.02264681097585708,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 82.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 85.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 85.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 85.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 85.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.5190529045648873,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 85.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 85.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 85.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.14422397362068295,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 85.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 85.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 85.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 85.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "ulna",
+      "maxInsideMm": 4.748831994305647e-06,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 85.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 87.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 87.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 87.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 87.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.5509314360097051,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 87.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 87.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 87.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.14422397362068295,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 87.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 87.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 87.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 87.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.022649928723694757,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 87.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 90.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 90.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 90.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 90.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.5828104331158102,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 90.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 90.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 90.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.14422397362068295,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 90.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 90.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 90.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 90.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "ulna",
+      "maxInsideMm": 2.7694386783849723e-06,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 90.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 92.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 92.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 92.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 92.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.6126041407696903,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 92.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 92.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 92.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.14422397362068295,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 92.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 92.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 92.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 92.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.022647587684332393,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 92.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 95.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 95.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 95.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 95.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.6476715789176524,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 95.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 95.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 95.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.14422397362068295,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 95.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 95.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 95.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 95.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "ulna",
+      "maxInsideMm": 4.3574179819927394e-06,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 95.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 97.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 97.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 97.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 97.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.67895493702963,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 97.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 97.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 97.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.14422397362068295,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 97.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 97.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 97.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 97.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.022646310753771104,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 97.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 100.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 100.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 100.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 100.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.7102336385287344,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 100.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 100.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 100.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.14422397362068295,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 100.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 100.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 100.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 100.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "ulna",
+      "maxInsideMm": 3.8680729730344865e-06,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 100.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 102.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 102.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 102.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 102.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.7410277030430734,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 102.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 102.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 102.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.14422397362068295,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 102.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 102.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 102.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 102.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.022642903786618263,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 102.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 105.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 105.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 105.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 105.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.7718182750977576,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 105.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 105.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 105.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.14422397362068295,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 105.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 105.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 105.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 105.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "ulna",
+      "maxInsideMm": 3.951266869250958e-06,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 105.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 107.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 107.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 107.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 107.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.7988042198121548,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 107.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 107.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 107.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.14422397362068295,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 107.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 107.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 107.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 107.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.022646423531114124,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 107.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 110.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 110.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 110.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 110.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.8236975991167128,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 110.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 110.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 110.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.29351760167628527,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 110.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 110.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 110.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.19888419774360955,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 110.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "ulna",
+      "maxInsideMm": 3.754281330259346e-06,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 110.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 112.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 112.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 112.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 112.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.8285655057989061,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 112.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 112.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 112.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.5397989880293608,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 112.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 112.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 112.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.6670390139333904,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 112.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.022643684133072384,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 112.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 115.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 115.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 115.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 115.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.8352953009307384,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 115.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 115.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 115.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.7860825280658901,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 115.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 115.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 115.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.4469554405659437,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 115.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "ulna",
+      "maxInsideMm": 2.63417798684884e-06,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 115.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 117.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 117.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 117.5,
+      "structure": "muscle_triceps_long_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 117.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.8404826512560248,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 117.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 117.5,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 117.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.957403564825654,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 117.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 117.5,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 117.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.7953972672112286,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 117.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.022644468117505312,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 117.5,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 120.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 120.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 120.0,
+      "structure": "muscle_triceps_long_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 120.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "humerus",
+      "maxInsideMm": 1.0538315400481224,
+      "samplesInsideOver1mm": 1
+    },
+    {
+      "angle": 120.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 120.0,
+      "structure": "muscle_triceps_lateral_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 120.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "humerus",
+      "maxInsideMm": 1.1143464362248778,
+      "samplesInsideOver1mm": 4
+    },
+    {
+      "angle": 120.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "ulna",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 120.0,
+      "structure": "muscle_triceps_medial_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 120.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "humerus",
+      "maxInsideMm": 0.659758341498673,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 120.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "ulna",
+      "maxInsideMm": 3.8680729730344865e-06,
+      "samplesInsideOver1mm": 0
+    },
+    {
+      "angle": 120.0,
+      "structure": "tendon_triceps_distal_R",
+      "bone": "radius",
+      "maxInsideMm": 0.0,
+      "samplesInsideOver1mm": 0
+    }
+  ],
+  "status": "failed"
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Day 55 · OPT第4阶段：最大力量训练</title><link rel="icon" type="image/svg+xml" href="assets/fitness-study-logo-open-circle.svg?v=a6d8e5caaa61"><style>:root { color-scheme: light; --ink: #111113; --muted: #71717a; --line: #e4e4e7; --accent: #ff5a1f; --green: #0ea66b; --blue: #2563eb; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; font-synthesis: none; letter-spacing: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); overflow-wrap: anywhere; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+img { display: block; max-width: 100%; }
+button:focus-visible, a:focus-visible, summary:focus-visible, input:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
+svg.icon { width: 20px; height: 20px; }
+.icon-button { display: inline-grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 1px solid var(--line); border-radius: 6px; background: white; }
+[hidden] { display: none !important; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
+
+body { background: #f6f8f7; font-size: 14px; line-height: 1.65; }
+main { max-width: 980px; margin: auto; padding: 24px 18px 60px; }
+.header { padding: 22px 4px 14px; }
+h1 { margin: 10px 0 8px; font-size: 36px; line-height: 1.2; }
+h1::before { content: ""; display: block; width: 34px; height: 4px; background: var(--accent); margin-bottom: 10px; }
+h2 { font-size: 17px; margin: 0 0 14px; }
+h3 { font-size: 16px; margin: 0 0 8px; }
+.sub { color: var(--muted); margin: 5px 0 18px; }
+.meta { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { display: inline-block; border: 1px solid var(--line); border-radius: 20px; background: white; color: var(--muted); padding: 3px 10px; font-size: 12px; font-weight: 600; }
+.chip:nth-child(1) { background: #e2f7eb; color: #15803d; border-color: transparent; }
+.chip:nth-child(2) { background: #e7f0fe; color: #2563eb; border-color: transparent; }
+.chip:nth-child(3) { background: #fff2e5; color: #9a4c05; border-color: transparent; }
+.panel, .figure, .warn, .mnemonic { background: white; border: 1px solid #e2e8e4; border-radius: 14px; box-shadow: 0 2px 12px rgba(20,40,30,.06); padding: 20px; margin: 16px 0; }
+.green { border-left: 5px solid var(--green); }
+.orange { border-left: 5px solid #ea7a17; }
+.blue { border-left: 5px solid #0ea5e9; }
+.takeaway { margin: 0; }
+.figure { text-align: center; }
+.figure button { display: block; position: relative; width: 100%; border: 0; padding: 0; background: white; cursor: zoom-in; }
+.figure img { max-height: 760px; width: 100%; object-fit: contain; }
+.figure .icon-button { position: absolute; bottom: 8px; right: 8px; background: #ffffffed; }
+.caption { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
+.kp { list-style: none; padding: 0; margin: 0; }
+.kp > li { border-bottom: 1px dashed #e2e8e4; }
+.kp > li:last-child { border-bottom: 0; }
+.kp summary { cursor: pointer; padding: 13px 8px; font-weight: 650; }
+.kp summary::marker { color: var(--green); }
+.term { color: #0a7d52; background: #e2f7eb; border-radius: 6px; padding: 1px 5px; }
+.kp-body { padding: 2px 14px 16px 24px; }
+.detail-block { margin: 12px 0; }
+.detail-block h4 { font-size: 13px; color: #08744d; margin: 0 0 4px; }
+.detail-block p { margin: 0; white-space: pre-line; }
+.warn { border-left: 5px solid #e23b3b; background: #fffafa; }
+.warn p { margin: 8px 0; }
+.misconception { color: #a82b32; }
+.mnemonic { border-left: 4px solid var(--accent); box-shadow: none; }
+.mnemonic strong { color: #df4716; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+.flip { height: 168px; perspective: 900px; border: 0; background: transparent; padding: 0; text-align: center; }
+.flip-in { display: block; height: 100%; position: relative; transition: transform .45s; transform-style: preserve-3d; }
+.flip[aria-pressed="true"] .flip-in { transform: rotateY(180deg); }
+.face { position: absolute; inset: 0; backface-visibility: hidden; border: 1px solid var(--line); border-radius: 10px; padding: 15px; background: #fafafa; display: flex; align-items: center; justify-content: center; overflow-y: auto; }
+.back { transform: rotateY(180deg); background: #eef9f4; color: #075e40; border-color: #c8eadb; }
+.practice { padding-left: 20px; }
+.practice li { margin: 7px 0; }
+.question { border-top: 1px solid #e2e8e4; padding: 20px 0 8px; margin-top: 12px; min-width: 0; }
+.options { display: grid; gap: 7px; margin: 10px 0; }
+.option { display: flex; gap: 10px; align-items: baseline; border: 1px solid #e2e8e4; background: #f0f4f2; padding: 9px 12px; border-radius: 8px; cursor: pointer; }
+.option input { flex-shrink: 0; accent-color: var(--green); }
+.option:has(input:checked) { border-color: #0ea5e9; background: #e7f6fd; }
+.question[data-result="correct"] .option:has(input:checked) { border-color: #0ea66b; background: #e7f8ef; }
+.question[data-result="wrong"] .option:has(input:checked) { border-color: #e23b3b; background: #fff0f0; }
+.answer { background: #f8fbfa; border-left: 3px solid #0ea5e9; padding: 10px; margin-top: 10px; }
+.check { border: 0; background: #0ea66b; color: white; padding: 9px 14px; border-radius: 7px; }
+footer { color: var(--muted); font-size: 12px; margin-top: 28px; }
+footer ul { padding-left: 20px; }
+dialog { width: min(1200px, 96vw); max-height: 94dvh; padding: 52px 16px 16px; border: 0; border-radius: 8px; background: white; }
+dialog::backdrop { background: #15191dd9; }
+dialog img { width: 100%; max-height: 78dvh; object-fit: contain; }
+dialog .icon-button { position: absolute; top: 8px; right: 10px; }
+@media (max-width: 600px) {
+  main { padding: 16px 12px 40px; }
+  h1 { font-size: 26px; }
+  .header { padding: 16px 4px 12px; }
+  .panel, .figure, .warn, .mnemonic { padding: 15px; }
+  .kp-body { padding-left: 16px; }
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .face { padding: 12px; }
+}
+</style></head><body><main><header class="header"><h1>Day 55 · OPT第4阶段：最大力量训练</h1><p class="sub">以稳定技术、大重量低重复和充分恢复，提升可用的最大力量。</p><div class="meta"><span class="chip">OPT第4阶段</span><span class="chip">最大力量</span><span class="chip">神经适应</span></div></header><section class="panel green"><h2>一句话总结</h2><p class="takeaway">OPT第4阶段的目标是提升最大力量与神经肌肉募集效率，常见框架为4—6组、1—5次、约85%—100%1RM、意图快速的X—X—X节奏，以及3—5分钟组间恢复。它不是把每一组都硬顶到失败：深蹲、卧推、硬拉和推举等复合动作必须在稳定技术、合适的保护和第3阶段力量基础上进行。长休息有助于ATP-PCr系统恢复，使下一组仍能输出高质量力量。</p></section><figure class="figure"><button data-zoom aria-label="放大详情图"><img class="" src="assets/阶段3 OPT训练模型/day55-OPT第4阶段：最大力量训练.png" alt="OPT第4阶段最大力量训练四主题中文总览"><span class="icon-button"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 15 6 6" /><path d="m15 9 6-6" /><path d="M21 16v5h-5" /><path d="M21 8V3h-5" /><path d="M3 16v5h5" /><path d="m3 21 6-6" /><path d="M3 8V3h5" /><path d="M9 9 3 3" /></svg></span></button><figcaption class="caption">最大力量阶段用低重复重负荷练习神经募集；技术、保护与足够恢复决定重量是否有训练价值。</figcaption></figure><section class="panel"><h2>核心要点</h2><ul class="kp"><li><details><summary><span class="term">目标：先提高可用的神经输出</span>：最大力量训练强调运动单位募集、放电频率与协同，而不是只把训练理解为“肌肉变大”。</summary><div class="kp-body"><section class="detail-block"><h4>大重量需要清楚指令</h4><p>高负荷低重复时，身体需要在很短时间内募集更多运动单位并让关节、躯干和握法协同。每一次重复都应有稳定起始姿势、可重复的轨迹与清楚的发力意图；动作一开始就失去位置，不是“神经刺激更强”。</p></section><section class="detail-block"><h4>力量基础是门槛</h4><p>第4阶段适合已能稳定完成基础力量训练的人。若深蹲、卧推、硬拉或推举仍会在轻中等负荷下出现疼痛、明显代偿或无法控制轨迹，先回到能练好技术与总量的阶段。</p></section></div></details></li><li><details><summary><span class="term">变量：低重复也要留出高质量</span>：4—6组、1—5次、约85%—100%1RM和X—X—X是常见处方；重量应由当天技术与准备状态校正。</summary><div class="kp-body"><section class="detail-block"><h4>X不等于抢动作</h4><p>X—X—X表示在保持位置和呼吸策略前提下有快速、明确的发力意图，不是下放失控、弹震关节或憋到无法稳定。上杠、下放、停顿和离开架位仍需受控。</p></section><section class="detail-block"><h4>每组都该能复现</h4><p>低重复不会自动安全。若第一下就偏移、杠铃路径明显变形或需要借力，减少重量、次数或改用更稳定版本；不要为凑目标百分比把失误重复更多次。</p></section></div></details></li><li><details><summary><span class="term">3—5分钟休息：让PCr补回来</span>：重负荷主要依赖ATP-PCr供能；较充分的组间恢复帮助下一组保持力量与技术输出。</summary><div class="kp-body"><section class="detail-block"><h4>休息是处方的一部分</h4><p>重组后呼吸、握力、姿势准备和心理专注都需要恢复。3—5分钟是常见范围，不是计时竞赛；仍气促、无法稳住躯干或保护条件未就绪时，延长恢复更合适。</p></section><section class="detail-block"><h4>区分力量与疲劳挑战</h4><p>把休息压得很短会让训练更累，却可能让后续重量和轨迹下降。最大力量阶段优先保护高质量重负荷暴露；需要心肺或代谢挑战，应另行安排而不是挤在重组之间。</p></section></div></details></li><li><details><summary><span class="term">动作与保护：技术优先于数字</span>：选择已熟练的深蹲、卧推、硬拉、推举等复合动作；架位、保护者、逃生空间和负荷递进都要先确定。</summary><div class="kp-body"><section class="detail-block"><h4>先检查架位与路径</h4><p>深蹲要有适合的安全杠高度和可用护杠；卧推需可靠保护或安全装置；硬拉与推举要确保地面、握法和周围空间。疼痛、眩晕、麻木或器械异常时立刻停止，而不是继续测试。</p></section><section class="detail-block"><h4>用小步进阶</h4><p>只有当前负荷的所有计划重复都稳定、保护条件具备且恢复良好时，才小幅加重。记录重量、重复、主观用力、轨迹和恢复反应；计划中的回退或减量不是退步，而是为下一轮高质量训练腾出空间。</p></section></div></details></li></ul></section><section class="warn"><h2>常见误区</h2><p><strong class="misconception">误区：最大力量训练就是每组都做到绝对失败。</strong><br>辨析：最大力量重视高质量重负荷与技术复现；失败、保护条件和当天状态决定是否应停止或回退。</p><p><strong class="misconception">误区：X—X—X节奏代表可以快速甩下重量。</strong><br>辨析：X表示快速发力意图；下放、架位、呼吸和关节位置仍必须受控。</p><p><strong class="misconception">误区：重组休息越短，力量刺激一定越强。</strong><br>辨析：3—5分钟常用于恢复ATP-PCr与技术准备；把休息压短会让下一组力量和轨迹下降。</p><p><strong class="misconception">误区：只要敢上大重量，就不需要力量基础和保护。</strong><br>辨析：最大力量阶段需要稳定技术、合适设备和保护；基础不足或出现疼痛时应回退并寻求专业指导。</p></section><section class="mnemonic"><h2>记忆口诀</h2><p><strong>重而不乱，快而可控；组间补磷，技术先行；全组稳定，再小步加重。</strong></p></section><section class="panel"><h2>翻转卡复习</h2><div class="cards"><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">OPT第4阶段的主要训练目标？</span><span class="face back" aria-hidden="true">提升最大力量与神经肌肉募集、协同的效率。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">常见最大力量重复范围？</span><span class="face back" aria-hidden="true">常见为1—5次，前提是每次技术可控。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">为何重组常休息3—5分钟？</span><span class="face back" aria-hidden="true">帮助ATP-PCr、呼吸、姿势与专注恢复，保持下一组质量。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">X—X—X的关键含义？</span><span class="face back" aria-hidden="true">在稳定位置下快速发力，不是失控甩动或省略准备。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">何时应降低重组负荷？</span><span class="face back" aria-hidden="true">起始姿势、轨迹、保护或恢复条件不足，或出现疼痛眩晕时。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">最大力量如何进阶？</span><span class="face back" aria-hidden="true">计划重复均稳定且恢复良好时，小幅加重并持续记录。</span></span></button></div></section><section class="panel orange"><h2>实操关联</h2><ul class="practice"><li>为一个熟练的深蹲、卧推、硬拉或推举动作写下架位、保护、退出路径和停止信号；缺一项就不安排重组。</li><li>以能稳定完成的负荷做3组低重复，记录每组的轨迹、RPE和休息时长；不以一次测试代替训练。</li><li>重组后先完成呼吸、握法和躯干准备检查；仍无法稳定时，延长恢复或回退负荷。</li><li>连续两周只在所有计划重复技术稳定时小幅加重；出现疼痛、睡眠变差或完成度下降时安排回退。</li></ul></section><section class="panel blue"><h2>练习题</h2><section class="question" data-answers="[1]" data-explanation="最大力量阶段关注重负荷下可复现的力量输出和神经肌肉协调，而不是单纯疲劳。"><h3>1. 单选：哪项最符合OPT第4阶段的核心目标？</h3><div class="options"><label class="option"><input type="radio" name="question-0" value="0"><span>A. 每组追求最大酸痛</span></label><label class="option"><input type="radio" name="question-0" value="1"><span>B. 提升高质量最大力量与神经募集</span></label><label class="option"><input type="radio" name="question-0" value="2"><span>C. 把组间休息压到最短</span></label><label class="option"><input type="radio" name="question-0" value="3"><span>D. 只做孤立动作</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[1]" data-explanation="充分恢复帮助保持下一组力量、技术和保护条件。"><h3>2. 单选：重负荷组间常安排3—5分钟恢复，主要因为？</h3><div class="options"><label class="option"><input type="radio" name="question-1" value="0"><span>A. 让下一组更容易失控</span></label><label class="option"><input type="radio" name="question-1" value="1"><span>B. 补充ATP-PCr并恢复姿势与专注</span></label><label class="option"><input type="radio" name="question-1" value="2"><span>C. 避免记录训练</span></label><label class="option"><input type="radio" name="question-1" value="3"><span>D. 保证每次都失败</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[0,1,2,4]" data-explanation="基础、保护、技术和恢复都是重负荷训练的条件；疼痛或异常应停止并评估。"><h3>3. 多选：进入最大力量训练前与训练中应具备哪些条件？</h3><div class="options"><label class="option"><input type="checkbox" name="question-2" value="0"><span>A. 稳定的基础动作技术</span></label><label class="option"><input type="checkbox" name="question-2" value="1"><span>B. 合适的架位或保护措施</span></label><label class="option"><input type="checkbox" name="question-2" value="2"><span>C. 每次动作都可控</span></label><label class="option"><input type="checkbox" name="question-2" value="3"><span>D. 出现疼痛后继续测试</span></label><label class="option"><input type="checkbox" name="question-2" value="4"><span>E. 根据恢复小步进阶</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[2]" data-explanation="轨迹和保护条件已不满足。先停止、重建安全条件并调整负荷，比硬完成数字更符合最大力量训练。"><h3>4. 案例：小李计划卧推5组3次。第3组第一下轨迹已明显偏移，保护者也未到位。他最合适的下一步是？</h3><div class="options"><label class="option"><input type="radio" name="question-3" value="0"><span>A. 继续完成原重量</span></label><label class="option"><input type="radio" name="question-3" value="1"><span>B. 加重量以提高神经刺激</span></label><label class="option"><input type="radio" name="question-3" value="2"><span>C. 停止重组，补齐保护并回退到能稳定控制的版本</span></label><label class="option"><input type="radio" name="question-3" value="3"><span>D. 把休息缩短证明意志力</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section></section><footer>Day 55/77 · NASM<ul><li>NASM：Optimum Performance Training Model，Phase 4 Maximal Strength 的变量、进阶与安全框架。</li><li>ACSM：ACSM&#39;s Guidelines for Exercise Testing and Prescription，第11版，阻力训练负荷与休息建议。</li><li>NSCA：Essentials of Strength Training and Conditioning，第4版，神经肌肉适应与力量训练处方。</li><li>本课为一般健身教育；疼痛、眩晕、麻木、异常气促、近期伤病或疾病恢复期，请停止训练并咨询医疗或运动专业人员。</li></ul></footer></main><dialog aria-label="详情大图"><button class="icon-button" aria-label="关闭大图" title="关闭大图"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></button><img alt=""></dialog><script>document.querySelectorAll('.flip').forEach((button) => {
+  button.addEventListener('click', () => {
+    const pressed = button.getAttribute('aria-pressed') !== 'true';
+    button.setAttribute('aria-pressed', String(pressed));
+    button.querySelector('.front').setAttribute('aria-hidden', String(pressed));
+    button.querySelector('.back').setAttribute('aria-hidden', String(!pressed));
+  });
+});
+document.querySelectorAll('.question').forEach((question) => {
+  question.querySelector('.check').addEventListener('click', () => {
+    const selected = [...question.querySelectorAll('input:checked')].map((input) => Number(input.value)).sort();
+    const answer = question.querySelector('.answer');
+    answer.hidden = false;
+    if (!selected.length) { answer.textContent = '请先选择答案。'; delete question.dataset.result; return; }
+    const correct = JSON.stringify(selected) === JSON.stringify(JSON.parse(question.dataset.answers).sort());
+    question.dataset.result = correct ? 'correct' : 'wrong';
+    answer.textContent = `${correct ? '回答正确。' : '再想一想。'}${question.dataset.explanation}`;
+  });
+});
+const imageDialog = document.querySelector('dialog');
+document.querySelectorAll('[data-zoom]').forEach((button) => {
+  button.addEventListener('click', () => {
+    const original = button.querySelector('img');
+    const image = imageDialog.querySelector('img');
+    image.src = original.src;
+    image.alt = original.alt;
+    imageDialog.showModal();
+  });
+});
+imageDialog.querySelector('button').addEventListener('click', () => imageDialog.close());
+imageDialog.addEventListener('click', (event) => {
+  const rect = imageDialog.getBoundingClientRect();
+  if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) imageDialog.close();
+});
+</script></body></html>

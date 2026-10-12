@@ -9,7 +9,7 @@ const TEMPLATE = path.join(ROOT, 'templates/study/v1');
 const VERSION = 'study-day29-v1';
 const LAYOUT_REVISION = 'xhs-layout-20260921-v3';
 const LOGO = 'html/assets/fitness-study-logo-open-circle.svg';
-const TOTAL_LESSON_DAYS = 77;
+const TOTAL_LESSON_DAYS = 110;
 const LOGO_CACHE_BUST = crypto.createHash('sha256').update(fs.readFileSync(path.join(ROOT, LOGO))).digest('hex').slice(0, 12);
 const PUBLIC_ORIGIN = 'https://fitstudy.cn';
 const escapeHtml = (value) => String(value).replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]);
@@ -189,7 +189,7 @@ function framedPicture(value, assets, geometry, className = 'visual') {
   const { size, viewBox } = geometry.get(value.src);
   return `<svg class="${className}" xmlns="http://www.w3.org/2000/svg" viewBox="${viewBox.join(' ')}" role="img" aria-label="${escapeHtml(value.alt)}" preserveAspectRatio="xMidYMid meet"><image href="${escapeHtml(assets.get(value.src))}" width="${size[0]}" height="${size[1]}" /></svg>`;
 }
-function brand(lesson, assets, prefix = '') { return `<div class="brand"><img src="${prefix}${logoHref(assets.get(LOGO))}" alt="Logo"><span>${escapeHtml(lesson.cert)}</span></div>`; }
+function brand(assets, prefix = '') { return `<div class="brand"><img src="${prefix}${logoHref(assets.get(LOGO))}" alt="Logo"></div>`; }
 function logoHref(logo) { return logo && /(?:fitness-study-logo-open-circle|logo)\.svg$/.test(logo) ? `${logo}?v=${LOGO_CACHE_BUST}` : logo; }
 function publicShortlink(lesson) { return `${PUBLIC_ORIGIN}/go/${lesson.day}/`; }
 function captionText(lesson) {
@@ -223,7 +223,7 @@ function courseHtml(lesson, assets) {
   const cards = lesson.flashcards.map((card) => `<button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">${escapeHtml(card.question)}</span><span class="face back" aria-hidden="true">${escapeHtml(card.answer)}</span></span></button>`).join('');
   const labels = { single: '单选', multi: '多选', case: '案例' };
   const quizzes = lesson.quiz.map((quiz, index) => `<section class="question" data-answers="${escapeHtml(JSON.stringify(quiz.answers))}" data-explanation="${escapeHtml(quiz.explanation)}"><h3>${index + 1}. ${labels[quiz.type]}：${escapeHtml(quiz.question)}</h3><div class="options">${quiz.options.map((option, i) => `<label class="option"><input type="${quiz.type === 'multi' ? 'checkbox' : 'radio'}" name="question-${index}" value="${i}"><span>${String.fromCharCode(65 + i)}. ${escapeHtml(option)}</span></label>`).join('')}</div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section>`).join('');
-  const body = `<main><header class="header"><h1>Day ${lesson.day} · ${escapeHtml(lesson.title)}</h1><p class="sub">${escapeHtml(lesson.subtitle)}</p><div class="meta">${lesson.chips.map((chip) => `<span class="chip">${escapeHtml(chip)}</span>`).join('')}</div></header><section class="panel green"><h2>一句话总结</h2><p class="takeaway">${escapeHtml(lesson.summary)}</p></section><figure class="figure"><button data-zoom aria-label="放大详情图">${picture(lesson.detailImage, assets)}<span class="icon-button">${icon('Expand')}</span></button><figcaption class="caption">${escapeHtml(lesson.detailCaption)}</figcaption></figure><section class="panel"><h2>核心要点</h2><ul class="kp">${knowledge}</ul></section><section class="warn"><h2>常见误区</h2>${lesson.mistakes.map((mistake) => `<p><strong class="misconception">误区：${escapeHtml(mistake.wrong)}</strong><br>辨析：${escapeHtml(mistake.right)}</p>`).join('')}</section><section class="mnemonic"><h2>记忆口诀</h2><p><strong>${escapeHtml(lesson.mnemonic)}</strong></p></section><section class="panel"><h2>翻转卡复习</h2><div class="cards">${cards}</div></section><section class="panel orange"><h2>实操关联</h2><ul class="practice">${lesson.practice.map((item) => `<li>${escapeHtml(item)}</li>`).join('')}</ul></section><section class="panel blue"><h2>练习题</h2>${quizzes}</section><footer>Day ${lesson.day}/${TOTAL_LESSON_DAYS} · ${escapeHtml(lesson.cert)}<ul>${lesson.sources.map((source) => `<li>${escapeHtml(source)}</li>`).join('')}</ul></footer></main><dialog aria-label="详情大图"><button class="icon-button" aria-label="关闭大图" title="关闭大图">${icon('X')}</button><img alt=""></dialog>`;
+  const body = `<main><header class="header"><h1>Day ${lesson.day} · ${escapeHtml(lesson.title)}</h1><p class="sub">${escapeHtml(lesson.subtitle)}</p><div class="meta">${lesson.chips.map((chip) => `<span class="chip">${escapeHtml(chip)}</span>`).join('')}</div></header><section class="panel green"><h2>一句话总结</h2><p class="takeaway">${escapeHtml(lesson.summary)}</p></section><figure class="figure"><button data-zoom aria-label="放大详情图">${picture(lesson.detailImage, assets)}<span class="icon-button">${icon('Expand')}</span></button><figcaption class="caption">${escapeHtml(lesson.detailCaption)}</figcaption></figure><section class="panel"><h2>核心要点</h2><ul class="kp">${knowledge}</ul></section><section class="warn"><h2>常见误区</h2>${lesson.mistakes.map((mistake) => `<p><strong class="misconception">误区：${escapeHtml(mistake.wrong)}</strong><br>辨析：${escapeHtml(mistake.right)}</p>`).join('')}</section><section class="mnemonic"><h2>记忆口诀</h2><p><strong>${escapeHtml(lesson.mnemonic)}</strong></p></section><section class="panel"><h2>翻转卡复习</h2><div class="cards">${cards}</div></section><section class="panel orange"><h2>实操关联</h2><ul class="practice">${lesson.practice.map((item) => `<li>${escapeHtml(item)}</li>`).join('')}</ul></section><section class="panel blue"><h2>练习题</h2>${quizzes}</section><footer>Day ${lesson.day}/${TOTAL_LESSON_DAYS}<ul>${lesson.sources.map((source) => `<li>${escapeHtml(source)}</li>`).join('')}</ul></footer></main><dialog aria-label="详情大图"><button class="icon-button" aria-label="关闭大图" title="关闭大图">${icon('X')}</button><img alt=""></dialog>`;
   return documentHtml(`Day ${lesson.day} · ${lesson.title}`, read('course.css'), body, read('course.js'), assets.get(LOGO));
 }
 function emphasizedBullet(bullet, emphases, blockIndex, bulletIndex) {
@@ -253,7 +253,7 @@ function slideHtml(slide, index, total, lesson, assets, geometry) {
       body += `${picture(slide.image, assets, 'visual')}<ul class="blocks">${blocks}</ul>${mistakes}`;
     }
   }
-  return `<article class="slide ${slide.kind === 'cover' ? 'cover' : `content ${slide.kind}`}" data-slide="${index + 1}">${brand(lesson, assets)}<div class="slide-body">${body}</div><footer class="footer"><span>Day ${lesson.day}/${TOTAL_LESSON_DAYS}</span><span>${number(index + 1)} / ${number(total)}</span></footer></article>`;
+  return `<article class="slide ${slide.kind === 'cover' ? 'cover' : `content ${slide.kind}`}" data-slide="${index + 1}">${brand(assets)}<div class="slide-body">${body}</div><footer class="footer"><span>Day ${lesson.day}/${TOTAL_LESSON_DAYS}</span><span>${number(index + 1)} / ${number(total)}</span></footer></article>`;
 }
 function slidesHtml(lesson, assets, slides) {
   const geometry = imageGeometry(socialImages(lesson));

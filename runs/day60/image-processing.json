@@ -1,0 +1,357 @@
+{
+  "processedAt": "2026-09-30T09:44:35.423449+00:00",
+  "method": "trim near-transparent noise; reviewed crop; uniform scale; transparent margin",
+  "assets": [
+    {
+      "source": "runs/day60/source/cover.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "sourceSha256": "80d72a6ad90f5f7c435bd06c23db61bf23d7c98c01d44f0f9b5282fa55a87bc8",
+      "reviewedCrop": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "visibleCrop": [
+        184,
+        16,
+        1446,
+        893
+      ],
+      "output": "runs/day60/assets/cover.png",
+      "size": [
+        1600,
+        900
+      ],
+      "subjectSize": [
+        1140,
+        792
+      ],
+      "offset": [
+        230,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "无字封面"
+    },
+    {
+      "source": "runs/day60/source/visual-01-observe.png",
+      "sourceSize": [
+        1891,
+        832
+      ],
+      "sourceSha256": "5b6ad453e20ca17e2555b5b5caf20f944919bb8cf9977ea74f89ff07c69c508c",
+      "reviewedCrop": [
+        0,
+        0,
+        1891,
+        832
+      ],
+      "visibleCrop": [
+        654,
+        21,
+        1201,
+        800
+      ],
+      "output": "runs/day60/assets/visual-01-observe.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        547,
+        779
+      ],
+      "offset": [
+        1126,
+        60
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "动态观察足与膝控制"
+    },
+    {
+      "source": "runs/day60/source/visual-02-foot.png",
+      "sourceSize": [
+        1997,
+        788
+      ],
+      "sourceSha256": "c91755f430135c894cc1b17a001f4be6815db783af66deebef6f40a4b0196676",
+      "reviewedCrop": [
+        0,
+        0,
+        1997,
+        788
+      ],
+      "visibleCrop": [
+        835,
+        17,
+        1159,
+        755
+      ],
+      "output": "runs/day60/assets/visual-02-foot.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        324,
+        738
+      ],
+      "offset": [
+        1238,
+        81
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "足底三点支撑与踝控制"
+    },
+    {
+      "source": "runs/day60/source/visual-03-hip-knee.png",
+      "sourceSize": [
+        2017,
+        780
+      ],
+      "sourceSha256": "bfe39eeb988f1d26aff8786a6c148adf94964f4cc18035c409203ca300e8ce61",
+      "reviewedCrop": [
+        0,
+        0,
+        2017,
+        780
+      ],
+      "visibleCrop": [
+        666,
+        12,
+        1333,
+        749
+      ],
+      "output": "runs/day60/assets/visual-03-hip-knee.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        667,
+        737
+      ],
+      "offset": [
+        1066,
+        81
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "髋膝协同"
+    },
+    {
+      "source": "runs/day60/source/visual-04-squat.png",
+      "sourceSize": [
+        2118,
+        742
+      ],
+      "sourceSha256": "95b6116d8590845aa8ba437741da374ade5ee93aad026c457470b1f8a7c799cb",
+      "reviewedCrop": [
+        0,
+        0,
+        2118,
+        742
+      ],
+      "visibleCrop": [
+        783,
+        11,
+        1398,
+        718
+      ],
+      "output": "runs/day60/assets/visual-04-squat.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        615,
+        707
+      ],
+      "offset": [
+        1092,
+        96
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "深蹲整合"
+    },
+    {
+      "source": "runs/day60/source/overview-01-observe.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "65cc467890b5d0972907193851e99696738f2a67d6620b93357d0ac56aa48628",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        445,
+        49,
+        916,
+        995
+      ],
+      "output": "runs/day60/assets/overview-01-observe.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        471,
+        946
+      ],
+      "offset": [
+        564,
+        127
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day60/source/overview-02-foot.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "128451144dc7b54eb5f2d8537f156296af051048aa7053308383d7f7f4364c5d",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        515,
+        54,
+        910,
+        1032
+      ],
+      "output": "runs/day60/assets/overview-02-foot.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        395,
+        978
+      ],
+      "offset": [
+        602,
+        111
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day60/source/overview-03-hip-knee.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "62ae6f34a01994e5d4c755e3782fd589581f72573295063abeed28d8341d3994",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        299,
+        26,
+        1132,
+        1048
+      ],
+      "output": "runs/day60/assets/overview-03-hip-knee.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        833,
+        1022
+      ],
+      "offset": [
+        383,
+        89
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day60/source/overview-04-squat.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "5359c46fbe1babf14bf536f878fba945f8b5cf1a0d27b7e2f77b3d324bcfd7a8",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        410,
+        68,
+        1170,
+        977
+      ],
+      "output": "runs/day60/assets/overview-04-squat.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        760,
+        909
+      ],
+      "offset": [
+        420,
+        145
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    }
+  ]
+}

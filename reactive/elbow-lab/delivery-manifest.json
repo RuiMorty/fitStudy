@@ -1,0 +1,158 @@
+{
+  "checked": "2026-10-10",
+  "status": "local-mvp-verified-not-anatomically-reviewed",
+  "glb": {
+    "version": 2,
+    "bytes": 2686332,
+    "meshes": 17,
+    "nodes": 31,
+    "animationClips": 13
+  },
+  "browserChecks": 71,
+  "files": {
+    "README.md": {
+      "bytes": 4547,
+      "sha256": "954dec011b4e3be42853e9063205828a603cccc25cc3328a6572644f0c21fb60"
+    },
+    "assets/elbow-right.blend": {
+      "bytes": 2408660,
+      "sha256": "d7a53d8433d9255cbfd01de7a3bd7b73e7d0aea6bd53716230bac2b4ecf6a05c"
+    },
+    "assets/elbow-right.glb": {
+      "bytes": 2686332,
+      "sha256": "a2de4e0143277425e6b6fb831594e5f598698dd2acbde60f34318244f310627e"
+    },
+    "blender/audit_geometry.py": {
+      "bytes": 2036,
+      "sha256": "e13d938be746d21a2c01ed230f6b2c2cd8d51cdbff0d91eef8b8e8dbc8a44aa1"
+    },
+    "blender/build_elbow.py": {
+      "bytes": 14120,
+      "sha256": "800e20ac3efa41f5bb3a9cfcc429590b5fbc599f03f5ad81919070c9d32d50b8"
+    },
+    "blender/define_structures.py": {
+      "bytes": 9432,
+      "sha256": "00021eb4dd5432ce6f171bfbfc7f0d99bade3e4f12378151eed433f6e18ed804"
+    },
+    "data/geometry-stats.json": {
+      "bytes": 6334,
+      "sha256": "013c57b2ee73bd723993d4443ce8925eabf08bd97d9999565090b103b26cf83c"
+    },
+    "data/structures.json": {
+      "bytes": 19856,
+      "sha256": "75793d7ab28d5cbbba87a647817b39958c51df346617517639a78ec99aec0bdb"
+    },
+    "docs/IMPLEMENTATION.md": {
+      "bytes": 1554,
+      "sha256": "b58571b97496cf3f21fdc9fe43128afbe8769397a66fbcdac8f100b30595fc9f"
+    },
+    "docs/MODEL-REVIEW.md": {
+      "bytes": 5903,
+      "sha256": "9108db2a9d2438bc9af1f29202ca16ac9e72347a952d6385036962f2b0a42e97"
+    },
+    "docs/STRUCTURES.md": {
+      "bytes": 7285,
+      "sha256": "834ac413dc18c3c3629672854f2cf7e5b012a89f48be1b381cb40614b4833bb4"
+    },
+    "docs/VALIDATION.md": {
+      "bytes": 3775,
+      "sha256": "5fed0551a1ef007bb01d141e637b3764c0703f8c2f5ad3bc26932b3334ce4db5"
+    },
+    "index.html": {
+      "bytes": 5189,
+      "sha256": "77c5e865b8e472948288ef15fff4c20bf45e737da524305844bcd9351ddbb025"
+    },
+    "package.json": {
+      "bytes": 270,
+      "sha256": "73431111b515444ce63f576aa2da9aed85bfadcd9e717b5353da7e8b09189a91"
+    },
+    "qa/blender-build.log": {
+      "bytes": 2589,
+      "sha256": "138ba9905c4fcc338a8f77da620f1e0b9cc36d4b0e8557b16eaae4d6f0181728"
+    },
+    "qa/desktop-brachialis.png": {
+      "bytes": 313410,
+      "sha256": "bed331198293f140c4eee022499fd06dba009deb165e43f187687f2bd65e9148"
+    },
+    "qa/desktop-exploded.png": {
+      "bytes": 335940,
+      "sha256": "49320f5ce28d0a650181e0257e0f8f8a1ceda708fa5666a6074e196fbbf8639d"
+    },
+    "qa/desktop-overview.png": {
+      "bytes": 325907,
+      "sha256": "5983dda82daaf11ec85c649f7d7d21e3a688159454f78f416c5c9441fd60f712"
+    },
+    "qa/geometry-audit.json": {
+      "bytes": 10071,
+      "sha256": "a12268e7366ab84aabca7d92cf51feb43d91b2bd43c74126f67d15622c04ebb6"
+    },
+    "qa/geometry-audit.log": {
+      "bytes": 10266,
+      "sha256": "ec707c788bf45177ec1bfefe14935cb476d1e497523fee29823586aa5be9e179"
+    },
+    "qa/mobile-brachialis.png": {
+      "bytes": 494468,
+      "sha256": "e3914ad3758585915bfdcafcd51801c6eb3d25d0f1afaadb610eea5b5072bf94"
+    },
+    "qa/mobile-exploded.png": {
+      "bytes": 535177,
+      "sha256": "adafe7ebb38b877419a423b209577040cdc65ca4639af97d4c2e44e65c69a9de"
+    },
+    "qa/mobile-overview.png": {
+      "bytes": 483834,
+      "sha256": "4416772b7e35679fd5d425b2e9fd0c0b686b93a4f523931d1c3527228cfd5b53"
+    },
+    "qa/motion-0.png": {
+      "bytes": 330141,
+      "sha256": "223f3aa0a5b3f8533ef6654ca893e79575632c60851b53351850196a717bbf8d"
+    },
+    "qa/motion-120.png": {
+      "bytes": 332232,
+      "sha256": "173804a44cd44b9a5d75af864fab1263677cca95aa8ffe5497765491addc2407"
+    },
+    "qa/motion-60.png": {
+      "bytes": 334498,
+      "sha256": "1b7653daa1490c0f66665859864d25874c479a5d6e267837f70c4e10d88c31b3"
+    },
+    "qa/verification.json": {
+      "bytes": 7826,
+      "sha256": "2a8537a8b3cd5b91923b069217a4b0b522ba26805b3f226746bee9281e2213d6"
+    },
+    "qa/verify.cjs": {
+      "bytes": 11398,
+      "sha256": "8b6154bcbf41446be20461cb12707921cc9ca124fdafe2214679d3e32b22796d"
+    },
+    "src/app.js": {
+      "bytes": 17494,
+      "sha256": "733c1d764801c13362b0777cee77f175433b5337f56c4eb48aa11e0a32fc902d"
+    },
+    "src/style.css": {
+      "bytes": 14398,
+      "sha256": "0896db33248acf5cfa7ab6d599f26c698f108672c15b979066df89a570c2140a"
+    },
+    "vendor/BufferGeometryUtils.js": {
+      "bytes": 35539,
+      "sha256": "fda7e946b8e0b5ab39b779206589e7a1079a22eb24efb89d7223e03fdfb1f751"
+    },
+    "vendor/GLTFLoader.js": {
+      "bytes": 114732,
+      "sha256": "adbbafe8ce40416525b6be0ee5cac0d3782482bcf0122c8ca8ec1ffa77d3440b"
+    },
+    "vendor/OrbitControls.js": {
+      "bytes": 38703,
+      "sha256": "b97879c748170baadeb3fb84cea1ffdf4674e283dc06042f34e2acb95a76042c"
+    },
+    "vendor/THREE-LICENSE.txt": {
+      "bytes": 1081,
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    "vendor/three.core.js": {
+      "bytes": 1403455,
+      "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20"
+    },
+    "vendor/three.module.js": {
+      "bytes": 603113,
+      "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a"
+    }
+  }
+}

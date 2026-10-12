@@ -1,0 +1,99 @@
+{
+  "provider": "Lingzhi",
+  "preset": "quality",
+  "model": "gpt-image-2.5-sunburst",
+  "authorization": "用户于2026-09-30授权每张图片首次请求后最多5次经调整提示词重试；本记录仅为Day56首轮。",
+  "updatedAt": "2026-09-30T07:01:04.923399Z",
+  "assets": [
+    {
+      "file": "cover.png",
+      "role": "cover",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day56/source/cover.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 1054524,
+      "sha256": "78f9f21019f8621aba3cd5f195d527693ee6145c8ecca6ceef7f6838d36274d7"
+    },
+    {
+      "file": "visual-01-foundation.png",
+      "role": "knowledge",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day56/source/visual-01-foundation.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 825385,
+      "sha256": "8b5d54082f194493946eed684d3113c24a3824954d9c55cd759b78f8945ec15e"
+    },
+    {
+      "file": "visual-02-pairing.png",
+      "role": "knowledge",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day56/source/visual-02-pairing.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 934993,
+      "sha256": "7c780cad26f129328c5b32189a1a8da6e4d29de2c3e41332f31e54b02c4cff0f"
+    },
+    {
+      "file": "visual-03-load.png",
+      "role": "knowledge",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day56/source/visual-03-load.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 869243,
+      "sha256": "6020271e25d696eecd4b7781228dff8a4bd84bdf6a37939f3244ab3b2f621799"
+    },
+    {
+      "file": "visual-04-landing.png",
+      "role": "knowledge",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day56/source/visual-04-landing.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 957053,
+      "sha256": "362a7f488965e1f6068efbe47a7e0998d260f0582b42dc3a68a782410bcea711"
+    },
+    {
+      "file": "overview-01-foundation.png",
+      "role": "overview-item",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day56/source/overview-01-foundation.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 812356,
+      "sha256": "9eaeb38358f5e19d00b653fb7888a6b5ed8fb96af0b863ef5dff333ec3bbbf2f"
+    },
+    {
+      "file": "overview-02-pairing.png",
+      "role": "overview-item",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day56/source/overview-02-pairing.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 1034510,
+      "sha256": "010bc059a793a5b6f5241e6cae467f48bd067d3558794d7e48faf8b1d071e941"
+    },
+    {
+      "file": "overview-03-load.png",
+      "role": "overview-item",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day56/source/overview-03-load.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 812481,
+      "sha256": "b5103a3a9a314460c19e3ac2497233ef022049420f726c3f51e4d83f8f7f8e33"
+    },
+    {
+      "file": "overview-04-landing.png",
+      "role": "overview-item",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day56/source/overview-04-landing.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 831626,
+      "sha256": "839749906602d5bdd97556debca36840b7288808b2423a24f0dbf41addd2bf74"
+    }
+  ]
+}

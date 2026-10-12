@@ -1,0 +1,33 @@
+{
+  "reviewer": "local visual and alpha QA",
+  "requirements": [
+    "true-alpha",
+    "no checkerboard or rendered background",
+    "wordless source art",
+    "consistent Bojji and Despa teaching style",
+    "one clear action per knowledge image",
+    "overview art independently generated from knowledge art"
+  ],
+  "technicalChecks": {
+    "checkedWith": ["sips pixel dimensions and hasAlpha", "white-background compositing inspection", "individual source-image inspection"],
+    "result": "11/11 selected source PNG are non-empty RGBA files with alpha. No selected image contains readable generated text, checkerboard, unrelated image, placeholder, duplicate figure, detached limb or action-sequence artifact."
+  },
+  "accepted": [
+    {"file": "cover.png", "attempt": 2, "source": "runs/day61/image-requests/cover-eb86e17540/attempt-02/cover.png", "review": "德斯帕安静落地、波吉观察的连续动作清楚；白底合成后边缘干净。"},
+    {"file": "visual-01-ssc.png", "attempt": 1, "source": "runs/day61/image-requests/visual-01-ssc-31766ef62e/attempt-01/visual-01-ssc.png", "review": "单一SSC准备动作，人物与动作关系清楚。"},
+    {"file": "visual-02-amortization.png", "attempt": 1, "source": "runs/day61/image-requests/visual-02-amortization-60eedd26b4/attempt-01/visual-02-amortization.png", "review": "小幅受控缓冲姿势，符合控制先于速度的教学语义。"},
+    {"file": "visual-03-landing.png", "attempt": 1, "source": "runs/day61/image-requests/visual-03-landing-84c4cd86f5/attempt-01/visual-03-landing.png", "review": "侧向落地定住动作完整，髋膝踝和观察者角色清楚。"},
+    {"file": "visual-04-progression.png", "attempt": 1, "source": "runs/day61/image-requests/visual-04-progression-5aae35c3f9/attempt-01/visual-04-progression.png", "review": "单一方向任务表达增强式渐进，未用多帧或重复人像。"},
+    {"file": "visual-05-saq.png", "attempt": 1, "source": "runs/day61/image-requests/visual-05-saq-6c4aec2a34/attempt-01/visual-05-saq.png", "review": "低位减速与锥桶任务表达SAQ制动优先，四肢和道具关系正常。"},
+    {"file": "overview-01-ssc.png", "attempt": 1, "source": "runs/day61/image-requests/overview-01-ssc-5e20a1f62c/attempt-01/overview-01-ssc.png", "review": "独立绘制的SSC准备图，不复用知识页源图。"},
+    {"file": "overview-02-amortization.png", "attempt": 1, "source": "runs/day61/image-requests/overview-02-amortization-2d86c49850/attempt-01/overview-02-amortization.png", "review": "独立绘制的受控缓冲图，动作语义清楚。"},
+    {"file": "overview-03-landing.png", "attempt": 1, "source": "runs/day61/image-requests/overview-03-landing-938eb8651b/attempt-01/overview-03-landing.png", "review": "独立绘制的低箱落地制动图，人物和箱体关系正常。"},
+    {"file": "overview-04-progression.png", "attempt": 1, "source": "runs/day61/image-requests/overview-04-progression-15276d43bc/attempt-01/overview-04-progression.png", "review": "独立绘制的横向定住任务，未复用知识页源图。"},
+    {"file": "overview-05-saq.png", "attempt": 1, "source": "runs/day61/image-requests/overview-05-saq-7a77bcc4d7/attempt-01/overview-05-saq.png", "review": "独立绘制的减速与锥桶任务，表达计划变向前的制动。"}
+  ],
+  "rejected": [
+    {"file": "cover.png", "attempt": 1, "source": "runs/day61/image-requests/cover-eb86e17540/attempt-01/cover.png", "reason": "保留首轮候选；第2次调整候选的透明边缘与角色比例更干净，故不作为最终来源。"}
+  ],
+  "retriesUsed": 1,
+  "result": "11 项来源素材均已通过本地质量审核；封面保留首轮并使用一次经调整提示词的重试，最终选择第2次候选。"
+}

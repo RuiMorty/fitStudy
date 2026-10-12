@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "status": "planning-only-no-generation-request",
+  "day": 73,
+  "lesson": "补剂安全纯度与营养恢复复盘",
+  "styleReference": "templates/study/v1/image-style.json",
+  "commonRequirements": [
+    "固定波吉与德斯帕、二维教学画法、深灰细轮廓和平涂；每张仅两位角色。",
+    "输出真实透明PNG；无背景房间、货架、地板、边框、阴影、棋盘格、品牌、水印或商品包装。",
+    "AI图内不能出现认证Logo、商标、文字、数字、药片、胶囊、补剂罐、粉末、条形码、手机屏幕、箭头或图表。",
+    "用空白卡片、无字餐盘、水杯、合上的空白文件夹和日常训练姿态表达核对与恢复；不将补剂画成魔法或医疗替代。"
+  ],
+  "assets": [
+    {"file": "cover.png", "role": "cover", "targetSize": [1600, 900], "topic": "补剂安全和恢复复盘", "teachingRelationship": "核对信息和恢复基础共同优先于营销", "composition": "横向16:9，波吉与德斯帕在无字普通餐盘、水杯和两张空白卡片旁讨论；无包装、无货架", "allowedText": "none", "anatomyAndTechniqueConstraints": "食物与水杯完整，无品牌；人物为平静讨论姿态。"},
+    {"file": "visual-01-regulation.png", "role": "knowledge", "targetSize": [2800, 900], "topic": "地区与成分核对", "teachingRelationship": "在售产品仍需看完整信息和个人条件", "composition": "横向28:9，德斯帕打开空白文件夹，波吉看两张空白卡片；旁边只有无字水杯", "allowedText": "none", "anatomyAndTechniqueConstraints": "无监管标识、药品、包装或可读资料。"},
+    {"file": "visual-02-certification.png", "role": "knowledge", "targetSize": [2800, 900], "topic": "认证降低部分风险", "teachingRelationship": "额外核对线索不等于绝对保证", "composition": "横向28:9，波吉和德斯帕并排查看两个不同颜色但无字的空白小卡，采用平衡手势", "allowedText": "none", "anatomyAndTechniqueConstraints": "卡片无Logo、勾选、盾牌或文字；不画任何产品。"},
+    {"file": "visual-03-marketing.png", "role": "knowledge", "targetSize": [2800, 900], "topic": "区分证据与故事", "teachingRelationship": "比较需要看研究结构，不看炫目宣传", "composition": "横向28:9，德斯帕把一张简单空白卡片和一张装饰更复杂但仍无字的卡片并列，波吉做思考手势", "allowedText": "none", "anatomyAndTechniqueConstraints": "不出现星级、对比箭头、文字、前后体型或品牌。"},
+    {"file": "visual-04-recovery.png", "role": "knowledge", "targetSize": [2800, 900], "topic": "日常恢复基础", "teachingRelationship": "正餐、水合、睡眠和训练负荷共同构成恢复", "composition": "横向28:9，德斯帕坐在小桌旁面对无字普通餐盘和水杯，波吉在旁做轻松拉伸准备；无床、时钟或文字", "allowedText": "none", "anatomyAndTechniqueConstraints": "拉伸姿态安全温和，不表现疲劳崩溃或医疗场景。"},
+    {"file": "overview-01-regulation.png", "role": "overview-item", "targetSize": [1600, 1200], "topic": "监管差异", "teachingRelationship": "完整信息比包装宣传重要", "composition": "4:3总览专用，德斯帕打开空白文件夹，波吉看空白卡片", "allowedText": "none", "anatomyAndTechniqueConstraints": "不与知识页复用；无Logo或产品。"},
+    {"file": "overview-02-certification.png", "role": "overview-item", "targetSize": [1600, 1200], "topic": "认证定位", "teachingRelationship": "认证是额外线索而非零风险", "composition": "4:3总览专用，两人查看两张无字空白小卡并做平衡手势", "allowedText": "none", "anatomyAndTechniqueConstraints": "不与知识页复用；无盾牌、勾选或文字。"},
+    {"file": "overview-03-marketing.png", "role": "overview-item", "targetSize": [1600, 1200], "topic": "营销识别", "teachingRelationship": "故事与证据需要区分", "composition": "4:3总览专用，德斯帕在两张无字卡片间做比较手势，波吉思考", "allowedText": "none", "anatomyAndTechniqueConstraints": "不与知识页复用；无图表、前后体型或广告符号。"},
+    {"file": "overview-04-recovery.png", "role": "overview-item", "targetSize": [1600, 1200], "topic": "恢复基础", "teachingRelationship": "吃、喝、睡和训练安排共同恢复", "composition": "4:3总览专用，波吉面对无字餐盘和水杯，德斯帕在旁做轻松拉伸", "allowedText": "none", "anatomyAndTechniqueConstraints": "不与知识页复用；无床、时钟或医疗暗示。"}
+  ]
+}

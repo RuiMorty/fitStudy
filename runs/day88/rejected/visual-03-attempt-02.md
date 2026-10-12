@@ -1,0 +1,1 @@
+Reviewed 2026-10-05T06:22:00+08:00. Rejected: although the requested characters and props were present, the candidate added a large dark gradient/glow field and cast-like diffuse lighting. It does not meet the required transparent cutout / no-background rule. The original remains at `runs/day88/image-requests/visual-03-0c02636da0/attempt-02/visual-03.png`.

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Day 79 · 目标设置与动机</title><link rel="icon" type="image/svg+xml" href="assets/fitness-study-logo-open-circle.svg?v=a6d8e5caaa61"><style>:root { color-scheme: light; --ink: #111113; --muted: #71717a; --line: #e4e4e7; --accent: #ff5a1f; --green: #0ea66b; --blue: #2563eb; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; font-synthesis: none; letter-spacing: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); overflow-wrap: anywhere; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+img { display: block; max-width: 100%; }
+button:focus-visible, a:focus-visible, summary:focus-visible, input:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
+svg.icon { width: 20px; height: 20px; }
+.icon-button { display: inline-grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 1px solid var(--line); border-radius: 6px; background: white; }
+[hidden] { display: none !important; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
+
+body { background: #f6f8f7; font-size: 14px; line-height: 1.65; }
+main { max-width: 980px; margin: auto; padding: 24px 18px 60px; }
+.header { padding: 22px 4px 14px; }
+h1 { margin: 10px 0 8px; font-size: 36px; line-height: 1.2; }
+h1::before { content: ""; display: block; width: 34px; height: 4px; background: var(--accent); margin-bottom: 10px; }
+h2 { font-size: 17px; margin: 0 0 14px; }
+h3 { font-size: 16px; margin: 0 0 8px; }
+.sub { color: var(--muted); margin: 5px 0 18px; }
+.meta { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { display: inline-block; border: 1px solid var(--line); border-radius: 20px; background: white; color: var(--muted); padding: 3px 10px; font-size: 12px; font-weight: 600; }
+.chip:nth-child(1) { background: #e2f7eb; color: #15803d; border-color: transparent; }
+.chip:nth-child(2) { background: #e7f0fe; color: #2563eb; border-color: transparent; }
+.chip:nth-child(3) { background: #fff2e5; color: #9a4c05; border-color: transparent; }
+.panel, .figure, .warn, .mnemonic { background: white; border: 1px solid #e2e8e4; border-radius: 14px; box-shadow: 0 2px 12px rgba(20,40,30,.06); padding: 20px; margin: 16px 0; }
+.green { border-left: 5px solid var(--green); }
+.orange { border-left: 5px solid #ea7a17; }
+.blue { border-left: 5px solid #0ea5e9; }
+.takeaway { margin: 0; }
+.figure { text-align: center; }
+.figure button { display: block; position: relative; width: 100%; border: 0; padding: 0; background: white; cursor: zoom-in; }
+.figure img { max-height: 760px; width: 100%; object-fit: contain; }
+.figure .icon-button { position: absolute; bottom: 8px; right: 8px; background: #ffffffed; }
+.caption { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
+.kp { list-style: none; padding: 0; margin: 0; }
+.kp > li { border-bottom: 1px dashed #e2e8e4; }
+.kp > li:last-child { border-bottom: 0; }
+.kp summary { cursor: pointer; padding: 13px 8px; font-weight: 650; }
+.kp summary::marker { color: var(--green); }
+.term { color: #0a7d52; background: #e2f7eb; border-radius: 6px; padding: 1px 5px; }
+.kp-body { padding: 2px 14px 16px 24px; }
+.detail-block { margin: 12px 0; }
+.detail-block h4 { font-size: 13px; color: #08744d; margin: 0 0 4px; }
+.detail-block p { margin: 0; white-space: pre-line; }
+.warn { border-left: 5px solid #e23b3b; background: #fffafa; }
+.warn p { margin: 8px 0; }
+.misconception { color: #a82b32; }
+.mnemonic { border-left: 4px solid var(--accent); box-shadow: none; }
+.mnemonic strong { color: #df4716; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+.flip { height: 168px; perspective: 900px; border: 0; background: transparent; padding: 0; text-align: center; }
+.flip-in { display: block; height: 100%; position: relative; transition: transform .45s; transform-style: preserve-3d; }
+.flip[aria-pressed="true"] .flip-in { transform: rotateY(180deg); }
+.face { position: absolute; inset: 0; backface-visibility: hidden; border: 1px solid var(--line); border-radius: 10px; padding: 15px; background: #fafafa; display: flex; align-items: center; justify-content: center; overflow-y: auto; }
+.back { transform: rotateY(180deg); background: #eef9f4; color: #075e40; border-color: #c8eadb; }
+.practice { padding-left: 20px; }
+.practice li { margin: 7px 0; }
+.question { border-top: 1px solid #e2e8e4; padding: 20px 0 8px; margin-top: 12px; min-width: 0; }
+.options { display: grid; gap: 7px; margin: 10px 0; }
+.option { display: flex; gap: 10px; align-items: baseline; border: 1px solid #e2e8e4; background: #f0f4f2; padding: 9px 12px; border-radius: 8px; cursor: pointer; }
+.option input { flex-shrink: 0; accent-color: var(--green); }
+.option:has(input:checked) { border-color: #0ea5e9; background: #e7f6fd; }
+.question[data-result="correct"] .option:has(input:checked) { border-color: #0ea66b; background: #e7f8ef; }
+.question[data-result="wrong"] .option:has(input:checked) { border-color: #e23b3b; background: #fff0f0; }
+.answer { background: #f8fbfa; border-left: 3px solid #0ea5e9; padding: 10px; margin-top: 10px; }
+.check { border: 0; background: #0ea66b; color: white; padding: 9px 14px; border-radius: 7px; }
+footer { color: var(--muted); font-size: 12px; margin-top: 28px; }
+footer ul { padding-left: 20px; }
+dialog { width: min(1200px, 96vw); max-height: 94dvh; padding: 52px 16px 16px; border: 0; border-radius: 8px; background: white; }
+dialog::backdrop { background: #15191dd9; }
+dialog img { width: 100%; max-height: 78dvh; object-fit: contain; }
+dialog .icon-button { position: absolute; top: 8px; right: 10px; }
+@media (max-width: 600px) {
+  main { padding: 16px 12px 40px; }
+  h1 { font-size: 26px; }
+  .header { padding: 16px 4px 12px; }
+  .panel, .figure, .warn, .mnemonic { padding: 15px; }
+  .kp-body { padding-left: 16px; }
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .face { padding: 12px; }
+}
+</style></head><body><main><header class="header"><h1>Day 79 · 目标设置与动机</h1><p class="sub">把愿望拆成可控过程，让进步有证据、计划有回路。</p><div class="meta"><span class="chip">过程目标</span><span class="chip">自我效能</span><span class="chip">一周复盘</span></div></header><section class="panel green"><h2>一句话总结</h2><p class="takeaway">好的目标既给方向，也留给现实生活调整的空间。结果目标描述想去哪里，表现目标描述可衡量的能力，过程目标描述今天能做的动作；教练应优先协助受训者建立可控过程。SMART 能检查目标是否清楚、可衡量、可达成、相关且有时限，但还需要一个最低可完成版本。自我效能来自亲身成功、看到相近的人成功、可信的鼓励和对身体感受的合理解释。用 OARS 听见自己的理由，再把愿望拆成一周行为、记录指标和复盘日期。</p></section><figure class="figure"><button data-zoom aria-label="放大详情图"><img class="" src="assets/阶段6 行为改变与评估/day79-目标设置与动机.png" alt="目标设置与动机四主题中文总览"><span class="icon-button"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 15 6 6" /><path d="m15 9 6-6" /><path d="M21 16v5h-5" /><path d="M21 8V3h-5" /><path d="M3 16v5h5" /><path d="m3 21 6-6" /><path d="M3 8V3h5" /><path d="M9 9 3 3" /></svg></span></button><figcaption class="caption">目标应服务于可控行为和身心安全，而不是把体重、外形或惩罚当作唯一驱动力。</figcaption></figure><section class="panel"><h2>核心要点</h2><ul class="kp"><li><details><summary><span class="term">三类目标：方向、能力与今天的动作</span>：结果、表现和过程目标各有用途；过程目标最直接受本人控制，适合作为日常计划的核心。</summary><div class="kp-body"><section class="detail-block"><h4>别把结果当唯一考核</h4><p>结果目标如完成一次活动或改善健康指标，可能受恢复、环境和时间等多种因素影响；表现目标如完成某个距离、负荷或技术标准，能让方向更具体；过程目标如本周两次十分钟步行、每次热身后做一组练习，是当下真正能选择和执行的行为。三者要相连，但不要用体重、外形或羞耻取代健康与能力。</p></section><section class="detail-block"><h4>从可控项开始</h4><p>当受训者说“我要变强”或“我要瘦下来”，可追问本周愿意投入的时间、场地和安全动作，再把它写成过程目标。若某项不能由本人直接控制，或必须依靠极端限制才能完成，就应改写为更安全、可持续的行为指标。</p></section></div></details></li><li><details><summary><span class="term">SMART 加上最低可完成版本</span>：清楚的目标需要具体、可衡量、可达成、相关和有时限；最低版本让忙碌日也能保留行动线索。</summary><div class="kp-body"><section class="detail-block"><h4>用 SMART 检查措辞</h4><p>把“多运动”改成“本周二、四下班后在小区步行十分钟，并在手机上打一个完成标记”，就有了行为、频率、情境和时间点。SMART 不是把计划写得越复杂越好；如果不能清楚判断是否完成，或不符合当前能力与医疗边界，就要继续简化或寻求专业意见。</p></section><section class="detail-block"><h4>最低版本不是放弃</h4><p>最低可完成版本是在精力、天气或日程突变时仍能执行的安全动作，例如穿好鞋走五分钟、完成一轮呼吸和活动度练习。它维持的是“我仍能开始”的证据；状态允许时再回到标准版本，而不是用补偿性加练填补空白。</p></section></div></details></li><li><details><summary><span class="term">自我效能：让“我能做到”有证据</span>：亲身成功、替代经验、可信言语支持和对身体感受的合理解释，都会影响下一次是否愿意尝试。</summary><div class="kp-body"><section class="detail-block"><h4>先积累真实小成功</h4><p>最有力量的来源是本人完成过安全、明确的动作。教练可降低范围、时间或复杂度，让任务恰好有挑战但可完成，再具体指出“你今天在两次停顿后仍保持了呼吸和节奏”。空泛夸奖或过早承诺效果，反而会削弱信任。</p></section><section class="detail-block"><h4>解释感受，不制造恐惧</h4><p>看到能力相近的人逐步完成、获得可信鼓励，以及理解正常的运动呼吸和疲劳，都可能增加效能感；但疼痛、眩晕、胸部不适或异常气促不能被解释成“坚持就会过去”。这些信号应停止活动并按需要转介。</p></section></div></details></li><li><details><summary><span class="term">用 OARS 把愿望接到一周计划</span>：开放问题、肯定、反映和总结用于听见理由；最后共同确定一项行为、一个记录和一个复盘日期。</summary><div class="kp-body"><section class="detail-block"><h4>先让对方说出理由</h4><p>OARS 中的开放问题邀请对方说明在意什么，肯定具体努力，反映其矛盾或偏好，总结已说出的理由和计划。它不是话术操控，也不用于逼人表态；当对方不想继续时，应尊重选择、说明可再联系的支持渠道。</p></section><section class="detail-block"><h4>计划要有反馈回路</h4><p>结束对话前共同写下一周的一项过程行为、简单记录方式和复盘日期。例如记录是否在约定时段完成步行及当时难易度，而非每天反复称重。复盘时先看执行条件和感受，再决定保持、缩小、替换或逐步增加。</p></section></div></details></li></ul></section><section class="warn"><h2>常见误区</h2><p><strong class="misconception">误区：目标越宏大、越痛苦，动机就越强。</strong><br>辨析：目标应和当前能力、健康和生活条件匹配；可控过程和小成功更有利于持续行动。</p><p><strong class="misconception">误区：SMART 就是把每周计划排得越满越好。</strong><br>辨析：SMART 用于把行为说清楚；还需保留最低可完成版本和安全调整空间。</p><p><strong class="misconception">误区：积极鼓励就是不管动作质量都说做得很好。</strong><br>辨析：有效支持应基于真实、具体的努力和安全表现，不夸大效果或压过不适信号。</p><p><strong class="misconception">误区：教练只要告诉对方正确答案，就不必听他的理由。</strong><br>辨析：开放问题和共同决定能让计划贴合生活；受训者自己的理由和选择更容易形成执行回路。</p></section><section class="mnemonic"><h2>记忆口诀</h2><p><strong>结果定方向，过程定今天；目标留最低版，记录后再调整。</strong></p></section><section class="panel"><h2>翻转卡复习</h2><div class="cards"><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">结果、表现、过程目标的差别？</span><span class="face back" aria-hidden="true">结果指方向，表现指能力指标，过程指今天可控制的行为。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">为什么优先写过程目标？</span><span class="face back" aria-hidden="true">它最受本人控制，能直接安排在日常生活中。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">SMART 要检查什么？</span><span class="face back" aria-hidden="true">具体、可衡量、可达成、相关和有时限。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">最低可完成版本的作用？</span><span class="face back" aria-hidden="true">在条件变差时保留安全的行动线索与完成感。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">自我效能的四类来源？</span><span class="face back" aria-hidden="true">亲身成功、替代经验、可信言语支持和对状态的合理解释。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">OARS 的用途？</span><span class="face back" aria-hidden="true">用开放问题、肯定、反映和总结听见理由并共同形成计划。</span></span></button></div></section><section class="panel orange"><h2>实操关联</h2><ul class="practice"><li>把一个结果愿望分别改写成一条表现目标和一条本周过程目标，并指出其中哪一项最受本人控制。</li><li>为一项标准训练行为写一个最低可完成版本，确保它不靠补偿、惩罚或极端限制来完成。</li><li>设计一条具体反馈：描述受训者已完成的安全动作、可观察质量和下一步，不使用空泛夸奖。</li><li>用一个开放问题开始，再写下一周的一项行为、一个简单记录指标和一个复盘日期。</li></ul></section><section class="panel blue"><h2>练习题</h2><section class="question" data-answers="[2]" data-explanation="过程目标描述本人当前可安排的具体行为；其他选项是结果或表现，或受许多外部因素影响。"><h3>1. 单选：下列哪一项最像过程目标？</h3><div class="options"><label class="option"><input type="radio" name="question-0" value="0"><span>A. 三个月后跑完一场比赛</span></label><label class="option"><input type="radio" name="question-0" value="1"><span>B. 深蹲达到某个重量</span></label><label class="option"><input type="radio" name="question-0" value="2"><span>C. 本周一、三、五晚饭后步行十分钟</span></label><label class="option"><input type="radio" name="question-0" value="3"><span>D. 体重每周下降固定数值</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[2]" data-explanation="最低版本保留开始和完成的证据，不用补偿性行为增加负担或风险。"><h3>2. 单选：标准计划是晚饭后步行二十分钟，临时加班时的最低可完成版本更合适的是？</h3><div class="options"><label class="option"><input type="radio" name="question-1" value="0"><span>A. 加班后强迫走一小时</span></label><label class="option"><input type="radio" name="question-1" value="1"><span>B. 取消后第二天双倍补上</span></label><label class="option"><input type="radio" name="question-1" value="2"><span>C. 安全条件允许时步行五分钟，并在复盘时记录原因</span></label><label class="option"><input type="radio" name="question-1" value="3"><span>D. 用不吃晚饭惩罚自己</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[0,1,3,4]" data-explanation="真实成功、替代经验、可信支持与合理状态解释有帮助；异常症状不能被鼓励掩盖。"><h3>3. 多选：哪些做法有助于建立自我效能？</h3><div class="options"><label class="option"><input type="checkbox" name="question-2" value="0"><span>A. 安排可完成的安全小任务</span></label><label class="option"><input type="checkbox" name="question-2" value="1"><span>B. 具体指出已观察到的进步</span></label><label class="option"><input type="checkbox" name="question-2" value="2"><span>C. 把胸痛解释为意志不够</span></label><label class="option"><input type="checkbox" name="question-2" value="3"><span>D. 让受训者看到相近能力者的渐进过程</span></label><label class="option"><input type="checkbox" name="question-2" value="4"><span>E. 帮助区分正常疲劳与需要停止的异常信号</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[1]" data-explanation="先找生活中可放入的过程行为和最低版本，能积累效能感并为后续调整留下记录。"><h3>4. 案例：小林说“我想练，但每天都做不到一小时，所以干脆不做”。教练最合适的下一步是？</h3><div class="options"><label class="option"><input type="radio" name="question-3" value="0"><span>A. 告诉他必须每天一小时</span></label><label class="option"><input type="radio" name="question-3" value="1"><span>B. 问他本周最容易腾出的短时段，并共同设一个最低可完成版本和复盘日</span></label><label class="option"><input type="radio" name="question-3" value="2"><span>C. 只讨论体脂变化</span></label><label class="option"><input type="radio" name="question-3" value="3"><span>D. 承诺十天一定看到明显外形改变</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section></section><footer>Day 79/110<ul><li>Locke EA, Latham GP：Goal Setting Theory，清晰目标、反馈和任务承诺的行为原则。</li><li>Bandura A：Self-Efficacy: The Exercise of Control，自我效能来源与行为坚持。</li><li>Miller WR, Rollnick S：Motivational Interviewing，OARS 与共同探索改变理由的沟通框架。</li><li>本课为一般健身教育；不以体重、外形或惩罚施压。强迫训练、身体形象困扰或动机显著低落时请尊重意愿并适时寻求专业支持。</li></ul></footer></main><dialog aria-label="详情大图"><button class="icon-button" aria-label="关闭大图" title="关闭大图"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></button><img alt=""></dialog><script>document.querySelectorAll('.flip').forEach((button) => {
+  button.addEventListener('click', () => {
+    const pressed = button.getAttribute('aria-pressed') !== 'true';
+    button.setAttribute('aria-pressed', String(pressed));
+    button.querySelector('.front').setAttribute('aria-hidden', String(pressed));
+    button.querySelector('.back').setAttribute('aria-hidden', String(!pressed));
+  });
+});
+document.querySelectorAll('.question').forEach((question) => {
+  question.querySelector('.check').addEventListener('click', () => {
+    const selected = [...question.querySelectorAll('input:checked')].map((input) => Number(input.value)).sort();
+    const answer = question.querySelector('.answer');
+    answer.hidden = false;
+    if (!selected.length) { answer.textContent = '请先选择答案。'; delete question.dataset.result; return; }
+    const correct = JSON.stringify(selected) === JSON.stringify(JSON.parse(question.dataset.answers).sort());
+    question.dataset.result = correct ? 'correct' : 'wrong';
+    answer.textContent = `${correct ? '回答正确。' : '再想一想。'}${question.dataset.explanation}`;
+  });
+});
+const imageDialog = document.querySelector('dialog');
+document.querySelectorAll('[data-zoom]').forEach((button) => {
+  button.addEventListener('click', () => {
+    const original = button.querySelector('img');
+    const image = imageDialog.querySelector('img');
+    image.src = original.src;
+    image.alt = original.alt;
+    imageDialog.showModal();
+  });
+});
+imageDialog.querySelector('button').addEventListener('click', () => imageDialog.close());
+imageDialog.addEventListener('click', (event) => {
+  const rect = imageDialog.getBoundingClientRect();
+  if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) imageDialog.close();
+});
+</script></body></html>

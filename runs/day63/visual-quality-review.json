@@ -1,0 +1,35 @@
+{
+  "reviewer": "local source visual and alpha QA",
+  "requirements": [
+    "true-alpha transparent PNG with no rendered checkerboard or opaque background",
+    "wordless Bojji and Despa teaching art with coherent anatomy and food props",
+    "no dumbbell or exercise equipment where the prompt prohibits it",
+    "no badges, icons, arrows, rays, flow lines, thought bubbles, labels, charts or text",
+    "all figures and props fully inside the canvas"
+  ],
+  "technicalChecks": {
+    "checkedWith": ["sips dimensions and hasAlpha", "RGBA alpha bounding-box scan", "individual dark-background inspection", "individual white-background composite inspection"],
+    "result": "All selected source PNGs are non-empty RGBA files with alpha. No selected image contains a rendered checkerboard, opaque canvas, generated text, prohibited marker, duplicate figure or clipped body/prop."
+  },
+  "accepted": [
+    {"file":"cover.png","attempt":2,"source":"runs/day63/image-requests/cover-eb86e17540/attempt-02/cover.png","review":"德斯帕空手划船预备与波吉整理鸡蛋、豆腐、豆类和米饭清楚，无哑铃或包装。"},
+    {"file":"visual-01-eaa.png","attempt":2,"source":"runs/day63/image-requests/visual-01-eaa-bcfb785d28/attempt-02/visual-01-eaa.png","review":"豆腐豆类、鸡蛋和鱼的可辨识食物来源表达必需氨基酸，无悬浮图标。"},
+    {"file":"visual-02-total.png","attempt":2,"source":"runs/day63/image-requests/visual-02-total-2af36ecc5e/attempt-02/visual-02-total.png","review":"三份真实餐食与无负重分腿蹲表达全天总量，无感叹射线或图表。"},
+    {"file":"visual-03-distribution.png","attempt":1,"source":"runs/day63/image-requests/visual-03-distribution-47a76f3c46/attempt-01/visual-03-distribution.png","review":"日内分配动作与餐食关系清楚。"},
+    {"file":"visual-04-sources.png","attempt":1,"source":"runs/day63/image-requests/visual-04-sources-7608e80272/attempt-01/visual-04-sources.png","review":"食物来源与替代选择语义清楚。"},
+    {"file":"overview-01-eaa.png","attempt":1,"source":"runs/day63/image-requests/overview-01-eaa-9544e13e0c/attempt-01/overview-01-eaa.png","review":"独立总览食物来源画面可接受。"},
+    {"file":"overview-02-total.png","attempt":2,"source":"runs/day63/image-requests/overview-02-total-672beb74a9/attempt-02/overview-02-total.png","review":"仅完整两名角色、均衡餐盘和普通长凳，无插图框或天平。"},
+    {"file":"overview-03-distribution.png","attempt":3,"source":"runs/day63/image-requests/overview-03-distribution-c1a29884fa/attempt-03/overview-03-distribution.png","review":"三份餐食自然放置、无连接线，人物、餐桌和靴子均完整留白。"},
+    {"file":"overview-04-sources.png","attempt":1,"source":"runs/day63/image-requests/overview-04-sources-756d740d65/attempt-01/overview-04-sources.png","review":"独立的来源选择场景无标记或文字。"}
+  ],
+  "rejected": [
+    {"file":"cover.png","attempt":1,"reason":"出现哑铃，违反无器械要求。"},
+    {"file":"visual-01-eaa.png","attempt":1,"reason":"出现悬浮拼图/彩色标记。"},
+    {"file":"visual-02-total.png","attempt":1,"reason":"出现黄色感叹射线标记。"},
+    {"file":"overview-02-total.png","attempt":1,"reason":"出现思考泡、天平和迷你人物图示。"},
+    {"file":"overview-03-distribution.png","attempt":1,"reason":"出现弧形连接流程线。"},
+    {"file":"overview-03-distribution.png","attempt":2,"reason":"德斯帕前靴与桌腿被画布底边裁切。"}
+  ],
+  "retriesUsed": 6,
+  "result": "9 项来源素材均通过本地质量审核；所有不合格候选和调整提示词均已保留，没有使用占位图或无关图。"
+}

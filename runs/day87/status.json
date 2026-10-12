@@ -1,0 +1,29 @@
+{
+  "day": 87,
+  "title": "动态动作评估-过顶深蹲与单腿",
+  "status": "awaiting-review",
+  "artifactStatus": "ready-local-draft",
+  "authorization": "用户于2026-09-30授权连续生成至Day110的本地草稿；每张图片首次请求后最多5次经调整提示词重试；不部署。",
+  "imagePlan": "runs/day87/image-prompts.json",
+  "retryPolicy": "每张图片首次请求后，最多5次经调整提示词的重试；成功即停止。",
+  "generated": 11,
+  "planned": 11,
+  "requested": 21,
+  "qualityAccepted": 11,
+  "retriesUsed": 10,
+  "imagesAccepted": true,
+  "sourceQualityReview": "runs/day87/visual-quality-review.json",
+  "verification": {
+    "sharedTests": "passed 17/17",
+    "isolatedPackage": "passed with 7 slides at 1080x1440",
+    "installedPackage": "passed at 320/390/768/1440 with disclosure, flip cards, quizzes, zoom and overflow checks",
+    "finalVisualQA": "accepted after visual review of the cover and all six XHS slides",
+    "zip": "xhs/day87/day87-xhs.zip CRC passed"
+  },
+  "localPreview": {
+    "course": "html/day87-动态动作评估-过顶深蹲与单腿.html",
+    "xhs": "xhs/day87/index.html",
+    "zip": "xhs/day87/day87-xhs.zip"
+  },
+  "nextAction": "等待用户验收本地草稿；批量本地制作授权仍允许继续后续课程，但不得部署、发布或修改正式进度。"
+}

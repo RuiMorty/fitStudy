@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Day 66 · 水合与体液平衡</title><link rel="icon" type="image/svg+xml" href="assets/fitness-study-logo-open-circle.svg?v=a6d8e5caaa61"><style>:root { color-scheme: light; --ink: #111113; --muted: #71717a; --line: #e4e4e7; --accent: #ff5a1f; --green: #0ea66b; --blue: #2563eb; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; font-synthesis: none; letter-spacing: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); overflow-wrap: anywhere; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+img { display: block; max-width: 100%; }
+button:focus-visible, a:focus-visible, summary:focus-visible, input:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
+svg.icon { width: 20px; height: 20px; }
+.icon-button { display: inline-grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 1px solid var(--line); border-radius: 6px; background: white; }
+[hidden] { display: none !important; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
+
+body { background: #f6f8f7; font-size: 14px; line-height: 1.65; }
+main { max-width: 980px; margin: auto; padding: 24px 18px 60px; }
+.header { padding: 22px 4px 14px; }
+h1 { margin: 10px 0 8px; font-size: 36px; line-height: 1.2; }
+h1::before { content: ""; display: block; width: 34px; height: 4px; background: var(--accent); margin-bottom: 10px; }
+h2 { font-size: 17px; margin: 0 0 14px; }
+h3 { font-size: 16px; margin: 0 0 8px; }
+.sub { color: var(--muted); margin: 5px 0 18px; }
+.meta { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { display: inline-block; border: 1px solid var(--line); border-radius: 20px; background: white; color: var(--muted); padding: 3px 10px; font-size: 12px; font-weight: 600; }
+.chip:nth-child(1) { background: #e2f7eb; color: #15803d; border-color: transparent; }
+.chip:nth-child(2) { background: #e7f0fe; color: #2563eb; border-color: transparent; }
+.chip:nth-child(3) { background: #fff2e5; color: #9a4c05; border-color: transparent; }
+.panel, .figure, .warn, .mnemonic { background: white; border: 1px solid #e2e8e4; border-radius: 14px; box-shadow: 0 2px 12px rgba(20,40,30,.06); padding: 20px; margin: 16px 0; }
+.green { border-left: 5px solid var(--green); }
+.orange { border-left: 5px solid #ea7a17; }
+.blue { border-left: 5px solid #0ea5e9; }
+.takeaway { margin: 0; }
+.figure { text-align: center; }
+.figure button { display: block; position: relative; width: 100%; border: 0; padding: 0; background: white; cursor: zoom-in; }
+.figure img { max-height: 760px; width: 100%; object-fit: contain; }
+.figure .icon-button { position: absolute; bottom: 8px; right: 8px; background: #ffffffed; }
+.caption { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
+.kp { list-style: none; padding: 0; margin: 0; }
+.kp > li { border-bottom: 1px dashed #e2e8e4; }
+.kp > li:last-child { border-bottom: 0; }
+.kp summary { cursor: pointer; padding: 13px 8px; font-weight: 650; }
+.kp summary::marker { color: var(--green); }
+.term { color: #0a7d52; background: #e2f7eb; border-radius: 6px; padding: 1px 5px; }
+.kp-body { padding: 2px 14px 16px 24px; }
+.detail-block { margin: 12px 0; }
+.detail-block h4 { font-size: 13px; color: #08744d; margin: 0 0 4px; }
+.detail-block p { margin: 0; white-space: pre-line; }
+.warn { border-left: 5px solid #e23b3b; background: #fffafa; }
+.warn p { margin: 8px 0; }
+.misconception { color: #a82b32; }
+.mnemonic { border-left: 4px solid var(--accent); box-shadow: none; }
+.mnemonic strong { color: #df4716; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+.flip { height: 168px; perspective: 900px; border: 0; background: transparent; padding: 0; text-align: center; }
+.flip-in { display: block; height: 100%; position: relative; transition: transform .45s; transform-style: preserve-3d; }
+.flip[aria-pressed="true"] .flip-in { transform: rotateY(180deg); }
+.face { position: absolute; inset: 0; backface-visibility: hidden; border: 1px solid var(--line); border-radius: 10px; padding: 15px; background: #fafafa; display: flex; align-items: center; justify-content: center; overflow-y: auto; }
+.back { transform: rotateY(180deg); background: #eef9f4; color: #075e40; border-color: #c8eadb; }
+.practice { padding-left: 20px; }
+.practice li { margin: 7px 0; }
+.question { border-top: 1px solid #e2e8e4; padding: 20px 0 8px; margin-top: 12px; min-width: 0; }
+.options { display: grid; gap: 7px; margin: 10px 0; }
+.option { display: flex; gap: 10px; align-items: baseline; border: 1px solid #e2e8e4; background: #f0f4f2; padding: 9px 12px; border-radius: 8px; cursor: pointer; }
+.option input { flex-shrink: 0; accent-color: var(--green); }
+.option:has(input:checked) { border-color: #0ea5e9; background: #e7f6fd; }
+.question[data-result="correct"] .option:has(input:checked) { border-color: #0ea66b; background: #e7f8ef; }
+.question[data-result="wrong"] .option:has(input:checked) { border-color: #e23b3b; background: #fff0f0; }
+.answer { background: #f8fbfa; border-left: 3px solid #0ea5e9; padding: 10px; margin-top: 10px; }
+.check { border: 0; background: #0ea66b; color: white; padding: 9px 14px; border-radius: 7px; }
+footer { color: var(--muted); font-size: 12px; margin-top: 28px; }
+footer ul { padding-left: 20px; }
+dialog { width: min(1200px, 96vw); max-height: 94dvh; padding: 52px 16px 16px; border: 0; border-radius: 8px; background: white; }
+dialog::backdrop { background: #15191dd9; }
+dialog img { width: 100%; max-height: 78dvh; object-fit: contain; }
+dialog .icon-button { position: absolute; top: 8px; right: 10px; }
+@media (max-width: 600px) {
+  main { padding: 16px 12px 40px; }
+  h1 { font-size: 26px; }
+  .header { padding: 16px 4px 12px; }
+  .panel, .figure, .warn, .mnemonic { padding: 15px; }
+  .kp-body { padding-left: 16px; }
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .face { padding: 12px; }
+}
+</style></head><body><main><header class="header"><h1>Day 66 · 水合与体液平衡</h1><p class="sub">用训练环境、出汗量、体重变化和胃肠耐受度校准补液，不把固定毫升数当作人人处方。</p><div class="meta"><span class="chip">出汗率</span><span class="chip">电解质</span><span class="chip">热环境</span></div></header><section class="panel green"><h2>一句话总结</h2><p class="takeaway">体液平衡会受天气、湿度、衣着、运动强度、出汗率、饮食和个体差异影响。脱水达到一定程度会影响部分人的耐力、热调节和主观用力感，但不能只用一个百分比替代个人观察。运动前、中、后补液应以日常充分饮水为基础，结合训练时长、出汗、体重变化和胃肠耐受度调整；长时大量出汗时还要考虑钠等电解质，避免过量纯水造成低钠血症。</p></section><figure class="figure"><button data-zoom aria-label="放大详情图"><img class="" src="assets/阶段4营养恢复/day66-水合与体液平衡.png" alt="水合与体液平衡四主题中文总览"><span class="icon-button"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 15 6 6" /><path d="m15 9 6-6" /><path d="M21 16v5h-5" /><path d="M21 8V3h-5" /><path d="M3 16v5h5" /><path d="m3 21 6-6" /><path d="M3 8V3h5" /><path d="M9 9 3 3" /></svg></span></button><figcaption class="caption">水合策略要匹配个人出汗、运动时长、天气、衣着和耐受度；既要防脱水，也要避免过量饮水导致低钠血症。</figcaption></figure><section class="panel"><h2>核心要点</h2><ul class="kp"><li><details><summary><span class="term">体液平衡：出汗量高度个体化</span>：同样训练，出汗量会随环境、衣着、适应程度、体型和强度明显变化；不能直接照搬他人的水壶容量。</summary><div class="kp-body"><section class="detail-block"><h4>脱水影响不只在口渴</h4><p>出汗造成的体液损失会影响血容量、热调节和部分运动表现。常被提及的约2%体重变化是观察提示，不是每个人同一时间点都会出现同样表现；口渴、尿色、头晕、心率、环境和训练输出都应放在一起看。</p></section><section class="detail-block"><h4>建立个人基线</h4><p>先把日常饮水和正餐做好，再在相近环境下观察训练前后体重、饮水量、运动时长和主观感受。一次数据不等于永久出汗率；天气、训练、月经周期、疾病和衣着变化后都可能需要重新校准。</p></section></div></details></li><li><details><summary><span class="term">运动前中后：用范围起步，用反馈调整</span>：常见建议可作为起点，例如运动前数小时补液、运动中分次饮用、运动后根据体重变化恢复，但不应变成强迫喝水任务。</summary><div class="kp-body"><section class="detail-block"><h4>前：不要带着明显缺水开练</h4><p>训练前数小时可通过正餐、饮水和需要时的少量补液让身体有准备。具体毫升数要结合体重、天气、是否已进餐和个体耐受；临近开始猛灌可能造成胃胀，不能取代平时的水合习惯。</p></section><section class="detail-block"><h4>中后：分次补、复盘补</h4><p>运动中常以小口分次饮用更易耐受；长时、高温或大量出汗时更需提前计划。运动后可用体重变化、口渴、尿量和下一次训练间隔指导补液；“每减1公斤补固定量”只是粗略起点，不能忽视食物、水分和个体胃肠承受。</p></section></div></details></li><li><details><summary><span class="term">电解质：钠是长时出汗策略的一部分</span>：汗液会丢失钠及少量其他电解质；长时、大量出汗或高温环境下，单靠过量纯水可能稀释血钠。</summary><div class="kp-body"><section class="detail-block"><h4>何时更该关注钠</h4><p>短时普通训练多数人通过日常饮食和按需饮水即可满足。持续数小时、炎热环境、大量出汗、重复赛事或衣物闷热时，可在饮食、饮料或运动补给中考虑钠的来源；具体量需结合出汗、病史和专业建议。</p></section><section class="detail-block"><h4>低钠血症不是“多喝更安全”</h4><p>运动相关低钠血症可因过量低钠液体摄入而发生。头痛、恶心、呕吐、意识混乱、异常乏力、抽搐或呼吸问题属于紧急警示，应立即停止运动并寻求急救；不要在不适时继续强迫喝大量白水。</p></section></div></details></li><li><details><summary><span class="term">热环境与安全：补液只是计划的一部分</span>：高温高湿会增加热负荷；补液要配合适应、配速、遮阳、衣着、休息和对危险症状的快速反应。</summary><div class="kp-body"><section class="detail-block"><h4>热适应要渐进</h4><p>初次热天训练、休病后回归或突然增加强度时，身体尚未适应热负荷。应降低时长和强度、安排阴凉休息、穿透气衣物，并在有人陪同或可获得帮助的条件下训练；补更多水不能抵消过快加量。</p></section><section class="detail-block"><h4>识别红旗</h4><p>意识改变、昏厥、持续头晕、胸痛、呼吸困难、皮肤异常灼热、停止出汗并不适等，可能与严重热相关疾病或其他急症有关。应停止训练、转移至安全环境并寻求紧急医疗帮助，不要靠继续饮水或意志硬撑。</p></section></div></details></li></ul></section><section class="warn"><h2>常见误区</h2><p><strong class="misconception">误区：所有人每天和训练中都该喝同一个固定毫升数。</strong><br>辨析：出汗、环境、时长、体型和耐受差异很大，应以范围起步并用个人反馈调整。</p><p><strong class="misconception">误区：口渴以外的体重、环境和训练感受都没意义。</strong><br>辨析：口渴有价值，但训练中的体液判断要结合体重变化、天气、时长、输出和症状。</p><p><strong class="misconception">误区：长时出汗时喝越多纯水越安全。</strong><br>辨析：过量低钠液体可能导致低钠血症；长时高汗量情境要同时考虑钠、补液速度与症状。</p><p><strong class="misconception">误区：热天只要多喝水，就能照常加量训练。</strong><br>辨析：热适应、配速、衣着、阴凉休息和危险症状识别同样必要，补液不能抵消过度热负荷。</p></section><section class="mnemonic"><h2>记忆口诀</h2><p><strong>先有日常水合，训练分次补；看汗看环境，防脱也防低钠。</strong></p></section><section class="panel"><h2>翻转卡复习</h2><div class="cards"><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">出汗率为何不能照搬他人？</span><span class="face back" aria-hidden="true">它会受环境、衣着、强度、体型和个体差异影响。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">约2%体重变化的意义？</span><span class="face back" aria-hidden="true">可作为观察提示，但不是替代个人判断的统一阈值。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">运动中补液的常用原则？</span><span class="face back" aria-hidden="true">小口分次、结合时长和耐受度，而非强迫一次灌大量。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">何时更关注钠补给？</span><span class="face back" aria-hidden="true">长时、高温、大量出汗、重复赛事等情境。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">什么是低钠血症风险？</span><span class="face back" aria-hidden="true">过量低钠液体可能稀释血钠，出现严重症状需紧急就医。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">热天安全只靠补水吗？</span><span class="face back" aria-hidden="true">不是；还需渐进适应、配速、衣着、休息和红旗识别。</span></span></button></div></section><section class="panel orange"><h2>实操关联</h2><ul class="practice"><li>在一次相近环境的训练中，记录训练前后体重、饮水量、时长、天气和主观感受；只把它当作下一次的粗略参考。</li><li>为夏季训练准备分次饮用的水和可获得的阴凉休息点，不用临近训练猛灌来补平时的饮水不足。</li><li>若训练持续时间长、出汗明显或环境闷热，提前在日常饮食和训练补给中考虑钠来源，并根据个人病史咨询专业人员。</li><li>和训练伙伴约定热相关红旗：意识改变、昏厥、胸痛、持续头晕或异常不适时立即停止并寻求帮助。</li></ul></section><section class="panel blue"><h2>练习题</h2><section class="question" data-answers="[1]" data-explanation="水合高度个体化。固定数值可作粗略参考，但不能替代个人训练和环境反馈。"><h3>1. 单选：最合理的水合策略起点是什么？</h3><div class="options"><label class="option"><input type="radio" name="question-0" value="0"><span>A. 照搬网红固定毫升数</span></label><label class="option"><input type="radio" name="question-0" value="1"><span>B. 建立日常水合，并结合出汗、环境、时长和耐受度调整</span></label><label class="option"><input type="radio" name="question-0" value="2"><span>C. 训练前一次喝完全天用水</span></label><label class="option"><input type="radio" name="question-0" value="3"><span>D. 只看尿色不看训练</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[2]" data-explanation="长时大量出汗时需要兼顾脱水和过量纯水风险；具体策略要结合个人情况。"><h3>2. 单选：长时高温训练中，关于饮水哪项正确？</h3><div class="options"><label class="option"><input type="radio" name="question-1" value="0"><span>A. 越多纯水越安全</span></label><label class="option"><input type="radio" name="question-1" value="1"><span>B. 无需考虑出汗和钠</span></label><label class="option"><input type="radio" name="question-1" value="2"><span>C. 应分次补液，并在高汗量情境考虑电解质和症状</span></label><label class="option"><input type="radio" name="question-1" value="3"><span>D. 只要不口渴就绝不喝</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[0,1,2,4]" data-explanation="严重神经、心肺或持续不适症状可能提示热相关急症或其他问题，应停止训练并及时求助。"><h3>3. 多选：哪些表现属于应停止训练并寻求紧急帮助的警示？</h3><div class="options"><label class="option"><input type="checkbox" name="question-2" value="0"><span>A. 意识混乱或昏厥</span></label><label class="option"><input type="checkbox" name="question-2" value="1"><span>B. 胸痛或呼吸困难</span></label><label class="option"><input type="checkbox" name="question-2" value="2"><span>C. 持续头晕和异常不适</span></label><label class="option"><input type="checkbox" name="question-2" value="3"><span>D. 一次正常出汗</span></label><label class="option"><input type="checkbox" name="question-2" value="4"><span>E. 抽搐或反复呕吐</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[1]" data-explanation="头痛、恶心和明显体液变化需要谨慎处理。过量纯水可能加重低钠风险；严重或持续症状应寻求医疗帮助。"><h3>4. 案例：小郭在闷热天气跑两小时，结束后体重下降明显且头痛恶心。他准备立刻连续灌大量纯水。更合适的是？</h3><div class="options"><label class="option"><input type="radio" name="question-3" value="0"><span>A. 继续强迫灌水并独自休息</span></label><label class="option"><input type="radio" name="question-3" value="1"><span>B. 先停止运动、转移阴凉处，评估症状并按严重程度及时求助；不要用过量纯水硬处理</span></label><label class="option"><input type="radio" name="question-3" value="2"><span>C. 再跑十分钟排汗</span></label><label class="option"><input type="radio" name="question-3" value="3"><span>D. 只吃高脂食物</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section></section><footer>Day 66/110<ul><li>ACSM：Exercise and Fluid Replacement Position Stand，运动前中后补液、出汗率与低钠血症风险原则。</li><li>National Athletic Trainers&#39; Association：Fluid Replacement for Athletes，热环境、个体化补液和运动相关低钠血症安全提示。</li><li>ACSM：ACSM&#39;s Guidelines for Exercise Testing and Prescription，第11版，热相关疾病与运动停止警示。</li><li>本课为一般运动营养教育；心脏、肾脏、肝脏或内分泌疾病、利尿剂等药物使用者需遵循医疗建议。意识改变、昏厥、胸痛、呼吸困难、抽搐或持续呕吐应紧急求助。</li></ul></footer></main><dialog aria-label="详情大图"><button class="icon-button" aria-label="关闭大图" title="关闭大图"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></button><img alt=""></dialog><script>document.querySelectorAll('.flip').forEach((button) => {
+  button.addEventListener('click', () => {
+    const pressed = button.getAttribute('aria-pressed') !== 'true';
+    button.setAttribute('aria-pressed', String(pressed));
+    button.querySelector('.front').setAttribute('aria-hidden', String(pressed));
+    button.querySelector('.back').setAttribute('aria-hidden', String(!pressed));
+  });
+});
+document.querySelectorAll('.question').forEach((question) => {
+  question.querySelector('.check').addEventListener('click', () => {
+    const selected = [...question.querySelectorAll('input:checked')].map((input) => Number(input.value)).sort();
+    const answer = question.querySelector('.answer');
+    answer.hidden = false;
+    if (!selected.length) { answer.textContent = '请先选择答案。'; delete question.dataset.result; return; }
+    const correct = JSON.stringify(selected) === JSON.stringify(JSON.parse(question.dataset.answers).sort());
+    question.dataset.result = correct ? 'correct' : 'wrong';
+    answer.textContent = `${correct ? '回答正确。' : '再想一想。'}${question.dataset.explanation}`;
+  });
+});
+const imageDialog = document.querySelector('dialog');
+document.querySelectorAll('[data-zoom]').forEach((button) => {
+  button.addEventListener('click', () => {
+    const original = button.querySelector('img');
+    const image = imageDialog.querySelector('img');
+    image.src = original.src;
+    image.alt = original.alt;
+    imageDialog.showModal();
+  });
+});
+imageDialog.querySelector('button').addEventListener('click', () => imageDialog.close());
+imageDialog.addEventListener('click', (event) => {
+  const rect = imageDialog.getBoundingClientRect();
+  if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) imageDialog.close();
+});
+</script></body></html>

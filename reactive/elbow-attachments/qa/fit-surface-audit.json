@@ -1,0 +1,90 @@
+{
+  "scope": "Triangle-centroid sagittal envelope intrusion within z=55\u2013173mm. A directional geometric diagnostic, not a complete collision or anatomy validation.",
+  "rows": [
+    {
+      "angle": 0,
+      "muscle": "muscle_biceps_long_R",
+      "testedCentroids": 2834,
+      "maxAnteriorEnvelopeIntrusionMm": 0,
+      "over1mm": 0,
+      "over2mm": 0
+    },
+    {
+      "angle": 0,
+      "muscle": "muscle_biceps_short_R",
+      "testedCentroids": 1663,
+      "maxAnteriorEnvelopeIntrusionMm": 0,
+      "over1mm": 0,
+      "over2mm": 0
+    },
+    {
+      "angle": 30,
+      "muscle": "muscle_biceps_long_R",
+      "testedCentroids": 3134,
+      "maxAnteriorEnvelopeIntrusionMm": 0,
+      "over1mm": 0,
+      "over2mm": 0
+    },
+    {
+      "angle": 30,
+      "muscle": "muscle_biceps_short_R",
+      "testedCentroids": 1962,
+      "maxAnteriorEnvelopeIntrusionMm": 0.09195692837238312,
+      "over1mm": 0,
+      "over2mm": 0
+    },
+    {
+      "angle": 60,
+      "muscle": "muscle_biceps_long_R",
+      "testedCentroids": 3655,
+      "maxAnteriorEnvelopeIntrusionMm": 0.509629026055336,
+      "over1mm": 0,
+      "over2mm": 0
+    },
+    {
+      "angle": 60,
+      "muscle": "muscle_biceps_short_R",
+      "testedCentroids": 2560,
+      "maxAnteriorEnvelopeIntrusionMm": 0.5245134234428406,
+      "over1mm": 0,
+      "over2mm": 0
+    },
+    {
+      "angle": 90,
+      "muscle": "muscle_biceps_long_R",
+      "testedCentroids": 3623,
+      "maxAnteriorEnvelopeIntrusionMm": 0,
+      "over1mm": 0,
+      "over2mm": 0
+    },
+    {
+      "angle": 90,
+      "muscle": "muscle_biceps_short_R",
+      "testedCentroids": 2761,
+      "maxAnteriorEnvelopeIntrusionMm": 0.7338114082813263,
+      "over1mm": 0,
+      "over2mm": 0
+    },
+    {
+      "angle": 120,
+      "muscle": "muscle_biceps_long_R",
+      "testedCentroids": 3485,
+      "maxAnteriorEnvelopeIntrusionMm": 0,
+      "over1mm": 0,
+      "over2mm": 0
+    },
+    {
+      "angle": 120,
+      "muscle": "muscle_biceps_short_R",
+      "testedCentroids": 2796,
+      "maxAnteriorEnvelopeIntrusionMm": 1.010902225971222,
+      "over1mm": 1,
+      "over2mm": 0
+    }
+  ],
+  "checks": {
+    "enough_surface_samples": true,
+    "no_sampled_centroid_intrusion_above_2mm": true
+  },
+  "status": "passed"
+}

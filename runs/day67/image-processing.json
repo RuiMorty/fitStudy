@@ -1,0 +1,357 @@
+{
+  "processedAt": "2026-09-30T14:44:18.483536+00:00",
+  "method": "trim near-transparent noise; reviewed crop; uniform scale; transparent margin",
+  "assets": [
+    {
+      "source": "runs/day67/source/cover.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "sourceSha256": "9ce11a2b10dc589664bb229333be6a37271459b5f74bec2ed3ea8c256c8d7b41",
+      "reviewedCrop": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "visibleCrop": [
+        261,
+        35,
+        1500,
+        906
+      ],
+      "output": "runs/day67/assets/cover.png",
+      "size": [
+        1600,
+        900
+      ],
+      "subjectSize": [
+        1127,
+        792
+      ],
+      "offset": [
+        236,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "无字封面"
+    },
+    {
+      "source": "runs/day67/source/visual-01-balance.png",
+      "sourceSize": [
+        2211,
+        711
+      ],
+      "sourceSha256": "11504c809873e15b5424b2333858d93745a864925985087d71f95be22fa68f98",
+      "reviewedCrop": [
+        0,
+        0,
+        2211,
+        711
+      ],
+      "visibleCrop": [
+        22,
+        8,
+        2188,
+        688
+      ],
+      "output": "runs/day67/assets/visual-01-balance.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        2166,
+        680
+      ],
+      "offset": [
+        317,
+        110
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "小红书独立知识页，无字"
+    },
+    {
+      "source": "runs/day67/source/visual-02-tdee.png",
+      "sourceSize": [
+        2210,
+        711
+      ],
+      "sourceSha256": "e86b8961c84e401ac6e58f15efe352517a3ff37166c0e6a414551a5bed38ba19",
+      "reviewedCrop": [
+        0,
+        0,
+        2210,
+        711
+      ],
+      "visibleCrop": [
+        611,
+        21,
+        1656,
+        683
+      ],
+      "output": "runs/day67/assets/visual-02-tdee.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1045,
+        662
+      ],
+      "offset": [
+        877,
+        119
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "小红书独立知识页，无字"
+    },
+    {
+      "source": "runs/day67/source/visual-03-preserve.png",
+      "sourceSize": [
+        2212,
+        711
+      ],
+      "sourceSha256": "4a6ce70de70570cdcc687ed878925cc42706210ff0c647c8e18573fa4252e719",
+      "reviewedCrop": [
+        0,
+        0,
+        2212,
+        711
+      ],
+      "visibleCrop": [
+        720,
+        61,
+        1485,
+        638
+      ],
+      "output": "runs/day67/assets/visual-03-preserve.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        765,
+        577
+      ],
+      "offset": [
+        1017,
+        161
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "小红书独立知识页，无字"
+    },
+    {
+      "source": "runs/day67/source/visual-04-boundary.png",
+      "sourceSize": [
+        2212,
+        711
+      ],
+      "sourceSha256": "30c8c3df41b4d072a18e8823ead2bb086c0a29e53aab34415dee868c92d94f2b",
+      "reviewedCrop": [
+        0,
+        0,
+        2212,
+        711
+      ],
+      "visibleCrop": [
+        624,
+        38,
+        1639,
+        628
+      ],
+      "output": "runs/day67/assets/visual-04-boundary.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1015,
+        590
+      ],
+      "offset": [
+        892,
+        155
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "小红书独立知识页，无字"
+    },
+    {
+      "source": "runs/day67/source/overview-01-balance.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "87c0c42be408cffc9c7170d3c9df656cae0ad3b4aed61d7f7c0dbf8e24b13a11",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        209,
+        61,
+        1223,
+        959
+      ],
+      "output": "runs/day67/assets/overview-01-balance.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1014,
+        898
+      ],
+      "offset": [
+        293,
+        151
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day67/source/overview-02-tdee.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "e8912acfa64555dca8eda251bed08a7886ea03673766eff30e4d4a4b0aa571b9",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        400,
+        91,
+        1104,
+        995
+      ],
+      "output": "runs/day67/assets/overview-02-tdee.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        704,
+        904
+      ],
+      "offset": [
+        448,
+        148
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day67/source/overview-03-preserve.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "9a681e20d3c8a6522a5ec930d44162a76a380620fcc4a2cd5fa523db7676334e",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        116,
+        114,
+        1292,
+        949
+      ],
+      "output": "runs/day67/assets/overview-03-preserve.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1176,
+        835
+      ],
+      "offset": [
+        212,
+        182
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day67/source/overview-04-boundary.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "f19a95af78828f6066e349b15d7c7cbe3223264e477d7cdfff57c45d737b390a",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        237,
+        111,
+        1258,
+        958
+      ],
+      "output": "runs/day67/assets/overview-04-boundary.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1021,
+        847
+      ],
+      "offset": [
+        289,
+        176
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    }
+  ]
+}

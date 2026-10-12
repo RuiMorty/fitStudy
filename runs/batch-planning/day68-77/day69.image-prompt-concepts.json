@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "status": "planning-only-no-generation-request",
+  "day": 69,
+  "lesson": "肌肥大与减脂专项营养",
+  "styleReference": "templates/study/v1/image-style.json",
+  "commonRequirements": [
+    "固定波吉与德斯帕、二维动漫教学画法、深灰细轮廓和平涂；每张只出现两位固定角色，不出现其他人。",
+    "输出真实透明PNG；未绘制区域alpha为0，保留两人服装中的不透明白色；没有底板、秤、地板、边框、影子、水印或品牌。",
+    "所有AI图无文字、数字、热量、体重、前后对比、箭头、图表、可读屏幕或补剂品牌；中文内容由后续共用模板排版。",
+    "拒绝体型羞辱、夸张肌肉或极端节食画面；用普通餐盘、训练道具和稳定姿态表达长期管理。"
+  ],
+  "assets": [
+    {"file": "cover.png", "role": "cover", "targetSize": [1600, 900], "topic": "增肌与减脂的长期营养管理", "teachingRelationship": "普通餐、抗阻训练和恢复共同服务不同目标", "composition": "横向16:9，德斯帕站在小哑铃与无字普通餐盘之间，波吉做轻松深蹲准备；不出现体重秤或体型比较", "allowedText": "none", "anatomyAndTechniqueConstraints": "深蹲为无负荷浅蹲、膝盖与脚尖自然对线；不用夸张肌肉。"},
+    {"file": "visual-01-energy.png", "role": "knowledge", "targetSize": [2800, 900], "topic": "小幅能量调整", "teachingRelationship": "目标不同，但都以连续趋势和训练恢复为依据", "composition": "横向28:9，德斯帕把两份大小略有不同的无字普通餐盘放在小桌两侧，波吉在中间做开放手势；没有数字、秤或对比体型", "allowedText": "none", "anatomyAndTechniqueConstraints": "表达选择而非好坏，食物完整无包装。"},
+    {"file": "visual-02-protein.png", "role": "knowledge", "targetSize": [2800, 900], "topic": "蛋白质分配", "teachingRelationship": "蛋白来源分散到多次正常进食，而非依赖一杯补充品", "composition": "横向28:9，波吉与德斯帕面对三件无字普通食物道具（如豆类、鸡蛋、奶杯），均衡摆放", "allowedText": "none", "anatomyAndTechniqueConstraints": "不画药丸、补剂罐、克数或医疗饮食。"},
+    {"file": "visual-03-retention.png", "role": "knowledge", "targetSize": [2800, 900], "topic": "减脂期保留训练与恢复", "teachingRelationship": "轻量抗阻、正常进食与休息一起支持保留表现", "composition": "横向28:9，德斯帕用轻哑铃做站姿划船，波吉在旁坐于长凳喝水并做开放手势；无体型前后对比", "allowedText": "none", "anatomyAndTechniqueConstraints": "划船时躯干中立、哑铃贴近身体且动作稳定；不表现力竭或脱水。"},
+    {"file": "visual-04-fit.png", "role": "knowledge", "targetSize": [2800, 900], "topic": "饮食方式适配", "teachingRelationship": "不同食物组合都要能支持营养、训练和生活", "composition": "横向28:9，德斯帕和波吉面向两组普通无字食物组合，采用平等并列而非对抗；不画标签或禁忌符号", "allowedText": "none", "anatomyAndTechniqueConstraints": "不把任一食物表现为魔法或有害，不出现宗教、医学或品牌标记。"},
+    {"file": "overview-01-energy.png", "role": "overview-item", "targetSize": [1600, 1200], "topic": "能量方向", "teachingRelationship": "小幅、可观察的调整", "composition": "4:3总览专用，德斯帕在两份普通餐盘旁做平衡手势，波吉观察", "allowedText": "none", "anatomyAndTechniqueConstraints": "不与知识页复用；无数字、秤或体型比较。"},
+    {"file": "overview-02-protein.png", "role": "overview-item", "targetSize": [1600, 1200], "topic": "蛋白分配", "teachingRelationship": "全天多餐共同贡献", "composition": "4:3总览专用，波吉面对三件普通无字蛋白食物道具，德斯帕提示", "allowedText": "none", "anatomyAndTechniqueConstraints": "不与知识页复用；无补剂品牌或剂量。"},
+    {"file": "overview-03-retention.png", "role": "overview-item", "targetSize": [1600, 1200], "topic": "保肌恢复", "teachingRelationship": "抗阻与休息留在减脂计划", "composition": "4:3总览专用，德斯帕做轻量站姿划船，波吉坐在长凳旁喝水", "allowedText": "none", "anatomyAndTechniqueConstraints": "不与知识页复用；动作稳定、不表现极端疲劳。"},
+    {"file": "overview-04-fit.png", "role": "overview-item", "targetSize": [1600, 1200], "topic": "饮食适配", "teachingRelationship": "选择应能融入生活", "composition": "4:3总览专用，两人坐在小桌前面对两组普通无字食物组合", "allowedText": "none", "anatomyAndTechniqueConstraints": "不与知识页复用；食物无标签，无优劣符号。"}
+  ]
+}

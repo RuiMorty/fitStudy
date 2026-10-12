@@ -1,0 +1,50 @@
+{
+  "commonPrompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, a cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, a rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper background, loose paper sheets, border, sticker edge, shadow, or halo. A small unmarked rigid evidence card is allowed as a prop. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.",
+  "assets": [
+    {
+      "file": "cover.png",
+      "role": "cover",
+      "prompt": "Wide 16:9 wordless single-scene teaching illustration. Despa and Bojji each hold two small blank rigid practice cards at chest height with calm open hands, showing an organized but low-pressure original-practice baseline. No timer, tray, table, floor, room, paper sheets, screen or extra props. Exactly one Bojji and exactly one Despa appear, both with full bodies visible. Use one continuous teaching moment only, never duplicate figures, alternate poses, sequence frames, motion trails, text, arrows or readable cards."
+    },
+    {
+      "file": "visual-01-original-baseline.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene teaching illustration. Despa holds one small blank rigid practice card while Bojji holds a distinct second blank rigid card; a visible gap between the two cards shows separate original sets without comparing scores. No tray, table, floor, room, paper sheet, book, timer, screen or extra props. Exactly one Bojji and exactly one Despa appear, both with full bodies visible. Use one continuous teaching moment only, never duplicate figures, alternate poses, sequence frames, motion trails, text, arrows or readable cards."
+    },
+    {
+      "file": "visual-02-four-metrics.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene teaching illustration. Despa supports four small unmarked rigid tiles in one open palm while Bojji looks attentively from beside him; the tiles are a compact neutral cluster, not a chart or score display. No tray, table, floor, room, paper sheet, screen, marker, arrow or extra props. Exactly one Bojji and exactly one Despa appear, both with full bodies visible. Use one continuous teaching moment only, never duplicate figures, alternate poses, sequence frames, motion trails, text, arrows or readable cards."
+    },
+    {
+      "file": "visual-03-error-card.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene teaching illustration. Despa holds one blank rigid reflection card in an open hand while Bojji holds one small closed unmarked reference book at chest height; their calm exchange shows reviewing an error source without revealing content. No table, floor, room, paper sheets, colored corner marker, screen or extra props. Exactly one Bojji and exactly one Despa appear, both with full bodies visible. Use one continuous teaching moment only, never duplicate figures, alternate poses, sequence frames, motion trails, text, arrows or readable cards."
+    },
+    {
+      "file": "visual-04-three-weaknesses.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene teaching illustration. Bojji holds exactly three small blank rigid cards in a compact fan while Despa gives a calm open-hand acknowledgment, showing a focused small review plan. No box, tray, table, floor, room, paper sheets, score cue or extra props. Exactly one Bojji and exactly one Despa appear, both with full bodies visible. Use one continuous teaching moment only, never duplicate figures, alternate poses, sequence frames, motion trails, text, arrows or readable cards."
+    },
+    {
+      "file": "overview-01-original-baseline.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Bojji offers one blank rigid practice card toward Despa, who holds a second distinct blank card at chest height; their standing composition shows two separate original sets. No tray, table, floor, room, paper sheet, book, timer, screen or extra props. This must be visually distinct from the knowledge-page composition. Exactly one Bojji and exactly one Despa appear, both with full bodies visible. Use one continuous teaching moment only, never duplicate figures, alternate poses, sequence frames, motion trails, text, arrows or readable cards."
+    },
+    {
+      "file": "overview-02-four-metrics.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Bojji holds four small unmarked rigid tiles in two open hands while Despa points with an open palm from a respectful distance; the tiles remain a neutral compact cluster, not a chart or score display. No tray, table, floor, room, paper sheet, screen, marker, arrow or extra props. This must be visually distinct from the knowledge-page composition. Exactly one Bojji and exactly one Despa appear, both with full bodies visible. Use one continuous teaching moment only, never duplicate figures, alternate poses, sequence frames, motion trails, text, arrows or readable cards."
+    },
+    {
+      "file": "overview-03-error-card.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Bojji holds a small closed unmarked reference book at chest height while Despa gives a calm open-hand review gesture beside one blank rigid card. No table, floor, room, paper sheets, colored corner marker, screen or extra props. This must be visually distinct from the knowledge-page composition. Exactly one Bojji and exactly one Despa appear, both with full bodies visible. Use one continuous teaching moment only, never duplicate figures, alternate poses, sequence frames, motion trails, text, arrows or readable cards."
+    },
+    {
+      "file": "overview-04-three-weaknesses.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Despa holds exactly three small blank rigid cards in a compact fan while Bojji gives a calm open-palm acknowledgement, showing a focused limited review plan. No box, tray, table, floor, room, paper sheets, score cue or extra props. This must be visually distinct from the knowledge-page composition. Exactly one Bojji and exactly one Despa appear, both with full bodies visible. Use one continuous teaching moment only, never duplicate figures, alternate poses, sequence frames, motion trails, text, arrows or readable cards."
+    }
+  ]
+}

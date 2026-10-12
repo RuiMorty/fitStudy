@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Day 81 · NASM OPT模型总览</title><link rel="icon" type="image/svg+xml" href="assets/fitness-study-logo-open-circle.svg?v=a6d8e5caaa61"><style>:root { color-scheme: light; --ink: #111113; --muted: #71717a; --line: #e4e4e7; --accent: #ff5a1f; --green: #0ea66b; --blue: #2563eb; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; font-synthesis: none; letter-spacing: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); overflow-wrap: anywhere; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+img { display: block; max-width: 100%; }
+button:focus-visible, a:focus-visible, summary:focus-visible, input:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
+svg.icon { width: 20px; height: 20px; }
+.icon-button { display: inline-grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 1px solid var(--line); border-radius: 6px; background: white; }
+[hidden] { display: none !important; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
+
+body { background: #f6f8f7; font-size: 14px; line-height: 1.65; }
+main { max-width: 980px; margin: auto; padding: 24px 18px 60px; }
+.header { padding: 22px 4px 14px; }
+h1 { margin: 10px 0 8px; font-size: 36px; line-height: 1.2; }
+h1::before { content: ""; display: block; width: 34px; height: 4px; background: var(--accent); margin-bottom: 10px; }
+h2 { font-size: 17px; margin: 0 0 14px; }
+h3 { font-size: 16px; margin: 0 0 8px; }
+.sub { color: var(--muted); margin: 5px 0 18px; }
+.meta { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { display: inline-block; border: 1px solid var(--line); border-radius: 20px; background: white; color: var(--muted); padding: 3px 10px; font-size: 12px; font-weight: 600; }
+.chip:nth-child(1) { background: #e2f7eb; color: #15803d; border-color: transparent; }
+.chip:nth-child(2) { background: #e7f0fe; color: #2563eb; border-color: transparent; }
+.chip:nth-child(3) { background: #fff2e5; color: #9a4c05; border-color: transparent; }
+.panel, .figure, .warn, .mnemonic { background: white; border: 1px solid #e2e8e4; border-radius: 14px; box-shadow: 0 2px 12px rgba(20,40,30,.06); padding: 20px; margin: 16px 0; }
+.green { border-left: 5px solid var(--green); }
+.orange { border-left: 5px solid #ea7a17; }
+.blue { border-left: 5px solid #0ea5e9; }
+.takeaway { margin: 0; }
+.figure { text-align: center; }
+.figure button { display: block; position: relative; width: 100%; border: 0; padding: 0; background: white; cursor: zoom-in; }
+.figure img { max-height: 760px; width: 100%; object-fit: contain; }
+.figure .icon-button { position: absolute; bottom: 8px; right: 8px; background: #ffffffed; }
+.caption { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
+.kp { list-style: none; padding: 0; margin: 0; }
+.kp > li { border-bottom: 1px dashed #e2e8e4; }
+.kp > li:last-child { border-bottom: 0; }
+.kp summary { cursor: pointer; padding: 13px 8px; font-weight: 650; }
+.kp summary::marker { color: var(--green); }
+.term { color: #0a7d52; background: #e2f7eb; border-radius: 6px; padding: 1px 5px; }
+.kp-body { padding: 2px 14px 16px 24px; }
+.detail-block { margin: 12px 0; }
+.detail-block h4 { font-size: 13px; color: #08744d; margin: 0 0 4px; }
+.detail-block p { margin: 0; white-space: pre-line; }
+.warn { border-left: 5px solid #e23b3b; background: #fffafa; }
+.warn p { margin: 8px 0; }
+.misconception { color: #a82b32; }
+.mnemonic { border-left: 4px solid var(--accent); box-shadow: none; }
+.mnemonic strong { color: #df4716; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+.flip { height: 168px; perspective: 900px; border: 0; background: transparent; padding: 0; text-align: center; }
+.flip-in { display: block; height: 100%; position: relative; transition: transform .45s; transform-style: preserve-3d; }
+.flip[aria-pressed="true"] .flip-in { transform: rotateY(180deg); }
+.face { position: absolute; inset: 0; backface-visibility: hidden; border: 1px solid var(--line); border-radius: 10px; padding: 15px; background: #fafafa; display: flex; align-items: center; justify-content: center; overflow-y: auto; }
+.back { transform: rotateY(180deg); background: #eef9f4; color: #075e40; border-color: #c8eadb; }
+.practice { padding-left: 20px; }
+.practice li { margin: 7px 0; }
+.question { border-top: 1px solid #e2e8e4; padding: 20px 0 8px; margin-top: 12px; min-width: 0; }
+.options { display: grid; gap: 7px; margin: 10px 0; }
+.option { display: flex; gap: 10px; align-items: baseline; border: 1px solid #e2e8e4; background: #f0f4f2; padding: 9px 12px; border-radius: 8px; cursor: pointer; }
+.option input { flex-shrink: 0; accent-color: var(--green); }
+.option:has(input:checked) { border-color: #0ea5e9; background: #e7f6fd; }
+.question[data-result="correct"] .option:has(input:checked) { border-color: #0ea66b; background: #e7f8ef; }
+.question[data-result="wrong"] .option:has(input:checked) { border-color: #e23b3b; background: #fff0f0; }
+.answer { background: #f8fbfa; border-left: 3px solid #0ea5e9; padding: 10px; margin-top: 10px; }
+.check { border: 0; background: #0ea66b; color: white; padding: 9px 14px; border-radius: 7px; }
+footer { color: var(--muted); font-size: 12px; margin-top: 28px; }
+footer ul { padding-left: 20px; }
+dialog { width: min(1200px, 96vw); max-height: 94dvh; padding: 52px 16px 16px; border: 0; border-radius: 8px; background: white; }
+dialog::backdrop { background: #15191dd9; }
+dialog img { width: 100%; max-height: 78dvh; object-fit: contain; }
+dialog .icon-button { position: absolute; top: 8px; right: 10px; }
+@media (max-width: 600px) {
+  main { padding: 16px 12px 40px; }
+  h1 { font-size: 26px; }
+  .header { padding: 16px 4px 12px; }
+  .panel, .figure, .warn, .mnemonic { padding: 15px; }
+  .kp-body { padding-left: 16px; }
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .face { padding: 12px; }
+}
+</style></head><body><main><header class="header"><h1>Day 81 · NASM OPT模型总览</h1><p class="sub">用目标、动作质量和恢复资源选择训练阶段，而不是机械地一路升级。</p><div class="meta"><span class="chip">OPT五阶段</span><span class="chip">阶段选择</span><span class="chip">训练适应</span></div></header><section class="panel green"><h2>一句话总结</h2><p class="takeaway">OPT把训练组织为稳定耐力、力量耐力、肌肥大、最大力量和爆发力五个阶段。它是选择地图，不是人人都必须逐级通关的固定阶梯；筛查、目标、技术、耐受和恢复共同决定当前合适的训练重点。</p></section><figure class="figure"><button data-zoom aria-label="放大详情图"><img class="" src="assets/阶段6 行为改变与评估/day81-NASM OPT模型总览.png" alt="NASM OPT模型总览中文总览图"><span class="icon-button"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 15 6 6" /><path d="m15 9 6-6" /><path d="M21 16v5h-5" /><path d="M21 8V3h-5" /><path d="M3 16v5h5" /><path d="m3 21 6-6" /><path d="M3 8V3h5" /><path d="M9 9 3 3" /></svg></span></button><figcaption class="caption">OPT的价值在于把训练目标、准备程度和变量连起来；动作质量或耐受变差时，应重新评估而非硬进阶。</figcaption></figure><section class="panel"><h2>核心要点</h2><ul class="kp"><li><details><summary><span class="term">五阶段与三层级</span>：稳定耐力是基础层；力量耐力、肌肥大和最大力量构成力量层；爆发力位于力量层之上。阶段名称提示主要训练目标，不替代个人筛查。</summary><div class="kp-body"><section class="detail-block"><h4>先看结构</h4><p>OPT常被概括为三层：稳定耐力、力量，以及爆发力。力量层内部包含力量耐力、肌肥大和最大力量；这些是组织训练重点的框架，而不是五条彼此隔绝的道路。</p></section><section class="detail-block"><h4>别把名称当资格</h4><p>一个阶段的名称不证明每个人都适合其中的所有动作或强度。训练者仍要经过风险筛查，并按技术、疼痛、耐受和恢复资源决定实际起点。</p></section></div></details></li><li><details><summary><span class="term">阶段选择看五件事</span>：训练目标、经验、动作质量、恢复资源和风险筛查共同决定起点。短期目标改变、睡眠变差或出现不适时，原来的阶段也可能需要调整。</summary><div class="kp-body"><section class="detail-block"><h4>目标不是唯一变量</h4><p>想增肌、提高力量或改善运动表现会影响变量选择，但目标不能压过安全条件。训练史、动作质量和可用训练时间决定训练者能否稳定完成相应剂量。</p></section><section class="detail-block"><h4>恢复是处方的一部分</h4><p>同样的计划，恢复有限的人可能需要更少总量、更长间歇或更简单动作。睡眠、压力、工作负荷和近期训练反应都应进入阶段选择。</p></section></div></details></li><li><details><summary><span class="term">每阶段都有进入条件</span>：进阶不是增加器械难度或重量的奖励，而是动作控制、基本力量、无明显不适和可恢复训练反应的综合判断。</summary><div class="kp-body"><section class="detail-block"><h4>稳定与技术先行</h4><p>在增加负荷、速度或复杂度前，应能在当前版本中保持呼吸、姿势和关节控制。可重复的高质量动作比一次勉强完成更能说明准备程度。</p></section><section class="detail-block"><h4>只加一个变量</h4><p>高度、负荷、速度、支撑面、方向和总量都可能增加难度。进阶时优先改变一个变量，记录反应，再决定是否继续推进。</p></section></div></details></li><li><details><summary><span class="term">把原则接到变量</span>：Day29的渐进、特异、个体化和恢复原则，需要通过动作选择、组次、负荷、节奏、间歇和频率等变量真正落地。</summary><div class="kp-body"><section class="detail-block"><h4>变量服务目的</h4><p>同样是抗阻训练，稳定耐力、力量耐力、肌肥大、最大力量和爆发力会使用不同的负荷、次数、节奏和间歇重点。变量的组合应能解释“为什么这样安排”。</p></section><section class="detail-block"><h4>用记录验证</h4><p>记录完成度、RPE、动作质量、睡眠与不适反应。数据不是为了追踪完美，而是帮助确认剂量是否匹配目标并为下一次调整提供依据。</p></section></div></details></li><li><details><summary><span class="term">重新评估不是退步</span>：目标变化、疼痛、动作质量下降或恢复不足时，回到更可控的版本是合适的训练决策，不是失败。</summary><div class="kp-body"><section class="detail-block"><h4>观察三个信号</h4><p>动作反复失控、训练后反应持续变差，或出现疼痛和异常不适，都提示当前负荷、复杂度或总量可能不合适。先降低风险，再查找原因。</p></section><section class="detail-block"><h4>把调整写出来</h4><p>明确保留什么、减少什么、下次观察什么，例如降低负荷、缩小范围、延长休息或改为更基础的动作。这样复评成为可验证的计划，而不是随意退让。</p></section></div></details></li></ul></section><section class="warn"><h2>常见误区</h2><p><strong class="misconception">误区：OPT五阶段要求每个人按顺序硬性升级。</strong><br>辨析：OPT是选择框架；阶段要由筛查、目标、技术、耐受和恢复共同决定。</p><p><strong class="misconception">误区：用了更不稳定的器械就代表训练更高级。</strong><br>辨析：难度应服务目标；控制不足时应选择更稳定、可重复的版本。</p><p><strong class="misconception">误区：只要不疼，动作质量下降也可以继续加量。</strong><br>辨析：持续失控说明剂量或复杂度可能不合适，应调整后再推进。</p><p><strong class="misconception">误区：训练变量只要照表抄，不需要记录反应。</strong><br>辨析：变量需与目标相连，并用完成度、RPE和质量验证。</p><p><strong class="misconception">误区：退回基础动作就是训练失败。</strong><br>辨析：退阶是管理风险、恢复控制和长期进步的主动决策。</p></section><section class="mnemonic"><h2>记忆口诀</h2><p><strong>先筛查、定目标、看质量、配恢复；能稳定，再加难。</strong></p></section><section class="panel"><h2>翻转卡复习</h2><div class="cards"><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">五阶段与三层级？</span><span class="face back" aria-hidden="true">五阶段分属稳定、力量和爆发三层；它们是训练选择框架。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">阶段选择看五件事？</span><span class="face back" aria-hidden="true">阶段选择要同时看目标、经验、质量、恢复和筛查。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">每阶段都有进入条件？</span><span class="face back" aria-hidden="true">进入下一阶段看可重复动作质量和恢复，不看逞强。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">把原则接到变量？</span><span class="face back" aria-hidden="true">训练原则要靠动作、组次、负荷、间歇等变量落地。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">重新评估不是退步？</span><span class="face back" aria-hidden="true">质量、疼痛或恢复变差时，复评和退阶是合理选择。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">本课安排的首要原则？</span><span class="face back" aria-hidden="true">先筛查、定目标、看质量、配恢复；能稳定，再加难。</span></span></button></div></section><section class="panel orange"><h2>实操关联</h2><ul class="practice"><li>选一个当前目标，写下目标、训练经验、动作质量、恢复资源和筛查五项信息，再决定本周先练的阶段重点。</li><li>为一个基础动作列出一次只增加一个变量的进阶方案，例如只增加负荷或只增加范围。</li><li>在两次训练后记录完成度、RPE、睡眠和动作质量；下次只依据其中一个明确信号调整剂量。</li><li>遇到动作质量下降时，写出一个可追踪的退阶：保留动作目的、降低一个难度，并设下次复查点。</li></ul></section><section class="panel blue"><h2>练习题</h2><section class="question" data-answers="[1]" data-explanation="OPT是训练选择框架，阶段必须与个人目标、风险和准备程度匹配。"><h3>1. 单选：OPT中最适合决定阶段起点的依据是？</h3><div class="options"><label class="option"><input type="radio" name="question-0" value="0"><span>A. 只看朋友练什么</span></label><label class="option"><input type="radio" name="question-0" value="1"><span>B. 目标、筛查、技术、耐受与恢复</span></label><label class="option"><input type="radio" name="question-0" value="2"><span>C. 器械价格</span></label><label class="option"><input type="radio" name="question-0" value="3"><span>D. 训练时长越久越好</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[2]" data-explanation="应先回到可控制版本，找出剂量或技术问题。"><h3>2. 单选：训练者在当前动作中反复失控，较合适的第一步是？</h3><div class="options"><label class="option"><input type="radio" name="question-1" value="0"><span>A. 增加速度</span></label><label class="option"><input type="radio" name="question-1" value="1"><span>B. 增加总量</span></label><label class="option"><input type="radio" name="question-1" value="2"><span>C. 降低复杂度并重新观察质量</span></label><label class="option"><input type="radio" name="question-1" value="3"><span>D. 忽略问题继续完成</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[0,1,2]" data-explanation="可进阶的变量很多，但一次优先改变一个更易观察反应。"><h3>3. 多选：合理进阶可优先改变哪些变量？</h3><div class="options"><label class="option"><input type="checkbox" name="question-2" value="0"><span>A. 负荷</span></label><label class="option"><input type="checkbox" name="question-2" value="1"><span>B. 动作范围</span></label><label class="option"><input type="checkbox" name="question-2" value="2"><span>C. 速度要求</span></label><label class="option"><input type="checkbox" name="question-2" value="3"><span>D. 一次把所有变量同时加满</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[1]" data-explanation="技术和恢复是高强度、爆发训练的进入条件，不能用目标愿望覆盖。"><h3>4. 案例：小陈希望直接练爆发力，但基础深蹲仍会失控、睡眠也不足。更合适的是？</h3><div class="options"><label class="option"><input type="radio" name="question-3" value="0"><span>A. 直接加跳箱高度</span></label><label class="option"><input type="radio" name="question-3" value="1"><span>B. 先做可控基础训练并改善恢复，再复评</span></label><label class="option"><input type="radio" name="question-3" value="2"><span>C. 每天练到力竭</span></label><label class="option"><input type="radio" name="question-3" value="3"><span>D. 跳过筛查</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section></section><footer>Day 81/110<ul><li>NASM OPT Model：五阶段训练框架与阶段选择原则。</li><li>NSCA Essentials of Strength Training and Conditioning：渐进负荷、动作质量与训练变量。</li><li>本课为一般训练教育；疼痛、明显不适或恢复持续变差时应停止加难并寻求适当专业评估。</li></ul></footer></main><dialog aria-label="详情大图"><button class="icon-button" aria-label="关闭大图" title="关闭大图"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></button><img alt=""></dialog><script>document.querySelectorAll('.flip').forEach((button) => {
+  button.addEventListener('click', () => {
+    const pressed = button.getAttribute('aria-pressed') !== 'true';
+    button.setAttribute('aria-pressed', String(pressed));
+    button.querySelector('.front').setAttribute('aria-hidden', String(pressed));
+    button.querySelector('.back').setAttribute('aria-hidden', String(!pressed));
+  });
+});
+document.querySelectorAll('.question').forEach((question) => {
+  question.querySelector('.check').addEventListener('click', () => {
+    const selected = [...question.querySelectorAll('input:checked')].map((input) => Number(input.value)).sort();
+    const answer = question.querySelector('.answer');
+    answer.hidden = false;
+    if (!selected.length) { answer.textContent = '请先选择答案。'; delete question.dataset.result; return; }
+    const correct = JSON.stringify(selected) === JSON.stringify(JSON.parse(question.dataset.answers).sort());
+    question.dataset.result = correct ? 'correct' : 'wrong';
+    answer.textContent = `${correct ? '回答正确。' : '再想一想。'}${question.dataset.explanation}`;
+  });
+});
+const imageDialog = document.querySelector('dialog');
+document.querySelectorAll('[data-zoom]').forEach((button) => {
+  button.addEventListener('click', () => {
+    const original = button.querySelector('img');
+    const image = imageDialog.querySelector('img');
+    image.src = original.src;
+    image.alt = original.alt;
+    imageDialog.showModal();
+  });
+});
+imageDialog.querySelector('button').addEventListener('click', () => imageDialog.close());
+imageDialog.addEventListener('click', (event) => {
+  const rect = imageDialog.getBoundingClientRect();
+  if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) imageDialog.close();
+});
+</script></body></html>

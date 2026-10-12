@@ -1,0 +1,719 @@
+{
+  "schemaVersion": 1,
+  "title": "ELBOW / 01",
+  "side": "right",
+  "units": "metres",
+  "coordinates": {
+    "blender": "+X 外侧 / +Y 前方 / +Z 近端；肘轴中心原点",
+    "gltf": "+X 外侧 / +Y 近端 / -Z 前方（标准 Y-up）",
+    "conversion": "[x, y, z] Blender → [x, z, -y] glTF"
+  },
+  "joint": {
+    "id": "joint_elbow_R",
+    "axisBlender": [
+      1,
+      0,
+      0
+    ],
+    "pivotBlender": [
+      0,
+      0,
+      0
+    ],
+    "rangeDegrees": [
+      0,
+      120
+    ],
+    "assumptions": "固定肩部、旋后位；简化为单轴铰链，不模拟携带角、瞬时轴迁移和旋前旋后。"
+  },
+  "references": [
+    {
+      "id": "TMA-ARM",
+      "title": "TeachMeAnatomy — Muscles of the Upper Arm",
+      "url": "https://teachmeanatomy.info/upper-limb/muscles/upper-arm/",
+      "checked": "2026-10-10",
+      "verified": [
+        "肱二头肌两头起点、桡骨粗隆及腱膜止点",
+        "肱肌在二头肌深层，肱骨干起、尺骨粗隆止",
+        "三头肌三头起点、鹰嘴共同止点、内侧头深层"
+      ]
+    },
+    {
+      "id": "TMA-ELBOW",
+      "title": "TeachMeAnatomy — The Elbow Joint",
+      "url": "https://teachmeanatomy.info/upper-limb/joints/elbow-joint/",
+      "checked": "2026-10-10",
+      "verified": [
+        "肱尺、肱桡关节的骨性配对",
+        "肘关节铰链式屈伸；旋前旋后属于不同自由度"
+      ]
+    },
+    {
+      "id": "KH-BRACHIALIS",
+      "title": "Kenhub — Brachialis muscle",
+      "url": "https://www.kenhub.com/en/library/anatomy/brachialis-muscle",
+      "checked": "2026-10-10",
+      "verified": [
+        "肱骨前面远侧半起点",
+        "尺骨粗隆与冠突止点文字；具体附着分区几何未审核"
+      ]
+    }
+  ],
+  "structures": [
+    {
+      "id": "bone_scapula_R",
+      "name": "肩胛骨",
+      "english": "Scapula",
+      "type": "bone",
+      "layer": "skeleton",
+      "parent": "skeleton.upper",
+      "side": "right",
+      "bones": [
+        "bone_scapula_R"
+      ],
+      "origin": "不适用",
+      "insertion": "不适用",
+      "explode": [
+        -0.075,
+        0,
+        0.025
+      ],
+      "references": [
+        "TMA-ELBOW"
+      ],
+      "geometryStatus": "schematic",
+      "reviewStatus": "pending-anatomist",
+      "note": "肩胛体、肩胛冈、肩峰、喙突、盂上与盂下区域的程序化示意；无扫描数据。",
+      "binding": "upper",
+      "anatomyStatus": "骨名与关节配对已核对；骨面几何未审核"
+    },
+    {
+      "id": "bone_humerus_R",
+      "name": "肱骨",
+      "english": "Humerus",
+      "type": "bone",
+      "layer": "skeleton",
+      "parent": "skeleton.upper",
+      "side": "right",
+      "bones": [
+        "bone_humerus_R"
+      ],
+      "origin": "不适用",
+      "insertion": "不适用",
+      "explode": [
+        0,
+        0,
+        0
+      ],
+      "references": [
+        "TMA-ELBOW"
+      ],
+      "geometryStatus": "schematic",
+      "reviewStatus": "pending-anatomist",
+      "note": "肱骨头、骨干、滑车与小头轮廓示意；双髁中心定义近似屈伸轴。",
+      "binding": "upper",
+      "anatomyStatus": "骨名与关节配对已核对；骨面几何未审核"
+    },
+    {
+      "id": "bone_ulna_R",
+      "name": "尺骨",
+      "english": "Ulna",
+      "type": "bone",
+      "layer": "skeleton",
+      "parent": "skeleton.forearm",
+      "side": "right",
+      "bones": [
+        "bone_ulna_R"
+      ],
+      "origin": "不适用",
+      "insertion": "不适用",
+      "explode": [
+        -0.042,
+        0,
+        -0.012
+      ],
+      "references": [
+        "TMA-ELBOW"
+      ],
+      "geometryStatus": "schematic",
+      "reviewStatus": "pending-anatomist",
+      "note": "鹰嘴、滑车切迹、尺骨粗隆与尺骨干示意；尺骨远端不含腕关节。",
+      "binding": "forearm",
+      "anatomyStatus": "骨名与关节配对已核对；骨面几何未审核"
+    },
+    {
+      "id": "bone_radius_R",
+      "name": "桡骨",
+      "english": "Radius",
+      "type": "bone",
+      "layer": "skeleton",
+      "parent": "skeleton.forearm",
+      "side": "right",
+      "bones": [
+        "bone_radius_R"
+      ],
+      "origin": "不适用",
+      "insertion": "不适用",
+      "explode": [
+        0.045,
+        0,
+        -0.012
+      ],
+      "references": [
+        "TMA-ELBOW"
+      ],
+      "geometryStatus": "schematic",
+      "reviewStatus": "pending-anatomist",
+      "note": "桡骨头、桡骨颈、桡骨粗隆与桡骨干示意；固定旋后位。",
+      "binding": "forearm",
+      "anatomyStatus": "骨名与关节配对已核对；骨面几何未审核"
+    },
+    {
+      "id": "muscle_biceps_long_R",
+      "name": "肱二头肌·长头",
+      "english": "Biceps brachii · long head",
+      "type": "muscle",
+      "layer": "superficial",
+      "parent": "muscles.flexor",
+      "side": "right",
+      "bones": [
+        "bone_scapula_R",
+        "bone_radius_R"
+      ],
+      "origin": "肩胛骨盂上结节",
+      "insertion": "桡骨粗隆（经共同远端肌腱）；另有肱二头肌腱膜连至前臂筋膜，本样板未建此腱膜",
+      "explode": [
+        0.037,
+        0.095,
+        0.025
+      ],
+      "references": [
+        "TMA-ARM"
+      ],
+      "geometryStatus": "schematic",
+      "reviewStatus": "pending-anatomist",
+      "note": "肌腹体积随路径长度近似补偿，起止区域用单点表示；无肌力、肌电或有限元计算。",
+      "key": "biceps_long",
+      "action": "flexor",
+      "originPoint": [
+        -0.02477395348250866,
+        0.0037468287628144026,
+        0.3184351623058319
+      ],
+      "insertionPoint": [
+        0.015440355986356735,
+        0.016680095344781876,
+        -0.043087735772132874
+      ],
+      "radius": 0.0125,
+      "anatomyStatus": "起止点文字与浅深层关系已核对；坐标、面积、肌束走向待审核",
+      "designOriginPoint": [
+        -0.024,
+        0.004,
+        0.319
+      ],
+      "originPointProjectionMm": 0.991,
+      "designInsertionPoint": [
+        0.016,
+        0.013,
+        -0.043
+      ],
+      "insertionPointProjectionMm": 3.723
+    },
+    {
+      "id": "muscle_biceps_short_R",
+      "name": "肱二头肌·短头",
+      "english": "Biceps brachii · short head",
+      "type": "muscle",
+      "layer": "superficial",
+      "parent": "muscles.flexor",
+      "side": "right",
+      "bones": [
+        "bone_scapula_R",
+        "bone_radius_R"
+      ],
+      "origin": "肩胛骨喙突",
+      "insertion": "桡骨粗隆（经共同远端肌腱）；另有肱二头肌腱膜连至前臂筋膜，本样板未建此腱膜",
+      "explode": [
+        -0.04,
+        0.095,
+        0.025
+      ],
+      "references": [
+        "TMA-ARM"
+      ],
+      "geometryStatus": "schematic",
+      "reviewStatus": "pending-anatomist",
+      "note": "肌腹体积随路径长度近似补偿，起止区域用单点表示；无肌力、肌电或有限元计算。",
+      "key": "biceps_short",
+      "action": "flexor",
+      "originPoint": [
+        -0.03956060856580734,
+        0.03277899697422981,
+        0.29696202278137207
+      ],
+      "insertionPoint": [
+        0.015440355986356735,
+        0.016680095344781876,
+        -0.043087735772132874
+      ],
+      "radius": 0.0135,
+      "anatomyStatus": "起止点文字与浅深层关系已核对；坐标、面积、肌束走向待审核",
+      "designOriginPoint": [
+        -0.04,
+        0.032,
+        0.298
+      ],
+      "originPointProjectionMm": 1.37,
+      "designInsertionPoint": [
+        0.016,
+        0.013,
+        -0.043
+      ],
+      "insertionPointProjectionMm": 3.723
+    },
+    {
+      "id": "muscle_brachialis_R",
+      "name": "肱肌",
+      "english": "Brachialis",
+      "type": "muscle",
+      "layer": "deep",
+      "parent": "muscles.flexor",
+      "side": "right",
+      "bones": [
+        "bone_humerus_R",
+        "bone_ulna_R"
+      ],
+      "origin": "肱骨干前面远侧区域（起点广面压缩为标记点）",
+      "insertion": "尺骨粗隆；冠突附着细分待审核",
+      "explode": [
+        0,
+        0.06,
+        -0.006
+      ],
+      "references": [
+        "TMA-ARM",
+        "KH-BRACHIALIS"
+      ],
+      "geometryStatus": "schematic",
+      "reviewStatus": "pending-anatomist",
+      "note": "肌腹体积随路径长度近似补偿，起止区域用单点表示；无肌力、肌电或有限元计算。",
+      "key": "brachialis",
+      "action": "flexor",
+      "originPoint": [
+        -0.00031021120958030224,
+        0.0106349540874362,
+        0.15699657797813416
+      ],
+      "insertionPoint": [
+        -0.013095029629766941,
+        0.015795830637216568,
+        -0.029852570965886116
+      ],
+      "radius": 0.022,
+      "anatomyStatus": "起止点文字与浅深层关系已核对；坐标、面积、肌束走向待审核",
+      "designOriginPoint": [
+        0,
+        0.017,
+        0.157
+      ],
+      "originPointProjectionMm": 6.373,
+      "designInsertionPoint": [
+        -0.013,
+        0.013,
+        -0.03
+      ],
+      "insertionPointProjectionMm": 2.801
+    },
+    {
+      "id": "muscle_triceps_long_R",
+      "name": "肱三头肌·长头",
+      "english": "Triceps brachii · long head",
+      "type": "muscle",
+      "layer": "superficial",
+      "parent": "muscles.extensor",
+      "side": "right",
+      "bones": [
+        "bone_scapula_R",
+        "bone_ulna_R"
+      ],
+      "origin": "肩胛骨盂下结节",
+      "insertion": "尺骨鹰嘴（经共同肱三头肌腱）",
+      "explode": [
+        -0.055,
+        -0.075,
+        0.025
+      ],
+      "references": [
+        "TMA-ARM"
+      ],
+      "geometryStatus": "schematic",
+      "reviewStatus": "pending-anatomist",
+      "note": "肌腹体积随路径长度近似补偿，起止区域用单点表示；无肌力、肌电或有限元计算。",
+      "key": "triceps_long",
+      "action": "extensor",
+      "originPoint": [
+        -0.03431514650583267,
+        -0.004168014042079449,
+        0.26637187600135803
+      ],
+      "insertionPoint": [
+        -0.012000000104308128,
+        -0.02576270140707493,
+        0.013900796882808208
+      ],
+      "radius": 0.015,
+      "anatomyStatus": "起止点文字与浅深层关系已核对；坐标、面积、肌束走向待审核",
+      "designOriginPoint": [
+        -0.034,
+        -0.004,
+        0.267
+      ],
+      "originPointProjectionMm": 0.723,
+      "designInsertionPoint": [
+        -0.012,
+        -0.023,
+        0.014
+      ],
+      "insertionPointProjectionMm": 2.764
+    },
+    {
+      "id": "muscle_triceps_lateral_R",
+      "name": "肱三头肌·外侧头",
+      "english": "Triceps brachii · lateral head",
+      "type": "muscle",
+      "layer": "superficial",
+      "parent": "muscles.extensor",
+      "side": "right",
+      "bones": [
+        "bone_humerus_R",
+        "bone_ulna_R"
+      ],
+      "origin": "肱骨后面，桡神经沟上方",
+      "insertion": "尺骨鹰嘴（经共同肱三头肌腱）",
+      "explode": [
+        0.055,
+        -0.075,
+        0.025
+      ],
+      "references": [
+        "TMA-ARM"
+      ],
+      "geometryStatus": "schematic",
+      "reviewStatus": "pending-anatomist",
+      "note": "肌腹体积随路径长度近似补偿，起止区域用单点表示；无肌力、肌电或有限元计算。",
+      "key": "triceps_lateral",
+      "action": "extensor",
+      "originPoint": [
+        0.007594725117087364,
+        -0.009116736240684986,
+        0.24818390607833862
+      ],
+      "insertionPoint": [
+        -0.012000000104308128,
+        -0.02576270140707493,
+        0.013900796882808208
+      ],
+      "radius": 0.016,
+      "anatomyStatus": "起止点文字与浅深层关系已核对；坐标、面积、肌束走向待审核",
+      "designOriginPoint": [
+        0.015,
+        -0.013,
+        0.248
+      ],
+      "originPointProjectionMm": 8.364,
+      "designInsertionPoint": [
+        -0.012,
+        -0.023,
+        0.014
+      ],
+      "insertionPointProjectionMm": 2.764
+    },
+    {
+      "id": "muscle_triceps_medial_R",
+      "name": "肱三头肌·内侧头",
+      "english": "Triceps brachii · medial head",
+      "type": "muscle",
+      "layer": "deep",
+      "parent": "muscles.extensor",
+      "side": "right",
+      "bones": [
+        "bone_humerus_R",
+        "bone_ulna_R"
+      ],
+      "origin": "肱骨后面，桡神经沟下方",
+      "insertion": "尺骨鹰嘴（经共同肱三头肌腱）",
+      "explode": [
+        0,
+        -0.06,
+        -0.005
+      ],
+      "references": [
+        "TMA-ARM"
+      ],
+      "geometryStatus": "schematic",
+      "reviewStatus": "pending-anatomist",
+      "note": "肌腹体积随路径长度近似补偿，起止区域用单点表示；无肌力、肌电或有限元计算。",
+      "key": "triceps_medial",
+      "action": "extensor",
+      "originPoint": [
+        -0.0019427196821197867,
+        -0.014188447035849094,
+        0.15502452850341797
+      ],
+      "insertionPoint": [
+        -0.012000000104308128,
+        -0.02576270140707493,
+        0.013900796882808208
+      ],
+      "radius": 0.015,
+      "anatomyStatus": "起止点文字与浅深层关系已核对；坐标、面积、肌束走向待审核",
+      "designOriginPoint": [
+        -0.002,
+        -0.015,
+        0.155
+      ],
+      "originPointProjectionMm": 0.814,
+      "designInsertionPoint": [
+        -0.012,
+        -0.023,
+        0.014
+      ],
+      "insertionPointProjectionMm": 2.764
+    },
+    {
+      "id": "tendon_biceps_long_prox_R",
+      "name": "肱二头肌长头·近端腱",
+      "english": "Biceps long head proximal tendon",
+      "type": "tendon",
+      "layer": "superficial",
+      "parent": "tendons.flexor",
+      "side": "right",
+      "bones": [
+        "bone_scapula_R"
+      ],
+      "origin": "肩胛骨盂上结节",
+      "insertion": "长头肌腹近端",
+      "explode": [
+        0.037,
+        0.095,
+        0.025
+      ],
+      "references": [
+        "TMA-ARM"
+      ],
+      "geometryStatus": "schematic",
+      "reviewStatus": "pending-anatomist",
+      "note": "长头肌腱越过肱骨头前上方并进入结节间沟的路径仅为示意，关节囊内部分未分段。",
+      "key": "biceps_long_prox",
+      "action": "flexor",
+      "anatomyStatus": "连接关系已核对；腱形、截面和滑移未审核"
+    },
+    {
+      "id": "tendon_biceps_short_prox_R",
+      "name": "肱二头肌短头·近端腱",
+      "english": "Biceps short head proximal tendon",
+      "type": "tendon",
+      "layer": "superficial",
+      "parent": "tendons.flexor",
+      "side": "right",
+      "bones": [
+        "bone_scapula_R"
+      ],
+      "origin": "肩胛骨喙突",
+      "insertion": "短头肌腹近端",
+      "explode": [
+        -0.04,
+        0.095,
+        0.025
+      ],
+      "references": [
+        "TMA-ARM"
+      ],
+      "geometryStatus": "schematic",
+      "reviewStatus": "pending-anatomist",
+      "note": "喙突共同腱未纳入喙肱肌。",
+      "key": "biceps_short_prox",
+      "action": "flexor",
+      "anatomyStatus": "连接关系已核对；腱形、截面和滑移未审核"
+    },
+    {
+      "id": "tendon_biceps_distal_R",
+      "name": "肱二头肌·共同远端腱",
+      "english": "Distal biceps tendon",
+      "type": "tendon",
+      "layer": "superficial",
+      "parent": "tendons.flexor",
+      "side": "right",
+      "bones": [
+        "bone_radius_R"
+      ],
+      "origin": "长头与短头肌腹汇合处",
+      "insertion": "桡骨粗隆",
+      "explode": [
+        0,
+        0.095,
+        0.025
+      ],
+      "references": [
+        "TMA-ARM"
+      ],
+      "geometryStatus": "schematic",
+      "reviewStatus": "pending-anatomist",
+      "note": "简化为共同腱；未表示扭转、双头足印差异及肱二头肌腱膜。",
+      "key": "biceps_distal",
+      "action": "flexor",
+      "anatomyStatus": "连接关系已核对；腱形、截面和滑移未审核"
+    },
+    {
+      "id": "tendon_brachialis_distal_R",
+      "name": "肱肌·远端腱",
+      "english": "Brachialis distal tendon",
+      "type": "tendon",
+      "layer": "deep",
+      "parent": "tendons.flexor",
+      "side": "right",
+      "bones": [
+        "bone_ulna_R"
+      ],
+      "origin": "肱肌肌腹远端",
+      "insertion": "尺骨粗隆",
+      "explode": [
+        0,
+        0.06,
+        -0.006
+      ],
+      "references": [
+        "TMA-ARM",
+        "KH-BRACHIALIS"
+      ],
+      "geometryStatus": "schematic",
+      "reviewStatus": "pending-anatomist",
+      "note": "附着面积、冠突分支及腱膜结构待审核。",
+      "key": "brachialis_distal",
+      "action": "flexor",
+      "anatomyStatus": "连接关系已核对；腱形、截面和滑移未审核"
+    },
+    {
+      "id": "tendon_triceps_long_prox_R",
+      "name": "肱三头肌长头·近端腱",
+      "english": "Triceps long head proximal tendon",
+      "type": "tendon",
+      "layer": "superficial",
+      "parent": "tendons.extensor",
+      "side": "right",
+      "bones": [
+        "bone_scapula_R"
+      ],
+      "origin": "肩胛骨盂下结节",
+      "insertion": "三头肌长头肌腹近端",
+      "explode": [
+        -0.055,
+        -0.075,
+        0.025
+      ],
+      "references": [
+        "TMA-ARM"
+      ],
+      "geometryStatus": "schematic",
+      "reviewStatus": "pending-anatomist",
+      "note": "起点宽度与腱膜简化。",
+      "key": "triceps_long_prox",
+      "action": "extensor",
+      "anatomyStatus": "连接关系已核对；腱形、截面和滑移未审核"
+    },
+    {
+      "id": "tendon_triceps_distal_R",
+      "name": "肱三头肌·共同远端腱",
+      "english": "Distal triceps tendon",
+      "type": "tendon",
+      "layer": "superficial",
+      "parent": "tendons.extensor",
+      "side": "right",
+      "bones": [
+        "bone_ulna_R"
+      ],
+      "origin": "肱三头肌三头汇合处",
+      "insertion": "尺骨鹰嘴",
+      "explode": [
+        0,
+        -0.075,
+        0.025
+      ],
+      "references": [
+        "TMA-ARM"
+      ],
+      "geometryStatus": "schematic",
+      "reviewStatus": "pending-anatomist",
+      "note": "三层腱膜与内侧头独立深部插入细节未区分；绕鹰嘴的滑移为路径示意。",
+      "key": "triceps_distal",
+      "action": "extensor",
+      "anatomyStatus": "连接关系已核对；腱形、截面和滑移未审核"
+    },
+    {
+      "id": "fascia_brachial_R",
+      "name": "臂筋膜·示意层",
+      "english": "Brachial fascia · schematic shell",
+      "type": "fascia",
+      "layer": "fascia",
+      "parent": "fascia",
+      "side": "right",
+      "bones": [
+        "bone_humerus_R"
+      ],
+      "origin": "连续筋膜，不以肌肉起止点描述",
+      "insertion": "本样板覆盖上臂；不含肌间隔与前臂筋膜",
+      "explode": [
+        0.105,
+        0,
+        0.025
+      ],
+      "references": [
+        "TMA-ARM"
+      ],
+      "geometryStatus": "schematic",
+      "reviewStatus": "pending-anatomist",
+      "note": "单层半透明外包络，仅用于交互验证；不是按组织厚度或真实筋膜平面重建。",
+      "anatomyStatus": "完全示意，未作解剖准确声明"
+    }
+  ],
+  "counts": {
+    "bones": 4,
+    "muscleHeads": 6,
+    "tendons": 6,
+    "fascia": 1,
+    "totalSelectable": 17
+  },
+  "animation": {
+    "angles": [
+      0,
+      5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35,
+      40,
+      45,
+      50,
+      55,
+      60,
+      65,
+      70,
+      75,
+      80,
+      85,
+      90,
+      95,
+      100,
+      105,
+      110,
+      115,
+      120
+    ],
+    "fps": 30,
+    "durationSeconds": 4,
+    "method": "Rigid forearm rotation + sampled path-driven shape keys. Geometry visualization only."
+  }
+}

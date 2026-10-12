@@ -1,0 +1,50 @@
+{
+  "commonPrompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, a cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, a rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, ground plane, cast shadow, room, paper background, loose paper sheets, border, sticker edge, shadow, or halo. A small unmarked rigid teaching card is allowed as a prop but must never contain personal information. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.",
+  "assets": [
+    {
+      "file": "cover.png",
+      "role": "cover",
+      "prompt": "Wide 16:9 wordless single-scene course cover. Exactly one Despa holds one small unmarked rigid purpose card at chest height while exactly one Bojji uses an open hand to indicate a plain low exercise bench as an isolated prop. Explain purpose before action and a calm safety check, not an examination, diagnosis, treatment, qualification decision or emergency. Use one coherent current pose. Isolate the figures, card and bench on the transparent canvas: no floor, ground plane, cast shadow, room, clipboard, folder, paper, screen, meter, medical or security symbol, warning sign, duplicate figures, alternate poses, motion trails, arrows, readable signs, text, numbers, labels or unrelated equipment."
+    },
+    {
+      "file": "visual-01-purpose-safety.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Exactly one Bojji carefully holds one small unmarked rigid purpose card while exactly one Despa makes a calm open-palm pause gesture beside a plain low exercise bench as an isolated prop. Explain choosing an appropriate activity only after clarifying purpose and conditions, not a diagnosis, medical screening result, treatment or certification decision. Use one continuous current pose with all limbs, card and bench fully visible. Isolate the figures and props on the transparent canvas: no floor, ground plane, cast shadow, room, table, clipboard, folder, paper, screen, meter, medical or security symbol, warning sign, duplicate figures, alternate poses, sequence frames, arrows, motion trails, text, numbers, labels, readable screens, blue circles or unrelated equipment."
+    },
+    {
+      "file": "visual-02-standard-record.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Exactly one Despa aligns one light dumbbell with a small plain rack that has two matching visible support points while exactly one Bojji holds one small unmarked rigid teaching card nearby. Explain repeatable setup and objective recording, not a score report, personal record, diagnosis or performance guarantee. Use one continuous current pose with all limbs and props fully visible. Isolate the figures and props on the transparent canvas: no floor, ground plane, cast shadow, room, table, clipboard, folder, paper, screen, meter, numbers, chart, medical or security symbol, duplicate figures, alternate poses, sequence frames, arrows, motion trails, text, labels, readable screens, blue circles or unrelated equipment."
+    },
+    {
+      "file": "visual-03-lifting-skill.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Exactly one Despa checks a light barbell resting securely on a simple rack with clearly visible safety arms while exactly one Bojji observes from a respectful side distance with open hands. Explain setup, controlled load and stopping when control is lost, not a maximum lift, diagnosis, rehabilitation exercise or competitive attempt. Use one continuous current pose with all limbs, barbell and rack fully visible; the bar must be visibly continuous and securely supported. Isolate the figures and props on the transparent canvas: no floor, ground plane, cast shadow, room, table, clipboard, folder, paper, screen, meter, medical or security symbol, warning sign, duplicate figures, alternate poses, sequence frames, arrows, motion trails, text, numbers, labels, readable screens, blue circles or unrelated equipment."
+    },
+    {
+      "file": "visual-04-aerobic-monitor.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Exactly one Despa stands beside one simple stationary bicycle with no screen or meter while exactly one Bojji uses a calm open-palm check-in gesture at respectful distance. Explain adjusting a low-intensity activity by observing multiple current responses, not a medical assessment, heart-rate prescription, diagnosis or treatment. Use one continuous current pose with all limbs and the bicycle fully visible. Isolate the figures and bicycle on the transparent canvas: no floor, ground plane, cast shadow, room, table, clipboard, folder, paper, screen, meter, medical or security symbol, warning sign, duplicate figures, alternate poses, sequence frames, arrows, motion trails, text, numbers, labels, readable screens, blue circles or unrelated equipment."
+    },
+    {
+      "file": "overview-01-purpose-safety.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Exactly one Despa holds one small unmarked rigid purpose card with both hands while exactly one Bojji gives a calm open-palm acknowledgement beside a plain low exercise bench. Explain purpose and safe suitability in a compact panel; do not reuse the knowledge-page composition. Isolate the figures, card and bench on the transparent canvas: no floor, ground plane, cast shadow, room, table, clipboard, folder, paper, screen, meter, medical or security symbol, warning sign, duplicate figures, alternate poses, sequence frames, text, numbers, labels, arrows, motion trails or unrelated equipment."
+    },
+    {
+      "file": "overview-02-standard-record.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Exactly one Bojji aligns one light dumbbell with a small plain rack that has two matching visible support points while exactly one Despa observes with an open hand. Explain consistent setup in a compact panel; do not reuse the knowledge-page composition. Isolate the figures and props on the transparent canvas: no floor, ground plane, cast shadow, room, table, clipboard, folder, paper, screen, meter, numbers, chart, medical or security symbol, duplicate figures, alternate poses, sequence frames, text, labels, arrows, motion trails or unrelated equipment."
+    },
+    {
+      "file": "overview-03-lifting-skill.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Exactly one Despa keeps both open hands near a light barbell resting securely on a simple rack with visible safety arms while exactly one Bojji stands at a respectful side distance. Explain careful lifting setup in a compact panel; do not reuse the knowledge-page composition. The bar must be visibly continuous and securely supported. Isolate the figures and props on the transparent canvas: no floor, ground plane, cast shadow, room, table, clipboard, folder, paper, screen, meter, medical or security symbol, warning sign, duplicate figures, alternate poses, sequence frames, text, numbers, labels, arrows, motion trails or unrelated equipment."
+    },
+    {
+      "file": "overview-04-aerobic-monitor.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Exactly one Bojji stands beside one simple stationary bicycle with no screen or meter while exactly one Despa responds with a thoughtful open-palm check-in gesture. Explain observing current response and adjusting pace in a compact panel; do not reuse the knowledge-page composition. Isolate the figures and bicycle on the transparent canvas: no floor, ground plane, cast shadow, room, table, clipboard, folder, paper, screen, meter, medical or security symbol, warning sign, duplicate figures, alternate poses, sequence frames, text, numbers, labels, arrows, motion trails or unrelated equipment."
+    }
+  ]
+}

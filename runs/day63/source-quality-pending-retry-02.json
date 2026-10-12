@@ -1,0 +1,86 @@
+{
+  "reviewer": "local source visual and alpha QA",
+  "scope": "Day63 adjusted attempt-02 candidates for cover.png, visual-01-eaa.png, visual-02-total.png, overview-02-total.png, and overview-03-distribution.png only. No paid request, rendering, installation, deployment, progress change, or global-review change was performed by this review.",
+  "requirements": [
+    "true-alpha transparent PNG with no opaque full-canvas background, rendered checkerboard, floor, paper, border, shadow, or broad halo",
+    "wordless Bojji and Despa teaching art with coherent anatomy, food props, and lesson-specific action",
+    "no dumbbell or other exercise equipment in the cover or total-intake knowledge visual; a plain bench is permitted",
+    "no badge, icon, spark, arrow, ray, flow line, thought bubble, text, number, label, chart, or other explanatory symbol",
+    "all figures and props must remain fully inside the transparent canvas rather than be clipped by an edge"
+  ],
+  "technicalChecks": {
+    "checkedWith": [
+      "sips dimensions and hasAlpha",
+      "RGBA alpha extrema, transparent-pixel count, and alpha bounding-box scan",
+      "individual dark-background alpha inspection",
+      "individual white-background composite inspection"
+    ],
+    "result": "All five candidates are non-empty RGBA PNGs with alpha extrema [0,255] and 58.53% to 72.17% fully transparent pixels. The four accepted images have no opaque canvas or rendered background; their white composites show ordinary antialiased silhouette edges only. overview-03-distribution.png is rejected for bottom-edge clipping, not alpha failure."
+  },
+  "candidateAlphaEvidence": [
+    {"file": "cover.png", "attempt": 2, "size": [1672, 941], "transparentPixelPercent": 65.83},
+    {"file": "visual-01-eaa.png", "attempt": 2, "size": [2211, 711], "transparentPixelPercent": 62.53},
+    {"file": "visual-02-total.png", "attempt": 2, "size": [1881, 836], "transparentPixelPercent": 72.17},
+    {"file": "overview-02-total.png", "attempt": 2, "size": [1448, 1086], "transparentPixelPercent": 70.01},
+    {"file": "overview-03-distribution.png", "attempt": 2, "size": [1448, 1086], "transparentPixelPercent": 58.53}
+  ],
+  "priorAttemptRejections": {
+    "record": "runs/day63/source-quality-pending.json",
+    "cover.png": "attempt-01 showed Despa holding a dumbbell.",
+    "visual-01-eaa.png": "attempt-01 showed hovering colored puzzle pieces.",
+    "visual-02-total.png": "attempt-01 showed yellow exclamation rays.",
+    "overview-02-total.png": "attempt-01 showed a thought-bubble/inset scale and miniature figure.",
+    "overview-03-distribution.png": "attempt-01 showed a curved connecting flow line between meal plates."
+  },
+  "accepted": [
+    {
+      "file": "cover.png",
+      "attempt": 2,
+      "candidate": "runs/day63/image-requests/cover-eb86e17540/attempt-02/cover.png",
+      "source": "runs/day63/source/cover.png",
+      "sha256": "bf8522b0d48fc58faac1b954d0e81bf3d8e30959da3f9c6d5f84e1cf9ed1ca1d",
+      "review": "德斯帕以空手、单手扶普通长凳的划船预备姿势出现，没有哑铃、杠铃、壶铃、弹力带或其他训练器械；波吉整理鸡蛋、豆腐、豆类和米饭。人物、桌凳与食物关系清楚，画面没有文字、箭头、射线、图标或包装。"
+    },
+    {
+      "file": "visual-01-eaa.png",
+      "attempt": 2,
+      "candidate": "runs/day63/image-requests/visual-01-eaa-bcfb785d28/attempt-02/visual-01-eaa.png",
+      "source": "runs/day63/source/visual-01-eaa.png",
+      "sha256": "37e9f24706c11ff14c54a482d5412a83cd9f96498a66b9cc65180a84eead3f11",
+      "review": "波吉端豆腐豆类碗，德斯帕端鱼盘并举蛋，周围只有可辨识的普通食物来源。两名角色、肢体和食物都正常，无拼图、分子、标记、箭头、文字或补剂意象。"
+    },
+    {
+      "file": "visual-02-total.png",
+      "attempt": 2,
+      "candidate": "runs/day63/image-requests/visual-02-total-2af36ecc5e/attempt-02/visual-02-total.png",
+      "source": "runs/day63/source/visual-02-total.png",
+      "sha256": "3c1d931a73f81941babc555237f66515a66ddb905a4abbb5717336ae281ba34b",
+      "review": "波吉摆出三份真实餐食，德斯帕进行无需负重、仅借普通长凳的受控分腿蹲。画面不含器械、感叹射线、图标、文字、数字、钟表或图表；三餐与训练姿势能表达全天总量而非单次大餐。"
+    },
+    {
+      "file": "overview-02-total.png",
+      "attempt": 2,
+      "candidate": "runs/day63/image-requests/overview-02-total-672beb74a9/attempt-02/overview-02-total.png",
+      "source": "runs/day63/source/overview-02-total.png",
+      "sha256": "2c2b8873bef20c5debd4fa26fcec7877990e4c80ede3c9f6824f646233c064d1",
+      "review": "独立总览场景只有一位德斯帕做无负重分腿蹲和一位波吉端均衡餐盘，普通长凳是唯一允许的训练辅助物。没有思考泡、插图框、天平、迷你人物、图标、箭头、射线、文字或包装。"
+    }
+  ],
+  "rejected": [
+    {
+      "file": "overview-03-distribution.png",
+      "attempt": 2,
+      "candidate": "runs/day63/image-requests/overview-03-distribution-c1a29884fa/attempt-02/overview-03-distribution.png",
+      "sha256": "125ce54406996ddf3769e1d7935ea530ea857d9a8ec40f9eedc09f18255df44a",
+      "reason": "已清除首轮的连接流程线，且无文字或图标；但德斯帕前靴及桌前腿在画布底边被截断，透明 alpha 边界也在 y=1072/1086 和 x=9/1448 处过近。该构图违反人物和道具必须完整留在画布内的要求，不能作为可渲染源图。",
+      "recommendedAdjustedRetryPrompt": "Wide 4:3 wordless overview-only illustration. Exactly one full-body Bojji places one simple breakfast plate on a plain table; exactly one full-body Despa holds one simple post-training meal nearby. Show exactly three ordinary meal plates total: Bojji's breakfast plate, one separate meal plate on the table, and Despa's post-training plate. Arrange them naturally with no connectors. Scale and place every head, hand, plate, table, leg, and boot fully inside the canvas with at least eight-percent empty transparent margin on all four sides; nothing may touch, crop against, or extend beyond an edge. No curve, path, timeline, arrow, ray, icon, badge, clock, shaker, thought bubble, inset, label, text, number, chart, packaging, floor, shadow, or halo."
+    }
+  ],
+  "retryPolicy": {
+    "initialRequestUsed": 1,
+    "adjustedRetriesUsedForOverview03": 1,
+    "adjustedRetriesRemainingForOverview03": 4,
+    "instruction": "Preserve attempts 01 and 02. Request only overview-03-distribution.png once using the exact recommended adjusted prompt, then visually inspect its alpha and white composite before copying it into runs/day63/source/."
+  },
+  "result": "Eight of nine Day63 source images are accepted in runs/day63/source/. overview-03-distribution.png requires one more adjusted request; do not preprocess, render, install, or mark the Day63 package ready until that source is accepted."
+}

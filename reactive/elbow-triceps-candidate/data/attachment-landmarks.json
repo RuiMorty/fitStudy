@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "coordinates": "Blender model space, metres. +X lateral, +Y anterior, +Z proximal.",
+  "status": "visually-localized-candidate-not-anatomist-approved",
+  "method": "Explicit regions localized against source bone and soft-tissue surfaces in multiple views. Seeds are projected only within their specified region; no highest-vertex heuristic. Broad regions are representative subsets, not measured complete footprints.",
+  "references": ["TMA-ARM", "KH-BRACHIALIS"],
+  "muscles": {
+    "muscle_biceps_long_R": {
+      "landmark": "盂上结节邻近骨面 / 关节盂上缘候选区",
+      "bone": "bone_scapula_R",
+      "tissue": "tendon_biceps_long_prox_R",
+      "seed": [-0.012639, -0.005591, 0.292725],
+      "regions": [{"center": [-0.0128, -0.006, 0.293], "radii": [0.005, 0.005, 0.005]}],
+      "viewTarget": [-0.014, -0.005, 0.288],
+      "viewOffset": [0.23, -0.025, 0.018],
+      "note": "骨性附着候选区；上盂唇参与尚未建模，不能把此色块当作完整长头起点。保留源肌腱越过肱骨头的走行，局部约束到骨面。"
+    },
+    "muscle_biceps_short_R": {
+      "landmark": "喙突尖邻近附着候选区",
+      "bone": "bone_scapula_R",
+      "tissue": "tendon_biceps_short_prox_R",
+      "seed": [-0.016496, 0.024662, 0.292502],
+      "regions": [{"center": [-0.017, 0.025, 0.292], "radii": [0.007, 0.007, 0.006]}],
+      "viewTarget": [-0.016, 0.022, 0.280],
+      "viewOffset": [0.14, 0.18, 0.035],
+      "note": "仅标示短头的骨面候选部分；与喙肱肌共同腱的附着分区未建模、未审核。"
+    },
+    "muscle_triceps_long_R": {
+      "landmark": "盂下结节邻近附着候选区",
+      "bone": "bone_scapula_R",
+      "tissue": "tendon_triceps_long_prox_R",
+      "seed": [-0.017408, -0.009858, 0.254971],
+      "regions": [{"center": [-0.017, -0.012, 0.254], "radii": [0.008, 0.007, 0.007]}],
+      "viewTarget": [-0.016, -0.012, 0.260],
+      "viewOffset": [0.22, -0.07, 0.01],
+      "note": "盂下区的代表性附着面；完整腱性足印边界尚待专业审核。"
+    },
+    "muscle_brachialis_R": {
+      "landmark": "肱骨远侧前面 · 宽起点代表区",
+      "bone": "bone_humerus_R",
+      "tissue": "muscle_brachialis_R",
+      "seed": [0.019, 0.009, 0.150],
+      "regions": [
+        {"center": [0.018, 0.007, 0.149], "radii": [0.013, 0.009, 0.026]},
+        {"center": [0.009, 0.001, 0.109], "radii": [0.013, 0.009, 0.026]},
+        {"center": [0.001, -0.002, 0.075], "radii": [0.013, 0.009, 0.021]}
+      ],
+      "viewTarget": [0.011, 0.003, 0.110],
+      "viewOffset": [0.05, 0.27, 0.025],
+      "note": "色块显示源肌肉与前侧骨面的接触候选区域，代表宽起点的一部分；肌间隔及完整起点边界未重建。"
+    },
+    "muscle_triceps_lateral_R": {
+      "landmark": "肱骨后面近侧 · 桡神经沟上方候选区",
+      "bone": "bone_humerus_R",
+      "tissue": "muscle_triceps_lateral_R",
+      "seed": [0.01645, -0.0039, 0.231],
+      "regions": [{"center": [0.017, -0.005, 0.220], "radii": [0.010, 0.005, 0.029]}],
+      "viewTarget": [0.016, -0.006, 0.220],
+      "viewOffset": [0.12, -0.24, 0.015],
+      "note": "后侧宽起点的近侧代表区；桡神经沟边界与肌間隔附着尚待专业审核。"
+    },
+    "muscle_triceps_medial_R": {
+      "landmark": "肱骨后面远侧 · 桡神经沟下方候选区",
+      "bone": "bone_humerus_R",
+      "tissue": "muscle_triceps_medial_R",
+      "seed": [0.008, -0.014, 0.100],
+      "regions": [
+        {"center": [0.007, -0.010, 0.134], "radii": [0.007, 0.007, 0.025]},
+        {"center": [0.008, -0.014, 0.094], "radii": [0.009, 0.007, 0.026]},
+        {"center": [0.005, -0.014, 0.055], "radii": [0.013, 0.008, 0.022]}
+      ],
+      "viewTarget": [0.007, -0.013, 0.100],
+      "viewOffset": [-0.07, -0.28, 0.012],
+      "note": "后侧远侧宽起点的代表区，未用模型最高点代表整片起点；桡神经沟与完整足印界限仍待审核。"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "status": "planning-only-no-generation-request",
+  "day": 77,
+  "lesson": "特殊人群续：关节骨骼、运动员与低能量可用性",
+  "styleReference": "templates/study/v1/image-style.json",
+  "commonRequirements": [
+    "固定波吉与德斯帕、二维健身科学教学插画、细深灰轮廓和平涂；每张仅出现两位固定角色。",
+    "每张输出真实透明PNG，未绘制区域alpha为0；无诊室、赛场、观众、地板、边框、阴影、棋盘格、水印或品牌。",
+    "AI图内不得出现文字、数字、体重秤、月经或骨骼医学图、低体重刻板印象、医疗符号、药物、箭头、图表、奖牌或赛事Logo。",
+    "不将任何体型、性别、关节状况或能量问题视觉化为刻板印象。用低冲击功能训练、稳定支撑、无字计划卡、普通水杯和开放手势表达风险分层与转介。"
+  ],
+  "assets": [
+    {"file": "cover.png", "role": "cover", "targetSize": [1600, 900], "topic": "功能、需求与风险分层", "teachingRelationship": "稳定训练、项目计划和健康信号需要共同评估", "composition": "横向16:9，德斯帕站在低台阶与无字训练卡旁做开放手势，波吉做稳健台阶上步准备；无赛场或体重符号", "allowedText": "none", "anatomyAndTechniqueConstraints": "台阶低且稳定，上步全脚掌着台、膝盖对线；不画跳跃或跌倒。"},
+    {"file": "visual-01-function.png", "role": "knowledge", "targetSize": [2800, 900], "topic": "低冲击功能起点", "teachingRelationship": "步行、坐站和提物等能力可逐步建立", "composition": "横向28:9，德斯帕做稳定的轻提物动作，波吉从长凳坐起；无秤、无体型对比、无文字", "allowedText": "none", "anatomyAndTechniqueConstraints": "提物贴近身体、脊柱中立；坐站脚掌着地，长凳稳定。"},
+    {"file": "visual-02-bone-joint.png", "role": "knowledge", "targetSize": [2800, 900], "topic": "骨关节风险分层", "teachingRelationship": "稳定承重、力量与平衡可按风险调整", "composition": "横向28:9，德斯帕扶稳定长凳做轻度平衡练习，波吉做低台阶上步；无骨骼图或疼痛符号", "allowedText": "none", "anatomyAndTechniqueConstraints": "扶持稳定、台阶低、足膝对线；不画摔倒、扭转或极端屈曲。"},
+    {"file": "visual-03-demand.png", "role": "knowledge", "targetSize": [2800, 900], "topic": "项目与日常需求分析", "teachingRelationship": "不同动作任务决定不同训练优先级", "composition": "横向28:9，德斯帕做轻量药球胸前持球准备，波吉做轻松提物姿态，二人之间有一张空白计划卡；无赛场和箭头", "allowedText": "none", "anatomyAndTechniqueConstraints": "药球贴胸、提物靠身；不做抛掷、冲刺或高风险动作。"},
+    {"file": "visual-04-reds.png", "role": "knowledge", "targetSize": [2800, 900], "topic": "健康信号与多学科转介", "teachingRelationship": "疲劳或骨伤等风险信号时先降低训练风险并连接支持", "composition": "横向28:9，德斯帕把轻哑铃安全放在地面，波吉拿无字水杯并做温和暂停手势，旁有合上的空白文件夹", "allowedText": "none", "anatomyAndTechniqueConstraints": "不画女性身体、月经、骨骼病变、体重或医疗诊断；哑铃安全平放。"},
+    {"file": "overview-01-function.png", "role": "overview-item", "targetSize": [1600, 1200], "topic": "功能起点", "teachingRelationship": "低冲击能力可渐进", "composition": "4:3总览专用，德斯帕轻提物，波吉从稳定长凳坐起", "allowedText": "none", "anatomyAndTechniqueConstraints": "不与知识页复用；提物与坐站安全。"},
+    {"file": "overview-02-bone-joint.png", "role": "overview-item", "targetSize": [1600, 1200], "topic": "骨关节风险", "teachingRelationship": "承重和稳定支撑按风险调整", "composition": "4:3总览专用，德斯帕扶长凳平衡，波吉低台阶上步", "allowedText": "none", "anatomyAndTechniqueConstraints": "不与知识页复用；无骨骼、疼痛或跌倒画面。"},
+    {"file": "overview-03-demand.png", "role": "overview-item", "targetSize": [1600, 1200], "topic": "项目需求", "teachingRelationship": "任务决定训练优先级", "composition": "4:3总览专用，德斯帕轻量持药球，波吉轻松提物，中央留空白计划卡", "allowedText": "none", "anatomyAndTechniqueConstraints": "不与知识页复用；无赛场、奖牌或箭头。"},
+    {"file": "overview-04-reds.png", "role": "overview-item", "targetSize": [1600, 1200], "topic": "低能量信号", "teachingRelationship": "风险信号时先暂停加码并转介", "composition": "4:3总览专用，德斯帕把轻哑铃安全放地面，波吉拿水杯做暂停手势，旁有合上空白文件夹", "allowedText": "none", "anatomyAndTechniqueConstraints": "不与知识页复用；不表现体重、月经、疾病或医疗图示。"}
+  ]
+}

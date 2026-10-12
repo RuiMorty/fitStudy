@@ -1,0 +1,13 @@
+{
+  "day": 65,
+  "title": "维生素与矿物质",
+  "status": "failed",
+  "artifactStatus": "missing-reviewed-source-image",
+  "authorization": "用户于2026-09-30授权连续生成后续本地草稿；每张图片首次请求后最多5次经调整提示词重试，始终不部署。",
+  "imagePlan": "runs/day65/image-prompts.json",
+  "retryPolicy": "每张图片首次请求后，最多5次经调整提示词的重试；成功即停止。",
+  "generated": 8,
+  "planned": 9,
+  "failure": "runs/day65/failure.json",
+  "nextAction": "缺少 visual-03-risk.png 的合格源图，已用尽该图的首次加五次调整请求；不得渲染、安装、部署或用占位图完成本课。"
+}

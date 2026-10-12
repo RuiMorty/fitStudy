@@ -1,0 +1,50 @@
+{
+  "commonPrompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper background, loose paper sheets, border, sticker edge, shadow, or halo. A small unmarked rigid evidence card is allowed as a prop. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nAdditional course-specific guardrails: 固定波吉与德斯帕、二维教学画法、深灰细轮廓和平涂；每张仅两位角色。 输出真实透明PNG；无背景房间、货架、地板、边框、阴影、棋盘格、品牌、水印或商品包装。 AI图内不能出现认证Logo、商标、文字、数字、药片、胶囊、补剂罐、粉末、条形码、手机屏幕、箭头或图表。 用空白硬质证据卡、无字餐盘、水杯、合上的空白文件夹和日常训练姿态表达核对与恢复；不将补剂画成魔法或医疗替代。",
+  "assets": [
+    {
+      "file": "cover.png",
+      "role": "cover",
+      "prompt": "Wide 16:9 wordless single-scene course cover illustration. 横向16:9，波吉与德斯帕在无字普通餐盘、水杯和两张空白卡片旁讨论；无包装、无货架 Teach 补剂安全和恢复复盘: 核对信息和恢复基础共同优先于营销. 食物与水杯完整，无品牌；人物为平静讨论姿态。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters."
+    },
+    {
+      "file": "visual-01-regulation.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. 横向28:9，德斯帕打开空白文件夹，波吉看两张空白卡片；旁边只有无字水杯 Teach 地区与成分核对: 在售产品仍需看完整信息和个人条件. 无监管标识、药品、包装或可读资料。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters."
+    },
+    {
+      "file": "visual-02-certification.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. 横向28:9，波吉和德斯帕并排查看两个不同颜色但无字的空白小卡，采用平衡手势 Teach 认证降低部分风险: 额外核对线索不等于绝对保证. 卡片无Logo、勾选、盾牌或文字；不画任何产品。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters."
+    },
+    {
+      "file": "visual-03-marketing.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. 横向28:9，德斯帕把一张简单空白卡片和一张装饰更复杂但仍无字的卡片并列，波吉做思考手势 Teach 区分证据与故事: 比较需要看研究结构，不看炫目宣传. 不出现星级、对比箭头、文字、前后体型或品牌。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters."
+    },
+    {
+      "file": "visual-04-recovery.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. 横向28:9，德斯帕坐在小桌旁面对无字普通餐盘和水杯，波吉在旁做轻松拉伸准备；无床、时钟或文字 Teach 日常恢复基础: 正餐、水合、睡眠和训练负荷共同构成恢复. 拉伸姿态安全温和，不表现疲劳崩溃或医疗场景。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters."
+    },
+    {
+      "file": "overview-01-regulation.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. 4:3总览专用，德斯帕打开空白文件夹，波吉看空白卡片 Teach 监管差异: 完整信息比包装宣传重要. 不与知识页复用；无Logo或产品。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters."
+    },
+    {
+      "file": "overview-02-certification.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. 4:3总览专用，两人查看两张无字空白小卡并做平衡手势 Teach 认证定位: 认证是额外线索而非零风险. 不与知识页复用；无盾牌、勾选或文字。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters."
+    },
+    {
+      "file": "overview-03-marketing.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. 4:3总览专用，德斯帕在两张无字卡片间做比较手势，波吉思考 Teach 营销识别: 故事与证据需要区分. 不与知识页复用；无图表、前后体型或广告符号。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters."
+    },
+    {
+      "file": "overview-04-recovery.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. 4:3总览专用，波吉面对无字餐盘和水杯，德斯帕在旁做轻松拉伸 Teach 恢复基础: 吃、喝、睡和训练安排共同恢复. 不与知识页复用；无床、时钟或医疗暗示。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "status": "planning-only-no-generation-request",
+  "day": 72,
+  "lesson": "常见合法补剂评估",
+  "styleReference": "templates/study/v1/image-style.json",
+  "commonRequirements": [
+    "固定波吉与德斯帕、二维健身科学教学画法；只出现这两位角色，动作和器械简洁准确。",
+    "每张均为真实透明PNG，未绘制区域alpha为0；没有室内背景、地板、边框、阴影、棋盘格、水印、商标或包装文字。",
+    "AI图内不出现药片、胶囊、粉末、补剂罐、咖啡因/肌酸文字、剂量数字、标签、箭头、图表、评分或赛事Logo。",
+    "用空白证据卡、普通食物、水杯、训练日志和稳定训练姿态表达评估；绝不暗示补剂可替代治疗、诱导滥用或夸张增肌。"
+  ],
+  "assets": [
+    {"file": "cover.png", "role": "cover", "targetSize": [1600, 900], "topic": "补剂评估顺序", "teachingRelationship": "普通食物、训练恢复和证据核对优先于购买产品", "composition": "横向16:9，德斯帕与波吉在普通无字餐盘、水杯和两张空白卡片旁做讨论手势；不画容器和包装", "allowedText": "none", "anatomyAndTechniqueConstraints": "食物道具无品牌，人物不表现夸张体型或服用行为。"},
+    {"file": "visual-01-framework.png", "role": "knowledge", "targetSize": [2800, 900], "topic": "先需求再证据", "teachingRelationship": "训练和基础生活习惯先被检查，产品选择放在后面", "composition": "横向28:9，波吉做轻量深蹲准备，德斯帕拿两张空白卡片观察；旁边仅有水杯和普通餐盘", "allowedText": "none", "anatomyAndTechniqueConstraints": "无秤、药物、补剂包装、文字或箭头；深蹲自然对线。"},
+    {"file": "visual-02-core.png", "role": "knowledge", "targetSize": [2800, 900], "topic": "肌酸与咖啡因的条件化选择", "teachingRelationship": "有效成分也需结合耐受、睡眠和安全", "composition": "横向28:9，德斯帕做轻哑铃推举，波吉在旁手持无字水杯并做平静暂停手势；不画粉末、咖啡或包装", "allowedText": "none", "anatomyAndTechniqueConstraints": "推举在肩前安全位置，哑铃稳定；不表现兴奋、冒险或极端强度。"},
+    {"file": "visual-03-other.png", "role": "knowledge", "targetSize": [2800, 900], "topic": "按任务和耐受选择", "teachingRelationship": "不同训练任务不能用同一种产品逻辑硬套", "composition": "横向28:9，波吉轻松步行，德斯帕在旁持空白小卡做比较手势；有普通水杯但无任何补剂道具", "allowedText": "none", "anatomyAndTechniqueConstraints": "步行稳定，不画耐力极限、药物或图表。"},
+    {"file": "visual-04-safety.png", "role": "knowledge", "targetSize": [2800, 900], "topic": "一次试一种与停止规则", "teachingRelationship": "可追踪的单一改变更易辨认效果与不适", "composition": "横向28:9，德斯帕把一张空白卡片放在小桌上，波吉做记录手势并拿水杯；没有文字或数字", "allowedText": "none", "anatomyAndTechniqueConstraints": "不画日志内容、药物瓶或可读屏幕。"},
+    {"file": "overview-01-framework.png", "role": "overview-item", "targetSize": [1600, 1200], "topic": "评估顺序", "teachingRelationship": "基础和证据先行", "composition": "4:3总览专用，德斯帕拿空白卡片，波吉旁边有普通餐盘和水杯", "allowedText": "none", "anatomyAndTechniqueConstraints": "不与知识页复用；无包装或品牌。"},
+    {"file": "overview-02-core.png", "role": "overview-item", "targetSize": [1600, 1200], "topic": "肌酸咖啡因", "teachingRelationship": "证据强仍要考虑条件", "composition": "4:3总览专用，德斯帕做轻哑铃推举，波吉在旁拿无字水杯", "allowedText": "none", "anatomyAndTechniqueConstraints": "不与知识页复用；没有咖啡、粉末或剂量符号。"},
+    {"file": "overview-03-other.png", "role": "overview-item", "targetSize": [1600, 1200], "topic": "其他成分", "teachingRelationship": "任务与耐受决定是否讨论", "composition": "4:3总览专用，波吉轻松步行，德斯帕做比较手势并持空白小卡", "allowedText": "none", "anatomyAndTechniqueConstraints": "不与知识页复用；无补剂、药片或文字。"},
+    {"file": "overview-04-safety.png", "role": "overview-item", "targetSize": [1600, 1200], "topic": "安全试用", "teachingRelationship": "一次改变、记录和可退出", "composition": "4:3总览专用，德斯帕把空白卡片放小桌，波吉拿水杯做记录姿势", "allowedText": "none", "anatomyAndTechniqueConstraints": "不与知识页复用；无可读记录或包装。"}
+  ]
+}

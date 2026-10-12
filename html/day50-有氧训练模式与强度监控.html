@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Day 50 · 有氧训练模式与强度监控</title><link rel="icon" type="image/svg+xml" href="assets/fitness-study-logo-open-circle.svg?v=a6d8e5caaa61"><style>:root { color-scheme: light; --ink: #111113; --muted: #71717a; --line: #e4e4e7; --accent: #ff5a1f; --green: #0ea66b; --blue: #2563eb; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; font-synthesis: none; letter-spacing: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); overflow-wrap: anywhere; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+img { display: block; max-width: 100%; }
+button:focus-visible, a:focus-visible, summary:focus-visible, input:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
+svg.icon { width: 20px; height: 20px; }
+.icon-button { display: inline-grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 1px solid var(--line); border-radius: 6px; background: white; }
+[hidden] { display: none !important; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
+
+body { background: #f6f8f7; font-size: 14px; line-height: 1.65; }
+main { max-width: 980px; margin: auto; padding: 24px 18px 60px; }
+.header { padding: 22px 4px 14px; }
+h1 { margin: 10px 0 8px; font-size: 36px; line-height: 1.2; }
+h1::before { content: ""; display: block; width: 34px; height: 4px; background: var(--accent); margin-bottom: 10px; }
+h2 { font-size: 17px; margin: 0 0 14px; }
+h3 { font-size: 16px; margin: 0 0 8px; }
+.sub { color: var(--muted); margin: 5px 0 18px; }
+.meta { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { display: inline-block; border: 1px solid var(--line); border-radius: 20px; background: white; color: var(--muted); padding: 3px 10px; font-size: 12px; font-weight: 600; }
+.chip:nth-child(1) { background: #e2f7eb; color: #15803d; border-color: transparent; }
+.chip:nth-child(2) { background: #e7f0fe; color: #2563eb; border-color: transparent; }
+.chip:nth-child(3) { background: #fff2e5; color: #9a4c05; border-color: transparent; }
+.panel, .figure, .warn, .mnemonic { background: white; border: 1px solid #e2e8e4; border-radius: 14px; box-shadow: 0 2px 12px rgba(20,40,30,.06); padding: 20px; margin: 16px 0; }
+.green { border-left: 5px solid var(--green); }
+.orange { border-left: 5px solid #ea7a17; }
+.blue { border-left: 5px solid #0ea5e9; }
+.takeaway { margin: 0; }
+.figure { text-align: center; }
+.figure button { display: block; position: relative; width: 100%; border: 0; padding: 0; background: white; cursor: zoom-in; }
+.figure img { max-height: 760px; width: 100%; object-fit: contain; }
+.figure .icon-button { position: absolute; bottom: 8px; right: 8px; background: #ffffffed; }
+.caption { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
+.kp { list-style: none; padding: 0; margin: 0; }
+.kp > li { border-bottom: 1px dashed #e2e8e4; }
+.kp > li:last-child { border-bottom: 0; }
+.kp summary { cursor: pointer; padding: 13px 8px; font-weight: 650; }
+.kp summary::marker { color: var(--green); }
+.term { color: #0a7d52; background: #e2f7eb; border-radius: 6px; padding: 1px 5px; }
+.kp-body { padding: 2px 14px 16px 24px; }
+.detail-block { margin: 12px 0; }
+.detail-block h4 { font-size: 13px; color: #08744d; margin: 0 0 4px; }
+.detail-block p { margin: 0; white-space: pre-line; }
+.warn { border-left: 5px solid #e23b3b; background: #fffafa; }
+.warn p { margin: 8px 0; }
+.misconception { color: #a82b32; }
+.mnemonic { border-left: 4px solid var(--accent); box-shadow: none; }
+.mnemonic strong { color: #df4716; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+.flip { height: 168px; perspective: 900px; border: 0; background: transparent; padding: 0; text-align: center; }
+.flip-in { display: block; height: 100%; position: relative; transition: transform .45s; transform-style: preserve-3d; }
+.flip[aria-pressed="true"] .flip-in { transform: rotateY(180deg); }
+.face { position: absolute; inset: 0; backface-visibility: hidden; border: 1px solid var(--line); border-radius: 10px; padding: 15px; background: #fafafa; display: flex; align-items: center; justify-content: center; overflow-y: auto; }
+.back { transform: rotateY(180deg); background: #eef9f4; color: #075e40; border-color: #c8eadb; }
+.practice { padding-left: 20px; }
+.practice li { margin: 7px 0; }
+.question { border-top: 1px solid #e2e8e4; padding: 20px 0 8px; margin-top: 12px; min-width: 0; }
+.options { display: grid; gap: 7px; margin: 10px 0; }
+.option { display: flex; gap: 10px; align-items: baseline; border: 1px solid #e2e8e4; background: #f0f4f2; padding: 9px 12px; border-radius: 8px; cursor: pointer; }
+.option input { flex-shrink: 0; accent-color: var(--green); }
+.option:has(input:checked) { border-color: #0ea5e9; background: #e7f6fd; }
+.question[data-result="correct"] .option:has(input:checked) { border-color: #0ea66b; background: #e7f8ef; }
+.question[data-result="wrong"] .option:has(input:checked) { border-color: #e23b3b; background: #fff0f0; }
+.answer { background: #f8fbfa; border-left: 3px solid #0ea5e9; padding: 10px; margin-top: 10px; }
+.check { border: 0; background: #0ea66b; color: white; padding: 9px 14px; border-radius: 7px; }
+footer { color: var(--muted); font-size: 12px; margin-top: 28px; }
+footer ul { padding-left: 20px; }
+dialog { width: min(1200px, 96vw); max-height: 94dvh; padding: 52px 16px 16px; border: 0; border-radius: 8px; background: white; }
+dialog::backdrop { background: #15191dd9; }
+dialog img { width: 100%; max-height: 78dvh; object-fit: contain; }
+dialog .icon-button { position: absolute; top: 8px; right: 10px; }
+@media (max-width: 600px) {
+  main { padding: 16px 12px 40px; }
+  h1 { font-size: 26px; }
+  .header { padding: 16px 4px 12px; }
+  .panel, .figure, .warn, .mnemonic { padding: 15px; }
+  .kp-body { padding-left: 16px; }
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .face { padding: 12px; }
+}
+</style></head><body><main><header class="header"><h1>Day 50 · 有氧训练模式与强度监控</h1><p class="sub">同样骑20分钟，为什么有人练到喘、有人腿先酸？用模式选择、心率算例和谈话边界读懂强度。</p><div class="meta"><span class="chip">阶段2训练科学</span><span class="chip">第8周</span><span class="chip">有氧训练</span></div></header><section class="panel green"><h2>一句话总结</h2><p class="takeaway">有氧训练先解决两个问题：这项运动是否能让你持续完成目标，以及今天的强度是否落在目标范围。跑步与骑行都能刺激心肺，但局部肌群、承重冲击和技术限制不同。心率给出数值，主观用力评分（RPE，Rating of Perceived Exertion）说明全身有多费力，谈话测试标出呼吸变化；三者合起来，才能解释“数字相同、体验不同”的训练。</p></section><figure class="figure"><button data-zoom aria-label="放大详情图"><img class="" src="assets/阶段2训练科学/day50-有氧训练模式与强度监控.png" alt="六主题中文总览：模式选择、交叉训练、心率、主观用力评分、谈话测试与综合监控"><span class="icon-button"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 15 6 6" /><path d="m15 9 6-6" /><path d="M21 16v5h-5" /><path d="M21 8V3h-5" /><path d="M3 16v5h5" /><path d="m3 21 6-6" /><path d="M3 8V3h5" /><path d="M9 9 3 3" /></svg></span></button><figcaption class="caption">有氧训练总览：先选择可持续、安全的运动模式，再以心率、主观用力程度和谈话能力交叉核对当天强度。</figcaption></figure><section class="panel"><h2>核心要点</h2><ul class="kp"><li><details><summary><span class="term">模式选择：先找谁在限制你</span>：模式不是器械清单。先问：是呼吸先跟不上，还是小腿、膝、腰或肩先限制你？</summary><div class="kp-body"><section class="detail-block"><h4>跑步与骑行不是等价替换</h4><p>跑步有反复落地与承重，骑行减少落地冲击，却会把较多负担集中到踩踏肌群。若20分钟目标是心肺训练，跑10分钟小腿就痛，改骑行可能更容易完成当日心肺量；若目标是跑步比赛，仍需在耐受范围内逐步练跑。</p></section><section class="detail-block"><h4>低冲击要看局部瓶颈</h4><p>骑行座高不合适可能让膝部不舒服；划船节奏混乱可能让腰背先疲劳；游泳也受技术和肩部耐受限制。换模式前先确认限制来自冲击、姿势、技术还是总负荷。</p></section><section class="detail-block"><h4>用三问作选择</h4><p>目标需要哪种专项动作？目前哪一部位先限制？换成另一模式后能否在动作稳定、无加重不适的情况下完成计划时长？记录答案，比照“哪台器械燃脂多”更有用。</p></section></div></details></li><li><details><summary><span class="term">交叉训练：替换刺激，要算账</span>：交叉训练的意义是改变局部负担，同时保留所需心肺刺激；“换一种运动”不自动等于恢复。</summary><div class="kp-body"><section class="detail-block"><h4>先区分替换与叠加</h4><p>原计划周二跑30分钟，若改为舒适骑行30分钟，这是替换；若跑完再骑30分钟，则是额外训练量。两者对恢复的要求完全不同。</p></section><section class="detail-block"><h4>心肺刺激与专项能力分开看</h4><p>单车能让呼吸和循环系统工作，却不能完整复制跑步的落地、步态与肌腱负荷。备赛跑者可以用骑行补充有氧时间，但关键跑步暴露需渐进保留。</p></section><section class="detail-block"><h4>比较训练前后反应</h4><p>记录模式、时长、主观用力评分（RPE）、局部感觉和次日反应。若换成骑行后心肺目标能完成、原本足部不适未加重，替换有实际价值；若骑行把膝部练得更不适，还要再调设置或计划。</p></section></div></details></li><li><details><summary><span class="term">心率：同一个70%，可能差18次/分</span>：最大心率百分比（%HRmax）与心率储备百分比（%HRR）算法不同，不能把两个“70%”当成相同目标；公式算出的是起点，不是身体必须服从的数字。</summary><div class="kp-body"><section class="detail-block"><h4>把数字代进去</h4><p>假设最大心率180次/分、静息心率60次/分：最大心率百分比70%（70%HRmax）＝180×0.70＝126次/分；心率储备百分比70%（70%HRR）＝(180－60)×0.70＋60＝144次/分。这套储备心率目标值算法也叫卡沃宁公式（Karvonen公式）；心率储备（HRR）就是最大心率减静息心率，两种算法相差18次/分，记录时必须注明算法。</p></section><section class="detail-block"><h4>估算不等于个人阈值</h4><p>最大心率若由年龄公式估计，本身有明显个体误差；静息心率也要在相似条件下测量。不要因为腕表显示“目标区间”就忽略呼吸、局部疼痛或异常症状。</p></section><section class="detail-block"><h4>看变化原因再决定</h4><p>同样速度下心率逐渐升高，可能与热、脱水、疲劳、坡度或测量误差有关。先减速并检查环境与设备，同时用主观用力评分（RPE）和谈话能力核对；胸痛、晕厥感或异常气促时停止并寻求医疗评估。</p></section></div></details></li><li><details><summary><span class="term">主观用力评分（RPE）：给整体负担一个稳定刻度</span>：RPE是“主观用力评分”（Rating of Perceived Exertion），回答“此刻我整体有多费力”，不是把手表心率翻译成另一个数字。</summary><div class="kp-body"><section class="detail-block"><h4>先选一套量表</h4><p>博格主观用力量表（Borg量表）常用6—20分：6接近完全不费力，20接近最大努力；另一套0—10分量表中，0为休息，10为最大努力。记录时写明使用哪套，例如“0—10分RPE＝4”，不要把两套数字直接比较。</p></section><section class="detail-block"><h4>给自己的4分做锚点</h4><p>一次20分钟骑行中，如果能完整交谈、呼吸加快但可控，你可能把它记为0—10的3—4分。之后在相同模式下比较：相近速度变成6分，说明当天负担上升，需要查睡眠、热环境、恢复或身体状态。</p></section><section class="detail-block"><h4>局部累不等于心肺强</h4><p>骑行时股四头肌先酸、呼吸仍轻松，说明腿部可能先限制；提高阻力未必是更好的有氧刺激。可调低阻力、提高舒适踏频，或改模式，再观察整体RPE与呼吸。</p></section></div></details></li><li><details><summary><span class="term">谈话测试：识别呼吸转折，不机械贴强度分区</span>：谈话测试能帮助识别从舒适交谈到说话困难的转折；Zone是“强度分区”的英文称呼，编号因分区模型而异，不能由“能唱歌”直接判定。</summary><div class="kp-body"><section class="detail-block"><h4>怎样现场测试</h4><p>稳定运动几分钟后，试着说一整句正常长度的话：能自然连续说完，通常提示强度较易持续；说完要明显换气，已接近交谈边界；只能说短词或短句，强度更高。</p></section><section class="detail-block"><h4>把目标与边界连起来</h4><p>若当天目标是轻松基础训练，一旦原本能自然说话变成只能断句，就应放慢或降低阻力。若本来计划较高强度间歇，短时断句可能符合任务，但需看既定时长、恢复和症状。</p></section><section class="detail-block"><h4>乳酸不是万能号码</h4><p>血乳酸可用于规范测试中观察强度转折，但采样时点、方案和个体状态都会影响解释。没有个人测试，不要拿某个固定乳酸值或一条谈话规则给所有人划同一个强度分区（Zone）。</p></section></div></details></li><li><details><summary><span class="term">综合判断：读数冲突时怎么办</span>：把心率、主观用力评分（RPE）、谈话能力和局部反应放在同一时间点，训练目标决定如何解释它们。</summary><div class="kp-body"><section class="detail-block"><h4>情境一：心率正常，感觉异常累</h4><p>原计划舒适骑行，心率仍在平常范围，但0—10 主观用力评分（RPE）从4升到7、完整说话变难。先降阻力或暂停；数字“正常”不能否定真实负担。</p></section><section class="detail-block"><h4>情境二：心率异常高，感觉轻松</h4><p>先确认腕表佩戴和信号，再看热、咖啡因、睡眠与药物等因素。不要立即追着读数加速或硬守原配速；记录变化，必要时结束训练。</p></section><section class="detail-block"><h4>一条可复用记录</h4><p>写下“模式＋时长＋目标＋关键时点心率＋主观用力评分（RPE）＋能否完整说话＋局部症状＋次日反应”。下次比较相似条件下的趋势，再决定延长、维持或降低训练量。</p></section></div></details></li></ul></section><section class="warn"><h2>常见误区</h2><p><strong class="misconception">误区：跑步不舒服，换成任何运动就一定没问题。</strong><br>辨析：先停下观察不适；换成步行或骑车后，也要看动作和不适有没有改善。</p><p><strong class="misconception">误区：交叉训练就是把跑步、骑车和划船都加上。</strong><br>辨析：先分清替换还是额外加练；有跑步目标时，仍要逐步保留能承受的跑步。</p><p><strong class="misconception">误区：估算最大心率后，手表数字就是绝对正确的强度。</strong><br>辨析：最大心率估算和手表读数都可能有误差；还要看自己有多费力、能否顺畅说话，以及有没有不适。</p><p><strong class="misconception">误区：0—10分量表的4分等于博格6—20分量表的4分。</strong><br>辨析：两套量表的起点和刻度不同，不能直接换算；选一套持续记录。</p><p><strong class="misconception">误区：只能说短句就一定是手表显示的Zone 3。</strong><br>辨析：说话能力提示呼吸负担；Zone是强度区间，编号取决于分区方法，不能机械对应。</p></section><section class="mnemonic"><h2>记忆口诀</h2><p><strong>模式先合适，强度看三样：心率有趋势，主观能复述，谈话来核对。</strong></p></section><section class="panel"><h2>翻转卡复习</h2><div class="cards"><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">选择有氧模式时先比较哪三类因素？</span><span class="face back" aria-hidden="true">目标与场地、关节冲击与局部耐受、动作技术与可持续性。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">交叉训练的核心目的？</span><span class="face back" aria-hidden="true">在保留必要专项的同时，分散重复负担、补充容量或维持兴趣；不是无上限加量。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">最大心率180、静息心率60时，按最大心率百分比和心率储备百分比分别算70%，结果是多少？</span><span class="face back" aria-hidden="true">70%最大心率（70%HRmax）＝126次/分；70%心率储备（70%HRR）＝(180－60)×0.70＋60＝144次/分。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">最大心率百分比（%HRmax）与心率储备百分比（%HRR）为何不能互换？</span><span class="face back" aria-hidden="true">前者只以最大心率为参照，后者把静息心率纳入计算；同一人得到的目标数字可不同。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">博格6—20分量表与0—10分主观用力评分（RPE）如何使用？</span><span class="face back" aria-hidden="true">选择一套固定记录，描述整体呼吸、腿部负担和努力感，再与其他线索校准。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">谈话能力能直接对应强度分区Zone 1/2/3吗？</span><span class="face back" aria-hidden="true">不能。它们描述谈话能力随强度的变化；强度分区（Zone）的编号取决于所用分区模型和个体阈值。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">为什么不能把乳酸固定值套给所有人？</span><span class="face back" aria-hidden="true">阈值受测试方案、个体和训练状态影响，必须在规范测试背景中解释。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">心率与RPE明显矛盾时怎么办？</span><span class="face back" aria-hidden="true">先检查设备、环境和恢复情况，采用更保守强度或结束训练，不盲从单一读数。</span></span></button></div></section><section class="panel orange"><h2>实操关联</h2><ul class="practice"><li>为本周列出两种主要有氧模式和一种替代模式，写下各自的冲击、技术要求与最容易出现的不适部位。</li><li>做20分钟舒适步行、骑行或椭圆训练，在第5、10、15分钟记录心率（若可用）、0—10 主观用力评分（RPE）和一句完整话是否能轻松说完。</li><li>设最大心率180次/分、静息心率60次/分，亲自算70%最大心率与70%心率储备，写下两者相差多少；再解释为什么不能直接互换。</li><li>选择固定的一套主观用力评分（RPE）量表，连续三次记录相同模式下的时长、主观用力评分（RPE）、谈话感受和次日恢复，不把不同量表的数字混写。</li><li>若跑步时某个部位开始不舒服，先将当日剩余时间改为舒适骑行或步行，并记录替换前后心率、主观用力评分（RPE）与局部感觉。</li><li>做一次20分钟舒适有氧：第5、10、15分钟分别写下能否自然说完整句、0—10 主观用力评分（RPE）和心率（若有）；若三者出现明显冲突，说明你会怎样调整。</li></ul></section><section class="panel blue"><h2>练习题</h2><section class="question" data-answers="[1]" data-explanation="当日心肺目标和跑步专项是两件事；可用骑行替换当日模式，但专项跑步仍需在耐受范围内渐进保留。"><h3>1. 单选：小陈想做20分钟有氧，但跑10分钟小腿开始痛；骑车时呼吸能提高且小腿不再加重。今天更合理的选择是？</h3><div class="options"><label class="option"><input type="radio" name="question-0" value="0"><span>A. 继续跑到20分钟，心肺效果才有效</span></label><label class="option"><input type="radio" name="question-0" value="1"><span>B. 先以舒适骑行完成心肺目标，并记录局部反应；若有跑步目标，之后再渐进安排跑步</span></label><label class="option"><input type="radio" name="question-0" value="2"><span>C. 把跑步速度提高以缩短落地时间</span></label><label class="option"><input type="radio" name="question-0" value="3"><span>D. 骑行完全替代以后的所有跑步练习</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[0]" data-explanation="最大心率百分比：180×0.70＝126；心率储备百分比：(180－60)×0.70＋60＝144次/分。两种百分比不能互换。"><h3>2. 单选：最大心率180、静息心率60次/分时，70%最大心率与70%心率储备分别是多少？</h3><div class="options"><label class="option"><input type="radio" name="question-1" value="0"><span>A. 126与144次/分</span></label><label class="option"><input type="radio" name="question-1" value="1"><span>B. 144与126次/分</span></label><label class="option"><input type="radio" name="question-1" value="2"><span>C. 126与126次/分</span></label><label class="option"><input type="radio" name="question-1" value="3"><span>D. 70与70次/分</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[0,1,2,4]" data-explanation="心率、RPE和谈话能力应交叉使用；疼痛或异常气促不能被单一数字覆盖。"><h3>3. 多选：哪些说法符合正确使用强度监控？</h3><div class="options"><label class="option"><input type="checkbox" name="question-2" value="0"><span>A. 估算最大心率存在个体误差</span></label><label class="option"><input type="checkbox" name="question-2" value="1"><span>B. 腕表、环境与恢复会影响心率解释</span></label><label class="option"><input type="checkbox" name="question-2" value="2"><span>C. 可固定使用一套RPE量表作纵向记录</span></label><label class="option"><input type="checkbox" name="question-2" value="3"><span>D. 只要心率达标就可忽略疼痛与气促</span></label><label class="option"><input type="checkbox" name="question-2" value="4"><span>E. 谈话测试可作为没有设备时的线索</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[0,2,3]" data-explanation="交叉训练可分散负担，但不能抹去专项需求或总负荷；不同模式的实际强度仍要判断。"><h3>4. 多选：关于交叉训练，哪些做法合理？</h3><div class="options"><label class="option"><input type="checkbox" name="question-3" value="0"><span>A. 部分跑步可用低冲击骑行替换以分散冲击</span></label><label class="option"><input type="checkbox" name="question-3" value="1"><span>B. 备赛跑者可永远不再跑步</span></label><label class="option"><input type="checkbox" name="question-3" value="2"><span>C. 替代训练也应计入总时长与强度</span></label><label class="option"><input type="checkbox" name="question-3" value="3"><span>D. 应保留与主要目标相关的渐进专项暴露</span></label><label class="option"><input type="checkbox" name="question-3" value="4"><span>E. 高阻力骑行一定比慢跑更轻松</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[1]" data-explanation="主观负担和谈话能力明显变差时，要按实际身体反应调整；手表读数不能否定它们。"><h3>5. 案例：小周骑车做舒适训练，腕表心率与平时相近，但0—10分主观用力评分（RPE）从4升到7，原本能完整说话现在只能断句。应如何处理？</h3><div class="options"><label class="option"><input type="radio" name="question-4" value="0"><span>A. 心率正常就继续维持原阻力</span></label><label class="option"><input type="radio" name="question-4" value="1"><span>B. 先降低阻力或暂停，检查热、疲劳与身体状态，并记录这次变化</span></label><label class="option"><input type="radio" name="question-4" value="2"><span>C. 提高阻力让心率跟上主观感觉</span></label><label class="option"><input type="radio" name="question-4" value="3"><span>D. 只保留心率记录，忽略RPE和说话能力</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[1]" data-explanation="谈话测试适合监控呼吸负担和交谈边界，不能机械地给所有人套统一强度分区编号。"><h3>6. 案例：有人说“能唱歌就是强度分区Zone 1，能说话就是Zone 2，只能断句就是Zone 3”。怎样判断这句话？</h3><div class="options"><label class="option"><input type="radio" name="question-5" value="0"><span>A. 所有分区模型都适用</span></label><label class="option"><input type="radio" name="question-5" value="1"><span>B. 谈话能力能提示强度转折，但Zone编号依赖具体分区方法与个人阈值</span></label><label class="option"><input type="radio" name="question-5" value="2"><span>C. 只有测血乳酸才能知道是否正在做有氧训练</span></label><label class="option"><input type="radio" name="question-5" value="3"><span>D. 只要会说话就一定是恢复训练</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section></section><footer>Day 50/110<ul><li>本课结构依据项目课程纲要 fitness_syllabus.md 的 Day50 五项主题；当前工作区未提供对应教材全文或页码，以下书目未作逐页核对。</li><li>延伸阅读：美国运动医学会（ACSM）的《运动测试与运动处方指南》（ACSM&#39;s Guidelines for Exercise Testing and Prescription）第11版，运动强度处方相关内容；具体数值应用应以手头版本原文核对。</li><li>延伸阅读：Borg（博格）的《主观用力与疼痛量表》（Borg&#39;s Perceived Exertion and Pain Scales）；本课用量表锚点解释日常记录。</li><li>安全提示：本课只用于一般健身教育；胸痛、晕厥感、异常气促或持续疼痛时停止并寻求医疗评估。</li></ul></footer></main><dialog aria-label="详情大图"><button class="icon-button" aria-label="关闭大图" title="关闭大图"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></button><img alt=""></dialog><script>document.querySelectorAll('.flip').forEach((button) => {
+  button.addEventListener('click', () => {
+    const pressed = button.getAttribute('aria-pressed') !== 'true';
+    button.setAttribute('aria-pressed', String(pressed));
+    button.querySelector('.front').setAttribute('aria-hidden', String(pressed));
+    button.querySelector('.back').setAttribute('aria-hidden', String(!pressed));
+  });
+});
+document.querySelectorAll('.question').forEach((question) => {
+  question.querySelector('.check').addEventListener('click', () => {
+    const selected = [...question.querySelectorAll('input:checked')].map((input) => Number(input.value)).sort();
+    const answer = question.querySelector('.answer');
+    answer.hidden = false;
+    if (!selected.length) { answer.textContent = '请先选择答案。'; delete question.dataset.result; return; }
+    const correct = JSON.stringify(selected) === JSON.stringify(JSON.parse(question.dataset.answers).sort());
+    question.dataset.result = correct ? 'correct' : 'wrong';
+    answer.textContent = `${correct ? '回答正确。' : '再想一想。'}${question.dataset.explanation}`;
+  });
+});
+const imageDialog = document.querySelector('dialog');
+document.querySelectorAll('[data-zoom]').forEach((button) => {
+  button.addEventListener('click', () => {
+    const original = button.querySelector('img');
+    const image = imageDialog.querySelector('img');
+    image.src = original.src;
+    image.alt = original.alt;
+    imageDialog.showModal();
+  });
+});
+imageDialog.querySelector('button').addEventListener('click', () => imageDialog.close());
+imageDialog.addEventListener('click', (event) => {
+  const rect = imageDialog.getBoundingClientRect();
+  if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) imageDialog.close();
+});
+</script></body></html>

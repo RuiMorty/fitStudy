@@ -1,0 +1,223 @@
+{
+  "topic": "长时间有氧运动的供能阶段",
+  "date": "2026-10-08",
+  "format": "7 张 3:4 小红书知识图（封面 + 6 张图表）",
+  "assumption": "从静止平稳进入中等强度；正常进食，运动中不补糖。时间是变化趋势，不是燃料切换点。",
+  "slides": [
+    {
+      "id": "01-cover",
+      "title": "跑步 30 分钟，才开始燃脂？",
+      "visual": "瑞克人物位于 PCr、糖、脂肪三种不同角色的并行路线旁；线段只表示参与，不是供能占比",
+      "answer": "脂肪从起步就参与；没有 30 分钟开关。",
+      "asset": "assets/rick-standing-cutout.png",
+      "rick_source": "xhs-wrong-notebook/2026-09-22-joint-actions/00-rick-muscular-cartoon-model-v4.png",
+      "interpretation": "PCr 是快速 ATP 缓冲；糖与脂肪是燃料底物。"
+    },
+    {
+      "id": "02-timeline",
+      "title": "有氧运动，到底先烧什么？",
+      "visual": "从起步到更久的并行阶段时间条；阶段间距与供能占比均不按比例",
+      "lanes": [
+        {
+          "name": "PCr",
+          "meaning": "起步快速补位，之后仍在周转；线粗不代表供能占比"
+        },
+        {
+          "name": "糖类",
+          "meaning": "肌糖原与血糖从起步持续参与"
+        },
+        {
+          "name": "脂肪",
+          "meaning": "从起步参与；中低强度持续运动时占比通常逐渐上升"
+        }
+      ],
+      "takeaway": "脂肪从运动开始就参与；三条线都不是供能占比曲线。"
+    },
+    {
+      "id": "03-onset",
+      "title": "起步 120 秒，PCr 怎样变化？",
+      "visual": "PCr 完成本次下降幅度的比例曲线",
+      "model": {
+        "formula": "100 × (1 − exp(−t / 33))",
+        "tau_seconds": 33,
+        "points": [
+          {
+            "seconds": 33,
+            "decline_progress_pct": 63
+          },
+          {
+            "seconds": 66,
+            "decline_progress_pct": 86
+          },
+          {
+            "seconds": 99,
+            "decline_progress_pct": 95
+          }
+        ],
+        "study_context": "Rossiter 等 2002 年的乳酸阈下恒负荷膝伸肌实验；此曲线为归一化示意，并非跑步实测。"
+      },
+      "concurrent": [
+        "肌糖原从起步参与",
+        "有氧氧化从起步参与"
+      ],
+      "limitation": "纵轴不是 PCr 剩余存量，也不是 ATP 供能占比。"
+    },
+    {
+      "id": "04-routes",
+      "title": "4 个角色，不是 4 个时段",
+      "visual": "四幅灵智生成的 RGBA PNG 代谢流程插画；未使用 SVG",
+      "roles": [
+        {
+          "name": "肌糖原",
+          "destination": "主要供所在工作肌使用",
+          "timing": "起步就参与"
+        },
+        {
+          "name": "肝糖原",
+          "destination": "肝脏释放葡萄糖进入血液",
+          "timing": "运动中支持血糖"
+        },
+        {
+          "name": "脂肪",
+          "destination": "脂肪酸在肌肉氧化",
+          "timing": "起步就参与"
+        },
+        {
+          "name": "糖异生",
+          "destination": "利用乳酸、甘油等制造葡萄糖，支持血糖",
+          "timing": "早期就可能参与"
+        }
+      ],
+      "limitation": "糖异生是产糖过程，不能与糖、脂肪氧化量相加。",
+      "artwork": {
+        "肌糖原": "assets/muscle-glycogen.png",
+        "肝糖原": "assets/liver-glycogen.png",
+        "脂肪": "assets/fat-oxidation.png",
+        "糖异生": "assets/gluconeogenesis.png"
+      }
+    },
+    {
+      "id": "05-duration",
+      "title": "越跑越久，四项指标怎么变？",
+      "visual": "30–120 分钟内四项不同指标的定性趋势图，无数值纵轴",
+      "indicators": [
+        {
+          "name": "肌糖原氧化",
+          "measure": "利用速率",
+          "usual_direction": "下降"
+        },
+        {
+          "name": "血浆脂肪酸",
+          "measure": "氧化量",
+          "usual_direction": "上升"
+        },
+        {
+          "name": "肝糖原",
+          "measure": "储量",
+          "usual_direction": "下降"
+        },
+        {
+          "name": "糖异生",
+          "measure": "占内源性葡萄糖生成的比例",
+          "usual_direction": "上升"
+        }
+      ],
+      "limitation": "指标单位不同，不能相加为 100%；进食、强度、训练水平与补糖会改变趋势。"
+    },
+    {
+      "id": "06-amounts",
+      "title": "同样 600 kcal/h，糖脂能差多少？",
+      "visual": "总糖与总脂肪氧化量并列柱状图",
+      "example": "70 kg 跑者，稳定运动 1 小时，忽略蛋白质氧化。体重只作情境说明；克数由能耗和 RER 估算。",
+      "rows": [
+        {
+          "rer": "0.80",
+          "carbohydrate_g_per_h": 54,
+          "fat_g_per_h": 42
+        },
+        {
+          "rer": "0.85",
+          "carbohydrate_g_per_h": 81,
+          "fat_g_per_h": 31
+        },
+        {
+          "rer": "0.90",
+          "carbohydrate_g_per_h": 108,
+          "fat_g_per_h": 20
+        }
+      ],
+      "limitation": "总糖氧化无法直接拆为肌糖原与肝糖原消耗；脂肪氧化量也不等于体脂减少量。"
+    },
+    {
+      "id": "07-donut",
+      "title": "饼图看一个例子：糖与脂肪同时供能",
+      "visual": "600 kcal/h、RER 0.85 情境中的氧化供能能量占比圆环图",
+      "energy_share_pct": {
+        "carbohydrate": 51,
+        "fat": 49
+      },
+      "time_windows": [
+        {
+          "time": "3–30 分钟",
+          "usual_pattern": "糖和脂肪并行，有氧供能逐步稳定"
+        },
+        {
+          "time": "30–120 分钟",
+          "usual_pattern": "肌糖原利用速率常下降，血液脂肪酸氧化常上升"
+        },
+        {
+          "time": "2 小时后",
+          "usual_pattern": "肝糖原趋少，糖异生维持血糖更重要"
+        }
+      ],
+      "takeaway": "没有 30 分钟后才开始燃脂的开关。",
+      "limitation": "圆环是这个演算例子的能量占比，不是所有人的固定比例；不能把克数直接当成圆环角度。"
+    }
+  ],
+  "calculation": {
+    "energy_kcal_per_h": 600,
+    "method": "按稳态 RER、Weir 能量消耗公式和 Frayn 底物氧化公式估算，忽略蛋白质氧化；展示值四舍五入。",
+    "warning": "RER 仅适用于相对稳态的底物估算。图中的克数是总糖和总脂肪氧化量，不能直接拆为肌糖原、肝糖原或糖异生来源；圆环角度使用氧化能量占比。",
+    "energy_share_method": "RER 0.85 的圆环按 Weir 与 Frayn 的生理氧化热值估算糖/脂能量占比；不用食物标签的 4/9 kcal/g 直接换算。"
+  },
+  "sources": [
+    {
+      "label": "Rossiter 等，2002；中等强度运动中 PCr 起始下降动力学",
+      "url": "https://europepmc.org/article/MED/12068057",
+      "doi": "10.1113/jphysiol.2001.012910"
+    },
+    {
+      "label": "Gaitanos 等，1993；首次 6 秒全力冲刺中 PCr 与糖酵解贡献",
+      "url": "https://europepmc.org/article/MED/8226473",
+      "doi": "10.1152/jappl.1993.75.2.712"
+    },
+    {
+      "label": "Romijn 等，1993；65% 最大摄氧量持续 2 小时的底物变化",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8214047/",
+      "doi": "10.1152/ajpendo.1993.265.3.E380"
+    },
+    {
+      "label": "Murray 与 Rosenbloom，2018；肌糖原和肝糖原储量",
+      "url": "https://europepmc.org/articles/PMC6019055",
+      "doi": "10.1093/nutrit/nuy001"
+    },
+    {
+      "label": "Baker 等，2010；ATP 与 PCr 的储量和作用",
+      "url": "https://europepmc.org/articles/PMC3005844",
+      "doi": "10.1155/2010/905612"
+    },
+    {
+      "label": "Weir，1949；能量消耗计算",
+      "url": "https://doi.org/10.1113/jphysiol.1949.sp004363",
+      "doi": "10.1113/jphysiol.1949.sp004363"
+    },
+    {
+      "label": "Frayn，1983；糖和脂肪氧化计算",
+      "url": "https://doi.org/10.1152/jappl.1983.55.2.628",
+      "doi": "10.1152/jappl.1983.55.2.628"
+    }
+  ],
+  "style_reference": "xhs-knowledge/2026-09-28-warmup/images/warmup-preview-v2-rick.png",
+  "revision": 3,
+  "art_direction": "9 月 28 日知识图的米白纸张、砖红标题与深色正文；瑞克人物剪影放在封面与来源图旁。肌糖原、肝糖原、脂肪、糖异生插画由 lingzhi-image / gpt-image-2.5-sunburst 生成 RGBA PNG，中文文字和图表由 Pillow 排版；未使用 SVG。"
+}

@@ -1,0 +1,36 @@
+{
+  "day": 50,
+  "title": "有氧训练模式与强度监控",
+  "status": "awaiting-review",
+  "artifactStatus": "ready-local-draft",
+  "startedAt": "2026-09-29T06:00:00+08:00",
+  "authorization": "用户于2026-09-30明确授权每张图片可在首次后重试五次；今日连续生成后续本地草稿但不部署。",
+  "imagePlan": "runs/day50/image-prompts.json",
+  "generated": 13,
+  "planned": 13,
+  "retryPolicy": "runs/day50/retry-policy.json",
+  "previousFailure": "runs/day50/failure.json",
+  "sourceQualityReview": "runs/day50/visual-quality-review.json",
+  "verification": {
+    "templateTests": "17 passed",
+    "browser": "runs/day50/verification/report.json",
+    "imageProcessing": "runs/day50/image-processing.json",
+    "zip": "xhs/day50/day50-xhs.zip"
+  },
+  "localPreview": {
+    "course": "http://127.0.0.1:8420/html/day50-%E6%9C%89%E6%B0%A7%E8%AE%AD%E7%BB%83%E6%A8%A1%E5%BC%8F%E4%B8%8E%E5%BC%BA%E5%BA%A6%E7%9B%91%E6%8E%A7.html",
+    "xhs": "http://127.0.0.1:8420/xhs/day50/index.html",
+    "zip": "http://127.0.0.1:8420/xhs/day50/day50-xhs.zip"
+  },
+  "batchPolicy": "runs/daily-preview/batch-20260930.json",
+  "nextAction": "等待用户复核 Day50 内容修订；仍为本地草稿，未授权发布。",
+  "contentRevision": {
+    "date": "2026-10-08",
+    "reason": "用户反馈知识点空泛，缺少可学的案例与推导",
+    "scope": "课程正文六主题、算例、练习题、小红书六张知识页及文案",
+    "sourceAudit": "已对照 fitness_syllabus.md Day50 五项主题；工作区没有对应教材全文或页码，因此未声称逐页教材核对",
+    "verification": "共用模板测试17/17；整包重新渲染并完成版面目检；本地草稿安装完成；7张slide PNG与ZIP一致、CRC通过。此前课程交互浏览器验证记录仍在 runs/day50/verification/report.json。",
+    "userAcceptance": "pending",
+    "followUp": "2026-10-08：Day50 小红书全部知识页改为生活应用优先；caption 精简为一段总结。"
+  }
+}

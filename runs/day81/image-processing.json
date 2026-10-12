@@ -1,0 +1,435 @@
+{
+  "processedAt": "2026-09-30T23:56:04.661868+00:00",
+  "method": "trim near-transparent noise; reviewed crop; uniform scale; transparent margin",
+  "assets": [
+    {
+      "source": "runs/day81/source/cover.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "sourceSha256": "539a98a9f23d48bc5308f6c9ba0b1d4221ea555f581c7c20ff98ccfb0b582d64",
+      "reviewedCrop": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "visibleCrop": [
+        69,
+        16,
+        1582,
+        918
+      ],
+      "output": "runs/day81/assets/cover.png",
+      "size": [
+        1600,
+        900
+      ],
+      "subjectSize": [
+        1328,
+        792
+      ],
+      "offset": [
+        136,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "无字封面"
+    },
+    {
+      "source": "runs/day81/source/visual-01.png",
+      "sourceSize": [
+        1916,
+        821
+      ],
+      "sourceSha256": "280a96cd7a7af44ec3bbf36053c2c8ae90198f82e174ad44e11067c9112c906a",
+      "reviewedCrop": [
+        0,
+        0,
+        1916,
+        821
+      ],
+      "visibleCrop": [
+        14,
+        12,
+        1892,
+        810
+      ],
+      "output": "runs/day81/assets/visual-01.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1864,
+        792
+      ],
+      "offset": [
+        468,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "五阶段与三层级知识页配图"
+    },
+    {
+      "source": "runs/day81/source/visual-02.png",
+      "sourceSize": [
+        1870,
+        841
+      ],
+      "sourceSha256": "4e4cf5b9f380479ca42701dffadf972ca532d4200ecfb03303d16f12fe8c4118",
+      "reviewedCrop": [
+        0,
+        0,
+        1870,
+        841
+      ],
+      "visibleCrop": [
+        415,
+        17,
+        1459,
+        822
+      ],
+      "output": "runs/day81/assets/visual-02.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1027,
+        792
+      ],
+      "offset": [
+        886,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "阶段选择看五件事知识页配图"
+    },
+    {
+      "source": "runs/day81/source/visual-03.png",
+      "sourceSize": [
+        2019,
+        779
+      ],
+      "sourceSha256": "114f2757972f2d76e6b47f0a6ac8280eb415bb850bec6728793aeccda6faa8f4",
+      "reviewedCrop": [
+        0,
+        0,
+        2019,
+        779
+      ],
+      "visibleCrop": [
+        397,
+        15,
+        1741,
+        762
+      ],
+      "output": "runs/day81/assets/visual-03.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1344,
+        747
+      ],
+      "offset": [
+        728,
+        76
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "每阶段都有进入条件知识页配图"
+    },
+    {
+      "source": "runs/day81/source/visual-04.png",
+      "sourceSize": [
+        1983,
+        793
+      ],
+      "sourceSha256": "9a5a04ea35b8e7d5aaf2831a66f052e97a7369f96028bb3d48ae8f7572362858",
+      "reviewedCrop": [
+        0,
+        0,
+        1983,
+        793
+      ],
+      "visibleCrop": [
+        137,
+        16,
+        1748,
+        775
+      ],
+      "output": "runs/day81/assets/visual-04.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1611,
+        759
+      ],
+      "offset": [
+        594,
+        70
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "把原则接到变量知识页配图"
+    },
+    {
+      "source": "runs/day81/source/visual-05.png",
+      "sourceSize": [
+        1916,
+        821
+      ],
+      "sourceSha256": "fd0aa109fb27be88a3f8b8c2548287e833ab8619905d4245fa4bbf60f4427d28",
+      "reviewedCrop": [
+        0,
+        0,
+        1916,
+        821
+      ],
+      "visibleCrop": [
+        447,
+        13,
+        1497,
+        808
+      ],
+      "output": "runs/day81/assets/visual-05.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1046,
+        792
+      ],
+      "offset": [
+        877,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "重新评估不是退步知识页配图"
+    },
+    {
+      "source": "runs/day81/source/overview-01.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "5bb2311a5d3a35a8fcac047ac6f20f31a3c5457df3e4622716636d8667d6b3a3",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        11,
+        37,
+        1422,
+        1046
+      ],
+      "output": "runs/day81/assets/overview-01.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1411,
+        1009
+      ],
+      "offset": [
+        94,
+        95
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "五阶段与三层级总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day81/source/overview-02.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "432cee0435257da157414d99d092c3d9ea651b15f9e64857999b18e1684debba",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        56,
+        58,
+        1407,
+        1038
+      ],
+      "output": "runs/day81/assets/overview-02.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1351,
+        980
+      ],
+      "offset": [
+        124,
+        110
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "阶段选择看五件事总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day81/source/overview-03.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "55320d1e727eb79a2538cf8783809f5db9853243f8b4d67abe222f6442c070a4",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        54,
+        87,
+        1415,
+        948
+      ],
+      "output": "runs/day81/assets/overview-03.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1361,
+        861
+      ],
+      "offset": [
+        119,
+        169
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "每阶段都有进入条件总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day81/source/overview-04.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "3de84bd811c4d6c86faa4b7266902d4a9e5b6a4e004e5cd20217e7d2a257dab2",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        136,
+        46,
+        1384,
+        1024
+      ],
+      "output": "runs/day81/assets/overview-04.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1248,
+        978
+      ],
+      "offset": [
+        176,
+        111
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "把原则接到变量总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day81/source/overview-05.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "ec004157336935245c684e617ba4ae56247990fa6748b924354b814c8bdf1dea",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        163,
+        15,
+        1332,
+        1059
+      ],
+      "output": "runs/day81/assets/overview-05.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1169,
+        1044
+      ],
+      "offset": [
+        215,
+        78
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "重新评估不是退步总览专用，不与知识页复用"
+    }
+  ]
+}

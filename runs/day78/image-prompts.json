@@ -1,0 +1,50 @@
+{
+  "commonPrompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, ground plane, cast shadow, room, paper background, loose paper sheets, border, sticker edge, shadow, or halo. A small unmarked rigid teaching card is allowed as a prop but must never contain personal information. Behavior-change models are neutral conversation tools: never depict therapy, diagnosis, illness, distress, body-size comparison, scales, mirrors, food, calendars, checklists, medical symbols, warning signs or emergency scenes. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.",
+  "assets": [
+    {
+      "file": "cover.png",
+      "role": "cover",
+      "prompt": "Wide 16:9 wordless single-scene course cover. Exactly one Despa gently presents one walking shoe at chest height while exactly one Bojji indicates one solid low wooden training step with an open hand; both isolated props are fully visible and have no ground beneath them. Explain a respectful conversation about choosing one manageable next activity, not therapy, diagnosis, pressure or a progress score. Use one coherent current pose. Isolate the figures and props on the transparent canvas: no floor, ground plane, cast shadow, room, table, calendar, folder, paper, screen, scale, mirror, medical or security symbol, duplicate figures, alternate poses, motion trails, arrows, readable signs, text, numbers, labels or unrelated equipment."
+    },
+    {
+      "file": "visual-01-stages.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Exactly one Bojji thoughtfully holds one walking shoe near his chest while exactly one Despa responds with a calm open-palm listening gesture. Explain learning a person's present readiness before proposing a next step, not a ladder, sequence, diagnosis, judgment or fixed personality label. Use one continuous current pose with all limbs and the shoe fully visible. Isolate the figures and prop on the transparent canvas: no floor, ground plane, cast shadow, room, table, calendar, folder, paper, screen, scale, mirror, medical or security symbol, duplicate figures, alternate poses, sequence frames, arrows, motion trails, text, numbers, labels, readable screens, blue circles or unrelated equipment."
+    },
+    {
+      "file": "visual-02-beliefs.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Exactly one Despa carefully offers one rolled light exercise mat at waist height while exactly one Bojji reaches toward it comfortably with an open hand; one small unmarked rigid options card is held upright by Despa. Explain noticing a real-life barrier and making one activity easier to start, not fear, disease risk, treatment or medical screening. Use one continuous current pose with all limbs and props fully visible. Isolate the figures and props on the transparent canvas: no floor, ground plane, cast shadow, room, table, calendar, folder, loose paper, screen, scale, mirror, medical or security symbol, warning sign, duplicate figures, alternate poses, sequence frames, arrows, motion trails, text, numbers, labels, readable screens, blue circles or unrelated equipment."
+    },
+    {
+      "file": "visual-03-autonomy.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Exactly one Despa calmly holds two simple isolated activity props at equal height, one walking shoe and one solid low wooden training step, while exactly one Bojji makes an open-palm choice gesture toward one of them. Explain supported choice, growing confidence and respectful support, not a test, score, command, diagnosis or two alternate actions. Use one continuous current pose with all limbs and props fully visible. Isolate the figures and props on the transparent canvas: no floor, ground plane, cast shadow, room, table, calendar, folder, paper, screen, scale, mirror, medical or security symbol, duplicate figures, alternate poses, sequence frames, arrows, motion trails, text, numbers, labels, readable screens, blue circles or unrelated equipment."
+    },
+    {
+      "file": "visual-04-recovery.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Exactly one Bojji holds one small closed travel bag at his side and one walking shoe near his chest while exactly one Despa offers a calm open supportive hand. Explain returning gently after an interruption with one manageable restart, not punishment, compensation, therapy, diagnosis or a progress timeline. Use one continuous current pose with all limbs and props fully visible. Isolate the figures and props on the transparent canvas: no floor, ground plane, cast shadow, room, table, calendar, folder, paper, screen, scale, mirror, medical or security symbol, duplicate figures, alternate poses, sequence frames, arrows, motion trails, text, numbers, labels, readable screens, blue circles or unrelated equipment."
+    },
+    {
+      "file": "overview-01-stages.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Exactly one Despa holds one walking shoe with an open-palm invitation while exactly one Bojji listens calmly with both hands open. Explain a respectful readiness conversation in a compact panel; do not reuse the knowledge-page composition. Isolate the figures and shoe on the transparent canvas: no floor, ground plane, cast shadow, room, table, calendar, folder, paper, screen, scale, mirror, medical or security symbol, duplicate figures, alternate poses, sequence frames, text, numbers, labels, arrows, motion trails or unrelated equipment."
+    },
+    {
+      "file": "overview-02-beliefs.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Exactly one Bojji accepts one rolled light exercise mat at waist height from exactly one Despa, who holds one small unmarked rigid options card in his other hand. Explain making a practical activity easier to begin in a compact panel; do not reuse the knowledge-page composition. Isolate the figures and props on the transparent canvas: no floor, ground plane, cast shadow, room, table, calendar, folder, loose paper, screen, scale, mirror, medical or security symbol, warning sign, duplicate figures, alternate poses, sequence frames, text, numbers, labels, arrows, motion trails or unrelated equipment."
+    },
+    {
+      "file": "overview-03-autonomy.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Exactly one Bojji holds one walking shoe at chest height while exactly one Despa presents one solid low wooden training step with an equal open-palm gesture. Explain supported choice and confidence in a compact panel; do not reuse the knowledge-page composition. Isolate the figures and props on the transparent canvas: no floor, ground plane, cast shadow, room, table, calendar, folder, paper, screen, scale, mirror, medical or security symbol, duplicate figures, alternate poses, sequence frames, text, numbers, labels, arrows, motion trails or unrelated equipment."
+    },
+    {
+      "file": "overview-04-recovery.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Exactly one Despa holds one small closed travel bag at his side while exactly one Bojji holds one walking shoe with both hands and gives a calm open-palm acknowledgement. Explain a gentle restart after interruption in a compact panel; do not reuse the knowledge-page composition. Isolate the figures and props on the transparent canvas: no floor, ground plane, cast shadow, room, table, calendar, folder, paper, screen, scale, mirror, medical or security symbol, duplicate figures, alternate poses, sequence frames, text, numbers, labels, arrows, motion trails or unrelated equipment."
+    }
+  ]
+}

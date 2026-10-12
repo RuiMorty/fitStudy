@@ -1,0 +1,60 @@
+{
+  "commonPrompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper background, loose paper sheets, border, sticker edge, shadow, or halo. A small unmarked rigid evidence card is allowed as a prop. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.",
+  "assets": [
+    {
+      "file": "cover.png",
+      "role": "cover",
+      "prompt": "Wide 16:9 wordless single-scene course cover. Bojji holds one shallow controlled bodyweight overhead squat with arms comfortably raised while Despa observes from the side; both are isolated on the transparent canvas with no ground plane or cast shadow. No barbell, arrows, circles, repeated poses, or labels. Keep exactly one Bojji and one Despa, both full bodies visible when practical. Explain one course theme through one coherent current situation, never sequence frames. No duplicate figures, alternate poses, motion trails, arrows, readable signs, text, numbers, labels or unrelated equipment."
+    },
+    {
+      "file": "visual-01.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Despa watches Bojji hold one comfortable shallow squat toward a stable low box isolated along the lower canvas edge with no ground plane or cast shadow; both feet visible and no corrective markers. Keep exactly one Bojji and one Despa. Use one continuous current pose to explain “动作观察的用途与边界”, with all limbs and props fully visible. No duplicate figures, alternate poses, sequence frames, arrows, motion trails, text, numbers, labels, readable screens, blue circles or unrelated equipment."
+    },
+    {
+      "file": "visual-02.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Bojji holds one supported shallow single-leg balance with one hand lightly touching a simple vertical support rail while Despa observes at a safe distance; no wall, room, ground plane, cast shadow, duplicate frames, or motion trail. Keep exactly one Bojji and one Despa. Use one continuous current pose to explain “固定视角、范围与次数”, with all limbs and props fully visible. No duplicate figures, alternate poses, sequence frames, arrows, motion trails, text, numbers, labels, readable screens, blue circles or unrelated equipment."
+    },
+    {
+      "file": "visual-03.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Despa holds a pair of plain shoes at waist height and listens calmly while Bojji stands beside a stable low box isolated along the lower canvas edge; no speech bubbles, text, medical cues, ground plane, or cast shadow. Keep exactly one Bojji and one Despa. Use one continuous current pose to explain “把当日背景放进记录”, with all limbs and props fully visible. No duplicate figures, alternate poses, sequence frames, arrows, motion trails, text, numbers, labels, readable screens, blue circles or unrelated equipment."
+    },
+    {
+      "file": "visual-04.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Despa offers one open-hand cue while Bojji holds a small supported squat toward a stable low box isolated along the lower canvas edge; no unstable equipment, arrows, extra people, ground plane, or cast shadow. Keep exactly one Bojji and one Despa. Use one continuous current pose to explain “低风险下一步一次一项”, with all limbs and props fully visible. No duplicate figures, alternate poses, sequence frames, arrows, motion trails, text, numbers, labels, readable screens, blue circles or unrelated equipment."
+    },
+    {
+      "file": "visual-05.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Bojji stands clear of a stable low box with one open-palm stop gesture while Despa maintains respectful space without touching; no injury depiction, ground plane, or cast shadow. Keep exactly one Bojji and one Despa. Use one continuous current pose to explain “停止与转介信号”, with all limbs and props fully visible. No duplicate figures, alternate poses, sequence frames, arrows, motion trails, text, numbers, labels, readable screens, blue circles or unrelated equipment."
+    },
+    {
+      "file": "overview-01.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Despa watches Bojji hold one comfortable shallow squat toward a stable low box isolated along the lower canvas edge with no ground plane or cast shadow; both feet visible and no corrective markers. Keep exactly one Bojji and one Despa. Compose specifically for a compact overview panel and do not reuse a knowledge-page composition. No duplicate figures, alternate poses, sequence frames, text, numbers, labels, arrows, motion trails or unrelated equipment."
+    },
+    {
+      "file": "overview-02.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Bojji holds one supported shallow single-leg balance with one hand lightly touching a simple vertical support rail while Despa observes at a safe distance; no wall, room, ground plane, cast shadow, duplicate frames, or motion trail. Keep exactly one Bojji and one Despa. Compose specifically for a compact overview panel and do not reuse a knowledge-page composition. No duplicate figures, alternate poses, sequence frames, text, numbers, labels, arrows, motion trails or unrelated equipment."
+    },
+    {
+      "file": "overview-03.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Despa holds a pair of plain shoes at waist height and listens calmly while Bojji stands beside a stable low box isolated along the lower canvas edge; no speech bubbles, text, medical cues, ground plane, or cast shadow. Keep exactly one Bojji and one Despa. Compose specifically for a compact overview panel and do not reuse a knowledge-page composition. No duplicate figures, alternate poses, sequence frames, text, numbers, labels, arrows, motion trails or unrelated equipment."
+    },
+    {
+      "file": "overview-04.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Despa offers one open-hand cue while Bojji holds a small supported squat toward a stable low box isolated along the lower canvas edge; no unstable equipment, arrows, extra people, ground plane, or cast shadow. Keep exactly one Bojji and one Despa. Compose specifically for a compact overview panel and do not reuse a knowledge-page composition. No duplicate figures, alternate poses, sequence frames, text, numbers, labels, arrows, motion trails or unrelated equipment."
+    },
+    {
+      "file": "overview-05.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Bojji stands clear of a stable low box with one open-palm stop gesture while Despa maintains respectful space without touching; no injury depiction, ground plane, or cast shadow. Keep exactly one Bojji and one Despa. Compose specifically for a compact overview panel and do not reuse a knowledge-page composition. No duplicate figures, alternate poses, sequence frames, text, numbers, labels, arrows, motion trails or unrelated equipment."
+    }
+  ]
+}

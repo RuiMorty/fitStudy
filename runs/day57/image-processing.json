@@ -1,0 +1,357 @@
+{
+  "processedAt": "2026-09-30T07:39:53.276283+00:00",
+  "method": "trim near-transparent noise; reviewed crop; uniform scale; transparent margin",
+  "assets": [
+    {
+      "source": "runs/day57/source/cover.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "sourceSha256": "792589ef16e6632b9cf79f0b8c3bbcb0cefa7f435f564f74f37e990ca8fc4d1e",
+      "reviewedCrop": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "visibleCrop": [
+        95,
+        25,
+        1627,
+        904
+      ],
+      "output": "runs/day57/assets/cover.png",
+      "size": [
+        1600,
+        900
+      ],
+      "subjectSize": [
+        1380,
+        792
+      ],
+      "offset": [
+        110,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "无字封面"
+    },
+    {
+      "source": "runs/day57/source/visual-01-lphc.png",
+      "sourceSize": [
+        2019,
+        779
+      ],
+      "sourceSha256": "353e9f1a499e840098b92f93a0e8a0f987322fcbf8861e929cf0838a5f860ed9",
+      "reviewedCrop": [
+        0,
+        0,
+        2019,
+        779
+      ],
+      "visibleCrop": [
+        535,
+        15,
+        1456,
+        755
+      ],
+      "output": "runs/day57/assets/visual-01-lphc.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        921,
+        740
+      ],
+      "offset": [
+        939,
+        80
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "LPHC控制"
+    },
+    {
+      "source": "runs/day57/source/visual-02-breathing.png",
+      "sourceSize": [
+        1881,
+        836
+      ],
+      "sourceSha256": "44a9b86d318aca433c2b8bc997392d4cdacaf0b63ee385c1f1accbe37fbe2ffd",
+      "reviewedCrop": [
+        0,
+        0,
+        1881,
+        836
+      ],
+      "visibleCrop": [
+        267,
+        9,
+        1618,
+        816
+      ],
+      "output": "runs/day57/assets/visual-02-breathing.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1326,
+        792
+      ],
+      "offset": [
+        737,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "呼吸与压力"
+    },
+    {
+      "source": "runs/day57/source/visual-03-types.png",
+      "sourceSize": [
+        1871,
+        841
+      ],
+      "sourceSha256": "62340ea54bbaec9bbeedc86825eecb59be5a630ea87fb4816da7fd6fb925534a",
+      "reviewedCrop": [
+        0,
+        0,
+        1871,
+        841
+      ],
+      "visibleCrop": [
+        22,
+        228,
+        1848,
+        645
+      ],
+      "output": "runs/day57/assets/visual-03-types.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1826,
+        417
+      ],
+      "offset": [
+        487,
+        241
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "稳定化与动作化"
+    },
+    {
+      "source": "runs/day57/source/visual-04-progression.png",
+      "sourceSize": [
+        1881,
+        836
+      ],
+      "sourceSha256": "228cab2f009e466eb2b9227b3fead1d1233e59b175f433b4fbd31fae35698ad2",
+      "reviewedCrop": [
+        0,
+        0,
+        1881,
+        836
+      ],
+      "visibleCrop": [
+        509,
+        16,
+        1344,
+        803
+      ],
+      "output": "runs/day57/assets/visual-04-progression.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        835,
+        787
+      ],
+      "offset": [
+        982,
+        56
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "控制进阶到任务"
+    },
+    {
+      "source": "runs/day57/source/overview-01-lphc.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "6eb5fe325f8dd56ae0de428c3269e6309bc021d073b9db3db6ae073bccf6ae76",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        157,
+        49,
+        1278,
+        1002
+      ],
+      "output": "runs/day57/assets/overview-01-lphc.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1121,
+        953
+      ],
+      "offset": [
+        239,
+        123
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day57/source/overview-02-breathing.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "50571860264762f19b82ef09d28e91db5e0c58a083e59f543cb7081ee825d265",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        77,
+        70,
+        1390,
+        1019
+      ],
+      "output": "runs/day57/assets/overview-02-breathing.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1313,
+        949
+      ],
+      "offset": [
+        143,
+        125
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day57/source/overview-03-types.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "c08cd03d06af1b02e9d57f67358e79e3f510056fcfaccf68c7cd9a0b62289673",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        65,
+        275,
+        1414,
+        830
+      ],
+      "output": "runs/day57/assets/overview-03-types.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1349,
+        555
+      ],
+      "offset": [
+        125,
+        322
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day57/source/overview-04-progression.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "0538b69f93bb887f0fb5ff6639b6833362690cb825897b2ffa2948d4f5f6b567",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        236,
+        21,
+        1190,
+        1040
+      ],
+      "output": "runs/day57/assets/overview-04-progression.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        954,
+        1019
+      ],
+      "offset": [
+        323,
+        90
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    }
+  ]
+}

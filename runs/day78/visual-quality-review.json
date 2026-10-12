@@ -1,0 +1,77 @@
+{
+  "reviewer": "local source visual, alpha, semantic and safety QA",
+  "requirements": [
+    "true-alpha transparent PNG without a rendered checkerboard, opaque canvas, room, floor, ground plane, loose paper, border, sticker edge, shadow or halo",
+    "only wordless Bojji and Despa in calm 2D training-planning scenes; no extra characters, text, numbers, labels, arrows, medical symbols, logos or watermarks",
+    "behavior-change models remain neutral coaching and planning tools rather than therapy, diagnosis, illness, body-size comparison, fear appeal or a score",
+    "all shoes, rolled exercise mats and solid low wooden training steps are structurally coherent isolated props; no unsafe stepping, jumping or unstable support",
+    "each overview image is independently generated and compositionally distinct from its matching knowledge-page art"
+  ],
+  "technicalChecks": {
+    "checkedWith": [
+      "PNG metadata and RGBA / hasAlpha inspection",
+      "individual visual review of all nine source candidates",
+      "asset-to-lesson and asset-to-preparation mapping check before shared preparation"
+    ],
+    "result": "All nine selected candidates are non-empty RGBA PNGs reporting alpha. Each was visually inspected on a transparent viewer background; no text, ground, room, medical imagery, therapy cue, diagnostic label, body comparison or unsafe movement was accepted."
+  },
+  "accepted": [
+    {
+      "file": "cover.png",
+      "attempt": 1,
+      "source": "runs/day78/image-requests/cover-eb86e17540/attempt-01/cover.png",
+      "review": "Despa presents a walking shoe while Bojji indicates a complete solid low wooden step; the calm, wordless choice conversation has no ground, score or pressure cue."
+    },
+    {
+      "file": "visual-01-stages.png",
+      "attempt": 1,
+      "source": "runs/day78/image-requests/visual-01-stages-2540ff01e2/attempt-01/visual-01-stages.png",
+      "review": "Bojji's thoughtful shoe-holding pose and Despa's open listening hand communicate a present conversation without a stage ladder, timeline, label or judgment."
+    },
+    {
+      "file": "visual-02-beliefs.png",
+      "attempt": 1,
+      "source": "runs/day78/image-requests/visual-02-beliefs-9f41909d3f/attempt-01/visual-02-beliefs.png",
+      "review": "The rolled mat is offered at a comfortable height and the small wordless picture cue has no text or personal data; the scene communicates making a practical option easier without disease, fear or medical framing."
+    },
+    {
+      "file": "visual-03-autonomy.png",
+      "attempt": 1,
+      "source": "runs/day78/image-requests/visual-03-autonomy-3f991d035d/attempt-01/visual-03-autonomy.png",
+      "review": "Despa presents a shoe and a complete low wooden step at equal height while Bojji makes one choice gesture; there are no alternate action poses, commands, scores or ground."
+    },
+    {
+      "file": "visual-04-recovery.png",
+      "attempt": 1,
+      "source": "runs/day78/image-requests/visual-04-recovery-2e6b8aab28/attempt-01/visual-04-recovery.png",
+      "review": "The closed travel bag, shoe and calm open support hand provide a wordless return-after-interruption cue without blame, compensation, therapy or a progress calendar."
+    },
+    {
+      "file": "overview-01-stages.png",
+      "attempt": 1,
+      "source": "runs/day78/image-requests/overview-01-stages-b97255664d/attempt-01/overview-01-stages.png",
+      "review": "The dedicated 4:3 scene reverses the shoe presentation from the wide knowledge art and remains wordless, transparent and free of a staged chart."
+    },
+    {
+      "file": "overview-02-beliefs.png",
+      "attempt": 1,
+      "source": "runs/day78/image-requests/overview-02-beliefs-d997196f81/attempt-01/overview-02-beliefs.png",
+      "review": "The overview-only mat handoff uses a blank rigid card and differs from the wide art's reach pose; it contains no text, floor, screen or diagnostic cue."
+    },
+    {
+      "file": "overview-03-autonomy.png",
+      "attempt": 1,
+      "source": "runs/day78/image-requests/overview-03-autonomy-9ba9ca4e19/attempt-01/overview-03-autonomy.png",
+      "review": "Bojji holds the shoe while the complete step is shown separately and Despa offers one open hand, creating a distinct compact choice composition without unsafe stepping."
+    },
+    {
+      "file": "overview-04-recovery.png",
+      "attempt": 1,
+      "source": "runs/day78/image-requests/overview-04-recovery-8175b65721/attempt-01/overview-04-recovery.png",
+      "review": "The overview-only scene puts the travel bag with Despa and the shoe with Bojji, distinct from the knowledge image, with calm support and no shame, calendar or medical cue."
+    }
+  ],
+  "rejected": [],
+  "retriesUsed": 0,
+  "result": "Nine source assets passed first-round local visual, alpha, semantic and equipment-safety QA. All original candidates and prompts remain preserved in image-request-log.json."
+}

@@ -1,0 +1,112 @@
+{
+  "reviewer": "local source visual, alpha, semantic and equipment-safety QA",
+  "requirements": [
+    "true-alpha transparent PNG with no rendered checkerboard, opaque canvas, floor, ground plane, room, cast shadow, border, sticker edge or halo; white trousers and Despa's fur collar remain opaque white",
+    "only one wordless Bojji and one wordless Despa per scene, with consistent 2D flat-color character design and no duplicate figures, sequence frames, text, numbers, labels, arrows, logos, watermarks, screens or unexplained markers",
+    "OPT is a non-linear selection and reassessment map, never compulsory staged promotion, a score, a ladder or a path",
+    "box-squat art shows a stable low wooden seated target and clear full-foot control rather than a step-up or jump; adjustment art is calm and non-punitive",
+    "each overview image is independently generated and compositionally distinct from its corresponding wide knowledge-page art"
+  ],
+  "technicalChecks": {
+    "checkedWith": [
+      "PNG metadata and sips hasAlpha inspection",
+      "study-image-bounds alpha-bound inspection",
+      "individual visual review on a neutral transparency preview",
+      "source-to-lesson and source-to-preparation mapping check"
+    ],
+    "result": "All 11 selected candidates are non-empty RGBA PNGs with a transparent channel. Each was visually checked for one present scene, correct character count, wordless output, no room/ground/shadow, safe box-squat posture where applicable, and an independent compact composition for the overview images."
+  },
+  "accepted": [
+    {
+      "file": "cover.png",
+      "attempt": 3,
+      "source": "runs/day81/image-requests/cover-eb86e17540/attempt-03/cover.png",
+      "review": "One Bojji and one Despa appear once in a single transparent scene; five isolated training props read as non-linear current-focus options without a path, text, ground or unsafe box step."
+    },
+    {
+      "file": "visual-01.png",
+      "attempt": 2,
+      "source": "runs/day81/image-requests/visual-01-8a79cc2ec8/attempt-02/visual-01.png",
+      "review": "One calm Bojji and one presenting Despa frame five distinct unlabelled physical options in a loose non-linear selection cluster, without duplicate scenes or a progression ladder."
+    },
+    {
+      "file": "visual-02.png",
+      "attempt": 1,
+      "source": "runs/day81/image-requests/visual-02-1d99f16a14/attempt-01/visual-02.png",
+      "review": "The blank pennant, shoe, isolated low box, crescent moon and shield are all legible decision cues; both characters consider them without checkmarks, order markers or a ground scene."
+    },
+    {
+      "file": "visual-03.png",
+      "attempt": 1,
+      "source": "runs/day81/image-requests/visual-03-0c02636da0/attempt-01/visual-03.png",
+      "review": "Bojji holds one controlled full-foot box-squat position toward a stable wooden seated target while Despa observes; no jumping, stepping, barbell or duplicate pose appears."
+    },
+    {
+      "file": "visual-04.png",
+      "attempt": 1,
+      "source": "runs/day81/image-requests/visual-04-dfef8f1f0d/attempt-01/visual-04.png",
+      "review": "Separate dumbbell, blank-face timer and low step props illustrate training variables without a readable display, route or arbitrary progression cue."
+    },
+    {
+      "file": "visual-05.png",
+      "attempt": 1,
+      "source": "runs/day81/image-requests/visual-05-c5ca8b3979/attempt-01/visual-05.png",
+      "review": "A light dumbbell and intact bench support one calm reassessment conversation; the single scene contains no pain, failure, punishment or before-and-after framing."
+    },
+    {
+      "file": "overview-01.png",
+      "attempt": 2,
+      "source": "runs/day81/image-requests/overview-01-9cdac68418/attempt-02/overview-01.png",
+      "review": "The compact independent overview contains exactly the five specified option props—dumbbell, resistance loop, low wooden box, balance pad and rolled mat—rather than a path or unrelated scenery."
+    },
+    {
+      "file": "overview-02.png",
+      "attempt": 1,
+      "source": "runs/day81/image-requests/overview-02-6a449564cb/attempt-01/overview-02.png",
+      "review": "All five decision cues remain visible in a compact jointly considered scene, with no labels, checkmarks, ordering or unsafe use of the box."
+    },
+    {
+      "file": "overview-03.png",
+      "attempt": 1,
+      "source": "runs/day81/image-requests/overview-03-827fcd4a79/attempt-01/overview-03.png",
+      "review": "The compact frame keeps the feet, hips and low wooden seated target readable as one controlled box squat, distinct from the wide knowledge composition."
+    },
+    {
+      "file": "overview-04.png",
+      "attempt": 1,
+      "source": "runs/day81/image-requests/overview-04-897df7e278/attempt-01/overview-04.png",
+      "review": "One thoughtful Bojji and one guiding Despa frame distinct dumbbells, a blank timer and a low step as non-sequential variable choices."
+    },
+    {
+      "file": "overview-05.png",
+      "attempt": 1,
+      "source": "runs/day81/image-requests/overview-05-d059872d99/attempt-01/overview-05.png",
+      "review": "The independently framed compact scene shows one light dumbbell, an intact bench and a calm adjustment discussion without failure or treatment cues."
+    }
+  ],
+  "rejected": [
+    {
+      "file": "cover.png",
+      "attempt": 1,
+      "reason": "Rendered multiple Bojji exercise vignettes in colored panels instead of exactly one Bojji, one Despa and one current selection scene."
+    },
+    {
+      "file": "cover.png",
+      "attempt": 2,
+      "reason": "Although the character count was corrected, Bojji placed one foot on the wooden box, turning the selection graphic into an unsafe step-up cue."
+    },
+    {
+      "file": "visual-01.png",
+      "attempt": 1,
+      "reason": "Rendered duplicate Bojji vignette scenes and colored panels rather than five physical options in one present selection map."
+    },
+    {
+      "file": "overview-01.png",
+      "attempt": 1,
+      "reason": "Included irrelevant rock, water, log and martial-arts dummy imagery rather than five clear training options."
+    }
+  ],
+  "requestsUsed": 15,
+  "retriesUsed": 4,
+  "result": "Eleven selected source assets passed local visual, alpha, semantic and equipment-safety QA. All 15 immutable candidates and their prompt history remain preserved in runs/day81/image-request-log.json; no further image request is needed."
+}

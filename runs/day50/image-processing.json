@@ -1,0 +1,513 @@
+{
+  "processedAt": "2026-09-30T01:33:51.369088+00:00",
+  "method": "trim near-transparent noise; reviewed crop; uniform scale; transparent margin",
+  "assets": [
+    {
+      "source": "runs/day50/source/cover-attempt-03.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "sourceSha256": "49d48e6a0decb0478d8b9636d950e3d30f4dba203e6ff2809aba2ec672f093b9",
+      "reviewedCrop": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "visibleCrop": [
+        430,
+        17,
+        1241,
+        922
+      ],
+      "output": "runs/day50/assets/cover.png",
+      "size": [
+        1600,
+        900
+      ],
+      "subjectSize": [
+        710,
+        792
+      ],
+      "offset": [
+        445,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "无字封面；第3次请求通过真实alpha与单一角色检查"
+    },
+    {
+      "source": "runs/day50/source/visual-01-modes.png",
+      "sourceSize": [
+        2206,
+        713
+      ],
+      "sourceSha256": "482d81571a70ecb85ceb3d2051be6994f28f0a03b8a99e33f60d197d8d0ada6f",
+      "reviewedCrop": [
+        0,
+        0,
+        2206,
+        713
+      ],
+      "visibleCrop": [
+        87,
+        15,
+        2185,
+        675
+      ],
+      "output": "runs/day50/assets/visual-01-modes.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        2098,
+        660
+      ],
+      "offset": [
+        351,
+        120
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "模式选择"
+    },
+    {
+      "source": "runs/day50/source/visual-02-cross-training.png",
+      "sourceSize": [
+        2207,
+        712
+      ],
+      "sourceSha256": "0186f5a26b0c60de1a78ea4a0322041e8d2e2b5c4f83fcbd55dd2cfa3c861652",
+      "reviewedCrop": [
+        0,
+        0,
+        2207,
+        712
+      ],
+      "visibleCrop": [
+        407,
+        16,
+        1912,
+        693
+      ],
+      "output": "runs/day50/assets/visual-02-cross-training.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1505,
+        677
+      ],
+      "offset": [
+        647,
+        111
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "交叉训练"
+    },
+    {
+      "source": "runs/day50/source/visual-03-heart-rate.png",
+      "sourceSize": [
+        2209,
+        712
+      ],
+      "sourceSha256": "2b2c245a0f85b6284eb6c657572617cc5ee1cf70c7f60b0a3929ab7138360330",
+      "reviewedCrop": [
+        0,
+        0,
+        2209,
+        712
+      ],
+      "visibleCrop": [
+        556,
+        0,
+        1661,
+        710
+      ],
+      "output": "runs/day50/assets/visual-03-heart-rate.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1105,
+        710
+      ],
+      "offset": [
+        847,
+        95
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "心率线索"
+    },
+    {
+      "source": "runs/day50/source/visual-04-rpe-attempt-02.png",
+      "sourceSize": [
+        1881,
+        836
+      ],
+      "sourceSha256": "08e54c742e37ab3bc4bd996368a5ded42aa7ae5a06b06b1c9c2734133e325a3a",
+      "reviewedCrop": [
+        0,
+        0,
+        1881,
+        836
+      ],
+      "visibleCrop": [
+        177,
+        8,
+        1716,
+        821
+      ],
+      "output": "runs/day50/assets/visual-04-rpe.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1499,
+        792
+      ],
+      "offset": [
+        650,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "RPE；第2次请求通过单一波吉构图检查"
+    },
+    {
+      "source": "runs/day50/source/visual-05-talk-test.png",
+      "sourceSize": [
+        2207,
+        712
+      ],
+      "sourceSha256": "57ea5a822095a677dbe2e88d02818a6a6ac82100ea4e1d70921ca6cc5b5129de",
+      "reviewedCrop": [
+        0,
+        0,
+        2207,
+        712
+      ],
+      "visibleCrop": [
+        20,
+        6,
+        2187,
+        691
+      ],
+      "output": "runs/day50/assets/visual-05-talk-test.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        2167,
+        685
+      ],
+      "offset": [
+        316,
+        107
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "谈话测试"
+    },
+    {
+      "source": "runs/day50/source/visual-06-triangulation.png",
+      "sourceSize": [
+        2207,
+        712
+      ],
+      "sourceSha256": "6b09167aab4ac7e8370cbd3e85a674c81ff2eab3b6fe74dabd79e20942779668",
+      "reviewedCrop": [
+        0,
+        0,
+        2207,
+        712
+      ],
+      "visibleCrop": [
+        416,
+        0,
+        1685,
+        704
+      ],
+      "output": "runs/day50/assets/visual-06-triangulation.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1269,
+        704
+      ],
+      "offset": [
+        765,
+        98
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "综合判断"
+    },
+    {
+      "source": "runs/day50/source/overview-01-modes.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "1a65c5c32cd474f4bc7e5ad467694e5af1758ab098fa3a17ff2d0070c7fa1f20",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        0,
+        77,
+        1448,
+        996
+      ],
+      "output": "runs/day50/assets/overview-01-modes.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1448,
+        919
+      ],
+      "offset": [
+        76,
+        140
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day50/source/overview-02-cross-training.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "b35601f5991129ac8d70943a83a3badfd2388508eb8ead4224ecf0462fe06741",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        38,
+        89,
+        1431,
+        970
+      ],
+      "output": "runs/day50/assets/overview-02-cross-training.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1393,
+        881
+      ],
+      "offset": [
+        103,
+        159
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day50/source/overview-03-heart-rate.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "720c3d35bdcebf3837efc1de415c9a8fe8478739fbdd8c4b74b42a4f7041b716",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        167,
+        16,
+        1293,
+        1067
+      ],
+      "output": "runs/day50/assets/overview-03-heart-rate.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1126,
+        1051
+      ],
+      "offset": [
+        237,
+        74
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day50/source/overview-04-rpe.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "1d1cec8ab1a3c4afa26db3dd44f31f7db405d41cb66983efe26acb1db075ad19",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        139,
+        18,
+        1376,
+        1055
+      ],
+      "output": "runs/day50/assets/overview-04-rpe.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1237,
+        1037
+      ],
+      "offset": [
+        181,
+        81
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day50/source/overview-05-talk-test.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "8c8424aeb34d785a25532ff05e19800a3cb7e779097dfecb52a3e8a203affc69",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        218,
+        26,
+        1344,
+        1069
+      ],
+      "output": "runs/day50/assets/overview-05-talk-test.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1126,
+        1043
+      ],
+      "offset": [
+        237,
+        78
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day50/source/overview-06-triangulation.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "1580f919306b965c523998d5d39e3811e62803aee86a27fd06a53ebd32c6b086",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        60,
+        48,
+        1416,
+        1038
+      ],
+      "output": "runs/day50/assets/overview-06-triangulation.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1356,
+        990
+      ],
+      "offset": [
+        122,
+        105
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Day 82 · OPT五阶段复盘+身体成分与心肺评估</title><link rel="icon" type="image/svg+xml" href="assets/fitness-study-logo-open-circle.svg?v=a6d8e5caaa61"><style>:root { color-scheme: light; --ink: #111113; --muted: #71717a; --line: #e4e4e7; --accent: #ff5a1f; --green: #0ea66b; --blue: #2563eb; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; font-synthesis: none; letter-spacing: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); overflow-wrap: anywhere; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+img { display: block; max-width: 100%; }
+button:focus-visible, a:focus-visible, summary:focus-visible, input:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
+svg.icon { width: 20px; height: 20px; }
+.icon-button { display: inline-grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 1px solid var(--line); border-radius: 6px; background: white; }
+[hidden] { display: none !important; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
+
+body { background: #f6f8f7; font-size: 14px; line-height: 1.65; }
+main { max-width: 980px; margin: auto; padding: 24px 18px 60px; }
+.header { padding: 22px 4px 14px; }
+h1 { margin: 10px 0 8px; font-size: 36px; line-height: 1.2; }
+h1::before { content: ""; display: block; width: 34px; height: 4px; background: var(--accent); margin-bottom: 10px; }
+h2 { font-size: 17px; margin: 0 0 14px; }
+h3 { font-size: 16px; margin: 0 0 8px; }
+.sub { color: var(--muted); margin: 5px 0 18px; }
+.meta { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { display: inline-block; border: 1px solid var(--line); border-radius: 20px; background: white; color: var(--muted); padding: 3px 10px; font-size: 12px; font-weight: 600; }
+.chip:nth-child(1) { background: #e2f7eb; color: #15803d; border-color: transparent; }
+.chip:nth-child(2) { background: #e7f0fe; color: #2563eb; border-color: transparent; }
+.chip:nth-child(3) { background: #fff2e5; color: #9a4c05; border-color: transparent; }
+.panel, .figure, .warn, .mnemonic { background: white; border: 1px solid #e2e8e4; border-radius: 14px; box-shadow: 0 2px 12px rgba(20,40,30,.06); padding: 20px; margin: 16px 0; }
+.green { border-left: 5px solid var(--green); }
+.orange { border-left: 5px solid #ea7a17; }
+.blue { border-left: 5px solid #0ea5e9; }
+.takeaway { margin: 0; }
+.figure { text-align: center; }
+.figure button { display: block; position: relative; width: 100%; border: 0; padding: 0; background: white; cursor: zoom-in; }
+.figure img { max-height: 760px; width: 100%; object-fit: contain; }
+.figure .icon-button { position: absolute; bottom: 8px; right: 8px; background: #ffffffed; }
+.caption { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
+.kp { list-style: none; padding: 0; margin: 0; }
+.kp > li { border-bottom: 1px dashed #e2e8e4; }
+.kp > li:last-child { border-bottom: 0; }
+.kp summary { cursor: pointer; padding: 13px 8px; font-weight: 650; }
+.kp summary::marker { color: var(--green); }
+.term { color: #0a7d52; background: #e2f7eb; border-radius: 6px; padding: 1px 5px; }
+.kp-body { padding: 2px 14px 16px 24px; }
+.detail-block { margin: 12px 0; }
+.detail-block h4 { font-size: 13px; color: #08744d; margin: 0 0 4px; }
+.detail-block p { margin: 0; white-space: pre-line; }
+.warn { border-left: 5px solid #e23b3b; background: #fffafa; }
+.warn p { margin: 8px 0; }
+.misconception { color: #a82b32; }
+.mnemonic { border-left: 4px solid var(--accent); box-shadow: none; }
+.mnemonic strong { color: #df4716; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+.flip { height: 168px; perspective: 900px; border: 0; background: transparent; padding: 0; text-align: center; }
+.flip-in { display: block; height: 100%; position: relative; transition: transform .45s; transform-style: preserve-3d; }
+.flip[aria-pressed="true"] .flip-in { transform: rotateY(180deg); }
+.face { position: absolute; inset: 0; backface-visibility: hidden; border: 1px solid var(--line); border-radius: 10px; padding: 15px; background: #fafafa; display: flex; align-items: center; justify-content: center; overflow-y: auto; }
+.back { transform: rotateY(180deg); background: #eef9f4; color: #075e40; border-color: #c8eadb; }
+.practice { padding-left: 20px; }
+.practice li { margin: 7px 0; }
+.question { border-top: 1px solid #e2e8e4; padding: 20px 0 8px; margin-top: 12px; min-width: 0; }
+.options { display: grid; gap: 7px; margin: 10px 0; }
+.option { display: flex; gap: 10px; align-items: baseline; border: 1px solid #e2e8e4; background: #f0f4f2; padding: 9px 12px; border-radius: 8px; cursor: pointer; }
+.option input { flex-shrink: 0; accent-color: var(--green); }
+.option:has(input:checked) { border-color: #0ea5e9; background: #e7f6fd; }
+.question[data-result="correct"] .option:has(input:checked) { border-color: #0ea66b; background: #e7f8ef; }
+.question[data-result="wrong"] .option:has(input:checked) { border-color: #e23b3b; background: #fff0f0; }
+.answer { background: #f8fbfa; border-left: 3px solid #0ea5e9; padding: 10px; margin-top: 10px; }
+.check { border: 0; background: #0ea66b; color: white; padding: 9px 14px; border-radius: 7px; }
+footer { color: var(--muted); font-size: 12px; margin-top: 28px; }
+footer ul { padding-left: 20px; }
+dialog { width: min(1200px, 96vw); max-height: 94dvh; padding: 52px 16px 16px; border: 0; border-radius: 8px; background: white; }
+dialog::backdrop { background: #15191dd9; }
+dialog img { width: 100%; max-height: 78dvh; object-fit: contain; }
+dialog .icon-button { position: absolute; top: 8px; right: 10px; }
+@media (max-width: 600px) {
+  main { padding: 16px 12px 40px; }
+  h1 { font-size: 26px; }
+  .header { padding: 16px 4px 12px; }
+  .panel, .figure, .warn, .mnemonic { padding: 15px; }
+  .kp-body { padding-left: 16px; }
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .face { padding: 12px; }
+}
+</style></head><body><main><header class="header"><h1>Day 82 · OPT五阶段复盘+身体成分与心肺评估</h1><p class="sub">把目标、能力、训练阶段和复查点连成一条可解释、可复测的决策链。</p><div class="meta"><span class="chip">OPT复盘</span><span class="chip">身体成分</span><span class="chip">心肺评估</span></div></header><section class="panel green"><h2>一句话总结</h2><p class="takeaway">复盘OPT时，先说明目标和能力，再选择当前阶段与复查点。体重、身体成分与心肺现场数据都只是追踪信息；条件一致、隐私知情、清楚局限和异常时优先转介，比得到一个“好看数字”更重要。</p></section><figure class="figure"><button data-zoom aria-label="放大详情图"><img class="" src="assets/阶段6行为改变与评估/day82-OPT五阶段复盘+身体成分与心肺评估.png" alt="OPT五阶段复盘+身体成分与心肺评估中文总览图"><span class="icon-button"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 15 6 6" /><path d="m15 9 6-6" /><path d="M21 16v5h-5" /><path d="M21 8V3h-5" /><path d="M3 16v5h5" /><path d="m3 21 6-6" /><path d="M3 8V3h5" /><path d="M9 9 3 3" /></svg></span></button><figcaption class="caption">评估应回答“为了什么、在什么条件下、如何复测、何时不测”，而不是给身体贴好坏标签。</figcaption></figure><section class="panel"><h2>核心要点</h2><ul class="kp"><li><details><summary><span class="term">目标—能力—阶段—复查点</span>：OPT复盘不是重列五阶段，而是用目标、当前能力、训练阶段和复查点说明每个决定的理由。</summary><div class="kp-body"><section class="detail-block"><h4>先问要解决什么</h4><p>目标可以是稳定完成基础动作、建立规律训练、提高力量或改善耐力。先定义可观察的目标，再判断当前能力和风险条件是否支持相应的阶段与剂量。</p></section><section class="detail-block"><h4>复查点提前写</h4><p>确定何时用什么条件复查，例如四周后在同一热身和时间段记录完成度或低风险耐力表现。复查点让计划可调整，而不是等到结果不佳才回头猜测。</p></section></div></details></li><li><details><summary><span class="term">体重、成分与腰围不同</span>：体重反映总质量；身体成分尝试估计脂肪和瘦体组织；腰围提供身体尺寸线索。它们不能单独定义健康、努力程度或个人价值。</summary><div class="kp-body"><section class="detail-block"><h4>先选择有用指标</h4><p>如果目标是力量表现，训练日志和动作能力可能比体重更有解释力；如果追踪体围或成分，需先征得同意并说明数据只服务于共同目标。</p></section><section class="detail-block"><h4>避免价值判断</h4><p>同一数字受水分、衣物、测量时间、设备和生活状态影响。使用中性语言，避免把结果写成好或坏，也不以单一常模替代个人基线。</p></section></div></details></li><li><details><summary><span class="term">方法各有误差与边界</span>：皮褶、BIA和DEXA的原理、误差来源、成本与可及性不同。选择方法前要说明局限，重复时尽量保持同一设备与条件。</summary><div class="kp-body"><section class="detail-block"><h4>一致性优先</h4><p>同一个人前后比较时，使用同一设备、相似时间、饮水与运动前状态，通常比频繁更换方法更能看出趋势。任何方法的单次估计都不等于绝对真值。</p></section><section class="detail-block"><h4>尊重隐私与选择</h4><p>涉及身体测量应取得明确同意，说明谁会看到数据、如何保存、训练者可随时拒绝。对身体形象困扰或进食障碍风险，不把测量当成强制项目。</p></section></div></details></li><li><details><summary><span class="term">心肺现场测试重在追踪</span>：低风险心肺现场测试可帮助观察训练反应，但不替代疾病诊断、医学检查或对所有人的高强度处方。</summary><div class="kp-body"><section class="detail-block"><h4>先完成筛查</h4><p>选择步行、固定车或其他现场测试前，先确认是否适用，明确热身、停止条件和监督条件。症状、疾病控制不佳或当日异常不适时不应硬测。</p></section><section class="detail-block"><h4>看趋势不下诊断</h4><p>相同路线、设备、热身和记录方式下的配速、心率或主观用力变化可辅助追踪。异常结果不是自行解释疾病的依据，应按边界转介。</p></section></div></details></li><li><details><summary><span class="term">记录、同意与转介</span>：每次评估都应记录设备、条件、结果和反应，并约定复测日期。异常、不确定或超出执业范围的问题，优先停止并转介。</summary><div class="kp-body"><section class="detail-block"><h4>记录可复现条件</h4><p>至少写清测试日期、时间、热身、场地或设备、睡眠或不适情况与终止原因。这样结果变化才有可解释的背景，而不是只留下一个孤立数字。</p></section><section class="detail-block"><h4>把不测写进计划</h4><p>明确何时不测：出现胸痛、头晕、异常气促、急性伤病、疾病控制不佳或训练者不同意时，应停止一般测试并遵循适当的专业路径。</p></section></div></details></li></ul></section><section class="warn"><h2>常见误区</h2><p><strong class="misconception">误区：体重下降就一定代表身体成分或健康改善。</strong><br>辨析：体重、成分、围度和表现回答不同问题，需结合目标与测量条件解释。</p><p><strong class="misconception">误区：BIA、皮褶和DEXA给出的数字都是绝对真值。</strong><br>辨析：每种方法都有误差与局限；同条件追踪趋势通常更实用。</p><p><strong class="misconception">误区：现场心肺测试可以替代医学检查。</strong><br>辨析：现场测试只用于适当条件下的追踪，症状或风险信号应停止并转介。</p><p><strong class="misconception">误区：只记录一个结果数字就足够比较前后。</strong><br>辨析：设备、时间、热身、状态和终止条件影响可比性，应一并记录。</p><p><strong class="misconception">误区：身体测量是所有客户都必须做的项目。</strong><br>辨析：身体测量需要知情同意、隐私保护和明确目的，客户可以拒绝。</p></section><section class="mnemonic"><h2>记忆口诀</h2><p><strong>先问目的，再定方法；同条件复测，异常先转介。</strong></p></section><section class="panel"><h2>翻转卡复习</h2><div class="cards"><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">目标—能力—阶段—复查点？</span><span class="face back" aria-hidden="true">OPT复盘把目标、能力、阶段和复查点连成理由链。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">体重、成分与腰围不同？</span><span class="face back" aria-hidden="true">体重、身体成分和腰围回答不同问题，不能互相替代。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">方法各有误差与边界？</span><span class="face back" aria-hidden="true">成分方法都有误差；同条件、同设备和知情同意更重要。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">心肺现场测试重在追踪？</span><span class="face back" aria-hidden="true">心肺现场测试用于同条件追踪，不替代医学诊断。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">记录、同意与转介？</span><span class="face back" aria-hidden="true">记录条件与不测条件，是评估安全和可复测的基础。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">本课安排的首要原则？</span><span class="face back" aria-hidden="true">先问目的，再定方法；同条件复测，异常先转介。</span></span></button></div></section><section class="panel orange"><h2>实操关联</h2><ul class="practice"><li>写一张四格卡：目标、当前能力、训练阶段、复查点；为每格填入一个可观察的信息。</li><li>为一个身体成分或围度测量写出目的、同意说明、统一条件与结果保存方式。</li><li>选一个低风险心肺追踪项目，列出热身、场地、试次、停止条件与下次同条件复测日期。</li><li>将“测出异常怎么办”写入计划：列出哪些信号不测、停止或需要转介。</li></ul></section><section class="panel blue"><h2>练习题</h2><section class="question" data-answers="[1]" data-explanation="指标应服务于明确目标，并且需要取得同意。"><h3>1. 单选：选择身体测量指标前最先应明确的是？</h3><div class="options"><label class="option"><input type="radio" name="question-0" value="0"><span>A. 社交媒体流行什么</span></label><label class="option"><input type="radio" name="question-0" value="1"><span>B. 共同的训练目标与测量用途</span></label><label class="option"><input type="radio" name="question-0" value="2"><span>C. 设备是否昂贵</span></label><label class="option"><input type="radio" name="question-0" value="3"><span>D. 别人测过什么</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[1]" data-explanation="一致的设备和条件有助于观察趋势。"><h3>2. 单选：让前后数据更可比的做法是？</h3><div class="options"><label class="option"><input type="radio" name="question-1" value="0"><span>A. 每次换一种设备</span></label><label class="option"><input type="radio" name="question-1" value="1"><span>B. 统一设备和尽量相似的测试条件</span></label><label class="option"><input type="radio" name="question-1" value="2"><span>C. 只记录最低数字</span></label><label class="option"><input type="radio" name="question-1" value="3"><span>D. 省略热身</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[0,1,2]" data-explanation="现场测试应先确认适用条件；不适或风险信号时不应强行完成。"><h3>3. 多选：基础心肺现场测试前应考虑哪些事项？</h3><div class="options"><label class="option"><input type="checkbox" name="question-2" value="0"><span>A. 筛查与适用性</span></label><label class="option"><input type="checkbox" name="question-2" value="1"><span>B. 热身和停止条件</span></label><label class="option"><input type="checkbox" name="question-2" value="2"><span>C. 监督与场地安全</span></label><label class="option"><input type="checkbox" name="question-2" value="3"><span>D. 不管症状直接完成</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[1]" data-explanation="测试安全和可解释性优先于凑齐数据。"><h3>4. 案例：小吴当天头晕、睡眠很差，还想完成固定车测试以免缺数据。较合适的是？</h3><div class="options"><label class="option"><input type="radio" name="question-3" value="0"><span>A. 硬测并忽略感觉</span></label><label class="option"><input type="radio" name="question-3" value="1"><span>B. 暂停测试，记录状态并按需要转介或改期</span></label><label class="option"><input type="radio" name="question-3" value="2"><span>C. 加大阻力快速结束</span></label><label class="option"><input type="radio" name="question-3" value="3"><span>D. 删掉所有记录</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section></section><footer>Day 82/110<ul><li>NASM OPT Model：目标、能力、训练阶段与复查点的训练决策框架。</li><li>ACSM运动测试与处方指南：筛查、现场测试与停止条件。</li><li>本课为一般教育；身体成分、心肺测试和异常症状的解释应尊重隐私并遵循适当专业转介。</li></ul></footer></main><dialog aria-label="详情大图"><button class="icon-button" aria-label="关闭大图" title="关闭大图"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></button><img alt=""></dialog><script>document.querySelectorAll('.flip').forEach((button) => {
+  button.addEventListener('click', () => {
+    const pressed = button.getAttribute('aria-pressed') !== 'true';
+    button.setAttribute('aria-pressed', String(pressed));
+    button.querySelector('.front').setAttribute('aria-hidden', String(pressed));
+    button.querySelector('.back').setAttribute('aria-hidden', String(!pressed));
+  });
+});
+document.querySelectorAll('.question').forEach((question) => {
+  question.querySelector('.check').addEventListener('click', () => {
+    const selected = [...question.querySelectorAll('input:checked')].map((input) => Number(input.value)).sort();
+    const answer = question.querySelector('.answer');
+    answer.hidden = false;
+    if (!selected.length) { answer.textContent = '请先选择答案。'; delete question.dataset.result; return; }
+    const correct = JSON.stringify(selected) === JSON.stringify(JSON.parse(question.dataset.answers).sort());
+    question.dataset.result = correct ? 'correct' : 'wrong';
+    answer.textContent = `${correct ? '回答正确。' : '再想一想。'}${question.dataset.explanation}`;
+  });
+});
+const imageDialog = document.querySelector('dialog');
+document.querySelectorAll('[data-zoom]').forEach((button) => {
+  button.addEventListener('click', () => {
+    const original = button.querySelector('img');
+    const image = imageDialog.querySelector('img');
+    image.src = original.src;
+    image.alt = original.alt;
+    imageDialog.showModal();
+  });
+});
+imageDialog.querySelector('button').addEventListener('click', () => imageDialog.close());
+imageDialog.addEventListener('click', (event) => {
+  const rect = imageDialog.getBoundingClientRect();
+  if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) imageDialog.close();
+});
+</script></body></html>

@@ -1,0 +1,357 @@
+{
+  "processedAt": "2026-09-30T09:01:16.344114+00:00",
+  "method": "trim near-transparent noise; reviewed crop; uniform scale; transparent margin",
+  "assets": [
+    {
+      "source": "runs/day59/source/cover.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "sourceSha256": "835860b4217e0bb1fb667e0898ef72aeb99ccb31fc577371f65237a30b5e7f0b",
+      "reviewedCrop": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "visibleCrop": [
+        262,
+        51,
+        1486,
+        885
+      ],
+      "output": "runs/day59/assets/cover.png",
+      "size": [
+        1600,
+        900
+      ],
+      "subjectSize": [
+        1162,
+        792
+      ],
+      "offset": [
+        219,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "无字封面"
+    },
+    {
+      "source": "runs/day59/source/visual-01-observe.png",
+      "sourceSize": [
+        1881,
+        836
+      ],
+      "sourceSha256": "900030d4c24ef16d7237d71cdddba8f4d34134b819c29e815e3b72118ec968b9",
+      "reviewedCrop": [
+        0,
+        0,
+        1881,
+        836
+      ],
+      "visibleCrop": [
+        601,
+        13,
+        1329,
+        803
+      ],
+      "output": "runs/day59/assets/visual-01-observe.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        728,
+        790
+      ],
+      "offset": [
+        1036,
+        55
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "动态任务观察"
+    },
+    {
+      "source": "runs/day59/source/visual-02-upper.png",
+      "sourceSize": [
+        2207,
+        712
+      ],
+      "sourceSha256": "1a0c69c67b43c1de51463986b242f2e78c1a927493f03cb5c7c4aac65cc313f5",
+      "reviewedCrop": [
+        0,
+        0,
+        2207,
+        712
+      ],
+      "visibleCrop": [
+        917,
+        0,
+        1378,
+        710
+      ],
+      "output": "runs/day59/assets/visual-02-upper.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        461,
+        710
+      ],
+      "offset": [
+        1169,
+        95
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "上交叉肩颈肩胛协同"
+    },
+    {
+      "source": "runs/day59/source/visual-03-lower.png",
+      "sourceSize": [
+        2212,
+        711
+      ],
+      "sourceSha256": "32aaefa56c4c9543d49ae277ae244bcc7548a60c59f8da7bd6ee70cb11d691f1",
+      "reviewedCrop": [
+        0,
+        0,
+        2212,
+        711
+      ],
+      "visibleCrop": [
+        817,
+        17,
+        1475,
+        692
+      ],
+      "output": "runs/day59/assets/visual-03-lower.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        658,
+        675
+      ],
+      "offset": [
+        1071,
+        112
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "下交叉骨盆髋协同"
+    },
+    {
+      "source": "runs/day59/source/visual-04-integrate.png",
+      "sourceSize": [
+        1881,
+        836
+      ],
+      "sourceSha256": "a9729f5da8f7a9d7a5a806e16094204462b1c69680b6479b4a3d122454a1a612",
+      "reviewedCrop": [
+        0,
+        0,
+        1881,
+        836
+      ],
+      "visibleCrop": [
+        666,
+        40,
+        1222,
+        796
+      ],
+      "output": "runs/day59/assets/visual-04-integrate.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        556,
+        756
+      ],
+      "offset": [
+        1122,
+        72
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "松拉激整回到完整动作"
+    },
+    {
+      "source": "runs/day59/source/overview-01-observe.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "d8b905ac36d1a19465fc73e655fa5e9ea0d8fa75d705801f316d39da167e20a9",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        489,
+        144,
+        1055,
+        969
+      ],
+      "output": "runs/day59/assets/overview-01-observe.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        566,
+        825
+      ],
+      "offset": [
+        517,
+        187
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day59/source/overview-02-upper.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "9f15c3ce6e83bf9b54c7ccdae4d608bb49d7ebabe4bc79625e5b087364d51a58",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        430,
+        13,
+        1051,
+        1073
+      ],
+      "output": "runs/day59/assets/overview-02-upper.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        619,
+        1056
+      ],
+      "offset": [
+        490,
+        72
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day59/source/overview-03-lower.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "79b90d9e9be9e405c6f9ce51cdfd0817d4420ae359a6e2cf247e700094a0f72a",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        78,
+        263,
+        1372,
+        843
+      ],
+      "output": "runs/day59/assets/overview-03-lower.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1294,
+        580
+      ],
+      "offset": [
+        153,
+        310
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day59/source/overview-04-integrate.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "3cbdc6fbca24eaa2172333bf20a1bdabdedbc4c0654ae3ea04c2065080d2f12e",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        368,
+        23,
+        1184,
+        1059
+      ],
+      "output": "runs/day59/assets/overview-04-integrate.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        816,
+        1036
+      ],
+      "offset": [
+        392,
+        82
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    }
+  ]
+}

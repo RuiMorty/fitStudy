@@ -1,0 +1,28 @@
+{
+  "day": 83,
+  "title": "肌力、肌耐力与爆发力评估",
+  "reviewedAt": "2026-10-02T18:36:03+08:00",
+  "requestRecord": "runs/day83/image-request-log.json",
+  "requirements": ["Accepted sources have a real alpha channel and were visually checked on a neutral background.", "Each scene uses one Bojji and one Despa with no readable text, floor, room, cast shadow, duplicate pose or sequence framing.", "Overview art is independently generated and compositionally distinct from its corresponding knowledge image.", "Assessment material is non-diagnostic: methods are selected, standardized and stopped safely rather than used to label people."],
+  "accepted": [
+    {"file":"cover.png","attempt":2,"source":"runs/day83/image-requests/cover-eb86e17540/attempt-02/cover.png","sha256":"0851a2e7c233b53ba267d26a8b33e062bcd45de00c30becd0debbbd38a02cb25","review":"Controlled box sit-to-stand with a calm supervisor and isolated props; no score, label or ground."},
+    {"file":"visual-01.png","attempt":1,"source":"runs/day83/image-requests/visual-01-8a79cc2ec8/attempt-01/visual-01.png","sha256":"c2393ff4a1dc8e0f2b2862c410475c8a7bc609bd896a9d121f0c2e741443e936","review":"Blank card, shoes and a light dumbbell frame test selection."},
+    {"file":"visual-02.png","attempt":1,"source":"runs/day83/image-requests/visual-02-1d99f16a14/attempt-01/visual-02.png","sha256":"1425bd1e9515d92976bd36015238a043e9c24f1e62b5843fcfbe5bdd0b06c264","review":"Dumbbell, ball and marker are separate method props in one calm scene."},
+    {"file":"visual-03.png","attempt":3,"source":"runs/day83/image-requests/visual-03-0c02636da0/attempt-03/visual-03.png","sha256":"58a44eeb42f91694ff998a4b179a4e18e84c0b74c3c487ecbefc82060468f204","review":"One dumbbell, a low bench and an unmarked timer support standardization."},
+    {"file":"visual-04.png","attempt":1,"source":"runs/day83/image-requests/visual-04-dfef8f1f0d/attempt-01/visual-04.png","sha256":"709714c298236408a090950baf0b0927e85ee50905cc5a885b1fe7f7822073af","review":"Open-palm pause beside a stable box is calm and non-medical."},
+    {"file":"visual-05.png","attempt":4,"source":"runs/day83/image-requests/visual-05-c5ca8b3979/attempt-04/visual-05.png","sha256":"238072d8e58592f9a5014484a712a58c10b21eb47895c12b2d98b704e392364e","review":"Two blank cards communicate personal trends without a score."},
+    {"file":"overview-01.png","attempt":1,"source":"runs/day83/image-requests/overview-01-9cdac68418/attempt-01/overview-01.png","sha256":"21d50a318f3bd69a732321d9413d8e035cd1c4ced73de0b7bc00c2bbaa6b277c","review":"Independent compact card-and-shoes selection scene."},
+    {"file":"overview-02.png","attempt":1,"source":"runs/day83/image-requests/overview-02-6a449564cb/attempt-01/overview-02.png","sha256":"b614dd391806732cef8f60f99b57ba769405ffeb1960880dcfcb19c43335058f","review":"Independent compact method-comparison scene."},
+    {"file":"overview-03.png","attempt":2,"source":"runs/day83/image-requests/overview-03-827fcd4a79/attempt-02/overview-03.png","sha256":"ff49e652745b61e15cf69b1ce8dbbc1627afed024e05f0e4cc979275e5ed6ac2","review":"Blank rectangular timer, bench and controlled dumbbell scene contain no readings."},
+    {"file":"overview-04.png","attempt":1,"source":"runs/day83/image-requests/overview-04-897df7e278/attempt-01/overview-04.png","sha256":"bc16ced1bc1631ac4c343b3655ac034a64c6c0672751c1a038fd5b50b9c336d0","review":"Independent compact open-palm stop scene."},
+    {"file":"overview-05.png","attempt":1,"source":"runs/day83/image-requests/overview-05-d059872d99/attempt-01/overview-05.png","sha256":"36dcb3840f4ed1881dc54be5b7f365e3ac1dc9781ec653bd275c467ec70c5513","review":"Two blank cards and a light dumbbell form a distinct trend-review composition."}
+  ],
+  "rejected": [
+    {"file":"visual-03.png","attempt":2,"reason":"A second dumbbell was added although the scene requires one controlled-repetition prop."},
+    {"file":"visual-05.png","attempt":1,"reason":"Two dumbbells obscure the single-dumbbell personal-trend scene."},
+    {"file":"visual-05.png","attempt":2,"reason":"A second dumbbell remains after the first prompt correction."},
+    {"file":"visual-05.png","attempt":3,"reason":"Large background glow violates the true-transparent requirement."},
+    {"file":"overview-03.png","attempt":1,"reason":"Timer includes a marked dial rather than a blank non-readable prop."}
+  ],
+  "summary": {"planned":11,"accepted":11,"requested":18,"retriesUsed":7,"allAcceptedSourcesHaveAlpha":true,"readyForSharedPreparation":true}
+}

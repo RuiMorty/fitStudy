@@ -1,0 +1,10 @@
+{
+  "scope": "Local directional geometry regression; not complete collision or anatomical validation.",
+  "checks": {
+    "same_17_anatomical_ids": true,
+    "baseline_detects_large_gap": true,
+    "fitted_sagittal_superficial_gap_below_1mm_sampling": true,
+    "no_sampled_contact_intrusion_above_2mm": true
+  },
+  "status": "passed"
+}

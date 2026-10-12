@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Day 72 · 常见合法补剂评估</title><link rel="icon" type="image/svg+xml" href="assets/fitness-study-logo-open-circle.svg?v=a6d8e5caaa61"><style>:root { color-scheme: light; --ink: #111113; --muted: #71717a; --line: #e4e4e7; --accent: #ff5a1f; --green: #0ea66b; --blue: #2563eb; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; font-synthesis: none; letter-spacing: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); overflow-wrap: anywhere; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+img { display: block; max-width: 100%; }
+button:focus-visible, a:focus-visible, summary:focus-visible, input:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
+svg.icon { width: 20px; height: 20px; }
+.icon-button { display: inline-grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 1px solid var(--line); border-radius: 6px; background: white; }
+[hidden] { display: none !important; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
+
+body { background: #f6f8f7; font-size: 14px; line-height: 1.65; }
+main { max-width: 980px; margin: auto; padding: 24px 18px 60px; }
+.header { padding: 22px 4px 14px; }
+h1 { margin: 10px 0 8px; font-size: 36px; line-height: 1.2; }
+h1::before { content: ""; display: block; width: 34px; height: 4px; background: var(--accent); margin-bottom: 10px; }
+h2 { font-size: 17px; margin: 0 0 14px; }
+h3 { font-size: 16px; margin: 0 0 8px; }
+.sub { color: var(--muted); margin: 5px 0 18px; }
+.meta { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { display: inline-block; border: 1px solid var(--line); border-radius: 20px; background: white; color: var(--muted); padding: 3px 10px; font-size: 12px; font-weight: 600; }
+.chip:nth-child(1) { background: #e2f7eb; color: #15803d; border-color: transparent; }
+.chip:nth-child(2) { background: #e7f0fe; color: #2563eb; border-color: transparent; }
+.chip:nth-child(3) { background: #fff2e5; color: #9a4c05; border-color: transparent; }
+.panel, .figure, .warn, .mnemonic { background: white; border: 1px solid #e2e8e4; border-radius: 14px; box-shadow: 0 2px 12px rgba(20,40,30,.06); padding: 20px; margin: 16px 0; }
+.green { border-left: 5px solid var(--green); }
+.orange { border-left: 5px solid #ea7a17; }
+.blue { border-left: 5px solid #0ea5e9; }
+.takeaway { margin: 0; }
+.figure { text-align: center; }
+.figure button { display: block; position: relative; width: 100%; border: 0; padding: 0; background: white; cursor: zoom-in; }
+.figure img { max-height: 760px; width: 100%; object-fit: contain; }
+.figure .icon-button { position: absolute; bottom: 8px; right: 8px; background: #ffffffed; }
+.caption { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
+.kp { list-style: none; padding: 0; margin: 0; }
+.kp > li { border-bottom: 1px dashed #e2e8e4; }
+.kp > li:last-child { border-bottom: 0; }
+.kp summary { cursor: pointer; padding: 13px 8px; font-weight: 650; }
+.kp summary::marker { color: var(--green); }
+.term { color: #0a7d52; background: #e2f7eb; border-radius: 6px; padding: 1px 5px; }
+.kp-body { padding: 2px 14px 16px 24px; }
+.detail-block { margin: 12px 0; }
+.detail-block h4 { font-size: 13px; color: #08744d; margin: 0 0 4px; }
+.detail-block p { margin: 0; white-space: pre-line; }
+.warn { border-left: 5px solid #e23b3b; background: #fffafa; }
+.warn p { margin: 8px 0; }
+.misconception { color: #a82b32; }
+.mnemonic { border-left: 4px solid var(--accent); box-shadow: none; }
+.mnemonic strong { color: #df4716; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+.flip { height: 168px; perspective: 900px; border: 0; background: transparent; padding: 0; text-align: center; }
+.flip-in { display: block; height: 100%; position: relative; transition: transform .45s; transform-style: preserve-3d; }
+.flip[aria-pressed="true"] .flip-in { transform: rotateY(180deg); }
+.face { position: absolute; inset: 0; backface-visibility: hidden; border: 1px solid var(--line); border-radius: 10px; padding: 15px; background: #fafafa; display: flex; align-items: center; justify-content: center; overflow-y: auto; }
+.back { transform: rotateY(180deg); background: #eef9f4; color: #075e40; border-color: #c8eadb; }
+.practice { padding-left: 20px; }
+.practice li { margin: 7px 0; }
+.question { border-top: 1px solid #e2e8e4; padding: 20px 0 8px; margin-top: 12px; min-width: 0; }
+.options { display: grid; gap: 7px; margin: 10px 0; }
+.option { display: flex; gap: 10px; align-items: baseline; border: 1px solid #e2e8e4; background: #f0f4f2; padding: 9px 12px; border-radius: 8px; cursor: pointer; }
+.option input { flex-shrink: 0; accent-color: var(--green); }
+.option:has(input:checked) { border-color: #0ea5e9; background: #e7f6fd; }
+.question[data-result="correct"] .option:has(input:checked) { border-color: #0ea66b; background: #e7f8ef; }
+.question[data-result="wrong"] .option:has(input:checked) { border-color: #e23b3b; background: #fff0f0; }
+.answer { background: #f8fbfa; border-left: 3px solid #0ea5e9; padding: 10px; margin-top: 10px; }
+.check { border: 0; background: #0ea66b; color: white; padding: 9px 14px; border-radius: 7px; }
+footer { color: var(--muted); font-size: 12px; margin-top: 28px; }
+footer ul { padding-left: 20px; }
+dialog { width: min(1200px, 96vw); max-height: 94dvh; padding: 52px 16px 16px; border: 0; border-radius: 8px; background: white; }
+dialog::backdrop { background: #15191dd9; }
+dialog img { width: 100%; max-height: 78dvh; object-fit: contain; }
+dialog .icon-button { position: absolute; top: 8px; right: 10px; }
+@media (max-width: 600px) {
+  main { padding: 16px 12px 40px; }
+  h1 { font-size: 26px; }
+  .header { padding: 16px 4px 12px; }
+  .panel, .figure, .warn, .mnemonic { padding: 15px; }
+  .kp-body { padding-left: 16px; }
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .face { padding: 12px; }
+}
+</style></head><body><main><header class="header"><h1>Day 72 · 常见合法补剂评估</h1><p class="sub">先问需求与证据，再看安全、纯度、规则和个人耐受。</p><div class="meta"><span class="chip">循证补剂</span><span class="chip">安全纯度</span><span class="chip">个体耐受</span></div></header><section class="panel green"><h2>一句话总结</h2><p class="takeaway">补剂先看目标与基础饮食、训练、睡眠是否到位，再看证据、安全、纯度、成本、规则和耐受。肌酸一水合物对重复高强度表现证据较强，健康成人常见维持3—5 g/日，装载非必需。咖啡因研究常见约3—6 mg/kg、赛前30—60分钟，但需考虑睡眠、焦虑、心血管状况和用药。β-丙氨酸、硝酸盐（甜菜根常见）和碳酸氢钠有特定条件；蛋白粉只是方便来源。补剂不能替代正餐、治疗或药物建议。</p></section><figure class="figure"><button data-zoom aria-label="放大详情图"><img class="" src="assets/阶段4 营养恢复/day72-常见合法补剂评估.png" alt="常见合法补剂证据、安全和选择步骤中文总览"><span class="icon-button"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 15 6 6" /><path d="m15 9 6-6" /><path d="M21 16v5h-5" /><path d="M21 8V3h-5" /><path d="M3 16v5h5" /><path d="m3 21 6-6" /><path d="M3 8V3h5" /><path d="M9 9 3 3" /></svg></span></button><figcaption class="caption">“可以买到”不等于必要、有效或适合个人；补剂应建立在营养、训练、睡眠和医学安全之上，并考虑赛事规则与产品纯度。</figcaption></figure><section class="panel"><h2>核心要点</h2><ul class="kp"><li><details><summary><span class="term">评估顺序：先需求，再证据与风险</span>：补剂不是营养、训练和睡眠的补丁；先明确目标与缺口，再比较有效性、安全性、纯度、成本和规则。</summary><div class="kp-body"><section class="detail-block"><h4>把“产品”与“成分”分开</h4><p>某成分在研究中有效，不代表每个含该成分的产品剂量准确、没有污染或适合所有人。AIS A/B/C/D框架可帮助理解证据：A在特定情境证据较强，B仍值得研究，C尚未建立有意义益处，D为禁用或高风险类别；仍要查看产品批次、成分表和第三方认证。</p></section><section class="detail-block"><h4>先补基础缺口</h4><p>睡眠不足、总能量不够、蛋白质不足或训练计划混乱时，先解决基础问题通常更有价值。补剂若要试用，应一次只试一种，在普通训练日记录效果和不良反应，不在比赛日第一次尝试。</p></section></div></details></li><li><details><summary><span class="term">肌酸与咖啡因：证据强，也有条件</span>：肌酸一水合物和咖啡因在特定人群与任务中的证据较多；剂量、时机和安全判断必须个体化。</summary><div class="kp-body"><section class="detail-block"><h4>肌酸：维持比装载更关键</h4><p>健康成人常见研究维持方案为肌酸一水合物3—5 g/日；约20 g/日分次、持续5—7天的装载可更快达到饱和，但并非必须。体重短期增加常与体液变化有关；胃肠不适可考虑停止并咨询专业人员。</p></section><section class="detail-block"><h4>咖啡因：低剂量也可能足够</h4><p>约3—6 mg/kg、赛前30—60分钟是常见研究范围，不是人人应达到的目标。对咖啡因敏感、有心血管疾病、焦虑、睡眠问题、妊娠、正在用药或未成年者，应先咨询临床人员；出现心悸、胸痛或严重焦虑时停止使用和训练，症状严重或持续时按当地紧急流程处理。</p></section></div></details></li><li><details><summary><span class="term">其他常见成分：只在匹配任务时讨论</span>：β-丙氨酸、硝酸盐（甜菜根是常见来源）、碳酸氢钠和蛋白粉有不同用途与限制；BCAA/EAA不自动优于充足蛋白质。</summary><div class="kp-body"><section class="detail-block"><h4>慢性补充与急性体验不同</h4><p>β-丙氨酸多用于短时高强度重复工作，常需数周累积，刺痒感常见；甜菜根是硝酸盐的常见食物来源，硝酸盐和碳酸氢钠的反应差异大，后者尤其可能引发胃肠不适并影响钠摄入。不要因为“训练前”标签就把所有成分叠加。</p></section><section class="detail-block"><h4>蛋白粉不是必需品</h4><p>蛋白粉可帮助方便地补足全天蛋白质，但普通食物同样可以。若全天优质蛋白已足够，额外BCAA/EAA往往没有明显附加价值；植物饮食者可通过多样化蛋白来源和专业建议安排。</p></section></div></details></li><li><details><summary><span class="term">试用流程：低风险、可追踪、可退出</span>：确认法规与赛事规则，选可追溯产品，在训练中一次试一种；任何异常反应都优先停用与评估。</summary><div class="kp-body"><section class="detail-block"><h4>不要叠加猜因果</h4><p>一次新加多种预训练、能量饮料和草本成分时，出现失眠、胃肠不适或心悸很难找原因。明确目标、产品、使用时间和主观反应；无益或有害就停止使用和训练，不要用更大剂量“补救”。</p></section><section class="detail-block"><h4>运动员多一层污染风险</h4><p>第三方认证可降低、不能消除污染和标签不符风险。参赛者还需核对自身组织的最新规则；教练不能保证某个产品“绝对安全”或代替医生、药师及反兴奋剂机构做判断。</p></section></div></details></li></ul></section><section class="warn"><h2>常见误区</h2><p><strong class="misconception">误区：合法出售就代表有效、纯净且适合我。</strong><br>辨析：法规、证据、批次纯度、健康状况和赛事规则是不同问题，需要分别核对。</p><p><strong class="misconception">误区：肌酸必须装载，体重一涨就是长脂肪。</strong><br>辨析：装载不是必需；短期体重变化常与体液有关，仍应结合训练和连续趋势观察。</p><p><strong class="misconception">误区：咖啡因越多越能提升表现。</strong><br>辨析：更高剂量可能加重心悸、焦虑、胃肠不适和睡眠问题；低剂量或不用对一些人更合适。</p><p><strong class="misconception">误区：蛋白粉和BCAA能取代正餐、睡眠和全天蛋白。</strong><br>辨析：蛋白粉只是方便来源；若全天蛋白充足，额外BCAA/EAA通常没有必要，基础饮食和恢复仍优先。</p></section><section class="mnemonic"><h2>记忆口诀</h2><p><strong>先基础，再证据；试一种，查纯度；有不适，先停用。</strong></p></section><section class="panel"><h2>翻转卡复习</h2><div class="cards"><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">补剂评估第一步？</span><span class="face back" aria-hidden="true">明确目标和基础营养、训练、睡眠是否已到位。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">肌酸一水合物常见维持方案？</span><span class="face back" aria-hidden="true">健康成人研究中常见3—5 g/日；装载并非必需。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">咖啡因常见研究时机与范围？</span><span class="face back" aria-hidden="true">约赛前30—60分钟、3—6 mg/kg，但要看个人耐受与安全。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">β-丙氨酸常见体验？</span><span class="face back" aria-hidden="true">需要慢性累积，可能出现刺痒感；不等于所有项目都需要。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">蛋白粉的定位？</span><span class="face back" aria-hidden="true">方便补足蛋白的食物，不是必需品或正餐替代。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">第三方认证能保证零风险吗？</span><span class="face back" aria-hidden="true">不能；它可降低部分风险，仍需核对批次、规则和个人情况。</span></span></button></div></section><section class="panel orange"><h2>实操关联</h2><ul class="practice"><li>列出一个训练目标和当前基础缺口；若睡眠、正餐或训练计划未稳定，优先处理它们而不是购买新产品。</li><li>阅读一个补剂标签时，分开记录有效成分、每份含量、其他刺激成分、批次与第三方认证，不只看广告词。</li><li>若决定试用，在普通训练日一次加入一种，并记录时间、主观感受、睡眠、胃肠反应和训练表现。</li><li>参赛者在购买前查询适用组织的最新反兴奋剂规则和第三方认证；有疾病、用药或异常反应先咨询医生或药师。</li></ul></section><section class="panel blue"><h2>练习题</h2><section class="question" data-answers="[1]" data-explanation="肌酸一水合物的证据较多，维持补充即可；装载不是强制步骤，也不能取代训练。"><h3>1. 单选：哪项最符合肌酸一水合物的基础原则？</h3><div class="options"><label class="option"><input type="radio" name="question-0" value="0"><span>A. 只有装载才有效</span></label><label class="option"><input type="radio" name="question-0" value="1"><span>B. 健康成人常见研究维持方案为3—5 g/日，装载可选</span></label><label class="option"><input type="radio" name="question-0" value="2"><span>C. 体重变化一定是脂肪增加</span></label><label class="option"><input type="radio" name="question-0" value="3"><span>D. 可替代抗阻训练</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[3]" data-explanation="新补剂应在训练中一次试一种；高剂量叠加会提高不良反应与判断困难。"><h3>2. 单选：咖啡因试用时最不合适的做法是？</h3><div class="options"><label class="option"><input type="radio" name="question-1" value="0"><span>A. 在普通训练日测试耐受</span></label><label class="option"><input type="radio" name="question-1" value="1"><span>B. 考虑睡眠、焦虑、心血管和用药情况</span></label><label class="option"><input type="radio" name="question-1" value="2"><span>C. 不适时停止并评估</span></label><label class="option"><input type="radio" name="question-1" value="3"><span>D. 比赛当天第一次把剂量叠到最高</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[0,1,2,3]" data-explanation="补剂判断是多条件决策；营销修辞不能替代证据、安全和规则核对。"><h3>3. 多选：判断一款补剂是否值得考虑时，哪些方面应纳入？</h3><div class="options"><label class="option"><input type="checkbox" name="question-2" value="0"><span>A. 目标和基础营养缺口</span></label><label class="option"><input type="checkbox" name="question-2" value="1"><span>B. 研究证据与实际成分</span></label><label class="option"><input type="checkbox" name="question-2" value="2"><span>C. 健康、用药和个人耐受</span></label><label class="option"><input type="checkbox" name="question-2" value="3"><span>D. 赛事规则与纯度</span></label><label class="option"><input type="checkbox" name="question-2" value="4"><span>E. 广告使用了“黑科技”一词</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[2]" data-explanation="心悸和持续失眠是需要先评估的健康信号。停止使用与训练；若症状严重或持续，按当地紧急流程处理。教练不应给剂量建议或鼓励叠加刺激物。"><h3>4. 案例：小杰有持续失眠和偶发心悸，想为了训练直接使用高剂量咖啡因。更合适的是？</h3><div class="options"><label class="option"><input type="radio" name="question-3" value="0"><span>A. 叠加能量饮料增强效果</span></label><label class="option"><input type="radio" name="question-3" value="1"><span>B. 忽略症状，只按别人剂量使用</span></label><label class="option"><input type="radio" name="question-3" value="2"><span>C. 先不自行使用，咨询医生或药师并优先处理睡眠与心悸</span></label><label class="option"><input type="radio" name="question-3" value="3"><span>D. 把咖啡因和多种预训练一起试</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section></section><footer>Day 72/110<ul><li>Australian Institute of Sport：Sports Supplement Framework，补剂证据、风险与分级框架。</li><li>International Society of Sports Nutrition：Creatine Supplementation 立场文件，肌酸一水合物的常见研究方案与安全讨论。</li><li>International Society of Sports Nutrition：Caffeine and Exercise Performance 立场文件，咖啡因的证据和个体差异。</li><li>本课为一般教育，不替代医学、药学或反兴奋剂建议；疾病、用药、妊娠、未成年人、心悸、胸痛或赛事合规问题请咨询相应专业人员。症状严重或持续时停止使用与训练，并按当地紧急流程处理。</li></ul></footer></main><dialog aria-label="详情大图"><button class="icon-button" aria-label="关闭大图" title="关闭大图"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></button><img alt=""></dialog><script>document.querySelectorAll('.flip').forEach((button) => {
+  button.addEventListener('click', () => {
+    const pressed = button.getAttribute('aria-pressed') !== 'true';
+    button.setAttribute('aria-pressed', String(pressed));
+    button.querySelector('.front').setAttribute('aria-hidden', String(pressed));
+    button.querySelector('.back').setAttribute('aria-hidden', String(!pressed));
+  });
+});
+document.querySelectorAll('.question').forEach((question) => {
+  question.querySelector('.check').addEventListener('click', () => {
+    const selected = [...question.querySelectorAll('input:checked')].map((input) => Number(input.value)).sort();
+    const answer = question.querySelector('.answer');
+    answer.hidden = false;
+    if (!selected.length) { answer.textContent = '请先选择答案。'; delete question.dataset.result; return; }
+    const correct = JSON.stringify(selected) === JSON.stringify(JSON.parse(question.dataset.answers).sort());
+    question.dataset.result = correct ? 'correct' : 'wrong';
+    answer.textContent = `${correct ? '回答正确。' : '再想一想。'}${question.dataset.explanation}`;
+  });
+});
+const imageDialog = document.querySelector('dialog');
+document.querySelectorAll('[data-zoom]').forEach((button) => {
+  button.addEventListener('click', () => {
+    const original = button.querySelector('img');
+    const image = imageDialog.querySelector('img');
+    image.src = original.src;
+    image.alt = original.alt;
+    imageDialog.showModal();
+  });
+});
+imageDialog.querySelector('button').addEventListener('click', () => imageDialog.close());
+imageDialog.addEventListener('click', (event) => {
+  const rect = imageDialog.getBoundingClientRect();
+  if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) imageDialog.close();
+});
+</script></body></html>

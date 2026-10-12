@@ -1,0 +1,176 @@
+{
+  "checks": [
+    {
+      "name": "Six bone-surface annotation meshes are loaded separately from the 17 structures",
+      "pass": true
+    },
+    {
+      "name": "Exported tissue origin remains attached across 49 angles: muscle_biceps_long_R",
+      "pass": true,
+      "detail": {
+        "initialMatch": 0,
+        "maxDrift": 0
+      }
+    },
+    {
+      "name": "Exported tissue origin remains attached across 49 angles: muscle_biceps_short_R",
+      "pass": true,
+      "detail": {
+        "initialMatch": 0,
+        "maxDrift": 0
+      }
+    },
+    {
+      "name": "Exported tissue origin remains attached across 49 angles: muscle_triceps_long_R",
+      "pass": true,
+      "detail": {
+        "initialMatch": 0,
+        "maxDrift": 0
+      }
+    },
+    {
+      "name": "Exported tissue origin remains attached across 49 angles: muscle_brachialis_R",
+      "pass": true,
+      "detail": {
+        "initialMatch": 0,
+        "maxDrift": 0
+      }
+    },
+    {
+      "name": "Exported tissue origin remains attached across 49 angles: muscle_triceps_lateral_R",
+      "pass": true,
+      "detail": {
+        "initialMatch": 0,
+        "maxDrift": 0
+      }
+    },
+    {
+      "name": "Exported tissue origin remains attached across 49 angles: muscle_triceps_medial_R",
+      "pass": true,
+      "detail": {
+        "initialMatch": 0,
+        "maxDrift": 0
+      }
+    },
+    {
+      "name": "Origin inspection temporarily fits model without changing angle",
+      "pass": true
+    },
+    {
+      "name": "Scapular origin inspection removes humeral occlusion",
+      "pass": true
+    },
+    {
+      "name": "Tendon is transparent in origin inspection",
+      "pass": true
+    },
+    {
+      "name": "Only selected candidate region is shown: muscle_biceps_long_R",
+      "pass": true
+    },
+    {
+      "name": "Review status is visible: muscle_biceps_long_R",
+      "pass": true
+    },
+    {
+      "name": "Only selected candidate region is shown: muscle_biceps_short_R",
+      "pass": true
+    },
+    {
+      "name": "Review status is visible: muscle_biceps_short_R",
+      "pass": true
+    },
+    {
+      "name": "Only selected candidate region is shown: muscle_triceps_long_R",
+      "pass": true
+    },
+    {
+      "name": "Review status is visible: muscle_triceps_long_R",
+      "pass": true
+    },
+    {
+      "name": "Only selected candidate region is shown: muscle_brachialis_R",
+      "pass": true
+    },
+    {
+      "name": "Review status is visible: muscle_brachialis_R",
+      "pass": true
+    },
+    {
+      "name": "Only selected candidate region is shown: muscle_triceps_lateral_R",
+      "pass": true
+    },
+    {
+      "name": "Review status is visible: muscle_triceps_lateral_R",
+      "pass": true
+    },
+    {
+      "name": "Only selected candidate region is shown: muscle_triceps_medial_R",
+      "pass": true
+    },
+    {
+      "name": "Review status is visible: muscle_triceps_medial_R",
+      "pass": true
+    },
+    {
+      "name": "Exit restores exact exploded positions, camera and prior visibility",
+      "pass": true
+    },
+    {
+      "name": "Exit restores opaque anatomy",
+      "pass": true
+    },
+    {
+      "name": "Candidate patch follows its bone during explosion",
+      "pass": true,
+      "detail": {
+        "patch": [
+          -0.0525,
+          0.017499999999999998,
+          0
+        ],
+        "bone": [
+          -0.0525,
+          0.017499999999999998,
+          0
+        ]
+      }
+    },
+    {
+      "name": "Candidate patch restores exactly with bone",
+      "pass": true
+    },
+    {
+      "name": "Mobile origin action scrolls back to viewer",
+      "pass": true
+    },
+    {
+      "name": "Mobile origin inspection opens by touch",
+      "pass": true
+    },
+    {
+      "name": "Mobile origin view has no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "Mobile returns to complete model",
+      "pass": true
+    },
+    {
+      "name": "No browser runtime errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "origin-biceps_long.png",
+    "origin-biceps_short.png",
+    "origin-triceps_long.png",
+    "origin-brachialis.png",
+    "origin-triceps_lateral.png",
+    "origin-triceps_medial.png",
+    "mobile-origin-long-head.png"
+  ],
+  "status": "passed"
+}

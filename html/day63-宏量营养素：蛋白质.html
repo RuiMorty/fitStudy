@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Day 63 · 宏量营养素：蛋白质</title><link rel="icon" type="image/svg+xml" href="assets/fitness-study-logo-open-circle.svg?v=a6d8e5caaa61"><style>:root { color-scheme: light; --ink: #111113; --muted: #71717a; --line: #e4e4e7; --accent: #ff5a1f; --green: #0ea66b; --blue: #2563eb; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; font-synthesis: none; letter-spacing: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); overflow-wrap: anywhere; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+img { display: block; max-width: 100%; }
+button:focus-visible, a:focus-visible, summary:focus-visible, input:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
+svg.icon { width: 20px; height: 20px; }
+.icon-button { display: inline-grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 1px solid var(--line); border-radius: 6px; background: white; }
+[hidden] { display: none !important; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
+
+body { background: #f6f8f7; font-size: 14px; line-height: 1.65; }
+main { max-width: 980px; margin: auto; padding: 24px 18px 60px; }
+.header { padding: 22px 4px 14px; }
+h1 { margin: 10px 0 8px; font-size: 36px; line-height: 1.2; }
+h1::before { content: ""; display: block; width: 34px; height: 4px; background: var(--accent); margin-bottom: 10px; }
+h2 { font-size: 17px; margin: 0 0 14px; }
+h3 { font-size: 16px; margin: 0 0 8px; }
+.sub { color: var(--muted); margin: 5px 0 18px; }
+.meta { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { display: inline-block; border: 1px solid var(--line); border-radius: 20px; background: white; color: var(--muted); padding: 3px 10px; font-size: 12px; font-weight: 600; }
+.chip:nth-child(1) { background: #e2f7eb; color: #15803d; border-color: transparent; }
+.chip:nth-child(2) { background: #e7f0fe; color: #2563eb; border-color: transparent; }
+.chip:nth-child(3) { background: #fff2e5; color: #9a4c05; border-color: transparent; }
+.panel, .figure, .warn, .mnemonic { background: white; border: 1px solid #e2e8e4; border-radius: 14px; box-shadow: 0 2px 12px rgba(20,40,30,.06); padding: 20px; margin: 16px 0; }
+.green { border-left: 5px solid var(--green); }
+.orange { border-left: 5px solid #ea7a17; }
+.blue { border-left: 5px solid #0ea5e9; }
+.takeaway { margin: 0; }
+.figure { text-align: center; }
+.figure button { display: block; position: relative; width: 100%; border: 0; padding: 0; background: white; cursor: zoom-in; }
+.figure img { max-height: 760px; width: 100%; object-fit: contain; }
+.figure .icon-button { position: absolute; bottom: 8px; right: 8px; background: #ffffffed; }
+.caption { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
+.kp { list-style: none; padding: 0; margin: 0; }
+.kp > li { border-bottom: 1px dashed #e2e8e4; }
+.kp > li:last-child { border-bottom: 0; }
+.kp summary { cursor: pointer; padding: 13px 8px; font-weight: 650; }
+.kp summary::marker { color: var(--green); }
+.term { color: #0a7d52; background: #e2f7eb; border-radius: 6px; padding: 1px 5px; }
+.kp-body { padding: 2px 14px 16px 24px; }
+.detail-block { margin: 12px 0; }
+.detail-block h4 { font-size: 13px; color: #08744d; margin: 0 0 4px; }
+.detail-block p { margin: 0; white-space: pre-line; }
+.warn { border-left: 5px solid #e23b3b; background: #fffafa; }
+.warn p { margin: 8px 0; }
+.misconception { color: #a82b32; }
+.mnemonic { border-left: 4px solid var(--accent); box-shadow: none; }
+.mnemonic strong { color: #df4716; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+.flip { height: 168px; perspective: 900px; border: 0; background: transparent; padding: 0; text-align: center; }
+.flip-in { display: block; height: 100%; position: relative; transition: transform .45s; transform-style: preserve-3d; }
+.flip[aria-pressed="true"] .flip-in { transform: rotateY(180deg); }
+.face { position: absolute; inset: 0; backface-visibility: hidden; border: 1px solid var(--line); border-radius: 10px; padding: 15px; background: #fafafa; display: flex; align-items: center; justify-content: center; overflow-y: auto; }
+.back { transform: rotateY(180deg); background: #eef9f4; color: #075e40; border-color: #c8eadb; }
+.practice { padding-left: 20px; }
+.practice li { margin: 7px 0; }
+.question { border-top: 1px solid #e2e8e4; padding: 20px 0 8px; margin-top: 12px; min-width: 0; }
+.options { display: grid; gap: 7px; margin: 10px 0; }
+.option { display: flex; gap: 10px; align-items: baseline; border: 1px solid #e2e8e4; background: #f0f4f2; padding: 9px 12px; border-radius: 8px; cursor: pointer; }
+.option input { flex-shrink: 0; accent-color: var(--green); }
+.option:has(input:checked) { border-color: #0ea5e9; background: #e7f6fd; }
+.question[data-result="correct"] .option:has(input:checked) { border-color: #0ea66b; background: #e7f8ef; }
+.question[data-result="wrong"] .option:has(input:checked) { border-color: #e23b3b; background: #fff0f0; }
+.answer { background: #f8fbfa; border-left: 3px solid #0ea5e9; padding: 10px; margin-top: 10px; }
+.check { border: 0; background: #0ea66b; color: white; padding: 9px 14px; border-radius: 7px; }
+footer { color: var(--muted); font-size: 12px; margin-top: 28px; }
+footer ul { padding-left: 20px; }
+dialog { width: min(1200px, 96vw); max-height: 94dvh; padding: 52px 16px 16px; border: 0; border-radius: 8px; background: white; }
+dialog::backdrop { background: #15191dd9; }
+dialog img { width: 100%; max-height: 78dvh; object-fit: contain; }
+dialog .icon-button { position: absolute; top: 8px; right: 10px; }
+@media (max-width: 600px) {
+  main { padding: 16px 12px 40px; }
+  h1 { font-size: 26px; }
+  .header { padding: 16px 4px 12px; }
+  .panel, .figure, .warn, .mnemonic { padding: 15px; }
+  .kp-body { padding-left: 16px; }
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .face { padding: 12px; }
+}
+</style></head><body><main><header class="header"><h1>Day 63 · 宏量营养素：蛋白质</h1><p class="sub">先看全天总量和食物质量，再把蛋白质分配到可长期执行的餐次与训练恢复中。</p><div class="meta"><span class="chip">必需氨基酸</span><span class="chip">总量与分配</span><span class="chip">恢复</span></div></header><section class="panel green"><h2>一句话总结</h2><p class="takeaway">蛋白质由氨基酸组成，必需氨基酸需要从饮食获取。它参与组织更新、酶、激素和免疫等多种功能；抗阻、耐力、能量限制和年龄等会影响需要量。对多数训练者，全天总量和规律分配比追逐一次“神奇剂量”更重要。动物与植物来源都能组成高质量饮食，关键是食物多样、必需氨基酸充足、总能量足够且方案可长期执行。</p></section><figure class="figure"><button data-zoom aria-label="放大详情图"><img class="" src="assets/阶段4营养恢复/day63-宏量营养素：蛋白质.png" alt="蛋白质与训练恢复四主题中文总览"><span class="icon-button"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 15 6 6" /><path d="m15 9 6-6" /><path d="M21 16v5h-5" /><path d="M21 8V3h-5" /><path d="M3 16v5h5" /><path d="m3 21 6-6" /><path d="M3 8V3h5" /><path d="M9 9 3 3" /></svg></span></button><figcaption class="caption">蛋白质支持组织更新、酶和免疫等功能；训练者的安排应先看全天总量、食物质量、能量充足和可持续分配。</figcaption></figure><section class="panel"><h2>核心要点</h2><ul class="kp"><li><details><summary><span class="term">氨基酸：把蛋白质看成原料组合</span>：蛋白质被消化吸收后提供氨基酸；其中必需氨基酸必须从食物获得，亮氨酸是参与肌肉蛋白合成信号的其中之一。</summary><div class="kp-body"><section class="detail-block"><h4>EAA不能缺席</h4><p>人体不能自行合成必需氨基酸，需由食物提供。讨论“蛋白质量”时，不只是看总克数，也要看一餐能否提供足够的必需氨基酸和整体消化吸收情况；不同食物、年龄和能量状态都会改变实际反应。</p></section><section class="detail-block"><h4>亮氨酸不是独立魔法键</h4><p>亮氨酸与肌肉蛋白合成信号相关，但不能脱离其他必需氨基酸、抗阻刺激、全天总蛋白和能量平衡单独理解。网络常见的固定“阈值”并不适用于每个人；先用完整食物和合理餐次满足整体需要。</p></section></div></details></li><li><details><summary><span class="term">全天总量：先匹配训练与目标</span>：一般成人、耐力训练者、抗阻训练者和能量限制期的需要量不同；范围是起点，不是每个人都应照抄的处方。</summary><div class="kp-body"><section class="detail-block"><h4>训练者常需更多</h4><p>常见运动营养建议会按体重和训练类型给出范围：一般成人的基础需要低于多数规律抗阻训练者，耐力训练者也会因训练量而提高。实际安排还应考虑总能量、体型、训练阶段、食欲、食物偏好和医学情况。</p></section><section class="detail-block"><h4>能量不足会干扰恢复</h4><p>只增加蛋白质却长期吃得过少，不能完全抵消能量可用性不足带来的恢复和健康问题。增肌、减脂或维持都应先确认总体饮食能支撑训练；不应用极端高蛋白替代碳水、脂肪、蔬果和正常进食。</p></section></div></details></li><li><details><summary><span class="term">餐次分配：规律比迷信窗口更可靠</span>：把蛋白质分散到几餐，可比把绝大部分堆到一餐更容易满足总量和恢复需要；训练后餐是一天饮食的一部分。</summary><div class="kp-body"><section class="detail-block"><h4>每餐有清晰来源</h4><p>可在早餐、正餐、训练后餐或加餐中安排明确的蛋白质来源，并按食量与目标调整。训练后吃到含蛋白质的餐食有帮助，但若全天总量和餐次持续不足，单次补充不能弥补；反之也不必因为错过精确分钟而恐慌。</p></section><section class="detail-block"><h4>搭配碳水和总餐食</h4><p>训练恢复通常不仅需要蛋白质，也需要足够能量、碳水、液体和微量营养素。把蛋白食物与主食、蔬果和脂肪合理搭配，往往比单独依赖粉剂更有饱腹感和可持续性。</p></section></div></details></li><li><details><summary><span class="term">来源选择：动物与植物都能完成任务</span>：动物性食物常提供较完整的必需氨基酸谱；植物性食物可通过豆类、大豆制品、谷物、坚果和种子等多样组合满足需要。</summary><div class="kp-body"><section class="detail-block"><h4>看总食谱，不做二选一</h4><p>奶、蛋、鱼、肉、大豆制品、豆类和谷物都能贡献蛋白质。以植物性饮食为主时，通常需要更主动地规划总量、餐次和多样性，而不是默认每一份植物蛋白都和所有动物来源完全等价。</p></section><section class="detail-block"><h4>补剂只是便利工具</h4><p>蛋白粉可在食物不便、训练后赶时间或食欲较低时提供便利，但不能替代完整饮食，也不等于人人必需。肾病、肝病、孕期、青少年、进食障碍或正在用药者不应自行用高蛋白或补剂方案，应先咨询医疗或营养专业人员。</p></section></div></details></li></ul></section><section class="warn"><h2>常见误区</h2><p><strong class="misconception">误区：只要一口气吃很多蛋白质，就能弥补全天不足。</strong><br>辨析：全天总量和规律餐次更关键；把蛋白质分布到可长期执行的饮食中更可靠。</p><p><strong class="misconception">误区：亮氨酸达到一个固定克数，就不需要看其他因素。</strong><br>辨析：亮氨酸需和完整必需氨基酸、训练刺激、总蛋白与能量状态一起理解。</p><p><strong class="misconception">误区：植物蛋白不能支持训练恢复。</strong><br>辨析：通过大豆、豆类、谷物、坚果种子等多样组合，植物性饮食同样可以满足需要。</p><p><strong class="misconception">误区：蛋白粉比正常食物更高级，人人都必须喝。</strong><br>辨析：补剂只是便利工具；完整食物、总饮食和个人医学情况优先。</p></section><section class="mnemonic"><h2>记忆口诀</h2><p><strong>先保全天总量，再分每餐来源；EAA要够，能量别少。</strong></p></section><section class="panel"><h2>翻转卡复习</h2><div class="cards"><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">必需氨基酸是什么意思？</span><span class="face back" aria-hidden="true">人体不能自行合成，需要从饮食获取的氨基酸。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">亮氨酸能单独决定增肌吗？</span><span class="face back" aria-hidden="true">不能；还需完整EAA、抗阻刺激、总蛋白和能量条件。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">蛋白安排的第一优先级？</span><span class="face back" aria-hidden="true">匹配训练和目标的全天总量，再考虑餐次分配。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">训练后蛋白重要吗？</span><span class="face back" aria-hidden="true">有帮助，但它属于全天饮食的一部分，不是唯一窗口。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">植物性饮食能满足蛋白需要吗？</span><span class="face back" aria-hidden="true">能；要主动安排总量、餐次和多样的蛋白来源。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">蛋白粉的定位是什么？</span><span class="face back" aria-hidden="true">便利工具，不替代完整食物，也不是人人必需。</span></span></button></div></section><section class="panel orange"><h2>实操关联</h2><ul class="practice"><li>列出一天三餐和一个可选加餐的蛋白质来源，先检查是否每餐都有明确食物来源，而非只计算某一次补剂。</li><li>把训练后餐设计为蛋白质加碳水加液体的完整组合，并按下一次训练间隔调整，不迷信分钟级窗口。</li><li>若以植物性饮食为主，在一天中安排大豆制品、豆类、谷物、坚果或种子等多样来源，并记录饱腹与消化感受。</li><li>想增加蛋白质时，先改一餐的食物选择或份量并持续记录；存在肾肝疾病、用药或进食困扰时先寻求专业意见。</li></ul></section><section class="panel blue"><h2>练习题</h2><section class="question" data-answers="[1]" data-explanation="全天总量、食物质量、总能量和规律分配是基础，单次补充是其中一环。"><h3>1. 单选：关于蛋白质安排，哪项优先级更合理？</h3><div class="options"><label class="option"><input type="radio" name="question-0" value="0"><span>A. 先追求一次超大剂量</span></label><label class="option"><input type="radio" name="question-0" value="1"><span>B. 先匹配全天总量与训练目标，再分配到餐次</span></label><label class="option"><input type="radio" name="question-0" value="2"><span>C. 只看补剂品牌</span></label><label class="option"><input type="radio" name="question-0" value="3"><span>D. 只在训练后进食</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[1]" data-explanation="必需氨基酸需要从饮食获得，动物和合理组合的植物食物都可提供。"><h3>2. 单选：必需氨基酸的正确含义是？</h3><div class="options"><label class="option"><input type="radio" name="question-1" value="0"><span>A. 只有动物能提供</span></label><label class="option"><input type="radio" name="question-1" value="1"><span>B. 人体无法自行合成，需由饮食提供</span></label><label class="option"><input type="radio" name="question-1" value="2"><span>C. 只在睡前需要</span></label><label class="option"><input type="radio" name="question-1" value="3"><span>D. 等同于蛋白粉</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[0,1,2,4]" data-explanation="蛋白安排应个体化，不能只盯一次训练后或单一固定阈值。"><h3>3. 多选：哪些因素会影响训练者的蛋白质安排？</h3><div class="options"><label class="option"><input type="checkbox" name="question-2" value="0"><span>A. 训练类型和阶段</span></label><label class="option"><input type="checkbox" name="question-2" value="1"><span>B. 全天总能量</span></label><label class="option"><input type="checkbox" name="question-2" value="2"><span>C. 年龄与食物偏好</span></label><label class="option"><input type="checkbox" name="question-2" value="3"><span>D. 只看一次训练后的时间</span></label><label class="option"><input type="checkbox" name="question-2" value="4"><span>E. 医学情况和胃肠耐受</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[1]" data-explanation="规律餐次和整体能量是恢复基础；单次堆量不能自动解决全天摄入和恢复问题。"><h3>4. 案例：小陈白天很少吃蛋白，晚上一口气喝两份蛋白粉，并常感觉疲劳。最合适的第一步是？</h3><div class="options"><label class="option"><input type="radio" name="question-3" value="0"><span>A. 继续把晚间剂量加倍</span></label><label class="option"><input type="radio" name="question-3" value="1"><span>B. 把蛋白质分配到多餐并检查全天总能量和训练恢复</span></label><label class="option"><input type="radio" name="question-3" value="2"><span>C. 完全删除碳水</span></label><label class="option"><input type="radio" name="question-3" value="3"><span>D. 只买更贵补剂</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section></section><footer>Day 63/110 · 双证<ul><li>International Society of Sports Nutrition：Position Stand: protein and exercise，训练者蛋白总量、质量和分配原则。</li><li>ACSM、Academy of Nutrition and Dietetics、Dietitians of Canada：Nutrition and Athletic Performance，运动营养与恢复建议。</li><li>中国营养学会：《中国居民膳食指南（2022）》，奶、蛋、鱼、肉、豆类等食物多样化建议。</li><li>本课为一般营养教育；肾脏或肝脏疾病、孕期、青少年、进食障碍、特殊药物使用或其他医疗状况，请勿自行采用高蛋白或补剂方案，应咨询医生或注册营养专业人员。</li></ul></footer></main><dialog aria-label="详情大图"><button class="icon-button" aria-label="关闭大图" title="关闭大图"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></button><img alt=""></dialog><script>document.querySelectorAll('.flip').forEach((button) => {
+  button.addEventListener('click', () => {
+    const pressed = button.getAttribute('aria-pressed') !== 'true';
+    button.setAttribute('aria-pressed', String(pressed));
+    button.querySelector('.front').setAttribute('aria-hidden', String(pressed));
+    button.querySelector('.back').setAttribute('aria-hidden', String(!pressed));
+  });
+});
+document.querySelectorAll('.question').forEach((question) => {
+  question.querySelector('.check').addEventListener('click', () => {
+    const selected = [...question.querySelectorAll('input:checked')].map((input) => Number(input.value)).sort();
+    const answer = question.querySelector('.answer');
+    answer.hidden = false;
+    if (!selected.length) { answer.textContent = '请先选择答案。'; delete question.dataset.result; return; }
+    const correct = JSON.stringify(selected) === JSON.stringify(JSON.parse(question.dataset.answers).sort());
+    question.dataset.result = correct ? 'correct' : 'wrong';
+    answer.textContent = `${correct ? '回答正确。' : '再想一想。'}${question.dataset.explanation}`;
+  });
+});
+const imageDialog = document.querySelector('dialog');
+document.querySelectorAll('[data-zoom]').forEach((button) => {
+  button.addEventListener('click', () => {
+    const original = button.querySelector('img');
+    const image = imageDialog.querySelector('img');
+    image.src = original.src;
+    image.alt = original.alt;
+    imageDialog.showModal();
+  });
+});
+imageDialog.querySelector('button').addEventListener('click', () => imageDialog.close());
+imageDialog.addEventListener('click', (event) => {
+  const rect = imageDialog.getBoundingClientRect();
+  if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) imageDialog.close();
+});
+</script></body></html>

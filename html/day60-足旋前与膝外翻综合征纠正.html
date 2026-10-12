@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Day 60 · 足旋前与膝外翻综合征纠正</title><link rel="icon" type="image/svg+xml" href="assets/fitness-study-logo-open-circle.svg?v=a6d8e5caaa61"><style>:root { color-scheme: light; --ink: #111113; --muted: #71717a; --line: #e4e4e7; --accent: #ff5a1f; --green: #0ea66b; --blue: #2563eb; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; font-synthesis: none; letter-spacing: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); overflow-wrap: anywhere; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+img { display: block; max-width: 100%; }
+button:focus-visible, a:focus-visible, summary:focus-visible, input:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
+svg.icon { width: 20px; height: 20px; }
+.icon-button { display: inline-grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 1px solid var(--line); border-radius: 6px; background: white; }
+[hidden] { display: none !important; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
+
+body { background: #f6f8f7; font-size: 14px; line-height: 1.65; }
+main { max-width: 980px; margin: auto; padding: 24px 18px 60px; }
+.header { padding: 22px 4px 14px; }
+h1 { margin: 10px 0 8px; font-size: 36px; line-height: 1.2; }
+h1::before { content: ""; display: block; width: 34px; height: 4px; background: var(--accent); margin-bottom: 10px; }
+h2 { font-size: 17px; margin: 0 0 14px; }
+h3 { font-size: 16px; margin: 0 0 8px; }
+.sub { color: var(--muted); margin: 5px 0 18px; }
+.meta { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { display: inline-block; border: 1px solid var(--line); border-radius: 20px; background: white; color: var(--muted); padding: 3px 10px; font-size: 12px; font-weight: 600; }
+.chip:nth-child(1) { background: #e2f7eb; color: #15803d; border-color: transparent; }
+.chip:nth-child(2) { background: #e7f0fe; color: #2563eb; border-color: transparent; }
+.chip:nth-child(3) { background: #fff2e5; color: #9a4c05; border-color: transparent; }
+.panel, .figure, .warn, .mnemonic { background: white; border: 1px solid #e2e8e4; border-radius: 14px; box-shadow: 0 2px 12px rgba(20,40,30,.06); padding: 20px; margin: 16px 0; }
+.green { border-left: 5px solid var(--green); }
+.orange { border-left: 5px solid #ea7a17; }
+.blue { border-left: 5px solid #0ea5e9; }
+.takeaway { margin: 0; }
+.figure { text-align: center; }
+.figure button { display: block; position: relative; width: 100%; border: 0; padding: 0; background: white; cursor: zoom-in; }
+.figure img { max-height: 760px; width: 100%; object-fit: contain; }
+.figure .icon-button { position: absolute; bottom: 8px; right: 8px; background: #ffffffed; }
+.caption { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
+.kp { list-style: none; padding: 0; margin: 0; }
+.kp > li { border-bottom: 1px dashed #e2e8e4; }
+.kp > li:last-child { border-bottom: 0; }
+.kp summary { cursor: pointer; padding: 13px 8px; font-weight: 650; }
+.kp summary::marker { color: var(--green); }
+.term { color: #0a7d52; background: #e2f7eb; border-radius: 6px; padding: 1px 5px; }
+.kp-body { padding: 2px 14px 16px 24px; }
+.detail-block { margin: 12px 0; }
+.detail-block h4 { font-size: 13px; color: #08744d; margin: 0 0 4px; }
+.detail-block p { margin: 0; white-space: pre-line; }
+.warn { border-left: 5px solid #e23b3b; background: #fffafa; }
+.warn p { margin: 8px 0; }
+.misconception { color: #a82b32; }
+.mnemonic { border-left: 4px solid var(--accent); box-shadow: none; }
+.mnemonic strong { color: #df4716; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+.flip { height: 168px; perspective: 900px; border: 0; background: transparent; padding: 0; text-align: center; }
+.flip-in { display: block; height: 100%; position: relative; transition: transform .45s; transform-style: preserve-3d; }
+.flip[aria-pressed="true"] .flip-in { transform: rotateY(180deg); }
+.face { position: absolute; inset: 0; backface-visibility: hidden; border: 1px solid var(--line); border-radius: 10px; padding: 15px; background: #fafafa; display: flex; align-items: center; justify-content: center; overflow-y: auto; }
+.back { transform: rotateY(180deg); background: #eef9f4; color: #075e40; border-color: #c8eadb; }
+.practice { padding-left: 20px; }
+.practice li { margin: 7px 0; }
+.question { border-top: 1px solid #e2e8e4; padding: 20px 0 8px; margin-top: 12px; min-width: 0; }
+.options { display: grid; gap: 7px; margin: 10px 0; }
+.option { display: flex; gap: 10px; align-items: baseline; border: 1px solid #e2e8e4; background: #f0f4f2; padding: 9px 12px; border-radius: 8px; cursor: pointer; }
+.option input { flex-shrink: 0; accent-color: var(--green); }
+.option:has(input:checked) { border-color: #0ea5e9; background: #e7f6fd; }
+.question[data-result="correct"] .option:has(input:checked) { border-color: #0ea66b; background: #e7f8ef; }
+.question[data-result="wrong"] .option:has(input:checked) { border-color: #e23b3b; background: #fff0f0; }
+.answer { background: #f8fbfa; border-left: 3px solid #0ea5e9; padding: 10px; margin-top: 10px; }
+.check { border: 0; background: #0ea66b; color: white; padding: 9px 14px; border-radius: 7px; }
+footer { color: var(--muted); font-size: 12px; margin-top: 28px; }
+footer ul { padding-left: 20px; }
+dialog { width: min(1200px, 96vw); max-height: 94dvh; padding: 52px 16px 16px; border: 0; border-radius: 8px; background: white; }
+dialog::backdrop { background: #15191dd9; }
+dialog img { width: 100%; max-height: 78dvh; object-fit: contain; }
+dialog .icon-button { position: absolute; top: 8px; right: 10px; }
+@media (max-width: 600px) {
+  main { padding: 16px 12px 40px; }
+  h1 { font-size: 26px; }
+  .header { padding: 16px 4px 12px; }
+  .panel, .figure, .warn, .mnemonic { padding: 15px; }
+  .kp-body { padding-left: 16px; }
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .face { padding: 12px; }
+}
+</style></head><body><main><header class="header"><h1>Day 60 · 足旋前与膝外翻综合征纠正</h1><p class="sub">从足底、踝、髋到深蹲任务，练出可控而非僵硬的对线。</p><div class="meta"><span class="chip">足踝控制</span><span class="chip">髋膝协同</span><span class="chip">深蹲整合</span></div></header><section class="panel green"><h2>一句话总结</h2><p class="takeaway">足旋前是正常步态与落地的一部分，膝盖向内偏移也不能仅凭外观判定问题。训练时应在深蹲、台阶或单腿控制中观察足底支撑、踝活动、髋膝协同和症状。可按松解或活动、拉伸、激活、整合的顺序渐进，但足痛、明显塌陷、外伤后异常或神经症状需要足科、医疗或康复专业人员评估。</p></section><figure class="figure"><button data-zoom aria-label="放大详情图"><img class="" src="assets/阶段3 OPT训练模型/day60-足旋前与膝外翻综合征纠正.png" alt="足旋前与膝外翻综合征纠正四主题中文总览"><span class="icon-button"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 15 6 6" /><path d="m15 9 6-6" /><path d="M21 16v5h-5" /><path d="M21 8V3h-5" /><path d="M3 16v5h5" /><path d="m3 21 6-6" /><path d="M3 8V3h5" /><path d="M9 9 3 3" /></svg></span></button><figcaption class="caption">足旋前和膝盖向内偏移要放在动态任务里观察；训练先建立舒适的足踝、髋膝协同，再整合进深蹲。</figcaption></figure><section class="panel"><h2>核心要点</h2><ul class="kp"><li><details><summary><span class="term">先看动态：足和膝不是孤立关节</span>：足弓高度、足旋前和膝线有个体差异；更有意义的是负重任务中能否稳定、舒适地完成动作。</summary><div class="kp-body"><section class="detail-block"><h4>旋前有正常功能</h4><p>落地时足部会产生一定旋前来适应地面和吸收冲击。训练需要关注的是旋前是否在特定任务中失控、是否伴随疼痛或膝盖明显向内偏移，而不是要求足弓在任何时候都完全不动。</p></section><section class="detail-block"><h4>用任务来复查</h4><p>可观察徒手深蹲、台阶下放或简单单腿站立：足底是否能稳定承重、膝盖是否能随脚的方向平稳移动、躯干是否为躲避不适而代偿。只要有疼痛、肿胀、近期扭伤或反复崴脚，先停止高冲击进阶。</p></section></div></details></li><li><details><summary><span class="term">足踝：三点支撑与可用活动度</span>：大脚趾根、小脚趾根和足跟可形成稳定接触；踝背屈不足或小腿高张力可能让深蹲更难保持舒适对线。</summary><div class="kp-body"><section class="detail-block"><h4>建立而非抓地</h4><p>练习时让足跟、大脚趾根和小脚趾根都能接触地面，脚趾自然放松，不要用卷趾或死抓地面制造紧张。三点支撑是感觉线索，不代表把足弓压成固定形状；若足底抽痛或麻木，应停止练习。</p></section><section class="detail-block"><h4>小腿与踝可先准备</h4><p>在可耐受范围内做踝背屈活动、腓肠肌和比目鱼肌轻度拉伸，随后用控制性提踵、胫前肌或胫后肌相关练习建立足踝控制。动作应平稳、无锐痛；器械、鞋垫或矫形器的选择不应由普通训练课替代专业评估。</p></section></div></details></li><li><details><summary><span class="term">髋膝：让大腿跟随任务协同</span>：髋外展、外旋与膝伸控制共同影响下肢路径；不把臀中肌或股内侧肌简单归为唯一“开关”。</summary><div class="kp-body"><section class="detail-block"><h4>不是只练一块肌肉</h4><p>小腿、内收肌、髋部和躯干都会参与下肢控制。侧卧髋外展、弹力带侧步或分腿蹲可以作为低负荷练习，但动作质量要优先：骨盆不明显侧倒、足底持续承重、膝盖随脚方向平稳移动。</p></section><section class="detail-block"><h4>提示词要服务任务</h4><p>“脚掌稳稳压地”“膝盖随脚方向平稳走”通常比强迫“膝盖绝不向内”更可执行。个体解剖会影响膝盖轨迹；出现膝、髋或足部疼痛时，不要靠更大弹力带硬拉出一个外形。</p></section></div></details></li><li><details><summary><span class="term">整合进深蹲：从慢到快、从双脚到单脚</span>：完成足踝和髋膝准备后，用低负荷、慢节奏深蹲复查，再按质量逐步增加范围、负荷、速度或单腿要求。</summary><div class="kp-body"><section class="detail-block"><h4>先用慢节奏复查</h4><p>选择箱式深蹲、辅助深蹲或分腿蹲的容易版本，下降时观察足底三点、膝盖路径、骨盆和躯干。能在连续几次中无痛保持控制，再考虑增加深度或轻负荷；一次只改变一个变量。</p></section><section class="detail-block"><h4>高冲击最后加入</h4><p>跑跳、变向和单腿跳会提高足踝与髋膝控制要求。应先具备稳定落地、基础力量和无痛的单腿任务，再渐进增加冲击。训练后症状持续加重、足部局部压痛或反复失稳，应暂停并寻求评估。</p></section></div></details></li></ul></section><section class="warn"><h2>常见误区</h2><p><strong class="misconception">误区：足旋前本身就是错误，必须把足弓一直顶住。</strong><br>辨析：旋前有适应地面和吸收冲击的正常功能；关注负重任务中的失控、症状和动作质量。</p><p><strong class="misconception">误区：膝盖向内偏移只要练臀中肌就能解决。</strong><br>辨析：足踝、髋、大腿和躯干都会参与控制；应在具体任务里找出可训练的限制。</p><p><strong class="misconception">误区：深蹲时膝盖必须钉在完全不动的直线。</strong><br>辨析：个体结构不同；重点是足底稳定、膝盖随脚方向平稳移动且无疼痛，而不是制造僵硬姿势。</p><p><strong class="misconception">误区：足痛或反复崴脚也能靠训练课直接矫正。</strong><br>辨析：疼痛、肿胀、外伤后异常或反复失稳需要专业评估，训练不替代足科或医疗诊断。</p></section><section class="mnemonic"><h2>记忆口诀</h2><p><strong>足底稳、踝可用、髋膝同向；慢练好再加难。</strong></p></section><section class="panel"><h2>翻转卡复习</h2><div class="cards"><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">足旋前一定是错误吗？</span><span class="face back" aria-hidden="true">不是；它是适应地面和吸收冲击的正常功能之一。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">足底三点支撑是什么？</span><span class="face back" aria-hidden="true">足跟、大脚趾根和小脚趾根的稳定接触感觉线索。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">观察膝线应放在哪儿？</span><span class="face back" aria-hidden="true">放在深蹲、台阶或单腿等负重任务中，而非只看静态照片。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">膝盖控制只靠臀中肌吗？</span><span class="face back" aria-hidden="true">不是；足踝、髋、大腿和躯干都可能参与。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">何时再加入跑跳和变向？</span><span class="face back" aria-hidden="true">先有无痛基础力量、稳定落地和可控的单腿任务。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">哪些足部情况应优先转介？</span><span class="face back" aria-hidden="true">疼痛、肿胀、外伤后异常、麻木或反复失稳。</span></span></button></div></section><section class="panel orange"><h2>实操关联</h2><ul class="practice"><li>做一次徒手箱式深蹲观察：记录足跟、大脚趾根、小脚趾根是否都能稳定承重，以及是否有疼痛。</li><li>在无痛范围内做踝背屈活动和控制性提踵；不要用卷趾或抓地来代替足底稳定。</li><li>用容易版本的侧步或分腿蹲练髋膝协同，保持骨盆稳定、膝盖随脚方向平稳移动。</li><li>把准备练习后接回慢节奏深蹲；连续数次都可控，再只增加一个变量，例如深度或轻负荷。</li></ul></section><section class="panel blue"><h2>练习题</h2><section class="question" data-answers="[1]" data-explanation="旋前不是自动错误。训练要看负重任务中的控制、舒适度和是否伴随异常症状。"><h3>1. 单选：关于足旋前，哪项说法更准确？</h3><div class="options"><label class="option"><input type="radio" name="question-0" value="0"><span>A. 任何旋前都要消除</span></label><label class="option"><input type="radio" name="question-0" value="1"><span>B. 它可帮助适应地面和吸收冲击，应结合任务和症状判断</span></label><label class="option"><input type="radio" name="question-0" value="2"><span>C. 只与鞋子有关</span></label><label class="option"><input type="radio" name="question-0" value="3"><span>D. 只要练短足就不用观察动作</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[1]" data-explanation="整合阶段看足踝、髋膝和躯干在完整任务中的可控表现，不追求僵硬外形。"><h3>2. 单选：从低负荷练习整合回深蹲时，优先复查什么？</h3><div class="options"><label class="option"><input type="radio" name="question-1" value="0"><span>A. 脚趾是否用力抓紧</span></label><label class="option"><input type="radio" name="question-1" value="1"><span>B. 足底承重、膝盖路径、呼吸和舒适度</span></label><label class="option"><input type="radio" name="question-1" value="2"><span>C. 是否立刻能跳得更高</span></label><label class="option"><input type="radio" name="question-1" value="3"><span>D. 膝盖是否绝对不移动</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[0,1,2,4]" data-explanation="疼痛、外伤后异常、反复失稳或神经症状不应靠增加跳跃训练处理；无痛可控的基础任务是渐进条件。"><h3>3. 多选：哪些表现提示应先暂停高冲击进阶并考虑评估？</h3><div class="options"><label class="option"><input type="checkbox" name="question-2" value="0"><span>A. 足部疼痛或肿胀</span></label><label class="option"><input type="checkbox" name="question-2" value="1"><span>B. 近期扭伤后仍异常</span></label><label class="option"><input type="checkbox" name="question-2" value="2"><span>C. 反复崴脚或失稳</span></label><label class="option"><input type="checkbox" name="question-2" value="3"><span>D. 无痛完成慢节奏深蹲</span></label><label class="option"><input type="checkbox" name="question-2" value="4"><span>E. 麻木或感觉异常</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[2]" data-explanation="先在可控、低冲击任务中识别与练习协同，再渐进改变深度、负荷、速度或单腿要求。"><h3>4. 案例：小赵下台阶时右膝向内偏移，足底也不稳，但没有疼痛。最合理的起点是？</h3><div class="options"><label class="option"><input type="radio" name="question-3" value="0"><span>A. 直接做单腿深跳</span></label><label class="option"><input type="radio" name="question-3" value="1"><span>B. 用更强弹力带把膝盖硬拉向外</span></label><label class="option"><input type="radio" name="question-3" value="2"><span>C. 从慢台阶或辅助深蹲观察足底、踝和髋膝协同</span></label><label class="option"><input type="radio" name="question-3" value="3"><span>D. 要求足弓全程完全不动</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section></section><footer>Day 60/110 · NASM<ul><li>NASM：Corrective Exercise Continuum，足踝、髋膝评估与抑制、拉伸、激活、整合框架。</li><li>Neumann DA：Kinesiology of the Musculoskeletal System，第3版，足踝与下肢运动学基础。</li><li>ACSM：ACSM&#39;s Guidelines for Exercise Testing and Prescription，第11版，渐进训练和转介警示。</li><li>本课为一般健身教育；足部或膝部疼痛、肿胀、外伤后异常、麻木或反复失稳，请停止自行矫正并咨询足科、医疗或康复专业人员。</li></ul></footer></main><dialog aria-label="详情大图"><button class="icon-button" aria-label="关闭大图" title="关闭大图"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></button><img alt=""></dialog><script>document.querySelectorAll('.flip').forEach((button) => {
+  button.addEventListener('click', () => {
+    const pressed = button.getAttribute('aria-pressed') !== 'true';
+    button.setAttribute('aria-pressed', String(pressed));
+    button.querySelector('.front').setAttribute('aria-hidden', String(pressed));
+    button.querySelector('.back').setAttribute('aria-hidden', String(!pressed));
+  });
+});
+document.querySelectorAll('.question').forEach((question) => {
+  question.querySelector('.check').addEventListener('click', () => {
+    const selected = [...question.querySelectorAll('input:checked')].map((input) => Number(input.value)).sort();
+    const answer = question.querySelector('.answer');
+    answer.hidden = false;
+    if (!selected.length) { answer.textContent = '请先选择答案。'; delete question.dataset.result; return; }
+    const correct = JSON.stringify(selected) === JSON.stringify(JSON.parse(question.dataset.answers).sort());
+    question.dataset.result = correct ? 'correct' : 'wrong';
+    answer.textContent = `${correct ? '回答正确。' : '再想一想。'}${question.dataset.explanation}`;
+  });
+});
+const imageDialog = document.querySelector('dialog');
+document.querySelectorAll('[data-zoom]').forEach((button) => {
+  button.addEventListener('click', () => {
+    const original = button.querySelector('img');
+    const image = imageDialog.querySelector('img');
+    image.src = original.src;
+    image.alt = original.alt;
+    imageDialog.showModal();
+  });
+});
+imageDialog.querySelector('button').addEventListener('click', () => imageDialog.close());
+imageDialog.addEventListener('click', (event) => {
+  const rect = imageDialog.getBoundingClientRect();
+  if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) imageDialog.close();
+});
+</script></body></html>

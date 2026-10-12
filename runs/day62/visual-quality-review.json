@@ -1,0 +1,36 @@
+{
+  "reviewer": "local source visual and alpha QA",
+  "requirements": [
+    "true-alpha transparent PNG with no rendered checkerboard or opaque background",
+    "wordless Bojji and Despa teaching art with stable character appearance",
+    "no duplicated figures or malformed limbs",
+    "food, bicycle, and meal props must be sensible",
+    "each scene must correspond to its exact carbohydrate lesson prompt and forbidden-elements list"
+  ],
+  "technicalChecks": {
+    "checkedWith": ["sips dimensions and hasAlpha", "RGBA alpha extrema inspection", "individual white-background visual composites", "transparent-on-dark edge inspection"],
+    "result": "All selected PNGs are non-empty RGBA files with actual alpha. No selected image contains rendered checkerboard, opaque canvas, readable generated text, arrows, anatomy diagram, chart, placeholder, duplicate figure or malformed limb."
+  },
+  "accepted": [
+    {"file":"cover.png","attempt":2,"source":"runs/day62/image-requests/cover-eb86e17540/attempt-02/cover.png","review":"平衡餐食与德斯帕轻松热身表达碳水为训练供能；无思考框、火焰、箭头或标记。"},
+    {"file":"visual-01-types.png","attempt":1,"source":"runs/day62/image-requests/visual-01-types-c6b4e9597c/attempt-01/visual-01-types.png","review":"食物多样性与纤维场景清楚，人物、食物与透明边缘正常。"},
+    {"file":"visual-02-glycogen.png","attempt":2,"source":"runs/day62/image-requests/visual-02-glycogen-142fa6b69f/attempt-02/visual-02-glycogen.png","review":"受控骑行、训练后餐食和水杯表达训练与恢复关系，无器官图或流程标记。"},
+    {"file":"visual-03-gi-gl.png","attempt":1,"source":"runs/day62/image-requests/visual-03-gi-gl-33c0683d8f/attempt-01/visual-03-gi-gl.png","review":"两种完整餐食的比较表达GI/GL需要结合搭配和语境，无图表或好坏判断。"},
+    {"file":"visual-04-timing.png","attempt":2,"source":"runs/day62/image-requests/visual-04-timing-9e5ddcd30d/attempt-02/visual-04-timing.png","review":"训练后米饭鸡蛋餐与小份香蕉吐司加餐构成无连接线的平静场景。"},
+    {"file":"overview-01-types.png","attempt":1,"source":"runs/day62/image-requests/overview-01-types-337c1059b6/attempt-01/overview-01-types.png","review":"独立于知识页绘制的搭配与多样性场景。"},
+    {"file":"overview-02-glycogen.png","attempt":2,"source":"runs/day62/image-requests/overview-02-glycogen-2ccd374f54/attempt-02/overview-02-glycogen.png","review":"独立骑行与恢复餐场景，无思考框、器官、箭头或图标。"},
+    {"file":"overview-03-gi-gl.png","attempt":3,"source":"runs/day62/image-requests/overview-03-gi-gl-e85c3ab1b9/attempt-03/overview-03-gi-gl.png","review":"两份平衡餐食完整可见，未裁切、未作好坏食物对照；人物和餐盘均保留安全留白。"},
+    {"file":"overview-04-timing.png","attempt":2,"source":"runs/day62/image-requests/overview-04-timing-06a74cefc3/attempt-02/overview-04-timing.png","review":"轻松跑步热身、水杯和小份香蕉吐司加餐清楚表达时机而不使用时钟或标记。"}
+  ],
+  "rejected": [
+    {"file":"cover.png","attempt":1,"reason":"食物与火焰间的粗箭头违反无箭头规范。"},
+    {"file":"visual-02-glycogen.png","attempt":1,"reason":"加入肌肉/肝脏剖面和发光标记，违反无解剖图与无图示规范。"},
+    {"file":"visual-04-timing.png","attempt":1,"reason":"出现弧线/放射线，画面近似流程图。"},
+    {"file":"overview-02-glycogen.png","attempt":1,"reason":"思考框含器官、火焰和箭头图示。"},
+    {"file":"overview-03-gi-gl.png","attempt":1,"reason":"汉堡薯条对照暗示食物好坏，不符合本课语义。"},
+    {"file":"overview-04-timing.png","attempt":1,"reason":"完整正餐和感叹射线不符合小份加餐与无标记规范。"},
+    {"file":"overview-03-gi-gl.png","attempt":2,"reason":"餐盘触碰或裁切画布边缘，未满足安全留白。"}
+  ],
+  "retriesUsed": 7,
+  "result": "9 项来源素材均通过本地质量审核。6 项首轮不合格候选与 1 项二轮边缘裁切候选均已保留；最终未使用占位图或无关图。"
+}

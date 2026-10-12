@@ -1,0 +1,60 @@
+{
+  "commonPrompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, ground plane, cast shadow, room, paper background, loose paper sheets, border, sticker edge, shadow, or halo. A small unmarked rigid teaching card is allowed as a prop but must never contain personal information. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.",
+  "assets": [
+    {
+      "file": "cover.png",
+      "role": "cover",
+      "prompt": "Wide 16:9 wordless single-scene course cover. Exactly one Despa and one Bojji face each other with calm open hands, jointly holding one small unmarked rigid responsibility card upright between them. Explain respectful, transparent professional service, not a legal contract, financial transaction, security procedure, medical consultation or complaint case. Use one coherent current pose. Isolate the figures and card on the transparent canvas: no floor, ground plane, cast shadow, room, table, folder, paper, envelope, lock, door, feedback box, legal scale, money symbol, camera, medical or security symbol, duplicate figures, alternate poses, motion trails, arrows, readable signs, text, numbers, labels or unrelated equipment."
+    },
+    {
+      "file": "visual-01.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Exactly one Despa and one Bojji face one another with relaxed, respectful open hands and a small unmarked rigid responsibility card held carefully between them. Explain customer interest, honesty, respect and professional competence, not a contract, promise of results or a privacy record. Use one continuous current pose with all limbs and the card fully visible. Isolate the figures and card on the transparent canvas: no floor, ground plane, cast shadow, room, table, folder, paper, lock, camera, legal scale, money symbol, medical or security symbol, duplicate figures, alternate poses, sequence frames, arrows, motion trails, text, numbers, labels, readable screens, blue circles or unrelated equipment."
+    },
+    {
+      "file": "visual-02.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Exactly one Despa lowers one light dumbbell safely at hip height while exactly one Bojji makes a calm open-palm pause gesture at respectful distance. Explain knowing the boundary of general training and respectfully stopping to seek appropriate support, not medical diagnosis, treatment, referral paperwork or an emergency. Use one continuous current pose with all limbs and the dumbbell fully visible. Isolate the figures and prop on the transparent canvas: no floor, ground plane, cast shadow, room, table, doorway, folder, paper, medical symbol, clinic equipment, camera, lock, legal scale, security symbol, duplicate figures, alternate poses, sequence frames, arrows, motion trails, text, numbers, labels, readable screens, blue circles or unrelated equipment."
+    },
+    {
+      "file": "visual-03.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Exactly one Despa holds one small unmarked rigid privacy card close to his chest while exactly one Bojji observes at respectful distance with open hands and no visible contents. Explain minimum-necessary, objective records and limited access, not surveillance, a security procedure, medical documentation, a legal conclusion or personal-data display. Use one continuous current pose with all limbs and the card fully visible. Isolate the figures and card on the transparent canvas: no floor, ground plane, cast shadow, room, table, folder, paper, cabinet, lock, camera, screen, legal scale, medical or security symbol, duplicate figures, alternate poses, sequence frames, arrows, motion trails, text, numbers, labels, readable screens, blue circles or unrelated equipment."
+    },
+    {
+      "file": "visual-04.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Exactly one Despa and one Bojji use open hands to compare two small unmarked rigid responsibility cards held upright between them, with one light dumbbell safely held at Despa's side. Explain that different service arrangements still need clear responsibilities and customer care, not a tax, insurance, employment or contract decision. Use one continuous current pose with all limbs and props fully visible. Isolate the figures and props on the transparent canvas: no floor, ground plane, cast shadow, room, table, folder, paper, legal scale, money symbol, receipt, briefcase, lock, camera, medical or security symbol, duplicate figures, alternate poses, sequence frames, arrows, motion trails, text, numbers, labels, readable screens, blue circles or unrelated equipment."
+    },
+    {
+      "file": "visual-05.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Exactly one Despa listens with open hands while exactly one Bojji holds one small unmarked rigid feedback card upright and offers it respectfully. Explain honest communication, consent and a constructive feedback path, not a rating, review, marketing claim, complaint file or customer case. Use one continuous current pose with all limbs and the card fully visible. Isolate the figures and card on the transparent canvas: no floor, ground plane, cast shadow, room, table, folder, paper, envelope, feedback box, star, rating, logo, legal scale, money symbol, lock, camera, medical or security symbol, duplicate figures, alternate poses, sequence frames, arrows, motion trails, text, numbers, labels, readable screens, blue circles or unrelated equipment."
+    },
+    {
+      "file": "overview-01.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Exactly one Bojji carefully holds one small unmarked rigid responsibility card with both hands while exactly one Despa gives a calm open-palm acknowledgement beside him. Explain professional respect and honesty in a compact panel; do not reuse the knowledge-page composition. Isolate the figures and card on the transparent canvas: no floor, ground plane, cast shadow, room, table, folder, paper, lock, camera, legal scale, money symbol, medical or security symbol, duplicate figures, alternate poses, sequence frames, text, numbers, labels, arrows, motion trails or unrelated equipment."
+    },
+    {
+      "file": "overview-02.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Exactly one Bojji keeps both open hands in a calm pause gesture while exactly one Despa holds a light dumbbell lowered safely at his side and nods. Explain a respectful training boundary in a compact panel; do not reuse the knowledge-page composition. Isolate the figures and prop on the transparent canvas: no floor, ground plane, cast shadow, room, table, doorway, folder, paper, medical symbol, clinic equipment, camera, lock, legal scale, security symbol, duplicate figures, alternate poses, sequence frames, text, numbers, labels, arrows, motion trails or unrelated equipment."
+    },
+    {
+      "file": "overview-03.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Exactly one Bojji observes with open hands while exactly one Despa holds one small unmarked rigid privacy card upright near his chest with no visible contents. Explain minimum-necessary, objective records in a compact panel; do not reuse the knowledge-page composition. Isolate the figures and card on the transparent canvas: no floor, ground plane, cast shadow, room, table, folder, paper, cabinet, lock, camera, screen, legal scale, medical or security symbol, duplicate figures, alternate poses, sequence frames, text, numbers, labels, arrows, motion trails or unrelated equipment."
+    },
+    {
+      "file": "overview-04.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Exactly one Bojji and one Despa each hold one small unmarked rigid responsibility card upright at equal height, with a light dumbbell safely held by Despa's other hand. Explain clear shared service responsibilities in a compact panel; do not reuse the knowledge-page composition. Isolate the figures and props on the transparent canvas: no floor, ground plane, cast shadow, room, table, folder, paper, legal scale, money symbol, receipt, briefcase, lock, camera, medical or security symbol, duplicate figures, alternate poses, sequence frames, text, numbers, labels, arrows, motion trails or unrelated equipment."
+    },
+    {
+      "file": "overview-05.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Exactly one Despa holds one small unmarked rigid feedback card at chest height while exactly one Bojji responds with a thoughtful open-palm gesture. Explain transparent communication and improvement in a compact panel; do not reuse the knowledge-page composition. Isolate the figures and card on the transparent canvas: no floor, ground plane, cast shadow, room, table, folder, paper, envelope, feedback box, star, rating, logo, legal scale, money symbol, lock, camera, medical or security symbol, duplicate figures, alternate poses, sequence frames, text, numbers, labels, arrows, motion trails or unrelated equipment."
+    }
+  ]
+}

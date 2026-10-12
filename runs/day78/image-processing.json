@@ -1,0 +1,357 @@
+{
+  "processedAt": "2026-09-30T21:55:53.901758+00:00",
+  "method": "trim near-transparent noise; reviewed crop; uniform scale; transparent margin",
+  "assets": [
+    {
+      "source": "runs/day78/source/cover.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "sourceSha256": "7854477a34103ee00421734811b34ca8bcae3666b3545538a05f8ecd478fa70b",
+      "reviewedCrop": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "visibleCrop": [
+        206,
+        29,
+        1392,
+        909
+      ],
+      "output": "runs/day78/assets/cover.png",
+      "size": [
+        1600,
+        900
+      ],
+      "subjectSize": [
+        1067,
+        792
+      ],
+      "offset": [
+        266,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "无字封面"
+    },
+    {
+      "source": "runs/day78/source/visual-01-stages.png",
+      "sourceSize": [
+        1983,
+        793
+      ],
+      "sourceSha256": "5cd9f219a3ccbfe7da5e8850282b8fb13d02f96c3b13decfec86f530055082fb",
+      "reviewedCrop": [
+        0,
+        0,
+        1983,
+        793
+      ],
+      "visibleCrop": [
+        537,
+        0,
+        1504,
+        790
+      ],
+      "output": "runs/day78/assets/visual-01-stages.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        967,
+        790
+      ],
+      "offset": [
+        916,
+        55
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "改变阶段与对话起点"
+    },
+    {
+      "source": "runs/day78/source/visual-02-beliefs.png",
+      "sourceSize": [
+        1916,
+        821
+      ],
+      "sourceSha256": "447048d9c1d4fa841abdbcc126443923d275e71dda9621fc5dae8e300f671945",
+      "reviewedCrop": [
+        0,
+        0,
+        1916,
+        821
+      ],
+      "visibleCrop": [
+        404,
+        7,
+        1503,
+        816
+      ],
+      "output": "runs/day78/assets/visual-02-beliefs.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1076,
+        792
+      ],
+      "offset": [
+        862,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "风险收益与现实障碍"
+    },
+    {
+      "source": "runs/day78/source/visual-03-autonomy.png",
+      "sourceSize": [
+        1891,
+        832
+      ],
+      "sourceSha256": "53ee7380075762607081add48511f0220348e17a12f6dcaf5be8c2eb9e335094",
+      "reviewedCrop": [
+        0,
+        0,
+        1891,
+        832
+      ],
+      "visibleCrop": [
+        432,
+        0,
+        1548,
+        828
+      ],
+      "output": "runs/day78/assets/visual-03-autonomy.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1067,
+        792
+      ],
+      "offset": [
+        866,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "自主胜任关联支持"
+    },
+    {
+      "source": "runs/day78/source/visual-04-recovery.png",
+      "sourceSize": [
+        1916,
+        821
+      ],
+      "sourceSha256": "7586124c39b0e893321651001af28634ef48608d041bf5f95c220e7efb63b933",
+      "reviewedCrop": [
+        0,
+        0,
+        1916,
+        821
+      ],
+      "visibleCrop": [
+        410,
+        10,
+        1522,
+        808
+      ],
+      "output": "runs/day78/assets/visual-04-recovery.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1104,
+        792
+      ],
+      "offset": [
+        848,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "中断复盘与恢复行动"
+    },
+    {
+      "source": "runs/day78/source/overview-01-stages.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "5a15fec27dd78bf2d6ae49a2aeb50825043458bb5508a57bfd3afd2eb91bef7f",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        43,
+        16,
+        1384,
+        1064
+      ],
+      "output": "runs/day78/assets/overview-01-stages.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1341,
+        1048
+      ],
+      "offset": [
+        129,
+        76
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day78/source/overview-02-beliefs.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "7c98623e302ad8598fedcaa9bc458636e776d2d89f3249b25d2726b094a6792d",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        201,
+        12,
+        1248,
+        1081
+      ],
+      "output": "runs/day78/assets/overview-02-beliefs.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1034,
+        1056
+      ],
+      "offset": [
+        283,
+        72
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day78/source/overview-03-autonomy.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "815551f0881604a811a85d290613053898760f9e76709d46287293112ed78c01",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        151,
+        25,
+        1345,
+        1038
+      ],
+      "output": "runs/day78/assets/overview-03-autonomy.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1194,
+        1013
+      ],
+      "offset": [
+        203,
+        93
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day78/source/overview-04-recovery.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "a7ff9d79c93888976f974a46c8a55ad6c2215f3a6205ef1b2896f4059236140a",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        270,
+        16,
+        1245,
+        1068
+      ],
+      "output": "runs/day78/assets/overview-04-recovery.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        975,
+        1052
+      ],
+      "offset": [
+        312,
+        74
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    }
+  ]
+}

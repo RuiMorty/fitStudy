@@ -1,0 +1,119 @@
+{
+  "reviewer": "local source visual, alpha, semantic and safety QA",
+  "requirements": [
+    "true-alpha transparent PNG without a rendered checkerboard, opaque canvas, room, floor, ground plane, loose paper, border, sticker edge, shadow or halo",
+    "only wordless Bojji and Despa in calm 2D coaching scenes; no extra characters, text, numbers, labels, arrows, logos, watermarks, thought bubbles, landscape or narrative sequence",
+    "goal-setting images stay neutral and process-focused: no body-size comparison, scale, score, punishment, fear appeal, therapy claim or medical diagnostic cue",
+    "the low box is a stable isolated prop and every selected action is a single safe static pose",
+    "each overview image is independently generated and is compositionally distinct from its corresponding wide knowledge image"
+  ],
+  "technicalChecks": {
+    "checkedWith": [
+      "PNG metadata and RGBA / hasAlpha inspection",
+      "individual visual review on a neutral transparency preview",
+      "source-to-lesson and source-to-preparation mapping check",
+      "study-image-bounds review before shared preparation"
+    ],
+    "result": "All nine selected candidates are non-empty RGBA PNGs with transparent pixels. Selected scenes contain no text, ground, room, calendar, score, diagnostic or coercive cue. The shared preparer will remove only near-transparent edge noise and add the required final six-percent margin."
+  },
+  "accepted": [
+    {
+      "file": "cover.png",
+      "attempt": 1,
+      "source": "runs/day79/image-requests/cover-eb86e17540/attempt-01/cover.png",
+      "review": "One calm Despa and one Bojji consider a shoe, low box and blank card as a practical small training decision, without a scale, score, pressure or ground."
+    },
+    {
+      "file": "visual-01-goals.png",
+      "attempt": 3,
+      "source": "runs/day79/image-requests/visual-01-goals-14e6dbda1b/attempt-03/visual-01-goals.png",
+      "review": "The selected current scene has one Bojji, one low box, one shoe and one listening Despa; it avoids the rejected candidate's duplicated character and imagined destination."
+    },
+    {
+      "file": "visual-02-smart.png",
+      "attempt": 2,
+      "source": "runs/day79/image-requests/visual-02-smart-731b67a2f2/attempt-02/visual-02-smart.png",
+      "review": "One walking Despa and one Bojji putting on a shoe present a standard action and a smaller starting action without a timeline, bubble, landscape, text or punishment cue."
+    },
+    {
+      "file": "visual-03-efficacy.png",
+      "attempt": 1,
+      "source": "runs/day79/image-requests/visual-03-efficacy-ba06bd7d22/attempt-01/visual-03-efficacy.png",
+      "review": "One Bojji uses a solid low wooden box in a balanced step-up while one Despa gives calm acknowledgement; no trophy, score, unsafe jump or ground is shown."
+    },
+    {
+      "file": "visual-04-review.png",
+      "attempt": 4,
+      "source": "runs/day79/image-requests/visual-04-review-abf6d5952d/attempt-04/visual-04-review.png",
+      "review": "One listening Despa, one Bojji, one shoe and one blank rigid card form a single present shared-planning interaction; the later clean candidate avoids the rejected multi-frame and thought-bubble scene."
+    },
+    {
+      "file": "overview-01-goals.png",
+      "attempt": 4,
+      "source": "runs/day79/image-requests/overview-01-goals-00ec6787f9/attempt-04/overview-01-goals.png",
+      "review": "The dedicated overview contains one upright Bojji clearly separated from the stable low box and one supportive Despa, conveying a completed controllable action without an action sequence."
+    },
+    {
+      "file": "overview-02-smart.png",
+      "attempt": 3,
+      "source": "runs/day79/image-requests/overview-02-smart-f11ada0c79/attempt-03/overview-02-smart.png",
+      "review": "One shoe-holding Despa and one single-pose walking Bojji make a compact isolated overview with no future scene, duplicated figure, text, ground or decorative marker."
+    },
+    {
+      "file": "overview-03-efficacy.png",
+      "attempt": 1,
+      "source": "runs/day79/image-requests/overview-03-efficacy-d603b843f9/attempt-01/overview-03-efficacy.png",
+      "review": "The separate compact scene shows one stable step-up and one acknowledgement with a low wooden box, no unsafe jumping, trophy, score or sequence."
+    },
+    {
+      "file": "overview-04-review.png",
+      "attempt": 2,
+      "source": "runs/day79/image-requests/overview-04-review-bc7a576c7d/attempt-02/overview-04-review.png",
+      "review": "One shoe-holding Bojji, one listening Despa and one blank card communicate shared planning and review without the rejected thought bubbles, landscape or repeated shoes."
+    }
+  ],
+  "rejected": [
+    {
+      "file": "visual-01-goals.png",
+      "attempt": 1,
+      "reason": "Rendered duplicated Bojji figures, a future-destination thought bubble and a narrative landscape instead of one current controllable action."
+    },
+    {
+      "file": "visual-01-goals.png",
+      "attempt": 2,
+      "reason": "Bojji remained seated on the box rather than showing the requested sit-to-stand action."
+    },
+    {
+      "file": "visual-02-smart.png",
+      "attempt": 1,
+      "reason": "Used imagined walking scenes, duplicate figures and landscape bubbles, making the picture a sequence instead of one simultaneous coaching scene."
+    },
+    {
+      "file": "visual-04-review.png",
+      "attempt": 1,
+      "reason": "Rendered multiple Bojji poses, thought bubbles, a multi-step shoe display and repeated props."
+    },
+    {
+      "file": "overview-01-goals.png",
+      "attempt": 1,
+      "reason": "Rendered three Bojji poses as a before-and-after action sequence."
+    },
+    {
+      "file": "overview-01-goals.png",
+      "attempt": 2,
+      "reason": "The only Bojji remained seated, so it did not depict the requested completed or rising action."
+    },
+    {
+      "file": "overview-02-smart.png",
+      "attempt": 1,
+      "reason": "Rendered imagined outdoor scenes, thought bubbles, a duplicate Bojji and colored emphasis marks."
+    },
+    {
+      "file": "overview-04-review.png",
+      "attempt": 1,
+      "reason": "Rendered thought bubbles, landscapes, repeated shoes and extra scene elements instead of a single review interaction."
+    }
+  ],
+  "retriesUsed": 12,
+  "result": "Nine selected source assets passed local visual, alpha, semantic and equipment-safety QA. All 21 immutable candidates and their prompts remain preserved in image-request-log.json; no further image request is needed."
+}

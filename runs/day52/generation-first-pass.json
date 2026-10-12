@@ -1,0 +1,119 @@
+{
+  "provider": "Lingzhi",
+  "preset": "quality",
+  "model": "gpt-image-2.5-sunburst",
+  "authorization": "用户于2026-09-30授权每图最多首次加5次重试；本记录仅为Day52首轮。",
+  "updatedAt": "2026-09-30T02:15:07.066390Z",
+  "assets": [
+    {
+      "file": "cover.png",
+      "role": "cover",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day52/source/cover.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 618088,
+      "sha256": "126f4b035828448d4977b6d2a7e9a18c8fa4fced535958a99b2ccc3014710ef3"
+    },
+    {
+      "file": "visual-01-goal.png",
+      "role": "knowledge",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day52/source/visual-01-goal.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 523545,
+      "sha256": "8e32449802f21759b5f7ea6408ce18288a9392c1342eeb3c4c5e9f195db6b45c"
+    },
+    {
+      "file": "visual-02-variables.png",
+      "role": "knowledge",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day52/source/visual-02-variables.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 654455,
+      "sha256": "3d3c9ed391bd2ca7051225fddd5c3b862c970866123a9f1183f40a224afff1d8"
+    },
+    {
+      "file": "visual-03-progression.png",
+      "role": "knowledge",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day52/source/visual-03-progression.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 973544,
+      "sha256": "0335075ab25f6e566d3d544bba6327ecd463511bd7d3f81096e0df8b4934f778"
+    },
+    {
+      "file": "visual-04-library.png",
+      "role": "knowledge",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day52/source/visual-04-library.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 603359,
+      "sha256": "6dd47f9d5a161e5b7bf12effa82d86124c786f4f858cbde7737c7be6fef52beb"
+    },
+    {
+      "file": "visual-05-checks.png",
+      "role": "knowledge",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day52/source/visual-05-checks.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 670741,
+      "sha256": "90b70c1f580019d3f12bbd990d4a517adb0815104432930b2a5e5fd7fe940d4f"
+    },
+    {
+      "file": "overview-01-goal.png",
+      "role": "overview-item",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day52/source/overview-01-goal.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 888080,
+      "sha256": "7cfc9c067bde3463a34ecb8fcd4d69efbd6cbc67a7ddb16cfbb4f1648b12aa9b"
+    },
+    {
+      "file": "overview-02-variables.png",
+      "role": "overview-item",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day52/source/overview-02-variables.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 859727,
+      "sha256": "eadfd02c78246ba4a27f49ca21fb5aeb10af53e17747de597218d8ed1071201d"
+    },
+    {
+      "file": "overview-03-progression.png",
+      "role": "overview-item",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day52/source/overview-03-progression.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 896345,
+      "sha256": "098fc48c42b89ea6ff7eb30aeb1b11a8ec5b9c852f0f6a60aea1ffcecd345c8c"
+    },
+    {
+      "file": "overview-04-library.png",
+      "role": "overview-item",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day52/source/overview-04-library.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 525699,
+      "sha256": "bafa9b82ce1f6c02af8f6a27b82bc532dade69813041ec89b79f14093ef71553"
+    },
+    {
+      "file": "overview-05-checks.png",
+      "role": "overview-item",
+      "attempt": 1,
+      "returncode": 0,
+      "output": "runs/day52/source/overview-05-checks.png",
+      "status": "generated-pending-quality-review",
+      "bytes": 735113,
+      "sha256": "5db8fc02077a815267f622b22ef22fb9a5d232b7cca553910904a3a264347b70"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "at": "2026-09-29T06:14:00+08:00",
+  "asset": "cover.png",
+  "role": "cover",
+  "attempts": 1,
+  "provider": "Lingzhi",
+  "preset": "quality",
+  "model": "gpt-image-2.5-sunburst",
+  "authorization": "健身学习每日生成自动化明确授权的单次封面请求。",
+  "firstSandboxResult": "未读取到 macOS 登录钥匙串；未向服务端提交。",
+  "hostAttemptResult": "宿主授权调用结束但未返回输出路径，runs/day50/source/cover.png 不存在，无法确认有可用图片。",
+  "reason": "未产生可验证、非空的本地封面 PNG；按每图一次和失败不自动重试规则停止。",
+  "nextAction": "等待用户明确授权一笔新的 Day50 封面请求；授权不得默认扩展为其余12张或发布。"
+}

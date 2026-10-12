@@ -1,0 +1,357 @@
+{
+  "processedAt": "2026-09-30T21:02:06.409639+00:00",
+  "method": "trim near-transparent noise; reviewed crop; uniform scale; transparent margin",
+  "assets": [
+    {
+      "source": "runs/day76/source/cover.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "sourceSha256": "fa39fc043468e8536bd64a8ea0f49877acc349cbb49b00d78b6b2c7f765973c9",
+      "reviewedCrop": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "visibleCrop": [
+        296,
+        15,
+        1382,
+        911
+      ],
+      "output": "runs/day76/assets/cover.png",
+      "size": [
+        1600,
+        900
+      ],
+      "subjectSize": [
+        960,
+        792
+      ],
+      "offset": [
+        320,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "无字封面"
+    },
+    {
+      "source": "runs/day76/source/visual-01-screening.png",
+      "sourceSize": [
+        2210,
+        711
+      ],
+      "sourceSha256": "0228d256a2ab3a49e38cca0cbe041ae18c661572d5c81228c096a93ea5310be5",
+      "reviewedCrop": [
+        0,
+        0,
+        2210,
+        711
+      ],
+      "visibleCrop": [
+        612,
+        8,
+        1737,
+        702
+      ],
+      "output": "runs/day76/assets/visual-01-screening.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1125,
+        694
+      ],
+      "offset": [
+        837,
+        103
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "小红书独立知识页，无字"
+    },
+    {
+      "source": "runs/day76/source/visual-02-age.png",
+      "sourceSize": [
+        2211,
+        711
+      ],
+      "sourceSha256": "982462c3517a163aa79a547c66dcaa79a38cfaebe22f143b08574a68bd8c7fb7",
+      "reviewedCrop": [
+        0,
+        0,
+        2211,
+        711
+      ],
+      "visibleCrop": [
+        504,
+        0,
+        1818,
+        695
+      ],
+      "output": "runs/day76/assets/visual-02-age.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1314,
+        695
+      ],
+      "offset": [
+        743,
+        102
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "小红书独立知识页，无字"
+    },
+    {
+      "source": "runs/day76/source/visual-03-pregnancy.png",
+      "sourceSize": [
+        2210,
+        711
+      ],
+      "sourceSha256": "8ee81e1101e7a2c9eb5be7dc22f04b4699cdd0dd862baeb2ad25fd31035845b2",
+      "reviewedCrop": [
+        0,
+        0,
+        2210,
+        711
+      ],
+      "visibleCrop": [
+        734,
+        0,
+        1680,
+        687
+      ],
+      "output": "runs/day76/assets/visual-03-pregnancy.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        946,
+        687
+      ],
+      "offset": [
+        927,
+        106
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "小红书独立知识页，无字"
+    },
+    {
+      "source": "runs/day76/source/visual-04-chronic.png",
+      "sourceSize": [
+        2211,
+        711
+      ],
+      "sourceSha256": "90c33bb03528ae3ae9c4879130d7e227bd51b0eb2f9ff6bc023dceadd40b708c",
+      "reviewedCrop": [
+        0,
+        0,
+        2211,
+        711
+      ],
+      "visibleCrop": [
+        706,
+        0,
+        1452,
+        708
+      ],
+      "output": "runs/day76/assets/visual-04-chronic.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        746,
+        708
+      ],
+      "offset": [
+        1027,
+        96
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "小红书独立知识页，无字"
+    },
+    {
+      "source": "runs/day76/source/overview-01-screening.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "050c4a7f0d1efb63566c790e5d75d1d817aefeff31e06360bc13c1b1a9baf96b",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        177,
+        25,
+        1288,
+        1061
+      ],
+      "output": "runs/day76/assets/overview-01-screening.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1111,
+        1036
+      ],
+      "offset": [
+        244,
+        82
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day76/source/overview-02-age.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "4f1886e1d4ab1c8ca84c3d72975bdfdff69363ce8eaf959b5db4c41c269394cc",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        101,
+        26,
+        1394,
+        992
+      ],
+      "output": "runs/day76/assets/overview-02-age.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1293,
+        966
+      ],
+      "offset": [
+        153,
+        117
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day76/source/overview-03-pregnancy.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "7d2ae1571277982d4d4ffbed526507a18e73a4a1f6a86fdcb5b7e838e2a59f50",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        192,
+        0,
+        1259,
+        1052
+      ],
+      "output": "runs/day76/assets/overview-03-pregnancy.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1067,
+        1052
+      ],
+      "offset": [
+        266,
+        74
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day76/source/overview-04-chronic.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "0c100e903d8ae8eb391d380aade57c781d847feafe41a4f3243254a33c6307b3",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        187,
+        30,
+        1255,
+        1056
+      ],
+      "output": "runs/day76/assets/overview-04-chronic.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1068,
+        1026
+      ],
+      "offset": [
+        266,
+        87
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    }
+  ]
+}

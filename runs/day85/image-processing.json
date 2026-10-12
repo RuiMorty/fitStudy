@@ -1,0 +1,435 @@
+{
+  "processedAt": "2026-10-02T23:16:20.679845+00:00",
+  "method": "trim near-transparent noise; reviewed crop; uniform scale; transparent margin",
+  "assets": [
+    {
+      "source": "runs/day85/source/cover.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "sourceSha256": "612059c362bd17f2d51319e647a5489e9bb68093a3c4fbb2c19afbf4521fc76b",
+      "reviewedCrop": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "visibleCrop": [
+        73,
+        41,
+        1639,
+        880
+      ],
+      "output": "runs/day85/assets/cover.png",
+      "size": [
+        1600,
+        900
+      ],
+      "subjectSize": [
+        1478,
+        792
+      ],
+      "offset": [
+        61,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "无字封面"
+    },
+    {
+      "source": "runs/day85/source/visual-01.png",
+      "sourceSize": [
+        1881,
+        836
+      ],
+      "sourceSha256": "9fb9556fd8afc87d53d5addca9585ebbe0077a0c2adff1c2d40e776d4c5e451e",
+      "reviewedCrop": [
+        0,
+        0,
+        1881,
+        836
+      ],
+      "visibleCrop": [
+        31,
+        28,
+        1851,
+        779
+      ],
+      "output": "runs/day85/assets/visual-01.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1820,
+        751
+      ],
+      "offset": [
+        490,
+        74
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "直线、变向与反应不同知识页配图"
+    },
+    {
+      "source": "runs/day85/source/visual-02.png",
+      "sourceSize": [
+        1774,
+        887
+      ],
+      "sourceSha256": "7721367e85f2c88bcf97cc7bb17e0e9f1e919361ce290072b3c5b864a5e3b5ac",
+      "reviewedCrop": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "visibleCrop": [
+        351,
+        16,
+        1531,
+        836
+      ],
+      "output": "runs/day85/assets/visual-02.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1140,
+        792
+      ],
+      "offset": [
+        830,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "测试要匹配项目目标知识页配图"
+    },
+    {
+      "source": "runs/day85/source/visual-03.png",
+      "sourceSize": [
+        1881,
+        836
+      ],
+      "sourceSha256": "66f9d8c238e0165ca8747cb3a330c173b0c0c38aafe9e8bde45d545c41b8af56",
+      "reviewedCrop": [
+        0,
+        0,
+        1881,
+        836
+      ],
+      "visibleCrop": [
+        176,
+        10,
+        1648,
+        808
+      ],
+      "output": "runs/day85/assets/visual-03.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1461,
+        792
+      ],
+      "offset": [
+        669,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "统一场地与流程知识页配图"
+    },
+    {
+      "source": "runs/day85/source/visual-04.png",
+      "sourceSize": [
+        2210,
+        711
+      ],
+      "sourceSha256": "a20562fbf138ff29ebd43c2828baf3a1f5831a05e7cb602ae37325121c256936",
+      "reviewedCrop": [
+        0,
+        0,
+        2210,
+        711
+      ],
+      "visibleCrop": [
+        352,
+        11,
+        1832,
+        687
+      ],
+      "output": "runs/day85/assets/visual-04.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1480,
+        676
+      ],
+      "offset": [
+        660,
+        112
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "成绩要配动作线索知识页配图"
+    },
+    {
+      "source": "runs/day85/source/visual-05.png",
+      "sourceSize": [
+        1881,
+        836
+      ],
+      "sourceSha256": "02d5259bdf1ce8ab95001241c4bde4dd0ae87df61d796dccdfe8061f3e47be6e",
+      "reviewedCrop": [
+        0,
+        0,
+        1881,
+        836
+      ],
+      "visibleCrop": [
+        267,
+        0,
+        1583,
+        830
+      ],
+      "output": "runs/day85/assets/visual-05.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1256,
+        792
+      ],
+      "offset": [
+        772,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "结果连接训练与复测知识页配图"
+    },
+    {
+      "source": "runs/day85/source/overview-01.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "1098528f42e8cef2197ecfbe72157fb6732310338b302668f6b9f2f2b397e0cb",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        38,
+        174,
+        1411,
+        927
+      ],
+      "output": "runs/day85/assets/overview-01.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1373,
+        753
+      ],
+      "offset": [
+        113,
+        223
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "直线、变向与反应不同总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day85/source/overview-02.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "ebb490668a4ec91c1fa6850dc92e0b87f3cd75b94d844880206b384d9fb0f05e",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        22,
+        31,
+        1350,
+        981
+      ],
+      "output": "runs/day85/assets/overview-02.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1328,
+        950
+      ],
+      "offset": [
+        136,
+        125
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "测试要匹配项目目标总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day85/source/overview-03.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "2c29a79bd9a267d3ba11fd81c5ba941f295be7f4b8a1c4970c3dc89be9b39938",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        42,
+        36,
+        1362,
+        1039
+      ],
+      "output": "runs/day85/assets/overview-03.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1320,
+        1003
+      ],
+      "offset": [
+        140,
+        98
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "统一场地与流程总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day85/source/overview-04.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "c7b7baeaf35f2de91112316ddbcb47bc6fc050c0105a3a863a88faa7576f028b",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        83,
+        80,
+        1388,
+        979
+      ],
+      "output": "runs/day85/assets/overview-04.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1305,
+        899
+      ],
+      "offset": [
+        147,
+        150
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "成绩要配动作线索总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day85/source/overview-05.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "5821c1c107dd92e2df919d1c5f1c94b240820a7cacffdcf3bdb6349ea5db2571",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        101,
+        22,
+        1348,
+        1014
+      ],
+      "output": "runs/day85/assets/overview-05.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1247,
+        992
+      ],
+      "offset": [
+        176,
+        104
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "结果连接训练与复测总览专用，不与知识页复用"
+    }
+  ]
+}

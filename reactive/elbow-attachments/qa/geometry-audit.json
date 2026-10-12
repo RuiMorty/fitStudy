@@ -1,0 +1,159 @@
+{
+  "scope": "Source atlas contacts are retained; adaptation is not a biomechanical contact solver. Distances measure internal attachment consistency, not anatomical validity.",
+  "angles": [
+    {
+      "angle": 0,
+      "anchorToBoneMm": {
+        "origin__muscle_biceps_long_R": 0.0,
+        "insertion__muscle_biceps_long_R": 0.0,
+        "origin__muscle_biceps_short_R": 0.0,
+        "insertion__muscle_biceps_short_R": 0.0,
+        "origin__muscle_brachialis_R": 0.0,
+        "insertion__muscle_brachialis_R": 0.0,
+        "origin__muscle_triceps_long_R": 0.0,
+        "insertion__muscle_triceps_long_R": 0.0,
+        "origin__muscle_triceps_lateral_R": 0.0,
+        "insertion__muscle_triceps_lateral_R": 0.0,
+        "origin__muscle_triceps_medial_R": 0.0,
+        "insertion__muscle_triceps_medial_R": 0.0
+      },
+      "distalFootprintToTendonMm": {
+        "biceps": 0.02,
+        "brachialis": 0.046,
+        "triceps": 0.013
+      },
+      "muscleIntersections": {
+        "muscle_biceps_long_R / muscle_brachialis_R": 8,
+        "muscle_biceps_short_R / muscle_brachialis_R": 43,
+        "muscle_brachialis_R / muscle_triceps_medial_R": 171,
+        "muscle_triceps_long_R / muscle_triceps_lateral_R": 177,
+        "muscle_triceps_long_R / muscle_triceps_medial_R": 54,
+        "muscle_triceps_lateral_R / muscle_triceps_medial_R": 17
+      }
+    },
+    {
+      "angle": 30,
+      "anchorToBoneMm": {
+        "origin__muscle_biceps_long_R": 0.0,
+        "insertion__muscle_biceps_long_R": 0.0,
+        "origin__muscle_biceps_short_R": 0.0,
+        "insertion__muscle_biceps_short_R": 0.0,
+        "origin__muscle_brachialis_R": 0.0,
+        "insertion__muscle_brachialis_R": 0.0,
+        "origin__muscle_triceps_long_R": 0.0,
+        "insertion__muscle_triceps_long_R": 0.0,
+        "origin__muscle_triceps_lateral_R": 0.0,
+        "insertion__muscle_triceps_lateral_R": 0.0,
+        "origin__muscle_triceps_medial_R": 0.0,
+        "insertion__muscle_triceps_medial_R": 0.0
+      },
+      "distalFootprintToTendonMm": {
+        "biceps": 0.02,
+        "brachialis": 0.046,
+        "triceps": 0.013
+      },
+      "muscleIntersections": {
+        "muscle_biceps_long_R / muscle_biceps_short_R": 24,
+        "muscle_biceps_long_R / muscle_brachialis_R": 6,
+        "muscle_biceps_short_R / muscle_brachialis_R": 63,
+        "muscle_brachialis_R / muscle_triceps_medial_R": 63,
+        "muscle_triceps_long_R / muscle_triceps_lateral_R": 180,
+        "muscle_triceps_long_R / muscle_triceps_medial_R": 54,
+        "muscle_triceps_lateral_R / muscle_triceps_medial_R": 17
+      }
+    },
+    {
+      "angle": 60,
+      "anchorToBoneMm": {
+        "origin__muscle_biceps_long_R": 0.0,
+        "insertion__muscle_biceps_long_R": 0.0,
+        "origin__muscle_biceps_short_R": 0.0,
+        "insertion__muscle_biceps_short_R": 0.0,
+        "origin__muscle_brachialis_R": 0.0,
+        "insertion__muscle_brachialis_R": 0.0,
+        "origin__muscle_triceps_long_R": 0.0,
+        "insertion__muscle_triceps_long_R": 0.0,
+        "origin__muscle_triceps_lateral_R": 0.0,
+        "insertion__muscle_triceps_lateral_R": 0.0,
+        "origin__muscle_triceps_medial_R": 0.0,
+        "insertion__muscle_triceps_medial_R": 0.0
+      },
+      "distalFootprintToTendonMm": {
+        "biceps": 0.02,
+        "brachialis": 0.046,
+        "triceps": 0.013
+      },
+      "muscleIntersections": {
+        "muscle_biceps_long_R / muscle_biceps_short_R": 50,
+        "muscle_biceps_long_R / muscle_brachialis_R": 29,
+        "muscle_biceps_short_R / muscle_brachialis_R": 61,
+        "muscle_brachialis_R / muscle_triceps_medial_R": 63,
+        "muscle_triceps_long_R / muscle_triceps_lateral_R": 180,
+        "muscle_triceps_long_R / muscle_triceps_medial_R": 57,
+        "muscle_triceps_lateral_R / muscle_triceps_medial_R": 17
+      }
+    },
+    {
+      "angle": 90,
+      "anchorToBoneMm": {
+        "origin__muscle_biceps_long_R": 0.0,
+        "insertion__muscle_biceps_long_R": 0.0,
+        "origin__muscle_biceps_short_R": 0.0,
+        "insertion__muscle_biceps_short_R": 0.0,
+        "origin__muscle_brachialis_R": 0.0,
+        "insertion__muscle_brachialis_R": 0.0,
+        "origin__muscle_triceps_long_R": 0.0,
+        "insertion__muscle_triceps_long_R": 0.0,
+        "origin__muscle_triceps_lateral_R": 0.0,
+        "insertion__muscle_triceps_lateral_R": 0.0,
+        "origin__muscle_triceps_medial_R": 0.0,
+        "insertion__muscle_triceps_medial_R": 0.0
+      },
+      "distalFootprintToTendonMm": {
+        "biceps": 0.02,
+        "brachialis": 0.046,
+        "triceps": 0.013
+      },
+      "muscleIntersections": {
+        "muscle_biceps_long_R / muscle_biceps_short_R": 63,
+        "muscle_biceps_long_R / muscle_brachialis_R": 67,
+        "muscle_biceps_short_R / muscle_brachialis_R": 43,
+        "muscle_brachialis_R / muscle_triceps_medial_R": 59,
+        "muscle_triceps_long_R / muscle_triceps_lateral_R": 207,
+        "muscle_triceps_long_R / muscle_triceps_medial_R": 143,
+        "muscle_triceps_lateral_R / muscle_triceps_medial_R": 71
+      }
+    },
+    {
+      "angle": 120,
+      "anchorToBoneMm": {
+        "origin__muscle_biceps_long_R": 0.0,
+        "insertion__muscle_biceps_long_R": 0.0,
+        "origin__muscle_biceps_short_R": 0.0,
+        "insertion__muscle_biceps_short_R": 0.0,
+        "origin__muscle_brachialis_R": 0.0,
+        "insertion__muscle_brachialis_R": 0.0,
+        "origin__muscle_triceps_long_R": 0.0,
+        "insertion__muscle_triceps_long_R": 0.0,
+        "origin__muscle_triceps_lateral_R": 0.0,
+        "insertion__muscle_triceps_lateral_R": 0.0,
+        "origin__muscle_triceps_medial_R": 0.0,
+        "insertion__muscle_triceps_medial_R": 0.0
+      },
+      "distalFootprintToTendonMm": {
+        "biceps": 0.02,
+        "brachialis": 0.046,
+        "triceps": 0.013
+      },
+      "muscleIntersections": {
+        "muscle_biceps_long_R / muscle_biceps_short_R": 83,
+        "muscle_biceps_long_R / muscle_brachialis_R": 125,
+        "muscle_biceps_short_R / muscle_brachialis_R": 62,
+        "muscle_brachialis_R / muscle_triceps_medial_R": 199,
+        "muscle_triceps_long_R / muscle_triceps_lateral_R": 207,
+        "muscle_triceps_long_R / muscle_triceps_medial_R": 243,
+        "muscle_triceps_lateral_R / muscle_triceps_medial_R": 240
+      }
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "reviewer": "local source visual, alpha, semantic and safety QA",
+  "requirements": [
+    "true-alpha transparent PNG without a rendered checkerboard, opaque canvas, room, floor, ground plane, loose paper, border, sticker edge, shadow or halo",
+    "only wordless Bojji and Despa in calm 2D coaching scenes; no extra characters, text, numbers, labels, arrows, logos, watermarks, thought bubbles, medical imagery or narrative sequence",
+    "communication and adherence imagery supports autonomy, consent and ordinary training planning; it must not portray therapy, diagnosis, crisis care, shame, coercion, surveillance or punishment",
+    "touch is not used as an unexplained default coaching cue; no-contact alternatives remain visually clear",
+    "each overview image is independently generated and compositionally distinct from its corresponding wide knowledge-page art"
+  ],
+  "technicalChecks": {
+    "checkedWith": [
+      "PNG metadata and RGBA / hasAlpha inspection",
+      "individual visual review on a neutral transparency preview",
+      "source-to-lesson and source-to-preparation mapping check"
+    ],
+    "result": "All nine selected candidates are non-empty RGBA PNGs with transparent pixels. Each was visually checked for a single present scene, correct character count, wordless output, safe posture, no-contact boundary where relevant, and absence of ground, room, diagnostic or coercive cues."
+  },
+  "accepted": [
+    {
+      "file": "cover.png",
+      "attempt": 1,
+      "source": "runs/day80/image-requests/cover-eb86e17540/attempt-01/cover.png",
+      "review": "One Despa listens with an open hand while one Bojji holds a blank plan card; the calm, wordless conversation has no command, room, ground or therapy cue."
+    },
+    {
+      "file": "visual-01-listen.png",
+      "attempt": 2,
+      "source": "runs/day80/image-requests/visual-01-listen-706c4cec57/attempt-02/visual-01-listen.png",
+      "review": "One Bojji explains with an open hand and one attentive Despa responds with a supportive palm, forming a single present listening interaction without bubbles or narration."
+    },
+    {
+      "file": "visual-02-cues.png",
+      "attempt": 1,
+      "source": "runs/day80/image-requests/visual-02-cues-4d03e7c0b3/attempt-01/visual-02-cues.png",
+      "review": "Bojji holds one stable bodyweight squat while Despa gives one non-contact visual cue; feet, knees and the isolated no-ground composition remain clear."
+    },
+    {
+      "file": "visual-03-adherence.png",
+      "attempt": 1,
+      "source": "runs/day80/image-requests/visual-03-adherence-fa00485c17/attempt-01/visual-03-adherence.png",
+      "review": "Bojji carries one pair of prepared shoes and one rolled mat while Despa offers calm no-contact support; no calendar, checklist, scale or punitive cue appears."
+    },
+    {
+      "file": "visual-04-regulate.png",
+      "attempt": 1,
+      "source": "runs/day80/image-requests/visual-04-regulate-f66e040b79/attempt-01/visual-04-regulate.png",
+      "review": "One Bojji and one Despa mirror a simple calm breathing posture without magical, medical, meditation or psychotherapy symbol."
+    },
+    {
+      "file": "overview-01-listen.png",
+      "attempt": 1,
+      "source": "runs/day80/image-requests/overview-01-listen-9a5712f5ec/attempt-01/overview-01-listen.png",
+      "review": "The separate compact overview shows one active speaker and one visibly listening coach, compositionally distinct from the wide interaction."
+    },
+    {
+      "file": "overview-02-cues.png",
+      "attempt": 1,
+      "source": "runs/day80/image-requests/overview-02-cues-bad4e785f3/attempt-01/overview-02-cues.png",
+      "review": "One stable squat and a single non-contact raised-finger cue communicate a focused prompt without touch, text, ground or equipment."
+    },
+    {
+      "file": "overview-03-adherence.png",
+      "attempt": 2,
+      "source": "runs/day80/image-requests/overview-03-adherence-24d0749a09/attempt-02/overview-03-adherence.png",
+      "review": "Bojji holds a prepared mat and shoes while Despa offers support from a respectful no-contact distance; this preserves the lesson's consent boundary."
+    },
+    {
+      "file": "overview-04-regulate.png",
+      "attempt": 1,
+      "source": "runs/day80/image-requests/overview-04-regulate-6b2802a56e/attempt-01/overview-04-regulate.png",
+      "review": "The overview-only breathing pause is a plain pre-training self-regulation scene with no medical or mystical framing."
+    }
+  ],
+  "rejected": [
+    {
+      "file": "visual-01-listen.png",
+      "attempt": 1,
+      "reason": "Rendered multiple Bojji/Despa pairs, thought bubbles and a question-mark narrative instead of one present listening scene."
+    },
+    {
+      "file": "overview-03-adherence.png",
+      "attempt": 1,
+      "reason": "Despa touched Bojji's shoulder without any way to communicate permission, which conflicts with the course's explicit consent boundary."
+    }
+  ],
+  "retriesUsed": 2,
+  "result": "Nine selected source assets passed local visual, alpha, semantic and equipment-safety QA. All 11 immutable candidates and their prompts remain preserved in image-request-log.json; no further image request is needed."
+}

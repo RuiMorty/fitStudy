@@ -1,0 +1,357 @@
+{
+  "processedAt": "2026-09-30T08:13:30.578705+00:00",
+  "method": "trim near-transparent noise; reviewed crop; uniform scale; transparent margin",
+  "assets": [
+    {
+      "source": "runs/day58/source/cover.png",
+      "sourceSize": [
+        1672,
+        940
+      ],
+      "sourceSha256": "47f8acec3a24f773563f03055cd5a5df5d4f468ddd0a933114db0f6a72690ca5",
+      "reviewedCrop": [
+        0,
+        0,
+        1672,
+        940
+      ],
+      "visibleCrop": [
+        113,
+        13,
+        1318,
+        914
+      ],
+      "output": "runs/day58/assets/cover.png",
+      "size": [
+        1600,
+        900
+      ],
+      "subjectSize": [
+        1059,
+        792
+      ],
+      "offset": [
+        270,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "无字封面"
+    },
+    {
+      "source": "runs/day58/source/visual-01-sensory.png",
+      "sourceSize": [
+        1870,
+        841
+      ],
+      "sourceSha256": "54dd77c573fce179965bbf37db988178c1f7aca2b5b0f255197bc43af45d8c4e",
+      "reviewedCrop": [
+        0,
+        0,
+        1870,
+        841
+      ],
+      "visibleCrop": [
+        84,
+        14,
+        1762,
+        814
+      ],
+      "output": "runs/day58/assets/visual-01-sensory.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1661,
+        792
+      ],
+      "offset": [
+        569,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "三路感觉输入"
+    },
+    {
+      "source": "runs/day58/source/visual-02-static.png",
+      "sourceSize": [
+        1890,
+        832
+      ],
+      "sourceSha256": "2e13f119249c61f9121f06a1227c65ba758a5fa5b0e4d7798fe7a0c792028e93",
+      "reviewedCrop": [
+        0,
+        0,
+        1890,
+        832
+      ],
+      "visibleCrop": [
+        473,
+        7,
+        1663,
+        787
+      ],
+      "output": "runs/day58/assets/visual-02-static.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1190,
+        780
+      ],
+      "offset": [
+        805,
+        60
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "稳定化单腿控制"
+    },
+    {
+      "source": "runs/day58/source/visual-03-dynamic.png",
+      "sourceSize": [
+        1981,
+        793
+      ],
+      "sourceSha256": "70841bf916b97c6b9489893961d010a957e55d55e952a73d7964314fd3df8e6d",
+      "reviewedCrop": [
+        0,
+        0,
+        1981,
+        793
+      ],
+      "visibleCrop": [
+        276,
+        0,
+        1781,
+        746
+      ],
+      "output": "runs/day58/assets/visual-03-dynamic.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1505,
+        746
+      ],
+      "offset": [
+        647,
+        77
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "动作化单腿髋铰链"
+    },
+    {
+      "source": "runs/day58/source/visual-04-progression.png",
+      "sourceSize": [
+        1922,
+        818
+      ],
+      "sourceSha256": "661ffd1a1eae5d38509062d640bb666495d4cdad5fc40b998bb31b69b3b5fd55",
+      "reviewedCrop": [
+        0,
+        0,
+        1922,
+        818
+      ],
+      "visibleCrop": [
+        339,
+        12,
+        1542,
+        761
+      ],
+      "output": "runs/day58/assets/visual-04-progression.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1203,
+        749
+      ],
+      "offset": [
+        798,
+        75
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "单变量进阶与低冲击着地"
+    },
+    {
+      "source": "runs/day58/source/overview-01-sensory.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "6c2624ec6f297d55c445b3cfa7d46f16a8fac4981452f8912a2909172e5d28d9",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        93,
+        52,
+        1373,
+        1030
+      ],
+      "output": "runs/day58/assets/overview-01-sensory.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1280,
+        978
+      ],
+      "offset": [
+        160,
+        111
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day58/source/overview-02-static.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "ffb1805383b27337855837188f000dd7771deca350fc9b43439a38e7b6b8344b",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        131,
+        23,
+        1387,
+        1006
+      ],
+      "output": "runs/day58/assets/overview-02-static.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1256,
+        983
+      ],
+      "offset": [
+        172,
+        108
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day58/source/overview-03-dynamic.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "90d085711d36a89d30fe3b590547babee46230681d30f278f89880dbdde00086",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        54,
+        107,
+        1448,
+        965
+      ],
+      "output": "runs/day58/assets/overview-03-dynamic.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1394,
+        858
+      ],
+      "offset": [
+        103,
+        171
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day58/source/overview-04-progression.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "7f80721a754946851d5e063a614f157786fdc6f0d21b06d2a4907fbe88173a31",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        238,
+        16,
+        1183,
+        1047
+      ],
+      "output": "runs/day58/assets/overview-04-progression.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        945,
+        1031
+      ],
+      "offset": [
+        327,
+        84
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    }
+  ]
+}

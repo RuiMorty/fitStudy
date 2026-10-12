@@ -1,0 +1,26 @@
+{
+  "at": "2026-09-30T09:35:00+08:00",
+  "reviewer": "local visual and alpha QA",
+  "requirements": ["true-alpha", "no-background-or-checkerboard", "wordless", "character-consistency", "single-knowledge-relationship", "safe-equipment-structure"],
+  "accepted": [
+    {"file":"cover-attempt-03.png","use":"cover","record":"runs/day50/retry-cover-20260930/attempt-03-acceptance.json"},
+    {"file":"visual-01-modes.png","use":"modes","review":"三段模式对照完整：步行、单车、划船；一位波吉观察。"},
+    {"file":"visual-02-cross-training.png","use":"cross-training","review":"步行与单车作为前后替换示意，波吉记录总量。"},
+    {"file":"visual-03-heart-rate.png","use":"heart-rate","review":"无文字，以抽象心率线索补充%HRmax与HRR正文解释。"},
+    {"file":"visual-04-rpe-attempt-02.png","use":"rpe","record":"runs/day50/retry-visual-04-20260930/attempt-02-acceptance.json"},
+    {"file":"visual-05-talk-test.png","use":"talk-test","review":"舒适步行和更快坡走的两态对照，无文字气泡。"},
+    {"file":"visual-06-triangulation.png","use":"triangulation","review":"运动表、主观手势与对话泡三条线索会合，无文字。"},
+    {"file":"overview-01-modes.png","use":"overview","review":"跑步机与单车选择清楚。"},
+    {"file":"overview-02-cross-training.png","use":"overview","review":"模式替换和记录关系清楚。"},
+    {"file":"overview-03-heart-rate.png","use":"overview","review":"抽象心率线条与无数字胸带对应。"},
+    {"file":"overview-04-rpe.png","use":"overview","review":"主观努力感与台阶机关系清楚。"},
+    {"file":"overview-05-talk-test.png","use":"overview","review":"完整说话的无字对话泡与步行机对应。"},
+    {"file":"overview-06-triangulation.png","use":"overview","review":"心率、呼吸与用力三线索的汇总关系清楚。"}
+  ],
+  "rejected": [
+    {"file":"cover.png","reason":"首次请求不含alpha。"},
+    {"file":"cover-attempt-02.png","reason":"无alpha且嵌入棋盘格，重复波吉。"},
+    {"file":"visual-04-rpe.png","reason":"虽有alpha，但重复波吉造成构图拥挤。"}
+  ],
+  "result":"13项交付来源已选择，均为真实alpha、无文字；非采纳版本保留在source/与修订目录。"
+}

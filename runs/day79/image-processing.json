@@ -1,0 +1,357 @@
+{
+  "processedAt": "2026-09-30T22:34:43.031998+00:00",
+  "method": "trim near-transparent noise; reviewed crop; uniform scale; transparent margin",
+  "assets": [
+    {
+      "source": "runs/day79/source/cover.png",
+      "sourceSize": [
+        1672,
+        940
+      ],
+      "sourceSha256": "40d1dd2c67be117da1727cea2795bf5b00342eed95b9b45c88f587c862b0e7a6",
+      "reviewedCrop": [
+        0,
+        0,
+        1672,
+        940
+      ],
+      "visibleCrop": [
+        148,
+        24,
+        1526,
+        900
+      ],
+      "output": "runs/day79/assets/cover.png",
+      "size": [
+        1600,
+        900
+      ],
+      "subjectSize": [
+        1246,
+        792
+      ],
+      "offset": [
+        177,
+        54
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "无字封面"
+    },
+    {
+      "source": "runs/day79/source/visual-01-goals.png",
+      "sourceSize": [
+        1881,
+        836
+      ],
+      "sourceSha256": "781bfca61315918d20aaca2a53529f0b1818a90dc96a266aeda215aae52292aa",
+      "reviewedCrop": [
+        0,
+        0,
+        1881,
+        836
+      ],
+      "visibleCrop": [
+        285,
+        22,
+        1614,
+        804
+      ],
+      "output": "runs/day79/assets/visual-01-goals.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1329,
+        782
+      ],
+      "offset": [
+        735,
+        59
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "结果表现过程目标"
+    },
+    {
+      "source": "runs/day79/source/visual-02-smart.png",
+      "sourceSize": [
+        1983,
+        793
+      ],
+      "sourceSha256": "43b5a3b2fc6e5939189c00bf238a59fd1a05bfc6e7b7188ee4274999ba20edfe",
+      "reviewedCrop": [
+        0,
+        0,
+        1983,
+        793
+      ],
+      "visibleCrop": [
+        422,
+        27,
+        1478,
+        775
+      ],
+      "output": "runs/day79/assets/visual-02-smart.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1056,
+        748
+      ],
+      "offset": [
+        872,
+        76
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "SMART与最低版本"
+    },
+    {
+      "source": "runs/day79/source/visual-03-efficacy.png",
+      "sourceSize": [
+        1881,
+        836
+      ],
+      "sourceSha256": "d05b4f75aea2d2aa30213ee0b82a5ca74b5ce33b88a9fdba9ceb064ba751dc67",
+      "reviewedCrop": [
+        0,
+        0,
+        1881,
+        836
+      ],
+      "visibleCrop": [
+        478,
+        15,
+        1603,
+        799
+      ],
+      "output": "runs/day79/assets/visual-03-efficacy.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1125,
+        784
+      ],
+      "offset": [
+        837,
+        58
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "小成功与自我效能"
+    },
+    {
+      "source": "runs/day79/source/visual-04-review.png",
+      "sourceSize": [
+        2212,
+        711
+      ],
+      "sourceSha256": "14c7026663ac5bfc76fcc86afad1e7ccca46989f8d5d5d2bffff8494b7589c62",
+      "reviewedCrop": [
+        0,
+        0,
+        2212,
+        711
+      ],
+      "visibleCrop": [
+        334,
+        0,
+        1698,
+        702
+      ],
+      "output": "runs/day79/assets/visual-04-review.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1364,
+        702
+      ],
+      "offset": [
+        718,
+        99
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "OARS与一周复盘"
+    },
+    {
+      "source": "runs/day79/source/overview-01-goals.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "6ac5a3822e2a1a51e1ee222a7fe32ae9eaee8f4bee04192e976d7d436cc29d46",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        123,
+        25,
+        1341,
+        1040
+      ],
+      "output": "runs/day79/assets/overview-01-goals.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1218,
+        1015
+      ],
+      "offset": [
+        191,
+        92
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day79/source/overview-02-smart.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "acd56d635922997fab465ccb3cc1e6089e901932ccd491d307d20035a46fd3c8",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        116,
+        29,
+        1268,
+        1046
+      ],
+      "output": "runs/day79/assets/overview-02-smart.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1152,
+        1017
+      ],
+      "offset": [
+        224,
+        91
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day79/source/overview-03-efficacy.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "e7660f8c4e38a3015322b96681e5df076e968c045b53af08004cb22462bbb557",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        196,
+        22,
+        1346,
+        985
+      ],
+      "output": "runs/day79/assets/overview-03-efficacy.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1150,
+        963
+      ],
+      "offset": [
+        225,
+        118
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day79/source/overview-04-review.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "d3619ec6f0a1ab55f2f2ea92a6f02a8a1774d5cf14aed5eeef19b9747340594a",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        128,
+        28,
+        1352,
+        1044
+      ],
+      "output": "runs/day79/assets/overview-04-review.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        1224,
+        1016
+      ],
+      "offset": [
+        188,
+        92
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    }
+  ]
+}

@@ -1,0 +1,357 @@
+{
+  "processedAt": "2026-09-30T15:31:55.444046+00:00",
+  "method": "trim near-transparent noise; reviewed crop; uniform scale; transparent margin",
+  "assets": [
+    {
+      "source": "runs/day68/source/cover.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "sourceSha256": "6737f284a570ac5c86ac3d1f5d8a1ce6bcc1253fd4cc28e87ce796f24d2e2d87",
+      "reviewedCrop": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "visibleCrop": [
+        469,
+        127,
+        1257,
+        804
+      ],
+      "output": "runs/day68/assets/cover.png",
+      "size": [
+        1600,
+        900
+      ],
+      "subjectSize": [
+        788,
+        677
+      ],
+      "offset": [
+        406,
+        111
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "无字封面"
+    },
+    {
+      "source": "runs/day68/source/visual-01-foundation.png",
+      "sourceSize": [
+        2210,
+        711
+      ],
+      "sourceSha256": "f8e32d223498aa746551125439fc5dce6a442ae327f012953d1bdadb3db91a43",
+      "reviewedCrop": [
+        0,
+        0,
+        2210,
+        711
+      ],
+      "visibleCrop": [
+        496,
+        47,
+        2046,
+        608
+      ],
+      "output": "runs/day68/assets/visual-01-foundation.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        1550,
+        561
+      ],
+      "offset": [
+        625,
+        169
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "小红书独立知识页，无字"
+    },
+    {
+      "source": "runs/day68/source/visual-02-pre.png",
+      "sourceSize": [
+        2210,
+        711
+      ],
+      "sourceSha256": "432499310c2b9c243642ab86a61bcc43de521e0cf60bd6128fc76e0c8a9d64d7",
+      "reviewedCrop": [
+        0,
+        0,
+        2210,
+        711
+      ],
+      "visibleCrop": [
+        718,
+        41,
+        1643,
+        651
+      ],
+      "output": "runs/day68/assets/visual-02-pre.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        925,
+        610
+      ],
+      "offset": [
+        937,
+        145
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "小红书独立知识页，无字"
+    },
+    {
+      "source": "runs/day68/source/visual-03-during.png",
+      "sourceSize": [
+        2209,
+        712
+      ],
+      "sourceSha256": "d10607db49281d3041351573b5407df7ab12dce95141beb5d792dee8328cfa87",
+      "reviewedCrop": [
+        0,
+        0,
+        2209,
+        712
+      ],
+      "visibleCrop": [
+        835,
+        50,
+        1347,
+        640
+      ],
+      "output": "runs/day68/assets/visual-03-during.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        512,
+        590
+      ],
+      "offset": [
+        1144,
+        155
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "小红书独立知识页，无字"
+    },
+    {
+      "source": "runs/day68/source/visual-04-post.png",
+      "sourceSize": [
+        2209,
+        712
+      ],
+      "sourceSha256": "eb949fee44829c67451cd029590af8b8425b86649e363db1249bb4716de3fc7c",
+      "reviewedCrop": [
+        0,
+        0,
+        2209,
+        712
+      ],
+      "visibleCrop": [
+        715,
+        39,
+        1510,
+        662
+      ],
+      "output": "runs/day68/assets/visual-04-post.png",
+      "size": [
+        2800,
+        900
+      ],
+      "subjectSize": [
+        795,
+        623
+      ],
+      "offset": [
+        1002,
+        138
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "小红书独立知识页，无字"
+    },
+    {
+      "source": "runs/day68/source/overview-01-foundation.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "1f59dd81f5282b08bfcca5778abb64a6ee6945776f8b1ec51e046ac84d4bf6dc",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        387,
+        168,
+        1120,
+        916
+      ],
+      "output": "runs/day68/assets/overview-01-foundation.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        733,
+        748
+      ],
+      "offset": [
+        433,
+        226
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day68/source/overview-02-pre.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "ea55b5c618a0095f28221d578077cddb425ad034e5f6262a8d859635aa34e7cb",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        390,
+        105,
+        1155,
+        896
+      ],
+      "output": "runs/day68/assets/overview-02-pre.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        765,
+        791
+      ],
+      "offset": [
+        417,
+        204
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day68/source/overview-03-during.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "b17dcbe1470ce81dd319c7a17a3ae076a42ce822502ac8f1baf3e5d3dd098b99",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        482,
+        226,
+        1007,
+        868
+      ],
+      "output": "runs/day68/assets/overview-03-during.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        525,
+        642
+      ],
+      "offset": [
+        537,
+        279
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    },
+    {
+      "source": "runs/day68/source/overview-04-post.png",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "a689a7a3dc5de5fe40a5c30bb251e4ffa3e5048536c72083c1cdab8f59ed213e",
+      "reviewedCrop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "visibleCrop": [
+        401,
+        202,
+        1072,
+        883
+      ],
+      "output": "runs/day68/assets/overview-04-post.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "subjectSize": [
+        671,
+        681
+      ],
+      "offset": [
+        464,
+        259
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "allowUpscale": false,
+      "note": "总览专用，不与知识页复用"
+    }
+  ]
+}

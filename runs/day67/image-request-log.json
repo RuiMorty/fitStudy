@@ -1,0 +1,516 @@
+{
+  "schemaVersion": 1,
+  "assets": [
+    {
+      "file": "cover.png",
+      "role": "cover",
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "initial",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T14:02:13.340924Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nWide 16:9 wordless course cover. Exactly one Despa performs a controlled light dumbbell-free squat while exactly one Bojji holds a pencil above a completely blank, unmarked open notebook beside a balanced meal. Explain monitoring training and habits, not chasing a scale. The notebook pages must have no handwriting, lines, glyphs or pseudo-text. No scales, numbers, charts, text or diet branding. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage.",
+          "promptSha256": "ba3cbc836a9e309094681e1bf4b9ce599b8f94a02a66d9601346d13194608308",
+          "assetPrompt": "Wide 16:9 wordless course cover. Exactly one Despa performs a controlled light dumbbell-free squat while exactly one Bojji holds a pencil above a completely blank, unmarked open notebook beside a balanced meal. Explain monitoring training and habits, not chasing a scale. The notebook pages must have no handwriting, lines, glyphs or pseudo-text. No scales, numbers, charts, text or diet branding. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage.",
+          "output": "runs/day67/image-requests/cover-eb86e17540/attempt-01/cover.png",
+          "status": "request-failed",
+          "completedAt": "2026-09-30T14:02:13.426408Z",
+          "returncode": 1,
+          "outputExists": false,
+          "usablePng": false,
+          "errorSummary": "错误: 未找到 API Key。请设置 LINGZHI_API_KEY，或在 macOS 登录钥匙串中保存服务名为 lingzhi-api-key 的密码；不要把 Key 粘贴到 Codex 对话中。"
+        },
+        {
+          "attempt": 2,
+          "kind": "adjusted-retry",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T14:03:35.447074Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nCreate a clean wordless 1600x900 transparent course-cover illustration in the fixed flat 2D Bojji-and-Despa teaching style. Exactly one canonical Despa performs a natural shallow bodyweight squat, fully inside a 10 percent transparent margin. Exactly one canonical Bojji stands nearby holding a pencil over an open notebook whose two pages are completely blank, unruled and unmarked, beside one simple balanced meal plate. One connected calm habit-and-training scene only; no scale, text, numbers, writing, fake glyphs, grid, chart, food label, diet symbol, panel, divider, duplicate figure, crop, room rectangle, shadow or halo.",
+          "promptSha256": "d6bcc617a6f852d1030d37f5cb0adfe239416e184470038768fe7c01e5f6d797",
+          "assetPrompt": "Create a clean wordless 1600x900 transparent course-cover illustration in the fixed flat 2D Bojji-and-Despa teaching style. Exactly one canonical Despa performs a natural shallow bodyweight squat, fully inside a 10 percent transparent margin. Exactly one canonical Bojji stands nearby holding a pencil over an open notebook whose two pages are completely blank, unruled and unmarked, beside one simple balanced meal plate. One connected calm habit-and-training scene only; no scale, text, numbers, writing, fake glyphs, grid, chart, food label, diet symbol, panel, divider, duplicate figure, crop, room rectangle, shadow or halo.",
+          "output": "runs/day67/image-requests/cover-eb86e17540/attempt-02/cover.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T14:04:04.268746Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 871391,
+          "usablePng": true,
+          "sha256": "9ce11a2b10dc589664bb229333be6a37271459b5f74bec2ed3ea8c256c8d7b41"
+        }
+      ],
+      "source": {
+        "path": "runs/day67/source/cover.png",
+        "exists": false
+      },
+      "lastStatus": "generated-pending-quality-review"
+    },
+    {
+      "file": "visual-01-balance.png",
+      "role": "knowledge",
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "initial",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T14:05:21.036251Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nWide 28:9 wordless knowledge illustration. Exactly one Bojji sees two ordinary balanced meal settings on opposite sides, while exactly one Despa calmly performs a light walking warm-up in the center. Explain long-term intake and activity balance without a scale, numbers, food morality, arrows or charts. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage.",
+          "promptSha256": "0c648266f203d0a6c3ba5893b4be838eda8ed75dc51356ab2a99264a30c7356c",
+          "assetPrompt": "Wide 28:9 wordless knowledge illustration. Exactly one Bojji sees two ordinary balanced meal settings on opposite sides, while exactly one Despa calmly performs a light walking warm-up in the center. Explain long-term intake and activity balance without a scale, numbers, food morality, arrows or charts. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage.",
+          "output": "runs/day67/image-requests/visual-01-balance-dc252dcde3/attempt-01/visual-01-balance.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T14:05:53.901646Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 1031911,
+          "usablePng": true,
+          "sha256": "dc99eeced05a8f1936298a6b2ae4c4ab5a4d1cd9dc302984df8e556a34767a7a"
+        },
+        {
+          "attempt": 2,
+          "kind": "adjusted-retry",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T14:08:59.370665Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nCreate a clean wordless 2800x900 28:9 transparent teaching illustration. Show exactly one and only one canonical Bojji, fully inside a 12 percent clean transparent margin, taking a calm everyday walk past one small picnic bench holding one ordinary balanced meal plate. It must be one connected continuous outdoor scene that quietly relates ordinary eating and everyday movement over time; do not show Despa, any other person, a duplicate pose, a separate food pile, two isolated meal groups, a split scene, a panel or a collage. No scale, balance scale, trend line, graph, number, text, arrow, symbol, diet label, shadow, halo, opaque background or colored fringe.",
+          "promptSha256": "ec37dfef685f9bede0e24513cc70629e5e6586f885222871b73fd19628829db8",
+          "assetPrompt": "Create a clean wordless 2800x900 28:9 transparent teaching illustration. Show exactly one and only one canonical Bojji, fully inside a 12 percent clean transparent margin, taking a calm everyday walk past one small picnic bench holding one ordinary balanced meal plate. It must be one connected continuous outdoor scene that quietly relates ordinary eating and everyday movement over time; do not show Despa, any other person, a duplicate pose, a separate food pile, two isolated meal groups, a split scene, a panel or a collage. No scale, balance scale, trend line, graph, number, text, arrow, symbol, diet label, shadow, halo, opaque background or colored fringe.",
+          "output": "runs/day67/image-requests/visual-01-balance-dc252dcde3/attempt-02/visual-01-balance.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T14:09:28.736849Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 1982544,
+          "usablePng": true,
+          "sha256": "11504c809873e15b5424b2333858d93745a864925985087d71f95be22fa68f98"
+        }
+      ],
+      "source": {
+        "path": "runs/day67/source/visual-01-balance.png",
+        "exists": false
+      },
+      "lastStatus": "generated-pending-quality-review"
+    },
+    {
+      "file": "visual-02-tdee.png",
+      "role": "knowledge",
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "initial",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T14:07:03.824340Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nWide 28:9 wordless knowledge illustration. Make one single continuous everyday scene: exactly one Despa carries one plain crate toward a simple meal table, while exactly one Bojji takes an easy walk nearby. Explain that total daily expenditure includes ordinary movement and eating context without a before-after sequence, repeated person, panel or collage. No calculator, formula, labels, arrows, charts or text. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage.",
+          "promptSha256": "f1f38002d32628883f0ab8060844f3b31932248bf3f1ff40e87302de6c5a9224",
+          "assetPrompt": "Wide 28:9 wordless knowledge illustration. Make one single continuous everyday scene: exactly one Despa carries one plain crate toward a simple meal table, while exactly one Bojji takes an easy walk nearby. Explain that total daily expenditure includes ordinary movement and eating context without a before-after sequence, repeated person, panel or collage. No calculator, formula, labels, arrows, charts or text. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage.",
+          "output": "runs/day67/image-requests/visual-02-tdee-c8f66e91da/attempt-01/visual-02-tdee.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T14:07:34.241203Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 1214016,
+          "usablePng": true,
+          "sha256": "26e0d4c284756447a7fa6d1f5671113a51ae32e6398f2e9b7a0961bc0590c1b3"
+        },
+        {
+          "attempt": 2,
+          "kind": "adjusted-retry",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T14:10:49.999639Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nCreate a clean wordless 2800x900 28:9 true-transparent teaching illustration in flat 2D style. Keep every body, table, crate and prop centered fully inside a 12 percent empty transparent margin. Exactly one canonical Despa carries one plain unmarked wooden crate toward one low simple meal table, while exactly one canonical Bojji takes an easy walk beside him: one uninterrupted everyday scene, no before-after sequence, panel, split frame, duplicate person or food collage. Use only fine dark-gray outlines and flat color fills; absolutely no red/yellow/colored fringe, glow, halo, drop shadow, room/floor rectangle or opaque background. No text, number, equation, calculator, arrow, chart, scale, label or symbol.",
+          "promptSha256": "202e66b553aa7f1b2ff2933f0c36ee6f10e189dc6938df11362a4397cae69d5f",
+          "assetPrompt": "Create a clean wordless 2800x900 28:9 true-transparent teaching illustration in flat 2D style. Keep every body, table, crate and prop centered fully inside a 12 percent empty transparent margin. Exactly one canonical Despa carries one plain unmarked wooden crate toward one low simple meal table, while exactly one canonical Bojji takes an easy walk beside him: one uninterrupted everyday scene, no before-after sequence, panel, split frame, duplicate person or food collage. Use only fine dark-gray outlines and flat color fills; absolutely no red/yellow/colored fringe, glow, halo, drop shadow, room/floor rectangle or opaque background. No text, number, equation, calculator, arrow, chart, scale, label or symbol.",
+          "output": "runs/day67/image-requests/visual-02-tdee-c8f66e91da/attempt-02/visual-02-tdee.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T14:11:19.730356Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 819027,
+          "usablePng": true,
+          "sha256": "3f5e82874fed9a1629653150584eca500c050e79dddf90da7ea6466d4e3ef838"
+        },
+        {
+          "attempt": 3,
+          "kind": "adjusted-retry",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T14:13:15.826323Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nCreate a clean wordless 2800x900 28:9 transparent PNG in the fixed flat 2D teaching style. Put a small complete group only in the middle 55 percent of the canvas, leaving at least 18 percent totally empty transparent space on every side. Exactly one fully visible canonical Despa, with his entire blond hair, boots and white collar visible, carries one tiny unmarked crate. Exactly one fully visible canonical Bojji walks beside him. Between them is only one small plain low meal table, all parts fully within the central group. This is one continuous everyday scene, not a before-after, split, panel, collage or duplicated pose. Draw every outline only in clean fine dark gray; no red, yellow, blue or colored rim, chromatic fringe, glow, halo, aura, cast shadow, floor, wall or background shape. No text, number, formula, calculator, arrow, chart, scale, label, icon or symbol.",
+          "promptSha256": "9241a5bd5d9908f3c24d6ba40b3cec0efd14d97b505cca4b2e9e2c9284606bf9",
+          "assetPrompt": "Create a clean wordless 2800x900 28:9 transparent PNG in the fixed flat 2D teaching style. Put a small complete group only in the middle 55 percent of the canvas, leaving at least 18 percent totally empty transparent space on every side. Exactly one fully visible canonical Despa, with his entire blond hair, boots and white collar visible, carries one tiny unmarked crate. Exactly one fully visible canonical Bojji walks beside him. Between them is only one small plain low meal table, all parts fully within the central group. This is one continuous everyday scene, not a before-after, split, panel, collage or duplicated pose. Draw every outline only in clean fine dark gray; no red, yellow, blue or colored rim, chromatic fringe, glow, halo, aura, cast shadow, floor, wall or background shape. No text, number, formula, calculator, arrow, chart, scale, label, icon or symbol.",
+          "output": "runs/day67/image-requests/visual-02-tdee-c8f66e91da/attempt-03/visual-02-tdee.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T14:13:42.247105Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 616373,
+          "usablePng": true,
+          "sha256": "ae1850bce08237980cf5508469268cbd3132fd160afaa564e30e65ebcba6b63c"
+        },
+        {
+          "attempt": 4,
+          "kind": "adjusted-retry",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T14:17:30.242854Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nGenerate a minimalist clean vector-like 2800x900 28:9 RGBA PNG on a fully transparent canvas. Center a small complete scene with 20 percent blank transparent margin. Exactly two figures only: one fully visible canonical Bojji walking at left and one fully visible canonical Despa walking at right carrying one small plain crate; a small round meal table with one ordinary bowl sits between them. Use thin single-pixel charcoal-gray ink contours only, with flat solid fills that end exactly at the charcoal contour. Do not draw any colored outer contour, offset color line, yellow rim, red rim, blue rim, anti-aliased color fringe, glow, aura, shadow, edge light, background, ground or border. No text, symbols, arrows, panels, charts, scale, labels, formulas, repeated pose or collage.",
+          "promptSha256": "649745a08d71ef79850d52e5145ebae38ad7279fd90e71b89ba6cc862f104bc0",
+          "assetPrompt": "Generate a minimalist clean vector-like 2800x900 28:9 RGBA PNG on a fully transparent canvas. Center a small complete scene with 20 percent blank transparent margin. Exactly two figures only: one fully visible canonical Bojji walking at left and one fully visible canonical Despa walking at right carrying one small plain crate; a small round meal table with one ordinary bowl sits between them. Use thin single-pixel charcoal-gray ink contours only, with flat solid fills that end exactly at the charcoal contour. Do not draw any colored outer contour, offset color line, yellow rim, red rim, blue rim, anti-aliased color fringe, glow, aura, shadow, edge light, background, ground or border. No text, symbols, arrows, panels, charts, scale, labels, formulas, repeated pose or collage.",
+          "output": "runs/day67/image-requests/visual-02-tdee-c8f66e91da/attempt-04/visual-02-tdee.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T14:17:53.639763Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 676203,
+          "usablePng": true,
+          "sha256": "e86b8961c84e401ac6e58f15efe352517a3ff37166c0e6a414551a5bed38ba19"
+        }
+      ],
+      "source": {
+        "path": "runs/day67/source/visual-02-tdee.png",
+        "exists": false
+      },
+      "lastStatus": "generated-pending-quality-review"
+    },
+    {
+      "file": "visual-03-preserve.png",
+      "role": "knowledge",
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "initial",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T14:11:56.586845Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nWide 28:9 wordless knowledge illustration. Exactly one Despa performs a controlled light split squat; exactly one Bojji holds a plain balanced meal with rice, tofu and vegetables. Explain preserving training quality and lean tissue through resistance training, food and recovery. No muscular body transformation, scale, text or arrows. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage.",
+          "promptSha256": "459a8ebf1a9e3921805c88522fa564649ce3f7de65554d09137c94a205166d0c",
+          "assetPrompt": "Wide 28:9 wordless knowledge illustration. Exactly one Despa performs a controlled light split squat; exactly one Bojji holds a plain balanced meal with rice, tofu and vegetables. Explain preserving training quality and lean tissue through resistance training, food and recovery. No muscular body transformation, scale, text or arrows. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage.",
+          "output": "runs/day67/image-requests/visual-03-preserve-7727bea20a/attempt-01/visual-03-preserve.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T14:12:22.646322Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 1282848,
+          "usablePng": true,
+          "sha256": "5b86b3f9973b6e59fc4fff2a3e4dbb36857b1ff97ef2a32029cd9fc953a8c9bc"
+        },
+        {
+          "attempt": 2,
+          "kind": "adjusted-retry",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T14:14:32.088654Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nCreate a clean wordless 2800x900 28:9 true-transparent PNG in the fixed flat 2D teaching style. One cohesive continuous scene only, with all elements centered inside an 18 percent empty transparent margin. EXACTLY ONE fully visible canonical Despa performs a controlled bodyweight split squat: upright torso, front knee aligned over mid-foot, rear knee hovering, both boots fully visible. EXACTLY ONE fully visible canonical Bojji stands nearby holding one plain balanced meal plate with rice, tofu and vegetables. Convey recovery only through their calm setting; no bed, sleeping Bojji, moon, stars, thought bubble, duplicate character, separate vignette, panel, collage, text, number, arrow, symbol or muscle-transformation graphic. Every outline must be clean fine dark gray with flat fills only: absolutely no red/yellow/blue/green colored fringe, glow, halo, aura, shadow, floor or opaque background.",
+          "promptSha256": "1bf2b456542c2c1fb3f31fbf52ef8c8f55f4ecf8f19bc64bda5cff9208496bb6",
+          "assetPrompt": "Create a clean wordless 2800x900 28:9 true-transparent PNG in the fixed flat 2D teaching style. One cohesive continuous scene only, with all elements centered inside an 18 percent empty transparent margin. EXACTLY ONE fully visible canonical Despa performs a controlled bodyweight split squat: upright torso, front knee aligned over mid-foot, rear knee hovering, both boots fully visible. EXACTLY ONE fully visible canonical Bojji stands nearby holding one plain balanced meal plate with rice, tofu and vegetables. Convey recovery only through their calm setting; no bed, sleeping Bojji, moon, stars, thought bubble, duplicate character, separate vignette, panel, collage, text, number, arrow, symbol or muscle-transformation graphic. Every outline must be clean fine dark gray with flat fills only: absolutely no red/yellow/blue/green colored fringe, glow, halo, aura, shadow, floor or opaque background.",
+          "output": "runs/day67/image-requests/visual-03-preserve-7727bea20a/attempt-02/visual-03-preserve.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T14:14:54.543815Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 659796,
+          "usablePng": true,
+          "sha256": "35f0c5397727bb0df6e55b0989098f99968a0800996c9d6a6d086738cbb0792b"
+        },
+        {
+          "attempt": 3,
+          "kind": "adjusted-retry",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T14:18:27.348806Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nGenerate a minimalist clean vector-like 2800x900 28:9 RGBA PNG on a fully transparent canvas. Center a small complete group with 20 percent blank transparent margin all around. Exactly one fully visible canonical Despa makes a controlled bodyweight split squat with upright torso, front knee above mid-foot and rear knee hovering; exactly one fully visible canonical Bojji stands beside him holding one plain balanced meal plate. Use thin single-pixel charcoal-gray ink contours only with flat fills ending exactly at the contour. Do not draw a colored outer contour, red/yellow/blue/green rim, anti-aliased color fringe, glow, aura, shadow, edge light, bed, moon, stars, thought bubble, background, ground or border. No extra person or duplicate pose, text, arrow, symbol, medical icon, muscle diagram, split scene, panel or collage.",
+          "promptSha256": "d96b9d9a83b7bf117e02c4aae9cbd74314f357b3c0e37b93f17bd3d7d5977a65",
+          "assetPrompt": "Generate a minimalist clean vector-like 2800x900 28:9 RGBA PNG on a fully transparent canvas. Center a small complete group with 20 percent blank transparent margin all around. Exactly one fully visible canonical Despa makes a controlled bodyweight split squat with upright torso, front knee above mid-foot and rear knee hovering; exactly one fully visible canonical Bojji stands beside him holding one plain balanced meal plate. Use thin single-pixel charcoal-gray ink contours only with flat fills ending exactly at the contour. Do not draw a colored outer contour, red/yellow/blue/green rim, anti-aliased color fringe, glow, aura, shadow, edge light, bed, moon, stars, thought bubble, background, ground or border. No extra person or duplicate pose, text, arrow, symbol, medical icon, muscle diagram, split scene, panel or collage.",
+          "output": "runs/day67/image-requests/visual-03-preserve-7727bea20a/attempt-03/visual-03-preserve.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T14:18:52.462170Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 644545,
+          "usablePng": true,
+          "sha256": "f8e66f2adc821403638f7dd83305cf4921662f6d01f08d02f987a2f6de723cfd"
+        },
+        {
+          "attempt": 4,
+          "kind": "adjusted-retry",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T14:32:41.481261Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\n生成 2800×900、28:9、完全透明 RGBA 的极简扁平教学插画。只保留一个连续场景；仅一个完整 Despa 做受控自重分腿蹲，躯干直立、前膝对准前脚中足、后膝悬空、两只靴子完整可见；仅一个完整 Bojji 在旁端一盘米饭、豆腐和蔬菜。两人和餐盘作为一个整体等比缩小并居中：所有非透明像素距画布上、下、左、右边缘都至少 20%，人物组总高度不超过画布58%，绝不能贴近上下边缘。细单像素深灰轮廓、平涂；轮廓外不许任何彩色描边、光晕、阴影或背景。不要床、月亮、星星、气泡、额外人物、重复姿势、文字、数字、箭头、符号、肌肉变形图、分屏、面板或拼贴。",
+          "promptSha256": "55031cc66b1c97258bdbb3c2f217900f6d72d7c9c0276c2f81c6ea09e2919b81",
+          "assetPrompt": "生成 2800×900、28:9、完全透明 RGBA 的极简扁平教学插画。只保留一个连续场景；仅一个完整 Despa 做受控自重分腿蹲，躯干直立、前膝对准前脚中足、后膝悬空、两只靴子完整可见；仅一个完整 Bojji 在旁端一盘米饭、豆腐和蔬菜。两人和餐盘作为一个整体等比缩小并居中：所有非透明像素距画布上、下、左、右边缘都至少 20%，人物组总高度不超过画布58%，绝不能贴近上下边缘。细单像素深灰轮廓、平涂；轮廓外不许任何彩色描边、光晕、阴影或背景。不要床、月亮、星星、气泡、额外人物、重复姿势、文字、数字、箭头、符号、肌肉变形图、分屏、面板或拼贴。",
+          "output": "runs/day67/image-requests/visual-03-preserve-7727bea20a/attempt-04/visual-03-preserve.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T14:33:07.298218Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 626678,
+          "usablePng": true,
+          "sha256": "4a6ce70de70570cdcc687ed878925cc42706210ff0c647c8e18573fa4252e719"
+        }
+      ],
+      "source": {
+        "path": "runs/day67/source/visual-03-preserve.png",
+        "exists": false
+      },
+      "lastStatus": "generated-pending-quality-review"
+    },
+    {
+      "file": "visual-04-boundary.png",
+      "role": "knowledge",
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "initial",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T14:15:44.778676Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nWide 28:9 wordless knowledge illustration. Exactly one Bojji rests calmly seated with a simple notebook closed; exactly one Despa stands nearby with a supportive open hand, and a balanced meal is on a plain table. Explain small sustainable adjustments and seeking support. No sad drama, medical symbols, scale, text or warning icons. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage.",
+          "promptSha256": "01ab0b22f01cb4921b3aff9b1942763f94ec7e6111828d015bf4ab5b19bc389f",
+          "assetPrompt": "Wide 28:9 wordless knowledge illustration. Exactly one Bojji rests calmly seated with a simple notebook closed; exactly one Despa stands nearby with a supportive open hand, and a balanced meal is on a plain table. Explain small sustainable adjustments and seeking support. No sad drama, medical symbols, scale, text or warning icons. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage.",
+          "output": "runs/day67/image-requests/visual-04-boundary-bab00ccc1c/attempt-01/visual-04-boundary.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T14:16:14.877702Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 899603,
+          "usablePng": true,
+          "sha256": "500483659c1c2046c089bb4b85422c2903c5eedf6fed4b1167d2ae55a7562a0d"
+        },
+        {
+          "attempt": 2,
+          "kind": "adjusted-retry",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T14:19:40.727650Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nGenerate a minimalist clean vector-like 2800x900 28:9 true-transparent PNG. Keep a small complete scene centered with 20 percent completely empty transparent margin on every edge. Exactly one fully visible canonical Bojji sits calmly holding one closed, blank, unmarked notebook; exactly one fully visible canonical Despa kneels at a respectful distance with one open supportive hand; one small low table with one ordinary balanced meal is fully visible between them. One calm continuous health-boundary scene only. Draw only a single thin charcoal-gray ink contour with flat fills ending exactly at that contour: no red/yellow/blue/green colored rim, fringe, glow, halo, aura, shadow, edge light, floor, wall or background. No text, medical symbol, warning icon, pain drama, duplicate character, panel, split scene or collage.",
+          "promptSha256": "7ad2b3a8308d5b3d26526a6878237ae0070290c4f06bf3e097f37327494d793e",
+          "assetPrompt": "Generate a minimalist clean vector-like 2800x900 28:9 true-transparent PNG. Keep a small complete scene centered with 20 percent completely empty transparent margin on every edge. Exactly one fully visible canonical Bojji sits calmly holding one closed, blank, unmarked notebook; exactly one fully visible canonical Despa kneels at a respectful distance with one open supportive hand; one small low table with one ordinary balanced meal is fully visible between them. One calm continuous health-boundary scene only. Draw only a single thin charcoal-gray ink contour with flat fills ending exactly at that contour: no red/yellow/blue/green colored rim, fringe, glow, halo, aura, shadow, edge light, floor, wall or background. No text, medical symbol, warning icon, pain drama, duplicate character, panel, split scene or collage.",
+          "output": "runs/day67/image-requests/visual-04-boundary-bab00ccc1c/attempt-02/visual-04-boundary.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T14:20:06.844561Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 768195,
+          "usablePng": true,
+          "sha256": "30c8c3df41b4d072a18e8823ead2bb086c0a29e53aab34415dee868c92d94f2b"
+        }
+      ],
+      "source": {
+        "path": "runs/day67/source/visual-04-boundary.png",
+        "exists": false
+      },
+      "lastStatus": "generated-pending-quality-review"
+    },
+    {
+      "file": "overview-01-balance.png",
+      "role": "overview-item",
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "initial",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T14:22:05.920363Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nWide 4:3 wordless overview-only illustration. Exactly one Bojji stands beside a balanced plain meal; exactly one Despa performs a relaxed walking warm-up. Explain long-term energy balance without a scale, numbers, labels or charts. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage.",
+          "promptSha256": "b4aa0a229706a121eb285ca2aba8c09664b24730f7b4b1b394a0b74055411466",
+          "assetPrompt": "Wide 4:3 wordless overview-only illustration. Exactly one Bojji stands beside a balanced plain meal; exactly one Despa performs a relaxed walking warm-up. Explain long-term energy balance without a scale, numbers, labels or charts. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage.",
+          "output": "runs/day67/image-requests/overview-01-balance-c4c907bf6d/attempt-01/overview-01-balance.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T14:22:43.531667Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 1190405,
+          "usablePng": true,
+          "sha256": "f5904919eabde7044d024ef0a5f74aba65757c5746473cf7846ec63135fd2329"
+        },
+        {
+          "attempt": 2,
+          "kind": "adjusted-retry",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T14:31:16.638956Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\n生成 1600×1200、4:3、完全透明 RGBA 的极简扁平教学插画。一个连续的户外日常场景中，只出现一个完整 Bojji 和一个完整 Despa：Bojji 平静站在一张小野餐桌旁，桌上只有一盘朴素均衡餐；Despa 在他身旁自然迈步散步，两人都朝向同一方向。画面仅表达日常进食与轻松活动的长期平衡，不呈现昼夜、前后对比或多个时段。两人和小桌作为一个完整小组，居中放置，所有实体色和深灰墨线距四边至少 12%。不要任何额外人物、重复姿势、箭头、天平、数字、图表、时钟、太阳月亮、气泡、分格、拼贴、文字、标签、地面、房间、边框、投影、光晕或棋盘背景。",
+          "promptSha256": "ab234ec20b6ceff4fa0f5aa3e8a45621d04cf224a344b2062e0a2fcbf2613e96",
+          "assetPrompt": "生成 1600×1200、4:3、完全透明 RGBA 的极简扁平教学插画。一个连续的户外日常场景中，只出现一个完整 Bojji 和一个完整 Despa：Bojji 平静站在一张小野餐桌旁，桌上只有一盘朴素均衡餐；Despa 在他身旁自然迈步散步，两人都朝向同一方向。画面仅表达日常进食与轻松活动的长期平衡，不呈现昼夜、前后对比或多个时段。两人和小桌作为一个完整小组，居中放置，所有实体色和深灰墨线距四边至少 12%。不要任何额外人物、重复姿势、箭头、天平、数字、图表、时钟、太阳月亮、气泡、分格、拼贴、文字、标签、地面、房间、边框、投影、光晕或棋盘背景。",
+          "output": "runs/day67/image-requests/overview-01-balance-c4c907bf6d/attempt-02/overview-01-balance.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T14:31:52.719635Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 837001,
+          "usablePng": true,
+          "sha256": "791e29ac14922e4e5d692f8a227b82824f9b802e463d840fe073b86a37f5c261"
+        },
+        {
+          "attempt": 3,
+          "kind": "adjusted-retry",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T14:37:17.697367Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\n生成1600×1200、4:3、无字、完全透明 RGBA 的极简扁平教学插画。一个紧凑、连续的日常场景中，只出现一个完整 Bojji 和一个完整 Despa。Bojji必须双脚直立站在一张小餐桌旁，桌上只有一盘朴素均衡餐；Bojji不能坐、不能跪、不能拿叉子或进食。Despa紧挨在他身旁作轻松自然的散步热身步，两人朝同一方向，人物比例自然且都完整可见。只表达日常进食与轻松活动的长期平衡。所有实体色与深灰轮廓距四边至少12%。不要额外人物、重复姿势、前后对比、昼夜、多个时段、箭头、天平、数字、图表、时钟、文字、标签、地面、房间、边框、投影、光晕、棋盘背景或拼贴。",
+          "promptSha256": "48e8b02a236c120433eb7f51ee9171e4ccce145013b34e8b824ab2808b4fc04f",
+          "assetPrompt": "生成1600×1200、4:3、无字、完全透明 RGBA 的极简扁平教学插画。一个紧凑、连续的日常场景中，只出现一个完整 Bojji 和一个完整 Despa。Bojji必须双脚直立站在一张小餐桌旁，桌上只有一盘朴素均衡餐；Bojji不能坐、不能跪、不能拿叉子或进食。Despa紧挨在他身旁作轻松自然的散步热身步，两人朝同一方向，人物比例自然且都完整可见。只表达日常进食与轻松活动的长期平衡。所有实体色与深灰轮廓距四边至少12%。不要额外人物、重复姿势、前后对比、昼夜、多个时段、箭头、天平、数字、图表、时钟、文字、标签、地面、房间、边框、投影、光晕、棋盘背景或拼贴。",
+          "output": "runs/day67/image-requests/overview-01-balance-c4c907bf6d/attempt-03/overview-01-balance.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T14:37:52.179042Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 871746,
+          "usablePng": true,
+          "sha256": "ff4a300e89aceb00d62ab11e7fb1a5dd95e6d1a28b45ed28f900ead85a46766a"
+        },
+        {
+          "attempt": 4,
+          "kind": "adjusted-retry",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T14:40:02.814227Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\n生成1600×1200、4:3、无字、完全透明 RGBA 的极简扁平教学插画。一个紧凑连续的日常场景中，只出现一个完整 Bojji 和一个完整 Despa。Bojji双脚直立在小餐桌旁，桌上只有一盘朴素均衡餐；不坐、不跪、不拿餐具、不进食。Despa紧挨在Bojji身旁、朝同一方向作轻松散步热身：短小自然步幅，手臂放松摆动，不能高抬腿、奔跑、冲刺、握拳举臂或摆出运动竞技姿势。两人和餐桌构成一个单一小组，只表达日常进食与轻松活动的长期平衡。所有实体色和深灰轮廓距四边至少15%，尤其顶部和底部；不要额外人物、重复姿势、前后对比、昼夜、多时段、箭头、天平、数字、图表、时钟、文字、标签、地面、房间、边框、投影、光晕、棋盘背景或拼贴。",
+          "promptSha256": "92436577f02a4be9a89cd6a959f0b29c58577ed3fbefa00721b513203f02c48a",
+          "assetPrompt": "生成1600×1200、4:3、无字、完全透明 RGBA 的极简扁平教学插画。一个紧凑连续的日常场景中，只出现一个完整 Bojji 和一个完整 Despa。Bojji双脚直立在小餐桌旁，桌上只有一盘朴素均衡餐；不坐、不跪、不拿餐具、不进食。Despa紧挨在Bojji身旁、朝同一方向作轻松散步热身：短小自然步幅，手臂放松摆动，不能高抬腿、奔跑、冲刺、握拳举臂或摆出运动竞技姿势。两人和餐桌构成一个单一小组，只表达日常进食与轻松活动的长期平衡。所有实体色和深灰轮廓距四边至少15%，尤其顶部和底部；不要额外人物、重复姿势、前后对比、昼夜、多时段、箭头、天平、数字、图表、时钟、文字、标签、地面、房间、边框、投影、光晕、棋盘背景或拼贴。",
+          "output": "runs/day67/image-requests/overview-01-balance-c4c907bf6d/attempt-04/overview-01-balance.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T14:40:36.724229Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 782624,
+          "usablePng": true,
+          "sha256": "87c0c42be408cffc9c7170d3c9df656cae0ad3b4aed61d7f7c0dbf8e24b13a11"
+        }
+      ],
+      "source": {
+        "path": "runs/day67/source/overview-01-balance.png",
+        "exists": false
+      },
+      "lastStatus": "generated-pending-quality-review"
+    },
+    {
+      "file": "overview-02-tdee.png",
+      "role": "overview-item",
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "initial",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T14:23:48.906244Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nWide 4:3 wordless overview-only illustration. Exactly one Despa carries a small plain crate while exactly one Bojji takes an easy walk. Explain several daily activity components. No calculator, formula, text or arrows. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage.",
+          "promptSha256": "f4ccf7f08aca6ee8816c7588f00476e1a8cf0ac3d79e268ec0314bef20196400",
+          "assetPrompt": "Wide 4:3 wordless overview-only illustration. Exactly one Despa carries a small plain crate while exactly one Bojji takes an easy walk. Explain several daily activity components. No calculator, formula, text or arrows. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage.",
+          "output": "runs/day67/image-requests/overview-02-tdee-ddde4a2f81/attempt-01/overview-02-tdee.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T14:24:19.586949Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 1274778,
+          "usablePng": true,
+          "sha256": "773f04ab52fc0064d2cabf6109e97af3f399563746a24d9c2f6f3fa6278a0a8f"
+        },
+        {
+          "attempt": 2,
+          "kind": "adjusted-retry",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T14:31:59.296688Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\n生成 1600×1200、4:3、无字、完全透明 RGBA 的极简扁平教学插画。一个连续的日常活动场景中，只出现一个完整 Despa 和一个完整 Bojji：Despa 双手搬着一个没有标记的普通小纸箱，Bojji 在他身旁自然散步；两人、纸箱和一条简单的弯曲小径形成同一时刻的一张画面。两人都是全身完整、彼此不重叠，画面仅有这一位 Despa、这一位 Bojji和一个纸箱。整体居中缩小，所有实体色与深灰轮廓距四边至少 12%。不要气泡、回忆框、嵌套小场景、拼贴、分镜、重复人物、儿童或额外角色、箭头、公式、计算器、数字、文字、标签、图表、地面、房间、边框、投影、光晕或棋盘背景。",
+          "promptSha256": "17e8f88f78b3407d2305f921e3675db63ce4e69d268930fdf141e680e9349e26",
+          "assetPrompt": "生成 1600×1200、4:3、无字、完全透明 RGBA 的极简扁平教学插画。一个连续的日常活动场景中，只出现一个完整 Despa 和一个完整 Bojji：Despa 双手搬着一个没有标记的普通小纸箱，Bojji 在他身旁自然散步；两人、纸箱和一条简单的弯曲小径形成同一时刻的一张画面。两人都是全身完整、彼此不重叠，画面仅有这一位 Despa、这一位 Bojji和一个纸箱。整体居中缩小，所有实体色与深灰轮廓距四边至少 12%。不要气泡、回忆框、嵌套小场景、拼贴、分镜、重复人物、儿童或额外角色、箭头、公式、计算器、数字、文字、标签、图表、地面、房间、边框、投影、光晕或棋盘背景。",
+          "output": "runs/day67/image-requests/overview-02-tdee-ddde4a2f81/attempt-02/overview-02-tdee.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T14:32:29.562850Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 827886,
+          "usablePng": true,
+          "sha256": "e8912acfa64555dca8eda251bed08a7886ea03673766eff30e4d4a4b0aa571b9"
+        }
+      ],
+      "source": {
+        "path": "runs/day67/source/overview-02-tdee.png",
+        "exists": false
+      },
+      "lastStatus": "generated-pending-quality-review"
+    },
+    {
+      "file": "overview-03-preserve.png",
+      "role": "overview-item",
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "initial",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T14:25:29.679474Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nWide 4:3 wordless overview-only illustration. Exactly one Despa performs a controlled light split squat while exactly one Bojji holds a balanced plain meal. Explain performance and recovery. No scale, transformation imagery, labels or text. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage.",
+          "promptSha256": "55be1a96db7a4cf42bc4fd3dfccb46a3a84fd3045e457f3b50eb0b1f0ac16199",
+          "assetPrompt": "Wide 4:3 wordless overview-only illustration. Exactly one Despa performs a controlled light split squat while exactly one Bojji holds a balanced plain meal. Explain performance and recovery. No scale, transformation imagery, labels or text. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage.",
+          "output": "runs/day67/image-requests/overview-03-preserve-eb1fc06aec/attempt-01/overview-03-preserve.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T14:26:05.291883Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 1429691,
+          "usablePng": true,
+          "sha256": "2041a1be54672d4806db327afeb2bd4341cad7621d95a5a7d25e3185b8bb8849"
+        },
+        {
+          "attempt": 2,
+          "kind": "adjusted-retry",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T14:33:28.067718Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\n宽幅 4:3、无字、独立概览插图、真透明 PNG。画面只出现一个 Despa 和一个 Bojji：Despa 在画面中央偏左做徒手、受控的轻度分腿蹲，前后两脚和全身完整可见；Bojji 在中央偏右双手端一盘朴素均衡餐（蔬菜、主食、蛋白），两人朝向彼此、神情平静，构成同一连续的训练后恢复场景。可在两人之间仅放一条折好的无标记毛巾和一个无标记水瓶，借此表达恢复；不要思考泡、云朵、嵌套小图、分格、蒙太奇、重复人物、第二个 Bojji 或 Despa、肌肉/心脏/骨骼/睡眠图标、箭头、量表、变形前后对比、文字或标签。所有人物与道具的可见实体色和墨线均距四边至少12%画布宽高；无地面、房间、边框、投影、光晕或棋盘背景。细深灰轮廓、平涂和轻柔阴影。",
+          "promptSha256": "7c2712561fafb61a97cbd3beb3990dc6cbe51e745eb85a479225516df564e72d",
+          "assetPrompt": "宽幅 4:3、无字、独立概览插图、真透明 PNG。画面只出现一个 Despa 和一个 Bojji：Despa 在画面中央偏左做徒手、受控的轻度分腿蹲，前后两脚和全身完整可见；Bojji 在中央偏右双手端一盘朴素均衡餐（蔬菜、主食、蛋白），两人朝向彼此、神情平静，构成同一连续的训练后恢复场景。可在两人之间仅放一条折好的无标记毛巾和一个无标记水瓶，借此表达恢复；不要思考泡、云朵、嵌套小图、分格、蒙太奇、重复人物、第二个 Bojji 或 Despa、肌肉/心脏/骨骼/睡眠图标、箭头、量表、变形前后对比、文字或标签。所有人物与道具的可见实体色和墨线均距四边至少12%画布宽高；无地面、房间、边框、投影、光晕或棋盘背景。细深灰轮廓、平涂和轻柔阴影。",
+          "output": "runs/day67/image-requests/overview-03-preserve-eb1fc06aec/attempt-02/overview-03-preserve.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T14:34:02.191984Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 839326,
+          "usablePng": true,
+          "sha256": "9a681e20d3c8a6522a5ec930d44162a76a380620fcc4a2cd5fa523db7676334e"
+        }
+      ],
+      "source": {
+        "path": "runs/day67/source/overview-03-preserve.png",
+        "exists": false
+      },
+      "lastStatus": "generated-pending-quality-review"
+    },
+    {
+      "file": "overview-04-boundary.png",
+      "role": "overview-item",
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "initial",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T14:29:58.080852Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nWide 4:3 wordless overview-only illustration. Exactly one Bojji rests calmly with a closed plain notebook while exactly one Despa offers a supportive open hand. Explain sustainable adjustment and support. No medical symbol, warning icon, text or scale. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage.",
+          "promptSha256": "c4373a43581f10ed682d0eb7b552a317d970b16afa544d3452aa268b4004e740",
+          "assetPrompt": "Wide 4:3 wordless overview-only illustration. Exactly one Bojji rests calmly with a closed plain notebook while exactly one Despa offers a supportive open hand. Explain sustainable adjustment and support. No medical symbol, warning icon, text or scale. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage.",
+          "output": "runs/day67/image-requests/overview-04-boundary-c7e04b0201/attempt-01/overview-04-boundary.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T14:30:32.383843Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 1023398,
+          "usablePng": true,
+          "sha256": "1074bfc58b48cc1b3d942f41a1b011db15dae7db297260d43ae97aca8b67eb78"
+        },
+        {
+          "attempt": 2,
+          "kind": "adjusted-retry",
+          "explicitInvocation": true,
+          "requestedAt": "2026-09-30T14:34:10.007471Z",
+          "prompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\n横向4:3、真透明 PNG。将一个完整的小型连续场景居中，所有可见主体（含头发、衣摆、鞋和皇冠）距四边至少12%画布，四周保持完全透明留白；画面主体宽高不超过画布约70%。恰好一名标准 Bojji 平静坐着，双手抱一本闭合、无文字的普通笔记本；恰好一名标准 Despa 在尊重距离外半跪，朝 Bojji 伸出一只支持性的张开手。只表达小步调整与及时支持；无餐桌、医疗或警告符号、体重秤、文字、数字、箭头、重复角色、分格/拼贴。细深灰单线稿、平涂，线条结束处即透明，不能有彩边、光晕、阴影或背景。",
+          "promptSha256": "31a47f784880894e8ff005ee6cc4b46d7b3cb83767beef4f1a1f5b5da0593a6f",
+          "assetPrompt": "横向4:3、真透明 PNG。将一个完整的小型连续场景居中，所有可见主体（含头发、衣摆、鞋和皇冠）距四边至少12%画布，四周保持完全透明留白；画面主体宽高不超过画布约70%。恰好一名标准 Bojji 平静坐着，双手抱一本闭合、无文字的普通笔记本；恰好一名标准 Despa 在尊重距离外半跪，朝 Bojji 伸出一只支持性的张开手。只表达小步调整与及时支持；无餐桌、医疗或警告符号、体重秤、文字、数字、箭头、重复角色、分格/拼贴。细深灰单线稿、平涂，线条结束处即透明，不能有彩边、光晕、阴影或背景。",
+          "output": "runs/day67/image-requests/overview-04-boundary-c7e04b0201/attempt-02/overview-04-boundary.png",
+          "status": "generated-pending-quality-review",
+          "completedAt": "2026-09-30T14:34:40.039115Z",
+          "returncode": 0,
+          "outputExists": true,
+          "bytes": 833840,
+          "usablePng": true,
+          "sha256": "f19a95af78828f6066e349b15d7c7cbe3223264e477d7cdfff57c45d737b390a"
+        }
+      ],
+      "source": {
+        "path": "runs/day67/source/overview-04-boundary.png",
+        "exists": false
+      },
+      "lastStatus": "generated-pending-quality-review"
+    }
+  ],
+  "provider": "Lingzhi",
+  "preset": "quality",
+  "model": "gpt-image-2.5-sunburst",
+  "input": "runs/day67/image-prompts.json",
+  "updatedAt": "2026-09-30T14:40:36.724402Z"
+}

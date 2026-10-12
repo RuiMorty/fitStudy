@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "status": "planning-only-no-generation-request",
+  "day": 76,
+  "lesson": "特殊人群训练：老年、青少年、孕产与慢病",
+  "styleReference": "templates/study/v1/image-style.json",
+  "commonRequirements": [
+    "固定波吉与德斯帕，二维教学画法，细深灰轮廓和平涂；每张仅有这两位角色，不出现患者、医生、儿童群体或孕妇角色。",
+    "输出真实透明PNG，未绘制区域alpha为0；无诊室、病床、地板、健身房背景、边框、影子、棋盘格、水印或品牌。",
+    "AI图内禁止文字、数字、血压表、血糖仪读数、医疗符号、药物、针头、急救图标、箭头、日历或可读文件。",
+    "不使用年龄、怀孕、疾病、体型或残障刻板印象。以坐站、扶持平衡、轻量训练、水杯、普通鞋和空白训练卡表达适配与安全；不做医疗诊断画面。"
+  ],
+  "assets": [
+    {"file": "cover.png", "role": "cover", "targetSize": [1600, 900], "topic": "个体化训练与安全筛查", "teachingRelationship": "能力、症状和训练计划需要一起确认", "composition": "横向16:9，德斯帕站在稳定长凳和无字水杯旁做开放手势，波吉做无负荷坐凳深蹲准备；无医疗设备", "allowedText": "none", "anatomyAndTechniqueConstraints": "长凳稳定，坐凳深蹲膝足对线；不表现疾病或年龄刻板印象。"},
+    {"file": "visual-01-screening.png", "role": "knowledge", "targetSize": [2800, 900], "topic": "训练前筛查与停止规则", "teachingRelationship": "症状和医疗计划决定是否开始与何时停止", "composition": "横向28:9，德斯帕拿合上的空白训练卡，波吉做温和暂停手势并站在长凳旁；无表格和医疗符号", "allowedText": "none", "anatomyAndTechniqueConstraints": "卡片无字，长凳稳定，不画急救或病态姿态。"},
+    {"file": "visual-02-age.png", "role": "knowledge", "targetSize": [2800, 900], "topic": "能力优先的力量与平衡", "teachingRelationship": "坐站、平衡和受监督抗阻可按能力渐进", "composition": "横向28:9，德斯帕做扶持的单脚平衡姿势，波吉做无负荷坐凳深蹲，二人互相以开放手势提示；无年龄标签", "allowedText": "none", "anatomyAndTechniqueConstraints": "平衡时轻扶稳定长凳，坐凳深蹲动作安全；不画跌倒。"},
+    {"file": "visual-03-pregnancy.png", "role": "knowledge", "targetSize": [2800, 900], "topic": "训练调整与症状监测", "teachingRelationship": "活动姿态可按舒适和症状调整，避免一刀切", "composition": "横向28:9，德斯帕做轻松步行姿态，波吉在旁拿无字水杯并做开放手势；一张空白支撑垫放在一侧，不表现孕妇", "allowedText": "none", "anatomyAndTechniqueConstraints": "不把波吉或德斯帕描绘为孕妇；无医疗或产科符号，步行自然。"},
+    {"file": "visual-04-chronic.png", "role": "knowledge", "targetSize": [2800, 900], "topic": "慢病训练的监测与准备", "teachingRelationship": "个人计划、补给和受控呼吸支持更安全的训练", "composition": "横向28:9，德斯帕做轻量坐凳起立，波吉在旁拿无字水杯和一小块无包装食物；无血糖仪和药物", "allowedText": "none", "anatomyAndTechniqueConstraints": "坐凳起立动作安全，食物无文字、无药物暗示，不表现症状。"},
+    {"file": "overview-01-screening.png", "role": "overview-item", "targetSize": [1600, 1200], "topic": "共同筛查", "teachingRelationship": "计划与停止规则先确认", "composition": "4:3总览专用，德斯帕拿合上的空白训练卡，波吉做暂停手势", "allowedText": "none", "anatomyAndTechniqueConstraints": "不与知识页复用；无医疗符号。"},
+    {"file": "overview-02-age.png", "role": "overview-item", "targetSize": [1600, 1200], "topic": "年龄能力", "teachingRelationship": "能力与监督优先于标签", "composition": "4:3总览专用，德斯帕扶长凳做单脚平衡，波吉做无负荷坐凳深蹲", "allowedText": "none", "anatomyAndTechniqueConstraints": "不与知识页复用；动作安全且无年龄刻板印象。"},
+    {"file": "overview-03-pregnancy.png", "role": "overview-item", "targetSize": [1600, 1200], "topic": "孕产调整", "teachingRelationship": "舒适度和症状决定调整", "composition": "4:3总览专用，德斯帕轻松步行，波吉拿无字水杯做开放手势，旁有空白支撑垫", "allowedText": "none", "anatomyAndTechniqueConstraints": "不与知识页复用；不描绘孕妇或医疗场景。"},
+    {"file": "overview-04-chronic.png", "role": "overview-item", "targetSize": [1600, 1200], "topic": "慢病协作", "teachingRelationship": "受控训练和补给准备一起执行", "composition": "4:3总览专用，德斯帕轻量坐凳起立，波吉拿水杯和无包装小食物", "allowedText": "none", "anatomyAndTechniqueConstraints": "不与知识页复用；无血糖仪、药物或读数。"}
+  ]
+}

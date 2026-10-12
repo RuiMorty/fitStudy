@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Day 52 · OPT第1阶段：稳定耐力训练</title><link rel="icon" type="image/svg+xml" href="assets/fitness-study-logo-open-circle.svg?v=a6d8e5caaa61"><style>:root { color-scheme: light; --ink: #111113; --muted: #71717a; --line: #e4e4e7; --accent: #ff5a1f; --green: #0ea66b; --blue: #2563eb; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; font-synthesis: none; letter-spacing: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); overflow-wrap: anywhere; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+img { display: block; max-width: 100%; }
+button:focus-visible, a:focus-visible, summary:focus-visible, input:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
+svg.icon { width: 20px; height: 20px; }
+.icon-button { display: inline-grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 1px solid var(--line); border-radius: 6px; background: white; }
+[hidden] { display: none !important; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
+
+body { background: #f6f8f7; font-size: 14px; line-height: 1.65; }
+main { max-width: 980px; margin: auto; padding: 24px 18px 60px; }
+.header { padding: 22px 4px 14px; }
+h1 { margin: 10px 0 8px; font-size: 36px; line-height: 1.2; }
+h1::before { content: ""; display: block; width: 34px; height: 4px; background: var(--accent); margin-bottom: 10px; }
+h2 { font-size: 17px; margin: 0 0 14px; }
+h3 { font-size: 16px; margin: 0 0 8px; }
+.sub { color: var(--muted); margin: 5px 0 18px; }
+.meta { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { display: inline-block; border: 1px solid var(--line); border-radius: 20px; background: white; color: var(--muted); padding: 3px 10px; font-size: 12px; font-weight: 600; }
+.chip:nth-child(1) { background: #e2f7eb; color: #15803d; border-color: transparent; }
+.chip:nth-child(2) { background: #e7f0fe; color: #2563eb; border-color: transparent; }
+.chip:nth-child(3) { background: #fff2e5; color: #9a4c05; border-color: transparent; }
+.panel, .figure, .warn, .mnemonic { background: white; border: 1px solid #e2e8e4; border-radius: 14px; box-shadow: 0 2px 12px rgba(20,40,30,.06); padding: 20px; margin: 16px 0; }
+.green { border-left: 5px solid var(--green); }
+.orange { border-left: 5px solid #ea7a17; }
+.blue { border-left: 5px solid #0ea5e9; }
+.takeaway { margin: 0; }
+.figure { text-align: center; }
+.figure button { display: block; position: relative; width: 100%; border: 0; padding: 0; background: white; cursor: zoom-in; }
+.figure img { max-height: 760px; width: 100%; object-fit: contain; }
+.figure .icon-button { position: absolute; bottom: 8px; right: 8px; background: #ffffffed; }
+.caption { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
+.kp { list-style: none; padding: 0; margin: 0; }
+.kp > li { border-bottom: 1px dashed #e2e8e4; }
+.kp > li:last-child { border-bottom: 0; }
+.kp summary { cursor: pointer; padding: 13px 8px; font-weight: 650; }
+.kp summary::marker { color: var(--green); }
+.term { color: #0a7d52; background: #e2f7eb; border-radius: 6px; padding: 1px 5px; }
+.kp-body { padding: 2px 14px 16px 24px; }
+.detail-block { margin: 12px 0; }
+.detail-block h4 { font-size: 13px; color: #08744d; margin: 0 0 4px; }
+.detail-block p { margin: 0; white-space: pre-line; }
+.warn { border-left: 5px solid #e23b3b; background: #fffafa; }
+.warn p { margin: 8px 0; }
+.misconception { color: #a82b32; }
+.mnemonic { border-left: 4px solid var(--accent); box-shadow: none; }
+.mnemonic strong { color: #df4716; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+.flip { height: 168px; perspective: 900px; border: 0; background: transparent; padding: 0; text-align: center; }
+.flip-in { display: block; height: 100%; position: relative; transition: transform .45s; transform-style: preserve-3d; }
+.flip[aria-pressed="true"] .flip-in { transform: rotateY(180deg); }
+.face { position: absolute; inset: 0; backface-visibility: hidden; border: 1px solid var(--line); border-radius: 10px; padding: 15px; background: #fafafa; display: flex; align-items: center; justify-content: center; overflow-y: auto; }
+.back { transform: rotateY(180deg); background: #eef9f4; color: #075e40; border-color: #c8eadb; }
+.practice { padding-left: 20px; }
+.practice li { margin: 7px 0; }
+.question { border-top: 1px solid #e2e8e4; padding: 20px 0 8px; margin-top: 12px; min-width: 0; }
+.options { display: grid; gap: 7px; margin: 10px 0; }
+.option { display: flex; gap: 10px; align-items: baseline; border: 1px solid #e2e8e4; background: #f0f4f2; padding: 9px 12px; border-radius: 8px; cursor: pointer; }
+.option input { flex-shrink: 0; accent-color: var(--green); }
+.option:has(input:checked) { border-color: #0ea5e9; background: #e7f6fd; }
+.question[data-result="correct"] .option:has(input:checked) { border-color: #0ea66b; background: #e7f8ef; }
+.question[data-result="wrong"] .option:has(input:checked) { border-color: #e23b3b; background: #fff0f0; }
+.answer { background: #f8fbfa; border-left: 3px solid #0ea5e9; padding: 10px; margin-top: 10px; }
+.check { border: 0; background: #0ea66b; color: white; padding: 9px 14px; border-radius: 7px; }
+footer { color: var(--muted); font-size: 12px; margin-top: 28px; }
+footer ul { padding-left: 20px; }
+dialog { width: min(1200px, 96vw); max-height: 94dvh; padding: 52px 16px 16px; border: 0; border-radius: 8px; background: white; }
+dialog::backdrop { background: #15191dd9; }
+dialog img { width: 100%; max-height: 78dvh; object-fit: contain; }
+dialog .icon-button { position: absolute; top: 8px; right: 10px; }
+@media (max-width: 600px) {
+  main { padding: 16px 12px 40px; }
+  h1 { font-size: 26px; }
+  .header { padding: 16px 4px 12px; }
+  .panel, .figure, .warn, .mnemonic { padding: 15px; }
+  .kp-body { padding-left: 16px; }
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .face { padding: 12px; }
+}
+</style></head><body><main><header class="header"><h1>Day 52 · OPT第1阶段：稳定耐力训练</h1><p class="sub">先建立神经肌肉控制、姿势与核心稳定，再在可控动作中积累耐力。</p><div class="meta"><span class="chip">OPT第1阶段</span><span class="chip">稳定耐力</span><span class="chip">动作控制</span></div></header><section class="panel green"><h2>一句话总结</h2><p class="takeaway">OPT第1阶段的目标是稳定耐力：在可控负荷下建立姿势、核心和关节的神经肌肉控制。常用变量为1—3组、12—25次、约50%—70%1RM、较慢节奏4—2—1与短休息；这些是起点，不是所有人的硬性处方。平衡垫、稳定球或BOSU只是在动作已经稳定后提供的进阶环境。先会稳定地站、呼吸、对齐和完成基础动作，再把不稳定、负荷或复杂度逐步加入。</p></section><figure class="figure"><button data-zoom aria-label="放大详情图"><img class="" src="assets/阶段3 OPT训练模型/day52-OPT第1阶段：稳定耐力训练.png" alt="OPT第1阶段稳定耐力的五个主题中文总览"><span class="icon-button"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 15 6 6" /><path d="m15 9 6-6" /><path d="M21 16v5h-5" /><path d="M21 8V3h-5" /><path d="M3 16v5h5" /><path d="m3 21 6-6" /><path d="M3 8V3h5" /><path d="M9 9 3 3" /></svg></span></button><figcaption class="caption">OPT第1阶段不是用不稳定器械替代基础力量，而是在安全、可控的动作中训练姿势、核心与关节控制。</figcaption></figure><section class="panel"><h2>核心要点</h2><ul class="kp"><li><details><summary><span class="term">稳定耐力：先控制，再承受重复</span>：第1阶段强调在重复动作中保持关节对齐、躯干控制和可预测的节奏，而非追求最大重量或摇晃得越厉害越好。</summary><div class="kp-body"><section class="detail-block"><h4>控制是训练目标</h4><p>稳定耐力需要神经系统在动作中组织关节、躯干与呼吸，使姿势在多次重复后仍可预测。它不是把每个动作都搬到不稳定表面，而是先让基础站姿、髋膝轨迹和躯干位置保持清楚。</p></section><section class="detail-block"><h4>耐力建立在质量上</h4><p>12—25次的范围给了学习和重复的机会，但只有每次都维持控制才有价值。出现代偿、疼痛、明显晃动或呼吸失序时，应先减少难度、缩短次数或改回更稳定的版本。</p></section></div></details></li><li><details><summary><span class="term">变量：慢节奏让你看见控制</span>：常见起点是1—3组、12—25次、约50%—70%1RM、4—2—1节奏和短休息；实际选择须服从技术、经验和恢复。</summary><div class="kp-body"><section class="detail-block"><h4>4—2—1怎样读</h4><p>通常可把4理解为可控离心、2为底部短暂停、1为平稳向心。慢不是拖沓，而是让你有时间感受膝盖、躯干、肩胛和呼吸是否在正确位置。不同动作可依安全与器械调整。</p></section><section class="detail-block"><h4>负荷与次数一起调</h4><p>当12—25次都能保持对齐与节奏，再考虑很小幅度增加阻力或复杂度；不要同时加重量、次数、速度和不稳定性。若节奏被负荷打断，当前阻力对稳定耐力处方就过高。</p></section></div></details></li><li><details><summary><span class="term">进阶：先稳定地面，再改变环境</span>：平衡垫、BOSU和稳定球能提高控制需求，却不能替代基础动作能力；进阶应由完成质量决定。</summary><div class="kp-body"><section class="detail-block"><h4>不稳定不是默认答案</h4><p>稳定地面上的深蹲、髋铰链、推、拉与核心控制尚不稳定时，先在稳定环境练习。过早增加摇晃会降低可用负荷，并可能让膝、腰或肩在代偿中反复练习错误轨迹。</p></section><section class="detail-block"><h4>一次只改一个变量</h4><p>可先减小支撑面、再改变视线或加入轻负荷；每次只改一个变量，才知道难度变化带来了什么。能在既有版本连续多次保持姿势和呼吸后，才进入下一步。</p></section></div></details></li><li><details><summary><span class="term">练习库：动作选择服务于控制</span>：单腿平衡触地、鸟狗、死虫、稳定球练习与BOSU深蹲各自考验不同控制环节，不能只看器械名字判断难度。</summary><div class="kp-body"><section class="detail-block"><h4>单腿与髋膝控制</h4><p>单腿平衡触地可观察足弓、膝盖与骨盆是否协同；可先用墙、轻触点或较小幅度。BOSU深蹲应在稳定地面深蹲轨迹可靠后使用，重点仍是足底压力、膝盖方向和躯干控制。</p></section><section class="detail-block"><h4>核心练习不是憋气比赛</h4><p>鸟狗和死虫训练四肢移动时的躯干控制；稳定球卷腹或飞鸟要求肩带与躯干保持可控。动作范围、阻力和支撑条件都可调整，腰部疼痛或耸肩并不是“核心在发力”的证明。</p></section></div></details></li><li><details><summary><span class="term">编排与检查：让下一组仍然干净</span>：第1阶段用短休息与中低负荷练习可重复的控制；记录动作质量、RPE与局部反应，再决定进阶。</summary><div class="kp-body"><section class="detail-block"><h4>把检查点写进组间</h4><p>每组结束问自己：足底是否稳定、膝盖是否跟随脚尖、肋骨与骨盆是否仍能控制、呼吸是否连续。把这些检查点放在组间，比只数完成次数更能帮助下一组保持质量。</p></section><section class="detail-block"><h4>安全地回退与进阶</h4><p>动作变形、疼痛、头晕、异常气促或无法恢复稳定呼吸时，停止当次版本并回退。连续多次训练都能完成目标次数且技术稳定时，再只增加一个因素：少量阻力、范围、支撑挑战或总组数。</p></section></div></details></li></ul></section><section class="warn"><h2>常见误区</h2><p><strong class="misconception">误区：稳定耐力就是站在越晃的器械上越久越好。</strong><br>辨析：不稳定器械只是可选进阶；基础站姿、对齐、呼吸和动作质量先在安全条件下建立。</p><p><strong class="misconception">误区：4—2—1节奏等于每次都故意拖慢到失去力量。</strong><br>辨析：慢节奏用来观察和控制轨迹；只要姿势与呼吸失控，就应降低阻力、范围或次数。</p><p><strong class="misconception">误区：第1阶段只能做很轻的孤立动作。</strong><br>辨析：可选择基础推、拉、深蹲、髋铰链和核心动作；关键是负荷与环境让控制可重复。</p><p><strong class="misconception">误区：出现晃动或腰酸说明稳定肌练到了，应继续硬撑。</strong><br>辨析：明显代偿、疼痛或失衡是回退信号；应恢复稳定支撑、缩小范围或寻求专业评估。</p></section><section class="mnemonic"><h2>记忆口诀</h2><p><strong>先稳地面，再改环境；慢看轨迹，轻守对齐；质量能重复，才加下一步。</strong></p></section><section class="panel"><h2>翻转卡复习</h2><div class="cards"><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">OPT第1阶段的核心目标？</span><span class="face back" aria-hidden="true">在重复动作中建立姿势、核心与关节的神经肌肉控制和稳定耐力。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">4—2—1节奏可怎样理解？</span><span class="face back" aria-hidden="true">可控离心、底部短暂停、平稳向心；目的在于观察并保持轨迹与呼吸。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">稳定耐力常见的次数范围？</span><span class="face back" aria-hidden="true">常见起点为12—25次；技术、经验和恢复比死守数字更优先。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">何时可考虑BOSU或平衡垫？</span><span class="face back" aria-hidden="true">稳定地面上的基础动作已能持续保持对齐、呼吸和可预测轨迹后。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">单腿平衡触地主要观察什么？</span><span class="face back" aria-hidden="true">足底、膝盖、骨盆和躯干在单腿支撑下能否协同控制。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">鸟狗和死虫训练什么？</span><span class="face back" aria-hidden="true">四肢移动时保持躯干和骨盆控制，而非靠憋气或腰部代偿。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">第1阶段进阶的一条原则？</span><span class="face back" aria-hidden="true">一次只改变一个变量，例如范围、支撑、轻负荷或总组数。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">动作中出现疼痛或明显代偿怎么办？</span><span class="face back" aria-hidden="true">停止当前版本并回退到安全条件，必要时寻求医疗或运动专业人员评估。</span></span></button></div></section><section class="panel orange"><h2>实操关联</h2><ul class="practice"><li>在稳定地面完成一组徒手深蹲：用较慢节奏做12次，记录足底、膝盖、骨盆和呼吸中最先失去控制的环节。</li><li>把单腿平衡触地从扶墙轻触开始；只有骨盆和膝盖保持稳定时，才逐步减少辅助或增加触地方向。</li><li>做鸟狗或死虫时，在每次伸臂伸腿前完成一次平稳呼气；腰部拱起或骨盆旋转时缩小范围。</li><li>为一个推或拉动作写出1—3组、12—25次、可控节奏和短休息的起始处方，并写下一个清楚的回退版本。</li><li>比较稳定地面深蹲与BOSU深蹲：若稳定版本仍有代偿，就不把BOSU作为“更高级”的必做项目。</li></ul></section><section class="panel blue"><h2>练习题</h2><section class="question" data-answers="[1]" data-explanation="稳定耐力先建立可重复的姿势、呼吸与关节控制，挑战应随完成质量递进。"><h3>1. 单选：哪项最符合OPT第1阶段稳定耐力的优先顺序？</h3><div class="options"><label class="option"><input type="radio" name="question-0" value="0"><span>A. 先在最晃的器械上做大重量</span></label><label class="option"><input type="radio" name="question-0" value="1"><span>B. 先保持对齐与呼吸，再逐步增加挑战</span></label><label class="option"><input type="radio" name="question-0" value="2"><span>C. 只追求动作次数越多越好</span></label><label class="option"><input type="radio" name="question-0" value="3"><span>D. 每组都练到动作变形</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[1]" data-explanation="较慢节奏提供感知与纠错时间；若技术失控，应先回退而不是拖更慢。"><h3>2. 单选：4—2—1节奏在第1阶段最主要的作用是？</h3><div class="options"><label class="option"><input type="radio" name="question-1" value="0"><span>A. 让每次训练都极度疲劳</span></label><label class="option"><input type="radio" name="question-1" value="1"><span>B. 使轨迹、对齐与呼吸更容易被观察和控制</span></label><label class="option"><input type="radio" name="question-1" value="2"><span>C. 取消热身</span></label><label class="option"><input type="radio" name="question-1" value="3"><span>D. 替代所有负重训练</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[0,1,3]" data-explanation="进阶应可辨、可回退；多变量叠加或在疼痛中硬撑都会掩盖风险。"><h3>3. 多选：哪些做法符合稳定耐力训练的进阶原则？</h3><div class="options"><label class="option"><input type="checkbox" name="question-2" value="0"><span>A. 在稳定地面先建立可靠轨迹</span></label><label class="option"><input type="checkbox" name="question-2" value="1"><span>B. 连续完成质量稳定后只改一个变量</span></label><label class="option"><input type="checkbox" name="question-2" value="2"><span>C. 同时增加重量、速度和不稳定性</span></label><label class="option"><input type="checkbox" name="question-2" value="3"><span>D. 用动作质量与局部反应决定是否进阶</span></label><label class="option"><input type="checkbox" name="question-2" value="4"><span>E. 疼痛时坚持完成规定次数</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[0,1,2,4]" data-explanation="检查点帮助判断控制质量；时间本身不足以说明轨迹或安全性。"><h3>4. 多选：单腿平衡触地或BOSU深蹲时，哪些是有用检查点？</h3><div class="options"><label class="option"><input type="checkbox" name="question-3" value="0"><span>A. 足底是否稳定受力</span></label><label class="option"><input type="checkbox" name="question-3" value="1"><span>B. 膝盖是否大致跟随脚尖方向</span></label><label class="option"><input type="checkbox" name="question-3" value="2"><span>C. 骨盆与躯干是否明显失控</span></label><label class="option"><input type="checkbox" name="question-3" value="3"><span>D. 只看能否站得更久</span></label><label class="option"><input type="checkbox" name="question-3" value="4"><span>E. 呼吸能否连续</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[1]" data-explanation="基础轨迹尚不可靠时，增加不稳定性会放大代偿；先回到可控制版本。"><h3>5. 案例：小周在稳定地面深蹲时膝盖内扣、呼吸憋住，却想直接改成BOSU深蹲。更合理的是？</h3><div class="options"><label class="option"><input type="radio" name="question-4" value="0"><span>A. 直接上BOSU，用更多晃动激活稳定肌</span></label><label class="option"><input type="radio" name="question-4" value="1"><span>B. 先在稳定地面缩小范围或降低负荷，练清楚对齐与呼吸</span></label><label class="option"><input type="radio" name="question-4" value="2"><span>C. 加大重量让身体自动适应</span></label><label class="option"><input type="radio" name="question-4" value="3"><span>D. 忽略膝盖，只完成次数</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[1]" data-explanation="核心练习的目标是四肢移动时保持躯干控制；代偿出现就应降低当前难度。"><h3>6. 案例：小林鸟狗做第8次时腰部开始拱起、骨盆旋转。下一步应怎样处理？</h3><div class="options"><label class="option"><input type="radio" name="question-5" value="0"><span>A. 继续伸得更远</span></label><label class="option"><input type="radio" name="question-5" value="1"><span>B. 缩小伸展范围或减少次数，恢复躯干控制</span></label><label class="option"><input type="radio" name="question-5" value="2"><span>C. 憋气固定腰部</span></label><label class="option"><input type="radio" name="question-5" value="3"><span>D. 加穿负重背心</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section></section><footer>Day 52/77 · NASM<ul><li>NASM：Optimum Performance Training Model，Phase 1 Stabilization Endurance 的目标、变量与动作进阶框架。</li><li>NASM：Essentials of Personal Fitness Training，稳定耐力、核心与平衡训练相关章节。</li><li>ACSM：ACSM&#39;s Guidelines for Exercise Testing and Prescription，第11版，力量训练进阶和风险识别原则。</li><li>本课为一般健身教育；持续疼痛、眩晕、异常气促、近期受伤或疾病恢复期，请停止训练并咨询医疗或运动专业人员。</li></ul></footer></main><dialog aria-label="详情大图"><button class="icon-button" aria-label="关闭大图" title="关闭大图"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></button><img alt=""></dialog><script>document.querySelectorAll('.flip').forEach((button) => {
+  button.addEventListener('click', () => {
+    const pressed = button.getAttribute('aria-pressed') !== 'true';
+    button.setAttribute('aria-pressed', String(pressed));
+    button.querySelector('.front').setAttribute('aria-hidden', String(pressed));
+    button.querySelector('.back').setAttribute('aria-hidden', String(!pressed));
+  });
+});
+document.querySelectorAll('.question').forEach((question) => {
+  question.querySelector('.check').addEventListener('click', () => {
+    const selected = [...question.querySelectorAll('input:checked')].map((input) => Number(input.value)).sort();
+    const answer = question.querySelector('.answer');
+    answer.hidden = false;
+    if (!selected.length) { answer.textContent = '请先选择答案。'; delete question.dataset.result; return; }
+    const correct = JSON.stringify(selected) === JSON.stringify(JSON.parse(question.dataset.answers).sort());
+    question.dataset.result = correct ? 'correct' : 'wrong';
+    answer.textContent = `${correct ? '回答正确。' : '再想一想。'}${question.dataset.explanation}`;
+  });
+});
+const imageDialog = document.querySelector('dialog');
+document.querySelectorAll('[data-zoom]').forEach((button) => {
+  button.addEventListener('click', () => {
+    const original = button.querySelector('img');
+    const image = imageDialog.querySelector('img');
+    image.src = original.src;
+    image.alt = original.alt;
+    imageDialog.showModal();
+  });
+});
+imageDialog.querySelector('button').addEventListener('click', () => imageDialog.close());
+imageDialog.addEventListener('click', (event) => {
+  const rect = imageDialog.getBoundingClientRect();
+  if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) imageDialog.close();
+});
+</script></body></html>

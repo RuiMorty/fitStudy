@@ -1,0 +1,38 @@
+{
+  "at": "2026-09-30T16:13:00+08:00",
+  "reviewer": "local visual and alpha QA",
+  "requirements": [
+    "true-alpha",
+    "no-background-or-checkerboard",
+    "wordless",
+    "character-consistency",
+    "single-knowledge-relationship",
+    "independent-overview-art"
+  ],
+  "technicalChecks": {
+    "checkedWith": ["sips hasAlpha", "individual native visual inspection"],
+    "result": "9个PNG均为非空透明PNG，sips均报告hasAlpha: yes；逐图未见白底、灰底、棋盘格、可读文字或无关素材。"
+  },
+  "accepted": [
+    {"file":"cover.png","use":"封面","review":"单腿站立、可靠扶手和波吉的轻抬腿关系清楚，无文字。"},
+    {"file":"visual-01-sensory.png","use":"三路感觉输入","review":"波吉单腿站、远处无字目标和德斯帕的安全观察关系清楚。"},
+    {"file":"visual-02-static.png","use":"稳定化平衡","review":"单腿站立、足膝骨盆控制和扶手支撑环境清楚。"},
+    {"file":"visual-03-dynamic.png","use":"动作化平衡","review":"轻支撑单腿髋铰链的躯干、髋和后腿关系清楚。"},
+    {"file":"visual-04-progression.png","use":"低台阶下台","review":"重试后为单一德斯帕下台瞬间，前足落地、后足留在低台阶，未见重复人物。"},
+    {"file":"overview-01-sensory.png","use":"总览专用","review":"独立绘制的单腿控制画面，不复用知识页。"},
+    {"file":"overview-02-static.png","use":"总览专用","review":"独立绘制的扶手旁单腿站立，不复用知识页。"},
+    {"file":"overview-03-dynamic.png","use":"总览专用","review":"独立绘制的轻支撑髋铰链，不复用知识页。"},
+    {"file":"overview-04-progression.png","use":"总览专用","review":"独立绘制的低台阶下台，不复用知识页。"}
+  ],
+  "rejected": [
+    {
+      "file":"visual-04-progression.png",
+      "attempt":1,
+      "source":"runs/day58/rejected/visual-04-progression-attempt-01-duplicate-figure.png",
+      "reason":"同一德斯帕出现两个重复姿势，不符合知识页单人物动作图要求。",
+      "retry":"runs/day58/retry-visual-04-progression-20260930/result.json"
+    }
+  ],
+  "retriesUsed": 1,
+  "result":"9项可用来源均已通过本地素材审核；仅visual-04在保留首轮来源后使用一次调整提示词重试并通过。"
+}

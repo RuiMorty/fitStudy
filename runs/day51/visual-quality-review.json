@@ -1,0 +1,39 @@
+{
+  "at": "2026-09-30T09:59:47+08:00",
+  "reviewer": "local visual and alpha QA",
+  "requirements": [
+    "true-alpha",
+    "no-background-or-checkerboard",
+    "wordless",
+    "character-consistency",
+    "single-knowledge-relationship",
+    "safe-equipment-structure",
+    "independent-overview-art"
+  ],
+  "technicalChecks": {
+    "checkedWith": [
+      "sips hasAlpha",
+      "scripts/study-image-bounds.py",
+      "local contact-sheet and native-size visual review"
+    ],
+    "result": "13 个源 PNG 都有透明通道且 alpha 可见边界非空；没有白底、灰底或棋盘格。"
+  },
+  "accepted": [
+    {"file":"cover.png","use":"cover","review":"一位德斯帕在椭圆跑道上放松跑，一位波吉在旁观察；无文字、无额外人物。"},
+    {"file":"visual-01-lsd.png","use":"持续训练","review":"稳定跑步与同行观察关系清楚，长路径只作连续节奏线索。"},
+    {"file":"visual-02-intervals.png","use":"间歇训练","review":"两台完整单车分别呈现工作与恢复，波吉居中提示切换；没有数字或计时器。"},
+    {"file":"visual-03-fartlek.png","use":"法特莱克","review":"同一路径上的舒适慢跑与稍快跑形成可辨对照；波吉和锥桶未遮挡动作。"},
+    {"file":"visual-04-repetition.png","use":"重复训练","review":"一位德斯帕完成短距离快跑，另一位站立恢复，波吉的暂停手势表达充分恢复。"},
+    {"file":"visual-05-distribution.png","use":"强度分布","review":"蓝、绿、橙三种无标签大小块与单车恢复场景对应全周强度分配；不是带数字的图表。"},
+    {"file":"visual-06-selection.png","use":"方法选择","review":"单车、跑步机和路径三种安全选项完整，德斯帕与波吉通过无字目标线索比较选择。"},
+    {"file":"overview-01-lsd.png","use":"总览专用","review":"独立绘制的稳定慢跑概览图，未复用知识页源图。"},
+    {"file":"overview-02-intervals.png","use":"总览专用","review":"单车工作与暂停手势清楚，双色圆仅作无字节奏提示。"},
+    {"file":"overview-03-fartlek.png","use":"总览专用","review":"路径、锥桶与有意变速的跑姿对应，单独构图。"},
+    {"file":"overview-04-repetition.png","use":"总览专用","review":"恢复姿势与暂停手势清楚，单独构图。"},
+    {"file":"overview-05-distribution.png","use":"总览专用","review":"三档无标签色块的相对大小清晰，单独构图。"},
+    {"file":"overview-06-selection.png","use":"总览专用","review":"单车和路径选项与两位角色的讨论关系清楚，单独构图。"}
+  ],
+  "rejected": [],
+  "retriesUsed": 0,
+  "result": "13 项首轮来源全部通过本地素材审核；没有触发重试。"
+}

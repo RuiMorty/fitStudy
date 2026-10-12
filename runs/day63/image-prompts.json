@@ -1,0 +1,50 @@
+{
+  "commonPrompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.",
+  "assets": [
+    {
+      "file": "cover.png",
+      "role": "cover",
+      "prompt": "Wide 16:9 wordless course cover. Exactly one Despa performs a light dumbbell-free row rehearsal with stable posture; exactly one Bojji arranges a plain plate with egg, tofu, beans and rice. Explain protein in training recovery through food, not supplements. No labels, powder tubs, text or brand packages. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    },
+    {
+      "file": "visual-01-eaa.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Bojji holds a plain bowl with tofu and beans; exactly one Despa holds a simple egg and a small fish on a plate, both calm. Explain varied protein sources and essential amino acids without molecular symbols, labels, arrows or supplement imagery. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    },
+    {
+      "file": "visual-02-total.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Despa performs a controlled bodyweight split squat; exactly one Bojji sets out three small plain meals with visible protein foods across the width. Explain matching total food intake to training rather than one giant serving. No meal labels, numbers, clocks or text. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    },
+    {
+      "file": "visual-03-distribution.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Bojji prepares a small breakfast plate with yogurt and oats; exactly one Despa finishes a light training pose beside a simple rice-and-egg meal. Explain regular meal distribution and recovery meal context. No protein shaker, clock, labels or text. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    },
+    {
+      "file": "visual-04-sources.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Despa holds a plate with fish and egg; exactly one Bojji holds a plate with tofu, beans and grains. Explain animal and plant protein diversity, not a competition between them. No packaging, arrows, text or logos. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    },
+    {
+      "file": "overview-01-eaa.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Bojji holds tofu and beans on a plain plate; exactly one Despa holds an egg. Explain varied essential amino acid sources. No labels, molecule icons or text. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    },
+    {
+      "file": "overview-02-total.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Despa performs a calm bodyweight split squat; exactly one Bojji holds a balanced plain meal. Explain total intake matched to training. No numbers or text. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    },
+    {
+      "file": "overview-03-distribution.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Bojji sets a simple breakfast plate; exactly one Despa holds a simple post-training meal. Explain regular distribution. No clock, shaker, labels or text. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    },
+    {
+      "file": "overview-04-sources.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Despa holds a fish-and-egg plate while exactly one Bojji holds tofu-and-bean plate. Explain food-source diversity. No text, package or arrows. This is an independent asset for this exact lesson slot; do not reuse another scene or make a collage."
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Day 78 · 行为改变理论模型</title><link rel="icon" type="image/svg+xml" href="assets/fitness-study-logo-open-circle.svg?v=a6d8e5caaa61"><style>:root { color-scheme: light; --ink: #111113; --muted: #71717a; --line: #e4e4e7; --accent: #ff5a1f; --green: #0ea66b; --blue: #2563eb; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; font-synthesis: none; letter-spacing: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); overflow-wrap: anywhere; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+img { display: block; max-width: 100%; }
+button:focus-visible, a:focus-visible, summary:focus-visible, input:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
+svg.icon { width: 20px; height: 20px; }
+.icon-button { display: inline-grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 1px solid var(--line); border-radius: 6px; background: white; }
+[hidden] { display: none !important; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
+
+body { background: #f6f8f7; font-size: 14px; line-height: 1.65; }
+main { max-width: 980px; margin: auto; padding: 24px 18px 60px; }
+.header { padding: 22px 4px 14px; }
+h1 { margin: 10px 0 8px; font-size: 36px; line-height: 1.2; }
+h1::before { content: ""; display: block; width: 34px; height: 4px; background: var(--accent); margin-bottom: 10px; }
+h2 { font-size: 17px; margin: 0 0 14px; }
+h3 { font-size: 16px; margin: 0 0 8px; }
+.sub { color: var(--muted); margin: 5px 0 18px; }
+.meta { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { display: inline-block; border: 1px solid var(--line); border-radius: 20px; background: white; color: var(--muted); padding: 3px 10px; font-size: 12px; font-weight: 600; }
+.chip:nth-child(1) { background: #e2f7eb; color: #15803d; border-color: transparent; }
+.chip:nth-child(2) { background: #e7f0fe; color: #2563eb; border-color: transparent; }
+.chip:nth-child(3) { background: #fff2e5; color: #9a4c05; border-color: transparent; }
+.panel, .figure, .warn, .mnemonic { background: white; border: 1px solid #e2e8e4; border-radius: 14px; box-shadow: 0 2px 12px rgba(20,40,30,.06); padding: 20px; margin: 16px 0; }
+.green { border-left: 5px solid var(--green); }
+.orange { border-left: 5px solid #ea7a17; }
+.blue { border-left: 5px solid #0ea5e9; }
+.takeaway { margin: 0; }
+.figure { text-align: center; }
+.figure button { display: block; position: relative; width: 100%; border: 0; padding: 0; background: white; cursor: zoom-in; }
+.figure img { max-height: 760px; width: 100%; object-fit: contain; }
+.figure .icon-button { position: absolute; bottom: 8px; right: 8px; background: #ffffffed; }
+.caption { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
+.kp { list-style: none; padding: 0; margin: 0; }
+.kp > li { border-bottom: 1px dashed #e2e8e4; }
+.kp > li:last-child { border-bottom: 0; }
+.kp summary { cursor: pointer; padding: 13px 8px; font-weight: 650; }
+.kp summary::marker { color: var(--green); }
+.term { color: #0a7d52; background: #e2f7eb; border-radius: 6px; padding: 1px 5px; }
+.kp-body { padding: 2px 14px 16px 24px; }
+.detail-block { margin: 12px 0; }
+.detail-block h4 { font-size: 13px; color: #08744d; margin: 0 0 4px; }
+.detail-block p { margin: 0; white-space: pre-line; }
+.warn { border-left: 5px solid #e23b3b; background: #fffafa; }
+.warn p { margin: 8px 0; }
+.misconception { color: #a82b32; }
+.mnemonic { border-left: 4px solid var(--accent); box-shadow: none; }
+.mnemonic strong { color: #df4716; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+.flip { height: 168px; perspective: 900px; border: 0; background: transparent; padding: 0; text-align: center; }
+.flip-in { display: block; height: 100%; position: relative; transition: transform .45s; transform-style: preserve-3d; }
+.flip[aria-pressed="true"] .flip-in { transform: rotateY(180deg); }
+.face { position: absolute; inset: 0; backface-visibility: hidden; border: 1px solid var(--line); border-radius: 10px; padding: 15px; background: #fafafa; display: flex; align-items: center; justify-content: center; overflow-y: auto; }
+.back { transform: rotateY(180deg); background: #eef9f4; color: #075e40; border-color: #c8eadb; }
+.practice { padding-left: 20px; }
+.practice li { margin: 7px 0; }
+.question { border-top: 1px solid #e2e8e4; padding: 20px 0 8px; margin-top: 12px; min-width: 0; }
+.options { display: grid; gap: 7px; margin: 10px 0; }
+.option { display: flex; gap: 10px; align-items: baseline; border: 1px solid #e2e8e4; background: #f0f4f2; padding: 9px 12px; border-radius: 8px; cursor: pointer; }
+.option input { flex-shrink: 0; accent-color: var(--green); }
+.option:has(input:checked) { border-color: #0ea5e9; background: #e7f6fd; }
+.question[data-result="correct"] .option:has(input:checked) { border-color: #0ea66b; background: #e7f8ef; }
+.question[data-result="wrong"] .option:has(input:checked) { border-color: #e23b3b; background: #fff0f0; }
+.answer { background: #f8fbfa; border-left: 3px solid #0ea5e9; padding: 10px; margin-top: 10px; }
+.check { border: 0; background: #0ea66b; color: white; padding: 9px 14px; border-radius: 7px; }
+footer { color: var(--muted); font-size: 12px; margin-top: 28px; }
+footer ul { padding-left: 20px; }
+dialog { width: min(1200px, 96vw); max-height: 94dvh; padding: 52px 16px 16px; border: 0; border-radius: 8px; background: white; }
+dialog::backdrop { background: #15191dd9; }
+dialog img { width: 100%; max-height: 78dvh; object-fit: contain; }
+dialog .icon-button { position: absolute; top: 8px; right: 10px; }
+@media (max-width: 600px) {
+  main { padding: 16px 12px 40px; }
+  h1 { font-size: 26px; }
+  .header { padding: 16px 4px 12px; }
+  .panel, .figure, .warn, .mnemonic { padding: 15px; }
+  .kp-body { padding-left: 16px; }
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .face { padding: 12px; }
+}
+</style></head><body><main><header class="header"><h1>Day 78 · 行为改变理论模型</h1><p class="sub">先理解改变所处位置，再给一个愿意做、做得到的支持。</p><div class="meta"><span class="chip">改变阶段</span><span class="chip">内在动机</span><span class="chip">复发复盘</span></div></header><section class="panel green"><h2>一句话总结</h2><p class="takeaway">行为改变不是一句劝告就会发生。TTM 帮助识别一个人正在考虑、准备、行动、维持或从中断中恢复的哪个位置；健康信念模型提示我们同时听见风险、收益与现实障碍；自我决定理论提醒教练保护自主、胜任和关联。最合适的支持是匹配当前阶段的一小步，并把中断当作可复盘、可恢复的信息。进食障碍、明显心理困扰、成瘾或自伤风险不属于一般教练干预范围，应停止普通行为建议并转介。</p></section><figure class="figure"><button data-zoom aria-label="放大详情图"><img class="" src="assets/阶段6 行为改变与评估/day78-行为改变理论模型.png" alt="行为改变理论模型四主题中文总览"><span class="icon-button"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 15 6 6" /><path d="m15 9 6-6" /><path d="M21 16v5h-5" /><path d="M21 8V3h-5" /><path d="M3 16v5h5" /><path d="m3 21 6-6" /><path d="M3 8V3h5" /><path d="M9 9 3 3" /></svg></span></button><figcaption class="caption">行为理论用于理解对话和设计低门槛支持，不用于给人下诊断或强迫改变。</figcaption></figure><section class="panel"><h2>核心要点</h2><ul class="kp"><li><details><summary><span class="term">先定位改变阶段，不催同一速度</span>：前意向、意向、准备、行动、维持与复发描述的是当前决策位置，不是给人贴好坏标签。</summary><div class="kp-body"><section class="detail-block"><h4>阶段用于听见起点</h4><p>前意向阶段可能还看不到改变必要；意向阶段在权衡；准备阶段已在找办法；行动和维持阶段需要落实与调整；复发或中断则需要恢复而不是羞耻。阶段会随情境来回变化，教练可用开放提问了解当下想法，而不是替对方宣布“你该准备好了”。</p></section><section class="detail-block"><h4>支持要匹配位置</h4><p>还在权衡时，先询问最在意的生活影响和现实障碍；已准备时，协助选一个能立刻尝试的小行动；正在行动时，记录什么有效并减少摩擦；维持或中断后，回顾触发条件和已有资源。不要把高强度训练、严格饮食或长期承诺硬塞给尚未准备的人。</p></section></div></details></li><li><details><summary><span class="term">健康信念：同时看风险、收益与障碍</span>：感知风险和收益会影响意愿，但时间、疼痛担忧、费用、场地和支持等实际障碍同样重要。</summary><div class="kp-body"><section class="detail-block"><h4>不靠恐吓推动</h4><p>健康信念模型可帮助讨论一个人如何理解风险、预期收益、行动障碍、行动线索和自我效能。风险信息应准确、适量并允许对方表达感受；夸大后果、羞辱身材或以疾病恐惧施压，既不尊重人，也常损害长期信任。</p></section><section class="detail-block"><h4>把障碍变成可设计条件</h4><p>若障碍是下班太晚、器械距离远、照护责任或担心疼痛，先具体化它发生在何时何处，再一起寻找低风险替代，例如十分钟步行、家中可做的轻量活动、预约合适时段或咨询专业人员。教练不能承诺治疗效果，也不应替代医疗筛查。</p></section></div></details></li><li><details><summary><span class="term">自我决定：自主、胜任、关联</span>：更可持续的动机来自能选择、能学会、被尊重和被支持，而不是被外部压力推着做。</summary><div class="kp-body"><section class="detail-block"><h4>自主不是放任</h4><p>自主是让受训者理解选择、表达偏好并保留拒绝权。教练可说明不同方案的可能收益、风险与投入，再询问“你觉得哪一个更能放进生活？”而不是用命令、羞耻或体重数字规定唯一正确答案。</p></section><section class="detail-block"><h4>胜任与关联要可感受</h4><p>胜任感来自足够小、能完成并看得见进步的任务；关联感来自被认真倾听、被允许提问和有可靠支持。给清楚示范、肯定具体努力、邀请同伴或家人支持都可以帮助，但表扬应真实，不能把依从当成获得尊重的条件。</p></section></div></details></li><li><details><summary><span class="term">把中断写成恢复计划的信息</span>：行动被打断很常见；复盘情境、资源和下一步，比把一次中断解释成失败更有用。</summary><div class="kp-body"><section class="detail-block"><h4>分清触发和评价</h4><p>可回看中断发生前的睡眠、工作、旅行、疼痛、情绪和环境变化，区分哪些是可调整条件、哪些需要专业帮助。记录不是为了找借口或追责，而是让下次更早识别风险信号；涉及进食、创伤、成瘾或显著情绪困扰时，应暂停一般教练处理并转介。</p></section><section class="detail-block"><h4>恢复动作要足够小</h4><p>恢复计划可以是一项低门槛动作、一个联系支持者的方式和一次复查日期，例如恢复两次短散步并在周末回顾。先重新建立可完成感，再讨论是否增加训练；“补偿性加练”或极端限制往往提高受伤、厌恶和再次中断风险。</p></section></div></details></li></ul></section><section class="warn"><h2>常见误区</h2><p><strong class="misconception">误区：一旦判断了改变阶段，教练就可以要求对方按同一速度完成计划。</strong><br>辨析：阶段描述的是当前决策位置，会随情境来回变化；先用开放问题了解准备程度和障碍，再匹配支持。</p><p><strong class="misconception">误区：只要把健康风险讲得足够吓人，对方就会立刻改变。</strong><br>辨析：风险只是一个因素；应同时理解收益、现实障碍、准备程度和支持条件，避免恐吓或羞辱。</p><p><strong class="misconception">误区：教练给出最专业的计划，客户就不需要选择。</strong><br>辨析：可持续行为需要自主、胜任和关联；方案应提供清楚选项，并由客户参与决定。</p><p><strong class="misconception">误区：复发说明这个人没有自律，以后应该加码监督。</strong><br>辨析：中断是可复盘的信息；先看情境、资源和可恢复的下一步，再决定是否调整支持。</p></section><section class="mnemonic"><h2>记忆口诀</h2><p><strong>先问阶段和障碍，再给自主小一步；中断不是定论，复盘后再恢复。</strong></p></section><section class="panel"><h2>翻转卡复习</h2><div class="cards"><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">TTM 的作用是什么？</span><span class="face back" aria-hidden="true">帮助识别改变所处位置，并匹配合适的对话和支持。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">健康信念模型会看什么？</span><span class="face back" aria-hidden="true">感知风险、收益、障碍、行动线索与自我效能。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">自我决定理论的三项需要？</span><span class="face back" aria-hidden="true">自主、胜任和关联。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">自主支持是什么意思？</span><span class="face back" aria-hidden="true">说明选项并尊重选择、偏好和拒绝权，不用强迫推动。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">复发或中断应先做什么？</span><span class="face back" aria-hidden="true">复盘情境与资源，设计一个可恢复的小行动。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">何时不应继续一般教练干预？</span><span class="face back" aria-hidden="true">进食障碍、明显心理困扰、成瘾或自伤风险等需要专业转介时。</span></span></button></div></section><section class="panel orange"><h2>实操关联</h2><ul class="practice"><li>用两句开放问题判断一位受训者更像在权衡、准备还是已经行动；只记录当下线索，不给人贴固定标签。</li><li>把“没时间训练”拆成具体障碍：何时、何地、谁或什么造成摩擦，再共同写出一个低风险替代动作。</li><li>为一项刚中断的活动做恢复卡：触发条件、可联系的支持者、最小恢复动作和下次复查日期各写一项。</li><li>把一个建议改写为自主支持语言，例如先说明两个选择及其投入，再问对方愿意先试哪一个。</li></ul></section><section class="panel blue"><h2>练习题</h2><section class="question" data-answers="[1]" data-explanation="这更像尚在权衡的阶段。先听见收益、障碍与意愿，才能给出匹配支持。"><h3>1. 单选：受训者说“我知道该动，但最近工作很忙，还没打算开始”。最合适的第一步是？</h3><div class="options"><label class="option"><input type="radio" name="question-0" value="0"><span>A. 立刻安排高强度训练</span></label><label class="option"><input type="radio" name="question-0" value="1"><span>B. 了解他正在权衡的收益、障碍和准备程度</span></label><label class="option"><input type="radio" name="question-0" value="2"><span>C. 要求每天打卡否则罚款</span></label><label class="option"><input type="radio" name="question-0" value="3"><span>D. 直接判定他缺乏自律</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[2]" data-explanation="自主支持会说明选择并邀请受训者参与决定，同时保留拒绝与调整的空间。"><h3>2. 单选：哪种表达最能支持自主性？</h3><div class="options"><label class="option"><input type="radio" name="question-1" value="0"><span>A. 你必须按我的计划做</span></label><label class="option"><input type="radio" name="question-1" value="1"><span>B. 不做就说明你不够重视健康</span></label><label class="option"><input type="radio" name="question-1" value="2"><span>C. 这里有两个安全选项，你觉得哪一个更能放进本周生活？</span></label><label class="option"><input type="radio" name="question-1" value="3"><span>D. 我替你决定，因为我更专业</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[0,2,3]" data-explanation="复盘重在情境、资源、恢复与转介边界；羞耻和补偿性加练会增加风险。"><h3>3. 多选：哪些做法符合把中断当作复盘信息？</h3><div class="options"><label class="option"><input type="checkbox" name="question-2" value="0"><span>A. 回看睡眠、工作或疼痛等情境变化</span></label><label class="option"><input type="checkbox" name="question-2" value="1"><span>B. 把一次漏练当作人格失败</span></label><label class="option"><input type="checkbox" name="question-2" value="2"><span>C. 写一个可完成的恢复动作</span></label><label class="option"><input type="checkbox" name="question-2" value="3"><span>D. 识别需要医疗或心理支持的信号</span></label><label class="option"><input type="checkbox" name="question-2" value="4"><span>E. 用补偿性加练惩罚自己</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[1]" data-explanation="先理解实际条件，再恢复一个可完成动作，既保护胜任感也能为下一次调整积累信息。"><h3>4. 案例：小周原本每周散步三次，照护家人后连续两周中断，并说自己“彻底失败了”。教练最合适的回应是？</h3><div class="options"><label class="option"><input type="radio" name="question-3" value="0"><span>A. 要求下周每天走两小时补回来</span></label><label class="option"><input type="radio" name="question-3" value="1"><span>B. 先询问新的照护安排和可用支持，再共同选一项短散步和复查时间</span></label><label class="option"><input type="radio" name="question-3" value="2"><span>C. 告诉他只要意志强就不会中断</span></label><label class="option"><input type="radio" name="question-3" value="3"><span>D. 继续追问体重变化</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section></section><footer>Day 78/110<ul><li>Prochaska JO, Velicer WF：The Transtheoretical Model of Health Behavior Change，改变阶段与复发循环的应用框架。</li><li>Rosenstock IM 等：Health Belief Model，风险、收益、障碍、线索与自我效能的行为理解框架。</li><li>Ryan RM, Deci EL：Self-Determination Theory，自主、胜任和关联的动机支持原则。</li><li>本课为一般健身教育，不替代心理治疗或医疗诊断；进食障碍、明显心理困扰、成瘾或自伤风险请及时联系合格专业人员。</li></ul></footer></main><dialog aria-label="详情大图"><button class="icon-button" aria-label="关闭大图" title="关闭大图"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></button><img alt=""></dialog><script>document.querySelectorAll('.flip').forEach((button) => {
+  button.addEventListener('click', () => {
+    const pressed = button.getAttribute('aria-pressed') !== 'true';
+    button.setAttribute('aria-pressed', String(pressed));
+    button.querySelector('.front').setAttribute('aria-hidden', String(pressed));
+    button.querySelector('.back').setAttribute('aria-hidden', String(!pressed));
+  });
+});
+document.querySelectorAll('.question').forEach((question) => {
+  question.querySelector('.check').addEventListener('click', () => {
+    const selected = [...question.querySelectorAll('input:checked')].map((input) => Number(input.value)).sort();
+    const answer = question.querySelector('.answer');
+    answer.hidden = false;
+    if (!selected.length) { answer.textContent = '请先选择答案。'; delete question.dataset.result; return; }
+    const correct = JSON.stringify(selected) === JSON.stringify(JSON.parse(question.dataset.answers).sort());
+    question.dataset.result = correct ? 'correct' : 'wrong';
+    answer.textContent = `${correct ? '回答正确。' : '再想一想。'}${question.dataset.explanation}`;
+  });
+});
+const imageDialog = document.querySelector('dialog');
+document.querySelectorAll('[data-zoom]').forEach((button) => {
+  button.addEventListener('click', () => {
+    const original = button.querySelector('img');
+    const image = imageDialog.querySelector('img');
+    image.src = original.src;
+    image.alt = original.alt;
+    imageDialog.showModal();
+  });
+});
+imageDialog.querySelector('button').addEventListener('click', () => imageDialog.close());
+imageDialog.addEventListener('click', (event) => {
+  const rect = imageDialog.getBoundingClientRect();
+  if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) imageDialog.close();
+});
+</script></body></html>

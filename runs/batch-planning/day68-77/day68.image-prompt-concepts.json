@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "status": "planning-only-no-generation-request",
+  "day": 68,
+  "lesson": "营养基础复盘与运动营养时机",
+  "styleReference": "templates/study/v1/image-style.json",
+  "commonRequirements": [
+    "沿用固定的波吉与德斯帕、二维深灰细轮廓和平涂画法；除这两位角色外不出现其他人物。",
+    "每张均为真实透明PNG，未绘制区域alpha为0；白裤子和白毛领保持不透明白色，不得出现底色、棋盘格、地板、边框、贴纸阴影或水印。",
+    "AI图内不出现中文、英文、数字、Logo、品牌、标签、箭头、图表或可读屏幕；详情中文由后续共用排字流程处理。",
+    "食物只作为营养概念的简洁道具，不作医疗处方、体重羞辱或夸张前后对比；所有主体留出短边6%安全边距。"
+  ],
+  "assets": [
+    {"file": "cover.png", "role": "cover", "targetSize": [1600, 900], "topic": "营养时机总览", "teachingRelationship": "训练前准备、训练中补给与训练后正餐是同一全天计划的连续环节", "composition": "横向16:9，波吉拿小水杯，德斯帕在三份无字简单食物道具之间做开放手势；不画刻度、包装或文字", "allowedText": "none", "anatomyAndTechniqueConstraints": "人物不做夸张肌肉或体型比较；食物和水杯完整、无品牌。"},
+    {"file": "visual-01-foundation.png", "role": "knowledge", "targetSize": [2800, 900], "topic": "全天营养基础", "teachingRelationship": "规律正餐、液体与训练计划共同构成全天基础", "composition": "横向28:9，德斯帕与波吉面对三件无字食物和一个透明水杯，采用均衡分布，不画秤、热量数字或图表", "allowedText": "none", "anatomyAndTechniqueConstraints": "不暗示特定体型或食物道德价值，不出现医学器具。"},
+    {"file": "visual-02-pre.png", "role": "knowledge", "targetSize": [2800, 900], "topic": "训练前耐受", "teachingRelationship": "熟悉、易耐受的小份食物和液体为训练做准备", "composition": "横向28:9，波吉坐在长凳上拿小香蕉和水杯，德斯帕做平静开放手势；简洁无字，不画时间钟表", "allowedText": "none", "anatomyAndTechniqueConstraints": "食物为普通道具，避免药丸、补剂罐、胃部夸张表现或不安全进食动作。"},
+    {"file": "visual-03-during.png", "role": "knowledge", "targetSize": [2800, 900], "topic": "长时间训练中补给", "teachingRelationship": "持续训练时，液体与补给按个人需求逐步尝试", "composition": "横向28:9，德斯帕做轻松步行训练并拿无字水杯，波吉在旁递出一小块无包装食物；无跑道、计时器或箭头", "allowedText": "none", "anatomyAndTechniqueConstraints": "动作是低风险步行，不用脱水、昏倒或夸张出汗来表达。"},
+    {"file": "visual-04-post.png", "role": "knowledge", "targetSize": [2800, 900], "topic": "训练后恢复", "teachingRelationship": "训练后正餐、蛋白来源、碳水和液体共同支持恢复", "composition": "横向28:9，波吉和德斯帕坐在小桌旁，各自面对无字普通餐盘和水杯；不画奶昔标签或比例数字", "allowedText": "none", "anatomyAndTechniqueConstraints": "自然坐姿，避免夸张狼吞虎咽、体型变化或医疗暗示。"},
+    {"file": "overview-01-foundation.png", "role": "overview-item", "targetSize": [1600, 1200], "topic": "全天基础", "teachingRelationship": "一顿普通餐和水合是全天计划的一部分", "composition": "4:3总览专用，德斯帕在无字简单餐盘和水杯旁做开放手势，波吉观察", "allowedText": "none", "anatomyAndTechniqueConstraints": "不与知识页复用；无体重秤、无数字。"},
+    {"file": "overview-02-pre.png", "role": "overview-item", "targetSize": [1600, 1200], "topic": "训练前", "teachingRelationship": "轻量、熟悉的食物和液体服务于耐受", "composition": "4:3总览专用，波吉拿小香蕉和水杯，德斯帕在旁提示", "allowedText": "none", "anatomyAndTechniqueConstraints": "不与知识页复用；道具无包装文字。"},
+    {"file": "overview-03-during.png", "role": "overview-item", "targetSize": [1600, 1200], "topic": "训练中", "teachingRelationship": "长课补给需要逐步测试", "composition": "4:3总览专用，德斯帕轻松步行并拿水杯，波吉递出小块无包装食物", "allowedText": "none", "anatomyAndTechniqueConstraints": "不与知识页复用；不画计时、箭头或严重不适。"},
+    {"file": "overview-04-post.png", "role": "overview-item", "targetSize": [1600, 1200], "topic": "训练后", "teachingRelationship": "正餐和液体把恢复带回全天", "composition": "4:3总览专用，两人坐在小桌旁面对普通无字餐盘和水杯", "allowedText": "none", "anatomyAndTechniqueConstraints": "不与知识页复用；不画比例、品牌或体型前后对比。"}
+  ]
+}

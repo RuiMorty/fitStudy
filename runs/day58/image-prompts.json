@@ -1,0 +1,50 @@
+{
+  "commonPrompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper, border, sticker edge, shadow, or halo. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.",
+  "assets": [
+    {
+      "file": "cover.png",
+      "role": "cover",
+      "prompt": "Wide 16:9 wordless course cover. Exactly one Despa stands calmly on one leg on a plain stable surface, lightly reaching one hand toward a simple fixed handrail without gripping it; exactly one Bojji stands nearby in a small controlled march pose. Both have clear level head, relaxed shoulders, and fully visible feet. No text, arrows, symbols, extra people, BOSU ball, unstable platform, or gym room. Explain safe balance progression."
+    },
+    {
+      "file": "visual-01-sensory.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Bojji makes a calm single-leg stand on a plain stable surface while looking at a small fixed dot-free target object far ahead; exactly one Despa stands beside with open hand near a simple fixed handrail. Show head upright, feet fully visible, and an unambiguous stable body position. No labels, arrows, icons, anatomy overlays, text, numbers, symbols, extra equipment or extra people. Explain integrating visual, vestibular and body-sense information without written diagrams."
+    },
+    {
+      "file": "visual-02-static.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Despa performs a controlled single-leg stand on a plain stable surface near a simple fixed handrail, with the free foot hovering low and knee, pelvis and trunk calmly aligned; exactly one Bojji kneels at a respectful distance with open hand observing the standing foot and knee. No text, arrows, icons, symbols, BOSU ball, unstable platform or extra equipment. Explain stable balance quality and safe support."
+    },
+    {
+      "file": "visual-03-dynamic.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Despa performs a small-range controlled single-leg Romanian deadlift with one hand lightly touching a simple fixed rail, standing knee softly bent, hips hinging, trunk long, rear leg extended naturally; exactly one Bojji stands nearby with open hand. Feet, hip hinge and stable knee direction are fully visible. No text, arrows, icons, symbols, weights, extra people or floor. Explain balance control during movement."
+    },
+    {
+      "file": "visual-04-progression.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless knowledge illustration. Exactly one Despa completes a quiet controlled step-down from a very low plain platform onto both feet, knees and trunk aligned, hands free and no jump height; exactly one Bojji holds a calm single-leg stand nearby beside a simple fixed handrail. Show an approachable low-impact progression from stable control to landing without arrows or written steps. No text, labels, icons, symbols, BOSU ball, unstable surface or extra people."
+    },
+    {
+      "file": "overview-01-sensory.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Bojji stands calmly on one leg on a plain stable surface and looks forward at a simple blank object; exactly one Despa observes nearby with an open hand. Keep heads upright and feet fully visible. No text, arrows, labels, icons, symbols, handrail, unstable equipment or extra people."
+    },
+    {
+      "file": "overview-02-static.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Despa performs a controlled single-leg stand close to but not gripping a simple fixed handrail; exactly one Bojji watches from a stable two-foot stance. Fully visible feet, quiet torso and aligned knee. No text, arrows, labels, icons, symbols, unstable platform or extra people."
+    },
+    {
+      "file": "overview-03-dynamic.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Despa performs a low controlled single-leg hip hinge with a gentle fingertip touch on a simple fixed rail; exactly one Bojji observes with open hand. Show a clear hip hinge, long trunk and stable standing foot. No text, arrows, labels, icons, symbols, weights or extra people."
+    },
+    {
+      "file": "overview-04-progression.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless overview-only illustration. Exactly one Despa performs a quiet low step-down from a very low plain platform, landing with soft aligned knees; exactly one Bojji stands nearby in a stable two-foot stance. No text, arrows, labels, icons, symbols, high jump, unstable equipment or extra people."
+    }
+  ]
+}

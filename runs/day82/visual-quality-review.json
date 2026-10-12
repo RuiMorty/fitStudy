@@ -1,0 +1,116 @@
+{
+  "day": 82,
+  "title": "OPT五阶段复盘+身体成分与心肺评估",
+  "reviewedAt": "2026-10-01T00:42:00Z",
+  "requestRecord": "runs/day82/image-request-log.json",
+  "requirements": [
+    "All accepted sources are PNGs with a real alpha channel and were visually checked on a neutral background.",
+    "Each accepted scene has exactly one Bojji and one Despa, no readable text, numbers, readings, ground, room, cast shadow, duplicate pose, route or sequence framing.",
+    "Assessment scenes remain neutral and non-diagnostic: no person is weighed, measured, scanned, ridden on the bicycle or made to perform the low-step action.",
+    "Overview art is independently generated and compositionally distinct from its corresponding knowledge image."
+  ],
+  "accepted": [
+    {
+      "file": "cover.png",
+      "attempt": 2,
+      "source": "runs/day82/image-requests/cover-eb86e17540/attempt-02/cover.png",
+      "sha256": "a7df678b7c4638f8128c12c542ad519a8621e9e9296fd5d443590674f565f70e",
+      "review": "One upright Bojji and one upright Despa calmly consider an unmarked card and plain tape beside an unused isolated stationary bicycle; no test, reading or body judgment is depicted."
+    },
+    {
+      "file": "visual-01.png",
+      "attempt": 1,
+      "source": "runs/day82/image-requests/visual-01-8a79cc2ec8/attempt-01/visual-01.png",
+      "sha256": "e959aa45e29cf9ea307a3378fedff6a442779b62309c46c5efd0e761e39bdcfc",
+      "review": "One card has four non-symbolic empty compartments and one shoe; the single present scene is a selection discussion, not a staged progression."
+    },
+    {
+      "file": "visual-02.png",
+      "attempt": 2,
+      "source": "runs/day82/image-requests/visual-02-1d99f16a14/attempt-02/visual-02.png",
+      "sha256": "756e3880478fecefc264e45abc537018f5d22029ccdfeb785cc432cc5333b1ae",
+      "review": "Despa holds a blank tabletop scale and unmarked coiled tape while Bojji remains at a respectful distance; neither tool measures a person and neither has a readable result."
+    },
+    {
+      "file": "visual-03.png",
+      "attempt": 1,
+      "source": "runs/day82/image-requests/visual-03-0c02636da0/attempt-01/visual-03.png",
+      "sha256": "6c84156bcda0dba6dbac5e74f95bdfde0e15b52abceb01ea5e03015c6d208382",
+      "review": "Blank three-compartment card, caliper-like prop and blank handheld device remain separate from both people; there is no measurement, scan or medical setting."
+    },
+    {
+      "file": "visual-04.png",
+      "attempt": 1,
+      "source": "runs/day82/image-requests/visual-04-dfef8f1f0d/attempt-01/visual-04.png",
+      "sha256": "eefb6a8d58f9ea0475a1e0907dc3140a8e91667db55556e2ad0e71cf84dac86e",
+      "review": "Bojji is beside, not on, the complete stable low wooden platform; the record card is blank and no step, walk, timing or testing sequence appears."
+    },
+    {
+      "file": "visual-05.png",
+      "attempt": 2,
+      "source": "runs/day82/image-requests/visual-05-c5ca8b3979/attempt-02/visual-05.png",
+      "sha256": "1a84cbfcee198db92a3bbc5d796a52909239c2012f42907e3ce15cfb2530f9dc",
+      "review": "Calm open-palm pause and a respectfully lowered blank record card make a non-emergency consent boundary; the bicycle is unused and isolated."
+    },
+    {
+      "file": "overview-01.png",
+      "attempt": 1,
+      "source": "runs/day82/image-requests/overview-01-9cdac68418/attempt-01/overview-01.png",
+      "sha256": "21d26bd44f2f6bcd63ecea21f4d919f5a949819ea7aa6f4996b2942ab9ffb3a3",
+      "review": "Compact close composition with the four-cell card and shoe is independently framed from visual-01 and contains no progression markers."
+    },
+    {
+      "file": "overview-02.png",
+      "attempt": 1,
+      "source": "runs/day82/image-requests/overview-02-6a449564cb/attempt-01/overview-02.png",
+      "sha256": "586376faa4711dff5fa4610340b5216aeeb9bedd2b2de514921514b805eb0e6d",
+      "review": "Side-on Bojji remains away from the scale; scale display is blank and no reading, person-on-scale or waist measurement is shown."
+    },
+    {
+      "file": "overview-03.png",
+      "attempt": 1,
+      "source": "runs/day82/image-requests/overview-03-827fcd4a79/attempt-01/overview-03.png",
+      "sha256": "18599631003240064cd8305ffc5c828949338a1dd6aca65b838ae3fa3db36958",
+      "review": "The card, caliper-like tool and blank device are presented as separate method props; an open hand emphasizes a boundary without a clinical or measurement scene."
+    },
+    {
+      "file": "overview-04.png",
+      "attempt": 1,
+      "source": "runs/day82/image-requests/overview-04-897df7e278/attempt-01/overview-04.png",
+      "sha256": "879b9f341d2073de1d6ab55755f89ae11d961024b5f5a99ceaa40c5cfcc1fd19",
+      "review": "New compact layout keeps Bojji clearly beside the freestanding low platform and Despa holding a blank card, with no stepping or test execution."
+    },
+    {
+      "file": "overview-05.png",
+      "attempt": 1,
+      "source": "runs/day82/image-requests/overview-05-d059872d99/attempt-01/overview-05.png",
+      "sha256": "8d43e52ee93240bd07aa4d332ceb2ad6c9f3b9b15e692cea79530d4e45d4aea7",
+      "review": "Independent compact pause scene with one open palm, one blank card and an unused bike; the interaction is calm rather than urgent."
+    }
+  ],
+  "rejected": [
+    {
+      "file": "cover.png",
+      "attempt": 1,
+      "reason": "Despa kneels beside a tape with visible graduations, contrary to the upright non-measurement cover direction."
+    },
+    {
+      "file": "visual-02.png",
+      "attempt": 1,
+      "reason": "The scale has a visible dial/pointer and the tape has visible markings, so it can be read as an actual result-bearing measurement tool."
+    },
+    {
+      "file": "visual-05.png",
+      "attempt": 1,
+      "reason": "Bojji's tense raised-fist pose and kneeling Despa can be read as conflict or an incident instead of a calm consent pause."
+    }
+  ],
+  "summary": {
+    "planned": 11,
+    "accepted": 11,
+    "requested": 14,
+    "retriesUsed": 3,
+    "allAcceptedSourcesHaveAlpha": true,
+    "readyForSharedPreparation": true
+  }
+}

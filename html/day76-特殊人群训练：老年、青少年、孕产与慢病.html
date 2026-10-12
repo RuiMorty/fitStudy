@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Day 76 · 特殊人群训练：老年、青少年、孕产与慢病</title><link rel="icon" type="image/svg+xml" href="assets/fitness-study-logo-open-circle.svg?v=a6d8e5caaa61"><style>:root { color-scheme: light; --ink: #111113; --muted: #71717a; --line: #e4e4e7; --accent: #ff5a1f; --green: #0ea66b; --blue: #2563eb; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; font-synthesis: none; letter-spacing: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); overflow-wrap: anywhere; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+img { display: block; max-width: 100%; }
+button:focus-visible, a:focus-visible, summary:focus-visible, input:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
+svg.icon { width: 20px; height: 20px; }
+.icon-button { display: inline-grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 1px solid var(--line); border-radius: 6px; background: white; }
+[hidden] { display: none !important; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
+
+body { background: #f6f8f7; font-size: 14px; line-height: 1.65; }
+main { max-width: 980px; margin: auto; padding: 24px 18px 60px; }
+.header { padding: 22px 4px 14px; }
+h1 { margin: 10px 0 8px; font-size: 36px; line-height: 1.2; }
+h1::before { content: ""; display: block; width: 34px; height: 4px; background: var(--accent); margin-bottom: 10px; }
+h2 { font-size: 17px; margin: 0 0 14px; }
+h3 { font-size: 16px; margin: 0 0 8px; }
+.sub { color: var(--muted); margin: 5px 0 18px; }
+.meta { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { display: inline-block; border: 1px solid var(--line); border-radius: 20px; background: white; color: var(--muted); padding: 3px 10px; font-size: 12px; font-weight: 600; }
+.chip:nth-child(1) { background: #e2f7eb; color: #15803d; border-color: transparent; }
+.chip:nth-child(2) { background: #e7f0fe; color: #2563eb; border-color: transparent; }
+.chip:nth-child(3) { background: #fff2e5; color: #9a4c05; border-color: transparent; }
+.panel, .figure, .warn, .mnemonic { background: white; border: 1px solid #e2e8e4; border-radius: 14px; box-shadow: 0 2px 12px rgba(20,40,30,.06); padding: 20px; margin: 16px 0; }
+.green { border-left: 5px solid var(--green); }
+.orange { border-left: 5px solid #ea7a17; }
+.blue { border-left: 5px solid #0ea5e9; }
+.takeaway { margin: 0; }
+.figure { text-align: center; }
+.figure button { display: block; position: relative; width: 100%; border: 0; padding: 0; background: white; cursor: zoom-in; }
+.figure img { max-height: 760px; width: 100%; object-fit: contain; }
+.figure .icon-button { position: absolute; bottom: 8px; right: 8px; background: #ffffffed; }
+.caption { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
+.kp { list-style: none; padding: 0; margin: 0; }
+.kp > li { border-bottom: 1px dashed #e2e8e4; }
+.kp > li:last-child { border-bottom: 0; }
+.kp summary { cursor: pointer; padding: 13px 8px; font-weight: 650; }
+.kp summary::marker { color: var(--green); }
+.term { color: #0a7d52; background: #e2f7eb; border-radius: 6px; padding: 1px 5px; }
+.kp-body { padding: 2px 14px 16px 24px; }
+.detail-block { margin: 12px 0; }
+.detail-block h4 { font-size: 13px; color: #08744d; margin: 0 0 4px; }
+.detail-block p { margin: 0; white-space: pre-line; }
+.warn { border-left: 5px solid #e23b3b; background: #fffafa; }
+.warn p { margin: 8px 0; }
+.misconception { color: #a82b32; }
+.mnemonic { border-left: 4px solid var(--accent); box-shadow: none; }
+.mnemonic strong { color: #df4716; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+.flip { height: 168px; perspective: 900px; border: 0; background: transparent; padding: 0; text-align: center; }
+.flip-in { display: block; height: 100%; position: relative; transition: transform .45s; transform-style: preserve-3d; }
+.flip[aria-pressed="true"] .flip-in { transform: rotateY(180deg); }
+.face { position: absolute; inset: 0; backface-visibility: hidden; border: 1px solid var(--line); border-radius: 10px; padding: 15px; background: #fafafa; display: flex; align-items: center; justify-content: center; overflow-y: auto; }
+.back { transform: rotateY(180deg); background: #eef9f4; color: #075e40; border-color: #c8eadb; }
+.practice { padding-left: 20px; }
+.practice li { margin: 7px 0; }
+.question { border-top: 1px solid #e2e8e4; padding: 20px 0 8px; margin-top: 12px; min-width: 0; }
+.options { display: grid; gap: 7px; margin: 10px 0; }
+.option { display: flex; gap: 10px; align-items: baseline; border: 1px solid #e2e8e4; background: #f0f4f2; padding: 9px 12px; border-radius: 8px; cursor: pointer; }
+.option input { flex-shrink: 0; accent-color: var(--green); }
+.option:has(input:checked) { border-color: #0ea5e9; background: #e7f6fd; }
+.question[data-result="correct"] .option:has(input:checked) { border-color: #0ea66b; background: #e7f8ef; }
+.question[data-result="wrong"] .option:has(input:checked) { border-color: #e23b3b; background: #fff0f0; }
+.answer { background: #f8fbfa; border-left: 3px solid #0ea5e9; padding: 10px; margin-top: 10px; }
+.check { border: 0; background: #0ea66b; color: white; padding: 9px 14px; border-radius: 7px; }
+footer { color: var(--muted); font-size: 12px; margin-top: 28px; }
+footer ul { padding-left: 20px; }
+dialog { width: min(1200px, 96vw); max-height: 94dvh; padding: 52px 16px 16px; border: 0; border-radius: 8px; background: white; }
+dialog::backdrop { background: #15191dd9; }
+dialog img { width: 100%; max-height: 78dvh; object-fit: contain; }
+dialog .icon-button { position: absolute; top: 8px; right: 10px; }
+@media (max-width: 600px) {
+  main { padding: 16px 12px 40px; }
+  h1 { font-size: 26px; }
+  .header { padding: 16px 4px 12px; }
+  .panel, .figure, .warn, .mnemonic { padding: 15px; }
+  .kp-body { padding-left: 16px; }
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .face { padding: 12px; }
+}
+</style></head><body><main><header class="header"><h1>Day 76 · 特殊人群训练：老年、青少年、孕产与慢病</h1><p class="sub">先筛查与个体化，再用可控训练改善功能；不把通用建议当医疗处方。</p><div class="meta"><span class="chip">风险筛查</span><span class="chip">个体化</span><span class="chip">训练边界</span></div></header><section class="panel green"><h2>一句话总结</h2><p class="takeaway">老年、青少年、孕产期和慢病人群都可能从活动、力量、平衡和心肺训练获益，但开始条件和风险不同。先结合症状、用药、既往活动和医疗建议筛查；教练不能代替诊断。老年可重视功能与平衡；青少年在合格监督下可渐进抗阻。无并发症孕期通常可活动，但需避开跌倒/碰撞风险、过热与不适；产后按症状和医疗建议逐步回归。高血压、心血管病和糖尿病训练需纳入医疗计划、呼吸、补给和足部安全。</p></section><figure class="figure"><button data-zoom aria-label="放大详情图"><img class="" src="assets/阶段5 训练安排/day76-特殊人群训练：老年、青少年、孕产与慢病.png" alt="老年青少年孕产和慢病训练边界中文总览"><span class="icon-button"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 15 6 6" /><path d="m15 9 6-6" /><path d="M21 16v5h-5" /><path d="M21 8V3h-5" /><path d="M3 16v5h5" /><path d="m3 21 6-6" /><path d="M3 8V3h5" /><path d="M9 9 3 3" /></svg></span></button><figcaption class="caption">特殊人群不是一组统一处方。筛查、症状、既往活动、医疗团队意见、动作能力和个人目标共同决定是否训练、如何训练与何时转介。</figcaption></figure><section class="panel"><h2>核心要点</h2><ul class="kp"><li><details><summary><span class="term">共同起点：筛查、目标与停止规则</span>：不是因为属于某一群体就不能训练，也不是所有人都可直接套用同一计划；先识别症状、并发症、用药、能力与转介需求。</summary><div class="kp-body"><section class="detail-block"><h4>先问什么</h4><p>询问既往活动、确诊疾病、近期医疗建议、药物、妊娠/产后情况、跌倒或骨折史、血糖或血压相关计划及当前症状。PAR-Q+等工具可帮助筛查，但不能替代临床评估或给出医疗许可。</p></section><section class="detail-block"><h4>明确停止与升级信号</h4><p>胸痛、异常气短、晕厥或接近晕厥、意识异常、突发神经症状、严重低血糖症状、异常出血或急性疼痛应停止活动并按医疗或紧急流程处理。没有症状也不代表可以越过已有医疗限制。</p></section></div></details></li><li><details><summary><span class="term">老年与青少年：能力优先，不用年龄贴标签</span>：老年人可从力量、平衡、步行和功能任务获益；青少年在合格监督下可进行抗阻训练，重点是技术、渐进和合适环境。</summary><div class="kp-body"><section class="detail-block"><h4>老年：练功能与防跌倒能力</h4><p>可从坐站、台阶、提物、步行、平衡和渐进抗阻等与生活相关任务开始，使用能力测试而非年龄决定起点。肌少症、骨折史、明显平衡问题、认知变化或多药物使用时，需要更周密的医疗和环境安排。</p></section><section class="detail-block"><h4>青少年：监督下的抗阻可以安全</h4><p>合格监督、适合身材的器械、清晰技术、渐进负荷和恢复是关键。没有证据支持“青少年一律不能力量训练”；也不必把所有人限定为固定高重复次数，动作质量和成熟度应先于重量或竞赛表现。</p></section></div></details></li><li><details><summary><span class="term">孕期与产后：筛查症状，持续调整</span>：无并发症孕期通常可保持适度活动；禁忌、症状、环境与分娩恢复会改变安排，不能用一条“所有人都避免”的规则代替评估。</summary><div class="kp-body"><section class="detail-block"><h4>孕期训练的调整原则</h4><p>在产科团队认可且无禁忌时，可用能交谈的强度、渐进力量和日常活动维持体能。避免高跌倒或碰撞风险、过热和明显不适；妊娠后期若长时间平卧出现头晕、恶心或不适，应改变体位。屏气和过度用力也应避免。</p></section><section class="detail-block"><h4>产后回归没有统一日期</h4><p>产后何时、如何回归取决于分娩方式、出血、疼痛、盆底症状、睡眠、并发症和医疗建议。先从呼吸、舒适步行、低冲击和症状监测逐步恢复；漏尿、盆腔沉重感、疼痛或异常出血需要停止加码并联系产科或盆底专业人员。</p></section></div></details></li><li><details><summary><span class="term">慢病：让医疗计划进入训练现场</span>：高血压、心血管疾病和糖尿病并不等于不能运动，但强度、呼吸、监测、补给和急救准备应与医疗计划匹配。</summary><div class="kp-body"><section class="detail-block"><h4>高血压与心血管风险</h4><p>经医疗许可后，规律有氧和渐进抗阻常有益；避免长时间屏气和突然高强度冲刺。若静息血压反复达到约180/110 mmHg或更高、或出现胸痛、明显气短、神经症状，应暂缓训练并按医疗建议处理，紧急症状按当地急救流程。</p></section><section class="detail-block"><h4>糖尿病：预防低血糖与足部问题</h4><p>使用胰岛素或促胰岛素分泌药的人尤其需遵循个人血糖监测、进食和低血糖处理计划；随身备快速碳水，出现轻度低血糖可按临床团队教导的15—15原则处理。注意合适鞋袜、足部感觉和伤口；血糖异常、酮症风险或足部溃疡应遵从医疗人员指示。</p></section></div></details></li></ul></section><section class="warn"><h2>常见误区</h2><p><strong class="misconception">误区：老年人只能做轻松散步，不能练力量或平衡。</strong><br>辨析：在能力和风险评估基础上，渐进抗阻、平衡和功能训练常有益；起点和环境需要个体化。</p><p><strong class="misconception">误区：青少年力量训练一定伤生长板。</strong><br>辨析：合格监督、技术、渐进负荷和合适设备下的抗阻训练可安全进行；风险主要来自监督不足和不当负荷。</p><p><strong class="misconception">误区：孕期必须完全停止运动，产后六周一到就可直接恢复原训练。</strong><br>辨析：无并发症孕期通常可活动但需调整；产后回归取决于症状、分娩与医疗建议，没有人人相同日期。</p><p><strong class="misconception">误区：有高血压或糖尿病就按普通健身计划练，不必管用药和症状。</strong><br>辨析：慢病训练需结合医疗计划、监测、呼吸、补给和停止规则；异常症状优先处理安全。</p></section><section class="mnemonic"><h2>记忆口诀</h2><p><strong>先筛查，后渐进；看症状，不看标签；有计划，守边界。</strong></p></section><section class="panel"><h2>翻转卡复习</h2><div class="cards"><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">特殊人群训练第一步？</span><span class="face back" aria-hidden="true">结合症状、病史、用药、能力和医疗建议做筛查与风险判断。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">老年训练可重视哪些能力？</span><span class="face back" aria-hidden="true">力量、平衡、步行、坐站、台阶和提物等生活相关功能。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">青少年抗阻训练关键？</span><span class="face back" aria-hidden="true">合格监督、清晰技术、渐进负荷、合适设备和恢复。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">孕期训练出现不适应怎样？</span><span class="face back" aria-hidden="true">停止或调整活动，按产科团队建议评估；急性警讯走医疗或紧急流程。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">产后回归有固定六周规则吗？</span><span class="face back" aria-hidden="true">没有；要看分娩、症状、并发症和医疗建议，逐步恢复。</span></span></button><button class="flip" aria-pressed="false"><span class="flip-in"><span class="face front">糖尿病训练的两项关键准备？</span><span class="face back" aria-hidden="true">遵循个人血糖/进食计划并备快速碳水，同时注意足部和异常信号。</span></span></button></div></section><section class="panel orange"><h2>实操关联</h2><ul class="practice"><li>为场馆准备一份筛查与停止信号清单，明确哪些情况需要医疗许可、哪些情况应立即停止并启动急救流程。</li><li>把一个老年初学者训练改写成坐站、扶持平衡、轻提物和步行的能力起点，并写出环境保护措施。</li><li>为青少年训练写出监督、器械调整、技术反馈和渐进负荷四项检查，不用年龄单独决定重量或次数。</li><li>设计慢病客户的课前确认项：当天症状、医疗计划、药物/血糖相关安排、鞋袜与补给；不擅自修改医疗方案。</li></ul></section><section class="panel blue"><h2>练习题</h2><section class="question" data-answers="[1]" data-explanation="青少年并非不能抗阻训练；风险管理依赖监督、技术、合适设备和渐进，而非简单年龄禁令。"><h3>1. 单选：关于青少年抗阻训练，哪项更准确？</h3><div class="options"><label class="option"><input type="radio" name="question-0" value="0"><span>A. 一律禁止</span></label><label class="option"><input type="radio" name="question-0" value="1"><span>B. 在合格监督、技术和渐进负荷下可安全进行</span></label><label class="option"><input type="radio" name="question-0" value="2"><span>C. 只能做固定15次以上</span></label><label class="option"><input type="radio" name="question-0" value="3"><span>D. 越早冲最大重量越好</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[1]" data-explanation="产后回归需要个体化，漏尿、盆腔沉重、疼痛或异常出血等信号需要暂停加码并求助。"><h3>2. 单选：产后恢复训练最合适的原则是？</h3><div class="options"><label class="option"><input type="radio" name="question-1" value="0"><span>A. 所有人第六周当天恢复原负荷</span></label><label class="option"><input type="radio" name="question-1" value="1"><span>B. 看分娩、症状、并发症和医疗建议，逐步回归</span></label><label class="option"><input type="radio" name="question-1" value="2"><span>C. 只要无疼痛就做最高冲击动作</span></label><label class="option"><input type="radio" name="question-1" value="3"><span>D. 完全不需要关注盆底症状</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[0,1,2]" data-explanation="教练可做筛查、安全准备和转介，不能更改药物或忽略个体医疗计划。"><h3>3. 多选：慢病客户训练前，哪些准备更合适？</h3><div class="options"><label class="option"><input type="checkbox" name="question-2" value="0"><span>A. 了解症状、用药和医疗计划</span></label><label class="option"><input type="checkbox" name="question-2" value="1"><span>B. 明确停止与紧急升级信号</span></label><label class="option"><input type="checkbox" name="question-2" value="2"><span>C. 按需要准备快速碳水和足部保护</span></label><label class="option"><input type="checkbox" name="question-2" value="3"><span>D. 自行替客户修改药物剂量</span></label><label class="option"><input type="checkbox" name="question-2" value="4"><span>E. 用单一模板忽略个体差异</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section><section class="question" data-answers="[2]" data-explanation="反复非常高的静息血压和新症状不应靠训练硬压。先停止高风险活动并获取医疗评估；紧急症状需即时升级处理。"><h3>4. 案例：王先生课前反复测得静息血压约184/112 mmHg，且今天说有新出现的头痛。更合适的是？</h3><div class="options"><label class="option"><input type="radio" name="question-3" value="0"><span>A. 照常做高强度间歇</span></label><label class="option"><input type="radio" name="question-3" value="1"><span>B. 让他屏气做大重量深蹲</span></label><label class="option"><input type="radio" name="question-3" value="2"><span>C. 暂缓训练并按医疗建议尽快评估；若出现胸痛、神经症状等紧急信号则按当地急救流程</span></label><label class="option"><input type="radio" name="question-3" value="3"><span>D. 只喝咖啡后继续</span></label></div><button class="check">查看解析</button><div class="answer" role="status" hidden></div></section></section><footer>Day 76/110<ul><li>ACSM：ACSM&#39;s Guidelines for Exercise Testing and Prescription，第11版，慢病、老年人与运动筛查原则。</li><li>NSCA：Youth Resistance Training Position Statement，青少年抗阻训练的监督、技术与渐进原则。</li><li>ACOG：Physical Activity and Exercise During Pregnancy and the Postpartum Period，孕产期活动和停止信号原则。</li><li>American Diabetes Association：Standards of Care in Diabetes，运动、低血糖、足部与个体化医疗计划原则。</li><li>本课为一般教育，不替代诊断、医疗许可、产科照护或药物调整；胸痛、晕厥、神经症状、异常出血或严重低血糖请使用当地医疗/紧急服务。</li></ul></footer></main><dialog aria-label="详情大图"><button class="icon-button" aria-label="关闭大图" title="关闭大图"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></button><img alt=""></dialog><script>document.querySelectorAll('.flip').forEach((button) => {
+  button.addEventListener('click', () => {
+    const pressed = button.getAttribute('aria-pressed') !== 'true';
+    button.setAttribute('aria-pressed', String(pressed));
+    button.querySelector('.front').setAttribute('aria-hidden', String(pressed));
+    button.querySelector('.back').setAttribute('aria-hidden', String(!pressed));
+  });
+});
+document.querySelectorAll('.question').forEach((question) => {
+  question.querySelector('.check').addEventListener('click', () => {
+    const selected = [...question.querySelectorAll('input:checked')].map((input) => Number(input.value)).sort();
+    const answer = question.querySelector('.answer');
+    answer.hidden = false;
+    if (!selected.length) { answer.textContent = '请先选择答案。'; delete question.dataset.result; return; }
+    const correct = JSON.stringify(selected) === JSON.stringify(JSON.parse(question.dataset.answers).sort());
+    question.dataset.result = correct ? 'correct' : 'wrong';
+    answer.textContent = `${correct ? '回答正确。' : '再想一想。'}${question.dataset.explanation}`;
+  });
+});
+const imageDialog = document.querySelector('dialog');
+document.querySelectorAll('[data-zoom]').forEach((button) => {
+  button.addEventListener('click', () => {
+    const original = button.querySelector('img');
+    const image = imageDialog.querySelector('img');
+    image.src = original.src;
+    image.alt = original.alt;
+    imageDialog.showModal();
+  });
+});
+imageDialog.querySelector('button').addEventListener('click', () => imageDialog.close());
+imageDialog.addEventListener('click', (event) => {
+  const rect = imageDialog.getBoundingClientRect();
+  if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) imageDialog.close();
+});
+</script></body></html>

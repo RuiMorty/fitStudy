@@ -1,0 +1,50 @@
+{
+  "commonPrompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper background, loose paper sheets, border, sticker edge, shadow, or halo. A small unmarked rigid evidence card is allowed as a prop. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nAdditional course-specific guardrails: 固定波吉与德斯帕、二维健身科学教学插画、细深灰轮廓和平涂；每张仅出现两位固定角色。 每张输出真实透明PNG，未绘制区域alpha为0；无诊室、赛场、观众、地板、边框、阴影、棋盘格、水印或品牌。 AI图内不得出现文字、数字、体重秤、月经或骨骼医学图、低体重刻板印象、医疗符号、药物、箭头、图表、奖牌或赛事Logo。 不将任何体型、性别、关节状况或能量问题视觉化为刻板印象。用低冲击功能训练、稳定支撑、无字计划卡、普通水杯和开放手势表达风险分层与转介。",
+  "assets": [
+    {
+      "file": "cover.png",
+      "role": "cover",
+      "prompt": "Wide 16:9 wordless single-scene course cover illustration. 横向16:9，德斯帕站在低台阶与无字训练卡旁做开放手势，波吉做稳健台阶上步准备；无赛场或体重符号 Teach 功能、需求与风险分层: 稳定训练、项目计划和健康信号需要共同评估. 台阶低且稳定，上步全脚掌着台、膝盖对线；不画跳跃或跌倒。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters."
+    },
+    {
+      "file": "visual-01-function.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. 横向28:9，德斯帕做稳定的轻提物动作，波吉从长凳坐起；无秤、无体型对比、无文字 Teach 低冲击功能起点: 步行、坐站和提物等能力可逐步建立. 提物贴近身体、脊柱中立；坐站脚掌着地，长凳稳定。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters."
+    },
+    {
+      "file": "visual-02-bone-joint.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. 横向28:9，德斯帕扶稳定长凳做轻度平衡练习，波吉做低台阶上步；无骨骼图或疼痛符号 Teach 骨关节风险分层: 稳定承重、力量与平衡可按风险调整. 扶持稳定、台阶低、足膝对线；不画摔倒、扭转或极端屈曲。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters."
+    },
+    {
+      "file": "visual-03-demand.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. 横向28:9，德斯帕做轻量药球胸前持球准备，波吉做轻松提物姿态，二人之间有一张空白计划卡；无赛场和箭头 Teach 项目与日常需求分析: 不同动作任务决定不同训练优先级. 药球贴胸、提物靠身；不做抛掷、冲刺或高风险动作。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters."
+    },
+    {
+      "file": "visual-04-reds.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. 横向28:9，德斯帕将轻哑铃水平平放于画面下缘，无地面或投影；波吉拿无字水杯并做温和暂停手势，旁有合上的空白文件夹 Teach 健康信号与多学科转介: 疲劳或骨伤等风险信号时先降低训练风险并连接支持. 不画女性身体、月经、骨骼病变、体重或医疗诊断；哑铃安全平放。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters."
+    },
+    {
+      "file": "overview-01-function.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. 4:3总览专用，德斯帕轻提物，波吉从稳定长凳坐起 Teach 功能起点: 低冲击能力可渐进. 不与知识页复用；提物与坐站安全。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters."
+    },
+    {
+      "file": "overview-02-bone-joint.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. 4:3总览专用，德斯帕扶长凳平衡，波吉低台阶上步 Teach 骨关节风险: 承重和稳定支撑按风险调整. 不与知识页复用；无骨骼、疼痛或跌倒画面。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters."
+    },
+    {
+      "file": "overview-03-demand.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. 4:3总览专用，德斯帕轻量持药球，波吉轻松提物，中央留空白计划卡 Teach 项目需求: 任务决定训练优先级. 不与知识页复用；无赛场、奖牌或箭头。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters."
+    },
+    {
+      "file": "overview-04-reds.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. 4:3总览专用，德斯帕将轻哑铃水平平放于画面下缘，无地面或投影；波吉拿水杯做暂停手势，旁有合上空白文件夹 Teach 低能量信号: 风险信号时先暂停加码并转介. 不与知识页复用；不表现体重、月经、疾病或医疗图示。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters."
+    }
+  ]
+}

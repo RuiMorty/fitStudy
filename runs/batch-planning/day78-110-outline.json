@@ -1,0 +1,588 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Planning-only source for locally generated FitnessStudy Day 78–110 drafts. It is not an instruction to amend the formal syllabus, progress files, publish state, homepage ordering, or server content.",
+  "outlineDocument": "runs/batch-planning/day78-110-outline.md",
+  "sourceReconciliation": {
+    "currentSyllabus": "fitness_syllabus.md (continuous Day 1–77)",
+    "historicalSyllabi": [
+      "git:88f1da7:fitness_syllabus.md",
+      "git:30182b9:fitness_syllabus.md"
+    ],
+    "authorizationBasis": "User explicitly authorized continuation to 110 locally generated drafts on 2026-09-30.",
+    "doNotReintroduceHistoricalDays": [
+      "56–60: already current Day 52–56",
+      "68–69, 71–72, 74: already current Day 57–61",
+      "75–86: already current Day 62–73",
+      "87, 89–91: already current Day 74–77"
+    ]
+  },
+  "generationGuardrails": [
+    "Keep assessment, emergency, legal, nutrition, mental-health and medical content educational; state stop and referral conditions instead of diagnosing or treating.",
+    "Use original, non-confidential questions and public, current official exam information only; never reconstruct, claim access to, or reproduce real exam items.",
+    "Keep each lesson to four through six verifiable content blocks and turn the scope/safety field into visible learner-facing copy.",
+    "Treat this file as local draft planning only. Deployment requires a separate, explicit Day-specific user authorization."
+  ],
+  "entries": [
+    {
+      "day": 78,
+      "title": "行为改变理论模型",
+      "track": "双证",
+      "historicalSourceDay": 52,
+      "currentRefs": ["Day 40", "Day 70", "Day 76–77"],
+      "lessonType": "behavior-coaching",
+      "contentOutline": [
+        "以 TTM 的前意向、意向、准备、行动、维持、复发定位对话起点",
+        "用健康信念模型梳理感知风险、收益和实际障碍",
+        "用自主、胜任、关联解释自我决定理论",
+        "将每个阶段匹配为一个低门槛支持动作",
+        "把复发写成可复盘、可恢复的计划信息"
+      ],
+      "scopeSafety": "行为框架不是心理治疗或诊断；进食障碍、明显心理困扰、成瘾或自伤风险须停止一般教练干预并转介。",
+      "avoidDuplication": "不重讲 Day 40 的反馈，也不重讲 Day 70、76–77 的医学/营养边界。"
+    },
+    {
+      "day": 79,
+      "title": "目标设置与动机",
+      "track": "双证",
+      "historicalSourceDay": 53,
+      "currentRefs": ["Day 40", "planned Day 78"],
+      "lessonType": "behavior-coaching",
+      "contentOutline": [
+        "区分结果、表现和过程目标并优先可控过程",
+        "用 SMART 和最低可完成版本检验目标",
+        "讲解自我效能的成功、替代、言语、情绪四个来源",
+        "用 OARS 引出客户自己的改变理由",
+        "把愿望拆成一周行为、记录指标和复盘日期"
+      ],
+      "scopeSafety": "不以体重、外形或惩罚施压；强迫训练、身体形象困扰或动机显著低落须尊重意愿并适时转介。",
+      "avoidDuplication": "Day 78 处理改变阶段，本课处理从意愿到执行；不重复 TTM 六阶段。"
+    },
+    {
+      "day": 80,
+      "title": "沟通依从性与心理技能训练",
+      "track": "双证",
+      "historicalSourceDay": 54,
+      "currentRefs": ["Day 40", "planned Day 78–79"],
+      "lessonType": "behavior-coaching",
+      "contentOutline": [
+        "用积极倾听、共情、开放问题与征得同意建立关系",
+        "将言语、视觉、动觉提示用于一个动作目标",
+        "设计日志、环境提示、同伴支持和非食物奖励",
+        "介绍呼吸、渐进放松和注意力锚点的自我调节用途",
+        "用观察、共同决定、复盘处理抗拒"
+      ],
+      "scopeSafety": "放松和注意力练习不替代心理治疗；创伤、惊恐、严重睡眠问题或危机表达需专业支持。",
+      "avoidDuplication": "只应用 Day 40 的反馈，不重讲反馈术语、TTM 或 SMART。"
+    },
+    {
+      "day": 81,
+      "title": "NASM OPT模型总览",
+      "track": "NASM",
+      "historicalSourceDay": 55,
+      "currentRefs": ["Day 29", "Day 52–56"],
+      "lessonType": "training-framework",
+      "contentOutline": [
+        "用总览图定位五阶段与三层级",
+        "按目标、经验、动作质量、恢复和筛查选择阶段",
+        "说明每阶段主要适应目标和进入能力",
+        "将 Day 29 原则与 Day 52–56 变量连接成索引",
+        "说明目标变化或耐受不足时应重新评估而非硬升级"
+      ],
+      "scopeSafety": "不稳定器械和爆发训练不是普遍必需；高强度阶段需要技术、筛查和监督条件。",
+      "avoidDuplication": "Day 52–56 已有五阶段变量和练习；本课只做选择地图。"
+    },
+    {
+      "day": 82,
+      "title": "OPT五阶段复盘+身体成分与心肺评估",
+      "track": "NASM",
+      "historicalSourceDay": 61,
+      "currentRefs": ["Day 31", "Day 50–56"],
+      "lessonType": "assessment-overview",
+      "contentOutline": [
+        "用目标、能力、阶段、复查点矩阵复盘五阶段",
+        "区分体重、身体成分和腰围等追踪指标",
+        "比较皮褶、BIA、DEXA 的误差、可及性和隐私边界",
+        "说明基础心肺现场测试的追踪价值和局限",
+        "将记录转成训练重点、复测日期和转介条件"
+      ],
+      "scopeSafety": "身体成分和现场心肺测试不能诊断疾病；先完成筛查，症状、疾病控制不佳或不适时不测试并转介。",
+      "avoidDuplication": "不重列 Day 52–56 变量或 Day 50–51 有氧处方。"
+    },
+    {
+      "day": 83,
+      "title": "肌力、肌耐力与爆发力评估",
+      "track": "双证",
+      "historicalSourceDay": 62,
+      "currentRefs": ["Day 31", "Day 41–43"],
+      "lessonType": "physical-assessment",
+      "contentOutline": [
+        "先按目标、训练史和风险判断是否需要测试",
+        "比较直接 1RM、次最大推算、耐力和爆发测试的用途",
+        "固定热身、技术、加重、休息与终止标准",
+        "以个人基线、动作质量和目标解释结果",
+        "将结果写成可复测的下一周期训练假设"
+      ],
+      "scopeSafety": "最大测试只适用于已筛查、动作合格且受合适监督者；疼痛、头晕、异常气促或失控立即停止。",
+      "avoidDuplication": "只讲测试设计与解释，不复讲 Day 41–43 技术或 Day 50 心肺监控。"
+    },
+    {
+      "day": 84,
+      "title": "柔韧性评估",
+      "track": "双证",
+      "historicalSourceDay": 63,
+      "currentRefs": ["Day 45"],
+      "lessonType": "physical-assessment",
+      "contentOutline": [
+        "区分柔韧性、ROM 与动作控制",
+        "选择坐位体前屈、背抓、ROM 或受训人员使用的专项测试",
+        "统一姿势、代偿限制、工具和左右记录",
+        "据此决定保持、温和活动度或控制力量重点",
+        "以训练动作目标而非单纯数值检验改变"
+      ],
+      "scopeSafety": "不得强压关节或在疼痛中测试；急性伤病、神经症状、术后限制和明显不对称应停止并转介。",
+      "avoidDuplication": "Day 45 讲拉伸/PNF，本课只讲何时和如何安全记录。"
+    },
+    {
+      "day": 85,
+      "title": "速度敏捷评估",
+      "track": "双证",
+      "historicalSourceDay": 64,
+      "currentRefs": ["Day 47", "Day 61"],
+      "lessonType": "physical-assessment",
+      "contentOutline": [
+        "区分直线加速、变向能力和反应性敏捷",
+        "按项目选择冲刺、5-10-5、T-test 或 Illinois 测试",
+        "统一场地、鞋服、热身、计时、试次和休息",
+        "从成绩与视频记录起跑、减速、转向和反应线索",
+        "用结果安排技术/力量/SAQ 优先级并同条件复测"
+      ],
+      "scopeSafety": "只在无障碍防滑场地、充分热身后测试；近期下肢伤病、疼痛或无法安全减速时不测试。",
+      "avoidDuplication": "Day 47 和 61 讲 SAQ/SSC 训练，本课只讲评估与标准化。"
+    },
+    {
+      "day": 86,
+      "title": "静态姿势评估",
+      "track": "双证",
+      "historicalSourceDay": 65,
+      "currentRefs": ["Day 59–60"],
+      "lessonType": "movement-observation",
+      "contentOutline": [
+        "建立前、侧、后视中立站姿观察流程",
+        "记录头颈、肩带、躯干、骨盆、膝和足的相对位置",
+        "比较不同时间和情境的重复性",
+        "将静态观察作为动态观察和动作提示的线索",
+        "用中性语言反馈并共同确定下一步"
+      ],
+      "scopeSafety": "姿势不是疾病诊断，也没有人人必须达到的完美站姿；疼痛、神经症状或创伤须转介，影像需知情同意和隐私保护。",
+      "avoidDuplication": "不重列 Day 59–60 的肌肉清单或纠正流程。"
+    },
+    {
+      "day": 87,
+      "title": "动态动作评估-过顶深蹲与单腿",
+      "track": "NASM",
+      "historicalSourceDay": 66,
+      "currentRefs": ["Day 59–60", "planned Day 86"],
+      "lessonType": "movement-observation",
+      "contentOutline": [
+        "介绍过顶深蹲、单腿及基础推拉观察的用途",
+        "固定视角、动作范围、次数和观察清单",
+        "记录可见代偿与训练史、疲劳、鞋具和当日状态",
+        "选择低风险提示、降范围、降负荷或基础控制的下一步",
+        "明确疼痛、失衡、失控和持续异常的停止条件"
+      ],
+      "scopeSafety": "这是教练观察而不是肌肉骨骼诊断、治疗或损伤预测；疼痛、麻木、眩晕或不安全代偿立即停止并转介。",
+      "avoidDuplication": "Day 86 是静态线索，Day 59–60 是训练应用；本课只补动态决策。"
+    },
+    {
+      "day": 88,
+      "title": "FMS功能性动作筛查",
+      "track": "NASM",
+      "historicalSourceDay": 67,
+      "currentRefs": ["Day 31", "planned Day 87"],
+      "lessonType": "movement-screen",
+      "contentOutline": [
+        "说明 FMS 七个动作模式、记录和受训评估者角色",
+        "区分疼痛、左右不对称和动作质量的记录优先级",
+        "强调同一流程、器材和记录表才可复测",
+        "据筛查决定降低复杂度、补充观察或转介",
+        "说明 FMS 不能诊断、批准参训或单独预测个体伤病"
+      ],
+      "scopeSafety": "遵循合格培训和正式流程；疼痛、急性伤病或明显症状终止筛查并由医疗人员处理。",
+      "avoidDuplication": "Day 87 已做单项动态观察，本课只讲多模式筛查的记录、解释和局限。"
+    },
+    {
+      "day": 89,
+      "title": "CES纠正性训练continuum",
+      "track": "NASM",
+      "historicalSourceDay": 70,
+      "currentRefs": ["Day 45–46", "Day 59–60"],
+      "lessonType": "corrective-framework",
+      "contentOutline": [
+        "以疼痛/风险筛查为起点说明抑制、拉长、激活、整合",
+        "解释各环节的教学目的而非固定配方",
+        "用低风险热身案例展示温和活动度到整合动作的衔接",
+        "按反应、质量和目标调整顺序、剂量或停止",
+        "将可接受环节放进热身或辅助训练并设复查点"
+      ],
+      "scopeSafety": "CES 不替代物理治疗、手法治疗或诊断；疼痛加重、术后限制和疑似结构问题须转介，SMR/拉伸不得造成疼痛。",
+      "avoidDuplication": "Day 59–60 已有具体模式，本课只讲连续框架与个体化决策。"
+    },
+    {
+      "day": 90,
+      "title": "OPT模型复盘+CES整合应用",
+      "track": "NASM",
+      "historicalSourceDay": 73,
+      "currentRefs": ["Day 52–61", "planned Day 81–89"],
+      "lessonType": "integrated-case",
+      "contentOutline": [
+        "用筛查、目标、热身/CES、OPT 主训练、复盘组织会话地图",
+        "按目标、技术、耐受和恢复选择或调整阶段",
+        "把 CES 放在热身/辅助时段并保留主训练目标",
+        "用动作质量、RPE、完成度和反应记录调整依据",
+        "区分教练调整问题与医疗/康复转介问题"
+      ],
+      "scopeSafety": "整合案例是教育练习，不是疾病处方；高负荷、爆发和复杂动作仍需技术、筛查和监督条件。",
+      "avoidDuplication": "不重讲 Day 52–61 动作或 Day 89 环节；只串联安全流程。"
+    },
+    {
+      "day": 91,
+      "title": "周期化-线性/非线性/板块",
+      "track": "双证",
+      "historicalSourceDay": 88,
+      "currentRefs": ["Day 29", "Day 36", "Day 74–75"],
+      "lessonType": "program-design",
+      "contentOutline": [
+        "建立大周期、中周期和微周期层级",
+        "对比线性、非线性和板块周期化的组织逻辑",
+        "按经验、可用训练日、项目、赛程、恢复和目标选择模型",
+        "说明容量、强度、技术速度和恢复如何共同变化",
+        "以日志、表现和疲劳信号复盘并衔接减量"
+      ],
+      "scopeSafety": "周期化不能绕过疼痛、疾病、能量不足或恢复失败；竞技计划应与合格教练/医疗团队协作。",
+      "avoidDuplication": "Day 74/75 已有变量、分化、微周期和减量；本课只补三种长期组织模型。"
+    },
+    {
+      "day": 92,
+      "title": "紧急预案EAP与CPR/AED认证",
+      "track": "NSCA",
+      "historicalSourceDay": 92,
+      "currentRefs": ["Day 31", "Day 76"],
+      "lessonType": "emergency-readiness",
+      "contentOutline": [
+        "列出 EAP 的场所、人员、设备、通信和流程要素",
+        "维护 AED、急救箱、出口、集合点、医院和联系人的清单",
+        "强调 CPR/AED 技能、有效期和复训以认可机构为准",
+        "演练识别、呼叫急救、分工、记录和复盘的组织流程",
+        "安排定期演练、设备检查和事件后的改进"
+      ],
+      "scopeSafety": "不替代现场急救认证或当地紧急服务指令；紧急时呼叫急救系统并按受训人员/官方流程行动，不提供替代认证的操作教学。",
+      "avoidDuplication": "Day 76 仅为个人慢病风险背景，本课讲场所级紧急组织。"
+    },
+    {
+      "day": 93,
+      "title": "设施安全管理与风险控制",
+      "track": "NSCA",
+      "historicalSourceDay": 93,
+      "currentRefs": ["Day 31", "planned Day 92"],
+      "lessonType": "facility-risk",
+      "contentOutline": [
+        "制作开场、营业中和闭场的安全检查清单",
+        "建立设备维护、故障隔离、消毒和维修复用记录",
+        "用识别、评估、控制、监测、复盘管理风险",
+        "规范筛查、同意、训练日志、事件报告和数据访问",
+        "用去标识化近失事件推动培训、布局或制度改进"
+      ],
+      "scopeSafety": "遵守当地消防、卫生、无障碍、劳动和数据规则，并向保险/合规人员确认；免责文件不自动消除合理安全义务。",
+      "avoidDuplication": "Day 92 是突发响应，本课是事前预防、维护和记录。"
+    },
+    {
+      "day": 94,
+      "title": "法务伦理与业务模式",
+      "track": "双证",
+      "historicalSourceDay": 94,
+      "currentRefs": ["Day 70", "Day 76–77", "planned Day 92–93"],
+      "lessonType": "professional-boundaries",
+      "contentOutline": [
+        "梳理客户利益、诚实、保密、尊重、胜任和持续教育",
+        "明确训练教育与诊断、医疗营养、治疗、药物建议的边界",
+        "以一般教育说明注意义务、违约、因果、损害和记录意义",
+        "比较雇员、独立承包和自营的服务与记录责任",
+        "制定真实宣传、价格/取消、投诉、同意和保密规则"
+      ],
+      "scopeSafety": "不提供个案法律、税务、保险或劳动意见；合同、牌照、保险和宣传须以所在地法规和专业意见为准。",
+      "avoidDuplication": "不重讲 Day 93 的检查清单或现有转介细节，只提供跨场景伦理/业务边界。"
+    },
+    {
+      "day": 95,
+      "title": "NSCA模考-科学基础",
+      "track": "NSCA",
+      "historicalSourceDay": 95,
+      "currentRefs": ["Day 1–28"],
+      "lessonType": "original-practice-exam",
+      "contentOutline": [
+        "按公开蓝图组织原创科学基础题组",
+        "记录正确率、用时和信心而非只看总分",
+        "将错误分为概念、计算、题干和记忆遗漏",
+        "用主动回忆、概念图和短计算回扣基础课",
+        "选择少量可复测的下轮复习目标"
+      ],
+      "scopeSafety": "不复制保密、付费或真实题；资格、题型和标准以最新官方说明为准，不承诺通过。",
+      "avoidDuplication": "只做 Day 1–28 的检索练习，不重写一套知识讲义。"
+    },
+    {
+      "day": 96,
+      "title": "NSCA模考-评估与运动技巧",
+      "track": "NSCA",
+      "historicalSourceDay": 96,
+      "currentRefs": ["Day 31", "Day 41–43", "Day 50", "planned Day 82–88"],
+      "lessonType": "original-practice-exam",
+      "contentOutline": [
+        "用原创场景题复习评估、技术、安全筛查和有氧监控顺序",
+        "先判断测试适用性、停止或转介，再讨论技术观察",
+        "用检查清单回顾自由重量和基础有氧安全要点",
+        "按目的、安全、记录、解释的理由链评分",
+        "把薄弱处链接回原课和错题本"
+      ],
+      "scopeSafety": "案例不是远程处方；现实中的最大测试、复杂动作和症状者仍需筛查、监督或转介。",
+      "avoidDuplication": "Day 82–88 与 Day 41–43 已讲方法/技术，本课只做综合提取。"
+    },
+    {
+      "day": 97,
+      "title": "NSCA模考-计划设计与周期化",
+      "track": "NSCA",
+      "historicalSourceDay": 97,
+      "currentRefs": ["Day 29–31", "Day 74–77", "planned Day 91"],
+      "lessonType": "original-practice-exam",
+      "contentOutline": [
+        "用原创案例练习从目标、筛查、时间资源到变量的顺序",
+        "解释 FITT-VP、适应、顺序、进阶和恢复的连接",
+        "比较周期化模型的选择依据",
+        "加入特殊人群或训练中断的缩减/转介决策",
+        "按安全边界、理由链和追踪指标评分"
+      ],
+      "scopeSafety": "案例计划不是个人医疗或竞技处方；真实服务须依据筛查、执业范围和持续反馈个体化。",
+      "avoidDuplication": "只检索 Day 29–31、74–77、91，不复制其训练模板。"
+    },
+    {
+      "day": 98,
+      "title": "NSCA模考-营养+组织安全+伦理+紧急预案",
+      "track": "NSCA",
+      "historicalSourceDay": 98,
+      "currentRefs": ["Day 62–73", "planned Day 92–94"],
+      "lessonType": "original-practice-exam",
+      "contentOutline": [
+        "用原创题复习营养、补剂、转介、风险管理、EAP 和伦理",
+        "先判定可教育、必须转介和紧急优先事项",
+        "用场馆情境练习记录、维护和事件复盘优先级",
+        "按医学/营养边界、风险、伦理和流程分类错误",
+        "整理一页关键边界核对清单"
+      ],
+      "scopeSafety": "教学不替代医疗、法律或急救认证建议；当地法规、紧急服务和机构流程优先于模拟答案。",
+      "avoidDuplication": "跨主题案例测试提取，不重复营养、EAP 或伦理原课。"
+    },
+    {
+      "day": 99,
+      "title": "NSCA全真模考1+弱项突破",
+      "track": "NSCA",
+      "historicalSourceDay": 99,
+      "currentRefs": ["planned Day 95–98"],
+      "lessonType": "original-full-mock",
+      "contentOutline": [
+        "以原创混合题和公开蓝图建立首次累计基线",
+        "记录域别正确率、用时、信心和题型困难",
+        "为每道错题写错因、概念来源和主动回忆提示",
+        "选择不超过三个弱项做短周期复习",
+        "保留新题材供 Day 104 等难度复测"
+      ],
+      "scopeSafety": "不可使用、购买、传播或暗示真实/泄露题；分数不是资格或通过概率。",
+      "avoidDuplication": "Day 95–98 是分域诊断，本课是首次累计基线；不复用旧题面充当新卷。"
+    },
+    {
+      "day": 100,
+      "title": "NASM模考-OPT+评估+CES",
+      "track": "NASM",
+      "historicalSourceDay": 100,
+      "currentRefs": ["planned Day 81–90"],
+      "lessonType": "original-practice-exam",
+      "contentOutline": [
+        "用原创案例复习 OPT、动作观察、评估局限和 CES",
+        "先完成筛查和目标澄清再决定阶段或转介",
+        "用对照表检索阶段目的、进入条件和训练重点",
+        "把观察、热身、主训练和复盘串成理由链",
+        "按错因链接回 Day 81–90 并制作新练习"
+      ],
+      "scopeSafety": "不得使用 NASM 保密/版权题或承诺通过；姿势、FMS、CES 情境不得写成远程诊断或治疗。",
+      "avoidDuplication": "Day 81–90 已给内容，本课只测试整合与术语区分。"
+    },
+    {
+      "day": 101,
+      "title": "NASM模考-营养+行为改变+核心平衡",
+      "track": "NASM",
+      "historicalSourceDay": 101,
+      "currentRefs": ["Day 57–58", "Day 62–73", "planned Day 78–80"],
+      "lessonType": "original-practice-exam",
+      "contentOutline": [
+        "以原创情境题复习营养边界、行为改变、目标沟通和核心平衡",
+        "判断何时使用开放式提问、过程目标或低门槛稳定练习",
+        "识别营养、进食障碍、慢病和心理风险的转介条件",
+        "检验核心/平衡进阶、质量和停止条件的判断",
+        "按行为、营养、动作和术语四类整理错因"
+      ],
+      "scopeSafety": "不得把行为框架变为心理治疗或给出医疗营养处方；题目与答案均为原创教育材料。",
+      "avoidDuplication": "只做跨域提取，不重复 Day 57–58、62–73、78–80 的课程正文。"
+    },
+    {
+      "day": 102,
+      "title": "NASM全真模考1+精讲",
+      "track": "NASM",
+      "historicalSourceDay": 102,
+      "currentRefs": ["planned Day 100–101"],
+      "lessonType": "original-full-mock",
+      "contentOutline": [
+        "用不同于专题练习的原创混合题建立 NASM 累计基线",
+        "记录时间、域别正确率、信心和不确定题处理",
+        "将错误归为知识、应用、题干和安全边界",
+        "用短小可验证精讲连接 OPT、评估、CES、营养与行为",
+        "形成 Day 105 前的弱项计划和间隔复测日期"
+      ],
+      "scopeSafety": "不声称与官方题库等同，不传播受保护材料，也不以一次模拟判断资格或通过。",
+      "avoidDuplication": "Day 100–101 是专题练习，本课才是首次 NASM 累计基线，必须使用新题材。"
+    },
+    {
+      "day": 103,
+      "title": "双证整合-跨证对照与高频考点",
+      "track": "双证",
+      "historicalSourceDay": 103,
+      "currentRefs": ["planned Day 95–102"],
+      "lessonType": "cross-framework-review",
+      "contentOutline": [
+        "以共同基础、NSCA 侧重、NASM 侧重、实务含义制作对照表",
+        "比较术语、适用场景和证据边界",
+        "标注官方公开考纲、课程笔记和循证资料来源",
+        "用原创跨框架案例练习安全边界与解释",
+        "把高混淆概念写成简明对照卡"
+      ],
+      "scopeSafety": "考试蓝图和认证要求会更新，生成时须复核官方公开资料；不比较、推测或披露真实题。",
+      "avoidDuplication": "只横向整理术语和决策，不重复分域练习或原课。"
+    },
+    {
+      "day": 104,
+      "title": "NSCA全真模考2+精讲",
+      "track": "NSCA",
+      "historicalSourceDay": 104,
+      "currentRefs": ["planned Day 99"],
+      "lessonType": "original-full-mock",
+      "contentOutline": [
+        "用不同题材的原创模拟验证 Day 99 后的弱项补强",
+        "对比正确率、用时和错因以区分真实进步和波动",
+        "把持续错误拆回最小知识单元做主动回忆",
+        "复核标记、回看和时间策略并保留合理休息",
+        "输出已稳固、需复习、需核对官方资料的证据清单"
+      ],
+      "scopeSafety": "题目必须原创，不可声称等同官方考试；通过、资格和政策只由机构确认。",
+      "avoidDuplication": "Day 99 是基线，Day 104 是新题复测；不可换序重用同一题库。"
+    },
+    {
+      "day": 105,
+      "title": "NASM全真模考2+精讲",
+      "track": "NASM",
+      "historicalSourceDay": 105,
+      "currentRefs": ["planned Day 102"],
+      "lessonType": "original-full-mock",
+      "contentOutline": [
+        "用独立新原创题组做 NASM 累计复测",
+        "比较 Day 102 后域别表现、速度和错因",
+        "为持续薄弱主题建立概念、情境、边界、出处四格卡",
+        "练习标记、回看、时间分配并保留休息",
+        "产出混合模考前的复习清单和需核对资料版本"
+      ],
+      "scopeSafety": "不得使用受版权或保密的 NASM 考试材料，也不把模拟分数解释为官方结果或通过保证。",
+      "avoidDuplication": "Day 102 是首次基线，Day 105 用新题验证改进，不重复专题精讲。"
+    },
+    {
+      "day": 106,
+      "title": "NSCA+NASM混合整合模考3",
+      "track": "双证",
+      "historicalSourceDay": 106,
+      "currentRefs": ["planned Day 103–105"],
+      "lessonType": "original-mixed-mock",
+      "contentOutline": [
+        "用原创混合案例训练 NSCA 与 NASM 语境切换",
+        "标记共同基础和体系特有概念以防名称混淆",
+        "分别统计两条知识线的正确率、用时和错因",
+        "用适用条件、非适用条件和转介理由解释答案",
+        "生成去重后的错题主题清单供 Day 107 使用"
+      ],
+      "scopeSafety": "混合模考不是双证官方联合考试；不得透支、泄露题目或把结果当认证结论。",
+      "avoidDuplication": "Day 104–105 是分证复测，本课只测跨框架切换与共同盲区。"
+    },
+    {
+      "day": 107,
+      "title": "错题集总复习+核心高频默写",
+      "track": "双证",
+      "historicalSourceDay": 107,
+      "currentRefs": ["planned Day 95–106"],
+      "lessonType": "active-recall-review",
+      "contentOutline": [
+        "按概念而非题号去重个人错题并保留错误原因和出处",
+        "主动回忆训练原则、能量、OPT、评估、CES 与转介链条",
+        "制作正反例卡以说明概念何时不适用",
+        "用间隔复习优先处理高频且影响安全决策的弱项",
+        "将仍不确定信息回到官方公开资料或原课核实"
+      ],
+      "scopeSafety": "背诵不能替代风险判断或专业转介；错题集不得含保密考试内容。",
+      "avoidDuplication": "整合个人弱项，不新增全题模拟或重抄课程正文。"
+    },
+    {
+      "day": 108,
+      "title": "考前最终冲刺+心态调整",
+      "track": "双证",
+      "historicalSourceDay": 108,
+      "currentRefs": ["planned Day 107"],
+      "lessonType": "exam-readiness",
+      "contentOutline": [
+        "核对最新官方身份、预约、地点/线上环境、物品和改期规则",
+        "将复习收敛为已验证弱项、术语对照和安全边界",
+        "安排睡眠、常规饮食、补水和出行缓冲",
+        "使用短呼吸、注意力锚点和标记回看策略",
+        "写下停学时间和需要向机构/专业人员求助的条件"
+      ],
+      "scopeSafety": "不是医疗或心理治疗建议；官方规则优先，明显焦虑、失眠或健康异常须寻求合适专业帮助。",
+      "avoidDuplication": "只做前一天准备；Day 109 才写考试当天的轻量执行。"
+    },
+    {
+      "day": 109,
+      "title": "考试当天临考要点+轻量回顾",
+      "track": "双证",
+      "historicalSourceDay": 109,
+      "currentRefs": ["planned Day 108"],
+      "lessonType": "exam-day-checklist",
+      "contentOutline": [
+        "仅回顾熟悉核对卡，不学习新框架或做高压长测",
+        "预留到达、签到、设备/证件检查和休息时间",
+        "用短而可自行停止的呼吸和注意力流程回到题干",
+        "采用先易后难、标记后回看和合理时间分配",
+        "考后记录过程感受并恢复，不讨论或传播未经允许的题目"
+      ],
+      "scopeSafety": "规则、健康决定和紧急情况以机构、当地服务和医疗人员指引为准；不保证表现或结果。",
+      "avoidDuplication": "Day 108 是前一天计划，Day 109 只保留当天执行清单。"
+    },
+    {
+      "day": 110,
+      "title": "双证收官+考后复盘与持续学习路径",
+      "track": "双证",
+      "historicalSourceDay": 110,
+      "currentRefs": ["planned Day 95–109"],
+      "lessonType": "continuing-development",
+      "contentOutline": [
+        "分开记录备考过程、实际体验和待官方确认的结果",
+        "从知识/实务盲区选少量持续学习主题和复查时间",
+        "核对继续教育、进阶认证、督导和同伴学习的当前资格",
+        "把筛查、记录、同意、转介、循证沟通固化为工作习惯",
+        "建立学习、实践、反馈、更新的下一周期闭环"
+      ],
+      "scopeSafety": "成绩、证书状态、执业范围和续证要求只能由机构与所在地法规确认；不构成职业、法律或医疗建议。",
+      "avoidDuplication": "收官只做反思与持续学习，不重做模考、错题或考试当天内容。"
+    }
+  ]
+}

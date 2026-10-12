@@ -1,0 +1,105 @@
+import * as THREE from 'three';
+import {OrbitControls} from '../vendor/OrbitControls.js';
+import {GLTFLoader} from '../vendor/GLTFLoader.js';
+const $=s=>document.querySelector(s);
+const state={angle:30,explode:0,playing:false,direction:1,selected:'muscle_biceps_long_R',hidden:new Set(),filter:'all',search:'',isolate:false,superficial:true,fascia:false,anchors:true,ready:false};
+const host=$('#canvas-host');
+const renderer=new THREE.WebGLRenderer({antialias:true,alpha:true,powerPreference:'high-performance'});
+renderer.setPixelRatio(Math.min(devicePixelRatio,1.5));renderer.setClearColor(0x000000,0);renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.18;renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFSoftShadowMap;renderer.shadowMap.autoUpdate=false;host.prepend(renderer.domElement);renderer.domElement.setAttribute('aria-label','肘部三维模型：拖动旋转，双指或滚轮缩放，点击结构查看详情');
+const scene=new THREE.Scene();const camera=new THREE.PerspectiveCamera(36,1,.005,10);camera.position.set(.48,.23,-.85);
+const controls=new OrbitControls(camera,renderer.domElement);controls.target.set(-.015,.065,-.015);controls.enableDamping=true;controls.dampingFactor=.1;controls.enablePan=true;controls.minDistance=.35;controls.maxDistance=1.65;
+scene.add(new THREE.HemisphereLight(0xdde7ee,0x3c3832,.9));
+for(const [pos,intensity,color] of [[[.3,.65,-.5],3.7,0xfff1da],[[-.4,.3,.25],3.0,0xbad6ec],[[.1,-.3,-.5],.45,0xf2c6aa]]){const l=new THREE.DirectionalLight(color,intensity);l.position.set(...pos);if(intensity>3){l.castShadow=true;l.shadow.mapSize.set(1024,1024);l.shadow.camera.left=-.38;l.shadow.camera.right=.38;l.shadow.camera.top=.4;l.shadow.camera.bottom=-.4;l.shadow.camera.near=.01;l.shadow.camera.far=2;l.shadow.bias=-.00008;l.shadow.normalBias=.0005;l.shadow.radius=2;}scene.add(l);}
+const data=await fetch('data/structures.json').then(r=>{if(!r.ok)throw Error('结构清单加载失败');return r.json()});
+const stats=await fetch('data/geometry-stats.json').then(r=>r.json());
+const byId=new Map(data.structures.map(s=>[s.id,s]));const meshes=new Map();const basePositions=new Map();const baseColors=new Map();const morphBanks=new Map();let gltf,mixer,clip,action;const v3=p=>new THREE.Vector3(p[0],p[2],-p[1]);
+const guideGroup=new THREE.Group();scene.add(guideGroup);const guides=new Map();const dotGeo=new THREE.SphereGeometry(.0024,12,8);
+const dotMats=[new THREE.MeshBasicMaterial({color:0xb5633d,depthTest:false}),new THREE.MeshBasicMaterial({color:0x557867,depthTest:false})];
+const dots=dotMats.map(m=>{const d=new THREE.Mesh(dotGeo,m);d.renderOrder=10;guideGroup.add(d);return d;});
+const raycaster=new THREE.Raycaster(),pointer=new THREE.Vector2();let pointerStart=null,lastDetailAngle=-1,lastPhase='';const frameTimes=[];
+function visible(s){return !state.hidden.has(s.id)&&(!state.isolate||s.id===state.selected)&&(s.type!=='fascia'||state.fascia)&&(state.superficial||s.layer!=='superficial');}
+function list(){
+ const root=$('#structure-list');root.replaceChildren();const groups=[['bone','骨骼 / BONES'],['muscle','肌肉 / MUSCLES'],['tendon','肌腱 / TENDONS'],['fascia','筋膜 / FASCIA']];
+ for(const [kind,title] of groups){const items=data.structures.filter(s=>s.type===kind&&(state.filter==='all'||s.type===state.filter)&&(!state.search||(s.name+s.english).toLowerCase().includes(state.search)));
+  if(!items.length)continue;const heading=document.createElement('div');heading.className='group-title';heading.innerHTML=`${title}<span>${String(items.length).padStart(2,'0')}</span>`;root.append(heading);
+  for(const s of items){const row=document.createElement('div');row.className=`structure-row ${s.id===state.selected?'selected':''} ${visible(s)?'':'is-hidden'}`;row.dataset.id=s.id;const button=document.createElement('button');button.className='select-structure';button.innerHTML=`<i class="layer-dot ${s.layer==='deep'?'deep':''} ${s.type==='bone'?'bone':''}"></i><span>${s.name}</span>`;button.setAttribute('aria-pressed',String(state.selected===s.id));button.addEventListener('click',()=>select(s.id,true));row.append(button);const eye=document.createElement('button');eye.className='eye';eye.textContent=visible(s)?'◉':'○';eye.title=`${visible(s)?'隐藏':'显示'}${s.name}`;eye.setAttribute('aria-label',eye.title);eye.onclick=()=>{if(visible(s))state.hidden.add(s.id);else{state.hidden.delete(s.id);if(s.layer==='superficial')state.superficial=true;if(s.type==='fascia')state.fascia=true;if(state.isolate&&s.id!==state.selected)state.isolate=false;}sync();};row.append(eye);root.append(row);}
+ }
+ if(!root.children.length)root.innerHTML='<p class="no-results">没有匹配的结构</p>';
+}
+function role(s){if(s.type==='bone')return '骨性参照 · 随所属运动组运动';if(s.type==='fascia')return '组织包络示意 · 不参与力学计算';if(!state.playing)return s.action==='flexor'?'屈肘参与结构 · 静止观察':'伸肘参与结构 · 静止观察';const active=(state.direction===1)===(s.action==='flexor');return active?'主动参与 · 缩短示意':'被动拉长示意';}
+function detail(){
+ const s=byId.get(state.selected),i=data.structures.indexOf(s)+1;$('#selection-number').textContent=`${String(i).padStart(2,'0')} / 17`;
+ const kind={bone:'骨骼 / BONE',muscle:'肌肉 / MUSCLE',tendon:'肌腱 / TENDON',fascia:'筋膜 / FASCIA'}[s.type];
+ $('#detail-content').innerHTML=`<span class="structure-kind">${kind}</span><h3>${s.name}</h3><p class="english">${s.english}</p><div class="chips"><span class="chip">右侧</span><span class="chip">${{skeleton:'骨骼层',superficial:'浅层',deep:'深层',fascia:'示意包络'}[s.layer]}</span><span class="chip warm">${s.type==='fascia'?'筋膜示意':s.type==='tendon'?'腱区分离':'数据库形态'}</span></div><dl><div class="attachment"><span class="point">O</span><div><dt>${s.type==='bone'?'所属运动组':'起点 / ORIGIN'}</dt><dd>${s.type==='bone'?(s.binding==='forearm'?'尺桡骨共同绕肘轴运动':'固定上臂参照'):s.origin}</dd></div></div><div class="attachment"><span class="point insert">I</span><div><dt>${s.type==='bone'?'结构说明':'止点 / INSERTION'}</dt><dd>${s.type==='bone'?s.note:s.insertion}</dd></div></div></dl><div class="role-card"><span>当前运动角色</span><b id="role-label">${role(s)}</b><small id="length-label"></small></div>`;
+ $('#isolate').textContent=state.isolate?'退出隔离':'单块隔离';$('#isolate').classList.toggle('active',state.isolate);updateRole();
+}
+function updateRole(){const s=byId.get(state.selected);$('#role-label').textContent=role(s);const st=stats[s.id];if(st){const p=state.angle/5,k=Math.min(23,Math.floor(p)),f=p-k,L=THREE.MathUtils.lerp(st.pathLengthsMetres[k],st.pathLengthsMetres[k+1],f);$('#length-label').textContent=`模型路径 ${Math.round(L*1000)} mm · 相对伸展位 ${((L/st.restLength-1)*100).toFixed(1)}%（非人体测量）`;}else $('#length-label').textContent='BodyParts3D 形态 · 运动与分区待专业审核';}
+function select(id,reveal=false){if(!byId.has(id))return;state.selected=id;if(reveal){const s=byId.get(id);state.hidden.delete(id);if(s.layer==='superficial')state.superficial=true;if(s.type==='fascia')state.fascia=true;}sync();}
+function sync(){
+ $('#superficial').checked=state.superficial;$('#fascia').checked=state.fascia;$('#anchors').checked=state.anchors;$('#explode').value=state.explode*100;$('#explode-value').textContent=`${Math.round(state.explode*100)}% · 展开`;
+ for(const s of data.structures){const m=meshes.get(s.id);if(m)m.visible=visible(s);}list();detail();pose();
+}
+function boneAnchor(s,end){const node=gltf.scene.getObjectByName((end?'insertion__':'origin__')+s.id);if(!node)return new THREE.Vector3();const p=node.getWorldPosition(new THREE.Vector3());const bone=s.bones[end?1:0];if(byId.has(bone))p.add(v3(byId.get(bone).explode).multiplyScalar(state.explode));return p;}
+function ringCenter(m,last){const marker=gltf.scene.getObjectByName((last?'belly_insertion__':'belly_origin__')+(m.userData.structure_id||m.name));if(marker)return marker.getWorldPosition(new THREE.Vector3()).add(v3(byId.get(m.userData.structure_id||m.name).explode).multiplyScalar(state.explode));const count=m.geometry.attributes.position.count,sides=16;const center=new THREE.Vector3(),v=new THREE.Vector3();for(let j=0;j<sides;j++){m.getVertexPosition((last?count-sides:0)+j,v);center.add(v);}return m.localToWorld(center.multiplyScalar(1/sides));}
+function updateGuides(){
+ if(!state.ready)return;gltf.scene.updateMatrixWorld(true);const s=byId.get(state.selected);dots.forEach((dot,end)=>{dot.visible=state.anchors&&s.type==='muscle'&&visible(s);if(dot.visible)dot.position.copy(boneAnchor(s,end));});
+ for(const [id,lines] of guides){const item=byId.get(id),m=meshes.get(id);for(let end=0;end<2;end++){const line=lines[end];line.visible=state.explode>.001&&visible(item);if(!line.visible)continue;const a=ringCenter(m,end),b=boneAnchor(item,end);line.geometry.attributes.position.setXYZ(0,a.x,a.y,a.z);line.geometry.attributes.position.setXYZ(1,b.x,b.y,b.z);line.geometry.attributes.position.needsUpdate=true;line.computeLineDistances();line.material.opacity=id===state.selected?.85:.25;}}
+}
+let shadowTick=0;
+function pose(){
+ if(!state.ready)return;
+ if(!state.playing||shadowTick++%3===0)renderer.shadowMap.needsUpdate=true;
+ action.time=Math.min(clip.duration-1e-7,1/30+state.angle/30);
+ mixer.update(0);
+ // Send only the two neighboring exported morph targets to the GPU (not all 24).
+ for(const [id,bank] of morphBanks){
+  const k=Math.min(23,Math.floor(state.angle/5)),f=(state.angle-k*5)/5,m=meshes.get(id);
+  if(!bank.geometries[k]){
+   const g=new THREE.BufferGeometry();g.setIndex(bank.source.index);
+   for(const [name,attribute] of Object.entries(bank.source.attributes))g.setAttribute(name,attribute);
+   g.morphTargetsRelative=true;
+   g.morphAttributes.position=k===0?[bank.targets[0],bank.targets[0]]:[bank.targets[k-1],bank.targets[k]];
+   if(bank.normals)g.morphAttributes.normal=k===0?[bank.normals[0],bank.normals[0]]:[bank.normals[k-1],bank.normals[k]];
+   bank.geometries[k]=g;
+  }
+  m.geometry=bank.geometries[k];m.morphTargetInfluences=k===0?[f,0]:[1-f,f];
+ }
+ gltf.scene.updateMatrixWorld(true);
+ for(const [id,m] of meshes){const offset=v3(byId.get(id).explode).multiplyScalar(state.explode),q=m.parent.getWorldQuaternion(new THREE.Quaternion()).invert();m.position.copy(basePositions.get(id)).add(offset.applyQuaternion(q));
+  const s=byId.get(id);m.material.color.copy(baseColors.get(id));m.material.emissive.set(0x000000);
+  if(state.playing&&s.action){const active=(state.direction===1)===(s.action==='flexor');m.material.color.lerp(new THREE.Color(active?0xb95935:0x91a29c),active?.16:.55);}
+  if(id===state.selected){m.material.emissive.set(0x3c2113);m.material.emissiveIntensity=.26;}
+ }
+ updateGuides();$('#angle').value=state.angle;$('#angle-value').textContent=`${Math.round(state.angle)}°`;const phase=state.playing?(state.direction===1?'屈曲 · 屈肌主动参与':'伸展 · 伸肌主动参与'):'静止观察';$('#phase').textContent=phase;
+ if(Math.abs(lastDetailAngle-state.angle)>1||lastPhase!==phase){updateRole();lastDetailAngle=state.angle;lastPhase=phase;}
+}
+function view(name){const t=controls.target;const positions={front:[-.02,.085,-1.03],side:[1.00,.07,0],back:[0,.09,1.02],reset:[.48,.23,-.85],close:[.32,.12,-.4]};camera.position.set(...positions[name]);t.set(-.015,name==='close'?.055:.065,-.015);controls.update();$('#view-label').textContent={front:'前面观',side:'右外侧观',back:'后面观',reset:'前外侧观',close:'肘部特写'}[name];}
+function togglePlay(value=!state.playing){state.playing=value;renderer.setPixelRatio(value?Math.min(devicePixelRatio,.8):Math.min(devicePixelRatio,1.5));if(value&&state.angle>=120)state.direction=-1;if(value&&state.angle<=0)state.direction=1;$('#play').textContent=value?'Ⅱ':'▶';$('#play').setAttribute('aria-label',value?'暂停屈伸':'播放屈伸');pose();}
+$('#play').onclick=()=>togglePlay();$('#angle').oninput=e=>{const nextAngle=+e.target.value;togglePlay(false);state.angle=nextAngle;pose();};$('#explode').oninput=e=>{state.explode=+e.target.value/100;$('#explode-value').textContent=`${e.target.value}% · 展开`;pose();};$('#fit').onclick=()=>{state.explode=0;$('#explode').value=0;$('#explode-value').textContent='0% · 展开';pose();};
+for(const key of ['superficial','fascia','anchors'])$('#'+key).onchange=e=>{state[key]=e.target.checked;sync();};
+$('#reveal').onclick=()=>{state.superficial=false;state.fascia=false;state.isolate=false;state.hidden.delete('muscle_brachialis_R');state.hidden.delete('tendon_brachialis_distal_R');state.selected='muscle_brachialis_R';view('front');sync();};
+$('#isolate').onclick=()=>{state.isolate=!state.isolate;const s=byId.get(state.selected);state.hidden.delete(s.id);if(s.type==='fascia')state.fascia=true;if(s.layer==='superficial')state.superficial=true;sync();};$('#hide-selected').onclick=()=>{state.hidden.add(state.selected);sync();};$('#restore').onclick=()=>{state.hidden.clear();state.superficial=true;state.fascia=false;state.isolate=false;sync();};
+for(const name of ['front','side','back','reset','close'])$('#view-'+name).onclick=()=>view(name);
+$('#search').oninput=e=>{state.search=e.target.value.toLowerCase().trim();list();};for(const b of document.querySelectorAll('[data-filter]'))b.onclick=()=>{state.filter=b.dataset.filter;document.querySelectorAll('[data-filter]').forEach(x=>x.classList.toggle('active',x===b));list();};
+function rayAt(x,y){const r=renderer.domElement.getBoundingClientRect();pointer.set((x-r.left)/r.width*2-1,-(y-r.top)/r.height*2+1);raycaster.setFromCamera(pointer,camera);return raycaster.intersectObjects([...meshes.values()].filter(m=>m.visible),false)[0];}
+renderer.domElement.addEventListener('pointerdown',e=>{pointerStart={x:e.clientX,y:e.clientY,id:e.pointerId,time:performance.now()};});renderer.domElement.addEventListener('pointerup',e=>{if(pointerStart&&pointerStart.id===e.pointerId&&Math.hypot(e.clientX-pointerStart.x,e.clientY-pointerStart.y)<6&&performance.now()-pointerStart.time<700){const hit=rayAt(e.clientX,e.clientY);if(hit)select(hit.object.userData.structure_id||hit.object.name);}pointerStart=null;});renderer.domElement.addEventListener('pointercancel',()=>pointerStart=null);
+new ResizeObserver(()=>{const w=host.clientWidth,h=host.clientHeight;renderer.setSize(w,h);camera.aspect=w/h;camera.updateProjectionMatrix();}).observe(host);
+try{
+ gltf=await new GLTFLoader().loadAsync('assets/elbow-right.glb');scene.add(gltf.scene);
+ gltf.scene.traverse(o=>{if(o.isMesh&&byId.has(o.userData.structure_id||o.name)){const id=o.userData.structure_id||o.name;o.material=o.material.clone();o.material.metalness=0;o.castShadow=true;o.receiveShadow=true;meshes.set(id,o);basePositions.set(id,o.position.clone());baseColors.set(id,o.material.color.clone());o.frustumCulled=false;if(byId.get(id).type==='fascia'){o.material.transparent=true;o.material.opacity=.11;o.castShadow=false;o.material.depthWrite=false;o.material.side=THREE.DoubleSide;}else o.material.side=byId.get(id).type==='bone'?THREE.DoubleSide:THREE.FrontSide;}});
+ for(const [id,m] of meshes){if(m.geometry.morphAttributes.position?.length)morphBanks.set(id,{source:m.geometry,targets:m.geometry.morphAttributes.position,normals:m.geometry.morphAttributes.normal,geometries:[]});}
+ if(meshes.size!==17)throw Error(`模型结构缺失：${meshes.size}/17`);
+ // Blender emits one scene action per object; merge their tracks to sample them together.
+ clip=new THREE.AnimationClip('Elbow flexion 0–120',-1,gltf.animations.flatMap(a=>a.tracks).filter(t=>!t.name.endsWith('.morphTargetInfluences')));mixer=new THREE.AnimationMixer(gltf.scene);action=mixer.clipAction(clip);action.play();action.paused=true;
+ for(const s of data.structures.filter(s=>s.type==='muscle')){const lines=[0,1].map(()=>{const geo=new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(),new THREE.Vector3()]);const line=new THREE.Line(geo,new THREE.LineDashedMaterial({color:0x6c806b,dashSize:.005,gapSize:.003,transparent:true,opacity:.5,depthTest:false}));line.frustumCulled=false;line.renderOrder=4;guideGroup.add(line);return line;});guides.set(s.id,lines);}
+ state.ready=true;sync();$('#loading').remove();$('#load-status').textContent='17 结构 · GLB 已加载';
+}catch(error){$('#loading').innerHTML='<b>模型加载失败</b><small>请通过本地 HTTP 服务打开，查看 README 启动说明。</small>';$('#load-status').textContent='加载失败';console.error(error);}
+let last=performance.now();function animate(now){const dt=Math.min((now-last)/1000,.05);frameTimes.push(now-last);if(frameTimes.length>240)frameTimes.shift();last=now;if(state.ready&&state.playing&&!document.hidden){state.angle+=dt*26*state.direction;if(state.angle>=120){state.angle=120;state.direction=-1;}if(state.angle<=0){state.angle=0;state.direction=1;}pose();}controls.update();if(state.ready){const s=byId.get(state.selected),label=$('#floating-label'),m=meshes.get(state.selected);label.hidden=!m.visible;if(m.visible){const p=s.type==='muscle'?ringCenter(m,0):new THREE.Box3().setFromObject(m).getCenter(new THREE.Vector3());p.project(camera);label.textContent=s.name;label.style.left=`${THREE.MathUtils.clamp((p.x+1)/2*host.clientWidth,65,host.clientWidth-65)}px`;label.style.top=`${THREE.MathUtils.clamp((1-p.y)/2*host.clientHeight,135,host.clientHeight-40)}px`;}}renderer.render(scene,camera);requestAnimationFrame(animate);}requestAnimationFrame(animate);
+// Local QA interface: returns actual mesh positions, ray hits and draw performance.
+window.__lab={resetTiming:()=>{frameTimes.length=0},state,data,meshes,camera,controls,renderer,gltf,stats,select,pose,view,togglePlay,rayAt,sync,
+ visible:()=>data.structures.filter(visible).map(s=>s.id),
+ snapshot:()=>({angle:state.angle,explode:state.explode,selected:state.selected,visible:data.structures.filter(visible).map(s=>s.id),positions:Object.fromEntries([...meshes].map(([id,m])=>[id,m.position.toArray()])),fps:1000/(frameTimes.slice(-120).reduce((a,b)=>a+b,0)/Math.min(frameTimes.length,120)),drawCalls:renderer.info.render.calls,triangles:renderer.info.render.triangles}),
+ meshPoint:(id,index=0)=>{const m=meshes.get(id),p=new THREE.Vector3();m.getVertexPosition(index,p);return m.localToWorld(p).toArray();},
+ project:(id)=>{const m=meshes.get(id),p=new THREE.Box3().setFromObject(m).getCenter(new THREE.Vector3()).project(camera),r=renderer.domElement.getBoundingClientRect();return {x:r.left+(p.x+1)/2*r.width,y:r.top+(1-p.y)/2*r.height};},
+ anchor:(id,end)=>boneAnchor(byId.get(id),end).toArray()
+};

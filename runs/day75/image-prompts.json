@@ -1,0 +1,50 @@
+{
+  "commonPrompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper background, loose paper sheets, border, sticker edge, shadow, or halo. A small unmarked rigid evidence card is allowed as a prop. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.\n\nAdditional course-specific guardrails: 固定波吉与德斯帕、二维教学插画、深灰细轮廓和平涂；每张仅可出现两位固定角色的安全姿态。 输出真实透明PNG，未绘制区域alpha为0；没有健身房背景、日历、地板、边框、阴影、棋盘格、水印或品牌。 AI图内无文字、数字、星期、日历格、计时器、箭头、图表、比赛Logo或奖牌。 用空白训练卡、轻负荷器械、温和步行和开放手势表达周期安排；不表现力竭、受伤、极端疲劳或冠军叙事。",
+  "assets": [
+    {
+      "file": "cover.png",
+      "role": "cover",
+      "prompt": "Wide 16:9 wordless single-scene course cover illustration. 横向16:9，德斯帕把数张无字空白训练卡平放小桌，波吉做轻量高脚杯深蹲准备；无日历或数字 Teach 一周训练与恢复安排: 训练卡、轻量练习和恢复共同构成微周期. 轻哑铃/壶铃靠近胸前且完整，深蹲对线自然。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters."
+    },
+    {
+      "file": "visual-01-microcycle.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. 横向28:9，德斯帕把三张无字空白卡片依次平放小桌，波吉在旁做轻松步行准备；无箭头和时间元素 Teach 微周期中的刺激与恢复: 不同训练日和恢复日被共同安排. 卡片无日历格和文字；步行自然安全。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters."
+    },
+    {
+      "file": "visual-02-split.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. 横向28:9，德斯帕做轻哑铃站姿推举，波吉做无负荷坐凳深蹲，二人之间留有空白卡片；无顺序符号 Teach 训练分化与基础动作覆盖: 分化方式应覆盖基础推拉与下肢动作. 推举在肩前安全路径，坐凳深蹲膝足对线；不画高难度动作。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters."
+    },
+    {
+      "file": "visual-03-deload.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. 横向28:9，德斯帕用很轻哑铃做受控划船，波吉坐在长凳边做放松肩部动作；无疲劳表情 Teach 减量保留技术: 低疲劳练习保持动作感觉，同时减少累积负担. 划船躯干中立、哑铃贴身；长凳稳定，不表现瘫倒。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters."
+    },
+    {
+      "file": "visual-04-peak.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. 横向28:9，德斯帕做轻松步行，波吉做温和站姿拉伸，二人旁有一张空白训练卡；无奖牌或赛场 Teach 赛前调整与赛后过渡: 专项练习与低压力恢复在不同阶段各有位置. 拉伸非极限幅度，步行稳定；不表现冲刺或比赛。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters."
+    },
+    {
+      "file": "overview-01-microcycle.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. 4:3总览专用，德斯帕摆放三张无字卡片，波吉轻松步行 Teach 微周期: 刺激与恢复一起写入短周期. 不与知识页复用；无日历或数字。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters."
+    },
+    {
+      "file": "overview-02-split.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. 4:3总览专用，德斯帕做轻哑铃推举，波吉做无负荷坐凳深蹲 Teach 训练分化: 基础动作被合理覆盖. 不与知识页复用；动作与器械安全。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters."
+    },
+    {
+      "file": "overview-03-deload.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. 4:3总览专用，德斯帕轻哑铃划船，波吉坐在长凳边放松肩部 Teach 减量恢复: 降低疲劳仍保留技术. 不与知识页复用；不表现疼痛或瘫倒。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters."
+    },
+    {
+      "file": "overview-04-peak.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. 4:3总览专用，德斯帕轻松步行，波吉做温和站姿拉伸 Teach 峰值过渡: 赛历调整后逐步回归. 不与知识页复用；无赛场、奖牌或时间符号。 This is an independently commissioned asset for this exact slot; no duplicate figures, alternate poses, sequence frames, collage, text, labels, numbers, arrows, logos, watermarks or extra characters."
+    }
+  ]
+}

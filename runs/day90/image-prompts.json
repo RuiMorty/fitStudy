@@ -1,0 +1,60 @@
+{
+  "commonPrompt": "Create clean wordless fitness-science teaching illustrations in the style of Ranking of Kings. Only recognizable male Bojji and Despa may appear: Bojji is one short boy with black hair, a tiny golden three-point crown, cobalt-blue tunic, white pants and black boots; never a tall adult. Despa is one adult male teacher with swept-back blond short hair, two small blond moustache tufts, rust-red long coat, white fur collar, beige pants and dark boots. Use fine dark-gray outlines, flat colors, and very light soft shading; no photorealism, 3D, thick paint, advertising lighting, other characters, logos, watermarks, Chinese text, English text, numbers, labels, readable screens, arrows, chart axes, blue circles or unexplained markers. Output a true transparent PNG: every unpainted pixel alpha 0; never render a white or gray checkerboard, floor, room, paper background, loose paper sheets, border, sticker edge, shadow, or halo. A small unmarked rigid evidence card is allowed as a prop. White pants and fur collar remain opaque white. Keep every body and prop fully inside a six-percent safe margin.",
+  "assets": [
+    {
+      "file": "cover.png",
+      "role": "cover",
+      "prompt": "Wide 16:9 wordless single-scene course cover. Exactly one Despa holds one small unmarked rigid session-map card with five empty non-symbolic compartments while exactly one Bojji holds a comfortable shallow bodyweight squat; a soft ball and light band are isolated side props. Explain a generic educational session-reasoning map and review, not diagnosis, treatment, individual prescription or a fixed sequence. Isolate the figures and props on the transparent canvas: no floor, ground plane, cast shadow, room, medical symbols, duplicate figures, alternate poses, sequence frames, arrows, readable signs, text, numbers, labels or unrelated equipment."
+    },
+    {
+      "file": "visual-01.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Exactly one Despa holds one small unmarked rigid map card with five empty non-symbolic compartments while exactly one Bojji stands in a comfortable neutral training stance; a soft ball and light band are isolated side props. Explain five educational checkpoints for a session, not a fixed individual prescription or screening verdict. Use one continuous current pose with all limbs and props fully visible. Isolate the figures and props on the transparent canvas: no floor, ground plane, cast shadow, duplicate figures, alternate poses, sequence frames, arrows, motion trails, text, numbers, labels, readable screens, blue circles or unrelated equipment."
+    },
+    {
+      "file": "visual-02.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Exactly one Bojji holds a shallow stable bodyweight squat while a more complex plain jump box is an unused isolated side prop and exactly one Despa observes calmly. Explain choosing or reducing complexity from goals, technique, tolerance and recovery, not a mandatory stage progression or individual prescription. Use one continuous current pose with all limbs and props fully visible. Isolate the figures and props on the transparent canvas: no floor, ground plane, cast shadow, duplicate figures, alternate poses, sequence frames, arrows, motion trails, text, numbers, labels, readable screens, blue circles or unrelated equipment."
+    },
+    {
+      "file": "visual-03.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Exactly one Despa presents a soft ball and light band as small isolated warm-up-support props while exactly one Bojji holds a comfortable shallow bodyweight squat. Explain that general, pain-free support work serves a clear main-training goal and is not treatment or an endless correction routine. Use one continuous current pose with all limbs and props fully visible. Isolate the figures and props on the transparent canvas: no floor, ground plane, cast shadow, duplicate figures, alternate poses, sequence frames, arrows, motion trails, text, numbers, labels, readable screens, blue circles or unrelated equipment."
+    },
+    {
+      "file": "visual-04.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Exactly one Bojji stands calmly in a neutral recovery posture while exactly one Despa holds one small unmarked rigid feedback card with four empty non-symbolic compartments and an attentive open hand. Explain recording quality, perceived effort, completion and response to guide the next educational adjustment, not a score, diagnosis or prescription. Use one continuous current pose with all limbs and the card fully visible. Isolate the figures and card on the transparent canvas: no floor, ground plane, cast shadow, duplicate figures, alternate poses, sequence frames, arrows, motion trails, text, numbers, labels, readable screens, blue circles or unrelated equipment."
+    },
+    {
+      "file": "visual-05.png",
+      "role": "knowledge",
+      "prompt": "Wide 28:9 wordless single-scene knowledge illustration. Exactly one Bojji makes a calm open-palm stop gesture while exactly one Despa lowers an unused simple low step with an open respectful hand. Explain stopping general training and seeking appropriate support for concerning symptoms or out-of-scope needs, not treatment or diagnosis. Use one continuous current pose with all limbs and props fully visible. Isolate the figures and props on the transparent canvas: no floor, ground plane, cast shadow, medical treatment imagery, duplicate figures, alternate poses, sequence frames, arrows, motion trails, text, numbers, labels, readable screens, blue circles or unrelated equipment."
+    },
+    {
+      "file": "overview-01.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Exactly one Despa presents one small unmarked rigid session-map card with five empty non-symbolic compartments while exactly one Bojji remains in a neutral training stance. Explain a generic session map in a compact panel; do not reuse the knowledge-page composition. Isolate the figures and card on the transparent canvas: no floor, ground plane, cast shadow, duplicate figures, alternate poses, sequence frames, text, numbers, labels, arrows, motion trails or unrelated equipment."
+    },
+    {
+      "file": "overview-02.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Exactly one Bojji holds a shallow stable bodyweight squat while exactly one Despa observes a more complex plain jump box as an unused side prop. Explain preparation-based complexity choice in a compact panel; do not reuse the knowledge-page composition. Isolate the figures and prop on the transparent canvas: no floor, ground plane, cast shadow, duplicate figures, alternate poses, sequence frames, text, numbers, labels, arrows, motion trails or unrelated equipment."
+    },
+    {
+      "file": "overview-03.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Exactly one Despa holds a soft ball and light band as small support props while exactly one Bojji maintains a comfortable shallow bodyweight squat. Explain warm-up support for a main goal in a compact panel; do not reuse the knowledge-page composition. Isolate the figures and props on the transparent canvas: no floor, ground plane, cast shadow, duplicate figures, alternate poses, sequence frames, text, numbers, labels, arrows, motion trails or unrelated equipment."
+    },
+    {
+      "file": "overview-04.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Exactly one Bojji stands in a calm neutral recovery posture while exactly one Despa shows one small unmarked rigid feedback card with four empty non-symbolic compartments. Explain reflective feedback in a compact panel; do not reuse the knowledge-page composition. Isolate the figures and card on the transparent canvas: no floor, ground plane, cast shadow, duplicate figures, alternate poses, sequence frames, text, numbers, labels, arrows, motion trails or unrelated equipment."
+    },
+    {
+      "file": "overview-05.png",
+      "role": "overview-item",
+      "prompt": "Wide 4:3 wordless single-scene overview-only illustration. Exactly one Bojji makes a calm open-palm stop gesture while exactly one Despa respectfully lowers an unused simple low step. Explain training-adjustment versus referral boundaries in a compact panel; do not reuse the knowledge-page composition. Isolate the figures and prop on the transparent canvas: no floor, ground plane, cast shadow, medical treatment imagery, duplicate figures, alternate poses, sequence frames, text, numbers, labels, arrows, motion trails or unrelated equipment."
+    }
+  ]
+}

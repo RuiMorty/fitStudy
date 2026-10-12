@@ -1,0 +1,74 @@
+[
+  {
+    "id": "aerobic-fueling",
+    "category": "运动生理",
+    "title": "长时间有氧运动，身体怎么供能？",
+    "summary": "从起步到两小时后，读懂肌糖原、肝糖原、脂肪和糖异生。",
+    "date": "2026-10-09",
+    "cover": "knowledge/thumbs/aerobic-fueling/landscape-cover.webp",
+    "note": "时间线是常见趋势，不是固定切换点。PCr 是快速 ATP 缓冲，糖和脂肪是燃料；图中曲线不是精确比例，也不能相加为 100%。",
+    "slides": [
+      {
+        "title": "跑步30分钟才燃脂？",
+        "description": "脂肪从起步就参与供能，没有“30 分钟开关”。",
+        "thumbnail": "knowledge/thumbs/aerobic-fueling/01-cover.webp",
+        "image": "xhs-knowledge/2026-10-08-aerobic-fueling/images/01-cover.png",
+        "details": [
+          "运动刚开始，肌肉就会同时使用糖和脂肪；只是起步和提速时，快速供能途径更显眼。随着呼吸、循环和有氧代谢逐渐稳定，脂肪的相对贡献可能提高。",
+          "因此“前 30 分钟只烧糖”不成立。一次运动到底用了多少糖、多少脂肪，主要还受强度、进食、训练状态和持续时间影响。"
+        ]
+      },
+      {
+        "title": "跑步时，身体怎么供能？",
+        "description": "这张图画的是趋势，不是按分钟切换燃料的时刻表。",
+        "thumbnail": "knowledge/thumbs/aerobic-fueling/02-timeline.webp",
+        "image": "xhs-knowledge/2026-10-08-aerobic-fueling/images/02-timeline.png",
+        "details": [
+          "突然起步的前几秒，肌肉里的磷酸肌酸（PCr）快速帮助再生 ATP；肌糖原和有氧代谢也已经参与。约 10 秒到数分钟，有氧供能逐渐跟上，PCr 的快速下降趋缓。",
+          "进入稳定运动后，肌糖原、血糖和脂肪酸继续并行使用。持续中低强度且不补糖时，脂肪相对贡献通常升高；时间很长时，肝脏维持血糖的压力增加。",
+          "蓝线是 PCr 的快速缓冲，红、绿线是糖和脂肪的相对趋势。它们不是同一口径的百分比，不能相加为 100%，也不能据此计算个人消耗量。"
+        ]
+      },
+      {
+        "title": "肌糖原＝肌肉自己的糖",
+        "description": "肌糖原是储存在肌肉里的糖，主要供这块工作肌自己使用。",
+        "thumbnail": "knowledge/thumbs/aerobic-fueling/03-muscle-glycogen.webp",
+        "image": "xhs-knowledge/2026-10-08-aerobic-fueling/images/03-muscle-glycogen.png",
+        "details": [
+          "运动一开始，工作肌就能分解肌糖原来制造 ATP。需要加速、爬坡或维持较高强度时，身体通常更依赖糖，肌糖原消耗也往往更快。",
+          "肌糖原不能像肝糖原那样直接变成血糖供全身使用。它用得快不快没有统一的“第几分钟”答案，要看运动强度、训练水平和起跑前储量。"
+        ]
+      },
+      {
+        "title": "肝糖原＝肝脏的血糖储备",
+        "description": "肝糖原的主要任务，是帮助维持血液中的葡萄糖。",
+        "thumbnail": "knowledge/thumbs/aerobic-fueling/04-liver-glycogen.webp",
+        "image": "xhs-knowledge/2026-10-08-aerobic-fueling/images/04-liver-glycogen.png",
+        "details": [
+          "运动时，肝脏把储存的糖原分解成葡萄糖，释放到血液；工作肌和其他组织可以从血液取用。它从早期就参与，不是等肌糖原用完才开始。",
+          "如果运动持续很久又不补糖，肝糖原储量会逐渐下降。储量下降时，糖异生对维持血糖通常更重要；具体变化速度因人和运动条件而异。"
+        ]
+      },
+      {
+        "title": "脂肪从起步就参与",
+        "description": "脂肪不是后半程才启动的备用燃料。",
+        "thumbnail": "knowledge/thumbs/aerobic-fueling/05-fat-oxidation.webp",
+        "image": "xhs-knowledge/2026-10-08-aerobic-fueling/images/05-fat-oxidation.png",
+        "details": [
+          "脂肪组织释放脂肪酸，血液把它们送往工作肌；肌肉也可使用自身储存的脂肪。脂肪酸进入有氧代谢后帮助制造 ATP。",
+          "在持续、较稳定的中低强度运动中，脂肪的相对贡献通常逐渐增加。但速度加快、强度升高时，身体往往更依赖糖。运动中氧化脂肪，也不能直接等同于同等数量的体脂减少。"
+        ]
+      },
+      {
+        "title": "糖异生＝肝脏重新造糖",
+        "description": "糖异生，就是用“不是糖”的原料重新制造葡萄糖。",
+        "thumbnail": "knowledge/thumbs/aerobic-fueling/06-gluconeogenesis.webp",
+        "image": "xhs-knowledge/2026-10-08-aerobic-fueling/images/06-gluconeogenesis.png",
+        "details": [
+          "运动中产生的乳酸、脂肪分解释放的甘油等，可以成为原料；主要由肝脏把它们转成葡萄糖，再释放到血液，帮助维持血糖。这里的“造糖”不等于凭空制造能量。",
+          "糖异生在运动早期就可能参与，不用等肝糖原耗尽。跑得久、没有补糖时，它维持血糖的作用通常更重要。脂肪酸本身不能直接变成葡萄糖。"
+        ]
+      }
+    ]
+  }
+]
