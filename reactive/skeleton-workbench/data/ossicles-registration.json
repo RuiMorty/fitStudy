@@ -1,0 +1,119 @@
+{
+  "method": "per-side trimmed rigid temporal-surface ICP, no scale; visualization trial only",
+  "anatomy_review": "not_validated",
+  "warning": "Global temporal surface fit does not validate tympanic cavity, oval window or tympanic membrane attachment.",
+  "sides": [
+    {
+      "side": "R",
+      "matrix_source_to_main": [
+        [
+          0.9915642566104697,
+          -0.11952982360582542,
+          0.05012929563921387,
+          -0.08005277461295804
+        ],
+        [
+          0.11617776130810684,
+          0.9910881533783703,
+          0.06516901112100959,
+          -0.20164655198583392
+        ],
+        [
+          -0.05747219144908608,
+          -0.058795352722924604,
+          0.996614295356143,
+          -0.06115577966333496
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "scale": 1,
+      "iterations": 60,
+      "temporal_vertex_nearest_mm": {
+        "median": 2.07073288038373,
+        "p95": 5.585553124547005,
+        "max": 9.447639808058739
+      },
+      "ossicles": [
+        {
+          "id": "bone_malleus_R",
+          "temporal_intersecting_triangle_pairs": 54,
+          "nearest_temporal_surface_mm": 0.005202410193305695,
+          "max_pairwise_distance_change_mm": 1.9857162789072014e-13
+        },
+        {
+          "id": "bone_incus_R",
+          "temporal_intersecting_triangle_pairs": 14,
+          "nearest_temporal_surface_mm": 0.001055802727023547,
+          "max_pairwise_distance_change_mm": 1.5005358067199381e-13
+        },
+        {
+          "id": "bone_stapes_R",
+          "temporal_intersecting_triangle_pairs": 402,
+          "nearest_temporal_surface_mm": 0.00025734181008374435,
+          "max_pairwise_distance_change_mm": 1.0614339268633088e-13
+        }
+      ]
+    },
+    {
+      "side": "L",
+      "matrix_source_to_main": [
+        [
+          0.9912364373923748,
+          0.12273855391219472,
+          -0.04884232354442248,
+          0.07665868504322772
+        ],
+        [
+          -0.12000581461211153,
+          0.9912245531418052,
+          0.05543004337103994,
+          -0.18620245302399407
+        ],
+        [
+          0.05521711369638217,
+          -0.04908291589112284,
+          0.9972672348586789,
+          -0.06204753389716554
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "scale": 1,
+      "iterations": 77,
+      "temporal_vertex_nearest_mm": {
+        "median": 2.059412654489279,
+        "p95": 5.627301288768649,
+        "max": 9.6678975969553
+      },
+      "ossicles": [
+        {
+          "id": "bone_malleus_L",
+          "temporal_intersecting_triangle_pairs": 57,
+          "nearest_temporal_surface_mm": 0.003100336925854208,
+          "max_pairwise_distance_change_mm": 1.4051260155412137e-13
+        },
+        {
+          "id": "bone_incus_L",
+          "temporal_intersecting_triangle_pairs": 0,
+          "nearest_temporal_surface_mm": 0.26587548200041056,
+          "max_pairwise_distance_change_mm": 1.962405932198763e-13
+        },
+        {
+          "id": "bone_stapes_L",
+          "temporal_intersecting_triangle_pairs": 183,
+          "nearest_temporal_surface_mm": 0.0005432924581327825,
+          "max_pairwise_distance_change_mm": 1.0451708942760263e-13
+        }
+      ]
+    }
+  ]
+}

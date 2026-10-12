@@ -1,0 +1,391 @@
+{
+  "status": "trial_not_anatomically_validated",
+  "source": "Z-Anatomy / Models-of-human-anatomy",
+  "license_review": "Z-Anatomy declares CC BY-SA 4.0; ear reference/inclusion lists Dundee CC BY-NC-SA 4.0; per-ossicle provenance not resolved. Research candidate, not approved redistribution/commercial asset.",
+  "file": "assets/ossicles-trial.glb",
+  "bones": [
+    {
+      "id": "bone_malleus_R",
+      "name_zh": "右锤骨",
+      "name_en": "Malleus",
+      "side": "R",
+      "region": "听小骨",
+      "count": 1,
+      "reference_id": "AXIAL_SKULL",
+      "source_set": "z_anatomy_2b6cf98_candidate",
+      "source_structure_id": "Malleus.r",
+      "source_file": "ear-candidate/assets/ear-candidate.blend",
+      "source_sha256": null,
+      "source_status": "external_source_rigid_fit_trial",
+      "anatomy_review": "pending",
+      "assembly_review": "rigid_surface_fit_only",
+      "rest_transform": null,
+      "joint_or_connection_ids": [
+        "incudomalleolar_R"
+      ],
+      "landmark_region_ids": [],
+      "notes": "",
+      "resource_mapping_status": "not_found_in_release_index",
+      "resource_audit": "source-audit/mapping.json",
+      "available": true,
+      "asset_region": "听小骨",
+      "trial": true,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_files": [],
+      "triangles": 3982,
+      "rest_position_web_m": [
+        -0.049160253039430404,
+        1.517964612367698,
+        0.10021175407714644
+      ],
+      "note": "整侧听骨链随颞骨表面刚性拟合试装；未核对鼓室与前庭窗。具体耳部素材许可待确认。",
+      "upstream_reflection": false,
+      "registration": [
+        [
+          0.9915642566104697,
+          -0.11952982360582542,
+          0.05012929563921387,
+          -0.08005277461295804
+        ],
+        [
+          0.11617776130810684,
+          0.9910881533783703,
+          0.06516901112100959,
+          -0.20164655198583392
+        ],
+        [
+          -0.05747219144908608,
+          -0.058795352722924604,
+          0.996614295356143,
+          -0.06115577966333496
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "bone_incus_R",
+      "name_zh": "右砧骨",
+      "name_en": "Incus",
+      "side": "R",
+      "region": "听小骨",
+      "count": 1,
+      "reference_id": "AXIAL_SKULL",
+      "source_set": "z_anatomy_2b6cf98_candidate",
+      "source_structure_id": "Incus.r",
+      "source_file": "ear-candidate/assets/ear-candidate.blend",
+      "source_sha256": null,
+      "source_status": "external_source_rigid_fit_trial",
+      "anatomy_review": "pending",
+      "assembly_review": "rigid_surface_fit_only",
+      "rest_transform": null,
+      "joint_or_connection_ids": [
+        "incudomalleolar_R",
+        "incudostapedial_R"
+      ],
+      "landmark_region_ids": [],
+      "notes": "",
+      "resource_mapping_status": "not_found_in_release_index",
+      "resource_audit": "source-audit/mapping.json",
+      "available": true,
+      "asset_region": "听小骨",
+      "trial": true,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_files": [],
+      "triangles": 2532,
+      "rest_position_web_m": [
+        -0.048006094380801306,
+        1.5182652230774571,
+        0.09761396780279571
+      ],
+      "note": "整侧听骨链随颞骨表面刚性拟合试装；未核对鼓室与前庭窗。具体耳部素材许可待确认。",
+      "upstream_reflection": false,
+      "registration": [
+        [
+          0.9915642566104697,
+          -0.11952982360582542,
+          0.05012929563921387,
+          -0.08005277461295804
+        ],
+        [
+          0.11617776130810684,
+          0.9910881533783703,
+          0.06516901112100959,
+          -0.20164655198583392
+        ],
+        [
+          -0.05747219144908608,
+          -0.058795352722924604,
+          0.996614295356143,
+          -0.06115577966333496
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "bone_stapes_R",
+      "name_zh": "右镫骨",
+      "name_en": "Stapes",
+      "side": "R",
+      "region": "听小骨",
+      "count": 1,
+      "reference_id": "AXIAL_SKULL",
+      "source_set": "z_anatomy_2b6cf98_candidate",
+      "source_structure_id": "Stapes.r",
+      "source_file": "ear-candidate/assets/ear-candidate.blend",
+      "source_sha256": null,
+      "source_status": "external_source_rigid_fit_trial",
+      "anatomy_review": "pending",
+      "assembly_review": "rigid_surface_fit_only",
+      "rest_transform": null,
+      "joint_or_connection_ids": [
+        "incudostapedial_R",
+        "stapes_window_R"
+      ],
+      "landmark_region_ids": [],
+      "notes": "",
+      "resource_mapping_status": "not_found_in_release_index",
+      "resource_audit": "source-audit/mapping.json",
+      "available": true,
+      "asset_region": "听小骨",
+      "trial": true,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_files": [],
+      "triangles": 4342,
+      "rest_position_web_m": [
+        -0.0435341773735548,
+        1.5165092942964358,
+        0.09892026608506732
+      ],
+      "note": "整侧听骨链随颞骨表面刚性拟合试装；未核对鼓室与前庭窗。具体耳部素材许可待确认。",
+      "upstream_reflection": false,
+      "registration": [
+        [
+          0.9915642566104697,
+          -0.11952982360582542,
+          0.05012929563921387,
+          -0.08005277461295804
+        ],
+        [
+          0.11617776130810684,
+          0.9910881533783703,
+          0.06516901112100959,
+          -0.20164655198583392
+        ],
+        [
+          -0.05747219144908608,
+          -0.058795352722924604,
+          0.996614295356143,
+          -0.06115577966333496
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "bone_malleus_L",
+      "name_zh": "左锤骨",
+      "name_en": "Malleus",
+      "side": "L",
+      "region": "听小骨",
+      "count": 1,
+      "reference_id": "AXIAL_SKULL",
+      "source_set": "z_anatomy_2b6cf98_candidate",
+      "source_structure_id": "Malleus.l",
+      "source_file": "ear-candidate/assets/ear-candidate.blend",
+      "source_sha256": null,
+      "source_status": "external_source_rigid_fit_trial",
+      "anatomy_review": "pending",
+      "assembly_review": "rigid_surface_fit_only",
+      "rest_transform": null,
+      "joint_or_connection_ids": [
+        "incudomalleolar_L"
+      ],
+      "landmark_region_ids": [],
+      "notes": "",
+      "resource_mapping_status": "not_found_in_release_index",
+      "resource_audit": "source-audit/mapping.json",
+      "available": true,
+      "asset_region": "听小骨",
+      "trial": true,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_files": [],
+      "triangles": 3982,
+      "rest_position_web_m": [
+        0.04779903403096241,
+        1.5180355409470416,
+        0.10035854946320946
+      ],
+      "note": "整侧听骨链随颞骨表面刚性拟合试装；未核对鼓室与前庭窗。上游左侧为镜像。具体耳部素材许可待确认。",
+      "upstream_reflection": true,
+      "registration": [
+        [
+          0.9912364373923748,
+          0.12273855391219472,
+          -0.04884232354442248,
+          0.07665868504322772
+        ],
+        [
+          -0.12000581461211153,
+          0.9912245531418052,
+          0.05543004337103994,
+          -0.18620245302399407
+        ],
+        [
+          0.05521711369638217,
+          -0.04908291589112284,
+          0.9972672348586789,
+          -0.06204753389716554
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "bone_incus_L",
+      "name_zh": "左砧骨",
+      "name_en": "Incus",
+      "side": "L",
+      "region": "听小骨",
+      "count": 1,
+      "reference_id": "AXIAL_SKULL",
+      "source_set": "z_anatomy_2b6cf98_candidate",
+      "source_structure_id": "Incus.l",
+      "source_file": "ear-candidate/assets/ear-candidate.blend",
+      "source_sha256": null,
+      "source_status": "external_source_rigid_fit_trial",
+      "anatomy_review": "pending",
+      "assembly_review": "rigid_surface_fit_only",
+      "rest_transform": null,
+      "joint_or_connection_ids": [
+        "incudomalleolar_L",
+        "incudostapedial_L"
+      ],
+      "landmark_region_ids": [],
+      "notes": "",
+      "resource_mapping_status": "not_found_in_release_index",
+      "resource_audit": "source-audit/mapping.json",
+      "available": true,
+      "asset_region": "听小骨",
+      "trial": true,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_files": [],
+      "triangles": 2532,
+      "rest_position_web_m": [
+        0.046653783648714565,
+        1.5183632124110757,
+        0.09776009309279769
+      ],
+      "note": "整侧听骨链随颞骨表面刚性拟合试装；未核对鼓室与前庭窗。上游左侧为镜像。具体耳部素材许可待确认。",
+      "upstream_reflection": true,
+      "registration": [
+        [
+          0.9912364373923748,
+          0.12273855391219472,
+          -0.04884232354442248,
+          0.07665868504322772
+        ],
+        [
+          -0.12000581461211153,
+          0.9912245531418052,
+          0.05543004337103994,
+          -0.18620245302399407
+        ],
+        [
+          0.05521711369638217,
+          -0.04908291589112284,
+          0.9972672348586789,
+          -0.06204753389716554
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "bone_stapes_L",
+      "name_zh": "左镫骨",
+      "name_en": "Stapes",
+      "side": "L",
+      "region": "听小骨",
+      "count": 1,
+      "reference_id": "AXIAL_SKULL",
+      "source_set": "z_anatomy_2b6cf98_candidate",
+      "source_structure_id": "Stapes.l",
+      "source_file": "ear-candidate/assets/ear-candidate.blend",
+      "source_sha256": null,
+      "source_status": "external_source_rigid_fit_trial",
+      "anatomy_review": "pending",
+      "assembly_review": "rigid_surface_fit_only",
+      "rest_transform": null,
+      "joint_or_connection_ids": [
+        "incudostapedial_L",
+        "stapes_window_L"
+      ],
+      "landmark_region_ids": [],
+      "notes": "",
+      "resource_mapping_status": "not_found_in_release_index",
+      "resource_audit": "source-audit/mapping.json",
+      "available": true,
+      "asset_region": "听小骨",
+      "trial": true,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_files": [],
+      "triangles": 4342,
+      "rest_position_web_m": [
+        0.04217569226431623,
+        1.51659935345318,
+        0.09903415821499566
+      ],
+      "note": "整侧听骨链随颞骨表面刚性拟合试装；未核对鼓室与前庭窗。上游左侧为镜像。具体耳部素材许可待确认。",
+      "upstream_reflection": true,
+      "registration": [
+        [
+          0.9912364373923748,
+          0.12273855391219472,
+          -0.04884232354442248,
+          0.07665868504322772
+        ],
+        [
+          -0.12000581461211153,
+          0.9912245531418052,
+          0.05543004337103994,
+          -0.18620245302399407
+        ],
+        [
+          0.05521711369638217,
+          -0.04908291589112284,
+          0.9972672348586789,
+          -0.06204753389716554
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "registration_report": "data/ossicles-registration.json"
+}

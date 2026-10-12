@@ -1,0 +1,224 @@
+{
+  "source": "Z-Anatomy / Models-of-human-anatomy",
+  "commit": "2b6cf98a8ca012571ecb252e5c077b42a21b3b61",
+  "archive_sha256": "e029688545627bd0214b269e1063143abb580aad72b2c2445d6d8a9a0d9da736",
+  "status": "candidate_only_not_registered_to_current_BodyParts3D_3_0",
+  "license_review": "Z-Anatomy declares CC BY-SA 4.0; ear reference/inclusion lists Dundee CC BY-NC-SA 4.0; per-ossicle provenance not resolved. Research candidate, not approved redistribution/commercial asset.",
+  "units": "source world coordinates retained; adopted as meters for viewer, anatomical size review pending",
+  "operations": [
+    "bake source world transform including upstream mirrored left side",
+    "center object pivot without changing assembled surfaces",
+    "recalculate normals and triangulate",
+    "replace display material"
+  ],
+  "structures": [
+    {
+      "id": "bone_malleus_R",
+      "name": "右锤骨",
+      "side": "r",
+      "kind": "ossicle",
+      "source_object": "Malleus.r",
+      "upstream_reflection": false,
+      "triangles": 3982,
+      "bounds_source": [
+        [
+          -0.05000809207558632,
+          0.0024904832243919373,
+          1.5780489444732666
+        ],
+        [
+          -0.04637119546532631,
+          0.005365878343582153,
+          1.5862277746200562
+        ]
+      ],
+      "rest_web": [
+        -0.0483391210436821,
+        1.581933617591858,
+        -0.003993310034275055
+      ]
+    },
+    {
+      "id": "bone_malleus_L",
+      "name": "左锤骨",
+      "side": "l",
+      "kind": "ossicle",
+      "source_object": "Malleus.l",
+      "upstream_reflection": true,
+      "triangles": 3982,
+      "bounds_source": [
+        [
+          0.04637119546532631,
+          0.0024904832243919373,
+          1.5780489444732666
+        ],
+        [
+          0.05000809207558632,
+          0.005365878343582153,
+          1.5862277746200562
+        ]
+      ],
+      "rest_web": [
+        0.0483391210436821,
+        1.581933617591858,
+        -0.003993310034275055
+      ]
+    },
+    {
+      "id": "bone_incus_R",
+      "name": "右砧骨",
+      "side": "r",
+      "kind": "ossicle",
+      "source_object": "Incus.r",
+      "upstream_reflection": false,
+      "triangles": 2532,
+      "bounds_source": [
+        [
+          -0.04919545724987984,
+          0.00475875660777092,
+          1.5795691013336182
+        ],
+        [
+          -0.04497437924146652,
+          0.009651119820773602,
+          1.585801124572754
+        ]
+      ],
+      "rest_web": [
+        -0.04691017419099808,
+        1.582460880279541,
+        -0.006412317976355553
+      ]
+    },
+    {
+      "id": "bone_incus_L",
+      "name": "左砧骨",
+      "side": "l",
+      "kind": "ossicle",
+      "source_object": "Incus.l",
+      "upstream_reflection": true,
+      "triangles": 2532,
+      "bounds_source": [
+        [
+          0.04497437924146652,
+          0.00475875660777092,
+          1.5795691013336182
+        ],
+        [
+          0.04919545724987984,
+          0.009651119820773602,
+          1.585801124572754
+        ]
+      ],
+      "rest_web": [
+        0.04691017419099808,
+        1.582460880279541,
+        -0.006412317976355553
+      ]
+    },
+    {
+      "id": "bone_stapes_R",
+      "name": "右镫骨",
+      "side": "r",
+      "kind": "ossicle",
+      "source_object": "Stapes.r",
+      "upstream_reflection": false,
+      "triangles": 4342,
+      "bounds_source": [
+        [
+          -0.04500776529312134,
+          0.002910811686888337,
+          1.5798341035842896
+        ],
+        [
+          -0.040953781455755234,
+          0.005962501745671034,
+          1.5822651386260986
+        ]
+      ],
+      "rest_web": [
+        -0.04252682253718376,
+        1.5808477401733398,
+        -0.004686369094997644
+      ]
+    },
+    {
+      "id": "bone_stapes_L",
+      "name": "左镫骨",
+      "side": "l",
+      "kind": "ossicle",
+      "source_object": "Stapes.l",
+      "upstream_reflection": true,
+      "triangles": 4342,
+      "bounds_source": [
+        [
+          0.040953781455755234,
+          0.002910811686888337,
+          1.5798341035842896
+        ],
+        [
+          0.04500776529312134,
+          0.005962501745671034,
+          1.5822651386260986
+        ]
+      ],
+      "rest_web": [
+        0.04252682253718376,
+        1.5808477401733398,
+        -0.004686369094997644
+      ]
+    },
+    {
+      "id": "bone_temporal_R",
+      "name": "右颞骨",
+      "side": "r",
+      "kind": "temporal",
+      "source_object": "Temporal bone.r",
+      "upstream_reflection": false,
+      "triangles": 14094,
+      "bounds_source": [
+        [
+          -0.07242035865783691,
+          -0.0447830855846405,
+          1.5487265586853027
+        ],
+        [
+          -0.009648576378822327,
+          0.05156397819519043,
+          1.623145580291748
+        ]
+      ],
+      "rest_web": [
+        -0.04435083642601967,
+        1.5794012546539307,
+        -0.010203256271779537
+      ]
+    },
+    {
+      "id": "bone_temporal_L",
+      "name": "左颞骨",
+      "side": "l",
+      "kind": "temporal",
+      "source_object": "Temporal bone.l",
+      "upstream_reflection": true,
+      "triangles": 14094,
+      "bounds_source": [
+        [
+          0.009648576378822327,
+          -0.0447830855846405,
+          1.5487265586853027
+        ],
+        [
+          0.07242035865783691,
+          0.05156397819519043,
+          1.623145580291748
+        ]
+      ],
+      "rest_web": [
+        0.04435083642601967,
+        1.5794012546539307,
+        -0.010203256271779537
+      ]
+    }
+  ]
+}

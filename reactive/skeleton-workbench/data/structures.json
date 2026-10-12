@@ -2,7 +2,7 @@
   "title": "全身骨架 · 来源审查版",
   "status": "candidate_not_anatomically_validated",
   "core_target": 206,
-  "available_count": 199,
+  "available_count": 200,
   "source": "BodyParts3D 3.0 / DBCLS",
   "commit": "f0eeb6e843380cfe6b83797cf8c3e1af74de5e61",
   "license": "CC BY-SA 2.1 Japan",
@@ -12,7 +12,8 @@
     "uniform mm-to-m conversion",
     "bbox object pivots with preserved world coordinates",
     "sternum source components joined as one semantic bone",
-    "smooth shading; no surface subdivision or shape repair"
+    "smooth shading; no surface subdivision or shape repair",
+    "candidate coccyx segmented from FMA16202 at original Z=824 mm; split boundary and planar cap not anatomically reviewed"
   ],
   "bones": [
     {
@@ -2184,8 +2185,8 @@
       "source_structure_id": "FMA16202",
       "source_file": "FMA16202.stl",
       "source_sha256": "d52dac1add057e05699c3c767736ab45c9c426ab0eebd438e20cd4f0768ee3d8",
-      "source_status": "raw_source_files_verified_geometry_and_anatomy_pending",
-      "anatomy_review": "pending",
+      "source_status": "derived_segmentation_candidate",
+      "anatomy_review": "pending_segmentation_boundary",
       "assembly_review": "pending",
       "rest_transform": null,
       "joint_or_connection_ids": [
@@ -2210,11 +2211,18 @@
       "asset_region": "脊柱",
       "rest_position_web_m": [
         0.0009615998715162277,
-        0.8633444905281067,
+        0.8799995183944702,
         0.050098028033971786
       ],
-      "triangles": 44416,
-      "note": "骶骨源网格可能包含尾骨，分界未审核"
+      "triangles": 39532,
+      "note": "由同源骶尾合并网格试拆；Z=824毫米平面边界及封口待审核，不代表已确认的骶尾关节面。",
+      "derived_from": "bone_sacrum_M / FMA16202",
+      "derived_operation": {
+        "type": "plane_split",
+        "source_z_mm": 824,
+        "keep": "superior",
+        "cap": "planar_pending_review"
+      }
     },
     {
       "id": "bone_coccyx_M",
@@ -2225,11 +2233,11 @@
       "count": 1,
       "reference_id": "AXIAL_SPINE",
       "source_set": "bodyparts3d_3_0_candidate",
-      "source_structure_id": null,
-      "source_file": null,
-      "source_sha256": null,
-      "source_status": "candidate_embedded_in_sacrum_requires_anatomical_segmentation",
-      "anatomy_review": "pending",
+      "source_structure_id": "FMA16202",
+      "source_file": "FMA16202.stl",
+      "source_sha256": "d52dac1add057e05699c3c767736ab45c9c426ab0eebd438e20cd4f0768ee3d8",
+      "source_status": "derived_segmentation_candidate",
+      "anatomy_review": "pending_segmentation_boundary",
       "assembly_review": "pending",
       "rest_transform": null,
       "joint_or_connection_ids": [
@@ -2239,8 +2247,30 @@
       "notes": "标准成人清单按1块计；融合与分节存在变异，不能将整体固定概括为完全融合。",
       "resource_mapping_status": "candidate_embedded_in_sacrum_requires_anatomical_segmentation",
       "resource_audit": "source-audit/mapping.json",
-      "available": false,
-      "asset_region": "脊柱"
+      "available": true,
+      "asset_region": "脊柱",
+      "triangles": 5232,
+      "rest_position_web_m": [
+        -0.000797550193965435,
+        0.8073450326919556,
+        0.022978851571679115
+      ],
+      "note": "由同源骶尾合并网格试拆；Z=824毫米平面边界及封口待审核，不代表已确认的骶尾关节面。",
+      "derived_from": "bone_sacrum_M / FMA16202",
+      "derived_operation": {
+        "type": "plane_split",
+        "source_z_mm": 824,
+        "keep": "inferior",
+        "cap": "planar_pending_review"
+      },
+      "source_files": [
+        {
+          "source_id": "FMA16202",
+          "filename": "FMA16202.stl",
+          "sha256": "d52dac1add057e05699c3c767736ab45c9c426ab0eebd438e20cd4f0768ee3d8",
+          "triangles": 44416
+        }
+      ]
     },
     {
       "id": "bone_sternum_M",
@@ -8674,8 +8704,8 @@
     },
     {
       "name": "脊柱",
-      "file": "assets/region-2.glb",
-      "bytes": 4491044
+      "file": "assets/spine-with-coccyx.glb",
+      "bytes": 4498640
     },
     {
       "name": "胸廓",
@@ -8692,5 +8722,6 @@
       "file": "assets/region-5.glb",
       "bytes": 3416704
     }
-  ]
+  ],
+  "editable_master": "assets/skeleton-review-with-coccyx.blend"
 }

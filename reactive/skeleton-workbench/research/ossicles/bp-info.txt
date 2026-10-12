@@ -1,0 +1,1568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta name="Description" content="Select parts and Make Embeddable Model of Your Own.">
+<link rel="stylesheet" href="ext-2.2.1/resources/css/ext-all.css?121121165348" type="text/css" media="all" charset="UTF-8">
+<link rel="stylesheet" href="css/ag-all.css?240423163458" type="text/css" media="all" charset="UTF-8">
+<!--[if IE ]>
+<link rel="stylesheet" href="css/ie.css" type="text/css" media="all">
+<![endif]-->
+
+<!-- Javascript -->
+<script type="text/javascript" src="ag_js/ag-all-ja.js?240423215730" charset="utf-8"></script>
+<title>BodyParts3D/Anatomography : Select parts and Make Embeddable Model of Your Own.</title>
+<style type="text/css">
+#img-detail-panel-xcollapsed {
+}
+#anatomography_comment-xcollapsed {
+}
+/*
+div#navigate-range-panel div.x-form-item.x-hide-label {
+	display: none;
+}
+div#navigate-position-panel div.x-form-item.x-hide-label {
+	display: none;
+}
+*/
+
+</style>
+<script type="text/javascript"><!--
+model2tg = {"bp3d":{"md_delcause":null,"md_id":1,"tg_id":1,"tg_delcause":null}};
+tg2model = {"1":{"tg_delcause":null,"md_abbr":"bp3d","md_delcause":null,"tg_model":"bp3d"}};
+version2tg = {"4.3.1403311232":{"md_id":1,"tgi_delcause":null,"tg_id":1,"mv_delcause":null},"brain5.0":{"mv_delcause":null,"tg_id":1,"tgi_delcause":null,"md_id":1},"20161017i3":{"md_id":1,"tgi_delcause":null,"mv_delcause":null,"tg_id":1},"4.3i":{"mv_delcause":null,"tg_id":1,"tgi_delcause":null,"md_id":1},"4.3":{"tg_id":1,"mv_delcause":null,"tgi_delcause":null,"md_id":1},"5.0.1602041206":{"md_id":1,"tgi_delcause":null,"mv_delcause":null,"tg_id":1},"4.3.1601121842":{"tg_id":1,"mv_delcause":null,"tgi_delcause":null,"md_id":1},"20161017i4":{"tg_id":1,"mv_delcause":null,"md_id":1,"tgi_delcause":null},"4.0":{"md_id":1,"tgi_delcause":null,"mv_delcause":null,"tg_id":1},"5.3.1610171025":{"tg_id":1,"mv_delcause":null,"md_id":1,"tgi_delcause":null},"4.0.1303281200":{"tg_id":1,"mv_delcause":null,"tgi_delcause":null,"md_id":1},"5.1.1408191223":{"md_id":1,"tgi_delcause":null,"tg_id":1,"mv_delcause":null},"5.3.1812101249":{"tg_id":1,"mv_delcause":null,"tgi_delcause":null,"md_id":1},"4.1.1309051818":{"md_id":1,"tgi_delcause":null,"tg_id":1,"mv_delcause":null},"5.3.1610181142":{"tg_id":1,"mv_delcause":null,"tgi_delcause":null,"md_id":1},"4.1":{"tgi_delcause":null,"md_id":1,"tg_id":1,"mv_delcause":null},"2.0":{"tgi_delcause":null,"md_id":1,"mv_delcause":null,"tg_id":1},"2.0.1304161700":{"mv_delcause":null,"tg_id":1,"tgi_delcause":null,"md_id":1},"20181210i412":{"mv_delcause":null,"tg_id":1,"md_id":1,"tgi_delcause":null},"2.0i":{"mv_delcause":null,"tg_id":1,"md_id":1,"tgi_delcause":null},"brain5.0i":{"tg_id":1,"mv_delcause":null,"md_id":1,"tgi_delcause":null},"2.0.1602291033":{"tg_id":1,"mv_delcause":null,"md_id":1,"tgi_delcause":null},"3.0i":{"mv_delcause":null,"tg_id":1,"md_id":1,"tgi_delcause":null},"3.0.1304161700":{"md_id":1,"tgi_delcause":null,"tg_id":1,"mv_delcause":null},"3.0":{"md_id":1,"tgi_delcause":null,"tg_id":1,"mv_delcause":null},"heart5.0i":{"tg_id":1,"mv_delcause":null,"md_id":1,"tgi_delcause":null},"5.0.1601201030":{"mv_delcause":null,"tg_id":1,"tgi_delcause":null,"md_id":1},"3.0.1602291040":{"md_id":1,"tgi_delcause":null,"tg_id":1,"mv_delcause":null}};
+latestversion = {"1":"heart5.0i"};
+init_tree_group = 1;
+init_bp3d_version = 'heart5.0i';
+
+window.bp3d = window.bp3d || {};
+bp3d.defaults = bp3d.defaults || {};
+bp3d.defaults.TIME_FORMAT = "Y/m/d H:i:s";
+bp3d.defaults.DATE_FORMAT = "Y/m/d";
+bp3d.defaults.bp3d_version = init_bp3d_version;
+
+gAuthTBButton = {
+	text    : 'Login',
+	icon    : 'css/openid-bg.gif',
+	cls     : 'x-btn-text-icon',
+	handler : (window.ag_extensions && ag_extensions.auth && ag_extensions.auth.login) ? ag_extensions.auth.login.createDelegate(ag_extensions.auth) : null
+};
+
+_dump("\n\nSTART!!\n\n");
+//_dump("cgipath.animation=["+cgipath.animation+"]");
+var gParams = {};
+//try{
+//	gParams = Ext.urlDecode(window.location.search.substring(1));
+//}catch(e){
+	gParams.bul_id = "1";
+	gParams.ci_id = "1";
+	gParams.lng = "ja";
+	gParams.md_id = "1";
+	gParams.mr_id = "1";
+	gParams.mv_id = "14";
+	gParams.t_depth = "2";
+	gParams.t_type = "1";
+//}
+if(Ext.isEmpty(gParams.t_type))  gParams.t_type='1';
+if(!Ext.isEmpty(gParams.version)) init_bp3d_version=gParams.version;
+if(Ext.isEmpty(gParams.lng)) gParams.lng = 'ja';
+if(!Ext.isEmpty(gParams.tp_md)){
+	gParams.tp_md = parseInt(gParams.tp_md);
+}else if(!Ext.isEmpty(gParams.tp_ap) && (window.top != window || is_iPad())){
+	gParams.tp_md = 1;
+	gParams.tp_ct = 1;
+	gParams.tp_bt = 1;
+	gParams.tp_ro = 1;
+	gParams.tp_gr = 1;
+	gParams.tp_zo = 1;
+}
+
+// --></script>
+</head>
+<body>
+<noscript>
+Please enable JavaScript.
+</noscript>
+<div id="header" class="x-hide-display">
+	<a id="locale_link" href="#" onclick="click_locale();return false;">English</a>
+	<span class="ytb-sep"></span>
+	<div id="search_area"></div>
+	<div id="search_label">Search:</div>
+	<div class="api-title">BodyParts3D/Anatomography : Select parts and Make Embeddable Model of Your Own.</div>
+</div>
+<div style="display:none;">
+	<iframe id="_location" name="_location"></iframe>
+</div>
+<select name="opacity" id="opacity" style="display: none;">
+	<option value="1.0">1.0</option>
+	<option value="0.9">0.9</option>
+	<option value="0.8">0.8</option>
+	<option value="0.7">0.7</option>
+	<option value="0.6">0.6</option>
+	<option value="0.5">0.5</option>
+	<option value="0.4">0.4</option>
+	<option value="0.3">0.3</option>
+	<option value="0.2">0.2</option>
+	<option value="0.1">0.1</option>
+	<option value="0.0">0.0</option>
+</select>
+<select name="representation" id="representation" style="display: none;">
+	<option value="surface">surface</option>
+	<option value="wireframe">wireframe</option>
+	<option value="points">points</option>
+</select>
+
+<div id="contents-tab-feedback-contents-panel-render" class="x-hide-display"></div>
+<div id="contents-tab-feedback-panel-render" class="x-hide-display"></div>
+<div id="contents-tab-bodyparts-panel-render" class="x-hide-display">aaa</div>
+<div id="view-images-detail-annotation-dataview-render" class="x-hide-display"></div>
+<div id="bp3d-detail-annotation-dataview-render" class="x-hide-display"></div>
+<form id="link-form" target="_blank" class="x-hide-display"></form>
+<form method="GET" id="comment-link-form" target="_blank" class="x-hide-display"></form>
+<form method="GET" action="https://lifesciencedb.jp/ag/lookup" id="ag-link-form" target="_blank" class="x-hide-display">
+<input type="hidden" name="q" value=""/>
+</form>
+
+<div id="ag-command-box" align="center" class="x-hide-display" style="">
+	<div id="ag-command-image-controls-render"></div>
+	<div id="ag-command-window-controls-render"></div>
+</div>
+
+<div id="ag-command-clip-box">
+</div>
+
+
+<div id="ag-image-box" align="center" class="x-hide-display" style="vertical-align:middle;">
+	<table width="100%" height="100%">
+		<tr>
+			<td align="center" valign="center" style="position:relative;">
+			</td>
+		</tr>
+	</table>
+</div>
+
+
+<div id="bp3d-contents-detail-wiki-panel-render" class="x-hide-display">
+	<iframe id="bp3d-contents-detail-wiki-panel-iframe" width="100%" height="100%" frameborder=0></iframe>
+</div>
+
+<!--
+<div id="navigate-north-panel-content" align="center" class="x-hide-display">
+	<table cellpadding=0 cellspacing=0><tbody><tr>
+		<td><img src="css/1.png" align=center width=44 height=44></td>
+		<td style="padding-left:1em;"><label style="white-space:nowrap;">Build-up by&nbsp;</label><label id="navigate-north-buildup" style="white-space:nowrap;"></label></td>
+	</tr></tbody></table>
+</div>
+-->
+
+<div id="navigate-north-panel-content" class="x-hide-display">
+	<table cellpadding=0 cellspacing=0><tbody>
+	<tr>
+		<td valign="top"><img src="css/1.png" align=center width=44 height=44></td>
+		<td style="padding-left:0px;">
+			<label style="white-space:nowrap;display:none;">Build-up by&nbsp;</label><label id="navigate-north-buildup" style="white-space:nowrap;display:none;"></label>
+
+			<table cellpadding=0 cellspacing=2><tbody>
+				<tr>
+					<td colspan="3"><label style="white-space:nowrap;font-size:11px;">
+						<label style="white-space:nowrap;font-size:11px;">Parts of <a href="http://sig.biostr.washington.edu/projects/fm/AboutFM.html" target="_blank"><label id="bp3d-concept-info-label">FMA</label></a> (<label id="bp3d-concept-build-label">3.0</label>) concepts<a href="#" onclick="return click_information_button({hash:'#FMA'});"><img src="css/information.png" width=12 height=12></a></label>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-left:0em;" align="center" valign="middle"><input type="radio" name="navigate-north-panel-content-radio" id="navigate-north-panel-content-radio-isa" value="3"/></td>
+					<td align="left" valign="middle" nowrap>
+						<label style="white-space:nowrap;font-size:18px;" for="navigate-north-panel-content-radio-isa">IS-A Tree</label>
+						<label style="white-space:nowrap;font-size:18px;" for="navigate-north-panel-content-radio-isa" id="navigate-north-panel-content-label-3" class="navigate-north-panel-content-label"></label>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-left:0em;" align="center" valign="middle"><input type="radio" name="navigate-north-panel-content-radio" id="navigate-north-panel-content-radio-partof" value="4" /></td>
+					<td align="left" valign="middle" nowrap>
+						<label style="white-space:nowrap;font-size:18px;" for="navigate-north-panel-content-radio-partof">HAS PART Tree</label>
+						<label style="white-space:nowrap;font-size:18px;" for="navigate-north-panel-content-radio-partof" id="navigate-north-panel-content-label-4" class="navigate-north-panel-content-label"></label>
+					</td>
+				</tr>
+			</tbody></table>
+
+		</td>
+	</tr>
+	</tbody></table>
+</div>
+
+
+<div id="ag-command-image-controls-content" align="left" class="x-hide-display">
+	<table cellpadding="0" cellspacing="0" boder="0" width="100%">
+		<!-- image rotation -->
+		<tr><td colspan="2" class="ag_command_title"><div>Image rotation</div></td></tr>
+		<tr><td colspan="2" class="ag_command">
+			<table align="center">
+				<tr>
+					<td align="center">
+						<table border="0" cellpadding="0" cellspacing="0" align="center">
+							<tr><td></td><td></td><td><img class="point_cursor" src="img/rotate_u.png" onclick="rotateVertical(-15);" /></td><td></td><td></td></tr>
+							<tr>
+								<td><img class="point_cursor" src="img/rotate_l90.png" onclick="rotateHorizontal(90);" /></td>
+								<td><img class="point_cursor" src="img/rotate_l.png" onclick="rotateHorizontal(15);" /></td>
+								<td></td>
+								<td><img class="point_cursor" src="img/rotate_r.png" onclick="rotateHorizontal(-15);" /></td>
+								<td><img class="point_cursor" src="img/rotate_r90.png" onclick="rotateHorizontal(-90);" /></td>
+							</tr>
+							<tr><td></td><td></td><td><img class="point_cursor" src="img/rotate_d.png" onclick="rotateVertical(15);" /></td><td></td><td></td></tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align="center">
+						<table border="0" cellpadding="0" cellspacing="0" align="center" width="60">
+							<tr>
+								<td class="ag_command_rotation_label">H:</td><td class="ag_command_rotation_value"><div id="ag-command-rotation-horizontal-render"></div></td>
+								<td class="ag_command_rotation_label">V:</td><td class="ag_command_rotation_value"><div id="ag-command-rotation-vertical-render"></div></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td></tr>
+		<tr><td colspan="2" class="ag_command">
+			<div align="center">
+				<div id="rotateImgDiv" style="position:relative;overflow:hidden;width:62px;height:124px;border:1px solid #ccc;">
+					<img id="rotateImg" style="position:absolute;left:-31px;width:124px;height:124px;" src="img_angle/000_000.png" />
+				</div>
+			</div>
+		</td></tr>
+		<!-- rotate auto -->
+		<tr><td colspan="2" class="ag_command_title"><div><div id="ag-command-image-controls-rotateAuto-render">Auto rotation</div></div></td></tr>
+		<tr>
+			<td colspan="2" class="ag_command">
+				<table cellpadding="0" cellspacing="0" boder="0" align="center">
+					<tr>
+						<td class="ag_command_rotation_label">Rotation angles:</td>
+						<td colspan="2" class="ag_command_rotation_value"><div id="ag-command-image-controls-rotateAuto-angles-render"></div></td>
+					</tr>
+					<tr><td style="line-height:2px;"><br/></td></tr>
+					<tr>
+						<td class="ag_command_rotation_label">Minimum time interval:</td>
+						<td class="ag_command_rotation_value" width="25"><div id="ag-command-image-controls-rotateAuto-interval-render"></div></td>
+						<td style="vertical-align: bottom;" width="20"><label id="ag-command-image-controls-rotateAuto-interval-unit-label" class="ag_command x-form-cb-label">s</label></td>
+					</tr>
+					<tr><td style="line-height:2px;"><br/></td></tr>
+					<tr>
+						<td class="ag_command_rotation_label" style="vertical-align: middle;">Axis of rotation angle:</td>
+						<td class="ag_command_rotation_value" style="vertical-align: middle;text-align:right;"><label id="ag-command-image-controls-rotateAuto-axis-label" class="ag_command x-form-cb-label"></label></td>
+					</tr>
+					<tr><td style="line-height:2px;"><br/></td></tr>
+					<tr>
+						<td class="ag_command_rotation_label" style="vertical-align: middle;">Now angle:</td>
+						<td class="ag_command_rotation_value" style="vertical-align: middle;text-align:right;"><label id="ag-command-image-controls-rotateAuto-now-angle-label" class="ag_command x-form-cb-label"></label></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr><td colspan="2" class="ag_command_separator"><br/></td></tr>
+	</table>
+</div>
+
+<div id="ag-command-window-controls-content" align="center" class="x-hide-display">
+	<table cellpadding="0" cellspacing="0" boder="0" width="100%" style="border:0px transparent solid;">
+		<!-- window size -->
+		<tr><td colspan="2" class="ag_command_title"><div>Window size</div></td></tr>
+		<tr>
+			<td class="ag_command_label"><img src="css/arrow_width.png"/></td>
+			<td>
+				<table cellpadding="0" cellspacing="0" boder="0"><tr>
+					<td class="ag_command"><div id="ag-command-windowsize-width-render"></div></td><td valign="bottom"><label class="ag_command x-form-cb-label" style="font-family:arial,tahoma,helvetica,sans-serif;font-size:12px;margin-left:4px;margin-bottom:4px;">px</label></td>
+				</tr></table>
+			</td>
+		</tr>
+		<tr>
+			<td class="ag_command_label"><img src="css/arrow_height.png"/></td>
+			<td>
+				<table cellpadding="0" cellspacing="0" boder="0"><tr>
+					<td class="ag_command"><div id="ag-command-windowsize-height-render"></div></td><td valign="bottom"><label class="ag_command x-form-cb-label" style="font-family:arial,tahoma,helvetica,sans-serif;font-size:12px;margin-left:4px;margin-bottom:4px;">px</label></td>
+				</tr></table>
+			</td>
+		</tr>
+
+		<tr>
+			<td colspan="2" class="ag_command">
+				<table cellpadding="0" cellspacing="0" boder="0" align="left">
+					<tr>
+						<td valign="top"><div id="ag-command-windowsize-autosize-checkbox-render"></div></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+
+		<!-- background color -->
+		<tr><td colspan="2" class="ag_command_title"><div>Background color</div></td></tr>
+		<tr>
+			<td class="ag_command_label" style="text-align:center;"><img src="css/color_pallet.png"/></td>
+			<td class="ag_command"><div id="ag-command-bgcolor-render"></div></td>
+		</tr>
+		<tr>
+			<td colspan="2" class="ag_command">
+				<table cellpadding="0" cellspacing="0" boder="0" align="left">
+					<tr>
+						<td valign="top"><div id="ag-command-bgcolor-transparent-checkbox-render"></div></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+
+		<!-- color map -->
+		<tr><td colspan="2" class="ag_command_title"><div>Choropleth</div></td></tr>
+		<tr><td class="ag_command_label">MAX:</td><td class="ag_command"><div id="ag-command-colormap-max-render"></div></td></tr>
+		<tr><td class="ag_command_label">MIN:</td><td class="ag_command"><div id="ag-command-colormap-min-render"></div></td></tr>
+		<tr><td class="ag_command_label">On / Off:</td><td class="ag_command" style="text-align:center;"><div id="ag-command-colormap-bar-render"></div></td></tr>
+
+		<!-- Default parts color -->
+		<tr><td colspan="2" class="ag_command_title"><div>Default parts color</div></td></tr>
+		<tr>
+			<td class="ag_command_label" style="text-align:center;"><img src="css/color_pallet.png"/></td>
+			<td class="ag_command"><div id="ag-command-default-parts-color-render"></div></td>
+		</tr>
+
+		<!-- Default pick color -->
+		<tr><td colspan="2" class="ag_command_title"><div>Default pick color</div></td></tr>
+		<tr>
+			<td class="ag_command_label" style="text-align:center;"><img src="css/color_pallet.png"/></td>
+			<td class="ag_command"><div id="ag-command-default-pick-color-render"></div></td>
+		</tr>
+		<tr><td colspan="2" class="ag_command_separator"><br/></td></tr>
+	</table>
+</div>
+
+
+<div id="ag-command-sectional-view-content" align="center" class="x-hide-display">
+	<table cellpadding="0" cellspacing="0" boder="0" width="100%">
+		<!-- clip -->
+		<tr><td colspan="2" class="ag_command_title"><div><div id="ag-command-clip-checkbox-render">Clip</div>&nbsp;On/Off</div></td></tr>
+		<tr>
+			<td colspan="2" class="ag_command">
+				<table cellpadding="0" cellspacing="0" boder="0" align="center">
+					<tr>
+						<td class="ag_command"><div id="ag-command-clip-method-render"></div></td>
+						<td class="ag_command"><div id="ag-command-clip-predifined-render"></div></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="ag_command">
+				<table cellpadding="0" cellspacing="0" boder="0" align="right">
+					<tr>
+						<td valign="top"><div id="ag-command-clip-fix-checkbox-render"></div></td>
+						<td valign="top"><div id="ag-command-clip-reverse-checkbox-render"></div></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="ag_command">
+				<table cellpadding="0" cellspacing="0" boder="0" align="center" width="100%">
+					<tr>
+						<td valign="middle" align="right" width="20"><img id='anatomo-clip-slider-down-button' src="img/icon_move_left.gif" onclick="anatomoClipDownButton();"/></td>
+						<td valign="middle"><div id="ag-command-clip-slider-render"></div></td>
+						<td valign="middle" align="left" width="20"><img id='anatomo-clip-slider-up-button' src="img/icon_move_right.gif" onclick="anatomoClipUpButton();"/></td></tr>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2"class="ag_command">
+				<table cellpadding="0" cellspacing="0" boder="0" align="center">
+					<tr><td rowspan="2"><div id="ag-command-clip-text-render"></div></td><td><img id='anatomo-clip-text-up-button' src="css/spinner-up.png" onclick="anatomoClipUpButton();"/></td><td rowspan="2" valign="bottom"><label id='anatomo-clip-unit-label' class="x-form-cb-label" style="font-family:arial,tahoma,helvetica,sans-serif;font-size:10px;">mm</label></td></tr>
+					<tr><td><img id='anatomo-clip-text-down-button' src="css/spinner-down.png" onclick="anatomoClipDownButton();"/></td></tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="ag_command"  align="center">
+				<div id="clipImgDiv" class="clipImgDiv" style="position:relative;overflow:hidden;left:10px;width:136px;height:301px;border:1px solid #ccc;">
+					<img id="clipImg" style="position:absolute;left:0px;top:0px;width:136px;height:301px;" src="img_angle/000_000.png" />
+					<div id="clipImgLine" style="display:none;position:absolute;left:0px;top:0px;width:254px;height:1px;border-top:1px solid red;border-left:1px solid red;"></div>
+				</div>
+			</td>
+		</tr>
+		<tr><td colspan="2" class="ag_command_separator"><br/></td></tr>
+	</table>
+</div>
+
+<div id="ag-point-grid-content" align="center" class="x-hide-display">
+	<table id="ag-point-grid-content-table" cellpadding="0" cellspacing="0" boder="0">
+		<tr>
+			<td class="ag_grid_command"><div class="x-toolbar x-small-editor" align="left" id="ag-comment-point-type-render"></div></td>
+			<td class="ag_grid_command"><div class="x-toolbar x-small-editor" align="center" id="ag-comment-point-toggle-partof-render"></div></td>
+			<td class="ag_grid_command"><div class="x-toolbar x-small-editor" align="center" id="ag-comment-point-toggle-haspart-render"></div></td>
+		</tr>
+		<tr>
+			<td colspan="4" class="ag_grid_command_title">
+				<table cellpadding="0" cellspacing="0" boder="0" width="100%"></tr>
+					<td width="50"><div style="border-top-width:0px;border-bottom-width:1px;"><label>Path</label></div></td>
+					<td><div id="ag-point-grid-content-route" style="border-top-width:0px;border-bottom-width:1px;">&nbsp;</div></td>
+				</tr></table>
+			</td>
+		</tr>
+	</table>
+</div>
+
+<div id="ag-point-grid-footer-content" align="center" class="x-hide-display">
+	<table id="ag-point-grid-footer-content-table" cellpadding="0" cellspacing="0" boder="0">
+		<tr>
+			<td class="ag_grid_command" style="width:56px;"><div class="x-toolbar x-small-editor" style="width:56px;height:20px;line-height:20px;" align="right">Coordinate</div></td>
+			<td class="ag_grid_command" style="width:72px;"><div class="x-toolbar x-small-editor" style="height:20px;line-height:20px;font-weight:normal;" align="center" id="ag-point-grid-footer-content-coordinate-x-render">X:</div></td>
+			<td class="ag_grid_command" style="width:72px;"><div class="x-toolbar x-small-editor" style="height:20px;line-height:20px;font-weight:normal;" align="center" id="ag-point-grid-footer-content-coordinate-y-render">Y:</div></td>
+			<td class="ag_grid_command" style="width:72px;"><div class="x-toolbar x-small-editor" style="height:20px;line-height:20px;font-weight:normal;" align="center" id="ag-point-grid-footer-content-coordinate-z-render">Z:</div></td>
+			<td class="ag_grid_command"><div class="x-toolbar x-small-editor" style="height:20px;line-height:20px;border-right:0px;" align="left" id="ag-point-grid-footer-content-coordinate-render"> </div></td>
+		</tr>
+		<tr>
+			<td class="ag_grid_command"><div class="x-toolbar x-small-editor" style="height:20px;line-height:20px;" align="right">Distance</div></td>
+			<td class="ag_grid_command"><div class="x-toolbar x-small-editor" style="height:20px;line-height:20px;font-weight:normal;" align="center" id="ag-point-grid-footer-content-distance-x-render">X:</div></td>
+			<td class="ag_grid_command"><div class="x-toolbar x-small-editor" style="height:20px;line-height:20px;font-weight:normal;" align="center" id="ag-point-grid-footer-content-distance-y-render">Y:</div></td>
+			<td class="ag_grid_command"><div class="x-toolbar x-small-editor" style="height:20px;line-height:20px;font-weight:normal;" align="center" id="ag-point-grid-footer-content-distance-z-render">Z:</div></td>
+			<td class="ag_grid_command"><div class="x-toolbar x-small-editor" style="height:20px;line-height:20px;border-right:0px;" align="left" id="ag-point-grid-footer-content-distance-render"> </div></td>
+		</tr>
+	</table>
+</div>
+
+<div id="navigate-position-panel-content" align="center" class="x-hide-display">
+
+	<div id="navigate-position-panel-base-fx">
+		<table border=0 cellspacing=0 cellpadding=0 class="position_base" style="">
+			<tbody>
+				<tr>
+					<td align="center">
+						<div style="width:292px;height:64px;overflow:hidden;">
+							<table border=0 cellspacing=0 cellpadding=0 class="position_show_only" style="" align="center">
+								<tbody>
+									<tr>
+										<td class="position_show_only_label" style="width:25px;"><label style="display:none;">Show Only</label></td>
+										<td class="position_show_only_image position_show_only_image_Bone" style=""><img src="css/Bone_60x60.png"/><br/>Bone</td>
+										<td class="position_show_only_image position_show_only_image_Muscle" style=""><img src="css/Muscle_60x60.png"/><br/>Muscle</td>
+										<td class="position_show_only_image position_show_only_image_Vessel" style=""><img src="css/Vessel_60x60.png"/><br/>Vessel</td>
+										<td class="position_show_only_image position_show_only_image_Internal" style=""><img src="css/Internal_60x60.png"/><br/>Internal</td>
+										<td class="position_show_only_image position_show_only_image_All" style=""><img src="css/All_60x60.png"/><br/>All</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<table border=0 cellspacing=0 cellpadding=0 class="navigate_position_panel_density" style="border:0px;">
+			<tbody>
+				<tr><td align="center">
+					<div style="background:#ffffff;border:1px solid #cccccc;width: 210px;margin:0px auto;padding: 2px;">
+						<table border=0 cellspacing=0 cellpadding=0><tbody>
+							<tr>
+								<td valign="top"><input type="checkbox" name="navigate-position-panel-only-taid" id="navigate-position-panel-only-taid" value="true"></td>
+								<td valign="top" class="navigate_position_panel_only_taid"><label for="navigate-position-panel-only-taid" style="font-size:11px;">Show only TA matches(*)</label></td>
+							</tr>
+							<tr>
+								<td valign="top" colspan="2" class="navigate_position_panel_only_taid"><label for="navigate-position-panel-only-taid">* listed in Terminologia Anatomica</label></td>
+							</tr>
+						</tbody></table>
+					</div>
+				</td></tr>
+			</tbody>
+		</table>
+
+		<table border=0 cellspacing=0 cellpadding=0 class="navigate_position_panel_density" style="">
+			<tbody>
+				<tr><td><label>Representation Type</label><a href="#" onclick="return click_information_button({hash:'#Data_types'});"><img src="css/information.png" style="width:12px;height:12px;"></a></td></tr>
+				<tr><td style="text-align:center;">
+					<table border=0 cellspacing=0 cellpadding=0 align="center" style="width:230px;text-align:center;">
+						<tbody>
+<!--
+							<tr>
+								<td>
+									<table border=0 cellspacing=0 cellpadding=0 class="navigate_position_panel_density_item select_item" style="">
+										<tbody><tr>
+											<td><input type="radio" name="navigate-position-panel-density-radio-name" id="navigate-position-panel-density-radio-name-any" value="any" checked></td>
+											<td><label for="navigate-position-panel-density-radio-name-any">Any</label>&nbsp;<img src="css/075.png" align=center><img src="css/100.png" align=center><img src="css/primitive.png" align=center></td>
+										</tr></tbody>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<table border=0 cellspacing=0 cellpadding=0 class="navigate_position_panel_density_item" style="">
+										<tbody><tr>
+											<td><input type="radio" name="navigate-position-panel-density-radio-name" id="navigate-position-panel-density-radio-name-primitive" value="primitive"></td>
+											<td><label for="navigate-position-panel-density-radio-name-primitive">ELEMENT</label>&nbsp;<img src="css/primitive.png" align=center></td>
+										</tr></tbody>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<table border=0 cellspacing=0 cellpadding=0 class="navigate_position_panel_density_item" style="">
+										<tbody><tr>
+											<td><input type="radio" name="navigate-position-panel-density-radio-name" id="navigate-position-panel-density-radio-name-100" value="100-inf"></td>
+											<td><label for="navigate-position-panel-density-radio-name-100">ELEMENT and complete COMPOUND</label>&nbsp;<img src="css/primitive.png" align=center><img src="css/100.png" align=center></td>
+										</tr></tbody>
+									</table>
+								</td>
+							</tr>
+-->
+
+							<tr>
+								<td>
+									<table border=0 cellspacing=0 cellpadding=0 class="navigate_position_panel_density_item" style="">
+										<tbody><tr>
+											<td><input type="checkbox" name="navigate-position-panel-density-checkbox-name-element" id="navigate-position-panel-density-checkbox-name-element" value="element" checked></td>
+											<td><label for="navigate-position-panel-density-checkbox-name-element">ELEMENT</label>&nbsp;<img src="css/primitive.png" align=center></td>
+										</tr></tbody>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<table border=0 cellspacing=0 cellpadding=0 class="navigate_position_panel_density_item" style="">
+										<tbody><tr>
+											<td><input type="checkbox" name="navigate-position-panel-density-checkbox-name-complete-compound" id="navigate-position-panel-density-checkbox-name-complete-compound" value="complete-compound" checked></td>
+											<td><label for="navigate-position-panel-density-checkbox-name-complete-compound">Complete COMPOUND</label>&nbsp;<img src="css/100.png" align=center></td>
+										</tr></tbody>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<table border=0 cellspacing=0 cellpadding=0 class="navigate_position_panel_density_item" style="">
+										<tbody><tr>
+											<td><input type="checkbox" name="navigate-position-panel-density-checkbox-name-incomplete-compound" id="navigate-position-panel-density-checkbox-name-incomplete-compound" value="incomplete-compound" checked></td>
+											<td><label for="navigate-position-panel-density-checkbox-name-incomplete-compound">Incomplete COMPOUND</label>&nbsp;<img src="css/075.png" align=center></td>
+										</tr></tbody>
+									</table>
+								</td>
+							</tr>
+
+
+						</tbody>
+					</table>
+				</td></tr>
+
+<!--
+				<tr><td>
+					<table border=0 cellspacing=0 cellpadding=0><tbody>
+						<tr>
+							<td valign="top"><input type="checkbox" name="navigate-position-panel-only-taid" id="navigate-position-panel-only-taid" value="true"></td>
+							<td valign="top" class="navigate_position_panel_only_taid"><label for="navigate-position-panel-only-taid">Show only TA matches(*)</label></td>
+						</tr>
+						<tr>
+							<td valign="top" colspan="2" class="navigate_position_panel_only_taid"><label for="navigate-position-panel-only-taid">* listed in Terminologia Anatomica</label></td>
+						</tr>
+					</tbody></table>
+				</td></tr>
+-->
+			</tbody>
+		</table>
+
+	</div>
+
+	<div id="navigate-position-panel-base">
+		<img id="navigate-position-panel-img" src="css/human_body_front_085.png" />
+		<img id="navigate-position-panel-img2" src="css/human_body_right_085.png" />
+	</div>
+	<div id="navigate-position-panel-head-disable" style="display:none;"></div>
+	<div id="navigate-position-panel-tail-disable" style="display:none;"></div>
+	<div id="navigate-position-panel-line"  style="display:none;"></div>
+	<div id="navigate-position-panel-event"></div>
+
+
+	<div id="navigate-position-panel-range-combobox-render"></div>
+	<div id="navigate-position-panel-zmax-numberfield-render"></div>
+	<div id="navigate-position-panel-zmin-numberfield-render"></div>
+	<div id="navigate-position-panel-filter-combobox-render"></div>
+	<div id="navigate-position-panel-cube-volume-combobox-render"></div>
+	<div id="navigate-position-panel-cube-volume-zmax-numberfield-render"></div>
+	<div id="navigate-position-panel-cube-volume-zmin-numberfield-render"></div>
+	<div id="navigate-position-panel-zposition-numberfield-render"></div>
+	<div id="navigate-position-panel-range-label-render"></div>
+</div>
+
+<div id="navigate-range-panel-content" align="center" class="x-hide-display">
+	<div id="navigate-range-panel-base">
+		<div id="navigate-range-panel-base1" style="display:none;">
+			<div id="navigate-range-panel-event-head" class="navigate-range-panel-event">
+				<label class="navigate-range-panel-label">H</label>
+				<label class="navigate-range-panel-value"></label>
+			</div>
+			<div id="navigate-range-panel-event-body" class="navigate-range-panel-event">
+				<label class="navigate-range-panel-label">U</label>
+				<label class="navigate-range-panel-value"></label>
+			</div>
+			<div id="navigate-range-panel-event-leg" class="navigate-range-panel-event">
+				<label class="navigate-range-panel-label">L</label>
+				<label class="navigate-range-panel-value"></label>
+			</div>
+			<div id="navigate-range-panel-event-head-body" class="navigate-range-panel-event">
+				<label class="navigate-range-panel-label">H+U</label>
+				<label class="navigate-range-panel-value"></label>
+			</div>
+			<div id="navigate-range-panel-event-body-leg" class="navigate-range-panel-event">
+				<label class="navigate-range-panel-label">U+L</label>
+				<label class="navigate-range-panel-value"></label>
+			</div>
+			<div id="navigate-range-panel-event-all" class="navigate-range-panel-event">
+				<label class="navigate-range-panel-label">H+U+L</label>
+				<label class="navigate-range-panel-value"></label>
+			</div>
+		</div>
+
+		<div id="navigate-range-panel-base2">
+			<table border=0 cellspacing=0 cellpadding=0 class="range_base" style="">
+				<tbody>
+					<tr>
+						<td colspan="6" align="left">
+							<table border=0 cellspacing=0 cellpadding=0 class="range_show_only" style="" align="left">
+								<tbody>
+									<tr>
+										<td class="range_show_only_label" style=""><label style="display:none;">Show Only</label></td>
+										<td class="range_show_only_image range_show_only_image_Bone" style=""><img src="css/Bone_60x60.png"/><br/>Bone</td>
+										<td class="range_show_only_image range_show_only_image_Muscle" style=""><img src="css/Muscle_60x60.png"/><br/>Muscle</td>
+										<td class="range_show_only_image range_show_only_image_Vessel" style=""><img src="css/Vessel_60x60.png"/><br/>Vessel</td>
+										<td class="range_show_only_image range_show_only_image_Internal" style=""><img src="css/Internal_60x60.png"/><br/>Internal</td>
+										<td class="range_show_only_image range_show_only_image_All" style=""><img src="css/All_60x60.png"/><br/>All</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="6" align="center">
+							<table border=0 cellspacing=0 cellpadding=0 style="border-width:0px;padding:0px;margin:4px;">
+								<tbody>
+									<tr>
+										<td colspan="2"></td>
+										<td colspan="4" class="range_BCV_title">体積 [cc]</td>
+									</tr>
+									<tr class="range_BCV_label">
+										<td></td>
+										<td width="4"></td>
+										<td><div>&lt;10</div></td>
+										<td><div>10<br>-<br>100</div></td>
+										<td><div>100<br>-<br>1000</div></td>
+										<td><div>1000&lt;</div></td>
+										<td><div>Any</div></td>
+									</tr>
+									<tr>
+										<td align="center" class="range_border range_border_left range_border_right">
+											<table border=0 cellspacing=0 cellpadding=0 class="range_value">
+												<tbody>
+													<tr><td class="range_segment range_segment_label">
+
+															<div class="range_segment range_segment_HU range_segment_area range_segment_area_HU">&nbsp</div>
+															<div class="range_segment range_segment_UL range_segment_area range_segment_area_UL">&nbsp</div>
+
+															<div class="range_segment_label">Segment</div>
+															<div class="range_segment range_segment_H"><img src="css/H_50x50.png"/></div>
+															<div class="range_segment range_segment_HU">H+U</div>
+															<div class="range_segment range_segment_U"><img src="css/U_50x50.png"/></div>
+															<div class="range_segment range_segment_UL">U+L</div>
+															<div class="range_segment range_segment_L"><img src="css/L_50x50.png"/></div>
+															<div class="range_segment range_segment_HUL">H+U+L</div>
+
+													</td></tr>
+												</tbody>
+											</table>
+										</td>
+										<td></td>
+										<td align="center" class="range_border range_border_left">
+											<table border=0 cellspacing=0 cellpadding=0 class="range_value">
+												<tbody>
+													<tr><td class="range_segment range_segment_inf-10 range_value">
+														<div class="range_segment range_segment_HU range_segment_area range_segment_area_HU">&nbsp</div>
+														<div class="range_segment range_segment_UL range_segment_area range_segment_area_UL">&nbsp</div>
+
+														<div class="range_segment_label">&nbsp;</div>
+														<div class="range_segment range_segment_H   range_value">-</div>
+														<div class="range_segment range_segment_HU  range_value">-</div>
+														<div class="range_segment range_segment_U   range_value">-</div>
+														<div class="range_segment range_segment_UL  range_value">-</div>
+														<div class="range_segment range_segment_L   range_value">-</div>
+														<div class="range_segment range_segment_HUL range_value">-</div>
+													</td></tr>
+												</tbody>
+											</table>
+										</td>
+										<td align="center" class="range_border">
+											<table border=0 cellspacing=0 cellpadding=0 class="range_value">
+												<tbody>
+													<tr><td class="range_segment range_segment_10-100 range_value">
+														<div class="range_segment range_segment_HU range_segment_area range_segment_area_HU">&nbsp</div>
+														<div class="range_segment range_segment_UL range_segment_area range_segment_area_UL">&nbsp</div>
+
+														<div class="range_segment_label">&nbsp;</div>
+														<div class="range_segment range_segment_H   range_value">-</div>
+														<div class="range_segment range_segment_HU  range_value">-</div>
+														<div class="range_segment range_segment_U   range_value">-</div>
+														<div class="range_segment range_segment_UL  range_value">-</div>
+														<div class="range_segment range_segment_L   range_value">-</div>
+														<div class="range_segment range_segment_HUL range_value">-</div>
+													</td></tr>
+												</tbody>
+											</table>
+										</td>
+										<td align="center" class="range_border">
+											<table border=0 cellspacing=0 cellpadding=0 class="range_value">
+												<tbody>
+													<tr><td class="range_segment range_segment_100-1000 range_value">
+														<div class="range_segment range_segment_HU range_segment_area range_segment_area_HU">&nbsp</div>
+														<div class="range_segment range_segment_UL range_segment_area range_segment_area_UL">&nbsp</div>
+
+														<div class="range_segment_label">&nbsp;</div>
+														<div class="range_segment range_segment_H   range_value">-</div>
+														<div class="range_segment range_segment_HU  range_value">-</div>
+														<div class="range_segment range_segment_U   range_value">-</div>
+														<div class="range_segment range_segment_UL  range_value">-</div>
+														<div class="range_segment range_segment_L   range_value">-</div>
+														<div class="range_segment range_segment_HUL range_value">-</div>
+													</td></tr>
+												</tbody>
+											</table>
+										</td>
+										<td align="center" class="range_border range_border_right">
+											<table border=0 cellspacing=0 cellpadding=0 class="range_value">
+												<tbody>
+													<tr><td class="range_segment range_segment_1000-inf range_value">
+														<div class="range_segment range_segment_HU range_segment_area range_segment_area_HU">&nbsp</div>
+														<div class="range_segment range_segment_UL range_segment_area range_segment_area_UL">&nbsp</div>
+
+														<div class="range_segment_label">&nbsp;</div>
+														<div class="range_segment range_segment_H   range_value">-</div>
+														<div class="range_segment range_segment_HU  range_value">-</div>
+														<div class="range_segment range_segment_U   range_value">-</div>
+														<div class="range_segment range_segment_UL  range_value">-</div>
+														<div class="range_segment range_segment_L   range_value">-</div>
+														<div class="range_segment range_segment_HUL range_value">-</div>
+													</td></tr>
+												</tbody>
+											</table>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div id="navigate-range-panel-base-fx">
+			<table border=0 cellspacing=0 cellpadding=0 class="range_base" style="">
+				<tbody>
+					<tr>
+						<td align="center">
+							<table border=0 cellspacing=0 cellpadding=0 class="range_show_only" style="" align="center">
+								<tbody>
+									<tr>
+										<td class="range_show_only_label" style="width:25px;"><label style="display:none;">Show Only</label></td>
+										<td class="range_show_only_image range_show_only_image_Bone" style=""><img src="css/Bone_60x60.png"/><br/>Bone</td>
+										<td class="range_show_only_image range_show_only_image_Muscle" style=""><img src="css/Muscle_60x60.png"/><br/>Muscle</td>
+										<td class="range_show_only_image range_show_only_image_Vessel" style=""><img src="css/Vessel_60x60.png"/><br/>Vessel</td>
+										<td class="range_show_only_image range_show_only_image_Internal" style=""><img src="css/Internal_60x60.png"/><br/>Internal</td>
+										<td class="range_show_only_image range_show_only_image_All" style=""><img src="css/All_60x60.png"/><br/>All</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+
+					<tr><td align="center">
+						<div style="background:#ffffff;border:1px solid #cccccc;width: 210px;margin:0px auto;padding: 2px;">
+							<table border=0 cellspacing=0 cellpadding=0 align="center"><tbody>
+								<tr>
+									<td valign="top"><input type="checkbox" name="navigate-range-panel-only-taid" id="navigate-range-panel-only-taid" value="true"></td>
+									<td valign="top" class="navigate_range_panel_only_taid"><label for="navigate-range-panel-only-taid" style="font-size:11px;">Show only TA matches(*)</label></td>
+								</tr>
+								<tr>
+									<td valign="top" colspan="2" class="navigate_range_panel_only_taid"><label for="navigate-range-panel-only-taid">* listed in Terminologia Anatomica</label></td>
+								</tr>
+							</tbody></table>
+						</div>
+					</td></tr>
+
+					<tr>
+						<td>
+							<table border=0 cellspacing=0 cellpadding=0 style="border-width:0px;padding:0px;margin:4px;">
+								<tbody>
+									<tr>
+										<td colspan="2"></td>
+										<td colspan="5" class="range_BCV_title"><div style="font-weight:bold;margin-bottom:2px;">体積 [cc]</div></td>
+									</tr>
+									<tr class="range_BCV_label">
+										<td></td>
+										<td style="width:4px;"></td>
+										<td><div>&lt;0.1</div></td>
+										<td><div>0.1<br>-<br>0.35</div></td>
+										<td><div>0.35<br>-<br>1</div></td>
+										<td><div>1<br>-<br>10</div></td>
+										<td><div>10&lt;</div></td>
+										<td><div>Any</div></td>
+									</tr>
+									<tr>
+										<td align="center" class="">
+											<table border=0 cellspacing=0 cellpadding=0 class="range_border range_border_left range_border_right range_border_top">
+												<tbody>
+													<tr><td class="range_segment range_segment_label">
+														<div class="range_segment_base">
+															<div class="range_segment_label">Segment<br>Range</div>
+															<div class="range_segment range_segment_H"><img src="css/H_50x50.png"/></div>
+															<div class="range_segment range_segment_U"><img src="css/U_50x50.png"/></div>
+															<div class="range_segment range_segment_L"><img src="css/L_50x50.png"/></div>
+															<div class="range_segment_label" style="height:36px;margin:0 0;padding:6px 0 0;"><label>Bridging</label><br><label>more than</label><br><label>one seg.</label></div>
+
+														</div>
+													</td></tr>
+												</tbody>
+											</table>
+
+											<table border=0 cellspacing=0 cellpadding=0 class="range_value range_border range_border_left range_border_right range_border_bottom">
+												<tbody>
+													<tr><td class="range_segment range_segment_label">
+														<div class="range_segment_base">
+															<div class="range_segment range_segment_ANY">Any</div>
+														</div>
+													</td></tr>
+												</tbody>
+											</table>
+
+										</td>
+										<td></td>
+
+										<td align="center" class="">
+											<table border=0 cellspacing=0 cellpadding=0 class="range_value range_border range_border_left range_border_top range_segment_inf-01 range_segment_area_HUL">
+												<tbody>
+													<tr><td class="range_segment range_segment_inf-01 range_value">
+														<div class="range_segment_base">
+															<div class="range_segment_label">&nbsp;</div>
+															<div class="range_segment range_segment_H   range_value">-</div>
+															<div class="range_segment range_segment_U   range_value">-</div>
+															<div class="range_segment range_segment_L   range_value">-</div>
+															<div class="range_segment range_segment_HUL range_value">-</div>
+														</div>
+													</td></tr>
+												</tbody>
+											</table>
+											<table border=0 cellspacing=0 cellpadding=0 class="range_value range_border range_border_left range_border_bottom range_segment_inf-01 range_segment_area_ANY">
+												<tbody>
+													<tr><td class="range_segment range_segment_inf-01 range_value">
+														<div class="range_segment_base">
+															<div class="range_segment range_segment_ANY range_value">-</div>
+														</div>
+													</td></tr>
+												</tbody>
+											</table>
+										</td>
+
+										<td align="center" class="">
+											<table border=0 cellspacing=0 cellpadding=0 class="range_value range_border range_border_left range_border_top range_segment_01-1 range_segment_area_HUL">
+												<tbody>
+													<tr><td class="range_segment range_segment_01-1 range_value">
+														<div class="range_segment_base">
+															<div class="range_segment_label">&nbsp;</div>
+															<div class="range_segment range_segment_H   range_value">-</div>
+															<div class="range_segment range_segment_U   range_value">-</div>
+															<div class="range_segment range_segment_L   range_value">-</div>
+															<div class="range_segment range_segment_HUL range_value">-</div>
+														</div>
+													</td></tr>
+												</tbody>
+											</table>
+											<table border=0 cellspacing=0 cellpadding=0 class="range_value range_border range_border_left range_border_bottom range_segment_01-1 range_segment_area_ANY">
+												<tbody>
+													<tr><td class="range_segment range_segment_01-1 range_value">
+														<div class="range_segment_base">
+															<div class="range_segment range_segment_ANY range_value">-</div>
+														</div>
+													</td></tr>
+												</tbody>
+											</table>
+										</td>
+
+										<td align="center" class="">
+											<table border=0 cellspacing=0 cellpadding=0 class="range_value range_border range_border_left range_border_top range_segment_1-10 range_segment_area_HUL">
+												<tbody>
+													<tr><td class="range_segment range_segment_1-10 range_value">
+														<div class="range_segment_base">
+															<div class="range_segment_label">&nbsp;</div>
+															<div class="range_segment range_segment_H   range_value">-</div>
+															<div class="range_segment range_segment_U   range_value">-</div>
+															<div class="range_segment range_segment_L   range_value">-</div>
+															<div class="range_segment range_segment_HUL range_value">-</div>
+														</div>
+													</td></tr>
+												</tbody>
+											</table>
+											<table border=0 cellspacing=0 cellpadding=0 class="range_value range_border range_border_left range_border_bottom range_segment_1-10 range_segment_area_ANY">
+												<tbody>
+													<tr><td class="range_segment range_segment_1-10 range_value">
+														<div class="range_segment_base">
+															<div class="range_segment range_segment_ANY range_value">-</div>
+														</div>
+													</td></tr>
+												</tbody>
+											</table>
+										</td>
+
+										<td align="center" class="">
+											<table border=0 cellspacing=0 cellpadding=0 class="range_value range_border range_border_top range_segment_10-100 range_segment_area_HUL">
+												<tbody>
+													<tr><td class="range_segment range_segment_10-100 range_value">
+														<div class="range_segment_base">
+															<div class="range_segment_label">&nbsp;</div>
+															<div class="range_segment range_segment_H   range_value">-</div>
+															<div class="range_segment range_segment_U   range_value">-</div>
+															<div class="range_segment range_segment_L   range_value">-</div>
+															<div class="range_segment range_segment_HUL range_value">-</div>
+														</div>
+													</td></tr>
+												</tbody>
+											</table>
+
+											<table border=0 cellspacing=0 cellpadding=0 class="range_value range_border range_border_bottom range_segment_10-100 range_segment_area_ANY">
+												<tbody>
+													<tr><td class="range_segment range_segment_10-100 range_value">
+														<div class="range_segment_base">
+															<div class="range_segment range_segment_ANY range_value">-</div>
+														</div>
+													</td></tr>
+												</tbody>
+											</table>
+
+										</td>
+										<td align="center" class="">
+											<table border=0 cellspacing=0 cellpadding=0 class="range_value range_border range_border_top range_segment_100-inf range_segment_area_HUL">
+												<tbody>
+													<tr><td class="range_segment range_segment_100-inf range_value">
+														<div class="range_segment_base">
+															<div class="range_segment_label">&nbsp;</div>
+															<div class="range_segment range_segment_H   range_value">-</div>
+															<div class="range_segment range_segment_U   range_value">-</div>
+															<div class="range_segment range_segment_L   range_value">-</div>
+															<div class="range_segment range_segment_HUL range_value">-</div>
+														</div>
+													</td></tr>
+												</tbody>
+											</table>
+
+											<table border=0 cellspacing=0 cellpadding=0 class="range_value range_border range_border_bottom range_segment_100-inf range_segment_area_ANY">
+												<tbody>
+													<tr><td class="range_segment range_segment_100-inf range_value">
+														<div class="range_segment_base">
+															<div class="range_segment range_segment_ANY range_value">-</div>
+														</div>
+													</td></tr>
+												</tbody>
+											</table>
+
+										</td>
+
+										<td align="center" class="">
+											<table border=0 cellspacing=0 cellpadding=0 class="range_value range_border range_border_right range_border_top range_segment_any range_segment_area_HUL">
+												<tbody>
+													<tr><td class="range_segment range_segment_any range_value">
+														<div class="range_segment_base">
+															<div class="range_segment_label">&nbsp;</div>
+															<div class="range_segment range_segment_H   range_value">-</div>
+															<div class="range_segment range_segment_U   range_value">-</div>
+															<div class="range_segment range_segment_L   range_value">-</div>
+															<div class="range_segment range_segment_HUL range_value">-</div>
+														</div>
+													</td></tr>
+												</tbody>
+											</table>
+
+											<table border=0 cellspacing=0 cellpadding=0 class="range_value range_border range_border_right range_border_bottom range_segment_any range_segment_area_ANY">
+												<tbody>
+													<tr><td class="range_segment range_segment_any range_value">
+														<div class="range_segment_base">
+															<div class="range_segment range_segment_ANY range_value">-</div>
+														</div>
+													</td></tr>
+												</tbody>
+											</table>
+
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<table border=0 cellspacing=0 cellpadding=0 class="navigate_range_panel_density" style="">
+								<tbody>
+									<tr><td><label>Representation Type</label><a href="#" onclick="return click_information_button({hash:'#Data_types'});"><img src="css/information.png" style="width:12px;height:12px;"></a></td></tr>
+									<tr><td style="text-align:center;">
+										<table border=0 cellspacing=0 cellpadding=0 align="center" style="width:230px;text-align:center;">
+											<tbody>
+<!--
+												<tr>
+													<td>
+														<table border=0 cellspacing=0 cellpadding=0 class="navigate_range_panel_density_item select_item" style="">
+															<tbody><tr>
+																<td><input type="radio" name="navigate-range-panel-density-radio-name" id="navigate-range-panel-density-radio-name-any" value="any" checked></td>
+																<td><label for="navigate-range-panel-density-radio-name-any">Any</label>&nbsp;<img src="css/075.png" align=center><img src="css/100.png" align=center><img src="css/primitive.png" align=center></td>
+															</tr></tbody>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<table border=0 cellspacing=0 cellpadding=0 class="navigate_range_panel_density_item" style="">
+															<tbody><tr>
+																<td><input type="radio" name="navigate-range-panel-density-radio-name" id="navigate-range-panel-density-radio-name-primitive" value="primitive"></td>
+																<td><label for="navigate-range-panel-density-radio-name-primitive">ELEMENT</label>&nbsp;<img src="css/primitive.png" align=center></td>
+															</tr></tbody>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<table border=0 cellspacing=0 cellpadding=0 class="navigate_range_panel_density_item" style="">
+															<tbody><tr>
+																<td><input type="radio" name="navigate-range-panel-density-radio-name" id="navigate-range-panel-density-radio-name-100" value="100-inf"></td>
+																<td><label for="navigate-range-panel-density-radio-name-100">ELEMENT and complete COMPOUND</label>&nbsp;<img src="css/primitive.png" align=center><img src="css/100.png" align=center></td>
+															</tr></tbody>
+														</table>
+													</td>
+												</tr>
+-->
+
+												<tr>
+													<td>
+														<table border=0 cellspacing=0 cellpadding=0 class="navigate_range_panel_density_item" style="">
+															<tbody><tr>
+																<td><input type="checkbox" name="navigate-range-panel-density-checkbox-name-element" id="navigate-range-panel-density-checkbox-name-element" value="element" checked></td>
+																<td><label for="navigate-range-panel-density-checkbox-name-element">ELEMENT</label>&nbsp;<img src="css/primitive.png" align=center></td>
+															</tr></tbody>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<table border=0 cellspacing=0 cellpadding=0 class="navigate_range_panel_density_item" style="">
+															<tbody><tr>
+																<td><input type="checkbox" name="navigate-range-panel-density-checkbox-name-complete-compound" id="navigate-range-panel-density-checkbox-name-complete-compound" value="complete-compound" checked></td>
+																<td><label for="navigate-range-panel-density-checkbox-name-complete-compound">Complete COMPOUND</label>&nbsp;<img src="css/100.png" align=center></td>
+															</tr></tbody>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<table border=0 cellspacing=0 cellpadding=0 class="navigate_range_panel_density_item" style="">
+															<tbody><tr>
+																<td><input type="checkbox" name="navigate-range-panel-density-checkbox-name-incomplete-compound" id="navigate-range-panel-density-checkbox-name-incomplete-compound" value="incomplete-compound" checked></td>
+																<td><label for="navigate-range-panel-density-checkbox-name-incomplete-compound">Incomplete COMPOUND</label>&nbsp;<img src="css/075.png" align=center></td>
+															</tr></tbody>
+														</table>
+													</td>
+												</tr>
+
+											</tbody>
+										</table>
+									</td></tr>
+<!--
+									<tr><td>
+										<table border=0 cellspacing=0 cellpadding=0><tbody>
+											<tr>
+												<td valign="top"><input type="checkbox" name="navigate-range-panel-only-taid" id="navigate-range-panel-only-taid" value="true"></td>
+												<td valign="top" class="navigate_range_panel_only_taid"><label for="navigate-range-panel-only-taid">Show only TA matches(*)</label></td>
+											</tr>
+											<tr>
+												<td valign="top" colspan="2" class="navigate_range_panel_only_taid"><label for="navigate-range-panel-only-taid">* listed in Terminologia Anatomica</label></td>
+											</tr>
+										</tbody></table>
+									</td></tr>
+-->
+								</tbody>
+							</table>
+
+						</td>
+					</tr>
+
+				</tbody>
+			</table>
+			<div id="navigate-range-panel-filter-combobox-render"></div>
+			<div id="navigate-range-panel-cube-volume-combobox-render"></div>
+			<div id="navigate-range-panel-cube-volume-zmax-numberfield-render"></div>
+			<div id="navigate-range-panel-cube-volume-zmin-numberfield-render"></div>
+			<div id="navigate-range-panel-range-combobox-render"></div>
+			<div id="navigate-range-panel-zmax-numberfield-render"></div>
+			<div id="navigate-range-panel-zmin-numberfield-render"></div>
+			<div id="navigate-range-panel-condition-textfield-render"></div>
+			<div id="navigate-range-panel-num-numberfield-render"></div>
+		</div>
+	</div>
+</div>
+
+<div id="bp3d-content-panel-header-contentEl" align="" class="x-hide-display">
+	<table cellpadding="0" cellspacing="0" boder="0" width=100%>
+		<tbody>
+			<tr>
+				<td width=44 align="center" valign="top" rowspan="2">
+					<img src="css/2.png" width=44 height=44>
+				</td>
+				<td width=100 align="center" rowspan="2">
+					<div id="bp3d-content-panel-header-content-view-combobox-render" style="margin-left:10px;display:none;"></div>
+					<table cellpadding="0" cellspacing="0" boder="0" id="bp3d-content-panel-header-content-view-render">
+						<tbody>
+							<tr>
+								<td style="width:32px;">
+									<div id="bp3d-content-panel-header-content-view-thump-render" style="margin:0px 4px;width:24px;height:21px;"></div>
+								</td>
+								<td style="width:32px;">
+									<div id="bp3d-content-panel-header-content-view-list-render" style="margin:0px 4px;width:24px;height:21px;"></div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+				<td width=80>
+					<table cellpadding="0" cellspacing="0" boder="0" style="width:80px;">
+						<tbody>
+							<tr style="">
+								<td align="center" style="width:80px;">
+									<label style="">View</label>
+								</td>
+							</tr>
+							<tr style="height:30px;">
+								<td align="" style="width:80px;">
+									<div id="bp3d-content-panel-header-content-position-combobox-render"></div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+				<td width=100>
+					<table cellpadding="0" cellspacing="0" boder="0" style="width:100px;">
+						<tbody>
+							<tr>
+								<td align="center">
+									<label style="">Sort by</label>
+								</td>
+							</tr>
+							<tr style="height:30px;">
+								<td style="width:120px;">
+									<div id="bp3d-content-panel-header-content-sort-combobox-render"></div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+				<td rowspan="2">
+					<table cellpadding="0" cellspacing="0" boder="0" width="" style="margin-left:50px;">
+						<tbody>
+							<tr style="height:23px;">
+								<td colspan="" style="">
+									<table cellpadding="0" cellspacing="0" boder="0" style="">
+										<tbody>
+											<tr>
+												<td valign="middle" nowrap style="padding-left:1.5em;"><label style="font-size:14px;">Models for concepts in</label></td>
+												<td valign="middle" nowrap style="font-size:14px;font-weight:bold;padding-left:0.5em;"><label style="">&quot;</label><label id="bp3d-buildup-logic-contents-label" style=""></label><label>&quot;</label></td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+							<tr style="height:32px;">
+								<td>
+									<table cellpadding="0" cellspacing="0" boder="0" style="">
+										<tbody>
+											<tr>
+												<td rowspan="2"><label style="line-height:18px;vertical-align:top;margin-left:1em;white-space:nowrap;">ELEMENT/PRIMARY:</label><img src="css/primitive.png"></td>
+												<td align="right" rowspan=2><label style="margin-left:1em;margin-right:0.5em;white-space:nowrap;">COMPOUND/SECONDARY:</label></td>
+												<td align="center"><label style="">Good</label></td>
+												<td align="center"><label style="">--</label></td>
+												<td align="center"><label style="">poor</label></td>
+											</tr>
+											<tr>
+												<td align="center"><img src="css/100.png"></td>
+												<td align="center"><img src="css/035.png"></td>
+												<td align="center"><img src="css/015.png"></td>
+											<tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td colspan=2 nowrap>
+
+<input type="checkbox" name="bp3d-content-panel-header-content-degenerate-same-shape-icons" id="bp3d-content-panel-header-content-degenerate-same-shape-icons" value="true" checked><label for="bp3d-content-panel-header-content-degenerate-same-shape-icons">Show only Unique models</label>
+
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+
+<div id="anatomography-image-contentEl" class="x-hide-display" style="position:relative;">
+	<table width="100%" height="100%" cellpadding="0" cellspacing="0">
+		<tr><td align="center" valign="center" style="position:relative;">
+			<img id="ag_img" src="resources/images/default/s.gif">
+		</td></tr>
+	</table>
+	<div id="ag-copyright" class="x-hide-display">
+		<label>&copy;2010 DBCLS - <a id="ag-copyright-link" href="#" target="_blank" onclick="this.blur();">Anatomography</a>
+	</div>
+
+
+	<div id="ag-image-command-box" align="center">
+
+		<div id="ag-image-rotate-box" align="center" class="x-hide-display" style="position:relative; width:76px;background-color:transparent;">
+			<table id="ag-image-button-box" cellpadding="0" cellspacing="0" boder="0" align="center" width="70" height="36" style="float:center;"><tr>
+				<td align="center" valign="middle"><a id="ag-command-btn-move" class="ag_command_btn" href="#"></a></td>
+				<td align="center" valign="middle"><a id="ag-command-btn-rotate" class="ag_command_btn" href="#"></a></td>
+			</tr></table>
+
+			<div id="ag-command-ipad" class="x-hide-display">
+				<a id="ag-command-btn-grid" class="ag_command_btn" href="#"></a>
+				<div id="ag-command-grid-color-ipad"></div>
+				<select id="ag-command-grid-len-ipad" size="1">
+					<option value="1">1mm</option>
+					<option value="5">5mm</option>
+					<option value="10">10mm</option>
+					<option value="50">50mm</option>
+					<option value="100">100mm</option>
+				</select>
+			</div>
+
+			<div id="ag-command-rotate-button-render"></div>
+
+			<a href="#" onclick="try{_dump('click');ag_focus(false,true);this.blur();return false;}catch(e){_dump(e);}" style="float:left;margin:4px 1px 4px 2px;"><img id="ag-command-focus-center-button" src="css/focus_center.png"/></a>
+			<a href="#" onclick="try{_dump('click');ag_focus(false);this.blur();return false;}catch(e){_dump(e);}" style="float:left;margin:4px 1px 4px 2px;"><img id="ag-command-focus-button" src="css/focus_zoom.png"/></a>
+			<div id="ag-command-autorotate-chechbox-render"><label id="ag-command-autorotate-chechbox-label">Auto<br>rotation</label></div>
+			<div id="ag-image-grid-box" style="float:center;width:80px;height:19px;overflow:hidden;">
+				<table class="ag-image-grid-box-class" cellpadding="0" cellspacing="0" boder="0" style="width:78px;height:62px;">
+					<tr><td colspan="2" class="ag_command_title" style="padding-bottom:2px;vertical-align: top;"><div><div id="ag-command-grid-render">Grid</div>&nbsp;On/Off</div></td>
+					<tr><td class="ag_command" style="padding-bottom:0px;padding-left:2px;"><div id="ag-command-grid-color-render"></div></td></tr>
+					<tr><td class="ag_command" style="padding-bottom:0px;padding-left:2px;"><div id="ag-command-grid-len-render"></div></td></tr>
+				</table>
+			</div>
+
+			<div id="ag-image-zoom-box" style="float:center;">
+				<div style="width:46px;height:15px;margin-top:4px;overflow:hidden;" align="center"><a id="ag-command-zoom-btn-up" href="#" onclick="anatomoZoomUpButton();this.blur();return false;"><br/></a></div>
+				<div id="ag-command-zoom-slider-render" style="width:46px;height:300px;"></div>
+				<div style="position:relative;width:46px;height:15px;overflow:hidden;" align="center"><a id="ag-command-zoom-btn-down" href="#" onclick="anatomoZoomDownButton();this.blur();return false;"><br/></a></div>
+				<table id="ag-image-zoom-text-box" cellpadding="0" cellspacing="0" boder="0" align="center" width="46">
+					<tr><td rowspan="2"><div id="ag-command-zoom-text-render"></div></td><td><div style="width:16px;height:10px;overflow:hidden;"><a id="ag-command-zoom-spinner-up" href="#" onclick="anatomoZoomUpButton();this.blur();return false;"></a></div></td></tr>
+					<tr><td><div style="width:16px;height:10px;overflow:hidden;"><a id="ag-command-zoom-spinner-down" href="#" onclick="anatomoZoomDownButton();this.blur();return false;"></a></div></td></tr>
+				</table>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<div id="rotImgDiv">
+	<table cellpadding="2" cellspacing="0"><tr><td id="rotImgDivRotateH" align="left"></td><td id="rotImgDivRotateV" align="right"></td></tr></table>
+</div>
+
+<div id="ag-link-window-contentEl" class="x-hide-display">
+	<table cellpadding="0" cellspacing="0" boder="0" align="center" style="width:100%;">
+		<tbody>
+			<tr><td colspan="3"><div id="ag-link-window-page-reproduction-label-renderTo" style="font-size:1.5em;color:#15428b;"></div></td></tr>
+			<tr><td colspan="3"><div style="position:relative;height:24px;"><div id="ag-link-window-page-reproduction-textfield-renderTo" style="position:absolute;left:10px;right:10px;"></div></div></td></tr>
+
+			<tr><td colspan="3"><hr size="1"></td></tr>
+
+			<tr><td colspan="3">
+				<table cellpadding="0" cellspacing="0" boder="0" align="left" style="width:100%;">
+					<tbody><tr>
+						<td><div id="ag-link-window-image-re-use-label-renderTo" style="font-size:1.5em;color:#15428b;white-space: nowrap;"></div></td>
+						<td>
+							<table cellpadding="0" cellspacing="0" boder="0" align="left" style="width:120px;">
+								<tbody><tr>
+									<td><div id="ag-link-window-image-re-use-size-label-renderTo" style="font-size:1.1em;color:#15428b;maring-left:2em;"></div></td>
+									<td>
+										<table cellpadding="0" cellspacing="0" boder="0" align="left" style="width:100px;border:1px solid #c0c0c0;">
+											<tbody><tr>
+												<td><div id="ag-link-window-image-re-use-size-s-button-renderTo"></div></td>
+												<td><div id="ag-link-window-image-re-use-size-m-button-renderTo"></div></td>
+												<td><div id="ag-link-window-image-re-use-size-l-button-renderTo"></div></td>
+											</tr></tbody>
+										</table>
+									</td>
+								</tr></tbody>
+							</table>
+						</td>
+					</tr></tbody>
+				</table>
+			</td></tr>
+			<tr>
+				<td style="width:40px;"><div id="ag-link-window-image-re-use-still-label-renderTo" style="margin-left:1em;"></div></td>
+				<td style="width:200px;"><div style="position:relative;height:24px;"><div id="ag-link-window-image-re-use-still-textfield-renderTo" style="position:absolute;left:10px;right:10px;"></div></div></td>
+				<td style="width:50px;"><div id="ag-link-window-image-re-use-still-button-renderTo"></div></td>
+			</tr>
+			<tr>
+				<td style="width:40px;"><div id="ag-link-window-image-re-use-rotate-label-renderTo" style="margin-left:1em;"></div></td>
+				<td style="width:200px;"><div style="position:relative;height:24px;"><div id="ag-link-window-image-re-use-rotate-textfield-renderTo" style="position:absolute;left:10px;right:10px;"></div></div></td>
+				<td style="width:50px;"><div id="ag-link-window-image-re-use-rotate-button-renderTo"></div></td>
+			</tr>
+
+			<tr><td colspan="3"><hr size="1"></td></tr>
+
+			<tr><td colspan="3"><div id="ag-link-window-url-checkbox-renderTo"></div></td></tr>
+
+			<tr><td colspan="3"><hr size="1"></td></tr>
+			<tr><td colspan="3"><div id="ag-link-window-url-table-fieldset-renderTo"></div></td></tr>
+
+		</tbody>
+	</table>
+</div>
+
+<div id="ag-embed-window-contentEl" class="x-hide-display">
+	<table cellpadding="0" cellspacing="0" boder="0" align="center" style="width:100%;">
+		<tbody>
+			<tr><td colspan="3"><div id="ag-embed-window-page-reproduction-label-renderTo" style="font-size:1.5em;color:#15428b;"></div></td></tr>
+			<tr><td colspan="3"><div style="position:relative;height:24px;"><div id="ag-embed-window-page-reproduction-textfield-renderTo" style="position:absolute;left:10px;right:10px;"></div></div></td></tr>
+
+			<tr><td colspan="3"><hr size="1"></td></tr>
+
+			<tr><td colspan="3">
+				<table cellpadding="0" cellspacing="0" boder="0" align="left" style="width:100%;">
+					<tbody><tr>
+						<td><div id="ag-embed-window-image-re-use-label-renderTo" style="font-size:1.5em;color:#15428b;white-space: nowrap;"></div></td>
+						<td>
+							<table cellpadding="0" cellspacing="0" boder="0" align="left" style="width:120px;">
+								<tbody><tr>
+									<td><div id="ag-embed-window-image-re-use-size-label-renderTo" style="font-size:1.1em;color:#15428b;maring-left:2em;"></div></td>
+									<td>
+										<table cellpadding="0" cellspacing="0" boder="0" align="left" style="width:100px;border:1px solid #c0c0c0;">
+											<tbody><tr>
+												<td><div id="ag-embed-window-image-re-use-size-s-button-renderTo"></div></td>
+												<td><div id="ag-embed-window-image-re-use-size-m-button-renderTo"></div></td>
+												<td><div id="ag-embed-window-image-re-use-size-l-button-renderTo"></div></td>
+											</tr></tbody>
+										</table>
+									</td>
+								</tr></tbody>
+							</table>
+						</td>
+					</tr></tbody>
+				</table>
+			</td></tr>
+			<tr>
+				<td style="width:40px;"><div id="ag-embed-window-image-re-use-still-label-renderTo" style="margin-left:1em;"></div></td>
+				<td style="width:300px;"><div style="position:relative;height:24px;"><div id="ag-embed-window-image-re-use-still-textfield-renderTo" style="position:absolute;left:10px;right:10px;"></div></div></td>
+				<td style="width:50px;"><div id="ag-embed-window-image-re-use-still-button-renderTo"></div></td>
+			</tr>
+			<tr>
+				<td style="width:40px;"><div id="ag-embed-window-image-re-use-rotate-label-renderTo" style="margin-left:1em;"></div></td>
+				<td style="width:300px;"><div style="position:relative;height:24px;"><div id="ag-embed-window-image-re-use-rotate-textfield-renderTo" style="position:absolute;left:10px;right:10px;"></div></div></td>
+				<td style="width:50px;"><div id="ag-embed-window-image-re-use-rotate-button-renderTo"></div></td>
+			</tr>
+
+			<tr><td colspan="3"><hr size="1"></td></tr>
+
+			<tr><td colspan="3"><div id="ag-embed-window-embed-label-renderTo" style="font-size:1.5em;color:#15428b;"></div></td></tr>
+			<tr><td colspan="3"><div style="position:relative;height:68px;"><div id="ag-embed-window-embed-textarea-renderTo" style="position:absolute;left:10px;right:10px;"></div></div></td></tr>
+
+			<tr><td colspan="3"><hr size="1"></td></tr>
+
+			<tr><td colspan="3"><div id="ag-embed-window-url-checkbox-renderTo"></div></td></tr>
+		</tbody>
+	</table>
+</div>
+
+<div id="bp3d-link-window-contentEl" class="x-hide-display">
+	<table cellpadding="0" cellspacing="0" boder="0" align="center" style="width:100%;">
+		<tbody>
+<!--
+			<tr>
+				<td colspan="3"><div id="bp3d-link-window-image-re-use-label-renderTo" style="font-size:1.5em;color:#15428b;white-space: nowrap;"></div></td>
+			</tr>
+-->
+			<tr>
+				<td style="width:30px;"><div id="bp3d-link-window-image-re-use-view-label-renderTo" style="margin-left:1em;"></div></td>
+				<td colspan="2">
+					<table cellpadding="0" cellspacing="0" boder="0" align="left" style="width:250px;margin-left:1em;">
+						<tbody><tr>
+							<td><div id="bp3d-link-window-image-re-use-view-rotate-button-renderTo"></div></td>
+							<td><div id="bp3d-link-window-image-re-use-view-f-button-renderTo"></div></td>
+							<td><div id="bp3d-link-window-image-re-use-view-b-button-renderTo"></div></td>
+							<td><div id="bp3d-link-window-image-re-use-view-l-button-renderTo"></div></td>
+							<td><div id="bp3d-link-window-image-re-use-view-r-button-renderTo"></div></td>
+						</tr></tbody>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td style="width:30px;"><div id="bp3d-link-window-image-re-use-size-label-renderTo" style="margin-left:1em;"></div></td>
+				<td colspan="2">
+					<table cellpadding="0" cellspacing="0" boder="0" align="left" style="width:66px;margin-left:1em;">
+						<tbody><tr>
+							<td><div id="bp3d-link-window-image-re-use-size-s-button-renderTo"></div></td>
+							<td><div id="bp3d-link-window-image-re-use-size-l-button-renderTo"></div></td>
+						</tr></tbody>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td style="width:30px;"><div id="bp3d-link-window-image-re-use-still-label-renderTo" style="margin-left:1em;"></div></td>
+				<td colspan="2"><div style="position:relative;height:24px;"><div id="bp3d-link-window-image-re-use-still-textfield-renderTo" style="position:absolute;left:10px;right:10px;"></div></div></td>
+			</tr>
+			<tr>
+				<td colspan="2"></td>
+				<td style="width:50px;"><div id="bp3d-link-window-image-re-use-still-button-renderTo"></div></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<div id="ag-comment-panel-header-contentEl" align="" class="x-hide-display">
+	<table cellpadding="0" cellspacing="0" boder="0" width=100%>
+		<tbody>
+			<tr>
+				<td width=44 align="center" valign="top" rowspan=2>
+					<img src="css/5.png" width=44 height=44>
+				</td>
+				<td colspan=2 nowrap>
+					<label>Option : Import map URL</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="#" style="float:left;width:auto;margin-left:1em;" onclick="ag_extensions.import_parts_pins.openWindow({title:'URL to pallet',animateTarget:Ext.get(this)});return false;"><img src="css/btn_URLtoPallet.png"></a>
+<!--
+					<table border="0" cellpadding="0" cellspacing="0" class="x-btn-wrap x-btn " style="float:left;width:auto;margin-left:1em;width:106px;"><tbody><tr>
+						<td class="x-btn-left"><i>&nbsp;</i></td>
+						<td class="x-btn-center"><em unselectable="on"><button class="x-btn-text" type="button" onclick="ag_extensions.import_parts_pins.openWindow({title:'URL to pallet',animateTarget:Ext.get(this)})">URL to pallet</button></em></td><td class="x-btn-right"><i>&nbsp;</i></td>
+					</tr></tbody></table>
+-->
+				</td>
+				<td>
+					<a href="#" style="float:left;width:auto;margin-left:1em;" onclick="ag_extensions.url2text.openWindow({title:'decode URL',animateTarget:Ext.get(this)});return false;"><img src="css/btn_decodeURL.png"></a>
+<!--
+<table border="0" cellpadding="0" cellspacing="0" class="x-btn-wrap x-btn " style="float:left;width:auto;margin-left:0.5em;width:106px;"><tbody><tr><td class="x-btn-left"><i>&nbsp;</i></td><td class="x-btn-center"><em unselectable="on"><button class="x-btn-text" type="button" onclick="ag_extensions.url2text.openWindow({title:'decode URL',animateTarget:Ext.get(this)})">decode URL</button></em></td><td class="x-btn-right"><i>&nbsp;</i></td></tr></tbody></table>
+-->
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<!--
+<div id="ag-point-search-header-content" align="center" class="x-hide-display">
+	<table id="ag-point-search-header-content-table" cellpadding="0" cellspacing="0" boder="0">
+		<tr><td>
+			<table cellpadding="0" cellspacing="0" boder="0" width="100%"><tr>
+				<td class="ag_grid_command" style="width:76px;"><div class="x-toolbar x-small-editor" style="height:20px;line-height:20px;" align="right">Screen(pixel)</div></td>
+				<td class="ag_grid_command" style="width:50px;">
+					<table cellpadding="0" cellspacing="0" boder="0" width="100%"><tr>
+						<td class="ag_grid_command"><div class="x-toolbar x-small-editor" style="height:20px;line-height:20px;font-weight:normal;border-right-width:0px;" align="right">X:</div></td>
+						<td class="ag_grid_command"><div class="x-toolbar x-small-editor" style="height:20px;line-height:20px;font-weight:normal;" align="left" id="ag-point-search-header-content-distance-x-render"></div></td>
+					</tr></table>
+				</td>
+				<td class="ag_grid_command" style="width:50px;">
+					<table cellpadding="0" cellspacing="0" boder="0" width="100%"><tr>
+						<td class="ag_grid_command"><div class="x-toolbar x-small-editor" style="height:20px;line-height:20px;font-weight:normal;border-right-width:0px;" align="right">Y:</div></td>
+						<td class="ag_grid_command"><div class="x-toolbar x-small-editor" style="height:20px;line-height:20px;font-weight:normal;" align="left" id="ag-point-search-header-content-distance-y-render"></div></td>
+					</tr></table>
+				</td>
+
+				<td class="ag_grid_command" style="width:74px;"><div class="x-toolbar x-small-editor" style="height:20px;line-height:20px;" align="right">Range(mm3)</div></td>
+				<td class="ag_grid_command" style="width:36px;"><div class="x-toolbar x-small-editor" style="height:20px;line-height:20px;font-weight:normal;" align="center" id="ag-point-search-header-content-distance-z-render"></div></td>
+
+				<td class="" style="background:#d0def0;"><div style="height:20px;line-height:20px;border-right:0px;" align="center" id="ag-point-search-header-content-distance-render"></div></td>
+			</tr></table>
+		</td></tr>
+		<tr><td>
+			<table cellpadding="0" cellspacing="0" boder="0" width="100%"><tr>
+				<td class="ag_grid_command" style="width:88px;"><div class="x-toolbar x-small-editor" style="height:20px;line-height:20px;" align="right">Coordinate(mm)</div></td>
+				<td class="ag_grid_command" style="width:72px;">
+					<table cellpadding="0" cellspacing="0" boder="0" width="100%"><tr>
+						<td class="ag_grid_command"><div class="x-toolbar x-small-editor" style="height:20px;line-height:20px;font-weight:normal;border-right-width:0px;" align="right">X:</div></td>
+						<td class="ag_grid_command"><div class="x-toolbar x-small-editor" style="height:20px;line-height:20px;font-weight:normal;" align="left" id="ag-point-search-header-content-coordinate-x-render"></div></td>
+					</tr></table>
+				</td>
+				<td class="ag_grid_command" style="width:72px;">
+					<table cellpadding="0" cellspacing="0" boder="0" width="100%"><tr>
+						<td class="ag_grid_command"><div class="x-toolbar x-small-editor" style="height:20px;line-height:20px;font-weight:normal;border-right-width:0px;" align="right">Y:</div></td>
+						<td class="ag_grid_command"><div class="x-toolbar x-small-editor" style="height:20px;line-height:20px;font-weight:normal;" align="left" id="ag-point-search-header-content-coordinate-y-render"></div></td>
+					</tr></table>
+				</td>
+				<td class="ag_grid_command" style="width:72px;">
+					<table cellpadding="0" cellspacing="0" boder="0" width="100%"><tr>
+						<td class="ag_grid_command"><div class="x-toolbar x-small-editor" style="height:20px;line-height:20px;font-weight:normal;border-right-width:0px;" align="right">Z:</div></td>
+						<td class="ag_grid_command"><div class="x-toolbar x-small-editor" style="height:20px;line-height:20px;font-weight:normal;" align="left" id="ag-point-search-header-content-coordinate-z-render"></div></td>
+					</tr></table>
+				</td>
+				<td class="ag_grid_command"><div class="x-toolbar x-small-editor" style="height:20px;line-height:20px;border-right:0px;" align="left" id="ag-point-search-header-content-coordinate-render"> </div></td>
+			</tr></table>
+		</td></tr>
+	</table>
+</div>
+-->
+<div id="ag-point-search-header-content" align="center" class="x-hide-display">
+	<table id="ag-point-search-header-content-table" cellpadding="0" cellspacing="0" boder="0">
+		<tr><td>
+			<table cellpadding="0" cellspacing="0" boder="0" width="100%"><tr>
+				<td class="ag_grid_command" style="width:66px;"><div class="x-toolbar x-small-editor" style="height:20px;line-height:20px;" align="right">Origin(mm)</div></td>
+				<td class="ag_grid_command" style="width:72px;">
+					<table cellpadding="0" cellspacing="0" boder="0" width="100%"><tr>
+						<td class="ag_grid_command"><div class="x-toolbar x-small-editor" style="height:20px;line-height:20px;font-weight:normal;border-right-width:0px;" align="right">X:</div></td>
+						<td class="ag_grid_command"><div class="x-toolbar x-small-editor" style="height:20px;line-height:20px;font-weight:normal;width:53px;text-align:right;padding:2px 4px 2px 2px;font-size:1.1em;" align="left" id="ag-point-search-header-content-coordinate-x-render"></div></td>
+					</tr></table>
+				</td>
+				<td class="ag_grid_command" style="width:72px;">
+					<table cellpadding="0" cellspacing="0" boder="0" width="100%"><tr>
+						<td class="ag_grid_command"><div class="x-toolbar x-small-editor" style="height:20px;line-height:20px;font-weight:normal;border-right-width:0px;" align="right">Y:</div></td>
+						<td class="ag_grid_command"><div class="x-toolbar x-small-editor" style="height:20px;line-height:20px;font-weight:normal;width:53px;text-align:right;padding:2px 4px 2px 2px;font-size:1.1em;" align="left" id="ag-point-search-header-content-coordinate-y-render"></div></td>
+					</tr></table>
+				</td>
+				<td class="ag_grid_command" style="width:72px;">
+					<table cellpadding="0" cellspacing="0" boder="0" width="100%"><tr>
+						<td class="ag_grid_command"><div class="x-toolbar x-small-editor" style="height:20px;line-height:20px;font-weight:normal;border-right-width:0px;" align="right">Z:</div></td>
+						<td class="ag_grid_command"><div class="x-toolbar x-small-editor" style="height:20px;line-height:20px;font-weight:normal;width:53px;text-align:right;padding:2px 4px 2px 2px;font-size:1.1em;" align="left" id="ag-point-search-header-content-coordinate-z-render"></div></td>
+					</tr></table>
+				</td>
+				<td class="ag_grid_command"><div class="x-toolbar x-small-editor" style="height:20px;line-height:20px;border-right:0px;" align="left" id="ag-point-search-header-content-coordinate-render"> </div></td>
+			</tr></table>
+		</td></tr>
+	</table>
+		<tr><td>
+			<table cellpadding="0" cellspacing="0" boder="0" width="100%"><tr>
+<!--
+				<td class="ag_grid_command" style="width:76px;"><div class="x-toolbar x-small-editor" style="height:20px;line-height:20px;" align="right">Screen(pixel)</div></td>
+				<td class="ag_grid_command" style="width:50px;">
+					<table cellpadding="0" cellspacing="0" boder="0" width="100%"><tr>
+						<td class="ag_grid_command"><div class="x-toolbar x-small-editor" style="height:20px;line-height:20px;font-weight:normal;border-right-width:0px;" align="right">X:</div></td>
+						<td class="ag_grid_command"><div class="x-toolbar x-small-editor" style="height:20px;line-height:20px;font-weight:normal;" align="left" id="ag-point-search-header-content-distance-x-render"></div></td>
+					</tr></table>
+				</td>
+				<td class="ag_grid_command" style="width:50px;">
+					<table cellpadding="0" cellspacing="0" boder="0" width="100%"><tr>
+						<td class="ag_grid_command"><div class="x-toolbar x-small-editor" style="height:20px;line-height:20px;font-weight:normal;border-right-width:0px;" align="right">Y:</div></td>
+						<td class="ag_grid_command"><div class="x-toolbar x-small-editor" style="height:20px;line-height:20px;font-weight:normal;" align="left" id="ag-point-search-header-content-distance-y-render"></div></td>
+					</tr></table>
+				</td>
+-->
+				<td class="ag_grid_command" style="width:68px;"><div class="x-toolbar x-small-editor" style="height:20px;line-height:20px;" align="right">Radius(mm)</div></td>
+				<td class="ag_grid_command" style="width:36px;"><div class="x-toolbar x-small-editor" style="height:20px;line-height:20px;font-weight:normal;width:29px;text-align:right;padding:2px 4px 2px 2px;font-size:1.1em;" align="center" id="ag-point-search-header-content-distance-z-render"></div></td>
+
+				<td class="" style="background:#d0def0;"><div style="height:20px;line-height:20px;border-right:0px;padding-left:10px;" align="left" id="ag-point-search-header-content-distance-render"></div></td>
+			</tr></table>
+		</td></tr>
+</div>
+
+<form method="POST" id="ag-open-url-form" class="x-hide-display"><textarea id="ag-open-url-form-url" name="url"></textarea></form>
+<form method="POST" id="ag-post-form" class="x-hide-display"></form>
+<form method="POST" id="ag-print-form" class="x-hide-display"></form>
+
+</body>
+</html>

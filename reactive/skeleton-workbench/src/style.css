@@ -3,3 +3,7 @@
 @media(max-width:520px){.viewtools{top:auto;bottom:39px;left:10px}}
 
 .appearance{margin:0 0 24px;padding:0 0 20px;border-top:0;border-bottom:1px solid #d5d9ce}.appearance summary{font-size:14px}.appearance-controls{padding-top:16px}.appearance-controls label{margin:14px 0 5px}.appearance-controls input[type=color]{width:100%;height:34px;padding:2px;border:1px solid #cbd1c2;border-radius:4px;background:#faf9f5;cursor:pointer}.appearance-controls .highlight-toggle{display:flex;align-items:center;gap:6px;margin:13px 0}.appearance-controls p{font-size:11px}.appearance-controls output{font-variant-numeric:tabular-nums}
+
+.ear-trial{border-bottom:1px solid #d5d9ce;margin-bottom:22px;padding-bottom:16px}.ear-trial label{line-height:1.7;margin:8px 0}.ear-trial button{margin:3px 3px 3px 0}.ear-trial p{font-size:11px;line-height:1.7}
+
+.viewtools{flex-wrap:wrap;max-width:calc(100% - 24px)}.viewtools button[aria-pressed="true"]{background:#b7c7a5;color:#23321e;border-color:#cdd9c1}.hint{line-height:1.7}@media(max-width:520px){.viewtools{bottom:62px}}
