@@ -1,0 +1,631 @@
+{
+  "scope": "仅本地 fit 项目；保留成品和源素材，不修改远端、不清理 Git 历史",
+  "removed": [
+    {
+      "path": ".DS_Store",
+      "reason": "系统缓存或自动备份",
+      "bytes": 6148,
+      "files": 1
+    },
+    {
+      "path": "html/assets/.DS_Store",
+      "reason": "系统缓存或自动备份",
+      "bytes": 10244,
+      "files": 1
+    },
+    {
+      "path": "html/assets/action-library/.DS_Store",
+      "reason": "系统缓存或自动备份",
+      "bytes": 6148,
+      "files": 1
+    },
+    {
+      "path": "html/assets/阶段1基础科学/.DS_Store",
+      "reason": "系统缓存或自动备份",
+      "bytes": 6148,
+      "files": 1
+    },
+    {
+      "path": "logs",
+      "reason": "日志、试验输出或未完成下载",
+      "bytes": 1773897,
+      "files": 13
+    },
+    {
+      "path": "prototypes/study-template/generated",
+      "reason": "日志、试验输出或未完成下载",
+      "bytes": 22113857,
+      "files": 49
+    },
+    {
+      "path": "reactive/.DS_Store",
+      "reason": "系统缓存或自动备份",
+      "bytes": 6148,
+      "files": 1
+    },
+    {
+      "path": "reactive/elbow-attachments/blender/__pycache__",
+      "reason": "Python 缓存",
+      "bytes": 11954,
+      "files": 1
+    },
+    {
+      "path": "reactive/elbow-attachments-delivery.zip",
+      "reason": "旧版备份或交付/上传压缩包，保留展开内容",
+      "bytes": 62883894,
+      "files": 1
+    },
+    {
+      "path": "reactive/elbow-attachments-v03-before-fit.zip",
+      "reason": "旧版备份或交付/上传压缩包，保留展开内容",
+      "bytes": 57147514,
+      "files": 1
+    },
+    {
+      "path": "reactive/elbow-before-triceps-fix.zip",
+      "reason": "旧版备份或交付/上传压缩包，保留展开内容",
+      "bytes": 62883894,
+      "files": 1
+    },
+    {
+      "path": "reactive/elbow-before-view-lighting.zip",
+      "reason": "旧版备份或交付/上传压缩包，保留展开内容",
+      "bytes": 10850,
+      "files": 1
+    },
+    {
+      "path": "reactive/elbow-lab-delivery.zip",
+      "reason": "旧版备份或交付/上传压缩包，保留展开内容",
+      "bytes": 8207190,
+      "files": 1
+    },
+    {
+      "path": "reactive/elbow-studio-delivery.zip",
+      "reason": "旧版备份或交付/上传压缩包，保留展开内容",
+      "bytes": 53355008,
+      "files": 1
+    },
+    {
+      "path": "reactive/elbow-triceps-candidate/blender/__pycache__",
+      "reason": "Python 缓存",
+      "bytes": 20729,
+      "files": 2
+    },
+    {
+      "path": "reactive/elbow-ui-before-theme.zip",
+      "reason": "旧版备份或交付/上传压缩包，保留展开内容",
+      "bytes": 1012745,
+      "files": 1
+    },
+    {
+      "path": "reactive/skeleton-workbench/assets/skeleton-review-with-coccyx.blend1",
+      "reason": "系统缓存或自动备份",
+      "bytes": 40928067,
+      "files": 1
+    },
+    {
+      "path": "reactive/skeleton-workbench/research/.DS_Store",
+      "reason": "系统缓存或自动备份",
+      "bytes": 6148,
+      "files": 1
+    },
+    {
+      "path": "reactive/skeleton-workbench/research/ossicles/.DS_Store",
+      "reason": "系统缓存或自动备份",
+      "bytes": 6148,
+      "files": 1
+    },
+    {
+      "path": "reactive/skeleton-workbench/research/ossicles/z-zip-pointer.txt",
+      "reason": "日志、试验输出或未完成下载",
+      "bytes": 3000000,
+      "files": 1
+    },
+    {
+      "path": "reactive/skeleton-workbench/ui-before-layout-v2.zip",
+      "reason": "旧版备份或交付/上传压缩包，保留展开内容",
+      "bytes": 10709,
+      "files": 1
+    },
+    {
+      "path": "research/rick-and-morty-voices/rick-morty-voice-references-s01e01.zip",
+      "reason": "旧版备份或交付/上传压缩包，保留展开内容",
+      "bytes": 7278394,
+      "files": 1
+    },
+    {
+      "path": "runs/.DS_Store",
+      "reason": "系统缓存或自动备份",
+      "bytes": 6148,
+      "files": 1
+    },
+    {
+      "path": "runs/daily-preview/day40/output",
+      "reason": "日志、试验输出或未完成下载",
+      "bytes": 36249163,
+      "files": 37
+    },
+    {
+      "path": "runs/day41/release/before",
+      "reason": "旧课程备份或渲染/发布暂存目录",
+      "bytes": 5990157,
+      "files": 7
+    },
+    {
+      "path": "runs/day41/release/day41-site.tar.gz",
+      "reason": "旧版备份或交付/上传压缩包，保留展开内容",
+      "bytes": 1649642,
+      "files": 1
+    },
+    {
+      "path": "runs/day41/release/day41-upload.zip",
+      "reason": "旧版备份或交付/上传压缩包，保留展开内容",
+      "bytes": 1654473,
+      "files": 1
+    },
+    {
+      "path": "runs/day41/revision-02/backup",
+      "reason": "旧课程备份或渲染/发布暂存目录",
+      "bytes": 12918250,
+      "files": 38
+    },
+    {
+      "path": "runs/day42/layout-revision-02/before",
+      "reason": "旧课程备份或渲染/发布暂存目录",
+      "bytes": 12080888,
+      "files": 39
+    },
+    {
+      "path": "runs/day42/release/before",
+      "reason": "旧课程备份或渲染/发布暂存目录",
+      "bytes": 11603481,
+      "files": 8
+    },
+    {
+      "path": "runs/day42/release/day42-site.tar.gz",
+      "reason": "旧版备份或交付/上传压缩包，保留展开内容",
+      "bytes": 1914697,
+      "files": 1
+    },
+    {
+      "path": "runs/day42/release/staged-site",
+      "reason": "旧课程备份或渲染/发布暂存目录",
+      "bytes": 25152918,
+      "files": 40
+    },
+    {
+      "path": "runs/day42/revision-04/before",
+      "reason": "旧课程备份或渲染/发布暂存目录",
+      "bytes": 22179255,
+      "files": 53
+    },
+    {
+      "path": "runs/day42/revision-04/stage",
+      "reason": "旧课程备份或渲染/发布暂存目录",
+      "bytes": 20720172,
+      "files": 33
+    },
+    {
+      "path": "runs/day42/revision-05/before",
+      "reason": "旧课程备份或渲染/发布暂存目录",
+      "bytes": 17442782,
+      "files": 38
+    },
+    {
+      "path": "runs/day42/revision-05/layout-test",
+      "reason": "旧课程备份或渲染/发布暂存目录",
+      "bytes": 19673163,
+      "files": 37
+    },
+    {
+      "path": "runs/day42/revision-05/stage",
+      "reason": "旧课程备份或渲染/发布暂存目录",
+      "bytes": 23336850,
+      "files": 37
+    },
+    {
+      "path": "runs/day42/revision-05/text-stage",
+      "reason": "旧课程备份或渲染/发布暂存目录",
+      "bytes": 17193731,
+      "files": 31
+    },
+    {
+      "path": "runs/day43/release/day43-site.tar.gz",
+      "reason": "旧版备份或交付/上传压缩包，保留展开内容",
+      "bytes": 2024479,
+      "files": 1
+    },
+    {
+      "path": "runs/day43/revision-02/before",
+      "reason": "旧课程备份或渲染/发布暂存目录",
+      "bytes": 30067337,
+      "files": 69
+    },
+    {
+      "path": "runs/day43/revision-03/before",
+      "reason": "旧课程备份或渲染/发布暂存目录",
+      "bytes": 13267175,
+      "files": 10
+    },
+    {
+      "path": "runs/day44/__pycache__",
+      "reason": "Python 缓存",
+      "bytes": 5721,
+      "files": 1
+    },
+    {
+      "path": "runs/day44/release/__pycache__",
+      "reason": "Python 缓存",
+      "bytes": 11833,
+      "files": 2
+    },
+    {
+      "path": "runs/day44/release/day44-site.tar.gz",
+      "reason": "旧版备份或交付/上传压缩包，保留展开内容",
+      "bytes": 1893936,
+      "files": 1
+    },
+    {
+      "path": "runs/day44/release/staged-site",
+      "reason": "旧课程备份或渲染/发布暂存目录",
+      "bytes": 72969,
+      "files": 2
+    },
+    {
+      "path": "runs/day45/__pycache__",
+      "reason": "Python 缓存",
+      "bytes": 5721,
+      "files": 1
+    },
+    {
+      "path": "runs/day45/release/day45-site.tar.gz",
+      "reason": "旧版备份或交付/上传压缩包，保留展开内容",
+      "bytes": 2170749,
+      "files": 1
+    },
+    {
+      "path": "runs/day45/release/staged-site",
+      "reason": "旧课程备份或渲染/发布暂存目录",
+      "bytes": 73143,
+      "files": 2
+    },
+    {
+      "path": "runs/day45/revision-01/__pycache__",
+      "reason": "Python 缓存",
+      "bytes": 5781,
+      "files": 1
+    },
+    {
+      "path": "runs/day46/release/__pycache__",
+      "reason": "Python 缓存",
+      "bytes": 11825,
+      "files": 2
+    },
+    {
+      "path": "runs/day46/release/day46-site.tar.gz",
+      "reason": "旧版备份或交付/上传压缩包，保留展开内容",
+      "bytes": 2082485,
+      "files": 1
+    },
+    {
+      "path": "runs/day46/release/staged-site",
+      "reason": "旧课程备份或渲染/发布暂存目录",
+      "bytes": 74236,
+      "files": 3
+    },
+    {
+      "path": "runs/day47/finish-20260927/before",
+      "reason": "旧课程备份或渲染/发布暂存目录",
+      "bytes": 7638,
+      "files": 3
+    },
+    {
+      "path": "runs/day47/finish-20260927/stage",
+      "reason": "旧课程备份或渲染/发布暂存目录",
+      "bytes": 21169728,
+      "files": 31
+    },
+    {
+      "path": "runs/day47/release/before",
+      "reason": "旧课程备份或渲染/发布暂存目录",
+      "bytes": 10544806,
+      "files": 7
+    },
+    {
+      "path": "runs/day47/release/day47-site.tar.gz",
+      "reason": "旧版备份或交付/上传压缩包，保留展开内容",
+      "bytes": 2218925,
+      "files": 1
+    },
+    {
+      "path": "runs/day47/release/staged-site",
+      "reason": "旧课程备份或渲染/发布暂存目录",
+      "bytes": 2319425,
+      "files": 7
+    },
+    {
+      "path": "runs/day48/release/day48-site.tar.gz",
+      "reason": "旧版备份或交付/上传压缩包，保留展开内容",
+      "bytes": 2235505,
+      "files": 1
+    },
+    {
+      "path": "runs/day48/release/staged-site",
+      "reason": "旧课程备份或渲染/发布暂存目录",
+      "bytes": 2337156,
+      "files": 7
+    },
+    {
+      "path": "runs/day49/__pycache__",
+      "reason": "Python 缓存",
+      "bytes": 16324,
+      "files": 2
+    },
+    {
+      "path": "runs/day49/release/day49-site.tar.gz",
+      "reason": "旧版备份或交付/上传压缩包，保留展开内容",
+      "bytes": 2036801,
+      "files": 1
+    },
+    {
+      "path": "runs/day49/release/staged-site",
+      "reason": "旧课程备份或渲染/发布暂存目录",
+      "bytes": 2140750,
+      "files": 7
+    },
+    {
+      "path": "runs/day49/retry-assets-20260928/__pycache__",
+      "reason": "Python 缓存",
+      "bytes": 21502,
+      "files": 3
+    },
+    {
+      "path": "runs/day49/retry-cover-20260928/__pycache__",
+      "reason": "Python 缓存",
+      "bytes": 11055,
+      "files": 2
+    },
+    {
+      "path": "runs/day58/__pycache__",
+      "reason": "Python 缓存",
+      "bytes": 4530,
+      "files": 1
+    },
+    {
+      "path": "scripts/compose-study-overview.py",
+      "reason": "已停用的课程 HTML/小红书生成流程",
+      "bytes": 5182,
+      "files": 1
+    },
+    {
+      "path": "scripts/generate-day16-assets.js",
+      "reason": "已停用的课程 HTML/小红书生成流程",
+      "bytes": 12030,
+      "files": 1
+    },
+    {
+      "path": "scripts/generate-xhs-package.js",
+      "reason": "已停用的课程 HTML/小红书生成流程",
+      "bytes": 132832,
+      "files": 1
+    },
+    {
+      "path": "scripts/generate-xhs-review-package.js",
+      "reason": "已停用的课程 HTML/小红书生成流程",
+      "bytes": 42010,
+      "files": 1
+    },
+    {
+      "path": "scripts/install-study-draft.js",
+      "reason": "已停用的课程 HTML/小红书生成流程",
+      "bytes": 3291,
+      "files": 1
+    },
+    {
+      "path": "scripts/lib/study-template.js",
+      "reason": "已停用的课程 HTML/小红书生成流程",
+      "bytes": 34118,
+      "files": 1
+    },
+    {
+      "path": "scripts/overlay-day16-force-arm.js",
+      "reason": "已停用的课程 HTML/小红书生成流程",
+      "bytes": 2484,
+      "files": 1
+    },
+    {
+      "path": "scripts/prepare-study-images.py",
+      "reason": "已停用的课程 HTML/小红书生成流程",
+      "bytes": 2785,
+      "files": 1
+    },
+    {
+      "path": "scripts/prepare-xhs-publish.js",
+      "reason": "已停用的课程 HTML/小红书生成流程",
+      "bytes": 1609,
+      "files": 1
+    },
+    {
+      "path": "scripts/remove-day17-top-callouts.py",
+      "reason": "已停用的课程 HTML/小红书生成流程",
+      "bytes": 1867,
+      "files": 1
+    },
+    {
+      "path": "scripts/render-study-package.js",
+      "reason": "已停用的课程 HTML/小红书生成流程",
+      "bytes": 1495,
+      "files": 1
+    },
+    {
+      "path": "scripts/render-xhs-fallback.py",
+      "reason": "已停用的课程 HTML/小红书生成流程",
+      "bytes": 35851,
+      "files": 1
+    },
+    {
+      "path": "scripts/request-study-image.py",
+      "reason": "已停用的课程 HTML/小红书生成流程",
+      "bytes": 17801,
+      "files": 1
+    },
+    {
+      "path": "scripts/study-image-bounds.py",
+      "reason": "已停用的课程 HTML/小红书生成流程",
+      "bytes": 963,
+      "files": 1
+    },
+    {
+      "path": "scripts/verify-study-package.js",
+      "reason": "已停用的课程 HTML/小红书生成流程",
+      "bytes": 9057,
+      "files": 1
+    },
+    {
+      "path": "tests/study-draft.test.js",
+      "reason": "依赖已删除生成器的旧测试",
+      "bytes": 2795,
+      "files": 1
+    },
+    {
+      "path": "tests/study-template.test.js",
+      "reason": "依赖已删除生成器的旧测试",
+      "bytes": 12580,
+      "files": 1
+    },
+    {
+      "path": "xhs/.DS_Store",
+      "reason": "系统缓存或自动备份",
+      "bytes": 8196,
+      "files": 1
+    },
+    {
+      "path": "xhs/day32/.DS_Store",
+      "reason": "系统缓存或自动备份",
+      "bytes": 6148,
+      "files": 1
+    },
+    {
+      "path": "xhs/day32/ai-visuals/.DS_Store",
+      "reason": "系统缓存或自动备份",
+      "bytes": 6148,
+      "files": 1
+    },
+    {
+      "path": "xhs/day40/day40-xhs.zip",
+      "reason": "旧版备份或交付/上传压缩包，保留展开内容",
+      "bytes": 14959795,
+      "files": 1
+    },
+    {
+      "path": "xhs/day41/day41-xhs.zip",
+      "reason": "旧版备份或交付/上传压缩包，保留展开内容",
+      "bytes": 5874475,
+      "files": 1
+    },
+    {
+      "path": "xhs/day42/day42-xhs.zip",
+      "reason": "旧版备份或交付/上传压缩包，保留展开内容",
+      "bytes": 11483134,
+      "files": 1
+    },
+    {
+      "path": "xhs/day43/day43-xhs.zip",
+      "reason": "旧版备份或交付/上传压缩包，保留展开内容",
+      "bytes": 11176315,
+      "files": 1
+    },
+    {
+      "path": "xhs/day44/day44-xhs.zip",
+      "reason": "旧版备份或交付/上传压缩包，保留展开内容",
+      "bytes": 9733060,
+      "files": 1
+    },
+    {
+      "path": "xhs/day45/day45-xhs.zip",
+      "reason": "旧版备份或交付/上传压缩包，保留展开内容",
+      "bytes": 9787453,
+      "files": 1
+    },
+    {
+      "path": "xhs/day46/day46-xhs.zip",
+      "reason": "旧版备份或交付/上传压缩包，保留展开内容",
+      "bytes": 10593736,
+      "files": 1
+    },
+    {
+      "path": "xhs/day47/day47-xhs.zip",
+      "reason": "旧版备份或交付/上传压缩包，保留展开内容",
+      "bytes": 10463660,
+      "files": 1
+    },
+    {
+      "path": "xhs/day48/day48-xhs.zip",
+      "reason": "旧版备份或交付/上传压缩包，保留展开内容",
+      "bytes": 12416861,
+      "files": 1
+    },
+    {
+      "path": "xhs/day49/day49-xhs.zip",
+      "reason": "旧版备份或交付/上传压缩包，保留展开内容",
+      "bytes": 11019100,
+      "files": 1
+    },
+    {
+      "path": "xhs/day50/day50-xhs.zip",
+      "reason": "旧版备份或交付/上传压缩包，保留展开内容",
+      "bytes": 13106684,
+      "files": 1
+    },
+    {
+      "path": "xhs/day51/day51-xhs.zip",
+      "reason": "旧版备份或交付/上传压缩包，保留展开内容",
+      "bytes": 12408268,
+      "files": 1
+    },
+    {
+      "path": "xhs-wrong-notebook/.DS_Store",
+      "reason": "系统缓存或自动备份",
+      "bytes": 6148,
+      "files": 1
+    },
+    {
+      "path": "xhs-wrong-notebook/2026-09-21-anatomy/.DS_Store",
+      "reason": "系统缓存或自动备份",
+      "bytes": 6148,
+      "files": 1
+    },
+    {
+      "path": "xhs-wrong-notebook/2026-09-22-joint-actions/.DS_Store",
+      "reason": "系统缓存或自动备份",
+      "bytes": 6148,
+      "files": 1
+    },
+    {
+      "path": "xhs-wrong-notebook/2026-09-22-joint-actions/revision-20260923/.DS_Store",
+      "reason": "系统缓存或自动备份",
+      "bytes": 6148,
+      "files": 1
+    },
+    {
+      "path": "xhs-wrong-notebook/2026-09-22-joint-actions/revision-20260923/style-unified/关节动作错题本-统一风格五图.zip",
+      "reason": "旧版备份或交付/上传压缩包，保留展开内容",
+      "bytes": 8094044,
+      "files": 1
+    },
+    {
+      "path": "xhs-wrong-notebook/2026-09-22-joint-actions/revision-20260923/关节动作错题本-修订五图.zip",
+      "reason": "旧版备份或交付/上传压缩包，保留展开内容",
+      "bytes": 8264309,
+      "files": 1
+    },
+    {
+      "path": "xhs-wrong-notebook/2026-09-23-anatomy-basics/generation/__pycache__",
+      "reason": "Python 缓存",
+      "bytes": 10043,
+      "files": 1
+    }
+  ],
+  "bytes": 797037910,
+  "files": 694
+}
