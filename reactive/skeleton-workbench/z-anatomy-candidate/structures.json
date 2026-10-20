@@ -1,0 +1,5905 @@
+{
+  "status": "source_native_candidate_not_anatomically_approved",
+  "source": "Z-Anatomy",
+  "source_sha256": "9f08a17ea0115fed80b2a73ecdf0a1bc2ab2f6956f37c593ce23d513ea35afcd",
+  "source_commit": "2b6cf98a8ca012571ecb252e5c077b42a21b3b61",
+  "available_count": 206,
+  "core_target": 206,
+  "units": "source world coordinates adopted as meters; no fit or rescale",
+  "license_review": "Z-Anatomy CC BY-SA 4.0; per-object provenance pending, including ear references",
+  "bones": [
+    {
+      "id": "bone_frontal_M",
+      "name_zh": "额骨",
+      "name_en": "Frontal bone",
+      "side": "M",
+      "region": "颅骨",
+      "joint_or_connection_ids": [
+        "cranial_sutures"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Frontal bone",
+      "source_objects": [
+        "Frontal bone"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 7776,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -2.002301791037553e-08,
+        1.6336010694503784,
+        0.04953566566109657
+      ]
+    },
+    {
+      "id": "bone_occipital_M",
+      "name_zh": "枕骨",
+      "name_en": "Occipital bone",
+      "side": "M",
+      "region": "颅骨",
+      "joint_or_connection_ids": [
+        "cranial_sutures",
+        "atlanto_occipital"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Occipital bone",
+      "source_objects": [
+        "Occipital bone"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 7531,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -2.4197282399995856e-08,
+        1.5920571088790894,
+        -0.05437256023287773
+      ]
+    },
+    {
+      "id": "bone_sphenoid_M",
+      "name_zh": "蝶骨",
+      "name_en": "Sphenoid bone",
+      "side": "M",
+      "region": "颅骨",
+      "joint_or_connection_ids": [
+        "cranial_sutures"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Sphenoid bone",
+      "source_objects": [
+        "Sphenoid bone"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 7308,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -1.2217931555369432e-08,
+        1.5890693664550781,
+        0.02710663713514805
+      ]
+    },
+    {
+      "id": "bone_ethmoid_M",
+      "name_zh": "筛骨",
+      "name_en": "Ethmoid bone",
+      "side": "M",
+      "region": "颅骨",
+      "joint_or_connection_ids": [
+        "cranial_sutures"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Ethmoid bone",
+      "source_objects": [
+        "Ethmoid bone"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 10130,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        2.7653650249703787e-06,
+        1.5871191024780273,
+        0.0519048273563385
+      ]
+    },
+    {
+      "id": "bone_mandible_M",
+      "name_zh": "下颌骨",
+      "name_en": "Mandible",
+      "side": "M",
+      "region": "颅骨",
+      "joint_or_connection_ids": [
+        "tmj_L",
+        "tmj_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Mandible",
+      "source_objects": [
+        "Mandible"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 18834,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        7.149322482291609e-05,
+        1.5180691480636597,
+        0.0560307651758194
+      ]
+    },
+    {
+      "id": "bone_vomer_M",
+      "name_zh": "犁骨",
+      "name_en": "Vomer",
+      "side": "M",
+      "region": "颅骨",
+      "joint_or_connection_ids": [
+        "cranial_sutures"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Vomer",
+      "source_objects": [
+        "Vomer"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 1022,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        1.4747601362330442e-08,
+        1.5700331926345825,
+        0.04607941582798958
+      ]
+    },
+    {
+      "id": "bone_parietal_L",
+      "name_zh": "左顶骨",
+      "name_en": "Parietal bone",
+      "side": "L",
+      "region": "颅骨",
+      "joint_or_connection_ids": [
+        "cranial_sutures"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Parietal bone.l",
+      "source_objects": [
+        "Parietal bone.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 6886,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        0.024185821413993835,
+        1.6628590822219849,
+        -0.035163287073373795
+      ]
+    },
+    {
+      "id": "bone_temporal_L",
+      "name_zh": "左颞骨",
+      "name_en": "Temporal bone",
+      "side": "L",
+      "region": "颅骨",
+      "joint_or_connection_ids": [
+        "cranial_sutures",
+        "tmj_L",
+        "stapes_window_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Temporal bone.l",
+      "source_objects": [
+        "Temporal bone.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 14094,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.04435083642601967,
+        1.5794012546539307,
+        -0.010203256271779537
+      ]
+    },
+    {
+      "id": "bone_maxilla_L",
+      "name_zh": "左上颌骨",
+      "name_en": "Maxilla",
+      "side": "L",
+      "region": "颅骨",
+      "joint_or_connection_ids": [
+        "cranial_sutures"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Maxilla.l",
+      "source_objects": [
+        "Maxilla.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 4798,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.018449246883392334,
+        1.5599223375320435,
+        0.0645950511097908
+      ]
+    },
+    {
+      "id": "bone_zygomatic_L",
+      "name_zh": "左颧骨",
+      "name_en": "Zygomatic bone",
+      "side": "L",
+      "region": "颅骨",
+      "joint_or_connection_ids": [
+        "cranial_sutures"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Zygomatic bone.l",
+      "source_objects": [
+        "Zygomatic bone.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 1328,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.0457625649869442,
+        1.577468991279602,
+        0.0541573204100132
+      ]
+    },
+    {
+      "id": "bone_nasal_L",
+      "name_zh": "左鼻骨",
+      "name_en": "Nasal bone",
+      "side": "L",
+      "region": "颅骨",
+      "joint_or_connection_ids": [
+        "cranial_sutures"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Nasal bone.l",
+      "source_objects": [
+        "Nasal bone.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 292,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.0038006950635463,
+        1.590883493423462,
+        0.08803898096084595
+      ]
+    },
+    {
+      "id": "bone_lacrimal_L",
+      "name_zh": "左泪骨",
+      "name_en": "Lacrimal bone",
+      "side": "L",
+      "region": "颅骨",
+      "joint_or_connection_ids": [
+        "cranial_sutures"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Lacrimal bone.l",
+      "source_objects": [
+        "Lacrimal bone.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 588,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.010798823088407516,
+        1.5847736597061157,
+        0.06905058026313782
+      ]
+    },
+    {
+      "id": "bone_palatine_L",
+      "name_zh": "左腭骨",
+      "name_en": "Palatine bone",
+      "side": "L",
+      "region": "颅骨",
+      "joint_or_connection_ids": [
+        "cranial_sutures"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Palatine bone.l",
+      "source_objects": [
+        "Palatine bone.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 1460,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.0137012405321002,
+        1.5606353282928467,
+        0.043837301433086395
+      ]
+    },
+    {
+      "id": "bone_inferior_nasal_concha_L",
+      "name_zh": "左下鼻甲",
+      "name_en": "Inferior nasal concha",
+      "side": "L",
+      "region": "颅骨",
+      "joint_or_connection_ids": [
+        "cranial_sutures"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Inferior nasal concha bone.l",
+      "source_objects": [
+        "Inferior nasal concha bone.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 476,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.00968641322106123,
+        1.5628113746643066,
+        0.05914001166820526
+      ]
+    },
+    {
+      "id": "bone_malleus_L",
+      "name_zh": "左锤骨",
+      "name_en": "Malleus",
+      "side": "L",
+      "region": "听小骨",
+      "joint_or_connection_ids": [
+        "incudomalleolar_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Malleus.l",
+      "source_objects": [
+        "Malleus.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 3982,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.0483391210436821,
+        1.581933617591858,
+        -0.003993310034275055
+      ]
+    },
+    {
+      "id": "bone_incus_L",
+      "name_zh": "左砧骨",
+      "name_en": "Incus",
+      "side": "L",
+      "region": "听小骨",
+      "joint_or_connection_ids": [
+        "incudomalleolar_L",
+        "incudostapedial_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Incus.l",
+      "source_objects": [
+        "Incus.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 2532,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.04691017419099808,
+        1.582460880279541,
+        -0.006412317976355553
+      ]
+    },
+    {
+      "id": "bone_stapes_L",
+      "name_zh": "左镫骨",
+      "name_en": "Stapes",
+      "side": "L",
+      "region": "听小骨",
+      "joint_or_connection_ids": [
+        "incudostapedial_L",
+        "stapes_window_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Stapes.l",
+      "source_objects": [
+        "Stapes.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 4342,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.04252682253718376,
+        1.5808477401733398,
+        -0.004686369094997644
+      ]
+    },
+    {
+      "id": "bone_parietal_R",
+      "name_zh": "右顶骨",
+      "name_en": "Parietal bone",
+      "side": "R",
+      "region": "颅骨",
+      "joint_or_connection_ids": [
+        "cranial_sutures"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Parietal bone.r",
+      "source_objects": [
+        "Parietal bone.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 6780,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.02701488882303238,
+        1.6612268686294556,
+        -0.03329355642199516
+      ]
+    },
+    {
+      "id": "bone_temporal_R",
+      "name_zh": "右颞骨",
+      "name_en": "Temporal bone",
+      "side": "R",
+      "region": "颅骨",
+      "joint_or_connection_ids": [
+        "cranial_sutures",
+        "tmj_R",
+        "stapes_window_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Temporal bone.r",
+      "source_objects": [
+        "Temporal bone.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 14094,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.04435083642601967,
+        1.5794012546539307,
+        -0.010203256271779537
+      ]
+    },
+    {
+      "id": "bone_maxilla_R",
+      "name_zh": "右上颌骨",
+      "name_en": "Maxilla",
+      "side": "R",
+      "region": "颅骨",
+      "joint_or_connection_ids": [
+        "cranial_sutures"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Maxilla.r",
+      "source_objects": [
+        "Maxilla.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 4798,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.018449246883392334,
+        1.5599223375320435,
+        0.0645950511097908
+      ]
+    },
+    {
+      "id": "bone_zygomatic_R",
+      "name_zh": "右颧骨",
+      "name_en": "Zygomatic bone",
+      "side": "R",
+      "region": "颅骨",
+      "joint_or_connection_ids": [
+        "cranial_sutures"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Zygomatic bone.r",
+      "source_objects": [
+        "Zygomatic bone.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 1328,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.0457625649869442,
+        1.577468991279602,
+        0.0541573204100132
+      ]
+    },
+    {
+      "id": "bone_nasal_R",
+      "name_zh": "右鼻骨",
+      "name_en": "Nasal bone",
+      "side": "R",
+      "region": "颅骨",
+      "joint_or_connection_ids": [
+        "cranial_sutures"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Nasal bone.r",
+      "source_objects": [
+        "Nasal bone.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 292,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.0038006950635463,
+        1.590883493423462,
+        0.08803898096084595
+      ]
+    },
+    {
+      "id": "bone_lacrimal_R",
+      "name_zh": "右泪骨",
+      "name_en": "Lacrimal bone",
+      "side": "R",
+      "region": "颅骨",
+      "joint_or_connection_ids": [
+        "cranial_sutures"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Lacrimal bone.r",
+      "source_objects": [
+        "Lacrimal bone.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 588,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.010798823088407516,
+        1.5847736597061157,
+        0.06905058026313782
+      ]
+    },
+    {
+      "id": "bone_palatine_R",
+      "name_zh": "右腭骨",
+      "name_en": "Palatine bone",
+      "side": "R",
+      "region": "颅骨",
+      "joint_or_connection_ids": [
+        "cranial_sutures"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Palatine bone.r",
+      "source_objects": [
+        "Palatine bone.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 1460,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.0137012405321002,
+        1.5606353282928467,
+        0.043837301433086395
+      ]
+    },
+    {
+      "id": "bone_inferior_nasal_concha_R",
+      "name_zh": "右下鼻甲",
+      "name_en": "Inferior nasal concha",
+      "side": "R",
+      "region": "颅骨",
+      "joint_or_connection_ids": [
+        "cranial_sutures"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Inferior nasal concha bone.r",
+      "source_objects": [
+        "Inferior nasal concha bone.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 476,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.00968641322106123,
+        1.5628113746643066,
+        0.05914001166820526
+      ]
+    },
+    {
+      "id": "bone_malleus_R",
+      "name_zh": "右锤骨",
+      "name_en": "Malleus",
+      "side": "R",
+      "region": "听小骨",
+      "joint_or_connection_ids": [
+        "incudomalleolar_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Malleus.r",
+      "source_objects": [
+        "Malleus.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 3982,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.0483391210436821,
+        1.581933617591858,
+        -0.003993310034275055
+      ]
+    },
+    {
+      "id": "bone_incus_R",
+      "name_zh": "右砧骨",
+      "name_en": "Incus",
+      "side": "R",
+      "region": "听小骨",
+      "joint_or_connection_ids": [
+        "incudomalleolar_R",
+        "incudostapedial_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Incus.r",
+      "source_objects": [
+        "Incus.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 2532,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.04691017419099808,
+        1.582460880279541,
+        -0.006412317976355553
+      ]
+    },
+    {
+      "id": "bone_stapes_R",
+      "name_zh": "右镫骨",
+      "name_en": "Stapes",
+      "side": "R",
+      "region": "听小骨",
+      "joint_or_connection_ids": [
+        "incudostapedial_R",
+        "stapes_window_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Stapes.r",
+      "source_objects": [
+        "Stapes.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 4342,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.04252682253718376,
+        1.5808477401733398,
+        -0.004686369094997644
+      ]
+    },
+    {
+      "id": "bone_hyoid_M",
+      "name_zh": "舌骨",
+      "name_en": "Hyoid",
+      "side": "M",
+      "region": "舌骨",
+      "joint_or_connection_ids": [
+        "hyoid_suspension"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Hyoid bone",
+      "source_objects": [
+        "Hyoid bone"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 1324,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -3.1364850716641968e-09,
+        1.5019768476486206,
+        0.025308765470981598
+      ]
+    },
+    {
+      "id": "bone_vertebra_C1_M",
+      "name_zh": "寰椎（C1）",
+      "name_en": "Cervical vertebra C1",
+      "side": "M",
+      "region": "脊柱",
+      "joint_or_connection_ids": [
+        "atlanto_occipital",
+        "atlanto_axial"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Atlas (C1)",
+      "source_objects": [
+        "Atlas (C1)"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 2194,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -1.784559754014481e-05,
+        1.542525053024292,
+        -0.018464457243680954
+      ]
+    },
+    {
+      "id": "bone_vertebra_C2_M",
+      "name_zh": "枢椎（C2）",
+      "name_en": "Cervical vertebra C2",
+      "side": "M",
+      "region": "脊柱",
+      "joint_or_connection_ids": [
+        "atlanto_axial",
+        "spine_vertebra_C2_vertebra_C3"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Axis (C2)",
+      "source_objects": [
+        "Axis (C2)"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 2334,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        2.324359549277233e-08,
+        1.5254851579666138,
+        -0.01982969604432583
+      ]
+    },
+    {
+      "id": "bone_vertebra_C3_M",
+      "name_zh": "第3颈椎（C3）",
+      "name_en": "Cervical vertebra C3",
+      "side": "M",
+      "region": "脊柱",
+      "joint_or_connection_ids": [
+        "spine_vertebra_C2_vertebra_C3",
+        "spine_vertebra_C3_vertebra_C4"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Vertebra C3",
+      "source_objects": [
+        "Vertebra C3"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 2440,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -4.681121268390598e-09,
+        1.508884310722351,
+        -0.018314693123102188
+      ]
+    },
+    {
+      "id": "bone_vertebra_C4_M",
+      "name_zh": "第4颈椎（C4）",
+      "name_en": "Cervical vertebra C4",
+      "side": "M",
+      "region": "脊柱",
+      "joint_or_connection_ids": [
+        "spine_vertebra_C3_vertebra_C4",
+        "spine_vertebra_C4_vertebra_C5"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Vertebra C4",
+      "source_objects": [
+        "Vertebra C4"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 1940,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        1.1218747708596766e-08,
+        1.4939316511154175,
+        -0.018982812762260437
+      ]
+    },
+    {
+      "id": "bone_vertebra_C5_M",
+      "name_zh": "第5颈椎（C5）",
+      "name_en": "Cervical vertebra C5",
+      "side": "M",
+      "region": "脊柱",
+      "joint_or_connection_ids": [
+        "spine_vertebra_C4_vertebra_C5",
+        "spine_vertebra_C5_vertebra_C6"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Vertebra C5",
+      "source_objects": [
+        "Vertebra C5"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 2336,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -5.402311042956853e-09,
+        1.4790401458740234,
+        -0.02196827158331871
+      ]
+    },
+    {
+      "id": "bone_vertebra_C6_M",
+      "name_zh": "第6颈椎（C6）",
+      "name_en": "Cervical vertebra C6",
+      "side": "M",
+      "region": "脊柱",
+      "joint_or_connection_ids": [
+        "spine_vertebra_C5_vertebra_C6",
+        "spine_vertebra_C6_vertebra_C7"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Vertebra C6",
+      "source_objects": [
+        "Vertebra C6"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 2304,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        5.939919667241611e-10,
+        1.4643627405166626,
+        -0.023564834147691727
+      ]
+    },
+    {
+      "id": "bone_vertebra_C7_M",
+      "name_zh": "第7颈椎（C7）",
+      "name_en": "Cervical vertebra C7",
+      "side": "M",
+      "region": "脊柱",
+      "joint_or_connection_ids": [
+        "spine_vertebra_C6_vertebra_C7",
+        "spine_vertebra_C7_vertebra_T1"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Vertebra C7",
+      "source_objects": [
+        "Vertebra C7"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 2164,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        1.395633941747576e-09,
+        1.4513664245605469,
+        -0.03125279024243355
+      ]
+    },
+    {
+      "id": "bone_vertebra_T1_M",
+      "name_zh": "第1胸椎（T1）",
+      "name_en": "Thoracic vertebra T1",
+      "side": "M",
+      "region": "脊柱",
+      "joint_or_connection_ids": [
+        "spine_vertebra_C7_vertebra_T1",
+        "spine_vertebra_T1_vertebra_T2",
+        "costovertebral_01_L",
+        "costovertebral_02_L",
+        "costovertebral_01_R",
+        "costovertebral_02_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Vertebra T1",
+      "source_objects": [
+        "Vertebra T1"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 1946,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -3.905237799806116e-10,
+        1.4380006790161133,
+        -0.03766430541872978
+      ]
+    },
+    {
+      "id": "bone_vertebra_T2_M",
+      "name_zh": "第2胸椎（T2）",
+      "name_en": "Thoracic vertebra T2",
+      "side": "M",
+      "region": "脊柱",
+      "joint_or_connection_ids": [
+        "spine_vertebra_T1_vertebra_T2",
+        "spine_vertebra_T2_vertebra_T3",
+        "costovertebral_02_L",
+        "costovertebral_03_L",
+        "costovertebral_02_R",
+        "costovertebral_03_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Vertebra T2",
+      "source_objects": [
+        "Vertebra T2"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 2142,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -4.834877498360868e-10,
+        1.4218648672103882,
+        -0.0472213514149189
+      ]
+    },
+    {
+      "id": "bone_vertebra_T3_M",
+      "name_zh": "第3胸椎（T3）",
+      "name_en": "Thoracic vertebra T3",
+      "side": "M",
+      "region": "脊柱",
+      "joint_or_connection_ids": [
+        "spine_vertebra_T2_vertebra_T3",
+        "spine_vertebra_T3_vertebra_T4",
+        "costovertebral_03_L",
+        "costovertebral_04_L",
+        "costovertebral_03_R",
+        "costovertebral_04_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Vertebra T3",
+      "source_objects": [
+        "Vertebra T3"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 2344,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -7.94643777862758e-12,
+        1.3996762037277222,
+        -0.05886632949113846
+      ]
+    },
+    {
+      "id": "bone_vertebra_T4_M",
+      "name_zh": "第4胸椎（T4）",
+      "name_en": "Thoracic vertebra T4",
+      "side": "M",
+      "region": "脊柱",
+      "joint_or_connection_ids": [
+        "spine_vertebra_T3_vertebra_T4",
+        "spine_vertebra_T4_vertebra_T5",
+        "costovertebral_04_L",
+        "costovertebral_05_L",
+        "costovertebral_04_R",
+        "costovertebral_05_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Vertebra T4",
+      "source_objects": [
+        "Vertebra T4"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 2216,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        3.736217557559485e-09,
+        1.3753061294555664,
+        -0.0661226436495781
+      ]
+    },
+    {
+      "id": "bone_vertebra_T5_M",
+      "name_zh": "第5胸椎（T5）",
+      "name_en": "Thoracic vertebra T5",
+      "side": "M",
+      "region": "脊柱",
+      "joint_or_connection_ids": [
+        "spine_vertebra_T4_vertebra_T5",
+        "spine_vertebra_T5_vertebra_T6",
+        "costovertebral_05_L",
+        "costovertebral_06_L",
+        "costovertebral_05_R",
+        "costovertebral_06_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Vertebra T5",
+      "source_objects": [
+        "Vertebra T5"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 2152,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -6.745164427002237e-09,
+        1.3507137298583984,
+        -0.06914947926998138
+      ]
+    },
+    {
+      "id": "bone_vertebra_T6_M",
+      "name_zh": "第6胸椎（T6）",
+      "name_en": "Thoracic vertebra T6",
+      "side": "M",
+      "region": "脊柱",
+      "joint_or_connection_ids": [
+        "spine_vertebra_T5_vertebra_T6",
+        "spine_vertebra_T6_vertebra_T7",
+        "costovertebral_06_L",
+        "costovertebral_07_L",
+        "costovertebral_06_R",
+        "costovertebral_07_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Vertebra T6",
+      "source_objects": [
+        "Vertebra T6"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 1780,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        5.483292708774457e-10,
+        1.3223556280136108,
+        -0.07346662133932114
+      ]
+    },
+    {
+      "id": "bone_vertebra_T7_M",
+      "name_zh": "第7胸椎（T7）",
+      "name_en": "Thoracic vertebra T7",
+      "side": "M",
+      "region": "脊柱",
+      "joint_or_connection_ids": [
+        "spine_vertebra_T6_vertebra_T7",
+        "spine_vertebra_T7_vertebra_T8",
+        "costovertebral_07_L",
+        "costovertebral_08_L",
+        "costovertebral_07_R",
+        "costovertebral_08_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Vertebra T7",
+      "source_objects": [
+        "Vertebra T7"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 2794,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        4.3332831767273206e-10,
+        1.2921819686889648,
+        -0.07461368292570114
+      ]
+    },
+    {
+      "id": "bone_vertebra_T8_M",
+      "name_zh": "第8胸椎（T8）",
+      "name_en": "Thoracic vertebra T8",
+      "side": "M",
+      "region": "脊柱",
+      "joint_or_connection_ids": [
+        "spine_vertebra_T7_vertebra_T8",
+        "spine_vertebra_T8_vertebra_T9",
+        "costovertebral_08_L",
+        "costovertebral_09_L",
+        "costovertebral_08_R",
+        "costovertebral_09_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Vertebra T8",
+      "source_objects": [
+        "Vertebra T8"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 1733,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -1.9118067939416505e-05,
+        1.260882019996643,
+        -0.07182701677083969
+      ]
+    },
+    {
+      "id": "bone_vertebra_T9_M",
+      "name_zh": "第9胸椎（T9）",
+      "name_en": "Thoracic vertebra T9",
+      "side": "M",
+      "region": "脊柱",
+      "joint_or_connection_ids": [
+        "spine_vertebra_T8_vertebra_T9",
+        "spine_vertebra_T9_vertebra_T10",
+        "costovertebral_09_L",
+        "costovertebral_09_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Vertebra T9",
+      "source_objects": [
+        "Vertebra T9"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 2978,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        7.13034076227359e-10,
+        1.2340844869613647,
+        -0.06570560485124588
+      ]
+    },
+    {
+      "id": "bone_vertebra_T10_M",
+      "name_zh": "第10胸椎（T10）",
+      "name_en": "Thoracic vertebra T10",
+      "side": "M",
+      "region": "脊柱",
+      "joint_or_connection_ids": [
+        "spine_vertebra_T9_vertebra_T10",
+        "spine_vertebra_T10_vertebra_T11",
+        "costovertebral_10_L",
+        "costovertebral_10_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Vertebra T10",
+      "source_objects": [
+        "Vertebra T10"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 3058,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -4.983702339700358e-09,
+        1.202739953994751,
+        -0.06027188524603844
+      ]
+    },
+    {
+      "id": "bone_vertebra_T11_M",
+      "name_zh": "第11胸椎（T11）",
+      "name_en": "Thoracic vertebra T11",
+      "side": "M",
+      "region": "脊柱",
+      "joint_or_connection_ids": [
+        "spine_vertebra_T10_vertebra_T11",
+        "spine_vertebra_T11_vertebra_T12",
+        "costovertebral_11_L",
+        "costovertebral_11_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Vertebra T11",
+      "source_objects": [
+        "Vertebra T11"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 1798,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -1.9268742157407814e-10,
+        1.1744050979614258,
+        -0.05309214070439339
+      ]
+    },
+    {
+      "id": "bone_vertebra_T12_M",
+      "name_zh": "第12胸椎（T12）",
+      "name_en": "Thoracic vertebra T12",
+      "side": "M",
+      "region": "脊柱",
+      "joint_or_connection_ids": [
+        "spine_vertebra_T11_vertebra_T12",
+        "spine_vertebra_T12_vertebra_L1",
+        "costovertebral_12_L",
+        "costovertebral_12_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Vertebra T12",
+      "source_objects": [
+        "Vertebra T12"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 2586,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        1.5522042540183634e-09,
+        1.1423742771148682,
+        -0.04248160868883133
+      ]
+    },
+    {
+      "id": "bone_vertebra_L1_M",
+      "name_zh": "第1腰椎（L1）",
+      "name_en": "Lumbar vertebra L1",
+      "side": "M",
+      "region": "脊柱",
+      "joint_or_connection_ids": [
+        "spine_vertebra_T12_vertebra_L1",
+        "spine_vertebra_L1_vertebra_L2"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Vertebra L1",
+      "source_objects": [
+        "Vertebra L1"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 3162,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -3.9291089826143377e-10,
+        1.1061654090881348,
+        -0.03643408417701721
+      ]
+    },
+    {
+      "id": "bone_vertebra_L2_M",
+      "name_zh": "第2腰椎（L2）",
+      "name_en": "Lumbar vertebra L2",
+      "side": "M",
+      "region": "脊柱",
+      "joint_or_connection_ids": [
+        "spine_vertebra_L1_vertebra_L2",
+        "spine_vertebra_L2_vertebra_L3"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Vertebra L2",
+      "source_objects": [
+        "Vertebra L2"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 2688,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        1.0706051600806177e-09,
+        1.0755960941314697,
+        -0.03087354265153408
+      ]
+    },
+    {
+      "id": "bone_vertebra_L3_M",
+      "name_zh": "第3腰椎（L3）",
+      "name_en": "Lumbar vertebra L3",
+      "side": "M",
+      "region": "脊柱",
+      "joint_or_connection_ids": [
+        "spine_vertebra_L2_vertebra_L3",
+        "spine_vertebra_L3_vertebra_L4"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Vertebra L3",
+      "source_objects": [
+        "Vertebra L3"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 3160,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        1.3963687706564087e-05,
+        1.0451381206512451,
+        -0.029805364087224007
+      ]
+    },
+    {
+      "id": "bone_vertebra_L4_M",
+      "name_zh": "第4腰椎（L4）",
+      "name_en": "Lumbar vertebra L4",
+      "side": "M",
+      "region": "脊柱",
+      "joint_or_connection_ids": [
+        "spine_vertebra_L3_vertebra_L4",
+        "spine_vertebra_L4_vertebra_L5"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Vertebra L4",
+      "source_objects": [
+        "Vertebra L4"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 3804,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        1.818576178536091e-09,
+        1.0150099992752075,
+        -0.02839604578912258
+      ]
+    },
+    {
+      "id": "bone_vertebra_L5_M",
+      "name_zh": "第5腰椎（L5）",
+      "name_en": "Lumbar vertebra L5",
+      "side": "M",
+      "region": "脊柱",
+      "joint_or_connection_ids": [
+        "spine_vertebra_L4_vertebra_L5",
+        "spine_vertebra_L5_sacrum"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Vertebra L5",
+      "source_objects": [
+        "Vertebra L5"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 4032,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -5.100100342048108e-10,
+        0.9859036803245544,
+        -0.032209817320108414
+      ]
+    },
+    {
+      "id": "bone_sacrum_M",
+      "name_zh": "骶骨",
+      "name_en": "Sacrum",
+      "side": "M",
+      "region": "脊柱",
+      "joint_or_connection_ids": [
+        "spine_vertebra_L5_sacrum",
+        "sacrococcygeal",
+        "sacroiliac_L",
+        "sacroiliac_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Sacrum",
+      "source_objects": [
+        "Sacrum"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 11676,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -5.8051163875916245e-09,
+        0.9270259141921997,
+        -0.059076253324747086
+      ]
+    },
+    {
+      "id": "bone_coccyx_M",
+      "name_zh": "尾骨",
+      "name_en": "Coccyx",
+      "side": "M",
+      "region": "脊柱",
+      "joint_or_connection_ids": [
+        "sacrococcygeal"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Coccyx",
+      "source_objects": [
+        "Coccyx"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 1166,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        6.364301308181552e-10,
+        0.8456148505210876,
+        -0.07695024460554123
+      ]
+    },
+    {
+      "id": "bone_sternum_M",
+      "name_zh": "胸骨",
+      "name_en": "Sternum",
+      "side": "M",
+      "region": "胸廓",
+      "joint_or_connection_ids": [
+        "sternocostal_01_L",
+        "sternocostal_02_L",
+        "sternocostal_03_L",
+        "sternocostal_04_L",
+        "sternocostal_05_L",
+        "sternocostal_06_L",
+        "sternocostal_07_L",
+        "sternoclavicular_L",
+        "sternocostal_01_R",
+        "sternocostal_02_R",
+        "sternocostal_03_R",
+        "sternocostal_04_R",
+        "sternocostal_05_R",
+        "sternocostal_06_R",
+        "sternocostal_07_R",
+        "sternoclavicular_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Manubrium of sternum + Body of sternum + Xiphoid process",
+      "source_objects": [
+        "Manubrium of sternum",
+        "Body of sternum",
+        "Xiphoid process"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 8041,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -1.0332943929824978e-05,
+        1.3160789012908936,
+        0.08116291463375092
+      ]
+    },
+    {
+      "id": "bone_rib_01_L",
+      "name_zh": "左第1肋骨",
+      "name_en": "Rib 1",
+      "side": "L",
+      "region": "胸廓",
+      "joint_or_connection_ids": [
+        "costovertebral_01_L",
+        "sternocostal_01_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "First rib.l",
+      "source_objects": [
+        "First rib.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 3210,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.04373093694448471,
+        1.4214727878570557,
+        -0.005303432699292898
+      ]
+    },
+    {
+      "id": "bone_rib_02_L",
+      "name_zh": "左第2肋骨",
+      "name_en": "Rib 2",
+      "side": "L",
+      "region": "胸廓",
+      "joint_or_connection_ids": [
+        "costovertebral_02_L",
+        "sternocostal_02_L",
+        "scapulothoracic_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Second rib.l",
+      "source_objects": [
+        "Second rib.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 5364,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.05670749768614769,
+        1.4013985395431519,
+        -0.006084683816879988
+      ]
+    },
+    {
+      "id": "bone_rib_03_L",
+      "name_zh": "左第3肋骨",
+      "name_en": "Rib 3",
+      "side": "L",
+      "region": "胸廓",
+      "joint_or_connection_ids": [
+        "costovertebral_03_L",
+        "sternocostal_03_L",
+        "scapulothoracic_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Third rib.l",
+      "source_objects": [
+        "Third rib.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 6980,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.06240694597363472,
+        1.37857186794281,
+        -0.015050056390464306
+      ]
+    },
+    {
+      "id": "bone_rib_04_L",
+      "name_zh": "左第4肋骨",
+      "name_en": "Rib 4",
+      "side": "L",
+      "region": "胸廓",
+      "joint_or_connection_ids": [
+        "costovertebral_04_L",
+        "sternocostal_04_L",
+        "scapulothoracic_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Fourth rib.l",
+      "source_objects": [
+        "Fourth rib.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 8646,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.07453617453575134,
+        1.3504530191421509,
+        -0.017784442752599716
+      ]
+    },
+    {
+      "id": "bone_rib_05_L",
+      "name_zh": "左第5肋骨",
+      "name_en": "Rib 5",
+      "side": "L",
+      "region": "胸廓",
+      "joint_or_connection_ids": [
+        "costovertebral_05_L",
+        "sternocostal_05_L",
+        "scapulothoracic_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Fifth rib.l",
+      "source_objects": [
+        "Fifth rib.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 9376,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.0786602646112442,
+        1.3211904764175415,
+        -0.024996837601065636
+      ]
+    },
+    {
+      "id": "bone_rib_06_L",
+      "name_zh": "左第6肋骨",
+      "name_en": "Rib 6",
+      "side": "L",
+      "region": "胸廓",
+      "joint_or_connection_ids": [
+        "costovertebral_06_L",
+        "sternocostal_06_L",
+        "scapulothoracic_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Sixth rib.l",
+      "source_objects": [
+        "Sixth rib.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 10132,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.08676932752132416,
+        1.2867968082427979,
+        -0.025506045669317245
+      ]
+    },
+    {
+      "id": "bone_rib_07_L",
+      "name_zh": "左第7肋骨",
+      "name_en": "Rib 7",
+      "side": "L",
+      "region": "胸廓",
+      "joint_or_connection_ids": [
+        "costovertebral_07_L",
+        "sternocostal_07_L",
+        "costal_arch_08_L",
+        "scapulothoracic_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Seventh rib.l",
+      "source_objects": [
+        "Seventh rib.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 9776,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.08636884391307831,
+        1.2568700313568115,
+        -0.03294984623789787
+      ]
+    },
+    {
+      "id": "bone_rib_08_L",
+      "name_zh": "左第8肋骨",
+      "name_en": "Rib 8",
+      "side": "L",
+      "region": "胸廓",
+      "joint_or_connection_ids": [
+        "costovertebral_08_L",
+        "costal_arch_08_L",
+        "costal_arch_09_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Eighth rib.l",
+      "source_objects": [
+        "Eighth rib.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 8270,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.08391054719686508,
+        1.2237513065338135,
+        -0.03820856660604477
+      ]
+    },
+    {
+      "id": "bone_rib_09_L",
+      "name_zh": "左第9肋骨",
+      "name_en": "Rib 9",
+      "side": "L",
+      "region": "胸廓",
+      "joint_or_connection_ids": [
+        "costovertebral_09_L",
+        "costal_arch_09_L",
+        "costal_arch_10_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Ninth rib.l",
+      "source_objects": [
+        "Ninth rib.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 7778,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.07958892732858658,
+        1.1977876424789429,
+        -0.04946882650256157
+      ]
+    },
+    {
+      "id": "bone_rib_10_L",
+      "name_zh": "左第10肋骨",
+      "name_en": "Rib 10",
+      "side": "L",
+      "region": "胸廓",
+      "joint_or_connection_ids": [
+        "costovertebral_10_L",
+        "costal_arch_10_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Tenth rib.l",
+      "source_objects": [
+        "Tenth rib.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 7026,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.07664181292057037,
+        1.1639037132263184,
+        -0.04563762992620468
+      ]
+    },
+    {
+      "id": "bone_rib_11_L",
+      "name_zh": "左第11肋骨",
+      "name_en": "Rib 11",
+      "side": "L",
+      "region": "胸廓",
+      "joint_or_connection_ids": [
+        "costovertebral_11_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Eleventh rib.l",
+      "source_objects": [
+        "Eleventh rib.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 5034,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.07191672176122665,
+        1.1306833028793335,
+        -0.044070445001125336
+      ]
+    },
+    {
+      "id": "bone_rib_12_L",
+      "name_zh": "左第12肋骨",
+      "name_en": "Rib 12",
+      "side": "L",
+      "region": "胸廓",
+      "joint_or_connection_ids": [
+        "costovertebral_12_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Twelfth rib.l",
+      "source_objects": [
+        "Twelfth rib.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 3002,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.049986470490694046,
+        1.112722635269165,
+        -0.046118829399347305
+      ]
+    },
+    {
+      "id": "bone_clavicle_L",
+      "name_zh": "左锁骨",
+      "name_en": "Clavicle",
+      "side": "L",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "sternoclavicular_L",
+        "acromioclavicular_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Clavicle.l",
+      "source_objects": [
+        "Clavicle.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 1550,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.08241047710180283,
+        1.4100866317749023,
+        0.0012775524519383907
+      ]
+    },
+    {
+      "id": "bone_scapula_L",
+      "name_zh": "左肩胛骨",
+      "name_en": "Scapula",
+      "side": "L",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "acromioclavicular_L",
+        "scapulothoracic_L",
+        "glenohumeral_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Scapula.l",
+      "source_objects": [
+        "Scapula.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 25326,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.12066417932510376,
+        1.369031548500061,
+        -0.060861486941576004
+      ]
+    },
+    {
+      "id": "bone_humerus_L",
+      "name_zh": "左肱骨",
+      "name_en": "Humerus",
+      "side": "L",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "glenohumeral_L",
+        "humeroulnar_L",
+        "humeroradial_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Humerus.l",
+      "source_objects": [
+        "Humerus.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 4280,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.19692640006542206,
+        1.248361349105835,
+        -0.030789919197559357
+      ]
+    },
+    {
+      "id": "bone_radius_L",
+      "name_zh": "左桡骨",
+      "name_en": "Radius",
+      "side": "L",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "humeroradial_L",
+        "proximal_radioulnar_L",
+        "distal_radioulnar_L",
+        "forearm_interosseous_L",
+        "radiocarpal_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Radius.l",
+      "source_objects": [
+        "Radius.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 784,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.25689634680747986,
+        0.965019941329956,
+        -0.005201783962547779
+      ]
+    },
+    {
+      "id": "bone_ulna_L",
+      "name_zh": "左尺骨",
+      "name_en": "Ulna",
+      "side": "L",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "humeroulnar_L",
+        "proximal_radioulnar_L",
+        "distal_radioulnar_L",
+        "forearm_interosseous_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Ulna.l",
+      "source_objects": [
+        "Ulna.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 904,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.22637681663036346,
+        1.0202085971832275,
+        -0.023965565487742424
+      ]
+    },
+    {
+      "id": "bone_scaphoid_L",
+      "name_zh": "左手舟骨",
+      "name_en": "Scaphoid",
+      "side": "L",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "radiocarpal_L",
+        "intercarpal_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Scaphoid bone.l",
+      "source_objects": [
+        "Scaphoid bone.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 390,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.27154645323753357,
+        0.8554196953773499,
+        0.018118837848305702
+      ]
+    },
+    {
+      "id": "bone_lunate_L",
+      "name_zh": "左月骨",
+      "name_en": "Lunate",
+      "side": "L",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "radiocarpal_L",
+        "intercarpal_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Lunate bone.l",
+      "source_objects": [
+        "Lunate bone.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 2088,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.2527495324611664,
+        0.8535187840461731,
+        0.01671060174703598
+      ]
+    },
+    {
+      "id": "bone_triquetrum_L",
+      "name_zh": "左三角骨",
+      "name_en": "Triquetrum",
+      "side": "L",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "radiocarpal_L",
+        "intercarpal_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Triquetrum bone.l",
+      "source_objects": [
+        "Triquetrum bone.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 176,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.24592533707618713,
+        0.8456882238388062,
+        0.020549673587083817
+      ]
+    },
+    {
+      "id": "bone_pisiform_L",
+      "name_zh": "左豌豆骨",
+      "name_en": "Pisiform",
+      "side": "L",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "intercarpal_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Pisiform bone.l",
+      "source_objects": [
+        "Pisiform bone.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 1668,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.24365447461605072,
+        0.8450639247894287,
+        0.03309733048081398
+      ]
+    },
+    {
+      "id": "bone_trapezium_L",
+      "name_zh": "左大多角骨",
+      "name_en": "Trapezium",
+      "side": "L",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "intercarpal_L",
+        "cmc_1_L",
+        "cmc_2_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Trapezium bone.l",
+      "source_objects": [
+        "Trapezium bone.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 500,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.28121957182884216,
+        0.8475977778434753,
+        0.027594350278377533
+      ]
+    },
+    {
+      "id": "bone_trapezoid_L",
+      "name_zh": "左小多角骨",
+      "name_en": "Trapezoid",
+      "side": "L",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "intercarpal_L",
+        "cmc_2_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Trapezoid bone.l",
+      "source_objects": [
+        "Trapezoid bone.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 364,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.2753448188304901,
+        0.8392322659492493,
+        0.01965423859655857
+      ]
+    },
+    {
+      "id": "bone_capitate_L",
+      "name_zh": "左头状骨",
+      "name_en": "Capitate",
+      "side": "L",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "intercarpal_L",
+        "cmc_2_L",
+        "cmc_3_L",
+        "cmc_4_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Capitate bone.l",
+      "source_objects": [
+        "Capitate bone.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 472,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.2647084891796112,
+        0.8437246084213257,
+        0.019384561106562614
+      ]
+    },
+    {
+      "id": "bone_hamate_L",
+      "name_zh": "左钩骨",
+      "name_en": "Hamate",
+      "side": "L",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "intercarpal_L",
+        "cmc_4_L",
+        "cmc_5_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Hamate bone.l",
+      "source_objects": [
+        "Hamate bone.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 536,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.2534494996070862,
+        0.8392509818077087,
+        0.020685505121946335
+      ]
+    },
+    {
+      "id": "bone_metacarpal_1_L",
+      "name_zh": "左第1掌骨",
+      "name_en": "Metacarpal 1",
+      "side": "L",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "cmc_1_L",
+        "mcp_1_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "First metacarpal bone.l",
+      "source_objects": [
+        "First metacarpal bone.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 682,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.30317923426628113,
+        0.8253921270370483,
+        0.04003197327256203
+      ]
+    },
+    {
+      "id": "bone_hand_phalanx_1_proximal_L",
+      "name_zh": "左拇指近节指骨",
+      "name_en": "Hand digit 1 proximal phalanx",
+      "side": "L",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "mcp_1_L",
+        "hand_ip_1_proximal_distal_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Proximal phalanx of first finger of hand.l",
+      "source_objects": [
+        "Proximal phalanx of first finger of hand.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 328,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.3190491199493408,
+        0.8003421425819397,
+        0.05319398641586304
+      ]
+    },
+    {
+      "id": "bone_hand_phalanx_1_distal_L",
+      "name_zh": "左拇指远节指骨",
+      "name_en": "Hand digit 1 distal phalanx",
+      "side": "L",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "hand_ip_1_proximal_distal_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Distal phalanx of first finger of hand.l",
+      "source_objects": [
+        "Distal phalanx of first finger of hand.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 222,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.32750192284584045,
+        0.7810819745063782,
+        0.06630318611860275
+      ]
+    },
+    {
+      "id": "bone_metacarpal_2_L",
+      "name_zh": "左第2掌骨",
+      "name_en": "Metacarpal 2",
+      "side": "L",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "cmc_2_L",
+        "mcp_2_L",
+        "intermetacarpal_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Second metacarpal bone.l",
+      "source_objects": [
+        "Second metacarpal bone.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 764,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.28628605604171753,
+        0.8024296760559082,
+        0.029856061562895775
+      ]
+    },
+    {
+      "id": "bone_hand_phalanx_2_proximal_L",
+      "name_zh": "左示指近节指骨",
+      "name_en": "Hand digit 2 proximal phalanx",
+      "side": "L",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "mcp_2_L",
+        "hand_ip_2_proximal_middle_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Proximal phalanx of second finger of hand.l",
+      "source_objects": [
+        "Proximal phalanx of second finger of hand.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 414,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.30276164412498474,
+        0.7523714303970337,
+        0.04549965262413025
+      ]
+    },
+    {
+      "id": "bone_hand_phalanx_2_middle_L",
+      "name_zh": "左示指中节指骨",
+      "name_en": "Hand digit 2 middle phalanx",
+      "side": "L",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "hand_ip_2_proximal_middle_L",
+        "hand_ip_2_middle_distal_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Middle phalanx of second finger of hand.l",
+      "source_objects": [
+        "Middle phalanx of second finger of hand.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 314,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.3127870261669159,
+        0.727933943271637,
+        0.06246921047568321
+      ]
+    },
+    {
+      "id": "bone_hand_phalanx_2_distal_L",
+      "name_zh": "左示指远节指骨",
+      "name_en": "Hand digit 2 distal phalanx",
+      "side": "L",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "hand_ip_2_middle_distal_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Distal phalanx of second finger of hand.l",
+      "source_objects": [
+        "Distal phalanx of second finger of hand.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 250,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.3166571259498596,
+        0.7162179946899414,
+        0.07766568660736084
+      ]
+    },
+    {
+      "id": "bone_metacarpal_3_L",
+      "name_zh": "左第3掌骨",
+      "name_en": "Metacarpal 3",
+      "side": "L",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "cmc_3_L",
+        "mcp_3_L",
+        "intermetacarpal_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Third metacarpal bone.l",
+      "source_objects": [
+        "Third metacarpal bone.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 708,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.2701655328273773,
+        0.805868923664093,
+        0.0250974353402853
+      ]
+    },
+    {
+      "id": "bone_hand_phalanx_3_proximal_L",
+      "name_zh": "左中指近节指骨",
+      "name_en": "Hand digit 3 proximal phalanx",
+      "side": "L",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "mcp_3_L",
+        "hand_ip_3_proximal_middle_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Proximal phalanx of third finger of hand.l",
+      "source_objects": [
+        "Proximal phalanx of third finger of hand.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 440,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.2783409655094147,
+        0.7519485354423523,
+        0.049796655774116516
+      ]
+    },
+    {
+      "id": "bone_hand_phalanx_3_middle_L",
+      "name_zh": "左中指中节指骨",
+      "name_en": "Hand digit 3 middle phalanx",
+      "side": "L",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "hand_ip_3_proximal_middle_L",
+        "hand_ip_3_middle_distal_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Middle phalanx of third finger of hand.l",
+      "source_objects": [
+        "Middle phalanx of third finger of hand.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 360,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.28252145648002625,
+        0.7245054244995117,
+        0.0686866044998169
+      ]
+    },
+    {
+      "id": "bone_hand_phalanx_3_distal_L",
+      "name_zh": "左中指远节指骨",
+      "name_en": "Hand digit 3 distal phalanx",
+      "side": "L",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "hand_ip_3_middle_distal_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Distal phalanx of third finger of hand.l",
+      "source_objects": [
+        "Distal phalanx of third finger of hand.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 192,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.285506933927536,
+        0.7065750956535339,
+        0.08747639507055283
+      ]
+    },
+    {
+      "id": "bone_metacarpal_4_L",
+      "name_zh": "左第4掌骨",
+      "name_en": "Metacarpal 4",
+      "side": "L",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "cmc_4_L",
+        "mcp_4_L",
+        "intermetacarpal_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Fourth metacarpal bone.l",
+      "source_objects": [
+        "Fourth metacarpal bone.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 642,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.2566991150379181,
+        0.8046363592147827,
+        0.026290319859981537
+      ]
+    },
+    {
+      "id": "bone_hand_phalanx_4_proximal_L",
+      "name_zh": "左环指近节指骨",
+      "name_en": "Hand digit 4 proximal phalanx",
+      "side": "L",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "mcp_4_L",
+        "hand_ip_4_proximal_middle_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Proximal phalanx of fourth finger of hand.l",
+      "source_objects": [
+        "Proximal phalanx of fourth finger of hand.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 368,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.25602293014526367,
+        0.7557817697525024,
+        0.04964401200413704
+      ]
+    },
+    {
+      "id": "bone_hand_phalanx_4_middle_L",
+      "name_zh": "左环指中节指骨",
+      "name_en": "Hand digit 4 middle phalanx",
+      "side": "L",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "hand_ip_4_proximal_middle_L",
+        "hand_ip_4_middle_distal_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Middle phalanx of fourth finger of hand.l",
+      "source_objects": [
+        "Middle phalanx of fourth finger of hand.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 446,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.25674566626548767,
+        0.7283735871315002,
+        0.06936394423246384
+      ]
+    },
+    {
+      "id": "bone_hand_phalanx_4_distal_L",
+      "name_zh": "左环指远节指骨",
+      "name_en": "Hand digit 4 distal phalanx",
+      "side": "L",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "hand_ip_4_middle_distal_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Distal phalanx of fourth finger of hand.l",
+      "source_objects": [
+        "Distal phalanx of fourth finger of hand.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 134,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.2579194903373718,
+        0.7159096002578735,
+        0.08731163293123245
+      ]
+    },
+    {
+      "id": "bone_metacarpal_5_L",
+      "name_zh": "左第5掌骨",
+      "name_en": "Metacarpal 5",
+      "side": "L",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "cmc_5_L",
+        "mcp_5_L",
+        "intermetacarpal_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Fifth metacarpal bone.l",
+      "source_objects": [
+        "Fifth metacarpal bone.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 512,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.24343465268611908,
+        0.8083522319793701,
+        0.03157275170087814
+      ]
+    },
+    {
+      "id": "bone_hand_phalanx_5_proximal_L",
+      "name_zh": "左小指近节指骨",
+      "name_en": "Hand digit 5 proximal phalanx",
+      "side": "L",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "mcp_5_L",
+        "hand_ip_5_proximal_middle_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Proximal phalanx of fifth finger of hand.l",
+      "source_objects": [
+        "Proximal phalanx of fifth finger of hand.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 560,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.2343015968799591,
+        0.7721124291419983,
+        0.04733693227171898
+      ]
+    },
+    {
+      "id": "bone_hand_phalanx_5_middle_L",
+      "name_zh": "左小指中节指骨",
+      "name_en": "Hand digit 5 middle phalanx",
+      "side": "L",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "hand_ip_5_proximal_middle_L",
+        "hand_ip_5_middle_distal_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Middle phalanx of fifth finger of hand.l",
+      "source_objects": [
+        "Middle phalanx of fifth finger of hand.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 292,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.23146632313728333,
+        0.7446762323379517,
+        0.06396430730819702
+      ]
+    },
+    {
+      "id": "bone_hand_phalanx_5_distal_L",
+      "name_zh": "左小指远节指骨",
+      "name_en": "Hand digit 5 distal phalanx",
+      "side": "L",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "hand_ip_5_middle_distal_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Distal phalanx of fifth finger of hand.l",
+      "source_objects": [
+        "Distal phalanx of fifth finger of hand.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 192,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.23024733364582062,
+        0.7299189567565918,
+        0.07647063583135605
+      ]
+    },
+    {
+      "id": "bone_hip_L",
+      "name_zh": "左髋骨",
+      "name_en": "Hip bone",
+      "side": "L",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "sacroiliac_L",
+        "hip_L",
+        "pubic_symphysis"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Hip bone.l",
+      "source_objects": [
+        "Hip bone.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 3788,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.06626490503549576,
+        0.8970854878425598,
+        -0.012156261131167412
+      ]
+    },
+    {
+      "id": "bone_femur_L",
+      "name_zh": "左股骨",
+      "name_en": "Femur",
+      "side": "L",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "hip_L",
+        "tibiofemoral_L",
+        "patellofemoral_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Femur.l",
+      "source_objects": [
+        "Femur.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 3794,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.09221834689378738,
+        0.656937837600708,
+        -0.019140848889946938
+      ]
+    },
+    {
+      "id": "bone_patella_L",
+      "name_zh": "左髌骨",
+      "name_en": "Patella",
+      "side": "L",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "patellofemoral_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Patella.l",
+      "source_objects": [
+        "Patella.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 276,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.08628927916288376,
+        0.4434482157230377,
+        0.0074548362754285336
+      ]
+    },
+    {
+      "id": "bone_tibia_L",
+      "name_zh": "左胫骨",
+      "name_en": "Tibia",
+      "side": "L",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "tibiofemoral_L",
+        "proximal_tibiofibular_L",
+        "distal_tibiofibular_L",
+        "talocrural_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Tibia.l",
+      "source_objects": [
+        "Tibia.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 1670,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.07518904656171799,
+        0.30201616883277893,
+        -0.034309182316064835
+      ]
+    },
+    {
+      "id": "bone_fibula_L",
+      "name_zh": "左腓骨",
+      "name_en": "Fibula",
+      "side": "L",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "proximal_tibiofibular_L",
+        "distal_tibiofibular_L",
+        "talocrural_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Fibula.l",
+      "source_objects": [
+        "Fibula.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 1264,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.10612330585718155,
+        0.2555820941925049,
+        -0.04654017090797424
+      ]
+    },
+    {
+      "id": "bone_talus_L",
+      "name_zh": "左距骨",
+      "name_en": "Talus",
+      "side": "L",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "talocrural_L",
+        "subtalar_L",
+        "talocalcaneonavicular_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Talus.l",
+      "source_objects": [
+        "Talus.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 1350,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.07243245840072632,
+        0.06615427881479263,
+        -0.03515007719397545
+      ]
+    },
+    {
+      "id": "bone_calcaneus_L",
+      "name_zh": "左跟骨",
+      "name_en": "Calcaneus",
+      "side": "L",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "subtalar_L",
+        "talocalcaneonavicular_L",
+        "calcaneocuboid_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Calcaneus.l",
+      "source_objects": [
+        "Calcaneus.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 1448,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.07950113713741302,
+        0.04099693149328232,
+        -0.0487079881131649
+      ]
+    },
+    {
+      "id": "bone_navicular_L",
+      "name_zh": "左足舟骨",
+      "name_en": "Navicular",
+      "side": "L",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "talocalcaneonavicular_L",
+        "distal_intertarsal_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Navicular bone.l",
+      "source_objects": [
+        "Navicular bone.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 732,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.07479425519704819,
+        0.06387819349765778,
+        -0.00340088433586061
+      ]
+    },
+    {
+      "id": "bone_cuboid_L",
+      "name_zh": "左骰骨",
+      "name_en": "Cuboid",
+      "side": "L",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "calcaneocuboid_L",
+        "distal_intertarsal_L",
+        "tmt_4_L",
+        "tmt_5_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Cuboid bone.l",
+      "source_objects": [
+        "Cuboid bone.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 998,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.09597884863615036,
+        0.04248763993382454,
+        -0.006982462480664253
+      ]
+    },
+    {
+      "id": "bone_medial_cuneiform_L",
+      "name_zh": "左内侧楔骨",
+      "name_en": "Medial cuneiform",
+      "side": "L",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "distal_intertarsal_L",
+        "tmt_1_L",
+        "tmt_2_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Medial cuneiform bone.l",
+      "source_objects": [
+        "Medial cuneiform bone.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 992,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.0705353170633316,
+        0.051217373460531235,
+        0.01686369627714157
+      ]
+    },
+    {
+      "id": "bone_intermediate_cuneiform_L",
+      "name_zh": "左中间楔骨",
+      "name_en": "Intermediate cuneiform",
+      "side": "L",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "distal_intertarsal_L",
+        "tmt_2_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Intermediate cuneiform bone.l",
+      "source_objects": [
+        "Intermediate cuneiform bone.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 444,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.08294039964675903,
+        0.058482129126787186,
+        0.011123177595436573
+      ]
+    },
+    {
+      "id": "bone_lateral_cuneiform_L",
+      "name_zh": "左外侧楔骨",
+      "name_en": "Lateral cuneiform",
+      "side": "L",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "distal_intertarsal_L",
+        "tmt_2_L",
+        "tmt_3_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Lateral cuneiform bone.l",
+      "source_objects": [
+        "Lateral cuneiform bone.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 638,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.09143956750631332,
+        0.0516832172870636,
+        0.0062189833261072636
+      ]
+    },
+    {
+      "id": "bone_metatarsal_1_L",
+      "name_zh": "左第1跖骨",
+      "name_en": "Metatarsal 1",
+      "side": "L",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "tmt_1_L",
+        "mtp_1_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "First metatarsal bone.l",
+      "source_objects": [
+        "First metatarsal bone.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 1088,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.07199618220329285,
+        0.0347343347966671,
+        0.050609782338142395
+      ]
+    },
+    {
+      "id": "bone_foot_phalanx_1_proximal_L",
+      "name_zh": "左拇趾近节趾骨",
+      "name_en": "Foot digit 1 proximal phalanx",
+      "side": "L",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "mtp_1_L",
+        "foot_ip_1_proximal_distal_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Proximal phalanx of first finger of foot.l",
+      "source_objects": [
+        "Proximal phalanx of first finger of foot.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 532,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.07464782148599625,
+        0.017987623810768127,
+        0.09664788097143173
+      ]
+    },
+    {
+      "id": "bone_foot_phalanx_1_distal_L",
+      "name_zh": "左拇趾远节趾骨",
+      "name_en": "Foot digit 1 distal phalanx",
+      "side": "L",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "foot_ip_1_proximal_distal_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Distal phalanx of first finger of foot.l",
+      "source_objects": [
+        "Distal phalanx of first finger of foot.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 466,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.08135256916284561,
+        0.01403526309877634,
+        0.12093627452850342
+      ]
+    },
+    {
+      "id": "bone_metatarsal_2_L",
+      "name_zh": "左第2跖骨",
+      "name_en": "Metatarsal 2",
+      "side": "L",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "tmt_2_L",
+        "mtp_2_L",
+        "intermetatarsal_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Second metatarsal bone.l",
+      "source_objects": [
+        "Second metatarsal bone.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 690,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.08982804417610168,
+        0.0429827943444252,
+        0.03963342681527138
+      ]
+    },
+    {
+      "id": "bone_foot_phalanx_2_proximal_L",
+      "name_zh": "左第二趾近节趾骨",
+      "name_en": "Foot digit 2 proximal phalanx",
+      "side": "L",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "mtp_2_L",
+        "foot_ip_2_proximal_middle_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Proximal phalanx of second finger of foot.l",
+      "source_objects": [
+        "Proximal phalanx of second finger of foot.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 426,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.09566139429807663,
+        0.01855841837823391,
+        0.09813754260540009
+      ]
+    },
+    {
+      "id": "bone_foot_phalanx_2_middle_L",
+      "name_zh": "左第二趾中节趾骨",
+      "name_en": "Foot digit 2 middle phalanx",
+      "side": "L",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "foot_ip_2_proximal_middle_L",
+        "foot_ip_2_middle_distal_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Middle phalanx of second finger of foot.l",
+      "source_objects": [
+        "Middle phalanx of second finger of foot.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 382,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.10164931416511536,
+        0.015295806340873241,
+        0.1179833635687828
+      ]
+    },
+    {
+      "id": "bone_foot_phalanx_2_distal_L",
+      "name_zh": "左第二趾远节趾骨",
+      "name_en": "Foot digit 2 distal phalanx",
+      "side": "L",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "foot_ip_2_middle_distal_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Distal phalanx of second finger of foot.l",
+      "source_objects": [
+        "Distal phalanx of second finger of foot.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 236,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.10423606634140015,
+        0.012875910848379135,
+        0.12940995395183563
+      ]
+    },
+    {
+      "id": "bone_metatarsal_3_L",
+      "name_zh": "左第3跖骨",
+      "name_en": "Metatarsal 3",
+      "side": "L",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "tmt_3_L",
+        "mtp_3_L",
+        "intermetatarsal_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Third metatarsal bone.l",
+      "source_objects": [
+        "Third metatarsal bone.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 814,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.10187261551618576,
+        0.03340382128953934,
+        0.04747181385755539
+      ]
+    },
+    {
+      "id": "bone_foot_phalanx_3_proximal_L",
+      "name_zh": "左第三趾近节趾骨",
+      "name_en": "Foot digit 3 proximal phalanx",
+      "side": "L",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "mtp_3_L",
+        "foot_ip_3_proximal_middle_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Proximal phalanx of third finger of foot.l",
+      "source_objects": [
+        "Proximal phalanx of third finger of foot.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 460,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.11096149682998657,
+        0.016963623464107513,
+        0.08943477272987366
+      ]
+    },
+    {
+      "id": "bone_foot_phalanx_3_middle_L",
+      "name_zh": "左第三趾中节趾骨",
+      "name_en": "Foot digit 3 middle phalanx",
+      "side": "L",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "foot_ip_3_proximal_middle_L",
+        "foot_ip_3_middle_distal_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Middle phalanx of third finger of foot.l",
+      "source_objects": [
+        "Middle phalanx of third finger of foot.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 400,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.11618366837501526,
+        0.014351217076182365,
+        0.11136918514966965
+      ]
+    },
+    {
+      "id": "bone_foot_phalanx_3_distal_L",
+      "name_zh": "左第三趾远节趾骨",
+      "name_en": "Foot digit 3 distal phalanx",
+      "side": "L",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "foot_ip_3_middle_distal_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Distal phalanx of third finger of foot.l",
+      "source_objects": [
+        "Distal phalanx of third finger of foot.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 318,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.11923839896917343,
+        0.012435141950845718,
+        0.1232488676905632
+      ]
+    },
+    {
+      "id": "bone_metatarsal_4_L",
+      "name_zh": "左第4跖骨",
+      "name_en": "Metatarsal 4",
+      "side": "L",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "tmt_4_L",
+        "mtp_4_L",
+        "intermetatarsal_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Fourth metatarsal bone.l",
+      "source_objects": [
+        "Fourth metatarsal bone.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 834,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.10746841132640839,
+        0.031344618648290634,
+        0.03187722712755203
+      ]
+    },
+    {
+      "id": "bone_foot_phalanx_4_proximal_L",
+      "name_zh": "左第四趾近节趾骨",
+      "name_en": "Foot digit 4 proximal phalanx",
+      "side": "L",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "mtp_4_L",
+        "foot_ip_4_proximal_middle_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Proximal phalanx of fourth finger of foot.l",
+      "source_objects": [
+        "Proximal phalanx of fourth finger of foot.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 460,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.12324197590351105,
+        0.016453374177217484,
+        0.0799800381064415
+      ]
+    },
+    {
+      "id": "bone_foot_phalanx_4_middle_L",
+      "name_zh": "左第四趾中节趾骨",
+      "name_en": "Foot digit 4 middle phalanx",
+      "side": "L",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "foot_ip_4_proximal_middle_L",
+        "foot_ip_4_middle_distal_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Middle phalanx of fourth finger of foot.l",
+      "source_objects": [
+        "Middle phalanx of fourth finger of foot.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 448,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.12967441976070404,
+        0.01346635352820158,
+        0.09890462458133698
+      ]
+    },
+    {
+      "id": "bone_foot_phalanx_4_distal_L",
+      "name_zh": "左第四趾远节趾骨",
+      "name_en": "Foot digit 4 distal phalanx",
+      "side": "L",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "foot_ip_4_middle_distal_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Distal phalanx of fourth finger of foot.l",
+      "source_objects": [
+        "Distal phalanx of fourth finger of foot.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 278,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.1324206292629242,
+        0.012222472578287125,
+        0.10858064889907837
+      ]
+    },
+    {
+      "id": "bone_metatarsal_5_L",
+      "name_zh": "左第5跖骨",
+      "name_en": "Metatarsal 5",
+      "side": "L",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "tmt_5_L",
+        "mtp_5_L",
+        "intermetatarsal_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Fifth metatarsal bone.l",
+      "source_objects": [
+        "Fifth metatarsal bone.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 894,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.11902477592229843,
+        0.02453027293086052,
+        0.02314935438334942
+      ]
+    },
+    {
+      "id": "bone_foot_phalanx_5_proximal_L",
+      "name_zh": "左第五趾近节趾骨",
+      "name_en": "Foot digit 5 proximal phalanx",
+      "side": "L",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "mtp_5_L",
+        "foot_ip_5_proximal_middle_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Proximal phalanx of fifth finger of foot.l",
+      "source_objects": [
+        "Proximal phalanx of fifth finger of foot.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 516,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.13567200303077698,
+        0.013348146341741085,
+        0.06735505908727646
+      ]
+    },
+    {
+      "id": "bone_foot_phalanx_5_middle_L",
+      "name_zh": "左第五趾中节趾骨",
+      "name_en": "Foot digit 5 middle phalanx",
+      "side": "L",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "foot_ip_5_proximal_middle_L",
+        "foot_ip_5_middle_distal_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Middle phalanx of fifth finger of foot.l",
+      "source_objects": [
+        "Middle phalanx of fifth finger of foot.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 216,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.14056290686130524,
+        0.012270470149815083,
+        0.08297192305326462
+      ]
+    },
+    {
+      "id": "bone_foot_phalanx_5_distal_L",
+      "name_zh": "左第五趾远节趾骨",
+      "name_en": "Foot digit 5 distal phalanx",
+      "side": "L",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "foot_ip_5_middle_distal_L"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Distal phalanx of fifth finger of foot.l",
+      "source_objects": [
+        "Distal phalanx of fifth finger of foot.l"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 236,
+      "upstream_reflection": true,
+      "rest_position_web_m": [
+        0.14270412921905518,
+        0.011891758069396019,
+        0.09051456302404404
+      ]
+    },
+    {
+      "id": "bone_rib_01_R",
+      "name_zh": "右第1肋骨",
+      "name_en": "Rib 1",
+      "side": "R",
+      "region": "胸廓",
+      "joint_or_connection_ids": [
+        "costovertebral_01_R",
+        "sternocostal_01_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "First rib.r",
+      "source_objects": [
+        "First rib.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 3210,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.04373094066977501,
+        1.4214727878570557,
+        -0.005303432699292898
+      ]
+    },
+    {
+      "id": "bone_rib_02_R",
+      "name_zh": "右第2肋骨",
+      "name_en": "Rib 2",
+      "side": "R",
+      "region": "胸廓",
+      "joint_or_connection_ids": [
+        "costovertebral_02_R",
+        "sternocostal_02_R",
+        "scapulothoracic_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Second rib.r",
+      "source_objects": [
+        "Second rib.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 5364,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.05670749768614769,
+        1.4013985395431519,
+        -0.006084684282541275
+      ]
+    },
+    {
+      "id": "bone_rib_03_R",
+      "name_zh": "右第3肋骨",
+      "name_en": "Rib 3",
+      "side": "R",
+      "region": "胸廓",
+      "joint_or_connection_ids": [
+        "costovertebral_03_R",
+        "sternocostal_03_R",
+        "scapulothoracic_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Third rib.r",
+      "source_objects": [
+        "Third rib.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 6980,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.062406957149505615,
+        1.37857186794281,
+        -0.015050056390464306
+      ]
+    },
+    {
+      "id": "bone_rib_04_R",
+      "name_zh": "右第4肋骨",
+      "name_en": "Rib 4",
+      "side": "R",
+      "region": "胸廓",
+      "joint_or_connection_ids": [
+        "costovertebral_04_R",
+        "sternocostal_04_R",
+        "scapulothoracic_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Fourth rib.r",
+      "source_objects": [
+        "Fourth rib.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 8646,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.07453617453575134,
+        1.3504530191421509,
+        -0.017784440889954567
+      ]
+    },
+    {
+      "id": "bone_rib_05_R",
+      "name_zh": "右第5肋骨",
+      "name_en": "Rib 5",
+      "side": "R",
+      "region": "胸廓",
+      "joint_or_connection_ids": [
+        "costovertebral_05_R",
+        "sternocostal_05_R",
+        "scapulothoracic_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Fifth rib.r",
+      "source_objects": [
+        "Fifth rib.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 9376,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.0786602646112442,
+        1.3211904764175415,
+        -0.024996837601065636
+      ]
+    },
+    {
+      "id": "bone_rib_06_R",
+      "name_zh": "右第6肋骨",
+      "name_en": "Rib 6",
+      "side": "R",
+      "region": "胸廓",
+      "joint_or_connection_ids": [
+        "costovertebral_06_R",
+        "sternocostal_06_R",
+        "scapulothoracic_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Sixth rib.r",
+      "source_objects": [
+        "Sixth rib.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 10132,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.08676932752132416,
+        1.2867968082427979,
+        -0.025506041944026947
+      ]
+    },
+    {
+      "id": "bone_rib_07_R",
+      "name_zh": "右第7肋骨",
+      "name_en": "Rib 7",
+      "side": "R",
+      "region": "胸廓",
+      "joint_or_connection_ids": [
+        "costovertebral_07_R",
+        "sternocostal_07_R",
+        "costal_arch_08_R",
+        "scapulothoracic_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Seventh rib.r",
+      "source_objects": [
+        "Seventh rib.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 9776,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.08636883646249771,
+        1.2568700313568115,
+        -0.03294984623789787
+      ]
+    },
+    {
+      "id": "bone_rib_08_R",
+      "name_zh": "右第8肋骨",
+      "name_en": "Rib 8",
+      "side": "R",
+      "region": "胸廓",
+      "joint_or_connection_ids": [
+        "costovertebral_08_R",
+        "costal_arch_08_R",
+        "costal_arch_09_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Eighth rib.r",
+      "source_objects": [
+        "Eighth rib.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 8270,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.08391054719686508,
+        1.2237513065338135,
+        -0.03820856660604477
+      ]
+    },
+    {
+      "id": "bone_rib_09_R",
+      "name_zh": "右第9肋骨",
+      "name_en": "Rib 9",
+      "side": "R",
+      "region": "胸廓",
+      "joint_or_connection_ids": [
+        "costovertebral_09_R",
+        "costal_arch_09_R",
+        "costal_arch_10_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Ninth rib.r",
+      "source_objects": [
+        "Ninth rib.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 7778,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.07958892732858658,
+        1.1977876424789429,
+        -0.04946882650256157
+      ]
+    },
+    {
+      "id": "bone_rib_10_R",
+      "name_zh": "右第10肋骨",
+      "name_en": "Rib 10",
+      "side": "R",
+      "region": "胸廓",
+      "joint_or_connection_ids": [
+        "costovertebral_10_R",
+        "costal_arch_10_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Tenth rib.r",
+      "source_objects": [
+        "Tenth rib.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 7026,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.07664182037115097,
+        1.1639037132263184,
+        -0.04563762992620468
+      ]
+    },
+    {
+      "id": "bone_rib_11_R",
+      "name_zh": "右第11肋骨",
+      "name_en": "Rib 11",
+      "side": "R",
+      "region": "胸廓",
+      "joint_or_connection_ids": [
+        "costovertebral_11_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Eleventh rib.r",
+      "source_objects": [
+        "Eleventh rib.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 5034,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.07191673666238785,
+        1.1306833028793335,
+        -0.044070445001125336
+      ]
+    },
+    {
+      "id": "bone_rib_12_R",
+      "name_zh": "右第12肋骨",
+      "name_en": "Rib 12",
+      "side": "R",
+      "region": "胸廓",
+      "joint_or_connection_ids": [
+        "costovertebral_12_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Twelfth rib.r",
+      "source_objects": [
+        "Twelfth rib.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 3002,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.04998648539185524,
+        1.112722635269165,
+        -0.046118829399347305
+      ]
+    },
+    {
+      "id": "bone_clavicle_R",
+      "name_zh": "右锁骨",
+      "name_en": "Clavicle",
+      "side": "R",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "sternoclavicular_R",
+        "acromioclavicular_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Clavicle.r",
+      "source_objects": [
+        "Clavicle.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 1550,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.08241050690412521,
+        1.4100866317749023,
+        0.0012775524519383907
+      ]
+    },
+    {
+      "id": "bone_scapula_R",
+      "name_zh": "右肩胛骨",
+      "name_en": "Scapula",
+      "side": "R",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "acromioclavicular_R",
+        "scapulothoracic_R",
+        "glenohumeral_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Scapula.r",
+      "source_objects": [
+        "Scapula.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 25326,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.12066417187452316,
+        1.369031548500061,
+        -0.060861486941576004
+      ]
+    },
+    {
+      "id": "bone_humerus_R",
+      "name_zh": "右肱骨",
+      "name_en": "Humerus",
+      "side": "R",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "glenohumeral_R",
+        "humeroulnar_R",
+        "humeroradial_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Humerus.r",
+      "source_objects": [
+        "Humerus.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 4280,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.19692637026309967,
+        1.248361349105835,
+        -0.030789919197559357
+      ]
+    },
+    {
+      "id": "bone_radius_R",
+      "name_zh": "右桡骨",
+      "name_en": "Radius",
+      "side": "R",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "humeroradial_R",
+        "proximal_radioulnar_R",
+        "distal_radioulnar_R",
+        "forearm_interosseous_R",
+        "radiocarpal_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Radius.r",
+      "source_objects": [
+        "Radius.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 784,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.25689634680747986,
+        0.965019941329956,
+        -0.005201783962547779
+      ]
+    },
+    {
+      "id": "bone_ulna_R",
+      "name_zh": "右尺骨",
+      "name_en": "Ulna",
+      "side": "R",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "humeroulnar_R",
+        "proximal_radioulnar_R",
+        "distal_radioulnar_R",
+        "forearm_interosseous_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Ulna.r",
+      "source_objects": [
+        "Ulna.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 904,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.22637678682804108,
+        1.0202085971832275,
+        -0.023965565487742424
+      ]
+    },
+    {
+      "id": "bone_scaphoid_R",
+      "name_zh": "右手舟骨",
+      "name_en": "Scaphoid",
+      "side": "R",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "radiocarpal_R",
+        "intercarpal_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Scaphoid bone.r",
+      "source_objects": [
+        "Scaphoid bone.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 390,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.27154645323753357,
+        0.8554196953773499,
+        0.018118837848305702
+      ]
+    },
+    {
+      "id": "bone_lunate_R",
+      "name_zh": "右月骨",
+      "name_en": "Lunate",
+      "side": "R",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "radiocarpal_R",
+        "intercarpal_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Lunate bone.r",
+      "source_objects": [
+        "Lunate bone.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 2088,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.2527495324611664,
+        0.8535187840461731,
+        0.01671060174703598
+      ]
+    },
+    {
+      "id": "bone_triquetrum_R",
+      "name_zh": "右三角骨",
+      "name_en": "Triquetrum",
+      "side": "R",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "radiocarpal_R",
+        "intercarpal_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Triquetrum bone.r",
+      "source_objects": [
+        "Triquetrum bone.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 176,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.24592532217502594,
+        0.8456882238388062,
+        0.020549673587083817
+      ]
+    },
+    {
+      "id": "bone_pisiform_R",
+      "name_zh": "右豌豆骨",
+      "name_en": "Pisiform",
+      "side": "R",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "intercarpal_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Pisiform bone.r",
+      "source_objects": [
+        "Pisiform bone.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 1668,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.24365444481372833,
+        0.8450639247894287,
+        0.03309733048081398
+      ]
+    },
+    {
+      "id": "bone_trapezium_R",
+      "name_zh": "右大多角骨",
+      "name_en": "Trapezium",
+      "side": "R",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "intercarpal_R",
+        "cmc_1_R",
+        "cmc_2_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Trapezium bone.r",
+      "source_objects": [
+        "Trapezium bone.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 500,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.28121957182884216,
+        0.8475977778434753,
+        0.027594350278377533
+      ]
+    },
+    {
+      "id": "bone_trapezoid_R",
+      "name_zh": "右小多角骨",
+      "name_en": "Trapezoid",
+      "side": "R",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "intercarpal_R",
+        "cmc_2_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Trapezoid bone.r",
+      "source_objects": [
+        "Trapezoid bone.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 364,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.2753448188304901,
+        0.8392322659492493,
+        0.01965423859655857
+      ]
+    },
+    {
+      "id": "bone_capitate_R",
+      "name_zh": "右头状骨",
+      "name_en": "Capitate",
+      "side": "R",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "intercarpal_R",
+        "cmc_2_R",
+        "cmc_3_R",
+        "cmc_4_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Capitate bone.r",
+      "source_objects": [
+        "Capitate bone.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 472,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.2647084891796112,
+        0.8437246084213257,
+        0.019384561106562614
+      ]
+    },
+    {
+      "id": "bone_hamate_R",
+      "name_zh": "右钩骨",
+      "name_en": "Hamate",
+      "side": "R",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "intercarpal_R",
+        "cmc_4_R",
+        "cmc_5_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Hamate bone.r",
+      "source_objects": [
+        "Hamate bone.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 536,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.2534494996070862,
+        0.8392509818077087,
+        0.020685505121946335
+      ]
+    },
+    {
+      "id": "bone_metacarpal_1_R",
+      "name_zh": "右第1掌骨",
+      "name_en": "Metacarpal 1",
+      "side": "R",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "cmc_1_R",
+        "mcp_1_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "First metacarpal bone.r",
+      "source_objects": [
+        "First metacarpal bone.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 682,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.30317923426628113,
+        0.8253921270370483,
+        0.04003197327256203
+      ]
+    },
+    {
+      "id": "bone_hand_phalanx_1_proximal_R",
+      "name_zh": "右拇指近节指骨",
+      "name_en": "Hand digit 1 proximal phalanx",
+      "side": "R",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "mcp_1_R",
+        "hand_ip_1_proximal_distal_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Proximal phalanx of first finger of hand.r",
+      "source_objects": [
+        "Proximal phalanx of first finger of hand.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 328,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.3190491199493408,
+        0.8003421425819397,
+        0.05319398641586304
+      ]
+    },
+    {
+      "id": "bone_hand_phalanx_1_distal_R",
+      "name_zh": "右拇指远节指骨",
+      "name_en": "Hand digit 1 distal phalanx",
+      "side": "R",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "hand_ip_1_proximal_distal_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Distal phalanx of first finger of hand.r",
+      "source_objects": [
+        "Distal phalanx of first finger of hand.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 222,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.32750192284584045,
+        0.7810819745063782,
+        0.06630318611860275
+      ]
+    },
+    {
+      "id": "bone_metacarpal_2_R",
+      "name_zh": "右第2掌骨",
+      "name_en": "Metacarpal 2",
+      "side": "R",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "cmc_2_R",
+        "mcp_2_R",
+        "intermetacarpal_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Second metacarpal bone.r",
+      "source_objects": [
+        "Second metacarpal bone.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 764,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.28628605604171753,
+        0.8024296760559082,
+        0.029856061562895775
+      ]
+    },
+    {
+      "id": "bone_hand_phalanx_2_proximal_R",
+      "name_zh": "右示指近节指骨",
+      "name_en": "Hand digit 2 proximal phalanx",
+      "side": "R",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "mcp_2_R",
+        "hand_ip_2_proximal_middle_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Proximal phalanx of second finger of hand.r",
+      "source_objects": [
+        "Proximal phalanx of second finger of hand.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 414,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.30276164412498474,
+        0.7523714303970337,
+        0.04549965262413025
+      ]
+    },
+    {
+      "id": "bone_hand_phalanx_2_middle_R",
+      "name_zh": "右示指中节指骨",
+      "name_en": "Hand digit 2 middle phalanx",
+      "side": "R",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "hand_ip_2_proximal_middle_R",
+        "hand_ip_2_middle_distal_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Middle phalanx of second finger of hand.r",
+      "source_objects": [
+        "Middle phalanx of second finger of hand.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 314,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.3127870261669159,
+        0.727933943271637,
+        0.06246921047568321
+      ]
+    },
+    {
+      "id": "bone_hand_phalanx_2_distal_R",
+      "name_zh": "右示指远节指骨",
+      "name_en": "Hand digit 2 distal phalanx",
+      "side": "R",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "hand_ip_2_middle_distal_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Distal phalanx of second finger of hand.r",
+      "source_objects": [
+        "Distal phalanx of second finger of hand.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 250,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.3166571259498596,
+        0.7162179946899414,
+        0.07766568660736084
+      ]
+    },
+    {
+      "id": "bone_metacarpal_3_R",
+      "name_zh": "右第3掌骨",
+      "name_en": "Metacarpal 3",
+      "side": "R",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "cmc_3_R",
+        "mcp_3_R",
+        "intermetacarpal_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Third metacarpal bone.r",
+      "source_objects": [
+        "Third metacarpal bone.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 708,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.2701655328273773,
+        0.805868923664093,
+        0.0250974353402853
+      ]
+    },
+    {
+      "id": "bone_hand_phalanx_3_proximal_R",
+      "name_zh": "右中指近节指骨",
+      "name_en": "Hand digit 3 proximal phalanx",
+      "side": "R",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "mcp_3_R",
+        "hand_ip_3_proximal_middle_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Proximal phalanx of third finger of hand.r",
+      "source_objects": [
+        "Proximal phalanx of third finger of hand.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 440,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.2783409655094147,
+        0.7519485354423523,
+        0.049796655774116516
+      ]
+    },
+    {
+      "id": "bone_hand_phalanx_3_middle_R",
+      "name_zh": "右中指中节指骨",
+      "name_en": "Hand digit 3 middle phalanx",
+      "side": "R",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "hand_ip_3_proximal_middle_R",
+        "hand_ip_3_middle_distal_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Middle phalanx of third finger of hand.r",
+      "source_objects": [
+        "Middle phalanx of third finger of hand.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 360,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.28252145648002625,
+        0.7245054244995117,
+        0.0686866044998169
+      ]
+    },
+    {
+      "id": "bone_hand_phalanx_3_distal_R",
+      "name_zh": "右中指远节指骨",
+      "name_en": "Hand digit 3 distal phalanx",
+      "side": "R",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "hand_ip_3_middle_distal_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Distal phalanx of third finger of hand.r",
+      "source_objects": [
+        "Distal phalanx of third finger of hand.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 192,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.285506933927536,
+        0.7065750956535339,
+        0.08747639507055283
+      ]
+    },
+    {
+      "id": "bone_metacarpal_4_R",
+      "name_zh": "右第4掌骨",
+      "name_en": "Metacarpal 4",
+      "side": "R",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "cmc_4_R",
+        "mcp_4_R",
+        "intermetacarpal_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Fourth metacarpal bone.r",
+      "source_objects": [
+        "Fourth metacarpal bone.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 642,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.2566991150379181,
+        0.8046363592147827,
+        0.026290319859981537
+      ]
+    },
+    {
+      "id": "bone_hand_phalanx_4_proximal_R",
+      "name_zh": "右环指近节指骨",
+      "name_en": "Hand digit 4 proximal phalanx",
+      "side": "R",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "mcp_4_R",
+        "hand_ip_4_proximal_middle_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Proximal phalanx of fourth finger of hand.r",
+      "source_objects": [
+        "Proximal phalanx of fourth finger of hand.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 368,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.25602293014526367,
+        0.7557817697525024,
+        0.04964401200413704
+      ]
+    },
+    {
+      "id": "bone_hand_phalanx_4_middle_R",
+      "name_zh": "右环指中节指骨",
+      "name_en": "Hand digit 4 middle phalanx",
+      "side": "R",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "hand_ip_4_proximal_middle_R",
+        "hand_ip_4_middle_distal_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Middle phalanx of fourth finger of hand.r",
+      "source_objects": [
+        "Middle phalanx of fourth finger of hand.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 446,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.25674566626548767,
+        0.7283735871315002,
+        0.06936394423246384
+      ]
+    },
+    {
+      "id": "bone_hand_phalanx_4_distal_R",
+      "name_zh": "右环指远节指骨",
+      "name_en": "Hand digit 4 distal phalanx",
+      "side": "R",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "hand_ip_4_middle_distal_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Distal phalanx of fourth finger of hand.r",
+      "source_objects": [
+        "Distal phalanx of fourth finger of hand.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 134,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.2579194903373718,
+        0.7159096002578735,
+        0.08731163293123245
+      ]
+    },
+    {
+      "id": "bone_metacarpal_5_R",
+      "name_zh": "右第5掌骨",
+      "name_en": "Metacarpal 5",
+      "side": "R",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "cmc_5_R",
+        "mcp_5_R",
+        "intermetacarpal_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Fifth metacarpal bone.r",
+      "source_objects": [
+        "Fifth metacarpal bone.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 512,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.24343463778495789,
+        0.8083522319793701,
+        0.03157275170087814
+      ]
+    },
+    {
+      "id": "bone_hand_phalanx_5_proximal_R",
+      "name_zh": "右小指近节指骨",
+      "name_en": "Hand digit 5 proximal phalanx",
+      "side": "R",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "mcp_5_R",
+        "hand_ip_5_proximal_middle_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Proximal phalanx of fifth finger of hand.r",
+      "source_objects": [
+        "Proximal phalanx of fifth finger of hand.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 560,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.2343015968799591,
+        0.7721124291419983,
+        0.04733693227171898
+      ]
+    },
+    {
+      "id": "bone_hand_phalanx_5_middle_R",
+      "name_zh": "右小指中节指骨",
+      "name_en": "Hand digit 5 middle phalanx",
+      "side": "R",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "hand_ip_5_proximal_middle_R",
+        "hand_ip_5_middle_distal_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Middle phalanx of fifth finger of hand.r",
+      "source_objects": [
+        "Middle phalanx of fifth finger of hand.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 292,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.23146632313728333,
+        0.7446762323379517,
+        0.06396430730819702
+      ]
+    },
+    {
+      "id": "bone_hand_phalanx_5_distal_R",
+      "name_zh": "右小指远节指骨",
+      "name_en": "Hand digit 5 distal phalanx",
+      "side": "R",
+      "region": "上肢",
+      "joint_or_connection_ids": [
+        "hand_ip_5_middle_distal_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Distal phalanx of fifth finger of hand.r",
+      "source_objects": [
+        "Distal phalanx of fifth finger of hand.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 192,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.23024730384349823,
+        0.7299189567565918,
+        0.07647063583135605
+      ]
+    },
+    {
+      "id": "bone_hip_R",
+      "name_zh": "右髋骨",
+      "name_en": "Hip bone",
+      "side": "R",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "sacroiliac_R",
+        "hip_R",
+        "pubic_symphysis"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Hip bone.r",
+      "source_objects": [
+        "Hip bone.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 3788,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.06626490503549576,
+        0.8970854878425598,
+        -0.012156261131167412
+      ]
+    },
+    {
+      "id": "bone_femur_R",
+      "name_zh": "右股骨",
+      "name_en": "Femur",
+      "side": "R",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "hip_R",
+        "tibiofemoral_R",
+        "patellofemoral_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Femur.r",
+      "source_objects": [
+        "Femur.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 3794,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.09221834689378738,
+        0.656937837600708,
+        -0.019140848889946938
+      ]
+    },
+    {
+      "id": "bone_patella_R",
+      "name_zh": "右髌骨",
+      "name_en": "Patella",
+      "side": "R",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "patellofemoral_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Patella.r",
+      "source_objects": [
+        "Patella.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 276,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.08628927916288376,
+        0.4434482157230377,
+        0.0074548362754285336
+      ]
+    },
+    {
+      "id": "bone_tibia_R",
+      "name_zh": "右胫骨",
+      "name_en": "Tibia",
+      "side": "R",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "tibiofemoral_R",
+        "proximal_tibiofibular_R",
+        "distal_tibiofibular_R",
+        "talocrural_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Tibia.r",
+      "source_objects": [
+        "Tibia.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 1670,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.07518904656171799,
+        0.30201616883277893,
+        -0.034309182316064835
+      ]
+    },
+    {
+      "id": "bone_fibula_R",
+      "name_zh": "右腓骨",
+      "name_en": "Fibula",
+      "side": "R",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "proximal_tibiofibular_R",
+        "distal_tibiofibular_R",
+        "talocrural_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Fibula.r",
+      "source_objects": [
+        "Fibula.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 1264,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.10612329095602036,
+        0.2555820941925049,
+        -0.04654017090797424
+      ]
+    },
+    {
+      "id": "bone_talus_R",
+      "name_zh": "右距骨",
+      "name_en": "Talus",
+      "side": "R",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "talocrural_R",
+        "subtalar_R",
+        "talocalcaneonavicular_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Talus.r",
+      "source_objects": [
+        "Talus.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 1350,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.07243245840072632,
+        0.06615427881479263,
+        -0.03515007719397545
+      ]
+    },
+    {
+      "id": "bone_calcaneus_R",
+      "name_zh": "右跟骨",
+      "name_en": "Calcaneus",
+      "side": "R",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "subtalar_R",
+        "talocalcaneonavicular_R",
+        "calcaneocuboid_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Calcaneus.r",
+      "source_objects": [
+        "Calcaneus.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 1448,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.07950113713741302,
+        0.04099693149328232,
+        -0.0487079881131649
+      ]
+    },
+    {
+      "id": "bone_navicular_R",
+      "name_zh": "右足舟骨",
+      "name_en": "Navicular",
+      "side": "R",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "talocalcaneonavicular_R",
+        "distal_intertarsal_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Navicular bone.r",
+      "source_objects": [
+        "Navicular bone.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 732,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.07479425519704819,
+        0.06387819349765778,
+        -0.00340088433586061
+      ]
+    },
+    {
+      "id": "bone_cuboid_R",
+      "name_zh": "右骰骨",
+      "name_en": "Cuboid",
+      "side": "R",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "calcaneocuboid_R",
+        "distal_intertarsal_R",
+        "tmt_4_R",
+        "tmt_5_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Cuboid bone.r",
+      "source_objects": [
+        "Cuboid bone.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 998,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.09597884863615036,
+        0.04248763993382454,
+        -0.006982462480664253
+      ]
+    },
+    {
+      "id": "bone_medial_cuneiform_R",
+      "name_zh": "右内侧楔骨",
+      "name_en": "Medial cuneiform",
+      "side": "R",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "distal_intertarsal_R",
+        "tmt_1_R",
+        "tmt_2_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Medial cuneiform bone.r",
+      "source_objects": [
+        "Medial cuneiform bone.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 992,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.0705353170633316,
+        0.051217373460531235,
+        0.01686369627714157
+      ]
+    },
+    {
+      "id": "bone_intermediate_cuneiform_R",
+      "name_zh": "右中间楔骨",
+      "name_en": "Intermediate cuneiform",
+      "side": "R",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "distal_intertarsal_R",
+        "tmt_2_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Intermediate cuneiform bone.r",
+      "source_objects": [
+        "Intermediate cuneiform bone.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 444,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.08294039964675903,
+        0.058482129126787186,
+        0.011123177595436573
+      ]
+    },
+    {
+      "id": "bone_lateral_cuneiform_R",
+      "name_zh": "右外侧楔骨",
+      "name_en": "Lateral cuneiform",
+      "side": "R",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "distal_intertarsal_R",
+        "tmt_2_R",
+        "tmt_3_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Lateral cuneiform bone.r",
+      "source_objects": [
+        "Lateral cuneiform bone.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 638,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.09143956750631332,
+        0.0516832172870636,
+        0.0062189833261072636
+      ]
+    },
+    {
+      "id": "bone_metatarsal_1_R",
+      "name_zh": "右第1跖骨",
+      "name_en": "Metatarsal 1",
+      "side": "R",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "tmt_1_R",
+        "mtp_1_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "First metatarsal bone.r",
+      "source_objects": [
+        "First metatarsal bone.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 1088,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.07199618965387344,
+        0.0347343347966671,
+        0.050609782338142395
+      ]
+    },
+    {
+      "id": "bone_foot_phalanx_1_proximal_R",
+      "name_zh": "右拇趾近节趾骨",
+      "name_en": "Foot digit 1 proximal phalanx",
+      "side": "R",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "mtp_1_R",
+        "foot_ip_1_proximal_distal_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Proximal phalanx of first finger of foot.r",
+      "source_objects": [
+        "Proximal phalanx of first finger of foot.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 532,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.07464782148599625,
+        0.017987623810768127,
+        0.09664788097143173
+      ]
+    },
+    {
+      "id": "bone_foot_phalanx_1_distal_R",
+      "name_zh": "右拇趾远节趾骨",
+      "name_en": "Foot digit 1 distal phalanx",
+      "side": "R",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "foot_ip_1_proximal_distal_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Distal phalanx of first finger of foot.r",
+      "source_objects": [
+        "Distal phalanx of first finger of foot.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 466,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.08135256916284561,
+        0.01403526309877634,
+        0.12093627452850342
+      ]
+    },
+    {
+      "id": "bone_metatarsal_2_R",
+      "name_zh": "右第2跖骨",
+      "name_en": "Metatarsal 2",
+      "side": "R",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "tmt_2_R",
+        "mtp_2_R",
+        "intermetatarsal_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Second metatarsal bone.r",
+      "source_objects": [
+        "Second metatarsal bone.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 690,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.08982804417610168,
+        0.0429827943444252,
+        0.03963342681527138
+      ]
+    },
+    {
+      "id": "bone_foot_phalanx_2_proximal_R",
+      "name_zh": "右第二趾近节趾骨",
+      "name_en": "Foot digit 2 proximal phalanx",
+      "side": "R",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "mtp_2_R",
+        "foot_ip_2_proximal_middle_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Proximal phalanx of second finger of foot.r",
+      "source_objects": [
+        "Proximal phalanx of second finger of foot.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 426,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.09566139429807663,
+        0.01855841837823391,
+        0.09813754260540009
+      ]
+    },
+    {
+      "id": "bone_foot_phalanx_2_middle_R",
+      "name_zh": "右第二趾中节趾骨",
+      "name_en": "Foot digit 2 middle phalanx",
+      "side": "R",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "foot_ip_2_proximal_middle_R",
+        "foot_ip_2_middle_distal_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Middle phalanx of second finger of foot.r",
+      "source_objects": [
+        "Middle phalanx of second finger of foot.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 382,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.10164932906627655,
+        0.015295806340873241,
+        0.1179833635687828
+      ]
+    },
+    {
+      "id": "bone_foot_phalanx_2_distal_R",
+      "name_zh": "右第二趾远节趾骨",
+      "name_en": "Foot digit 2 distal phalanx",
+      "side": "R",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "foot_ip_2_middle_distal_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Distal phalanx of second finger of foot.r",
+      "source_objects": [
+        "Distal phalanx of second finger of foot.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 236,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.10423606634140015,
+        0.012875910848379135,
+        0.12940995395183563
+      ]
+    },
+    {
+      "id": "bone_metatarsal_3_R",
+      "name_zh": "右第3跖骨",
+      "name_en": "Metatarsal 3",
+      "side": "R",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "tmt_3_R",
+        "mtp_3_R",
+        "intermetatarsal_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Third metatarsal bone.r",
+      "source_objects": [
+        "Third metatarsal bone.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 814,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.10187261551618576,
+        0.03340382128953934,
+        0.04747181385755539
+      ]
+    },
+    {
+      "id": "bone_foot_phalanx_3_proximal_R",
+      "name_zh": "右第三趾近节趾骨",
+      "name_en": "Foot digit 3 proximal phalanx",
+      "side": "R",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "mtp_3_R",
+        "foot_ip_3_proximal_middle_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Proximal phalanx of third finger of foot.r",
+      "source_objects": [
+        "Proximal phalanx of third finger of foot.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 460,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.11096149682998657,
+        0.016963623464107513,
+        0.08943477272987366
+      ]
+    },
+    {
+      "id": "bone_foot_phalanx_3_middle_R",
+      "name_zh": "右第三趾中节趾骨",
+      "name_en": "Foot digit 3 middle phalanx",
+      "side": "R",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "foot_ip_3_proximal_middle_R",
+        "foot_ip_3_middle_distal_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Middle phalanx of third finger of foot.r",
+      "source_objects": [
+        "Middle phalanx of third finger of foot.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 400,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.11618366837501526,
+        0.014351217076182365,
+        0.11136918514966965
+      ]
+    },
+    {
+      "id": "bone_foot_phalanx_3_distal_R",
+      "name_zh": "右第三趾远节趾骨",
+      "name_en": "Foot digit 3 distal phalanx",
+      "side": "R",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "foot_ip_3_middle_distal_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Distal phalanx of third finger of foot.r",
+      "source_objects": [
+        "Distal phalanx of third finger of foot.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 318,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.11923843622207642,
+        0.012435141950845718,
+        0.1232488676905632
+      ]
+    },
+    {
+      "id": "bone_metatarsal_4_R",
+      "name_zh": "右第4跖骨",
+      "name_en": "Metatarsal 4",
+      "side": "R",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "tmt_4_R",
+        "mtp_4_R",
+        "intermetatarsal_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Fourth metatarsal bone.r",
+      "source_objects": [
+        "Fourth metatarsal bone.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 834,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.10746841132640839,
+        0.031344618648290634,
+        0.03187722712755203
+      ]
+    },
+    {
+      "id": "bone_foot_phalanx_4_proximal_R",
+      "name_zh": "右第四趾近节趾骨",
+      "name_en": "Foot digit 4 proximal phalanx",
+      "side": "R",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "mtp_4_R",
+        "foot_ip_4_proximal_middle_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Proximal phalanx of fourth finger of foot.r",
+      "source_objects": [
+        "Proximal phalanx of fourth finger of foot.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 460,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.12324197590351105,
+        0.016453374177217484,
+        0.0799800381064415
+      ]
+    },
+    {
+      "id": "bone_foot_phalanx_4_middle_R",
+      "name_zh": "右第四趾中节趾骨",
+      "name_en": "Foot digit 4 middle phalanx",
+      "side": "R",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "foot_ip_4_proximal_middle_R",
+        "foot_ip_4_middle_distal_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Middle phalanx of fourth finger of foot.r",
+      "source_objects": [
+        "Middle phalanx of fourth finger of foot.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 448,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.12967444956302643,
+        0.01346635352820158,
+        0.09890462458133698
+      ]
+    },
+    {
+      "id": "bone_foot_phalanx_4_distal_R",
+      "name_zh": "右第四趾远节趾骨",
+      "name_en": "Foot digit 4 distal phalanx",
+      "side": "R",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "foot_ip_4_middle_distal_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Distal phalanx of fourth finger of foot.r",
+      "source_objects": [
+        "Distal phalanx of fourth finger of foot.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 278,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.13242068886756897,
+        0.012222472578287125,
+        0.10858064889907837
+      ]
+    },
+    {
+      "id": "bone_metatarsal_5_R",
+      "name_zh": "右第5跖骨",
+      "name_en": "Metatarsal 5",
+      "side": "R",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "tmt_5_R",
+        "mtp_5_R",
+        "intermetatarsal_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Fifth metatarsal bone.r",
+      "source_objects": [
+        "Fifth metatarsal bone.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 894,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.11902478337287903,
+        0.02453027293086052,
+        0.02314935438334942
+      ]
+    },
+    {
+      "id": "bone_foot_phalanx_5_proximal_R",
+      "name_zh": "右第五趾近节趾骨",
+      "name_en": "Foot digit 5 proximal phalanx",
+      "side": "R",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "mtp_5_R",
+        "foot_ip_5_proximal_middle_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Proximal phalanx of fifth finger of foot.r",
+      "source_objects": [
+        "Proximal phalanx of fifth finger of foot.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 516,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.13567200303077698,
+        0.013348146341741085,
+        0.06735505908727646
+      ]
+    },
+    {
+      "id": "bone_foot_phalanx_5_middle_R",
+      "name_zh": "右第五趾中节趾骨",
+      "name_en": "Foot digit 5 middle phalanx",
+      "side": "R",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "foot_ip_5_proximal_middle_R",
+        "foot_ip_5_middle_distal_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Middle phalanx of fifth finger of foot.r",
+      "source_objects": [
+        "Middle phalanx of fifth finger of foot.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 216,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.14056290686130524,
+        0.012270470149815083,
+        0.08297192305326462
+      ]
+    },
+    {
+      "id": "bone_foot_phalanx_5_distal_R",
+      "name_zh": "右第五趾远节趾骨",
+      "name_en": "Foot digit 5 distal phalanx",
+      "side": "R",
+      "region": "下肢",
+      "joint_or_connection_ids": [
+        "foot_ip_5_middle_distal_R"
+      ],
+      "available": true,
+      "trial": false,
+      "source_dataset": "Z-Anatomy 候选",
+      "source_structure_id": "Distal phalanx of fifth finger of foot.r",
+      "source_objects": [
+        "Distal phalanx of fifth finger of foot.r"
+      ],
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "note": "沿用 Z-Anatomy 原配世界位置与尺寸；未缩放配准至现用骨架。解剖、许可和装配待核对。",
+      "triangles": 236,
+      "upstream_reflection": false,
+      "rest_position_web_m": [
+        -0.14270412921905518,
+        0.011891758069396019,
+        0.09051456302404404
+      ]
+    }
+  ],
+  "regions": [
+    {
+      "name": "颅骨",
+      "file": "z-anatomy-candidate/assets/region-0.glb",
+      "bytes": 2040904
+    },
+    {
+      "name": "听小骨",
+      "file": "z-anatomy-candidate/assets/region-1.glb",
+      "bytes": 396232
+    },
+    {
+      "name": "舌骨",
+      "file": "z-anatomy-candidate/assets/region-2.glb",
+      "bytes": 24908
+    },
+    {
+      "name": "脊柱",
+      "file": "z-anatomy-candidate/assets/region-3.glb",
+      "bytes": 1333108
+    },
+    {
+      "name": "胸廓",
+      "file": "z-anatomy-candidate/assets/region-4.glb",
+      "bytes": 3212552
+    },
+    {
+      "name": "上肢",
+      "file": "z-anatomy-candidate/assets/region-5.glb",
+      "bytes": 1745528
+    },
+    {
+      "name": "下肢",
+      "file": "z-anatomy-candidate/assets/region-6.glb",
+      "bytes": 1032072
+    }
+  ]
+}

@@ -1,0 +1,430 @@
+{
+  "status": "planning_only_not_anatomically_verified",
+  "scope": "右肘首批覆盖区域与后续稳定结构；非全身逐对象全集，亦非完整肘部软组织清单",
+  "coordinate_system": "沿用主骨架；Blender 米 [x,y,z] → glTF 米 [x,z,-y]",
+  "notes": [
+    "bone_ids 表示关联骨，不等同于完整起止点；桡側副韧带与环状韧带连续关系另需核对。",
+    "六处软骨覆盖区域不代表六块解剖上完全独立的软骨。",
+    "左右侧及原始个体保持一致；不得以当前包围盒中心推断解剖附着。",
+    "外侧副韧带复合体变异及副束按后续参考核对扩展。"
+  ],
+  "objects": [
+    {
+      "id": "surface_humeral_trochlea_R",
+      "name_zh": "右肱骨滑车覆盖参考区",
+      "side": "R",
+      "tissue_type": "surface_annotation",
+      "stage": 0,
+      "bone_ids": [
+        "bone_humerus_R"
+      ],
+      "dependencies": [],
+      "source": null,
+      "asset": null,
+      "coverage_or_attachment": null,
+      "geometry_status": "not_started",
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "motion_review": "pending"
+    },
+    {
+      "id": "cartilage_humeral_trochlea_R",
+      "name_zh": "右肱骨滑车软骨覆盖区",
+      "side": "R",
+      "tissue_type": "articular_cartilage",
+      "stage": 1,
+      "bone_ids": [
+        "bone_humerus_R"
+      ],
+      "dependencies": [
+        "surface_humeral_trochlea_R"
+      ],
+      "source": null,
+      "asset": null,
+      "coverage_or_attachment": null,
+      "geometry_status": "not_started",
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "motion_review": "pending"
+    },
+    {
+      "id": "surface_humeral_capitulum_R",
+      "name_zh": "右肱骨小头覆盖参考区",
+      "side": "R",
+      "tissue_type": "surface_annotation",
+      "stage": 0,
+      "bone_ids": [
+        "bone_humerus_R"
+      ],
+      "dependencies": [],
+      "source": null,
+      "asset": null,
+      "coverage_or_attachment": null,
+      "geometry_status": "not_started",
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "motion_review": "pending"
+    },
+    {
+      "id": "cartilage_humeral_capitulum_R",
+      "name_zh": "右肱骨小头软骨覆盖区",
+      "side": "R",
+      "tissue_type": "articular_cartilage",
+      "stage": 1,
+      "bone_ids": [
+        "bone_humerus_R"
+      ],
+      "dependencies": [
+        "surface_humeral_capitulum_R"
+      ],
+      "source": null,
+      "asset": null,
+      "coverage_or_attachment": null,
+      "geometry_status": "not_started",
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "motion_review": "pending"
+    },
+    {
+      "id": "surface_ulnar_trochlear_notch_R",
+      "name_zh": "右尺骨滑车切迹覆盖参考区",
+      "side": "R",
+      "tissue_type": "surface_annotation",
+      "stage": 0,
+      "bone_ids": [
+        "bone_ulna_R"
+      ],
+      "dependencies": [],
+      "source": null,
+      "asset": null,
+      "coverage_or_attachment": null,
+      "geometry_status": "not_started",
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "motion_review": "pending"
+    },
+    {
+      "id": "cartilage_ulnar_trochlear_notch_R",
+      "name_zh": "右尺骨滑车切迹软骨覆盖区",
+      "side": "R",
+      "tissue_type": "articular_cartilage",
+      "stage": 1,
+      "bone_ids": [
+        "bone_ulna_R"
+      ],
+      "dependencies": [
+        "surface_ulnar_trochlear_notch_R"
+      ],
+      "source": null,
+      "asset": null,
+      "coverage_or_attachment": null,
+      "geometry_status": "not_started",
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "motion_review": "pending"
+    },
+    {
+      "id": "surface_ulnar_radial_notch_R",
+      "name_zh": "右尺骨桡切迹覆盖参考区",
+      "side": "R",
+      "tissue_type": "surface_annotation",
+      "stage": 0,
+      "bone_ids": [
+        "bone_ulna_R"
+      ],
+      "dependencies": [],
+      "source": null,
+      "asset": null,
+      "coverage_or_attachment": null,
+      "geometry_status": "not_started",
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "motion_review": "pending"
+    },
+    {
+      "id": "cartilage_ulnar_radial_notch_R",
+      "name_zh": "右尺骨桡切迹软骨覆盖区",
+      "side": "R",
+      "tissue_type": "articular_cartilage",
+      "stage": 1,
+      "bone_ids": [
+        "bone_ulna_R"
+      ],
+      "dependencies": [
+        "surface_ulnar_radial_notch_R"
+      ],
+      "source": null,
+      "asset": null,
+      "coverage_or_attachment": null,
+      "geometry_status": "not_started",
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "motion_review": "pending"
+    },
+    {
+      "id": "surface_radial_head_fovea_R",
+      "name_zh": "右桡骨头关节凹覆盖参考区",
+      "side": "R",
+      "tissue_type": "surface_annotation",
+      "stage": 0,
+      "bone_ids": [
+        "bone_radius_R"
+      ],
+      "dependencies": [],
+      "source": null,
+      "asset": null,
+      "coverage_or_attachment": null,
+      "geometry_status": "not_started",
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "motion_review": "pending"
+    },
+    {
+      "id": "cartilage_radial_head_fovea_R",
+      "name_zh": "右桡骨头关节凹软骨覆盖区",
+      "side": "R",
+      "tissue_type": "articular_cartilage",
+      "stage": 1,
+      "bone_ids": [
+        "bone_radius_R"
+      ],
+      "dependencies": [
+        "surface_radial_head_fovea_R"
+      ],
+      "source": null,
+      "asset": null,
+      "coverage_or_attachment": null,
+      "geometry_status": "not_started",
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "motion_review": "pending"
+    },
+    {
+      "id": "surface_radial_head_circumference_R",
+      "name_zh": "右桡骨头环状关节面覆盖参考区",
+      "side": "R",
+      "tissue_type": "surface_annotation",
+      "stage": 0,
+      "bone_ids": [
+        "bone_radius_R"
+      ],
+      "dependencies": [],
+      "source": null,
+      "asset": null,
+      "coverage_or_attachment": null,
+      "geometry_status": "not_started",
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "motion_review": "pending"
+    },
+    {
+      "id": "cartilage_radial_head_circumference_R",
+      "name_zh": "右桡骨头环状关节面软骨覆盖区",
+      "side": "R",
+      "tissue_type": "articular_cartilage",
+      "stage": 1,
+      "bone_ids": [
+        "bone_radius_R"
+      ],
+      "dependencies": [
+        "surface_radial_head_circumference_R"
+      ],
+      "source": null,
+      "asset": null,
+      "coverage_or_attachment": null,
+      "geometry_status": "not_started",
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "motion_review": "pending"
+    },
+    {
+      "id": "capsule_R",
+      "name_zh": "右肘关节纤维囊",
+      "side": "R",
+      "tissue_type": "fibrous_capsule",
+      "stage": 2,
+      "bone_ids": [
+        "bone_humerus_R",
+        "bone_ulna_R",
+        "bone_radius_R"
+      ],
+      "dependencies": [],
+      "source": null,
+      "asset": null,
+      "coverage_or_attachment": null,
+      "geometry_status": "not_started",
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "motion_review": "pending"
+    },
+    {
+      "id": "synovium_R",
+      "name_zh": "右肘关节滑膜",
+      "side": "R",
+      "tissue_type": "synovial_membrane",
+      "stage": 2,
+      "bone_ids": [
+        "bone_humerus_R",
+        "bone_ulna_R",
+        "bone_radius_R"
+      ],
+      "dependencies": [],
+      "source": null,
+      "asset": null,
+      "coverage_or_attachment": null,
+      "geometry_status": "not_started",
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "motion_review": "pending"
+    },
+    {
+      "id": "ucl_anterior_R",
+      "name_zh": "右尺侧副韧带前束",
+      "side": "R",
+      "tissue_type": "ligament",
+      "stage": 2,
+      "bone_ids": [
+        "bone_humerus_R",
+        "bone_ulna_R"
+      ],
+      "dependencies": [],
+      "source": null,
+      "asset": null,
+      "coverage_or_attachment": null,
+      "geometry_status": "not_started",
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "motion_review": "pending"
+    },
+    {
+      "id": "ucl_posterior_R",
+      "name_zh": "右尺侧副韧带后束",
+      "side": "R",
+      "tissue_type": "ligament",
+      "stage": 2,
+      "bone_ids": [
+        "bone_humerus_R",
+        "bone_ulna_R"
+      ],
+      "dependencies": [],
+      "source": null,
+      "asset": null,
+      "coverage_or_attachment": null,
+      "geometry_status": "not_started",
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "motion_review": "pending"
+    },
+    {
+      "id": "ucl_transverse_R",
+      "name_zh": "右尺侧副韧带横束",
+      "side": "R",
+      "tissue_type": "ligament",
+      "stage": 2,
+      "bone_ids": [
+        "bone_ulna_R"
+      ],
+      "dependencies": [],
+      "source": null,
+      "asset": null,
+      "coverage_or_attachment": null,
+      "geometry_status": "not_started",
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "motion_review": "pending"
+    },
+    {
+      "id": "rcl_R",
+      "name_zh": "右桡侧副韧带",
+      "side": "R",
+      "tissue_type": "ligament",
+      "stage": 2,
+      "bone_ids": [
+        "bone_humerus_R"
+      ],
+      "dependencies": [],
+      "source": null,
+      "asset": null,
+      "coverage_or_attachment": null,
+      "geometry_status": "not_started",
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "motion_review": "pending"
+    },
+    {
+      "id": "lucl_R",
+      "name_zh": "右外侧尺副韧带",
+      "side": "R",
+      "tissue_type": "ligament",
+      "stage": 2,
+      "bone_ids": [
+        "bone_humerus_R",
+        "bone_ulna_R"
+      ],
+      "dependencies": [],
+      "source": null,
+      "asset": null,
+      "coverage_or_attachment": null,
+      "geometry_status": "not_started",
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "motion_review": "pending"
+    },
+    {
+      "id": "annular_R",
+      "name_zh": "右桡骨环状韧带",
+      "side": "R",
+      "tissue_type": "ligament",
+      "stage": 2,
+      "bone_ids": [
+        "bone_ulna_R"
+      ],
+      "dependencies": [],
+      "source": null,
+      "asset": null,
+      "coverage_or_attachment": null,
+      "geometry_status": "not_started",
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "motion_review": "pending"
+    },
+    {
+      "id": "quadrate_R",
+      "name_zh": "右方形韧带",
+      "side": "R",
+      "tissue_type": "ligament",
+      "stage": 2,
+      "bone_ids": [
+        "bone_ulna_R",
+        "bone_radius_R"
+      ],
+      "dependencies": [],
+      "source": null,
+      "asset": null,
+      "coverage_or_attachment": null,
+      "geometry_status": "not_started",
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "motion_review": "pending"
+    },
+    {
+      "id": "interosseous_membrane_R",
+      "name_zh": "右前臂骨间膜",
+      "side": "R",
+      "tissue_type": "interosseous_membrane",
+      "stage": 2,
+      "bone_ids": [
+        "bone_ulna_R",
+        "bone_radius_R"
+      ],
+      "dependencies": [],
+      "source": null,
+      "asset": null,
+      "coverage_or_attachment": null,
+      "geometry_status": "not_started",
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "motion_review": "pending"
+    }
+  ]
+}

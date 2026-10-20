@@ -1,0 +1,1754 @@
+{
+  "status": "source_native_candidate_not_validated",
+  "source_sha256": "9f08a17ea0115fed80b2a73ecdf0a1bc2ab2f6956f37c593ce23d513ea35afcd",
+  "file": "z-anatomy-candidate/assets/joints.glb",
+  "objects": [
+    {
+      "id": "disc_C2-C3",
+      "name_zh": "椎间盘 C2-C3",
+      "name_en": "Intervertebral disc C2-C3",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "intervertebral_disc",
+      "bone_ids": [
+        "bone_vertebra_C2_M",
+        "bone_vertebra_C3_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_C2_vertebra_C3"
+      ],
+      "source_structure_id": "Intervertebral disc C2-C3",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 848,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        1.9219459357344704e-09,
+        1.5184040069580078,
+        -0.00938318483531475
+      ]
+    },
+    {
+      "id": "disc_C3-C4",
+      "name_zh": "椎间盘 C3-C4",
+      "name_en": "Intervertebral disc C3-C4",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "intervertebral_disc",
+      "bone_ids": [
+        "bone_vertebra_C3_M",
+        "bone_vertebra_C4_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_C3_vertebra_C4"
+      ],
+      "source_structure_id": "Intervertebral disc C3-C4",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 688,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -2.4225152439605324e-10,
+        1.5031092166900635,
+        -0.009660273790359497
+      ]
+    },
+    {
+      "id": "disc_C4-C5",
+      "name_zh": "椎间盘 C4-C5",
+      "name_en": "Intervertebral disc C4-C5",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "intervertebral_disc",
+      "bone_ids": [
+        "bone_vertebra_C4_M",
+        "bone_vertebra_C5_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_C4_vertebra_C5"
+      ],
+      "source_structure_id": "Intervertebral disc C4-C5",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 856,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        1.7973984522967612e-09,
+        1.4867647886276245,
+        -0.00917261466383934
+      ]
+    },
+    {
+      "id": "disc_C5-C6",
+      "name_zh": "椎间盘 C5-C6",
+      "name_en": "Intervertebral disc C5-C6",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "intervertebral_disc",
+      "bone_ids": [
+        "bone_vertebra_C5_M",
+        "bone_vertebra_C6_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_C5_vertebra_C6"
+      ],
+      "source_structure_id": "Intervertebral disc C5-C6",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 968,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        1.984809205879401e-09,
+        1.4708002805709839,
+        -0.009537475183606148
+      ]
+    },
+    {
+      "id": "disc_C6-C7",
+      "name_zh": "椎间盘 C6-C7",
+      "name_en": "Intervertebral disc C6-C7",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "intervertebral_disc",
+      "bone_ids": [
+        "bone_vertebra_C6_M",
+        "bone_vertebra_C7_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_C6_vertebra_C7"
+      ],
+      "source_structure_id": "Intervertebral disc C6-C7",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 834,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -1.0901664015960932e-09,
+        1.4565623998641968,
+        -0.015547903254628181
+      ]
+    },
+    {
+      "id": "disc_C7-T1",
+      "name_zh": "椎间盘 C7-T1",
+      "name_en": "Intervertebral disc C7-T1",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "intervertebral_disc",
+      "bone_ids": [
+        "bone_vertebra_C7_M",
+        "bone_vertebra_T1_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_C7_vertebra_T1"
+      ],
+      "source_structure_id": "Intervertebral disc C7-T1",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 1168,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        1.5096245364887295e-09,
+        1.4425091743469238,
+        -0.021020440384745598
+      ]
+    },
+    {
+      "id": "disc_T1-T2",
+      "name_zh": "椎间盘 T1-T2",
+      "name_en": "Intervertebral disc T1-T2",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "intervertebral_disc",
+      "bone_ids": [
+        "bone_vertebra_T1_M",
+        "bone_vertebra_T2_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_T1_vertebra_T2"
+      ],
+      "source_structure_id": "Intervertebral disc T1-T2",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 1252,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        4.84198792172208e-10,
+        1.425571084022522,
+        -0.02795744501054287
+      ]
+    },
+    {
+      "id": "disc_T2-T3",
+      "name_zh": "椎间盘 T2-T3",
+      "name_en": "Intervertebral disc T2-T3",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "intervertebral_disc",
+      "bone_ids": [
+        "bone_vertebra_T2_M",
+        "bone_vertebra_T3_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_T2_vertebra_T3"
+      ],
+      "source_structure_id": "Intervertebral disc T2-T3",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 1324,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -2.654409470004282e-10,
+        1.405259609222412,
+        -0.035016123205423355
+      ]
+    },
+    {
+      "id": "disc_T3-T4",
+      "name_zh": "椎间盘 T3-T4",
+      "name_en": "Intervertebral disc T3-T4",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "intervertebral_disc",
+      "bone_ids": [
+        "bone_vertebra_T3_M",
+        "bone_vertebra_T4_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_T3_vertebra_T4"
+      ],
+      "source_structure_id": "Intervertebral disc T3-T4",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 1360,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        3.1684768142525854e-09,
+        1.3841118812561035,
+        -0.043311383575201035
+      ]
+    },
+    {
+      "id": "disc_T4-T5",
+      "name_zh": "椎间盘 T4-T5",
+      "name_en": "Intervertebral disc T4-T5",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "intervertebral_disc",
+      "bone_ids": [
+        "bone_vertebra_T4_M",
+        "bone_vertebra_T5_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_T4_vertebra_T5"
+      ],
+      "source_structure_id": "Intervertebral disc T4-T5",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 1630,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        9.313225746154785e-10,
+        1.3611912727355957,
+        -0.04993826895952225
+      ]
+    },
+    {
+      "id": "disc_T5-T6",
+      "name_zh": "椎间盘 T5-T6",
+      "name_en": "Intervertebral disc T5-T6",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "intervertebral_disc",
+      "bone_ids": [
+        "bone_vertebra_T5_M",
+        "bone_vertebra_T6_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_T5_vertebra_T6"
+      ],
+      "source_structure_id": "Intervertebral disc T5-T6",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 1738,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -3.259849634673628e-08,
+        1.3347976207733154,
+        -0.05218449607491493
+      ]
+    },
+    {
+      "id": "disc_T6-T7",
+      "name_zh": "椎间盘 T6-T7",
+      "name_en": "Intervertebral disc T6-T7",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "intervertebral_disc",
+      "bone_ids": [
+        "bone_vertebra_T6_M",
+        "bone_vertebra_T7_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_T6_vertebra_T7"
+      ],
+      "source_structure_id": "Intervertebral disc T6-T7",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 2388,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        3.4640859070123042e-09,
+        1.3087660074234009,
+        -0.05396714806556702
+      ]
+    },
+    {
+      "id": "disc_T7-T8",
+      "name_zh": "椎间盘 T7-T8",
+      "name_en": "Intervertebral disc T7-T8",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "intervertebral_disc",
+      "bone_ids": [
+        "bone_vertebra_T7_M",
+        "bone_vertebra_T8_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_T7_vertebra_T8"
+      ],
+      "source_structure_id": "Intervertebral disc T7-T8",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 2658,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -4.365250916293917e-08,
+        1.2802587747573853,
+        -0.04980805888772011
+      ]
+    },
+    {
+      "id": "disc_T8-T9",
+      "name_zh": "椎间盘 T8-T9",
+      "name_en": "Intervertebral disc T8-T9",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "intervertebral_disc",
+      "bone_ids": [
+        "bone_vertebra_T8_M",
+        "bone_vertebra_T9_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_T8_vertebra_T9"
+      ],
+      "source_structure_id": "Intervertebral disc T8-T9",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 2890,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        6.892398318747439e-10,
+        1.2538435459136963,
+        -0.04577438533306122
+      ]
+    },
+    {
+      "id": "disc_T9-T10",
+      "name_zh": "椎间盘 T9-T10",
+      "name_en": "Intervertebral disc T9-T10",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "intervertebral_disc",
+      "bone_ids": [
+        "bone_vertebra_T9_M",
+        "bone_vertebra_T10_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_T9_vertebra_T10"
+      ],
+      "source_structure_id": "Intervertebral disc T9-T10",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 1248,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        5.190338159266616e-10,
+        1.2242509126663208,
+        -0.0379047654569149
+      ]
+    },
+    {
+      "id": "disc_T10-T11",
+      "name_zh": "椎间盘 T10-T11",
+      "name_en": "Intervertebral disc T10-T11",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "intervertebral_disc",
+      "bone_ids": [
+        "bone_vertebra_T10_M",
+        "bone_vertebra_T11_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_T10_vertebra_T11"
+      ],
+      "source_structure_id": "Intervertebral disc T10-T11",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 2870,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        1.44753586894808e-09,
+        1.1950109004974365,
+        -0.03188973292708397
+      ]
+    },
+    {
+      "id": "disc_T11-T12",
+      "name_zh": "椎间盘 T11-T12",
+      "name_en": "Intervertebral disc T11-T12",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "intervertebral_disc",
+      "bone_ids": [
+        "bone_vertebra_T11_M",
+        "bone_vertebra_T12_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_T11_vertebra_T12"
+      ],
+      "source_structure_id": "Intervertebral disc T11-T12",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 3392,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -5.224189081332042e-09,
+        1.1642323732376099,
+        -0.023356590420007706
+      ]
+    },
+    {
+      "id": "disc_T12-L1",
+      "name_zh": "椎间盘 T12-L1",
+      "name_en": "Intervertebral disc T12-L1",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "intervertebral_disc",
+      "bone_ids": [
+        "bone_vertebra_T12_M",
+        "bone_vertebra_L1_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_T12_vertebra_L1"
+      ],
+      "source_structure_id": "Intervertebral disc T12-L1",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 3328,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -4.0901188214093054e-08,
+        1.1320772171020508,
+        -0.015518576838076115
+      ]
+    },
+    {
+      "id": "disc_L2-L3",
+      "name_zh": "椎间盘 L2-L3",
+      "name_en": "Intervertebral disc L2-L3",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "intervertebral_disc",
+      "bone_ids": [
+        "bone_vertebra_L2_M",
+        "bone_vertebra_L3_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_L2_vertebra_L3"
+      ],
+      "source_structure_id": "Intervertebral disc L2-L3",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 3388,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        1.3961198419565335e-08,
+        1.066524624824524,
+        -0.0021666313987225294
+      ]
+    },
+    {
+      "id": "disc_L3-L4",
+      "name_zh": "椎间盘 L3-L4",
+      "name_en": "Intervertebral disc L3-L4",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "intervertebral_disc",
+      "bone_ids": [
+        "bone_vertebra_L3_M",
+        "bone_vertebra_L4_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_L3_vertebra_L4"
+      ],
+      "source_structure_id": "Intervertebral disc L3-L4",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 3116,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -6.227503490663366e-08,
+        1.0311998128890991,
+        -0.001763771171681583
+      ]
+    },
+    {
+      "id": "disc_L4-L5",
+      "name_zh": "椎间盘 L4-L5",
+      "name_en": "Intervertebral disc L4-L5",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "intervertebral_disc",
+      "bone_ids": [
+        "bone_vertebra_L4_M",
+        "bone_vertebra_L5_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_L4_vertebra_L5"
+      ],
+      "source_structure_id": "Intervertebral disc L4-L5",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 3286,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -2.45366340578812e-08,
+        0.9977900981903076,
+        -0.007541037164628506
+      ]
+    },
+    {
+      "id": "disc_L5-S1",
+      "name_zh": "椎间盘 L5-S1",
+      "name_en": "Intervertebral disc L5-S1",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "intervertebral_disc",
+      "bone_ids": [
+        "bone_vertebra_L5_M",
+        "bone_sacrum_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_L5_sacrum"
+      ],
+      "source_structure_id": "Intervertebral disc L5-S1",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 3586,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -5.1637494280498686e-09,
+        0.9620749950408936,
+        -0.017220469191670418
+      ]
+    },
+    {
+      "id": "costal_cartilage_1_L",
+      "name_zh": "左第1肋软骨",
+      "name_en": "Costal cartilage of first rib.l",
+      "side": "L",
+      "region": "胸廓",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "costal_cartilage",
+      "bone_ids": [
+        "bone_rib_01_L",
+        "bone_sternum_M"
+      ],
+      "joint_or_connection_ids": [
+        "sternocostal_01_L"
+      ],
+      "source_structure_id": "Costal cartilage of first rib.l",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 2772,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.0362841859459877,
+        1.3889189958572388,
+        0.03841875493526459
+      ]
+    },
+    {
+      "id": "costal_cartilage_2_L",
+      "name_zh": "左第2肋软骨",
+      "name_en": "Costal cartilage of second rib.l",
+      "side": "L",
+      "region": "胸廓",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "costal_cartilage",
+      "bone_ids": [
+        "bone_rib_02_L",
+        "bone_sternum_M"
+      ],
+      "joint_or_connection_ids": [
+        "sternocostal_02_L"
+      ],
+      "source_structure_id": "Costal cartilage of second rib.l",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 3408,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.02731100283563137,
+        1.3504934310913086,
+        0.07098817080259323
+      ]
+    },
+    {
+      "id": "costal_cartilage_3_L",
+      "name_zh": "左第3肋软骨",
+      "name_en": "Costal cartilage of third rib.l",
+      "side": "L",
+      "region": "胸廓",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "costal_cartilage",
+      "bone_ids": [
+        "bone_rib_03_L",
+        "bone_sternum_M"
+      ],
+      "joint_or_connection_ids": [
+        "sternocostal_03_L"
+      ],
+      "source_structure_id": "Costal cartilage of third rib.l",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 3600,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.031293220818042755,
+        1.3204127550125122,
+        0.08050800859928131
+      ]
+    },
+    {
+      "id": "costal_cartilage_4_L",
+      "name_zh": "左第4肋软骨",
+      "name_en": "Costal cartilage of fourth rib.l",
+      "side": "L",
+      "region": "胸廓",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "costal_cartilage",
+      "bone_ids": [
+        "bone_rib_04_L",
+        "bone_sternum_M"
+      ],
+      "joint_or_connection_ids": [
+        "sternocostal_04_L"
+      ],
+      "source_structure_id": "Costal cartilage of fourth rib.l",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 4472,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.04035458341240883,
+        1.2901668548583984,
+        0.09138733893632889
+      ]
+    },
+    {
+      "id": "costal_cartilage_5_L",
+      "name_zh": "左第5肋软骨",
+      "name_en": "Costal cartilage of fifth rib.l",
+      "side": "L",
+      "region": "胸廓",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "costal_cartilage",
+      "bone_ids": [
+        "bone_rib_05_L",
+        "bone_sternum_M"
+      ],
+      "joint_or_connection_ids": [
+        "sternocostal_05_L"
+      ],
+      "source_structure_id": "Costal cartilage of fifth rib.l",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 6492,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.04914090037345886,
+        1.2584227323532104,
+        0.10131243616342545
+      ]
+    },
+    {
+      "id": "costal_cartilage_6_L",
+      "name_zh": "左第6肋软骨",
+      "name_en": "Costal cartilage of sixth rib.l",
+      "side": "L",
+      "region": "胸廓",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "costal_cartilage",
+      "bone_ids": [
+        "bone_rib_06_L",
+        "bone_sternum_M"
+      ],
+      "joint_or_connection_ids": [
+        "sternocostal_06_L"
+      ],
+      "source_structure_id": "Costal cartilage of sixth rib.l",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 8120,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.056821562349796295,
+        1.228595495223999,
+        0.10303127765655518
+      ]
+    },
+    {
+      "id": "costal_cartilage_7_L",
+      "name_zh": "左第7肋软骨",
+      "name_en": "Costal cartilage of seventh rib.l",
+      "side": "L",
+      "region": "胸廓",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "costal_cartilage",
+      "bone_ids": [
+        "bone_rib_07_L",
+        "bone_sternum_M"
+      ],
+      "joint_or_connection_ids": [
+        "sternocostal_07_L"
+      ],
+      "source_structure_id": "Costal cartilage of seventh rib.l",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 13764,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.052780650556087494,
+        1.2048356533050537,
+        0.10076868534088135
+      ]
+    },
+    {
+      "id": "costal_cartilage_8_L",
+      "name_zh": "左第8肋软骨",
+      "name_en": "Costal cartilage of eighth rib.l",
+      "side": "L",
+      "region": "胸廓",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "costal_cartilage",
+      "bone_ids": [
+        "bone_rib_08_L",
+        "bone_rib_07_L"
+      ],
+      "joint_or_connection_ids": [
+        "costal_arch_08_L"
+      ],
+      "source_structure_id": "Costal cartilage of eighth rib.l",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 2624,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.07281790673732758,
+        1.1547930240631104,
+        0.09150449186563492
+      ]
+    },
+    {
+      "id": "costal_cartilage_9_L",
+      "name_zh": "左第9肋软骨",
+      "name_en": "Costal cartilage of ninth rib.l",
+      "side": "L",
+      "region": "胸廓",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "costal_cartilage",
+      "bone_ids": [
+        "bone_rib_09_L",
+        "bone_rib_08_L"
+      ],
+      "joint_or_connection_ids": [
+        "costal_arch_09_L"
+      ],
+      "source_structure_id": "Costal cartilage of ninth rib.l",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 1964,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.09647465497255325,
+        1.112641453742981,
+        0.07071864604949951
+      ]
+    },
+    {
+      "id": "costal_cartilage_10_L",
+      "name_zh": "左第10肋软骨",
+      "name_en": "Costal cartilage of tenth rib.l",
+      "side": "L",
+      "region": "胸廓",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "costal_cartilage",
+      "bone_ids": [
+        "bone_rib_10_L",
+        "bone_rib_09_L"
+      ],
+      "joint_or_connection_ids": [
+        "costal_arch_10_L"
+      ],
+      "source_structure_id": "Costal cartilage of tenth rib.l",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 1524,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.10586605221033096,
+        1.080370306968689,
+        0.051409002393484116
+      ]
+    },
+    {
+      "id": "costal_cartilage_1_R",
+      "name_zh": "右第1肋软骨",
+      "name_en": "Costal cartilage of first rib.r",
+      "side": "R",
+      "region": "胸廓",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "costal_cartilage",
+      "bone_ids": [
+        "bone_rib_01_R",
+        "bone_sternum_M"
+      ],
+      "joint_or_connection_ids": [
+        "sternocostal_01_R"
+      ],
+      "source_structure_id": "Costal cartilage of first rib.r",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 2772,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.0362841859459877,
+        1.3889189958572388,
+        0.03841875493526459
+      ]
+    },
+    {
+      "id": "costal_cartilage_2_R",
+      "name_zh": "右第2肋软骨",
+      "name_en": "Costal cartilage of second rib.r",
+      "side": "R",
+      "region": "胸廓",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "costal_cartilage",
+      "bone_ids": [
+        "bone_rib_02_R",
+        "bone_sternum_M"
+      ],
+      "joint_or_connection_ids": [
+        "sternocostal_02_R"
+      ],
+      "source_structure_id": "Costal cartilage of second rib.r",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 3408,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.02731100283563137,
+        1.3504934310913086,
+        0.07098817080259323
+      ]
+    },
+    {
+      "id": "costal_cartilage_3_R",
+      "name_zh": "右第3肋软骨",
+      "name_en": "Costal cartilage of third rib.r",
+      "side": "R",
+      "region": "胸廓",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "costal_cartilage",
+      "bone_ids": [
+        "bone_rib_03_R",
+        "bone_sternum_M"
+      ],
+      "joint_or_connection_ids": [
+        "sternocostal_03_R"
+      ],
+      "source_structure_id": "Costal cartilage of third rib.r",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 3600,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.031293220818042755,
+        1.3204127550125122,
+        0.08050800859928131
+      ]
+    },
+    {
+      "id": "costal_cartilage_4_R",
+      "name_zh": "右第4肋软骨",
+      "name_en": "Costal cartilage of fourth rib.r",
+      "side": "R",
+      "region": "胸廓",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "costal_cartilage",
+      "bone_ids": [
+        "bone_rib_04_R",
+        "bone_sternum_M"
+      ],
+      "joint_or_connection_ids": [
+        "sternocostal_04_R"
+      ],
+      "source_structure_id": "Costal cartilage of fourth rib.r",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 4472,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.04035458341240883,
+        1.2901668548583984,
+        0.09138733893632889
+      ]
+    },
+    {
+      "id": "costal_cartilage_5_R",
+      "name_zh": "右第5肋软骨",
+      "name_en": "Costal cartilage of fifth rib.r",
+      "side": "R",
+      "region": "胸廓",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "costal_cartilage",
+      "bone_ids": [
+        "bone_rib_05_R",
+        "bone_sternum_M"
+      ],
+      "joint_or_connection_ids": [
+        "sternocostal_05_R"
+      ],
+      "source_structure_id": "Costal cartilage of fifth rib.r",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 6492,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.04914090037345886,
+        1.2584227323532104,
+        0.10131243616342545
+      ]
+    },
+    {
+      "id": "costal_cartilage_6_R",
+      "name_zh": "右第6肋软骨",
+      "name_en": "Costal cartilage of sixth rib.r",
+      "side": "R",
+      "region": "胸廓",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "costal_cartilage",
+      "bone_ids": [
+        "bone_rib_06_R",
+        "bone_sternum_M"
+      ],
+      "joint_or_connection_ids": [
+        "sternocostal_06_R"
+      ],
+      "source_structure_id": "Costal cartilage of sixth rib.r",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 8120,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.056821562349796295,
+        1.228595495223999,
+        0.10303127765655518
+      ]
+    },
+    {
+      "id": "costal_cartilage_7_R",
+      "name_zh": "右第7肋软骨",
+      "name_en": "Costal cartilage of seventh rib.r",
+      "side": "R",
+      "region": "胸廓",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "costal_cartilage",
+      "bone_ids": [
+        "bone_rib_07_R",
+        "bone_sternum_M"
+      ],
+      "joint_or_connection_ids": [
+        "sternocostal_07_R"
+      ],
+      "source_structure_id": "Costal cartilage of seventh rib.r",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 13764,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.052780650556087494,
+        1.2048356533050537,
+        0.10076868534088135
+      ]
+    },
+    {
+      "id": "costal_cartilage_8_R",
+      "name_zh": "右第8肋软骨",
+      "name_en": "Costal cartilage of eighth rib.r",
+      "side": "R",
+      "region": "胸廓",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "costal_cartilage",
+      "bone_ids": [
+        "bone_rib_08_R",
+        "bone_rib_07_R"
+      ],
+      "joint_or_connection_ids": [
+        "costal_arch_08_R"
+      ],
+      "source_structure_id": "Costal cartilage of eighth rib.r",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 2624,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.07281790673732758,
+        1.1547930240631104,
+        0.09150449186563492
+      ]
+    },
+    {
+      "id": "costal_cartilage_9_R",
+      "name_zh": "右第9肋软骨",
+      "name_en": "Costal cartilage of ninth rib.r",
+      "side": "R",
+      "region": "胸廓",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "costal_cartilage",
+      "bone_ids": [
+        "bone_rib_09_R",
+        "bone_rib_08_R"
+      ],
+      "joint_or_connection_ids": [
+        "costal_arch_09_R"
+      ],
+      "source_structure_id": "Costal cartilage of ninth rib.r",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 1964,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.09647465497255325,
+        1.112641453742981,
+        0.07071864604949951
+      ]
+    },
+    {
+      "id": "costal_cartilage_10_R",
+      "name_zh": "右第10肋软骨",
+      "name_en": "Costal cartilage of tenth rib.r",
+      "side": "R",
+      "region": "胸廓",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "costal_cartilage",
+      "bone_ids": [
+        "bone_rib_10_R",
+        "bone_rib_09_R"
+      ],
+      "joint_or_connection_ids": [
+        "costal_arch_10_R"
+      ],
+      "source_structure_id": "Costal cartilage of tenth rib.r",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 1524,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.10586605221033096,
+        1.080370306968689,
+        0.051409002393484116
+      ]
+    },
+    {
+      "id": "tmj_disc_L",
+      "name_zh": "左颞下颌关节盘",
+      "name_en": "Articular disc of temporomandibular joint.l",
+      "side": "L",
+      "region": "颅骨",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "articular_disc",
+      "bone_ids": [
+        "bone_temporal_L",
+        "bone_mandible_M"
+      ],
+      "joint_or_connection_ids": [
+        "tmj_L"
+      ],
+      "source_structure_id": "Articular disc of temporomandibular joint.l",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 288,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.04399941489100456,
+        1.5754129886627197,
+        0.005954165011644363
+      ]
+    },
+    {
+      "id": "sc_disc_L",
+      "name_zh": "左胸锁关节盘",
+      "name_en": "Articular disc of sternoclavicular joint.l",
+      "side": "L",
+      "region": "胸廓",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "articular_disc",
+      "bone_ids": [
+        "bone_sternum_M",
+        "bone_clavicle_L"
+      ],
+      "joint_or_connection_ids": [
+        "sternoclavicular_L"
+      ],
+      "source_structure_id": "Articular disc of sternoclavicular joint.l",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 176,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.016658373177051544,
+        1.3994777202606201,
+        0.03947009518742561
+      ]
+    },
+    {
+      "id": "ac_disc_L",
+      "name_zh": "左肩锁关节盘候选",
+      "name_en": "Articular disc of acromioclavicular joint.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "variant_articular_disc",
+      "bone_ids": [
+        "bone_clavicle_L",
+        "bone_scapula_L"
+      ],
+      "joint_or_connection_ids": [
+        "acromioclavicular_L"
+      ],
+      "source_structure_id": "Articular disc of acromioclavicular joint.l",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 176,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.150850310921669,
+        1.4154717922210693,
+        -0.03834645450115204
+      ]
+    },
+    {
+      "id": "glenoid_labrum_L",
+      "name_zh": "左肩关节盂唇",
+      "name_en": "Glenoid labrum.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "labrum",
+      "bone_ids": [
+        "bone_scapula_L",
+        "bone_humerus_L"
+      ],
+      "joint_or_connection_ids": [
+        "glenohumeral_L"
+      ],
+      "source_structure_id": "Glenoid labrum.l",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 848,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.14818954467773438,
+        1.3782391548156738,
+        -0.034364283084869385
+      ]
+    },
+    {
+      "id": "tfcc_disc_L",
+      "name_zh": "左腕三角纤维软骨复合体—关节盘",
+      "name_en": "Articular disc of distal radio-ulnar joint.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "articular_disc",
+      "bone_ids": [
+        "bone_radius_L",
+        "bone_ulna_L"
+      ],
+      "joint_or_connection_ids": [
+        "distal_radioulnar_L"
+      ],
+      "source_structure_id": "Articular disc of distal radio-ulnar joint.l",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 28,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.2526417374610901,
+        0.861739456653595,
+        0.014260085299611092
+      ]
+    },
+    {
+      "id": "acetabular_labrum_L",
+      "name_zh": "左髋臼唇",
+      "name_en": "Acetabular labrum.l",
+      "side": "L",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "labrum",
+      "bone_ids": [
+        "bone_hip_L",
+        "bone_femur_L"
+      ],
+      "joint_or_connection_ids": [
+        "hip_L"
+      ],
+      "source_structure_id": "Acetabular labrum.l",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 1408,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.0846511572599411,
+        0.8635421395301819,
+        -0.005490183364599943
+      ]
+    },
+    {
+      "id": "medial_meniscus_L",
+      "name_zh": "左膝内侧半月板",
+      "name_en": "Medial meniscus.l",
+      "side": "L",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "meniscus",
+      "bone_ids": [
+        "bone_femur_L",
+        "bone_tibia_L"
+      ],
+      "joint_or_connection_ids": [
+        "tibiofemoral_L"
+      ],
+      "source_structure_id": "Medial meniscus.l",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 284,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.05295029282569885,
+        0.4269410967826843,
+        -0.038139332085847855
+      ]
+    },
+    {
+      "id": "lateral_meniscus_L",
+      "name_zh": "左膝外侧半月板",
+      "name_en": "Lateral meniscus.l",
+      "side": "L",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "meniscus",
+      "bone_ids": [
+        "bone_femur_L",
+        "bone_tibia_L"
+      ],
+      "joint_or_connection_ids": [
+        "tibiofemoral_L"
+      ],
+      "source_structure_id": "Lateral meniscus.l",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 468,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.09439261257648468,
+        0.4313402473926544,
+        -0.02671230025589466
+      ]
+    },
+    {
+      "id": "tmj_disc_R",
+      "name_zh": "右颞下颌关节盘",
+      "name_en": "Articular disc of temporomandibular joint.r",
+      "side": "R",
+      "region": "颅骨",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "articular_disc",
+      "bone_ids": [
+        "bone_temporal_R",
+        "bone_mandible_M"
+      ],
+      "joint_or_connection_ids": [
+        "tmj_R"
+      ],
+      "source_structure_id": "Articular disc of temporomandibular joint.r",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 288,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.04399944096803665,
+        1.5754129886627197,
+        0.005954165011644363
+      ]
+    },
+    {
+      "id": "sc_disc_R",
+      "name_zh": "右胸锁关节盘",
+      "name_en": "Articular disc of sternoclavicular joint.r",
+      "side": "R",
+      "region": "胸廓",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "articular_disc",
+      "bone_ids": [
+        "bone_sternum_M",
+        "bone_clavicle_R"
+      ],
+      "joint_or_connection_ids": [
+        "sternoclavicular_R"
+      ],
+      "source_structure_id": "Articular disc of sternoclavicular joint.r",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 176,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.01665842905640602,
+        1.3994777202606201,
+        0.03947009518742561
+      ]
+    },
+    {
+      "id": "ac_disc_R",
+      "name_zh": "右肩锁关节盘候选",
+      "name_en": "Articular disc of acromioclavicular joint.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "variant_articular_disc",
+      "bone_ids": [
+        "bone_clavicle_R",
+        "bone_scapula_R"
+      ],
+      "joint_or_connection_ids": [
+        "acromioclavicular_R"
+      ],
+      "source_structure_id": "Articular disc of acromioclavicular joint.r",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 176,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.15085037052631378,
+        1.4154717922210693,
+        -0.03834645450115204
+      ]
+    },
+    {
+      "id": "glenoid_labrum_R",
+      "name_zh": "右肩关节盂唇",
+      "name_en": "Glenoid labrum.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "labrum",
+      "bone_ids": [
+        "bone_scapula_R",
+        "bone_humerus_R"
+      ],
+      "joint_or_connection_ids": [
+        "glenohumeral_R"
+      ],
+      "source_structure_id": "Glenoid labrum.r",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 848,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.14818964898586273,
+        1.3782391548156738,
+        -0.034364283084869385
+      ]
+    },
+    {
+      "id": "tfcc_disc_R",
+      "name_zh": "右腕三角纤维软骨复合体—关节盘",
+      "name_en": "Articular disc of distal radio-ulnar joint.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "articular_disc",
+      "bone_ids": [
+        "bone_radius_R",
+        "bone_ulna_R"
+      ],
+      "joint_or_connection_ids": [
+        "distal_radioulnar_R"
+      ],
+      "source_structure_id": "Articular disc of distal radio-ulnar joint.r",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 28,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.25264182686805725,
+        0.861739456653595,
+        0.014260085299611092
+      ]
+    },
+    {
+      "id": "acetabular_labrum_R",
+      "name_zh": "右髋臼唇",
+      "name_en": "Acetabular labrum.r",
+      "side": "R",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "labrum",
+      "bone_ids": [
+        "bone_hip_R",
+        "bone_femur_R"
+      ],
+      "joint_or_connection_ids": [
+        "hip_R"
+      ],
+      "source_structure_id": "Acetabular labrum.r",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 1408,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.08465113490819931,
+        0.8635421395301819,
+        -0.005490183364599943
+      ]
+    },
+    {
+      "id": "medial_meniscus_R",
+      "name_zh": "右膝内侧半月板",
+      "name_en": "Medial meniscus.r",
+      "side": "R",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "meniscus",
+      "bone_ids": [
+        "bone_femur_R",
+        "bone_tibia_R"
+      ],
+      "joint_or_connection_ids": [
+        "tibiofemoral_R"
+      ],
+      "source_structure_id": "Medial meniscus.r",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 284,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.05295029282569885,
+        0.4269410967826843,
+        -0.038139332085847855
+      ]
+    },
+    {
+      "id": "lateral_meniscus_R",
+      "name_zh": "右膝外侧半月板",
+      "name_en": "Lateral meniscus.r",
+      "side": "R",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "meniscus",
+      "bone_ids": [
+        "bone_femur_R",
+        "bone_tibia_R"
+      ],
+      "joint_or_connection_ids": [
+        "tibiofemoral_R"
+      ],
+      "source_structure_id": "Lateral meniscus.r",
+      "source_dataset": "Z-Anatomy 原配关节组织候选",
+      "triangles": 468,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.09439261257648468,
+        0.4313402473926544,
+        -0.02671230025589466
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "id": "nucleus_C2-C3",
+      "source_object": "Nucleus pulposus C2-C3",
+      "reason": "whole_disc_already_contains_nucleus_volume"
+    },
+    {
+      "id": "nucleus_C3-C4",
+      "source_object": "Nucleus pulposus C3-C4",
+      "reason": "whole_disc_already_contains_nucleus_volume"
+    },
+    {
+      "id": "nucleus_C4-C5",
+      "source_object": "Nucleus pulposus C4-C5",
+      "reason": "whole_disc_already_contains_nucleus_volume"
+    },
+    {
+      "id": "nucleus_C5-C6",
+      "source_object": "Nucleus pulposus C5-C6",
+      "reason": "whole_disc_already_contains_nucleus_volume"
+    },
+    {
+      "id": "nucleus_C6-C7",
+      "source_object": "Nucleus pulposus C6-C7",
+      "reason": "whole_disc_already_contains_nucleus_volume"
+    },
+    {
+      "id": "nucleus_C7-T1",
+      "source_object": "Nucleus pulposus C7-T1",
+      "reason": "whole_disc_already_contains_nucleus_volume"
+    },
+    {
+      "id": "nucleus_T1-T2",
+      "source_object": "Nucleus pulposus T1-T2",
+      "reason": "whole_disc_already_contains_nucleus_volume"
+    },
+    {
+      "id": "nucleus_T2-T3",
+      "source_object": "Nucleus pulposus T2-T3",
+      "reason": "whole_disc_already_contains_nucleus_volume"
+    },
+    {
+      "id": "nucleus_T3-T4",
+      "source_object": "Nucleus pulposus T3-T4",
+      "reason": "whole_disc_already_contains_nucleus_volume"
+    },
+    {
+      "id": "nucleus_T4-T5",
+      "source_object": "Nucleus pulposus T4-T5",
+      "reason": "whole_disc_already_contains_nucleus_volume"
+    },
+    {
+      "id": "nucleus_T5-T6",
+      "source_object": "Nucleus pulposus T5-T6",
+      "reason": "whole_disc_already_contains_nucleus_volume"
+    },
+    {
+      "id": "nucleus_T6-T7",
+      "source_object": "Nucleus pulposus T6-T7",
+      "reason": "whole_disc_already_contains_nucleus_volume"
+    },
+    {
+      "id": "nucleus_T7-T8",
+      "source_object": "Nucleus pulposus T7-T8",
+      "reason": "whole_disc_already_contains_nucleus_volume"
+    },
+    {
+      "id": "nucleus_T8-T9",
+      "source_object": "Nucleus pulposus T8-T9",
+      "reason": "whole_disc_already_contains_nucleus_volume"
+    },
+    {
+      "id": "nucleus_T9-T10",
+      "source_object": "Nucleus pulposus T9-T10",
+      "reason": "whole_disc_already_contains_nucleus_volume"
+    },
+    {
+      "id": "nucleus_T10-T11",
+      "source_object": "Nucleus pulposus T10-T11",
+      "reason": "whole_disc_already_contains_nucleus_volume"
+    },
+    {
+      "id": "nucleus_T11-T12",
+      "source_object": "Nucleus pulposus T11-T12",
+      "reason": "whole_disc_already_contains_nucleus_volume"
+    },
+    {
+      "id": "nucleus_T12-L1",
+      "source_object": "Nucleus pulposus T12-L1",
+      "reason": "whole_disc_already_contains_nucleus_volume"
+    },
+    {
+      "id": "disc_L1-L2",
+      "source_object": "Intervertebral disc L1-L2",
+      "reason": "nonmanifold_geometry_pending_repair"
+    },
+    {
+      "id": "nucleus_L1-L2",
+      "source_object": "Nucleus pulposus L1-L2",
+      "reason": "whole_disc_already_contains_nucleus_volume"
+    },
+    {
+      "id": "nucleus_L2-L3",
+      "source_object": "Nucleus pulposus L2-L3",
+      "reason": "whole_disc_already_contains_nucleus_volume"
+    },
+    {
+      "id": "nucleus_L3-L4",
+      "source_object": "Nucleus pulposus L3-L4",
+      "reason": "whole_disc_already_contains_nucleus_volume"
+    },
+    {
+      "id": "nucleus_L4-L5",
+      "source_object": "Nucleus pulposus L4-L5",
+      "reason": "whole_disc_already_contains_nucleus_volume"
+    },
+    {
+      "id": "nucleus_L5-S1",
+      "source_object": "Nucleus pulposus L5-S1",
+      "reason": "whole_disc_already_contains_nucleus_volume"
+    }
+  ],
+  "count": 58
+}

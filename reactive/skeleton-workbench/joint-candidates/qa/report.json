@@ -1,0 +1,39 @@
+{
+  "cases": [
+    {
+      "caseId": "knee",
+      "busy": false,
+      "objects": 6,
+      "visible": [
+        "bone_femur_R",
+        "bone_tibia_R",
+        "Lateral meniscus.r",
+        "Medial meniscus.r"
+      ]
+    },
+    {
+      "caseId": "shoulder",
+      "busy": false,
+      "objects": 5,
+      "visible": [
+        "bone_humerus_R",
+        "bone_scapula_R",
+        "Glenoid labrum.r"
+      ]
+    },
+    {
+      "caseId": "lumbar",
+      "busy": false,
+      "objects": 6,
+      "visible": [
+        "bone_vertebra_L4_M",
+        "bone_vertebra_L5_M",
+        "Intervertebral disc L4-L5"
+      ]
+    }
+  ],
+  "errors": [],
+  "mobile_no_overflow": true,
+  "source_toggle": true,
+  "nucleus_replaces_whole_disc": true
+}

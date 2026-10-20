@@ -1,0 +1,1450 @@
+{
+  "status": "source_native_candidate_not_validated",
+  "source_sha256": "9f08a17ea0115fed80b2a73ecdf0a1bc2ab2f6956f37c593ce23d513ea35afcd",
+  "file": "z-anatomy-candidate/assets/connections.glb",
+  "objects": [
+    {
+      "id": "capsule_tmj_L",
+      "name_zh": "左颞下颌关节囊",
+      "name_en": "Articular capsule of temporomandibular joint.l",
+      "side": "L",
+      "region": "颅骨",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "capsule",
+      "tissue_type": "fibrous_capsule",
+      "bone_ids": [
+        "bone_temporal_L",
+        "bone_mandible_M"
+      ],
+      "joint_or_connection_ids": [
+        "tmj_L"
+      ],
+      "source_structure_id": "Articular capsule of temporomandibular joint.l",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 1800,
+      "note": "保留源坐标。关节囊开口、覆盖边界和韧带附着均待审核；关联骨只用于目录与展示。",
+      "granularity": "individual",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.044642042368650436,
+        1.5714410543441772,
+        0.007456826511770487
+      ]
+    },
+    {
+      "id": "capsule_proximal_tibiofibular_L",
+      "name_zh": "左近侧胫腓关节囊",
+      "name_en": "Articular capsule of superior tibiofibular joint.l",
+      "side": "L",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "capsule",
+      "tissue_type": "fibrous_capsule",
+      "bone_ids": [
+        "bone_tibia_L",
+        "bone_fibula_L"
+      ],
+      "joint_or_connection_ids": [
+        "proximal_tibiofibular_L"
+      ],
+      "source_structure_id": "Articular capsule of superior tibiofibular joint.l",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 560,
+      "note": "保留源坐标。关节囊开口、覆盖边界和韧带附着均待审核；关联骨只用于目录与展示。",
+      "granularity": "individual",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.10940457880496979,
+        0.4059299826622009,
+        -0.03802339360117912
+      ]
+    },
+    {
+      "id": "capsule_sternoclavicular_L",
+      "name_zh": "左胸锁关节囊",
+      "name_en": "Articular capsule of sternoclavicular joint.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "capsule",
+      "tissue_type": "fibrous_capsule",
+      "bone_ids": [
+        "bone_sternum_M",
+        "bone_clavicle_L"
+      ],
+      "joint_or_connection_ids": [
+        "sternoclavicular_L"
+      ],
+      "source_structure_id": "Articular capsule of sternoclavicular joint.l",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 1008,
+      "note": "保留源坐标。关节囊开口、覆盖边界和韧带附着均待审核；关联骨只用于目录与展示。",
+      "granularity": "individual",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.01901250332593918,
+        1.3987830877304077,
+        0.041276756674051285
+      ]
+    },
+    {
+      "id": "capsule_radiocarpal_L",
+      "name_zh": "左桡腕关节囊",
+      "name_en": "Articular capsule of radiocarpal joint.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "capsule",
+      "tissue_type": "fibrous_capsule",
+      "bone_ids": [
+        "bone_radius_L",
+        "bone_scaphoid_L",
+        "bone_lunate_L",
+        "bone_triquetrum_L"
+      ],
+      "joint_or_connection_ids": [
+        "radiocarpal_L"
+      ],
+      "source_structure_id": "Articular capsule of radiocarpal joint.l",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 1342,
+      "note": "保留源坐标。关节囊开口、覆盖边界和韧带附着均待审核；关联骨只用于目录与展示。",
+      "granularity": "individual",
+      "geometry_audit": {
+        "boundary_edges": 186,
+        "nonmanifold_edges": 186,
+        "modifiers": [
+          "SUBSURF"
+        ]
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.2637344002723694,
+        0.8503191471099854,
+        0.019961228594183922
+      ]
+    },
+    {
+      "id": "capsule_tibiofemoral_L",
+      "name_zh": "左膝关节囊",
+      "name_en": "Articular capsule of knee joint.l",
+      "side": "L",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "capsule",
+      "tissue_type": "fibrous_capsule",
+      "bone_ids": [
+        "bone_femur_L",
+        "bone_tibia_L",
+        "bone_patella_L"
+      ],
+      "joint_or_connection_ids": [
+        "tibiofemoral_L",
+        "patellofemoral_L"
+      ],
+      "source_structure_id": "Articular capsule of knee joint.l",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 2944,
+      "note": "保留源坐标。关节囊开口、覆盖边界和韧带附着均待审核；关联骨只用于目录与展示。",
+      "granularity": "individual",
+      "geometry_audit": {
+        "boundary_edges": 404,
+        "nonmanifold_edges": 404,
+        "modifiers": [
+          "SUBSURF"
+        ]
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.07671405375003815,
+        0.44375187158584595,
+        -0.029676737263798714
+      ]
+    },
+    {
+      "id": "capsule_hip_L",
+      "name_zh": "左髋关节囊",
+      "name_en": "Articular capsule of hip joint.l",
+      "side": "L",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "capsule",
+      "tissue_type": "fibrous_capsule",
+      "bone_ids": [
+        "bone_hip_L",
+        "bone_femur_L"
+      ],
+      "joint_or_connection_ids": [
+        "hip_L"
+      ],
+      "source_structure_id": "Articular capsule of hip joint.l",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 1120,
+      "note": "保留源坐标。关节囊开口、覆盖边界和韧带附着均待审核；关联骨只用于目录与展示。",
+      "granularity": "individual",
+      "geometry_audit": {
+        "boundary_edges": 140,
+        "nonmanifold_edges": 140,
+        "modifiers": [
+          "SUBSURF"
+        ]
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.09355995804071426,
+        0.851101815700531,
+        -0.005858052056282759
+      ]
+    },
+    {
+      "id": "capsule_glenohumeral_L",
+      "name_zh": "左盂肱关节囊",
+      "name_en": "Articular capsule of glenohumeral joint.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "capsule",
+      "tissue_type": "fibrous_capsule",
+      "bone_ids": [
+        "bone_scapula_L",
+        "bone_humerus_L"
+      ],
+      "joint_or_connection_ids": [
+        "glenohumeral_L"
+      ],
+      "source_structure_id": "Articular capsule of glenohumeral joint.l",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 3232,
+      "note": "保留源坐标。关节囊开口、覆盖边界和韧带附着均待审核；关联骨只用于目录与展示。",
+      "granularity": "individual",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.16117441654205322,
+        1.3826069831848145,
+        -0.028106771409511566
+      ]
+    },
+    {
+      "id": "capsule_humeroulnar_L",
+      "name_zh": "左肘关节囊",
+      "name_en": "Articular capsule of elbow joint.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "capsule",
+      "tissue_type": "fibrous_capsule",
+      "bone_ids": [
+        "bone_humerus_L",
+        "bone_ulna_L",
+        "bone_radius_L"
+      ],
+      "joint_or_connection_ids": [
+        "humeroulnar_L",
+        "humeroradial_L",
+        "proximal_radioulnar_L"
+      ],
+      "source_structure_id": "Articular capsule of elbow joint.l",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 1728,
+      "note": "保留源坐标。关节囊开口、覆盖边界和韧带附着均待审核；关联骨只用于目录与展示。",
+      "granularity": "individual",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "modifiers": [
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.22012859582901,
+        1.1063450574874878,
+        -0.03675948455929756
+      ]
+    },
+    {
+      "id": "capsule_acromioclavicular_L",
+      "name_zh": "左肩锁关节囊",
+      "name_en": "Articular capsule of acromioclavicular joint.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "capsule",
+      "tissue_type": "fibrous_capsule",
+      "bone_ids": [
+        "bone_clavicle_L",
+        "bone_scapula_L"
+      ],
+      "joint_or_connection_ids": [
+        "acromioclavicular_L"
+      ],
+      "source_structure_id": "Articular capsule of acromioclavicular joint.l",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 1152,
+      "note": "保留源坐标。关节囊开口、覆盖边界和韧带附着均待审核；关联骨只用于目录与展示。",
+      "granularity": "individual",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.1496080905199051,
+        1.4167557954788208,
+        -0.03819669783115387
+      ]
+    },
+    {
+      "id": "capsule_foot_ip_1_proximal_distal_L",
+      "name_zh": "左拇趾趾间关节囊",
+      "name_en": "Articular capsule of interphalangeal joint of great toe.l",
+      "side": "L",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "capsule",
+      "tissue_type": "fibrous_capsule",
+      "bone_ids": [
+        "bone_foot_phalanx_1_proximal_L",
+        "bone_foot_phalanx_1_distal_L"
+      ],
+      "joint_or_connection_ids": [
+        "foot_ip_1_proximal_distal_L"
+      ],
+      "source_structure_id": "Articular capsule of interphalangeal joint of great toe.l",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 384,
+      "note": "保留源坐标。关节囊开口、覆盖边界和韧带附着均待审核；关联骨只用于目录与展示。",
+      "granularity": "individual",
+      "geometry_audit": {
+        "boundary_edges": 48,
+        "nonmanifold_edges": 48,
+        "modifiers": [
+          "SUBSURF"
+        ]
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.07837080210447311,
+        0.015971390530467033,
+        0.10961421579122543
+      ]
+    },
+    {
+      "id": "capsules_hand_proximal_L",
+      "name_zh": "左近侧指间关节囊组",
+      "name_en": "Articular capsules of proximal interphalangeal joints.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "capsule",
+      "tissue_type": "fibrous_capsule",
+      "bone_ids": [
+        "bone_hand_phalanx_2_proximal_L",
+        "bone_hand_phalanx_2_middle_L",
+        "bone_hand_phalanx_3_proximal_L",
+        "bone_hand_phalanx_3_middle_L",
+        "bone_hand_phalanx_4_proximal_L",
+        "bone_hand_phalanx_4_middle_L",
+        "bone_hand_phalanx_5_proximal_L",
+        "bone_hand_phalanx_5_middle_L"
+      ],
+      "joint_or_connection_ids": [
+        "hand_ip_2_proximal_middle_L",
+        "hand_ip_3_proximal_middle_L",
+        "hand_ip_4_proximal_middle_L",
+        "hand_ip_5_proximal_middle_L"
+      ],
+      "source_structure_id": "Articular capsules of proximal interphalangeal joints.l",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 1392,
+      "note": "原始组合网格尚未逐关节拆分；保留源坐标。关节囊开口、覆盖边界和韧带附着均待审核；关联骨只用于目录与展示。",
+      "granularity": "source_group_unsegmented",
+      "geometry_audit": {
+        "boundary_edges": 164,
+        "nonmanifold_edges": 164,
+        "modifiers": [
+          "SUBSURF"
+        ]
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.27129119634628296,
+        0.7404085993766785,
+        0.058385808020830154
+      ]
+    },
+    {
+      "id": "capsules_hand_distal_L",
+      "name_zh": "左远侧指间关节囊组",
+      "name_en": "Articular capsules of distal interphalangeal joints.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "capsule",
+      "tissue_type": "fibrous_capsule",
+      "bone_ids": [
+        "bone_hand_phalanx_2_middle_L",
+        "bone_hand_phalanx_2_distal_L",
+        "bone_hand_phalanx_3_middle_L",
+        "bone_hand_phalanx_3_distal_L",
+        "bone_hand_phalanx_4_middle_L",
+        "bone_hand_phalanx_4_distal_L",
+        "bone_hand_phalanx_5_middle_L",
+        "bone_hand_phalanx_5_distal_L"
+      ],
+      "joint_or_connection_ids": [
+        "hand_ip_2_middle_distal_L",
+        "hand_ip_3_middle_distal_L",
+        "hand_ip_4_middle_distal_L",
+        "hand_ip_5_middle_distal_L"
+      ],
+      "source_structure_id": "Articular capsules of distal interphalangeal joints.l",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 1504,
+      "note": "原始组合网格尚未逐关节拆分；保留源坐标。关节囊开口、覆盖边界和韧带附着均待审核；关联骨只用于目录与展示。",
+      "granularity": "source_group_unsegmented",
+      "geometry_audit": {
+        "boundary_edges": 188,
+        "nonmanifold_edges": 188,
+        "modifiers": [
+          "SUBSURF"
+        ]
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.27973538637161255,
+        0.7316513061523438,
+        0.07341576367616653
+      ]
+    },
+    {
+      "id": "capsules_mcp_L",
+      "name_zh": "左掌指关节囊组",
+      "name_en": "Articular capsules of metacarpophalangeal joints.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "capsule",
+      "tissue_type": "fibrous_capsule",
+      "bone_ids": [
+        "bone_metacarpal_1_L",
+        "bone_hand_phalanx_1_proximal_L",
+        "bone_metacarpal_2_L",
+        "bone_hand_phalanx_2_proximal_L",
+        "bone_metacarpal_3_L",
+        "bone_hand_phalanx_3_proximal_L",
+        "bone_metacarpal_4_L",
+        "bone_hand_phalanx_4_proximal_L",
+        "bone_metacarpal_5_L",
+        "bone_hand_phalanx_5_proximal_L"
+      ],
+      "joint_or_connection_ids": [
+        "mcp_1_L",
+        "mcp_2_L",
+        "mcp_3_L",
+        "mcp_4_L",
+        "mcp_5_L"
+      ],
+      "source_structure_id": "Articular capsules of metacarpophalangeal joints.l",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 1568,
+      "note": "原始组合网格尚未逐关节拆分；保留源坐标。关节囊开口、覆盖边界和韧带附着均待审核；关联骨只用于目录与展示。",
+      "granularity": "source_group_unsegmented",
+      "geometry_audit": {
+        "boundary_edges": 192,
+        "nonmanifold_edges": 192,
+        "modifiers": [
+          "SUBSURF"
+        ]
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.275949627161026,
+        0.7847838997840881,
+        0.04107968881726265
+      ]
+    },
+    {
+      "id": "capsules_foot_proximal_L",
+      "name_zh": "左近侧趾间关节囊组",
+      "name_en": "Articular capsules of proximal interphalangeal joints of foot.l",
+      "side": "L",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "capsule",
+      "tissue_type": "fibrous_capsule",
+      "bone_ids": [
+        "bone_foot_phalanx_2_proximal_L",
+        "bone_foot_phalanx_2_middle_L",
+        "bone_foot_phalanx_3_proximal_L",
+        "bone_foot_phalanx_3_middle_L",
+        "bone_foot_phalanx_4_proximal_L",
+        "bone_foot_phalanx_4_middle_L",
+        "bone_foot_phalanx_5_proximal_L",
+        "bone_foot_phalanx_5_middle_L"
+      ],
+      "joint_or_connection_ids": [
+        "foot_ip_2_proximal_middle_L",
+        "foot_ip_3_proximal_middle_L",
+        "foot_ip_4_proximal_middle_L",
+        "foot_ip_5_proximal_middle_L"
+      ],
+      "source_structure_id": "Articular capsules of proximal interphalangeal joints of foot.l",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 1464,
+      "note": "原始组合网格尚未逐关节拆分；保留源坐标。关节囊开口、覆盖边界和韧带附着均待审核；关联骨只用于目录与展示。",
+      "granularity": "source_group_unsegmented",
+      "geometry_audit": {
+        "boundary_edges": 172,
+        "nonmanifold_edges": 172,
+        "modifiers": [
+          "SUBSURF"
+        ]
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.11964573711156845,
+        0.014970192685723305,
+        0.09732867777347565
+      ]
+    },
+    {
+      "id": "capsules_foot_distal_L",
+      "name_zh": "左远侧趾间关节囊组",
+      "name_en": "Articular capsules of distal interphalangeal joints of foot.l",
+      "side": "L",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "capsule",
+      "tissue_type": "fibrous_capsule",
+      "bone_ids": [
+        "bone_foot_phalanx_2_middle_L",
+        "bone_foot_phalanx_2_distal_L",
+        "bone_foot_phalanx_3_middle_L",
+        "bone_foot_phalanx_3_distal_L",
+        "bone_foot_phalanx_4_middle_L",
+        "bone_foot_phalanx_4_distal_L",
+        "bone_foot_phalanx_5_middle_L",
+        "bone_foot_phalanx_5_distal_L"
+      ],
+      "joint_or_connection_ids": [
+        "foot_ip_2_middle_distal_L",
+        "foot_ip_3_middle_distal_L",
+        "foot_ip_4_middle_distal_L",
+        "foot_ip_5_middle_distal_L"
+      ],
+      "source_structure_id": "Articular capsules of distal interphalangeal joints of foot.l",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 1424,
+      "note": "原始组合网格尚未逐关节拆分；保留源坐标。关节囊开口、覆盖边界和韧带附着均待审核；关联骨只用于目录与展示。",
+      "granularity": "source_group_unsegmented",
+      "geometry_audit": {
+        "boundary_edges": 168,
+        "nonmanifold_edges": 168,
+        "modifiers": [
+          "SUBSURF"
+        ]
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.12401608377695084,
+        0.01313039381057024,
+        0.10804665833711624
+      ]
+    },
+    {
+      "id": "capsules_mtp_L",
+      "name_zh": "左跖趾关节囊组",
+      "name_en": "Articular capsules of metatarsophalangeal joints.l",
+      "side": "L",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "capsule",
+      "tissue_type": "fibrous_capsule",
+      "bone_ids": [
+        "bone_metatarsal_1_L",
+        "bone_foot_phalanx_1_proximal_L",
+        "bone_metatarsal_2_L",
+        "bone_foot_phalanx_2_proximal_L",
+        "bone_metatarsal_3_L",
+        "bone_foot_phalanx_3_proximal_L",
+        "bone_metatarsal_4_L",
+        "bone_foot_phalanx_4_proximal_L",
+        "bone_metatarsal_5_L",
+        "bone_foot_phalanx_5_proximal_L"
+      ],
+      "joint_or_connection_ids": [
+        "mtp_1_L",
+        "mtp_2_L",
+        "mtp_3_L",
+        "mtp_4_L",
+        "mtp_5_L"
+      ],
+      "source_structure_id": "Articular capsules of metatarsophalangeal joints.l",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 1752,
+      "note": "原始组合网格尚未逐关节拆分；保留源坐标。关节囊开口、覆盖边界和韧带附着均待审核；关联骨只用于目录与展示。",
+      "granularity": "source_group_unsegmented",
+      "geometry_audit": {
+        "boundary_edges": 216,
+        "nonmanifold_edges": 216,
+        "modifiers": [
+          "SUBSURF"
+        ]
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.10365577042102814,
+        0.019567321985960007,
+        0.0711812824010849
+      ]
+    },
+    {
+      "id": "ligament_annular_radius_L",
+      "name_zh": "左桡骨环状韧带",
+      "name_en": "Annular ligament of radius.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_radius_L",
+        "bone_ulna_L"
+      ],
+      "joint_or_connection_ids": [
+        "proximal_radioulnar_L"
+      ],
+      "source_structure_id": "Annular ligament of radius.l",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 376,
+      "note": "保留源坐标。关节囊开口、覆盖边界和韧带附着均待审核；关联骨只用于目录与展示。",
+      "granularity": "individual",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.24047286808490753,
+        1.0829628705978394,
+        -0.030769092962145805
+      ]
+    },
+    {
+      "id": "capsule_tmj_R",
+      "name_zh": "右颞下颌关节囊",
+      "name_en": "Articular capsule of temporomandibular joint.r",
+      "side": "R",
+      "region": "颅骨",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "capsule",
+      "tissue_type": "fibrous_capsule",
+      "bone_ids": [
+        "bone_temporal_R",
+        "bone_mandible_M"
+      ],
+      "joint_or_connection_ids": [
+        "tmj_R"
+      ],
+      "source_structure_id": "Articular capsule of temporomandibular joint.r",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 1800,
+      "note": "保留源坐标。关节囊开口、覆盖边界和韧带附着均待审核；关联骨只用于目录与展示。",
+      "granularity": "individual",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.04464206099510193,
+        1.5714410543441772,
+        0.007456826511770487
+      ]
+    },
+    {
+      "id": "capsule_proximal_tibiofibular_R",
+      "name_zh": "右近侧胫腓关节囊",
+      "name_en": "Articular capsule of superior tibiofibular joint.r",
+      "side": "R",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "capsule",
+      "tissue_type": "fibrous_capsule",
+      "bone_ids": [
+        "bone_tibia_R",
+        "bone_fibula_R"
+      ],
+      "joint_or_connection_ids": [
+        "proximal_tibiofibular_R"
+      ],
+      "source_structure_id": "Articular capsule of superior tibiofibular joint.r",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 560,
+      "note": "保留源坐标。关节囊开口、覆盖边界和韧带附着均待审核；关联骨只用于目录与展示。",
+      "granularity": "individual",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.10940461605787277,
+        0.4059299826622009,
+        -0.03802339360117912
+      ]
+    },
+    {
+      "id": "capsule_sternoclavicular_R",
+      "name_zh": "右胸锁关节囊",
+      "name_en": "Articular capsule of sternoclavicular joint.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "capsule",
+      "tissue_type": "fibrous_capsule",
+      "bone_ids": [
+        "bone_sternum_M",
+        "bone_clavicle_R"
+      ],
+      "joint_or_connection_ids": [
+        "sternoclavicular_R"
+      ],
+      "source_structure_id": "Articular capsule of sternoclavicular joint.r",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 1008,
+      "note": "保留源坐标。关节囊开口、覆盖边界和韧带附着均待审核；关联骨只用于目录与展示。",
+      "granularity": "individual",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.019012555480003357,
+        1.3987830877304077,
+        0.041276756674051285
+      ]
+    },
+    {
+      "id": "capsule_radiocarpal_R",
+      "name_zh": "右桡腕关节囊",
+      "name_en": "Articular capsule of radiocarpal joint.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "capsule",
+      "tissue_type": "fibrous_capsule",
+      "bone_ids": [
+        "bone_radius_R",
+        "bone_scaphoid_R",
+        "bone_lunate_R",
+        "bone_triquetrum_R"
+      ],
+      "joint_or_connection_ids": [
+        "radiocarpal_R"
+      ],
+      "source_structure_id": "Articular capsule of radiocarpal joint.r",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 1342,
+      "note": "保留源坐标。关节囊开口、覆盖边界和韧带附着均待审核；关联骨只用于目录与展示。",
+      "granularity": "individual",
+      "geometry_audit": {
+        "boundary_edges": 186,
+        "nonmanifold_edges": 186,
+        "modifiers": [
+          "SUBSURF"
+        ]
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.26373448967933655,
+        0.8503191471099854,
+        0.01996123045682907
+      ]
+    },
+    {
+      "id": "capsule_tibiofemoral_R",
+      "name_zh": "右膝关节囊",
+      "name_en": "Articular capsule of knee joint.r",
+      "side": "R",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "capsule",
+      "tissue_type": "fibrous_capsule",
+      "bone_ids": [
+        "bone_femur_R",
+        "bone_tibia_R",
+        "bone_patella_R"
+      ],
+      "joint_or_connection_ids": [
+        "tibiofemoral_R",
+        "patellofemoral_R"
+      ],
+      "source_structure_id": "Articular capsule of knee joint.r",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 2944,
+      "note": "保留源坐标。关节囊开口、覆盖边界和韧带附着均待审核；关联骨只用于目录与展示。",
+      "granularity": "individual",
+      "geometry_audit": {
+        "boundary_edges": 404,
+        "nonmanifold_edges": 404,
+        "modifiers": [
+          "SUBSURF"
+        ]
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.07671405375003815,
+        0.44375187158584595,
+        -0.029676737263798714
+      ]
+    },
+    {
+      "id": "capsule_hip_R",
+      "name_zh": "右髋关节囊",
+      "name_en": "Articular capsule of hip joint.r",
+      "side": "R",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "capsule",
+      "tissue_type": "fibrous_capsule",
+      "bone_ids": [
+        "bone_hip_R",
+        "bone_femur_R"
+      ],
+      "joint_or_connection_ids": [
+        "hip_R"
+      ],
+      "source_structure_id": "Articular capsule of hip joint.r",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 1120,
+      "note": "保留源坐标。关节囊开口、覆盖边界和韧带附着均待审核；关联骨只用于目录与展示。",
+      "granularity": "individual",
+      "geometry_audit": {
+        "boundary_edges": 140,
+        "nonmanifold_edges": 140,
+        "modifiers": [
+          "SUBSURF"
+        ]
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.09355991333723068,
+        0.851101815700531,
+        -0.005858052056282759
+      ]
+    },
+    {
+      "id": "capsule_glenohumeral_R",
+      "name_zh": "右盂肱关节囊",
+      "name_en": "Articular capsule of glenohumeral joint.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "capsule",
+      "tissue_type": "fibrous_capsule",
+      "bone_ids": [
+        "bone_scapula_R",
+        "bone_humerus_R"
+      ],
+      "joint_or_connection_ids": [
+        "glenohumeral_R"
+      ],
+      "source_structure_id": "Articular capsule of glenohumeral joint.r",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 3232,
+      "note": "保留源坐标。关节囊开口、覆盖边界和韧带附着均待审核；关联骨只用于目录与展示。",
+      "granularity": "individual",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.161174476146698,
+        1.3826069831848145,
+        -0.028106771409511566
+      ]
+    },
+    {
+      "id": "capsule_humeroulnar_R",
+      "name_zh": "右肘关节囊",
+      "name_en": "Articular capsule of elbow joint.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "capsule",
+      "tissue_type": "fibrous_capsule",
+      "bone_ids": [
+        "bone_humerus_R",
+        "bone_ulna_R",
+        "bone_radius_R"
+      ],
+      "joint_or_connection_ids": [
+        "humeroulnar_R",
+        "humeroradial_R",
+        "proximal_radioulnar_R"
+      ],
+      "source_structure_id": "Articular capsule of elbow joint.r",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 1728,
+      "note": "保留源坐标。关节囊开口、覆盖边界和韧带附着均待审核；关联骨只用于目录与展示。",
+      "granularity": "individual",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "modifiers": [
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.22012865543365479,
+        1.1063450574874878,
+        -0.03675948455929756
+      ]
+    },
+    {
+      "id": "capsule_acromioclavicular_R",
+      "name_zh": "右肩锁关节囊",
+      "name_en": "Articular capsule of acromioclavicular joint.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "capsule",
+      "tissue_type": "fibrous_capsule",
+      "bone_ids": [
+        "bone_clavicle_R",
+        "bone_scapula_R"
+      ],
+      "joint_or_connection_ids": [
+        "acromioclavicular_R"
+      ],
+      "source_structure_id": "Articular capsule of acromioclavicular joint.r",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 1152,
+      "note": "保留源坐标。关节囊开口、覆盖边界和韧带附着均待审核；关联骨只用于目录与展示。",
+      "granularity": "individual",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.14960819482803345,
+        1.4167557954788208,
+        -0.03819669783115387
+      ]
+    },
+    {
+      "id": "capsule_foot_ip_1_proximal_distal_R",
+      "name_zh": "右拇趾趾间关节囊",
+      "name_en": "Articular capsule of interphalangeal joint of great toe.r",
+      "side": "R",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "capsule",
+      "tissue_type": "fibrous_capsule",
+      "bone_ids": [
+        "bone_foot_phalanx_1_proximal_R",
+        "bone_foot_phalanx_1_distal_R"
+      ],
+      "joint_or_connection_ids": [
+        "foot_ip_1_proximal_distal_R"
+      ],
+      "source_structure_id": "Articular capsule of interphalangeal joint of great toe.r",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 384,
+      "note": "保留源坐标。关节囊开口、覆盖边界和韧带附着均待审核；关联骨只用于目录与展示。",
+      "granularity": "individual",
+      "geometry_audit": {
+        "boundary_edges": 48,
+        "nonmanifold_edges": 48,
+        "modifiers": [
+          "SUBSURF"
+        ]
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.07837081700563431,
+        0.015971390530467033,
+        0.10961421579122543
+      ]
+    },
+    {
+      "id": "capsules_hand_proximal_R",
+      "name_zh": "右近侧指间关节囊组",
+      "name_en": "Articular capsules of proximal interphalangeal joints.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "capsule",
+      "tissue_type": "fibrous_capsule",
+      "bone_ids": [
+        "bone_hand_phalanx_2_proximal_R",
+        "bone_hand_phalanx_2_middle_R",
+        "bone_hand_phalanx_3_proximal_R",
+        "bone_hand_phalanx_3_middle_R",
+        "bone_hand_phalanx_4_proximal_R",
+        "bone_hand_phalanx_4_middle_R",
+        "bone_hand_phalanx_5_proximal_R",
+        "bone_hand_phalanx_5_middle_R"
+      ],
+      "joint_or_connection_ids": [
+        "hand_ip_2_proximal_middle_R",
+        "hand_ip_3_proximal_middle_R",
+        "hand_ip_4_proximal_middle_R",
+        "hand_ip_5_proximal_middle_R"
+      ],
+      "source_structure_id": "Articular capsules of proximal interphalangeal joints.r",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 1392,
+      "note": "原始组合网格尚未逐关节拆分；保留源坐标。关节囊开口、覆盖边界和韧带附着均待审核；关联骨只用于目录与展示。",
+      "granularity": "source_group_unsegmented",
+      "geometry_audit": {
+        "boundary_edges": 164,
+        "nonmanifold_edges": 164,
+        "modifiers": [
+          "SUBSURF"
+        ]
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.27129119634628296,
+        0.7404085993766785,
+        0.058385808020830154
+      ]
+    },
+    {
+      "id": "capsules_hand_distal_R",
+      "name_zh": "右远侧指间关节囊组",
+      "name_en": "Articular capsules of distal interphalangeal joints.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "capsule",
+      "tissue_type": "fibrous_capsule",
+      "bone_ids": [
+        "bone_hand_phalanx_2_middle_R",
+        "bone_hand_phalanx_2_distal_R",
+        "bone_hand_phalanx_3_middle_R",
+        "bone_hand_phalanx_3_distal_R",
+        "bone_hand_phalanx_4_middle_R",
+        "bone_hand_phalanx_4_distal_R",
+        "bone_hand_phalanx_5_middle_R",
+        "bone_hand_phalanx_5_distal_R"
+      ],
+      "joint_or_connection_ids": [
+        "hand_ip_2_middle_distal_R",
+        "hand_ip_3_middle_distal_R",
+        "hand_ip_4_middle_distal_R",
+        "hand_ip_5_middle_distal_R"
+      ],
+      "source_structure_id": "Articular capsules of distal interphalangeal joints.r",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 1504,
+      "note": "原始组合网格尚未逐关节拆分；保留源坐标。关节囊开口、覆盖边界和韧带附着均待审核；关联骨只用于目录与展示。",
+      "granularity": "source_group_unsegmented",
+      "geometry_audit": {
+        "boundary_edges": 188,
+        "nonmanifold_edges": 188,
+        "modifiers": [
+          "SUBSURF"
+        ]
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.2797353267669678,
+        0.7316513061523438,
+        0.07341576367616653
+      ]
+    },
+    {
+      "id": "capsules_mcp_R",
+      "name_zh": "右掌指关节囊组",
+      "name_en": "Articular capsules of metacarpophalangeal joints.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "capsule",
+      "tissue_type": "fibrous_capsule",
+      "bone_ids": [
+        "bone_metacarpal_1_R",
+        "bone_hand_phalanx_1_proximal_R",
+        "bone_metacarpal_2_R",
+        "bone_hand_phalanx_2_proximal_R",
+        "bone_metacarpal_3_R",
+        "bone_hand_phalanx_3_proximal_R",
+        "bone_metacarpal_4_R",
+        "bone_hand_phalanx_4_proximal_R",
+        "bone_metacarpal_5_R",
+        "bone_hand_phalanx_5_proximal_R"
+      ],
+      "joint_or_connection_ids": [
+        "mcp_1_R",
+        "mcp_2_R",
+        "mcp_3_R",
+        "mcp_4_R",
+        "mcp_5_R"
+      ],
+      "source_structure_id": "Articular capsules of metacarpophalangeal joints.r",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 1568,
+      "note": "原始组合网格尚未逐关节拆分；保留源坐标。关节囊开口、覆盖边界和韧带附着均待审核；关联骨只用于目录与展示。",
+      "granularity": "source_group_unsegmented",
+      "geometry_audit": {
+        "boundary_edges": 192,
+        "nonmanifold_edges": 192,
+        "modifiers": [
+          "SUBSURF"
+        ]
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.2759495675563812,
+        0.7847838997840881,
+        0.04107968881726265
+      ]
+    },
+    {
+      "id": "capsules_foot_proximal_R",
+      "name_zh": "右近侧趾间关节囊组",
+      "name_en": "Articular capsules of proximal interphalangeal joints of foot.r",
+      "side": "R",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "capsule",
+      "tissue_type": "fibrous_capsule",
+      "bone_ids": [
+        "bone_foot_phalanx_2_proximal_R",
+        "bone_foot_phalanx_2_middle_R",
+        "bone_foot_phalanx_3_proximal_R",
+        "bone_foot_phalanx_3_middle_R",
+        "bone_foot_phalanx_4_proximal_R",
+        "bone_foot_phalanx_4_middle_R",
+        "bone_foot_phalanx_5_proximal_R",
+        "bone_foot_phalanx_5_middle_R"
+      ],
+      "joint_or_connection_ids": [
+        "foot_ip_2_proximal_middle_R",
+        "foot_ip_3_proximal_middle_R",
+        "foot_ip_4_proximal_middle_R",
+        "foot_ip_5_proximal_middle_R"
+      ],
+      "source_structure_id": "Articular capsules of proximal interphalangeal joints of foot.r",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 1464,
+      "note": "原始组合网格尚未逐关节拆分；保留源坐标。关节囊开口、覆盖边界和韧带附着均待审核；关联骨只用于目录与展示。",
+      "granularity": "source_group_unsegmented",
+      "geometry_audit": {
+        "boundary_edges": 172,
+        "nonmanifold_edges": 172,
+        "modifiers": [
+          "SUBSURF"
+        ]
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.11964577436447144,
+        0.014970192685723305,
+        0.09732867777347565
+      ]
+    },
+    {
+      "id": "capsules_foot_distal_R",
+      "name_zh": "右远侧趾间关节囊组",
+      "name_en": "Articular capsules of distal interphalangeal joints of foot.r",
+      "side": "R",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "capsule",
+      "tissue_type": "fibrous_capsule",
+      "bone_ids": [
+        "bone_foot_phalanx_2_middle_R",
+        "bone_foot_phalanx_2_distal_R",
+        "bone_foot_phalanx_3_middle_R",
+        "bone_foot_phalanx_3_distal_R",
+        "bone_foot_phalanx_4_middle_R",
+        "bone_foot_phalanx_4_distal_R",
+        "bone_foot_phalanx_5_middle_R",
+        "bone_foot_phalanx_5_distal_R"
+      ],
+      "joint_or_connection_ids": [
+        "foot_ip_2_middle_distal_R",
+        "foot_ip_3_middle_distal_R",
+        "foot_ip_4_middle_distal_R",
+        "foot_ip_5_middle_distal_R"
+      ],
+      "source_structure_id": "Articular capsules of distal interphalangeal joints of foot.r",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 1424,
+      "note": "原始组合网格尚未逐关节拆分；保留源坐标。关节囊开口、覆盖边界和韧带附着均待审核；关联骨只用于目录与展示。",
+      "granularity": "source_group_unsegmented",
+      "geometry_audit": {
+        "boundary_edges": 168,
+        "nonmanifold_edges": 168,
+        "modifiers": [
+          "SUBSURF"
+        ]
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.12401608377695084,
+        0.01313039381057024,
+        0.10804665833711624
+      ]
+    },
+    {
+      "id": "capsules_mtp_R",
+      "name_zh": "右跖趾关节囊组",
+      "name_en": "Articular capsules of metatarsophalangeal joints.r",
+      "side": "R",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "capsule",
+      "tissue_type": "fibrous_capsule",
+      "bone_ids": [
+        "bone_metatarsal_1_R",
+        "bone_foot_phalanx_1_proximal_R",
+        "bone_metatarsal_2_R",
+        "bone_foot_phalanx_2_proximal_R",
+        "bone_metatarsal_3_R",
+        "bone_foot_phalanx_3_proximal_R",
+        "bone_metatarsal_4_R",
+        "bone_foot_phalanx_4_proximal_R",
+        "bone_metatarsal_5_R",
+        "bone_foot_phalanx_5_proximal_R"
+      ],
+      "joint_or_connection_ids": [
+        "mtp_1_R",
+        "mtp_2_R",
+        "mtp_3_R",
+        "mtp_4_R",
+        "mtp_5_R"
+      ],
+      "source_structure_id": "Articular capsules of metatarsophalangeal joints.r",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 1752,
+      "note": "原始组合网格尚未逐关节拆分；保留源坐标。关节囊开口、覆盖边界和韧带附着均待审核；关联骨只用于目录与展示。",
+      "granularity": "source_group_unsegmented",
+      "geometry_audit": {
+        "boundary_edges": 216,
+        "nonmanifold_edges": 216,
+        "modifiers": [
+          "SUBSURF"
+        ]
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.10365579277276993,
+        0.019567323848605156,
+        0.0711812824010849
+      ]
+    },
+    {
+      "id": "ligament_annular_radius_R",
+      "name_zh": "右桡骨环状韧带",
+      "name_en": "Annular ligament of radius.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_radius_R",
+        "bone_ulna_R"
+      ],
+      "joint_or_connection_ids": [
+        "proximal_radioulnar_R"
+      ],
+      "source_structure_id": "Annular ligament of radius.r",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 376,
+      "note": "保留源坐标。关节囊开口、覆盖边界和韧带附着均待审核；关联骨只用于目录与展示。",
+      "granularity": "individual",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.24049440026283264,
+        1.0829517841339111,
+        -0.030693447217345238
+      ]
+    },
+    {
+      "id": "pubic_interpubic_disc",
+      "name_zh": "耻骨间盘",
+      "name_en": "Interpubic disc",
+      "side": "M",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "joint",
+      "tissue_type": "fibrocartilaginous_disc",
+      "bone_ids": [
+        "bone_hip_L",
+        "bone_hip_R"
+      ],
+      "joint_or_connection_ids": [
+        "pubic_symphysis"
+      ],
+      "source_structure_id": "Interpubic disc",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 416,
+      "note": "保留源坐标。关节囊开口、覆盖边界和韧带附着均待审核；关联骨只用于目录与展示。",
+      "granularity": "individual",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "modifiers": [
+          "SUBSURF"
+        ]
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        3.020478800408455e-08,
+        0.8437486290931702,
+        0.04244206100702286
+      ]
+    }
+  ],
+  "excluded": [],
+  "count": 35
+}

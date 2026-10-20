@@ -1,0 +1,696 @@
+[
+  {
+    "id": "capsule_tmj_L",
+    "name_zh": "左颞下颌关节囊",
+    "source_object": "Articular capsule of temporomandibular joint.l",
+    "side": "L",
+    "layer": "capsule",
+    "bone_ids": [
+      "bone_temporal_L",
+      "bone_mandible_M"
+    ],
+    "connection_ids": [
+      "tmj_L"
+    ],
+    "granularity": "individual",
+    "status": "mapping_draft_pending_geometry_anatomy_review"
+  },
+  {
+    "id": "capsule_proximal_tibiofibular_L",
+    "name_zh": "左近侧胫腓关节囊",
+    "source_object": "Articular capsule of superior tibiofibular joint.l",
+    "side": "L",
+    "layer": "capsule",
+    "bone_ids": [
+      "bone_tibia_L",
+      "bone_fibula_L"
+    ],
+    "connection_ids": [
+      "proximal_tibiofibular_L"
+    ],
+    "granularity": "individual",
+    "status": "mapping_draft_pending_geometry_anatomy_review"
+  },
+  {
+    "id": "capsule_sternoclavicular_L",
+    "name_zh": "左胸锁关节囊",
+    "source_object": "Articular capsule of sternoclavicular joint.l",
+    "side": "L",
+    "layer": "capsule",
+    "bone_ids": [
+      "bone_sternum_M",
+      "bone_clavicle_L"
+    ],
+    "connection_ids": [
+      "sternoclavicular_L"
+    ],
+    "granularity": "individual",
+    "status": "mapping_draft_pending_geometry_anatomy_review"
+  },
+  {
+    "id": "capsule_radiocarpal_L",
+    "name_zh": "左桡腕关节囊",
+    "source_object": "Articular capsule of radiocarpal joint.l",
+    "side": "L",
+    "layer": "capsule",
+    "bone_ids": [
+      "bone_radius_L",
+      "bone_scaphoid_L",
+      "bone_lunate_L",
+      "bone_triquetrum_L"
+    ],
+    "connection_ids": [
+      "radiocarpal_L"
+    ],
+    "granularity": "individual",
+    "status": "mapping_draft_pending_geometry_anatomy_review"
+  },
+  {
+    "id": "capsule_tibiofemoral_L",
+    "name_zh": "左膝关节囊",
+    "source_object": "Articular capsule of knee joint.l",
+    "side": "L",
+    "layer": "capsule",
+    "bone_ids": [
+      "bone_femur_L",
+      "bone_tibia_L",
+      "bone_patella_L"
+    ],
+    "connection_ids": [
+      "tibiofemoral_L",
+      "patellofemoral_L"
+    ],
+    "granularity": "individual",
+    "status": "mapping_draft_pending_geometry_anatomy_review"
+  },
+  {
+    "id": "capsule_hip_L",
+    "name_zh": "左髋关节囊",
+    "source_object": "Articular capsule of hip joint.l",
+    "side": "L",
+    "layer": "capsule",
+    "bone_ids": [
+      "bone_hip_L",
+      "bone_femur_L"
+    ],
+    "connection_ids": [
+      "hip_L"
+    ],
+    "granularity": "individual",
+    "status": "mapping_draft_pending_geometry_anatomy_review"
+  },
+  {
+    "id": "capsule_glenohumeral_L",
+    "name_zh": "左盂肱关节囊",
+    "source_object": "Articular capsule of glenohumeral joint.l",
+    "side": "L",
+    "layer": "capsule",
+    "bone_ids": [
+      "bone_scapula_L",
+      "bone_humerus_L"
+    ],
+    "connection_ids": [
+      "glenohumeral_L"
+    ],
+    "granularity": "individual",
+    "status": "mapping_draft_pending_geometry_anatomy_review"
+  },
+  {
+    "id": "capsule_humeroulnar_L",
+    "name_zh": "左肘关节囊",
+    "source_object": "Articular capsule of elbow joint.l",
+    "side": "L",
+    "layer": "capsule",
+    "bone_ids": [
+      "bone_humerus_L",
+      "bone_ulna_L",
+      "bone_radius_L"
+    ],
+    "connection_ids": [
+      "humeroulnar_L",
+      "humeroradial_L",
+      "proximal_radioulnar_L"
+    ],
+    "granularity": "individual",
+    "status": "mapping_draft_pending_geometry_anatomy_review"
+  },
+  {
+    "id": "capsule_acromioclavicular_L",
+    "name_zh": "左肩锁关节囊",
+    "source_object": "Articular capsule of acromioclavicular joint.l",
+    "side": "L",
+    "layer": "capsule",
+    "bone_ids": [
+      "bone_clavicle_L",
+      "bone_scapula_L"
+    ],
+    "connection_ids": [
+      "acromioclavicular_L"
+    ],
+    "granularity": "individual",
+    "status": "mapping_draft_pending_geometry_anatomy_review"
+  },
+  {
+    "id": "capsule_foot_ip_1_proximal_distal_L",
+    "name_zh": "左拇趾趾间关节囊",
+    "source_object": "Articular capsule of interphalangeal joint of great toe.l",
+    "side": "L",
+    "layer": "capsule",
+    "bone_ids": [
+      "bone_foot_phalanx_1_proximal_L",
+      "bone_foot_phalanx_1_distal_L"
+    ],
+    "connection_ids": [
+      "foot_ip_1_proximal_distal_L"
+    ],
+    "granularity": "individual",
+    "status": "mapping_draft_pending_geometry_anatomy_review"
+  },
+  {
+    "id": "capsules_hand_proximal_L",
+    "name_zh": "左近侧指间关节囊组",
+    "source_object": "Articular capsules of proximal interphalangeal joints.l",
+    "side": "L",
+    "layer": "capsule",
+    "bone_ids": [
+      "bone_hand_phalanx_2_proximal_L",
+      "bone_hand_phalanx_2_middle_L",
+      "bone_hand_phalanx_3_proximal_L",
+      "bone_hand_phalanx_3_middle_L",
+      "bone_hand_phalanx_4_proximal_L",
+      "bone_hand_phalanx_4_middle_L",
+      "bone_hand_phalanx_5_proximal_L",
+      "bone_hand_phalanx_5_middle_L"
+    ],
+    "connection_ids": [
+      "hand_ip_2_proximal_middle_L",
+      "hand_ip_3_proximal_middle_L",
+      "hand_ip_4_proximal_middle_L",
+      "hand_ip_5_proximal_middle_L"
+    ],
+    "granularity": "source_group_unsegmented",
+    "status": "mapping_draft_pending_geometry_anatomy_review"
+  },
+  {
+    "id": "capsules_hand_distal_L",
+    "name_zh": "左远侧指间关节囊组",
+    "source_object": "Articular capsules of distal interphalangeal joints.l",
+    "side": "L",
+    "layer": "capsule",
+    "bone_ids": [
+      "bone_hand_phalanx_2_middle_L",
+      "bone_hand_phalanx_2_distal_L",
+      "bone_hand_phalanx_3_middle_L",
+      "bone_hand_phalanx_3_distal_L",
+      "bone_hand_phalanx_4_middle_L",
+      "bone_hand_phalanx_4_distal_L",
+      "bone_hand_phalanx_5_middle_L",
+      "bone_hand_phalanx_5_distal_L"
+    ],
+    "connection_ids": [
+      "hand_ip_2_middle_distal_L",
+      "hand_ip_3_middle_distal_L",
+      "hand_ip_4_middle_distal_L",
+      "hand_ip_5_middle_distal_L"
+    ],
+    "granularity": "source_group_unsegmented",
+    "status": "mapping_draft_pending_geometry_anatomy_review"
+  },
+  {
+    "id": "capsules_mcp_L",
+    "name_zh": "左掌指关节囊组",
+    "source_object": "Articular capsules of metacarpophalangeal joints.l",
+    "side": "L",
+    "layer": "capsule",
+    "bone_ids": [
+      "bone_metacarpal_1_L",
+      "bone_hand_phalanx_1_proximal_L",
+      "bone_metacarpal_2_L",
+      "bone_hand_phalanx_2_proximal_L",
+      "bone_metacarpal_3_L",
+      "bone_hand_phalanx_3_proximal_L",
+      "bone_metacarpal_4_L",
+      "bone_hand_phalanx_4_proximal_L",
+      "bone_metacarpal_5_L",
+      "bone_hand_phalanx_5_proximal_L"
+    ],
+    "connection_ids": [
+      "mcp_1_L",
+      "mcp_2_L",
+      "mcp_3_L",
+      "mcp_4_L",
+      "mcp_5_L"
+    ],
+    "granularity": "source_group_unsegmented",
+    "status": "mapping_draft_pending_geometry_anatomy_review"
+  },
+  {
+    "id": "capsules_foot_proximal_L",
+    "name_zh": "左近侧趾间关节囊组",
+    "source_object": "Articular capsules of proximal interphalangeal joints of foot.l",
+    "side": "L",
+    "layer": "capsule",
+    "bone_ids": [
+      "bone_foot_phalanx_2_proximal_L",
+      "bone_foot_phalanx_2_middle_L",
+      "bone_foot_phalanx_3_proximal_L",
+      "bone_foot_phalanx_3_middle_L",
+      "bone_foot_phalanx_4_proximal_L",
+      "bone_foot_phalanx_4_middle_L",
+      "bone_foot_phalanx_5_proximal_L",
+      "bone_foot_phalanx_5_middle_L"
+    ],
+    "connection_ids": [
+      "foot_ip_2_proximal_middle_L",
+      "foot_ip_3_proximal_middle_L",
+      "foot_ip_4_proximal_middle_L",
+      "foot_ip_5_proximal_middle_L"
+    ],
+    "granularity": "source_group_unsegmented",
+    "status": "mapping_draft_pending_geometry_anatomy_review"
+  },
+  {
+    "id": "capsules_foot_distal_L",
+    "name_zh": "左远侧趾间关节囊组",
+    "source_object": "Articular capsules of distal interphalangeal joints of foot.l",
+    "side": "L",
+    "layer": "capsule",
+    "bone_ids": [
+      "bone_foot_phalanx_2_middle_L",
+      "bone_foot_phalanx_2_distal_L",
+      "bone_foot_phalanx_3_middle_L",
+      "bone_foot_phalanx_3_distal_L",
+      "bone_foot_phalanx_4_middle_L",
+      "bone_foot_phalanx_4_distal_L",
+      "bone_foot_phalanx_5_middle_L",
+      "bone_foot_phalanx_5_distal_L"
+    ],
+    "connection_ids": [
+      "foot_ip_2_middle_distal_L",
+      "foot_ip_3_middle_distal_L",
+      "foot_ip_4_middle_distal_L",
+      "foot_ip_5_middle_distal_L"
+    ],
+    "granularity": "source_group_unsegmented",
+    "status": "mapping_draft_pending_geometry_anatomy_review"
+  },
+  {
+    "id": "capsules_mtp_L",
+    "name_zh": "左跖趾关节囊组",
+    "source_object": "Articular capsules of metatarsophalangeal joints.l",
+    "side": "L",
+    "layer": "capsule",
+    "bone_ids": [
+      "bone_metatarsal_1_L",
+      "bone_foot_phalanx_1_proximal_L",
+      "bone_metatarsal_2_L",
+      "bone_foot_phalanx_2_proximal_L",
+      "bone_metatarsal_3_L",
+      "bone_foot_phalanx_3_proximal_L",
+      "bone_metatarsal_4_L",
+      "bone_foot_phalanx_4_proximal_L",
+      "bone_metatarsal_5_L",
+      "bone_foot_phalanx_5_proximal_L"
+    ],
+    "connection_ids": [
+      "mtp_1_L",
+      "mtp_2_L",
+      "mtp_3_L",
+      "mtp_4_L",
+      "mtp_5_L"
+    ],
+    "granularity": "source_group_unsegmented",
+    "status": "mapping_draft_pending_geometry_anatomy_review"
+  },
+  {
+    "id": "ligament_annular_radius_L",
+    "name_zh": "左桡骨环状韧带",
+    "source_object": "Annular ligament of radius.l",
+    "side": "L",
+    "layer": "ligament",
+    "bone_ids": [
+      "bone_radius_L",
+      "bone_ulna_L"
+    ],
+    "connection_ids": [
+      "proximal_radioulnar_L"
+    ],
+    "granularity": "individual",
+    "status": "mapping_draft_pending_geometry_anatomy_review"
+  },
+  {
+    "id": "capsule_tmj_R",
+    "name_zh": "右颞下颌关节囊",
+    "source_object": "Articular capsule of temporomandibular joint.r",
+    "side": "R",
+    "layer": "capsule",
+    "bone_ids": [
+      "bone_temporal_R",
+      "bone_mandible_M"
+    ],
+    "connection_ids": [
+      "tmj_R"
+    ],
+    "granularity": "individual",
+    "status": "mapping_draft_pending_geometry_anatomy_review"
+  },
+  {
+    "id": "capsule_proximal_tibiofibular_R",
+    "name_zh": "右近侧胫腓关节囊",
+    "source_object": "Articular capsule of superior tibiofibular joint.r",
+    "side": "R",
+    "layer": "capsule",
+    "bone_ids": [
+      "bone_tibia_R",
+      "bone_fibula_R"
+    ],
+    "connection_ids": [
+      "proximal_tibiofibular_R"
+    ],
+    "granularity": "individual",
+    "status": "mapping_draft_pending_geometry_anatomy_review"
+  },
+  {
+    "id": "capsule_sternoclavicular_R",
+    "name_zh": "右胸锁关节囊",
+    "source_object": "Articular capsule of sternoclavicular joint.r",
+    "side": "R",
+    "layer": "capsule",
+    "bone_ids": [
+      "bone_sternum_M",
+      "bone_clavicle_R"
+    ],
+    "connection_ids": [
+      "sternoclavicular_R"
+    ],
+    "granularity": "individual",
+    "status": "mapping_draft_pending_geometry_anatomy_review"
+  },
+  {
+    "id": "capsule_radiocarpal_R",
+    "name_zh": "右桡腕关节囊",
+    "source_object": "Articular capsule of radiocarpal joint.r",
+    "side": "R",
+    "layer": "capsule",
+    "bone_ids": [
+      "bone_radius_R",
+      "bone_scaphoid_R",
+      "bone_lunate_R",
+      "bone_triquetrum_R"
+    ],
+    "connection_ids": [
+      "radiocarpal_R"
+    ],
+    "granularity": "individual",
+    "status": "mapping_draft_pending_geometry_anatomy_review"
+  },
+  {
+    "id": "capsule_tibiofemoral_R",
+    "name_zh": "右膝关节囊",
+    "source_object": "Articular capsule of knee joint.r",
+    "side": "R",
+    "layer": "capsule",
+    "bone_ids": [
+      "bone_femur_R",
+      "bone_tibia_R",
+      "bone_patella_R"
+    ],
+    "connection_ids": [
+      "tibiofemoral_R",
+      "patellofemoral_R"
+    ],
+    "granularity": "individual",
+    "status": "mapping_draft_pending_geometry_anatomy_review"
+  },
+  {
+    "id": "capsule_hip_R",
+    "name_zh": "右髋关节囊",
+    "source_object": "Articular capsule of hip joint.r",
+    "side": "R",
+    "layer": "capsule",
+    "bone_ids": [
+      "bone_hip_R",
+      "bone_femur_R"
+    ],
+    "connection_ids": [
+      "hip_R"
+    ],
+    "granularity": "individual",
+    "status": "mapping_draft_pending_geometry_anatomy_review"
+  },
+  {
+    "id": "capsule_glenohumeral_R",
+    "name_zh": "右盂肱关节囊",
+    "source_object": "Articular capsule of glenohumeral joint.r",
+    "side": "R",
+    "layer": "capsule",
+    "bone_ids": [
+      "bone_scapula_R",
+      "bone_humerus_R"
+    ],
+    "connection_ids": [
+      "glenohumeral_R"
+    ],
+    "granularity": "individual",
+    "status": "mapping_draft_pending_geometry_anatomy_review"
+  },
+  {
+    "id": "capsule_humeroulnar_R",
+    "name_zh": "右肘关节囊",
+    "source_object": "Articular capsule of elbow joint.r",
+    "side": "R",
+    "layer": "capsule",
+    "bone_ids": [
+      "bone_humerus_R",
+      "bone_ulna_R",
+      "bone_radius_R"
+    ],
+    "connection_ids": [
+      "humeroulnar_R",
+      "humeroradial_R",
+      "proximal_radioulnar_R"
+    ],
+    "granularity": "individual",
+    "status": "mapping_draft_pending_geometry_anatomy_review"
+  },
+  {
+    "id": "capsule_acromioclavicular_R",
+    "name_zh": "右肩锁关节囊",
+    "source_object": "Articular capsule of acromioclavicular joint.r",
+    "side": "R",
+    "layer": "capsule",
+    "bone_ids": [
+      "bone_clavicle_R",
+      "bone_scapula_R"
+    ],
+    "connection_ids": [
+      "acromioclavicular_R"
+    ],
+    "granularity": "individual",
+    "status": "mapping_draft_pending_geometry_anatomy_review"
+  },
+  {
+    "id": "capsule_foot_ip_1_proximal_distal_R",
+    "name_zh": "右拇趾趾间关节囊",
+    "source_object": "Articular capsule of interphalangeal joint of great toe.r",
+    "side": "R",
+    "layer": "capsule",
+    "bone_ids": [
+      "bone_foot_phalanx_1_proximal_R",
+      "bone_foot_phalanx_1_distal_R"
+    ],
+    "connection_ids": [
+      "foot_ip_1_proximal_distal_R"
+    ],
+    "granularity": "individual",
+    "status": "mapping_draft_pending_geometry_anatomy_review"
+  },
+  {
+    "id": "capsules_hand_proximal_R",
+    "name_zh": "右近侧指间关节囊组",
+    "source_object": "Articular capsules of proximal interphalangeal joints.r",
+    "side": "R",
+    "layer": "capsule",
+    "bone_ids": [
+      "bone_hand_phalanx_2_proximal_R",
+      "bone_hand_phalanx_2_middle_R",
+      "bone_hand_phalanx_3_proximal_R",
+      "bone_hand_phalanx_3_middle_R",
+      "bone_hand_phalanx_4_proximal_R",
+      "bone_hand_phalanx_4_middle_R",
+      "bone_hand_phalanx_5_proximal_R",
+      "bone_hand_phalanx_5_middle_R"
+    ],
+    "connection_ids": [
+      "hand_ip_2_proximal_middle_R",
+      "hand_ip_3_proximal_middle_R",
+      "hand_ip_4_proximal_middle_R",
+      "hand_ip_5_proximal_middle_R"
+    ],
+    "granularity": "source_group_unsegmented",
+    "status": "mapping_draft_pending_geometry_anatomy_review"
+  },
+  {
+    "id": "capsules_hand_distal_R",
+    "name_zh": "右远侧指间关节囊组",
+    "source_object": "Articular capsules of distal interphalangeal joints.r",
+    "side": "R",
+    "layer": "capsule",
+    "bone_ids": [
+      "bone_hand_phalanx_2_middle_R",
+      "bone_hand_phalanx_2_distal_R",
+      "bone_hand_phalanx_3_middle_R",
+      "bone_hand_phalanx_3_distal_R",
+      "bone_hand_phalanx_4_middle_R",
+      "bone_hand_phalanx_4_distal_R",
+      "bone_hand_phalanx_5_middle_R",
+      "bone_hand_phalanx_5_distal_R"
+    ],
+    "connection_ids": [
+      "hand_ip_2_middle_distal_R",
+      "hand_ip_3_middle_distal_R",
+      "hand_ip_4_middle_distal_R",
+      "hand_ip_5_middle_distal_R"
+    ],
+    "granularity": "source_group_unsegmented",
+    "status": "mapping_draft_pending_geometry_anatomy_review"
+  },
+  {
+    "id": "capsules_mcp_R",
+    "name_zh": "右掌指关节囊组",
+    "source_object": "Articular capsules of metacarpophalangeal joints.r",
+    "side": "R",
+    "layer": "capsule",
+    "bone_ids": [
+      "bone_metacarpal_1_R",
+      "bone_hand_phalanx_1_proximal_R",
+      "bone_metacarpal_2_R",
+      "bone_hand_phalanx_2_proximal_R",
+      "bone_metacarpal_3_R",
+      "bone_hand_phalanx_3_proximal_R",
+      "bone_metacarpal_4_R",
+      "bone_hand_phalanx_4_proximal_R",
+      "bone_metacarpal_5_R",
+      "bone_hand_phalanx_5_proximal_R"
+    ],
+    "connection_ids": [
+      "mcp_1_R",
+      "mcp_2_R",
+      "mcp_3_R",
+      "mcp_4_R",
+      "mcp_5_R"
+    ],
+    "granularity": "source_group_unsegmented",
+    "status": "mapping_draft_pending_geometry_anatomy_review"
+  },
+  {
+    "id": "capsules_foot_proximal_R",
+    "name_zh": "右近侧趾间关节囊组",
+    "source_object": "Articular capsules of proximal interphalangeal joints of foot.r",
+    "side": "R",
+    "layer": "capsule",
+    "bone_ids": [
+      "bone_foot_phalanx_2_proximal_R",
+      "bone_foot_phalanx_2_middle_R",
+      "bone_foot_phalanx_3_proximal_R",
+      "bone_foot_phalanx_3_middle_R",
+      "bone_foot_phalanx_4_proximal_R",
+      "bone_foot_phalanx_4_middle_R",
+      "bone_foot_phalanx_5_proximal_R",
+      "bone_foot_phalanx_5_middle_R"
+    ],
+    "connection_ids": [
+      "foot_ip_2_proximal_middle_R",
+      "foot_ip_3_proximal_middle_R",
+      "foot_ip_4_proximal_middle_R",
+      "foot_ip_5_proximal_middle_R"
+    ],
+    "granularity": "source_group_unsegmented",
+    "status": "mapping_draft_pending_geometry_anatomy_review"
+  },
+  {
+    "id": "capsules_foot_distal_R",
+    "name_zh": "右远侧趾间关节囊组",
+    "source_object": "Articular capsules of distal interphalangeal joints of foot.r",
+    "side": "R",
+    "layer": "capsule",
+    "bone_ids": [
+      "bone_foot_phalanx_2_middle_R",
+      "bone_foot_phalanx_2_distal_R",
+      "bone_foot_phalanx_3_middle_R",
+      "bone_foot_phalanx_3_distal_R",
+      "bone_foot_phalanx_4_middle_R",
+      "bone_foot_phalanx_4_distal_R",
+      "bone_foot_phalanx_5_middle_R",
+      "bone_foot_phalanx_5_distal_R"
+    ],
+    "connection_ids": [
+      "foot_ip_2_middle_distal_R",
+      "foot_ip_3_middle_distal_R",
+      "foot_ip_4_middle_distal_R",
+      "foot_ip_5_middle_distal_R"
+    ],
+    "granularity": "source_group_unsegmented",
+    "status": "mapping_draft_pending_geometry_anatomy_review"
+  },
+  {
+    "id": "capsules_mtp_R",
+    "name_zh": "右跖趾关节囊组",
+    "source_object": "Articular capsules of metatarsophalangeal joints.r",
+    "side": "R",
+    "layer": "capsule",
+    "bone_ids": [
+      "bone_metatarsal_1_R",
+      "bone_foot_phalanx_1_proximal_R",
+      "bone_metatarsal_2_R",
+      "bone_foot_phalanx_2_proximal_R",
+      "bone_metatarsal_3_R",
+      "bone_foot_phalanx_3_proximal_R",
+      "bone_metatarsal_4_R",
+      "bone_foot_phalanx_4_proximal_R",
+      "bone_metatarsal_5_R",
+      "bone_foot_phalanx_5_proximal_R"
+    ],
+    "connection_ids": [
+      "mtp_1_R",
+      "mtp_2_R",
+      "mtp_3_R",
+      "mtp_4_R",
+      "mtp_5_R"
+    ],
+    "granularity": "source_group_unsegmented",
+    "status": "mapping_draft_pending_geometry_anatomy_review"
+  },
+  {
+    "id": "ligament_annular_radius_R",
+    "name_zh": "右桡骨环状韧带",
+    "source_object": "Annular ligament of radius.r",
+    "side": "R",
+    "layer": "ligament",
+    "bone_ids": [
+      "bone_radius_R",
+      "bone_ulna_R"
+    ],
+    "connection_ids": [
+      "proximal_radioulnar_R"
+    ],
+    "granularity": "individual",
+    "status": "mapping_draft_pending_geometry_anatomy_review"
+  },
+  {
+    "id": "pubic_interpubic_disc",
+    "name_zh": "耻骨间盘",
+    "source_object": "Interpubic disc",
+    "side": "M",
+    "layer": "joint",
+    "bone_ids": [
+      "bone_hip_L",
+      "bone_hip_R"
+    ],
+    "connection_ids": [
+      "pubic_symphysis"
+    ],
+    "granularity": "individual",
+    "status": "mapping_draft_pending_geometry_anatomy_review"
+  }
+]

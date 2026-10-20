@@ -1,0 +1,186 @@
+{
+  "status": "candidate_comparison_only",
+  "source": "Z-Anatomy Startup.blend versus existing BodyParts3D 3.0 skeleton",
+  "license": "Local research preview; per-object license review pending; no deployment",
+  "candidates": [
+    {
+      "id": "knee",
+      "name": "右膝半月板",
+      "source_bones": [
+        "Femur.r",
+        "Tibia.r"
+      ],
+      "target_bones": [
+        "bone_femur_R",
+        "bone_tibia_R"
+      ],
+      "tissues": [
+        "Medial meniscus.r",
+        "Lateral meniscus.r"
+      ],
+      "status": "rigid_fit_candidate_not_anatomically_accepted",
+      "registration_matrix": [
+        [
+          0.9999809065854006,
+          0.0039022955419646494,
+          0.004791508546946137,
+          -0.0023663689915739607
+        ],
+        [
+          -0.0039042072209091823,
+          0.9999923026267572,
+          0.000389683479166446,
+          -0.09919554170964737
+        ],
+        [
+          -0.0047899510048135556,
+          -0.00040838308104584366,
+          0.9999884447295571,
+          -0.028326872053992105
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bone_fit": [
+        {
+          "source_bone": "Femur.r",
+          "target_bone": "bone_femur_R",
+          "sampled_source_to_target_mm_median": 2.275897073559463,
+          "p95_mm": 10.246489150449634,
+          "source_target_bbox_diagonal_ratio": 1.0332031404139534
+        },
+        {
+          "source_bone": "Tibia.r",
+          "target_bone": "bone_tibia_R",
+          "sampled_source_to_target_mm_median": 2.030864590778947,
+          "p95_mm": 11.073737777769562,
+          "source_target_bbox_diagonal_ratio": 1.0323435835734602
+        }
+      ],
+      "fit_method": "35-iteration per-bone nearest-surface trimmed rigid ICP, no scale; median/p95 are directional sampled bone distances, NOT tissue accuracy"
+    },
+    {
+      "id": "shoulder",
+      "name": "右肩关节盂唇",
+      "source_bones": [
+        "Scapula.r",
+        "Humerus.r"
+      ],
+      "target_bones": [
+        "bone_scapula_R",
+        "bone_humerus_R"
+      ],
+      "tissues": [
+        "Glenoid labrum.r"
+      ],
+      "status": "rigid_fit_candidate_not_anatomically_accepted",
+      "registration_matrix": [
+        [
+          0.9999982606808827,
+          -0.0007095420866512645,
+          -0.0017248725295789004,
+          0.006939124429486722
+        ],
+        [
+          0.0007253644137625181,
+          0.9999575099129357,
+          0.009189788636924035,
+          -0.11142822509318781
+        ],
+        [
+          0.001718278697789467,
+          -0.00919102381410013,
+          0.9999562853442999,
+          -0.0560875021571743
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bone_fit": [
+        {
+          "source_bone": "Scapula.r",
+          "target_bone": "bone_scapula_R",
+          "sampled_source_to_target_mm_median": 1.2593227438628674,
+          "p95_mm": 3.744209185242653,
+          "source_target_bbox_diagonal_ratio": 1.0331008931934933
+        },
+        {
+          "source_bone": "Humerus.r",
+          "target_bone": "bone_humerus_R",
+          "sampled_source_to_target_mm_median": 1.4916380168870091,
+          "p95_mm": 7.87575333379209,
+          "source_target_bbox_diagonal_ratio": 1.0328065349214979
+        }
+      ],
+      "fit_method": "35-iteration per-bone nearest-surface trimmed rigid ICP, no scale; median/p95 are directional sampled bone distances, NOT tissue accuracy"
+    },
+    {
+      "id": "lumbar",
+      "name": "L4—L5 椎间盘",
+      "source_bones": [
+        "Vertebra L4",
+        "Vertebra L5"
+      ],
+      "target_bones": [
+        "bone_vertebra_L4_M",
+        "bone_vertebra_L5_M"
+      ],
+      "tissues": [
+        "Intervertebral disc L4-L5",
+        "Nucleus pulposus L4-L5"
+      ],
+      "status": "rigid_fit_candidate_not_anatomically_accepted",
+      "registration_matrix": [
+        [
+          0.9998669366183056,
+          -0.011714361687162745,
+          -0.011352655538738675,
+          0.011580601012125769
+        ],
+        [
+          0.011680731314363488,
+          0.9999272049282468,
+          -0.0030241296841920606,
+          -0.09547914087195931
+        ],
+        [
+          0.011387254870274125,
+          0.0028911199642190463,
+          0.9999309835443014,
+          -0.04456618605270101
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bone_fit": [
+        {
+          "source_bone": "Vertebra L4",
+          "target_bone": "bone_vertebra_L4_M",
+          "sampled_source_to_target_mm_median": 0.8833959291223437,
+          "p95_mm": 2.5558305787853888,
+          "source_target_bbox_diagonal_ratio": 1.0287546272269772
+        },
+        {
+          "source_bone": "Vertebra L5",
+          "target_bone": "bone_vertebra_L5_M",
+          "sampled_source_to_target_mm_median": 0.9137355373241007,
+          "p95_mm": 2.679106185678392,
+          "source_target_bbox_diagonal_ratio": 1.0407881278868059
+        }
+      ],
+      "fit_method": "35-iteration per-bone nearest-surface trimmed rigid ICP, no scale; median/p95 are directional sampled bone distances, NOT tissue accuracy"
+    }
+  ]
+}

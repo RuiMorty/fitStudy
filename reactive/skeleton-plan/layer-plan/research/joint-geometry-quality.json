@@ -1,0 +1,1706 @@
+{
+  "source_sha256": "9f08a17ea0115fed80b2a73ecdf0a1bc2ab2f6956f37c593ce23d513ea35afcd",
+  "units": "source world units assumed meters; compare bone size, not independently certified",
+  "objects": [
+    {
+      "object": "Acetabular labrum.l",
+      "raw_vertices": 176,
+      "evaluated_vertices": 704,
+      "evaluated_faces": 704,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.03531026095151901,
+        0.057297930121421814,
+        0.04781651496887207
+      ],
+      "mirrored_world_transform": true,
+      "modifiers": [
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "viewport": true
+        }
+      ],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Acetabular labrum.r",
+      "raw_vertices": 176,
+      "evaluated_vertices": 704,
+      "evaluated_faces": 704,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.03531026095151901,
+        0.057297930121421814,
+        0.04781651496887207
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "viewport": true
+        }
+      ],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Articular disc of acromioclavicular joint.l",
+      "raw_vertices": 6,
+      "evaluated_vertices": 90,
+      "evaluated_faces": 88,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.01171402633190155,
+        0.028239604085683823,
+        0.014055967330932617
+      ],
+      "mirrored_world_transform": true,
+      "modifiers": [
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "viewport": true
+        },
+        {
+          "name": "Solidify",
+          "type": "SOLIDIFY",
+          "viewport": true
+        }
+      ],
+      "triage": "coarse_geometry_review",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Articular disc of acromioclavicular joint.r",
+      "raw_vertices": 6,
+      "evaluated_vertices": 90,
+      "evaluated_faces": 88,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.01171402633190155,
+        0.028239604085683823,
+        0.014055967330932617
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "viewport": true
+        },
+        {
+          "name": "Solidify",
+          "type": "SOLIDIFY",
+          "viewport": true
+        }
+      ],
+      "triage": "coarse_geometry_review",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Articular disc of distal radio-ulnar joint.l",
+      "raw_vertices": 8,
+      "evaluated_vertices": 16,
+      "evaluated_faces": 15,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.014420643448829651,
+        0.011863968335092068,
+        0.006378650665283203
+      ],
+      "mirrored_world_transform": true,
+      "modifiers": [
+        {
+          "name": "Solidify",
+          "type": "SOLIDIFY",
+          "viewport": true
+        }
+      ],
+      "triage": "coarse_geometry_review",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Articular disc of distal radio-ulnar joint.r",
+      "raw_vertices": 8,
+      "evaluated_vertices": 16,
+      "evaluated_faces": 15,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.014420643448829651,
+        0.011863968335092068,
+        0.006378650665283203
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [
+        {
+          "name": "Solidify",
+          "type": "SOLIDIFY",
+          "viewport": true
+        }
+      ],
+      "triage": "coarse_geometry_review",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Articular disc of sternoclavicular joint.l",
+      "raw_vertices": 6,
+      "evaluated_vertices": 90,
+      "evaluated_faces": 88,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.015560822561383247,
+        0.031015735119581223,
+        0.019869565963745117
+      ],
+      "mirrored_world_transform": true,
+      "modifiers": [
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "viewport": true
+        },
+        {
+          "name": "Solidify",
+          "type": "SOLIDIFY",
+          "viewport": true
+        }
+      ],
+      "triage": "coarse_geometry_review",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Articular disc of sternoclavicular joint.r",
+      "raw_vertices": 6,
+      "evaluated_vertices": 90,
+      "evaluated_faces": 88,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.015560822561383247,
+        0.031015735119581223,
+        0.019869565963745117
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "viewport": true
+        },
+        {
+          "name": "Solidify",
+          "type": "SOLIDIFY",
+          "viewport": true
+        }
+      ],
+      "triage": "coarse_geometry_review",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Articular disc of temporomandibular joint.l",
+      "raw_vertices": 146,
+      "evaluated_vertices": 146,
+      "evaluated_faces": 274,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.019316162914037704,
+        0.013934696326032281,
+        0.013471007347106934
+      ],
+      "mirrored_world_transform": true,
+      "modifiers": [],
+      "triage": "coarse_geometry_review",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Articular disc of temporomandibular joint.r",
+      "raw_vertices": 146,
+      "evaluated_vertices": 146,
+      "evaluated_faces": 274,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.019316162914037704,
+        0.013934696326032281,
+        0.013471007347106934
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [],
+      "triage": "coarse_geometry_review",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Costal cartilage of eighth rib.l",
+      "raw_vertices": 328,
+      "evaluated_vertices": 1314,
+      "evaluated_faces": 1312,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.08152719959616661,
+        0.05016674846410751,
+        0.06233823299407959
+      ],
+      "mirrored_world_transform": true,
+      "modifiers": [
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "viewport": true
+        }
+      ],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Costal cartilage of eighth rib.r",
+      "raw_vertices": 328,
+      "evaluated_vertices": 1314,
+      "evaluated_faces": 1312,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.08152719959616661,
+        0.05016674846410751,
+        0.06233823299407959
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "viewport": true
+        }
+      ],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Costal cartilage of fifth rib.l",
+      "raw_vertices": 543,
+      "evaluated_vertices": 3248,
+      "evaluated_faces": 3246,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.06562790647149086,
+        0.016340963542461395,
+        0.03938460350036621
+      ],
+      "mirrored_world_transform": true,
+      "modifiers": [
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "viewport": true
+        }
+      ],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Costal cartilage of fifth rib.r",
+      "raw_vertices": 543,
+      "evaluated_vertices": 3248,
+      "evaluated_faces": 3246,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.06562790647149086,
+        0.016340963542461395,
+        0.03938460350036621
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "viewport": true
+        }
+      ],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Costal cartilage of first rib.l",
+      "raw_vertices": 233,
+      "evaluated_vertices": 1388,
+      "evaluated_faces": 1386,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.030562344938516617,
+        0.02411768212914467,
+        0.018965959548950195
+      ],
+      "mirrored_world_transform": true,
+      "modifiers": [
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "viewport": true
+        }
+      ],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Costal cartilage of first rib.r",
+      "raw_vertices": 233,
+      "evaluated_vertices": 1388,
+      "evaluated_faces": 1386,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.030562344938516617,
+        0.02411768212914467,
+        0.018965959548950195
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "viewport": true
+        }
+      ],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Costal cartilage of fourth rib.l",
+      "raw_vertices": 375,
+      "evaluated_vertices": 2238,
+      "evaluated_faces": 2236,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.05444860830903053,
+        0.012573473155498505,
+        0.02895057201385498
+      ],
+      "mirrored_world_transform": true,
+      "modifiers": [
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "viewport": true
+        }
+      ],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Costal cartilage of fourth rib.r",
+      "raw_vertices": 375,
+      "evaluated_vertices": 2238,
+      "evaluated_faces": 2236,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.05444860830903053,
+        0.012573473155498505,
+        0.02895057201385498
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "viewport": true
+        }
+      ],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Costal cartilage of ninth rib.l",
+      "raw_vertices": 246,
+      "evaluated_vertices": 984,
+      "evaluated_faces": 982,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.06185925006866455,
+        0.0667145773768425,
+        0.03935229778289795
+      ],
+      "mirrored_world_transform": true,
+      "modifiers": [
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "viewport": true
+        }
+      ],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Costal cartilage of ninth rib.r",
+      "raw_vertices": 246,
+      "evaluated_vertices": 984,
+      "evaluated_faces": 982,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.06185925006866455,
+        0.0667145773768425,
+        0.03935229778289795
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "viewport": true
+        }
+      ],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Costal cartilage of second rib.l",
+      "raw_vertices": 286,
+      "evaluated_vertices": 1706,
+      "evaluated_faces": 1704,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.0333193838596344,
+        0.024308349937200546,
+        0.016747474670410156
+      ],
+      "mirrored_world_transform": true,
+      "modifiers": [
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "viewport": true
+        }
+      ],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Costal cartilage of second rib.r",
+      "raw_vertices": 286,
+      "evaluated_vertices": 1706,
+      "evaluated_faces": 1704,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.0333193838596344,
+        0.024308349937200546,
+        0.016747474670410156
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "viewport": true
+        }
+      ],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Costal cartilage of seventh rib.l",
+      "raw_vertices": 1149,
+      "evaluated_vertices": 6884,
+      "evaluated_faces": 6882,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.10806389525532722,
+        0.03667774796485901,
+        0.07549488544464111
+      ],
+      "mirrored_world_transform": true,
+      "modifiers": [
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "viewport": true
+        }
+      ],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Costal cartilage of seventh rib.r",
+      "raw_vertices": 1149,
+      "evaluated_vertices": 6884,
+      "evaluated_faces": 6882,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.10806389525532722,
+        0.03667774796485901,
+        0.07549488544464111
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "viewport": true
+        }
+      ],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Costal cartilage of sixth rib.l",
+      "raw_vertices": 679,
+      "evaluated_vertices": 4062,
+      "evaluated_faces": 4060,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.08257975429296494,
+        0.022637739777565002,
+        0.05572152137756348
+      ],
+      "mirrored_world_transform": true,
+      "modifiers": [
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "viewport": true
+        }
+      ],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Costal cartilage of sixth rib.r",
+      "raw_vertices": 679,
+      "evaluated_vertices": 4062,
+      "evaluated_faces": 4060,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.08257975429296494,
+        0.022637739777565002,
+        0.05572152137756348
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "viewport": true
+        }
+      ],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Costal cartilage of tenth rib.l",
+      "raw_vertices": 191,
+      "evaluated_vertices": 764,
+      "evaluated_faces": 762,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.0471300333738327,
+        0.06739385426044464,
+        0.03593599796295166
+      ],
+      "mirrored_world_transform": true,
+      "modifiers": [
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "viewport": true
+        }
+      ],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Costal cartilage of tenth rib.r",
+      "raw_vertices": 191,
+      "evaluated_vertices": 764,
+      "evaluated_faces": 762,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.0471300333738327,
+        0.06739385426044464,
+        0.03593599796295166
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "viewport": true
+        }
+      ],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Costal cartilage of third rib.l",
+      "raw_vertices": 302,
+      "evaluated_vertices": 1802,
+      "evaluated_faces": 1800,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.037318846210837364,
+        0.022323794662952423,
+        0.019360065460205078
+      ],
+      "mirrored_world_transform": true,
+      "modifiers": [
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "viewport": true
+        }
+      ],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Costal cartilage of third rib.r",
+      "raw_vertices": 302,
+      "evaluated_vertices": 1802,
+      "evaluated_faces": 1800,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.037318846210837364,
+        0.022323794662952423,
+        0.019360065460205078
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "viewport": true
+        }
+      ],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Glenoid labrum.l",
+      "raw_vertices": 107,
+      "evaluated_vertices": 424,
+      "evaluated_faces": 424,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.019035592675209045,
+        0.025217993184924126,
+        0.0357891321182251
+      ],
+      "mirrored_world_transform": true,
+      "modifiers": [
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "viewport": true
+        }
+      ],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Glenoid labrum.r",
+      "raw_vertices": 107,
+      "evaluated_vertices": 424,
+      "evaluated_faces": 424,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.019035592675209045,
+        0.025217993184924126,
+        0.0357891321182251
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "viewport": true
+        }
+      ],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Intervertebral disc C2-C3",
+      "raw_vertices": 426,
+      "evaluated_vertices": 426,
+      "evaluated_faces": 810,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.023927077651023865,
+        0.017620091985008912,
+        0.008098602294921875
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Intervertebral disc C3-C4",
+      "raw_vertices": 346,
+      "evaluated_vertices": 346,
+      "evaluated_faces": 654,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.024238528683781624,
+        0.01586140302606509,
+        0.008635878562927246
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Intervertebral disc C4-C5",
+      "raw_vertices": 430,
+      "evaluated_vertices": 430,
+      "evaluated_faces": 822,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.027340060099959373,
+        0.014952560421079397,
+        0.011631488800048828
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Intervertebral disc C5-C6",
+      "raw_vertices": 486,
+      "evaluated_vertices": 486,
+      "evaluated_faces": 930,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.031290438026189804,
+        0.014891532948240638,
+        0.011827945709228516
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Intervertebral disc C6-C7",
+      "raw_vertices": 415,
+      "evaluated_vertices": 415,
+      "evaluated_faces": 800,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.03045136108994484,
+        0.016550628002732992,
+        0.011300921440124512
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Intervertebral disc C7-T1",
+      "raw_vertices": 586,
+      "evaluated_vertices": 586,
+      "evaluated_faces": 1140,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.03395106643438339,
+        0.017653970047831535,
+        0.01225137710571289
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Intervertebral disc L1-L2",
+      "raw_vertices": 1568,
+      "evaluated_vertices": 1568,
+      "evaluated_faces": 3058,
+      "boundary_edges": 5,
+      "nonmanifold_edges": 12,
+      "loose_vertices": 1,
+      "bounds_extent_source_units": [
+        0.043160825967788696,
+        0.03814972937107086,
+        0.015278100967407227
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [],
+      "triage": "surface_or_open_mesh_review",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Intervertebral disc L2-L3",
+      "raw_vertices": 1696,
+      "evaluated_vertices": 1696,
+      "evaluated_faces": 3302,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.04593502730131149,
+        0.038254888728260994,
+        0.010249614715576172
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Intervertebral disc L3-L4",
+      "raw_vertices": 1560,
+      "evaluated_vertices": 1560,
+      "evaluated_faces": 3040,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.046135351061820984,
+        0.037603674456477165,
+        0.012774109840393066
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Intervertebral disc L4-L5",
+      "raw_vertices": 1645,
+      "evaluated_vertices": 1645,
+      "evaluated_faces": 3216,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.05070606991648674,
+        0.03875218145549297,
+        0.019624948501586914
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Intervertebral disc L5-S1",
+      "raw_vertices": 1795,
+      "evaluated_vertices": 1795,
+      "evaluated_faces": 3498,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.050686273723840714,
+        0.04049897100776434,
+        0.02929598093032837
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Intervertebral disc T1-T2",
+      "raw_vertices": 628,
+      "evaluated_vertices": 628,
+      "evaluated_faces": 1208,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.03360728174448013,
+        0.020106522366404533,
+        0.010877490043640137
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Intervertebral disc T10-T11",
+      "raw_vertices": 1437,
+      "evaluated_vertices": 1437,
+      "evaluated_faces": 2770,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.04060487449169159,
+        0.03672222979366779,
+        0.0158998966217041
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Intervertebral disc T11-T12",
+      "raw_vertices": 1698,
+      "evaluated_vertices": 1698,
+      "evaluated_faces": 3300,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.04227207973599434,
+        0.04033978993538767,
+        0.018036246299743652
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Intervertebral disc T12-L1",
+      "raw_vertices": 1666,
+      "evaluated_vertices": 1666,
+      "evaluated_faces": 3246,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.04446667805314064,
+        0.03968262625858188,
+        0.01817035675048828
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Intervertebral disc T2-T3",
+      "raw_vertices": 664,
+      "evaluated_vertices": 664,
+      "evaluated_faces": 1272,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.03443654626607895,
+        0.022580772638320923,
+        0.013337016105651855
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Intervertebral disc T3-T4",
+      "raw_vertices": 682,
+      "evaluated_vertices": 682,
+      "evaluated_faces": 1310,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.03326902538537979,
+        0.026124171912670135,
+        0.012664556503295898
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Intervertebral disc T4-T5",
+      "raw_vertices": 817,
+      "evaluated_vertices": 817,
+      "evaluated_faces": 1600,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.032120734453201294,
+        0.029749169945716858,
+        0.013253450393676758
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Intervertebral disc T5-T6",
+      "raw_vertices": 871,
+      "evaluated_vertices": 871,
+      "evaluated_faces": 1684,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.032075222581624985,
+        0.03150681033730507,
+        0.010691642761230469
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Intervertebral disc T6-T7",
+      "raw_vertices": 1196,
+      "evaluated_vertices": 1196,
+      "evaluated_faces": 2326,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.03393020108342171,
+        0.03513677790760994,
+        0.009421110153198242
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Intervertebral disc T7-T8",
+      "raw_vertices": 1331,
+      "evaluated_vertices": 1331,
+      "evaluated_faces": 2572,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.03576959669589996,
+        0.036686381325125694,
+        0.01297461986541748
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Intervertebral disc T8-T9",
+      "raw_vertices": 1447,
+      "evaluated_vertices": 1447,
+      "evaluated_faces": 2786,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.03821542114019394,
+        0.03542240895330906,
+        0.013373374938964844
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Intervertebral disc T9-T10",
+      "raw_vertices": 626,
+      "evaluated_vertices": 626,
+      "evaluated_faces": 1186,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.037044085562229156,
+        0.034637220203876495,
+        0.014978408813476562
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Lateral meniscus.l",
+      "raw_vertices": 60,
+      "evaluated_vertices": 236,
+      "evaluated_faces": 234,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.03383069485425949,
+        0.03872509207576513,
+        0.015315383672714233
+      ],
+      "mirrored_world_transform": true,
+      "modifiers": [
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "viewport": true
+        }
+      ],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Lateral meniscus.r",
+      "raw_vertices": 60,
+      "evaluated_vertices": 236,
+      "evaluated_faces": 234,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.03383069485425949,
+        0.03872509207576513,
+        0.015315383672714233
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "viewport": true
+        }
+      ],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Medial meniscus.l",
+      "raw_vertices": 36,
+      "evaluated_vertices": 144,
+      "evaluated_faces": 142,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.02581397444009781,
+        0.04469565488398075,
+        0.014945000410079956
+      ],
+      "mirrored_world_transform": true,
+      "modifiers": [
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "viewport": true
+        }
+      ],
+      "triage": "coarse_geometry_review",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Medial meniscus.r",
+      "raw_vertices": 36,
+      "evaluated_vertices": 144,
+      "evaluated_faces": 142,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.02581397444009781,
+        0.04469565488398075,
+        0.014945000410079956
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "viewport": true
+        }
+      ],
+      "triage": "coarse_geometry_review",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Nucleus pulposus C2-C3",
+      "raw_vertices": 482,
+      "evaluated_vertices": 482,
+      "evaluated_faces": 512,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.004153646063059568,
+        0.00415364746004343,
+        0.004153728485107422
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Nucleus pulposus C3-C4",
+      "raw_vertices": 482,
+      "evaluated_vertices": 482,
+      "evaluated_faces": 512,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.002988023101352155,
+        0.0029880236834287643,
+        0.002988100051879883
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Nucleus pulposus C4-C5",
+      "raw_vertices": 482,
+      "evaluated_vertices": 482,
+      "evaluated_faces": 512,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.003123558242805302,
+        0.0031235595233738422,
+        0.0031235218048095703
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Nucleus pulposus C5-C6",
+      "raw_vertices": 482,
+      "evaluated_vertices": 482,
+      "evaluated_faces": 512,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.004970080917701125,
+        0.004970082081854343,
+        0.004970073699951172
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Nucleus pulposus C6-C7",
+      "raw_vertices": 482,
+      "evaluated_vertices": 482,
+      "evaluated_faces": 512,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.003539536497555673,
+        0.0035395370796322823,
+        0.003539562225341797
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Nucleus pulposus C7-T1",
+      "raw_vertices": 482,
+      "evaluated_vertices": 482,
+      "evaluated_faces": 512,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.002541862544603646,
+        0.002541862428188324,
+        0.002541780471801758
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Nucleus pulposus L1-L2",
+      "raw_vertices": 482,
+      "evaluated_vertices": 482,
+      "evaluated_faces": 512,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.007956144399940968,
+        0.007956147193908691,
+        0.00795602798461914
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Nucleus pulposus L2-L3",
+      "raw_vertices": 482,
+      "evaluated_vertices": 482,
+      "evaluated_faces": 512,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.009441787842661142,
+        0.00944179086945951,
+        0.009441852569580078
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Nucleus pulposus L3-L4",
+      "raw_vertices": 482,
+      "evaluated_vertices": 482,
+      "evaluated_faces": 512,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.006277693202719092,
+        0.006277694832533598,
+        0.006277799606323242
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Nucleus pulposus L4-L5",
+      "raw_vertices": 482,
+      "evaluated_vertices": 482,
+      "evaluated_faces": 512,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.012432362418621778,
+        0.012432366143912077,
+        0.012432396411895752
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Nucleus pulposus L5-S1",
+      "raw_vertices": 482,
+      "evaluated_vertices": 482,
+      "evaluated_faces": 512,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.01401976216584444,
+        0.014019766822457314,
+        0.01401972770690918
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Nucleus pulposus T1-T2",
+      "raw_vertices": 482,
+      "evaluated_vertices": 482,
+      "evaluated_faces": 512,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.003772878204472363,
+        0.003772879019379616,
+        0.0037729740142822266
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Nucleus pulposus T10-T11",
+      "raw_vertices": 482,
+      "evaluated_vertices": 482,
+      "evaluated_faces": 512,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.00682600773870945,
+        0.00682600773870945,
+        0.006825923919677734
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Nucleus pulposus T11-T12",
+      "raw_vertices": 482,
+      "evaluated_vertices": 482,
+      "evaluated_faces": 512,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.007028181571513414,
+        0.007028182968497276,
+        0.007028102874755859
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Nucleus pulposus T12-L1",
+      "raw_vertices": 482,
+      "evaluated_vertices": 482,
+      "evaluated_faces": 512,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.008877473417669535,
+        0.008877475745975971,
+        0.00887751579284668
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Nucleus pulposus T2-T3",
+      "raw_vertices": 482,
+      "evaluated_vertices": 482,
+      "evaluated_faces": 512,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.006218981696292758,
+        0.0062189847230911255,
+        0.006218910217285156
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Nucleus pulposus T3-T4",
+      "raw_vertices": 482,
+      "evaluated_vertices": 482,
+      "evaluated_faces": 512,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.004572011297568679,
+        0.0045720115303993225,
+        0.0045719146728515625
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Nucleus pulposus T4-T5",
+      "raw_vertices": 482,
+      "evaluated_vertices": 482,
+      "evaluated_faces": 512,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.006428248947486281,
+        0.006428249180316925,
+        0.006428241729736328
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Nucleus pulposus T5-T6",
+      "raw_vertices": 482,
+      "evaluated_vertices": 482,
+      "evaluated_faces": 512,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.005500338971614838,
+        0.005500338971614838,
+        0.005500316619873047
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Nucleus pulposus T6-T7",
+      "raw_vertices": 482,
+      "evaluated_vertices": 482,
+      "evaluated_faces": 512,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.006227568723261356,
+        0.006227567791938782,
+        0.0062274932861328125
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Nucleus pulposus T7-T8",
+      "raw_vertices": 482,
+      "evaluated_vertices": 482,
+      "evaluated_faces": 512,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.0075638508424162865,
+        0.007563851773738861,
+        0.00756382942199707
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Nucleus pulposus T8-T9",
+      "raw_vertices": 482,
+      "evaluated_vertices": 482,
+      "evaluated_faces": 512,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.007197521161288023,
+        0.00719752162694931,
+        0.00719761848449707
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    },
+    {
+      "object": "Nucleus pulposus T9-T10",
+      "raw_vertices": 482,
+      "evaluated_vertices": 482,
+      "evaluated_faces": 512,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "loose_vertices": 0,
+      "bounds_extent_source_units": [
+        0.006457225885242224,
+        0.00645722821354866,
+        0.006457328796386719
+      ],
+      "mirrored_world_transform": false,
+      "modifiers": [],
+      "triage": "geometry_review_required",
+      "anatomy_review": "pending"
+    }
+  ]
+}

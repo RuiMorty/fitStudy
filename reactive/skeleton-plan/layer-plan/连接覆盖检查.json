@@ -1,0 +1,3476 @@
+[
+  {
+    "id": "cranial_sutures",
+    "name_zh": "颅骨缝连接组",
+    "region": "头颈与听骨",
+    "status": "listed",
+    "layer_record_ids": [
+      "fibrous_cranial_sutures"
+    ],
+    "notes": "包含多条实际颅缝；逐缝结构与边界需后续另列，不能把本组当成一个关节。",
+    "bone_ids": [
+      "bone_frontal_M",
+      "bone_occipital_M",
+      "bone_sphenoid_M",
+      "bone_ethmoid_M",
+      "bone_vomer_M",
+      "bone_parietal_L",
+      "bone_temporal_L",
+      "bone_maxilla_L",
+      "bone_zygomatic_L",
+      "bone_nasal_L",
+      "bone_lacrimal_L",
+      "bone_palatine_L",
+      "bone_inferior_nasal_concha_L",
+      "bone_parietal_R",
+      "bone_temporal_R",
+      "bone_maxilla_R",
+      "bone_zygomatic_R",
+      "bone_nasal_R",
+      "bone_lacrimal_R",
+      "bone_palatine_R",
+      "bone_inferior_nasal_concha_R"
+    ]
+  },
+  {
+    "id": "hyoid_suspension",
+    "name_zh": "舌骨悬吊",
+    "region": "头颈与听骨",
+    "status": "not_articular_cartilage_layer",
+    "layer_record_ids": [],
+    "notes": "其他附着骨关系由软组织连接表描述。",
+    "bone_ids": [
+      "bone_hyoid_M"
+    ]
+  },
+  {
+    "id": "atlanto_occipital",
+    "name_zh": "寰枕关节组",
+    "region": "颅颈交界",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_atlanto_occipital_occipital_M_L",
+      "surface_atlanto_occipital_vertebra_C1_M_L",
+      "surface_atlanto_occipital_occipital_M_R",
+      "surface_atlanto_occipital_vertebra_C1_M_R"
+    ],
+    "notes": "轴由关节面校准。",
+    "bone_ids": [
+      "bone_occipital_M",
+      "bone_vertebra_C1_M"
+    ]
+  },
+  {
+    "id": "atlanto_axial",
+    "name_zh": "寰枢关节组",
+    "region": "颅颈交界",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_atlanto_axial_vertebra_C1_M_lateral_L",
+      "surface_atlanto_axial_vertebra_C2_M_lateral_L",
+      "surface_atlanto_axial_vertebra_C1_M_lateral_R",
+      "surface_atlanto_axial_vertebra_C2_M_lateral_R",
+      "surface_atlanto_axial_vertebra_C1_M_anterior_atlas",
+      "surface_atlanto_axial_vertebra_C2_M_anterior_dens",
+      "surface_atlanto_axial_vertebra_C2_M_posterior_dens",
+      "atlas_transverse_contact"
+    ],
+    "notes": "寰枕和寰枢之间无椎间盘。",
+    "bone_ids": [
+      "bone_vertebra_C1_M",
+      "bone_vertebra_C2_M"
+    ]
+  },
+  {
+    "id": "spine_vertebra_C2_vertebra_C3",
+    "name_zh": "C2—C3运动节段",
+    "region": "颈椎",
+    "status": "listed",
+    "layer_record_ids": [
+      "disc_C2-C3",
+      "nucleus_C2-C3",
+      "annulus_C2-C3",
+      "endplate_C2-C3_上",
+      "endplate_C2-C3_下",
+      "surface_spine_vertebra_C2_vertebra_C3_vertebra_C2_M_L",
+      "surface_spine_vertebra_C2_vertebra_C3_vertebra_C3_M_L",
+      "surface_spine_vertebra_C2_vertebra_C3_vertebra_C2_M_R",
+      "surface_spine_vertebra_C2_vertebra_C3_vertebra_C3_M_R"
+    ],
+    "notes": "组内各关节及韧带仍须细分；胸腰段不能共享单一轴和角度。",
+    "bone_ids": [
+      "bone_vertebra_C2_M",
+      "bone_vertebra_C3_M"
+    ]
+  },
+  {
+    "id": "spine_vertebra_C3_vertebra_C4",
+    "name_zh": "C3—C4运动节段",
+    "region": "颈椎",
+    "status": "listed",
+    "layer_record_ids": [
+      "disc_C3-C4",
+      "nucleus_C3-C4",
+      "annulus_C3-C4",
+      "endplate_C3-C4_上",
+      "endplate_C3-C4_下",
+      "surface_spine_vertebra_C3_vertebra_C4_vertebra_C3_M_L",
+      "surface_spine_vertebra_C3_vertebra_C4_vertebra_C4_M_L",
+      "surface_spine_vertebra_C3_vertebra_C4_vertebra_C3_M_R",
+      "surface_spine_vertebra_C3_vertebra_C4_vertebra_C4_M_R"
+    ],
+    "notes": "组内各关节及韧带仍须细分；胸腰段不能共享单一轴和角度。",
+    "bone_ids": [
+      "bone_vertebra_C3_M",
+      "bone_vertebra_C4_M"
+    ]
+  },
+  {
+    "id": "spine_vertebra_C4_vertebra_C5",
+    "name_zh": "C4—C5运动节段",
+    "region": "颈椎",
+    "status": "listed",
+    "layer_record_ids": [
+      "disc_C4-C5",
+      "nucleus_C4-C5",
+      "annulus_C4-C5",
+      "endplate_C4-C5_上",
+      "endplate_C4-C5_下",
+      "surface_spine_vertebra_C4_vertebra_C5_vertebra_C4_M_L",
+      "surface_spine_vertebra_C4_vertebra_C5_vertebra_C5_M_L",
+      "surface_spine_vertebra_C4_vertebra_C5_vertebra_C4_M_R",
+      "surface_spine_vertebra_C4_vertebra_C5_vertebra_C5_M_R"
+    ],
+    "notes": "组内各关节及韧带仍须细分；胸腰段不能共享单一轴和角度。",
+    "bone_ids": [
+      "bone_vertebra_C4_M",
+      "bone_vertebra_C5_M"
+    ]
+  },
+  {
+    "id": "spine_vertebra_C5_vertebra_C6",
+    "name_zh": "C5—C6运动节段",
+    "region": "颈椎",
+    "status": "listed",
+    "layer_record_ids": [
+      "disc_C5-C6",
+      "nucleus_C5-C6",
+      "annulus_C5-C6",
+      "endplate_C5-C6_上",
+      "endplate_C5-C6_下",
+      "surface_spine_vertebra_C5_vertebra_C6_vertebra_C5_M_L",
+      "surface_spine_vertebra_C5_vertebra_C6_vertebra_C6_M_L",
+      "surface_spine_vertebra_C5_vertebra_C6_vertebra_C5_M_R",
+      "surface_spine_vertebra_C5_vertebra_C6_vertebra_C6_M_R"
+    ],
+    "notes": "组内各关节及韧带仍须细分；胸腰段不能共享单一轴和角度。",
+    "bone_ids": [
+      "bone_vertebra_C5_M",
+      "bone_vertebra_C6_M"
+    ]
+  },
+  {
+    "id": "spine_vertebra_C6_vertebra_C7",
+    "name_zh": "C6—C7运动节段",
+    "region": "颈椎",
+    "status": "listed",
+    "layer_record_ids": [
+      "disc_C6-C7",
+      "nucleus_C6-C7",
+      "annulus_C6-C7",
+      "endplate_C6-C7_上",
+      "endplate_C6-C7_下",
+      "surface_spine_vertebra_C6_vertebra_C7_vertebra_C6_M_L",
+      "surface_spine_vertebra_C6_vertebra_C7_vertebra_C7_M_L",
+      "surface_spine_vertebra_C6_vertebra_C7_vertebra_C6_M_R",
+      "surface_spine_vertebra_C6_vertebra_C7_vertebra_C7_M_R"
+    ],
+    "notes": "组内各关节及韧带仍须细分；胸腰段不能共享单一轴和角度。",
+    "bone_ids": [
+      "bone_vertebra_C6_M",
+      "bone_vertebra_C7_M"
+    ]
+  },
+  {
+    "id": "spine_vertebra_C7_vertebra_T1",
+    "name_zh": "C7—T1运动节段",
+    "region": "颈椎",
+    "status": "listed",
+    "layer_record_ids": [
+      "disc_C7-T1",
+      "nucleus_C7-T1",
+      "annulus_C7-T1",
+      "endplate_C7-T1_上",
+      "endplate_C7-T1_下",
+      "surface_spine_vertebra_C7_vertebra_T1_vertebra_C7_M_L",
+      "surface_spine_vertebra_C7_vertebra_T1_vertebra_T1_M_L",
+      "surface_spine_vertebra_C7_vertebra_T1_vertebra_C7_M_R",
+      "surface_spine_vertebra_C7_vertebra_T1_vertebra_T1_M_R"
+    ],
+    "notes": "组内各关节及韧带仍须细分；胸腰段不能共享单一轴和角度。",
+    "bone_ids": [
+      "bone_vertebra_C7_M",
+      "bone_vertebra_T1_M"
+    ]
+  },
+  {
+    "id": "spine_vertebra_T1_vertebra_T2",
+    "name_zh": "T1—T2运动节段",
+    "region": "胸椎",
+    "status": "listed",
+    "layer_record_ids": [
+      "disc_T1-T2",
+      "nucleus_T1-T2",
+      "annulus_T1-T2",
+      "endplate_T1-T2_上",
+      "endplate_T1-T2_下",
+      "surface_spine_vertebra_T1_vertebra_T2_vertebra_T1_M_L",
+      "surface_spine_vertebra_T1_vertebra_T2_vertebra_T2_M_L",
+      "surface_spine_vertebra_T1_vertebra_T2_vertebra_T1_M_R",
+      "surface_spine_vertebra_T1_vertebra_T2_vertebra_T2_M_R"
+    ],
+    "notes": "组内各关节及韧带仍须细分；胸腰段不能共享单一轴和角度。",
+    "bone_ids": [
+      "bone_vertebra_T1_M",
+      "bone_vertebra_T2_M"
+    ]
+  },
+  {
+    "id": "spine_vertebra_T2_vertebra_T3",
+    "name_zh": "T2—T3运动节段",
+    "region": "胸椎",
+    "status": "listed",
+    "layer_record_ids": [
+      "disc_T2-T3",
+      "nucleus_T2-T3",
+      "annulus_T2-T3",
+      "endplate_T2-T3_上",
+      "endplate_T2-T3_下",
+      "surface_spine_vertebra_T2_vertebra_T3_vertebra_T2_M_L",
+      "surface_spine_vertebra_T2_vertebra_T3_vertebra_T3_M_L",
+      "surface_spine_vertebra_T2_vertebra_T3_vertebra_T2_M_R",
+      "surface_spine_vertebra_T2_vertebra_T3_vertebra_T3_M_R"
+    ],
+    "notes": "组内各关节及韧带仍须细分；胸腰段不能共享单一轴和角度。",
+    "bone_ids": [
+      "bone_vertebra_T2_M",
+      "bone_vertebra_T3_M"
+    ]
+  },
+  {
+    "id": "spine_vertebra_T3_vertebra_T4",
+    "name_zh": "T3—T4运动节段",
+    "region": "胸椎",
+    "status": "listed",
+    "layer_record_ids": [
+      "disc_T3-T4",
+      "nucleus_T3-T4",
+      "annulus_T3-T4",
+      "endplate_T3-T4_上",
+      "endplate_T3-T4_下",
+      "surface_spine_vertebra_T3_vertebra_T4_vertebra_T3_M_L",
+      "surface_spine_vertebra_T3_vertebra_T4_vertebra_T4_M_L",
+      "surface_spine_vertebra_T3_vertebra_T4_vertebra_T3_M_R",
+      "surface_spine_vertebra_T3_vertebra_T4_vertebra_T4_M_R"
+    ],
+    "notes": "组内各关节及韧带仍须细分；胸腰段不能共享单一轴和角度。",
+    "bone_ids": [
+      "bone_vertebra_T3_M",
+      "bone_vertebra_T4_M"
+    ]
+  },
+  {
+    "id": "spine_vertebra_T4_vertebra_T5",
+    "name_zh": "T4—T5运动节段",
+    "region": "胸椎",
+    "status": "listed",
+    "layer_record_ids": [
+      "disc_T4-T5",
+      "nucleus_T4-T5",
+      "annulus_T4-T5",
+      "endplate_T4-T5_上",
+      "endplate_T4-T5_下",
+      "surface_spine_vertebra_T4_vertebra_T5_vertebra_T4_M_L",
+      "surface_spine_vertebra_T4_vertebra_T5_vertebra_T5_M_L",
+      "surface_spine_vertebra_T4_vertebra_T5_vertebra_T4_M_R",
+      "surface_spine_vertebra_T4_vertebra_T5_vertebra_T5_M_R"
+    ],
+    "notes": "组内各关节及韧带仍须细分；胸腰段不能共享单一轴和角度。",
+    "bone_ids": [
+      "bone_vertebra_T4_M",
+      "bone_vertebra_T5_M"
+    ]
+  },
+  {
+    "id": "spine_vertebra_T5_vertebra_T6",
+    "name_zh": "T5—T6运动节段",
+    "region": "胸椎",
+    "status": "listed",
+    "layer_record_ids": [
+      "disc_T5-T6",
+      "nucleus_T5-T6",
+      "annulus_T5-T6",
+      "endplate_T5-T6_上",
+      "endplate_T5-T6_下",
+      "surface_spine_vertebra_T5_vertebra_T6_vertebra_T5_M_L",
+      "surface_spine_vertebra_T5_vertebra_T6_vertebra_T6_M_L",
+      "surface_spine_vertebra_T5_vertebra_T6_vertebra_T5_M_R",
+      "surface_spine_vertebra_T5_vertebra_T6_vertebra_T6_M_R"
+    ],
+    "notes": "组内各关节及韧带仍须细分；胸腰段不能共享单一轴和角度。",
+    "bone_ids": [
+      "bone_vertebra_T5_M",
+      "bone_vertebra_T6_M"
+    ]
+  },
+  {
+    "id": "spine_vertebra_T6_vertebra_T7",
+    "name_zh": "T6—T7运动节段",
+    "region": "胸椎",
+    "status": "listed",
+    "layer_record_ids": [
+      "disc_T6-T7",
+      "nucleus_T6-T7",
+      "annulus_T6-T7",
+      "endplate_T6-T7_上",
+      "endplate_T6-T7_下",
+      "surface_spine_vertebra_T6_vertebra_T7_vertebra_T6_M_L",
+      "surface_spine_vertebra_T6_vertebra_T7_vertebra_T7_M_L",
+      "surface_spine_vertebra_T6_vertebra_T7_vertebra_T6_M_R",
+      "surface_spine_vertebra_T6_vertebra_T7_vertebra_T7_M_R"
+    ],
+    "notes": "组内各关节及韧带仍须细分；胸腰段不能共享单一轴和角度。",
+    "bone_ids": [
+      "bone_vertebra_T6_M",
+      "bone_vertebra_T7_M"
+    ]
+  },
+  {
+    "id": "spine_vertebra_T7_vertebra_T8",
+    "name_zh": "T7—T8运动节段",
+    "region": "胸椎",
+    "status": "listed",
+    "layer_record_ids": [
+      "disc_T7-T8",
+      "nucleus_T7-T8",
+      "annulus_T7-T8",
+      "endplate_T7-T8_上",
+      "endplate_T7-T8_下",
+      "surface_spine_vertebra_T7_vertebra_T8_vertebra_T7_M_L",
+      "surface_spine_vertebra_T7_vertebra_T8_vertebra_T8_M_L",
+      "surface_spine_vertebra_T7_vertebra_T8_vertebra_T7_M_R",
+      "surface_spine_vertebra_T7_vertebra_T8_vertebra_T8_M_R"
+    ],
+    "notes": "组内各关节及韧带仍须细分；胸腰段不能共享单一轴和角度。",
+    "bone_ids": [
+      "bone_vertebra_T7_M",
+      "bone_vertebra_T8_M"
+    ]
+  },
+  {
+    "id": "spine_vertebra_T8_vertebra_T9",
+    "name_zh": "T8—T9运动节段",
+    "region": "胸椎",
+    "status": "listed",
+    "layer_record_ids": [
+      "disc_T8-T9",
+      "nucleus_T8-T9",
+      "annulus_T8-T9",
+      "endplate_T8-T9_上",
+      "endplate_T8-T9_下",
+      "surface_spine_vertebra_T8_vertebra_T9_vertebra_T8_M_L",
+      "surface_spine_vertebra_T8_vertebra_T9_vertebra_T9_M_L",
+      "surface_spine_vertebra_T8_vertebra_T9_vertebra_T8_M_R",
+      "surface_spine_vertebra_T8_vertebra_T9_vertebra_T9_M_R"
+    ],
+    "notes": "组内各关节及韧带仍须细分；胸腰段不能共享单一轴和角度。",
+    "bone_ids": [
+      "bone_vertebra_T8_M",
+      "bone_vertebra_T9_M"
+    ]
+  },
+  {
+    "id": "spine_vertebra_T9_vertebra_T10",
+    "name_zh": "T9—T10运动节段",
+    "region": "胸椎",
+    "status": "listed",
+    "layer_record_ids": [
+      "disc_T9-T10",
+      "nucleus_T9-T10",
+      "annulus_T9-T10",
+      "endplate_T9-T10_上",
+      "endplate_T9-T10_下",
+      "surface_spine_vertebra_T9_vertebra_T10_vertebra_T9_M_L",
+      "surface_spine_vertebra_T9_vertebra_T10_vertebra_T10_M_L",
+      "surface_spine_vertebra_T9_vertebra_T10_vertebra_T9_M_R",
+      "surface_spine_vertebra_T9_vertebra_T10_vertebra_T10_M_R"
+    ],
+    "notes": "组内各关节及韧带仍须细分；胸腰段不能共享单一轴和角度。",
+    "bone_ids": [
+      "bone_vertebra_T9_M",
+      "bone_vertebra_T10_M"
+    ]
+  },
+  {
+    "id": "spine_vertebra_T10_vertebra_T11",
+    "name_zh": "T10—T11运动节段",
+    "region": "胸椎",
+    "status": "listed",
+    "layer_record_ids": [
+      "disc_T10-T11",
+      "nucleus_T10-T11",
+      "annulus_T10-T11",
+      "endplate_T10-T11_上",
+      "endplate_T10-T11_下",
+      "surface_spine_vertebra_T10_vertebra_T11_vertebra_T10_M_L",
+      "surface_spine_vertebra_T10_vertebra_T11_vertebra_T11_M_L",
+      "surface_spine_vertebra_T10_vertebra_T11_vertebra_T10_M_R",
+      "surface_spine_vertebra_T10_vertebra_T11_vertebra_T11_M_R"
+    ],
+    "notes": "组内各关节及韧带仍须细分；胸腰段不能共享单一轴和角度。",
+    "bone_ids": [
+      "bone_vertebra_T10_M",
+      "bone_vertebra_T11_M"
+    ]
+  },
+  {
+    "id": "spine_vertebra_T11_vertebra_T12",
+    "name_zh": "T11—T12运动节段",
+    "region": "胸椎",
+    "status": "listed",
+    "layer_record_ids": [
+      "disc_T11-T12",
+      "nucleus_T11-T12",
+      "annulus_T11-T12",
+      "endplate_T11-T12_上",
+      "endplate_T11-T12_下",
+      "surface_spine_vertebra_T11_vertebra_T12_vertebra_T11_M_L",
+      "surface_spine_vertebra_T11_vertebra_T12_vertebra_T12_M_L",
+      "surface_spine_vertebra_T11_vertebra_T12_vertebra_T11_M_R",
+      "surface_spine_vertebra_T11_vertebra_T12_vertebra_T12_M_R"
+    ],
+    "notes": "组内各关节及韧带仍须细分；胸腰段不能共享单一轴和角度。",
+    "bone_ids": [
+      "bone_vertebra_T11_M",
+      "bone_vertebra_T12_M"
+    ]
+  },
+  {
+    "id": "spine_vertebra_T12_vertebra_L1",
+    "name_zh": "T12—L1运动节段",
+    "region": "胸椎",
+    "status": "listed",
+    "layer_record_ids": [
+      "disc_T12-L1",
+      "nucleus_T12-L1",
+      "annulus_T12-L1",
+      "endplate_T12-L1_上",
+      "endplate_T12-L1_下",
+      "surface_spine_vertebra_T12_vertebra_L1_vertebra_T12_M_L",
+      "surface_spine_vertebra_T12_vertebra_L1_vertebra_L1_M_L",
+      "surface_spine_vertebra_T12_vertebra_L1_vertebra_T12_M_R",
+      "surface_spine_vertebra_T12_vertebra_L1_vertebra_L1_M_R"
+    ],
+    "notes": "组内各关节及韧带仍须细分；胸腰段不能共享单一轴和角度。",
+    "bone_ids": [
+      "bone_vertebra_T12_M",
+      "bone_vertebra_L1_M"
+    ]
+  },
+  {
+    "id": "spine_vertebra_L1_vertebra_L2",
+    "name_zh": "L1—L2运动节段",
+    "region": "腰椎",
+    "status": "listed",
+    "layer_record_ids": [
+      "disc_L1-L2",
+      "nucleus_L1-L2",
+      "annulus_L1-L2",
+      "endplate_L1-L2_上",
+      "endplate_L1-L2_下",
+      "surface_spine_vertebra_L1_vertebra_L2_vertebra_L1_M_L",
+      "surface_spine_vertebra_L1_vertebra_L2_vertebra_L2_M_L",
+      "surface_spine_vertebra_L1_vertebra_L2_vertebra_L1_M_R",
+      "surface_spine_vertebra_L1_vertebra_L2_vertebra_L2_M_R"
+    ],
+    "notes": "组内各关节及韧带仍须细分；胸腰段不能共享单一轴和角度。",
+    "bone_ids": [
+      "bone_vertebra_L1_M",
+      "bone_vertebra_L2_M"
+    ]
+  },
+  {
+    "id": "spine_vertebra_L2_vertebra_L3",
+    "name_zh": "L2—L3运动节段",
+    "region": "腰椎",
+    "status": "listed",
+    "layer_record_ids": [
+      "disc_L2-L3",
+      "nucleus_L2-L3",
+      "annulus_L2-L3",
+      "endplate_L2-L3_上",
+      "endplate_L2-L3_下",
+      "surface_spine_vertebra_L2_vertebra_L3_vertebra_L2_M_L",
+      "surface_spine_vertebra_L2_vertebra_L3_vertebra_L3_M_L",
+      "surface_spine_vertebra_L2_vertebra_L3_vertebra_L2_M_R",
+      "surface_spine_vertebra_L2_vertebra_L3_vertebra_L3_M_R"
+    ],
+    "notes": "组内各关节及韧带仍须细分；胸腰段不能共享单一轴和角度。",
+    "bone_ids": [
+      "bone_vertebra_L2_M",
+      "bone_vertebra_L3_M"
+    ]
+  },
+  {
+    "id": "spine_vertebra_L3_vertebra_L4",
+    "name_zh": "L3—L4运动节段",
+    "region": "腰椎",
+    "status": "listed",
+    "layer_record_ids": [
+      "disc_L3-L4",
+      "nucleus_L3-L4",
+      "annulus_L3-L4",
+      "endplate_L3-L4_上",
+      "endplate_L3-L4_下",
+      "surface_spine_vertebra_L3_vertebra_L4_vertebra_L3_M_L",
+      "surface_spine_vertebra_L3_vertebra_L4_vertebra_L4_M_L",
+      "surface_spine_vertebra_L3_vertebra_L4_vertebra_L3_M_R",
+      "surface_spine_vertebra_L3_vertebra_L4_vertebra_L4_M_R"
+    ],
+    "notes": "组内各关节及韧带仍须细分；胸腰段不能共享单一轴和角度。",
+    "bone_ids": [
+      "bone_vertebra_L3_M",
+      "bone_vertebra_L4_M"
+    ]
+  },
+  {
+    "id": "spine_vertebra_L4_vertebra_L5",
+    "name_zh": "L4—L5运动节段",
+    "region": "腰椎",
+    "status": "listed",
+    "layer_record_ids": [
+      "disc_L4-L5",
+      "nucleus_L4-L5",
+      "annulus_L4-L5",
+      "endplate_L4-L5_上",
+      "endplate_L4-L5_下",
+      "surface_spine_vertebra_L4_vertebra_L5_vertebra_L4_M_L",
+      "surface_spine_vertebra_L4_vertebra_L5_vertebra_L5_M_L",
+      "surface_spine_vertebra_L4_vertebra_L5_vertebra_L4_M_R",
+      "surface_spine_vertebra_L4_vertebra_L5_vertebra_L5_M_R"
+    ],
+    "notes": "组内各关节及韧带仍须细分；胸腰段不能共享单一轴和角度。",
+    "bone_ids": [
+      "bone_vertebra_L4_M",
+      "bone_vertebra_L5_M"
+    ]
+  },
+  {
+    "id": "spine_vertebra_L5_sacrum",
+    "name_zh": "L5—sacrum运动节段",
+    "region": "腰椎",
+    "status": "listed",
+    "layer_record_ids": [
+      "disc_L5-S1",
+      "nucleus_L5-S1",
+      "annulus_L5-S1",
+      "endplate_L5-S1_上",
+      "endplate_L5-S1_下",
+      "surface_spine_vertebra_L5_sacrum_vertebra_L5_M_L",
+      "surface_spine_vertebra_L5_sacrum_sacrum_M_L",
+      "surface_spine_vertebra_L5_sacrum_vertebra_L5_M_R",
+      "surface_spine_vertebra_L5_sacrum_sacrum_M_R"
+    ],
+    "notes": "组内各关节及韧带仍须细分；胸腰段不能共享单一轴和角度。",
+    "bone_ids": [
+      "bone_vertebra_L5_M",
+      "bone_sacrum_M"
+    ]
+  },
+  {
+    "id": "sacrococcygeal",
+    "name_zh": "骶尾连接",
+    "region": "骨盆与髋",
+    "status": "listed",
+    "layer_record_ids": [
+      "sacrococcygeal_disc"
+    ],
+    "notes": "保留变异说明。",
+    "bone_ids": [
+      "bone_sacrum_M",
+      "bone_coccyx_M"
+    ]
+  },
+  {
+    "id": "tmj_L",
+    "name_zh": "左颞下颌关节",
+    "region": "头颈与听骨",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_tmj_L_temporal_L",
+      "surface_tmj_L_mandible_M"
+    ],
+    "notes": "不能用两个独立动画同时驱动同一下颌骨。",
+    "bone_ids": [
+      "bone_temporal_L",
+      "bone_mandible_M"
+    ]
+  },
+  {
+    "id": "incudomalleolar_L",
+    "name_zh": "左锤砧关节",
+    "region": "头颈与听骨",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_incudomalleolar_L_malleus_L",
+      "surface_incudomalleolar_L_incus_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_malleus_L",
+      "bone_incus_L"
+    ]
+  },
+  {
+    "id": "incudostapedial_L",
+    "name_zh": "左砧镫关节",
+    "region": "头颈与听骨",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_incudostapedial_L_incus_L",
+      "surface_incudostapedial_L_stapes_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_incus_L",
+      "bone_stapes_L"
+    ]
+  },
+  {
+    "id": "stapes_window_L",
+    "name_zh": "左镫骨—前庭窗连接",
+    "region": "头颈与听骨",
+    "status": "listed",
+    "layer_record_ids": [
+      "fibrous_stapes_window_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_stapes_L",
+      "bone_temporal_L"
+    ]
+  },
+  {
+    "id": "costovertebral_01_L",
+    "name_zh": "左第1肋椎连接组",
+    "region": "胸廓",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_costovertebral_01_L_rib_01_L_head",
+      "surface_costovertebral_01_L_vertebra_T1_M_head",
+      "surface_costovertebral_01_L_rib_01_L_tubercle",
+      "surface_costovertebral_01_L_vertebra_T1_M_tubercle"
+    ],
+    "notes": "第11/12肋无肋横突关节；第10肋关节面及肋头连接存在变异，需按源模板确认。",
+    "bone_ids": [
+      "bone_rib_01_L",
+      "bone_vertebra_T1_M"
+    ]
+  },
+  {
+    "id": "sternocostal_01_L",
+    "name_zh": "左第1胸肋连接",
+    "region": "胸廓",
+    "status": "listed",
+    "layer_record_ids": [
+      "costal_cartilage_1_L",
+      "junction_sternocostal_01_L"
+    ],
+    "notes": "此条包括肋软骨两端连接；软骨待单独建模。",
+    "bone_ids": [
+      "bone_rib_01_L",
+      "bone_sternum_M"
+    ]
+  },
+  {
+    "id": "costovertebral_02_L",
+    "name_zh": "左第2肋椎连接组",
+    "region": "胸廓",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_costovertebral_02_L_rib_02_L_head",
+      "surface_costovertebral_02_L_vertebra_T2_M_head",
+      "surface_costovertebral_02_L_vertebra_T1_M_head",
+      "surface_costovertebral_02_L_rib_02_L_tubercle",
+      "surface_costovertebral_02_L_vertebra_T2_M_tubercle"
+    ],
+    "notes": "第11/12肋无肋横突关节；第10肋关节面及肋头连接存在变异，需按源模板确认。",
+    "bone_ids": [
+      "bone_rib_02_L",
+      "bone_vertebra_T2_M",
+      "bone_vertebra_T1_M"
+    ]
+  },
+  {
+    "id": "sternocostal_02_L",
+    "name_zh": "左第2胸肋连接",
+    "region": "胸廓",
+    "status": "listed",
+    "layer_record_ids": [
+      "costal_cartilage_2_L",
+      "junction_sternocostal_02_L"
+    ],
+    "notes": "此条包括肋软骨两端连接；软骨待单独建模。",
+    "bone_ids": [
+      "bone_rib_02_L",
+      "bone_sternum_M"
+    ]
+  },
+  {
+    "id": "costovertebral_03_L",
+    "name_zh": "左第3肋椎连接组",
+    "region": "胸廓",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_costovertebral_03_L_rib_03_L_head",
+      "surface_costovertebral_03_L_vertebra_T3_M_head",
+      "surface_costovertebral_03_L_vertebra_T2_M_head",
+      "surface_costovertebral_03_L_rib_03_L_tubercle",
+      "surface_costovertebral_03_L_vertebra_T3_M_tubercle"
+    ],
+    "notes": "第11/12肋无肋横突关节；第10肋关节面及肋头连接存在变异，需按源模板确认。",
+    "bone_ids": [
+      "bone_rib_03_L",
+      "bone_vertebra_T3_M",
+      "bone_vertebra_T2_M"
+    ]
+  },
+  {
+    "id": "sternocostal_03_L",
+    "name_zh": "左第3胸肋连接",
+    "region": "胸廓",
+    "status": "listed",
+    "layer_record_ids": [
+      "costal_cartilage_3_L",
+      "junction_sternocostal_03_L"
+    ],
+    "notes": "此条包括肋软骨两端连接；软骨待单独建模。",
+    "bone_ids": [
+      "bone_rib_03_L",
+      "bone_sternum_M"
+    ]
+  },
+  {
+    "id": "costovertebral_04_L",
+    "name_zh": "左第4肋椎连接组",
+    "region": "胸廓",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_costovertebral_04_L_rib_04_L_head",
+      "surface_costovertebral_04_L_vertebra_T4_M_head",
+      "surface_costovertebral_04_L_vertebra_T3_M_head",
+      "surface_costovertebral_04_L_rib_04_L_tubercle",
+      "surface_costovertebral_04_L_vertebra_T4_M_tubercle"
+    ],
+    "notes": "第11/12肋无肋横突关节；第10肋关节面及肋头连接存在变异，需按源模板确认。",
+    "bone_ids": [
+      "bone_rib_04_L",
+      "bone_vertebra_T4_M",
+      "bone_vertebra_T3_M"
+    ]
+  },
+  {
+    "id": "sternocostal_04_L",
+    "name_zh": "左第4胸肋连接",
+    "region": "胸廓",
+    "status": "listed",
+    "layer_record_ids": [
+      "costal_cartilage_4_L",
+      "junction_sternocostal_04_L"
+    ],
+    "notes": "此条包括肋软骨两端连接；软骨待单独建模。",
+    "bone_ids": [
+      "bone_rib_04_L",
+      "bone_sternum_M"
+    ]
+  },
+  {
+    "id": "costovertebral_05_L",
+    "name_zh": "左第5肋椎连接组",
+    "region": "胸廓",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_costovertebral_05_L_rib_05_L_head",
+      "surface_costovertebral_05_L_vertebra_T5_M_head",
+      "surface_costovertebral_05_L_vertebra_T4_M_head",
+      "surface_costovertebral_05_L_rib_05_L_tubercle",
+      "surface_costovertebral_05_L_vertebra_T5_M_tubercle"
+    ],
+    "notes": "第11/12肋无肋横突关节；第10肋关节面及肋头连接存在变异，需按源模板确认。",
+    "bone_ids": [
+      "bone_rib_05_L",
+      "bone_vertebra_T5_M",
+      "bone_vertebra_T4_M"
+    ]
+  },
+  {
+    "id": "sternocostal_05_L",
+    "name_zh": "左第5胸肋连接",
+    "region": "胸廓",
+    "status": "listed",
+    "layer_record_ids": [
+      "costal_cartilage_5_L",
+      "junction_sternocostal_05_L"
+    ],
+    "notes": "此条包括肋软骨两端连接；软骨待单独建模。",
+    "bone_ids": [
+      "bone_rib_05_L",
+      "bone_sternum_M"
+    ]
+  },
+  {
+    "id": "costovertebral_06_L",
+    "name_zh": "左第6肋椎连接组",
+    "region": "胸廓",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_costovertebral_06_L_rib_06_L_head",
+      "surface_costovertebral_06_L_vertebra_T6_M_head",
+      "surface_costovertebral_06_L_vertebra_T5_M_head",
+      "surface_costovertebral_06_L_rib_06_L_tubercle",
+      "surface_costovertebral_06_L_vertebra_T6_M_tubercle"
+    ],
+    "notes": "第11/12肋无肋横突关节；第10肋关节面及肋头连接存在变异，需按源模板确认。",
+    "bone_ids": [
+      "bone_rib_06_L",
+      "bone_vertebra_T6_M",
+      "bone_vertebra_T5_M"
+    ]
+  },
+  {
+    "id": "sternocostal_06_L",
+    "name_zh": "左第6胸肋连接",
+    "region": "胸廓",
+    "status": "listed",
+    "layer_record_ids": [
+      "costal_cartilage_6_L",
+      "junction_sternocostal_06_L"
+    ],
+    "notes": "此条包括肋软骨两端连接；软骨待单独建模。",
+    "bone_ids": [
+      "bone_rib_06_L",
+      "bone_sternum_M"
+    ]
+  },
+  {
+    "id": "costovertebral_07_L",
+    "name_zh": "左第7肋椎连接组",
+    "region": "胸廓",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_costovertebral_07_L_rib_07_L_head",
+      "surface_costovertebral_07_L_vertebra_T7_M_head",
+      "surface_costovertebral_07_L_vertebra_T6_M_head",
+      "surface_costovertebral_07_L_rib_07_L_tubercle",
+      "surface_costovertebral_07_L_vertebra_T7_M_tubercle"
+    ],
+    "notes": "第11/12肋无肋横突关节；第10肋关节面及肋头连接存在变异，需按源模板确认。",
+    "bone_ids": [
+      "bone_rib_07_L",
+      "bone_vertebra_T7_M",
+      "bone_vertebra_T6_M"
+    ]
+  },
+  {
+    "id": "sternocostal_07_L",
+    "name_zh": "左第7胸肋连接",
+    "region": "胸廓",
+    "status": "listed",
+    "layer_record_ids": [
+      "costal_cartilage_7_L",
+      "junction_sternocostal_07_L"
+    ],
+    "notes": "此条包括肋软骨两端连接；软骨待单独建模。",
+    "bone_ids": [
+      "bone_rib_07_L",
+      "bone_sternum_M"
+    ]
+  },
+  {
+    "id": "costovertebral_08_L",
+    "name_zh": "左第8肋椎连接组",
+    "region": "胸廓",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_costovertebral_08_L_rib_08_L_head",
+      "surface_costovertebral_08_L_vertebra_T8_M_head",
+      "surface_costovertebral_08_L_vertebra_T7_M_head",
+      "surface_costovertebral_08_L_rib_08_L_tubercle",
+      "surface_costovertebral_08_L_vertebra_T8_M_tubercle"
+    ],
+    "notes": "第11/12肋无肋横突关节；第10肋关节面及肋头连接存在变异，需按源模板确认。",
+    "bone_ids": [
+      "bone_rib_08_L",
+      "bone_vertebra_T8_M",
+      "bone_vertebra_T7_M"
+    ]
+  },
+  {
+    "id": "costal_arch_08_L",
+    "name_zh": "左第8肋软骨弓连接",
+    "region": "胸廓",
+    "status": "listed",
+    "layer_record_ids": [
+      "costal_cartilage_8_L",
+      "junction_costal_arch_08_L"
+    ],
+    "notes": "骨ID描述间接关系；软骨对象会补入连接图。",
+    "bone_ids": [
+      "bone_rib_08_L",
+      "bone_rib_07_L"
+    ]
+  },
+  {
+    "id": "costovertebral_09_L",
+    "name_zh": "左第9肋椎连接组",
+    "region": "胸廓",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_costovertebral_09_L_rib_09_L_head",
+      "surface_costovertebral_09_L_vertebra_T9_M_head",
+      "surface_costovertebral_09_L_vertebra_T8_M_head",
+      "surface_costovertebral_09_L_rib_09_L_tubercle",
+      "surface_costovertebral_09_L_vertebra_T9_M_tubercle"
+    ],
+    "notes": "第11/12肋无肋横突关节；第10肋关节面及肋头连接存在变异，需按源模板确认。",
+    "bone_ids": [
+      "bone_rib_09_L",
+      "bone_vertebra_T9_M",
+      "bone_vertebra_T8_M"
+    ]
+  },
+  {
+    "id": "costal_arch_09_L",
+    "name_zh": "左第9肋软骨弓连接",
+    "region": "胸廓",
+    "status": "listed",
+    "layer_record_ids": [
+      "costal_cartilage_9_L",
+      "junction_costal_arch_09_L"
+    ],
+    "notes": "骨ID描述间接关系；软骨对象会补入连接图。",
+    "bone_ids": [
+      "bone_rib_09_L",
+      "bone_rib_08_L"
+    ]
+  },
+  {
+    "id": "costovertebral_10_L",
+    "name_zh": "左第10肋椎连接组",
+    "region": "胸廓",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_costovertebral_10_L_rib_10_L_head",
+      "surface_costovertebral_10_L_vertebra_T10_M_head",
+      "surface_costovertebral_10_L_rib_10_L_tubercle",
+      "surface_costovertebral_10_L_vertebra_T10_M_tubercle"
+    ],
+    "notes": "第11/12肋无肋横突关节；第10肋关节面及肋头连接存在变异，需按源模板确认。",
+    "bone_ids": [
+      "bone_rib_10_L",
+      "bone_vertebra_T10_M"
+    ]
+  },
+  {
+    "id": "costal_arch_10_L",
+    "name_zh": "左第10肋软骨弓连接",
+    "region": "胸廓",
+    "status": "listed",
+    "layer_record_ids": [
+      "costal_cartilage_10_L",
+      "junction_costal_arch_10_L"
+    ],
+    "notes": "骨ID描述间接关系；软骨对象会补入连接图。",
+    "bone_ids": [
+      "bone_rib_10_L",
+      "bone_rib_09_L"
+    ]
+  },
+  {
+    "id": "costovertebral_11_L",
+    "name_zh": "左第11肋椎连接组",
+    "region": "胸廓",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_costovertebral_11_L_rib_11_L_head",
+      "surface_costovertebral_11_L_vertebra_T11_M_head"
+    ],
+    "notes": "第11/12肋无肋横突关节；第10肋关节面及肋头连接存在变异，需按源模板确认。",
+    "bone_ids": [
+      "bone_rib_11_L",
+      "bone_vertebra_T11_M"
+    ]
+  },
+  {
+    "id": "costovertebral_12_L",
+    "name_zh": "左第12肋椎连接组",
+    "region": "胸廓",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_costovertebral_12_L_rib_12_L_head",
+      "surface_costovertebral_12_L_vertebra_T12_M_head"
+    ],
+    "notes": "第11/12肋无肋横突关节；第10肋关节面及肋头连接存在变异，需按源模板确认。",
+    "bone_ids": [
+      "bone_rib_12_L",
+      "bone_vertebra_T12_M"
+    ]
+  },
+  {
+    "id": "sternoclavicular_L",
+    "name_zh": "左胸锁关节",
+    "region": "肩带",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_sternoclavicular_L_sternum_M",
+      "surface_sternoclavicular_L_clavicle_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_sternum_M",
+      "bone_clavicle_L"
+    ]
+  },
+  {
+    "id": "acromioclavicular_L",
+    "name_zh": "左肩锁关节",
+    "region": "肩带",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_acromioclavicular_L_clavicle_L",
+      "surface_acromioclavicular_L_scapula_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_clavicle_L",
+      "bone_scapula_L"
+    ]
+  },
+  {
+    "id": "scapulothoracic_L",
+    "name_zh": "左肩胛胸壁功能连接",
+    "region": "肩带",
+    "status": "not_articular_cartilage_layer",
+    "layer_record_ids": [],
+    "notes": "功能性滑动关系，不是有共同关节腔的骨性关节；比例不预设为固定常数。",
+    "bone_ids": [
+      "bone_scapula_L",
+      "bone_rib_02_L",
+      "bone_rib_03_L",
+      "bone_rib_04_L",
+      "bone_rib_05_L",
+      "bone_rib_06_L",
+      "bone_rib_07_L"
+    ]
+  },
+  {
+    "id": "glenohumeral_L",
+    "name_zh": "左盂肱关节",
+    "region": "肩带",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_glenohumeral_L_scapula_L",
+      "surface_glenohumeral_L_humerus_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_scapula_L",
+      "bone_humerus_L"
+    ]
+  },
+  {
+    "id": "humeroulnar_L",
+    "name_zh": "左肱尺关节",
+    "region": "肘与前臂",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_humeroulnar_L_humerus_L",
+      "surface_humeroulnar_L_ulna_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_humerus_L",
+      "bone_ulna_L"
+    ]
+  },
+  {
+    "id": "humeroradial_L",
+    "name_zh": "左肱桡关节",
+    "region": "肘与前臂",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_humeroradial_L_humerus_L",
+      "surface_humeroradial_L_radius_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_humerus_L",
+      "bone_radius_L"
+    ]
+  },
+  {
+    "id": "proximal_radioulnar_L",
+    "name_zh": "左近侧桡尺关节",
+    "region": "肘与前臂",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_proximal_radioulnar_L_radius_L",
+      "surface_proximal_radioulnar_L_ulna_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_radius_L",
+      "bone_ulna_L"
+    ]
+  },
+  {
+    "id": "distal_radioulnar_L",
+    "name_zh": "左远侧桡尺关节",
+    "region": "腕手",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_distal_radioulnar_L_radius_L",
+      "surface_distal_radioulnar_L_ulna_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_radius_L",
+      "bone_ulna_L"
+    ]
+  },
+  {
+    "id": "forearm_interosseous_L",
+    "name_zh": "左前臂骨间连接",
+    "region": "肘与前臂",
+    "status": "listed",
+    "layer_record_ids": [
+      "fibrous_forearm_interosseous_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_radius_L",
+      "bone_ulna_L"
+    ]
+  },
+  {
+    "id": "radiocarpal_L",
+    "name_zh": "左桡腕关节组",
+    "region": "腕手",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_radiocarpal_L_radius_L",
+      "surface_radiocarpal_L_scaphoid_L",
+      "surface_radiocarpal_L_lunate_L",
+      "surface_radiocarpal_L_triquetrum_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_radius_L",
+      "bone_scaphoid_L",
+      "bone_lunate_L",
+      "bone_triquetrum_L"
+    ]
+  },
+  {
+    "id": "intercarpal_L",
+    "name_zh": "左腕骨间连接组",
+    "region": "腕手",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_intercarpal_L_scaphoid_L_to_lunate_L",
+      "surface_intercarpal_L_lunate_L_to_scaphoid_L",
+      "surface_intercarpal_L_lunate_L_to_triquetrum_L",
+      "surface_intercarpal_L_triquetrum_L_to_lunate_L",
+      "surface_intercarpal_L_triquetrum_L_to_pisiform_L",
+      "surface_intercarpal_L_pisiform_L_to_triquetrum_L",
+      "surface_intercarpal_L_trapezium_L_to_trapezoid_L",
+      "surface_intercarpal_L_trapezoid_L_to_trapezium_L",
+      "surface_intercarpal_L_trapezoid_L_to_capitate_L",
+      "surface_intercarpal_L_capitate_L_to_trapezoid_L",
+      "surface_intercarpal_L_capitate_L_to_hamate_L",
+      "surface_intercarpal_L_hamate_L_to_capitate_L",
+      "surface_intercarpal_L_scaphoid_L_to_trapezium_L",
+      "surface_intercarpal_L_trapezium_L_to_scaphoid_L",
+      "surface_intercarpal_L_scaphoid_L_to_trapezoid_L",
+      "surface_intercarpal_L_trapezoid_L_to_scaphoid_L",
+      "surface_intercarpal_L_scaphoid_L_to_capitate_L",
+      "surface_intercarpal_L_capitate_L_to_scaphoid_L",
+      "surface_intercarpal_L_lunate_L_to_capitate_L",
+      "surface_intercarpal_L_capitate_L_to_lunate_L",
+      "surface_intercarpal_L_lunate_L_to_hamate_L",
+      "surface_intercarpal_L_hamate_L_to_lunate_L",
+      "surface_intercarpal_L_triquetrum_L_to_hamate_L",
+      "surface_intercarpal_L_hamate_L_to_triquetrum_L"
+    ],
+    "notes": "后续逐关节面展开；不能将8块腕骨看作一个刚体。",
+    "bone_ids": [
+      "bone_scaphoid_L",
+      "bone_lunate_L",
+      "bone_triquetrum_L",
+      "bone_pisiform_L",
+      "bone_trapezium_L",
+      "bone_trapezoid_L",
+      "bone_capitate_L",
+      "bone_hamate_L"
+    ]
+  },
+  {
+    "id": "cmc_1_L",
+    "name_zh": "左第1腕掌连接",
+    "region": "腕手",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_cmc_1_L_metacarpal_1_L",
+      "surface_cmc_1_L_trapezium_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_metacarpal_1_L",
+      "bone_trapezium_L"
+    ]
+  },
+  {
+    "id": "mcp_1_L",
+    "name_zh": "左第1掌指关节",
+    "region": "腕手",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_mcp_1_L_metacarpal_1_L",
+      "surface_mcp_1_L_hand_phalanx_1_proximal_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_metacarpal_1_L",
+      "bone_hand_phalanx_1_proximal_L"
+    ]
+  },
+  {
+    "id": "hand_ip_1_proximal_distal_L",
+    "name_zh": "左第1指近节—远节指间关节",
+    "region": "腕手",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_hand_ip_1_proximal_distal_L_hand_phalanx_1_proximal_L",
+      "surface_hand_ip_1_proximal_distal_L_hand_phalanx_1_distal_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_hand_phalanx_1_proximal_L",
+      "bone_hand_phalanx_1_distal_L"
+    ]
+  },
+  {
+    "id": "cmc_2_L",
+    "name_zh": "左第2腕掌连接",
+    "region": "腕手",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_cmc_2_L_metacarpal_2_L",
+      "surface_cmc_2_L_trapezium_L",
+      "surface_cmc_2_L_trapezoid_L",
+      "surface_cmc_2_L_capitate_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_metacarpal_2_L",
+      "bone_trapezium_L",
+      "bone_trapezoid_L",
+      "bone_capitate_L"
+    ]
+  },
+  {
+    "id": "mcp_2_L",
+    "name_zh": "左第2掌指关节",
+    "region": "腕手",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_mcp_2_L_metacarpal_2_L",
+      "surface_mcp_2_L_hand_phalanx_2_proximal_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_metacarpal_2_L",
+      "bone_hand_phalanx_2_proximal_L"
+    ]
+  },
+  {
+    "id": "hand_ip_2_proximal_middle_L",
+    "name_zh": "左第2指近节—中节指间关节",
+    "region": "腕手",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_hand_ip_2_proximal_middle_L_hand_phalanx_2_proximal_L",
+      "surface_hand_ip_2_proximal_middle_L_hand_phalanx_2_middle_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_hand_phalanx_2_proximal_L",
+      "bone_hand_phalanx_2_middle_L"
+    ]
+  },
+  {
+    "id": "hand_ip_2_middle_distal_L",
+    "name_zh": "左第2指中节—远节指间关节",
+    "region": "腕手",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_hand_ip_2_middle_distal_L_hand_phalanx_2_middle_L",
+      "surface_hand_ip_2_middle_distal_L_hand_phalanx_2_distal_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_hand_phalanx_2_middle_L",
+      "bone_hand_phalanx_2_distal_L"
+    ]
+  },
+  {
+    "id": "cmc_3_L",
+    "name_zh": "左第3腕掌连接",
+    "region": "腕手",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_cmc_3_L_metacarpal_3_L",
+      "surface_cmc_3_L_capitate_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_metacarpal_3_L",
+      "bone_capitate_L"
+    ]
+  },
+  {
+    "id": "mcp_3_L",
+    "name_zh": "左第3掌指关节",
+    "region": "腕手",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_mcp_3_L_metacarpal_3_L",
+      "surface_mcp_3_L_hand_phalanx_3_proximal_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_metacarpal_3_L",
+      "bone_hand_phalanx_3_proximal_L"
+    ]
+  },
+  {
+    "id": "hand_ip_3_proximal_middle_L",
+    "name_zh": "左第3指近节—中节指间关节",
+    "region": "腕手",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_hand_ip_3_proximal_middle_L_hand_phalanx_3_proximal_L",
+      "surface_hand_ip_3_proximal_middle_L_hand_phalanx_3_middle_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_hand_phalanx_3_proximal_L",
+      "bone_hand_phalanx_3_middle_L"
+    ]
+  },
+  {
+    "id": "hand_ip_3_middle_distal_L",
+    "name_zh": "左第3指中节—远节指间关节",
+    "region": "腕手",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_hand_ip_3_middle_distal_L_hand_phalanx_3_middle_L",
+      "surface_hand_ip_3_middle_distal_L_hand_phalanx_3_distal_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_hand_phalanx_3_middle_L",
+      "bone_hand_phalanx_3_distal_L"
+    ]
+  },
+  {
+    "id": "cmc_4_L",
+    "name_zh": "左第4腕掌连接",
+    "region": "腕手",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_cmc_4_L_metacarpal_4_L",
+      "surface_cmc_4_L_capitate_L",
+      "surface_cmc_4_L_hamate_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_metacarpal_4_L",
+      "bone_capitate_L",
+      "bone_hamate_L"
+    ]
+  },
+  {
+    "id": "mcp_4_L",
+    "name_zh": "左第4掌指关节",
+    "region": "腕手",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_mcp_4_L_metacarpal_4_L",
+      "surface_mcp_4_L_hand_phalanx_4_proximal_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_metacarpal_4_L",
+      "bone_hand_phalanx_4_proximal_L"
+    ]
+  },
+  {
+    "id": "hand_ip_4_proximal_middle_L",
+    "name_zh": "左第4指近节—中节指间关节",
+    "region": "腕手",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_hand_ip_4_proximal_middle_L_hand_phalanx_4_proximal_L",
+      "surface_hand_ip_4_proximal_middle_L_hand_phalanx_4_middle_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_hand_phalanx_4_proximal_L",
+      "bone_hand_phalanx_4_middle_L"
+    ]
+  },
+  {
+    "id": "hand_ip_4_middle_distal_L",
+    "name_zh": "左第4指中节—远节指间关节",
+    "region": "腕手",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_hand_ip_4_middle_distal_L_hand_phalanx_4_middle_L",
+      "surface_hand_ip_4_middle_distal_L_hand_phalanx_4_distal_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_hand_phalanx_4_middle_L",
+      "bone_hand_phalanx_4_distal_L"
+    ]
+  },
+  {
+    "id": "cmc_5_L",
+    "name_zh": "左第5腕掌连接",
+    "region": "腕手",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_cmc_5_L_metacarpal_5_L",
+      "surface_cmc_5_L_hamate_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_metacarpal_5_L",
+      "bone_hamate_L"
+    ]
+  },
+  {
+    "id": "mcp_5_L",
+    "name_zh": "左第5掌指关节",
+    "region": "腕手",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_mcp_5_L_metacarpal_5_L",
+      "surface_mcp_5_L_hand_phalanx_5_proximal_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_metacarpal_5_L",
+      "bone_hand_phalanx_5_proximal_L"
+    ]
+  },
+  {
+    "id": "hand_ip_5_proximal_middle_L",
+    "name_zh": "左第5指近节—中节指间关节",
+    "region": "腕手",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_hand_ip_5_proximal_middle_L_hand_phalanx_5_proximal_L",
+      "surface_hand_ip_5_proximal_middle_L_hand_phalanx_5_middle_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_hand_phalanx_5_proximal_L",
+      "bone_hand_phalanx_5_middle_L"
+    ]
+  },
+  {
+    "id": "hand_ip_5_middle_distal_L",
+    "name_zh": "左第5指中节—远节指间关节",
+    "region": "腕手",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_hand_ip_5_middle_distal_L_hand_phalanx_5_middle_L",
+      "surface_hand_ip_5_middle_distal_L_hand_phalanx_5_distal_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_hand_phalanx_5_middle_L",
+      "bone_hand_phalanx_5_distal_L"
+    ]
+  },
+  {
+    "id": "intermetacarpal_L",
+    "name_zh": "左掌骨间连接组",
+    "region": "腕手",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_intermetacarpal_L_metacarpal_2_L_to_metacarpal_3_L",
+      "surface_intermetacarpal_L_metacarpal_3_L_to_metacarpal_2_L",
+      "surface_intermetacarpal_L_metacarpal_3_L_to_metacarpal_4_L",
+      "surface_intermetacarpal_L_metacarpal_4_L_to_metacarpal_3_L",
+      "surface_intermetacarpal_L_metacarpal_4_L_to_metacarpal_5_L",
+      "surface_intermetacarpal_L_metacarpal_5_L_to_metacarpal_4_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_metacarpal_2_L",
+      "bone_metacarpal_3_L",
+      "bone_metacarpal_4_L",
+      "bone_metacarpal_5_L"
+    ]
+  },
+  {
+    "id": "sacroiliac_L",
+    "name_zh": "左骶髂关节",
+    "region": "骨盆与髋",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_sacroiliac_L_sacrum_M",
+      "surface_sacroiliac_L_hip_L"
+    ],
+    "notes": "不能把骶髂关节做成大幅球窝运动。",
+    "bone_ids": [
+      "bone_sacrum_M",
+      "bone_hip_L"
+    ]
+  },
+  {
+    "id": "hip_L",
+    "name_zh": "左髋关节",
+    "region": "骨盆与髋",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_hip_L_hip_L",
+      "surface_hip_L_femur_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_hip_L",
+      "bone_femur_L"
+    ]
+  },
+  {
+    "id": "tibiofemoral_L",
+    "name_zh": "左胫股关节组",
+    "region": "膝",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_tibiofemoral_L_femur_L",
+      "surface_tibiofemoral_L_tibia_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_femur_L",
+      "bone_tibia_L"
+    ]
+  },
+  {
+    "id": "patellofemoral_L",
+    "name_zh": "左髌股关节",
+    "region": "膝",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_patellofemoral_L_femur_L",
+      "surface_patellofemoral_L_patella_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_femur_L",
+      "bone_patella_L"
+    ]
+  },
+  {
+    "id": "proximal_tibiofibular_L",
+    "name_zh": "左近侧胫腓关节",
+    "region": "膝",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_proximal_tibiofibular_L_tibia_L",
+      "surface_proximal_tibiofibular_L_fibula_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_tibia_L",
+      "bone_fibula_L"
+    ]
+  },
+  {
+    "id": "distal_tibiofibular_L",
+    "name_zh": "左远侧胫腓连接",
+    "region": "踝足",
+    "status": "listed",
+    "layer_record_ids": [
+      "fibrous_distal_tibiofibular_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_tibia_L",
+      "bone_fibula_L"
+    ]
+  },
+  {
+    "id": "talocrural_L",
+    "name_zh": "左距小腿关节组",
+    "region": "踝足",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_talocrural_L_tibia_L",
+      "surface_talocrural_L_fibula_L",
+      "surface_talocrural_L_talus_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_tibia_L",
+      "bone_fibula_L",
+      "bone_talus_L"
+    ]
+  },
+  {
+    "id": "subtalar_L",
+    "name_zh": "左距下关节",
+    "region": "踝足",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_subtalar_L_talus_L",
+      "surface_subtalar_L_calcaneus_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_talus_L",
+      "bone_calcaneus_L"
+    ]
+  },
+  {
+    "id": "talocalcaneonavicular_L",
+    "name_zh": "左距跟舟关节组",
+    "region": "踝足",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_talocalcaneonavicular_L_talus_L",
+      "surface_talocalcaneonavicular_L_calcaneus_L",
+      "surface_talocalcaneonavicular_L_navicular_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_talus_L",
+      "bone_calcaneus_L",
+      "bone_navicular_L"
+    ]
+  },
+  {
+    "id": "calcaneocuboid_L",
+    "name_zh": "左跟骰关节",
+    "region": "踝足",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_calcaneocuboid_L_calcaneus_L",
+      "surface_calcaneocuboid_L_cuboid_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_calcaneus_L",
+      "bone_cuboid_L"
+    ]
+  },
+  {
+    "id": "distal_intertarsal_L",
+    "name_zh": "左远侧跗骨间连接组",
+    "region": "踝足",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_distal_intertarsal_L_navicular_L_to_medial_cuneiform_L",
+      "surface_distal_intertarsal_L_medial_cuneiform_L_to_navicular_L",
+      "surface_distal_intertarsal_L_navicular_L_to_intermediate_cuneiform_L",
+      "surface_distal_intertarsal_L_intermediate_cuneiform_L_to_navicular_L",
+      "surface_distal_intertarsal_L_navicular_L_to_lateral_cuneiform_L",
+      "surface_distal_intertarsal_L_lateral_cuneiform_L_to_navicular_L",
+      "surface_distal_intertarsal_L_medial_cuneiform_L_to_intermediate_cuneiform_L",
+      "surface_distal_intertarsal_L_intermediate_cuneiform_L_to_medial_cuneiform_L",
+      "surface_distal_intertarsal_L_intermediate_cuneiform_L_to_lateral_cuneiform_L",
+      "surface_distal_intertarsal_L_lateral_cuneiform_L_to_intermediate_cuneiform_L",
+      "surface_distal_intertarsal_L_lateral_cuneiform_L_to_cuboid_L",
+      "surface_distal_intertarsal_L_cuboid_L_to_lateral_cuneiform_L",
+      "surface_distal_intertarsal_L_navicular_L_to_cuboid_L",
+      "surface_distal_intertarsal_L_cuboid_L_to_navicular_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_navicular_L",
+      "bone_cuboid_L",
+      "bone_medial_cuneiform_L",
+      "bone_intermediate_cuneiform_L",
+      "bone_lateral_cuneiform_L"
+    ]
+  },
+  {
+    "id": "tmt_1_L",
+    "name_zh": "左第1跗跖连接",
+    "region": "踝足",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_tmt_1_L_metatarsal_1_L",
+      "surface_tmt_1_L_medial_cuneiform_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_metatarsal_1_L",
+      "bone_medial_cuneiform_L"
+    ]
+  },
+  {
+    "id": "mtp_1_L",
+    "name_zh": "左第1跖趾关节",
+    "region": "踝足",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_mtp_1_L_metatarsal_1_L",
+      "surface_mtp_1_L_foot_phalanx_1_proximal_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_metatarsal_1_L",
+      "bone_foot_phalanx_1_proximal_L"
+    ]
+  },
+  {
+    "id": "foot_ip_1_proximal_distal_L",
+    "name_zh": "左第1趾近节—远节趾间关节",
+    "region": "踝足",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_foot_ip_1_proximal_distal_L_foot_phalanx_1_proximal_L",
+      "surface_foot_ip_1_proximal_distal_L_foot_phalanx_1_distal_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_foot_phalanx_1_proximal_L",
+      "bone_foot_phalanx_1_distal_L"
+    ]
+  },
+  {
+    "id": "tmt_2_L",
+    "name_zh": "左第2跗跖连接",
+    "region": "踝足",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_tmt_2_L_metatarsal_2_L",
+      "surface_tmt_2_L_medial_cuneiform_L",
+      "surface_tmt_2_L_intermediate_cuneiform_L",
+      "surface_tmt_2_L_lateral_cuneiform_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_metatarsal_2_L",
+      "bone_medial_cuneiform_L",
+      "bone_intermediate_cuneiform_L",
+      "bone_lateral_cuneiform_L"
+    ]
+  },
+  {
+    "id": "mtp_2_L",
+    "name_zh": "左第2跖趾关节",
+    "region": "踝足",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_mtp_2_L_metatarsal_2_L",
+      "surface_mtp_2_L_foot_phalanx_2_proximal_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_metatarsal_2_L",
+      "bone_foot_phalanx_2_proximal_L"
+    ]
+  },
+  {
+    "id": "foot_ip_2_proximal_middle_L",
+    "name_zh": "左第2趾近节—中节趾间关节",
+    "region": "踝足",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_foot_ip_2_proximal_middle_L_foot_phalanx_2_proximal_L",
+      "surface_foot_ip_2_proximal_middle_L_foot_phalanx_2_middle_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_foot_phalanx_2_proximal_L",
+      "bone_foot_phalanx_2_middle_L"
+    ]
+  },
+  {
+    "id": "foot_ip_2_middle_distal_L",
+    "name_zh": "左第2趾中节—远节趾间关节",
+    "region": "踝足",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_foot_ip_2_middle_distal_L_foot_phalanx_2_middle_L",
+      "surface_foot_ip_2_middle_distal_L_foot_phalanx_2_distal_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_foot_phalanx_2_middle_L",
+      "bone_foot_phalanx_2_distal_L"
+    ]
+  },
+  {
+    "id": "tmt_3_L",
+    "name_zh": "左第3跗跖连接",
+    "region": "踝足",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_tmt_3_L_metatarsal_3_L",
+      "surface_tmt_3_L_lateral_cuneiform_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_metatarsal_3_L",
+      "bone_lateral_cuneiform_L"
+    ]
+  },
+  {
+    "id": "mtp_3_L",
+    "name_zh": "左第3跖趾关节",
+    "region": "踝足",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_mtp_3_L_metatarsal_3_L",
+      "surface_mtp_3_L_foot_phalanx_3_proximal_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_metatarsal_3_L",
+      "bone_foot_phalanx_3_proximal_L"
+    ]
+  },
+  {
+    "id": "foot_ip_3_proximal_middle_L",
+    "name_zh": "左第3趾近节—中节趾间关节",
+    "region": "踝足",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_foot_ip_3_proximal_middle_L_foot_phalanx_3_proximal_L",
+      "surface_foot_ip_3_proximal_middle_L_foot_phalanx_3_middle_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_foot_phalanx_3_proximal_L",
+      "bone_foot_phalanx_3_middle_L"
+    ]
+  },
+  {
+    "id": "foot_ip_3_middle_distal_L",
+    "name_zh": "左第3趾中节—远节趾间关节",
+    "region": "踝足",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_foot_ip_3_middle_distal_L_foot_phalanx_3_middle_L",
+      "surface_foot_ip_3_middle_distal_L_foot_phalanx_3_distal_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_foot_phalanx_3_middle_L",
+      "bone_foot_phalanx_3_distal_L"
+    ]
+  },
+  {
+    "id": "tmt_4_L",
+    "name_zh": "左第4跗跖连接",
+    "region": "踝足",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_tmt_4_L_metatarsal_4_L",
+      "surface_tmt_4_L_cuboid_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_metatarsal_4_L",
+      "bone_cuboid_L"
+    ]
+  },
+  {
+    "id": "mtp_4_L",
+    "name_zh": "左第4跖趾关节",
+    "region": "踝足",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_mtp_4_L_metatarsal_4_L",
+      "surface_mtp_4_L_foot_phalanx_4_proximal_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_metatarsal_4_L",
+      "bone_foot_phalanx_4_proximal_L"
+    ]
+  },
+  {
+    "id": "foot_ip_4_proximal_middle_L",
+    "name_zh": "左第4趾近节—中节趾间关节",
+    "region": "踝足",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_foot_ip_4_proximal_middle_L_foot_phalanx_4_proximal_L",
+      "surface_foot_ip_4_proximal_middle_L_foot_phalanx_4_middle_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_foot_phalanx_4_proximal_L",
+      "bone_foot_phalanx_4_middle_L"
+    ]
+  },
+  {
+    "id": "foot_ip_4_middle_distal_L",
+    "name_zh": "左第4趾中节—远节趾间关节",
+    "region": "踝足",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_foot_ip_4_middle_distal_L_foot_phalanx_4_middle_L",
+      "surface_foot_ip_4_middle_distal_L_foot_phalanx_4_distal_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_foot_phalanx_4_middle_L",
+      "bone_foot_phalanx_4_distal_L"
+    ]
+  },
+  {
+    "id": "tmt_5_L",
+    "name_zh": "左第5跗跖连接",
+    "region": "踝足",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_tmt_5_L_metatarsal_5_L",
+      "surface_tmt_5_L_cuboid_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_metatarsal_5_L",
+      "bone_cuboid_L"
+    ]
+  },
+  {
+    "id": "mtp_5_L",
+    "name_zh": "左第5跖趾关节",
+    "region": "踝足",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_mtp_5_L_metatarsal_5_L",
+      "surface_mtp_5_L_foot_phalanx_5_proximal_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_metatarsal_5_L",
+      "bone_foot_phalanx_5_proximal_L"
+    ]
+  },
+  {
+    "id": "foot_ip_5_proximal_middle_L",
+    "name_zh": "左第5趾近节—中节趾间关节",
+    "region": "踝足",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_foot_ip_5_proximal_middle_L_foot_phalanx_5_proximal_L",
+      "surface_foot_ip_5_proximal_middle_L_foot_phalanx_5_middle_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_foot_phalanx_5_proximal_L",
+      "bone_foot_phalanx_5_middle_L"
+    ]
+  },
+  {
+    "id": "foot_ip_5_middle_distal_L",
+    "name_zh": "左第5趾中节—远节趾间关节",
+    "region": "踝足",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_foot_ip_5_middle_distal_L_foot_phalanx_5_middle_L",
+      "surface_foot_ip_5_middle_distal_L_foot_phalanx_5_distal_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_foot_phalanx_5_middle_L",
+      "bone_foot_phalanx_5_distal_L"
+    ]
+  },
+  {
+    "id": "intermetatarsal_L",
+    "name_zh": "左跖骨间连接组",
+    "region": "踝足",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_intermetatarsal_L_metatarsal_2_L_to_metatarsal_3_L",
+      "surface_intermetatarsal_L_metatarsal_3_L_to_metatarsal_2_L",
+      "surface_intermetatarsal_L_metatarsal_3_L_to_metatarsal_4_L",
+      "surface_intermetatarsal_L_metatarsal_4_L_to_metatarsal_3_L",
+      "surface_intermetatarsal_L_metatarsal_4_L_to_metatarsal_5_L",
+      "surface_intermetatarsal_L_metatarsal_5_L_to_metatarsal_4_L"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_metatarsal_2_L",
+      "bone_metatarsal_3_L",
+      "bone_metatarsal_4_L",
+      "bone_metatarsal_5_L"
+    ]
+  },
+  {
+    "id": "tmj_R",
+    "name_zh": "右颞下颌关节",
+    "region": "头颈与听骨",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_tmj_R_temporal_R",
+      "surface_tmj_R_mandible_M"
+    ],
+    "notes": "不能用两个独立动画同时驱动同一下颌骨。",
+    "bone_ids": [
+      "bone_temporal_R",
+      "bone_mandible_M"
+    ]
+  },
+  {
+    "id": "incudomalleolar_R",
+    "name_zh": "右锤砧关节",
+    "region": "头颈与听骨",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_incudomalleolar_R_malleus_R",
+      "surface_incudomalleolar_R_incus_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_malleus_R",
+      "bone_incus_R"
+    ]
+  },
+  {
+    "id": "incudostapedial_R",
+    "name_zh": "右砧镫关节",
+    "region": "头颈与听骨",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_incudostapedial_R_incus_R",
+      "surface_incudostapedial_R_stapes_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_incus_R",
+      "bone_stapes_R"
+    ]
+  },
+  {
+    "id": "stapes_window_R",
+    "name_zh": "右镫骨—前庭窗连接",
+    "region": "头颈与听骨",
+    "status": "listed",
+    "layer_record_ids": [
+      "fibrous_stapes_window_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_stapes_R",
+      "bone_temporal_R"
+    ]
+  },
+  {
+    "id": "costovertebral_01_R",
+    "name_zh": "右第1肋椎连接组",
+    "region": "胸廓",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_costovertebral_01_R_rib_01_R_head",
+      "surface_costovertebral_01_R_vertebra_T1_M_head",
+      "surface_costovertebral_01_R_rib_01_R_tubercle",
+      "surface_costovertebral_01_R_vertebra_T1_M_tubercle"
+    ],
+    "notes": "第11/12肋无肋横突关节；第10肋关节面及肋头连接存在变异，需按源模板确认。",
+    "bone_ids": [
+      "bone_rib_01_R",
+      "bone_vertebra_T1_M"
+    ]
+  },
+  {
+    "id": "sternocostal_01_R",
+    "name_zh": "右第1胸肋连接",
+    "region": "胸廓",
+    "status": "listed",
+    "layer_record_ids": [
+      "costal_cartilage_1_R",
+      "junction_sternocostal_01_R"
+    ],
+    "notes": "此条包括肋软骨两端连接；软骨待单独建模。",
+    "bone_ids": [
+      "bone_rib_01_R",
+      "bone_sternum_M"
+    ]
+  },
+  {
+    "id": "costovertebral_02_R",
+    "name_zh": "右第2肋椎连接组",
+    "region": "胸廓",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_costovertebral_02_R_rib_02_R_head",
+      "surface_costovertebral_02_R_vertebra_T2_M_head",
+      "surface_costovertebral_02_R_vertebra_T1_M_head",
+      "surface_costovertebral_02_R_rib_02_R_tubercle",
+      "surface_costovertebral_02_R_vertebra_T2_M_tubercle"
+    ],
+    "notes": "第11/12肋无肋横突关节；第10肋关节面及肋头连接存在变异，需按源模板确认。",
+    "bone_ids": [
+      "bone_rib_02_R",
+      "bone_vertebra_T2_M",
+      "bone_vertebra_T1_M"
+    ]
+  },
+  {
+    "id": "sternocostal_02_R",
+    "name_zh": "右第2胸肋连接",
+    "region": "胸廓",
+    "status": "listed",
+    "layer_record_ids": [
+      "costal_cartilage_2_R",
+      "junction_sternocostal_02_R"
+    ],
+    "notes": "此条包括肋软骨两端连接；软骨待单独建模。",
+    "bone_ids": [
+      "bone_rib_02_R",
+      "bone_sternum_M"
+    ]
+  },
+  {
+    "id": "costovertebral_03_R",
+    "name_zh": "右第3肋椎连接组",
+    "region": "胸廓",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_costovertebral_03_R_rib_03_R_head",
+      "surface_costovertebral_03_R_vertebra_T3_M_head",
+      "surface_costovertebral_03_R_vertebra_T2_M_head",
+      "surface_costovertebral_03_R_rib_03_R_tubercle",
+      "surface_costovertebral_03_R_vertebra_T3_M_tubercle"
+    ],
+    "notes": "第11/12肋无肋横突关节；第10肋关节面及肋头连接存在变异，需按源模板确认。",
+    "bone_ids": [
+      "bone_rib_03_R",
+      "bone_vertebra_T3_M",
+      "bone_vertebra_T2_M"
+    ]
+  },
+  {
+    "id": "sternocostal_03_R",
+    "name_zh": "右第3胸肋连接",
+    "region": "胸廓",
+    "status": "listed",
+    "layer_record_ids": [
+      "costal_cartilage_3_R",
+      "junction_sternocostal_03_R"
+    ],
+    "notes": "此条包括肋软骨两端连接；软骨待单独建模。",
+    "bone_ids": [
+      "bone_rib_03_R",
+      "bone_sternum_M"
+    ]
+  },
+  {
+    "id": "costovertebral_04_R",
+    "name_zh": "右第4肋椎连接组",
+    "region": "胸廓",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_costovertebral_04_R_rib_04_R_head",
+      "surface_costovertebral_04_R_vertebra_T4_M_head",
+      "surface_costovertebral_04_R_vertebra_T3_M_head",
+      "surface_costovertebral_04_R_rib_04_R_tubercle",
+      "surface_costovertebral_04_R_vertebra_T4_M_tubercle"
+    ],
+    "notes": "第11/12肋无肋横突关节；第10肋关节面及肋头连接存在变异，需按源模板确认。",
+    "bone_ids": [
+      "bone_rib_04_R",
+      "bone_vertebra_T4_M",
+      "bone_vertebra_T3_M"
+    ]
+  },
+  {
+    "id": "sternocostal_04_R",
+    "name_zh": "右第4胸肋连接",
+    "region": "胸廓",
+    "status": "listed",
+    "layer_record_ids": [
+      "costal_cartilage_4_R",
+      "junction_sternocostal_04_R"
+    ],
+    "notes": "此条包括肋软骨两端连接；软骨待单独建模。",
+    "bone_ids": [
+      "bone_rib_04_R",
+      "bone_sternum_M"
+    ]
+  },
+  {
+    "id": "costovertebral_05_R",
+    "name_zh": "右第5肋椎连接组",
+    "region": "胸廓",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_costovertebral_05_R_rib_05_R_head",
+      "surface_costovertebral_05_R_vertebra_T5_M_head",
+      "surface_costovertebral_05_R_vertebra_T4_M_head",
+      "surface_costovertebral_05_R_rib_05_R_tubercle",
+      "surface_costovertebral_05_R_vertebra_T5_M_tubercle"
+    ],
+    "notes": "第11/12肋无肋横突关节；第10肋关节面及肋头连接存在变异，需按源模板确认。",
+    "bone_ids": [
+      "bone_rib_05_R",
+      "bone_vertebra_T5_M",
+      "bone_vertebra_T4_M"
+    ]
+  },
+  {
+    "id": "sternocostal_05_R",
+    "name_zh": "右第5胸肋连接",
+    "region": "胸廓",
+    "status": "listed",
+    "layer_record_ids": [
+      "costal_cartilage_5_R",
+      "junction_sternocostal_05_R"
+    ],
+    "notes": "此条包括肋软骨两端连接；软骨待单独建模。",
+    "bone_ids": [
+      "bone_rib_05_R",
+      "bone_sternum_M"
+    ]
+  },
+  {
+    "id": "costovertebral_06_R",
+    "name_zh": "右第6肋椎连接组",
+    "region": "胸廓",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_costovertebral_06_R_rib_06_R_head",
+      "surface_costovertebral_06_R_vertebra_T6_M_head",
+      "surface_costovertebral_06_R_vertebra_T5_M_head",
+      "surface_costovertebral_06_R_rib_06_R_tubercle",
+      "surface_costovertebral_06_R_vertebra_T6_M_tubercle"
+    ],
+    "notes": "第11/12肋无肋横突关节；第10肋关节面及肋头连接存在变异，需按源模板确认。",
+    "bone_ids": [
+      "bone_rib_06_R",
+      "bone_vertebra_T6_M",
+      "bone_vertebra_T5_M"
+    ]
+  },
+  {
+    "id": "sternocostal_06_R",
+    "name_zh": "右第6胸肋连接",
+    "region": "胸廓",
+    "status": "listed",
+    "layer_record_ids": [
+      "costal_cartilage_6_R",
+      "junction_sternocostal_06_R"
+    ],
+    "notes": "此条包括肋软骨两端连接；软骨待单独建模。",
+    "bone_ids": [
+      "bone_rib_06_R",
+      "bone_sternum_M"
+    ]
+  },
+  {
+    "id": "costovertebral_07_R",
+    "name_zh": "右第7肋椎连接组",
+    "region": "胸廓",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_costovertebral_07_R_rib_07_R_head",
+      "surface_costovertebral_07_R_vertebra_T7_M_head",
+      "surface_costovertebral_07_R_vertebra_T6_M_head",
+      "surface_costovertebral_07_R_rib_07_R_tubercle",
+      "surface_costovertebral_07_R_vertebra_T7_M_tubercle"
+    ],
+    "notes": "第11/12肋无肋横突关节；第10肋关节面及肋头连接存在变异，需按源模板确认。",
+    "bone_ids": [
+      "bone_rib_07_R",
+      "bone_vertebra_T7_M",
+      "bone_vertebra_T6_M"
+    ]
+  },
+  {
+    "id": "sternocostal_07_R",
+    "name_zh": "右第7胸肋连接",
+    "region": "胸廓",
+    "status": "listed",
+    "layer_record_ids": [
+      "costal_cartilage_7_R",
+      "junction_sternocostal_07_R"
+    ],
+    "notes": "此条包括肋软骨两端连接；软骨待单独建模。",
+    "bone_ids": [
+      "bone_rib_07_R",
+      "bone_sternum_M"
+    ]
+  },
+  {
+    "id": "costovertebral_08_R",
+    "name_zh": "右第8肋椎连接组",
+    "region": "胸廓",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_costovertebral_08_R_rib_08_R_head",
+      "surface_costovertebral_08_R_vertebra_T8_M_head",
+      "surface_costovertebral_08_R_vertebra_T7_M_head",
+      "surface_costovertebral_08_R_rib_08_R_tubercle",
+      "surface_costovertebral_08_R_vertebra_T8_M_tubercle"
+    ],
+    "notes": "第11/12肋无肋横突关节；第10肋关节面及肋头连接存在变异，需按源模板确认。",
+    "bone_ids": [
+      "bone_rib_08_R",
+      "bone_vertebra_T8_M",
+      "bone_vertebra_T7_M"
+    ]
+  },
+  {
+    "id": "costal_arch_08_R",
+    "name_zh": "右第8肋软骨弓连接",
+    "region": "胸廓",
+    "status": "listed",
+    "layer_record_ids": [
+      "costal_cartilage_8_R",
+      "junction_costal_arch_08_R"
+    ],
+    "notes": "骨ID描述间接关系；软骨对象会补入连接图。",
+    "bone_ids": [
+      "bone_rib_08_R",
+      "bone_rib_07_R"
+    ]
+  },
+  {
+    "id": "costovertebral_09_R",
+    "name_zh": "右第9肋椎连接组",
+    "region": "胸廓",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_costovertebral_09_R_rib_09_R_head",
+      "surface_costovertebral_09_R_vertebra_T9_M_head",
+      "surface_costovertebral_09_R_vertebra_T8_M_head",
+      "surface_costovertebral_09_R_rib_09_R_tubercle",
+      "surface_costovertebral_09_R_vertebra_T9_M_tubercle"
+    ],
+    "notes": "第11/12肋无肋横突关节；第10肋关节面及肋头连接存在变异，需按源模板确认。",
+    "bone_ids": [
+      "bone_rib_09_R",
+      "bone_vertebra_T9_M",
+      "bone_vertebra_T8_M"
+    ]
+  },
+  {
+    "id": "costal_arch_09_R",
+    "name_zh": "右第9肋软骨弓连接",
+    "region": "胸廓",
+    "status": "listed",
+    "layer_record_ids": [
+      "costal_cartilage_9_R",
+      "junction_costal_arch_09_R"
+    ],
+    "notes": "骨ID描述间接关系；软骨对象会补入连接图。",
+    "bone_ids": [
+      "bone_rib_09_R",
+      "bone_rib_08_R"
+    ]
+  },
+  {
+    "id": "costovertebral_10_R",
+    "name_zh": "右第10肋椎连接组",
+    "region": "胸廓",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_costovertebral_10_R_rib_10_R_head",
+      "surface_costovertebral_10_R_vertebra_T10_M_head",
+      "surface_costovertebral_10_R_rib_10_R_tubercle",
+      "surface_costovertebral_10_R_vertebra_T10_M_tubercle"
+    ],
+    "notes": "第11/12肋无肋横突关节；第10肋关节面及肋头连接存在变异，需按源模板确认。",
+    "bone_ids": [
+      "bone_rib_10_R",
+      "bone_vertebra_T10_M"
+    ]
+  },
+  {
+    "id": "costal_arch_10_R",
+    "name_zh": "右第10肋软骨弓连接",
+    "region": "胸廓",
+    "status": "listed",
+    "layer_record_ids": [
+      "costal_cartilage_10_R",
+      "junction_costal_arch_10_R"
+    ],
+    "notes": "骨ID描述间接关系；软骨对象会补入连接图。",
+    "bone_ids": [
+      "bone_rib_10_R",
+      "bone_rib_09_R"
+    ]
+  },
+  {
+    "id": "costovertebral_11_R",
+    "name_zh": "右第11肋椎连接组",
+    "region": "胸廓",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_costovertebral_11_R_rib_11_R_head",
+      "surface_costovertebral_11_R_vertebra_T11_M_head"
+    ],
+    "notes": "第11/12肋无肋横突关节；第10肋关节面及肋头连接存在变异，需按源模板确认。",
+    "bone_ids": [
+      "bone_rib_11_R",
+      "bone_vertebra_T11_M"
+    ]
+  },
+  {
+    "id": "costovertebral_12_R",
+    "name_zh": "右第12肋椎连接组",
+    "region": "胸廓",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_costovertebral_12_R_rib_12_R_head",
+      "surface_costovertebral_12_R_vertebra_T12_M_head"
+    ],
+    "notes": "第11/12肋无肋横突关节；第10肋关节面及肋头连接存在变异，需按源模板确认。",
+    "bone_ids": [
+      "bone_rib_12_R",
+      "bone_vertebra_T12_M"
+    ]
+  },
+  {
+    "id": "sternoclavicular_R",
+    "name_zh": "右胸锁关节",
+    "region": "肩带",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_sternoclavicular_R_sternum_M",
+      "surface_sternoclavicular_R_clavicle_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_sternum_M",
+      "bone_clavicle_R"
+    ]
+  },
+  {
+    "id": "acromioclavicular_R",
+    "name_zh": "右肩锁关节",
+    "region": "肩带",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_acromioclavicular_R_clavicle_R",
+      "surface_acromioclavicular_R_scapula_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_clavicle_R",
+      "bone_scapula_R"
+    ]
+  },
+  {
+    "id": "scapulothoracic_R",
+    "name_zh": "右肩胛胸壁功能连接",
+    "region": "肩带",
+    "status": "not_articular_cartilage_layer",
+    "layer_record_ids": [],
+    "notes": "功能性滑动关系，不是有共同关节腔的骨性关节；比例不预设为固定常数。",
+    "bone_ids": [
+      "bone_scapula_R",
+      "bone_rib_02_R",
+      "bone_rib_03_R",
+      "bone_rib_04_R",
+      "bone_rib_05_R",
+      "bone_rib_06_R",
+      "bone_rib_07_R"
+    ]
+  },
+  {
+    "id": "glenohumeral_R",
+    "name_zh": "右盂肱关节",
+    "region": "肩带",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_glenohumeral_R_scapula_R",
+      "surface_glenohumeral_R_humerus_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_scapula_R",
+      "bone_humerus_R"
+    ]
+  },
+  {
+    "id": "humeroulnar_R",
+    "name_zh": "右肱尺关节",
+    "region": "肘与前臂",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_humeroulnar_R_humerus_R",
+      "surface_humeroulnar_R_ulna_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_humerus_R",
+      "bone_ulna_R"
+    ]
+  },
+  {
+    "id": "humeroradial_R",
+    "name_zh": "右肱桡关节",
+    "region": "肘与前臂",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_humeroradial_R_humerus_R",
+      "surface_humeroradial_R_radius_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_humerus_R",
+      "bone_radius_R"
+    ]
+  },
+  {
+    "id": "proximal_radioulnar_R",
+    "name_zh": "右近侧桡尺关节",
+    "region": "肘与前臂",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_proximal_radioulnar_R_radius_R",
+      "surface_proximal_radioulnar_R_ulna_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_radius_R",
+      "bone_ulna_R"
+    ]
+  },
+  {
+    "id": "distal_radioulnar_R",
+    "name_zh": "右远侧桡尺关节",
+    "region": "腕手",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_distal_radioulnar_R_radius_R",
+      "surface_distal_radioulnar_R_ulna_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_radius_R",
+      "bone_ulna_R"
+    ]
+  },
+  {
+    "id": "forearm_interosseous_R",
+    "name_zh": "右前臂骨间连接",
+    "region": "肘与前臂",
+    "status": "listed",
+    "layer_record_ids": [
+      "fibrous_forearm_interosseous_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_radius_R",
+      "bone_ulna_R"
+    ]
+  },
+  {
+    "id": "radiocarpal_R",
+    "name_zh": "右桡腕关节组",
+    "region": "腕手",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_radiocarpal_R_radius_R",
+      "surface_radiocarpal_R_scaphoid_R",
+      "surface_radiocarpal_R_lunate_R",
+      "surface_radiocarpal_R_triquetrum_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_radius_R",
+      "bone_scaphoid_R",
+      "bone_lunate_R",
+      "bone_triquetrum_R"
+    ]
+  },
+  {
+    "id": "intercarpal_R",
+    "name_zh": "右腕骨间连接组",
+    "region": "腕手",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_intercarpal_R_scaphoid_R_to_lunate_R",
+      "surface_intercarpal_R_lunate_R_to_scaphoid_R",
+      "surface_intercarpal_R_lunate_R_to_triquetrum_R",
+      "surface_intercarpal_R_triquetrum_R_to_lunate_R",
+      "surface_intercarpal_R_triquetrum_R_to_pisiform_R",
+      "surface_intercarpal_R_pisiform_R_to_triquetrum_R",
+      "surface_intercarpal_R_trapezium_R_to_trapezoid_R",
+      "surface_intercarpal_R_trapezoid_R_to_trapezium_R",
+      "surface_intercarpal_R_trapezoid_R_to_capitate_R",
+      "surface_intercarpal_R_capitate_R_to_trapezoid_R",
+      "surface_intercarpal_R_capitate_R_to_hamate_R",
+      "surface_intercarpal_R_hamate_R_to_capitate_R",
+      "surface_intercarpal_R_scaphoid_R_to_trapezium_R",
+      "surface_intercarpal_R_trapezium_R_to_scaphoid_R",
+      "surface_intercarpal_R_scaphoid_R_to_trapezoid_R",
+      "surface_intercarpal_R_trapezoid_R_to_scaphoid_R",
+      "surface_intercarpal_R_scaphoid_R_to_capitate_R",
+      "surface_intercarpal_R_capitate_R_to_scaphoid_R",
+      "surface_intercarpal_R_lunate_R_to_capitate_R",
+      "surface_intercarpal_R_capitate_R_to_lunate_R",
+      "surface_intercarpal_R_lunate_R_to_hamate_R",
+      "surface_intercarpal_R_hamate_R_to_lunate_R",
+      "surface_intercarpal_R_triquetrum_R_to_hamate_R",
+      "surface_intercarpal_R_hamate_R_to_triquetrum_R"
+    ],
+    "notes": "后续逐关节面展开；不能将8块腕骨看作一个刚体。",
+    "bone_ids": [
+      "bone_scaphoid_R",
+      "bone_lunate_R",
+      "bone_triquetrum_R",
+      "bone_pisiform_R",
+      "bone_trapezium_R",
+      "bone_trapezoid_R",
+      "bone_capitate_R",
+      "bone_hamate_R"
+    ]
+  },
+  {
+    "id": "cmc_1_R",
+    "name_zh": "右第1腕掌连接",
+    "region": "腕手",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_cmc_1_R_metacarpal_1_R",
+      "surface_cmc_1_R_trapezium_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_metacarpal_1_R",
+      "bone_trapezium_R"
+    ]
+  },
+  {
+    "id": "mcp_1_R",
+    "name_zh": "右第1掌指关节",
+    "region": "腕手",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_mcp_1_R_metacarpal_1_R",
+      "surface_mcp_1_R_hand_phalanx_1_proximal_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_metacarpal_1_R",
+      "bone_hand_phalanx_1_proximal_R"
+    ]
+  },
+  {
+    "id": "hand_ip_1_proximal_distal_R",
+    "name_zh": "右第1指近节—远节指间关节",
+    "region": "腕手",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_hand_ip_1_proximal_distal_R_hand_phalanx_1_proximal_R",
+      "surface_hand_ip_1_proximal_distal_R_hand_phalanx_1_distal_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_hand_phalanx_1_proximal_R",
+      "bone_hand_phalanx_1_distal_R"
+    ]
+  },
+  {
+    "id": "cmc_2_R",
+    "name_zh": "右第2腕掌连接",
+    "region": "腕手",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_cmc_2_R_metacarpal_2_R",
+      "surface_cmc_2_R_trapezium_R",
+      "surface_cmc_2_R_trapezoid_R",
+      "surface_cmc_2_R_capitate_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_metacarpal_2_R",
+      "bone_trapezium_R",
+      "bone_trapezoid_R",
+      "bone_capitate_R"
+    ]
+  },
+  {
+    "id": "mcp_2_R",
+    "name_zh": "右第2掌指关节",
+    "region": "腕手",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_mcp_2_R_metacarpal_2_R",
+      "surface_mcp_2_R_hand_phalanx_2_proximal_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_metacarpal_2_R",
+      "bone_hand_phalanx_2_proximal_R"
+    ]
+  },
+  {
+    "id": "hand_ip_2_proximal_middle_R",
+    "name_zh": "右第2指近节—中节指间关节",
+    "region": "腕手",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_hand_ip_2_proximal_middle_R_hand_phalanx_2_proximal_R",
+      "surface_hand_ip_2_proximal_middle_R_hand_phalanx_2_middle_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_hand_phalanx_2_proximal_R",
+      "bone_hand_phalanx_2_middle_R"
+    ]
+  },
+  {
+    "id": "hand_ip_2_middle_distal_R",
+    "name_zh": "右第2指中节—远节指间关节",
+    "region": "腕手",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_hand_ip_2_middle_distal_R_hand_phalanx_2_middle_R",
+      "surface_hand_ip_2_middle_distal_R_hand_phalanx_2_distal_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_hand_phalanx_2_middle_R",
+      "bone_hand_phalanx_2_distal_R"
+    ]
+  },
+  {
+    "id": "cmc_3_R",
+    "name_zh": "右第3腕掌连接",
+    "region": "腕手",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_cmc_3_R_metacarpal_3_R",
+      "surface_cmc_3_R_capitate_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_metacarpal_3_R",
+      "bone_capitate_R"
+    ]
+  },
+  {
+    "id": "mcp_3_R",
+    "name_zh": "右第3掌指关节",
+    "region": "腕手",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_mcp_3_R_metacarpal_3_R",
+      "surface_mcp_3_R_hand_phalanx_3_proximal_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_metacarpal_3_R",
+      "bone_hand_phalanx_3_proximal_R"
+    ]
+  },
+  {
+    "id": "hand_ip_3_proximal_middle_R",
+    "name_zh": "右第3指近节—中节指间关节",
+    "region": "腕手",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_hand_ip_3_proximal_middle_R_hand_phalanx_3_proximal_R",
+      "surface_hand_ip_3_proximal_middle_R_hand_phalanx_3_middle_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_hand_phalanx_3_proximal_R",
+      "bone_hand_phalanx_3_middle_R"
+    ]
+  },
+  {
+    "id": "hand_ip_3_middle_distal_R",
+    "name_zh": "右第3指中节—远节指间关节",
+    "region": "腕手",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_hand_ip_3_middle_distal_R_hand_phalanx_3_middle_R",
+      "surface_hand_ip_3_middle_distal_R_hand_phalanx_3_distal_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_hand_phalanx_3_middle_R",
+      "bone_hand_phalanx_3_distal_R"
+    ]
+  },
+  {
+    "id": "cmc_4_R",
+    "name_zh": "右第4腕掌连接",
+    "region": "腕手",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_cmc_4_R_metacarpal_4_R",
+      "surface_cmc_4_R_capitate_R",
+      "surface_cmc_4_R_hamate_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_metacarpal_4_R",
+      "bone_capitate_R",
+      "bone_hamate_R"
+    ]
+  },
+  {
+    "id": "mcp_4_R",
+    "name_zh": "右第4掌指关节",
+    "region": "腕手",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_mcp_4_R_metacarpal_4_R",
+      "surface_mcp_4_R_hand_phalanx_4_proximal_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_metacarpal_4_R",
+      "bone_hand_phalanx_4_proximal_R"
+    ]
+  },
+  {
+    "id": "hand_ip_4_proximal_middle_R",
+    "name_zh": "右第4指近节—中节指间关节",
+    "region": "腕手",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_hand_ip_4_proximal_middle_R_hand_phalanx_4_proximal_R",
+      "surface_hand_ip_4_proximal_middle_R_hand_phalanx_4_middle_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_hand_phalanx_4_proximal_R",
+      "bone_hand_phalanx_4_middle_R"
+    ]
+  },
+  {
+    "id": "hand_ip_4_middle_distal_R",
+    "name_zh": "右第4指中节—远节指间关节",
+    "region": "腕手",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_hand_ip_4_middle_distal_R_hand_phalanx_4_middle_R",
+      "surface_hand_ip_4_middle_distal_R_hand_phalanx_4_distal_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_hand_phalanx_4_middle_R",
+      "bone_hand_phalanx_4_distal_R"
+    ]
+  },
+  {
+    "id": "cmc_5_R",
+    "name_zh": "右第5腕掌连接",
+    "region": "腕手",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_cmc_5_R_metacarpal_5_R",
+      "surface_cmc_5_R_hamate_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_metacarpal_5_R",
+      "bone_hamate_R"
+    ]
+  },
+  {
+    "id": "mcp_5_R",
+    "name_zh": "右第5掌指关节",
+    "region": "腕手",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_mcp_5_R_metacarpal_5_R",
+      "surface_mcp_5_R_hand_phalanx_5_proximal_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_metacarpal_5_R",
+      "bone_hand_phalanx_5_proximal_R"
+    ]
+  },
+  {
+    "id": "hand_ip_5_proximal_middle_R",
+    "name_zh": "右第5指近节—中节指间关节",
+    "region": "腕手",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_hand_ip_5_proximal_middle_R_hand_phalanx_5_proximal_R",
+      "surface_hand_ip_5_proximal_middle_R_hand_phalanx_5_middle_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_hand_phalanx_5_proximal_R",
+      "bone_hand_phalanx_5_middle_R"
+    ]
+  },
+  {
+    "id": "hand_ip_5_middle_distal_R",
+    "name_zh": "右第5指中节—远节指间关节",
+    "region": "腕手",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_hand_ip_5_middle_distal_R_hand_phalanx_5_middle_R",
+      "surface_hand_ip_5_middle_distal_R_hand_phalanx_5_distal_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_hand_phalanx_5_middle_R",
+      "bone_hand_phalanx_5_distal_R"
+    ]
+  },
+  {
+    "id": "intermetacarpal_R",
+    "name_zh": "右掌骨间连接组",
+    "region": "腕手",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_intermetacarpal_R_metacarpal_2_R_to_metacarpal_3_R",
+      "surface_intermetacarpal_R_metacarpal_3_R_to_metacarpal_2_R",
+      "surface_intermetacarpal_R_metacarpal_3_R_to_metacarpal_4_R",
+      "surface_intermetacarpal_R_metacarpal_4_R_to_metacarpal_3_R",
+      "surface_intermetacarpal_R_metacarpal_4_R_to_metacarpal_5_R",
+      "surface_intermetacarpal_R_metacarpal_5_R_to_metacarpal_4_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_metacarpal_2_R",
+      "bone_metacarpal_3_R",
+      "bone_metacarpal_4_R",
+      "bone_metacarpal_5_R"
+    ]
+  },
+  {
+    "id": "sacroiliac_R",
+    "name_zh": "右骶髂关节",
+    "region": "骨盆与髋",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_sacroiliac_R_sacrum_M",
+      "surface_sacroiliac_R_hip_R"
+    ],
+    "notes": "不能把骶髂关节做成大幅球窝运动。",
+    "bone_ids": [
+      "bone_sacrum_M",
+      "bone_hip_R"
+    ]
+  },
+  {
+    "id": "hip_R",
+    "name_zh": "右髋关节",
+    "region": "骨盆与髋",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_hip_R_hip_R",
+      "surface_hip_R_femur_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_hip_R",
+      "bone_femur_R"
+    ]
+  },
+  {
+    "id": "tibiofemoral_R",
+    "name_zh": "右胫股关节组",
+    "region": "膝",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_tibiofemoral_R_femur_R",
+      "surface_tibiofemoral_R_tibia_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_femur_R",
+      "bone_tibia_R"
+    ]
+  },
+  {
+    "id": "patellofemoral_R",
+    "name_zh": "右髌股关节",
+    "region": "膝",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_patellofemoral_R_femur_R",
+      "surface_patellofemoral_R_patella_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_femur_R",
+      "bone_patella_R"
+    ]
+  },
+  {
+    "id": "proximal_tibiofibular_R",
+    "name_zh": "右近侧胫腓关节",
+    "region": "膝",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_proximal_tibiofibular_R_tibia_R",
+      "surface_proximal_tibiofibular_R_fibula_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_tibia_R",
+      "bone_fibula_R"
+    ]
+  },
+  {
+    "id": "distal_tibiofibular_R",
+    "name_zh": "右远侧胫腓连接",
+    "region": "踝足",
+    "status": "listed",
+    "layer_record_ids": [
+      "fibrous_distal_tibiofibular_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_tibia_R",
+      "bone_fibula_R"
+    ]
+  },
+  {
+    "id": "talocrural_R",
+    "name_zh": "右距小腿关节组",
+    "region": "踝足",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_talocrural_R_tibia_R",
+      "surface_talocrural_R_fibula_R",
+      "surface_talocrural_R_talus_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_tibia_R",
+      "bone_fibula_R",
+      "bone_talus_R"
+    ]
+  },
+  {
+    "id": "subtalar_R",
+    "name_zh": "右距下关节",
+    "region": "踝足",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_subtalar_R_talus_R",
+      "surface_subtalar_R_calcaneus_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_talus_R",
+      "bone_calcaneus_R"
+    ]
+  },
+  {
+    "id": "talocalcaneonavicular_R",
+    "name_zh": "右距跟舟关节组",
+    "region": "踝足",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_talocalcaneonavicular_R_talus_R",
+      "surface_talocalcaneonavicular_R_calcaneus_R",
+      "surface_talocalcaneonavicular_R_navicular_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_talus_R",
+      "bone_calcaneus_R",
+      "bone_navicular_R"
+    ]
+  },
+  {
+    "id": "calcaneocuboid_R",
+    "name_zh": "右跟骰关节",
+    "region": "踝足",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_calcaneocuboid_R_calcaneus_R",
+      "surface_calcaneocuboid_R_cuboid_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_calcaneus_R",
+      "bone_cuboid_R"
+    ]
+  },
+  {
+    "id": "distal_intertarsal_R",
+    "name_zh": "右远侧跗骨间连接组",
+    "region": "踝足",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_distal_intertarsal_R_navicular_R_to_medial_cuneiform_R",
+      "surface_distal_intertarsal_R_medial_cuneiform_R_to_navicular_R",
+      "surface_distal_intertarsal_R_navicular_R_to_intermediate_cuneiform_R",
+      "surface_distal_intertarsal_R_intermediate_cuneiform_R_to_navicular_R",
+      "surface_distal_intertarsal_R_navicular_R_to_lateral_cuneiform_R",
+      "surface_distal_intertarsal_R_lateral_cuneiform_R_to_navicular_R",
+      "surface_distal_intertarsal_R_medial_cuneiform_R_to_intermediate_cuneiform_R",
+      "surface_distal_intertarsal_R_intermediate_cuneiform_R_to_medial_cuneiform_R",
+      "surface_distal_intertarsal_R_intermediate_cuneiform_R_to_lateral_cuneiform_R",
+      "surface_distal_intertarsal_R_lateral_cuneiform_R_to_intermediate_cuneiform_R",
+      "surface_distal_intertarsal_R_lateral_cuneiform_R_to_cuboid_R",
+      "surface_distal_intertarsal_R_cuboid_R_to_lateral_cuneiform_R",
+      "surface_distal_intertarsal_R_navicular_R_to_cuboid_R",
+      "surface_distal_intertarsal_R_cuboid_R_to_navicular_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_navicular_R",
+      "bone_cuboid_R",
+      "bone_medial_cuneiform_R",
+      "bone_intermediate_cuneiform_R",
+      "bone_lateral_cuneiform_R"
+    ]
+  },
+  {
+    "id": "tmt_1_R",
+    "name_zh": "右第1跗跖连接",
+    "region": "踝足",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_tmt_1_R_metatarsal_1_R",
+      "surface_tmt_1_R_medial_cuneiform_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_metatarsal_1_R",
+      "bone_medial_cuneiform_R"
+    ]
+  },
+  {
+    "id": "mtp_1_R",
+    "name_zh": "右第1跖趾关节",
+    "region": "踝足",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_mtp_1_R_metatarsal_1_R",
+      "surface_mtp_1_R_foot_phalanx_1_proximal_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_metatarsal_1_R",
+      "bone_foot_phalanx_1_proximal_R"
+    ]
+  },
+  {
+    "id": "foot_ip_1_proximal_distal_R",
+    "name_zh": "右第1趾近节—远节趾间关节",
+    "region": "踝足",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_foot_ip_1_proximal_distal_R_foot_phalanx_1_proximal_R",
+      "surface_foot_ip_1_proximal_distal_R_foot_phalanx_1_distal_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_foot_phalanx_1_proximal_R",
+      "bone_foot_phalanx_1_distal_R"
+    ]
+  },
+  {
+    "id": "tmt_2_R",
+    "name_zh": "右第2跗跖连接",
+    "region": "踝足",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_tmt_2_R_metatarsal_2_R",
+      "surface_tmt_2_R_medial_cuneiform_R",
+      "surface_tmt_2_R_intermediate_cuneiform_R",
+      "surface_tmt_2_R_lateral_cuneiform_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_metatarsal_2_R",
+      "bone_medial_cuneiform_R",
+      "bone_intermediate_cuneiform_R",
+      "bone_lateral_cuneiform_R"
+    ]
+  },
+  {
+    "id": "mtp_2_R",
+    "name_zh": "右第2跖趾关节",
+    "region": "踝足",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_mtp_2_R_metatarsal_2_R",
+      "surface_mtp_2_R_foot_phalanx_2_proximal_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_metatarsal_2_R",
+      "bone_foot_phalanx_2_proximal_R"
+    ]
+  },
+  {
+    "id": "foot_ip_2_proximal_middle_R",
+    "name_zh": "右第2趾近节—中节趾间关节",
+    "region": "踝足",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_foot_ip_2_proximal_middle_R_foot_phalanx_2_proximal_R",
+      "surface_foot_ip_2_proximal_middle_R_foot_phalanx_2_middle_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_foot_phalanx_2_proximal_R",
+      "bone_foot_phalanx_2_middle_R"
+    ]
+  },
+  {
+    "id": "foot_ip_2_middle_distal_R",
+    "name_zh": "右第2趾中节—远节趾间关节",
+    "region": "踝足",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_foot_ip_2_middle_distal_R_foot_phalanx_2_middle_R",
+      "surface_foot_ip_2_middle_distal_R_foot_phalanx_2_distal_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_foot_phalanx_2_middle_R",
+      "bone_foot_phalanx_2_distal_R"
+    ]
+  },
+  {
+    "id": "tmt_3_R",
+    "name_zh": "右第3跗跖连接",
+    "region": "踝足",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_tmt_3_R_metatarsal_3_R",
+      "surface_tmt_3_R_lateral_cuneiform_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_metatarsal_3_R",
+      "bone_lateral_cuneiform_R"
+    ]
+  },
+  {
+    "id": "mtp_3_R",
+    "name_zh": "右第3跖趾关节",
+    "region": "踝足",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_mtp_3_R_metatarsal_3_R",
+      "surface_mtp_3_R_foot_phalanx_3_proximal_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_metatarsal_3_R",
+      "bone_foot_phalanx_3_proximal_R"
+    ]
+  },
+  {
+    "id": "foot_ip_3_proximal_middle_R",
+    "name_zh": "右第3趾近节—中节趾间关节",
+    "region": "踝足",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_foot_ip_3_proximal_middle_R_foot_phalanx_3_proximal_R",
+      "surface_foot_ip_3_proximal_middle_R_foot_phalanx_3_middle_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_foot_phalanx_3_proximal_R",
+      "bone_foot_phalanx_3_middle_R"
+    ]
+  },
+  {
+    "id": "foot_ip_3_middle_distal_R",
+    "name_zh": "右第3趾中节—远节趾间关节",
+    "region": "踝足",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_foot_ip_3_middle_distal_R_foot_phalanx_3_middle_R",
+      "surface_foot_ip_3_middle_distal_R_foot_phalanx_3_distal_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_foot_phalanx_3_middle_R",
+      "bone_foot_phalanx_3_distal_R"
+    ]
+  },
+  {
+    "id": "tmt_4_R",
+    "name_zh": "右第4跗跖连接",
+    "region": "踝足",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_tmt_4_R_metatarsal_4_R",
+      "surface_tmt_4_R_cuboid_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_metatarsal_4_R",
+      "bone_cuboid_R"
+    ]
+  },
+  {
+    "id": "mtp_4_R",
+    "name_zh": "右第4跖趾关节",
+    "region": "踝足",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_mtp_4_R_metatarsal_4_R",
+      "surface_mtp_4_R_foot_phalanx_4_proximal_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_metatarsal_4_R",
+      "bone_foot_phalanx_4_proximal_R"
+    ]
+  },
+  {
+    "id": "foot_ip_4_proximal_middle_R",
+    "name_zh": "右第4趾近节—中节趾间关节",
+    "region": "踝足",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_foot_ip_4_proximal_middle_R_foot_phalanx_4_proximal_R",
+      "surface_foot_ip_4_proximal_middle_R_foot_phalanx_4_middle_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_foot_phalanx_4_proximal_R",
+      "bone_foot_phalanx_4_middle_R"
+    ]
+  },
+  {
+    "id": "foot_ip_4_middle_distal_R",
+    "name_zh": "右第4趾中节—远节趾间关节",
+    "region": "踝足",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_foot_ip_4_middle_distal_R_foot_phalanx_4_middle_R",
+      "surface_foot_ip_4_middle_distal_R_foot_phalanx_4_distal_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_foot_phalanx_4_middle_R",
+      "bone_foot_phalanx_4_distal_R"
+    ]
+  },
+  {
+    "id": "tmt_5_R",
+    "name_zh": "右第5跗跖连接",
+    "region": "踝足",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_tmt_5_R_metatarsal_5_R",
+      "surface_tmt_5_R_cuboid_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_metatarsal_5_R",
+      "bone_cuboid_R"
+    ]
+  },
+  {
+    "id": "mtp_5_R",
+    "name_zh": "右第5跖趾关节",
+    "region": "踝足",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_mtp_5_R_metatarsal_5_R",
+      "surface_mtp_5_R_foot_phalanx_5_proximal_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_metatarsal_5_R",
+      "bone_foot_phalanx_5_proximal_R"
+    ]
+  },
+  {
+    "id": "foot_ip_5_proximal_middle_R",
+    "name_zh": "右第5趾近节—中节趾间关节",
+    "region": "踝足",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_foot_ip_5_proximal_middle_R_foot_phalanx_5_proximal_R",
+      "surface_foot_ip_5_proximal_middle_R_foot_phalanx_5_middle_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_foot_phalanx_5_proximal_R",
+      "bone_foot_phalanx_5_middle_R"
+    ]
+  },
+  {
+    "id": "foot_ip_5_middle_distal_R",
+    "name_zh": "右第5趾中节—远节趾间关节",
+    "region": "踝足",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_foot_ip_5_middle_distal_R_foot_phalanx_5_middle_R",
+      "surface_foot_ip_5_middle_distal_R_foot_phalanx_5_distal_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_foot_phalanx_5_middle_R",
+      "bone_foot_phalanx_5_distal_R"
+    ]
+  },
+  {
+    "id": "intermetatarsal_R",
+    "name_zh": "右跖骨间连接组",
+    "region": "踝足",
+    "status": "listed",
+    "layer_record_ids": [
+      "surface_intermetatarsal_R_metatarsal_2_R_to_metatarsal_3_R",
+      "surface_intermetatarsal_R_metatarsal_3_R_to_metatarsal_2_R",
+      "surface_intermetatarsal_R_metatarsal_3_R_to_metatarsal_4_R",
+      "surface_intermetatarsal_R_metatarsal_4_R_to_metatarsal_3_R",
+      "surface_intermetatarsal_R_metatarsal_4_R_to_metatarsal_5_R",
+      "surface_intermetatarsal_R_metatarsal_5_R_to_metatarsal_4_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_metatarsal_2_R",
+      "bone_metatarsal_3_R",
+      "bone_metatarsal_4_R",
+      "bone_metatarsal_5_R"
+    ]
+  },
+  {
+    "id": "pubic_symphysis",
+    "name_zh": "耻骨联合",
+    "region": "骨盆与髋",
+    "status": "listed",
+    "layer_record_ids": [
+      "pubic_interpubic_disc",
+      "surface_pubic_symphysis_hip_L",
+      "surface_pubic_symphysis_hip_R"
+    ],
+    "notes": "",
+    "bone_ids": [
+      "bone_hip_L",
+      "bone_hip_R"
+    ]
+  }
+]

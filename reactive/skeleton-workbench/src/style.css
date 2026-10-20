@@ -9,3 +9,13 @@
 .viewtools{flex-wrap:wrap;max-width:calc(100% - 24px)}.viewtools button[aria-pressed="true"]{background:#e0e0e0;color:#252525;border-color:#e0e0e0}.hint{line-height:1.7}@media(max-width:520px){.viewtools{bottom:62px}}
 
 .viewtools button:hover{background:#484848;border-color:#777}.viewtools button[aria-pressed="true"]:hover{background:#eee;border-color:#eee}.viewtools button:focus-visible{outline:2px solid #ccc;outline-offset:2px}
+
+/* Whole-skeleton source comparison, separate from anatomy layer controls. */
+.source-switch{position:absolute;left:16px;top:14px;z-index:3;display:flex;padding:3px;border:1px solid #666;border-radius:8px;background:#303030;gap:3px;max-width:calc(100% - 32px)}
+.source-switch button{min-height:38px;padding:6px 10px;color:#d8d8d8;background:transparent;border:0;border-radius:5px;font-size:12px;white-space:nowrap}
+.source-switch button[aria-pressed=true]{background:#e6e6e6;color:#252525}.source-switch button:hover:not(:disabled){background:#505050;color:#fff}.source-switch button[aria-pressed=true]:hover{background:#f2f2f2;color:#252525}.source-switch button:focus-visible{outline:2px solid #ccc;outline-offset:1px}.source-switch button:disabled{opacity:.55}
+#status{top:72px} .orientation{top:49px}
+@media(max-width:1200px){.viewtools{top:70px;left:16px;right:auto}.orientation{display:none}#status{top:118px}}
+@media(max-width:520px){.source-switch{left:8px;right:8px;max-width:none}.source-switch button{font-size:10px;min-height:40px;padding:5px 4px;flex:1}.viewtools{top:auto;bottom:72px;left:8px;right:8px}#status{top:76px;font-size:10px;right:8px;left:10px}}
+
+.detail .tissue-layers{border-top:1px solid var(--ui-border);padding:18px 0}.detail .tissue-layers h2{font-size:14px;margin:0 0 10px;font-weight:600}.detail .tissue-layers label{display:flex;gap:8px;align-items:center;min-height:36px;color:var(--ui-text);margin:0}.detail .tissue-layers button{width:100%;margin-top:10px}.detail .tissue-layers p{font-size:12px}.tissue-layers .trial-tag{margin-left:auto}@media(max-width:900px){.detail .tissue-layers{grid-column:1/-1}}

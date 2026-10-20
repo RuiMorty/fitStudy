@@ -1,0 +1,4381 @@
+[
+  {
+    "bone_id": "bone_frontal_M",
+    "source_object": "Frontal bone",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-3",
+        "faces": 4120
+      },
+      {
+        "slot": 1,
+        "name": "Suture-1",
+        "faces": 162
+      },
+      {
+        "slot": 2,
+        "name": "Suture-2",
+        "faces": 1596
+      },
+      {
+        "slot": 3,
+        "name": "Suture-4",
+        "faces": 829
+      },
+      {
+        "slot": 4,
+        "name": "Suture-6",
+        "faces": 218
+      },
+      {
+        "slot": 5,
+        "name": "Suture-7",
+        "faces": 395
+      },
+      {
+        "slot": 6,
+        "name": "Suture-5",
+        "faces": 434
+      }
+    ],
+    "cartilage_faces": 0,
+    "all_faces": 7754,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_occipital_M",
+    "source_object": "Occipital bone",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-6",
+        "faces": 5131
+      },
+      {
+        "slot": 1,
+        "name": "Suture-1",
+        "faces": 346
+      },
+      {
+        "slot": 2,
+        "name": "Suture-2",
+        "faces": 1819
+      },
+      {
+        "slot": 3,
+        "name": "Suture-4",
+        "faces": 67
+      },
+      {
+        "slot": 4,
+        "name": "Cartilage",
+        "faces": 130
+      }
+    ],
+    "cartilage_faces": 130,
+    "all_faces": 7493,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_sphenoid_M",
+    "source_object": "Sphenoid bone",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-4",
+        "faces": 5966
+      },
+      {
+        "slot": 1,
+        "name": "Suture-1",
+        "faces": 429
+      },
+      {
+        "slot": 2,
+        "name": "Suture-2",
+        "faces": 111
+      },
+      {
+        "slot": 3,
+        "name": "Suture-3",
+        "faces": 434
+      },
+      {
+        "slot": 4,
+        "name": "Suture-6",
+        "faces": 68
+      },
+      {
+        "slot": 5,
+        "name": "Suture-7",
+        "faces": 224
+      },
+      {
+        "slot": 6,
+        "name": "Suture-8",
+        "faces": 76
+      }
+    ],
+    "cartilage_faces": 0,
+    "all_faces": 7308,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_ethmoid_M",
+    "source_object": "Ethmoid bone",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-7",
+        "faces": 3775
+      },
+      {
+        "slot": 1,
+        "name": "Suture-3",
+        "faces": 0
+      },
+      {
+        "slot": 2,
+        "name": "Suture-5",
+        "faces": 0
+      }
+    ],
+    "cartilage_faces": 0,
+    "all_faces": 3775,
+    "modifiers": [
+      "BOOLEAN",
+      "BOOLEAN",
+      "BOOLEAN",
+      "BOOLEAN",
+      "BOOLEAN",
+      "BOOLEAN"
+    ]
+  },
+  {
+    "bone_id": "bone_mandible_M",
+    "source_object": "Mandible",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone",
+        "faces": 11095
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 128
+      },
+      {
+        "slot": 2,
+        "name": "Suture-1",
+        "faces": 7615
+      }
+    ],
+    "cartilage_faces": 128,
+    "all_faces": 18838,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_vomer_M",
+    "source_object": "Vomer",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-1",
+        "faces": 946
+      }
+    ],
+    "cartilage_faces": 0,
+    "all_faces": 946,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_parietal_L",
+    "source_object": "Parietal bone.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-2",
+        "faces": 3795
+      },
+      {
+        "slot": 1,
+        "name": "Suture-1",
+        "faces": 186
+      },
+      {
+        "slot": 2,
+        "name": "Suture-2",
+        "faces": 1572
+      },
+      {
+        "slot": 3,
+        "name": "Suture-3",
+        "faces": 560
+      },
+      {
+        "slot": 4,
+        "name": "Suture-6",
+        "faces": 773
+      }
+    ],
+    "cartilage_faces": 0,
+    "all_faces": 6886,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_temporal_L",
+    "source_object": "Temporal bone.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-1",
+        "faces": 13673
+      },
+      {
+        "slot": 1,
+        "name": "Suture-1",
+        "faces": 0
+      },
+      {
+        "slot": 2,
+        "name": "Suture-2",
+        "faces": 140
+      },
+      {
+        "slot": 3,
+        "name": "Suture-4",
+        "faces": 93
+      },
+      {
+        "slot": 4,
+        "name": "Suture-7",
+        "faces": 51
+      },
+      {
+        "slot": 5,
+        "name": "Cartilage",
+        "faces": 0
+      },
+      {
+        "slot": 6,
+        "name": "Suture-6",
+        "faces": 137
+      }
+    ],
+    "cartilage_faces": 0,
+    "all_faces": 14094,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_maxilla_L",
+    "source_object": "Maxilla.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-5",
+        "faces": 2585
+      },
+      {
+        "slot": 1,
+        "name": "Suture",
+        "faces": 1526
+      },
+      {
+        "slot": 2,
+        "name": "Suture-5",
+        "faces": 183
+      },
+      {
+        "slot": 3,
+        "name": "Suture-3",
+        "faces": 141
+      },
+      {
+        "slot": 4,
+        "name": "Suture-4",
+        "faces": 154
+      },
+      {
+        "slot": 5,
+        "name": "Suture-6",
+        "faces": 45
+      },
+      {
+        "slot": 6,
+        "name": "Suture-7",
+        "faces": 141
+      },
+      {
+        "slot": 7,
+        "name": "Suture-2",
+        "faces": 23
+      }
+    ],
+    "cartilage_faces": 0,
+    "all_faces": 4798,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_zygomatic_L",
+    "source_object": "Zygomatic bone.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-8",
+        "faces": 817
+      },
+      {
+        "slot": 1,
+        "name": "Suture-1",
+        "faces": 64
+      },
+      {
+        "slot": 2,
+        "name": "Suture-3",
+        "faces": 34
+      },
+      {
+        "slot": 3,
+        "name": "Suture-4",
+        "faces": 9
+      },
+      {
+        "slot": 4,
+        "name": "Suture-5",
+        "faces": 404
+      }
+    ],
+    "cartilage_faces": 0,
+    "all_faces": 1328,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_nasal_L",
+    "source_object": "Nasal bone.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-4",
+        "faces": 156
+      },
+      {
+        "slot": 1,
+        "name": "Suture-4",
+        "faces": 41
+      },
+      {
+        "slot": 2,
+        "name": "Suture-3",
+        "faces": 41
+      },
+      {
+        "slot": 3,
+        "name": "Suture-5",
+        "faces": 54
+      }
+    ],
+    "cartilage_faces": 0,
+    "all_faces": 292,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_lacrimal_L",
+    "source_object": "Lacrimal bone.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-6",
+        "faces": 342
+      },
+      {
+        "slot": 1,
+        "name": "Suture-1",
+        "faces": 0
+      },
+      {
+        "slot": 2,
+        "name": "Suture-3",
+        "faces": 37
+      },
+      {
+        "slot": 3,
+        "name": "Suture-4",
+        "faces": 115
+      },
+      {
+        "slot": 4,
+        "name": "Suture-5",
+        "faces": 32
+      },
+      {
+        "slot": 5,
+        "name": "Suture-7",
+        "faces": 62
+      }
+    ],
+    "cartilage_faces": 0,
+    "all_faces": 588,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_palatine_L",
+    "source_object": "Palatine bone.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-2",
+        "faces": 1146
+      },
+      {
+        "slot": 1,
+        "name": "Suture-2",
+        "faces": 12
+      },
+      {
+        "slot": 2,
+        "name": "Suture-4",
+        "faces": 36
+      },
+      {
+        "slot": 3,
+        "name": "Suture-5",
+        "faces": 246
+      },
+      {
+        "slot": 4,
+        "name": "Suture-7",
+        "faces": 20
+      }
+    ],
+    "cartilage_faces": 0,
+    "all_faces": 1460,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_inferior_nasal_concha_L",
+    "source_object": "Inferior nasal concha bone.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone",
+        "faces": 476
+      }
+    ],
+    "cartilage_faces": 0,
+    "all_faces": 476,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_malleus_L",
+    "source_object": "Malleus.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-1",
+        "faces": 1832
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 166
+      }
+    ],
+    "cartilage_faces": 166,
+    "all_faces": 1998,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_incus_L",
+    "source_object": "Incus.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-1",
+        "faces": 1143
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 134
+      }
+    ],
+    "cartilage_faces": 134,
+    "all_faces": 1277,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_stapes_L",
+    "source_object": "Stapes.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-1",
+        "faces": 1957
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 223
+      }
+    ],
+    "cartilage_faces": 223,
+    "all_faces": 2180,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_parietal_R",
+    "source_object": "Parietal bone.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-2",
+        "faces": 2470
+      },
+      {
+        "slot": 1,
+        "name": "Suture-1",
+        "faces": 291
+      },
+      {
+        "slot": 2,
+        "name": "Suture-2",
+        "faces": 1657
+      },
+      {
+        "slot": 3,
+        "name": "Suture-3",
+        "faces": 1103
+      },
+      {
+        "slot": 4,
+        "name": "Suture-4",
+        "faces": 117
+      },
+      {
+        "slot": 5,
+        "name": "Suture-6",
+        "faces": 1075
+      }
+    ],
+    "cartilage_faces": 0,
+    "all_faces": 6713,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_temporal_R",
+    "source_object": "Temporal bone.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-1",
+        "faces": 13673
+      },
+      {
+        "slot": 1,
+        "name": "Suture-1",
+        "faces": 0
+      },
+      {
+        "slot": 2,
+        "name": "Suture-2",
+        "faces": 140
+      },
+      {
+        "slot": 3,
+        "name": "Suture-4",
+        "faces": 93
+      },
+      {
+        "slot": 4,
+        "name": "Suture-7",
+        "faces": 51
+      },
+      {
+        "slot": 5,
+        "name": "Cartilage",
+        "faces": 0
+      },
+      {
+        "slot": 6,
+        "name": "Suture-6",
+        "faces": 137
+      }
+    ],
+    "cartilage_faces": 0,
+    "all_faces": 14094,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_maxilla_R",
+    "source_object": "Maxilla.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-5",
+        "faces": 2585
+      },
+      {
+        "slot": 1,
+        "name": "Suture",
+        "faces": 1526
+      },
+      {
+        "slot": 2,
+        "name": "Suture-5",
+        "faces": 183
+      },
+      {
+        "slot": 3,
+        "name": "Suture-3",
+        "faces": 141
+      },
+      {
+        "slot": 4,
+        "name": "Suture-4",
+        "faces": 154
+      },
+      {
+        "slot": 5,
+        "name": "Suture-6",
+        "faces": 45
+      },
+      {
+        "slot": 6,
+        "name": "Suture-7",
+        "faces": 141
+      },
+      {
+        "slot": 7,
+        "name": "Suture-2",
+        "faces": 23
+      }
+    ],
+    "cartilage_faces": 0,
+    "all_faces": 4798,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_zygomatic_R",
+    "source_object": "Zygomatic bone.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-8",
+        "faces": 817
+      },
+      {
+        "slot": 1,
+        "name": "Suture-1",
+        "faces": 64
+      },
+      {
+        "slot": 2,
+        "name": "Suture-3",
+        "faces": 34
+      },
+      {
+        "slot": 3,
+        "name": "Suture-4",
+        "faces": 9
+      },
+      {
+        "slot": 4,
+        "name": "Suture-5",
+        "faces": 404
+      }
+    ],
+    "cartilage_faces": 0,
+    "all_faces": 1328,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_nasal_R",
+    "source_object": "Nasal bone.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-4",
+        "faces": 156
+      },
+      {
+        "slot": 1,
+        "name": "Suture-4",
+        "faces": 41
+      },
+      {
+        "slot": 2,
+        "name": "Suture-3",
+        "faces": 41
+      },
+      {
+        "slot": 3,
+        "name": "Suture-5",
+        "faces": 54
+      }
+    ],
+    "cartilage_faces": 0,
+    "all_faces": 292,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_lacrimal_R",
+    "source_object": "Lacrimal bone.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-6",
+        "faces": 342
+      },
+      {
+        "slot": 1,
+        "name": "Suture-1",
+        "faces": 0
+      },
+      {
+        "slot": 2,
+        "name": "Suture-3",
+        "faces": 37
+      },
+      {
+        "slot": 3,
+        "name": "Suture-4",
+        "faces": 115
+      },
+      {
+        "slot": 4,
+        "name": "Suture-5",
+        "faces": 32
+      },
+      {
+        "slot": 5,
+        "name": "Suture-7",
+        "faces": 62
+      }
+    ],
+    "cartilage_faces": 0,
+    "all_faces": 588,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_palatine_R",
+    "source_object": "Palatine bone.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-2",
+        "faces": 1146
+      },
+      {
+        "slot": 1,
+        "name": "Suture-2",
+        "faces": 12
+      },
+      {
+        "slot": 2,
+        "name": "Suture-4",
+        "faces": 36
+      },
+      {
+        "slot": 3,
+        "name": "Suture-5",
+        "faces": 246
+      },
+      {
+        "slot": 4,
+        "name": "Suture-7",
+        "faces": 20
+      }
+    ],
+    "cartilage_faces": 0,
+    "all_faces": 1460,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_inferior_nasal_concha_R",
+    "source_object": "Inferior nasal concha bone.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone",
+        "faces": 476
+      }
+    ],
+    "cartilage_faces": 0,
+    "all_faces": 476,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_malleus_R",
+    "source_object": "Malleus.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-1",
+        "faces": 1832
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 166
+      }
+    ],
+    "cartilage_faces": 166,
+    "all_faces": 1998,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_incus_R",
+    "source_object": "Incus.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-1",
+        "faces": 1143
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 134
+      }
+    ],
+    "cartilage_faces": 134,
+    "all_faces": 1277,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_stapes_R",
+    "source_object": "Stapes.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-1",
+        "faces": 1957
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 223
+      }
+    ],
+    "cartilage_faces": 223,
+    "all_faces": 2180,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_hyoid_M",
+    "source_object": "Hyoid bone",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone",
+        "faces": 1310
+      }
+    ],
+    "cartilage_faces": 0,
+    "all_faces": 1310,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_vertebra_C1_M",
+    "source_object": "Atlas (C1)",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-2",
+        "faces": 2098
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 48
+      }
+    ],
+    "cartilage_faces": 48,
+    "all_faces": 2146,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_vertebra_C2_M",
+    "source_object": "Axis (C2)",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-2",
+        "faces": 2032
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 212
+      }
+    ],
+    "cartilage_faces": 212,
+    "all_faces": 2244,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_vertebra_C3_M",
+    "source_object": "Vertebra C3",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-2",
+        "faces": 2172
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 202
+      }
+    ],
+    "cartilage_faces": 202,
+    "all_faces": 2374,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_vertebra_C4_M",
+    "source_object": "Vertebra C4",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-2",
+        "faces": 1674
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 264
+      }
+    ],
+    "cartilage_faces": 264,
+    "all_faces": 1938,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_vertebra_C5_M",
+    "source_object": "Vertebra C5",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-2",
+        "faces": 2042
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 214
+      }
+    ],
+    "cartilage_faces": 214,
+    "all_faces": 2256,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_vertebra_C6_M",
+    "source_object": "Vertebra C6",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-2",
+        "faces": 2053
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 171
+      }
+    ],
+    "cartilage_faces": 171,
+    "all_faces": 2224,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_vertebra_C7_M",
+    "source_object": "Vertebra C7",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-2",
+        "faces": 2090
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 0
+      }
+    ],
+    "cartilage_faces": 0,
+    "all_faces": 2090,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_vertebra_T1_M",
+    "source_object": "Vertebra T1",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-5",
+        "faces": 1654
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 292
+      }
+    ],
+    "cartilage_faces": 292,
+    "all_faces": 1946,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_vertebra_T2_M",
+    "source_object": "Vertebra T2",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-5",
+        "faces": 1764
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 328
+      }
+    ],
+    "cartilage_faces": 328,
+    "all_faces": 2092,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_vertebra_T3_M",
+    "source_object": "Vertebra T3",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-5",
+        "faces": 2110
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 232
+      }
+    ],
+    "cartilage_faces": 232,
+    "all_faces": 2342,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_vertebra_T4_M",
+    "source_object": "Vertebra T4",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-5",
+        "faces": 1946
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 268
+      }
+    ],
+    "cartilage_faces": 268,
+    "all_faces": 2214,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_vertebra_T5_M",
+    "source_object": "Vertebra T5",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-5",
+        "faces": 1871
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 281
+      }
+    ],
+    "cartilage_faces": 281,
+    "all_faces": 2152,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_vertebra_T6_M",
+    "source_object": "Vertebra T6",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-5",
+        "faces": 1548
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 226
+      }
+    ],
+    "cartilage_faces": 226,
+    "all_faces": 1774,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_vertebra_T7_M",
+    "source_object": "Vertebra T7",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-5",
+        "faces": 2318
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 328
+      }
+    ],
+    "cartilage_faces": 328,
+    "all_faces": 2646,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_vertebra_T8_M",
+    "source_object": "Vertebra T8",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-5",
+        "faces": 1481
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 225
+      }
+    ],
+    "cartilage_faces": 225,
+    "all_faces": 1706,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_vertebra_T9_M",
+    "source_object": "Vertebra T9",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-5",
+        "faces": 2602
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 366
+      }
+    ],
+    "cartilage_faces": 366,
+    "all_faces": 2968,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_vertebra_T10_M",
+    "source_object": "Vertebra T10",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-5",
+        "faces": 2701
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 252
+      }
+    ],
+    "cartilage_faces": 252,
+    "all_faces": 2953,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_vertebra_T11_M",
+    "source_object": "Vertebra T11",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-5",
+        "faces": 1538
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 242
+      }
+    ],
+    "cartilage_faces": 242,
+    "all_faces": 1780,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_vertebra_T12_M",
+    "source_object": "Vertebra T12",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-5",
+        "faces": 2140
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 332
+      }
+    ],
+    "cartilage_faces": 332,
+    "all_faces": 2472,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_vertebra_L1_M",
+    "source_object": "Vertebra L1",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-2",
+        "faces": 2826
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 230
+      }
+    ],
+    "cartilage_faces": 230,
+    "all_faces": 3056,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_vertebra_L2_M",
+    "source_object": "Vertebra L2",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-2",
+        "faces": 2362
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 210
+      }
+    ],
+    "cartilage_faces": 210,
+    "all_faces": 2572,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_vertebra_L3_M",
+    "source_object": "Vertebra L3",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-2",
+        "faces": 2758
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 302
+      }
+    ],
+    "cartilage_faces": 302,
+    "all_faces": 3060,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_vertebra_L4_M",
+    "source_object": "Vertebra L4",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-2",
+        "faces": 3384
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 308
+      }
+    ],
+    "cartilage_faces": 308,
+    "all_faces": 3692,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_vertebra_L5_M",
+    "source_object": "Vertebra L5",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-2",
+        "faces": 3536
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 384
+      }
+    ],
+    "cartilage_faces": 384,
+    "all_faces": 3920,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_sacrum_M",
+    "source_object": "Sacrum",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-5",
+        "faces": 7900
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 622
+      }
+    ],
+    "cartilage_faces": 622,
+    "all_faces": 8522,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_coccyx_M",
+    "source_object": "Coccyx",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-5",
+        "faces": 1066
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 0
+      }
+    ],
+    "cartilage_faces": 0,
+    "all_faces": 1066,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_sternum_M",
+    "source_object": "Manubrium of sternum",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-6",
+        "faces": 2263
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 399
+      }
+    ],
+    "cartilage_faces": 399,
+    "all_faces": 2662,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_sternum_M",
+    "source_object": "Body of sternum",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-7",
+        "faces": 2560
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 1906
+      }
+    ],
+    "cartilage_faces": 1906,
+    "all_faces": 4466,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_sternum_M",
+    "source_object": "Xiphoid process",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-8",
+        "faces": 769
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 145
+      }
+    ],
+    "cartilage_faces": 145,
+    "all_faces": 914,
+    "modifiers": [
+      "MIRROR"
+    ]
+  },
+  {
+    "bone_id": "bone_rib_01_L",
+    "source_object": "First rib.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-1",
+        "faces": 2827
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 381
+      }
+    ],
+    "cartilage_faces": 381,
+    "all_faces": 3208,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_rib_02_L",
+    "source_object": "Second rib.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-1",
+        "faces": 4985
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 369
+      }
+    ],
+    "cartilage_faces": 369,
+    "all_faces": 5354,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_rib_03_L",
+    "source_object": "Third rib.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-1",
+        "faces": 6418
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 539
+      }
+    ],
+    "cartilage_faces": 539,
+    "all_faces": 6957,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_rib_04_L",
+    "source_object": "Fourth rib.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-1",
+        "faces": 7825
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 815
+      }
+    ],
+    "cartilage_faces": 815,
+    "all_faces": 8640,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_rib_05_L",
+    "source_object": "Fifth rib.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-1",
+        "faces": 8663
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 697
+      }
+    ],
+    "cartilage_faces": 697,
+    "all_faces": 9360,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_rib_06_L",
+    "source_object": "Sixth rib.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-1",
+        "faces": 9051
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 1041
+      }
+    ],
+    "cartilage_faces": 1041,
+    "all_faces": 10092,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_rib_07_L",
+    "source_object": "Seventh rib.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-1",
+        "faces": 9037
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 704
+      }
+    ],
+    "cartilage_faces": 704,
+    "all_faces": 9741,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_rib_08_L",
+    "source_object": "Eighth rib.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-3",
+        "faces": 7617
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 640
+      }
+    ],
+    "cartilage_faces": 640,
+    "all_faces": 8257,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_rib_09_L",
+    "source_object": "Ninth rib.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-3",
+        "faces": 6993
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 750
+      }
+    ],
+    "cartilage_faces": 750,
+    "all_faces": 7743,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_rib_10_L",
+    "source_object": "Tenth rib.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-3",
+        "faces": 6453
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 549
+      }
+    ],
+    "cartilage_faces": 549,
+    "all_faces": 7002,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_rib_11_L",
+    "source_object": "Eleventh rib.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-4",
+        "faces": 4745
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 287
+      }
+    ],
+    "cartilage_faces": 287,
+    "all_faces": 5032,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_rib_12_L",
+    "source_object": "Twelfth rib.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-4",
+        "faces": 2664
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 331
+      }
+    ],
+    "cartilage_faces": 331,
+    "all_faces": 2995,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_clavicle_L",
+    "source_object": "Clavicle.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone",
+        "faces": 1308
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 240
+      }
+    ],
+    "cartilage_faces": 240,
+    "all_faces": 1548,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_scapula_L",
+    "source_object": "Scapula.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone",
+        "faces": 24524
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 731
+      }
+    ],
+    "cartilage_faces": 731,
+    "all_faces": 25255,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_humerus_L",
+    "source_object": "Humerus.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone",
+        "faces": 3477
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 803
+      }
+    ],
+    "cartilage_faces": 803,
+    "all_faces": 4280,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_radius_L",
+    "source_object": "Radius.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone",
+        "faces": 452
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 267
+      }
+    ],
+    "cartilage_faces": 267,
+    "all_faces": 719,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_ulna_L",
+    "source_object": "Ulna.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone",
+        "faces": 610
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 265
+      }
+    ],
+    "cartilage_faces": 265,
+    "all_faces": 875,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_scaphoid_L",
+    "source_object": "Scaphoid bone.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-3",
+        "faces": 93
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 297
+      }
+    ],
+    "cartilage_faces": 297,
+    "all_faces": 390,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_lunate_L",
+    "source_object": "Lunate bone.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-2",
+        "faces": 93
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 255
+      }
+    ],
+    "cartilage_faces": 255,
+    "all_faces": 348,
+    "modifiers": [
+      "SUBSURF"
+    ]
+  },
+  {
+    "bone_id": "bone_triquetrum_L",
+    "source_object": "Triquetrum bone.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-1",
+        "faces": 100
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 76
+      }
+    ],
+    "cartilage_faces": 76,
+    "all_faces": 176,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_pisiform_L",
+    "source_object": "Pisiform bone.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-8",
+        "faces": 266
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 12
+      }
+    ],
+    "cartilage_faces": 12,
+    "all_faces": 278,
+    "modifiers": [
+      "SUBSURF"
+    ]
+  },
+  {
+    "bone_id": "bone_trapezium_L",
+    "source_object": "Trapezium bone.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-7",
+        "faces": 431
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 69
+      }
+    ],
+    "cartilage_faces": 69,
+    "all_faces": 500,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_trapezoid_L",
+    "source_object": "Trapezoid bone.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-6",
+        "faces": 79
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 285
+      }
+    ],
+    "cartilage_faces": 285,
+    "all_faces": 364,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_capitate_L",
+    "source_object": "Capitate bone.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-5",
+        "faces": 229
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 241
+      }
+    ],
+    "cartilage_faces": 241,
+    "all_faces": 470,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_hamate_L",
+    "source_object": "Hamate bone.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-4",
+        "faces": 277
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 259
+      }
+    ],
+    "cartilage_faces": 259,
+    "all_faces": 536,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_metacarpal_1_L",
+    "source_object": "First metacarpal bone.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone",
+        "faces": 342
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 340
+      }
+    ],
+    "cartilage_faces": 340,
+    "all_faces": 682,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_hand_phalanx_1_proximal_L",
+    "source_object": "Proximal phalanx of first finger of hand.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-6",
+        "faces": 221
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 107
+      }
+    ],
+    "cartilage_faces": 107,
+    "all_faces": 328,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_hand_phalanx_1_distal_L",
+    "source_object": "Distal phalanx of first finger of hand.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-8",
+        "faces": 200
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 22
+      }
+    ],
+    "cartilage_faces": 22,
+    "all_faces": 222,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_metacarpal_2_L",
+    "source_object": "Second metacarpal bone.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone",
+        "faces": 544
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 220
+      }
+    ],
+    "cartilage_faces": 220,
+    "all_faces": 764,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_hand_phalanx_2_proximal_L",
+    "source_object": "Proximal phalanx of second finger of hand.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-6",
+        "faces": 294
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 120
+      }
+    ],
+    "cartilage_faces": 120,
+    "all_faces": 414,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_hand_phalanx_2_middle_L",
+    "source_object": "Middle phalanx of second finger of hand.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-7",
+        "faces": 229
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 85
+      }
+    ],
+    "cartilage_faces": 85,
+    "all_faces": 314,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_hand_phalanx_2_distal_L",
+    "source_object": "Distal phalanx of second finger of hand.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-8",
+        "faces": 222
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 28
+      }
+    ],
+    "cartilage_faces": 28,
+    "all_faces": 250,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_metacarpal_3_L",
+    "source_object": "Third metacarpal bone.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone",
+        "faces": 568
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 140
+      }
+    ],
+    "cartilage_faces": 140,
+    "all_faces": 708,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_hand_phalanx_3_proximal_L",
+    "source_object": "Proximal phalanx of third finger of hand.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-6",
+        "faces": 309
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 130
+      }
+    ],
+    "cartilage_faces": 130,
+    "all_faces": 439,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_hand_phalanx_3_middle_L",
+    "source_object": "Middle phalanx of third finger of hand.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-7",
+        "faces": 273
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 87
+      }
+    ],
+    "cartilage_faces": 87,
+    "all_faces": 360,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_hand_phalanx_3_distal_L",
+    "source_object": "Distal phalanx of third finger of hand.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-8",
+        "faces": 167
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 25
+      }
+    ],
+    "cartilage_faces": 25,
+    "all_faces": 192,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_metacarpal_4_L",
+    "source_object": "Fourth metacarpal bone.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone",
+        "faces": 542
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 100
+      }
+    ],
+    "cartilage_faces": 100,
+    "all_faces": 642,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_hand_phalanx_4_proximal_L",
+    "source_object": "Proximal phalanx of fourth finger of hand.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-6",
+        "faces": 246
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 122
+      }
+    ],
+    "cartilage_faces": 122,
+    "all_faces": 368,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_hand_phalanx_4_middle_L",
+    "source_object": "Middle phalanx of fourth finger of hand.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-7",
+        "faces": 284
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 162
+      }
+    ],
+    "cartilage_faces": 162,
+    "all_faces": 446,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_hand_phalanx_4_distal_L",
+    "source_object": "Distal phalanx of fourth finger of hand.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-8",
+        "faces": 122
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 12
+      }
+    ],
+    "cartilage_faces": 12,
+    "all_faces": 134,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_metacarpal_5_L",
+    "source_object": "Fifth metacarpal bone.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone",
+        "faces": 348
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 155
+      }
+    ],
+    "cartilage_faces": 155,
+    "all_faces": 503,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_hand_phalanx_5_proximal_L",
+    "source_object": "Proximal phalanx of fifth finger of hand.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-6",
+        "faces": 439
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 121
+      }
+    ],
+    "cartilage_faces": 121,
+    "all_faces": 560,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_hand_phalanx_5_middle_L",
+    "source_object": "Middle phalanx of fifth finger of hand.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-7",
+        "faces": 219
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 73
+      }
+    ],
+    "cartilage_faces": 73,
+    "all_faces": 292,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_hand_phalanx_5_distal_L",
+    "source_object": "Distal phalanx of fifth finger of hand.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-8",
+        "faces": 182
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 10
+      }
+    ],
+    "cartilage_faces": 10,
+    "all_faces": 192,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_hip_L",
+    "source_object": "Hip bone.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-1",
+        "faces": 673
+      },
+      {
+        "slot": 1,
+        "name": "Bone-6",
+        "faces": 1895
+      },
+      {
+        "slot": 2,
+        "name": "Bone-7",
+        "faces": 840
+      },
+      {
+        "slot": 3,
+        "name": "Cartilage",
+        "faces": 200
+      }
+    ],
+    "cartilage_faces": 200,
+    "all_faces": 3608,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_femur_L",
+    "source_object": "Femur.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone",
+        "faces": 2966
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 820
+      }
+    ],
+    "cartilage_faces": 820,
+    "all_faces": 3786,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_patella_L",
+    "source_object": "Patella.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-1",
+        "faces": 169
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 105
+      },
+      {
+        "slot": 2,
+        "name": "Bone-2",
+        "faces": 0
+      },
+      {
+        "slot": 3,
+        "name": "Bone-3",
+        "faces": 0
+      },
+      {
+        "slot": 4,
+        "name": "Bone-4",
+        "faces": 0
+      },
+      {
+        "slot": 5,
+        "name": "Bone-5",
+        "faces": 0
+      },
+      {
+        "slot": 6,
+        "name": "Bone-6",
+        "faces": 0
+      },
+      {
+        "slot": 7,
+        "name": "Bone-7",
+        "faces": 0
+      },
+      {
+        "slot": 8,
+        "name": "Bone-8",
+        "faces": 0
+      }
+    ],
+    "cartilage_faces": 105,
+    "all_faces": 274,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_tibia_L",
+    "source_object": "Tibia.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone",
+        "faces": 1332
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 281
+      }
+    ],
+    "cartilage_faces": 281,
+    "all_faces": 1613,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_fibula_L",
+    "source_object": "Fibula.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone",
+        "faces": 1170
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 94
+      }
+    ],
+    "cartilage_faces": 94,
+    "all_faces": 1264,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_talus_L",
+    "source_object": "Talus.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-1",
+        "faces": 901
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 424
+      }
+    ],
+    "cartilage_faces": 424,
+    "all_faces": 1325,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_calcaneus_L",
+    "source_object": "Calcaneus.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-5",
+        "faces": 1263
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 169
+      }
+    ],
+    "cartilage_faces": 169,
+    "all_faces": 1432,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_navicular_L",
+    "source_object": "Navicular bone.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-2",
+        "faces": 477
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 254
+      }
+    ],
+    "cartilage_faces": 254,
+    "all_faces": 731,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_cuboid_L",
+    "source_object": "Cuboid bone.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-6",
+        "faces": 806
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 188
+      }
+    ],
+    "cartilage_faces": 188,
+    "all_faces": 994,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_medial_cuneiform_L",
+    "source_object": "Medial cuneiform bone.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-3",
+        "faces": 808
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 160
+      }
+    ],
+    "cartilage_faces": 160,
+    "all_faces": 968,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_intermediate_cuneiform_L",
+    "source_object": "Intermediate cuneiform bone.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-3",
+        "faces": 279
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 165
+      }
+    ],
+    "cartilage_faces": 165,
+    "all_faces": 444,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_lateral_cuneiform_L",
+    "source_object": "Lateral cuneiform bone.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-3",
+        "faces": 368
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 264
+      }
+    ],
+    "cartilage_faces": 264,
+    "all_faces": 632,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_metatarsal_1_L",
+    "source_object": "First metatarsal bone.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone",
+        "faces": 747
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 340
+      }
+    ],
+    "cartilage_faces": 340,
+    "all_faces": 1087,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_foot_phalanx_1_proximal_L",
+    "source_object": "Proximal phalanx of first finger of foot.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-6",
+        "faces": 400
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 117
+      }
+    ],
+    "cartilage_faces": 117,
+    "all_faces": 517,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_foot_phalanx_1_distal_L",
+    "source_object": "Distal phalanx of first finger of foot.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-8",
+        "faces": 391
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 75
+      }
+    ],
+    "cartilage_faces": 75,
+    "all_faces": 466,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_metatarsal_2_L",
+    "source_object": "Second metatarsal bone.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone",
+        "faces": 511
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 179
+      }
+    ],
+    "cartilage_faces": 179,
+    "all_faces": 690,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_foot_phalanx_2_proximal_L",
+    "source_object": "Proximal phalanx of second finger of foot.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-6",
+        "faces": 288
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 136
+      }
+    ],
+    "cartilage_faces": 136,
+    "all_faces": 424,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_foot_phalanx_2_middle_L",
+    "source_object": "Middle phalanx of second finger of foot.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-7",
+        "faces": 210
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 116
+      }
+    ],
+    "cartilage_faces": 116,
+    "all_faces": 326,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_foot_phalanx_2_distal_L",
+    "source_object": "Distal phalanx of second finger of foot.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-8",
+        "faces": 199
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 37
+      }
+    ],
+    "cartilage_faces": 37,
+    "all_faces": 236,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_metatarsal_3_L",
+    "source_object": "Third metatarsal bone.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone",
+        "faces": 668
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 136
+      }
+    ],
+    "cartilage_faces": 136,
+    "all_faces": 804,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_foot_phalanx_3_proximal_L",
+    "source_object": "Proximal phalanx of third finger of foot.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-6",
+        "faces": 340
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 118
+      }
+    ],
+    "cartilage_faces": 118,
+    "all_faces": 458,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_foot_phalanx_3_middle_L",
+    "source_object": "Middle phalanx of third finger of foot.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-7",
+        "faces": 286
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 73
+      }
+    ],
+    "cartilage_faces": 73,
+    "all_faces": 359,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_foot_phalanx_3_distal_L",
+    "source_object": "Distal phalanx of third finger of foot.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-8",
+        "faces": 261
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 57
+      }
+    ],
+    "cartilage_faces": 57,
+    "all_faces": 318,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_metatarsal_4_L",
+    "source_object": "Fourth metatarsal bone.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone",
+        "faces": 567
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 165
+      }
+    ],
+    "cartilage_faces": 165,
+    "all_faces": 732,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_foot_phalanx_4_proximal_L",
+    "source_object": "Proximal phalanx of fourth finger of foot.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-6",
+        "faces": 332
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 128
+      }
+    ],
+    "cartilage_faces": 128,
+    "all_faces": 460,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_foot_phalanx_4_middle_L",
+    "source_object": "Middle phalanx of fourth finger of foot.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-7",
+        "faces": 271
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 133
+      }
+    ],
+    "cartilage_faces": 133,
+    "all_faces": 404,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_foot_phalanx_4_distal_L",
+    "source_object": "Distal phalanx of fourth finger of foot.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-8",
+        "faces": 243
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 35
+      }
+    ],
+    "cartilage_faces": 35,
+    "all_faces": 278,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_metatarsal_5_L",
+    "source_object": "Fifth metatarsal bone.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone",
+        "faces": 658
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 236
+      }
+    ],
+    "cartilage_faces": 236,
+    "all_faces": 894,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_foot_phalanx_5_proximal_L",
+    "source_object": "Proximal phalanx of fifth finger of foot.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-6",
+        "faces": 432
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 84
+      }
+    ],
+    "cartilage_faces": 84,
+    "all_faces": 516,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_foot_phalanx_5_middle_L",
+    "source_object": "Middle phalanx of fifth finger of foot.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-7",
+        "faces": 177
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 39
+      }
+    ],
+    "cartilage_faces": 39,
+    "all_faces": 216,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_foot_phalanx_5_distal_L",
+    "source_object": "Distal phalanx of fifth finger of foot.l",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-8",
+        "faces": 207
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 15
+      }
+    ],
+    "cartilage_faces": 15,
+    "all_faces": 222,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_rib_01_R",
+    "source_object": "First rib.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-1",
+        "faces": 2827
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 381
+      }
+    ],
+    "cartilage_faces": 381,
+    "all_faces": 3208,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_rib_02_R",
+    "source_object": "Second rib.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-1",
+        "faces": 4985
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 369
+      }
+    ],
+    "cartilage_faces": 369,
+    "all_faces": 5354,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_rib_03_R",
+    "source_object": "Third rib.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-1",
+        "faces": 6418
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 539
+      }
+    ],
+    "cartilage_faces": 539,
+    "all_faces": 6957,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_rib_04_R",
+    "source_object": "Fourth rib.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-1",
+        "faces": 7825
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 815
+      }
+    ],
+    "cartilage_faces": 815,
+    "all_faces": 8640,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_rib_05_R",
+    "source_object": "Fifth rib.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-1",
+        "faces": 8663
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 697
+      }
+    ],
+    "cartilage_faces": 697,
+    "all_faces": 9360,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_rib_06_R",
+    "source_object": "Sixth rib.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-1",
+        "faces": 9051
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 1041
+      }
+    ],
+    "cartilage_faces": 1041,
+    "all_faces": 10092,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_rib_07_R",
+    "source_object": "Seventh rib.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-1",
+        "faces": 9037
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 704
+      }
+    ],
+    "cartilage_faces": 704,
+    "all_faces": 9741,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_rib_08_R",
+    "source_object": "Eighth rib.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-3",
+        "faces": 7617
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 640
+      }
+    ],
+    "cartilage_faces": 640,
+    "all_faces": 8257,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_rib_09_R",
+    "source_object": "Ninth rib.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-3",
+        "faces": 6993
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 750
+      }
+    ],
+    "cartilage_faces": 750,
+    "all_faces": 7743,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_rib_10_R",
+    "source_object": "Tenth rib.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-3",
+        "faces": 6453
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 549
+      }
+    ],
+    "cartilage_faces": 549,
+    "all_faces": 7002,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_rib_11_R",
+    "source_object": "Eleventh rib.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-4",
+        "faces": 4745
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 287
+      }
+    ],
+    "cartilage_faces": 287,
+    "all_faces": 5032,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_rib_12_R",
+    "source_object": "Twelfth rib.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-4",
+        "faces": 2664
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 331
+      }
+    ],
+    "cartilage_faces": 331,
+    "all_faces": 2995,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_clavicle_R",
+    "source_object": "Clavicle.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone",
+        "faces": 1308
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 240
+      }
+    ],
+    "cartilage_faces": 240,
+    "all_faces": 1548,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_scapula_R",
+    "source_object": "Scapula.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone",
+        "faces": 24524
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 731
+      }
+    ],
+    "cartilage_faces": 731,
+    "all_faces": 25255,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_humerus_R",
+    "source_object": "Humerus.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone",
+        "faces": 3477
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 803
+      }
+    ],
+    "cartilage_faces": 803,
+    "all_faces": 4280,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_radius_R",
+    "source_object": "Radius.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone",
+        "faces": 452
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 267
+      }
+    ],
+    "cartilage_faces": 267,
+    "all_faces": 719,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_ulna_R",
+    "source_object": "Ulna.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone",
+        "faces": 610
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 265
+      }
+    ],
+    "cartilage_faces": 265,
+    "all_faces": 875,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_scaphoid_R",
+    "source_object": "Scaphoid bone.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-3",
+        "faces": 93
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 297
+      }
+    ],
+    "cartilage_faces": 297,
+    "all_faces": 390,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_lunate_R",
+    "source_object": "Lunate bone.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-2",
+        "faces": 93
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 255
+      }
+    ],
+    "cartilage_faces": 255,
+    "all_faces": 348,
+    "modifiers": [
+      "SUBSURF"
+    ]
+  },
+  {
+    "bone_id": "bone_triquetrum_R",
+    "source_object": "Triquetrum bone.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-1",
+        "faces": 100
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 76
+      }
+    ],
+    "cartilage_faces": 76,
+    "all_faces": 176,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_pisiform_R",
+    "source_object": "Pisiform bone.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-8",
+        "faces": 266
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 12
+      }
+    ],
+    "cartilage_faces": 12,
+    "all_faces": 278,
+    "modifiers": [
+      "SUBSURF"
+    ]
+  },
+  {
+    "bone_id": "bone_trapezium_R",
+    "source_object": "Trapezium bone.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-7",
+        "faces": 431
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 69
+      }
+    ],
+    "cartilage_faces": 69,
+    "all_faces": 500,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_trapezoid_R",
+    "source_object": "Trapezoid bone.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-6",
+        "faces": 79
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 285
+      }
+    ],
+    "cartilage_faces": 285,
+    "all_faces": 364,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_capitate_R",
+    "source_object": "Capitate bone.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-5",
+        "faces": 229
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 241
+      }
+    ],
+    "cartilage_faces": 241,
+    "all_faces": 470,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_hamate_R",
+    "source_object": "Hamate bone.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-4",
+        "faces": 277
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 259
+      }
+    ],
+    "cartilage_faces": 259,
+    "all_faces": 536,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_metacarpal_1_R",
+    "source_object": "First metacarpal bone.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone",
+        "faces": 342
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 340
+      }
+    ],
+    "cartilage_faces": 340,
+    "all_faces": 682,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_hand_phalanx_1_proximal_R",
+    "source_object": "Proximal phalanx of first finger of hand.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-6",
+        "faces": 221
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 107
+      }
+    ],
+    "cartilage_faces": 107,
+    "all_faces": 328,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_hand_phalanx_1_distal_R",
+    "source_object": "Distal phalanx of first finger of hand.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-8",
+        "faces": 200
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 22
+      }
+    ],
+    "cartilage_faces": 22,
+    "all_faces": 222,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_metacarpal_2_R",
+    "source_object": "Second metacarpal bone.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone",
+        "faces": 544
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 220
+      }
+    ],
+    "cartilage_faces": 220,
+    "all_faces": 764,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_hand_phalanx_2_proximal_R",
+    "source_object": "Proximal phalanx of second finger of hand.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-6",
+        "faces": 294
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 120
+      }
+    ],
+    "cartilage_faces": 120,
+    "all_faces": 414,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_hand_phalanx_2_middle_R",
+    "source_object": "Middle phalanx of second finger of hand.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-7",
+        "faces": 229
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 85
+      }
+    ],
+    "cartilage_faces": 85,
+    "all_faces": 314,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_hand_phalanx_2_distal_R",
+    "source_object": "Distal phalanx of second finger of hand.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-8",
+        "faces": 222
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 28
+      }
+    ],
+    "cartilage_faces": 28,
+    "all_faces": 250,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_metacarpal_3_R",
+    "source_object": "Third metacarpal bone.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone",
+        "faces": 568
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 140
+      }
+    ],
+    "cartilage_faces": 140,
+    "all_faces": 708,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_hand_phalanx_3_proximal_R",
+    "source_object": "Proximal phalanx of third finger of hand.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-6",
+        "faces": 309
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 130
+      }
+    ],
+    "cartilage_faces": 130,
+    "all_faces": 439,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_hand_phalanx_3_middle_R",
+    "source_object": "Middle phalanx of third finger of hand.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-7",
+        "faces": 273
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 87
+      }
+    ],
+    "cartilage_faces": 87,
+    "all_faces": 360,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_hand_phalanx_3_distal_R",
+    "source_object": "Distal phalanx of third finger of hand.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-8",
+        "faces": 167
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 25
+      }
+    ],
+    "cartilage_faces": 25,
+    "all_faces": 192,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_metacarpal_4_R",
+    "source_object": "Fourth metacarpal bone.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone",
+        "faces": 542
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 100
+      }
+    ],
+    "cartilage_faces": 100,
+    "all_faces": 642,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_hand_phalanx_4_proximal_R",
+    "source_object": "Proximal phalanx of fourth finger of hand.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-6",
+        "faces": 246
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 122
+      }
+    ],
+    "cartilage_faces": 122,
+    "all_faces": 368,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_hand_phalanx_4_middle_R",
+    "source_object": "Middle phalanx of fourth finger of hand.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-7",
+        "faces": 284
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 162
+      }
+    ],
+    "cartilage_faces": 162,
+    "all_faces": 446,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_hand_phalanx_4_distal_R",
+    "source_object": "Distal phalanx of fourth finger of hand.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-8",
+        "faces": 122
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 12
+      }
+    ],
+    "cartilage_faces": 12,
+    "all_faces": 134,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_metacarpal_5_R",
+    "source_object": "Fifth metacarpal bone.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone",
+        "faces": 348
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 155
+      }
+    ],
+    "cartilage_faces": 155,
+    "all_faces": 503,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_hand_phalanx_5_proximal_R",
+    "source_object": "Proximal phalanx of fifth finger of hand.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-6",
+        "faces": 439
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 121
+      }
+    ],
+    "cartilage_faces": 121,
+    "all_faces": 560,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_hand_phalanx_5_middle_R",
+    "source_object": "Middle phalanx of fifth finger of hand.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-7",
+        "faces": 219
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 73
+      }
+    ],
+    "cartilage_faces": 73,
+    "all_faces": 292,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_hand_phalanx_5_distal_R",
+    "source_object": "Distal phalanx of fifth finger of hand.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-8",
+        "faces": 182
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 10
+      }
+    ],
+    "cartilage_faces": 10,
+    "all_faces": 192,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_hip_R",
+    "source_object": "Hip bone.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-1",
+        "faces": 673
+      },
+      {
+        "slot": 1,
+        "name": "Bone-6",
+        "faces": 1895
+      },
+      {
+        "slot": 2,
+        "name": "Bone-7",
+        "faces": 840
+      },
+      {
+        "slot": 3,
+        "name": "Cartilage",
+        "faces": 200
+      }
+    ],
+    "cartilage_faces": 200,
+    "all_faces": 3608,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_femur_R",
+    "source_object": "Femur.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone",
+        "faces": 2966
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 820
+      }
+    ],
+    "cartilage_faces": 820,
+    "all_faces": 3786,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_patella_R",
+    "source_object": "Patella.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-1",
+        "faces": 169
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 105
+      },
+      {
+        "slot": 2,
+        "name": "Bone-2",
+        "faces": 0
+      },
+      {
+        "slot": 3,
+        "name": "Bone-3",
+        "faces": 0
+      },
+      {
+        "slot": 4,
+        "name": "Bone-4",
+        "faces": 0
+      },
+      {
+        "slot": 5,
+        "name": "Bone-5",
+        "faces": 0
+      },
+      {
+        "slot": 6,
+        "name": "Bone-6",
+        "faces": 0
+      },
+      {
+        "slot": 7,
+        "name": "Bone-7",
+        "faces": 0
+      },
+      {
+        "slot": 8,
+        "name": "Bone-8",
+        "faces": 0
+      }
+    ],
+    "cartilage_faces": 105,
+    "all_faces": 274,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_tibia_R",
+    "source_object": "Tibia.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone",
+        "faces": 1332
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 281
+      }
+    ],
+    "cartilage_faces": 281,
+    "all_faces": 1613,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_fibula_R",
+    "source_object": "Fibula.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone",
+        "faces": 1170
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 94
+      }
+    ],
+    "cartilage_faces": 94,
+    "all_faces": 1264,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_talus_R",
+    "source_object": "Talus.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-1",
+        "faces": 901
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 424
+      }
+    ],
+    "cartilage_faces": 424,
+    "all_faces": 1325,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_calcaneus_R",
+    "source_object": "Calcaneus.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-5",
+        "faces": 1263
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 169
+      }
+    ],
+    "cartilage_faces": 169,
+    "all_faces": 1432,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_navicular_R",
+    "source_object": "Navicular bone.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-2",
+        "faces": 477
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 254
+      }
+    ],
+    "cartilage_faces": 254,
+    "all_faces": 731,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_cuboid_R",
+    "source_object": "Cuboid bone.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-6",
+        "faces": 806
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 188
+      }
+    ],
+    "cartilage_faces": 188,
+    "all_faces": 994,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_medial_cuneiform_R",
+    "source_object": "Medial cuneiform bone.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-3",
+        "faces": 808
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 160
+      }
+    ],
+    "cartilage_faces": 160,
+    "all_faces": 968,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_intermediate_cuneiform_R",
+    "source_object": "Intermediate cuneiform bone.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-3",
+        "faces": 279
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 165
+      }
+    ],
+    "cartilage_faces": 165,
+    "all_faces": 444,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_lateral_cuneiform_R",
+    "source_object": "Lateral cuneiform bone.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-3",
+        "faces": 368
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 264
+      }
+    ],
+    "cartilage_faces": 264,
+    "all_faces": 632,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_metatarsal_1_R",
+    "source_object": "First metatarsal bone.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone",
+        "faces": 747
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 340
+      }
+    ],
+    "cartilage_faces": 340,
+    "all_faces": 1087,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_foot_phalanx_1_proximal_R",
+    "source_object": "Proximal phalanx of first finger of foot.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-6",
+        "faces": 400
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 117
+      }
+    ],
+    "cartilage_faces": 117,
+    "all_faces": 517,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_foot_phalanx_1_distal_R",
+    "source_object": "Distal phalanx of first finger of foot.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-8",
+        "faces": 391
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 75
+      }
+    ],
+    "cartilage_faces": 75,
+    "all_faces": 466,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_metatarsal_2_R",
+    "source_object": "Second metatarsal bone.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone",
+        "faces": 511
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 179
+      }
+    ],
+    "cartilage_faces": 179,
+    "all_faces": 690,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_foot_phalanx_2_proximal_R",
+    "source_object": "Proximal phalanx of second finger of foot.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-6",
+        "faces": 288
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 136
+      }
+    ],
+    "cartilage_faces": 136,
+    "all_faces": 424,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_foot_phalanx_2_middle_R",
+    "source_object": "Middle phalanx of second finger of foot.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-7",
+        "faces": 210
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 116
+      }
+    ],
+    "cartilage_faces": 116,
+    "all_faces": 326,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_foot_phalanx_2_distal_R",
+    "source_object": "Distal phalanx of second finger of foot.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-8",
+        "faces": 199
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 37
+      }
+    ],
+    "cartilage_faces": 37,
+    "all_faces": 236,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_metatarsal_3_R",
+    "source_object": "Third metatarsal bone.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone",
+        "faces": 668
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 136
+      }
+    ],
+    "cartilage_faces": 136,
+    "all_faces": 804,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_foot_phalanx_3_proximal_R",
+    "source_object": "Proximal phalanx of third finger of foot.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-6",
+        "faces": 340
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 118
+      }
+    ],
+    "cartilage_faces": 118,
+    "all_faces": 458,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_foot_phalanx_3_middle_R",
+    "source_object": "Middle phalanx of third finger of foot.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-7",
+        "faces": 286
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 73
+      }
+    ],
+    "cartilage_faces": 73,
+    "all_faces": 359,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_foot_phalanx_3_distal_R",
+    "source_object": "Distal phalanx of third finger of foot.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-8",
+        "faces": 261
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 57
+      }
+    ],
+    "cartilage_faces": 57,
+    "all_faces": 318,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_metatarsal_4_R",
+    "source_object": "Fourth metatarsal bone.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone",
+        "faces": 567
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 165
+      }
+    ],
+    "cartilage_faces": 165,
+    "all_faces": 732,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_foot_phalanx_4_proximal_R",
+    "source_object": "Proximal phalanx of fourth finger of foot.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-6",
+        "faces": 332
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 128
+      }
+    ],
+    "cartilage_faces": 128,
+    "all_faces": 460,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_foot_phalanx_4_middle_R",
+    "source_object": "Middle phalanx of fourth finger of foot.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-7",
+        "faces": 271
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 133
+      }
+    ],
+    "cartilage_faces": 133,
+    "all_faces": 404,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_foot_phalanx_4_distal_R",
+    "source_object": "Distal phalanx of fourth finger of foot.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-8",
+        "faces": 243
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 35
+      }
+    ],
+    "cartilage_faces": 35,
+    "all_faces": 278,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_metatarsal_5_R",
+    "source_object": "Fifth metatarsal bone.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone",
+        "faces": 658
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 236
+      }
+    ],
+    "cartilage_faces": 236,
+    "all_faces": 894,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_foot_phalanx_5_proximal_R",
+    "source_object": "Proximal phalanx of fifth finger of foot.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-6",
+        "faces": 432
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 84
+      }
+    ],
+    "cartilage_faces": 84,
+    "all_faces": 516,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_foot_phalanx_5_middle_R",
+    "source_object": "Middle phalanx of fifth finger of foot.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-7",
+        "faces": 177
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 39
+      }
+    ],
+    "cartilage_faces": 39,
+    "all_faces": 216,
+    "modifiers": []
+  },
+  {
+    "bone_id": "bone_foot_phalanx_5_distal_R",
+    "source_object": "Distal phalanx of fifth finger of foot.r",
+    "materials": [
+      {
+        "slot": 0,
+        "name": "Bone-8",
+        "faces": 207
+      },
+      {
+        "slot": 1,
+        "name": "Cartilage",
+        "faces": 15
+      }
+    ],
+    "cartilage_faces": 15,
+    "all_faces": 222,
+    "modifiers": []
+  }
+]

@@ -1,0 +1,5602 @@
+{
+  "status": "source_surface_annotations_not_volumetric_cartilage",
+  "source_sha256": "9f08a17ea0115fed80b2a73ecdf0a1bc2ab2f6956f37c593ce23d513ea35afcd",
+  "file": "z-anatomy-candidate/assets/surface-marks.glb",
+  "objects": [
+    {
+      "id": "surface_mark_occipital_M",
+      "name_zh": "枕骨软骨标记面",
+      "name_en": "Cartilage material region on Occipital bone",
+      "side": "M",
+      "region": "颅骨",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_occipital_M"
+      ],
+      "joint_or_connection_ids": [
+        "cranial_sutures",
+        "atlanto_occipital"
+      ],
+      "source_structure_id": "Occipital bone / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 130,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -1.7695128917694092e-08,
+        1.554412603378296,
+        -0.017093047499656677
+      ]
+    },
+    {
+      "id": "surface_mark_mandible_M",
+      "name_zh": "下颌骨软骨标记面",
+      "name_en": "Cartilage material region on Mandible",
+      "side": "M",
+      "region": "颅骨",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_mandible_M"
+      ],
+      "joint_or_connection_ids": [
+        "tmj_L",
+        "tmj_R"
+      ],
+      "source_structure_id": "Mandible / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 128,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        4.76490624734538e-10,
+        1.5736477375030518,
+        0.005883476231247187
+      ]
+    },
+    {
+      "id": "surface_mark_malleus_L",
+      "name_zh": "左锤骨软骨标记面",
+      "name_en": "Cartilage material region on Malleus.l",
+      "side": "L",
+      "region": "听小骨",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_malleus_L"
+      ],
+      "joint_or_connection_ids": [
+        "incudomalleolar_L"
+      ],
+      "source_structure_id": "Malleus.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 326,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.048397473990917206,
+        1.584355115890503,
+        -0.005111975129693747
+      ]
+    },
+    {
+      "id": "surface_mark_incus_L",
+      "name_zh": "左砧骨软骨标记面",
+      "name_en": "Cartilage material region on Incus.l",
+      "side": "L",
+      "region": "听小骨",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_incus_L"
+      ],
+      "joint_or_connection_ids": [
+        "incudomalleolar_L",
+        "incudostapedial_L"
+      ],
+      "source_structure_id": "Incus.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 254,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.04675271362066269,
+        1.582645058631897,
+        -0.0053377095609903336
+      ]
+    },
+    {
+      "id": "surface_mark_stapes_L",
+      "name_zh": "左镫骨软骨标记面",
+      "name_en": "Cartilage material region on Stapes.l",
+      "side": "L",
+      "region": "听小骨",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_stapes_L"
+      ],
+      "joint_or_connection_ids": [
+        "incudostapedial_L",
+        "stapes_window_L"
+      ],
+      "source_structure_id": "Stapes.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 437,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.042393237352371216,
+        1.5809277296066284,
+        -0.004613850265741348
+      ]
+    },
+    {
+      "id": "surface_mark_malleus_R",
+      "name_zh": "右锤骨软骨标记面",
+      "name_en": "Cartilage material region on Malleus.r",
+      "side": "R",
+      "region": "听小骨",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_malleus_R"
+      ],
+      "joint_or_connection_ids": [
+        "incudomalleolar_R"
+      ],
+      "source_structure_id": "Malleus.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 326,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.048397473990917206,
+        1.584355115890503,
+        -0.005111975129693747
+      ]
+    },
+    {
+      "id": "surface_mark_incus_R",
+      "name_zh": "右砧骨软骨标记面",
+      "name_en": "Cartilage material region on Incus.r",
+      "side": "R",
+      "region": "听小骨",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_incus_R"
+      ],
+      "joint_or_connection_ids": [
+        "incudomalleolar_R",
+        "incudostapedial_R"
+      ],
+      "source_structure_id": "Incus.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 254,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.04675271362066269,
+        1.582645058631897,
+        -0.0053377095609903336
+      ]
+    },
+    {
+      "id": "surface_mark_stapes_R",
+      "name_zh": "右镫骨软骨标记面",
+      "name_en": "Cartilage material region on Stapes.r",
+      "side": "R",
+      "region": "听小骨",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_stapes_R"
+      ],
+      "joint_or_connection_ids": [
+        "incudostapedial_R",
+        "stapes_window_R"
+      ],
+      "source_structure_id": "Stapes.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 437,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.042393237352371216,
+        1.5809277296066284,
+        -0.004613850265741348
+      ]
+    },
+    {
+      "id": "surface_mark_vertebra_C1_M",
+      "name_zh": "寰椎（C1）软骨标记面",
+      "name_en": "Cartilage material region on Atlas (C1)",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_vertebra_C1_M"
+      ],
+      "joint_or_connection_ids": [
+        "atlanto_occipital",
+        "atlanto_axial"
+      ],
+      "source_structure_id": "Atlas (C1) / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 48,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.0009789849864318967,
+        1.5444480180740356,
+        -0.013262277469038963
+      ]
+    },
+    {
+      "id": "surface_mark_vertebra_C2_M",
+      "name_zh": "枢椎（C2）软骨标记面",
+      "name_en": "Cartilage material region on Axis (C2)",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_vertebra_C2_M"
+      ],
+      "joint_or_connection_ids": [
+        "atlanto_axial",
+        "spine_vertebra_C2_vertebra_C3"
+      ],
+      "source_structure_id": "Axis (C2) / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 234,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        1.5626581443939358e-05,
+        1.5332523584365845,
+        -0.012302801944315434
+      ]
+    },
+    {
+      "id": "surface_mark_vertebra_C3_M",
+      "name_zh": "第3颈椎（C3）软骨标记面",
+      "name_en": "Cartilage material region on Vertebra C3",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_vertebra_C3_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_C2_vertebra_C3",
+        "spine_vertebra_C3_vertebra_C4"
+      ],
+      "source_structure_id": "Vertebra C3 / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 216,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -1.868091459300558e-09,
+        1.5099210739135742,
+        -0.014435521326959133
+      ]
+    },
+    {
+      "id": "surface_mark_vertebra_C4_M",
+      "name_zh": "第4颈椎（C4）软骨标记面",
+      "name_en": "Cartilage material region on Vertebra C4",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_vertebra_C4_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_C3_vertebra_C4",
+        "spine_vertebra_C4_vertebra_C5"
+      ],
+      "source_structure_id": "Vertebra C4 / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 266,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        7.542128878412768e-05,
+        1.495770812034607,
+        -0.014089462347328663
+      ]
+    },
+    {
+      "id": "surface_mark_vertebra_C5_M",
+      "name_zh": "第5颈椎（C5）软骨标记面",
+      "name_en": "Cartilage material region on Vertebra C5",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_vertebra_C5_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_C4_vertebra_C5",
+        "spine_vertebra_C5_vertebra_C6"
+      ],
+      "source_structure_id": "Vertebra C5 / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 230,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -4.735538627897995e-09,
+        1.4786416292190552,
+        -0.01647556573152542
+      ]
+    },
+    {
+      "id": "surface_mark_vertebra_C6_M",
+      "name_zh": "第6颈椎（C6）软骨标记面",
+      "name_en": "Cartilage material region on Vertebra C6",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_vertebra_C6_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_C5_vertebra_C6",
+        "spine_vertebra_C6_vertebra_C7"
+      ],
+      "source_structure_id": "Vertebra C6 / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 191,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.00018997350707650185,
+        1.4657119512557983,
+        -0.018383171409368515
+      ]
+    },
+    {
+      "id": "surface_mark_vertebra_T1_M",
+      "name_zh": "第1胸椎（T1）软骨标记面",
+      "name_en": "Cartilage material region on Vertebra T1",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_vertebra_T1_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_C7_vertebra_T1",
+        "spine_vertebra_T1_vertebra_T2",
+        "costovertebral_01_L",
+        "costovertebral_02_L",
+        "costovertebral_01_R",
+        "costovertebral_02_R"
+      ],
+      "source_structure_id": "Vertebra T1 / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 292,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        1.5718523704855158e-10,
+        1.4383692741394043,
+        -0.029034394770860672
+      ]
+    },
+    {
+      "id": "surface_mark_vertebra_T2_M",
+      "name_zh": "第2胸椎（T2）软骨标记面",
+      "name_en": "Cartilage material region on Vertebra T2",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_vertebra_T2_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_T1_vertebra_T2",
+        "spine_vertebra_T2_vertebra_T3",
+        "costovertebral_02_L",
+        "costovertebral_03_L",
+        "costovertebral_02_R",
+        "costovertebral_03_R"
+      ],
+      "source_structure_id": "Vertebra T2 / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 354,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        2.4698811884604766e-09,
+        1.4194589853286743,
+        -0.03756319731473923
+      ]
+    },
+    {
+      "id": "surface_mark_vertebra_T3_M",
+      "name_zh": "第3胸椎（T3）软骨标记面",
+      "name_en": "Cartilage material region on Vertebra T3",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_vertebra_T3_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_T2_vertebra_T3",
+        "spine_vertebra_T3_vertebra_T4",
+        "costovertebral_03_L",
+        "costovertebral_04_L",
+        "costovertebral_03_R",
+        "costovertebral_04_R"
+      ],
+      "source_structure_id": "Vertebra T3 / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 232,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.0010975835612043738,
+        1.402952790260315,
+        -0.04858475923538208
+      ]
+    },
+    {
+      "id": "surface_mark_vertebra_T4_M",
+      "name_zh": "第4胸椎（T4）软骨标记面",
+      "name_en": "Cartilage material region on Vertebra T4",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_vertebra_T4_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_T3_vertebra_T4",
+        "spine_vertebra_T4_vertebra_T5",
+        "costovertebral_04_L",
+        "costovertebral_05_L",
+        "costovertebral_04_R",
+        "costovertebral_05_R"
+      ],
+      "source_structure_id": "Vertebra T4 / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 270,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -1.15657272647951e-09,
+        1.3757855892181396,
+        -0.055941563099622726
+      ]
+    },
+    {
+      "id": "surface_mark_vertebra_T5_M",
+      "name_zh": "第5胸椎（T5）软骨标记面",
+      "name_en": "Cartilage material region on Vertebra T5",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_vertebra_T5_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_T4_vertebra_T5",
+        "spine_vertebra_T5_vertebra_T6",
+        "costovertebral_05_L",
+        "costovertebral_06_L",
+        "costovertebral_05_R",
+        "costovertebral_06_R"
+      ],
+      "source_structure_id": "Vertebra T5 / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 281,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -2.0212161189192557e-07,
+        1.3509235382080078,
+        -0.061944980174303055
+      ]
+    },
+    {
+      "id": "surface_mark_vertebra_T6_M",
+      "name_zh": "第6胸椎（T6）软骨标记面",
+      "name_en": "Cartilage material region on Vertebra T6",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_vertebra_T6_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_T5_vertebra_T6",
+        "spine_vertebra_T6_vertebra_T7",
+        "costovertebral_06_L",
+        "costovertebral_07_L",
+        "costovertebral_06_R",
+        "costovertebral_07_R"
+      ],
+      "source_structure_id": "Vertebra T6 / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 228,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -4.1174263998300376e-10,
+        1.326244831085205,
+        -0.06598640233278275
+      ]
+    },
+    {
+      "id": "surface_mark_vertebra_T7_M",
+      "name_zh": "第7胸椎（T7）软骨标记面",
+      "name_en": "Cartilage material region on Vertebra T7",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_vertebra_T7_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_T6_vertebra_T7",
+        "spine_vertebra_T7_vertebra_T8",
+        "costovertebral_07_L",
+        "costovertebral_08_L",
+        "costovertebral_07_R",
+        "costovertebral_08_R"
+      ],
+      "source_structure_id": "Vertebra T7 / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 366,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        2.846684221680107e-09,
+        1.295345425605774,
+        -0.062149301171302795
+      ]
+    },
+    {
+      "id": "surface_mark_vertebra_T8_M",
+      "name_zh": "第8胸椎（T8）软骨标记面",
+      "name_en": "Cartilage material region on Vertebra T8",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_vertebra_T8_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_T7_vertebra_T8",
+        "spine_vertebra_T8_vertebra_T9",
+        "costovertebral_08_L",
+        "costovertebral_09_L",
+        "costovertebral_08_R",
+        "costovertebral_09_R"
+      ],
+      "source_structure_id": "Vertebra T8 / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 236,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -1.3096723705530167e-09,
+        1.2644788026809692,
+        -0.06228853017091751
+      ]
+    },
+    {
+      "id": "surface_mark_vertebra_T9_M",
+      "name_zh": "第9胸椎（T9）软骨标记面",
+      "name_en": "Cartilage material region on Vertebra T9",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_vertebra_T9_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_T8_vertebra_T9",
+        "spine_vertebra_T9_vertebra_T10",
+        "costovertebral_09_L",
+        "costovertebral_09_R"
+      ],
+      "source_structure_id": "Vertebra T9 / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 370,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        2.9508571142145e-09,
+        1.2382923364639282,
+        -0.056100644171237946
+      ]
+    },
+    {
+      "id": "surface_mark_vertebra_T10_M",
+      "name_zh": "第10胸椎（T10）软骨标记面",
+      "name_en": "Cartilage material region on Vertebra T10",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_vertebra_T10_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_T9_vertebra_T10",
+        "spine_vertebra_T10_vertebra_T11",
+        "costovertebral_10_L",
+        "costovertebral_10_R"
+      ],
+      "source_structure_id": "Vertebra T10 / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 286,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.00011052627087337896,
+        1.2105283737182617,
+        -0.04396016150712967
+      ]
+    },
+    {
+      "id": "surface_mark_vertebra_T11_M",
+      "name_zh": "第11胸椎（T11）软骨标记面",
+      "name_en": "Cartilage material region on Vertebra T11",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_vertebra_T11_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_T10_vertebra_T11",
+        "spine_vertebra_T11_vertebra_T12",
+        "costovertebral_11_L",
+        "costovertebral_11_R"
+      ],
+      "source_structure_id": "Vertebra T11 / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 250,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -7.685671543633532e-10,
+        1.1773353815078735,
+        -0.04271832853555679
+      ]
+    },
+    {
+      "id": "surface_mark_vertebra_T12_M",
+      "name_zh": "第12胸椎（T12）软骨标记面",
+      "name_en": "Cartilage material region on Vertebra T12",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_vertebra_T12_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_T11_vertebra_T12",
+        "spine_vertebra_T12_vertebra_L1",
+        "costovertebral_12_L",
+        "costovertebral_12_R"
+      ],
+      "source_structure_id": "Vertebra T12 / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 368,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -2.779584340473207e-09,
+        1.145343542098999,
+        -0.030352963134646416
+      ]
+    },
+    {
+      "id": "surface_mark_vertebra_L1_M",
+      "name_zh": "第1腰椎（L1）软骨标记面",
+      "name_en": "Cartilage material region on Vertebra L1",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_vertebra_L1_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_T12_vertebra_L1",
+        "spine_vertebra_L1_vertebra_L2"
+      ],
+      "source_structure_id": "Vertebra L1 / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 244,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.0003504568012431264,
+        1.1050164699554443,
+        -0.02493409253656864
+      ]
+    },
+    {
+      "id": "surface_mark_vertebra_L2_M",
+      "name_zh": "第2腰椎（L2）软骨标记面",
+      "name_en": "Cartilage material region on Vertebra L2",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_vertebra_L2_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_L1_vertebra_L2",
+        "spine_vertebra_L2_vertebra_L3"
+      ],
+      "source_structure_id": "Vertebra L2 / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 238,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -1.0530295524446842e-09,
+        1.0790709257125854,
+        -0.0175817608833313
+      ]
+    },
+    {
+      "id": "surface_mark_vertebra_L3_M",
+      "name_zh": "第3腰椎（L3）软骨标记面",
+      "name_en": "Cartilage material region on Vertebra L3",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_vertebra_L3_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_L2_vertebra_L3",
+        "spine_vertebra_L3_vertebra_L4"
+      ],
+      "source_structure_id": "Vertebra L3 / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 328,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        1.0304748684575316e-05,
+        1.0453604459762573,
+        -0.022259484976530075
+      ]
+    },
+    {
+      "id": "surface_mark_vertebra_L4_M",
+      "name_zh": "第4腰椎（L4）软骨标记面",
+      "name_en": "Cartilage material region on Vertebra L4",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_vertebra_L4_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_L3_vertebra_L4",
+        "spine_vertebra_L4_vertebra_L5"
+      ],
+      "source_structure_id": "Vertebra L4 / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 336,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        5.409432457526009e-09,
+        1.015108585357666,
+        -0.019988538697361946
+      ]
+    },
+    {
+      "id": "surface_mark_vertebra_L5_M",
+      "name_zh": "第5腰椎（L5）软骨标记面",
+      "name_en": "Cartilage material region on Vertebra L5",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_vertebra_L5_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_L4_vertebra_L5",
+        "spine_vertebra_L5_sacrum"
+      ],
+      "source_structure_id": "Vertebra L5 / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 412,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -3.4715967878184983e-09,
+        0.9834883213043213,
+        -0.023733604699373245
+      ]
+    },
+    {
+      "id": "surface_mark_sacrum_M",
+      "name_zh": "骶骨软骨标记面",
+      "name_en": "Cartilage material region on Sacrum",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_sacrum_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_L5_sacrum",
+        "sacrococcygeal",
+        "sacroiliac_L",
+        "sacroiliac_R"
+      ],
+      "source_structure_id": "Sacrum / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 836,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -3.910319719580002e-05,
+        0.9412516355514526,
+        -0.037832144647836685
+      ]
+    },
+    {
+      "id": "surface_mark_sternum_M",
+      "name_zh": "胸骨软骨标记面",
+      "name_en": "Cartilage material region on Manubrium of sternum + Body of sternum + Xiphoid process",
+      "side": "M",
+      "region": "胸廓",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_sternum_M"
+      ],
+      "joint_or_connection_ids": [
+        "sternocostal_01_L",
+        "sternocostal_02_L",
+        "sternocostal_03_L",
+        "sternocostal_04_L",
+        "sternocostal_05_L",
+        "sternocostal_06_L",
+        "sternocostal_07_L",
+        "sternoclavicular_L",
+        "sternocostal_01_R",
+        "sternocostal_02_R",
+        "sternocostal_03_R",
+        "sternocostal_04_R",
+        "sternocostal_05_R",
+        "sternocostal_06_R",
+        "sternocostal_07_R",
+        "sternoclavicular_R"
+      ],
+      "source_structure_id": "Manubrium of sternum + Body of sternum + Xiphoid process / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 2458,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.002227196702733636,
+        1.3049248456954956,
+        0.08847398310899734
+      ]
+    },
+    {
+      "id": "surface_mark_rib_01_L",
+      "name_zh": "左第1肋骨软骨标记面",
+      "name_en": "Cartilage material region on First rib.l",
+      "side": "L",
+      "region": "胸廓",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_rib_01_L"
+      ],
+      "joint_or_connection_ids": [
+        "costovertebral_01_L",
+        "sternocostal_01_L"
+      ],
+      "source_structure_id": "First rib.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 382,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.03665875643491745,
+        1.412774682044983,
+        0.007812706753611565
+      ]
+    },
+    {
+      "id": "surface_mark_rib_02_L",
+      "name_zh": "左第2肋骨软骨标记面",
+      "name_en": "Cartilage material region on Second rib.l",
+      "side": "L",
+      "region": "胸廓",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_rib_02_L"
+      ],
+      "joint_or_connection_ids": [
+        "costovertebral_02_L",
+        "sternocostal_02_L",
+        "scapulothoracic_L"
+      ],
+      "source_structure_id": "Second rib.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 373,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.03514415770769119,
+        1.3856587409973145,
+        0.018440647050738335
+      ]
+    },
+    {
+      "id": "surface_mark_rib_03_L",
+      "name_zh": "左第3肋骨软骨标记面",
+      "name_en": "Cartilage material region on Third rib.l",
+      "side": "L",
+      "region": "胸廓",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_rib_03_L"
+      ],
+      "joint_or_connection_ids": [
+        "costovertebral_03_L",
+        "sternocostal_03_L",
+        "scapulothoracic_L"
+      ],
+      "source_structure_id": "Third rib.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 548,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.02945351041853428,
+        1.3913183212280273,
+        -0.023867979645729065
+      ]
+    },
+    {
+      "id": "surface_mark_rib_04_L",
+      "name_zh": "左第4肋骨软骨标记面",
+      "name_en": "Cartilage material region on Fourth rib.l",
+      "side": "L",
+      "region": "胸廓",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_rib_04_L"
+      ],
+      "joint_or_connection_ids": [
+        "costovertebral_04_L",
+        "sternocostal_04_L",
+        "scapulothoracic_L"
+      ],
+      "source_structure_id": "Fourth rib.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 817,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.032103028148412704,
+        1.365260124206543,
+        -0.025373995304107666
+      ]
+    },
+    {
+      "id": "surface_mark_rib_05_L",
+      "name_zh": "左第5肋骨软骨标记面",
+      "name_en": "Cartilage material region on Fifth rib.l",
+      "side": "L",
+      "region": "胸廓",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_rib_05_L"
+      ],
+      "joint_or_connection_ids": [
+        "costovertebral_05_L",
+        "sternocostal_05_L",
+        "scapulothoracic_L"
+      ],
+      "source_structure_id": "Fifth rib.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 702,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.03747120127081871,
+        1.3360587358474731,
+        -0.0318286307156086
+      ]
+    },
+    {
+      "id": "surface_mark_rib_06_L",
+      "name_zh": "左第6肋骨软骨标记面",
+      "name_en": "Cartilage material region on Sixth rib.l",
+      "side": "L",
+      "region": "胸廓",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_rib_06_L"
+      ],
+      "joint_or_connection_ids": [
+        "costovertebral_06_L",
+        "sternocostal_06_L",
+        "scapulothoracic_L"
+      ],
+      "source_structure_id": "Sixth rib.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 1057,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.03110971860587597,
+        1.321185827255249,
+        -0.05294332280755043
+      ]
+    },
+    {
+      "id": "surface_mark_rib_07_L",
+      "name_zh": "左第7肋骨软骨标记面",
+      "name_en": "Cartilage material region on Seventh rib.l",
+      "side": "L",
+      "region": "胸廓",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_rib_07_L"
+      ],
+      "joint_or_connection_ids": [
+        "costovertebral_07_L",
+        "sternocostal_07_L",
+        "costal_arch_08_L",
+        "scapulothoracic_L"
+      ],
+      "source_structure_id": "Seventh rib.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 716,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.04705265536904335,
+        1.2714424133300781,
+        -0.03164274990558624
+      ]
+    },
+    {
+      "id": "surface_mark_rib_08_L",
+      "name_zh": "左第8肋骨软骨标记面",
+      "name_en": "Cartilage material region on Eighth rib.l",
+      "side": "L",
+      "region": "胸廓",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_rib_08_L"
+      ],
+      "joint_or_connection_ids": [
+        "costovertebral_08_L",
+        "costal_arch_08_L",
+        "costal_arch_09_L"
+      ],
+      "source_structure_id": "Eighth rib.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 645,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.04039177671074867,
+        1.2512011528015137,
+        -0.04232291877269745
+      ]
+    },
+    {
+      "id": "surface_mark_rib_09_L",
+      "name_zh": "左第9肋骨软骨标记面",
+      "name_en": "Cartilage material region on Ninth rib.l",
+      "side": "L",
+      "region": "胸廓",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_rib_09_L"
+      ],
+      "joint_or_connection_ids": [
+        "costovertebral_09_L",
+        "costal_arch_09_L",
+        "costal_arch_10_L"
+      ],
+      "source_structure_id": "Ninth rib.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 765,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.03668644651770592,
+        1.229833722114563,
+        -0.047130052000284195
+      ]
+    },
+    {
+      "id": "surface_mark_rib_10_L",
+      "name_zh": "左第10肋骨软骨标记面",
+      "name_en": "Cartilage material region on Tenth rib.l",
+      "side": "L",
+      "region": "胸廓",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_rib_10_L"
+      ],
+      "joint_or_connection_ids": [
+        "costovertebral_10_L",
+        "costal_arch_10_L"
+      ],
+      "source_structure_id": "Tenth rib.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 558,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.044022563844919205,
+        1.1911131143569946,
+        -0.03645087033510208
+      ]
+    },
+    {
+      "id": "surface_mark_rib_11_L",
+      "name_zh": "左第11肋骨软骨标记面",
+      "name_en": "Cartilage material region on Eleventh rib.l",
+      "side": "L",
+      "region": "胸廓",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_rib_11_L"
+      ],
+      "joint_or_connection_ids": [
+        "costovertebral_11_L"
+      ],
+      "source_structure_id": "Eleventh rib.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 288,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.021964577957987785,
+        1.183269739151001,
+        -0.038978684693574905
+      ]
+    },
+    {
+      "id": "surface_mark_rib_12_L",
+      "name_zh": "左第12肋骨软骨标记面",
+      "name_en": "Cartilage material region on Twelfth rib.l",
+      "side": "L",
+      "region": "胸廓",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_rib_12_L"
+      ],
+      "joint_or_connection_ids": [
+        "costovertebral_12_L"
+      ],
+      "source_structure_id": "Twelfth rib.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 334,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.021048368886113167,
+        1.145002841949463,
+        -0.02724594436585903
+      ]
+    },
+    {
+      "id": "surface_mark_clavicle_L",
+      "name_zh": "左锁骨软骨标记面",
+      "name_en": "Cartilage material region on Clavicle.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_clavicle_L"
+      ],
+      "joint_or_connection_ids": [
+        "sternoclavicular_L",
+        "acromioclavicular_L"
+      ],
+      "source_structure_id": "Clavicle.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 240,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.06424698233604431,
+        1.406180500984192,
+        0.012776997871696949
+      ]
+    },
+    {
+      "id": "surface_mark_scapula_L",
+      "name_zh": "左肩胛骨软骨标记面",
+      "name_en": "Cartilage material region on Scapula.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_scapula_L"
+      ],
+      "joint_or_connection_ids": [
+        "acromioclavicular_L",
+        "scapulothoracic_L",
+        "glenohumeral_L"
+      ],
+      "source_structure_id": "Scapula.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 731,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.14723724126815796,
+        1.3818951845169067,
+        -0.03551417961716652
+      ]
+    },
+    {
+      "id": "surface_mark_humerus_L",
+      "name_zh": "左肱骨软骨标记面",
+      "name_en": "Cartilage material region on Humerus.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_humerus_L"
+      ],
+      "joint_or_connection_ids": [
+        "glenohumeral_L",
+        "humeroulnar_L",
+        "humeroradial_L"
+      ],
+      "source_structure_id": "Humerus.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 803,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.1981567144393921,
+        1.2109426259994507,
+        -0.03226790577173233
+      ]
+    },
+    {
+      "id": "surface_mark_radius_L",
+      "name_zh": "左桡骨软骨标记面",
+      "name_en": "Cartilage material region on Radius.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_radius_L"
+      ],
+      "joint_or_connection_ids": [
+        "humeroradial_L",
+        "proximal_radioulnar_L",
+        "distal_radioulnar_L",
+        "forearm_interosseous_L",
+        "radiocarpal_L"
+      ],
+      "source_structure_id": "Radius.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 273,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.24931101500988007,
+        0.9987455010414124,
+        -0.01180952787399292
+      ]
+    },
+    {
+      "id": "surface_mark_ulna_L",
+      "name_zh": "左尺骨软骨标记面",
+      "name_en": "Cartilage material region on Ulna.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_ulna_L"
+      ],
+      "joint_or_connection_ids": [
+        "humeroulnar_L",
+        "proximal_radioulnar_L",
+        "distal_radioulnar_L",
+        "forearm_interosseous_L"
+      ],
+      "source_structure_id": "Ulna.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 265,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.22905144095420837,
+        1.0042619705200195,
+        -0.016016483306884766
+      ]
+    },
+    {
+      "id": "surface_mark_scaphoid_L",
+      "name_zh": "左手舟骨软骨标记面",
+      "name_en": "Cartilage material region on Scaphoid bone.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_scaphoid_L"
+      ],
+      "joint_or_connection_ids": [
+        "radiocarpal_L",
+        "intercarpal_L"
+      ],
+      "source_structure_id": "Scaphoid bone.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 297,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.27198198437690735,
+        0.8555535674095154,
+        0.01837027817964554
+      ]
+    },
+    {
+      "id": "surface_mark_lunate_L",
+      "name_zh": "左月骨软骨标记面",
+      "name_en": "Cartilage material region on Lunate bone.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_lunate_L"
+      ],
+      "joint_or_connection_ids": [
+        "radiocarpal_L",
+        "intercarpal_L"
+      ],
+      "source_structure_id": "Lunate bone.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 1530,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.25190499424934387,
+        0.8539093732833862,
+        0.017103327438235283
+      ]
+    },
+    {
+      "id": "surface_mark_triquetrum_L",
+      "name_zh": "左三角骨软骨标记面",
+      "name_en": "Cartilage material region on Triquetrum bone.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_triquetrum_L"
+      ],
+      "joint_or_connection_ids": [
+        "radiocarpal_L",
+        "intercarpal_L"
+      ],
+      "source_structure_id": "Triquetrum bone.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 76,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.2470903992652893,
+        0.846225917339325,
+        0.020258918404579163
+      ]
+    },
+    {
+      "id": "surface_mark_pisiform_L",
+      "name_zh": "左豌豆骨软骨标记面",
+      "name_en": "Cartilage material region on Pisiform bone.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_pisiform_L"
+      ],
+      "joint_or_connection_ids": [
+        "intercarpal_L"
+      ],
+      "source_structure_id": "Pisiform bone.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 72,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.24463213980197906,
+        0.8453628420829773,
+        0.02848765067756176
+      ]
+    },
+    {
+      "id": "surface_mark_trapezium_L",
+      "name_zh": "左大多角骨软骨标记面",
+      "name_en": "Cartilage material region on Trapezium bone.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_trapezium_L"
+      ],
+      "joint_or_connection_ids": [
+        "intercarpal_L",
+        "cmc_1_L",
+        "cmc_2_L"
+      ],
+      "source_structure_id": "Trapezium bone.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 69,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.28266599774360657,
+        0.8458568453788757,
+        0.026236169040203094
+      ]
+    },
+    {
+      "id": "surface_mark_trapezoid_L",
+      "name_zh": "左小多角骨软骨标记面",
+      "name_en": "Cartilage material region on Trapezoid bone.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_trapezoid_L"
+      ],
+      "joint_or_connection_ids": [
+        "intercarpal_L",
+        "cmc_2_L"
+      ],
+      "source_structure_id": "Trapezoid bone.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 285,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.27527013421058655,
+        0.839322030544281,
+        0.01976662687957287
+      ]
+    },
+    {
+      "id": "surface_mark_capitate_L",
+      "name_zh": "左头状骨软骨标记面",
+      "name_en": "Cartilage material region on Capitate bone.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_capitate_L"
+      ],
+      "joint_or_connection_ids": [
+        "intercarpal_L",
+        "cmc_2_L",
+        "cmc_3_L",
+        "cmc_4_L"
+      ],
+      "source_structure_id": "Capitate bone.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 241,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.2643398642539978,
+        0.8437464237213135,
+        0.018063096329569817
+      ]
+    },
+    {
+      "id": "surface_mark_hamate_L",
+      "name_zh": "左钩骨软骨标记面",
+      "name_en": "Cartilage material region on Hamate bone.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_hamate_L"
+      ],
+      "joint_or_connection_ids": [
+        "intercarpal_L",
+        "cmc_4_L",
+        "cmc_5_L"
+      ],
+      "source_structure_id": "Hamate bone.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 259,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.25386953353881836,
+        0.8399420976638794,
+        0.01735556870698929
+      ]
+    },
+    {
+      "id": "surface_mark_metacarpal_1_L",
+      "name_zh": "左第1掌骨软骨标记面",
+      "name_en": "Cartilage material region on First metacarpal bone.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_metacarpal_1_L"
+      ],
+      "joint_or_connection_ids": [
+        "cmc_1_L",
+        "mcp_1_L"
+      ],
+      "source_structure_id": "First metacarpal bone.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 340,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.303813099861145,
+        0.822547972202301,
+        0.0423114113509655
+      ]
+    },
+    {
+      "id": "surface_mark_hand_phalanx_1_proximal_L",
+      "name_zh": "左拇指近节指骨软骨标记面",
+      "name_en": "Cartilage material region on Proximal phalanx of first finger of hand.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_hand_phalanx_1_proximal_L"
+      ],
+      "joint_or_connection_ids": [
+        "mcp_1_L",
+        "hand_ip_1_proximal_distal_L"
+      ],
+      "source_structure_id": "Proximal phalanx of first finger of hand.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 107,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.321137934923172,
+        0.796061098575592,
+        0.05617891997098923
+      ]
+    },
+    {
+      "id": "surface_mark_hand_phalanx_1_distal_L",
+      "name_zh": "左拇指远节指骨软骨标记面",
+      "name_en": "Cartilage material region on Distal phalanx of first finger of hand.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_hand_phalanx_1_distal_L"
+      ],
+      "joint_or_connection_ids": [
+        "hand_ip_1_proximal_distal_L"
+      ],
+      "source_structure_id": "Distal phalanx of first finger of hand.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 22,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.32421693205833435,
+        0.7873044610023499,
+        0.061736106872558594
+      ]
+    },
+    {
+      "id": "surface_mark_metacarpal_2_L",
+      "name_zh": "左第2掌骨软骨标记面",
+      "name_en": "Cartilage material region on Second metacarpal bone.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_metacarpal_2_L"
+      ],
+      "joint_or_connection_ids": [
+        "cmc_2_L",
+        "mcp_2_L",
+        "intermetacarpal_L"
+      ],
+      "source_structure_id": "Second metacarpal bone.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 220,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.2883611023426056,
+        0.7932074069976807,
+        0.03486163169145584
+      ]
+    },
+    {
+      "id": "surface_mark_hand_phalanx_2_proximal_L",
+      "name_zh": "左示指近节指骨软骨标记面",
+      "name_en": "Cartilage material region on Proximal phalanx of second finger of hand.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_hand_phalanx_2_proximal_L"
+      ],
+      "joint_or_connection_ids": [
+        "mcp_2_L",
+        "hand_ip_2_proximal_middle_L"
+      ],
+      "source_structure_id": "Proximal phalanx of second finger of hand.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 120,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.3058432638645172,
+        0.7449042797088623,
+        0.049873922020196915
+      ]
+    },
+    {
+      "id": "surface_mark_hand_phalanx_2_middle_L",
+      "name_zh": "左示指中节指骨软骨标记面",
+      "name_en": "Cartilage material region on Middle phalanx of second finger of hand.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_hand_phalanx_2_middle_L"
+      ],
+      "joint_or_connection_ids": [
+        "hand_ip_2_proximal_middle_L",
+        "hand_ip_2_middle_distal_L"
+      ],
+      "source_structure_id": "Middle phalanx of second finger of hand.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 85,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.31302887201309204,
+        0.725590169429779,
+        0.06544076651334763
+      ]
+    },
+    {
+      "id": "surface_mark_hand_phalanx_2_distal_L",
+      "name_zh": "左示指远节指骨软骨标记面",
+      "name_en": "Cartilage material region on Distal phalanx of second finger of hand.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_hand_phalanx_2_distal_L"
+      ],
+      "joint_or_connection_ids": [
+        "hand_ip_2_middle_distal_L"
+      ],
+      "source_structure_id": "Distal phalanx of second finger of hand.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 28,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.3153328001499176,
+        0.7198596000671387,
+        0.07273603975772858
+      ]
+    },
+    {
+      "id": "surface_mark_metacarpal_3_L",
+      "name_zh": "左第3掌骨软骨标记面",
+      "name_en": "Cartilage material region on Third metacarpal bone.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_metacarpal_3_L"
+      ],
+      "joint_or_connection_ids": [
+        "cmc_3_L",
+        "mcp_3_L",
+        "intermetacarpal_L"
+      ],
+      "source_structure_id": "Third metacarpal bone.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 140,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.27034780383110046,
+        0.800119936466217,
+        0.02979472279548645
+      ]
+    },
+    {
+      "id": "surface_mark_hand_phalanx_3_proximal_L",
+      "name_zh": "左中指近节指骨软骨标记面",
+      "name_en": "Cartilage material region on Proximal phalanx of third finger of hand.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_hand_phalanx_3_proximal_L"
+      ],
+      "joint_or_connection_ids": [
+        "mcp_3_L",
+        "hand_ip_3_proximal_middle_L"
+      ],
+      "source_structure_id": "Proximal phalanx of third finger of hand.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 130,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.27908074855804443,
+        0.7464724779129028,
+        0.05513271316885948
+      ]
+    },
+    {
+      "id": "surface_mark_hand_phalanx_3_middle_L",
+      "name_zh": "左中指中节指骨软骨标记面",
+      "name_en": "Cartilage material region on Middle phalanx of third finger of hand.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_hand_phalanx_3_middle_L"
+      ],
+      "joint_or_connection_ids": [
+        "hand_ip_3_proximal_middle_L",
+        "hand_ip_3_middle_distal_L"
+      ],
+      "source_structure_id": "Middle phalanx of third finger of hand.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 87,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.2833361029624939,
+        0.719698429107666,
+        0.07316157966852188
+      ]
+    },
+    {
+      "id": "surface_mark_hand_phalanx_3_distal_L",
+      "name_zh": "左中指远节指骨软骨标记面",
+      "name_en": "Cartilage material region on Distal phalanx of third finger of hand.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_hand_phalanx_3_distal_L"
+      ],
+      "joint_or_connection_ids": [
+        "hand_ip_3_middle_distal_L"
+      ],
+      "source_structure_id": "Distal phalanx of third finger of hand.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 25,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.284811794757843,
+        0.7097072005271912,
+        0.08124322444200516
+      ]
+    },
+    {
+      "id": "surface_mark_metacarpal_4_L",
+      "name_zh": "左第4掌骨软骨标记面",
+      "name_en": "Cartilage material region on Fourth metacarpal bone.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_metacarpal_4_L"
+      ],
+      "joint_or_connection_ids": [
+        "cmc_4_L",
+        "mcp_4_L",
+        "intermetacarpal_L"
+      ],
+      "source_structure_id": "Fourth metacarpal bone.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 100,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.2553277015686035,
+        0.8008331060409546,
+        0.028774574398994446
+      ]
+    },
+    {
+      "id": "surface_mark_hand_phalanx_4_proximal_L",
+      "name_zh": "左环指近节指骨软骨标记面",
+      "name_en": "Cartilage material region on Proximal phalanx of fourth finger of hand.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_hand_phalanx_4_proximal_L"
+      ],
+      "joint_or_connection_ids": [
+        "mcp_4_L",
+        "hand_ip_4_proximal_middle_L"
+      ],
+      "source_structure_id": "Proximal phalanx of fourth finger of hand.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 122,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.25683802366256714,
+        0.7493528127670288,
+        0.05430225655436516
+      ]
+    },
+    {
+      "id": "surface_mark_hand_phalanx_4_middle_L",
+      "name_zh": "左环指中节指骨软骨标记面",
+      "name_en": "Cartilage material region on Middle phalanx of fourth finger of hand.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_hand_phalanx_4_middle_L"
+      ],
+      "joint_or_connection_ids": [
+        "hand_ip_4_proximal_middle_L",
+        "hand_ip_4_middle_distal_L"
+      ],
+      "source_structure_id": "Middle phalanx of fourth finger of hand.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 162,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.2573506236076355,
+        0.7246721982955933,
+        0.07382221519947052
+      ]
+    },
+    {
+      "id": "surface_mark_hand_phalanx_4_distal_L",
+      "name_zh": "左环指远节指骨软骨标记面",
+      "name_en": "Cartilage material region on Distal phalanx of fourth finger of hand.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_hand_phalanx_4_distal_L"
+      ],
+      "joint_or_connection_ids": [
+        "hand_ip_4_middle_distal_L"
+      ],
+      "source_structure_id": "Distal phalanx of fourth finger of hand.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 12,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.2577399015426636,
+        0.7179703712463379,
+        0.08193795382976532
+      ]
+    },
+    {
+      "id": "surface_mark_metacarpal_5_L",
+      "name_zh": "左第5掌骨软骨标记面",
+      "name_en": "Cartilage material region on Fifth metacarpal bone.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_metacarpal_5_L"
+      ],
+      "joint_or_connection_ids": [
+        "cmc_5_L",
+        "mcp_5_L",
+        "intermetacarpal_L"
+      ],
+      "source_structure_id": "Fifth metacarpal bone.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 155,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.24335351586341858,
+        0.8111674189567566,
+        0.03322987258434296
+      ]
+    },
+    {
+      "id": "surface_mark_hand_phalanx_5_proximal_L",
+      "name_zh": "左小指近节指骨软骨标记面",
+      "name_en": "Cartilage material region on Proximal phalanx of fifth finger of hand.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_hand_phalanx_5_proximal_L"
+      ],
+      "joint_or_connection_ids": [
+        "mcp_5_L",
+        "hand_ip_5_proximal_middle_L"
+      ],
+      "source_structure_id": "Proximal phalanx of fifth finger of hand.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 121,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.23481060564517975,
+        0.7609117031097412,
+        0.053273968398571014
+      ]
+    },
+    {
+      "id": "surface_mark_hand_phalanx_5_middle_L",
+      "name_zh": "左小指中节指骨软骨标记面",
+      "name_en": "Cartilage material region on Middle phalanx of fifth finger of hand.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_hand_phalanx_5_middle_L"
+      ],
+      "joint_or_connection_ids": [
+        "hand_ip_5_proximal_middle_L",
+        "hand_ip_5_middle_distal_L"
+      ],
+      "source_structure_id": "Middle phalanx of fifth finger of hand.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 73,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.23063774406909943,
+        0.7422506213188171,
+        0.06664668768644333
+      ]
+    },
+    {
+      "id": "surface_mark_hand_phalanx_5_distal_L",
+      "name_zh": "左小指远节指骨软骨标记面",
+      "name_en": "Cartilage material region on Distal phalanx of fifth finger of hand.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_hand_phalanx_5_distal_L"
+      ],
+      "joint_or_connection_ids": [
+        "hand_ip_5_middle_distal_L"
+      ],
+      "source_structure_id": "Distal phalanx of fifth finger of hand.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 10,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.2305648773908615,
+        0.7345588207244873,
+        0.07088904082775116
+      ]
+    },
+    {
+      "id": "surface_mark_hip_L",
+      "name_zh": "左髋骨软骨标记面",
+      "name_en": "Cartilage material region on Hip bone.l",
+      "side": "L",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_hip_L"
+      ],
+      "joint_or_connection_ids": [
+        "sacroiliac_L",
+        "hip_L",
+        "pubic_symphysis"
+      ],
+      "source_structure_id": "Hip bone.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 214,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.06045503914356232,
+        0.878315806388855,
+        -0.005938905756920576
+      ]
+    },
+    {
+      "id": "surface_mark_femur_L",
+      "name_zh": "左股骨软骨标记面",
+      "name_en": "Cartilage material region on Femur.l",
+      "side": "L",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_femur_L"
+      ],
+      "joint_or_connection_ids": [
+        "hip_L",
+        "tibiofemoral_L",
+        "patellofemoral_L"
+      ],
+      "source_structure_id": "Femur.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 821,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.0762791559100151,
+        0.6091671586036682,
+        -0.02203088440001011
+      ]
+    },
+    {
+      "id": "surface_mark_patella_L",
+      "name_zh": "左髌骨软骨标记面",
+      "name_en": "Cartilage material region on Patella.l",
+      "side": "L",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_patella_L"
+      ],
+      "joint_or_connection_ids": [
+        "patellofemoral_L"
+      ],
+      "source_structure_id": "Patella.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 105,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.08695795387029648,
+        0.44506970047950745,
+        0.004392152186483145
+      ]
+    },
+    {
+      "id": "surface_mark_tibia_L",
+      "name_zh": "左胫骨软骨标记面",
+      "name_en": "Cartilage material region on Tibia.l",
+      "side": "L",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_tibia_L"
+      ],
+      "joint_or_connection_ids": [
+        "tibiofemoral_L",
+        "proximal_tibiofibular_L",
+        "distal_tibiofibular_L",
+        "talocrural_L"
+      ],
+      "source_structure_id": "Tibia.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 285,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.0809045284986496,
+        0.2691919207572937,
+        -0.036852940917015076
+      ]
+    },
+    {
+      "id": "surface_mark_fibula_L",
+      "name_zh": "左腓骨软骨标记面",
+      "name_en": "Cartilage material region on Fibula.l",
+      "side": "L",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_fibula_L"
+      ],
+      "joint_or_connection_ids": [
+        "proximal_tibiofibular_L",
+        "distal_tibiofibular_L",
+        "talocrural_L"
+      ],
+      "source_structure_id": "Fibula.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 94,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.09574448317289352,
+        0.21452683210372925,
+        -0.044292692095041275
+      ]
+    },
+    {
+      "id": "surface_mark_talus_L",
+      "name_zh": "左距骨软骨标记面",
+      "name_en": "Cartilage material region on Talus.l",
+      "side": "L",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_talus_L"
+      ],
+      "joint_or_connection_ids": [
+        "talocrural_L",
+        "subtalar_L",
+        "talocalcaneonavicular_L"
+      ],
+      "source_structure_id": "Talus.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 449,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.07379639893770218,
+        0.06835515797138214,
+        -0.03554969280958176
+      ]
+    },
+    {
+      "id": "surface_mark_calcaneus_L",
+      "name_zh": "左跟骨软骨标记面",
+      "name_en": "Cartilage material region on Calcaneus.l",
+      "side": "L",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_calcaneus_L"
+      ],
+      "joint_or_connection_ids": [
+        "subtalar_L",
+        "talocalcaneonavicular_L",
+        "calcaneocuboid_L"
+      ],
+      "source_structure_id": "Calcaneus.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 176,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.08048564940690994,
+        0.05342971161007881,
+        -0.03402159363031387
+      ]
+    },
+    {
+      "id": "surface_mark_navicular_L",
+      "name_zh": "左足舟骨软骨标记面",
+      "name_en": "Cartilage material region on Navicular bone.l",
+      "side": "L",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_navicular_L"
+      ],
+      "joint_or_connection_ids": [
+        "talocalcaneonavicular_L",
+        "distal_intertarsal_L"
+      ],
+      "source_structure_id": "Navicular bone.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 254,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.07822184264659882,
+        0.06381911039352417,
+        -0.004430082626640797
+      ]
+    },
+    {
+      "id": "surface_mark_cuboid_L",
+      "name_zh": "左骰骨软骨标记面",
+      "name_en": "Cartilage material region on Cuboid bone.l",
+      "side": "L",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_cuboid_L"
+      ],
+      "joint_or_connection_ids": [
+        "calcaneocuboid_L",
+        "distal_intertarsal_L",
+        "tmt_4_L",
+        "tmt_5_L"
+      ],
+      "source_structure_id": "Cuboid bone.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 188,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.09659130126237869,
+        0.04417987912893295,
+        -0.003005774226039648
+      ]
+    },
+    {
+      "id": "surface_mark_medial_cuneiform_L",
+      "name_zh": "左内侧楔骨软骨标记面",
+      "name_en": "Cartilage material region on Medial cuneiform bone.l",
+      "side": "L",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_medial_cuneiform_L"
+      ],
+      "joint_or_connection_ids": [
+        "distal_intertarsal_L",
+        "tmt_1_L",
+        "tmt_2_L"
+      ],
+      "source_structure_id": "Medial cuneiform bone.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 160,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.0727916732430458,
+        0.05342022329568863,
+        0.01748872734606266
+      ]
+    },
+    {
+      "id": "surface_mark_intermediate_cuneiform_L",
+      "name_zh": "左中间楔骨软骨标记面",
+      "name_en": "Cartilage material region on Intermediate cuneiform bone.l",
+      "side": "L",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_intermediate_cuneiform_L"
+      ],
+      "joint_or_connection_ids": [
+        "distal_intertarsal_L",
+        "tmt_2_L"
+      ],
+      "source_structure_id": "Intermediate cuneiform bone.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 165,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.0847652330994606,
+        0.05707870423793793,
+        0.009873488917946815
+      ]
+    },
+    {
+      "id": "surface_mark_lateral_cuneiform_L",
+      "name_zh": "左外侧楔骨软骨标记面",
+      "name_en": "Cartilage material region on Lateral cuneiform bone.l",
+      "side": "L",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_lateral_cuneiform_L"
+      ],
+      "joint_or_connection_ids": [
+        "distal_intertarsal_L",
+        "tmt_2_L",
+        "tmt_3_L"
+      ],
+      "source_structure_id": "Lateral cuneiform bone.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 267,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.09300532937049866,
+        0.05092830955982208,
+        0.00647059828042984
+      ]
+    },
+    {
+      "id": "surface_mark_metatarsal_1_L",
+      "name_zh": "左第1跖骨软骨标记面",
+      "name_en": "Cartilage material region on First metatarsal bone.l",
+      "side": "L",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_metatarsal_1_L"
+      ],
+      "joint_or_connection_ids": [
+        "tmt_1_L",
+        "mtp_1_L"
+      ],
+      "source_structure_id": "First metatarsal bone.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 340,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.07105330377817154,
+        0.028459614142775536,
+        0.06193462759256363
+      ]
+    },
+    {
+      "id": "surface_mark_foot_phalanx_1_proximal_L",
+      "name_zh": "左拇趾近节趾骨软骨标记面",
+      "name_en": "Cartilage material region on Proximal phalanx of first finger of foot.l",
+      "side": "L",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_foot_phalanx_1_proximal_L"
+      ],
+      "joint_or_connection_ids": [
+        "mtp_1_L",
+        "foot_ip_1_proximal_distal_L"
+      ],
+      "source_structure_id": "Proximal phalanx of first finger of foot.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 119,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.07575616240501404,
+        0.01771436631679535,
+        0.10020526498556137
+      ]
+    },
+    {
+      "id": "surface_mark_foot_phalanx_1_distal_L",
+      "name_zh": "左拇趾远节趾骨软骨标记面",
+      "name_en": "Cartilage material region on Distal phalanx of first finger of foot.l",
+      "side": "L",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_foot_phalanx_1_distal_L"
+      ],
+      "joint_or_connection_ids": [
+        "foot_ip_1_proximal_distal_L"
+      ],
+      "source_structure_id": "Distal phalanx of first finger of foot.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 75,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.0784795880317688,
+        0.014964088797569275,
+        0.11096276342868805
+      ]
+    },
+    {
+      "id": "surface_mark_metatarsal_2_L",
+      "name_zh": "左第2跖骨软骨标记面",
+      "name_en": "Cartilage material region on Second metatarsal bone.l",
+      "side": "L",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_metatarsal_2_L"
+      ],
+      "joint_or_connection_ids": [
+        "tmt_2_L",
+        "mtp_2_L",
+        "intermetatarsal_L"
+      ],
+      "source_structure_id": "Second metatarsal bone.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 179,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.09098417311906815,
+        0.040922924876213074,
+        0.041623543947935104
+      ]
+    },
+    {
+      "id": "surface_mark_foot_phalanx_2_proximal_L",
+      "name_zh": "左第二趾近节趾骨软骨标记面",
+      "name_en": "Cartilage material region on Proximal phalanx of second finger of foot.l",
+      "side": "L",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_foot_phalanx_2_proximal_L"
+      ],
+      "joint_or_connection_ids": [
+        "mtp_2_L",
+        "foot_ip_2_proximal_middle_L"
+      ],
+      "source_structure_id": "Proximal phalanx of second finger of foot.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 136,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.09607083350419998,
+        0.017673132941126823,
+        0.100456602871418
+      ]
+    },
+    {
+      "id": "surface_mark_foot_phalanx_2_middle_L",
+      "name_zh": "左第二趾中节趾骨软骨标记面",
+      "name_en": "Cartilage material region on Middle phalanx of second finger of foot.l",
+      "side": "L",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_foot_phalanx_2_middle_L"
+      ],
+      "joint_or_connection_ids": [
+        "foot_ip_2_proximal_middle_L",
+        "foot_ip_2_middle_distal_L"
+      ],
+      "source_structure_id": "Middle phalanx of second finger of foot.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 116,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.10223519802093506,
+        0.0145508898422122,
+        0.12087367475032806
+      ]
+    },
+    {
+      "id": "surface_mark_foot_phalanx_2_distal_L",
+      "name_zh": "左第二趾远节趾骨软骨标记面",
+      "name_en": "Cartilage material region on Distal phalanx of second finger of foot.l",
+      "side": "L",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_foot_phalanx_2_distal_L"
+      ],
+      "joint_or_connection_ids": [
+        "foot_ip_2_middle_distal_L"
+      ],
+      "source_structure_id": "Distal phalanx of second finger of foot.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 37,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.1033957302570343,
+        0.01357108261436224,
+        0.12493051588535309
+      ]
+    },
+    {
+      "id": "surface_mark_metatarsal_3_L",
+      "name_zh": "左第3跖骨软骨标记面",
+      "name_en": "Cartilage material region on Third metatarsal bone.l",
+      "side": "L",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_metatarsal_3_L"
+      ],
+      "joint_or_connection_ids": [
+        "tmt_3_L",
+        "mtp_3_L",
+        "intermetatarsal_L"
+      ],
+      "source_structure_id": "Third metatarsal bone.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 137,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.1036715880036354,
+        0.025487832725048065,
+        0.06018608808517456
+      ]
+    },
+    {
+      "id": "surface_mark_foot_phalanx_3_proximal_L",
+      "name_zh": "左第三趾近节趾骨软骨标记面",
+      "name_en": "Cartilage material region on Proximal phalanx of third finger of foot.l",
+      "side": "L",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_foot_phalanx_3_proximal_L"
+      ],
+      "joint_or_connection_ids": [
+        "mtp_3_L",
+        "foot_ip_3_proximal_middle_L"
+      ],
+      "source_structure_id": "Proximal phalanx of third finger of foot.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 118,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.11176811158657074,
+        0.016549579799175262,
+        0.09388535469770432
+      ]
+    },
+    {
+      "id": "surface_mark_foot_phalanx_3_middle_L",
+      "name_zh": "左第三趾中节趾骨软骨标记面",
+      "name_en": "Cartilage material region on Middle phalanx of third finger of foot.l",
+      "side": "L",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_foot_phalanx_3_middle_L"
+      ],
+      "joint_or_connection_ids": [
+        "foot_ip_3_proximal_middle_L",
+        "foot_ip_3_middle_distal_L"
+      ],
+      "source_structure_id": "Middle phalanx of third finger of foot.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 73,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.11637869477272034,
+        0.014684394933283329,
+        0.11172756552696228
+      ]
+    },
+    {
+      "id": "surface_mark_foot_phalanx_3_distal_L",
+      "name_zh": "左第三趾远节趾骨软骨标记面",
+      "name_en": "Cartilage material region on Distal phalanx of third finger of foot.l",
+      "side": "L",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_foot_phalanx_3_distal_L"
+      ],
+      "joint_or_connection_ids": [
+        "foot_ip_3_middle_distal_L"
+      ],
+      "source_structure_id": "Distal phalanx of third finger of foot.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 57,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.11857503652572632,
+        0.013347887434065342,
+        0.11979011446237564
+      ]
+    },
+    {
+      "id": "surface_mark_metatarsal_4_L",
+      "name_zh": "左第4跖骨软骨标记面",
+      "name_en": "Cartilage material region on Fourth metatarsal bone.l",
+      "side": "L",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_metatarsal_4_L"
+      ],
+      "joint_or_connection_ids": [
+        "tmt_4_L",
+        "mtp_4_L",
+        "intermetatarsal_L"
+      ],
+      "source_structure_id": "Fourth metatarsal bone.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 172,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.11076842248439789,
+        0.02660249173641205,
+        0.044068191200494766
+      ]
+    },
+    {
+      "id": "surface_mark_foot_phalanx_4_proximal_L",
+      "name_zh": "左第四趾近节趾骨软骨标记面",
+      "name_en": "Cartilage material region on Proximal phalanx of fourth finger of foot.l",
+      "side": "L",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_foot_phalanx_4_proximal_L"
+      ],
+      "joint_or_connection_ids": [
+        "mtp_4_L",
+        "foot_ip_4_proximal_middle_L"
+      ],
+      "source_structure_id": "Proximal phalanx of fourth finger of foot.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 128,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.12581464648246765,
+        0.015302235260605812,
+        0.08589748293161392
+      ]
+    },
+    {
+      "id": "surface_mark_foot_phalanx_4_middle_L",
+      "name_zh": "左第四趾中节趾骨软骨标记面",
+      "name_en": "Cartilage material region on Middle phalanx of fourth finger of foot.l",
+      "side": "L",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_foot_phalanx_4_middle_L"
+      ],
+      "joint_or_connection_ids": [
+        "foot_ip_4_proximal_middle_L",
+        "foot_ip_4_middle_distal_L"
+      ],
+      "source_structure_id": "Middle phalanx of fourth finger of foot.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 133,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.1300039142370224,
+        0.013280902989208698,
+        0.09903328120708466
+      ]
+    },
+    {
+      "id": "surface_mark_foot_phalanx_4_distal_L",
+      "name_zh": "左第四趾远节趾骨软骨标记面",
+      "name_en": "Cartilage material region on Distal phalanx of fourth finger of foot.l",
+      "side": "L",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_foot_phalanx_4_distal_L"
+      ],
+      "joint_or_connection_ids": [
+        "foot_ip_4_middle_distal_L"
+      ],
+      "source_structure_id": "Distal phalanx of fourth finger of foot.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 35,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.13212768733501434,
+        0.013271338306367397,
+        0.10511600226163864
+      ]
+    },
+    {
+      "id": "surface_mark_metatarsal_5_L",
+      "name_zh": "左第5跖骨软骨标记面",
+      "name_en": "Cartilage material region on Fifth metatarsal bone.l",
+      "side": "L",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_metatarsal_5_L"
+      ],
+      "joint_or_connection_ids": [
+        "tmt_5_L",
+        "mtp_5_L",
+        "intermetatarsal_L"
+      ],
+      "source_structure_id": "Fifth metatarsal bone.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 236,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.12021433562040329,
+        0.02234938181936741,
+        0.0348970927298069
+      ]
+    },
+    {
+      "id": "surface_mark_foot_phalanx_5_proximal_L",
+      "name_zh": "左第五趾近节趾骨软骨标记面",
+      "name_en": "Cartilage material region on Proximal phalanx of fifth finger of foot.l",
+      "side": "L",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_foot_phalanx_5_proximal_L"
+      ],
+      "joint_or_connection_ids": [
+        "mtp_5_L",
+        "foot_ip_5_proximal_middle_L"
+      ],
+      "source_structure_id": "Proximal phalanx of fifth finger of foot.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 84,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.13759353756904602,
+        0.012994006276130676,
+        0.07083456963300705
+      ]
+    },
+    {
+      "id": "surface_mark_foot_phalanx_5_middle_L",
+      "name_zh": "左第五趾中节趾骨软骨标记面",
+      "name_en": "Cartilage material region on Middle phalanx of fifth finger of foot.l",
+      "side": "L",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_foot_phalanx_5_middle_L"
+      ],
+      "joint_or_connection_ids": [
+        "foot_ip_5_proximal_middle_L",
+        "foot_ip_5_middle_distal_L"
+      ],
+      "source_structure_id": "Middle phalanx of fifth finger of foot.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 39,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.14131192862987518,
+        0.012702996842563152,
+        0.08350520581007004
+      ]
+    },
+    {
+      "id": "surface_mark_foot_phalanx_5_distal_L",
+      "name_zh": "左第五趾远节趾骨软骨标记面",
+      "name_en": "Cartilage material region on Distal phalanx of fifth finger of foot.l",
+      "side": "L",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_foot_phalanx_5_distal_L"
+      ],
+      "joint_or_connection_ids": [
+        "foot_ip_5_middle_distal_L"
+      ],
+      "source_structure_id": "Distal phalanx of fifth finger of foot.l / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 15,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.14180360734462738,
+        0.012542527168989182,
+        0.08665743470191956
+      ]
+    },
+    {
+      "id": "surface_mark_rib_01_R",
+      "name_zh": "右第1肋骨软骨标记面",
+      "name_en": "Cartilage material region on First rib.r",
+      "side": "R",
+      "region": "胸廓",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_rib_01_R"
+      ],
+      "joint_or_connection_ids": [
+        "costovertebral_01_R",
+        "sternocostal_01_R"
+      ],
+      "source_structure_id": "First rib.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 382,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.03665876388549805,
+        1.412774682044983,
+        0.007812706753611565
+      ]
+    },
+    {
+      "id": "surface_mark_rib_02_R",
+      "name_zh": "右第2肋骨软骨标记面",
+      "name_en": "Cartilage material region on Second rib.r",
+      "side": "R",
+      "region": "胸廓",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_rib_02_R"
+      ],
+      "joint_or_connection_ids": [
+        "costovertebral_02_R",
+        "sternocostal_02_R",
+        "scapulothoracic_R"
+      ],
+      "source_structure_id": "Second rib.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 373,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.03514416143298149,
+        1.3856587409973145,
+        0.018440647050738335
+      ]
+    },
+    {
+      "id": "surface_mark_rib_03_R",
+      "name_zh": "右第3肋骨软骨标记面",
+      "name_en": "Cartilage material region on Third rib.r",
+      "side": "R",
+      "region": "胸廓",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_rib_03_R"
+      ],
+      "joint_or_connection_ids": [
+        "costovertebral_03_R",
+        "sternocostal_03_R",
+        "scapulothoracic_R"
+      ],
+      "source_structure_id": "Third rib.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 548,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.029453512281179428,
+        1.3913183212280273,
+        -0.023867979645729065
+      ]
+    },
+    {
+      "id": "surface_mark_rib_04_R",
+      "name_zh": "右第4肋骨软骨标记面",
+      "name_en": "Cartilage material region on Fourth rib.r",
+      "side": "R",
+      "region": "胸廓",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_rib_04_R"
+      ],
+      "joint_or_connection_ids": [
+        "costovertebral_04_R",
+        "sternocostal_04_R",
+        "scapulothoracic_R"
+      ],
+      "source_structure_id": "Fourth rib.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 817,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.032103028148412704,
+        1.365260124206543,
+        -0.025373993441462517
+      ]
+    },
+    {
+      "id": "surface_mark_rib_05_R",
+      "name_zh": "右第5肋骨软骨标记面",
+      "name_en": "Cartilage material region on Fifth rib.r",
+      "side": "R",
+      "region": "胸廓",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_rib_05_R"
+      ],
+      "joint_or_connection_ids": [
+        "costovertebral_05_R",
+        "sternocostal_05_R",
+        "scapulothoracic_R"
+      ],
+      "source_structure_id": "Fifth rib.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 702,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.03747120499610901,
+        1.3360587358474731,
+        -0.0318286307156086
+      ]
+    },
+    {
+      "id": "surface_mark_rib_06_R",
+      "name_zh": "右第6肋骨软骨标记面",
+      "name_en": "Cartilage material region on Sixth rib.r",
+      "side": "R",
+      "region": "胸廓",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_rib_06_R"
+      ],
+      "joint_or_connection_ids": [
+        "costovertebral_06_R",
+        "sternocostal_06_R",
+        "scapulothoracic_R"
+      ],
+      "source_structure_id": "Sixth rib.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 1057,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.03110971860587597,
+        1.321185827255249,
+        -0.05294332280755043
+      ]
+    },
+    {
+      "id": "surface_mark_rib_07_R",
+      "name_zh": "右第7肋骨软骨标记面",
+      "name_en": "Cartilage material region on Seventh rib.r",
+      "side": "R",
+      "region": "胸廓",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_rib_07_R"
+      ],
+      "joint_or_connection_ids": [
+        "costovertebral_07_R",
+        "sternocostal_07_R",
+        "costal_arch_08_R",
+        "scapulothoracic_R"
+      ],
+      "source_structure_id": "Seventh rib.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 716,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.04705265536904335,
+        1.2714424133300781,
+        -0.03164274990558624
+      ]
+    },
+    {
+      "id": "surface_mark_rib_08_R",
+      "name_zh": "右第8肋骨软骨标记面",
+      "name_en": "Cartilage material region on Eighth rib.r",
+      "side": "R",
+      "region": "胸廓",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_rib_08_R"
+      ],
+      "joint_or_connection_ids": [
+        "costovertebral_08_R",
+        "costal_arch_08_R",
+        "costal_arch_09_R"
+      ],
+      "source_structure_id": "Eighth rib.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 645,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.04039177671074867,
+        1.2512011528015137,
+        -0.04232291877269745
+      ]
+    },
+    {
+      "id": "surface_mark_rib_09_R",
+      "name_zh": "右第9肋骨软骨标记面",
+      "name_en": "Cartilage material region on Ninth rib.r",
+      "side": "R",
+      "region": "胸廓",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_rib_09_R"
+      ],
+      "joint_or_connection_ids": [
+        "costovertebral_09_R",
+        "costal_arch_09_R",
+        "costal_arch_10_R"
+      ],
+      "source_structure_id": "Ninth rib.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 765,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.03668644651770592,
+        1.229833722114563,
+        -0.047130052000284195
+      ]
+    },
+    {
+      "id": "surface_mark_rib_10_R",
+      "name_zh": "右第10肋骨软骨标记面",
+      "name_en": "Cartilage material region on Tenth rib.r",
+      "side": "R",
+      "region": "胸廓",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_rib_10_R"
+      ],
+      "joint_or_connection_ids": [
+        "costovertebral_10_R",
+        "costal_arch_10_R"
+      ],
+      "source_structure_id": "Tenth rib.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 558,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.0440225712954998,
+        1.1911131143569946,
+        -0.03645087033510208
+      ]
+    },
+    {
+      "id": "surface_mark_rib_11_R",
+      "name_zh": "右第11肋骨软骨标记面",
+      "name_en": "Cartilage material region on Eleventh rib.r",
+      "side": "R",
+      "region": "胸廓",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_rib_11_R"
+      ],
+      "joint_or_connection_ids": [
+        "costovertebral_11_R"
+      ],
+      "source_structure_id": "Eleventh rib.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 288,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.02196459099650383,
+        1.183269739151001,
+        -0.038978684693574905
+      ]
+    },
+    {
+      "id": "surface_mark_rib_12_R",
+      "name_zh": "右第12肋骨软骨标记面",
+      "name_en": "Cartilage material region on Twelfth rib.r",
+      "side": "R",
+      "region": "胸廓",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_rib_12_R"
+      ],
+      "joint_or_connection_ids": [
+        "costovertebral_12_R"
+      ],
+      "source_structure_id": "Twelfth rib.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 334,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.02104838564991951,
+        1.145002841949463,
+        -0.02724594436585903
+      ]
+    },
+    {
+      "id": "surface_mark_clavicle_R",
+      "name_zh": "右锁骨软骨标记面",
+      "name_en": "Cartilage material region on Clavicle.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_clavicle_R"
+      ],
+      "joint_or_connection_ids": [
+        "sternoclavicular_R",
+        "acromioclavicular_R"
+      ],
+      "source_structure_id": "Clavicle.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 240,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.06424698978662491,
+        1.406180500984192,
+        0.012776997871696949
+      ]
+    },
+    {
+      "id": "surface_mark_scapula_R",
+      "name_zh": "右肩胛骨软骨标记面",
+      "name_en": "Cartilage material region on Scapula.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_scapula_R"
+      ],
+      "joint_or_connection_ids": [
+        "acromioclavicular_R",
+        "scapulothoracic_R",
+        "glenohumeral_R"
+      ],
+      "source_structure_id": "Scapula.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 731,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.14723721146583557,
+        1.3818951845169067,
+        -0.03551417961716652
+      ]
+    },
+    {
+      "id": "surface_mark_humerus_R",
+      "name_zh": "右肱骨软骨标记面",
+      "name_en": "Cartilage material region on Humerus.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_humerus_R"
+      ],
+      "joint_or_connection_ids": [
+        "glenohumeral_R",
+        "humeroulnar_R",
+        "humeroradial_R"
+      ],
+      "source_structure_id": "Humerus.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 803,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.1981566995382309,
+        1.2109426259994507,
+        -0.03226790577173233
+      ]
+    },
+    {
+      "id": "surface_mark_radius_R",
+      "name_zh": "右桡骨软骨标记面",
+      "name_en": "Cartilage material region on Radius.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_radius_R"
+      ],
+      "joint_or_connection_ids": [
+        "humeroradial_R",
+        "proximal_radioulnar_R",
+        "distal_radioulnar_R",
+        "forearm_interosseous_R",
+        "radiocarpal_R"
+      ],
+      "source_structure_id": "Radius.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 273,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.24931101500988007,
+        0.9987455010414124,
+        -0.01180952787399292
+      ]
+    },
+    {
+      "id": "surface_mark_ulna_R",
+      "name_zh": "右尺骨软骨标记面",
+      "name_en": "Cartilage material region on Ulna.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_ulna_R"
+      ],
+      "joint_or_connection_ids": [
+        "humeroulnar_R",
+        "proximal_radioulnar_R",
+        "distal_radioulnar_R",
+        "forearm_interosseous_R"
+      ],
+      "source_structure_id": "Ulna.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 265,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.22905142605304718,
+        1.0042619705200195,
+        -0.016016483306884766
+      ]
+    },
+    {
+      "id": "surface_mark_scaphoid_R",
+      "name_zh": "右手舟骨软骨标记面",
+      "name_en": "Cartilage material region on Scaphoid bone.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_scaphoid_R"
+      ],
+      "joint_or_connection_ids": [
+        "radiocarpal_R",
+        "intercarpal_R"
+      ],
+      "source_structure_id": "Scaphoid bone.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 297,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.27198198437690735,
+        0.8555535674095154,
+        0.01837027817964554
+      ]
+    },
+    {
+      "id": "surface_mark_lunate_R",
+      "name_zh": "右月骨软骨标记面",
+      "name_en": "Cartilage material region on Lunate bone.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_lunate_R"
+      ],
+      "joint_or_connection_ids": [
+        "radiocarpal_R",
+        "intercarpal_R"
+      ],
+      "source_structure_id": "Lunate bone.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 1530,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.25190499424934387,
+        0.8539093732833862,
+        0.017103327438235283
+      ]
+    },
+    {
+      "id": "surface_mark_triquetrum_R",
+      "name_zh": "右三角骨软骨标记面",
+      "name_en": "Cartilage material region on Triquetrum bone.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_triquetrum_R"
+      ],
+      "joint_or_connection_ids": [
+        "radiocarpal_R",
+        "intercarpal_R"
+      ],
+      "source_structure_id": "Triquetrum bone.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 76,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.24709036946296692,
+        0.846225917339325,
+        0.020258918404579163
+      ]
+    },
+    {
+      "id": "surface_mark_pisiform_R",
+      "name_zh": "右豌豆骨软骨标记面",
+      "name_en": "Cartilage material region on Pisiform bone.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_pisiform_R"
+      ],
+      "joint_or_connection_ids": [
+        "intercarpal_R"
+      ],
+      "source_structure_id": "Pisiform bone.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 72,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.2446320801973343,
+        0.8453628420829773,
+        0.02848765067756176
+      ]
+    },
+    {
+      "id": "surface_mark_trapezium_R",
+      "name_zh": "右大多角骨软骨标记面",
+      "name_en": "Cartilage material region on Trapezium bone.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_trapezium_R"
+      ],
+      "joint_or_connection_ids": [
+        "intercarpal_R",
+        "cmc_1_R",
+        "cmc_2_R"
+      ],
+      "source_structure_id": "Trapezium bone.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 69,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.28266599774360657,
+        0.8458568453788757,
+        0.026236169040203094
+      ]
+    },
+    {
+      "id": "surface_mark_trapezoid_R",
+      "name_zh": "右小多角骨软骨标记面",
+      "name_en": "Cartilage material region on Trapezoid bone.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_trapezoid_R"
+      ],
+      "joint_or_connection_ids": [
+        "intercarpal_R",
+        "cmc_2_R"
+      ],
+      "source_structure_id": "Trapezoid bone.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 285,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.27527013421058655,
+        0.839322030544281,
+        0.01976662687957287
+      ]
+    },
+    {
+      "id": "surface_mark_capitate_R",
+      "name_zh": "右头状骨软骨标记面",
+      "name_en": "Cartilage material region on Capitate bone.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_capitate_R"
+      ],
+      "joint_or_connection_ids": [
+        "intercarpal_R",
+        "cmc_2_R",
+        "cmc_3_R",
+        "cmc_4_R"
+      ],
+      "source_structure_id": "Capitate bone.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 241,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.2643398642539978,
+        0.8437464237213135,
+        0.018063096329569817
+      ]
+    },
+    {
+      "id": "surface_mark_hamate_R",
+      "name_zh": "右钩骨软骨标记面",
+      "name_en": "Cartilage material region on Hamate bone.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_hamate_R"
+      ],
+      "joint_or_connection_ids": [
+        "intercarpal_R",
+        "cmc_4_R",
+        "cmc_5_R"
+      ],
+      "source_structure_id": "Hamate bone.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 259,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.25386953353881836,
+        0.8399420976638794,
+        0.01735556870698929
+      ]
+    },
+    {
+      "id": "surface_mark_metacarpal_1_R",
+      "name_zh": "右第1掌骨软骨标记面",
+      "name_en": "Cartilage material region on First metacarpal bone.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_metacarpal_1_R"
+      ],
+      "joint_or_connection_ids": [
+        "cmc_1_R",
+        "mcp_1_R"
+      ],
+      "source_structure_id": "First metacarpal bone.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 340,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.303813099861145,
+        0.822547972202301,
+        0.0423114113509655
+      ]
+    },
+    {
+      "id": "surface_mark_hand_phalanx_1_proximal_R",
+      "name_zh": "右拇指近节指骨软骨标记面",
+      "name_en": "Cartilage material region on Proximal phalanx of first finger of hand.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_hand_phalanx_1_proximal_R"
+      ],
+      "joint_or_connection_ids": [
+        "mcp_1_R",
+        "hand_ip_1_proximal_distal_R"
+      ],
+      "source_structure_id": "Proximal phalanx of first finger of hand.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 107,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.321137934923172,
+        0.796061098575592,
+        0.05617891997098923
+      ]
+    },
+    {
+      "id": "surface_mark_hand_phalanx_1_distal_R",
+      "name_zh": "右拇指远节指骨软骨标记面",
+      "name_en": "Cartilage material region on Distal phalanx of first finger of hand.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_hand_phalanx_1_distal_R"
+      ],
+      "joint_or_connection_ids": [
+        "hand_ip_1_proximal_distal_R"
+      ],
+      "source_structure_id": "Distal phalanx of first finger of hand.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 22,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.32421693205833435,
+        0.7873044610023499,
+        0.061736106872558594
+      ]
+    },
+    {
+      "id": "surface_mark_metacarpal_2_R",
+      "name_zh": "右第2掌骨软骨标记面",
+      "name_en": "Cartilage material region on Second metacarpal bone.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_metacarpal_2_R"
+      ],
+      "joint_or_connection_ids": [
+        "cmc_2_R",
+        "mcp_2_R",
+        "intermetacarpal_R"
+      ],
+      "source_structure_id": "Second metacarpal bone.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 220,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.2883611023426056,
+        0.7932074069976807,
+        0.03486163169145584
+      ]
+    },
+    {
+      "id": "surface_mark_hand_phalanx_2_proximal_R",
+      "name_zh": "右示指近节指骨软骨标记面",
+      "name_en": "Cartilage material region on Proximal phalanx of second finger of hand.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_hand_phalanx_2_proximal_R"
+      ],
+      "joint_or_connection_ids": [
+        "mcp_2_R",
+        "hand_ip_2_proximal_middle_R"
+      ],
+      "source_structure_id": "Proximal phalanx of second finger of hand.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 120,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.3058432638645172,
+        0.7449042797088623,
+        0.049873922020196915
+      ]
+    },
+    {
+      "id": "surface_mark_hand_phalanx_2_middle_R",
+      "name_zh": "右示指中节指骨软骨标记面",
+      "name_en": "Cartilage material region on Middle phalanx of second finger of hand.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_hand_phalanx_2_middle_R"
+      ],
+      "joint_or_connection_ids": [
+        "hand_ip_2_proximal_middle_R",
+        "hand_ip_2_middle_distal_R"
+      ],
+      "source_structure_id": "Middle phalanx of second finger of hand.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 85,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.31302887201309204,
+        0.725590169429779,
+        0.06544076651334763
+      ]
+    },
+    {
+      "id": "surface_mark_hand_phalanx_2_distal_R",
+      "name_zh": "右示指远节指骨软骨标记面",
+      "name_en": "Cartilage material region on Distal phalanx of second finger of hand.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_hand_phalanx_2_distal_R"
+      ],
+      "joint_or_connection_ids": [
+        "hand_ip_2_middle_distal_R"
+      ],
+      "source_structure_id": "Distal phalanx of second finger of hand.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 28,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.3153328001499176,
+        0.7198596000671387,
+        0.07273603975772858
+      ]
+    },
+    {
+      "id": "surface_mark_metacarpal_3_R",
+      "name_zh": "右第3掌骨软骨标记面",
+      "name_en": "Cartilage material region on Third metacarpal bone.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_metacarpal_3_R"
+      ],
+      "joint_or_connection_ids": [
+        "cmc_3_R",
+        "mcp_3_R",
+        "intermetacarpal_R"
+      ],
+      "source_structure_id": "Third metacarpal bone.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 140,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.27034780383110046,
+        0.800119936466217,
+        0.02979472279548645
+      ]
+    },
+    {
+      "id": "surface_mark_hand_phalanx_3_proximal_R",
+      "name_zh": "右中指近节指骨软骨标记面",
+      "name_en": "Cartilage material region on Proximal phalanx of third finger of hand.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_hand_phalanx_3_proximal_R"
+      ],
+      "joint_or_connection_ids": [
+        "mcp_3_R",
+        "hand_ip_3_proximal_middle_R"
+      ],
+      "source_structure_id": "Proximal phalanx of third finger of hand.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 130,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.27908074855804443,
+        0.7464724779129028,
+        0.05513271316885948
+      ]
+    },
+    {
+      "id": "surface_mark_hand_phalanx_3_middle_R",
+      "name_zh": "右中指中节指骨软骨标记面",
+      "name_en": "Cartilage material region on Middle phalanx of third finger of hand.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_hand_phalanx_3_middle_R"
+      ],
+      "joint_or_connection_ids": [
+        "hand_ip_3_proximal_middle_R",
+        "hand_ip_3_middle_distal_R"
+      ],
+      "source_structure_id": "Middle phalanx of third finger of hand.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 87,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.2833361029624939,
+        0.719698429107666,
+        0.07316157966852188
+      ]
+    },
+    {
+      "id": "surface_mark_hand_phalanx_3_distal_R",
+      "name_zh": "右中指远节指骨软骨标记面",
+      "name_en": "Cartilage material region on Distal phalanx of third finger of hand.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_hand_phalanx_3_distal_R"
+      ],
+      "joint_or_connection_ids": [
+        "hand_ip_3_middle_distal_R"
+      ],
+      "source_structure_id": "Distal phalanx of third finger of hand.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 25,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.284811794757843,
+        0.7097072005271912,
+        0.08124322444200516
+      ]
+    },
+    {
+      "id": "surface_mark_metacarpal_4_R",
+      "name_zh": "右第4掌骨软骨标记面",
+      "name_en": "Cartilage material region on Fourth metacarpal bone.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_metacarpal_4_R"
+      ],
+      "joint_or_connection_ids": [
+        "cmc_4_R",
+        "mcp_4_R",
+        "intermetacarpal_R"
+      ],
+      "source_structure_id": "Fourth metacarpal bone.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 100,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.2553277015686035,
+        0.8008331060409546,
+        0.028774574398994446
+      ]
+    },
+    {
+      "id": "surface_mark_hand_phalanx_4_proximal_R",
+      "name_zh": "右环指近节指骨软骨标记面",
+      "name_en": "Cartilage material region on Proximal phalanx of fourth finger of hand.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_hand_phalanx_4_proximal_R"
+      ],
+      "joint_or_connection_ids": [
+        "mcp_4_R",
+        "hand_ip_4_proximal_middle_R"
+      ],
+      "source_structure_id": "Proximal phalanx of fourth finger of hand.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 122,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.25683802366256714,
+        0.7493528127670288,
+        0.05430225655436516
+      ]
+    },
+    {
+      "id": "surface_mark_hand_phalanx_4_middle_R",
+      "name_zh": "右环指中节指骨软骨标记面",
+      "name_en": "Cartilage material region on Middle phalanx of fourth finger of hand.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_hand_phalanx_4_middle_R"
+      ],
+      "joint_or_connection_ids": [
+        "hand_ip_4_proximal_middle_R",
+        "hand_ip_4_middle_distal_R"
+      ],
+      "source_structure_id": "Middle phalanx of fourth finger of hand.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 162,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.2573506236076355,
+        0.7246721982955933,
+        0.07382221519947052
+      ]
+    },
+    {
+      "id": "surface_mark_hand_phalanx_4_distal_R",
+      "name_zh": "右环指远节指骨软骨标记面",
+      "name_en": "Cartilage material region on Distal phalanx of fourth finger of hand.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_hand_phalanx_4_distal_R"
+      ],
+      "joint_or_connection_ids": [
+        "hand_ip_4_middle_distal_R"
+      ],
+      "source_structure_id": "Distal phalanx of fourth finger of hand.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 12,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.2577399015426636,
+        0.7179703712463379,
+        0.08193795382976532
+      ]
+    },
+    {
+      "id": "surface_mark_metacarpal_5_R",
+      "name_zh": "右第5掌骨软骨标记面",
+      "name_en": "Cartilage material region on Fifth metacarpal bone.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_metacarpal_5_R"
+      ],
+      "joint_or_connection_ids": [
+        "cmc_5_R",
+        "mcp_5_R",
+        "intermetacarpal_R"
+      ],
+      "source_structure_id": "Fifth metacarpal bone.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 155,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.2433534860610962,
+        0.8111674189567566,
+        0.03322987258434296
+      ]
+    },
+    {
+      "id": "surface_mark_hand_phalanx_5_proximal_R",
+      "name_zh": "右小指近节指骨软骨标记面",
+      "name_en": "Cartilage material region on Proximal phalanx of fifth finger of hand.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_hand_phalanx_5_proximal_R"
+      ],
+      "joint_or_connection_ids": [
+        "mcp_5_R",
+        "hand_ip_5_proximal_middle_R"
+      ],
+      "source_structure_id": "Proximal phalanx of fifth finger of hand.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 121,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.23481059074401855,
+        0.7609117031097412,
+        0.053273968398571014
+      ]
+    },
+    {
+      "id": "surface_mark_hand_phalanx_5_middle_R",
+      "name_zh": "右小指中节指骨软骨标记面",
+      "name_en": "Cartilage material region on Middle phalanx of fifth finger of hand.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_hand_phalanx_5_middle_R"
+      ],
+      "joint_or_connection_ids": [
+        "hand_ip_5_proximal_middle_R",
+        "hand_ip_5_middle_distal_R"
+      ],
+      "source_structure_id": "Middle phalanx of fifth finger of hand.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 73,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.23063771426677704,
+        0.7422506213188171,
+        0.06664668768644333
+      ]
+    },
+    {
+      "id": "surface_mark_hand_phalanx_5_distal_R",
+      "name_zh": "右小指远节指骨软骨标记面",
+      "name_en": "Cartilage material region on Distal phalanx of fifth finger of hand.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_hand_phalanx_5_distal_R"
+      ],
+      "joint_or_connection_ids": [
+        "hand_ip_5_middle_distal_R"
+      ],
+      "source_structure_id": "Distal phalanx of fifth finger of hand.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 10,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.23056486248970032,
+        0.7345588207244873,
+        0.07088904082775116
+      ]
+    },
+    {
+      "id": "surface_mark_hip_R",
+      "name_zh": "右髋骨软骨标记面",
+      "name_en": "Cartilage material region on Hip bone.r",
+      "side": "R",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_hip_R"
+      ],
+      "joint_or_connection_ids": [
+        "sacroiliac_R",
+        "hip_R",
+        "pubic_symphysis"
+      ],
+      "source_structure_id": "Hip bone.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 214,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.06045503914356232,
+        0.878315806388855,
+        -0.005938905756920576
+      ]
+    },
+    {
+      "id": "surface_mark_femur_R",
+      "name_zh": "右股骨软骨标记面",
+      "name_en": "Cartilage material region on Femur.r",
+      "side": "R",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_femur_R"
+      ],
+      "joint_or_connection_ids": [
+        "hip_R",
+        "tibiofemoral_R",
+        "patellofemoral_R"
+      ],
+      "source_structure_id": "Femur.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 821,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.0762791559100151,
+        0.6091671586036682,
+        -0.02203088440001011
+      ]
+    },
+    {
+      "id": "surface_mark_patella_R",
+      "name_zh": "右髌骨软骨标记面",
+      "name_en": "Cartilage material region on Patella.r",
+      "side": "R",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_patella_R"
+      ],
+      "joint_or_connection_ids": [
+        "patellofemoral_R"
+      ],
+      "source_structure_id": "Patella.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 105,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.08695795387029648,
+        0.44506970047950745,
+        0.004392152186483145
+      ]
+    },
+    {
+      "id": "surface_mark_tibia_R",
+      "name_zh": "右胫骨软骨标记面",
+      "name_en": "Cartilage material region on Tibia.r",
+      "side": "R",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_tibia_R"
+      ],
+      "joint_or_connection_ids": [
+        "tibiofemoral_R",
+        "proximal_tibiofibular_R",
+        "distal_tibiofibular_R",
+        "talocrural_R"
+      ],
+      "source_structure_id": "Tibia.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 285,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.0809045284986496,
+        0.2691919207572937,
+        -0.036852940917015076
+      ]
+    },
+    {
+      "id": "surface_mark_fibula_R",
+      "name_zh": "右腓骨软骨标记面",
+      "name_en": "Cartilage material region on Fibula.r",
+      "side": "R",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_fibula_R"
+      ],
+      "joint_or_connection_ids": [
+        "proximal_tibiofibular_R",
+        "distal_tibiofibular_R",
+        "talocrural_R"
+      ],
+      "source_structure_id": "Fibula.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 94,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.09574445337057114,
+        0.21452683210372925,
+        -0.044292692095041275
+      ]
+    },
+    {
+      "id": "surface_mark_talus_R",
+      "name_zh": "右距骨软骨标记面",
+      "name_en": "Cartilage material region on Talus.r",
+      "side": "R",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_talus_R"
+      ],
+      "joint_or_connection_ids": [
+        "talocrural_R",
+        "subtalar_R",
+        "talocalcaneonavicular_R"
+      ],
+      "source_structure_id": "Talus.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 449,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.07379639893770218,
+        0.06835515797138214,
+        -0.03554969280958176
+      ]
+    },
+    {
+      "id": "surface_mark_calcaneus_R",
+      "name_zh": "右跟骨软骨标记面",
+      "name_en": "Cartilage material region on Calcaneus.r",
+      "side": "R",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_calcaneus_R"
+      ],
+      "joint_or_connection_ids": [
+        "subtalar_R",
+        "talocalcaneonavicular_R",
+        "calcaneocuboid_R"
+      ],
+      "source_structure_id": "Calcaneus.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 176,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.08048564940690994,
+        0.05342971161007881,
+        -0.03402159363031387
+      ]
+    },
+    {
+      "id": "surface_mark_navicular_R",
+      "name_zh": "右足舟骨软骨标记面",
+      "name_en": "Cartilage material region on Navicular bone.r",
+      "side": "R",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_navicular_R"
+      ],
+      "joint_or_connection_ids": [
+        "talocalcaneonavicular_R",
+        "distal_intertarsal_R"
+      ],
+      "source_structure_id": "Navicular bone.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 254,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.07822184264659882,
+        0.06381911039352417,
+        -0.004430082626640797
+      ]
+    },
+    {
+      "id": "surface_mark_cuboid_R",
+      "name_zh": "右骰骨软骨标记面",
+      "name_en": "Cartilage material region on Cuboid bone.r",
+      "side": "R",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_cuboid_R"
+      ],
+      "joint_or_connection_ids": [
+        "calcaneocuboid_R",
+        "distal_intertarsal_R",
+        "tmt_4_R",
+        "tmt_5_R"
+      ],
+      "source_structure_id": "Cuboid bone.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 188,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.09659130126237869,
+        0.04417987912893295,
+        -0.003005774226039648
+      ]
+    },
+    {
+      "id": "surface_mark_medial_cuneiform_R",
+      "name_zh": "右内侧楔骨软骨标记面",
+      "name_en": "Cartilage material region on Medial cuneiform bone.r",
+      "side": "R",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_medial_cuneiform_R"
+      ],
+      "joint_or_connection_ids": [
+        "distal_intertarsal_R",
+        "tmt_1_R",
+        "tmt_2_R"
+      ],
+      "source_structure_id": "Medial cuneiform bone.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 160,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.0727916732430458,
+        0.05342022329568863,
+        0.01748872734606266
+      ]
+    },
+    {
+      "id": "surface_mark_intermediate_cuneiform_R",
+      "name_zh": "右中间楔骨软骨标记面",
+      "name_en": "Cartilage material region on Intermediate cuneiform bone.r",
+      "side": "R",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_intermediate_cuneiform_R"
+      ],
+      "joint_or_connection_ids": [
+        "distal_intertarsal_R",
+        "tmt_2_R"
+      ],
+      "source_structure_id": "Intermediate cuneiform bone.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 165,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.0847652330994606,
+        0.05707870423793793,
+        0.009873488917946815
+      ]
+    },
+    {
+      "id": "surface_mark_lateral_cuneiform_R",
+      "name_zh": "右外侧楔骨软骨标记面",
+      "name_en": "Cartilage material region on Lateral cuneiform bone.r",
+      "side": "R",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_lateral_cuneiform_R"
+      ],
+      "joint_or_connection_ids": [
+        "distal_intertarsal_R",
+        "tmt_2_R",
+        "tmt_3_R"
+      ],
+      "source_structure_id": "Lateral cuneiform bone.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 267,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.09300532937049866,
+        0.05092830955982208,
+        0.00647059828042984
+      ]
+    },
+    {
+      "id": "surface_mark_metatarsal_1_R",
+      "name_zh": "右第1跖骨软骨标记面",
+      "name_en": "Cartilage material region on First metatarsal bone.r",
+      "side": "R",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_metatarsal_1_R"
+      ],
+      "joint_or_connection_ids": [
+        "tmt_1_R",
+        "mtp_1_R"
+      ],
+      "source_structure_id": "First metatarsal bone.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 340,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.07105331867933273,
+        0.028459614142775536,
+        0.06193462759256363
+      ]
+    },
+    {
+      "id": "surface_mark_foot_phalanx_1_proximal_R",
+      "name_zh": "右拇趾近节趾骨软骨标记面",
+      "name_en": "Cartilage material region on Proximal phalanx of first finger of foot.r",
+      "side": "R",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_foot_phalanx_1_proximal_R"
+      ],
+      "joint_or_connection_ids": [
+        "mtp_1_R",
+        "foot_ip_1_proximal_distal_R"
+      ],
+      "source_structure_id": "Proximal phalanx of first finger of foot.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 119,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.07575616240501404,
+        0.01771436631679535,
+        0.10020526498556137
+      ]
+    },
+    {
+      "id": "surface_mark_foot_phalanx_1_distal_R",
+      "name_zh": "右拇趾远节趾骨软骨标记面",
+      "name_en": "Cartilage material region on Distal phalanx of first finger of foot.r",
+      "side": "R",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_foot_phalanx_1_distal_R"
+      ],
+      "joint_or_connection_ids": [
+        "foot_ip_1_proximal_distal_R"
+      ],
+      "source_structure_id": "Distal phalanx of first finger of foot.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 75,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.0784795880317688,
+        0.014964088797569275,
+        0.11096276342868805
+      ]
+    },
+    {
+      "id": "surface_mark_metatarsal_2_R",
+      "name_zh": "右第2跖骨软骨标记面",
+      "name_en": "Cartilage material region on Second metatarsal bone.r",
+      "side": "R",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_metatarsal_2_R"
+      ],
+      "joint_or_connection_ids": [
+        "tmt_2_R",
+        "mtp_2_R",
+        "intermetatarsal_R"
+      ],
+      "source_structure_id": "Second metatarsal bone.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 179,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.09098417311906815,
+        0.040922924876213074,
+        0.041623543947935104
+      ]
+    },
+    {
+      "id": "surface_mark_foot_phalanx_2_proximal_R",
+      "name_zh": "右第二趾近节趾骨软骨标记面",
+      "name_en": "Cartilage material region on Proximal phalanx of second finger of foot.r",
+      "side": "R",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_foot_phalanx_2_proximal_R"
+      ],
+      "joint_or_connection_ids": [
+        "mtp_2_R",
+        "foot_ip_2_proximal_middle_R"
+      ],
+      "source_structure_id": "Proximal phalanx of second finger of foot.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 136,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.09607084095478058,
+        0.017673132941126823,
+        0.100456602871418
+      ]
+    },
+    {
+      "id": "surface_mark_foot_phalanx_2_middle_R",
+      "name_zh": "右第二趾中节趾骨软骨标记面",
+      "name_en": "Cartilage material region on Middle phalanx of second finger of foot.r",
+      "side": "R",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_foot_phalanx_2_middle_R"
+      ],
+      "joint_or_connection_ids": [
+        "foot_ip_2_proximal_middle_R",
+        "foot_ip_2_middle_distal_R"
+      ],
+      "source_structure_id": "Middle phalanx of second finger of foot.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 116,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.10223520547151566,
+        0.0145508898422122,
+        0.12087367475032806
+      ]
+    },
+    {
+      "id": "surface_mark_foot_phalanx_2_distal_R",
+      "name_zh": "右第二趾远节趾骨软骨标记面",
+      "name_en": "Cartilage material region on Distal phalanx of second finger of foot.r",
+      "side": "R",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_foot_phalanx_2_distal_R"
+      ],
+      "joint_or_connection_ids": [
+        "foot_ip_2_middle_distal_R"
+      ],
+      "source_structure_id": "Distal phalanx of second finger of foot.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 37,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.1033957302570343,
+        0.01357108261436224,
+        0.12493051588535309
+      ]
+    },
+    {
+      "id": "surface_mark_metatarsal_3_R",
+      "name_zh": "右第3跖骨软骨标记面",
+      "name_en": "Cartilage material region on Third metatarsal bone.r",
+      "side": "R",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_metatarsal_3_R"
+      ],
+      "joint_or_connection_ids": [
+        "tmt_3_R",
+        "mtp_3_R",
+        "intermetatarsal_R"
+      ],
+      "source_structure_id": "Third metatarsal bone.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 137,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.1036715880036354,
+        0.025487832725048065,
+        0.06018608808517456
+      ]
+    },
+    {
+      "id": "surface_mark_foot_phalanx_3_proximal_R",
+      "name_zh": "右第三趾近节趾骨软骨标记面",
+      "name_en": "Cartilage material region on Proximal phalanx of third finger of foot.r",
+      "side": "R",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_foot_phalanx_3_proximal_R"
+      ],
+      "joint_or_connection_ids": [
+        "mtp_3_R",
+        "foot_ip_3_proximal_middle_R"
+      ],
+      "source_structure_id": "Proximal phalanx of third finger of foot.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 118,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.11176811158657074,
+        0.016549579799175262,
+        0.09388535469770432
+      ]
+    },
+    {
+      "id": "surface_mark_foot_phalanx_3_middle_R",
+      "name_zh": "右第三趾中节趾骨软骨标记面",
+      "name_en": "Cartilage material region on Middle phalanx of third finger of foot.r",
+      "side": "R",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_foot_phalanx_3_middle_R"
+      ],
+      "joint_or_connection_ids": [
+        "foot_ip_3_proximal_middle_R",
+        "foot_ip_3_middle_distal_R"
+      ],
+      "source_structure_id": "Middle phalanx of third finger of foot.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 73,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.11637869477272034,
+        0.014684394933283329,
+        0.11172756552696228
+      ]
+    },
+    {
+      "id": "surface_mark_foot_phalanx_3_distal_R",
+      "name_zh": "右第三趾远节趾骨软骨标记面",
+      "name_en": "Cartilage material region on Distal phalanx of third finger of foot.r",
+      "side": "R",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_foot_phalanx_3_distal_R"
+      ],
+      "joint_or_connection_ids": [
+        "foot_ip_3_middle_distal_R"
+      ],
+      "source_structure_id": "Distal phalanx of third finger of foot.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 57,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.11857503652572632,
+        0.013347887434065342,
+        0.11979011446237564
+      ]
+    },
+    {
+      "id": "surface_mark_metatarsal_4_R",
+      "name_zh": "右第4跖骨软骨标记面",
+      "name_en": "Cartilage material region on Fourth metatarsal bone.r",
+      "side": "R",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_metatarsal_4_R"
+      ],
+      "joint_or_connection_ids": [
+        "tmt_4_R",
+        "mtp_4_R",
+        "intermetatarsal_R"
+      ],
+      "source_structure_id": "Fourth metatarsal bone.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 172,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.11076842248439789,
+        0.02660249173641205,
+        0.044068191200494766
+      ]
+    },
+    {
+      "id": "surface_mark_foot_phalanx_4_proximal_R",
+      "name_zh": "右第四趾近节趾骨软骨标记面",
+      "name_en": "Cartilage material region on Proximal phalanx of fourth finger of foot.r",
+      "side": "R",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_foot_phalanx_4_proximal_R"
+      ],
+      "joint_or_connection_ids": [
+        "mtp_4_R",
+        "foot_ip_4_proximal_middle_R"
+      ],
+      "source_structure_id": "Proximal phalanx of fourth finger of foot.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 128,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.12581464648246765,
+        0.015302235260605812,
+        0.08589748293161392
+      ]
+    },
+    {
+      "id": "surface_mark_foot_phalanx_4_middle_R",
+      "name_zh": "右第四趾中节趾骨软骨标记面",
+      "name_en": "Cartilage material region on Middle phalanx of fourth finger of foot.r",
+      "side": "R",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_foot_phalanx_4_middle_R"
+      ],
+      "joint_or_connection_ids": [
+        "foot_ip_4_proximal_middle_R",
+        "foot_ip_4_middle_distal_R"
+      ],
+      "source_structure_id": "Middle phalanx of fourth finger of foot.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 133,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.1300039291381836,
+        0.013280902989208698,
+        0.09903328120708466
+      ]
+    },
+    {
+      "id": "surface_mark_foot_phalanx_4_distal_R",
+      "name_zh": "右第四趾远节趾骨软骨标记面",
+      "name_en": "Cartilage material region on Distal phalanx of fourth finger of foot.r",
+      "side": "R",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_foot_phalanx_4_distal_R"
+      ],
+      "joint_or_connection_ids": [
+        "foot_ip_4_middle_distal_R"
+      ],
+      "source_structure_id": "Distal phalanx of fourth finger of foot.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 35,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.13212768733501434,
+        0.013271338306367397,
+        0.10511600226163864
+      ]
+    },
+    {
+      "id": "surface_mark_metatarsal_5_R",
+      "name_zh": "右第5跖骨软骨标记面",
+      "name_en": "Cartilage material region on Fifth metatarsal bone.r",
+      "side": "R",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_metatarsal_5_R"
+      ],
+      "joint_or_connection_ids": [
+        "tmt_5_R",
+        "mtp_5_R",
+        "intermetatarsal_R"
+      ],
+      "source_structure_id": "Fifth metatarsal bone.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 236,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.12021435052156448,
+        0.02234938181936741,
+        0.0348970927298069
+      ]
+    },
+    {
+      "id": "surface_mark_foot_phalanx_5_proximal_R",
+      "name_zh": "右第五趾近节趾骨软骨标记面",
+      "name_en": "Cartilage material region on Proximal phalanx of fifth finger of foot.r",
+      "side": "R",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_foot_phalanx_5_proximal_R"
+      ],
+      "joint_or_connection_ids": [
+        "mtp_5_R",
+        "foot_ip_5_proximal_middle_R"
+      ],
+      "source_structure_id": "Proximal phalanx of fifth finger of foot.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 84,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.13759353756904602,
+        0.012994006276130676,
+        0.07083456963300705
+      ]
+    },
+    {
+      "id": "surface_mark_foot_phalanx_5_middle_R",
+      "name_zh": "右第五趾中节趾骨软骨标记面",
+      "name_en": "Cartilage material region on Middle phalanx of fifth finger of foot.r",
+      "side": "R",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_foot_phalanx_5_middle_R"
+      ],
+      "joint_or_connection_ids": [
+        "foot_ip_5_proximal_middle_R",
+        "foot_ip_5_middle_distal_R"
+      ],
+      "source_structure_id": "Middle phalanx of fifth finger of foot.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 39,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.14131192862987518,
+        0.012702996842563152,
+        0.08350520581007004
+      ]
+    },
+    {
+      "id": "surface_mark_foot_phalanx_5_distal_R",
+      "name_zh": "右第五趾远节趾骨软骨标记面",
+      "name_en": "Cartilage material region on Distal phalanx of fifth finger of foot.r",
+      "side": "R",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "surface",
+      "tissue_type": "source_material_surface_annotation",
+      "bone_ids": [
+        "bone_foot_phalanx_5_distal_R"
+      ],
+      "joint_or_connection_ids": [
+        "foot_ip_5_middle_distal_R"
+      ],
+      "source_structure_id": "Distal phalanx of fifth finger of foot.r / Cartilage material faces",
+      "source_dataset": "Z-Anatomy 源材质分区",
+      "triangles": 15,
+      "note": "此对象只提取源骨网格中标为 Cartilage 的面，无新增厚度；可能包含多个不连续区域。不是独立软骨实体，也不代表覆盖边界或组织分类已通过解剖审核。",
+      "granularity": "per_bone_material_partition_group",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.14180360734462738,
+        0.012542527168989182,
+        0.08665743470191956
+      ]
+    }
+  ],
+  "count": 183
+}

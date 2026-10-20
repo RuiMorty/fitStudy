@@ -1,0 +1,791 @@
+﻿ID,名称,区域,组织类型,批次,条目粒度,资源状态,候选对象,关联骨,备注
+fibrous_cranial_sutures,颅骨缝连接组纤维连接,头颈与听骨,fibrous_connection,2,group_requires_subdivision,no_exact_mesh_mapping,,bone_frontal_M; bone_occipital_M; bone_sphenoid_M; bone_ethmoid_M; bone_vomer_M; bone_parietal_L; bone_temporal_L; bone_maxilla_L; bone_zygomatic_L; bone_nasal_L; bone_lacrimal_L; bone_palatine_L; bone_inferior_nasal_concha_L; bone_parietal_R; bone_temporal_R; bone_maxilla_R; bone_zygomatic_R; bone_nasal_R; bone_lacrimal_R; bone_palatine_R; bone_inferior_nasal_concha_R,颅缝纤维组织；不是关节软骨层。
+surface_atlanto_occipital_occipital_M_L,左枕骨 · 寰枕关节组覆盖区,颅颈交界,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_occipital_M,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_atlanto_occipital_vertebra_C1_M_L,左寰椎（C1） · 寰枕关节组覆盖区,颅颈交界,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_C1_M,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_atlanto_occipital_occipital_M_R,右枕骨 · 寰枕关节组覆盖区,颅颈交界,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_occipital_M,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_atlanto_occipital_vertebra_C1_M_R,右寰椎（C1） · 寰枕关节组覆盖区,颅颈交界,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_C1_M,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_atlanto_axial_vertebra_C1_M_lateral_L,左寰椎（C1）外侧寰枢关节面 · 寰枢关节组覆盖区,颅颈交界,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_C1_M,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_atlanto_axial_vertebra_C2_M_lateral_L,左枢椎（C2）外侧寰枢关节面 · 寰枢关节组覆盖区,颅颈交界,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_C2_M,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_atlanto_axial_vertebra_C1_M_lateral_R,右寰椎（C1）外侧寰枢关节面 · 寰枢关节组覆盖区,颅颈交界,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_C1_M,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_atlanto_axial_vertebra_C2_M_lateral_R,右枢椎（C2）外侧寰枢关节面 · 寰枢关节组覆盖区,颅颈交界,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_C2_M,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_atlanto_axial_vertebra_C1_M_anterior_atlas,寰椎前弓后侧齿突关节面 · 寰枢关节组覆盖区,颅颈交界,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_C1_M,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_atlanto_axial_vertebra_C2_M_anterior_dens,齿突前关节面 · 寰枢关节组覆盖区,颅颈交界,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_C2_M,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_atlanto_axial_vertebra_C2_M_posterior_dens,齿突后关节面 · 寰枢关节组覆盖区,颅颈交界,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_C2_M,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+atlas_transverse_contact,寰椎横韧带前侧与齿突接触区,颅颈交界,fibrocartilaginous_contact,1,individual,no_exact_mesh_mapping,,bone_vertebra_C1_M; bone_vertebra_C2_M,属于韧带侧接触组织，需与横韧带共同制作，不虚构第三块骨。
+disc_C2-C3,椎间盘 C2-C3,颈椎,intervertebral_disc,1,individual,local_candidate_mesh,Intervertebral disc C2-C3,bone_vertebra_C2_M; bone_vertebra_C3_M,整体候选不等于纤维环、髓核和终板已分别完成。
+nucleus_C2-C3,髓核 C2-C3,颈椎,nucleus_pulposus,1,individual,local_candidate_mesh,Nucleus pulposus C2-C3,bone_vertebra_C2_M; bone_vertebra_C3_M,
+annulus_C2-C3,纤维环 C2-C3,颈椎,annulus_fibrosus,1,individual,no_candidate_matched_in_checked_sources,,bone_vertebra_C2_M; bone_vertebra_C3_M,与整体椎间盘为父子分解关系，不能同时叠加重复实体。
+endplate_C2-C3_上,C2-C3椎间盘上软骨终板,颈椎,cartilaginous_endplate,1,individual,no_exact_mesh_mapping,,bone_vertebra_C2_M,
+endplate_C2-C3_下,C2-C3椎间盘下软骨终板,颈椎,cartilaginous_endplate,1,individual,no_exact_mesh_mapping,,bone_vertebra_C3_M,
+surface_spine_vertebra_C2_vertebra_C3_vertebra_C2_M_L,左枢椎（C2）关节突 · C2—C3运动节段覆盖区,颈椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_C2_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_C2_vertebra_C3_vertebra_C3_M_L,左第3颈椎（C3）关节突 · C2—C3运动节段覆盖区,颈椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_C3_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_C2_vertebra_C3_vertebra_C2_M_R,右枢椎（C2）关节突 · C2—C3运动节段覆盖区,颈椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_C2_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_C2_vertebra_C3_vertebra_C3_M_R,右第3颈椎（C3）关节突 · C2—C3运动节段覆盖区,颈椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_C3_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+disc_C3-C4,椎间盘 C3-C4,颈椎,intervertebral_disc,1,individual,local_candidate_mesh,Intervertebral disc C3-C4,bone_vertebra_C3_M; bone_vertebra_C4_M,整体候选不等于纤维环、髓核和终板已分别完成。
+nucleus_C3-C4,髓核 C3-C4,颈椎,nucleus_pulposus,1,individual,local_candidate_mesh,Nucleus pulposus C3-C4,bone_vertebra_C3_M; bone_vertebra_C4_M,
+annulus_C3-C4,纤维环 C3-C4,颈椎,annulus_fibrosus,1,individual,no_candidate_matched_in_checked_sources,,bone_vertebra_C3_M; bone_vertebra_C4_M,与整体椎间盘为父子分解关系，不能同时叠加重复实体。
+endplate_C3-C4_上,C3-C4椎间盘上软骨终板,颈椎,cartilaginous_endplate,1,individual,no_exact_mesh_mapping,,bone_vertebra_C3_M,
+endplate_C3-C4_下,C3-C4椎间盘下软骨终板,颈椎,cartilaginous_endplate,1,individual,no_exact_mesh_mapping,,bone_vertebra_C4_M,
+surface_spine_vertebra_C3_vertebra_C4_vertebra_C3_M_L,左第3颈椎（C3）关节突 · C3—C4运动节段覆盖区,颈椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_C3_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_C3_vertebra_C4_vertebra_C4_M_L,左第4颈椎（C4）关节突 · C3—C4运动节段覆盖区,颈椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_C4_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_C3_vertebra_C4_vertebra_C3_M_R,右第3颈椎（C3）关节突 · C3—C4运动节段覆盖区,颈椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_C3_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_C3_vertebra_C4_vertebra_C4_M_R,右第4颈椎（C4）关节突 · C3—C4运动节段覆盖区,颈椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_C4_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+disc_C4-C5,椎间盘 C4-C5,颈椎,intervertebral_disc,1,individual,local_candidate_mesh,Intervertebral disc C4-C5,bone_vertebra_C4_M; bone_vertebra_C5_M,整体候选不等于纤维环、髓核和终板已分别完成。
+nucleus_C4-C5,髓核 C4-C5,颈椎,nucleus_pulposus,1,individual,local_candidate_mesh,Nucleus pulposus C4-C5,bone_vertebra_C4_M; bone_vertebra_C5_M,
+annulus_C4-C5,纤维环 C4-C5,颈椎,annulus_fibrosus,1,individual,no_candidate_matched_in_checked_sources,,bone_vertebra_C4_M; bone_vertebra_C5_M,与整体椎间盘为父子分解关系，不能同时叠加重复实体。
+endplate_C4-C5_上,C4-C5椎间盘上软骨终板,颈椎,cartilaginous_endplate,1,individual,no_exact_mesh_mapping,,bone_vertebra_C4_M,
+endplate_C4-C5_下,C4-C5椎间盘下软骨终板,颈椎,cartilaginous_endplate,1,individual,no_exact_mesh_mapping,,bone_vertebra_C5_M,
+surface_spine_vertebra_C4_vertebra_C5_vertebra_C4_M_L,左第4颈椎（C4）关节突 · C4—C5运动节段覆盖区,颈椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_C4_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_C4_vertebra_C5_vertebra_C5_M_L,左第5颈椎（C5）关节突 · C4—C5运动节段覆盖区,颈椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_C5_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_C4_vertebra_C5_vertebra_C4_M_R,右第4颈椎（C4）关节突 · C4—C5运动节段覆盖区,颈椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_C4_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_C4_vertebra_C5_vertebra_C5_M_R,右第5颈椎（C5）关节突 · C4—C5运动节段覆盖区,颈椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_C5_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+disc_C5-C6,椎间盘 C5-C6,颈椎,intervertebral_disc,1,individual,local_candidate_mesh,Intervertebral disc C5-C6,bone_vertebra_C5_M; bone_vertebra_C6_M,整体候选不等于纤维环、髓核和终板已分别完成。
+nucleus_C5-C6,髓核 C5-C6,颈椎,nucleus_pulposus,1,individual,local_candidate_mesh,Nucleus pulposus C5-C6,bone_vertebra_C5_M; bone_vertebra_C6_M,
+annulus_C5-C6,纤维环 C5-C6,颈椎,annulus_fibrosus,1,individual,no_candidate_matched_in_checked_sources,,bone_vertebra_C5_M; bone_vertebra_C6_M,与整体椎间盘为父子分解关系，不能同时叠加重复实体。
+endplate_C5-C6_上,C5-C6椎间盘上软骨终板,颈椎,cartilaginous_endplate,1,individual,no_exact_mesh_mapping,,bone_vertebra_C5_M,
+endplate_C5-C6_下,C5-C6椎间盘下软骨终板,颈椎,cartilaginous_endplate,1,individual,no_exact_mesh_mapping,,bone_vertebra_C6_M,
+surface_spine_vertebra_C5_vertebra_C6_vertebra_C5_M_L,左第5颈椎（C5）关节突 · C5—C6运动节段覆盖区,颈椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_C5_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_C5_vertebra_C6_vertebra_C6_M_L,左第6颈椎（C6）关节突 · C5—C6运动节段覆盖区,颈椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_C6_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_C5_vertebra_C6_vertebra_C5_M_R,右第5颈椎（C5）关节突 · C5—C6运动节段覆盖区,颈椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_C5_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_C5_vertebra_C6_vertebra_C6_M_R,右第6颈椎（C6）关节突 · C5—C6运动节段覆盖区,颈椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_C6_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+disc_C6-C7,椎间盘 C6-C7,颈椎,intervertebral_disc,1,individual,local_candidate_mesh,Intervertebral disc C6-C7,bone_vertebra_C6_M; bone_vertebra_C7_M,整体候选不等于纤维环、髓核和终板已分别完成。
+nucleus_C6-C7,髓核 C6-C7,颈椎,nucleus_pulposus,1,individual,local_candidate_mesh,Nucleus pulposus C6-C7,bone_vertebra_C6_M; bone_vertebra_C7_M,
+annulus_C6-C7,纤维环 C6-C7,颈椎,annulus_fibrosus,1,individual,no_candidate_matched_in_checked_sources,,bone_vertebra_C6_M; bone_vertebra_C7_M,与整体椎间盘为父子分解关系，不能同时叠加重复实体。
+endplate_C6-C7_上,C6-C7椎间盘上软骨终板,颈椎,cartilaginous_endplate,1,individual,no_exact_mesh_mapping,,bone_vertebra_C6_M,
+endplate_C6-C7_下,C6-C7椎间盘下软骨终板,颈椎,cartilaginous_endplate,1,individual,no_exact_mesh_mapping,,bone_vertebra_C7_M,
+surface_spine_vertebra_C6_vertebra_C7_vertebra_C6_M_L,左第6颈椎（C6）关节突 · C6—C7运动节段覆盖区,颈椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_C6_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_C6_vertebra_C7_vertebra_C7_M_L,左第7颈椎（C7）关节突 · C6—C7运动节段覆盖区,颈椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_C7_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_C6_vertebra_C7_vertebra_C6_M_R,右第6颈椎（C6）关节突 · C6—C7运动节段覆盖区,颈椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_C6_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_C6_vertebra_C7_vertebra_C7_M_R,右第7颈椎（C7）关节突 · C6—C7运动节段覆盖区,颈椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_C7_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+disc_C7-T1,椎间盘 C7-T1,颈椎,intervertebral_disc,1,individual,local_candidate_mesh,Intervertebral disc C7-T1,bone_vertebra_C7_M; bone_vertebra_T1_M,整体候选不等于纤维环、髓核和终板已分别完成。
+nucleus_C7-T1,髓核 C7-T1,颈椎,nucleus_pulposus,1,individual,local_candidate_mesh,Nucleus pulposus C7-T1,bone_vertebra_C7_M; bone_vertebra_T1_M,
+annulus_C7-T1,纤维环 C7-T1,颈椎,annulus_fibrosus,1,individual,no_candidate_matched_in_checked_sources,,bone_vertebra_C7_M; bone_vertebra_T1_M,与整体椎间盘为父子分解关系，不能同时叠加重复实体。
+endplate_C7-T1_上,C7-T1椎间盘上软骨终板,颈椎,cartilaginous_endplate,1,individual,no_exact_mesh_mapping,,bone_vertebra_C7_M,
+endplate_C7-T1_下,C7-T1椎间盘下软骨终板,颈椎,cartilaginous_endplate,1,individual,no_exact_mesh_mapping,,bone_vertebra_T1_M,
+surface_spine_vertebra_C7_vertebra_T1_vertebra_C7_M_L,左第7颈椎（C7）关节突 · C7—T1运动节段覆盖区,颈椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_C7_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_C7_vertebra_T1_vertebra_T1_M_L,左第1胸椎（T1）关节突 · C7—T1运动节段覆盖区,颈椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T1_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_C7_vertebra_T1_vertebra_C7_M_R,右第7颈椎（C7）关节突 · C7—T1运动节段覆盖区,颈椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_C7_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_C7_vertebra_T1_vertebra_T1_M_R,右第1胸椎（T1）关节突 · C7—T1运动节段覆盖区,颈椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T1_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+disc_T1-T2,椎间盘 T1-T2,胸椎,intervertebral_disc,1,individual,local_candidate_mesh,Intervertebral disc T1-T2,bone_vertebra_T1_M; bone_vertebra_T2_M,整体候选不等于纤维环、髓核和终板已分别完成。
+nucleus_T1-T2,髓核 T1-T2,胸椎,nucleus_pulposus,1,individual,local_candidate_mesh,Nucleus pulposus T1-T2,bone_vertebra_T1_M; bone_vertebra_T2_M,
+annulus_T1-T2,纤维环 T1-T2,胸椎,annulus_fibrosus,1,individual,no_candidate_matched_in_checked_sources,,bone_vertebra_T1_M; bone_vertebra_T2_M,与整体椎间盘为父子分解关系，不能同时叠加重复实体。
+endplate_T1-T2_上,T1-T2椎间盘上软骨终板,胸椎,cartilaginous_endplate,1,individual,no_exact_mesh_mapping,,bone_vertebra_T1_M,
+endplate_T1-T2_下,T1-T2椎间盘下软骨终板,胸椎,cartilaginous_endplate,1,individual,no_exact_mesh_mapping,,bone_vertebra_T2_M,
+surface_spine_vertebra_T1_vertebra_T2_vertebra_T1_M_L,左第1胸椎（T1）关节突 · T1—T2运动节段覆盖区,胸椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T1_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_T1_vertebra_T2_vertebra_T2_M_L,左第2胸椎（T2）关节突 · T1—T2运动节段覆盖区,胸椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T2_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_T1_vertebra_T2_vertebra_T1_M_R,右第1胸椎（T1）关节突 · T1—T2运动节段覆盖区,胸椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T1_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_T1_vertebra_T2_vertebra_T2_M_R,右第2胸椎（T2）关节突 · T1—T2运动节段覆盖区,胸椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T2_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+disc_T2-T3,椎间盘 T2-T3,胸椎,intervertebral_disc,1,individual,local_candidate_mesh,Intervertebral disc T2-T3,bone_vertebra_T2_M; bone_vertebra_T3_M,整体候选不等于纤维环、髓核和终板已分别完成。
+nucleus_T2-T3,髓核 T2-T3,胸椎,nucleus_pulposus,1,individual,local_candidate_mesh,Nucleus pulposus T2-T3,bone_vertebra_T2_M; bone_vertebra_T3_M,
+annulus_T2-T3,纤维环 T2-T3,胸椎,annulus_fibrosus,1,individual,no_candidate_matched_in_checked_sources,,bone_vertebra_T2_M; bone_vertebra_T3_M,与整体椎间盘为父子分解关系，不能同时叠加重复实体。
+endplate_T2-T3_上,T2-T3椎间盘上软骨终板,胸椎,cartilaginous_endplate,1,individual,no_exact_mesh_mapping,,bone_vertebra_T2_M,
+endplate_T2-T3_下,T2-T3椎间盘下软骨终板,胸椎,cartilaginous_endplate,1,individual,no_exact_mesh_mapping,,bone_vertebra_T3_M,
+surface_spine_vertebra_T2_vertebra_T3_vertebra_T2_M_L,左第2胸椎（T2）关节突 · T2—T3运动节段覆盖区,胸椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T2_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_T2_vertebra_T3_vertebra_T3_M_L,左第3胸椎（T3）关节突 · T2—T3运动节段覆盖区,胸椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T3_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_T2_vertebra_T3_vertebra_T2_M_R,右第2胸椎（T2）关节突 · T2—T3运动节段覆盖区,胸椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T2_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_T2_vertebra_T3_vertebra_T3_M_R,右第3胸椎（T3）关节突 · T2—T3运动节段覆盖区,胸椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T3_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+disc_T3-T4,椎间盘 T3-T4,胸椎,intervertebral_disc,1,individual,local_candidate_mesh,Intervertebral disc T3-T4,bone_vertebra_T3_M; bone_vertebra_T4_M,整体候选不等于纤维环、髓核和终板已分别完成。
+nucleus_T3-T4,髓核 T3-T4,胸椎,nucleus_pulposus,1,individual,local_candidate_mesh,Nucleus pulposus T3-T4,bone_vertebra_T3_M; bone_vertebra_T4_M,
+annulus_T3-T4,纤维环 T3-T4,胸椎,annulus_fibrosus,1,individual,no_candidate_matched_in_checked_sources,,bone_vertebra_T3_M; bone_vertebra_T4_M,与整体椎间盘为父子分解关系，不能同时叠加重复实体。
+endplate_T3-T4_上,T3-T4椎间盘上软骨终板,胸椎,cartilaginous_endplate,1,individual,no_exact_mesh_mapping,,bone_vertebra_T3_M,
+endplate_T3-T4_下,T3-T4椎间盘下软骨终板,胸椎,cartilaginous_endplate,1,individual,no_exact_mesh_mapping,,bone_vertebra_T4_M,
+surface_spine_vertebra_T3_vertebra_T4_vertebra_T3_M_L,左第3胸椎（T3）关节突 · T3—T4运动节段覆盖区,胸椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T3_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_T3_vertebra_T4_vertebra_T4_M_L,左第4胸椎（T4）关节突 · T3—T4运动节段覆盖区,胸椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T4_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_T3_vertebra_T4_vertebra_T3_M_R,右第3胸椎（T3）关节突 · T3—T4运动节段覆盖区,胸椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T3_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_T3_vertebra_T4_vertebra_T4_M_R,右第4胸椎（T4）关节突 · T3—T4运动节段覆盖区,胸椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T4_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+disc_T4-T5,椎间盘 T4-T5,胸椎,intervertebral_disc,1,individual,local_candidate_mesh,Intervertebral disc T4-T5,bone_vertebra_T4_M; bone_vertebra_T5_M,整体候选不等于纤维环、髓核和终板已分别完成。
+nucleus_T4-T5,髓核 T4-T5,胸椎,nucleus_pulposus,1,individual,local_candidate_mesh,Nucleus pulposus T4-T5,bone_vertebra_T4_M; bone_vertebra_T5_M,
+annulus_T4-T5,纤维环 T4-T5,胸椎,annulus_fibrosus,1,individual,no_candidate_matched_in_checked_sources,,bone_vertebra_T4_M; bone_vertebra_T5_M,与整体椎间盘为父子分解关系，不能同时叠加重复实体。
+endplate_T4-T5_上,T4-T5椎间盘上软骨终板,胸椎,cartilaginous_endplate,1,individual,no_exact_mesh_mapping,,bone_vertebra_T4_M,
+endplate_T4-T5_下,T4-T5椎间盘下软骨终板,胸椎,cartilaginous_endplate,1,individual,no_exact_mesh_mapping,,bone_vertebra_T5_M,
+surface_spine_vertebra_T4_vertebra_T5_vertebra_T4_M_L,左第4胸椎（T4）关节突 · T4—T5运动节段覆盖区,胸椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T4_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_T4_vertebra_T5_vertebra_T5_M_L,左第5胸椎（T5）关节突 · T4—T5运动节段覆盖区,胸椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T5_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_T4_vertebra_T5_vertebra_T4_M_R,右第4胸椎（T4）关节突 · T4—T5运动节段覆盖区,胸椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T4_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_T4_vertebra_T5_vertebra_T5_M_R,右第5胸椎（T5）关节突 · T4—T5运动节段覆盖区,胸椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T5_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+disc_T5-T6,椎间盘 T5-T6,胸椎,intervertebral_disc,1,individual,local_candidate_mesh,Intervertebral disc T5-T6,bone_vertebra_T5_M; bone_vertebra_T6_M,整体候选不等于纤维环、髓核和终板已分别完成。
+nucleus_T5-T6,髓核 T5-T6,胸椎,nucleus_pulposus,1,individual,local_candidate_mesh,Nucleus pulposus T5-T6,bone_vertebra_T5_M; bone_vertebra_T6_M,
+annulus_T5-T6,纤维环 T5-T6,胸椎,annulus_fibrosus,1,individual,no_candidate_matched_in_checked_sources,,bone_vertebra_T5_M; bone_vertebra_T6_M,与整体椎间盘为父子分解关系，不能同时叠加重复实体。
+endplate_T5-T6_上,T5-T6椎间盘上软骨终板,胸椎,cartilaginous_endplate,1,individual,no_exact_mesh_mapping,,bone_vertebra_T5_M,
+endplate_T5-T6_下,T5-T6椎间盘下软骨终板,胸椎,cartilaginous_endplate,1,individual,no_exact_mesh_mapping,,bone_vertebra_T6_M,
+surface_spine_vertebra_T5_vertebra_T6_vertebra_T5_M_L,左第5胸椎（T5）关节突 · T5—T6运动节段覆盖区,胸椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T5_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_T5_vertebra_T6_vertebra_T6_M_L,左第6胸椎（T6）关节突 · T5—T6运动节段覆盖区,胸椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T6_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_T5_vertebra_T6_vertebra_T5_M_R,右第5胸椎（T5）关节突 · T5—T6运动节段覆盖区,胸椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T5_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_T5_vertebra_T6_vertebra_T6_M_R,右第6胸椎（T6）关节突 · T5—T6运动节段覆盖区,胸椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T6_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+disc_T6-T7,椎间盘 T6-T7,胸椎,intervertebral_disc,1,individual,local_candidate_mesh,Intervertebral disc T6-T7,bone_vertebra_T6_M; bone_vertebra_T7_M,整体候选不等于纤维环、髓核和终板已分别完成。
+nucleus_T6-T7,髓核 T6-T7,胸椎,nucleus_pulposus,1,individual,local_candidate_mesh,Nucleus pulposus T6-T7,bone_vertebra_T6_M; bone_vertebra_T7_M,
+annulus_T6-T7,纤维环 T6-T7,胸椎,annulus_fibrosus,1,individual,no_candidate_matched_in_checked_sources,,bone_vertebra_T6_M; bone_vertebra_T7_M,与整体椎间盘为父子分解关系，不能同时叠加重复实体。
+endplate_T6-T7_上,T6-T7椎间盘上软骨终板,胸椎,cartilaginous_endplate,1,individual,no_exact_mesh_mapping,,bone_vertebra_T6_M,
+endplate_T6-T7_下,T6-T7椎间盘下软骨终板,胸椎,cartilaginous_endplate,1,individual,no_exact_mesh_mapping,,bone_vertebra_T7_M,
+surface_spine_vertebra_T6_vertebra_T7_vertebra_T6_M_L,左第6胸椎（T6）关节突 · T6—T7运动节段覆盖区,胸椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T6_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_T6_vertebra_T7_vertebra_T7_M_L,左第7胸椎（T7）关节突 · T6—T7运动节段覆盖区,胸椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T7_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_T6_vertebra_T7_vertebra_T6_M_R,右第6胸椎（T6）关节突 · T6—T7运动节段覆盖区,胸椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T6_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_T6_vertebra_T7_vertebra_T7_M_R,右第7胸椎（T7）关节突 · T6—T7运动节段覆盖区,胸椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T7_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+disc_T7-T8,椎间盘 T7-T8,胸椎,intervertebral_disc,1,individual,local_candidate_mesh,Intervertebral disc T7-T8,bone_vertebra_T7_M; bone_vertebra_T8_M,整体候选不等于纤维环、髓核和终板已分别完成。
+nucleus_T7-T8,髓核 T7-T8,胸椎,nucleus_pulposus,1,individual,local_candidate_mesh,Nucleus pulposus T7-T8,bone_vertebra_T7_M; bone_vertebra_T8_M,
+annulus_T7-T8,纤维环 T7-T8,胸椎,annulus_fibrosus,1,individual,no_candidate_matched_in_checked_sources,,bone_vertebra_T7_M; bone_vertebra_T8_M,与整体椎间盘为父子分解关系，不能同时叠加重复实体。
+endplate_T7-T8_上,T7-T8椎间盘上软骨终板,胸椎,cartilaginous_endplate,1,individual,no_exact_mesh_mapping,,bone_vertebra_T7_M,
+endplate_T7-T8_下,T7-T8椎间盘下软骨终板,胸椎,cartilaginous_endplate,1,individual,no_exact_mesh_mapping,,bone_vertebra_T8_M,
+surface_spine_vertebra_T7_vertebra_T8_vertebra_T7_M_L,左第7胸椎（T7）关节突 · T7—T8运动节段覆盖区,胸椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T7_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_T7_vertebra_T8_vertebra_T8_M_L,左第8胸椎（T8）关节突 · T7—T8运动节段覆盖区,胸椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T8_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_T7_vertebra_T8_vertebra_T7_M_R,右第7胸椎（T7）关节突 · T7—T8运动节段覆盖区,胸椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T7_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_T7_vertebra_T8_vertebra_T8_M_R,右第8胸椎（T8）关节突 · T7—T8运动节段覆盖区,胸椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T8_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+disc_T8-T9,椎间盘 T8-T9,胸椎,intervertebral_disc,1,individual,local_candidate_mesh,Intervertebral disc T8-T9,bone_vertebra_T8_M; bone_vertebra_T9_M,整体候选不等于纤维环、髓核和终板已分别完成。
+nucleus_T8-T9,髓核 T8-T9,胸椎,nucleus_pulposus,1,individual,local_candidate_mesh,Nucleus pulposus T8-T9,bone_vertebra_T8_M; bone_vertebra_T9_M,
+annulus_T8-T9,纤维环 T8-T9,胸椎,annulus_fibrosus,1,individual,no_candidate_matched_in_checked_sources,,bone_vertebra_T8_M; bone_vertebra_T9_M,与整体椎间盘为父子分解关系，不能同时叠加重复实体。
+endplate_T8-T9_上,T8-T9椎间盘上软骨终板,胸椎,cartilaginous_endplate,1,individual,no_exact_mesh_mapping,,bone_vertebra_T8_M,
+endplate_T8-T9_下,T8-T9椎间盘下软骨终板,胸椎,cartilaginous_endplate,1,individual,no_exact_mesh_mapping,,bone_vertebra_T9_M,
+surface_spine_vertebra_T8_vertebra_T9_vertebra_T8_M_L,左第8胸椎（T8）关节突 · T8—T9运动节段覆盖区,胸椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T8_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_T8_vertebra_T9_vertebra_T9_M_L,左第9胸椎（T9）关节突 · T8—T9运动节段覆盖区,胸椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T9_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_T8_vertebra_T9_vertebra_T8_M_R,右第8胸椎（T8）关节突 · T8—T9运动节段覆盖区,胸椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T8_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_T8_vertebra_T9_vertebra_T9_M_R,右第9胸椎（T9）关节突 · T8—T9运动节段覆盖区,胸椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T9_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+disc_T9-T10,椎间盘 T9-T10,胸椎,intervertebral_disc,1,individual,local_candidate_mesh,Intervertebral disc T9-T10,bone_vertebra_T9_M; bone_vertebra_T10_M,整体候选不等于纤维环、髓核和终板已分别完成。
+nucleus_T9-T10,髓核 T9-T10,胸椎,nucleus_pulposus,1,individual,local_candidate_mesh,Nucleus pulposus T9-T10,bone_vertebra_T9_M; bone_vertebra_T10_M,
+annulus_T9-T10,纤维环 T9-T10,胸椎,annulus_fibrosus,1,individual,no_candidate_matched_in_checked_sources,,bone_vertebra_T9_M; bone_vertebra_T10_M,与整体椎间盘为父子分解关系，不能同时叠加重复实体。
+endplate_T9-T10_上,T9-T10椎间盘上软骨终板,胸椎,cartilaginous_endplate,1,individual,no_exact_mesh_mapping,,bone_vertebra_T9_M,
+endplate_T9-T10_下,T9-T10椎间盘下软骨终板,胸椎,cartilaginous_endplate,1,individual,no_exact_mesh_mapping,,bone_vertebra_T10_M,
+surface_spine_vertebra_T9_vertebra_T10_vertebra_T9_M_L,左第9胸椎（T9）关节突 · T9—T10运动节段覆盖区,胸椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T9_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_T9_vertebra_T10_vertebra_T10_M_L,左第10胸椎（T10）关节突 · T9—T10运动节段覆盖区,胸椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T10_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_T9_vertebra_T10_vertebra_T9_M_R,右第9胸椎（T9）关节突 · T9—T10运动节段覆盖区,胸椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T9_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_T9_vertebra_T10_vertebra_T10_M_R,右第10胸椎（T10）关节突 · T9—T10运动节段覆盖区,胸椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T10_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+disc_T10-T11,椎间盘 T10-T11,胸椎,intervertebral_disc,1,individual,local_candidate_mesh,Intervertebral disc T10-T11,bone_vertebra_T10_M; bone_vertebra_T11_M,整体候选不等于纤维环、髓核和终板已分别完成。
+nucleus_T10-T11,髓核 T10-T11,胸椎,nucleus_pulposus,1,individual,local_candidate_mesh,Nucleus pulposus T10-T11,bone_vertebra_T10_M; bone_vertebra_T11_M,
+annulus_T10-T11,纤维环 T10-T11,胸椎,annulus_fibrosus,1,individual,no_candidate_matched_in_checked_sources,,bone_vertebra_T10_M; bone_vertebra_T11_M,与整体椎间盘为父子分解关系，不能同时叠加重复实体。
+endplate_T10-T11_上,T10-T11椎间盘上软骨终板,胸椎,cartilaginous_endplate,1,individual,no_exact_mesh_mapping,,bone_vertebra_T10_M,
+endplate_T10-T11_下,T10-T11椎间盘下软骨终板,胸椎,cartilaginous_endplate,1,individual,no_exact_mesh_mapping,,bone_vertebra_T11_M,
+surface_spine_vertebra_T10_vertebra_T11_vertebra_T10_M_L,左第10胸椎（T10）关节突 · T10—T11运动节段覆盖区,胸椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T10_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_T10_vertebra_T11_vertebra_T11_M_L,左第11胸椎（T11）关节突 · T10—T11运动节段覆盖区,胸椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T11_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_T10_vertebra_T11_vertebra_T10_M_R,右第10胸椎（T10）关节突 · T10—T11运动节段覆盖区,胸椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T10_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_T10_vertebra_T11_vertebra_T11_M_R,右第11胸椎（T11）关节突 · T10—T11运动节段覆盖区,胸椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T11_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+disc_T11-T12,椎间盘 T11-T12,胸椎,intervertebral_disc,1,individual,local_candidate_mesh,Intervertebral disc T11-T12,bone_vertebra_T11_M; bone_vertebra_T12_M,整体候选不等于纤维环、髓核和终板已分别完成。
+nucleus_T11-T12,髓核 T11-T12,胸椎,nucleus_pulposus,1,individual,local_candidate_mesh,Nucleus pulposus T11-T12,bone_vertebra_T11_M; bone_vertebra_T12_M,
+annulus_T11-T12,纤维环 T11-T12,胸椎,annulus_fibrosus,1,individual,no_candidate_matched_in_checked_sources,,bone_vertebra_T11_M; bone_vertebra_T12_M,与整体椎间盘为父子分解关系，不能同时叠加重复实体。
+endplate_T11-T12_上,T11-T12椎间盘上软骨终板,胸椎,cartilaginous_endplate,1,individual,no_exact_mesh_mapping,,bone_vertebra_T11_M,
+endplate_T11-T12_下,T11-T12椎间盘下软骨终板,胸椎,cartilaginous_endplate,1,individual,no_exact_mesh_mapping,,bone_vertebra_T12_M,
+surface_spine_vertebra_T11_vertebra_T12_vertebra_T11_M_L,左第11胸椎（T11）关节突 · T11—T12运动节段覆盖区,胸椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T11_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_T11_vertebra_T12_vertebra_T12_M_L,左第12胸椎（T12）关节突 · T11—T12运动节段覆盖区,胸椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T12_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_T11_vertebra_T12_vertebra_T11_M_R,右第11胸椎（T11）关节突 · T11—T12运动节段覆盖区,胸椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T11_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_T11_vertebra_T12_vertebra_T12_M_R,右第12胸椎（T12）关节突 · T11—T12运动节段覆盖区,胸椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T12_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+disc_T12-L1,椎间盘 T12-L1,胸椎,intervertebral_disc,1,individual,local_candidate_mesh,Intervertebral disc T12-L1,bone_vertebra_T12_M; bone_vertebra_L1_M,整体候选不等于纤维环、髓核和终板已分别完成。
+nucleus_T12-L1,髓核 T12-L1,胸椎,nucleus_pulposus,1,individual,local_candidate_mesh,Nucleus pulposus T12-L1,bone_vertebra_T12_M; bone_vertebra_L1_M,
+annulus_T12-L1,纤维环 T12-L1,胸椎,annulus_fibrosus,1,individual,no_candidate_matched_in_checked_sources,,bone_vertebra_T12_M; bone_vertebra_L1_M,与整体椎间盘为父子分解关系，不能同时叠加重复实体。
+endplate_T12-L1_上,T12-L1椎间盘上软骨终板,胸椎,cartilaginous_endplate,1,individual,no_exact_mesh_mapping,,bone_vertebra_T12_M,
+endplate_T12-L1_下,T12-L1椎间盘下软骨终板,胸椎,cartilaginous_endplate,1,individual,no_exact_mesh_mapping,,bone_vertebra_L1_M,
+surface_spine_vertebra_T12_vertebra_L1_vertebra_T12_M_L,左第12胸椎（T12）关节突 · T12—L1运动节段覆盖区,胸椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T12_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_T12_vertebra_L1_vertebra_L1_M_L,左第1腰椎（L1）关节突 · T12—L1运动节段覆盖区,胸椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_L1_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_T12_vertebra_L1_vertebra_T12_M_R,右第12胸椎（T12）关节突 · T12—L1运动节段覆盖区,胸椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T12_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_T12_vertebra_L1_vertebra_L1_M_R,右第1腰椎（L1）关节突 · T12—L1运动节段覆盖区,胸椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_L1_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+disc_L1-L2,椎间盘 L1-L2,腰椎,intervertebral_disc,1,individual,local_candidate_mesh,Intervertebral disc L1-L2,bone_vertebra_L1_M; bone_vertebra_L2_M,整体候选不等于纤维环、髓核和终板已分别完成。
+nucleus_L1-L2,髓核 L1-L2,腰椎,nucleus_pulposus,1,individual,local_candidate_mesh,Nucleus pulposus L1-L2,bone_vertebra_L1_M; bone_vertebra_L2_M,
+annulus_L1-L2,纤维环 L1-L2,腰椎,annulus_fibrosus,1,individual,no_candidate_matched_in_checked_sources,,bone_vertebra_L1_M; bone_vertebra_L2_M,与整体椎间盘为父子分解关系，不能同时叠加重复实体。
+endplate_L1-L2_上,L1-L2椎间盘上软骨终板,腰椎,cartilaginous_endplate,1,individual,no_exact_mesh_mapping,,bone_vertebra_L1_M,
+endplate_L1-L2_下,L1-L2椎间盘下软骨终板,腰椎,cartilaginous_endplate,1,individual,no_exact_mesh_mapping,,bone_vertebra_L2_M,
+surface_spine_vertebra_L1_vertebra_L2_vertebra_L1_M_L,左第1腰椎（L1）关节突 · L1—L2运动节段覆盖区,腰椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_L1_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_L1_vertebra_L2_vertebra_L2_M_L,左第2腰椎（L2）关节突 · L1—L2运动节段覆盖区,腰椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_L2_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_L1_vertebra_L2_vertebra_L1_M_R,右第1腰椎（L1）关节突 · L1—L2运动节段覆盖区,腰椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_L1_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_L1_vertebra_L2_vertebra_L2_M_R,右第2腰椎（L2）关节突 · L1—L2运动节段覆盖区,腰椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_L2_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+disc_L2-L3,椎间盘 L2-L3,腰椎,intervertebral_disc,1,individual,local_candidate_mesh,Intervertebral disc L2-L3,bone_vertebra_L2_M; bone_vertebra_L3_M,整体候选不等于纤维环、髓核和终板已分别完成。
+nucleus_L2-L3,髓核 L2-L3,腰椎,nucleus_pulposus,1,individual,local_candidate_mesh,Nucleus pulposus L2-L3,bone_vertebra_L2_M; bone_vertebra_L3_M,
+annulus_L2-L3,纤维环 L2-L3,腰椎,annulus_fibrosus,1,individual,no_candidate_matched_in_checked_sources,,bone_vertebra_L2_M; bone_vertebra_L3_M,与整体椎间盘为父子分解关系，不能同时叠加重复实体。
+endplate_L2-L3_上,L2-L3椎间盘上软骨终板,腰椎,cartilaginous_endplate,1,individual,no_exact_mesh_mapping,,bone_vertebra_L2_M,
+endplate_L2-L3_下,L2-L3椎间盘下软骨终板,腰椎,cartilaginous_endplate,1,individual,no_exact_mesh_mapping,,bone_vertebra_L3_M,
+surface_spine_vertebra_L2_vertebra_L3_vertebra_L2_M_L,左第2腰椎（L2）关节突 · L2—L3运动节段覆盖区,腰椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_L2_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_L2_vertebra_L3_vertebra_L3_M_L,左第3腰椎（L3）关节突 · L2—L3运动节段覆盖区,腰椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_L3_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_L2_vertebra_L3_vertebra_L2_M_R,右第2腰椎（L2）关节突 · L2—L3运动节段覆盖区,腰椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_L2_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_L2_vertebra_L3_vertebra_L3_M_R,右第3腰椎（L3）关节突 · L2—L3运动节段覆盖区,腰椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_L3_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+disc_L3-L4,椎间盘 L3-L4,腰椎,intervertebral_disc,1,individual,local_candidate_mesh,Intervertebral disc L3-L4,bone_vertebra_L3_M; bone_vertebra_L4_M,整体候选不等于纤维环、髓核和终板已分别完成。
+nucleus_L3-L4,髓核 L3-L4,腰椎,nucleus_pulposus,1,individual,local_candidate_mesh,Nucleus pulposus L3-L4,bone_vertebra_L3_M; bone_vertebra_L4_M,
+annulus_L3-L4,纤维环 L3-L4,腰椎,annulus_fibrosus,1,individual,no_candidate_matched_in_checked_sources,,bone_vertebra_L3_M; bone_vertebra_L4_M,与整体椎间盘为父子分解关系，不能同时叠加重复实体。
+endplate_L3-L4_上,L3-L4椎间盘上软骨终板,腰椎,cartilaginous_endplate,1,individual,no_exact_mesh_mapping,,bone_vertebra_L3_M,
+endplate_L3-L4_下,L3-L4椎间盘下软骨终板,腰椎,cartilaginous_endplate,1,individual,no_exact_mesh_mapping,,bone_vertebra_L4_M,
+surface_spine_vertebra_L3_vertebra_L4_vertebra_L3_M_L,左第3腰椎（L3）关节突 · L3—L4运动节段覆盖区,腰椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_L3_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_L3_vertebra_L4_vertebra_L4_M_L,左第4腰椎（L4）关节突 · L3—L4运动节段覆盖区,腰椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_L4_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_L3_vertebra_L4_vertebra_L3_M_R,右第3腰椎（L3）关节突 · L3—L4运动节段覆盖区,腰椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_L3_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_L3_vertebra_L4_vertebra_L4_M_R,右第4腰椎（L4）关节突 · L3—L4运动节段覆盖区,腰椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_L4_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+disc_L4-L5,椎间盘 L4-L5,腰椎,intervertebral_disc,1,individual,local_candidate_mesh,Intervertebral disc L4-L5,bone_vertebra_L4_M; bone_vertebra_L5_M,整体候选不等于纤维环、髓核和终板已分别完成。
+nucleus_L4-L5,髓核 L4-L5,腰椎,nucleus_pulposus,1,individual,local_candidate_mesh,Nucleus pulposus L4-L5,bone_vertebra_L4_M; bone_vertebra_L5_M,
+annulus_L4-L5,纤维环 L4-L5,腰椎,annulus_fibrosus,1,individual,no_candidate_matched_in_checked_sources,,bone_vertebra_L4_M; bone_vertebra_L5_M,与整体椎间盘为父子分解关系，不能同时叠加重复实体。
+endplate_L4-L5_上,L4-L5椎间盘上软骨终板,腰椎,cartilaginous_endplate,1,individual,no_exact_mesh_mapping,,bone_vertebra_L4_M,
+endplate_L4-L5_下,L4-L5椎间盘下软骨终板,腰椎,cartilaginous_endplate,1,individual,no_exact_mesh_mapping,,bone_vertebra_L5_M,
+surface_spine_vertebra_L4_vertebra_L5_vertebra_L4_M_L,左第4腰椎（L4）关节突 · L4—L5运动节段覆盖区,腰椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_L4_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_L4_vertebra_L5_vertebra_L5_M_L,左第5腰椎（L5）关节突 · L4—L5运动节段覆盖区,腰椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_L5_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_L4_vertebra_L5_vertebra_L4_M_R,右第4腰椎（L4）关节突 · L4—L5运动节段覆盖区,腰椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_L4_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_L4_vertebra_L5_vertebra_L5_M_R,右第5腰椎（L5）关节突 · L4—L5运动节段覆盖区,腰椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_L5_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+disc_L5-S1,椎间盘 L5-S1,腰椎,intervertebral_disc,1,individual,local_candidate_mesh,Intervertebral disc L5-S1,bone_vertebra_L5_M; bone_sacrum_M,整体候选不等于纤维环、髓核和终板已分别完成。
+nucleus_L5-S1,髓核 L5-S1,腰椎,nucleus_pulposus,1,individual,local_candidate_mesh,Nucleus pulposus L5-S1,bone_vertebra_L5_M; bone_sacrum_M,
+annulus_L5-S1,纤维环 L5-S1,腰椎,annulus_fibrosus,1,individual,no_candidate_matched_in_checked_sources,,bone_vertebra_L5_M; bone_sacrum_M,与整体椎间盘为父子分解关系，不能同时叠加重复实体。
+endplate_L5-S1_上,L5-S1椎间盘上软骨终板,腰椎,cartilaginous_endplate,1,individual,no_exact_mesh_mapping,,bone_vertebra_L5_M,
+endplate_L5-S1_下,L5-S1椎间盘下软骨终板,腰椎,cartilaginous_endplate,1,individual,no_exact_mesh_mapping,,bone_sacrum_M,
+surface_spine_vertebra_L5_sacrum_vertebra_L5_M_L,左第5腰椎（L5）关节突 · L5—sacrum运动节段覆盖区,腰椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_L5_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_L5_sacrum_sacrum_M_L,左骶骨关节突 · L5—sacrum运动节段覆盖区,腰椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_sacrum_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_L5_sacrum_vertebra_L5_M_R,右第5腰椎（L5）关节突 · L5—sacrum运动节段覆盖区,腰椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_L5_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+surface_spine_vertebra_L5_sacrum_sacrum_M_R,右骶骨关节突 · L5—sacrum运动节段覆盖区,腰椎,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_sacrum_M,上下相邻椎骨的对应关节突关节覆盖面；按侧及节段校准。
+sacrococcygeal_disc,骶尾连接纤维软骨候选,骨盆与髋,variant_fibrocartilage,1,individual,no_exact_mesh_mapping,,bone_sacrum_M; bone_coccyx_M,是否存在及融合状态按模板核对；当前尾骨试拆边界尚未审核。
+surface_tmj_L_temporal_L,左颞骨 · 左颞下颌关节覆盖区,头颈与听骨,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_temporal_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_tmj_L_mandible_M,下颌骨 · 左颞下颌关节覆盖区,头颈与听骨,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_mandible_M,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_incudomalleolar_L_malleus_L,左锤骨 · 左锤砧关节覆盖区,头颈与听骨,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_malleus_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_incudomalleolar_L_incus_L,左砧骨 · 左锤砧关节覆盖区,头颈与听骨,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_incus_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_incudostapedial_L_incus_L,左砧骨 · 左砧镫关节覆盖区,头颈与听骨,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_incus_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_incudostapedial_L_stapes_L,左镫骨 · 左砧镫关节覆盖区,头颈与听骨,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_stapes_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+fibrous_stapes_window_L,左镫骨—前庭窗连接纤维连接,头颈与听骨,fibrous_connection,2,individual,no_exact_mesh_mapping,,bone_stapes_L; bone_temporal_L,镫骨环韧带；不是关节软骨层。
+surface_costovertebral_01_L_rib_01_L_head,左第1肋骨 · 左第1肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_rib_01_L,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_01_L_vertebra_T1_M_head,第1胸椎（T1） · 左第1肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T1_M,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_01_L_rib_01_L_tubercle,左第1肋骨 · 左第1肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_rib_01_L,肋结节—同序胸椎横突关节面；第11、12肋不生成此项。
+surface_costovertebral_01_L_vertebra_T1_M_tubercle,第1胸椎（T1） · 左第1肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T1_M,肋结节—同序胸椎横突关节面；第11、12肋不生成此项。
+costal_cartilage_1_L,左第1肋软骨,胸廓,costal_cartilage,1,individual,local_candidate_mesh,Costal cartilage of first rib.l; left first costal cartilage,bone_rib_01_L; bone_sternum_M,肋软骨本体；肋软骨连接与胸肋/软骨间连接分别登记；第1胸肋为软骨结合。
+junction_sternocostal_01_L,左第1胸肋连接界面,胸廓,joint_interface_review,1,interface_to_review,no_exact_mesh_mapping,,bone_rib_01_L; bone_sternum_M,第1胸肋不套用普通滑膜关节；第8—10肋软骨弓连接及变异需分别核对。
+surface_costovertebral_02_L_rib_02_L_head,左第2肋骨 · 左第2肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_rib_02_L,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_02_L_vertebra_T2_M_head,第2胸椎（T2） · 左第2肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T2_M,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_02_L_vertebra_T1_M_head,第1胸椎（T1） · 左第2肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T1_M,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_02_L_rib_02_L_tubercle,左第2肋骨 · 左第2肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_rib_02_L,肋结节—同序胸椎横突关节面；第11、12肋不生成此项。
+surface_costovertebral_02_L_vertebra_T2_M_tubercle,第2胸椎（T2） · 左第2肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T2_M,肋结节—同序胸椎横突关节面；第11、12肋不生成此项。
+costal_cartilage_2_L,左第2肋软骨,胸廓,costal_cartilage,1,individual,local_candidate_mesh,Costal cartilage of second rib.l; left second costal cartilage,bone_rib_02_L; bone_sternum_M,肋软骨本体；肋软骨连接与胸肋/软骨间连接分别登记；第1胸肋为软骨结合。
+junction_sternocostal_02_L,左第2胸肋连接界面,胸廓,joint_interface_review,1,interface_to_review,no_exact_mesh_mapping,,bone_rib_02_L; bone_sternum_M,第1胸肋不套用普通滑膜关节；第8—10肋软骨弓连接及变异需分别核对。
+surface_costovertebral_03_L_rib_03_L_head,左第3肋骨 · 左第3肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_rib_03_L,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_03_L_vertebra_T3_M_head,第3胸椎（T3） · 左第3肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T3_M,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_03_L_vertebra_T2_M_head,第2胸椎（T2） · 左第3肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T2_M,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_03_L_rib_03_L_tubercle,左第3肋骨 · 左第3肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_rib_03_L,肋结节—同序胸椎横突关节面；第11、12肋不生成此项。
+surface_costovertebral_03_L_vertebra_T3_M_tubercle,第3胸椎（T3） · 左第3肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T3_M,肋结节—同序胸椎横突关节面；第11、12肋不生成此项。
+costal_cartilage_3_L,左第3肋软骨,胸廓,costal_cartilage,1,individual,local_candidate_mesh,Costal cartilage of third rib.l; left third costal cartilage,bone_rib_03_L; bone_sternum_M,肋软骨本体；肋软骨连接与胸肋/软骨间连接分别登记；第1胸肋为软骨结合。
+junction_sternocostal_03_L,左第3胸肋连接界面,胸廓,joint_interface_review,1,interface_to_review,no_exact_mesh_mapping,,bone_rib_03_L; bone_sternum_M,第1胸肋不套用普通滑膜关节；第8—10肋软骨弓连接及变异需分别核对。
+surface_costovertebral_04_L_rib_04_L_head,左第4肋骨 · 左第4肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_rib_04_L,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_04_L_vertebra_T4_M_head,第4胸椎（T4） · 左第4肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T4_M,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_04_L_vertebra_T3_M_head,第3胸椎（T3） · 左第4肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T3_M,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_04_L_rib_04_L_tubercle,左第4肋骨 · 左第4肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_rib_04_L,肋结节—同序胸椎横突关节面；第11、12肋不生成此项。
+surface_costovertebral_04_L_vertebra_T4_M_tubercle,第4胸椎（T4） · 左第4肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T4_M,肋结节—同序胸椎横突关节面；第11、12肋不生成此项。
+costal_cartilage_4_L,左第4肋软骨,胸廓,costal_cartilage,1,individual,local_candidate_mesh,Costal cartilage of fourth rib.l; left fourth costal cartilage,bone_rib_04_L; bone_sternum_M,肋软骨本体；肋软骨连接与胸肋/软骨间连接分别登记；第1胸肋为软骨结合。
+junction_sternocostal_04_L,左第4胸肋连接界面,胸廓,joint_interface_review,1,interface_to_review,no_exact_mesh_mapping,,bone_rib_04_L; bone_sternum_M,第1胸肋不套用普通滑膜关节；第8—10肋软骨弓连接及变异需分别核对。
+surface_costovertebral_05_L_rib_05_L_head,左第5肋骨 · 左第5肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_rib_05_L,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_05_L_vertebra_T5_M_head,第5胸椎（T5） · 左第5肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T5_M,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_05_L_vertebra_T4_M_head,第4胸椎（T4） · 左第5肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T4_M,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_05_L_rib_05_L_tubercle,左第5肋骨 · 左第5肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_rib_05_L,肋结节—同序胸椎横突关节面；第11、12肋不生成此项。
+surface_costovertebral_05_L_vertebra_T5_M_tubercle,第5胸椎（T5） · 左第5肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T5_M,肋结节—同序胸椎横突关节面；第11、12肋不生成此项。
+costal_cartilage_5_L,左第5肋软骨,胸廓,costal_cartilage,1,individual,local_candidate_mesh,Costal cartilage of fifth rib.l; left fifth costal cartilage,bone_rib_05_L; bone_sternum_M,肋软骨本体；肋软骨连接与胸肋/软骨间连接分别登记；第1胸肋为软骨结合。
+junction_sternocostal_05_L,左第5胸肋连接界面,胸廓,joint_interface_review,1,interface_to_review,no_exact_mesh_mapping,,bone_rib_05_L; bone_sternum_M,第1胸肋不套用普通滑膜关节；第8—10肋软骨弓连接及变异需分别核对。
+surface_costovertebral_06_L_rib_06_L_head,左第6肋骨 · 左第6肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_rib_06_L,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_06_L_vertebra_T6_M_head,第6胸椎（T6） · 左第6肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T6_M,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_06_L_vertebra_T5_M_head,第5胸椎（T5） · 左第6肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T5_M,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_06_L_rib_06_L_tubercle,左第6肋骨 · 左第6肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_rib_06_L,肋结节—同序胸椎横突关节面；第11、12肋不生成此项。
+surface_costovertebral_06_L_vertebra_T6_M_tubercle,第6胸椎（T6） · 左第6肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T6_M,肋结节—同序胸椎横突关节面；第11、12肋不生成此项。
+costal_cartilage_6_L,左第6肋软骨,胸廓,costal_cartilage,1,individual,local_candidate_mesh,Costal cartilage of sixth rib.l; left sixth costal cartilage,bone_rib_06_L; bone_sternum_M,肋软骨本体；肋软骨连接与胸肋/软骨间连接分别登记；第1胸肋为软骨结合。
+junction_sternocostal_06_L,左第6胸肋连接界面,胸廓,joint_interface_review,1,interface_to_review,no_exact_mesh_mapping,,bone_rib_06_L; bone_sternum_M,第1胸肋不套用普通滑膜关节；第8—10肋软骨弓连接及变异需分别核对。
+surface_costovertebral_07_L_rib_07_L_head,左第7肋骨 · 左第7肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_rib_07_L,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_07_L_vertebra_T7_M_head,第7胸椎（T7） · 左第7肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T7_M,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_07_L_vertebra_T6_M_head,第6胸椎（T6） · 左第7肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T6_M,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_07_L_rib_07_L_tubercle,左第7肋骨 · 左第7肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_rib_07_L,肋结节—同序胸椎横突关节面；第11、12肋不生成此项。
+surface_costovertebral_07_L_vertebra_T7_M_tubercle,第7胸椎（T7） · 左第7肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T7_M,肋结节—同序胸椎横突关节面；第11、12肋不生成此项。
+costal_cartilage_7_L,左第7肋软骨,胸廓,costal_cartilage,1,individual,local_candidate_mesh,Costal cartilage of seventh rib.l; left seventh costal cartilage,bone_rib_07_L; bone_sternum_M,肋软骨本体；肋软骨连接与胸肋/软骨间连接分别登记；第1胸肋为软骨结合。
+junction_sternocostal_07_L,左第7胸肋连接界面,胸廓,joint_interface_review,1,interface_to_review,no_exact_mesh_mapping,,bone_rib_07_L; bone_sternum_M,第1胸肋不套用普通滑膜关节；第8—10肋软骨弓连接及变异需分别核对。
+surface_costovertebral_08_L_rib_08_L_head,左第8肋骨 · 左第8肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_rib_08_L,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_08_L_vertebra_T8_M_head,第8胸椎（T8） · 左第8肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T8_M,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_08_L_vertebra_T7_M_head,第7胸椎（T7） · 左第8肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T7_M,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_08_L_rib_08_L_tubercle,左第8肋骨 · 左第8肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_rib_08_L,肋结节—同序胸椎横突关节面；第11、12肋不生成此项。
+surface_costovertebral_08_L_vertebra_T8_M_tubercle,第8胸椎（T8） · 左第8肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T8_M,肋结节—同序胸椎横突关节面；第11、12肋不生成此项。
+costal_cartilage_8_L,左第8肋软骨,胸廓,costal_cartilage,1,individual,local_candidate_mesh,Costal cartilage of eighth rib.l,bone_rib_08_L; bone_rib_07_L,肋软骨本体；肋软骨连接与胸肋/软骨间连接分别登记；第1胸肋为软骨结合。
+junction_costal_arch_08_L,左第8肋软骨弓连接界面,胸廓,joint_interface_review,1,interface_to_review,no_exact_mesh_mapping,,bone_rib_08_L; bone_rib_07_L,第1胸肋不套用普通滑膜关节；第8—10肋软骨弓连接及变异需分别核对。
+surface_costovertebral_09_L_rib_09_L_head,左第9肋骨 · 左第9肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_rib_09_L,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_09_L_vertebra_T9_M_head,第9胸椎（T9） · 左第9肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T9_M,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_09_L_vertebra_T8_M_head,第8胸椎（T8） · 左第9肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T8_M,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_09_L_rib_09_L_tubercle,左第9肋骨 · 左第9肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_rib_09_L,肋结节—同序胸椎横突关节面；第11、12肋不生成此项。
+surface_costovertebral_09_L_vertebra_T9_M_tubercle,第9胸椎（T9） · 左第9肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T9_M,肋结节—同序胸椎横突关节面；第11、12肋不生成此项。
+costal_cartilage_9_L,左第9肋软骨,胸廓,costal_cartilage,1,individual,local_candidate_mesh,Costal cartilage of ninth rib.l,bone_rib_09_L; bone_rib_08_L,肋软骨本体；肋软骨连接与胸肋/软骨间连接分别登记；第1胸肋为软骨结合。
+junction_costal_arch_09_L,左第9肋软骨弓连接界面,胸廓,joint_interface_review,1,interface_to_review,no_exact_mesh_mapping,,bone_rib_09_L; bone_rib_08_L,第1胸肋不套用普通滑膜关节；第8—10肋软骨弓连接及变异需分别核对。
+surface_costovertebral_10_L_rib_10_L_head,左第10肋骨 · 左第10肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_rib_10_L,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_10_L_vertebra_T10_M_head,第10胸椎（T10） · 左第10肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T10_M,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_10_L_rib_10_L_tubercle,左第10肋骨 · 左第10肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_rib_10_L,肋结节—同序胸椎横突关节面；第11、12肋不生成此项。
+surface_costovertebral_10_L_vertebra_T10_M_tubercle,第10胸椎（T10） · 左第10肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T10_M,肋结节—同序胸椎横突关节面；第11、12肋不生成此项。
+costal_cartilage_10_L,左第10肋软骨,胸廓,costal_cartilage,1,individual,local_candidate_mesh,Costal cartilage of tenth rib.l,bone_rib_10_L; bone_rib_09_L,肋软骨本体；肋软骨连接与胸肋/软骨间连接分别登记；第1胸肋为软骨结合。
+junction_costal_arch_10_L,左第10肋软骨弓连接界面,胸廓,joint_interface_review,1,interface_to_review,no_exact_mesh_mapping,,bone_rib_10_L; bone_rib_09_L,第1胸肋不套用普通滑膜关节；第8—10肋软骨弓连接及变异需分别核对。
+surface_costovertebral_11_L_rib_11_L_head,左第11肋骨 · 左第11肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_rib_11_L,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_11_L_vertebra_T11_M_head,第11胸椎（T11） · 左第11肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T11_M,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_12_L_rib_12_L_head,左第12肋骨 · 左第12肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_rib_12_L,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_12_L_vertebra_T12_M_head,第12胸椎（T12） · 左第12肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T12_M,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_sternoclavicular_L_sternum_M,胸骨 · 左胸锁关节覆盖区,肩带,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_sternum_M,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_sternoclavicular_L_clavicle_L,左锁骨 · 左胸锁关节覆盖区,肩带,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_clavicle_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_acromioclavicular_L_clavicle_L,左锁骨 · 左肩锁关节覆盖区,肩带,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_clavicle_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_acromioclavicular_L_scapula_L,左肩胛骨 · 左肩锁关节覆盖区,肩带,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_scapula_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_glenohumeral_L_scapula_L,左肩胛骨 · 左盂肱关节覆盖区,肩带,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_scapula_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_glenohumeral_L_humerus_L,左肱骨 · 左盂肱关节覆盖区,肩带,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_humerus_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_humeroulnar_L_humerus_L,左肱骨 · 左肱尺关节覆盖区,肘与前臂,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_humerus_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_humeroulnar_L_ulna_L,左尺骨 · 左肱尺关节覆盖区,肘与前臂,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_ulna_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_humeroradial_L_humerus_L,左肱骨 · 左肱桡关节覆盖区,肘与前臂,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_humerus_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_humeroradial_L_radius_L,左桡骨 · 左肱桡关节覆盖区,肘与前臂,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_radius_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_proximal_radioulnar_L_radius_L,左桡骨 · 左近侧桡尺关节覆盖区,肘与前臂,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_radius_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_proximal_radioulnar_L_ulna_L,左尺骨 · 左近侧桡尺关节覆盖区,肘与前臂,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_ulna_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_distal_radioulnar_L_radius_L,左桡骨 · 左远侧桡尺关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_radius_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_distal_radioulnar_L_ulna_L,左尺骨 · 左远侧桡尺关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_ulna_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+fibrous_forearm_interosseous_L,左前臂骨间连接纤维连接,肘与前臂,fibrous_connection,2,individual,no_exact_mesh_mapping,,bone_radius_L; bone_ulna_L,前臂骨间膜；不是关节软骨层。
+surface_radiocarpal_L_radius_L,左桡骨 · 左桡腕关节组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_radius_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_radiocarpal_L_scaphoid_L,左手舟骨 · 左桡腕关节组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_scaphoid_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_radiocarpal_L_lunate_L,左月骨 · 左桡腕关节组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_lunate_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_radiocarpal_L_triquetrum_L,左三角骨 · 左桡腕关节组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_triquetrum_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_intercarpal_L_scaphoid_L_to_lunate_L,左手舟骨 · 左腕骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_scaphoid_L,对应骨：左月骨；需按源模型核对骨对关节面与连续性。
+surface_intercarpal_L_lunate_L_to_scaphoid_L,左月骨 · 左腕骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_lunate_L,对应骨：左手舟骨；需按源模型核对骨对关节面与连续性。
+surface_intercarpal_L_lunate_L_to_triquetrum_L,左月骨 · 左腕骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_lunate_L,对应骨：左三角骨；需按源模型核对骨对关节面与连续性。
+surface_intercarpal_L_triquetrum_L_to_lunate_L,左三角骨 · 左腕骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_triquetrum_L,对应骨：左月骨；需按源模型核对骨对关节面与连续性。
+surface_intercarpal_L_triquetrum_L_to_pisiform_L,左三角骨 · 左腕骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_triquetrum_L,对应骨：左豌豆骨；需按源模型核对骨对关节面与连续性。
+surface_intercarpal_L_pisiform_L_to_triquetrum_L,左豌豆骨 · 左腕骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_pisiform_L,对应骨：左三角骨；需按源模型核对骨对关节面与连续性。
+surface_intercarpal_L_trapezium_L_to_trapezoid_L,左大多角骨 · 左腕骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_trapezium_L,对应骨：左小多角骨；需按源模型核对骨对关节面与连续性。
+surface_intercarpal_L_trapezoid_L_to_trapezium_L,左小多角骨 · 左腕骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_trapezoid_L,对应骨：左大多角骨；需按源模型核对骨对关节面与连续性。
+surface_intercarpal_L_trapezoid_L_to_capitate_L,左小多角骨 · 左腕骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_trapezoid_L,对应骨：左头状骨；需按源模型核对骨对关节面与连续性。
+surface_intercarpal_L_capitate_L_to_trapezoid_L,左头状骨 · 左腕骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_capitate_L,对应骨：左小多角骨；需按源模型核对骨对关节面与连续性。
+surface_intercarpal_L_capitate_L_to_hamate_L,左头状骨 · 左腕骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_capitate_L,对应骨：左钩骨；需按源模型核对骨对关节面与连续性。
+surface_intercarpal_L_hamate_L_to_capitate_L,左钩骨 · 左腕骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hamate_L,对应骨：左头状骨；需按源模型核对骨对关节面与连续性。
+surface_intercarpal_L_scaphoid_L_to_trapezium_L,左手舟骨 · 左腕骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_scaphoid_L,对应骨：左大多角骨；需按源模型核对骨对关节面与连续性。
+surface_intercarpal_L_trapezium_L_to_scaphoid_L,左大多角骨 · 左腕骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_trapezium_L,对应骨：左手舟骨；需按源模型核对骨对关节面与连续性。
+surface_intercarpal_L_scaphoid_L_to_trapezoid_L,左手舟骨 · 左腕骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_scaphoid_L,对应骨：左小多角骨；需按源模型核对骨对关节面与连续性。
+surface_intercarpal_L_trapezoid_L_to_scaphoid_L,左小多角骨 · 左腕骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_trapezoid_L,对应骨：左手舟骨；需按源模型核对骨对关节面与连续性。
+surface_intercarpal_L_scaphoid_L_to_capitate_L,左手舟骨 · 左腕骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_scaphoid_L,对应骨：左头状骨；需按源模型核对骨对关节面与连续性。
+surface_intercarpal_L_capitate_L_to_scaphoid_L,左头状骨 · 左腕骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_capitate_L,对应骨：左手舟骨；需按源模型核对骨对关节面与连续性。
+surface_intercarpal_L_lunate_L_to_capitate_L,左月骨 · 左腕骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_lunate_L,对应骨：左头状骨；需按源模型核对骨对关节面与连续性。
+surface_intercarpal_L_capitate_L_to_lunate_L,左头状骨 · 左腕骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_capitate_L,对应骨：左月骨；需按源模型核对骨对关节面与连续性。
+surface_intercarpal_L_lunate_L_to_hamate_L,左月骨 · 左腕骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_lunate_L,对应骨：左钩骨；需按源模型核对骨对关节面与连续性。
+surface_intercarpal_L_hamate_L_to_lunate_L,左钩骨 · 左腕骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hamate_L,对应骨：左月骨；需按源模型核对骨对关节面与连续性。
+surface_intercarpal_L_triquetrum_L_to_hamate_L,左三角骨 · 左腕骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_triquetrum_L,对应骨：左钩骨；需按源模型核对骨对关节面与连续性。
+surface_intercarpal_L_hamate_L_to_triquetrum_L,左钩骨 · 左腕骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hamate_L,对应骨：左三角骨；需按源模型核对骨对关节面与连续性。
+surface_cmc_1_L_metacarpal_1_L,左第1掌骨 · 左第1腕掌连接覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metacarpal_1_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_cmc_1_L_trapezium_L,左大多角骨 · 左第1腕掌连接覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_trapezium_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_mcp_1_L_metacarpal_1_L,左第1掌骨 · 左第1掌指关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metacarpal_1_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_mcp_1_L_hand_phalanx_1_proximal_L,左拇指近节指骨 · 左第1掌指关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hand_phalanx_1_proximal_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_hand_ip_1_proximal_distal_L_hand_phalanx_1_proximal_L,左拇指近节指骨 · 左第1指近节—远节指间关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hand_phalanx_1_proximal_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_hand_ip_1_proximal_distal_L_hand_phalanx_1_distal_L,左拇指远节指骨 · 左第1指近节—远节指间关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hand_phalanx_1_distal_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_cmc_2_L_metacarpal_2_L,左第2掌骨 · 左第2腕掌连接覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metacarpal_2_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_cmc_2_L_trapezium_L,左大多角骨 · 左第2腕掌连接覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_trapezium_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_cmc_2_L_trapezoid_L,左小多角骨 · 左第2腕掌连接覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_trapezoid_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_cmc_2_L_capitate_L,左头状骨 · 左第2腕掌连接覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_capitate_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_mcp_2_L_metacarpal_2_L,左第2掌骨 · 左第2掌指关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metacarpal_2_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_mcp_2_L_hand_phalanx_2_proximal_L,左示指近节指骨 · 左第2掌指关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hand_phalanx_2_proximal_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_hand_ip_2_proximal_middle_L_hand_phalanx_2_proximal_L,左示指近节指骨 · 左第2指近节—中节指间关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hand_phalanx_2_proximal_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_hand_ip_2_proximal_middle_L_hand_phalanx_2_middle_L,左示指中节指骨 · 左第2指近节—中节指间关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hand_phalanx_2_middle_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_hand_ip_2_middle_distal_L_hand_phalanx_2_middle_L,左示指中节指骨 · 左第2指中节—远节指间关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hand_phalanx_2_middle_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_hand_ip_2_middle_distal_L_hand_phalanx_2_distal_L,左示指远节指骨 · 左第2指中节—远节指间关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hand_phalanx_2_distal_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_cmc_3_L_metacarpal_3_L,左第3掌骨 · 左第3腕掌连接覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metacarpal_3_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_cmc_3_L_capitate_L,左头状骨 · 左第3腕掌连接覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_capitate_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_mcp_3_L_metacarpal_3_L,左第3掌骨 · 左第3掌指关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metacarpal_3_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_mcp_3_L_hand_phalanx_3_proximal_L,左中指近节指骨 · 左第3掌指关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hand_phalanx_3_proximal_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_hand_ip_3_proximal_middle_L_hand_phalanx_3_proximal_L,左中指近节指骨 · 左第3指近节—中节指间关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hand_phalanx_3_proximal_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_hand_ip_3_proximal_middle_L_hand_phalanx_3_middle_L,左中指中节指骨 · 左第3指近节—中节指间关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hand_phalanx_3_middle_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_hand_ip_3_middle_distal_L_hand_phalanx_3_middle_L,左中指中节指骨 · 左第3指中节—远节指间关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hand_phalanx_3_middle_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_hand_ip_3_middle_distal_L_hand_phalanx_3_distal_L,左中指远节指骨 · 左第3指中节—远节指间关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hand_phalanx_3_distal_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_cmc_4_L_metacarpal_4_L,左第4掌骨 · 左第4腕掌连接覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metacarpal_4_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_cmc_4_L_capitate_L,左头状骨 · 左第4腕掌连接覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_capitate_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_cmc_4_L_hamate_L,左钩骨 · 左第4腕掌连接覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hamate_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_mcp_4_L_metacarpal_4_L,左第4掌骨 · 左第4掌指关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metacarpal_4_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_mcp_4_L_hand_phalanx_4_proximal_L,左环指近节指骨 · 左第4掌指关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hand_phalanx_4_proximal_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_hand_ip_4_proximal_middle_L_hand_phalanx_4_proximal_L,左环指近节指骨 · 左第4指近节—中节指间关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hand_phalanx_4_proximal_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_hand_ip_4_proximal_middle_L_hand_phalanx_4_middle_L,左环指中节指骨 · 左第4指近节—中节指间关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hand_phalanx_4_middle_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_hand_ip_4_middle_distal_L_hand_phalanx_4_middle_L,左环指中节指骨 · 左第4指中节—远节指间关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hand_phalanx_4_middle_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_hand_ip_4_middle_distal_L_hand_phalanx_4_distal_L,左环指远节指骨 · 左第4指中节—远节指间关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hand_phalanx_4_distal_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_cmc_5_L_metacarpal_5_L,左第5掌骨 · 左第5腕掌连接覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metacarpal_5_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_cmc_5_L_hamate_L,左钩骨 · 左第5腕掌连接覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hamate_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_mcp_5_L_metacarpal_5_L,左第5掌骨 · 左第5掌指关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metacarpal_5_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_mcp_5_L_hand_phalanx_5_proximal_L,左小指近节指骨 · 左第5掌指关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hand_phalanx_5_proximal_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_hand_ip_5_proximal_middle_L_hand_phalanx_5_proximal_L,左小指近节指骨 · 左第5指近节—中节指间关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hand_phalanx_5_proximal_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_hand_ip_5_proximal_middle_L_hand_phalanx_5_middle_L,左小指中节指骨 · 左第5指近节—中节指间关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hand_phalanx_5_middle_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_hand_ip_5_middle_distal_L_hand_phalanx_5_middle_L,左小指中节指骨 · 左第5指中节—远节指间关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hand_phalanx_5_middle_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_hand_ip_5_middle_distal_L_hand_phalanx_5_distal_L,左小指远节指骨 · 左第5指中节—远节指间关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hand_phalanx_5_distal_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_intermetacarpal_L_metacarpal_2_L_to_metacarpal_3_L,左第2掌骨 · 左掌骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metacarpal_2_L,对应骨：左第3掌骨；需按源模型核对骨对关节面与连续性。
+surface_intermetacarpal_L_metacarpal_3_L_to_metacarpal_2_L,左第3掌骨 · 左掌骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metacarpal_3_L,对应骨：左第2掌骨；需按源模型核对骨对关节面与连续性。
+surface_intermetacarpal_L_metacarpal_3_L_to_metacarpal_4_L,左第3掌骨 · 左掌骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metacarpal_3_L,对应骨：左第4掌骨；需按源模型核对骨对关节面与连续性。
+surface_intermetacarpal_L_metacarpal_4_L_to_metacarpal_3_L,左第4掌骨 · 左掌骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metacarpal_4_L,对应骨：左第3掌骨；需按源模型核对骨对关节面与连续性。
+surface_intermetacarpal_L_metacarpal_4_L_to_metacarpal_5_L,左第4掌骨 · 左掌骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metacarpal_4_L,对应骨：左第5掌骨；需按源模型核对骨对关节面与连续性。
+surface_intermetacarpal_L_metacarpal_5_L_to_metacarpal_4_L,左第5掌骨 · 左掌骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metacarpal_5_L,对应骨：左第4掌骨；需按源模型核对骨对关节面与连续性。
+surface_sacroiliac_L_sacrum_M,骶骨 · 左骶髂关节覆盖区,骨盆与髋,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_sacrum_M,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_sacroiliac_L_hip_L,左髋骨 · 左骶髂关节覆盖区,骨盆与髋,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hip_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_hip_L_hip_L,左髋骨 · 左髋关节覆盖区,骨盆与髋,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hip_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_hip_L_femur_L,左股骨 · 左髋关节覆盖区,骨盆与髋,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_femur_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_tibiofemoral_L_femur_L,左股骨 · 左胫股关节组覆盖区,膝,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_femur_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_tibiofemoral_L_tibia_L,左胫骨 · 左胫股关节组覆盖区,膝,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_tibia_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_patellofemoral_L_femur_L,左股骨 · 左髌股关节覆盖区,膝,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_femur_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_patellofemoral_L_patella_L,左髌骨 · 左髌股关节覆盖区,膝,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_patella_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_proximal_tibiofibular_L_tibia_L,左胫骨 · 左近侧胫腓关节覆盖区,膝,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_tibia_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_proximal_tibiofibular_L_fibula_L,左腓骨 · 左近侧胫腓关节覆盖区,膝,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_fibula_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+fibrous_distal_tibiofibular_L,左远侧胫腓连接纤维连接,踝足,fibrous_connection,2,individual,no_exact_mesh_mapping,,bone_tibia_L; bone_fibula_L,胫腓前后韧带、骨间韧带与小腿骨间膜；不是关节软骨层。
+surface_talocrural_L_tibia_L,左胫骨 · 左距小腿关节组覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_tibia_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_talocrural_L_fibula_L,左腓骨 · 左距小腿关节组覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_fibula_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_talocrural_L_talus_L,左距骨 · 左距小腿关节组覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_talus_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_subtalar_L_talus_L,左距骨 · 左距下关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_talus_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_subtalar_L_calcaneus_L,左跟骨 · 左距下关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_calcaneus_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_talocalcaneonavicular_L_talus_L,左距骨 · 左距跟舟关节组覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_talus_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_talocalcaneonavicular_L_calcaneus_L,左跟骨 · 左距跟舟关节组覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_calcaneus_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_talocalcaneonavicular_L_navicular_L,左足舟骨 · 左距跟舟关节组覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_navicular_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_calcaneocuboid_L_calcaneus_L,左跟骨 · 左跟骰关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_calcaneus_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_calcaneocuboid_L_cuboid_L,左骰骨 · 左跟骰关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_cuboid_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_distal_intertarsal_L_navicular_L_to_medial_cuneiform_L,左足舟骨 · 左远侧跗骨间连接组覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_navicular_L,对应骨：左内侧楔骨；需按源模型核对骨对关节面与连续性。
+surface_distal_intertarsal_L_medial_cuneiform_L_to_navicular_L,左内侧楔骨 · 左远侧跗骨间连接组覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_medial_cuneiform_L,对应骨：左足舟骨；需按源模型核对骨对关节面与连续性。
+surface_distal_intertarsal_L_navicular_L_to_intermediate_cuneiform_L,左足舟骨 · 左远侧跗骨间连接组覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_navicular_L,对应骨：左中间楔骨；需按源模型核对骨对关节面与连续性。
+surface_distal_intertarsal_L_intermediate_cuneiform_L_to_navicular_L,左中间楔骨 · 左远侧跗骨间连接组覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_intermediate_cuneiform_L,对应骨：左足舟骨；需按源模型核对骨对关节面与连续性。
+surface_distal_intertarsal_L_navicular_L_to_lateral_cuneiform_L,左足舟骨 · 左远侧跗骨间连接组覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_navicular_L,对应骨：左外侧楔骨；需按源模型核对骨对关节面与连续性。
+surface_distal_intertarsal_L_lateral_cuneiform_L_to_navicular_L,左外侧楔骨 · 左远侧跗骨间连接组覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_lateral_cuneiform_L,对应骨：左足舟骨；需按源模型核对骨对关节面与连续性。
+surface_distal_intertarsal_L_medial_cuneiform_L_to_intermediate_cuneiform_L,左内侧楔骨 · 左远侧跗骨间连接组覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_medial_cuneiform_L,对应骨：左中间楔骨；需按源模型核对骨对关节面与连续性。
+surface_distal_intertarsal_L_intermediate_cuneiform_L_to_medial_cuneiform_L,左中间楔骨 · 左远侧跗骨间连接组覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_intermediate_cuneiform_L,对应骨：左内侧楔骨；需按源模型核对骨对关节面与连续性。
+surface_distal_intertarsal_L_intermediate_cuneiform_L_to_lateral_cuneiform_L,左中间楔骨 · 左远侧跗骨间连接组覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_intermediate_cuneiform_L,对应骨：左外侧楔骨；需按源模型核对骨对关节面与连续性。
+surface_distal_intertarsal_L_lateral_cuneiform_L_to_intermediate_cuneiform_L,左外侧楔骨 · 左远侧跗骨间连接组覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_lateral_cuneiform_L,对应骨：左中间楔骨；需按源模型核对骨对关节面与连续性。
+surface_distal_intertarsal_L_lateral_cuneiform_L_to_cuboid_L,左外侧楔骨 · 左远侧跗骨间连接组覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_lateral_cuneiform_L,对应骨：左骰骨；需按源模型核对骨对关节面与连续性。
+surface_distal_intertarsal_L_cuboid_L_to_lateral_cuneiform_L,左骰骨 · 左远侧跗骨间连接组覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_cuboid_L,对应骨：左外侧楔骨；需按源模型核对骨对关节面与连续性。
+surface_distal_intertarsal_L_navicular_L_to_cuboid_L,左足舟骨 · 左远侧跗骨间连接组覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_navicular_L,对应骨：左骰骨；逐骨对覆盖区域待核对。舟骰界面及其他变异不得默认存在滑膜关节。
+surface_distal_intertarsal_L_cuboid_L_to_navicular_L,左骰骨 · 左远侧跗骨间连接组覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_cuboid_L,对应骨：左足舟骨；逐骨对覆盖区域待核对。舟骰界面及其他变异不得默认存在滑膜关节。
+surface_tmt_1_L_metatarsal_1_L,左第1跖骨 · 左第1跗跖连接覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metatarsal_1_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_tmt_1_L_medial_cuneiform_L,左内侧楔骨 · 左第1跗跖连接覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_medial_cuneiform_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_mtp_1_L_metatarsal_1_L,左第1跖骨 · 左第1跖趾关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metatarsal_1_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_mtp_1_L_foot_phalanx_1_proximal_L,左拇趾近节趾骨 · 左第1跖趾关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_foot_phalanx_1_proximal_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_foot_ip_1_proximal_distal_L_foot_phalanx_1_proximal_L,左拇趾近节趾骨 · 左第1趾近节—远节趾间关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_foot_phalanx_1_proximal_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_foot_ip_1_proximal_distal_L_foot_phalanx_1_distal_L,左拇趾远节趾骨 · 左第1趾近节—远节趾间关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_foot_phalanx_1_distal_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_tmt_2_L_metatarsal_2_L,左第2跖骨 · 左第2跗跖连接覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metatarsal_2_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_tmt_2_L_medial_cuneiform_L,左内侧楔骨 · 左第2跗跖连接覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_medial_cuneiform_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_tmt_2_L_intermediate_cuneiform_L,左中间楔骨 · 左第2跗跖连接覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_intermediate_cuneiform_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_tmt_2_L_lateral_cuneiform_L,左外侧楔骨 · 左第2跗跖连接覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_lateral_cuneiform_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_mtp_2_L_metatarsal_2_L,左第2跖骨 · 左第2跖趾关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metatarsal_2_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_mtp_2_L_foot_phalanx_2_proximal_L,左第二趾近节趾骨 · 左第2跖趾关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_foot_phalanx_2_proximal_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_foot_ip_2_proximal_middle_L_foot_phalanx_2_proximal_L,左第二趾近节趾骨 · 左第2趾近节—中节趾间关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_foot_phalanx_2_proximal_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_foot_ip_2_proximal_middle_L_foot_phalanx_2_middle_L,左第二趾中节趾骨 · 左第2趾近节—中节趾间关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_foot_phalanx_2_middle_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_foot_ip_2_middle_distal_L_foot_phalanx_2_middle_L,左第二趾中节趾骨 · 左第2趾中节—远节趾间关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_foot_phalanx_2_middle_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_foot_ip_2_middle_distal_L_foot_phalanx_2_distal_L,左第二趾远节趾骨 · 左第2趾中节—远节趾间关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_foot_phalanx_2_distal_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_tmt_3_L_metatarsal_3_L,左第3跖骨 · 左第3跗跖连接覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metatarsal_3_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_tmt_3_L_lateral_cuneiform_L,左外侧楔骨 · 左第3跗跖连接覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_lateral_cuneiform_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_mtp_3_L_metatarsal_3_L,左第3跖骨 · 左第3跖趾关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metatarsal_3_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_mtp_3_L_foot_phalanx_3_proximal_L,左第三趾近节趾骨 · 左第3跖趾关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_foot_phalanx_3_proximal_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_foot_ip_3_proximal_middle_L_foot_phalanx_3_proximal_L,左第三趾近节趾骨 · 左第3趾近节—中节趾间关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_foot_phalanx_3_proximal_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_foot_ip_3_proximal_middle_L_foot_phalanx_3_middle_L,左第三趾中节趾骨 · 左第3趾近节—中节趾间关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_foot_phalanx_3_middle_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_foot_ip_3_middle_distal_L_foot_phalanx_3_middle_L,左第三趾中节趾骨 · 左第3趾中节—远节趾间关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_foot_phalanx_3_middle_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_foot_ip_3_middle_distal_L_foot_phalanx_3_distal_L,左第三趾远节趾骨 · 左第3趾中节—远节趾间关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_foot_phalanx_3_distal_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_tmt_4_L_metatarsal_4_L,左第4跖骨 · 左第4跗跖连接覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metatarsal_4_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_tmt_4_L_cuboid_L,左骰骨 · 左第4跗跖连接覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_cuboid_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_mtp_4_L_metatarsal_4_L,左第4跖骨 · 左第4跖趾关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metatarsal_4_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_mtp_4_L_foot_phalanx_4_proximal_L,左第四趾近节趾骨 · 左第4跖趾关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_foot_phalanx_4_proximal_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_foot_ip_4_proximal_middle_L_foot_phalanx_4_proximal_L,左第四趾近节趾骨 · 左第4趾近节—中节趾间关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_foot_phalanx_4_proximal_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_foot_ip_4_proximal_middle_L_foot_phalanx_4_middle_L,左第四趾中节趾骨 · 左第4趾近节—中节趾间关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_foot_phalanx_4_middle_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_foot_ip_4_middle_distal_L_foot_phalanx_4_middle_L,左第四趾中节趾骨 · 左第4趾中节—远节趾间关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_foot_phalanx_4_middle_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_foot_ip_4_middle_distal_L_foot_phalanx_4_distal_L,左第四趾远节趾骨 · 左第4趾中节—远节趾间关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_foot_phalanx_4_distal_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_tmt_5_L_metatarsal_5_L,左第5跖骨 · 左第5跗跖连接覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metatarsal_5_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_tmt_5_L_cuboid_L,左骰骨 · 左第5跗跖连接覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_cuboid_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_mtp_5_L_metatarsal_5_L,左第5跖骨 · 左第5跖趾关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metatarsal_5_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_mtp_5_L_foot_phalanx_5_proximal_L,左第五趾近节趾骨 · 左第5跖趾关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_foot_phalanx_5_proximal_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_foot_ip_5_proximal_middle_L_foot_phalanx_5_proximal_L,左第五趾近节趾骨 · 左第5趾近节—中节趾间关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_foot_phalanx_5_proximal_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_foot_ip_5_proximal_middle_L_foot_phalanx_5_middle_L,左第五趾中节趾骨 · 左第5趾近节—中节趾间关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_foot_phalanx_5_middle_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_foot_ip_5_middle_distal_L_foot_phalanx_5_middle_L,左第五趾中节趾骨 · 左第5趾中节—远节趾间关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_foot_phalanx_5_middle_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_foot_ip_5_middle_distal_L_foot_phalanx_5_distal_L,左第五趾远节趾骨 · 左第5趾中节—远节趾间关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_foot_phalanx_5_distal_L,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_intermetatarsal_L_metatarsal_2_L_to_metatarsal_3_L,左第2跖骨 · 左跖骨间连接组覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metatarsal_2_L,对应骨：左第3跖骨；需按源模型核对骨对关节面与连续性。
+surface_intermetatarsal_L_metatarsal_3_L_to_metatarsal_2_L,左第3跖骨 · 左跖骨间连接组覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metatarsal_3_L,对应骨：左第2跖骨；需按源模型核对骨对关节面与连续性。
+surface_intermetatarsal_L_metatarsal_3_L_to_metatarsal_4_L,左第3跖骨 · 左跖骨间连接组覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metatarsal_3_L,对应骨：左第4跖骨；需按源模型核对骨对关节面与连续性。
+surface_intermetatarsal_L_metatarsal_4_L_to_metatarsal_3_L,左第4跖骨 · 左跖骨间连接组覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metatarsal_4_L,对应骨：左第3跖骨；需按源模型核对骨对关节面与连续性。
+surface_intermetatarsal_L_metatarsal_4_L_to_metatarsal_5_L,左第4跖骨 · 左跖骨间连接组覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metatarsal_4_L,对应骨：左第5跖骨；需按源模型核对骨对关节面与连续性。
+surface_intermetatarsal_L_metatarsal_5_L_to_metatarsal_4_L,左第5跖骨 · 左跖骨间连接组覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metatarsal_5_L,对应骨：左第4跖骨；需按源模型核对骨对关节面与连续性。
+surface_tmj_R_temporal_R,右颞骨 · 右颞下颌关节覆盖区,头颈与听骨,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_temporal_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_tmj_R_mandible_M,下颌骨 · 右颞下颌关节覆盖区,头颈与听骨,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_mandible_M,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_incudomalleolar_R_malleus_R,右锤骨 · 右锤砧关节覆盖区,头颈与听骨,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_malleus_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_incudomalleolar_R_incus_R,右砧骨 · 右锤砧关节覆盖区,头颈与听骨,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_incus_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_incudostapedial_R_incus_R,右砧骨 · 右砧镫关节覆盖区,头颈与听骨,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_incus_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_incudostapedial_R_stapes_R,右镫骨 · 右砧镫关节覆盖区,头颈与听骨,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_stapes_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+fibrous_stapes_window_R,右镫骨—前庭窗连接纤维连接,头颈与听骨,fibrous_connection,2,individual,no_exact_mesh_mapping,,bone_stapes_R; bone_temporal_R,镫骨环韧带；不是关节软骨层。
+surface_costovertebral_01_R_rib_01_R_head,右第1肋骨 · 右第1肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_rib_01_R,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_01_R_vertebra_T1_M_head,第1胸椎（T1） · 右第1肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T1_M,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_01_R_rib_01_R_tubercle,右第1肋骨 · 右第1肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_rib_01_R,肋结节—同序胸椎横突关节面；第11、12肋不生成此项。
+surface_costovertebral_01_R_vertebra_T1_M_tubercle,第1胸椎（T1） · 右第1肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T1_M,肋结节—同序胸椎横突关节面；第11、12肋不生成此项。
+costal_cartilage_1_R,右第1肋软骨,胸廓,costal_cartilage,1,individual,local_candidate_mesh,Costal cartilage of first rib.r; right first costal cartilage,bone_rib_01_R; bone_sternum_M,肋软骨本体；肋软骨连接与胸肋/软骨间连接分别登记；第1胸肋为软骨结合。
+junction_sternocostal_01_R,右第1胸肋连接界面,胸廓,joint_interface_review,1,interface_to_review,no_exact_mesh_mapping,,bone_rib_01_R; bone_sternum_M,第1胸肋不套用普通滑膜关节；第8—10肋软骨弓连接及变异需分别核对。
+surface_costovertebral_02_R_rib_02_R_head,右第2肋骨 · 右第2肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_rib_02_R,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_02_R_vertebra_T2_M_head,第2胸椎（T2） · 右第2肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T2_M,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_02_R_vertebra_T1_M_head,第1胸椎（T1） · 右第2肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T1_M,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_02_R_rib_02_R_tubercle,右第2肋骨 · 右第2肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_rib_02_R,肋结节—同序胸椎横突关节面；第11、12肋不生成此项。
+surface_costovertebral_02_R_vertebra_T2_M_tubercle,第2胸椎（T2） · 右第2肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T2_M,肋结节—同序胸椎横突关节面；第11、12肋不生成此项。
+costal_cartilage_2_R,右第2肋软骨,胸廓,costal_cartilage,1,individual,local_candidate_mesh,Costal cartilage of second rib.r; right second costal cartilage,bone_rib_02_R; bone_sternum_M,肋软骨本体；肋软骨连接与胸肋/软骨间连接分别登记；第1胸肋为软骨结合。
+junction_sternocostal_02_R,右第2胸肋连接界面,胸廓,joint_interface_review,1,interface_to_review,no_exact_mesh_mapping,,bone_rib_02_R; bone_sternum_M,第1胸肋不套用普通滑膜关节；第8—10肋软骨弓连接及变异需分别核对。
+surface_costovertebral_03_R_rib_03_R_head,右第3肋骨 · 右第3肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_rib_03_R,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_03_R_vertebra_T3_M_head,第3胸椎（T3） · 右第3肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T3_M,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_03_R_vertebra_T2_M_head,第2胸椎（T2） · 右第3肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T2_M,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_03_R_rib_03_R_tubercle,右第3肋骨 · 右第3肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_rib_03_R,肋结节—同序胸椎横突关节面；第11、12肋不生成此项。
+surface_costovertebral_03_R_vertebra_T3_M_tubercle,第3胸椎（T3） · 右第3肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T3_M,肋结节—同序胸椎横突关节面；第11、12肋不生成此项。
+costal_cartilage_3_R,右第3肋软骨,胸廓,costal_cartilage,1,individual,local_candidate_mesh,Costal cartilage of third rib.r; right third costal cartilage,bone_rib_03_R; bone_sternum_M,肋软骨本体；肋软骨连接与胸肋/软骨间连接分别登记；第1胸肋为软骨结合。
+junction_sternocostal_03_R,右第3胸肋连接界面,胸廓,joint_interface_review,1,interface_to_review,no_exact_mesh_mapping,,bone_rib_03_R; bone_sternum_M,第1胸肋不套用普通滑膜关节；第8—10肋软骨弓连接及变异需分别核对。
+surface_costovertebral_04_R_rib_04_R_head,右第4肋骨 · 右第4肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_rib_04_R,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_04_R_vertebra_T4_M_head,第4胸椎（T4） · 右第4肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T4_M,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_04_R_vertebra_T3_M_head,第3胸椎（T3） · 右第4肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T3_M,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_04_R_rib_04_R_tubercle,右第4肋骨 · 右第4肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_rib_04_R,肋结节—同序胸椎横突关节面；第11、12肋不生成此项。
+surface_costovertebral_04_R_vertebra_T4_M_tubercle,第4胸椎（T4） · 右第4肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T4_M,肋结节—同序胸椎横突关节面；第11、12肋不生成此项。
+costal_cartilage_4_R,右第4肋软骨,胸廓,costal_cartilage,1,individual,local_candidate_mesh,Costal cartilage of fourth rib.r; right fourth costal cartilage,bone_rib_04_R; bone_sternum_M,肋软骨本体；肋软骨连接与胸肋/软骨间连接分别登记；第1胸肋为软骨结合。
+junction_sternocostal_04_R,右第4胸肋连接界面,胸廓,joint_interface_review,1,interface_to_review,no_exact_mesh_mapping,,bone_rib_04_R; bone_sternum_M,第1胸肋不套用普通滑膜关节；第8—10肋软骨弓连接及变异需分别核对。
+surface_costovertebral_05_R_rib_05_R_head,右第5肋骨 · 右第5肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_rib_05_R,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_05_R_vertebra_T5_M_head,第5胸椎（T5） · 右第5肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T5_M,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_05_R_vertebra_T4_M_head,第4胸椎（T4） · 右第5肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T4_M,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_05_R_rib_05_R_tubercle,右第5肋骨 · 右第5肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_rib_05_R,肋结节—同序胸椎横突关节面；第11、12肋不生成此项。
+surface_costovertebral_05_R_vertebra_T5_M_tubercle,第5胸椎（T5） · 右第5肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T5_M,肋结节—同序胸椎横突关节面；第11、12肋不生成此项。
+costal_cartilage_5_R,右第5肋软骨,胸廓,costal_cartilage,1,individual,local_candidate_mesh,Costal cartilage of fifth rib.r; right fifth costal cartilage,bone_rib_05_R; bone_sternum_M,肋软骨本体；肋软骨连接与胸肋/软骨间连接分别登记；第1胸肋为软骨结合。
+junction_sternocostal_05_R,右第5胸肋连接界面,胸廓,joint_interface_review,1,interface_to_review,no_exact_mesh_mapping,,bone_rib_05_R; bone_sternum_M,第1胸肋不套用普通滑膜关节；第8—10肋软骨弓连接及变异需分别核对。
+surface_costovertebral_06_R_rib_06_R_head,右第6肋骨 · 右第6肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_rib_06_R,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_06_R_vertebra_T6_M_head,第6胸椎（T6） · 右第6肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T6_M,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_06_R_vertebra_T5_M_head,第5胸椎（T5） · 右第6肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T5_M,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_06_R_rib_06_R_tubercle,右第6肋骨 · 右第6肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_rib_06_R,肋结节—同序胸椎横突关节面；第11、12肋不生成此项。
+surface_costovertebral_06_R_vertebra_T6_M_tubercle,第6胸椎（T6） · 右第6肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T6_M,肋结节—同序胸椎横突关节面；第11、12肋不生成此项。
+costal_cartilage_6_R,右第6肋软骨,胸廓,costal_cartilage,1,individual,local_candidate_mesh,Costal cartilage of sixth rib.r; right sixth costal cartilage,bone_rib_06_R; bone_sternum_M,肋软骨本体；肋软骨连接与胸肋/软骨间连接分别登记；第1胸肋为软骨结合。
+junction_sternocostal_06_R,右第6胸肋连接界面,胸廓,joint_interface_review,1,interface_to_review,no_exact_mesh_mapping,,bone_rib_06_R; bone_sternum_M,第1胸肋不套用普通滑膜关节；第8—10肋软骨弓连接及变异需分别核对。
+surface_costovertebral_07_R_rib_07_R_head,右第7肋骨 · 右第7肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_rib_07_R,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_07_R_vertebra_T7_M_head,第7胸椎（T7） · 右第7肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T7_M,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_07_R_vertebra_T6_M_head,第6胸椎（T6） · 右第7肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T6_M,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_07_R_rib_07_R_tubercle,右第7肋骨 · 右第7肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_rib_07_R,肋结节—同序胸椎横突关节面；第11、12肋不生成此项。
+surface_costovertebral_07_R_vertebra_T7_M_tubercle,第7胸椎（T7） · 右第7肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T7_M,肋结节—同序胸椎横突关节面；第11、12肋不生成此项。
+costal_cartilage_7_R,右第7肋软骨,胸廓,costal_cartilage,1,individual,local_candidate_mesh,Costal cartilage of seventh rib.r; right seventh costal cartilage,bone_rib_07_R; bone_sternum_M,肋软骨本体；肋软骨连接与胸肋/软骨间连接分别登记；第1胸肋为软骨结合。
+junction_sternocostal_07_R,右第7胸肋连接界面,胸廓,joint_interface_review,1,interface_to_review,no_exact_mesh_mapping,,bone_rib_07_R; bone_sternum_M,第1胸肋不套用普通滑膜关节；第8—10肋软骨弓连接及变异需分别核对。
+surface_costovertebral_08_R_rib_08_R_head,右第8肋骨 · 右第8肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_rib_08_R,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_08_R_vertebra_T8_M_head,第8胸椎（T8） · 右第8肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T8_M,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_08_R_vertebra_T7_M_head,第7胸椎（T7） · 右第8肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T7_M,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_08_R_rib_08_R_tubercle,右第8肋骨 · 右第8肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_rib_08_R,肋结节—同序胸椎横突关节面；第11、12肋不生成此项。
+surface_costovertebral_08_R_vertebra_T8_M_tubercle,第8胸椎（T8） · 右第8肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T8_M,肋结节—同序胸椎横突关节面；第11、12肋不生成此项。
+costal_cartilage_8_R,右第8肋软骨,胸廓,costal_cartilage,1,individual,local_candidate_mesh,Costal cartilage of eighth rib.r,bone_rib_08_R; bone_rib_07_R,肋软骨本体；肋软骨连接与胸肋/软骨间连接分别登记；第1胸肋为软骨结合。
+junction_costal_arch_08_R,右第8肋软骨弓连接界面,胸廓,joint_interface_review,1,interface_to_review,no_exact_mesh_mapping,,bone_rib_08_R; bone_rib_07_R,第1胸肋不套用普通滑膜关节；第8—10肋软骨弓连接及变异需分别核对。
+surface_costovertebral_09_R_rib_09_R_head,右第9肋骨 · 右第9肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_rib_09_R,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_09_R_vertebra_T9_M_head,第9胸椎（T9） · 右第9肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T9_M,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_09_R_vertebra_T8_M_head,第8胸椎（T8） · 右第9肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T8_M,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_09_R_rib_09_R_tubercle,右第9肋骨 · 右第9肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_rib_09_R,肋结节—同序胸椎横突关节面；第11、12肋不生成此项。
+surface_costovertebral_09_R_vertebra_T9_M_tubercle,第9胸椎（T9） · 右第9肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T9_M,肋结节—同序胸椎横突关节面；第11、12肋不生成此项。
+costal_cartilage_9_R,右第9肋软骨,胸廓,costal_cartilage,1,individual,local_candidate_mesh,Costal cartilage of ninth rib.r,bone_rib_09_R; bone_rib_08_R,肋软骨本体；肋软骨连接与胸肋/软骨间连接分别登记；第1胸肋为软骨结合。
+junction_costal_arch_09_R,右第9肋软骨弓连接界面,胸廓,joint_interface_review,1,interface_to_review,no_exact_mesh_mapping,,bone_rib_09_R; bone_rib_08_R,第1胸肋不套用普通滑膜关节；第8—10肋软骨弓连接及变异需分别核对。
+surface_costovertebral_10_R_rib_10_R_head,右第10肋骨 · 右第10肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_rib_10_R,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_10_R_vertebra_T10_M_head,第10胸椎（T10） · 右第10肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T10_M,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_10_R_rib_10_R_tubercle,右第10肋骨 · 右第10肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_rib_10_R,肋结节—同序胸椎横突关节面；第11、12肋不生成此项。
+surface_costovertebral_10_R_vertebra_T10_M_tubercle,第10胸椎（T10） · 右第10肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T10_M,肋结节—同序胸椎横突关节面；第11、12肋不生成此项。
+costal_cartilage_10_R,右第10肋软骨,胸廓,costal_cartilage,1,individual,local_candidate_mesh,Costal cartilage of tenth rib.r,bone_rib_10_R; bone_rib_09_R,肋软骨本体；肋软骨连接与胸肋/软骨间连接分别登记；第1胸肋为软骨结合。
+junction_costal_arch_10_R,右第10肋软骨弓连接界面,胸廓,joint_interface_review,1,interface_to_review,no_exact_mesh_mapping,,bone_rib_10_R; bone_rib_09_R,第1胸肋不套用普通滑膜关节；第8—10肋软骨弓连接及变异需分别核对。
+surface_costovertebral_11_R_rib_11_R_head,右第11肋骨 · 右第11肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_rib_11_R,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_11_R_vertebra_T11_M_head,第11胸椎（T11） · 右第11肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T11_M,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_12_R_rib_12_R_head,右第12肋骨 · 右第12肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_rib_12_R,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_costovertebral_12_R_vertebra_T12_M_head,第12胸椎（T12） · 右第12肋椎连接组覆盖区,胸廓,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_vertebra_T12_M,肋头关节覆盖区域；肋头分面及对应上下椎体按模板核对，勿按关联骨个数推定。
+surface_sternoclavicular_R_sternum_M,胸骨 · 右胸锁关节覆盖区,肩带,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_sternum_M,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_sternoclavicular_R_clavicle_R,右锁骨 · 右胸锁关节覆盖区,肩带,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_clavicle_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_acromioclavicular_R_clavicle_R,右锁骨 · 右肩锁关节覆盖区,肩带,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_clavicle_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_acromioclavicular_R_scapula_R,右肩胛骨 · 右肩锁关节覆盖区,肩带,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_scapula_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_glenohumeral_R_scapula_R,右肩胛骨 · 右盂肱关节覆盖区,肩带,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_scapula_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_glenohumeral_R_humerus_R,右肱骨 · 右盂肱关节覆盖区,肩带,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_humerus_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_humeroulnar_R_humerus_R,右肱骨 · 右肱尺关节覆盖区,肘与前臂,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_humerus_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_humeroulnar_R_ulna_R,右尺骨 · 右肱尺关节覆盖区,肘与前臂,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_ulna_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_humeroradial_R_humerus_R,右肱骨 · 右肱桡关节覆盖区,肘与前臂,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_humerus_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_humeroradial_R_radius_R,右桡骨 · 右肱桡关节覆盖区,肘与前臂,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_radius_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_proximal_radioulnar_R_radius_R,右桡骨 · 右近侧桡尺关节覆盖区,肘与前臂,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_radius_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_proximal_radioulnar_R_ulna_R,右尺骨 · 右近侧桡尺关节覆盖区,肘与前臂,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_ulna_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_distal_radioulnar_R_radius_R,右桡骨 · 右远侧桡尺关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_radius_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_distal_radioulnar_R_ulna_R,右尺骨 · 右远侧桡尺关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_ulna_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+fibrous_forearm_interosseous_R,右前臂骨间连接纤维连接,肘与前臂,fibrous_connection,2,individual,no_exact_mesh_mapping,,bone_radius_R; bone_ulna_R,前臂骨间膜；不是关节软骨层。
+surface_radiocarpal_R_radius_R,右桡骨 · 右桡腕关节组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_radius_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_radiocarpal_R_scaphoid_R,右手舟骨 · 右桡腕关节组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_scaphoid_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_radiocarpal_R_lunate_R,右月骨 · 右桡腕关节组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_lunate_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_radiocarpal_R_triquetrum_R,右三角骨 · 右桡腕关节组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_triquetrum_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_intercarpal_R_scaphoid_R_to_lunate_R,右手舟骨 · 右腕骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_scaphoid_R,对应骨：右月骨；需按源模型核对骨对关节面与连续性。
+surface_intercarpal_R_lunate_R_to_scaphoid_R,右月骨 · 右腕骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_lunate_R,对应骨：右手舟骨；需按源模型核对骨对关节面与连续性。
+surface_intercarpal_R_lunate_R_to_triquetrum_R,右月骨 · 右腕骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_lunate_R,对应骨：右三角骨；需按源模型核对骨对关节面与连续性。
+surface_intercarpal_R_triquetrum_R_to_lunate_R,右三角骨 · 右腕骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_triquetrum_R,对应骨：右月骨；需按源模型核对骨对关节面与连续性。
+surface_intercarpal_R_triquetrum_R_to_pisiform_R,右三角骨 · 右腕骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_triquetrum_R,对应骨：右豌豆骨；需按源模型核对骨对关节面与连续性。
+surface_intercarpal_R_pisiform_R_to_triquetrum_R,右豌豆骨 · 右腕骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_pisiform_R,对应骨：右三角骨；需按源模型核对骨对关节面与连续性。
+surface_intercarpal_R_trapezium_R_to_trapezoid_R,右大多角骨 · 右腕骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_trapezium_R,对应骨：右小多角骨；需按源模型核对骨对关节面与连续性。
+surface_intercarpal_R_trapezoid_R_to_trapezium_R,右小多角骨 · 右腕骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_trapezoid_R,对应骨：右大多角骨；需按源模型核对骨对关节面与连续性。
+surface_intercarpal_R_trapezoid_R_to_capitate_R,右小多角骨 · 右腕骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_trapezoid_R,对应骨：右头状骨；需按源模型核对骨对关节面与连续性。
+surface_intercarpal_R_capitate_R_to_trapezoid_R,右头状骨 · 右腕骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_capitate_R,对应骨：右小多角骨；需按源模型核对骨对关节面与连续性。
+surface_intercarpal_R_capitate_R_to_hamate_R,右头状骨 · 右腕骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_capitate_R,对应骨：右钩骨；需按源模型核对骨对关节面与连续性。
+surface_intercarpal_R_hamate_R_to_capitate_R,右钩骨 · 右腕骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hamate_R,对应骨：右头状骨；需按源模型核对骨对关节面与连续性。
+surface_intercarpal_R_scaphoid_R_to_trapezium_R,右手舟骨 · 右腕骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_scaphoid_R,对应骨：右大多角骨；需按源模型核对骨对关节面与连续性。
+surface_intercarpal_R_trapezium_R_to_scaphoid_R,右大多角骨 · 右腕骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_trapezium_R,对应骨：右手舟骨；需按源模型核对骨对关节面与连续性。
+surface_intercarpal_R_scaphoid_R_to_trapezoid_R,右手舟骨 · 右腕骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_scaphoid_R,对应骨：右小多角骨；需按源模型核对骨对关节面与连续性。
+surface_intercarpal_R_trapezoid_R_to_scaphoid_R,右小多角骨 · 右腕骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_trapezoid_R,对应骨：右手舟骨；需按源模型核对骨对关节面与连续性。
+surface_intercarpal_R_scaphoid_R_to_capitate_R,右手舟骨 · 右腕骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_scaphoid_R,对应骨：右头状骨；需按源模型核对骨对关节面与连续性。
+surface_intercarpal_R_capitate_R_to_scaphoid_R,右头状骨 · 右腕骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_capitate_R,对应骨：右手舟骨；需按源模型核对骨对关节面与连续性。
+surface_intercarpal_R_lunate_R_to_capitate_R,右月骨 · 右腕骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_lunate_R,对应骨：右头状骨；需按源模型核对骨对关节面与连续性。
+surface_intercarpal_R_capitate_R_to_lunate_R,右头状骨 · 右腕骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_capitate_R,对应骨：右月骨；需按源模型核对骨对关节面与连续性。
+surface_intercarpal_R_lunate_R_to_hamate_R,右月骨 · 右腕骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_lunate_R,对应骨：右钩骨；需按源模型核对骨对关节面与连续性。
+surface_intercarpal_R_hamate_R_to_lunate_R,右钩骨 · 右腕骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hamate_R,对应骨：右月骨；需按源模型核对骨对关节面与连续性。
+surface_intercarpal_R_triquetrum_R_to_hamate_R,右三角骨 · 右腕骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_triquetrum_R,对应骨：右钩骨；需按源模型核对骨对关节面与连续性。
+surface_intercarpal_R_hamate_R_to_triquetrum_R,右钩骨 · 右腕骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hamate_R,对应骨：右三角骨；需按源模型核对骨对关节面与连续性。
+surface_cmc_1_R_metacarpal_1_R,右第1掌骨 · 右第1腕掌连接覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metacarpal_1_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_cmc_1_R_trapezium_R,右大多角骨 · 右第1腕掌连接覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_trapezium_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_mcp_1_R_metacarpal_1_R,右第1掌骨 · 右第1掌指关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metacarpal_1_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_mcp_1_R_hand_phalanx_1_proximal_R,右拇指近节指骨 · 右第1掌指关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hand_phalanx_1_proximal_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_hand_ip_1_proximal_distal_R_hand_phalanx_1_proximal_R,右拇指近节指骨 · 右第1指近节—远节指间关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hand_phalanx_1_proximal_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_hand_ip_1_proximal_distal_R_hand_phalanx_1_distal_R,右拇指远节指骨 · 右第1指近节—远节指间关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hand_phalanx_1_distal_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_cmc_2_R_metacarpal_2_R,右第2掌骨 · 右第2腕掌连接覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metacarpal_2_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_cmc_2_R_trapezium_R,右大多角骨 · 右第2腕掌连接覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_trapezium_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_cmc_2_R_trapezoid_R,右小多角骨 · 右第2腕掌连接覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_trapezoid_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_cmc_2_R_capitate_R,右头状骨 · 右第2腕掌连接覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_capitate_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_mcp_2_R_metacarpal_2_R,右第2掌骨 · 右第2掌指关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metacarpal_2_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_mcp_2_R_hand_phalanx_2_proximal_R,右示指近节指骨 · 右第2掌指关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hand_phalanx_2_proximal_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_hand_ip_2_proximal_middle_R_hand_phalanx_2_proximal_R,右示指近节指骨 · 右第2指近节—中节指间关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hand_phalanx_2_proximal_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_hand_ip_2_proximal_middle_R_hand_phalanx_2_middle_R,右示指中节指骨 · 右第2指近节—中节指间关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hand_phalanx_2_middle_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_hand_ip_2_middle_distal_R_hand_phalanx_2_middle_R,右示指中节指骨 · 右第2指中节—远节指间关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hand_phalanx_2_middle_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_hand_ip_2_middle_distal_R_hand_phalanx_2_distal_R,右示指远节指骨 · 右第2指中节—远节指间关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hand_phalanx_2_distal_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_cmc_3_R_metacarpal_3_R,右第3掌骨 · 右第3腕掌连接覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metacarpal_3_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_cmc_3_R_capitate_R,右头状骨 · 右第3腕掌连接覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_capitate_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_mcp_3_R_metacarpal_3_R,右第3掌骨 · 右第3掌指关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metacarpal_3_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_mcp_3_R_hand_phalanx_3_proximal_R,右中指近节指骨 · 右第3掌指关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hand_phalanx_3_proximal_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_hand_ip_3_proximal_middle_R_hand_phalanx_3_proximal_R,右中指近节指骨 · 右第3指近节—中节指间关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hand_phalanx_3_proximal_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_hand_ip_3_proximal_middle_R_hand_phalanx_3_middle_R,右中指中节指骨 · 右第3指近节—中节指间关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hand_phalanx_3_middle_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_hand_ip_3_middle_distal_R_hand_phalanx_3_middle_R,右中指中节指骨 · 右第3指中节—远节指间关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hand_phalanx_3_middle_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_hand_ip_3_middle_distal_R_hand_phalanx_3_distal_R,右中指远节指骨 · 右第3指中节—远节指间关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hand_phalanx_3_distal_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_cmc_4_R_metacarpal_4_R,右第4掌骨 · 右第4腕掌连接覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metacarpal_4_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_cmc_4_R_capitate_R,右头状骨 · 右第4腕掌连接覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_capitate_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_cmc_4_R_hamate_R,右钩骨 · 右第4腕掌连接覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hamate_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_mcp_4_R_metacarpal_4_R,右第4掌骨 · 右第4掌指关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metacarpal_4_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_mcp_4_R_hand_phalanx_4_proximal_R,右环指近节指骨 · 右第4掌指关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hand_phalanx_4_proximal_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_hand_ip_4_proximal_middle_R_hand_phalanx_4_proximal_R,右环指近节指骨 · 右第4指近节—中节指间关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hand_phalanx_4_proximal_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_hand_ip_4_proximal_middle_R_hand_phalanx_4_middle_R,右环指中节指骨 · 右第4指近节—中节指间关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hand_phalanx_4_middle_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_hand_ip_4_middle_distal_R_hand_phalanx_4_middle_R,右环指中节指骨 · 右第4指中节—远节指间关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hand_phalanx_4_middle_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_hand_ip_4_middle_distal_R_hand_phalanx_4_distal_R,右环指远节指骨 · 右第4指中节—远节指间关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hand_phalanx_4_distal_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_cmc_5_R_metacarpal_5_R,右第5掌骨 · 右第5腕掌连接覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metacarpal_5_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_cmc_5_R_hamate_R,右钩骨 · 右第5腕掌连接覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hamate_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_mcp_5_R_metacarpal_5_R,右第5掌骨 · 右第5掌指关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metacarpal_5_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_mcp_5_R_hand_phalanx_5_proximal_R,右小指近节指骨 · 右第5掌指关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hand_phalanx_5_proximal_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_hand_ip_5_proximal_middle_R_hand_phalanx_5_proximal_R,右小指近节指骨 · 右第5指近节—中节指间关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hand_phalanx_5_proximal_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_hand_ip_5_proximal_middle_R_hand_phalanx_5_middle_R,右小指中节指骨 · 右第5指近节—中节指间关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hand_phalanx_5_middle_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_hand_ip_5_middle_distal_R_hand_phalanx_5_middle_R,右小指中节指骨 · 右第5指中节—远节指间关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hand_phalanx_5_middle_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_hand_ip_5_middle_distal_R_hand_phalanx_5_distal_R,右小指远节指骨 · 右第5指中节—远节指间关节覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hand_phalanx_5_distal_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_intermetacarpal_R_metacarpal_2_R_to_metacarpal_3_R,右第2掌骨 · 右掌骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metacarpal_2_R,对应骨：右第3掌骨；需按源模型核对骨对关节面与连续性。
+surface_intermetacarpal_R_metacarpal_3_R_to_metacarpal_2_R,右第3掌骨 · 右掌骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metacarpal_3_R,对应骨：右第2掌骨；需按源模型核对骨对关节面与连续性。
+surface_intermetacarpal_R_metacarpal_3_R_to_metacarpal_4_R,右第3掌骨 · 右掌骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metacarpal_3_R,对应骨：右第4掌骨；需按源模型核对骨对关节面与连续性。
+surface_intermetacarpal_R_metacarpal_4_R_to_metacarpal_3_R,右第4掌骨 · 右掌骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metacarpal_4_R,对应骨：右第3掌骨；需按源模型核对骨对关节面与连续性。
+surface_intermetacarpal_R_metacarpal_4_R_to_metacarpal_5_R,右第4掌骨 · 右掌骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metacarpal_4_R,对应骨：右第5掌骨；需按源模型核对骨对关节面与连续性。
+surface_intermetacarpal_R_metacarpal_5_R_to_metacarpal_4_R,右第5掌骨 · 右掌骨间连接组覆盖区,腕手,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metacarpal_5_R,对应骨：右第4掌骨；需按源模型核对骨对关节面与连续性。
+surface_sacroiliac_R_sacrum_M,骶骨 · 右骶髂关节覆盖区,骨盆与髋,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_sacrum_M,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_sacroiliac_R_hip_R,右髋骨 · 右骶髂关节覆盖区,骨盆与髋,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hip_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_hip_R_hip_R,右髋骨 · 右髋关节覆盖区,骨盆与髋,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hip_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_hip_R_femur_R,右股骨 · 右髋关节覆盖区,骨盆与髋,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_femur_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_tibiofemoral_R_femur_R,右股骨 · 右胫股关节组覆盖区,膝,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_femur_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_tibiofemoral_R_tibia_R,右胫骨 · 右胫股关节组覆盖区,膝,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_tibia_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_patellofemoral_R_femur_R,右股骨 · 右髌股关节覆盖区,膝,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_femur_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_patellofemoral_R_patella_R,右髌骨 · 右髌股关节覆盖区,膝,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_patella_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_proximal_tibiofibular_R_tibia_R,右胫骨 · 右近侧胫腓关节覆盖区,膝,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_tibia_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_proximal_tibiofibular_R_fibula_R,右腓骨 · 右近侧胫腓关节覆盖区,膝,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_fibula_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+fibrous_distal_tibiofibular_R,右远侧胫腓连接纤维连接,踝足,fibrous_connection,2,individual,no_exact_mesh_mapping,,bone_tibia_R; bone_fibula_R,胫腓前后韧带、骨间韧带与小腿骨间膜；不是关节软骨层。
+surface_talocrural_R_tibia_R,右胫骨 · 右距小腿关节组覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_tibia_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_talocrural_R_fibula_R,右腓骨 · 右距小腿关节组覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_fibula_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_talocrural_R_talus_R,右距骨 · 右距小腿关节组覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_talus_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_subtalar_R_talus_R,右距骨 · 右距下关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_talus_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_subtalar_R_calcaneus_R,右跟骨 · 右距下关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_calcaneus_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_talocalcaneonavicular_R_talus_R,右距骨 · 右距跟舟关节组覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_talus_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_talocalcaneonavicular_R_calcaneus_R,右跟骨 · 右距跟舟关节组覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_calcaneus_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_talocalcaneonavicular_R_navicular_R,右足舟骨 · 右距跟舟关节组覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_navicular_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_calcaneocuboid_R_calcaneus_R,右跟骨 · 右跟骰关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_calcaneus_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_calcaneocuboid_R_cuboid_R,右骰骨 · 右跟骰关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_cuboid_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_distal_intertarsal_R_navicular_R_to_medial_cuneiform_R,右足舟骨 · 右远侧跗骨间连接组覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_navicular_R,对应骨：右内侧楔骨；需按源模型核对骨对关节面与连续性。
+surface_distal_intertarsal_R_medial_cuneiform_R_to_navicular_R,右内侧楔骨 · 右远侧跗骨间连接组覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_medial_cuneiform_R,对应骨：右足舟骨；需按源模型核对骨对关节面与连续性。
+surface_distal_intertarsal_R_navicular_R_to_intermediate_cuneiform_R,右足舟骨 · 右远侧跗骨间连接组覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_navicular_R,对应骨：右中间楔骨；需按源模型核对骨对关节面与连续性。
+surface_distal_intertarsal_R_intermediate_cuneiform_R_to_navicular_R,右中间楔骨 · 右远侧跗骨间连接组覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_intermediate_cuneiform_R,对应骨：右足舟骨；需按源模型核对骨对关节面与连续性。
+surface_distal_intertarsal_R_navicular_R_to_lateral_cuneiform_R,右足舟骨 · 右远侧跗骨间连接组覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_navicular_R,对应骨：右外侧楔骨；需按源模型核对骨对关节面与连续性。
+surface_distal_intertarsal_R_lateral_cuneiform_R_to_navicular_R,右外侧楔骨 · 右远侧跗骨间连接组覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_lateral_cuneiform_R,对应骨：右足舟骨；需按源模型核对骨对关节面与连续性。
+surface_distal_intertarsal_R_medial_cuneiform_R_to_intermediate_cuneiform_R,右内侧楔骨 · 右远侧跗骨间连接组覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_medial_cuneiform_R,对应骨：右中间楔骨；需按源模型核对骨对关节面与连续性。
+surface_distal_intertarsal_R_intermediate_cuneiform_R_to_medial_cuneiform_R,右中间楔骨 · 右远侧跗骨间连接组覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_intermediate_cuneiform_R,对应骨：右内侧楔骨；需按源模型核对骨对关节面与连续性。
+surface_distal_intertarsal_R_intermediate_cuneiform_R_to_lateral_cuneiform_R,右中间楔骨 · 右远侧跗骨间连接组覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_intermediate_cuneiform_R,对应骨：右外侧楔骨；需按源模型核对骨对关节面与连续性。
+surface_distal_intertarsal_R_lateral_cuneiform_R_to_intermediate_cuneiform_R,右外侧楔骨 · 右远侧跗骨间连接组覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_lateral_cuneiform_R,对应骨：右中间楔骨；需按源模型核对骨对关节面与连续性。
+surface_distal_intertarsal_R_lateral_cuneiform_R_to_cuboid_R,右外侧楔骨 · 右远侧跗骨间连接组覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_lateral_cuneiform_R,对应骨：右骰骨；需按源模型核对骨对关节面与连续性。
+surface_distal_intertarsal_R_cuboid_R_to_lateral_cuneiform_R,右骰骨 · 右远侧跗骨间连接组覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_cuboid_R,对应骨：右外侧楔骨；需按源模型核对骨对关节面与连续性。
+surface_distal_intertarsal_R_navicular_R_to_cuboid_R,右足舟骨 · 右远侧跗骨间连接组覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_navicular_R,对应骨：右骰骨；逐骨对覆盖区域待核对。舟骰界面及其他变异不得默认存在滑膜关节。
+surface_distal_intertarsal_R_cuboid_R_to_navicular_R,右骰骨 · 右远侧跗骨间连接组覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_cuboid_R,对应骨：右足舟骨；逐骨对覆盖区域待核对。舟骰界面及其他变异不得默认存在滑膜关节。
+surface_tmt_1_R_metatarsal_1_R,右第1跖骨 · 右第1跗跖连接覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metatarsal_1_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_tmt_1_R_medial_cuneiform_R,右内侧楔骨 · 右第1跗跖连接覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_medial_cuneiform_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_mtp_1_R_metatarsal_1_R,右第1跖骨 · 右第1跖趾关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metatarsal_1_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_mtp_1_R_foot_phalanx_1_proximal_R,右拇趾近节趾骨 · 右第1跖趾关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_foot_phalanx_1_proximal_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_foot_ip_1_proximal_distal_R_foot_phalanx_1_proximal_R,右拇趾近节趾骨 · 右第1趾近节—远节趾间关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_foot_phalanx_1_proximal_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_foot_ip_1_proximal_distal_R_foot_phalanx_1_distal_R,右拇趾远节趾骨 · 右第1趾近节—远节趾间关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_foot_phalanx_1_distal_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_tmt_2_R_metatarsal_2_R,右第2跖骨 · 右第2跗跖连接覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metatarsal_2_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_tmt_2_R_medial_cuneiform_R,右内侧楔骨 · 右第2跗跖连接覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_medial_cuneiform_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_tmt_2_R_intermediate_cuneiform_R,右中间楔骨 · 右第2跗跖连接覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_intermediate_cuneiform_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_tmt_2_R_lateral_cuneiform_R,右外侧楔骨 · 右第2跗跖连接覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_lateral_cuneiform_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_mtp_2_R_metatarsal_2_R,右第2跖骨 · 右第2跖趾关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metatarsal_2_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_mtp_2_R_foot_phalanx_2_proximal_R,右第二趾近节趾骨 · 右第2跖趾关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_foot_phalanx_2_proximal_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_foot_ip_2_proximal_middle_R_foot_phalanx_2_proximal_R,右第二趾近节趾骨 · 右第2趾近节—中节趾间关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_foot_phalanx_2_proximal_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_foot_ip_2_proximal_middle_R_foot_phalanx_2_middle_R,右第二趾中节趾骨 · 右第2趾近节—中节趾间关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_foot_phalanx_2_middle_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_foot_ip_2_middle_distal_R_foot_phalanx_2_middle_R,右第二趾中节趾骨 · 右第2趾中节—远节趾间关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_foot_phalanx_2_middle_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_foot_ip_2_middle_distal_R_foot_phalanx_2_distal_R,右第二趾远节趾骨 · 右第2趾中节—远节趾间关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_foot_phalanx_2_distal_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_tmt_3_R_metatarsal_3_R,右第3跖骨 · 右第3跗跖连接覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metatarsal_3_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_tmt_3_R_lateral_cuneiform_R,右外侧楔骨 · 右第3跗跖连接覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_lateral_cuneiform_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_mtp_3_R_metatarsal_3_R,右第3跖骨 · 右第3跖趾关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metatarsal_3_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_mtp_3_R_foot_phalanx_3_proximal_R,右第三趾近节趾骨 · 右第3跖趾关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_foot_phalanx_3_proximal_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_foot_ip_3_proximal_middle_R_foot_phalanx_3_proximal_R,右第三趾近节趾骨 · 右第3趾近节—中节趾间关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_foot_phalanx_3_proximal_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_foot_ip_3_proximal_middle_R_foot_phalanx_3_middle_R,右第三趾中节趾骨 · 右第3趾近节—中节趾间关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_foot_phalanx_3_middle_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_foot_ip_3_middle_distal_R_foot_phalanx_3_middle_R,右第三趾中节趾骨 · 右第3趾中节—远节趾间关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_foot_phalanx_3_middle_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_foot_ip_3_middle_distal_R_foot_phalanx_3_distal_R,右第三趾远节趾骨 · 右第3趾中节—远节趾间关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_foot_phalanx_3_distal_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_tmt_4_R_metatarsal_4_R,右第4跖骨 · 右第4跗跖连接覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metatarsal_4_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_tmt_4_R_cuboid_R,右骰骨 · 右第4跗跖连接覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_cuboid_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_mtp_4_R_metatarsal_4_R,右第4跖骨 · 右第4跖趾关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metatarsal_4_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_mtp_4_R_foot_phalanx_4_proximal_R,右第四趾近节趾骨 · 右第4跖趾关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_foot_phalanx_4_proximal_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_foot_ip_4_proximal_middle_R_foot_phalanx_4_proximal_R,右第四趾近节趾骨 · 右第4趾近节—中节趾间关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_foot_phalanx_4_proximal_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_foot_ip_4_proximal_middle_R_foot_phalanx_4_middle_R,右第四趾中节趾骨 · 右第4趾近节—中节趾间关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_foot_phalanx_4_middle_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_foot_ip_4_middle_distal_R_foot_phalanx_4_middle_R,右第四趾中节趾骨 · 右第4趾中节—远节趾间关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_foot_phalanx_4_middle_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_foot_ip_4_middle_distal_R_foot_phalanx_4_distal_R,右第四趾远节趾骨 · 右第4趾中节—远节趾间关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_foot_phalanx_4_distal_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_tmt_5_R_metatarsal_5_R,右第5跖骨 · 右第5跗跖连接覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metatarsal_5_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_tmt_5_R_cuboid_R,右骰骨 · 右第5跗跖连接覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_cuboid_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_mtp_5_R_metatarsal_5_R,右第5跖骨 · 右第5跖趾关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metatarsal_5_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_mtp_5_R_foot_phalanx_5_proximal_R,右第五趾近节趾骨 · 右第5跖趾关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_foot_phalanx_5_proximal_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_foot_ip_5_proximal_middle_R_foot_phalanx_5_proximal_R,右第五趾近节趾骨 · 右第5趾近节—中节趾间关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_foot_phalanx_5_proximal_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_foot_ip_5_proximal_middle_R_foot_phalanx_5_middle_R,右第五趾中节趾骨 · 右第5趾近节—中节趾间关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_foot_phalanx_5_middle_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_foot_ip_5_middle_distal_R_foot_phalanx_5_middle_R,右第五趾中节趾骨 · 右第5趾中节—远节趾间关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_foot_phalanx_5_middle_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_foot_ip_5_middle_distal_R_foot_phalanx_5_distal_R,右第五趾远节趾骨 · 右第5趾中节—远节趾间关节覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_foot_phalanx_5_distal_R,待核对覆盖边界、组织类型与连续性；不以整骨套壳代替。按面登记不等于独立软骨块。
+surface_intermetatarsal_R_metatarsal_2_R_to_metatarsal_3_R,右第2跖骨 · 右跖骨间连接组覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metatarsal_2_R,对应骨：右第3跖骨；需按源模型核对骨对关节面与连续性。
+surface_intermetatarsal_R_metatarsal_3_R_to_metatarsal_2_R,右第3跖骨 · 右跖骨间连接组覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metatarsal_3_R,对应骨：右第2跖骨；需按源模型核对骨对关节面与连续性。
+surface_intermetatarsal_R_metatarsal_3_R_to_metatarsal_4_R,右第3跖骨 · 右跖骨间连接组覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metatarsal_3_R,对应骨：右第4跖骨；需按源模型核对骨对关节面与连续性。
+surface_intermetatarsal_R_metatarsal_4_R_to_metatarsal_3_R,右第4跖骨 · 右跖骨间连接组覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metatarsal_4_R,对应骨：右第3跖骨；需按源模型核对骨对关节面与连续性。
+surface_intermetatarsal_R_metatarsal_4_R_to_metatarsal_5_R,右第4跖骨 · 右跖骨间连接组覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metatarsal_4_R,对应骨：右第5跖骨；需按源模型核对骨对关节面与连续性。
+surface_intermetatarsal_R_metatarsal_5_R_to_metatarsal_4_R,右第5跖骨 · 右跖骨间连接组覆盖区,踝足,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_metatarsal_5_R,对应骨：右第4跖骨；需按源模型核对骨对关节面与连续性。
+pubic_interpubic_disc,耻骨间盘,骨盆与髋,fibrocartilaginous_disc,1,individual,local_candidate_mesh,Interpubic disc,bone_hip_L; bone_hip_R,
+surface_pubic_symphysis_hip_L,左髋骨 · 耻骨联合覆盖区,骨盆与髋,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hip_L,耻骨联合的骨侧软骨覆盖，不按滑膜关节制作。
+surface_pubic_symphysis_hip_R,右髋骨 · 耻骨联合覆盖区,骨盆与髋,articular_surface_covering,1,individual,no_exact_mesh_mapping,,bone_hip_R,耻骨联合的骨侧软骨覆盖，不按滑膜关节制作。
+tmj_disc_L,左颞下颌关节盘,头颈与听骨,articular_disc,1,individual,local_candidate_mesh,Articular disc of temporomandibular joint.l,bone_temporal_L; bone_mandible_M,盘与上下腔关系需核对；覆盖组织不能一律标透明软骨。
+sc_disc_L,左胸锁关节盘,肩带,articular_disc,1,individual,local_candidate_mesh,Articular disc of sternoclavicular joint.l,bone_sternum_M; bone_clavicle_L,先检查厚度与实体性，低面数候选不可直接验收。
+ac_disc_L,左肩锁关节盘候选,肩带,variant_articular_disc,1,individual,local_candidate_mesh,Articular disc of acromioclavicular joint.l,bone_clavicle_L; bone_scapula_L,完整性、退变和个体差异待核对，不默认人人均有完整盘。
+glenoid_labrum_L,左肩关节盂唇,肩带,labrum,1,individual,local_candidate_mesh,Glenoid labrum.l,bone_scapula_L; bone_humerus_L,保留与囊和二头肌长头附着的关系。
+tfcc_disc_L,左腕三角纤维软骨复合体—关节盘,腕手,articular_disc,1,individual,local_candidate_mesh,Articular disc of distal radio-ulnar joint.l,bone_radius_L; bone_ulna_L,仅关节盘，不等同整个 TFCC；韧带、半月板同系物等后续另列。
+acetabular_labrum_L,左髋臼唇,骨盆与髋,labrum,1,individual,local_candidate_mesh,Acetabular labrum.l,bone_hip_L; bone_femur_L,髋臼切迹及横韧带关系后续核对。
+medial_meniscus_L,左膝内侧半月板,膝,meniscus,1,individual,local_candidate_mesh,Medial meniscus.l,bone_femur_L; bone_tibia_L,前后根及囊附着属于后续连接层。
+lateral_meniscus_L,左膝外侧半月板,膝,meniscus,1,individual,local_candidate_mesh,Lateral meniscus.l,bone_femur_L; bone_tibia_L,腘肌腱裂孔等局部关系待核对。
+costal_cartilage_11_L,左第11肋软骨,胸廓,costal_cartilage,1,individual,no_exact_mesh_mapping,,bone_rib_11_L,浮肋前端软骨；未在原有胸肋连接登记中出现，需补入全身层。
+costal_cartilage_12_L,左第12肋软骨,胸廓,costal_cartilage,1,individual,no_exact_mesh_mapping,,bone_rib_12_L,浮肋前端软骨；未在原有胸肋连接登记中出现，需补入全身层。
+tmj_disc_R,右颞下颌关节盘,头颈与听骨,articular_disc,1,individual,local_candidate_mesh,Articular disc of temporomandibular joint.r,bone_temporal_R; bone_mandible_M,盘与上下腔关系需核对；覆盖组织不能一律标透明软骨。
+sc_disc_R,右胸锁关节盘,肩带,articular_disc,1,individual,local_candidate_mesh,Articular disc of sternoclavicular joint.r,bone_sternum_M; bone_clavicle_R,先检查厚度与实体性，低面数候选不可直接验收。
+ac_disc_R,右肩锁关节盘候选,肩带,variant_articular_disc,1,individual,local_candidate_mesh,Articular disc of acromioclavicular joint.r,bone_clavicle_R; bone_scapula_R,完整性、退变和个体差异待核对，不默认人人均有完整盘。
+glenoid_labrum_R,右肩关节盂唇,肩带,labrum,1,individual,local_candidate_mesh,Glenoid labrum.r,bone_scapula_R; bone_humerus_R,保留与囊和二头肌长头附着的关系。
+tfcc_disc_R,右腕三角纤维软骨复合体—关节盘,腕手,articular_disc,1,individual,local_candidate_mesh,Articular disc of distal radio-ulnar joint.r,bone_radius_R; bone_ulna_R,仅关节盘，不等同整个 TFCC；韧带、半月板同系物等后续另列。
+acetabular_labrum_R,右髋臼唇,骨盆与髋,labrum,1,individual,local_candidate_mesh,Acetabular labrum.r,bone_hip_R; bone_femur_R,髋臼切迹及横韧带关系后续核对。
+medial_meniscus_R,右膝内侧半月板,膝,meniscus,1,individual,local_candidate_mesh,Medial meniscus.r,bone_femur_R; bone_tibia_R,前后根及囊附着属于后续连接层。
+lateral_meniscus_R,右膝外侧半月板,膝,meniscus,1,individual,local_candidate_mesh,Lateral meniscus.r,bone_femur_R; bone_tibia_R,腘肌腱裂孔等局部关系待核对。
+costal_cartilage_11_R,右第11肋软骨,胸廓,costal_cartilage,1,individual,no_exact_mesh_mapping,,bone_rib_11_R,浮肋前端软骨；未在原有胸肋连接登记中出现，需补入全身层。
+costal_cartilage_12_R,右第12肋软骨,胸廓,costal_cartilage,1,individual,no_exact_mesh_mapping,,bone_rib_12_R,浮肋前端软骨；未在原有胸肋连接登记中出现，需补入全身层。
+manubriosternal_interface,胸骨柄体连接,胸廓,symphysis_or_fusion,1,individual,no_exact_mesh_mapping,,bone_sternum_M,原模型胸骨已合为单骨语义对象；需要定位内部柄体边界，不能从关节登记缺项推定无结构。
+xiphisternal_interface,剑胸连接,胸廓,synchondrosis_or_fusion,1,individual,no_exact_mesh_mapping,,bone_sternum_M,年龄相关融合状态待核对。
+uncovertebral_C2_C3_L,左C2—C3钩椎区域,颈椎,variant_joint_interface,1,interface_to_review,no_exact_mesh_mapping,,,是否独立滑膜腔及年龄相关形态需文献核对；独立列项，不复制关节突表面。
+uncovertebral_C3_C4_L,左C3—C4钩椎区域,颈椎,variant_joint_interface,1,interface_to_review,no_exact_mesh_mapping,,,是否独立滑膜腔及年龄相关形态需文献核对；独立列项，不复制关节突表面。
+uncovertebral_C4_C5_L,左C4—C5钩椎区域,颈椎,variant_joint_interface,1,interface_to_review,no_exact_mesh_mapping,,,是否独立滑膜腔及年龄相关形态需文献核对；独立列项，不复制关节突表面。
+uncovertebral_C5_C6_L,左C5—C6钩椎区域,颈椎,variant_joint_interface,1,interface_to_review,no_exact_mesh_mapping,,,是否独立滑膜腔及年龄相关形态需文献核对；独立列项，不复制关节突表面。
+uncovertebral_C6_C7_L,左C6—C7钩椎区域,颈椎,variant_joint_interface,1,interface_to_review,no_exact_mesh_mapping,,,是否独立滑膜腔及年龄相关形态需文献核对；独立列项，不复制关节突表面。
+uncovertebral_C2_C3_R,右C2—C3钩椎区域,颈椎,variant_joint_interface,1,interface_to_review,no_exact_mesh_mapping,,,是否独立滑膜腔及年龄相关形态需文献核对；独立列项，不复制关节突表面。
+uncovertebral_C3_C4_R,右C3—C4钩椎区域,颈椎,variant_joint_interface,1,interface_to_review,no_exact_mesh_mapping,,,是否独立滑膜腔及年龄相关形态需文献核对；独立列项，不复制关节突表面。
+uncovertebral_C4_C5_R,右C4—C5钩椎区域,颈椎,variant_joint_interface,1,interface_to_review,no_exact_mesh_mapping,,,是否独立滑膜腔及年龄相关形态需文献核对；独立列项，不复制关节突表面。
+uncovertebral_C5_C6_R,右C5—C6钩椎区域,颈椎,variant_joint_interface,1,interface_to_review,no_exact_mesh_mapping,,,是否独立滑膜腔及年龄相关形态需文献核对；独立列项，不复制关节突表面。
+uncovertebral_C6_C7_R,右C6—C7钩椎区域,颈椎,variant_joint_interface,1,interface_to_review,no_exact_mesh_mapping,,,是否独立滑膜腔及年龄相关形态需文献核对；独立列项，不复制关节突表面。
+capsule_tmj_L,左颞下颌关节囊,头颈与听骨,fibrous_capsule,2,individual,local_candidate_mesh,Articular capsule of temporomandibular joint.l,bone_temporal_L; bone_mandible_M,源坐标候选，附着边界与装配尚待审核。
+capsule_proximal_tibiofibular_L,左近侧胫腓关节囊,膝,fibrous_capsule,2,individual,local_candidate_mesh,Articular capsule of superior tibiofibular joint.l,bone_tibia_L; bone_fibula_L,源坐标候选，附着边界与装配尚待审核。
+capsule_sternoclavicular_L,左胸锁关节囊,肩带,fibrous_capsule,2,individual,local_candidate_mesh,Articular capsule of sternoclavicular joint.l,bone_sternum_M; bone_clavicle_L,源坐标候选，附着边界与装配尚待审核。
+capsule_radiocarpal_L,左桡腕关节囊,腕手,fibrous_capsule,2,individual,local_candidate_mesh,Articular capsule of radiocarpal joint.l,bone_radius_L; bone_scaphoid_L; bone_lunate_L; bone_triquetrum_L,源坐标候选，附着边界与装配尚待审核。
+capsule_tibiofemoral_L,左膝关节囊,膝,fibrous_capsule,2,individual,local_candidate_mesh,Articular capsule of knee joint.l,bone_femur_L; bone_tibia_L; bone_patella_L,源坐标候选，附着边界与装配尚待审核。
+capsule_hip_L,左髋关节囊,骨盆与髋,fibrous_capsule,2,individual,local_candidate_mesh,Articular capsule of hip joint.l,bone_hip_L; bone_femur_L,源坐标候选，附着边界与装配尚待审核。
+capsule_glenohumeral_L,左盂肱关节囊,肩带,fibrous_capsule,2,individual,local_candidate_mesh,Articular capsule of glenohumeral joint.l,bone_scapula_L; bone_humerus_L,源坐标候选，附着边界与装配尚待审核。
+capsule_humeroulnar_L,左肘关节囊,肘与前臂,fibrous_capsule,2,individual,local_candidate_mesh,Articular capsule of elbow joint.l,bone_humerus_L; bone_ulna_L; bone_radius_L,源坐标候选，附着边界与装配尚待审核。
+capsule_acromioclavicular_L,左肩锁关节囊,肩带,fibrous_capsule,2,individual,local_candidate_mesh,Articular capsule of acromioclavicular joint.l,bone_clavicle_L; bone_scapula_L,源坐标候选，附着边界与装配尚待审核。
+capsule_foot_ip_1_proximal_distal_L,左拇趾趾间关节囊,踝足,fibrous_capsule,2,individual,local_candidate_mesh,Articular capsule of interphalangeal joint of great toe.l,bone_foot_phalanx_1_proximal_L; bone_foot_phalanx_1_distal_L,源坐标候选，附着边界与装配尚待审核。
+capsules_hand_proximal_L,左近侧指间关节囊组,腕手,fibrous_capsule,2,source_group_unsegmented,local_candidate_mesh,Articular capsules of proximal interphalangeal joints.l,bone_hand_phalanx_2_proximal_L; bone_hand_phalanx_2_middle_L; bone_hand_phalanx_3_proximal_L; bone_hand_phalanx_3_middle_L; bone_hand_phalanx_4_proximal_L; bone_hand_phalanx_4_middle_L; bone_hand_phalanx_5_proximal_L; bone_hand_phalanx_5_middle_L,源库组合对象尚需分段核对；关联骨不是精确附着足印。
+capsules_hand_distal_L,左远侧指间关节囊组,腕手,fibrous_capsule,2,source_group_unsegmented,local_candidate_mesh,Articular capsules of distal interphalangeal joints.l,bone_hand_phalanx_2_middle_L; bone_hand_phalanx_2_distal_L; bone_hand_phalanx_3_middle_L; bone_hand_phalanx_3_distal_L; bone_hand_phalanx_4_middle_L; bone_hand_phalanx_4_distal_L; bone_hand_phalanx_5_middle_L; bone_hand_phalanx_5_distal_L,源库组合对象尚需分段核对；关联骨不是精确附着足印。
+capsules_mcp_L,左掌指关节囊组,腕手,fibrous_capsule,2,source_group_unsegmented,local_candidate_mesh,Articular capsules of metacarpophalangeal joints.l,bone_metacarpal_1_L; bone_hand_phalanx_1_proximal_L; bone_metacarpal_2_L; bone_hand_phalanx_2_proximal_L; bone_metacarpal_3_L; bone_hand_phalanx_3_proximal_L; bone_metacarpal_4_L; bone_hand_phalanx_4_proximal_L; bone_metacarpal_5_L; bone_hand_phalanx_5_proximal_L,源库组合对象尚需分段核对；关联骨不是精确附着足印。
+capsules_foot_proximal_L,左近侧趾间关节囊组,踝足,fibrous_capsule,2,source_group_unsegmented,local_candidate_mesh,Articular capsules of proximal interphalangeal joints of foot.l,bone_foot_phalanx_2_proximal_L; bone_foot_phalanx_2_middle_L; bone_foot_phalanx_3_proximal_L; bone_foot_phalanx_3_middle_L; bone_foot_phalanx_4_proximal_L; bone_foot_phalanx_4_middle_L; bone_foot_phalanx_5_proximal_L; bone_foot_phalanx_5_middle_L,源库组合对象尚需分段核对；关联骨不是精确附着足印。
+capsules_foot_distal_L,左远侧趾间关节囊组,踝足,fibrous_capsule,2,source_group_unsegmented,local_candidate_mesh,Articular capsules of distal interphalangeal joints of foot.l,bone_foot_phalanx_2_middle_L; bone_foot_phalanx_2_distal_L; bone_foot_phalanx_3_middle_L; bone_foot_phalanx_3_distal_L; bone_foot_phalanx_4_middle_L; bone_foot_phalanx_4_distal_L; bone_foot_phalanx_5_middle_L; bone_foot_phalanx_5_distal_L,源库组合对象尚需分段核对；关联骨不是精确附着足印。
+capsules_mtp_L,左跖趾关节囊组,踝足,fibrous_capsule,2,source_group_unsegmented,local_candidate_mesh,Articular capsules of metatarsophalangeal joints.l,bone_metatarsal_1_L; bone_foot_phalanx_1_proximal_L; bone_metatarsal_2_L; bone_foot_phalanx_2_proximal_L; bone_metatarsal_3_L; bone_foot_phalanx_3_proximal_L; bone_metatarsal_4_L; bone_foot_phalanx_4_proximal_L; bone_metatarsal_5_L; bone_foot_phalanx_5_proximal_L,源库组合对象尚需分段核对；关联骨不是精确附着足印。
+ligament_annular_radius_L,左桡骨环状韧带,肘与前臂,ligament,2,individual,local_candidate_mesh,Annular ligament of radius.l,bone_radius_L; bone_ulna_L,源坐标候选，附着边界与装配尚待审核。
+capsule_tmj_R,右颞下颌关节囊,头颈与听骨,fibrous_capsule,2,individual,local_candidate_mesh,Articular capsule of temporomandibular joint.r,bone_temporal_R; bone_mandible_M,源坐标候选，附着边界与装配尚待审核。
+capsule_proximal_tibiofibular_R,右近侧胫腓关节囊,膝,fibrous_capsule,2,individual,local_candidate_mesh,Articular capsule of superior tibiofibular joint.r,bone_tibia_R; bone_fibula_R,源坐标候选，附着边界与装配尚待审核。
+capsule_sternoclavicular_R,右胸锁关节囊,肩带,fibrous_capsule,2,individual,local_candidate_mesh,Articular capsule of sternoclavicular joint.r,bone_sternum_M; bone_clavicle_R,源坐标候选，附着边界与装配尚待审核。
+capsule_radiocarpal_R,右桡腕关节囊,腕手,fibrous_capsule,2,individual,local_candidate_mesh,Articular capsule of radiocarpal joint.r,bone_radius_R; bone_scaphoid_R; bone_lunate_R; bone_triquetrum_R,源坐标候选，附着边界与装配尚待审核。
+capsule_tibiofemoral_R,右膝关节囊,膝,fibrous_capsule,2,individual,local_candidate_mesh,Articular capsule of knee joint.r,bone_femur_R; bone_tibia_R; bone_patella_R,源坐标候选，附着边界与装配尚待审核。
+capsule_hip_R,右髋关节囊,骨盆与髋,fibrous_capsule,2,individual,local_candidate_mesh,Articular capsule of hip joint.r,bone_hip_R; bone_femur_R,源坐标候选，附着边界与装配尚待审核。
+capsule_glenohumeral_R,右盂肱关节囊,肩带,fibrous_capsule,2,individual,local_candidate_mesh,Articular capsule of glenohumeral joint.r,bone_scapula_R; bone_humerus_R,源坐标候选，附着边界与装配尚待审核。
+capsule_humeroulnar_R,右肘关节囊,肘与前臂,fibrous_capsule,2,individual,local_candidate_mesh,Articular capsule of elbow joint.r,bone_humerus_R; bone_ulna_R; bone_radius_R,源坐标候选，附着边界与装配尚待审核。
+capsule_acromioclavicular_R,右肩锁关节囊,肩带,fibrous_capsule,2,individual,local_candidate_mesh,Articular capsule of acromioclavicular joint.r,bone_clavicle_R; bone_scapula_R,源坐标候选，附着边界与装配尚待审核。
+capsule_foot_ip_1_proximal_distal_R,右拇趾趾间关节囊,踝足,fibrous_capsule,2,individual,local_candidate_mesh,Articular capsule of interphalangeal joint of great toe.r,bone_foot_phalanx_1_proximal_R; bone_foot_phalanx_1_distal_R,源坐标候选，附着边界与装配尚待审核。
+capsules_hand_proximal_R,右近侧指间关节囊组,腕手,fibrous_capsule,2,source_group_unsegmented,local_candidate_mesh,Articular capsules of proximal interphalangeal joints.r,bone_hand_phalanx_2_proximal_R; bone_hand_phalanx_2_middle_R; bone_hand_phalanx_3_proximal_R; bone_hand_phalanx_3_middle_R; bone_hand_phalanx_4_proximal_R; bone_hand_phalanx_4_middle_R; bone_hand_phalanx_5_proximal_R; bone_hand_phalanx_5_middle_R,源库组合对象尚需分段核对；关联骨不是精确附着足印。
+capsules_hand_distal_R,右远侧指间关节囊组,腕手,fibrous_capsule,2,source_group_unsegmented,local_candidate_mesh,Articular capsules of distal interphalangeal joints.r,bone_hand_phalanx_2_middle_R; bone_hand_phalanx_2_distal_R; bone_hand_phalanx_3_middle_R; bone_hand_phalanx_3_distal_R; bone_hand_phalanx_4_middle_R; bone_hand_phalanx_4_distal_R; bone_hand_phalanx_5_middle_R; bone_hand_phalanx_5_distal_R,源库组合对象尚需分段核对；关联骨不是精确附着足印。
+capsules_mcp_R,右掌指关节囊组,腕手,fibrous_capsule,2,source_group_unsegmented,local_candidate_mesh,Articular capsules of metacarpophalangeal joints.r,bone_metacarpal_1_R; bone_hand_phalanx_1_proximal_R; bone_metacarpal_2_R; bone_hand_phalanx_2_proximal_R; bone_metacarpal_3_R; bone_hand_phalanx_3_proximal_R; bone_metacarpal_4_R; bone_hand_phalanx_4_proximal_R; bone_metacarpal_5_R; bone_hand_phalanx_5_proximal_R,源库组合对象尚需分段核对；关联骨不是精确附着足印。
+capsules_foot_proximal_R,右近侧趾间关节囊组,踝足,fibrous_capsule,2,source_group_unsegmented,local_candidate_mesh,Articular capsules of proximal interphalangeal joints of foot.r,bone_foot_phalanx_2_proximal_R; bone_foot_phalanx_2_middle_R; bone_foot_phalanx_3_proximal_R; bone_foot_phalanx_3_middle_R; bone_foot_phalanx_4_proximal_R; bone_foot_phalanx_4_middle_R; bone_foot_phalanx_5_proximal_R; bone_foot_phalanx_5_middle_R,源库组合对象尚需分段核对；关联骨不是精确附着足印。
+capsules_foot_distal_R,右远侧趾间关节囊组,踝足,fibrous_capsule,2,source_group_unsegmented,local_candidate_mesh,Articular capsules of distal interphalangeal joints of foot.r,bone_foot_phalanx_2_middle_R; bone_foot_phalanx_2_distal_R; bone_foot_phalanx_3_middle_R; bone_foot_phalanx_3_distal_R; bone_foot_phalanx_4_middle_R; bone_foot_phalanx_4_distal_R; bone_foot_phalanx_5_middle_R; bone_foot_phalanx_5_distal_R,源库组合对象尚需分段核对；关联骨不是精确附着足印。
+capsules_mtp_R,右跖趾关节囊组,踝足,fibrous_capsule,2,source_group_unsegmented,local_candidate_mesh,Articular capsules of metatarsophalangeal joints.r,bone_metatarsal_1_R; bone_foot_phalanx_1_proximal_R; bone_metatarsal_2_R; bone_foot_phalanx_2_proximal_R; bone_metatarsal_3_R; bone_foot_phalanx_3_proximal_R; bone_metatarsal_4_R; bone_foot_phalanx_4_proximal_R; bone_metatarsal_5_R; bone_foot_phalanx_5_proximal_R,源库组合对象尚需分段核对；关联骨不是精确附着足印。
+ligament_annular_radius_R,右桡骨环状韧带,肘与前臂,ligament,2,individual,local_candidate_mesh,Annular ligament of radius.r,bone_radius_R; bone_ulna_R,源坐标候选，附着边界与装配尚待审核。
