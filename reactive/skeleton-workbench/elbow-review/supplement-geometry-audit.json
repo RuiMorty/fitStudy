@@ -1,0 +1,296 @@
+[
+  {
+    "id": "z_lig_radial_collateral_ligament_R",
+    "raw_vertices": 9,
+    "original_triangles": 96,
+    "refined_triangles": 4352,
+    "boundary_preserved": false,
+    "cross_section_display_relief_max_mm": 0.55,
+    "surface_displacement_max_mm": 4.403,
+    "end_candidates": [],
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "contact_display_note": "仅桡侧副韧带连接端修形：上端贴向肱骨、下端贴向环状韧带，厚度渐薄；约 0.035 mm 贴面间隔用于避免共面闪烁，是显示处理，不是解剖足印测量。",
+    "contact_metrics": {
+      "humerus": {
+        "terminal_vertices": 65,
+        "max_surface_distance_mm": 0.035
+      },
+      "annular": {
+        "terminal_vertices": 188,
+        "max_surface_distance_mm": 0.0351
+      }
+    }
+  },
+  {
+    "id": "z_lig_radial_collateral_ligament_L",
+    "raw_vertices": 9,
+    "original_triangles": 96,
+    "refined_triangles": 4352,
+    "boundary_preserved": false,
+    "cross_section_display_relief_max_mm": 0.55,
+    "surface_displacement_max_mm": 4.202,
+    "end_candidates": [],
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "contact_display_note": "仅桡侧副韧带连接端修形：上端贴向肱骨、下端贴向环状韧带，厚度渐薄；约 0.035 mm 贴面间隔用于避免共面闪烁，是显示处理，不是解剖足印测量。",
+    "contact_metrics": {
+      "humerus": {
+        "terminal_vertices": 65,
+        "max_surface_distance_mm": 0.035
+      },
+      "annular": {
+        "terminal_vertices": 188,
+        "max_surface_distance_mm": 0.0351
+      }
+    }
+  },
+  {
+    "id": "z_lig_quadrate_ligament_R",
+    "raw_vertices": 4,
+    "original_triangles": 12,
+    "refined_triangles": 320,
+    "boundary_preserved": true,
+    "cross_section_display_relief_max_mm": 0.55,
+    "surface_displacement_max_mm": 0.403,
+    "end_candidates": [
+      {
+        "position": [
+          -0.2315686047077179,
+          1.0780287981033325,
+          -0.0335245318710804
+        ],
+        "nearest_bone": "Radius.r",
+        "distance_mm": 0.111,
+        "distances_mm": {
+          "Humerus.r": 17.244,
+          "Ulna.r": 2.69,
+          "Radius.r": 0.111
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      },
+      {
+        "position": [
+          -0.22738024592399597,
+          1.068664789199829,
+          -0.03320271521806717
+        ],
+        "nearest_bone": "Ulna.r",
+        "distance_mm": 0.519,
+        "distances_mm": {
+          "Humerus.r": 25.709,
+          "Ulna.r": 0.519,
+          "Radius.r": 5.458
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      }
+    ],
+    "suspected_penetration_nearest_normal_only": {
+      "Ulna.r": {
+        "samples": 2,
+        "max_depth_mm": 0.64
+      }
+    },
+    "anatomical_status": "pending"
+  },
+  {
+    "id": "z_lig_quadrate_ligament_L",
+    "raw_vertices": 4,
+    "original_triangles": 12,
+    "refined_triangles": 320,
+    "boundary_preserved": true,
+    "cross_section_display_relief_max_mm": 0.55,
+    "surface_displacement_max_mm": 0.403,
+    "end_candidates": [
+      {
+        "position": [
+          0.2315126359462738,
+          1.0780394077301025,
+          -0.03361446037888527
+        ],
+        "nearest_bone": "Radius.l",
+        "distance_mm": 0.178,
+        "distances_mm": {
+          "Humerus.l": 17.211,
+          "Ulna.l": 2.638,
+          "Radius.l": 0.178
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      },
+      {
+        "position": [
+          0.22741031646728516,
+          1.0686469078063965,
+          -0.03308495134115219
+        ],
+        "nearest_bone": "Ulna.l",
+        "distance_mm": 0.591,
+        "distances_mm": {
+          "Humerus.l": 25.741,
+          "Ulna.l": 0.591,
+          "Radius.l": 5.382
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      }
+    ],
+    "suspected_penetration_nearest_normal_only": {
+      "Ulna.l": {
+        "samples": 2,
+        "max_depth_mm": 0.75
+      }
+    },
+    "anatomical_status": "pending"
+  },
+  {
+    "id": "ligament_annular_radius_L",
+    "raw_vertices": 30,
+    "original_triangles": 376,
+    "refined_triangles": 19136,
+    "boundary_preserved": false,
+    "cross_section_display_relief_max_mm": 0.55,
+    "surface_displacement_max_mm": 4.058,
+    "end_candidates": [],
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "contact_metrics": [
+      {
+        "center_web_m": [
+          0.22626172970323002,
+          1.0839729449328255,
+          -0.02686982788145542
+        ],
+        "max_distance_mm": 0.04
+      },
+      {
+        "center_web_m": [
+          0.23057341137353113,
+          1.0770255958332735,
+          -0.04074859421919374
+        ],
+        "max_distance_mm": 0.04
+      }
+    ],
+    "contact_display_note": "依据源网格两端修整：前、后端分别贴合尺骨；中间保留绕桡骨的走行。附着范围仍为候选，未通过解剖验收。"
+  },
+  {
+    "id": "ligament_annular_radius_R",
+    "raw_vertices": 30,
+    "original_triangles": 376,
+    "refined_triangles": 19136,
+    "boundary_preserved": false,
+    "cross_section_display_relief_max_mm": 0.55,
+    "surface_displacement_max_mm": 4.319,
+    "end_candidates": [],
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "contact_metrics": [
+      {
+        "center_web_m": [
+          -0.22628415945698233,
+          1.0839228139204138,
+          -0.02692986071548041
+        ],
+        "max_distance_mm": 0.04
+      },
+      {
+        "center_web_m": [
+          -0.2307337355964324,
+          1.0770506438087015,
+          -0.04122420422294561
+        ],
+        "max_distance_mm": 0.04
+      }
+    ],
+    "contact_display_note": "依据源网格两端修整：前、后端分别贴合尺骨；中间保留绕桡骨的走行。附着范围仍为候选，未通过解剖验收。"
+  },
+  {
+    "id": "elbow_ucl_anterior_R",
+    "raw_vertices": 0,
+    "surface_displacement_max_mm": null,
+    "end_candidates": [],
+    "suspected_penetration_nearest_normal_only": {},
+    "audit_scope": "not_performed",
+    "contact_display_note": "独立候选构建；静态端部贴合与形态抽样记录见补充报告。完整相交、足印和宽度尚未验收。"
+  },
+  {
+    "id": "elbow_ucl_posterior_R",
+    "raw_vertices": 0,
+    "surface_displacement_max_mm": null,
+    "end_candidates": [],
+    "suspected_penetration_nearest_normal_only": {},
+    "audit_scope": "not_performed",
+    "contact_display_note": "独立候选构建；静态端部贴合与形态抽样记录见补充报告。完整相交、足印和宽度尚未验收。"
+  },
+  {
+    "id": "elbow_ucl_transverse_R",
+    "raw_vertices": 0,
+    "surface_displacement_max_mm": null,
+    "end_candidates": [],
+    "suspected_penetration_nearest_normal_only": {},
+    "audit_scope": "not_performed",
+    "contact_display_note": "独立候选构建；静态端部贴合与形态抽样记录见补充报告。完整相交、足印和宽度尚未验收。"
+  },
+  {
+    "id": "elbow_lucl_R",
+    "raw_vertices": 0,
+    "surface_displacement_max_mm": null,
+    "end_candidates": [],
+    "suspected_penetration_nearest_normal_only": {},
+    "audit_scope": "not_performed",
+    "contact_display_note": "独立候选构建；静态端部贴合与形态抽样记录见补充报告。完整相交、足印和宽度尚未验收。"
+  },
+  {
+    "id": "elbow_ucl_anterior_L",
+    "raw_vertices": 0,
+    "surface_displacement_max_mm": null,
+    "end_candidates": [],
+    "suspected_penetration_nearest_normal_only": {},
+    "audit_scope": "not_performed",
+    "contact_display_note": "独立候选构建；静态端部贴合与形态抽样记录见补充报告。完整相交、足印和宽度尚未验收。"
+  },
+  {
+    "id": "elbow_ucl_posterior_L",
+    "raw_vertices": 0,
+    "surface_displacement_max_mm": null,
+    "end_candidates": [],
+    "suspected_penetration_nearest_normal_only": {},
+    "audit_scope": "not_performed",
+    "contact_display_note": "独立候选构建；静态端部贴合与形态抽样记录见补充报告。完整相交、足印和宽度尚未验收。"
+  },
+  {
+    "id": "elbow_ucl_transverse_L",
+    "raw_vertices": 0,
+    "surface_displacement_max_mm": null,
+    "end_candidates": [],
+    "suspected_penetration_nearest_normal_only": {},
+    "audit_scope": "not_performed",
+    "contact_display_note": "独立候选构建；静态端部贴合与形态抽样记录见补充报告。完整相交、足印和宽度尚未验收。"
+  },
+  {
+    "id": "elbow_lucl_L",
+    "raw_vertices": 0,
+    "surface_displacement_max_mm": null,
+    "end_candidates": [],
+    "suspected_penetration_nearest_normal_only": {},
+    "audit_scope": "not_performed",
+    "contact_display_note": "独立候选构建；静态端部贴合与形态抽样记录见补充报告。完整相交、足印和宽度尚未验收。"
+  },
+  {
+    "id": "elbow_oblique_cord_R",
+    "raw_vertices": 0,
+    "surface_displacement_max_mm": null,
+    "end_candidates": [],
+    "suspected_penetration_nearest_normal_only": {},
+    "audit_scope": "not_performed",
+    "contact_display_note": "独立候选构建；静态端部贴合与形态抽样记录见补充报告。完整相交、足印和宽度尚未验收。"
+  },
+  {
+    "id": "elbow_oblique_cord_L",
+    "raw_vertices": 0,
+    "surface_displacement_max_mm": null,
+    "end_candidates": [],
+    "suspected_penetration_nearest_normal_only": {},
+    "audit_scope": "not_performed",
+    "contact_display_note": "独立候选构建；静态端部贴合与形态抽样记录见补充报告。完整相交、足印和宽度尚未验收。"
+  }
+]

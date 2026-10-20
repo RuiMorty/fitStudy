@@ -1,0 +1,394 @@
+[
+  {
+    "id": "z_lig_ulnar_collateral_ligament_R",
+    "raw_vertices": 14,
+    "original_triangles": 152,
+    "refined_triangles": 6592,
+    "boundary_preserved": true,
+    "cross_section_display_relief_max_mm": 0.55,
+    "surface_displacement_max_mm": 0.583,
+    "end_candidates": [
+      {
+        "position": [
+          -0.19015024602413177,
+          1.0996800661087036,
+          -0.031157514080405235
+        ],
+        "nearest_bone": "Humerus.r",
+        "distance_mm": 1.501,
+        "distances_mm": {
+          "Humerus.r": 1.501,
+          "Ulna.r": 21.282,
+          "Radius.r": 38.614
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      },
+      {
+        "position": [
+          -0.23328378796577454,
+          1.088404893875122,
+          -0.021051978692412376
+        ],
+        "nearest_bone": "Radius.r",
+        "distance_mm": 0.531,
+        "distances_mm": {
+          "Humerus.r": 13.451,
+          "Ulna.r": 8.591,
+          "Radius.r": 0.531
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      }
+    ],
+    "suspected_penetration_nearest_normal_only": {
+      "Ulna.r": {
+        "samples": 31,
+        "max_depth_mm": 1.07
+      }
+    },
+    "anatomical_status": "pending"
+  },
+  {
+    "id": "z_lig_ulnar_collateral_ligament_L",
+    "raw_vertices": 14,
+    "original_triangles": 152,
+    "refined_triangles": 6592,
+    "boundary_preserved": true,
+    "cross_section_display_relief_max_mm": 0.55,
+    "surface_displacement_max_mm": 0.583,
+    "end_candidates": [
+      {
+        "position": [
+          0.1901501715183258,
+          1.0996800661087036,
+          -0.031157514080405235
+        ],
+        "nearest_bone": "Humerus.l",
+        "distance_mm": 1.501,
+        "distances_mm": {
+          "Humerus.l": 1.501,
+          "Ulna.l": 21.282,
+          "Radius.l": 38.614
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      },
+      {
+        "position": [
+          0.23328372836112976,
+          1.088404893875122,
+          -0.021051978692412376
+        ],
+        "nearest_bone": "Radius.l",
+        "distance_mm": 0.531,
+        "distances_mm": {
+          "Humerus.l": 13.451,
+          "Ulna.l": 8.591,
+          "Radius.l": 0.531
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      }
+    ],
+    "suspected_penetration_nearest_normal_only": {
+      "Ulna.l": {
+        "samples": 31,
+        "max_depth_mm": 1.07
+      }
+    },
+    "anatomical_status": "pending"
+  },
+  {
+    "id": "z_lig_radial_collateral_ligament_R",
+    "raw_vertices": 9,
+    "original_triangles": 96,
+    "refined_triangles": 4352,
+    "boundary_preserved": true,
+    "cross_section_display_relief_max_mm": 0.55,
+    "surface_displacement_max_mm": 0.517,
+    "end_candidates": [
+      {
+        "position": [
+          -0.24959814548492432,
+          1.08842134475708,
+          -0.025449827313423157
+        ],
+        "nearest_bone": "Radius.r",
+        "distance_mm": 1.711,
+        "distances_mm": {
+          "Humerus.r": 12.869,
+          "Ulna.r": 23.351,
+          "Radius.r": 1.711
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      },
+      {
+        "position": [
+          -0.24638156592845917,
+          1.1138134002685547,
+          -0.035780128091573715
+        ],
+        "nearest_bone": "Humerus.r",
+        "distance_mm": 0.761,
+        "distances_mm": {
+          "Humerus.r": 0.761,
+          "Ulna.r": 26.889,
+          "Radius.r": 22.518
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      }
+    ],
+    "suspected_penetration_nearest_normal_only": {
+      "Humerus.r": {
+        "samples": 39,
+        "max_depth_mm": 1.13
+      }
+    },
+    "anatomical_status": "pending"
+  },
+  {
+    "id": "z_lig_radial_collateral_ligament_L",
+    "raw_vertices": 9,
+    "original_triangles": 96,
+    "refined_triangles": 4352,
+    "boundary_preserved": true,
+    "cross_section_display_relief_max_mm": 0.55,
+    "surface_displacement_max_mm": 0.517,
+    "end_candidates": [
+      {
+        "position": [
+          0.24959810078144073,
+          1.08842134475708,
+          -0.025449827313423157
+        ],
+        "nearest_bone": "Radius.l",
+        "distance_mm": 1.711,
+        "distances_mm": {
+          "Humerus.l": 12.869,
+          "Ulna.l": 23.351,
+          "Radius.l": 1.711
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      },
+      {
+        "position": [
+          0.24638152122497559,
+          1.1138134002685547,
+          -0.035780128091573715
+        ],
+        "nearest_bone": "Humerus.l",
+        "distance_mm": 0.761,
+        "distances_mm": {
+          "Humerus.l": 0.761,
+          "Ulna.l": 26.889,
+          "Radius.l": 22.518
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      }
+    ],
+    "suspected_penetration_nearest_normal_only": {
+      "Humerus.l": {
+        "samples": 39,
+        "max_depth_mm": 1.13
+      }
+    },
+    "anatomical_status": "pending"
+  },
+  {
+    "id": "z_lig_quadrate_ligament_R",
+    "raw_vertices": 4,
+    "original_triangles": 12,
+    "refined_triangles": 320,
+    "boundary_preserved": true,
+    "cross_section_display_relief_max_mm": 0.55,
+    "surface_displacement_max_mm": 0.403,
+    "end_candidates": [
+      {
+        "position": [
+          -0.2315686047077179,
+          1.0780287981033325,
+          -0.0335245318710804
+        ],
+        "nearest_bone": "Radius.r",
+        "distance_mm": 0.111,
+        "distances_mm": {
+          "Humerus.r": 17.244,
+          "Ulna.r": 2.69,
+          "Radius.r": 0.111
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      },
+      {
+        "position": [
+          -0.22738024592399597,
+          1.068664789199829,
+          -0.03320271521806717
+        ],
+        "nearest_bone": "Ulna.r",
+        "distance_mm": 0.519,
+        "distances_mm": {
+          "Humerus.r": 25.709,
+          "Ulna.r": 0.519,
+          "Radius.r": 5.458
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      }
+    ],
+    "suspected_penetration_nearest_normal_only": {
+      "Ulna.r": {
+        "samples": 2,
+        "max_depth_mm": 0.64
+      }
+    },
+    "anatomical_status": "pending"
+  },
+  {
+    "id": "z_lig_quadrate_ligament_L",
+    "raw_vertices": 4,
+    "original_triangles": 12,
+    "refined_triangles": 320,
+    "boundary_preserved": true,
+    "cross_section_display_relief_max_mm": 0.55,
+    "surface_displacement_max_mm": 0.403,
+    "end_candidates": [
+      {
+        "position": [
+          0.2315126359462738,
+          1.0780394077301025,
+          -0.03361446037888527
+        ],
+        "nearest_bone": "Radius.l",
+        "distance_mm": 0.178,
+        "distances_mm": {
+          "Humerus.l": 17.211,
+          "Ulna.l": 2.638,
+          "Radius.l": 0.178
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      },
+      {
+        "position": [
+          0.22741031646728516,
+          1.0686469078063965,
+          -0.03308495134115219
+        ],
+        "nearest_bone": "Ulna.l",
+        "distance_mm": 0.591,
+        "distances_mm": {
+          "Humerus.l": 25.741,
+          "Ulna.l": 0.591,
+          "Radius.l": 5.382
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      }
+    ],
+    "suspected_penetration_nearest_normal_only": {
+      "Ulna.l": {
+        "samples": 2,
+        "max_depth_mm": 0.75
+      }
+    },
+    "anatomical_status": "pending"
+  },
+  {
+    "id": "ligament_annular_radius_L",
+    "raw_vertices": 30,
+    "original_triangles": 376,
+    "refined_triangles": 19136,
+    "boundary_preserved": true,
+    "cross_section_display_relief_max_mm": 0.55,
+    "surface_displacement_max_mm": 0.534,
+    "end_candidates": [
+      {
+        "position": [
+          0.23144234716892242,
+          1.0887773036956787,
+          -0.022137781605124474
+        ],
+        "nearest_bone": "Radius.l",
+        "distance_mm": 0.525,
+        "distances_mm": {
+          "Humerus.l": 11.648,
+          "Ulna.l": 6.528,
+          "Radius.l": 0.525
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      },
+      {
+        "position": [
+          0.24314801394939423,
+          1.0854320526123047,
+          -0.04105645790696144
+        ],
+        "nearest_bone": "Radius.l",
+        "distance_mm": 0.243,
+        "distances_mm": {
+          "Humerus.l": 10.86,
+          "Ulna.l": 13.685,
+          "Radius.l": 0.243
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      }
+    ],
+    "suspected_penetration_nearest_normal_only": {
+      "Ulna.l": {
+        "samples": 58,
+        "max_depth_mm": 1.09
+      },
+      "Radius.l": {
+        "samples": 23,
+        "max_depth_mm": 0.65
+      }
+    },
+    "anatomical_status": "pending"
+  },
+  {
+    "id": "ligament_annular_radius_R",
+    "raw_vertices": 30,
+    "original_triangles": 376,
+    "refined_triangles": 19136,
+    "boundary_preserved": true,
+    "cross_section_display_relief_max_mm": 0.55,
+    "surface_displacement_max_mm": 0.534,
+    "end_candidates": [
+      {
+        "position": [
+          -0.2311590313911438,
+          1.0887993574142456,
+          -0.022416161373257637
+        ],
+        "nearest_bone": "Radius.r",
+        "distance_mm": 0.487,
+        "distances_mm": {
+          "Humerus.r": 11.335,
+          "Ulna.r": 6.151,
+          "Radius.r": 0.487
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      },
+      {
+        "position": [
+          -0.24360762536525726,
+          1.0854402780532837,
+          -0.04085202142596245
+        ],
+        "nearest_bone": "Radius.r",
+        "distance_mm": 0.259,
+        "distances_mm": {
+          "Humerus.r": 10.921,
+          "Ulna.r": 14.12,
+          "Radius.r": 0.259
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      }
+    ],
+    "suspected_penetration_nearest_normal_only": {
+      "Ulna.r": {
+        "samples": 43,
+        "max_depth_mm": 0.82
+      },
+      "Radius.r": {
+        "samples": 3,
+        "max_depth_mm": 0.54
+      }
+    },
+    "anatomical_status": "pending"
+  }
+]

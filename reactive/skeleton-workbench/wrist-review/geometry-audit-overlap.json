@@ -1,0 +1,622 @@
+[
+  {
+    "id": "z_lig_capitohamate_interosseous_ligament_L",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "沿用现有腕部修形 v2；本次仅打包审核，未改形。没有把几何端点当作解剖附着。",
+    "surface_displacement_max_mm": 0,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "inherited_static_sampling_not_new_collision_verification"
+  },
+  {
+    "id": "z_lig_capitohamate_interosseous_ligament_R",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "仅此右侧对象按源四角边界重新拟合：两端分别贴向头状骨与钩骨，减薄端缘；端区仍是源位置候选，不代表精确解剖足印已核准。 本次重建拓扑，不提供无对应关系的逐顶点位移值。",
+    "surface_displacement_max_mm": null,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "local_vertex_and_triangle_centroid_nearest_normal_screen",
+    "contact_metrics": {
+      "Capitate": {
+        "terminal_vertices": 33,
+        "max_surface_distance_mm": 0.035
+      },
+      "Hamate": {
+        "terminal_vertices": 33,
+        "max_surface_distance_mm": 0.0351
+      }
+    }
+  },
+  {
+    "id": "z_lig_dorsal_intercarpal_ligaments_L",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "沿用现有腕部修形 v2；本次仅打包审核，未改形。没有把几何端点当作解剖附着。",
+    "surface_displacement_max_mm": 0,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "inherited_static_sampling_not_new_collision_verification"
+  },
+  {
+    "id": "z_lig_dorsal_intercarpal_ligaments_R",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "沿用现有腕部修形 v2；本次仅打包审核，未改形。没有把几何端点当作解剖附着。",
+    "surface_displacement_max_mm": 0,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "inherited_static_sampling_not_new_collision_verification"
+  },
+  {
+    "id": "z_lig_dorsal_radio_ulnar_ligament_L",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "沿用现有腕部修形 v2；本次仅打包审核，未改形。没有把几何端点当作解剖附着。",
+    "surface_displacement_max_mm": 0,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "inherited_static_sampling_not_new_collision_verification"
+  },
+  {
+    "id": "z_lig_dorsal_radio_ulnar_ligament_R",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "沿用现有腕部修形 v2；本次仅打包审核，未改形。没有把几何端点当作解剖附着。",
+    "surface_displacement_max_mm": 0,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "inherited_static_sampling_not_new_collision_verification"
+  },
+  {
+    "id": "z_lig_dorsal_radiocarpal_ligament_L",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "沿用现有腕部修形 v2；本次仅打包审核，未改形。没有把几何端点当作解剖附着。",
+    "surface_displacement_max_mm": 0,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "inherited_static_sampling_not_new_collision_verification"
+  },
+  {
+    "id": "z_lig_dorsal_radiocarpal_ligament_R",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "沿用现有腕部修形 v2；本次仅打包审核，未改形。没有把几何端点当作解剖附着。",
+    "surface_displacement_max_mm": 0,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "inherited_static_sampling_not_new_collision_verification"
+  },
+  {
+    "id": "z_lig_dorsal_scaphotriquetral_ligament_L",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "沿用现有腕部修形 v2；本次仅打包审核，未改形。没有把几何端点当作解剖附着。",
+    "surface_displacement_max_mm": 0,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "inherited_static_sampling_not_new_collision_verification"
+  },
+  {
+    "id": "z_lig_dorsal_scaphotriquetral_ligament_R",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "沿用现有腕部修形 v2；本次仅打包审核，未改形。没有把几何端点当作解剖附着。",
+    "surface_displacement_max_mm": 0,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "inherited_static_sampling_not_new_collision_verification"
+  },
+  {
+    "id": "z_lig_dorsal_ulnocarpal_ligament_L",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "局部厚度内退与平滑过渡，仅用于减轻近重合交界。端部候选及距骨面 0.6 mm 内的顶点锁定；不代表真实足印范围。",
+    "surface_displacement_max_mm": 0.0013,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "small_joint_overlap_display_only"
+  },
+  {
+    "id": "z_lig_dorsal_ulnocarpal_ligament_R",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "局部厚度内退与平滑过渡，仅用于减轻近重合交界。端部候选及距骨面 0.6 mm 内的顶点锁定；不代表真实足印范围。",
+    "surface_displacement_max_mm": 0.00129,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "small_joint_overlap_display_only"
+  },
+  {
+    "id": "z_lig_lunotriquetral_interosseous_ligament_L",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "沿用现有腕部修形 v2；本次仅打包审核，未改形。没有把几何端点当作解剖附着。",
+    "surface_displacement_max_mm": 0,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "inherited_static_sampling_not_new_collision_verification"
+  },
+  {
+    "id": "z_lig_lunotriquetral_interosseous_ligament_R",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "沿用现有腕部修形 v2；本次仅打包审核，未改形。没有把几何端点当作解剖附着。",
+    "surface_displacement_max_mm": 0,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "inherited_static_sampling_not_new_collision_verification"
+  },
+  {
+    "id": "z_lig_palmar_capitohamate_ligament_L",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "沿用现有腕部修形 v2；本次仅打包审核，未改形。没有把几何端点当作解剖附着。",
+    "surface_displacement_max_mm": 0,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "inherited_static_sampling_not_new_collision_verification"
+  },
+  {
+    "id": "z_lig_palmar_capitohamate_ligament_R",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "沿用现有腕部修形 v2；本次仅打包审核，未改形。没有把几何端点当作解剖附着。",
+    "surface_displacement_max_mm": 0,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "inherited_static_sampling_not_new_collision_verification"
+  },
+  {
+    "id": "z_lig_palmar_lunotriquetral_ligament_L",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "沿用现有腕部修形 v2；本次仅打包审核，未改形。没有把几何端点当作解剖附着。",
+    "surface_displacement_max_mm": 0,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "inherited_static_sampling_not_new_collision_verification"
+  },
+  {
+    "id": "z_lig_palmar_lunotriquetral_ligament_R",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "沿用现有腕部修形 v2；本次仅打包审核，未改形。没有把几何端点当作解剖附着。",
+    "surface_displacement_max_mm": 0,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "inherited_static_sampling_not_new_collision_verification"
+  },
+  {
+    "id": "z_lig_palmar_radio_ulnar_ligament_L",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "局部厚度内退与平滑过渡，仅用于减轻近重合交界。端部候选及距骨面 0.6 mm 内的顶点锁定；不代表真实足印范围。",
+    "surface_displacement_max_mm": 0.03693,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "small_joint_overlap_display_only"
+  },
+  {
+    "id": "z_lig_palmar_radio_ulnar_ligament_R",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "局部厚度内退与平滑过渡，仅用于减轻近重合交界。端部候选及距骨面 0.6 mm 内的顶点锁定；不代表真实足印范围。",
+    "surface_displacement_max_mm": 0.0167,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "small_joint_overlap_display_only"
+  },
+  {
+    "id": "z_lig_palmar_scaphotriquetral_ligament_L",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "局部厚度内退与平滑过渡，仅用于减轻近重合交界。端部候选及距骨面 0.6 mm 内的顶点锁定；不代表真实足印范围。",
+    "surface_displacement_max_mm": 0.03946,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "small_joint_overlap_display_only"
+  },
+  {
+    "id": "z_lig_palmar_scaphotriquetral_ligament_R",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "沿用现有腕部修形 v2；本次仅打包审核，未改形。没有把几何端点当作解剖附着。",
+    "surface_displacement_max_mm": 0,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "inherited_static_sampling_not_new_collision_verification"
+  },
+  {
+    "id": "z_lig_palmar_trapezoideocapitate_ligament_L",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "局部厚度内退与平滑过渡，仅用于减轻近重合交界。端部候选及距骨面 0.6 mm 内的顶点锁定；不代表真实足印范围。",
+    "surface_displacement_max_mm": 0.00753,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "small_joint_overlap_display_only"
+  },
+  {
+    "id": "z_lig_palmar_trapezoideocapitate_ligament_R",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "局部厚度内退与平滑过渡，仅用于减轻近重合交界。端部候选及距骨面 0.6 mm 内的顶点锁定；不代表真实足印范围。",
+    "surface_displacement_max_mm": 0.00753,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "small_joint_overlap_display_only"
+  },
+  {
+    "id": "z_lig_pisohamate_ligament_L",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "沿用现有腕部修形 v2；本次仅打包审核，未改形。没有把几何端点当作解剖附着。",
+    "surface_displacement_max_mm": 0,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "inherited_static_sampling_not_new_collision_verification"
+  },
+  {
+    "id": "z_lig_pisohamate_ligament_R",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "沿用现有腕部修形 v2；本次仅打包审核，未改形。没有把几何端点当作解剖附着。",
+    "surface_displacement_max_mm": 0,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "inherited_static_sampling_not_new_collision_verification"
+  },
+  {
+    "id": "z_lig_pisometacarpal_ligament_L",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "沿用现有腕部修形 v2；本次仅打包审核，未改形。没有把几何端点当作解剖附着。",
+    "surface_displacement_max_mm": 0,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "inherited_static_sampling_not_new_collision_verification"
+  },
+  {
+    "id": "z_lig_pisometacarpal_ligament_R",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "沿用现有腕部修形 v2；本次仅打包审核，未改形。没有把几何端点当作解剖附着。",
+    "surface_displacement_max_mm": 0,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "inherited_static_sampling_not_new_collision_verification"
+  },
+  {
+    "id": "z_lig_pisotriquetral_ligament_L",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "沿用现有腕部修形 v2；本次仅打包审核，未改形。没有把几何端点当作解剖附着。",
+    "surface_displacement_max_mm": 0,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "inherited_static_sampling_not_new_collision_verification"
+  },
+  {
+    "id": "z_lig_pisotriquetral_ligament_R",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "沿用现有腕部修形 v2；本次仅打包审核，未改形。没有把几何端点当作解剖附着。",
+    "surface_displacement_max_mm": 0,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "inherited_static_sampling_not_new_collision_verification"
+  },
+  {
+    "id": "z_lig_radial_collateral_ligament_of_wrist_joint_L",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "沿用现有腕部修形 v2；本次仅打包审核，未改形。没有把几何端点当作解剖附着。",
+    "surface_displacement_max_mm": 0,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "inherited_static_sampling_not_new_collision_verification"
+  },
+  {
+    "id": "z_lig_radial_collateral_ligament_of_wrist_joint_R",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "沿用现有腕部修形 v2；本次仅打包审核，未改形。没有把几何端点当作解剖附着。",
+    "surface_displacement_max_mm": 0,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "inherited_static_sampling_not_new_collision_verification"
+  },
+  {
+    "id": "z_lig_radiate_carpal_ligament_L",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "沿用现有腕部修形 v2；本次仅打包审核，未改形。没有把几何端点当作解剖附着。",
+    "surface_displacement_max_mm": 0,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "inherited_static_sampling_not_new_collision_verification"
+  },
+  {
+    "id": "z_lig_radiate_carpal_ligament_R",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "沿用现有腕部修形 v2；本次仅打包审核，未改形。没有把几何端点当作解剖附着。",
+    "surface_displacement_max_mm": 0,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "inherited_static_sampling_not_new_collision_verification"
+  },
+  {
+    "id": "z_lig_radiocapitate_ligament_L",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "局部厚度内退与平滑过渡，仅用于减轻近重合交界。端部候选及距骨面 0.6 mm 内的顶点锁定；不代表真实足印范围。",
+    "surface_displacement_max_mm": 0.0133,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "small_joint_overlap_display_only"
+  },
+  {
+    "id": "z_lig_radiocapitate_ligament_R",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "局部厚度内退与平滑过渡，仅用于减轻近重合交界。端部候选及距骨面 0.6 mm 内的顶点锁定；不代表真实足印范围。",
+    "surface_displacement_max_mm": 0.0133,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "small_joint_overlap_display_only"
+  },
+  {
+    "id": "z_lig_radioscaphocapitate_ligament_L",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "沿用现有腕部修形 v2；本次仅打包审核，未改形。没有把几何端点当作解剖附着。",
+    "surface_displacement_max_mm": 0,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "inherited_static_sampling_not_new_collision_verification"
+  },
+  {
+    "id": "z_lig_radioscaphocapitate_ligament_R",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "沿用现有腕部修形 v2；本次仅打包审核，未改形。没有把几何端点当作解剖附着。",
+    "surface_displacement_max_mm": 0,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "inherited_static_sampling_not_new_collision_verification"
+  },
+  {
+    "id": "z_lig_scaphocapitate_ligament_L",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "局部厚度内退与平滑过渡，仅用于减轻近重合交界。端部候选及距骨面 0.6 mm 内的顶点锁定；不代表真实足印范围。",
+    "surface_displacement_max_mm": 0.02623,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "small_joint_overlap_display_only"
+  },
+  {
+    "id": "z_lig_scaphocapitate_ligament_R",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "局部厚度内退与平滑过渡，仅用于减轻近重合交界。端部候选及距骨面 0.6 mm 内的顶点锁定；不代表真实足印范围。",
+    "surface_displacement_max_mm": 0.03203,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "small_joint_overlap_display_only"
+  },
+  {
+    "id": "z_lig_scapholunate_interosseous_ligament_L",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "沿用现有腕部修形 v2；本次仅打包审核，未改形。没有把几何端点当作解剖附着。",
+    "surface_displacement_max_mm": 0,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "inherited_static_sampling_not_new_collision_verification"
+  },
+  {
+    "id": "z_lig_scapholunate_interosseous_ligament_R",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "沿用现有腕部修形 v2；本次仅打包审核，未改形。没有把几何端点当作解剖附着。",
+    "surface_displacement_max_mm": 0,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "inherited_static_sampling_not_new_collision_verification"
+  },
+  {
+    "id": "z_lig_scaphotrapeziotrapezoidal_ligament_L",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "沿用现有腕部修形 v2；本次仅打包审核，未改形。没有把几何端点当作解剖附着。",
+    "surface_displacement_max_mm": 0,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "inherited_static_sampling_not_new_collision_verification"
+  },
+  {
+    "id": "z_lig_scaphotrapeziotrapezoidal_ligament_R",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "沿用现有腕部修形 v2；本次仅打包审核，未改形。没有把几何端点当作解剖附着。",
+    "surface_displacement_max_mm": 0,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "inherited_static_sampling_not_new_collision_verification"
+  },
+  {
+    "id": "z_lig_trapeziotrapezoidal_interosseous_ligament_L",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "沿用现有腕部修形 v2；本次仅打包审核，未改形。没有把几何端点当作解剖附着。",
+    "surface_displacement_max_mm": 0,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "inherited_static_sampling_not_new_collision_verification"
+  },
+  {
+    "id": "z_lig_trapeziotrapezoidal_interosseous_ligament_R",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "沿用现有腕部修形 v2；本次仅打包审核，未改形。没有把几何端点当作解剖附着。",
+    "surface_displacement_max_mm": 0,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "inherited_static_sampling_not_new_collision_verification"
+  },
+  {
+    "id": "z_lig_trapezoideocapitate_interosseous_ligament_L",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "沿用现有腕部修形 v2；本次仅打包审核，未改形。没有把几何端点当作解剖附着。",
+    "surface_displacement_max_mm": 0,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "inherited_static_sampling_not_new_collision_verification"
+  },
+  {
+    "id": "z_lig_trapezoideocapitate_interosseous_ligament_R",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "沿用现有腕部修形 v2；本次仅打包审核，未改形。没有把几何端点当作解剖附着。",
+    "surface_displacement_max_mm": 0,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "inherited_static_sampling_not_new_collision_verification"
+  },
+  {
+    "id": "z_lig_triquetrocapitate_ligament_L",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "沿用现有腕部修形 v2；本次仅打包审核，未改形。没有把几何端点当作解剖附着。",
+    "surface_displacement_max_mm": 0,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "inherited_static_sampling_not_new_collision_verification"
+  },
+  {
+    "id": "z_lig_triquetrocapitate_ligament_R",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "沿用现有腕部修形 v2；本次仅打包审核，未改形。没有把几何端点当作解剖附着。",
+    "surface_displacement_max_mm": 0,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "inherited_static_sampling_not_new_collision_verification"
+  },
+  {
+    "id": "z_lig_triquetrohamate_ligament_L",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "沿用现有腕部修形 v2；本次仅打包审核，未改形。没有把几何端点当作解剖附着。",
+    "surface_displacement_max_mm": 0,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "inherited_static_sampling_not_new_collision_verification"
+  },
+  {
+    "id": "z_lig_triquetrohamate_ligament_R",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "沿用现有腕部修形 v2；本次仅打包审核，未改形。没有把几何端点当作解剖附着。",
+    "surface_displacement_max_mm": 0,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "inherited_static_sampling_not_new_collision_verification"
+  },
+  {
+    "id": "z_lig_ulnar_collateral_ligament_of_wrist_joint_L",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "沿用现有腕部修形 v2；本次仅打包审核，未改形。没有把几何端点当作解剖附着。",
+    "surface_displacement_max_mm": 0,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "inherited_static_sampling_not_new_collision_verification"
+  },
+  {
+    "id": "z_lig_ulnar_collateral_ligament_of_wrist_joint_R",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "沿用现有腕部修形 v2；本次仅打包审核，未改形。没有把几何端点当作解剖附着。",
+    "surface_displacement_max_mm": 0,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "inherited_static_sampling_not_new_collision_verification"
+  },
+  {
+    "id": "z_lig_ulnolunate_ligament_L",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "局部厚度内退与平滑过渡，仅用于减轻近重合交界。端部候选及距骨面 0.6 mm 内的顶点锁定；不代表真实足印范围。",
+    "surface_displacement_max_mm": 0.01965,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "small_joint_overlap_display_only"
+  },
+  {
+    "id": "z_lig_ulnolunate_ligament_R",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "局部厚度内退与平滑过渡，仅用于减轻近重合交界。端部候选及距骨面 0.6 mm 内的顶点锁定；不代表真实足印范围。",
+    "surface_displacement_max_mm": 0.02159,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "small_joint_overlap_display_only"
+  },
+  {
+    "id": "z_lig_ulnopisiform_ligament_L",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "沿用现有腕部修形 v2；本次仅打包审核，未改形。没有把几何端点当作解剖附着。",
+    "surface_displacement_max_mm": 0,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "inherited_static_sampling_not_new_collision_verification"
+  },
+  {
+    "id": "z_lig_ulnotriquetral_ligament_L",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "局部厚度内退与平滑过渡，仅用于减轻近重合交界。端部候选及距骨面 0.6 mm 内的顶点锁定；不代表真实足印范围。",
+    "surface_displacement_max_mm": 0.03697,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "small_joint_overlap_display_only"
+  },
+  {
+    "id": "z_lig_ulnotriquetral_ligament_R",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "局部厚度内退与平滑过渡，仅用于减轻近重合交界。端部候选及距骨面 0.6 mm 内的顶点锁定；不代表真实足印范围。",
+    "surface_displacement_max_mm": 0.03851,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "small_joint_overlap_display_only"
+  },
+  {
+    "id": "z_lig_ulnocapitate_ligament_L",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "局部厚度内退与平滑过渡，仅用于减轻近重合交界。端部候选及距骨面 0.6 mm 内的顶点锁定；不代表真实足印范围。",
+    "surface_displacement_max_mm": 0.03901,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "small_joint_overlap_display_only"
+  },
+  {
+    "id": "z_lig_ulnocapitate_ligament_R",
+    "raw_vertices": null,
+    "end_candidates": [],
+    "contact_display_note": "局部厚度内退与平滑过渡，仅用于减轻近重合交界。端部候选及距骨面 0.6 mm 内的顶点锁定；不代表真实足印范围。",
+    "surface_displacement_max_mm": 0.0396,
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending",
+    "audit_scope": "small_joint_overlap_display_only"
+  }
+]

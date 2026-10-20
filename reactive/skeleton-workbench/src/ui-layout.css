@@ -41,3 +41,43 @@ footer{height:38px;padding:9px 22px;font-size:10px;color:var(--ui-muted);border-
 .select-menu [aria-selected=true]:after{content:'✓';font-size:12px;color:#666}
 .structure-panel select[hidden],.detail select[hidden]{display:none}
 @media(max-width:520px){.select-trigger{font-size:12px;padding-inline:7px}.select-menu{font-size:12px}}
+
+/* Shared appearance for all joint review entry links. */
+.joint-review-links{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.joint-review-links a{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:9px 12px;border:1px solid #ccc;border-radius:5px;color:inherit;font:inherit;line-height:1.4;text-decoration:none;white-space:nowrap;box-sizing:border-box}
+.joint-review-links a:hover{background:#eee}
+.joint-review-links a:focus-visible{outline:2px solid #777;outline-offset:2px}
+.detail .motion-panel{padding:22px 0;border-top:1px solid var(--ui-border)}
+.detail .motion-panel h2{font-size:16px;margin:0 0 10px;font-weight:600}
+.detail .motion-panel>button,.detail #motion-exit{width:100%;margin:8px 0}
+.detail .motion-panel .motion-note{font-size:12px;color:var(--ui-muted);line-height:1.7}
+.detail .tissue-layers{margin-top:0;padding-top:0}
+.detail .tissue-layers summary{font-size:14px}
+.detail #motion-controls[hidden]{display:none}
+@media(max-width:520px){
+ body.motion-active{height:100dvh;overflow:hidden}
+ .motion-active .app-header{height:60px;padding:8px 16px}
+ .motion-active main{height:calc(100dvh - 60px);min-height:0;grid-template-columns:1fr;grid-template-rows:minmax(180px,1fr) 360px}
+ .motion-active .structure-panel,.motion-active footer{display:none}
+ .motion-active #viewer{grid-column:1;grid-row:1;min-height:0;height:100%}
+ .motion-active .detail{grid-column:1;grid-row:2;padding:8px 16px;overflow:auto;min-height:0;background:var(--ui-bg,#fafafa)}
+ .motion-active .detail>:not(.motion-panel){display:none}
+ .motion-active .detail .motion-panel{display:grid;grid-template-columns:1fr 1fr;gap:4px 12px;padding:0;border:0}
+ .motion-active .motion-panel h2{align-self:center;font-size:16px;margin:0}
+ .motion-active .motion-panel>p:first-of-type,.motion-active .motion-panel>label{display:none}
+ .motion-active .motion-panel>#motion-side-trigger{width:auto;margin:0;min-height:40px}
+ .motion-active #motion-controls{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:3px 10px}
+ .motion-active #motion-controls>label:first-child,.motion-active #motion-angle,.motion-active #motion-controls>.actions{grid-column:1/-1;margin:0}
+ .motion-active #motion-controls>.actions button{flex:1}
+ .motion-active #motion-controls>label{align-self:center;margin:0;font-size:12px}
+ .motion-active .detail #motion-exit{margin:0;min-height:40px}
+ .motion-active #motion-state,.motion-active .motion-note{grid-column:1/-1;margin:0!important;font-size:11px!important;line-height:1.5!important}
+}
+.motion-view-switch{display:flex;gap:8px;margin:8px 0}
+.motion-view-switch button{flex:1}
+.motion-view-switch button[aria-pressed="true"]{background:#e1e7e5;border-color:#82978e;color:#263d34}
+@media(max-width:520px){
+ .motion-active #motion-controls>.motion-view-switch{margin:0;align-items:center}
+ .motion-active #motion-controls>label[for="motion-angle"]{grid-column:1/-1;margin:0}
+ .motion-active #motion-controls>.motion-view-switch button{padding:6px;min-height:38px}
+}

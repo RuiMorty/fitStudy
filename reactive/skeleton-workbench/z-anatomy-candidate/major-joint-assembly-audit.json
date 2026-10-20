@@ -1,0 +1,101 @@
+{
+  "status": "geometric_evidence_not_anatomy_acceptance",
+  "objects": [
+    {
+      "id": "capsule_tibiofemoral_L",
+      "name_zh": "左膝关节囊",
+      "boundary_vertices": 404,
+      "rim_to_nearest_related_bone_mm": {
+        "min": 0.0,
+        "median": 0.325,
+        "p95": 3.228,
+        "max": 10.004
+      },
+      "interpretation": "Rim-to-bone proximity only. An opening is not automatically damage; distance does not prove attachment or penetration. Requires anatomical footprint review."
+    },
+    {
+      "id": "capsule_hip_L",
+      "name_zh": "左髋关节囊",
+      "boundary_vertices": 140,
+      "rim_to_nearest_related_bone_mm": {
+        "min": 0.0,
+        "median": 0.072,
+        "p95": 1.049,
+        "max": 1.79
+      },
+      "interpretation": "Rim-to-bone proximity only. An opening is not automatically damage; distance does not prove attachment or penetration. Requires anatomical footprint review."
+    },
+    {
+      "id": "capsule_glenohumeral_L",
+      "name_zh": "左盂肱关节囊",
+      "boundary_vertices": 0,
+      "rim_to_nearest_related_bone_mm": {
+        "min": null,
+        "median": null,
+        "p95": null,
+        "max": null
+      },
+      "interpretation": "Rim-to-bone proximity only. An opening is not automatically damage; distance does not prove attachment or penetration. Requires anatomical footprint review."
+    },
+    {
+      "id": "capsule_humeroulnar_L",
+      "name_zh": "左肘关节囊",
+      "boundary_vertices": 0,
+      "rim_to_nearest_related_bone_mm": {
+        "min": null,
+        "median": null,
+        "p95": null,
+        "max": null
+      },
+      "interpretation": "Rim-to-bone proximity only. An opening is not automatically damage; distance does not prove attachment or penetration. Requires anatomical footprint review."
+    },
+    {
+      "id": "capsule_tibiofemoral_R",
+      "name_zh": "右膝关节囊",
+      "boundary_vertices": 404,
+      "rim_to_nearest_related_bone_mm": {
+        "min": 0.0,
+        "median": 0.325,
+        "p95": 3.228,
+        "max": 10.004
+      },
+      "interpretation": "Rim-to-bone proximity only. An opening is not automatically damage; distance does not prove attachment or penetration. Requires anatomical footprint review."
+    },
+    {
+      "id": "capsule_hip_R",
+      "name_zh": "右髋关节囊",
+      "boundary_vertices": 140,
+      "rim_to_nearest_related_bone_mm": {
+        "min": 0.0,
+        "median": 0.072,
+        "p95": 1.049,
+        "max": 1.79
+      },
+      "interpretation": "Rim-to-bone proximity only. An opening is not automatically damage; distance does not prove attachment or penetration. Requires anatomical footprint review."
+    },
+    {
+      "id": "capsule_glenohumeral_R",
+      "name_zh": "右盂肱关节囊",
+      "boundary_vertices": 0,
+      "rim_to_nearest_related_bone_mm": {
+        "min": null,
+        "median": null,
+        "p95": null,
+        "max": null
+      },
+      "interpretation": "Rim-to-bone proximity only. An opening is not automatically damage; distance does not prove attachment or penetration. Requires anatomical footprint review."
+    },
+    {
+      "id": "capsule_humeroulnar_R",
+      "name_zh": "右肘关节囊",
+      "boundary_vertices": 0,
+      "rim_to_nearest_related_bone_mm": {
+        "min": null,
+        "median": null,
+        "p95": null,
+        "max": null
+      },
+      "interpretation": "Rim-to-bone proximity only. An opening is not automatically damage; distance does not prove attachment or penetration. Requires anatomical footprint review."
+    }
+  ]
+}

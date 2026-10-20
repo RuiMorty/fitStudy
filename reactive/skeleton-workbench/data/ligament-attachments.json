@@ -1,0 +1,669 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-10-13",
+  "scope": "逐项来源支持的信息；不从区域关联推断附着点。",
+  "structures": {
+    "Radiate carpal ligament": {
+      "origin": "头状骨掌侧，为主要放射中心。",
+      "insertion": "主要向舟骨、月骨和三角骨掌侧分散附着。",
+      "course": "这是掌侧的一组放射状纤维带，不宜当作一条独立的直线韧带，也不能把区域目录中所有腕骨都当成它的止点。",
+      "evidence_status": "secondary_reference_pending",
+      "limitations": "当前可直接读取的词条缺少明确原始引文；该关系仅作有出处的待复核描述，尚不能标为解剖准确。分束命名须与现代腕关节图谱对应。",
+      "references": [
+        {
+          "title": "Radiate carpal ligament｜百科定义（证据待补强）",
+          "url": "https://en.wikipedia.org/wiki/Radiate_carpal_ligament",
+          "section": "Radiate carpal ligament｜百科定义（证据待补强）",
+          "quote": "The majority of the bands radiate from the capitate to the scaphoid , lunate , and triquetral bones .",
+          "retrieved": "2026-10-13",
+          "page_sha256": "37b0eebb184df5980c37513460d85ecdf4bd3fca76388ec8213684957fe280ff"
+        }
+      ],
+      "model_footprint_status": "not_anatomically_calibrated"
+    },
+    "Ulnocapitate ligament": {
+      "origin": "尺骨远端掌侧的尺腕韧带起始区域。",
+      "insertion": "头状骨掌侧。",
+      "course": "由尺骨远端经过月骨掌侧，斜向头状骨；文献所说“跨过月骨”不能写成“以月骨为止点”。",
+      "evidence_status": "reference_checked",
+      "limitations": "论文支持尺骨远端—头状骨的走行关系；未提供本模型对应的毫米级足印，具体茎突/TFCC 边界仍须二核。",
+      "references": [
+        {
+          "title": "Wang 等，2021｜腕韧带解剖与超声综述 §3.1 / 图7",
+          "url": "https://doi.org/10.3390/diagnostics11101834",
+          "section": "Wang 等，2021｜腕韧带解剖与超声综述 §3.1 / 图7",
+          "quote": "The ulnocapitate ligament spans over the distal ulna, lunate, and capitate",
+          "retrieved": "2026-10-13",
+          "page_sha256": "7bf861196bb4b6e34ea9a3fe5851987fb3b5b30454387a3a58be43bda2615ffa",
+          "retrieval_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8534780/fullTextXML"
+        }
+      ],
+      "model_footprint_status": "not_anatomically_calibrated"
+    },
+    "Ulnolunate ligament": {
+      "origin": "尺骨远端的尺腕韧带起始区域。",
+      "insertion": "月骨。",
+      "course": "尺腕掌侧韧带之一。",
+      "evidence_status": "reference_checked",
+      "limitations": "论文支持连接骨关系；不能把整组尺腕韧带的所有起始结构套用到这一束。",
+      "references": [
+        {
+          "title": "Wang 等，2021｜腕韧带解剖与超声综述 §3.2 / 图9",
+          "url": "https://doi.org/10.3390/diagnostics11101834",
+          "section": "Wang 等，2021｜腕韧带解剖与超声综述 §3.2 / 图9",
+          "quote": "The ulnolunate ligament is seen bridging the ulna and lunate",
+          "retrieved": "2026-10-13",
+          "page_sha256": "7bf861196bb4b6e34ea9a3fe5851987fb3b5b30454387a3a58be43bda2615ffa",
+          "retrieval_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8534780/fullTextXML"
+        }
+      ],
+      "model_footprint_status": "not_anatomically_calibrated"
+    },
+    "Ulnotriquetral ligament": {
+      "origin": "尺骨远端的尺腕韧带起始区域。",
+      "insertion": "三角骨。",
+      "course": "构成 TFCC 掌侧壁的一部分。",
+      "evidence_status": "reference_checked",
+      "limitations": "文献描述已核对；个体附着区大小和当前三维足印仍待复核。",
+      "references": [
+        {
+          "title": "Wang 等，2021｜腕韧带解剖与超声综述 §3.3 / 图10",
+          "url": "https://doi.org/10.3390/diagnostics11101834",
+          "section": "Wang 等，2021｜腕韧带解剖与超声综述 §3.3 / 图10",
+          "quote": "the ulnotriquetral ligament is seen bridging the distal ulna and triquetrum",
+          "retrieved": "2026-10-13",
+          "page_sha256": "7bf861196bb4b6e34ea9a3fe5851987fb3b5b30454387a3a58be43bda2615ffa",
+          "retrieval_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8534780/fullTextXML"
+        }
+      ],
+      "model_footprint_status": "not_anatomically_calibrated"
+    },
+    "Lateral temporomandibular ligament": {
+      "origin": "颞骨关节结节起始部附近。",
+      "insertion": "下颌骨髁突颈。",
+      "course": "属于关节囊外侧的增厚结构，与关节囊连续，不能当作悬空的独立硬片。",
+      "evidence_status": "reference_checked",
+      "limitations": "本出处支持整体附着关系；没有提供外斜部、内水平部各自的精确足印，面板不将分束细节写成已核准。",
+      "references": [
+        {
+          "title": "TeachMeAnatomy｜TMJ / Ligaments",
+          "url": "https://teachmeanatomy.info/head/joints/temporomandibular/",
+          "section": "TeachMeAnatomy｜TMJ / Ligaments",
+          "quote": "Lateral ligament – runs from the beginning of the articular tubule to the mandibular neck.",
+          "retrieved": "2026-10-13",
+          "page_sha256": "763603cbbb83f3f47369494fe0ceae0653408caa1c8d39b41bf714f6e1a7fd57"
+        }
+      ],
+      "model_footprint_status": "not_anatomically_calibrated"
+    },
+    "Scaphotrapeziotrapezoidal ligament": {
+      "origin": "舟骨远端极。",
+      "insertion": "大多角骨和小多角骨。",
+      "course": "位于掌侧腕中关节韧带群。",
+      "evidence_status": "reference_checked",
+      "limitations": "文献描述已核对；个体附着区大小和当前三维足印仍待复核。",
+      "references": [
+        {
+          "title": "Kenhub｜Intercarpal joints / Palmar intercarpal ligaments",
+          "url": "https://www.kenhub.com/en/library/anatomy/intercarpal-joints",
+          "section": "Kenhub｜Intercarpal joints / Palmar intercarpal ligaments",
+          "quote": "The scaphotrapeziotrapezoidal ligament, which connects the distal pole of the scaphoid bone to the trapezium and trapezoid bones",
+          "retrieved": "2026-10-13",
+          "page_sha256": "5a8f4064bff429c1b6485d5d97b15306918e037dacbf40b9c0821ea3e14fe80b"
+        }
+      ],
+      "model_footprint_status": "not_anatomically_calibrated"
+    },
+    "Scaphocapitate ligament": {
+      "origin": "舟骨。",
+      "insertion": "头状骨。",
+      "course": "位于掌侧腕中关节韧带群。",
+      "evidence_status": "reference_checked",
+      "limitations": "文献描述已核对；个体附着区大小和当前三维足印仍待复核。",
+      "references": [
+        {
+          "title": "Kenhub｜Intercarpal joints / Palmar intercarpal ligaments",
+          "url": "https://www.kenhub.com/en/library/anatomy/intercarpal-joints",
+          "section": "Kenhub｜Intercarpal joints / Palmar intercarpal ligaments",
+          "quote": "The scaphocapitate ligament, that courses from the scaphoid to the capitate bone",
+          "retrieved": "2026-10-13",
+          "page_sha256": "5a8f4064bff429c1b6485d5d97b15306918e037dacbf40b9c0821ea3e14fe80b"
+        }
+      ],
+      "model_footprint_status": "not_anatomically_calibrated"
+    },
+    "Triquetrocapitate ligament": {
+      "origin": "三角骨远端缘。",
+      "insertion": "头状骨骨体。",
+      "course": "位于掌侧腕中关节韧带群。",
+      "evidence_status": "reference_checked",
+      "limitations": "文献描述已核对；个体附着区大小和当前三维足印仍待复核。",
+      "references": [
+        {
+          "title": "Kenhub｜Intercarpal joints / Palmar intercarpal ligaments",
+          "url": "https://www.kenhub.com/en/library/anatomy/intercarpal-joints",
+          "section": "Kenhub｜Intercarpal joints / Palmar intercarpal ligaments",
+          "quote": "The triquetrocapitate ligament, attaching between the distal margin of triquetrum and body of capitate bone.",
+          "retrieved": "2026-10-13",
+          "page_sha256": "5a8f4064bff429c1b6485d5d97b15306918e037dacbf40b9c0821ea3e14fe80b"
+        }
+      ],
+      "model_footprint_status": "not_anatomically_calibrated"
+    },
+    "Triquetrohamate ligament": {
+      "origin": "三角骨。",
+      "insertion": "钩骨。",
+      "course": "位于掌侧腕中关节韧带群。",
+      "evidence_status": "reference_checked",
+      "limitations": "文献描述已核对；个体附着区大小和当前三维足印仍待复核。",
+      "references": [
+        {
+          "title": "Kenhub｜Intercarpal joints / Palmar intercarpal ligaments",
+          "url": "https://www.kenhub.com/en/library/anatomy/intercarpal-joints",
+          "section": "Kenhub｜Intercarpal joints / Palmar intercarpal ligaments",
+          "quote": "The triquetrohamate ligament,connecting the triquetrum and hamate bones",
+          "retrieved": "2026-10-13",
+          "page_sha256": "5a8f4064bff429c1b6485d5d97b15306918e037dacbf40b9c0821ea3e14fe80b"
+        }
+      ],
+      "model_footprint_status": "not_anatomically_calibrated"
+    },
+    "Dorsal scaphotriquetral ligament": {
+      "origin": "三角骨背侧区域。",
+      "insertion": "舟骨背侧区域。",
+      "course": "腕背侧骨间韧带的近端增厚部分；整体腕背侧骨间韧带还可有其他纤维，不能据此将整组都视为舟三角韧带。",
+      "evidence_status": "reference_checked",
+      "limitations": "文献描述已核对；个体附着区大小和当前三维足印仍待复核。",
+      "references": [
+        {
+          "title": "Kenhub｜Intercarpal joints / Dorsal intercarpal ligament",
+          "url": "https://www.kenhub.com/en/library/anatomy/intercarpal-joints",
+          "section": "Kenhub｜Intercarpal joints / Dorsal intercarpal ligament",
+          "quote": "The thickened proximal part of the dorsal intercarpal ligament ligament, extending between the dorsal aspects of the scaphoid and triquetrum bones, is sometimes specifically referred to as the dorsal scaphotriquetral ligament .",
+          "retrieved": "2026-10-13",
+          "page_sha256": "5a8f4064bff429c1b6485d5d97b15306918e037dacbf40b9c0821ea3e14fe80b"
+        }
+      ],
+      "model_footprint_status": "not_anatomically_calibrated"
+    },
+    "Dorsal intercarpal ligaments": {
+      "origin": "三角骨背侧结节。",
+      "insertion": "舟骨背侧沟；可另有纤维至小多角骨和头状骨。",
+      "course": "大体横向走行；源对象为组合网格，其各支束尚未与文献逐一对应。",
+      "evidence_status": "reference_checked",
+      "limitations": "文献描述已核对；个体附着区大小和当前三维足印仍待复核。",
+      "references": [
+        {
+          "title": "Kenhub｜Intercarpal joints / Dorsal intercarpal ligament",
+          "url": "https://www.kenhub.com/en/library/anatomy/intercarpal-joints",
+          "section": "Kenhub｜Intercarpal joints / Dorsal intercarpal ligament",
+          "quote": "The dorsal intercarpal ligament is a horizontal strap that arises from the dorsal tubercle of the triquetrum bone to the dorsal groove of the scaphoid bone, and may pass additional fibres to the trapezoid and capitate bones.",
+          "retrieved": "2026-10-13",
+          "page_sha256": "5a8f4064bff429c1b6485d5d97b15306918e037dacbf40b9c0821ea3e14fe80b"
+        }
+      ],
+      "model_footprint_status": "not_anatomically_calibrated"
+    },
+    "Scapholunate interosseous ligament": {
+      "origin": "舟骨朝向月骨的相邻面。",
+      "insertion": "月骨朝向舟骨的相邻面。",
+      "course": "近排腕骨之间的囊内骨间韧带。",
+      "evidence_status": "reference_checked",
+      "limitations": "本出处未细分掌侧、背侧与膜部，当前薄片不能据此认定代表全部分束。",
+      "references": [
+        {
+          "title": "Kenhub｜Intercarpal joints / Interosseous intercarpal ligaments",
+          "url": "https://www.kenhub.com/en/library/anatomy/intercarpal-joints",
+          "section": "Kenhub｜Intercarpal joints / Interosseous intercarpal ligaments",
+          "quote": "These structures span between the adjacent sides of the relevant carpal bones, thus separating the joint spaces of the midcarpal and radiocarpal joints.",
+          "retrieved": "2026-10-13",
+          "page_sha256": "5a8f4064bff429c1b6485d5d97b15306918e037dacbf40b9c0821ea3e14fe80b"
+        }
+      ],
+      "model_footprint_status": "not_anatomically_calibrated"
+    },
+    "Lunotriquetral interosseous ligament": {
+      "origin": "月骨朝向三角骨的相邻面。",
+      "insertion": "三角骨朝向月骨的相邻面。",
+      "course": "近排腕骨之间的囊内骨间韧带。",
+      "evidence_status": "reference_checked",
+      "limitations": "本出处未细分掌侧、背侧与膜部，当前薄片不能据此认定代表全部分束。",
+      "references": [
+        {
+          "title": "Kenhub｜Intercarpal joints / Interosseous intercarpal ligaments",
+          "url": "https://www.kenhub.com/en/library/anatomy/intercarpal-joints",
+          "section": "Kenhub｜Intercarpal joints / Interosseous intercarpal ligaments",
+          "quote": "These structures span between the adjacent sides of the relevant carpal bones, thus separating the joint spaces of the midcarpal and radiocarpal joints.",
+          "retrieved": "2026-10-13",
+          "page_sha256": "5a8f4064bff429c1b6485d5d97b15306918e037dacbf40b9c0821ea3e14fe80b"
+        }
+      ],
+      "model_footprint_status": "not_anatomically_calibrated"
+    },
+    "Pisohamate ligament": {
+      "origin": "豌豆骨。",
+      "insertion": "钩骨钩。",
+      "course": "豌豆骨向远端的韧带连接。",
+      "evidence_status": "reference_checked",
+      "limitations": "文献描述已核对；个体附着区大小和当前三维足印仍待复核。",
+      "references": [
+        {
+          "title": "Kenhub｜Intercarpal joints / Articular surfaces",
+          "url": "https://www.kenhub.com/en/library/anatomy/intercarpal-joints",
+          "section": "Kenhub｜Intercarpal joints / Articular surfaces",
+          "quote": "The pisiform bone is also connected to the hook of hamate bone and fifth metacarpal bones via pisohamate and pisometacarpal ligaments, respectively.",
+          "retrieved": "2026-10-13",
+          "page_sha256": "5a8f4064bff429c1b6485d5d97b15306918e037dacbf40b9c0821ea3e14fe80b"
+        }
+      ],
+      "model_footprint_status": "not_anatomically_calibrated"
+    },
+    "Pisometacarpal ligament": {
+      "origin": "豌豆骨。",
+      "insertion": "第 5 掌骨。",
+      "course": "豌豆骨向远端的韧带连接。",
+      "evidence_status": "reference_checked",
+      "limitations": "文献描述已核对；个体附着区大小和当前三维足印仍待复核。",
+      "references": [
+        {
+          "title": "Kenhub｜Intercarpal joints / Articular surfaces",
+          "url": "https://www.kenhub.com/en/library/anatomy/intercarpal-joints",
+          "section": "Kenhub｜Intercarpal joints / Articular surfaces",
+          "quote": "The pisiform bone is also connected to the hook of hamate bone and fifth metacarpal bones via pisohamate and pisometacarpal ligaments, respectively.",
+          "retrieved": "2026-10-13",
+          "page_sha256": "5a8f4064bff429c1b6485d5d97b15306918e037dacbf40b9c0821ea3e14fe80b"
+        }
+      ],
+      "model_footprint_status": "not_anatomically_calibrated"
+    },
+    "Radioscaphocapitate ligament": {
+      "origin": "桡骨茎突。",
+      "insertion": "舟骨远端；少量纤维继续至头状骨近端。",
+      "course": "属于掌侧桡腕韧带群，构成关节囊外侧部分。",
+      "evidence_status": "reference_checked",
+      "limitations": "文献描述已核对；个体附着区大小和当前三维足印仍待复核。",
+      "references": [
+        {
+          "title": "Kenhub｜Radiocarpal joint / Palmar radiocarpal ligaments",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-wrist-joint",
+          "section": "Kenhub｜Radiocarpal joint / Palmar radiocarpal ligaments",
+          "quote": "extends from the styloid process of radius to the distal aspect of scaphoid bone , with a small number of fibres continuing and proximal aspect of the capitate bone.",
+          "retrieved": "2026-10-13",
+          "page_sha256": "f419f8a57ccb719551d13787838b1b68461521974e3e102b5cb5a6213f132372"
+        }
+      ],
+      "model_footprint_status": "not_anatomically_calibrated"
+    },
+    "Dorsal radiocarpal ligament": {
+      "origin": "桡骨背侧结节两侧的桡骨远端。",
+      "insertion": "较宽浅部至三角骨背侧；较窄深部至月三角骨间韧带。",
+      "course": "背侧斜向走行；既包含骨性连接，也涉及软组织连接。",
+      "evidence_status": "reference_checked",
+      "limitations": "文献描述已核对；个体附着区大小和当前三维足印仍待复核。",
+      "references": [
+        {
+          "title": "Kenhub｜Radiocarpal joint / Dorsal radiocarpal ligament",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-wrist-joint",
+          "section": "Kenhub｜Radiocarpal joint / Dorsal radiocarpal ligament",
+          "quote": "The narrower deep part arises medial to dorsal tubercle attaches to the lunotriquetral interosseous ligament.",
+          "retrieved": "2026-10-13",
+          "page_sha256": "f419f8a57ccb719551d13787838b1b68461521974e3e102b5cb5a6213f132372"
+        }
+      ],
+      "model_footprint_status": "not_anatomically_calibrated"
+    },
+    "Palmar scaphotriquetral ligament": {
+      "origin": "舟骨结节，附着呈扇形。",
+      "insertion": "三角骨，位于豌豆骨深面。",
+      "course": "经头状骨和钩骨掌侧；经过这些骨不等于以这些骨为起止。",
+      "evidence_status": "reference_checked",
+      "limitations": "文献描述已核对；个体附着区大小和当前三维足印仍待复核。",
+      "references": [
+        {
+          "title": "Wang 等，2021｜腕韧带解剖与超声综述 §4 / 图13",
+          "url": "https://doi.org/10.3390/diagnostics11101834",
+          "section": "Wang 等，2021｜腕韧带解剖与超声综述 §4 / 图13",
+          "quote": "The ligament can be seen connecting the scaphoid tubercle and triquetrum (underneath the shadow of the pisiform), coursing over the capitate and hamate",
+          "retrieved": "2026-10-13",
+          "page_sha256": "7bf861196bb4b6e34ea9a3fe5851987fb3b5b30454387a3a58be43bda2615ffa",
+          "retrieval_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8534780/fullTextXML"
+        }
+      ],
+      "model_footprint_status": "not_anatomically_calibrated"
+    },
+    "Palmar lunotriquetral ligament": {
+      "origin": "月骨掌侧相邻面。",
+      "insertion": "三角骨掌侧相邻面。",
+      "course": "近排腕骨间的短掌侧韧带；不要以此代表月三角骨间韧带的全部分束。",
+      "evidence_status": "reference_checked",
+      "limitations": "文献描述已核对；个体附着区大小和当前三维足印仍待复核。",
+      "references": [
+        {
+          "title": "Wang 等，2021｜腕韧带解剖与超声综述 §4 / 图11",
+          "url": "https://doi.org/10.3390/diagnostics11101834",
+          "section": "Wang 等，2021｜腕韧带解剖与超声综述 §4 / 图11",
+          "quote": "the volar scapholunate ( Figure 11 A) and lunotriquetral ligaments ( Figure 11 B).",
+          "retrieved": "2026-10-13",
+          "page_sha256": "7bf861196bb4b6e34ea9a3fe5851987fb3b5b30454387a3a58be43bda2615ffa",
+          "retrieval_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8534780/fullTextXML"
+        }
+      ],
+      "model_footprint_status": "not_anatomically_calibrated"
+    },
+    "Radial collateral ligament of wrist joint": {
+      "origin": "桡骨远端桡侧。",
+      "insertion": "舟骨。",
+      "course": "腕侧方的关节稳定结构。",
+      "evidence_status": "reference_checked",
+      "limitations": "此处采用该综述及其引用的侧副韧带研究；不同文献对与尺腕韧带的分界存在差异，未将豌豆骨等附加纤维写成确定止点。",
+      "references": [
+        {
+          "title": "Wang 等，2021｜腕韧带解剖与超声综述 §7 / 图19",
+          "url": "https://doi.org/10.3390/diagnostics11101834",
+          "section": "Wang 等，2021｜腕韧带解剖与超声综述 §7 / 图19",
+          "quote": "The radial collateral ligament connects the distal radius and scaphoid.",
+          "retrieved": "2026-10-13",
+          "page_sha256": "7bf861196bb4b6e34ea9a3fe5851987fb3b5b30454387a3a58be43bda2615ffa",
+          "retrieval_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8534780/fullTextXML"
+        }
+      ],
+      "model_footprint_status": "not_anatomically_calibrated"
+    },
+    "Ulnar collateral ligament of wrist joint": {
+      "origin": "尺骨远端尺侧。",
+      "insertion": "三角骨。",
+      "course": "腕侧方的关节稳定结构。",
+      "evidence_status": "reference_checked",
+      "limitations": "此处采用该综述及其引用的侧副韧带研究；不同文献对与尺腕韧带的分界存在差异，未将豌豆骨等附加纤维写成确定止点。",
+      "references": [
+        {
+          "title": "Wang 等，2021｜腕韧带解剖与超声综述 §7 / 图19",
+          "url": "https://doi.org/10.3390/diagnostics11101834",
+          "section": "Wang 等，2021｜腕韧带解剖与超声综述 §7 / 图19",
+          "quote": "The ulnar collateral ligament connects the distal ulna and triquetrum.",
+          "retrieved": "2026-10-13",
+          "page_sha256": "7bf861196bb4b6e34ea9a3fe5851987fb3b5b30454387a3a58be43bda2615ffa",
+          "retrieval_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8534780/fullTextXML"
+        }
+      ],
+      "model_footprint_status": "not_anatomically_calibrated"
+    },
+    "Dorsal ulnocarpal ligament": {
+      "origin": "尺骨远端背侧区域。",
+      "insertion": "三角骨背侧区域。",
+      "course": "对照背侧尺三角韧带；超声中表现为关节囊增厚，未必是一条完全独立的带状结构。",
+      "evidence_status": "source_group_mapping_pending",
+      "limitations": "源对象名为 Dorsal ulnocarpal ligament；是否仅代表文献中的背侧尺三角部分仍需结合网格二核。",
+      "references": [
+        {
+          "title": "Wang 等，2021｜腕韧带解剖与超声综述 §5 / 图16",
+          "url": "https://doi.org/10.3390/diagnostics11101834",
+          "section": "Wang 等，2021｜腕韧带解剖与超声综述 §5 / 图16",
+          "quote": "Under US imaging, the dorsal ulnotriquetral ligament appears as a thickened portion of the capsule instead of a separate ligament",
+          "retrieved": "2026-10-13",
+          "page_sha256": "7bf861196bb4b6e34ea9a3fe5851987fb3b5b30454387a3a58be43bda2615ffa",
+          "retrieval_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8534780/fullTextXML"
+        }
+      ],
+      "model_footprint_status": "not_anatomically_calibrated"
+    },
+    "Superior glenohumeral ligament": {
+      "origin": "本次参考资料描述为肩胛骨盂上结节；与上盂唇的具体附着关系仍需补充核查。",
+      "insertion": "肱骨小结节近端、解剖颈邻近区域。",
+      "course": "上方囊韧带，与喙肱韧带共同参与肩袖间隙的稳定。",
+      "evidence_status": "limited",
+      "limitations": "本次资料给出概括性附着描述，不能直接把盂上结节上的某一点作为唯一标准。需结合盂唇与个体变异进一步核对。",
+      "references": [
+        {
+          "title": "Kenhub｜盂肱关节 · 韧带",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-shoulder-joint",
+          "quote": "The superior glenohumeral ligament extends from the supraglenoid tubercle of scapula to the proximal aspect of the lesser tubercle of humerus.",
+          "retrieved": "2026-10-13"
+        }
+      ],
+      "model_footprint_status": "not_anatomically_calibrated"
+    },
+    "Middle glenohumeral ligament": {
+      "origin": "肩胛骨前方关节盂缘，位于上盂肱韧带下方。",
+      "insertion": "肱骨小结节区域。",
+      "course": "较宽的囊韧带，位于肩胛下肌腱深面并与其融合；形态存在变异。",
+      "evidence_status": "reference_checked",
+      "limitations": "资料用于核对连接关系和形态类型，不能证明当前网格的精确足印、厚度或运动性能。",
+      "references": [
+        {
+          "title": "Kenhub｜盂肱关节 · 韧带",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-shoulder-joint",
+          "quote": "The middle glenohumeral ligament attaches along the anterior glenoid margin of the scapula, just inferior to the superior GH ligament. It extends to the lesser tubercle of humerus. This wide ligament lies deep to, and blends, with the tendon of subscapularis muscle.",
+          "retrieved": "2026-10-13"
+        }
+      ],
+      "model_footprint_status": "not_anatomically_calibrated"
+    },
+    "Inferior glenohumeral ligament": {
+      "origin": "下方盂唇与关节盂缘区域，须按前后束区分。",
+      "insertion": "肱骨颈下内侧区域，具体附着形式有差异。",
+      "course": "吊带状复合体：前束、后束以及二者之间的腋隐窝。",
+      "evidence_status": "reference_checked",
+      "limitations": "资料用于核对连接关系和形态类型，不能证明当前网格的精确足印、厚度或运动性能。",
+      "references": [
+        {
+          "title": "Kenhub｜盂肱关节 · 韧带",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-shoulder-joint",
+          "quote": "The inferior glenohumeral ligament is a sling-like ligament extending between the glenoid labrum and the inferomedial part of the humeral neck. It is split into anterior and posterior bands, between which sits the axillary pouch.",
+          "retrieved": "2026-10-13"
+        }
+      ],
+      "model_footprint_status": "not_anatomically_calibrated"
+    },
+    "Coracohumeral ligament": {
+      "origin": "肩胛骨喙突区域。",
+      "insertion": "肱骨大小结节区域，并与肩袖间隙周边结构连续。",
+      "course": "跨肩关节上方；分束和与肌腱融合关系需结合更细致资料核对。",
+      "evidence_status": "reference_checked",
+      "limitations": "资料用于核对连接关系和形态类型，不能证明当前网格的精确足印、厚度或运动性能。",
+      "references": [
+        {
+          "title": "Kenhub｜盂肱关节 · 韧带",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-shoulder-joint",
+          "quote": "The coracohumeral ligament extends between the coracoid process of the scapula to the tubercles of the humerus and the intervening transverse humeral ligament, supporting the joint from its superior side.",
+          "retrieved": "2026-10-13"
+        }
+      ],
+      "model_footprint_status": "not_anatomically_calibrated"
+    },
+    "Transverse humeral ligament": {
+      "origin": "肱骨大结节侧。",
+      "insertion": "肱骨小结节侧。",
+      "course": "横跨结节间沟上方，与肱二头肌长头腱的通道相关。",
+      "evidence_status": "reference_checked",
+      "limitations": "传统独立韧带命名与腱纤维延续的组织学解释存在讨论；本样板保留源命名，不声称独立组织边界已核准。",
+      "references": [
+        {
+          "title": "Kenhub｜盂肱关节 · 韧带",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-shoulder-joint",
+          "quote": "The transverse humeral ligament extends horizontally between the tubercles of the humerus. It covers the intertubercular sulcus and the long head tendon of the biceps brachii muscle, preventing displacement of the tendon from the sulcus.",
+          "retrieved": "2026-10-13"
+        }
+      ],
+      "model_footprint_status": "not_anatomically_calibrated"
+    },
+    "Coraco-acromial ligament": {
+      "origin": "喙突外侧缘。",
+      "insertion": "肩峰前外侧下表面。",
+      "course": "强韧的三角形／扇形结构，与喙突、肩峰共同构成喙肩弓，跨过肱骨头上方。",
+      "evidence_status": "reference_checked",
+      "limitations": "资料用于核对连接关系和形态类型，不能证明当前网格的精确足印、厚度或运动性能。",
+      "references": [
+        {
+          "title": "Kenhub｜喙肩韧带",
+          "url": "https://www.kenhub.com/en/library/anatomy/coracoacromial-ligament",
+          "quote": "The coracoacromial ligament is a strong triangular ligament of the glenohumeral joint complex. It attaches between the lateral border of the coracoid process and the apex of the acromion of the scapula .",
+          "retrieved": "2026-10-13"
+        },
+        {
+          "title": "Desai 等，2022｜喙突与肩部韧带",
+          "url": "https://doi.org/10.1055/s-0041-1741091",
+          "quote": "The CAL extends from the inferior anterolateral surface of the acromion to the lateral border of the coracoid process",
+          "retrieved": "2026-10-13"
+        }
+      ],
+      "model_footprint_status": "not_anatomically_calibrated"
+    },
+    "Conoid ligament": {
+      "origin": "喙突基部区域。",
+      "insertion": "锁骨下表面的锥状结节。",
+      "course": "喙锁韧带的锥状部分，与斜方部分在喙突侧连续，向锁骨侧分开。",
+      "evidence_status": "reference_checked",
+      "limitations": "资料用于核对连接关系和形态类型，不能证明当前网格的精确足印、厚度或运动性能。",
+      "references": [
+        {
+          "title": "Kenhub｜喙锁韧带",
+          "url": "https://www.kenhub.com/en/library/anatomy/coracoclavicular-ligament",
+          "quote": "Conoid part: conoid tubercle -> coracoid process Trapezoid part:",
+          "retrieved": "2026-10-13"
+        },
+        {
+          "title": "Desai 等，2022｜喙突与肩部韧带",
+          "url": "https://doi.org/10.1055/s-0041-1741091",
+          "quote": "The CCL is a complex of two components: the conoid and trapezoid segments. These two segments are continuous inferiorly at the coracoid process attachment but separate before attaching to the inferior aspect of the clavicle superiorly",
+          "retrieved": "2026-10-13"
+        }
+      ],
+      "model_footprint_status": "not_anatomically_calibrated"
+    },
+    "Trapezoid ligament": {
+      "origin": "喙突上表面区域。",
+      "insertion": "锁骨下表面的斜方线。",
+      "course": "喙锁韧带的斜方部分，较扁平；与锥状部分共同连接喙突和锁骨。",
+      "evidence_status": "reference_checked",
+      "limitations": "资料用于核对连接关系和形态类型，不能证明当前网格的精确足印、厚度或运动性能。",
+      "references": [
+        {
+          "title": "Kenhub｜喙锁韧带",
+          "url": "https://www.kenhub.com/en/library/anatomy/coracoclavicular-ligament",
+          "quote": "Trapezoid part: trapezoid line -> coracoid process Function",
+          "retrieved": "2026-10-13"
+        },
+        {
+          "title": "Desai 等，2022｜喙突与肩部韧带",
+          "url": "https://doi.org/10.1055/s-0041-1741091",
+          "quote": "The CCL is a complex of two components: the conoid and trapezoid segments. These two segments are continuous inferiorly at the coracoid process attachment but separate before attaching to the inferior aspect of the clavicle superiorly",
+          "retrieved": "2026-10-13"
+        }
+      ],
+      "model_footprint_status": "not_anatomically_calibrated"
+    },
+    "Acromioclavicular ligament": {
+      "origin": "肩峰的肩锁关节邻近区域（详细边界待补依据）。",
+      "insertion": "锁骨肩峰端邻近区域（详细边界待补依据）。",
+      "course": "肩锁关节囊韧带复合体，尤其需要核对上后方部分，不能概括为一根绳。",
+      "evidence_status": "limited",
+      "limitations": "本次论文支持上后方囊韧带复合体的重要性，尚不足以精确定位全部附着边界；此条未标为附着资料已核准。",
+      "references": [
+        {
+          "title": "2025｜肩锁韧带与后方稳定性",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12415468/",
+          "quote": "80% of horizontal stability is provided by an intact superior-posterior capsuloligamentous complex",
+          "retrieved": "2026-10-13"
+        }
+      ],
+      "model_footprint_status": "not_anatomically_calibrated"
+    },
+    "Superior transverse scapular ligament": {
+      "origin": "肩胛上切迹一侧骨缘。",
+      "insertion": "肩胛上切迹另一侧骨缘。",
+      "course": "跨越切迹形成纤维骨性孔道；肩胛上神经从下方通过，形态可变。",
+      "evidence_status": "reference_checked",
+      "limitations": "资料用于核对连接关系和形态类型，不能证明当前网格的精确足印、厚度或运动性能。",
+      "references": [
+        {
+          "title": "Paraskevas 等，2025｜肩胛切迹与上横韧带",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12049851/",
+          "quote": "the suprascapular notch (SN) of the superior border of the scapula is crossed by the superior transverse scapular ligament (STSL). Thus, the formed fibro-osseous foramen conducts the suprascapular nerve (SSN) to the supraspinatus fossa, with the suprascapular vessels passing above the STSL.",
+          "retrieved": "2026-10-13"
+        }
+      ],
+      "model_footprint_status": "not_anatomically_calibrated"
+    },
+    "Inferior transverse scapular ligament": {
+      "origin": "肩胛冈外侧与盂切迹邻近区域，精确附着待补。",
+      "insertion": "肩胛颈后方、盂切迹邻近区域，精确附着待补。",
+      "course": "又称盂切迹韧带；与肩胛上神经通过盂切迹的通道相关，存在变异。",
+      "evidence_status": "limited",
+      "limitations": "当前资料支持与盂切迹及神经通道的位置关系，未直接证明两端足印，因此附着描述作为待核对范围。",
+      "references": [
+        {
+          "title": "2022｜肩胛上神经与盂切迹韧带",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8802659/",
+          "quote": "The nerve continues along the supraspinous fossa until it reaches the scapular spine, where it passes through the spinoglenoid notch and under the spinoglenoid ligament [ 6 ].",
+          "retrieved": "2026-10-13"
+        }
+      ],
+      "model_footprint_status": "not_anatomically_calibrated"
+    },
+    "Ulnar collateral ligament": {
+      "origin": "肱骨内上髁；这是肱尺连接束的概括性起侧描述。",
+      "insertion": "当前资料概括为尺骨冠突区域；不能用这一处代替后束、横束的全部附着。",
+      "course": "三角形复合体，资料区分前、后及下方束。需分束核对。",
+      "evidence_status": "limited",
+      "limitations": "本条资料仅支持总体连接与分束存在。各束精确足印、后束和横束附着仍待专项补齐；不把模型端点或颜色范围作为证据。",
+      "references": [
+        {
+          "title": "Kenhub｜肘关节韧带",
+          "url": "https://www.kenhub.com/en/library/anatomy/elbow-joint",
+          "quote": "The ulnar collateral ligament extends from the medial epicondyle of the humerus to the coronoid process of the ulna . It is triangular in shape, and is composed of three parts: an anterior , a posterior and an inferior band .",
+          "retrieved": "2026-10-13"
+        }
+      ],
+      "model_footprint_status": "not_anatomically_calibrated"
+    },
+    "Radial collateral ligament": {
+      "origin": "肱骨外上髁。",
+      "insertion": "远端纤维与桡骨环状韧带融合，并与邻近旋后肌、桡侧腕短伸肌纤维相连。",
+      "course": "外侧纤维束向环状韧带连续过渡；不应简单画成肱骨直接连到桡骨头的一条带。",
+      "evidence_status": "reference_checked",
+      "limitations": "外侧尺副韧带（LUCL）不等同于此对象，本轮未检出独立同名源模型。",
+      "references": [
+        {
+          "title": "Kenhub｜肘关节韧带",
+          "url": "https://www.kenhub.com/en/library/anatomy/elbow-joint",
+          "quote": "The radial collateral ligament has a low attachment to the lateral epicondyle of the humerus . The distal fibres blend with the annular ligament that encloses the head of the radius, as well as with the fibres of the supinator and the extensor carpi radialis brevis muscles.",
+          "retrieved": "2026-10-13"
+        }
+      ],
+      "model_footprint_status": "not_anatomically_calibrated"
+    },
+    "Annular ligament of radius": {
+      "origin": "尺骨桡切迹前缘。",
+      "insertion": "尺骨桡切迹后缘；主体环绕桡骨头。",
+      "course": "与尺骨共同形成容纳桡骨头旋转的环。环绕接触不等于整圈固定附着在桡骨头。",
+      "evidence_status": "reference_checked",
+      "limitations": "几何主轴端点对环状结构没有起止意义；A/B 几何候选只能辅助观察，不用于标定附着。",
+      "references": [
+        {
+          "title": "Kenhub｜近侧桡尺关节韧带",
+          "url": "https://www.kenhub.com/en/library/anatomy/proximal-radioulnar-joint",
+          "quote": "The annular ligament extends from the anterior margin of radial fossa of ulna, encircles the radial head and attaches to the posterior margin of the radial fossa. Thus, the annular ligament helps to create a stable ring within which the radial head can rotate.",
+          "retrieved": "2026-10-13"
+        }
+      ],
+      "model_footprint_status": "not_anatomically_calibrated"
+    },
+    "Quadrate ligament": {
+      "origin": "尺骨旋后肌窝上部、桡切迹下方邻近区域。",
+      "insertion": "桡骨颈，位于桡骨粗隆近侧。",
+      "course": "短纤维带，连接近侧桡尺骨；不能用来替代环状韧带。",
+      "evidence_status": "reference_checked",
+      "limitations": "概括性附着有资料支持；足印宽度与实际厚度未标定。",
+      "references": [
+        {
+          "title": "Kenhub｜近侧桡尺关节韧带",
+          "url": "https://www.kenhub.com/en/library/anatomy/proximal-radioulnar-joint",
+          "quote": "The quadrate ligament is a short fibrous band that spans from the superior part of the supinator fossa of ulna to the neck of radius, just proximal to the radial tuberosity .",
+          "retrieved": "2026-10-13"
+        }
+      ],
+      "model_footprint_status": "not_anatomically_calibrated"
+    }
+  }
+}

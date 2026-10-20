@@ -1,0 +1,44 @@
+{
+  "source_rails": [
+    [
+      [
+        -0.2599950432777405,
+        -0.015967559069395065,
+        0.8423984050750732
+      ],
+      [
+        -0.25958824157714844,
+        -0.012175648473203182,
+        0.8424201607704163
+      ]
+    ],
+    [
+      [
+        -0.25803953409194946,
+        -0.016751926392316818,
+        0.8422890305519104
+      ],
+      [
+        -0.2576327323913574,
+        -0.012960013933479786,
+        0.8423107862472534
+      ]
+    ]
+  ],
+  "rail_assignment": [
+    "Capitate",
+    "Hamate"
+  ],
+  "contacts": {
+    "Capitate": {
+      "terminal_vertices": 33,
+      "max_surface_distance_mm": 0.035
+    },
+    "Hamate": {
+      "terminal_vertices": 33,
+      "max_surface_distance_mm": 0.0351
+    }
+  },
+  "screening": {},
+  "scope": "right_only; source-based assembly candidate, footprint unverified"
+}

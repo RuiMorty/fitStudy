@@ -1,0 +1,2928 @@
+[
+  {
+    "id": "z_lig_capitohamate_interosseous_ligament_L",
+    "name_zh": "左头状钩骨间韧带",
+    "name_en": "Capitohamate interosseous ligament.l",
+    "side": "L",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_L",
+      "bone_hamate_L",
+      "bone_lunate_L",
+      "bone_pisiform_L",
+      "bone_radius_L",
+      "bone_scaphoid_L",
+      "bone_trapezium_L",
+      "bone_trapezoid_L",
+      "bone_triquetrum_L"
+    ],
+    "joint_or_connection_ids": [
+      "radiocarpal_L",
+      "intercarpal_L"
+    ],
+    "source_structure_id": "Capitohamate interosseous ligament.l",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 1280,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Intercarpal joints.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      0.25882676243782043,
+      0.8421049118041992,
+      0.014460977166891098
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_capitohamate_interosseous_ligament_R",
+    "name_zh": "右头状钩骨间韧带",
+    "name_en": "Capitohamate interosseous ligament.r",
+    "side": "R",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_R",
+      "bone_hamate_R",
+      "bone_lunate_R",
+      "bone_pisiform_R",
+      "bone_radius_R",
+      "bone_scaphoid_R",
+      "bone_trapezium_R",
+      "bone_trapezoid_R",
+      "bone_triquetrum_R"
+    ],
+    "joint_or_connection_ids": [
+      "radiocarpal_R",
+      "intercarpal_R"
+    ],
+    "source_structure_id": "Capitohamate interosseous ligament.r",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 1280,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Intercarpal joints.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      -0.25882673263549805,
+      0.8421049118041992,
+      0.014460977166891098
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_dorsal_intercarpal_ligaments_L",
+    "name_zh": "左腕骨间背侧韧带组",
+    "name_en": "Dorsal intercarpal ligaments.l",
+    "side": "L",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_L",
+      "bone_hamate_L",
+      "bone_lunate_L",
+      "bone_pisiform_L",
+      "bone_radius_L",
+      "bone_scaphoid_L",
+      "bone_trapezium_L",
+      "bone_trapezoid_L",
+      "bone_triquetrum_L"
+    ],
+    "joint_or_connection_ids": [
+      "radiocarpal_L",
+      "intercarpal_L"
+    ],
+    "source_structure_id": "Dorsal intercarpal ligaments.l",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 23360,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Intercarpal joints.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      0.2582949697971344,
+      0.8430068492889404,
+      0.011925185099244118
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_dorsal_intercarpal_ligaments_R",
+    "name_zh": "右腕骨间背侧韧带组",
+    "name_en": "Dorsal intercarpal ligaments.r",
+    "side": "R",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_R",
+      "bone_hamate_R",
+      "bone_lunate_R",
+      "bone_pisiform_R",
+      "bone_radius_R",
+      "bone_scaphoid_R",
+      "bone_trapezium_R",
+      "bone_trapezoid_R",
+      "bone_triquetrum_R"
+    ],
+    "joint_or_connection_ids": [
+      "radiocarpal_R",
+      "intercarpal_R"
+    ],
+    "source_structure_id": "Dorsal intercarpal ligaments.r",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 23360,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Intercarpal joints.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      -0.25829488039016724,
+      0.8430068492889404,
+      0.011925185099244118
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_dorsal_radio_ulnar_ligament_L",
+    "name_zh": "左背侧桡尺韧带",
+    "name_en": "Dorsal radio-ulnar ligament.l",
+    "side": "L",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_radius_L",
+      "bone_ulna_L"
+    ],
+    "joint_or_connection_ids": [
+      "distal_radioulnar_L"
+    ],
+    "source_structure_id": "Dorsal radio-ulnar ligament.l",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 1280,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Distal radio-ulnar joint.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      0.25414714217185974,
+      0.8679789900779724,
+      0.00795990414917469
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_dorsal_radio_ulnar_ligament_R",
+    "name_zh": "右背侧桡尺韧带",
+    "name_en": "Dorsal radio-ulnar ligament.r",
+    "side": "R",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_radius_R",
+      "bone_ulna_R"
+    ],
+    "joint_or_connection_ids": [
+      "distal_radioulnar_R"
+    ],
+    "source_structure_id": "Dorsal radio-ulnar ligament.r",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 1280,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Distal radio-ulnar joint.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      -0.2541472613811493,
+      0.8679789900779724,
+      0.00795990414917469
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_dorsal_radiocarpal_ligament_L",
+    "name_zh": "左背侧桡腕韧带",
+    "name_en": "Dorsal radiocarpal ligament.l",
+    "side": "L",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_L",
+      "bone_hamate_L",
+      "bone_lunate_L",
+      "bone_pisiform_L",
+      "bone_radius_L",
+      "bone_scaphoid_L",
+      "bone_trapezium_L",
+      "bone_trapezoid_L",
+      "bone_triquetrum_L",
+      "bone_ulna_L"
+    ],
+    "joint_or_connection_ids": [
+      "distal_radioulnar_L",
+      "radiocarpal_L",
+      "intercarpal_L"
+    ],
+    "source_structure_id": "Dorsal radiocarpal ligament.l",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 11648,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Radiocarpal joint.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "split_seams_pending_review",
+    "rest_position_web_m": [
+      0.2603519856929779,
+      0.853201150894165,
+      0.010480782948434353
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_dorsal_radiocarpal_ligament_R",
+    "name_zh": "右背侧桡腕韧带",
+    "name_en": "Dorsal radiocarpal ligament.r",
+    "side": "R",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_R",
+      "bone_hamate_R",
+      "bone_lunate_R",
+      "bone_pisiform_R",
+      "bone_radius_R",
+      "bone_scaphoid_R",
+      "bone_trapezium_R",
+      "bone_trapezoid_R",
+      "bone_triquetrum_R",
+      "bone_ulna_R"
+    ],
+    "joint_or_connection_ids": [
+      "distal_radioulnar_R",
+      "radiocarpal_R",
+      "intercarpal_R"
+    ],
+    "source_structure_id": "Dorsal radiocarpal ligament.r",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 11648,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Radiocarpal joint.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "split_seams_pending_review",
+    "rest_position_web_m": [
+      -0.26035210490226746,
+      0.853201150894165,
+      0.010480785742402077
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_dorsal_scaphotriquetral_ligament_L",
+    "name_zh": "左背侧舟三角骨韧带",
+    "name_en": "Dorsal scaphotriquetral ligament.l",
+    "side": "L",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_L",
+      "bone_hamate_L",
+      "bone_lunate_L",
+      "bone_pisiform_L",
+      "bone_radius_L",
+      "bone_scaphoid_L",
+      "bone_trapezium_L",
+      "bone_trapezoid_L",
+      "bone_triquetrum_L"
+    ],
+    "joint_or_connection_ids": [
+      "radiocarpal_L",
+      "intercarpal_L"
+    ],
+    "source_structure_id": "Dorsal scaphotriquetral ligament.l",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 4756,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Dorsal intercarpal ligaments.l",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      0.2549084722995758,
+      0.8497843146324158,
+      0.011297444812953472
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_dorsal_scaphotriquetral_ligament_R",
+    "name_zh": "右背侧舟三角骨韧带",
+    "name_en": "Dorsal scaphotriquetral ligament.r",
+    "side": "R",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_R",
+      "bone_hamate_R",
+      "bone_lunate_R",
+      "bone_pisiform_R",
+      "bone_radius_R",
+      "bone_scaphoid_R",
+      "bone_trapezium_R",
+      "bone_trapezoid_R",
+      "bone_triquetrum_R"
+    ],
+    "joint_or_connection_ids": [
+      "radiocarpal_R",
+      "intercarpal_R"
+    ],
+    "source_structure_id": "Dorsal scaphotriquetral ligament.r",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 4756,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Dorsal intercarpal ligaments.r",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      -0.2549084722995758,
+      0.8497843146324158,
+      0.011297444812953472
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_dorsal_ulnocarpal_ligament_L",
+    "name_zh": "左背侧尺腕韧带",
+    "name_en": "Dorsal ulnocarpal ligament.l",
+    "side": "L",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_L",
+      "bone_hamate_L",
+      "bone_lunate_L",
+      "bone_pisiform_L",
+      "bone_radius_L",
+      "bone_scaphoid_L",
+      "bone_trapezium_L",
+      "bone_trapezoid_L",
+      "bone_triquetrum_L"
+    ],
+    "joint_or_connection_ids": [
+      "radiocarpal_L",
+      "intercarpal_L"
+    ],
+    "source_structure_id": "Dorsal ulnocarpal ligament.l",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 4992,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Intercarpal joints.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "split_seams_pending_review",
+    "rest_position_web_m": [
+      0.24960573017597198,
+      0.8551324605941772,
+      0.011036024428904057
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_dorsal_ulnocarpal_ligament_R",
+    "name_zh": "右背侧尺腕韧带",
+    "name_en": "Dorsal ulnocarpal ligament.r",
+    "side": "R",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_R",
+      "bone_hamate_R",
+      "bone_lunate_R",
+      "bone_pisiform_R",
+      "bone_radius_R",
+      "bone_scaphoid_R",
+      "bone_trapezium_R",
+      "bone_trapezoid_R",
+      "bone_triquetrum_R"
+    ],
+    "joint_or_connection_ids": [
+      "radiocarpal_R",
+      "intercarpal_R"
+    ],
+    "source_structure_id": "Dorsal ulnocarpal ligament.r",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 4992,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Intercarpal joints.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "split_seams_pending_review",
+    "rest_position_web_m": [
+      -0.2496057003736496,
+      0.8551324605941772,
+      0.011036024428904057
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_lunotriquetral_interosseous_ligament_L",
+    "name_zh": "左月三角骨间韧带",
+    "name_en": "Lunotriquetral interosseous ligament.l",
+    "side": "L",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_L",
+      "bone_hamate_L",
+      "bone_lunate_L",
+      "bone_pisiform_L",
+      "bone_radius_L",
+      "bone_scaphoid_L",
+      "bone_trapezium_L",
+      "bone_trapezoid_L",
+      "bone_triquetrum_L"
+    ],
+    "joint_or_connection_ids": [
+      "radiocarpal_L",
+      "intercarpal_L"
+    ],
+    "source_structure_id": "Lunotriquetral interosseous ligament.l",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 1280,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Intercarpal joints.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      0.24897988140583038,
+      0.8510494232177734,
+      0.019656352698802948
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_lunotriquetral_interosseous_ligament_R",
+    "name_zh": "右月三角骨间韧带",
+    "name_en": "Lunotriquetral interosseous ligament.r",
+    "side": "R",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_R",
+      "bone_hamate_R",
+      "bone_lunate_R",
+      "bone_pisiform_R",
+      "bone_radius_R",
+      "bone_scaphoid_R",
+      "bone_trapezium_R",
+      "bone_trapezoid_R",
+      "bone_triquetrum_R"
+    ],
+    "joint_or_connection_ids": [
+      "radiocarpal_R",
+      "intercarpal_R"
+    ],
+    "source_structure_id": "Lunotriquetral interosseous ligament.r",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 1280,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Intercarpal joints.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      -0.2489798218011856,
+      0.8510494232177734,
+      0.019656352698802948
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_palmar_capitohamate_ligament_L",
+    "name_zh": "左掌侧头状钩骨韧带",
+    "name_en": "Palmar capitohamate ligament.l",
+    "side": "L",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_L",
+      "bone_hamate_L",
+      "bone_lunate_L",
+      "bone_pisiform_L",
+      "bone_radius_L",
+      "bone_scaphoid_L",
+      "bone_trapezium_L",
+      "bone_trapezoid_L",
+      "bone_triquetrum_L"
+    ],
+    "joint_or_connection_ids": [
+      "radiocarpal_L",
+      "intercarpal_L"
+    ],
+    "source_structure_id": "Palmar capitohamate ligament.l",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 1280,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Intercarpal joints.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      0.2605179250240326,
+      0.8396487236022949,
+      0.021901585161685944
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_palmar_capitohamate_ligament_R",
+    "name_zh": "右掌侧头状钩骨韧带",
+    "name_en": "Palmar capitohamate ligament.r",
+    "side": "R",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_R",
+      "bone_hamate_R",
+      "bone_lunate_R",
+      "bone_pisiform_R",
+      "bone_radius_R",
+      "bone_scaphoid_R",
+      "bone_trapezium_R",
+      "bone_trapezoid_R",
+      "bone_triquetrum_R"
+    ],
+    "joint_or_connection_ids": [
+      "radiocarpal_R",
+      "intercarpal_R"
+    ],
+    "source_structure_id": "Palmar capitohamate ligament.r",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 1280,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Intercarpal joints.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      -0.26051783561706543,
+      0.8396487236022949,
+      0.021901585161685944
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_palmar_lunotriquetral_ligament_L",
+    "name_zh": "左掌侧月三角骨韧带",
+    "name_en": "Palmar lunotriquetral ligament.l",
+    "side": "L",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_L",
+      "bone_hamate_L",
+      "bone_lunate_L",
+      "bone_pisiform_L",
+      "bone_radius_L",
+      "bone_scaphoid_L",
+      "bone_trapezium_L",
+      "bone_trapezoid_L",
+      "bone_triquetrum_L"
+    ],
+    "joint_or_connection_ids": [
+      "radiocarpal_L",
+      "intercarpal_L"
+    ],
+    "source_structure_id": "Palmar lunotriquetral ligament.l",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 1280,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Intercarpal joints.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      0.24594707787036896,
+      0.8533903360366821,
+      0.021758191287517548
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_palmar_lunotriquetral_ligament_R",
+    "name_zh": "右掌侧月三角骨韧带",
+    "name_en": "Palmar lunotriquetral ligament.r",
+    "side": "R",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_R",
+      "bone_hamate_R",
+      "bone_lunate_R",
+      "bone_pisiform_R",
+      "bone_radius_R",
+      "bone_scaphoid_R",
+      "bone_trapezium_R",
+      "bone_trapezoid_R",
+      "bone_triquetrum_R"
+    ],
+    "joint_or_connection_ids": [
+      "radiocarpal_R",
+      "intercarpal_R"
+    ],
+    "source_structure_id": "Palmar lunotriquetral ligament.r",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 1280,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Intercarpal joints.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      -0.24594703316688538,
+      0.8533903360366821,
+      0.021758191287517548
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_palmar_radio_ulnar_ligament_L",
+    "name_zh": "左掌侧桡尺韧带",
+    "name_en": "Palmar radio-ulnar ligament.l",
+    "side": "L",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_radius_L",
+      "bone_ulna_L"
+    ],
+    "joint_or_connection_ids": [
+      "distal_radioulnar_L"
+    ],
+    "source_structure_id": "Palmar radio-ulnar ligament.l",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 3584,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Distal radio-ulnar joint.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      0.24852003157138824,
+      0.87163907289505,
+      0.0204449649900198
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_palmar_radio_ulnar_ligament_R",
+    "name_zh": "右掌侧桡尺韧带",
+    "name_en": "Palmar radio-ulnar ligament.r",
+    "side": "R",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_radius_R",
+      "bone_ulna_R"
+    ],
+    "joint_or_connection_ids": [
+      "distal_radioulnar_R"
+    ],
+    "source_structure_id": "Palmar radio-ulnar ligament.r",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 3584,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Distal radio-ulnar joint.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      -0.24855707585811615,
+      0.8715997338294983,
+      0.020535577088594437
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_palmar_scaphotriquetral_ligament_L",
+    "name_zh": "左掌侧舟三角骨韧带",
+    "name_en": "Palmar scaphotriquetral ligament.l",
+    "side": "L",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_L",
+      "bone_hamate_L",
+      "bone_lunate_L",
+      "bone_pisiform_L",
+      "bone_radius_L",
+      "bone_scaphoid_L",
+      "bone_trapezium_L",
+      "bone_trapezoid_L",
+      "bone_triquetrum_L"
+    ],
+    "joint_or_connection_ids": [
+      "radiocarpal_L",
+      "intercarpal_L"
+    ],
+    "source_structure_id": "Palmar scaphotriquetral ligament.l",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 3584,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Intercarpal joints.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      0.2561717629432678,
+      0.85396409034729,
+      0.02480689436197281
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_palmar_scaphotriquetral_ligament_R",
+    "name_zh": "右掌侧舟三角骨韧带",
+    "name_en": "Palmar scaphotriquetral ligament.r",
+    "side": "R",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_R",
+      "bone_hamate_R",
+      "bone_lunate_R",
+      "bone_pisiform_R",
+      "bone_radius_R",
+      "bone_scaphoid_R",
+      "bone_trapezium_R",
+      "bone_trapezoid_R",
+      "bone_triquetrum_R"
+    ],
+    "joint_or_connection_ids": [
+      "radiocarpal_R",
+      "intercarpal_R"
+    ],
+    "source_structure_id": "Palmar scaphotriquetral ligament.r",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 3584,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Intercarpal joints.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      -0.25617173314094543,
+      0.85396409034729,
+      0.02480689436197281
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_palmar_trapezoideocapitate_ligament_L",
+    "name_zh": "左掌侧小多角头状骨韧带",
+    "name_en": "Palmar trapezoideocapitate ligament.l",
+    "side": "L",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_L",
+      "bone_hamate_L",
+      "bone_lunate_L",
+      "bone_pisiform_L",
+      "bone_radius_L",
+      "bone_scaphoid_L",
+      "bone_trapezium_L",
+      "bone_trapezoid_L",
+      "bone_triquetrum_L"
+    ],
+    "joint_or_connection_ids": [
+      "radiocarpal_L",
+      "intercarpal_L"
+    ],
+    "source_structure_id": "Palmar trapezoideocapitate ligament.l",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 1280,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Intercarpal joints.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      0.2706439197063446,
+      0.8409696817398071,
+      0.025864172726869583
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_palmar_trapezoideocapitate_ligament_R",
+    "name_zh": "右掌侧小多角头状骨韧带",
+    "name_en": "Palmar trapezoideocapitate ligament.r",
+    "side": "R",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_R",
+      "bone_hamate_R",
+      "bone_lunate_R",
+      "bone_pisiform_R",
+      "bone_radius_R",
+      "bone_scaphoid_R",
+      "bone_trapezium_R",
+      "bone_trapezoid_R",
+      "bone_triquetrum_R"
+    ],
+    "joint_or_connection_ids": [
+      "radiocarpal_R",
+      "intercarpal_R"
+    ],
+    "source_structure_id": "Palmar trapezoideocapitate ligament.r",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 1280,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Intercarpal joints.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      -0.27064386010169983,
+      0.8409696817398071,
+      0.025864172726869583
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_pisohamate_ligament_L",
+    "name_zh": "左豌豆钩骨韧带",
+    "name_en": "Pisohamate ligament.l",
+    "side": "L",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_L",
+      "bone_hamate_L",
+      "bone_lunate_L",
+      "bone_pisiform_L",
+      "bone_radius_L",
+      "bone_scaphoid_L",
+      "bone_trapezium_L",
+      "bone_trapezoid_L",
+      "bone_triquetrum_L"
+    ],
+    "joint_or_connection_ids": [
+      "radiocarpal_L",
+      "intercarpal_L"
+    ],
+    "source_structure_id": "Pisohamate ligament.l",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 1280,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Intercarpal joints.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      0.24884316325187683,
+      0.842980682849884,
+      0.02991868555545807
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_pisohamate_ligament_R",
+    "name_zh": "右豌豆钩骨韧带",
+    "name_en": "Pisohamate ligament.r",
+    "side": "R",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_R",
+      "bone_hamate_R",
+      "bone_lunate_R",
+      "bone_pisiform_R",
+      "bone_radius_R",
+      "bone_scaphoid_R",
+      "bone_trapezium_R",
+      "bone_trapezoid_R",
+      "bone_triquetrum_R"
+    ],
+    "joint_or_connection_ids": [
+      "radiocarpal_R",
+      "intercarpal_R"
+    ],
+    "source_structure_id": "Pisohamate ligament.r",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 1280,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Intercarpal joints.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      -0.24884310364723206,
+      0.842980682849884,
+      0.02991868555545807
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_pisometacarpal_ligament_L",
+    "name_zh": "左豌豆掌骨韧带",
+    "name_en": "Pisometacarpal ligament.l",
+    "side": "L",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_L",
+      "bone_hamate_L",
+      "bone_lunate_L",
+      "bone_pisiform_L",
+      "bone_radius_L",
+      "bone_scaphoid_L",
+      "bone_trapezium_L",
+      "bone_trapezoid_L",
+      "bone_triquetrum_L"
+    ],
+    "joint_or_connection_ids": [
+      "radiocarpal_L",
+      "intercarpal_L"
+    ],
+    "source_structure_id": "Pisometacarpal ligament.l",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 1280,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Intercarpal joints.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      0.2445191591978073,
+      0.838524341583252,
+      0.028484288603067398
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_pisometacarpal_ligament_R",
+    "name_zh": "右豌豆掌骨韧带",
+    "name_en": "Pisometacarpal ligament.r",
+    "side": "R",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_R",
+      "bone_hamate_R",
+      "bone_lunate_R",
+      "bone_pisiform_R",
+      "bone_radius_R",
+      "bone_scaphoid_R",
+      "bone_trapezium_R",
+      "bone_trapezoid_R",
+      "bone_triquetrum_R"
+    ],
+    "joint_or_connection_ids": [
+      "radiocarpal_R",
+      "intercarpal_R"
+    ],
+    "source_structure_id": "Pisometacarpal ligament.r",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 1280,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Intercarpal joints.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      -0.2444913685321808,
+      0.8384987115859985,
+      0.02843775972723961
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_pisotriquetral_ligament_L",
+    "name_zh": "左豌豆三角骨韧带",
+    "name_en": "Pisotriquetral ligament.l",
+    "side": "L",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_L",
+      "bone_hamate_L",
+      "bone_lunate_L",
+      "bone_pisiform_L",
+      "bone_radius_L",
+      "bone_scaphoid_L",
+      "bone_trapezium_L",
+      "bone_trapezoid_L",
+      "bone_triquetrum_L"
+    ],
+    "joint_or_connection_ids": [
+      "radiocarpal_L",
+      "intercarpal_L"
+    ],
+    "source_structure_id": "Pisotriquetral ligament.l",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 11904,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Intercarpal joints.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      0.24399809539318085,
+      0.8444342017173767,
+      0.028615526854991913
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_pisotriquetral_ligament_R",
+    "name_zh": "右豌豆三角骨韧带",
+    "name_en": "Pisotriquetral ligament.r",
+    "side": "R",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_R",
+      "bone_hamate_R",
+      "bone_lunate_R",
+      "bone_pisiform_R",
+      "bone_radius_R",
+      "bone_scaphoid_R",
+      "bone_trapezium_R",
+      "bone_trapezoid_R",
+      "bone_triquetrum_R"
+    ],
+    "joint_or_connection_ids": [
+      "radiocarpal_R",
+      "intercarpal_R"
+    ],
+    "source_structure_id": "Pisotriquetral ligament.r",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 11904,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Intercarpal joints.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      -0.24399800598621368,
+      0.8444342017173767,
+      0.028615526854991913
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_radial_collateral_ligament_of_wrist_joint_L",
+    "name_zh": "左腕桡侧副韧带",
+    "name_en": "Radial collateral ligament of wrist joint.l",
+    "side": "L",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_L",
+      "bone_hamate_L",
+      "bone_lunate_L",
+      "bone_pisiform_L",
+      "bone_radius_L",
+      "bone_scaphoid_L",
+      "bone_trapezium_L",
+      "bone_trapezoid_L",
+      "bone_triquetrum_L",
+      "bone_ulna_L"
+    ],
+    "joint_or_connection_ids": [
+      "distal_radioulnar_L",
+      "radiocarpal_L",
+      "intercarpal_L"
+    ],
+    "source_structure_id": "Radial collateral ligament of wrist joint.l",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 6912,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Radiocarpal joint.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "split_seams_pending_review",
+    "rest_position_web_m": [
+      0.2845221757888794,
+      0.8552247881889343,
+      0.021372491493821144
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_radial_collateral_ligament_of_wrist_joint_R",
+    "name_zh": "右腕桡侧副韧带",
+    "name_en": "Radial collateral ligament of wrist joint.r",
+    "side": "R",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_R",
+      "bone_hamate_R",
+      "bone_lunate_R",
+      "bone_pisiform_R",
+      "bone_radius_R",
+      "bone_scaphoid_R",
+      "bone_trapezium_R",
+      "bone_trapezoid_R",
+      "bone_triquetrum_R"
+    ],
+    "joint_or_connection_ids": [
+      "radiocarpal_R",
+      "intercarpal_R"
+    ],
+    "source_structure_id": "Radial collateral ligament of wrist joint.r",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 6912,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Intercarpal joints.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "split_seams_pending_review",
+    "rest_position_web_m": [
+      -0.28452223539352417,
+      0.8552247881889343,
+      0.021372530609369278
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_radiate_carpal_ligament_L",
+    "name_zh": "左腕辐状韧带",
+    "name_en": "Radiate carpal ligament.l",
+    "side": "L",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_L",
+      "bone_hamate_L",
+      "bone_lunate_L",
+      "bone_pisiform_L",
+      "bone_radius_L",
+      "bone_scaphoid_L",
+      "bone_trapezium_L",
+      "bone_trapezoid_L",
+      "bone_triquetrum_L"
+    ],
+    "joint_or_connection_ids": [
+      "radiocarpal_L",
+      "intercarpal_L"
+    ],
+    "source_structure_id": "Radiate carpal ligament.l",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 20544,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Intercarpal joints.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      0.2652093768119812,
+      0.8440137505531311,
+      0.025471007451415062
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_radiate_carpal_ligament_R",
+    "name_zh": "右腕辐状韧带",
+    "name_en": "Radiate carpal ligament.r",
+    "side": "R",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_R",
+      "bone_hamate_R",
+      "bone_lunate_R",
+      "bone_pisiform_R",
+      "bone_radius_R",
+      "bone_scaphoid_R",
+      "bone_trapezium_R",
+      "bone_trapezoid_R",
+      "bone_triquetrum_R"
+    ],
+    "joint_or_connection_ids": [
+      "radiocarpal_R",
+      "intercarpal_R"
+    ],
+    "source_structure_id": "Radiate carpal ligament.r",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 20544,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Intercarpal joints.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      -0.26520928740501404,
+      0.8440137505531311,
+      0.025471007451415062
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_radiocapitate_ligament_L",
+    "name_zh": "左桡头状骨韧带",
+    "name_en": "Radiocapitate ligament.l",
+    "side": "L",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_L",
+      "bone_hamate_L",
+      "bone_lunate_L",
+      "bone_pisiform_L",
+      "bone_radius_L",
+      "bone_scaphoid_L",
+      "bone_trapezium_L",
+      "bone_trapezoid_L",
+      "bone_triquetrum_L",
+      "bone_ulna_L"
+    ],
+    "joint_or_connection_ids": [
+      "distal_radioulnar_L",
+      "radiocarpal_L",
+      "intercarpal_L"
+    ],
+    "source_structure_id": "Radiocapitate ligament.l",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 1280,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Radiocarpal joint.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      0.2686968445777893,
+      0.8554558157920837,
+      0.025173204019665718
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_radiocapitate_ligament_R",
+    "name_zh": "右桡头状骨韧带",
+    "name_en": "Radiocapitate ligament.r",
+    "side": "R",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_R",
+      "bone_hamate_R",
+      "bone_lunate_R",
+      "bone_pisiform_R",
+      "bone_radius_R",
+      "bone_scaphoid_R",
+      "bone_trapezium_R",
+      "bone_trapezoid_R",
+      "bone_triquetrum_R",
+      "bone_ulna_R"
+    ],
+    "joint_or_connection_ids": [
+      "distal_radioulnar_R",
+      "radiocarpal_R",
+      "intercarpal_R"
+    ],
+    "source_structure_id": "Radiocapitate ligament.r",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 1280,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Radiocarpal joint.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      -0.26869693398475647,
+      0.8554558157920837,
+      0.025173209607601166
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_radioscaphocapitate_ligament_L",
+    "name_zh": "左桡舟头状骨韧带",
+    "name_en": "Radioscaphocapitate ligament.l",
+    "side": "L",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_L",
+      "bone_hamate_L",
+      "bone_lunate_L",
+      "bone_pisiform_L",
+      "bone_radius_L",
+      "bone_scaphoid_L",
+      "bone_trapezium_L",
+      "bone_trapezoid_L",
+      "bone_triquetrum_L",
+      "bone_ulna_L"
+    ],
+    "joint_or_connection_ids": [
+      "distal_radioulnar_L",
+      "radiocarpal_L",
+      "intercarpal_L"
+    ],
+    "source_structure_id": "Radioscaphocapitate ligament.l",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 2432,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Radiocarpal joint.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      0.27137255668640137,
+      0.8582931756973267,
+      0.023091401904821396
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_radioscaphocapitate_ligament_R",
+    "name_zh": "右桡舟头状骨韧带",
+    "name_en": "Radioscaphocapitate ligament.r",
+    "side": "R",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_R",
+      "bone_hamate_R",
+      "bone_lunate_R",
+      "bone_pisiform_R",
+      "bone_radius_R",
+      "bone_scaphoid_R",
+      "bone_trapezium_R",
+      "bone_trapezoid_R",
+      "bone_triquetrum_R",
+      "bone_ulna_R"
+    ],
+    "joint_or_connection_ids": [
+      "distal_radioulnar_R",
+      "radiocarpal_R",
+      "intercarpal_R"
+    ],
+    "source_structure_id": "Radioscaphocapitate ligament.r",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 2432,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Radiocarpal joint.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      -0.27137258648872375,
+      0.8582931756973267,
+      0.023091401904821396
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_scaphocapitate_ligament_L",
+    "name_zh": "左舟头状骨韧带",
+    "name_en": "Scaphocapitate ligament.l",
+    "side": "L",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_L",
+      "bone_hamate_L",
+      "bone_lunate_L",
+      "bone_pisiform_L",
+      "bone_radius_L",
+      "bone_scaphoid_L",
+      "bone_trapezium_L",
+      "bone_trapezoid_L",
+      "bone_triquetrum_L"
+    ],
+    "joint_or_connection_ids": [
+      "radiocarpal_L",
+      "intercarpal_L"
+    ],
+    "source_structure_id": "Scaphocapitate ligament.l",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 1280,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Intercarpal joints.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      0.2668383717536926,
+      0.855248749256134,
+      0.022404134273529053
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_scaphocapitate_ligament_R",
+    "name_zh": "右舟头状骨韧带",
+    "name_en": "Scaphocapitate ligament.r",
+    "side": "R",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_R",
+      "bone_hamate_R",
+      "bone_lunate_R",
+      "bone_pisiform_R",
+      "bone_radius_R",
+      "bone_scaphoid_R",
+      "bone_trapezium_R",
+      "bone_trapezoid_R",
+      "bone_triquetrum_R"
+    ],
+    "joint_or_connection_ids": [
+      "radiocarpal_R",
+      "intercarpal_R"
+    ],
+    "source_structure_id": "Scaphocapitate ligament.r",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 1280,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Intercarpal joints.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      -0.26689964532852173,
+      0.8551803231239319,
+      0.022457199171185493
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_scapholunate_interosseous_ligament_L",
+    "name_zh": "左舟月骨间韧带",
+    "name_en": "Scapholunate interosseous ligament.l",
+    "side": "L",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_L",
+      "bone_hamate_L",
+      "bone_lunate_L",
+      "bone_pisiform_L",
+      "bone_radius_L",
+      "bone_scaphoid_L",
+      "bone_trapezium_L",
+      "bone_trapezoid_L",
+      "bone_triquetrum_L"
+    ],
+    "joint_or_connection_ids": [
+      "radiocarpal_L",
+      "intercarpal_L"
+    ],
+    "source_structure_id": "Scapholunate interosseous ligament.l",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 1280,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Intercarpal joints.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      0.2576603889465332,
+      0.8571717739105225,
+      0.014080765657126904
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_scapholunate_interosseous_ligament_R",
+    "name_zh": "右舟月骨间韧带",
+    "name_en": "Scapholunate interosseous ligament.r",
+    "side": "R",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_R",
+      "bone_hamate_R",
+      "bone_lunate_R",
+      "bone_pisiform_R",
+      "bone_radius_R",
+      "bone_scaphoid_R",
+      "bone_trapezium_R",
+      "bone_trapezoid_R",
+      "bone_triquetrum_R"
+    ],
+    "joint_or_connection_ids": [
+      "radiocarpal_R",
+      "intercarpal_R"
+    ],
+    "source_structure_id": "Scapholunate interosseous ligament.r",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 1280,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Intercarpal joints.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      -0.2576603293418884,
+      0.8571717739105225,
+      0.014080765657126904
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_scaphotrapeziotrapezoidal_ligament_L",
+    "name_zh": "左舟大小多角骨韧带",
+    "name_en": "Scaphotrapeziotrapezoidal ligament.l",
+    "side": "L",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_L",
+      "bone_hamate_L",
+      "bone_lunate_L",
+      "bone_pisiform_L",
+      "bone_radius_L",
+      "bone_scaphoid_L",
+      "bone_trapezium_L",
+      "bone_trapezoid_L",
+      "bone_triquetrum_L"
+    ],
+    "joint_or_connection_ids": [
+      "radiocarpal_L",
+      "intercarpal_L"
+    ],
+    "source_structure_id": "Scaphotrapeziotrapezoidal ligament.l",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 6912,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Intercarpal joints.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      0.2733888626098633,
+      0.8479368686676025,
+      0.02583240158855915
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_scaphotrapeziotrapezoidal_ligament_R",
+    "name_zh": "右舟大小多角骨韧带",
+    "name_en": "Scaphotrapeziotrapezoidal ligament.r",
+    "side": "R",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_R",
+      "bone_hamate_R",
+      "bone_lunate_R",
+      "bone_pisiform_R",
+      "bone_radius_R",
+      "bone_scaphoid_R",
+      "bone_trapezium_R",
+      "bone_trapezoid_R",
+      "bone_triquetrum_R"
+    ],
+    "joint_or_connection_ids": [
+      "radiocarpal_R",
+      "intercarpal_R"
+    ],
+    "source_structure_id": "Scaphotrapeziotrapezoidal ligament.r",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 6912,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Intercarpal joints.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      -0.2733888030052185,
+      0.8479368686676025,
+      0.02583240158855915
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_trapeziotrapezoidal_interosseous_ligament_L",
+    "name_zh": "左大小多角骨间韧带",
+    "name_en": "Trapeziotrapezoidal interosseous ligament.l",
+    "side": "L",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_L",
+      "bone_hamate_L",
+      "bone_lunate_L",
+      "bone_pisiform_L",
+      "bone_radius_L",
+      "bone_scaphoid_L",
+      "bone_trapezium_L",
+      "bone_trapezoid_L",
+      "bone_triquetrum_L"
+    ],
+    "joint_or_connection_ids": [
+      "radiocarpal_L",
+      "intercarpal_L"
+    ],
+    "source_structure_id": "Trapeziotrapezoidal interosseous ligament.l",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 1280,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Intercarpal joints.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      0.27764350175857544,
+      0.8444120287895203,
+      0.02371089532971382
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_trapeziotrapezoidal_interosseous_ligament_R",
+    "name_zh": "右大小多角骨间韧带",
+    "name_en": "Trapeziotrapezoidal interosseous ligament.r",
+    "side": "R",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_R",
+      "bone_hamate_R",
+      "bone_lunate_R",
+      "bone_pisiform_R",
+      "bone_radius_R",
+      "bone_scaphoid_R",
+      "bone_trapezium_R",
+      "bone_trapezoid_R",
+      "bone_triquetrum_R"
+    ],
+    "joint_or_connection_ids": [
+      "radiocarpal_R",
+      "intercarpal_R"
+    ],
+    "source_structure_id": "Trapeziotrapezoidal interosseous ligament.r",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 1280,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Intercarpal joints.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      -0.27764344215393066,
+      0.8444120287895203,
+      0.02371089532971382
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_trapezoideocapitate_interosseous_ligament_L",
+    "name_zh": "左小多角头状骨间韧带",
+    "name_en": "Trapezoideocapitate interosseous ligament.l",
+    "side": "L",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_L",
+      "bone_hamate_L",
+      "bone_lunate_L",
+      "bone_pisiform_L",
+      "bone_radius_L",
+      "bone_scaphoid_L",
+      "bone_trapezium_L",
+      "bone_trapezoid_L",
+      "bone_triquetrum_L"
+    ],
+    "joint_or_connection_ids": [
+      "radiocarpal_L",
+      "intercarpal_L"
+    ],
+    "source_structure_id": "Trapezoideocapitate interosseous ligament.l",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 1280,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Intercarpal joints.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      0.2717887759208679,
+      0.8387219905853271,
+      0.01841367408633232
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_trapezoideocapitate_interosseous_ligament_R",
+    "name_zh": "右小多角头状骨间韧带",
+    "name_en": "Trapezoideocapitate interosseous ligament.r",
+    "side": "R",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_R",
+      "bone_hamate_R",
+      "bone_lunate_R",
+      "bone_pisiform_R",
+      "bone_radius_R",
+      "bone_scaphoid_R",
+      "bone_trapezium_R",
+      "bone_trapezoid_R",
+      "bone_triquetrum_R"
+    ],
+    "joint_or_connection_ids": [
+      "radiocarpal_R",
+      "intercarpal_R"
+    ],
+    "source_structure_id": "Trapezoideocapitate interosseous ligament.r",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 1280,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Intercarpal joints.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      -0.27178871631622314,
+      0.8387219905853271,
+      0.01841367408633232
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_triquetrocapitate_ligament_L",
+    "name_zh": "左三角头状骨韧带",
+    "name_en": "Triquetrocapitate ligament.l",
+    "side": "L",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_L",
+      "bone_hamate_L",
+      "bone_lunate_L",
+      "bone_pisiform_L",
+      "bone_radius_L",
+      "bone_scaphoid_L",
+      "bone_trapezium_L",
+      "bone_trapezoid_L",
+      "bone_triquetrum_L"
+    ],
+    "joint_or_connection_ids": [
+      "radiocarpal_L",
+      "intercarpal_L"
+    ],
+    "source_structure_id": "Triquetrocapitate ligament.l",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 2432,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Intercarpal joints.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      0.25512802600860596,
+      0.8464806079864502,
+      0.022880665957927704
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_triquetrocapitate_ligament_R",
+    "name_zh": "右三角头状骨韧带",
+    "name_en": "Triquetrocapitate ligament.r",
+    "side": "R",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_R",
+      "bone_hamate_R",
+      "bone_lunate_R",
+      "bone_pisiform_R",
+      "bone_radius_R",
+      "bone_scaphoid_R",
+      "bone_trapezium_R",
+      "bone_trapezoid_R",
+      "bone_triquetrum_R"
+    ],
+    "joint_or_connection_ids": [
+      "radiocarpal_R",
+      "intercarpal_R"
+    ],
+    "source_structure_id": "Triquetrocapitate ligament.r",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 2432,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Intercarpal joints.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      -0.25512799620628357,
+      0.8464806079864502,
+      0.022880665957927704
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_triquetrohamate_ligament_L",
+    "name_zh": "左三角钩骨韧带",
+    "name_en": "Triquetrohamate ligament.l",
+    "side": "L",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_L",
+      "bone_hamate_L",
+      "bone_lunate_L",
+      "bone_pisiform_L",
+      "bone_radius_L",
+      "bone_scaphoid_L",
+      "bone_trapezium_L",
+      "bone_trapezoid_L",
+      "bone_triquetrum_L"
+    ],
+    "joint_or_connection_ids": [
+      "radiocarpal_L",
+      "intercarpal_L"
+    ],
+    "source_structure_id": "Triquetrohamate ligament.l",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 1280,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Intercarpal joints.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      0.24864031374454498,
+      0.8423265218734741,
+      0.02524402178823948
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_triquetrohamate_ligament_R",
+    "name_zh": "右三角钩骨韧带",
+    "name_en": "Triquetrohamate ligament.r",
+    "side": "R",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_R",
+      "bone_hamate_R",
+      "bone_lunate_R",
+      "bone_pisiform_R",
+      "bone_radius_R",
+      "bone_scaphoid_R",
+      "bone_trapezium_R",
+      "bone_trapezoid_R",
+      "bone_triquetrum_R"
+    ],
+    "joint_or_connection_ids": [
+      "radiocarpal_R",
+      "intercarpal_R"
+    ],
+    "source_structure_id": "Triquetrohamate ligament.r",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 1280,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Intercarpal joints.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      -0.2486402541399002,
+      0.8423265218734741,
+      0.02524402178823948
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_ulnar_collateral_ligament_of_wrist_joint_L",
+    "name_zh": "左腕尺侧副韧带",
+    "name_en": "Ulnar collateral ligament of wrist joint.l",
+    "side": "L",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_L",
+      "bone_hamate_L",
+      "bone_lunate_L",
+      "bone_pisiform_L",
+      "bone_radius_L",
+      "bone_scaphoid_L",
+      "bone_trapezium_L",
+      "bone_trapezoid_L",
+      "bone_triquetrum_L",
+      "bone_ulna_L"
+    ],
+    "joint_or_connection_ids": [
+      "distal_radioulnar_L",
+      "radiocarpal_L",
+      "intercarpal_L"
+    ],
+    "source_structure_id": "Ulnar collateral ligament of wrist joint.l",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 5888,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Radiocarpal joint.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      0.24176810681819916,
+      0.8527123332023621,
+      0.017454881221055984
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_ulnar_collateral_ligament_of_wrist_joint_R",
+    "name_zh": "右腕尺侧副韧带",
+    "name_en": "Ulnar collateral ligament of wrist joint.r",
+    "side": "R",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_R",
+      "bone_hamate_R",
+      "bone_lunate_R",
+      "bone_pisiform_R",
+      "bone_radius_R",
+      "bone_scaphoid_R",
+      "bone_trapezium_R",
+      "bone_trapezoid_R",
+      "bone_triquetrum_R"
+    ],
+    "joint_or_connection_ids": [
+      "radiocarpal_R",
+      "intercarpal_R"
+    ],
+    "source_structure_id": "Ulnar collateral ligament of wrist joint.r",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 5888,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Intercarpal joints.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      -0.24176812171936035,
+      0.8527123928070068,
+      0.01745491661131382
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_ulnolunate_ligament_L",
+    "name_zh": "左尺月韧带",
+    "name_en": "Ulnolunate ligament.l",
+    "side": "L",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_L",
+      "bone_hamate_L",
+      "bone_lunate_L",
+      "bone_pisiform_L",
+      "bone_radius_L",
+      "bone_scaphoid_L",
+      "bone_trapezium_L",
+      "bone_trapezoid_L",
+      "bone_triquetrum_L",
+      "bone_ulna_L"
+    ],
+    "joint_or_connection_ids": [
+      "distal_radioulnar_L",
+      "radiocarpal_L",
+      "intercarpal_L"
+    ],
+    "source_structure_id": "Ulnolunate ligament.l",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 4208,
+    "note": "已将远端从舟骨侧改至月骨掌侧并检查静态骨面穿插；精确附着足印及近端起始区仍待解剖复核。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Radiocarpal joint.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      0.2511913776397705,
+      0.8670483827590942,
+      0.020273836329579353
+    ],
+    "geometry_revision": "ulnolunate-lunate-palmar-v2"
+  },
+  {
+    "id": "z_lig_ulnolunate_ligament_R",
+    "name_zh": "右尺月韧带",
+    "name_en": "Ulnolunate ligament.r",
+    "side": "R",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_R",
+      "bone_hamate_R",
+      "bone_lunate_R",
+      "bone_pisiform_R",
+      "bone_radius_R",
+      "bone_scaphoid_R",
+      "bone_trapezium_R",
+      "bone_trapezoid_R",
+      "bone_triquetrum_R",
+      "bone_ulna_R"
+    ],
+    "joint_or_connection_ids": [
+      "distal_radioulnar_R",
+      "radiocarpal_R",
+      "intercarpal_R"
+    ],
+    "source_structure_id": "Ulnolunate ligament.r",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 4208,
+    "note": "已将远端从舟骨侧改至月骨掌侧并检查静态骨面穿插；精确附着足印及近端起始区仍待解剖复核。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Radiocarpal joint.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      -0.25121915340423584,
+      0.8670164942741394,
+      0.02025793492794037
+    ],
+    "geometry_revision": "ulnolunate-lunate-palmar-v2"
+  },
+  {
+    "id": "z_lig_ulnopisiform_ligament_L",
+    "name_zh": "左尺豌豆韧带",
+    "name_en": "Ulnopisiform ligament.l",
+    "side": "L",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_L",
+      "bone_hamate_L",
+      "bone_lunate_L",
+      "bone_pisiform_L",
+      "bone_radius_L",
+      "bone_scaphoid_L",
+      "bone_trapezium_L",
+      "bone_trapezoid_L",
+      "bone_triquetrum_L",
+      "bone_ulna_L"
+    ],
+    "joint_or_connection_ids": [
+      "distal_radioulnar_L",
+      "radiocarpal_L",
+      "intercarpal_L"
+    ],
+    "source_structure_id": "Ulnopisiform ligament.l",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 1280,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Radiocarpal joint.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      0.24137663841247559,
+      0.8590950965881348,
+      0.02208869718015194
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_ulnotriquetral_ligament_L",
+    "name_zh": "左尺三角韧带",
+    "name_en": "Ulnotriquetral ligament.l",
+    "side": "L",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_L",
+      "bone_hamate_L",
+      "bone_lunate_L",
+      "bone_pisiform_L",
+      "bone_radius_L",
+      "bone_scaphoid_L",
+      "bone_trapezium_L",
+      "bone_trapezoid_L",
+      "bone_triquetrum_L",
+      "bone_ulna_L"
+    ],
+    "joint_or_connection_ids": [
+      "distal_radioulnar_L",
+      "radiocarpal_L",
+      "intercarpal_L"
+    ],
+    "source_structure_id": "Ulnotriquetral ligament.l",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 2432,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Radiocarpal joint.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      0.2417818158864975,
+      0.8573728799819946,
+      0.015952158719301224
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_ulnotriquetral_ligament_R",
+    "name_zh": "右尺三角韧带",
+    "name_en": "Ulnotriquetral ligament.r",
+    "side": "R",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_R",
+      "bone_hamate_R",
+      "bone_lunate_R",
+      "bone_pisiform_R",
+      "bone_radius_R",
+      "bone_scaphoid_R",
+      "bone_trapezium_R",
+      "bone_trapezoid_R",
+      "bone_triquetrum_R",
+      "bone_ulna_R"
+    ],
+    "joint_or_connection_ids": [
+      "distal_radioulnar_R",
+      "radiocarpal_R",
+      "intercarpal_R"
+    ],
+    "source_structure_id": "Ulnotriquetral ligament.r",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 2432,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Radiocarpal joint.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      -0.2417912483215332,
+      0.8573665022850037,
+      0.016087612137198448
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_ulnocapitate_ligament_L",
+    "name_zh": "左尺头状韧带",
+    "name_en": "Ulnocapitate ligament.l",
+    "side": "L",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_L",
+      "bone_hamate_L",
+      "bone_lunate_L",
+      "bone_pisiform_L",
+      "bone_radius_L",
+      "bone_scaphoid_L",
+      "bone_trapezium_L",
+      "bone_trapezoid_L",
+      "bone_triquetrum_L",
+      "bone_ulna_L"
+    ],
+    "joint_or_connection_ids": [
+      "distal_radioulnar_L",
+      "radiocarpal_L",
+      "intercarpal_L"
+    ],
+    "source_structure_id": "Ulnocapitate ligament.l",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 20160,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Radiocarpal joint.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      0.2517063021659851,
+      0.8634518384933472,
+      0.022668790072202682
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  },
+  {
+    "id": "z_lig_ulnocapitate_ligament_R",
+    "name_zh": "右尺头状韧带",
+    "name_en": "Ulnocapitate ligament.r",
+    "side": "R",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_capitate_R",
+      "bone_hamate_R",
+      "bone_lunate_R",
+      "bone_pisiform_R",
+      "bone_radius_R",
+      "bone_scaphoid_R",
+      "bone_trapezium_R",
+      "bone_trapezoid_R",
+      "bone_triquetrum_R",
+      "bone_ulna_R"
+    ],
+    "joint_or_connection_ids": [
+      "distal_radioulnar_R",
+      "radiocarpal_R",
+      "intercarpal_R"
+    ],
+    "source_structure_id": "Ulnocapitate ligament.r",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 20160,
+    "note": "已对源网格细分、边缘渐薄并校正静态骨面穿插；贴骨区域依据源边界修整，不等于已核准解剖足印。厚度为显示参数，非测量值。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Radiocarpal joint.g",
+    "geometry_audit": {
+      "static_bone_surface_sampling": {},
+      "source_vertex_positions_preserved": false,
+      "source_file_preserved": true
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      -0.2517349123954773,
+      0.863418459892273,
+      0.02264564484357834
+    ],
+    "geometry_revision": "wrist-surface-fit-v1"
+  }
+]

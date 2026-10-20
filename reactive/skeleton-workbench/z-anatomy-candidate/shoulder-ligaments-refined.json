@@ -1,0 +1,1071 @@
+{
+  "file": "z-anatomy-candidate/assets/shoulder-ligaments-refined.glb",
+  "count": 22,
+  "objects": [
+    {
+      "id": "z_lig_trapezoid_ligament_R",
+      "name_zh": "右斜方韧带",
+      "name_en": "Trapezoid ligament.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_clavicle_R",
+        "bone_scapula_R"
+      ],
+      "joint_or_connection_ids": [
+        "acromioclavicular_R"
+      ],
+      "source_structure_id": "Trapezoid ligament.r",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 2240,
+      "note": "采用肩部审核页的显示优化版；仅显示效果已确认，附着足印、分束和运动尚未验收。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Acromioclavicular joint.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        -0.12311886996030807,
+        1.4082404375076294,
+        -0.018919091671705246
+      ],
+      "geometry_revision": "shoulder-display-v1"
+    },
+    {
+      "id": "z_lig_trapezoid_ligament_L",
+      "name_zh": "左斜方韧带",
+      "name_en": "Trapezoid ligament.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_clavicle_L",
+        "bone_scapula_L"
+      ],
+      "joint_or_connection_ids": [
+        "acromioclavicular_L"
+      ],
+      "source_structure_id": "Trapezoid ligament.l",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 2240,
+      "note": "采用肩部审核页的显示优化版；仅显示效果已确认，附着足印、分束和运动尚未验收。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Acromioclavicular joint.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        0.12311883270740509,
+        1.4082404375076294,
+        -0.018919091671705246
+      ],
+      "geometry_revision": "shoulder-display-v1"
+    },
+    {
+      "id": "z_lig_transverse_humeral_ligament_R",
+      "name_zh": "右肱骨横韧带",
+      "name_en": "Transverse humeral ligament.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_humerus_R",
+        "bone_scapula_R"
+      ],
+      "joint_or_connection_ids": [
+        "glenohumeral_R"
+      ],
+      "source_structure_id": "Transverse humeral ligament.r",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 25216,
+      "note": "采用肩部审核页的显示优化版；仅显示效果已确认，附着足印、分束和运动尚未验收。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Glenohumeral joint.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        -0.18209928274154663,
+        1.389634370803833,
+        -0.006840438582003117
+      ],
+      "geometry_revision": "shoulder-display-v1"
+    },
+    {
+      "id": "z_lig_transverse_humeral_ligament_L",
+      "name_zh": "左肱骨横韧带",
+      "name_en": "Transverse humeral ligament.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_humerus_L",
+        "bone_scapula_L"
+      ],
+      "joint_or_connection_ids": [
+        "glenohumeral_L"
+      ],
+      "source_structure_id": "Transverse humeral ligament.l",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 6464,
+      "note": "采用肩部审核页的显示优化版；仅显示效果已确认，附着足印、分束和运动尚未验收。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Glenohumeral joint.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        0.18197447061538696,
+        1.3895776271820068,
+        -0.00705930357798934
+      ],
+      "geometry_revision": "shoulder-display-v1"
+    },
+    {
+      "id": "z_lig_superior_transverse_scapular_ligament_R",
+      "name_zh": "右肩胛上横韧带",
+      "name_en": "Superior transverse scapular ligament.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_clavicle_R",
+        "bone_humerus_R",
+        "bone_scapula_R"
+      ],
+      "joint_or_connection_ids": [
+        "acromioclavicular_R",
+        "glenohumeral_R"
+      ],
+      "source_structure_id": "Superior transverse scapular ligament.r",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 320,
+      "note": "采用肩部审核页的显示优化版；仅显示效果已确认，附着足印、分束和运动尚未验收。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Fibrous joints of pectoral girdle.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        -0.10900479555130005,
+        1.3950684070587158,
+        -0.04664178565144539
+      ],
+      "geometry_revision": "shoulder-display-v1"
+    },
+    {
+      "id": "z_lig_superior_transverse_scapular_ligament_L",
+      "name_zh": "左肩胛上横韧带",
+      "name_en": "Superior transverse scapular ligament.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_clavicle_L",
+        "bone_humerus_L",
+        "bone_scapula_L"
+      ],
+      "joint_or_connection_ids": [
+        "acromioclavicular_L",
+        "glenohumeral_L"
+      ],
+      "source_structure_id": "Superior transverse scapular ligament.l",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 320,
+      "note": "采用肩部审核页的显示优化版；仅显示效果已确认，附着足印、分束和运动尚未验收。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Fibrous joints of pectoral girdle.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        0.10900479555130005,
+        1.3950684070587158,
+        -0.04664178565144539
+      ],
+      "geometry_revision": "shoulder-display-v1"
+    },
+    {
+      "id": "z_lig_superior_glenohumeral_ligament_R",
+      "name_zh": "右盂肱上韧带",
+      "name_en": "Superior glenohumeral ligament.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_humerus_R",
+        "bone_scapula_R"
+      ],
+      "joint_or_connection_ids": [
+        "glenohumeral_R"
+      ],
+      "source_structure_id": "Superior glenohumeral ligament.r",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 8992,
+      "note": "采用肩部审核页的显示优化版；仅显示效果已确认，附着足印、分束和运动尚未验收。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Glenohumeral joint.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        -0.15174908936023712,
+        1.3973459005355835,
+        -0.01855410262942314
+      ],
+      "geometry_revision": "shoulder-display-v1"
+    },
+    {
+      "id": "z_lig_superior_glenohumeral_ligament_L",
+      "name_zh": "左盂肱上韧带",
+      "name_en": "Superior glenohumeral ligament.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_humerus_L",
+        "bone_scapula_L"
+      ],
+      "joint_or_connection_ids": [
+        "glenohumeral_L"
+      ],
+      "source_structure_id": "Superior glenohumeral ligament.l",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 8992,
+      "note": "采用肩部审核页的显示优化版；仅显示效果已确认，附着足印、分束和运动尚未验收。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Glenohumeral joint.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        0.15174904465675354,
+        1.3973459005355835,
+        -0.01855410262942314
+      ],
+      "geometry_revision": "shoulder-display-v1"
+    },
+    {
+      "id": "z_lig_middle_glenohumeral_ligament_R",
+      "name_zh": "右盂肱中韧带",
+      "name_en": "Middle glenohumeral ligament.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_humerus_R",
+        "bone_scapula_R"
+      ],
+      "joint_or_connection_ids": [
+        "glenohumeral_R"
+      ],
+      "source_structure_id": "Middle glenohumeral ligament.r",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 13664,
+      "note": "采用肩部审核页的显示优化版；仅显示效果已确认，附着足印、分束和运动尚未验收。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Glenohumeral joint.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        -0.14970307052135468,
+        1.3899351358413696,
+        -0.014912385493516922
+      ],
+      "geometry_revision": "shoulder-display-v1"
+    },
+    {
+      "id": "z_lig_middle_glenohumeral_ligament_L",
+      "name_zh": "左盂肱中韧带",
+      "name_en": "Middle glenohumeral ligament.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_humerus_L",
+        "bone_scapula_L"
+      ],
+      "joint_or_connection_ids": [
+        "glenohumeral_L"
+      ],
+      "source_structure_id": "Middle glenohumeral ligament.l",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 13664,
+      "note": "采用肩部审核页的显示优化版；仅显示效果已确认，附着足印、分束和运动尚未验收。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Glenohumeral joint.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        0.1497030109167099,
+        1.3899351358413696,
+        -0.014912385493516922
+      ],
+      "geometry_revision": "shoulder-display-v1"
+    },
+    {
+      "id": "z_lig_inferior_transverse_scapular_ligament_R",
+      "name_zh": "右肩胛下横韧带",
+      "name_en": "Inferior transverse scapular ligament.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_clavicle_R",
+        "bone_humerus_R",
+        "bone_scapula_R"
+      ],
+      "joint_or_connection_ids": [
+        "acromioclavicular_R",
+        "glenohumeral_R"
+      ],
+      "source_structure_id": "Inferior transverse scapular ligament.r",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 320,
+      "note": "采用肩部审核页的显示优化版；仅显示效果已确认，附着足印、分束和运动尚未验收。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Fibrous joints of pectoral girdle.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        -0.14618897438049316,
+        1.383274793624878,
+        -0.055644623935222626
+      ],
+      "geometry_revision": "shoulder-display-v1"
+    },
+    {
+      "id": "z_lig_inferior_transverse_scapular_ligament_L",
+      "name_zh": "左肩胛下横韧带",
+      "name_en": "Inferior transverse scapular ligament.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_clavicle_L",
+        "bone_humerus_L",
+        "bone_scapula_L"
+      ],
+      "joint_or_connection_ids": [
+        "acromioclavicular_L",
+        "glenohumeral_L"
+      ],
+      "source_structure_id": "Inferior transverse scapular ligament.l",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 320,
+      "note": "采用肩部审核页的显示优化版；仅显示效果已确认，附着足印、分束和运动尚未验收。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Fibrous joints of pectoral girdle.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        0.14618897438049316,
+        1.383274793624878,
+        -0.055644623935222626
+      ],
+      "geometry_revision": "shoulder-display-v1"
+    },
+    {
+      "id": "z_lig_inferior_glenohumeral_ligament_R",
+      "name_zh": "右盂肱下韧带",
+      "name_en": "Inferior glenohumeral ligament.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_humerus_R",
+        "bone_scapula_R"
+      ],
+      "joint_or_connection_ids": [
+        "glenohumeral_R"
+      ],
+      "source_structure_id": "Inferior glenohumeral ligament.r",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 16224,
+      "note": "采用肩部审核页的显示优化版；仅显示效果已确认，附着足印、分束和运动尚未验收。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Glenohumeral joint.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        -0.14782322943210602,
+        1.3746463060379028,
+        -0.01805136166512966
+      ],
+      "geometry_revision": "shoulder-display-v1"
+    },
+    {
+      "id": "z_lig_inferior_glenohumeral_ligament_L",
+      "name_zh": "左盂肱下韧带",
+      "name_en": "Inferior glenohumeral ligament.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_humerus_L",
+        "bone_scapula_L"
+      ],
+      "joint_or_connection_ids": [
+        "glenohumeral_L"
+      ],
+      "source_structure_id": "Inferior glenohumeral ligament.l",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 16224,
+      "note": "采用肩部审核页的显示优化版；仅显示效果已确认，附着足印、分束和运动尚未验收。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Glenohumeral joint.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        0.14782316982746124,
+        1.3746463060379028,
+        -0.01805136166512966
+      ],
+      "geometry_revision": "shoulder-display-v1"
+    },
+    {
+      "id": "z_lig_coracohumeral_ligament_R",
+      "name_zh": "右喙肱韧带",
+      "name_en": "Coracohumeral ligament.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_humerus_R",
+        "bone_scapula_R"
+      ],
+      "joint_or_connection_ids": [
+        "glenohumeral_R"
+      ],
+      "source_structure_id": "Coracohumeral ligament.r",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 8768,
+      "note": "采用肩部审核页的显示优化版；仅显示效果已确认，附着足印、分束和运动尚未验收。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Glenohumeral joint.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        -0.16326019167900085,
+        1.4000204801559448,
+        -0.009112562984228134
+      ],
+      "geometry_revision": "shoulder-display-v1"
+    },
+    {
+      "id": "z_lig_coracohumeral_ligament_L",
+      "name_zh": "左喙肱韧带",
+      "name_en": "Coracohumeral ligament.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_humerus_L",
+        "bone_scapula_L"
+      ],
+      "joint_or_connection_ids": [
+        "glenohumeral_L"
+      ],
+      "source_structure_id": "Coracohumeral ligament.l",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 8768,
+      "note": "采用肩部审核页的显示优化版；仅显示效果已确认，附着足印、分束和运动尚未验收。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Glenohumeral joint.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        0.16326013207435608,
+        1.4000204801559448,
+        -0.009112562984228134
+      ],
+      "geometry_revision": "shoulder-display-v1"
+    },
+    {
+      "id": "z_lig_coraco_acromial_ligament_R",
+      "name_zh": "右喙肩韧带",
+      "name_en": "Coraco-acromial ligament.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_clavicle_R",
+        "bone_humerus_R",
+        "bone_scapula_R"
+      ],
+      "joint_or_connection_ids": [
+        "acromioclavicular_R",
+        "glenohumeral_R"
+      ],
+      "source_structure_id": "Coraco-acromial ligament.r",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 320,
+      "note": "采用肩部审核页的显示优化版；仅显示效果已确认，附着足印、分束和运动尚未验收。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Fibrous joints of pectoral girdle.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        -0.14760275185108185,
+        1.4076768159866333,
+        -0.018848780542612076
+      ],
+      "geometry_revision": "shoulder-display-v1"
+    },
+    {
+      "id": "z_lig_coraco_acromial_ligament_L",
+      "name_zh": "左喙肩韧带",
+      "name_en": "Coraco-acromial ligament.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_clavicle_L",
+        "bone_humerus_L",
+        "bone_scapula_L"
+      ],
+      "joint_or_connection_ids": [
+        "acromioclavicular_L",
+        "glenohumeral_L"
+      ],
+      "source_structure_id": "Coraco-acromial ligament.l",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 320,
+      "note": "采用肩部审核页的显示优化版；仅显示效果已确认，附着足印、分束和运动尚未验收。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Fibrous joints of pectoral girdle.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        0.14760275185108185,
+        1.4076768159866333,
+        -0.018848780542612076
+      ],
+      "geometry_revision": "shoulder-display-v1"
+    },
+    {
+      "id": "z_lig_conoid_ligament_R",
+      "name_zh": "右锥状韧带",
+      "name_en": "Conoid ligament.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_clavicle_R",
+        "bone_scapula_R"
+      ],
+      "joint_or_connection_ids": [
+        "acromioclavicular_R"
+      ],
+      "source_structure_id": "Conoid ligament.r",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 2240,
+      "note": "采用肩部审核页的显示优化版；仅显示效果已确认，附着足印、分束和运动尚未验收。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Acromioclavicular joint.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        -0.11023406684398651,
+        1.4035688638687134,
+        -0.02738886885344982
+      ],
+      "geometry_revision": "shoulder-display-v1"
+    },
+    {
+      "id": "z_lig_conoid_ligament_L",
+      "name_zh": "左锥状韧带",
+      "name_en": "Conoid ligament.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_clavicle_L",
+        "bone_scapula_L"
+      ],
+      "joint_or_connection_ids": [
+        "acromioclavicular_L"
+      ],
+      "source_structure_id": "Conoid ligament.l",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 2240,
+      "note": "采用肩部审核页的显示优化版；仅显示效果已确认，附着足印、分束和运动尚未验收。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Acromioclavicular joint.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        0.11023399978876114,
+        1.4035688638687134,
+        -0.02738886885344982
+      ],
+      "geometry_revision": "shoulder-display-v1"
+    },
+    {
+      "id": "z_lig_acromioclavicular_ligament_R",
+      "name_zh": "右肩锁韧带",
+      "name_en": "Acromioclavicular ligament.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_clavicle_R",
+        "bone_scapula_R"
+      ],
+      "joint_or_connection_ids": [
+        "acromioclavicular_R"
+      ],
+      "source_structure_id": "Acromioclavicular ligament.r",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 16896,
+      "note": "采用肩部审核页的显示优化版；仅显示效果已确认，附着足印、分束和运动尚未验收。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Acromioclavicular joint.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        -0.15211306512355804,
+        1.4208449125289917,
+        -0.04017955809831619
+      ],
+      "geometry_revision": "shoulder-display-v1"
+    },
+    {
+      "id": "z_lig_acromioclavicular_ligament_L",
+      "name_zh": "左肩锁韧带",
+      "name_en": "Acromioclavicular ligament.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_clavicle_L",
+        "bone_scapula_L"
+      ],
+      "joint_or_connection_ids": [
+        "acromioclavicular_L"
+      ],
+      "source_structure_id": "Acromioclavicular ligament.l",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 16896,
+      "note": "采用肩部审核页的显示优化版；仅显示效果已确认，附着足印、分束和运动尚未验收。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Acromioclavicular joint.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        0.15211302042007446,
+        1.4208449125289917,
+        -0.04017955809831619
+      ],
+      "geometry_revision": "shoulder-display-v1"
+    }
+  ],
+  "replaces_ids": [
+    "z_lig_trapezoid_ligament_R",
+    "z_lig_trapezoid_ligament_L",
+    "z_lig_transverse_humeral_ligament_R",
+    "z_lig_transverse_humeral_ligament_L",
+    "z_lig_superior_transverse_scapular_ligament_R",
+    "z_lig_superior_transverse_scapular_ligament_L",
+    "z_lig_superior_glenohumeral_ligament_R",
+    "z_lig_superior_glenohumeral_ligament_L",
+    "z_lig_middle_glenohumeral_ligament_R",
+    "z_lig_middle_glenohumeral_ligament_L",
+    "z_lig_inferior_transverse_scapular_ligament_R",
+    "z_lig_inferior_transverse_scapular_ligament_L",
+    "z_lig_inferior_glenohumeral_ligament_R",
+    "z_lig_inferior_glenohumeral_ligament_L",
+    "z_lig_coracohumeral_ligament_R",
+    "z_lig_coracohumeral_ligament_L",
+    "z_lig_coraco_acromial_ligament_R",
+    "z_lig_coraco_acromial_ligament_L",
+    "z_lig_conoid_ligament_R",
+    "z_lig_conoid_ligament_L",
+    "z_lig_acromioclavicular_ligament_R",
+    "z_lig_acromioclavicular_ligament_L"
+  ],
+  "status": "display_selected_anatomy_pending"
+}

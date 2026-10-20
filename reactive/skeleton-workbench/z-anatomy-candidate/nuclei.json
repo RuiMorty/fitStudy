@@ -1,0 +1,814 @@
+{
+  "status": "source_native_candidate_not_validated",
+  "source_sha256": "9f08a17ea0115fed80b2a73ecdf0a1bc2ab2f6956f37c593ce23d513ea35afcd",
+  "file": "z-anatomy-candidate/assets/nuclei.glb",
+  "objects": [
+    {
+      "id": "nucleus_C2-C3",
+      "name_zh": "髓核 C2-C3",
+      "name_en": "Nucleus pulposus C2-C3",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "joint",
+      "tissue_type": "nucleus_pulposus",
+      "bone_ids": [
+        "bone_vertebra_C2_M",
+        "bone_vertebra_C3_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_C2_vertebra_C3"
+      ],
+      "source_structure_id": "Nucleus pulposus C2-C3",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 960,
+      "note": "源髓核候选。内部视图仅显示髓核并隐藏整体椎间盘，未生成独立纤维环；不把整体盘减髓核冒充解剖分层。",
+      "granularity": "individual",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "modifiers": []
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        2.0731032446263953e-09,
+        1.518086314201355,
+        -0.010063686408102512
+      ]
+    },
+    {
+      "id": "nucleus_C3-C4",
+      "name_zh": "髓核 C3-C4",
+      "name_en": "Nucleus pulposus C3-C4",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "joint",
+      "tissue_type": "nucleus_pulposus",
+      "bone_ids": [
+        "bone_vertebra_C3_M",
+        "bone_vertebra_C4_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_C3_vertebra_C4"
+      ],
+      "source_structure_id": "Nucleus pulposus C3-C4",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 960,
+      "note": "源髓核候选。内部视图仅显示髓核并隐藏整体椎间盘，未生成独立纤维环；不把整体盘减髓核冒充解剖分层。",
+      "granularity": "individual",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "modifiers": []
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        1.9144232865642152e-09,
+        1.5015181303024292,
+        -0.00972730666399002
+      ]
+    },
+    {
+      "id": "nucleus_C4-C5",
+      "name_zh": "髓核 C4-C5",
+      "name_en": "Nucleus pulposus C4-C5",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "joint",
+      "tissue_type": "nucleus_pulposus",
+      "bone_ids": [
+        "bone_vertebra_C4_M",
+        "bone_vertebra_C5_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_C4_vertebra_C5"
+      ],
+      "source_structure_id": "Nucleus pulposus C4-C5",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 960,
+      "note": "源髓核候选。内部视图仅显示髓核并隐藏整体椎间盘，未生成独立纤维环；不把整体盘减髓核冒充解剖分层。",
+      "granularity": "individual",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "modifiers": []
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        1.8838886006733446e-09,
+        1.4856973886489868,
+        -0.00820374209433794
+      ]
+    },
+    {
+      "id": "nucleus_C5-C6",
+      "name_zh": "髓核 C5-C6",
+      "name_en": "Nucleus pulposus C5-C6",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "joint",
+      "tissue_type": "nucleus_pulposus",
+      "bone_ids": [
+        "bone_vertebra_C5_M",
+        "bone_vertebra_C6_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_C5_vertebra_C6"
+      ],
+      "source_structure_id": "Nucleus pulposus C5-C6",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 960,
+      "note": "源髓核候选。内部视图仅显示髓核并隐藏整体椎间盘，未生成独立纤维环；不把整体盘减髓核冒充解剖分层。",
+      "granularity": "individual",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "modifiers": []
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        2.16263984498255e-09,
+        1.4697718620300293,
+        -0.010069645941257477
+      ]
+    },
+    {
+      "id": "nucleus_C6-C7",
+      "name_zh": "髓核 C6-C7",
+      "name_en": "Nucleus pulposus C6-C7",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "joint",
+      "tissue_type": "nucleus_pulposus",
+      "bone_ids": [
+        "bone_vertebra_C6_M",
+        "bone_vertebra_C7_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_C6_vertebra_C7"
+      ],
+      "source_structure_id": "Nucleus pulposus C6-C7",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 960,
+      "note": "源髓核候选。内部视图仅显示髓核并隐藏整体椎间盘，未生成独立纤维环；不把整体盘减髓核冒充解剖分层。",
+      "granularity": "individual",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "modifiers": []
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        2.3192507914160387e-09,
+        1.4555941820144653,
+        -0.015995534136891365
+      ]
+    },
+    {
+      "id": "nucleus_C7-T1",
+      "name_zh": "髓核 C7-T1",
+      "name_en": "Nucleus pulposus C7-T1",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "joint",
+      "tissue_type": "nucleus_pulposus",
+      "bone_ids": [
+        "bone_vertebra_C7_M",
+        "bone_vertebra_T1_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_C7_vertebra_T1"
+      ],
+      "source_structure_id": "Nucleus pulposus C7-T1",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 960,
+      "note": "源髓核候选。内部视图仅显示髓核并隐藏整体椎间盘，未生成独立纤维环；不把整体盘减髓核冒充解剖分层。",
+      "granularity": "individual",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "modifiers": []
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        2.0277033385696086e-09,
+        1.440801978111267,
+        -0.02117220126092434
+      ]
+    },
+    {
+      "id": "nucleus_T1-T2",
+      "name_zh": "髓核 T1-T2",
+      "name_en": "Nucleus pulposus T1-T2",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "joint",
+      "tissue_type": "nucleus_pulposus",
+      "bone_ids": [
+        "bone_vertebra_T1_M",
+        "bone_vertebra_T2_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_T1_vertebra_T2"
+      ],
+      "source_structure_id": "Nucleus pulposus T1-T2",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 960,
+      "note": "源髓核候选。内部视图仅显示髓核并隐藏整体椎间盘，未生成独立纤维环；不把整体盘减髓核冒充解剖分层。",
+      "granularity": "individual",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "modifiers": []
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        2.2214776684847948e-09,
+        1.425407886505127,
+        -0.027842869982123375
+      ]
+    },
+    {
+      "id": "nucleus_T2-T3",
+      "name_zh": "髓核 T2-T3",
+      "name_en": "Nucleus pulposus T2-T3",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "joint",
+      "tissue_type": "nucleus_pulposus",
+      "bone_ids": [
+        "bone_vertebra_T2_M",
+        "bone_vertebra_T3_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_T2_vertebra_T3"
+      ],
+      "source_structure_id": "Nucleus pulposus T2-T3",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 960,
+      "note": "源髓核候选。内部视图仅显示髓核并隐藏整体椎间盘，未生成独立纤维环；不把整体盘减髓核冒充解剖分层。",
+      "granularity": "individual",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "modifiers": []
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        2.3996806763904033e-09,
+        1.4062484502792358,
+        -0.03548050671815872
+      ]
+    },
+    {
+      "id": "nucleus_T3-T4",
+      "name_zh": "髓核 T3-T4",
+      "name_en": "Nucleus pulposus T3-T4",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "joint",
+      "tissue_type": "nucleus_pulposus",
+      "bone_ids": [
+        "bone_vertebra_T3_M",
+        "bone_vertebra_T4_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_T3_vertebra_T4"
+      ],
+      "source_structure_id": "Nucleus pulposus T3-T4",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 960,
+      "note": "源髓核候选。内部视图仅显示髓核并隐藏整体椎间盘，未生成独立纤维环；不把整体盘减髓核冒充解剖分层。",
+      "granularity": "individual",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "modifiers": []
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        1.633501445219565e-09,
+        1.384143352508545,
+        -0.04381050169467926
+      ]
+    },
+    {
+      "id": "nucleus_T4-T5",
+      "name_zh": "髓核 T4-T5",
+      "name_en": "Nucleus pulposus T4-T5",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "joint",
+      "tissue_type": "nucleus_pulposus",
+      "bone_ids": [
+        "bone_vertebra_T4_M",
+        "bone_vertebra_T5_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_T4_vertebra_T5"
+      ],
+      "source_structure_id": "Nucleus pulposus T4-T5",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 960,
+      "note": "源髓核候选。内部视图仅显示髓核并隐藏整体椎间盘，未生成独立纤维环；不把整体盘减髓核冒充解剖分层。",
+      "granularity": "individual",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "modifiers": []
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        2.2251429587782923e-09,
+        1.361466407775879,
+        -0.050823718309402466
+      ]
+    },
+    {
+      "id": "nucleus_T5-T6",
+      "name_zh": "髓核 T5-T6",
+      "name_en": "Nucleus pulposus T5-T6",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "joint",
+      "tissue_type": "nucleus_pulposus",
+      "bone_ids": [
+        "bone_vertebra_T5_M",
+        "bone_vertebra_T6_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_T5_vertebra_T6"
+      ],
+      "source_structure_id": "Nucleus pulposus T5-T6",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 960,
+      "note": "源髓核候选。内部视图仅显示髓核并隐藏整体椎间盘，未生成独立纤维环；不把整体盘减髓核冒充解剖分层。",
+      "granularity": "individual",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "modifiers": []
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        2.3929156434121523e-09,
+        1.334874153137207,
+        -0.05290234461426735
+      ]
+    },
+    {
+      "id": "nucleus_T6-T7",
+      "name_zh": "髓核 T6-T7",
+      "name_en": "Nucleus pulposus T6-T7",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "joint",
+      "tissue_type": "nucleus_pulposus",
+      "bone_ids": [
+        "bone_vertebra_T6_M",
+        "bone_vertebra_T7_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_T6_vertebra_T7"
+      ],
+      "source_structure_id": "Nucleus pulposus T6-T7",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 960,
+      "note": "源髓核候选。内部视图仅显示髓核并隐藏整体椎间盘，未生成独立纤维环；不把整体盘减髓核冒充解剖分层。",
+      "granularity": "individual",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "modifiers": []
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        2.6212667592062644e-09,
+        1.3077747821807861,
+        -0.05450746417045593
+      ]
+    },
+    {
+      "id": "nucleus_T7-T8",
+      "name_zh": "髓核 T7-T8",
+      "name_en": "Nucleus pulposus T7-T8",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "joint",
+      "tissue_type": "nucleus_pulposus",
+      "bone_ids": [
+        "bone_vertebra_T7_M",
+        "bone_vertebra_T8_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_T7_vertebra_T8"
+      ],
+      "source_structure_id": "Nucleus pulposus T7-T8",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 960,
+      "note": "源髓核候选。内部视图仅显示髓核并隐藏整体椎间盘，未生成独立纤维环；不把整体盘减髓核冒充解剖分层。",
+      "granularity": "individual",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "modifiers": []
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        2.1647688086545713e-09,
+        1.2807778120040894,
+        -0.05010170862078667
+      ]
+    },
+    {
+      "id": "nucleus_T8-T9",
+      "name_zh": "髓核 T8-T9",
+      "name_en": "Nucleus pulposus T8-T9",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "joint",
+      "tissue_type": "nucleus_pulposus",
+      "bone_ids": [
+        "bone_vertebra_T8_M",
+        "bone_vertebra_T9_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_T8_vertebra_T9"
+      ],
+      "source_structure_id": "Nucleus pulposus T8-T9",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 960,
+      "note": "源髓核候选。内部视图仅显示髓核并隐藏整体椎间盘，未生成独立纤维环；不把整体盘减髓核冒充解剖分层。",
+      "granularity": "individual",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "modifiers": []
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        1.935701821054181e-09,
+        1.2527810335159302,
+        -0.045964647084474564
+      ]
+    },
+    {
+      "id": "nucleus_T9-T10",
+      "name_zh": "髓核 T9-T10",
+      "name_en": "Nucleus pulposus T9-T10",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "joint",
+      "tissue_type": "nucleus_pulposus",
+      "bone_ids": [
+        "bone_vertebra_T9_M",
+        "bone_vertebra_T10_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_T9_vertebra_T10"
+      ],
+      "source_structure_id": "Nucleus pulposus T9-T10",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 960,
+      "note": "源髓核候选。内部视图仅显示髓核并隐藏整体椎间盘，未生成独立纤维环；不把整体盘减髓核冒充解剖分层。",
+      "granularity": "individual",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "modifiers": []
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        1.7020647113952236e-09,
+        1.2242077589035034,
+        -0.03953744098544121
+      ]
+    },
+    {
+      "id": "nucleus_T10-T11",
+      "name_zh": "髓核 T10-T11",
+      "name_en": "Nucleus pulposus T10-T11",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "joint",
+      "tissue_type": "nucleus_pulposus",
+      "bone_ids": [
+        "bone_vertebra_T10_M",
+        "bone_vertebra_T11_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_T10_vertebra_T11"
+      ],
+      "source_structure_id": "Nucleus pulposus T10-T11",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 960,
+      "note": "源髓核候选。内部视图仅显示髓核并隐藏整体椎间盘，未生成独立纤维环；不把整体盘减髓核冒充解剖分层。",
+      "granularity": "individual",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "modifiers": []
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        2.844702473581151e-09,
+        1.1958507299423218,
+        -0.03265940770506859
+      ]
+    },
+    {
+      "id": "nucleus_T11-T12",
+      "name_zh": "髓核 T11-T12",
+      "name_en": "Nucleus pulposus T11-T12",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "joint",
+      "tissue_type": "nucleus_pulposus",
+      "bone_ids": [
+        "bone_vertebra_T11_M",
+        "bone_vertebra_T12_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_T11_vertebra_T12"
+      ],
+      "source_structure_id": "Nucleus pulposus T11-T12",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 960,
+      "note": "源髓核候选。内部视图仅显示髓核并隐藏整体椎间盘，未生成独立纤维环；不把整体盘减髓核冒充解剖分层。",
+      "granularity": "individual",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "modifiers": []
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        2.169707746801919e-09,
+        1.1650316715240479,
+        -0.02401568554341793
+      ]
+    },
+    {
+      "id": "nucleus_T12-L1",
+      "name_zh": "髓核 T12-L1",
+      "name_en": "Nucleus pulposus T12-L1",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "joint",
+      "tissue_type": "nucleus_pulposus",
+      "bone_ids": [
+        "bone_vertebra_T12_M",
+        "bone_vertebra_L1_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_T12_vertebra_L1"
+      ],
+      "source_structure_id": "Nucleus pulposus T12-L1",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 960,
+      "note": "源髓核候选。内部视图仅显示髓核并隐藏整体椎间盘，未生成独立纤维环；不把整体盘减髓核冒充解剖分层。",
+      "granularity": "individual",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "modifiers": []
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        1.9929944361507523e-09,
+        1.1322871446609497,
+        -0.016273632645606995
+      ]
+    },
+    {
+      "id": "nucleus_L1-L2",
+      "name_zh": "髓核 L1-L2",
+      "name_en": "Nucleus pulposus L1-L2",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "joint",
+      "tissue_type": "nucleus_pulposus",
+      "bone_ids": [
+        "bone_vertebra_L1_M",
+        "bone_vertebra_L2_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_L1_vertebra_L2"
+      ],
+      "source_structure_id": "Nucleus pulposus L1-L2",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 960,
+      "note": "源髓核候选。内部视图仅显示髓核并隐藏整体椎间盘，未生成独立纤维环；不把整体盘减髓核冒充解剖分层。",
+      "granularity": "individual",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "modifiers": []
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        1.8298178527942355e-09,
+        1.0988571643829346,
+        -0.0071685342118144035
+      ]
+    },
+    {
+      "id": "nucleus_L2-L3",
+      "name_zh": "髓核 L2-L3",
+      "name_en": "Nucleus pulposus L2-L3",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "joint",
+      "tissue_type": "nucleus_pulposus",
+      "bone_ids": [
+        "bone_vertebra_L2_M",
+        "bone_vertebra_L3_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_L2_vertebra_L3"
+      ],
+      "source_structure_id": "Nucleus pulposus L2-L3",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 960,
+      "note": "源髓核候选。内部视图仅显示髓核并隐藏整体椎间盘，未生成独立纤维环；不把整体盘减髓核冒充解剖分层。",
+      "granularity": "individual",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "modifiers": []
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        2.9165760917493344e-09,
+        1.0661466121673584,
+        -0.0023672617971897125
+      ]
+    },
+    {
+      "id": "nucleus_L3-L4",
+      "name_zh": "髓核 L3-L4",
+      "name_en": "Nucleus pulposus L3-L4",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "joint",
+      "tissue_type": "nucleus_pulposus",
+      "bone_ids": [
+        "bone_vertebra_L3_M",
+        "bone_vertebra_L4_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_L3_vertebra_L4"
+      ],
+      "source_structure_id": "Nucleus pulposus L3-L4",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 960,
+      "note": "源髓核候选。内部视图仅显示髓核并隐藏整体椎间盘，未生成独立纤维环；不把整体盘减髓核冒充解剖分层。",
+      "granularity": "individual",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "modifiers": []
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        2.6870168312598253e-09,
+        1.0308549404144287,
+        -0.0011480806861072779
+      ]
+    },
+    {
+      "id": "nucleus_L4-L5",
+      "name_zh": "髓核 L4-L5",
+      "name_en": "Nucleus pulposus L4-L5",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "joint",
+      "tissue_type": "nucleus_pulposus",
+      "bone_ids": [
+        "bone_vertebra_L4_M",
+        "bone_vertebra_L5_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_L4_vertebra_L5"
+      ],
+      "source_structure_id": "Nucleus pulposus L4-L5",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 960,
+      "note": "源髓核候选。内部视图仅显示髓核并隐藏整体椎间盘，未生成独立纤维环；不把整体盘减髓核冒充解剖分层。",
+      "granularity": "individual",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "modifiers": []
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        2.573339541456221e-09,
+        0.998090386390686,
+        -0.004332354292273521
+      ]
+    },
+    {
+      "id": "nucleus_L5-S1",
+      "name_zh": "髓核 L5-S1",
+      "name_en": "Nucleus pulposus L5-S1",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "joint",
+      "tissue_type": "nucleus_pulposus",
+      "bone_ids": [
+        "bone_vertebra_L5_M",
+        "bone_sacrum_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_L5_sacrum"
+      ],
+      "source_structure_id": "Nucleus pulposus L5-S1",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 960,
+      "note": "源髓核候选。内部视图仅显示髓核并隐藏整体椎间盘，未生成独立纤维环；不把整体盘减髓核冒充解剖分层。",
+      "granularity": "individual",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "modifiers": []
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        2.4782722540805935e-09,
+        0.9631680846214294,
+        -0.017795247957110405
+      ]
+    }
+  ],
+  "excluded": [],
+  "count": 23
+}

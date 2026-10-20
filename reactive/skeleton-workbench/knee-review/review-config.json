@@ -1,0 +1,28 @@
+{
+  "title": "膝部结构",
+  "bones": [
+    "Femur",
+    "Tibia",
+    "Fibula",
+    "Patella"
+  ],
+  "model": "knee-review-contact.glb",
+  "meshCount": 52,
+  "initialId": "z_lig_anterior_cruciate_ligament_R",
+  "target": [
+    0,
+    1,
+    0
+  ],
+  "camera": [
+    0,
+    1,
+    0.5
+  ],
+  "storageKey": "knee-review-v1",
+  "allowOriginal": false,
+  "loadedLabel": "端部贴合显示版 · 足印待核准",
+  "boneOpacityControl": true,
+  "minFitDistance": 0.22,
+  "audit": "geometry-audit-contact.json"
+}

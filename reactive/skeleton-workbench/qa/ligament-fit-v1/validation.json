@@ -1,0 +1,39 @@
+{
+  "refined_meshes": 61,
+  "original_ligament_count": 286,
+  "all_replacements_resolve": true,
+  "rest_transforms_match": true,
+  "bone_sampling_threshold_mm": 0.15,
+  "remaining_bone_penetration_samples_above_threshold": 0,
+  "attachment_types": 22,
+  "attachment_objects": 44,
+  "protected_models": [
+    "skeleton-workbench/z-anatomy-candidate/assets/connections.glb",
+    "skeleton-workbench/z-anatomy-candidate/assets/ligament-library.glb",
+    "skeleton-workbench/research/ossicles/Startup.blend"
+  ],
+  "desktop": [
+    1440,
+    1000
+  ],
+  "mobile": [
+    390,
+    844
+  ],
+  "mobile_horizontal_overflow": false,
+  "browser_errors": [],
+  "ui_checks": [
+    "name selection",
+    "attachment panel",
+    "evidence links and quotes",
+    "isolation",
+    "explosion to 100%",
+    "assembly to 0%",
+    "wrist preset"
+  ],
+  "limitations": [
+    "static vertex and triangle-centroid sampling, not continuous collision proof",
+    "all anatomical footprints pending second review",
+    "all-body attachment evidence not complete"
+  ]
+}

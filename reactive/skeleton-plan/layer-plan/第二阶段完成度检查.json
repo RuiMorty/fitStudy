@@ -1,0 +1,4388 @@
+{
+  "summary": {
+    "stage_complete": false,
+    "connections": 205,
+    "synovial_connections_without_synovium": 116,
+    "synovial_connections_without_capsule_candidate": 38,
+    "anatomically_accepted_connections": 0,
+    "note": "Candidate association by source parent does not establish complete coverage or anatomical attachment."
+  },
+  "connections": [
+    {
+      "connection_id": "cranial_sutures",
+      "name_zh": "颅骨缝连接组",
+      "kind": "suture_group",
+      "required_soft_tissues": "颅缝纤维组织",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [],
+      "synovium": "not_applicable_to_this_connection_type",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "hyoid_suspension",
+      "name_zh": "舌骨悬吊",
+      "kind": "soft_tissue_suspension",
+      "required_soft_tissues": "舌骨上/下肌群、茎突舌骨韧带",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_stylomandibular_ligament_R",
+        "z_lig_stylomandibular_ligament_L",
+        "z_lig_stylohyoid_ligament_R",
+        "z_lig_stylohyoid_ligament_L",
+        "z_lig_sphenomandibular_ligament_R",
+        "z_lig_sphenomandibular_ligament_L",
+        "z_lig_pterygospinous_ligament_R",
+        "z_lig_pterygospinous_ligament_L"
+      ],
+      "synovium": "not_applicable_to_this_connection_type",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "atlanto_occipital",
+      "name_zh": "寰枕关节组",
+      "kind": "paired_synovial",
+      "required_soft_tissues": "关节囊、寰枕膜等",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_supraspinous_ligament_M",
+        "z_lig_posterior_longitudinal_ligament_M",
+        "z_lig_nuchal_ligament_M",
+        "z_lig_ligamenta_flava_M",
+        "z_lig_interspinous_ligaments_M",
+        "z_lig_intercornual_ligament_R",
+        "z_lig_intercornual_ligament_L",
+        "z_lig_anterior_longitudinal_ligament_M"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "atlanto_axial",
+      "name_zh": "寰枢关节组",
+      "kind": "coupled_synovial",
+      "required_soft_tissues": "寰椎横韧带、翼状韧带、覆膜、关节囊",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_supraspinous_ligament_M",
+        "z_lig_posterior_longitudinal_ligament_M",
+        "z_lig_nuchal_ligament_M",
+        "z_lig_ligamenta_flava_M",
+        "z_lig_interspinous_ligaments_M",
+        "z_lig_intercornual_ligament_R",
+        "z_lig_intercornual_ligament_L",
+        "z_lig_anterior_longitudinal_ligament_M"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "spine_vertebra_C2_vertebra_C3",
+      "name_zh": "C2—C3运动节段",
+      "kind": "motion_segment",
+      "required_soft_tissues": "椎间盘、关节突软骨/关节囊、纵韧带、黄韧带及棘间等韧带",
+      "internal_candidates": [
+        "disc_C2-C3",
+        "nucleus_C2-C3"
+      ],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_supraspinous_ligament_M",
+        "z_lig_posterior_longitudinal_ligament_M",
+        "z_lig_nuchal_ligament_M",
+        "z_lig_ligamenta_flava_M",
+        "z_lig_interspinous_ligaments_M",
+        "z_lig_intercornual_ligament_R",
+        "z_lig_intercornual_ligament_L",
+        "z_lig_anterior_longitudinal_ligament_M"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "spine_vertebra_C3_vertebra_C4",
+      "name_zh": "C3—C4运动节段",
+      "kind": "motion_segment",
+      "required_soft_tissues": "椎间盘、关节突软骨/关节囊、纵韧带、黄韧带及棘间等韧带",
+      "internal_candidates": [
+        "disc_C3-C4",
+        "nucleus_C3-C4"
+      ],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_supraspinous_ligament_M",
+        "z_lig_posterior_longitudinal_ligament_M",
+        "z_lig_nuchal_ligament_M",
+        "z_lig_ligamenta_flava_M",
+        "z_lig_interspinous_ligaments_M",
+        "z_lig_intercornual_ligament_R",
+        "z_lig_intercornual_ligament_L",
+        "z_lig_anterior_longitudinal_ligament_M"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "spine_vertebra_C4_vertebra_C5",
+      "name_zh": "C4—C5运动节段",
+      "kind": "motion_segment",
+      "required_soft_tissues": "椎间盘、关节突软骨/关节囊、纵韧带、黄韧带及棘间等韧带",
+      "internal_candidates": [
+        "disc_C4-C5",
+        "nucleus_C4-C5"
+      ],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_supraspinous_ligament_M",
+        "z_lig_posterior_longitudinal_ligament_M",
+        "z_lig_nuchal_ligament_M",
+        "z_lig_ligamenta_flava_M",
+        "z_lig_interspinous_ligaments_M",
+        "z_lig_intercornual_ligament_R",
+        "z_lig_intercornual_ligament_L",
+        "z_lig_anterior_longitudinal_ligament_M"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "spine_vertebra_C5_vertebra_C6",
+      "name_zh": "C5—C6运动节段",
+      "kind": "motion_segment",
+      "required_soft_tissues": "椎间盘、关节突软骨/关节囊、纵韧带、黄韧带及棘间等韧带",
+      "internal_candidates": [
+        "disc_C5-C6",
+        "nucleus_C5-C6"
+      ],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_supraspinous_ligament_M",
+        "z_lig_posterior_longitudinal_ligament_M",
+        "z_lig_nuchal_ligament_M",
+        "z_lig_ligamenta_flava_M",
+        "z_lig_interspinous_ligaments_M",
+        "z_lig_intercornual_ligament_R",
+        "z_lig_intercornual_ligament_L",
+        "z_lig_anterior_longitudinal_ligament_M"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "spine_vertebra_C6_vertebra_C7",
+      "name_zh": "C6—C7运动节段",
+      "kind": "motion_segment",
+      "required_soft_tissues": "椎间盘、关节突软骨/关节囊、纵韧带、黄韧带及棘间等韧带",
+      "internal_candidates": [
+        "disc_C6-C7",
+        "nucleus_C6-C7"
+      ],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_supraspinous_ligament_M",
+        "z_lig_posterior_longitudinal_ligament_M",
+        "z_lig_nuchal_ligament_M",
+        "z_lig_ligamenta_flava_M",
+        "z_lig_interspinous_ligaments_M",
+        "z_lig_intercornual_ligament_R",
+        "z_lig_intercornual_ligament_L",
+        "z_lig_anterior_longitudinal_ligament_M"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "spine_vertebra_C7_vertebra_T1",
+      "name_zh": "C7—T1运动节段",
+      "kind": "motion_segment",
+      "required_soft_tissues": "椎间盘、关节突软骨/关节囊、纵韧带、黄韧带及棘间等韧带",
+      "internal_candidates": [
+        "disc_C7-T1",
+        "nucleus_C7-T1"
+      ],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_supraspinous_ligament_M",
+        "z_lig_posterior_longitudinal_ligament_M",
+        "z_lig_nuchal_ligament_M",
+        "z_lig_ligamenta_flava_M",
+        "z_lig_interspinous_ligaments_M",
+        "z_lig_intercornual_ligament_R",
+        "z_lig_intercornual_ligament_L",
+        "z_lig_anterior_longitudinal_ligament_M"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "spine_vertebra_T1_vertebra_T2",
+      "name_zh": "T1—T2运动节段",
+      "kind": "motion_segment",
+      "required_soft_tissues": "椎间盘、关节突软骨/关节囊、纵韧带、黄韧带及棘间等韧带",
+      "internal_candidates": [
+        "disc_T1-T2",
+        "nucleus_T1-T2"
+      ],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_supraspinous_ligament_M",
+        "z_lig_posterior_longitudinal_ligament_M",
+        "z_lig_nuchal_ligament_M",
+        "z_lig_ligamenta_flava_M",
+        "z_lig_interspinous_ligaments_M",
+        "z_lig_intercornual_ligament_R",
+        "z_lig_intercornual_ligament_L",
+        "z_lig_anterior_longitudinal_ligament_M"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "spine_vertebra_T2_vertebra_T3",
+      "name_zh": "T2—T3运动节段",
+      "kind": "motion_segment",
+      "required_soft_tissues": "椎间盘、关节突软骨/关节囊、纵韧带、黄韧带及棘间等韧带",
+      "internal_candidates": [
+        "disc_T2-T3",
+        "nucleus_T2-T3"
+      ],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_supraspinous_ligament_M",
+        "z_lig_posterior_longitudinal_ligament_M",
+        "z_lig_nuchal_ligament_M",
+        "z_lig_ligamenta_flava_M",
+        "z_lig_interspinous_ligaments_M",
+        "z_lig_intercornual_ligament_R",
+        "z_lig_intercornual_ligament_L",
+        "z_lig_anterior_longitudinal_ligament_M"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "spine_vertebra_T3_vertebra_T4",
+      "name_zh": "T3—T4运动节段",
+      "kind": "motion_segment",
+      "required_soft_tissues": "椎间盘、关节突软骨/关节囊、纵韧带、黄韧带及棘间等韧带",
+      "internal_candidates": [
+        "disc_T3-T4",
+        "nucleus_T3-T4"
+      ],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_supraspinous_ligament_M",
+        "z_lig_posterior_longitudinal_ligament_M",
+        "z_lig_nuchal_ligament_M",
+        "z_lig_ligamenta_flava_M",
+        "z_lig_interspinous_ligaments_M",
+        "z_lig_intercornual_ligament_R",
+        "z_lig_intercornual_ligament_L",
+        "z_lig_anterior_longitudinal_ligament_M"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "spine_vertebra_T4_vertebra_T5",
+      "name_zh": "T4—T5运动节段",
+      "kind": "motion_segment",
+      "required_soft_tissues": "椎间盘、关节突软骨/关节囊、纵韧带、黄韧带及棘间等韧带",
+      "internal_candidates": [
+        "disc_T4-T5",
+        "nucleus_T4-T5"
+      ],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_supraspinous_ligament_M",
+        "z_lig_posterior_longitudinal_ligament_M",
+        "z_lig_nuchal_ligament_M",
+        "z_lig_ligamenta_flava_M",
+        "z_lig_interspinous_ligaments_M",
+        "z_lig_intercornual_ligament_R",
+        "z_lig_intercornual_ligament_L",
+        "z_lig_anterior_longitudinal_ligament_M"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "spine_vertebra_T5_vertebra_T6",
+      "name_zh": "T5—T6运动节段",
+      "kind": "motion_segment",
+      "required_soft_tissues": "椎间盘、关节突软骨/关节囊、纵韧带、黄韧带及棘间等韧带",
+      "internal_candidates": [
+        "disc_T5-T6",
+        "nucleus_T5-T6"
+      ],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_supraspinous_ligament_M",
+        "z_lig_posterior_longitudinal_ligament_M",
+        "z_lig_nuchal_ligament_M",
+        "z_lig_ligamenta_flava_M",
+        "z_lig_interspinous_ligaments_M",
+        "z_lig_intercornual_ligament_R",
+        "z_lig_intercornual_ligament_L",
+        "z_lig_anterior_longitudinal_ligament_M"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "spine_vertebra_T6_vertebra_T7",
+      "name_zh": "T6—T7运动节段",
+      "kind": "motion_segment",
+      "required_soft_tissues": "椎间盘、关节突软骨/关节囊、纵韧带、黄韧带及棘间等韧带",
+      "internal_candidates": [
+        "disc_T6-T7",
+        "nucleus_T6-T7"
+      ],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_supraspinous_ligament_M",
+        "z_lig_posterior_longitudinal_ligament_M",
+        "z_lig_nuchal_ligament_M",
+        "z_lig_ligamenta_flava_M",
+        "z_lig_interspinous_ligaments_M",
+        "z_lig_intercornual_ligament_R",
+        "z_lig_intercornual_ligament_L",
+        "z_lig_anterior_longitudinal_ligament_M"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "spine_vertebra_T7_vertebra_T8",
+      "name_zh": "T7—T8运动节段",
+      "kind": "motion_segment",
+      "required_soft_tissues": "椎间盘、关节突软骨/关节囊、纵韧带、黄韧带及棘间等韧带",
+      "internal_candidates": [
+        "disc_T7-T8",
+        "nucleus_T7-T8"
+      ],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_supraspinous_ligament_M",
+        "z_lig_posterior_longitudinal_ligament_M",
+        "z_lig_nuchal_ligament_M",
+        "z_lig_ligamenta_flava_M",
+        "z_lig_interspinous_ligaments_M",
+        "z_lig_intercornual_ligament_R",
+        "z_lig_intercornual_ligament_L",
+        "z_lig_anterior_longitudinal_ligament_M"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "spine_vertebra_T8_vertebra_T9",
+      "name_zh": "T8—T9运动节段",
+      "kind": "motion_segment",
+      "required_soft_tissues": "椎间盘、关节突软骨/关节囊、纵韧带、黄韧带及棘间等韧带",
+      "internal_candidates": [
+        "disc_T8-T9",
+        "nucleus_T8-T9"
+      ],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_supraspinous_ligament_M",
+        "z_lig_posterior_longitudinal_ligament_M",
+        "z_lig_nuchal_ligament_M",
+        "z_lig_ligamenta_flava_M",
+        "z_lig_interspinous_ligaments_M",
+        "z_lig_intercornual_ligament_R",
+        "z_lig_intercornual_ligament_L",
+        "z_lig_anterior_longitudinal_ligament_M"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "spine_vertebra_T9_vertebra_T10",
+      "name_zh": "T9—T10运动节段",
+      "kind": "motion_segment",
+      "required_soft_tissues": "椎间盘、关节突软骨/关节囊、纵韧带、黄韧带及棘间等韧带",
+      "internal_candidates": [
+        "disc_T9-T10",
+        "nucleus_T9-T10"
+      ],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_supraspinous_ligament_M",
+        "z_lig_posterior_longitudinal_ligament_M",
+        "z_lig_nuchal_ligament_M",
+        "z_lig_ligamenta_flava_M",
+        "z_lig_interspinous_ligaments_M",
+        "z_lig_intercornual_ligament_R",
+        "z_lig_intercornual_ligament_L",
+        "z_lig_anterior_longitudinal_ligament_M"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "spine_vertebra_T10_vertebra_T11",
+      "name_zh": "T10—T11运动节段",
+      "kind": "motion_segment",
+      "required_soft_tissues": "椎间盘、关节突软骨/关节囊、纵韧带、黄韧带及棘间等韧带",
+      "internal_candidates": [
+        "disc_T10-T11",
+        "nucleus_T10-T11"
+      ],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_supraspinous_ligament_M",
+        "z_lig_posterior_longitudinal_ligament_M",
+        "z_lig_nuchal_ligament_M",
+        "z_lig_ligamenta_flava_M",
+        "z_lig_interspinous_ligaments_M",
+        "z_lig_intercornual_ligament_R",
+        "z_lig_intercornual_ligament_L",
+        "z_lig_anterior_longitudinal_ligament_M"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "spine_vertebra_T11_vertebra_T12",
+      "name_zh": "T11—T12运动节段",
+      "kind": "motion_segment",
+      "required_soft_tissues": "椎间盘、关节突软骨/关节囊、纵韧带、黄韧带及棘间等韧带",
+      "internal_candidates": [
+        "disc_T11-T12",
+        "nucleus_T11-T12"
+      ],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_supraspinous_ligament_M",
+        "z_lig_posterior_longitudinal_ligament_M",
+        "z_lig_nuchal_ligament_M",
+        "z_lig_ligamenta_flava_M",
+        "z_lig_interspinous_ligaments_M",
+        "z_lig_intercornual_ligament_R",
+        "z_lig_intercornual_ligament_L",
+        "z_lig_anterior_longitudinal_ligament_M"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "spine_vertebra_T12_vertebra_L1",
+      "name_zh": "T12—L1运动节段",
+      "kind": "motion_segment",
+      "required_soft_tissues": "椎间盘、关节突软骨/关节囊、纵韧带、黄韧带及棘间等韧带",
+      "internal_candidates": [
+        "disc_T12-L1",
+        "nucleus_T12-L1"
+      ],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_supraspinous_ligament_M",
+        "z_lig_posterior_longitudinal_ligament_M",
+        "z_lig_nuchal_ligament_M",
+        "z_lig_ligamenta_flava_M",
+        "z_lig_interspinous_ligaments_M",
+        "z_lig_intercornual_ligament_R",
+        "z_lig_intercornual_ligament_L",
+        "z_lig_anterior_longitudinal_ligament_M"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "spine_vertebra_L1_vertebra_L2",
+      "name_zh": "L1—L2运动节段",
+      "kind": "motion_segment",
+      "required_soft_tissues": "椎间盘、关节突软骨/关节囊、纵韧带、黄韧带及棘间等韧带",
+      "internal_candidates": [
+        "disc_L1-L2",
+        "nucleus_L1-L2"
+      ],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_supraspinous_ligament_M",
+        "z_lig_posterior_longitudinal_ligament_M",
+        "z_lig_nuchal_ligament_M",
+        "z_lig_ligamenta_flava_M",
+        "z_lig_interspinous_ligaments_M",
+        "z_lig_intercornual_ligament_R",
+        "z_lig_intercornual_ligament_L",
+        "z_lig_anterior_longitudinal_ligament_M"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "spine_vertebra_L2_vertebra_L3",
+      "name_zh": "L2—L3运动节段",
+      "kind": "motion_segment",
+      "required_soft_tissues": "椎间盘、关节突软骨/关节囊、纵韧带、黄韧带及棘间等韧带",
+      "internal_candidates": [
+        "disc_L2-L3",
+        "nucleus_L2-L3"
+      ],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_supraspinous_ligament_M",
+        "z_lig_posterior_longitudinal_ligament_M",
+        "z_lig_nuchal_ligament_M",
+        "z_lig_ligamenta_flava_M",
+        "z_lig_interspinous_ligaments_M",
+        "z_lig_intercornual_ligament_R",
+        "z_lig_intercornual_ligament_L",
+        "z_lig_anterior_longitudinal_ligament_M"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "spine_vertebra_L3_vertebra_L4",
+      "name_zh": "L3—L4运动节段",
+      "kind": "motion_segment",
+      "required_soft_tissues": "椎间盘、关节突软骨/关节囊、纵韧带、黄韧带及棘间等韧带",
+      "internal_candidates": [
+        "disc_L3-L4",
+        "nucleus_L3-L4"
+      ],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_supraspinous_ligament_M",
+        "z_lig_posterior_longitudinal_ligament_M",
+        "z_lig_nuchal_ligament_M",
+        "z_lig_ligamenta_flava_M",
+        "z_lig_interspinous_ligaments_M",
+        "z_lig_intercornual_ligament_R",
+        "z_lig_intercornual_ligament_L",
+        "z_lig_anterior_longitudinal_ligament_M"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "spine_vertebra_L4_vertebra_L5",
+      "name_zh": "L4—L5运动节段",
+      "kind": "motion_segment",
+      "required_soft_tissues": "椎间盘、关节突软骨/关节囊、纵韧带、黄韧带及棘间等韧带",
+      "internal_candidates": [
+        "disc_L4-L5",
+        "nucleus_L4-L5"
+      ],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_supraspinous_ligament_M",
+        "z_lig_posterior_longitudinal_ligament_M",
+        "z_lig_nuchal_ligament_M",
+        "z_lig_ligamenta_flava_M",
+        "z_lig_interspinous_ligaments_M",
+        "z_lig_intercornual_ligament_R",
+        "z_lig_intercornual_ligament_L",
+        "z_lig_anterior_longitudinal_ligament_M"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "spine_vertebra_L5_sacrum",
+      "name_zh": "L5—sacrum运动节段",
+      "kind": "motion_segment",
+      "required_soft_tissues": "椎间盘、关节突软骨/关节囊、纵韧带、黄韧带及棘间等韧带",
+      "internal_candidates": [
+        "disc_L5-S1",
+        "nucleus_L5-S1"
+      ],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_supraspinous_ligament_M",
+        "z_lig_sacrotuberous_ligament_R",
+        "z_lig_sacrotuberous_ligament_L",
+        "z_lig_sacrospinous_ligament_R",
+        "z_lig_sacrospinous_ligament_L",
+        "z_lig_posterior_longitudinal_ligament_M",
+        "z_lig_nuchal_ligament_M",
+        "z_lig_ligamenta_flava_M",
+        "z_lig_interspinous_ligaments_M",
+        "z_lig_intercornual_ligament_R",
+        "z_lig_intercornual_ligament_L",
+        "z_lig_iliolumbar_ligament_R",
+        "z_lig_iliolumbar_ligament_L",
+        "z_lig_anterior_longitudinal_ligament_M"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "sacrococcygeal",
+      "name_zh": "骶尾连接",
+      "kind": "symphysis_or_fused_variant",
+      "required_soft_tissues": "骶尾韧带、连接组织",
+      "internal_candidates": [
+        "sacrococcygeal_disc"
+      ],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_supraspinous_ligament_M",
+        "z_lig_posterior_longitudinal_ligament_M",
+        "z_lig_nuchal_ligament_M",
+        "z_lig_ligamenta_flava_M",
+        "z_lig_interspinous_ligaments_M",
+        "z_lig_intercornual_ligament_R",
+        "z_lig_intercornual_ligament_L",
+        "z_lig_anterior_longitudinal_ligament_M"
+      ],
+      "synovium": "not_applicable_to_this_connection_type",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "tmj_L",
+      "name_zh": "左颞下颌关节",
+      "kind": "synovial",
+      "required_soft_tissues": "关节盘、关节囊、韧带",
+      "internal_candidates": [
+        "tmj_disc_L"
+      ],
+      "capsule_candidates": [
+        "capsule_tmj_L"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_stylomandibular_ligament_L",
+        "z_lig_stylohyoid_ligament_L",
+        "z_lig_sphenomandibular_ligament_L",
+        "z_lig_pterygospinous_ligament_L",
+        "z_lig_lateral_temporomandibular_ligament_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "incudomalleolar_L",
+      "name_zh": "左锤砧关节",
+      "kind": "synovial",
+      "required_soft_tissues": "关节囊、听小骨悬吊韧带",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "incudostapedial_L",
+      "name_zh": "左砧镫关节",
+      "kind": "synovial",
+      "required_soft_tissues": "关节囊",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "stapes_window_L",
+      "name_zh": "左镫骨—前庭窗连接",
+      "kind": "fibrous_connection",
+      "required_soft_tissues": "镫骨环韧带",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [],
+      "synovium": "not_applicable_to_this_connection_type",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "costovertebral_01_L",
+      "name_zh": "左第1肋椎连接组",
+      "kind": "rib_joint_group",
+      "required_soft_tissues": "肋头及肋横突关节囊/韧带",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_radiate_ligament_of_head_of_rib_L",
+        "z_lig_intra_articular_ligament_of_head_of_rib_M",
+        "z_lig_costotransverse_ligament_L"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "sternocostal_01_L",
+      "name_zh": "左第1胸肋连接",
+      "kind": "cartilage_mediated_connection",
+      "required_soft_tissues": "肋软骨、胸肋韧带；第1连接类型与其余不同",
+      "internal_candidates": [
+        "costal_cartilage_1_L"
+      ],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "costovertebral_02_L",
+      "name_zh": "左第2肋椎连接组",
+      "kind": "rib_joint_group",
+      "required_soft_tissues": "肋头及肋横突关节囊/韧带",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_radiate_ligament_of_head_of_rib_L",
+        "z_lig_intra_articular_ligament_of_head_of_rib_M",
+        "z_lig_costotransverse_ligament_L"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "sternocostal_02_L",
+      "name_zh": "左第2胸肋连接",
+      "kind": "cartilage_mediated_connection",
+      "required_soft_tissues": "肋软骨、胸肋韧带；第1连接类型与其余不同",
+      "internal_candidates": [
+        "costal_cartilage_2_L"
+      ],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "costovertebral_03_L",
+      "name_zh": "左第3肋椎连接组",
+      "kind": "rib_joint_group",
+      "required_soft_tissues": "肋头及肋横突关节囊/韧带",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_radiate_ligament_of_head_of_rib_L",
+        "z_lig_intra_articular_ligament_of_head_of_rib_M",
+        "z_lig_costotransverse_ligament_L"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "sternocostal_03_L",
+      "name_zh": "左第3胸肋连接",
+      "kind": "cartilage_mediated_connection",
+      "required_soft_tissues": "肋软骨、胸肋韧带；第1连接类型与其余不同",
+      "internal_candidates": [
+        "costal_cartilage_3_L"
+      ],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "costovertebral_04_L",
+      "name_zh": "左第4肋椎连接组",
+      "kind": "rib_joint_group",
+      "required_soft_tissues": "肋头及肋横突关节囊/韧带",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_radiate_ligament_of_head_of_rib_L",
+        "z_lig_intra_articular_ligament_of_head_of_rib_M",
+        "z_lig_costotransverse_ligament_L"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "sternocostal_04_L",
+      "name_zh": "左第4胸肋连接",
+      "kind": "cartilage_mediated_connection",
+      "required_soft_tissues": "肋软骨、胸肋韧带；第1连接类型与其余不同",
+      "internal_candidates": [
+        "costal_cartilage_4_L"
+      ],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "costovertebral_05_L",
+      "name_zh": "左第5肋椎连接组",
+      "kind": "rib_joint_group",
+      "required_soft_tissues": "肋头及肋横突关节囊/韧带",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_radiate_ligament_of_head_of_rib_L",
+        "z_lig_intra_articular_ligament_of_head_of_rib_M",
+        "z_lig_costotransverse_ligament_L"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "sternocostal_05_L",
+      "name_zh": "左第5胸肋连接",
+      "kind": "cartilage_mediated_connection",
+      "required_soft_tissues": "肋软骨、胸肋韧带；第1连接类型与其余不同",
+      "internal_candidates": [
+        "costal_cartilage_5_L"
+      ],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "costovertebral_06_L",
+      "name_zh": "左第6肋椎连接组",
+      "kind": "rib_joint_group",
+      "required_soft_tissues": "肋头及肋横突关节囊/韧带",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_radiate_ligament_of_head_of_rib_L",
+        "z_lig_intra_articular_ligament_of_head_of_rib_M",
+        "z_lig_costotransverse_ligament_L"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "sternocostal_06_L",
+      "name_zh": "左第6胸肋连接",
+      "kind": "cartilage_mediated_connection",
+      "required_soft_tissues": "肋软骨、胸肋韧带；第1连接类型与其余不同",
+      "internal_candidates": [
+        "costal_cartilage_6_L"
+      ],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "costovertebral_07_L",
+      "name_zh": "左第7肋椎连接组",
+      "kind": "rib_joint_group",
+      "required_soft_tissues": "肋头及肋横突关节囊/韧带",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_radiate_ligament_of_head_of_rib_L",
+        "z_lig_intra_articular_ligament_of_head_of_rib_M",
+        "z_lig_costotransverse_ligament_L"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "sternocostal_07_L",
+      "name_zh": "左第7胸肋连接",
+      "kind": "cartilage_mediated_connection",
+      "required_soft_tissues": "肋软骨、胸肋韧带；第1连接类型与其余不同",
+      "internal_candidates": [
+        "costal_cartilage_7_L"
+      ],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "costovertebral_08_L",
+      "name_zh": "左第8肋椎连接组",
+      "kind": "rib_joint_group",
+      "required_soft_tissues": "肋头及肋横突关节囊/韧带",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_radiate_ligament_of_head_of_rib_L",
+        "z_lig_intra_articular_ligament_of_head_of_rib_M",
+        "z_lig_costotransverse_ligament_L"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "costal_arch_08_L",
+      "name_zh": "左第8肋软骨弓连接",
+      "kind": "cartilage_mediated_connection",
+      "required_soft_tissues": "肋软骨及软骨间连接",
+      "internal_candidates": [
+        "costal_cartilage_8_L"
+      ],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "costovertebral_09_L",
+      "name_zh": "左第9肋椎连接组",
+      "kind": "rib_joint_group",
+      "required_soft_tissues": "肋头及肋横突关节囊/韧带",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_radiate_ligament_of_head_of_rib_L",
+        "z_lig_intra_articular_ligament_of_head_of_rib_M",
+        "z_lig_costotransverse_ligament_L"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "costal_arch_09_L",
+      "name_zh": "左第9肋软骨弓连接",
+      "kind": "cartilage_mediated_connection",
+      "required_soft_tissues": "肋软骨及软骨间连接",
+      "internal_candidates": [
+        "costal_cartilage_9_L"
+      ],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "costovertebral_10_L",
+      "name_zh": "左第10肋椎连接组",
+      "kind": "rib_joint_group",
+      "required_soft_tissues": "肋头及肋横突关节囊/韧带",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_radiate_ligament_of_head_of_rib_L",
+        "z_lig_intra_articular_ligament_of_head_of_rib_M",
+        "z_lig_costotransverse_ligament_L"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "costal_arch_10_L",
+      "name_zh": "左第10肋软骨弓连接",
+      "kind": "cartilage_mediated_connection",
+      "required_soft_tissues": "肋软骨及软骨间连接",
+      "internal_candidates": [
+        "costal_cartilage_10_L"
+      ],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "costovertebral_11_L",
+      "name_zh": "左第11肋椎连接组",
+      "kind": "rib_joint_group",
+      "required_soft_tissues": "肋头及肋横突关节囊/韧带",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_radiate_ligament_of_head_of_rib_L",
+        "z_lig_intra_articular_ligament_of_head_of_rib_M",
+        "z_lig_costotransverse_ligament_L"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "costovertebral_12_L",
+      "name_zh": "左第12肋椎连接组",
+      "kind": "rib_joint_group",
+      "required_soft_tissues": "肋头及肋横突关节囊/韧带",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_radiate_ligament_of_head_of_rib_L",
+        "z_lig_intra_articular_ligament_of_head_of_rib_M",
+        "z_lig_costotransverse_ligament_L"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "sternoclavicular_L",
+      "name_zh": "左胸锁关节",
+      "kind": "synovial",
+      "required_soft_tissues": "关节盘、关节囊、胸锁/肋锁韧带",
+      "internal_candidates": [
+        "sc_disc_L"
+      ],
+      "capsule_candidates": [
+        "capsule_sternoclavicular_L"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_posterior_sternoclavicular_ligament_L",
+        "z_lig_interclavicular_ligament_L",
+        "z_lig_costoclavicular_ligament_L",
+        "z_lig_anterior_sternoclavicular_ligament_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "acromioclavicular_L",
+      "name_zh": "左肩锁关节",
+      "kind": "synovial",
+      "required_soft_tissues": "肩锁/喙锁韧带、关节囊、关节盘变异",
+      "internal_candidates": [
+        "ac_disc_L"
+      ],
+      "capsule_candidates": [
+        "capsule_acromioclavicular_L"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_trapezoid_ligament_L",
+        "z_lig_superior_transverse_scapular_ligament_L",
+        "z_lig_inferior_transverse_scapular_ligament_L",
+        "z_lig_coraco_acromial_ligament_L",
+        "z_lig_conoid_ligament_L",
+        "z_lig_acromioclavicular_ligament_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "scapulothoracic_L",
+      "name_zh": "左肩胛胸壁功能连接",
+      "kind": "functional_gliding",
+      "required_soft_tissues": "前锯肌、肩胛下肌及相关筋膜/滑动界面",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [],
+      "synovium": "not_applicable_to_this_connection_type",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "glenohumeral_L",
+      "name_zh": "左盂肱关节",
+      "kind": "synovial",
+      "required_soft_tissues": "盂唇、关节囊、盂肱/喙肱韧带、肩袖",
+      "internal_candidates": [
+        "glenoid_labrum_L"
+      ],
+      "capsule_candidates": [
+        "capsule_glenohumeral_L"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_transverse_humeral_ligament_L",
+        "z_lig_superior_transverse_scapular_ligament_L",
+        "z_lig_superior_glenohumeral_ligament_L",
+        "z_lig_middle_glenohumeral_ligament_L",
+        "z_lig_inferior_transverse_scapular_ligament_L",
+        "z_lig_inferior_glenohumeral_ligament_L",
+        "z_lig_coracohumeral_ligament_L",
+        "z_lig_coraco_acromial_ligament_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "humeroulnar_L",
+      "name_zh": "左肱尺关节",
+      "kind": "synovial",
+      "required_soft_tissues": "软骨、关节囊、尺侧/外侧副韧带复合体",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsule_humeroulnar_L"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_ulnar_collateral_ligament_L",
+        "z_lig_radial_collateral_ligament_L",
+        "z_lig_quadrate_ligament_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "humeroradial_L",
+      "name_zh": "左肱桡关节",
+      "kind": "synovial",
+      "required_soft_tissues": "关节软骨、关节囊",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsule_humeroulnar_L"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_ulnar_collateral_ligament_L",
+        "z_lig_radial_collateral_ligament_L",
+        "z_lig_quadrate_ligament_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "proximal_radioulnar_L",
+      "name_zh": "左近侧桡尺关节",
+      "kind": "synovial",
+      "required_soft_tissues": "桡骨环状韧带、方形韧带、关节囊",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsule_humeroulnar_L"
+      ],
+      "ligament_regional_candidates": [
+        "ligament_annular_radius_L",
+        "z_lig_ulnar_collateral_ligament_L",
+        "z_lig_radial_collateral_ligament_L",
+        "z_lig_quadrate_ligament_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "distal_radioulnar_L",
+      "name_zh": "左远侧桡尺关节",
+      "kind": "synovial",
+      "required_soft_tissues": "三角纤维软骨复合体、关节囊",
+      "internal_candidates": [
+        "tfcc_disc_L"
+      ],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_ulnotriquetral_ligament_L",
+        "z_lig_ulnopisiform_ligament_L",
+        "z_lig_ulnopisiform_ligament_M",
+        "z_lig_ulnolunate_ligament_L",
+        "z_lig_ulnocapitate_ligament_L",
+        "z_lig_ulnar_collateral_ligament_of_wrist_joint_L",
+        "z_lig_radiocapitate_ligament_L",
+        "z_lig_radioscaphocapitate_ligament_L",
+        "z_lig_radial_collateral_ligament_of_wrist_joint_L",
+        "z_lig_palmar_radio_ulnar_ligament_L",
+        "z_lig_dorsal_radiocarpal_ligament_L",
+        "z_lig_dorsal_radio_ulnar_ligament_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "forearm_interosseous_L",
+      "name_zh": "左前臂骨间连接",
+      "kind": "syndesmosis",
+      "required_soft_tissues": "前臂骨间膜",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "fibrous_forearm_interosseous_L"
+      ],
+      "synovium": "not_applicable_to_this_connection_type",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "radiocarpal_L",
+      "name_zh": "左桡腕关节组",
+      "kind": "synovial_group",
+      "required_soft_tissues": "关节软骨、关节盘、桡腕及腕侧副韧带",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsule_radiocarpal_L"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_ulnotriquetral_ligament_L",
+        "z_lig_ulnopisiform_ligament_L",
+        "z_lig_ulnopisiform_ligament_M",
+        "z_lig_ulnolunate_ligament_L",
+        "z_lig_ulnocapitate_ligament_L",
+        "z_lig_ulnar_collateral_ligament_of_wrist_joint_L",
+        "z_lig_triquetrohamate_ligament_L",
+        "z_lig_triquetrocapitate_ligament_L",
+        "z_lig_trapezoideocapitate_interosseous_ligament_L",
+        "z_lig_trapeziotrapezoidal_interosseous_ligament_L",
+        "z_lig_scapholunate_interosseous_ligament_L",
+        "z_lig_radiocapitate_ligament_L",
+        "z_lig_scaphotrapeziotrapezoidal_ligament_L",
+        "z_lig_scaphocapitate_ligament_L",
+        "z_lig_radioscaphocapitate_ligament_L",
+        "z_lig_radiate_carpal_ligament_L",
+        "z_lig_radial_collateral_ligament_of_wrist_joint_L",
+        "z_lig_pisotriquetral_ligament_L",
+        "z_lig_pisometacarpal_ligament_L",
+        "z_lig_pisohamate_ligament_L",
+        "z_lig_palmar_trapezoideocapitate_ligament_L",
+        "z_lig_palmar_scaphotriquetral_ligament_L",
+        "z_lig_palmar_lunotriquetral_ligament_L",
+        "z_lig_palmar_capitohamate_ligament_L",
+        "z_lig_lunotriquetral_interosseous_ligament_L",
+        "z_lig_dorsal_ulnocarpal_ligament_L",
+        "z_lig_dorsal_scaphotriquetral_ligament_L",
+        "z_lig_dorsal_radiocarpal_ligament_L",
+        "z_lig_dorsal_intercarpal_ligaments_L",
+        "z_lig_capitohamate_interosseous_ligament_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "intercarpal_L",
+      "name_zh": "左腕骨间连接组",
+      "kind": "joint_group",
+      "required_soft_tissues": "腕骨间韧带、关节囊、软骨",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_ulnotriquetral_ligament_L",
+        "z_lig_ulnopisiform_ligament_L",
+        "z_lig_ulnopisiform_ligament_M",
+        "z_lig_ulnolunate_ligament_L",
+        "z_lig_ulnocapitate_ligament_L",
+        "z_lig_ulnar_collateral_ligament_of_wrist_joint_L",
+        "z_lig_triquetrohamate_ligament_L",
+        "z_lig_triquetrocapitate_ligament_L",
+        "z_lig_trapezoideocapitate_interosseous_ligament_L",
+        "z_lig_trapeziotrapezoidal_interosseous_ligament_L",
+        "z_lig_scapholunate_interosseous_ligament_L",
+        "z_lig_radiocapitate_ligament_L",
+        "z_lig_scaphotrapeziotrapezoidal_ligament_L",
+        "z_lig_scaphocapitate_ligament_L",
+        "z_lig_radioscaphocapitate_ligament_L",
+        "z_lig_radiate_carpal_ligament_L",
+        "z_lig_radial_collateral_ligament_of_wrist_joint_L",
+        "z_lig_pisotriquetral_ligament_L",
+        "z_lig_pisometacarpal_ligament_L",
+        "z_lig_pisohamate_ligament_L",
+        "z_lig_palmar_trapezoideocapitate_ligament_L",
+        "z_lig_palmar_scaphotriquetral_ligament_L",
+        "z_lig_palmar_lunotriquetral_ligament_L",
+        "z_lig_palmar_capitohamate_ligament_L",
+        "z_lig_lunotriquetral_interosseous_ligament_L",
+        "z_lig_dorsal_ulnocarpal_ligament_L",
+        "z_lig_dorsal_scaphotriquetral_ligament_L",
+        "z_lig_dorsal_radiocarpal_ligament_L",
+        "z_lig_dorsal_intercarpal_ligaments_L",
+        "z_lig_capitohamate_interosseous_ligament_L"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "cmc_1_L",
+      "name_zh": "左第1腕掌连接",
+      "kind": "synovial_group",
+      "required_soft_tissues": "腕掌韧带、关节囊、软骨",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_palmar_carpometacarpal_ligaments_L",
+        "z_lig_dorsal_carpometacarpal_ligaments_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "mcp_1_L",
+      "name_zh": "左第1掌指关节",
+      "kind": "synovial",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、伸肌腱帽",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsules_mcp_L"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_deep_transverse_metacarpal_ligament_L",
+        "z_lig_collateral_metacarpophalangeal_ligaments_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "hand_ip_1_proximal_distal_L",
+      "name_zh": "左第1指近节—远节指间关节",
+      "kind": "synovial",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、腱鞘/滑车",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_palmar_interphalangeal_ligaments_L",
+        "z_lig_collateral_interphalangeal_ligaments_of_hand_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "cmc_2_L",
+      "name_zh": "左第2腕掌连接",
+      "kind": "synovial_group",
+      "required_soft_tissues": "腕掌韧带、关节囊、软骨",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_palmar_carpometacarpal_ligaments_L",
+        "z_lig_dorsal_carpometacarpal_ligaments_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "mcp_2_L",
+      "name_zh": "左第2掌指关节",
+      "kind": "synovial",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、伸肌腱帽",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsules_mcp_L"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_deep_transverse_metacarpal_ligament_L",
+        "z_lig_collateral_metacarpophalangeal_ligaments_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "hand_ip_2_proximal_middle_L",
+      "name_zh": "左第2指近节—中节指间关节",
+      "kind": "synovial",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、腱鞘/滑车",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsules_hand_proximal_L"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_palmar_interphalangeal_ligaments_L",
+        "z_lig_collateral_interphalangeal_ligaments_of_hand_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "hand_ip_2_middle_distal_L",
+      "name_zh": "左第2指中节—远节指间关节",
+      "kind": "synovial",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、腱鞘/滑车",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsules_hand_distal_L"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_palmar_interphalangeal_ligaments_L",
+        "z_lig_collateral_interphalangeal_ligaments_of_hand_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "cmc_3_L",
+      "name_zh": "左第3腕掌连接",
+      "kind": "synovial_group",
+      "required_soft_tissues": "腕掌韧带、关节囊、软骨",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_palmar_carpometacarpal_ligaments_L",
+        "z_lig_dorsal_carpometacarpal_ligaments_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "mcp_3_L",
+      "name_zh": "左第3掌指关节",
+      "kind": "synovial",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、伸肌腱帽",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsules_mcp_L"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_deep_transverse_metacarpal_ligament_L",
+        "z_lig_collateral_metacarpophalangeal_ligaments_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "hand_ip_3_proximal_middle_L",
+      "name_zh": "左第3指近节—中节指间关节",
+      "kind": "synovial",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、腱鞘/滑车",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsules_hand_proximal_L"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_palmar_interphalangeal_ligaments_L",
+        "z_lig_collateral_interphalangeal_ligaments_of_hand_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "hand_ip_3_middle_distal_L",
+      "name_zh": "左第3指中节—远节指间关节",
+      "kind": "synovial",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、腱鞘/滑车",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsules_hand_distal_L"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_palmar_interphalangeal_ligaments_L",
+        "z_lig_collateral_interphalangeal_ligaments_of_hand_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "cmc_4_L",
+      "name_zh": "左第4腕掌连接",
+      "kind": "synovial_group",
+      "required_soft_tissues": "腕掌韧带、关节囊、软骨",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_palmar_carpometacarpal_ligaments_L",
+        "z_lig_dorsal_carpometacarpal_ligaments_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "mcp_4_L",
+      "name_zh": "左第4掌指关节",
+      "kind": "synovial",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、伸肌腱帽",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsules_mcp_L"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_deep_transverse_metacarpal_ligament_L",
+        "z_lig_collateral_metacarpophalangeal_ligaments_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "hand_ip_4_proximal_middle_L",
+      "name_zh": "左第4指近节—中节指间关节",
+      "kind": "synovial",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、腱鞘/滑车",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsules_hand_proximal_L"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_palmar_interphalangeal_ligaments_L",
+        "z_lig_collateral_interphalangeal_ligaments_of_hand_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "hand_ip_4_middle_distal_L",
+      "name_zh": "左第4指中节—远节指间关节",
+      "kind": "synovial",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、腱鞘/滑车",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsules_hand_distal_L"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_palmar_interphalangeal_ligaments_L",
+        "z_lig_collateral_interphalangeal_ligaments_of_hand_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "cmc_5_L",
+      "name_zh": "左第5腕掌连接",
+      "kind": "synovial_group",
+      "required_soft_tissues": "腕掌韧带、关节囊、软骨",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_palmar_carpometacarpal_ligaments_L",
+        "z_lig_dorsal_carpometacarpal_ligaments_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "mcp_5_L",
+      "name_zh": "左第5掌指关节",
+      "kind": "synovial",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、伸肌腱帽",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsules_mcp_L"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_deep_transverse_metacarpal_ligament_L",
+        "z_lig_collateral_metacarpophalangeal_ligaments_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "hand_ip_5_proximal_middle_L",
+      "name_zh": "左第5指近节—中节指间关节",
+      "kind": "synovial",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、腱鞘/滑车",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsules_hand_proximal_L"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_palmar_interphalangeal_ligaments_L",
+        "z_lig_collateral_interphalangeal_ligaments_of_hand_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "hand_ip_5_middle_distal_L",
+      "name_zh": "左第5指中节—远节指间关节",
+      "kind": "synovial",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、腱鞘/滑车",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsules_hand_distal_L"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_palmar_interphalangeal_ligaments_L",
+        "z_lig_collateral_interphalangeal_ligaments_of_hand_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "intermetacarpal_L",
+      "name_zh": "左掌骨间连接组",
+      "kind": "joint_group",
+      "required_soft_tissues": "掌骨间韧带、关节囊",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_palmar_metacarpal_ligaments_L",
+        "z_lig_interosseous_metacarpal_ligaments_L",
+        "z_lig_dorsal_metacarpal_ligaments_L"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "sacroiliac_L",
+      "name_zh": "左骶髂关节",
+      "kind": "mixed_joint_complex",
+      "required_soft_tissues": "骶髂关节软骨、骨间/前后骶髂韧带、骶结节/骶棘韧带",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_sacrotuberous_ligament_L",
+        "z_lig_sacrospinous_ligament_L",
+        "z_lig_posterior_sacro_iliac_ligament_L",
+        "z_lig_interosseous_sacro_iliac_ligament_L",
+        "z_lig_iliolumbar_ligament_L",
+        "z_lig_anterior_sacro_iliac_ligament_L"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "hip_L",
+      "name_zh": "左髋关节",
+      "kind": "synovial",
+      "required_soft_tissues": "髋臼唇、软骨、关节囊、髂股/耻股/坐股韧带",
+      "internal_candidates": [
+        "acetabular_labrum_L"
+      ],
+      "capsule_candidates": [
+        "capsule_hip_L"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_transverse_part_of_iliofemoral_ligament_L",
+        "z_lig_transverse_acetabular_ligament_L",
+        "z_lig_pubofemoral_ligament_L",
+        "z_lig_ligament_of_head_of_femur_L",
+        "z_lig_ischiofemoral_ligament_L",
+        "z_lig_descending_part_of_iliofemoral_ligament_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "tibiofemoral_L",
+      "name_zh": "左胫股关节组",
+      "kind": "synovial_group",
+      "required_soft_tissues": "内外侧半月板、交叉/侧副韧带、关节囊、软骨",
+      "internal_candidates": [
+        "medial_meniscus_L",
+        "lateral_meniscus_L"
+      ],
+      "capsule_candidates": [
+        "capsule_tibiofemoral_L"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_transverse_ligament_of_knee_L",
+        "z_lig_superficial_part_of_tibial_collateral_ligament_L",
+        "z_lig_posterior_meniscotibial_ligament_medial_meniscus_L",
+        "z_lig_posterior_meniscotibial_ligament_lateral_meniscus_L",
+        "z_lig_posterior_cruciate_ligament_L",
+        "z_lig_popliteofibular_ligament_L",
+        "z_lig_oblique_popliteal_ligament_L",
+        "z_lig_meniscopatellar_ligament_L",
+        "z_lig_fibular_collateral_ligament_L",
+        "z_lig_deep_part_of_tibial_collateral_ligament_L",
+        "z_lig_arcuate_popliteal_ligament_L",
+        "z_lig_anterior_meniscotibial_ligament_medial_meniscus_L",
+        "z_lig_anterior_meniscotibial_ligament_lateral_meniscus_L",
+        "z_lig_anterior_cruciate_ligament_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "patellofemoral_L",
+      "name_zh": "左髌股关节",
+      "kind": "synovial",
+      "required_soft_tissues": "软骨、髌支持带、股四头肌腱、髌韧带",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsule_tibiofemoral_L"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_transverse_ligament_of_knee_L",
+        "z_lig_superficial_part_of_tibial_collateral_ligament_L",
+        "z_lig_posterior_meniscotibial_ligament_medial_meniscus_L",
+        "z_lig_posterior_meniscotibial_ligament_lateral_meniscus_L",
+        "z_lig_posterior_cruciate_ligament_L",
+        "z_lig_popliteofibular_ligament_L",
+        "z_lig_oblique_popliteal_ligament_L",
+        "z_lig_meniscopatellar_ligament_L",
+        "z_lig_fibular_collateral_ligament_L",
+        "z_lig_deep_part_of_tibial_collateral_ligament_L",
+        "z_lig_arcuate_popliteal_ligament_L",
+        "z_lig_anterior_meniscotibial_ligament_medial_meniscus_L",
+        "z_lig_anterior_meniscotibial_ligament_lateral_meniscus_L",
+        "z_lig_anterior_cruciate_ligament_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "proximal_tibiofibular_L",
+      "name_zh": "左近侧胫腓关节",
+      "kind": "synovial",
+      "required_soft_tissues": "关节囊、胫腓头韧带",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsule_proximal_tibiofibular_L"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_transverse_ligament_of_knee_L",
+        "z_lig_superficial_part_of_tibial_collateral_ligament_L",
+        "z_lig_posterior_meniscotibial_ligament_medial_meniscus_L",
+        "z_lig_posterior_meniscotibial_ligament_lateral_meniscus_L",
+        "z_lig_posterior_ligament_of_fibular_head_L",
+        "z_lig_posterior_cruciate_ligament_L",
+        "z_lig_popliteofibular_ligament_L",
+        "z_lig_oblique_popliteal_ligament_L",
+        "z_lig_meniscopatellar_ligament_L",
+        "z_lig_interosseous_membrane_of_leg_L",
+        "z_lig_fibular_collateral_ligament_L",
+        "z_lig_deep_part_of_tibial_collateral_ligament_L",
+        "z_lig_arcuate_popliteal_ligament_L",
+        "z_lig_anterior_meniscotibial_ligament_medial_meniscus_L",
+        "z_lig_anterior_meniscotibial_ligament_lateral_meniscus_L",
+        "z_lig_anterior_ligament_of_fibular_head_L",
+        "z_lig_anterior_cruciate_ligament_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "distal_tibiofibular_L",
+      "name_zh": "左远侧胫腓连接",
+      "kind": "syndesmosis",
+      "required_soft_tissues": "胫腓前后韧带、骨间韧带与小腿骨间膜",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_transverse_tibiofibular_ligament_L",
+        "z_lig_posterior_tibiofibular_ligament_L",
+        "z_lig_interosseous_membrane_of_leg_L",
+        "z_lig_anterior_tibiofibular_ligament_L"
+      ],
+      "synovium": "not_applicable_to_this_connection_type",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "talocrural_L",
+      "name_zh": "左距小腿关节组",
+      "kind": "synovial_group",
+      "required_soft_tissues": "软骨、关节囊、三角韧带、外侧韧带复合体",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_tibionavicular_ligament_L",
+        "z_lig_tibiocalcaneal_ligament_L",
+        "z_lig_posterior_tibiotalar_ligament_L",
+        "z_lig_posterior_talofibular_ligament_L",
+        "z_lig_calcaneofibular_ligament_L",
+        "z_lig_anterior_talofibular_ligament_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "subtalar_L",
+      "name_zh": "左距下关节",
+      "kind": "synovial",
+      "required_soft_tissues": "距跟骨间韧带、颈韧带、关节囊、软骨",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_talonavicular_ligament_L",
+        "z_lig_talocalcaneal_interosseous_ligament_L",
+        "z_lig_plantar_cuboideonavicular_ligament_L",
+        "z_lig_plantar_calcaneonavicular_ligament_L",
+        "z_lig_posterior_talofibular_ligament_L",
+        "z_lig_posterior_talocalcaneal_ligament_L",
+        "z_lig_plantar_intercuneiform_ligaments_L",
+        "z_lig_plantar_cuneonavicular_ligaments_L",
+        "z_lig_plantar_cuneocuboid_ligament_L",
+        "z_lig_plantar_calcaneocuboid_ligament_L",
+        "z_lig_medial_talocalcaneal_ligament_L",
+        "z_lig_long_plantar_ligament_L",
+        "z_lig_lateral_talocalcaneal_ligament_L",
+        "z_lig_intercuneiform_interosseous_ligaments_L",
+        "z_lig_dorsal_intercuneiform_ligaments_L",
+        "z_lig_dorsal_cuneonavicular_ligaments_L",
+        "z_lig_dorsal_cuneocuboid_ligament_L",
+        "z_lig_dorsal_cuboideonavicular_ligament_L",
+        "z_lig_dorsal_calcaneocuboid_ligament_L",
+        "z_lig_cuneocuboid_interosseous_ligament_L",
+        "z_lig_calcaneonavicular_ligament_L",
+        "z_lig_calcaneofibular_ligament_L",
+        "z_lig_calcaneocuboid_ligament_L",
+        "z_lig_anterior_talofibular_ligament_L",
+        "z_lig_anterior_talocalcaneal_ligament_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "talocalcaneonavicular_L",
+      "name_zh": "左距跟舟关节组",
+      "kind": "synovial_group",
+      "required_soft_tissues": "足底跟舟韧带、关节囊、软骨",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_tibionavicular_ligament_L",
+        "z_lig_tibiocalcaneal_ligament_L",
+        "z_lig_talonavicular_ligament_L",
+        "z_lig_talocalcaneal_interosseous_ligament_L",
+        "z_lig_posterior_tibiotalar_ligament_L",
+        "z_lig_plantar_cuboideonavicular_ligament_L",
+        "z_lig_plantar_calcaneonavicular_ligament_L",
+        "z_lig_posterior_talocalcaneal_ligament_L",
+        "z_lig_plantar_intercuneiform_ligaments_L",
+        "z_lig_plantar_cuneonavicular_ligaments_L",
+        "z_lig_plantar_cuneocuboid_ligament_L",
+        "z_lig_plantar_calcaneocuboid_ligament_L",
+        "z_lig_medial_talocalcaneal_ligament_L",
+        "z_lig_long_plantar_ligament_L",
+        "z_lig_lateral_talocalcaneal_ligament_L",
+        "z_lig_intercuneiform_interosseous_ligaments_L",
+        "z_lig_dorsal_intercuneiform_ligaments_L",
+        "z_lig_dorsal_cuneonavicular_ligaments_L",
+        "z_lig_dorsal_cuneocuboid_ligament_L",
+        "z_lig_dorsal_cuboideonavicular_ligament_L",
+        "z_lig_dorsal_calcaneocuboid_ligament_L",
+        "z_lig_cuneocuboid_interosseous_ligament_L",
+        "z_lig_calcaneonavicular_ligament_L",
+        "z_lig_calcaneocuboid_ligament_L",
+        "z_lig_anterior_talocalcaneal_ligament_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "calcaneocuboid_L",
+      "name_zh": "左跟骰关节",
+      "kind": "synovial",
+      "required_soft_tissues": "长/短足底韧带、分歧韧带、关节囊",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_talonavicular_ligament_L",
+        "z_lig_talocalcaneal_interosseous_ligament_L",
+        "z_lig_plantar_cuboideonavicular_ligament_L",
+        "z_lig_plantar_calcaneonavicular_ligament_L",
+        "z_lig_posterior_talocalcaneal_ligament_L",
+        "z_lig_plantar_intercuneiform_ligaments_L",
+        "z_lig_plantar_cuneonavicular_ligaments_L",
+        "z_lig_plantar_cuneocuboid_ligament_L",
+        "z_lig_plantar_calcaneocuboid_ligament_L",
+        "z_lig_medial_talocalcaneal_ligament_L",
+        "z_lig_long_plantar_ligament_L",
+        "z_lig_lateral_talocalcaneal_ligament_L",
+        "z_lig_intercuneiform_interosseous_ligaments_L",
+        "z_lig_dorsal_intercuneiform_ligaments_L",
+        "z_lig_dorsal_cuneonavicular_ligaments_L",
+        "z_lig_dorsal_cuneocuboid_ligament_L",
+        "z_lig_dorsal_cuboideonavicular_ligament_L",
+        "z_lig_dorsal_calcaneocuboid_ligament_L",
+        "z_lig_cuneocuboid_interosseous_ligament_L",
+        "z_lig_calcaneonavicular_ligament_L",
+        "z_lig_calcaneocuboid_ligament_L",
+        "z_lig_anterior_talocalcaneal_ligament_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "distal_intertarsal_L",
+      "name_zh": "左远侧跗骨间连接组",
+      "kind": "joint_group",
+      "required_soft_tissues": "跗骨间韧带、关节囊、软骨",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_talonavicular_ligament_L",
+        "z_lig_talocalcaneal_interosseous_ligament_L",
+        "z_lig_plantar_cuboideonavicular_ligament_L",
+        "z_lig_plantar_calcaneonavicular_ligament_L",
+        "z_lig_posterior_talocalcaneal_ligament_L",
+        "z_lig_plantar_intercuneiform_ligaments_L",
+        "z_lig_plantar_cuneonavicular_ligaments_L",
+        "z_lig_plantar_cuneocuboid_ligament_L",
+        "z_lig_plantar_calcaneocuboid_ligament_L",
+        "z_lig_medial_talocalcaneal_ligament_L",
+        "z_lig_long_plantar_ligament_L",
+        "z_lig_lateral_talocalcaneal_ligament_L",
+        "z_lig_intercuneiform_interosseous_ligaments_L",
+        "z_lig_dorsal_intercuneiform_ligaments_L",
+        "z_lig_dorsal_cuneonavicular_ligaments_L",
+        "z_lig_dorsal_cuneocuboid_ligament_L",
+        "z_lig_dorsal_cuboideonavicular_ligament_L",
+        "z_lig_dorsal_calcaneocuboid_ligament_L",
+        "z_lig_cuneocuboid_interosseous_ligament_L",
+        "z_lig_calcaneonavicular_ligament_L",
+        "z_lig_calcaneocuboid_ligament_L",
+        "z_lig_anterior_talocalcaneal_ligament_L"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "tmt_1_L",
+      "name_zh": "左第1跗跖连接",
+      "kind": "synovial_group",
+      "required_soft_tissues": "跗跖韧带、Lisfranc韧带复合体、关节囊",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_plantar_tarsometatarsal_ligaments_L",
+        "z_lig_dorsal_tarsometatarsal_ligaments_L",
+        "z_lig_cuneometatarsal_interosseous_ligaments_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "mtp_1_L",
+      "name_zh": "左第1跖趾关节",
+      "kind": "synovial",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊；第1跖趾还需成对籽骨",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsules_mtp_L"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_plantar_metatarsophalangeal_ligaments_L",
+        "z_lig_plantar_metatarsal_ligaments_L",
+        "z_lig_metatarsal_interosseous_ligaments_L",
+        "z_lig_intersesamoid_ligament_L",
+        "z_lig_dorsal_metatarsal_ligaments_L",
+        "z_lig_deep_transverse_metatarsal_ligament_L",
+        "z_lig_collateral_metatarsophalangeal_ligaments_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "foot_ip_1_proximal_distal_L",
+      "name_zh": "左第1趾近节—远节趾间关节",
+      "kind": "synovial",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊、肌腱",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsule_foot_ip_1_proximal_distal_L"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_plantar_interphalangeal_ligaments_L",
+        "z_lig_collateral_interphalangeal_ligaments_of_foot_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "tmt_2_L",
+      "name_zh": "左第2跗跖连接",
+      "kind": "synovial_group",
+      "required_soft_tissues": "跗跖韧带、Lisfranc韧带复合体、关节囊",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_plantar_tarsometatarsal_ligaments_L",
+        "z_lig_dorsal_tarsometatarsal_ligaments_L",
+        "z_lig_cuneometatarsal_interosseous_ligaments_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "mtp_2_L",
+      "name_zh": "左第2跖趾关节",
+      "kind": "synovial",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊；第1跖趾还需成对籽骨",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsules_mtp_L"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_plantar_metatarsophalangeal_ligaments_L",
+        "z_lig_deep_transverse_metatarsal_ligament_L",
+        "z_lig_collateral_metatarsophalangeal_ligaments_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "foot_ip_2_proximal_middle_L",
+      "name_zh": "左第2趾近节—中节趾间关节",
+      "kind": "synovial",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊、肌腱",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsules_foot_proximal_L"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_plantar_interphalangeal_ligaments_L",
+        "z_lig_collateral_interphalangeal_ligaments_of_foot_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "foot_ip_2_middle_distal_L",
+      "name_zh": "左第2趾中节—远节趾间关节",
+      "kind": "synovial",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊、肌腱",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsules_foot_distal_L"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_plantar_interphalangeal_ligaments_L",
+        "z_lig_collateral_interphalangeal_ligaments_of_foot_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "tmt_3_L",
+      "name_zh": "左第3跗跖连接",
+      "kind": "synovial_group",
+      "required_soft_tissues": "跗跖韧带、Lisfranc韧带复合体、关节囊",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_plantar_tarsometatarsal_ligaments_L",
+        "z_lig_dorsal_tarsometatarsal_ligaments_L",
+        "z_lig_cuneometatarsal_interosseous_ligaments_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "mtp_3_L",
+      "name_zh": "左第3跖趾关节",
+      "kind": "synovial",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊；第1跖趾还需成对籽骨",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsules_mtp_L"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_plantar_metatarsophalangeal_ligaments_L",
+        "z_lig_deep_transverse_metatarsal_ligament_L",
+        "z_lig_collateral_metatarsophalangeal_ligaments_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "foot_ip_3_proximal_middle_L",
+      "name_zh": "左第3趾近节—中节趾间关节",
+      "kind": "synovial",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊、肌腱",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsules_foot_proximal_L"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_plantar_interphalangeal_ligaments_L",
+        "z_lig_collateral_interphalangeal_ligaments_of_foot_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "foot_ip_3_middle_distal_L",
+      "name_zh": "左第3趾中节—远节趾间关节",
+      "kind": "synovial",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊、肌腱",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsules_foot_distal_L"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_plantar_interphalangeal_ligaments_L",
+        "z_lig_collateral_interphalangeal_ligaments_of_foot_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "tmt_4_L",
+      "name_zh": "左第4跗跖连接",
+      "kind": "synovial_group",
+      "required_soft_tissues": "跗跖韧带、Lisfranc韧带复合体、关节囊",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_plantar_tarsometatarsal_ligaments_L",
+        "z_lig_dorsal_tarsometatarsal_ligaments_L",
+        "z_lig_cuneometatarsal_interosseous_ligaments_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "mtp_4_L",
+      "name_zh": "左第4跖趾关节",
+      "kind": "synovial",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊；第1跖趾还需成对籽骨",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsules_mtp_L"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_plantar_metatarsophalangeal_ligaments_L",
+        "z_lig_deep_transverse_metatarsal_ligament_L",
+        "z_lig_collateral_metatarsophalangeal_ligaments_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "foot_ip_4_proximal_middle_L",
+      "name_zh": "左第4趾近节—中节趾间关节",
+      "kind": "synovial",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊、肌腱",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsules_foot_proximal_L"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_plantar_interphalangeal_ligaments_L",
+        "z_lig_collateral_interphalangeal_ligaments_of_foot_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "foot_ip_4_middle_distal_L",
+      "name_zh": "左第4趾中节—远节趾间关节",
+      "kind": "synovial",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊、肌腱",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsules_foot_distal_L"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_plantar_interphalangeal_ligaments_L",
+        "z_lig_collateral_interphalangeal_ligaments_of_foot_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "tmt_5_L",
+      "name_zh": "左第5跗跖连接",
+      "kind": "synovial_group",
+      "required_soft_tissues": "跗跖韧带、Lisfranc韧带复合体、关节囊",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_plantar_tarsometatarsal_ligaments_L",
+        "z_lig_dorsal_tarsometatarsal_ligaments_L",
+        "z_lig_cuneometatarsal_interosseous_ligaments_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "mtp_5_L",
+      "name_zh": "左第5跖趾关节",
+      "kind": "synovial",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊；第1跖趾还需成对籽骨",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsules_mtp_L"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_plantar_metatarsophalangeal_ligaments_L",
+        "z_lig_deep_transverse_metatarsal_ligament_L",
+        "z_lig_collateral_metatarsophalangeal_ligaments_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "foot_ip_5_proximal_middle_L",
+      "name_zh": "左第5趾近节—中节趾间关节",
+      "kind": "synovial",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊、肌腱",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsules_foot_proximal_L"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_plantar_interphalangeal_ligaments_L",
+        "z_lig_collateral_interphalangeal_ligaments_of_foot_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "foot_ip_5_middle_distal_L",
+      "name_zh": "左第5趾中节—远节趾间关节",
+      "kind": "synovial",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊、肌腱",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsules_foot_distal_L"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_plantar_interphalangeal_ligaments_L",
+        "z_lig_collateral_interphalangeal_ligaments_of_foot_L"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "intermetatarsal_L",
+      "name_zh": "左跖骨间连接组",
+      "kind": "joint_group",
+      "required_soft_tissues": "跖骨间韧带、关节囊",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_plantar_metatarsal_ligaments_L",
+        "z_lig_metatarsal_interosseous_ligaments_L",
+        "z_lig_intersesamoid_ligament_L",
+        "z_lig_dorsal_metatarsal_ligaments_L"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "tmj_R",
+      "name_zh": "右颞下颌关节",
+      "kind": "synovial",
+      "required_soft_tissues": "关节盘、关节囊、韧带",
+      "internal_candidates": [
+        "tmj_disc_R"
+      ],
+      "capsule_candidates": [
+        "capsule_tmj_R"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_stylomandibular_ligament_R",
+        "z_lig_stylohyoid_ligament_R",
+        "z_lig_sphenomandibular_ligament_R",
+        "z_lig_pterygospinous_ligament_R",
+        "z_lig_lateral_temporomandibular_ligament_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "incudomalleolar_R",
+      "name_zh": "右锤砧关节",
+      "kind": "synovial",
+      "required_soft_tissues": "关节囊、听小骨悬吊韧带",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "incudostapedial_R",
+      "name_zh": "右砧镫关节",
+      "kind": "synovial",
+      "required_soft_tissues": "关节囊",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "stapes_window_R",
+      "name_zh": "右镫骨—前庭窗连接",
+      "kind": "fibrous_connection",
+      "required_soft_tissues": "镫骨环韧带",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [],
+      "synovium": "not_applicable_to_this_connection_type",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "costovertebral_01_R",
+      "name_zh": "右第1肋椎连接组",
+      "kind": "rib_joint_group",
+      "required_soft_tissues": "肋头及肋横突关节囊/韧带",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_radiate_ligament_of_head_of_rib_R",
+        "z_lig_intra_articular_ligament_of_head_of_rib_R",
+        "z_lig_intra_articular_ligament_of_head_of_rib_M",
+        "z_lig_costotransverse_ligament_R"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "sternocostal_01_R",
+      "name_zh": "右第1胸肋连接",
+      "kind": "cartilage_mediated_connection",
+      "required_soft_tissues": "肋软骨、胸肋韧带；第1连接类型与其余不同",
+      "internal_candidates": [
+        "costal_cartilage_1_R"
+      ],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "costovertebral_02_R",
+      "name_zh": "右第2肋椎连接组",
+      "kind": "rib_joint_group",
+      "required_soft_tissues": "肋头及肋横突关节囊/韧带",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_radiate_ligament_of_head_of_rib_R",
+        "z_lig_intra_articular_ligament_of_head_of_rib_R",
+        "z_lig_intra_articular_ligament_of_head_of_rib_M",
+        "z_lig_costotransverse_ligament_R"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "sternocostal_02_R",
+      "name_zh": "右第2胸肋连接",
+      "kind": "cartilage_mediated_connection",
+      "required_soft_tissues": "肋软骨、胸肋韧带；第1连接类型与其余不同",
+      "internal_candidates": [
+        "costal_cartilage_2_R"
+      ],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "costovertebral_03_R",
+      "name_zh": "右第3肋椎连接组",
+      "kind": "rib_joint_group",
+      "required_soft_tissues": "肋头及肋横突关节囊/韧带",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_radiate_ligament_of_head_of_rib_R",
+        "z_lig_intra_articular_ligament_of_head_of_rib_R",
+        "z_lig_intra_articular_ligament_of_head_of_rib_M",
+        "z_lig_costotransverse_ligament_R"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "sternocostal_03_R",
+      "name_zh": "右第3胸肋连接",
+      "kind": "cartilage_mediated_connection",
+      "required_soft_tissues": "肋软骨、胸肋韧带；第1连接类型与其余不同",
+      "internal_candidates": [
+        "costal_cartilage_3_R"
+      ],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "costovertebral_04_R",
+      "name_zh": "右第4肋椎连接组",
+      "kind": "rib_joint_group",
+      "required_soft_tissues": "肋头及肋横突关节囊/韧带",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_radiate_ligament_of_head_of_rib_R",
+        "z_lig_intra_articular_ligament_of_head_of_rib_R",
+        "z_lig_intra_articular_ligament_of_head_of_rib_M",
+        "z_lig_costotransverse_ligament_R"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "sternocostal_04_R",
+      "name_zh": "右第4胸肋连接",
+      "kind": "cartilage_mediated_connection",
+      "required_soft_tissues": "肋软骨、胸肋韧带；第1连接类型与其余不同",
+      "internal_candidates": [
+        "costal_cartilage_4_R"
+      ],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "costovertebral_05_R",
+      "name_zh": "右第5肋椎连接组",
+      "kind": "rib_joint_group",
+      "required_soft_tissues": "肋头及肋横突关节囊/韧带",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_radiate_ligament_of_head_of_rib_R",
+        "z_lig_intra_articular_ligament_of_head_of_rib_R",
+        "z_lig_intra_articular_ligament_of_head_of_rib_M",
+        "z_lig_costotransverse_ligament_R"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "sternocostal_05_R",
+      "name_zh": "右第5胸肋连接",
+      "kind": "cartilage_mediated_connection",
+      "required_soft_tissues": "肋软骨、胸肋韧带；第1连接类型与其余不同",
+      "internal_candidates": [
+        "costal_cartilage_5_R"
+      ],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "costovertebral_06_R",
+      "name_zh": "右第6肋椎连接组",
+      "kind": "rib_joint_group",
+      "required_soft_tissues": "肋头及肋横突关节囊/韧带",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_radiate_ligament_of_head_of_rib_R",
+        "z_lig_intra_articular_ligament_of_head_of_rib_R",
+        "z_lig_intra_articular_ligament_of_head_of_rib_M",
+        "z_lig_costotransverse_ligament_R"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "sternocostal_06_R",
+      "name_zh": "右第6胸肋连接",
+      "kind": "cartilage_mediated_connection",
+      "required_soft_tissues": "肋软骨、胸肋韧带；第1连接类型与其余不同",
+      "internal_candidates": [
+        "costal_cartilage_6_R"
+      ],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "costovertebral_07_R",
+      "name_zh": "右第7肋椎连接组",
+      "kind": "rib_joint_group",
+      "required_soft_tissues": "肋头及肋横突关节囊/韧带",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_radiate_ligament_of_head_of_rib_R",
+        "z_lig_intra_articular_ligament_of_head_of_rib_R",
+        "z_lig_intra_articular_ligament_of_head_of_rib_M",
+        "z_lig_costotransverse_ligament_R"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "sternocostal_07_R",
+      "name_zh": "右第7胸肋连接",
+      "kind": "cartilage_mediated_connection",
+      "required_soft_tissues": "肋软骨、胸肋韧带；第1连接类型与其余不同",
+      "internal_candidates": [
+        "costal_cartilage_7_R"
+      ],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "costovertebral_08_R",
+      "name_zh": "右第8肋椎连接组",
+      "kind": "rib_joint_group",
+      "required_soft_tissues": "肋头及肋横突关节囊/韧带",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_radiate_ligament_of_head_of_rib_R",
+        "z_lig_intra_articular_ligament_of_head_of_rib_R",
+        "z_lig_intra_articular_ligament_of_head_of_rib_M",
+        "z_lig_costotransverse_ligament_R"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "costal_arch_08_R",
+      "name_zh": "右第8肋软骨弓连接",
+      "kind": "cartilage_mediated_connection",
+      "required_soft_tissues": "肋软骨及软骨间连接",
+      "internal_candidates": [
+        "costal_cartilage_8_R"
+      ],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "costovertebral_09_R",
+      "name_zh": "右第9肋椎连接组",
+      "kind": "rib_joint_group",
+      "required_soft_tissues": "肋头及肋横突关节囊/韧带",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_radiate_ligament_of_head_of_rib_R",
+        "z_lig_intra_articular_ligament_of_head_of_rib_R",
+        "z_lig_intra_articular_ligament_of_head_of_rib_M",
+        "z_lig_costotransverse_ligament_R"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "costal_arch_09_R",
+      "name_zh": "右第9肋软骨弓连接",
+      "kind": "cartilage_mediated_connection",
+      "required_soft_tissues": "肋软骨及软骨间连接",
+      "internal_candidates": [
+        "costal_cartilage_9_R"
+      ],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "costovertebral_10_R",
+      "name_zh": "右第10肋椎连接组",
+      "kind": "rib_joint_group",
+      "required_soft_tissues": "肋头及肋横突关节囊/韧带",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_radiate_ligament_of_head_of_rib_R",
+        "z_lig_intra_articular_ligament_of_head_of_rib_R",
+        "z_lig_intra_articular_ligament_of_head_of_rib_M",
+        "z_lig_costotransverse_ligament_R"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "costal_arch_10_R",
+      "name_zh": "右第10肋软骨弓连接",
+      "kind": "cartilage_mediated_connection",
+      "required_soft_tissues": "肋软骨及软骨间连接",
+      "internal_candidates": [
+        "costal_cartilage_10_R"
+      ],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "costovertebral_11_R",
+      "name_zh": "右第11肋椎连接组",
+      "kind": "rib_joint_group",
+      "required_soft_tissues": "肋头及肋横突关节囊/韧带",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_radiate_ligament_of_head_of_rib_R",
+        "z_lig_intra_articular_ligament_of_head_of_rib_R",
+        "z_lig_intra_articular_ligament_of_head_of_rib_M",
+        "z_lig_costotransverse_ligament_R"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "costovertebral_12_R",
+      "name_zh": "右第12肋椎连接组",
+      "kind": "rib_joint_group",
+      "required_soft_tissues": "肋头及肋横突关节囊/韧带",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_radiate_ligament_of_head_of_rib_R",
+        "z_lig_intra_articular_ligament_of_head_of_rib_R",
+        "z_lig_intra_articular_ligament_of_head_of_rib_M",
+        "z_lig_costotransverse_ligament_R"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "sternoclavicular_R",
+      "name_zh": "右胸锁关节",
+      "kind": "synovial",
+      "required_soft_tissues": "关节盘、关节囊、胸锁/肋锁韧带",
+      "internal_candidates": [
+        "sc_disc_R"
+      ],
+      "capsule_candidates": [
+        "capsule_sternoclavicular_R"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_posterior_sternoclavicular_ligament_R",
+        "z_lig_interclavicular_ligament_R",
+        "z_lig_costoclavicular_ligament_R",
+        "z_lig_anterior_sternoclavicular_ligament_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "acromioclavicular_R",
+      "name_zh": "右肩锁关节",
+      "kind": "synovial",
+      "required_soft_tissues": "肩锁/喙锁韧带、关节囊、关节盘变异",
+      "internal_candidates": [
+        "ac_disc_R"
+      ],
+      "capsule_candidates": [
+        "capsule_acromioclavicular_R"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_trapezoid_ligament_R",
+        "z_lig_superior_transverse_scapular_ligament_R",
+        "z_lig_inferior_transverse_scapular_ligament_R",
+        "z_lig_coraco_acromial_ligament_R",
+        "z_lig_conoid_ligament_R",
+        "z_lig_acromioclavicular_ligament_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "scapulothoracic_R",
+      "name_zh": "右肩胛胸壁功能连接",
+      "kind": "functional_gliding",
+      "required_soft_tissues": "前锯肌、肩胛下肌及相关筋膜/滑动界面",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [],
+      "synovium": "not_applicable_to_this_connection_type",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "glenohumeral_R",
+      "name_zh": "右盂肱关节",
+      "kind": "synovial",
+      "required_soft_tissues": "盂唇、关节囊、盂肱/喙肱韧带、肩袖",
+      "internal_candidates": [
+        "glenoid_labrum_R"
+      ],
+      "capsule_candidates": [
+        "capsule_glenohumeral_R"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_transverse_humeral_ligament_R",
+        "z_lig_superior_transverse_scapular_ligament_R",
+        "z_lig_superior_glenohumeral_ligament_R",
+        "z_lig_middle_glenohumeral_ligament_R",
+        "z_lig_inferior_transverse_scapular_ligament_R",
+        "z_lig_inferior_glenohumeral_ligament_R",
+        "z_lig_coracohumeral_ligament_R",
+        "z_lig_coraco_acromial_ligament_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "humeroulnar_R",
+      "name_zh": "右肱尺关节",
+      "kind": "synovial",
+      "required_soft_tissues": "软骨、关节囊、尺侧/外侧副韧带复合体",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsule_humeroulnar_R"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_ulnar_collateral_ligament_R",
+        "z_lig_radial_collateral_ligament_R",
+        "z_lig_quadrate_ligament_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "humeroradial_R",
+      "name_zh": "右肱桡关节",
+      "kind": "synovial",
+      "required_soft_tissues": "关节软骨、关节囊",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsule_humeroulnar_R"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_ulnar_collateral_ligament_R",
+        "z_lig_radial_collateral_ligament_R",
+        "z_lig_quadrate_ligament_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "proximal_radioulnar_R",
+      "name_zh": "右近侧桡尺关节",
+      "kind": "synovial",
+      "required_soft_tissues": "桡骨环状韧带、方形韧带、关节囊",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsule_humeroulnar_R"
+      ],
+      "ligament_regional_candidates": [
+        "ligament_annular_radius_R",
+        "z_lig_ulnar_collateral_ligament_R",
+        "z_lig_radial_collateral_ligament_R",
+        "z_lig_quadrate_ligament_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "distal_radioulnar_R",
+      "name_zh": "右远侧桡尺关节",
+      "kind": "synovial",
+      "required_soft_tissues": "三角纤维软骨复合体、关节囊",
+      "internal_candidates": [
+        "tfcc_disc_R"
+      ],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_ulnotriquetral_ligament_R",
+        "z_lig_ulnopisiform_ligament_M",
+        "z_lig_ulnolunate_ligament_R",
+        "z_lig_ulnocapitate_ligament_R",
+        "z_lig_radiocapitate_ligament_R",
+        "z_lig_radioscaphocapitate_ligament_R",
+        "z_lig_palmar_radio_ulnar_ligament_R",
+        "z_lig_dorsal_radiocarpal_ligament_R",
+        "z_lig_dorsal_radio_ulnar_ligament_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "forearm_interosseous_R",
+      "name_zh": "右前臂骨间连接",
+      "kind": "syndesmosis",
+      "required_soft_tissues": "前臂骨间膜",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "fibrous_forearm_interosseous_R"
+      ],
+      "synovium": "not_applicable_to_this_connection_type",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "radiocarpal_R",
+      "name_zh": "右桡腕关节组",
+      "kind": "synovial_group",
+      "required_soft_tissues": "关节软骨、关节盘、桡腕及腕侧副韧带",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsule_radiocarpal_R"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_ulnotriquetral_ligament_R",
+        "z_lig_ulnopisiform_ligament_M",
+        "z_lig_ulnolunate_ligament_R",
+        "z_lig_ulnocapitate_ligament_R",
+        "z_lig_ulnar_collateral_ligament_of_wrist_joint_R",
+        "z_lig_triquetrohamate_ligament_R",
+        "z_lig_triquetrocapitate_ligament_R",
+        "z_lig_trapezoideocapitate_interosseous_ligament_R",
+        "z_lig_trapeziotrapezoidal_interosseous_ligament_R",
+        "z_lig_scapholunate_interosseous_ligament_R",
+        "z_lig_radiocapitate_ligament_R",
+        "z_lig_scaphotrapeziotrapezoidal_ligament_R",
+        "z_lig_scaphocapitate_ligament_R",
+        "z_lig_radioscaphocapitate_ligament_R",
+        "z_lig_radiate_carpal_ligament_R",
+        "z_lig_radial_collateral_ligament_of_wrist_joint_R",
+        "z_lig_pisotriquetral_ligament_R",
+        "z_lig_pisometacarpal_ligament_R",
+        "z_lig_pisohamate_ligament_R",
+        "z_lig_palmar_trapezoideocapitate_ligament_R",
+        "z_lig_palmar_scaphotriquetral_ligament_R",
+        "z_lig_palmar_lunotriquetral_ligament_R",
+        "z_lig_palmar_capitohamate_ligament_R",
+        "z_lig_lunotriquetral_interosseous_ligament_R",
+        "z_lig_dorsal_ulnocarpal_ligament_R",
+        "z_lig_dorsal_scaphotriquetral_ligament_R",
+        "z_lig_dorsal_radiocarpal_ligament_R",
+        "z_lig_dorsal_intercarpal_ligaments_R",
+        "z_lig_capitohamate_interosseous_ligament_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "intercarpal_R",
+      "name_zh": "右腕骨间连接组",
+      "kind": "joint_group",
+      "required_soft_tissues": "腕骨间韧带、关节囊、软骨",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_ulnotriquetral_ligament_R",
+        "z_lig_ulnopisiform_ligament_M",
+        "z_lig_ulnolunate_ligament_R",
+        "z_lig_ulnocapitate_ligament_R",
+        "z_lig_ulnar_collateral_ligament_of_wrist_joint_R",
+        "z_lig_triquetrohamate_ligament_R",
+        "z_lig_triquetrocapitate_ligament_R",
+        "z_lig_trapezoideocapitate_interosseous_ligament_R",
+        "z_lig_trapeziotrapezoidal_interosseous_ligament_R",
+        "z_lig_scapholunate_interosseous_ligament_R",
+        "z_lig_radiocapitate_ligament_R",
+        "z_lig_scaphotrapeziotrapezoidal_ligament_R",
+        "z_lig_scaphocapitate_ligament_R",
+        "z_lig_radioscaphocapitate_ligament_R",
+        "z_lig_radiate_carpal_ligament_R",
+        "z_lig_radial_collateral_ligament_of_wrist_joint_R",
+        "z_lig_pisotriquetral_ligament_R",
+        "z_lig_pisometacarpal_ligament_R",
+        "z_lig_pisohamate_ligament_R",
+        "z_lig_palmar_trapezoideocapitate_ligament_R",
+        "z_lig_palmar_scaphotriquetral_ligament_R",
+        "z_lig_palmar_lunotriquetral_ligament_R",
+        "z_lig_palmar_capitohamate_ligament_R",
+        "z_lig_lunotriquetral_interosseous_ligament_R",
+        "z_lig_dorsal_ulnocarpal_ligament_R",
+        "z_lig_dorsal_scaphotriquetral_ligament_R",
+        "z_lig_dorsal_radiocarpal_ligament_R",
+        "z_lig_dorsal_intercarpal_ligaments_R",
+        "z_lig_capitohamate_interosseous_ligament_R"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "cmc_1_R",
+      "name_zh": "右第1腕掌连接",
+      "kind": "synovial_group",
+      "required_soft_tissues": "腕掌韧带、关节囊、软骨",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_palmar_carpometacarpal_ligaments_R",
+        "z_lig_dorsal_carpometacarpal_ligaments_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "mcp_1_R",
+      "name_zh": "右第1掌指关节",
+      "kind": "synovial",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、伸肌腱帽",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsules_mcp_R"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_deep_transverse_metacarpal_ligament_R",
+        "z_lig_collateral_metacarpophalangeal_ligaments_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "hand_ip_1_proximal_distal_R",
+      "name_zh": "右第1指近节—远节指间关节",
+      "kind": "synovial",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、腱鞘/滑车",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_palmar_interphalangeal_ligaments_R",
+        "z_lig_collateral_interphalangeal_ligaments_of_hand_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "cmc_2_R",
+      "name_zh": "右第2腕掌连接",
+      "kind": "synovial_group",
+      "required_soft_tissues": "腕掌韧带、关节囊、软骨",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_palmar_carpometacarpal_ligaments_R",
+        "z_lig_dorsal_carpometacarpal_ligaments_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "mcp_2_R",
+      "name_zh": "右第2掌指关节",
+      "kind": "synovial",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、伸肌腱帽",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsules_mcp_R"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_deep_transverse_metacarpal_ligament_R",
+        "z_lig_collateral_metacarpophalangeal_ligaments_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "hand_ip_2_proximal_middle_R",
+      "name_zh": "右第2指近节—中节指间关节",
+      "kind": "synovial",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、腱鞘/滑车",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsules_hand_proximal_R"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_palmar_interphalangeal_ligaments_R",
+        "z_lig_collateral_interphalangeal_ligaments_of_hand_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "hand_ip_2_middle_distal_R",
+      "name_zh": "右第2指中节—远节指间关节",
+      "kind": "synovial",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、腱鞘/滑车",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsules_hand_distal_R"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_palmar_interphalangeal_ligaments_R",
+        "z_lig_collateral_interphalangeal_ligaments_of_hand_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "cmc_3_R",
+      "name_zh": "右第3腕掌连接",
+      "kind": "synovial_group",
+      "required_soft_tissues": "腕掌韧带、关节囊、软骨",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_palmar_carpometacarpal_ligaments_R",
+        "z_lig_dorsal_carpometacarpal_ligaments_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "mcp_3_R",
+      "name_zh": "右第3掌指关节",
+      "kind": "synovial",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、伸肌腱帽",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsules_mcp_R"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_deep_transverse_metacarpal_ligament_R",
+        "z_lig_collateral_metacarpophalangeal_ligaments_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "hand_ip_3_proximal_middle_R",
+      "name_zh": "右第3指近节—中节指间关节",
+      "kind": "synovial",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、腱鞘/滑车",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsules_hand_proximal_R"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_palmar_interphalangeal_ligaments_R",
+        "z_lig_collateral_interphalangeal_ligaments_of_hand_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "hand_ip_3_middle_distal_R",
+      "name_zh": "右第3指中节—远节指间关节",
+      "kind": "synovial",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、腱鞘/滑车",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsules_hand_distal_R"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_palmar_interphalangeal_ligaments_R",
+        "z_lig_collateral_interphalangeal_ligaments_of_hand_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "cmc_4_R",
+      "name_zh": "右第4腕掌连接",
+      "kind": "synovial_group",
+      "required_soft_tissues": "腕掌韧带、关节囊、软骨",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_palmar_carpometacarpal_ligaments_R",
+        "z_lig_dorsal_carpometacarpal_ligaments_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "mcp_4_R",
+      "name_zh": "右第4掌指关节",
+      "kind": "synovial",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、伸肌腱帽",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsules_mcp_R"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_deep_transverse_metacarpal_ligament_R",
+        "z_lig_collateral_metacarpophalangeal_ligaments_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "hand_ip_4_proximal_middle_R",
+      "name_zh": "右第4指近节—中节指间关节",
+      "kind": "synovial",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、腱鞘/滑车",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsules_hand_proximal_R"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_palmar_interphalangeal_ligaments_R",
+        "z_lig_collateral_interphalangeal_ligaments_of_hand_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "hand_ip_4_middle_distal_R",
+      "name_zh": "右第4指中节—远节指间关节",
+      "kind": "synovial",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、腱鞘/滑车",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsules_hand_distal_R"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_palmar_interphalangeal_ligaments_R",
+        "z_lig_collateral_interphalangeal_ligaments_of_hand_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "cmc_5_R",
+      "name_zh": "右第5腕掌连接",
+      "kind": "synovial_group",
+      "required_soft_tissues": "腕掌韧带、关节囊、软骨",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_palmar_carpometacarpal_ligaments_R",
+        "z_lig_dorsal_carpometacarpal_ligaments_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "mcp_5_R",
+      "name_zh": "右第5掌指关节",
+      "kind": "synovial",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、伸肌腱帽",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsules_mcp_R"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_deep_transverse_metacarpal_ligament_R",
+        "z_lig_collateral_metacarpophalangeal_ligaments_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "hand_ip_5_proximal_middle_R",
+      "name_zh": "右第5指近节—中节指间关节",
+      "kind": "synovial",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、腱鞘/滑车",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsules_hand_proximal_R"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_palmar_interphalangeal_ligaments_R",
+        "z_lig_collateral_interphalangeal_ligaments_of_hand_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "hand_ip_5_middle_distal_R",
+      "name_zh": "右第5指中节—远节指间关节",
+      "kind": "synovial",
+      "required_soft_tissues": "掌板、侧副韧带、关节囊、腱鞘/滑车",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsules_hand_distal_R"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_palmar_interphalangeal_ligaments_R",
+        "z_lig_collateral_interphalangeal_ligaments_of_hand_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "intermetacarpal_R",
+      "name_zh": "右掌骨间连接组",
+      "kind": "joint_group",
+      "required_soft_tissues": "掌骨间韧带、关节囊",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_palmar_metacarpal_ligaments_R",
+        "z_lig_interosseous_metacarpal_ligaments_R",
+        "z_lig_dorsal_metacarpal_ligaments_R"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "sacroiliac_R",
+      "name_zh": "右骶髂关节",
+      "kind": "mixed_joint_complex",
+      "required_soft_tissues": "骶髂关节软骨、骨间/前后骶髂韧带、骶结节/骶棘韧带",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_sacrotuberous_ligament_R",
+        "z_lig_sacrospinous_ligament_R",
+        "z_lig_posterior_sacro_iliac_ligament_R",
+        "z_lig_interosseous_sacro_iliac_ligament_R",
+        "z_lig_iliolumbar_ligament_R",
+        "z_lig_anterior_sacro_iliac_ligament_R"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "hip_R",
+      "name_zh": "右髋关节",
+      "kind": "synovial",
+      "required_soft_tissues": "髋臼唇、软骨、关节囊、髂股/耻股/坐股韧带",
+      "internal_candidates": [
+        "acetabular_labrum_R"
+      ],
+      "capsule_candidates": [
+        "capsule_hip_R"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_transverse_part_of_iliofemoral_ligament_R",
+        "z_lig_transverse_acetabular_ligament_R",
+        "z_lig_pubofemoral_ligament_R",
+        "z_lig_ligament_of_head_of_femur_R",
+        "z_lig_ischiofemoral_ligament_R",
+        "z_lig_descending_part_of_iliofemoral_ligament_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "tibiofemoral_R",
+      "name_zh": "右胫股关节组",
+      "kind": "synovial_group",
+      "required_soft_tissues": "内外侧半月板、交叉/侧副韧带、关节囊、软骨",
+      "internal_candidates": [
+        "medial_meniscus_R",
+        "lateral_meniscus_R"
+      ],
+      "capsule_candidates": [
+        "capsule_tibiofemoral_R"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_transverse_ligament_of_knee_R",
+        "z_lig_superficial_part_of_tibial_collateral_ligament_R",
+        "z_lig_posterior_meniscotibial_ligament_medial_meniscus_R",
+        "z_lig_posterior_meniscotibial_ligament_lateral_meniscus_R",
+        "z_lig_posterior_cruciate_ligament_R",
+        "z_lig_popliteofibular_ligament_R",
+        "z_lig_oblique_popliteal_ligament_R",
+        "z_lig_meniscopatellar_ligament_R",
+        "z_lig_fibular_collateral_ligament_R",
+        "z_lig_deep_part_of_tibial_collateral_ligament_R",
+        "z_lig_arcuate_popliteal_ligament_R",
+        "z_lig_anterior_meniscotibial_ligament_medial_meniscus_R",
+        "z_lig_anterior_meniscotibial_ligament_lateral_meniscus_R",
+        "z_lig_anterior_cruciate_ligament_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "patellofemoral_R",
+      "name_zh": "右髌股关节",
+      "kind": "synovial",
+      "required_soft_tissues": "软骨、髌支持带、股四头肌腱、髌韧带",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsule_tibiofemoral_R"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_transverse_ligament_of_knee_R",
+        "z_lig_superficial_part_of_tibial_collateral_ligament_R",
+        "z_lig_posterior_meniscotibial_ligament_medial_meniscus_R",
+        "z_lig_posterior_meniscotibial_ligament_lateral_meniscus_R",
+        "z_lig_posterior_cruciate_ligament_R",
+        "z_lig_popliteofibular_ligament_R",
+        "z_lig_oblique_popliteal_ligament_R",
+        "z_lig_meniscopatellar_ligament_R",
+        "z_lig_fibular_collateral_ligament_R",
+        "z_lig_deep_part_of_tibial_collateral_ligament_R",
+        "z_lig_arcuate_popliteal_ligament_R",
+        "z_lig_anterior_meniscotibial_ligament_medial_meniscus_R",
+        "z_lig_anterior_meniscotibial_ligament_lateral_meniscus_R",
+        "z_lig_anterior_cruciate_ligament_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "proximal_tibiofibular_R",
+      "name_zh": "右近侧胫腓关节",
+      "kind": "synovial",
+      "required_soft_tissues": "关节囊、胫腓头韧带",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsule_proximal_tibiofibular_R"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_transverse_ligament_of_knee_R",
+        "z_lig_superficial_part_of_tibial_collateral_ligament_R",
+        "z_lig_posterior_meniscotibial_ligament_medial_meniscus_R",
+        "z_lig_posterior_meniscotibial_ligament_lateral_meniscus_R",
+        "z_lig_posterior_ligament_of_fibular_head_R",
+        "z_lig_posterior_cruciate_ligament_R",
+        "z_lig_popliteofibular_ligament_R",
+        "z_lig_oblique_popliteal_ligament_R",
+        "z_lig_meniscopatellar_ligament_R",
+        "z_lig_interosseous_membrane_of_leg_R",
+        "z_lig_fibular_collateral_ligament_R",
+        "z_lig_deep_part_of_tibial_collateral_ligament_R",
+        "z_lig_arcuate_popliteal_ligament_R",
+        "z_lig_anterior_meniscotibial_ligament_medial_meniscus_R",
+        "z_lig_anterior_meniscotibial_ligament_lateral_meniscus_R",
+        "z_lig_anterior_ligament_of_fibular_head_R",
+        "z_lig_anterior_cruciate_ligament_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "distal_tibiofibular_R",
+      "name_zh": "右远侧胫腓连接",
+      "kind": "syndesmosis",
+      "required_soft_tissues": "胫腓前后韧带、骨间韧带与小腿骨间膜",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_transverse_tibiofibular_ligament_R",
+        "z_lig_posterior_tibiofibular_ligament_R",
+        "z_lig_interosseous_membrane_of_leg_R",
+        "z_lig_anterior_tibiofibular_ligament_R"
+      ],
+      "synovium": "not_applicable_to_this_connection_type",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "talocrural_R",
+      "name_zh": "右距小腿关节组",
+      "kind": "synovial_group",
+      "required_soft_tissues": "软骨、关节囊、三角韧带、外侧韧带复合体",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_tibionavicular_ligament_R",
+        "z_lig_tibiocalcaneal_ligament_R",
+        "z_lig_posterior_tibiotalar_ligament_R",
+        "z_lig_posterior_talofibular_ligament_R",
+        "z_lig_calcaneofibular_ligament_R",
+        "z_lig_anterior_talofibular_ligament_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "subtalar_R",
+      "name_zh": "右距下关节",
+      "kind": "synovial",
+      "required_soft_tissues": "距跟骨间韧带、颈韧带、关节囊、软骨",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_talonavicular_ligament_R",
+        "z_lig_talocalcaneal_interosseous_ligament_R",
+        "z_lig_plantar_cuboideonavicular_ligament_R",
+        "z_lig_plantar_calcaneonavicular_ligament_R",
+        "z_lig_posterior_talofibular_ligament_R",
+        "z_lig_posterior_talocalcaneal_ligament_R",
+        "z_lig_plantar_intercuneiform_ligaments_R",
+        "z_lig_plantar_cuneonavicular_ligaments_R",
+        "z_lig_plantar_cuneocuboid_ligament_R",
+        "z_lig_plantar_calcaneocuboid_ligament_R",
+        "z_lig_medial_talocalcaneal_ligament_R",
+        "z_lig_long_plantar_ligament_R",
+        "z_lig_lateral_talocalcaneal_ligament_R",
+        "z_lig_intercuneiform_interosseous_ligaments_R",
+        "z_lig_dorsal_intercuneiform_ligaments_R",
+        "z_lig_dorsal_cuneonavicular_ligaments_R",
+        "z_lig_dorsal_cuneocuboid_ligament_R",
+        "z_lig_dorsal_cuboideonavicular_ligament_R",
+        "z_lig_dorsal_calcaneocuboid_ligament_R",
+        "z_lig_cuneocuboid_interosseous_ligament_R",
+        "z_lig_calcaneonavicular_ligament_R",
+        "z_lig_calcaneofibular_ligament_R",
+        "z_lig_calcaneocuboid_ligament_R",
+        "z_lig_anterior_talofibular_ligament_R",
+        "z_lig_anterior_talocalcaneal_ligament_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "talocalcaneonavicular_R",
+      "name_zh": "右距跟舟关节组",
+      "kind": "synovial_group",
+      "required_soft_tissues": "足底跟舟韧带、关节囊、软骨",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_tibionavicular_ligament_R",
+        "z_lig_tibiocalcaneal_ligament_R",
+        "z_lig_talonavicular_ligament_R",
+        "z_lig_talocalcaneal_interosseous_ligament_R",
+        "z_lig_posterior_tibiotalar_ligament_R",
+        "z_lig_plantar_cuboideonavicular_ligament_R",
+        "z_lig_plantar_calcaneonavicular_ligament_R",
+        "z_lig_posterior_talocalcaneal_ligament_R",
+        "z_lig_plantar_intercuneiform_ligaments_R",
+        "z_lig_plantar_cuneonavicular_ligaments_R",
+        "z_lig_plantar_cuneocuboid_ligament_R",
+        "z_lig_plantar_calcaneocuboid_ligament_R",
+        "z_lig_medial_talocalcaneal_ligament_R",
+        "z_lig_long_plantar_ligament_R",
+        "z_lig_lateral_talocalcaneal_ligament_R",
+        "z_lig_intercuneiform_interosseous_ligaments_R",
+        "z_lig_dorsal_intercuneiform_ligaments_R",
+        "z_lig_dorsal_cuneonavicular_ligaments_R",
+        "z_lig_dorsal_cuneocuboid_ligament_R",
+        "z_lig_dorsal_cuboideonavicular_ligament_R",
+        "z_lig_dorsal_calcaneocuboid_ligament_R",
+        "z_lig_cuneocuboid_interosseous_ligament_R",
+        "z_lig_calcaneonavicular_ligament_R",
+        "z_lig_calcaneocuboid_ligament_R",
+        "z_lig_anterior_talocalcaneal_ligament_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "calcaneocuboid_R",
+      "name_zh": "右跟骰关节",
+      "kind": "synovial",
+      "required_soft_tissues": "长/短足底韧带、分歧韧带、关节囊",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_talonavicular_ligament_R",
+        "z_lig_talocalcaneal_interosseous_ligament_R",
+        "z_lig_plantar_cuboideonavicular_ligament_R",
+        "z_lig_plantar_calcaneonavicular_ligament_R",
+        "z_lig_posterior_talocalcaneal_ligament_R",
+        "z_lig_plantar_intercuneiform_ligaments_R",
+        "z_lig_plantar_cuneonavicular_ligaments_R",
+        "z_lig_plantar_cuneocuboid_ligament_R",
+        "z_lig_plantar_calcaneocuboid_ligament_R",
+        "z_lig_medial_talocalcaneal_ligament_R",
+        "z_lig_long_plantar_ligament_R",
+        "z_lig_lateral_talocalcaneal_ligament_R",
+        "z_lig_intercuneiform_interosseous_ligaments_R",
+        "z_lig_dorsal_intercuneiform_ligaments_R",
+        "z_lig_dorsal_cuneonavicular_ligaments_R",
+        "z_lig_dorsal_cuneocuboid_ligament_R",
+        "z_lig_dorsal_cuboideonavicular_ligament_R",
+        "z_lig_dorsal_calcaneocuboid_ligament_R",
+        "z_lig_cuneocuboid_interosseous_ligament_R",
+        "z_lig_calcaneonavicular_ligament_R",
+        "z_lig_calcaneocuboid_ligament_R",
+        "z_lig_anterior_talocalcaneal_ligament_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "distal_intertarsal_R",
+      "name_zh": "右远侧跗骨间连接组",
+      "kind": "joint_group",
+      "required_soft_tissues": "跗骨间韧带、关节囊、软骨",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_talonavicular_ligament_R",
+        "z_lig_talocalcaneal_interosseous_ligament_R",
+        "z_lig_plantar_cuboideonavicular_ligament_R",
+        "z_lig_plantar_calcaneonavicular_ligament_R",
+        "z_lig_posterior_talocalcaneal_ligament_R",
+        "z_lig_plantar_intercuneiform_ligaments_R",
+        "z_lig_plantar_cuneonavicular_ligaments_R",
+        "z_lig_plantar_cuneocuboid_ligament_R",
+        "z_lig_plantar_calcaneocuboid_ligament_R",
+        "z_lig_medial_talocalcaneal_ligament_R",
+        "z_lig_long_plantar_ligament_R",
+        "z_lig_lateral_talocalcaneal_ligament_R",
+        "z_lig_intercuneiform_interosseous_ligaments_R",
+        "z_lig_dorsal_intercuneiform_ligaments_R",
+        "z_lig_dorsal_cuneonavicular_ligaments_R",
+        "z_lig_dorsal_cuneocuboid_ligament_R",
+        "z_lig_dorsal_cuboideonavicular_ligament_R",
+        "z_lig_dorsal_calcaneocuboid_ligament_R",
+        "z_lig_cuneocuboid_interosseous_ligament_R",
+        "z_lig_calcaneonavicular_ligament_R",
+        "z_lig_calcaneocuboid_ligament_R",
+        "z_lig_anterior_talocalcaneal_ligament_R"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "tmt_1_R",
+      "name_zh": "右第1跗跖连接",
+      "kind": "synovial_group",
+      "required_soft_tissues": "跗跖韧带、Lisfranc韧带复合体、关节囊",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_plantar_tarsometatarsal_ligaments_R",
+        "z_lig_dorsal_tarsometatarsal_ligaments_R",
+        "z_lig_cuneometatarsal_interosseous_ligaments_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "mtp_1_R",
+      "name_zh": "右第1跖趾关节",
+      "kind": "synovial",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊；第1跖趾还需成对籽骨",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsules_mtp_R"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_plantar_metatarsophalangeal_ligaments_R",
+        "z_lig_plantar_metatarsal_ligaments_R",
+        "z_lig_metatarsal_interosseous_ligaments_R",
+        "z_lig_intersesamoid_ligament_R",
+        "z_lig_dorsal_metatarsal_ligaments_R",
+        "z_lig_deep_transverse_metatarsal_ligament_R",
+        "z_lig_collateral_metatarsophalangeal_ligaments_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "foot_ip_1_proximal_distal_R",
+      "name_zh": "右第1趾近节—远节趾间关节",
+      "kind": "synovial",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊、肌腱",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsule_foot_ip_1_proximal_distal_R"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_plantar_interphalangeal_ligaments_R",
+        "z_lig_collateral_interphalangeal_ligaments_of_foot_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "tmt_2_R",
+      "name_zh": "右第2跗跖连接",
+      "kind": "synovial_group",
+      "required_soft_tissues": "跗跖韧带、Lisfranc韧带复合体、关节囊",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_plantar_tarsometatarsal_ligaments_R",
+        "z_lig_dorsal_tarsometatarsal_ligaments_R",
+        "z_lig_cuneometatarsal_interosseous_ligaments_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "mtp_2_R",
+      "name_zh": "右第2跖趾关节",
+      "kind": "synovial",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊；第1跖趾还需成对籽骨",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsules_mtp_R"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_plantar_metatarsophalangeal_ligaments_R",
+        "z_lig_deep_transverse_metatarsal_ligament_R",
+        "z_lig_collateral_metatarsophalangeal_ligaments_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "foot_ip_2_proximal_middle_R",
+      "name_zh": "右第2趾近节—中节趾间关节",
+      "kind": "synovial",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊、肌腱",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsules_foot_proximal_R"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_plantar_interphalangeal_ligaments_R",
+        "z_lig_collateral_interphalangeal_ligaments_of_foot_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "foot_ip_2_middle_distal_R",
+      "name_zh": "右第2趾中节—远节趾间关节",
+      "kind": "synovial",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊、肌腱",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsules_foot_distal_R"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_plantar_interphalangeal_ligaments_R",
+        "z_lig_collateral_interphalangeal_ligaments_of_foot_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "tmt_3_R",
+      "name_zh": "右第3跗跖连接",
+      "kind": "synovial_group",
+      "required_soft_tissues": "跗跖韧带、Lisfranc韧带复合体、关节囊",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_plantar_tarsometatarsal_ligaments_R",
+        "z_lig_dorsal_tarsometatarsal_ligaments_R",
+        "z_lig_cuneometatarsal_interosseous_ligaments_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "mtp_3_R",
+      "name_zh": "右第3跖趾关节",
+      "kind": "synovial",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊；第1跖趾还需成对籽骨",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsules_mtp_R"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_plantar_metatarsophalangeal_ligaments_R",
+        "z_lig_deep_transverse_metatarsal_ligament_R",
+        "z_lig_collateral_metatarsophalangeal_ligaments_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "foot_ip_3_proximal_middle_R",
+      "name_zh": "右第3趾近节—中节趾间关节",
+      "kind": "synovial",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊、肌腱",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsules_foot_proximal_R"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_plantar_interphalangeal_ligaments_R",
+        "z_lig_collateral_interphalangeal_ligaments_of_foot_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "foot_ip_3_middle_distal_R",
+      "name_zh": "右第3趾中节—远节趾间关节",
+      "kind": "synovial",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊、肌腱",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsules_foot_distal_R"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_plantar_interphalangeal_ligaments_R",
+        "z_lig_collateral_interphalangeal_ligaments_of_foot_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "tmt_4_R",
+      "name_zh": "右第4跗跖连接",
+      "kind": "synovial_group",
+      "required_soft_tissues": "跗跖韧带、Lisfranc韧带复合体、关节囊",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_plantar_tarsometatarsal_ligaments_R",
+        "z_lig_dorsal_tarsometatarsal_ligaments_R",
+        "z_lig_cuneometatarsal_interosseous_ligaments_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "mtp_4_R",
+      "name_zh": "右第4跖趾关节",
+      "kind": "synovial",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊；第1跖趾还需成对籽骨",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsules_mtp_R"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_plantar_metatarsophalangeal_ligaments_R",
+        "z_lig_deep_transverse_metatarsal_ligament_R",
+        "z_lig_collateral_metatarsophalangeal_ligaments_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "foot_ip_4_proximal_middle_R",
+      "name_zh": "右第4趾近节—中节趾间关节",
+      "kind": "synovial",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊、肌腱",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsules_foot_proximal_R"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_plantar_interphalangeal_ligaments_R",
+        "z_lig_collateral_interphalangeal_ligaments_of_foot_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "foot_ip_4_middle_distal_R",
+      "name_zh": "右第4趾中节—远节趾间关节",
+      "kind": "synovial",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊、肌腱",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsules_foot_distal_R"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_plantar_interphalangeal_ligaments_R",
+        "z_lig_collateral_interphalangeal_ligaments_of_foot_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "tmt_5_R",
+      "name_zh": "右第5跗跖连接",
+      "kind": "synovial_group",
+      "required_soft_tissues": "跗跖韧带、Lisfranc韧带复合体、关节囊",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_plantar_tarsometatarsal_ligaments_R",
+        "z_lig_dorsal_tarsometatarsal_ligaments_R",
+        "z_lig_cuneometatarsal_interosseous_ligaments_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "mtp_5_R",
+      "name_zh": "右第5跖趾关节",
+      "kind": "synovial",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊；第1跖趾还需成对籽骨",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsules_mtp_R"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_plantar_metatarsophalangeal_ligaments_R",
+        "z_lig_deep_transverse_metatarsal_ligament_R",
+        "z_lig_collateral_metatarsophalangeal_ligaments_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "foot_ip_5_proximal_middle_R",
+      "name_zh": "右第5趾近节—中节趾间关节",
+      "kind": "synovial",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊、肌腱",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsules_foot_proximal_R"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_plantar_interphalangeal_ligaments_R",
+        "z_lig_collateral_interphalangeal_ligaments_of_foot_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "foot_ip_5_middle_distal_R",
+      "name_zh": "右第5趾中节—远节趾间关节",
+      "kind": "synovial",
+      "required_soft_tissues": "跖板、侧副韧带、关节囊、肌腱",
+      "internal_candidates": [],
+      "capsule_candidates": [
+        "capsules_foot_distal_R"
+      ],
+      "ligament_regional_candidates": [
+        "z_lig_plantar_interphalangeal_ligaments_R",
+        "z_lig_collateral_interphalangeal_ligaments_of_foot_R"
+      ],
+      "synovium": "missing_model",
+      "volumetric_surface_cartilage": "not_completed",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "intermetatarsal_R",
+      "name_zh": "右跖骨间连接组",
+      "kind": "joint_group",
+      "required_soft_tissues": "跖骨间韧带、关节囊",
+      "internal_candidates": [],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_plantar_metatarsal_ligaments_R",
+        "z_lig_metatarsal_interosseous_ligaments_R",
+        "z_lig_intersesamoid_ligament_R",
+        "z_lig_dorsal_metatarsal_ligaments_R"
+      ],
+      "synovium": "requires_subjoint_classification_and_model",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    },
+    {
+      "connection_id": "pubic_symphysis",
+      "name_zh": "耻骨联合",
+      "kind": "symphysis",
+      "required_soft_tissues": "耻骨间盘及耻骨韧带",
+      "internal_candidates": [
+        "pubic_interpubic_disc"
+      ],
+      "capsule_candidates": [],
+      "ligament_regional_candidates": [
+        "z_lig_superior_pubic_ligament_M",
+        "z_lig_inferior_pubic_ligament_M"
+      ],
+      "synovium": "not_applicable_to_this_connection_type",
+      "volumetric_surface_cartilage": "structure_specific_review_required",
+      "attachment_review": "pending",
+      "assembly_review": "pending",
+      "complete": false
+    }
+  ]
+}

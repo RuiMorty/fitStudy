@@ -1,0 +1,1208 @@
+[
+  {
+    "id": "z_lig_capitohamate_interosseous_ligament_L",
+    "source": "Capitohamate interosseous ligament.l",
+    "before": {
+      "Capitate bone.l": {
+        "samples": 5,
+        "max_depth_mm": 1.0566
+      },
+      "Hamate bone.l": {
+        "samples": 5,
+        "max_depth_mm": 0.5992
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 1.29,
+    "vertices": 642,
+    "contact_candidate_vertices": 76
+  },
+  {
+    "id": "z_lig_capitohamate_interosseous_ligament_R",
+    "source": "Capitohamate interosseous ligament.r",
+    "before": {
+      "Capitate bone.r": {
+        "samples": 5,
+        "max_depth_mm": 1.0566
+      },
+      "Hamate bone.r": {
+        "samples": 5,
+        "max_depth_mm": 0.5993
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 1.29,
+    "vertices": 642,
+    "contact_candidate_vertices": 76
+  },
+  {
+    "id": "z_lig_dorsal_intercarpal_ligaments_L",
+    "source": "Dorsal intercarpal ligaments.l",
+    "before": {
+      "Scaphoid bone.l": {
+        "samples": 13,
+        "max_depth_mm": 1.1638
+      },
+      "Triquetrum bone.l": {
+        "samples": 27,
+        "max_depth_mm": 0.719
+      },
+      "Trapezium bone.l": {
+        "samples": 17,
+        "max_depth_mm": 1.3065
+      },
+      "Capitate bone.l": {
+        "samples": 21,
+        "max_depth_mm": 0.7955
+      },
+      "Hamate bone.l": {
+        "samples": 87,
+        "max_depth_mm": 0.7895
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 1.177,
+    "vertices": 11682,
+    "contact_candidate_vertices": 335
+  },
+  {
+    "id": "z_lig_dorsal_intercarpal_ligaments_R",
+    "source": "Dorsal intercarpal ligaments.r",
+    "before": {
+      "Scaphoid bone.r": {
+        "samples": 13,
+        "max_depth_mm": 1.1638
+      },
+      "Triquetrum bone.r": {
+        "samples": 27,
+        "max_depth_mm": 0.7189
+      },
+      "Trapezium bone.r": {
+        "samples": 17,
+        "max_depth_mm": 1.3065
+      },
+      "Capitate bone.r": {
+        "samples": 21,
+        "max_depth_mm": 0.7955
+      },
+      "Hamate bone.r": {
+        "samples": 87,
+        "max_depth_mm": 0.7895
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 1.177,
+    "vertices": 11682,
+    "contact_candidate_vertices": 335
+  },
+  {
+    "id": "z_lig_dorsal_radio_ulnar_ligament_L",
+    "source": "Dorsal radio-ulnar ligament.l",
+    "before": {
+      "Radius.l": {
+        "samples": 6,
+        "max_depth_mm": 1.1275
+      },
+      "Ulna.l": {
+        "samples": 5,
+        "max_depth_mm": 0.6344
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 1.225,
+    "vertices": 642,
+    "contact_candidate_vertices": 26
+  },
+  {
+    "id": "z_lig_dorsal_radio_ulnar_ligament_R",
+    "source": "Dorsal radio-ulnar ligament.r",
+    "before": {
+      "Radius.r": {
+        "samples": 6,
+        "max_depth_mm": 1.1275
+      },
+      "Ulna.r": {
+        "samples": 5,
+        "max_depth_mm": 0.6344
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 1.225,
+    "vertices": 642,
+    "contact_candidate_vertices": 26
+  },
+  {
+    "id": "z_lig_dorsal_radiocarpal_ligament_L",
+    "source": "Dorsal radiocarpal ligament.l",
+    "before": {
+      "Radius.l": {
+        "samples": 20,
+        "max_depth_mm": 1.2389
+      },
+      "Scaphoid bone.l": {
+        "samples": 38,
+        "max_depth_mm": 0.8034
+      },
+      "Lunate bone.l": {
+        "samples": 15,
+        "max_depth_mm": 0.5354
+      },
+      "Triquetrum bone.l": {
+        "samples": 16,
+        "max_depth_mm": 1.458
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 1.655,
+    "vertices": 5825,
+    "contact_candidate_vertices": 339
+  },
+  {
+    "id": "z_lig_dorsal_radiocarpal_ligament_R",
+    "source": "Dorsal radiocarpal ligament.r",
+    "before": {
+      "Radius.r": {
+        "samples": 20,
+        "max_depth_mm": 1.2389
+      },
+      "Scaphoid bone.r": {
+        "samples": 38,
+        "max_depth_mm": 0.8034
+      },
+      "Lunate bone.r": {
+        "samples": 15,
+        "max_depth_mm": 0.5354
+      },
+      "Triquetrum bone.r": {
+        "samples": 16,
+        "max_depth_mm": 1.4579
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 1.655,
+    "vertices": 5825,
+    "contact_candidate_vertices": 339
+  },
+  {
+    "id": "z_lig_dorsal_scaphotriquetral_ligament_L",
+    "source": "Dorsal scaphotriquetral ligament.l",
+    "before": {
+      "Scaphoid bone.l": {
+        "samples": 9,
+        "max_depth_mm": 1.2869
+      },
+      "Lunate bone.l": {
+        "samples": 10,
+        "max_depth_mm": 0.4116
+      },
+      "Triquetrum bone.l": {
+        "samples": 17,
+        "max_depth_mm": 1.5889
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 1.823,
+    "vertices": 2380,
+    "contact_candidate_vertices": 156
+  },
+  {
+    "id": "z_lig_dorsal_scaphotriquetral_ligament_R",
+    "source": "Dorsal scaphotriquetral ligament.r",
+    "before": {
+      "Scaphoid bone.r": {
+        "samples": 9,
+        "max_depth_mm": 1.2869
+      },
+      "Lunate bone.r": {
+        "samples": 10,
+        "max_depth_mm": 0.4116
+      },
+      "Triquetrum bone.r": {
+        "samples": 17,
+        "max_depth_mm": 1.5889
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 1.823,
+    "vertices": 2380,
+    "contact_candidate_vertices": 156
+  },
+  {
+    "id": "z_lig_dorsal_ulnocarpal_ligament_L",
+    "source": "Dorsal ulnocarpal ligament.l",
+    "before": {
+      "Ulna.l": {
+        "samples": 20,
+        "max_depth_mm": 1.1691
+      },
+      "Lunate bone.l": {
+        "samples": 5,
+        "max_depth_mm": 0.4285
+      },
+      "Triquetrum bone.l": {
+        "samples": 8,
+        "max_depth_mm": 0.5919
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 1.18,
+    "vertices": 2499,
+    "contact_candidate_vertices": 225
+  },
+  {
+    "id": "z_lig_dorsal_ulnocarpal_ligament_R",
+    "source": "Dorsal ulnocarpal ligament.r",
+    "before": {
+      "Ulna.r": {
+        "samples": 20,
+        "max_depth_mm": 1.1692
+      },
+      "Lunate bone.r": {
+        "samples": 5,
+        "max_depth_mm": 0.4285
+      },
+      "Triquetrum bone.r": {
+        "samples": 8,
+        "max_depth_mm": 0.5919
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 1.18,
+    "vertices": 2499,
+    "contact_candidate_vertices": 225
+  },
+  {
+    "id": "z_lig_lunotriquetral_interosseous_ligament_L",
+    "source": "Lunotriquetral interosseous ligament.l",
+    "before": {
+      "Lunate bone.l": {
+        "samples": 7,
+        "max_depth_mm": 1.0997
+      },
+      "Triquetrum bone.l": {
+        "samples": 7,
+        "max_depth_mm": 0.7931
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 1.347,
+    "vertices": 642,
+    "contact_candidate_vertices": 80
+  },
+  {
+    "id": "z_lig_lunotriquetral_interosseous_ligament_R",
+    "source": "Lunotriquetral interosseous ligament.r",
+    "before": {
+      "Lunate bone.r": {
+        "samples": 7,
+        "max_depth_mm": 1.0997
+      },
+      "Triquetrum bone.r": {
+        "samples": 7,
+        "max_depth_mm": 0.7931
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 1.347,
+    "vertices": 642,
+    "contact_candidate_vertices": 80
+  },
+  {
+    "id": "z_lig_palmar_capitohamate_ligament_L",
+    "source": "Palmar capitohamate ligament.l",
+    "before": {
+      "Capitate bone.l": {
+        "samples": 5,
+        "max_depth_mm": 0.7238
+      },
+      "Hamate bone.l": {
+        "samples": 5,
+        "max_depth_mm": 0.4224
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 0.937,
+    "vertices": 642,
+    "contact_candidate_vertices": 58
+  },
+  {
+    "id": "z_lig_palmar_capitohamate_ligament_R",
+    "source": "Palmar capitohamate ligament.r",
+    "before": {
+      "Capitate bone.r": {
+        "samples": 5,
+        "max_depth_mm": 0.7237
+      },
+      "Hamate bone.r": {
+        "samples": 5,
+        "max_depth_mm": 0.4224
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 0.937,
+    "vertices": 642,
+    "contact_candidate_vertices": 58
+  },
+  {
+    "id": "z_lig_palmar_lunotriquetral_ligament_L",
+    "source": "Palmar lunotriquetral ligament.l",
+    "before": {
+      "Lunate bone.l": {
+        "samples": 6,
+        "max_depth_mm": 0.3687
+      },
+      "Triquetrum bone.l": {
+        "samples": 6,
+        "max_depth_mm": 0.6604
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 0.91,
+    "vertices": 642,
+    "contact_candidate_vertices": 72
+  },
+  {
+    "id": "z_lig_palmar_lunotriquetral_ligament_R",
+    "source": "Palmar lunotriquetral ligament.r",
+    "before": {
+      "Lunate bone.r": {
+        "samples": 6,
+        "max_depth_mm": 0.3687
+      },
+      "Triquetrum bone.r": {
+        "samples": 6,
+        "max_depth_mm": 0.6604
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 0.91,
+    "vertices": 642,
+    "contact_candidate_vertices": 72
+  },
+  {
+    "id": "z_lig_palmar_radio_ulnar_ligament_L",
+    "source": "Palmar radio-ulnar ligament.l",
+    "before": {
+      "Radius.l": {
+        "samples": 18,
+        "max_depth_mm": 2.6933
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 2.475,
+    "vertices": 1794,
+    "contact_candidate_vertices": 53
+  },
+  {
+    "id": "z_lig_palmar_radio_ulnar_ligament_R",
+    "source": "Palmar radio-ulnar ligament.r",
+    "before": {
+      "Radius.r": {
+        "samples": 13,
+        "max_depth_mm": 1.7041
+      },
+      "Ulna.r": {
+        "samples": 12,
+        "max_depth_mm": 0.8227
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 1.176,
+    "vertices": 1794,
+    "contact_candidate_vertices": 67
+  },
+  {
+    "id": "z_lig_palmar_scaphotriquetral_ligament_L",
+    "source": "Palmar scaphotriquetral ligament.l",
+    "before": {
+      "Scaphoid bone.l": {
+        "samples": 17,
+        "max_depth_mm": 0.4675
+      },
+      "Triquetrum bone.l": {
+        "samples": 24,
+        "max_depth_mm": 0.9127
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 1.125,
+    "vertices": 1794,
+    "contact_candidate_vertices": 124
+  },
+  {
+    "id": "z_lig_palmar_scaphotriquetral_ligament_R",
+    "source": "Palmar scaphotriquetral ligament.r",
+    "before": {
+      "Scaphoid bone.r": {
+        "samples": 17,
+        "max_depth_mm": 0.4675
+      },
+      "Triquetrum bone.r": {
+        "samples": 24,
+        "max_depth_mm": 0.9127
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 1.125,
+    "vertices": 1794,
+    "contact_candidate_vertices": 124
+  },
+  {
+    "id": "z_lig_palmar_trapezoideocapitate_ligament_L",
+    "source": "Palmar trapezoideocapitate ligament.l",
+    "before": {
+      "Trapezoid bone.l": {
+        "samples": 6,
+        "max_depth_mm": 0.8618
+      },
+      "Capitate bone.l": {
+        "samples": 6,
+        "max_depth_mm": 1.0413
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 0.911,
+    "vertices": 642,
+    "contact_candidate_vertices": 56
+  },
+  {
+    "id": "z_lig_palmar_trapezoideocapitate_ligament_R",
+    "source": "Palmar trapezoideocapitate ligament.r",
+    "before": {
+      "Trapezoid bone.r": {
+        "samples": 6,
+        "max_depth_mm": 0.8618
+      },
+      "Capitate bone.r": {
+        "samples": 6,
+        "max_depth_mm": 1.0414
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 0.911,
+    "vertices": 642,
+    "contact_candidate_vertices": 56
+  },
+  {
+    "id": "z_lig_pisohamate_ligament_L",
+    "source": "Pisohamate ligament.l",
+    "before": {
+      "Hamate bone.l": {
+        "samples": 3,
+        "max_depth_mm": 0.3548
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 1.186,
+    "vertices": 642,
+    "contact_candidate_vertices": 68
+  },
+  {
+    "id": "z_lig_pisohamate_ligament_R",
+    "source": "Pisohamate ligament.r",
+    "before": {
+      "Hamate bone.r": {
+        "samples": 3,
+        "max_depth_mm": 0.3548
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 1.186,
+    "vertices": 642,
+    "contact_candidate_vertices": 68
+  },
+  {
+    "id": "z_lig_pisometacarpal_ligament_L",
+    "source": "Pisometacarpal ligament.l",
+    "before": {
+      "Pisiform bone.l": {
+        "samples": 6,
+        "max_depth_mm": 0.7444
+      },
+      "Fifth metacarpal bone.l": {
+        "samples": 6,
+        "max_depth_mm": 1.1673
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 1.196,
+    "vertices": 642,
+    "contact_candidate_vertices": 43
+  },
+  {
+    "id": "z_lig_pisometacarpal_ligament_R",
+    "source": "Pisometacarpal ligament.r",
+    "before": {
+      "Pisiform bone.r": {
+        "samples": 6,
+        "max_depth_mm": 0.6701
+      },
+      "Fifth metacarpal bone.r": {
+        "samples": 6,
+        "max_depth_mm": 0.7841
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 1.018,
+    "vertices": 642,
+    "contact_candidate_vertices": 43
+  },
+  {
+    "id": "z_lig_pisotriquetral_ligament_L",
+    "source": "Pisotriquetral ligament.l",
+    "before": {
+      "Triquetrum bone.l": {
+        "samples": 97,
+        "max_depth_mm": 0.5885
+      },
+      "Pisiform bone.l": {
+        "samples": 103,
+        "max_depth_mm": 0.6617
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 1.012,
+    "vertices": 5960,
+    "contact_candidate_vertices": 705
+  },
+  {
+    "id": "z_lig_pisotriquetral_ligament_R",
+    "source": "Pisotriquetral ligament.r",
+    "before": {
+      "Triquetrum bone.r": {
+        "samples": 97,
+        "max_depth_mm": 0.5885
+      },
+      "Pisiform bone.r": {
+        "samples": 103,
+        "max_depth_mm": 0.6617
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 1.012,
+    "vertices": 5960,
+    "contact_candidate_vertices": 705
+  },
+  {
+    "id": "z_lig_radial_collateral_ligament_of_wrist_joint_L",
+    "source": "Radial collateral ligament of wrist joint.l",
+    "before": {
+      "Radius.l": {
+        "samples": 20,
+        "max_depth_mm": 0.8838
+      },
+      "Scaphoid bone.l": {
+        "samples": 9,
+        "max_depth_mm": 0.6551
+      },
+      "Trapezium bone.l": {
+        "samples": 24,
+        "max_depth_mm": 1.3251
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 1.498,
+    "vertices": 3425,
+    "contact_candidate_vertices": 168
+  },
+  {
+    "id": "z_lig_radial_collateral_ligament_of_wrist_joint_R",
+    "source": "Radial collateral ligament of wrist joint.r",
+    "before": {
+      "Radius.r": {
+        "samples": 20,
+        "max_depth_mm": 0.8838
+      },
+      "Scaphoid bone.r": {
+        "samples": 9,
+        "max_depth_mm": 0.6551
+      },
+      "Trapezium bone.r": {
+        "samples": 24,
+        "max_depth_mm": 1.3251
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 1.498,
+    "vertices": 3425,
+    "contact_candidate_vertices": 168
+  },
+  {
+    "id": "z_lig_radiate_carpal_ligament_L",
+    "source": "Radiate carpal ligament.l",
+    "before": {
+      "Scaphoid bone.l": {
+        "samples": 13,
+        "max_depth_mm": 0.9898
+      },
+      "Lunate bone.l": {
+        "samples": 14,
+        "max_depth_mm": 0.3923
+      },
+      "Trapezium bone.l": {
+        "samples": 10,
+        "max_depth_mm": 0.9897
+      },
+      "Trapezoid bone.l": {
+        "samples": 21,
+        "max_depth_mm": 0.7523
+      },
+      "Capitate bone.l": {
+        "samples": 5,
+        "max_depth_mm": 0.4293
+      },
+      "Hamate bone.l": {
+        "samples": 13,
+        "max_depth_mm": 0.5184
+      },
+      "Second metacarpal bone.l": {
+        "samples": 9,
+        "max_depth_mm": 0.6989
+      },
+      "Third metacarpal bone.l": {
+        "samples": 9,
+        "max_depth_mm": 0.7926
+      },
+      "Fourth metacarpal bone.l": {
+        "samples": 15,
+        "max_depth_mm": 1.4981
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 1.404,
+    "vertices": 10274,
+    "contact_candidate_vertices": 346
+  },
+  {
+    "id": "z_lig_radiate_carpal_ligament_R",
+    "source": "Radiate carpal ligament.r",
+    "before": {
+      "Scaphoid bone.r": {
+        "samples": 13,
+        "max_depth_mm": 0.9897
+      },
+      "Lunate bone.r": {
+        "samples": 14,
+        "max_depth_mm": 0.3923
+      },
+      "Trapezium bone.r": {
+        "samples": 10,
+        "max_depth_mm": 0.9896
+      },
+      "Trapezoid bone.r": {
+        "samples": 21,
+        "max_depth_mm": 0.7523
+      },
+      "Capitate bone.r": {
+        "samples": 5,
+        "max_depth_mm": 0.4293
+      },
+      "Hamate bone.r": {
+        "samples": 13,
+        "max_depth_mm": 0.5184
+      },
+      "Second metacarpal bone.r": {
+        "samples": 9,
+        "max_depth_mm": 0.6988
+      },
+      "Third metacarpal bone.r": {
+        "samples": 9,
+        "max_depth_mm": 0.7926
+      },
+      "Fourth metacarpal bone.r": {
+        "samples": 15,
+        "max_depth_mm": 1.4981
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 1.404,
+    "vertices": 10274,
+    "contact_candidate_vertices": 346
+  },
+  {
+    "id": "z_lig_radiocapitate_ligament_L",
+    "source": "Radiocapitate ligament.l",
+    "before": {
+      "Capitate bone.l": {
+        "samples": 4,
+        "max_depth_mm": 0.6066
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 1.097,
+    "vertices": 642,
+    "contact_candidate_vertices": 30
+  },
+  {
+    "id": "z_lig_radiocapitate_ligament_R",
+    "source": "Radiocapitate ligament.r",
+    "before": {
+      "Capitate bone.r": {
+        "samples": 4,
+        "max_depth_mm": 0.6066
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 1.097,
+    "vertices": 642,
+    "contact_candidate_vertices": 30
+  },
+  {
+    "id": "z_lig_radioscaphocapitate_ligament_L",
+    "source": "Radioscaphocapitate ligament.l",
+    "before": {
+      "Radius.l": {
+        "samples": 5,
+        "max_depth_mm": 0.9761
+      },
+      "Capitate bone.l": {
+        "samples": 4,
+        "max_depth_mm": 0.5214
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 1.185,
+    "vertices": 1218,
+    "contact_candidate_vertices": 80
+  },
+  {
+    "id": "z_lig_radioscaphocapitate_ligament_R",
+    "source": "Radioscaphocapitate ligament.r",
+    "before": {
+      "Radius.r": {
+        "samples": 5,
+        "max_depth_mm": 0.9761
+      },
+      "Capitate bone.r": {
+        "samples": 4,
+        "max_depth_mm": 0.5214
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 1.186,
+    "vertices": 1218,
+    "contact_candidate_vertices": 80
+  },
+  {
+    "id": "z_lig_scaphocapitate_ligament_L",
+    "source": "Scaphocapitate ligament.l",
+    "before": {
+      "Scaphoid bone.l": {
+        "samples": 3,
+        "max_depth_mm": 0.7552
+      },
+      "Capitate bone.l": {
+        "samples": 5,
+        "max_depth_mm": 1.0872
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 1.111,
+    "vertices": 642,
+    "contact_candidate_vertices": 56
+  },
+  {
+    "id": "z_lig_scaphocapitate_ligament_R",
+    "source": "Scaphocapitate ligament.r",
+    "before": {
+      "Scaphoid bone.r": {
+        "samples": 5,
+        "max_depth_mm": 0.851
+      },
+      "Capitate bone.r": {
+        "samples": 4,
+        "max_depth_mm": 0.6735
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 0.905,
+    "vertices": 642,
+    "contact_candidate_vertices": 56
+  },
+  {
+    "id": "z_lig_scapholunate_interosseous_ligament_L",
+    "source": "Scapholunate interosseous ligament.l",
+    "before": {
+      "Scaphoid bone.l": {
+        "samples": 7,
+        "max_depth_mm": 0.5283
+      },
+      "Lunate bone.l": {
+        "samples": 5,
+        "max_depth_mm": 0.5164
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 0.615,
+    "vertices": 642,
+    "contact_candidate_vertices": 79
+  },
+  {
+    "id": "z_lig_scapholunate_interosseous_ligament_R",
+    "source": "Scapholunate interosseous ligament.r",
+    "before": {
+      "Scaphoid bone.r": {
+        "samples": 7,
+        "max_depth_mm": 0.5282
+      },
+      "Lunate bone.r": {
+        "samples": 5,
+        "max_depth_mm": 0.5164
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 0.615,
+    "vertices": 642,
+    "contact_candidate_vertices": 79
+  },
+  {
+    "id": "z_lig_scaphotrapeziotrapezoidal_ligament_L",
+    "source": "Scaphotrapeziotrapezoidal ligament.l",
+    "before": {
+      "Scaphoid bone.l": {
+        "samples": 8,
+        "max_depth_mm": 0.457
+      },
+      "Trapezium bone.l": {
+        "samples": 23,
+        "max_depth_mm": 0.4752
+      },
+      "Trapezoid bone.l": {
+        "samples": 17,
+        "max_depth_mm": 0.9488
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 1.121,
+    "vertices": 3458,
+    "contact_candidate_vertices": 244
+  },
+  {
+    "id": "z_lig_scaphotrapeziotrapezoidal_ligament_R",
+    "source": "Scaphotrapeziotrapezoidal ligament.r",
+    "before": {
+      "Scaphoid bone.r": {
+        "samples": 8,
+        "max_depth_mm": 0.457
+      },
+      "Trapezium bone.r": {
+        "samples": 23,
+        "max_depth_mm": 0.4752
+      },
+      "Trapezoid bone.r": {
+        "samples": 17,
+        "max_depth_mm": 0.9488
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 1.121,
+    "vertices": 3458,
+    "contact_candidate_vertices": 244
+  },
+  {
+    "id": "z_lig_trapeziotrapezoidal_interosseous_ligament_L",
+    "source": "Trapeziotrapezoidal interosseous ligament.l",
+    "before": {
+      "Trapezium bone.l": {
+        "samples": 10,
+        "max_depth_mm": 1.172
+      },
+      "Trapezoid bone.l": {
+        "samples": 6,
+        "max_depth_mm": 0.7437
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 1.199,
+    "vertices": 642,
+    "contact_candidate_vertices": 78
+  },
+  {
+    "id": "z_lig_trapeziotrapezoidal_interosseous_ligament_R",
+    "source": "Trapeziotrapezoidal interosseous ligament.r",
+    "before": {
+      "Trapezium bone.r": {
+        "samples": 10,
+        "max_depth_mm": 1.1719
+      },
+      "Trapezoid bone.r": {
+        "samples": 6,
+        "max_depth_mm": 0.7437
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 1.199,
+    "vertices": 642,
+    "contact_candidate_vertices": 78
+  },
+  {
+    "id": "z_lig_trapezoideocapitate_interosseous_ligament_L",
+    "source": "Trapezoideocapitate interosseous ligament.l",
+    "before": {
+      "Trapezoid bone.l": {
+        "samples": 5,
+        "max_depth_mm": 1.0833
+      },
+      "Capitate bone.l": {
+        "samples": 9,
+        "max_depth_mm": 1.7375
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 1.901,
+    "vertices": 642,
+    "contact_candidate_vertices": 52
+  },
+  {
+    "id": "z_lig_trapezoideocapitate_interosseous_ligament_R",
+    "source": "Trapezoideocapitate interosseous ligament.r",
+    "before": {
+      "Trapezoid bone.r": {
+        "samples": 5,
+        "max_depth_mm": 1.0832
+      },
+      "Capitate bone.r": {
+        "samples": 9,
+        "max_depth_mm": 1.7375
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 1.901,
+    "vertices": 642,
+    "contact_candidate_vertices": 52
+  },
+  {
+    "id": "z_lig_triquetrocapitate_ligament_L",
+    "source": "Triquetrocapitate ligament.l",
+    "before": {
+      "Triquetrum bone.l": {
+        "samples": 6,
+        "max_depth_mm": 0.8971
+      },
+      "Capitate bone.l": {
+        "samples": 6,
+        "max_depth_mm": 0.5608
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 1.109,
+    "vertices": 1218,
+    "contact_candidate_vertices": 88
+  },
+  {
+    "id": "z_lig_triquetrocapitate_ligament_R",
+    "source": "Triquetrocapitate ligament.r",
+    "before": {
+      "Triquetrum bone.r": {
+        "samples": 6,
+        "max_depth_mm": 0.8971
+      },
+      "Capitate bone.r": {
+        "samples": 6,
+        "max_depth_mm": 0.5607
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 1.109,
+    "vertices": 1218,
+    "contact_candidate_vertices": 88
+  },
+  {
+    "id": "z_lig_triquetrohamate_ligament_L",
+    "source": "Triquetrohamate ligament.l",
+    "before": {
+      "Triquetrum bone.l": {
+        "samples": 6,
+        "max_depth_mm": 0.6443
+      },
+      "Hamate bone.l": {
+        "samples": 6,
+        "max_depth_mm": 0.6733
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 1.205,
+    "vertices": 642,
+    "contact_candidate_vertices": 56
+  },
+  {
+    "id": "z_lig_triquetrohamate_ligament_R",
+    "source": "Triquetrohamate ligament.r",
+    "before": {
+      "Triquetrum bone.r": {
+        "samples": 6,
+        "max_depth_mm": 0.6443
+      },
+      "Hamate bone.r": {
+        "samples": 6,
+        "max_depth_mm": 0.6732
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 1.205,
+    "vertices": 642,
+    "contact_candidate_vertices": 56
+  },
+  {
+    "id": "z_lig_ulnar_collateral_ligament_of_wrist_joint_L",
+    "source": "Ulnar collateral ligament of wrist joint.l",
+    "before": {
+      "Ulna.l": {
+        "samples": 17,
+        "max_depth_mm": 0.6878
+      },
+      "Triquetrum bone.l": {
+        "samples": 11,
+        "max_depth_mm": 0.584
+      },
+      "Pisiform bone.l": {
+        "samples": 6,
+        "max_depth_mm": 0.5043
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 1.186,
+    "vertices": 2946,
+    "contact_candidate_vertices": 129
+  },
+  {
+    "id": "z_lig_ulnar_collateral_ligament_of_wrist_joint_R",
+    "source": "Ulnar collateral ligament of wrist joint.r",
+    "before": {
+      "Ulna.r": {
+        "samples": 17,
+        "max_depth_mm": 0.6878
+      },
+      "Triquetrum bone.r": {
+        "samples": 11,
+        "max_depth_mm": 0.5841
+      },
+      "Pisiform bone.r": {
+        "samples": 6,
+        "max_depth_mm": 0.5043
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 1.186,
+    "vertices": 2946,
+    "contact_candidate_vertices": 129
+  },
+  {
+    "id": "z_lig_ulnolunate_ligament_L",
+    "source": "Ulnolunate ligament.l",
+    "before": {
+      "Ulna.l": {
+        "samples": 1,
+        "max_depth_mm": 0.3134
+      },
+      "Scaphoid bone.l": {
+        "samples": 27,
+        "max_depth_mm": 3.3962
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 3.525,
+    "vertices": 3012,
+    "contact_candidate_vertices": 59
+  },
+  {
+    "id": "z_lig_ulnolunate_ligament_R",
+    "source": "Ulnolunate ligament.r",
+    "before": {
+      "Ulna.r": {
+        "samples": 40,
+        "max_depth_mm": 1.06
+      },
+      "Scaphoid bone.r": {
+        "samples": 12,
+        "max_depth_mm": 0.8487
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 1.198,
+    "vertices": 2370,
+    "contact_candidate_vertices": 139
+  },
+  {
+    "id": "z_lig_ulnopisiform_ligament_L",
+    "source": "Ulnopisiform ligament.l",
+    "before": {
+      "Triquetrum bone.l": {
+        "samples": 3,
+        "max_depth_mm": 1.2198
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 0.588,
+    "vertices": 642,
+    "contact_candidate_vertices": 11
+  },
+  {
+    "id": "z_lig_ulnotriquetral_ligament_L",
+    "source": "Ulnotriquetral ligament.l",
+    "before": {
+      "Triquetrum bone.l": {
+        "samples": 13,
+        "max_depth_mm": 1.2977
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 1.17,
+    "vertices": 1218,
+    "contact_candidate_vertices": 43
+  },
+  {
+    "id": "z_lig_ulnotriquetral_ligament_R",
+    "source": "Ulnotriquetral ligament.r",
+    "before": {
+      "Ulna.r": {
+        "samples": 9,
+        "max_depth_mm": 0.6382
+      },
+      "Triquetrum bone.r": {
+        "samples": 18,
+        "max_depth_mm": 1.4208
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 1.064,
+    "vertices": 1218,
+    "contact_candidate_vertices": 51
+  },
+  {
+    "id": "z_lig_ulnocapitate_ligament_L",
+    "source": "Ulnocapitate ligament.l",
+    "before": {
+      "Lunate bone.l": {
+        "samples": 15,
+        "max_depth_mm": 2.1888
+      },
+      "Capitate bone.l": {
+        "samples": 34,
+        "max_depth_mm": 4.8699
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 0.958,
+    "vertices": 10082,
+    "contact_candidate_vertices": 0
+  },
+  {
+    "id": "z_lig_ulnocapitate_ligament_R",
+    "source": "Ulnocapitate ligament.r",
+    "before": {
+      "Ulna.r": {
+        "samples": 43,
+        "max_depth_mm": 1.4485
+      },
+      "Capitate bone.r": {
+        "samples": 15,
+        "max_depth_mm": 2.1318
+      }
+    },
+    "after": {},
+    "max_surface_displacement_mm": 0.165,
+    "vertices": 10082,
+    "contact_candidate_vertices": 0
+  }
+]

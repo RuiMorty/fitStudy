@@ -4,16 +4,19 @@ R=Path(__file__).resolve().parent;P=R.parent;W=P.parent.parent/'skeleton-workben
 for m in materials:
  if m['cartilage_faces']:bybone[m['bone_id']].append(m)
 plan=json.loads((P/'全身关节层台账.json').read_text());exported={};excluded={}
-for file in ['joints','connections']:
+for file in ['joints','connections','ligament-library','repaired-disc','nuclei']:
  data=json.loads((W/'z-anatomy-candidate'/ (file+'.json')).read_text())
- for x in data['objects']:exported[x['id']]={'file':'z-anatomy-candidate/'+file+'.json','source_object':x['source_structure_id']}
+ for x in data['objects']:exported[x['id']]={'file':'z-anatomy-candidate/'+file+'.json','source_object':x['source_structure_id'],'split_seams':x.get('topology_status')=='split_seams_pending_review'}
  for x in data.get('excluded',[]):excluded[x['id']]=x
+patches=json.loads((W/'z-anatomy-candidate/major-joint-surfaces.json').read_text())['objects']
 records=[]
 for r in plan['objects']:
  id=r['id'];sources=[];reason=''
- if id in exported:decision='extracted_candidate';sources=[exported[id]];reason='已接入源坐标候选，非解剖验收。'
+ if id in exported:decision='extracted_split_seam_candidate' if exported[id]['split_seams'] else 'extracted_candidate';sources=[exported[id]];reason='已接入候选；分叉共边已拆缝，未移动源顶点或删面，接缝连续性待审核。' if exported[id]['split_seams'] else '已接入候选，非解剖验收。'
  elif id in excluded:decision='excluded_duplicate_component' if r['tissue_type']=='nucleus_pulposus' else 'repair_geometry_first';sources=[excluded[id]];reason=excluded[id]['reason']
  elif r['tissue_type']=='annulus_fibrosus':decision='inspect_component_inside_disc';sources=[{'source_object':'Intervertebral disc '+id.removeprefix('annulus_'),'separate_object_found':False}];reason='全对象名、材质和顶点组索引未建立独立纤维环映射；需检查整体盘与髓核边界，不能直接相减生成。'
+ elif r['tissue_type']=='articular_surface_covering' and (matched:=[p for p in patches if p['joint_region']!='其他' and set(p['bone_ids'])&set(r['bone_ids']) and set(p['joint_or_connection_ids'])&set(r['connection_ids'])]):
+  decision='segmented_surface_candidate';sources=[{'model_id':p['id'],'granularity':p['granularity']} for p in matched];reason='已从源材质面拆出相应关节分区，无新增厚度，边界待审核。'+('包含跨子关节复合区，尚未按子关节细分。' if any(p['granularity']=='compound_surface_patch' for p in matched) else '')
  elif r['tissue_type'] in ['articular_surface_covering','cartilaginous_endplate'] and any(b in bybone for b in r['bone_ids']):
   decision='bone_material_partition_candidate';sources=[m for b in r['bone_ids'] for m in bybone[b]];reason='相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。'
  else:
@@ -28,8 +31,8 @@ for r in plan['objects']:
  records.append({'id':id,'name_zh':r['name_zh'],'region':r['region'],'tissue_type':r['tissue_type'],'decision':decision,'reason':reason,'evidence':sources,'anatomy_review':'pending'})
 counts=dict(collections.Counter(r['decision'] for r in records));result={'scope':'local complete object inventory and rule-based resource triage; not anatomical validation or exhaustive external search','source_sha256':source['source_sha256'],'source_objects':len(objects),'plan_records':len(records),'summary':counts,'records':records}
 (P/'剩余资源处置台账.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
-labels={'extracted_candidate':'已提取候选','excluded_duplicate_component':'避免重复叠加','repair_geometry_first':'先修几何','inspect_component_inside_disc':'核对整体盘内组成','bone_material_partition_candidate':'骨网格材质分区候选','additional_named_mesh_candidate':'新增有面对象待核对','labels_or_guides_only':'只有标注/辅助对象','reference_and_boundary_work_required':'需参考与边界核查'}
+labels={'extracted_split_seam_candidate':'拆缝候选待审核','segmented_surface_candidate':'已拆分表面候选','extracted_candidate':'已提取候选','excluded_duplicate_component':'避免重复叠加','repair_geometry_first':'先修几何','inspect_component_inside_disc':'核对整体盘内组成','bone_material_partition_candidate':'骨网格材质分区候选','additional_named_mesh_candidate':'新增有面对象待核对','labels_or_guides_only':'只有标注/辅助对象','reference_and_boundary_work_required':'需参考与边界核查'}
 with (P/'剩余资源处置台账.csv').open('w',encoding='utf-8-sig',newline='') as f:
- writer=csv.writer(f);writer.writerow(['ID','名称','区域','处置类别','说明'])
+ writer=csv.writer(f,lineterminator="\n");writer.writerow(['ID','名称','区域','处置类别','说明'])
  for r in records:writer.writerow([r['id'],r['name_zh'],r['region'],labels[r['decision']],r['reason']])
 print(json.dumps(counts,ensure_ascii=False,indent=2))

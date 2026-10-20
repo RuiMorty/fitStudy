@@ -1,0 +1,1076 @@
+{
+  "scope": "hip",
+  "structures": [
+    {
+      "id": "z_lig_transverse_part_of_iliofemoral_ligament_R",
+      "name_zh": "右髂股韧带横部",
+      "name_en": "Transverse part of iliofemoral ligament.r",
+      "side": "R",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_femur_R",
+        "bone_hip_R"
+      ],
+      "joint_or_connection_ids": [
+        "hip_R"
+      ],
+      "source_structure_id": "Transverse part of iliofemoral ligament.r",
+      "source_dataset": "Z-Anatomy",
+      "triangles": 464,
+      "note": "沿用原配坐标；依据源父级归入区域目录，关联骨不是精确起止点。附着范围、局部穿插及源组合对象的拆分尚待审核。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Hip joint.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        -0.10673752427101135,
+        0.8603626489639282,
+        0.00836359802633524
+      ],
+      "group": "capsular",
+      "context_bones": [
+        "Hip",
+        "Femur"
+      ],
+      "landmark_names": [
+        "髂前下棘",
+        "转子间线"
+      ],
+      "references": [
+        {
+          "title": "TeachMeAnatomy · The Hip Joint（区域概述，非模型足印验收）",
+          "url": "https://teachmeanatomy.info/lower-limb/joints/hip-joint/",
+          "quote": "arises from the anterior inferior iliac spine and then bifurcates before inserting into the intertrochanteric line of the femur."
+        }
+      ],
+      "origin": "髂前下棘区域（整条髂股韧带的文献概述；本源对象单束足印待核对）",
+      "insertion": "股骨转子间线区域；横部、降部各自范围不能用整条描述代替。",
+      "shape": "整体呈 Y 形、分叉；源模型拆为横部和降部。",
+      "comparison": "仅源端部区域顺应指定骨面，末端约 0.18–0.32 mm 浅嵌入并渐变衔接，中间段位置不变。嵌入为显示处理，不是组织学深度；具体足印仍待核准。",
+      "limitations": "源模型可供比较，不代表解剖准确；足印、穿插和动态长度尚未验收。 骨性标志及柔边色块只帮助定位，不是完整韧带附着区。",
+      "evidence_status": "reference_checked",
+      "context_tissues": [],
+      "geometry_review": "static_flags_not_anatomical_acceptance",
+      "geometry_revision": "local-attachment-display-v1"
+    },
+    {
+      "id": "z_lig_transverse_part_of_iliofemoral_ligament_L",
+      "name_zh": "左髂股韧带横部",
+      "name_en": "Transverse part of iliofemoral ligament.l",
+      "side": "L",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_femur_L",
+        "bone_hip_L"
+      ],
+      "joint_or_connection_ids": [
+        "hip_L"
+      ],
+      "source_structure_id": "Transverse part of iliofemoral ligament.l",
+      "source_dataset": "Z-Anatomy",
+      "triangles": 464,
+      "note": "沿用原配坐标；依据源父级归入区域目录，关联骨不是精确起止点。附着范围、局部穿插及源组合对象的拆分尚待审核。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Hip joint.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        0.10673754662275314,
+        0.8603626489639282,
+        0.00836359802633524
+      ],
+      "group": "capsular",
+      "context_bones": [
+        "Hip",
+        "Femur"
+      ],
+      "landmark_names": [
+        "髂前下棘",
+        "转子间线"
+      ],
+      "references": [
+        {
+          "title": "TeachMeAnatomy · The Hip Joint（区域概述，非模型足印验收）",
+          "url": "https://teachmeanatomy.info/lower-limb/joints/hip-joint/",
+          "quote": "arises from the anterior inferior iliac spine and then bifurcates before inserting into the intertrochanteric line of the femur."
+        }
+      ],
+      "origin": "髂前下棘区域（整条髂股韧带的文献概述；本源对象单束足印待核对）",
+      "insertion": "股骨转子间线区域；横部、降部各自范围不能用整条描述代替。",
+      "shape": "整体呈 Y 形、分叉；源模型拆为横部和降部。",
+      "comparison": "仅源端部区域顺应指定骨面，末端约 0.18–0.32 mm 浅嵌入并渐变衔接，中间段位置不变。嵌入为显示处理，不是组织学深度；具体足印仍待核准。",
+      "limitations": "源模型可供比较，不代表解剖准确；足印、穿插和动态长度尚未验收。 骨性标志及柔边色块只帮助定位，不是完整韧带附着区。",
+      "evidence_status": "reference_checked",
+      "context_tissues": [],
+      "geometry_review": "static_flags_not_anatomical_acceptance",
+      "geometry_revision": "local-attachment-display-v1"
+    },
+    {
+      "id": "z_lig_transverse_acetabular_ligament_R",
+      "name_zh": "右髋臼横韧带",
+      "name_en": "Transverse acetabular ligament.r",
+      "side": "R",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_femur_R",
+        "bone_hip_R"
+      ],
+      "joint_or_connection_ids": [
+        "hip_R"
+      ],
+      "source_structure_id": "Transverse acetabular ligament.r",
+      "source_dataset": "Z-Anatomy",
+      "triangles": 568,
+      "note": "沿用原配坐标；依据源父级归入区域目录，关联骨不是精确起止点。附着范围、局部穿插及源组合对象的拆分尚待审核。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Hip joint.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        -0.0615168958902359,
+        0.8481132984161377,
+        -0.003218183759599924
+      ],
+      "group": "intra",
+      "context_bones": [
+        "Hip",
+        "Femur"
+      ],
+      "landmark_names": [
+        "髋臼切迹"
+      ],
+      "references": [],
+      "origin": "该源对象的精确附着区域尚未关联已核对文献。",
+      "insertion": "待核对，不使用最近骨面或对象名称自动填充。",
+      "shape": "保留 Z-Anatomy 原模型及原始配准；形状、厚度与分束待审核。",
+      "comparison": "仅源端部区域顺应指定骨面，末端约 0.18–0.32 mm 浅嵌入并渐变衔接，中间段位置不变。嵌入为显示处理，不是组织学深度；具体足印仍待核准。",
+      "limitations": "源模型可供比较，不代表解剖准确；足印、穿插和动态长度尚未验收。 骨性标志及柔边色块只帮助定位，不是完整韧带附着区。",
+      "evidence_status": "missing",
+      "context_tissues": [],
+      "geometry_review": "static_flags_not_anatomical_acceptance",
+      "geometry_revision": "local-attachment-display-v1"
+    },
+    {
+      "id": "z_lig_transverse_acetabular_ligament_L",
+      "name_zh": "左髋臼横韧带",
+      "name_en": "Transverse acetabular ligament.l",
+      "side": "L",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_femur_L",
+        "bone_hip_L"
+      ],
+      "joint_or_connection_ids": [
+        "hip_L"
+      ],
+      "source_structure_id": "Transverse acetabular ligament.l",
+      "source_dataset": "Z-Anatomy",
+      "triangles": 568,
+      "note": "沿用原配坐标；依据源父级归入区域目录，关联骨不是精确起止点。附着范围、局部穿插及源组合对象的拆分尚待审核。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Hip joint.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        0.06151692941784859,
+        0.8481132984161377,
+        -0.003218183759599924
+      ],
+      "group": "intra",
+      "context_bones": [
+        "Hip",
+        "Femur"
+      ],
+      "landmark_names": [
+        "髋臼切迹"
+      ],
+      "references": [],
+      "origin": "该源对象的精确附着区域尚未关联已核对文献。",
+      "insertion": "待核对，不使用最近骨面或对象名称自动填充。",
+      "shape": "保留 Z-Anatomy 原模型及原始配准；形状、厚度与分束待审核。",
+      "comparison": "仅源端部区域顺应指定骨面，末端约 0.18–0.32 mm 浅嵌入并渐变衔接，中间段位置不变。嵌入为显示处理，不是组织学深度；具体足印仍待核准。",
+      "limitations": "源模型可供比较，不代表解剖准确；足印、穿插和动态长度尚未验收。 骨性标志及柔边色块只帮助定位，不是完整韧带附着区。",
+      "evidence_status": "missing",
+      "context_tissues": [],
+      "geometry_review": "static_flags_not_anatomical_acceptance",
+      "geometry_revision": "local-attachment-display-v1"
+    },
+    {
+      "id": "z_lig_pubofemoral_ligament_R",
+      "name_zh": "右耻股韧带",
+      "name_en": "Pubofemoral ligament.r",
+      "side": "R",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_femur_R",
+        "bone_hip_R"
+      ],
+      "joint_or_connection_ids": [
+        "hip_R"
+      ],
+      "source_structure_id": "Pubofemoral ligament.r",
+      "source_dataset": "Z-Anatomy",
+      "triangles": 392,
+      "note": "沿用原配坐标；依据源父级归入区域目录，关联骨不是精确起止点。附着范围、局部穿插及源组合对象的拆分尚待审核。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Hip joint.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        -0.07709437608718872,
+        0.8234089612960815,
+        -0.00011663268378470093
+      ],
+      "group": "capsular",
+      "context_bones": [
+        "Hip",
+        "Femur"
+      ],
+      "landmark_names": [
+        "耻骨上支",
+        "转子间线"
+      ],
+      "references": [
+        {
+          "title": "TeachMeAnatomy · The Hip Joint（区域概述，非模型足印验收）",
+          "url": "https://teachmeanatomy.info/lower-limb/joints/hip-joint/",
+          "quote": "spans between the superior pubic rami and the intertrochanteric line of the femur, reinforcing the capsule anteriorly and inferiorly."
+        }
+      ],
+      "origin": "耻骨上支区域。",
+      "insertion": "股骨转子间线区域，与前下方关节囊融合；精确纤维终止范围待核对。",
+      "shape": "三角形，强化关节囊前下方。",
+      "comparison": "仅源端部区域顺应指定骨面，末端约 0.18–0.32 mm 浅嵌入并渐变衔接，中间段位置不变。嵌入为显示处理，不是组织学深度；具体足印仍待核准。",
+      "limitations": "源模型可供比较，不代表解剖准确；足印、穿插和动态长度尚未验收。 骨性标志及柔边色块只帮助定位，不是完整韧带附着区。",
+      "evidence_status": "reference_checked",
+      "context_tissues": [],
+      "geometry_review": "static_flags_not_anatomical_acceptance",
+      "geometry_revision": "local-attachment-display-v1"
+    },
+    {
+      "id": "z_lig_pubofemoral_ligament_L",
+      "name_zh": "左耻股韧带",
+      "name_en": "Pubofemoral ligament.l",
+      "side": "L",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_femur_L",
+        "bone_hip_L"
+      ],
+      "joint_or_connection_ids": [
+        "hip_L"
+      ],
+      "source_structure_id": "Pubofemoral ligament.l",
+      "source_dataset": "Z-Anatomy",
+      "triangles": 392,
+      "note": "沿用原配坐标；依据源父级归入区域目录，关联骨不是精确起止点。附着范围、局部穿插及源组合对象的拆分尚待审核。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Hip joint.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        0.07709439843893051,
+        0.8234089612960815,
+        -0.00011663268378470093
+      ],
+      "group": "capsular",
+      "context_bones": [
+        "Hip",
+        "Femur"
+      ],
+      "landmark_names": [
+        "耻骨上支",
+        "转子间线"
+      ],
+      "references": [
+        {
+          "title": "TeachMeAnatomy · The Hip Joint（区域概述，非模型足印验收）",
+          "url": "https://teachmeanatomy.info/lower-limb/joints/hip-joint/",
+          "quote": "spans between the superior pubic rami and the intertrochanteric line of the femur, reinforcing the capsule anteriorly and inferiorly."
+        }
+      ],
+      "origin": "耻骨上支区域。",
+      "insertion": "股骨转子间线区域，与前下方关节囊融合；精确纤维终止范围待核对。",
+      "shape": "三角形，强化关节囊前下方。",
+      "comparison": "仅源端部区域顺应指定骨面，末端约 0.18–0.32 mm 浅嵌入并渐变衔接，中间段位置不变。嵌入为显示处理，不是组织学深度；具体足印仍待核准。",
+      "limitations": "源模型可供比较，不代表解剖准确；足印、穿插和动态长度尚未验收。 骨性标志及柔边色块只帮助定位，不是完整韧带附着区。",
+      "evidence_status": "reference_checked",
+      "context_tissues": [],
+      "geometry_review": "static_flags_not_anatomical_acceptance",
+      "geometry_revision": "local-attachment-display-v1"
+    },
+    {
+      "id": "z_lig_ligament_of_head_of_femur_R",
+      "name_zh": "右股骨头韧带",
+      "name_en": "Ligament of head of femur.r",
+      "side": "R",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_femur_R",
+        "bone_hip_R"
+      ],
+      "joint_or_connection_ids": [
+        "hip_R"
+      ],
+      "source_structure_id": "Ligament of head of femur.r",
+      "source_dataset": "Z-Anatomy",
+      "triangles": 780,
+      "note": "沿用原配坐标；依据源父级归入区域目录，关联骨不是精确起止点。附着范围、局部穿插及源组合对象的拆分尚待审核。 非流形共边已拆为重合边，保留全部原面与位置；新增接缝不代表真实解剖分界。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Hip joint.g",
+      "geometry_audit": {
+        "boundary_edges": 140,
+        "nonmanifold_edges": 140,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 14,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SUBSURF"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "split_seams_pending_review",
+      "rest_position_web_m": [
+        -0.06089932471513748,
+        0.8535468578338623,
+        -0.0036804787814617157
+      ],
+      "group": "intra",
+      "context_bones": [
+        "Hip",
+        "Femur"
+      ],
+      "landmark_names": [
+        "髋臼切迹",
+        "髋臼窝",
+        "股骨头凹"
+      ],
+      "references": [
+        {
+          "title": "TeachMeAnatomy · The Hip Joint（区域概述，非模型足印验收）",
+          "url": "https://teachmeanatomy.info/lower-limb/joints/hip-joint/",
+          "quote": "It is a relatively small structure, which runs from the acetabular fossa to the fovea of the femur."
+        }
+      ],
+      "origin": "髋臼窝区域（资料的区域概述，髋臼切迹及横韧带相关附着需进一步细分核对）。",
+      "insertion": "股骨头凹。",
+      "shape": "囊内结构，不能只用一条骨到骨直线概括。",
+      "comparison": "对开放韧带表面细分并轻度平顺，原边界锁定、内部顶点调整上限 0.15 mm；保留原厚度。 纤维纹理为显示示意，未移动端部追求贴骨。",
+      "limitations": "源模型可供比较，不代表解剖准确；足印、穿插和动态长度尚未验收。 骨性标志及柔边色块只帮助定位，不是完整韧带附着区。",
+      "evidence_status": "reference_checked",
+      "context_tissues": [],
+      "geometry_review": "static_flags_not_anatomical_acceptance"
+    },
+    {
+      "id": "z_lig_ligament_of_head_of_femur_L",
+      "name_zh": "左股骨头韧带",
+      "name_en": "Ligament of head of femur.l",
+      "side": "L",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_femur_L",
+        "bone_hip_L"
+      ],
+      "joint_or_connection_ids": [
+        "hip_L"
+      ],
+      "source_structure_id": "Ligament of head of femur.l",
+      "source_dataset": "Z-Anatomy",
+      "triangles": 780,
+      "note": "沿用原配坐标；依据源父级归入区域目录，关联骨不是精确起止点。附着范围、局部穿插及源组合对象的拆分尚待审核。 非流形共边已拆为重合边，保留全部原面与位置；新增接缝不代表真实解剖分界。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Hip joint.g",
+      "geometry_audit": {
+        "boundary_edges": 140,
+        "nonmanifold_edges": 140,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 14,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SUBSURF"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "split_seams_pending_review",
+      "rest_position_web_m": [
+        0.06089934706687927,
+        0.8535468578338623,
+        -0.0036804787814617157
+      ],
+      "group": "intra",
+      "context_bones": [
+        "Hip",
+        "Femur"
+      ],
+      "landmark_names": [
+        "髋臼切迹",
+        "髋臼窝",
+        "股骨头凹"
+      ],
+      "references": [
+        {
+          "title": "TeachMeAnatomy · The Hip Joint（区域概述，非模型足印验收）",
+          "url": "https://teachmeanatomy.info/lower-limb/joints/hip-joint/",
+          "quote": "It is a relatively small structure, which runs from the acetabular fossa to the fovea of the femur."
+        }
+      ],
+      "origin": "髋臼窝区域（资料的区域概述，髋臼切迹及横韧带相关附着需进一步细分核对）。",
+      "insertion": "股骨头凹。",
+      "shape": "囊内结构，不能只用一条骨到骨直线概括。",
+      "comparison": "对开放韧带表面细分并轻度平顺，原边界锁定、内部顶点调整上限 0.15 mm；保留原厚度。 纤维纹理为显示示意，未移动端部追求贴骨。",
+      "limitations": "源模型可供比较，不代表解剖准确；足印、穿插和动态长度尚未验收。 骨性标志及柔边色块只帮助定位，不是完整韧带附着区。",
+      "evidence_status": "reference_checked",
+      "context_tissues": [],
+      "geometry_review": "static_flags_not_anatomical_acceptance"
+    },
+    {
+      "id": "z_lig_ischiofemoral_ligament_R",
+      "name_zh": "右坐股韧带",
+      "name_en": "Ischiofemoral ligament.r",
+      "side": "R",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_femur_R",
+        "bone_hip_R"
+      ],
+      "joint_or_connection_ids": [
+        "hip_R"
+      ],
+      "source_structure_id": "Ischiofemoral ligament.r",
+      "source_dataset": "Z-Anatomy",
+      "triangles": 672,
+      "note": "沿用原配坐标；依据源父级归入区域目录，关联骨不是精确起止点。附着范围、局部穿插及源组合对象的拆分尚待审核。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Hip joint.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        -0.10140282660722733,
+        0.8548006415367126,
+        -0.02041216567158699
+      ],
+      "group": "capsular",
+      "context_bones": [
+        "Hip",
+        "Femur"
+      ],
+      "landmark_names": [
+        "坐骨体",
+        "大转子"
+      ],
+      "references": [
+        {
+          "title": "TeachMeAnatomy · The Hip Joint（区域概述，非模型足印验收）",
+          "url": "https://teachmeanatomy.info/lower-limb/joints/hip-joint/",
+          "quote": "spans between the body of the ischium and the greater trochanter of the femur, reinforcing the capsule posteriorly."
+        }
+      ],
+      "origin": "坐骨体区域。",
+      "insertion": "股骨大转子区域；具体足印及与囊融合边界待核对。",
+      "shape": "后侧螺旋走行。",
+      "comparison": "仅源端部区域顺应指定骨面，末端约 0.18–0.32 mm 浅嵌入并渐变衔接，中间段位置不变。嵌入为显示处理，不是组织学深度；具体足印仍待核准。",
+      "limitations": "源模型可供比较，不代表解剖准确；足印、穿插和动态长度尚未验收。 骨性标志及柔边色块只帮助定位，不是完整韧带附着区。",
+      "evidence_status": "reference_checked",
+      "context_tissues": [],
+      "geometry_review": "static_flags_not_anatomical_acceptance",
+      "geometry_revision": "local-attachment-display-v1"
+    },
+    {
+      "id": "z_lig_ischiofemoral_ligament_L",
+      "name_zh": "左坐股韧带",
+      "name_en": "Ischiofemoral ligament.l",
+      "side": "L",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_femur_L",
+        "bone_hip_L"
+      ],
+      "joint_or_connection_ids": [
+        "hip_L"
+      ],
+      "source_structure_id": "Ischiofemoral ligament.l",
+      "source_dataset": "Z-Anatomy",
+      "triangles": 672,
+      "note": "沿用原配坐标；依据源父级归入区域目录，关联骨不是精确起止点。附着范围、局部穿插及源组合对象的拆分尚待审核。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Hip joint.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        0.10140285640954971,
+        0.8548006415367126,
+        -0.02041216567158699
+      ],
+      "group": "capsular",
+      "context_bones": [
+        "Hip",
+        "Femur"
+      ],
+      "landmark_names": [
+        "坐骨体",
+        "大转子"
+      ],
+      "references": [
+        {
+          "title": "TeachMeAnatomy · The Hip Joint（区域概述，非模型足印验收）",
+          "url": "https://teachmeanatomy.info/lower-limb/joints/hip-joint/",
+          "quote": "spans between the body of the ischium and the greater trochanter of the femur, reinforcing the capsule posteriorly."
+        }
+      ],
+      "origin": "坐骨体区域。",
+      "insertion": "股骨大转子区域；具体足印及与囊融合边界待核对。",
+      "shape": "后侧螺旋走行。",
+      "comparison": "仅源端部区域顺应指定骨面，末端约 0.18–0.32 mm 浅嵌入并渐变衔接，中间段位置不变。嵌入为显示处理，不是组织学深度；具体足印仍待核准。",
+      "limitations": "源模型可供比较，不代表解剖准确；足印、穿插和动态长度尚未验收。 骨性标志及柔边色块只帮助定位，不是完整韧带附着区。",
+      "evidence_status": "reference_checked",
+      "context_tissues": [],
+      "geometry_review": "static_flags_not_anatomical_acceptance",
+      "geometry_revision": "local-attachment-display-v1"
+    },
+    {
+      "id": "z_lig_descending_part_of_iliofemoral_ligament_R",
+      "name_zh": "右髂股韧带降部",
+      "name_en": "Descending part of iliofemoral ligament.r",
+      "side": "R",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_femur_R",
+        "bone_hip_R"
+      ],
+      "joint_or_connection_ids": [
+        "hip_R"
+      ],
+      "source_structure_id": "Descending part of iliofemoral ligament.r",
+      "source_dataset": "Z-Anatomy",
+      "triangles": 608,
+      "note": "沿用原配坐标；依据源父级归入区域目录，关联骨不是精确起止点。附着范围、局部穿插及源组合对象的拆分尚待审核。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Hip joint.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        -0.09619532525539398,
+        0.8486502766609192,
+        0.009748425334692001
+      ],
+      "group": "capsular",
+      "context_bones": [
+        "Hip",
+        "Femur"
+      ],
+      "landmark_names": [
+        "髂前下棘",
+        "转子间线"
+      ],
+      "references": [
+        {
+          "title": "TeachMeAnatomy · The Hip Joint（区域概述，非模型足印验收）",
+          "url": "https://teachmeanatomy.info/lower-limb/joints/hip-joint/",
+          "quote": "arises from the anterior inferior iliac spine and then bifurcates before inserting into the intertrochanteric line of the femur."
+        }
+      ],
+      "origin": "髂前下棘区域（整条髂股韧带的文献概述；本源对象单束足印待核对）",
+      "insertion": "股骨转子间线区域；横部、降部各自范围不能用整条描述代替。",
+      "shape": "整体呈 Y 形、分叉；源模型拆为横部和降部。",
+      "comparison": "仅源端部区域顺应指定骨面，末端约 0.18–0.32 mm 浅嵌入并渐变衔接，中间段位置不变。嵌入为显示处理，不是组织学深度；具体足印仍待核准。",
+      "limitations": "源模型可供比较，不代表解剖准确；足印、穿插和动态长度尚未验收。 骨性标志及柔边色块只帮助定位，不是完整韧带附着区。",
+      "evidence_status": "reference_checked",
+      "context_tissues": [],
+      "geometry_review": "static_flags_not_anatomical_acceptance",
+      "geometry_revision": "local-attachment-display-v1"
+    },
+    {
+      "id": "z_lig_descending_part_of_iliofemoral_ligament_L",
+      "name_zh": "左髂股韧带降部",
+      "name_en": "Descending part of iliofemoral ligament.l",
+      "side": "L",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_femur_L",
+        "bone_hip_L"
+      ],
+      "joint_or_connection_ids": [
+        "hip_L"
+      ],
+      "source_structure_id": "Descending part of iliofemoral ligament.l",
+      "source_dataset": "Z-Anatomy",
+      "triangles": 608,
+      "note": "沿用原配坐标；依据源父级归入区域目录，关联骨不是精确起止点。附着范围、局部穿插及源组合对象的拆分尚待审核。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Hip joint.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        0.09619535505771637,
+        0.8486502766609192,
+        0.009748425334692001
+      ],
+      "group": "capsular",
+      "context_bones": [
+        "Hip",
+        "Femur"
+      ],
+      "landmark_names": [
+        "髂前下棘",
+        "转子间线"
+      ],
+      "references": [
+        {
+          "title": "TeachMeAnatomy · The Hip Joint（区域概述，非模型足印验收）",
+          "url": "https://teachmeanatomy.info/lower-limb/joints/hip-joint/",
+          "quote": "arises from the anterior inferior iliac spine and then bifurcates before inserting into the intertrochanteric line of the femur."
+        }
+      ],
+      "origin": "髂前下棘区域（整条髂股韧带的文献概述；本源对象单束足印待核对）",
+      "insertion": "股骨转子间线区域；横部、降部各自范围不能用整条描述代替。",
+      "shape": "整体呈 Y 形、分叉；源模型拆为横部和降部。",
+      "comparison": "仅源端部区域顺应指定骨面，末端约 0.18–0.32 mm 浅嵌入并渐变衔接，中间段位置不变。嵌入为显示处理，不是组织学深度；具体足印仍待核准。",
+      "limitations": "源模型可供比较，不代表解剖准确；足印、穿插和动态长度尚未验收。 骨性标志及柔边色块只帮助定位，不是完整韧带附着区。",
+      "evidence_status": "reference_checked",
+      "context_tissues": [],
+      "geometry_review": "static_flags_not_anatomical_acceptance",
+      "geometry_revision": "local-attachment-display-v1"
+    },
+    {
+      "id": "capsule_hip_L",
+      "name_zh": "左髋关节囊",
+      "name_en": "Articular capsule of hip joint.l",
+      "side": "L",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "capsule",
+      "tissue_type": "fibrous_capsule",
+      "bone_ids": [
+        "bone_hip_L",
+        "bone_femur_L"
+      ],
+      "joint_or_connection_ids": [
+        "hip_L"
+      ],
+      "source_structure_id": "Articular capsule of hip joint.l",
+      "source_dataset": "Z-Anatomy",
+      "triangles": 1120,
+      "note": "保留源坐标。关节囊开口、覆盖边界和韧带附着均待审核；关联骨只用于目录与展示。",
+      "granularity": "individual",
+      "geometry_audit": {
+        "boundary_edges": 140,
+        "nonmanifold_edges": 140,
+        "modifiers": [
+          "SUBSURF"
+        ]
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.09355995804071426,
+        0.851101815700531,
+        -0.005858052056282759
+      ],
+      "group": "capsule",
+      "context_bones": [
+        "Hip",
+        "Femur"
+      ],
+      "landmark_names": [
+        "髋臼缘",
+        "转子间线"
+      ],
+      "references": [
+        {
+          "title": "TeachMeAnatomy · The Hip Joint（区域概述，非模型足印验收）",
+          "url": "https://teachmeanatomy.info/lower-limb/joints/hip-joint/",
+          "quote": "The capsule of the hip joint attaches to the edge of the acetabulum proximally. Distally, it attaches to the intertrochanteric line anteriorly and the femoral neck posteriorly."
+        }
+      ],
+      "origin": "髋臼边缘。",
+      "insertion": "前方至转子间线，后方至股骨颈。",
+      "shape": "包绕关节的囊状结构；不应表示成两端韧带。",
+      "comparison": "关节囊仅在囊外韧带重叠邻域局部内退、平滑过渡；韧带网格及其骨面附着未改。显示分层不代表真实组织间隙，实际组织在此融合。",
+      "limitations": "源模型可供比较，不代表解剖准确；足印、穿插和动态长度尚未验收。 骨性标志及柔边色块只帮助定位，不是完整韧带附着区。",
+      "evidence_status": "reference_checked",
+      "assembly_review": "pending",
+      "context_tissues": [],
+      "geometry_review": "static_flags_not_anatomical_acceptance",
+      "geometry_revision": "capsule-overlap-v1"
+    },
+    {
+      "id": "capsule_hip_R",
+      "name_zh": "右髋关节囊",
+      "name_en": "Articular capsule of hip joint.r",
+      "side": "R",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "capsule",
+      "tissue_type": "fibrous_capsule",
+      "bone_ids": [
+        "bone_hip_R",
+        "bone_femur_R"
+      ],
+      "joint_or_connection_ids": [
+        "hip_R"
+      ],
+      "source_structure_id": "Articular capsule of hip joint.r",
+      "source_dataset": "Z-Anatomy",
+      "triangles": 1120,
+      "note": "保留源坐标。关节囊开口、覆盖边界和韧带附着均待审核；关联骨只用于目录与展示。",
+      "granularity": "individual",
+      "geometry_audit": {
+        "boundary_edges": 140,
+        "nonmanifold_edges": 140,
+        "modifiers": [
+          "SUBSURF"
+        ]
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.09355991333723068,
+        0.851101815700531,
+        -0.005858052056282759
+      ],
+      "group": "capsule",
+      "context_bones": [
+        "Hip",
+        "Femur"
+      ],
+      "landmark_names": [
+        "髋臼缘",
+        "转子间线"
+      ],
+      "references": [
+        {
+          "title": "TeachMeAnatomy · The Hip Joint（区域概述，非模型足印验收）",
+          "url": "https://teachmeanatomy.info/lower-limb/joints/hip-joint/",
+          "quote": "The capsule of the hip joint attaches to the edge of the acetabulum proximally. Distally, it attaches to the intertrochanteric line anteriorly and the femoral neck posteriorly."
+        }
+      ],
+      "origin": "髋臼边缘。",
+      "insertion": "前方至转子间线，后方至股骨颈。",
+      "shape": "包绕关节的囊状结构；不应表示成两端韧带。",
+      "comparison": "关节囊仅在囊外韧带重叠邻域局部内退、平滑过渡；韧带网格及其骨面附着未改。显示分层不代表真实组织间隙，实际组织在此融合。",
+      "limitations": "源模型可供比较，不代表解剖准确；足印、穿插和动态长度尚未验收。 骨性标志及柔边色块只帮助定位，不是完整韧带附着区。",
+      "evidence_status": "reference_checked",
+      "assembly_review": "pending",
+      "context_tissues": [],
+      "geometry_review": "static_flags_not_anatomical_acceptance",
+      "geometry_revision": "capsule-overlap-v1"
+    },
+    {
+      "id": "acetabular_labrum_L",
+      "name_zh": "左髋臼唇",
+      "name_en": "Acetabular labrum.l",
+      "side": "L",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "labrum",
+      "bone_ids": [
+        "bone_hip_L",
+        "bone_femur_L"
+      ],
+      "joint_or_connection_ids": [
+        "hip_L"
+      ],
+      "source_structure_id": "Acetabular labrum.l",
+      "source_dataset": "Z-Anatomy",
+      "triangles": 1408,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.0846511572599411,
+        0.8635421395301819,
+        -0.005490183364599943
+      ],
+      "group": "intra",
+      "context_bones": [
+        "Hip",
+        "Femur"
+      ],
+      "landmark_names": [
+        "髋臼缘"
+      ],
+      "references": [
+        {
+          "title": "TeachMeAnatomy · The Hip Joint（区域概述）",
+          "url": "https://teachmeanatomy.info/lower-limb/joints/hip-joint/",
+          "quote": "There is a horseshoe shaped fibrocartilaginous ring around the acetabulum which increases its depth, known as the"
+        }
+      ],
+      "origin": "沿髋臼周缘分布的纤维软骨环；不是具有两端起止的韧带。",
+      "insertion": "与髋臼横韧带的连续关系及具体结合边界，仍待专门资料核对。",
+      "shape": "马蹄形纤维软骨环，加深髋臼。",
+      "comparison": "保留该对象的原始几何；封闭网格及关节囊、半月板未套用开放韧带修形。 纤维纹理为显示示意，未移动端部追求贴骨。",
+      "limitations": "源模型可供比较，不代表解剖准确；足印、穿插和动态长度尚未验收。 骨性标志及柔边色块只帮助定位，不是完整韧带附着区。",
+      "evidence_status": "reference_checked",
+      "assembly_review": "pending",
+      "context_tissues": [],
+      "geometry_review": "static_flags_not_anatomical_acceptance"
+    },
+    {
+      "id": "acetabular_labrum_R",
+      "name_zh": "右髋臼唇",
+      "name_en": "Acetabular labrum.r",
+      "side": "R",
+      "region": "下肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "labrum",
+      "bone_ids": [
+        "bone_hip_R",
+        "bone_femur_R"
+      ],
+      "joint_or_connection_ids": [
+        "hip_R"
+      ],
+      "source_structure_id": "Acetabular labrum.r",
+      "source_dataset": "Z-Anatomy",
+      "triangles": 1408,
+      "note": "保留同一 Z-Anatomy 源库的原配坐标；未校准附着边界和动态关系。关联骨仅用于目录与展开参考，不代表已标定的附着足印。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.08465113490819931,
+        0.8635421395301819,
+        -0.005490183364599943
+      ],
+      "group": "intra",
+      "context_bones": [
+        "Hip",
+        "Femur"
+      ],
+      "landmark_names": [
+        "髋臼缘"
+      ],
+      "references": [
+        {
+          "title": "TeachMeAnatomy · The Hip Joint（区域概述）",
+          "url": "https://teachmeanatomy.info/lower-limb/joints/hip-joint/",
+          "quote": "There is a horseshoe shaped fibrocartilaginous ring around the acetabulum which increases its depth, known as the"
+        }
+      ],
+      "origin": "沿髋臼周缘分布的纤维软骨环；不是具有两端起止的韧带。",
+      "insertion": "与髋臼横韧带的连续关系及具体结合边界，仍待专门资料核对。",
+      "shape": "马蹄形纤维软骨环，加深髋臼。",
+      "comparison": "保留该对象的原始几何；封闭网格及关节囊、半月板未套用开放韧带修形。 纤维纹理为显示示意，未移动端部追求贴骨。",
+      "limitations": "源模型可供比较，不代表解剖准确；足印、穿插和动态长度尚未验收。 骨性标志及柔边色块只帮助定位，不是完整韧带附着区。",
+      "evidence_status": "reference_checked",
+      "assembly_review": "pending",
+      "context_tissues": [],
+      "geometry_review": "static_flags_not_anatomical_acceptance"
+    }
+  ],
+  "gaps": [
+    "所有源模型仍待逐项核对附着足印、侧别、厚度和穿插；本版无关节运动。",
+    "未关联文献的条目在详情中标为待补齐，不据名称编写附着。",
+    "已接入原生骨性标志与颜色定位范围；未收录的标志不会自动用邻近点代替。精确足印仍需逐项核准。"
+  ]
+}

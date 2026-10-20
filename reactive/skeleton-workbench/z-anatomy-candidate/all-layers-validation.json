@@ -1,12 +1,22 @@
 {
   "counts": {
     "joints": 58,
-    "connections": 35,
-    "surface-marks": 183
+    "connections": 38,
+    "surface-marks": 183,
+    "major-joint-surfaces": 34,
+    "ligament-library": 286,
+    "repaired-disc": 1,
+    "nuclei": 23
   },
   "source_hash_unchanged": true,
   "all_ids_unique": true,
   "all_glbs_valid": true,
   "all_anatomy_pending": true,
-  "surface_marks_are_not_volumetric_cartilage": true
+  "surface_marks_are_not_volumetric_cartilage": true,
+  "replaced_surface_groups": 16,
+  "active_surface_objects": 201,
+  "active_scene_objects": 813,
+  "tissue_candidates": 406,
+  "ligament_candidates_with_split_seams": 18,
+  "stage_2_complete": false
 }

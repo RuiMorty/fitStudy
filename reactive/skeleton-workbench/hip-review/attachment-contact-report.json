@@ -1,0 +1,352 @@
+[
+  {
+    "id": "z_lig_transverse_part_of_iliofemoral_ligament_R",
+    "status": "fitted",
+    "assigned_bones": [
+      "bone_Hip_r",
+      "bone_Femur_r"
+    ],
+    "terminal_metrics": [
+      {
+        "bone": "bone_Hip_r",
+        "vertices": 358,
+        "before_median_surface_distance_mm": 0.5602,
+        "after_max_surface_distance_mm": 0.32,
+        "signed_depth_min_mm": -0.32,
+        "signed_depth_max_mm": -0.1052
+      },
+      {
+        "bone": "bone_Femur_r",
+        "vertices": 388,
+        "before_median_surface_distance_mm": 0.38,
+        "after_max_surface_distance_mm": 0.2776,
+        "signed_depth_min_mm": -0.2776,
+        "signed_depth_max_mm": -0.1786
+      }
+    ],
+    "source_longitudinal_terminal_zone_fraction": 0.25,
+    "terminal_embed_nominal_mm": 0.25,
+    "max_vertex_displacement_mm": 3.3748,
+    "central_region_max_displacement_mm": 0,
+    "source_points_over_6mm_not_moved": 108,
+    "footprint_review": "pending; source endpoint regions, not certified anatomical footprints"
+  },
+  {
+    "id": "z_lig_transverse_part_of_iliofemoral_ligament_L",
+    "status": "fitted",
+    "assigned_bones": [
+      "bone_Hip_l",
+      "bone_Femur_l"
+    ],
+    "terminal_metrics": [
+      {
+        "bone": "bone_Hip_l",
+        "vertices": 358,
+        "before_median_surface_distance_mm": 0.5602,
+        "after_max_surface_distance_mm": 0.32,
+        "signed_depth_min_mm": -0.32,
+        "signed_depth_max_mm": -0.1052
+      },
+      {
+        "bone": "bone_Femur_l",
+        "vertices": 388,
+        "before_median_surface_distance_mm": 0.38,
+        "after_max_surface_distance_mm": 0.2776,
+        "signed_depth_min_mm": -0.2776,
+        "signed_depth_max_mm": -0.1786
+      }
+    ],
+    "source_longitudinal_terminal_zone_fraction": 0.25,
+    "terminal_embed_nominal_mm": 0.25,
+    "max_vertex_displacement_mm": 3.3748,
+    "central_region_max_displacement_mm": 0,
+    "source_points_over_6mm_not_moved": 108,
+    "footprint_review": "pending; source endpoint regions, not certified anatomical footprints"
+  },
+  {
+    "id": "z_lig_transverse_acetabular_ligament_R",
+    "status": "fitted",
+    "assigned_bones": [
+      "bone_Hip_r",
+      "bone_Hip_r"
+    ],
+    "terminal_metrics": [
+      {
+        "bone": "bone_Hip_r",
+        "vertices": 135,
+        "before_median_surface_distance_mm": 0.2872,
+        "after_max_surface_distance_mm": 0.2836,
+        "signed_depth_min_mm": -0.2836,
+        "signed_depth_max_mm": -0.1755
+      },
+      {
+        "bone": "bone_Hip_r",
+        "vertices": 109,
+        "before_median_surface_distance_mm": 0.4594,
+        "after_max_surface_distance_mm": 0.32,
+        "signed_depth_min_mm": -0.32,
+        "signed_depth_max_mm": -0.1784
+      }
+    ],
+    "source_longitudinal_terminal_zone_fraction": 0.25,
+    "terminal_embed_nominal_mm": 0.25,
+    "max_vertex_displacement_mm": 2.4483,
+    "central_region_max_displacement_mm": 0,
+    "source_points_over_6mm_not_moved": 0,
+    "footprint_review": "pending; source endpoint regions, not certified anatomical footprints"
+  },
+  {
+    "id": "z_lig_transverse_acetabular_ligament_L",
+    "status": "fitted",
+    "assigned_bones": [
+      "bone_Hip_l",
+      "bone_Hip_l"
+    ],
+    "terminal_metrics": [
+      {
+        "bone": "bone_Hip_l",
+        "vertices": 135,
+        "before_median_surface_distance_mm": 0.2872,
+        "after_max_surface_distance_mm": 0.2836,
+        "signed_depth_min_mm": -0.2836,
+        "signed_depth_max_mm": -0.1754
+      },
+      {
+        "bone": "bone_Hip_l",
+        "vertices": 109,
+        "before_median_surface_distance_mm": 0.4594,
+        "after_max_surface_distance_mm": 0.32,
+        "signed_depth_min_mm": -0.32,
+        "signed_depth_max_mm": -0.1784
+      }
+    ],
+    "source_longitudinal_terminal_zone_fraction": 0.25,
+    "terminal_embed_nominal_mm": 0.25,
+    "max_vertex_displacement_mm": 2.4483,
+    "central_region_max_displacement_mm": 0,
+    "source_points_over_6mm_not_moved": 0,
+    "footprint_review": "pending; source endpoint regions, not certified anatomical footprints"
+  },
+  {
+    "id": "z_lig_pubofemoral_ligament_R",
+    "status": "fitted",
+    "assigned_bones": [
+      "bone_Femur_r",
+      "bone_Hip_r"
+    ],
+    "terminal_metrics": [
+      {
+        "bone": "bone_Femur_r",
+        "vertices": 243,
+        "before_median_surface_distance_mm": 0.8883,
+        "after_max_surface_distance_mm": 0.32,
+        "signed_depth_min_mm": -0.32,
+        "signed_depth_max_mm": -0.1657
+      },
+      {
+        "bone": "bone_Hip_r",
+        "vertices": 138,
+        "before_median_surface_distance_mm": 0.394,
+        "after_max_surface_distance_mm": 0.2481,
+        "signed_depth_min_mm": -0.2481,
+        "signed_depth_max_mm": -0.1783
+      }
+    ],
+    "source_longitudinal_terminal_zone_fraction": 0.25,
+    "terminal_embed_nominal_mm": 0.25,
+    "max_vertex_displacement_mm": 3.4066,
+    "central_region_max_displacement_mm": 0,
+    "source_points_over_6mm_not_moved": 340,
+    "footprint_review": "pending; source endpoint regions, not certified anatomical footprints"
+  },
+  {
+    "id": "z_lig_pubofemoral_ligament_L",
+    "status": "fitted",
+    "assigned_bones": [
+      "bone_Femur_l",
+      "bone_Hip_l"
+    ],
+    "terminal_metrics": [
+      {
+        "bone": "bone_Femur_l",
+        "vertices": 243,
+        "before_median_surface_distance_mm": 0.8882,
+        "after_max_surface_distance_mm": 0.32,
+        "signed_depth_min_mm": -0.32,
+        "signed_depth_max_mm": -0.1657
+      },
+      {
+        "bone": "bone_Hip_l",
+        "vertices": 138,
+        "before_median_surface_distance_mm": 0.394,
+        "after_max_surface_distance_mm": 0.2481,
+        "signed_depth_min_mm": -0.2481,
+        "signed_depth_max_mm": -0.1783
+      }
+    ],
+    "source_longitudinal_terminal_zone_fraction": 0.25,
+    "terminal_embed_nominal_mm": 0.25,
+    "max_vertex_displacement_mm": 3.4066,
+    "central_region_max_displacement_mm": 0,
+    "source_points_over_6mm_not_moved": 340,
+    "footprint_review": "pending; source endpoint regions, not certified anatomical footprints"
+  },
+  {
+    "id": "z_lig_ligament_of_head_of_femur_R",
+    "status": "unchanged",
+    "reason": "关节囊/软骨不是两端骨附着韧带，或连接软组织/源端区未确认；不自动贴向最近骨面。"
+  },
+  {
+    "id": "z_lig_ligament_of_head_of_femur_L",
+    "status": "unchanged",
+    "reason": "关节囊/软骨不是两端骨附着韧带，或连接软组织/源端区未确认；不自动贴向最近骨面。"
+  },
+  {
+    "id": "z_lig_ischiofemoral_ligament_R",
+    "status": "fitted",
+    "assigned_bones": [
+      "bone_Hip_r",
+      "bone_Femur_r"
+    ],
+    "terminal_metrics": [
+      {
+        "bone": "bone_Hip_r",
+        "vertices": 341,
+        "before_median_surface_distance_mm": 0.5319,
+        "after_max_surface_distance_mm": 0.3198,
+        "signed_depth_min_mm": -0.3198,
+        "signed_depth_max_mm": -0.1087
+      },
+      {
+        "bone": "bone_Femur_r",
+        "vertices": 347,
+        "before_median_surface_distance_mm": 1.0597,
+        "after_max_surface_distance_mm": 0.2205,
+        "signed_depth_min_mm": -0.2205,
+        "signed_depth_max_mm": -0.1596
+      }
+    ],
+    "source_longitudinal_terminal_zone_fraction": 0.25,
+    "terminal_embed_nominal_mm": 0.25,
+    "max_vertex_displacement_mm": 3.4035,
+    "central_region_max_displacement_mm": 0,
+    "source_points_over_6mm_not_moved": 201,
+    "footprint_review": "pending; source endpoint regions, not certified anatomical footprints"
+  },
+  {
+    "id": "z_lig_ischiofemoral_ligament_L",
+    "status": "fitted",
+    "assigned_bones": [
+      "bone_Hip_l",
+      "bone_Femur_l"
+    ],
+    "terminal_metrics": [
+      {
+        "bone": "bone_Hip_l",
+        "vertices": 341,
+        "before_median_surface_distance_mm": 0.5319,
+        "after_max_surface_distance_mm": 0.3198,
+        "signed_depth_min_mm": -0.3198,
+        "signed_depth_max_mm": -0.1087
+      },
+      {
+        "bone": "bone_Femur_l",
+        "vertices": 347,
+        "before_median_surface_distance_mm": 1.0597,
+        "after_max_surface_distance_mm": 0.2205,
+        "signed_depth_min_mm": -0.2205,
+        "signed_depth_max_mm": -0.1595
+      }
+    ],
+    "source_longitudinal_terminal_zone_fraction": 0.25,
+    "terminal_embed_nominal_mm": 0.25,
+    "max_vertex_displacement_mm": 3.4035,
+    "central_region_max_displacement_mm": 0,
+    "source_points_over_6mm_not_moved": 201,
+    "footprint_review": "pending; source endpoint regions, not certified anatomical footprints"
+  },
+  {
+    "id": "z_lig_descending_part_of_iliofemoral_ligament_R",
+    "status": "fitted",
+    "assigned_bones": [
+      "bone_Femur_r",
+      "bone_Hip_r"
+    ],
+    "terminal_metrics": [
+      {
+        "bone": "bone_Femur_r",
+        "vertices": 237,
+        "before_median_surface_distance_mm": 0.3674,
+        "after_max_surface_distance_mm": 0.2946,
+        "signed_depth_min_mm": -0.2946,
+        "signed_depth_max_mm": -0.166
+      },
+      {
+        "bone": "bone_Hip_r",
+        "vertices": 463,
+        "before_median_surface_distance_mm": 0.3955,
+        "after_max_surface_distance_mm": 0.3009,
+        "signed_depth_min_mm": -0.3009,
+        "signed_depth_max_mm": -0.0326
+      }
+    ],
+    "source_longitudinal_terminal_zone_fraction": 0.25,
+    "terminal_embed_nominal_mm": 0.25,
+    "max_vertex_displacement_mm": 3.3703,
+    "central_region_max_displacement_mm": 0,
+    "source_points_over_6mm_not_moved": 256,
+    "footprint_review": "pending; source endpoint regions, not certified anatomical footprints"
+  },
+  {
+    "id": "z_lig_descending_part_of_iliofemoral_ligament_L",
+    "status": "fitted",
+    "assigned_bones": [
+      "bone_Femur_l",
+      "bone_Hip_l"
+    ],
+    "terminal_metrics": [
+      {
+        "bone": "bone_Femur_l",
+        "vertices": 237,
+        "before_median_surface_distance_mm": 0.3674,
+        "after_max_surface_distance_mm": 0.2946,
+        "signed_depth_min_mm": -0.2946,
+        "signed_depth_max_mm": -0.166
+      },
+      {
+        "bone": "bone_Hip_l",
+        "vertices": 463,
+        "before_median_surface_distance_mm": 0.3955,
+        "after_max_surface_distance_mm": 0.3008,
+        "signed_depth_min_mm": -0.3008,
+        "signed_depth_max_mm": -0.0326
+      }
+    ],
+    "source_longitudinal_terminal_zone_fraction": 0.25,
+    "terminal_embed_nominal_mm": 0.25,
+    "max_vertex_displacement_mm": 3.3604,
+    "central_region_max_displacement_mm": 0,
+    "source_points_over_6mm_not_moved": 256,
+    "footprint_review": "pending; source endpoint regions, not certified anatomical footprints"
+  },
+  {
+    "id": "capsule_hip_L",
+    "status": "unchanged",
+    "reason": "关节囊/软骨不是两端骨附着韧带，或连接软组织/源端区未确认；不自动贴向最近骨面。"
+  },
+  {
+    "id": "capsule_hip_R",
+    "status": "unchanged",
+    "reason": "关节囊/软骨不是两端骨附着韧带，或连接软组织/源端区未确认；不自动贴向最近骨面。"
+  },
+  {
+    "id": "acetabular_labrum_L",
+    "status": "unchanged",
+    "reason": "关节囊/软骨不是两端骨附着韧带，或连接软组织/源端区未确认；不自动贴向最近骨面。"
+  },
+  {
+    "id": "acetabular_labrum_R",
+    "status": "unchanged",
+    "reason": "关节囊/软骨不是两端骨附着韧带，或连接软组织/源端区未确认；不自动贴向最近骨面。"
+  }
+]

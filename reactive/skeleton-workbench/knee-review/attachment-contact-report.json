@@ -1,0 +1,492 @@
+[
+  {
+    "id": "z_lig_transverse_ligament_of_knee_R",
+    "status": "unchanged",
+    "reason": "关节囊/软骨不是两端骨附着韧带，或连接软组织/源端区未确认；不自动贴向最近骨面。"
+  },
+  {
+    "id": "z_lig_transverse_ligament_of_knee_L",
+    "status": "unchanged",
+    "reason": "关节囊/软骨不是两端骨附着韧带，或连接软组织/源端区未确认；不自动贴向最近骨面。"
+  },
+  {
+    "id": "z_lig_superficial_part_of_tibial_collateral_ligament_R",
+    "status": "fitted",
+    "assigned_bones": [
+      "bone_Tibia_r",
+      "bone_Femur_r"
+    ],
+    "terminal_metrics": [
+      {
+        "bone": "bone_Tibia_r",
+        "vertices": 420,
+        "before_median_surface_distance_mm": 1.3213,
+        "after_max_surface_distance_mm": 0.32,
+        "signed_depth_min_mm": -0.32,
+        "signed_depth_max_mm": -0.1965
+      },
+      {
+        "bone": "bone_Femur_r",
+        "vertices": 678,
+        "before_median_surface_distance_mm": 0.6249,
+        "after_max_surface_distance_mm": 0.32,
+        "signed_depth_min_mm": -0.32,
+        "signed_depth_max_mm": -0.1732
+      }
+    ],
+    "source_longitudinal_terminal_zone_fraction": 0.25,
+    "terminal_embed_nominal_mm": 0.25,
+    "max_vertex_displacement_mm": 2.6466,
+    "central_region_max_displacement_mm": 0,
+    "source_points_over_6mm_not_moved": 0,
+    "footprint_review": "pending; source endpoint regions, not certified anatomical footprints"
+  },
+  {
+    "id": "z_lig_superficial_part_of_tibial_collateral_ligament_L",
+    "status": "fitted",
+    "assigned_bones": [
+      "bone_Tibia_l",
+      "bone_Femur_l"
+    ],
+    "terminal_metrics": [
+      {
+        "bone": "bone_Tibia_l",
+        "vertices": 132,
+        "before_median_surface_distance_mm": 1.5253,
+        "after_max_surface_distance_mm": 0.3204,
+        "signed_depth_min_mm": -0.3204,
+        "signed_depth_max_mm": -0.2125
+      },
+      {
+        "bone": "bone_Femur_l",
+        "vertices": 208,
+        "before_median_surface_distance_mm": 0.588,
+        "after_max_surface_distance_mm": 0.32,
+        "signed_depth_min_mm": -0.32,
+        "signed_depth_max_mm": -0.1731
+      }
+    ],
+    "source_longitudinal_terminal_zone_fraction": 0.25,
+    "terminal_embed_nominal_mm": 0.25,
+    "max_vertex_displacement_mm": 2.7016,
+    "central_region_max_displacement_mm": 0,
+    "source_points_over_6mm_not_moved": 0,
+    "footprint_review": "pending; source endpoint regions, not certified anatomical footprints"
+  },
+  {
+    "id": "z_lig_posterior_meniscotibial_ligament_medial_meniscus_R",
+    "status": "unchanged",
+    "reason": "关节囊/软骨不是两端骨附着韧带，或连接软组织/源端区未确认；不自动贴向最近骨面。"
+  },
+  {
+    "id": "z_lig_posterior_meniscotibial_ligament_medial_meniscus_L",
+    "status": "unchanged",
+    "reason": "关节囊/软骨不是两端骨附着韧带，或连接软组织/源端区未确认；不自动贴向最近骨面。"
+  },
+  {
+    "id": "z_lig_posterior_meniscotibial_ligament_lateral_meniscus_R",
+    "status": "unchanged",
+    "reason": "关节囊/软骨不是两端骨附着韧带，或连接软组织/源端区未确认；不自动贴向最近骨面。"
+  },
+  {
+    "id": "z_lig_posterior_meniscotibial_ligament_lateral_meniscus_L",
+    "status": "unchanged",
+    "reason": "关节囊/软骨不是两端骨附着韧带，或连接软组织/源端区未确认；不自动贴向最近骨面。"
+  },
+  {
+    "id": "z_lig_posterior_ligament_of_fibular_head_R",
+    "status": "unchanged",
+    "reason": "关节囊/软骨不是两端骨附着韧带，或连接软组织/源端区未确认；不自动贴向最近骨面。"
+  },
+  {
+    "id": "z_lig_posterior_ligament_of_fibular_head_L",
+    "status": "unchanged",
+    "reason": "关节囊/软骨不是两端骨附着韧带，或连接软组织/源端区未确认；不自动贴向最近骨面。"
+  },
+  {
+    "id": "z_lig_posterior_cruciate_ligament_R",
+    "status": "fitted",
+    "assigned_bones": [
+      "bone_Tibia_r",
+      "bone_Femur_r"
+    ],
+    "terminal_metrics": [
+      {
+        "bone": "bone_Tibia_r",
+        "vertices": 145,
+        "before_median_surface_distance_mm": 0.9188,
+        "after_max_surface_distance_mm": 0.3217,
+        "signed_depth_min_mm": -0.3217,
+        "signed_depth_max_mm": -0.178
+      },
+      {
+        "bone": "bone_Femur_r",
+        "vertices": 263,
+        "before_median_surface_distance_mm": 1.095,
+        "after_max_surface_distance_mm": 0.3206,
+        "signed_depth_min_mm": -0.3206,
+        "signed_depth_max_mm": -0.1676
+      }
+    ],
+    "source_longitudinal_terminal_zone_fraction": 0.25,
+    "terminal_embed_nominal_mm": 0.25,
+    "max_vertex_displacement_mm": 3.39,
+    "central_region_max_displacement_mm": 0,
+    "source_points_over_6mm_not_moved": 126,
+    "footprint_review": "pending; source endpoint regions, not certified anatomical footprints"
+  },
+  {
+    "id": "z_lig_posterior_cruciate_ligament_L",
+    "status": "fitted",
+    "assigned_bones": [
+      "bone_Tibia_l",
+      "bone_Femur_l"
+    ],
+    "terminal_metrics": [
+      {
+        "bone": "bone_Tibia_l",
+        "vertices": 145,
+        "before_median_surface_distance_mm": 0.9188,
+        "after_max_surface_distance_mm": 0.3217,
+        "signed_depth_min_mm": -0.3217,
+        "signed_depth_max_mm": -0.178
+      },
+      {
+        "bone": "bone_Femur_l",
+        "vertices": 263,
+        "before_median_surface_distance_mm": 1.095,
+        "after_max_surface_distance_mm": 0.3207,
+        "signed_depth_min_mm": -0.3207,
+        "signed_depth_max_mm": -0.1676
+      }
+    ],
+    "source_longitudinal_terminal_zone_fraction": 0.25,
+    "terminal_embed_nominal_mm": 0.25,
+    "max_vertex_displacement_mm": 3.39,
+    "central_region_max_displacement_mm": 0,
+    "source_points_over_6mm_not_moved": 126,
+    "footprint_review": "pending; source endpoint regions, not certified anatomical footprints"
+  },
+  {
+    "id": "z_lig_popliteofibular_ligament_R",
+    "status": "unchanged",
+    "reason": "关节囊/软骨不是两端骨附着韧带，或连接软组织/源端区未确认；不自动贴向最近骨面。"
+  },
+  {
+    "id": "z_lig_popliteofibular_ligament_L",
+    "status": "unchanged",
+    "reason": "关节囊/软骨不是两端骨附着韧带，或连接软组织/源端区未确认；不自动贴向最近骨面。"
+  },
+  {
+    "id": "z_lig_oblique_popliteal_ligament_R",
+    "status": "unchanged",
+    "reason": "关节囊/软骨不是两端骨附着韧带，或连接软组织/源端区未确认；不自动贴向最近骨面。"
+  },
+  {
+    "id": "z_lig_oblique_popliteal_ligament_L",
+    "status": "unchanged",
+    "reason": "关节囊/软骨不是两端骨附着韧带，或连接软组织/源端区未确认；不自动贴向最近骨面。"
+  },
+  {
+    "id": "z_lig_meniscopatellar_ligament_R",
+    "status": "unchanged",
+    "reason": "关节囊/软骨不是两端骨附着韧带，或连接软组织/源端区未确认；不自动贴向最近骨面。"
+  },
+  {
+    "id": "z_lig_meniscopatellar_ligament_L",
+    "status": "unchanged",
+    "reason": "关节囊/软骨不是两端骨附着韧带，或连接软组织/源端区未确认；不自动贴向最近骨面。"
+  },
+  {
+    "id": "z_lig_fibular_collateral_ligament_R",
+    "status": "fitted",
+    "assigned_bones": [
+      "bone_Fibula_r",
+      "bone_Femur_r"
+    ],
+    "terminal_metrics": [
+      {
+        "bone": "bone_Fibula_r",
+        "vertices": 57,
+        "before_median_surface_distance_mm": 0.8784,
+        "after_max_surface_distance_mm": 0.2806,
+        "signed_depth_min_mm": -0.2806,
+        "signed_depth_max_mm": -0.1709
+      },
+      {
+        "bone": "bone_Femur_r",
+        "vertices": 65,
+        "before_median_surface_distance_mm": 0.6345,
+        "after_max_surface_distance_mm": 0.32,
+        "signed_depth_min_mm": -0.32,
+        "signed_depth_max_mm": -0.1749
+      }
+    ],
+    "source_longitudinal_terminal_zone_fraction": 0.25,
+    "terminal_embed_nominal_mm": 0.25,
+    "max_vertex_displacement_mm": 3.3856,
+    "central_region_max_displacement_mm": 0,
+    "source_points_over_6mm_not_moved": 22,
+    "footprint_review": "pending; source endpoint regions, not certified anatomical footprints"
+  },
+  {
+    "id": "z_lig_fibular_collateral_ligament_L",
+    "status": "fitted",
+    "assigned_bones": [
+      "bone_Fibula_l",
+      "bone_Femur_l"
+    ],
+    "terminal_metrics": [
+      {
+        "bone": "bone_Fibula_l",
+        "vertices": 57,
+        "before_median_surface_distance_mm": 0.8784,
+        "after_max_surface_distance_mm": 0.2806,
+        "signed_depth_min_mm": -0.2806,
+        "signed_depth_max_mm": -0.1709
+      },
+      {
+        "bone": "bone_Femur_l",
+        "vertices": 65,
+        "before_median_surface_distance_mm": 0.6345,
+        "after_max_surface_distance_mm": 0.32,
+        "signed_depth_min_mm": -0.32,
+        "signed_depth_max_mm": -0.1749
+      }
+    ],
+    "source_longitudinal_terminal_zone_fraction": 0.25,
+    "terminal_embed_nominal_mm": 0.25,
+    "max_vertex_displacement_mm": 3.3856,
+    "central_region_max_displacement_mm": 0,
+    "source_points_over_6mm_not_moved": 22,
+    "footprint_review": "pending; source endpoint regions, not certified anatomical footprints"
+  },
+  {
+    "id": "z_lig_deep_part_of_tibial_collateral_ligament_R",
+    "status": "fitted",
+    "assigned_bones": [
+      "bone_Tibia_r",
+      "bone_Femur_r"
+    ],
+    "terminal_metrics": [
+      {
+        "bone": "bone_Tibia_r",
+        "vertices": 86,
+        "before_median_surface_distance_mm": 1.9878,
+        "after_max_surface_distance_mm": 0.3217,
+        "signed_depth_min_mm": -0.3217,
+        "signed_depth_max_mm": -0.294
+      },
+      {
+        "bone": "bone_Femur_r",
+        "vertices": 225,
+        "before_median_surface_distance_mm": 0.4342,
+        "after_max_surface_distance_mm": 0.32,
+        "signed_depth_min_mm": -0.32,
+        "signed_depth_max_mm": -0.1798
+      }
+    ],
+    "source_longitudinal_terminal_zone_fraction": 0.25,
+    "terminal_embed_nominal_mm": 0.25,
+    "max_vertex_displacement_mm": 2.942,
+    "central_region_max_displacement_mm": 0,
+    "source_points_over_6mm_not_moved": 0,
+    "footprint_review": "pending; source endpoint regions, not certified anatomical footprints"
+  },
+  {
+    "id": "z_lig_deep_part_of_tibial_collateral_ligament_L",
+    "status": "fitted",
+    "assigned_bones": [
+      "bone_Tibia_l",
+      "bone_Femur_l"
+    ],
+    "terminal_metrics": [
+      {
+        "bone": "bone_Tibia_l",
+        "vertices": 86,
+        "before_median_surface_distance_mm": 1.9879,
+        "after_max_surface_distance_mm": 0.3217,
+        "signed_depth_min_mm": -0.3217,
+        "signed_depth_max_mm": -0.294
+      },
+      {
+        "bone": "bone_Femur_l",
+        "vertices": 225,
+        "before_median_surface_distance_mm": 0.4342,
+        "after_max_surface_distance_mm": 0.32,
+        "signed_depth_min_mm": -0.32,
+        "signed_depth_max_mm": -0.1798
+      }
+    ],
+    "source_longitudinal_terminal_zone_fraction": 0.25,
+    "terminal_embed_nominal_mm": 0.25,
+    "max_vertex_displacement_mm": 2.942,
+    "central_region_max_displacement_mm": 0,
+    "source_points_over_6mm_not_moved": 0,
+    "footprint_review": "pending; source endpoint regions, not certified anatomical footprints"
+  },
+  {
+    "id": "z_lig_arcuate_popliteal_ligament_R",
+    "status": "unchanged",
+    "reason": "关节囊/软骨不是两端骨附着韧带，或连接软组织/源端区未确认；不自动贴向最近骨面。"
+  },
+  {
+    "id": "z_lig_arcuate_popliteal_ligament_L",
+    "status": "unchanged",
+    "reason": "关节囊/软骨不是两端骨附着韧带，或连接软组织/源端区未确认；不自动贴向最近骨面。"
+  },
+  {
+    "id": "z_lig_anterior_meniscotibial_ligament_medial_meniscus_R",
+    "status": "unchanged",
+    "reason": "关节囊/软骨不是两端骨附着韧带，或连接软组织/源端区未确认；不自动贴向最近骨面。"
+  },
+  {
+    "id": "z_lig_anterior_meniscotibial_ligament_medial_meniscus_L",
+    "status": "unchanged",
+    "reason": "关节囊/软骨不是两端骨附着韧带，或连接软组织/源端区未确认；不自动贴向最近骨面。"
+  },
+  {
+    "id": "z_lig_anterior_meniscotibial_ligament_lateral_meniscus_R",
+    "status": "unchanged",
+    "reason": "关节囊/软骨不是两端骨附着韧带，或连接软组织/源端区未确认；不自动贴向最近骨面。"
+  },
+  {
+    "id": "z_lig_anterior_meniscotibial_ligament_lateral_meniscus_L",
+    "status": "unchanged",
+    "reason": "关节囊/软骨不是两端骨附着韧带，或连接软组织/源端区未确认；不自动贴向最近骨面。"
+  },
+  {
+    "id": "z_lig_anterior_ligament_of_fibular_head_R",
+    "status": "unchanged",
+    "reason": "关节囊/软骨不是两端骨附着韧带，或连接软组织/源端区未确认；不自动贴向最近骨面。"
+  },
+  {
+    "id": "z_lig_anterior_ligament_of_fibular_head_L",
+    "status": "unchanged",
+    "reason": "关节囊/软骨不是两端骨附着韧带，或连接软组织/源端区未确认；不自动贴向最近骨面。"
+  },
+  {
+    "id": "z_lig_anterior_cruciate_ligament_R",
+    "status": "fitted",
+    "assigned_bones": [
+      "bone_Tibia_r",
+      "bone_Femur_r"
+    ],
+    "terminal_metrics": [
+      {
+        "bone": "bone_Tibia_r",
+        "vertices": 2266,
+        "before_median_surface_distance_mm": 1.4245,
+        "after_max_surface_distance_mm": 0.3219,
+        "signed_depth_min_mm": -0.3219,
+        "signed_depth_max_mm": -0.1612
+      },
+      {
+        "bone": "bone_Femur_r",
+        "vertices": 1450,
+        "before_median_surface_distance_mm": 1.3884,
+        "after_max_surface_distance_mm": 0.3225,
+        "signed_depth_min_mm": -0.3225,
+        "signed_depth_max_mm": -0.1734
+      }
+    ],
+    "source_longitudinal_terminal_zone_fraction": 0.25,
+    "terminal_embed_nominal_mm": 0.25,
+    "max_vertex_displacement_mm": 3.0991,
+    "central_region_max_displacement_mm": 0,
+    "source_points_over_6mm_not_moved": 158,
+    "footprint_review": "pending; source endpoint regions, not certified anatomical footprints"
+  },
+  {
+    "id": "z_lig_anterior_cruciate_ligament_L",
+    "status": "fitted",
+    "assigned_bones": [
+      "bone_Tibia_l",
+      "bone_Femur_l"
+    ],
+    "terminal_metrics": [
+      {
+        "bone": "bone_Tibia_l",
+        "vertices": 2266,
+        "before_median_surface_distance_mm": 1.4245,
+        "after_max_surface_distance_mm": 0.3219,
+        "signed_depth_min_mm": -0.3219,
+        "signed_depth_max_mm": -0.1611
+      },
+      {
+        "bone": "bone_Femur_l",
+        "vertices": 1450,
+        "before_median_surface_distance_mm": 1.3884,
+        "after_max_surface_distance_mm": 0.3226,
+        "signed_depth_min_mm": -0.3226,
+        "signed_depth_max_mm": -0.1734
+      }
+    ],
+    "source_longitudinal_terminal_zone_fraction": 0.25,
+    "terminal_embed_nominal_mm": 0.25,
+    "max_vertex_displacement_mm": 3.0991,
+    "central_region_max_displacement_mm": 0,
+    "source_points_over_6mm_not_moved": 158,
+    "footprint_review": "pending; source endpoint regions, not certified anatomical footprints"
+  },
+  {
+    "id": "capsule_proximal_tibiofibular_L",
+    "status": "unchanged",
+    "reason": "关节囊/软骨不是两端骨附着韧带，或连接软组织/源端区未确认；不自动贴向最近骨面。"
+  },
+  {
+    "id": "capsule_tibiofemoral_L",
+    "status": "unchanged",
+    "reason": "关节囊/软骨不是两端骨附着韧带，或连接软组织/源端区未确认；不自动贴向最近骨面。"
+  },
+  {
+    "id": "capsule_proximal_tibiofibular_R",
+    "status": "unchanged",
+    "reason": "关节囊/软骨不是两端骨附着韧带，或连接软组织/源端区未确认；不自动贴向最近骨面。"
+  },
+  {
+    "id": "capsule_tibiofemoral_R",
+    "status": "unchanged",
+    "reason": "关节囊/软骨不是两端骨附着韧带，或连接软组织/源端区未确认；不自动贴向最近骨面。"
+  },
+  {
+    "id": "medial_meniscus_L",
+    "status": "unchanged",
+    "reason": "关节囊/软骨不是两端骨附着韧带，或连接软组织/源端区未确认；不自动贴向最近骨面。"
+  },
+  {
+    "id": "lateral_meniscus_L",
+    "status": "unchanged",
+    "reason": "关节囊/软骨不是两端骨附着韧带，或连接软组织/源端区未确认；不自动贴向最近骨面。"
+  },
+  {
+    "id": "medial_meniscus_R",
+    "status": "unchanged",
+    "reason": "关节囊/软骨不是两端骨附着韧带，或连接软组织/源端区未确认；不自动贴向最近骨面。"
+  },
+  {
+    "id": "lateral_meniscus_R",
+    "status": "unchanged",
+    "reason": "关节囊/软骨不是两端骨附着韧带，或连接软组织/源端区未确认；不自动贴向最近骨面。"
+  },
+  {
+    "id": "z_review_medial_patellar_retinaculum_R",
+    "status": "unchanged",
+    "reason": "关节囊/软骨不是两端骨附着韧带，或连接软组织/源端区未确认；不自动贴向最近骨面。"
+  },
+  {
+    "id": "z_review_medial_patellar_retinaculum_L",
+    "status": "unchanged",
+    "reason": "关节囊/软骨不是两端骨附着韧带，或连接软组织/源端区未确认；不自动贴向最近骨面。"
+  },
+  {
+    "id": "z_review_lateral_patellar_retinaculum_R",
+    "status": "unchanged",
+    "reason": "关节囊/软骨不是两端骨附着韧带，或连接软组织/源端区未确认；不自动贴向最近骨面。"
+  },
+  {
+    "id": "z_review_lateral_patellar_retinaculum_L",
+    "status": "unchanged",
+    "reason": "关节囊/软骨不是两端骨附着韧带，或连接软组织/源端区未确认；不自动贴向最近骨面。"
+  }
+]

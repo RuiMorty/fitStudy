@@ -1,0 +1,21 @@
+{
+  "stage": "inventory_and_review_integration_not_anatomical_acceptance",
+  "model_mesh_nodes": 91,
+  "ligament_objects": 61,
+  "source_name_categories": 31,
+  "landmark_regions": 11,
+  "checks": [
+    "Desktop model load, group switching and color regions",
+    "Left-only Ulnopisiform selection followed by right-side fallback",
+    "Explode control followed by reset to zero",
+    "390x844 layout: clientWidth and scrollWidth both390",
+    "No browser console errors observed",
+    "JavaScript syntax and git diff whitespace checks passed"
+  ],
+  "not_verified": [
+    "Full anatomical footprints",
+    "Full inter-tissue collision audit",
+    "Wrist motion"
+  ],
+  "source_assets": "Existing wrist v2; no geometry reshaping this turn"
+}

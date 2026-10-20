@@ -1,0 +1,1206 @@
+{
+  "scope": "elbow_ligaments",
+  "type_count": 8,
+  "source_object_count": 8,
+  "structures": [
+    {
+      "id": "z_lig_radial_collateral_ligament_R",
+      "name_zh": "右肘桡侧副韧带",
+      "name_en": "Radial collateral ligament.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_humerus_R",
+        "bone_radius_R",
+        "bone_ulna_R"
+      ],
+      "joint_or_connection_ids": [
+        "humeroulnar_R",
+        "humeroradial_R",
+        "proximal_radioulnar_R"
+      ],
+      "source_structure_id": "Radial collateral ligament.r",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 96,
+      "note": "沿用原配坐标；依据源父级归入区域目录，关联骨不是精确起止点。附着范围、局部穿插及源组合对象的拆分尚待审核。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Elbow joint.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        -0.24860495328903198,
+        1.0990840196609497,
+        -0.034285448491573334
+      ],
+      "group": "lateral",
+      "context_bones": [
+        "Humerus",
+        "Radius",
+        "Ulna"
+      ],
+      "landmark_names": [
+        "肱骨外上髁",
+        "桡骨头",
+        "桡切迹"
+      ],
+      "origin": "肱骨外上髁。",
+      "insertion": "远端纤维与桡骨环状韧带融合，并与邻近旋后肌、桡侧腕短伸肌纤维相连。",
+      "shape": "外侧纤维束向环状韧带连续过渡；不应简单画成肱骨直接连到桡骨头的一条带。",
+      "comparison": "源对象存在；与环状韧带的融合边界仍待核对，不能当作整个外侧副韧带复合体。",
+      "limitations": "外侧尺副韧带（LUCL）不等同于此对象，本轮未检出独立同名源模型。",
+      "evidence_status": "reference_checked",
+      "references": [
+        {
+          "title": "Kenhub｜肘关节韧带",
+          "url": "https://www.kenhub.com/en/library/anatomy/elbow-joint",
+          "quote": "The radial collateral ligament has a low attachment to the lateral epicondyle of the humerus . The distal fibres blend with the annular ligament that encloses the head of the radius, as well as with the fibres of the supinator and the extensor carpi radialis brevis muscles.",
+          "retrieved": "2026-10-13"
+        }
+      ],
+      "context_tissues": [
+        "ligament_annular_radius_R"
+      ]
+    },
+    {
+      "id": "z_lig_radial_collateral_ligament_L",
+      "name_zh": "左肘桡侧副韧带",
+      "name_en": "Radial collateral ligament.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_humerus_L",
+        "bone_radius_L",
+        "bone_ulna_L"
+      ],
+      "joint_or_connection_ids": [
+        "humeroulnar_L",
+        "humeroradial_L",
+        "proximal_radioulnar_L"
+      ],
+      "source_structure_id": "Radial collateral ligament.l",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 96,
+      "note": "沿用原配坐标；依据源父级归入区域目录，关联骨不是精确起止点。附着范围、局部穿插及源组合对象的拆分尚待审核。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Elbow joint.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        0.248604878783226,
+        1.0990840196609497,
+        -0.034285448491573334
+      ],
+      "group": "lateral",
+      "context_bones": [
+        "Humerus",
+        "Radius",
+        "Ulna"
+      ],
+      "landmark_names": [
+        "肱骨外上髁",
+        "桡骨头",
+        "桡切迹"
+      ],
+      "origin": "肱骨外上髁。",
+      "insertion": "远端纤维与桡骨环状韧带融合，并与邻近旋后肌、桡侧腕短伸肌纤维相连。",
+      "shape": "外侧纤维束向环状韧带连续过渡；不应简单画成肱骨直接连到桡骨头的一条带。",
+      "comparison": "源对象存在；与环状韧带的融合边界仍待核对，不能当作整个外侧副韧带复合体。",
+      "limitations": "外侧尺副韧带（LUCL）不等同于此对象，本轮未检出独立同名源模型。",
+      "evidence_status": "reference_checked",
+      "references": [
+        {
+          "title": "Kenhub｜肘关节韧带",
+          "url": "https://www.kenhub.com/en/library/anatomy/elbow-joint",
+          "quote": "The radial collateral ligament has a low attachment to the lateral epicondyle of the humerus . The distal fibres blend with the annular ligament that encloses the head of the radius, as well as with the fibres of the supinator and the extensor carpi radialis brevis muscles.",
+          "retrieved": "2026-10-13"
+        }
+      ],
+      "context_tissues": [
+        "ligament_annular_radius_L"
+      ]
+    },
+    {
+      "id": "z_lig_quadrate_ligament_R",
+      "name_zh": "右方形韧带",
+      "name_en": "Quadrate ligament.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_humerus_R",
+        "bone_radius_R",
+        "bone_ulna_R"
+      ],
+      "joint_or_connection_ids": [
+        "humeroulnar_R",
+        "humeroradial_R",
+        "proximal_radioulnar_R"
+      ],
+      "source_structure_id": "Quadrate ligament.r",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 12,
+      "note": "沿用原配坐标；依据源父级归入区域目录，关联骨不是精确起止点。附着范围、局部穿插及源组合对象的拆分尚待审核。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Elbow joint.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        -0.22971636056900024,
+        1.0735381841659546,
+        -0.03288538008928299
+      ],
+      "group": "lateral",
+      "context_bones": [
+        "Radius",
+        "Ulna"
+      ],
+      "landmark_names": [
+        "桡切迹",
+        "桡骨颈"
+      ],
+      "origin": "尺骨旋后肌窝上部、桡切迹下方邻近区域。",
+      "insertion": "桡骨颈，位于桡骨粗隆近侧。",
+      "shape": "短纤维带，连接近侧桡尺骨；不能用来替代环状韧带。",
+      "comparison": "已有源对象，局部较小，需要与桡切迹及桡骨颈配合核对，不能把整个着色范围视为附着。",
+      "limitations": "概括性附着有资料支持；足印宽度与实际厚度未标定。",
+      "evidence_status": "reference_checked",
+      "references": [
+        {
+          "title": "Kenhub｜近侧桡尺关节韧带",
+          "url": "https://www.kenhub.com/en/library/anatomy/proximal-radioulnar-joint",
+          "quote": "The quadrate ligament is a short fibrous band that spans from the superior part of the supinator fossa of ulna to the neck of radius, just proximal to the radial tuberosity .",
+          "retrieved": "2026-10-13"
+        }
+      ]
+    },
+    {
+      "id": "z_lig_quadrate_ligament_L",
+      "name_zh": "左方形韧带",
+      "name_en": "Quadrate ligament.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_humerus_L",
+        "bone_radius_L",
+        "bone_ulna_L"
+      ],
+      "joint_or_connection_ids": [
+        "humeroulnar_L",
+        "humeroradial_L",
+        "proximal_radioulnar_L"
+      ],
+      "source_structure_id": "Quadrate ligament.l",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 12,
+      "note": "沿用原配坐标；依据源父级归入区域目录，关联骨不是精确起止点。附着范围、局部穿插及源组合对象的拆分尚待审核。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Elbow joint.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        0.22972141206264496,
+        1.0735381841659546,
+        -0.03288254514336586
+      ],
+      "group": "lateral",
+      "context_bones": [
+        "Radius",
+        "Ulna"
+      ],
+      "landmark_names": [
+        "桡切迹",
+        "桡骨颈"
+      ],
+      "origin": "尺骨旋后肌窝上部、桡切迹下方邻近区域。",
+      "insertion": "桡骨颈，位于桡骨粗隆近侧。",
+      "shape": "短纤维带，连接近侧桡尺骨；不能用来替代环状韧带。",
+      "comparison": "已有源对象，局部较小，需要与桡切迹及桡骨颈配合核对，不能把整个着色范围视为附着。",
+      "limitations": "概括性附着有资料支持；足印宽度与实际厚度未标定。",
+      "evidence_status": "reference_checked",
+      "references": [
+        {
+          "title": "Kenhub｜近侧桡尺关节韧带",
+          "url": "https://www.kenhub.com/en/library/anatomy/proximal-radioulnar-joint",
+          "quote": "The quadrate ligament is a short fibrous band that spans from the superior part of the supinator fossa of ulna to the neck of radius, just proximal to the radial tuberosity .",
+          "retrieved": "2026-10-13"
+        }
+      ]
+    },
+    {
+      "id": "ligament_annular_radius_L",
+      "name_zh": "左桡骨环状韧带",
+      "name_en": "Annular ligament of radius.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_radius_L",
+        "bone_ulna_L"
+      ],
+      "joint_or_connection_ids": [
+        "proximal_radioulnar_L"
+      ],
+      "source_structure_id": "Annular ligament of radius.l",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 376,
+      "note": "保留源坐标。关节囊开口、覆盖边界和韧带附着均待审核；关联骨只用于目录与展示。",
+      "granularity": "individual",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        0.24047286808490753,
+        1.0829628705978394,
+        -0.030769092962145805
+      ],
+      "group": "lateral",
+      "context_bones": [
+        "Radius",
+        "Ulna"
+      ],
+      "landmark_names": [
+        "桡骨头",
+        "桡切迹",
+        "桡骨颈"
+      ],
+      "origin": "尺骨桡切迹前缘。",
+      "insertion": "尺骨桡切迹后缘；主体环绕桡骨头。",
+      "shape": "与尺骨共同形成容纳桡骨头旋转的环。环绕接触不等于整圈固定附着在桡骨头。",
+      "comparison": "按源网格前、后终端列重建连续曲面，两端分别贴合尺骨；中间保持绕桡骨的走行。源版保留。",
+      "limitations": "端区依据源网格位置作局部贴合，精确附着范围尚未由独立解剖资料标定；尚未通过旋前、旋后运动验收。",
+      "evidence_status": "reference_checked",
+      "references": [
+        {
+          "title": "Kenhub｜近侧桡尺关节韧带",
+          "url": "https://www.kenhub.com/en/library/anatomy/proximal-radioulnar-joint",
+          "quote": "The annular ligament extends from the anterior margin of radial fossa of ulna, encircles the radial head and attaches to the posterior margin of the radial fossa. Thus, the annular ligament helps to create a stable ring within which the radial head can rotate.",
+          "retrieved": "2026-10-13"
+        }
+      ]
+    },
+    {
+      "id": "ligament_annular_radius_R",
+      "name_zh": "右桡骨环状韧带",
+      "name_en": "Annular ligament of radius.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_radius_R",
+        "bone_ulna_R"
+      ],
+      "joint_or_connection_ids": [
+        "proximal_radioulnar_R"
+      ],
+      "source_structure_id": "Annular ligament of radius.r",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 376,
+      "note": "保留源坐标。关节囊开口、覆盖边界和韧带附着均待审核；关联骨只用于目录与展示。",
+      "granularity": "individual",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -0.24049440026283264,
+        1.0829517841339111,
+        -0.030693447217345238
+      ],
+      "group": "lateral",
+      "context_bones": [
+        "Radius",
+        "Ulna"
+      ],
+      "landmark_names": [
+        "桡骨头",
+        "桡切迹",
+        "桡骨颈"
+      ],
+      "origin": "尺骨桡切迹前缘。",
+      "insertion": "尺骨桡切迹后缘；主体环绕桡骨头。",
+      "shape": "与尺骨共同形成容纳桡骨头旋转的环。环绕接触不等于整圈固定附着在桡骨头。",
+      "comparison": "按源网格前、后终端列重建连续曲面，两端分别贴合尺骨；中间保持绕桡骨的走行。源版保留。",
+      "limitations": "端区依据源网格位置作局部贴合，精确附着范围尚未由独立解剖资料标定；尚未通过旋前、旋后运动验收。",
+      "evidence_status": "reference_checked",
+      "references": [
+        {
+          "title": "Kenhub｜近侧桡尺关节韧带",
+          "url": "https://www.kenhub.com/en/library/anatomy/proximal-radioulnar-joint",
+          "quote": "The annular ligament extends from the anterior margin of radial fossa of ulna, encircles the radial head and attaches to the posterior margin of the radial fossa. Thus, the annular ligament helps to create a stable ring within which the radial head can rotate.",
+          "retrieved": "2026-10-13"
+        }
+      ]
+    },
+    {
+      "id": "elbow_ucl_anterior_R",
+      "name_zh": "右肘尺侧副韧带前束",
+      "name_en": "ucl anterior R",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_humerus_R",
+        "bone_ulna_R"
+      ],
+      "joint_or_connection_ids": [
+        "humeroulnar_R",
+        "proximal_radioulnar_R"
+      ],
+      "source_structure_id": "literature_guided_ucl_anterior",
+      "source_dataset": "文献关系 + Z-Anatomy 原配骨面候选重建",
+      "granularity": "independent_candidate_bundle",
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "group": "medial",
+      "context_bones": [
+        "Humerus",
+        "Ulna"
+      ],
+      "landmark_names": [
+        "肱骨内上髁",
+        "尺骨崇高结节"
+      ],
+      "origin": "肱骨内上髁前下方区域。",
+      "insertion": "尺骨崇高结节及沿尺骨嵴向远端延伸的附着区。",
+      "shape": "前内侧束；远端为延长的骨面附着区，并非一个点。",
+      "comparison": "独立重建候选；骨性标志只作定位，不等于韧带足印。",
+      "limitations": "附着边界、厚度、宽度与材料性质未通过解剖验收；纯屈伸显示变形，不代表真实受力。 前束远端沿尺骨嵴延伸范围存在个体差异，当前足印为定位候选，未复制文献平均尺寸为本人的测量。",
+      "evidence_status": "reference_checked_geometry_pending",
+      "references": [
+        {
+          "title": "Cinque et al. 2020｜肘内侧尺侧副韧带复合体综述",
+          "url": "https://europepmc.org/articles/PMC7083993",
+          "quote": "The medial elbow collateral ligament complex is composed of three bundles, the anterior bundle, posterior bundle, and oblique bundle.",
+          "retrieved": "2026-10-14"
+        }
+      ],
+      "geometry_revision": "elbow-supplement-v1",
+      "motion_kind": "deform",
+      "attachment_candidates": {
+        "status": "geometric_locator_not_anatomical_footprint",
+        "centerline_web_m": [
+          [
+            -0.1863703429698944,
+            1.1045172214508057,
+            -0.03295654430985451
+          ],
+          [
+            -0.1955460160970688,
+            1.0906471014022827,
+            -0.03201882168650627
+          ],
+          [
+            -0.20772169530391693,
+            1.0767769813537598,
+            -0.031081099063158035
+          ]
+        ],
+        "terminal_widths_mm": [
+          5.0,
+          8.0
+        ],
+        "terminal_inset_mm": 0.12,
+        "terminal_surface_max_distance_mm": [
+          0.1500178623246029,
+          0.24923929595388472
+        ]
+      },
+      "display_source": "elbow-review/elbow-review-supplement.glb",
+      "triangles": 4156
+    },
+    {
+      "id": "elbow_ucl_posterior_R",
+      "name_zh": "右肘尺侧副韧带后束",
+      "name_en": "ucl posterior R",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_humerus_R",
+        "bone_ulna_R"
+      ],
+      "joint_or_connection_ids": [
+        "humeroulnar_R",
+        "proximal_radioulnar_R"
+      ],
+      "source_structure_id": "literature_guided_ucl_posterior",
+      "source_dataset": "文献关系 + Z-Anatomy 原配骨面候选重建",
+      "granularity": "independent_candidate_bundle",
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "group": "medial",
+      "context_bones": [
+        "Humerus",
+        "Ulna"
+      ],
+      "landmark_names": [
+        "肱骨内上髁",
+        "鹰嘴"
+      ],
+      "origin": "肱骨内上髁后下方区域。",
+      "insertion": "尺骨鹰嘴内侧缘。",
+      "shape": "后内侧扇形束，尺骨侧附着较展开；不横跨肘后正中填满空隙。",
+      "comparison": "独立重建候选；骨性标志只作定位，不等于韧带足印。",
+      "limitations": "附着边界、厚度、宽度与材料性质未通过解剖验收；纯屈伸显示变形，不代表真实受力。",
+      "evidence_status": "reference_checked_geometry_pending",
+      "references": [
+        {
+          "title": "Cinque et al. 2020｜肘内侧尺侧副韧带复合体综述",
+          "url": "https://europepmc.org/articles/PMC7083993",
+          "quote": "The medial elbow collateral ligament complex is composed of three bundles, the anterior bundle, posterior bundle, and oblique bundle.",
+          "retrieved": "2026-10-14"
+        },
+        {
+          "title": "Applied anatomy of the elbow｜外侧复合体与斜索",
+          "url": "https://clinicalgate.com/2015/03/10/anatomy-of-the-elbow/",
+          "quote": "a posterior part, directed towards the olecranon. All three parts are reinforced by an oblique band (ligament of Cooper) distally on the ulna.",
+          "retrieved": "2026-10-14"
+        }
+      ],
+      "geometry_revision": "elbow-supplement-v1",
+      "motion_kind": "deform",
+      "attachment_candidates": {
+        "status": "geometric_locator_not_anatomical_footprint",
+        "centerline_web_m": [
+          [
+            -0.18407002091407776,
+            1.105762243270874,
+            -0.03908545896410942
+          ],
+          [
+            -0.19338904321193695,
+            1.102464199066162,
+            -0.04718749597668648
+          ],
+          [
+            -0.20570805668830872,
+            1.0991660356521606,
+            -0.055289532989263535
+          ]
+        ],
+        "terminal_widths_mm": [
+          4.0,
+          11.0
+        ],
+        "terminal_inset_mm": 0.12,
+        "terminal_surface_max_distance_mm": [
+          0.21551594545599073,
+          0.24529898655600846
+        ]
+      },
+      "display_source": "elbow-review/elbow-review-supplement.glb",
+      "triangles": 4156
+    },
+    {
+      "id": "elbow_ucl_transverse_R",
+      "name_zh": "右肘尺侧副韧带横束",
+      "name_en": "ucl transverse R",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_ulna_R"
+      ],
+      "joint_or_connection_ids": [
+        "humeroulnar_R",
+        "proximal_radioulnar_R"
+      ],
+      "source_structure_id": "literature_guided_ucl_transverse",
+      "source_dataset": "文献关系 + Z-Anatomy 原配骨面候选重建",
+      "granularity": "independent_candidate_bundle",
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "group": "medial",
+      "context_bones": [
+        "Ulna"
+      ],
+      "landmark_names": [
+        "尺骨崇高结节",
+        "鹰嘴"
+      ],
+      "origin": "尺骨冠突内侧邻近区域。",
+      "insertion": "尺骨鹰嘴内侧邻近区域；两端均在尺骨。",
+      "shape": "横/斜行纤维连接同一块尺骨上的两处区域，不跨肱尺关节。",
+      "comparison": "独立重建候选；骨性标志只作定位，不等于韧带足印。",
+      "limitations": "附着边界、厚度、宽度与材料性质未通过解剖验收；纯屈伸显示变形，不代表真实受力。",
+      "evidence_status": "reference_checked_geometry_pending",
+      "references": [
+        {
+          "title": "Cinque et al. 2020｜肘内侧尺侧副韧带复合体综述",
+          "url": "https://europepmc.org/articles/PMC7083993",
+          "quote": "The medial elbow collateral ligament complex is composed of three bundles, the anterior bundle, posterior bundle, and oblique bundle.",
+          "retrieved": "2026-10-14"
+        },
+        {
+          "title": "Applied anatomy of the elbow｜外侧复合体与斜索",
+          "url": "https://clinicalgate.com/2015/03/10/anatomy-of-the-elbow/",
+          "quote": "a posterior part, directed towards the olecranon. All three parts are reinforced by an oblique band (ligament of Cooper) distally on the ulna.",
+          "retrieved": "2026-10-14"
+        }
+      ],
+      "geometry_revision": "elbow-supplement-v1",
+      "motion_kind": "rigid_forearm",
+      "attachment_candidates": {
+        "status": "geometric_locator_not_anatomical_footprint",
+        "centerline_web_m": [
+          [
+            -0.20601609349250793,
+            1.0802348852157593,
+            -0.030406232923269272
+          ],
+          [
+            -0.20386207103729248,
+            1.08970046043396,
+            -0.0428478829562664
+          ],
+          [
+            -0.20570805668830872,
+            1.0991660356521606,
+            -0.055289532989263535
+          ]
+        ],
+        "terminal_widths_mm": [
+          4.5,
+          6.0
+        ],
+        "terminal_inset_mm": 0.12,
+        "terminal_surface_max_distance_mm": [
+          0.17749944527167827,
+          0.1620272232685238
+        ]
+      },
+      "display_source": "elbow-review/elbow-review-supplement.glb",
+      "triangles": 4156
+    },
+    {
+      "id": "elbow_lucl_R",
+      "name_zh": "右肘尺侧外侧副韧带",
+      "name_en": "lucl R",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_humerus_R",
+        "bone_ulna_R"
+      ],
+      "joint_or_connection_ids": [
+        "humeroulnar_R",
+        "proximal_radioulnar_R"
+      ],
+      "source_structure_id": "literature_guided_lucl",
+      "source_dataset": "文献关系 + Z-Anatomy 原配骨面候选重建",
+      "granularity": "independent_candidate_bundle",
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "group": "lateral",
+      "context_bones": [
+        "Humerus",
+        "Radius",
+        "Ulna"
+      ],
+      "landmark_names": [
+        "肱骨外上髁",
+        "桡骨头",
+        "旋后肌嵴"
+      ],
+      "origin": "肱骨外上髁外侧韧带复合体起始区域。",
+      "insertion": "尺骨旋后肌嵴。",
+      "shape": "从外侧起始区绕桡骨头后外侧走向尺骨；不同于终止于环状韧带的桡侧副韧带。",
+      "comparison": "独立重建候选；骨性标志只作定位，不等于韧带足印。",
+      "limitations": "附着边界、厚度、宽度与材料性质未通过解剖验收；纯屈伸显示变形，不代表真实受力。",
+      "evidence_status": "reference_checked_geometry_pending",
+      "references": [
+        {
+          "title": "Applied anatomy of the elbow｜外侧复合体与斜索",
+          "url": "https://clinicalgate.com/2015/03/10/anatomy-of-the-elbow/",
+          "quote": "posteriorly via the lateral ulnar collateral ligament which inserts at the supinator crest of the ulna",
+          "retrieved": "2026-10-14"
+        }
+      ],
+      "geometry_revision": "elbow-supplement-v1",
+      "motion_kind": "deform",
+      "attachment_candidates": {
+        "status": "geometric_locator_not_anatomical_footprint",
+        "centerline_web_m": [
+          [
+            -0.2479710429906845,
+            1.109999656677246,
+            -0.04440842941403389
+          ],
+          [
+            -0.23892265558242798,
+            1.0805268287658691,
+            -0.04552425444126129
+          ],
+          [
+            -0.23217430710792542,
+            1.0591201782226562,
+            -0.03876163437962532
+          ]
+        ],
+        "terminal_widths_mm": [
+          4.0,
+          6.0
+        ],
+        "terminal_inset_mm": 0.12,
+        "terminal_surface_max_distance_mm": [
+          0.12002841685898602,
+          0.12003277515759692
+        ]
+      },
+      "display_source": "elbow-review/elbow-review-supplement.glb",
+      "triangles": 1564
+    },
+    {
+      "id": "elbow_ucl_anterior_L",
+      "name_zh": "左肘尺侧副韧带前束",
+      "name_en": "ucl anterior L",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_humerus_L",
+        "bone_ulna_L"
+      ],
+      "joint_or_connection_ids": [
+        "humeroulnar_L",
+        "proximal_radioulnar_L"
+      ],
+      "source_structure_id": "literature_guided_ucl_anterior",
+      "source_dataset": "文献关系 + Z-Anatomy 原配骨面候选重建",
+      "granularity": "independent_candidate_bundle",
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "group": "medial",
+      "context_bones": [
+        "Humerus",
+        "Ulna"
+      ],
+      "landmark_names": [
+        "肱骨内上髁",
+        "尺骨崇高结节"
+      ],
+      "origin": "肱骨内上髁前下方区域。",
+      "insertion": "尺骨崇高结节及沿尺骨嵴向远端延伸的附着区。",
+      "shape": "前内侧束；远端为延长的骨面附着区，并非一个点。",
+      "comparison": "独立重建候选；骨性标志只作定位，不等于韧带足印。",
+      "limitations": "附着边界、厚度、宽度与材料性质未通过解剖验收；纯屈伸显示变形，不代表真实受力。 前束远端沿尺骨嵴延伸范围存在个体差异，当前足印为定位候选，未复制文献平均尺寸为本人的测量。",
+      "evidence_status": "reference_checked_geometry_pending",
+      "references": [
+        {
+          "title": "Cinque et al. 2020｜肘内侧尺侧副韧带复合体综述",
+          "url": "https://europepmc.org/articles/PMC7083993",
+          "quote": "The medial elbow collateral ligament complex is composed of three bundles, the anterior bundle, posterior bundle, and oblique bundle.",
+          "retrieved": "2026-10-14"
+        }
+      ],
+      "geometry_revision": "elbow-supplement-v1",
+      "motion_kind": "deform",
+      "attachment_candidates": {
+        "status": "geometric_locator_not_anatomical_footprint",
+        "centerline_web_m": [
+          [
+            0.1863703727722168,
+            1.1045172214508057,
+            -0.032956548035144806
+          ],
+          [
+            0.19554603099822998,
+            1.0906472206115723,
+            -0.03201883286237717
+          ],
+          [
+            0.20772168040275574,
+            1.0767771005630493,
+            -0.03108111396431923
+          ]
+        ],
+        "terminal_widths_mm": [
+          5.0,
+          8.0
+        ],
+        "terminal_inset_mm": 0.12,
+        "terminal_surface_max_distance_mm": [
+          0.1500178623246029,
+          0.24987428332678974
+        ]
+      },
+      "display_source": "elbow-review/elbow-review-supplement.glb",
+      "triangles": 4156
+    },
+    {
+      "id": "elbow_ucl_posterior_L",
+      "name_zh": "左肘尺侧副韧带后束",
+      "name_en": "ucl posterior L",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_humerus_L",
+        "bone_ulna_L"
+      ],
+      "joint_or_connection_ids": [
+        "humeroulnar_L",
+        "proximal_radioulnar_L"
+      ],
+      "source_structure_id": "literature_guided_ucl_posterior",
+      "source_dataset": "文献关系 + Z-Anatomy 原配骨面候选重建",
+      "granularity": "independent_candidate_bundle",
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "group": "medial",
+      "context_bones": [
+        "Humerus",
+        "Ulna"
+      ],
+      "landmark_names": [
+        "肱骨内上髁",
+        "鹰嘴"
+      ],
+      "origin": "肱骨内上髁后下方区域。",
+      "insertion": "尺骨鹰嘴内侧缘。",
+      "shape": "后内侧扇形束，尺骨侧附着较展开；不横跨肘后正中填满空隙。",
+      "comparison": "独立重建候选；骨性标志只作定位，不等于韧带足印。",
+      "limitations": "附着边界、厚度、宽度与材料性质未通过解剖验收；纯屈伸显示变形，不代表真实受力。",
+      "evidence_status": "reference_checked_geometry_pending",
+      "references": [
+        {
+          "title": "Cinque et al. 2020｜肘内侧尺侧副韧带复合体综述",
+          "url": "https://europepmc.org/articles/PMC7083993",
+          "quote": "The medial elbow collateral ligament complex is composed of three bundles, the anterior bundle, posterior bundle, and oblique bundle.",
+          "retrieved": "2026-10-14"
+        },
+        {
+          "title": "Applied anatomy of the elbow｜外侧复合体与斜索",
+          "url": "https://clinicalgate.com/2015/03/10/anatomy-of-the-elbow/",
+          "quote": "a posterior part, directed towards the olecranon. All three parts are reinforced by an oblique band (ligament of Cooper) distally on the ulna.",
+          "retrieved": "2026-10-14"
+        }
+      ],
+      "geometry_revision": "elbow-supplement-v1",
+      "motion_kind": "deform",
+      "attachment_candidates": {
+        "status": "geometric_locator_not_anatomical_footprint",
+        "centerline_web_m": [
+          [
+            0.18407006561756134,
+            1.105762243270874,
+            -0.03908546268939972
+          ],
+          [
+            0.19338910281658173,
+            1.1024640798568726,
+            -0.047187503427267075
+          ],
+          [
+            0.2057081162929535,
+            1.099165916442871,
+            -0.05528954416513443
+          ]
+        ],
+        "terminal_widths_mm": [
+          4.0,
+          11.0
+        ],
+        "terminal_inset_mm": 0.12,
+        "terminal_surface_max_distance_mm": [
+          0.21557534637395293,
+          0.24529898655600846
+        ]
+      },
+      "display_source": "elbow-review/elbow-review-supplement.glb",
+      "triangles": 4156
+    },
+    {
+      "id": "elbow_ucl_transverse_L",
+      "name_zh": "左肘尺侧副韧带横束",
+      "name_en": "ucl transverse L",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_ulna_L"
+      ],
+      "joint_or_connection_ids": [
+        "humeroulnar_L",
+        "proximal_radioulnar_L"
+      ],
+      "source_structure_id": "literature_guided_ucl_transverse",
+      "source_dataset": "文献关系 + Z-Anatomy 原配骨面候选重建",
+      "granularity": "independent_candidate_bundle",
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "group": "medial",
+      "context_bones": [
+        "Ulna"
+      ],
+      "landmark_names": [
+        "尺骨崇高结节",
+        "鹰嘴"
+      ],
+      "origin": "尺骨冠突内侧邻近区域。",
+      "insertion": "尺骨鹰嘴内侧邻近区域；两端均在尺骨。",
+      "shape": "横/斜行纤维连接同一块尺骨上的两处区域，不跨肱尺关节。",
+      "comparison": "独立重建候选；骨性标志只作定位，不等于韧带足印。",
+      "limitations": "附着边界、厚度、宽度与材料性质未通过解剖验收；纯屈伸显示变形，不代表真实受力。",
+      "evidence_status": "reference_checked_geometry_pending",
+      "references": [
+        {
+          "title": "Cinque et al. 2020｜肘内侧尺侧副韧带复合体综述",
+          "url": "https://europepmc.org/articles/PMC7083993",
+          "quote": "The medial elbow collateral ligament complex is composed of three bundles, the anterior bundle, posterior bundle, and oblique bundle.",
+          "retrieved": "2026-10-14"
+        },
+        {
+          "title": "Applied anatomy of the elbow｜外侧复合体与斜索",
+          "url": "https://clinicalgate.com/2015/03/10/anatomy-of-the-elbow/",
+          "quote": "a posterior part, directed towards the olecranon. All three parts are reinforced by an oblique band (ligament of Cooper) distally on the ulna.",
+          "retrieved": "2026-10-14"
+        }
+      ],
+      "geometry_revision": "elbow-supplement-v1",
+      "motion_kind": "rigid_forearm",
+      "attachment_candidates": {
+        "status": "geometric_locator_not_anatomical_footprint",
+        "centerline_web_m": [
+          [
+            0.20601612329483032,
+            1.0802350044250488,
+            -0.030406232923269272
+          ],
+          [
+            0.20386211574077606,
+            1.08970046043396,
+            -0.0428478866815567
+          ],
+          [
+            0.2057081162929535,
+            1.099165916442871,
+            -0.05528954416513443
+          ]
+        ],
+        "terminal_widths_mm": [
+          4.5,
+          6.0
+        ],
+        "terminal_inset_mm": 0.12,
+        "terminal_surface_max_distance_mm": [
+          0.17748161917552352,
+          0.16203992709051818
+        ]
+      },
+      "display_source": "elbow-review/elbow-review-supplement.glb",
+      "triangles": 4156
+    },
+    {
+      "id": "elbow_lucl_L",
+      "name_zh": "左肘尺侧外侧副韧带",
+      "name_en": "lucl L",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_humerus_L",
+        "bone_ulna_L"
+      ],
+      "joint_or_connection_ids": [
+        "humeroulnar_L",
+        "proximal_radioulnar_L"
+      ],
+      "source_structure_id": "literature_guided_lucl",
+      "source_dataset": "文献关系 + Z-Anatomy 原配骨面候选重建",
+      "granularity": "independent_candidate_bundle",
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "group": "lateral",
+      "context_bones": [
+        "Humerus",
+        "Radius",
+        "Ulna"
+      ],
+      "landmark_names": [
+        "肱骨外上髁",
+        "桡骨头",
+        "旋后肌嵴"
+      ],
+      "origin": "肱骨外上髁外侧韧带复合体起始区域。",
+      "insertion": "尺骨旋后肌嵴。",
+      "shape": "从外侧起始区绕桡骨头后外侧走向尺骨；不同于终止于环状韧带的桡侧副韧带。",
+      "comparison": "独立重建候选；骨性标志只作定位，不等于韧带足印。",
+      "limitations": "附着边界、厚度、宽度与材料性质未通过解剖验收；纯屈伸显示变形，不代表真实受力。",
+      "evidence_status": "reference_checked_geometry_pending",
+      "references": [
+        {
+          "title": "Applied anatomy of the elbow｜外侧复合体与斜索",
+          "url": "https://clinicalgate.com/2015/03/10/anatomy-of-the-elbow/",
+          "quote": "posteriorly via the lateral ulnar collateral ligament which inserts at the supinator crest of the ulna",
+          "retrieved": "2026-10-14"
+        }
+      ],
+      "geometry_revision": "elbow-supplement-v1",
+      "motion_kind": "deform",
+      "attachment_candidates": {
+        "status": "geometric_locator_not_anatomical_footprint",
+        "centerline_web_m": [
+          [
+            0.2479710876941681,
+            1.1099995374679565,
+            -0.044408418238162994
+          ],
+          [
+            0.23892268538475037,
+            1.0805268287658691,
+            -0.04552425444126129
+          ],
+          [
+            0.2321743220090866,
+            1.0591202974319458,
+            -0.038761649280786514
+          ]
+        ],
+        "terminal_widths_mm": [
+          4.0,
+          6.0
+        ],
+        "terminal_inset_mm": 0.12,
+        "terminal_surface_max_distance_mm": [
+          0.12002529547316954,
+          0.12001760478597134
+        ]
+      },
+      "display_source": "elbow-review/elbow-review-supplement.glb",
+      "triangles": 1564
+    },
+    {
+      "id": "elbow_oblique_cord_R",
+      "name_zh": "右前臂斜索",
+      "name_en": "oblique cord R",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_ulna_R",
+        "bone_radius_R"
+      ],
+      "joint_or_connection_ids": [
+        "humeroulnar_R",
+        "proximal_radioulnar_R"
+      ],
+      "source_structure_id": "Oblique cord.r",
+      "source_dataset": "Z-Anatomy 同源斜索",
+      "granularity": "individual_source_object",
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "group": "lateral",
+      "context_bones": [
+        "Ulna",
+        "Radius"
+      ],
+      "landmark_names": [
+        "桡骨颈"
+      ],
+      "origin": "尺骨粗隆外侧缘邻近区域。",
+      "insertion": "桡骨粗隆下方。",
+      "shape": "向远端、外侧斜行的近端前臂纤维束；不等同于尺侧副韧带横束。",
+      "comparison": "沿用同源斜索控制网格，增加显示细分。",
+      "limitations": "附着边界、厚度、宽度与材料性质未通过解剖验收；纯屈伸显示变形，不代表真实受力。",
+      "evidence_status": "reference_checked_geometry_pending",
+      "references": [
+        {
+          "title": "Applied anatomy of the elbow｜外侧复合体与斜索",
+          "url": "https://clinicalgate.com/2015/03/10/anatomy-of-the-elbow/",
+          "quote": "The oblique cord extends inferolaterally from the lateral border of the tuberosity of the ulna to the radius, just below its tuberosity.",
+          "retrieved": "2026-10-14"
+        }
+      ],
+      "geometry_revision": "elbow-supplement-v1",
+      "motion_kind": "rigid_forearm",
+      "display_source": "elbow-review/elbow-review-supplement.glb",
+      "triangles": 432
+    },
+    {
+      "id": "elbow_oblique_cord_L",
+      "name_zh": "左前臂斜索",
+      "name_en": "oblique cord L",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_ulna_L",
+        "bone_radius_L"
+      ],
+      "joint_or_connection_ids": [
+        "humeroulnar_L",
+        "proximal_radioulnar_L"
+      ],
+      "source_structure_id": "Oblique cord.l",
+      "source_dataset": "Z-Anatomy 同源斜索",
+      "granularity": "individual_source_object",
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "group": "lateral",
+      "context_bones": [
+        "Ulna",
+        "Radius"
+      ],
+      "landmark_names": [
+        "桡骨颈"
+      ],
+      "origin": "尺骨粗隆外侧缘邻近区域。",
+      "insertion": "桡骨粗隆下方。",
+      "shape": "向远端、外侧斜行的近端前臂纤维束；不等同于尺侧副韧带横束。",
+      "comparison": "沿用同源斜索控制网格，增加显示细分。",
+      "limitations": "附着边界、厚度、宽度与材料性质未通过解剖验收；纯屈伸显示变形，不代表真实受力。",
+      "evidence_status": "reference_checked_geometry_pending",
+      "references": [
+        {
+          "title": "Applied anatomy of the elbow｜外侧复合体与斜索",
+          "url": "https://clinicalgate.com/2015/03/10/anatomy-of-the-elbow/",
+          "quote": "The oblique cord extends inferolaterally from the lateral border of the tuberosity of the ulna to the radius, just below its tuberosity.",
+          "retrieved": "2026-10-14"
+        }
+      ],
+      "geometry_revision": "elbow-supplement-v1",
+      "motion_kind": "rigid_forearm",
+      "display_source": "elbow-review/elbow-review-supplement.glb",
+      "triangles": 432
+    }
+  ],
+  "gaps": [
+    "新增前、后、横束及 LUCL 为独立候选，不代表精确足印通过验收。",
+    "副外侧副韧带存在变异，暂无可靠独立同源对象，本次未添加。",
+    "关节囊尚未绑定运动；旋前旋后、真实材料应力尚未实现。"
+  ]
+}

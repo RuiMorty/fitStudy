@@ -1,0 +1,1054 @@
+[
+  {
+    "id": "z_lig_trapezoid_ligament_R",
+    "raw_vertices": 6,
+    "original_triangles": 56,
+    "refined_triangles": 2240,
+    "boundary_preserved": true,
+    "cross_section_display_relief_max_mm": 0.55,
+    "surface_displacement_max_mm": 0.535,
+    "end_candidates": [
+      {
+        "position": [
+          -0.1309823840856552,
+          1.4194509983062744,
+          -0.025110868737101555
+        ],
+        "nearest_bone": "Clavicle.r",
+        "distance_mm": 0.456,
+        "distances_mm": {
+          "Scapula.r": 13.524,
+          "Humerus.r": 29.668,
+          "Clavicle.r": 0.456
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      },
+      {
+        "position": [
+          -0.12418224662542343,
+          1.3971205949783325,
+          -0.011828413233160973
+        ],
+        "nearest_bone": "Scapula.r",
+        "distance_mm": 0.207,
+        "distances_mm": {
+          "Scapula.r": 0.207,
+          "Humerus.r": 25.827,
+          "Clavicle.r": 21.851
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      }
+    ],
+    "suspected_penetration_nearest_normal_only": {
+      "Clavicle.r": {
+        "samples": 11,
+        "max_depth_mm": 1.07
+      }
+    },
+    "anatomical_status": "pending"
+  },
+  {
+    "id": "z_lig_trapezoid_ligament_L",
+    "raw_vertices": 6,
+    "original_triangles": 56,
+    "refined_triangles": 2240,
+    "boundary_preserved": true,
+    "cross_section_display_relief_max_mm": 0.55,
+    "surface_displacement_max_mm": 0.535,
+    "end_candidates": [
+      {
+        "position": [
+          0.13098233938217163,
+          1.4194509983062744,
+          -0.025110868737101555
+        ],
+        "nearest_bone": "Clavicle.l",
+        "distance_mm": 0.456,
+        "distances_mm": {
+          "Scapula.l": 13.524,
+          "Humerus.l": 29.668,
+          "Clavicle.l": 0.456
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      },
+      {
+        "position": [
+          0.12418218702077866,
+          1.3971205949783325,
+          -0.011828413233160973
+        ],
+        "nearest_bone": "Scapula.l",
+        "distance_mm": 0.207,
+        "distances_mm": {
+          "Scapula.l": 0.207,
+          "Humerus.l": 25.827,
+          "Clavicle.l": 21.851
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      }
+    ],
+    "suspected_penetration_nearest_normal_only": {
+      "Clavicle.l": {
+        "samples": 11,
+        "max_depth_mm": 1.07
+      }
+    },
+    "anatomical_status": "pending"
+  },
+  {
+    "id": "z_lig_transverse_humeral_ligament_R",
+    "raw_vertices": 12,
+    "original_triangles": 464,
+    "refined_triangles": 25216,
+    "boundary_preserved": true,
+    "cross_section_display_relief_max_mm": 0.55,
+    "surface_displacement_max_mm": 0.514,
+    "end_candidates": [
+      {
+        "position": [
+          -0.18356885015964508,
+          1.3968117237091064,
+          -0.011082072742283344
+        ],
+        "nearest_bone": "Humerus.r",
+        "distance_mm": 0.197,
+        "distances_mm": {
+          "Scapula.r": 27.885,
+          "Humerus.r": 0.197,
+          "Clavicle.r": 42.242
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      },
+      {
+        "position": [
+          -0.1781831830739975,
+          1.3810725212097168,
+          -0.005750528071075678
+        ],
+        "nearest_bone": "Humerus.r",
+        "distance_mm": 0.445,
+        "distances_mm": {
+          "Scapula.r": 37.896,
+          "Humerus.r": 0.445,
+          "Clavicle.r": 51.017
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      }
+    ],
+    "suspected_penetration_nearest_normal_only": {
+      "Humerus.r": {
+        "samples": 755,
+        "max_depth_mm": 1.43
+      }
+    },
+    "anatomical_status": "pending"
+  },
+  {
+    "id": "z_lig_transverse_humeral_ligament_L",
+    "raw_vertices": 12,
+    "original_triangles": 136,
+    "refined_triangles": 6464,
+    "boundary_preserved": true,
+    "cross_section_display_relief_max_mm": 0.55,
+    "surface_displacement_max_mm": 0.513,
+    "end_candidates": [
+      {
+        "position": [
+          0.18296211957931519,
+          1.3968929052352905,
+          -0.011181649751961231
+        ],
+        "nearest_bone": "Humerus.l",
+        "distance_mm": 0.115,
+        "distances_mm": {
+          "Scapula.l": 27.428,
+          "Humerus.l": 0.115,
+          "Clavicle.l": 41.706
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      },
+      {
+        "position": [
+          0.17885930836200714,
+          1.3807951211929321,
+          -0.0057029868476092815
+        ],
+        "nearest_bone": "Humerus.l",
+        "distance_mm": 1.164,
+        "distances_mm": {
+          "Scapula.l": 38.616,
+          "Humerus.l": 1.164,
+          "Clavicle.l": 51.616
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      }
+    ],
+    "suspected_penetration_nearest_normal_only": {
+      "Humerus.l": {
+        "samples": 231,
+        "max_depth_mm": 1.45
+      }
+    },
+    "anatomical_status": "pending"
+  },
+  {
+    "id": "z_lig_superior_transverse_scapular_ligament_R",
+    "raw_vertices": 4,
+    "original_triangles": 12,
+    "refined_triangles": 320,
+    "boundary_preserved": true,
+    "cross_section_display_relief_max_mm": 0.55,
+    "surface_displacement_max_mm": 0.356,
+    "end_candidates": [
+      {
+        "position": [
+          -0.11237458884716034,
+          1.3986127376556396,
+          -0.038553591817617416
+        ],
+        "nearest_bone": "Scapula.r",
+        "distance_mm": 0.407,
+        "distances_mm": {
+          "Scapula.r": 0.407,
+          "Humerus.r": 36.25,
+          "Clavicle.r": 10.174
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      },
+      {
+        "position": [
+          -0.1033807024359703,
+          1.39399254322052,
+          -0.054191336035728455
+        ],
+        "nearest_bone": "Scapula.r",
+        "distance_mm": 0.453,
+        "distances_mm": {
+          "Scapula.r": 0.453,
+          "Humerus.r": 48.246,
+          "Clavicle.r": 20.179
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      }
+    ],
+    "suspected_penetration_nearest_normal_only": {
+      "Scapula.r": {
+        "samples": 30,
+        "max_depth_mm": 0.74
+      }
+    },
+    "anatomical_status": "pending"
+  },
+  {
+    "id": "z_lig_superior_transverse_scapular_ligament_L",
+    "raw_vertices": 4,
+    "original_triangles": 12,
+    "refined_triangles": 320,
+    "boundary_preserved": true,
+    "cross_section_display_relief_max_mm": 0.55,
+    "surface_displacement_max_mm": 0.356,
+    "end_candidates": [
+      {
+        "position": [
+          0.11237458884716034,
+          1.3986127376556396,
+          -0.038553591817617416
+        ],
+        "nearest_bone": "Scapula.l",
+        "distance_mm": 0.407,
+        "distances_mm": {
+          "Scapula.l": 0.407,
+          "Humerus.l": 36.25,
+          "Clavicle.l": 10.174
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      },
+      {
+        "position": [
+          0.1033807024359703,
+          1.39399254322052,
+          -0.054191336035728455
+        ],
+        "nearest_bone": "Scapula.l",
+        "distance_mm": 0.453,
+        "distances_mm": {
+          "Scapula.l": 0.453,
+          "Humerus.l": 48.246,
+          "Clavicle.l": 20.179
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      }
+    ],
+    "suspected_penetration_nearest_normal_only": {
+      "Scapula.l": {
+        "samples": 30,
+        "max_depth_mm": 0.74
+      }
+    },
+    "anatomical_status": "pending"
+  },
+  {
+    "id": "z_lig_superior_glenohumeral_ligament_R",
+    "raw_vertices": 17,
+    "original_triangles": 200,
+    "refined_triangles": 8992,
+    "boundary_preserved": true,
+    "cross_section_display_relief_max_mm": 0.55,
+    "surface_displacement_max_mm": 0.515,
+    "end_candidates": [
+      {
+        "position": [
+          -0.14187565445899963,
+          1.3962093591690063,
+          -0.03226914629340172
+        ],
+        "nearest_bone": "Scapula.r",
+        "distance_mm": 1.133,
+        "distances_mm": {
+          "Scapula.r": 1.133,
+          "Humerus.r": 7.252,
+          "Clavicle.r": 17.976
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      },
+      {
+        "position": [
+          -0.16756309568881989,
+          1.3905646800994873,
+          -0.0073601496405899525
+        ],
+        "nearest_bone": "Humerus.r",
+        "distance_mm": 0.629,
+        "distances_mm": {
+          "Scapula.r": 26.098,
+          "Humerus.r": 0.629,
+          "Clavicle.r": 37.984
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      }
+    ],
+    "suspected_penetration_nearest_normal_only": {
+      "Scapula.r": {
+        "samples": 136,
+        "max_depth_mm": 1.39
+      },
+      "Humerus.r": {
+        "samples": 50,
+        "max_depth_mm": 0.85
+      }
+    },
+    "anatomical_status": "pending"
+  },
+  {
+    "id": "z_lig_superior_glenohumeral_ligament_L",
+    "raw_vertices": 17,
+    "original_triangles": 200,
+    "refined_triangles": 8992,
+    "boundary_preserved": true,
+    "cross_section_display_relief_max_mm": 0.55,
+    "surface_displacement_max_mm": 0.515,
+    "end_candidates": [
+      {
+        "position": [
+          0.14187560975551605,
+          1.3962093591690063,
+          -0.03226914629340172
+        ],
+        "nearest_bone": "Scapula.l",
+        "distance_mm": 1.133,
+        "distances_mm": {
+          "Scapula.l": 1.133,
+          "Humerus.l": 7.252,
+          "Clavicle.l": 17.976
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      },
+      {
+        "position": [
+          0.1675630509853363,
+          1.3905646800994873,
+          -0.0073601496405899525
+        ],
+        "nearest_bone": "Humerus.l",
+        "distance_mm": 0.629,
+        "distances_mm": {
+          "Scapula.l": 26.098,
+          "Humerus.l": 0.629,
+          "Clavicle.l": 37.984
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      }
+    ],
+    "suspected_penetration_nearest_normal_only": {
+      "Scapula.l": {
+        "samples": 136,
+        "max_depth_mm": 1.39
+      },
+      "Humerus.l": {
+        "samples": 50,
+        "max_depth_mm": 0.85
+      }
+    },
+    "anatomical_status": "pending"
+  },
+  {
+    "id": "z_lig_middle_glenohumeral_ligament_R",
+    "raw_vertices": 24,
+    "original_triangles": 280,
+    "refined_triangles": 13664,
+    "boundary_preserved": true,
+    "cross_section_display_relief_max_mm": 0.55,
+    "surface_displacement_max_mm": 0.55,
+    "end_candidates": [
+      {
+        "position": [
+          -0.13942717015743256,
+          1.390685796737671,
+          -0.027232231572270393
+        ],
+        "nearest_bone": "Scapula.r",
+        "distance_mm": 0.155,
+        "distances_mm": {
+          "Scapula.r": 0.155,
+          "Humerus.r": 6.775,
+          "Clavicle.r": 24.388
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      },
+      {
+        "position": [
+          -0.1634320765733719,
+          1.3838043212890625,
+          -0.0051445309072732925
+        ],
+        "nearest_bone": "Humerus.r",
+        "distance_mm": 0.724,
+        "distances_mm": {
+          "Scapula.r": 22.992,
+          "Humerus.r": 0.724,
+          "Clavicle.r": 42.345
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      }
+    ],
+    "suspected_penetration_nearest_normal_only": {
+      "Humerus.r": {
+        "samples": 71,
+        "max_depth_mm": 0.77
+      }
+    },
+    "anatomical_status": "pending"
+  },
+  {
+    "id": "z_lig_middle_glenohumeral_ligament_L",
+    "raw_vertices": 24,
+    "original_triangles": 280,
+    "refined_triangles": 13664,
+    "boundary_preserved": true,
+    "cross_section_display_relief_max_mm": 0.55,
+    "surface_displacement_max_mm": 0.55,
+    "end_candidates": [
+      {
+        "position": [
+          0.13942711055278778,
+          1.390685796737671,
+          -0.027232231572270393
+        ],
+        "nearest_bone": "Scapula.l",
+        "distance_mm": 0.155,
+        "distances_mm": {
+          "Scapula.l": 0.155,
+          "Humerus.l": 6.775,
+          "Clavicle.l": 24.388
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      },
+      {
+        "position": [
+          0.16343200206756592,
+          1.3838043212890625,
+          -0.0051445309072732925
+        ],
+        "nearest_bone": "Humerus.l",
+        "distance_mm": 0.724,
+        "distances_mm": {
+          "Scapula.l": 22.991,
+          "Humerus.l": 0.724,
+          "Clavicle.l": 42.345
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      }
+    ],
+    "suspected_penetration_nearest_normal_only": {
+      "Humerus.l": {
+        "samples": 71,
+        "max_depth_mm": 0.77
+      }
+    },
+    "anatomical_status": "pending"
+  },
+  {
+    "id": "z_lig_inferior_transverse_scapular_ligament_R",
+    "raw_vertices": 4,
+    "original_triangles": 12,
+    "refined_triangles": 320,
+    "boundary_preserved": true,
+    "cross_section_display_relief_max_mm": 0.55,
+    "surface_displacement_max_mm": 0.37,
+    "end_candidates": [
+      {
+        "position": [
+          -0.15248972177505493,
+          1.3791463375091553,
+          -0.04917778819799423
+        ],
+        "nearest_bone": "Scapula.r",
+        "distance_mm": 0.484,
+        "distances_mm": {
+          "Scapula.r": 0.484,
+          "Humerus.r": 4.666,
+          "Clavicle.r": 31.986
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      },
+      {
+        "position": [
+          -0.14121471345424652,
+          1.3861653804779053,
+          -0.06287118792533875
+        ],
+        "nearest_bone": "Scapula.r",
+        "distance_mm": 0.438,
+        "distances_mm": {
+          "Scapula.r": 0.438,
+          "Humerus.r": 22.414,
+          "Clavicle.r": 27.846
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      }
+    ],
+    "suspected_penetration_nearest_normal_only": {
+      "Scapula.r": {
+        "samples": 21,
+        "max_depth_mm": 1.04
+      }
+    },
+    "anatomical_status": "pending"
+  },
+  {
+    "id": "z_lig_inferior_transverse_scapular_ligament_L",
+    "raw_vertices": 4,
+    "original_triangles": 12,
+    "refined_triangles": 320,
+    "boundary_preserved": true,
+    "cross_section_display_relief_max_mm": 0.55,
+    "surface_displacement_max_mm": 0.37,
+    "end_candidates": [
+      {
+        "position": [
+          0.15248972177505493,
+          1.3791463375091553,
+          -0.04917778819799423
+        ],
+        "nearest_bone": "Scapula.l",
+        "distance_mm": 0.484,
+        "distances_mm": {
+          "Scapula.l": 0.484,
+          "Humerus.l": 4.666,
+          "Clavicle.l": 31.986
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      },
+      {
+        "position": [
+          0.14121471345424652,
+          1.3861653804779053,
+          -0.06287118792533875
+        ],
+        "nearest_bone": "Scapula.l",
+        "distance_mm": 0.438,
+        "distances_mm": {
+          "Scapula.l": 0.438,
+          "Humerus.l": 22.414,
+          "Clavicle.l": 27.846
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      }
+    ],
+    "suspected_penetration_nearest_normal_only": {
+      "Scapula.l": {
+        "samples": 21,
+        "max_depth_mm": 1.04
+      }
+    },
+    "anatomical_status": "pending"
+  },
+  {
+    "id": "z_lig_inferior_glenohumeral_ligament_R",
+    "raw_vertices": 25,
+    "original_triangles": 320,
+    "refined_triangles": 16224,
+    "boundary_preserved": true,
+    "cross_section_display_relief_max_mm": 0.55,
+    "surface_displacement_max_mm": 0.513,
+    "end_candidates": [
+      {
+        "position": [
+          -0.1395062804222107,
+          1.3849163055419922,
+          -0.025436295196413994
+        ],
+        "nearest_bone": "Scapula.r",
+        "distance_mm": 0.974,
+        "distances_mm": {
+          "Scapula.r": 0.974,
+          "Humerus.r": 5.378,
+          "Clavicle.r": 30.4
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      },
+      {
+        "position": [
+          -0.16226884722709656,
+          1.370316743850708,
+          -0.014502109959721565
+        ],
+        "nearest_bone": "Humerus.r",
+        "distance_mm": 0.58,
+        "distances_mm": {
+          "Scapula.r": 20.66,
+          "Humerus.r": 0.58,
+          "Clavicle.r": 49.732
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      }
+    ],
+    "suspected_penetration_nearest_normal_only": {
+      "Humerus.r": {
+        "samples": 68,
+        "max_depth_mm": 0.83
+      }
+    },
+    "anatomical_status": "pending"
+  },
+  {
+    "id": "z_lig_inferior_glenohumeral_ligament_L",
+    "raw_vertices": 25,
+    "original_triangles": 320,
+    "refined_triangles": 16224,
+    "boundary_preserved": true,
+    "cross_section_display_relief_max_mm": 0.55,
+    "surface_displacement_max_mm": 0.513,
+    "end_candidates": [
+      {
+        "position": [
+          0.13950622081756592,
+          1.3849163055419922,
+          -0.025436295196413994
+        ],
+        "nearest_bone": "Scapula.l",
+        "distance_mm": 0.974,
+        "distances_mm": {
+          "Scapula.l": 0.974,
+          "Humerus.l": 5.378,
+          "Clavicle.l": 30.4
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      },
+      {
+        "position": [
+          0.16226880252361298,
+          1.370316743850708,
+          -0.014502109959721565
+        ],
+        "nearest_bone": "Humerus.l",
+        "distance_mm": 0.58,
+        "distances_mm": {
+          "Scapula.l": 20.66,
+          "Humerus.l": 0.58,
+          "Clavicle.l": 49.732
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      }
+    ],
+    "suspected_penetration_nearest_normal_only": {
+      "Humerus.l": {
+        "samples": 69,
+        "max_depth_mm": 2.99
+      }
+    },
+    "anatomical_status": "pending"
+  },
+  {
+    "id": "z_lig_coracohumeral_ligament_R",
+    "raw_vertices": 18,
+    "original_triangles": 200,
+    "refined_triangles": 8768,
+    "boundary_preserved": true,
+    "cross_section_display_relief_max_mm": 0.55,
+    "surface_displacement_max_mm": 0.51,
+    "end_candidates": [
+      {
+        "position": [
+          -0.1394912600517273,
+          1.3952659368515015,
+          -0.004134420771151781
+        ],
+        "nearest_bone": "Scapula.r",
+        "distance_mm": 1.952,
+        "distances_mm": {
+          "Scapula.r": 1.952,
+          "Humerus.r": 16.252,
+          "Clavicle.r": 30.939
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      },
+      {
+        "position": [
+          -0.1832197904586792,
+          1.4020484685897827,
+          -0.019589751958847046
+        ],
+        "nearest_bone": "Humerus.r",
+        "distance_mm": 0.633,
+        "distances_mm": {
+          "Scapula.r": 20.142,
+          "Humerus.r": 0.633,
+          "Clavicle.r": 36.076
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      }
+    ],
+    "suspected_penetration_nearest_normal_only": {
+      "Scapula.r": {
+        "samples": 102,
+        "max_depth_mm": 2.5
+      },
+      "Humerus.r": {
+        "samples": 106,
+        "max_depth_mm": 1.66
+      }
+    },
+    "anatomical_status": "pending"
+  },
+  {
+    "id": "z_lig_coracohumeral_ligament_L",
+    "raw_vertices": 18,
+    "original_triangles": 200,
+    "refined_triangles": 8768,
+    "boundary_preserved": true,
+    "cross_section_display_relief_max_mm": 0.55,
+    "surface_displacement_max_mm": 0.51,
+    "end_candidates": [
+      {
+        "position": [
+          0.1394912153482437,
+          1.3952659368515015,
+          -0.004134420771151781
+        ],
+        "nearest_bone": "Scapula.l",
+        "distance_mm": 1.952,
+        "distances_mm": {
+          "Scapula.l": 1.952,
+          "Humerus.l": 16.252,
+          "Clavicle.l": 30.939
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      },
+      {
+        "position": [
+          0.18321973085403442,
+          1.4020484685897827,
+          -0.019589751958847046
+        ],
+        "nearest_bone": "Humerus.l",
+        "distance_mm": 0.633,
+        "distances_mm": {
+          "Scapula.l": 20.142,
+          "Humerus.l": 0.633,
+          "Clavicle.l": 36.076
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      }
+    ],
+    "suspected_penetration_nearest_normal_only": {
+      "Scapula.l": {
+        "samples": 102,
+        "max_depth_mm": 2.5
+      },
+      "Humerus.l": {
+        "samples": 106,
+        "max_depth_mm": 1.66
+      }
+    },
+    "anatomical_status": "pending"
+  },
+  {
+    "id": "z_lig_coraco_acromial_ligament_R",
+    "raw_vertices": 4,
+    "original_triangles": 12,
+    "refined_triangles": 320,
+    "boundary_preserved": true,
+    "cross_section_display_relief_max_mm": 0.55,
+    "surface_displacement_max_mm": 0.505,
+    "end_candidates": [
+      {
+        "position": [
+          -0.13751858472824097,
+          1.400134563446045,
+          -0.006940856575965881
+        ],
+        "nearest_bone": "Scapula.r",
+        "distance_mm": 0.598,
+        "distances_mm": {
+          "Scapula.r": 0.598,
+          "Humerus.r": 18.06,
+          "Clavicle.r": 25.525
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      },
+      {
+        "position": [
+          -0.1633954793214798,
+          1.4136123657226562,
+          -0.024296484887599945
+        ],
+        "nearest_bone": "Scapula.r",
+        "distance_mm": 0.813,
+        "distances_mm": {
+          "Scapula.r": 0.813,
+          "Humerus.r": 9.508,
+          "Clavicle.r": 12.977
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      }
+    ],
+    "suspected_penetration_nearest_normal_only": {
+      "Scapula.r": {
+        "samples": 40,
+        "max_depth_mm": 3.32
+      }
+    },
+    "anatomical_status": "pending"
+  },
+  {
+    "id": "z_lig_coraco_acromial_ligament_L",
+    "raw_vertices": 4,
+    "original_triangles": 12,
+    "refined_triangles": 320,
+    "boundary_preserved": true,
+    "cross_section_display_relief_max_mm": 0.55,
+    "surface_displacement_max_mm": 0.505,
+    "end_candidates": [
+      {
+        "position": [
+          0.13751858472824097,
+          1.400134563446045,
+          -0.006940856575965881
+        ],
+        "nearest_bone": "Scapula.l",
+        "distance_mm": 0.598,
+        "distances_mm": {
+          "Scapula.l": 0.598,
+          "Humerus.l": 18.06,
+          "Clavicle.l": 25.525
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      },
+      {
+        "position": [
+          0.1633954793214798,
+          1.4136123657226562,
+          -0.024296484887599945
+        ],
+        "nearest_bone": "Scapula.l",
+        "distance_mm": 0.813,
+        "distances_mm": {
+          "Scapula.l": 0.813,
+          "Humerus.l": 9.508,
+          "Clavicle.l": 12.978
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      }
+    ],
+    "suspected_penetration_nearest_normal_only": {
+      "Scapula.l": {
+        "samples": 40,
+        "max_depth_mm": 3.32
+      }
+    },
+    "anatomical_status": "pending"
+  },
+  {
+    "id": "z_lig_conoid_ligament_R",
+    "raw_vertices": 6,
+    "original_triangles": 56,
+    "refined_triangles": 2240,
+    "boundary_preserved": true,
+    "cross_section_display_relief_max_mm": 0.55,
+    "surface_displacement_max_mm": 0.583,
+    "end_candidates": [
+      {
+        "position": [
+          -0.11350730061531067,
+          1.3931704759597778,
+          -0.03458453342318535
+        ],
+        "nearest_bone": "Scapula.r",
+        "distance_mm": 0.11,
+        "distances_mm": {
+          "Scapula.r": 0.11,
+          "Humerus.r": 33.135,
+          "Clavicle.r": 16.529
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      },
+      {
+        "position": [
+          -0.10945005714893341,
+          1.4139517545700073,
+          -0.01868549734354019
+        ],
+        "nearest_bone": "Clavicle.r",
+        "distance_mm": 0.022,
+        "distances_mm": {
+          "Scapula.r": 14.289,
+          "Humerus.r": 44.237,
+          "Clavicle.r": 0.022
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      }
+    ],
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending"
+  },
+  {
+    "id": "z_lig_conoid_ligament_L",
+    "raw_vertices": 6,
+    "original_triangles": 56,
+    "refined_triangles": 2240,
+    "boundary_preserved": true,
+    "cross_section_display_relief_max_mm": 0.55,
+    "surface_displacement_max_mm": 0.583,
+    "end_candidates": [
+      {
+        "position": [
+          0.1135072410106659,
+          1.3931704759597778,
+          -0.03458453342318535
+        ],
+        "nearest_bone": "Scapula.l",
+        "distance_mm": 0.11,
+        "distances_mm": {
+          "Scapula.l": 0.11,
+          "Humerus.l": 33.135,
+          "Clavicle.l": 16.529
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      },
+      {
+        "position": [
+          0.10944999754428864,
+          1.4139517545700073,
+          -0.01868549734354019
+        ],
+        "nearest_bone": "Clavicle.l",
+        "distance_mm": 0.022,
+        "distances_mm": {
+          "Scapula.l": 14.289,
+          "Humerus.l": 44.237,
+          "Clavicle.l": 0.022
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      }
+    ],
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending"
+  },
+  {
+    "id": "z_lig_acromioclavicular_ligament_R",
+    "raw_vertices": 9,
+    "original_triangles": 320,
+    "refined_triangles": 16896,
+    "boundary_preserved": true,
+    "cross_section_display_relief_max_mm": 0.55,
+    "surface_displacement_max_mm": 0.541,
+    "end_candidates": [
+      {
+        "position": [
+          -0.16252130270004272,
+          1.416511058807373,
+          -0.034215979278087616
+        ],
+        "nearest_bone": "Scapula.r",
+        "distance_mm": 0.084,
+        "distances_mm": {
+          "Scapula.r": 0.084,
+          "Humerus.r": 12.7,
+          "Clavicle.r": 8.937
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      },
+      {
+        "position": [
+          -0.13947710394859314,
+          1.422900676727295,
+          -0.04521012678742409
+        ],
+        "nearest_bone": "Clavicle.r",
+        "distance_mm": 0.492,
+        "distances_mm": {
+          "Scapula.r": 14.418,
+          "Humerus.r": 30.098,
+          "Clavicle.r": 0.492
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      }
+    ],
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending"
+  },
+  {
+    "id": "z_lig_acromioclavicular_ligament_L",
+    "raw_vertices": 9,
+    "original_triangles": 320,
+    "refined_triangles": 16896,
+    "boundary_preserved": true,
+    "cross_section_display_relief_max_mm": 0.55,
+    "surface_displacement_max_mm": 0.541,
+    "end_candidates": [
+      {
+        "position": [
+          0.16252127289772034,
+          1.416511058807373,
+          -0.034215979278087616
+        ],
+        "nearest_bone": "Scapula.l",
+        "distance_mm": 0.084,
+        "distances_mm": {
+          "Scapula.l": 0.084,
+          "Humerus.l": 12.7,
+          "Clavicle.l": 8.937
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      },
+      {
+        "position": [
+          0.13947704434394836,
+          1.422900676727295,
+          -0.04521012678742409
+        ],
+        "nearest_bone": "Clavicle.l",
+        "distance_mm": 0.492,
+        "distances_mm": {
+          "Scapula.l": 14.418,
+          "Humerus.l": 30.098,
+          "Clavicle.l": 0.492
+        },
+        "status": "geometric_edge_candidate_not_anatomical_footprint"
+      }
+    ],
+    "suspected_penetration_nearest_normal_only": {},
+    "anatomical_status": "pending"
+  }
+]

@@ -1,0 +1,72 @@
+{
+  "status": "localized_topology_repair_not_anatomically_validated",
+  "source_sha256": "9f08a17ea0115fed80b2a73ecdf0a1bc2ab2f6956f37c593ce23d513ea35afcd",
+  "file": "z-anatomy-candidate/assets/repaired-disc.glb",
+  "count": 1,
+  "objects": [
+    {
+      "id": "disc_L1-L2",
+      "name_zh": "椎间盘 L1–L2（局部修复候选）",
+      "name_en": "Intervertebral disc L1-L2",
+      "side": "M",
+      "region": "脊柱",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_type": "intervertebral_disc",
+      "tissue_layer": "joint",
+      "bone_ids": [
+        "bone_vertebra_L1_M",
+        "bone_vertebra_L2_M"
+      ],
+      "joint_or_connection_ids": [
+        "spine_vertebra_L1_vertebra_L2"
+      ],
+      "source_structure_id": "Intervertebral disc L1-L2",
+      "source_dataset": "Z-Anatomy 局部拓扑修复候选",
+      "triangles": 3126,
+      "note": "仅修复原网格局部非流形缺陷，未调整整体位置和形状。修补边界与组织形态待解剖审核，不表示已完成椎间盘分层。",
+      "anatomy_review": "pending",
+      "rest_position_web_m": [
+        -8.84106654552852e-08,
+        1.0993770360946655,
+        -0.00609328830614686
+      ],
+      "repair_audit": {
+        "before": {
+          "vertices": 1568,
+          "faces": 3058,
+          "boundary_edges": 5,
+          "branch_edges": 7,
+          "wire_edges": 0
+        },
+        "after": {
+          "vertices": 1565,
+          "faces": 3126,
+          "boundary_edges": 0,
+          "branch_edges": 0,
+          "wire_edges": 0
+        },
+        "removed_faces": 20,
+        "removed_area_mm2": 1.2418506276645758,
+        "patches": [
+          {
+            "boundary_edges": 12,
+            "diameter_mm": 2.6443514179695393,
+            "filled_faces": 3
+          },
+          {
+            "boundary_edges": 12,
+            "diameter_mm": 2.6443514179695393,
+            "filled_faces": 3
+          },
+          {
+            "boundary_edges": 4,
+            "diameter_mm": 0.6901473538877857,
+            "filled_faces": 1
+          }
+        ]
+      }
+    }
+  ]
+}

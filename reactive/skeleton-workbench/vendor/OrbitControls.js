@@ -305,6 +305,9 @@ class OrbitControls extends Controls {
 		 */
 		this.zoomToCursor = false;
 
+		// Optional world-space rotation pivot; zoom/pan keep their independent target.
+		this.rotationPivot = null;
+
 		/**
 		 * Set to true to automatically rotate around the target
 		 *
@@ -597,6 +600,7 @@ class OrbitControls extends Controls {
 	update( deltaTime = null ) {
 
 		const position = this.object.position;
+		const beforeRotation = this.rotationPivot ? this.object.quaternion.clone() : null;
 
 		_v.copy( position ).sub( this.target );
 
@@ -695,6 +699,15 @@ class OrbitControls extends Controls {
 		position.copy( this.target ).add( _v );
 
 		this.object.lookAt( this.target );
+
+		// Rotate the framing target and camera together about the fixed body pivot.
+		// Never recenter on zoom/pan or programmatic fit: those must retain framing.
+		if ( this.rotationPivot && ( Math.abs( this._sphericalDelta.theta ) > 1e-12 || Math.abs( this._sphericalDelta.phi ) > 1e-12 ) ) {
+			const turn = this.object.quaternion.clone().multiply( beforeRotation.invert() );
+			const shift = this.target.clone().sub( this.rotationPivot ).applyQuaternion( turn ).add( this.rotationPivot ).sub( this.target );
+			position.add( shift );
+			this.target.add( shift );
+		}
 
 		if ( this.enableDamping === true ) {
 

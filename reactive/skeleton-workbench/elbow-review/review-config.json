@@ -1,0 +1,27 @@
+{
+  "title": "肘部韧带",
+  "bones": [
+    "Humerus",
+    "Ulna",
+    "Radius"
+  ],
+  "model": "elbow-review-supplement.glb",
+  "meshCount": 22,
+  "initialId": "elbow_ucl_anterior_R",
+  "target": [
+    -0.2,
+    1.1,
+    0
+  ],
+  "camera": [
+    -0.30000000000000004,
+    1.1,
+    0.4
+  ],
+  "storageKey": "elbow-review-records-v1",
+  "allowOriginal": false,
+  "audit": "supplement-geometry-audit.json",
+  "catalog": "supplement-catalog.json",
+  "loadedLabel": "分束与缺项补充候选 · 足印待核准",
+  "revision": "ucl-restored9"
+}

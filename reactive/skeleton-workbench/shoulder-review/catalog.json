@@ -1,0 +1,1480 @@
+{
+  "scope": "shoulder_girdle_ligaments",
+  "type_count": 11,
+  "source_object_count": 22,
+  "structures": [
+    {
+      "id": "z_lig_trapezoid_ligament_R",
+      "name_zh": "右斜方韧带",
+      "name_en": "Trapezoid ligament.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_clavicle_R",
+        "bone_scapula_R"
+      ],
+      "joint_or_connection_ids": [
+        "acromioclavicular_R"
+      ],
+      "source_structure_id": "Trapezoid ligament.r",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 56,
+      "note": "沿用原配坐标；依据源父级归入区域目录，关联骨不是精确起止点。附着范围、局部穿插及源组合对象的拆分尚待审核。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Acromioclavicular joint.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        -0.12311886996030807,
+        1.4082404375076294,
+        -0.018919091671705246
+      ],
+      "group": "arch",
+      "context_bones": [
+        "Scapula",
+        "Clavicle"
+      ],
+      "origin": "喙突上表面区域。",
+      "insertion": "锁骨下表面的斜方线。",
+      "shape": "喙锁韧带的斜方部分，较扁平；与锥状部分共同连接喙突和锁骨。",
+      "comparison": "源控制网格 6 顶点，尚未校准斜方线上的附着范围。",
+      "references": [
+        {
+          "title": "Kenhub｜喙锁韧带",
+          "url": "https://www.kenhub.com/en/library/anatomy/coracoclavicular-ligament",
+          "quote": "Trapezoid part: trapezoid line -> coracoid process Function",
+          "retrieved": "2026-10-13"
+        },
+        {
+          "title": "Desai 等，2022｜喙突与肩部韧带",
+          "url": "https://doi.org/10.1055/s-0041-1741091",
+          "quote": "The CCL is a complex of two components: the conoid and trapezoid segments. These two segments are continuous inferiorly at the coracoid process attachment but separate before attaching to the inferior aspect of the clavicle superiorly",
+          "retrieved": "2026-10-13"
+        }
+      ],
+      "limitations": "资料用于核对连接关系和形态类型，不能证明当前网格的精确足印、厚度或运动性能。",
+      "evidence_status": "reference_checked"
+    },
+    {
+      "id": "z_lig_trapezoid_ligament_L",
+      "name_zh": "左斜方韧带",
+      "name_en": "Trapezoid ligament.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_clavicle_L",
+        "bone_scapula_L"
+      ],
+      "joint_or_connection_ids": [
+        "acromioclavicular_L"
+      ],
+      "source_structure_id": "Trapezoid ligament.l",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 56,
+      "note": "沿用原配坐标；依据源父级归入区域目录，关联骨不是精确起止点。附着范围、局部穿插及源组合对象的拆分尚待审核。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Acromioclavicular joint.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        0.12311883270740509,
+        1.4082404375076294,
+        -0.018919091671705246
+      ],
+      "group": "arch",
+      "context_bones": [
+        "Scapula",
+        "Clavicle"
+      ],
+      "origin": "喙突上表面区域。",
+      "insertion": "锁骨下表面的斜方线。",
+      "shape": "喙锁韧带的斜方部分，较扁平；与锥状部分共同连接喙突和锁骨。",
+      "comparison": "源控制网格 6 顶点，尚未校准斜方线上的附着范围。",
+      "references": [
+        {
+          "title": "Kenhub｜喙锁韧带",
+          "url": "https://www.kenhub.com/en/library/anatomy/coracoclavicular-ligament",
+          "quote": "Trapezoid part: trapezoid line -> coracoid process Function",
+          "retrieved": "2026-10-13"
+        },
+        {
+          "title": "Desai 等，2022｜喙突与肩部韧带",
+          "url": "https://doi.org/10.1055/s-0041-1741091",
+          "quote": "The CCL is a complex of two components: the conoid and trapezoid segments. These two segments are continuous inferiorly at the coracoid process attachment but separate before attaching to the inferior aspect of the clavicle superiorly",
+          "retrieved": "2026-10-13"
+        }
+      ],
+      "limitations": "资料用于核对连接关系和形态类型，不能证明当前网格的精确足印、厚度或运动性能。",
+      "evidence_status": "reference_checked"
+    },
+    {
+      "id": "z_lig_transverse_humeral_ligament_R",
+      "name_zh": "右肱骨横韧带",
+      "name_en": "Transverse humeral ligament.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_humerus_R",
+        "bone_scapula_R"
+      ],
+      "joint_or_connection_ids": [
+        "glenohumeral_R"
+      ],
+      "source_structure_id": "Transverse humeral ligament.r",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 464,
+      "note": "沿用原配坐标；依据源父级归入区域目录，关联骨不是精确起止点。附着范围、局部穿插及源组合对象的拆分尚待审核。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Glenohumeral joint.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        -0.18209928274154663,
+        1.389634370803833,
+        -0.006840438582003117
+      ],
+      "group": "capsule",
+      "context_bones": [
+        "Humerus"
+      ],
+      "origin": "肱骨大结节侧。",
+      "insertion": "肱骨小结节侧。",
+      "shape": "横跨结节间沟上方，与肱二头肌长头腱的通道相关。",
+      "comparison": "源对象存在，骨面相交需区分末端埋入与游离段穿骨；不能封住腱通道。",
+      "references": [
+        {
+          "title": "Kenhub｜盂肱关节 · 韧带",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-shoulder-joint",
+          "quote": "The transverse humeral ligament extends horizontally between the tubercles of the humerus. It covers the intertubercular sulcus and the long head tendon of the biceps brachii muscle, preventing displacement of the tendon from the sulcus.",
+          "retrieved": "2026-10-13"
+        }
+      ],
+      "limitations": "传统独立韧带命名与腱纤维延续的组织学解释存在讨论；本样板保留源命名，不声称独立组织边界已核准。",
+      "evidence_status": "reference_checked"
+    },
+    {
+      "id": "z_lig_transverse_humeral_ligament_L",
+      "name_zh": "左肱骨横韧带",
+      "name_en": "Transverse humeral ligament.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_humerus_L",
+        "bone_scapula_L"
+      ],
+      "joint_or_connection_ids": [
+        "glenohumeral_L"
+      ],
+      "source_structure_id": "Transverse humeral ligament.l",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 136,
+      "note": "沿用原配坐标；依据源父级归入区域目录，关联骨不是精确起止点。附着范围、局部穿插及源组合对象的拆分尚待审核。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Glenohumeral joint.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        0.18197447061538696,
+        1.3895776271820068,
+        -0.00705930357798934
+      ],
+      "group": "capsule",
+      "context_bones": [
+        "Humerus"
+      ],
+      "origin": "肱骨大结节侧。",
+      "insertion": "肱骨小结节侧。",
+      "shape": "横跨结节间沟上方，与肱二头肌长头腱的通道相关。",
+      "comparison": "源对象存在，骨面相交需区分末端埋入与游离段穿骨；不能封住腱通道。",
+      "references": [
+        {
+          "title": "Kenhub｜盂肱关节 · 韧带",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-shoulder-joint",
+          "quote": "The transverse humeral ligament extends horizontally between the tubercles of the humerus. It covers the intertubercular sulcus and the long head tendon of the biceps brachii muscle, preventing displacement of the tendon from the sulcus.",
+          "retrieved": "2026-10-13"
+        }
+      ],
+      "limitations": "传统独立韧带命名与腱纤维延续的组织学解释存在讨论；本样板保留源命名，不声称独立组织边界已核准。",
+      "evidence_status": "reference_checked"
+    },
+    {
+      "id": "z_lig_superior_transverse_scapular_ligament_R",
+      "name_zh": "右肩胛上横韧带",
+      "name_en": "Superior transverse scapular ligament.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_clavicle_R",
+        "bone_humerus_R",
+        "bone_scapula_R"
+      ],
+      "joint_or_connection_ids": [
+        "acromioclavicular_R",
+        "glenohumeral_R"
+      ],
+      "source_structure_id": "Superior transverse scapular ligament.r",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 12,
+      "note": "沿用原配坐标；依据源父级归入区域目录，关联骨不是精确起止点。附着范围、局部穿插及源组合对象的拆分尚待审核。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Fibrous joints of pectoral girdle.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        -0.10900479555130005,
+        1.3950684070587158,
+        -0.04664178565144539
+      ],
+      "group": "scapula",
+      "context_bones": [
+        "Scapula"
+      ],
+      "origin": "肩胛上切迹一侧骨缘。",
+      "insertion": "肩胛上切迹另一侧骨缘。",
+      "shape": "跨越切迹形成纤维骨性孔道；肩胛上神经从下方通过，形态可变。",
+      "comparison": "源网格仅 4 顶点；应保留切迹下方通道，不应整片压贴骨面。",
+      "references": [
+        {
+          "title": "Paraskevas 等，2025｜肩胛切迹与上横韧带",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12049851/",
+          "quote": "the suprascapular notch (SN) of the superior border of the scapula is crossed by the superior transverse scapular ligament (STSL). Thus, the formed fibro-osseous foramen conducts the suprascapular nerve (SSN) to the supraspinatus fossa, with the suprascapular vessels passing above the STSL.",
+          "retrieved": "2026-10-13"
+        }
+      ],
+      "limitations": "资料用于核对连接关系和形态类型，不能证明当前网格的精确足印、厚度或运动性能。",
+      "evidence_status": "reference_checked"
+    },
+    {
+      "id": "z_lig_superior_transverse_scapular_ligament_L",
+      "name_zh": "左肩胛上横韧带",
+      "name_en": "Superior transverse scapular ligament.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_clavicle_L",
+        "bone_humerus_L",
+        "bone_scapula_L"
+      ],
+      "joint_or_connection_ids": [
+        "acromioclavicular_L",
+        "glenohumeral_L"
+      ],
+      "source_structure_id": "Superior transverse scapular ligament.l",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 12,
+      "note": "沿用原配坐标；依据源父级归入区域目录，关联骨不是精确起止点。附着范围、局部穿插及源组合对象的拆分尚待审核。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Fibrous joints of pectoral girdle.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        0.10900479555130005,
+        1.3950684070587158,
+        -0.04664178565144539
+      ],
+      "group": "scapula",
+      "context_bones": [
+        "Scapula"
+      ],
+      "origin": "肩胛上切迹一侧骨缘。",
+      "insertion": "肩胛上切迹另一侧骨缘。",
+      "shape": "跨越切迹形成纤维骨性孔道；肩胛上神经从下方通过，形态可变。",
+      "comparison": "源网格仅 4 顶点；应保留切迹下方通道，不应整片压贴骨面。",
+      "references": [
+        {
+          "title": "Paraskevas 等，2025｜肩胛切迹与上横韧带",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12049851/",
+          "quote": "the suprascapular notch (SN) of the superior border of the scapula is crossed by the superior transverse scapular ligament (STSL). Thus, the formed fibro-osseous foramen conducts the suprascapular nerve (SSN) to the supraspinatus fossa, with the suprascapular vessels passing above the STSL.",
+          "retrieved": "2026-10-13"
+        }
+      ],
+      "limitations": "资料用于核对连接关系和形态类型，不能证明当前网格的精确足印、厚度或运动性能。",
+      "evidence_status": "reference_checked"
+    },
+    {
+      "id": "z_lig_superior_glenohumeral_ligament_R",
+      "name_zh": "右盂肱上韧带",
+      "name_en": "Superior glenohumeral ligament.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_humerus_R",
+        "bone_scapula_R"
+      ],
+      "joint_or_connection_ids": [
+        "glenohumeral_R"
+      ],
+      "source_structure_id": "Superior glenohumeral ligament.r",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 200,
+      "note": "沿用原配坐标；依据源父级归入区域目录，关联骨不是精确起止点。附着范围、局部穿插及源组合对象的拆分尚待审核。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Glenohumeral joint.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        -0.15174908936023712,
+        1.3973459005355835,
+        -0.01855410262942314
+      ],
+      "group": "capsule",
+      "context_bones": [
+        "Scapula",
+        "Humerus"
+      ],
+      "origin": "本次参考资料描述为肩胛骨盂上结节；与上盂唇的具体附着关系仍需补充核查。",
+      "insertion": "肱骨小结节近端、解剖颈邻近区域。",
+      "shape": "上方囊韧带，与喙肱韧带共同参与肩袖间隙的稳定。",
+      "comparison": "源数据为独立带状对象；与盂唇、关节囊及肱二头肌腱的关系未一并重建。",
+      "references": [
+        {
+          "title": "Kenhub｜盂肱关节 · 韧带",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-shoulder-joint",
+          "quote": "The superior glenohumeral ligament extends from the supraglenoid tubercle of scapula to the proximal aspect of the lesser tubercle of humerus.",
+          "retrieved": "2026-10-13"
+        }
+      ],
+      "limitations": "本次资料给出概括性附着描述，不能直接把盂上结节上的某一点作为唯一标准。需结合盂唇与个体变异进一步核对。",
+      "evidence_status": "limited"
+    },
+    {
+      "id": "z_lig_superior_glenohumeral_ligament_L",
+      "name_zh": "左盂肱上韧带",
+      "name_en": "Superior glenohumeral ligament.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_humerus_L",
+        "bone_scapula_L"
+      ],
+      "joint_or_connection_ids": [
+        "glenohumeral_L"
+      ],
+      "source_structure_id": "Superior glenohumeral ligament.l",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 200,
+      "note": "沿用原配坐标；依据源父级归入区域目录，关联骨不是精确起止点。附着范围、局部穿插及源组合对象的拆分尚待审核。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Glenohumeral joint.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        0.15174904465675354,
+        1.3973459005355835,
+        -0.01855410262942314
+      ],
+      "group": "capsule",
+      "context_bones": [
+        "Scapula",
+        "Humerus"
+      ],
+      "origin": "本次参考资料描述为肩胛骨盂上结节；与上盂唇的具体附着关系仍需补充核查。",
+      "insertion": "肱骨小结节近端、解剖颈邻近区域。",
+      "shape": "上方囊韧带，与喙肱韧带共同参与肩袖间隙的稳定。",
+      "comparison": "源数据为独立带状对象；与盂唇、关节囊及肱二头肌腱的关系未一并重建。",
+      "references": [
+        {
+          "title": "Kenhub｜盂肱关节 · 韧带",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-shoulder-joint",
+          "quote": "The superior glenohumeral ligament extends from the supraglenoid tubercle of scapula to the proximal aspect of the lesser tubercle of humerus.",
+          "retrieved": "2026-10-13"
+        }
+      ],
+      "limitations": "本次资料给出概括性附着描述，不能直接把盂上结节上的某一点作为唯一标准。需结合盂唇与个体变异进一步核对。",
+      "evidence_status": "limited"
+    },
+    {
+      "id": "z_lig_middle_glenohumeral_ligament_R",
+      "name_zh": "右盂肱中韧带",
+      "name_en": "Middle glenohumeral ligament.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_humerus_R",
+        "bone_scapula_R"
+      ],
+      "joint_or_connection_ids": [
+        "glenohumeral_R"
+      ],
+      "source_structure_id": "Middle glenohumeral ligament.r",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 280,
+      "note": "沿用原配坐标；依据源父级归入区域目录，关联骨不是精确起止点。附着范围、局部穿插及源组合对象的拆分尚待审核。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Glenohumeral joint.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        -0.14970307052135468,
+        1.3899351358413696,
+        -0.014912385493516922
+      ],
+      "group": "capsule",
+      "context_bones": [
+        "Scapula",
+        "Humerus"
+      ],
+      "origin": "肩胛骨前方关节盂缘，位于上盂肱韧带下方。",
+      "insertion": "肱骨小结节区域。",
+      "shape": "较宽的囊韧带，位于肩胛下肌腱深面并与其融合；形态存在变异。",
+      "comparison": "已有独立源对象，但尚未表现与关节囊、肩胛下肌腱融合的边界。",
+      "references": [
+        {
+          "title": "Kenhub｜盂肱关节 · 韧带",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-shoulder-joint",
+          "quote": "The middle glenohumeral ligament attaches along the anterior glenoid margin of the scapula, just inferior to the superior GH ligament. It extends to the lesser tubercle of humerus. This wide ligament lies deep to, and blends, with the tendon of subscapularis muscle.",
+          "retrieved": "2026-10-13"
+        }
+      ],
+      "limitations": "资料用于核对连接关系和形态类型，不能证明当前网格的精确足印、厚度或运动性能。",
+      "evidence_status": "reference_checked"
+    },
+    {
+      "id": "z_lig_middle_glenohumeral_ligament_L",
+      "name_zh": "左盂肱中韧带",
+      "name_en": "Middle glenohumeral ligament.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_humerus_L",
+        "bone_scapula_L"
+      ],
+      "joint_or_connection_ids": [
+        "glenohumeral_L"
+      ],
+      "source_structure_id": "Middle glenohumeral ligament.l",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 280,
+      "note": "沿用原配坐标；依据源父级归入区域目录，关联骨不是精确起止点。附着范围、局部穿插及源组合对象的拆分尚待审核。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Glenohumeral joint.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        0.1497030109167099,
+        1.3899351358413696,
+        -0.014912385493516922
+      ],
+      "group": "capsule",
+      "context_bones": [
+        "Scapula",
+        "Humerus"
+      ],
+      "origin": "肩胛骨前方关节盂缘，位于上盂肱韧带下方。",
+      "insertion": "肱骨小结节区域。",
+      "shape": "较宽的囊韧带，位于肩胛下肌腱深面并与其融合；形态存在变异。",
+      "comparison": "已有独立源对象，但尚未表现与关节囊、肩胛下肌腱融合的边界。",
+      "references": [
+        {
+          "title": "Kenhub｜盂肱关节 · 韧带",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-shoulder-joint",
+          "quote": "The middle glenohumeral ligament attaches along the anterior glenoid margin of the scapula, just inferior to the superior GH ligament. It extends to the lesser tubercle of humerus. This wide ligament lies deep to, and blends, with the tendon of subscapularis muscle.",
+          "retrieved": "2026-10-13"
+        }
+      ],
+      "limitations": "资料用于核对连接关系和形态类型，不能证明当前网格的精确足印、厚度或运动性能。",
+      "evidence_status": "reference_checked"
+    },
+    {
+      "id": "z_lig_inferior_transverse_scapular_ligament_R",
+      "name_zh": "右肩胛下横韧带",
+      "name_en": "Inferior transverse scapular ligament.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_clavicle_R",
+        "bone_humerus_R",
+        "bone_scapula_R"
+      ],
+      "joint_or_connection_ids": [
+        "acromioclavicular_R",
+        "glenohumeral_R"
+      ],
+      "source_structure_id": "Inferior transverse scapular ligament.r",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 12,
+      "note": "沿用原配坐标；依据源父级归入区域目录，关联骨不是精确起止点。附着范围、局部穿插及源组合对象的拆分尚待审核。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Fibrous joints of pectoral girdle.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        -0.14618897438049316,
+        1.383274793624878,
+        -0.055644623935222626
+      ],
+      "group": "scapula",
+      "context_bones": [
+        "Scapula"
+      ],
+      "origin": "肩胛冈外侧与盂切迹邻近区域，精确附着待补。",
+      "insertion": "肩胛颈后方、盂切迹邻近区域，精确附着待补。",
+      "shape": "又称盂切迹韧带；与肩胛上神经通过盂切迹的通道相关，存在变异。",
+      "comparison": "源网格仅 4 顶点；跨切迹走行需要从背面核对，当前未校准足印。",
+      "references": [
+        {
+          "title": "2022｜肩胛上神经与盂切迹韧带",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8802659/",
+          "quote": "The nerve continues along the supraspinous fossa until it reaches the scapular spine, where it passes through the spinoglenoid notch and under the spinoglenoid ligament [ 6 ].",
+          "retrieved": "2026-10-13"
+        }
+      ],
+      "limitations": "当前资料支持与盂切迹及神经通道的位置关系，未直接证明两端足印，因此附着描述作为待核对范围。",
+      "evidence_status": "limited"
+    },
+    {
+      "id": "z_lig_inferior_transverse_scapular_ligament_L",
+      "name_zh": "左肩胛下横韧带",
+      "name_en": "Inferior transverse scapular ligament.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_clavicle_L",
+        "bone_humerus_L",
+        "bone_scapula_L"
+      ],
+      "joint_or_connection_ids": [
+        "acromioclavicular_L",
+        "glenohumeral_L"
+      ],
+      "source_structure_id": "Inferior transverse scapular ligament.l",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 12,
+      "note": "沿用原配坐标；依据源父级归入区域目录，关联骨不是精确起止点。附着范围、局部穿插及源组合对象的拆分尚待审核。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Fibrous joints of pectoral girdle.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        0.14618897438049316,
+        1.383274793624878,
+        -0.055644623935222626
+      ],
+      "group": "scapula",
+      "context_bones": [
+        "Scapula"
+      ],
+      "origin": "肩胛冈外侧与盂切迹邻近区域，精确附着待补。",
+      "insertion": "肩胛颈后方、盂切迹邻近区域，精确附着待补。",
+      "shape": "又称盂切迹韧带；与肩胛上神经通过盂切迹的通道相关，存在变异。",
+      "comparison": "源网格仅 4 顶点；跨切迹走行需要从背面核对，当前未校准足印。",
+      "references": [
+        {
+          "title": "2022｜肩胛上神经与盂切迹韧带",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8802659/",
+          "quote": "The nerve continues along the supraspinous fossa until it reaches the scapular spine, where it passes through the spinoglenoid notch and under the spinoglenoid ligament [ 6 ].",
+          "retrieved": "2026-10-13"
+        }
+      ],
+      "limitations": "当前资料支持与盂切迹及神经通道的位置关系，未直接证明两端足印，因此附着描述作为待核对范围。",
+      "evidence_status": "limited"
+    },
+    {
+      "id": "z_lig_inferior_glenohumeral_ligament_R",
+      "name_zh": "右盂肱下韧带",
+      "name_en": "Inferior glenohumeral ligament.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_humerus_R",
+        "bone_scapula_R"
+      ],
+      "joint_or_connection_ids": [
+        "glenohumeral_R"
+      ],
+      "source_structure_id": "Inferior glenohumeral ligament.r",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 320,
+      "note": "沿用原配坐标；依据源父级归入区域目录，关联骨不是精确起止点。附着范围、局部穿插及源组合对象的拆分尚待审核。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Glenohumeral joint.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        -0.14782322943210602,
+        1.3746463060379028,
+        -0.01805136166512966
+      ],
+      "group": "capsule",
+      "context_bones": [
+        "Scapula",
+        "Humerus"
+      ],
+      "origin": "下方盂唇与关节盂缘区域，须按前后束区分。",
+      "insertion": "肱骨颈下内侧区域，具体附着形式有差异。",
+      "shape": "吊带状复合体：前束、后束以及二者之间的腋隐窝。",
+      "comparison": "每侧仅 1 个源对象，缺少可独立选择的前束、后束和腋隐窝；不能用窄带外观代表整个复合体。",
+      "references": [
+        {
+          "title": "Kenhub｜盂肱关节 · 韧带",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-shoulder-joint",
+          "quote": "The inferior glenohumeral ligament is a sling-like ligament extending between the glenoid labrum and the inferomedial part of the humeral neck. It is split into anterior and posterior bands, between which sits the axillary pouch.",
+          "retrieved": "2026-10-13"
+        }
+      ],
+      "limitations": "资料用于核对连接关系和形态类型，不能证明当前网格的精确足印、厚度或运动性能。",
+      "evidence_status": "reference_checked"
+    },
+    {
+      "id": "z_lig_inferior_glenohumeral_ligament_L",
+      "name_zh": "左盂肱下韧带",
+      "name_en": "Inferior glenohumeral ligament.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_humerus_L",
+        "bone_scapula_L"
+      ],
+      "joint_or_connection_ids": [
+        "glenohumeral_L"
+      ],
+      "source_structure_id": "Inferior glenohumeral ligament.l",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 320,
+      "note": "沿用原配坐标；依据源父级归入区域目录，关联骨不是精确起止点。附着范围、局部穿插及源组合对象的拆分尚待审核。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Glenohumeral joint.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        0.14782316982746124,
+        1.3746463060379028,
+        -0.01805136166512966
+      ],
+      "group": "capsule",
+      "context_bones": [
+        "Scapula",
+        "Humerus"
+      ],
+      "origin": "下方盂唇与关节盂缘区域，须按前后束区分。",
+      "insertion": "肱骨颈下内侧区域，具体附着形式有差异。",
+      "shape": "吊带状复合体：前束、后束以及二者之间的腋隐窝。",
+      "comparison": "每侧仅 1 个源对象，缺少可独立选择的前束、后束和腋隐窝；不能用窄带外观代表整个复合体。",
+      "references": [
+        {
+          "title": "Kenhub｜盂肱关节 · 韧带",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-shoulder-joint",
+          "quote": "The inferior glenohumeral ligament is a sling-like ligament extending between the glenoid labrum and the inferomedial part of the humeral neck. It is split into anterior and posterior bands, between which sits the axillary pouch.",
+          "retrieved": "2026-10-13"
+        }
+      ],
+      "limitations": "资料用于核对连接关系和形态类型，不能证明当前网格的精确足印、厚度或运动性能。",
+      "evidence_status": "reference_checked"
+    },
+    {
+      "id": "z_lig_coracohumeral_ligament_R",
+      "name_zh": "右喙肱韧带",
+      "name_en": "Coracohumeral ligament.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_humerus_R",
+        "bone_scapula_R"
+      ],
+      "joint_or_connection_ids": [
+        "glenohumeral_R"
+      ],
+      "source_structure_id": "Coracohumeral ligament.r",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 200,
+      "note": "沿用原配坐标；依据源父级归入区域目录，关联骨不是精确起止点。附着范围、局部穿插及源组合对象的拆分尚待审核。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Glenohumeral joint.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        -0.16326019167900085,
+        1.4000204801559448,
+        -0.009112562984228134
+      ],
+      "group": "capsule",
+      "context_bones": [
+        "Scapula",
+        "Humerus"
+      ],
+      "origin": "肩胛骨喙突区域。",
+      "insertion": "肱骨大小结节区域，并与肩袖间隙周边结构连续。",
+      "shape": "跨肩关节上方；分束和与肌腱融合关系需结合更细致资料核对。",
+      "comparison": "现有单个源网格未明确拆分至大小结节的纤维部分，不把表面平滑视为分束准确。",
+      "references": [
+        {
+          "title": "Kenhub｜盂肱关节 · 韧带",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-shoulder-joint",
+          "quote": "The coracohumeral ligament extends between the coracoid process of the scapula to the tubercles of the humerus and the intervening transverse humeral ligament, supporting the joint from its superior side.",
+          "retrieved": "2026-10-13"
+        }
+      ],
+      "limitations": "资料用于核对连接关系和形态类型，不能证明当前网格的精确足印、厚度或运动性能。",
+      "evidence_status": "reference_checked"
+    },
+    {
+      "id": "z_lig_coracohumeral_ligament_L",
+      "name_zh": "左喙肱韧带",
+      "name_en": "Coracohumeral ligament.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_humerus_L",
+        "bone_scapula_L"
+      ],
+      "joint_or_connection_ids": [
+        "glenohumeral_L"
+      ],
+      "source_structure_id": "Coracohumeral ligament.l",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 200,
+      "note": "沿用原配坐标；依据源父级归入区域目录，关联骨不是精确起止点。附着范围、局部穿插及源组合对象的拆分尚待审核。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Glenohumeral joint.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        0.16326013207435608,
+        1.4000204801559448,
+        -0.009112562984228134
+      ],
+      "group": "capsule",
+      "context_bones": [
+        "Scapula",
+        "Humerus"
+      ],
+      "origin": "肩胛骨喙突区域。",
+      "insertion": "肱骨大小结节区域，并与肩袖间隙周边结构连续。",
+      "shape": "跨肩关节上方；分束和与肌腱融合关系需结合更细致资料核对。",
+      "comparison": "现有单个源网格未明确拆分至大小结节的纤维部分，不把表面平滑视为分束准确。",
+      "references": [
+        {
+          "title": "Kenhub｜盂肱关节 · 韧带",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-shoulder-joint",
+          "quote": "The coracohumeral ligament extends between the coracoid process of the scapula to the tubercles of the humerus and the intervening transverse humeral ligament, supporting the joint from its superior side.",
+          "retrieved": "2026-10-13"
+        }
+      ],
+      "limitations": "资料用于核对连接关系和形态类型，不能证明当前网格的精确足印、厚度或运动性能。",
+      "evidence_status": "reference_checked"
+    },
+    {
+      "id": "z_lig_coraco_acromial_ligament_R",
+      "name_zh": "右喙肩韧带",
+      "name_en": "Coraco-acromial ligament.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_clavicle_R",
+        "bone_humerus_R",
+        "bone_scapula_R"
+      ],
+      "joint_or_connection_ids": [
+        "acromioclavicular_R",
+        "glenohumeral_R"
+      ],
+      "source_structure_id": "Coraco-acromial ligament.r",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 12,
+      "note": "沿用原配坐标；依据源父级归入区域目录，关联骨不是精确起止点。附着范围、局部穿插及源组合对象的拆分尚待审核。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Fibrous joints of pectoral girdle.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        -0.14760275185108185,
+        1.4076768159866333,
+        -0.018848780542612076
+      ],
+      "group": "arch",
+      "context_bones": [
+        "Scapula",
+        "Humerus"
+      ],
+      "origin": "喙突外侧缘。",
+      "insertion": "肩峰前外侧下表面。",
+      "shape": "强韧的三角形／扇形结构，与喙突、肩峰共同构成喙肩弓，跨过肱骨头上方。",
+      "comparison": "源控制网格仅 4 个顶点，难以表达扇形分束和自然边缘；端部存在疑似骨面相交，尚未调整足印。",
+      "references": [
+        {
+          "title": "Kenhub｜喙肩韧带",
+          "url": "https://www.kenhub.com/en/library/anatomy/coracoacromial-ligament",
+          "quote": "The coracoacromial ligament is a strong triangular ligament of the glenohumeral joint complex. It attaches between the lateral border of the coracoid process and the apex of the acromion of the scapula .",
+          "retrieved": "2026-10-13"
+        },
+        {
+          "title": "Desai 等，2022｜喙突与肩部韧带",
+          "url": "https://doi.org/10.1055/s-0041-1741091",
+          "quote": "The CAL extends from the inferior anterolateral surface of the acromion to the lateral border of the coracoid process",
+          "retrieved": "2026-10-13"
+        }
+      ],
+      "limitations": "资料用于核对连接关系和形态类型，不能证明当前网格的精确足印、厚度或运动性能。",
+      "evidence_status": "reference_checked"
+    },
+    {
+      "id": "z_lig_coraco_acromial_ligament_L",
+      "name_zh": "左喙肩韧带",
+      "name_en": "Coraco-acromial ligament.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_clavicle_L",
+        "bone_humerus_L",
+        "bone_scapula_L"
+      ],
+      "joint_or_connection_ids": [
+        "acromioclavicular_L",
+        "glenohumeral_L"
+      ],
+      "source_structure_id": "Coraco-acromial ligament.l",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 12,
+      "note": "沿用原配坐标；依据源父级归入区域目录，关联骨不是精确起止点。附着范围、局部穿插及源组合对象的拆分尚待审核。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Fibrous joints of pectoral girdle.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        0.14760275185108185,
+        1.4076768159866333,
+        -0.018848780542612076
+      ],
+      "group": "arch",
+      "context_bones": [
+        "Scapula",
+        "Humerus"
+      ],
+      "origin": "喙突外侧缘。",
+      "insertion": "肩峰前外侧下表面。",
+      "shape": "强韧的三角形／扇形结构，与喙突、肩峰共同构成喙肩弓，跨过肱骨头上方。",
+      "comparison": "源控制网格仅 4 个顶点，难以表达扇形分束和自然边缘；端部存在疑似骨面相交，尚未调整足印。",
+      "references": [
+        {
+          "title": "Kenhub｜喙肩韧带",
+          "url": "https://www.kenhub.com/en/library/anatomy/coracoacromial-ligament",
+          "quote": "The coracoacromial ligament is a strong triangular ligament of the glenohumeral joint complex. It attaches between the lateral border of the coracoid process and the apex of the acromion of the scapula .",
+          "retrieved": "2026-10-13"
+        },
+        {
+          "title": "Desai 等，2022｜喙突与肩部韧带",
+          "url": "https://doi.org/10.1055/s-0041-1741091",
+          "quote": "The CAL extends from the inferior anterolateral surface of the acromion to the lateral border of the coracoid process",
+          "retrieved": "2026-10-13"
+        }
+      ],
+      "limitations": "资料用于核对连接关系和形态类型，不能证明当前网格的精确足印、厚度或运动性能。",
+      "evidence_status": "reference_checked"
+    },
+    {
+      "id": "z_lig_conoid_ligament_R",
+      "name_zh": "右锥状韧带",
+      "name_en": "Conoid ligament.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_clavicle_R",
+        "bone_scapula_R"
+      ],
+      "joint_or_connection_ids": [
+        "acromioclavicular_R"
+      ],
+      "source_structure_id": "Conoid ligament.r",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 56,
+      "note": "沿用原配坐标；依据源父级归入区域目录，关联骨不是精确起止点。附着范围、局部穿插及源组合对象的拆分尚待审核。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Acromioclavicular joint.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        -0.11023406684398651,
+        1.4035688638687134,
+        -0.02738886885344982
+      ],
+      "group": "arch",
+      "context_bones": [
+        "Scapula",
+        "Clavicle"
+      ],
+      "origin": "喙突基部区域。",
+      "insertion": "锁骨下表面的锥状结节。",
+      "shape": "喙锁韧带的锥状部分，与斜方部分在喙突侧连续，向锁骨侧分开。",
+      "comparison": "已有独立源对象；需核对锁骨端是否对应锥状结节及与斜方束的连续关系。",
+      "references": [
+        {
+          "title": "Kenhub｜喙锁韧带",
+          "url": "https://www.kenhub.com/en/library/anatomy/coracoclavicular-ligament",
+          "quote": "Conoid part: conoid tubercle -> coracoid process Trapezoid part:",
+          "retrieved": "2026-10-13"
+        },
+        {
+          "title": "Desai 等，2022｜喙突与肩部韧带",
+          "url": "https://doi.org/10.1055/s-0041-1741091",
+          "quote": "The CCL is a complex of two components: the conoid and trapezoid segments. These two segments are continuous inferiorly at the coracoid process attachment but separate before attaching to the inferior aspect of the clavicle superiorly",
+          "retrieved": "2026-10-13"
+        }
+      ],
+      "limitations": "资料用于核对连接关系和形态类型，不能证明当前网格的精确足印、厚度或运动性能。",
+      "evidence_status": "reference_checked"
+    },
+    {
+      "id": "z_lig_conoid_ligament_L",
+      "name_zh": "左锥状韧带",
+      "name_en": "Conoid ligament.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_clavicle_L",
+        "bone_scapula_L"
+      ],
+      "joint_or_connection_ids": [
+        "acromioclavicular_L"
+      ],
+      "source_structure_id": "Conoid ligament.l",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 56,
+      "note": "沿用原配坐标；依据源父级归入区域目录，关联骨不是精确起止点。附着范围、局部穿插及源组合对象的拆分尚待审核。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Acromioclavicular joint.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        0.11023399978876114,
+        1.4035688638687134,
+        -0.02738886885344982
+      ],
+      "group": "arch",
+      "context_bones": [
+        "Scapula",
+        "Clavicle"
+      ],
+      "origin": "喙突基部区域。",
+      "insertion": "锁骨下表面的锥状结节。",
+      "shape": "喙锁韧带的锥状部分，与斜方部分在喙突侧连续，向锁骨侧分开。",
+      "comparison": "已有独立源对象；需核对锁骨端是否对应锥状结节及与斜方束的连续关系。",
+      "references": [
+        {
+          "title": "Kenhub｜喙锁韧带",
+          "url": "https://www.kenhub.com/en/library/anatomy/coracoclavicular-ligament",
+          "quote": "Conoid part: conoid tubercle -> coracoid process Trapezoid part:",
+          "retrieved": "2026-10-13"
+        },
+        {
+          "title": "Desai 等，2022｜喙突与肩部韧带",
+          "url": "https://doi.org/10.1055/s-0041-1741091",
+          "quote": "The CCL is a complex of two components: the conoid and trapezoid segments. These two segments are continuous inferiorly at the coracoid process attachment but separate before attaching to the inferior aspect of the clavicle superiorly",
+          "retrieved": "2026-10-13"
+        }
+      ],
+      "limitations": "资料用于核对连接关系和形态类型，不能证明当前网格的精确足印、厚度或运动性能。",
+      "evidence_status": "reference_checked"
+    },
+    {
+      "id": "z_lig_acromioclavicular_ligament_R",
+      "name_zh": "右肩锁韧带",
+      "name_en": "Acromioclavicular ligament.r",
+      "side": "R",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_clavicle_R",
+        "bone_scapula_R"
+      ],
+      "joint_or_connection_ids": [
+        "acromioclavicular_R"
+      ],
+      "source_structure_id": "Acromioclavicular ligament.r",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 320,
+      "note": "沿用原配坐标；依据源父级归入区域目录，关联骨不是精确起止点。附着范围、局部穿插及源组合对象的拆分尚待审核。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Acromioclavicular joint.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        -0.15211306512355804,
+        1.4208449125289917,
+        -0.04017955809831619
+      ],
+      "group": "scapula",
+      "context_bones": [
+        "Scapula",
+        "Clavicle"
+      ],
+      "origin": "肩峰的肩锁关节邻近区域（详细边界待补依据）。",
+      "insertion": "锁骨肩峰端邻近区域（详细边界待补依据）。",
+      "shape": "肩锁关节囊韧带复合体，尤其需要核对上后方部分，不能概括为一根绳。",
+      "comparison": "现有每侧一个对象，未分出不同方向的囊韧带部分。",
+      "references": [
+        {
+          "title": "2025｜肩锁韧带与后方稳定性",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12415468/",
+          "quote": "80% of horizontal stability is provided by an intact superior-posterior capsuloligamentous complex",
+          "retrieved": "2026-10-13"
+        }
+      ],
+      "limitations": "本次论文支持上后方囊韧带复合体的重要性，尚不足以精确定位全部附着边界；此条未标为附着资料已核准。",
+      "evidence_status": "limited"
+    },
+    {
+      "id": "z_lig_acromioclavicular_ligament_L",
+      "name_zh": "左肩锁韧带",
+      "name_en": "Acromioclavicular ligament.l",
+      "side": "L",
+      "region": "上肢",
+      "available": true,
+      "trial": false,
+      "tissue": true,
+      "tissue_layer": "ligament",
+      "tissue_type": "ligament",
+      "bone_ids": [
+        "bone_clavicle_L",
+        "bone_scapula_L"
+      ],
+      "joint_or_connection_ids": [
+        "acromioclavicular_L"
+      ],
+      "source_structure_id": "Acromioclavicular ligament.l",
+      "source_dataset": "Z-Anatomy 原配候选",
+      "triangles": 320,
+      "note": "沿用原配坐标；依据源父级归入区域目录，关联骨不是精确起止点。附着范围、局部穿插及源组合对象的拆分尚待审核。",
+      "granularity": "source_object_not_segmented",
+      "association_kind": "source_parent_regional_catalog_not_attachment",
+      "source_parent": "Acromioclavicular joint.g",
+      "geometry_audit": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "removed_wire_edges": 0,
+        "split_branch_edges": 0,
+        "source_faces_preserved": true,
+        "source_vertex_positions_preserved": true,
+        "modifiers": [
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      "anatomy_review": "pending",
+      "assembly_review": "pending",
+      "topology_status": "source_surface_candidate",
+      "rest_position_web_m": [
+        0.15211302042007446,
+        1.4208449125289917,
+        -0.04017955809831619
+      ],
+      "group": "scapula",
+      "context_bones": [
+        "Scapula",
+        "Clavicle"
+      ],
+      "origin": "肩峰的肩锁关节邻近区域（详细边界待补依据）。",
+      "insertion": "锁骨肩峰端邻近区域（详细边界待补依据）。",
+      "shape": "肩锁关节囊韧带复合体，尤其需要核对上后方部分，不能概括为一根绳。",
+      "comparison": "现有每侧一个对象，未分出不同方向的囊韧带部分。",
+      "references": [
+        {
+          "title": "2025｜肩锁韧带与后方稳定性",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12415468/",
+          "quote": "80% of horizontal stability is provided by an intact superior-posterior capsuloligamentous complex",
+          "retrieved": "2026-10-13"
+        }
+      ],
+      "limitations": "本次论文支持上后方囊韧带复合体的重要性，尚不足以精确定位全部附着边界；此条未标为附着资料已核准。",
+      "evidence_status": "limited"
+    }
+  ],
+  "gaps": [
+    "盂肱下韧带复合体：源对象存在，但前束、后束和腋隐窝未独立分区；下一步须结合囊、盂唇后再拆分。",
+    "喙肱韧带及肩锁囊韧带：现有对象不代表全部分束和融合边界已建好。",
+    "喙盂韧带：本次源清单未见独立对象；文献描述存在变异及辨识差异，列为研究候选，不强行补一条标准带。",
+    "本轮范围是肩部韧带；胸锁、肋锁连接另成一组，不计入此处 11 类。",
+    "视觉修形版只改善网格分辨率、边缘厚度和材质，没有校准所有附着，也不作为运动绑定成品。"
+  ]
+}

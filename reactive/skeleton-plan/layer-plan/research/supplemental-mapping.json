@@ -1,0 +1,53 @@
+[
+  {
+    "id": "sacrococcygeal_disc",
+    "name_zh": "骶尾联合",
+    "source_object": "Sacrococcygeal symphysis",
+    "side": "M",
+    "layer": "joint",
+    "tissue_type": "variant_fibrocartilage",
+    "bone_ids": [
+      "bone_sacrum_M",
+      "bone_coccyx_M"
+    ],
+    "connection_ids": [
+      "sacrococcygeal"
+    ],
+    "granularity": "individual",
+    "note": "保留源坐标。骶尾联合形态、融合变异及与两骨的接触边界待审核。"
+  },
+  {
+    "id": "fibrous_forearm_interosseous_L",
+    "name_zh": "左前臂骨间膜",
+    "source_object": "Interosseous membrane of forearm.l",
+    "side": "L",
+    "layer": "ligament",
+    "tissue_type": "interosseous_membrane",
+    "bone_ids": [
+      "bone_radius_L",
+      "bone_ulna_L"
+    ],
+    "connection_ids": [
+      "forearm_interosseous_L"
+    ],
+    "granularity": "individual",
+    "note": "保留源坐标。骨间膜边界及桡尺骨附着范围待审核；显示展开不代表膜的拉伸。"
+  },
+  {
+    "id": "fibrous_forearm_interosseous_R",
+    "name_zh": "右前臂骨间膜",
+    "source_object": "Interosseous membrane of forearm.r",
+    "side": "R",
+    "layer": "ligament",
+    "tissue_type": "interosseous_membrane",
+    "bone_ids": [
+      "bone_radius_R",
+      "bone_ulna_R"
+    ],
+    "connection_ids": [
+      "forearm_interosseous_R"
+    ],
+    "granularity": "individual",
+    "note": "保留源坐标。骨间膜边界及桡尺骨附着范围待审核；显示展开不代表膜的拉伸。"
+  }
+]

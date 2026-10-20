@@ -1,0 +1,263 @@
+{
+  "source": "Z-Anatomy evaluated native label leaders",
+  "landmarks": [
+    {
+      "name": "股骨内上髁",
+      "term": "Medial epicondyle of femur",
+      "side": "R",
+      "bone": "bone_Femur_r",
+      "bone_name_zh": "股骨",
+      "position": [
+        -0.03364592045545578,
+        0.4518205523490906,
+        -0.03486694395542145
+      ],
+      "source_object": "Medial epicondyle of femur.j",
+      "source_kind": "native_leader_endpoint_projected_to_own_bone_within_0_5mm",
+      "source_leader_offset_mm": 0.041,
+      "review": "source_landmark_location_not_ligament_footprint"
+    },
+    {
+      "name": "股骨内上髁",
+      "term": "Medial epicondyle of femur",
+      "side": "L",
+      "bone": "bone_Femur_l",
+      "bone_name_zh": "股骨",
+      "position": [
+        0.03364592045545578,
+        0.4518205523490906,
+        -0.03486694395542145
+      ],
+      "source_object": "Medial epicondyle of femur.i",
+      "source_kind": "native_leader_endpoint_projected_to_own_bone_within_0_5mm",
+      "source_leader_offset_mm": 0.041,
+      "review": "source_landmark_location_not_ligament_footprint"
+    },
+    {
+      "name": "股骨外上髁",
+      "term": "Lateral epicondyle of femur",
+      "side": "R",
+      "bone": "bone_Femur_r",
+      "bone_name_zh": "股骨",
+      "position": [
+        -0.11559754610061646,
+        0.4592673182487488,
+        -0.029473451897501945
+      ],
+      "source_object": "Lateral epicondyle of femur.j",
+      "source_kind": "native_leader_endpoint_projected_to_own_bone_within_0_5mm",
+      "source_leader_offset_mm": 0.03,
+      "review": "source_landmark_location_not_ligament_footprint"
+    },
+    {
+      "name": "股骨外上髁",
+      "term": "Lateral epicondyle of femur",
+      "side": "L",
+      "bone": "bone_Femur_l",
+      "bone_name_zh": "股骨",
+      "position": [
+        0.11559754610061646,
+        0.4592672884464264,
+        -0.029473448172211647
+      ],
+      "source_object": "Lateral epicondyle of femur.i",
+      "source_kind": "native_leader_endpoint_projected_to_own_bone_within_0_5mm",
+      "source_leader_offset_mm": 0.03,
+      "review": "source_landmark_location_not_ligament_footprint"
+    },
+    {
+      "name": "股骨髁间窝",
+      "term": "Intercondylar fossa",
+      "side": "R",
+      "bone": "bone_Femur_r",
+      "bone_name_zh": "股骨",
+      "position": [
+        -0.07526756823062897,
+        0.4564005136489868,
+        -0.03600190952420235
+      ],
+      "source_object": "Intercondylar fossa.j",
+      "source_kind": "native_leader_endpoint_projected_to_own_bone_within_0_5mm",
+      "source_leader_offset_mm": 0.052,
+      "review": "source_landmark_location_not_ligament_footprint"
+    },
+    {
+      "name": "股骨髁间窝",
+      "term": "Intercondylar fossa",
+      "side": "L",
+      "bone": "bone_Femur_l",
+      "bone_name_zh": "股骨",
+      "position": [
+        0.07526756823062897,
+        0.4564005136489868,
+        -0.03600189834833145
+      ],
+      "source_object": "Intercondylar fossa.i",
+      "source_kind": "native_leader_endpoint_projected_to_own_bone_within_0_5mm",
+      "source_leader_offset_mm": 0.052,
+      "review": "source_landmark_location_not_ligament_footprint"
+    },
+    {
+      "name": "胫骨前髁间区",
+      "term": "Anterior intercondylar area",
+      "side": "R",
+      "bone": "bone_Tibia_r",
+      "bone_name_zh": "胫骨",
+      "position": [
+        -0.06659827381372452,
+        0.430086225271225,
+        -0.020466139540076256
+      ],
+      "source_object": "Anterior intercondylar area.j",
+      "source_kind": "native_leader_endpoint_projected_to_own_bone_within_0_5mm",
+      "source_leader_offset_mm": 0.002,
+      "review": "source_landmark_location_not_ligament_footprint"
+    },
+    {
+      "name": "胫骨前髁间区",
+      "term": "Anterior intercondylar area",
+      "side": "L",
+      "bone": "bone_Tibia_l",
+      "bone_name_zh": "胫骨",
+      "position": [
+        0.06659827381372452,
+        0.430086225271225,
+        -0.020466135814785957
+      ],
+      "source_object": "Anterior intercondylar area.i",
+      "source_kind": "native_leader_endpoint_projected_to_own_bone_within_0_5mm",
+      "source_leader_offset_mm": 0.002,
+      "review": "source_landmark_location_not_ligament_footprint"
+    },
+    {
+      "name": "胫骨后髁间区",
+      "term": "Posterior intercondylar area",
+      "side": "R",
+      "bone": "bone_Tibia_r",
+      "bone_name_zh": "胫骨",
+      "position": [
+        -0.07162732630968094,
+        0.4236971139907837,
+        -0.0480157770216465
+      ],
+      "source_object": "Posterior intercondylar area.j",
+      "source_kind": "native_leader_endpoint_projected_to_own_bone_within_0_5mm",
+      "source_leader_offset_mm": 0.002,
+      "review": "source_landmark_location_not_ligament_footprint"
+    },
+    {
+      "name": "胫骨后髁间区",
+      "term": "Posterior intercondylar area",
+      "side": "L",
+      "bone": "bone_Tibia_l",
+      "bone_name_zh": "胫骨",
+      "position": [
+        0.07162732630968094,
+        0.4236970841884613,
+        -0.048015788197517395
+      ],
+      "source_object": "Posterior intercondylar area.i",
+      "source_kind": "native_leader_endpoint_projected_to_own_bone_within_0_5mm",
+      "source_leader_offset_mm": 0.002,
+      "review": "source_landmark_location_not_ligament_footprint"
+    },
+    {
+      "name": "胫骨内侧髁",
+      "term": "Medial condyle of tibia",
+      "side": "R",
+      "bone": "bone_Tibia_r",
+      "bone_name_zh": "胫骨",
+      "position": [
+        -0.04011782258749008,
+        0.4102945923805237,
+        -0.04287129268050194
+      ],
+      "source_object": "Medial condyle of tibia.j",
+      "source_kind": "native_leader_endpoint_projected_to_own_bone_within_0_5mm",
+      "source_leader_offset_mm": 0.028,
+      "review": "source_landmark_location_not_ligament_footprint"
+    },
+    {
+      "name": "胫骨内侧髁",
+      "term": "Medial condyle of tibia",
+      "side": "L",
+      "bone": "bone_Tibia_l",
+      "bone_name_zh": "胫骨",
+      "position": [
+        0.040117841213941574,
+        0.4102945327758789,
+        -0.04287129268050194
+      ],
+      "source_object": "Medial condyle of tibia.i",
+      "source_kind": "native_leader_endpoint_projected_to_own_bone_within_0_5mm",
+      "source_leader_offset_mm": 0.028,
+      "review": "source_landmark_location_not_ligament_footprint"
+    },
+    {
+      "name": "胫骨外侧髁",
+      "term": "Lateral condyle of tibia",
+      "side": "R",
+      "bone": "bone_Tibia_r",
+      "bone_name_zh": "胫骨",
+      "position": [
+        -0.11328316479921341,
+        0.42191576957702637,
+        -0.028666434809565544
+      ],
+      "source_object": "Lateral condyle of tibia.j",
+      "source_kind": "native_leader_endpoint_projected_to_own_bone_within_0_5mm",
+      "source_leader_offset_mm": 0.012,
+      "review": "source_landmark_location_not_ligament_footprint"
+    },
+    {
+      "name": "胫骨外侧髁",
+      "term": "Lateral condyle of tibia",
+      "side": "L",
+      "bone": "bone_Tibia_l",
+      "bone_name_zh": "胫骨",
+      "position": [
+        0.11328316479921341,
+        0.421915739774704,
+        -0.028666432946920395
+      ],
+      "source_object": "Lateral condyle of tibia.i",
+      "source_kind": "native_leader_endpoint_projected_to_own_bone_within_0_5mm",
+      "source_leader_offset_mm": 0.012,
+      "review": "source_landmark_location_not_ligament_footprint"
+    },
+    {
+      "name": "腓骨头",
+      "term": "Head of fibula",
+      "side": "R",
+      "bone": "bone_Fibula_r",
+      "bone_name_zh": "腓骨",
+      "position": [
+        -0.12466004490852356,
+        0.3988324701786041,
+        -0.04020608961582184
+      ],
+      "source_object": "Head of fibula.j",
+      "source_kind": "native_leader_endpoint_projected_to_own_bone_within_0_5mm",
+      "source_leader_offset_mm": 0.035,
+      "review": "source_landmark_location_not_ligament_footprint"
+    },
+    {
+      "name": "腓骨头",
+      "term": "Head of fibula",
+      "side": "L",
+      "bone": "bone_Fibula_l",
+      "bone_name_zh": "腓骨",
+      "position": [
+        0.12466005235910416,
+        0.39883244037628174,
+        -0.04020608589053154
+      ],
+      "source_object": "Head of fibula.i",
+      "source_kind": "native_leader_endpoint_projected_to_own_bone_within_0_5mm",
+      "source_leader_offset_mm": 0.035,
+      "review": "source_landmark_location_not_ligament_footprint"
+    }
+  ],
+  "missing": [],
+  "region_status": "approximate_locator_only"
+}

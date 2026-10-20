@@ -2,7 +2,7 @@ import bpy,bmesh,json,hashlib
 from pathlib import Path
 from mathutils import Vector
 R=Path(__file__).resolve().parents[1];OUT=R/'z-anatomy-candidate';P=R.parent/'skeleton-plan/layer-plan/research';src=R/'research/ossicles/Startup.blend'
-mapping=json.loads((P/'additional-mapping.json').read_text());bones={b['id']:b for b in json.loads((OUT/'structures.json').read_text())['bones']}
+mapping=json.loads((P/'additional-mapping.json').read_text())+json.loads((P/'supplemental-mapping.json').read_text());bones={b['id']:b for b in json.loads((OUT/'structures.json').read_text())['bones']}
 with bpy.data.libraries.load(str(src),link=False) as (source,dst):dst.objects=[r['source_object'] for r in mapping]
 objects={o.name:o for o in dst.objects if o}
 for o in objects.values():
@@ -18,7 +18,7 @@ for row in mapping:
  regions=[bones[b]['region'] for b in row['bone_ids']];region=regions[0]
  if '上肢' in regions:region='上肢'
  elif '下肢' in regions:region='下肢'
- record={'id':row['id'],'name_zh':row['name_zh'],'name_en':row['source_object'],'side':row['side'],'region':region,'available':True,'trial':False,'tissue':True,'tissue_layer':row['layer'],'tissue_type':'fibrous_capsule' if row['layer']=='capsule' else 'ligament' if row['layer']=='ligament' else 'fibrocartilaginous_disc','bone_ids':row['bone_ids'],'joint_or_connection_ids':row['connection_ids'],'source_structure_id':row['source_object'],'source_dataset':'Z-Anatomy 原配候选','triangles':len(mesh.polygons),'note':('原始组合网格尚未逐关节拆分；' if row['granularity']=='source_group_unsegmented' else '')+'保留源坐标。关节囊开口、覆盖边界和韧带附着均待审核；关联骨只用于目录与展示。','granularity':row['granularity'],'geometry_audit':{'boundary_edges':boundary,'nonmanifold_edges':bad,'modifiers':[m.type for m in source.modifiers]},'anatomy_review':'pending','rest_position_web_m':[center.x,center.z,-center.y]};rows.append(record)
+ record={'id':row['id'],'name_zh':row['name_zh'],'name_en':row['source_object'],'side':row['side'],'region':region,'available':True,'trial':False,'tissue':True,'tissue_layer':row['layer'],'tissue_type':row.get('tissue_type') or ('fibrous_capsule' if row['layer']=='capsule' else 'ligament' if row['layer']=='ligament' else 'fibrocartilaginous_disc'),'bone_ids':row['bone_ids'],'joint_or_connection_ids':row['connection_ids'],'source_structure_id':row['source_object'],'source_dataset':'Z-Anatomy 原配候选','triangles':len(mesh.polygons),'note':row.get('note') or ('原始组合网格尚未逐关节拆分；' if row['granularity']=='source_group_unsegmented' else '')+'保留源坐标。关节囊开口、覆盖边界和韧带附着均待审核；关联骨只用于目录与展示。','granularity':row['granularity'],'geometry_audit':{'boundary_edges':boundary,'nonmanifold_edges':bad,'modifiers':[m.type for m in source.modifiers]},'anatomy_review':'pending','rest_position_web_m':[center.x,center.z,-center.y]};rows.append(record)
 bpy.ops.object.select_all(action='DESELECT')
 for o in new:o.select_set(True)
 bpy.ops.export_scene.gltf(filepath=str(OUT/'assets/connections.glb'),export_format='GLB',use_selection=True,export_extras=True)

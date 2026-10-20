@@ -1,0 +1,370 @@
+[
+  {
+    "id": "z_lig_ulnar_collateral_ligament_R",
+    "name_zh": "右肘尺侧副韧带",
+    "name_en": "Ulnar collateral ligament.r",
+    "side": "R",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_humerus_R",
+      "bone_radius_R",
+      "bone_ulna_R"
+    ],
+    "joint_or_connection_ids": [
+      "humeroulnar_R",
+      "humeroradial_R",
+      "proximal_radioulnar_R"
+    ],
+    "source_structure_id": "Ulnar collateral ligament.r",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 152,
+    "note": "沿用原配坐标；依据源父级归入区域目录，关联骨不是精确起止点。附着范围、局部穿插及源组合对象的拆分尚待审核。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Elbow joint.g",
+    "geometry_audit": {
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "removed_wire_edges": 0,
+      "split_branch_edges": 0,
+      "source_faces_preserved": true,
+      "source_vertex_positions_preserved": true,
+      "modifiers": [
+        "SUBSURF",
+        "SOLIDIFY"
+      ]
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      -0.20923374593257904,
+      1.0907644033432007,
+      -0.02268644981086254
+    ]
+  },
+  {
+    "id": "z_lig_ulnar_collateral_ligament_L",
+    "name_zh": "左肘尺侧副韧带",
+    "name_en": "Ulnar collateral ligament.l",
+    "side": "L",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_humerus_L",
+      "bone_radius_L",
+      "bone_ulna_L"
+    ],
+    "joint_or_connection_ids": [
+      "humeroulnar_L",
+      "humeroradial_L",
+      "proximal_radioulnar_L"
+    ],
+    "source_structure_id": "Ulnar collateral ligament.l",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 152,
+    "note": "沿用原配坐标；依据源父级归入区域目录，关联骨不是精确起止点。附着范围、局部穿插及源组合对象的拆分尚待审核。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Elbow joint.g",
+    "geometry_audit": {
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "removed_wire_edges": 0,
+      "split_branch_edges": 0,
+      "source_faces_preserved": true,
+      "source_vertex_positions_preserved": true,
+      "modifiers": [
+        "SUBSURF",
+        "SOLIDIFY"
+      ]
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      0.20923370122909546,
+      1.0907644033432007,
+      -0.02268644981086254
+    ]
+  },
+  {
+    "id": "z_lig_radial_collateral_ligament_R",
+    "name_zh": "右肘桡侧副韧带",
+    "name_en": "Radial collateral ligament.r",
+    "side": "R",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_humerus_R",
+      "bone_radius_R",
+      "bone_ulna_R"
+    ],
+    "joint_or_connection_ids": [
+      "humeroulnar_R",
+      "humeroradial_R",
+      "proximal_radioulnar_R"
+    ],
+    "source_structure_id": "Radial collateral ligament.r",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 96,
+    "note": "沿用原配坐标；依据源父级归入区域目录，关联骨不是精确起止点。附着范围、局部穿插及源组合对象的拆分尚待审核。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Elbow joint.g",
+    "geometry_audit": {
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "removed_wire_edges": 0,
+      "split_branch_edges": 0,
+      "source_faces_preserved": true,
+      "source_vertex_positions_preserved": true,
+      "modifiers": [
+        "SUBSURF",
+        "SOLIDIFY"
+      ]
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      -0.24860495328903198,
+      1.0990840196609497,
+      -0.034285448491573334
+    ]
+  },
+  {
+    "id": "z_lig_radial_collateral_ligament_L",
+    "name_zh": "左肘桡侧副韧带",
+    "name_en": "Radial collateral ligament.l",
+    "side": "L",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_humerus_L",
+      "bone_radius_L",
+      "bone_ulna_L"
+    ],
+    "joint_or_connection_ids": [
+      "humeroulnar_L",
+      "humeroradial_L",
+      "proximal_radioulnar_L"
+    ],
+    "source_structure_id": "Radial collateral ligament.l",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 96,
+    "note": "沿用原配坐标；依据源父级归入区域目录，关联骨不是精确起止点。附着范围、局部穿插及源组合对象的拆分尚待审核。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Elbow joint.g",
+    "geometry_audit": {
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "removed_wire_edges": 0,
+      "split_branch_edges": 0,
+      "source_faces_preserved": true,
+      "source_vertex_positions_preserved": true,
+      "modifiers": [
+        "SUBSURF",
+        "SOLIDIFY"
+      ]
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      0.248604878783226,
+      1.0990840196609497,
+      -0.034285448491573334
+    ]
+  },
+  {
+    "id": "z_lig_quadrate_ligament_R",
+    "name_zh": "右方形韧带",
+    "name_en": "Quadrate ligament.r",
+    "side": "R",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_humerus_R",
+      "bone_radius_R",
+      "bone_ulna_R"
+    ],
+    "joint_or_connection_ids": [
+      "humeroulnar_R",
+      "humeroradial_R",
+      "proximal_radioulnar_R"
+    ],
+    "source_structure_id": "Quadrate ligament.r",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 12,
+    "note": "沿用原配坐标；依据源父级归入区域目录，关联骨不是精确起止点。附着范围、局部穿插及源组合对象的拆分尚待审核。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Elbow joint.g",
+    "geometry_audit": {
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "removed_wire_edges": 0,
+      "split_branch_edges": 0,
+      "source_faces_preserved": true,
+      "source_vertex_positions_preserved": true,
+      "modifiers": [
+        "SOLIDIFY"
+      ]
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      -0.22971636056900024,
+      1.0735381841659546,
+      -0.03288538008928299
+    ]
+  },
+  {
+    "id": "z_lig_quadrate_ligament_L",
+    "name_zh": "左方形韧带",
+    "name_en": "Quadrate ligament.l",
+    "side": "L",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_humerus_L",
+      "bone_radius_L",
+      "bone_ulna_L"
+    ],
+    "joint_or_connection_ids": [
+      "humeroulnar_L",
+      "humeroradial_L",
+      "proximal_radioulnar_L"
+    ],
+    "source_structure_id": "Quadrate ligament.l",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 12,
+    "note": "沿用原配坐标；依据源父级归入区域目录，关联骨不是精确起止点。附着范围、局部穿插及源组合对象的拆分尚待审核。",
+    "granularity": "source_object_not_segmented",
+    "association_kind": "source_parent_regional_catalog_not_attachment",
+    "source_parent": "Elbow joint.g",
+    "geometry_audit": {
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "removed_wire_edges": 0,
+      "split_branch_edges": 0,
+      "source_faces_preserved": true,
+      "source_vertex_positions_preserved": true,
+      "modifiers": [
+        "SOLIDIFY"
+      ]
+    },
+    "anatomy_review": "pending",
+    "assembly_review": "pending",
+    "topology_status": "source_surface_candidate",
+    "rest_position_web_m": [
+      0.22972141206264496,
+      1.0735381841659546,
+      -0.03288254514336586
+    ]
+  },
+  {
+    "id": "ligament_annular_radius_L",
+    "name_zh": "左桡骨环状韧带",
+    "name_en": "Annular ligament of radius.l",
+    "side": "L",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_radius_L",
+      "bone_ulna_L"
+    ],
+    "joint_or_connection_ids": [
+      "proximal_radioulnar_L"
+    ],
+    "source_structure_id": "Annular ligament of radius.l",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 376,
+    "note": "保留源坐标。关节囊开口、覆盖边界和韧带附着均待审核；关联骨只用于目录与展示。",
+    "granularity": "individual",
+    "geometry_audit": {
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "modifiers": [
+        "SUBSURF",
+        "SOLIDIFY"
+      ]
+    },
+    "anatomy_review": "pending",
+    "rest_position_web_m": [
+      0.24047286808490753,
+      1.0829628705978394,
+      -0.030769092962145805
+    ]
+  },
+  {
+    "id": "ligament_annular_radius_R",
+    "name_zh": "右桡骨环状韧带",
+    "name_en": "Annular ligament of radius.r",
+    "side": "R",
+    "region": "上肢",
+    "available": true,
+    "trial": false,
+    "tissue": true,
+    "tissue_layer": "ligament",
+    "tissue_type": "ligament",
+    "bone_ids": [
+      "bone_radius_R",
+      "bone_ulna_R"
+    ],
+    "joint_or_connection_ids": [
+      "proximal_radioulnar_R"
+    ],
+    "source_structure_id": "Annular ligament of radius.r",
+    "source_dataset": "Z-Anatomy 原配候选",
+    "triangles": 376,
+    "note": "保留源坐标。关节囊开口、覆盖边界和韧带附着均待审核；关联骨只用于目录与展示。",
+    "granularity": "individual",
+    "geometry_audit": {
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "modifiers": [
+        "SUBSURF",
+        "SOLIDIFY"
+      ]
+    },
+    "anatomy_review": "pending",
+    "rest_position_web_m": [
+      -0.24049440026283264,
+      1.0829517841339111,
+      -0.030693447217345238
+    ]
+  }
+]

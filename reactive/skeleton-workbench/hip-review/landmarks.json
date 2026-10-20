@@ -1,0 +1,295 @@
+{
+  "source": "Z-Anatomy evaluated native label leaders",
+  "landmarks": [
+    {
+      "name": "髂前下棘",
+      "term": "Anterior inferior iliac spine",
+      "side": "R",
+      "bone": "bone_Hip_r",
+      "bone_name_zh": "髋骨",
+      "position": [
+        -0.09380494803190231,
+        0.8885970115661621,
+        0.023700520396232605
+      ],
+      "source_object": "Anterior inferior iliac spine.j",
+      "source_kind": "native_leader_endpoint_projected_to_own_bone_within_0_5mm",
+      "source_leader_offset_mm": 0.013,
+      "review": "source_landmark_location_not_ligament_footprint"
+    },
+    {
+      "name": "髂前下棘",
+      "term": "Anterior inferior iliac spine",
+      "side": "L",
+      "bone": "bone_Hip_l",
+      "bone_name_zh": "髋骨",
+      "position": [
+        0.09380495548248291,
+        0.8885969519615173,
+        0.023700552061200142
+      ],
+      "source_object": "Anterior inferior iliac spine.i",
+      "source_kind": "native_leader_endpoint_projected_to_own_bone_within_0_5mm",
+      "source_leader_offset_mm": 0.013,
+      "review": "source_landmark_location_not_ligament_footprint"
+    },
+    {
+      "name": "耻骨上支",
+      "term": "Superior pubic ramus",
+      "side": "R",
+      "bone": "bone_Hip_r",
+      "bone_name_zh": "髋骨",
+      "position": [
+        -0.0393582321703434,
+        0.8618499040603638,
+        0.033317361027002335
+      ],
+      "source_object": "Superior pubic ramus.j",
+      "source_kind": "native_leader_endpoint_projected_to_own_bone_within_0_5mm",
+      "source_leader_offset_mm": 0.008,
+      "review": "source_landmark_location_not_ligament_footprint"
+    },
+    {
+      "name": "耻骨上支",
+      "term": "Superior pubic ramus",
+      "side": "L",
+      "bone": "bone_Hip_l",
+      "bone_name_zh": "髋骨",
+      "position": [
+        0.039358220994472504,
+        0.861849844455719,
+        0.033317387104034424
+      ],
+      "source_object": "Superior pubic ramus.i",
+      "source_kind": "native_leader_endpoint_projected_to_own_bone_within_0_5mm",
+      "source_leader_offset_mm": 0.008,
+      "review": "source_landmark_location_not_ligament_footprint"
+    },
+    {
+      "name": "坐骨体",
+      "term": "Body of ischium",
+      "side": "R",
+      "bone": "bone_Hip_r",
+      "bone_name_zh": "髋骨",
+      "position": [
+        -0.06490667909383774,
+        0.8337305188179016,
+        -0.02817367948591709
+      ],
+      "source_object": "Body of ischium.j",
+      "source_kind": "native_leader_endpoint_projected_to_own_bone_within_0_5mm",
+      "source_leader_offset_mm": 0.019,
+      "review": "source_landmark_location_not_ligament_footprint"
+    },
+    {
+      "name": "坐骨体",
+      "term": "Body of ischium",
+      "side": "L",
+      "bone": "bone_Hip_l",
+      "bone_name_zh": "髋骨",
+      "position": [
+        0.06490666419267654,
+        0.8337303996086121,
+        -0.028173675760626793
+      ],
+      "source_object": "Body of ischium.i",
+      "source_kind": "native_leader_endpoint_projected_to_own_bone_within_0_5mm",
+      "source_leader_offset_mm": 0.019,
+      "review": "source_landmark_location_not_ligament_footprint"
+    },
+    {
+      "name": "髋臼缘",
+      "term": "Acetabular margin",
+      "side": "R",
+      "bone": "bone_Hip_r",
+      "bone_name_zh": "髋骨",
+      "position": [
+        -0.0916910320520401,
+        0.8755720257759094,
+        -0.02709883451461792
+      ],
+      "source_object": "Acetabular margin.j",
+      "source_kind": "native_leader_endpoint_projected_to_own_bone_within_0_5mm",
+      "source_leader_offset_mm": 0.019,
+      "review": "source_landmark_location_not_ligament_footprint"
+    },
+    {
+      "name": "髋臼缘",
+      "term": "Acetabular margin",
+      "side": "L",
+      "bone": "bone_Hip_l",
+      "bone_name_zh": "髋骨",
+      "position": [
+        0.09169106185436249,
+        0.875572144985199,
+        -0.027098827064037323
+      ],
+      "source_object": "Acetabular margin.i",
+      "source_kind": "native_leader_endpoint_projected_to_own_bone_within_0_5mm",
+      "source_leader_offset_mm": 0.019,
+      "review": "source_landmark_location_not_ligament_footprint"
+    },
+    {
+      "name": "髋臼切迹",
+      "term": "Acetabular notch",
+      "side": "R",
+      "bone": "bone_Hip_r",
+      "bone_name_zh": "髋骨",
+      "position": [
+        -0.05500539019703865,
+        0.8606956005096436,
+        -0.007098489440977573
+      ],
+      "source_object": "Acetabular notch.j",
+      "source_kind": "native_leader_endpoint_projected_to_own_bone_within_0_5mm",
+      "source_leader_offset_mm": 0.03,
+      "review": "source_landmark_location_not_ligament_footprint"
+    },
+    {
+      "name": "髋臼切迹",
+      "term": "Acetabular notch",
+      "side": "L",
+      "bone": "bone_Hip_l",
+      "bone_name_zh": "髋骨",
+      "position": [
+        0.05500538647174835,
+        0.860695481300354,
+        -0.007098490837961435
+      ],
+      "source_object": "Acetabular notch.i",
+      "source_kind": "native_leader_endpoint_projected_to_own_bone_within_0_5mm",
+      "source_leader_offset_mm": 0.03,
+      "review": "source_landmark_location_not_ligament_footprint"
+    },
+    {
+      "name": "髋臼窝",
+      "term": "Acetabular fossa",
+      "side": "R",
+      "bone": "bone_Hip_r",
+      "bone_name_zh": "髋骨",
+      "position": [
+        -0.06192147359251976,
+        0.8662241101264954,
+        -0.01999041996896267
+      ],
+      "source_object": "Acetabular fossa.j",
+      "source_kind": "native_leader_endpoint_projected_to_own_bone_within_0_5mm",
+      "source_leader_offset_mm": 0.002,
+      "review": "source_landmark_location_not_ligament_footprint"
+    },
+    {
+      "name": "髋臼窝",
+      "term": "Acetabular fossa",
+      "side": "L",
+      "bone": "bone_Hip_l",
+      "bone_name_zh": "髋骨",
+      "position": [
+        0.06192148104310036,
+        0.8662240505218506,
+        -0.019990449771285057
+      ],
+      "source_object": "Acetabular fossa.i",
+      "source_kind": "native_leader_endpoint_projected_to_own_bone_within_0_5mm",
+      "source_leader_offset_mm": 0.002,
+      "review": "source_landmark_location_not_ligament_footprint"
+    },
+    {
+      "name": "转子间线",
+      "term": "Intertrochanteric line",
+      "side": "R",
+      "bone": "bone_Femur_r",
+      "bone_name_zh": "股骨",
+      "position": [
+        -0.10382860898971558,
+        0.826232373714447,
+        0.002194807631894946
+      ],
+      "source_object": "Intertrochanteric line.j",
+      "source_kind": "native_leader_endpoint_projected_to_own_bone_within_0_5mm",
+      "source_leader_offset_mm": 0.021,
+      "review": "source_landmark_location_not_ligament_footprint"
+    },
+    {
+      "name": "转子间线",
+      "term": "Intertrochanteric line",
+      "side": "L",
+      "bone": "bone_Femur_l",
+      "bone_name_zh": "股骨",
+      "position": [
+        0.10382861644029617,
+        0.826232373714447,
+        0.0021948092617094517
+      ],
+      "source_object": "Intertrochanteric line.i",
+      "source_kind": "native_leader_endpoint_projected_to_own_bone_within_0_5mm",
+      "source_leader_offset_mm": 0.021,
+      "review": "source_landmark_location_not_ligament_footprint"
+    },
+    {
+      "name": "大转子",
+      "term": "Greater trochanter",
+      "side": "R",
+      "bone": "bone_Femur_r",
+      "bone_name_zh": "股骨",
+      "position": [
+        -0.14555247128009796,
+        0.8432236909866333,
+        -0.014478305354714394
+      ],
+      "source_object": "Greater trochanter.j",
+      "source_kind": "native_leader_endpoint_projected_to_own_bone_within_0_5mm",
+      "source_leader_offset_mm": 0.02,
+      "review": "source_landmark_location_not_ligament_footprint"
+    },
+    {
+      "name": "大转子",
+      "term": "Greater trochanter",
+      "side": "L",
+      "bone": "bone_Femur_l",
+      "bone_name_zh": "股骨",
+      "position": [
+        0.14555247128009796,
+        0.8432236909866333,
+        -0.014478307217359543
+      ],
+      "source_object": "Greater trochanter.i",
+      "source_kind": "native_leader_endpoint_projected_to_own_bone_within_0_5mm",
+      "source_leader_offset_mm": 0.02,
+      "review": "source_landmark_location_not_ligament_footprint"
+    },
+    {
+      "name": "股骨头凹",
+      "term": "Fovea for ligament of head of femur",
+      "side": "R",
+      "bone": "bone_Femur_r",
+      "bone_name_zh": "股骨",
+      "position": [
+        -0.06465686857700348,
+        0.8633034229278564,
+        -0.009688394144177437
+      ],
+      "source_object": "Fovea for ligament of head of femur.j",
+      "source_kind": "native_leader_endpoint_projected_to_own_bone_within_0_5mm",
+      "source_leader_offset_mm": 0.008,
+      "review": "source_landmark_location_not_ligament_footprint"
+    },
+    {
+      "name": "股骨头凹",
+      "term": "Fovea for ligament of head of femur",
+      "side": "L",
+      "bone": "bone_Femur_l",
+      "bone_name_zh": "股骨",
+      "position": [
+        0.06465683877468109,
+        0.8633033633232117,
+        -0.00968838855624199
+      ],
+      "source_object": "Fovea for ligament of head of femur.i",
+      "source_kind": "native_leader_endpoint_projected_to_own_bone_within_0_5mm",
+      "source_leader_offset_mm": 0.008,
+      "review": "source_landmark_location_not_ligament_footprint"
+    }
+  ],
+  "missing": [],
+  "region_status": "approximate_locator_only"
+}

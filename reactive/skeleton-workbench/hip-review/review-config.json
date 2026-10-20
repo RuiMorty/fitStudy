@@ -1,0 +1,26 @@
+{
+  "title": "髋部结构",
+  "bones": [
+    "Hip",
+    "Femur"
+  ],
+  "model": "hip-review-overlap.glb",
+  "meshCount": 20,
+  "initialId": "z_lig_descending_part_of_iliofemoral_ligament_R",
+  "target": [
+    0,
+    1,
+    0
+  ],
+  "camera": [
+    0,
+    1,
+    0.5
+  ],
+  "storageKey": "hip-review-v1",
+  "allowOriginal": false,
+  "loadedLabel": "重叠交界显示版 · 解剖待核准",
+  "boneOpacityControl": true,
+  "minFitDistance": 0.26,
+  "audit": "geometry-audit-overlap.json"
+}

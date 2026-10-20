@@ -1,0 +1,18 @@
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {PerspectiveCamera,Vector3} from '../vendor/three.module.js';
+const source=(await readFile(new URL('../vendor/OrbitControls.js',import.meta.url),'utf8')).replace("from 'three'",`from '${new URL('../vendor/three.module.js',import.meta.url).href}'`);
+const {OrbitControls}=await import('data:text/javascript;base64,'+Buffer.from(source).toString('base64'));
+const camera=new PerspectiveCamera(35,1,.002,12);camera.position.set(0,1.6,1);
+const c=new OrbitControls(camera,null);c.target.set(0,1.6,0);c.update();c.rotationPivot=new Vector3(0,.9,0);c.enableDamping=true;
+const pivot=c.rotationPivot.clone(),distance=camera.position.distanceTo(pivot),targetDistance=c.target.distanceTo(pivot);
+c._rotateLeft(.4);c._rotateUp(.15);
+for(let i=0;i<150;i++)c.update();
+assert.ok(Math.abs(camera.position.distanceTo(pivot)-distance)<1e-8,'rotation preserves radius about body');
+assert.ok(Math.abs(c.target.distanceTo(pivot)-targetDistance)<1e-8,'framing target orbits same pivot');
+assert.ok(c.rotationPivot.equals(pivot));
+const target=c.target.clone();c.zoomToCursor=true;c.screenSpacePanning=true;c._performCursorZoom=true;c._dollyDirection.set(.15,.2,-1).normalize();c._scale=.8;c.update();
+assert.ok(c.target.distanceTo(target)>1e-4,'cursor zoom still moves framing target');assert.ok(c.rotationPivot.equals(pivot),'zoom does not move body pivot');
+const zoomRadius=camera.position.distanceTo(pivot);c._rotateLeft(.2);for(let i=0;i<150;i++)c.update();assert.ok(Math.abs(camera.position.distanceTo(pivot)-zoomRadius)<1e-8);
+c.rotationPivot=null;const localTarget=c.target.clone();c._rotateLeft(.2);for(let i=0;i<150;i++)c.update();assert.ok(c.target.distanceTo(localTarget)<1e-8,'review default keeps original behavior');
+console.log('PASS: body pivot, damping, cursor zoom, post-zoom rotation, unchanged default');

@@ -1,0 +1,37 @@
+{
+  "title": "腕部韧带",
+  "bones": [
+    "Radius",
+    "Ulna",
+    "Scaphoid",
+    "Lunate",
+    "Triquetrum",
+    "Pisiform",
+    "Trapezium",
+    "Trapezoid",
+    "Capitate",
+    "Hamate",
+    "Metacarpal1",
+    "Metacarpal2",
+    "Metacarpal3",
+    "Metacarpal4",
+    "Metacarpal5"
+  ],
+  "model": "wrist-review-overlap.glb",
+  "meshCount": 91,
+  "initialId": "z_lig_radioscaphocapitate_ligament_R",
+  "target": [
+    -0.25,
+    0.84,
+    0
+  ],
+  "camera": [
+    -0.25,
+    0.84,
+    0.3
+  ],
+  "storageKey": "wrist-review-records-v1",
+  "allowOriginal": false,
+  "audit": "geometry-audit-overlap.json",
+  "loadedLabel": "交界厚度优化版 · 解剖待核准"
+}

@@ -1,0 +1,795 @@
+{
+  "z_lig_ulnotriquetral_ligament_L": {
+    "source": "Ulnotriquetral ligament.l",
+    "modifiers": [
+      {
+        "type": "SUBSURF",
+        "thickness": null,
+        "levels": 1
+      },
+      {
+        "type": "SOLIDIFY",
+        "thickness": 0.0005000000237487257,
+        "levels": null
+      }
+    ],
+    "raw_vertices": 6,
+    "evaluated_vertices": 30,
+    "penetration_candidates": {
+      "Triquetrum bone.l": {
+        "vertices_inside": 7,
+        "max_depth_mm": 1.2976827565580606
+      }
+    }
+  },
+  "z_lig_ulnopisiform_ligament_L": {
+    "source": "Ulnopisiform ligament.l",
+    "modifiers": [
+      {
+        "type": "SOLIDIFY",
+        "thickness": 0.0005000000237487257,
+        "levels": null
+      }
+    ],
+    "raw_vertices": 4,
+    "evaluated_vertices": 8,
+    "penetration_candidates": {
+      "Triquetrum bone.l": {
+        "vertices_inside": 2,
+        "max_depth_mm": 1.219834084622562
+      }
+    }
+  },
+  "z_lig_ulnopisiform_ligament_M": {
+    "source": "Ulnopisiform ligament",
+    "modifiers": [
+      {
+        "type": "SOLIDIFY",
+        "thickness": 0.0005000000237487257,
+        "levels": null
+      }
+    ],
+    "raw_vertices": 4,
+    "evaluated_vertices": 8,
+    "penetration_candidates": {}
+  },
+  "z_lig_ulnolunate_ligament_L": {
+    "source": "Ulnolunate ligament.l",
+    "modifiers": [
+      {
+        "type": "SUBSURF",
+        "thickness": null,
+        "levels": 1
+      },
+      {
+        "type": "SOLIDIFY",
+        "thickness": 0.0005000000237487257,
+        "levels": null
+      }
+    ],
+    "raw_vertices": 10,
+    "evaluated_vertices": 54,
+    "penetration_candidates": {
+      "Scaphoid bone.l": {
+        "vertices_inside": 10,
+        "max_depth_mm": 3.3961606677621603
+      }
+    }
+  },
+  "z_lig_ulnocapitate_ligament_L": {
+    "source": "Ulnocapitate ligament.l",
+    "modifiers": [
+      {
+        "type": "SUBSURF",
+        "thickness": null,
+        "levels": 1
+      },
+      {
+        "type": "SOLIDIFY",
+        "thickness": 0.0005000000237487257,
+        "levels": null
+      }
+    ],
+    "raw_vertices": 12,
+    "evaluated_vertices": 66,
+    "penetration_candidates": {
+      "Lunate bone.l": {
+        "vertices_inside": 5,
+        "max_depth_mm": 1.8072589300572872
+      },
+      "Capitate bone.l": {
+        "vertices_inside": 12,
+        "max_depth_mm": 4.6231672167778015
+      }
+    }
+  },
+  "z_lig_ulnar_collateral_ligament_of_wrist_joint_L": {
+    "source": "Ulnar collateral ligament of wrist joint.l",
+    "modifiers": [
+      {
+        "type": "SUBSURF",
+        "thickness": null,
+        "levels": 1
+      },
+      {
+        "type": "SOLIDIFY",
+        "thickness": 0.0005000000237487257,
+        "levels": null
+      }
+    ],
+    "raw_vertices": 12,
+    "evaluated_vertices": 66,
+    "penetration_candidates": {
+      "Ulna.l": {
+        "vertices_inside": 9,
+        "max_depth_mm": 0.6877612904645503
+      },
+      "Triquetrum bone.l": {
+        "vertices_inside": 3,
+        "max_depth_mm": 0.5839910008944571
+      },
+      "Pisiform bone.l": {
+        "vertices_inside": 2,
+        "max_depth_mm": 0.5042761913500726
+      }
+    }
+  },
+  "z_lig_triquetrohamate_ligament_L": {
+    "source": "Triquetrohamate ligament.l",
+    "modifiers": [
+      {
+        "type": "SOLIDIFY",
+        "thickness": 0.0005000000237487257,
+        "levels": null
+      }
+    ],
+    "raw_vertices": 4,
+    "evaluated_vertices": 8,
+    "penetration_candidates": {
+      "Triquetrum bone.l": {
+        "vertices_inside": 3,
+        "max_depth_mm": 0.6443065940402448
+      },
+      "Hamate bone.l": {
+        "vertices_inside": 4,
+        "max_depth_mm": 0.39193537668325007
+      }
+    }
+  },
+  "z_lig_triquetrocapitate_ligament_L": {
+    "source": "Triquetrocapitate ligament.l",
+    "modifiers": [
+      {
+        "type": "SOLIDIFY",
+        "thickness": 0.0005000000237487257,
+        "levels": null
+      }
+    ],
+    "raw_vertices": 6,
+    "evaluated_vertices": 12,
+    "penetration_candidates": {
+      "Triquetrum bone.l": {
+        "vertices_inside": 4,
+        "max_depth_mm": 0.8971007773652673
+      },
+      "Capitate bone.l": {
+        "vertices_inside": 4,
+        "max_depth_mm": 0.5608097417280078
+      }
+    }
+  },
+  "z_lig_trapezoideocapitate_interosseous_ligament_L": {
+    "source": "Trapezoideocapitate interosseous ligament.l",
+    "modifiers": [
+      {
+        "type": "SOLIDIFY",
+        "thickness": 0.0005000000237487257,
+        "levels": null
+      }
+    ],
+    "raw_vertices": 4,
+    "evaluated_vertices": 8,
+    "penetration_candidates": {
+      "Trapezoid bone.l": {
+        "vertices_inside": 4,
+        "max_depth_mm": 1.0832621483132243
+      },
+      "Capitate bone.l": {
+        "vertices_inside": 4,
+        "max_depth_mm": 1.737469807267189
+      }
+    }
+  },
+  "z_lig_trapeziotrapezoidal_interosseous_ligament_L": {
+    "source": "Trapeziotrapezoidal interosseous ligament.l",
+    "modifiers": [
+      {
+        "type": "SOLIDIFY",
+        "thickness": 0.0005000000237487257,
+        "levels": null
+      }
+    ],
+    "raw_vertices": 4,
+    "evaluated_vertices": 8,
+    "penetration_candidates": {
+      "Trapezium bone.l": {
+        "vertices_inside": 4,
+        "max_depth_mm": 1.1719767935574055
+      },
+      "Trapezoid bone.l": {
+        "vertices_inside": 4,
+        "max_depth_mm": 0.7436758023686707
+      }
+    }
+  },
+  "z_lig_scapholunate_interosseous_ligament_L": {
+    "source": "Scapholunate interosseous ligament.l",
+    "modifiers": [
+      {
+        "type": "SOLIDIFY",
+        "thickness": 0.0005000000237487257,
+        "levels": null
+      }
+    ],
+    "raw_vertices": 4,
+    "evaluated_vertices": 8,
+    "penetration_candidates": {
+      "Scaphoid bone.l": {
+        "vertices_inside": 4,
+        "max_depth_mm": 0.40384544990956783
+      },
+      "Lunate bone.l": {
+        "vertices_inside": 2,
+        "max_depth_mm": 0.5163594032637775
+      }
+    }
+  },
+  "z_lig_radiocapitate_ligament_L": {
+    "source": "Radiocapitate ligament.l",
+    "modifiers": [
+      {
+        "type": "SOLIDIFY",
+        "thickness": 0.0005000000237487257,
+        "levels": null
+      }
+    ],
+    "raw_vertices": 4,
+    "evaluated_vertices": 8,
+    "penetration_candidates": {
+      "Capitate bone.l": {
+        "vertices_inside": 2,
+        "max_depth_mm": 0.6065783090889454
+      }
+    }
+  },
+  "z_lig_scaphotrapeziotrapezoidal_ligament_L": {
+    "source": "Scaphotrapeziotrapezoidal ligament.l",
+    "modifiers": [
+      {
+        "type": "SUBSURF",
+        "thickness": null,
+        "levels": 1
+      },
+      {
+        "type": "SOLIDIFY",
+        "thickness": 0.0005000000237487257,
+        "levels": null
+      }
+    ],
+    "raw_vertices": 13,
+    "evaluated_vertices": 74,
+    "penetration_candidates": {
+      "Scaphoid bone.l": {
+        "vertices_inside": 3,
+        "max_depth_mm": 0.45703709474764764
+      },
+      "Trapezium bone.l": {
+        "vertices_inside": 8,
+        "max_depth_mm": 0.4751874948851764
+      },
+      "Trapezoid bone.l": {
+        "vertices_inside": 6,
+        "max_depth_mm": 0.9487802162766457
+      }
+    }
+  },
+  "z_lig_scaphocapitate_ligament_L": {
+    "source": "Scaphocapitate ligament.l",
+    "modifiers": [
+      {
+        "type": "SOLIDIFY",
+        "thickness": 0.0005000000237487257,
+        "levels": null
+      }
+    ],
+    "raw_vertices": 4,
+    "evaluated_vertices": 8,
+    "penetration_candidates": {
+      "Scaphoid bone.l": {
+        "vertices_inside": 2,
+        "max_depth_mm": 0.7551719900220633
+      },
+      "Capitate bone.l": {
+        "vertices_inside": 3,
+        "max_depth_mm": 1.0871581034734845
+      }
+    }
+  },
+  "z_lig_radioscaphocapitate_ligament_L": {
+    "source": "Radioscaphocapitate ligament.l",
+    "modifiers": [
+      {
+        "type": "SOLIDIFY",
+        "thickness": 0.0005000000237487257,
+        "levels": null
+      }
+    ],
+    "raw_vertices": 6,
+    "evaluated_vertices": 12,
+    "penetration_candidates": {
+      "Radius.l": {
+        "vertices_inside": 3,
+        "max_depth_mm": 0.9761488763615489
+      },
+      "Capitate bone.l": {
+        "vertices_inside": 2,
+        "max_depth_mm": 0.45482401037588716
+      }
+    }
+  },
+  "z_lig_radiate_carpal_ligament_L": {
+    "source": "Radiate carpal ligament.l",
+    "modifiers": [
+      {
+        "type": "SUBSURF",
+        "thickness": null,
+        "levels": 1
+      },
+      {
+        "type": "SOLIDIFY",
+        "thickness": 0.0005000000237487257,
+        "levels": null
+      }
+    ],
+    "raw_vertices": 33,
+    "evaluated_vertices": 206,
+    "penetration_candidates": {
+      "Scaphoid bone.l": {
+        "vertices_inside": 5,
+        "max_depth_mm": 0.9897500276565552
+      },
+      "Lunate bone.l": {
+        "vertices_inside": 6,
+        "max_depth_mm": 0.318443460855633
+      },
+      "Trapezium bone.l": {
+        "vertices_inside": 4,
+        "max_depth_mm": 0.963476428296417
+      },
+      "Trapezoid bone.l": {
+        "vertices_inside": 10,
+        "max_depth_mm": 0.7522692321799695
+      },
+      "Capitate bone.l": {
+        "vertices_inside": 2,
+        "max_depth_mm": 0.297173042781651
+      },
+      "Hamate bone.l": {
+        "vertices_inside": 5,
+        "max_depth_mm": 0.5183937610127032
+      }
+    }
+  },
+  "z_lig_radial_collateral_ligament_of_wrist_joint_L": {
+    "source": "Radial collateral ligament of wrist joint.l",
+    "modifiers": [
+      {
+        "type": "SUBSURF",
+        "thickness": null,
+        "levels": 1
+      },
+      {
+        "type": "SOLIDIFY",
+        "thickness": 0.0005000000237487257,
+        "levels": null
+      }
+    ],
+    "raw_vertices": 12,
+    "evaluated_vertices": 70,
+    "penetration_candidates": {
+      "Radius.l": {
+        "vertices_inside": 9,
+        "max_depth_mm": 0.8838034700602293
+      },
+      "Scaphoid bone.l": {
+        "vertices_inside": 6,
+        "max_depth_mm": 0.6551347905769944
+      },
+      "Trapezium bone.l": {
+        "vertices_inside": 9,
+        "max_depth_mm": 1.3250979827716947
+      }
+    }
+  },
+  "z_lig_pisotriquetral_ligament_L": {
+    "source": "Pisotriquetral ligament.l",
+    "modifiers": [
+      {
+        "type": "SUBSURF",
+        "thickness": null,
+        "levels": 1
+      },
+      {
+        "type": "SOLIDIFY",
+        "thickness": 0.0005000000237487257,
+        "levels": null
+      }
+    ],
+    "raw_vertices": 27,
+    "evaluated_vertices": 140,
+    "penetration_candidates": {
+      "Triquetrum bone.l": {
+        "vertices_inside": 36,
+        "max_depth_mm": 0.5885368445888162
+      },
+      "Pisiform bone.l": {
+        "vertices_inside": 34,
+        "max_depth_mm": 0.6617414182983339
+      }
+    }
+  },
+  "z_lig_pisometacarpal_ligament_L": {
+    "source": "Pisometacarpal ligament.l",
+    "modifiers": [
+      {
+        "type": "SOLIDIFY",
+        "thickness": 0.0005000000237487257,
+        "levels": null
+      }
+    ],
+    "raw_vertices": 4,
+    "evaluated_vertices": 8,
+    "penetration_candidates": {
+      "Pisiform bone.l": {
+        "vertices_inside": 4,
+        "max_depth_mm": 0.7443663780577481
+      }
+    }
+  },
+  "z_lig_pisohamate_ligament_L": {
+    "source": "Pisohamate ligament.l",
+    "modifiers": [
+      {
+        "type": "SOLIDIFY",
+        "thickness": 0.0005000000237487257,
+        "levels": null
+      }
+    ],
+    "raw_vertices": 4,
+    "evaluated_vertices": 8,
+    "penetration_candidates": {
+      "Hamate bone.l": {
+        "vertices_inside": 1,
+        "max_depth_mm": 0.20987384777981788
+      }
+    }
+  },
+  "z_lig_palmar_trapezoideocapitate_ligament_L": {
+    "source": "Palmar trapezoideocapitate ligament.l",
+    "modifiers": [
+      {
+        "type": "SOLIDIFY",
+        "thickness": 0.0005000000237487257,
+        "levels": null
+      }
+    ],
+    "raw_vertices": 4,
+    "evaluated_vertices": 8,
+    "penetration_candidates": {
+      "Trapezoid bone.l": {
+        "vertices_inside": 3,
+        "max_depth_mm": 0.861781882122159
+      },
+      "Capitate bone.l": {
+        "vertices_inside": 3,
+        "max_depth_mm": 1.041334355250001
+      }
+    }
+  },
+  "z_lig_palmar_scaphotriquetral_ligament_L": {
+    "source": "Palmar scaphotriquetral ligament.l",
+    "modifiers": [
+      {
+        "type": "SUBSURF",
+        "thickness": null,
+        "levels": 2
+      },
+      {
+        "type": "SOLIDIFY",
+        "thickness": 0.0005000000237487257,
+        "levels": null
+      }
+    ],
+    "raw_vertices": 8,
+    "evaluated_vertices": 130,
+    "penetration_candidates": {
+      "Scaphoid bone.l": {
+        "vertices_inside": 9,
+        "max_depth_mm": 0.46750003821216524
+      },
+      "Triquetrum bone.l": {
+        "vertices_inside": 9,
+        "max_depth_mm": 0.9127359953708947
+      }
+    }
+  },
+  "z_lig_palmar_radio_ulnar_ligament_L": {
+    "source": "Palmar radio-ulnar ligament.l",
+    "modifiers": [
+      {
+        "type": "SUBSURF",
+        "thickness": null,
+        "levels": 1
+      },
+      {
+        "type": "SOLIDIFY",
+        "thickness": 0.0005000000237487257,
+        "levels": null
+      }
+    ],
+    "raw_vertices": 8,
+    "evaluated_vertices": 42,
+    "penetration_candidates": {
+      "Radius.l": {
+        "vertices_inside": 6,
+        "max_depth_mm": 2.5708607863634825
+      }
+    }
+  },
+  "z_lig_palmar_lunotriquetral_ligament_L": {
+    "source": "Palmar lunotriquetral ligament.l",
+    "modifiers": [
+      {
+        "type": "SOLIDIFY",
+        "thickness": 0.0005000000237487257,
+        "levels": null
+      }
+    ],
+    "raw_vertices": 4,
+    "evaluated_vertices": 8,
+    "penetration_candidates": {
+      "Lunate bone.l": {
+        "vertices_inside": 4,
+        "max_depth_mm": 0.3057158028241247
+      },
+      "Triquetrum bone.l": {
+        "vertices_inside": 4,
+        "max_depth_mm": 0.6603827350772917
+      }
+    }
+  },
+  "z_lig_palmar_capitohamate_ligament_L": {
+    "source": "Palmar capitohamate ligament.l",
+    "modifiers": [
+      {
+        "type": "SOLIDIFY",
+        "thickness": 0.0005000000237487257,
+        "levels": null
+      }
+    ],
+    "raw_vertices": 4,
+    "evaluated_vertices": 8,
+    "penetration_candidates": {
+      "Capitate bone.l": {
+        "vertices_inside": 3,
+        "max_depth_mm": 0.7237576646730304
+      },
+      "Hamate bone.l": {
+        "vertices_inside": 3,
+        "max_depth_mm": 0.42236445005983114
+      }
+    }
+  },
+  "z_lig_lunotriquetral_interosseous_ligament_L": {
+    "source": "Lunotriquetral interosseous ligament.l",
+    "modifiers": [
+      {
+        "type": "SOLIDIFY",
+        "thickness": 0.0005000000237487257,
+        "levels": null
+      }
+    ],
+    "raw_vertices": 4,
+    "evaluated_vertices": 8,
+    "penetration_candidates": {
+      "Lunate bone.l": {
+        "vertices_inside": 4,
+        "max_depth_mm": 1.0997139615938067
+      },
+      "Triquetrum bone.l": {
+        "vertices_inside": 4,
+        "max_depth_mm": 0.7930552237667143
+      }
+    }
+  },
+  "z_lig_dorsal_ulnocarpal_ligament_L": {
+    "source": "Dorsal ulnocarpal ligament.l",
+    "modifiers": [
+      {
+        "type": "SUBSURF",
+        "thickness": null,
+        "levels": 1
+      },
+      {
+        "type": "SOLIDIFY",
+        "thickness": 0.0005000000237487257,
+        "levels": null
+      }
+    ],
+    "raw_vertices": 13,
+    "evaluated_vertices": 64,
+    "penetration_candidates": {
+      "Ulna.l": {
+        "vertices_inside": 10,
+        "max_depth_mm": 1.1690984247252345
+      },
+      "Lunate bone.l": {
+        "vertices_inside": 3,
+        "max_depth_mm": 0.42853783816099167
+      },
+      "Triquetrum bone.l": {
+        "vertices_inside": 4,
+        "max_depth_mm": 0.5919150426052511
+      }
+    }
+  },
+  "z_lig_dorsal_scaphotriquetral_ligament_L": {
+    "source": "Dorsal scaphotriquetral ligament.l",
+    "modifiers": [
+      {
+        "type": "SUBSURF",
+        "thickness": null,
+        "levels": 1
+      },
+      {
+        "type": "SOLIDIFY",
+        "thickness": 0.0005000000237487257,
+        "levels": null
+      }
+    ],
+    "raw_vertices": 10,
+    "evaluated_vertices": 54,
+    "penetration_candidates": {
+      "Scaphoid bone.l": {
+        "vertices_inside": 4,
+        "max_depth_mm": 0.8769087144173682
+      },
+      "Lunate bone.l": {
+        "vertices_inside": 2,
+        "max_depth_mm": 0.40657437057234347
+      },
+      "Triquetrum bone.l": {
+        "vertices_inside": 6,
+        "max_depth_mm": 1.5888992929831147
+      }
+    }
+  },
+  "z_lig_dorsal_radiocarpal_ligament_L": {
+    "source": "Dorsal radiocarpal ligament.l",
+    "modifiers": [
+      {
+        "type": "SUBSURF",
+        "thickness": null,
+        "levels": 1
+      },
+      {
+        "type": "SOLIDIFY",
+        "thickness": 0.0005000000237487257,
+        "levels": null
+      }
+    ],
+    "raw_vertices": 22,
+    "evaluated_vertices": 126,
+    "penetration_candidates": {
+      "Radius.l": {
+        "vertices_inside": 10,
+        "max_depth_mm": 1.2156858574599028
+      },
+      "Scaphoid bone.l": {
+        "vertices_inside": 15,
+        "max_depth_mm": 0.8034381316974759
+      },
+      "Lunate bone.l": {
+        "vertices_inside": 4,
+        "max_depth_mm": 0.5347637925297022
+      },
+      "Triquetrum bone.l": {
+        "vertices_inside": 6,
+        "max_depth_mm": 1.4579958515241742
+      }
+    }
+  },
+  "z_lig_dorsal_radio_ulnar_ligament_L": {
+    "source": "Dorsal radio-ulnar ligament.l",
+    "modifiers": [
+      {
+        "type": "SOLIDIFY",
+        "thickness": 0.0005000000237487257,
+        "levels": null
+      }
+    ],
+    "raw_vertices": 4,
+    "evaluated_vertices": 8,
+    "penetration_candidates": {
+      "Radius.l": {
+        "vertices_inside": 4,
+        "max_depth_mm": 1.127451192587614
+      },
+      "Ulna.l": {
+        "vertices_inside": 3,
+        "max_depth_mm": 0.6344172288663685
+      }
+    }
+  },
+  "z_lig_dorsal_intercarpal_ligaments_L": {
+    "source": "Dorsal intercarpal ligaments.l",
+    "modifiers": [
+      {
+        "type": "SUBSURF",
+        "thickness": null,
+        "levels": 1
+      },
+      {
+        "type": "SOLIDIFY",
+        "thickness": 0.0005000000237487257,
+        "levels": null
+      }
+    ],
+    "raw_vertices": 33,
+    "evaluated_vertices": 222,
+    "penetration_candidates": {
+      "Scaphoid bone.l": {
+        "vertices_inside": 6,
+        "max_depth_mm": 1.1638493742793798
+      },
+      "Triquetrum bone.l": {
+        "vertices_inside": 9,
+        "max_depth_mm": 0.6922401953488588
+      },
+      "Trapezium bone.l": {
+        "vertices_inside": 5,
+        "max_depth_mm": 1.3064660597592592
+      },
+      "Capitate bone.l": {
+        "vertices_inside": 7,
+        "max_depth_mm": 0.7954904576763511
+      },
+      "Hamate bone.l": {
+        "vertices_inside": 29,
+        "max_depth_mm": 0.7895358721725643
+      }
+    }
+  },
+  "z_lig_capitohamate_interosseous_ligament_L": {
+    "source": "Capitohamate interosseous ligament.l",
+    "modifiers": [
+      {
+        "type": "SOLIDIFY",
+        "thickness": 0.0005000000237487257,
+        "levels": null
+      }
+    ],
+    "raw_vertices": 4,
+    "evaluated_vertices": 8,
+    "penetration_candidates": {
+      "Capitate bone.l": {
+        "vertices_inside": 2,
+        "max_depth_mm": 1.0566458804532886
+      },
+      "Hamate bone.l": {
+        "vertices_inside": 4,
+        "max_depth_mm": 0.5992324440740049
+      }
+    }
+  }
+}

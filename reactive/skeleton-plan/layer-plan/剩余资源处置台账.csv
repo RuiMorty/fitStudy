@@ -12,8 +12,8 @@ surface_atlanto_axial_vertebra_C1_M_anterior_atlas,寰椎前弓后侧齿突关�
 surface_atlanto_axial_vertebra_C2_M_anterior_dens,齿突前关节面 · 寰枢关节组覆盖区,颅颈交界,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_atlanto_axial_vertebra_C2_M_posterior_dens,齿突后关节面 · 寰枢关节组覆盖区,颅颈交界,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 atlas_transverse_contact,寰椎横韧带前侧与齿突接触区,颅颈交界,需参考与边界核查,本轮本地全对象/材质检查未建立可用映射；先核对图谱边界与命名，再决定其他来源或补建，不宣称资源不存在。
-disc_C2-C3,椎间盘 C2-C3,颈椎,已提取候选,已接入源坐标候选，非解剖验收。
-nucleus_C2-C3,髓核 C2-C3,颈椎,避免重复叠加,whole_disc_already_contains_nucleus_volume
+disc_C2-C3,椎间盘 C2-C3,颈椎,已提取候选,已接入候选，非解剖验收。
+nucleus_C2-C3,髓核 C2-C3,颈椎,已提取候选,已接入候选，非解剖验收。
 annulus_C2-C3,纤维环 C2-C3,颈椎,核对整体盘内组成,全对象名、材质和顶点组索引未建立独立纤维环映射；需检查整体盘与髓核边界，不能直接相减生成。
 endplate_C2-C3_上,C2-C3椎间盘上软骨终板,颈椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 endplate_C2-C3_下,C2-C3椎间盘下软骨终板,颈椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
@@ -21,8 +21,8 @@ surface_spine_vertebra_C2_vertebra_C3_vertebra_C2_M_L,左枢椎（C2）关节突
 surface_spine_vertebra_C2_vertebra_C3_vertebra_C3_M_L,左第3颈椎（C3）关节突 · C2—C3运动节段覆盖区,颈椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_spine_vertebra_C2_vertebra_C3_vertebra_C2_M_R,右枢椎（C2）关节突 · C2—C3运动节段覆盖区,颈椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_spine_vertebra_C2_vertebra_C3_vertebra_C3_M_R,右第3颈椎（C3）关节突 · C2—C3运动节段覆盖区,颈椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-disc_C3-C4,椎间盘 C3-C4,颈椎,已提取候选,已接入源坐标候选，非解剖验收。
-nucleus_C3-C4,髓核 C3-C4,颈椎,避免重复叠加,whole_disc_already_contains_nucleus_volume
+disc_C3-C4,椎间盘 C3-C4,颈椎,已提取候选,已接入候选，非解剖验收。
+nucleus_C3-C4,髓核 C3-C4,颈椎,已提取候选,已接入候选，非解剖验收。
 annulus_C3-C4,纤维环 C3-C4,颈椎,核对整体盘内组成,全对象名、材质和顶点组索引未建立独立纤维环映射；需检查整体盘与髓核边界，不能直接相减生成。
 endplate_C3-C4_上,C3-C4椎间盘上软骨终板,颈椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 endplate_C3-C4_下,C3-C4椎间盘下软骨终板,颈椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
@@ -30,8 +30,8 @@ surface_spine_vertebra_C3_vertebra_C4_vertebra_C3_M_L,左第3颈椎（C3）关�
 surface_spine_vertebra_C3_vertebra_C4_vertebra_C4_M_L,左第4颈椎（C4）关节突 · C3—C4运动节段覆盖区,颈椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_spine_vertebra_C3_vertebra_C4_vertebra_C3_M_R,右第3颈椎（C3）关节突 · C3—C4运动节段覆盖区,颈椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_spine_vertebra_C3_vertebra_C4_vertebra_C4_M_R,右第4颈椎（C4）关节突 · C3—C4运动节段覆盖区,颈椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-disc_C4-C5,椎间盘 C4-C5,颈椎,已提取候选,已接入源坐标候选，非解剖验收。
-nucleus_C4-C5,髓核 C4-C5,颈椎,避免重复叠加,whole_disc_already_contains_nucleus_volume
+disc_C4-C5,椎间盘 C4-C5,颈椎,已提取候选,已接入候选，非解剖验收。
+nucleus_C4-C5,髓核 C4-C5,颈椎,已提取候选,已接入候选，非解剖验收。
 annulus_C4-C5,纤维环 C4-C5,颈椎,核对整体盘内组成,全对象名、材质和顶点组索引未建立独立纤维环映射；需检查整体盘与髓核边界，不能直接相减生成。
 endplate_C4-C5_上,C4-C5椎间盘上软骨终板,颈椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 endplate_C4-C5_下,C4-C5椎间盘下软骨终板,颈椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
@@ -39,8 +39,8 @@ surface_spine_vertebra_C4_vertebra_C5_vertebra_C4_M_L,左第4颈椎（C4）关�
 surface_spine_vertebra_C4_vertebra_C5_vertebra_C5_M_L,左第5颈椎（C5）关节突 · C4—C5运动节段覆盖区,颈椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_spine_vertebra_C4_vertebra_C5_vertebra_C4_M_R,右第4颈椎（C4）关节突 · C4—C5运动节段覆盖区,颈椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_spine_vertebra_C4_vertebra_C5_vertebra_C5_M_R,右第5颈椎（C5）关节突 · C4—C5运动节段覆盖区,颈椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-disc_C5-C6,椎间盘 C5-C6,颈椎,已提取候选,已接入源坐标候选，非解剖验收。
-nucleus_C5-C6,髓核 C5-C6,颈椎,避免重复叠加,whole_disc_already_contains_nucleus_volume
+disc_C5-C6,椎间盘 C5-C6,颈椎,已提取候选,已接入候选，非解剖验收。
+nucleus_C5-C6,髓核 C5-C6,颈椎,已提取候选,已接入候选，非解剖验收。
 annulus_C5-C6,纤维环 C5-C6,颈椎,核对整体盘内组成,全对象名、材质和顶点组索引未建立独立纤维环映射；需检查整体盘与髓核边界，不能直接相减生成。
 endplate_C5-C6_上,C5-C6椎间盘上软骨终板,颈椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 endplate_C5-C6_下,C5-C6椎间盘下软骨终板,颈椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
@@ -48,8 +48,8 @@ surface_spine_vertebra_C5_vertebra_C6_vertebra_C5_M_L,左第5颈椎（C5）关�
 surface_spine_vertebra_C5_vertebra_C6_vertebra_C6_M_L,左第6颈椎（C6）关节突 · C5—C6运动节段覆盖区,颈椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_spine_vertebra_C5_vertebra_C6_vertebra_C5_M_R,右第5颈椎（C5）关节突 · C5—C6运动节段覆盖区,颈椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_spine_vertebra_C5_vertebra_C6_vertebra_C6_M_R,右第6颈椎（C6）关节突 · C5—C6运动节段覆盖区,颈椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-disc_C6-C7,椎间盘 C6-C7,颈椎,已提取候选,已接入源坐标候选，非解剖验收。
-nucleus_C6-C7,髓核 C6-C7,颈椎,避免重复叠加,whole_disc_already_contains_nucleus_volume
+disc_C6-C7,椎间盘 C6-C7,颈椎,已提取候选,已接入候选，非解剖验收。
+nucleus_C6-C7,髓核 C6-C7,颈椎,已提取候选,已接入候选，非解剖验收。
 annulus_C6-C7,纤维环 C6-C7,颈椎,核对整体盘内组成,全对象名、材质和顶点组索引未建立独立纤维环映射；需检查整体盘与髓核边界，不能直接相减生成。
 endplate_C6-C7_上,C6-C7椎间盘上软骨终板,颈椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 endplate_C6-C7_下,C6-C7椎间盘下软骨终板,颈椎,需参考与边界核查,本轮本地全对象/材质检查未建立可用映射；先核对图谱边界与命名，再决定其他来源或补建，不宣称资源不存在。
@@ -57,8 +57,8 @@ surface_spine_vertebra_C6_vertebra_C7_vertebra_C6_M_L,左第6颈椎（C6）关�
 surface_spine_vertebra_C6_vertebra_C7_vertebra_C7_M_L,左第7颈椎（C7）关节突 · C6—C7运动节段覆盖区,颈椎,需参考与边界核查,本轮本地全对象/材质检查未建立可用映射；先核对图谱边界与命名，再决定其他来源或补建，不宣称资源不存在。
 surface_spine_vertebra_C6_vertebra_C7_vertebra_C6_M_R,右第6颈椎（C6）关节突 · C6—C7运动节段覆盖区,颈椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_spine_vertebra_C6_vertebra_C7_vertebra_C7_M_R,右第7颈椎（C7）关节突 · C6—C7运动节段覆盖区,颈椎,需参考与边界核查,本轮本地全对象/材质检查未建立可用映射；先核对图谱边界与命名，再决定其他来源或补建，不宣称资源不存在。
-disc_C7-T1,椎间盘 C7-T1,颈椎,已提取候选,已接入源坐标候选，非解剖验收。
-nucleus_C7-T1,髓核 C7-T1,颈椎,避免重复叠加,whole_disc_already_contains_nucleus_volume
+disc_C7-T1,椎间盘 C7-T1,颈椎,已提取候选,已接入候选，非解剖验收。
+nucleus_C7-T1,髓核 C7-T1,颈椎,已提取候选,已接入候选，非解剖验收。
 annulus_C7-T1,纤维环 C7-T1,颈椎,核对整体盘内组成,全对象名、材质和顶点组索引未建立独立纤维环映射；需检查整体盘与髓核边界，不能直接相减生成。
 endplate_C7-T1_上,C7-T1椎间盘上软骨终板,颈椎,需参考与边界核查,本轮本地全对象/材质检查未建立可用映射；先核对图谱边界与命名，再决定其他来源或补建，不宣称资源不存在。
 endplate_C7-T1_下,C7-T1椎间盘下软骨终板,颈椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
@@ -66,8 +66,8 @@ surface_spine_vertebra_C7_vertebra_T1_vertebra_C7_M_L,左第7颈椎（C7）关�
 surface_spine_vertebra_C7_vertebra_T1_vertebra_T1_M_L,左第1胸椎（T1）关节突 · C7—T1运动节段覆盖区,颈椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_spine_vertebra_C7_vertebra_T1_vertebra_C7_M_R,右第7颈椎（C7）关节突 · C7—T1运动节段覆盖区,颈椎,需参考与边界核查,本轮本地全对象/材质检查未建立可用映射；先核对图谱边界与命名，再决定其他来源或补建，不宣称资源不存在。
 surface_spine_vertebra_C7_vertebra_T1_vertebra_T1_M_R,右第1胸椎（T1）关节突 · C7—T1运动节段覆盖区,颈椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-disc_T1-T2,椎间盘 T1-T2,胸椎,已提取候选,已接入源坐标候选，非解剖验收。
-nucleus_T1-T2,髓核 T1-T2,胸椎,避免重复叠加,whole_disc_already_contains_nucleus_volume
+disc_T1-T2,椎间盘 T1-T2,胸椎,已提取候选,已接入候选，非解剖验收。
+nucleus_T1-T2,髓核 T1-T2,胸椎,已提取候选,已接入候选，非解剖验收。
 annulus_T1-T2,纤维环 T1-T2,胸椎,核对整体盘内组成,全对象名、材质和顶点组索引未建立独立纤维环映射；需检查整体盘与髓核边界，不能直接相减生成。
 endplate_T1-T2_上,T1-T2椎间盘上软骨终板,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 endplate_T1-T2_下,T1-T2椎间盘下软骨终板,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
@@ -75,8 +75,8 @@ surface_spine_vertebra_T1_vertebra_T2_vertebra_T1_M_L,左第1胸椎（T1）关�
 surface_spine_vertebra_T1_vertebra_T2_vertebra_T2_M_L,左第2胸椎（T2）关节突 · T1—T2运动节段覆盖区,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_spine_vertebra_T1_vertebra_T2_vertebra_T1_M_R,右第1胸椎（T1）关节突 · T1—T2运动节段覆盖区,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_spine_vertebra_T1_vertebra_T2_vertebra_T2_M_R,右第2胸椎（T2）关节突 · T1—T2运动节段覆盖区,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-disc_T2-T3,椎间盘 T2-T3,胸椎,已提取候选,已接入源坐标候选，非解剖验收。
-nucleus_T2-T3,髓核 T2-T3,胸椎,避免重复叠加,whole_disc_already_contains_nucleus_volume
+disc_T2-T3,椎间盘 T2-T3,胸椎,已提取候选,已接入候选，非解剖验收。
+nucleus_T2-T3,髓核 T2-T3,胸椎,已提取候选,已接入候选，非解剖验收。
 annulus_T2-T3,纤维环 T2-T3,胸椎,核对整体盘内组成,全对象名、材质和顶点组索引未建立独立纤维环映射；需检查整体盘与髓核边界，不能直接相减生成。
 endplate_T2-T3_上,T2-T3椎间盘上软骨终板,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 endplate_T2-T3_下,T2-T3椎间盘下软骨终板,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
@@ -84,8 +84,8 @@ surface_spine_vertebra_T2_vertebra_T3_vertebra_T2_M_L,左第2胸椎（T2）关�
 surface_spine_vertebra_T2_vertebra_T3_vertebra_T3_M_L,左第3胸椎（T3）关节突 · T2—T3运动节段覆盖区,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_spine_vertebra_T2_vertebra_T3_vertebra_T2_M_R,右第2胸椎（T2）关节突 · T2—T3运动节段覆盖区,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_spine_vertebra_T2_vertebra_T3_vertebra_T3_M_R,右第3胸椎（T3）关节突 · T2—T3运动节段覆盖区,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-disc_T3-T4,椎间盘 T3-T4,胸椎,已提取候选,已接入源坐标候选，非解剖验收。
-nucleus_T3-T4,髓核 T3-T4,胸椎,避免重复叠加,whole_disc_already_contains_nucleus_volume
+disc_T3-T4,椎间盘 T3-T4,胸椎,已提取候选,已接入候选，非解剖验收。
+nucleus_T3-T4,髓核 T3-T4,胸椎,已提取候选,已接入候选，非解剖验收。
 annulus_T3-T4,纤维环 T3-T4,胸椎,核对整体盘内组成,全对象名、材质和顶点组索引未建立独立纤维环映射；需检查整体盘与髓核边界，不能直接相减生成。
 endplate_T3-T4_上,T3-T4椎间盘上软骨终板,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 endplate_T3-T4_下,T3-T4椎间盘下软骨终板,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
@@ -93,8 +93,8 @@ surface_spine_vertebra_T3_vertebra_T4_vertebra_T3_M_L,左第3胸椎（T3）关�
 surface_spine_vertebra_T3_vertebra_T4_vertebra_T4_M_L,左第4胸椎（T4）关节突 · T3—T4运动节段覆盖区,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_spine_vertebra_T3_vertebra_T4_vertebra_T3_M_R,右第3胸椎（T3）关节突 · T3—T4运动节段覆盖区,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_spine_vertebra_T3_vertebra_T4_vertebra_T4_M_R,右第4胸椎（T4）关节突 · T3—T4运动节段覆盖区,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-disc_T4-T5,椎间盘 T4-T5,胸椎,已提取候选,已接入源坐标候选，非解剖验收。
-nucleus_T4-T5,髓核 T4-T5,胸椎,避免重复叠加,whole_disc_already_contains_nucleus_volume
+disc_T4-T5,椎间盘 T4-T5,胸椎,已提取候选,已接入候选，非解剖验收。
+nucleus_T4-T5,髓核 T4-T5,胸椎,已提取候选,已接入候选，非解剖验收。
 annulus_T4-T5,纤维环 T4-T5,胸椎,核对整体盘内组成,全对象名、材质和顶点组索引未建立独立纤维环映射；需检查整体盘与髓核边界，不能直接相减生成。
 endplate_T4-T5_上,T4-T5椎间盘上软骨终板,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 endplate_T4-T5_下,T4-T5椎间盘下软骨终板,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
@@ -102,8 +102,8 @@ surface_spine_vertebra_T4_vertebra_T5_vertebra_T4_M_L,左第4胸椎（T4）关�
 surface_spine_vertebra_T4_vertebra_T5_vertebra_T5_M_L,左第5胸椎（T5）关节突 · T4—T5运动节段覆盖区,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_spine_vertebra_T4_vertebra_T5_vertebra_T4_M_R,右第4胸椎（T4）关节突 · T4—T5运动节段覆盖区,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_spine_vertebra_T4_vertebra_T5_vertebra_T5_M_R,右第5胸椎（T5）关节突 · T4—T5运动节段覆盖区,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-disc_T5-T6,椎间盘 T5-T6,胸椎,已提取候选,已接入源坐标候选，非解剖验收。
-nucleus_T5-T6,髓核 T5-T6,胸椎,避免重复叠加,whole_disc_already_contains_nucleus_volume
+disc_T5-T6,椎间盘 T5-T6,胸椎,已提取候选,已接入候选，非解剖验收。
+nucleus_T5-T6,髓核 T5-T6,胸椎,已提取候选,已接入候选，非解剖验收。
 annulus_T5-T6,纤维环 T5-T6,胸椎,核对整体盘内组成,全对象名、材质和顶点组索引未建立独立纤维环映射；需检查整体盘与髓核边界，不能直接相减生成。
 endplate_T5-T6_上,T5-T6椎间盘上软骨终板,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 endplate_T5-T6_下,T5-T6椎间盘下软骨终板,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
@@ -111,8 +111,8 @@ surface_spine_vertebra_T5_vertebra_T6_vertebra_T5_M_L,左第5胸椎（T5）关�
 surface_spine_vertebra_T5_vertebra_T6_vertebra_T6_M_L,左第6胸椎（T6）关节突 · T5—T6运动节段覆盖区,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_spine_vertebra_T5_vertebra_T6_vertebra_T5_M_R,右第5胸椎（T5）关节突 · T5—T6运动节段覆盖区,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_spine_vertebra_T5_vertebra_T6_vertebra_T6_M_R,右第6胸椎（T6）关节突 · T5—T6运动节段覆盖区,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-disc_T6-T7,椎间盘 T6-T7,胸椎,已提取候选,已接入源坐标候选，非解剖验收。
-nucleus_T6-T7,髓核 T6-T7,胸椎,避免重复叠加,whole_disc_already_contains_nucleus_volume
+disc_T6-T7,椎间盘 T6-T7,胸椎,已提取候选,已接入候选，非解剖验收。
+nucleus_T6-T7,髓核 T6-T7,胸椎,已提取候选,已接入候选，非解剖验收。
 annulus_T6-T7,纤维环 T6-T7,胸椎,核对整体盘内组成,全对象名、材质和顶点组索引未建立独立纤维环映射；需检查整体盘与髓核边界，不能直接相减生成。
 endplate_T6-T7_上,T6-T7椎间盘上软骨终板,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 endplate_T6-T7_下,T6-T7椎间盘下软骨终板,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
@@ -120,8 +120,8 @@ surface_spine_vertebra_T6_vertebra_T7_vertebra_T6_M_L,左第6胸椎（T6）关�
 surface_spine_vertebra_T6_vertebra_T7_vertebra_T7_M_L,左第7胸椎（T7）关节突 · T6—T7运动节段覆盖区,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_spine_vertebra_T6_vertebra_T7_vertebra_T6_M_R,右第6胸椎（T6）关节突 · T6—T7运动节段覆盖区,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_spine_vertebra_T6_vertebra_T7_vertebra_T7_M_R,右第7胸椎（T7）关节突 · T6—T7运动节段覆盖区,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-disc_T7-T8,椎间盘 T7-T8,胸椎,已提取候选,已接入源坐标候选，非解剖验收。
-nucleus_T7-T8,髓核 T7-T8,胸椎,避免重复叠加,whole_disc_already_contains_nucleus_volume
+disc_T7-T8,椎间盘 T7-T8,胸椎,已提取候选,已接入候选，非解剖验收。
+nucleus_T7-T8,髓核 T7-T8,胸椎,已提取候选,已接入候选，非解剖验收。
 annulus_T7-T8,纤维环 T7-T8,胸椎,核对整体盘内组成,全对象名、材质和顶点组索引未建立独立纤维环映射；需检查整体盘与髓核边界，不能直接相减生成。
 endplate_T7-T8_上,T7-T8椎间盘上软骨终板,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 endplate_T7-T8_下,T7-T8椎间盘下软骨终板,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
@@ -129,8 +129,8 @@ surface_spine_vertebra_T7_vertebra_T8_vertebra_T7_M_L,左第7胸椎（T7）关�
 surface_spine_vertebra_T7_vertebra_T8_vertebra_T8_M_L,左第8胸椎（T8）关节突 · T7—T8运动节段覆盖区,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_spine_vertebra_T7_vertebra_T8_vertebra_T7_M_R,右第7胸椎（T7）关节突 · T7—T8运动节段覆盖区,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_spine_vertebra_T7_vertebra_T8_vertebra_T8_M_R,右第8胸椎（T8）关节突 · T7—T8运动节段覆盖区,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-disc_T8-T9,椎间盘 T8-T9,胸椎,已提取候选,已接入源坐标候选，非解剖验收。
-nucleus_T8-T9,髓核 T8-T9,胸椎,避免重复叠加,whole_disc_already_contains_nucleus_volume
+disc_T8-T9,椎间盘 T8-T9,胸椎,已提取候选,已接入候选，非解剖验收。
+nucleus_T8-T9,髓核 T8-T9,胸椎,已提取候选,已接入候选，非解剖验收。
 annulus_T8-T9,纤维环 T8-T9,胸椎,核对整体盘内组成,全对象名、材质和顶点组索引未建立独立纤维环映射；需检查整体盘与髓核边界，不能直接相减生成。
 endplate_T8-T9_上,T8-T9椎间盘上软骨终板,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 endplate_T8-T9_下,T8-T9椎间盘下软骨终板,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
@@ -138,8 +138,8 @@ surface_spine_vertebra_T8_vertebra_T9_vertebra_T8_M_L,左第8胸椎（T8）关�
 surface_spine_vertebra_T8_vertebra_T9_vertebra_T9_M_L,左第9胸椎（T9）关节突 · T8—T9运动节段覆盖区,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_spine_vertebra_T8_vertebra_T9_vertebra_T8_M_R,右第8胸椎（T8）关节突 · T8—T9运动节段覆盖区,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_spine_vertebra_T8_vertebra_T9_vertebra_T9_M_R,右第9胸椎（T9）关节突 · T8—T9运动节段覆盖区,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-disc_T9-T10,椎间盘 T9-T10,胸椎,已提取候选,已接入源坐标候选，非解剖验收。
-nucleus_T9-T10,髓核 T9-T10,胸椎,避免重复叠加,whole_disc_already_contains_nucleus_volume
+disc_T9-T10,椎间盘 T9-T10,胸椎,已提取候选,已接入候选，非解剖验收。
+nucleus_T9-T10,髓核 T9-T10,胸椎,已提取候选,已接入候选，非解剖验收。
 annulus_T9-T10,纤维环 T9-T10,胸椎,核对整体盘内组成,全对象名、材质和顶点组索引未建立独立纤维环映射；需检查整体盘与髓核边界，不能直接相减生成。
 endplate_T9-T10_上,T9-T10椎间盘上软骨终板,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 endplate_T9-T10_下,T9-T10椎间盘下软骨终板,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
@@ -147,8 +147,8 @@ surface_spine_vertebra_T9_vertebra_T10_vertebra_T9_M_L,左第9胸椎（T9）关�
 surface_spine_vertebra_T9_vertebra_T10_vertebra_T10_M_L,左第10胸椎（T10）关节突 · T9—T10运动节段覆盖区,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_spine_vertebra_T9_vertebra_T10_vertebra_T9_M_R,右第9胸椎（T9）关节突 · T9—T10运动节段覆盖区,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_spine_vertebra_T9_vertebra_T10_vertebra_T10_M_R,右第10胸椎（T10）关节突 · T9—T10运动节段覆盖区,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-disc_T10-T11,椎间盘 T10-T11,胸椎,已提取候选,已接入源坐标候选，非解剖验收。
-nucleus_T10-T11,髓核 T10-T11,胸椎,避免重复叠加,whole_disc_already_contains_nucleus_volume
+disc_T10-T11,椎间盘 T10-T11,胸椎,已提取候选,已接入候选，非解剖验收。
+nucleus_T10-T11,髓核 T10-T11,胸椎,已提取候选,已接入候选，非解剖验收。
 annulus_T10-T11,纤维环 T10-T11,胸椎,核对整体盘内组成,全对象名、材质和顶点组索引未建立独立纤维环映射；需检查整体盘与髓核边界，不能直接相减生成。
 endplate_T10-T11_上,T10-T11椎间盘上软骨终板,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 endplate_T10-T11_下,T10-T11椎间盘下软骨终板,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
@@ -156,8 +156,8 @@ surface_spine_vertebra_T10_vertebra_T11_vertebra_T10_M_L,左第10胸椎（T10）
 surface_spine_vertebra_T10_vertebra_T11_vertebra_T11_M_L,左第11胸椎（T11）关节突 · T10—T11运动节段覆盖区,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_spine_vertebra_T10_vertebra_T11_vertebra_T10_M_R,右第10胸椎（T10）关节突 · T10—T11运动节段覆盖区,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_spine_vertebra_T10_vertebra_T11_vertebra_T11_M_R,右第11胸椎（T11）关节突 · T10—T11运动节段覆盖区,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-disc_T11-T12,椎间盘 T11-T12,胸椎,已提取候选,已接入源坐标候选，非解剖验收。
-nucleus_T11-T12,髓核 T11-T12,胸椎,避免重复叠加,whole_disc_already_contains_nucleus_volume
+disc_T11-T12,椎间盘 T11-T12,胸椎,已提取候选,已接入候选，非解剖验收。
+nucleus_T11-T12,髓核 T11-T12,胸椎,已提取候选,已接入候选，非解剖验收。
 annulus_T11-T12,纤维环 T11-T12,胸椎,核对整体盘内组成,全对象名、材质和顶点组索引未建立独立纤维环映射；需检查整体盘与髓核边界，不能直接相减生成。
 endplate_T11-T12_上,T11-T12椎间盘上软骨终板,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 endplate_T11-T12_下,T11-T12椎间盘下软骨终板,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
@@ -165,8 +165,8 @@ surface_spine_vertebra_T11_vertebra_T12_vertebra_T11_M_L,左第11胸椎（T11）
 surface_spine_vertebra_T11_vertebra_T12_vertebra_T12_M_L,左第12胸椎（T12）关节突 · T11—T12运动节段覆盖区,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_spine_vertebra_T11_vertebra_T12_vertebra_T11_M_R,右第11胸椎（T11）关节突 · T11—T12运动节段覆盖区,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_spine_vertebra_T11_vertebra_T12_vertebra_T12_M_R,右第12胸椎（T12）关节突 · T11—T12运动节段覆盖区,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-disc_T12-L1,椎间盘 T12-L1,胸椎,已提取候选,已接入源坐标候选，非解剖验收。
-nucleus_T12-L1,髓核 T12-L1,胸椎,避免重复叠加,whole_disc_already_contains_nucleus_volume
+disc_T12-L1,椎间盘 T12-L1,胸椎,已提取候选,已接入候选，非解剖验收。
+nucleus_T12-L1,髓核 T12-L1,胸椎,已提取候选,已接入候选，非解剖验收。
 annulus_T12-L1,纤维环 T12-L1,胸椎,核对整体盘内组成,全对象名、材质和顶点组索引未建立独立纤维环映射；需检查整体盘与髓核边界，不能直接相减生成。
 endplate_T12-L1_上,T12-L1椎间盘上软骨终板,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 endplate_T12-L1_下,T12-L1椎间盘下软骨终板,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
@@ -174,8 +174,8 @@ surface_spine_vertebra_T12_vertebra_L1_vertebra_T12_M_L,左第12胸椎（T12）�
 surface_spine_vertebra_T12_vertebra_L1_vertebra_L1_M_L,左第1腰椎（L1）关节突 · T12—L1运动节段覆盖区,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_spine_vertebra_T12_vertebra_L1_vertebra_T12_M_R,右第12胸椎（T12）关节突 · T12—L1运动节段覆盖区,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_spine_vertebra_T12_vertebra_L1_vertebra_L1_M_R,右第1腰椎（L1）关节突 · T12—L1运动节段覆盖区,胸椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-disc_L1-L2,椎间盘 L1-L2,腰椎,先修几何,nonmanifold_geometry_pending_repair
-nucleus_L1-L2,髓核 L1-L2,腰椎,避免重复叠加,whole_disc_already_contains_nucleus_volume
+disc_L1-L2,椎间盘 L1-L2,腰椎,已提取候选,已接入候选，非解剖验收。
+nucleus_L1-L2,髓核 L1-L2,腰椎,已提取候选,已接入候选，非解剖验收。
 annulus_L1-L2,纤维环 L1-L2,腰椎,核对整体盘内组成,全对象名、材质和顶点组索引未建立独立纤维环映射；需检查整体盘与髓核边界，不能直接相减生成。
 endplate_L1-L2_上,L1-L2椎间盘上软骨终板,腰椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 endplate_L1-L2_下,L1-L2椎间盘下软骨终板,腰椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
@@ -183,8 +183,8 @@ surface_spine_vertebra_L1_vertebra_L2_vertebra_L1_M_L,左第1腰椎（L1）关�
 surface_spine_vertebra_L1_vertebra_L2_vertebra_L2_M_L,左第2腰椎（L2）关节突 · L1—L2运动节段覆盖区,腰椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_spine_vertebra_L1_vertebra_L2_vertebra_L1_M_R,右第1腰椎（L1）关节突 · L1—L2运动节段覆盖区,腰椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_spine_vertebra_L1_vertebra_L2_vertebra_L2_M_R,右第2腰椎（L2）关节突 · L1—L2运动节段覆盖区,腰椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-disc_L2-L3,椎间盘 L2-L3,腰椎,已提取候选,已接入源坐标候选，非解剖验收。
-nucleus_L2-L3,髓核 L2-L3,腰椎,避免重复叠加,whole_disc_already_contains_nucleus_volume
+disc_L2-L3,椎间盘 L2-L3,腰椎,已提取候选,已接入候选，非解剖验收。
+nucleus_L2-L3,髓核 L2-L3,腰椎,已提取候选,已接入候选，非解剖验收。
 annulus_L2-L3,纤维环 L2-L3,腰椎,核对整体盘内组成,全对象名、材质和顶点组索引未建立独立纤维环映射；需检查整体盘与髓核边界，不能直接相减生成。
 endplate_L2-L3_上,L2-L3椎间盘上软骨终板,腰椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 endplate_L2-L3_下,L2-L3椎间盘下软骨终板,腰椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
@@ -192,8 +192,8 @@ surface_spine_vertebra_L2_vertebra_L3_vertebra_L2_M_L,左第2腰椎（L2）关�
 surface_spine_vertebra_L2_vertebra_L3_vertebra_L3_M_L,左第3腰椎（L3）关节突 · L2—L3运动节段覆盖区,腰椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_spine_vertebra_L2_vertebra_L3_vertebra_L2_M_R,右第2腰椎（L2）关节突 · L2—L3运动节段覆盖区,腰椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_spine_vertebra_L2_vertebra_L3_vertebra_L3_M_R,右第3腰椎（L3）关节突 · L2—L3运动节段覆盖区,腰椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-disc_L3-L4,椎间盘 L3-L4,腰椎,已提取候选,已接入源坐标候选，非解剖验收。
-nucleus_L3-L4,髓核 L3-L4,腰椎,避免重复叠加,whole_disc_already_contains_nucleus_volume
+disc_L3-L4,椎间盘 L3-L4,腰椎,已提取候选,已接入候选，非解剖验收。
+nucleus_L3-L4,髓核 L3-L4,腰椎,已提取候选,已接入候选，非解剖验收。
 annulus_L3-L4,纤维环 L3-L4,腰椎,核对整体盘内组成,全对象名、材质和顶点组索引未建立独立纤维环映射；需检查整体盘与髓核边界，不能直接相减生成。
 endplate_L3-L4_上,L3-L4椎间盘上软骨终板,腰椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 endplate_L3-L4_下,L3-L4椎间盘下软骨终板,腰椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
@@ -201,8 +201,8 @@ surface_spine_vertebra_L3_vertebra_L4_vertebra_L3_M_L,左第3腰椎（L3）关�
 surface_spine_vertebra_L3_vertebra_L4_vertebra_L4_M_L,左第4腰椎（L4）关节突 · L3—L4运动节段覆盖区,腰椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_spine_vertebra_L3_vertebra_L4_vertebra_L3_M_R,右第3腰椎（L3）关节突 · L3—L4运动节段覆盖区,腰椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_spine_vertebra_L3_vertebra_L4_vertebra_L4_M_R,右第4腰椎（L4）关节突 · L3—L4运动节段覆盖区,腰椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-disc_L4-L5,椎间盘 L4-L5,腰椎,已提取候选,已接入源坐标候选，非解剖验收。
-nucleus_L4-L5,髓核 L4-L5,腰椎,避免重复叠加,whole_disc_already_contains_nucleus_volume
+disc_L4-L5,椎间盘 L4-L5,腰椎,已提取候选,已接入候选，非解剖验收。
+nucleus_L4-L5,髓核 L4-L5,腰椎,已提取候选,已接入候选，非解剖验收。
 annulus_L4-L5,纤维环 L4-L5,腰椎,核对整体盘内组成,全对象名、材质和顶点组索引未建立独立纤维环映射；需检查整体盘与髓核边界，不能直接相减生成。
 endplate_L4-L5_上,L4-L5椎间盘上软骨终板,腰椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 endplate_L4-L5_下,L4-L5椎间盘下软骨终板,腰椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
@@ -210,8 +210,8 @@ surface_spine_vertebra_L4_vertebra_L5_vertebra_L4_M_L,左第4腰椎（L4）关�
 surface_spine_vertebra_L4_vertebra_L5_vertebra_L5_M_L,左第5腰椎（L5）关节突 · L4—L5运动节段覆盖区,腰椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_spine_vertebra_L4_vertebra_L5_vertebra_L4_M_R,右第4腰椎（L4）关节突 · L4—L5运动节段覆盖区,腰椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_spine_vertebra_L4_vertebra_L5_vertebra_L5_M_R,右第5腰椎（L5）关节突 · L4—L5运动节段覆盖区,腰椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-disc_L5-S1,椎间盘 L5-S1,腰椎,已提取候选,已接入源坐标候选，非解剖验收。
-nucleus_L5-S1,髓核 L5-S1,腰椎,避免重复叠加,whole_disc_already_contains_nucleus_volume
+disc_L5-S1,椎间盘 L5-S1,腰椎,已提取候选,已接入候选，非解剖验收。
+nucleus_L5-S1,髓核 L5-S1,腰椎,已提取候选,已接入候选，非解剖验收。
 annulus_L5-S1,纤维环 L5-S1,腰椎,核对整体盘内组成,全对象名、材质和顶点组索引未建立独立纤维环映射；需检查整体盘与髓核边界，不能直接相减生成。
 endplate_L5-S1_上,L5-S1椎间盘上软骨终板,腰椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 endplate_L5-S1_下,L5-S1椎间盘下软骨终板,腰椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
@@ -219,7 +219,7 @@ surface_spine_vertebra_L5_sacrum_vertebra_L5_M_L,左第5腰椎（L5）关节突 
 surface_spine_vertebra_L5_sacrum_sacrum_M_L,左骶骨关节突 · L5—sacrum运动节段覆盖区,腰椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_spine_vertebra_L5_sacrum_vertebra_L5_M_R,右第5腰椎（L5）关节突 · L5—sacrum运动节段覆盖区,腰椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_spine_vertebra_L5_sacrum_sacrum_M_R,右骶骨关节突 · L5—sacrum运动节段覆盖区,腰椎,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-sacrococcygeal_disc,骶尾连接纤维软骨候选,骨盆与髋,新增有面对象待核对,实际源库中存在有面的对象；未完成本条语义映射、网格质量和接入。
+sacrococcygeal_disc,骶尾连接纤维软骨候选,骨盆与髋,已提取候选,已接入候选，非解剖验收。
 surface_tmj_L_temporal_L,左颞骨 · 左颞下颌关节覆盖区,头颈与听骨,需参考与边界核查,本轮本地全对象/材质检查未建立可用映射；先核对图谱边界与命名，再决定其他来源或补建，不宣称资源不存在。
 surface_tmj_L_mandible_M,下颌骨 · 左颞下颌关节覆盖区,头颈与听骨,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_incudomalleolar_L_malleus_L,左锤骨 · 左锤砧关节覆盖区,头颈与听骨,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
@@ -231,69 +231,69 @@ surface_costovertebral_01_L_rib_01_L_head,左第1肋骨 · 左第1肋椎连接�
 surface_costovertebral_01_L_vertebra_T1_M_head,第1胸椎（T1） · 左第1肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_01_L_rib_01_L_tubercle,左第1肋骨 · 左第1肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_01_L_vertebra_T1_M_tubercle,第1胸椎（T1） · 左第1肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-costal_cartilage_1_L,左第1肋软骨,胸廓,已提取候选,已接入源坐标候选，非解剖验收。
+costal_cartilage_1_L,左第1肋软骨,胸廓,已提取候选,已接入候选，非解剖验收。
 junction_sternocostal_01_L,左第1胸肋连接界面,胸廓,需参考与边界核查,本轮本地全对象/材质检查未建立可用映射；先核对图谱边界与命名，再决定其他来源或补建，不宣称资源不存在。
 surface_costovertebral_02_L_rib_02_L_head,左第2肋骨 · 左第2肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_02_L_vertebra_T2_M_head,第2胸椎（T2） · 左第2肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_02_L_vertebra_T1_M_head,第1胸椎（T1） · 左第2肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_02_L_rib_02_L_tubercle,左第2肋骨 · 左第2肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_02_L_vertebra_T2_M_tubercle,第2胸椎（T2） · 左第2肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-costal_cartilage_2_L,左第2肋软骨,胸廓,已提取候选,已接入源坐标候选，非解剖验收。
+costal_cartilage_2_L,左第2肋软骨,胸廓,已提取候选,已接入候选，非解剖验收。
 junction_sternocostal_02_L,左第2胸肋连接界面,胸廓,需参考与边界核查,本轮本地全对象/材质检查未建立可用映射；先核对图谱边界与命名，再决定其他来源或补建，不宣称资源不存在。
 surface_costovertebral_03_L_rib_03_L_head,左第3肋骨 · 左第3肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_03_L_vertebra_T3_M_head,第3胸椎（T3） · 左第3肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_03_L_vertebra_T2_M_head,第2胸椎（T2） · 左第3肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_03_L_rib_03_L_tubercle,左第3肋骨 · 左第3肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_03_L_vertebra_T3_M_tubercle,第3胸椎（T3） · 左第3肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-costal_cartilage_3_L,左第3肋软骨,胸廓,已提取候选,已接入源坐标候选，非解剖验收。
+costal_cartilage_3_L,左第3肋软骨,胸廓,已提取候选,已接入候选，非解剖验收。
 junction_sternocostal_03_L,左第3胸肋连接界面,胸廓,需参考与边界核查,本轮本地全对象/材质检查未建立可用映射；先核对图谱边界与命名，再决定其他来源或补建，不宣称资源不存在。
 surface_costovertebral_04_L_rib_04_L_head,左第4肋骨 · 左第4肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_04_L_vertebra_T4_M_head,第4胸椎（T4） · 左第4肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_04_L_vertebra_T3_M_head,第3胸椎（T3） · 左第4肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_04_L_rib_04_L_tubercle,左第4肋骨 · 左第4肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_04_L_vertebra_T4_M_tubercle,第4胸椎（T4） · 左第4肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-costal_cartilage_4_L,左第4肋软骨,胸廓,已提取候选,已接入源坐标候选，非解剖验收。
+costal_cartilage_4_L,左第4肋软骨,胸廓,已提取候选,已接入候选，非解剖验收。
 junction_sternocostal_04_L,左第4胸肋连接界面,胸廓,需参考与边界核查,本轮本地全对象/材质检查未建立可用映射；先核对图谱边界与命名，再决定其他来源或补建，不宣称资源不存在。
 surface_costovertebral_05_L_rib_05_L_head,左第5肋骨 · 左第5肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_05_L_vertebra_T5_M_head,第5胸椎（T5） · 左第5肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_05_L_vertebra_T4_M_head,第4胸椎（T4） · 左第5肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_05_L_rib_05_L_tubercle,左第5肋骨 · 左第5肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_05_L_vertebra_T5_M_tubercle,第5胸椎（T5） · 左第5肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-costal_cartilage_5_L,左第5肋软骨,胸廓,已提取候选,已接入源坐标候选，非解剖验收。
+costal_cartilage_5_L,左第5肋软骨,胸廓,已提取候选,已接入候选，非解剖验收。
 junction_sternocostal_05_L,左第5胸肋连接界面,胸廓,需参考与边界核查,本轮本地全对象/材质检查未建立可用映射；先核对图谱边界与命名，再决定其他来源或补建，不宣称资源不存在。
 surface_costovertebral_06_L_rib_06_L_head,左第6肋骨 · 左第6肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_06_L_vertebra_T6_M_head,第6胸椎（T6） · 左第6肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_06_L_vertebra_T5_M_head,第5胸椎（T5） · 左第6肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_06_L_rib_06_L_tubercle,左第6肋骨 · 左第6肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_06_L_vertebra_T6_M_tubercle,第6胸椎（T6） · 左第6肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-costal_cartilage_6_L,左第6肋软骨,胸廓,已提取候选,已接入源坐标候选，非解剖验收。
+costal_cartilage_6_L,左第6肋软骨,胸廓,已提取候选,已接入候选，非解剖验收。
 junction_sternocostal_06_L,左第6胸肋连接界面,胸廓,需参考与边界核查,本轮本地全对象/材质检查未建立可用映射；先核对图谱边界与命名，再决定其他来源或补建，不宣称资源不存在。
 surface_costovertebral_07_L_rib_07_L_head,左第7肋骨 · 左第7肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_07_L_vertebra_T7_M_head,第7胸椎（T7） · 左第7肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_07_L_vertebra_T6_M_head,第6胸椎（T6） · 左第7肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_07_L_rib_07_L_tubercle,左第7肋骨 · 左第7肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_07_L_vertebra_T7_M_tubercle,第7胸椎（T7） · 左第7肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-costal_cartilage_7_L,左第7肋软骨,胸廓,已提取候选,已接入源坐标候选，非解剖验收。
+costal_cartilage_7_L,左第7肋软骨,胸廓,已提取候选,已接入候选，非解剖验收。
 junction_sternocostal_07_L,左第7胸肋连接界面,胸廓,需参考与边界核查,本轮本地全对象/材质检查未建立可用映射；先核对图谱边界与命名，再决定其他来源或补建，不宣称资源不存在。
 surface_costovertebral_08_L_rib_08_L_head,左第8肋骨 · 左第8肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_08_L_vertebra_T8_M_head,第8胸椎（T8） · 左第8肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_08_L_vertebra_T7_M_head,第7胸椎（T7） · 左第8肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_08_L_rib_08_L_tubercle,左第8肋骨 · 左第8肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_08_L_vertebra_T8_M_tubercle,第8胸椎（T8） · 左第8肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-costal_cartilage_8_L,左第8肋软骨,胸廓,已提取候选,已接入源坐标候选，非解剖验收。
+costal_cartilage_8_L,左第8肋软骨,胸廓,已提取候选,已接入候选，非解剖验收。
 junction_costal_arch_08_L,左第8肋软骨弓连接界面,胸廓,需参考与边界核查,本轮本地全对象/材质检查未建立可用映射；先核对图谱边界与命名，再决定其他来源或补建，不宣称资源不存在。
 surface_costovertebral_09_L_rib_09_L_head,左第9肋骨 · 左第9肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_09_L_vertebra_T9_M_head,第9胸椎（T9） · 左第9肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_09_L_vertebra_T8_M_head,第8胸椎（T8） · 左第9肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_09_L_rib_09_L_tubercle,左第9肋骨 · 左第9肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_09_L_vertebra_T9_M_tubercle,第9胸椎（T9） · 左第9肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-costal_cartilage_9_L,左第9肋软骨,胸廓,已提取候选,已接入源坐标候选，非解剖验收。
+costal_cartilage_9_L,左第9肋软骨,胸廓,已提取候选,已接入候选，非解剖验收。
 junction_costal_arch_09_L,左第9肋软骨弓连接界面,胸廓,需参考与边界核查,本轮本地全对象/材质检查未建立可用映射；先核对图谱边界与命名，再决定其他来源或补建，不宣称资源不存在。
 surface_costovertebral_10_L_rib_10_L_head,左第10肋骨 · 左第10肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_10_L_vertebra_T10_M_head,第10胸椎（T10） · 左第10肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_10_L_rib_10_L_tubercle,左第10肋骨 · 左第10肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_10_L_vertebra_T10_M_tubercle,第10胸椎（T10） · 左第10肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-costal_cartilage_10_L,左第10肋软骨,胸廓,已提取候选,已接入源坐标候选，非解剖验收。
+costal_cartilage_10_L,左第10肋软骨,胸廓,已提取候选,已接入候选，非解剖验收。
 junction_costal_arch_10_L,左第10肋软骨弓连接界面,胸廓,需参考与边界核查,本轮本地全对象/材质检查未建立可用映射；先核对图谱边界与命名，再决定其他来源或补建，不宣称资源不存在。
 surface_costovertebral_11_L_rib_11_L_head,左第11肋骨 · 左第11肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_11_L_vertebra_T11_M_head,第11胸椎（T11） · 左第11肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
@@ -303,17 +303,17 @@ surface_sternoclavicular_L_sternum_M,胸骨 · 左胸锁关节覆盖区,肩带,�
 surface_sternoclavicular_L_clavicle_L,左锁骨 · 左胸锁关节覆盖区,肩带,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_acromioclavicular_L_clavicle_L,左锁骨 · 左肩锁关节覆盖区,肩带,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_acromioclavicular_L_scapula_L,左肩胛骨 · 左肩锁关节覆盖区,肩带,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-surface_glenohumeral_L_scapula_L,左肩胛骨 · 左盂肱关节覆盖区,肩带,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-surface_glenohumeral_L_humerus_L,左肱骨 · 左盂肱关节覆盖区,肩带,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-surface_humeroulnar_L_humerus_L,左肱骨 · 左肱尺关节覆盖区,肘与前臂,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-surface_humeroulnar_L_ulna_L,左尺骨 · 左肱尺关节覆盖区,肘与前臂,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-surface_humeroradial_L_humerus_L,左肱骨 · 左肱桡关节覆盖区,肘与前臂,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-surface_humeroradial_L_radius_L,左桡骨 · 左肱桡关节覆盖区,肘与前臂,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-surface_proximal_radioulnar_L_radius_L,左桡骨 · 左近侧桡尺关节覆盖区,肘与前臂,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-surface_proximal_radioulnar_L_ulna_L,左尺骨 · 左近侧桡尺关节覆盖区,肘与前臂,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
+surface_glenohumeral_L_scapula_L,左肩胛骨 · 左盂肱关节覆盖区,肩带,已拆分表面候选,已从源材质面拆出相应关节分区，无新增厚度，边界待审核。
+surface_glenohumeral_L_humerus_L,左肱骨 · 左盂肱关节覆盖区,肩带,已拆分表面候选,已从源材质面拆出相应关节分区，无新增厚度，边界待审核。
+surface_humeroulnar_L_humerus_L,左肱骨 · 左肱尺关节覆盖区,肘与前臂,已拆分表面候选,已从源材质面拆出相应关节分区，无新增厚度，边界待审核。
+surface_humeroulnar_L_ulna_L,左尺骨 · 左肱尺关节覆盖区,肘与前臂,已拆分表面候选,已从源材质面拆出相应关节分区，无新增厚度，边界待审核。包含跨子关节复合区，尚未按子关节细分。
+surface_humeroradial_L_humerus_L,左肱骨 · 左肱桡关节覆盖区,肘与前臂,已拆分表面候选,已从源材质面拆出相应关节分区，无新增厚度，边界待审核。
+surface_humeroradial_L_radius_L,左桡骨 · 左肱桡关节覆盖区,肘与前臂,已拆分表面候选,已从源材质面拆出相应关节分区，无新增厚度，边界待审核。包含跨子关节复合区，尚未按子关节细分。
+surface_proximal_radioulnar_L_radius_L,左桡骨 · 左近侧桡尺关节覆盖区,肘与前臂,已拆分表面候选,已从源材质面拆出相应关节分区，无新增厚度，边界待审核。包含跨子关节复合区，尚未按子关节细分。
+surface_proximal_radioulnar_L_ulna_L,左尺骨 · 左近侧桡尺关节覆盖区,肘与前臂,已拆分表面候选,已从源材质面拆出相应关节分区，无新增厚度，边界待审核。包含跨子关节复合区，尚未按子关节细分。
 surface_distal_radioulnar_L_radius_L,左桡骨 · 左远侧桡尺关节覆盖区,腕手,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_distal_radioulnar_L_ulna_L,左尺骨 · 左远侧桡尺关节覆盖区,腕手,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-fibrous_forearm_interosseous_L,左前臂骨间连接纤维连接,肘与前臂,新增有面对象待核对,实际源库中存在有面的对象；未完成本条语义映射、网格质量和接入。
+fibrous_forearm_interosseous_L,左前臂骨间连接纤维连接,肘与前臂,已提取候选,已接入候选，非解剖验收。
 surface_radiocarpal_L_radius_L,左桡骨 · 左桡腕关节组覆盖区,腕手,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_radiocarpal_L_scaphoid_L,左手舟骨 · 左桡腕关节组覆盖区,腕手,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_radiocarpal_L_lunate_L,左月骨 · 左桡腕关节组覆盖区,腕手,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
@@ -391,12 +391,12 @@ surface_intermetacarpal_L_metacarpal_4_L_to_metacarpal_5_L,左第4掌骨 · 左�
 surface_intermetacarpal_L_metacarpal_5_L_to_metacarpal_4_L,左第5掌骨 · 左掌骨间连接组覆盖区,腕手,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_sacroiliac_L_sacrum_M,骶骨 · 左骶髂关节覆盖区,骨盆与髋,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_sacroiliac_L_hip_L,左髋骨 · 左骶髂关节覆盖区,骨盆与髋,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-surface_hip_L_hip_L,左髋骨 · 左髋关节覆盖区,骨盆与髋,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-surface_hip_L_femur_L,左股骨 · 左髋关节覆盖区,骨盆与髋,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-surface_tibiofemoral_L_femur_L,左股骨 · 左胫股关节组覆盖区,膝,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-surface_tibiofemoral_L_tibia_L,左胫骨 · 左胫股关节组覆盖区,膝,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-surface_patellofemoral_L_femur_L,左股骨 · 左髌股关节覆盖区,膝,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-surface_patellofemoral_L_patella_L,左髌骨 · 左髌股关节覆盖区,膝,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
+surface_hip_L_hip_L,左髋骨 · 左髋关节覆盖区,骨盆与髋,已拆分表面候选,已从源材质面拆出相应关节分区，无新增厚度，边界待审核。
+surface_hip_L_femur_L,左股骨 · 左髋关节覆盖区,骨盆与髋,已拆分表面候选,已从源材质面拆出相应关节分区，无新增厚度，边界待审核。
+surface_tibiofemoral_L_femur_L,左股骨 · 左胫股关节组覆盖区,膝,已拆分表面候选,已从源材质面拆出相应关节分区，无新增厚度，边界待审核。包含跨子关节复合区，尚未按子关节细分。
+surface_tibiofemoral_L_tibia_L,左胫骨 · 左胫股关节组覆盖区,膝,已拆分表面候选,已从源材质面拆出相应关节分区，无新增厚度，边界待审核。
+surface_patellofemoral_L_femur_L,左股骨 · 左髌股关节覆盖区,膝,已拆分表面候选,已从源材质面拆出相应关节分区，无新增厚度，边界待审核。包含跨子关节复合区，尚未按子关节细分。
+surface_patellofemoral_L_patella_L,左髌骨 · 左髌股关节覆盖区,膝,已拆分表面候选,已从源材质面拆出相应关节分区，无新增厚度，边界待审核。
 surface_proximal_tibiofibular_L_tibia_L,左胫骨 · 左近侧胫腓关节覆盖区,膝,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_proximal_tibiofibular_L_fibula_L,左腓骨 · 左近侧胫腓关节覆盖区,膝,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 fibrous_distal_tibiofibular_L,左远侧胫腓连接纤维连接,踝足,需参考与边界核查,本轮本地全对象/材质检查未建立可用映射；先核对图谱边界与命名，再决定其他来源或补建，不宣称资源不存在。
@@ -481,69 +481,69 @@ surface_costovertebral_01_R_rib_01_R_head,右第1肋骨 · 右第1肋椎连接�
 surface_costovertebral_01_R_vertebra_T1_M_head,第1胸椎（T1） · 右第1肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_01_R_rib_01_R_tubercle,右第1肋骨 · 右第1肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_01_R_vertebra_T1_M_tubercle,第1胸椎（T1） · 右第1肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-costal_cartilage_1_R,右第1肋软骨,胸廓,已提取候选,已接入源坐标候选，非解剖验收。
+costal_cartilage_1_R,右第1肋软骨,胸廓,已提取候选,已接入候选，非解剖验收。
 junction_sternocostal_01_R,右第1胸肋连接界面,胸廓,需参考与边界核查,本轮本地全对象/材质检查未建立可用映射；先核对图谱边界与命名，再决定其他来源或补建，不宣称资源不存在。
 surface_costovertebral_02_R_rib_02_R_head,右第2肋骨 · 右第2肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_02_R_vertebra_T2_M_head,第2胸椎（T2） · 右第2肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_02_R_vertebra_T1_M_head,第1胸椎（T1） · 右第2肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_02_R_rib_02_R_tubercle,右第2肋骨 · 右第2肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_02_R_vertebra_T2_M_tubercle,第2胸椎（T2） · 右第2肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-costal_cartilage_2_R,右第2肋软骨,胸廓,已提取候选,已接入源坐标候选，非解剖验收。
+costal_cartilage_2_R,右第2肋软骨,胸廓,已提取候选,已接入候选，非解剖验收。
 junction_sternocostal_02_R,右第2胸肋连接界面,胸廓,需参考与边界核查,本轮本地全对象/材质检查未建立可用映射；先核对图谱边界与命名，再决定其他来源或补建，不宣称资源不存在。
 surface_costovertebral_03_R_rib_03_R_head,右第3肋骨 · 右第3肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_03_R_vertebra_T3_M_head,第3胸椎（T3） · 右第3肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_03_R_vertebra_T2_M_head,第2胸椎（T2） · 右第3肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_03_R_rib_03_R_tubercle,右第3肋骨 · 右第3肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_03_R_vertebra_T3_M_tubercle,第3胸椎（T3） · 右第3肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-costal_cartilage_3_R,右第3肋软骨,胸廓,已提取候选,已接入源坐标候选，非解剖验收。
+costal_cartilage_3_R,右第3肋软骨,胸廓,已提取候选,已接入候选，非解剖验收。
 junction_sternocostal_03_R,右第3胸肋连接界面,胸廓,需参考与边界核查,本轮本地全对象/材质检查未建立可用映射；先核对图谱边界与命名，再决定其他来源或补建，不宣称资源不存在。
 surface_costovertebral_04_R_rib_04_R_head,右第4肋骨 · 右第4肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_04_R_vertebra_T4_M_head,第4胸椎（T4） · 右第4肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_04_R_vertebra_T3_M_head,第3胸椎（T3） · 右第4肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_04_R_rib_04_R_tubercle,右第4肋骨 · 右第4肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_04_R_vertebra_T4_M_tubercle,第4胸椎（T4） · 右第4肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-costal_cartilage_4_R,右第4肋软骨,胸廓,已提取候选,已接入源坐标候选，非解剖验收。
+costal_cartilage_4_R,右第4肋软骨,胸廓,已提取候选,已接入候选，非解剖验收。
 junction_sternocostal_04_R,右第4胸肋连接界面,胸廓,需参考与边界核查,本轮本地全对象/材质检查未建立可用映射；先核对图谱边界与命名，再决定其他来源或补建，不宣称资源不存在。
 surface_costovertebral_05_R_rib_05_R_head,右第5肋骨 · 右第5肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_05_R_vertebra_T5_M_head,第5胸椎（T5） · 右第5肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_05_R_vertebra_T4_M_head,第4胸椎（T4） · 右第5肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_05_R_rib_05_R_tubercle,右第5肋骨 · 右第5肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_05_R_vertebra_T5_M_tubercle,第5胸椎（T5） · 右第5肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-costal_cartilage_5_R,右第5肋软骨,胸廓,已提取候选,已接入源坐标候选，非解剖验收。
+costal_cartilage_5_R,右第5肋软骨,胸廓,已提取候选,已接入候选，非解剖验收。
 junction_sternocostal_05_R,右第5胸肋连接界面,胸廓,需参考与边界核查,本轮本地全对象/材质检查未建立可用映射；先核对图谱边界与命名，再决定其他来源或补建，不宣称资源不存在。
 surface_costovertebral_06_R_rib_06_R_head,右第6肋骨 · 右第6肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_06_R_vertebra_T6_M_head,第6胸椎（T6） · 右第6肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_06_R_vertebra_T5_M_head,第5胸椎（T5） · 右第6肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_06_R_rib_06_R_tubercle,右第6肋骨 · 右第6肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_06_R_vertebra_T6_M_tubercle,第6胸椎（T6） · 右第6肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-costal_cartilage_6_R,右第6肋软骨,胸廓,已提取候选,已接入源坐标候选，非解剖验收。
+costal_cartilage_6_R,右第6肋软骨,胸廓,已提取候选,已接入候选，非解剖验收。
 junction_sternocostal_06_R,右第6胸肋连接界面,胸廓,需参考与边界核查,本轮本地全对象/材质检查未建立可用映射；先核对图谱边界与命名，再决定其他来源或补建，不宣称资源不存在。
 surface_costovertebral_07_R_rib_07_R_head,右第7肋骨 · 右第7肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_07_R_vertebra_T7_M_head,第7胸椎（T7） · 右第7肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_07_R_vertebra_T6_M_head,第6胸椎（T6） · 右第7肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_07_R_rib_07_R_tubercle,右第7肋骨 · 右第7肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_07_R_vertebra_T7_M_tubercle,第7胸椎（T7） · 右第7肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-costal_cartilage_7_R,右第7肋软骨,胸廓,已提取候选,已接入源坐标候选，非解剖验收。
+costal_cartilage_7_R,右第7肋软骨,胸廓,已提取候选,已接入候选，非解剖验收。
 junction_sternocostal_07_R,右第7胸肋连接界面,胸廓,需参考与边界核查,本轮本地全对象/材质检查未建立可用映射；先核对图谱边界与命名，再决定其他来源或补建，不宣称资源不存在。
 surface_costovertebral_08_R_rib_08_R_head,右第8肋骨 · 右第8肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_08_R_vertebra_T8_M_head,第8胸椎（T8） · 右第8肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_08_R_vertebra_T7_M_head,第7胸椎（T7） · 右第8肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_08_R_rib_08_R_tubercle,右第8肋骨 · 右第8肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_08_R_vertebra_T8_M_tubercle,第8胸椎（T8） · 右第8肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-costal_cartilage_8_R,右第8肋软骨,胸廓,已提取候选,已接入源坐标候选，非解剖验收。
+costal_cartilage_8_R,右第8肋软骨,胸廓,已提取候选,已接入候选，非解剖验收。
 junction_costal_arch_08_R,右第8肋软骨弓连接界面,胸廓,需参考与边界核查,本轮本地全对象/材质检查未建立可用映射；先核对图谱边界与命名，再决定其他来源或补建，不宣称资源不存在。
 surface_costovertebral_09_R_rib_09_R_head,右第9肋骨 · 右第9肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_09_R_vertebra_T9_M_head,第9胸椎（T9） · 右第9肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_09_R_vertebra_T8_M_head,第8胸椎（T8） · 右第9肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_09_R_rib_09_R_tubercle,右第9肋骨 · 右第9肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_09_R_vertebra_T9_M_tubercle,第9胸椎（T9） · 右第9肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-costal_cartilage_9_R,右第9肋软骨,胸廓,已提取候选,已接入源坐标候选，非解剖验收。
+costal_cartilage_9_R,右第9肋软骨,胸廓,已提取候选,已接入候选，非解剖验收。
 junction_costal_arch_09_R,右第9肋软骨弓连接界面,胸廓,需参考与边界核查,本轮本地全对象/材质检查未建立可用映射；先核对图谱边界与命名，再决定其他来源或补建，不宣称资源不存在。
 surface_costovertebral_10_R_rib_10_R_head,右第10肋骨 · 右第10肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_10_R_vertebra_T10_M_head,第10胸椎（T10） · 右第10肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_10_R_rib_10_R_tubercle,右第10肋骨 · 右第10肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_10_R_vertebra_T10_M_tubercle,第10胸椎（T10） · 右第10肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-costal_cartilage_10_R,右第10肋软骨,胸廓,已提取候选,已接入源坐标候选，非解剖验收。
+costal_cartilage_10_R,右第10肋软骨,胸廓,已提取候选,已接入候选，非解剖验收。
 junction_costal_arch_10_R,右第10肋软骨弓连接界面,胸廓,需参考与边界核查,本轮本地全对象/材质检查未建立可用映射；先核对图谱边界与命名，再决定其他来源或补建，不宣称资源不存在。
 surface_costovertebral_11_R_rib_11_R_head,右第11肋骨 · 右第11肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_costovertebral_11_R_vertebra_T11_M_head,第11胸椎（T11） · 右第11肋椎连接组覆盖区,胸廓,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
@@ -553,17 +553,17 @@ surface_sternoclavicular_R_sternum_M,胸骨 · 右胸锁关节覆盖区,肩带,�
 surface_sternoclavicular_R_clavicle_R,右锁骨 · 右胸锁关节覆盖区,肩带,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_acromioclavicular_R_clavicle_R,右锁骨 · 右肩锁关节覆盖区,肩带,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_acromioclavicular_R_scapula_R,右肩胛骨 · 右肩锁关节覆盖区,肩带,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-surface_glenohumeral_R_scapula_R,右肩胛骨 · 右盂肱关节覆盖区,肩带,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-surface_glenohumeral_R_humerus_R,右肱骨 · 右盂肱关节覆盖区,肩带,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-surface_humeroulnar_R_humerus_R,右肱骨 · 右肱尺关节覆盖区,肘与前臂,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-surface_humeroulnar_R_ulna_R,右尺骨 · 右肱尺关节覆盖区,肘与前臂,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-surface_humeroradial_R_humerus_R,右肱骨 · 右肱桡关节覆盖区,肘与前臂,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-surface_humeroradial_R_radius_R,右桡骨 · 右肱桡关节覆盖区,肘与前臂,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-surface_proximal_radioulnar_R_radius_R,右桡骨 · 右近侧桡尺关节覆盖区,肘与前臂,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-surface_proximal_radioulnar_R_ulna_R,右尺骨 · 右近侧桡尺关节覆盖区,肘与前臂,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
+surface_glenohumeral_R_scapula_R,右肩胛骨 · 右盂肱关节覆盖区,肩带,已拆分表面候选,已从源材质面拆出相应关节分区，无新增厚度，边界待审核。
+surface_glenohumeral_R_humerus_R,右肱骨 · 右盂肱关节覆盖区,肩带,已拆分表面候选,已从源材质面拆出相应关节分区，无新增厚度，边界待审核。
+surface_humeroulnar_R_humerus_R,右肱骨 · 右肱尺关节覆盖区,肘与前臂,已拆分表面候选,已从源材质面拆出相应关节分区，无新增厚度，边界待审核。
+surface_humeroulnar_R_ulna_R,右尺骨 · 右肱尺关节覆盖区,肘与前臂,已拆分表面候选,已从源材质面拆出相应关节分区，无新增厚度，边界待审核。包含跨子关节复合区，尚未按子关节细分。
+surface_humeroradial_R_humerus_R,右肱骨 · 右肱桡关节覆盖区,肘与前臂,已拆分表面候选,已从源材质面拆出相应关节分区，无新增厚度，边界待审核。
+surface_humeroradial_R_radius_R,右桡骨 · 右肱桡关节覆盖区,肘与前臂,已拆分表面候选,已从源材质面拆出相应关节分区，无新增厚度，边界待审核。包含跨子关节复合区，尚未按子关节细分。
+surface_proximal_radioulnar_R_radius_R,右桡骨 · 右近侧桡尺关节覆盖区,肘与前臂,已拆分表面候选,已从源材质面拆出相应关节分区，无新增厚度，边界待审核。包含跨子关节复合区，尚未按子关节细分。
+surface_proximal_radioulnar_R_ulna_R,右尺骨 · 右近侧桡尺关节覆盖区,肘与前臂,已拆分表面候选,已从源材质面拆出相应关节分区，无新增厚度，边界待审核。包含跨子关节复合区，尚未按子关节细分。
 surface_distal_radioulnar_R_radius_R,右桡骨 · 右远侧桡尺关节覆盖区,腕手,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_distal_radioulnar_R_ulna_R,右尺骨 · 右远侧桡尺关节覆盖区,腕手,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-fibrous_forearm_interosseous_R,右前臂骨间连接纤维连接,肘与前臂,新增有面对象待核对,实际源库中存在有面的对象；未完成本条语义映射、网格质量和接入。
+fibrous_forearm_interosseous_R,右前臂骨间连接纤维连接,肘与前臂,已提取候选,已接入候选，非解剖验收。
 surface_radiocarpal_R_radius_R,右桡骨 · 右桡腕关节组覆盖区,腕手,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_radiocarpal_R_scaphoid_R,右手舟骨 · 右桡腕关节组覆盖区,腕手,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_radiocarpal_R_lunate_R,右月骨 · 右桡腕关节组覆盖区,腕手,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
@@ -641,12 +641,12 @@ surface_intermetacarpal_R_metacarpal_4_R_to_metacarpal_5_R,右第4掌骨 · 右�
 surface_intermetacarpal_R_metacarpal_5_R_to_metacarpal_4_R,右第5掌骨 · 右掌骨间连接组覆盖区,腕手,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_sacroiliac_R_sacrum_M,骶骨 · 右骶髂关节覆盖区,骨盆与髋,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_sacroiliac_R_hip_R,右髋骨 · 右骶髂关节覆盖区,骨盆与髋,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-surface_hip_R_hip_R,右髋骨 · 右髋关节覆盖区,骨盆与髋,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-surface_hip_R_femur_R,右股骨 · 右髋关节覆盖区,骨盆与髋,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-surface_tibiofemoral_R_femur_R,右股骨 · 右胫股关节组覆盖区,膝,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-surface_tibiofemoral_R_tibia_R,右胫骨 · 右胫股关节组覆盖区,膝,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-surface_patellofemoral_R_femur_R,右股骨 · 右髌股关节覆盖区,膝,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-surface_patellofemoral_R_patella_R,右髌骨 · 右髌股关节覆盖区,膝,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
+surface_hip_R_hip_R,右髋骨 · 右髋关节覆盖区,骨盆与髋,已拆分表面候选,已从源材质面拆出相应关节分区，无新增厚度，边界待审核。
+surface_hip_R_femur_R,右股骨 · 右髋关节覆盖区,骨盆与髋,已拆分表面候选,已从源材质面拆出相应关节分区，无新增厚度，边界待审核。
+surface_tibiofemoral_R_femur_R,右股骨 · 右胫股关节组覆盖区,膝,已拆分表面候选,已从源材质面拆出相应关节分区，无新增厚度，边界待审核。包含跨子关节复合区，尚未按子关节细分。
+surface_tibiofemoral_R_tibia_R,右胫骨 · 右胫股关节组覆盖区,膝,已拆分表面候选,已从源材质面拆出相应关节分区，无新增厚度，边界待审核。
+surface_patellofemoral_R_femur_R,右股骨 · 右髌股关节覆盖区,膝,已拆分表面候选,已从源材质面拆出相应关节分区，无新增厚度，边界待审核。包含跨子关节复合区，尚未按子关节细分。
+surface_patellofemoral_R_patella_R,右髌骨 · 右髌股关节覆盖区,膝,已拆分表面候选,已从源材质面拆出相应关节分区，无新增厚度，边界待审核。
 surface_proximal_tibiofibular_R_tibia_R,右胫骨 · 右近侧胫腓关节覆盖区,膝,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_proximal_tibiofibular_R_fibula_R,右腓骨 · 右近侧胫腓关节覆盖区,膝,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 fibrous_distal_tibiofibular_R,右远侧胫腓连接纤维连接,踝足,需参考与边界核查,本轮本地全对象/材质检查未建立可用映射；先核对图谱边界与命名，再决定其他来源或补建，不宣称资源不存在。
@@ -720,27 +720,27 @@ surface_intermetatarsal_R_metatarsal_3_R_to_metatarsal_4_R,右第3跖骨 · 右�
 surface_intermetatarsal_R_metatarsal_4_R_to_metatarsal_3_R,右第4跖骨 · 右跖骨间连接组覆盖区,踝足,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_intermetatarsal_R_metatarsal_4_R_to_metatarsal_5_R,右第4跖骨 · 右跖骨间连接组覆盖区,踝足,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_intermetatarsal_R_metatarsal_5_R_to_metatarsal_4_R,右第5跖骨 · 右跖骨间连接组覆盖区,踝足,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-pubic_interpubic_disc,耻骨间盘,骨盆与髋,已提取候选,已接入源坐标候选，非解剖验收。
+pubic_interpubic_disc,耻骨间盘,骨盆与髋,已提取候选,已接入候选，非解剖验收。
 surface_pubic_symphysis_hip_L,左髋骨 · 耻骨联合覆盖区,骨盆与髋,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
 surface_pubic_symphysis_hip_R,右髋骨 · 耻骨联合覆盖区,骨盆与髋,骨网格材质分区候选,相关骨存在 Cartilage 材质面，需按本关节确定覆盖区；骨级分区不是本条逐关节面的准确映射，无独立厚度。
-tmj_disc_L,左颞下颌关节盘,头颈与听骨,已提取候选,已接入源坐标候选，非解剖验收。
-sc_disc_L,左胸锁关节盘,肩带,已提取候选,已接入源坐标候选，非解剖验收。
-ac_disc_L,左肩锁关节盘候选,肩带,已提取候选,已接入源坐标候选，非解剖验收。
-glenoid_labrum_L,左肩关节盂唇,肩带,已提取候选,已接入源坐标候选，非解剖验收。
-tfcc_disc_L,左腕三角纤维软骨复合体—关节盘,腕手,已提取候选,已接入源坐标候选，非解剖验收。
-acetabular_labrum_L,左髋臼唇,骨盆与髋,已提取候选,已接入源坐标候选，非解剖验收。
-medial_meniscus_L,左膝内侧半月板,膝,已提取候选,已接入源坐标候选，非解剖验收。
-lateral_meniscus_L,左膝外侧半月板,膝,已提取候选,已接入源坐标候选，非解剖验收。
+tmj_disc_L,左颞下颌关节盘,头颈与听骨,已提取候选,已接入候选，非解剖验收。
+sc_disc_L,左胸锁关节盘,肩带,已提取候选,已接入候选，非解剖验收。
+ac_disc_L,左肩锁关节盘候选,肩带,已提取候选,已接入候选，非解剖验收。
+glenoid_labrum_L,左肩关节盂唇,肩带,已提取候选,已接入候选，非解剖验收。
+tfcc_disc_L,左腕三角纤维软骨复合体—关节盘,腕手,已提取候选,已接入候选，非解剖验收。
+acetabular_labrum_L,左髋臼唇,骨盆与髋,已提取候选,已接入候选，非解剖验收。
+medial_meniscus_L,左膝内侧半月板,膝,已提取候选,已接入候选，非解剖验收。
+lateral_meniscus_L,左膝外侧半月板,膝,已提取候选,已接入候选，非解剖验收。
 costal_cartilage_11_L,左第11肋软骨,胸廓,需参考与边界核查,本轮本地全对象/材质检查未建立可用映射；先核对图谱边界与命名，再决定其他来源或补建，不宣称资源不存在。
 costal_cartilage_12_L,左第12肋软骨,胸廓,需参考与边界核查,本轮本地全对象/材质检查未建立可用映射；先核对图谱边界与命名，再决定其他来源或补建，不宣称资源不存在。
-tmj_disc_R,右颞下颌关节盘,头颈与听骨,已提取候选,已接入源坐标候选，非解剖验收。
-sc_disc_R,右胸锁关节盘,肩带,已提取候选,已接入源坐标候选，非解剖验收。
-ac_disc_R,右肩锁关节盘候选,肩带,已提取候选,已接入源坐标候选，非解剖验收。
-glenoid_labrum_R,右肩关节盂唇,肩带,已提取候选,已接入源坐标候选，非解剖验收。
-tfcc_disc_R,右腕三角纤维软骨复合体—关节盘,腕手,已提取候选,已接入源坐标候选，非解剖验收。
-acetabular_labrum_R,右髋臼唇,骨盆与髋,已提取候选,已接入源坐标候选，非解剖验收。
-medial_meniscus_R,右膝内侧半月板,膝,已提取候选,已接入源坐标候选，非解剖验收。
-lateral_meniscus_R,右膝外侧半月板,膝,已提取候选,已接入源坐标候选，非解剖验收。
+tmj_disc_R,右颞下颌关节盘,头颈与听骨,已提取候选,已接入候选，非解剖验收。
+sc_disc_R,右胸锁关节盘,肩带,已提取候选,已接入候选，非解剖验收。
+ac_disc_R,右肩锁关节盘候选,肩带,已提取候选,已接入候选，非解剖验收。
+glenoid_labrum_R,右肩关节盂唇,肩带,已提取候选,已接入候选，非解剖验收。
+tfcc_disc_R,右腕三角纤维软骨复合体—关节盘,腕手,已提取候选,已接入候选，非解剖验收。
+acetabular_labrum_R,右髋臼唇,骨盆与髋,已提取候选,已接入候选，非解剖验收。
+medial_meniscus_R,右膝内侧半月板,膝,已提取候选,已接入候选，非解剖验收。
+lateral_meniscus_R,右膝外侧半月板,膝,已提取候选,已接入候选，非解剖验收。
 costal_cartilage_11_R,右第11肋软骨,胸廓,需参考与边界核查,本轮本地全对象/材质检查未建立可用映射；先核对图谱边界与命名，再决定其他来源或补建，不宣称资源不存在。
 costal_cartilage_12_R,右第12肋软骨,胸廓,需参考与边界核查,本轮本地全对象/材质检查未建立可用映射；先核对图谱边界与命名，再决定其他来源或补建，不宣称资源不存在。
 manubriosternal_interface,胸骨柄体连接,胸廓,需参考与边界核查,本轮本地全对象/材质检查未建立可用映射；先核对图谱边界与命名，再决定其他来源或补建，不宣称资源不存在。
@@ -755,37 +755,323 @@ uncovertebral_C3_C4_R,右C3—C4钩椎区域,颈椎,只有标注/辅助对象,�
 uncovertebral_C4_C5_R,右C4—C5钩椎区域,颈椎,只有标注/辅助对象,找到的是文字或无面的辅助对象，不是组织实体。
 uncovertebral_C5_C6_R,右C5—C6钩椎区域,颈椎,只有标注/辅助对象,找到的是文字或无面的辅助对象，不是组织实体。
 uncovertebral_C6_C7_R,右C6—C7钩椎区域,颈椎,只有标注/辅助对象,找到的是文字或无面的辅助对象，不是组织实体。
-capsule_tmj_L,左颞下颌关节囊,头颈与听骨,已提取候选,已接入源坐标候选，非解剖验收。
-capsule_proximal_tibiofibular_L,左近侧胫腓关节囊,膝,已提取候选,已接入源坐标候选，非解剖验收。
-capsule_sternoclavicular_L,左胸锁关节囊,肩带,已提取候选,已接入源坐标候选，非解剖验收。
-capsule_radiocarpal_L,左桡腕关节囊,腕手,已提取候选,已接入源坐标候选，非解剖验收。
-capsule_tibiofemoral_L,左膝关节囊,膝,已提取候选,已接入源坐标候选，非解剖验收。
-capsule_hip_L,左髋关节囊,骨盆与髋,已提取候选,已接入源坐标候选，非解剖验收。
-capsule_glenohumeral_L,左盂肱关节囊,肩带,已提取候选,已接入源坐标候选，非解剖验收。
-capsule_humeroulnar_L,左肘关节囊,肘与前臂,已提取候选,已接入源坐标候选，非解剖验收。
-capsule_acromioclavicular_L,左肩锁关节囊,肩带,已提取候选,已接入源坐标候选，非解剖验收。
-capsule_foot_ip_1_proximal_distal_L,左拇趾趾间关节囊,踝足,已提取候选,已接入源坐标候选，非解剖验收。
-capsules_hand_proximal_L,左近侧指间关节囊组,腕手,已提取候选,已接入源坐标候选，非解剖验收。
-capsules_hand_distal_L,左远侧指间关节囊组,腕手,已提取候选,已接入源坐标候选，非解剖验收。
-capsules_mcp_L,左掌指关节囊组,腕手,已提取候选,已接入源坐标候选，非解剖验收。
-capsules_foot_proximal_L,左近侧趾间关节囊组,踝足,已提取候选,已接入源坐标候选，非解剖验收。
-capsules_foot_distal_L,左远侧趾间关节囊组,踝足,已提取候选,已接入源坐标候选，非解剖验收。
-capsules_mtp_L,左跖趾关节囊组,踝足,已提取候选,已接入源坐标候选，非解剖验收。
-ligament_annular_radius_L,左桡骨环状韧带,肘与前臂,已提取候选,已接入源坐标候选，非解剖验收。
-capsule_tmj_R,右颞下颌关节囊,头颈与听骨,已提取候选,已接入源坐标候选，非解剖验收。
-capsule_proximal_tibiofibular_R,右近侧胫腓关节囊,膝,已提取候选,已接入源坐标候选，非解剖验收。
-capsule_sternoclavicular_R,右胸锁关节囊,肩带,已提取候选,已接入源坐标候选，非解剖验收。
-capsule_radiocarpal_R,右桡腕关节囊,腕手,已提取候选,已接入源坐标候选，非解剖验收。
-capsule_tibiofemoral_R,右膝关节囊,膝,已提取候选,已接入源坐标候选，非解剖验收。
-capsule_hip_R,右髋关节囊,骨盆与髋,已提取候选,已接入源坐标候选，非解剖验收。
-capsule_glenohumeral_R,右盂肱关节囊,肩带,已提取候选,已接入源坐标候选，非解剖验收。
-capsule_humeroulnar_R,右肘关节囊,肘与前臂,已提取候选,已接入源坐标候选，非解剖验收。
-capsule_acromioclavicular_R,右肩锁关节囊,肩带,已提取候选,已接入源坐标候选，非解剖验收。
-capsule_foot_ip_1_proximal_distal_R,右拇趾趾间关节囊,踝足,已提取候选,已接入源坐标候选，非解剖验收。
-capsules_hand_proximal_R,右近侧指间关节囊组,腕手,已提取候选,已接入源坐标候选，非解剖验收。
-capsules_hand_distal_R,右远侧指间关节囊组,腕手,已提取候选,已接入源坐标候选，非解剖验收。
-capsules_mcp_R,右掌指关节囊组,腕手,已提取候选,已接入源坐标候选，非解剖验收。
-capsules_foot_proximal_R,右近侧趾间关节囊组,踝足,已提取候选,已接入源坐标候选，非解剖验收。
-capsules_foot_distal_R,右远侧趾间关节囊组,踝足,已提取候选,已接入源坐标候选，非解剖验收。
-capsules_mtp_R,右跖趾关节囊组,踝足,已提取候选,已接入源坐标候选，非解剖验收。
-ligament_annular_radius_R,右桡骨环状韧带,肘与前臂,已提取候选,已接入源坐标候选，非解剖验收。
+capsule_tmj_L,左颞下颌关节囊,头颈与听骨,已提取候选,已接入候选，非解剖验收。
+capsule_proximal_tibiofibular_L,左近侧胫腓关节囊,膝,已提取候选,已接入候选，非解剖验收。
+capsule_sternoclavicular_L,左胸锁关节囊,肩带,已提取候选,已接入候选，非解剖验收。
+capsule_radiocarpal_L,左桡腕关节囊,腕手,已提取候选,已接入候选，非解剖验收。
+capsule_tibiofemoral_L,左膝关节囊,膝,已提取候选,已接入候选，非解剖验收。
+capsule_hip_L,左髋关节囊,骨盆与髋,已提取候选,已接入候选，非解剖验收。
+capsule_glenohumeral_L,左盂肱关节囊,肩带,已提取候选,已接入候选，非解剖验收。
+capsule_humeroulnar_L,左肘关节囊,肘与前臂,已提取候选,已接入候选，非解剖验收。
+capsule_acromioclavicular_L,左肩锁关节囊,肩带,已提取候选,已接入候选，非解剖验收。
+capsule_foot_ip_1_proximal_distal_L,左拇趾趾间关节囊,踝足,已提取候选,已接入候选，非解剖验收。
+capsules_hand_proximal_L,左近侧指间关节囊组,腕手,已提取候选,已接入候选，非解剖验收。
+capsules_hand_distal_L,左远侧指间关节囊组,腕手,已提取候选,已接入候选，非解剖验收。
+capsules_mcp_L,左掌指关节囊组,腕手,已提取候选,已接入候选，非解剖验收。
+capsules_foot_proximal_L,左近侧趾间关节囊组,踝足,已提取候选,已接入候选，非解剖验收。
+capsules_foot_distal_L,左远侧趾间关节囊组,踝足,已提取候选,已接入候选，非解剖验收。
+capsules_mtp_L,左跖趾关节囊组,踝足,已提取候选,已接入候选，非解剖验收。
+ligament_annular_radius_L,左桡骨环状韧带,肘与前臂,已提取候选,已接入候选，非解剖验收。
+capsule_tmj_R,右颞下颌关节囊,头颈与听骨,已提取候选,已接入候选，非解剖验收。
+capsule_proximal_tibiofibular_R,右近侧胫腓关节囊,膝,已提取候选,已接入候选，非解剖验收。
+capsule_sternoclavicular_R,右胸锁关节囊,肩带,已提取候选,已接入候选，非解剖验收。
+capsule_radiocarpal_R,右桡腕关节囊,腕手,已提取候选,已接入候选，非解剖验收。
+capsule_tibiofemoral_R,右膝关节囊,膝,已提取候选,已接入候选，非解剖验收。
+capsule_hip_R,右髋关节囊,骨盆与髋,已提取候选,已接入候选，非解剖验收。
+capsule_glenohumeral_R,右盂肱关节囊,肩带,已提取候选,已接入候选，非解剖验收。
+capsule_humeroulnar_R,右肘关节囊,肘与前臂,已提取候选,已接入候选，非解剖验收。
+capsule_acromioclavicular_R,右肩锁关节囊,肩带,已提取候选,已接入候选，非解剖验收。
+capsule_foot_ip_1_proximal_distal_R,右拇趾趾间关节囊,踝足,已提取候选,已接入候选，非解剖验收。
+capsules_hand_proximal_R,右近侧指间关节囊组,腕手,已提取候选,已接入候选，非解剖验收。
+capsules_hand_distal_R,右远侧指间关节囊组,腕手,已提取候选,已接入候选，非解剖验收。
+capsules_mcp_R,右掌指关节囊组,腕手,已提取候选,已接入候选，非解剖验收。
+capsules_foot_proximal_R,右近侧趾间关节囊组,踝足,已提取候选,已接入候选，非解剖验收。
+capsules_foot_distal_R,右远侧趾间关节囊组,踝足,已提取候选,已接入候选，非解剖验收。
+capsules_mtp_R,右跖趾关节囊组,踝足,已提取候选,已接入候选，非解剖验收。
+ligament_annular_radius_R,右桡骨环状韧带,肘与前臂,已提取候选,已接入候选，非解剖验收。
+z_lig_ulnotriquetral_ligament_R,右尺三角韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_ulnotriquetral_ligament_L,左尺三角韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_ulnopisiform_ligament_L,左尺豌豆韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_ulnopisiform_ligament_M,尺豌豆韧带（源未标侧）,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_ulnolunate_ligament_R,右尺月韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_ulnolunate_ligament_L,左尺月韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_ulnocapitate_ligament_R,右尺头状韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_ulnocapitate_ligament_L,左尺头状韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_ulnar_collateral_ligament_R,右肘尺侧副韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_ulnar_collateral_ligament_L,左肘尺侧副韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_ulnar_collateral_ligament_of_wrist_joint_R,右腕尺侧副韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_ulnar_collateral_ligament_of_wrist_joint_L,左腕尺侧副韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_triquetrohamate_ligament_R,右三角钩骨韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_triquetrohamate_ligament_L,左三角钩骨韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_triquetrocapitate_ligament_R,右三角头状骨韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_triquetrocapitate_ligament_L,左三角头状骨韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_trapezoideocapitate_interosseous_ligament_R,右小多角头状骨间韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_trapezoideocapitate_interosseous_ligament_L,左小多角头状骨间韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_trapezoid_ligament_R,右斜方韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_trapezoid_ligament_L,左斜方韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_trapeziotrapezoidal_interosseous_ligament_R,右大小多角骨间韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_trapeziotrapezoidal_interosseous_ligament_L,左大小多角骨间韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_transverse_tibiofibular_ligament_R,右胫腓横韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_transverse_tibiofibular_ligament_L,左胫腓横韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_transverse_part_of_iliofemoral_ligament_R,右髂股韧带横部,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_transverse_part_of_iliofemoral_ligament_L,左髂股韧带横部,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_transverse_ligament_of_knee_R,右膝横韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_transverse_ligament_of_knee_L,左膝横韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_transverse_humeral_ligament_R,右肱骨横韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_transverse_humeral_ligament_L,左肱骨横韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_transverse_acetabular_ligament_R,右髋臼横韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_transverse_acetabular_ligament_L,左髋臼横韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_tibionavicular_ligament_R,右胫舟韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_tibionavicular_ligament_L,左胫舟韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_tibiocalcaneal_ligament_R,右胫跟韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_tibiocalcaneal_ligament_L,左胫跟韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_talonavicular_ligament_R,右距舟韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_talonavicular_ligament_L,左距舟韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_talocalcaneal_interosseous_ligament_R,右距跟骨间韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_talocalcaneal_interosseous_ligament_L,左距跟骨间韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_supraspinous_ligament_M,棘上韧带,脊柱,已提取候选,已接入候选，非解剖验收。
+z_lig_superior_transverse_scapular_ligament_R,右肩胛上横韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_superior_transverse_scapular_ligament_L,左肩胛上横韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_superior_pubic_ligament_M,耻骨上韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_superior_glenohumeral_ligament_R,右盂肱上韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_superior_glenohumeral_ligament_L,左盂肱上韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_superficial_part_of_tibial_collateral_ligament_R,右胫侧副韧带浅部,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_superficial_part_of_tibial_collateral_ligament_L,左胫侧副韧带浅部,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_stylomandibular_ligament_R,右茎突下颌韧带,舌骨,已提取候选,已接入候选，非解剖验收。
+z_lig_stylomandibular_ligament_L,左茎突下颌韧带,舌骨,已提取候选,已接入候选，非解剖验收。
+z_lig_stylohyoid_ligament_R,右茎突舌骨韧带,舌骨,已提取候选,已接入候选，非解剖验收。
+z_lig_stylohyoid_ligament_L,左茎突舌骨韧带,舌骨,已提取候选,已接入候选，非解剖验收。
+z_lig_scapholunate_interosseous_ligament_R,右舟月骨间韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_scapholunate_interosseous_ligament_L,左舟月骨间韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_radiocapitate_ligament_R,右桡头状骨韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_radiocapitate_ligament_L,左桡头状骨韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_radiate_ligament_of_head_of_rib_R,右肋头辐状韧带组,胸廓,拆缝候选待审核,已接入候选；分叉共边已拆缝，未移动源顶点或删面，接缝连续性待审核。
+z_lig_radiate_ligament_of_head_of_rib_L,左肋头辐状韧带组,胸廓,拆缝候选待审核,已接入候选；分叉共边已拆缝，未移动源顶点或删面，接缝连续性待审核。
+z_lig_posterior_tibiotalar_ligament_R,右胫距后韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_posterior_tibiotalar_ligament_L,左胫距后韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_posterior_meniscotibial_ligament_medial_meniscus_R,右内侧半月板胫骨后韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_posterior_meniscotibial_ligament_medial_meniscus_L,左内侧半月板胫骨后韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_posterior_meniscotibial_ligament_lateral_meniscus_R,右外侧半月板胫骨后韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_posterior_meniscotibial_ligament_lateral_meniscus_L,左外侧半月板胫骨后韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_plantar_cuboideonavicular_ligament_R,右足底骰舟韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_plantar_cuboideonavicular_ligament_L,左足底骰舟韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_plantar_calcaneonavicular_ligament_R,右足底跟舟韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_plantar_calcaneonavicular_ligament_L,左足底跟舟韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_sphenomandibular_ligament_R,右蝶下颌韧带,舌骨,已提取候选,已接入候选，非解剖验收。
+z_lig_sphenomandibular_ligament_L,左蝶下颌韧带,舌骨,已提取候选,已接入候选，非解剖验收。
+z_lig_scaphotrapeziotrapezoidal_ligament_R,右舟大小多角骨韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_scaphotrapeziotrapezoidal_ligament_L,左舟大小多角骨韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_scaphocapitate_ligament_R,右舟头状骨韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_scaphocapitate_ligament_L,左舟头状骨韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_sacrotuberous_ligament_R,右骶结节韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_sacrotuberous_ligament_L,左骶结节韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_sacrospinous_ligament_R,右骶棘韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_sacrospinous_ligament_L,左骶棘韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_radioscaphocapitate_ligament_R,右桡舟头状骨韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_radioscaphocapitate_ligament_L,左桡舟头状骨韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_radiate_carpal_ligament_R,右腕辐状韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_radiate_carpal_ligament_L,左腕辐状韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_radial_collateral_ligament_R,右肘桡侧副韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_radial_collateral_ligament_L,左肘桡侧副韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_radial_collateral_ligament_of_wrist_joint_R,右腕桡侧副韧带,上肢,拆缝候选待审核,已接入候选；分叉共边已拆缝，未移动源顶点或删面，接缝连续性待审核。
+z_lig_radial_collateral_ligament_of_wrist_joint_L,左腕桡侧副韧带,上肢,拆缝候选待审核,已接入候选；分叉共边已拆缝，未移动源顶点或删面，接缝连续性待审核。
+z_lig_quadrate_ligament_R,右方形韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_quadrate_ligament_L,左方形韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_pubofemoral_ligament_R,右耻股韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_pubofemoral_ligament_L,左耻股韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_pterygospinous_ligament_R,右翼棘韧带,舌骨,已提取候选,已接入候选，非解剖验收。
+z_lig_pterygospinous_ligament_L,左翼棘韧带,舌骨,已提取候选,已接入候选，非解剖验收。
+z_lig_posterior_tibiofibular_ligament_R,右胫腓后韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_posterior_tibiofibular_ligament_L,左胫腓后韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_posterior_talofibular_ligament_R,右距腓后韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_posterior_talofibular_ligament_L,左距腓后韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_posterior_talocalcaneal_ligament_R,右距跟后韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_posterior_talocalcaneal_ligament_L,左距跟后韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_posterior_sternoclavicular_ligament_R,右胸锁后韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_posterior_sternoclavicular_ligament_L,左胸锁后韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_posterior_sacro_iliac_ligament_R,右骶髂后韧带,下肢,拆缝候选待审核,已接入候选；分叉共边已拆缝，未移动源顶点或删面，接缝连续性待审核。
+z_lig_posterior_sacro_iliac_ligament_L,左骶髂后韧带,下肢,拆缝候选待审核,已接入候选；分叉共边已拆缝，未移动源顶点或删面，接缝连续性待审核。
+z_lig_posterior_longitudinal_ligament_M,后纵韧带,脊柱,已提取候选,已接入候选，非解剖验收。
+z_lig_posterior_ligament_of_fibular_head_R,右腓骨头后韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_posterior_ligament_of_fibular_head_L,左腓骨头后韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_posterior_cruciate_ligament_R,右后交叉韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_posterior_cruciate_ligament_L,左后交叉韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_popliteofibular_ligament_R,右腘腓韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_popliteofibular_ligament_L,左腘腓韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_plantar_tarsometatarsal_ligaments_R,右跗跖足底韧带组,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_plantar_tarsometatarsal_ligaments_L,左跗跖足底韧带组,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_plantar_metatarsophalangeal_ligaments_R,右跖趾足底韧带组,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_plantar_metatarsophalangeal_ligaments_L,左跖趾足底韧带组,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_plantar_metatarsal_ligaments_R,右跖骨足底韧带组,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_plantar_metatarsal_ligaments_L,左跖骨足底韧带组,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_plantar_interphalangeal_ligaments_R,右趾间足底韧带组,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_plantar_interphalangeal_ligaments_L,左趾间足底韧带组,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_plantar_intercuneiform_ligaments_R,右楔骨间足底韧带组,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_plantar_intercuneiform_ligaments_L,左楔骨间足底韧带组,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_plantar_cuneonavicular_ligaments_R,右楔舟足底韧带组,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_plantar_cuneonavicular_ligaments_L,左楔舟足底韧带组,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_plantar_cuneocuboid_ligament_R,右楔骰足底韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_plantar_cuneocuboid_ligament_L,左楔骰足底韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_plantar_calcaneocuboid_ligament_R,右跟骰足底韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_plantar_calcaneocuboid_ligament_L,左跟骰足底韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_pisotriquetral_ligament_R,右豌豆三角骨韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_pisotriquetral_ligament_L,左豌豆三角骨韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_pisometacarpal_ligament_R,右豌豆掌骨韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_pisometacarpal_ligament_L,左豌豆掌骨韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_pisohamate_ligament_R,右豌豆钩骨韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_pisohamate_ligament_L,左豌豆钩骨韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_palmar_trapezoideocapitate_ligament_R,右掌侧小多角头状骨韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_palmar_trapezoideocapitate_ligament_L,左掌侧小多角头状骨韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_palmar_scaphotriquetral_ligament_R,右掌侧舟三角骨韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_palmar_scaphotriquetral_ligament_L,左掌侧舟三角骨韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_palmar_radio_ulnar_ligament_R,右掌侧桡尺韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_palmar_radio_ulnar_ligament_L,左掌侧桡尺韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_palmar_metacarpal_ligaments_R,右掌骨掌侧韧带组,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_palmar_metacarpal_ligaments_L,左掌骨掌侧韧带组,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_palmar_lunotriquetral_ligament_R,右掌侧月三角骨韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_palmar_lunotriquetral_ligament_L,左掌侧月三角骨韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_palmar_interphalangeal_ligaments_R,右指间掌侧韧带组,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_palmar_interphalangeal_ligaments_L,左指间掌侧韧带组,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_palmar_carpometacarpal_ligaments_R,右腕掌掌侧韧带组,上肢,拆缝候选待审核,已接入候选；分叉共边已拆缝，未移动源顶点或删面，接缝连续性待审核。
+z_lig_palmar_carpometacarpal_ligaments_L,左腕掌掌侧韧带组,上肢,拆缝候选待审核,已接入候选；分叉共边已拆缝，未移动源顶点或删面，接缝连续性待审核。
+z_lig_palmar_capitohamate_ligament_R,右掌侧头状钩骨韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_palmar_capitohamate_ligament_L,左掌侧头状钩骨韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_oblique_popliteal_ligament_R,右腘斜韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_oblique_popliteal_ligament_L,左腘斜韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_nuchal_ligament_M,项韧带,脊柱,已提取候选,已接入候选，非解剖验收。
+z_lig_middle_glenohumeral_ligament_R,右盂肱中韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_middle_glenohumeral_ligament_L,左盂肱中韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_metatarsal_interosseous_ligaments_R,右跖骨间韧带组,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_metatarsal_interosseous_ligaments_L,左跖骨间韧带组,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_meniscopatellar_ligament_R,右半月板髌骨韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_meniscopatellar_ligament_L,左半月板髌骨韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_medial_talocalcaneal_ligament_R,右距跟内侧韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_medial_talocalcaneal_ligament_L,左距跟内侧韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_lunotriquetral_interosseous_ligament_R,右月三角骨间韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_lunotriquetral_interosseous_ligament_L,左月三角骨间韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_long_plantar_ligament_R,右足底长韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_long_plantar_ligament_L,左足底长韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_ligamenta_flava_M,黄韧带组,脊柱,已提取候选,已接入候选，非解剖验收。
+z_lig_ligament_of_head_of_femur_R,右股骨头韧带,下肢,拆缝候选待审核,已接入候选；分叉共边已拆缝，未移动源顶点或删面，接缝连续性待审核。
+z_lig_ligament_of_head_of_femur_L,左股骨头韧带,下肢,拆缝候选待审核,已接入候选；分叉共边已拆缝，未移动源顶点或删面，接缝连续性待审核。
+z_lig_lateral_temporomandibular_ligament_R,右颞下颌外侧韧带,颅骨,已提取候选,已接入候选，非解剖验收。
+z_lig_lateral_temporomandibular_ligament_L,左颞下颌外侧韧带,颅骨,已提取候选,已接入候选，非解剖验收。
+z_lig_lateral_talocalcaneal_ligament_R,右距跟外侧韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_lateral_talocalcaneal_ligament_L,左距跟外侧韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_ischiofemoral_ligament_R,右坐股韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_ischiofemoral_ligament_L,左坐股韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_intra_articular_ligament_of_head_of_rib_R,右肋头关节内韧带组,胸廓,已提取候选,已接入候选，非解剖验收。
+z_lig_intra_articular_ligament_of_head_of_rib_M,肋头关节内韧带组,胸廓,已提取候选,已接入候选，非解剖验收。
+z_lig_interspinous_ligaments_M,棘间韧带组,脊柱,已提取候选,已接入候选，非解剖验收。
+z_lig_intersesamoid_ligament_R,右籽骨间韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_intersesamoid_ligament_L,左籽骨间韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_interosseous_sacro_iliac_ligament_R,右骶髂骨间韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_interosseous_sacro_iliac_ligament_L,左骶髂骨间韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_interosseous_metacarpal_ligaments_R,右掌骨间韧带组,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_interosseous_metacarpal_ligaments_L,左掌骨间韧带组,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_interosseous_membrane_of_leg_R,右小腿骨间膜,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_interosseous_membrane_of_leg_L,左小腿骨间膜,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_intercuneiform_interosseous_ligaments_R,右楔骨间韧带组,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_intercuneiform_interosseous_ligaments_L,左楔骨间韧带组,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_intercornual_ligament_R,右骶尾角间韧带,脊柱,已提取候选,已接入候选，非解剖验收。
+z_lig_intercornual_ligament_L,左骶尾角间韧带,脊柱,已提取候选,已接入候选，非解剖验收。
+z_lig_interclavicular_ligament_R,右锁骨间韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_interclavicular_ligament_L,左锁骨间韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_inferior_transverse_scapular_ligament_R,右肩胛下横韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_inferior_transverse_scapular_ligament_L,左肩胛下横韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_inferior_pubic_ligament_M,耻骨下韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_inferior_glenohumeral_ligament_R,右盂肱下韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_inferior_glenohumeral_ligament_L,左盂肱下韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_iliolumbar_ligament_R,右髂腰韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_iliolumbar_ligament_L,左髂腰韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_fibular_collateral_ligament_R,右腓侧副韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_fibular_collateral_ligament_L,左腓侧副韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_dorsal_ulnocarpal_ligament_R,右背侧尺腕韧带,上肢,拆缝候选待审核,已接入候选；分叉共边已拆缝，未移动源顶点或删面，接缝连续性待审核。
+z_lig_dorsal_ulnocarpal_ligament_L,左背侧尺腕韧带,上肢,拆缝候选待审核,已接入候选；分叉共边已拆缝，未移动源顶点或删面，接缝连续性待审核。
+z_lig_dorsal_tarsometatarsal_ligaments_R,右跗跖背侧韧带组,下肢,拆缝候选待审核,已接入候选；分叉共边已拆缝，未移动源顶点或删面，接缝连续性待审核。
+z_lig_dorsal_tarsometatarsal_ligaments_L,左跗跖背侧韧带组,下肢,拆缝候选待审核,已接入候选；分叉共边已拆缝，未移动源顶点或删面，接缝连续性待审核。
+z_lig_dorsal_scaphotriquetral_ligament_R,右背侧舟三角骨韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_dorsal_scaphotriquetral_ligament_L,左背侧舟三角骨韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_dorsal_radiocarpal_ligament_R,右背侧桡腕韧带,上肢,拆缝候选待审核,已接入候选；分叉共边已拆缝，未移动源顶点或删面，接缝连续性待审核。
+z_lig_dorsal_radiocarpal_ligament_L,左背侧桡腕韧带,上肢,拆缝候选待审核,已接入候选；分叉共边已拆缝，未移动源顶点或删面，接缝连续性待审核。
+z_lig_dorsal_radio_ulnar_ligament_R,右背侧桡尺韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_dorsal_radio_ulnar_ligament_L,左背侧桡尺韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_dorsal_metatarsal_ligaments_R,右跖骨背侧韧带组,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_dorsal_metatarsal_ligaments_L,左跖骨背侧韧带组,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_dorsal_metacarpal_ligaments_R,右掌骨背侧韧带组,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_dorsal_metacarpal_ligaments_L,左掌骨背侧韧带组,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_dorsal_intercuneiform_ligaments_R,右楔骨间背侧韧带组,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_dorsal_intercuneiform_ligaments_L,左楔骨间背侧韧带组,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_dorsal_intercarpal_ligaments_R,右腕骨间背侧韧带组,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_dorsal_intercarpal_ligaments_L,左腕骨间背侧韧带组,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_dorsal_cuneonavicular_ligaments_R,右楔舟背侧韧带组,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_dorsal_cuneonavicular_ligaments_L,左楔舟背侧韧带组,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_dorsal_cuneocuboid_ligament_R,右楔骰背侧韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_dorsal_cuneocuboid_ligament_L,左楔骰背侧韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_dorsal_cuboideonavicular_ligament_R,右骰舟背侧韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_dorsal_cuboideonavicular_ligament_L,左骰舟背侧韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_dorsal_carpometacarpal_ligaments_R,右腕掌背侧韧带组,上肢,拆缝候选待审核,已接入候选；分叉共边已拆缝，未移动源顶点或删面，接缝连续性待审核。
+z_lig_dorsal_carpometacarpal_ligaments_L,左腕掌背侧韧带组,上肢,拆缝候选待审核,已接入候选；分叉共边已拆缝，未移动源顶点或删面，接缝连续性待审核。
+z_lig_dorsal_calcaneocuboid_ligament_R,右跟骰背侧韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_dorsal_calcaneocuboid_ligament_L,左跟骰背侧韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_descending_part_of_iliofemoral_ligament_R,右髂股韧带降部,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_descending_part_of_iliofemoral_ligament_L,左髂股韧带降部,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_deep_transverse_metatarsal_ligament_R,右跖骨深横韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_deep_transverse_metatarsal_ligament_L,左跖骨深横韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_deep_transverse_metacarpal_ligament_R,右掌骨深横韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_deep_transverse_metacarpal_ligament_L,左掌骨深横韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_deep_part_of_tibial_collateral_ligament_R,右胫侧副韧带深部,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_deep_part_of_tibial_collateral_ligament_L,左胫侧副韧带深部,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_cuneometatarsal_interosseous_ligaments_R,右楔跖骨间韧带组,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_cuneometatarsal_interosseous_ligaments_L,左楔跖骨间韧带组,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_cuneocuboid_interosseous_ligament_R,右楔骰骨间韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_cuneocuboid_interosseous_ligament_L,左楔骰骨间韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_costotransverse_ligament_R,右肋横突韧带组,胸廓,已提取候选,已接入候选，非解剖验收。
+z_lig_costotransverse_ligament_L,左肋横突韧带组,胸廓,已提取候选,已接入候选，非解剖验收。
+z_lig_costoclavicular_ligament_R,右肋锁韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_costoclavicular_ligament_L,左肋锁韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_coracohumeral_ligament_R,右喙肱韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_coracohumeral_ligament_L,左喙肱韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_coraco_acromial_ligament_R,右喙肩韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_coraco_acromial_ligament_L,左喙肩韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_conoid_ligament_R,右锥状韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_conoid_ligament_L,左锥状韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_collateral_metatarsophalangeal_ligaments_R,右跖趾侧副韧带组,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_collateral_metatarsophalangeal_ligaments_L,左跖趾侧副韧带组,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_collateral_metacarpophalangeal_ligaments_R,右掌指侧副韧带组,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_collateral_metacarpophalangeal_ligaments_L,左掌指侧副韧带组,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_collateral_interphalangeal_ligaments_of_hand_R,右指间侧副韧带组,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_collateral_interphalangeal_ligaments_of_hand_L,左指间侧副韧带组,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_collateral_interphalangeal_ligaments_of_foot_R,右趾间侧副韧带组,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_collateral_interphalangeal_ligaments_of_foot_L,左趾间侧副韧带组,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_capitohamate_interosseous_ligament_R,右头状钩骨间韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_capitohamate_interosseous_ligament_L,左头状钩骨间韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_calcaneonavicular_ligament_R,右跟舟韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_calcaneonavicular_ligament_L,左跟舟韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_calcaneofibular_ligament_R,右跟腓韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_calcaneofibular_ligament_L,左跟腓韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_calcaneocuboid_ligament_R,右跟骰韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_calcaneocuboid_ligament_L,左跟骰韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_arcuate_popliteal_ligament_R,右腘弓状韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_arcuate_popliteal_ligament_L,左腘弓状韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_anterior_tibiofibular_ligament_R,右胫腓前韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_anterior_tibiofibular_ligament_L,左胫腓前韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_anterior_talofibular_ligament_R,右距腓前韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_anterior_talofibular_ligament_L,左距腓前韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_anterior_talocalcaneal_ligament_R,右距跟前韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_anterior_talocalcaneal_ligament_L,左距跟前韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_anterior_sternoclavicular_ligament_R,右胸锁前韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_anterior_sternoclavicular_ligament_L,左胸锁前韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_anterior_sacro_iliac_ligament_R,右骶髂前韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_anterior_sacro_iliac_ligament_L,左骶髂前韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_anterior_meniscotibial_ligament_medial_meniscus_R,右内侧半月板胫骨前韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_anterior_meniscotibial_ligament_medial_meniscus_L,左内侧半月板胫骨前韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_anterior_meniscotibial_ligament_lateral_meniscus_R,右外侧半月板胫骨前韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_anterior_meniscotibial_ligament_lateral_meniscus_L,左外侧半月板胫骨前韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_anterior_longitudinal_ligament_M,前纵韧带,脊柱,已提取候选,已接入候选，非解剖验收。
+z_lig_anterior_ligament_of_fibular_head_R,右腓骨头前韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_anterior_ligament_of_fibular_head_L,左腓骨头前韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_anterior_cruciate_ligament_R,右前交叉韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_anterior_cruciate_ligament_L,左前交叉韧带,下肢,已提取候选,已接入候选，非解剖验收。
+z_lig_acromioclavicular_ligament_R,右肩锁韧带,上肢,已提取候选,已接入候选，非解剖验收。
+z_lig_acromioclavicular_ligament_L,左肩锁韧带,上肢,已提取候选,已接入候选，非解剖验收。

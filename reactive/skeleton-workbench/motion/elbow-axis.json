@@ -1,0 +1,73 @@
+{
+  "units": "metres",
+  "coordinates": "glTF X/Y/Z",
+  "method": "Epicondylar initialization; same-source trochlear projected circle and capitulum sphere centre constrain candidate hinge. No guessed universal world axis.",
+  "sides": {
+    "R": {
+      "pivot": [
+        -0.2142560453584408,
+        1.1006946913457092,
+        -0.034175826321592
+      ],
+      "axis": [
+        -0.966685152127739,
+        0.21634543098582973,
+        -0.1368008448341085
+      ],
+      "range_degrees": [
+        0,
+        120
+      ],
+      "angle_definition": "相对源模型装配姿态的屈曲增量；0°并非已校准的临床完全伸直位",
+      "status": "candidate_static_hinge_not_validated_instantaneous_axis",
+      "source_landmarks": [
+        "肱骨内上髁",
+        "肱骨外上髁"
+      ],
+      "source_surface": "surface_patch_humerus_R_1",
+      "capitulum_surface": "surface_patch_humerus_R_0",
+      "capitulum_sphere_center": [
+        -0.2388554593008311,
+        1.106200073113135,
+        -0.03765702245079277
+      ],
+      "capitulum_fit_radius_mm": 11.36766028881996,
+      "fit_radius_mm": 11.290815215084498,
+      "fit_residual_rms_mm": 0.9933913809837313,
+      "surface_vertex_count": 188
+    },
+    "L": {
+      "pivot": [
+        0.21425607516093778,
+        1.100694691345567,
+        -0.03417582632144745
+      ],
+      "axis": [
+        -0.9666851521253703,
+        -0.21634543099241949,
+        0.1368008448404246
+      ],
+      "range_degrees": [
+        0,
+        120
+      ],
+      "angle_definition": "相对源模型装配姿态的屈曲增量；0°并非已校准的临床完全伸直位",
+      "status": "candidate_static_hinge_not_validated_instantaneous_axis",
+      "source_landmarks": [
+        "肱骨内上髁",
+        "肱骨外上髁"
+      ],
+      "source_surface": "surface_patch_humerus_L_1",
+      "capitulum_surface": "surface_patch_humerus_L_0",
+      "capitulum_sphere_center": [
+        0.2388554891031535,
+        1.106200073113135,
+        -0.03765702245079277
+      ],
+      "capitulum_fit_radius_mm": 11.36766028881996,
+      "fit_radius_mm": 11.290815215256671,
+      "fit_residual_rms_mm": 0.9933913811092866,
+      "surface_vertex_count": 188
+    }
+  }
+}

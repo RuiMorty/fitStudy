@@ -1,0 +1,306 @@
+[
+  {
+    "id": "z_lig_transverse_part_of_iliofemoral_ligament_R",
+    "raw_vertices": 234,
+    "end_candidates": [],
+    "surface_displacement_max_mm": 0,
+    "nearest_source_surface_max_mm": 0.0,
+    "boundary_preserved": true,
+    "contact_display_note": "保留该对象的原始几何；封闭网格及关节囊、半月板未套用开放韧带修形。 纤维纹理为显示示意，未移动端部追求贴骨。",
+    "suspected_penetration_nearest_normal_only": {
+      "bone_Hip_r": {
+        "flagged_samples": 7,
+        "max_depth_mm": 1.303
+      }
+    },
+    "audit_scope": "static_nearest_normal_sampling",
+    "anatomical_status": "pending",
+    "changed": false
+  },
+  {
+    "id": "z_lig_transverse_part_of_iliofemoral_ligament_L",
+    "raw_vertices": 234,
+    "end_candidates": [],
+    "surface_displacement_max_mm": 0,
+    "nearest_source_surface_max_mm": 0.0,
+    "boundary_preserved": true,
+    "contact_display_note": "保留该对象的原始几何；封闭网格及关节囊、半月板未套用开放韧带修形。 纤维纹理为显示示意，未移动端部追求贴骨。",
+    "suspected_penetration_nearest_normal_only": {
+      "bone_Hip_l": {
+        "flagged_samples": 7,
+        "max_depth_mm": 1.302
+      }
+    },
+    "audit_scope": "static_nearest_normal_sampling",
+    "anatomical_status": "pending",
+    "changed": false
+  },
+  {
+    "id": "z_lig_transverse_acetabular_ligament_R",
+    "raw_vertices": 286,
+    "end_candidates": [],
+    "surface_displacement_max_mm": 0,
+    "nearest_source_surface_max_mm": 0.0,
+    "boundary_preserved": true,
+    "contact_display_note": "保留该对象的原始几何；封闭网格及关节囊、半月板未套用开放韧带修形。 纤维纹理为显示示意，未移动端部追求贴骨。",
+    "suspected_penetration_nearest_normal_only": {
+      "bone_Hip_r": {
+        "flagged_samples": 8,
+        "max_depth_mm": 1.057
+      }
+    },
+    "audit_scope": "static_nearest_normal_sampling",
+    "anatomical_status": "pending",
+    "changed": false
+  },
+  {
+    "id": "z_lig_transverse_acetabular_ligament_L",
+    "raw_vertices": 286,
+    "end_candidates": [],
+    "surface_displacement_max_mm": 0,
+    "nearest_source_surface_max_mm": 0.0,
+    "boundary_preserved": true,
+    "contact_display_note": "保留该对象的原始几何；封闭网格及关节囊、半月板未套用开放韧带修形。 纤维纹理为显示示意，未移动端部追求贴骨。",
+    "suspected_penetration_nearest_normal_only": {
+      "bone_Hip_l": {
+        "flagged_samples": 8,
+        "max_depth_mm": 1.057
+      }
+    },
+    "audit_scope": "static_nearest_normal_sampling",
+    "anatomical_status": "pending",
+    "changed": false
+  },
+  {
+    "id": "z_lig_pubofemoral_ligament_R",
+    "raw_vertices": 198,
+    "end_candidates": [],
+    "surface_displacement_max_mm": 0,
+    "nearest_source_surface_max_mm": 0.0,
+    "boundary_preserved": true,
+    "contact_display_note": "保留该对象的原始几何；封闭网格及关节囊、半月板未套用开放韧带修形。 纤维纹理为显示示意，未移动端部追求贴骨。",
+    "suspected_penetration_nearest_normal_only": {
+      "bone_Femur_r": {
+        "flagged_samples": 13,
+        "max_depth_mm": 1.408
+      }
+    },
+    "audit_scope": "static_nearest_normal_sampling",
+    "anatomical_status": "pending",
+    "changed": false
+  },
+  {
+    "id": "z_lig_pubofemoral_ligament_L",
+    "raw_vertices": 198,
+    "end_candidates": [],
+    "surface_displacement_max_mm": 0,
+    "nearest_source_surface_max_mm": 0.0,
+    "boundary_preserved": true,
+    "contact_display_note": "保留该对象的原始几何；封闭网格及关节囊、半月板未套用开放韧带修形。 纤维纹理为显示示意，未移动端部追求贴骨。",
+    "suspected_penetration_nearest_normal_only": {
+      "bone_Femur_l": {
+        "flagged_samples": 13,
+        "max_depth_mm": 1.408
+      }
+    },
+    "audit_scope": "static_nearest_normal_sampling",
+    "anatomical_status": "pending",
+    "changed": false
+  },
+  {
+    "id": "z_lig_ligament_of_head_of_femur_R",
+    "raw_vertices": 429,
+    "end_candidates": [],
+    "surface_displacement_max_mm": 0.15001,
+    "nearest_source_surface_max_mm": 0.22141,
+    "boundary_preserved": true,
+    "contact_display_note": "对开放韧带表面细分并轻度平顺，原边界锁定、内部顶点调整上限 0.15 mm；保留原厚度。 纤维纹理为显示示意，未移动端部追求贴骨。",
+    "suspected_penetration_nearest_normal_only": {
+      "bone_Hip_r": {
+        "flagged_samples": 34,
+        "max_depth_mm": 1.225
+      },
+      "bone_Femur_r": {
+        "flagged_samples": 129,
+        "max_depth_mm": 2.667
+      }
+    },
+    "audit_scope": "static_nearest_normal_sampling",
+    "anatomical_status": "pending",
+    "changed": true
+  },
+  {
+    "id": "z_lig_ligament_of_head_of_femur_L",
+    "raw_vertices": 429,
+    "end_candidates": [],
+    "surface_displacement_max_mm": 0.15001,
+    "nearest_source_surface_max_mm": 0.22141,
+    "boundary_preserved": true,
+    "contact_display_note": "对开放韧带表面细分并轻度平顺，原边界锁定、内部顶点调整上限 0.15 mm；保留原厚度。 纤维纹理为显示示意，未移动端部追求贴骨。",
+    "suspected_penetration_nearest_normal_only": {
+      "bone_Hip_l": {
+        "flagged_samples": 34,
+        "max_depth_mm": 1.225
+      },
+      "bone_Femur_l": {
+        "flagged_samples": 129,
+        "max_depth_mm": 2.667
+      }
+    },
+    "audit_scope": "static_nearest_normal_sampling",
+    "anatomical_status": "pending",
+    "changed": true
+  },
+  {
+    "id": "z_lig_ischiofemoral_ligament_R",
+    "raw_vertices": 338,
+    "end_candidates": [],
+    "surface_displacement_max_mm": 0,
+    "nearest_source_surface_max_mm": 0.0,
+    "boundary_preserved": true,
+    "contact_display_note": "保留该对象的原始几何；封闭网格及关节囊、半月板未套用开放韧带修形。 纤维纹理为显示示意，未移动端部追求贴骨。",
+    "suspected_penetration_nearest_normal_only": {
+      "bone_Hip_r": {
+        "flagged_samples": 2,
+        "max_depth_mm": 0.872
+      }
+    },
+    "audit_scope": "static_nearest_normal_sampling",
+    "anatomical_status": "pending",
+    "changed": false
+  },
+  {
+    "id": "z_lig_ischiofemoral_ligament_L",
+    "raw_vertices": 338,
+    "end_candidates": [],
+    "surface_displacement_max_mm": 0,
+    "nearest_source_surface_max_mm": 0.0,
+    "boundary_preserved": true,
+    "contact_display_note": "保留该对象的原始几何；封闭网格及关节囊、半月板未套用开放韧带修形。 纤维纹理为显示示意，未移动端部追求贴骨。",
+    "suspected_penetration_nearest_normal_only": {
+      "bone_Hip_l": {
+        "flagged_samples": 2,
+        "max_depth_mm": 0.872
+      }
+    },
+    "audit_scope": "static_nearest_normal_sampling",
+    "anatomical_status": "pending",
+    "changed": false
+  },
+  {
+    "id": "z_lig_descending_part_of_iliofemoral_ligament_R",
+    "raw_vertices": 306,
+    "end_candidates": [],
+    "surface_displacement_max_mm": 0,
+    "nearest_source_surface_max_mm": 0.0,
+    "boundary_preserved": true,
+    "contact_display_note": "保留该对象的原始几何；封闭网格及关节囊、半月板未套用开放韧带修形。 纤维纹理为显示示意，未移动端部追求贴骨。",
+    "suspected_penetration_nearest_normal_only": {
+      "bone_Hip_r": {
+        "flagged_samples": 3,
+        "max_depth_mm": 0.636
+      },
+      "bone_Femur_r": {
+        "flagged_samples": 2,
+        "max_depth_mm": 0.549
+      }
+    },
+    "audit_scope": "static_nearest_normal_sampling",
+    "anatomical_status": "pending",
+    "changed": false
+  },
+  {
+    "id": "z_lig_descending_part_of_iliofemoral_ligament_L",
+    "raw_vertices": 306,
+    "end_candidates": [],
+    "surface_displacement_max_mm": 0,
+    "nearest_source_surface_max_mm": 0.0,
+    "boundary_preserved": true,
+    "contact_display_note": "保留该对象的原始几何；封闭网格及关节囊、半月板未套用开放韧带修形。 纤维纹理为显示示意，未移动端部追求贴骨。",
+    "suspected_penetration_nearest_normal_only": {
+      "bone_Hip_l": {
+        "flagged_samples": 3,
+        "max_depth_mm": 0.636
+      },
+      "bone_Femur_l": {
+        "flagged_samples": 2,
+        "max_depth_mm": 0.549
+      }
+    },
+    "audit_scope": "static_nearest_normal_sampling",
+    "anatomical_status": "pending",
+    "changed": false
+  },
+  {
+    "id": "capsule_hip_L",
+    "raw_vertices": 630,
+    "end_candidates": [],
+    "surface_displacement_max_mm": 0,
+    "nearest_source_surface_max_mm": 0.0,
+    "boundary_preserved": true,
+    "contact_display_note": "保留该对象的原始几何；封闭网格及关节囊、半月板未套用开放韧带修形。 纤维纹理为显示示意，未移动端部追求贴骨。",
+    "suspected_penetration_nearest_normal_only": {
+      "bone_Femur_l": {
+        "flagged_samples": 2,
+        "max_depth_mm": 0.614
+      }
+    },
+    "audit_scope": "static_nearest_normal_sampling",
+    "anatomical_status": "pending",
+    "changed": false
+  },
+  {
+    "id": "capsule_hip_R",
+    "raw_vertices": 630,
+    "end_candidates": [],
+    "surface_displacement_max_mm": 0,
+    "nearest_source_surface_max_mm": 0.0,
+    "boundary_preserved": true,
+    "contact_display_note": "保留该对象的原始几何；封闭网格及关节囊、半月板未套用开放韧带修形。 纤维纹理为显示示意，未移动端部追求贴骨。",
+    "suspected_penetration_nearest_normal_only": {
+      "bone_Femur_r": {
+        "flagged_samples": 2,
+        "max_depth_mm": 0.614
+      }
+    },
+    "audit_scope": "static_nearest_normal_sampling",
+    "anatomical_status": "pending",
+    "changed": false
+  },
+  {
+    "id": "acetabular_labrum_L",
+    "raw_vertices": 704,
+    "end_candidates": [],
+    "surface_displacement_max_mm": 0,
+    "nearest_source_surface_max_mm": 0.0,
+    "boundary_preserved": true,
+    "contact_display_note": "保留该对象的原始几何；封闭网格及关节囊、半月板未套用开放韧带修形。 纤维纹理为显示示意，未移动端部追求贴骨。",
+    "suspected_penetration_nearest_normal_only": {
+      "bone_Femur_l": {
+        "flagged_samples": 43,
+        "max_depth_mm": 2.219
+      }
+    },
+    "audit_scope": "static_nearest_normal_sampling",
+    "anatomical_status": "pending",
+    "changed": false
+  },
+  {
+    "id": "acetabular_labrum_R",
+    "raw_vertices": 704,
+    "end_candidates": [],
+    "surface_displacement_max_mm": 0,
+    "nearest_source_surface_max_mm": 0.0,
+    "boundary_preserved": true,
+    "contact_display_note": "保留该对象的原始几何；封闭网格及关节囊、半月板未套用开放韧带修形。 纤维纹理为显示示意，未移动端部追求贴骨。",
+    "suspected_penetration_nearest_normal_only": {
+      "bone_Femur_r": {
+        "flagged_samples": 43,
+        "max_depth_mm": 2.219
+      }
+    },
+    "audit_scope": "static_nearest_normal_sampling",
+    "anatomical_status": "pending",
+    "changed": false
+  }
+]
