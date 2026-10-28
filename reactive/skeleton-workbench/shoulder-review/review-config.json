@@ -5,8 +5,8 @@
     "Clavicle",
     "Humerus"
   ],
-  "model": "shoulder-review.glb",
-  "meshCount": 50,
+  "model": "shoulder-review-fiber.glb",
+  "meshCount": 28,
   "initialId": "z_lig_coraco_acromial_ligament_R",
   "target": [
     -0.2,
@@ -19,5 +19,8 @@
     0.4
   ],
   "storageKey": "shoulder-ligament-review-v1",
-  "allowOriginal": false
+  "allowOriginal": false,
+  "revision": "shoulder-fiber1",
+  "fiberMaterial": true,
+  "loadedLabel": "纤维体重建版 · 解剖待核准"
 }

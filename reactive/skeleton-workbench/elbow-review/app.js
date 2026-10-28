@@ -1,1 +1,1 @@
-import '../joint-review-common/app.js?v=ucl-restored9';
+import '../joint-review-common/app.js?v=highlight1';

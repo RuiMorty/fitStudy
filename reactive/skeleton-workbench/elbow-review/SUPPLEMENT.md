@@ -1,3 +1,7 @@
+> 纤维体重建（elbow-fiber-v1）：`build_fiber_ligaments.py` 用共用模块 `../joint-review-common/fiber_shell.py` 把 16 个肘部薄壳（原 0.17–0.5 mm 等厚）重建为纤维体：逐顶点配对对侧层，保留中面，按距边缘距离做椭圆收边，端部渐薄，加纤维束起伏；增厚进入骨内时二分收缩并在邻域扩散，中面已在骨内处不加深。拓扑、`_motion_weight` 不变，24 帧屈伸形态按同一配对逐帧重建并对已转动的前臂骨做避让，`elbow-motion.js` 未改。峰值厚度见脚本 `DISPLAY_THICKNESS_MM`（1.0–2.6 mm），为显示参数。新产物：`elbow-review-fiber.glb`、`elbow-fiber-ligaments.blend`、`geometry-audit-fiber.json`、`../z-anatomy-candidate/elbow-ligaments-fiber.{json,glb}`、`../motion/elbow-ligaments-fiber.glb`；旧产物保留。斜索为开放网格，仅约 58% 顶点可配对，仍偏片状。
+
+> 接缝与附着（同一修订）：桡侧副韧带源对象由上下两块网格组成，两块彼此贴近的边缘现识别为内部接缝，不收边并在膨胀后对合，消除中间分割线。距骨面 2.5 mm 内的韧带端部（末 25% 长度）展宽为圆舌形足印、深面贴骨、浅面渐薄至零，末端沉入骨面 0.08 mm，颜色渐变为骨色；运动帧对转动后的骨面同样处理。足印形状是显示处理，不是文献足印。对比图：`../qa/elbow-fiber-rcl-seam-fixed.png`、`../qa/elbow-fiber-lucl-enthesis.png`。
+
 # 肘部韧带补充候选 · 2026-10-14
 
 当前主页面与肘部审核页均使用此补充版本。每侧 8 项，双侧 16 项；其中 8 个对象沿用同源网格或其已有显示派生，8 个对象为文献关系指导的重建候选。不是解剖验收完成。

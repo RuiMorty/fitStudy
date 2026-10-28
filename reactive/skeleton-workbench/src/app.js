@@ -1,4 +1,5 @@
 import {applyUclMaterial,isUcl} from './ucl-material.js?v=9';
+import {applyFiberMaterial,isFiberLigament} from './fiber-ligament-material.js?v=highlight1';
 import {createElbowMotion} from './elbow-motion.js?v=elbow-supplement2';
 import {appendLigamentInfo} from './ligament-info.js?v=elbow-supplement2';
 import {setupCoverage} from './coverage.js';
@@ -39,10 +40,12 @@ const fiberPixels=new Uint8Array(128*128*4);
 for(let y=0;y<128;y++)for(let x=0;x<128;x++){const i=(y*128+x)*4;fiberPixels[i]=128+Math.round(26*Math.sin(x/128*Math.PI*12+.18*Math.sin(y/128*Math.PI*2))+9*Math.sin(x/128*Math.PI*30));fiberPixels[i+1]=128;fiberPixels[i+2]=252;fiberPixels[i+3]=255;}
 const reviewFiber=new THREE.DataTexture(fiberPixels,128,128,THREE.RGBAFormat);reviewFiber.wrapS=reviewFiber.wrapT=THREE.RepeatWrapping;reviewFiber.magFilter=reviewFiber.minFilter=THREE.LinearFilter;reviewFiber.needsUpdate=true;
 const styleFields=['exposure','roughness','hemisphere','key','fill'];
+// Single entry for ligaments with their own material, used by both appearance refresh and selection.
+function styleSpecialMaterial(id,mesh,highlight){if(isFiberLigament(rows.get(id)))applyFiberMaterial(mesh,highlight);else if(isUcl(id))applyUclMaterial(mesh,highlight);}
 function applyAppearance(){
   renderer.toneMappingExposure=BONE_STYLE.exposure;
   hemisphere.intensity=BONE_STYLE.hemisphere;key.intensity=BONE_STYLE.key;fill.intensity=BONE_STYLE.fill;
-  for(const [id,g] of groups)g.traverse(m=>{if(m.isMesh){const highlight=id===selected&&showHighlight;m.material.color.set(highlight?0xb6c891:materialBase(id));m.material.emissive.set(highlight?0x16220d:0);m.material.roughness=BONE_STYLE.roughness;if(rows.get(id)?.tissue){const ligament=tissueLayer(rows.get(id))==='ligament';if(ligament){m.material.roughness=.65;m.material.normalMap=reviewFiber;m.material.normalScale.setScalar(.1);}const capsule=tissueLayer(rows.get(id))==='capsule';m.material.transparent=capsule;m.material.opacity=capsule?.28:1;m.material.depthWrite=!capsule;const surface=tissueLayer(rows.get(id))==='surface';m.material.polygonOffset=surface;m.material.polygonOffsetFactor=surface?-2:0;m.material.polygonOffsetUnits=surface?-2:0;m.material.side=surface?THREE.DoubleSide:THREE.FrontSide;m.renderOrder=surface?1:0;}if(isUcl(id))applyUclMaterial(m,highlight);}});
+  for(const [id,g] of groups)g.traverse(m=>{if(m.isMesh){const highlight=id===selected&&showHighlight;m.material.color.set(highlight?0xb6c891:materialBase(id));m.material.emissive.set(highlight?0x16220d:0);m.material.roughness=BONE_STYLE.roughness;if(rows.get(id)?.tissue){const ligament=tissueLayer(rows.get(id))==='ligament';if(ligament){m.material.roughness=.65;m.material.normalMap=reviewFiber;m.material.normalScale.setScalar(.1);}const capsule=tissueLayer(rows.get(id))==='capsule';m.material.transparent=capsule;m.material.opacity=capsule?.28:1;m.material.depthWrite=!capsule;const surface=tissueLayer(rows.get(id))==='surface';m.material.polygonOffset=surface;m.material.polygonOffsetFactor=surface?-2:0;m.material.polygonOffsetUnits=surface?-2:0;m.material.side=surface?THREE.DoubleSide:THREE.FrontSide;m.renderOrder=surface?1:0;}styleSpecialMaterial(id,m,highlight);}});
   $('bone-color').value='#'+BONE_STYLE.color.toString(16).padStart(6,'0');
   $('bone-color-value').textContent=$('bone-color').value.toUpperCase();
   for(const field of styleFields){$('style-'+field).value=BONE_STYLE[field];$('value-'+field).textContent=BONE_STYLE[field].toFixed(2);}
@@ -68,7 +71,7 @@ if(b.tissue&&tissueLayer(b)==='ligament'){
 }else{
  for(const t of [b.available?`${b.region} · ${b.triangles.toLocaleString()} 三角面`:'此结构暂无独立可用网格',b.note||'源文件缺失或待确认分界。',`连接登记：${b.joint_or_connection_ids.map(id=>connectionNames[id]||id).join('、')}`,b.available?`源结构：${b.source_structure_id} · ${b.source_dataset||'BodyParts3D 3.0'}`:'','解剖审核：待确认；运动轴：未校准']){const p=document.createElement('p');p.textContent=t;$('info').appendChild(p)}
 }
-for(const [key,g]of groups)g.traverse(o=>{if(o.isMesh){o.material.color.set(key===id&&showHighlight?0xb6c891:materialBase(key));o.material.emissive.set(key===id&&showHighlight?0x16220d:0);if(isUcl(key))applyUclMaterial(o,key===id&&showHighlight)}});
+for(const [key,g]of groups)g.traverse(o=>{if(o.isMesh){o.material.color.set(key===id&&showHighlight?0xb6c891:materialBase(key));o.material.emissive.set(key===id&&showHighlight?0x16220d:0);styleSpecialMaterial(key,o,key===id&&showHighlight)}});
 if(b.reference_ids?.includes('openstax-ap2-9.6')){const a=document.createElement('a');a.href='https://openstax.org/books/anatomy-and-physiology-2e/pages/9-6-anatomy-of-selected-synovial-joints';a.target='_blank';a.rel='noreferrer';a.textContent='解剖关系参考：OpenStax 9.6（不验证网格厚度）';$('info').appendChild(a);} for(const a of ['focus','isolate','hide'])$(a).disabled=(!!motion&&a!=='focus')||!groups.has(id);setExplode(explode);renderList()}
 const modeDescriptions={radial:'各区域围绕各自中心散开，保留原版方便比较。',layers:'按原始前后位置拉开。建议切到侧面观察；这是几何分层，不是组织学分层。',parts:'头部、胸廓、脊柱、左右上肢、骨盆与左右下肢整组分离，组内间距保持不变。',chain:'依据已有连接登记逐段增加间距，是展示路径，不代表真实关节轴或运动。',local:'先选一块骨，只展开它和连接登记中的相邻骨；颅缝等连接组可能包含多块骨。',single:'先选一块骨，仅将它移到旁边，其余骨保持原位。',outward:'全身共用中心，骨间距成比例增加，相机保持固定。'};
 function setExplode(value){if(motion)return;explode=value;
@@ -82,7 +85,7 @@ for(const [id,g] of groups)g.userData.offset.fromArray((rows.get(id).tissue?offs
 for(const [id,g] of groups){const b=rows.get(id);if(!b.tissue||mode==='single'&&selected===id)continue;const anchors=b.bone_ids.map(id=>groups.get(id)).filter(Boolean);if(anchors.length){g.userData.offset.set(0,0,0);for(const bone of anchors)g.userData.offset.add(bone.userData.offset);g.userData.offset.divideScalar(anchors.length);}}
 
 $('spacing').value=String(value*100);$('spacingValue').textContent=`${Math.round(value*100)}%`;for(const g of groups.values()){g.position.copy(g.userData.rest).addScaledVector(g.userData.offset,value);const a=g.userData.line.geometry.attributes.position;a.setXYZ(0,...g.userData.rest.toArray());a.setXYZ(1,...g.position.toArray());a.needsUpdate=true;g.userData.line.geometry.computeBoundingSphere();g.userData.line.visible=g.visible&&value>0&&g.userData.offset.lengthSq()>1e-12}}
-function fit(id=null,direction=null){const box=new THREE.Box3();for(const [bid,g]of groups)if((id?(id instanceof Set?id.has(bid):bid===id):g.visible&&(!earSide||rows.get(bid).region==='听小骨')))box.expandByObject(g);if(box.isEmpty())return;const center=box.getCenter(new THREE.Vector3()),size=box.getSize(new THREE.Vector3());const aspect=host.clientWidth/host.clientHeight;const dist=Math.max(size.y,size.x/aspect,size.z)*.62/Math.tan(THREE.MathUtils.degToRad(camera.fov/2))+(earSide?.005:.05);let dir=direction||camera.position.clone().sub(controls.target).normalize();if(!dir.lengthSq())dir=new THREE.Vector3(0,0,1);controls.target.copy(center);camera.position.copy(center).addScaledVector(dir,dist);controls.update()}
+function fit(id=null,direction=null){const box=new THREE.Box3();for(const [bid,g]of groups)if((id?(id instanceof Set?id.has(bid):bid===id):g.visible&&(!earSide||rows.get(bid).region==='听小骨')))box.expandByObject(g);if(box.isEmpty())return;const center=box.getCenter(new THREE.Vector3()),size=box.getSize(new THREE.Vector3());const aspect=host.clientWidth/host.clientHeight;const dist=Math.max(size.y,size.x/aspect,size.z)*.62/Math.tan(THREE.MathUtils.degToRad(camera.fov/2))+(earSide?.005:.05);let dir=direction||camera.position.clone().sub(controls.target).normalize();if(!dir.lengthSq())dir=new THREE.Vector3(0,0,1);controls.target.copy(center);camera.position.copy(center).addScaledVector(dir,dist);localPivot=id||isolated||earSide||region!=='all'?center.clone():null;controls.update()}
 $('search').oninput=renderList;$('region').onchange=e=>{region=e.target.value;earSide=null;isolated=null;$('search').value='';if(selected&&region!=='all'&&rows.get(selected).region!==region){selected=null;$('name').textContent='选择一个结构';$('info').textContent='在模型或清单中选择，查看来源及连接关系。';for(const a of ['focus','isolate','hide'])$(a).disabled=true;for(const g of groups.values())g.traverse(o=>{if(o.isMesh){o.material.color.set(materialBase(g.name));o.material.emissive.set(0)}});}setExplode(explode);visibility();fit()};$('explode-mode').onchange=()=>setExplode(explode);$('spacing').oninput=e=>setExplode(Number(e.target.value)/100);$('assemble').onclick=()=>setExplode(0);$('focus').onclick=()=>{activateSelectionLayer(rows.get(selected));hidden.delete(selected);visibility();fit(selected)};$('isolate').onclick=()=>{activateSelectionLayer(rows.get(selected));isolated=selected;hidden.delete(selected);visibility();fit(selected)};$('hide').onclick=()=>{hidden.add(selected);visibility()};$('show').onclick=()=>{earSide=null;hidden.clear();isolated=null;region='all';$('region').value='all';visibility();fit()};$('fit').onclick=()=>fit();$('front').onclick=()=>fit(null,new THREE.Vector3(0,0,1));$('back').onclick=()=>fit(null,new THREE.Vector3(0,0,-1));$('side').onclick=()=>fit(null,new THREE.Vector3(1,0,0));
 function updateEarMaterials(){for(const side of ['R','L']){const g=groups.get('bone_temporal_'+side);if(!g)continue;const transparent=earSide===side&&$('ear-transparent').checked;g.traverse(o=>{if(o.isMesh){o.material.transparent=transparent;o.material.opacity=transparent?.16:1;o.material.depthWrite=!transparent;o.renderOrder=transparent?2:0;}});}}
 function viewEar(side){if(!loadDone)return;bonesEnabled=true;$('layer-bones').checked=true;trialEnabled=true;$('ear-trial-enabled').checked=true;earSide=side;isolated=null;region='all';$('region').value='all';hidden.clear();$('search').value='';setExplode(0);visibility();select('bone_malleus_'+side);fit(null,new THREE.Vector3(0,0,1));}
@@ -94,12 +97,15 @@ function pickStructure(e){const rect=renderer.domElement.getBoundingClientRect()
 let down;renderer.domElement.addEventListener('pointerdown',e=>down=[e.clientX,e.clientY]);renderer.domElement.addEventListener('pointerup',e=>{if(e.button!==0||panMode||!down||Math.hypot(e.clientX-down[0],e.clientY-down[1])>5)return;const id=pickStructure(e);if(id)select(id);});
 renderer.domElement.addEventListener('dblclick',e=>{if(panMode||e.button!==0)return;const id=pickStructure(e);if(id){select(id);fit(id);}});
 new ResizeObserver(()=>{camera.aspect=host.clientWidth/host.clientHeight;camera.updateProjectionMatrix();renderer.setSize(host.clientWidth,host.clientHeight)}).observe(host);
-let pivotSource=null;
+let pivotSource=null,bodyPivot=null,localPivot=null;
+// Whole-body views orbit the body axis; local views orbit the centre of what is being viewed.
 function updateBodyRotationPivot(){
- if(!loadDone||pivotSource===currentSource)return;
- const body=new THREE.Box3();
- for(const [id,g] of groups){if(rows.get(id)?.tissue)continue;const box=new THREE.Box3().setFromObject(g);box.translate(g.userData.rest.clone().sub(g.position));body.union(box);}
- if(!body.isEmpty()){controls.rotationPivot=body.getCenter(new THREE.Vector3());pivotSource=currentSource;}
+ if(loadDone&&pivotSource!==currentSource){
+  const body=new THREE.Box3();
+  for(const [id,g] of groups){if(rows.get(id)?.tissue)continue;const box=new THREE.Box3().setFromObject(g);box.translate(g.userData.rest.clone().sub(g.position));body.union(box);}
+  if(!body.isEmpty()){bodyPivot=body.getCenter(new THREE.Vector3());pivotSource=currentSource;}
+ }
+ controls.rotationPivot=localPivot||bodyPivot;
 }
 let frames=0;function frame(){requestAnimationFrame(frame);updateBodyRotationPivot();tickMotion(performance.now());controls.update();key.position.copy(camera.position).add(new THREE.Vector3(.65,.8,0).applyQuaternion(camera.quaternion));key.target.position.copy(controls.target);if(loadDone){renderer.render(scene,camera);frames++}}frame();
 try{const connections=await fetch('data/connections.json').then(r=>r.json());connectionRecords=connections.connections;connectionNames=Object.fromEntries(connections.connections.map(c=>[c.id,c.name_zh]));manifest=await fetch('z-anatomy-candidate/structures.json').then(r=>{if(!r.ok)throw Error('结构数据读取失败');return r.json()});manifest.bones.forEach(b=>rows.set(b.id,b));$('count').textContent=`${manifest.available_count} / 206 可选`;manifest.regions.forEach(r=>{const o=document.createElement('option');o.value=o.textContent=r.name;$('region').appendChild(o)});renderList();const loader=new GLTFLoader();for(const r of manifest.regions){status(`正在加载${r.name}…`);const gltf=await loader.loadAsync(r.file);gltf.scene.updateMatrixWorld(true);const found=[];gltf.scene.traverse(o=>{if(rows.has(o.name))found.push(o)});for(const o of found){scene.attach(o);const center=new THREE.Box3().setFromObject(o).getCenter(new THREE.Vector3());o.userData.rest=o.position.clone();o.userData.offset=new THREE.Vector3();o.traverse(m=>{if(m.isMesh){m.material=m.material.clone();m.material.color.set(BONE_STYLE.color);m.material.roughness=BONE_STYLE.roughness;m.material.metalness=0}});const line=new THREE.Line(new THREE.BufferGeometry().setFromPoints([o.position.clone(),o.position.clone()]),lineMat);line.visible=false;scene.add(line);o.userData.line=line;groups.set(o.name,o)}setExplode(explode);visibility();/* Frame the complete skeleton once, after all regions load. */}setExplode(explode);loadDone=true;$('ear-right').disabled=false;$('ear-left').disabled=false;$('ear-trial-state').textContent='200 个基础对象 + 6 个候选试装；5 块与现用颞骨相交。';visibility();fit(null,new THREE.Vector3(0,0,1));}catch(e){status(`加载失败：${e.message}。请通过本地服务器打开并刷新。`);console.error(e)}
@@ -163,12 +169,12 @@ async function ensureJointLayer(){
  if(currentSource!=='z'||[...rows.values()].some(b=>b.tissue)||jointsLoading)return;
  jointError='';jointsLoading=true;syncSourceUI();
  try{
-  const manifests=await Promise.all(['joints','connections','surface-marks','major-joint-surfaces','ligament-library','repaired-disc','nuclei','latest-reviewed-tissues','elbow-supplement'].map(async name=>{const res=await fetch('z-anatomy-candidate/'+name+'.json');if(!res.ok)throw Error(name+' 清单未读取');return res.json();}));
+  const manifests=await Promise.all(['joints','connections','surface-marks','major-joint-surfaces','ligament-library','repaired-disc','nuclei','latest-reviewed-tissues','shoulder-ligaments-fiber','elbow-supplement','elbow-ligaments-fiber'].map(async name=>{const res=await fetch('z-anatomy-candidate/'+name+'.json');if(!res.ok)throw Error(name+' 清单未读取');return res.json();}));
   const replacements=new Set(manifests[3].replaces_ids);
   manifests[2].objects=manifests[2].objects.filter(b=>!replacements.has(b.id));manifests[2].count=manifests[2].objects.length;
   for(let i=manifests.length-1;i>=0;i--){const replaced=new Set(manifests[i].replaces_ids||[]);for(const data of manifests.slice(0,i)){data.objects=data.objects.filter(b=>!replaced.has(b.id));data.count=data.objects.length;}}
   const allRows=[],allFound=[];
-  for(const data of manifests){const gltf=await new GLTFLoader().loadAsync(data.file+(data.file.includes('elbow-supplement')?'?v=ucl-restored9':''));gltf.scene.updateMatrixWorld(true);const ids=new Set(data.objects.map(b=>b.id)),found=[];gltf.scene.traverse(o=>{if(ids.has(o.name))found.push(o);});if(found.length!==data.count)throw Error('组织对象数量不一致');allRows.push(...data.objects);allFound.push(...found);}
+  for(const data of manifests){const gltf=await new GLTFLoader().loadAsync(data.file+(data.file.includes('elbow-supplement')?'?v=ucl-restored9':data.file.includes('-fiber')?'?v=elbow-fiber1':''));gltf.scene.updateMatrixWorld(true);const ids=new Set(data.objects.map(b=>b.id)),found=[];gltf.scene.traverse(o=>{if(ids.has(o.name))found.push(o);});if(found.length!==data.count)throw Error('组织对象数量不一致');allRows.push(...data.objects);allFound.push(...found);}
   if(new Set(allRows.map(b=>b.id)).size!==allRows.length)throw Error('组织 ID 重复');
   for(const b of allRows)rows.set(b.id,b);
   for(const o of allFound){scene.attach(o);o.userData.rest=o.position.clone();o.userData.offset=new THREE.Vector3();o.traverse(m=>{if(m.isMesh){m.material=m.material.clone();m.material.roughness=.8;m.material.metalness=0;}});const line=new THREE.Line(new THREE.BufferGeometry().setFromPoints([o.position.clone(),o.position.clone()]),lineMat);line.visible=false;scene.add(line);o.userData.line=line;groups.set(o.name,o);}
@@ -185,7 +191,7 @@ $('joints-only').onclick=async()=>{jointsEnabled=true;await ensureJointLayer();b
 await ensureJointLayer();
 
 // Read-only inspection hooks for geometric round-trip and actual ray-picking QA.
-window.skeletonQA={snapshot:()=>({source:currentSource,sourceSwitchBusy,jointsLoading,jointsEnabled,nucleiEnabled,capsulesEnabled,ligamentsEnabled,surfacesEnabled,layerCounts:Object.fromEntries(['joint','capsule','ligament','surface'].map(type=>[type,[...rows.values()].filter(b=>b.tissue&&tissueLayer(b)===type).length])),bonesEnabled,jointObjects:[...rows.values()].filter(b=>b.tissue&&tissueLayer(b)!=='surface').length,trialEnabled,earSide,visibleIds:[...groups.keys()].filter(active),mode:$('explode-mode').value,camera:camera.position.toArray(),target:controls.target.toArray(),rotationPivot:controls.rotationPivot?.toArray(),transforms:Object.fromEntries([...groups].map(([id,g])=>[id,{scale:g.scale.toArray(),quaternion:g.quaternion.toArray()}])),appearance:{...BONE_STYLE,exposure:renderer.toneMappingExposure,key:key.intensity,hemisphere:hemisphere.intensity,fill:fill.intensity},loaded:loadDone,objects:groups.size,visible:[...groups.keys()].filter(active).length,selected,frames,triangles:renderer.info.render.triangles,restError:Math.max(0,...[...groups.values()].map(g=>g.position.distanceTo(g.userData.rest))),assets:manifest?.regions}),project:(id)=>{const g=groups.get(id);if(!g)return null;const p=new THREE.Box3().setFromObject(g).getCenter(new THREE.Vector3()).project(camera),r=renderer.domElement.getBoundingClientRect();return{x:r.left+(p.x+1)*r.width/2,y:r.top+(1-p.y)*r.height/2}},positions:()=>Object.fromEntries([...groups].map(([id,g])=>[id,g.position.toArray()]))};
+window.skeletonQA={snapshot:()=>({source:currentSource,sourceSwitchBusy,jointsLoading,jointsEnabled,nucleiEnabled,capsulesEnabled,ligamentsEnabled,surfacesEnabled,layerCounts:Object.fromEntries(['joint','capsule','ligament','surface'].map(type=>[type,[...rows.values()].filter(b=>b.tissue&&tissueLayer(b)===type).length])),bonesEnabled,jointObjects:[...rows.values()].filter(b=>b.tissue&&tissueLayer(b)!=='surface').length,trialEnabled,earSide,visibleIds:[...groups.keys()].filter(active),mode:$('explode-mode').value,camera:camera.position.toArray(),target:controls.target.toArray(),rotationPivot:controls.rotationPivot?.toArray(),localPivot:!!localPivot,transforms:Object.fromEntries([...groups].map(([id,g])=>[id,{scale:g.scale.toArray(),quaternion:g.quaternion.toArray()}])),appearance:{...BONE_STYLE,exposure:renderer.toneMappingExposure,key:key.intensity,hemisphere:hemisphere.intensity,fill:fill.intensity},loaded:loadDone,objects:groups.size,visible:[...groups.keys()].filter(active).length,selected,frames,triangles:renderer.info.render.triangles,restError:Math.max(0,...[...groups.values()].map(g=>g.position.distanceTo(g.userData.rest))),assets:manifest?.regions}),project:(id)=>{const g=groups.get(id);if(!g)return null;const p=new THREE.Box3().setFromObject(g).getCenter(new THREE.Vector3()).project(camera),r=renderer.domElement.getBoundingClientRect();return{x:r.left+(p.x+1)*r.width/2,y:r.top+(1-p.y)*r.height/2}},positions:()=>Object.fromEntries([...groups].map(([id,g])=>[id,g.position.toArray()]))};
 
 setupCoverage(async id=>{if(currentSource!=='z')await switchSource('z');await ensureJointLayer();if(!rows.has(id)){status('该候选暂未加载，请重试组织层加载。');return;}region='all';$('region').value='all';$('region').dispatchEvent(new Event('change'));isolated=null;hidden.delete(id);select(id);visibility();fit(id);});
 
@@ -226,7 +232,7 @@ function stopMotion(){motionPlaying=false;$('motion-play').textContent='播放';
 function exitMotion(){
  if(!motion)return;stopMotion();motion.dispose();motion=null;document.body.classList.remove('motion-active');
  for(const [element,disabled] of motionSnapshot.disabled)element.disabled=disabled;
- camera.position.copy(motionSnapshot.camera);controls.target.copy(motionSnapshot.target);controls.update();
+ camera.position.copy(motionSnapshot.camera);controls.target.copy(motionSnapshot.target);localPivot=motionSnapshot.localPivot;controls.update();
  $('motion-controls').hidden=true;$('motion-enter').hidden=false;$('motion-state').textContent='已退出运动，恢复装配姿态。';
  $('search').value=motionSnapshot.search;motionSnapshot=null;syncSourceUI();visibility();if(selected&&groups.has(selected))select(selected);
 }
@@ -237,7 +243,7 @@ async function enterMotion(){
   $('motion-state').textContent='正在准备骨骼与韧带…';
   const waitingSince=performance.now();while(jointsLoading){if(performance.now()-waitingSince>30000)throw Error('组织资源加载超时');await new Promise(resolve=>setTimeout(resolve,50));}
   await ensureJointLayer();if(jointError)throw Error(jointError);
-  if(!ligamentTemplate)ligamentTemplate=(await new GLTFLoader().loadAsync('motion/elbow-ligaments-complete.glb?v=ucl-restored9')).scene;
+  if(!ligamentTemplate)ligamentTemplate=(await new GLTFLoader().loadAsync('motion/elbow-ligaments-fiber.glb?v=elbow-fiber1')).scene;
   if(!axisData){const res=await fetch('motion/elbow-axis.json');if(!res.ok)throw Error('候选转轴读取失败');axisData=await res.json();}
   setExplode(0);$('spacing').value=0;
   const cameraBefore=camera.position.clone(),targetBefore=controls.target.clone(),searchBefore=$('search').value;$('search').value='';
@@ -245,7 +251,7 @@ async function enterMotion(){
   select('bone_humerus_'+$('motion-side').value);
   const disabled=[...document.querySelectorAll('.tissue-layers input:not([id^="layer-"]),.tissue-layers button,.tissue-layers select,[data-joint-region],#spacing,#explode-mode,#explode-mode-trigger,#assemble,#isolate,#hide,#show,#source-z,#region-trigger,#region')].map(element=>[element,element.disabled]);
   for(const [element] of disabled)element.disabled=true;
-  motionSnapshot={camera:cameraBefore,target:targetBefore,disabled,search:searchBefore};
+  motionSnapshot={localPivot:localPivot?.clone()||null,camera:cameraBefore,target:targetBefore,disabled,search:searchBefore};
   document.body.classList.add('motion-active');if(innerWidth<=520)window.scrollTo(0,0);
   motion.setLayerFilter(layerEnabled);motion.setLigaments(ligamentsEnabled);$('motion-ligaments').checked=ligamentsEnabled;setMotionView(preferredView);
   motion.setAxisVisible($('motion-axis').checked);applyAppearance();visibility();syncMotionAngle();
@@ -266,7 +272,7 @@ function setMotionView(view){
  const box=motion.bounds(),center=box.getCenter(new THREE.Vector3()),size=box.getSize(new THREE.Vector3());
  const dist=Math.max(size.y,size.x/(host.clientWidth/host.clientHeight),size.z)*(view==='whole'?.62:.7)/Math.tan(THREE.MathUtils.degToRad(camera.fov/2))+.06;
  const direction=view==='whole'?new THREE.Vector3(0,0,1):new THREE.Vector3($('motion-side').value==='R'?-.9:.9,.05,.65).normalize();
- controls.target.copy(center);camera.position.copy(center).addScaledVector(direction,dist);controls.update();visibility();
+ controls.target.copy(center);camera.position.copy(center).addScaledVector(direction,dist);localPivot=view==='local'?center.clone():null;controls.update();visibility();
 }
 $('motion-whole').onclick=()=>setMotionView('whole');$('motion-local').onclick=()=>setMotionView('local');
 $('motion-ligaments').onchange=e=>{ligamentsEnabled=e.target.checked;$('layer-ligaments').checked=ligamentsEnabled;visibility();};

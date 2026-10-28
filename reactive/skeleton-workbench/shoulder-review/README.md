@@ -1,3 +1,5 @@
+> 纤维体重建（shoulder-fiber-v1）：网页与主骨架现用 `build_fiber_ligaments.py` 生成的闭合纤维体，替代“源片 + 等厚 0.45 mm”的胶布状显示。源片作中面，边界与附着位置不变；截面为椭圆收边的透镜形，端部渐薄，按宽度约 2.4 mm 一束加入纤维束起伏，增厚方向避开邻近骨面；中面原已在骨内的位置不再向深处增厚，源级穿插保留不掩盖。峰值厚度见脚本 `DISPLAY_THICKNESS_MM`（1.0–3.2 mm），为显示参数，非组织学测量。材质为 `src/fiber-ligament-material.js` 程序纤维纹理 + 光泽。产物：`shoulder-review-fiber.glb`、`shoulder-fiber-ligaments.blend`、`geometry-audit-fiber.json`、`../z-anatomy-candidate/shoulder-ligaments-fiber.{json,glb}`。旧版 `shoulder-review.glb` 与 `shoulder-ligaments-refined.glb` 保留未改。对比图：`../qa/shoulder-fiber-*.png`。
+
 > 当前显示：按用户选择固定优化版，原版切换入口已隐藏；主骨架页面同步使用肩部优化几何。源版保留。新增骨表面颜色定位范围（示意，非解剖边界/韧带足印），与肘部共用审核组件。
 
 # 肩部韧带 · 第一轮清单与审核说明
